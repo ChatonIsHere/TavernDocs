@@ -22,4 +22,4 @@ Editor menu entry that creates a new `PoisonStat` asset. Not used at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PoisonStat.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PoisonStat.Create` with default values.</span> |

@@ -23,15 +23,15 @@ A one-way connection between two nodes in the forest graph, used for A* search. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Path(TNode from, TNode to, float length)"}</code> | Creates a `Path` from `from`, `to` and `length`. |
+| <Link id="m-ctor" /><code>{"Path(TNode from, TNode to, float length)"}</code> | <span className="api-desc">Creates a `Path` from `from`, `to` and `length`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cost" /><code>{"float Cost { get; private set; }"}</code> | The path's cost, its length when built from an edge. |
-| <Link id="m-direction" /><code>{"Vector2 Direction { get; }"}</code> | The vector from `From` to `To` divided by `Cost`; a unit vector when the cost is the length. |
-| <Link id="m-from" /><code>{"TNode From { get; private set; }"}</code> | Start node. |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | Whether the path can be used. Always true in this build. |
-| <Link id="m-to" /><code>{"TNode To { get; private set; }"}</code> | End node. |
-| <Link id="m-vector" /><code>{"Vector2 Vector { get; }"}</code> | The 2D vector from `From` to `To`. |
+| <Link id="m-cost" /><code>{"float Cost { get; private set; }"}</code> | <span className="api-desc">The path's cost, its length when built from an edge.</span> |
+| <Link id="m-direction" /><code>{"Vector2 Direction { get; }"}</code> | <span className="api-desc">The vector from `From` to `To` divided by `Cost`; a unit vector when the cost is the length.</span> |
+| <Link id="m-from" /><code>{"TNode From { get; private set; }"}</code> | <span className="api-desc">Start node.</span> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | <span className="api-desc">Whether the path can be used. Always true in this build.</span> |
+| <Link id="m-to" /><code>{"TNode To { get; private set; }"}</code> | <span className="api-desc">End node.</span> |
+| <Link id="m-vector" /><code>{"Vector2 Vector { get; }"}</code> | <span className="api-desc">The 2D vector from `From` to `To`.</span> |

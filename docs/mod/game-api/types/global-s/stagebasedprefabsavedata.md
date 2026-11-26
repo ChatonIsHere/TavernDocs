@@ -23,12 +23,12 @@ Save data for a `StageBasedPrefab` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> | Creates a `StageBasedPrefabSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> | <span className="api-desc">Creates a `StageBasedPrefabSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> | Child index of the current stage's entity, or -1 if none. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" definition"}</code> | The stage definition in use. |
-| <Link id="m-stageindex" /><code>{"int stageIndex"}</code> | The current stage. |
+| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> | <span className="api-desc">Child index of the current stage's entity, or -1 if none.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-p/prefabstagedefinition">{"PrefabStageDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The stage definition in use.</span> |
+| <Link id="m-stageindex" /><code>{"int stageIndex"}</code> | <span className="api-desc">The current stage.</span> |

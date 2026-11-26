@@ -30,4 +30,8 @@ The fields of the in-game Alta account sign-up form (username, email, password, 
 
 Members of other types that take, return or hold a `AccountRegisteringSteps`:
 
+<div className="api-used-in">
+
 [`AltaAccountRegistererAndLinker.DisableField`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker#m-disablefield), [`AltaAccountRegistererAndLinker.UpdateFieldStatus`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker#m-updatefieldstatus), [`AltaAccountRegistererAndLinker.LastCheckedField.LastCheckedField`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker-lastcheckedfield#m-ctor), [`AltaAccountRegistererAndLinker.LastCheckedField.step`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker-lastcheckedfield#m-step).
+
+</div>

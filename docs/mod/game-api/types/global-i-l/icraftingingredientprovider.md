@@ -21,4 +21,4 @@ A recipe that can list its ingredients, such as `GenericCraftingRecipe` and `Ste
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> | Ingredient prefab hashes mapped to how many of each are needed. |
+| <Link id="m-prefabquantities" /><code>{"Dictionary<uint, int> PrefabQuantities { get; }"}</code> | <span className="api-desc">Ingredient prefab hashes mapped to how many of each are needed.</span> |

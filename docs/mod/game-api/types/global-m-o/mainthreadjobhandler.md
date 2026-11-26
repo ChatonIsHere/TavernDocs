@@ -23,22 +23,22 @@ Singleton that runs scheduled work on the main thread a bit each frame, within a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MainThreadJobHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MainThreadJobHandler()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{" current"}</code> | The job being run, kept across frames when it runs out of time. |
-| <Link id="m-entries" /><code>{"private ConcurrentQueue<"}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> entries"}</code> | Thread-safe queue of waiting jobs. |
-| <Link id="m-millisecondallowance" /><code>{"private float millisecondAllowance"}</code> | Milliseconds of jobs allowed per frame (default 3). |
-| <Link id="m-nextindex" /><code>{"private uint nextIndex"}</code> | Counter for job indexes. |
-| <Link id="m-pool" /><code>{"private ConcurrentBag<"}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> pool"}</code> | Pool of reusable entries. Nothing returns entries to it, so it stays empty. |
-| <Link id="m-remainingcount" /><code>{"private int remainingCount"}</code> | Read-only inspector count that nothing updates. |
-| <Link id="m-timer" /><code>{"private Stopwatch timer"}</code> | Stopwatch for the per-frame budget. |
+| <Link id="m-current" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{" current"}</code> | <span className="api-desc">The job being run, kept across frames when it runs out of time.</span> |
+| <Link id="m-entries" /><code>{"private ConcurrentQueue<"}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> entries"}</code> | <span className="api-desc">Thread-safe queue of waiting jobs.</span> |
+| <Link id="m-millisecondallowance" /><code>{"private float millisecondAllowance"}</code> | <span className="api-desc">Milliseconds of jobs allowed per frame (default 3).</span> |
+| <Link id="m-nextindex" /><code>{"private uint nextIndex"}</code> | <span className="api-desc">Counter for job indexes.</span> |
+| <Link id="m-pool" /><code>{"private ConcurrentBag<"}<Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry">{"MainThreadJobHandler.InternalEntry"}</Link>{"> pool"}</code> | <span className="api-desc">Pool of reusable entries. Nothing returns entries to it, so it stays empty.</span> |
+| <Link id="m-remainingcount" /><code>{"private int remainingCount"}</code> | <span className="api-desc">Read-only inspector count that nothing updates.</span> |
+| <Link id="m-timer" /><code>{"private Stopwatch timer"}</code> | <span className="api-desc">Stopwatch for the per-frame budget.</span> |
 
 </details>
 
@@ -46,15 +46,15 @@ Singleton that runs scheduled work on the main thread a bit each frame, within a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-schedule" /><code><Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Action getTask, CancellationToken cancellationToken = null)"}</code> | Queues an action or a step-by-step `IEnumerable` job and returns an awaitable entry that gives false if cancelled. |
-| <Link id="m-schedule-2" /><code><Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> | Queues an action or a step-by-step `IEnumerable` job and returns an awaitable entry that gives false if cancelled. |
+| <Link id="m-schedule" /><code><Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Action getTask, CancellationToken cancellationToken = null)"}</code> | <span className="api-desc">Queues an action or a step-by-step `IEnumerable` job and returns an awaitable entry that gives false if cancelled.</span> |
+| <Link id="m-schedule-2" /><code><Link to="/mod/game-api/types/global-m-o/mainthreadjobhandler-entry">{"MainThreadJobHandler.Entry"}</Link>{" Schedule(Func<IEnumerable> getTask, CancellationToken cancellationToken = null)"}</code> | <span className="api-desc">Queues an action or a step-by-step `IEnumerable` job and returns an awaitable entry that gives false if cancelled.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Runs queued jobs in order until `millisecondAllowance` is used up, resuming the current job next frame. |
-| <Link id="m-wrap" /><code>{"private IEnumerable Wrap(Action task) (iterator)"}</code> | Turns a plain action into a one-step job. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Runs queued jobs in order until `millisecondAllowance` is used up, resuming the current job next frame.</span> |
+| <Link id="m-wrap" /><code>{"private IEnumerable Wrap(Action task) (iterator)"}</code> | <span className="api-desc">Turns a plain action into a one-step job.</span> |
 
 </details>

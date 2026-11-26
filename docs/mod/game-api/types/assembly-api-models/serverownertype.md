@@ -29,4 +29,8 @@ Who owns a server: an individual, a group or the world. `GroupAdmins` is the sam
 
 Members of other types that take, return or hold a `ServerOwnerType`:
 
+<div className="api-used-in">
+
 [`GameServerCreateRequest.OwnerType`](/mod/game-api/types/assembly-api-models/gameservercreaterequest#m-ownertype), [`GameServerInfo.OwnerType`](/mod/game-api/types/assembly-api-models/gameserverinfo#m-ownertype).
+
+</div>

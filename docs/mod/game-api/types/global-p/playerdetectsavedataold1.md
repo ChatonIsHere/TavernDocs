@@ -22,16 +22,16 @@ Old save data (version 1) for `PlayerDetect`, holding only a radius. Migrates to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDetectSaveDataOld1()"}</code> | Creates a `PlayerDetectSaveDataOld1` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerDetectSaveDataOld1()"}</code> | <span className="api-desc">Creates a `PlayerDetectSaveDataOld1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> | Detection radius. |
+| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> | <span className="api-desc">Detection radius.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a `PlayerDetectSaveData` with the same radius and default bounds settings. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Returns a `PlayerDetectSaveData` with the same radius and default bounds settings.</span> |

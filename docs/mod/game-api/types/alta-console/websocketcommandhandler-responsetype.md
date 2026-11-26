@@ -29,4 +29,8 @@ Kind of message the remote console websocket sends back: a system message (such 
 
 Members of other types that take, return or hold a `ResponseType`:
 
+<div className="api-used-in">
+
 [`WebSocketCommandHandler.Send`](/mod/game-api/types/alta-console/websocketcommandhandler#m-send), [`WebSocketCommandHandler.ResponseData.ResponseData`](/mod/game-api/types/alta-console/websocketcommandhandler-responsedata#m-ctor), [`WebSocketCommandHandler.ResponseData.type`](/mod/game-api/types/alta-console/websocketcommandhandler-responsedata#m-type).
+
+</div>

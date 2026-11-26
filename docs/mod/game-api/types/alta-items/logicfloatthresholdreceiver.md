@@ -23,19 +23,19 @@ Logic receiver that outputs true while a float input is above a threshold (or be
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatThresholdReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicFloatThresholdReceiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> | Last output value. |
-| <Link id="m-isactiveabovethreshold" /><code>{"private bool isActiveAboveThreshold"}</code> | True to output true above the threshold, false for below. |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | Unity event fired with the new output. |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> | The value compared against. |
+| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> | <span className="api-desc">Last output value.</span> |
+| <Link id="m-isactiveabovethreshold" /><code>{"private bool isActiveAboveThreshold"}</code> | <span className="api-desc">True to output true above the threshold, false for below.</span> |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | <span className="api-desc">Unity event fired with the new output.</span> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> | <span className="api-desc">The value compared against.</span> |
 
 </details>
 
@@ -43,14 +43,14 @@ Logic receiver that outputs true while a float input is above a threshold (or be
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: works out the starting value and fires `onValueUpdated` with it. |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | When the input changes, fires `onValueUpdated` if the result changed. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: works out the starting value and fires `onValueUpdated` with it.</span> |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | <span className="api-desc">When the input changes, fires `onValueUpdated` if the result changed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> | Compares the input to the threshold, strictly above or strictly below depending on `isActiveAboveThreshold`. |
+| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> | <span className="api-desc">Compares the input to the threshold, strictly above or strictly below depending on `isActiveAboveThreshold`.</span> |
 
 </details>

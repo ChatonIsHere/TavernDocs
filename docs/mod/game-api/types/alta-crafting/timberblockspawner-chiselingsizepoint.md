@@ -21,17 +21,17 @@ A stop along the `TimberBlockSpawner` slider and the largest block size allowed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> | Creates a `TimberBlockSpawner.ChiselingSizePoint` with default values. |
+| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> | <span className="api-desc">Creates a `TimberBlockSpawner.ChiselingSizePoint` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxsize" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" maxSize"}</code> | Backing field for `MaxSize`. |
-| <Link id="m-position" /><code>{"private float position"}</code> | Backing field for `Position`. |
+| <Link id="m-maxsize" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" maxSize"}</code> | <span className="api-desc">Backing field for `MaxSize`.</span> |
+| <Link id="m-position" /><code>{"private float position"}</code> | <span className="api-desc">Backing field for `Position`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A stop along the `TimberBlockSpawner` slider and the largest block size allowed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxsize-2" /><code><Link to="/mod/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" MaxSize { get; }"}</code> | Largest block size allowed at this stop. |
-| <Link id="m-position-2" /><code>{"float Position { get; }"}</code> | Local X position of the stop. |
+| <Link id="m-maxsize-2" /><code><Link to="/mod/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" MaxSize { get; }"}</code> | <span className="api-desc">Largest block size allowed at this stop.</span> |
+| <Link id="m-position-2" /><code>{"float Position { get; }"}</code> | <span className="api-desc">Local X position of the stop.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChiselingSizePoint`:
 
+<div className="api-used-in">
+
 [`TimberBlockSpawner.availablePoints`](/mod/game-api/types/alta-crafting/timberblockspawner#m-availablepoints).
+
+</div>

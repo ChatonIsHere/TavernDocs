@@ -21,16 +21,16 @@ Prefab-apply attribute for a `Transform` field: when the prefab is applied, sets
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CacheTransformAttribute()"}</code> | Creates a `CacheTransformAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"CacheTransformAttribute()"}</code> | <span className="api-desc">Creates a `CacheTransformAttribute` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. Not used. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class. Not used.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Prefab-apply attribute for a `Transform` field: when the prefab is applied, sets
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Writes the component's own transform into the field. Returns true when the value changed. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Writes the component's own transform into the field. Returns true when the value changed.</span> |

@@ -21,4 +21,4 @@ Implemented by components on a prefab to read extra spawn arguments. The spawn c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkarguments" /><code>{"void CheckArguments(string[] arguments)"}</code> | Gets the extra spawn arguments and applies any it understands. `ForgedModel` implements it. |
+| <Link id="m-checkarguments" /><code>{"void CheckArguments(string[] arguments)"}</code> | <span className="api-desc">Gets the extra spawn arguments and applies any it understands. `ForgedModel` implements it.</span> |

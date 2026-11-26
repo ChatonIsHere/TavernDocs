@@ -21,30 +21,30 @@ Client effect for a `PickupDock`: when an item is about to dock, a visual copy o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DockedDissolver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DockedDissolver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dematerializeduration" /><code>{"private float dematerializeDuration"}</code> | Length of the dissolve in seconds. |
-| <Link id="m-dissolvetexture" /><code>{"private Texture dissolveTexture"}</code> | Noise texture used by the dissolve. |
-| <Link id="m-shader" /><code>{"private Shader shader"}</code> | Dissolve shader applied to the visual double. |
-| <Link id="m-targetdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" targetDock"}</code> | The dock whose incoming items dissolve. |
+| <Link id="m-dematerializeduration" /><code>{"private float dematerializeDuration"}</code> | <span className="api-desc">Length of the dissolve in seconds.</span> |
+| <Link id="m-dissolvetexture" /><code>{"private Texture dissolveTexture"}</code> | <span className="api-desc">Noise texture used by the dissolve.</span> |
+| <Link id="m-shader" /><code>{"private Shader shader"}</code> | <span className="api-desc">Dissolve shader applied to the visual double.</span> |
+| <Link id="m-targetdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" targetDock"}</code> | <span className="api-desc">The dock whose incoming items dissolve.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dissolveitem" /><code>{"private void DissolveItem("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Spawns a visual double of the docking pickup and dematerializes it with the dissolve shader. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Destroys this component on a headless server; otherwise hooks the dock's `PreItemDocked` event. |
+| <Link id="m-dissolveitem" /><code>{"private void DissolveItem("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | <span className="api-desc">Spawns a visual double of the docking pickup and dematerializes it with the dissolve shader.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Destroys this component on a headless server; otherwise hooks the dock's `PreItemDocked` event.</span> |
 
 </details>

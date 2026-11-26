@@ -23,4 +23,4 @@ Base for an Assets/Create/Global Settings/Field Access menu entry that creates a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject` with default values.</span> |

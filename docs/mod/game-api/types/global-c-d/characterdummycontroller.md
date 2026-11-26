@@ -21,17 +21,17 @@ A stub `PlayerController` with an empty `Awake` and no head transforms, probably
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummyController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CharacterDummyController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | Always null. |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | Always null. |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | <span className="api-desc">Always null.</span> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | <span className="api-desc">Always null.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Empty override, so none of the base controller setup runs. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Empty override, so none of the base controller setup runs.</span> |

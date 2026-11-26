@@ -28,4 +28,8 @@ How you recently met another player, in the Alta API: combat, nearby or on the s
 
 Members of other types that take, return or hold a `RecentPlayerInteractionType`:
 
+<div className="api-used-in">
+
 [`IRecentPlayersClient.RecordInteractionAsync`](/mod/game-api/types/assembly-api-client/irecentplayersclient#m-recordinteractionasync), [`RecentPlayersClient.RecordInteractionAsync`](/mod/game-api/types/assembly-api-client/recentplayersclient#m-recordinteractionasync), [`RecentPlayerInteractionRequest.Type`](/mod/game-api/types/assembly-api-models/recentplayerinteractionrequest#m-type), [`RecentPlayerInteractionInfo.Type`](/mod/game-api/types/assembly-api-models/recentplayerinteractioninfo#m-type), [`RecentPlayers.RecordInteraction`](/mod/game-api/types/global-q-r/recentplayers#m-recordinteraction).
+
+</div>

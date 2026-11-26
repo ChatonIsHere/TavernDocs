@@ -21,10 +21,14 @@ A string player preference stored under a key through `PlayerPreferences`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> | Creates a `PlayerPreferenceString` from `key`. |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> | <span className="api-desc">Creates a `PlayerPreferenceString` from `key`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerPreferenceString`:
 
+<div className="api-used-in">
+
 [`LoginPreferences.accessToken`](/mod/game-api/types/assembly-other/loginpreferences#m-accesstoken), [`LoginPreferences.identityToken`](/mod/game-api/types/assembly-other/loginpreferences#m-identitytoken), [`LoginPreferences.refreshToken`](/mod/game-api/types/assembly-other/loginpreferences#m-refreshtoken), [`LoginPreferences.savedUsername`](/mod/game-api/types/assembly-other/loginpreferences#m-savedusername).
+
+</div>

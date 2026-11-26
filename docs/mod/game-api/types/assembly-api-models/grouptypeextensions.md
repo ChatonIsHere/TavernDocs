@@ -21,4 +21,4 @@ Maps a group's type to how players join its servers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-converttoserverjointype" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" ConvertToServerJoinType("}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" groupType)"}</code> | Open groups give `OpenGroup`, public groups `PublicGroup`, and anything else `GroupMember`. |
+| <Link id="m-converttoserverjointype" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/serverjointype">{"ServerJoinType"}</Link>{" ConvertToServerJoinType("}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" groupType)"}</code> | <span className="api-desc">Open groups give `OpenGroup`, public groups `PublicGroup`, and anything else `GroupMember`.</span> |

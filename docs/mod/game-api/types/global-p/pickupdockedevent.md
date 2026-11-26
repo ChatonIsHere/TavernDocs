@@ -21,10 +21,14 @@ Serializable event with the interactor, the pickup and the dock it went into, ed
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockedEvent()"}</code> | Creates a `PickupDockedEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PickupDockedEvent()"}</code> | <span className="api-desc">Creates a `PickupDockedEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PickupDockedEvent`:
 
+<div className="api-used-in">
+
 [`Pickup.docked`](/mod/game-api/types/global-p/pickup#m-docked), [`Pickup.undocked`](/mod/game-api/types/global-p/pickup#m-undocked), [`PickupDockedFilter.docked`](/mod/game-api/types/global-p/pickupdockedfilter#m-docked), [`PickupDockedFilter.undocked`](/mod/game-api/types/global-p/pickupdockedfilter#m-undocked).
+
+</div>

@@ -21,10 +21,14 @@ Marker base for components the saving system can save. The saving system finds t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string name { get; }"}</code> | The object's name, used in save error logs. A `MonoBehaviour` already provides it. |
+| <Link id="m-name" /><code>{"string name { get; }"}</code> | <span className="api-desc">The object's name, used in save error logs. A `MonoBehaviour` already provides it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISavableSaveBase`:
 
+<div className="api-used-in">
+
 [`SavableCache.DeregisterAdditional`](/mod/game-api/types/alta-world/savablecache#m-deregisteradditional), [`SavableCache.GetFor`](/mod/game-api/types/alta-world/savablecache#m-getfor), [`SavableCache.RegisterAdditional`](/mod/game-api/types/alta-world/savablecache#m-registeradditional), [`SavableCache.savablesPerEntity`](/mod/game-api/types/alta-world/savablecache#m-savablesperentity), [`SavableCache.ToList`](/mod/game-api/types/alta-world/savablecache#m-tolist), [`SavingSystem.Load`](/mod/game-api/types/alta-world/savingsystem#m-load-3), [`SavingSystem.Read`](/mod/game-api/types/alta-world/savingsystem#m-read), [`SavingSystem.Serialize`](/mod/game-api/types/alta-world/savingsystem#m-serialize-2), [`SavingSystem.Write`](/mod/game-api/types/alta-world/savingsystem#m-write).
+
+</div>

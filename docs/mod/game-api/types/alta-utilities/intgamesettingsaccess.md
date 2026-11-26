@@ -23,4 +23,4 @@ Settings field access for an int setting.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IntGameSettingsAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"IntGameSettingsAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

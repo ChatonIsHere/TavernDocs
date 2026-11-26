@@ -22,21 +22,21 @@ The grabbable cap on a potion bottle. While the same player holds the bottle, pu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CapPickup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CapPickup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bottlepickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" bottlePickup"}</code> | The bottle this cap belongs to. |
-| <Link id="m-checkingpop" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" checkingPop"}</code> | The running `CheckPop` coroutine, if any. |
-| <Link id="m-lid" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontainerlid">{"LiquidContainerLid"}</Link>{" lid"}</code> | The bottle's `LiquidContainerLid`, removed when the cap pops. |
-| <Link id="m-popdirection" /><code>{"private Vector3 popDirection"}</code> | Local direction the hand has to pull to pop the cap. |
-| <Link id="m-popdistance" /><code>{"private float popDistance"}</code> | How far (0.1 by default) the hand has to pull along `popDirection` to pop the cap. |
-| <Link id="m-synccapremoved" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCapRemoved"}</code> | Method sync that sends the cap removal from client to server. |
+| <Link id="m-bottlepickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" bottlePickup"}</code> | <span className="api-desc">The bottle this cap belongs to.</span> |
+| <Link id="m-checkingpop" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" checkingPop"}</code> | <span className="api-desc">The running `CheckPop` coroutine, if any.</span> |
+| <Link id="m-lid" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontainerlid">{"LiquidContainerLid"}</Link>{" lid"}</code> | <span className="api-desc">The bottle's `LiquidContainerLid`, removed when the cap pops.</span> |
+| <Link id="m-popdirection" /><code>{"private Vector3 popDirection"}</code> | <span className="api-desc">Local direction the hand has to pull to pop the cap.</span> |
+| <Link id="m-popdistance" /><code>{"private float popDistance"}</code> | <span className="api-desc">How far (0.1 by default) the hand has to pull along `popDirection` to pop the cap.</span> |
+| <Link id="m-synccapremoved" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCapRemoved"}</code> | <span className="api-desc">Method sync that sends the cap removal from client to server.</span> |
 
 </details>
 
@@ -44,23 +44,23 @@ The grabbable cap on a potion bottle. While the same player holds the bottle, pu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assessscore" /><code>{"override bool AssessScore("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Only lets the cap be grabbed while its lid is on and the bottle is held by the same player. Gives it top priority when allowed. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the `PotionCapRemoved` method sync. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks `InteractionStarted` to start checking for the pop. |
-| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> | Turns off the cap's colliders. |
-| <Link id="m-onenable" /><code>{"protected override void OnEnable()"}</code> | Turns the cap's colliders back on. |
-| <Link id="m-start" /><code>{"protected override void Start()"}</code> | Hooks the bottle's release and dock events. |
+| <Link id="m-assessscore" /><code>{"override bool AssessScore("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | <span className="api-desc">Only lets the cap be grabbed while its lid is on and the bottle is held by the same player. Gives it top priority when allowed.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Creates the `PotionCapRemoved` method sync.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Hooks `InteractionStarted` to start checking for the pop.</span> |
+| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> | <span className="api-desc">Turns off the cap's colliders.</span> |
+| <Link id="m-onenable" /><code>{"protected override void OnEnable()"}</code> | <span className="api-desc">Turns the cap's colliders back on.</span> |
+| <Link id="m-start" /><code>{"protected override void Start()"}</code> | <span className="api-desc">Hooks the bottle's release and dock events.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpop" /><code>{"private IEnumerator CheckPop() (iterator)"}</code> | Local coroutine: once the hand has moved `popDistance` along `popDirection`, lets go and tells the server the cap came off. |
-| <Link id="m-release" /><code>{"private void Release("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Lets go of the cap when the bottle is let go. |
-| <Link id="m-releasedocked" /><code>{"private void ReleaseDocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Lets go of the cap when the bottle is docked. |
-| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Restarts the pop check coroutine when the local player grabs the cap. |
-| <Link id="m-synccapremoved-2" /><code>{"private void SyncCapRemoved("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Server: removes the lid when the message comes from the player who last held the cap. |
-| <Link id="m-togglecolliders" /><code>{"private void ToggleColliders(bool isEnabled)"}</code> | Turns all the cap's colliders on or off. |
+| <Link id="m-checkpop" /><code>{"private IEnumerator CheckPop() (iterator)"}</code> | <span className="api-desc">Local coroutine: once the hand has moved `popDistance` along `popDirection`, lets go and tells the server the cap came off.</span> |
+| <Link id="m-release" /><code>{"private void Release("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Lets go of the cap when the bottle is let go.</span> |
+| <Link id="m-releasedocked" /><code>{"private void ReleaseDocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | <span className="api-desc">Lets go of the cap when the bottle is docked.</span> |
+| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Restarts the pop check coroutine when the local player grabs the cap.</span> |
+| <Link id="m-synccapremoved-2" /><code>{"private void SyncCapRemoved("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Server: removes the lid when the message comes from the player who last held the cap.</span> |
+| <Link id="m-togglecolliders" /><code>{"private void ToggleColliders(bool isEnabled)"}</code> | <span className="api-desc">Turns all the cap's colliders on or off.</span> |
 
 </details>

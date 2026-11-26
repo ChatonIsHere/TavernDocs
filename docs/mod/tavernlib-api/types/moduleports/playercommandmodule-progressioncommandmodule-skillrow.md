@@ -22,24 +22,28 @@ One row of `player progression showskills`: a skill the player can buy now, numb
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkillRow()"}</code> | Makes an empty row for `showskills`. |
+| <Link id="m-ctor" /><code>{"SkillRow()"}</code> | <span className="api-desc">Makes an empty row for `showskills`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-index" /><code>{"int Index { get; set; }"}</code> | The number to pass to `buyskill`. Only valid until the next `showskills`. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The skill slot's name. |
-| <Link id="m-path" /><code>{"string Path { get; set; }"}</code> | The progression path the skill is on. |
+| <Link id="m-index" /><code>{"int Index { get; set; }"}</code> | <span className="api-desc">The number to pass to `buyskill`. Only valid until the next `showskills`.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The skill slot's name.</span> |
+| <Link id="m-path" /><code>{"string Path { get; set; }"}</code> | <span className="api-desc">The progression path the skill is on.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The row as one line of text. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">The row as one line of text.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SkillRow`:
 
+<div className="api-used-in">
+
 [`PlayerCommandModule.ProgressionCommandModule.ShowAvailableSkills`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule#m-showavailableskills).
+
+</div>

@@ -22,27 +22,27 @@ Spawns one prefab at the position of each forest chunk as it generates.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PerChunkForestSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PerChunkForestSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Prefab spawned per chunk. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">Prefab spawned per chunk.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the parent forest generator's `GeneratedDynamic`. |
-| <Link id="m-create" /><code>{"private void Create("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Spawns the prefab at the chunk's position. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the parent forest generator's `GeneratedDynamic`.</span> |
+| <Link id="m-create" /><code>{"private void Create("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Spawns the prefab at the chunk's position.</span> |
 
 </details>

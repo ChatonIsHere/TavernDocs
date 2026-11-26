@@ -21,11 +21,15 @@ Message data for a teleport effect: which teleport definition and where to play 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position to play the effect at. |
-| <Link id="m-teleportdefinitionindex" /><code>{"int teleportDefinitionIndex"}</code> | Index of the definition in the messenger's `teleportDefinitions` array. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">World position to play the effect at.</span> |
+| <Link id="m-teleportdefinitionindex" /><code>{"int teleportDefinitionIndex"}</code> | <span className="api-desc">Index of the definition in the messenger's `teleportDefinitions` array.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TeleportDefinitionPositionPair`:
 
+<div className="api-used-in">
+
 [`TeleportDefinitionNetworkMessenger.syncTeleportFrom`](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger#m-syncteleportfrom), [`TeleportDefinitionNetworkMessenger.SyncTeleportFrom`](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger#m-syncteleportfrom-2), [`TeleportDefinitionNetworkMessenger.syncTeleportTo`](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger#m-syncteleportto), [`TeleportDefinitionNetworkMessenger.SyncTeleportTo`](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger#m-syncteleportto-2).
+
+</div>

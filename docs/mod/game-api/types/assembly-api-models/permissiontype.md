@@ -34,4 +34,8 @@ Flags for what a user may do with an Alta web API form: edit, respond, view resp
 
 Members of other types that take, return or hold a `PermissionType`:
 
+<div className="api-used-in">
+
 [`FormResponse.Permissions`](/mod/game-api/types/assembly-api-models/formresponse#m-permissions).
+
+</div>

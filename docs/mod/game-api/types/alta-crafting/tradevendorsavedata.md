@@ -23,16 +23,20 @@ Save data for a `TradeVendor` (version 2): just the vendor's owner.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> | Creates a `TradeVendorSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> | <span className="api-desc">Creates a `TradeVendorSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> | User identifier of the vendor's owner, restored to `TradeVendor.Owner` on load. 0 means no owner. |
+| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> | <span className="api-desc">User identifier of the vendor's owner, restored to `TradeVendor.Owner` on load. 0 means no owner.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TradeVendorSaveData`:
 
+<div className="api-used-in">
+
 [`TradeVendor.Load`](/mod/game-api/types/alta-crafting/tradevendor#m-load), [`TradeVendor.Save`](/mod/game-api/types/alta-crafting/tradevendor#m-save).
+
+</div>

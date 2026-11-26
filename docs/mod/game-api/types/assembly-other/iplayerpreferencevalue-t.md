@@ -21,4 +21,4 @@ A single player preference value.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> | The stored value. |
+| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> | <span className="api-desc">The stored value.</span> |

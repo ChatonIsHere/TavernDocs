@@ -22,4 +22,4 @@ Editor menu entry that creates the `ImpactSoundSettings` global settings asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactSoundSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ImpactSoundSettings.Create` with default values.</span> |

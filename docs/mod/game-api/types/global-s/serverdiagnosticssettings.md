@@ -23,17 +23,17 @@ Global settings for `ServerDiagnosticsManager`'s send intervals.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerDiagnosticsSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ServerDiagnosticsSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-diagnosticssendinterval" /><code>{"private float diagnosticsSendInterval"}</code> | Backing field for `DiagnosticsSendInterval`. Default 5. |
-| <Link id="m-fpssendinterval" /><code>{"private float fpsSendInterval"}</code> | Backing field for `FpsSendInterval`. Default 1. |
+| <Link id="m-diagnosticssendinterval" /><code>{"private float diagnosticsSendInterval"}</code> | <span className="api-desc">Backing field for `DiagnosticsSendInterval`. Default 5.</span> |
+| <Link id="m-fpssendinterval" /><code>{"private float fpsSendInterval"}</code> | <span className="api-desc">Backing field for `FpsSendInterval`. Default 1.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Global settings for `ServerDiagnosticsManager`'s send intervals.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-diagnosticssendinterval-2" /><code>{"float DiagnosticsSendInterval { get; }"}</code> | Seconds between profiling data reports. |
-| <Link id="m-fpssendinterval-2" /><code>{"float FpsSendInterval { get; }"}</code> | Seconds between server FPS messages to players. |
+| <Link id="m-diagnosticssendinterval-2" /><code>{"float DiagnosticsSendInterval { get; }"}</code> | <span className="api-desc">Seconds between profiling data reports.</span> |
+| <Link id="m-fpssendinterval-2" /><code>{"float FpsSendInterval { get; }"}</code> | <span className="api-desc">Seconds between server FPS messages to players.</span> |

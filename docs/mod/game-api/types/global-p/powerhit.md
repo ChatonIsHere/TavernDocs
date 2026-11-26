@@ -24,18 +24,18 @@ A skill that multiplies the damage of a strong enough hit with a tool on a given
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PowerHit()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PowerHit()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-damagemodifierperlevel" /><code>{"private float[] damageModifierPerLevel"}</code> | Damage multiplier for each skill level, index 0 being level 1. |
-| <Link id="m-minimumeffectivenes" /><code>{"private float minimumEffectivenes"}</code> | Smallest hit effectiveness (0 to 1) that triggers the skill. |
-| <Link id="m-targetimpactchannel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" targetImpactChannel"}</code> | The impact channel the tool must have for the skill to apply. |
+| <Link id="m-damagemodifierperlevel" /><code>{"private float[] damageModifierPerLevel"}</code> | <span className="api-desc">Damage multiplier for each skill level, index 0 being level 1.</span> |
+| <Link id="m-minimumeffectivenes" /><code>{"private float minimumEffectivenes"}</code> | <span className="api-desc">Smallest hit effectiveness (0 to 1) that triggers the skill.</span> |
+| <Link id="m-targetimpactchannel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" targetImpactChannel"}</code> | <span className="api-desc">The impact channel the tool must have for the skill to apply.</span> |
 
 </details>
 
@@ -43,6 +43,6 @@ A skill that multiplies the damage of a strong enough hit with a tool on a given
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-executewithhit" /><code>{"override void ExecuteWithHit("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, bool hasHit = true)"}</code> | Multiplies the hit's damage by the modifier for the player's level in this skill, then runs the base skill. |
-| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | True when the hit is at least `minimumEffectivenes` effective and the tool hits on `targetImpactChannel` (as its first channel, if it has one). |
-| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | True when the held pickup is a tool with `targetImpactChannel`. |
+| <Link id="m-executewithhit" /><code>{"override void ExecuteWithHit("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool, bool hasHit = true)"}</code> | <span className="api-desc">Multiplies the hit's damage by the modifier for the player's level in this skill, then runs the base skill.</span> |
+| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">True when the hit is at least `minimumEffectivenes` effective and the tool hits on `targetImpactChannel` (as its first channel, if it has one).</span> |
+| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | <span className="api-desc">True when the held pickup is a tool with `targetImpactChannel`.</span> |

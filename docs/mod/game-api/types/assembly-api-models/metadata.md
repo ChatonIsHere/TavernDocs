@@ -20,22 +20,26 @@ Kubernetes object metadata as used in Agones requests and responses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Metadata()"}</code> | Creates a `Metadata` with default values. |
+| <Link id="m-ctor" /><code>{"Metadata()"}</code> | <span className="api-desc">Creates a `Metadata` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-annotations" /><code>{"Dictionary<string, string> Annotations { get; set; }"}</code> | Kubernetes annotations. |
-| <Link id="m-creationtime" /><code>{"DateTime? CreationTime { get; set; }"}</code> | When the object was created, if known. |
-| <Link id="m-generatename" /><code>{"string GenerateName { get; set; }"}</code> | Prefix Kubernetes uses to generate a name. |
-| <Link id="m-labels" /><code>{"Dictionary<string, string> Labels { get; set; }"}</code> | Kubernetes labels. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Object name. |
-| <Link id="m-namespace" /><code>{"string Namespace { get; set; }"}</code> | Kubernetes namespace ("default" unless set). |
-| <Link id="m-resourceversion" /><code>{"string ResourceVersion { get; set; }"}</code> | Kubernetes resource version. |
+| <Link id="m-annotations" /><code>{"Dictionary<string, string> Annotations { get; set; }"}</code> | <span className="api-desc">Kubernetes annotations.</span> |
+| <Link id="m-creationtime" /><code>{"DateTime? CreationTime { get; set; }"}</code> | <span className="api-desc">When the object was created, if known.</span> |
+| <Link id="m-generatename" /><code>{"string GenerateName { get; set; }"}</code> | <span className="api-desc">Prefix Kubernetes uses to generate a name.</span> |
+| <Link id="m-labels" /><code>{"Dictionary<string, string> Labels { get; set; }"}</code> | <span className="api-desc">Kubernetes labels.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Object name.</span> |
+| <Link id="m-namespace" /><code>{"string Namespace { get; set; }"}</code> | <span className="api-desc">Kubernetes namespace ("default" unless set).</span> |
+| <Link id="m-resourceversion" /><code>{"string ResourceVersion { get; set; }"}</code> | <span className="api-desc">Kubernetes resource version.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Metadata`:
 
+<div className="api-used-in">
+
 [`AgonesObject.Metadata`](/mod/game-api/types/assembly-api-models/agonesobject#m-metadata), [`GameServerAllocationSpec.Metadata`](/mod/game-api/types/assembly-api-models/gameserverallocationspec#m-metadata).
+
+</div>

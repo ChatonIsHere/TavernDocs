@@ -21,19 +21,19 @@ Spawner that spawns set counts of several prefabs and distributions into its ent
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MultiSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MultiSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"private List<int> count"}</code> | Backing field for `Count`. |
-| <Link id="m-distributions" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{"> distributions"}</code> | Backing field for `Distributions`. |
-| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> | If true, each distribution rolls once and spawns that one prefab for its whole count. |
-| <Link id="m-prefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> prefabs"}</code> | Backing field for `Prefabs`. |
+| <Link id="m-count" /><code>{"private List<int> count"}</code> | <span className="api-desc">Backing field for `Count`.</span> |
+| <Link id="m-distributions" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{"> distributions"}</code> | <span className="api-desc">Backing field for `Distributions`.</span> |
+| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> | <span className="api-desc">If true, each distribution rolls once and spawns that one prefab for its whole count.</span> |
+| <Link id="m-prefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> prefabs"}</code> | <span className="api-desc">Backing field for `Prefabs`.</span> |
 
 </details>
 
@@ -41,22 +41,22 @@ Spawner that spawns set counts of several prefabs and distributions into its ent
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count-2" /><code>{"List<int> Count { get; }"}</code> | Spawn counts: first one per prefab, then one per distribution, in that order. |
-| <Link id="m-distributions-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{"> Distributions { get; }"}</code> | Distributions to roll prefabs from, using the chunk's biome attributes. |
-| <Link id="m-prefabs-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> Prefabs { get; }"}</code> | Prefabs spawned directly. |
+| <Link id="m-count-2" /><code>{"List<int> Count { get; }"}</code> | <span className="api-desc">Spawn counts: first one per prefab, then one per distribution, in that order.</span> |
+| <Link id="m-distributions-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{"> Distributions { get; }"}</code> | <span className="api-desc">Distributions to roll prefabs from, using the chunk's biome attributes.</span> |
+| <Link id="m-prefabs-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> Prefabs { get; }"}</code> | <span className="api-desc">Prefabs spawned directly.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> | Server: spawns every prefab and distribution entry by its count, if the entity is in a chunk. The impact overload does the same and ignores the hit. |
-| <Link id="m-spawn-2" /><code>{"void Spawn("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Server: spawns every prefab and distribution entry by its count, if the entity is in a chunk. The impact overload does the same and ignores the hit. |
+| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> | <span className="api-desc">Server: spawns every prefab and distribution entry by its count, if the entity is in a chunk. The impact overload does the same and ignores the hit.</span> |
+| <Link id="m-spawn-2" /><code>{"void Spawn("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | <span className="api-desc">Server: spawns every prefab and distribution entry by its count, if the entity is in a chunk. The impact overload does the same and ignores the hit.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawndistribution" /><code>{"private void SpawnDistribution("}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution, int count)"}</code> | Rolls a prefab from the distribution for each count, or rolls once and spawns that prefab `count` times if `isAllSame` is set. |
+| <Link id="m-spawndistribution" /><code>{"private void SpawnDistribution("}<Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution, int count)"}</code> | <span className="api-desc">Rolls a prefab from the distribution for each count, or rolls once and spawns that prefab `count` times if `isAllSame` is set.</span> |
 
 </details>

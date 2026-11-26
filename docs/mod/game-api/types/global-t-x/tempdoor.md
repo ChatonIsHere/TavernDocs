@@ -21,27 +21,27 @@ Prototype door that listens to a temporary puzzle condition but does nothing wit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TempDoor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TempDoor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-condition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzleconditiontemp">{"PuzzleConditionTemp"}</Link>{" condition"}</code> | The puzzle condition watched. |
+| <Link id="m-condition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzleconditiontemp">{"PuzzleConditionTemp"}</Link>{" condition"}</code> | <span className="api-desc">The puzzle condition watched.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Subscribes to the condition's state changes. |
-| <Link id="m-statechanged" /><code>{"private void StateChanged("}<Link to="/mod/game-api/types/global-p/puzzleconditiontemp">{"PuzzleConditionTemp"}</Link>{" condition)"}</code> | Reads the condition's completion state and does nothing with it. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Subscribes to the condition's state changes.</span> |
+| <Link id="m-statechanged" /><code>{"private void StateChanged("}<Link to="/mod/game-api/types/global-p/puzzleconditiontemp">{"PuzzleConditionTemp"}</Link>{" condition)"}</code> | <span className="api-desc">Reads the condition's completion state and does nothing with it.</span> |
 
 </details>

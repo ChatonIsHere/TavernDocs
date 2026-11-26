@@ -22,10 +22,10 @@ Saved state of one forged point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `ForgedPointCollectionSaveData.Element` with default values. |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | <span className="api-desc">Creates a `ForgedPointCollectionSaveData.Element` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress" /><code>{"float progress"}</code> | How far the point has been forged. |
+| <Link id="m-progress" /><code>{"float progress"}</code> | <span className="api-desc">How far the point has been forged.</span> |

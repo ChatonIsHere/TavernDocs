@@ -22,18 +22,22 @@ Platform service for the signed-in Alta user: login state, the current user and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> | True while a user is signed in. |
-| <Link id="m-loggedinuser" /><code><Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> | The signed-in user, or probably null when nobody is signed in. |
+| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> | <span className="api-desc">True while a user is signed in.</span> |
+| <Link id="m-loggedinuser" /><code><Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> | <span className="api-desc">The signed-in user, or probably null when nobody is signed in.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> | Looks up another user by their user ID, as an async result. |
-| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> | Fetches the signed-in user's details again, as an async result. |
+| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> | <span className="api-desc">Looks up another user by their user ID, as an async result.</span> |
+| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> | <span className="api-desc">Fetches the signed-in user's details again, as an async result.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IUserService`:
 
+<div className="api-used-in">
+
 [`AccountNameTextReplacer.Inject`](/mod/game-api/types/alta-menus/accountnametextreplacer#m-inject), [`AccountNameTextReplacer.userService`](/mod/game-api/types/alta-menus/accountnametextreplacer#m-userservice), [`AltaAccountRegistererAndLinker.Inject`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker#m-inject), [`AltaAccountRegistererAndLinker.userService`](/mod/game-api/types/alta-menus/altaaccountregistererandlinker#m-userservice), [`PicoLoginController.Inject`](/mod/game-api/types/game-other-namespaces/picologincontroller#m-inject), [`PicoLoginController.userService`](/mod/game-api/types/game-other-namespaces/picologincontroller#m-userservice), [`LoginManager.Inject`](/mod/game-api/types/global-i-l/loginmanager#m-inject), [`LoginManager.userService`](/mod/game-api/types/global-i-l/loginmanager#m-userservice), [`RedesignedAltaAccountLinker.Inject`](/mod/game-api/types/global-q-r/redesignedaltaaccountlinker#m-inject), [`RedesignedAltaAccountLinker.userService`](/mod/game-api/types/global-q-r/redesignedaltaaccountlinker#m-userservice).
+
+</div>

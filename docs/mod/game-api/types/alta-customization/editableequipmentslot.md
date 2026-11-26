@@ -21,10 +21,14 @@ An `EditableSlot` for equipment, used by `EditableEquipmentManager`. Adds nothin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditableEquipmentSlot()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EditableEquipmentSlot()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EditableEquipmentSlot`:
 
+<div className="api-used-in">
+
 [`EditableEquipmentManager.slots`](/mod/game-api/types/alta-customization/editableequipmentmanager#m-slots).
+
+</div>

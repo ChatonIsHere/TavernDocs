@@ -21,27 +21,27 @@ Row in the recent players list: username, server name and a rough time since you
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RecentPlayerPanelListElement()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RecentPlayerPanelListElement()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-thirdline" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" thirdLine"}</code> | Text for the status line. |
+| <Link id="m-thirdline" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" thirdLine"}</code> | <span className="api-desc">Text for the status line.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupforrecentplayer" /><code>{"internal void SetupForRecentPlayer("}<Link to="/mod/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" recentPlayer)"}</code> | Fills the row from a recent player record. |
+| <Link id="m-setupforrecentplayer" /><code>{"internal void SetupForRecentPlayer("}<Link to="/mod/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" recentPlayer)"}</code> | <span className="api-desc">Fills the row from a recent player record.</span> |
 
 </details>
 
@@ -49,4 +49,8 @@ Row in the recent players list: username, server name and a rough time since you
 
 Members of other types that take, return or hold a `RecentPlayerPanelListElement`:
 
+<div className="api-used-in">
+
 [`RecentPlayersListPanel.listElement`](/mod/game-api/types/alta-menus/recentplayerslistpanel#m-listelement).
+
+</div>

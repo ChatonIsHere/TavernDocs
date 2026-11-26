@@ -21,17 +21,21 @@ A loaded population child waiting to be re-added to its population, with the spa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> | Creates a `PopulationFolderBase.SerializedChild` from `spawnPointIndex`. |
+| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> | <span className="api-desc">Creates a `PopulationFolderBase.SerializedChild` from `spawnPointIndex`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-child" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Child { get; set; }"}</code> | The loaded entity, set once it is spawned. |
-| <Link id="m-spawnpointindex" /><code>{"int SpawnPointIndex { get; }"}</code> | Index of the spawn point the child was saved at. |
+| <Link id="m-child" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Child { get; set; }"}</code> | <span className="api-desc">The loaded entity, set once it is spawned.</span> |
+| <Link id="m-spawnpointindex" /><code>{"int SpawnPointIndex { get; }"}</code> | <span className="api-desc">Index of the spawn point the child was saved at.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SerializedChild`:
 
+<div className="api-used-in">
+
 [`PopulationFolderBase.serializedentitiesSpawnPoint`](/mod/game-api/types/alta-world-generation/populationfolderbase#m-serializedentitiesspawnpoint).
+
+</div>

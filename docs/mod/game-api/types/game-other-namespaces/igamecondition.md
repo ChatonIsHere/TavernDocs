@@ -21,10 +21,10 @@ A condition in the game that can be checked and tells listeners when it changes.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | Callback run when the condition changes. |
+| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | <span className="api-desc">Callback run when the condition changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | True if the condition holds right now. |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | <span className="api-desc">True if the condition holds right now.</span> |

@@ -21,15 +21,15 @@ Debug component that logs the name of every collider this object hits.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderDebugger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColliderDebugger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Logs the other collider's name. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | <span className="api-desc">Logs the other collider's name.</span> |
 
 </details>

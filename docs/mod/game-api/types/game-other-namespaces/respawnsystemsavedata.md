@@ -23,17 +23,21 @@ Save data for the `RespawnSystem`: the global shrine and every respawn shrine's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnSystemSaveData()"}</code> | Creates a `RespawnSystemSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RespawnSystemSaveData()"}</code> | <span className="api-desc">Creates a `RespawnSystemSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-globalshrineguidasstring" /><code>{"string GlobalShrineGuidAsString"}</code> | Guid of the global respawn shrine, as text. |
-| <Link id="m-respawnshrinemodeldictionaryasjson" /><code>{"string RespawnShrineModelDictionaryAsJson"}</code> | All respawn shrine models, as one JSON string. |
+| <Link id="m-globalshrineguidasstring" /><code>{"string GlobalShrineGuidAsString"}</code> | <span className="api-desc">Guid of the global respawn shrine, as text.</span> |
+| <Link id="m-respawnshrinemodeldictionaryasjson" /><code>{"string RespawnShrineModelDictionaryAsJson"}</code> | <span className="api-desc">All respawn shrine models, as one JSON string.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RespawnSystemSaveData`:
 
+<div className="api-used-in">
+
 [`IRespawnSystemModel.GetSaveData`](/mod/game-api/types/game-other-namespaces/irespawnsystemmodel#m-getsavedata), [`RespawnSystem.Load`](/mod/game-api/types/game-other-namespaces/respawnsystem#m-load), [`RespawnSystem.Save`](/mod/game-api/types/game-other-namespaces/respawnsystem#m-save), [`RespawnSystemModel.GetSaveData`](/mod/game-api/types/game-other-namespaces/respawnsystemmodel#m-getsavedata), [`RespawnSystemModel.RespawnSystemModel`](/mod/game-api/types/game-other-namespaces/respawnsystemmodel#m-ctor-2).
+
+</div>

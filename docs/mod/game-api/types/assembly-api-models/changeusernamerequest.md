@@ -20,18 +20,22 @@ Body of an Alta web API request to change the account's username, confirmed with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> | Creates a `ChangeUsernameRequest` with default values. |
-| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> | Creates a `ChangeUsernameRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> | <span className="api-desc">Creates a `ChangeUsernameRequest` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> | <span className="api-desc">Creates a `ChangeUsernameRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newusername" /><code>{"string NewUsername { get; private set; }"}</code> | The username to change to. |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> | Hash of the account password, to confirm the change. |
+| <Link id="m-newusername" /><code>{"string NewUsername { get; private set; }"}</code> | <span className="api-desc">The username to change to.</span> |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> | <span className="api-desc">Hash of the account password, to confirm the change.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChangeUsernameRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ChangeUsernameAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-changeusernameasync).
+
+</div>

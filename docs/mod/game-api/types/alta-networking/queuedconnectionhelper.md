@@ -18,12 +18,12 @@ Tracks all queued connection receivers so code can tell when every queued messag
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivers" /><code>{"private static HashSet<"}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{"> receivers"}</code> | The tracked receivers. |
+| <Link id="m-receivers" /><code>{"private static HashSet<"}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{"> receivers"}</code> | <span className="api-desc">The tracked receivers.</span> |
 
 </details>
 
@@ -31,26 +31,26 @@ Tracks all queued connection receivers so code can tell when every queued messag
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istherequeuedmessages" /><code>{"static bool IsThereQueuedMessages { get; }"}</code> | True if any tracked receiver still has queued messages. |
+| <Link id="m-istherequeuedmessages" /><code>{"static bool IsThereQueuedMessages { get; }"}</code> | <span className="api-desc">True if any tracked receiver still has queued messages.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedallqueues" /><code>{"static event Action FinishedAllQueues"}</code> | Raised when a receiver finishes its queue and no tracked receiver has messages left. |
+| <Link id="m-finishedallqueues" /><code>{"static event Action FinishedAllQueues"}</code> | <span className="api-desc">Raised when a receiver finishes its queue and no tracked receiver has messages left.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{" receiver)"}</code> | Stops tracking a receiver and checks if all queues are now empty. |
-| <Link id="m-register" /><code>{"static void Register("}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{" receiver)"}</code> | Starts tracking a receiver and listens for its queue finishing. |
+| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{" receiver)"}</code> | <span className="api-desc">Stops tracking a receiver and checks if all queues are now empty.</span> |
+| <Link id="m-register" /><code>{"static void Register("}<Link to="/mod/game-api/types/alta-networking/queuedconnectionreceiver">{"QueuedConnectionReceiver"}</Link>{" receiver)"}</code> | <span className="api-desc">Starts tracking a receiver and listens for its queue finishing.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receiverfinished" /><code>{"private static void ReceiverFinished()"}</code> | Raises `FinishedAllQueues` if no receiver has a queue left. |
+| <Link id="m-receiverfinished" /><code>{"private static void ReceiverFinished()"}</code> | <span className="api-desc">Raises `FinishedAllQueues` if no receiver has a queue left.</span> |
 
 </details>

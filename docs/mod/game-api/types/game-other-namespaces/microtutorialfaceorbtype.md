@@ -27,4 +27,8 @@ What a micro tutorial face orb does when used: start the tutorial (Entry) or lea
 
 Members of other types that take, return or hold a `MicroTutorialFaceOrbType`:
 
+<div className="api-used-in">
+
 [`MicroTutorialFaceOrb.orbType`](/mod/game-api/types/game-other-namespaces/microtutorialfaceorb#m-orbtype), [`MicroTutorialFaceOrbSaveData.OrbType`](/mod/game-api/types/game-other-namespaces/microtutorialfaceorbsavedata#m-orbtype).
+
+</div>

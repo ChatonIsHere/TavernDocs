@@ -22,17 +22,17 @@ Base asset for filters in the forest fill spawner that adjust a candidate point 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SpawnModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-safename" /><code>{"protected string safeName"}</code> | The asset's name, cached in `Initialize`. |
+| <Link id="m-safename" /><code>{"protected string safeName"}</code> | <span className="api-desc">The asset's name, cached in `Initialize`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"abstract void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref T point, ref float weight)"}</code> | Changes the point and its spawn weight for the given fill setup. |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Caches the asset name in `safeName`. |
+| <Link id="m-filter" /><code>{"abstract void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref T point, ref float weight)"}</code> | <span className="api-desc">Changes the point and its spawn weight for the given fill setup.</span> |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | <span className="api-desc">Caches the asset name in `safeName`.</span> |

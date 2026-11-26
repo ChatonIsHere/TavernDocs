@@ -28,4 +28,8 @@ Kind of asset an import filter applies to: texture or mesh.
 
 Members of other types that take, return or hold a `Type`:
 
+<div className="api-used-in">
+
 [`ImportSettings.Find`](/mod/game-api/types/global-i-l/importsettings#m-find), [`ImportSettings.Filter.type`](/mod/game-api/types/global-i-l/importsettings-filter#m-type).
+
+</div>

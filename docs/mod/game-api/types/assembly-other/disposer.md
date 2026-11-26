@@ -22,17 +22,17 @@ A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Disposer()"}</code> | Creates a `Disposer` with default values. |
+| <Link id="m-ctor" /><code>{"Disposer()"}</code> | <span className="api-desc">Creates a `Disposer` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | Whether it has been disposed. |
-| <Link id="m-trackeddisposables" /><code>{"private readonly HashSet<IDisposable> trackedDisposables"}</code> | The tracked disposables. |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | <span className="api-desc">Whether it has been disposed.</span> |
+| <Link id="m-trackeddisposables" /><code>{"private readonly HashSet<IDisposable> trackedDisposables"}</code> | <span className="api-desc">The tracked disposables.</span> |
 
 </details>
 
@@ -40,17 +40,17 @@ A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> | Creates an instance so the build doesn't strip the class. |
-| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> | Tracks a disposable, or disposes it at once if this is already disposed. |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes every tracked disposable, once. |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | If never disposed, the finalizer still disposes the tracked items, on the garbage collector's thread. |
+| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> | <span className="api-desc">Creates an instance so the build doesn't strip the class.</span> |
+| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> | <span className="api-desc">Tracks a disposable, or disposes it at once if this is already disposed.</span> |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Disposes every tracked disposable, once.</span> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | <span className="api-desc">If never disposed, the finalizer still disposes the tracked items, on the garbage collector's thread.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose-2" /><code>{"private void Dispose(bool dispose)"}</code> | Disposes every tracked disposable, once. |
-| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> | Disposes and forgets every tracked disposable. |
+| <Link id="m-dispose-2" /><code>{"private void Dispose(bool dispose)"}</code> | <span className="api-desc">Disposes every tracked disposable, once.</span> |
+| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> | <span className="api-desc">Disposes and forgets every tracked disposable.</span> |
 
 </details>

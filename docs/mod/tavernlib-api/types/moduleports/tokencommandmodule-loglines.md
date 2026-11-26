@@ -22,16 +22,16 @@ The answer to `token log`: the newest lines of `console_token_log.jsonl`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogLines()"}</code> | Makes an empty log answer. |
+| <Link id="m-ctor" /><code>{"LogLines()"}</code> | <span className="api-desc">Makes an empty log answer.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code>{"List<JObject> Entries { get; set; }"}</code> | The log entries as JSON objects, oldest first. |
+| <Link id="m-entries" /><code>{"List<JObject> Entries { get; set; }"}</code> | <span className="api-desc">The log entries as JSON objects, oldest first.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Each entry's non-empty fields on one line, or `Nothing logged`. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Each entry's non-empty fields on one line, or `Nothing logged`.</span> |

@@ -22,10 +22,10 @@ Settings for `ActiveSchmeecheePlay`: a schmeechee runs about at random until it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SchmeecheePlaySettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SchmeecheePlaySettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the shared `ActiveSchmeecheePlay` action for schmeechees, without a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the shared `ActiveSchmeecheePlay` action for schmeechees, without a target.</span> |

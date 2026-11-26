@@ -28,4 +28,8 @@ What a `NonClimbable` surface does when grabbed: `Ignored` can't be climbed at a
 
 Members of other types that take, return or hold a `ClimbFailBehaviour`:
 
+<div className="api-used-in">
+
 [`NonClimbable.climbFailBehaviour`](/mod/game-api/types/global-m-o/nonclimbable#m-climbfailbehaviour).
+
+</div>

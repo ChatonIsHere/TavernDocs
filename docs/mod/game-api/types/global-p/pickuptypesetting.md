@@ -22,16 +22,16 @@ Base settings asset for one pickup joint type, looked up from `PickupTypeSetting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PickupTypeSetting()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected PickupTypeSetting()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> | Backing field for `Type`. |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> | <span className="api-desc">Backing field for `Type`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Base settings asset for one pickup joint type, looked up from `PickupTypeSetting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-type-2" /><code><Link to="/mod/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> | The joint type these settings are for. |
+| <Link id="m-type-2" /><code><Link to="/mod/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> | <span className="api-desc">The joint type these settings are for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PickupTypeSetting`:
 
+<div className="api-used-in">
+
 [`PickupTypeSettings.pickupSettings`](/mod/game-api/types/global-p/pickuptypesettings#m-pickupsettings), [`PickupTypeSettings.pickupTypeSettings`](/mod/game-api/types/global-p/pickuptypesettings#m-pickuptypesettings).
+
+</div>

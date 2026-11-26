@@ -21,4 +21,4 @@ Extension for logging a failed `IResult` to a micro tutorial logger.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logerror" /><code>{"static void LogError(IResult result, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutoriallogger">{"MicroTutorialLogger"}</Link>{" logger)"}</code> | Logs the result's exception if it has one, otherwise its error message. |
+| <Link id="m-logerror" /><code>{"static void LogError(IResult result, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutoriallogger">{"MicroTutorialLogger"}</Link>{" logger)"}</code> | <span className="api-desc">Logs the result's exception if it has one, otherwise its error message.</span> |

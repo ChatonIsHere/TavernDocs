@@ -21,4 +21,4 @@ Something that can apply an effect to an `EffectHandler` at a strength. Implemen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect at the given strength if allowed. A negative strength is used to remove it again. |
+| <Link id="m-checkapply" /><code>{"void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Applies the effect at the given strength if allowed. A negative strength is used to remove it again.</span> |

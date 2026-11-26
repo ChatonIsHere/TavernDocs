@@ -29,4 +29,8 @@ Which part of the stat a `StatBonusSkill` changes: its maximum, its base value o
 
 Members of other types that take, return or hold a `OperationTarget`:
 
+<div className="api-used-in">
+
 [`StatBonusSkill.operationTarget`](/mod/game-api/types/global-s/statbonusskill#m-operationtarget).
+
+</div>

@@ -22,17 +22,17 @@ Base for AI action components that run for a random length of time, set in the i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> | Backing field for `MaximumDuration` (default 7 seconds). |
-| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> | Backing field for `MinimumDuration` (default 5 seconds). |
+| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> | <span className="api-desc">Backing field for `MaximumDuration` (default 7 seconds).</span> |
+| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> | <span className="api-desc">Backing field for `MinimumDuration` (default 5 seconds).</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Base for AI action components that run for a random length of time, set in the i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumduration-2" /><code>{"float MaximumDuration { get; }"}</code> | Upper bound of the random duration, in seconds. |
-| <Link id="m-minimumduration-2" /><code>{"float MinimumDuration { get; }"}</code> | Lower bound of the random duration, in seconds. |
-| <Link id="m-randomduration" /><code>{"float RandomDuration { get; }"}</code> | A fresh random value between the minimum and maximum each time it is read. |
+| <Link id="m-maximumduration-2" /><code>{"float MaximumDuration { get; }"}</code> | <span className="api-desc">Upper bound of the random duration, in seconds.</span> |
+| <Link id="m-minimumduration-2" /><code>{"float MinimumDuration { get; }"}</code> | <span className="api-desc">Lower bound of the random duration, in seconds.</span> |
+| <Link id="m-randomduration" /><code>{"float RandomDuration { get; }"}</code> | <span className="api-desc">A fresh random value between the minimum and maximum each time it is read.</span> |

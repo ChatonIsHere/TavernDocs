@@ -22,4 +22,4 @@ Editor menu entry that creates a new `ImpactChannel` asset under the Township Im
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactChannel.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ImpactChannel.Create` with default values.</span> |

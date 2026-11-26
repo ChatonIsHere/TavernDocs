@@ -22,17 +22,17 @@ Background task that takes queued console event messages and raises each event's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Processor()"}</code> | Creates a `ConsoleEvent.Processor` with default values. |
+| <Link id="m-ctor" /><code>{"Processor()"}</code> | <span className="api-desc">Creates a `ConsoleEvent.Processor` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> | Token source that stops the background task. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> | <span className="api-desc">Token source that stops the background task.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Background task that takes queued console event messages and raises each event's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Cancels the background task's token. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Cancels the background task's token.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> | The background loop: raises `Invoked` for each queued message and logs the message rate every 10 seconds. |
+| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> | <span className="api-desc">The background loop: raises `Invoked` for each queued message and logs the message rate every 10 seconds.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ Background task that takes queued console event messages and raises each event's
 
 Members of other types that take, return or hold a `Processor`:
 
+<div className="api-used-in">
+
 [`ConsoleEvent.processor`](/mod/game-api/types/alta-console/consoleevent#m-processor).
+
+</div>

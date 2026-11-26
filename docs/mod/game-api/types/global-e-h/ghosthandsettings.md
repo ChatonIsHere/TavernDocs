@@ -23,17 +23,17 @@ Settings asset for ghost hands: whether they fade and how alpha changes with dis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GhostHandSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GhostHandSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> | Backing field for `AlphaByDistance`. |
-| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> | Backing field for `IsFadingAlpha`. |
+| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> | <span className="api-desc">Backing field for `AlphaByDistance`.</span> |
+| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> | <span className="api-desc">Backing field for `IsFadingAlpha`.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Settings asset for ghost hands: whether they fade and how alpha changes with dis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> | Curve from distance to ghost hand alpha. |
-| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> | Whether ghost hand alpha updates with distance. `CharacterIKController` restores this after showing hands fully. |
+| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> | <span className="api-desc">Curve from distance to ghost hand alpha.</span> |
+| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> | <span className="api-desc">Whether ghost hand alpha updates with distance. `CharacterIKController` restores this after showing hands fully.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GhostHandSettings`:
 
+<div className="api-used-in">
+
 [`GhostHandController.Settings`](/mod/game-api/types/alta-player/ghosthandcontroller#m-settings), [`PlayerControllerSettings.ghostHandSettings`](/mod/game-api/types/alta-player/playercontrollersettings#m-ghosthandsettings), [`PlayerControllerSettings.GhostHandSettings`](/mod/game-api/types/alta-player/playercontrollersettings#m-ghosthandsettings-2).
+
+</div>

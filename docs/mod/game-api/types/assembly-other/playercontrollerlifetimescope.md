@@ -23,16 +23,16 @@ VContainer scope on a player controller. Injects the object like `GameObjectLife
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> | Creates a `PlayerControllerLifetimeScope` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> | <span className="api-desc">Creates a `PlayerControllerLifetimeScope` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-concreteplayercontrollermultilockmodel" /><code>{"private MonoBehaviour concretePlayerControllerMultiLockModel"}</code> | Component that should implement `IPlayerControllerMultiLockModel`. |
+| <Link id="m-concreteplayercontrollermultilockmodel" /><code>{"private MonoBehaviour concretePlayerControllerMultiLockModel"}</code> | <span className="api-desc">Component that should implement `IPlayerControllerMultiLockModel`.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ VContainer scope on a player controller. Injects the object like `GameObjectLife
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> | Runs the base setup, then registers the multi-lock model. |
+| <Link id="m-configurescope" /><code>{"protected override void ConfigureScope(IContainerBuilder builder)"}</code> | <span className="api-desc">Runs the base setup, then registers the multi-lock model.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-registercontrolsafetylockmodel" /><code>{"private void RegisterControlSafetyLockModel(IContainerBuilder builder)"}</code> | Binds `IPlayerControllerMultiLockModel` to the assigned component, or to a `FakePlayerControllerMultiLockModel` if it isn't one. |
+| <Link id="m-registercontrolsafetylockmodel" /><code>{"private void RegisterControlSafetyLockModel(IContainerBuilder builder)"}</code> | <span className="api-desc">Binds `IPlayerControllerMultiLockModel` to the assigned component, or to a `FakePlayerControllerMultiLockModel` if it isn't one.</span> |
 
 </details>

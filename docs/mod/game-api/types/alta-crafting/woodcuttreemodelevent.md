@@ -21,10 +21,14 @@ Serializable `AltaEvent` raised with a `WoodcutTreeModel`, used for `WoodcutConn
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeModelEvent()"}</code> | Creates a `WoodcutTreeModelEvent` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeModelEvent()"}</code> | <span className="api-desc">Creates a `WoodcutTreeModelEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WoodcutTreeModelEvent`:
 
+<div className="api-used-in">
+
 [`WoodcutConnectionType.broken`](/mod/game-api/types/alta-crafting/woodcutconnectiontype#m-broken), [`WoodcutConnectionType.Broken`](/mod/game-api/types/alta-crafting/woodcutconnectiontype#m-broken-2).
+
+</div>

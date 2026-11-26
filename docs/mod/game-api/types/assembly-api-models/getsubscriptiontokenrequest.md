@@ -20,10 +20,10 @@ Request body for getting a payment token for a subscription plan.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> | Creates a `GetSubscriptionTokenRequest` with default values. |
+| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> | <span className="api-desc">Creates a `GetSubscriptionTokenRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subscriptionplanidentifier" /><code>{"string SubscriptionPlanIdentifier { get; set; }"}</code> | The plan's external id, sent as `plan_external_id`. |
+| <Link id="m-subscriptionplanidentifier" /><code>{"string SubscriptionPlanIdentifier { get; set; }"}</code> | <span className="api-desc">The plan's external id, sent as `plan_external_id`.</span> |

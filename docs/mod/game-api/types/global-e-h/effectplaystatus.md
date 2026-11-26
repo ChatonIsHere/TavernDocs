@@ -29,4 +29,8 @@ Flags for an effect that is playing with its visuals or its sound turned off.
 
 Members of other types that take, return or hold a `EffectPlayStatus`:
 
+<div className="api-used-in">
+
 [`PlayerSpecialEffectsController.streamingTrailPlayStatus`](/mod/game-api/types/global-p/playerspecialeffectscontroller#m-streamingtrailplaystatus), [`ScaledLerpFollow.PlayStatus`](/mod/game-api/types/global-s/scaledlerpfollow#m-playstatus), [`TeleporterTrailLerper.SetEffectPlayStatus`](/mod/game-api/types/global-t-x/teleportertraillerper#m-seteffectplaystatus).
+
+</div>

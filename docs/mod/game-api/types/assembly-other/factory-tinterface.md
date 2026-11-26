@@ -21,11 +21,11 @@ Synchronous factory with no parameters. Subclasses build the object in `CreateIn
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | Creates a `Factory` with default values. |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | <span className="api-desc">Creates a `Factory` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"virtual TInterface Create()"}</code> | Calls `CreateInstance`, injects the result through the container, registers it for disposal and returns it. |
-| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance()"}</code> | Abstract. Builds the raw instance; implemented by each concrete factory. |
+| <Link id="m-create" /><code>{"virtual TInterface Create()"}</code> | <span className="api-desc">Calls `CreateInstance`, injects the result through the container, registers it for disposal and returns it.</span> |
+| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance()"}</code> | <span className="api-desc">Abstract. Builds the raw instance; implemented by each concrete factory.</span> |

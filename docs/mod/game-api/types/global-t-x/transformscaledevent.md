@@ -21,10 +21,14 @@ Serializable event with a transform and a scale value, used for the scaled hit-g
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformScaledEvent()"}</code> | Creates a `TransformScaledEvent` with default values. |
+| <Link id="m-ctor" /><code>{"TransformScaledEvent()"}</code> | <span className="api-desc">Creates a `TransformScaledEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TransformScaledEvent`:
 
+<div className="api-used-in">
+
 [`SmoothLocomotionSettings.onHitGroundEffectScaled`](/mod/game-api/types/global-s/smoothlocomotionsettings#m-onhitgroundeffectscaled), [`SmoothLocomotionSettings.OnHitGroundEffectScaled`](/mod/game-api/types/global-s/smoothlocomotionsettings#m-onhitgroundeffectscaled-2).
+
+</div>

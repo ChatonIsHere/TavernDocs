@@ -28,4 +28,8 @@ A kind of physical control interaction: none, knob or slider.
 
 Members of other types that take, return or hold a `InteractionType`:
 
+<div className="api-used-in">
+
 [`BubbleInspectorFieldAttribute.BubbleInspectorFieldAttribute`](/mod/game-api/types/global-a-b/bubbleinspectorfieldattribute#m-ctor), [`BubbleInspectorFieldAttribute.Interaction`](/mod/game-api/types/global-a-b/bubbleinspectorfieldattribute#m-interaction), [`ValueMember.InteractionType`](/mod/game-api/types/global-t-x/valuemember#m-interactiontype).
+
+</div>

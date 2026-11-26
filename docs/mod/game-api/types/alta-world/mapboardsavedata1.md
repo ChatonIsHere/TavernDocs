@@ -23,13 +23,13 @@ Save data (version 1, the current one) for `MapBoard`, the in-world map board.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> | Creates a `MapBoardSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> | <span className="api-desc">Creates a `MapBoardSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-map" /><code><Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> | Which `Map` asset the board shows. |
-| <Link id="m-positionoffset" /><code>{"Vector2 positionOffset"}</code> | Offset of the shown area on the map, in map pixels. |
-| <Link id="m-unlockpieceindex" /><code>{"int unlockPieceIndex"}</code> | The map piece a player discovers when they interact with the board. |
-| <Link id="m-zoom" /><code>{"float zoom"}</code> | Zoom of the shown area. |
+| <Link id="m-map" /><code><Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> | <span className="api-desc">Which `Map` asset the board shows.</span> |
+| <Link id="m-positionoffset" /><code>{"Vector2 positionOffset"}</code> | <span className="api-desc">Offset of the shown area on the map, in map pixels.</span> |
+| <Link id="m-unlockpieceindex" /><code>{"int unlockPieceIndex"}</code> | <span className="api-desc">The map piece a player discovers when they interact with the board.</span> |
+| <Link id="m-zoom" /><code>{"float zoom"}</code> | <span className="api-desc">Zoom of the shown area.</span> |

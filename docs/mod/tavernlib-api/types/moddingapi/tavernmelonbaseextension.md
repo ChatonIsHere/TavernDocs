@@ -22,4 +22,4 @@ An extension method for reading a melon's `TavernModAttribute`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmodside" /><code>{"static "}<Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" GetModSide(MelonBase melonMod)"}</code> | The side from the `TavernMod` attribute on the melon's own class, or `None` without one. |
+| <Link id="m-getmodside" /><code>{"static "}<Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" GetModSide(MelonBase melonMod)"}</code> | <span className="api-desc">The side from the `TavernMod` attribute on the melon's own class, or `None` without one.</span> |

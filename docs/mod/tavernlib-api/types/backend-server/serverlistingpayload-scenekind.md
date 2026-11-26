@@ -30,4 +30,8 @@ Private: which scene the listing reports, Normal, Quest or Tutorial. The launch 
 
 Members of other types that take, return or hold a `SceneKind`:
 
+<div className="api-used-in">
+
 [`ServerListingPayload.ResolveScene`](/mod/tavernlib-api/types/backend-server/serverlistingpayload#m-resolvescene).
+
+</div>

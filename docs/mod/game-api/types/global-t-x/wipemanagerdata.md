@@ -23,10 +23,10 @@ Save data for `WipeManager`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> | Creates a `WipeManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> | <span className="api-desc">Creates a `WipeManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> | Identifiers of chunks that need a pre-wipe pass. |
+| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> | <span className="api-desc">Identifiers of chunks that need a pre-wipe pass.</span> |

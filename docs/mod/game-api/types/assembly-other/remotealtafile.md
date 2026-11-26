@@ -21,12 +21,12 @@ Remote-backed save file where the remote copy is another path on disk (a mounted
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> | Creates a `RemoteAltaFile` from `internalFile` and `remoteFileInfo`. |
+| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> | <span className="api-desc">Creates a `RemoteAltaFile` from `internalFile` and `remoteFileInfo`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-backupinstantinternal" /><code>{"protected override void BackupInstantInternal()"}</code> | Copies the local file over the remote file, blocking. |
-| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> | Runs the same copy on a background task. |
-| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> | Copies the remote file over the local file on a background task. |
+| <Link id="m-backupinstantinternal" /><code>{"protected override void BackupInstantInternal()"}</code> | <span className="api-desc">Copies the local file over the remote file, blocking.</span> |
+| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> | <span className="api-desc">Runs the same copy on a background task.</span> |
+| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> | <span className="api-desc">Copies the remote file over the local file on a background task.</span> |

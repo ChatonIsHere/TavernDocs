@@ -21,4 +21,4 @@ Dictionary lookup helper used with the Agones models.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-safegetvalue" /><code>{"static T2 SafeGetValue<T, T2>(IDictionary<T, T2> dictionary, T key, T2 defaultValue)"}</code> | Returns the value for the key, or the given default if the key is missing. |
+| <Link id="m-safegetvalue" /><code>{"static T2 SafeGetValue<T, T2>(IDictionary<T, T2> dictionary, T key, T2 defaultValue)"}</code> | <span className="api-desc">Returns the value for the key, or the given default if the key is missing.</span> |

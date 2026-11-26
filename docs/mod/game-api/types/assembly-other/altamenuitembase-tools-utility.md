@@ -23,4 +23,4 @@ Editor menu folder `Tools/Utility`: menu item classes inherit it to appear under
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | Creates an `AltaMenuItemBase.Tools.Utility` with default values. |
+| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Utility` with default values.</span> |

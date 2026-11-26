@@ -23,11 +23,11 @@ Save data (version 1) for `LogicReset`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicResetSaveData()"}</code> | Creates a `LogicResetSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicResetSaveData()"}</code> | <span className="api-desc">Creates a `LogicResetSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boolsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] boolSaveData"}</code> | Saved data of each sender, in list order. |
-| <Link id="m-resetvalues" /><code>{"bool[] resetValues"}</code> | Reset value for each sender, same order as `boolSaveData`. |
+| <Link id="m-boolsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] boolSaveData"}</code> | <span className="api-desc">Saved data of each sender, in list order.</span> |
+| <Link id="m-resetvalues" /><code>{"bool[] resetValues"}</code> | <span className="api-desc">Reset value for each sender, same order as `boolSaveData`.</span> |

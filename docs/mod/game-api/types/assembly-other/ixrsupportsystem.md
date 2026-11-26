@@ -21,11 +21,15 @@ Client (Windows): extra setup for one XR mode, run before XR starts. `SteamOpenV
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | Whether this system applies to the given XR mode. |
-| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> | Prepares the system before the XR loader starts, such as creating the SteamVR instances. |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | <span className="api-desc">Whether this system applies to the given XR mode.</span> |
+| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> | <span className="api-desc">Prepares the system before the XR loader starts, such as creating the SteamVR instances.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IXRSupportSystem`:
 
+<div className="api-used-in">
+
 [`WindowsXRLoaderInitializer.WindowsXRLoaderInitializer`](/mod/game-api/types/assembly-other/windowsxrloaderinitializer#m-ctor), [`WindowsXRLoaderInitializer.xrSupportSystems`](/mod/game-api/types/assembly-other/windowsxrloaderinitializer#m-xrsupportsystems).
+
+</div>

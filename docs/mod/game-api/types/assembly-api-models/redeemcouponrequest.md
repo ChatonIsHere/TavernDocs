@@ -20,10 +20,10 @@ Request body for redeeming a coupon code.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> | Creates a `RedeemCouponRequest` with default values. |
+| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> | <span className="api-desc">Creates a `RedeemCouponRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coupon" /><code>{"string Coupon { get; set; }"}</code> | The coupon code. |
+| <Link id="m-coupon" /><code>{"string Coupon { get; set; }"}</code> | <span className="api-desc">The coupon code.</span> |

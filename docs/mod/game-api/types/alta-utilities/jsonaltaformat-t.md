@@ -22,18 +22,18 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonAltaFormat()"}</code> | Creates a `JsonAltaFormat` with default values. |
+| <Link id="m-ctor" /><code>{"JsonAltaFormat()"}</code> | <span className="api-desc">Creates a `JsonAltaFormat` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | The object stored in the file. |
+| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | <span className="api-desc">The object stored in the file.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Returns a copy with `Data` cloned through `ICloneable`. |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Deserialises the stream into `Data`, or fills the existing `Data` in place if there is one. |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes `Data` to the stream as JSON. |
+| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | <span className="api-desc">Returns a copy with `Data` cloned through `ICloneable`.</span> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | <span className="api-desc">Deserialises the stream into `Data`, or fills the existing `Data` in place if there is one.</span> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | <span className="api-desc">Writes `Data` to the stream as JSON.</span> |

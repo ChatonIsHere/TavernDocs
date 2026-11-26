@@ -23,19 +23,19 @@ A loot table asset: item entries grouped by rarity, with extra entries for festi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LootTable()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LootTable()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> | Item entries grouped by rarity, with optional festival-only entries. Exposed as `Entries`. |
-| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> | Origins already tried for the current rarity in `GetLoot`. |
-| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> | Rarities already tried in `GetLoot`. |
-| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> | Shared list of candidate entries filled while picking loot. |
+| <Link id="m-entries" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> | <span className="api-desc">Item entries grouped by rarity, with optional festival-only entries. Exposed as `Entries`.</span> |
+| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> | <span className="api-desc">Origins already tried for the current rarity in `GetLoot`.</span> |
+| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> | <span className="api-desc">Rarities already tried in `GetLoot`.</span> |
+| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> | <span className="api-desc">Shared list of candidate entries filled while picking loot.</span> |
 
 </details>
 
@@ -43,17 +43,21 @@ A loot table asset: item entries grouped by rarity, with extra entries for festi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> Entries { get; }"}</code> | The entry lists, one per rarity. |
+| <Link id="m-entries-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> Entries { get; }"}</code> | <span className="api-desc">The entry lists, one per rarity.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getloot" /><code>{"static "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count)"}</code> | Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`. |
-| <Link id="m-getloot-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count, out "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, out "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin)"}</code> | Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`. |
+| <Link id="m-getloot" /><code>{"static "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count)"}</code> | <span className="api-desc">Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`.</span> |
+| <Link id="m-getloot-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" GetLoot("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] localTables, float weightingPower, out int count, out "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, out "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin)"}</code> | <span className="api-desc">Rolls a rarity, then an origin, then a category and an item for a dock. Returns the item and count, or null. The count never reaches `Maximum` unless it equals `Minimum`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LootTable`:
 
+<div className="api-used-in">
+
 [`Biome.lootTables`](/mod/game-api/types/alta-world-generation/biome#m-loottables), [`Biome.LootTables`](/mod/game-api/types/alta-world-generation/biome#m-loottables-2), [`Origin.AddEntries`](/mod/game-api/types/alta-world-generation/origin#m-addentries), [`Origin.allTables`](/mod/game-api/types/alta-world-generation/origin#m-alltables), [`Origin.GetItems`](/mod/game-api/types/alta-world-generation/origin#m-getitems), [`Origin.tables`](/mod/game-api/types/alta-world-generation/origin#m-tables).
+
+</div>

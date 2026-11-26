@@ -22,10 +22,10 @@ Saved state of one woodcut point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `WoodcutPointCollectionSaveData.Element` with default values. |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | <span className="api-desc">Creates a `WoodcutPointCollectionSaveData.Element` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress" /><code>{"float progress"}</code> | How far the point has been cut. |
+| <Link id="m-progress" /><code>{"float progress"}</code> | <span className="api-desc">How far the point has been cut.</span> |

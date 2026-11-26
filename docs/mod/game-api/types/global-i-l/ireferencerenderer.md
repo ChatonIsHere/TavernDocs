@@ -21,4 +21,4 @@ Implemented by components that keep references to renderers, so they can be upda
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updaterenderers" /><code>{"void UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> | Replaces references to the old renderers with the new ones. |
+| <Link id="m-updaterenderers" /><code>{"void UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> | <span className="api-desc">Replaces references to the old renderers with the new ones.</span> |

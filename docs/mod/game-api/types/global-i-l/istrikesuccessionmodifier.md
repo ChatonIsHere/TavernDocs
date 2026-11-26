@@ -21,4 +21,4 @@ A skill that changes a strike succession skill, such as `PowerStrike` and `Block
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetskill" /><code><Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" TargetSkill { get; }"}</code> | The skill whose strike succession input it uses. |
+| <Link id="m-targetskill" /><code><Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" TargetSkill { get; }"}</code> | <span className="api-desc">The skill whose strike succession input it uses.</span> |

@@ -22,17 +22,17 @@ Old version 1 save data for a `TradeVendor`. Migrates to `TradeVendorSaveData`, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> | Creates a `TradeVendorSaveDataOld` with default values. |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> | <span className="api-desc">Creates a `TradeVendorSaveDataOld` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> | Old tax flag, not carried over. |
-| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> | Saved owner of the vendor. |
+| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> | <span className="api-desc">Old tax flag, not carried over.</span> |
+| <Link id="m-vendorowner" /><code>{"int vendorOwner"}</code> | <span className="api-desc">Saved owner of the vendor.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a `TradeVendorSaveData` with the owner; `isTaxing` is dropped. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Returns a `TradeVendorSaveData` with the owner; `isTaxing` is dropped.</span> |

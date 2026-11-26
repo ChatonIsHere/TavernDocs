@@ -29,4 +29,8 @@ When a `DebugWidget` is shown: always, only when turned on from the quick action
 
 Members of other types that take, return or hold a `ActivationType`:
 
+<div className="api-used-in">
+
 [`DebugWidget.activationType`](/mod/game-api/types/global-c-d/debugwidget#m-activationtype).
+
+</div>

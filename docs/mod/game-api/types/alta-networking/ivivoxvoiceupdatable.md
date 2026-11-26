@@ -21,10 +21,14 @@ Positional voice that `VivoxClient` updates each frame. `VivoxVoice` implements 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> | Sends the voice position and facing to Vivox. `VivoxVoice` does it at most every 0.3 seconds while connected. |
+| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> | <span className="api-desc">Sends the voice position and facing to Vivox. `VivoxVoice` does it at most every 0.3 seconds while connected.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IVivoxVoiceUpdatable`:
 
+<div className="api-used-in">
+
 [`VivoxClient.positionalChat`](/mod/game-api/types/alta-networking/vivoxclient#m-positionalchat).
+
+</div>

@@ -21,4 +21,4 @@ Object spawned in a skill shrine testing area that is set up for the skill being
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sets the tester up for the skill and the player trying it. |
+| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sets the tester up for the skill and the player trying it.</span> |

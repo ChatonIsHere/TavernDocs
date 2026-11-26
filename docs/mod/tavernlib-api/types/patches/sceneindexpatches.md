@@ -22,19 +22,19 @@ Forces the scene a client joins from `/tutorialScene` or `/questScene`, with a p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overridesceneindex" /><code>{"static void OverrideSceneIndex("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Postfix on the `JoinedServerGameMode` constructor that sets the server info's `SceneIndex` to the forced scene, if there is one. |
+| <Link id="m-overridesceneindex" /><code>{"static void OverrideSceneIndex("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | <span className="api-desc">Postfix on the `JoinedServerGameMode` constructor that sets the server info's `SceneIndex` to the forced scene, if there is one.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcedsceneindex" /><code>{"internal static int? ForcedSceneIndex()"}</code> | Internal: 1 with `/tutorialScene`, 4 with `/questScene`, otherwise `null`. |
+| <Link id="m-forcedsceneindex" /><code>{"internal static int? ForcedSceneIndex()"}</code> | <span className="api-desc">Internal: 1 with `/tutorialScene`, 4 with `/questScene`, otherwise `null`.</span> |
 
 </details>

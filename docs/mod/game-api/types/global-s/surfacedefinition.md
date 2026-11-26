@@ -23,17 +23,17 @@ Asset describing how embeddable items (arrows, blades) stick into a surface. Rea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SurfaceDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SurfaceDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-embedmultiplier" /><code>{"private float embedMultiplier"}</code> | Backing field for `EmbedMultiplier`. |
-| <Link id="m-requiresdirectionalignment" /><code>{"private bool requiresDirectionAlignment"}</code> | Backing field for `RequiresDirectionAlignment`. |
+| <Link id="m-embedmultiplier" /><code>{"private float embedMultiplier"}</code> | <span className="api-desc">Backing field for `EmbedMultiplier`.</span> |
+| <Link id="m-requiresdirectionalignment" /><code>{"private bool requiresDirectionAlignment"}</code> | <span className="api-desc">Backing field for `RequiresDirectionAlignment`.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Asset describing how embeddable items (arrows, blades) stick into a surface. Rea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-embedmultiplier-2" /><code>{"float EmbedMultiplier { get; }"}</code> | Scales how deep or easily things embed into this surface. Default 1. |
-| <Link id="m-requiresdirectionalignment-2" /><code>{"bool RequiresDirectionAlignment { get; }"}</code> | When true, an item only embeds if it hits point first within the allowed angle. Default true. |
+| <Link id="m-embedmultiplier-2" /><code>{"float EmbedMultiplier { get; }"}</code> | <span className="api-desc">Scales how deep or easily things embed into this surface. Default 1.</span> |
+| <Link id="m-requiresdirectionalignment-2" /><code>{"bool RequiresDirectionAlignment { get; }"}</code> | <span className="api-desc">When true, an item only embeds if it hits point first within the allowed angle. Default true.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SurfaceDefinition`:
 
+<div className="api-used-in">
+
 [`Surface.defaultDefinition`](/mod/game-api/types/global-s/surface#m-defaultdefinition), [`Surface.DefaultDefinition`](/mod/game-api/types/global-s/surface#m-defaultdefinition-2), [`Surface.definition`](/mod/game-api/types/global-s/surface#m-definition), [`Surface.Definition`](/mod/game-api/types/global-s/surface#m-definition-2).
+
+</div>

@@ -22,12 +22,12 @@ Authentication features for the generic (non-store) platform: no access tokens, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> | Creates an `AuthenticationFeatures` with default values. |
+| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> | <span className="api-desc">Creates an `AuthenticationFeatures` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accesstokenmode" /><code><Link to="/mod/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/mod/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> | Always `NotSupported`. |
-| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> | Always false. |
-| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> | Always false. |
+| <Link id="m-accesstokenmode" /><code><Link to="/mod/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" "}<Link to="/mod/game-api/types/assembly-other/accesstokenmode">{"AccessTokenMode"}</Link>{" { get; }"}</code> | <span className="api-desc">Always `NotSupported`.</span> |
+| <Link id="m-supportsaccountlinking" /><code>{"bool SupportsAccountLinking { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-supportsplatformlogin" /><code>{"bool SupportsPlatformLogin { get; }"}</code> | <span className="api-desc">Always false.</span> |

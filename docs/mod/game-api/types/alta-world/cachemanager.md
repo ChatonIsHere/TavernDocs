@@ -22,20 +22,20 @@ Stores generated data (such as forest nodes) as cache files. `Instance` is a `Se
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CacheManager()"}</code> | Creates a `CacheManager` with default values. |
+| <Link id="m-ctor" /><code>{"protected CacheManager()"}</code> | <span className="api-desc">Creates a `CacheManager` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/cachemanager">{"CacheManager"}</Link>{" Instance { get; set; }"}</code> | The current cache manager. Set by `ServerHandler` or when joining a server. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/cachemanager">{"CacheManager"}</Link>{" Instance { get; set; }"}</code> | <span className="api-desc">The current cache manager. Set by `ServerHandler` or when joining a server.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleancache" /><code>{"abstract Task CleanCache(string name)"}</code> | Deletes a cache by name. |
-| <Link id="m-getcache" /><code>{"Task<T> GetCache<T>(string name, Func<Task<T>> generate)"}</code> | Returns a cache by name, generating it with the given function if it is missing. |
-| <Link id="m-getcache-2" /><code>{"abstract Task<T> GetCache<T>(string name, Func<Task<T>> generate, Func<T> createEmpty)"}</code> | Returns a cache by name, generating it with the given function if it is missing. |
-| <Link id="m-getcachename" /><code>{"static string GetCacheName(string context, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, int seed)"}</code> | Builds a cache file name from the server ID, chunk, context and seed. |
-| <Link id="m-handlecacherequest" /><code>{"abstract void HandleCacheRequest("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Handles a cache request message from a connection. |
+| <Link id="m-cleancache" /><code>{"abstract Task CleanCache(string name)"}</code> | <span className="api-desc">Deletes a cache by name.</span> |
+| <Link id="m-getcache" /><code>{"Task<T> GetCache<T>(string name, Func<Task<T>> generate)"}</code> | <span className="api-desc">Returns a cache by name, generating it with the given function if it is missing.</span> |
+| <Link id="m-getcache-2" /><code>{"abstract Task<T> GetCache<T>(string name, Func<Task<T>> generate, Func<T> createEmpty)"}</code> | <span className="api-desc">Returns a cache by name, generating it with the given function if it is missing.</span> |
+| <Link id="m-getcachename" /><code>{"static string GetCacheName(string context, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, int seed)"}</code> | <span className="api-desc">Builds a cache file name from the server ID, chunk, context and seed.</span> |
+| <Link id="m-handlecacherequest" /><code>{"abstract void HandleCacheRequest("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Handles a cache request message from a connection.</span> |

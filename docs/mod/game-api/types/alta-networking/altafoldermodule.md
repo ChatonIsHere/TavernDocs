@@ -22,16 +22,16 @@ Web module that serves files from an `IAltaFolder`. Remote backed files are copi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> | Creates an `AltaFolderModule` from `folder` and `path`. |
+| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> | <span className="api-desc">Creates an `AltaFolderModule` from `folder` and `path`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> | The EmbedIO file module that sends the file. |
+| <Link id="m-filemodule" /><code>{"private FileModule fileModule"}</code> | <span className="api-desc">The EmbedIO file module that sends the file.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Web module that serves files from an `IAltaFolder`. Remote backed files are copi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-folder" /><code><Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; }"}</code> | The folder files are served from. |
-| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> | True: no later module handles the request. |
+| <Link id="m-folder" /><code><Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; }"}</code> | <span className="api-desc">The folder files are served from.</span> |
+| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> | <span className="api-desc">True: no later module handles the request.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes the inner file module. |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Finalizer that disposes the module. |
-| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> | Walks the path through the folder's subfolders and returns 404 if anything is missing, otherwise serves the file. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> | Starts the inner file module. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Disposes the inner file module.</span> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | <span className="api-desc">Finalizer that disposes the module.</span> |
+| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> | <span className="api-desc">Walks the path through the folder's subfolders and returns 404 if anything is missing, otherwise serves the file.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart(CancellationToken cancellationToken)"}</code> | <span className="api-desc">Starts the inner file module.</span> |

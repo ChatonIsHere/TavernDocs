@@ -19,12 +19,12 @@ Equality comparer for `uint` hashes that returns the hash itself as the hash cod
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> | Creates a `HashComparer` with default values. |
+| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> | <span className="api-desc">Creates a `HashComparer` with default values.</span> |
 
 </details>
 
@@ -32,4 +32,4 @@ Equality comparer for `uint` hashes that returns the hash itself as the hash cod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-e-h/hashcomparer">{"HashComparer"}</Link>{" Instance { get; }"}</code> | The single shared comparer. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-e-h/hashcomparer">{"HashComparer"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The single shared comparer.</span> |

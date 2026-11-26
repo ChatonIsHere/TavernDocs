@@ -21,10 +21,14 @@ Inspector event that passes a `Lock`. Used for `Chest.LockJingleJangle`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LockItemEvent()"}</code> | Creates a `LockItemEvent` with default values. |
+| <Link id="m-ctor" /><code>{"LockItemEvent()"}</code> | <span className="api-desc">Creates a `LockItemEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LockItemEvent`:
 
+<div className="api-used-in">
+
 [`Chest.lockJingleJangle`](/mod/game-api/types/alta-items/chest#m-lockjinglejangle), [`Chest.LockJingleJangle`](/mod/game-api/types/alta-items/chest#m-lockjinglejangle-2).
+
+</div>

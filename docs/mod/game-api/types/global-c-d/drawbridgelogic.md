@@ -22,25 +22,25 @@ Saved, non-networked drawbridge that rotates its transform around local Z by a s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeLogic()"}</code> | Creates a `DrawBridgeLogic` with default values. |
+| <Link id="m-ctor" /><code>{"DrawBridgeLogic()"}</code> | <span className="api-desc">Creates a `DrawBridgeLogic` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isup" /><code>{"bool isUp"}</code> | Whether the bridge is up; flipped after each move. |
+| <Link id="m-isup" /><code>{"bool isUp"}</code> | <span className="api-desc">Whether the bridge is up; flipped after each move.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angletorotate" /><code>{"private float angleToRotate"}</code> | Degrees to turn on the next toggle; negated after each move. |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> | True while a rotation is running. |
-| <Link id="m-rotationend" /><code>{"private Quaternion rotationEnd"}</code> | Target rotation of the current move. |
-| <Link id="m-rotationstart" /><code>{"private Quaternion rotationStart"}</code> | Starting rotation of the current move. |
-| <Link id="m-rotationtime" /><code>{"private float rotationTime"}</code> | Seconds each move takes. |
-| <Link id="m-z" /><code>{"private Vector3 z"}</code> | Unit Z vector set in `Awake`, not otherwise used. |
+| <Link id="m-angletorotate" /><code>{"private float angleToRotate"}</code> | <span className="api-desc">Degrees to turn on the next toggle; negated after each move.</span> |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> | <span className="api-desc">True while a rotation is running.</span> |
+| <Link id="m-rotationend" /><code>{"private Quaternion rotationEnd"}</code> | <span className="api-desc">Target rotation of the current move.</span> |
+| <Link id="m-rotationstart" /><code>{"private Quaternion rotationStart"}</code> | <span className="api-desc">Starting rotation of the current move.</span> |
+| <Link id="m-rotationtime" /><code>{"private float rotationTime"}</code> | <span className="api-desc">Seconds each move takes.</span> |
+| <Link id="m-z" /><code>{"private Vector3 z"}</code> | <span className="api-desc">Unit Z vector set in `Awake`, not otherwise used.</span> |
 
 </details>
 
@@ -48,14 +48,14 @@ Saved, non-networked drawbridge that rotates its transform around local Z by a s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-togglerotate" /><code>{"void ToggleRotate()"}</code> | Starts rotating by `angleToRotate` unless already moving. |
+| <Link id="m-togglerotate" /><code>{"void ToggleRotate()"}</code> | <span className="api-desc">Starts rotating by `angleToRotate` unless already moving.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets up the Z axis vector and clears the moving flag. |
-| <Link id="m-rotateovertime" /><code>{"private IEnumerator RotateOverTime(Quaternion start, Quaternion end, float rotTime) (iterator)"}</code> | Coroutine that slerps the local rotation, then flips `isUp` and negates the angle for the next toggle. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Sets up the Z axis vector and clears the moving flag.</span> |
+| <Link id="m-rotateovertime" /><code>{"private IEnumerator RotateOverTime(Quaternion start, Quaternion end, float rotTime) (iterator)"}</code> | <span className="api-desc">Coroutine that slerps the local rotation, then flips `isUp` and negates the angle for the next toggle.</span> |
 
 </details>

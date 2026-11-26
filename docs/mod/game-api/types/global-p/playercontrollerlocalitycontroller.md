@@ -22,17 +22,17 @@ Base component that records whether its player controller is the local player. S
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerControllerLocalityController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerControllerLocalityController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdebuglocal" /><code>{"private bool isDebugLocal"}</code> | Editor button to force local. |
-| <Link id="m-isdebugremote" /><code>{"private bool isDebugRemote"}</code> | Editor button to force remote. |
+| <Link id="m-isdebuglocal" /><code>{"private bool isDebugLocal"}</code> | <span className="api-desc">Editor button to force local.</span> |
+| <Link id="m-isdebugremote" /><code>{"private bool isDebugRemote"}</code> | <span className="api-desc">Editor button to force remote.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ Base component that records whether its player controller is the local player. S
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocal" /><code>{"bool IsLocal { get; private set; }"}</code> | True when the player controller belongs to this machine's player. |
-| <Link id="m-playercontroller" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> | The player controller this belongs to. |
+| <Link id="m-islocal" /><code>{"bool IsLocal { get; private set; }"}</code> | <span className="api-desc">True when the player controller belongs to this machine's player.</span> |
+| <Link id="m-playercontroller" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The player controller this belongs to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeforplayercontroller" /><code>{"void InitializeForPlayerController("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Stores the player controller and applies its locality. |
-| <Link id="m-setlocality" /><code>{"virtual void SetLocality(bool isLocal)"}</code> | Sets `IsLocal`. Override to react to the change. |
+| <Link id="m-initializeforplayercontroller" /><code>{"void InitializeForPlayerController("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Stores the player controller and applies its locality.</span> |
+| <Link id="m-setlocality" /><code>{"virtual void SetLocality(bool isLocal)"}</code> | <span className="api-desc">Sets `IsLocal`. Override to react to the change.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor buttons that force local or remote for testing. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor buttons that force local or remote for testing.</span> |
 
 </details>

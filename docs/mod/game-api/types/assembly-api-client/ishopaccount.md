@@ -21,15 +21,19 @@ Alta web API calls for a user's shop account and owned items. `ShopClient.Accoun
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkforsubscriptionrewardsasync" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/subscriptionrefreshresult">{"SubscriptionRefreshResult"}</Link>{"> CheckForSubscriptionRewardsAsync()"}</code> | Asks the API to grant any subscription rewards due. |
-| <Link id="m-getowneditems" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{">> GetOwnedItems()"}</code> | Lists the shop items the logged-in user owns. |
-| <Link id="m-getshopaccountinfo" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/shopaccountinfo">{"ShopAccountInfo"}</Link>{"> GetShopAccountInfo()"}</code> | Gets shop account info for the logged-in user or a given user. |
-| <Link id="m-getshopaccountinfo-2" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/shopaccountinfo">{"ShopAccountInfo"}</Link>{"> GetShopAccountInfo(int userIdentifier)"}</code> | Gets shop account info for the logged-in user or a given user. |
-| <Link id="m-giftitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/giftresult">{"GiftResult"}</Link>{"> GiftItem(int userIdentifier, string itemSku)"}</code> | Gives a user an item by SKU. |
-| <Link id="m-removeitem" /><code>{"Task RemoveItem(int userIdentifier, int itemIdentifier)"}</code> | Removes an owned item from a user. |
+| <Link id="m-checkforsubscriptionrewardsasync" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/subscriptionrefreshresult">{"SubscriptionRefreshResult"}</Link>{"> CheckForSubscriptionRewardsAsync()"}</code> | <span className="api-desc">Asks the API to grant any subscription rewards due.</span> |
+| <Link id="m-getowneditems" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{">> GetOwnedItems()"}</code> | <span className="api-desc">Lists the shop items the logged-in user owns.</span> |
+| <Link id="m-getshopaccountinfo" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/shopaccountinfo">{"ShopAccountInfo"}</Link>{"> GetShopAccountInfo()"}</code> | <span className="api-desc">Gets shop account info for the logged-in user or a given user.</span> |
+| <Link id="m-getshopaccountinfo-2" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/shopaccountinfo">{"ShopAccountInfo"}</Link>{"> GetShopAccountInfo(int userIdentifier)"}</code> | <span className="api-desc">Gets shop account info for the logged-in user or a given user.</span> |
+| <Link id="m-giftitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/giftresult">{"GiftResult"}</Link>{"> GiftItem(int userIdentifier, string itemSku)"}</code> | <span className="api-desc">Gives a user an item by SKU.</span> |
+| <Link id="m-removeitem" /><code>{"Task RemoveItem(int userIdentifier, int itemIdentifier)"}</code> | <span className="api-desc">Removes an owned item from a user.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IShopAccount`:
 
+<div className="api-used-in">
+
 [`IShopApiClient.Account`](/mod/game-api/types/assembly-api-client/ishopapiclient#m-account), [`OfflineShopApiClient.Account`](/mod/game-api/types/assembly-api-client/offlineshopapiclient#m-account), [`ShopApiClient.Account`](/mod/game-api/types/assembly-api-client/shopapiclient#m-account).
+
+</div>

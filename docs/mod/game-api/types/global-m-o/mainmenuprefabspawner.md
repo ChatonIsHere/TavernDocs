@@ -21,26 +21,26 @@ Spawns a network prefab unchunked as a child of this object when the scene start
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuPrefabSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MainMenuPrefabSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | The prefab to spawn. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">The prefab to spawn.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Spawns `prefab` and resets its local position, rotation and scale under this object. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Spawns `prefab` and resets its local position, rotation and scale under this object.</span> |
 
 </details>

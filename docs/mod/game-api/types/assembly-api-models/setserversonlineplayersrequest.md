@@ -20,17 +20,21 @@ Body of the Alta web API call a server makes to report who is online (`SetOnline
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> | Creates a `SetServersOnlinePlayersRequest` with default values. |
+| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> | <span className="api-desc">Creates a `SetServersOnlinePlayersRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> | The players on the server now. |
-| <Link id="m-session" /><code>{"int Session { get; set; }"}</code> | The server's session id. |
+| <Link id="m-onlineplayers" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> OnlinePlayers { get; set; }"}</code> | <span className="api-desc">The players on the server now.</span> |
+| <Link id="m-session" /><code>{"int Session { get; set; }"}</code> | <span className="api-desc">The server's session id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SetServersOnlinePlayersRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.SetOnlinePlayers`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-setonlineplayers).
+
+</div>

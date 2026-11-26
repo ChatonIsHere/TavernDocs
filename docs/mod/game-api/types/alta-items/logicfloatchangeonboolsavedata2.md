@@ -22,21 +22,21 @@ Old save format (version 2) for `LogicFloatChangeOnBool`. Only read from old sav
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData2()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData2` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData2()"}</code> | <span className="api-desc">Creates a `LogicFloatChangeOnBoolSaveData2` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"float currentValue"}</code> | The float value at save time. Not carried over by `Migrate`. |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The logic link data (identifier and listeners) for this sender. |
-| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | How fast the value moved towards its target, per second. |
-| <Link id="m-oneway" /><code>{"bool oneWay"}</code> | If true, the value only moved one way and did not go back when the bool turned off. |
-| <Link id="m-targetvalue" /><code>{"float targetValue"}</code> | The value it was moving towards at save time. Not carried over by `Migrate`. |
-| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | Delay in seconds before the value started moving after the bool changed. |
+| <Link id="m-currentvalue" /><code>{"float currentValue"}</code> | <span className="api-desc">The float value at save time. Not carried over by `Migrate`.</span> |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The logic link data (identifier and listeners) for this sender.</span> |
+| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | <span className="api-desc">How fast the value moved towards its target, per second.</span> |
+| <Link id="m-oneway" /><code>{"bool oneWay"}</code> | <span className="api-desc">If true, the value only moved one way and did not go back when the bool turned off.</span> |
+| <Link id="m-targetvalue" /><code>{"float targetValue"}</code> | <span className="api-desc">The value it was moving towards at save time. Not carried over by `Migrate`.</span> |
+| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | <span className="api-desc">Delay in seconds before the value started moving after the bool changed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current `LogicFloatChangeOnBoolSaveData`. `currentValue` and `targetValue` are dropped, so progress resets. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current `LogicFloatChangeOnBoolSaveData`. `currentValue` and `targetValue` are dropped, so progress resets.</span> |

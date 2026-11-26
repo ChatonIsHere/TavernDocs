@@ -22,17 +22,17 @@ Forest generation part that adds a terrain spline along the side of a path edge 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SafetySpline()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SafetySpline()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> | Extra sideways distance beyond the edge's average radius for the spline. Default 2. |
-| <Link id="m-fallminimum" /><code>{"private float fallMinimum"}</code> | Height drop needed on a side before the spline is added there. Default 10. |
+| <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> | <span className="api-desc">Extra sideways distance beyond the edge's average radius for the spline. Default 2.</span> |
+| <Link id="m-fallminimum" /><code>{"private float fallMinimum"}</code> | <span className="api-desc">Height drop needed on a side before the spline is added there. Default 10.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest generation part that adds a terrain spline along the side of a path edge 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Checks the neighbouring paths at both ends of the edge and builds the spline offset to each side where the drop exceeds `fallMinimum`. |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | <span className="api-desc">Checks the neighbouring paths at both ends of the edge and builds the spline offset to each side where the drop exceeds `fallMinimum`.</span> |

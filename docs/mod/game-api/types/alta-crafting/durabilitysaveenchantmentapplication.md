@@ -21,16 +21,16 @@ A `DurabilitySaveEnchantment` effect active on one item. When its trigger fires 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantmentApplication("}<Link to="/mod/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/mod/game-api/types/alta-crafting/durabilitysaveenchantment">{"DurabilitySaveEnchantment"}</Link>{" settings)"}</code> | Creates a `DurabilitySaveEnchantmentApplication` from `enchantment` and `settings`. |
+| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantmentApplication("}<Link to="/mod/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/mod/game-api/types/alta-crafting/durabilitysaveenchantment">{"DurabilitySaveEnchantment"}</Link>{" settings)"}</code> | <span className="api-desc">Creates a `DurabilitySaveEnchantmentApplication` from `enchantment` and `settings`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs an error if the trigger passes something other than an `ImpactHitWithTool`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger; logs an error if the trigger passes something other than an `ImpactHitWithTool`.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `DurabilitySaveEnchantment` effect active on one item. When its trigger fires 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> | Scales how much durability the tool loses on this hit; logs an error if the data isn't an `ImpactHitWithTool`. |
+| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> | <span className="api-desc">Scales how much durability the tool loses on this hit; logs an error if the data isn't an `ImpactHitWithTool`.</span> |

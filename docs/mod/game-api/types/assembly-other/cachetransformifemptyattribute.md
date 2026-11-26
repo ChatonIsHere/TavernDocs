@@ -21,16 +21,16 @@ Prefab-apply attribute for a `Transform` field: fills it with the component's ow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CacheTransformIfEmptyAttribute()"}</code> | Creates a `CacheTransformIfEmptyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"CacheTransformIfEmptyAttribute()"}</code> | <span className="api-desc">Creates a `CacheTransformIfEmptyAttribute` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. Not used. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class. Not used.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Prefab-apply attribute for a `Transform` field: fills it with the component's ow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Sets the field to the component's transform if it's null. Returns true when it changed the field. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Sets the field to the component's transform if it's null. Returns true when it changed the field.</span> |

@@ -21,16 +21,16 @@ Tool-based effect that fades its material's `_Progress` from 1 to 0 over a set t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DissipateToolBasedEffect()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DissipateToolBasedEffect()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | Seconds the fade takes. |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | <span className="api-desc">Seconds the fade takes.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Tool-based effect that fades its material's `_Progress` from 1 to 0 over a set t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> | Fades the progress down over `animationDuration`, then releases. The direction argument is ignored. |
+| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> | <span className="api-desc">Fades the progress down over `animationDuration`, then releases. The direction argument is ignored.</span> |

@@ -22,17 +22,17 @@ Version 2 of the saved player position and home. Migrating moves anyone out of f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveFileData2()"}</code> | Creates a `PlayerSaveFileData2` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerSaveFileData2()"}</code> | <span className="api-desc">Creates a `PlayerSaveFileData2` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-home" /><code>{"Vector3 home"}</code> | Saved home position. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Saved player position. |
+| <Link id="m-home" /><code>{"Vector3 home"}</code> | <span className="api-desc">Saved home position.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Saved player position.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current `PlayerSaveFileData`. A home inside one of four old 96 by 96 areas moves to the original spawn point, and a position there moves to home. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current `PlayerSaveFileData`. A home inside one of four old 96 by 96 areas moves to the original spawn point, and a position there moves to home.</span> |

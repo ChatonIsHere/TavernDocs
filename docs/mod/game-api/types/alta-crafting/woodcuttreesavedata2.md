@@ -22,18 +22,18 @@ Old version 2 save data for a `WoodcutTree`, migrated to `WoodcutTreeSaveData` o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> | Creates a `WoodcutTreeSaveData2` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> | <span className="api-desc">Creates a `WoodcutTreeSaveData2` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> | Old generated flag. Dropped on migration. |
-| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | The tree's preset shape. |
-| <Link id="m-species" /><code><Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> | The tree's species. |
+| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> | <span className="api-desc">Old generated flag. Dropped on migration.</span> |
+| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | <span className="api-desc">The tree's preset shape.</span> |
+| <Link id="m-species" /><code><Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> | <span className="api-desc">The tree's species.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current save data, keeping the preset and species. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current save data, keeping the preset and species.</span> |

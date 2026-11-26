@@ -22,11 +22,11 @@ Game task argument sent on the `EatAmount` channel when a player eats something,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EatingAmountArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" eaten)"}</code> | Creates an `EatingAmountArgument` from `eaten`. |
+| <Link id="m-ctor" /><code>{"EatingAmountArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" eaten)"}</code> | <span className="api-desc">Creates an `EatingAmountArgument` from `eaten`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.EatAmount`. |
-| <Link id="m-eating" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Eating { get; }"}</code> | The prefab that was eaten. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.EatAmount`.</span> |
+| <Link id="m-eating" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Eating { get; }"}</code> | <span className="api-desc">The prefab that was eaten.</span> |

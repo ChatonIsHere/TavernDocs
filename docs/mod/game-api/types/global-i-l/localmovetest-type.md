@@ -29,4 +29,8 @@ Test motion for `LocalMoveTest` on the server: spin around Y, or bob along Y or 
 
 Members of other types that take, return or hold a `Type`:
 
+<div className="api-used-in">
+
 [`LocalMoveTest.type`](/mod/game-api/types/global-i-l/localmovetest#m-type).
+
+</div>

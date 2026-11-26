@@ -21,24 +21,28 @@ Base class for one step in an object processing pipeline that turns an input obj
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PipelineElement()"}</code> | Creates a `PipelineElement` with default values. |
+| <Link id="m-ctor" /><code>{"protected PipelineElement()"}</code> | <span className="api-desc">Creates a `PipelineElement` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"abstract string Description { get; }"}</code> | Text describing what the step does. |
-| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> | The step's display name. |
+| <Link id="m-description" /><code>{"abstract string Description { get; }"}</code> | <span className="api-desc">Text describing what the step does.</span> |
+| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> | <span className="api-desc">The step's display name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-possibleresults" /><code>{"abstract IEnumerable<Object> PossibleResults(Object input)"}</code> | Lists every object this step could produce from an input. |
-| <Link id="m-process" /><code>{"abstract Object Process(Object input, Func<double> random, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Runs the step on an input object and returns the result. |
+| <Link id="m-possibleresults" /><code>{"abstract IEnumerable<Object> PossibleResults(Object input)"}</code> | <span className="api-desc">Lists every object this step could produce from an input.</span> |
+| <Link id="m-process" /><code>{"abstract Object Process(Object input, Func<double> random, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Runs the step on an input object and returns the result.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PipelineElement`:
 
+<div className="api-used-in">
+
 [`ObjectPipeline.Elements`](/mod/game-api/types/global-m-o/objectpipeline#m-elements).
+
+</div>

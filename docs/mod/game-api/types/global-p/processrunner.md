@@ -21,19 +21,19 @@ Runs an external program hidden, logs its output with a prefix, and lets the cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> | Creates a `ProcessRunner` from `processPrefix`. |
+| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> | <span className="api-desc">Creates a `ProcessRunner` from `processPrefix`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleprocesscompletion" /><code>{"private TaskCompletionSource<bool> handleProcessCompletion"}</code> | Completes when the program exits. |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | NLog logger for the program's output. |
-| <Link id="m-process" /><code>{"private Process process"}</code> | The running program. |
-| <Link id="m-processprefix" /><code>{"private readonly string processPrefix"}</code> | Text put in front of every logged line. |
+| <Link id="m-handleprocesscompletion" /><code>{"private TaskCompletionSource<bool> handleProcessCompletion"}</code> | <span className="api-desc">Completes when the program exits.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | <span className="api-desc">NLog logger for the program's output.</span> |
+| <Link id="m-process" /><code>{"private Process process"}</code> | <span className="api-desc">The running program.</span> |
+| <Link id="m-processprefix" /><code>{"private readonly string processPrefix"}</code> | <span className="api-desc">Text put in front of every logged line.</span> |
 
 </details>
 
@@ -41,18 +41,18 @@ Runs an external program hidden, logs its output with a prefix, and lets the cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes the process. |
-| <Link id="m-startprocess" /><code>{"async Task StartProcess(string file, string arguments)"}</code> | Starts the program with arguments and waits until it exits. |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Disposes the process if `Dispose` wasn't called. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Disposes the process.</span> |
+| <Link id="m-startprocess" /><code>{"async Task StartProcess(string file, string arguments)"}</code> | <span className="api-desc">Starts the program with arguments and waits until it exits.</span> |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | <span className="api-desc">Disposes the process if `Dispose` wasn't called.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completedwithouterror" /><code>{"private bool CompletedWithoutError()"}</code> | True if the exit code was 0. |
-| <Link id="m-logoutput" /><code>{"private void LogOutput(object sender, DataReceivedEventArgs e)"}</code> | Logs each output line, as an error if it starts with `error` or `unable`, else as debug. |
-| <Link id="m-onexit" /><code>{"private void OnExit(object sender, EventArgs e)"}</code> | Completes the await, unhooks output and throws if the exit code wasn't 0. The throw is on the exit event, not to the awaiter. |
-| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> | Disposes the process if there is one. |
+| <Link id="m-completedwithouterror" /><code>{"private bool CompletedWithoutError()"}</code> | <span className="api-desc">True if the exit code was 0.</span> |
+| <Link id="m-logoutput" /><code>{"private void LogOutput(object sender, DataReceivedEventArgs e)"}</code> | <span className="api-desc">Logs each output line, as an error if it starts with `error` or `unable`, else as debug.</span> |
+| <Link id="m-onexit" /><code>{"private void OnExit(object sender, EventArgs e)"}</code> | <span className="api-desc">Completes the await, unhooks output and throws if the exit code wasn't 0. The throw is on the exit event, not to the awaiter.</span> |
+| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> | <span className="api-desc">Disposes the process if there is one.</span> |
 
 </details>

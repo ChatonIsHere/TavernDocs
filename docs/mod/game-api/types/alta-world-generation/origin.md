@@ -23,21 +23,21 @@ Loot origin asset: which loot tables an item of a given rarity can come from. Ra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Origin()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Origin()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allorigins" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"[] allOrigins"}</code> | Every origin, loaded from `Resources/Items/Origins/` on first use. |
-| <Link id="m-alltables" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] allTables"}</code> | Every loot table, loaded from `Resources/Items/Loot Tables/` on first use. |
-| <Link id="m-isallowinglocal" /><code>{"private bool isAllowingLocal"}</code> | If true, `GetItems` also uses the local tables passed in by the caller. |
-| <Link id="m-iswhitelist" /><code>{"private bool isWhitelist"}</code> | If true, `tables` lists the tables to use. If false, it lists tables to leave out and every other table is used. |
-| <Link id="m-tables" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] tables"}</code> | The loot tables this origin uses, or excludes when `isWhitelist` is off. |
-| <Link id="m-workingdistinct" /><code>{"private static HashSet<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct"}</code> | Shared scratch set that removes duplicate entries in `GetItems`. |
+| <Link id="m-allorigins" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"[] allOrigins"}</code> | <span className="api-desc">Every origin, loaded from `Resources/Items/Origins/` on first use.</span> |
+| <Link id="m-alltables" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] allTables"}</code> | <span className="api-desc">Every loot table, loaded from `Resources/Items/Loot Tables/` on first use.</span> |
+| <Link id="m-isallowinglocal" /><code>{"private bool isAllowingLocal"}</code> | <span className="api-desc">If true, `GetItems` also uses the local tables passed in by the caller.</span> |
+| <Link id="m-iswhitelist" /><code>{"private bool isWhitelist"}</code> | <span className="api-desc">If true, `tables` lists the tables to use. If false, it lists tables to leave out and every other table is used.</span> |
+| <Link id="m-tables" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] tables"}</code> | <span className="api-desc">The loot tables this origin uses, or excludes when `isWhitelist` is off.</span> |
+| <Link id="m-workingdistinct" /><code>{"private static HashSet<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct"}</code> | <span className="api-desc">Shared scratch set that removes duplicate entries in `GetItems`.</span> |
 
 </details>
 
@@ -45,15 +45,15 @@ Loot origin asset: which loot tables an item of a given rarity can come from. Ra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getitems" /><code>{"void GetItems(List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> results, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, params "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] local)"}</code> | Fills `results` with the distinct loot entries for a rarity from this origin's tables, the local tables if allowed, and only those the dock accepts. |
-| <Link id="m-getrandom" /><code>{"static "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" GetRandom("}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, List<"}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> ignore)"}</code> | Picks an origin from the rarity's origin weightings at random, skipping ones in `ignore`. Null if none is picked. |
+| <Link id="m-getitems" /><code>{"void GetItems(List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> results, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, params "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] local)"}</code> | <span className="api-desc">Fills `results` with the distinct loot entries for a rarity from this origin's tables, the local tables if allowed, and only those the dock accepts.</span> |
+| <Link id="m-getrandom" /><code>{"static "}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" GetRandom("}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, List<"}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> ignore)"}</code> | <span className="api-desc">Picks an origin from the rarity's origin weightings at random, skipping ones in `ignore`. Null if none is picked.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addentries" /><code>{"private static void AddEntries(HashSet<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct, "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{" table)"}</code> | Adds a table's entries for one rarity to the set, plus entries for any active festivity. |
+| <Link id="m-addentries" /><code>{"private static void AddEntries(HashSet<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingDistinct, "}<Link to="/mod/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{" rarity, "}<Link to="/mod/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{" table)"}</code> | <span className="api-desc">Adds a table's entries for one rarity to the set, plus entries for any active festivity.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ Loot origin asset: which loot tables an item of a given rarity can come from. Ra
 
 Members of other types that take, return or hold a `Origin`:
 
+<div className="api-used-in">
+
 [`LootTable.GetLoot`](/mod/game-api/types/alta-world-generation/loottable#m-getloot-2), [`LootTable.triedOrigins`](/mod/game-api/types/alta-world-generation/loottable#m-triedorigins), [`OriginSingleValue.OriginSingleValue`](/mod/game-api/types/alta-world-generation/originsinglevalue#m-ctor-2).
+
+</div>

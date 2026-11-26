@@ -23,11 +23,11 @@ Save data for a `GrowthStageComponent`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthStageSaveData()"}</code> | Creates a `GrowthStageSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GrowthStageSaveData()"}</code> | <span className="api-desc">Creates a `GrowthStageSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | Index of the current growth stage. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | Growth definition in use. |
+| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | <span className="api-desc">Index of the current growth stage.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Growth definition in use.</span> |

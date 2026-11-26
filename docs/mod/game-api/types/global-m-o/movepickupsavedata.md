@@ -23,11 +23,11 @@ Save data (version 2) for `MovePickup`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> | Creates a `MovePickupSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> | <span className="api-desc">Creates a `MovePickupSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-movement" /><code>{"float movement"}</code> | Saved distance moved along the axis. |
-| <Link id="m-velocity" /><code>{"float velocity"}</code> | Saved movement speed. |
+| <Link id="m-movement" /><code>{"float movement"}</code> | <span className="api-desc">Saved distance moved along the axis.</span> |
+| <Link id="m-velocity" /><code>{"float velocity"}</code> | <span className="api-desc">Saved movement speed.</span> |

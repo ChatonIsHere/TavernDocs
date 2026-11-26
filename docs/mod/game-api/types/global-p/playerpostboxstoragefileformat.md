@@ -22,20 +22,20 @@ Server: file format for one player's postbox storage: a list of saved object ver
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPostboxStorageFileFormat()"}</code> | Creates a `PlayerPostboxStorageFileFormat` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerPostboxStorageFileFormat()"}</code> | <span className="api-desc">Creates a `PlayerPostboxStorageFileFormat` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-versions" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{"> Versions"}</code> | The saved object versions held for the player. |
+| <Link id="m-versions" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{"> Versions"}</code> | <span className="api-desc">The saved object versions held for the player.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for the class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for the class.</span> |
 
 </details>
 
@@ -43,12 +43,16 @@ Server: file format for one player's postbox storage: a list of saved object ver
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Makes a copy with new version lists holding the same saved objects. |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Loads the versions from a file, skipping empty ones. A file of one byte or less loads as empty. |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the versions to a stream. Writes nothing if there are none. |
+| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | <span className="api-desc">Makes a copy with new version lists holding the same saved objects.</span> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | <span className="api-desc">Loads the versions from a file, skipping empty ones. A file of one byte or less loads as empty.</span> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | <span className="api-desc">Writes the versions to a stream. Writes nothing if there are none.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerPostboxStorageFileFormat`:
 
+<div className="api-used-in">
+
 [`PlayerPostboxStorage.ReadAsync`](/mod/game-api/types/global-p/playerpostboxstorage#m-readasync).
+
+</div>

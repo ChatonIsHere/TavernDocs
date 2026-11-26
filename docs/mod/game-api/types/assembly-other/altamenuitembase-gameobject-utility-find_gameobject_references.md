@@ -22,4 +22,4 @@ Editor menu folder `GameObject/Utility/Find GameObject References`: menu item cl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Find_GameObject_References()"}</code> | Creates an `AltaMenuItemBase.GameObject.Utility.Find_GameObject_References` with default values. |
+| <Link id="m-ctor" /><code>{"protected Find_GameObject_References()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.GameObject.Utility.Find_GameObject_References` with default values.</span> |

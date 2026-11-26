@@ -21,18 +21,22 @@ Payload of the `ConsoleEvents.CommandExecuted` console event, raised on the serv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> | Creates a `CommandExecutedData` with default values. |
+| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> | <span className="api-desc">Creates a `CommandExecutedData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-command" /><code>{"string Command"}</code> | The command text that was run. |
-| <Link id="m-message" /><code>{"string Message"}</code> | The command's output text. |
-| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful"}</code> | True if the command ran without failing. |
+| <Link id="m-command" /><code>{"string Command"}</code> | <span className="api-desc">The command text that was run.</span> |
+| <Link id="m-message" /><code>{"string Message"}</code> | <span className="api-desc">The command's output text.</span> |
+| <Link id="m-wassuccessful" /><code>{"bool WasSuccessful"}</code> | <span className="api-desc">True if the command ran without failing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CommandExecutedData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.CommandExecuted`](/mod/game-api/types/alta-console/consoleevents#m-commandexecuted).
+
+</div>

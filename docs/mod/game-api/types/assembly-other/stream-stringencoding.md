@@ -28,4 +28,8 @@ Text encoding used when writing strings to a network stream: ASCII or UTF8.
 
 Members of other types that take, return or hold a `StringEncoding`:
 
+<div className="api-used-in">
+
 [`Compressor.SerializeString`](/mod/game-api/types/assembly-other/compressor#m-serializestring), [`Stream.SerializeString`](/mod/game-api/types/assembly-other/stream#m-serializestring), [`StreamCounter.SerializeString`](/mod/game-api/types/assembly-other/streamcounter#m-serializestring), [`StreamReader.SerializeString`](/mod/game-api/types/assembly-other/streamreader#m-serializestring), [`StreamWriter.SerializeString`](/mod/game-api/types/assembly-other/streamwriter#m-serializestring).
+
+</div>

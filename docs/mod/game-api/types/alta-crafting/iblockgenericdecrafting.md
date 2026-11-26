@@ -21,10 +21,14 @@ Implemented by components that can stop a generic crafting result from being dec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-candecraft" /><code>{"bool CanDecraft { get; }"}</code> | False to block decrafting right now. |
+| <Link id="m-candecraft" /><code>{"bool CanDecraft { get; }"}</code> | <span className="api-desc">False to block decrafting right now.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IBlockGenericDecrafting`:
 
+<div className="api-used-in">
+
 [`GenericCraftingResult.blockDecraftingComponents`](/mod/game-api/types/alta-crafting/genericcraftingresult#m-blockdecraftingcomponents).
+
+</div>

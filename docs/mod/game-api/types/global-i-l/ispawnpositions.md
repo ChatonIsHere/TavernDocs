@@ -21,11 +21,15 @@ Something that gives spawn points by index, such as a `PositionSurfaceDefinition
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getspawnposition" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetSpawnPosition(int index)"}</code> | Returns the spawn point for an index. |
-| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> | Resizes the spawn area. Called by the spawn console command. |
+| <Link id="m-getspawnposition" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetSpawnPosition(int index)"}</code> | <span className="api-desc">Returns the spawn point for an index.</span> |
+| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> | <span className="api-desc">Resizes the spawn area. Called by the spawn console command.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISpawnPositions`:
 
+<div className="api-used-in">
+
 [`SimplePopulationValue.Positions`](/mod/game-api/types/alta-world-generation/simplepopulationvalue#m-positions), [`SimplePopulationValue.SimplePopulationValue`](/mod/game-api/types/alta-world-generation/simplepopulationvalue#m-ctor).
+
+</div>

@@ -22,18 +22,22 @@ Base for a networked behaviour that replaces the normal teleport logic of a `Tel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomTeleportation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected CustomTeleportation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attempt" /><code>{"abstract bool Attempt("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | Returns whether this teleporter is allowed to teleport now. |
-| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | Called when a teleport through the given teleporter starts. |
-| <Link id="m-end" /><code>{"abstract void End("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | Called when a teleport through the given teleporter finishes. |
+| <Link id="m-attempt" /><code>{"abstract bool Attempt("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | <span className="api-desc">Returns whether this teleporter is allowed to teleport now.</span> |
+| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | <span className="api-desc">Called when a teleport through the given teleporter starts.</span> |
+| <Link id="m-end" /><code>{"abstract void End("}<Link to="/mod/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" teleporter)"}</code> | <span className="api-desc">Called when a teleport through the given teleporter finishes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CustomTeleportation`:
 
+<div className="api-used-in">
+
 [`Teleporter.custom`](/mod/game-api/types/global-t-x/teleporter#m-custom).
+
+</div>

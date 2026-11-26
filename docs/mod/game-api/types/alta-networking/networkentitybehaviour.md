@@ -24,16 +24,16 @@ Base class for game components that live on a `NetworkEntity`. Override its hook
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkEntityBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected NetworkEntityBehaviour()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`, filled from the same GameObject. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | <span className="api-desc">Backing field for `Entity`, filled from the same GameObject.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Base class for game components that live on a `NetworkEntity`. Override its hook
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity-2" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The `NetworkEntity` on the same GameObject, filled in at bake time. |
+| <Link id="m-entity-2" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The `NetworkEntity` on the same GameObject, filled in at bake time.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Called on both sides when the entity is initialized. Empty by default. |
-| <Link id="m-initializeasserver" /><code>{"virtual void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: called once when the server sets up the entity, whether freshly spawned or loaded from a save, with its `SpawnData`. Empty by default. |
-| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: called when the entity is sent to a player, so you can send that player any extra state. Empty by default. |
-| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: called when the entity stops being synced to a player. Empty by default. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | <span className="api-desc">Called on both sides when the entity is initialized. Empty by default.</span> |
+| <Link id="m-initializeasserver" /><code>{"virtual void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: called once when the server sets up the entity, whether freshly spawned or loaded from a save, with its `SpawnData`. Empty by default.</span> |
+| <Link id="m-onconnected" /><code>{"virtual void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: called when the entity is sent to a player, so you can send that player any extra state. Empty by default.</span> |
+| <Link id="m-ondisconnected" /><code>{"virtual void OnDisconnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: called when the entity stops being synced to a player. Empty by default.</span> |

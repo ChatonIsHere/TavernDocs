@@ -21,16 +21,16 @@ Type converter that looks up a `PlayerProgressFlag` of type `T` by name or hash,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerProgressFlagConverter()"}</code> | Creates a `PlayerProgressFlagConverter` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerProgressFlagConverter()"}</code> | <span className="api-desc">Creates a `PlayerProgressFlagConverter` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for failed lookups. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for failed lookups.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Type converter that looks up a `PlayerProgressFlag` of type `T` by name or hash,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Treats a number as a hash and anything else as a lowercase name. Logs a warning and returns null if not found. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Treats a number as a hash and anything else as a lowercase name. Logs a warning and returns null if not found.</span> |

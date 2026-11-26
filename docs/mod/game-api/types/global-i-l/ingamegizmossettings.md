@@ -24,17 +24,17 @@ Global settings asset holding the pooled line and sphere gizmo prefabs, with sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InGameGizmosSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"InGameGizmosSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-linedefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> | Pool definition for the line gizmo prefab used by `DrawLine`. |
-| <Link id="m-spheredefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sphereDefinition"}</code> | Pool definition for the sphere gizmo prefab used by `DrawSphere`. |
+| <Link id="m-linedefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> | <span className="api-desc">Pool definition for the line gizmo prefab used by `DrawLine`.</span> |
+| <Link id="m-spheredefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sphereDefinition"}</code> | <span className="api-desc">Pool definition for the sphere gizmo prefab used by `DrawSphere`.</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Global settings asset holding the pooled line and sphere gizmo prefabs, with sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color" /><code>{"static Color Color { get; set; }"}</code> | Colour applied to each gizmo when it is taken from the pool. Set it before calling `DrawLine` or `DrawSphere`. Defaults to white. |
+| <Link id="m-color" /><code>{"static Color Color { get; set; }"}</code> | <span className="api-desc">Colour applied to each gizmo when it is taken from the pool. Set it before calling `DrawLine` or `DrawSphere`. Defaults to white.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-drawline" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Vector3 from, Vector3 to)"}</code> | Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it. |
-| <Link id="m-drawline-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Transform from, Transform to, Vector3 offsetFrom, Vector3 offsetTo)"}</code> | Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it. |
-| <Link id="m-drawsphere" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Vector3 position, float radius)"}</code> | Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius. |
-| <Link id="m-drawsphere-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Transform position, float radius, Vector3 offset)"}</code> | Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius. |
+| <Link id="m-drawline" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Vector3 from, Vector3 to)"}</code> | <span className="api-desc">Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it.</span> |
+| <Link id="m-drawline-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Transform from, Transform to, Vector3 offsetFrom, Vector3 offsetTo)"}</code> | <span className="api-desc">Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it.</span> |
+| <Link id="m-drawsphere" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Vector3 position, float radius)"}</code> | <span className="api-desc">Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius.</span> |
+| <Link id="m-drawsphere-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Transform position, float radius, Vector3 offset)"}</code> | <span className="api-desc">Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius.</span> |

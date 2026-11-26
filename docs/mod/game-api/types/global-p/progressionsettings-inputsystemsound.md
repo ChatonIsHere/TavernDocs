@@ -21,17 +21,17 @@ Pair of sound sets for a skill input turning on and off, set in `ProgressionSett
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InputSystemSound()"}</code> | Creates a `ProgressionSettings.InputSystemSound` with default values. |
+| <Link id="m-ctor" /><code>{"InputSystemSound()"}</code> | <span className="api-desc">Creates a `ProgressionSettings.InputSystemSound` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activated" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" activated"}</code> | Backing field for `Activated`. |
-| <Link id="m-deactivated" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" deactivated"}</code> | Backing field for `Deactivated`. |
+| <Link id="m-activated" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" activated"}</code> | <span className="api-desc">Backing field for `Activated`.</span> |
+| <Link id="m-deactivated" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" deactivated"}</code> | <span className="api-desc">Backing field for `Deactivated`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ Pair of sound sets for a skill input turning on and off, set in `ProgressionSett
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activated-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Activated { get; }"}</code> | Sound played when the input turns on. |
-| <Link id="m-deactivated-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Deactivated { get; }"}</code> | Sound played when the input turns off. |
+| <Link id="m-activated-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Activated { get; }"}</code> | <span className="api-desc">Sound played when the input turns on.</span> |
+| <Link id="m-deactivated-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Deactivated { get; }"}</code> | <span className="api-desc">Sound played when the input turns off.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InputSystemSound`:
 
+<div className="api-used-in">
+
 [`ProgressionSettings.powerStrikeInput`](/mod/game-api/types/global-p/progressionsettings#m-powerstrikeinput), [`ProgressionSettings.raiseHandInput`](/mod/game-api/types/global-p/progressionsettings#m-raisehandinput).
+
+</div>

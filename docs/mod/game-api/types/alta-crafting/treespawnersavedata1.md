@@ -22,16 +22,16 @@ Old version 1 save data for a `TreeSpawner`, migrated to `TreeSpawnerSaveData` o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData1()"}</code> | Creates a `TreeSpawnerSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData1()"}</code> | <span className="api-desc">Creates a `TreeSpawnerSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waittorespawn" /><code>{"float waitToRespawn"}</code> | Respawn wait in seconds. |
+| <Link id="m-waittorespawn" /><code>{"float waitToRespawn"}</code> | <span className="api-desc">Respawn wait in seconds.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current save data, turning the seconds value into a `TimeSpan`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current save data, turning the seconds value into a `TimeSpan`.</span> |

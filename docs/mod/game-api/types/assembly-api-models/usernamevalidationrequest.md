@@ -20,16 +20,20 @@ Body of an Alta web API request to check a username.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UsernameValidationRequest()"}</code> | Creates an `UsernameValidationRequest` with default values. |
+| <Link id="m-ctor" /><code>{"UsernameValidationRequest()"}</code> | <span className="api-desc">Creates an `UsernameValidationRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The username to check. |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | <span className="api-desc">The username to check.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UsernameValidationRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ValidateUsername`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-validateusername).
+
+</div>

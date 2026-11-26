@@ -21,16 +21,20 @@ Body for logging in with a linked platform account (used for Oculus and Pico).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> | Creates a `LoginViaLinkedAccountRequest` with default values. |
+| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> | <span className="api-desc">Creates a `LoginViaLinkedAccountRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | Id of the device logging in. |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the device logging in.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LoginViaLinkedAccountRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.LoginWithOculusUser`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-loginwithoculususer), [`LowLevelApiClient.LoginWithPicoUser`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-loginwithpicouser).
+
+</div>

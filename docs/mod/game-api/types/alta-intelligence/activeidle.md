@@ -21,17 +21,17 @@ The running idle action for an agent, made from `AgentIdleSettings`. It waits a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveIdle()"}</code> | Creates an `ActiveIdle` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveIdle()"}</code> | <span className="api-desc">Creates an `ActiveIdle` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isslowing" /><code>{"private bool isSlowing"}</code> | The walker's `IsSlowedWhenNotMoving` value from before the idle, put back when it ends. |
-| <Link id="m-starttime" /><code>{"private float startTime"}</code> | Real time the idle started, used for the follow and facing time windows. |
+| <Link id="m-isslowing" /><code>{"private bool isSlowing"}</code> | <span className="api-desc">The walker's `IsSlowedWhenNotMoving` value from before the idle, put back when it ends.</span> |
+| <Link id="m-starttime" /><code>{"private float startTime"}</code> | <span className="api-desc">Real time the idle started, used for the follow and facing time windows.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ The running idle action for an agent, made from `AgentIdleSettings`. It waits a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activeidle">{"ActiveIdle"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/agentidlesettings">{"AgentIdleSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/agentidlesettings">{"AgentIdleSettings"}</Link>{" settings)"}</code> | Builds the idle action for the given settings, copying their `IsUsingTarget` flag. |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | While the target exists, faces it and follows it inside the configured time windows; otherwise stops the director. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Maybe asks the population to move the spawn, sets a random duration, records the start time and hooks the finish handlers when facing the target. |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activeidle">{"ActiveIdle"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/agentidlesettings">{"AgentIdleSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/agentidlesettings">{"AgentIdleSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Builds the idle action for the given settings, copying their `IsUsingTarget` flag.</span> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">While the target exists, faces it and follows it inside the configured time windows; otherwise stops the director.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Maybe asks the population to move the spawn, sets a random duration, records the start time and hooks the finish handlers when facing the target.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Restores the walker's slow-down flag and stops the director's facing and movement when the idle ends or is cancelled. |
+| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Restores the walker's slow-down flag and stops the director's facing and movement when the idle ends or is cancelled.</span> |
 
 </details>
 
@@ -56,4 +56,8 @@ The running idle action for an agent, made from `AgentIdleSettings`. It waits a 
 
 Members of other types that take, return or hold a `ActiveIdle`:
 
+<div className="api-used-in">
+
 [`ActiveSchmeecheePlant.GetAction`](/mod/game-api/types/alta-intelligence/activeschmeecheeplant#m-getaction).
+
+</div>

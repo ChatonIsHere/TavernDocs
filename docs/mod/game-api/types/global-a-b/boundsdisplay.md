@@ -21,4 +21,4 @@ Empty component, probably left over from a debug display. Does nothing.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoundsDisplay()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BoundsDisplay()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

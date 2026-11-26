@@ -22,16 +22,20 @@ Pod spec inside an Agones game server template.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerTemplateSpec()"}</code> | Creates a `GameServerSpec.GameServerTemplate.GameServerTemplateSpec` with default values. |
+| <Link id="m-ctor" /><code>{"GameServerTemplateSpec()"}</code> | <span className="api-desc">Creates a `GameServerSpec.GameServerTemplate.GameServerTemplateSpec` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containers" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec-containerconfig">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig"}</Link>{"[] Containers { get; set; }"}</code> | Containers in the pod. Starts with one empty entry. |
+| <Link id="m-containers" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec-containerconfig">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig"}</Link>{"[] Containers { get; set; }"}</code> | <span className="api-desc">Containers in the pod. Starts with one empty entry.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GameServerTemplateSpec`:
 
+<div className="api-used-in">
+
 [`GameServerSpec.GameServerTemplate.Spec`](/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate#m-spec).
+
+</div>

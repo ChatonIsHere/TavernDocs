@@ -21,18 +21,22 @@ Moves a downed player back to Playing when revived. `DownedState` calls `HandleR
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> | Creates a `DownedToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> | <span className="api-desc">Creates a `DownedToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlerevive" /><code>{"void HandleRevive()"}</code> | Switches the player back to Playing. |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Only logs; there is nothing to listen to. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Only logs. |
+| <Link id="m-handlerevive" /><code>{"void HandleRevive()"}</code> | <span className="api-desc">Switches the player back to Playing.</span> |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Only logs; there is nothing to listen to.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Only logs.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DownedToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.downedToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-downedtoplaying), [`AllTransitions.DownedToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-downedtoplayingtransition).
+
+</div>

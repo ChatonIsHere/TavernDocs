@@ -22,17 +22,21 @@ Base for the small classes that write one value into a particle system module.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> | Creates a `ValueOperatedParticleSystem.ParticleSystemValueOperator` with default values. |
+| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> | <span className="api-desc">Creates a `ValueOperatedParticleSystem.ParticleSystemValueOperator` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize(ParticleSystem targetSystem)"}</code> | Grabs the particle system module this operator writes to. |
-| <Link id="m-set" /><code>{"abstract void Set(float value)"}</code> | Writes the value into the module. |
+| <Link id="m-initialize" /><code>{"abstract void Initialize(ParticleSystem targetSystem)"}</code> | <span className="api-desc">Grabs the particle system module this operator writes to.</span> |
+| <Link id="m-set" /><code>{"abstract void Set(float value)"}</code> | <span className="api-desc">Writes the value into the module.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ParticleSystemValueOperator`:
 
+<div className="api-used-in">
+
 [`ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition.valueOperator`](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition#m-valueoperator).
+
+</div>

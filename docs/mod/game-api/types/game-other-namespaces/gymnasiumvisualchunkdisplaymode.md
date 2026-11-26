@@ -28,4 +28,8 @@ Which chunks the gymnasium `ChunkDisplayTool` draws: none, all or only loaded on
 
 Members of other types that take, return or hold a `GymnasiumVisualChunkDisplayMode`:
 
+<div className="api-used-in">
+
 [`ChunkDisplayTool.ApplyMode`](/mod/game-api/types/game-other-namespaces/chunkdisplaytool#m-applymode), [`ChunkDisplayTool.CurrentMode`](/mod/game-api/types/game-other-namespaces/chunkdisplaytool#m-currentmode), [`ChunkDisplayTool.defaultMode`](/mod/game-api/types/game-other-namespaces/chunkdisplaytool#m-defaultmode), [`ChunkDisplayTool.NextMode`](/mod/game-api/types/game-other-namespaces/chunkdisplaytool#m-nextmode).
+
+</div>

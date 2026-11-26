@@ -22,23 +22,23 @@ Base for creature actions that walk the agent to its target. Applies speed and a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveNavigation()"}</code> | Creates an `ActiveNavigation` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveNavigation()"}</code> | <span className="api-desc">Creates an `ActiveNavigation` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Does nothing here. Movement is left to the director and walker. |
-| <Link id="m-failed" /><code>{"protected virtual void Failed()"}</code> | Runs when pathfinding fails. Cancels the action, and removes the target for a while first if the settings say to. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Applies the walker settings and hooks target reached and path failure. With overshooting on, finishes when the walker stops instead. |
-| <Link id="m-targetreached" /><code>{"protected virtual void TargetReached()"}</code> | Runs when the target is reached. Finishes the action. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Does nothing here. Movement is left to the director and walker.</span> |
+| <Link id="m-failed" /><code>{"protected virtual void Failed()"}</code> | <span className="api-desc">Runs when pathfinding fails. Cancels the action, and removes the target for a while first if the settings say to.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Applies the walker settings and hooks target reached and path failure. With overshooting on, finishes when the walker stops instead.</span> |
+| <Link id="m-targetreached" /><code>{"protected virtual void TargetReached()"}</code> | <span className="api-desc">Runs when the target is reached. Finishes the action.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> | Runs when the action finishes or is cancelled: unhooks navigator events, stops the director and clears the blocked state. |
-| <Link id="m-stopfollow" /><code>{"private void StopFollow()"}</code> | Overshooting mode: when the navigator reaches its target, stops the director and finishes if the path is done. |
+| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" action)"}</code> | <span className="api-desc">Runs when the action finishes or is cancelled: unhooks navigator events, stops the director and clears the blocked state.</span> |
+| <Link id="m-stopfollow" /><code>{"private void StopFollow()"}</code> | <span className="api-desc">Overshooting mode: when the navigator reaches its target, stops the director and finishes if the path is done.</span> |
 
 </details>

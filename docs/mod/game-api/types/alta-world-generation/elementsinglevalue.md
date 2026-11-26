@@ -21,10 +21,14 @@ Serializable single value of an `Element`, used for the element list on a `Biome
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ElementSingleValue()"}</code> | Creates an `ElementSingleValue` with default values. |
+| <Link id="m-ctor" /><code>{"ElementSingleValue()"}</code> | <span className="api-desc">Creates an `ElementSingleValue` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ElementSingleValue`:
 
+<div className="api-used-in">
+
 [`Biome.elements`](/mod/game-api/types/alta-world-generation/biome#m-elements), [`Biome.Elements`](/mod/game-api/types/alta-world-generation/biome#m-elements-2).
+
+</div>

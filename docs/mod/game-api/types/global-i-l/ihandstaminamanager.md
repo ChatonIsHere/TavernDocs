@@ -21,16 +21,20 @@ Stamina for one climbing hand, as used by `ClimbingHandler.LeftStamina` and `Rig
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> | Whether the hand has stamina left; in `HandStaminaManager`, above 0.01. |
+| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> | <span className="api-desc">Whether the hand has stamina left; in `HandStaminaManager`, above 0.01.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> | Updates the hand's stamina for this step; `HandStaminaManager` drains it by grip distance while climbing. |
+| <Link id="m-process" /><code>{"void Process()"}</code> | <span className="api-desc">Updates the hand's stamina for this step; `HandStaminaManager` drains it by grip distance while climbing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IHandStaminaManager`:
 
+<div className="api-used-in">
+
 [`ClimbingHandler.LeftStamina`](/mod/game-api/types/game-other-namespaces/climbinghandler#m-leftstamina), [`ClimbingHandler.RightStamina`](/mod/game-api/types/game-other-namespaces/climbinghandler#m-rightstamina).
+
+</div>

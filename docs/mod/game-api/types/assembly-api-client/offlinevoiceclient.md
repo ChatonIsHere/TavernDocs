@@ -21,11 +21,11 @@ Offline stand-in for the Vivox voice token client.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> | Creates an `OfflineVoiceClient` with default values. |
+| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> | <span className="api-desc">Creates an `OfflineVoiceClient` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> | Returns an empty string. |
-| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> | Returns an empty string. |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> | <span className="api-desc">Returns an empty string.</span> |
+| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> | <span className="api-desc">Returns an empty string.</span> |

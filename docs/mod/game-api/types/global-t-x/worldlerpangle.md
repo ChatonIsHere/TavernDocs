@@ -21,28 +21,28 @@ Makes this transform lag behind its parent's rotation, smoothing it in world spa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WorldLerpAngle()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WorldLerpAngle()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> | The smoothed world rotation from last frame. |
-| <Link id="m-lerp" /><code>{"private float lerp"}</code> | Smoothing speed. Higher follows the parent faster. |
+| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> | <span className="api-desc">The smoothed world rotation from last frame.</span> |
+| <Link id="m-lerp" /><code>{"private float lerp"}</code> | <span className="api-desc">Smoothing speed. Higher follows the parent faster.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | Lerps the stored rotation toward the parent's by `lerp` per second and applies it. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Snaps to the parent's rotation. |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | <span className="api-desc">Lerps the stored rotation toward the parent's by `lerp` per second and applies it.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Snaps to the parent's rotation.</span> |
 
 </details>

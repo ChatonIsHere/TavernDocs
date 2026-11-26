@@ -22,16 +22,16 @@ Item data for a garnish added to a stew. Its own effects are added to the stew, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingGarnish()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CookingGarnish()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectmultipliers" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effectMultipliers"}</code> | Backing field for `EffectMultipliers`. |
+| <Link id="m-effectmultipliers" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effectMultipliers"}</code> | <span className="api-desc">Backing field for `EffectMultipliers`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Item data for a garnish added to a stew. Its own effects are added to the stew, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectmultipliers-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] EffectMultipliers { get; }"}</code> | Effects this garnish scales, each with a strength multiplier, applied after all stew effects are combined. |
+| <Link id="m-effectmultipliers-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] EffectMultipliers { get; }"}</code> | <span className="api-desc">Effects this garnish scales, each with a strength multiplier, applied after all stew effects are combined.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CookingGarnish`:
 
+<div className="api-used-in">
+
 [`CookingGarnishComponent.Alta.Cooking.ICookingGarnishMarker.GarnishItem`](/mod/game-api/types/alta-crafting/cookinggarnishcomponent#m-alta-cooking-icookinggarnishmarker-garnishitem), [`CookingGarnishComponent.garnishItem`](/mod/game-api/types/alta-crafting/cookinggarnishcomponent#m-garnishitem), [`ICookingGarnishMarker.GarnishItem`](/mod/game-api/types/alta-crafting/icookinggarnishmarker#m-garnishitem), [`StewContentArguments.Garnishes`](/mod/game-api/types/alta-crafting/stewcontentarguments#m-garnishes), [`StewManager.AddGarnish`](/mod/game-api/types/alta-crafting/stewmanager#m-addgarnish), [`StewManager.garnishes`](/mod/game-api/types/alta-crafting/stewmanager#m-garnishes), [`StewManager.Garnishes`](/mod/game-api/types/alta-crafting/stewmanager#m-garnishes-2), [`StewRecipe.HandleGarnishModifiers`](/mod/game-api/types/alta-crafting/stewrecipe#m-handlegarnishmodifiers).
+
+</div>

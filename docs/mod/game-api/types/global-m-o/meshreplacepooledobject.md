@@ -22,10 +22,10 @@ Base for pooled objects that take a mesh and material when handed out, such as `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MeshReplacePooledObject()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected MeshReplacePooledObject()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> | Applies the given mesh and material to the object. |
+| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> | <span className="api-desc">Applies the given mesh and material to the object.</span> |

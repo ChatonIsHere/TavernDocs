@@ -21,4 +21,4 @@ Nested interface declared inside `Mould`. Probably left over: `Mould` and the de
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-candecraft" /><code>{"bool CanDecraft { get; }"}</code> | Whether the object can be broken down by generic decrafting. |
+| <Link id="m-candecraft" /><code>{"bool CanDecraft { get; }"}</code> | <span className="api-desc">Whether the object can be broken down by generic decrafting.</span> |

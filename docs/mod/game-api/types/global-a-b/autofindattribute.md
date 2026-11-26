@@ -21,10 +21,10 @@ Inspector attribute for a field that should be filled automatically, optionally 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> | Creates an `AutoFindAttribute` from `isSearchingChildren`. |
+| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> | <span className="api-desc">Creates an `AutoFindAttribute` from `isSearchingChildren`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-issearchingchildren" /><code>{"bool IsSearchingChildren { get; }"}</code> | Whether the search includes child objects. |
+| <Link id="m-issearchingchildren" /><code>{"bool IsSearchingChildren { get; }"}</code> | <span className="api-desc">Whether the search includes child objects.</span> |

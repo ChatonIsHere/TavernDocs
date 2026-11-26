@@ -30,4 +30,8 @@ State of an `AltaCoroutine`: not started, running, stopped, finished or error.
 
 Members of other types that take, return or hold a `AltaCoroutineState`:
 
+<div className="api-used-in">
+
 [`AltaCoroutine.State`](/mod/game-api/types/assembly-other/altacoroutine#m-state).
+
+</div>

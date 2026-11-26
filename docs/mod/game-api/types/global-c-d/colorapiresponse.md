@@ -21,10 +21,10 @@ JSON shape for a colour name lookup response, with the name under `name.value`. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> | Creates a `ColorApiResponse` with default values. |
+| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> | <span className="api-desc">Creates a `ColorApiResponse` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code><Link to="/mod/game-api/types/global-c-d/colorapiresponse-nameobject">{"ColorApiResponse.NameObject"}</Link>{" name"}</code> | Holds the colour name in its `value`. |
+| <Link id="m-name" /><code><Link to="/mod/game-api/types/global-c-d/colorapiresponse-nameobject">{"ColorApiResponse.NameObject"}</Link>{" name"}</code> | <span className="api-desc">Holds the colour name in its `value`.</span> |

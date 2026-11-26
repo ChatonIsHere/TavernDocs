@@ -22,4 +22,4 @@ Editor menu folder `GameObject/Township/Managers`: menu item classes inherit it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Managers()"}</code> | Creates an `AltaMenuItemBase.GameObject.Township.Managers` with default values. |
+| <Link id="m-ctor" /><code>{"protected Managers()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.GameObject.Township.Managers` with default values.</span> |

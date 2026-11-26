@@ -22,4 +22,4 @@ Editor menu entry that creates a `DurabilitySaveEnchantment` asset under Townshi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DurabilitySaveEnchantment.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `DurabilitySaveEnchantment.Create` with default values.</span> |

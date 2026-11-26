@@ -21,11 +21,11 @@ Server console that throws away all log output.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NullConsole()"}</code> | Creates a `NullConsole` with default values. |
+| <Link id="m-ctor" /><code>{"NullConsole()"}</code> | <span className="api-desc">Creates a `NullConsole` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> | Does nothing. |
-| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> | Does nothing. |
+| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> | <span className="api-desc">Does nothing.</span> |

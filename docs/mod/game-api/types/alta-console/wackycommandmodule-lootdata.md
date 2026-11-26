@@ -21,17 +21,21 @@ One chest's loot module for the `ow-loot` command.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LootData()"}</code> | Creates a `WackyCommandModule.LootData` with default values. |
+| <Link id="m-ctor" /><code>{"LootData()"}</code> | <span className="api-desc">Creates a `WackyCommandModule.LootData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-json" /><code>{"string json"}</code> | `LootModule` settings as JSON, applied to the new module with `JsonUtility.FromJsonOverwrite`. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the chest is. The nearest chest within 1 metre gets the module. |
+| <Link id="m-json" /><code>{"string json"}</code> | <span className="api-desc">`LootModule` settings as JSON, applied to the new module with `JsonUtility.FromJsonOverwrite`.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Where the chest is. The nearest chest within 1 metre gets the module.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LootData`:
 
+<div className="api-used-in">
+
 [`WackyCommandModule.ChunkLootData.lootData`](/mod/game-api/types/alta-console/wackycommandmodule-chunklootdata#m-lootdata).
+
+</div>

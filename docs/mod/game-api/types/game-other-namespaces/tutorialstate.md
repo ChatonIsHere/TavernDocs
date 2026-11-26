@@ -28,4 +28,8 @@ Where a micro tutorial is: inactive, started or completed. Included in micro tut
 
 Members of other types that take, return or hold a `TutorialState`:
 
+<div className="api-used-in">
+
 [`IMicroTutorial.State`](/mod/game-api/types/game-other-namespaces/imicrotutorial#m-state), [`MicroTutorial.State`](/mod/game-api/types/game-other-namespaces/microtutorial#m-state).
+
+</div>

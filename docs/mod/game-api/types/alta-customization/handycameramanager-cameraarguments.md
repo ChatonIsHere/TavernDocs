@@ -21,11 +21,11 @@ Private message struct holding a camera and player identifier. Not used anywhere
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> | Creates a `HandyCameraManager.CameraArguments` from `cameraIdentifier` and `playerIdentifier`. |
+| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> | <span className="api-desc">Creates a `HandyCameraManager.CameraArguments` from `cameraIdentifier` and `playerIdentifier`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> | Entity identifier of the camera. |
-| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> | Identifier of the player. |
+| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> | <span className="api-desc">Entity identifier of the camera.</span> |
+| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> | <span className="api-desc">Identifier of the player.</span> |

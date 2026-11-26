@@ -27,4 +27,8 @@ Kind of shop item set: an outfit or a bundle. Used when shop editors create or u
 
 Members of other types that take, return or hold a `ItemSetType`:
 
+<div className="api-used-in">
+
 [`IShopEditor.CreateNewItemSet`](/mod/game-api/types/assembly-api-client/ishopeditor#m-createnewitemset), [`IShopEditor.UpdateItemSetAsync`](/mod/game-api/types/assembly-api-client/ishopeditor#m-updateitemsetasync), [`OfflineShopEditor.CreateNewItemSet`](/mod/game-api/types/assembly-api-client/offlineshopeditor#m-createnewitemset), [`OfflineShopEditor.UpdateItemSetAsync`](/mod/game-api/types/assembly-api-client/offlineshopeditor#m-updateitemsetasync), [`ShopEditor.CreateNewItemSet`](/mod/game-api/types/assembly-api-client/shopeditor#m-createnewitemset), [`ShopEditor.UpdateItemSetAsync`](/mod/game-api/types/assembly-api-client/shopeditor#m-updateitemsetasync), [`ItemSetRequest.Type`](/mod/game-api/types/assembly-api-models/itemsetrequest#m-type), [`ShopItemSet.Type`](/mod/game-api/types/assembly-api-models/shopitemset#m-type), [`CosmeticSetDefinition.setType`](/mod/game-api/types/alta-customization/cosmeticsetdefinition#m-settype), [`CosmeticSetDefinition.SetType`](/mod/game-api/types/alta-customization/cosmeticsetdefinition#m-settype-2).
+
+</div>

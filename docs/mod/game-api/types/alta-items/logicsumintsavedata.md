@@ -23,17 +23,17 @@ Save data for `LogicSumIntReceiver`: its own output value data and the int input
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicSumIntSaveData()"}</code> | Creates a `LogicSumIntSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicSumIntSaveData()"}</code> | <span className="api-desc">Creates a `LogicSumIntSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The receiver's own logic data, which holds the summed output. |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The receiver's own logic data, which holds the summed output.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{"[] Datas { get; set; }"}</code> | Logic data of each linked int sender being summed. |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | Wraps `logicData` for the `ILogicValueData` interface. |
+| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{"[] Datas { get; set; }"}</code> | <span className="api-desc">Logic data of each linked int sender being summed.</span> |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Wraps `logicData` for the `ILogicValueData` interface.</span> |

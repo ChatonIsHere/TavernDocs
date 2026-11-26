@@ -20,4 +20,4 @@ Hooks game events to achievement unlocks. Run once by `AchievementManager.Awake`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"static void Setup()"}</code> | Completes the `first_play` achievement when `GeneralGameEvents.ClientStarted` fires. That is the only hook it adds. |
+| <Link id="m-setup" /><code>{"static void Setup()"}</code> | <span className="api-desc">Completes the `first_play` achievement when `GeneralGameEvents.ClientStarted` fires. That is the only hook it adds.</span> |

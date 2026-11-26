@@ -21,21 +21,21 @@ UI for the email verification popup: validates the typed address and asks the AP
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmailVerificationManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmailVerificationManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-emailinput" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" emailInput"}</code> | Field where the address is typed. |
-| <Link id="m-errormessage" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" errorMessage"}</code> | Text that shows validation or API errors. |
-| <Link id="m-issending" /><code>{"private bool isSending"}</code> | True while a request is running, to block repeats. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-resultmessage" /><code>{"private GameObject resultMessage"}</code> | Object shown when the request succeeds. |
-| <Link id="m-timerobject" /><code>{"private GameObject timerObject"}</code> | Object shown while the request runs. |
+| <Link id="m-emailinput" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" emailInput"}</code> | <span className="api-desc">Field where the address is typed.</span> |
+| <Link id="m-errormessage" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" errorMessage"}</code> | <span className="api-desc">Text that shows validation or API errors.</span> |
+| <Link id="m-issending" /><code>{"private bool isSending"}</code> | <span className="api-desc">True while a request is running, to block repeats.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-resultmessage" /><code>{"private GameObject resultMessage"}</code> | <span className="api-desc">Object shown when the request succeeds.</span> |
+| <Link id="m-timerobject" /><code>{"private GameObject timerObject"}</code> | <span className="api-desc">Object shown while the request runs.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ UI for the email verification popup: validates the typed address and asks the AP
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendverification" /><code>{"async void SendVerification()"}</code> | Validates the input, calls the API's `ChangeEmail` with it and shows the result or the error. |
+| <Link id="m-sendverification" /><code>{"async void SendVerification()"}</code> | <span className="api-desc">Validates the input, calls the API's `ChangeEmail` with it and shows the result or the error.</span> |

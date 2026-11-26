@@ -23,11 +23,11 @@ Save data for `MicroTutorialFaceOrb`: the orb type and the tutorial it starts.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> | Creates a `MicroTutorialFaceOrbSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> | <span className="api-desc">Creates a `MicroTutorialFaceOrbSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-microtutorialsettings" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link></code> | The tutorial the orb starts. |
-| <Link id="m-orbtype" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialfaceorbtype">{"MicroTutorialFaceOrbType"}</Link>{" OrbType"}</code> | Whether the orb is an entry or exit orb. |
+| <Link id="m-microtutorialsettings" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link></code> | <span className="api-desc">The tutorial the orb starts.</span> |
+| <Link id="m-orbtype" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialfaceorbtype">{"MicroTutorialFaceOrbType"}</Link>{" OrbType"}</code> | <span className="api-desc">Whether the orb is an entry or exit orb.</span> |

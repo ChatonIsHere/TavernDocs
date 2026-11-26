@@ -22,19 +22,19 @@ Old version 1 save data for `SpawnInCircle`, without the kinematic flag. Migrate
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> | Creates a `SpawnInCircleSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> | <span className="api-desc">Creates a `SpawnInCircleSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> | Saved `maxRadius`. |
-| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> | Saved `minRadius`. |
-| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> | Saved `numOfItems`. |
-| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> | Saved `randomOffset`. |
+| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> | <span className="api-desc">Saved `maxRadius`.</span> |
+| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> | <span className="api-desc">Saved `minRadius`.</span> |
+| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> | <span className="api-desc">Saved `numOfItems`.</span> |
+| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> | <span className="api-desc">Saved `randomOffset`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Copies the ring settings into a version 2 save. The kinematic flag is left false. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Copies the ring settings into a version 2 save. The kinematic flag is left false.</span> |

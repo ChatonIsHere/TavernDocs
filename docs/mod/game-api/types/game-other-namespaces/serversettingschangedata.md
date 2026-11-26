@@ -21,18 +21,22 @@ Payload of the `ConsoleEvents.ServerSettingsChanged` console event. `ServerSetti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> | Creates a `ServerSettingsChangeData` from `settings` and `age`. |
-| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> | Creates a `ServerSettingsChangeData` from `settings` and `age`. |
+| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> | <span className="api-desc">Creates a `ServerSettingsChangeData` from `settings` and `age`.</span> |
+| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> | <span className="api-desc">Creates a `ServerSettingsChangeData` from `settings` and `age`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-age" /><code><Link to="/mod/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" Age { get; }"}</code> | Whether `Settings` holds the settings from before (`Old`) or after (`New`) the change. |
-| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" Settings { get; }"}</code> | A full copy of the server settings at that point. |
+| <Link id="m-age" /><code><Link to="/mod/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" Age { get; }"}</code> | <span className="api-desc">Whether `Settings` holds the settings from before (`Old`) or after (`New`) the change.</span> |
+| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" Settings { get; }"}</code> | <span className="api-desc">A full copy of the server settings at that point.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ServerSettingsChangeData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.ServerSettingsChanged`](/mod/game-api/types/alta-console/consoleevents#m-serversettingschanged).
+
+</div>

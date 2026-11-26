@@ -28,4 +28,8 @@ How an `OcclusionChunkEffectData` sets culling while the local player is in its 
 
 Members of other types that take, return or hold a `OcclusionMode`:
 
+<div className="api-used-in">
+
 [`OcclusionChunkEffectData.mode`](/mod/game-api/types/alta-world/occlusionchunkeffectdata#m-mode).
+
+</div>

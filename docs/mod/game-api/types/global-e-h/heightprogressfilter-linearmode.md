@@ -29,4 +29,8 @@ Which height the linear weighting in `HeightProgressFilter` measures from: the l
 
 Members of other types that take, return or hold a `LinearMode`:
 
+<div className="api-used-in">
+
 [`HeightProgressFilter.linearMode`](/mod/game-api/types/global-e-h/heightprogressfilter#m-linearmode).
+
+</div>

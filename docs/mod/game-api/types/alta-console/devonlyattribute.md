@@ -21,11 +21,11 @@ Console requirement: the command (or settings property) is only for users whose 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> | Creates a `DevOnlyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> | <span className="api-desc">Creates a `DevOnlyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> | True if the signed-in user's identity token says they are a developer. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Dev Only". |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> | <span className="api-desc">True if the signed-in user's identity token says they are a developer.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Dev Only".</span> |

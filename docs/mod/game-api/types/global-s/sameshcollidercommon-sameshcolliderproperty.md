@@ -21,26 +21,30 @@ All the settings of one SA mesh collider build (split, reducer, collider and rig
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderProperty()"}</code> | Creates a `SAMeshColliderCommon.SAMeshColliderProperty` with default values. |
+| <Link id="m-ctor" /><code>{"SAMeshColliderProperty()"}</code> | <span className="api-desc">Creates a `SAMeshColliderCommon.SAMeshColliderProperty` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-colliderproperty">{"SAColliderBuilderCommon.ColliderProperty"}</Link>{" colliderProperty"}</code> | Collider options for the generated colliders. |
-| <Link id="m-modifynameenabled" /><code>{"bool modifyNameEnabled"}</code> | Whether the tool renames the generated collider objects. Default true. |
-| <Link id="m-reducerproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty">{"SAColliderBuilderCommon.ReducerProperty"}</Link>{" reducerProperty"}</code> | Options for reducing the mesh before colliders are made from it. |
-| <Link id="m-rigidbodyproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" rigidbodyProperty"}</code> | Rigidbody options for the generated colliders. |
-| <Link id="m-splitproperty" /><code><Link to="/mod/game-api/types/global-s/sameshcollidercommon-splitproperty">{"SAMeshColliderCommon.SplitProperty"}</Link>{" splitProperty"}</code> | How the mesh is split into pieces before making colliders. |
+| <Link id="m-colliderproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-colliderproperty">{"SAColliderBuilderCommon.ColliderProperty"}</Link>{" colliderProperty"}</code> | <span className="api-desc">Collider options for the generated colliders.</span> |
+| <Link id="m-modifynameenabled" /><code>{"bool modifyNameEnabled"}</code> | <span className="api-desc">Whether the tool renames the generated collider objects. Default true.</span> |
+| <Link id="m-reducerproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty">{"SAColliderBuilderCommon.ReducerProperty"}</Link>{" reducerProperty"}</code> | <span className="api-desc">Options for reducing the mesh before colliders are made from it.</span> |
+| <Link id="m-rigidbodyproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" rigidbodyProperty"}</code> | <span className="api-desc">Rigidbody options for the generated colliders.</span> |
+| <Link id="m-splitproperty" /><code><Link to="/mod/game-api/types/global-s/sameshcollidercommon-splitproperty">{"SAMeshColliderCommon.SplitProperty"}</Link>{" splitProperty"}</code> | <span className="api-desc">How the mesh is split into pieces before making colliders.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copy" /><code><Link to="/mod/game-api/types/global-s/sameshcollidercommon-sameshcolliderproperty">{"SAMeshColliderCommon.SAMeshColliderProperty"}</Link>{" Copy()"}</code> | Returns a new copy with each sub-property shallow-copied. |
+| <Link id="m-copy" /><code><Link to="/mod/game-api/types/global-s/sameshcollidercommon-sameshcolliderproperty">{"SAMeshColliderCommon.SAMeshColliderProperty"}</Link>{" Copy()"}</code> | <span className="api-desc">Returns a new copy with each sub-property shallow-copied.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SAMeshColliderProperty`:
 
+<div className="api-used-in">
+
 [`SAMeshCollider.defaultMeshColliderProperty`](/mod/game-api/types/global-s/sameshcollider#m-defaultmeshcolliderproperty), [`SAMeshCollider.edittingMeshCollidertProperty`](/mod/game-api/types/global-s/sameshcollider#m-edittingmeshcollidertproperty), [`SAMeshCollider.meshColliderProperty`](/mod/game-api/types/global-s/sameshcollider#m-meshcolliderproperty), [`SAMeshColliderCommon.SAMeshColliderBuilderProperty.ToSAMeshColliderProperty`](/mod/game-api/types/global-s/sameshcollidercommon-sameshcolliderbuilderproperty#m-tosameshcolliderproperty).
+
+</div>

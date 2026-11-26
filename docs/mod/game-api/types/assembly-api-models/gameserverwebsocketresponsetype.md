@@ -28,4 +28,8 @@ Kind of `GameServerWebsocketResponse` sent over the game server websocket: syste
 
 Members of other types that take, return or hold a `GameServerWebsocketResponseType`:
 
+<div className="api-used-in">
+
 [`GameServerWebsocketResponse.GameServerWebsocketResponse`](/mod/game-api/types/assembly-api-models/gameserverwebsocketresponse#m-ctor), [`GameServerWebsocketResponse.Type`](/mod/game-api/types/assembly-api-models/gameserverwebsocketresponse#m-type).
+
+</div>

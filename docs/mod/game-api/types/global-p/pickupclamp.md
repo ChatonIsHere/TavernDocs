@@ -21,18 +21,18 @@ Component that finds the nearest loose crafted pickup within a sphere and passes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupClamp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PickupClamp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-castcenter" /><code>{"private Transform castCenter"}</code> | Centre of the search sphere. |
-| <Link id="m-castradius" /><code>{"private float castRadius"}</code> | Radius of the search sphere. |
-| <Link id="m-onpickupclamped" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" onPickupClamped"}</code> | Event fired with the pickup that was found. |
+| <Link id="m-castcenter" /><code>{"private Transform castCenter"}</code> | <span className="api-desc">Centre of the search sphere.</span> |
+| <Link id="m-castradius" /><code>{"private float castRadius"}</code> | <span className="api-desc">Radius of the search sphere.</span> |
+| <Link id="m-onpickupclamped" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" onPickupClamped"}</code> | <span className="api-desc">Event fired with the pickup that was found.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Component that finds the nearest loose crafted pickup within a sphere and passes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> | Finds the closest non-kinematic, undocked, crafted pickup in range and fires `onPickupClamped` with it. |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> | <span className="api-desc">Finds the closest non-kinematic, undocked, crafted pickup in range and fires `onPickupClamped` with it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the search sphere in the editor. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the search sphere in the editor.</span> |
 
 </details>

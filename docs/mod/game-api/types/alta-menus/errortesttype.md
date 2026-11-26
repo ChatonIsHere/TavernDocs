@@ -30,4 +30,8 @@ Test cases for `PlatformLaunchDetails`, which builds fake Oculus launch details 
 
 Members of other types that take, return or hold a `ErrorTestType`:
 
+<div className="api-used-in">
+
 [`PlatformLaunchDetails.PlatformLaunchDetails`](/mod/game-api/types/alta-menus/platformlaunchdetails#m-ctor).
+
+</div>

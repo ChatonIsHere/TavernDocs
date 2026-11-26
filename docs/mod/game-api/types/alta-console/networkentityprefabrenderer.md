@@ -22,10 +22,10 @@ NLog layout renderer `${entity-prefab}`: the prefab of a `NetworkEntity` passed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityPrefabRenderer()"}</code> | Creates a `NetworkEntityPrefabRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkEntityPrefabRenderer()"}</code> | <span className="api-desc">Creates a `NetworkEntityPrefabRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's prefab. |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Returns the entity's prefab.</span> |

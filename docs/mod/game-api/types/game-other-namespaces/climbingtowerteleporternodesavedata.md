@@ -23,12 +23,12 @@ Save data (version 3) for `ClimbingTowerTeleporterNode`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> | Creates a `ClimbingTowerTeleporterNodeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> | <span className="api-desc">Creates a `ClimbingTowerTeleporterNodeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> | Whether the node is the tower's root. |
-| <Link id="m-orbindextoactivateteleporternode" /><code>{"uint orbIndexToActivateTeleporterNode"}</code> | The orb needed to use the node. |
-| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> | Local offset of the arrival point. |
+| <Link id="m-isrootnode" /><code>{"bool isRootNode"}</code> | <span className="api-desc">Whether the node is the tower's root.</span> |
+| <Link id="m-orbindextoactivateteleporternode" /><code>{"uint orbIndexToActivateTeleporterNode"}</code> | <span className="api-desc">The orb needed to use the node.</span> |
+| <Link id="m-teleportoffset" /><code>{"Vector3 teleportOffset"}</code> | <span className="api-desc">Local offset of the arrival point.</span> |

@@ -21,11 +21,11 @@ JSON converter that writes a `Vector3` as a three-number array and reads it back
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Vector3TypeConverter()"}</code> | Creates a `Vector3TypeConverter` with default values. |
+| <Link id="m-ctor" /><code>{"Vector3TypeConverter()"}</code> | <span className="api-desc">Creates a `Vector3TypeConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readjson" /><code>{"override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | Reads `[x, y, z]`; returns zero if the token is not an array. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)"}</code> | Writes `[x, y, z]`. |
+| <Link id="m-readjson" /><code>{"override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Reads `[x, y, z]`; returns zero if the token is not an array.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes `[x, y, z]`.</span> |

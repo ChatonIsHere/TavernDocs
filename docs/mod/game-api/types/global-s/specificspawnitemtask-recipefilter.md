@@ -31,4 +31,8 @@ Flags for which kinds of item creation count towards a spawn-item task: followed
 
 Members of other types that take, return or hold a `RecipeFilter`:
 
+<div className="api-used-in">
+
 [`SpecificSpawnItemTask.recipeFilter`](/mod/game-api/types/global-s/specificspawnitemtask#m-recipefilter), [`SpecificSpawnItemTaskArgument.FollowedRecipe`](/mod/game-api/types/global-s/specificspawnitemtaskargument#m-followedrecipe), [`SpecificSpawnItemTaskArgument.SpecificSpawnItemTaskArgument`](/mod/game-api/types/global-s/specificspawnitemtaskargument#m-ctor).
+
+</div>

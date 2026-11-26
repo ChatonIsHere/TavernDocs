@@ -21,4 +21,4 @@ Marker component: renderers and colliders on this object are left out when an ob
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IgnoreForBounds()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"IgnoreForBounds()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

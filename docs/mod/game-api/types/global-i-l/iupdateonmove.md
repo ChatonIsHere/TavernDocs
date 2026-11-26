@@ -21,4 +21,4 @@ Component on an entity that is told when the entity is moved by a move message, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-moved" /><code>{"void Moved()"}</code> | Called after the entity has moved. |
+| <Link id="m-moved" /><code>{"void Moved()"}</code> | <span className="api-desc">Called after the entity has moved.</span> |

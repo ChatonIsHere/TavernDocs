@@ -21,28 +21,28 @@ Turns its GameObject off a set time after it is turned on.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DisableAfterDuration()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DisableAfterDuration()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delayuntildisable" /><code>{"private float delayUntilDisable"}</code> | Seconds to stay active, default 20. |
-| <Link id="m-remainingdelay" /><code>{"private float remainingDelay"}</code> | Seconds left on the countdown. |
+| <Link id="m-delayuntildisable" /><code>{"private float delayUntilDisable"}</code> | <span className="api-desc">Seconds to stay active, default 20.</span> |
+| <Link id="m-remainingdelay" /><code>{"private float remainingDelay"}</code> | <span className="api-desc">Seconds left on the countdown.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Restarts the countdown. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Counts down and deactivates the GameObject when it reaches zero. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Restarts the countdown.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Counts down and deactivates the GameObject when it reaches zero.</span> |
 
 </details>

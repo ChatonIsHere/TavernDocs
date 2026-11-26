@@ -20,14 +20,14 @@ Creates the XR device controller for a player mode (fly cam, auto cam, OpenXR, S
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" Create("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | Returns the device controller for the mode; throws for an unknown mode. |
+| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" Create("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | <span className="api-desc">Returns the device controller for the mode; throws for an unknown mode.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getandroidcontroller" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" GetAndroidController()"}</code> | Throws `NotSupportedException`; there is no Quest or Pico controller in this build. |
-| <Link id="m-getsteamvrcontroller" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" GetSteamVRController()"}</code> | Returns a new `SteamVRDeviceController`. |
+| <Link id="m-getandroidcontroller" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" GetAndroidController()"}</code> | <span className="api-desc">Throws `NotSupportedException`; there is no Quest or Pico controller in this build.</span> |
+| <Link id="m-getsteamvrcontroller" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/ixrdevicesdkcontroller">{"IXrDeviceSdkController"}</Link>{" GetSteamVRController()"}</code> | <span className="api-desc">Returns a new `SteamVRDeviceController`.</span> |
 
 </details>

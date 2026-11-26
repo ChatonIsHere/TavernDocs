@@ -21,17 +21,17 @@ Protected helper that pairs a regeneration amount with a duration. Nothing in `H
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> | Creates a `HealthObject.RegenUnit` from `amount` and `duration`. |
+| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> | <span className="api-desc">Creates a `HealthObject.RegenUnit` from `amount` and `duration`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-amount" /><code>{"private float amount"}</code> | Backing field for `Amount`. |
-| <Link id="m-duration" /><code>{"private int duration"}</code> | Backing field for `Duration`. |
+| <Link id="m-amount" /><code>{"private float amount"}</code> | <span className="api-desc">Backing field for `Amount`.</span> |
+| <Link id="m-duration" /><code>{"private int duration"}</code> | <span className="api-desc">Backing field for `Duration`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Protected helper that pairs a regeneration amount with a duration. Nothing in `H
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> | Health to regenerate. |
-| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> | Duration of the regeneration. |
+| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> | <span className="api-desc">Health to regenerate.</span> |
+| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> | <span className="api-desc">Duration of the regeneration.</span> |

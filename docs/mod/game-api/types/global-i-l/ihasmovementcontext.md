@@ -21,4 +21,4 @@ Something with a movement context.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-movementcontext" /><code><Link to="/mod/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" MovementContext { get; }"}</code> | The movement context. |
+| <Link id="m-movementcontext" /><code><Link to="/mod/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" MovementContext { get; }"}</code> | <span className="api-desc">The movement context.</span> |

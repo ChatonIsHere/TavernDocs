@@ -22,10 +22,10 @@ Serializer for `NetworkPrefab`, sent as its prefab hash (0 for null).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabSerialization()"}</code> | Creates a `TypeSerializationHelper.NetworkPrefabSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkPrefabSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.NetworkPrefabSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Writes the prefab's hash, or reads a hash and fetches the prefab from `PrefabManager`. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Writes the prefab's hash, or reads a hash and fetches the prefab from `PrefabManager`.</span> |

@@ -22,29 +22,29 @@ Links a set of selection levers so that moving one to `selectionIndex` moves all
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MultiLeverPanel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MultiLeverPanel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-desiredindex" /><code>{"private int desiredIndex"}</code> | Index the other levers are reset to. |
-| <Link id="m-levers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] levers"}</code> | The linked levers. |
-| <Link id="m-selectionindex" /><code>{"private int selectionIndex"}</code> | Index that counts as switched on (1 by default). |
+| <Link id="m-desiredindex" /><code>{"private int desiredIndex"}</code> | <span className="api-desc">Index the other levers are reset to.</span> |
+| <Link id="m-levers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{"[] levers"}</code> | <span className="api-desc">The linked levers.</span> |
+| <Link id="m-selectionindex" /><code>{"private int selectionIndex"}</code> | <span className="api-desc">Index that counts as switched on (1 by default).</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleselection" /><code>{"private void HandleSelection("}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" activatedLever, int oldIndex, int currentSelection)"}</code> | When a lever reaches `selectionIndex`, sets every other lever to `desiredIndex`. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks `SelectionChanged` on every lever. |
+| <Link id="m-handleselection" /><code>{"private void HandleSelection("}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" activatedLever, int oldIndex, int currentSelection)"}</code> | <span className="api-desc">When a lever reaches `selectionIndex`, sets every other lever to `desiredIndex`.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Hooks `SelectionChanged` on every lever.</span> |
 
 </details>

@@ -21,10 +21,14 @@ Non-generic view of an `UnclearedPower2ArrayPool` so `ArrayPoolManager.LogAllPoo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buckets" /><code>{"IEnumerable<Array>[] Buckets { get; }"}</code> | The pooled arrays grouped by size bucket. Bucket `i` holds arrays of size 2 to the power `4 + i`. |
+| <Link id="m-buckets" /><code>{"IEnumerable<Array>[] Buckets { get; }"}</code> | <span className="api-desc">The pooled arrays grouped by size bucket. Bucket `i` holds arrays of size 2 to the power `4 + i`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IUnclearedPower2ArrayPool`:
 
+<div className="api-used-in">
+
 [`ArrayPoolManager.AllPools`](/mod/game-api/types/assembly-other/arraypoolmanager#m-allpools).
+
+</div>

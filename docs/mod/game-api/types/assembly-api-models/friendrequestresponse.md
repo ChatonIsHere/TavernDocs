@@ -20,10 +20,10 @@ Request body answering a friend request.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> | Creates a `FriendRequestResponse` with default values. |
+| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> | <span className="api-desc">Creates a `FriendRequestResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isaccepted" /><code>{"bool IsAccepted { get; set; }"}</code> | True to accept, false to decline. Sent as `accepted`. |
+| <Link id="m-isaccepted" /><code>{"bool IsAccepted { get; set; }"}</code> | <span className="api-desc">True to accept, false to decline. Sent as `accepted`.</span> |

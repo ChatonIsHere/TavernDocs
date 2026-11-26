@@ -48,4 +48,8 @@ Named regions of the world (town buildings, overworld areas, caves, combat trial
 
 Members of other types that take, return or hold a `ChunkRegion`:
 
+<div className="api-used-in">
+
 [`CaveLayerChunk.ChunkRegion`](/mod/game-api/types/alta-world/cavelayerchunk#m-chunkregion), [`LocationChunk.chunkRegion`](/mod/game-api/types/alta-world/locationchunk#m-chunkregion), [`LocationChunk.ChunkRegion`](/mod/game-api/types/alta-world/locationchunk#m-chunkregion-2), [`LocationChunk.SetLocationDestination`](/mod/game-api/types/alta-world/locationchunk#m-setlocationdestination), [`OculusDestinationController.currentFriendDestination`](/mod/game-api/types/alta-menus/oculusdestinationcontroller#m-currentfrienddestination), [`OculusDestinationController.SetDestination`](/mod/game-api/types/alta-menus/oculusdestinationcontroller#m-setdestination).
+
+</div>

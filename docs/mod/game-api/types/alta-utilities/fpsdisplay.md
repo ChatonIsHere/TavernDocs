@@ -21,16 +21,16 @@ Live debug readout of the current frame rate.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FpsDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FpsDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `FPS`. |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">Label `FPS`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | Current `FPSCounter.FPS`. |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">Current `FPSCounter.FPS`.</span> |

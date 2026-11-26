@@ -20,18 +20,22 @@ The sender and receiver of a gift sent by post box, saved with the `SentGift`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> | Creates a `SentGiftTag` from `from` and `to`. |
-| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> | Creates a `SentGiftTag` from `from` and `to`. |
+| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> | <span className="api-desc">Creates a `SentGiftTag` from `from` and `to`.</span> |
+| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> | <span className="api-desc">Creates a `SentGiftTag` from `from` and `to`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-from" /><code>{"int from"}</code> | Sender's user id. |
-| <Link id="m-to" /><code>{"int to"}</code> | Receiver's user id. |
+| <Link id="m-from" /><code>{"int from"}</code> | <span className="api-desc">Sender's user id.</span> |
+| <Link id="m-to" /><code>{"int to"}</code> | <span className="api-desc">Receiver's user id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SentGiftTag`:
 
+<div className="api-used-in">
+
 [`SentGift.senderTag`](/mod/game-api/types/global-s/sentgift#m-sendertag), [`SentGift.Setup`](/mod/game-api/types/global-s/sentgift#m-setup), [`SentGiftData.senderTag`](/mod/game-api/types/global-s/sentgiftdata#m-sendertag).
+
+</div>

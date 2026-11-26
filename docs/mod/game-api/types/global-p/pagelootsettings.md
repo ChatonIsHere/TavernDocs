@@ -24,10 +24,10 @@ Global settings asset for page loot (Page Loot Settings), listing loot providers
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PageLootSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PageLootSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> | IDs of loot providers excluded from page loot. Probably used where pages are added to loot tables. |
+| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> | <span className="api-desc">IDs of loot providers excluded from page loot. Probably used where pages are added to loot tables.</span> |

@@ -21,29 +21,29 @@ Plays a particle system only by day or only by night. Client only: on a headless
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DayTimeEffect()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DayTimeEffect()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactiveduringday" /><code>{"private bool isActiveDuringDay"}</code> | True to play by day, false to play at night. |
-| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> | The particles to play. |
+| <Link id="m-isactiveduringday" /><code>{"private bool isActiveDuringDay"}</code> | <span className="api-desc">True to play by day, false to play at night.</span> |
+| <Link id="m-particlesystem" /><code>{"private ParticleSystem particleSystem"}</code> | <span className="api-desc">The particles to play.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops listening for night changes. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | On headless, destroys the particles and the object; otherwise listens for `GameTimeManager.NightChanged` and updates now. |
-| <Link id="m-updateenabled" /><code>{"private void UpdateEnabled(bool isNight)"}</code> | Plays or stops emitting depending on whether it's night and `isActiveDuringDay`. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Stops listening for night changes.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">On headless, destroys the particles and the object; otherwise listens for `GameTimeManager.NightChanged` and updates now.</span> |
+| <Link id="m-updateenabled" /><code>{"private void UpdateEnabled(bool isNight)"}</code> | <span className="api-desc">Plays or stops emitting depending on whether it's night and `isActiveDuringDay`.</span> |
 
 </details>

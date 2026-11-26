@@ -22,18 +22,18 @@ Quick access menu action that records a 600-frame profiler sample and tells the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnityProfilerSessionQuickAccessAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UnityProfilerSessionQuickAccessAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdfiles" /><code>{"private int createdFiles"}</code> | Counter added to each profile name so files do not overwrite each other. |
-| <Link id="m-profileframes" /><code>{"private const int ProfileFrames"}</code> | Number of frames sampled, 600. |
-| <Link id="m-profilename" /><code>{"private const string ProfileName"}</code> | Base name for the profile files, `QAM_Profile`. |
+| <Link id="m-createdfiles" /><code>{"private int createdFiles"}</code> | <span className="api-desc">Counter added to each profile name so files do not overwrite each other.</span> |
+| <Link id="m-profileframes" /><code>{"private const int ProfileFrames"}</code> | <span className="api-desc">Number of frames sampled, 600.</span> |
+| <Link id="m-profilename" /><code>{"private const string ProfileName"}</code> | <span className="api-desc">Base name for the profile files, `QAM_Profile`.</span> |
 
 </details>
 
@@ -41,21 +41,21 @@ Quick access menu action that records a 600-frame profiler sample and tells the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always true. |
-| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | Hidden unless the user is a dev or it is a debug build. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Usable only while no profiling is already running. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always true.</span> |
+| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | <span className="api-desc">Hidden unless the user is a dev or it is a debug build.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">Usable only while no profiling is already running.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Starts a profiler sample named with a running number and shows a message to the player. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Starts a profiler sample named with a running number and shows a message to the player.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displaycompletionmessage" /><code>{"private void DisplayCompletionMessage()"}</code> | Shows `Profiler Session Completed` to the local player. |
+| <Link id="m-displaycompletionmessage" /><code>{"private void DisplayCompletionMessage()"}</code> | <span className="api-desc">Shows `Profiler Session Completed` to the local player.</span> |
 
 </details>

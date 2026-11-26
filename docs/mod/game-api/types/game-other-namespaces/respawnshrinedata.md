@@ -21,24 +21,24 @@ Asset with the settings for one respawn shrine: id, fuel type and use, spawn and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RespawnShrineData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>9 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beaconposition" /><code>{"private Vector3 beaconPosition"}</code> | Backing field for `BeaconPosition`. |
-| <Link id="m-beaconprefabdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" beaconPrefabDefinition"}</code> | Backing field for `BeaconPrefabDefinition`. |
-| <Link id="m-fuelconsumedperhour" /><code>{"private float fuelConsumedPerHour"}</code> | Backing field for `FuelConsumedPerHour`. |
-| <Link id="m-guid" /><code>{"private string guid"}</code> | Shrine id as a string, set in the inspector. |
-| <Link id="m-isglobalrespawnshrine" /><code>{"private bool isGlobalRespawnShrine"}</code> | Backing field for `IsGlobalRespawnShrine`. |
-| <Link id="m-maximumfuelcapacity" /><code>{"private int maximumFuelCapacity"}</code> | Backing field for `MaxFuelCapacity`. |
-| <Link id="m-resourcetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" resourceType"}</code> | Backing field for `ResourceType`. |
-| <Link id="m-shrineid" /><code>{"private Guid shrineId"}</code> | Cached parsed value of `guid`. |
-| <Link id="m-spawnposition" /><code>{"private Vector3 spawnPosition"}</code> | Backing field for `SpawnPosition`. |
+| <Link id="m-beaconposition" /><code>{"private Vector3 beaconPosition"}</code> | <span className="api-desc">Backing field for `BeaconPosition`.</span> |
+| <Link id="m-beaconprefabdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" beaconPrefabDefinition"}</code> | <span className="api-desc">Backing field for `BeaconPrefabDefinition`.</span> |
+| <Link id="m-fuelconsumedperhour" /><code>{"private float fuelConsumedPerHour"}</code> | <span className="api-desc">Backing field for `FuelConsumedPerHour`.</span> |
+| <Link id="m-guid" /><code>{"private string guid"}</code> | <span className="api-desc">Shrine id as a string, set in the inspector.</span> |
+| <Link id="m-isglobalrespawnshrine" /><code>{"private bool isGlobalRespawnShrine"}</code> | <span className="api-desc">Backing field for `IsGlobalRespawnShrine`.</span> |
+| <Link id="m-maximumfuelcapacity" /><code>{"private int maximumFuelCapacity"}</code> | <span className="api-desc">Backing field for `MaxFuelCapacity`.</span> |
+| <Link id="m-resourcetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" resourceType"}</code> | <span className="api-desc">Backing field for `ResourceType`.</span> |
+| <Link id="m-shrineid" /><code>{"private Guid shrineId"}</code> | <span className="api-desc">Cached parsed value of `guid`.</span> |
+| <Link id="m-spawnposition" /><code>{"private Vector3 spawnPosition"}</code> | <span className="api-desc">Backing field for `SpawnPosition`.</span> |
 
 </details>
 
@@ -46,23 +46,27 @@ Asset with the settings for one respawn shrine: id, fuel type and use, spawn and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beaconposition-2" /><code>{"Vector3 BeaconPosition { get; }"}</code> | World position where the shrine's beacon view is shown. |
-| <Link id="m-beaconprefabdefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> | Pooled prefab for the beacon view. Not spawned for the global shrine. |
-| <Link id="m-fuelconsumedperhour-2" /><code>{"float FuelConsumedPerHour { get; }"}</code> | Fuel the shrine burns per hour while powered. |
-| <Link id="m-isglobalrespawnshrine-2" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> | True for the default shrine everyone respawns at when no powered shrine is active. |
-| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> | Most fuel the shrine holds. Zero or less means it never runs out. |
-| <Link id="m-resourcetype-2" /><code><Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> | Dock settings for the fuel item the shrine takes. |
-| <Link id="m-shrineid-2" /><code>{"Guid ShrineId { get; }"}</code> | The shrine's id, parsed from `guid` on first use and cached. |
-| <Link id="m-spawnposition-2" /><code>{"Vector3 SpawnPosition { get; }"}</code> | World position players respawn at for this shrine. |
+| <Link id="m-beaconposition-2" /><code>{"Vector3 BeaconPosition { get; }"}</code> | <span className="api-desc">World position where the shrine's beacon view is shown.</span> |
+| <Link id="m-beaconprefabdefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BeaconPrefabDefinition { get; }"}</code> | <span className="api-desc">Pooled prefab for the beacon view. Not spawned for the global shrine.</span> |
+| <Link id="m-fuelconsumedperhour-2" /><code>{"float FuelConsumedPerHour { get; }"}</code> | <span className="api-desc">Fuel the shrine burns per hour while powered.</span> |
+| <Link id="m-isglobalrespawnshrine-2" /><code>{"bool IsGlobalRespawnShrine { get; }"}</code> | <span className="api-desc">True for the default shrine everyone respawns at when no powered shrine is active.</span> |
+| <Link id="m-maxfuelcapacity" /><code>{"int MaxFuelCapacity { get; }"}</code> | <span className="api-desc">Most fuel the shrine holds. Zero or less means it never runs out.</span> |
+| <Link id="m-resourcetype-2" /><code><Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" ResourceType { get; }"}</code> | <span className="api-desc">Dock settings for the fuel item the shrine takes.</span> |
+| <Link id="m-shrineid-2" /><code>{"Guid ShrineId { get; }"}</code> | <span className="api-desc">The shrine's id, parsed from `guid` on first use and cached.</span> |
+| <Link id="m-spawnposition-2" /><code>{"Vector3 SpawnPosition { get; }"}</code> | <span className="api-desc">World position players respawn at for this shrine.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> | Prefab hash of the first item the fuel dock accepts, used when spawning fuel into the dock. |
+| <Link id="m-getresourcetypehash" /><code>{"uint GetResourceTypeHash()"}</code> | <span className="api-desc">Prefab hash of the first item the fuel dock accepts, used when spawning fuel into the dock.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RespawnShrineData`:
 
+<div className="api-used-in">
+
 [`GlobalRespawnShrine.shrineSettings`](/mod/game-api/types/game-other-namespaces/globalrespawnshrine#m-shrinesettings), [`RespawnSystemSettings.respawnShrineSettings`](/mod/game-api/types/game-other-namespaces/respawnsystemsettings#m-respawnshrinesettings).
+
+</div>

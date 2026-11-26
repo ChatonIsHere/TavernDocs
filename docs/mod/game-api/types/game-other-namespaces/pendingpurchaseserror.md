@@ -21,4 +21,4 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PendingPurchasesError(string message)"}</code> | Creates a `PendingPurchasesError` from `message`. |
+| <Link id="m-ctor" /><code>{"PendingPurchasesError(string message)"}</code> | <span className="api-desc">Creates a `PendingPurchasesError` from `message`.</span> |

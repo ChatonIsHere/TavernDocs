@@ -22,4 +22,4 @@ Editor menu entry that creates an `InsetModifier` asset under Generation.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `InsetModifier.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `InsetModifier.Create` with default values.</span> |

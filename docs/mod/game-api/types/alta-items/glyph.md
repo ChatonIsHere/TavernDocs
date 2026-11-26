@@ -25,24 +25,24 @@ A hashed sprite asset that can be stamped onto a page (book or paper). Stored un
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Glyph()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Glyph()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positioninterval" /><code>{"const float PositionInterval"}</code> | Step a glyph's position is rounded to and synced at (0.01 of page width). |
-| <Link id="m-rotationinterval" /><code>{"const float RotationInterval"}</code> | Step a glyph's rotation is rounded to, in degrees (10). |
-| <Link id="m-scaleinterval" /><code>{"const float ScaleInterval"}</code> | Step a glyph's scale is rounded to (0.1). |
-| <Link id="m-scalemaximum" /><code>{"const float ScaleMaximum"}</code> | Largest allowed glyph scale (4.5). |
-| <Link id="m-scaleminimum" /><code>{"const float ScaleMinimum"}</code> | Smallest allowed glyph scale (0.25). |
+| <Link id="m-positioninterval" /><code>{"const float PositionInterval"}</code> | <span className="api-desc">Step a glyph's position is rounded to and synced at (0.01 of page width).</span> |
+| <Link id="m-rotationinterval" /><code>{"const float RotationInterval"}</code> | <span className="api-desc">Step a glyph's rotation is rounded to, in degrees (10).</span> |
+| <Link id="m-scaleinterval" /><code>{"const float ScaleInterval"}</code> | <span className="api-desc">Step a glyph's scale is rounded to (0.1).</span> |
+| <Link id="m-scalemaximum" /><code>{"const float ScaleMaximum"}</code> | <span className="api-desc">Largest allowed glyph scale (4.5).</span> |
+| <Link id="m-scaleminimum" /><code>{"const float ScaleMinimum"}</code> | <span className="api-desc">Smallest allowed glyph scale (0.25).</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | Backing field for `Sprite`, the image drawn for this glyph on a page. |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | <span className="api-desc">Backing field for `Sprite`, the image drawn for this glyph on a page.</span> |
 
 </details>
 
@@ -50,10 +50,14 @@ A hashed sprite asset that can be stamped onto a page (book or paper). Stored un
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | The sprite drawn for this glyph. |
+| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | <span className="api-desc">The sprite drawn for this glyph.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Glyph`:
 
+<div className="api-used-in">
+
 [`EffectDefinition.effectGlyph`](/mod/game-api/types/alta-stats-effects/effectdefinition#m-effectglyph), [`ChiselDefinition.recipeGlyph`](/mod/game-api/types/alta-crafting/chiseldefinition#m-recipeglyph), [`StewIngredientBase.glyph`](/mod/game-api/types/alta-crafting/stewingredientbase#m-glyph), [`Item.glyph`](/mod/game-api/types/alta-items/item#m-glyph), [`Item.Glyph`](/mod/game-api/types/alta-items/item#m-glyph-2), [`FlairSettings.glyph`](/mod/game-api/types/alta-items/flairsettings#m-glyph), [`FlairSettings.Glyph`](/mod/game-api/types/alta-items/flairsettings#m-glyph-2), [`Glyph.Positioning.glyph`](/mod/game-api/types/alta-items/glyph-positioning#m-glyph), [`Glyph.Positioning.Glyph`](/mod/game-api/types/alta-items/glyph-positioning#m-glyph-2), [`Glyph.Positioning.Positioning`](/mod/game-api/types/alta-items/glyph-positioning#m-ctor-2), [`EdiblePageSettings.burntGlyph`](/mod/game-api/types/global-e-h/ediblepagesettings#m-burntglyph), [`EdiblePageSettings.cookedGlyph`](/mod/game-api/types/global-e-h/ediblepagesettings#m-cookedglyph), [`EdiblePageSettings.ripeGlyph`](/mod/game-api/types/global-e-h/ediblepagesettings#m-ripeglyph), [`EdiblePageSettings.unripeGlyph`](/mod/game-api/types/global-e-h/ediblepagesettings#m-unripeglyph), [`GeneratedPageProvider<T>.GenerateEffectAndBorder`](/mod/game-api/types/global-e-h/generatedpageprovider-t#m-generateeffectandborder), [`GeneratedPageSettings.circleSegment1`](/mod/game-api/types/global-e-h/generatedpagesettings#m-circlesegment1), [`GeneratedPageSettings.circleSegment10`](/mod/game-api/types/global-e-h/generatedpagesettings#m-circlesegment10), [`GeneratedPageSettings.effectModifierBorderGlyph`](/mod/game-api/types/global-e-h/generatedpagesettings#m-effectmodifierborderglyph), [`GeneratedPageSettings.extraEffectBorderGlyph`](/mod/game-api/types/global-e-h/generatedpagesettings#m-extraeffectborderglyph), [`GeneratedPageSettings.squareItemBorderGlyph`](/mod/game-api/types/global-e-h/generatedpagesettings#m-squareitemborderglyph), [`GlyphPosition.Create`](/mod/game-api/types/global-e-h/glyphposition#m-create), [`IngredientPageSettings.burntGlyph`](/mod/game-api/types/global-i-l/ingredientpagesettings#m-burntglyph), [`IngredientPageSettings.cookedGlyph`](/mod/game-api/types/global-i-l/ingredientpagesettings#m-cookedglyph), [`IngredientPageSettings.ripeGlyph`](/mod/game-api/types/global-i-l/ingredientpagesettings#m-ripeglyph), [`IngredientPageSettings.unripeGlyph`](/mod/game-api/types/global-i-l/ingredientpagesettings#m-unripeglyph).
+
+</div>

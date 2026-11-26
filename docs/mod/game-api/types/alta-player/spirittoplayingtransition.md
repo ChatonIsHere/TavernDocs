@@ -21,21 +21,21 @@ Moves a player from Spirit back to Playing once their unlock manager has no curr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritToPlayingTransition()"}</code> | Creates a `SpiritToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"SpiritToPlayingTransition()"}</code> | <span className="api-desc">Creates a `SpiritToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Listens for unlock manager changes. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Meant to stop listening, but it subscribes `Check` again instead of removing it. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Listens for unlock manager changes.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Meant to stop listening, but it subscribes `Check` again instead of removing it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"private void Check()"}</code> | Switches to Playing when there is no current unlock. |
+| <Link id="m-check" /><code>{"private void Check()"}</code> | <span className="api-desc">Switches to Playing when there is no current unlock.</span> |
 
 </details>
 
@@ -43,4 +43,8 @@ Moves a player from Spirit back to Playing once their unlock manager has no curr
 
 Members of other types that take, return or hold a `SpiritToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.spiritToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-spirittoplaying), [`AllTransitions.SpiritToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-spirittoplayingtransition).
+
+</div>

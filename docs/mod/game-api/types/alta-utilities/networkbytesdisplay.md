@@ -21,17 +21,17 @@ Placeholder debug readout for network bytes per second. `IsValid` always returns
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkBytesDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"NetworkBytesDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bytesperinterval" /><code>{"private float bytesPerInterval"}</code> | Count per interval. Never set in this build. |
-| <Link id="m-lastbytes" /><code>{"private int lastBytes"}</code> | Previous total count. Never set in this build. |
+| <Link id="m-bytesperinterval" /><code>{"private float bytesPerInterval"}</code> | <span className="api-desc">Count per interval. Never set in this build.</span> |
+| <Link id="m-lastbytes" /><code>{"private int lastBytes"}</code> | <span className="api-desc">Previous total count. Never set in this build.</span> |
 
 </details>
 
@@ -39,12 +39,12 @@ Placeholder debug readout for network bytes per second. `IsValid` always returns
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `Bytes (p/s)`. |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">Label `Bytes (p/s)`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/mod/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> | Empty in this build. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Always false. |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | The stored per-interval count as text. |
+| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/mod/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">The stored per-interval count as text.</span> |

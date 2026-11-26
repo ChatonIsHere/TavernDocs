@@ -22,18 +22,18 @@ Developer quick access action that runs the console command `debug set {localpla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerDebugSetSpawnMenuAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TriggerDebugSetSpawnMenuAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | Hidden for non-developers. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | True for developers only. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | <span className="api-desc">Hidden for non-developers.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">True for developers only.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Routes `debug set {localplayer}` through `CommandSync`. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Routes `debug set {localplayer}` through `CommandSync`.</span> |

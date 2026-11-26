@@ -21,4 +21,4 @@ Serializable Alta event carrying a `Chiselable`, a float and two `Vector3` value
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselableEvent()"}</code> | Creates a `ChiselableEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ChiselableEvent()"}</code> | <span className="api-desc">Creates a `ChiselableEvent` with default values.</span> |

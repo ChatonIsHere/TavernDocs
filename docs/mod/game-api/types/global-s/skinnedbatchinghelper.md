@@ -20,4 +20,4 @@ Helper for skinned mesh batching that matches bones between two skeletons by nam
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getbonemapping" /><code>{"static Dictionary<int, int> GetBoneMapping(Transform[] originalBones, Transform[] targetBones)"}</code> | Maps each original bone index to the index of the same-named bone in the target array (-1 if missing), logging moved ones. |
+| <Link id="m-getbonemapping" /><code>{"static Dictionary<int, int> GetBoneMapping(Transform[] originalBones, Transform[] targetBones)"}</code> | <span className="api-desc">Maps each original bone index to the index of the same-named bone in the target array (-1 if missing), logging moved ones.</span> |

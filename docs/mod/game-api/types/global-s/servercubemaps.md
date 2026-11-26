@@ -23,18 +23,18 @@ Asset listing cubemaps per scene for the main menu server preview. `CubeMapUpdat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerCubeMaps()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ServerCubeMaps()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenthandle" /><code>{"private AsyncOperationHandle<Cubemap> currentHandle"}</code> | Handle for the most recently requested cubemap load. |
-| <Link id="m-currentloaded" /><code>{"private int currentLoaded"}</code> | Index of the most recently requested cubemap. Older loads that finish late are released. |
-| <Link id="m-scenebasedcubemaps" /><code>{"private "}<Link to="/mod/game-api/types/global-s/scenecubemaps">{"SceneCubeMaps"}</Link>{"[] sceneBasedcubemaps"}</code> | Cubemap lists, one per scene index. |
+| <Link id="m-currenthandle" /><code>{"private AsyncOperationHandle<Cubemap> currentHandle"}</code> | <span className="api-desc">Handle for the most recently requested cubemap load.</span> |
+| <Link id="m-currentloaded" /><code>{"private int currentLoaded"}</code> | <span className="api-desc">Index of the most recently requested cubemap. Older loads that finish late are released.</span> |
+| <Link id="m-scenebasedcubemaps" /><code>{"private "}<Link to="/mod/game-api/types/global-s/scenecubemaps">{"SceneCubeMaps"}</Link>{"[] sceneBasedcubemaps"}</code> | <span className="api-desc">Cubemap lists, one per scene index.</span> |
 
 </details>
 
@@ -42,12 +42,16 @@ Asset listing cubemaps per scene for the main menu server preview. `CubeMapUpdat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applycubemap" /><code>{"async void ApplyCubeMap(int sceneIndex, int mapIndex, Action<Cubemap> useMap)"}</code> | Loads a scene's cubemap by index and passes it to the callback, releasing the previous one. Out of range scene uses scene 0. |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> | Releases every loaded cubemap asset. |
-| <Link id="m-cubemapslength" /><code>{"int CubemapsLength(int sceneIndex)"}</code> | Number of cubemaps for a scene (scene 0 if out of range). |
+| <Link id="m-applycubemap" /><code>{"async void ApplyCubeMap(int sceneIndex, int mapIndex, Action<Cubemap> useMap)"}</code> | <span className="api-desc">Loads a scene's cubemap by index and passes it to the callback, releasing the previous one. Out of range scene uses scene 0.</span> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | <span className="api-desc">Releases every loaded cubemap asset.</span> |
+| <Link id="m-cubemapslength" /><code>{"int CubemapsLength(int sceneIndex)"}</code> | <span className="api-desc">Number of cubemaps for a scene (scene 0 if out of range).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ServerCubeMaps`:
 
+<div className="api-used-in">
+
 [`CubeMapUpdater.cubeMaps`](/mod/game-api/types/global-c-d/cubemapupdater#m-cubemaps).
+
+</div>

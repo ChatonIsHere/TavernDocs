@@ -22,10 +22,14 @@ Base for a spawn modifier that works on `PointNormal` ground points, as used by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifierPointNormal()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SpawnModifierPointNormal()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpawnModifierPointNormal`:
 
+<div className="api-used-in">
+
 [`SpawnModifiers.pointNormalModifiers`](/mod/game-api/types/alta-world-generation/spawnmodifiers#m-pointnormalmodifiers).
+
+</div>

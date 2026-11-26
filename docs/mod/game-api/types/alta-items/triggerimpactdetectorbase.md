@@ -22,18 +22,18 @@ Base for a trigger that reacts when an `ImpactTool` passes through it with enoug
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TriggerImpactDetectorBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected TriggerImpactDetectorBase()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] channels"}</code> | Impact channels checked. |
-| <Link id="m-impacttype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType"}</code> | Impact type used for the trigger hit. |
-| <Link id="m-minefficiencytoeffect" /><code>{"private float minEfficiencyToEffect"}</code> | Lowest efficiency that runs `HitEffect`. |
+| <Link id="m-channels" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] channels"}</code> | <span className="api-desc">Impact channels checked.</span> |
+| <Link id="m-impacttype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType"}</code> | <span className="api-desc">Impact type used for the trigger hit.</span> |
+| <Link id="m-minefficiencytoeffect" /><code>{"private float minEfficiencyToEffect"}</code> | <span className="api-desc">Lowest efficiency that runs `HitEffect`.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Base for a trigger that reacts when an `ImpactTool` passes through it with enoug
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hiteffect" /><code>{"protected abstract void HitEffect("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contact)"}</code> | Subclasses do their effect for the contact. |
+| <Link id="m-hiteffect" /><code>{"protected abstract void HitEffect("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contact)"}</code> | <span className="api-desc">Subclasses do their effect for the contact.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | For a collider on layer 0 with an `ImpactTool` rigidbody, works out a trigger hit and calls `HitEffect` if effective enough. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">For a collider on layer 0 with an `ImpactTool` rigidbody, works out a trigger hit and calls `HitEffect` if effective enough.</span> |
 
 </details>

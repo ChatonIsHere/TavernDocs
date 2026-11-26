@@ -22,18 +22,18 @@ Base for a typed value stored in `PlayerPreferences` (the local `player.prefs` f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> | Creates a `PlayerPreferenceValue` from `key`, `setter` and `getter`. |
+| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> | <span className="api-desc">Creates a `PlayerPreferenceValue` from `key`, `setter` and `getter`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getter" /><code>{"private readonly Func<string, T, T> getter"}</code> | Function that reads a value by key with a default. |
-| <Link id="m-key" /><code>{"private readonly string key"}</code> | Preference key the value is stored under. |
-| <Link id="m-setter" /><code>{"private readonly Action<string, T> setter"}</code> | Function that writes a value by key. |
+| <Link id="m-getter" /><code>{"private readonly Func<string, T, T> getter"}</code> | <span className="api-desc">Function that reads a value by key with a default.</span> |
+| <Link id="m-key" /><code>{"private readonly string key"}</code> | <span className="api-desc">Preference key the value is stored under.</span> |
+| <Link id="m-setter" /><code>{"private readonly Action<string, T> setter"}</code> | <span className="api-desc">Function that writes a value by key.</span> |
 
 </details>
 
@@ -41,10 +41,10 @@ Base for a typed value stored in `PlayerPreferences` (the local `player.prefs` f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> | Reads the stored value (default if missing) or writes a new one. |
+| <Link id="m-value" /><code>{"T Value { get; set; }"}</code> | <span className="api-desc">Reads the stored value (default if missing) or writes a new one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static T op_Implicit("}<Link to="/mod/game-api/types/assembly-other/playerpreferencevalue-t">{"PlayerPreferenceValue"}</Link>{"<T> value)"}</code> | Lets the preference be used directly as its value. |
+| <Link id="m-op-implicit" /><code>{"static T op_Implicit("}<Link to="/mod/game-api/types/assembly-other/playerpreferencevalue-t">{"PlayerPreferenceValue"}</Link>{"<T> value)"}</code> | <span className="api-desc">Lets the preference be used directly as its value.</span> |

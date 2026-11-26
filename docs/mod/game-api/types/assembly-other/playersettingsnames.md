@@ -20,11 +20,11 @@ Preference key names for the login screen.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> | Creates a `PlayerSettingsNames` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> | <span className="api-desc">Creates a `PlayerSettingsNames` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> | Key for whether to remember login details (`rememberLogin`). |
-| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> | Key for the saved username (`savedUsername`). |
+| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> | <span className="api-desc">Key for whether to remember login details (`rememberLogin`).</span> |
+| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> | <span className="api-desc">Key for the saved username (`savedUsername`).</span> |

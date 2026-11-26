@@ -21,17 +21,17 @@ A cache that runs an evaluate function once per input and keeps only the inputs 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code><Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> | Creates a `MemoizeHashset` from `evaluate` and `comparer`. |
+| <Link id="m-ctor" /><code><Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> | <span className="api-desc">Creates a `MemoizeHashset` from `evaluate` and `comparer`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate"}</code> | The function that decides if an input is kept and works out its result. |
-| <Link id="m-lookup" /><code>{"private Dictionary<TIn, TOut> lookup"}</code> | The stored inputs and their results, using the comparer passed to the constructor. |
+| <Link id="m-evaluate" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate"}</code> | <span className="api-desc">The function that decides if an input is kept and works out its result.</span> |
+| <Link id="m-lookup" /><code>{"private Dictionary<TIn, TOut> lookup"}</code> | <span className="api-desc">The stored inputs and their results, using the comparer passed to the constructor.</span> |
 
 </details>
 
@@ -39,13 +39,17 @@ A cache that runs an evaluate function once per input and keeps only the inputs 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"bool Add(TIn input, out TOut result)"}</code> | Runs the evaluate function for a new input and stores the result if it returns true. Returns false for inputs already stored or rejected. |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties the cache. |
-| <Link id="m-get" /><code>{"bool Get(TIn input, out TOut result)"}</code> | Looks up a stored result without running the evaluate function. |
-| <Link id="m-remove" /><code>{"bool Remove(TIn input, out TOut result)"}</code> | Takes an input out of the cache and returns its stored result. |
+| <Link id="m-add" /><code>{"bool Add(TIn input, out TOut result)"}</code> | <span className="api-desc">Runs the evaluate function for a new input and stores the result if it returns true. Returns false for inputs already stored or rejected.</span> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Empties the cache.</span> |
+| <Link id="m-get" /><code>{"bool Get(TIn input, out TOut result)"}</code> | <span className="api-desc">Looks up a stored result without running the evaluate function.</span> |
+| <Link id="m-remove" /><code>{"bool Remove(TIn input, out TOut result)"}</code> | <span className="api-desc">Takes an input out of the cache and returns its stored result.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MemoizeHashset&lt;TIn, TOut>`:
 
+<div className="api-used-in">
+
 [`MemoizeHashsetCountTracker<TIn, TOut>.hashset`](/mod/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout#m-hashset).
+
+</div>

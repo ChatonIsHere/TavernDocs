@@ -21,17 +21,21 @@ A colour shader property, looked up by name once, that can be set on a material 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColorMaterialProperty(string propertyName)"}</code> | Creates a `ColorMaterialProperty` from `propertyName`. |
+| <Link id="m-ctor" /><code>{"ColorMaterialProperty(string propertyName)"}</code> | <span className="api-desc">Creates a `ColorMaterialProperty` from `propertyName`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Color value, Material material)"}</code> | Sets the colour on a material. |
-| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Color value, MaterialPropertyBlock propertyBlock)"}</code> | Sets the colour on a material property block. |
+| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Color value, Material material)"}</code> | <span className="api-desc">Sets the colour on a material.</span> |
+| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Color value, MaterialPropertyBlock propertyBlock)"}</code> | <span className="api-desc">Sets the colour on a material property block.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ColorMaterialProperty`:
 
+<div className="api-used-in">
+
 [`BoilingParticlesMaterialCreator.liquidColor`](/mod/game-api/types/alta-stats-effects/boilingparticlesmaterialcreator#m-liquidcolor), [`BoilingParticlesMaterialCreator.LiquidColor`](/mod/game-api/types/alta-stats-effects/boilingparticlesmaterialcreator#m-liquidcolor-2), [`BottleLiquidMaterialCreator.liquidColor`](/mod/game-api/types/alta-stats-effects/bottleliquidmaterialcreator#m-liquidcolor), [`BottleLiquidMaterialCreator.LiquidColor`](/mod/game-api/types/alta-stats-effects/bottleliquidmaterialcreator#m-liquidcolor-2), [`LiquidFoamMaterialCreator.rimColor`](/mod/game-api/types/alta-stats-effects/liquidfoammaterialcreator#m-rimcolor), [`LiquidPouringMaterialCreator.BaseColor`](/mod/game-api/types/alta-stats-effects/liquidpouringmaterialcreator#m-basecolor), [`LiquidPouringMaterialCreator.liquidColor`](/mod/game-api/types/alta-stats-effects/liquidpouringmaterialcreator#m-liquidcolor), [`LiquidPouringMaterialCreator.LiquidColor`](/mod/game-api/types/alta-stats-effects/liquidpouringmaterialcreator#m-liquidcolor-2), [`LiquidSurfaceMaterialCreator.fresnelColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-fresnelcolor), [`LiquidSurfaceMaterialCreator.liquidColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-liquidcolor), [`LiquidSurfaceMaterialCreator.LiquidColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-liquidcolor-2), [`LiquidSurfaceMaterialCreator.liquidDepthColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-liquiddepthcolor), [`LiquidSurfaceMaterialCreator.lodColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-lodcolor), [`LiquidSurfaceMaterialCreator.LODColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-lodcolor-2), [`LiquidSurfaceMaterialCreator.rimColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-rimcolor), [`LiquidSurfaceMaterialCreator.surfaceHighlightColor`](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator#m-surfacehighlightcolor).
+
+</div>

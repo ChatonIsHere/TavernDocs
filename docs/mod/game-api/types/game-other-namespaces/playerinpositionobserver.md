@@ -21,35 +21,35 @@ Placed in a step's dynamic content. Server: polls the domain's player and broadc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInPositionObserver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerInPositionObserver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancethreshold" /><code>{"private float distanceThreshold"}</code> | Distance in metres that counts as in position. Defaults to 3. |
-| <Link id="m-domain" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain"}</code> | The tutorial domain this observer is in. |
-| <Link id="m-issearching" /><code>{"private bool isSearching"}</code> | Whether the polling loop is running. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Class logger. |
-| <Link id="m-searchintervalseconds" /><code>{"private int searchIntervalSeconds"}</code> | Seconds between checks. Defaults to 1. |
-| <Link id="m-targetplayer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer"}</code> | The domain's player being watched. |
+| <Link id="m-distancethreshold" /><code>{"private float distanceThreshold"}</code> | <span className="api-desc">Distance in metres that counts as in position. Defaults to 3.</span> |
+| <Link id="m-domain" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/domain">{"Domain"}</Link>{" domain"}</code> | <span className="api-desc">The tutorial domain this observer is in.</span> |
+| <Link id="m-issearching" /><code>{"private bool isSearching"}</code> | <span className="api-desc">Whether the polling loop is running.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-searchintervalseconds" /><code>{"private int searchIntervalSeconds"}</code> | <span className="api-desc">Seconds between checks. Defaults to 1.</span> |
+| <Link id="m-targetplayer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" targetPlayer"}</code> | <span className="api-desc">The domain's player being watched.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Server: stops the polling loop. |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws the trigger radius in the editor. |
-| <Link id="m-searchforplayerinrange" /><code>{"private async void SearchForPlayerInRange()"}</code> | Every `searchIntervalSeconds`, checks the player's feet distance and broadcasts the event once in range, then stops. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Server: finds the parent `Domain`, takes its player and starts searching. Logs an error outside a domain. |
-| <Link id="m-stopsearching" /><code>{"private void StopSearching()"}</code> | Ends the polling loop. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Server: stops the polling loop.</span> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Draws the trigger radius in the editor.</span> |
+| <Link id="m-searchforplayerinrange" /><code>{"private async void SearchForPlayerInRange()"}</code> | <span className="api-desc">Every `searchIntervalSeconds`, checks the player's feet distance and broadcasts the event once in range, then stops.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Server: finds the parent `Domain`, takes its player and starts searching. Logs an error outside a domain.</span> |
+| <Link id="m-stopsearching" /><code>{"private void StopSearching()"}</code> | <span className="api-desc">Ends the polling loop.</span> |
 
 </details>

@@ -21,16 +21,16 @@ Client: a menu command that runs a quick access menu action, as if picked from t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QamOptionAsButtonCommand()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"QamOptionAsButtonCommand()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> | The quick access menu action to run. |
+| <Link id="m-action" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> | <span className="api-desc">The quick access menu action to run.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ Client: a menu command that runs a quick access menu action, as if picked from t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> | Runs `action` with the higher hand's controller. |
+| <Link id="m-runcommandonclient" /><code>{"override void RunCommandOnClient()"}</code> | <span className="api-desc">Runs `action` with the higher hand's controller.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcontrollerhack" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" GetControllerHack()"}</code> | Returns whichever of the local player's hand controllers is held higher. |
+| <Link id="m-getcontrollerhack" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" GetControllerHack()"}</code> | <span className="api-desc">Returns whichever of the local player's hand controllers is held higher.</span> |
 
 </details>

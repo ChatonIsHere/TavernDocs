@@ -22,22 +22,22 @@ A training dummy that shows the damage it takes as popups and a text list of rec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlayerHealth()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FakePlayerHealth()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-damage" /><code>{"private float damage"}</code> | Last damage value, sent with the popup. |
-| <Link id="m-lastdamages" /><code>{"private Queue<float> lastDamages"}</code> | Recent damage values shown in the text. |
-| <Link id="m-mindamagevalue" /><code>{"private float minDamageValue"}</code> | Damage at or below this isn't added to the text list. |
-| <Link id="m-point" /><code>{"private Vector3 point"}</code> | Last hit point, sent with the popup. |
-| <Link id="m-showlastxdamages" /><code>{"private int showLastXDamages"}</code> | How many recent hits to list (0 to 10). |
-| <Link id="m-syncpopup" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPopup"}</code> | Method sync that sends popups to clients. |
-| <Link id="m-textcanvas" /><code>{"private Text textCanvas"}</code> | UI text that lists recent damage. |
+| <Link id="m-damage" /><code>{"private float damage"}</code> | <span className="api-desc">Last damage value, sent with the popup.</span> |
+| <Link id="m-lastdamages" /><code>{"private Queue<float> lastDamages"}</code> | <span className="api-desc">Recent damage values shown in the text.</span> |
+| <Link id="m-mindamagevalue" /><code>{"private float minDamageValue"}</code> | <span className="api-desc">Damage at or below this isn't added to the text list.</span> |
+| <Link id="m-point" /><code>{"private Vector3 point"}</code> | <span className="api-desc">Last hit point, sent with the popup.</span> |
+| <Link id="m-showlastxdamages" /><code>{"private int showLastXDamages"}</code> | <span className="api-desc">How many recent hits to list (0 to 10).</span> |
+| <Link id="m-syncpopup" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPopup"}</code> | <span className="api-desc">Method sync that sends popups to clients.</span> |
+| <Link id="m-textcanvas" /><code>{"private Text textCanvas"}</code> | <span className="api-desc">UI text that lists recent damage.</span> |
 
 </details>
 
@@ -45,17 +45,17 @@ A training dummy that shows the damage it takes as popups and a text list of rec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the method sync used to send damage popups. |
-| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float healthDamage, float crippleDamage, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" damage = null)"}</code> | Server: for impact hits, applies the server's PvP rules to player tool hits, records the damage and sends a popup to clients. Doesn't lower any health. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Creates the method sync used to send damage popups.</span> |
+| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float healthDamage, float crippleDamage, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" damage = null)"}</code> | <span className="api-desc">Server: for impact hits, applies the server's PvP rules to player tool hits, records the damage and sends a popup to clients. Doesn't lower any health.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: shows the text only if `showLastXDamages` is above 0. |
-| <Link id="m-showpopup" /><code>{"private void ShowPopup(Vector3 position, float damage)"}</code> | Spawns a red damage popup at a position. |
-| <Link id="m-syncpopup-2" /><code>{"private void SyncPopup("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the hit point and damage. Client: shows the popup when received. |
-| <Link id="m-updatelastdamagetext" /><code>{"private void UpdateLastDamageText()"}</code> | Trims the recent damage list to `showLastXDamages` and writes it to the text. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: shows the text only if `showLastXDamages` is above 0.</span> |
+| <Link id="m-showpopup" /><code>{"private void ShowPopup(Vector3 position, float damage)"}</code> | <span className="api-desc">Spawns a red damage popup at a position.</span> |
+| <Link id="m-syncpopup-2" /><code>{"private void SyncPopup("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Sends the hit point and damage. Client: shows the popup when received.</span> |
+| <Link id="m-updatelastdamagetext" /><code>{"private void UpdateLastDamageText()"}</code> | <span className="api-desc">Trims the recent damage list to `showLastXDamages` and writes it to the text.</span> |
 
 </details>

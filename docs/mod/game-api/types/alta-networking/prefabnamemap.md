@@ -23,19 +23,19 @@ Global settings asset that maps prefab hashes to their asset paths. Get it with 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabNameMap()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PrefabNameMap()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> | Prefab hashes, matched by index with `paths`. |
-| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> | Backing field for `Map`. |
-| <Link id="m-paths" /><code>{"private string[] paths"}</code> | Prefab asset paths, matched by index with `hashes`. |
-| <Link id="m-setup" /><code>{"private bool setup"}</code> | Editor button that refreshes the map for a build. |
+| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> | <span className="api-desc">Prefab hashes, matched by index with `paths`.</span> |
+| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> | <span className="api-desc">Backing field for `Map`.</span> |
+| <Link id="m-paths" /><code>{"private string[] paths"}</code> | <span className="api-desc">Prefab asset paths, matched by index with `hashes`.</span> |
+| <Link id="m-setup" /><code>{"private bool setup"}</code> | <span className="api-desc">Editor button that refreshes the map for a build.</span> |
 
 </details>
 
@@ -43,16 +43,16 @@ Global settings asset that maps prefab hashes to their asset paths. Get it with 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> | Prefab hash to asset path, built when the asset loads. |
+| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> | <span className="api-desc">Prefab hash to asset path, built when the asset loads.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | Builds `Map` from the `hashes` and `paths` arrays. |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | Does nothing. |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | <span className="api-desc">Builds `Map` from the `hashes` and `paths` arrays.</span> |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | <span className="api-desc">Does nothing.</span> |
 
 </details>

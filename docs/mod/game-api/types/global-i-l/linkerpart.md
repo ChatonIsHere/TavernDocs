@@ -22,17 +22,17 @@ Generation part (`Generatable/GPart Linker`) that wires logic between spawned ob
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LinkerPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LinkerPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-from" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] from"}</code> | Spawner parts whose last spawned objects are the logic senders. |
-| <Link id="m-to" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] to"}</code> | Spawner parts whose last spawned objects are the logic receivers. |
+| <Link id="m-from" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] from"}</code> | <span className="api-desc">Spawner parts whose last spawned objects are the logic senders.</span> |
+| <Link id="m-to" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] to"}</code> | <span className="api-desc">Spawner parts whose last spawned objects are the logic receivers.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Generation part (`Generatable/GPart Linker`) that wires logic between spawned ob
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | For each `from` spawner's last spawned object, links its `LogicValueSender` to every `to` spawner's `ILogicValueLinkReceiver`, logging errors when either is missing. |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | <span className="api-desc">For each `from` spawner's last spawned object, links its `LogicValueSender` to every `to` spawner's `ILogicValueLinkReceiver`, logging errors when either is missing.</span> |

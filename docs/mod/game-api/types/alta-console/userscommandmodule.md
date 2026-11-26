@@ -19,22 +19,22 @@ Console module `users`: user statistics from the Alta API. Needs login and `serv
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loginasync" /><code>{"private static async Task LoginAsync("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | `users statistics`: logs a user's play time in hours and sign-up date. Named `LoginAsync` but has nothing to do with login. |
+| <Link id="m-loginasync" /><code>{"private static async Task LoginAsync("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | <span className="api-desc">`users statistics`: logs a user's play time in hours and sign-up date. Named `LoginAsync` but has nothing to do with login.</span> |
 
 </details>

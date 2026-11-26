@@ -18,12 +18,12 @@ Raises the console's `ServerSettingsChanged` event with the old and new settings
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -31,4 +31,4 @@ Raises the console's `ServerSettingsChanged` event with the old and new settings
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logserversettingschange" /><code>{"static void LogServerSettingsChange("}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" oldSettings, "}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" newSettings)"}</code> | Raises the event once for the old settings and once for the new. Logs and rethrows on error. |
+| <Link id="m-logserversettingschange" /><code>{"static void LogServerSettingsChange("}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" oldSettings, "}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" newSettings)"}</code> | <span className="api-desc">Raises the event once for the old settings and once for the new. Logs and rethrows on error.</span> |

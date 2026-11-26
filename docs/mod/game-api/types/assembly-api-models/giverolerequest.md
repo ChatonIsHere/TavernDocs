@@ -20,16 +20,20 @@ Body of an Alta web API request to give a user a role.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GiveRoleRequest()"}</code> | Creates a `GiveRoleRequest` with default values. |
+| <Link id="m-ctor" /><code>{"GiveRoleRequest()"}</code> | <span className="api-desc">Creates a `GiveRoleRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-role" /><code><Link to="/mod/game-api/types/assembly-api-models/assignableroles">{"AssignableRoles"}</Link>{" Role { get; set; }"}</code> | The role to give. |
+| <Link id="m-role" /><code><Link to="/mod/game-api/types/assembly-api-models/assignableroles">{"AssignableRoles"}</Link>{" Role { get; set; }"}</code> | <span className="api-desc">The role to give.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GiveRoleRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GiveUserRoleAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-giveuserroleasync).
+
+</div>

@@ -21,10 +21,14 @@ A bool player preference stored under a key with `PlayerPreferences.SetBool` and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceBool(string key)"}</code> | Creates a `PlayerPreferenceBool` from `key`. |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceBool(string key)"}</code> | <span className="api-desc">Creates a `PlayerPreferenceBool` from `key`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerPreferenceBool`:
 
+<div className="api-used-in">
+
 [`LoginPreferences.rememberDetails`](/mod/game-api/types/assembly-other/loginpreferences#m-rememberdetails).
+
+</div>

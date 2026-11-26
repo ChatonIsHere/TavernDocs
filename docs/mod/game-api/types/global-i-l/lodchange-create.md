@@ -22,4 +22,4 @@ Editor menu entry that creates a `LODChange` debug asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `LODChange.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `LODChange.Create` with default values.</span> |

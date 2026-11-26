@@ -22,10 +22,14 @@ Serializable `UnityEvent` with a `Vector3` argument, for position events wired i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionHandler()"}</code> | Creates a `PositionHandler` with default values. |
+| <Link id="m-ctor" /><code>{"PositionHandler()"}</code> | <span className="api-desc">Creates a `PositionHandler` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PositionHandler`:
 
+<div className="api-used-in">
+
 [`SeedSpray.plantHandler`](/mod/game-api/types/alta-intelligence/seedspray#m-planthandler), [`LogicVector3Receiver.onValueChanged`](/mod/game-api/types/alta-items/logicvector3receiver#m-onvaluechanged), [`PositionProvider.positionSet`](/mod/game-api/types/alta-items/positionprovider#m-positionset), [`ClimbingSettings.grabBroken`](/mod/game-api/types/global-c-d/climbingsettings#m-grabbroken), [`ClimbingSettings.GrabBroken`](/mod/game-api/types/global-c-d/climbingsettings#m-grabbroken-2), [`ClimbingSettings.grabSuccessful`](/mod/game-api/types/global-c-d/climbingsettings#m-grabsuccessful), [`ClimbingSettings.GrabSuccessful`](/mod/game-api/types/global-c-d/climbingsettings#m-grabsuccessful-2), [`UnchunkedEffectPlayer.onPlay`](/mod/game-api/types/global-t-x/unchunkedeffectplayer#m-onplay).
+
+</div>

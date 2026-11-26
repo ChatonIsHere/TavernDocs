@@ -21,10 +21,14 @@ Something that resets with a trial. `TrialLogic` finds these in its children and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trialreset" /><code>{"void TrialReset()"}</code> | Puts the object back to its starting state for a new trial. |
+| <Link id="m-trialreset" /><code>{"void TrialReset()"}</code> | <span className="api-desc">Puts the object back to its starting state for a new trial.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ITrialReset`:
 
+<div className="api-used-in">
+
 [`TrialLogic.toReset`](/mod/game-api/types/global-t-x/triallogic#m-toreset).
+
+</div>

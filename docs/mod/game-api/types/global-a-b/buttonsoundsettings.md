@@ -22,17 +22,21 @@ UI button settings asset that adds sounds for press and release.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonSoundSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ButtonSoundSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpressed" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onPressed"}</code> | Sounds played when the button is pressed. |
-| <Link id="m-onreleased" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onReleased"}</code> | Sounds played when the button is released. |
+| <Link id="m-onpressed" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onPressed"}</code> | <span className="api-desc">Sounds played when the button is pressed.</span> |
+| <Link id="m-onreleased" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onReleased"}</code> | <span className="api-desc">Sounds played when the button is released.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ButtonSoundSettings`:
 
+<div className="api-used-in">
+
 [`Button.sounds`](/mod/game-api/types/alta-menus/button#m-sounds), [`BasicTouchScreenButton.sounds`](/mod/game-api/types/global-a-b/basictouchscreenbutton#m-sounds).
+
+</div>

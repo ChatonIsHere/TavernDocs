@@ -23,10 +23,14 @@ Empty asset used as a tag: a `GhostSnapObject` only snaps into a `GhostSnapSlot`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GhostSnapChannel()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GhostSnapChannel()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GhostSnapChannel`:
 
+<div className="api-used-in">
+
 [`GhostSnapObject.channel`](/mod/game-api/types/global-e-h/ghostsnapobject#m-channel), [`GhostSnapObject.Channel`](/mod/game-api/types/global-e-h/ghostsnapobject#m-channel-2), [`GhostSnapSlot.channels`](/mod/game-api/types/global-e-h/ghostsnapslot#m-channels).
+
+</div>

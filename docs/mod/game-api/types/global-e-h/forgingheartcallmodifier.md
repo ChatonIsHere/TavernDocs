@@ -21,17 +21,17 @@ Skill modifier that adds a forging hit effect and damage multiplier to Heart Cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForgingHeartCallModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ForgingHeartCallModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activemultiplier" /><code>{"private float activeMultiplier"}</code> | Multiplier applied to modified hits. |
-| <Link id="m-hitoverride" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{" hitOverride"}</code> | Forged hit effect used for modified hits. |
+| <Link id="m-activemultiplier" /><code>{"private float activeMultiplier"}</code> | <span className="api-desc">Multiplier applied to modified hits.</span> |
+| <Link id="m-hitoverride" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/forgedhiteffectoverride">{"ForgedHitEffectOverride"}</Link>{" hitOverride"}</code> | <span className="api-desc">Forged hit effect used for modified hits.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Skill modifier that adds a forging hit effect and damage multiplier to Heart Cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"protected override void Modify("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Registers the hit override on the tool and attaches this modifier to the Heart Call skill. |
-| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Client: registers the hit override on the tool entity. |
+| <Link id="m-modify" /><code>{"protected override void Modify("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | <span className="api-desc">Registers the hit override on the tool and attaches this modifier to the Heart Call skill.</span> |
+| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Client: registers the hit override on the tool entity.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifyhit" /><code>{"private void IHeartCallModifier.ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Multiplies the hit's multipliers by `activeMultiplier` and runs the skill for the hitting player. |
+| <Link id="m-modifyhit" /><code>{"private void IHeartCallModifier.ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">Multiplies the hit's multipliers by `activeMultiplier` and runs the skill for the hitting player.</span> |
 
 </details>

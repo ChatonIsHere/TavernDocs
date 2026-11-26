@@ -22,4 +22,4 @@ Empty marker attribute for methods. Nothing in the server build reads it; probab
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MethodApplyAttribute()"}</code> | Creates a `MethodApplyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"MethodApplyAttribute()"}</code> | <span className="api-desc">Creates a `MethodApplyAttribute` with default values.</span> |

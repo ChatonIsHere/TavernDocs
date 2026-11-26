@@ -21,18 +21,22 @@ Saved interaction trackers for one player in `PlayerInteractionManager`'s save d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerData()"}</code> | Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`. |
-| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> | Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`. |
+| <Link id="m-ctor" /><code>{"PlayerData()"}</code> | <span className="api-desc">Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`.</span> |
+| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> | <span className="api-desc">Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> | The player's user id. |
-| <Link id="m-trackerdatas" /><code><Link to="/mod/game-api/types/global-p/playerinteractionmanagerdata-trackerdata">{"PlayerInteractionManagerData.TrackerData"}</Link>{"[] trackerDatas"}</code> | The player's trackers and how many interactions each has left. |
+| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> | <span className="api-desc">The player's user id.</span> |
+| <Link id="m-trackerdatas" /><code><Link to="/mod/game-api/types/global-p/playerinteractionmanagerdata-trackerdata">{"PlayerInteractionManagerData.TrackerData"}</Link>{"[] trackerDatas"}</code> | <span className="api-desc">The player's trackers and how many interactions each has left.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerData`:
 
+<div className="api-used-in">
+
 [`PlayerInteractionManagerData.trackers`](/mod/game-api/types/global-p/playerinteractionmanagerdata#m-trackers).
+
+</div>

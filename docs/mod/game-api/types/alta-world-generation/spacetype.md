@@ -28,4 +28,8 @@ Flags for the kind of space a forest node is in: normal, dense or open. Forest f
 
 Members of other types that take, return or hold a `SpaceType`:
 
+<div className="api-used-in">
+
 [`Edge.IsOn`](/mod/game-api/types/alta-world-generation/edge#m-ison), [`Node.IsOn`](/mod/game-api/types/alta-world-generation/node#m-ison), [`Space.Type`](/mod/game-api/types/alta-world-generation/space#m-type), [`SpaceFilter.allowedTypes`](/mod/game-api/types/global-s/spacefilter#m-allowedtypes), [`SpaceFilter.Redirect.types`](/mod/game-api/types/global-s/spacefilter-redirect#m-types), [`SpaceFilter.Redirect.Types`](/mod/game-api/types/global-s/spacefilter-redirect#m-types-2).
+
+</div>

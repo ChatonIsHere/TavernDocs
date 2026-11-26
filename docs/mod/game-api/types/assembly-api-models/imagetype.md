@@ -30,4 +30,8 @@ Which slot a shop item image fills (primary, hover, carousel, detailed or galler
 
 Members of other types that take, return or hold a `ImageType`:
 
+<div className="api-used-in">
+
 [`IShopEditor.AddImageToItemAsync`](/mod/game-api/types/assembly-api-client/ishopeditor#m-addimagetoitemasync), [`OfflineShopEditor.AddImageToItemAsync`](/mod/game-api/types/assembly-api-client/offlineshopeditor#m-addimagetoitemasync), [`ShopEditor.AddImageToItemAsync`](/mod/game-api/types/assembly-api-client/shopeditor#m-addimagetoitemasync), [`LowLevelApiClient.AddImageToItemAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-addimagetoitemasync).
+
+</div>

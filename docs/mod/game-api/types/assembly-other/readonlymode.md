@@ -28,4 +28,8 @@ How an inspector field shows under a condition (`ReadOnlyAttribute`, `ValueCondi
 
 Members of other types that take, return or hold a `ReadOnlyMode`:
 
+<div className="api-used-in">
+
 [`ConditionAttribute.ConditionAttribute`](/mod/game-api/types/assembly-other/conditionattribute#m-ctor), [`ConditionAttribute.FalseMode`](/mod/game-api/types/assembly-other/conditionattribute#m-falsemode), [`ConditionAttribute.TrueMode`](/mod/game-api/types/assembly-other/conditionattribute#m-truemode), [`NullConditionAttribute.NotNullMode`](/mod/game-api/types/assembly-other/nullconditionattribute#m-notnullmode), [`NullConditionAttribute.NullConditionAttribute`](/mod/game-api/types/assembly-other/nullconditionattribute#m-ctor), [`NullConditionAttribute.NullMode`](/mod/game-api/types/assembly-other/nullconditionattribute#m-nullmode), [`ReadOnlyAttribute.InPlayMode`](/mod/game-api/types/assembly-other/readonlyattribute#m-inplaymode), [`ReadOnlyAttribute.OutOfPlayMode`](/mod/game-api/types/assembly-other/readonlyattribute#m-outofplaymode), [`ReadOnlyAttribute.ReadOnlyAttribute`](/mod/game-api/types/assembly-other/readonlyattribute#m-ctor), [`ValueConditionAttribute.FalseMode`](/mod/game-api/types/assembly-other/valueconditionattribute#m-falsemode), [`ValueConditionAttribute.TrueMode`](/mod/game-api/types/assembly-other/valueconditionattribute#m-truemode), [`ValueConditionAttribute.ValueConditionAttribute`](/mod/game-api/types/assembly-other/valueconditionattribute#m-ctor).
+
+</div>

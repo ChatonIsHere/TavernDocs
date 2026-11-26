@@ -22,16 +22,16 @@ Server: running action that turns a creature until its target is close enough to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveFaceTarget()"}</code> | Creates an `ActiveFaceTarget` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveFaceTarget()"}</code> | <span className="api-desc">Creates an `ActiveFaceTarget` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-viewcone" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | The creature's view cone. |
+| <Link id="m-viewcone" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | <span className="api-desc">The creature's view cone.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Server: running action that turns a creature until its target is close enough to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Finishes when the target is inside the view cone within `TargetRatio`, otherwise turns towards it. Cancels if there's no target. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Gets the creature's view cone. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Finishes when the target is inside the view cone within `TargetRatio`, otherwise turns towards it. Cancels if there's no target.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Gets the creature's view cone.</span> |

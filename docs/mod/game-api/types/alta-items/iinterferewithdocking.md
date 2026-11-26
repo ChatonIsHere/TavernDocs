@@ -21,10 +21,14 @@ A component that can stop two items from stacking in one dock, such as liquid co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkallowed" /><code>{"bool CheckAllowed("}<Link to="/mod/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | Whether this item can stack with another item's matching component. |
+| <Link id="m-checkallowed" /><code>{"bool CheckAllowed("}<Link to="/mod/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | <span className="api-desc">Whether this item can stack with another item's matching component.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IInterfereWithDocking`:
 
+<div className="api-used-in">
+
 [`ForgedModel.CheckAllowed`](/mod/game-api/types/alta-crafting/forgedmodel#m-checkallowed), [`LiquidContainer.CheckAllowed`](/mod/game-api/types/alta-stats-effects/liquidcontainer#m-checkallowed), [`ColoredExplosive.CheckAllowed`](/mod/game-api/types/global-c-d/coloredexplosive#m-checkallowed), [`PhysicalMaterialPart.CheckAllowed`](/mod/game-api/types/global-p/physicalmaterialpart#m-checkallowed), [`Pickup.interfereWithDocking`](/mod/game-api/types/global-p/pickup#m-interferewithdocking), [`Pickup.InterfereWithDocking`](/mod/game-api/types/global-p/pickup#m-interferewithdocking-2).
+
+</div>

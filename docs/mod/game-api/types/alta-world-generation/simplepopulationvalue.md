@@ -21,17 +21,17 @@ Spawn information that asks an `ISpawnPositions` source for points by index and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimplePopulationValue("}<Link to="/mod/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" positions, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Creates a `SimplePopulationValue` from `positions` and `spawnData`. |
+| <Link id="m-ctor" /><code>{"SimplePopulationValue("}<Link to="/mod/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" positions, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Creates a `SimplePopulationValue` from `positions` and `spawnData`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. Unused. |
-| <Link id="m-tracked" /><code>{"private Dictionary<int, "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> tracked"}</code> | Cache of points already made, by index. Never cleared. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class. Unused.</span> |
+| <Link id="m-tracked" /><code>{"private Dictionary<int, "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> tracked"}</code> | <span className="api-desc">Cache of points already made, by index. Never cleared.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Spawn information that asks an `ISpawnPositions` source for points by index and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positions" /><code><Link to="/mod/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" Positions { get; }"}</code> | The source of spawn positions. |
+| <Link id="m-positions" /><code><Link to="/mod/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" Positions { get; }"}</code> | <span className="api-desc">The source of spawn positions.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpoint" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetPoint(int pointIndex)"}</code> | Returns the cached point for an index, or gets it from `Positions` and caches it. |
-| <Link id="m-getrandom" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetRandom("}<Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> | Tries up to three random indexes and returns the first free point the definition accepts, or null. Each try adds to the cache. |
+| <Link id="m-getpoint" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetPoint(int pointIndex)"}</code> | <span className="api-desc">Returns the cached point for an index, or gets it from `Positions` and caches it.</span> |
+| <Link id="m-getrandom" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" GetRandom("}<Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Tries up to three random indexes and returns the first free point the definition accepts, or null. Each try adds to the cache.</span> |

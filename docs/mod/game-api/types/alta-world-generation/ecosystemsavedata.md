@@ -24,10 +24,10 @@ Save data (version 1) for an `Ecosystem`: the spawn point positions of each popu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EcosystemSaveData()"}</code> | Creates an `EcosystemSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"EcosystemSaveData()"}</code> | <span className="api-desc">Creates an `EcosystemSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code><Link to="/mod/game-api/types/alta-world-generation/ecosystemsavedata-entry">{"EcosystemSaveData.Entry"}</Link>{"[] entries"}</code> | One entry per population, with its key and spawn point positions and rotations. |
+| <Link id="m-entries" /><code><Link to="/mod/game-api/types/alta-world-generation/ecosystemsavedata-entry">{"EcosystemSaveData.Entry"}</Link>{"[] entries"}</code> | <span className="api-desc">One entry per population, with its key and spawn point positions and rotations.</span> |

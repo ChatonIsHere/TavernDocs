@@ -22,4 +22,4 @@ Editor menu folder `File/Export/Obj`: menu item classes inherit it to appear und
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Obj()"}</code> | Creates an `AltaMenuItemBase.File.Export.Obj` with default values. |
+| <Link id="m-ctor" /><code>{"protected Obj()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.File.Export.Obj` with default values.</span> |

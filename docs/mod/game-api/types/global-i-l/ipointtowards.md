@@ -21,10 +21,10 @@ Something that can be turned to face a point, such as `DrawBridgeRangeLogic`. `P
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-origin" /><code>{"Vector3 Origin { get; }"}</code> | The point it turns around. |
+| <Link id="m-origin" /><code>{"Vector3 Origin { get; }"}</code> | <span className="api-desc">The point it turns around.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pointtowards" /><code>{"void PointTowards(Vector3 target)"}</code> | Turns it to face the target position. |
+| <Link id="m-pointtowards" /><code>{"void PointTowards(Vector3 target)"}</code> | <span className="api-desc">Turns it to face the target position.</span> |

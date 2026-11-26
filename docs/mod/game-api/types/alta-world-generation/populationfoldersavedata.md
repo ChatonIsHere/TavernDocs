@@ -23,26 +23,26 @@ Save data (version 2) for a `PopulationFolder`: its population definition, count
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationFolderSaveData()"}</code> | Creates a `PopulationFolderSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationFolderSaveData()"}</code> | <span className="api-desc">Creates a `PopulationFolderSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> | Backing field for `CheckPopulationTime`: when the population is next checked. |
-| <Link id="m-children" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> | Backing field for `Children`: saved data for each spawned member. |
-| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> | Backing field for `CurrentPopulation`. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
-| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> | Backing field for `IsPopulationStarted`. |
-| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> | Backing field for `MaximumPopulation`. |
+| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> | <span className="api-desc">Backing field for `CheckPopulationTime`: when the population is next checked.</span> |
+| <Link id="m-children" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> | <span className="api-desc">Backing field for `Children`: saved data for each spawned member.</span> |
+| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> | <span className="api-desc">Backing field for `CurrentPopulation`.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Backing field for `Definition`.</span> |
+| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> | <span className="api-desc">Backing field for `IsPopulationStarted`.</span> |
+| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> | <span className="api-desc">Backing field for `MaximumPopulation`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpopulationtime-2" /><code>{"TimeSpan CheckPopulationTime { get; set; }"}</code> | When the population is next checked. |
-| <Link id="m-children-2" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] Children { get; set; }"}</code> | The saved spawned entities with their spawn points. |
-| <Link id="m-currentpopulation-2" /><code>{"int CurrentPopulation { get; set; }"}</code> | How many were alive when saved. |
-| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; set; }"}</code> | What the population spawns. |
-| <Link id="m-ispopulationstarted-2" /><code>{"bool IsPopulationStarted { get; set; }"}</code> | Whether the population had started. |
-| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; set; }"}</code> | The population's maximum. |
+| <Link id="m-checkpopulationtime-2" /><code>{"TimeSpan CheckPopulationTime { get; set; }"}</code> | <span className="api-desc">When the population is next checked.</span> |
+| <Link id="m-children-2" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] Children { get; set; }"}</code> | <span className="api-desc">The saved spawned entities with their spawn points.</span> |
+| <Link id="m-currentpopulation-2" /><code>{"int CurrentPopulation { get; set; }"}</code> | <span className="api-desc">How many were alive when saved.</span> |
+| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" Definition { get; set; }"}</code> | <span className="api-desc">What the population spawns.</span> |
+| <Link id="m-ispopulationstarted-2" /><code>{"bool IsPopulationStarted { get; set; }"}</code> | <span className="api-desc">Whether the population had started.</span> |
+| <Link id="m-maximumpopulation" /><code>{"int MaximumPopulation { get; set; }"}</code> | <span className="api-desc">The population's maximum.</span> |

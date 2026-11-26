@@ -22,19 +22,23 @@ Internal: what one `CreateBackup` made.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BackupResult()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"BackupResult()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filesadded" /><code>{"int FilesAdded"}</code> | How many files went into the zip. |
-| <Link id="m-filesskipped" /><code>{"int FilesSkipped"}</code> | How many files were in use or gone and were left out. |
-| <Link id="m-sizebytes" /><code>{"long SizeBytes"}</code> | The finished zip's size. |
-| <Link id="m-zippath" /><code>{"string ZipPath"}</code> | The finished zip's full path. |
+| <Link id="m-filesadded" /><code>{"int FilesAdded"}</code> | <span className="api-desc">How many files went into the zip.</span> |
+| <Link id="m-filesskipped" /><code>{"int FilesSkipped"}</code> | <span className="api-desc">How many files were in use or gone and were left out.</span> |
+| <Link id="m-sizebytes" /><code>{"long SizeBytes"}</code> | <span className="api-desc">The finished zip's size.</span> |
+| <Link id="m-zippath" /><code>{"string ZipPath"}</code> | <span className="api-desc">The finished zip's full path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BackupResult`:
 
+<div className="api-used-in">
+
 [`ServerBackup.CreateBackup`](/mod/tavernlib-api/types/backend-server/serverbackup#m-createbackup).
+
+</div>

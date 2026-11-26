@@ -29,4 +29,8 @@ Where a hit modifier effect starts or ends: on this object, on the thing hit, or
 
 Members of other types that take, return or hold a `EffectPosition`:
 
+<div className="api-used-in">
+
 [`HitModifierEffect.source`](/mod/game-api/types/alta-items/hitmodifiereffect#m-source), [`HitModifierEffect.target`](/mod/game-api/types/alta-items/hitmodifiereffect#m-target).
+
+</div>

@@ -22,10 +22,10 @@ Serializer for `uint`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UintSerialization()"}</code> | Creates a `TypeSerializationHelper.UintSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"UintSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.UintSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref uint value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the unsigned int. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref uint value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Reads or writes the unsigned int.</span> |

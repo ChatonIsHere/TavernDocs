@@ -22,10 +22,10 @@ Obsolete admin tool that does nothing.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LocalTestStarter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LocalTestStarter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setactive" /><code>{"protected override void SetActive(bool isActive)"}</code> | Does nothing. |
+| <Link id="m-setactive" /><code>{"protected override void SetActive(bool isActive)"}</code> | <span className="api-desc">Does nothing.</span> |

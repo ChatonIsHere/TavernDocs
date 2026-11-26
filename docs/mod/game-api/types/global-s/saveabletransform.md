@@ -22,12 +22,12 @@ Base `ScriptableObject` for assets that store a transform's state and can apply 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SaveableTransform()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SaveableTransform()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createobject" /><code>{"static ScriptableObject CreateObject<T>(Transform transform, bool isLocalSave, string savePath)"}</code> | Creates a new instance of the given subclass. The transform, flag and path are ignored here. |
-| <Link id="m-loadinto" /><code>{"abstract bool LoadInto(Transform transform)"}</code> | Applies the stored state to a transform. Returns whether it worked. |
-| <Link id="m-save" /><code>{"abstract void Save(Transform transform, bool isLocalSave)"}</code> | Stores a transform's state, in local or world space. |
+| <Link id="m-createobject" /><code>{"static ScriptableObject CreateObject<T>(Transform transform, bool isLocalSave, string savePath)"}</code> | <span className="api-desc">Creates a new instance of the given subclass. The transform, flag and path are ignored here.</span> |
+| <Link id="m-loadinto" /><code>{"abstract bool LoadInto(Transform transform)"}</code> | <span className="api-desc">Applies the stored state to a transform. Returns whether it worked.</span> |
+| <Link id="m-save" /><code>{"abstract void Save(Transform transform, bool isLocalSave)"}</code> | <span className="api-desc">Stores a transform's state, in local or world space.</span> |

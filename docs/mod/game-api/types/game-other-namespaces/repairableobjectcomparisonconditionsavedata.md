@@ -23,11 +23,11 @@ Save data (version 1) for `RepairableObjectComparisonCondition`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> | Creates a `RepairableObjectComparisonConditionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> | <span className="api-desc">Creates a `RepairableObjectComparisonConditionSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbuilt" /><code>{"uint[] IsBuilt"}</code> | Hashes of objects that must be built. |
-| <Link id="m-isnotbuilt" /><code>{"uint[] IsNotBuilt"}</code> | Hashes of objects that must not be built. |
+| <Link id="m-isbuilt" /><code>{"uint[] IsBuilt"}</code> | <span className="api-desc">Hashes of objects that must be built.</span> |
+| <Link id="m-isnotbuilt" /><code>{"uint[] IsNotBuilt"}</code> | <span className="api-desc">Hashes of objects that must not be built.</span> |

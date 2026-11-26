@@ -23,18 +23,18 @@ Collider modifier asset that scales damage by the angle a hit comes from, relati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DirectionalMultiplierCollider()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DirectionalMultiplierCollider()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angletomultiplier" /><code>{"private AnimationCurve angleToMultiplier"}</code> | Curve from hit angle in degrees to damage multiplier. |
-| <Link id="m-direction" /><code>{"private Vector3 direction"}</code> | Local direction, rotated by the modifier's transform, that angles are measured from. |
-| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> | Multiplier from the last `IsDamaging` call, used by the next `ModifyHit`. Shared by every collider using this asset. |
+| <Link id="m-angletomultiplier" /><code>{"private AnimationCurve angleToMultiplier"}</code> | <span className="api-desc">Curve from hit angle in degrees to damage multiplier.</span> |
+| <Link id="m-direction" /><code>{"private Vector3 direction"}</code> | <span className="api-desc">Local direction, rotated by the modifier's transform, that angles are measured from.</span> |
+| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> | <span className="api-desc">Multiplier from the last `IsDamaging` call, used by the next `ModifyHit`. Shared by every collider using this asset.</span> |
 
 </details>
 
@@ -42,5 +42,5 @@ Collider modifier asset that scales damage by the angle a hit comes from, relati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdamaging" /><code>{"override bool IsDamaging("}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | Works out the angle between the hit and the rotated `direction`, stores the curve value, and returns true if it's above 0. |
-| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | Multiplies the hit's health and cripple multipliers by the value stored in `IsDamaging`, then resets it to 1. |
+| <Link id="m-isdamaging" /><code>{"override bool IsDamaging("}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | <span className="api-desc">Works out the angle between the hit and the rotated `direction`, stores the curve value, and returns true if it's above 0.</span> |
+| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" point)"}</code> | <span className="api-desc">Multiplies the hit's health and cripple multipliers by the value stored in `IsDamaging`, then resets it to 1.</span> |

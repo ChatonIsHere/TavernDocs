@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Crafting`: menu item classes inherit it to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Crafting` with default values. |
+| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Crafting` with default values.</span> |

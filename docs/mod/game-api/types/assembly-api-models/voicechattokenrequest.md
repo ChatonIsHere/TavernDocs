@@ -20,17 +20,21 @@ Body of an Alta web API request for a voice chat token, to log in or to join a s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VoiceChatTokenRequest()"}</code> | Creates a `VoiceChatTokenRequest` with default values. |
+| <Link id="m-ctor" /><code>{"VoiceChatTokenRequest()"}</code> | <span className="api-desc">Creates a `VoiceChatTokenRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serveridentifier" /><code>{"int? ServerIdentifier { get; set; }"}</code> | Id of the server whose channel to join, if joining. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/voicechattokenrequesttype">{"VoiceChatTokenRequestType"}</Link>{" Type { get; set; }"}</code> | Whether the token is for logging in or joining a channel. |
+| <Link id="m-serveridentifier" /><code>{"int? ServerIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the server whose channel to join, if joining.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/voicechattokenrequesttype">{"VoiceChatTokenRequestType"}</Link>{" Type { get; set; }"}</code> | <span className="api-desc">Whether the token is for logging in or joining a channel.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `VoiceChatTokenRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetVoiceTokenAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getvoicetokenasync).
+
+</div>

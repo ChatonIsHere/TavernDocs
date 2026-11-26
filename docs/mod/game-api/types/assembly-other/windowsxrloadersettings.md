@@ -22,18 +22,18 @@ Global settings for the Windows build's XR loaders: which XR mode to use and the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WindowsXRLoaderSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"WindowsXRLoaderSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-openxrloader" /><code>{"private OpenXRLoader openXrLoader"}</code> | Backing field for `OpenXrLoader`. |
-| <Link id="m-valveopenvrloader" /><code>{"private OpenVRLoader valveOpenVrLoader"}</code> | Backing field for `ValveOpenVrLoader`. |
-| <Link id="m-xrmode" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" xrMode"}</code> | Backing field for `XrMode`. |
+| <Link id="m-openxrloader" /><code>{"private OpenXRLoader openXrLoader"}</code> | <span className="api-desc">Backing field for `OpenXrLoader`.</span> |
+| <Link id="m-valveopenvrloader" /><code>{"private OpenVRLoader valveOpenVrLoader"}</code> | <span className="api-desc">Backing field for `ValveOpenVrLoader`.</span> |
+| <Link id="m-xrmode" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" xrMode"}</code> | <span className="api-desc">Backing field for `XrMode`.</span> |
 
 </details>
 
@@ -41,18 +41,22 @@ Global settings for the Windows build's XR loaders: which XR mode to use and the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-openxrloader-2" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> | Loader used for OpenXR mode. |
-| <Link id="m-valveopenvrloader-2" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> | Loader used for Valve (OpenVR) mode. |
-| <Link id="m-xrmode-2" /><code><Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> | Which XR runtime to start: none, OpenXR or Valve. |
+| <Link id="m-openxrloader-2" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> | <span className="api-desc">Loader used for OpenXR mode.</span> |
+| <Link id="m-valveopenvrloader-2" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> | <span className="api-desc">Loader used for Valve (OpenVR) mode.</span> |
+| <Link id="m-xrmode-2" /><code><Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> | <span className="api-desc">Which XR runtime to start: none, OpenXR or Valve.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setxrmode" /><code>{"void SetXrMode("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | Changes the XR mode in memory. |
+| <Link id="m-setxrmode" /><code>{"void SetXrMode("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | <span className="api-desc">Changes the XR mode in memory.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WindowsXRLoaderSettings`:
 
+<div className="api-used-in">
+
 [`WindowsGlobalSettingsInstaller.windowsXRSettings`](/mod/game-api/types/assembly-other/windowsglobalsettingsinstaller#m-windowsxrsettings).
+
+</div>

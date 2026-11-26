@@ -22,16 +22,16 @@ Logic component that takes one Vector3 sender input and invokes a position handl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3Receiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicVector3Receiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onValueChanged"}</code> | Position handler event set in the inspector, fired with the sender's Vector3 value. |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onValueChanged"}</code> | <span className="api-desc">Position handler event set in the inspector, fired with the sender's Vector3 value.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Logic component that takes one Vector3 sender input and invokes a position handl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | Called when the linked sender's value changes; invokes `onValueChanged` with the new Vector3. |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | <span className="api-desc">Called when the linked sender's value changes; invokes `onValueChanged` with the new Vector3.</span> |

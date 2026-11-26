@@ -21,4 +21,4 @@ Empty component. Nothing in the server build refers to it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnvilFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnvilFilter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

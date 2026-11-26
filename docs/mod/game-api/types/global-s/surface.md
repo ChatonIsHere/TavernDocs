@@ -22,17 +22,17 @@ Marks an object with a `SurfaceDefinition`, which sets how embeddables (like arr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Surface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Surface()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultdefinition" /><code>{"private static "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" defaultDefinition"}</code> | Backing field for `DefaultDefinition`. |
-| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
+| <Link id="m-defaultdefinition" /><code>{"private static "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" defaultDefinition"}</code> | <span className="api-desc">Backing field for `DefaultDefinition`.</span> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Backing field for `Definition`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Marks an object with a `SurfaceDefinition`, which sets how embeddables (like arr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultdefinition-2" /><code>{"static "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" DefaultDefinition { get; }"}</code> | The `SurfaceDefinition/Default` resource, loaded on first use; used when no `Surface` is found in the hit object's parents. |
-| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" Definition { get; }"}</code> | This surface's definition (embed multiplier and whether direction must line up). |
+| <Link id="m-defaultdefinition-2" /><code>{"static "}<Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" DefaultDefinition { get; }"}</code> | <span className="api-desc">The `SurfaceDefinition/Default` resource, loaded on first use; used when no `Surface` is found in the hit object's parents.</span> |
+| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/global-s/surfacedefinition">{"SurfaceDefinition"}</Link>{" Definition { get; }"}</code> | <span className="api-desc">This surface's definition (embed multiplier and whether direction must line up).</span> |

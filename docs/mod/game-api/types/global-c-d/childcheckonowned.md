@@ -21,17 +21,17 @@ Server: when the entity spawns, fires one of two events depending on whether it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChildCheckOnOwned()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ChildCheckOnOwned()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haschild" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" hasChild"}</code> | Fired on server spawn when the entity has at least one child. |
-| <Link id="m-hasnochild" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" hasNoChild"}</code> | Fired on server spawn when the entity has no children. |
+| <Link id="m-haschild" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" hasChild"}</code> | <span className="api-desc">Fired on server spawn when the entity has at least one child.</span> |
+| <Link id="m-hasnochild" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" hasNoChild"}</code> | <span className="api-desc">Fired on server spawn when the entity has no children.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Server: when the entity spawns, fires one of two events depending on whether it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: fires `hasChild` if the entity has children, otherwise `hasNoChild`. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: fires `hasChild` if the entity has children, otherwise `hasNoChild`.</span> |

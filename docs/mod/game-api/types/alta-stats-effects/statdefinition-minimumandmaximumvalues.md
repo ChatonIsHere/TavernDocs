@@ -21,18 +21,18 @@ Optional range a stat's value must be in when set by a command. Used by `StatDef
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> | Creates a `StatDefinition.MinimumAndMaximumValues` with default values. |
+| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> | <span className="api-desc">Creates a `StatDefinition.MinimumAndMaximumValues` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Whether the range is checked at all. |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Highest value allowed. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Lowest value allowed. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | <span className="api-desc">Whether the range is checked at all.</span> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Highest value allowed.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Lowest value allowed.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ Optional range a stat's value must be in when set by a command. Used by `StatDef
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvaluevalid" /><code>{"bool IsValueValid(float value)"}</code> | True if the range is off, or the value is between `minimum` and `maximum` inclusive. |
+| <Link id="m-isvaluevalid" /><code>{"bool IsValueValid(float value)"}</code> | <span className="api-desc">True if the range is off, or the value is between `minimum` and `maximum` inclusive.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MinimumAndMaximumValues`:
 
+<div className="api-used-in">
+
 [`StatDefinition.commandMinimumAndMaximumValues`](/mod/game-api/types/alta-stats-effects/statdefinition#m-commandminimumandmaximumvalues).
+
+</div>

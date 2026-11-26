@@ -21,4 +21,4 @@ Server: an entity that does extra work when `ServerWipeManager` wipes the server
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> | Server: runs the entity's wipe step. |
+| <Link id="m-wipeoperation" /><code>{"void WipeOperation()"}</code> | <span className="api-desc">Server: runs the entity's wipe step.</span> |

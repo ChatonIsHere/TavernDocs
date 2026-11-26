@@ -22,4 +22,4 @@ Editor menu folder `Township/Editors`: menu item classes inherit it to appear un
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Editors()"}</code> | Creates an `AltaMenuItemBase.Township.Editors` with default values. |
+| <Link id="m-ctor" /><code>{"protected Editors()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Editors` with default values.</span> |

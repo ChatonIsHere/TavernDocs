@@ -22,4 +22,4 @@ Impact filter asset (`ImpactorAreaFilter` over `AnvilArea`) that limits an impac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnvilFilterSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AnvilFilterSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

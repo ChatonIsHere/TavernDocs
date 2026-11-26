@@ -21,17 +21,17 @@ Base for an entity sync that sends a value of type `T`. Registers its handler wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Sync("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | Creates a `Sync` from `entity` and `type`. |
+| <Link id="m-ctor" /><code>{"Sync("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | <span className="api-desc">Creates a `Sync` from `entity` and `type`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The entity this sync belongs to. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> | The entity message type this sync uses. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | <span className="api-desc">The entity this sync belongs to.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> | <span className="api-desc">The entity message type this sync uses.</span> |
 
 </details>
 
@@ -39,12 +39,12 @@ Base for an entity sync that sends a value of type `T`. Registers its handler wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> | The method that writes or reads the value; set by the subclass. |
-| <Link id="m-value" /><code>{"T Value { get; protected set; }"}</code> | The value last sent. |
+| <Link id="m-handler" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" Handler { get; }"}</code> | <span className="api-desc">The method that writes or reads the value; set by the subclass.</span> |
+| <Link id="m-value" /><code>{"T Value { get; protected set; }"}</code> | <span className="api-desc">The value last sent.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendtochunks" /><code>{"void SendToChunks(T value, params "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"[] except)"}</code> | Stores the value and sends it to everyone in the entity's chunks, except the given players. |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, T value)"}</code> | Stores the value and sends it to one player. |
+| <Link id="m-sendtochunks" /><code>{"void SendToChunks(T value, params "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"[] except)"}</code> | <span className="api-desc">Stores the value and sends it to everyone in the entity's chunks, except the given players.</span> |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, T value)"}</code> | <span className="api-desc">Stores the value and sends it to one player.</span> |

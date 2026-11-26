@@ -21,11 +21,11 @@ UNET transport statistics across all hosts: incoming packets and drops plus outg
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> | Creates a `NetworkTransportOverallStatistics` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> | <span className="api-desc">Creates a `NetworkTransportOverallStatistics` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> | Reads the current value of every counter from `NetworkTransport`. |
-| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> | Creates each counter from the matching all-hosts `NetworkTransport` query. |
+| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> | <span className="api-desc">Reads the current value of every counter from `NetworkTransport`.</span> |
+| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> | <span className="api-desc">Creates each counter from the matching all-hosts `NetworkTransport` query.</span> |

@@ -20,11 +20,15 @@ Minimal user shape from the Alta platform layer: an id and a display name.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | The user's name as shown to others. |
-| <Link id="m-id" /><code>{"string Id { get; }"}</code> | The user's id, as a string. |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | <span className="api-desc">The user's name as shown to others.</span> |
+| <Link id="m-id" /><code>{"string Id { get; }"}</code> | <span className="api-desc">The user's id, as a string.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IUser`:
 
+<div className="api-used-in">
+
 [`UserService.GetUserWithId`](/mod/game-api/types/assembly-other/userservice#m-getuserwithid), [`UserService.LoggedInUser`](/mod/game-api/types/assembly-other/userservice#m-loggedinuser), [`IUserService.GetUserWithId`](/mod/game-api/types/assembly-other/iuserservice#m-getuserwithid), [`IUserService.LoggedInUser`](/mod/game-api/types/assembly-other/iuserservice#m-loggedinuser).
+
+</div>

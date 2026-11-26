@@ -22,16 +22,16 @@ Private per-path entry in `ProgressionSettings` that links a path to an impact c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PathImpactChannel()"}</code> | Creates a `ProgressionSettings.PathImpactChannel` with default values. |
+| <Link id="m-ctor" /><code>{"PathImpactChannel()"}</code> | <span className="api-desc">Creates a `ProgressionSettings.PathImpactChannel` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | Backing field for `Channel`. |
+| <Link id="m-channel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | <span className="api-desc">Backing field for `Channel`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Private per-path entry in `ProgressionSettings` that links a path to an impact c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel-2" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" Channel { get; }"}</code> | The impact channel. |
+| <Link id="m-channel-2" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">The impact channel.</span> |

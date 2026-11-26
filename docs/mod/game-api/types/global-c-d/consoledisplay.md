@@ -23,31 +23,31 @@ Shows the latest server console log lines in a UI `Text`, coloured by log level.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleDisplay()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ConsoleDisplay()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logs" /><code>{"private List<"}<Link to="/mod/game-api/types/global-c-d/consoledisplay-log">{"ConsoleDisplay.Log"}</Link>{"> logs"}</code> | Log lines kept for display. |
-| <Link id="m-logtypecolors" /><code>{"private static readonly Dictionary<LogLevel, string> logTypeColors"}</code> | Hex colour per log level: red for errors, yellow for warnings, black otherwise. |
-| <Link id="m-rows" /><code>{"private int rows"}</code> | Most lines shown. |
-| <Link id="m-text" /><code>{"private Text text"}</code> | The UI text that shows the log. |
+| <Link id="m-logs" /><code>{"private List<"}<Link to="/mod/game-api/types/global-c-d/consoledisplay-log">{"ConsoleDisplay.Log"}</Link>{"> logs"}</code> | <span className="api-desc">Log lines kept for display.</span> |
+| <Link id="m-logtypecolors" /><code>{"private static readonly Dictionary<LogLevel, string> logTypeColors"}</code> | <span className="api-desc">Hex colour per log level: red for errors, yellow for warnings, black otherwise.</span> |
+| <Link id="m-rows" /><code>{"private int rows"}</code> | <span className="api-desc">Most lines shown.</span> |
+| <Link id="m-text" /><code>{"private Text text"}</code> | <span className="api-desc">The UI text that shows the log.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlelog" /><code>{"private void HandleLog(string message, LogLevel logLevel)"}</code> | Adds a log line, drops the oldest past `rows`, and rebuilds the text. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops listening to the server console log. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Gets the `Text` and starts listening to `ServerConsoleLogTarget.LogSent`. |
+| <Link id="m-handlelog" /><code>{"private void HandleLog(string message, LogLevel logLevel)"}</code> | <span className="api-desc">Adds a log line, drops the oldest past `rows`, and rebuilds the text.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Stops listening to the server console log.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Gets the `Text` and starts listening to `ServerConsoleLogTarget.LogSent`.</span> |
 
 </details>

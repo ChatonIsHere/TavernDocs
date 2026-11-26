@@ -23,4 +23,4 @@ Editor menu folder `GameObject/Utility`: menu item classes inherit it to appear 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | Creates an `AltaMenuItemBase.GameObject.Utility` with default values. |
+| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.GameObject.Utility` with default values.</span> |

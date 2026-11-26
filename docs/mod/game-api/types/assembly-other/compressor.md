@@ -21,24 +21,24 @@ A dummy `Stream` that reads and writes at once but stores nothing. Code passes `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Compressor()"}</code> | Creates a `Compressor` with default values. |
+| <Link id="m-ctor" /><code>{"Compressor()"}</code> | <span className="api-desc">Creates a `Compressor` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> | Not implemented; throws. |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/compressor">{"Compressor"}</Link>{" Instance { get; private set; }"}</code> | Shared instance used throughout the game. |
-| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> | Not implemented; throws. |
+| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> | <span className="api-desc">Not implemented; throws.</span> |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/compressor">{"Compressor"}</Link>{" Instance { get; private set; }"}</code> | <span className="api-desc">Shared instance used throughout the game.</span> |
+| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> | <span className="api-desc">Not implemented; throws.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-align" /><code>{"override void Align()"}</code> | Not implemented; throws. |
-| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> | Does nothing. |
-| <Link id="m-clone" /><code>{"override object Clone()"}</code> | Returns a new `Compressor`. |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Not implemented; throws. |
-| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> | Does nothing, so the quantized value passes straight back. |
-| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/mod/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> | Does nothing. |
-| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> | Does nothing. |
+| <Link id="m-align" /><code>{"override void Align()"}</code> | <span className="api-desc">Not implemented; throws.</span> |
+| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-clone" /><code>{"override object Clone()"}</code> | <span className="api-desc">Returns a new `Compressor`.</span> |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | <span className="api-desc">Not implemented; throws.</span> |
+| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> | <span className="api-desc">Does nothing, so the quantized value passes straight back.</span> |
+| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/mod/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> | <span className="api-desc">Does nothing.</span> |

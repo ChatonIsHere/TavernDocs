@@ -23,16 +23,20 @@ Asset for one achievement; its asset name is its ID.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AchievementDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AchievementDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> | The asset name, used as the achievement ID. |
+| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> | <span className="api-desc">The asset name, used as the achievement ID.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AchievementDefinition`:
 
+<div className="api-used-in">
+
 [`Achievement.Achievement`](/mod/game-api/types/alta-player/achievement#m-ctor), [`Achievement.Definition`](/mod/game-api/types/alta-player/achievement#m-definition), [`AchievementManager.achievementMap`](/mod/game-api/types/alta-player/achievementmanager#m-achievementmap), [`AchievementManager.definitions`](/mod/game-api/types/alta-player/achievementmanager#m-definitions), [`AchievementManager.GetAchievement`](/mod/game-api/types/alta-player/achievementmanager#m-getachievement-2).
+
+</div>

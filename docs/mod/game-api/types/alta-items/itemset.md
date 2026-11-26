@@ -23,16 +23,16 @@ ScriptableObject holding a list of item definitions.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ItemSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> | Backing field for `Items`. |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> | <span className="api-desc">Backing field for `Items`.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ ScriptableObject holding a list of item definitions.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> | The items in the set. |
+| <Link id="m-items-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> | <span className="api-desc">The items in the set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ItemSet`:
 
+<div className="api-used-in">
+
 [`MouldDefinition.allowedMaterials`](/mod/game-api/types/global-m-o/moulddefinition#m-allowedmaterials), [`MouldDefinition.AllowedMaterials`](/mod/game-api/types/global-m-o/moulddefinition#m-allowedmaterials-2).
+
+</div>

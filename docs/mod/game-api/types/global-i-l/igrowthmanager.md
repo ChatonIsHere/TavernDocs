@@ -21,12 +21,16 @@ Owner of growing items, like `GrowerGroup`. Gives growth code its entity, transf
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The network entity that owns the growth. |
-| <Link id="m-isdestroyedoncompletion" /><code>{"bool IsDestroyedOnCompletion { get; }"}</code> | Whether the owner is destroyed when growth completes. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The owner's transform. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The network entity that owns the growth.</span> |
+| <Link id="m-isdestroyedoncompletion" /><code>{"bool IsDestroyedOnCompletion { get; }"}</code> | <span className="api-desc">Whether the owner is destroyed when growth completes.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The owner's transform.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IGrowthManager`:
 
+<div className="api-used-in">
+
 [`GrowthItem.parent`](/mod/game-api/types/global-e-h/growthitem#m-parent).
+
+</div>

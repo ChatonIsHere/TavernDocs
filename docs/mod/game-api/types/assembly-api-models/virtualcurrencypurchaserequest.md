@@ -21,10 +21,10 @@ Request body for buying a virtual currency package with a payment method.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> | Creates a `VirtualCurrencyPurchaseRequest` with default values. |
+| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> | <span className="api-desc">Creates a `VirtualCurrencyPurchaseRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-virtualcurrencypackageidentifier" /><code>{"int VirtualCurrencyPackageIdentifier { get; set; }"}</code> | Id of the currency package, sent as `currency_package_id`. |
+| <Link id="m-virtualcurrencypackageidentifier" /><code>{"int VirtualCurrencyPackageIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the currency package, sent as `currency_package_id`.</span> |

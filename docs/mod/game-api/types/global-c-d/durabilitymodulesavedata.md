@@ -23,10 +23,10 @@ Save data for a `DurabilityModule`: its remaining integrity.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DurabilityModuleSaveData()"}</code> | Creates a `DurabilityModuleSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"DurabilityModuleSaveData()"}</code> | <span className="api-desc">Creates a `DurabilityModuleSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-integrity" /><code>{"float integrity"}</code> | Integrity of the item when saved. |
+| <Link id="m-integrity" /><code>{"float integrity"}</code> | <span className="api-desc">Integrity of the item when saved.</span> |

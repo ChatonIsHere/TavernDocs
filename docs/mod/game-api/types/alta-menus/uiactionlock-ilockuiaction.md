@@ -22,4 +22,8 @@ Marker for an object that can take the global UI action lock in `UIActionLock`, 
 
 Members of other types that take, return or hold a `ILockUIAction`:
 
+<div className="api-used-in">
+
 [`UIActionLock.CheckIsLocked`](/mod/game-api/types/alta-menus/uiactionlock#m-checkislocked), [`UIActionLock.currentLocker`](/mod/game-api/types/alta-menus/uiactionlock#m-currentlocker), [`UIActionLock.Unlock`](/mod/game-api/types/alta-menus/uiactionlock#m-unlock).
+
+</div>

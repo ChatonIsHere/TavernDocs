@@ -21,17 +21,21 @@ A nameplate mesh on a recent player element that gets recoloured with the player
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> | Creates a `RecentPlayerElement.NameplateMeshReference` with default values. |
+| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> | <span className="api-desc">Creates a `RecentPlayerElement.NameplateMeshReference` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> | Source mesh. A vertex-coloured copy of it is made in the nameplate colour. |
-| <Link id="m-meshfilter" /><code>{"MeshFilter meshFilter"}</code> | Mesh filter that gets the coloured copy. |
+| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> | <span className="api-desc">Source mesh. A vertex-coloured copy of it is made in the nameplate colour.</span> |
+| <Link id="m-meshfilter" /><code>{"MeshFilter meshFilter"}</code> | <span className="api-desc">Mesh filter that gets the coloured copy.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NameplateMeshReference`:
 
+<div className="api-used-in">
+
 [`RecentPlayerElement.meshReferences`](/mod/game-api/types/global-q-r/recentplayerelement#m-meshreferences).
+
+</div>

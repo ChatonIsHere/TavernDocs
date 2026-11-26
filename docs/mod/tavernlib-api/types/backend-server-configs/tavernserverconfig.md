@@ -22,10 +22,14 @@ The `ServerConfigFile` for `tavern_server.json`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TavernServerConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"TavernServerConfig(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TavernServerConfig`:
 
+<div className="api-used-in">
+
 [`TavernManager.TavernConfig`](/mod/tavernlib-api/types/backend-api/tavernmanager#m-tavernconfig), [`ServerListingPayload.FromConfig`](/mod/tavernlib-api/types/backend-server/serverlistingpayload#m-fromconfig).
+
+</div>

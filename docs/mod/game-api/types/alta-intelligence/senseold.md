@@ -45,4 +45,8 @@ Old list of AI senses (noise, movement, danger, distance, view cone and so on), 
 
 Members of other types that take, return or hold a `SenseOld`:
 
+<div className="api-used-in">
+
 [`BasicSenseSet.Modify`](/mod/game-api/types/alta-intelligence/basicsenseset#m-modify), [`CreateTargetOperation.Sense`](/mod/game-api/types/alta-intelligence/createtargetoperation#m-sense), [`OldSenseOperation.Migrate`](/mod/game-api/types/alta-intelligence/oldsenseoperation#m-migrate), [`OldSenseOperation.sense`](/mod/game-api/types/alta-intelligence/oldsenseoperation#m-sense), [`Sense.GetSense`](/mod/game-api/types/alta-intelligence/sense#m-getsense), [`Sense.oldEquivalent`](/mod/game-api/types/alta-intelligence/sense#m-oldequivalent), [`Sense.oldMapping`](/mod/game-api/types/alta-intelligence/sense#m-oldmapping), [`SenseSetup.sense`](/mod/game-api/types/alta-intelligence/sensesetup#m-sense).
+
+</div>

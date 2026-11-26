@@ -21,4 +21,4 @@ A saved component that needs a setup step after its whole entity tree has loaded
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadsetup" /><code>{"void LoadSetup()"}</code> | Called after loading, children first, by `StreamerHelper.LoadSetupRecursive`. |
+| <Link id="m-loadsetup" /><code>{"void LoadSetup()"}</code> | <span className="api-desc">Called after loading, children first, by `StreamerHelper.LoadSetupRecursive`.</span> |

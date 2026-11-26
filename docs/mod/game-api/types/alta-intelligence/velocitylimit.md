@@ -21,18 +21,18 @@ Scoring rule on the creature's own speed: one value while its rigidbody is slowe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VelocityLimit(float maximimumVelocitySquared, float withinLimitValue, float outsideLimitValue)"}</code> | Creates a `VelocityLimit` from `maximimumVelocitySquared`, `withinLimitValue` and `outsideLimitValue`. |
+| <Link id="m-ctor" /><code>{"VelocityLimit(float maximimumVelocitySquared, float withinLimitValue, float outsideLimitValue)"}</code> | <span className="api-desc">Creates a `VelocityLimit` from `maximimumVelocitySquared`, `withinLimitValue` and `outsideLimitValue`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> | Value at or above the limit. |
-| <Link id="m-velocitylimitsquared" /><code>{"private float velocityLimitSquared"}</code> | The speed limit, squared. |
-| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> | Value below the limit. |
+| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> | <span className="api-desc">Value at or above the limit.</span> |
+| <Link id="m-velocitylimitsquared" /><code>{"private float velocityLimitSquared"}</code> | <span className="api-desc">The speed limit, squared.</span> |
+| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> | <span className="api-desc">Value below the limit.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Scoring rule on the creature's own speed: one value while its rigidbody is slowe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Returns `withinLimitValue` if the rigidbody's squared speed is below the limit, else `outsideLimitValue`. |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">Returns `withinLimitValue` if the rigidbody's squared speed is below the limit, else `outsideLimitValue`.</span> |

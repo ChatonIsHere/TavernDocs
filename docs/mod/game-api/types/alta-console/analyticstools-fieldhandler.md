@@ -22,18 +22,22 @@ Private delegate in `AnalyticsTools` for writing one field or property of an obj
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FieldHandler(object object, IntPtr method)"}</code> | Made by the compiler when you assign a method to this delegate; you don't call it directly. |
+| <Link id="m-ctor" /><code>{"FieldHandler(object object, IntPtr method)"}</code> | <span className="api-desc">Made by the compiler when you assign a method to this delegate; you don't call it directly.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(object fieldValue, string fieldName, Type fieldType, StringBuilder logger, AsyncCallback callback, object object)"}</code> | Starts the call on another thread; not supported in Unity, so use `Invoke`. |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | Waits for a call started with `BeginInvoke`; not supported in Unity. |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(object fieldValue, string fieldName, Type fieldType, StringBuilder logger)"}</code> | Calls every method on this delegate with these arguments. |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(object fieldValue, string fieldName, Type fieldType, StringBuilder logger, AsyncCallback callback, object object)"}</code> | <span className="api-desc">Starts the call on another thread; not supported in Unity, so use `Invoke`.</span> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | <span className="api-desc">Waits for a call started with `BeginInvoke`; not supported in Unity.</span> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(object fieldValue, string fieldName, Type fieldType, StringBuilder logger)"}</code> | <span className="api-desc">Calls every method on this delegate with these arguments.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FieldHandler`:
 
+<div className="api-used-in">
+
 [`AnalyticsTools.CreateSerializationStep`](/mod/game-api/types/alta-console/analyticstools#m-createserializationstep).
+
+</div>

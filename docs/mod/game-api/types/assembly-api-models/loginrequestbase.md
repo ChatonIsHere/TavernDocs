@@ -22,11 +22,11 @@ Base for login request bodies: a password hash plus the device id and platform t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> | Creates a `LoginRequestBase` with default values. |
-| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> | Creates a `LoginRequestBase` with default values. |
+| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> | <span className="api-desc">Creates a `LoginRequestBase` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> | <span className="api-desc">Creates a `LoginRequestBase` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> | Hash of the password (see `LoginUtilities.HashString`), never the plain password. |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; private set; }"}</code> | <span className="api-desc">Hash of the password (see `LoginUtilities.HashString`), never the plain password.</span> |

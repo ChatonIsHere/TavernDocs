@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Character/Customization`: menu item classe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Customization()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Character.Customization` with default values. |
+| <Link id="m-ctor" /><code>{"protected Customization()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Character.Customization` with default values.</span> |

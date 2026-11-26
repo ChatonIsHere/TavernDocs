@@ -21,17 +21,21 @@ Message the server sends to chunks when a `BuildupPickup` loses a child, so clie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> | Creates a `BuildupPickup.DisposeData` from `index` and `isForced`. |
+| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> | <span className="api-desc">Creates a `BuildupPickup.DisposeData` from `index` and `isForced`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-index" /><code>{"int Index { get; }"}</code> | Index of the slot that lost its child. |
-| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> | Whether the dispose was forced, passed on to the child's disposable pickups. |
+| <Link id="m-index" /><code>{"int Index { get; }"}</code> | <span className="api-desc">Index of the slot that lost its child.</span> |
+| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> | <span className="api-desc">Whether the dispose was forced, passed on to the child's disposable pickups.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DisposeData`:
 
+<div className="api-used-in">
+
 [`BuildupPickup.NetworkLoseChild`](/mod/game-api/types/global-a-b/builduppickup#m-networklosechild), [`BuildupPickup.syncLoseChild`](/mod/game-api/types/global-a-b/builduppickup#m-synclosechild).
+
+</div>

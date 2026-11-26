@@ -21,16 +21,16 @@ A `BlockableCamera` that counts as blocked when a sphere around the lens overlap
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SphereBlockableCamera()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SphereBlockableCamera()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the check sphere. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Radius of the check sphere.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ A `BlockableCamera` that counts as blocked when a sphere around the lens overlap
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> | Checks a sphere of `radius` at the camera position against the settings' block layer mask. |
+| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> | <span className="api-desc">Checks a sphere of `radius` at the camera position against the settings' block layer mask.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor only: draws the check sphere. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Editor only: draws the check sphere.</span> |
 
 </details>

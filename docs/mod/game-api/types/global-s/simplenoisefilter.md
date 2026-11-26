@@ -23,18 +23,18 @@ Forest spawn point modifier asset that scales each point's spawn weight by simpl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleNoiseFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SimpleNoiseFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scale" /><code>{"private float scale"}</code> | Multiplier on point coordinates before sampling noise. Larger means smaller patches. |
-| <Link id="m-seed" /><code>{"private Vector2 seed"}</code> | Offset into the noise so different filters give different patterns. |
-| <Link id="m-valuecurve" /><code>{"private AnimationCurve valueCurve"}</code> | Maps the 0 to 1 noise value to a weight multiplier. |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | <span className="api-desc">Multiplier on point coordinates before sampling noise. Larger means smaller patches.</span> |
+| <Link id="m-seed" /><code>{"private Vector2 seed"}</code> | <span className="api-desc">Offset into the noise so different filters give different patterns.</span> |
+| <Link id="m-valuecurve" /><code>{"private AnimationCurve valueCurve"}</code> | <span className="api-desc">Maps the 0 to 1 noise value to a weight multiplier.</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Forest spawn point modifier asset that scales each point's spawn weight by simpl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Multiplies the point's weight by `valueCurve` applied to the forest's noise at the point. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Multiplies the point's weight by `valueCurve` applied to the forest's noise at the point.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Picks a random seed in the editor if none is set. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Picks a random seed in the editor if none is set.</span> |
 
 </details>

@@ -24,28 +24,28 @@ Server-owned, saved per-player charge counters for limited interactions ("you ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerInteractionManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager">{"PlayerInteractionManager"}</Link>{" instance"}</code> | The last created manager, set in `Awake`. |
-| <Link id="m-maxids" /><code>{"const int maxIDs"}</code> | 2048, the ID range the sync messages can carry. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager">{"PlayerInteractionManager"}</Link>{" instance"}</code> | <span className="api-desc">The last created manager, set in `Awake`.</span> |
+| <Link id="m-maxids" /><code>{"const int maxIDs"}</code> | <span className="api-desc">2048, the ID range the sync messages can carry.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chargesperid" /><code>{"private Dictionary<int, int> chargesPerId"}</code> | Starting charges for each registered id. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-nextid" /><code>{"private int nextID"}</code> | Next id `GetId` will hand out. Saved. |
-| <Link id="m-oldinteractionmultiplier" /><code>{"private float oldInteractionMultiplier"}</code> | Last seen community storage multiplier, to spot changes. |
-| <Link id="m-playerstrackers" /><code>{"private Dictionary<int, Dictionary<int, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{">> playersTrackers"}</code> | Trackers by user id, then by interaction id. Saved, and cleared once per game day. |
-| <Link id="m-syncfull" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncFull"}</code> | Method sync for a full or clear update. |
-| <Link id="m-syncmarker" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> syncMarker"}</code> | Method sync for one tracker. |
-| <Link id="m-timeofdaytorefresh" /><code>{"private float timeOfDayToRefresh"}</code> | Time of day (0 to 1) when all trackers reset. |
+| <Link id="m-chargesperid" /><code>{"private Dictionary<int, int> chargesPerId"}</code> | <span className="api-desc">Starting charges for each registered id.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-nextid" /><code>{"private int nextID"}</code> | <span className="api-desc">Next id `GetId` will hand out. Saved.</span> |
+| <Link id="m-oldinteractionmultiplier" /><code>{"private float oldInteractionMultiplier"}</code> | <span className="api-desc">Last seen community storage multiplier, to spot changes.</span> |
+| <Link id="m-playerstrackers" /><code>{"private Dictionary<int, Dictionary<int, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{">> playersTrackers"}</code> | <span className="api-desc">Trackers by user id, then by interaction id. Saved, and cleared once per game day.</span> |
+| <Link id="m-syncfull" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncFull"}</code> | <span className="api-desc">Method sync for a full or clear update.</span> |
+| <Link id="m-syncmarker" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> syncMarker"}</code> | <span className="api-desc">Method sync for one tracker.</span> |
+| <Link id="m-timeofdaytorefresh" /><code>{"private float timeOfDayToRefresh"}</code> | <span className="api-desc">Time of day (0 to 1) when all trackers reset.</span> |
 
 </details>
 
@@ -53,32 +53,32 @@ Server-owned, saved per-player charge counters for limited interactions ("you ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatedalltrackers" /><code>{"event Action UpdatedAllTrackers"}</code> | Raised when all counters are cleared. |
-| <Link id="m-updatedtracker" /><code>{"event Action<int> UpdatedTracker"}</code> | Raised with the ID when one counter changes for the local player. |
+| <Link id="m-updatedalltrackers" /><code>{"event Action UpdatedAllTrackers"}</code> | <span className="api-desc">Raised when all counters are cleared.</span> |
+| <Link id="m-updatedtracker" /><code>{"event Action<int> UpdatedTracker"}</code> | <span className="api-desc">Raised with the ID when one counter changes for the local player.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkavailableinteractions" /><code>{"int CheckAvailableInteractions("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int id)"}</code> | Charges the player has left for an ID, or the full charge count if they have not used it yet. |
-| <Link id="m-cleartrackers" /><code>{"void ClearTrackers()"}</code> | Resets every player's counters and tells clients. Runs daily, when the community storage multiplier setting changes, and from a progress console command. |
-| <Link id="m-getid" /><code>{"int GetId(int charges)"}</code> | Registers a new counter ID with its charge count and returns the ID. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the full sync and single counter sync messages. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: schedules the daily reset and watches the server's community storage multiplier. |
-| <Link id="m-interact" /><code>{"int Interact("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, int interactions = 1)"}</code> | Server: uses up to `interactions` charges and returns how many were used. On a client it only returns the charges left. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the joining player their counters. |
-| <Link id="m-refund" /><code>{"void Refund("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, int refund)"}</code> | Server: gives charges back to a player for an ID. |
-| <Link id="m-setcharges" /><code>{"void SetCharges(int id, int charges)"}</code> | Changes the charge count of a registered ID. Players who already have a counter keep theirs. |
+| <Link id="m-checkavailableinteractions" /><code>{"int CheckAvailableInteractions("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int id)"}</code> | <span className="api-desc">Charges the player has left for an ID, or the full charge count if they have not used it yet.</span> |
+| <Link id="m-cleartrackers" /><code>{"void ClearTrackers()"}</code> | <span className="api-desc">Resets every player's counters and tells clients. Runs daily, when the community storage multiplier setting changes, and from a progress console command.</span> |
+| <Link id="m-getid" /><code>{"int GetId(int charges)"}</code> | <span className="api-desc">Registers a new counter ID with its charge count and returns the ID.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Sets up the full sync and single counter sync messages.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: schedules the daily reset and watches the server's community storage multiplier.</span> |
+| <Link id="m-interact" /><code>{"int Interact("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, int interactions = 1)"}</code> | <span className="api-desc">Server: uses up to `interactions` charges and returns how many were used. On a client it only returns the charges left.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: sends the joining player their counters.</span> |
+| <Link id="m-refund" /><code>{"void Refund("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, int refund)"}</code> | <span className="api-desc">Server: gives charges back to a player for an ID.</span> |
+| <Link id="m-setcharges" /><code>{"void SetCharges(int id, int charges)"}</code> | <span className="api-desc">Changes the charge count of a registered ID. Players who already have a counter keep theirs.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets the static `instance`. |
-| <Link id="m-gettracker" /><code>{"private bool GetTracker("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, out "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" tracker)"}</code> | Server: gets or creates a player's tracker for an id, starting with that id's registered charges. False if the id isn't registered. |
-| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> | Server: clears all trackers when the community storage multiplier changes. |
-| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isClear)"}</code> | Sends a clear to everyone, or a player's whole tracker list on connect. Client: applies it. |
-| <Link id="m-syncmarker-2" /><code>{"private void SyncMarker("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" arguments)"}</code> | Sends one tracker's id and charges left. Client: stores it under the logged-in user and raises `UpdatedTracker`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Sets the static `instance`.</span> |
+| <Link id="m-gettracker" /><code>{"private bool GetTracker("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int id, out "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" tracker)"}</code> | <span className="api-desc">Server: gets or creates a player's tracker for an id, starting with that id's registered charges. False if the id isn't registered.</span> |
+| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> | <span className="api-desc">Server: clears all trackers when the community storage multiplier changes.</span> |
+| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isClear)"}</code> | <span className="api-desc">Sends a clear to everyone, or a player's whole tracker list on connect. Client: applies it.</span> |
+| <Link id="m-syncmarker-2" /><code>{"private void SyncMarker("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{" arguments)"}</code> | <span className="api-desc">Sends one tracker's id and charges left. Client: stores it under the logged-in user and raises `UpdatedTracker`.</span> |
 
 </details>

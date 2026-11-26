@@ -21,22 +21,22 @@ Server: changes hits made by a crafted tool (damage multipliers, stat changes) b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ImpactModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basepart" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" basePart"}</code> | The crafting part whose root or slots are watched. |
-| <Link id="m-isforwholetool" /><code>{"private bool isForWholeTool"}</code> | When on, modifies every hit of the whole tool instead of only attached parts. |
-| <Link id="m-isonlywhenwielded" /><code>{"private bool isOnlyWhenWielded"}</code> | When on, only modifies hits while the tool's pickup is held. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs when a slot is registered twice. |
-| <Link id="m-maps" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{", "}<Link to="/mod/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"> maps"}</code> | The `ImpactorMap` registered for each slot. |
-| <Link id="m-modifiers" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{"[] modifiers"}</code> | The modifier assets run on each hit. |
-| <Link id="m-trackedtool" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" trackedTool"}</code> | The root impact tool hooked when `isForWholeTool` is on. |
+| <Link id="m-basepart" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" basePart"}</code> | <span className="api-desc">The crafting part whose root or slots are watched.</span> |
+| <Link id="m-isforwholetool" /><code>{"private bool isForWholeTool"}</code> | <span className="api-desc">When on, modifies every hit of the whole tool instead of only attached parts.</span> |
+| <Link id="m-isonlywhenwielded" /><code>{"private bool isOnlyWhenWielded"}</code> | <span className="api-desc">When on, only modifies hits while the tool's pickup is held.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger; logs when a slot is registered twice.</span> |
+| <Link id="m-maps" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{", "}<Link to="/mod/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"> maps"}</code> | <span className="api-desc">The `ImpactorMap` registered for each slot.</span> |
+| <Link id="m-modifiers" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactmodifiercomponent">{"ImpactModifierComponent"}</Link>{"[] modifiers"}</code> | <span className="api-desc">The modifier assets run on each hit.</span> |
+| <Link id="m-trackedtool" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" trackedTool"}</code> | <span className="api-desc">The root impact tool hooked when `isForWholeTool` is on.</span> |
 
 </details>
 
@@ -44,23 +44,23 @@ Server: changes hits made by a crafted tool (damage multipliers, stat changes) b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onmodifiedhit" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{"> OnModifiedHit"}</code> | Raised after the modifiers have changed a hit. |
+| <Link id="m-onmodifiedhit" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{"> OnModifiedHit"}</code> | <span className="api-desc">Raised after the modifiers have changed a hit.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: hooks the root tool, or each slot's attached part, plus any `ImpactorMap` on this object. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: hooks the root tool, or each slot's attached part, plus any `ImpactorMap` on this object.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregisterslot" /><code>{"private void DeregisterSlot("}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" point)"}</code> | Unhooks the impact generators of the part that left a slot. |
-| <Link id="m-modifyhit" /><code>{"private void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Runs every modifier on the hit and raises `OnModifiedHit`, if wielding isn't required or the tool is held. |
-| <Link id="m-onrootchanged" /><code>{"private void OnRootChanged("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart)"}</code> | Moves the hit hook to the new root's `ImpactTool`. |
-| <Link id="m-registerimpactormap" /><code>{"private void RegisterImpactorMap("}<Link to="/mod/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{" map)"}</code> | Hooks every impact generator in an `ImpactorMap` so its hits get modified. |
-| <Link id="m-registerslot" /><code>{"private void RegisterSlot("}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" point)"}</code> | Hooks the `ImpactorMap` of the part just attached to a slot. |
+| <Link id="m-deregisterslot" /><code>{"private void DeregisterSlot("}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" point)"}</code> | <span className="api-desc">Unhooks the impact generators of the part that left a slot.</span> |
+| <Link id="m-modifyhit" /><code>{"private void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">Runs every modifier on the hit and raises `OnModifiedHit`, if wielding isn't required or the tool is held.</span> |
+| <Link id="m-onrootchanged" /><code>{"private void OnRootChanged("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart)"}</code> | <span className="api-desc">Moves the hit hook to the new root's `ImpactTool`.</span> |
+| <Link id="m-registerimpactormap" /><code>{"private void RegisterImpactorMap("}<Link to="/mod/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{" map)"}</code> | <span className="api-desc">Hooks every impact generator in an `ImpactorMap` so its hits get modified.</span> |
+| <Link id="m-registerslot" /><code>{"private void RegisterSlot("}<Link to="/mod/game-api/types/alta-crafting/jointpoint">{"JointPoint"}</Link>{" point)"}</code> | <span className="api-desc">Hooks the `ImpactorMap` of the part just attached to a slot.</span> |
 
 </details>

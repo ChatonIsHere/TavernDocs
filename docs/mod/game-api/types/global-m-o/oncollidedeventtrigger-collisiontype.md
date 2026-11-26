@@ -28,4 +28,8 @@ Flags for which physics events fire an `OnCollidedEventTrigger`: collisions, tri
 
 Members of other types that take, return or hold a `CollisionType`:
 
+<div className="api-used-in">
+
 [`OnCollidedEventTrigger.validEvent`](/mod/game-api/types/global-m-o/oncollidedeventtrigger#m-validevent).
+
+</div>

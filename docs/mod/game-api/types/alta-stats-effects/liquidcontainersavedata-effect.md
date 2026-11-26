@@ -21,17 +21,21 @@ One saved effect on a custom liquid.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Effect()"}</code> | Creates a `LiquidContainerSaveData.Effect` with default values. |
+| <Link id="m-ctor" /><code>{"Effect()"}</code> | <span className="api-desc">Creates a `LiquidContainerSaveData.Effect` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> | The effect applied. |
-| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> | Multiplier on the effect's strength. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The effect applied.</span> |
+| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> | <span className="api-desc">Multiplier on the effect's strength.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Effect`:
 
+<div className="api-used-in">
+
 [`LiquidContainerSaveData.CustomData.effects`](/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata#m-effects).
+
+</div>

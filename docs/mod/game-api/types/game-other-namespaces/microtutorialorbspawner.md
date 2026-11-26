@@ -21,28 +21,28 @@ Leftover placeholder: it destroys its own GameObject on initialize and does noth
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialOrbSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MicroTutorialOrbSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Class logger. |
-| <Link id="m-microtutorialsettings" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" microTutorialSettings"}</code> | Serialized tutorial reference (unused). |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-microtutorialsettings" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" microTutorialSettings"}</code> | <span className="api-desc">Serialized tutorial reference (unused).</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"private static "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialfaceorbspawnsettings">{"MicroTutorialFaceOrbSpawnSettings"}</Link>{" Settings { get; }"}</code> | The global `MicroTutorialFaceOrbSpawnSettings` (unused). |
+| <Link id="m-settings" /><code>{"private static "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialfaceorbspawnsettings">{"MicroTutorialFaceOrbSpawnSettings"}</Link>{" Settings { get; }"}</code> | <span className="api-desc">The global `MicroTutorialFaceOrbSpawnSettings` (unused).</span> |
 
 </details>
 
@@ -50,4 +50,4 @@ Leftover placeholder: it destroys its own GameObject on initialize and does noth
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Destroys this GameObject. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Destroys this GameObject.</span> |

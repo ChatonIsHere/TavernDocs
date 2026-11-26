@@ -18,13 +18,13 @@ Leftover Quest cloud storage holder. In this build it only has empty properties 
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasbeensetup" /><code>{"private static bool hasBeenSetup"}</code> | Always false; unused. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger; unused. |
+| <Link id="m-hasbeensetup" /><code>{"private static bool hasBeenSetup"}</code> | <span className="api-desc">Always false; unused.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger; unused.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ Leftover Quest cloud storage holder. In this build it only has empty properties 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-folder" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; private set; }"}</code> | Storage folder; never set in this build. |
-| <Link id="m-storagepath" /><code>{"static string StoragePath { get; private set; }"}</code> | Storage path; never set in this build. |
+| <Link id="m-folder" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" Folder { get; private set; }"}</code> | <span className="api-desc">Storage folder; never set in this build.</span> |
+| <Link id="m-storagepath" /><code>{"static string StoragePath { get; private set; }"}</code> | <span className="api-desc">Storage path; never set in this build.</span> |

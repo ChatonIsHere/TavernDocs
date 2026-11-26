@@ -21,10 +21,10 @@ Runtime instance of the `Mask` plugin part: sets cells to a fail value where ano
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaskInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/mask">{"Mask"}</Link>{" part)"}</code> | Creates a `MaskInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"MaskInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/mask">{"Mask"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `MaskInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | Sets each cell to `Fail` when the mask layer is below the threshold (or at or above it, depending on `IsMoreThan`). |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">Sets each cell to `Fail` when the mask layer is below the threshold (or at or above it, depending on `IsMoreThan`).</span> |

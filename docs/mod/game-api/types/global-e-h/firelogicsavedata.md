@@ -23,10 +23,10 @@ Save data for `FireLogic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> | Creates a `FireLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> | <span className="api-desc">Creates a `FireLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activatedbylogicsaved" /><code>{"bool activatedByLogicSaved"}</code> | Saved value of `activatedByLogic`. |
+| <Link id="m-activatedbylogicsaved" /><code>{"bool activatedByLogicSaved"}</code> | <span className="api-desc">Saved value of `activatedByLogic`.</span> |

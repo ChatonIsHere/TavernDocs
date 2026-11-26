@@ -22,10 +22,10 @@ Postfixes `ServerHostingGameMode.OnStartSucceeded` to load every cosmetic into m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadcosmeticsintoramifappropriate" /><code>{"static void LoadCosmeticsIntoRamIfAppropriate()"}</code> | Calls `Purchasable.LoadAllIntoRAM` and logs how long it took. |
+| <Link id="m-loadcosmeticsintoramifappropriate" /><code>{"static void LoadCosmeticsIntoRamIfAppropriate()"}</code> | <span className="api-desc">Calls `Purchasable.LoadAllIntoRAM` and logs how long it took.</span> |

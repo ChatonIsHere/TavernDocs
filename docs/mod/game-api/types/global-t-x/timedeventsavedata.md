@@ -24,11 +24,11 @@ Save data (version 1) for `SerializedTimedEvent`: whether its timers have starte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> | Creates a `TimedEventSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> | <span className="api-desc">Creates a `TimedEventSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | Whether the timed event had been started when saved. |
-| <Link id="m-timers" /><code><Link to="/mod/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{"[] timers"}</code> | The pending timers, each with its remaining `TimeSpan` and the index of the setup it belongs to. |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | <span className="api-desc">Whether the timed event had been started when saved.</span> |
+| <Link id="m-timers" /><code><Link to="/mod/game-api/types/global-t-x/timedeventsavedata-timerdata">{"TimedEventSaveData.TimerData"}</Link>{"[] timers"}</code> | <span className="api-desc">The pending timers, each with its remaining `TimeSpan` and the index of the setup it belongs to.</span> |

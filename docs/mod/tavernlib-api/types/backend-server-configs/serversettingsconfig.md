@@ -22,16 +22,16 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> | Regex for a 64 character lowercase hex string, used to tell a stored hash from a plain password. |
+| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> | <span className="api-desc">Regex for a 64 character lowercase hex string, used to tell a stored hash from a plain password.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readfromfile" /><code>{"override void ReadFromFile()"}</code> | Reads the file, then makes and saves a random `community_listing_token` if it's empty. |
-| <Link id="m-tidy" /><code>{"protected override bool Tidy("}<Link to="/mod/tavernlib-api/types/backend-server-configs/serversettings">{"ServerSettings"}</Link>{" settings)"}</code> | Swaps a plain `password` for its hash, or hashes a `password_hash` that isn't a SHA-256 hex string. Returns true when it changed anything. |
+| <Link id="m-readfromfile" /><code>{"override void ReadFromFile()"}</code> | <span className="api-desc">Reads the file, then makes and saves a random `community_listing_token` if it's empty.</span> |
+| <Link id="m-tidy" /><code>{"protected override bool Tidy("}<Link to="/mod/tavernlib-api/types/backend-server-configs/serversettings">{"ServerSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Swaps a plain `password` for its hash, or hashes a `password_hash` that isn't a SHA-256 hex string. Returns true when it changed anything.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> | Hashes a password twice with SHA-256, the form stored in `password_hash`. |
+| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> | <span className="api-desc">Hashes a password twice with SHA-256, the form stored in `password_hash`.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 Members of other types that take, return or hold a `ServerSettingsConfig`:
 
+<div className="api-used-in">
+
 [`TavernManager.ServerConfig`](/mod/tavernlib-api/types/backend-api/tavernmanager#m-serverconfig), [`ServerListingPayload.FromConfig`](/mod/tavernlib-api/types/backend-server/serverlistingpayload#m-fromconfig), [`ServerListingPayload.ResolveScene`](/mod/tavernlib-api/types/backend-server/serverlistingpayload#m-resolvescene).
+
+</div>

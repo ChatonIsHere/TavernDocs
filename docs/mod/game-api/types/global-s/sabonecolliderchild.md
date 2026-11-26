@@ -21,4 +21,4 @@ Empty marker component from the SA Collider Builder asset, probably tagging coll
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SABoneColliderChild()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SABoneColliderChild()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

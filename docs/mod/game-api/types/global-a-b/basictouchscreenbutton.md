@@ -22,29 +22,29 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allrenderers" /><code>{"Renderer[] allRenderers"}</code> | Renderers that share the button's material. |
-| <Link id="m-buttonsize" /><code>{"Vector2 buttonSize"}</code> | Backing value for `ButtonSize`. |
-| <Link id="m-idlealpha" /><code>{"float idleAlpha"}</code> | Material alpha when not pressed. |
-| <Link id="m-mainrenderer" /><code>{"Renderer mainRenderer"}</code> | Main renderer whose material alpha changes. |
-| <Link id="m-pressedalpha" /><code>{"float pressedAlpha"}</code> | Material alpha when pressed. |
-| <Link id="m-alpha" /><code>{"protected static readonly int _Alpha"}</code> | Shader property id for `_Alpha`. |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger. |
+| <Link id="m-allrenderers" /><code>{"Renderer[] allRenderers"}</code> | <span className="api-desc">Renderers that share the button's material.</span> |
+| <Link id="m-buttonsize" /><code>{"Vector2 buttonSize"}</code> | <span className="api-desc">Backing value for `ButtonSize`.</span> |
+| <Link id="m-idlealpha" /><code>{"float idleAlpha"}</code> | <span className="api-desc">Material alpha when not pressed.</span> |
+| <Link id="m-mainrenderer" /><code>{"Renderer mainRenderer"}</code> | <span className="api-desc">Main renderer whose material alpha changes.</span> |
+| <Link id="m-pressedalpha" /><code>{"float pressedAlpha"}</code> | <span className="api-desc">Material alpha when pressed.</span> |
+| <Link id="m-alpha" /><code>{"protected static readonly int _Alpha"}</code> | <span className="api-desc">Shader property id for `_Alpha`.</span> |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | <span className="api-desc">Shared logger.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code>{"private Material material"}</code> | Instance of the main renderer's material, shared by all its renderers, whose `_Alpha` shows pressed or idle. |
-| <Link id="m-onpressed" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> | Event behind `Pressed`, invoked by `Press`. |
-| <Link id="m-onreleased" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> | Event behind `Released`, invoked by `Release`. |
-| <Link id="m-sounds" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> | Optional press and release sounds, hooked up in `Awake`. |
+| <Link id="m-material" /><code>{"private Material material"}</code> | <span className="api-desc">Instance of the main renderer's material, shared by all its renderers, whose `_Alpha` shows pressed or idle.</span> |
+| <Link id="m-onpressed" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> | <span className="api-desc">Event behind `Pressed`, invoked by `Press`.</span> |
+| <Link id="m-onreleased" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> | <span className="api-desc">Event behind `Released`, invoked by `Release`.</span> |
+| <Link id="m-sounds" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> | <span className="api-desc">Optional press and release sounds, hooked up in `Awake`.</span> |
 
 </details>
 
@@ -52,34 +52,34 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonsize-2" /><code>{"virtual Vector2 ButtonSize { get; }"}</code> | Size of the touch area. |
-| <Link id="m-isenabled" /><code>{"virtual bool IsEnabled { get; set; }"}</code> | Whether the button can be pressed. |
-| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> | Whether the button is pressed. |
+| <Link id="m-buttonsize-2" /><code>{"virtual Vector2 ButtonSize { get; }"}</code> | <span className="api-desc">Size of the touch area.</span> |
+| <Link id="m-isenabled" /><code>{"virtual bool IsEnabled { get; set; }"}</code> | <span className="api-desc">Whether the button can be pressed.</span> |
+| <Link id="m-state" /><code>{"bool State { get; private set; }"}</code> | <span className="api-desc">Whether the button is pressed.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pressed" /><code>{"event Action Pressed"}</code> | Raised when the button is pressed. |
-| <Link id="m-released" /><code>{"event Action Released"}</code> | Raised when the button is released. |
+| <Link id="m-pressed" /><code>{"event Action Pressed"}</code> | <span className="api-desc">Raised when the button is pressed.</span> |
+| <Link id="m-released" /><code>{"event Action Released"}</code> | <span className="api-desc">Raised when the button is released.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-press" /><code>{"void Press()"}</code> | Marks the button pressed and raises `Pressed`. |
-| <Link id="m-release" /><code>{"void Release()"}</code> | Marks the button released and raises `Released`. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Makes a material copy for the renderers and hooks the press and release sounds. |
-| <Link id="m-internalpress" /><code>{"protected virtual void InternalPress()"}</code> | Hook for subclasses, called after `Pressed`. |
-| <Link id="m-internalrelease" /><code>{"protected virtual void InternalRelease()"}</code> | Hook for subclasses, called after `Released`. |
-| <Link id="m-setalpha" /><code>{"protected void SetAlpha(bool isPressed)"}</code> | Sets the material alpha to the pressed or idle value. |
-| <Link id="m-setpressedalpha" /><code>{"protected void SetPressedAlpha()"}</code> | Sets the material alpha to the pressed value. |
+| <Link id="m-press" /><code>{"void Press()"}</code> | <span className="api-desc">Marks the button pressed and raises `Pressed`.</span> |
+| <Link id="m-release" /><code>{"void Release()"}</code> | <span className="api-desc">Marks the button released and raises `Released`.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Makes a material copy for the renderers and hooks the press and release sounds.</span> |
+| <Link id="m-internalpress" /><code>{"protected virtual void InternalPress()"}</code> | <span className="api-desc">Hook for subclasses, called after `Pressed`.</span> |
+| <Link id="m-internalrelease" /><code>{"protected virtual void InternalRelease()"}</code> | <span className="api-desc">Hook for subclasses, called after `Released`.</span> |
+| <Link id="m-setalpha" /><code>{"protected void SetAlpha(bool isPressed)"}</code> | <span className="api-desc">Sets the material alpha to the pressed or idle value.</span> |
+| <Link id="m-setpressedalpha" /><code>{"protected void SetPressedAlpha()"}</code> | <span className="api-desc">Sets the material alpha to the pressed value.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor: draws the button's touch area as a wire rectangle. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Editor: draws the button's touch area as a wire rectangle.</span> |
 
 </details>

@@ -22,17 +22,17 @@ Singleton that gives each `GenerationStarter` an id and makes sure terrain is on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainModificationRegister()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TerrainModificationRegister()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nextid" /><code>{"private uint nextId"}</code> | Next id to hand out. |
-| <Link id="m-spawned" /><code>{"private HashSet<uint> spawned"}</code> | Ids that have already modified terrain. |
+| <Link id="m-nextid" /><code>{"private uint nextId"}</code> | <span className="api-desc">Next id to hand out.</span> |
+| <Link id="m-spawned" /><code>{"private HashSet<uint> spawned"}</code> | <span className="api-desc">Ids that have already modified terrain.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Singleton that gives each `GenerationStarter` an id and makes sure terrain is on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkmodify" /><code>{"bool CheckModify(uint id)"}</code> | Returns true the first time an id is checked, so the caller should modify terrain; false after that. |
-| <Link id="m-getnextid" /><code>{"uint GetNextId()"}</code> | Returns a new id, counting up from 1. |
+| <Link id="m-checkmodify" /><code>{"bool CheckModify(uint id)"}</code> | <span className="api-desc">Returns true the first time an id is checked, so the caller should modify terrain; false after that.</span> |
+| <Link id="m-getnextid" /><code>{"uint GetNextId()"}</code> | <span className="api-desc">Returns a new id, counting up from 1.</span> |

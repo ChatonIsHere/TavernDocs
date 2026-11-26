@@ -23,16 +23,16 @@ Forest fill spawn modifier that scales each spawn point by a curve of its weight
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScaleWithScoreModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ScaleWithScoreModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scoretoscale" /><code>{"private AnimationCurve scoreToScale"}</code> | Curve from weight to scale multiplier. Default goes from 0.5 at 0 to 1 at 1. |
+| <Link id="m-scoretoscale" /><code>{"private AnimationCurve scoreToScale"}</code> | <span className="api-desc">Curve from weight to scale multiplier. Default goes from 0.5 at 0 to 1 at 1.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill spawn modifier that scales each spawn point by a curve of its weight
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | Multiplies the point's scale by `scoreToScale` evaluated at the point's weight. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Multiplies the point's scale by `scoreToScale` evaluated at the point's weight.</span> |

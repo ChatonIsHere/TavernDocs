@@ -21,10 +21,10 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | Creates a `MessageResult` with default values. |
+| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | <span className="api-desc">Creates a `MessageResult` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"T data"}</code> | The returned value. |
+| <Link id="m-data" /><code>{"T data"}</code> | <span className="api-desc">The returned value.</span> |

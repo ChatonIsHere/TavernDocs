@@ -23,26 +23,26 @@ Locomotion modifier check asset that works out how deep a smooth-locomotion play
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DepthCheckLocoCheck()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DepthCheckLocoCheck()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>11 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkingplayers" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{", "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-modifiercheck">{"DepthCheckLocoCheck.ModifierCheck"}</Link>{"> checkingPlayers"}</code> | Players inside the volume and their current depth. |
-| <Link id="m-deepactions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifieraction">{"LocomotionModifierAction"}</Link>{"[] deepActions"}</code> | Actions run while the player is deep. |
-| <Link id="m-heightmodifierfordepth" /><code>{"private float heightModifierForDepth"}</code> | Share of the player's capsule height at which shallow becomes deep. |
-| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> | Whether to find the surface by raycasting down instead of using the volume's top. |
-| <Link id="m-mindepth" /><code>{"private float minDepth"}</code> | Depth below which the player counts as out. |
-| <Link id="m-raycastheight" /><code>{"private float raycastHeight"}</code> | How far above the feet the raycast starts. |
-| <Link id="m-raycastmask" /><code>{"private LayerMask raycastMask"}</code> | Layers the surface raycast hits. |
-| <Link id="m-shallowactions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifieraction">{"LocomotionModifierAction"}</Link>{"[] shallowActions"}</code> | Actions run while the player is shallow. |
-| <Link id="m-teleportblock" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" teleportBlock"}</code> | Depths that teleporting into is blocked for. |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared fixed-update module the check runs in. |
-| <Link id="m-updatepositions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> | Registration of `UpdatePositions`, removed when no players are tracked. |
+| <Link id="m-checkingplayers" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{", "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-modifiercheck">{"DepthCheckLocoCheck.ModifierCheck"}</Link>{"> checkingPlayers"}</code> | <span className="api-desc">Players inside the volume and their current depth.</span> |
+| <Link id="m-deepactions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifieraction">{"LocomotionModifierAction"}</Link>{"[] deepActions"}</code> | <span className="api-desc">Actions run while the player is deep.</span> |
+| <Link id="m-heightmodifierfordepth" /><code>{"private float heightModifierForDepth"}</code> | <span className="api-desc">Share of the player's capsule height at which shallow becomes deep.</span> |
+| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> | <span className="api-desc">Whether to find the surface by raycasting down instead of using the volume's top.</span> |
+| <Link id="m-mindepth" /><code>{"private float minDepth"}</code> | <span className="api-desc">Depth below which the player counts as out.</span> |
+| <Link id="m-raycastheight" /><code>{"private float raycastHeight"}</code> | <span className="api-desc">How far above the feet the raycast starts.</span> |
+| <Link id="m-raycastmask" /><code>{"private LayerMask raycastMask"}</code> | <span className="api-desc">Layers the surface raycast hits.</span> |
+| <Link id="m-shallowactions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifieraction">{"LocomotionModifierAction"}</Link>{"[] shallowActions"}</code> | <span className="api-desc">Actions run while the player is shallow.</span> |
+| <Link id="m-teleportblock" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" teleportBlock"}</code> | <span className="api-desc">Depths that teleporting into is blocked for.</span> |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | <span className="api-desc">Shared fixed-update module the check runs in.</span> |
+| <Link id="m-updatepositions" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> | <span className="api-desc">Registration of `UpdatePositions`, removed when no players are tracked.</span> |
 
 </details>
 
@@ -50,19 +50,19 @@ Locomotion modifier check asset that works out how deep a smooth-locomotion play
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enter" /><code>{"override void Enter("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | Starts tracking a player who entered the volume, with the volume's top as the surface. |
-| <Link id="m-isvalidteleportationposition" /><code>{"override bool IsValidTeleportationPosition(Vector3 position, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, Bounds bounds)"}</code> | Returns false if the target spot is at a depth listed in `teleportBlock`. |
-| <Link id="m-leave" /><code>{"override void Leave("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | Stops tracking the player and finishes their current depth's actions. |
+| <Link id="m-enter" /><code>{"override void Enter("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | <span className="api-desc">Starts tracking a player who entered the volume, with the volume's top as the surface.</span> |
+| <Link id="m-isvalidteleportationposition" /><code>{"override bool IsValidTeleportationPosition(Vector3 position, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, Bounds bounds)"}</code> | <span className="api-desc">Returns false if the target spot is at a depth listed in `teleportBlock`.</span> |
+| <Link id="m-leave" /><code>{"override void Leave("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | <span className="api-desc">Stops tracking the player and finishes their current depth's actions.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enterdepth" /><code>{"private void EnterDepth("}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" depth, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Begins the shallow or deep actions for the player. |
-| <Link id="m-getdepth" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" GetDepth("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, float surface)"}</code> | Gets the player's depth below the surface (or a raycast hit): out, shallow, or deep past a share of their height. |
-| <Link id="m-getdepth-2" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" GetDepth(Vector3 position, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, float surface)"}</code> | Gets the player's depth below the surface (or a raycast hit): out, shallow, or deep past a share of their height. |
-| <Link id="m-leavedepth" /><code>{"private void LeaveDepth("}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" depth, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Finishes the shallow or deep actions for the player. |
-| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> | Each fixed update, switches actions for any tracked player whose depth changed. |
+| <Link id="m-enterdepth" /><code>{"private void EnterDepth("}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" depth, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Begins the shallow or deep actions for the player.</span> |
+| <Link id="m-getdepth" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" GetDepth("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, float surface)"}</code> | <span className="api-desc">Gets the player's depth below the surface (or a raycast hit): out, shallow, or deep past a share of their height.</span> |
+| <Link id="m-getdepth-2" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" GetDepth(Vector3 position, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, float surface)"}</code> | <span className="api-desc">Gets the player's depth below the surface (or a raycast hit): out, shallow, or deep past a share of their height.</span> |
+| <Link id="m-leavedepth" /><code>{"private void LeaveDepth("}<Link to="/mod/game-api/types/global-c-d/depthchecklococheck-depth">{"DepthCheckLocoCheck.Depth"}</Link>{" depth, "}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Finishes the shallow or deep actions for the player.</span> |
+| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> | <span className="api-desc">Each fixed update, switches actions for any tracked player whose depth changed.</span> |
 
 </details>

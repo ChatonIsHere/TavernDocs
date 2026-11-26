@@ -21,11 +21,15 @@ Anything from the web API with a numeric ID and a name, such as `UserInfo` and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> | The entity's numeric ID. |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The entity's display name. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; }"}</code> | <span className="api-desc">The entity's numeric ID.</span> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">The entity's display name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `INamedEntity`:
 
+<div className="api-used-in">
+
 [`OculusFriendsListPanel.InviteToBeFriend`](/mod/game-api/types/alta-menus/oculusfriendslistpanel#m-invitetobefriend).
+
+</div>

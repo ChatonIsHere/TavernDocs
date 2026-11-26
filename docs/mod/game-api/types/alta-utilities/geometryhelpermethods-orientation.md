@@ -29,4 +29,8 @@ Turn direction of three points (collinear, clockwise or anticlockwise), used by 
 
 Members of other types that take, return or hold a `Orientation`:
 
+<div className="api-used-in">
+
 [`GeometryHelperMethods.IntersectionOrientation`](/mod/game-api/types/alta-utilities/geometryhelpermethods#m-intersectionorientation).
+
+</div>

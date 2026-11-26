@@ -21,4 +21,4 @@ Pool that static environment piece instances go back to. `StaticEnvironmentPiece
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"void Release("}<Link to="/mod/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> | Returns an instance to the pool. |
+| <Link id="m-release" /><code>{"void Release("}<Link to="/mod/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> | <span className="api-desc">Returns an instance to the pool.</span> |

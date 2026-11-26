@@ -21,10 +21,10 @@ Like `GetComponentAttribute`, but searches this object and its parents.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentInParentAttribute()"}</code> | Creates a `GetComponentInParentAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentInParentAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentInParentAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | First matching component in this object or its parents. |
+| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | <span className="api-desc">First matching component in this object or its parents.</span> |

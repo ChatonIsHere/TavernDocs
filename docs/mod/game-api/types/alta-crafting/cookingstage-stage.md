@@ -30,4 +30,8 @@ How cooked a food item is: burnt, cooked, ripe or unripe. Held in `CookingStage.
 
 Members of other types that take, return or hold a `Stage`:
 
+<div className="api-used-in">
+
 [`CookingStage.stage`](/mod/game-api/types/alta-crafting/cookingstage#m-stage).
+
+</div>

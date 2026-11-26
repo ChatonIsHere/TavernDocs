@@ -23,12 +23,12 @@ Save data for a `SpawnBuried` dig spot (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnBuriedSaveData()"}</code> | Creates a `SpawnBuriedSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SpawnBuriedSaveData()"}</code> | <span className="api-desc">Creates a `SpawnBuriedSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distribution" /><code><Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | The spot's spawn distribution. |
-| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> | Child index of the buried item in the save, or -1 if there is none. |
-| <Link id="m-spawnprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawnPrefab"}</code> | The spot's fixed spawn prefab. |
+| <Link id="m-distribution" /><code><Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | <span className="api-desc">The spot's spawn distribution.</span> |
+| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> | <span className="api-desc">Child index of the buried item in the save, or -1 if there is none.</span> |
+| <Link id="m-spawnprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawnPrefab"}</code> | <span className="api-desc">The spot's fixed spawn prefab.</span> |

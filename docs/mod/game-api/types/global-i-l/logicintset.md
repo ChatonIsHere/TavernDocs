@@ -22,27 +22,27 @@ Saved integer that is sent to `onValueChanged` once at start. Saved and loaded t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntSet()"}</code> | Creates a `LogicIntSet` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntSet()"}</code> | <span className="api-desc">Creates a `LogicIntSet` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueChanged"}</code> | Event that receives the value at start. |
-| <Link id="m-value" /><code>{"private int value"}</code> | The saved integer. |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueChanged"}</code> | <span className="api-desc">Event that receives the value at start.</span> |
+| <Link id="m-value" /><code>{"private int value"}</code> | <span className="api-desc">The saved integer.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Fires `onValueChanged` with the stored value. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Fires `onValueChanged` with the stored value.</span> |
 
 </details>

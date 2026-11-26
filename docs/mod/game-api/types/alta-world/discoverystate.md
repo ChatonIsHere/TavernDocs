@@ -28,4 +28,8 @@ How much a player knows about a map landmark: nothing, aware of it, or discovere
 
 Members of other types that take, return or hold a `DiscoveryState`:
 
+<div className="api-used-in">
+
 [`Landmark.defaultState`](/mod/game-api/types/alta-world/landmark#m-defaultstate), [`Landmark.DefaultState`](/mod/game-api/types/alta-world/landmark#m-defaultstate-2), [`LandmarkSaveData.DefaultState`](/mod/game-api/types/alta-world/landmarksavedata#m-defaultstate), [`MarkerInfo.DefaultState`](/mod/game-api/types/alta-world/markerinfo#m-defaultstate), [`OldLandmarkSaveData1.DefaultState`](/mod/game-api/types/alta-world/oldlandmarksavedata1#m-defaultstate), [`ServerLandmarkManager.DefaultStates`](/mod/game-api/types/alta-world/serverlandmarkmanager#m-defaultstates).
+
+</div>

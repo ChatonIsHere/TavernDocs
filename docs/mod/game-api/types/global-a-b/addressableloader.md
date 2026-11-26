@@ -21,27 +21,27 @@ Loads an Addressables prefab and instantiates it under itself, only on the chose
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AddressableLoader()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AddressableLoader()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetaddressable" /><code>{"private AssetReference targetAddressable"}</code> | The addressable prefab to load. |
-| <Link id="m-targetplatform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> | Platforms this runs on. |
+| <Link id="m-targetaddressable" /><code>{"private AssetReference targetAddressable"}</code> | <span className="api-desc">The addressable prefab to load.</span> |
+| <Link id="m-targetplatform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> | <span className="api-desc">Platforms this runs on.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private async void Start()"}</code> | If the current platform matches, loads the addressable and instantiates it as a child. |
+| <Link id="m-start" /><code>{"private async void Start()"}</code> | <span className="api-desc">If the current platform matches, loads the addressable and instantiates it as a child.</span> |
 
 </details>

@@ -22,19 +22,19 @@ Character component that runs a FABRIK neck IK toward the head target and can fo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NeckIKController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NeckIKController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> | Transform the neck reaches for and the head copies. |
-| <Link id="m-isapplyinrotationlimitonoverride" /><code>{"private bool isApplyinRotationLimitOnOverride"}</code> | Whether to apply the head bone's rotation limit after overriding it. |
-| <Link id="m-isoverridingheadrotation" /><code>{"private bool isOverridingHeadRotation"}</code> | Whether the head bone copies the target's rotation after the IK runs. |
-| <Link id="m-neckik" /><code>{"private FABRIK neckIK"}</code> | Backing field for `NeckIK`. |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> | <span className="api-desc">Transform the neck reaches for and the head copies.</span> |
+| <Link id="m-isapplyinrotationlimitonoverride" /><code>{"private bool isApplyinRotationLimitOnOverride"}</code> | <span className="api-desc">Whether to apply the head bone's rotation limit after overriding it.</span> |
+| <Link id="m-isoverridingheadrotation" /><code>{"private bool isOverridingHeadRotation"}</code> | <span className="api-desc">Whether the head bone copies the target's rotation after the IK runs.</span> |
+| <Link id="m-neckik" /><code>{"private FABRIK neckIK"}</code> | <span className="api-desc">Backing field for `NeckIK`.</span> |
 
 </details>
 
@@ -42,21 +42,21 @@ Character component that runs a FABRIK neck IK toward the head target and can fo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-neckik-2" /><code>{"FABRIK NeckIK { get; set; }"}</code> | The FABRIK component for the neck. |
+| <Link id="m-neckik-2" /><code>{"FABRIK NeckIK { get; set; }"}</code> | <span className="api-desc">The FABRIK component for the neck.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | Updates the neck IK, overrides the head rotation, then runs the base fixed update. |
-| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | Turns the neck IK component on or off. Logs a warning if there is none. |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | <span className="api-desc">Updates the neck IK, overrides the head rotation, then runs the base fixed update.</span> |
+| <Link id="m-setactive" /><code>{"void SetActive(bool isActive)"}</code> | <span className="api-desc">Turns the neck IK component on or off. Logs a warning if there is none.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | In the editor, sets the head target as the IK solver's target. |
-| <Link id="m-overrideheadrotation" /><code>{"private void OverrideHeadRotation()"}</code> | If enabled, sets the third neck bone's rotation to the head target's and optionally applies its rotation limit. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">In the editor, sets the head target as the IK solver's target.</span> |
+| <Link id="m-overrideheadrotation" /><code>{"private void OverrideHeadRotation()"}</code> | <span className="api-desc">If enabled, sets the third neck bone's rotation to the head target's and optionally applies its rotation limit.</span> |
 
 </details>

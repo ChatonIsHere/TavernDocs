@@ -27,4 +27,8 @@ Comfort setting for movement: delayed or immediate.
 
 Members of other types that take, return or hold a `MovementConfortSpeed`:
 
+<div className="api-used-in">
+
 [`GameSettings.MovementComfortSpeed`](/mod/game-api/types/alta-utilities/gamesettings#m-movementcomfortspeed), [`PlayerVisionComfort.UpdateSettings`](/mod/game-api/types/global-p/playervisioncomfort#m-updatesettings-2), [`PlayerVisionComfortSettings.GetComfortSpeed`](/mod/game-api/types/global-p/playervisioncomfortsettings#m-getcomfortspeed).
+
+</div>

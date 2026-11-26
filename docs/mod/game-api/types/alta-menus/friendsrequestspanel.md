@@ -21,20 +21,20 @@ Main menu list of friend requests sent to you, with accept and reject options.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FriendsRequestsPanel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FriendsRequestsPanel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> | Analytics service for social events. |
-| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> | Text shown when there are no requests. |
-| <Link id="m-friendslist" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/panelcomponent">{"PanelComponent"}</Link>{" friendsList"}</code> | Friends list panel, refreshed after accepting. |
-| <Link id="m-listelement" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" listElement"}</code> | Row prefab. |
-| <Link id="m-uilist" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> | The list the rows go in. |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> | <span className="api-desc">Analytics service for social events.</span> |
+| <Link id="m-emptylisttext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" emptyListText"}</code> | <span className="api-desc">Text shown when there are no requests.</span> |
+| <Link id="m-friendslist" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/panelcomponent">{"PanelComponent"}</Link>{" friendsList"}</code> | <span className="api-desc">Friends list panel, refreshed after accepting.</span> |
+| <Link id="m-listelement" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/listelementwithbutton">{"ListElementWithButton"}</Link>{" listElement"}</code> | <span className="api-desc">Row prefab.</span> |
+| <Link id="m-uilist" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/uilist">{"UIList"}</Link>{" uiList"}</code> | <span className="api-desc">The list the rows go in.</span> |
 
 </details>
 
@@ -42,18 +42,18 @@ Main menu list of friend requests sent to you, with accept and reject options.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Receives the analytics service. |
-| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> | Reloads the list behind a loading screen. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | <span className="api-desc">Receives the analytics service.</span> |
+| <Link id="m-refreshdata" /><code>{"override async void RefreshData()"}</code> | <span className="api-desc">Reloads the list behind a loading screen.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceptfriendrequest" /><code>{"private async void AcceptFriendRequest("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | Accepts a request, logs analytics, reloads and marks the friends list for refresh. |
-| <Link id="m-rejectfriendrequest" /><code>{"private async void RejectFriendRequest("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | Rejects a request by removing the friendship, then reloads. |
-| <Link id="m-setupfriendslist" /><code>{"private async Task SetupFriendsList()"}</code> | Fetches incoming requests from the web API and builds a row for each. |
-| <Link id="m-showoptionsforfriend" /><code>{"private void ShowOptionsForFriend("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | Shows the Accept and Reject options. |
+| <Link id="m-acceptfriendrequest" /><code>{"private async void AcceptFriendRequest("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | <span className="api-desc">Accepts a request, logs analytics, reloads and marks the friends list for refresh.</span> |
+| <Link id="m-rejectfriendrequest" /><code>{"private async void RejectFriendRequest("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | <span className="api-desc">Rejects a request by removing the friendship, then reloads.</span> |
+| <Link id="m-setupfriendslist" /><code>{"private async Task SetupFriendsList()"}</code> | <span className="api-desc">Fetches incoming requests from the web API and builds a row for each.</span> |
+| <Link id="m-showoptionsforfriend" /><code>{"private void ShowOptionsForFriend("}<Link to="/mod/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" friendship)"}</code> | <span className="api-desc">Shows the Accept and Reject options.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ Main menu list of friend requests sent to you, with accept and reject options.
 
 Members of other types that take, return or hold a `FriendsRequestsPanel`:
 
+<div className="api-used-in">
+
 [`MainMenuVrLifetimeScope.friendsRequestsPanel`](/mod/game-api/types/assembly-other/mainmenuvrlifetimescope#m-friendsrequestspanel).
+
+</div>

@@ -23,11 +23,11 @@ Save data for `StaticGenerationParent` (version 1): the generation seed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> | Creates a `StaticGenerationParentSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> | <span className="api-desc">Creates a `StaticGenerationParentSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isserveronly" /><code>{"bool isServerOnly"}</code> | Saved flag that `StaticGenerationParent` never reads or writes. |
-| <Link id="m-seed" /><code>{"int seed"}</code> | The generation seed saved and loaded by `StaticGenerationParent`. |
+| <Link id="m-isserveronly" /><code>{"bool isServerOnly"}</code> | <span className="api-desc">Saved flag that `StaticGenerationParent` never reads or writes.</span> |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">The generation seed saved and loaded by `StaticGenerationParent`.</span> |

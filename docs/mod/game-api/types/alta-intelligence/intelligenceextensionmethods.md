@@ -21,5 +21,5 @@ Helpers for the unused logic engine.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-constantinitialize" /><code>{"static void ConstantInitialize("}<Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | Calls `ConstantInitialize` on every term in the array, tying its variables to the definition. |
-| <Link id="m-print" /><code>{"static void Print(IEnumerable<"}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> results)"}</code> | Logs each result to the Unity console, or "False" if there are none. |
+| <Link id="m-constantinitialize" /><code>{"static void ConstantInitialize("}<Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] terms, "}<Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Calls `ConstantInitialize` on every term in the array, tying its variables to the definition.</span> |
+| <Link id="m-print" /><code>{"static void Print(IEnumerable<"}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> results)"}</code> | <span className="api-desc">Logs each result to the Unity console, or "False" if there are none.</span> |

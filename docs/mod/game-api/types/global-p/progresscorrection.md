@@ -21,17 +21,17 @@ Remaps a progress value through a curve and passes it on in an event.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressCorrection()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ProgressCorrection()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-correctedprogressupdate" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" correctedProgressUpdate"}</code> | Event that gets the remapped value. |
-| <Link id="m-correctioncurve" /><code>{"private AnimationCurve correctionCurve"}</code> | Curve that remaps progress (linear by default). |
+| <Link id="m-correctedprogressupdate" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" correctedProgressUpdate"}</code> | <span className="api-desc">Event that gets the remapped value.</span> |
+| <Link id="m-correctioncurve" /><code>{"private AnimationCurve correctionCurve"}</code> | <span className="api-desc">Curve that remaps progress (linear by default).</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Remaps a progress value through a curve and passes it on in an event.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateprogress" /><code>{"void UpdateProgress(float progress)"}</code> | Runs `correctedProgressUpdate` with the progress mapped through the curve. |
+| <Link id="m-updateprogress" /><code>{"void UpdateProgress(float progress)"}</code> | <span className="api-desc">Runs `correctedProgressUpdate` with the progress mapped through the curve.</span> |

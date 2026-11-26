@@ -21,10 +21,10 @@ Property attribute that adds text to a field's inspector label, such as a unit l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> | Creates a `LabelAdd` from `labelAddition`. |
+| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> | <span className="api-desc">Creates a `LabelAdd` from `labelAddition`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-labeladdition" /><code>{"string LabelAddition { get; private set; }"}</code> | Text added to the label. |
+| <Link id="m-labeladdition" /><code>{"string LabelAddition { get; private set; }"}</code> | <span className="api-desc">Text added to the label.</span> |

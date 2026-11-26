@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a `JointPoint`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JointPointUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"JointPointUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

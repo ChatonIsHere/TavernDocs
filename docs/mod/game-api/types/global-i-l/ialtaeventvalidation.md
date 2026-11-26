@@ -21,10 +21,14 @@ An event wrapper (such as `AltaEvent`) whose Unity event can be checked for brok
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventbase" /><code>{"UnityEventBase EventBase { get; }"}</code> | The underlying Unity event. |
+| <Link id="m-eventbase" /><code>{"UnityEventBase EventBase { get; }"}</code> | <span className="api-desc">The underlying Unity event.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAltaEventValidation`:
 
+<div className="api-used-in">
+
 [`AltaEventValidationExtensions.Validate`](/mod/game-api/types/global-a-b/altaeventvalidationextensions#m-validate).
+
+</div>

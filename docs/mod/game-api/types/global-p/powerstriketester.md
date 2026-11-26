@@ -21,28 +21,28 @@ Network entity at a skill shrine test area that shows a row of lights counting a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PowerStrikeTester()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PowerStrikeTester()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>13 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countvisualprefab" /><code>{"private GameObject countVisualPrefab"}</code> | Marker prefab. |
-| <Link id="m-countvisuals" /><code>{"private MeshRenderer[] countVisuals"}</code> | Marker renderers. |
-| <Link id="m-currentcount" /><code>{"private int currentCount"}</code> | Strikes made so far. |
-| <Link id="m-dimmaterial" /><code>{"private Material dimMaterial"}</code> | Material for markers not yet reached. |
-| <Link id="m-litmaterial" /><code>{"private Material litMaterial"}</code> | Material for markers reached. |
-| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | Player being tested. |
-| <Link id="m-readymaterial" /><code>{"private Material readyMaterial"}</code> | Material for all markers once the count is reached. |
-| <Link id="m-skill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> | The skill being tested. |
-| <Link id="m-spawnwidth" /><code>{"private float spawnWidth"}</code> | Width of the marker row. |
-| <Link id="m-synccount" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCount"}</code> | Sync for the current count. |
-| <Link id="m-syncstart" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> | Sync for the needed count. |
-| <Link id="m-targetcount" /><code>{"private int targetCount"}</code> | Strikes needed. |
-| <Link id="m-visualsfolder" /><code>{"private Transform visualsFolder"}</code> | Parent of the markers. |
+| <Link id="m-countvisualprefab" /><code>{"private GameObject countVisualPrefab"}</code> | <span className="api-desc">Marker prefab.</span> |
+| <Link id="m-countvisuals" /><code>{"private MeshRenderer[] countVisuals"}</code> | <span className="api-desc">Marker renderers.</span> |
+| <Link id="m-currentcount" /><code>{"private int currentCount"}</code> | <span className="api-desc">Strikes made so far.</span> |
+| <Link id="m-dimmaterial" /><code>{"private Material dimMaterial"}</code> | <span className="api-desc">Material for markers not yet reached.</span> |
+| <Link id="m-litmaterial" /><code>{"private Material litMaterial"}</code> | <span className="api-desc">Material for markers reached.</span> |
+| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | <span className="api-desc">Player being tested.</span> |
+| <Link id="m-readymaterial" /><code>{"private Material readyMaterial"}</code> | <span className="api-desc">Material for all markers once the count is reached.</span> |
+| <Link id="m-skill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> | <span className="api-desc">The skill being tested.</span> |
+| <Link id="m-spawnwidth" /><code>{"private float spawnWidth"}</code> | <span className="api-desc">Width of the marker row.</span> |
+| <Link id="m-synccount" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCount"}</code> | <span className="api-desc">Sync for the current count.</span> |
+| <Link id="m-syncstart" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> | <span className="api-desc">Sync for the needed count.</span> |
+| <Link id="m-targetcount" /><code>{"private int targetCount"}</code> | <span className="api-desc">Strikes needed.</span> |
+| <Link id="m-visualsfolder" /><code>{"private Transform visualsFolder"}</code> | <span className="api-desc">Parent of the markers.</span> |
 
 </details>
 
@@ -50,22 +50,22 @@ Network entity at a skill shrine test area that shows a row of lights counting a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the start and count sync messages. |
-| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: for a strike succession skill, stores the player, reads the needed strike count, sends it and listens for count changes. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the needed count to a joining player. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Sets up the start and count sync messages.</span> |
+| <Link id="m-initializeforplayer" /><code>{"void InitializeForPlayer("}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: for a strike succession skill, stores the player, reads the needed strike count, sends it and listens for count changes.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: sends the needed count to a joining player.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializevisuals" /><code>{"private void InitializeVisuals()"}</code> | Client: makes or trims the marker objects to match the needed count and lays them out. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Stops listening for strike count changes. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the marker layout in the editor. |
-| <Link id="m-synccount-2" /><code>{"private void SyncCount("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends or reads the current strike count (0 to 7) and updates the markers. |
-| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends or reads the needed strike count (0 to 7) and builds the markers on clients. |
-| <Link id="m-updatecount" /><code>{"private void UpdateCount("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, int strikeCount)"}</code> | Server: when the tracked player's count for the skill changes, sends it. |
-| <Link id="m-updatevisual" /><code>{"private void UpdateVisual()"}</code> | Lights one marker per strike, or shows all as ready once the count is reached. |
-| <Link id="m-visualpositions" /><code>{"private IEnumerable<Vector3> VisualPositions() (iterator)"}</code> | Spaces the markers evenly along `spawnWidth`. |
+| <Link id="m-initializevisuals" /><code>{"private void InitializeVisuals()"}</code> | <span className="api-desc">Client: makes or trims the marker objects to match the needed count and lays them out.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Stops listening for strike count changes.</span> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the marker layout in the editor.</span> |
+| <Link id="m-synccount-2" /><code>{"private void SyncCount("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Sends or reads the current strike count (0 to 7) and updates the markers.</span> |
+| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Sends or reads the needed strike count (0 to 7) and builds the markers on clients.</span> |
+| <Link id="m-updatecount" /><code>{"private void UpdateCount("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill, int strikeCount)"}</code> | <span className="api-desc">Server: when the tracked player's count for the skill changes, sends it.</span> |
+| <Link id="m-updatevisual" /><code>{"private void UpdateVisual()"}</code> | <span className="api-desc">Lights one marker per strike, or shows all as ready once the count is reached.</span> |
+| <Link id="m-visualpositions" /><code>{"private IEnumerable<Vector3> VisualPositions() (iterator)"}</code> | <span className="api-desc">Spaces the markers evenly along `spawnWidth`.</span> |
 
 </details>

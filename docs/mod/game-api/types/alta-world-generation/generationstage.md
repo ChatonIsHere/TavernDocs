@@ -34,4 +34,8 @@ Order of cave generation stages, from floor and roof through voxels and marching
 
 Members of other types that take, return or hold a `GenerationStage`:
 
+<div className="api-used-in">
+
 [`Plugin.generationStage`](/mod/game-api/types/alta-world-generation/plugin#m-generationstage), [`Plugin.Stage`](/mod/game-api/types/alta-world-generation/plugin#m-stage).
+
+</div>

@@ -21,10 +21,10 @@ A point whose value drives one colour channel of a `ColorModel`, written into me
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colormodelvalue" /><code>{"float ColorModelValue { get; }"}</code> | The value written into the colour channel. |
+| <Link id="m-colormodelvalue" /><code>{"float ColorModelValue { get; }"}</code> | <span className="api-desc">The value written into the colour channel.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<T> Changed"}</code> | Fired when the value changes, so the model can update its colours. |
+| <Link id="m-changed" /><code>{"event Action<T> Changed"}</code> | <span className="api-desc">Fired when the value changes, so the model can update its colours.</span> |

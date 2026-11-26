@@ -20,12 +20,12 @@ An invite the group has sent to a user, which can be revoked through the Alta we
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingGroupInvite("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/mod/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" memberInfo)"}</code> | Creates an `OutgoingGroupInvite` from `api` and `memberInfo`. |
+| <Link id="m-ctor" /><code>{"internal OutgoingGroupInvite("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/mod/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" memberInfo)"}</code> | <span className="api-desc">Creates an `OutgoingGroupInvite` from `api` and `memberInfo`.</span> |
 
 </details>
 
@@ -33,16 +33,20 @@ An invite the group has sent to a user, which can be revoked through the Alta we
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-memberinfo" /><code><Link to="/mod/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> | The invited user's group member info, including group and user ids. |
+| <Link id="m-memberinfo" /><code><Link to="/mod/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> | <span className="api-desc">The invited user's group member info, including group and user ids.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | Withdraws the invite for that user in that group. |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | <span className="api-desc">Withdraws the invite for that user in that group.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OutgoingGroupInvite`:
 
+<div className="api-used-in">
+
 [`GroupInvites.Add`](/mod/game-api/types/assembly-api-client/groupinvites#m-add), [`OutgoingGroupInvitesPage.RevokeInvite`](/mod/game-api/types/alta-menus/outgoinggroupinvitespage#m-revokeinvite).
+
+</div>

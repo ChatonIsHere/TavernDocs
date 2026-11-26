@@ -20,16 +20,20 @@ Body of an Alta web API request that sends the user's Oculus friends.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> | Creates an `OculusFriendsList` with default values. |
+| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> | <span className="api-desc">Creates an `OculusFriendsList` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oculusfriends" /><code>{"IEnumerable<ulong> OculusFriends { get; set; }"}</code> | Oculus user ids of the user's friends. |
+| <Link id="m-oculusfriends" /><code>{"IEnumerable<ulong> OculusFriends { get; set; }"}</code> | <span className="api-desc">Oculus user ids of the user's friends.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OculusFriendsList`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetOculusFriendships`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getoculusfriendships).
+
+</div>

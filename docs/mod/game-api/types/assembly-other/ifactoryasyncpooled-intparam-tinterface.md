@@ -22,5 +22,5 @@ Async pooled factory that passes one parameter to each spawned instance.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-despawn" /><code>{"void Despawn(TInterface instance)"}</code> | Returns the instance to the pool. |
-| <Link id="m-spawn" /><code>{"Task<TInterface> Spawn(TParam param)"}</code> | Gets or makes an instance, passing it the parameter, and returns it when ready. |
+| <Link id="m-despawn" /><code>{"void Despawn(TInterface instance)"}</code> | <span className="api-desc">Returns the instance to the pool.</span> |
+| <Link id="m-spawn" /><code>{"Task<TInterface> Spawn(TParam param)"}</code> | <span className="api-desc">Gets or makes an instance, passing it the parameter, and returns it when ready.</span> |

@@ -20,17 +20,17 @@ A hand offset for one platform (player mode), listed per hand in `ControllerOffs
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> | Creates a `PlatformHandAlignment` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> | <span className="api-desc">Creates a `PlatformHandAlignment` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> | Backing field for `Platform`. |
-| <Link id="m-transformalignement" /><code>{"private SerializableTransform transformAlignement"}</code> | Backing field for `TransformAlignement`. |
+| <Link id="m-platform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> | <span className="api-desc">Backing field for `Platform`.</span> |
+| <Link id="m-transformalignement" /><code>{"private SerializableTransform transformAlignement"}</code> | <span className="api-desc">Backing field for `TransformAlignement`.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ A hand offset for one platform (player mode), listed per hand in `ControllerOffs
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platform-2" /><code><Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Platform { get; }"}</code> | The platform this offset is for. |
-| <Link id="m-transformalignement-2" /><code>{"SerializableTransform TransformAlignement { get; }"}</code> | The offset transform applied to the hand on that platform. |
+| <Link id="m-platform-2" /><code><Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Platform { get; }"}</code> | <span className="api-desc">The platform this offset is for.</span> |
+| <Link id="m-transformalignement-2" /><code>{"SerializableTransform TransformAlignement { get; }"}</code> | <span className="api-desc">The offset transform applied to the hand on that platform.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlatformHandAlignment`:
 
+<div className="api-used-in">
+
 [`ControllerOffsetSettings.GetHandAlignmentsForHandIndex`](/mod/game-api/types/global-c-d/controlleroffsetsettings#m-gethandalignmentsforhandindex), [`ControllerOffsetSettings.leftHandAlignment`](/mod/game-api/types/global-c-d/controlleroffsetsettings#m-lefthandalignment), [`ControllerOffsetSettings.OffsetIsOpenXr`](/mod/game-api/types/global-c-d/controlleroffsetsettings#m-offsetisopenxr), [`ControllerOffsetSettings.rightHandAlignment`](/mod/game-api/types/global-c-d/controlleroffsetsettings#m-righthandalignment).
+
+</div>

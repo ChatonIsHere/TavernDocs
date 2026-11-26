@@ -20,24 +20,28 @@ A material and LOD level pair, used as a key by `StaticObjectCombiner` to group 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> | Creates a `MaterialLOD` from `material` and `level`. |
+| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> | <span className="api-desc">Creates a `MaterialLOD` from `material` and `level`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-level" /><code>{"int level"}</code> | The LOD level. |
-| <Link id="m-material" /><code>{"Material material"}</code> | The shared material. |
+| <Link id="m-level" /><code>{"int level"}</code> | <span className="api-desc">The LOD level.</span> |
+| <Link id="m-material" /><code>{"Material material"}</code> | <span className="api-desc">The shared material.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True when material and level match. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of material and level. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">True when material and level match.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Hash of material and level.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MaterialLOD`:
 
+<div className="api-used-in">
+
 [`StaticObjectCombiner.GatherRenderers`](/mod/game-api/types/global-s/staticobjectcombiner#m-gatherrenderers), [`StaticObjectCombiner.GetMesh`](/mod/game-api/types/global-s/staticobjectcombiner#m-getmesh), [`StaticObjectCombiner.JoinMeshes`](/mod/game-api/types/global-s/staticobjectcombiner#m-joinmeshes).
+
+</div>

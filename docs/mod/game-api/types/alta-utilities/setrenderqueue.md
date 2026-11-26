@@ -21,20 +21,20 @@ Component that sets the render queue on the materials of its renderers on `Awake
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetRenderQueue()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SetRenderQueue()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-renderqueue" /><code>{"protected int renderQueue"}</code> | Render queue to set. Default 3000 (transparent). |
+| <Link id="m-renderqueue" /><code>{"protected int renderQueue"}</code> | <span className="api-desc">Render queue to set. Default 3000 (transparent).</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ischangingchildren" /><code>{"private bool isChangingChildren"}</code> | Whether direct children are changed too. Default true. |
+| <Link id="m-ischangingchildren" /><code>{"private bool isChangingChildren"}</code> | <span className="api-desc">Whether direct children are changed too. Default true.</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Component that sets the render queue on the materials of its renderers on `Awake
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected void Awake()"}</code> | Applies the render queue to this object and, if `isChangingChildren`, to each direct child. |
+| <Link id="m-awake" /><code>{"protected void Awake()"}</code> | <span className="api-desc">Applies the render queue to this object and, if `isChangingChildren`, to each direct child.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setrenderqueues" /><code>{"private void SetRenderQueues(Transform objectToSet)"}</code> | Sets the render queue on every material of every renderer on one transform. Uses `materials`, so materials are instanced. |
+| <Link id="m-setrenderqueues" /><code>{"private void SetRenderQueues(Transform objectToSet)"}</code> | <span className="api-desc">Sets the render queue on every material of every renderer on one transform. Uses `materials`, so materials are instanced.</span> |
 
 </details>

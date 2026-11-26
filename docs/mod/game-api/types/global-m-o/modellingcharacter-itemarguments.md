@@ -21,17 +21,21 @@ Editor data for one item of a cosmetic override set on `ModellingCharacter`: the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> | Creates a `ModellingCharacter.ItemArguments` with default values. |
+| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> | <span className="api-desc">Creates a `ModellingCharacter.ItemArguments` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] arguments"}</code> | The two-colour customization arguments to apply to the item. |
-| <Link id="m-name" /><code>{"string name"}</code> | The item's display name, kept in step with the set by `OverrideSet.UpdateArguments`. |
+| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] arguments"}</code> | <span className="api-desc">The two-colour customization arguments to apply to the item.</span> |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">The item's display name, kept in step with the set by `OverrideSet.UpdateArguments`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ItemArguments`:
 
+<div className="api-used-in">
+
 [`ModellingCharacter.OverrideSet.arguments`](/mod/game-api/types/global-m-o/modellingcharacter-overrideset#m-arguments).
+
+</div>

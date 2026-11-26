@@ -21,15 +21,15 @@ Marker for old assets. Logs an error naming the object when one is spawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Legacy()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Legacy()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Logs "Legacy Asset Spawned" with the object's name. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Logs "Legacy Asset Spawned" with the object's name.</span> |
 
 </details>

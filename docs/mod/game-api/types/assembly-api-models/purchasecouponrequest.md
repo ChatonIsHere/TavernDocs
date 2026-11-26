@@ -20,11 +20,11 @@ Request body for buying coupons for a currency package.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> | Creates a `PurchaseCouponRequest` with default values. |
+| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> | <span className="api-desc">Creates a `PurchaseCouponRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currencypackageid" /><code>{"int CurrencyPackageId { get; set; }"}</code> | Id of the currency package. |
-| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> | How many to buy; 1 by default. |
+| <Link id="m-currencypackageid" /><code>{"int CurrencyPackageId { get; set; }"}</code> | <span className="api-desc">Id of the currency package.</span> |
+| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> | <span className="api-desc">How many to buy; 1 by default.</span> |

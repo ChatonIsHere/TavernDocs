@@ -22,4 +22,4 @@ Editor menu folder `Tools/Analytics`: menu item classes inherit it to appear und
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Analytics()"}</code> | Creates an `AltaMenuItemBase.Tools.Analytics` with default values. |
+| <Link id="m-ctor" /><code>{"protected Analytics()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Analytics` with default values.</span> |

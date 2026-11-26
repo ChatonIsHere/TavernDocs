@@ -23,16 +23,16 @@ Progression filter that sends experience from matching impact hits to one fixed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactChannelProgressionFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactChannelProgressionFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code>{"private "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | The progression path the experience goes to. |
+| <Link id="m-path" /><code>{"private "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | <span className="api-desc">The progression path the experience goes to.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Progression filter that sends experience from matching impact hits to one fixed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyimpact" /><code>{"override void ApplyImpact("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Outputs the set path and gives experience on it if asked. |
+| <Link id="m-applyimpact" /><code>{"override void ApplyImpact("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | <span className="api-desc">Outputs the set path and gives experience on it if asked.</span> |

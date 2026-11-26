@@ -22,39 +22,39 @@ Locomotion for the AutoCam spectator camera: orbits slowly around a focused play
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamLocomotionController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AutoCamLocomotionController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentrotation" /><code>{"private float currentRotation"}</code> | Current orbit angle in radians, increased by the rotation speed each frame. |
-| <Link id="m-focus" /><code>{"private int focus"}</code> | Index of the player being followed. |
-| <Link id="m-targets" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/autocamlocomotioncontroller-autocamtarget">{"AutoCamLocomotionController.AutoCamTarget"}</Link>{"> targets"}</code> | Player body transforms gathered this frame, with whether each is close enough to the focus to be framed. |
+| <Link id="m-currentrotation" /><code>{"private float currentRotation"}</code> | <span className="api-desc">Current orbit angle in radians, increased by the rotation speed each frame.</span> |
+| <Link id="m-focus" /><code>{"private int focus"}</code> | <span className="api-desc">Index of the player being followed.</span> |
+| <Link id="m-targets" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/autocamlocomotioncontroller-autocamtarget">{"AutoCamLocomotionController.AutoCamTarget"}</Link>{"> targets"}</code> | <span className="api-desc">Player body transforms gathered this frame, with whether each is close enough to the focus to be framed.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/autocamplayer">{"AutoCamPlayer"}</Link>{" PlayerController { get; }"}</code> | The controller as an `AutoCamPlayer`, which holds the framing settings. |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/autocamplayer">{"AutoCamPlayer"}</Link>{" PlayerController { get; }"}</code> | <span className="api-desc">The controller as an `AutoCamPlayer`, which holds the framing settings.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | Collects all player bodies, handles keys (arrows change focus, PageUp/PageDown zoom, Home/End orbit speed, Backspace cursor) and lerps the camera to frame them. |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | <span className="api-desc">Collects all player bodies, handles keys (arrows change focus, PageUp/PageDown zoom, Home/End orbit speed, Backspace cursor) and lerps the camera to frame them.</span> |
 
 </details>

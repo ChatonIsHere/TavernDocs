@@ -21,5 +21,5 @@ Scene object that reacts to its chunk loading or being saved, such as `BuildingA
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beforesaving" /><code>{"void BeforeSaving()"}</code> | Called before the chunk is saved. |
-| <Link id="m-loaded" /><code>{"void Loaded()"}</code> | Called after the chunk has loaded. |
+| <Link id="m-beforesaving" /><code>{"void BeforeSaving()"}</code> | <span className="api-desc">Called before the chunk is saved.</span> |
+| <Link id="m-loaded" /><code>{"void Loaded()"}</code> | <span className="api-desc">Called after the chunk has loaded.</span> |

@@ -22,18 +22,18 @@ Disposable returned by `Disposable.CreateWithState`: runs an action with a state
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> | Creates a `Disposable.AnonymousDisposable` from `state` and `dispose`. |
+| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> | <span className="api-desc">Creates a `Disposable.AnonymousDisposable` from `state` and `dispose`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"private readonly Action<T> dispose"}</code> | The action to run. |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | Whether it has already run. |
-| <Link id="m-state" /><code>{"private readonly T state"}</code> | Value passed to the action. |
+| <Link id="m-dispose" /><code>{"private readonly Action<T> dispose"}</code> | <span className="api-desc">The action to run.</span> |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | <span className="api-desc">Whether it has already run.</span> |
+| <Link id="m-state" /><code>{"private readonly T state"}</code> | <span className="api-desc">Value passed to the action.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Disposable returned by `Disposable.CreateWithState`: runs an action with a state
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> | Runs the action with the state, only the first time. |
+| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> | <span className="api-desc">Runs the action with the state, only the first time.</span> |

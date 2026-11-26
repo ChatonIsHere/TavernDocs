@@ -23,13 +23,13 @@ Save data for `TimeBasedStagedPrefab` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> | Creates a `TimeBasedStagedPrefabSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> | <span className="api-desc">Creates a `TimeBasedStagedPrefabSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-autostart" /><code>{"bool autoStart"}</code> | Saved auto start flag. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition">{"TimedPrefabStageDefinition"}</Link>{" definition"}</code> | Saved timing definition. |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | Whether the timer was running. |
-| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | Timeline time the timer started; on load, stages already past are applied and the rest rescheduled. |
+| <Link id="m-autostart" /><code>{"bool autoStart"}</code> | <span className="api-desc">Saved auto start flag.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition">{"TimedPrefabStageDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Saved timing definition.</span> |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | <span className="api-desc">Whether the timer was running.</span> |
+| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | <span className="api-desc">Timeline time the timer started; on load, stages already past are applied and the rest rescheduled.</span> |

@@ -21,5 +21,5 @@ A term split into a head and the rest, used by the unused logic engine when unif
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-first" /><code><Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" First { get; }"}</code> | The head: a predicate's functor atom. |
-| <Link id="m-remaining" /><code><Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Remaining { get; }"}</code> | The other terms: a predicate's arguments. |
+| <Link id="m-first" /><code><Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" First { get; }"}</code> | <span className="api-desc">The head: a predicate's functor atom.</span> |
+| <Link id="m-remaining" /><code><Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Remaining { get; }"}</code> | <span className="api-desc">The other terms: a predicate's arguments.</span> |

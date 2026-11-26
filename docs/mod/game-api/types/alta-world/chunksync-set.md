@@ -21,23 +21,27 @@ Server: per-player list of chunk spawn and despawn syncs in progress, used by `C
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Set()"}</code> | Creates a `ChunkSync.Set` with default values. |
+| <Link id="m-ctor" /><code>{"Set()"}</code> | <span className="api-desc">Creates a `ChunkSync.Set` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nextsendtime" /><code>{"float nextSendTime"}</code> | Time this player is next due a batch, `SendInterval` after the last. |
+| <Link id="m-nextsendtime" /><code>{"float nextSendTime"}</code> | <span className="api-desc">Time this player is next due a batch, `SendInterval` after the last.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-despawning" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Despawning { get; }"}</code> | Chunk syncs currently sending entity destroys to this player. |
-| <Link id="m-spawning" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Spawning { get; }"}</code> | Chunk syncs currently sending entity spawns to this player; served before despawns. |
+| <Link id="m-despawning" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Despawning { get; }"}</code> | <span className="api-desc">Chunk syncs currently sending entity destroys to this player.</span> |
+| <Link id="m-spawning" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> Spawning { get; }"}</code> | <span className="api-desc">Chunk syncs currently sending entity spawns to this player; served before despawns.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Set`:
 
+<div className="api-used-in">
+
 [`ChunkSync.playerSyncs`](/mod/game-api/types/alta-world/chunksync#m-playersyncs), [`ChunkSync.set`](/mod/game-api/types/alta-world/chunksync#m-set).
+
+</div>

@@ -21,11 +21,11 @@ Fly cam hand input: places each hand in front of the camera and maps grab to mou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FlyCamInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `FlyCamInputController` from `controller`. |
+| <Link id="m-ctor" /><code>{"FlyCamInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `FlyCamInputController` from `controller`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-triggerhaptics" /><code>{"override void TriggerHaptics(float strength, float frequency, float timeRemaining)"}</code> | Does nothing; the fly cam has no haptics. |
-| <Link id="m-populateinput" /><code>{"protected override void PopulateInput("}<Link to="/mod/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> | Sets hand position, and grab from the trigger or mouse button on that side; middle mouse is grab assist. |
+| <Link id="m-triggerhaptics" /><code>{"override void TriggerHaptics(float strength, float frequency, float timeRemaining)"}</code> | <span className="api-desc">Does nothing; the fly cam has no haptics.</span> |
+| <Link id="m-populateinput" /><code>{"protected override void PopulateInput("}<Link to="/mod/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input)"}</code> | <span className="api-desc">Sets hand position, and grab from the trigger or mouse button on that side; middle mouse is grab assist.</span> |

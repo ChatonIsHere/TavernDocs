@@ -21,29 +21,29 @@ Console module `festivities` for listing, inspecting, starting and stopping fest
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> | Creates a `FestivityCommandModule` with default values. |
+| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> | <span className="api-desc">Creates a `FestivityCommandModule` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inspect" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" Inspect("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | Command `festivities info`: returns the festivity so the console prints its fields. |
-| <Link id="m-listfestivities" /><code>{"private static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListFestivities()"}</code> | Command `festivities list`: lists every `Festivity` asset. |
-| <Link id="m-startfestivity" /><code>{"private static string StartFestivity("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | Command `festivities start`: turns a festivity on through `FestivityManager.SetFestivityActive` and syncs it. |
-| <Link id="m-stopfestivity" /><code>{"private static string StopFestivity("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | Command `festivities stop`: turns a festivity off. The manager's next check can switch it back by date. |
+| <Link id="m-inspect" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" Inspect("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | <span className="api-desc">Command `festivities info`: returns the festivity so the console prints its fields.</span> |
+| <Link id="m-listfestivities" /><code>{"private static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{"> ListFestivities()"}</code> | <span className="api-desc">Command `festivities list`: lists every `Festivity` asset.</span> |
+| <Link id="m-startfestivity" /><code>{"private static string StartFestivity("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | <span className="api-desc">Command `festivities start`: turns a festivity on through `FestivityManager.SetFestivityActive` and syncs it.</span> |
+| <Link id="m-stopfestivity" /><code>{"private static string StopFestivity("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | <span className="api-desc">Command `festivities stop`: turns a festivity off. The manager's next check can switch it back by date.</span> |
 
 </details>

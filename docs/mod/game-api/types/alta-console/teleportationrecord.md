@@ -21,12 +21,12 @@ Obsolete analytics record for a teleport, from the old analytics system.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> | Creates a `TeleportationRecord` from `from`, `to` and `fps`. |
+| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> | <span className="api-desc">Creates a `TeleportationRecord` from `from`, `to` and `fps`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fps" /><code>{"int FPS"}</code> | Frame rate at the time of the teleport. |
-| <Link id="m-fromlocation" /><code>{"Vector3 FromLocation"}</code> | Where the player teleported from. |
-| <Link id="m-tolocation" /><code>{"Vector3 ToLocation"}</code> | Where the player teleported to. |
+| <Link id="m-fps" /><code>{"int FPS"}</code> | <span className="api-desc">Frame rate at the time of the teleport.</span> |
+| <Link id="m-fromlocation" /><code>{"Vector3 FromLocation"}</code> | <span className="api-desc">Where the player teleported from.</span> |
+| <Link id="m-tolocation" /><code>{"Vector3 ToLocation"}</code> | <span className="api-desc">Where the player teleported to.</span> |

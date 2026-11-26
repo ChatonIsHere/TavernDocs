@@ -21,16 +21,16 @@ Legacy duration effect that does not stack: extra copies join a shared list and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> | Creates an `EnvironmentalEffect` with default values. |
+| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> | <span className="api-desc">Creates an `EnvironmentalEffect` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applying" /><code>{"private List<T> applying"}</code> | Copies of this effect currently applied to the same handler. |
+| <Link id="m-applying" /><code>{"private List<T> applying"}</code> | <span className="api-desc">Copies of this effect currently applied to the same handler.</span> |
 
 </details>
 
@@ -38,16 +38,16 @@ Legacy duration effect that does not stack: extra copies join a shared list and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Stores the handler and adds this effect to its applying list. |
-| <Link id="m-checkstackallowed" /><code>{"override bool CheckStackAllowed(T newEffect)"}</code> | Adds the new copy to the applying list and refuses to stack it as its own effect. |
-| <Link id="m-stop" /><code>{"override void Stop()"}</code> | Hands the list over to the next copy if there is one, otherwise calls `Finished`. |
-| <Link id="m-finished" /><code>{"protected virtual void Finished()"}</code> | Called when the last copy stops. Empty here; subclasses put clean-up in it. |
+| <Link id="m-apply" /><code>{"override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Stores the handler and adds this effect to its applying list.</span> |
+| <Link id="m-checkstackallowed" /><code>{"override bool CheckStackAllowed(T newEffect)"}</code> | <span className="api-desc">Adds the new copy to the applying list and refuses to stack it as its own effect.</span> |
+| <Link id="m-stop" /><code>{"override void Stop()"}</code> | <span className="api-desc">Hands the list over to the next copy if there is one, otherwise calls `Finished`.</span> |
+| <Link id="m-finished" /><code>{"protected virtual void Finished()"}</code> | <span className="api-desc">Called when the last copy stops. Empty here; subclasses put clean-up in it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyingstopped" /><code>{"private void ApplyingStopped(T effect)"}</code> | Removes a stopped copy from the applying list. |
+| <Link id="m-applyingstopped" /><code>{"private void ApplyingStopped(T effect)"}</code> | <span className="api-desc">Removes a stopped copy from the applying list.</span> |
 
 </details>

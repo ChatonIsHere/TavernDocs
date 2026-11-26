@@ -21,10 +21,10 @@ Something a spark or fire lighter can set alight, such as a `Fire` or a `Fuse`. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isignoringsparks" /><code>{"bool IsIgnoringSparks { get; }"}</code> | When true, sparks from `Fire.SimulateSparks` skip this object. |
+| <Link id="m-isignoringsparks" /><code>{"bool IsIgnoringSparks { get; }"}</code> | <span className="api-desc">When true, sparks from `Fire.SimulateSparks` skip this object.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trylight" /><code>{"void TryLight()"}</code> | Tries to light the object. |
+| <Link id="m-trylight" /><code>{"void TryLight()"}</code> | <span className="api-desc">Tries to light the object.</span> |

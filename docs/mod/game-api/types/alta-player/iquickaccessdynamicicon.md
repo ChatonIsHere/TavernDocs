@@ -21,4 +21,4 @@ Implemented by a quick access bubble icon that changes with its action's state.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> | Gives the icon the action it shows, so it can follow the action's events. |
+| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> | <span className="api-desc">Gives the icon the action it shows, so it can follow the action's events.</span> |

@@ -22,14 +22,14 @@ Save data for a `GenerationStarter`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> | Creates a `GenerationStartSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> | <span className="api-desc">Creates a `GenerationStartSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedbiome" /><code><Link to="/mod/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> | The biome that was generated. |
-| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> | Runtime ID of the session that saved it, to tell a reload in the same run from a fresh start. |
-| <Link id="m-preset" /><code><Link to="/mod/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> | Biome preset used. |
-| <Link id="m-seed" /><code>{"int seed"}</code> | Random seed for generation. |
-| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> | Terrain modification ID, kept only within the same run. |
+| <Link id="m-generatedbiome" /><code><Link to="/mod/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> | <span className="api-desc">The biome that was generated.</span> |
+| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> | <span className="api-desc">Runtime ID of the session that saved it, to tell a reload in the same run from a fresh start.</span> |
+| <Link id="m-preset" /><code><Link to="/mod/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> | <span className="api-desc">Biome preset used.</span> |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">Random seed for generation.</span> |
+| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> | <span className="api-desc">Terrain modification ID, kept only within the same run.</span> |

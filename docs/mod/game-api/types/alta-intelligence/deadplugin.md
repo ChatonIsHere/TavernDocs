@@ -21,19 +21,19 @@ Atmosphere plugin used while the player is dead: fades the fog to a set density 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DeadPlugin()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DeadPlugin()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fogcolor" /><code>{"private Color fogColor"}</code> | Fog and ambience colour. Default black. |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | Fog density to fade to. Default 0.5. |
-| <Link id="m-isupdatingfogcolor" /><code>{"private bool isUpdatingFogColor"}</code> | Whether to also fade the fog colour. |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | Speed of the fade. Default 1. |
+| <Link id="m-fogcolor" /><code>{"private Color fogColor"}</code> | <span className="api-desc">Fog and ambience colour. Default black.</span> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | <span className="api-desc">Fog density to fade to. Default 0.5.</span> |
+| <Link id="m-isupdatingfogcolor" /><code>{"private bool isUpdatingFogColor"}</code> | <span className="api-desc">Whether to also fade the fog colour.</span> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | <span className="api-desc">Speed of the fade. Default 1.</span> |
 
 </details>
 
@@ -41,12 +41,12 @@ Atmosphere plugin used while the player is dead: fades the fog to a set density 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | The plugin's fog colour, used as ambience. |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The plugin's fog colour. |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The plugin's fog density. |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | <span className="api-desc">The plugin's fog colour, used as ambience.</span> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | <span className="api-desc">The plugin's fog colour.</span> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | <span className="api-desc">The plugin's fog density.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | When turned on, takes priority, stops other fog density control and lerps density (and colour if set) to its values. |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | <span className="api-desc">When turned on, takes priority, stops other fog density control and lerps density (and colour if set) to its values.</span> |

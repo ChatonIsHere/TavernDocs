@@ -21,10 +21,14 @@ Special effects for a character dummy's clothes and head renderers. Implemented 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkinitialize" /><code>{"void CheckInitialize(SkinnedMeshRenderer[] clothes, SkinnedMeshRenderer[] head)"}</code> | Sets up the effects for the given clothes and head renderers if not done yet. |
+| <Link id="m-checkinitialize" /><code>{"void CheckInitialize(SkinnedMeshRenderer[] clothes, SkinnedMeshRenderer[] head)"}</code> | <span className="api-desc">Sets up the effects for the given clothes and head renderers if not done yet.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ICharacterDummySpecialEffects`:
 
+<div className="api-used-in">
+
 [`ClothesSettings.SpecialEffects`](/mod/game-api/types/alta-player/clothessettings#m-specialeffects).
+
+</div>

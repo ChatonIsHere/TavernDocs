@@ -22,16 +22,16 @@ Version 1 save data for `GameTimeManager`, migrated on load.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> | Creates a `GameTimeManagerSaveDataOld` with default values. |
+| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> | <span className="api-desc">Creates a `GameTimeManagerSaveDataOld` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentcontinuoustime" /><code>{"float currentContinuousTime"}</code> | In-game time elapsed, in seconds. |
+| <Link id="m-currentcontinuoustime" /><code>{"float currentContinuousTime"}</code> | <span className="api-desc">In-game time elapsed, in seconds.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `GameTimeManagerSaveData`, turning seconds into a `TimeSpan`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `GameTimeManagerSaveData`, turning seconds into a `TimeSpan`.</span> |

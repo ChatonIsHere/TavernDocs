@@ -22,17 +22,17 @@ Obsolete climbing tower analytics reporter. Its bodies are stubbed out in this b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TowerAnalyticsReporter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TowerAnalyticsReporter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventdata" /><code>{"private readonly Dictionary<string, object> eventData"}</code> | Property bag sent with each report. |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/game-other-namespaces/toweranalyticsreporter">{"TowerAnalyticsReporter"}</Link>{" instance"}</code> | Backing field for `Instance`. |
+| <Link id="m-eventdata" /><code>{"private readonly Dictionary<string, object> eventData"}</code> | <span className="api-desc">Property bag sent with each report.</span> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/game-other-namespaces/toweranalyticsreporter">{"TowerAnalyticsReporter"}</Link>{" instance"}</code> | <span className="api-desc">Backing field for `Instance`.</span> |
 
 </details>
 
@@ -40,23 +40,23 @@ Obsolete climbing tower analytics reporter. Its bodies are stubbed out in this b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance-2" /><code>{"static "}<Link to="/mod/game-api/types/game-other-namespaces/toweranalyticsreporter">{"TowerAnalyticsReporter"}</Link>{" Instance { get; }"}</code> | The singleton. Always null in this build because `Awake` never sets it. |
+| <Link id="m-instance-2" /><code>{"static "}<Link to="/mod/game-api/types/game-other-namespaces/toweranalyticsreporter">{"TowerAnalyticsReporter"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The singleton. Always null in this build because `Awake` never sets it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reporttoweranalyticevent" /><code>{"void ReportTowerAnalyticEvent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/climbingtoweranalyticeventtype">{"ClimbingTowerAnalyticEventType"}</Link>{" eventType, Vector3? reportedPosition = null)"}</code> | Empty in this build. |
+| <Link id="m-reporttoweranalyticevent" /><code>{"void ReportTowerAnalyticEvent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/climbingtoweranalyticeventtype">{"ClimbingTowerAnalyticEventType"}</Link>{" eventType, Vector3? reportedPosition = null)"}</code> | <span className="api-desc">Empty in this build.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Empty, so the singleton is never assigned. |
-| <Link id="m-postreport" /><code>{"private void PostReport(string eventType, int playerId)"}</code> | Posts a generic analytics event with `eventData` for a player through the old API client. Nothing calls it. |
-| <Link id="m-registerserverhandlerevent" /><code>{"private void RegisterServerHandlerEvent()"}</code> | Empty. |
-| <Link id="m-reportplayerloggedinwithspiritmode" /><code>{"private void ReportPlayerLoggedInWithSpiritMode("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Reports a logged-in-with-spirit-mode event if the player has a current unlock. Not hooked up. |
-| <Link id="m-reportplayerloggedoutwithspiritmode" /><code>{"private void ReportPlayerLoggedOutWithSpiritMode("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Reports a logged-out-with-spirit-mode event if the player has a current unlock. Not hooked up. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Empty, so the singleton is never assigned.</span> |
+| <Link id="m-postreport" /><code>{"private void PostReport(string eventType, int playerId)"}</code> | <span className="api-desc">Posts a generic analytics event with `eventData` for a player through the old API client. Nothing calls it.</span> |
+| <Link id="m-registerserverhandlerevent" /><code>{"private void RegisterServerHandlerEvent()"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-reportplayerloggedinwithspiritmode" /><code>{"private void ReportPlayerLoggedInWithSpiritMode("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Reports a logged-in-with-spirit-mode event if the player has a current unlock. Not hooked up.</span> |
+| <Link id="m-reportplayerloggedoutwithspiritmode" /><code>{"private void ReportPlayerLoggedOutWithSpiritMode("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Reports a logged-out-with-spirit-mode event if the player has a current unlock. Not hooked up.</span> |
 
 </details>

@@ -20,17 +20,21 @@ Body of an Alta web API request to send a password reset email.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RequestPasswordResetRequest()"}</code> | Creates a `RequestPasswordResetRequest` from `email`. |
-| <Link id="m-ctor-2" /><code>{"RequestPasswordResetRequest(string email)"}</code> | Creates a `RequestPasswordResetRequest` from `email`. |
+| <Link id="m-ctor" /><code>{"RequestPasswordResetRequest()"}</code> | <span className="api-desc">Creates a `RequestPasswordResetRequest` from `email`.</span> |
+| <Link id="m-ctor-2" /><code>{"RequestPasswordResetRequest(string email)"}</code> | <span className="api-desc">Creates a `RequestPasswordResetRequest` from `email`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | Email of the account to reset. |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | <span className="api-desc">Email of the account to reset.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RequestPasswordResetRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.RequestPasswordResetAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-requestpasswordresetasync).
+
+</div>

@@ -18,13 +18,13 @@ Global darkness flag for the local client. Requests are batched to the next dela
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> | Last requested state. |
-| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> | True while an update is queued. |
+| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> | <span className="api-desc">Last requested state.</span> |
+| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> | <span className="api-desc">True while an update is queued.</span> |
 
 </details>
 
@@ -32,25 +32,25 @@ Global darkness flag for the local client. Requests are batched to the next dela
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> | Whether the player is currently in a dark area. |
+| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> | <span className="api-desc">Whether the player is currently in a dark area.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> | Raised with the new value when `IsDark` changes. |
+| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> | <span className="api-desc">Raised with the new value when `IsDark` changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> | Requests a new darkness state, applied on a delayed call. |
+| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> | <span className="api-desc">Requests a new darkness state, applied on a delayed call.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> | Applies the requested state and raises `OnChanged` if it changed. |
+| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> | <span className="api-desc">Applies the requested state and raises `OnChanged` if it changed.</span> |
 
 </details>

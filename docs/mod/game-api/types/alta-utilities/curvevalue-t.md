@@ -21,18 +21,18 @@ Pairs a topic with an animation curve. Base of `AttributeCurveValue` for biome a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CurveValue()"}</code> | Creates a `CurveValue` from `topic` and `curve`. |
-| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> | Creates a `CurveValue` from `topic` and `curve`. |
+| <Link id="m-ctor" /><code>{"CurveValue()"}</code> | <span className="api-desc">Creates a `CurveValue` from `topic` and `curve`.</span> |
+| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> | <span className="api-desc">Creates a `CurveValue` from `topic` and `curve`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | Backing field for `Curve`. |
-| <Link id="m-topic" /><code>{"private T topic"}</code> | Backing field for `Topic`. |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | <span className="api-desc">Backing field for `Curve`.</span> |
+| <Link id="m-topic" /><code>{"private T topic"}</code> | <span className="api-desc">Backing field for `Topic`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Pairs a topic with an animation curve. Base of `AttributeCurveValue` for biome a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> | The curve for the topic. |
-| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> | What the curve applies to. |
+| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> | <span className="api-desc">The curve for the topic.</span> |
+| <Link id="m-topic-2" /><code>{"T Topic { get; }"}</code> | <span className="api-desc">What the curve applies to.</span> |

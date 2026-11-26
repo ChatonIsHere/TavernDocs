@@ -23,11 +23,11 @@ Save data (version 1) for `ModifiableAdditionalStaticContent`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> | Creates a `ModifiableAdditionalStaticContentSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> | <span className="api-desc">Creates a `ModifiableAdditionalStaticContentSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifiablehash" /><code>{"uint modifiableHash"}</code> | Saved modifiable hash. |
-| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> | Saved flag for whether the content is created at runtime. |
+| <Link id="m-modifiablehash" /><code>{"uint modifiableHash"}</code> | <span className="api-desc">Saved modifiable hash.</span> |
+| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> | <span className="api-desc">Saved flag for whether the content is created at runtime.</span> |

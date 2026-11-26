@@ -23,18 +23,18 @@ Forest spawn filter that removes points near the forest border using noise, givi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EdgeCutFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EdgeCutFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cut" /><code>{"private float cut"}</code> | Threshold the noise plus distance must beat to keep a point. |
-| <Link id="m-edgefade" /><code>{"private float edgeFade"}</code> | Scale on the border distance; its inverse is how far in the filter reaches. |
-| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> | Size of the simplex noise pattern. |
+| <Link id="m-cut" /><code>{"private float cut"}</code> | <span className="api-desc">Threshold the noise plus distance must beat to keep a point.</span> |
+| <Link id="m-edgefade" /><code>{"private float edgeFade"}</code> | <span className="api-desc">Scale on the border distance; its inverse is how far in the filter reaches.</span> |
+| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> | <span className="api-desc">Size of the simplex noise pattern.</span> |
 
 </details>
 
@@ -42,4 +42,4 @@ Forest spawn filter that removes points near the forest border using noise, givi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Near the border, sets the weight to -1 (rejected) where noise plus scaled border distance is at or below `cut`. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Near the border, sets the weight to -1 (rejected) where noise plus scaled border distance is at or below `cut`.</span> |

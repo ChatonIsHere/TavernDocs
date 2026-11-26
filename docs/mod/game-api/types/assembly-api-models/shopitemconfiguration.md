@@ -20,21 +20,25 @@ One entry of Alta's shop configuration: an item's discount, shard price or promo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> | Creates a `ShopItemConfiguration` with default values. |
+| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> | <span className="api-desc">Creates a `ShopItemConfiguration` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-discountpercentage" /><code>{"decimal? DiscountPercentage { get; set; }"}</code> | Discount on the item, if any. |
-| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> | The configuration entry's id. |
-| <Link id="m-issupporteronlydiscount" /><code>{"bool IsSupporterOnlyDiscount { get; set; }"}</code> | True if the discount only applies to supporters. |
-| <Link id="m-itemsku" /><code>{"string ItemSku { get; set; }"}</code> | SKU of the item this entry is for. |
-| <Link id="m-promo" /><code>{"string Promo { get; set; }"}</code> | Promotion label, if any. |
-| <Link id="m-shards" /><code>{"int? Shards { get; set; }"}</code> | Price in shards, if set. |
+| <Link id="m-discountpercentage" /><code>{"decimal? DiscountPercentage { get; set; }"}</code> | <span className="api-desc">Discount on the item, if any.</span> |
+| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> | <span className="api-desc">The configuration entry's id.</span> |
+| <Link id="m-issupporteronlydiscount" /><code>{"bool IsSupporterOnlyDiscount { get; set; }"}</code> | <span className="api-desc">True if the discount only applies to supporters.</span> |
+| <Link id="m-itemsku" /><code>{"string ItemSku { get; set; }"}</code> | <span className="api-desc">SKU of the item this entry is for.</span> |
+| <Link id="m-promo" /><code>{"string Promo { get; set; }"}</code> | <span className="api-desc">Promotion label, if any.</span> |
+| <Link id="m-shards" /><code>{"int? Shards { get; set; }"}</code> | <span className="api-desc">Price in shards, if set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ShopItemConfiguration`:
 
+<div className="api-used-in">
+
 [`ShopPageConfiguration.AllItemConfigurations`](/mod/game-api/types/assembly-api-models/shoppageconfiguration#m-allitemconfigurations), [`ShopPageConfiguration.PrimaryItems`](/mod/game-api/types/assembly-api-models/shoppageconfiguration#m-primaryitems), [`ShopPageConfiguration.SecondaryItems`](/mod/game-api/types/assembly-api-models/shoppageconfiguration#m-secondaryitems), [`PurchasedList.AddItems`](/mod/game-api/types/alta-customization/purchasedlist#m-additems).
+
+</div>

@@ -21,11 +21,15 @@ What an `Achievement` calls back into to unlock or refresh itself. Implemented b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-complete" /><code>{"void Complete("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | Unlocks the achievement on the platform. |
-| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | Asks the platform for the achievement's current state. |
+| <Link id="m-complete" /><code>{"void Complete("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Unlocks the achievement on the platform.</span> |
+| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Asks the platform for the achievement's current state.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAchievementManager`:
 
+<div className="api-used-in">
+
 [`Achievement.Achievement`](/mod/game-api/types/alta-player/achievement#m-ctor), [`Achievement.manager`](/mod/game-api/types/alta-player/achievement#m-manager).
+
+</div>

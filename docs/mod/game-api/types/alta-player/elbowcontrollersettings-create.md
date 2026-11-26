@@ -22,4 +22,4 @@ Editor menu item that creates a new `ElbowControllerSettings` asset under the To
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ElbowControllerSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ElbowControllerSettings.Create` with default values.</span> |

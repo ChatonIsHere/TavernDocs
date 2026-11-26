@@ -29,4 +29,8 @@ Flags for what a ban applies to: the user id, the IP address, the device id or a
 
 Members of other types that take, return or hold a `BanMethod`:
 
+<div className="api-used-in">
+
 [`ISecurityApiClient.BanUserAsync`](/mod/game-api/types/assembly-api-client/isecurityapiclient#m-banuserasync), [`OfflineSecurityApiClient.BanUserAsync`](/mod/game-api/types/assembly-api-client/offlinesecurityapiclient#m-banuserasync), [`SecurityApiClient.BanUserAsync`](/mod/game-api/types/assembly-api-client/securityapiclient#m-banuserasync), [`BanRequest.BanMethod`](/mod/game-api/types/assembly-api-models/banrequest#m-banmethod).
+
+</div>

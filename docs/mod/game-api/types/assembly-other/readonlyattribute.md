@@ -21,12 +21,12 @@ Inspector attribute that shows a field as read only, with separate modes for in 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> | Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`. |
-| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> | Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`. |
+| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> | <span className="api-desc">Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`.</span> |
+| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> | <span className="api-desc">Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inplaymode" /><code><Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" InPlayMode { get; private set; }"}</code> | Read-only mode used while in play mode. |
-| <Link id="m-outofplaymode" /><code><Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" OutOfPlayMode { get; private set; }"}</code> | Read-only mode used outside play mode. |
+| <Link id="m-inplaymode" /><code><Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" InPlayMode { get; private set; }"}</code> | <span className="api-desc">Read-only mode used while in play mode.</span> |
+| <Link id="m-outofplaymode" /><code><Link to="/mod/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" OutOfPlayMode { get; private set; }"}</code> | <span className="api-desc">Read-only mode used outside play mode.</span> |

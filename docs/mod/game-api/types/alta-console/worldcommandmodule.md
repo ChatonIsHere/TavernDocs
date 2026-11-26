@@ -20,11 +20,11 @@ Console module `world`: holder for the `world forest` and `world caves` submodul
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger shared by the forest and cave submodules. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger shared by the forest and cave submodules.</span> |
 
 </details>

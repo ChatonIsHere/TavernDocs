@@ -19,12 +19,12 @@ Reads HTTP response content as JSON.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | Class logger. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | <span className="api-desc">Class logger.</span> |
 
 </details>
 
@@ -32,4 +32,4 @@ Reads HTTP response content as JSON.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readasjsonasync" /><code>{"static async Task<T> ReadAsJsonAsync<T>(HttpContent content)"}</code> | Reads the content and deserialises it to `T` on a worker thread. Logs the raw text and rethrows if parsing fails. |
+| <Link id="m-readasjsonasync" /><code>{"static async Task<T> ReadAsJsonAsync<T>(HttpContent content)"}</code> | <span className="api-desc">Reads the content and deserialises it to `T` on a worker thread. Logs the raw text and rethrows if parsing fails.</span> |

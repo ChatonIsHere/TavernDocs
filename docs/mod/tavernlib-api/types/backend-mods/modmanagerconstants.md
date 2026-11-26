@@ -21,18 +21,18 @@ Fixed names for the mod manager: the default source, target names and record fil
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultrepo" /><code>{"const string DefaultRepo"}</code> | The raw-content URL of ModdingTavern's TavernMods source, always trusted and tried first. |
-| <Link id="m-disableddllsuffix" /><code>{"const string DisabledDllSuffix"}</code> | `.disabled`, added to a loose DLL's name to stop MelonLoader loading it. |
-| <Link id="m-disabledrecordname" /><code>{"const string DisabledRecordName"}</code> | `manifest.disabled.json`, a disabled mod's record. |
-| <Link id="m-knowntargets" /><code>{"static readonly string[] KnownTargets"}</code> | The three targets this build knows. Other target names in a manifest are ignored. |
-| <Link id="m-recordname" /><code>{"const string RecordName"}</code> | `manifest.json`, an enabled mod's record. Also what makes MelonLoader load the folder. |
-| <Link id="m-targetclientandroid" /><code>{"const string TargetClientAndroid"}</code> | `client_android`, the Quest app. |
-| <Link id="m-targetclientwindows" /><code>{"const string TargetClientWindows"}</code> | `client_windows`, the PC game. |
-| <Link id="m-targetserver" /><code>{"const string TargetServer"}</code> | `server`, a dedicated server. |
+| <Link id="m-defaultrepo" /><code>{"const string DefaultRepo"}</code> | <span className="api-desc">The raw-content URL of ModdingTavern's TavernMods source, always trusted and tried first.</span> |
+| <Link id="m-disableddllsuffix" /><code>{"const string DisabledDllSuffix"}</code> | <span className="api-desc">`.disabled`, added to a loose DLL's name to stop MelonLoader loading it.</span> |
+| <Link id="m-disabledrecordname" /><code>{"const string DisabledRecordName"}</code> | <span className="api-desc">`manifest.disabled.json`, a disabled mod's record.</span> |
+| <Link id="m-knowntargets" /><code>{"static readonly string[] KnownTargets"}</code> | <span className="api-desc">The three targets this build knows. Other target names in a manifest are ignored.</span> |
+| <Link id="m-recordname" /><code>{"const string RecordName"}</code> | <span className="api-desc">`manifest.json`, an enabled mod's record. Also what makes MelonLoader load the folder.</span> |
+| <Link id="m-targetclientandroid" /><code>{"const string TargetClientAndroid"}</code> | <span className="api-desc">`client_android`, the Quest app.</span> |
+| <Link id="m-targetclientwindows" /><code>{"const string TargetClientWindows"}</code> | <span className="api-desc">`client_windows`, the PC game.</span> |
+| <Link id="m-targetserver" /><code>{"const string TargetServer"}</code> | <span className="api-desc">`server`, a dedicated server.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdefaultrepo" /><code>{"static bool IsDefaultRepo(string url)"}</code> | True if a URL is the default source, ignoring a trailing slash. |
-| <Link id="m-normalizeurl" /><code>{"static string NormalizeUrl(string url)"}</code> | The URL without a trailing slash. `null` becomes empty. |
+| <Link id="m-isdefaultrepo" /><code>{"static bool IsDefaultRepo(string url)"}</code> | <span className="api-desc">True if a URL is the default source, ignoring a trailing slash.</span> |
+| <Link id="m-normalizeurl" /><code>{"static string NormalizeUrl(string url)"}</code> | <span className="api-desc">The URL without a trailing slash. `null` becomes empty.</span> |

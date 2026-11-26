@@ -21,10 +21,14 @@ Something that reacts to a mining echo spreading out. Register with `MiningEcho.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> | Called each frame an echo is active with its centre and current radius. |
+| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> | <span className="api-desc">Called each frame an echo is active with its centre and current radius.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IListenToMiningEcho`:
 
+<div className="api-used-in">
+
 [`MiningEcho.listeners`](/mod/game-api/types/global-m-o/miningecho#m-listeners), [`MiningEcho.StartListening`](/mod/game-api/types/global-m-o/miningecho#m-startlistening), [`MiningEcho.StopListening`](/mod/game-api/types/global-m-o/miningecho#m-stoplistening).
+
+</div>

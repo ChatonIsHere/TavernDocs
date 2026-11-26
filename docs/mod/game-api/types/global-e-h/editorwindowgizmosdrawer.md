@@ -21,27 +21,27 @@ Hidden object that lets non-scene code draw gizmos: register a callback and it i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorWindowGizmosDrawer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EditorWindowGizmosDrawer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scenedrawer" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/editorwindowgizmosdrawer">{"EditorWindowGizmosDrawer"}</Link>{" sceneDrawer"}</code> | The hidden drawer instance. |
+| <Link id="m-scenedrawer" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/editorwindowgizmosdrawer">{"EditorWindowGizmosDrawer"}</Link>{" sceneDrawer"}</code> | <span className="api-desc">The hidden drawer instance.</span> |
 
 </details>
 
 ## Events
 
-<details>
+<details className="api-private">
 <summary>1 private and internal event</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gizmoscallback" /><code>{"private static event Action gizmosCallback"}</code> | The registered gizmo callbacks. |
+| <Link id="m-gizmoscallback" /><code>{"private static event Action gizmosCallback"}</code> | <span className="api-desc">The registered gizmo callbacks.</span> |
 
 </details>
 
@@ -49,14 +49,14 @@ Hidden object that lets non-scene code draw gizmos: register a callback and it i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregistercallback" /><code>{"static void DeregisterCallback(Action callback)"}</code> | Removes a gizmo callback. |
-| <Link id="m-registercallback" /><code>{"static void RegisterCallback(Action callback)"}</code> | Adds a callback once, creating the hidden drawer object if needed. |
+| <Link id="m-deregistercallback" /><code>{"static void DeregisterCallback(Action callback)"}</code> | <span className="api-desc">Removes a gizmo callback.</span> |
+| <Link id="m-registercallback" /><code>{"static void RegisterCallback(Action callback)"}</code> | <span className="api-desc">Adds a callback once, creating the hidden drawer object if needed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Runs the callbacks, or destroys the drawer object when none are left. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Runs the callbacks, or destroys the drawer object when none are left.</span> |
 
 </details>

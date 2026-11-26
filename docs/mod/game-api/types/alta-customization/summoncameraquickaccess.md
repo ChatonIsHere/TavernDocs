@@ -22,17 +22,17 @@ Quick access menu action that summons or dismisses the local player's hand camer
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SummonCameraQuickAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SummonCameraQuickAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | True when the local player has a camera out. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | False while the local player is downed. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">True when the local player has a camera out.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">False while the local player is downed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Toggles the camera through `HandyCameraManager.UpdateCameraStatusForLocalPlayer`. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Toggles the camera through `HandyCameraManager.UpdateCameraStatusForLocalPlayer`.</span> |

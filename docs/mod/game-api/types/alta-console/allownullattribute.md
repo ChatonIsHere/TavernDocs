@@ -22,4 +22,4 @@ Put on a command parameter (or a type converter) to let the parameter's converte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AllowNullAttribute()"}</code> | Creates an `AllowNullAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"AllowNullAttribute()"}</code> | <span className="api-desc">Creates an `AllowNullAttribute` with default values.</span> |

@@ -27,4 +27,8 @@ Whether an inventory change in the pickup event stream log was in a world dock o
 
 Members of other types that take, return or hold a `InventoryType`:
 
+<div className="api-used-in">
+
 [`PickupActionData.InventoryType`](/mod/game-api/types/alta-items/pickupactiondata#m-inventorytype), [`InventoryChangeData.InventoryType`](/mod/game-api/types/game-other-namespaces/inventorychangedata#m-inventorytype).
+
+</div>

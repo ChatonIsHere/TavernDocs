@@ -20,16 +20,16 @@ Loads a server's `server_config` JSON file, creating an empty `ServerConfigurati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> | Creates a `ServerConfigFileManager` with default values. |
+| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> | <span className="api-desc">Creates a `ServerConfigFileManager` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> | Name of the config file: `server_config`. |
+| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> | <span className="api-desc">Name of the config file: `server_config`.</span> |
 
 </details>
 
@@ -37,4 +37,4 @@ Loads a server's `server_config` JSON file, creating an empty `ServerConfigurati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/mod/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Reads the server's config file and returns its `ServerConfiguration`, or a new one set as the file's content. |
+| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/mod/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | <span className="api-desc">Reads the server's config file and returns its `ServerConfiguration`, or a new one set as the file's content.</span> |

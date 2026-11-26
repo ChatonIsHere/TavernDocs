@@ -23,16 +23,16 @@ Forest fill spawn modifier that picks the biome at each point from a list and sw
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeSwitchFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BiomeSwitchFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-biomes" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeswitchfilter-biome">{"BiomeSwitchFilter.Biome"}</Link>{"[] biomes"}</code> | Pairs of forest biome and the fill set (`IFillSet`) to use there. |
+| <Link id="m-biomes" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeswitchfilter-biome">{"BiomeSwitchFilter.Biome"}</Link>{"[] biomes"}</code> | <span className="api-desc">Pairs of forest biome and the fill set (`IFillSet`) to use there.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Forest fill spawn modifier that picks the biome at each point from a list and sw
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | Gets the biome sphere at the point from the listed biomes, tags the point with it, and uses the matching fill set's spawn modifiers. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Initialises each listed fill set's spawn modifiers. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | <span className="api-desc">Gets the biome sphere at the point from the listed biomes, tags the point with it, and uses the matching fill set's spawn modifiers.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Initialises each listed fill set's spawn modifiers.</span> |

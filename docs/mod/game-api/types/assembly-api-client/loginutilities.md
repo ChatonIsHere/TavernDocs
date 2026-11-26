@@ -18,12 +18,12 @@ Hashing helper used when logging in: the API takes password hashes, not password
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sha512" /><code>{"private static readonly SHA512 Sha512"}</code> | Shared SHA-512 instance used by `HashString`. Not thread safe. |
+| <Link id="m-sha512" /><code>{"private static readonly SHA512 Sha512"}</code> | <span className="api-desc">Shared SHA-512 instance used by `HashString`. Not thread safe.</span> |
 
 </details>
 
@@ -31,4 +31,4 @@ Hashing helper used when logging in: the API takes password hashes, not password
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashstring" /><code>{"static string HashString(string text)"}</code> | Returns the SHA-512 of the UTF-8 text as a lowercase hex string. |
+| <Link id="m-hashstring" /><code>{"static string HashString(string text)"}</code> | <span className="api-desc">Returns the SHA-512 of the UTF-8 text as a lowercase hex string.</span> |

@@ -21,17 +21,17 @@ A `NetworkAxisValue` that syncs a transform's local position along one axis, bet
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkAxisPosition()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NetworkAxisPosition()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> | Backing field for `MaximumValue` (default 1). |
-| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> | Backing field for `MinimumValue`. |
+| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> | <span className="api-desc">Backing field for `MaximumValue` (default 1).</span> |
+| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> | <span className="api-desc">Backing field for `MinimumValue`.</span> |
 
 </details>
 
@@ -39,23 +39,23 @@ A `NetworkAxisValue` that syncs a transform's local position along one axis, bet
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"protected override float CurrentValue { get; }"}</code> | The local position projected on the axis. |
-| <Link id="m-maximumvalue-2" /><code>{"protected override float MaximumValue { get; }"}</code> | Upper limit of the synced range. |
-| <Link id="m-minimumvalue-2" /><code>{"protected override float MinimumValue { get; }"}</code> | Lower limit of the synced range. |
+| <Link id="m-currentvalue" /><code>{"protected override float CurrentValue { get; }"}</code> | <span className="api-desc">The local position projected on the axis.</span> |
+| <Link id="m-maximumvalue-2" /><code>{"protected override float MaximumValue { get; }"}</code> | <span className="api-desc">Upper limit of the synced range.</span> |
+| <Link id="m-minimumvalue-2" /><code>{"protected override float MinimumValue { get; }"}</code> | <span className="api-desc">Lower limit of the synced range.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyvalue" /><code>{"protected override void ApplyValue(float value)"}</code> | Sets the local position to the axis times the value. |
-| <Link id="m-getdifference" /><code>{"protected override float GetDifference(float currentValue, float value)"}</code> | Absolute difference between two values. |
-| <Link id="m-lerptovalue" /><code>{"protected override float LerpToValue(float value, float lerpValue)"}</code> | Lerps from the current value toward the target. |
+| <Link id="m-applyvalue" /><code>{"protected override void ApplyValue(float value)"}</code> | <span className="api-desc">Sets the local position to the axis times the value.</span> |
+| <Link id="m-getdifference" /><code>{"protected override float GetDifference(float currentValue, float value)"}</code> | <span className="api-desc">Absolute difference between two values.</span> |
+| <Link id="m-lerptovalue" /><code>{"protected override float LerpToValue(float value, float lerpValue)"}</code> | <span className="api-desc">Lerps from the current value toward the target.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the range of movement as a line. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Editor: draws the range of movement as a line.</span> |
 
 </details>

@@ -22,16 +22,16 @@ Old save data (version 1) for `Mould`, migrated to `MouldSaveData`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MouldSaveData1()"}</code> | Creates a `MouldSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"MouldSaveData1()"}</code> | <span className="api-desc">Creates a `MouldSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | Saved mould definition. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Saved mould definition.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to version 2 with the same definition and unlimited uses. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to version 2 with the same definition and unlimited uses.</span> |

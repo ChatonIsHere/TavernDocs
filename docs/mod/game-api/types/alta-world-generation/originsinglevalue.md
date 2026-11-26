@@ -21,11 +21,15 @@ A serializable pair of a loot `Origin` and a float value, the `SingleValue` form
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> | Creates an `OriginSingleValue` from `origin` and `value`. |
-| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> | Creates an `OriginSingleValue` from `origin` and `value`. |
+| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> | <span className="api-desc">Creates an `OriginSingleValue` from `origin` and `value`.</span> |
+| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/mod/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> | <span className="api-desc">Creates an `OriginSingleValue` from `origin` and `value`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OriginSingleValue`:
 
+<div className="api-used-in">
+
 [`Rarity.originWeightings`](/mod/game-api/types/alta-world-generation/rarity#m-originweightings), [`Rarity.OriginWeightings`](/mod/game-api/types/alta-world-generation/rarity#m-originweightings-2).
+
+</div>

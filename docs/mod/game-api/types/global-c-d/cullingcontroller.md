@@ -21,29 +21,29 @@ Client: on the local player, switches between the game's portal-based culling ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CullingController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CullingController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller"}</code> | The local `PlayerController`, whose camera's occlusion culling is toggled. |
-| <Link id="m-cullingcamera" /><code>{"private "}<Link to="/mod/game-api/types/global-p/portalbasedcullingcamera">{"PortalBasedCullingCamera"}</Link>{" cullingCamera"}</code> | The `PortalBasedCullingCamera` enabled or disabled. |
+| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller"}</code> | <span className="api-desc">The local `PlayerController`, whose camera's occlusion culling is toggled.</span> |
+| <Link id="m-cullingcamera" /><code>{"private "}<Link to="/mod/game-api/types/global-p/portalbasedcullingcamera">{"PortalBasedCullingCamera"}</Link>{" cullingCamera"}</code> | <span className="api-desc">The `PortalBasedCullingCamera` enabled or disabled.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cullingchanged" /><code>{"private void CullingChanged()"}</code> | Enables the portal culling camera when culling is on and, except on Android, turns Unity occlusion culling off to match. |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> | Stores the player controller, subscribes to `PortalBasedCullingCamera.CullingChanged` and applies the current state. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unsubscribes from `PortalBasedCullingCamera.CullingChanged`. |
+| <Link id="m-cullingchanged" /><code>{"private void CullingChanged()"}</code> | <span className="api-desc">Enables the portal culling camera when culling is on and, except on Android, turns Unity occlusion culling off to match.</span> |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> | <span className="api-desc">Stores the player controller, subscribes to `PortalBasedCullingCamera.CullingChanged` and applies the current state.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Unsubscribes from `PortalBasedCullingCamera.CullingChanged`.</span> |
 
 </details>

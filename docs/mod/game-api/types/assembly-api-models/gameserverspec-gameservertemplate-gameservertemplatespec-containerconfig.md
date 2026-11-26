@@ -21,17 +21,21 @@ One container in an Agones game server pod.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ContainerConfig()"}</code> | Creates a `GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig` with default values. |
+| <Link id="m-ctor" /><code>{"ContainerConfig()"}</code> | <span className="api-desc">Creates a `GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | Docker image the container runs. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Container name. |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | <span className="api-desc">Docker image the container runs.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Container name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ContainerConfig`:
 
+<div className="api-used-in">
+
 [`GameServerSpec.GameServerTemplate.GameServerTemplateSpec.Containers`](/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec#m-containers).
+
+</div>

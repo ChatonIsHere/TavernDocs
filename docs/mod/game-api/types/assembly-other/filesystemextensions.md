@@ -21,5 +21,5 @@ File system helpers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleardirectory" /><code>{"static void ClearDirectory(DirectoryInfo directory)"}</code> | Deletes every file and subfolder inside the directory, clearing read-only flags first. Keeps the directory itself. |
-| <Link id="m-fullnamerelativetoproject" /><code>{"static string FullNameRelativeToProject(FileSystemInfo info)"}</code> | Turns a full path under the Unity data folder into an `Assets/...` project path with forward slashes. |
+| <Link id="m-cleardirectory" /><code>{"static void ClearDirectory(DirectoryInfo directory)"}</code> | <span className="api-desc">Deletes every file and subfolder inside the directory, clearing read-only flags first. Keeps the directory itself.</span> |
+| <Link id="m-fullnamerelativetoproject" /><code>{"static string FullNameRelativeToProject(FileSystemInfo info)"}</code> | <span className="api-desc">Turns a full path under the Unity data folder into an `Assets/...` project path with forward slashes.</span> |

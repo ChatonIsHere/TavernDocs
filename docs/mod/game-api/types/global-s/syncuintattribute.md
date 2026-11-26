@@ -22,4 +22,4 @@ Obsolete `SyncAttribute` that marks a `uint` field for syncing, with a chosen nu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SyncUintAttribute(int bits = 32)"}</code> | Creates a `SyncUintAttribute` from `bits`. |
+| <Link id="m-ctor" /><code>{"SyncUintAttribute(int bits = 32)"}</code> | <span className="api-desc">Creates a `SyncUintAttribute` from `bits`.</span> |

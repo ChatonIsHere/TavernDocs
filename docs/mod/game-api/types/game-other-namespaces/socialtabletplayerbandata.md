@@ -21,18 +21,22 @@ Payload of the `ConsoleEvents.SocialTabletPlayerBanned` console event, raised wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> | Creates a `SocialTabletPlayerBanData` with default values. |
+| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> | <span className="api-desc">Creates a `SocialTabletPlayerBanData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bannedby" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedBy"}</code> | The player who used the ban or unban button. |
-| <Link id="m-bannedplayer" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedPlayer"}</code> | The player who was banned or unbanned. |
-| <Link id="m-isban" /><code>{"bool IsBan"}</code> | True for a ban, false for an unban. |
+| <Link id="m-bannedby" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedBy"}</code> | <span className="api-desc">The player who used the ban or unban button.</span> |
+| <Link id="m-bannedplayer" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" BannedPlayer"}</code> | <span className="api-desc">The player who was banned or unbanned.</span> |
+| <Link id="m-isban" /><code>{"bool IsBan"}</code> | <span className="api-desc">True for a ban, false for an unban.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SocialTabletPlayerBanData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.SocialTabletPlayerBanned`](/mod/game-api/types/alta-console/consoleevents#m-socialtabletplayerbanned).
+
+</div>

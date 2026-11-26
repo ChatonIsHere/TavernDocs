@@ -22,19 +22,23 @@ Handle to a popup queued with `PopupManager.Show`. Lets you cancel it or swap it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscancelled" /><code>{"bool IsCancelled { get; }"}</code> | True after `Cancel`. |
-| <Link id="m-prefab" /><code><Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" Prefab { get; }"}</code> | The popup board prefab to spawn, or null to use the manager's default board. |
+| <Link id="m-iscancelled" /><code>{"bool IsCancelled { get; }"}</code> | <span className="api-desc">True after `Cancel`.</span> |
+| <Link id="m-prefab" /><code><Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" Prefab { get; }"}</code> | <span className="api-desc">The popup board prefab to spawn, or null to use the manager's default board.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | Marks the popup cancelled so the queue skips it. Has no effect once shown. |
-| <Link id="m-setprefab" /><code>{"void SetPrefab("}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" prefab)"}</code> | Changes the board prefab used when the popup is shown. |
-| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" Spawn(Transform parent, "}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" defaultPrefab, Action<"}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> onClosed)"}</code> | Used by the manager: instantiates the board under the parent, hooks the closed callback and runs the setup action. |
+| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | <span className="api-desc">Marks the popup cancelled so the queue skips it. Has no effect once shown.</span> |
+| <Link id="m-setprefab" /><code>{"void SetPrefab("}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" prefab)"}</code> | <span className="api-desc">Changes the board prefab used when the popup is shown.</span> |
+| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" Spawn(Transform parent, "}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" defaultPrefab, Action<"}<Link to="/mod/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> onClosed)"}</code> | <span className="api-desc">Used by the manager: instantiates the board under the parent, hooks the closed callback and runs the setup action.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPopupConfig`:
 
+<div className="api-used-in">
+
 [`PlayTutorialChecker.followupPopup`](/mod/game-api/types/global-p/playtutorialchecker#m-followuppopup), [`PopupManager.popupQueue`](/mod/game-api/types/global-p/popupmanager#m-popupqueue), [`PopupManager.Show`](/mod/game-api/types/global-p/popupmanager#m-show), [`PopupManager.ShowPopup`](/mod/game-api/types/global-p/popupmanager#m-showpopup).
+
+</div>

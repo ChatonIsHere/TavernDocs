@@ -20,4 +20,4 @@ Networking helpers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-startentitycoroutine" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" StartEntityCoroutine(IEnumerator enumerator, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Starts a coroutine that is stopped when the given entity is destroyed by the scene. |
+| <Link id="m-startentitycoroutine" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" StartEntityCoroutine(IEnumerator enumerator, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Starts a coroutine that is stopped when the given entity is destroyed by the scene.</span> |

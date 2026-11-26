@@ -18,13 +18,13 @@ Makes and caches copies of meshes with every vertex set to one colour. Used for 
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colors" /><code>{"private static readonly List<Color> colors"}</code> | Reused colour list to avoid allocations. |
-| <Link id="m-meshmap" /><code>{"private static readonly Dictionary<int, Mesh> meshMap"}</code> | Cache of coloured meshes by hash. Entries are never removed. |
+| <Link id="m-colors" /><code>{"private static readonly List<Color> colors"}</code> | <span className="api-desc">Reused colour list to avoid allocations.</span> |
+| <Link id="m-meshmap" /><code>{"private static readonly Dictionary<int, Mesh> meshMap"}</code> | <span className="api-desc">Cache of coloured meshes by hash. Entries are never removed.</span> |
 
 </details>
 
@@ -32,14 +32,14 @@ Makes and caches copies of meshes with every vertex set to one colour. Used for 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcolouredmesh" /><code>{"static Mesh GetColouredMesh(Mesh mesh, Color color)"}</code> | Returns a cached coloured copy for this mesh and colour, creating one if needed. |
+| <Link id="m-getcolouredmesh" /><code>{"static Mesh GetColouredMesh(Mesh mesh, Color color)"}</code> | <span className="api-desc">Returns a cached coloured copy for this mesh and colour, creating one if needed.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createcolouredmesh" /><code>{"private static Mesh CreateColouredMesh(Mesh mesh, Color color)"}</code> | Instantiates a copy of the mesh, names it with the colour, and sets every vertex colour to that colour. |
-| <Link id="m-gethash" /><code>{"private static int GetHash(Mesh mesh, Color color)"}</code> | Combines the mesh and colour hash codes into the cache key. |
+| <Link id="m-createcolouredmesh" /><code>{"private static Mesh CreateColouredMesh(Mesh mesh, Color color)"}</code> | <span className="api-desc">Instantiates a copy of the mesh, names it with the colour, and sets every vertex colour to that colour.</span> |
+| <Link id="m-gethash" /><code>{"private static int GetHash(Mesh mesh, Color color)"}</code> | <span className="api-desc">Combines the mesh and colour hash codes into the cache key.</span> |
 
 </details>

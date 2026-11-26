@@ -21,4 +21,4 @@ Property attribute with no fields, probably used by an editor drawer to edit a d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DotFromAngle()"}</code> | Creates a `DotFromAngle` with default values. |
+| <Link id="m-ctor" /><code>{"DotFromAngle()"}</code> | <span className="api-desc">Creates a `DotFromAngle` with default values.</span> |

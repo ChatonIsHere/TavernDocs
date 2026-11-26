@@ -22,10 +22,10 @@ Internal interface for priority queues with a fixed capacity that has to be resi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxsize" /><code>{"int MaxSize { get; }"}</code> | How many nodes fit before the queue must be resized. |
+| <Link id="m-maxsize" /><code>{"int MaxSize { get; }"}</code> | <span className="api-desc">How many nodes fit before the queue must be resized.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resize" /><code>{"void Resize(int maxNodes)"}</code> | Changes the capacity, keeping the queued nodes. |
+| <Link id="m-resize" /><code>{"void Resize(int maxNodes)"}</code> | <span className="api-desc">Changes the capacity, keeping the queued nodes.</span> |

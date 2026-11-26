@@ -31,4 +31,8 @@ Which update loop recorded an `ObjectHistory` snapshot: `Update`, `LateUpdate`, 
 
 Members of other types that take, return or hold a `SnapshotType`:
 
+<div className="api-used-in">
+
 [`ObjectHistory.gizmosToShow`](/mod/game-api/types/alta-world-generation/objecthistory#m-gizmostoshow), [`ObjectHistory.RecordObject`](/mod/game-api/types/alta-world-generation/objecthistory#m-recordobject), [`ObjectHistory.ObjectSnapshot.UpdateMethod`](/mod/game-api/types/alta-world-generation/objecthistory-objectsnapshot#m-updatemethod).
+
+</div>

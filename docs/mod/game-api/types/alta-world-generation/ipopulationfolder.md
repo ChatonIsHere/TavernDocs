@@ -21,17 +21,21 @@ A saved area that holds one population: its size, density and spawn point picker
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accumulatedtime" /><code>{"float AccumulatedTime { get; set; }"}</code> | Seconds of growth time carried over when the last growth check spawned nothing. Reset to 0 once something spawns. Saved. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" Definition { get; }"}</code> | The population setup this folder spawns. |
-| <Link id="m-densitymultiplier" /><code>{"float DensityMultiplier { get; }"}</code> | Multiplies the population cap for this area. |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The folder's network entity. Population items use it as their chunking parent. |
-| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-world-generation/ipopulationmanager">{"IPopulationManager"}</Link>{" Manager { get; }"}</code> | The population manager that owns the folder. |
-| <Link id="m-pointevaluator" /><code><Link to="/mod/game-api/types/alta-world-generation/ipointnormalevaluator">{"IPointNormalEvaluator"}</Link>{" PointEvaluator { get; }"}</code> | Picks spawn points (with surface normals) inside the area. |
-| <Link id="m-population" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Population { get; }"}</code> | The live population for this folder. |
-| <Link id="m-squaremeters" /><code>{"float SquareMeters { get; }"}</code> | Area size. The cap is max population per square meter times this times `DensityMultiplier`. |
+| <Link id="m-accumulatedtime" /><code>{"float AccumulatedTime { get; set; }"}</code> | <span className="api-desc">Seconds of growth time carried over when the last growth check spawned nothing. Reset to 0 once something spawns. Saved.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" Definition { get; }"}</code> | <span className="api-desc">The population setup this folder spawns.</span> |
+| <Link id="m-densitymultiplier" /><code>{"float DensityMultiplier { get; }"}</code> | <span className="api-desc">Multiplies the population cap for this area.</span> |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The folder's network entity. Population items use it as their chunking parent.</span> |
+| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-world-generation/ipopulationmanager">{"IPopulationManager"}</Link>{" Manager { get; }"}</code> | <span className="api-desc">The population manager that owns the folder.</span> |
+| <Link id="m-pointevaluator" /><code><Link to="/mod/game-api/types/alta-world-generation/ipointnormalevaluator">{"IPointNormalEvaluator"}</Link>{" PointEvaluator { get; }"}</code> | <span className="api-desc">Picks spawn points (with surface normals) inside the area.</span> |
+| <Link id="m-population" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Population { get; }"}</code> | <span className="api-desc">The live population for this folder.</span> |
+| <Link id="m-squaremeters" /><code>{"float SquareMeters { get; }"}</code> | <span className="api-desc">Area size. The cap is max population per square meter times this times `DensityMultiplier`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPopulationFolder`:
 
+<div className="api-used-in">
+
 [`BasicPopulation.BasicPopulation`](/mod/game-api/types/alta-world-generation/basicpopulation#m-ctor), [`BasicPopulation.Folder`](/mod/game-api/types/alta-world-generation/basicpopulation#m-folder), [`BasicPopulationManager.Spawn`](/mod/game-api/types/alta-world-generation/basicpopulationmanager#m-spawn), [`IPopulationManager.Spawn`](/mod/game-api/types/alta-world-generation/ipopulationmanager#m-spawn).
+
+</div>

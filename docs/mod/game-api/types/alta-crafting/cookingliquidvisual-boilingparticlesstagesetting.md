@@ -19,13 +19,13 @@ Boiling particle settings for one boil stage of a cooking liquid's surface visua
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> | Backing field for `HeightOffset`. |
-| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> | Backing field for `Lifetime`. |
+| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> | <span className="api-desc">Backing field for `HeightOffset`.</span> |
+| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> | <span className="api-desc">Backing field for `Lifetime`.</span> |
 
 </details>
 
@@ -33,11 +33,15 @@ Boiling particle settings for one boil stage of a cooking liquid's surface visua
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> | How far above the liquid surface the boiling particles start at this stage. |
-| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> | Particle lifetime at this boiling stage. |
+| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> | <span className="api-desc">How far above the liquid surface the boiling particles start at this stage.</span> |
+| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> | <span className="api-desc">Particle lifetime at this boiling stage.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoilingParticlesStageSetting`:
 
+<div className="api-used-in">
+
 [`CookingLiquidVisual.boilingParticlesStages`](/mod/game-api/types/alta-crafting/cookingliquidvisual#m-boilingparticlesstages), [`BoilingParticles.SetupForContainer`](/mod/game-api/types/alta-stats-effects/boilingparticles#m-setupforcontainer), [`BoilingParticles.stageSettings`](/mod/game-api/types/alta-stats-effects/boilingparticles#m-stagesettings).
+
+</div>

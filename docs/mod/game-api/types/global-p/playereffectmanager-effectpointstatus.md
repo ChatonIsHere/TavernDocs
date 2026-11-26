@@ -22,23 +22,23 @@ The effect state of one body point: which temperature level it is at and the smo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/mod/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> | Creates a `PlayerEffectManager.EffectPointStatus` from `effectPosition`, `manager` and `settings`. |
+| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/mod/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Creates a `PlayerEffectManager.EffectPointStatus` from `effectPosition`, `manager` and `settings`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-burnactiveeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" burnActiveEffectDefinition"}</code> | The burn effect at this point. |
-| <Link id="m-effectposition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> | Where on the body this point is. |
-| <Link id="m-smokeactiveeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" smokeActiveEffectDefinition"}</code> | The smoke effect at this point. |
-| <Link id="m-stateffectsdefinition" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[]> statEffectsDefinition"}</code> | The buff and debuff effects for each stat at this point. |
-| <Link id="m-temperaturecurve" /><code>{"private AnimationCurve temperatureCurve"}</code> | The manager's temperature to size curve. |
-| <Link id="m-temperaturelevelchanged" /><code>{"private Action TemperatureLevelChanged"}</code> | Called when the level changes; set to the manager's `UpdateLightEffects`. |
-| <Link id="m-temperaturelevelcount" /><code>{"private int temperatureLevelCount"}</code> | How many temperature thresholds there are. |
-| <Link id="m-temperaturelevels" /><code>{"private float[] temperatureLevels"}</code> | The manager's smoke and burn thresholds. |
+| <Link id="m-burnactiveeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" burnActiveEffectDefinition"}</code> | <span className="api-desc">The burn effect at this point.</span> |
+| <Link id="m-effectposition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> | <span className="api-desc">Where on the body this point is.</span> |
+| <Link id="m-smokeactiveeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{" smokeActiveEffectDefinition"}</code> | <span className="api-desc">The smoke effect at this point.</span> |
+| <Link id="m-stateffectsdefinition" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", "}<Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[]> statEffectsDefinition"}</code> | <span className="api-desc">The buff and debuff effects for each stat at this point.</span> |
+| <Link id="m-temperaturecurve" /><code>{"private AnimationCurve temperatureCurve"}</code> | <span className="api-desc">The manager's temperature to size curve.</span> |
+| <Link id="m-temperaturelevelchanged" /><code>{"private Action TemperatureLevelChanged"}</code> | <span className="api-desc">Called when the level changes; set to the manager's `UpdateLightEffects`.</span> |
+| <Link id="m-temperaturelevelcount" /><code>{"private int temperatureLevelCount"}</code> | <span className="api-desc">How many temperature thresholds there are.</span> |
+| <Link id="m-temperaturelevels" /><code>{"private float[] temperatureLevels"}</code> | <span className="api-desc">The manager's smoke and burn thresholds.</span> |
 
 </details>
 
@@ -46,18 +46,18 @@ The effect state of one body point: which temperature level it is at and the smo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlevel" /><code>{"int CurrentLevel { get; private set; }"}</code> | -1 when cool, 0 when smoking, 1 when burning. |
-| <Link id="m-havestateffectsvalid" /><code>{"bool HaveStatEffectsValid { get; }"}</code> | True if this point shows stat effects for this player (local or remote). |
-| <Link id="m-item" /><code><Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[] this["}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition] { get; }"}</code> | The buff and debuff effects for a stat at this point, buff first. |
+| <Link id="m-currentlevel" /><code>{"int CurrentLevel { get; private set; }"}</code> | <span className="api-desc">-1 when cool, 0 when smoking, 1 when burning.</span> |
+| <Link id="m-havestateffectsvalid" /><code>{"bool HaveStatEffectsValid { get; }"}</code> | <span className="api-desc">True if this point shows stat effects for this player (local or remote).</span> |
+| <Link id="m-item" /><code><Link to="/mod/game-api/types/global-p/playereffectmanager-effectapplication">{"PlayerEffectManager.EffectApplication"}</Link>{"[] this["}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition] { get; }"}</code> | <span className="api-desc">The buff and debuff effects for a stat at this point, buff first.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Moves the point between cool, smoke and burn as its heat point's temperature changes, and resizes the burn effect. |
+| <Link id="m-updatetemperature" /><code>{"private void UpdateTemperature("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | <span className="api-desc">Moves the point between cool, smoke and burn as its heat point's temperature changes, and resizes the burn effect.</span> |
 
 </details>
 
@@ -65,4 +65,8 @@ The effect state of one body point: which temperature level it is at and the smo
 
 Members of other types that take, return or hold a `EffectPointStatus`:
 
+<div className="api-used-in">
+
 [`PlayerEffectManager.heatPointStatus`](/mod/game-api/types/global-p/playereffectmanager#m-heatpointstatus).
+
+</div>

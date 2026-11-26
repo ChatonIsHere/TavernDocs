@@ -22,11 +22,11 @@ Server: running action that removes the creature from the scene. Used as the las
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDeleted()"}</code> | Creates an `ActiveDeleted` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveDeleted()"}</code> | <span className="api-desc">Creates an `ActiveDeleted` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Does nothing. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | On the next frame, scene-destroys the creature's prefab root. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">On the next frame, scene-destroys the creature's prefab root.</span> |

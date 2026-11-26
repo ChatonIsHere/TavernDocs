@@ -20,4 +20,4 @@ MonoBehaviour that an async factory sets up straight after creating it, in place
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct()"}</code> | Called by `FactoryAsync` once the instance is created. |
+| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct()"}</code> | <span className="api-desc">Called by `FactoryAsync` once the instance is created.</span> |

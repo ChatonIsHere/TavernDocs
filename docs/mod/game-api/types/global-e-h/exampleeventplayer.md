@@ -21,28 +21,28 @@ Test component that, once enabled, fires one of two events at random every two s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ExampleEventPlayer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ExampleEventPlayer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-event1" /><code>{"private UnityEvent event1"}</code> | First random event. |
-| <Link id="m-event2" /><code>{"private UnityEvent event2"}</code> | Second random event. |
+| <Link id="m-event1" /><code>{"private UnityEvent event1"}</code> | <span className="api-desc">First random event.</span> |
+| <Link id="m-event2" /><code>{"private UnityEvent event2"}</code> | <span className="api-desc">Second random event.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Starts the event loop. |
-| <Link id="m-playevents" /><code>{"private async void PlayEvents()"}</code> | Async loop that never ends: waits 2 seconds and invokes `event1` or `event2` at random. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Starts the event loop.</span> |
+| <Link id="m-playevents" /><code>{"private async void PlayEvents()"}</code> | <span className="api-desc">Async loop that never ends: waits 2 seconds and invokes `event1` or `event2` at random.</span> |
 
 </details>

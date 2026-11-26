@@ -22,4 +22,4 @@ Editor menu entry for creating a `LightBeamSkill` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `LightBeamSkill.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `LightBeamSkill.Create` with default values.</span> |

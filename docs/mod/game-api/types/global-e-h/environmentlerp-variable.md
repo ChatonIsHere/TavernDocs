@@ -21,31 +21,35 @@ One float in an `EnvironmentLerp` that blends from a start value to a target.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> | Creates an `EnvironmentLerp.Variable` with default values. |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> | <span className="api-desc">Creates an `EnvironmentLerp.Variable` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-from" /><code>{"float From { get; private set; }"}</code> | Value the blend starts from. |
-| <Link id="m-to" /><code>{"float To { get; private set; }"}</code> | Target value. |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | Current blended value. |
+| <Link id="m-from" /><code>{"float From { get; private set; }"}</code> | <span className="api-desc">Value the blend starts from.</span> |
+| <Link id="m-to" /><code>{"float To { get; private set; }"}</code> | <span className="api-desc">Target value.</span> |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | <span className="api-desc">Current blended value.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<float> Changed"}</code> | Raised with the new value when it changes. |
+| <Link id="m-changed" /><code>{"event Action<float> Changed"}</code> | <span className="api-desc">Raised with the new value when it changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerp" /><code>{"void Lerp(float lerp)"}</code> | Sets the value between `From` and `To` at the given fraction. |
-| <Link id="m-setto" /><code>{"void SetTo(float target, bool isSnapping)"}</code> | Sets a new target. With snapping, jumps straight to it. |
+| <Link id="m-lerp" /><code>{"void Lerp(float lerp)"}</code> | <span className="api-desc">Sets the value between `From` and `To` at the given fraction.</span> |
+| <Link id="m-setto" /><code>{"void SetTo(float target, bool isSnapping)"}</code> | <span className="api-desc">Sets a new target. With snapping, jumps straight to it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Variable`:
 
+<div className="api-used-in">
+
 [`EnvironmentLerp.Reverb`](/mod/game-api/types/global-e-h/environmentlerp#m-reverb).
+
+</div>

@@ -21,17 +21,17 @@ Client effect helper: when triggered near the local player, unparents and enable
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnableAndUnchildIfClose()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnableAndUnchildIfClose()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> | Seconds before the object is destroyed; 0 or less keeps it. |
-| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> | Squared distance from the local player within which it triggers. |
+| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> | <span className="api-desc">Seconds before the object is destroyed; 0 or less keeps it.</span> |
+| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> | <span className="api-desc">Squared distance from the local player within which it triggers.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Client effect helper: when triggered near the local player, unparents and enable
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"void Trigger()"}</code> | Does nothing on a headless server or if the local player is too far; otherwise unparents, enables and schedules destruction. |
+| <Link id="m-trigger" /><code>{"void Trigger()"}</code> | <span className="api-desc">Does nothing on a headless server or if the local player is too far; otherwise unparents, enables and schedules destruction.</span> |

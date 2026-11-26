@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes a `PlayerController`, for inspector-wired c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterControllerEvent()"}</code> | Creates a `CharacterControllerEvent` with default values. |
+| <Link id="m-ctor" /><code>{"CharacterControllerEvent()"}</code> | <span className="api-desc">Creates a `CharacterControllerEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CharacterControllerEvent`:
 
+<div className="api-used-in">
+
 [`TeleporterPlatform.finished`](/mod/game-api/types/global-t-x/teleporterplatform#m-finished).
+
+</div>

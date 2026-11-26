@@ -22,4 +22,8 @@ An empty marker interface for anything registered with `TavernServices`. It has 
 
 Members of other types that take, return or hold a `IService`:
 
+<div className="api-used-in">
+
 [`TavernServices.ServiceEntries`](/mod/tavernlib-api/types/services/tavernservices#m-serviceentries).
+
+</div>

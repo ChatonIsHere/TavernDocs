@@ -22,30 +22,30 @@ Client debug helper for scenes without a player: keeps one camera active and let
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CameraClaimer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CameraClaimer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all" /><code>{"private static readonly List<"}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{"> all"}</code> | Every `CameraClaimer` that has started. Destroyed ones are removed when F3 is pressed. |
-| <Link id="m-checkcamera" /><code>{"private Camera checkCamera"}</code> | The `Camera` on this object. |
-| <Link id="m-current" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" current"}</code> | The claimer whose camera is active now. |
-| <Link id="m-oldcurrent" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" oldCurrent"}</code> | The current claimer as of the last frame, so F3 is ignored the frame the current one changes. |
+| <Link id="m-all" /><code>{"private static readonly List<"}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{"> all"}</code> | <span className="api-desc">Every `CameraClaimer` that has started. Destroyed ones are removed when F3 is pressed.</span> |
+| <Link id="m-checkcamera" /><code>{"private Camera checkCamera"}</code> | <span className="api-desc">The `Camera` on this object.</span> |
+| <Link id="m-current" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" current"}</code> | <span className="api-desc">The claimer whose camera is active now.</span> |
+| <Link id="m-oldcurrent" /><code>{"private static "}<Link to="/mod/game-api/types/global-c-d/cameraclaimer">{"CameraClaimer"}</Link>{" oldCurrent"}</code> | <span className="api-desc">The current claimer as of the last frame, so F3 is ignored the frame the current one changes.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Registers the camera and, if it's enabled, makes it the current one and disables the previous current claimer. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Disables itself when a player controller exists or headless. Otherwise F3 switches to the next registered camera. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Registers the camera and, if it's enabled, makes it the current one and disables the previous current claimer.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Disables itself when a player controller exists or headless. Otherwise F3 switches to the next registered camera.</span> |
 
 </details>

@@ -21,16 +21,16 @@ Scale pulsator with a mesh filter whose mesh can be swapped.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererScalePulsator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RendererScalePulsator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> | Mesh filter to update. |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> | <span className="api-desc">Mesh filter to update.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Scale pulsator with a mesh filter whose mesh can be swapped.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatemesh" /><code>{"void UpdateMesh(Mesh mesh)"}</code> | Sets the mesh shown by the filter. |
+| <Link id="m-updatemesh" /><code>{"void UpdateMesh(Mesh mesh)"}</code> | <span className="api-desc">Sets the mesh shown by the filter.</span> |

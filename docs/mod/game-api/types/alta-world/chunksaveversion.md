@@ -35,4 +35,8 @@ Chunk save format versions, one per game release, with `Latest` the current one.
 
 Members of other types that take, return or hold a `ChunkSaveVersion`:
 
+<div className="api-used-in">
+
 [`Chunk.minimumSaveVersion`](/mod/game-api/types/alta-world/chunk#m-minimumsaveversion), [`Chunk.MinimumSaveVersion`](/mod/game-api/types/alta-world/chunk#m-minimumsaveversion-2), [`ChunkSaveFormat.CurrentSaveVersion`](/mod/game-api/types/alta-utilities/chunksaveformat#m-currentsaveversion), [`ChunkSaveFormat.SaveVersion`](/mod/game-api/types/alta-utilities/chunksaveformat#m-saveversion).
+
+</div>

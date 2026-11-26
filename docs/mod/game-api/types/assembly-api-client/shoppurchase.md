@@ -19,26 +19,26 @@ Online client for buying shop items with shards. Reached through `ShopClient.Pur
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal ShopPurchase("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `ShopPurchase` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal ShopPurchase("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `ShopPurchase` from `clientManager`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accountrequestbase" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" accountRequestBase"}</code> | Unused field. |
-| <Link id="m-clientmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager"}</code> | The client manager requests are sent through. |
-| <Link id="m-itemtokenrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/purchaseitemtokenrequest">{"PurchaseItemTokenRequest"}</Link>{" itemTokenRequest"}</code> | Unused field. |
-| <Link id="m-purchaseitemtokenrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/purchaseitemtokenrequest">{"PurchaseItemTokenRequest"}</Link>{" purchaseItemTokenRequest"}</code> | Last request built by `PurchaseItem`. |
+| <Link id="m-accountrequestbase" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" accountRequestBase"}</code> | <span className="api-desc">Unused field.</span> |
+| <Link id="m-clientmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager"}</code> | <span className="api-desc">The client manager requests are sent through.</span> |
+| <Link id="m-itemtokenrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/purchaseitemtokenrequest">{"PurchaseItemTokenRequest"}</Link>{" itemTokenRequest"}</code> | <span className="api-desc">Unused field.</span> |
+| <Link id="m-purchaseitemtokenrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/purchaseitemtokenrequest">{"PurchaseItemTokenRequest"}</Link>{" purchaseItemTokenRequest"}</code> | <span className="api-desc">Last request built by `PurchaseItem`.</span> |
 
 </details>
 
@@ -46,4 +46,4 @@ Online client for buying shop items with shards. Reached through `ShopClient.Pur
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> | Buys a shop item by its ID. |
+| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> | <span className="api-desc">Buys a shop item by its ID.</span> |

@@ -21,24 +21,24 @@ Internal atlas blitter for the `Township Tale/WindFoliageVertexColor` shader. `A
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WindFoliageVertexColorBlit()"}</code> | Creates a `WindFoliageVertexColorBlit` with default values. |
+| <Link id="m-ctor" /><code>{"WindFoliageVertexColorBlit()"}</code> | <span className="api-desc">Creates a `WindFoliageVertexColorBlit` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>9 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bending" /><code>{"private static readonly int Bending"}</code> | Cached shader property ID for `_Bending`. |
-| <Link id="m-color1" /><code>{"private static readonly int Color1"}</code> | Cached shader property ID for `_Color`. |
-| <Link id="m-cutoff" /><code>{"private static readonly int Cutoff"}</code> | Cached shader property ID for `_Cutoff`. |
-| <Link id="m-glossiness" /><code>{"private static readonly int Glossiness"}</code> | Cached shader property ID for `_Glossiness`. |
-| <Link id="m-interiorrect" /><code>{"private static readonly int InteriorRect"}</code> | Cached shader property ID for `_InteriorRect`. |
-| <Link id="m-maintex" /><code>{"private static readonly int MainTex"}</code> | Cached shader property ID for `_MainTex`. |
-| <Link id="m-rect1" /><code>{"private static readonly int Rect1"}</code> | Cached shader property ID for `_Rect`. |
-| <Link id="m-swaystrength" /><code>{"private static readonly int SwayStrength"}</code> | Cached shader property ID for `_SwayStrength`. |
-| <Link id="m-tiling" /><code>{"private static readonly int Tiling"}</code> | Cached shader property ID for `_Tiling`. |
+| <Link id="m-bending" /><code>{"private static readonly int Bending"}</code> | <span className="api-desc">Cached shader property ID for `_Bending`.</span> |
+| <Link id="m-color1" /><code>{"private static readonly int Color1"}</code> | <span className="api-desc">Cached shader property ID for `_Color`.</span> |
+| <Link id="m-cutoff" /><code>{"private static readonly int Cutoff"}</code> | <span className="api-desc">Cached shader property ID for `_Cutoff`.</span> |
+| <Link id="m-glossiness" /><code>{"private static readonly int Glossiness"}</code> | <span className="api-desc">Cached shader property ID for `_Glossiness`.</span> |
+| <Link id="m-interiorrect" /><code>{"private static readonly int InteriorRect"}</code> | <span className="api-desc">Cached shader property ID for `_InteriorRect`.</span> |
+| <Link id="m-maintex" /><code>{"private static readonly int MainTex"}</code> | <span className="api-desc">Cached shader property ID for `_MainTex`.</span> |
+| <Link id="m-rect1" /><code>{"private static readonly int Rect1"}</code> | <span className="api-desc">Cached shader property ID for `_Rect`.</span> |
+| <Link id="m-swaystrength" /><code>{"private static readonly int SwayStrength"}</code> | <span className="api-desc">Cached shader property ID for `_SwayStrength`.</span> |
+| <Link id="m-tiling" /><code>{"private static readonly int Tiling"}</code> | <span className="api-desc">Cached shader property ID for `_Tiling`.</span> |
 
 </details>
 
@@ -46,4 +46,4 @@ Internal atlas blitter for the `Township Tale/WindFoliageVertexColor` shader. `A
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blit" /><code>{"override void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> | Draws the main texture with colour and cutoff (alpha test on) into the diffuse atlas, and gloss, sway strength and bending into the normal atlas. |
+| <Link id="m-blit" /><code>{"override void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> | <span className="api-desc">Draws the main texture with colour and cutoff (alpha test on) into the diffuse atlas, and gloss, sway strength and bending into the normal atlas.</span> |

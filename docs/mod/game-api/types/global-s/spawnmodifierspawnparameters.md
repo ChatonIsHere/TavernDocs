@@ -22,10 +22,14 @@ Base for spawn modifiers in forest generation that work on spawn parameters.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnModifierSpawnParameters()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SpawnModifierSpawnParameters()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpawnModifierSpawnParameters`:
 
+<div className="api-used-in">
+
 [`SpawnModifiers.spawnParameterModifiers`](/mod/game-api/types/alta-world-generation/spawnmodifiers#m-spawnparametermodifiers).
+
+</div>

@@ -22,17 +22,17 @@ Game achievement asset that completes for a player once a game action's tracked 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatReachedAchievement()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StatReachedAchievement()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-required" /><code>{"private int required"}</code> | Value needed to complete. |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" targetStat"}</code> | Backing field for `TargetStat`. |
+| <Link id="m-required" /><code>{"private int required"}</code> | <span className="api-desc">Value needed to complete.</span> |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" targetStat"}</code> | <span className="api-desc">Backing field for `TargetStat`.</span> |
 
 </details>
 
@@ -40,19 +40,19 @@ Game achievement asset that completes for a player once a game action's tracked 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" TargetStat { get; }"}</code> | The game action whose value is watched. |
+| <Link id="m-targetstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" TargetStat { get; }"}</code> | <span className="api-desc">The game action whose value is watched.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Subscribes to the target action's value updates, once. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Subscribes to the target action's value updates, once.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> | Completes the achievement for the player when the value is at least `required`. |
+| <Link id="m-updatevalue" /><code>{"private void UpdateValue("}<Link to="/mod/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> | <span className="api-desc">Completes the achievement for the player when the value is at least `required`.</span> |
 
 </details>

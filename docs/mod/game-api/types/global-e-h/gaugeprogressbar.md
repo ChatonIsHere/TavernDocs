@@ -21,18 +21,18 @@ A progress bar drawn with a gauge shader, with an extra alpha limit that hides t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GaugeProgressBar()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GaugeProgressBar()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> | Shader property id for `_AlphaLimit`. |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> | Shader property id for `_FillProgress`. |
-| <Link id="m-alpha" /><code>{"private float alpha"}</code> | Backing field for `Alpha`. |
+| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> | <span className="api-desc">Shader property id for `_AlphaLimit`.</span> |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> | <span className="api-desc">Shader property id for `_FillProgress`.</span> |
+| <Link id="m-alpha" /><code>{"private float alpha"}</code> | <span className="api-desc">Backing field for `Alpha`.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ A progress bar drawn with a gauge shader, with an extra alpha limit that hides t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> | Alpha limit for the gauge. Zero hides the renderers. |
-| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> | Uses the `_FillProgress` shader property for progress. |
+| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> | <span className="api-desc">Alpha limit for the gauge. Zero hides the renderers.</span> |
+| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> | <span className="api-desc">Uses the `_FillProgress` shader property for progress.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: refreshes the bar and alpha on prefab instances. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Editor: refreshes the bar and alpha on prefab instances.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> | Sets `_AlphaLimit` on the renderers, or turns them off when alpha is zero. |
+| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> | <span className="api-desc">Sets `_AlphaLimit` on the renderers, or turns them off when alpha is zero.</span> |
 
 </details>
 
@@ -62,4 +62,8 @@ A progress bar drawn with a gauge shader, with an extra alpha limit that hides t
 
 Members of other types that take, return or hold a `GaugeProgressBar`:
 
+<div className="api-used-in">
+
 [`TaxManager.taxMeterBar`](/mod/game-api/types/alta-crafting/taxmanager#m-taxmeterbar), [`PickupWeightScale.gaugeProgressBar`](/mod/game-api/types/global-p/pickupweightscale#m-gaugeprogressbar), [`ServerSelector.gaugeProgress`](/mod/game-api/types/global-s/serverselector#m-gaugeprogress).
+
+</div>

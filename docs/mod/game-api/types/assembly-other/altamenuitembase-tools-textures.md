@@ -22,4 +22,4 @@ Editor menu folder `Tools/Textures`: menu item classes inherit it to appear unde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Textures()"}</code> | Creates an `AltaMenuItemBase.Tools.Textures` with default values. |
+| <Link id="m-ctor" /><code>{"protected Textures()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Textures` with default values.</span> |

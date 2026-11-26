@@ -21,4 +21,4 @@ Something that builds visuals for a generated river, such as meshes (`RiverMeshT
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> | Builds the visuals for the given river generation. |
+| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> | <span className="api-desc">Builds the visuals for the given river generation.</span> |

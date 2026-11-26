@@ -23,21 +23,21 @@ Obsolete networked contact projectile. It logs an error on `Awake` telling you t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkContactProjectile()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NetworkContactProjectile()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destructioneffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestructionEffect"}</code> | Effect set in the inspector for destruction. Unused in this build. |
-| <Link id="m-enableonmessage" /><code>{"private GameObject enableOnMessage"}</code> | Object set in the inspector. Unused in this build. |
-| <Link id="m-finalscaleondestory" /><code>{"private float finalScaleOnDestory"}</code> | Scale setting for destruction. Unused in this build. |
-| <Link id="m-hascontacted" /><code>{"private bool hasContacted"}</code> | Backing field for `HasContacted`. |
-| <Link id="m-maincollider" /><code>{"private Collider mainCollider"}</code> | Backing field for `Collider`. |
-| <Link id="m-scalereductionduration" /><code>{"private float scaleReductionDuration"}</code> | Duration setting for shrinking on destruction. Unused in this build. |
+| <Link id="m-destructioneffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestructionEffect"}</code> | <span className="api-desc">Effect set in the inspector for destruction. Unused in this build.</span> |
+| <Link id="m-enableonmessage" /><code>{"private GameObject enableOnMessage"}</code> | <span className="api-desc">Object set in the inspector. Unused in this build.</span> |
+| <Link id="m-finalscaleondestory" /><code>{"private float finalScaleOnDestory"}</code> | <span className="api-desc">Scale setting for destruction. Unused in this build.</span> |
+| <Link id="m-hascontacted" /><code>{"private bool hasContacted"}</code> | <span className="api-desc">Backing field for `HasContacted`.</span> |
+| <Link id="m-maincollider" /><code>{"private Collider mainCollider"}</code> | <span className="api-desc">Backing field for `Collider`.</span> |
+| <Link id="m-scalereductionduration" /><code>{"private float scaleReductionDuration"}</code> | <span className="api-desc">Duration setting for shrinking on destruction. Unused in this build.</span> |
 
 </details>
 
@@ -45,18 +45,18 @@ Obsolete networked contact projectile. It logs an error on `Awake` telling you t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> | The main collider set in the inspector. |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The projectile's network entity, set from outside. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | This component's transform. |
-| <Link id="m-hascontacted-2" /><code>{"protected override bool HasContacted { get; }"}</code> | Returns `hasContacted`, which is never set to true here. |
+| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> | <span className="api-desc">The main collider set in the inspector.</span> |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | <span className="api-desc">The projectile's network entity, set from outside.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">This component's transform.</span> |
+| <Link id="m-hascontacted-2" /><code>{"protected override bool HasContacted { get; }"}</code> | <span className="api-desc">Returns `hasContacted`, which is never set to true here.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haseffect" /><code>{"private bool HasEffect { get; set; }"}</code> | Private flag, unused in this build. |
-| <Link id="m-wasenabled" /><code>{"private bool WasEnabled { get; set; }"}</code> | Private flag, unused in this build. |
+| <Link id="m-haseffect" /><code>{"private bool HasEffect { get; set; }"}</code> | <span className="api-desc">Private flag, unused in this build.</span> |
+| <Link id="m-wasenabled" /><code>{"private bool WasEnabled { get; set; }"}</code> | <span className="api-desc">Private flag, unused in this build.</span> |
 
 </details>
 
@@ -64,6 +64,6 @@ Obsolete networked contact projectile. It logs an error on `Awake` telling you t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> | Empty in this build. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Registers with the impact generators, then logs that the class is obsolete. |
-| <Link id="m-oncontact" /><code>{"protected override void OnContact()"}</code> | Empty in this build. |
+| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Registers with the impact generators, then logs that the class is obsolete.</span> |
+| <Link id="m-oncontact" /><code>{"protected override void OnContact()"}</code> | <span className="api-desc">Empty in this build.</span> |

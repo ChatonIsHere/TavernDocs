@@ -29,4 +29,8 @@ Obsolete analytics event names (signup, login, logout). Marked to use the new an
 
 Members of other types that take, return or hold a `XsollaEvent`:
 
+<div className="api-used-in">
+
 [`JsonEvent.JsonEvent`](/mod/game-api/types/global-i-l/jsonevent#m-ctor).
+
+</div>

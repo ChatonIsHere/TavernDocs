@@ -22,16 +22,16 @@ Zone event asset that logs the event name, time spent and a message, for testing
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DebugTriggerEvent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DebugTriggerEvent()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"private string message"}</code> | Text added to the log line. |
+| <Link id="m-message" /><code>{"private string message"}</code> | <span className="api-desc">Text added to the log line.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Zone event asset that logs the event name, time spent and a message, for testing
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"override void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | Logs the event name, duration and message as an error. |
+| <Link id="m-trigger" /><code>{"override void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | <span className="api-desc">Logs the event name, duration and message as an error.</span> |

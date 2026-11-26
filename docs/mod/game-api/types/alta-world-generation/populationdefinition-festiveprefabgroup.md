@@ -21,17 +21,17 @@ Private: prefabs a population spawns instead of its normal ones while a festivit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> | Creates a `PopulationDefinition.FestivePrefabGroup` with default values. |
+| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> | <span className="api-desc">Creates a `PopulationDefinition.FestivePrefabGroup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | The festivity that turns the group on. |
-| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> | Backing field for `PrefabHashes`. |
+| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | <span className="api-desc">The festivity that turns the group on.</span> |
+| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> | <span className="api-desc">Backing field for `PrefabHashes`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ Private: prefabs a population spawns instead of its normal ones while a festivit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | Whether the group's festivity is active now. |
-| <Link id="m-prefabhashes-2" /><code>{"uint[] PrefabHashes { get; }"}</code> | Prefab hashes to pick from while active. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; }"}</code> | <span className="api-desc">Whether the group's festivity is active now.</span> |
+| <Link id="m-prefabhashes-2" /><code>{"uint[] PrefabHashes { get; }"}</code> | <span className="api-desc">Prefab hashes to pick from while active.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FestivePrefabGroup`:
 
+<div className="api-used-in">
+
 [`PopulationDefinition.festiveGroups`](/mod/game-api/types/alta-world-generation/populationdefinition#m-festivegroups).
+
+</div>

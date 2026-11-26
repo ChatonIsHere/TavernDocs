@@ -21,16 +21,16 @@ Volume trigger that applies a `LocomotionModifierCheck` to players while they ar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LocomotionModifierVolumeTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LocomotionModifierVolumeTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifiercheck">{"LocomotionModifierCheck"}</Link>{" check"}</code> | The locomotion modifier to apply. |
+| <Link id="m-check" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifiercheck">{"LocomotionModifierCheck"}</Link>{" check"}</code> | <span className="api-desc">The locomotion modifier to apply.</span> |
 
 </details>
 
@@ -38,11 +38,11 @@ Volume trigger that applies a `LocomotionModifierCheck` to players while they ar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ischeckingforplayer" /><code>{"override bool IsCheckingForPlayer { get; }"}</code> | Always true; this volume reacts to players. |
+| <Link id="m-ischeckingforplayer" /><code>{"override bool IsCheckingForPlayer { get; }"}</code> | <span className="api-desc">Always true; this volume reacts to players.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerentered" /><code>{"protected override void PlayerEntered("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Applies the check to the entering player. |
-| <Link id="m-playerleft" /><code>{"protected override void PlayerLeft("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Removes the check from the leaving player. |
+| <Link id="m-playerentered" /><code>{"protected override void PlayerEntered("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Applies the check to the entering player.</span> |
+| <Link id="m-playerleft" /><code>{"protected override void PlayerLeft("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Removes the check from the leaving player.</span> |

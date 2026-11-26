@@ -21,16 +21,16 @@ File format that stores one `BasicSaveData` object in an Alta file, through a `B
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicSaveFile()"}</code> | Creates a `BasicSaveFile` with default values. |
+| <Link id="m-ctor" /><code>{"BasicSaveFile()"}</code> | <span className="api-desc">Creates a `BasicSaveFile` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<T> wrapper"}</code> | Wrapper that holds and serializes the data. |
+| <Link id="m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<T> wrapper"}</code> | <span className="api-desc">Wrapper that holds and serializes the data.</span> |
 
 </details>
 
@@ -38,16 +38,16 @@ File format that stores one `BasicSaveData` object in an Alta file, through a `B
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | The stored save data. |
+| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | <span className="api-desc">The stored save data.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Copies the file with a cloned wrapper. |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Disposes the wrapper too. |
-| <Link id="m-markmodified" /><code>{"void MarkModified()"}</code> | Marks the data as changed so it gets written. |
-| <Link id="m-readandunload" /><code>{"static async Task<T> ReadAndUnload("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | Reads the file, queues it to unload and returns its data, or null. |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the wrapper from the file stream. |
-| <Link id="m-writeandunload" /><code>{"static void WriteAndUnload("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, T data)"}</code> | Puts the data in the file, starts an async write and queues the file to unload. |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the wrapper to the file stream. |
+| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | <span className="api-desc">Copies the file with a cloned wrapper.</span> |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | <span className="api-desc">Disposes the wrapper too.</span> |
+| <Link id="m-markmodified" /><code>{"void MarkModified()"}</code> | <span className="api-desc">Marks the data as changed so it gets written.</span> |
+| <Link id="m-readandunload" /><code>{"static async Task<T> ReadAndUnload("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | <span className="api-desc">Reads the file, queues it to unload and returns its data, or null.</span> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | <span className="api-desc">Reads the wrapper from the file stream.</span> |
+| <Link id="m-writeandunload" /><code>{"static void WriteAndUnload("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file, T data)"}</code> | <span className="api-desc">Puts the data in the file, starts an async write and queues the file to unload.</span> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | <span className="api-desc">Writes the wrapper to the file stream.</span> |

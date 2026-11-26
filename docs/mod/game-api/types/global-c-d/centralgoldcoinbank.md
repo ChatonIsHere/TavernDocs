@@ -23,4 +23,4 @@ Server-side per-player store of gold bank accounts (`PlayerGoldBankAccount`). Re
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CentralGoldCoinBank()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CentralGoldCoinBank()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

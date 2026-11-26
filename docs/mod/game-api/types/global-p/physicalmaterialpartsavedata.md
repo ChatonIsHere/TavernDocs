@@ -23,10 +23,10 @@ Save format (version 1) for `PhysicalMaterialPart`, storing which physical mater
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PhysicalMaterialPartSaveData()"}</code> | Creates a `PhysicalMaterialPartSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PhysicalMaterialPartSaveData()"}</code> | <span className="api-desc">Creates a `PhysicalMaterialPartSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> | The part's physical material. |
+| <Link id="m-material" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> | <span className="api-desc">The part's physical material.</span> |

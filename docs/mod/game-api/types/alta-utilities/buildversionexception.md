@@ -21,4 +21,4 @@ Exception for a bad build version. Nothing in this build throws it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildVersionException(string message)"}</code> | Creates the exception with `message`. |
+| <Link id="m-ctor" /><code>{"BuildVersionException(string message)"}</code> | <span className="api-desc">Creates the exception with `message`.</span> |

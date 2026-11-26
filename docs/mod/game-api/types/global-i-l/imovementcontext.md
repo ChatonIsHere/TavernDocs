@@ -22,20 +22,24 @@ A moving frame of reference that players move relative to, such as a moving plat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The networked entity that defines the frame, if any. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The transform that defines the frame. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The networked entity that defines the frame, if any.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The transform that defines the frame.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localtoworld" /><code>{"Vector3 LocalToWorld(Vector3 local)"}</code> | Turns a position or rotation in the frame's space into world space. |
-| <Link id="m-localtoworld-2" /><code>{"Quaternion LocalToWorld(Quaternion local)"}</code> | Turns a position or rotation in the frame's space into world space. |
-| <Link id="m-worldtolocal" /><code>{"Vector3 WorldToLocal(Vector3 world)"}</code> | Turns a world position or rotation into the frame's space. |
-| <Link id="m-worldtolocal-2" /><code>{"Quaternion WorldToLocal(Quaternion world)"}</code> | Turns a world position or rotation into the frame's space. |
+| <Link id="m-localtoworld" /><code>{"Vector3 LocalToWorld(Vector3 local)"}</code> | <span className="api-desc">Turns a position or rotation in the frame's space into world space.</span> |
+| <Link id="m-localtoworld-2" /><code>{"Quaternion LocalToWorld(Quaternion local)"}</code> | <span className="api-desc">Turns a position or rotation in the frame's space into world space.</span> |
+| <Link id="m-worldtolocal" /><code>{"Vector3 WorldToLocal(Vector3 world)"}</code> | <span className="api-desc">Turns a world position or rotation into the frame's space.</span> |
+| <Link id="m-worldtolocal-2" /><code>{"Quaternion WorldToLocal(Quaternion world)"}</code> | <span className="api-desc">Turns a world position or rotation into the frame's space.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IMovementContext`:
 
+<div className="api-used-in">
+
 [`NetworkRigidbody.MovementContext`](/mod/game-api/types/alta-networking/networkrigidbody#m-movementcontext), [`StaticPlatformSupport.MovementContext`](/mod/game-api/types/alta-networking/staticplatformsupport#m-movementcontext), [`IHasMovementContext.MovementContext`](/mod/game-api/types/global-i-l/ihasmovementcontext#m-movementcontext), [`LocomotionController.MovementContext`](/mod/game-api/types/global-i-l/locomotioncontroller#m-movementcontext), [`MovingPlatform.MovementContext`](/mod/game-api/types/global-m-o/movingplatform#m-movementcontext), [`PositionSerializer.context`](/mod/game-api/types/global-p/positionserializer#m-context), [`PositionSerializer.Context`](/mod/game-api/types/global-p/positionserializer#m-context-2), [`PositionSerializer.getContext`](/mod/game-api/types/global-p/positionserializer#m-getcontext), [`PositionSerializer.GetContext`](/mod/game-api/types/global-p/positionserializer#m-getcontext-2), [`TransformMovementContext.MovementContext`](/mod/game-api/types/global-t-x/transformmovementcontext#m-movementcontext).
+
+</div>

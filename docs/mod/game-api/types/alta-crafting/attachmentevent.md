@@ -21,10 +21,14 @@ Serializable event with a `TreeAttachment` argument, used for a tree attachment'
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> | Creates an `AttachmentEvent` with default values. |
+| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> | <span className="api-desc">Creates an `AttachmentEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AttachmentEvent`:
 
+<div className="api-used-in">
+
 [`TreeAttachment.broken`](/mod/game-api/types/alta-crafting/treeattachment#m-broken).
+
+</div>

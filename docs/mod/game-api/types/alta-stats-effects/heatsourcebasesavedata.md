@@ -23,12 +23,12 @@ Save data for a `HeatSourceBase` (save structure version 2).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> | Creates a `HeatSourceBaseSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> | <span className="api-desc">Creates a `HeatSourceBaseSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> | Whether the heat source was lit. |
-| <Link id="m-progress" /><code>{"float progress"}</code> | The heat source's progress value. |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> | Saved time, as a `TimeSpan`. |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> | <span className="api-desc">Whether the heat source was lit.</span> |
+| <Link id="m-progress" /><code>{"float progress"}</code> | <span className="api-desc">The heat source's progress value.</span> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | <span className="api-desc">Saved time, as a `TimeSpan`.</span> |

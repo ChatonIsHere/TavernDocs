@@ -21,4 +21,4 @@ Property attribute that marks an enum field to be edited as flags in the inspect
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnumFlagsAttribute()"}</code> | Creates an `EnumFlagsAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"EnumFlagsAttribute()"}</code> | <span className="api-desc">Creates an `EnumFlagsAttribute` with default values.</span> |

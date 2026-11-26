@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Progression/Skills`: menu it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Skills()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills` with default values. |
+| <Link id="m-ctor" /><code>{"protected Skills()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills` with default values.</span> |

@@ -28,4 +28,8 @@ Which way up a part sits on a generic assembly station: `Up` or `Down`.
 
 Members of other types that take, return or hold a `AssemblyPosition`:
 
+<div className="api-used-in">
+
 [`GenericAssemblyPart.availablePositions`](/mod/game-api/types/alta-crafting/genericassemblypart#m-availablepositions), [`GenericAssemblyPart.AvailablePositions`](/mod/game-api/types/alta-crafting/genericassemblypart#m-availablepositions-2), [`GenericAssemblyPart.SetPositionLocal`](/mod/game-api/types/alta-crafting/genericassemblypart#m-setpositionlocal).
+
+</div>

@@ -21,17 +21,17 @@ Type converter that turns a stat name into a `StatList` of stat and player pairs
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatListConverter()"}</code> | Creates a `StatListConverter` with default values. |
+| <Link id="m-ctor" /><code>{"StatListConverter()"}</code> | <span className="api-desc">Creates a `StatListConverter` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> LastList { get; private set; }"}</code> | Meant to hold the last converted list; this converter never sets it. |
+| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> LastList { get; private set; }"}</code> | <span className="api-desc">Meant to hold the last converted list; this converter never sets it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | For each player in `PlayerList.LastList`, adds a pair. It splits the text on commas but ignores the result, and always reads the stat from `PlayerConverter.Last`. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">For each player in `PlayerList.LastList`, adds a pair. It splits the text on commas but ignores the result, and always reads the stat from `PlayerConverter.Last`.</span> |

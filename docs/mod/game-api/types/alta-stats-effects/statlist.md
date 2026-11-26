@@ -23,16 +23,16 @@ A list of stat and player pairs, with a type converter so console commands can t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> | Creates a `StatList` from `range`. |
+| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> | <span className="api-desc">Creates a `StatList` from `range`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stats" /><code>{"private IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> stats"}</code> | The pairs. |
+| <Link id="m-stats" /><code>{"private IEnumerable<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> stats"}</code> | <span className="api-desc">The pairs.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ A list of stat and player pairs, with a type converter so console commands can t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> GetEnumerator()"}</code> | Enumerates the stat and player pairs. The non generic version casts to `IEnumerable<Stat>` and probably throws. |
-| <Link id="m-name" /><code>{"string Name()"}</code> | Name of the first entry's stat definition. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> GetEnumerator()"}</code> | <span className="api-desc">Enumerates the stat and player pairs. The non generic version casts to `IEnumerable<Stat>` and probably throws.</span> |
+| <Link id="m-name" /><code>{"string Name()"}</code> | <span className="api-desc">Name of the first entry's stat definition.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the stat and player pairs. The non generic version casts to `IEnumerable<Stat>` and probably throws. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | <span className="api-desc">Enumerates the stat and player pairs. The non generic version casts to `IEnumerable<Stat>` and probably throws.</span> |
 
 </details>

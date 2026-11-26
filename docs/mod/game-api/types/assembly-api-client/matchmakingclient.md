@@ -21,10 +21,10 @@ Online client for matchmaking. Reached as `ApiAccess.ApiClient.MatchMaking`; cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MatchMakingClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `MatchMakingClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"MatchMakingClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `MatchMakingClient` from `clientManager`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> | Asks the API for the best server running scene 1, the tutorial. |
+| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> | <span className="api-desc">Asks the API for the best server running scene 1, the tutorial.</span> |

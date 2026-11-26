@@ -21,4 +21,4 @@ Exception a command can throw to report a failure. `CommandService` catches it s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> | Creates the exception with `message`. |
+| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> | <span className="api-desc">Creates the exception with `message`.</span> |

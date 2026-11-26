@@ -21,19 +21,19 @@ Older prefab scoring component for how much the creature faces the target. In th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FacingOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FacingOperation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dotproductmaximum" /><code>{"private float dotProductMaximum"}</code> | Facing dot product that maps to 1 (default 1, dead ahead). |
-| <Link id="m-dotproductminimum" /><code>{"private float dotProductMinimum"}</code> | Facing dot product that maps to 0 (default 0.8). |
-| <Link id="m-isignoringy" /><code>{"private bool isIgnoringY"}</code> | Use the flat Facing2D sense instead of Facing3D (default true). |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
+| <Link id="m-dotproductmaximum" /><code>{"private float dotProductMaximum"}</code> | <span className="api-desc">Facing dot product that maps to 1 (default 1, dead ahead).</span> |
+| <Link id="m-dotproductminimum" /><code>{"private float dotProductMinimum"}</code> | <span className="api-desc">Facing dot product that maps to 0 (default 0.8).</span> |
+| <Link id="m-isignoringy" /><code>{"private bool isIgnoringY"}</code> | <span className="api-desc">Use the flat Facing2D sense instead of Facing3D (default true).</span> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Weight of the rule. Only matters for preferred rules.</span> |
 
 </details>
 
@@ -41,6 +41,6 @@ Older prefab scoring component for how much the creature faces the target. In th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes a target sense rule on the Facing2D (or Facing3D) sense, mapping the dot product range onto 0 to 1. |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Facing XZ 0.8 -> 1 (x1)`. |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: renames the GameObject and migrates the settings to a `SenseOperation`. |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Makes a target sense rule on the Facing2D (or Facing3D) sense, mapping the dot product range onto 0 to 1.</span> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | <span className="api-desc">Builds the GameObject name, like `Facing XZ 0.8 -> 1 (x1)`.</span> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Editor: renames the GameObject and migrates the settings to a `SenseOperation`.</span> |

@@ -21,18 +21,18 @@ Item component that sets how the item sits when `SpawnBuried` spawns it undergro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuriedItemTag()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BuriedItemTag()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buriedoffset" /><code>{"private Vector3 buriedOffset"}</code> | Backing field for `BuriedOffset`. |
-| <Link id="m-buriedrotation" /><code>{"private Vector3 buriedRotation"}</code> | Backing field for `BuriedRotation`. |
-| <Link id="m-overridepulldistance" /><code>{"private float overridePullDistance"}</code> | Backing field for `OverridePullDistance`. |
+| <Link id="m-buriedoffset" /><code>{"private Vector3 buriedOffset"}</code> | <span className="api-desc">Backing field for `BuriedOffset`.</span> |
+| <Link id="m-buriedrotation" /><code>{"private Vector3 buriedRotation"}</code> | <span className="api-desc">Backing field for `BuriedRotation`.</span> |
+| <Link id="m-overridepulldistance" /><code>{"private float overridePullDistance"}</code> | <span className="api-desc">Backing field for `OverridePullDistance`.</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Item component that sets how the item sits when `SpawnBuried` spawns it undergro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buriedoffset-2" /><code>{"Vector3 BuriedOffset { get; }"}</code> | Local position the buried item is placed at under its `SpawnBuried` parent. |
-| <Link id="m-buriedrotation-2" /><code>{"Vector3 BuriedRotation { get; }"}</code> | Local rotation of the buried item, as Euler angles. |
-| <Link id="m-overridepulldistance-2" /><code>{"float OverridePullDistance { get; }"}</code> | Pull distance given to the `PullUpPickup` instead of its default. 0 keeps the default. |
+| <Link id="m-buriedoffset-2" /><code>{"Vector3 BuriedOffset { get; }"}</code> | <span className="api-desc">Local position the buried item is placed at under its `SpawnBuried` parent.</span> |
+| <Link id="m-buriedrotation-2" /><code>{"Vector3 BuriedRotation { get; }"}</code> | <span className="api-desc">Local rotation of the buried item, as Euler angles.</span> |
+| <Link id="m-overridepulldistance-2" /><code>{"float OverridePullDistance { get; }"}</code> | <span className="api-desc">Pull distance given to the `PullUpPickup` instead of its default. 0 keeps the default.</span> |

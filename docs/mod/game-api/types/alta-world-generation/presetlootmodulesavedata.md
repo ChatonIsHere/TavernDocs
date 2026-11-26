@@ -23,17 +23,21 @@ Saved setup for a `PresetLootModule`: which preset loot set it spawns and whethe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> | Creates a `PresetLootModuleSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> | <span className="api-desc">Creates a `PresetLootModuleSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearwhenspawn" /><code>{"bool clearWhenSpawn"}</code> | If true, destroys everything in the dock group before spawning. |
-| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-world-generation/presetlootset">{"PresetLootSet"}</Link>{" set"}</code> | The preset loot set to spawn. |
+| <Link id="m-clearwhenspawn" /><code>{"bool clearWhenSpawn"}</code> | <span className="api-desc">If true, destroys everything in the dock group before spawning.</span> |
+| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-world-generation/presetlootset">{"PresetLootSet"}</Link>{" set"}</code> | <span className="api-desc">The preset loot set to spawn.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PresetLootModuleSaveData`:
 
+<div className="api-used-in">
+
 [`PresetLootModule.setup`](/mod/game-api/types/alta-world-generation/presetlootmodule#m-setup).
+
+</div>

@@ -23,15 +23,15 @@ Save data for a `NetworkRigidbody`: its transform, motion and sleep state.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> | Creates a `NetworkRigidbodySaveData` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> | <span className="api-desc">Creates a `NetworkRigidbodySaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> | Saved angular velocity. |
-| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> | Whether the body was kinematic. |
-| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> | Whether the body was asleep on the server. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Saved position. |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Saved rotation. |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | Saved velocity. |
+| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> | <span className="api-desc">Saved angular velocity.</span> |
+| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> | <span className="api-desc">Whether the body was kinematic.</span> |
+| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> | <span className="api-desc">Whether the body was asleep on the server.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Saved position.</span> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | <span className="api-desc">Saved rotation.</span> |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | <span className="api-desc">Saved velocity.</span> |

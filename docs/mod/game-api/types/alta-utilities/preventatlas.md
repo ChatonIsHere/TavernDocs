@@ -21,26 +21,26 @@ Component that keeps renderers out of texture atlasing: the listed ones, or ever
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PreventAtlas()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PreventAtlas()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preventatlasingon" /><code>{"private Renderer[] preventAtlasingOn"}</code> | Renderers to keep out of atlasing. Leave empty to cover all children. |
+| <Link id="m-preventatlasingon" /><code>{"private Renderer[] preventAtlasingOn"}</code> | <span className="api-desc">Renderers to keep out of atlasing. Leave empty to cover all children.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ispreventatlasing" /><code>{"private bool Alta.Utilities.Atlas.IPreventAtlasing.IsPreventAtlasing(Renderer renderer)"}</code> | True if the renderer is in the list, or always true when the list is empty. |
+| <Link id="m-ispreventatlasing" /><code>{"private bool Alta.Utilities.Atlas.IPreventAtlasing.IsPreventAtlasing(Renderer renderer)"}</code> | <span className="api-desc">True if the renderer is in the list, or always true when the list is empty.</span> |
 
 </details>

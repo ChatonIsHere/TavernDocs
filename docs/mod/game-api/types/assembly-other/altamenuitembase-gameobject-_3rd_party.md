@@ -23,4 +23,4 @@ Editor menu folder `GameObject/3rd Party`: menu item classes inherit it to appea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> | Creates an `AltaMenuItemBase.GameObject._3rd_Party` with default values. |
+| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.GameObject._3rd_Party` with default values.</span> |

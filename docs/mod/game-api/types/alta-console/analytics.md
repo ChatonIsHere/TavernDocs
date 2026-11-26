@@ -21,14 +21,14 @@ Obsolete static analytics sender. `SendRecord` is now empty, so nothing it is gi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apiendpoint" /><code>{"const string APIEndpoint"}</code> | Old AWS endpoint the records used to be posted to. |
+| <Link id="m-apiendpoint" /><code>{"const string APIEndpoint"}</code> | <span className="api-desc">Old AWS endpoint the records used to be posted to.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -36,13 +36,13 @@ Obsolete static analytics sender. `SendRecord` is now empty, so nothing it is gi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendrecord" /><code>{"static void SendRecord<T>("}<Link to="/mod/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type, T objectToSend, "}<Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" options = 0)"}</code> | Does nothing. Kept for old callers. |
+| <Link id="m-sendrecord" /><code>{"static void SendRecord<T>("}<Link to="/mod/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type, T objectToSend, "}<Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" options = 0)"}</code> | <span className="api-desc">Does nothing. Kept for old callers.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getapiendpoint" /><code>{"private static string GetAPIEndpoint("}<Link to="/mod/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type)"}</code> | Maps an `AnalyticsType` to the old endpoint's path segment. Unused now. |
+| <Link id="m-getapiendpoint" /><code>{"private static string GetAPIEndpoint("}<Link to="/mod/game-api/types/alta-console/analyticstype">{"AnalyticsType"}</Link>{" type)"}</code> | <span className="api-desc">Maps an `AnalyticsType` to the old endpoint's path segment. Unused now.</span> |
 
 </details>

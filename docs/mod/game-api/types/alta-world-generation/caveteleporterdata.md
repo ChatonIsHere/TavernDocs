@@ -23,10 +23,10 @@ Save data for a `CaveTeleporter` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterData()"}</code> | Creates a `CaveTeleporterData` with default values. |
+| <Link id="m-ctor" /><code>{"CaveTeleporterData()"}</code> | <span className="api-desc">Creates a `CaveTeleporterData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> | The cave layer the teleporter belongs to. |
+| <Link id="m-layer" /><code>{"int layer"}</code> | <span className="api-desc">The cave layer the teleporter belongs to.</span> |

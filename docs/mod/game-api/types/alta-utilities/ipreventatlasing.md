@@ -21,4 +21,4 @@ Implemented by components that can keep a renderer out of texture atlas baking.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ispreventatlasing" /><code>{"bool IsPreventAtlasing(Renderer renderer)"}</code> | True if this renderer should not be atlased. |
+| <Link id="m-ispreventatlasing" /><code>{"bool IsPreventAtlasing(Renderer renderer)"}</code> | <span className="api-desc">True if this renderer should not be atlased.</span> |

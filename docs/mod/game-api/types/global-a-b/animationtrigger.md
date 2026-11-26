@@ -21,17 +21,17 @@ Fires inspector events when the object is enabled or disabled. The disable event
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimationTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> | Backing field for `Disabled`. |
-| <Link id="m-onenable" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> | Backing field for `Enabled`. |
+| <Link id="m-ondisable" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> | <span className="api-desc">Backing field for `Disabled`.</span> |
+| <Link id="m-onenable" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> | <span className="api-desc">Backing field for `Enabled`.</span> |
 
 </details>
 
@@ -39,17 +39,17 @@ Fires inspector events when the object is enabled or disabled. The disable event
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disabled" /><code><Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> | Event fired on disable (not while quitting). |
-| <Link id="m-enabled" /><code><Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> | Event fired on enable. |
+| <Link id="m-disabled" /><code><Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> | <span className="api-desc">Event fired on disable (not while quitting).</span> |
+| <Link id="m-enabled" /><code><Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> | <span className="api-desc">Event fired on enable.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> | Invokes `onDisable` unless the application is quitting. |
-| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> | Invokes `onEnable`. |
+| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Invokes `onDisable` unless the application is quitting.</span> |
+| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Invokes `onEnable`.</span> |
 
 </details>

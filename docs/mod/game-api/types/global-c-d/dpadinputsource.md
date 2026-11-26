@@ -21,16 +21,16 @@ An `InputSource` that counts as pressed while the player's D-pad touch is on one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `DPadInputSource` from `direction` and `controller`. |
+| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `DPadInputSource` from `direction` and `controller`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | The `PlayerInput` whose D-pad is watched. |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | <span className="api-desc">The `PlayerInput` whose D-pad is watched.</span> |
 
 </details>
 
@@ -38,20 +38,20 @@ An `InputSource` that counts as pressed while the player's D-pad touch is on one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> | The D-pad direction this source listens for. |
+| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> | <span className="api-desc">The D-pad direction this source listens for.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | Subscribes to the D-pad's `TouchChanged` event. Called by the constructor. |
-| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | Unsubscribes from the D-pad. |
+| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | <span className="api-desc">Subscribes to the D-pad's `TouchChanged` event. Called by the constructor.</span> |
+| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | <span className="api-desc">Unsubscribes from the D-pad.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> | Fires pressed when the touch moves onto `Direction` and unpressed when it moves off. |
+| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> | <span className="api-desc">Fires pressed when the touch moves onto `Direction` and unpressed when it moves off.</span> |
 
 </details>

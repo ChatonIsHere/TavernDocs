@@ -23,4 +23,4 @@ Serializable Unity event with a `Collider` argument, used by `TriggerEnterEvents
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> | Creates a `TriggerEnterEvents.ColliderUnityEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> | <span className="api-desc">Creates a `TriggerEnterEvents.ColliderUnityEvent` with default values.</span> |

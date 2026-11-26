@@ -23,11 +23,11 @@ Save data for a `GenericCraftingStation` (version 1): the chosen recipe and the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> | Creates a `GenericCraftingStationData` with default values. |
+| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> | <span className="api-desc">Creates a `GenericCraftingStationData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pieces" /><code><Link to="/mod/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{"[] pieces"}</code> | Saved state of each piece of the recipe. |
-| <Link id="m-recipe" /><code><Link to="/mod/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" recipe"}</code> | The recipe the station is building. |
+| <Link id="m-pieces" /><code><Link to="/mod/game-api/types/alta-crafting/piecesavedata-alta-crafting">{"PieceSaveData"}</Link>{"[] pieces"}</code> | <span className="api-desc">Saved state of each piece of the recipe.</span> |
+| <Link id="m-recipe" /><code><Link to="/mod/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{" recipe"}</code> | <span className="api-desc">The recipe the station is building.</span> |

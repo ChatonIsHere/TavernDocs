@@ -21,11 +21,11 @@ Type converter that turns a comma-separated console argument into a `UserList` o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserListConverter()"}</code> | Creates an `UserListConverter` with default values. |
+| <Link id="m-ctor" /><code>{"UserListConverter()"}</code> | <span className="api-desc">Creates an `UserListConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Splits the lowercased string on commas and makes a `UserInfoAccess` from each trimmed part, by id if numeric. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Splits the lowercased string on commas and makes a `UserInfoAccess` from each trimmed part, by id if numeric.</span> |

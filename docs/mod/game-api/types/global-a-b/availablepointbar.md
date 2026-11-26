@@ -21,19 +21,19 @@ Client: one pip showing an unspent progression point. `PipAvailablePointManager`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AvailablePointBar()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AvailablePointBar()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alpha" /><code>{"private static readonly int _Alpha"}</code> | Shader property ID for `_Alpha`. |
-| <Link id="m-animatingrenderer" /><code>{"private Renderer animatingRenderer"}</code> | Renderer whose material alpha is faded. |
-| <Link id="m-litprogress" /><code>{"private float litProgress"}</code> | Alpha used when lit. |
-| <Link id="m-runninganimation" /><code>{"private Coroutine runningAnimation"}</code> | The fade coroutine in progress, if any. |
+| <Link id="m-alpha" /><code>{"private static readonly int _Alpha"}</code> | <span className="api-desc">Shader property ID for `_Alpha`.</span> |
+| <Link id="m-animatingrenderer" /><code>{"private Renderer animatingRenderer"}</code> | <span className="api-desc">Renderer whose material alpha is faded.</span> |
+| <Link id="m-litprogress" /><code>{"private float litProgress"}</code> | <span className="api-desc">Alpha used when lit.</span> |
+| <Link id="m-runninganimation" /><code>{"private Coroutine runningAnimation"}</code> | <span className="api-desc">The fade coroutine in progress, if any.</span> |
 
 </details>
 
@@ -41,19 +41,19 @@ Client: one pip showing an unspent progression point. `PipAvailablePointManager`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dim" /><code>{"void Dim()"}</code> | Fades the pip out to 0. |
-| <Link id="m-instantsettoalpha" /><code>{"void InstantSetToAlpha(float alpha)"}</code> | Sets the material's alpha at once. |
-| <Link id="m-light" /><code>{"void Light()"}</code> | Fades the pip up to `litProgress`. |
+| <Link id="m-dim" /><code>{"void Dim()"}</code> | <span className="api-desc">Fades the pip out to 0.</span> |
+| <Link id="m-instantsettoalpha" /><code>{"void InstantSetToAlpha(float alpha)"}</code> | <span className="api-desc">Sets the material's alpha at once.</span> |
+| <Link id="m-light" /><code>{"void Light()"}</code> | <span className="api-desc">Fades the pip up to `litProgress`.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animate" /><code>{"private void Animate(float target)"}</code> | Starts fading alpha to the target, stopping any fade already running. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Starts the pip fully transparent, except on headless servers. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Fills in the renderer from this object if it is empty. |
-| <Link id="m-runanimation" /><code>{"private IEnumerator RunAnimation(float target) (iterator)"}</code> | Coroutine that lerps alpha to the target over a time equal to the alpha difference. |
+| <Link id="m-animate" /><code>{"private void Animate(float target)"}</code> | <span className="api-desc">Starts fading alpha to the target, stopping any fade already running.</span> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Starts the pip fully transparent, except on headless servers.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Fills in the renderer from this object if it is empty.</span> |
+| <Link id="m-runanimation" /><code>{"private IEnumerator RunAnimation(float target) (iterator)"}</code> | <span className="api-desc">Coroutine that lerps alpha to the target over a time equal to the alpha difference.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ Client: one pip showing an unspent progression point. `PipAvailablePointManager`
 
 Members of other types that take, return or hold a `AvailablePointBar`:
 
+<div className="api-used-in">
+
 [`PipAvailablePointManager.instantiated`](/mod/game-api/types/global-p/pipavailablepointmanager#m-instantiated), [`PipAvailablePointManager.pipPrefab`](/mod/game-api/types/global-p/pipavailablepointmanager#m-pipprefab).
+
+</div>

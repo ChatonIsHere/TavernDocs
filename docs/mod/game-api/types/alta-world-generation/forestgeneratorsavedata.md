@@ -23,10 +23,10 @@ Save data for a `ForestGenerator` (save structure version 1). Holds only the for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> | Creates a `ForestGeneratorSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> | <span className="api-desc">Creates a `ForestGeneratorSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-seed" /><code>{"int seed"}</code> | The saved forest seed, so the same forest is generated again on load. |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">The saved forest seed, so the same forest is generated again on load.</span> |

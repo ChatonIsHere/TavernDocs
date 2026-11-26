@@ -28,4 +28,8 @@ How a client connection channel processes incoming reliable packets: Normal (all
 
 Members of other types that take, return or hold a `ConnectionReceiverType`:
 
+<div className="api-used-in">
+
 [`ConnectionChannel.receiverType`](/mod/game-api/types/alta-networking/connectionchannel#m-receivertype).
+
+</div>

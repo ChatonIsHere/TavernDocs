@@ -23,16 +23,16 @@ Generation part that turns the object to face along its forest path, tilted with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AlignWithPathSlope()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AlignWithPathSlope()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hill" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/alignwithpathslope-hill">{"AlignWithPathSlope.Hill"}</Link>{" hill"}</code> | Which way to face: either, uphill or downhill. |
+| <Link id="m-hill" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/alignwithpathslope-hill">{"AlignWithPathSlope.Hill"}</Link>{" hill"}</code> | <span className="api-desc">Which way to face: either, uphill or downhill.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Generation part that turns the object to face along its forest path, tilted with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Faces the object from one path node to the other, including the height change, uphill or downhill as set. |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | <span className="api-desc">Faces the object from one path node to the other, including the height change, uphill or downhill as set.</span> |

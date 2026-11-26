@@ -27,4 +27,8 @@ Smooth turn setting for swipe pads: `Relative` turns from swipe movement, `Cente
 
 Members of other types that take, return or hold a `SmoothRotationMode`:
 
+<div className="api-used-in">
+
 [`GameSettings.IsSmoothRotationOnSwipe`](/mod/game-api/types/alta-utilities/gamesettings#m-issmoothrotationonswipe).
+
+</div>

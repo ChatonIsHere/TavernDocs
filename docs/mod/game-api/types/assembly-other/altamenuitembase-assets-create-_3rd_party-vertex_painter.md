@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/3rd Party/Vertex Painter`: menu item classes i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Vertex_Painter()"}</code> | Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.Vertex_Painter` with default values. |
+| <Link id="m-ctor" /><code>{"protected Vertex_Painter()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.Vertex_Painter` with default values.</span> |

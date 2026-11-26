@@ -22,16 +22,16 @@ Common interface of the priority queues in this namespace (a copy of the BlueRaj
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of queued items. |
-| <Link id="m-first" /><code>{"TItem First { get; }"}</code> | The item that `Dequeue` would return, without removing it. |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | <span className="api-desc">Number of queued items.</span> |
+| <Link id="m-first" /><code>{"TItem First { get; }"}</code> | <span className="api-desc">The item that `Dequeue` would return, without removing it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties the queue. |
-| <Link id="m-contains" /><code>{"bool Contains(TItem node)"}</code> | True if the item is queued. |
-| <Link id="m-dequeue" /><code>{"TItem Dequeue()"}</code> | Removes and returns the item with the lowest priority value. |
-| <Link id="m-enqueue" /><code>{"void Enqueue(TItem node, TPriority priority)"}</code> | Adds an item with a priority. |
-| <Link id="m-remove" /><code>{"void Remove(TItem node)"}</code> | Removes a queued item from anywhere in the queue. |
-| <Link id="m-updatepriority" /><code>{"void UpdatePriority(TItem node, TPriority priority)"}</code> | Changes a queued item's priority and moves it to its new place. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Empties the queue.</span> |
+| <Link id="m-contains" /><code>{"bool Contains(TItem node)"}</code> | <span className="api-desc">True if the item is queued.</span> |
+| <Link id="m-dequeue" /><code>{"TItem Dequeue()"}</code> | <span className="api-desc">Removes and returns the item with the lowest priority value.</span> |
+| <Link id="m-enqueue" /><code>{"void Enqueue(TItem node, TPriority priority)"}</code> | <span className="api-desc">Adds an item with a priority.</span> |
+| <Link id="m-remove" /><code>{"void Remove(TItem node)"}</code> | <span className="api-desc">Removes a queued item from anywhere in the queue.</span> |
+| <Link id="m-updatepriority" /><code>{"void UpdatePriority(TItem node, TPriority priority)"}</code> | <span className="api-desc">Changes a queued item's priority and moves it to its new place.</span> |

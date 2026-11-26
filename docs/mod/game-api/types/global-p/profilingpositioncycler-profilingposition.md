@@ -21,18 +21,22 @@ A named camera spot (position and rotation) in the `ProfilingPositionCycler` glo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> | Creates a `ProfilingPositionCycler.ProfilingPosition` from `refTransform`. |
+| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> | <span className="api-desc">Creates a `ProfilingPositionCycler.ProfilingPosition` from `refTransform`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> | Label for the spot, used in the profiling results. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position to place the camera at. |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Camera rotation at this spot. Defaults to identity. |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">Label for the spot, used in the profiling results.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">World position to place the camera at.</span> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | <span className="api-desc">Camera rotation at this spot. Defaults to identity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ProfilingPosition`:
 
+<div className="api-used-in">
+
 [`ProfilingPositionCycler.positions`](/mod/game-api/types/global-p/profilingpositioncycler#m-positions).
+
+</div>

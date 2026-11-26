@@ -22,17 +22,17 @@ A purchasable set of cosmetic items sold together. Asset created from `Township/
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticSetDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CosmeticSetDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> items"}</code> | Backing field for `Items`. |
-| <Link id="m-settype" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" setType"}</code> | Backing field for `SetType`. |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> items"}</code> | <span className="api-desc">Backing field for `Items`.</span> |
+| <Link id="m-settype" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" setType"}</code> | <span className="api-desc">Backing field for `SetType`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ A purchasable set of cosmetic items sold together. Asset created from `Township/
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> Items { get; }"}</code> | The purchasables in the set. |
-| <Link id="m-settype-2" /><code><Link to="/mod/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" SetType { get; set; }"}</code> | What kind of item set this is. |
+| <Link id="m-items-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-customization/purchasable">{"Purchasable"}</Link>{"> Items { get; }"}</code> | <span className="api-desc">The purchasables in the set.</span> |
+| <Link id="m-settype-2" /><code><Link to="/mod/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" SetType { get; set; }"}</code> | <span className="api-desc">What kind of item set this is.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CosmeticSetDefinition`:
 
+<div className="api-used-in">
+
 [`ModellingCharacter.OverrideSet.set`](/mod/game-api/types/global-m-o/modellingcharacter-overrideset#m-set).
+
+</div>

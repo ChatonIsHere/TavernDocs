@@ -21,27 +21,27 @@ Static entry point to the running network scene and to which side this process i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sceneloadwait" /><code>{"static TaskCompletionSource<bool> SceneLoadWait"}</code> | Completes when the network scene has finished starting. The server handler awaits it; it is replaced when the scene shuts down. |
+| <Link id="m-sceneloadwait" /><code>{"static TaskCompletionSource<bool> SceneLoadWait"}</code> | <span className="api-desc">Completes when the network scene has finished starting. The server handler awaits it; it is replaced when the scene shuts down.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" Current { get; set; }"}</code> | The running network scene. |
-| <Link id="m-currentinternal" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" CurrentInternal { get; set; }"}</code> | Internal interface to the running scene, used by networking code. |
-| <Link id="m-islocaltest" /><code>{"static bool IsLocalTest { get; set; }"}</code> | True in local test mode, where the server and a player run in one process. |
-| <Link id="m-isremoteserver" /><code>{"static bool IsRemoteServer { get; }"}</code> | True on a real server: `IsServer` and not a local test. |
-| <Link id="m-isserver" /><code>{"static bool IsServer { get; set; }"}</code> | True on the server, including local test. |
+| <Link id="m-current" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" Current { get; set; }"}</code> | <span className="api-desc">The running network scene.</span> |
+| <Link id="m-currentinternal" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" CurrentInternal { get; set; }"}</code> | <span className="api-desc">Internal interface to the running scene, used by networking code.</span> |
+| <Link id="m-islocaltest" /><code>{"static bool IsLocalTest { get; set; }"}</code> | <span className="api-desc">True in local test mode, where the server and a player run in one process.</span> |
+| <Link id="m-isremoteserver" /><code>{"static bool IsRemoteServer { get; }"}</code> | <span className="api-desc">True on a real server: `IsServer` and not a local test.</span> |
+| <Link id="m-isserver" /><code>{"static bool IsServer { get; set; }"}</code> | <span className="api-desc">True on the server, including local test.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedembeddedsync" /><code>{"static event Action FinishedEmbeddedSync"}</code> | Raised on a client once the last embedded scene entity has synced. |
+| <Link id="m-finishedembeddedsync" /><code>{"static event Action FinishedEmbeddedSync"}</code> | <span className="api-desc">Raised on a client once the last embedded scene entity has synced.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onscenesyncfinished" /><code>{"static void OnSceneSyncFinished()"}</code> | Raises `FinishedEmbeddedSync`. Called by the scene when embedded sync ends. |
-| <Link id="m-serversendonly" /><code>{"static void ServerSendOnly("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Stream extension that stops a dedicated server from reading, so the value only flows from server to clients. |
+| <Link id="m-onscenesyncfinished" /><code>{"static void OnSceneSyncFinished()"}</code> | <span className="api-desc">Raises `FinishedEmbeddedSync`. Called by the scene when embedded sync ends.</span> |
+| <Link id="m-serversendonly" /><code>{"static void ServerSendOnly("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Stream extension that stops a dedicated server from reading, so the value only flows from server to clients.</span> |

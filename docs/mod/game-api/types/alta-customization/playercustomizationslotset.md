@@ -20,16 +20,16 @@ A list of customization slot numbers. `EditableSlot` uses one to know which slot
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> | Creates a `PlayerCustomizationSlotSet` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> | <span className="api-desc">Creates a `PlayerCustomizationSlotSet` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-slots" /><code>{"private int[] slots"}</code> | Backing field for `Slots`. |
+| <Link id="m-slots" /><code>{"private int[] slots"}</code> | <span className="api-desc">Backing field for `Slots`.</span> |
 
 </details>
 
@@ -37,10 +37,14 @@ A list of customization slot numbers. `EditableSlot` uses one to know which slot
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-slots-2" /><code>{"int[] Slots { get; }"}</code> | The slot numbers. |
+| <Link id="m-slots-2" /><code>{"int[] Slots { get; }"}</code> | <span className="api-desc">The slot numbers.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerCustomizationSlotSet`:
 
+<div className="api-used-in">
+
 [`CustomizationVisual.additionalPrimary`](/mod/game-api/types/alta-customization/customizationvisual#m-additionalprimary), [`CustomizationVisual.disableSlots`](/mod/game-api/types/alta-customization/customizationvisual#m-disableslots), [`CustomizationVisualPart.slots`](/mod/game-api/types/alta-customization/customizationvisualpart#m-slots), [`EditableSlot.slots`](/mod/game-api/types/alta-customization/editableslot#m-slots).
+
+</div>

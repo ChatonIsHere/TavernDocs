@@ -22,10 +22,14 @@ Base asset type for joint kinds used in crafting. `JointInsertType` and `JointSl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JointPointType()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"JointPointType()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `JointPointType`:
 
+<div className="api-used-in">
+
 [`JointInsert.GeneralTypes`](/mod/game-api/types/alta-crafting/jointinsert#m-generaltypes), [`JointPoint.GeneralTypes`](/mod/game-api/types/alta-crafting/jointpoint#m-generaltypes), [`JointSlot.GeneralTypes`](/mod/game-api/types/alta-crafting/jointslot#m-generaltypes).
+
+</div>

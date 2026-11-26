@@ -22,16 +22,16 @@ A list row with a button and a second text field.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ListElementWithButtonAndExtraText()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ListElementWithButtonAndExtraText()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extratext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" extraText"}</code> | Backing field for `ExtraText`. |
+| <Link id="m-extratext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" extraText"}</code> | <span className="api-desc">Backing field for `ExtraText`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ A list row with a button and a second text field.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extratext-2" /><code><Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" ExtraText { get; }"}</code> | The second text field. |
+| <Link id="m-extratext-2" /><code><Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" ExtraText { get; }"}</code> | <span className="api-desc">The second text field.</span> |

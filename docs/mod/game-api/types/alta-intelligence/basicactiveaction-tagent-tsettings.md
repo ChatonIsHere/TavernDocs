@@ -23,16 +23,16 @@ Base for a running creature action that has a settings object. Instances are poo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> | Creates a `BasicActiveAction` with default values. |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> | <span className="api-desc">Creates a `BasicActiveAction` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"TSettings Settings { get; set; }"}</code> | The settings this action runs with; set by the `BasicAction` that created it. |
+| <Link id="m-settings" /><code>{"TSettings Settings { get; set; }"}</code> | <span className="api-desc">The settings this action runs with; set by the `BasicAction` that created it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<TAgent, TActive, TSettings> GetAction<TActive>(TSettings settings, bool isUsingTarget)"}</code> | Makes a `BasicAction` that starts this active action type with the given settings, optionally using the agent's target. |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<TAgent, TActive, TSettings> GetAction<TActive>(TSettings settings, bool isUsingTarget)"}</code> | <span className="api-desc">Makes a `BasicAction` that starts this active action type with the given settings, optionally using the agent's target.</span> |

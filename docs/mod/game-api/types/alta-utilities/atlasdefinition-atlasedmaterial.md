@@ -21,26 +21,30 @@ One source material inside an `AtlasDefinition` and where it sits in the baked t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> | Creates an `AtlasDefinition.AtlasedMaterial` with default values. |
+| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> | <span className="api-desc">Creates an `AtlasDefinition.AtlasedMaterial` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-custompadding" /><code>{"int customPadding"}</code> | Padding override for this material in the atlas; -1 means use the default. |
-| <Link id="m-material" /><code>{"Material material"}</code> | The original material that renderers use before atlasing. |
-| <Link id="m-rect" /><code>{"Vector4 rect"}</code> | Offset and scale of this material's area in the atlas (x, y offset and z, w scale), written into mesh UVs. |
-| <Link id="m-scale" /><code><Link to="/mod/game-api/types/alta-utilities/scale">{"Scale"}</Link>{" scale"}</code> | How much to scale this material's textures when packing (quarter, half, regular, two or four times). |
+| <Link id="m-custompadding" /><code>{"int customPadding"}</code> | <span className="api-desc">Padding override for this material in the atlas; -1 means use the default.</span> |
+| <Link id="m-material" /><code>{"Material material"}</code> | <span className="api-desc">The original material that renderers use before atlasing.</span> |
+| <Link id="m-rect" /><code>{"Vector4 rect"}</code> | <span className="api-desc">Offset and scale of this material's area in the atlas (x, y offset and z, w scale), written into mesh UVs.</span> |
+| <Link id="m-scale" /><code><Link to="/mod/game-api/types/alta-utilities/scale">{"Scale"}</Link>{" scale"}</code> | <span className="api-desc">How much to scale this material's textures when packing (quarter, half, regular, two or four times).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Compares the wrapped `material` against the given object, not against another `AtlasedMaterial`. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Uses the wrapped material's hash code. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">Compares the wrapped `material` against the given object, not against another `AtlasedMaterial`.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Uses the wrapped material's hash code.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AtlasedMaterial`:
 
+<div className="api-used-in">
+
 [`AtlasDefinition.GetMaterialRect`](/mod/game-api/types/alta-utilities/atlasdefinition#m-getmaterialrect), [`AtlasDefinition.materialReferences`](/mod/game-api/types/alta-utilities/atlasdefinition#m-materialreferences), [`AtlasDefinition.materials`](/mod/game-api/types/alta-utilities/atlasdefinition#m-materials), [`AtlasDefinition.MaterialReferences.MaterialRect`](/mod/game-api/types/alta-utilities/atlasdefinition-materialreferences#m-materialrect), [`AtlasDefinition.MaterialReferences.MaterialReferences`](/mod/game-api/types/alta-utilities/atlasdefinition-materialreferences#m-ctor), [`MaterialRect.MaterialRect`](/mod/game-api/types/alta-utilities/materialrect#m-ctor-3).
+
+</div>

@@ -21,4 +21,4 @@ An event with four values.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"void Trigger(T1 value, T2 argument, T3 argument2, T4 argument3)"}</code> | Raises the event. |
+| <Link id="m-trigger" /><code>{"void Trigger(T1 value, T2 argument, T3 argument2, T4 argument3)"}</code> | <span className="api-desc">Raises the event.</span> |

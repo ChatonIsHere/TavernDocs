@@ -22,16 +22,16 @@ Generation part that spins its object by a random angle around a local axis when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomRotationPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RandomRotationPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> | Local axis to spin around. |
+| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> | <span className="api-desc">Local axis to spin around.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Generation part that spins its object by a random angle around a local axis when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Rotates the transform by a random 0 to 360 degrees around `localAxis`. |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | <span className="api-desc">Rotates the transform by a random 0 to 360 degrees around `localAxis`.</span> |

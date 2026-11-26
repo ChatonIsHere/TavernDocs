@@ -23,12 +23,12 @@ Save data for a `WheelGrab`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> | Creates a `WheelGrabSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> | <span className="api-desc">Creates a `WheelGrabSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentprogresssaved" /><code>{"float currentProgressSaved"}</code> | The wheel's current progress. |
-| <Link id="m-directionsaved" /><code>{"float directionSaved"}</code> | The wheel's turning direction. |
-| <Link id="m-progressperrevolutionsaved" /><code>{"float progressPerRevolutionSaved"}</code> | Progress gained per full turn. |
+| <Link id="m-currentprogresssaved" /><code>{"float currentProgressSaved"}</code> | <span className="api-desc">The wheel's current progress.</span> |
+| <Link id="m-directionsaved" /><code>{"float directionSaved"}</code> | <span className="api-desc">The wheel's turning direction.</span> |
+| <Link id="m-progressperrevolutionsaved" /><code>{"float progressPerRevolutionSaved"}</code> | <span className="api-desc">Progress gained per full turn.</span> |

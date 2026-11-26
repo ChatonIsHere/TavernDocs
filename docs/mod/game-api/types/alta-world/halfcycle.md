@@ -21,4 +21,4 @@ Inspector marker for a value that spans half the day cycle.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HalfCycle()"}</code> | Creates a `HalfCycle` with default values. |
+| <Link id="m-ctor" /><code>{"HalfCycle()"}</code> | <span className="api-desc">Creates a `HalfCycle` with default values.</span> |

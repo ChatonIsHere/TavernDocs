@@ -22,11 +22,11 @@ Base for a game task action that only checks one kind of task argument.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomArgumentGameAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected CustomArgumentGameAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Casts the argument to the expected type (null if it's another type) and checks it. |
-| <Link id="m-isvalid-2" /><code>{"protected abstract bool IsValid(T argument)"}</code> | Casts the argument to the expected type (null if it's another type) and checks it. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | <span className="api-desc">Casts the argument to the expected type (null if it's another type) and checks it.</span> |
+| <Link id="m-isvalid-2" /><code>{"protected abstract bool IsValid(T argument)"}</code> | <span className="api-desc">Casts the argument to the expected type (null if it's another type) and checks it.</span> |

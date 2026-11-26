@@ -22,4 +22,4 @@ Editor menu entry that creates an `EnumFloatGameSettingsAccess` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CreateEnum()"}</code> | Creates an `EnumFloatGameSettingsAccess.CreateEnum` with default values. |
+| <Link id="m-ctor" /><code>{"CreateEnum()"}</code> | <span className="api-desc">Creates an `EnumFloatGameSettingsAccess.CreateEnum` with default values.</span> |

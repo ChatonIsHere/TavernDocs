@@ -23,10 +23,14 @@ A book flair asset for the corner by a book's spine. No extra data beyond `BookF
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FaceSpineCorner()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FaceSpineCorner()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FaceSpineCorner`:
 
+<div className="api-used-in">
+
 [`SpineFaceFlairs.backBottom`](/mod/game-api/types/alta-items/spinefaceflairs#m-backbottom), [`SpineFaceFlairs.BackBottom`](/mod/game-api/types/alta-items/spinefaceflairs#m-backbottom-2), [`SpineFaceFlairs.backTop`](/mod/game-api/types/alta-items/spinefaceflairs#m-backtop), [`SpineFaceFlairs.BackTop`](/mod/game-api/types/alta-items/spinefaceflairs#m-backtop-2), [`SpineFaceFlairs.frontBottom`](/mod/game-api/types/alta-items/spinefaceflairs#m-frontbottom), [`SpineFaceFlairs.FrontBottom`](/mod/game-api/types/alta-items/spinefaceflairs#m-frontbottom-2), [`SpineFaceFlairs.frontTop`](/mod/game-api/types/alta-items/spinefaceflairs#m-fronttop), [`SpineFaceFlairs.FrontTop`](/mod/game-api/types/alta-items/spinefaceflairs#m-fronttop-2).
+
+</div>

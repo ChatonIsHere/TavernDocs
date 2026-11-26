@@ -21,17 +21,17 @@ A named time of day, such as a keyword for the time command. `GameTimeManager.Up
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeName()"}</code> | Creates a `GameTimeManager.TimeName` with default values. |
+| <Link id="m-ctor" /><code>{"TimeName()"}</code> | <span className="api-desc">Creates a `GameTimeManager.TimeName` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
-| <Link id="m-time" /><code>{"private float time"}</code> | Backing field for `Time`. |
+| <Link id="m-name" /><code>{"private string name"}</code> | <span className="api-desc">Backing field for `Name`.</span> |
+| <Link id="m-time" /><code>{"private float time"}</code> | <span className="api-desc">Backing field for `Time`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A named time of day, such as a keyword for the time command. `GameTimeManager.Up
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | The keyword, matched without case. |
-| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> | Time of day the keyword rushes to. |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | <span className="api-desc">The keyword, matched without case.</span> |
+| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> | <span className="api-desc">Time of day the keyword rushes to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TimeName`:
 
+<div className="api-used-in">
+
 [`TimeCommandModule.Keywords`](/mod/game-api/types/alta-console/timecommandmodule#m-keywords), [`GameTimeManager.availableKeyWords`](/mod/game-api/types/global-e-h/gametimemanager#m-availablekeywords), [`GameTimeManager.AvailableKeyWords`](/mod/game-api/types/global-e-h/gametimemanager#m-availablekeywords-2).
+
+</div>

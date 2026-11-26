@@ -22,16 +22,16 @@ Old save data (version 1) for a `RopeGrab`, migrated to `RopeGrabSaveData` on lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RopeGrabSaveData1()"}</code> | Creates a `RopeGrabSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"RopeGrabSaveData1()"}</code> | <span className="api-desc">Creates a `RopeGrabSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | Saved position of the grab along the rope. |
+| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | <span className="api-desc">Saved position of the grab along the rope.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `RopeGrabSaveData`, keeping the progress and setting length to 0.8. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `RopeGrabSaveData`, keeping the progress and setting length to 0.8.</span> |

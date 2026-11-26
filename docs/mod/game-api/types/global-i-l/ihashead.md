@@ -21,4 +21,4 @@ Something with a head transform.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-head" /><code>{"Transform Head { get; }"}</code> | The head transform. |
+| <Link id="m-head" /><code>{"Transform Head { get; }"}</code> | <span className="api-desc">The head transform.</span> |

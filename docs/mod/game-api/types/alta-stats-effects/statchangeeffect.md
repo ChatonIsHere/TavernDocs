@@ -23,10 +23,10 @@ Stat effect that adds the strength to the stat's base value.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatChangeEffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StatChangeEffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> | Adds the strength to the stat's `Base`. |
+| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> | <span className="api-desc">Adds the strength to the stat's `Base`.</span> |

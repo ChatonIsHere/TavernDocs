@@ -21,21 +21,21 @@ Where a hand was when it grabbed a buried `DiggingImpactor`, used to measure the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> | Creates a `DiggingImpactor.InteractorPositions` from `transform`, `position` and `distanceToPivot`. |
+| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> | <span className="api-desc">Creates a `DiggingImpactor.InteractorPositions` from `transform`, `position` and `distanceToPivot`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancetopivot" /><code>{"float distanceToPivot"}</code> | The grab point's distance from the pivot along the pull-out direction, a lever arm for torque. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Hand position at grab time. |
+| <Link id="m-distancetopivot" /><code>{"float distanceToPivot"}</code> | <span className="api-desc">The grab point's distance from the pivot along the pull-out direction, a lever arm for torque.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Hand position at grab time.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> | The hand's ghost controller transform. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | <span className="api-desc">The hand's ghost controller transform.</span> |
 
 </details>
 
@@ -43,10 +43,14 @@ Where a hand was when it grabbed a buried `DiggingImpactor`, used to measure the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-movement" /><code>{"Vector3 Movement { get; }"}</code> | How far the hand has moved since it grabbed. |
+| <Link id="m-movement" /><code>{"Vector3 Movement { get; }"}</code> | <span className="api-desc">How far the hand has moved since it grabbed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InteractorPositions`:
 
+<div className="api-used-in">
+
 [`DiggingImpactor.interactorPositions`](/mod/game-api/types/global-c-d/diggingimpactor#m-interactorpositions).
+
+</div>

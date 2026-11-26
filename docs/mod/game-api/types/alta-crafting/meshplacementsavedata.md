@@ -23,10 +23,10 @@ Save data (version 1) for `MeshPlacement`: which placement asset it uses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> | Creates a `MeshPlacementSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> | <span className="api-desc">Creates a `MeshPlacementSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> | The placement asset. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> | <span className="api-desc">The placement asset.</span> |

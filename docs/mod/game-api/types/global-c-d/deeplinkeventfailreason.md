@@ -30,4 +30,8 @@ Why joining a server from a deeplink failed: server full, banned, private server
 
 Members of other types that take, return or hold a `DeeplinkEventFailReason`:
 
+<div className="api-used-in">
+
 [`DeepLinkAnalyticsService.CreateFailEvent`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-createfailevent), [`DeepLinkAnalyticsService.GetFailReasonAsFormattedString`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-getfailreasonasformattedstring), [`DeepLinkFailureController.GetFailReasonAndMessage`](/mod/game-api/types/global-c-d/deeplinkfailurecontroller#m-getfailreasonandmessage).
+
+</div>

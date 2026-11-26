@@ -22,17 +22,17 @@ Locomotion modifier action asset that moves the local player back to their last 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SendToSafetyLocoAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SendToSafetyLocoAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-safetysound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" safetySound"}</code> | Old sound setting, migrated to `sound`. Default `WaterFell`. |
-| <Link id="m-sound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" sound"}</code> | Sound set played when sent to safety. |
+| <Link id="m-safetysound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" safetySound"}</code> | <span className="api-desc">Old sound setting, migrated to `sound`. Default `WaterFell`.</span> |
+| <Link id="m-sound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" sound"}</code> | <span className="api-desc">Sound set played when sent to safety.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Locomotion modifier action asset that moves the local player back to their last 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Moves the local, living player to safety and, off headless, plays the safety sound at their feet. |
-| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Does nothing. |
+| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Moves the local, living player to safety and, off headless, plays the safety sound at their feet.</span> |
+| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Does nothing.</span> |

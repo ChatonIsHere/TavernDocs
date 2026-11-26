@@ -23,16 +23,20 @@ Game task action argument carrying a value for max-count tasks. Sent with the ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaxValueTaskArgument(int value)"}</code> | Creates a `MaxValueTaskArgument` from `value`. |
+| <Link id="m-ctor" /><code>{"MaxValueTaskArgument(int value)"}</code> | <span className="api-desc">Creates a `MaxValueTaskArgument` from `value`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.MaxCount`. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.MaxCount`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MaxValueTaskArgument`:
 
+<div className="api-used-in">
+
 [`MaxValueTask.IsValid`](/mod/game-api/types/global-m-o/maxvaluetask#m-isvalid).
+
+</div>

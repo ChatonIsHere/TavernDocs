@@ -22,16 +22,16 @@ A store position and rotation for an item in one kind of dock. A null dock type 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> | Creates an `Item.CustomDockPositioning` from `type`, `storePosition` and `storeEuler`. |
+| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> | <span className="api-desc">Creates an `Item.CustomDockPositioning` from `type`, `storePosition` and `storeEuler`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-docktype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> | Backing field for `Type`. |
+| <Link id="m-docktype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> | <span className="api-desc">Backing field for `Type`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ A store position and rotation for an item in one kind of dock. A null dock type 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> | The dock settings this positioning applies to, or null for the fallback. |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> | <span className="api-desc">The dock settings this positioning applies to, or null for the fallback.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CustomDockPositioning`:
 
+<div className="api-used-in">
+
 [`Item.customPositions`](/mod/game-api/types/alta-items/item#m-custompositions), [`Item.customPositionsWhenCrafted`](/mod/game-api/types/alta-items/item#m-custompositionswhencrafted).
+
+</div>

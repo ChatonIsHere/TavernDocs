@@ -22,10 +22,10 @@ Marks a `GlobalSettings` class with the name of its settings asset, for example 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> | Creates a `GlobalSettingsAttribute` from `filePath`. |
+| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> | <span className="api-desc">Creates a `GlobalSettingsAttribute` from `filePath`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filepath" /><code>{"string FilePath { get; }"}</code> | Name or path of the settings asset. Nothing in the server build reads it, so probably editor only. |
+| <Link id="m-filepath" /><code>{"string FilePath { get; }"}</code> | <span className="api-desc">Name or path of the settings asset. Nothing in the server build reads it, so probably editor only.</span> |

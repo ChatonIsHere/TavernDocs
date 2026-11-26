@@ -28,4 +28,8 @@ Reasons rendering is held back, used as bit flags in `RenderLock`: no player con
 
 Members of other types that take, return or hold a `RenderLockType`:
 
+<div className="api-used-in">
+
 [`RenderLock.currentLocks`](/mod/game-api/types/global-q-r/renderlock#m-currentlocks), [`RenderLock.Lock`](/mod/game-api/types/global-q-r/renderlock#m-lock), [`RenderLock.Unlock`](/mod/game-api/types/global-q-r/renderlock#m-unlock).
+
+</div>

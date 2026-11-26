@@ -31,4 +31,8 @@ SAColliderBuilder (third party, editor) collider shape to build: none, mesh, box
 
 Members of other types that take, return or hold a `ShapeType`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.shapeType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-shapetype).
+
+</div>

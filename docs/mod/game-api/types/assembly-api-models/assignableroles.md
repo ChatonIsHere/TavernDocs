@@ -26,4 +26,8 @@ Account roles the Alta API lets you assign. Only `PreAlphaPlayer`.
 
 Members of other types that take, return or hold a `AssignableRoles`:
 
+<div className="api-used-in">
+
 [`IUserApiClient.GiveUserRoleAsync`](/mod/game-api/types/assembly-api-client/iuserapiclient#m-giveuserroleasync), [`OfflineUserApiClient.GiveUserRoleAsync`](/mod/game-api/types/assembly-api-client/offlineuserapiclient#m-giveuserroleasync), [`UserApiClient.GiveUserRoleAsync`](/mod/game-api/types/assembly-api-client/userapiclient#m-giveuserroleasync), [`GiveRoleRequest.Role`](/mod/game-api/types/assembly-api-models/giverolerequest#m-role), [`PlayerRoleProvider.roleToProvide`](/mod/game-api/types/global-p/playerroleprovider#m-roletoprovide).
+
+</div>

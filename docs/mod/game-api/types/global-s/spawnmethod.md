@@ -27,4 +27,8 @@ How a spawner picks its next spawn point: in order or at random.
 
 Members of other types that take, return or hold a `SpawnMethod`:
 
+<div className="api-used-in">
+
 [`MultipleSpawner.SimpleSpawner.method`](/mod/game-api/types/global-m-o/multiplespawner-simplespawner#m-method), [`MultipleSpawner.SimpleSpawner.Method`](/mod/game-api/types/global-m-o/multiplespawner-simplespawner#m-method-2), [`SpawnerBase.method`](/mod/game-api/types/global-s/spawnerbase#m-method).
+
+</div>

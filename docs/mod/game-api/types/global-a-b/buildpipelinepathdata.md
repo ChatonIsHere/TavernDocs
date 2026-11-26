@@ -21,22 +21,22 @@ Editor build helper that stores the output folders for Windows, Linux and Androi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildPipelinePathData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BuildPipelinePathData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidpath" /><code>{"private string androidPath"}</code> | Backing field for `AndroidPath`. |
-| <Link id="m-data" /><code>{"private static "}<Link to="/mod/game-api/types/global-a-b/buildpipelinepathdata">{"BuildPipelinePathData"}</Link>{" data"}</code> | The loaded data asset. Never set in this build. |
-| <Link id="m-extension" /><code>{"private const string extension"}</code> | Asset file extension, `.asset`. |
-| <Link id="m-filename" /><code>{"private const string fileName"}</code> | Asset file name, `BuildPathData`. |
-| <Link id="m-filepath" /><code>{"private const string filePath"}</code> | Asset folder, `Assets/Temporary/BuildPath`. |
-| <Link id="m-linuxpath" /><code>{"private string linuxPath"}</code> | Backing field for `LinuxPath`. |
-| <Link id="m-windowspath" /><code>{"private string windowsPath"}</code> | Backing field for `WindowsPath`. |
+| <Link id="m-androidpath" /><code>{"private string androidPath"}</code> | <span className="api-desc">Backing field for `AndroidPath`.</span> |
+| <Link id="m-data" /><code>{"private static "}<Link to="/mod/game-api/types/global-a-b/buildpipelinepathdata">{"BuildPipelinePathData"}</Link>{" data"}</code> | <span className="api-desc">The loaded data asset. Never set in this build.</span> |
+| <Link id="m-extension" /><code>{"private const string extension"}</code> | <span className="api-desc">Asset file extension, `.asset`.</span> |
+| <Link id="m-filename" /><code>{"private const string fileName"}</code> | <span className="api-desc">Asset file name, `BuildPathData`.</span> |
+| <Link id="m-filepath" /><code>{"private const string filePath"}</code> | <span className="api-desc">Asset folder, `Assets/Temporary/BuildPath`.</span> |
+| <Link id="m-linuxpath" /><code>{"private string linuxPath"}</code> | <span className="api-desc">Backing field for `LinuxPath`.</span> |
+| <Link id="m-windowspath" /><code>{"private string windowsPath"}</code> | <span className="api-desc">Backing field for `WindowsPath`.</span> |
 
 </details>
 
@@ -44,18 +44,18 @@ Editor build helper that stores the output folders for Windows, Linux and Androi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidpath-2" /><code>{"static string AndroidPath { get; set; }"}</code> | Android build output folder. |
-| <Link id="m-linuxpath-2" /><code>{"static string LinuxPath { get; set; }"}</code> | Linux build output folder. |
-| <Link id="m-windowspath-2" /><code>{"static string WindowsPath { get; set; }"}</code> | Windows build output folder. |
+| <Link id="m-androidpath-2" /><code>{"static string AndroidPath { get; set; }"}</code> | <span className="api-desc">Android build output folder.</span> |
+| <Link id="m-linuxpath-2" /><code>{"static string LinuxPath { get; set; }"}</code> | <span className="api-desc">Linux build output folder.</span> |
+| <Link id="m-windowspath-2" /><code>{"static string WindowsPath { get; set; }"}</code> | <span className="api-desc">Windows build output folder.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensuredata" /><code>{"private static void EnsureData()"}</code> | Loads or creates the data asset in the editor. Empty in this build. |
-| <Link id="m-markdirty" /><code>{"private void MarkDirty()"}</code> | Marks the asset as changed in the editor. Empty in this build. |
+| <Link id="m-ensuredata" /><code>{"private static void EnsureData()"}</code> | <span className="api-desc">Loads or creates the data asset in the editor. Empty in this build.</span> |
+| <Link id="m-markdirty" /><code>{"private void MarkDirty()"}</code> | <span className="api-desc">Marks the asset as changed in the editor. Empty in this build.</span> |
 
 </details>

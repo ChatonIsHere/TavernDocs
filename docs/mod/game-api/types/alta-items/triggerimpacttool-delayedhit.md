@@ -21,17 +21,21 @@ A hit `TriggerImpactTool` collects during a frame and runs later with a delayed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedHit("}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit)"}</code> | Creates a `TriggerImpactTool.DelayedHit` from `detector` and `impactHit`. |
+| <Link id="m-ctor" /><code>{"DelayedHit("}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit)"}</code> | <span className="api-desc">Creates a `TriggerImpactTool.DelayedHit` from `detector` and `impactHit`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-detector" /><code><Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> | The impact detector that was hit. |
-| <Link id="m-impacthit" /><code><Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit"}</code> | The best hit found for that detector. |
+| <Link id="m-detector" /><code><Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> | <span className="api-desc">The impact detector that was hit.</span> |
+| <Link id="m-impacthit" /><code><Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit"}</code> | <span className="api-desc">The best hit found for that detector.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DelayedHit`:
 
+<div className="api-used-in">
+
 [`TriggerImpactTool.frameHits`](/mod/game-api/types/alta-items/triggerimpacttool#m-framehits).
+
+</div>

@@ -27,4 +27,8 @@ Kind of remote request `ClientCommandHandler` handles: a console command or a mo
 
 Members of other types that take, return or hold a `RemoteConsoleCommandType`:
 
+<div className="api-used-in">
+
 [`ClientCommandHandler.AddHandler`](/mod/game-api/types/global-c-d/clientcommandhandler#m-addhandler), [`ClientCommandHandler.commandHandlers`](/mod/game-api/types/global-c-d/clientcommandhandler#m-commandhandlers).
+
+</div>

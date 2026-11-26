@@ -23,13 +23,13 @@ Save data (version 1) for a `BasicPopulationFolder`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationFolderSaveData()"}</code> | Creates a `BasicPopulationFolderSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"BasicPopulationFolderSaveData()"}</code> | <span className="api-desc">Creates a `BasicPopulationFolderSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> | The folder's `AccumulatedTime`. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | The population setup asset. |
-| <Link id="m-population" /><code>{"int population"}</code> | Total population when saved. |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> | The population timer's saved value. |
+| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> | <span className="api-desc">The folder's `AccumulatedTime`.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | <span className="api-desc">The population setup asset.</span> |
+| <Link id="m-population" /><code>{"int population"}</code> | <span className="api-desc">Total population when saved.</span> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | <span className="api-desc">The population timer's saved value.</span> |

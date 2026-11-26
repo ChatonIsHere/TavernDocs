@@ -23,20 +23,20 @@ Save data for a `LogicFloatReset`, which eases a float sender back to a default 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatResetSaveData()"}</code> | Creates a `LogicFloatResetSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatResetSaveData()"}</code> | <span className="api-desc">Creates a `LogicFloatResetSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultvalue" /><code>{"float defaultValue"}</code> | Value it returns to. |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The shared logic link data. |
-| <Link id="m-returnspeedpersec" /><code>{"float returnSpeedPerSec"}</code> | How fast the value moves back, per second. |
-| <Link id="m-timebeforereturn" /><code>{"float timeBeforeReturn"}</code> | Seconds to wait before returning. |
-| <Link id="m-value" /><code>{"float value"}</code> | The current value. |
+| <Link id="m-defaultvalue" /><code>{"float defaultValue"}</code> | <span className="api-desc">Value it returns to.</span> |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The shared logic link data.</span> |
+| <Link id="m-returnspeedpersec" /><code>{"float returnSpeedPerSec"}</code> | <span className="api-desc">How fast the value moves back, per second.</span> |
+| <Link id="m-timebeforereturn" /><code>{"float timeBeforeReturn"}</code> | <span className="api-desc">Seconds to wait before returning.</span> |
+| <Link id="m-value" /><code>{"float value"}</code> | <span className="api-desc">The current value.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | Same as `logicData`. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Same as `logicData`.</span> |

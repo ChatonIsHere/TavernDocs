@@ -19,14 +19,14 @@ Debug helper for `CommandContext`.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nullcontextmessage" /><code>{"private const string NullContextMessage"}</code> | Text returned for a null context. |
-| <Link id="m-sb" /><code>{"private static StringBuilder sb"}</code> | Shared string builder, used under `threadLock`. |
-| <Link id="m-threadlock" /><code>{"private static readonly object threadLock"}</code> | Lock around the shared string builder. |
+| <Link id="m-nullcontextmessage" /><code>{"private const string NullContextMessage"}</code> | <span className="api-desc">Text returned for a null context.</span> |
+| <Link id="m-sb" /><code>{"private static StringBuilder sb"}</code> | <span className="api-desc">Shared string builder, used under `threadLock`.</span> |
+| <Link id="m-threadlock" /><code>{"private static readonly object threadLock"}</code> | <span className="api-desc">Lock around the shared string builder.</span> |
 
 </details>
 
@@ -34,4 +34,4 @@ Debug helper for `CommandContext`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdebuginfo" /><code>{"static string GetDebugInfo("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | Text with the context's calling user, raw command, group permissions and creation time. Thread safe. |
+| <Link id="m-getdebuginfo" /><code>{"static string GetDebugInfo("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | <span className="api-desc">Text with the context's calling user, raw command, group permissions and creation time. Thread safe.</span> |

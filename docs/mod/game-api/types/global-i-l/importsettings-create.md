@@ -22,10 +22,10 @@ Editor menu entry that creates an `ImportSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImportSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ImportSettings.Create` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultname" /><code>{"protected override string DefaultName { get; }"}</code> | Default file name, `Import Settings.asset`. |
+| <Link id="m-defaultname" /><code>{"protected override string DefaultName { get; }"}</code> | <span className="api-desc">Default file name, `Import Settings.asset`.</span> |

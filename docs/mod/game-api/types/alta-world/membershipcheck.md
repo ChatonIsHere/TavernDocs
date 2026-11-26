@@ -22,4 +22,4 @@ Empty MonoBehaviour that requires a Collider and a Rigidbody. No code in this bu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MembershipCheck()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MembershipCheck()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

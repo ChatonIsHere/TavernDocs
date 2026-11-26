@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/PAGaC`: menu item classes inherit it to ap
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PAGaC()"}</code> | Creates an `AltaMenuItemBase.Township.Features.PAGaC` with default values. |
+| <Link id="m-ctor" /><code>{"protected PAGaC()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.PAGaC` with default values.</span> |

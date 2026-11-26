@@ -21,4 +21,4 @@ Extension method for `InteractionChannel` flags.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/mod/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/mod/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> | True when the two channel masks share any flag. |
+| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/mod/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/mod/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> | <span className="api-desc">True when the two channel masks share any flag.</span> |

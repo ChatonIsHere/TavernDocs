@@ -21,16 +21,16 @@ Customization pickup for eyes. Shows the eye material coloured with the item's t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EyePickup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EyePickup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> | Renderer that shows the eye. |
+| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> | <span className="api-desc">Renderer that shows the eye.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ Customization pickup for eyes. Shows the eye material coloured with the item's t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | Spawns the pickup, then gives its renderer a copy of the eye part's material coloured by the first argument. |
+| <Link id="m-spawn" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | <span className="api-desc">Spawns the pickup, then gives its renderer a copy of the eye part's material coloured by the first argument.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Destroys the material made in `Spawn`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Destroys the material made in `Spawn`.</span> |
 
 </details>

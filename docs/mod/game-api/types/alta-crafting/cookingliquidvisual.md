@@ -22,25 +22,25 @@ Liquid surface visual for cooking containers. Moves the surface with fullness, k
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingLiquidVisual()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CookingLiquidVisual()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>10 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boilingparticles" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/boilingparticles">{"BoilingParticles"}</Link>{" boilingParticles"}</code> | Pooled boiling particles in use, or null. |
-| <Link id="m-boilingparticlesemissionmultiplier" /><code>{"private AnimationCurve boilingParticlesEmissionMultiplier"}</code> | Curve from liquid temperature to boiling particle emission. |
-| <Link id="m-boilingparticlesparent" /><code>{"private Transform boilingParticlesParent"}</code> | Transform the boiling particles are spawned under. |
-| <Link id="m-boilingparticlesstages" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingliquidvisual-boilingparticlesstagesetting">{"CookingLiquidVisual.BoilingParticlesStageSetting"}</Link>{"[] boilingParticlesStages"}</code> | Per-stage lifetime and height offset settings passed to the boiling particles. |
-| <Link id="m-container" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> | The liquid container in the parent, found in `Awake`. |
-| <Link id="m-isusingboilingparticles" /><code>{"private bool isUsingBoilingParticles"}</code> | Whether this visual shows boiling particles at all. |
-| <Link id="m-maximumplaney" /><code>{"private float maximumPlaneY"}</code> | Local Y of the surface when full. |
-| <Link id="m-minimumplaney" /><code>{"private float minimumPlaneY"}</code> | Local Y of the surface when empty. |
-| <Link id="m-surface" /><code>{"private Transform surface"}</code> | Backing field for `Surface`; moved up and down with fullness and turned to face visual up. |
-| <Link id="m-topofliquidnotrotating" /><code>{"private Transform topOfLiquidNotRotating"}</code> | Optional transform kept at the surface height but not rotated. |
+| <Link id="m-boilingparticles" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/boilingparticles">{"BoilingParticles"}</Link>{" boilingParticles"}</code> | <span className="api-desc">Pooled boiling particles in use, or null.</span> |
+| <Link id="m-boilingparticlesemissionmultiplier" /><code>{"private AnimationCurve boilingParticlesEmissionMultiplier"}</code> | <span className="api-desc">Curve from liquid temperature to boiling particle emission.</span> |
+| <Link id="m-boilingparticlesparent" /><code>{"private Transform boilingParticlesParent"}</code> | <span className="api-desc">Transform the boiling particles are spawned under.</span> |
+| <Link id="m-boilingparticlesstages" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingliquidvisual-boilingparticlesstagesetting">{"CookingLiquidVisual.BoilingParticlesStageSetting"}</Link>{"[] boilingParticlesStages"}</code> | <span className="api-desc">Per-stage lifetime and height offset settings passed to the boiling particles.</span> |
+| <Link id="m-container" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> | <span className="api-desc">The liquid container in the parent, found in `Awake`.</span> |
+| <Link id="m-isusingboilingparticles" /><code>{"private bool isUsingBoilingParticles"}</code> | <span className="api-desc">Whether this visual shows boiling particles at all.</span> |
+| <Link id="m-maximumplaney" /><code>{"private float maximumPlaneY"}</code> | <span className="api-desc">Local Y of the surface when full.</span> |
+| <Link id="m-minimumplaney" /><code>{"private float minimumPlaneY"}</code> | <span className="api-desc">Local Y of the surface when empty.</span> |
+| <Link id="m-surface" /><code>{"private Transform surface"}</code> | <span className="api-desc">Backing field for `Surface`; moved up and down with fullness and turned to face visual up.</span> |
+| <Link id="m-topofliquidnotrotating" /><code>{"private Transform topOfLiquidNotRotating"}</code> | <span className="api-desc">Optional transform kept at the surface height but not rotated.</span> |
 
 </details>
 
@@ -48,31 +48,31 @@ Liquid surface visual for cooking containers. Moves the surface with fullness, k
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialcreator" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator">{"LiquidSurfaceMaterialCreator"}</Link>{" MaterialCreator { get; }"}</code> | Shared creator for the surface material and its shader property ids. |
-| <Link id="m-surface-2" /><code>{"Transform Surface { get; }"}</code> | The surface plane transform. |
+| <Link id="m-materialcreator" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator">{"LiquidSurfaceMaterialCreator"}</Link>{" MaterialCreator { get; }"}</code> | <span className="api-desc">Shared creator for the surface material and its shader property ids.</span> |
+| <Link id="m-surface-2" /><code>{"Transform Surface { get; }"}</code> | <span className="api-desc">The surface plane transform.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setfullness" /><code>{"override void SetFullness(float newFullness)"}</code> | Moves the surface between the min and max plane heights. Releases boiling particles when empty and clears them when the level drops by 0.1 or more. |
-| <Link id="m-setliquid" /><code>{"override void SetLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Sets the liquid and sets the boiling particles up for it. |
-| <Link id="m-updateboilingemissionfromtemperature" /><code>{"void UpdateBoilingEmissionFromTemperature(float temperature, bool isForced = false)"}</code> | Spawns, updates or releases boiling particles and sets wave speed and strength from the temperature. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Finds the parent `ILiquidContainer`. |
-| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> | Resets the surface rotation to the container's up. |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: makes sure there is at least one boiling particle stage. |
-| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected override void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Sets the LOD renderer colour to the liquid's tinted colour. |
-| <Link id="m-setpropertyblockfromliquid" /><code>{"protected override void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Sets the surface colour to the liquid's tinted colour. |
-| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected override Material SetupMaterialFromLiquidVisualSettings("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> | Builds the surface material from the liquid's visual settings. |
-| <Link id="m-updatevisual" /><code>{"protected override void UpdateVisual()"}</code> | Keeps the surface facing `LiquidGravity.VisualUp`. |
+| <Link id="m-setfullness" /><code>{"override void SetFullness(float newFullness)"}</code> | <span className="api-desc">Moves the surface between the min and max plane heights. Releases boiling particles when empty and clears them when the level drops by 0.1 or more.</span> |
+| <Link id="m-setliquid" /><code>{"override void SetLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Sets the liquid and sets the boiling particles up for it.</span> |
+| <Link id="m-updateboilingemissionfromtemperature" /><code>{"void UpdateBoilingEmissionFromTemperature(float temperature, bool isForced = false)"}</code> | <span className="api-desc">Spawns, updates or releases boiling particles and sets wave speed and strength from the temperature.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Finds the parent `ILiquidContainer`.</span> |
+| <Link id="m-ondisable" /><code>{"protected override void OnDisable()"}</code> | <span className="api-desc">Resets the surface rotation to the container's up.</span> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Editor: makes sure there is at least one boiling particle stage.</span> |
+| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected override void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Sets the LOD renderer colour to the liquid's tinted colour.</span> |
+| <Link id="m-setpropertyblockfromliquid" /><code>{"protected override void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Sets the surface colour to the liquid's tinted colour.</span> |
+| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected override Material SetupMaterialFromLiquidVisualSettings("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> | <span className="api-desc">Builds the surface material from the liquid's visual settings.</span> |
+| <Link id="m-updatevisual" /><code>{"protected override void UpdateVisual()"}</code> | <span className="api-desc">Keeps the surface facing `LiquidGravity.VisualUp`.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attemptreleaseboilingparticles" /><code>{"private void AttemptReleaseBoilingParticles()"}</code> | Returns the boiling particles to the pool, if any are out. |
-| <Link id="m-checkcreateordeleteboilingparticles" /><code>{"private void CheckCreateOrDeleteBoilingParticles(float valueToCheck)"}</code> | Gets boiling particles from the pool when emission is above zero and there's liquid, otherwise releases them. |
+| <Link id="m-attemptreleaseboilingparticles" /><code>{"private void AttemptReleaseBoilingParticles()"}</code> | <span className="api-desc">Returns the boiling particles to the pool, if any are out.</span> |
+| <Link id="m-checkcreateordeleteboilingparticles" /><code>{"private void CheckCreateOrDeleteBoilingParticles(float valueToCheck)"}</code> | <span className="api-desc">Gets boiling particles from the pool when emission is above zero and there's liquid, otherwise releases them.</span> |
 
 </details>
 
@@ -80,4 +80,8 @@ Liquid surface visual for cooking containers. Moves the surface with fullness, k
 
 Members of other types that take, return or hold a `CookingLiquidVisual`:
 
+<div className="api-used-in">
+
 [`CookingLiquid.potLiquid`](/mod/game-api/types/alta-crafting/cookingliquid#m-potliquid), [`CookingLiquidVisualTippingPointController.liquidVisual`](/mod/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller#m-liquidvisual).
+
+</div>

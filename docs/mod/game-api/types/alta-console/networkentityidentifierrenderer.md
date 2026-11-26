@@ -22,10 +22,10 @@ NLog layout renderer `${entity-id}`: the identifier of a `NetworkEntity` passed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityIdentifierRenderer()"}</code> | Creates a `NetworkEntityIdentifierRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkEntityIdentifierRenderer()"}</code> | <span className="api-desc">Creates a `NetworkEntityIdentifierRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's identifier. |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Returns the entity's identifier.</span> |

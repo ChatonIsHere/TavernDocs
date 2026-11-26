@@ -21,19 +21,19 @@ Client live data display showing the diagnostics text the server sends. It asks 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerDiagnosticsDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ServerDiagnosticsDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | "Server Diagnostics". |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">"Server Diagnostics".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Only valid once the server has sent a non-empty diagnostics message. |
-| <Link id="m-runondisable" /><code>{"override void RunOnDisable()"}</code> | Sends a `ServerDiagnostics` request asking the server to stop sending diagnostics. |
-| <Link id="m-runonenable" /><code>{"override void RunOnEnable()"}</code> | Sends a `ServerDiagnostics` request asking the server to start sending diagnostics. |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | Returns `ServerDiagnosticsMessage.ServerMessage`. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | <span className="api-desc">Only valid once the server has sent a non-empty diagnostics message.</span> |
+| <Link id="m-runondisable" /><code>{"override void RunOnDisable()"}</code> | <span className="api-desc">Sends a `ServerDiagnostics` request asking the server to stop sending diagnostics.</span> |
+| <Link id="m-runonenable" /><code>{"override void RunOnEnable()"}</code> | <span className="api-desc">Sends a `ServerDiagnostics` request asking the server to start sending diagnostics.</span> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">Returns `ServerDiagnosticsMessage.ServerMessage`.</span> |

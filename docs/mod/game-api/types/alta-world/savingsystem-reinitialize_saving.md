@@ -22,10 +22,10 @@ Editor tools menu entry that rebuilds the saving system's type setups.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> | Creates a `SavingSystem.Reinitialize_Saving` with default values. |
+| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> | <span className="api-desc">Creates a `SavingSystem.Reinitialize_Saving` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Calls `SavingSystem.Reinitialize`. |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | <span className="api-desc">Calls `SavingSystem.Reinitialize`.</span> |

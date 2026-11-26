@@ -21,16 +21,20 @@ Something that owns static renderers that portal culling can show or hide, such 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> | Every static renderer this applier manages, each with a stored position. |
+| <Link id="m-allstaticrenderers" /><code>{"Dictionary<Renderer, Vector3> AllStaticRenderers { get; }"}</code> | <span className="api-desc">Every static renderer this applier manages, each with a stored position.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isVisible)"}</code> | Shows or hides the terrain renderers this applier owns. |
+| <Link id="m-toggleterrain" /><code>{"void ToggleTerrain(bool isVisible)"}</code> | <span className="api-desc">Shows or hides the terrain renderers this applier owns.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPortalApplier`:
 
+<div className="api-used-in">
+
 [`LocationChunk.PortalApplier`](/mod/game-api/types/alta-world/locationchunk#m-portalapplier).
+
+</div>

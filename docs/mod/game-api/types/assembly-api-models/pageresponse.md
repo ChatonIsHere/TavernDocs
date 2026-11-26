@@ -20,17 +20,21 @@ A user's answers for one form page, part of a `FormResponse`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PageResponse()"}</code> | Creates a `PageResponse` with default values. |
+| <Link id="m-ctor" /><code>{"PageResponse()"}</code> | <span className="api-desc">Creates a `PageResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | ID of the `Page` being answered. |
-| <Link id="m-queryresponses" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/queryresponse">{"QueryResponse"}</Link>{"> QueryResponses { get; set; }"}</code> | The answers, one per question on the page. |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | <span className="api-desc">ID of the `Page` being answered.</span> |
+| <Link id="m-queryresponses" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/queryresponse">{"QueryResponse"}</Link>{"> QueryResponses { get; set; }"}</code> | <span className="api-desc">The answers, one per question on the page.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PageResponse`:
 
+<div className="api-used-in">
+
 [`FormResponse.PageResponses`](/mod/game-api/types/assembly-api-models/formresponse#m-pageresponses).
+
+</div>

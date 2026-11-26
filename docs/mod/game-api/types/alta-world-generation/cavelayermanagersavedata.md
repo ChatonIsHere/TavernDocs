@@ -23,15 +23,15 @@ Current save data for the `CaveLayerManager` (version 4): seed and per-layer pre
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> | Creates a `CaveLayerManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> | <span className="api-desc">Creates a `CaveLayerManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> | Number of cave layers generated so far. |
-| <Link id="m-depths" /><code>{"float[] depths"}</code> | Depth of each layer. |
-| <Link id="m-entrancedirections" /><code>{"Vector2[] entranceDirections"}</code> | Direction of each layer's entrance on the XZ plane. |
-| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> | Entrance position of each layer on the XZ plane. |
-| <Link id="m-layerprefabs" /><code>{"uint[] layerPrefabs"}</code> | Prefab hash of each layer. |
-| <Link id="m-seed" /><code>{"int seed"}</code> | Cave generation seed; -1 or less means not set. |
+| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> | <span className="api-desc">Number of cave layers generated so far.</span> |
+| <Link id="m-depths" /><code>{"float[] depths"}</code> | <span className="api-desc">Depth of each layer.</span> |
+| <Link id="m-entrancedirections" /><code>{"Vector2[] entranceDirections"}</code> | <span className="api-desc">Direction of each layer's entrance on the XZ plane.</span> |
+| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> | <span className="api-desc">Entrance position of each layer on the XZ plane.</span> |
+| <Link id="m-layerprefabs" /><code>{"uint[] layerPrefabs"}</code> | <span className="api-desc">Prefab hash of each layer.</span> |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">Cave generation seed; -1 or less means not set.</span> |

@@ -22,4 +22,4 @@ Editor menu folder `3rd Party/Gena`: menu item classes inherit it to appear unde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Gena()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Gena` with default values. |
+| <Link id="m-ctor" /><code>{"protected Gena()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase._3rd_Party.Gena` with default values.</span> |

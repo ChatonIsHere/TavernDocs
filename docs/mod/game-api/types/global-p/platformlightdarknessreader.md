@@ -21,17 +21,17 @@ Darkness reader method that checks every so often whether the local player's hea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLightDarknessReader("}<Link to="/mod/game-api/types/global-c-d/darknessreader">{"DarknessReader"}</Link>{" reader, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character, Action requestSpawn)"}</code> | Creates a `PlatformLightDarknessReader` from `reader`, `character` and `requestSpawn`. |
+| <Link id="m-ctor" /><code>{"PlatformLightDarknessReader("}<Link to="/mod/game-api/types/global-c-d/darknessreader">{"DarknessReader"}</Link>{" reader, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character, Action requestSpawn)"}</code> | <span className="api-desc">Creates a `PlatformLightDarknessReader` from `reader`, `character` and `requestSpawn`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timer" /><code>{"private float timer"}</code> | Time left until the next darkness check. |
-| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | The registered late update method, or null when not running. |
+| <Link id="m-timer" /><code>{"private float timer"}</code> | <span className="api-desc">Time left until the next darkness check.</span> |
+| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | <span className="api-desc">The registered late update method, or null when not running.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ Darkness reader method that checks every so often whether the local player's hea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableinternal" /><code>{"protected override void DisableInternal()"}</code> | Stops the update loop and unhooks the local player event. |
-| <Link id="m-enableinternal" /><code>{"protected override void EnableInternal()"}</code> | Resets the timer, starts the update loop if there's a local player, and watches for the local player changing. |
+| <Link id="m-disableinternal" /><code>{"protected override void DisableInternal()"}</code> | <span className="api-desc">Stops the update loop and unhooks the local player event.</span> |
+| <Link id="m-enableinternal" /><code>{"protected override void EnableInternal()"}</code> | <span className="api-desc">Resets the timer, starts the update loop if there's a local player, and watches for the local player changing.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isindarkness" /><code>{"private bool IsInDarkness()"}</code> | True when no relevant platform light is within range of the head (range scaled by settings, within 10 m vertically). |
-| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> | Counts down and, every read interval, requests a spawn if the player is in darkness. |
-| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | Starts or stops the update loop when the local player is set or cleared. |
+| <Link id="m-isindarkness" /><code>{"private bool IsInDarkness()"}</code> | <span className="api-desc">True when no relevant platform light is within range of the head (range scaled by settings, within 10 m vertically).</span> |
+| <Link id="m-updateloop" /><code>{"private void UpdateLoop()"}</code> | <span className="api-desc">Counts down and, every read interval, requests a spawn if the player is in darkness.</span> |
+| <Link id="m-updateplayer" /><code>{"private void UpdatePlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Starts or stops the update loop when the local player is set or cleared.</span> |
 
 </details>

@@ -24,17 +24,17 @@ One piece of a map that players discover: a sprite and where it sits on the map.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapPiece()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MapPiece()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> | Backing field for `Offset`. |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | Backing field for `Sprite`. |
+| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> | <span className="api-desc">Backing field for `Offset`.</span> |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | <span className="api-desc">Backing field for `Sprite`.</span> |
 
 </details>
 
@@ -42,11 +42,15 @@ One piece of a map that players discover: a sprite and where it sits on the map.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-offset-2" /><code>{"Vector2 Offset { get; set; }"}</code> | Where the piece sits on the map. |
-| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | The piece's image. |
+| <Link id="m-offset-2" /><code>{"Vector2 Offset { get; set; }"}</code> | <span className="api-desc">Where the piece sits on the map.</span> |
+| <Link id="m-sprite-2" /><code>{"Sprite Sprite { get; }"}</code> | <span className="api-desc">The piece's image.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MapPiece`:
 
+<div className="api-used-in">
+
 [`Map.globalMapPieces`](/mod/game-api/types/alta-world/map#m-globalmappieces), [`Map.GlobalMapPieces`](/mod/game-api/types/alta-world/map#m-globalmappieces-2), [`Map.PieceDiscovered`](/mod/game-api/types/alta-world/map#m-piecediscovered), [`Map.pieces`](/mod/game-api/types/alta-world/map#m-pieces), [`Map.Pieces`](/mod/game-api/types/alta-world/map#m-pieces-2), [`MapBoard.activeMapPieces`](/mod/game-api/types/alta-world/mapboard#m-activemappieces), [`MapBoard.ActiveMapPieces`](/mod/game-api/types/alta-world/mapboard#m-activemappieces-2), [`MapBoard.DiscoverMapPiece`](/mod/game-api/types/alta-world/mapboard#m-discovermappiece), [`MapBoard.SetupMapPiece`](/mod/game-api/types/alta-world/mapboard#m-setupmappiece), [`MapBoardDirectRenderer.CheckRenderDiscover`](/mod/game-api/types/alta-world/mapboarddirectrenderer#m-checkrenderdiscover), [`MapMaskPiece.Setup`](/mod/game-api/types/global-m-o/mapmaskpiece#m-setup).
+
+</div>

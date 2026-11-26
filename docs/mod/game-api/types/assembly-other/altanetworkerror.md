@@ -34,4 +34,8 @@ Network errors a transport can report, such as DNS failure, timeout, congestion,
 
 Members of other types that take, return or hold a `AltaNetworkError`:
 
+<div className="api-used-in">
+
 [`Socket.OnTransportSocketError`](/mod/game-api/types/alta-networking/socket#m-ontransportsocketerror), [`ITransportSocket.OnError`](/mod/game-api/types/assembly-other/itransportsocket#m-onerror), [`KcpClientWrapper.OnError`](/mod/game-api/types/assembly-other/kcpclientwrapper#m-onerror), [`KcpErrorConverter.ConvertKcpErrorToAltaError`](/mod/game-api/types/assembly-other/kcperrorconverter#m-convertkcperrortoaltaerror), [`KcpServerWrapper.OnError`](/mod/game-api/types/assembly-other/kcpserverwrapper#m-onerror), [`KcpTransport.OnError`](/mod/game-api/types/assembly-other/kcptransport#m-onerror).
+
+</div>

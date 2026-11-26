@@ -21,16 +21,20 @@ Base for classes that build a liquid material from settings of type `T` and a te
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MaterialCreator()"}</code> | Creates a `MaterialCreator` with default values. |
+| <Link id="m-ctor" /><code>{"protected MaterialCreator()"}</code> | <span className="api-desc">Creates a `MaterialCreator` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-creatematerial" /><code>{"abstract Material CreateMaterial(T settings, Material materialTemplate)"}</code> | Returns a new material made from the settings and the template. |
+| <Link id="m-creatematerial" /><code>{"abstract Material CreateMaterial(T settings, Material materialTemplate)"}</code> | <span className="api-desc">Returns a new material made from the settings and the template.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MaterialCreator&lt;T>`:
 
+<div className="api-used-in">
+
 [`LiquidParticlesRendererColorer.SetParticleRenderersMaterials`](/mod/game-api/types/global-i-l/liquidparticlesrenderercolorer#m-setparticlerenderersmaterials).
+
+</div>

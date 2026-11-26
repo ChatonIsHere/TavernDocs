@@ -21,4 +21,4 @@ Empty inspector `PropertyAttribute`. Nothing in the server build uses it, so it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaVisionAttribute()"}</code> | Creates an `AltaVisionAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"AltaVisionAttribute()"}</code> | <span className="api-desc">Creates an `AltaVisionAttribute` with default values.</span> |

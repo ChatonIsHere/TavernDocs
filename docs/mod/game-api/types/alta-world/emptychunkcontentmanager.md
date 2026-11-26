@@ -21,4 +21,4 @@ Chunk content manager that adds nothing to the base. `Chunk` uses it on both sid
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyChunkContentManager("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates an `EmptyChunkContentManager` from `chunk`. |
+| <Link id="m-ctor" /><code>{"EmptyChunkContentManager("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Creates an `EmptyChunkContentManager` from `chunk`.</span> |

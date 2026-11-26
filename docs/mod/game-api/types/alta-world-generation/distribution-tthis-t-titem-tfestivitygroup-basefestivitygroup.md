@@ -22,17 +22,17 @@ A set of distribution items tied to a `Festivity`; they are only included in ran
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BaseFestivityGroup()"}</code> | Creates a `Distribution` with default values. |
+| <Link id="m-ctor" /><code>{"BaseFestivityGroup()"}</code> | <span className="api-desc">Creates a `Distribution` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | Backing field for `Festivity`. |
-| <Link id="m-items" /><code>{"private List<TItem> items"}</code> | Backing field for `Items`. |
+| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | <span className="api-desc">Backing field for `Festivity`.</span> |
+| <Link id="m-items" /><code>{"private List<TItem> items"}</code> | <span className="api-desc">Backing field for `Items`.</span> |
 
 </details>
 
@@ -40,11 +40,11 @@ A set of distribution items tied to a `Festivity`; they are only included in ran
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-festivity-2" /><code><Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" { get; }"}</code> | The festivity that turns this group on. |
-| <Link id="m-items-2" /><code>{"List<TItem> Items { get; }"}</code> | The weighted items in this group. |
+| <Link id="m-festivity-2" /><code><Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" { get; }"}</code> | <span className="api-desc">The festivity that turns this group on.</span> |
+| <Link id="m-items-2" /><code>{"List<TItem> Items { get; }"}</code> | <span className="api-desc">The weighted items in this group.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"void Migrate<TThisOther, TOther, TItemOther, TFestivityGroupOther>(TFestivityGroupOther other, Func<TOther, T> convert)"}</code> | Copies the festivity and converts each item from another distribution type. |
+| <Link id="m-migrate" /><code>{"void Migrate<TThisOther, TOther, TItemOther, TFestivityGroupOther>(TFestivityGroupOther other, Func<TOther, T> convert)"}</code> | <span className="api-desc">Copies the festivity and converts each item from another distribution type.</span> |

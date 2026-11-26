@@ -21,4 +21,4 @@ Lets a component on a crafting part stop the assembly station from taking it apa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-candisassemble" /><code>{"bool CanDisassemble { get; }"}</code> | False to block disassembly of the part. |
+| <Link id="m-candisassemble" /><code>{"bool CanDisassemble { get; }"}</code> | <span className="api-desc">False to block disassembly of the part.</span> |

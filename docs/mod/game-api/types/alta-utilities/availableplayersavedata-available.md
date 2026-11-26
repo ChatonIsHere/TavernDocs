@@ -29,4 +29,8 @@ Which player save is available: none, the decked out one or the default one.
 
 Members of other types that take, return or hold a `Available`:
 
+<div className="api-used-in">
+
 [`ServerSettings.InitialPlayerInventory`](/mod/game-api/types/alta-utilities/serversettings#m-initialplayerinventory).
+
+</div>

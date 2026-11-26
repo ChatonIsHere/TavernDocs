@@ -23,16 +23,16 @@ Saved list of logic bool senders and the values to put them back to. `ResetLogic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicReset()"}</code> | Creates a `LogicReset` with default values. |
+| <Link id="m-ctor" /><code>{"LogicReset()"}</code> | <span className="api-desc">Creates a `LogicReset` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-senders" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/logicreset-boolsenders">{"LogicReset.BoolSenders"}</Link>{"> senders"}</code> | Senders and their reset values. |
+| <Link id="m-senders" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/logicreset-boolsenders">{"LogicReset.BoolSenders"}</Link>{"> senders"}</code> | <span className="api-desc">Senders and their reset values.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Saved list of logic bool senders and the values to put them back to. `ResetLogic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resetlogic" /><code>{"void ResetLogic()"}</code> | Sets each sender back to its reset value and tells its save data it changed. |
+| <Link id="m-resetlogic" /><code>{"void ResetLogic()"}</code> | <span className="api-desc">Sets each sender back to its reset value and tells its save data it changed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws each sender in the editor, green for a true reset value and red for false. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Draws each sender in the editor, green for a true reset value and red for false.</span> |
 
 </details>

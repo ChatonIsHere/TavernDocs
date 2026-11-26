@@ -21,12 +21,12 @@ Spawn data for objects placed by forest generation on a node or edge of the fore
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestNodeMapSpawnData("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isGenerating)"}</code> | Creates a `ForestNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`. |
+| <Link id="m-ctor" /><code>{"ForestNodeMapSpawnData("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isGenerating)"}</code> | <span className="api-desc">Creates a `ForestNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; }"}</code> | The forest map edge the object belongs to, if any. |
-| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; }"}</code> | The forest generation that placed the object. |
-| <Link id="m-node" /><code><Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" { get; }"}</code> | The forest map node the object belongs to, if any. |
+| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; }"}</code> | <span className="api-desc">The forest map edge the object belongs to, if any.</span> |
+| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; }"}</code> | <span className="api-desc">The forest generation that placed the object.</span> |
+| <Link id="m-node" /><code><Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/node">{"Node"}</Link>{" { get; }"}</code> | <span className="api-desc">The forest map node the object belongs to, if any.</span> |

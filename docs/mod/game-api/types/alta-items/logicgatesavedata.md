@@ -23,17 +23,17 @@ Save data (version 2) for `LogicGateReceiver`: the gate type, whether the output
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicGateSaveData()"}</code> | Creates a `LogicGateSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicGateSaveData()"}</code> | <span className="api-desc">Creates a `LogicGateSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinversedoutputsaved" /><code>{"bool isInversedOutputSaved"}</code> | If true the gate's output is inverted (for example AND becomes NAND). |
-| <Link id="m-operationtype" /><code><Link to="/mod/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> | Which logic operation the gate applies to its inputs. |
+| <Link id="m-isinversedoutputsaved" /><code>{"bool isInversedOutputSaved"}</code> | <span className="api-desc">If true the gate's output is inverted (for example AND becomes NAND).</span> |
+| <Link id="m-operationtype" /><code><Link to="/mod/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> | <span className="api-desc">Which logic operation the gate applies to its inputs.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> | Logic data of each linked bool sender, one per gate input. |
+| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> | <span className="api-desc">Logic data of each linked bool sender, one per gate input.</span> |

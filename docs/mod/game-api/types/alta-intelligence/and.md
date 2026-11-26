@@ -22,12 +22,12 @@ Logical AND in the unused Prolog-like logic engine (`Predicate`, `KnowledgeHolde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"And("}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Creates an `And` from `left` and `right`. |
+| <Link id="m-ctor" /><code>{"And("}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | <span className="api-desc">Creates an `And` from `left` and `right`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resolve" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" Resolve("}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" a, "}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" b)"}</code> | Combines two results if their bindings don't conflict, multiplying weightings. Returns null on conflict. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows the two sides joined with `&`. |
-| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/mod/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> | Rebuilds an `And` from bound parts when variables are substituted. |
+| <Link id="m-resolve" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" Resolve("}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" a, "}<Link to="/mod/game-api/types/alta-intelligence/result">{"Result"}</Link>{" b)"}</code> | <span className="api-desc">Combines two results if their bindings don't conflict, multiplying weightings. Returns null on conflict.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Shows the two sides joined with `&`.</span> |
+| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/mod/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> | <span className="api-desc">Rebuilds an `And` from bound parts when variables are substituted.</span> |

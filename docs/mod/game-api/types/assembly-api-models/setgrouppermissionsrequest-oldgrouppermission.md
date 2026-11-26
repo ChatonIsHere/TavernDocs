@@ -30,4 +30,8 @@ Old flag-style group permission levels (member, moderator, admin), still used by
 
 Members of other types that take, return or hold a `OldGroupPermission`:
 
+<div className="api-used-in">
+
 [`SetGroupPermissionsRequest.Permissions`](/mod/game-api/types/assembly-api-models/setgrouppermissionsrequest#m-permissions), [`GroupMemberInfo.Permissions`](/mod/game-api/types/assembly-api-models/groupmemberinfo#m-permissions).
+
+</div>

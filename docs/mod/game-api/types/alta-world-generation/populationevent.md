@@ -21,10 +21,14 @@ Serializable Alta event that passes a `PopulationSample`, settable in the inspec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationEvent()"}</code> | Creates a `PopulationEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationEvent()"}</code> | <span className="api-desc">Creates a `PopulationEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PopulationEvent`:
 
+<div className="api-used-in">
+
 [`PopulationFolderBase.OnPopulationDiedOut`](/mod/game-api/types/alta-world-generation/populationfolderbase#m-onpopulationdiedout), [`PopulationFolderBase.OnPopulationMaxed`](/mod/game-api/types/alta-world-generation/populationfolderbase#m-onpopulationmaxed), [`PopulationFolderBase.OnPopulationStarted`](/mod/game-api/types/alta-world-generation/populationfolderbase#m-onpopulationstarted).
+
+</div>

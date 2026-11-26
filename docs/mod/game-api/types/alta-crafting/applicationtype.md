@@ -29,4 +29,8 @@ How a scrapper argument applies saved values: one target and value, many targets
 
 Members of other types that take, return or hold a `ApplicationType`:
 
+<div className="api-used-in">
+
 [`ScrapperArgumentAttribute.ApplicationType`](/mod/game-api/types/alta-crafting/scrapperargumentattribute#m-applicationtype), [`ScrapperArgumentAttribute.ScrapperArgumentAttribute`](/mod/game-api/types/alta-crafting/scrapperargumentattribute#m-ctor).
+
+</div>

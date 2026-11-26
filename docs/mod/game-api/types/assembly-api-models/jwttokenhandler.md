@@ -19,12 +19,12 @@ Turns a `JwtSecurityToken` back into its encoded string.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code>{"private static readonly JwtSecurityTokenHandler Handler"}</code> | Shared token handler used to encode signed tokens. |
+| <Link id="m-handler" /><code>{"private static readonly JwtSecurityTokenHandler Handler"}</code> | <span className="api-desc">Shared token handler used to encode signed tokens.</span> |
 
 </details>
 
@@ -32,4 +32,4 @@ Turns a `JwtSecurityToken` back into its encoded string.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"static string Write(JwtSecurityToken token)"}</code> | Returns the encoded token. Unsigned tokens give their `raw` claim, or their raw data, so parsed tokens round-trip unchanged. |
+| <Link id="m-write" /><code>{"static string Write(JwtSecurityToken token)"}</code> | <span className="api-desc">Returns the encoded token. Unsigned tokens give their `raw` claim, or their raw data, so parsed tokens round-trip unchanged.</span> |

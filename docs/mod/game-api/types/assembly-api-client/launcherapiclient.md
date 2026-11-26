@@ -19,12 +19,12 @@ Online client for the game list shown by Alta's launcher. Reached as `ApiAccess.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal LauncherApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `LauncherApiClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal LauncherApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `LauncherApiClient` from `clientManager`.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ Online client for the game list shown by Alta's launcher. Reached as `ApiAccess.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getalllaunchergamesasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> | Lists every launcher game in short form. |
-| <Link id="m-getlaunchergameasync" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> | Gets the full details of one launcher game by ID. |
+| <Link id="m-getalllaunchergamesasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> | <span className="api-desc">Lists every launcher game in short form.</span> |
+| <Link id="m-getlaunchergameasync" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> | <span className="api-desc">Gets the full details of one launcher game by ID.</span> |

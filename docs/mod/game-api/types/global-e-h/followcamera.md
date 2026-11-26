@@ -21,38 +21,38 @@ Debug camera that slowly orbits a group of transforms and zooms to keep them in 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FollowCamera()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FollowCamera()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>12 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> | Camera tilt in degrees. |
-| <Link id="m-focus" /><code>{"private int focus"}</code> | Index of the focused transform. |
-| <Link id="m-following" /><code>{"private Transform[] following"}</code> | Transforms the camera can frame. |
-| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> | Extra height added around the framed group. |
-| <Link id="m-iscontained" /><code>{"private bool[] isContained"}</code> | Per target, whether it is within `maximumDistance` of the focus this frame. |
-| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> | Rotation smoothing speed. |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | Position smoothing speed. |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> | Targets further than this from the focus are left out of the frame. |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> | Current orbit angle in radians. |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> | Orbit speed in radians per second. |
-| <Link id="m-topic" /><code>{"private Camera topic"}</code> | The camera on this object. |
-| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> | Extra width added around the framed group. |
+| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> | <span className="api-desc">Camera tilt in degrees.</span> |
+| <Link id="m-focus" /><code>{"private int focus"}</code> | <span className="api-desc">Index of the focused transform.</span> |
+| <Link id="m-following" /><code>{"private Transform[] following"}</code> | <span className="api-desc">Transforms the camera can frame.</span> |
+| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> | <span className="api-desc">Extra height added around the framed group.</span> |
+| <Link id="m-iscontained" /><code>{"private bool[] isContained"}</code> | <span className="api-desc">Per target, whether it is within `maximumDistance` of the focus this frame.</span> |
+| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> | <span className="api-desc">Rotation smoothing speed.</span> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | <span className="api-desc">Position smoothing speed.</span> |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> | <span className="api-desc">Targets further than this from the focus are left out of the frame.</span> |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> | <span className="api-desc">Current orbit angle in radians.</span> |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> | <span className="api-desc">Orbit speed in radians per second.</span> |
+| <Link id="m-topic" /><code>{"private Camera topic"}</code> | <span className="api-desc">The camera on this object.</span> |
+| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> | <span className="api-desc">Extra width added around the framed group.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Gets the camera and sizes the contained array. |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | Picks targets near the focus, frames them with the buffers and lerps the camera there while orbiting. Logs every frame. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Gets the camera and sizes the contained array.</span> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | <span className="api-desc">Picks targets near the focus, frames them with the buffers and lerps the camera there while orbiting. Logs every frame.</span> |
 
 </details>

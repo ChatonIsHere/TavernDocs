@@ -29,4 +29,8 @@ How well a hammer hit landed on a generic-crafting nail: `Base`, `Bad`, `Good` o
 
 Members of other types that take, return or hold a `NailHitquality`:
 
+<div className="api-used-in">
+
 [`GenericCraftingSettings.GetNailEffect`](/mod/game-api/types/alta-crafting/genericcraftingsettings#m-getnaileffect), [`NailIdentifier.hitQuality`](/mod/game-api/types/alta-crafting/nailidentifier#m-hitquality), [`NailIdentifier.Setup`](/mod/game-api/types/alta-crafting/nailidentifier#m-setup).
+
+</div>

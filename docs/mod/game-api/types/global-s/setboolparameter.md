@@ -21,17 +21,17 @@ Sets one bool parameter on an animator, for wiring to events.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetBoolParameter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SetBoolParameter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> | The animator to change. |
-| <Link id="m-parameterid" /><code>{"private int parameterId"}</code> | Hash ID of the bool parameter. |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | <span className="api-desc">The animator to change.</span> |
+| <Link id="m-parameterid" /><code>{"private int parameterId"}</code> | <span className="api-desc">Hash ID of the bool parameter.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Sets one bool parameter on an animator, for wiring to events.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setinverseparameter" /><code>{"void SetInverseParameter(bool value)"}</code> | Sets the parameter to the opposite of the value. |
-| <Link id="m-setparameter" /><code>{"void SetParameter(bool value)"}</code> | Sets the parameter to the value. |
+| <Link id="m-setinverseparameter" /><code>{"void SetInverseParameter(bool value)"}</code> | <span className="api-desc">Sets the parameter to the opposite of the value.</span> |
+| <Link id="m-setparameter" /><code>{"void SetParameter(bool value)"}</code> | <span className="api-desc">Sets the parameter to the value.</span> |

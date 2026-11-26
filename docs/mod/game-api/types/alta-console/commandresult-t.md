@@ -23,19 +23,19 @@ A console command result carrying a typed value. Logs the value as text, a table
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `CommandResult` from `resultString` and `command`. |
-| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `CommandResult` from `resultString` and `command`. |
+| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | <span className="api-desc">Creates a `CommandResult` from `resultString` and `command`.</span> |
+| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | <span className="api-desc">Creates a `CommandResult` from `resultString` and `command`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> | The value the command returned. |
-| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> | The result's `ToString()`. |
+| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> | <span className="api-desc">The value the command returned.</span> |
+| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> | <span className="api-desc">The result's `ToString()`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-log" /><code>{"override void Log()"}</code> | Traces the result: strings as is, lists or objects as a table if the command asks for that, otherwise as JSON (also copied to the clipboard). |
-| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> | Traces the result's public properties as a name and value table. |
+| <Link id="m-log" /><code>{"override void Log()"}</code> | <span className="api-desc">Traces the result: strings as is, lists or objects as a table if the command asks for that, otherwise as JSON (also copied to the clipboard).</span> |
+| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> | <span className="api-desc">Traces the result's public properties as a name and value table.</span> |

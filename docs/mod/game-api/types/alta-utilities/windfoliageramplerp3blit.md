@@ -21,28 +21,28 @@ Internal atlas blitter for the `Township Tale/WindFoliage RampLerp3` shader. `At
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WindFoliageRampLerp3Blit()"}</code> | Creates a `WindFoliageRampLerp3Blit` with default values. |
+| <Link id="m-ctor" /><code>{"WindFoliageRampLerp3Blit()"}</code> | <span className="api-desc">Creates a `WindFoliageRampLerp3Blit` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>13 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bending" /><code>{"private static readonly int Bending"}</code> | Cached shader property ID for `_Bending`. |
-| <Link id="m-color0" /><code>{"private static readonly int Color0"}</code> | Cached shader property ID for `_Color0`. Read from the material and written to the blit's `_Color`. |
-| <Link id="m-color1" /><code>{"private static readonly int Color1"}</code> | Cached shader property ID for `_Color`. |
-| <Link id="m-color1position" /><code>{"private static readonly int Color1Position"}</code> | Cached shader property ID for `_Color1Position`. |
-| <Link id="m-color2" /><code>{"private static readonly int Color2"}</code> | Cached shader property ID for `_Color1`. |
-| <Link id="m-color3" /><code>{"private static readonly int Color3"}</code> | Cached shader property ID for `_Color2`. |
-| <Link id="m-glossiness" /><code>{"private static readonly int Glossiness"}</code> | Cached shader property ID for `_Glossiness`. |
-| <Link id="m-interiorrect" /><code>{"private static readonly int InteriorRect"}</code> | Cached shader property ID for `_InteriorRect`. |
-| <Link id="m-metallic" /><code>{"private static readonly int Metallic"}</code> | Cached shader property ID for `_Metallic`. |
-| <Link id="m-rect1" /><code>{"private static readonly int Rect1"}</code> | Cached shader property ID for `_Rect`. |
-| <Link id="m-sampler" /><code>{"private static readonly int Sampler"}</code> | Cached shader property ID for `_Sampler`. |
-| <Link id="m-swaystrength" /><code>{"private static readonly int SwayStrength"}</code> | Cached shader property ID for `_SwayStrength`. |
-| <Link id="m-tiling" /><code>{"private static readonly int Tiling"}</code> | Cached shader property ID for `_Tiling`. |
+| <Link id="m-bending" /><code>{"private static readonly int Bending"}</code> | <span className="api-desc">Cached shader property ID for `_Bending`.</span> |
+| <Link id="m-color0" /><code>{"private static readonly int Color0"}</code> | <span className="api-desc">Cached shader property ID for `_Color0`. Read from the material and written to the blit's `_Color`.</span> |
+| <Link id="m-color1" /><code>{"private static readonly int Color1"}</code> | <span className="api-desc">Cached shader property ID for `_Color`.</span> |
+| <Link id="m-color1position" /><code>{"private static readonly int Color1Position"}</code> | <span className="api-desc">Cached shader property ID for `_Color1Position`.</span> |
+| <Link id="m-color2" /><code>{"private static readonly int Color2"}</code> | <span className="api-desc">Cached shader property ID for `_Color1`.</span> |
+| <Link id="m-color3" /><code>{"private static readonly int Color3"}</code> | <span className="api-desc">Cached shader property ID for `_Color2`.</span> |
+| <Link id="m-glossiness" /><code>{"private static readonly int Glossiness"}</code> | <span className="api-desc">Cached shader property ID for `_Glossiness`.</span> |
+| <Link id="m-interiorrect" /><code>{"private static readonly int InteriorRect"}</code> | <span className="api-desc">Cached shader property ID for `_InteriorRect`.</span> |
+| <Link id="m-metallic" /><code>{"private static readonly int Metallic"}</code> | <span className="api-desc">Cached shader property ID for `_Metallic`.</span> |
+| <Link id="m-rect1" /><code>{"private static readonly int Rect1"}</code> | <span className="api-desc">Cached shader property ID for `_Rect`.</span> |
+| <Link id="m-sampler" /><code>{"private static readonly int Sampler"}</code> | <span className="api-desc">Cached shader property ID for `_Sampler`.</span> |
+| <Link id="m-swaystrength" /><code>{"private static readonly int SwayStrength"}</code> | <span className="api-desc">Cached shader property ID for `_SwayStrength`.</span> |
+| <Link id="m-tiling" /><code>{"private static readonly int Tiling"}</code> | <span className="api-desc">Cached shader property ID for `_Tiling`.</span> |
 
 </details>
 
@@ -50,4 +50,4 @@ Internal atlas blitter for the `Township Tale/WindFoliage RampLerp3` shader. `At
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blit" /><code>{"override void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> | Draws the `_Sampler` texture with three ramp colours into the diffuse atlas, and sway strength and bending (no gloss or metal) into the normal atlas. Throws if `_Sampler` is missing. |
+| <Link id="m-blit" /><code>{"override void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material, Material diffuseBlit, Material normalBlit, Material emissionBlit)"}</code> | <span className="api-desc">Draws the `_Sampler` texture with three ramp colours into the diffuse atlas, and sway strength and bending (no gloss or metal) into the normal atlas. Throws if `_Sampler` is missing.</span> |

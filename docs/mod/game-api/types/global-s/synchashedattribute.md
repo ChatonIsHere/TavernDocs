@@ -22,4 +22,4 @@ Obsolete `SyncAttribute` that marks a field for syncing with the serialization f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SyncHashedAttribute(Type type)"}</code> | Creates a `SyncHashedAttribute` from `type`. |
+| <Link id="m-ctor" /><code>{"SyncHashedAttribute(Type type)"}</code> | <span className="api-desc">Creates a `SyncHashedAttribute` from `type`.</span> |

@@ -22,10 +22,10 @@ Serializer for `HashedGeneralValue` types, sent as their hash (0 for null). Made
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HashedSerialization()"}</code> | Creates a `TypeSerializationHelper.HashedSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"HashedSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.HashedSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Writes the value's hash, or reads a hash and looks the value up by type and hash. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Writes the value's hash, or reads a hash and looks the value up by type and hash.</span> |

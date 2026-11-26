@@ -22,17 +22,17 @@ Base for network profiling lists that give each statistic type (such as a messag
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> | Creates an `IndexedStatisticList` with default values. |
+| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> | <span className="api-desc">Creates an `IndexedStatisticList` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-typeindexes" /><code>{"protected static Dictionary<TStatType, int> typeIndexes"}</code> | Static map from statistic type to its list index, shared by all instances with the same type arguments. |
+| <Link id="m-typeindexes" /><code>{"protected static Dictionary<TStatType, int> typeIndexes"}</code> | <span className="api-desc">Static map from statistic type to its list index, shared by all instances with the same type arguments.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createnewstatistic" /><code>{"protected abstract TStatistic CreateNewStatistic(TStatType creationArgument)"}</code> | Makes a new statistic for a type the first time it is seen. |
-| <Link id="m-ensurestatistictypeindexexists" /><code>{"protected void EnsureStatisticTypeIndexExists(TStatType statType)"}</code> | Gives the type an index if it has none and makes sure a statistic exists at that index. |
+| <Link id="m-createnewstatistic" /><code>{"protected abstract TStatistic CreateNewStatistic(TStatType creationArgument)"}</code> | <span className="api-desc">Makes a new statistic for a type the first time it is seen.</span> |
+| <Link id="m-ensurestatistictypeindexexists" /><code>{"protected void EnsureStatisticTypeIndexExists(TStatType statType)"}</code> | <span className="api-desc">Gives the type an index if it has none and makes sure a statistic exists at that index.</span> |

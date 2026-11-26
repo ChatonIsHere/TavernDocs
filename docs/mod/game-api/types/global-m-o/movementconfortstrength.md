@@ -29,4 +29,8 @@ Strength of a movement comfort setting: disabled, low, medium or high.
 
 Members of other types that take, return or hold a `MovementConfortStrength`:
 
+<div className="api-used-in">
+
 [`GameSettings.MovementComfortStrength`](/mod/game-api/types/alta-utilities/gamesettings#m-movementcomfortstrength), [`PlayerVisionComfort.UpdateSettings`](/mod/game-api/types/global-p/playervisioncomfort#m-updatesettings), [`PlayerVisionComfortSettings.GetMaxConfortIntensity`](/mod/game-api/types/global-p/playervisioncomfortsettings#m-getmaxconfortintensity).
+
+</div>

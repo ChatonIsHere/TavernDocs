@@ -21,4 +21,4 @@ Extension methods for `Bounds`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> | Product of the extents (half sizes), so one eighth of the real volume. Fine for comparing sizes. |
+| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> | <span className="api-desc">Product of the extents (half sizes), so one eighth of the real volume. Fine for comparing sizes.</span> |

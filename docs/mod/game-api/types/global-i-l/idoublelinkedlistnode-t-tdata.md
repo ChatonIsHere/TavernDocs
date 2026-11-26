@@ -20,12 +20,12 @@ A node in a doubly linked list that is set up from data and told when it turns a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> | The next node. |
-| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> | The previous node. |
+| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> | <span className="api-desc">The next node.</span> |
+| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> | <span className="api-desc">The previous node.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activechanged" /><code>{"void ActiveChanged(bool isActive)"}</code> | Called when the node turns active or inactive. |
-| <Link id="m-initialize" /><code>{"void Initialize(TData nodeData)"}</code> | Sets the node up from its data. |
+| <Link id="m-activechanged" /><code>{"void ActiveChanged(bool isActive)"}</code> | <span className="api-desc">Called when the node turns active or inactive.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize(TData nodeData)"}</code> | <span className="api-desc">Sets the node up from its data.</span> |

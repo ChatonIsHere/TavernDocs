@@ -21,4 +21,4 @@ A component that adds effects to the `ActionComponent` on the same GameObject. `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Called once, on first use of the action. Hooks subscribe to the action's `Used` event here. |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Called once, on first use of the action. Hooks subscribe to the action's `Used` event here.</span> |

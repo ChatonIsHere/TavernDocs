@@ -28,4 +28,8 @@ Whether a service status notice is `OnGoing` or `Resolved`.
 
 Members of other types that take, return or hold a `StatusType`:
 
+<div className="api-used-in">
+
 [`Status.Type`](/mod/game-api/types/assembly-api-client/status#m-type).
+
+</div>

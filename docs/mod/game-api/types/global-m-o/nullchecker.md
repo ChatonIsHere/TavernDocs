@@ -21,17 +21,17 @@ Fires one of two events depending on whether a value passed to it is null.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NullChecker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NullChecker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isnotnull" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNotNull"}</code> | Event fired when the value is not null. |
-| <Link id="m-isnull" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNull"}</code> | Event fired when the value is null. |
+| <Link id="m-isnotnull" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNotNull"}</code> | <span className="api-desc">Event fired when the value is not null.</span> |
+| <Link id="m-isnull" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" isNull"}</code> | <span className="api-desc">Event fired when the value is null.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Fires one of two events depending on whether a value passed to it is null.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkvalue" /><code>{"void CheckValue(object toCheck)"}</code> | Fires `isNull` or `isNotNull` for the given value. |
+| <Link id="m-checkvalue" /><code>{"void CheckValue(object toCheck)"}</code> | <span className="api-desc">Fires `isNull` or `isNotNull` for the given value.</span> |

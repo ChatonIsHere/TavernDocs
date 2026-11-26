@@ -21,17 +21,17 @@ Moves its object between two local positions by a progress value, for example fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionLerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PositionLerp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> | Local position at progress 0. |
-| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> | Local position at progress 1. |
+| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> | <span className="api-desc">Local position at progress 0.</span> |
+| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> | <span className="api-desc">Local position at progress 1.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Moves its object between two local positions by a progress value, for example fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setposition" /><code>{"void SetPosition(float progress)"}</code> | Sets the local position between `position0` (0) and `position1` (1). |
+| <Link id="m-setposition" /><code>{"void SetPosition(float progress)"}</code> | <span className="api-desc">Sets the local position between `position0` (0) and `position1` (1).</span> |

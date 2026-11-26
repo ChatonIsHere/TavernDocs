@@ -21,10 +21,10 @@ Runtime instance of the `CellularAutomata` plugin part: sets each cell to one of
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> | Creates a `CellularAutomataInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `CellularAutomataInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offY)"}</code> | Sets each cell to `ValueIfTrue` if the sum within the capture radius reaches the threshold, else `ValueIfFalse`. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offY)"}</code> | <span className="api-desc">Sets each cell to `ValueIfTrue` if the sum within the capture radius reaches the threshold, else `ValueIfFalse`.</span> |

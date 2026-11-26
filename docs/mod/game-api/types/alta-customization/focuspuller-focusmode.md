@@ -29,4 +29,8 @@ Hand camera focus mode: `Perfect`, `Auto` (focuses when a photo is taken or the 
 
 Members of other types that take, return or hold a `FocusMode`:
 
+<div className="api-used-in">
+
 [`FocusButton.OnFocusModeChanged`](/mod/game-api/types/alta-customization/focusbutton#m-onfocusmodechanged), [`FocusPuller.CurrentFocus`](/mod/game-api/types/alta-customization/focuspuller#m-currentfocus), [`FocusPuller.OnFocusModeChanged`](/mod/game-api/types/alta-customization/focuspuller#m-onfocusmodechanged).
+
+</div>

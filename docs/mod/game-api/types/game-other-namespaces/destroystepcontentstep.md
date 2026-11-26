@@ -21,16 +21,16 @@ Micro tutorial step that despawns the content of chosen earlier steps, then comp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyStepContentStep()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DestroyStepContentStep()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stepstodestroy" /><code>{"private int[] stepsToDestroy"}</code> | Indexes (from 0) of the steps whose content is removed. |
+| <Link id="m-stepstodestroy" /><code>{"private int[] stepsToDestroy"}</code> | <span className="api-desc">Indexes (from 0) of the steps whose content is removed.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Micro tutorial step that despawns the content of chosen earlier steps, then comp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> | Errors if no step indexes are set. |
-| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/mod/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> | Despawns the content of each listed step, waits two seconds and completes. The range check misses an index equal to the step count. |
+| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> | <span className="api-desc">Errors if no step indexes are set.</span> |
+| <Link id="m-runforinstance" /><code>{"override async Task RunForInstance("}<Link to="/mod/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" stepInstance)"}</code> | <span className="api-desc">Despawns the content of each listed step, waits two seconds and completes. The range check misses an index equal to the step count.</span> |

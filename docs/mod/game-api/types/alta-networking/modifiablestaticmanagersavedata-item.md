@@ -21,17 +21,21 @@ One saved entry of `ModifiableStaticManager`: a static object's hash and its mod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `ModifiableStaticManagerSaveData.Item` with default values. |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | <span className="api-desc">Creates a `ModifiableStaticManagerSaveData.Item` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> | Hash of the static object. |
-| <Link id="m-state" /><code>{"bool state"}</code> | Whether the object is modified. |
+| <Link id="m-hash" /><code>{"uint hash"}</code> | <span className="api-desc">Hash of the static object.</span> |
+| <Link id="m-state" /><code>{"bool state"}</code> | <span className="api-desc">Whether the object is modified.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Item`:
 
+<div className="api-used-in">
+
 [`ModifiableStaticManagerSaveData.items`](/mod/game-api/types/alta-networking/modifiablestaticmanagersavedata#m-items).
+
+</div>

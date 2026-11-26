@@ -19,12 +19,12 @@ Paged list of requests from users to join a group, from the Alta web API.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupJoinRequests("}<Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupJoinRequests` from `group` and `api`. |
+| <Link id="m-ctor" /><code>{"internal GroupJoinRequests("}<Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `GroupJoinRequests` from `group` and `api`.</span> |
 
 </details>
 
@@ -32,4 +32,8 @@ Paged list of requests from users to join a group, from the Alta web API.
 
 Members of other types that take, return or hold a `GroupJoinRequests`:
 
+<div className="api-used-in">
+
 [`JoinedGroupManager.Requests`](/mod/game-api/types/assembly-api-client/joinedgroupmanager#m-requests).
+
+</div>

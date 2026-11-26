@@ -22,17 +22,17 @@ Generation part that makes the last objects spawned by two spawner parts point t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PointTowardsEachotherPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PointTowardsEachotherPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" a"}</code> | First spawner part. |
-| <Link id="m-b" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" b"}</code> | Second spawner part. |
+| <Link id="m-a" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" a"}</code> | <span className="api-desc">First spawner part.</span> |
+| <Link id="m-b" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{" b"}</code> | <span className="api-desc">Second spawner part.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Generation part that makes the last objects spawned by two spawner parts point t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | If both spawned objects have an `IPointTowards`, points each at the other's origin. |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | <span className="api-desc">If both spawned objects have an `IPointTowards`, points each at the other's origin.</span> |

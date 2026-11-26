@@ -22,19 +22,19 @@ Switches the particle systems under it between on and off start colours and colo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EffectToggleColor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EffectToggleColor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnvalidate" /><code>{"private bool btnValidate"}</code> | Inspector button that refreshes the system lists. |
-| <Link id="m-ison" /><code>{"private bool isOn"}</code> | State previewed when the lists are refreshed. |
-| <Link id="m-lifetimecolorsystems" /><code>{"private List<"}<Link to="/mod/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor">{"EffectToggleColor.ParticleLifetimeColor"}</Link>{"> lifetimeColorSystems"}</code> | Systems that switch both start colour and colour-over-lifetime gradient. |
-| <Link id="m-startcolorsystems" /><code>{"private List<"}<Link to="/mod/game-api/types/global-e-h/effecttogglecolor-particlestartcolor">{"EffectToggleColor.ParticleStartColor"}</Link>{"> startColorSystems"}</code> | Systems that switch only their start colour. |
+| <Link id="m-btnvalidate" /><code>{"private bool btnValidate"}</code> | <span className="api-desc">Inspector button that refreshes the system lists.</span> |
+| <Link id="m-ison" /><code>{"private bool isOn"}</code> | <span className="api-desc">State previewed when the lists are refreshed.</span> |
+| <Link id="m-lifetimecolorsystems" /><code>{"private List<"}<Link to="/mod/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor">{"EffectToggleColor.ParticleLifetimeColor"}</Link>{"> lifetimeColorSystems"}</code> | <span className="api-desc">Systems that switch both start colour and colour-over-lifetime gradient.</span> |
+| <Link id="m-startcolorsystems" /><code>{"private List<"}<Link to="/mod/game-api/types/global-e-h/effecttogglecolor-particlestartcolor">{"EffectToggleColor.ParticleStartColor"}</Link>{"> startColorSystems"}</code> | <span className="api-desc">Systems that switch only their start colour.</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Switches the particle systems under it between on and off start colours and colo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settoggle" /><code>{"void SetToggle(bool isOn)"}</code> | Applies the on or off colours to every listed system. |
+| <Link id="m-settoggle" /><code>{"void SetToggle(bool isOn)"}</code> | <span className="api-desc">Applies the on or off colours to every listed system.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | In the editor, fills the lists from child particle systems (lifetime list if colour over lifetime is on) and drops missing ones. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">In the editor, fills the lists from child particle systems (lifetime list if colour over lifetime is on) and drops missing ones.</span> |
 
 </details>

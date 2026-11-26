@@ -21,15 +21,15 @@ Minimal file handle: existence, names, delete and refresh. `FileInfoWrapper` is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | Whether the file exists. |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | Full path of the file. |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | File name with extension. |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | <span className="api-desc">Whether the file exists.</span> |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | <span className="api-desc">Full path of the file.</span> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">File name with extension.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"void Delete()"}</code> | Deletes the file. |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> | Deletes the file without blocking. |
-| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> | Whether the file exists, as a task. |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Refreshes any cached file state. |
+| <Link id="m-delete" /><code>{"void Delete()"}</code> | <span className="api-desc">Deletes the file.</span> |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> | <span className="api-desc">Deletes the file without blocking.</span> |
+| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> | <span className="api-desc">Whether the file exists, as a task.</span> |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | <span className="api-desc">Refreshes any cached file state.</span> |

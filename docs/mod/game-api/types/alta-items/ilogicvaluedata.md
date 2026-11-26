@@ -21,10 +21,14 @@ Save data for a logic (wiring) value, tied to its logic identifier. `GlobalLogic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | The logic save data, including the identifier the value is stored under. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The logic save data, including the identifier the value is stored under.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ILogicValueData`:
 
+<div className="api-used-in">
+
 [`GlobalLogicManager.dataMap`](/mod/game-api/types/alta-items/globallogicmanager#m-datamap), [`GlobalLogicManager.GetData`](/mod/game-api/types/alta-items/globallogicmanager#m-getdata-2).
+
+</div>

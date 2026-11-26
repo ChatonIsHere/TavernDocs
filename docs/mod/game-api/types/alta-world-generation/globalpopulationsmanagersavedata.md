@@ -23,11 +23,11 @@ Save data (version 1) for the `GlobalPopulationsManager`. The manager saves an e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalPopulationsManagerSaveData()"}</code> | Creates a `GlobalPopulationsManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GlobalPopulationsManagerSaveData()"}</code> | <span className="api-desc">Creates a `GlobalPopulationsManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentpopulations" /><code>{"int[] currentPopulations"}</code> | Population counts, matched by index with `hashes`. Not written in this build. |
-| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> | Population definition hashes. Not written in this build. |
+| <Link id="m-currentpopulations" /><code>{"int[] currentPopulations"}</code> | <span className="api-desc">Population counts, matched by index with `hashes`. Not written in this build.</span> |
+| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> | <span className="api-desc">Population definition hashes. Not written in this build.</span> |

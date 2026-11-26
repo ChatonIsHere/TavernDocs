@@ -21,10 +21,14 @@ Gives the position a player respawns at. Implemented by `RespawnSystem` (shrine-
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> | Returns where the player respawns and whether that is the default (global) respawn rather than a powered shrine. |
+| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> | <span className="api-desc">Returns where the player respawns and whether that is the default (global) respawn rather than a powered shrine.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPlayerRespawnPositionProvider`:
 
+<div className="api-used-in">
+
 [`Player.Inject`](/mod/game-api/types/global-p/player#m-inject), [`Player.respawnPositionProvider`](/mod/game-api/types/global-p/player#m-respawnpositionprovider).
+
+</div>

@@ -22,16 +22,16 @@ Server: when a player grabs this object's pickup, spawns a fresh copy of `prefab
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnerGrab()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpawnerGrab()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | The prefab handed to the grabbing player. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">The prefab handed to the grabbing player.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Server: when a player grabs this object's pickup, spawns a fresh copy of `prefab
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawntograb" /><code>{"void SpawnToGrab("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Server: spawns `prefab` here and replaces the grabbed pickup with it. The no-argument overload uses this entity's pickup and its first holder. |
-| <Link id="m-spawntograb-2" /><code>{"void SpawnToGrab()"}</code> | Server: spawns `prefab` here and replaces the grabbed pickup with it. The no-argument overload uses this entity's pickup and its first holder. |
+| <Link id="m-spawntograb" /><code>{"void SpawnToGrab("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Server: spawns `prefab` here and replaces the grabbed pickup with it. The no-argument overload uses this entity's pickup and its first holder.</span> |
+| <Link id="m-spawntograb-2" /><code>{"void SpawnToGrab()"}</code> | <span className="api-desc">Server: spawns `prefab` here and replaces the grabbed pickup with it. The no-argument overload uses this entity's pickup and its first holder.</span> |

@@ -20,16 +20,20 @@ API response when a server session is started.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> | Creates a `StartServerSessionResponse` with default values. |
+| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> | <span className="api-desc">Creates a `StartServerSessionResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> | Id of the new server session. |
+| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> | <span className="api-desc">Id of the new server session.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StartServerSessionResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.StartLocalServer`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-startlocalserver), [`LowLevelApiClient.StartServerSession`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-startserversession).
+
+</div>

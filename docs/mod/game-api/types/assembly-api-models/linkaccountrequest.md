@@ -21,17 +21,21 @@ Body of an Alta web API request to link an outside account to an Alta user.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> | Creates a `LinkAccountRequest` with default values. |
+| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> | <span className="api-desc">Creates a `LinkAccountRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> | Name of the account source being linked. |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> | Id of the Alta user to link, if given. |
+| <Link id="m-source" /><code>{"string Source { get; set; }"}</code> | <span className="api-desc">Name of the account source being linked.</span> |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the Alta user to link, if given.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LinkAccountRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.LinkDiscordAccount`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-linkdiscordaccount).
+
+</div>

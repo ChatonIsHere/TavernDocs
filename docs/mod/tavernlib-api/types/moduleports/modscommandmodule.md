@@ -20,16 +20,16 @@ TavernLib's `modmanager` console module, with `list` (every mod in `Mods` and it
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>6 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addrepo" /><code>{"private static string AddRepo(string url)"}</code> | `modmanager addrepo`: server only, checks that a URL serves a mod index and adds it to `mod_repos.json` as a trusted source. |
-| <Link id="m-list" /><code>{"private static string List()"}</code> | `modmanager list`: server only, lists the community mods in `Mods/` with their state. |
-| <Link id="m-listfor" /><code>{"internal static string ListFor(string gameDir)"}</code> | Internal: the `modmanager list` text for a game folder: tracked mods with version, state and targets, then untracked ones. Flags damaged installs. |
-| <Link id="m-reposhorthand" /><code>{"private static string RepoShorthand(string url)"}</code> | Builds the "owner/repo" shorthand from a repo URL's path. |
-| <Link id="m-state" /><code>{"private static string State(bool enabled)"}</code> | Returns "enabled" or "disabled". |
-| <Link id="m-targets" /><code>{"private static string Targets("}<Link to="/mod/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" record)"}</code> | Lists the targets a mod record is installed for, or "nothing". |
+| <Link id="m-addrepo" /><code>{"private static string AddRepo(string url)"}</code> | <span className="api-desc">`modmanager addrepo`: server only, checks that a URL serves a mod index and adds it to `mod_repos.json` as a trusted source.</span> |
+| <Link id="m-list" /><code>{"private static string List()"}</code> | <span className="api-desc">`modmanager list`: server only, lists the community mods in `Mods/` with their state.</span> |
+| <Link id="m-listfor" /><code>{"internal static string ListFor(string gameDir)"}</code> | <span className="api-desc">Internal: the `modmanager list` text for a game folder: tracked mods with version, state and targets, then untracked ones. Flags damaged installs.</span> |
+| <Link id="m-reposhorthand" /><code>{"private static string RepoShorthand(string url)"}</code> | <span className="api-desc">Builds the "owner/repo" shorthand from a repo URL's path.</span> |
+| <Link id="m-state" /><code>{"private static string State(bool enabled)"}</code> | <span className="api-desc">Returns "enabled" or "disabled".</span> |
+| <Link id="m-targets" /><code>{"private static string Targets("}<Link to="/mod/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" record)"}</code> | <span className="api-desc">Lists the targets a mod record is installed for, or "nothing".</span> |
 
 </details>

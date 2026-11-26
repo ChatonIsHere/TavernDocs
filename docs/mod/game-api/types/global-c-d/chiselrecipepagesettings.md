@@ -24,13 +24,13 @@ Global settings asset with the template and glyph positions for chisel recipe pa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselRecipePageSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ChiselRecipePageSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iconposition" /><code><Link to="/mod/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" iconPosition"}</code> | Where the recipe icon glyph goes on the page. |
-| <Link id="m-sizebrackets" /><code><Link to="/mod/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] sizeBrackets"}</code> | Bracket glyph positions, one per size step. |
-| <Link id="m-template" /><code><Link to="/mod/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> | Base page whose glyphs every chisel recipe page starts from. |
-| <Link id="m-woodblocks" /><code><Link to="/mod/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] woodBlocks"}</code> | Wood block glyph positions, one per size step. |
+| <Link id="m-iconposition" /><code><Link to="/mod/game-api/types/global-e-h/glyphposition">{"GlyphPosition"}</Link>{" iconPosition"}</code> | <span className="api-desc">Where the recipe icon glyph goes on the page.</span> |
+| <Link id="m-sizebrackets" /><code><Link to="/mod/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] sizeBrackets"}</code> | <span className="api-desc">Bracket glyph positions, one per size step.</span> |
+| <Link id="m-template" /><code><Link to="/mod/game-api/types/alta-items/page">{"Page"}</Link>{" template"}</code> | <span className="api-desc">Base page whose glyphs every chisel recipe page starts from.</span> |
+| <Link id="m-woodblocks" /><code><Link to="/mod/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] woodBlocks"}</code> | <span className="api-desc">Wood block glyph positions, one per size step.</span> |

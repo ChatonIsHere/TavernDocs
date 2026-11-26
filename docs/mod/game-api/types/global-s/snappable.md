@@ -21,18 +21,18 @@ Editor helper for level building: snaps the object's local rotation to fixed ste
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Snappable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Snappable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-issnappingrotations" /><code>{"private bool isSnappingRotations"}</code> | Whether rotation snapping is on. |
-| <Link id="m-rotationsnaps" /><code>{"private float rotationSnaps"}</code> | Rotation step in degrees. |
-| <Link id="m-snappoints" /><code>{"private List<Transform> snapPoints"}</code> | Backing list for `SnapPoints`. |
+| <Link id="m-issnappingrotations" /><code>{"private bool isSnappingRotations"}</code> | <span className="api-desc">Whether rotation snapping is on.</span> |
+| <Link id="m-rotationsnaps" /><code>{"private float rotationSnaps"}</code> | <span className="api-desc">Rotation step in degrees.</span> |
+| <Link id="m-snappoints" /><code>{"private List<Transform> snapPoints"}</code> | <span className="api-desc">Backing list for `SnapPoints`.</span> |
 
 </details>
 
@@ -40,20 +40,20 @@ Editor helper for level building: snaps the object's local rotation to fixed ste
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-snappoints-2" /><code>{"IEnumerable<Transform> SnapPoints { get; }"}</code> | The child transforms used as snap points. |
+| <Link id="m-snappoints-2" /><code>{"IEnumerable<Transform> SnapPoints { get; }"}</code> | <span className="api-desc">The child transforms used as snap points.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-refindsnappoints" /><code>{"void RefindSnapPoints()"}</code> | Rebuilds `snapPoints` from children whose name starts with `snap_` (any case). |
-| <Link id="m-snaprotation" /><code>{"void SnapRotation()"}</code> | Rounds each local Euler angle to the nearest `rotationSnaps` step if enabled. |
+| <Link id="m-refindsnappoints" /><code>{"void RefindSnapPoints()"}</code> | <span className="api-desc">Rebuilds `snapPoints` from children whose name starts with `snap_` (any case).</span> |
+| <Link id="m-snaprotation" /><code>{"void SnapRotation()"}</code> | <span className="api-desc">Rounds each local Euler angle to the nearest `rotationSnaps` step if enabled.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Snaps the rotation when values change in the editor. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Snaps the rotation when values change in the editor.</span> |
 
 </details>

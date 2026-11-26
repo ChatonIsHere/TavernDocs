@@ -22,10 +22,10 @@ Operator that drives a particle system's emission rate over time.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionRateOverTimeOperator()"}</code> | Creates a `ValueOperatedParticleSystem.EmissionRateOverTimeOperator` with default values. |
+| <Link id="m-ctor" /><code>{"EmissionRateOverTimeOperator()"}</code> | <span className="api-desc">Creates a `ValueOperatedParticleSystem.EmissionRateOverTimeOperator` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-set" /><code>{"override void Set(float value)"}</code> | Sets the emission rate-over-time multiplier. |
+| <Link id="m-set" /><code>{"override void Set(float value)"}</code> | <span className="api-desc">Sets the emission rate-over-time multiplier.</span> |

@@ -21,17 +21,21 @@ Body of an Alta web API login with a username, password hash and device id.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoginRequest(string username, string passwordHash, string deviceIdentifier)"}</code> | Creates a `LoginRequest` with default values. |
-| <Link id="m-ctor-2" /><code>{"LoginRequest()"}</code> | Creates a `LoginRequest` with default values. |
+| <Link id="m-ctor" /><code>{"LoginRequest(string username, string passwordHash, string deviceIdentifier)"}</code> | <span className="api-desc">Creates a `LoginRequest` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"LoginRequest()"}</code> | <span className="api-desc">Creates a `LoginRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-username" /><code>{"string Username { get; private set; }"}</code> | The username to log in with. |
+| <Link id="m-username" /><code>{"string Username { get; private set; }"}</code> | <span className="api-desc">The username to log in with.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LoginRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.LoginAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-loginasync-2).
+
+</div>

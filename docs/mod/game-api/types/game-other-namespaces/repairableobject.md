@@ -20,17 +20,17 @@ A game-condition entry naming a repairable object by prefab hash and the build s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> | Creates a `RepairableObject` from `targetHash` and `requirement`. |
+| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> | <span className="api-desc">Creates a `RepairableObject` from `targetHash` and `requirement`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requirement" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement"}</code> | Backing field for `Requirement`. |
-| <Link id="m-targethash" /><code>{"private uint targetHash"}</code> | Backing field for `TargetHash`. |
+| <Link id="m-requirement" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement"}</code> | <span className="api-desc">Backing field for `Requirement`.</span> |
+| <Link id="m-targethash" /><code>{"private uint targetHash"}</code> | <span className="api-desc">Backing field for `TargetHash`.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ A game-condition entry naming a repairable object by prefab hash and the build s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requirement-2" /><code><Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" Requirement { get; }"}</code> | The `RepairableObjectBuildState` the object must be in. |
-| <Link id="m-targethash-2" /><code>{"uint TargetHash { get; }"}</code> | Hash of the repairable object this entry checks. |
+| <Link id="m-requirement-2" /><code><Link to="/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" Requirement { get; }"}</code> | <span className="api-desc">The `RepairableObjectBuildState` the object must be in.</span> |
+| <Link id="m-targethash-2" /><code>{"uint TargetHash { get; }"}</code> | <span className="api-desc">Hash of the repairable object this entry checks.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RepairableObject`:
 
+<div className="api-used-in">
+
 [`RepairableObjectComparisonCondition.repairableObjects`](/mod/game-api/types/game-other-namespaces/repairableobjectcomparisoncondition#m-repairableobjects).
+
+</div>

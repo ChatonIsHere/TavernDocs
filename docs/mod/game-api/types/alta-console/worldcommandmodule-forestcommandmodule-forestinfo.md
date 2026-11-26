@@ -22,25 +22,29 @@ The result of the `forest info` console command: a forest's layout, biomes and e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestInfo()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo` with default values. |
+| <Link id="m-ctor" /><code>{"ForestInfo()"}</code> | <span className="api-desc">Creates a `WorldCommandModule.ForestCommandModule.ForestInfo` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-area" /><code>{"float area"}</code> | The forest's area from its generation. |
-| <Link id="m-biomes" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-biome">{"WorldCommandModule.ForestCommandModule.ForestInfo.Biome"}</Link>{"> biomes"}</code> | The biome spheres in the forest. |
-| <Link id="m-bounds" /><code>{"Bounds bounds"}</code> | The forest's bounds. |
-| <Link id="m-edges" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-edge">{"WorldCommandModule.ForestCommandModule.ForestInfo.Edge"}</Link>{"> edges"}</code> | Paths between nodes. |
-| <Link id="m-encounters" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-encounter">{"WorldCommandModule.ForestCommandModule.ForestInfo.Encounter"}</Link>{"> encounters"}</code> | The G-core encounters placed in the forest. |
-| <Link id="m-entrances" /><code>{"List<Vector3> entrances"}</code> | Entrance positions. |
-| <Link id="m-nodes" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-node">{"WorldCommandModule.ForestCommandModule.ForestInfo.Node"}</Link>{"> nodes"}</code> | The forest's nodes (clearings), with positions and radii. |
-| <Link id="m-outline" /><code>{"List<Vector3> outline"}</code> | Points along the forest's outline. |
-| <Link id="m-seed" /><code>{"uint seed"}</code> | The generation seed. |
-| <Link id="m-spaces" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-space">{"WorldCommandModule.ForestCommandModule.ForestInfo.Space"}</Link>{"> spaces"}</code> | Triangles formed by three nodes. |
+| <Link id="m-area" /><code>{"float area"}</code> | <span className="api-desc">The forest's area from its generation.</span> |
+| <Link id="m-biomes" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-biome">{"WorldCommandModule.ForestCommandModule.ForestInfo.Biome"}</Link>{"> biomes"}</code> | <span className="api-desc">The biome spheres in the forest.</span> |
+| <Link id="m-bounds" /><code>{"Bounds bounds"}</code> | <span className="api-desc">The forest's bounds.</span> |
+| <Link id="m-edges" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-edge">{"WorldCommandModule.ForestCommandModule.ForestInfo.Edge"}</Link>{"> edges"}</code> | <span className="api-desc">Paths between nodes.</span> |
+| <Link id="m-encounters" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-encounter">{"WorldCommandModule.ForestCommandModule.ForestInfo.Encounter"}</Link>{"> encounters"}</code> | <span className="api-desc">The G-core encounters placed in the forest.</span> |
+| <Link id="m-entrances" /><code>{"List<Vector3> entrances"}</code> | <span className="api-desc">Entrance positions.</span> |
+| <Link id="m-nodes" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-node">{"WorldCommandModule.ForestCommandModule.ForestInfo.Node"}</Link>{"> nodes"}</code> | <span className="api-desc">The forest's nodes (clearings), with positions and radii.</span> |
+| <Link id="m-outline" /><code>{"List<Vector3> outline"}</code> | <span className="api-desc">Points along the forest's outline.</span> |
+| <Link id="m-seed" /><code>{"uint seed"}</code> | <span className="api-desc">The generation seed.</span> |
+| <Link id="m-spaces" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-space">{"WorldCommandModule.ForestCommandModule.ForestInfo.Space"}</Link>{"> spaces"}</code> | <span className="api-desc">Triangles formed by three nodes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ForestInfo`:
 
+<div className="api-used-in">
+
 [`WorldCommandModule.ForestCommandModule.Info`](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule#m-info).
+
+</div>

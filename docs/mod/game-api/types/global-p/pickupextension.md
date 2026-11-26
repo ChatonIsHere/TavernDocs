@@ -22,17 +22,17 @@ An interactable that passes grabs on to another interactable, such as an extra h
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupExtension()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PickupExtension()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowance" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupextension-allowance">{"PickupExtension.Allowance"}</Link>{" allowance"}</code> | Rule for when to refuse: never, when the same player holds the target, or whenever the target is held. |
-| <Link id="m-targetinteractable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable"}</code> | The interactable grabs are passed to. |
+| <Link id="m-allowance" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupextension-allowance">{"PickupExtension.Allowance"}</Link>{" allowance"}</code> | <span className="api-desc">Rule for when to refuse: never, when the same player holds the target, or whenever the target is held.</span> |
+| <Link id="m-targetinteractable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable"}</code> | <span className="api-desc">The interactable grabs are passed to.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ An interactable that passes grabs on to another interactable, such as an extra h
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assessinteraction" /><code>{"override bool AssessInteraction("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | Refuses the interaction when the allowance rule blocks it, otherwise scores it as usual. |
-| <Link id="m-checkforward" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> | Returns `targetInteractable` so the grab goes there, or null when the allowance rule blocks it. |
+| <Link id="m-assessinteraction" /><code>{"override bool AssessInteraction("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out float score)"}</code> | <span className="api-desc">Refuses the interaction when the allowance rule blocks it, otherwise scores it as usual.</span> |
+| <Link id="m-checkforward" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" CheckForward("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, out bool isForced)"}</code> | <span className="api-desc">Returns `targetInteractable` so the grab goes there, or null when the allowance rule blocks it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-swapinteract" /><code>{"private void SwapInteract("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Swaps the interactor over to `targetInteractable`. Not called in this class. |
+| <Link id="m-swapinteract" /><code>{"private void SwapInteract("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | <span className="api-desc">Swaps the interactor over to `targetInteractable`. Not called in this class.</span> |
 
 </details>

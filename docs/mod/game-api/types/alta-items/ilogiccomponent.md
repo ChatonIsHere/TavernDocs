@@ -21,4 +21,4 @@ A logic component that the `GlobalLogicManager` prepares in the editor before th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> | Editor: called by the logic manager before saving, to set up the component. |
+| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> | <span className="api-desc">Editor: called by the logic manager before saving, to set up the component.</span> |

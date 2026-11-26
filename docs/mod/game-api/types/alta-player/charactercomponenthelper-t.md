@@ -22,16 +22,16 @@ Base for editor helper scripts that sit next to a `CharacterComponentController`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CharacterComponentHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected CharacterComponentHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-componentcontroller" /><code>{"private T componentController"}</code> | Cached `T` component on the same object, filled on first use of `ComponentController`. |
+| <Link id="m-componentcontroller" /><code>{"private T componentController"}</code> | <span className="api-desc">Cached `T` component on the same object, filled on first use of `ComponentController`.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Base for editor helper scripts that sit next to a `CharacterComponentController`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-componentcontroller-2" /><code>{"protected T ComponentController { get; }"}</code> | The `T` component on the same object, found on first use. |
+| <Link id="m-componentcontroller-2" /><code>{"protected T ComponentController { get; }"}</code> | <span className="api-desc">The `T` component on the same object, found on first use.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected abstract void OnValidate()"}</code> | Editor validation hook each helper must implement. |
+| <Link id="m-onvalidate" /><code>{"protected abstract void OnValidate()"}</code> | <span className="api-desc">Editor validation hook each helper must implement.</span> |

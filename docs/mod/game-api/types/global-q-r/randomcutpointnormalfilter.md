@@ -23,16 +23,16 @@ Forest fill filter asset that randomly drops point-and-normal spawn points, keep
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomCutPointNormalFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RandomCutPointNormalFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keepchance" /><code>{"private float keepChance"}</code> | Chance from 0 to 1 that a point is kept. |
+| <Link id="m-keepchance" /><code>{"private float keepChance"}</code> | <span className="api-desc">Chance from 0 to 1 that a point is kept.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill filter asset that randomly drops point-and-normal spawn points, keep
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> | Sets the point's weight to -1 (removed) when a random roll beats `keepChance`. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Sets the point's weight to -1 (removed) when a random roll beats `keepChance`.</span> |

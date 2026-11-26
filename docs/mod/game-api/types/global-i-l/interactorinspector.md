@@ -22,23 +22,23 @@ Base for inspectors of the Interactor type that edit a member of a target. Subcl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractorInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | Creates an `InteractorInspector` from `targetMember`. |
+| <Link id="m-ctor" /><code>{"InteractorInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | <span className="api-desc">Creates an `InteractorInspector` from `targetMember`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetmember" /><code>{"protected "}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember"}</code> | The value member this inspector edits. |
+| <Link id="m-targetmember" /><code>{"protected "}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember"}</code> | <span className="api-desc">The value member this inspector edits.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inspectortype" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> | Always `InspectorType.Interactor`. |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Empty here. |
+| <Link id="m-inspectortype" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> | <span className="api-desc">Always `InspectorType.Interactor`.</span> |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | <span className="api-desc">Empty here.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/mod/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> | Does nothing here. |
+| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/mod/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> | <span className="api-desc">Does nothing here.</span> |

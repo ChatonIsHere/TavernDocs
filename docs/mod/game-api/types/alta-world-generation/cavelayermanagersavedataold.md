@@ -22,16 +22,16 @@ Oldest save data for the `CaveLayerManager` (version 1), holding only the seed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> | Creates a `CaveLayerManagerSaveDataOld` with default values. |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> | <span className="api-desc">Creates a `CaveLayerManagerSaveDataOld` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-seed" /><code>{"int seed"}</code> | Cave generation seed. |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">Cave generation seed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to current data with the seed and zero layers. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to current data with the seed and zero layers.</span> |

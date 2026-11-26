@@ -22,4 +22,4 @@ Editor menu entry that creates a `TreeSpecies` asset under Assets/Create/Townshi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `TreeSpecies.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `TreeSpecies.Create` with default values.</span> |

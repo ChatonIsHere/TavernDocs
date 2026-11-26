@@ -21,22 +21,26 @@ A row in the mould list console command.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> | Creates a `SpawnCommandModule.MouldDefinitionInfo` with default values. |
+| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> | <span className="api-desc">Creates a `SpawnCommandModule.MouldDefinitionInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The mould definition's asset name. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The mould definition's asset name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo">{"SpawnCommandModule.MouldDefinitionInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition)"}</code> | Builds the row from a `MouldDefinition`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo">{"SpawnCommandModule.MouldDefinitionInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Builds the row from a `MouldDefinition`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MouldDefinitionInfo`:
 
+<div className="api-used-in">
+
 [`SpawnCommandModule.Moulds.List`](/mod/game-api/types/alta-console/spawncommandmodule-moulds#m-list).
+
+</div>

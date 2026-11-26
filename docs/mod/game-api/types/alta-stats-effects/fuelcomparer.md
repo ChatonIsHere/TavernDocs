@@ -21,10 +21,10 @@ Sorts `Fuel` by `EfficiencyCap`, lowest first.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FuelComparer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FuelComparer()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-compare" /><code>{"int Compare("}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" x, "}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" y)"}</code> | Compares two fuels by `EfficiencyCap`. |
+| <Link id="m-compare" /><code>{"int Compare("}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" x, "}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{" y)"}</code> | <span className="api-desc">Compares two fuels by `EfficiencyCap`.</span> |

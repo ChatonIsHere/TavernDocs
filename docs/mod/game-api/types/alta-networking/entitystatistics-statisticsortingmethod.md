@@ -30,4 +30,8 @@ Private: what `EntityStatistics` sorts entities by: bytes per second, bytes per 
 
 Members of other types that take, return or hold a `StatisticSortingMethod`:
 
+<div className="api-used-in">
+
 [`EntityStatistics.sortingMethod`](/mod/game-api/types/alta-networking/entitystatistics#m-sortingmethod).
+
+</div>

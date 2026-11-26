@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Generation`: menu item classes inheri
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Generation()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation` with default values. |
+| <Link id="m-ctor" /><code>{"protected Generation()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Generation` with default values.</span> |

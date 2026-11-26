@@ -21,5 +21,5 @@ Something that can pick a random result of type `T`, optionally weighted by biom
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpossibleresults" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/idistributionitem-outt">{"IDistributionItem"}</Link>{"<T>> GetPossibleResults()"}</code> | Every entry that could be picked, including those in active festivity groups. |
-| <Link id="m-getrandom" /><code>{"T GetRandom(Func<double> randomValue, "}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> | Picks a weighted random result using the given random source and attributes; can return null. |
+| <Link id="m-getpossibleresults" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/idistributionitem-outt">{"IDistributionItem"}</Link>{"<T>> GetPossibleResults()"}</code> | <span className="api-desc">Every entry that could be picked, including those in active festivity groups.</span> |
+| <Link id="m-getrandom" /><code>{"T GetRandom(Func<double> randomValue, "}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> | <span className="api-desc">Picks a weighted random result using the given random source and attributes; can return null.</span> |

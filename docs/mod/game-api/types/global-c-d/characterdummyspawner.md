@@ -21,17 +21,17 @@ A `CharacterDummyPointer` that makes its own `CharacterDummy` from a prefab the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterDummySpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CharacterDummySpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidtexturesizemultiplier" /><code>{"private float androidTextureSizeMultiplier"}</code> | Serialized but not read by this class. |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" prefab"}</code> | Dummy prefab to spawn. |
+| <Link id="m-androidtexturesizemultiplier" /><code>{"private float androidTextureSizeMultiplier"}</code> | <span className="api-desc">Serialized but not read by this class.</span> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" prefab"}</code> | <span className="api-desc">Dummy prefab to spawn.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ A `CharacterDummyPointer` that makes its own `CharacterDummy` from a prefab the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-characterdummy" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> | The dummy. If none is set yet, instantiates `prefab` as a child and resets its local transform. |
+| <Link id="m-characterdummy" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" "}<Link to="/mod/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The dummy. If none is set yet, instantiates `prefab` as a child and resets its local transform.</span> |

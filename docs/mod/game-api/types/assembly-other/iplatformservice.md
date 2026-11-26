@@ -21,10 +21,10 @@ Starts up the platform SDK (such as Oculus) at launch. `FakePlatformService` is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> | True once the platform SDK is ready. |
+| <Link id="m-isinitialized" /><code>{"bool IsInitialized { get; }"}</code> | <span className="api-desc">True once the platform SDK is ready.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasync" /><code>{"Task<bool> InitializeAsync()"}</code> | Starts the platform SDK; returns whether it worked. |
+| <Link id="m-initializeasync" /><code>{"Task<bool> InitializeAsync()"}</code> | <span className="api-desc">Starts the platform SDK; returns whether it worked.</span> |

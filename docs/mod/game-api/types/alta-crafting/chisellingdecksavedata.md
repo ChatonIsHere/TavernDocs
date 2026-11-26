@@ -23,22 +23,26 @@ Save data for a `ChisellingDeck`, the carpentry chiselling station. The deck sav
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData()"}</code> | Creates a `ChisellingDeckSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData()"}</code> | <span className="api-desc">Creates a `ChisellingDeckSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentsize" /><code>{"int currentSize"}</code> | How much timber is on the deck. The deck has space while this is below its max size. |
-| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> | Indexes of the block's pieces that have been chiselled off. |
-| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> | Whether the block has followed the recipe so far. |
-| <Link id="m-physicalmaterial" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | The wood material of the block. |
-| <Link id="m-pieces" /><code><Link to="/mod/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> | Save data for each piece of the timber block. |
-| <Link id="m-spawned" /><code><Link to="/mod/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> | The chisel definition the block has recorded as spawned. |
-| <Link id="m-stage" /><code>{"int stage"}</code> | The block's chiselling stage level. Loading steps the block forward to this stage. |
+| <Link id="m-currentsize" /><code>{"int currentSize"}</code> | <span className="api-desc">How much timber is on the deck. The deck has space while this is below its max size.</span> |
+| <Link id="m-donepieces" /><code>{"int[] donePieces"}</code> | <span className="api-desc">Indexes of the block's pieces that have been chiselled off.</span> |
+| <Link id="m-hasfollowedrecipe" /><code>{"bool hasFollowedrecipe"}</code> | <span className="api-desc">Whether the block has followed the recipe so far.</span> |
+| <Link id="m-physicalmaterial" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | <span className="api-desc">The wood material of the block.</span> |
+| <Link id="m-pieces" /><code><Link to="/mod/game-api/types/alta-crafting/piecesavedata">{"PieceSaveData"}</Link>{"[] pieces"}</code> | <span className="api-desc">Save data for each piece of the timber block.</span> |
+| <Link id="m-spawned" /><code><Link to="/mod/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawned"}</code> | <span className="api-desc">The chisel definition the block has recorded as spawned.</span> |
+| <Link id="m-stage" /><code>{"int stage"}</code> | <span className="api-desc">The block's chiselling stage level. Loading steps the block forward to this stage.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChisellingDeckSaveData`:
 
+<div className="api-used-in">
+
 [`TimberBlock.LoadFrom`](/mod/game-api/types/alta-crafting/timberblock#m-loadfrom), [`TimberBlock.SaveInto`](/mod/game-api/types/alta-crafting/timberblock#m-saveinto), [`TimberBlock.Stage.LoadFrom`](/mod/game-api/types/alta-crafting/timberblock-stage#m-loadfrom), [`TimberBlock.Stage.SaveInto`](/mod/game-api/types/alta-crafting/timberblock-stage#m-saveinto).
+
+</div>

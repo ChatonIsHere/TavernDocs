@@ -22,4 +22,4 @@ Editor menu entry that creates the `InGameGizmosSettings` asset under Global Set
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `InGameGizmosSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `InGameGizmosSettings.Create` with default values.</span> |

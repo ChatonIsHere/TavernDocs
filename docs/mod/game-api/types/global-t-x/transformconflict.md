@@ -21,17 +21,17 @@ A component that just records two transforms that conflict with each other. Noth
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformConflict()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TransformConflict()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-one" /><code>{"private Transform one"}</code> | Backing field for `One`. |
-| <Link id="m-two" /><code>{"private Transform two"}</code> | Backing field for `Two`. |
+| <Link id="m-one" /><code>{"private Transform one"}</code> | <span className="api-desc">Backing field for `One`.</span> |
+| <Link id="m-two" /><code>{"private Transform two"}</code> | <span className="api-desc">Backing field for `Two`.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ A component that just records two transforms that conflict with each other. Noth
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-one-2" /><code>{"Transform One { get; }"}</code> | The first transform of the conflict. |
-| <Link id="m-two-2" /><code>{"Transform Two { get; }"}</code> | The second transform of the conflict. |
+| <Link id="m-one-2" /><code>{"Transform One { get; }"}</code> | <span className="api-desc">The first transform of the conflict.</span> |
+| <Link id="m-two-2" /><code>{"Transform Two { get; }"}</code> | <span className="api-desc">The second transform of the conflict.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createconflict" /><code>{"void CreateConflict(Transform one, Transform two)"}</code> | Stores the two conflicting transforms. |
+| <Link id="m-createconflict" /><code>{"void CreateConflict(Transform one, Transform two)"}</code> | <span className="api-desc">Stores the two conflicting transforms.</span> |

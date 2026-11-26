@@ -30,4 +30,8 @@ Where a cooking pot is in making a stew: preparation, warming up, stewing, then 
 
 Members of other types that take, return or hold a `CookingStage`:
 
+<div className="api-used-in">
+
 [`CookingPot.currentStage`](/mod/game-api/types/alta-crafting/cookingpot#m-currentstage), [`CookingPotSaveData.currentStage`](/mod/game-api/types/alta-crafting/cookingpotsavedata#m-currentstage).
+
+</div>

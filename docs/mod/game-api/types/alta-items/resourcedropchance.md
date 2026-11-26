@@ -20,17 +20,21 @@ One possible resource drop with its weighting, used in `BoulderDefinition.Resour
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> | Creates a `ResourceDropChance` with default values. |
+| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> | <span className="api-desc">Creates a `ResourceDropChance` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> | Weighting from 0 to 1 for this resource. |
-| <Link id="m-resourcedefinition" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> | The item that can drop. |
+| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> | <span className="api-desc">Weighting from 0 to 1 for this resource.</span> |
+| <Link id="m-resourcedefinition" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> | <span className="api-desc">The item that can drop.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ResourceDropChance`:
 
+<div className="api-used-in">
+
 [`BoulderDefinition.resourcesDropChances`](/mod/game-api/types/alta-items/boulderdefinition#m-resourcesdropchances), [`BoulderDefinition.ResourcesDropChances`](/mod/game-api/types/alta-items/boulderdefinition#m-resourcesdropchances-2).
+
+</div>

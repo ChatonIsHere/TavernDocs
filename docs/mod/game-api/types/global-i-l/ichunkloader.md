@@ -21,10 +21,14 @@ Picks which chunks to load around a position. `NormalChunkLoader` implements it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> | Fills the dynamic and static chunk sets to load for the current location chunk and position. |
+| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> | <span className="api-desc">Fills the dynamic and static chunk sets to load for the current location chunk and position.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IChunkLoader`:
 
+<div className="api-used-in">
+
 [`PlayerChunkManager.chunkLoader`](/mod/game-api/types/global-p/playerchunkmanager#m-chunkloader).
+
+</div>

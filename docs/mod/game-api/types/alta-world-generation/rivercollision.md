@@ -21,46 +21,46 @@ A forest generation step that spawns box trigger colliders along the overground 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RiverCollision()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RiverCollision()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>13 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnregenerate" /><code>{"private bool btnRegenerate"}</code> | Inspector button that calls `Regenerate`. |
-| <Link id="m-endcapscale" /><code>{"private float endCapScale"}</code> | Length scale for a box end where the river starts or finishes. |
-| <Link id="m-endscale" /><code>{"private float endScale"}</code> | Length scale for a box end that joins another river path. |
-| <Link id="m-forest" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest"}</code> | The forest generator used by `Regenerate`. |
-| <Link id="m-horizontalscale" /><code>{"private float horizontalScale"}</code> | Box width as a multiple of river width. |
-| <Link id="m-isshowingboxes" /><code>{"private bool isShowingBoxes"}</code> | When on, the trigger prefab is a visible cube, for debugging. |
-| <Link id="m-liquidcontainer" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontainertrigger">{"LiquidContainerTrigger"}</Link>{" liquidContainer"}</code> | The liquid trigger that river enters and exits are forwarded to. |
-| <Link id="m-locomotionmodifier" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifier">{"LocomotionModifier"}</Link>{" locomotionModifier"}</code> | The locomotion modifier that river enters and exits are forwarded to. |
-| <Link id="m-normaloffset" /><code>{"private float normalOffset"}</code> | Offset along each box's up direction. |
-| <Link id="m-prefab" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{" prefab"}</code> | Shared, inactive trigger box prefab, built once in `Initialize`. |
-| <Link id="m-spawned" /><code>{"private List<"}<Link to="/mod/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{"> spawned"}</code> | The trigger boxes spawned so far. |
-| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> | Extra world-up offset for each box. |
-| <Link id="m-verticalscale" /><code>{"private float verticalScale"}</code> | Box height as a multiple of river width. |
+| <Link id="m-btnregenerate" /><code>{"private bool btnRegenerate"}</code> | <span className="api-desc">Inspector button that calls `Regenerate`.</span> |
+| <Link id="m-endcapscale" /><code>{"private float endCapScale"}</code> | <span className="api-desc">Length scale for a box end where the river starts or finishes.</span> |
+| <Link id="m-endscale" /><code>{"private float endScale"}</code> | <span className="api-desc">Length scale for a box end that joins another river path.</span> |
+| <Link id="m-forest" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest"}</code> | <span className="api-desc">The forest generator used by `Regenerate`.</span> |
+| <Link id="m-horizontalscale" /><code>{"private float horizontalScale"}</code> | <span className="api-desc">Box width as a multiple of river width.</span> |
+| <Link id="m-isshowingboxes" /><code>{"private bool isShowingBoxes"}</code> | <span className="api-desc">When on, the trigger prefab is a visible cube, for debugging.</span> |
+| <Link id="m-liquidcontainer" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontainertrigger">{"LiquidContainerTrigger"}</Link>{" liquidContainer"}</code> | <span className="api-desc">The liquid trigger that river enters and exits are forwarded to.</span> |
+| <Link id="m-locomotionmodifier" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/locomotionmodifier">{"LocomotionModifier"}</Link>{" locomotionModifier"}</code> | <span className="api-desc">The locomotion modifier that river enters and exits are forwarded to.</span> |
+| <Link id="m-normaloffset" /><code>{"private float normalOffset"}</code> | <span className="api-desc">Offset along each box's up direction.</span> |
+| <Link id="m-prefab" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{" prefab"}</code> | <span className="api-desc">Shared, inactive trigger box prefab, built once in `Initialize`.</span> |
+| <Link id="m-spawned" /><code>{"private List<"}<Link to="/mod/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{"> spawned"}</code> | <span className="api-desc">The trigger boxes spawned so far.</span> |
+| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> | <span className="api-desc">Extra world-up offset for each box.</span> |
+| <Link id="m-verticalscale" /><code>{"private float verticalScale"}</code> | <span className="api-desc">Box height as a multiple of river width.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>9 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleardynamic" /><code>{"private void Alta.Forests.IForestGeneration.ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-clearstatic" /><code>{"private void Alta.Forests.IForestGeneration.ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-entered" /><code>{"private void Entered(Collider collider)"}</code> | Passes a collider entering any river trigger to the locomotion modifier and liquid container. |
-| <Link id="m-exited" /><code>{"private void Exited(Collider collider)"}</code> | Passes a collider leaving any river trigger to the locomotion modifier and liquid container. |
-| <Link id="m-generatedynamic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-generateglobal" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Spawns a box trigger for each overground river path, plus one at each river end, sized from the river width. |
-| <Link id="m-generatestatic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instruction)"}</code> | Does nothing. |
-| <Link id="m-initialize" /><code>{"private void Alta.Forests.IForestGeneration.Initialize()"}</code> | Builds the shared trigger box prefab once (a visible cube if `isShowingBoxes`). |
-| <Link id="m-regenerate" /><code>{"private void Regenerate()"}</code> | Destroys the spawned triggers and runs `GenerateGlobal` again. Wired to an inspector button. |
+| <Link id="m-cleardynamic" /><code>{"private void Alta.Forests.IForestGeneration.ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-clearstatic" /><code>{"private void Alta.Forests.IForestGeneration.ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-entered" /><code>{"private void Entered(Collider collider)"}</code> | <span className="api-desc">Passes a collider entering any river trigger to the locomotion modifier and liquid container.</span> |
+| <Link id="m-exited" /><code>{"private void Exited(Collider collider)"}</code> | <span className="api-desc">Passes a collider leaving any river trigger to the locomotion modifier and liquid container.</span> |
+| <Link id="m-generatedynamic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-generateglobal" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | <span className="api-desc">Spawns a box trigger for each overground river path, plus one at each river end, sized from the river width.</span> |
+| <Link id="m-generatestatic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instruction)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-initialize" /><code>{"private void Alta.Forests.IForestGeneration.Initialize()"}</code> | <span className="api-desc">Builds the shared trigger box prefab once (a visible cube if `isShowingBoxes`).</span> |
+| <Link id="m-regenerate" /><code>{"private void Regenerate()"}</code> | <span className="api-desc">Destroys the spawned triggers and runs `GenerateGlobal` again. Wired to an inspector button.</span> |
 
 </details>

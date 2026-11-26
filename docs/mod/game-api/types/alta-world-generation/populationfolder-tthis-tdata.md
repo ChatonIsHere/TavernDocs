@@ -23,21 +23,21 @@ Base for population folders with their own save data type. Saves and loads the p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationFolder()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PopulationFolder()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadsetup" /><code>{"protected virtual void LoadSetup(TData data)"}</code> | Override to read extra settings from the save. Called first in load. |
-| <Link id="m-savesetup" /><code>{"protected virtual void SaveSetup(TData data)"}</code> | Override to write extra settings to the save. |
-| <Link id="m-serializesetup" /><code>{"protected virtual void SerializeSetup("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Override hook to stream settings. Nothing in this build calls it. |
+| <Link id="m-loadsetup" /><code>{"protected virtual void LoadSetup(TData data)"}</code> | <span className="api-desc">Override to read extra settings from the save. Called first in load.</span> |
+| <Link id="m-savesetup" /><code>{"protected virtual void SaveSetup(TData data)"}</code> | <span className="api-desc">Override to write extra settings to the save.</span> |
+| <Link id="m-serializesetup" /><code>{"protected virtual void SerializeSetup("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Override hook to stream settings. Nothing in this build calls it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-registerchild" /><code>{"private void Registerchild("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> | Links a loaded child to its saved spawn point entry and moves it to the spawner's default folder. |
+| <Link id="m-registerchild" /><code>{"private void Registerchild("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> | <span className="api-desc">Links a loaded child to its saved spawn point entry and moves it to the spawner's default folder.</span> |
 
 </details>

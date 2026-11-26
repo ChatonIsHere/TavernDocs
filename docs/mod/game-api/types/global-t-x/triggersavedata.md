@@ -23,11 +23,11 @@ Save data (version 2) for `Trigger`: its toggle and sync-with-sender settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> | Creates a `TriggerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> | <span className="api-desc">Creates a `TriggerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-syncwithsendersaved" /><code>{"bool syncWithSenderSaved"}</code> | Saved `syncWithSender`. |
-| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> | Saved `toggle`. |
+| <Link id="m-syncwithsendersaved" /><code>{"bool syncWithSenderSaved"}</code> | <span className="api-desc">Saved `syncWithSender`.</span> |
+| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> | <span className="api-desc">Saved `toggle`.</span> |

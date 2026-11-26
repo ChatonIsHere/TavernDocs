@@ -31,4 +31,8 @@ Whether a rule may be placed again on cells it already used: never, only at a pe
 
 Members of other types that take, return or hold a `RotationOverlap`:
 
+<div className="api-used-in">
+
 [`Rule.Overlap`](/mod/game-api/types/alta-world-generation/rule#m-overlap), [`Rule.rotationOverlap`](/mod/game-api/types/alta-world-generation/rule#m-rotationoverlap).
+
+</div>

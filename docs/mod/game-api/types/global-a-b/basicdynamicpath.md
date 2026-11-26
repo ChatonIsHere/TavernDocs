@@ -22,16 +22,16 @@ Networked object placed along an edge of the generated forest path network. Save
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicDynamicPath()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BasicDynamicPath()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Networked object placed along an edge of the generated forest path network. Save
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; private set; }"}</code> | The forest path edge this object belongs to. |
-| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; private set; }"}</code> | The forest generation the edge comes from. |
+| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The forest path edge this object belongs to.</span> |
+| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; private set; }"}</code> | <span className="api-desc">The forest generation the edge comes from.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | Sets the edge and gets the forest generation at its start point (blocks on the generator). |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | <span className="api-desc">Sets the edge and gets the forest generation at its start point (blocks on the generator).</span> |

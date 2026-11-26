@@ -21,27 +21,27 @@ Turns a list of GameObjects on when this component is enabled. Its `OnDisable` a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetEnableOnGameObjects()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SetEnableOnGameObjects()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> | The objects to turn on. |
+| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> | <span className="api-desc">The objects to turn on.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Sets every object active (not inactive, as the name suggests). |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets every object active. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Sets every object active (not inactive, as the name suggests).</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Sets every object active.</span> |
 
 </details>

@@ -20,12 +20,12 @@ The API's answer after a coupon is redeemed: what it gave.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> | Creates a `CouponRedeemedResponse` with default values. |
+| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> | <span className="api-desc">Creates a `CouponRedeemedResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-couponcode" /><code>{"string CouponCode { get; set; }"}</code> | The code that was redeemed. |
-| <Link id="m-virtualcurrencyamount" /><code>{"int VirtualCurrencyAmount { get; set; }"}</code> | How much virtual currency the coupon gave. |
-| <Link id="m-virtualitems" /><code>{"object[] VirtualItems { get; set; }"}</code> | Items the coupon gave, as untyped objects. |
+| <Link id="m-couponcode" /><code>{"string CouponCode { get; set; }"}</code> | <span className="api-desc">The code that was redeemed.</span> |
+| <Link id="m-virtualcurrencyamount" /><code>{"int VirtualCurrencyAmount { get; set; }"}</code> | <span className="api-desc">How much virtual currency the coupon gave.</span> |
+| <Link id="m-virtualitems" /><code>{"object[] VirtualItems { get; set; }"}</code> | <span className="api-desc">Items the coupon gave, as untyped objects.</span> |

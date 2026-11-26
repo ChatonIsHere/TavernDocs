@@ -22,4 +22,4 @@ Editor menu item that creates a new `EyeFocusControllerSettings` asset under the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EyeFocusControllerSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `EyeFocusControllerSettings.Create` with default values.</span> |

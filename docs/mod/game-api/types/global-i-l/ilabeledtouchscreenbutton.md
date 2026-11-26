@@ -22,11 +22,15 @@ A touch screen button with a text label.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applytext" /><code>{"void ApplyText(string text)"}</code> | Sets the button's label. |
-| <Link id="m-gettext" /><code>{"string GetText()"}</code> | Returns the button's label. |
+| <Link id="m-applytext" /><code>{"void ApplyText(string text)"}</code> | <span className="api-desc">Sets the button's label.</span> |
+| <Link id="m-gettext" /><code>{"string GetText()"}</code> | <span className="api-desc">Returns the button's label.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ILabeledTouchScreenButton`:
 
+<div className="api-used-in">
+
 [`TouchScreenMenuBase.instantiatedSuggestionKeys`](/mod/game-api/types/global-t-x/touchscreenmenubase#m-instantiatedsuggestionkeys).
+
+</div>

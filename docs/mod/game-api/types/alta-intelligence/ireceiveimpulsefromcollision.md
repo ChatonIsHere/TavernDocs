@@ -21,10 +21,14 @@ Implemented by things that want to know the strength of a collision impulse they
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivedimpulse" /><code>{"void ReceivedImpulse(float strength)"}</code> | Called with the strength of a collision impulse. |
+| <Link id="m-receivedimpulse" /><code>{"void ReceivedImpulse(float strength)"}</code> | <span className="api-desc">Called with the strength of a collision impulse.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IReceiveImpulseFromCollision`:
 
+<div className="api-used-in">
+
 [`CollisionImpulseReader.target`](/mod/game-api/types/alta-intelligence/collisionimpulsereader#m-target).
+
+</div>

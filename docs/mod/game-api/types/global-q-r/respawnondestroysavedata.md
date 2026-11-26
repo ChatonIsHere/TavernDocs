@@ -23,13 +23,13 @@ Save data for `RespawnOnDestroy`: delay range, the object to respawn and any pen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> | Creates a `RespawnOnDestroySaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> | <span className="api-desc">Creates a `RespawnOnDestroySaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumtimetorespawn" /><code>{"float maximumTimeToRespawn"}</code> | Saved longest delay. |
-| <Link id="m-minimumtimetorespawn" /><code>{"float minimumTimeToRespawn"}</code> | Saved shortest delay. |
-| <Link id="m-respawnobject" /><code><Link to="/mod/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{" respawnObject"}</code> | Saved copy of the object to respawn. |
-| <Link id="m-respawntimer" /><code>{"TimeSpan respawnTimer"}</code> | Time left on a pending respawn. |
+| <Link id="m-maximumtimetorespawn" /><code>{"float maximumTimeToRespawn"}</code> | <span className="api-desc">Saved longest delay.</span> |
+| <Link id="m-minimumtimetorespawn" /><code>{"float minimumTimeToRespawn"}</code> | <span className="api-desc">Saved shortest delay.</span> |
+| <Link id="m-respawnobject" /><code><Link to="/mod/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{" respawnObject"}</code> | <span className="api-desc">Saved copy of the object to respawn.</span> |
+| <Link id="m-respawntimer" /><code>{"TimeSpan respawnTimer"}</code> | <span className="api-desc">Time left on a pending respawn.</span> |

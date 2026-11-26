@@ -22,16 +22,16 @@ Base for hand camera buttons that refresh when the camera's settings change. Doe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CameraButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected CameraButton()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handcamera" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> | The hand camera this button controls. |
+| <Link id="m-handcamera" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> | <span className="api-desc">The hand camera this button controls.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Base for hand camera buttons that refresh when the camera's settings change. Doe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Not headless: hooks the camera's settings event and refreshes once. |
-| <Link id="m-updatesettings" /><code>{"protected abstract void UpdateSettings("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> | Subclasses refresh the button from the camera's settings. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Not headless: hooks the camera's settings event and refreshes once.</span> |
+| <Link id="m-updatesettings" /><code>{"protected abstract void UpdateSettings("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera)"}</code> | <span className="api-desc">Subclasses refresh the button from the camera's settings.</span> |

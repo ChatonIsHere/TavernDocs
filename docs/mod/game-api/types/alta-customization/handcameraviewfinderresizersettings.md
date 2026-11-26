@@ -22,17 +22,17 @@ Client: keeps the hand camera's viewfinder from going further than a set distanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizerSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizerSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> | Furthest the viewfinder can be from the head. Default 3. |
-| <Link id="m-currentresizer" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> | The resizer running for the current viewfinder, or null. |
+| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> | <span className="api-desc">Furthest the viewfinder can be from the head. Default 3.</span> |
+| <Link id="m-currentresizer" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> | <span className="api-desc">The resizer running for the current viewfinder, or null.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Client: keeps the hand camera's viewfinder from going further than a set distanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> | Stops the current resizer, if any. |
-| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> | Starts clamping a viewfinder transform each late update, replacing any resizer already running. |
+| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> | <span className="api-desc">Stops the current resizer, if any.</span> |
+| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> | <span className="api-desc">Starts clamping a viewfinder transform each late update, replacing any resizer already running.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandCameraViewfinderResizerSettings`:
 
+<div className="api-used-in">
+
 [`HandCamera.viewfinderResizerSettings`](/mod/game-api/types/alta-customization/handcamera#m-viewfinderresizersettings), [`HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer.HandCameraViewfinderResizer`](/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer#m-ctor), [`HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer.settings`](/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer#m-settings).
+
+</div>

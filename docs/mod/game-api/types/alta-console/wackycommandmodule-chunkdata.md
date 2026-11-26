@@ -21,10 +21,10 @@ JSON shape for the hardcoded chest loot list `OWLoot` reads: loot module setting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkData()"}</code> | Creates a `WackyCommandModule.ChunkData` with default values. |
+| <Link id="m-ctor" /><code>{"ChunkData()"}</code> | <span className="api-desc">Creates a `WackyCommandModule.ChunkData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunklootdata" /><code><Link to="/mod/game-api/types/alta-console/wackycommandmodule-chunklootdata">{"WackyCommandModule.ChunkLootData"}</Link>{"[] chunkLootData"}</code> | One entry per chunk, each with the loot modules to restore there. |
+| <Link id="m-chunklootdata" /><code><Link to="/mod/game-api/types/alta-console/wackycommandmodule-chunklootdata">{"WackyCommandModule.ChunkLootData"}</Link>{"[] chunkLootData"}</code> | <span className="api-desc">One entry per chunk, each with the loot modules to restore there.</span> |

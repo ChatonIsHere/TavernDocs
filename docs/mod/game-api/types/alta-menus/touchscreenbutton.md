@@ -21,16 +21,16 @@ A UI `Button` with a touch area size, for the in-world touch screen menus.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TouchScreenButton()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-touchsize" /><code>{"private Vector2 touchSize"}</code> | Backing field for `ButtonSize`. |
+| <Link id="m-touchsize" /><code>{"private Vector2 touchSize"}</code> | <span className="api-desc">Backing field for `ButtonSize`.</span> |
 
 </details>
 
@@ -38,15 +38,15 @@ A UI `Button` with a touch area size, for the in-world touch screen menus.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonsize" /><code>{"Vector2 ButtonSize { get; }"}</code> | The touch area size of the button. |
+| <Link id="m-buttonsize" /><code>{"Vector2 ButtonSize { get; }"}</code> | <span className="api-desc">The touch area size of the button.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: if the size is zero, copies it from a `BasicTouchScreenButton` on the same object. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: if the size is zero, copies it from a `BasicTouchScreenButton` on the same object.</span> |
 
 </details>

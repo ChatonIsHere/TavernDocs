@@ -19,22 +19,22 @@ Console module `quit`: closes the application. Play mode only.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-quit" /><code>{"private static void Quit()"}</code> | `quit`: calls `Application.Quit`. |
+| <Link id="m-quit" /><code>{"private static void Quit()"}</code> | <span className="api-desc">`quit`: calls `Application.Quit`.</span> |
 
 </details>

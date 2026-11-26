@@ -21,20 +21,20 @@ Game mode for running as the server: loads the server's scene and starts it here
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerHostingGameMode("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, bool isHeadless, bool isExternalLaunch = false, int port = 1757, bool isRunningLocally = true)"}</code> | Creates a `ServerHostingGameMode` from `server`, `isHeadless`, `isExternalLaunch`, `port` and `isRunningLocally`. |
+| <Link id="m-ctor" /><code>{"ServerHostingGameMode("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, bool isHeadless, bool isExternalLaunch = false, int port = 1757, bool isRunningLocally = true)"}</code> | <span className="api-desc">Creates a `ServerHostingGameMode` from `server`, `isHeadless`, `isExternalLaunch`, `port` and `isRunningLocally`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isexternallaunch" /><code>{"private bool isExternalLaunch"}</code> | Launch a separate server process instead of starting here. |
-| <Link id="m-isheadless" /><code>{"private bool isHeadless"}</code> | Run the server without graphics. |
-| <Link id="m-isrunninglocally" /><code>{"private bool isRunningLocally"}</code> | Passed to the server start as whether it runs locally. Default true. |
-| <Link id="m-port" /><code>{"private int port"}</code> | Port to host on. Default 1757. |
-| <Link id="m-server" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server"}</code> | Access to the server being hosted. |
+| <Link id="m-isexternallaunch" /><code>{"private bool isExternalLaunch"}</code> | <span className="api-desc">Launch a separate server process instead of starting here.</span> |
+| <Link id="m-isheadless" /><code>{"private bool isHeadless"}</code> | <span className="api-desc">Run the server without graphics.</span> |
+| <Link id="m-isrunninglocally" /><code>{"private bool isRunningLocally"}</code> | <span className="api-desc">Passed to the server start as whether it runs locally. Default true.</span> |
+| <Link id="m-port" /><code>{"private int port"}</code> | <span className="api-desc">Port to host on. Default 1757.</span> |
+| <Link id="m-server" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server"}</code> | <span className="api-desc">Access to the server being hosted.</span> |
 
 </details>
 
@@ -42,26 +42,26 @@ Game mode for running as the server: loads the server's scene and starts it here
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isclient" /><code>{"override bool IsClient { get; }"}</code> | Always false. |
-| <Link id="m-isrelaunchingthegame" /><code>{"static bool IsRelaunchingTheGame { get; set; }"}</code> | Static flag for relaunching the game. Not set in this class. |
-| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> | Always true. |
+| <Link id="m-isclient" /><code>{"override bool IsClient { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isrelaunchingthegame" /><code>{"static bool IsRelaunchingTheGame { get; set; }"}</code> | <span className="api-desc">Static flag for relaunching the game. Not set in this class.</span> |
+| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> | Loads the scene and starts the server (headless or not), or launches an external server. Goes back to the main menu on failure. |
-| <Link id="m-onstartsucceeded" /><code>{"override void OnStartSucceeded()"}</code> | Stops the active VR or desktop platform once the server is up. |
-| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> | Stops the mode, then shuts down the `ServerHandler` with an expected shutdown reason. |
+| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> | <span className="api-desc">Loads the scene and starts the server (headless or not), or launches an external server. Goes back to the main menu on failure.</span> |
+| <Link id="m-onstartsucceeded" /><code>{"override void OnStartSucceeded()"}</code> | <span className="api-desc">Stops the active VR or desktop platform once the server is up.</span> |
+| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> | <span className="api-desc">Stops the mode, then shuts down the `ServerHandler` with an expected shutdown reason.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-restartasheadless" /><code>{"private void RestartAsHeadless()"}</code> | Launches a headless server process and quits this one. Needs `/login` or `/login_hash` on the command line. |
-| <Link id="m-startexternalserver" /><code>{"private void StartExternalServer()"}</code> | Starts a new game process in batch mode with `/start_server`, the port and the user's tokens on the command line, logging to the server's logs folder. |
-| <Link id="m-startheadlessserver" /><code>{"private async Task<bool> StartHeadlessServer()"}</code> | Starts the server here if already headless, otherwise restarts as a headless process. |
-| <Link id="m-startserver" /><code>{"private async Task<bool> StartServer()"}</code> | Starts the server through `ServerLifetimePipeline.AttemptToStartServer`. |
+| <Link id="m-restartasheadless" /><code>{"private void RestartAsHeadless()"}</code> | <span className="api-desc">Launches a headless server process and quits this one. Needs `/login` or `/login_hash` on the command line.</span> |
+| <Link id="m-startexternalserver" /><code>{"private void StartExternalServer()"}</code> | <span className="api-desc">Starts a new game process in batch mode with `/start_server`, the port and the user's tokens on the command line, logging to the server's logs folder.</span> |
+| <Link id="m-startheadlessserver" /><code>{"private async Task<bool> StartHeadlessServer()"}</code> | <span className="api-desc">Starts the server here if already headless, otherwise restarts as a headless process.</span> |
+| <Link id="m-startserver" /><code>{"private async Task<bool> StartServer()"}</code> | <span className="api-desc">Starts the server through `ServerLifetimePipeline.AttemptToStartServer`.</span> |
 
 </details>

@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Chunking/Operator`: menu item classes inhe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Operator()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Chunking.Operator` with default values. |
+| <Link id="m-ctor" /><code>{"protected Operator()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Chunking.Operator` with default values.</span> |

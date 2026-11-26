@@ -22,25 +22,29 @@ Base for the display on a skill shrine that shows one progression path for the p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SkillShrineVisualizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected SkillShrineVisualizer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; private set; }"}</code> | The progression path this visualizer shows. |
+| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; private set; }"}</code> | <span className="api-desc">The progression path this visualizer shows.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"abstract void Disable()"}</code> | Hides the display. |
-| <Link id="m-prepareonserver" /><code>{"abstract void PrepareOnServer("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager)"}</code> | Server: gathers what to show from the player's progression manager. |
-| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | Reads or writes the display data on a stream. |
-| <Link id="m-setpath" /><code>{"virtual void SetPath("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | Sets the path to show. |
+| <Link id="m-disable" /><code>{"abstract void Disable()"}</code> | <span className="api-desc">Hides the display.</span> |
+| <Link id="m-prepareonserver" /><code>{"abstract void PrepareOnServer("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" progressionManager)"}</code> | <span className="api-desc">Server: gathers what to show from the player's progression manager.</span> |
+| <Link id="m-serialize" /><code>{"abstract void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager)"}</code> | <span className="api-desc">Reads or writes the display data on a stream.</span> |
+| <Link id="m-setpath" /><code>{"virtual void SetPath("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | <span className="api-desc">Sets the path to show.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SkillShrineVisualizer`:
 
+<div className="api-used-in">
+
 [`ProfessionsProgressShrine.Visualizers`](/mod/game-api/types/global-p/professionsprogressshrine#m-visualizers), [`ProgressionShrine.Visualizers`](/mod/game-api/types/global-p/progressionshrine#m-visualizers), [`SkillShrine.visualizers`](/mod/game-api/types/global-s/skillshrine#m-visualizers), [`SkillShrine.Visualizers`](/mod/game-api/types/global-s/skillshrine#m-visualizers-2).
+
+</div>

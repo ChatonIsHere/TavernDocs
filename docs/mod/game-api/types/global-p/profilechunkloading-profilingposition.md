@@ -21,17 +21,17 @@ A named world position that `ProfileChunkLoading` visits when profiling chunk lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> | Creates a `ProfileChunkLoading.ProfilingPosition` with default values. |
+| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> | <span className="api-desc">Creates a `ProfileChunkLoading.ProfilingPosition` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
+| <Link id="m-name" /><code>{"private string name"}</code> | <span className="api-desc">Backing field for `Name`.</span> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | <span className="api-desc">Backing field for `Position`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A named world position that `ProfileChunkLoading` visits when profiling chunk lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | Label recorded with the results for this position. |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> | World position to profile at. |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | <span className="api-desc">Label recorded with the results for this position.</span> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> | <span className="api-desc">World position to profile at.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ProfilingPosition`:
 
+<div className="api-used-in">
+
 [`ProfileChunkLoading.positions`](/mod/game-api/types/global-p/profilechunkloading#m-positions), [`ProfileChunkLoading.Positions`](/mod/game-api/types/global-p/profilechunkloading#m-positions-2).
+
+</div>

@@ -21,17 +21,17 @@ A heat point this one conducts heat to every fixed update, set up in the Inspect
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Neighbour()"}</code> | Creates a `HeatPoint.Neighbour` with default values. |
+| <Link id="m-ctor" /><code>{"Neighbour()"}</code> | <span className="api-desc">Creates a `HeatPoint.Neighbour` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancemultiplier" /><code>{"private float distanceMultiplier"}</code> | Backing field for `DistanceMultiplier`. |
-| <Link id="m-point" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point"}</code> | Backing field for `Point`. |
+| <Link id="m-distancemultiplier" /><code>{"private float distanceMultiplier"}</code> | <span className="api-desc">Backing field for `DistanceMultiplier`.</span> |
+| <Link id="m-point" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point"}</code> | <span className="api-desc">Backing field for `Point`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A heat point this one conducts heat to every fixed update, set up in the Inspect
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancemultiplier-2" /><code>{"float DistanceMultiplier { get; }"}</code> | Weight passed to `ConductTo` for this neighbour. Defaults to 1. |
-| <Link id="m-point-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" Point { get; }"}</code> | The neighbouring heat point. |
+| <Link id="m-distancemultiplier-2" /><code>{"float DistanceMultiplier { get; }"}</code> | <span className="api-desc">Weight passed to `ConductTo` for this neighbour. Defaults to 1.</span> |
+| <Link id="m-point-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" Point { get; }"}</code> | <span className="api-desc">The neighbouring heat point.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Neighbour`:
 
+<div className="api-used-in">
+
 [`HeatPoint.neighbours`](/mod/game-api/types/alta-stats-effects/heatpoint#m-neighbours).
+
+</div>

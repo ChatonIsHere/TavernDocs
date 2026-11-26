@@ -21,4 +21,4 @@ Extension method that works out mesh tangents from vertices, normals and UVs.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> | Calculates and sets per-vertex tangents (with handedness in `w`) on the mesh. |
+| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> | <span className="api-desc">Calculates and sets per-vertex tangents (with handedness in `w`) on the mesh.</span> |

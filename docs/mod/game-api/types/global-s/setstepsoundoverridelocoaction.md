@@ -22,16 +22,16 @@ Locomotion modifier action asset that swaps the player's footstep sound while it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetStepSoundOverrideLocoAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SetStepSoundOverrideLocoAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stepsound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stepSound"}</code> | The footstep sound to use while the action runs. Defaults to `WaterWading`. |
+| <Link id="m-stepsound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stepSound"}</code> | <span className="api-desc">The footstep sound to use while the action runs. Defaults to `WaterWading`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Locomotion modifier action asset that swaps the player's footstep sound while it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Sets the player's locomotion `OverrideStepSound` to `stepSound`. |
-| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Clears the step sound override back to `SoundEffect.None`. |
+| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Sets the player's locomotion `OverrideStepSound` to `stepSound`.</span> |
+| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Clears the step sound override back to `SoundEffect.None`.</span> |

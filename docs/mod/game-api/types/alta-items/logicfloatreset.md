@@ -23,23 +23,23 @@ Logic component that passes a float through to its sender and, once nobody is in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> | Creates a `LogicFloatReset` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> | <span className="api-desc">Creates a `LogicFloatReset` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenttimer" /><code>{"private float currentTimer"}</code> | Time waited before returning starts. |
-| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> | Value it returns to. |
-| <Link id="m-errormessageposted" /><code>{"private bool errorMessagePosted"}</code> | Stops the missing-sender warning from repeating. |
-| <Link id="m-isinteracting" /><code>{"private bool isInteracting"}</code> | Whether a player is interacting. |
-| <Link id="m-returnspeedpersec" /><code>{"private float returnSpeedPerSec"}</code> | How fast the value returns, per second. |
-| <Link id="m-sender" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/logicfloatsender">{"LogicFloatSender"}</Link>{" sender"}</code> | Float sender the value is output on. |
-| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> | Current value being sent. |
-| <Link id="m-timebeforereturn" /><code>{"private float timeBeforeReturn"}</code> | Seconds to wait before returning. |
+| <Link id="m-currenttimer" /><code>{"private float currentTimer"}</code> | <span className="api-desc">Time waited before returning starts.</span> |
+| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> | <span className="api-desc">Value it returns to.</span> |
+| <Link id="m-errormessageposted" /><code>{"private bool errorMessagePosted"}</code> | <span className="api-desc">Stops the missing-sender warning from repeating.</span> |
+| <Link id="m-isinteracting" /><code>{"private bool isInteracting"}</code> | <span className="api-desc">Whether a player is interacting.</span> |
+| <Link id="m-returnspeedpersec" /><code>{"private float returnSpeedPerSec"}</code> | <span className="api-desc">How fast the value returns, per second.</span> |
+| <Link id="m-sender" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/logicfloatsender">{"LogicFloatSender"}</Link>{" sender"}</code> | <span className="api-desc">Float sender the value is output on.</span> |
+| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> | <span className="api-desc">Current value being sent.</span> |
+| <Link id="m-timebeforereturn" /><code>{"private float timeBeforeReturn"}</code> | <span className="api-desc">Seconds to wait before returning.</span> |
 
 </details>
 
@@ -47,15 +47,15 @@ Logic component that passes a float through to its sender and, once nobody is in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinteracting-2" /><code>{"void IsInteracting(bool value)"}</code> | Sets whether a player is holding the control, which pauses the return. |
-| <Link id="m-update" /><code>{"void Update()"}</code> | When not interacting and the delay has passed, moves the value toward `defaultValue` at `returnSpeedPerSec` and sends it. |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> | Sets and sends a new value, restarting the delay if someone is interacting. |
+| <Link id="m-isinteracting-2" /><code>{"void IsInteracting(bool value)"}</code> | <span className="api-desc">Sets whether a player is holding the control, which pauses the return.</span> |
+| <Link id="m-update" /><code>{"void Update()"}</code> | <span className="api-desc">When not interacting and the delay has passed, moves the value toward `defaultValue` at `returnSpeedPerSec` and sends it.</span> |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(float value)"}</code> | <span className="api-desc">Sets and sends a new value, restarting the delay if someone is interacting.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Resets the missing-sender warning flag. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Resets the missing-sender warning flag.</span> |
 
 </details>

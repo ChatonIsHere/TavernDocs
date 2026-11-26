@@ -28,4 +28,8 @@ The player's turn setting: off, snap turns or smooth turning. `RoomRotator` read
 
 Members of other types that take, return or hold a `RoomRotationMode`:
 
+<div className="api-used-in">
+
 [`GameSettings.SnapRotation`](/mod/game-api/types/alta-utilities/gamesettings#m-snaprotation).
+
+</div>

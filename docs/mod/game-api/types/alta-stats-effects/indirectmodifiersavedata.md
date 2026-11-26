@@ -20,19 +20,23 @@ Saved state of one `IndirectModifier`, a stat change that plays out over a curve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> | Creates an `IndirectModifierSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> | <span className="api-desc">Creates an `IndirectModifierSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basevalue" /><code>{"float baseValue"}</code> | Value the curve is multiplied by. |
-| <Link id="m-duration" /><code>{"uint duration"}</code> | Total length of the modifier in ticks. |
-| <Link id="m-tick" /><code>{"uint tick"}</code> | Ticks already run when it was saved. |
-| <Link id="m-valueoverduration" /><code><Link to="/mod/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> | Curve of the value over the modifier's life, from 0 to 1. |
+| <Link id="m-basevalue" /><code>{"float baseValue"}</code> | <span className="api-desc">Value the curve is multiplied by.</span> |
+| <Link id="m-duration" /><code>{"uint duration"}</code> | <span className="api-desc">Total length of the modifier in ticks.</span> |
+| <Link id="m-tick" /><code>{"uint tick"}</code> | <span className="api-desc">Ticks already run when it was saved.</span> |
+| <Link id="m-valueoverduration" /><code><Link to="/mod/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> | <span className="api-desc">Curve of the value over the modifier's life, from 0 to 1.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IndirectModifierSaveData`:
 
+<div className="api-used-in">
+
 [`IndirectModifier.Save`](/mod/game-api/types/alta-stats-effects/indirectmodifier#m-save), [`StatManagerSaveData.IndirectStatModifier.modifiers`](/mod/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier#m-modifiers), [`StatManagerSaveData1.IndirectStatModifier.modifiers`](/mod/game-api/types/alta-stats-effects/statmanagersavedata1-indirectstatmodifier#m-modifiers).
+
+</div>

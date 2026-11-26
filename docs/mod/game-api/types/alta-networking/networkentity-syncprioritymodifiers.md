@@ -27,4 +27,8 @@ Flags on `NetworkEntity.CurrentPriorityModifiers` that change sync priority. `Do
 
 Members of other types that take, return or hold a `SyncPriorityModifiers`:
 
+<div className="api-used-in">
+
 [`NetworkEntity.CurrentPriorityModifiers`](/mod/game-api/types/alta-networking/networkentity#m-currentprioritymodifiers).
+
+</div>

@@ -22,20 +22,20 @@ Asset with the look of a touch screen button: alpha when idle and pressed, a gro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButtonVisualSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TouchScreenButtonVisualSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color" /><code>{"private Material color"}</code> | Backing field for `Color`. |
-| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> | Backing field for `GrowCurve`. |
-| <Link id="m-growduration" /><code>{"private float growDuration"}</code> | Backing field for `GrowDuration`. |
-| <Link id="m-idlealpha" /><code>{"private float idleAlpha"}</code> | Backing field for `IdleAlpha`. |
-| <Link id="m-pressedalpha" /><code>{"private float pressedAlpha"}</code> | Backing field for `PressedAlpha`. |
+| <Link id="m-color" /><code>{"private Material color"}</code> | <span className="api-desc">Backing field for `Color`.</span> |
+| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> | <span className="api-desc">Backing field for `GrowCurve`.</span> |
+| <Link id="m-growduration" /><code>{"private float growDuration"}</code> | <span className="api-desc">Backing field for `GrowDuration`.</span> |
+| <Link id="m-idlealpha" /><code>{"private float idleAlpha"}</code> | <span className="api-desc">Backing field for `IdleAlpha`.</span> |
+| <Link id="m-pressedalpha" /><code>{"private float pressedAlpha"}</code> | <span className="api-desc">Backing field for `PressedAlpha`.</span> |
 
 </details>
 
@@ -43,14 +43,18 @@ Asset with the look of a touch screen button: alpha when idle and pressed, a gro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color-2" /><code>{"Material Color { get; }"}</code> | Material used for the button. |
-| <Link id="m-growcurve-2" /><code>{"AnimationCurve GrowCurve { get; }"}</code> | Curve for the grow animation. |
-| <Link id="m-growduration-2" /><code>{"float GrowDuration { get; }"}</code> | Length of the grow animation in seconds (default 0.5). |
-| <Link id="m-idlealpha-2" /><code>{"float IdleAlpha { get; }"}</code> | Alpha when not pressed (default 0.5). |
-| <Link id="m-pressedalpha-2" /><code>{"float PressedAlpha { get; }"}</code> | Alpha when pressed (default 1). |
+| <Link id="m-color-2" /><code>{"Material Color { get; }"}</code> | <span className="api-desc">Material used for the button.</span> |
+| <Link id="m-growcurve-2" /><code>{"AnimationCurve GrowCurve { get; }"}</code> | <span className="api-desc">Curve for the grow animation.</span> |
+| <Link id="m-growduration-2" /><code>{"float GrowDuration { get; }"}</code> | <span className="api-desc">Length of the grow animation in seconds (default 0.5).</span> |
+| <Link id="m-idlealpha-2" /><code>{"float IdleAlpha { get; }"}</code> | <span className="api-desc">Alpha when not pressed (default 0.5).</span> |
+| <Link id="m-pressedalpha-2" /><code>{"float PressedAlpha { get; }"}</code> | <span className="api-desc">Alpha when pressed (default 1).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TouchScreenButtonVisualSettings`:
 
+<div className="api-used-in">
+
 [`TouchScreenButtonVisual.settings`](/mod/game-api/types/alta-menus/touchscreenbuttonvisual#m-settings).
+
+</div>

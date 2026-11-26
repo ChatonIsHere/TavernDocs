@@ -22,16 +22,16 @@ Zone trigger event asset that sends an "Area Exited" analytics event with how lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ZoneAnalyticsTriggerEvent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ZoneAnalyticsTriggerEvent()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> | Analytics service set by `Inject`. |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> | <span className="api-desc">Analytics service set by `Inject`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ Zone trigger event asset that sends an "Area Exited" analytics event with how lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inject" /><code>{"void Inject("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Receives the analytics service by dependency injection. |
-| <Link id="m-trigger" /><code>{"override void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | Sends the area exited analytics event with the trigger data and duration in seconds. |
+| <Link id="m-inject" /><code>{"void Inject("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | <span className="api-desc">Receives the analytics service by dependency injection.</span> |
+| <Link id="m-trigger" /><code>{"override void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | <span className="api-desc">Sends the area exited analytics event with the trigger data and duration in seconds.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ZoneAnalyticsTriggerEvent`:
 
+<div className="api-used-in">
+
 [`AnalyticsInstaller.enterEvent`](/mod/game-api/types/assembly-other/analyticsinstaller#m-enterevent), [`AnalyticsInstaller.exitEvent`](/mod/game-api/types/assembly-other/analyticsinstaller#m-exitevent).
+
+</div>

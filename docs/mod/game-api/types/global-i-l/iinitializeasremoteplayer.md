@@ -21,4 +21,4 @@ Component on a player prefab that `PlayerController` calls when the player is se
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasremoteplayer" /><code>{"void InitializeAsRemotePlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Sets the component up for a remote player. |
+| <Link id="m-initializeasremoteplayer" /><code>{"void InitializeAsRemotePlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Sets the component up for a remote player.</span> |

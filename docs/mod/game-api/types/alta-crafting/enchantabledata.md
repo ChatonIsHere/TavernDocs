@@ -23,10 +23,10 @@ Save data for an `Enchantable` (save structure version 1): the enchantments on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> | Creates an `EnchantableData` with default values. |
+| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> | <span className="api-desc">Creates an `EnchantableData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enchantments" /><code><Link to="/mod/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] enchantments"}</code> | Enchantments saved with the item. `Enchantable.Load` doesn't read them back, so only the prefab's initial ones return after a restart. |
+| <Link id="m-enchantments" /><code><Link to="/mod/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{"[] enchantments"}</code> | <span className="api-desc">Enchantments saved with the item. `Enchantable.Load` doesn't read them back, so only the prefab's initial ones return after a restart.</span> |

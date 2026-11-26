@@ -21,10 +21,10 @@ Extra static content that can be instantiated under a transform.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The content's transform. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The content's transform.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> | Creates the content under the given parent, with optional hide flags. |
+| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> | <span className="api-desc">Creates the content under the given parent, with optional hide flags.</span> |

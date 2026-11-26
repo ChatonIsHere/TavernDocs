@@ -23,10 +23,10 @@ Obsolete global settings asset holding Addressables references for things not ye
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AddressableResolverSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AddressableResolverSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-questerbackerpopup" /><code>{"AssetReference QuesterBackerPopup"}</code> | Addressables reference to the Quester backer popup prefab. |
+| <Link id="m-questerbackerpopup" /><code>{"AssetReference QuesterBackerPopup"}</code> | <span className="api-desc">Addressables reference to the Quester backer popup prefab.</span> |

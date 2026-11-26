@@ -21,16 +21,16 @@ A `HistoryAccess` that takes its history from an `IHasHistory` component on the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ComponentHistoryAccess()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ComponentHistoryAccess()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" history"}</code> | Backing field for `History`. |
+| <Link id="m-history" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" history"}</code> | <span className="api-desc">Backing field for `History`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ A `HistoryAccess` that takes its history from an `IHasHistory` component on the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history-2" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | History manager from the `IHasHistory` component. |
+| <Link id="m-history-2" /><code>{"override "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | <span className="api-desc">History manager from the `IHasHistory` component.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Gets the history from the `IHasHistory` component before the base setup. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Gets the history from the `IHasHistory` component before the base setup.</span> |

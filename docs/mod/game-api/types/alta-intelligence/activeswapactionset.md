@@ -22,12 +22,12 @@ Server: running action that switches the creature to a different action set when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveSwapActionSet()"}</code> | Creates an `ActiveSwapActionSet` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveSwapActionSet()"}</code> | <span className="api-desc">Creates an `ActiveSwapActionSet` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction("}<Link to="/mod/game-api/types/alta-intelligence/agentswapactionsetsettings">{"AgentSwapActionSetSettings"}</Link>{" settings)"}</code> | Builds the action for these settings, using a target if the settings say so. |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Does nothing. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Switches the creature to `Settings.Set` and sets the duration. |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction("}<Link to="/mod/game-api/types/alta-intelligence/agentswapactionsetsettings">{"AgentSwapActionSetSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Builds the action for these settings, using a target if the settings say so.</span> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Switches the creature to `Settings.Set` and sets the duration.</span> |

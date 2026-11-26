@@ -21,17 +21,21 @@ Name and value pair that Unity can save. `Element` copies its `Variables` dictio
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> | Creates an `Element.SerializedVariable` with default values. |
+| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> | <span className="api-desc">Creates an `Element.SerializedVariable` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> | The variable's name, the dictionary key. |
-| <Link id="m-value" /><code><Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{" value"}</code> | The variable's value. |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">The variable's name, the dictionary key.</span> |
+| <Link id="m-value" /><code><Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{" value"}</code> | <span className="api-desc">The variable's value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SerializedVariable`:
 
+<div className="api-used-in">
+
 [`Element.serializedVariables`](/mod/game-api/types/alta-world-generation/element#m-serializedvariables).
+
+</div>

@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Glyphs`: menu item classes inherit it to a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Glyphs()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Glyphs` with default values. |
+| <Link id="m-ctor" /><code>{"protected Glyphs()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Glyphs` with default values.</span> |

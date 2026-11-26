@@ -21,10 +21,14 @@ The result of one world generation instruction (such as a spline or river), whic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> | Reverts what the instruction did. |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | <span className="api-desc">Reverts what the instruction did.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IInstructionResult`:
 
+<div className="api-used-in">
+
 [`ForestGCoreInstruction.Execute`](/mod/game-api/types/alta-world-generation/forestgcoreinstruction#m-execute), [`RiverGCoreInstruction.Execute`](/mod/game-api/types/alta-world-generation/rivergcoreinstruction#m-execute), [`SplineInstruction.Execute`](/mod/game-api/types/alta-world-generation/splineinstruction#m-execute), [`Instruction.execute`](/mod/game-api/types/alta-world/instruction#m-execute), [`Instruction.Execute`](/mod/game-api/types/alta-world/instruction#m-execute-2), [`Instruction.SerializeAndExecute`](/mod/game-api/types/alta-world/instruction#m-serializeandexecute), [`InstructionSet.results`](/mod/game-api/types/alta-world/instructionset#m-results), [`InstructionSet.Results`](/mod/game-api/types/alta-world/instructionset#m-results-2), [`SpawnInstruction.Execute`](/mod/game-api/types/alta-world/spawninstruction#m-execute).
+
+</div>

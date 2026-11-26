@@ -21,4 +21,4 @@ Something you can add analytics properties to. Implemented by `AnalyticsData` an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addproperty" /><code>{"void AddProperty(string name, object value)"}</code> | Adds a name and value property. |
+| <Link id="m-addproperty" /><code>{"void AddProperty(string name, object value)"}</code> | <span className="api-desc">Adds a name and value property.</span> |

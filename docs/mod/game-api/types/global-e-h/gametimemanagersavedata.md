@@ -23,10 +23,10 @@ Save data for `GameTimeManager` (version 2).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameTimeManagerSaveData()"}</code> | Creates a `GameTimeManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GameTimeManagerSaveData()"}</code> | <span className="api-desc">Creates a `GameTimeManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentcontinuoustime" /><code>{"TimeSpan currentContinuousTime"}</code> | In-game time elapsed, as a `TimeSpan`. |
+| <Link id="m-currentcontinuoustime" /><code>{"TimeSpan currentContinuousTime"}</code> | <span className="api-desc">In-game time elapsed, as a `TimeSpan`.</span> |

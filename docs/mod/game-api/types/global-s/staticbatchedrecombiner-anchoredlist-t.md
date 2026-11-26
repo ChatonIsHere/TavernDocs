@@ -21,16 +21,16 @@ A vertex attribute list (such as a UV channel) used while recombining static mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> | Creates a `StaticBatchedRecombiner.AnchoredList` from `getCount`. |
+| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> | <span className="api-desc">Creates a `StaticBatchedRecombiner.AnchoredList` from `getCount`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcount" /><code>{"private readonly Func<int> getCount"}</code> | Returns the current vertex count to pad to. |
+| <Link id="m-getcount" /><code>{"private readonly Func<int> getCount"}</code> | <span className="api-desc">Returns the current vertex count to pad to.</span> |
 
 </details>
 
@@ -38,22 +38,22 @@ A vertex attribute list (such as a UV channel) used while recombining static mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-values" /><code>{"List<T> Values { get; }"}</code> | The collected values. |
+| <Link id="m-values" /><code>{"List<T> Values { get; }"}</code> | <span className="api-desc">The collected values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addrange" /><code>{"void AddRange(List<T> newValues)"}</code> | Pads to the current vertex count, then appends the new values. Does nothing for an empty list. |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties the list. |
-| <Link id="m-isneeded" /><code>{"bool IsNeeded()"}</code> | True if any values were added, padding the list to full length first. |
+| <Link id="m-addrange" /><code>{"void AddRange(List<T> newValues)"}</code> | <span className="api-desc">Pads to the current vertex count, then appends the new values. Does nothing for an empty list.</span> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Empties the list.</span> |
+| <Link id="m-isneeded" /><code>{"bool IsNeeded()"}</code> | <span className="api-desc">True if any values were added, padding the list to full length first.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensurelength" /><code>{"private void EnsureLength()"}</code> | Adds default values until the list is as long as the vertex count. |
+| <Link id="m-ensurelength" /><code>{"private void EnsureLength()"}</code> | <span className="api-desc">Adds default values until the list is as long as the vertex count.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ A vertex attribute list (such as a UV channel) used while recombining static mes
 
 Members of other types that take, return or hold a `AnchoredList&lt;T>`:
 
+<div className="api-used-in">
+
 [`StaticBatchedRecombiner.WorkingMesh.colors`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-colors), [`StaticBatchedRecombiner.WorkingMesh.normals`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-normals), [`StaticBatchedRecombiner.WorkingMesh.tangents`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-tangents), [`StaticBatchedRecombiner.WorkingMesh.uv`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-uv), [`StaticBatchedRecombiner.WorkingMesh.uv2`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-uv2), [`StaticBatchedRecombiner.WorkingMesh.uv3`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-uv3), [`StaticBatchedRecombiner.WorkingMesh.uv4`](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh#m-uv4).
+
+</div>

@@ -30,4 +30,8 @@ Which side a mod says it's for, given to `TavernModAttribute`. `None` means not 
 
 Members of other types that take, return or hold a `ModSide`:
 
+<div className="api-used-in">
+
 [`TavernMelonBaseExtension.GetModSide`](/mod/tavernlib-api/types/moddingapi/tavernmelonbaseextension#m-getmodside), [`TavernModAttribute.Side`](/mod/tavernlib-api/types/moddingapi/tavernmodattribute#m-side), [`TavernModAttribute.TavernModAttribute`](/mod/tavernlib-api/types/moddingapi/tavernmodattribute#m-ctor).
+
+</div>

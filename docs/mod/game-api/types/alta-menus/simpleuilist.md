@@ -21,16 +21,16 @@ A `UIList` that stacks its elements in a column with a fixed vertical gap. Clien
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleUIList()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SimpleUIList()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spacing" /><code>{"private float spacing"}</code> | Vertical offset between elements in local units (default -0.15, so each goes downward). |
+| <Link id="m-spacing" /><code>{"private float spacing"}</code> | <span className="api-desc">Vertical offset between elements in local units (default -0.15, so each goes downward).</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `UIList` that stacks its elements in a column with a fixed vertical gap. Clien
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addelement" /><code>{"override void AddElement("}<Link to="/mod/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> | Parents the element to the list and places it below the existing ones, `spacing` apart. |
+| <Link id="m-addelement" /><code>{"override void AddElement("}<Link to="/mod/game-api/types/alta-menus/listelement">{"ListElement"}</Link>{" element)"}</code> | <span className="api-desc">Parents the element to the list and places it below the existing ones, `spacing` apart.</span> |

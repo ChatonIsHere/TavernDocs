@@ -22,16 +22,16 @@ Heat point on a meltable item. Its conductivity comes from the melting model's p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> | Creates a `MeltingHeatPoint` with default values. |
+| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> | <span className="api-desc">Creates a `MeltingHeatPoint` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-meltingmodel" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel"}</code> | The melting model whose material this point uses. |
+| <Link id="m-meltingmodel" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel"}</code> | <span className="api-desc">The melting model whose material this point uses.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ Heat point on a meltable item. Its conductivity comes from the melting model's p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receiveconductivitymultiplier" /><code>{"override float ReceiveConductivityMultiplier { get; }"}</code> | Receive conductivity, scaled by the material's receive thermal conductivity and the global multiplier. |
-| <Link id="m-sourceconductivitymultiplier" /><code>{"override float SourceConductivityMultiplier { get; }"}</code> | Source conductivity, scaled by the material's source thermal conductivity and the global multiplier. |
-| <Link id="m-internalconductivitymultiplier" /><code>{"protected override float InternalConductivityMultiplier { get; }"}</code> | Internal conductivity, scaled by the material's internal thermal conductivity and the global multiplier. |
+| <Link id="m-receiveconductivitymultiplier" /><code>{"override float ReceiveConductivityMultiplier { get; }"}</code> | <span className="api-desc">Receive conductivity, scaled by the material's receive thermal conductivity and the global multiplier.</span> |
+| <Link id="m-sourceconductivitymultiplier" /><code>{"override float SourceConductivityMultiplier { get; }"}</code> | <span className="api-desc">Source conductivity, scaled by the material's source thermal conductivity and the global multiplier.</span> |
+| <Link id="m-internalconductivitymultiplier" /><code>{"protected override float InternalConductivityMultiplier { get; }"}</code> | <span className="api-desc">Internal conductivity, scaled by the material's internal thermal conductivity and the global multiplier.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Finds the parent `MeltingModel` if none is set. |
-| <Link id="m-showeffects" /><code>{"protected override void ShowEffects()"}</code> | Shows the material's fully heated effect above its particle temperature, otherwise removes it. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Finds the parent `MeltingModel` if none is set.</span> |
+| <Link id="m-showeffects" /><code>{"protected override void ShowEffects()"}</code> | <span className="api-desc">Shows the material's fully heated effect above its particle temperature, otherwise removes it.</span> |

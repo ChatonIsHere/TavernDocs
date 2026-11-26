@@ -21,19 +21,23 @@ Implement on a component of a `NetworkEntity` to have its state sent by the enti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumbits" /><code>{"int MaximumBits { get; }"}</code> | Most bits `Serialize` can write. Too small and the serializer logs an error for the entity. |
-| <Link id="m-prepareforwritetimer" /><code><Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" PrepareForWriteTimer { get; }"}</code> | Counts `PrepareForWrite` calls, for profiling. |
-| <Link id="m-serializetimer" /><code><Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" SerializeTimer { get; }"}</code> | Counts `Serialize` calls, for profiling. |
+| <Link id="m-maximumbits" /><code>{"int MaximumBits { get; }"}</code> | <span className="api-desc">Most bits `Serialize` can write. Too small and the serializer logs an error for the entity.</span> |
+| <Link id="m-prepareforwritetimer" /><code><Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" PrepareForWriteTimer { get; }"}</code> | <span className="api-desc">Counts `PrepareForWrite` calls, for profiling.</span> |
+| <Link id="m-serializetimer" /><code><Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" SerializeTimer { get; }"}</code> | <span className="api-desc">Counts `Serialize` calls, for profiling.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prepareforwrite" /><code>{"bool PrepareForWrite(bool isWriteFull)"}</code> | Called on the authoritative side before writing. Return true if anything changed and the state needs sending. |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | Reads or writes the component's state. `isWriteFull` means a full state rather than a change. |
+| <Link id="m-prepareforwrite" /><code>{"bool PrepareForWrite(bool isWriteFull)"}</code> | <span className="api-desc">Called on the authoritative side before writing. Return true if anything changed and the state needs sending.</span> |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | <span className="api-desc">Reads or writes the component's state. `isWriteFull` means a full state rather than a change.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `INetworkSerialized`:
 
+<div className="api-used-in">
+
 [`EntitySerializer.behaviours`](/mod/game-api/types/alta-networking/entityserializer#m-behaviours), [`EntitySerializer.EntitySerializer`](/mod/game-api/types/alta-networking/entityserializer#m-ctor), [`NetworkEntity.serializedBehaviours`](/mod/game-api/types/alta-networking/networkentity#m-serializedbehaviours).
+
+</div>

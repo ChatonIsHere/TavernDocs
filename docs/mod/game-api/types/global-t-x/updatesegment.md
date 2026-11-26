@@ -28,4 +28,8 @@ Which Unity loop an `UpdateModule` runs in: `Update`, `LateUpdate` or `FixedUpda
 
 Members of other types that take, return or hold a `UpdateSegment`:
 
+<div className="api-used-in">
+
 [`BudgetedUpdateModule.BudgetedUpdateModule`](/mod/game-api/types/global-a-b/budgetedupdatemodule#m-ctor), [`UnityUpdateManager.RegisterModule`](/mod/game-api/types/global-t-x/unityupdatemanager#m-registermodule), [`UnityUpdateManager.RegisterModuleToList`](/mod/game-api/types/global-t-x/unityupdatemanager#m-registermoduletolist), [`UnityUpdateManager.ModuleRegistration.Segment`](/mod/game-api/types/global-t-x/unityupdatemanager-moduleregistration#m-segment), [`UpdateModule.UpdateModule`](/mod/game-api/types/global-t-x/updatemodule#m-ctor).
+
+</div>

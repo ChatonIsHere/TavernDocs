@@ -22,4 +22,4 @@ Marks a method to show as a callable entry in the in-game bubble inspector, read
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BubbleInspectorMethodAttribute()"}</code> | Creates a `BubbleInspectorMethodAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"BubbleInspectorMethodAttribute()"}</code> | <span className="api-desc">Creates a `BubbleInspectorMethodAttribute` with default values.</span> |

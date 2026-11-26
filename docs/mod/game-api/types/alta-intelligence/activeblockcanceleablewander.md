@@ -21,10 +21,10 @@ A wander action that cancels itself when the agent's walker is blocked, or when 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> | Creates an `ActiveBlockCanceleableWander` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> | <span className="api-desc">Creates an `ActiveBlockCanceleableWander` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Runs the normal wander update, then cancels if the target is gone (when one is used) or the walker is blocked. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Runs the normal wander update, then cancels if the target is gone (when one is used) or the walker is blocked.</span> |

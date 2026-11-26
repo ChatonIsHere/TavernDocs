@@ -21,16 +21,16 @@ Character component that forwards updates and the local flag to the controller c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DummyCharacterController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DummyCharacterController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pointer" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> | Pointer to the character dummy whose controllers this drives. |
+| <Link id="m-pointer" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> | <span className="api-desc">Pointer to the character dummy whose controllers this drives.</span> |
 
 </details>
 
@@ -38,11 +38,11 @@ Character component that forwards updates and the local flag to the controller c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocal" /><code>{"override bool IsLocal { get; set; }"}</code> | Whether this character is the local player. Setting it also sets it on the dummy's controllers. |
+| <Link id="m-islocal" /><code>{"override bool IsLocal { get; set; }"}</code> | <span className="api-desc">Whether this character is the local player. Setting it also sets it on the dummy's controllers.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | While active, runs the dummy's controllers' fixed update, then its own. |
-| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> | While active, runs the dummy's controllers' update. It then calls the base fixed update, not the base update. |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | <span className="api-desc">While active, runs the dummy's controllers' fixed update, then its own.</span> |
+| <Link id="m-updatecharactercomponent" /><code>{"override void UpdateCharacterComponent()"}</code> | <span className="api-desc">While active, runs the dummy's controllers' update. It then calls the base fixed update, not the base update.</span> |

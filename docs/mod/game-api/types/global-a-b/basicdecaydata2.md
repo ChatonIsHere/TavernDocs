@@ -22,16 +22,16 @@ Old `BasicDecay` save data (version 2) without the disabled flag. Migrates to `B
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicDecayData2()"}</code> | Creates a `BasicDecayData2` with default values. |
+| <Link id="m-ctor" /><code>{"BasicDecayData2()"}</code> | <span className="api-desc">Creates a `BasicDecayData2` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timelineentry" /><code>{"TimeSpan timelineEntry"}</code> | Timer due time. |
+| <Link id="m-timelineentry" /><code>{"TimeSpan timelineEntry"}</code> | <span className="api-desc">Timer due time.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `BasicDecayData`, keeping the timer. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `BasicDecayData`, keeping the timer.</span> |

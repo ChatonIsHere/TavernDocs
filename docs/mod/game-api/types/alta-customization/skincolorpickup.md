@@ -21,18 +21,18 @@ Customization pickup for a skin colour. Shows the colour on an untextured copy o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkinColorPickup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SkinColorPickup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bumpmap" /><code>{"private static readonly int bumpMap"}</code> | Shader property ID for `_BumpMap`. |
-| <Link id="m-maintex" /><code>{"private static readonly int mainTex"}</code> | Shader property ID for `_MainTex`. |
-| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> | Renderer that shows the colour. |
+| <Link id="m-bumpmap" /><code>{"private static readonly int bumpMap"}</code> | <span className="api-desc">Shader property ID for `_BumpMap`.</span> |
+| <Link id="m-maintex" /><code>{"private static readonly int mainTex"}</code> | <span className="api-desc">Shader property ID for `_MainTex`.</span> |
+| <Link id="m-meshrenderer" /><code>{"private MeshRenderer meshRenderer"}</code> | <span className="api-desc">Renderer that shows the colour.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Customization pickup for a skin colour. Shows the colour on an untextured copy o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | Spawns the pickup, then gives it its own material with no textures, tinted with the item's skin colour. |
+| <Link id="m-spawn" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments, Transform parent)"}</code> | <span className="api-desc">Spawns the pickup, then gives it its own material with no textures, tinted with the item's skin colour.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Destroys the material made in `Spawn`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Destroys the material made in `Spawn`.</span> |
 
 </details>

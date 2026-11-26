@@ -22,4 +22,4 @@ Serializable Unity event that passes a `Lock`, for lock effects.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LockEffectUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LockEffectUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

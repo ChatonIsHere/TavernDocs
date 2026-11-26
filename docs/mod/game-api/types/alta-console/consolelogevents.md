@@ -19,13 +19,13 @@ Publishes server log lines as console events (`TraceLog` to `FatalLog`) so webso
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logevents" /><code>{"private static "}<Link to="/mod/game-api/types/alta-console/consoleevent-t">{"ConsoleEvent"}</Link>{"<"}<Link to="/mod/game-api/types/alta-console/consolelogevents-logevent">{"ConsoleLogEvents.LogEvent"}</Link>{">[] LogEvents"}</code> | One console event per log level, indexed by NLog level ordinal. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logevents" /><code>{"private static "}<Link to="/mod/game-api/types/alta-console/consoleevent-t">{"ConsoleEvent"}</Link>{"<"}<Link to="/mod/game-api/types/alta-console/consolelogevents-logevent">{"ConsoleLogEvents.LogEvent"}</Link>{">[] LogEvents"}</code> | <span className="api-desc">One console event per log level, indexed by NLog level ordinal.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -33,13 +33,13 @@ Publishes server log lines as console events (`TraceLog` to `FatalLog`) so webso
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> | Hooks `HandleLog` onto `ServerConsoleLogTarget.LogSentRaw`. Called from `ConsoleEventProcessor`'s static constructor. |
+| <Link id="m-initialize" /><code>{"static void Initialize()"}</code> | <span className="api-desc">Hooks `HandleLog` onto `ServerConsoleLogTarget.LogSentRaw`. Called from `ConsoleEventProcessor`'s static constructor.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlelog" /><code>{"private static void HandleLog(LogEventInfo logInfo)"}</code> | Raises the console event for the log line's level with its message, time and logger name. |
+| <Link id="m-handlelog" /><code>{"private static void HandleLog(LogEventInfo logInfo)"}</code> | <span className="api-desc">Raises the console event for the log line's level with its message, time and logger name.</span> |
 
 </details>

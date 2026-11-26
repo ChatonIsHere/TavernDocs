@@ -22,21 +22,21 @@ A simple in-process event bus for one event type `T`: listeners subscribe, and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EventBus()"}</code> | Creates an `EventBus` with default values. |
+| <Link id="m-ctor" /><code>{"EventBus()"}</code> | <span className="api-desc">Creates an `EventBus` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duplicatelistenerlogprefix" /><code>{"const string DuplicateListenerLogPrefix"}</code> | Text at the start of the error logged for a duplicate subscription. |
+| <Link id="m-duplicatelistenerlogprefix" /><code>{"const string DuplicateListenerLogPrefix"}</code> | <span className="api-desc">Text at the start of the error logged for a duplicate subscription.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-listeners" /><code>{"private readonly List<Action<T>> listeners"}</code> | The subscribed listeners. |
-| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-listeners" /><code>{"private readonly List<Action<T>> listeners"}</code> | <span className="api-desc">The subscribed listeners.</span> |
+| <Link id="m-logger" /><code>{"private readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -44,12 +44,16 @@ A simple in-process event bus for one event type `T`: listeners subscribe, and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> | Adds a listener. Adding the same delegate twice logs an error and is ignored. |
-| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> | Removes a listener if it is subscribed. |
-| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> | Calls every listener with the event object, in subscription order. |
+| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> | <span className="api-desc">Adds a listener. Adding the same delegate twice logs an error and is ignored.</span> |
+| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> | <span className="api-desc">Removes a listener if it is subscribed.</span> |
+| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> | <span className="api-desc">Calls every listener with the event object, in subscription order.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EventBus&lt;T>`:
 
+<div className="api-used-in">
+
 [`AnalyticsService.eventBus`](/mod/game-api/types/assembly-other/analyticsservice#m-eventbus).
+
+</div>

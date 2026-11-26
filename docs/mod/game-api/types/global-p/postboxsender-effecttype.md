@@ -29,4 +29,8 @@ Which effect a `PostboxSender` plays: coin, reject or send.
 
 Members of other types that take, return or hold a `EffectType`:
 
+<div className="api-used-in">
+
 [`PostboxSender.PlayEffect`](/mod/game-api/types/global-p/postboxsender#m-playeffect).
+
+</div>

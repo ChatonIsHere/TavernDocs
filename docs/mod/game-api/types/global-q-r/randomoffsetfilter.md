@@ -23,16 +23,16 @@ Forest fill filter asset that nudges each spawn point by a random offset inside 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomOffsetFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RandomOffsetFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancecurve" /><code>{"private AnimationCurve distanceCurve"}</code> | Maps a random 0 to 1 value to offset distance. |
+| <Link id="m-distancecurve" /><code>{"private AnimationCurve distanceCurve"}</code> | <span className="api-desc">Maps a random 0 to 1 value to offset distance.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill filter asset that nudges each spawn point by a random offset inside 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Moves the point by a random unit-circle offset scaled by the curve at a random value. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Moves the point by a random unit-circle offset scaled by the curve at a random value.</span> |

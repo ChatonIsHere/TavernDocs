@@ -22,20 +22,20 @@ Settings for a particle system whose particles deal damage when they hit, such a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleImpactor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ParticleImpactor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | Backing field for `Channel`. |
-| <Link id="m-damagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType"}</code> | Backing field for `DamageType`. |
-| <Link id="m-localparticlesystem" /><code>{"private ParticleSystem localParticleSystem"}</code> | Backing field for `ParticleSystem`. |
-| <Link id="m-particlecrippledamage" /><code>{"private float particleCrippleDamage"}</code> | Backing field for `ParticleCrippleDamage`. |
-| <Link id="m-particlehealthdamage" /><code>{"private float particleHealthDamage"}</code> | Backing field for `ParticleHealthDamage`. |
+| <Link id="m-channel" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | <span className="api-desc">Backing field for `Channel`.</span> |
+| <Link id="m-damagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType"}</code> | <span className="api-desc">Backing field for `DamageType`.</span> |
+| <Link id="m-localparticlesystem" /><code>{"private ParticleSystem localParticleSystem"}</code> | <span className="api-desc">Backing field for `ParticleSystem`.</span> |
+| <Link id="m-particlecrippledamage" /><code>{"private float particleCrippleDamage"}</code> | <span className="api-desc">Backing field for `ParticleCrippleDamage`.</span> |
+| <Link id="m-particlehealthdamage" /><code>{"private float particleHealthDamage"}</code> | <span className="api-desc">Backing field for `ParticleHealthDamage`.</span> |
 
 </details>
 
@@ -43,8 +43,8 @@ Settings for a particle system whose particles deal damage when they hit, such a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel-2" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" Channel { get; }"}</code> | The impact channel the particle hits use. |
-| <Link id="m-damagetype-2" /><code><Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" DamageType { get; }"}</code> | The impact type the particle hits count as. |
-| <Link id="m-particlecrippledamage-2" /><code>{"float ParticleCrippleDamage { get; }"}</code> | Cripple damage per particle hit. |
-| <Link id="m-particlehealthdamage-2" /><code>{"float ParticleHealthDamage { get; }"}</code> | Health damage per particle hit. |
-| <Link id="m-particlesystem" /><code>{"ParticleSystem ParticleSystem { get; }"}</code> | The particle system on this object. |
+| <Link id="m-channel-2" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">The impact channel the particle hits use.</span> |
+| <Link id="m-damagetype-2" /><code><Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" DamageType { get; }"}</code> | <span className="api-desc">The impact type the particle hits count as.</span> |
+| <Link id="m-particlecrippledamage-2" /><code>{"float ParticleCrippleDamage { get; }"}</code> | <span className="api-desc">Cripple damage per particle hit.</span> |
+| <Link id="m-particlehealthdamage-2" /><code>{"float ParticleHealthDamage { get; }"}</code> | <span className="api-desc">Health damage per particle hit.</span> |
+| <Link id="m-particlesystem" /><code>{"ParticleSystem ParticleSystem { get; }"}</code> | <span className="api-desc">The particle system on this object.</span> |

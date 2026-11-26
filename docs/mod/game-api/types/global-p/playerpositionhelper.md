@@ -21,16 +21,16 @@ A `PositionFromOriginHelper` that returns the closest point on a set of collider
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPositionHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerPositionHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> | Colliders to search. |
+| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> | <span className="api-desc">Colliders to search.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `PositionFromOriginHelper` that returns the closest point on a set of collider
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> | Returns the closest point to `origin` across all `colliders`, or zero if there are none. |
+| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> | <span className="api-desc">Returns the closest point to `origin` across all `colliders`, or zero if there are none.</span> |

@@ -22,16 +22,16 @@ Base for player character rig components (arm IK, elbows and so on) that an owni
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CharacterComponentController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected CharacterComponentController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | The `PlayerController` above this component, filled in from the parent. |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | <span className="api-desc">The `PlayerController` above this component, filled in from the parent.</span> |
 
 </details>
 
@@ -39,27 +39,31 @@ Base for player character rig components (arm IK, elbows and so on) that an owni
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocal" /><code>{"virtual bool IsLocal { get; set; }"}</code> | Whether this belongs to the local player. `PreComponentUpdate` only fires when true. |
-| <Link id="m-playercontroller-2" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> | The `PlayerController` found in the parents. |
-| <Link id="m-playersettings" /><code><Link to="/mod/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" PlayerSettings { get; }"}</code> | The player controller's settings, or null without a controller. |
+| <Link id="m-islocal" /><code>{"virtual bool IsLocal { get; set; }"}</code> | <span className="api-desc">Whether this belongs to the local player. `PreComponentUpdate` only fires when true.</span> |
+| <Link id="m-playercontroller-2" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; }"}</code> | <span className="api-desc">The `PlayerController` found in the parents.</span> |
+| <Link id="m-playersettings" /><code><Link to="/mod/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" PlayerSettings { get; }"}</code> | <span className="api-desc">The player controller's settings, or null without a controller.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postcomponentupdate" /><code>{"event "}<Link to="/mod/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostComponentUpdate"}</code> | Raised after each fixed update of the component. |
-| <Link id="m-precomponentupdate" /><code>{"event "}<Link to="/mod/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PreComponentUpdate"}</code> | Raised by subclasses before they update, local player only. |
+| <Link id="m-postcomponentupdate" /><code>{"event "}<Link to="/mod/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PostComponentUpdate"}</code> | <span className="api-desc">Raised after each fixed update of the component.</span> |
+| <Link id="m-precomponentupdate" /><code>{"event "}<Link to="/mod/game-api/types/global-t-x/updatehandler">{"UpdateHandler"}</Link>{" PreComponentUpdate"}</code> | <span className="api-desc">Raised by subclasses before they update, local player only.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"virtual void FixedUpdateCharacterComponent()"}</code> | Called each fixed step by the owner. The base version raises `PostComponentUpdate`. |
-| <Link id="m-updatecharactercomponent" /><code>{"virtual void UpdateCharacterComponent()"}</code> | Called each frame by the owner. Empty in the base. |
-| <Link id="m-onprecomponentupdate" /><code>{"protected void OnPreComponentUpdate()"}</code> | Raises `PreComponentUpdate`, but only for the local player. |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"virtual void FixedUpdateCharacterComponent()"}</code> | <span className="api-desc">Called each fixed step by the owner. The base version raises `PostComponentUpdate`.</span> |
+| <Link id="m-updatecharactercomponent" /><code>{"virtual void UpdateCharacterComponent()"}</code> | <span className="api-desc">Called each frame by the owner. Empty in the base.</span> |
+| <Link id="m-onprecomponentupdate" /><code>{"protected void OnPreComponentUpdate()"}</code> | <span className="api-desc">Raises `PreComponentUpdate`, but only for the local player.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CharacterComponentController`:
 
+<div className="api-used-in">
+
 [`CharacterComponentControllerCollection.Controllers`](/mod/game-api/types/alta-player/charactercomponentcontrollercollection#m-controllers), [`CharacterComponentControllerCollection.ownedControllers`](/mod/game-api/types/alta-player/charactercomponentcontrollercollection#m-ownedcontrollers), [`CharacterComponentControllerCollection.unownedControllers`](/mod/game-api/types/alta-player/charactercomponentcontrollercollection#m-unownedcontrollers), [`PlayerSpecialEffectsController.controllersToDisableOnDeath`](/mod/game-api/types/global-p/playerspecialeffectscontroller#m-controllerstodisableondeath).
+
+</div>

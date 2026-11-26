@@ -28,4 +28,8 @@ Result of giving a shop item: `Failed`, `AlreadyOwned` or `Success`.
 
 Members of other types that take, return or hold a `GiftResultType`:
 
+<div className="api-used-in">
+
 [`GiftResult.Result`](/mod/game-api/types/assembly-api-models/giftresult#m-result).
+
+</div>

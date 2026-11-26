@@ -23,21 +23,21 @@ An asset describing a mineable rock: its health, what it drops, how its hits loo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoulderDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BoulderDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyedeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedEffect"}</code> | Pooled effect a `Rock` plays (client only) when it breaks. |
-| <Link id="m-dropcount" /><code>{"private AnimationCurve dropCount"}</code> | Curve from a random 0 to 1 roll to how many resources drop. Defaults to 0 to 4. |
-| <Link id="m-health" /><code>{"private int health"}</code> | Hit points of the boulder (0 to 1024). |
-| <Link id="m-impactsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" impactSettings"}</code> | Impact detector settings for the boulder. |
-| <Link id="m-orematerial" /><code>{"private Material oreMaterial"}</code> | Material put on the rock's ore renderers. |
-| <Link id="m-resourcesdropchances" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] resourcesDropChances"}</code> | The resources the boulder can drop, with their chances. |
+| <Link id="m-destroyedeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyedEffect"}</code> | <span className="api-desc">Pooled effect a `Rock` plays (client only) when it breaks.</span> |
+| <Link id="m-dropcount" /><code>{"private AnimationCurve dropCount"}</code> | <span className="api-desc">Curve from a random 0 to 1 roll to how many resources drop. Defaults to 0 to 4.</span> |
+| <Link id="m-health" /><code>{"private int health"}</code> | <span className="api-desc">Hit points of the boulder (0 to 1024).</span> |
+| <Link id="m-impactsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" impactSettings"}</code> | <span className="api-desc">Impact detector settings for the boulder.</span> |
+| <Link id="m-orematerial" /><code>{"private Material oreMaterial"}</code> | <span className="api-desc">Material put on the rock's ore renderers.</span> |
+| <Link id="m-resourcesdropchances" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] resourcesDropChances"}</code> | <span className="api-desc">The resources the boulder can drop, with their chances.</span> |
 
 </details>
 
@@ -45,15 +45,19 @@ An asset describing a mineable rock: its health, what it drops, how its hits loo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyedeffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestroyedEffect { get; }"}</code> | Pooled effect spawned when the rock is destroyed. Not on headless servers. |
-| <Link id="m-dropcount-2" /><code>{"AnimationCurve DropCount { get; }"}</code> | Curve sampled at a random value to get how many resources drop. |
-| <Link id="m-health-2" /><code>{"int Health { get; }"}</code> | How much damage the rock takes before breaking. |
-| <Link id="m-impactsettings-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" ImpactSettings { get; }"}</code> | Impact effects and sounds for hits on the rock. |
-| <Link id="m-orematerial-2" /><code>{"Material OreMaterial { get; }"}</code> | Material put on the rock's ore renderers. |
-| <Link id="m-resourcesdropchances-2" /><code><Link to="/mod/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] ResourcesDropChances { get; }"}</code> | Which resources can drop and how likely each is. |
+| <Link id="m-destroyedeffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DestroyedEffect { get; }"}</code> | <span className="api-desc">Pooled effect spawned when the rock is destroyed. Not on headless servers.</span> |
+| <Link id="m-dropcount-2" /><code>{"AnimationCurve DropCount { get; }"}</code> | <span className="api-desc">Curve sampled at a random value to get how many resources drop.</span> |
+| <Link id="m-health-2" /><code>{"int Health { get; }"}</code> | <span className="api-desc">How much damage the rock takes before breaking.</span> |
+| <Link id="m-impactsettings-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" ImpactSettings { get; }"}</code> | <span className="api-desc">Impact effects and sounds for hits on the rock.</span> |
+| <Link id="m-orematerial-2" /><code>{"Material OreMaterial { get; }"}</code> | <span className="api-desc">Material put on the rock's ore renderers.</span> |
+| <Link id="m-resourcesdropchances-2" /><code><Link to="/mod/game-api/types/alta-items/resourcedropchance">{"ResourceDropChance"}</Link>{"[] ResourcesDropChances { get; }"}</code> | <span className="api-desc">Which resources can drop and how likely each is.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoulderDefinition`:
 
+<div className="api-used-in">
+
 [`Rock.Define`](/mod/game-api/types/global-q-r/rock#m-define), [`Rock.Definition`](/mod/game-api/types/global-q-r/rock#m-definition), [`RockCluster.definition`](/mod/game-api/types/global-q-r/rockcluster#m-definition), [`RockClusterSaveData.definition`](/mod/game-api/types/global-q-r/rockclustersavedata#m-definition).
+
+</div>

@@ -20,20 +20,20 @@ A named on/off setting that registers itself in a static list so console command
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> | Creates a `ToggleBool` from `name` and `defaultValue`. |
+| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> | <span className="api-desc">Creates a `ToggleBool` from `name` and `defaultValue`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-toggleablesettings" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{"> toggleableSettings"}</code> | Every registered setting by name, used by the settings console commands. |
+| <Link id="m-toggleablesettings" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/global-t-x/togglebool">{"ToggleBool"}</Link>{"> toggleableSettings"}</code> | <span className="api-desc">Every registered setting by name, used by the settings console commands.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"private bool value"}</code> | Backing field for `Value`. |
+| <Link id="m-value" /><code>{"private bool value"}</code> | <span className="api-desc">Backing field for `Value`.</span> |
 
 </details>
 
@@ -41,24 +41,28 @@ A named on/off setting that registers itself in a static list so console command
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The name the setting is registered under. |
-| <Link id="m-value-2" /><code>{"bool Value { get; set; }"}</code> | The current state. Setting a new value logs it and raises `Toggled`. |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | <span className="api-desc">The name the setting is registered under.</span> |
+| <Link id="m-value-2" /><code>{"bool Value { get; set; }"}</code> | <span className="api-desc">The current state. Setting a new value logs it and raises `Toggled`.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-toggled" /><code>{"event Action<bool> Toggled"}</code> | Raised with the new value when `Value` changes. |
+| <Link id="m-toggled" /><code>{"event Action<bool> Toggled"}</code> | <span className="api-desc">Raised with the new value when `Value` changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | Removes this setting from `toggleableSettings`. |
-| <Link id="m-toggle" /><code>{"void Toggle()"}</code> | Flips `Value`. |
+| <Link id="m-destroy" /><code>{"void Destroy()"}</code> | <span className="api-desc">Removes this setting from `toggleableSettings`.</span> |
+| <Link id="m-toggle" /><code>{"void Toggle()"}</code> | <span className="api-desc">Flips `Value`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ToggleBool`:
 
+<div className="api-used-in">
+
 [`PickupTypeSettings.DamageMessage`](/mod/game-api/types/global-p/pickuptypesettings#m-damagemessage), [`PickupTypeSettings.HasPopup`](/mod/game-api/types/global-p/pickuptypesettings#m-haspopup), [`PlayerHealth.ArePlayersAvoidingDamage`](/mod/game-api/types/global-p/playerhealth#m-areplayersavoidingdamage), [`PlayerProgressionManager.experiencePopup`](/mod/game-api/types/global-p/playerprogressionmanager#m-experiencepopup).
+
+</div>

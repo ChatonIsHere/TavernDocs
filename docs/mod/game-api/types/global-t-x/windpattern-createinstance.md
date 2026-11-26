@@ -22,4 +22,4 @@ Editor menu entry that creates a `WindPattern` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CreateInstance()"}</code> | Creates a `WindPattern.CreateInstance` with default values. |
+| <Link id="m-ctor" /><code>{"CreateInstance()"}</code> | <span className="api-desc">Creates a `WindPattern.CreateInstance` with default values.</span> |

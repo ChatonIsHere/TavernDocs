@@ -21,16 +21,16 @@ A temporary `BodyControllerSettings` override on a `BodyController`, kept while 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/mod/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> | Creates a `BodyController.BodyControllerSettingsOverride` from `settings` and `relevantCheck`. |
+| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/mod/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> | <span className="api-desc">Creates a `BodyController.BodyControllerSettingsOverride` from `settings` and `relevantCheck`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-relevantcheck" /><code>{"private Func<bool> relevantCheck"}</code> | The function that says whether the override still applies. |
+| <Link id="m-relevantcheck" /><code>{"private Func<bool> relevantCheck"}</code> | <span className="api-desc">The function that says whether the override still applies.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ A temporary `BodyControllerSettings` override on a `BodyController`, kept while 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrelevant" /><code>{"bool IsRelevant { get; }"}</code> | Runs the check. Once it returns false, `BodyController.Settings` drops this override. |
-| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; private set; }"}</code> | The settings to use while the override is relevant. |
+| <Link id="m-isrelevant" /><code>{"bool IsRelevant { get; }"}</code> | <span className="api-desc">Runs the check. Once it returns false, `BodyController.Settings` drops this override.</span> |
+| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" Settings { get; private set; }"}</code> | <span className="api-desc">The settings to use while the override is relevant.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BodyControllerSettingsOverride`:
 
+<div className="api-used-in">
+
 [`BodyController.activeSettings`](/mod/game-api/types/alta-player/bodycontroller#m-activesettings).
+
+</div>

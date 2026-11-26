@@ -23,17 +23,17 @@ Float setting access that only takes values from a fixed list, each with a displ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnumFloatGameSettingsAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EnumFloatGameSettingsAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-possiblevalues" /><code>{"private float[] possibleValues"}</code> | Backing field for `PossibleValues`. |
-| <Link id="m-possiblevaluesnames" /><code>{"private string[] possibleValuesNames"}</code> | Backing field for `PossibleValuesNames`. |
+| <Link id="m-possiblevalues" /><code>{"private float[] possibleValues"}</code> | <span className="api-desc">Backing field for `PossibleValues`.</span> |
+| <Link id="m-possiblevaluesnames" /><code>{"private string[] possibleValuesNames"}</code> | <span className="api-desc">Backing field for `PossibleValuesNames`.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Float setting access that only takes values from a fixed list, each with a displ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-possiblevalues-2" /><code>{"float[] PossibleValues { get; }"}</code> | The float values the setting can take. |
-| <Link id="m-possiblevaluesnames-2" /><code>{"string[] PossibleValuesNames { get; }"}</code> | Display names matching `PossibleValues`. |
+| <Link id="m-possiblevalues-2" /><code>{"float[] PossibleValues { get; }"}</code> | <span className="api-desc">The float values the setting can take.</span> |
+| <Link id="m-possiblevaluesnames-2" /><code>{"string[] PossibleValuesNames { get; }"}</code> | <span className="api-desc">Display names matching `PossibleValues`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EnumFloatGameSettingsAccess`:
 
+<div className="api-used-in">
+
 [`StandardFloatAsEnum.enumSettings`](/mod/game-api/types/alta-menus/standardfloatasenum#m-enumsettings).
+
+</div>

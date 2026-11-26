@@ -22,26 +22,30 @@ A queued call in `DeferredSynchronizeInvoke` and its result.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> | Creates a `DeferredSynchronizeInvoke.UnityAsyncResult` with default values. |
+| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> | <span className="api-desc">Creates a `DeferredSynchronizeInvoke.UnityAsyncResult` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-args" /><code>{"object[] args"}</code> | Arguments for the call. |
-| <Link id="m-method" /><code>{"Delegate method"}</code> | The delegate to call. |
+| <Link id="m-args" /><code>{"object[] args"}</code> | <span className="api-desc">Arguments for the call.</span> |
+| <Link id="m-method" /><code>{"Delegate method"}</code> | <span className="api-desc">The delegate to call.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-asyncstate" /><code>{"object AsyncState { get; set; }"}</code> | The call's return value once it has run. |
-| <Link id="m-asyncwaithandle" /><code>{"WaitHandle AsyncWaitHandle { get; internal set; }"}</code> | Wait handle for the call. Note: `ProcessQueue` never sets it, so `EndInvoke` on a pending call waits forever. |
-| <Link id="m-completedsynchronously" /><code>{"bool CompletedSynchronously { get; }"}</code> | Same as `IsCompleted`. |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> | True once `ProcessQueue` has run the call. |
+| <Link id="m-asyncstate" /><code>{"object AsyncState { get; set; }"}</code> | <span className="api-desc">The call's return value once it has run.</span> |
+| <Link id="m-asyncwaithandle" /><code>{"WaitHandle AsyncWaitHandle { get; internal set; }"}</code> | <span className="api-desc">Wait handle for the call. Note: `ProcessQueue` never sets it, so `EndInvoke` on a pending call waits forever.</span> |
+| <Link id="m-completedsynchronously" /><code>{"bool CompletedSynchronously { get; }"}</code> | <span className="api-desc">Same as `IsCompleted`.</span> |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> | <span className="api-desc">True once `ProcessQueue` has run the call.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UnityAsyncResult`:
 
+<div className="api-used-in">
+
 [`DeferredSynchronizeInvoke.fifoToExecute`](/mod/game-api/types/global-c-d/deferredsynchronizeinvoke#m-fifotoexecute).
+
+</div>

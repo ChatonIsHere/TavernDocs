@@ -22,19 +22,23 @@ Amplify Impostors bake preset asset: the shaders used to bake and draw an impost
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alphaindex" /><code>{"int AlphaIndex"}</code> | Index of the output texture that holds alpha. |
-| <Link id="m-bakeshader" /><code>{"Shader BakeShader"}</code> | Shader used when baking the impostor textures. |
-| <Link id="m-output" /><code>{"List<"}<Link to="/mod/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> Output"}</code> | The textures the bake produces. |
-| <Link id="m-runtimeshader" /><code>{"Shader RuntimeShader"}</code> | Shader used to draw the impostor in game. |
+| <Link id="m-alphaindex" /><code>{"int AlphaIndex"}</code> | <span className="api-desc">Index of the output texture that holds alpha.</span> |
+| <Link id="m-bakeshader" /><code>{"Shader BakeShader"}</code> | <span className="api-desc">Shader used when baking the impostor textures.</span> |
+| <Link id="m-output" /><code>{"List<"}<Link to="/mod/game-api/types/global-t-x/textureoutput">{"TextureOutput"}</Link>{"> Output"}</code> | <span className="api-desc">The textures the bake produces.</span> |
+| <Link id="m-runtimeshader" /><code>{"Shader RuntimeShader"}</code> | <span className="api-desc">Shader used to draw the impostor in game.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AmplifyImpostorBakePreset`:
 
+<div className="api-used-in">
+
 [`AmplifyImpostorAsset.Preset`](/mod/game-api/types/global-a-b/amplifyimpostorasset#m-preset).
+
+</div>

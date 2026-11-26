@@ -21,12 +21,12 @@ JSON converter that stores a `Region` as its short name.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> | Creates a `RegionEndpointJsonConverter` with default values. |
+| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> | <span className="api-desc">Creates a `RegionEndpointJsonConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | True only for `Region`. |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | Turns a short name back into a `Region` with `Region.Parse`. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | Writes the region's `ShortName`. |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | <span className="api-desc">True only for `Region`.</span> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Turns a short name back into a `Region` with `Region.Parse`.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes the region's `ShortName`.</span> |

@@ -21,10 +21,14 @@ Picks spawn points for a population folder. The population manager asks it for a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | Returns a point with its surface normal, or null if no point was found. |
+| <Link id="m-getpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | <span className="api-desc">Returns a point with its surface normal, or null if no point was found.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPointNormalEvaluator`:
 
+<div className="api-used-in">
+
 [`ChunkPositionSurface.surfaceDefinition`](/mod/game-api/types/alta-world/chunkpositionsurface#m-surfacedefinition), [`BasicPopulationFolder.PointEvaluator`](/mod/game-api/types/alta-world-generation/basicpopulationfolder#m-pointevaluator), [`IPopulationFolder.PointEvaluator`](/mod/game-api/types/alta-world-generation/ipopulationfolder#m-pointevaluator), [`PopulationPath.PointEvaluator`](/mod/game-api/types/global-p/populationpath#m-pointevaluator).
+
+</div>

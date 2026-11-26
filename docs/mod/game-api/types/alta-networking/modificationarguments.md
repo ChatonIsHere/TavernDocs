@@ -20,17 +20,17 @@ Message payload `ModifiableStaticManager` sends to chunks when a static scene ob
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> | Creates a `ModificationArguments` from `objectHash` and `isModified`. |
+| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> | <span className="api-desc">Creates a `ModificationArguments` from `objectHash` and `isModified`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismodified" /><code>{"private bool isModified"}</code> | Backing field for `IsModified`. |
-| <Link id="m-objecthash" /><code>{"private uint objectHash"}</code> | Backing field for `ObjectHash`. |
+| <Link id="m-ismodified" /><code>{"private bool isModified"}</code> | <span className="api-desc">Backing field for `IsModified`.</span> |
+| <Link id="m-objecthash" /><code>{"private uint objectHash"}</code> | <span className="api-desc">Backing field for `ObjectHash`.</span> |
 
 </details>
 
@@ -38,17 +38,21 @@ Message payload `ModifiableStaticManager` sends to chunks when a static scene ob
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismodified-2" /><code>{"bool IsModified { get; }"}</code> | Whether the object is now modified. |
-| <Link id="m-objecthash-2" /><code>{"uint ObjectHash { get; }"}</code> | Hash that identifies the static object. |
+| <Link id="m-ismodified-2" /><code>{"bool IsModified { get; }"}</code> | <span className="api-desc">Whether the object is now modified.</span> |
+| <Link id="m-objecthash-2" /><code>{"uint ObjectHash { get; }"}</code> | <span className="api-desc">Hash that identifies the static object.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the hash and flag on the stream. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes the hash and flag on the stream.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ModificationArguments`:
 
+<div className="api-used-in">
+
 [`ModifiableStaticManager.syncModification`](/mod/game-api/types/alta-networking/modifiablestaticmanager#m-syncmodification), [`ModifiableStaticManager.SyncModification`](/mod/game-api/types/alta-networking/modifiablestaticmanager#m-syncmodification-2).
+
+</div>

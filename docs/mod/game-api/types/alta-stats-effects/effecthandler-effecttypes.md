@@ -30,4 +30,8 @@ Flags for the effects an `EffectHandler` can be immune to: `Poison`, `Teleport` 
 
 Members of other types that take, return or hold a `EffectTypes`:
 
+<div className="api-used-in">
+
 [`EffectHandler.immuneTo`](/mod/game-api/types/alta-stats-effects/effecthandler#m-immuneto).
+
+</div>

@@ -22,16 +22,16 @@ Server web module for the REST console: takes a POST with a bearer console token
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> | Creates an `AltaConsoleModule` from `path`. |
+| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> | <span className="api-desc">Creates an `AltaConsoleModule` from `path`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Server web module for the REST console: takes a POST with a bearer console token
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> | True: no later module handles the request. |
+| <Link id="m-isfinalhandler" /><code>{"override bool IsFinalHandler { get; }"}</code> | <span className="api-desc">True: no later module handles the request.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> | Rejects non POST requests and invalid tokens, then runs the command as the token's user and returns the result as JSON. |
+| <Link id="m-onrequestasync" /><code>{"protected override async Task OnRequestAsync(IHttpContext context)"}</code> | <span className="api-desc">Rejects non POST requests and invalid tokens, then runs the command as the token's user and returns the result as JSON.</span> |

@@ -21,10 +21,10 @@ Non-generic base of `Binder<TContract>`, the fluent binding helper used with `bu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Binder()"}</code> | Creates a `Binder` with default values. |
+| <Link id="m-ctor" /><code>{"protected Binder()"}</code> | <span className="api-desc">Creates a `Binder` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validentrypoints" /><code>{"protected static readonly HashSet<Type> ValidEntryPoints"}</code> | VContainer entry point interfaces (initializable, startable, tickable and so on) a bound type is registered for if it implements them. |
+| <Link id="m-validentrypoints" /><code>{"protected static readonly HashSet<Type> ValidEntryPoints"}</code> | <span className="api-desc">VContainer entry point interfaces (initializable, startable, tickable and so on) a bound type is registered for if it implements them.</span> |

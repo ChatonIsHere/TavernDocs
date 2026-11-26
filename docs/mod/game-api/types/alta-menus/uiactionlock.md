@@ -19,12 +19,12 @@ A simple global lock so only one UI action runs at a time. An object implementin
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlocker" /><code>{"private static "}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" currentLocker"}</code> | The object holding the lock now, or null. |
+| <Link id="m-currentlocker" /><code>{"private static "}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" currentLocker"}</code> | <span className="api-desc">The object holding the lock now, or null.</span> |
 
 </details>
 
@@ -32,6 +32,6 @@ A simple global lock so only one UI action runs at a time. An object implementin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkislocked" /><code>{"static bool CheckIsLocked("}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" locker, bool isLocking = true)"}</code> | Returns true if something holds the lock. The overload with a locker takes the lock for it when free (unless `isLocking` is false). |
-| <Link id="m-checkislocked-2" /><code>{"static bool CheckIsLocked()"}</code> | Returns true if something holds the lock. The overload with a locker takes the lock for it when free (unless `isLocking` is false). |
-| <Link id="m-unlock" /><code>{"static void Unlock("}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" locker)"}</code> | Releases the lock, but only if the given locker holds it. |
+| <Link id="m-checkislocked" /><code>{"static bool CheckIsLocked("}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" locker, bool isLocking = true)"}</code> | <span className="api-desc">Returns true if something holds the lock. The overload with a locker takes the lock for it when free (unless `isLocking` is false).</span> |
+| <Link id="m-checkislocked-2" /><code>{"static bool CheckIsLocked()"}</code> | <span className="api-desc">Returns true if something holds the lock. The overload with a locker takes the lock for it when free (unless `isLocking` is false).</span> |
+| <Link id="m-unlock" /><code>{"static void Unlock("}<Link to="/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction">{"UIActionLock.ILockUIAction"}</Link>{" locker)"}</code> | <span className="api-desc">Releases the lock, but only if the given locker holds it.</span> |

@@ -20,16 +20,16 @@ Shared Json.NET settings for the Alta API: its converters, ISO UTC dates and nul
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allconverters" /><code>{"static JsonConverter[] AllConverters"}</code> | The converters used: IP address, region, JWT token and enums as strings. |
+| <Link id="m-allconverters" /><code>{"static JsonConverter[] AllConverters"}</code> | <span className="api-desc">The converters used: IP address, region, JWT token and enums as strings.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"static JsonSerializerSettings Settings { get; }"}</code> | Serializer settings with `AllConverters`, ISO UTC dates and null values ignored. |
+| <Link id="m-settings" /><code>{"static JsonSerializerSettings Settings { get; }"}</code> | <span className="api-desc">Serializer settings with `AllConverters`, ISO UTC dates and null values ignored.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupjsonserializersettings" /><code>{"static void SetupJsonSerializerSettings()"}</code> | Makes `Settings` Json.NET's global default. The API clients call it on start, so it affects every `JsonConvert` call in the process. |
+| <Link id="m-setupjsonserializersettings" /><code>{"static void SetupJsonSerializerSettings()"}</code> | <span className="api-desc">Makes `Settings` Json.NET's global default. The API clients call it on start, so it affects every `JsonConvert` call in the process.</span> |

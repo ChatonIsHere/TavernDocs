@@ -21,16 +21,20 @@ One option in the fire puzzle's saved config.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData.Option` with default values. |
+| <Link id="m-ctor" /><code>{"Option()"}</code> | <span className="api-desc">Creates a `PlaceItemNoDockFirePuzzleLogicSaveData.Option` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-output" /><code>{"int output"}</code> | The value this option outputs. |
+| <Link id="m-output" /><code>{"int output"}</code> | <span className="api-desc">The value this option outputs.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Option`:
 
+<div className="api-used-in">
+
 [`PlaceItemNoDockFirePuzzleLogicSaveData.options`](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata#m-options).
+
+</div>

@@ -21,17 +21,17 @@ Micro tutorial step that completes when the player crafts an item using one of t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemCraftedStep()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ItemCraftedStep()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-craftingparts" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{"> craftingParts"}</code> | Parts that count; crafting anything that uses one completes the step. |
-| <Link id="m-requiredeventtypes" /><code>{"private static readonly Type[] requiredEventTypes"}</code> | Backing array for `RequiredPlayerEventTypes`. |
+| <Link id="m-craftingparts" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{"> craftingParts"}</code> | <span className="api-desc">Parts that count; crafting anything that uses one completes the step.</span> |
+| <Link id="m-requiredeventtypes" /><code>{"private static readonly Type[] requiredEventTypes"}</code> | <span className="api-desc">Backing array for `RequiredPlayerEventTypes`.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Micro tutorial step that completes when the player crafts an item using one of t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requiredplayereventtypes" /><code>{"override IEnumerable<Type> RequiredPlayerEventTypes { get; }"}</code> | Only `ItemCraftedEvent`. |
+| <Link id="m-requiredplayereventtypes" /><code>{"override IEnumerable<Type> RequiredPlayerEventTypes { get; }"}</code> | <span className="api-desc">Only `ItemCraftedEvent`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscompletedbyevent" /><code>{"override bool IsCompletedByEvent("}<Link to="/mod/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" eventInfo)"}</code> | True for an `ItemCraftedEvent` with more than one part where any part hash matches a listed part. |
-| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> | Errors if no crafting parts are set. |
+| <Link id="m-iscompletedbyevent" /><code>{"override bool IsCompletedByEvent("}<Link to="/mod/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" eventInfo)"}</code> | <span className="api-desc">True for an `ItemCraftedEvent` with more than one part where any part hash matches a listed part.</span> |
+| <Link id="m-isconfigurationvalid" /><code>{"override IResult IsConfigurationValid()"}</code> | <span className="api-desc">Errors if no crafting parts are set.</span> |

@@ -23,4 +23,4 @@ Hashed asset for a logic channel, kept under `Logic/Channels`. Nothing else in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicChannel()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LogicChannel()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

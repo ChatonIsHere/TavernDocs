@@ -20,10 +20,10 @@ The API's answer to a `ServerSaveFileRequest`: download links for the files.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> | Creates a `ServerSaveFileResponse` with default values. |
+| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> | <span className="api-desc">Creates a `ServerSaveFileResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-urls" /><code>{"IEnumerable<string> Urls { get; set; }"}</code> | One URL per requested save file. |
+| <Link id="m-urls" /><code>{"IEnumerable<string> Urls { get; set; }"}</code> | <span className="api-desc">One URL per requested save file.</span> |

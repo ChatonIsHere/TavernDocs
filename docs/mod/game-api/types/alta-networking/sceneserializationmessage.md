@@ -20,10 +20,10 @@ Receives scene serialization data and passes it to the current network scene's s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneSerializationMessage()"}</code> | Creates a `SceneSerializationMessage` with default values. |
+| <Link id="m-ctor" /><code>{"SceneSerializationMessage()"}</code> | <span className="api-desc">Creates a `SceneSerializationMessage` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Hands the stream to the scene serializer's `SerializeRead`; read only. |
+| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Hands the stream to the scene serializer's `SerializeRead`; read only.</span> |

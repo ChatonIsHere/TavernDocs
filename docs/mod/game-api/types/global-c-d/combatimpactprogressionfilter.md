@@ -23,10 +23,10 @@ Progression filter that gives combat experience for hitting a combatant: melee i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CombatImpactProgressionFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CombatImpactProgressionFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyimpact" /><code>{"override void ApplyImpact("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | On a tool hit on a combatant, gives Melee XP when held or Ranged XP when not. The path defaults to Melee. |
+| <Link id="m-applyimpact" /><code>{"override void ApplyImpact("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, bool isGettingExperience, out "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path)"}</code> | <span className="api-desc">On a tool hit on a combatant, gives Melee XP when held or Ranged XP when not. The path defaults to Melee.</span> |

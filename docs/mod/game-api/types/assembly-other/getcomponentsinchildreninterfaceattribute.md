@@ -21,10 +21,10 @@ Like `GetComponentsInterfaceAttribute`, but collects from this object and its ch
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentsInChildrenInterfaceAttribute(Type type)"}</code> | Creates a `GetComponentsInChildrenInterfaceAttribute` from `type`. |
+| <Link id="m-ctor" /><code>{"GetComponentsInChildrenInterfaceAttribute(Type type)"}</code> | <span className="api-desc">Creates a `GetComponentsInChildrenInterfaceAttribute` from `type`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponents" /><code>{"override Component[] GetComponents(Transform transform, Type type)"}</code> | All components in this object and its children that implement the type. Ignores `IncludeInActive`. |
+| <Link id="m-getcomponents" /><code>{"override Component[] GetComponents(Transform transform, Type type)"}</code> | <span className="api-desc">All components in this object and its children that implement the type. Ignores `IncludeInActive`.</span> |

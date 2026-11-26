@@ -22,16 +22,16 @@ Asset holding Windows and Android versions of a texture. Nothing reads its field
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformTexture()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlatformTexture()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> | Texture for Android. |
-| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> | Texture for Windows. |
+| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> | <span className="api-desc">Texture for Android.</span> |
+| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> | <span className="api-desc">Texture for Windows.</span> |
 
 </details>

@@ -21,4 +21,4 @@ Empty marker MonoBehaviour with no code in this build. Probably tags objects for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkBakingMarker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LandmarkBakingMarker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

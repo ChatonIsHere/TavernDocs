@@ -21,17 +21,17 @@ Gymnasium-only component that forces `AdditionalStaticContent` to spawn in its c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumStaticContentSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GymnasiumStaticContentSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunks" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] chunks"}</code> | Chunks whose static content should be forced to spawn. |
-| <Link id="m-gymnasiumscenename" /><code>{"private const string GymnasiumSceneName"}</code> | The scene name `Gymnasium`. |
+| <Link id="m-chunks" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] chunks"}</code> | <span className="api-desc">Chunks whose static content should be forced to spawn.</span> |
+| <Link id="m-gymnasiumscenename" /><code>{"private const string GymnasiumSceneName"}</code> | <span className="api-desc">The scene name `Gymnasium`.</span> |
 
 </details>
 
@@ -39,22 +39,22 @@ Gymnasium-only component that forces `AdditionalStaticContent` to spawn in its c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> | Bake order; always 0. |
+| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> | <span className="api-desc">Bake order; always 0.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> | Does nothing. |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> | Build step: destroys this component unless its scene name contains `Gymnasium`. |
+| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | <span className="api-desc">Build step: destroys this component unless its scene name contains `Gymnasium`.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcespawnstaticcontentinchunk" /><code>{"private void ForceSpawnStaticContentInChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Instantiates the content of every `AdditionalStaticContent` on the entities in the loaded chunk. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks from the chunks' `FullyLoaded` events. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks `ForceSpawnStaticContentInChunk` to each listed chunk's `FullyLoaded` event. |
+| <Link id="m-forcespawnstaticcontentinchunk" /><code>{"private void ForceSpawnStaticContentInChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Instantiates the content of every `AdditionalStaticContent` on the entities in the loaded chunk.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Unhooks from the chunks' `FullyLoaded` events.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Hooks `ForceSpawnStaticContentInChunk` to each listed chunk's `FullyLoaded` event.</span> |
 
 </details>

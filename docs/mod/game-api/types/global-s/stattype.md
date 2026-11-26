@@ -27,4 +27,8 @@ Whether a Steam stat is stored as an `Int` or a `Float`; checked by `SteamStats`
 
 Members of other types that take, return or hold a `StatType`:
 
+<div className="api-used-in">
+
 [`GameAction.statType`](/mod/game-api/types/global-e-h/gameaction#m-stattype), [`GameAction.StatType`](/mod/game-api/types/global-e-h/gameaction#m-stattype-2).
+
+</div>

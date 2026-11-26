@@ -23,17 +23,17 @@ Skill input asset that is active when a hand holding the item is close to the pl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandToHeartInputStructure()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HandToHeartInputStructure()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-frombodypivottoheart" /><code>{"private Vector3 fromBodyPivotToHeart"}</code> | Offset from the body target to the heart, in the body's rotation. |
-| <Link id="m-maxdistancetoheartsquared" /><code>{"private float maxDistanceToHeartSquared"}</code> | Squared distance from the heart that counts as in position. |
+| <Link id="m-frombodypivottoheart" /><code>{"private Vector3 fromBodyPivotToHeart"}</code> | <span className="api-desc">Offset from the body target to the heart, in the body's rotation.</span> |
+| <Link id="m-maxdistancetoheartsquared" /><code>{"private float maxDistanceToHeartSquared"}</code> | <span className="api-desc">Squared distance from the heart that counts as in position.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Skill input asset that is active when a hand holding the item is close to the pl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | True when the nearest holding hand is within range of the heart point on the body target. |
+| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | <span className="api-desc">True when the nearest holding hand is within range of the heart point on the body target.</span> |

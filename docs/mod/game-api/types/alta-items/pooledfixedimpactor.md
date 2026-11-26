@@ -21,17 +21,17 @@ A `FixedImpactor` on a pooled object. It recharges each time the object is taken
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledFixedImpactor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PooledFixedImpactor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isoverridingreset" /><code>{"private bool isOverridingReset"}</code> | When on, `Reset` does nothing. |
-| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> | The pooled object whose requests recharge this impactor. |
+| <Link id="m-isoverridingreset" /><code>{"private bool isOverridingReset"}</code> | <span className="api-desc">When on, `Reset` does nothing.</span> |
+| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> | <span className="api-desc">The pooled object whose requests recharge this impactor.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A `FixedImpactor` on a pooled object. It recharges each time the object is taken
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reset" /><code>{"override void Reset()"}</code> | Resets as normal unless `isOverridingReset` is on. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | If `isChargedOnStart`, charges the impactor each time the pooled object is requested. |
+| <Link id="m-reset" /><code>{"override void Reset()"}</code> | <span className="api-desc">Resets as normal unless `isOverridingReset` is on.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">If `isChargedOnStart`, charges the impactor each time the pooled object is requested.</span> |

@@ -21,4 +21,4 @@ Empty marker added to content that `AdditionalStaticContent` spawns as an editor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AdditionalStaticContentMarker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AdditionalStaticContentMarker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

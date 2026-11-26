@@ -19,12 +19,12 @@ Paged list of a joined group's members from the Alta web API.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupMembers("}<Link to="/mod/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" groupManager, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupMembers` from `groupManager` and `api`. |
+| <Link id="m-ctor" /><code>{"internal GroupMembers("}<Link to="/mod/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{" groupManager, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `GroupMembers` from `groupManager` and `api`.</span> |
 
 </details>
 
@@ -32,4 +32,8 @@ Paged list of a joined group's members from the Alta web API.
 
 Members of other types that take, return or hold a `GroupMembers`:
 
+<div className="api-used-in">
+
 [`GroupInfoManager.Members`](/mod/game-api/types/assembly-api-client/groupinfomanager#m-members).
+
+</div>

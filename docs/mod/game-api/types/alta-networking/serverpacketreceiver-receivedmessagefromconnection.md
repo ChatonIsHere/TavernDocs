@@ -21,11 +21,15 @@ Server: one buffered reliable packet and the connection it came from, held until
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> | Transport id of the sending connection. |
-| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> | The packet bytes, from `MessageReceivePool`. |
+| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> | <span className="api-desc">Transport id of the sending connection.</span> |
+| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> | <span className="api-desc">The packet bytes, from `MessageReceivePool`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ReceivedMessageFromConnection`:
 
+<div className="api-used-in">
+
 [`ServerPacketReceiver.reliableBuffers`](/mod/game-api/types/alta-networking/serverpacketreceiver#m-reliablebuffers).
+
+</div>

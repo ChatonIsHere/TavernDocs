@@ -22,16 +22,16 @@ Writes a `uint` using a fixed number of bits.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BitSerialization(int bits)"}</code> | Creates a `TypeSerializationHelper.BitSerialization` from `bits`. |
+| <Link id="m-ctor" /><code>{"BitSerialization(int bits)"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.BitSerialization` from `bits`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bits" /><code>{"private int bits"}</code> | How many bits are written. |
+| <Link id="m-bits" /><code>{"private int bits"}</code> | <span className="api-desc">How many bits are written.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Writes a `uint` using a fixed number of bits.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref uint value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the value with `SerializeBits`. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref uint value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Reads or writes the value with `SerializeBits`.</span> |

@@ -20,16 +20,16 @@ Inspector list of allowed impact types. An empty list allows everything.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> | Creates an `ImpactTypeFilter` with default values. |
+| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> | <span className="api-desc">Creates an `ImpactTypeFilter` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-types" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> | The allowed impact types. |
+| <Link id="m-types" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> | <span className="api-desc">The allowed impact types.</span> |
 
 </details>
 
@@ -37,11 +37,15 @@ Inspector list of allowed impact types. An empty list allows everything.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> | Whether the impact type is in the list (always true if the list is empty). |
-| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Whether any of the tool's impactors has an allowed impact type (always true if the list is empty). |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> | <span className="api-desc">Whether the impact type is in the list (always true if the list is empty).</span> |
+| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">Whether any of the tool's impactors has an allowed impact type (always true if the list is empty).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactTypeFilter`:
 
+<div className="api-used-in">
+
 [`ImpactHitTrigger.impactTypeFilter`](/mod/game-api/types/alta-items/impacthittrigger#m-impacttypefilter), [`TargetBasedSkill.impactTypeFilter`](/mod/game-api/types/global-t-x/targetbasedskill#m-impacttypefilter).
+
+</div>

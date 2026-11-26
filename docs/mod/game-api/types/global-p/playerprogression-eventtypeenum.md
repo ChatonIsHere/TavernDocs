@@ -29,4 +29,8 @@ The kind of progression event logged by `PathExperience`: level up, skill bought
 
 Members of other types that take, return or hold a `EventTypeEnum`:
 
+<div className="api-used-in">
+
 [`PlayerProgression.PlayerProgression`](/mod/game-api/types/global-p/playerprogression#m-ctor).
+
+</div>

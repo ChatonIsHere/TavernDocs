@@ -23,4 +23,4 @@ Editor menu folder `Play`: menu item classes inherit it to appear under that pat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Play()"}</code> | Creates an `AltaMenuItemBase.Play` with default values. |
+| <Link id="m-ctor" /><code>{"protected Play()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Play` with default values.</span> |

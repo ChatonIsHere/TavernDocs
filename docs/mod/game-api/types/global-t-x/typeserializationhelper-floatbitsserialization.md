@@ -22,18 +22,18 @@ Writes a `float` packed into a range with a fixed number of bits. Used by `SyncF
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> | Creates a `TypeSerializationHelper.FloatBitsSerialization` from `minimum`, `maximum` and `bits`. |
+| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.FloatBitsSerialization` from `minimum`, `maximum` and `bits`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bits" /><code>{"private int bits"}</code> | Bits used for the value. |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Top of the value range. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Bottom of the value range. |
+| <Link id="m-bits" /><code>{"private int bits"}</code> | <span className="api-desc">Bits used for the value.</span> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Top of the value range.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Bottom of the value range.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Writes a `float` packed into a range with a fixed number of bits. Used by `SyncF
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the float compressed to `bits` bits between `minimum` and `maximum`. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Reads or writes the float compressed to `bits` bits between `minimum` and `maximum`.</span> |

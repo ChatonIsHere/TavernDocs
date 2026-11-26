@@ -20,19 +20,23 @@ A server region from the Alta API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> | Creates a `RegionInfo` with default values. |
+| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> | <span className="api-desc">Creates a `RegionInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> | Country code of the region. |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> | Name shown to players. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Internal region name. |
-| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> | IP address to ping to measure latency to the region. |
+| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> | <span className="api-desc">Country code of the region.</span> |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> | <span className="api-desc">Name shown to players.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Internal region name.</span> |
+| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> | <span className="api-desc">IP address to ping to measure latency to the region.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RegionInfo`:
 
+<div className="api-used-in">
+
 [`IServerApiClient.GetServerRegions`](/mod/game-api/types/assembly-api-client/iserverapiclient#m-getserverregions), [`OfflineServerApiClient.GetServerRegions`](/mod/game-api/types/assembly-api-client/offlineserverapiclient#m-getserverregions), [`ServerApiClient.GetServerRegions`](/mod/game-api/types/assembly-api-client/serverapiclient#m-getserverregions), [`LowLevelApiClient.GetAllRegions`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getallregions), [`ServerCreator.regions`](/mod/game-api/types/global-s/servercreator#m-regions).
+
+</div>

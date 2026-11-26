@@ -23,11 +23,11 @@ Save data (version 1) for a `SphericalSurface`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SphericalSurfaceSaveData()"}</code> | Creates a `SphericalSurfaceSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SphericalSurfaceSaveData()"}</code> | <span className="api-desc">Creates a `SphericalSurfaceSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ishemisphere" /><code>{"bool isHemisphere"}</code> | Saved hemisphere flag. |
-| <Link id="m-radius" /><code>{"float radius"}</code> | Saved radius. |
+| <Link id="m-ishemisphere" /><code>{"bool isHemisphere"}</code> | <span className="api-desc">Saved hemisphere flag.</span> |
+| <Link id="m-radius" /><code>{"float radius"}</code> | <span className="api-desc">Saved radius.</span> |

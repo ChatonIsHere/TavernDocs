@@ -24,16 +24,16 @@ A hashed scrapper asset holding one on or off value for mesh renderers. A `Visib
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilityData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"VisibilityData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled" /><code>{"private bool enabled"}</code> | Backing field for `Enabled`. |
+| <Link id="m-enabled" /><code>{"private bool enabled"}</code> | <span className="api-desc">Backing field for `Enabled`.</span> |
 
 </details>
 
@@ -41,16 +41,20 @@ A hashed scrapper asset holding one on or off value for mesh renderers. A `Visib
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> | Whether the renderers should be shown. |
+| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> | <span className="api-desc">Whether the renderers should be shown.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> | Sets the stored enabled value. |
+| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> | <span className="api-desc">Sets the stored enabled value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `VisibilityData`:
 
+<div className="api-used-in">
+
 [`Visibility.data`](/mod/game-api/types/alta-crafting/visibility#m-data), [`VisibilitySaveData.data`](/mod/game-api/types/alta-crafting/visibilitysavedata#m-data).
+
+</div>

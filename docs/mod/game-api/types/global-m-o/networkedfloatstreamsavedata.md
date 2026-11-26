@@ -23,10 +23,10 @@ Save data (version 1) for `NetworkedFloatStream`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> | Creates a `NetworkedFloatStreamSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> | <span className="api-desc">Creates a `NetworkedFloatStreamSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"float value"}</code> | Saved value. |
+| <Link id="m-value" /><code>{"float value"}</code> | <span className="api-desc">Saved value.</span> |

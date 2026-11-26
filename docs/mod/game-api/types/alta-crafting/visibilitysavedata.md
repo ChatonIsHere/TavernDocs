@@ -23,10 +23,10 @@ Save data (version 1) for `Visibility`: which visibility asset it uses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> | Creates a `VisibilitySaveData` with default values. |
+| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> | <span className="api-desc">Creates a `VisibilitySaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-crafting/visibilitydata">{"VisibilityData"}</Link>{" data"}</code> | The visibility asset. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-crafting/visibilitydata">{"VisibilityData"}</Link>{" data"}</code> | <span className="api-desc">The visibility asset.</span> |

@@ -21,12 +21,16 @@ A circle in 3D space: a centre, a radius and the direction it faces.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> | Direction the circle faces (its normal). |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | Centre of the circle. |
-| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> | Radius of the circle. |
+| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> | <span className="api-desc">Direction the circle faces (its normal).</span> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | <span className="api-desc">Centre of the circle.</span> |
+| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> | <span className="api-desc">Radius of the circle.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ICircle`:
 
+<div className="api-used-in">
+
 [`PulleyBeltHelper.EvaluateOptions`](/mod/game-api/types/global-p/pulleybelthelper#m-evaluateoptions), [`PulleyBeltHelper.exterior`](/mod/game-api/types/global-p/pulleybelthelper#m-exterior), [`PulleyBeltHelper.GetExterior`](/mod/game-api/types/global-p/pulleybelthelper#m-getexterior), [`PulleyBeltHelper.GetRope`](/mod/game-api/types/global-p/pulleybelthelper#m-getrope), [`PulleyBeltHelper.GetWorkingRadius`](/mod/game-api/types/global-p/pulleybelthelper#m-getworkingradius).
+
+</div>

@@ -36,4 +36,8 @@ Kind of question in an Alta web API form, such as boolean, text, rating, choice,
 
 Members of other types that take, return or hold a `FormQueryType`:
 
+<div className="api-used-in">
+
 [`Query.Type`](/mod/game-api/types/assembly-api-models/query#m-type).
+
+</div>

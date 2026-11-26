@@ -22,10 +22,10 @@ Builds the stacking layout for the inverted triangle instruction: rows that get 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> | Creates an `InvertedTriangleStackingInstructionSetup` with default values. |
+| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> | <span className="api-desc">Creates an `InvertedTriangleStackingInstructionSetup` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/mod/game-api/types/alta-items/invertedtrianglestackinginstruction">{"InvertedTriangleStackingInstruction"}</Link>{" instructions)"}</code> | Fills `Positions` and `MaxQuantity` with rows from `BaseWidth` at the bottom to the full width at the top. |
+| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/mod/game-api/types/alta-items/invertedtrianglestackinginstruction">{"InvertedTriangleStackingInstruction"}</Link>{" instructions)"}</code> | <span className="api-desc">Fills `Positions` and `MaxQuantity` with rows from `BaseWidth` at the bottom to the full width at the top.</span> |

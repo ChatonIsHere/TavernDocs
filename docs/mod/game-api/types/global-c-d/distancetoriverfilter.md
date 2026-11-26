@@ -23,16 +23,16 @@ Forest spawn filter that scales weight by distance to the nearest river.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceToRiverFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DistanceToRiverFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isincludingradius" /><code>{"private bool isIncludingRadius"}</code> | Whether the river's width counts. |
+| <Link id="m-isincludingradius" /><code>{"private bool isIncludingRadius"}</code> | <span className="api-desc">Whether the river's width counts.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest spawn filter that scales weight by distance to the nearest river.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluatedistance" /><code>{"protected override float EvaluateDistance("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Returns the point's distance to the river from the river generator. |
+| <Link id="m-evaluatedistance" /><code>{"protected override float EvaluateDistance("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Returns the point's distance to the river from the river generator.</span> |

@@ -22,26 +22,26 @@ Runs very early (execution order -15000) and creates the project lifetime scope 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DependencyInjectionInitializer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DependencyInjectionInitializer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> | The project lifetime scope prefab. |
+| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> | <span className="api-desc">The project lifetime scope prefab.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Instantiates the project lifetime scope, except in the editor. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Instantiates the project lifetime scope, except in the editor.</span> |
 
 </details>

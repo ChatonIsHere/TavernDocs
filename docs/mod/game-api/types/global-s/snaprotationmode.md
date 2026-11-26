@@ -27,4 +27,8 @@ Snap turn setting: by swipe or by press. Swipe only applies on OpenXR controller
 
 Members of other types that take, return or hold a `SnapRotationMode`:
 
+<div className="api-used-in">
+
 [`GameSettings.SnapRotationMode`](/mod/game-api/types/alta-utilities/gamesettings#m-snaprotationmode).
+
+</div>

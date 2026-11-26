@@ -21,18 +21,18 @@ A space-defined area of `SpacePoint`s that fires events on entering and leaving,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerArea()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TriggerArea()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenterarea" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onEnterArea"}</code> | Bool event fired on entering the area. |
-| <Link id="m-onexitarea" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onExitArea"}</code> | Bool event fired on leaving the area. |
-| <Link id="m-spacepoints" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] spacePoints"}</code> | Backing field for `Points`. |
+| <Link id="m-onenterarea" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onEnterArea"}</code> | <span className="api-desc">Bool event fired on entering the area.</span> |
+| <Link id="m-onexitarea" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onExitArea"}</code> | <span className="api-desc">Bool event fired on leaving the area.</span> |
+| <Link id="m-spacepoints" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] spacePoints"}</code> | <span className="api-desc">Backing field for `Points`.</span> |
 
 </details>
 
@@ -40,12 +40,12 @@ A space-defined area of `SpacePoint`s that fires events on entering and leaving,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-points" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"> Points { get; }"}</code> | The area's space points. |
+| <Link id="m-points" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"> Points { get; }"}</code> | <span className="api-desc">The area's space points.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enterarea" /><code>{"protected override void EnterArea()"}</code> | Invokes `onEnterArea` with whether the closest point's set weight is above 0.5. |
-| <Link id="m-exitarea" /><code>{"protected override void ExitArea()"}</code> | Invokes `onExitArea` with whether the closest point's set weight is above 0.5. |
-| <Link id="m-sendnewcloserpoint" /><code>{"protected override void SendNewCloserPoint("}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{" from, "}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{" to, float progress)"}</code> | Does nothing here. |
+| <Link id="m-enterarea" /><code>{"protected override void EnterArea()"}</code> | <span className="api-desc">Invokes `onEnterArea` with whether the closest point's set weight is above 0.5.</span> |
+| <Link id="m-exitarea" /><code>{"protected override void ExitArea()"}</code> | <span className="api-desc">Invokes `onExitArea` with whether the closest point's set weight is above 0.5.</span> |
+| <Link id="m-sendnewcloserpoint" /><code>{"protected override void SendNewCloserPoint("}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{" from, "}<Link to="/mod/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{" to, float progress)"}</code> | <span className="api-desc">Does nothing here.</span> |

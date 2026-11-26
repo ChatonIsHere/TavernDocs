@@ -23,4 +23,4 @@ Concrete weighted entry for `Distribution`, holding any Unity object.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `Distribution.Item` with default values. |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | <span className="api-desc">Creates a `Distribution.Item` with default values.</span> |

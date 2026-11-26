@@ -19,12 +19,12 @@ A **class** in `Root.Township`, the global namespace.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private EmptyChildrenSerializer()"}</code> | Creates an `EmptyChildrenSerializer` with default values. |
+| <Link id="m-ctor" /><code>{"private EmptyChildrenSerializer()"}</code> | <span className="api-desc">Creates an `EmptyChildrenSerializer` with default values.</span> |
 
 </details>
 
@@ -32,29 +32,29 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-e-h/emptychildrenserializer">{"EmptyChildrenSerializer"}</Link>{" Instance { get; }"}</code> | The shared instance. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-e-h/emptychildrenserializer">{"EmptyChildrenSerializer"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The shared instance.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> | Always 0. |
-| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> | An empty list. |
+| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> | <span className="api-desc">An empty list.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Does nothing. |
-| <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> | Does nothing. |
-| <Link id="m-getchildindex" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Always -1. |
-| <Link id="m-getchildindex-2" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | Always -1. |
-| <Link id="m-getspawnedchildren" /><code>{"private void Alta.Networking.ISerializeChildren.GetSpawnedChildren(int index, "}<Link to="/mod/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> | Does nothing and never calls the callback. |
+| <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-getchildindex" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | <span className="api-desc">Always -1.</span> |
+| <Link id="m-getchildindex-2" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | <span className="api-desc">Always -1.</span> |
+| <Link id="m-getspawnedchildren" /><code>{"private void Alta.Networking.ISerializeChildren.GetSpawnedChildren(int index, "}<Link to="/mod/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> | <span className="api-desc">Does nothing and never calls the callback.</span> |
 
 </details>

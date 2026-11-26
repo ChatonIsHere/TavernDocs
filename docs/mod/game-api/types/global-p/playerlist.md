@@ -23,16 +23,16 @@ A list of players parsed from a console command argument (names or ids separated
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerList(IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> range)"}</code> | Creates a `PlayerList` from `range`. |
+| <Link id="m-ctor" /><code>{"PlayerList(IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> range)"}</code> | <span className="api-desc">Creates a `PlayerList` from `range`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-players" /><code>{"private readonly IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players"}</code> | The players in the list. |
+| <Link id="m-players" /><code>{"private readonly IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players"}</code> | <span className="api-desc">The players in the list.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ A list of players parsed from a console command argument (names or ids separated
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> LastList { get; private set; }"}</code> | The players from the most recently made list. |
+| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> LastList { get; private set; }"}</code> | <span className="api-desc">The players from the most recently made list.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countorname" /><code>{"string CountOrName()"}</code> | "no one", the one player's name, or "N players", for log messages. |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> GetEnumerator()"}</code> | Enumerates the players. |
+| <Link id="m-countorname" /><code>{"string CountOrName()"}</code> | <span className="api-desc">"no one", the one player's name, or "N players", for log messages.</span> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> GetEnumerator()"}</code> | <span className="api-desc">Enumerates the players.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the players. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | <span className="api-desc">Enumerates the players.</span> |
 
 </details>
 
@@ -62,4 +62,8 @@ A list of players parsed from a console command argument (names or ids separated
 
 Members of other types that take, return or hold a `PlayerList`:
 
+<div className="api-used-in">
+
 [`SpawnCommandModule.FindPrefabAndSpawn`](/mod/game-api/types/alta-console/spawncommandmodule#m-findprefabandspawn), [`SpawnCommandModule.For`](/mod/game-api/types/alta-console/spawncommandmodule#m-for), [`SpawnCommandModule.SpawnString`](/mod/game-api/types/alta-console/spawncommandmodule#m-spawnstring), [`SpawnCommandModule.Moulds.DropPackage`](/mod/game-api/types/alta-console/spawncommandmodule-moulds#m-droppackage), [`SpawnCommandModule.Packages.DropPackage`](/mod/game-api/types/alta-console/spawncommandmodule-packages#m-droppackage), [`SpawnCommandModule.Pages.DropPackage`](/mod/game-api/types/alta-console/spawncommandmodule-pages#m-droppackage), [`WorldCommandModule.CaveCommandModule.CaveTeleport`](/mod/game-api/types/alta-console/worldcommandmodule-cavecommandmodule#m-caveteleport), [`WorldCommandModule.ForestCommandModule.Teleport`](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule#m-teleport).
+
+</div>

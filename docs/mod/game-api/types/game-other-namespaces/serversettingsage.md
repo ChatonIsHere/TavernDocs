@@ -28,4 +28,8 @@ Marks server settings in a settings change event as the old values, the new valu
 
 Members of other types that take, return or hold a `ServerSettingsAge`:
 
+<div className="api-used-in">
+
 [`ServerSettingsChangeData.Age`](/mod/game-api/types/game-other-namespaces/serversettingschangedata#m-age), [`ServerSettingsChangeData.ServerSettingsChangeData`](/mod/game-api/types/game-other-namespaces/serversettingschangedata#m-ctor-2).
+
+</div>

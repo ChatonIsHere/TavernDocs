@@ -21,17 +21,17 @@ One timed stage change: after a number of seconds, switch to a given stage.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> | Creates a `TimedPrefabStageDefinition.TimeSetup` with default values. |
+| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> | <span className="api-desc">Creates a `TimedPrefabStageDefinition.TimeSetup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> | Backing field for `StageIndex`. |
-| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> | Backing field for `TimeSinceStart`. |
+| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> | <span className="api-desc">Backing field for `StageIndex`.</span> |
+| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> | <span className="api-desc">Backing field for `TimeSinceStart`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ One timed stage change: after a number of seconds, switch to a given stage.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> | Stage to switch to. |
-| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> | Seconds after the timer starts (default 10). |
+| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> | <span className="api-desc">Stage to switch to.</span> |
+| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> | <span className="api-desc">Seconds after the timer starts (default 10).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TimeSetup`:
 
+<div className="api-used-in">
+
 [`TimedPrefabStageDefinition.Times`](/mod/game-api/types/global-t-x/timedprefabstagedefinition#m-times), [`TimedPrefabStageDefinition.timesPerStage`](/mod/game-api/types/global-t-x/timedprefabstagedefinition#m-timesperstage).
+
+</div>

@@ -20,13 +20,13 @@ Request body for changing a group role.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditGroupRoleRequest()"}</code> | Creates an `EditGroupRoleRequest` with default values. |
+| <Link id="m-ctor" /><code>{"EditGroupRoleRequest()"}</code> | <span className="api-desc">Creates an `EditGroupRoleRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowedcommands" /><code>{"List<string> AllowedCommands { get; set; }"}</code> | Console commands members with this role may run. |
-| <Link id="m-color" /><code>{"string Color { get; set; }"}</code> | Display colour of the role, as a string. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Role name. |
-| <Link id="m-permissions" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> Permissions { get; set; }"}</code> | Group permissions the role grants. |
+| <Link id="m-allowedcommands" /><code>{"List<string> AllowedCommands { get; set; }"}</code> | <span className="api-desc">Console commands members with this role may run.</span> |
+| <Link id="m-color" /><code>{"string Color { get; set; }"}</code> | <span className="api-desc">Display colour of the role, as a string.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Role name.</span> |
+| <Link id="m-permissions" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"> Permissions { get; set; }"}</code> | <span className="api-desc">Group permissions the role grants.</span> |

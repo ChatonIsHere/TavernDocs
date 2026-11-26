@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Township/Environmental.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Environmental()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Environmental` with default values. |
+| <Link id="m-ctor" /><code>{"protected Environmental()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Environmental` with default values.</span> |

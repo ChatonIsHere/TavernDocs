@@ -21,28 +21,28 @@ Keeps a chunk force loaded while this component is enabled. It disables itself o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForceLoadChunk()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForceLoadChunk()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | The chunk on this object. |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | <span className="api-desc">The chunk on this object.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches the `Chunk` and disables the component. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Clears `IsForceLoaded` on the chunk in play mode. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets `IsForceLoaded` on the chunk in play mode. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Caches the `Chunk` and disables the component.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Clears `IsForceLoaded` on the chunk in play mode.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Sets `IsForceLoaded` on the chunk in play mode.</span> |
 
 </details>

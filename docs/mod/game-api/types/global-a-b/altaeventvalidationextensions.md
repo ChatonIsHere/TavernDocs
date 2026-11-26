@@ -21,4 +21,4 @@ Extension that cleans broken persistent listeners out of an `AltaEvent`'s inspec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/mod/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> | Removes inspector listeners whose target is missing but still name a method, by rebuilding Unity's persistent call list. |
+| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/mod/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> | <span className="api-desc">Removes inspector listeners whose target is missing but still name a method, by rebuilding Unity's persistent call list.</span> |

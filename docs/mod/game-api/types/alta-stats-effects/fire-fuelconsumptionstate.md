@@ -21,27 +21,31 @@ Pooled working state for a fuel-based fire: which fuel pickups are in it, groupe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FuelConsumptionState()"}</code> | Creates a `Fire.FuelConsumptionState` with default values. |
+| <Link id="m-ctor" /><code>{"FuelConsumptionState()"}</code> | <span className="api-desc">Creates a `Fire.FuelConsumptionState` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fuellist" /><code><Link to="/mod/game-api/types/alta-utilities/sortedlist-t">{"SortedList"}</Link>{"<"}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{"> fuelList"}</code> | The fuel types present, sorted by the fuel comparer. |
-| <Link id="m-fuels" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{"> fuels"}</code> | Fuel data for each item type present. |
-| <Link id="m-pool" /><code>{"static Stack<"}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{"> pool"}</code> | Shared pool of spare states. |
-| <Link id="m-remaininglife" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", float> remainingLife"}</code> | Fuel life left in each pickup; the pickup is used up when it runs out. |
-| <Link id="m-tracked" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{", HashSet<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{">> tracked"}</code> | The fuel pickups in the fire, grouped by item. |
+| <Link id="m-fuellist" /><code><Link to="/mod/game-api/types/alta-utilities/sortedlist-t">{"SortedList"}</Link>{"<"}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{"> fuelList"}</code> | <span className="api-desc">The fuel types present, sorted by the fuel comparer.</span> |
+| <Link id="m-fuels" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/mod/game-api/types/global-e-h/fuel">{"Fuel"}</Link>{"> fuels"}</code> | <span className="api-desc">Fuel data for each item type present.</span> |
+| <Link id="m-pool" /><code>{"static Stack<"}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{"> pool"}</code> | <span className="api-desc">Shared pool of spare states.</span> |
+| <Link id="m-remaininglife" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", float> remainingLife"}</code> | <span className="api-desc">Fuel life left in each pickup; the pickup is used up when it runs out.</span> |
+| <Link id="m-tracked" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{", HashSet<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{">> tracked"}</code> | <span className="api-desc">The fuel pickups in the fire, grouped by item.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" Get()"}</code> | Takes a state from the pool or makes a new one. |
-| <Link id="m-release" /><code>{"static void Release(ref "}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" state)"}</code> | Clears a state, returns it to the pool and nulls the reference. |
+| <Link id="m-get" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" Get()"}</code> | <span className="api-desc">Takes a state from the pool or makes a new one.</span> |
+| <Link id="m-release" /><code>{"static void Release(ref "}<Link to="/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate">{"Fire.FuelConsumptionState"}</Link>{" state)"}</code> | <span className="api-desc">Clears a state, returns it to the pool and nulls the reference.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FuelConsumptionState`:
 
+<div className="api-used-in">
+
 [`Fire.CalculateEfficiency`](/mod/game-api/types/alta-stats-effects/fire#m-calculateefficiency), [`Fire.ConsumeFuel`](/mod/game-api/types/alta-stats-effects/fire#m-consumefuel), [`Fire.consumptionState`](/mod/game-api/types/alta-stats-effects/fire#m-consumptionstate), [`Fire.HandleFuelAdded`](/mod/game-api/types/alta-stats-effects/fire#m-handlefueladded), [`Fire.HandleFuelRemoved`](/mod/game-api/types/alta-stats-effects/fire#m-handlefuelremoved), [`Fire.TickFuelConsumption`](/mod/game-api/types/alta-stats-effects/fire#m-tickfuelconsumption).
+
+</div>

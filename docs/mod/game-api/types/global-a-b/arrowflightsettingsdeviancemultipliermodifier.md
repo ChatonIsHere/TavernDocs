@@ -22,16 +22,16 @@ Arrow flight modifier asset that only changes the deviance multiplier (how far a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> | Backing field for `DevianceMultiplier` (1 by default). |
+| <Link id="m-deviancemultiplier" /><code>{"private float devianceMultiplier"}</code> | <span className="api-desc">Backing field for `DevianceMultiplier` (1 by default).</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Arrow flight modifier asset that only changes the deviance multiplier (how far a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviancemultiplier-2" /><code>{"override float DevianceMultiplier { get; }"}</code> | Multiplier applied to the arrow's flight deviance. |
+| <Link id="m-deviancemultiplier-2" /><code>{"override float DevianceMultiplier { get; }"}</code> | <span className="api-desc">Multiplier applied to the arrow's flight deviance.</span> |

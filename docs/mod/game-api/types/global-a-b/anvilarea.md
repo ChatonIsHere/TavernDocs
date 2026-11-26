@@ -22,4 +22,4 @@ Empty marker component for an anvil's striking area. `AnvilFilterSettings` filte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnvilArea()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnvilArea()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

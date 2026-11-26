@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a `Collider`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> | Creates a `ColliderUnityEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> | <span className="api-desc">Creates a `ColliderUnityEvent` with default values.</span> |

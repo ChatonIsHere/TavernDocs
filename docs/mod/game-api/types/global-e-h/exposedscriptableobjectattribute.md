@@ -21,4 +21,4 @@ Property attribute with no fields, probably telling the inspector to show a refe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ExposedScriptableObjectAttribute()"}</code> | Creates an `ExposedScriptableObjectAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"ExposedScriptableObjectAttribute()"}</code> | <span className="api-desc">Creates an `ExposedScriptableObjectAttribute` with default values.</span> |

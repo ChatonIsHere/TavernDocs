@@ -21,4 +21,4 @@ Inspector attribute for an `AnimationCurve` field, probably to draw it as a step
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StepAnimationCurveAttribute()"}</code> | Creates a `StepAnimationCurveAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"StepAnimationCurveAttribute()"}</code> | <span className="api-desc">Creates a `StepAnimationCurveAttribute` with default values.</span> |

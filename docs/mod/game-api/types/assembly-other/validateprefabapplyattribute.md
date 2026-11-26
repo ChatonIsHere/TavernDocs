@@ -21,17 +21,17 @@ Prefab-apply attribute for a bool field: when a prefab is applied, sets the fiel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValidatePrefabApplyAttribute(string method)"}</code> | Creates a `ValidatePrefabApplyAttribute` from `method`. |
+| <Link id="m-ctor" /><code>{"ValidatePrefabApplyAttribute(string method)"}</code> | <span className="api-desc">Creates a `ValidatePrefabApplyAttribute` from `method`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-flags" /><code>{"private static readonly BindingFlags flags"}</code> | Binding flags for finding the method: instance or static, public or not. |
-| <Link id="m-method" /><code>{"private string method"}</code> | Name of the bool method to call. |
+| <Link id="m-flags" /><code>{"private static readonly BindingFlags flags"}</code> | <span className="api-desc">Binding flags for finding the method: instance or static, public or not.</span> |
+| <Link id="m-method" /><code>{"private string method"}</code> | <span className="api-desc">Name of the bool method to call.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Prefab-apply attribute for a bool field: when a prefab is applied, sets the fiel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Calls the named method (searching base types) and writes its bool to the field. Returns true if the value changed. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Calls the named method (searching base types) and writes its bool to the field. Returns true if the value changed.</span> |

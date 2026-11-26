@@ -21,27 +21,27 @@ The client's packet receiver: creates or approves the server connection when the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Creates a `ClientPacketReceiver` from `socket`. |
+| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | <span className="api-desc">Creates a `ClientPacketReceiver` from `socket`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-socket" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> | The socket this receiver works for. |
+| <Link id="m-socket" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> | <span className="api-desc">The socket this receiver works for.</span> |
 
 </details>
 
@@ -49,15 +49,15 @@ The client's packet receiver: creates or approves the server connection when the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | Asks the transport to process incoming data, which calls `Process` for each packet. |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | <span className="api-desc">Asks the transport to process incoming data, which calls `Process` for each packet.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/mod/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | On transport approval, approves the existing connection or creates and approves a new one. |
-| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/mod/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | On transport disconnect, disconnects the matching connection, or logs an error if there is none. |
-| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/mod/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> | Hands a received packet to the connection with that id, skipping empty packets. |
+| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/mod/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | <span className="api-desc">On transport approval, approves the existing connection or creates and approves a new one.</span> |
+| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/mod/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | <span className="api-desc">On transport disconnect, disconnects the matching connection, or logs an error if there is none.</span> |
+| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/mod/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> | <span className="api-desc">Hands a received packet to the connection with that id, skipping empty packets.</span> |
 
 </details>

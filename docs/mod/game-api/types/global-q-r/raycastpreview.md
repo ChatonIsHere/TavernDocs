@@ -22,28 +22,28 @@ Editor helper that draws a gizmo raycast forward from the object: green to the h
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RaycastPreview()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RaycastPreview()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hit" /><code>{"private RaycastHit hit"}</code> | Last raycast hit. |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | Layers the ray hits. |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> | Ray length. |
+| <Link id="m-hit" /><code>{"private RaycastHit hit"}</code> | <span className="api-desc">Last raycast hit.</span> |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | <span className="api-desc">Layers the ray hits.</span> |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> | <span className="api-desc">Ray length.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Casts the ray and draws the result. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Casts the ray and draws the result.</span> |
 
 </details>

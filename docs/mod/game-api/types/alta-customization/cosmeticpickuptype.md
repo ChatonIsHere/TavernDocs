@@ -30,4 +30,8 @@ What a cosmetic pickup changes on the character: a cosmetic item, eyes, skin col
 
 Members of other types that take, return or hold a `CosmeticPickupType`:
 
+<div className="api-used-in">
+
 [`ICustomizationDefinition.PickupType`](/mod/game-api/types/alta-customization/icustomizationdefinition#m-pickuptype), [`PlayerCosmeticDefinition.pickupType`](/mod/game-api/types/alta-customization/playercosmeticdefinition#m-pickuptype), [`PlayerCosmeticDefinition.PickupType`](/mod/game-api/types/alta-customization/playercosmeticdefinition#m-pickuptype-2), [`PlayerEquipmentDefinition.pickupType`](/mod/game-api/types/alta-customization/playerequipmentdefinition#m-pickuptype), [`PlayerEquipmentDefinition.PickupType`](/mod/game-api/types/alta-customization/playerequipmentdefinition#m-pickuptype-2).
+
+</div>

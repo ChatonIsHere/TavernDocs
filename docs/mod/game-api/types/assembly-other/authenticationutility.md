@@ -23,18 +23,18 @@ Logs the game into the Alta API by refresh token, command line arguments, userna
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AuthenticationUtility("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/mod/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences)"}</code> | Creates an `AuthenticationUtility` from `apiClient` and `loginPreferences`. |
+| <Link id="m-ctor" /><code>{"AuthenticationUtility("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/mod/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences)"}</code> | <span className="api-desc">Creates an `AuthenticationUtility` from `apiClient` and `loginPreferences`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apiclient" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient"}</code> | The high-level API client used to log in. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-loginpreferences" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> | Saved login preferences, read for the refresh token. |
+| <Link id="m-apiclient" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient"}</code> | <span className="api-desc">The high-level API client used to log in.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-loginpreferences" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> | <span className="api-desc">Saved login preferences, read for the refresh token.</span> |
 
 </details>
 
@@ -42,18 +42,18 @@ Logs the game into the Alta API by refresh token, command line arguments, userna
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"async Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> | Tries `/login`, `/login_hash`, `/access_token` and `/oauth_login` in that order. Returns false if none are given. |
-| <Link id="m-loginwithcommandlinetokensasync" /><code>{"async Task<IResult> LoginWithCommandLineTokensAsync()"}</code> | Logs in with the `/access_token`, `/refresh_token` and `/identity_token` command line values. |
-| <Link id="m-loginwithoauthasync" /><code>{"async Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> | Logs in with an OAuth client ID, secret and scopes. Semicolons in the scopes become spaces. |
-| <Link id="m-loginwithrefreshtokenasync" /><code>{"async Task<IResult> LoginWithRefreshTokenAsync()"}</code> | Logs in with the refresh token saved in login preferences. |
-| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> | Hashes the password and logs in with the username and hash. |
+| <Link id="m-loginwithcommandlineargumentsasync" /><code>{"async Task<IResult<bool>> LoginWithCommandLineArgumentsAsync()"}</code> | <span className="api-desc">Tries `/login`, `/login_hash`, `/access_token` and `/oauth_login` in that order. Returns false if none are given.</span> |
+| <Link id="m-loginwithcommandlinetokensasync" /><code>{"async Task<IResult> LoginWithCommandLineTokensAsync()"}</code> | <span className="api-desc">Logs in with the `/access_token`, `/refresh_token` and `/identity_token` command line values.</span> |
+| <Link id="m-loginwithoauthasync" /><code>{"async Task<IResult> LoginWithOAuthAsync(string clientId, string clientSecret, string clientScopes)"}</code> | <span className="api-desc">Logs in with an OAuth client ID, secret and scopes. Semicolons in the scopes become spaces.</span> |
+| <Link id="m-loginwithrefreshtokenasync" /><code>{"async Task<IResult> LoginWithRefreshTokenAsync()"}</code> | <span className="api-desc">Logs in with the refresh token saved in login preferences.</span> |
+| <Link id="m-loginwithuserpassasync" /><code>{"Task<IResult> LoginWithUserPassAsync(string username, string password)"}</code> | <span className="api-desc">Hashes the password and logs in with the username and hash.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrefreshtoken" /><code>{"private Result<string> GetRefreshToken()"}</code> | Returns the saved refresh token, or an error if remember details is off or no token is saved. |
-| <Link id="m-loginwithuserpasshashasync" /><code>{"private async Task<IResult> LoginWithUserPassHashAsync(string username, string passHash)"}</code> | Logs in with a username and an already-hashed password. Fails if no user info comes back. |
+| <Link id="m-getrefreshtoken" /><code>{"private Result<string> GetRefreshToken()"}</code> | <span className="api-desc">Returns the saved refresh token, or an error if remember details is off or no token is saved.</span> |
+| <Link id="m-loginwithuserpasshashasync" /><code>{"private async Task<IResult> LoginWithUserPassHashAsync(string username, string passHash)"}</code> | <span className="api-desc">Logs in with a username and an already-hashed password. Fails if no user info comes back.</span> |
 
 </details>

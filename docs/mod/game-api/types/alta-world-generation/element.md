@@ -23,20 +23,20 @@ A cave generation element asset: a map chunk display prefab chosen by how well i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attributeweightings" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] attributeWeightings"}</code> | Attribute curves used by `GetEfficiency` to weight this element against an attribute set. |
-| <Link id="m-curvelessefficiency" /><code>{"private float curvelessEfficiency"}</code> | Efficiency meant for when no curves are set. Not read by this class in this build. |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" prefab"}</code> | Backing field for `Prefab`, the map chunk display spawned for this element. |
-| <Link id="m-serializedvariables" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/element-serializedvariable">{"Element.SerializedVariable"}</Link>{"> serializedVariables"}</code> | Name and value pairs Unity saves in place of the `variables` dictionary. |
-| <Link id="m-variables" /><code>{"private Dictionary<string, "}<Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> variables"}</code> | Backing field for `Variables`, named general values for this element. |
+| <Link id="m-attributeweightings" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] attributeWeightings"}</code> | <span className="api-desc">Attribute curves used by `GetEfficiency` to weight this element against an attribute set.</span> |
+| <Link id="m-curvelessefficiency" /><code>{"private float curvelessEfficiency"}</code> | <span className="api-desc">Efficiency meant for when no curves are set. Not read by this class in this build.</span> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" prefab"}</code> | <span className="api-desc">Backing field for `Prefab`, the map chunk display spawned for this element.</span> |
+| <Link id="m-serializedvariables" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/element-serializedvariable">{"Element.SerializedVariable"}</Link>{"> serializedVariables"}</code> | <span className="api-desc">Name and value pairs Unity saves in place of the `variables` dictionary.</span> |
+| <Link id="m-variables" /><code>{"private Dictionary<string, "}<Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> variables"}</code> | <span className="api-desc">Backing field for `Variables`, named general values for this element.</span> |
 
 </details>
 
@@ -44,22 +44,22 @@ A cave generation element asset: a map chunk display prefab chosen by how well i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" Prefab { get; }"}</code> | The map chunk display prefab for this element. |
-| <Link id="m-variables-2" /><code>{"Dictionary<string, "}<Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> Variables { get; }"}</code> | Named values set on the element. |
+| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" Prefab { get; }"}</code> | <span className="api-desc">The map chunk display prefab for this element.</span> |
+| <Link id="m-variables-2" /><code>{"Dictionary<string, "}<Link to="/mod/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> Variables { get; }"}</code> | <span className="api-desc">Named values set on the element.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getefficiency" /><code>{"float GetEfficiency("}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | How well this element suits the given attributes, from its weighting curves. |
+| <Link id="m-getefficiency" /><code>{"float GetEfficiency("}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | <span className="api-desc">How well this element suits the given attributes, from its weighting curves.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | Rebuilds the `variables` dictionary from the serialized list. |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | Copies the `variables` dictionary into the serialized list so Unity can save it. |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | <span className="api-desc">Rebuilds the `variables` dictionary from the serialized list.</span> |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | <span className="api-desc">Copies the `variables` dictionary into the serialized list so Unity can save it.</span> |
 
 </details>
 
@@ -67,4 +67,8 @@ A cave generation element asset: a map chunk display prefab chosen by how well i
 
 Members of other types that take, return or hold a `Element`:
 
+<div className="api-used-in">
+
 [`Biome.GetElementMultiplier`](/mod/game-api/types/alta-world-generation/biome#m-getelementmultiplier), [`BiomeResources.elements`](/mod/game-api/types/alta-world-generation/biomeresources#m-elements), [`BiomeResources.Elements`](/mod/game-api/types/alta-world-generation/biomeresources#m-elements-2), [`GeneratedBiome.ElementChances`](/mod/game-api/types/alta-world-generation/generatedbiome#m-elementchances), [`GeneratedBiome.GeneratedBiome`](/mod/game-api/types/alta-world-generation/generatedbiome#m-ctor), [`GeneratingBiome.elementMultipliers`](/mod/game-api/types/alta-world-generation/generatingbiome#m-elementmultipliers), [`IBiomeValues.ElementChances`](/mod/game-api/types/alta-world-generation/ibiomevalues#m-elementchances), [`Plugin.element`](/mod/game-api/types/alta-world-generation/plugin#m-element), [`Plugin.Element`](/mod/game-api/types/alta-world-generation/plugin#m-element-2), [`ApplyElement.element`](/mod/game-api/types/alta-world-generation/applyelement#m-element), [`ApplyElement.Element`](/mod/game-api/types/alta-world-generation/applyelement#m-element-2), [`ApplyElementInstance.element`](/mod/game-api/types/alta-world-generation/applyelementinstance#m-element).
+
+</div>

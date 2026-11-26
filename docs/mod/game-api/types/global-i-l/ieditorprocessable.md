@@ -21,4 +21,4 @@ Component with an editor processing step, used by `CombinedMeshSource`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> | Runs the processing step. |
+| <Link id="m-process" /><code>{"void Process()"}</code> | <span className="api-desc">Runs the processing step.</span> |

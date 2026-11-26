@@ -23,10 +23,10 @@ A `CraftableImpactDetectorBase` that only accepts collisions from its registered
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CraftableImpactDetector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CraftableImpactDetector()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validatecontatpoint" /><code>{"protected override bool ValidateContatPoint(ContactPoint point)"}</code> | True when the contact's own collider belongs to this detector (its nearest parent `ImpactDetector` is this one). |
+| <Link id="m-validatecontatpoint" /><code>{"protected override bool ValidateContatPoint(ContactPoint point)"}</code> | <span className="api-desc">True when the contact's own collider belongs to this detector (its nearest parent `ImpactDetector` is this one).</span> |

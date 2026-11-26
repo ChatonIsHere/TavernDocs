@@ -22,15 +22,19 @@ One step of forest world generation. Runs once for the whole world, then per loc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleardynamic" /><code>{"void ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Removes the step's dynamic content from a chunk. |
-| <Link id="m-clearstatic" /><code>{"void ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Removes the step's static content from a chunk. |
-| <Link id="m-generatedynamic" /><code>{"Task GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Generates dynamic content for a chunk. |
-| <Link id="m-generateglobal" /><code>{"Task GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Generates anything that spans the whole forest. |
-| <Link id="m-generatestatic" /><code>{"Task GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | Generates static content for a chunk into an instruction set that can be cached. |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Prepares the step before generating. |
+| <Link id="m-cleardynamic" /><code>{"void ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Removes the step's dynamic content from a chunk.</span> |
+| <Link id="m-clearstatic" /><code>{"void ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Removes the step's static content from a chunk.</span> |
+| <Link id="m-generatedynamic" /><code>{"Task GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Generates dynamic content for a chunk.</span> |
+| <Link id="m-generateglobal" /><code>{"Task GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | <span className="api-desc">Generates anything that spans the whole forest.</span> |
+| <Link id="m-generatestatic" /><code>{"Task GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | <span className="api-desc">Generates static content for a chunk into an instruction set that can be cached.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Prepares the step before generating.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IForestGeneration`:
 
+<div className="api-used-in">
+
 [`ForestGenerator.forestGeneration`](/mod/game-api/types/alta-world-generation/forestgenerator#m-forestgeneration).
+
+</div>

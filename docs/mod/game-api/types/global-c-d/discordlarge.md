@@ -30,4 +30,8 @@ Large image keys for Discord rich presence (splash, town, caves, forest). The lo
 
 Members of other types that take, return or hold a `DiscordLarge`:
 
+<div className="api-used-in">
+
 [`DiscordController.largeImage`](/mod/game-api/types/global-c-d/discordcontroller#m-largeimage), [`DiscordController.LargeImage`](/mod/game-api/types/global-c-d/discordcontroller#m-largeimage-2).
+
+</div>

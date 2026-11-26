@@ -21,16 +21,16 @@ JSON contract resolver for websocket console replies that drops `DevOnly` member
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WebsocketContractResolver()"}</code> | Creates a `WebsocketContractResolver` with default values. |
+| <Link id="m-ctor" /><code>{"WebsocketContractResolver()"}</code> | <span className="api-desc">Creates a `WebsocketContractResolver` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static readonly "}<Link to="/mod/game-api/types/alta-console/websocketcontractresolver">{"WebsocketContractResolver"}</Link>{" Instance"}</code> | Shared instance used by the websocket command handler's JSON settings. |
+| <Link id="m-instance" /><code>{"static readonly "}<Link to="/mod/game-api/types/alta-console/websocketcontractresolver">{"WebsocketContractResolver"}</Link>{" Instance"}</code> | <span className="api-desc">Shared instance used by the websocket command handler's JSON settings.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> | Marks a `DevOnly` member as not serialized when the caller has `debug_features`. This looks inverted (probably meant callers without it). |
+| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> | <span className="api-desc">Marks a `DevOnly` member as not serialized when the caller has `debug_features`. This looks inverted (probably meant callers without it).</span> |

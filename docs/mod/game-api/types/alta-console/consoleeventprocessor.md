@@ -18,14 +18,14 @@ Registry of named console events that websocket console clients can subscribe to
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-events" /><code>{"private static Dictionary<string, "}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> events"}</code> | Registered events by name. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-processeventmethod" /><code>{"private static MethodInfo processEventMethod"}</code> | Reflection handle to a private `ProcessEvent` method, looked up in the static constructor. |
+| <Link id="m-events" /><code>{"private static Dictionary<string, "}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> events"}</code> | <span className="api-desc">Registered events by name.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-processeventmethod" /><code>{"private static MethodInfo processEventMethod"}</code> | <span className="api-desc">Reflection handle to a private `ProcessEvent` method, looked up in the static constructor.</span> |
 
 </details>
 
@@ -33,13 +33,13 @@ Registry of named console events that websocket console clients can subscribe to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-events-2" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Events { get; }"}</code> | All registered console events. |
+| <Link id="m-events-2" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Events { get; }"}</code> | <span className="api-desc">All registered console events.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{" socketEvent)"}</code> | Removes an event if it is the one registered under its name. |
-| <Link id="m-register" /><code>{"static void Register("}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{" socketEvent)"}</code> | Adds an event under its name, replacing (with a warning) any event already using that name. |
-| <Link id="m-subscribe" /><code>{"static bool Subscribe(string type, Action<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> handler)"}</code> | Adds a handler to the named event; returns false if no such event. |
-| <Link id="m-unsubscribe" /><code>{"static bool Unsubscribe(string type, Action<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> handler)"}</code> | Removes a handler from the named event; returns false if no such event. |
+| <Link id="m-deregister" /><code>{"static void Deregister("}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{" socketEvent)"}</code> | <span className="api-desc">Removes an event if it is the one registered under its name.</span> |
+| <Link id="m-register" /><code>{"static void Register("}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{" socketEvent)"}</code> | <span className="api-desc">Adds an event under its name, replacing (with a warning) any event already using that name.</span> |
+| <Link id="m-subscribe" /><code>{"static bool Subscribe(string type, Action<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> handler)"}</code> | <span className="api-desc">Adds a handler to the named event; returns false if no such event.</span> |
+| <Link id="m-unsubscribe" /><code>{"static bool Unsubscribe(string type, Action<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{"> handler)"}</code> | <span className="api-desc">Removes a handler from the named event; returns false if no such event.</span> |

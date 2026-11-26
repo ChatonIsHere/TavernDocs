@@ -28,4 +28,8 @@ Unit of a `Duration`: day, month or year.
 
 Members of other types that take, return or hold a `DurationType`:
 
+<div className="api-used-in">
+
 [`Duration.Type`](/mod/game-api/types/assembly-api-models/duration#m-type).
+
+</div>

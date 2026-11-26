@@ -22,4 +22,4 @@ Server: one player's gold bank account, loaded per player by `CentralGoldCoinBan
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerGoldBankAccount()"}</code> | Creates a `PlayerGoldBankAccount` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerGoldBankAccount()"}</code> | <span className="api-desc">Creates a `PlayerGoldBankAccount` with default values.</span> |

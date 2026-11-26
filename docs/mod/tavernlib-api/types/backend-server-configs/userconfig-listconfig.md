@@ -22,22 +22,22 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ListConfig()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"ListConfig()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ips" /><code>{"List<string> Ips { get; set; }"}</code> | IP addresses. On the whitelist, an address also lets in accounts registered from it. |
-| <Link id="m-userids" /><code>{"List<ulong> UserIds { get; set; }"}</code> | User ids. |
-| <Link id="m-usernames" /><code>{"List<string> Usernames { get; set; }"}</code> | Usernames, compared without case. |
+| <Link id="m-ips" /><code>{"List<string> Ips { get; set; }"}</code> | <span className="api-desc">IP addresses. On the whitelist, an address also lets in accounts registered from it.</span> |
+| <Link id="m-userids" /><code>{"List<ulong> UserIds { get; set; }"}</code> | <span className="api-desc">User ids.</span> |
+| <Link id="m-usernames" /><code>{"List<string> Usernames { get; set; }"}</code> | <span className="api-desc">Usernames, compared without case.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | <span className="api-desc">Holds JSON keys TavernLib doesn't model, so they are written back unchanged.</span> |
 
 </details>
 
@@ -45,4 +45,8 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 
 Members of other types that take, return or hold a `ListConfig`:
 
+<div className="api-used-in">
+
 [`JoinRules.HasEntries`](/mod/tavernlib-api/types/backend-auth/joinrules#m-hasentries), [`JoinRules.Matches`](/mod/tavernlib-api/types/backend-auth/joinrules#m-matches), [`UserConfig.Blacklist`](/mod/tavernlib-api/types/backend-server-configs/userconfig#m-blacklist), [`UserConfig.Whitelist`](/mod/tavernlib-api/types/backend-server-configs/userconfig#m-whitelist), [`PlayerCommandModule.Lists`](/mod/tavernlib-api/types/moduleports/playercommandmodule#m-lists).
+
+</div>

@@ -19,22 +19,22 @@ Console module `login`: signs in to the game with a username and password throug
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loginasync" /><code>{"private static async Task LoginAsync(string username, string password)"}</code> | `login`: signs in with the given username and password and logs the error if it fails. |
+| <Link id="m-loginasync" /><code>{"private static async Task LoginAsync(string username, string password)"}</code> | <span className="api-desc">`login`: signs in with the given username and password and logs the error if it fails.</span> |
 
 </details>

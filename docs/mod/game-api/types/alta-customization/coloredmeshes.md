@@ -21,19 +21,19 @@ Gives a set of renderers one shared material copy for a cosmetic colour.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColoredMeshes()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColoredMeshes()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color"}</code> | Backing field for `Color`. |
-| <Link id="m-material" /><code>{"private Material material"}</code> | Source material copied for the renderers. |
-| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> | Renderers that get the shared material. |
-| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> | The material copy shared by the renderers. |
+| <Link id="m-color" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color"}</code> | <span className="api-desc">Backing field for `Color`.</span> |
+| <Link id="m-material" /><code>{"private Material material"}</code> | <span className="api-desc">Source material copied for the renderers.</span> |
+| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> | <span className="api-desc">Renderers that get the shared material.</span> |
+| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> | <span className="api-desc">The material copy shared by the renderers.</span> |
 
 </details>
 
@@ -41,16 +41,16 @@ Gives a set of renderers one shared material copy for a cosmetic colour.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color-2" /><code><Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" Color { get; set; }"}</code> | The cosmetic colour. Setting it creates the shared material copy and assigns it to the renderers the first time; it does not apply the colour itself in this code. |
+| <Link id="m-color-2" /><code><Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" Color { get; set; }"}</code> | <span className="api-desc">The cosmetic colour. Setting it creates the shared material copy and assigns it to the renderers the first time; it does not apply the colour itself in this code.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cleans up the shared material copy. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: reapplies the colour. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Cleans up the shared material copy.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: reapplies the colour.</span> |
 
 </details>

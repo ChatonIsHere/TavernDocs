@@ -22,16 +22,16 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FileInfoWrapper(FileInfo file)"}</code> | Creates a `FileInfoWrapper` from `file`. |
+| <Link id="m-ctor" /><code>{"FileInfoWrapper(FileInfo file)"}</code> | <span className="api-desc">Creates a `FileInfoWrapper` from `file`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-file" /><code>{"private FileInfo file"}</code> | The wrapped `FileInfo`. |
+| <Link id="m-file" /><code>{"private FileInfo file"}</code> | <span className="api-desc">The wrapped `FileInfo`.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | Whether the file exists, from the cached `FileInfo`. |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | Full path of the file. |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | File name with extension. |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | <span className="api-desc">Whether the file exists, from the cached `FileInfo`.</span> |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | <span className="api-desc">Full path of the file.</span> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">File name with extension.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"void Delete()"}</code> | Deletes the file. |
-| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> | Deletes the file on a background task. |
-| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> | Returns `Exists` as a finished task. |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Refreshes the cached file info from disk. |
+| <Link id="m-delete" /><code>{"void Delete()"}</code> | <span className="api-desc">Deletes the file.</span> |
+| <Link id="m-deleteasync" /><code>{"Task DeleteAsync()"}</code> | <span className="api-desc">Deletes the file on a background task.</span> |
+| <Link id="m-isexistingasync" /><code>{"Task<bool> IsExistingAsync()"}</code> | <span className="api-desc">Returns `Exists` as a finished task.</span> |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | <span className="api-desc">Refreshes the cached file info from disk.</span> |

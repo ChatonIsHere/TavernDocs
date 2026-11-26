@@ -22,4 +22,4 @@ A running action that can be started on an agent of type `TAgent`. `BasicActiveA
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"void Start("}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action, TAgent agent)"}</code> | Starts this running instance for the given action and agent, which calls its `OnStart`. |
+| <Link id="m-start" /><code>{"void Start("}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action, TAgent agent)"}</code> | <span className="api-desc">Starts this running instance for the given action and agent, which calls its `OnStart`.</span> |

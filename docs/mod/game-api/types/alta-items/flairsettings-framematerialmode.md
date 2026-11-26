@@ -29,4 +29,8 @@ Which material a book's emblem frame uses: unchanged from its prefab, the book m
 
 Members of other types that take, return or hold a `FrameMaterialMode`:
 
+<div className="api-used-in">
+
 [`FlairSettings.FrameMaterial`](/mod/game-api/types/alta-items/flairsettings#m-framematerial), [`FlairSettings.frameMaterialMode`](/mod/game-api/types/alta-items/flairsettings#m-framematerialmode).
+
+</div>

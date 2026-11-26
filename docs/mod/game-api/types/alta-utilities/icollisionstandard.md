@@ -21,4 +21,4 @@ Something with a surface material for collisions. `StaticEnvironmentPiece` and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code><Link to="/mod/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> | The surface material of this piece. |
+| <Link id="m-material" /><code><Link to="/mod/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> | <span className="api-desc">The surface material of this piece.</span> |

@@ -28,4 +28,8 @@ Where the in-world runtime console sends typed commands: client or server. Picke
 
 Members of other types that take, return or hold a `CommandTarget`:
 
+<div className="api-used-in">
+
 [`RuntimeConsole.defaultCommandTarget`](/mod/game-api/types/global-q-r/runtimeconsole#m-defaultcommandtarget).
+
+</div>

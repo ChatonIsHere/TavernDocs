@@ -27,4 +27,8 @@ How the hand's thumb is posed on a grab point: around a `Pole` or flat on a `Pla
 
 Members of other types that take, return or hold a `ThumbPosition`:
 
+<div className="api-used-in">
+
 [`HandGrip.ThumbPosition`](/mod/game-api/types/alta-player/handgrip#m-thumbposition), [`GrabPoint.thumbPosition`](/mod/game-api/types/global-e-h/grabpoint#m-thumbposition).
+
+</div>

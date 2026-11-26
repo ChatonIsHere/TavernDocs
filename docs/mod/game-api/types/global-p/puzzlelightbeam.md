@@ -22,21 +22,21 @@ Light puzzle emitter: casts a `Beam` forward from its transform every frame. Bas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleLightBeam()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PuzzleLightBeam()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"protected float distance"}</code> | Beam reach, 100 by default. |
+| <Link id="m-distance" /><code>{"protected float distance"}</code> | <span className="api-desc">Beam reach, 100 by default.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beam" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> | The beam this emitter casts. |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | Layers the beam raycast hits. |
+| <Link id="m-beam" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> | <span className="api-desc">The beam this emitter casts.</span> |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | <span className="api-desc">Layers the beam raycast hits.</span> |
 
 </details>
 
@@ -44,12 +44,12 @@ Light puzzle emitter: casts a `Beam` forward from its transform every frame. Bas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> | How far the beam reaches. |
-| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> | Layers the beam can hit. |
+| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> | <span className="api-desc">How far the beam reaches.</span> |
+| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> | <span className="api-desc">Layers the beam can hit.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Creates the beam. |
-| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> | Emits the beam from the object's position along its forward direction. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Creates the beam.</span> |
+| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> | <span className="api-desc">Emits the beam from the object's position along its forward direction.</span> |

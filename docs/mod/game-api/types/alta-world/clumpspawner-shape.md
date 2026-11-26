@@ -28,4 +28,8 @@ Area a `ClumpSpawner` scatters clumps over: a circle or a square of its width.
 
 Members of other types that take, return or hold a `Shape`:
 
+<div className="api-used-in">
+
 [`ClumpSpawner.shape`](/mod/game-api/types/alta-world/clumpspawner#m-shape).
+
+</div>

@@ -21,10 +21,14 @@ Serializable event raised by a `PullPickup` when it is pulled, with separate cli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PullEvent()"}</code> | Creates a `PullEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PullEvent()"}</code> | <span className="api-desc">Creates a `PullEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PullEvent`:
 
+<div className="api-used-in">
+
 [`PullPickup.pulledOnClient`](/mod/game-api/types/global-p/pullpickup#m-pulledonclient), [`PullPickup.pulledOnServer`](/mod/game-api/types/global-p/pullpickup#m-pulledonserver).
+
+</div>

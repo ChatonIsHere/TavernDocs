@@ -21,23 +21,27 @@ Precomputed tag bitmasks for one rule or part in each of its configurations, whi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlacingData()"}</code> | Creates a `Constructor.PlacingData` with default values. |
+| <Link id="m-ctor" /><code>{"PlacingData()"}</code> | <span className="api-desc">Creates a `Constructor.PlacingData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allofxcompressedflags" /><code>{"List<ulong[,]> allOfXCompressedFlags"}</code> | Per configuration: required-tag bits indexed by z and y, combined over x. |
-| <Link id="m-allofxzcompressedflags" /><code>{"List<ulong[]> allOfXzCompressedFlags"}</code> | Per configuration: required-tag bits per y layer, combined over x and z. |
-| <Link id="m-allofzcompressedflags" /><code>{"List<ulong[,]> allOfZCompressedFlags"}</code> | Per configuration: required-tag bits indexed by x and y, combined over z. |
-| <Link id="m-anyofxcompressedflags" /><code>{"List<ulong[,]> anyOfXCompressedFlags"}</code> | Per configuration: any-of tag bits indexed by z and y, combined over x. |
-| <Link id="m-anyofxzcompressedflags" /><code>{"List<ulong[]> anyOfXzCompressedFlags"}</code> | Per configuration: any-of tag bits per y layer, combined over x and z. |
-| <Link id="m-anyofzcompressedflags" /><code>{"List<ulong[,]> anyOfZCompressedFlags"}</code> | Per configuration: any-of tag bits indexed by x and y, combined over z. |
-| <Link id="m-configurationindex" /><code>{"List<int> configurationIndex"}</code> | Which of the rule's configurations each mask entry came from. Only configurations whose tags all exist are kept. |
-| <Link id="m-part" /><code>{"T part"}</code> | The rule or part this data is for. |
+| <Link id="m-allofxcompressedflags" /><code>{"List<ulong[,]> allOfXCompressedFlags"}</code> | <span className="api-desc">Per configuration: required-tag bits indexed by z and y, combined over x.</span> |
+| <Link id="m-allofxzcompressedflags" /><code>{"List<ulong[]> allOfXzCompressedFlags"}</code> | <span className="api-desc">Per configuration: required-tag bits per y layer, combined over x and z.</span> |
+| <Link id="m-allofzcompressedflags" /><code>{"List<ulong[,]> allOfZCompressedFlags"}</code> | <span className="api-desc">Per configuration: required-tag bits indexed by x and y, combined over z.</span> |
+| <Link id="m-anyofxcompressedflags" /><code>{"List<ulong[,]> anyOfXCompressedFlags"}</code> | <span className="api-desc">Per configuration: any-of tag bits indexed by z and y, combined over x.</span> |
+| <Link id="m-anyofxzcompressedflags" /><code>{"List<ulong[]> anyOfXzCompressedFlags"}</code> | <span className="api-desc">Per configuration: any-of tag bits per y layer, combined over x and z.</span> |
+| <Link id="m-anyofzcompressedflags" /><code>{"List<ulong[,]> anyOfZCompressedFlags"}</code> | <span className="api-desc">Per configuration: any-of tag bits indexed by x and y, combined over z.</span> |
+| <Link id="m-configurationindex" /><code>{"List<int> configurationIndex"}</code> | <span className="api-desc">Which of the rule's configurations each mask entry came from. Only configurations whose tags all exist are kept.</span> |
+| <Link id="m-part" /><code>{"T part"}</code> | <span className="api-desc">The rule or part this data is for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlacingData&lt;T>`:
 
+<div className="api-used-in">
+
 [`Constructor.CreateData`](/mod/game-api/types/alta-world-generation/constructor#m-createdata), [`Constructor.HandlePart`](/mod/game-api/types/alta-world-generation/constructor#m-handlepart).
+
+</div>

@@ -20,15 +20,15 @@ Older tool that finds mesh triangles that can't be seen from outside, using rayc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculateoccludedtriangles" /><code>{"static void CalculateOccludedTriangles(Mesh mesh, int renderResolution, List<"}<Link to="/mod/game-api/types/global-q-r/removingtriangle">{"RemovingTriangle"}</Link>{"> trianglesToRemove, Func<Vector3, bool> validateVertex = null, IEnumerable<Vector3> additionalCheckPoints = null, Func<Vector3, Vector3, Vector3, bool> triangleValidation = null)"}</code> | Fills a list with triangles that are hidden from every test direction and extra check point. |
+| <Link id="m-calculateoccludedtriangles" /><code>{"static void CalculateOccludedTriangles(Mesh mesh, int renderResolution, List<"}<Link to="/mod/game-api/types/global-q-r/removingtriangle">{"RemovingTriangle"}</Link>{"> trianglesToRemove, Func<Vector3, bool> validateVertex = null, IEnumerable<Vector3> additionalCheckPoints = null, Func<Vector3, Vector3, Vector3, bool> triangleValidation = null)"}</code> | <span className="api-desc">Fills a list with triangles that are hidden from every test direction and extra check point.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkvisibility" /><code>{"private static bool CheckVisibility(int renderResolution, float distance, RenderTexture renderTexture, Material downscaleMaterial, List<RenderTexture> downscalingRTs, Texture2D extraction, Vector3 center, Vector3 normalDirection, Camera camera)"}</code> | Renders one triangle from a point and returns whether any of it shows. |
-| <Link id="m-checkvisibility-2" /><code>{"private static bool CheckVisibility(int renderResolution, Vector3 position, RenderTexture renderTexture, Material downscaleMaterial, List<RenderTexture> downscalingRTs, Texture2D extraction, Vector3 normalDirection, Camera camera)"}</code> | Renders one triangle from a point and returns whether any of it shows. |
-| <Link id="m-rotations" /><code>{"private static IEnumerable<Quaternion> Rotations() (iterator)"}</code> | The test view directions: six axes plus eight diagonals. |
+| <Link id="m-checkvisibility" /><code>{"private static bool CheckVisibility(int renderResolution, float distance, RenderTexture renderTexture, Material downscaleMaterial, List<RenderTexture> downscalingRTs, Texture2D extraction, Vector3 center, Vector3 normalDirection, Camera camera)"}</code> | <span className="api-desc">Renders one triangle from a point and returns whether any of it shows.</span> |
+| <Link id="m-checkvisibility-2" /><code>{"private static bool CheckVisibility(int renderResolution, Vector3 position, RenderTexture renderTexture, Material downscaleMaterial, List<RenderTexture> downscalingRTs, Texture2D extraction, Vector3 normalDirection, Camera camera)"}</code> | <span className="api-desc">Renders one triangle from a point and returns whether any of it shows.</span> |
+| <Link id="m-rotations" /><code>{"private static IEnumerable<Quaternion> Rotations() (iterator)"}</code> | <span className="api-desc">The test view directions: six axes plus eight diagonals.</span> |
 
 </details>

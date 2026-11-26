@@ -29,4 +29,8 @@ Who a Steel Song skill message is for: the local player (status), other players 
 
 Members of other types that take, return or hold a `MessageType`:
 
+<div className="api-used-in">
+
 [`SteelSong.messageType`](/mod/game-api/types/global-s/steelsong#m-messagetype), [`SteelSong.SetupForEntity`](/mod/game-api/types/global-s/steelsong#m-setupforentity).
+
+</div>

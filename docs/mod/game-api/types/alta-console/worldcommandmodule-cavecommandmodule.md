@@ -23,13 +23,13 @@ Console commands under `world caves`. Server only.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-caveteleport" /><code>{"static async Task CaveTeleport("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> | `world caves teleport`: generates caves down to a layer and teleports players to its portal. Probably does nothing if the layer was already generated. |
+| <Link id="m-caveteleport" /><code>{"static async Task CaveTeleport("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> | <span className="api-desc">`world caves teleport`: generates caves down to a layer and teleports players to its portal. Probably does nothing if the layer was already generated.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> | `world caves reset`: wipes all cave chunks and moves players in the caves to the surface, unless a wipe is already running. |
+| <Link id="m-cavewipe" /><code>{"private static async Task CaveWipe()"}</code> | <span className="api-desc">`world caves reset`: wipes all cave chunks and moves players in the caves to the surface, unless a wipe is already running.</span> |
 
 </details>

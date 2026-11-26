@@ -21,19 +21,19 @@ Shows a player's unspent skill points as pooled crystal effects at one spot, one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CrystalsAvailablePointManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CrystalsAvailablePointManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activevisuals" /><code>{"private Queue<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeVisuals"}</code> | Effects currently showing free points. |
-| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> | Transform the effects are spawned at. |
-| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> | Pooled effect spawned for each point (was `visualDefinition`). |
-| <Link id="m-temporaryvisuals" /><code>{"private Queue<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> temporaryVisuals"}</code> | Effects opened by `OpenTemporary`, cleared by `CleanTemporary`. |
+| <Link id="m-activevisuals" /><code>{"private Queue<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeVisuals"}</code> | <span className="api-desc">Effects currently showing free points.</span> |
+| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> | <span className="api-desc">Transform the effects are spawned at.</span> |
+| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> | <span className="api-desc">Pooled effect spawned for each point (was `visualDefinition`).</span> |
+| <Link id="m-temporaryvisuals" /><code>{"private Queue<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> temporaryVisuals"}</code> | <span className="api-desc">Effects opened by `OpenTemporary`, cleared by `CleanTemporary`.</span> |
 
 </details>
 
@@ -41,7 +41,7 @@ Shows a player's unspent skill points as pooled crystal effects at one spot, one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> | Releases every temporary effect back to its pool. |
-| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> | Spawns one temporary effect, kept apart from the active ones. The index is ignored. |
-| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> | Spawns one more active point effect. The index is ignored. |
-| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> | Adds or releases active effects until their count matches the given free points. |
+| <Link id="m-cleantemporary" /><code>{"override void CleanTemporary()"}</code> | <span className="api-desc">Releases every temporary effect back to its pool.</span> |
+| <Link id="m-opentemporary" /><code>{"override void OpenTemporary(int index)"}</code> | <span className="api-desc">Spawns one temporary effect, kept apart from the active ones. The index is ignored.</span> |
+| <Link id="m-openvisual" /><code>{"override void OpenVisual(int index)"}</code> | <span className="api-desc">Spawns one more active point effect. The index is ignored.</span> |
+| <Link id="m-updateavailablepointsvisual" /><code>{"override void UpdateAvailablePointsVisual(int freePoints)"}</code> | <span className="api-desc">Adds or releases active effects until their count matches the given free points.</span> |

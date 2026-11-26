@@ -20,16 +20,20 @@ Web API model listing a player's action stats.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerActionStatResponse()"}</code> | Creates a `PlayerActionStatResponse` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerActionStatResponse()"}</code> | <span className="api-desc">Creates a `PlayerActionStatResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionstats" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> | Progress for each tracked stat. |
+| <Link id="m-actionstats" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> | <span className="api-desc">Progress for each tracked stat.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerActionStatResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetActionStatsForUserAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getactionstatsforuserasync).
+
+</div>

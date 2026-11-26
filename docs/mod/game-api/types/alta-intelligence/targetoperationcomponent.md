@@ -22,12 +22,12 @@ Base component that supplies a `TargetOperation` for AI target scoring. Its obje
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TargetOperationComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected TargetOperationComponent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Builds the target operation. |
-| <Link id="m-getname" /><code>{"protected abstract string GetName()"}</code> | Name for the operation, also used as the object name. |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Renames the object to `GetName` in the editor. |
+| <Link id="m-getoperation" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Builds the target operation.</span> |
+| <Link id="m-getname" /><code>{"protected abstract string GetName()"}</code> | <span className="api-desc">Name for the operation, also used as the object name.</span> |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Renames the object to `GetName` in the editor.</span> |

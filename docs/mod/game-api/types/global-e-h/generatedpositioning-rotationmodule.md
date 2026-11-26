@@ -28,4 +28,8 @@ Rotation module choices for `GeneratedPositioning`: `Static` or `RandomY`.
 
 Members of other types that take, return or hold a `RotationModule`:
 
+<div className="api-used-in">
+
 [`GeneratedPositioning.rotation`](/mod/game-api/types/global-e-h/generatedpositioning#m-rotation), [`GeneratedPositioning.rotationTypes`](/mod/game-api/types/global-e-h/generatedpositioning#m-rotationtypes).
+
+</div>

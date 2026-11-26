@@ -21,10 +21,14 @@ Spawns population items for a population folder. `BasicPopulationManager` implem
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> | Spawns one population item for the given folder and returns it. |
+| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> | <span className="api-desc">Spawns one population item for the given folder and returns it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPopulationManager`:
 
+<div className="api-used-in">
+
 [`BasicPopulationFolder.Manager`](/mod/game-api/types/alta-world-generation/basicpopulationfolder#m-manager), [`IPopulationFolder.Manager`](/mod/game-api/types/alta-world-generation/ipopulationfolder#m-manager), [`PopulationPath.Manager`](/mod/game-api/types/global-p/populationpath#m-manager).
+
+</div>

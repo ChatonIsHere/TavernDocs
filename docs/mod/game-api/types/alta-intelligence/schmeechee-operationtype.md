@@ -28,4 +28,8 @@ Which Schmeechee state a Schmeechee AI operation checks: `Grounded` or `UpsideDo
 
 Members of other types that take, return or hold a `OperationType`:
 
+<div className="api-used-in">
+
 [`Schmeechee.Operation.operation`](/mod/game-api/types/alta-intelligence/schmeechee-operation#m-operation), [`Schmeechee.Operation.Operation`](/mod/game-api/types/alta-intelligence/schmeechee-operation#m-ctor), [`SchmeecheeOperation.operation`](/mod/game-api/types/alta-intelligence/schmeecheeoperation#m-operation).
+
+</div>

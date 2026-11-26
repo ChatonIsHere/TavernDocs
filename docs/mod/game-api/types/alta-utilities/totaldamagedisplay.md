@@ -21,16 +21,16 @@ Live data display showing `DamageDisplayer.TotalDamage`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TotalDamageDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TotalDamageDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | "Total Damage". |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">"Total Damage".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | Returns the total damage as text. |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">Returns the total damage as text.</span> |

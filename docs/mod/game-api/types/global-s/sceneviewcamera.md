@@ -21,16 +21,16 @@ Networked component that only stays on the server; clients remove it on initiali
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneViewCamera()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SceneViewCamera()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mesh" /><code>{"private GameObject mesh"}</code> | Unused mesh object reference. |
+| <Link id="m-mesh" /><code>{"private GameObject mesh"}</code> | <span className="api-desc">Unused mesh object reference.</span> |
 
 </details>
 
@@ -38,14 +38,14 @@ Networked component that only stays on the server; clients remove it on initiali
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Destroys this component on clients. |
-| <Link id="m-awake" /><code>{"protected void Awake()"}</code> | Empty. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Destroys this component on clients.</span> |
+| <Link id="m-awake" /><code>{"protected void Awake()"}</code> | <span className="api-desc">Empty.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Empty. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

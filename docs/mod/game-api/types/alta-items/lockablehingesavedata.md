@@ -23,13 +23,13 @@ Save data for a `LockableHinge`: whether it has a lock and its state.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> | Creates a `LockableHingeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> | <span className="api-desc">Creates a `LockableHingeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haslock" /><code>{"bool hasLock"}</code> | Whether a lock is attached. |
-| <Link id="m-isdetachable" /><code>{"bool isDetachable"}</code> | Whether the lock can be taken off. |
-| <Link id="m-islocked" /><code>{"bool isLocked"}</code> | Whether the lock is locked. |
-| <Link id="m-lockprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" lockPrefab"}</code> | Prefab of the attached lock. |
+| <Link id="m-haslock" /><code>{"bool hasLock"}</code> | <span className="api-desc">Whether a lock is attached.</span> |
+| <Link id="m-isdetachable" /><code>{"bool isDetachable"}</code> | <span className="api-desc">Whether the lock can be taken off.</span> |
+| <Link id="m-islocked" /><code>{"bool isLocked"}</code> | <span className="api-desc">Whether the lock is locked.</span> |
+| <Link id="m-lockprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" lockPrefab"}</code> | <span className="api-desc">Prefab of the attached lock.</span> |

@@ -21,16 +21,16 @@ Lets an effect object leave normal chunking: on the server it stops being saved 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onplay" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onPlay"}</code> | Position event fired by `Play`. |
+| <Link id="m-onplay" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionhandler">{"PositionHandler"}</Link>{" onPlay"}</code> | <span className="api-desc">Position event fired by `Play`.</span> |
 
 </details>
 
@@ -38,14 +38,14 @@ Lets an effect object leave normal chunking: on the server it stops being saved 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gounchunked" /><code>{"void GoUnchunked()"}</code> | Server: marks the prefab as not saved, moves the entity to the global chunk if it has no chunking parent, and watches parent changes. |
-| <Link id="m-play" /><code>{"void Play()"}</code> | Invokes `onPlay` with this object's position. |
+| <Link id="m-gounchunked" /><code>{"void GoUnchunked()"}</code> | <span className="api-desc">Server: marks the prefab as not saved, moves the entity to the global chunk if it has no chunking parent, and watches parent changes.</span> |
+| <Link id="m-play" /><code>{"void Play()"}</code> | <span className="api-desc">Invokes `onPlay` with this object's position.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> | Moves the entity back to the global chunk when it loses its parent. |
+| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> | <span className="api-desc">Moves the entity back to the global chunk when it loses its parent.</span> |
 
 </details>

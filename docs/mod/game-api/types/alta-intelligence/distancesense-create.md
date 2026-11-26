@@ -22,4 +22,4 @@ Editor menu item for making a `DistanceSense` asset. Does nothing at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DistanceSense.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `DistanceSense.Create` with default values.</span> |

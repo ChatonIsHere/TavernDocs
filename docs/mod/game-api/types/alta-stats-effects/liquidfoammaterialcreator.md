@@ -21,16 +21,16 @@ Makes liquid foam materials, setting the liquid's rim colour on a copy of the te
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidFoamMaterialCreator()"}</code> | Creates a `LiquidFoamMaterialCreator` with default values. |
+| <Link id="m-ctor" /><code>{"LiquidFoamMaterialCreator()"}</code> | <span className="api-desc">Creates a `LiquidFoamMaterialCreator` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rimcolor" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" rimColor"}</code> | The `_RimColor` shader property. |
+| <Link id="m-rimcolor" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/colormaterialproperty">{"ColorMaterialProperty"}</Link>{" rimColor"}</code> | <span className="api-desc">The `_RimColor` shader property.</span> |
 
 </details>
 
@@ -38,10 +38,14 @@ Makes liquid foam materials, setting the liquid's rim colour on a copy of the te
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-creatematerial" /><code>{"override Material CreateMaterial("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" settings, Material materialTemplate)"}</code> | Copies the template and sets `_RimColor` from the liquid visual. |
+| <Link id="m-creatematerial" /><code>{"override Material CreateMaterial("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" settings, Material materialTemplate)"}</code> | <span className="api-desc">Copies the template and sets `_RimColor` from the liquid visual.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LiquidFoamMaterialCreator`:
 
+<div className="api-used-in">
+
 [`LiquidParticlesRendererColorer.foamMaterialCreator`](/mod/game-api/types/global-i-l/liquidparticlesrenderercolorer#m-foammaterialcreator).
+
+</div>

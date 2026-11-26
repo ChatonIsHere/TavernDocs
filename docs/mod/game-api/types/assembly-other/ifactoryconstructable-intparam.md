@@ -20,4 +20,4 @@ MonoBehaviour that an async factory sets up with one parameter straight after cr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> | Called by `FactoryAsync` with the create parameter once the instance exists. |
+| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> | <span className="api-desc">Called by `FactoryAsync` with the create parameter once the instance exists.</span> |

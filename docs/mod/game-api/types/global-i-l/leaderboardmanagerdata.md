@@ -24,17 +24,17 @@ Save data for `LeaderboardManager` (version 2): each course's top players and ea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardManagerData()"}</code> | Creates a `LeaderboardManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerData()"}</code> | <span className="api-desc">Creates a `LeaderboardManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry">{"LeaderboardManagerData.LeaderboardEntry"}</Link>{"[] entries"}</code> | One entry per course with player IDs and times. |
-| <Link id="m-players" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes">{"LeaderboardManagerData.PlayerBestTimes"}</Link>{"[] players"}</code> | One entry per player with their best time on each course. |
+| <Link id="m-entries" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry">{"LeaderboardManagerData.LeaderboardEntry"}</Link>{"[] entries"}</code> | <span className="api-desc">One entry per course with player IDs and times.</span> |
+| <Link id="m-players" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes">{"LeaderboardManagerData.PlayerBestTimes"}</Link>{"[] players"}</code> | <span className="api-desc">One entry per player with their best time on each course.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(Dictionary<"}<Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", List<"}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-rankedplayer">{"LeaderboardManager.RankedPlayer"}</Link>{">> availableLeaderboards, Dictionary<int, "}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> trackers)"}</code> | Fills the save from the manager's boards and player trackers. |
+| <Link id="m-setup" /><code>{"void Setup(Dictionary<"}<Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", List<"}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-rankedplayer">{"LeaderboardManager.RankedPlayer"}</Link>{">> availableLeaderboards, Dictionary<int, "}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> trackers)"}</code> | <span className="api-desc">Fills the save from the manager's boards and player trackers.</span> |

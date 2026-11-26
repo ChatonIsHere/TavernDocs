@@ -20,17 +20,21 @@ Saved progression levels for one player, used in `OfflinePlayerProgressionHandle
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> | Creates an `OfflinePlayerProgress` with default values. |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> | <span className="api-desc">Creates an `OfflinePlayerProgress` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-levels" /><code>{"int[] levels"}</code> | The player's level in each progression path, indexed by `ProgressionPath`. |
-| <Link id="m-useridentifier" /><code>{"int userIdentifier"}</code> | The player's user id. |
+| <Link id="m-levels" /><code>{"int[] levels"}</code> | <span className="api-desc">The player's level in each progression path, indexed by `ProgressionPath`.</span> |
+| <Link id="m-useridentifier" /><code>{"int userIdentifier"}</code> | <span className="api-desc">The player's user id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OfflinePlayerProgress`:
 
+<div className="api-used-in">
+
 [`OfflinePlayerProgressionHandlerSaveData.progresses`](/mod/game-api/types/global-m-o/offlineplayerprogressionhandlersavedata#m-progresses).
+
+</div>

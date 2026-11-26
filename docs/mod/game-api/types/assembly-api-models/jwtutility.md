@@ -20,4 +20,4 @@ Builds a `JwtSecurityToken` from a raw token string without checking its signatu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createfromstring" /><code>{"static JwtSecurityToken CreateFromString(string rawData, bool includeRawData = false)"}</code> | Decodes the token's payload into claims (array values become one claim each). Optionally adds the raw token as a `raw` claim. No signature check. |
+| <Link id="m-createfromstring" /><code>{"static JwtSecurityToken CreateFromString(string rawData, bool includeRawData = false)"}</code> | <span className="api-desc">Decodes the token's payload into claims (array values become one claim each). Optionally adds the raw token as a `raw` claim. No signature check.</span> |

@@ -22,10 +22,10 @@ Serializer for logic value data, sent as its logic identifier and looked up in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicValueDataSerialization()"}</code> | Creates a `TypeSerializationHelper.LogicValueDataSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"LogicValueDataSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.LogicValueDataSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Writes the data's logic identifier, or reads one and fetches the data from `GlobalLogicManager.Current`, logging an error if missing. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Writes the data's logic identifier, or reads one and fetches the data from `GlobalLogicManager.Current`, logging an error if missing.</span> |

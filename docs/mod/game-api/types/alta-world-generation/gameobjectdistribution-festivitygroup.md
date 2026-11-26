@@ -23,4 +23,4 @@ Concrete festivity group for `GameObjectDistribution`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> | Creates a `GameObjectDistribution.FestivityGroup` with default values. |
+| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> | <span className="api-desc">Creates a `GameObjectDistribution.FestivityGroup` with default values.</span> |

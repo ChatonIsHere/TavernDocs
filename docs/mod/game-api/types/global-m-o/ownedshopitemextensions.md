@@ -21,4 +21,4 @@ Extension methods for `OwnedShopItem`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethash" /><code>{"static uint GetHash("}<Link to="/mod/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{" item)"}</code> | Returns the compressed hash of the item's SKU. |
+| <Link id="m-gethash" /><code>{"static uint GetHash("}<Link to="/mod/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{" item)"}</code> | <span className="api-desc">Returns the compressed hash of the item's SKU.</span> |

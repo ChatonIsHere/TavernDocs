@@ -22,17 +22,17 @@ Spawn surface that finds points by raycasting outward in random directions from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SphericalSurface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SphericalSurface()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ishemisphere" /><code>{"private bool isHemisphere"}</code> | Only cast over the half facing the object's up. |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | How far the raycasts reach. |
+| <Link id="m-ishemisphere" /><code>{"private bool isHemisphere"}</code> | <span className="api-desc">Only cast over the half facing the object's up.</span> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">How far the raycasts reach.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Spawn surface that finds points by raycasting outward in random directions from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | Tries up to the global retry count of random outward raycasts of `radius` length and returns the first hit. |
-| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | Sets the radius. |
+| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | <span className="api-desc">Tries up to the global retry count of random outward raycasts of `radius` length and returns the first hit.</span> |
+| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | <span className="api-desc">Sets the radius.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the sphere in the scene view (not for a hemisphere). |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the sphere in the scene view (not for a hemisphere).</span> |
 
 </details>

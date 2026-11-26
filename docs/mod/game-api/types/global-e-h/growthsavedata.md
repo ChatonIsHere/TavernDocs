@@ -23,17 +23,17 @@ Save data for a `GrowerComponent`: definition, stage, start time and which child
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GrowthSaveData()"}</code> | Creates a `GrowthSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GrowthSaveData()"}</code> | <span className="api-desc">Creates a `GrowthSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | Index of the stage it was in. |
-| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> | Child index of the current stage object, or -1. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | The growth definition in use. |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | Whether growth had started. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Not filled in by `GrowerComponent` when saving. |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Not filled in by `GrowerComponent` when saving. |
-| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> | Stage whose prefab was spawned. |
-| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | Timeline time when growth started. On load, stages are skipped forward by elapsed time. |
+| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | <span className="api-desc">Index of the stage it was in.</span> |
+| <Link id="m-currentstageentity" /><code>{"int currentStageEntity"}</code> | <span className="api-desc">Child index of the current stage object, or -1.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The growth definition in use.</span> |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | <span className="api-desc">Whether growth had started.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Not filled in by `GrowerComponent` when saving.</span> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | <span className="api-desc">Not filled in by `GrowerComponent` when saving.</span> |
+| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> | <span className="api-desc">Stage whose prefab was spawned.</span> |
+| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | <span className="api-desc">Timeline time when growth started. On load, stages are skipped forward by elapsed time.</span> |

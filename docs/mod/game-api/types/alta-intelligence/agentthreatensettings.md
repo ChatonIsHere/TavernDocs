@@ -22,19 +22,19 @@ Settings for `ActiveThreaten`: face the target for a random time, switching to a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentThreatenSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentThreatenSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canceldistance" /><code>{"private float cancelDistance"}</code> | Backing field for `CancelDistance` (default 10). |
-| <Link id="m-changeto" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" changeTo"}</code> | Backing field for `ChangeTo`. |
-| <Link id="m-instantdistance" /><code>{"private float instantDistance"}</code> | Backing field for `InstantDistance` (default 0). |
-| <Link id="m-isfacing" /><code>{"private bool isFacing"}</code> | Backing field for `IsFacing` (default true). |
+| <Link id="m-canceldistance" /><code>{"private float cancelDistance"}</code> | <span className="api-desc">Backing field for `CancelDistance` (default 10).</span> |
+| <Link id="m-changeto" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" changeTo"}</code> | <span className="api-desc">Backing field for `ChangeTo`.</span> |
+| <Link id="m-instantdistance" /><code>{"private float instantDistance"}</code> | <span className="api-desc">Backing field for `InstantDistance` (default 0).</span> |
+| <Link id="m-isfacing" /><code>{"private bool isFacing"}</code> | <span className="api-desc">Backing field for `IsFacing` (default true).</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Settings for `ActiveThreaten`: face the target for a random time, switching to a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canceldistance-2" /><code>{"float CancelDistance { get; }"}</code> | The action cancels when the target is further than this. |
-| <Link id="m-changeto-2" /><code><Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" ChangeTo { get; }"}</code> | Action set the creature switches to when the action finishes, whether by timeout or the target coming within `InstantDistance`. |
-| <Link id="m-instantdistance-2" /><code>{"float InstantDistance { get; }"}</code> | The action finishes at once when the target comes closer than this. |
-| <Link id="m-isfacing-2" /><code>{"bool IsFacing { get; }"}</code> | Whether the creature turns to face the target while threatening. |
+| <Link id="m-canceldistance-2" /><code>{"float CancelDistance { get; }"}</code> | <span className="api-desc">The action cancels when the target is further than this.</span> |
+| <Link id="m-changeto-2" /><code><Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" ChangeTo { get; }"}</code> | <span className="api-desc">Action set the creature switches to when the action finishes, whether by timeout or the target coming within `InstantDistance`.</span> |
+| <Link id="m-instantdistance-2" /><code>{"float InstantDistance { get; }"}</code> | <span className="api-desc">The action finishes at once when the target comes closer than this.</span> |
+| <Link id="m-isfacing-2" /><code>{"bool IsFacing { get; }"}</code> | <span className="api-desc">Whether the creature turns to face the target while threatening.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the shared `ActiveThreaten` action, which uses a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the shared `ActiveThreaten` action, which uses a target.</span> |

@@ -28,4 +28,8 @@ SAColliderBuilder (third party, editor) option for how many bone weights per ver
 
 Members of other types that take, return or hold a `BoneWeightType`:
 
+<div className="api-used-in">
+
 [`SABoneColliderCommon.SplitProperty.boneWeightType`](/mod/game-api/types/global-s/sabonecollidercommon-splitproperty#m-boneweighttype).
+
+</div>

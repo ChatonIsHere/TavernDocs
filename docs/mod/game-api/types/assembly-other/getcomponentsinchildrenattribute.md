@@ -21,10 +21,10 @@ Like `GetComponentsAttribute`, but collects components from this object and its 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentsInChildrenAttribute()"}</code> | Creates a `GetComponentsInChildrenAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentsInChildrenAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentsInChildrenAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponents" /><code>{"override Component[] GetComponents(Transform transform, Type type)"}</code> | All matching components in this object and its children, honouring `IncludeInActive`. |
+| <Link id="m-getcomponents" /><code>{"override Component[] GetComponents(Transform transform, Type type)"}</code> | <span className="api-desc">All matching components in this object and its children, honouring `IncludeInActive`.</span> |

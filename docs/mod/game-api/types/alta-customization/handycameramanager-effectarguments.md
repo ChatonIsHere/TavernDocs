@@ -21,18 +21,22 @@ Payload for the manager's effect message: where a hand camera appeared or vanish
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EffectArguments(Vector3 position, bool isSpawn, uint playerIdentifier)"}</code> | Creates a `HandyCameraManager.EffectArguments` from `position`, `isSpawn` and `playerIdentifier`. |
+| <Link id="m-ctor" /><code>{"EffectArguments(Vector3 position, bool isSpawn, uint playerIdentifier)"}</code> | <span className="api-desc">Creates a `HandyCameraManager.EffectArguments` from `position`, `isSpawn` and `playerIdentifier`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> | True when the camera spawned, false when it disappeared. Picks which effects clients play. |
-| <Link id="m-playeridentifier" /><code>{"uint playerIdentifier"}</code> | Identifier of the player who owns the camera. That player's client also updates its own distance check. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position to play the spawn or disappear effects at. |
+| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> | <span className="api-desc">True when the camera spawned, false when it disappeared. Picks which effects clients play.</span> |
+| <Link id="m-playeridentifier" /><code>{"uint playerIdentifier"}</code> | <span className="api-desc">Identifier of the player who owns the camera. That player's client also updates its own distance check.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">World position to play the spawn or disappear effects at.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EffectArguments`:
 
+<div className="api-used-in">
+
 [`HandyCameraManager.syncEffects`](/mod/game-api/types/alta-customization/handycameramanager#m-synceffects), [`HandyCameraManager.SyncEffects`](/mod/game-api/types/alta-customization/handycameramanager#m-synceffects-2).
+
+</div>

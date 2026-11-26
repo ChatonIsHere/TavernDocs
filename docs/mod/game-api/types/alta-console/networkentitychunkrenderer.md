@@ -22,10 +22,10 @@ NLog layout renderer `${entity-chunk}`: the chunk of a `NetworkEntity` passed as
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityChunkRenderer()"}</code> | Creates a `NetworkEntityChunkRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkEntityChunkRenderer()"}</code> | <span className="api-desc">Creates a `NetworkEntityChunkRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's chunk. |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Returns the entity's chunk.</span> |

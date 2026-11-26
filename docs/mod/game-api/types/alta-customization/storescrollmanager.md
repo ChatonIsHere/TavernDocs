@@ -21,16 +21,16 @@ Scroll list showing the cosmetics on the store right now.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StoreScrollManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StoreScrollManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-regularscroll" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" regularScroll"}</code> | The normal cosmetic scroller, reset when the store opens. |
+| <Link id="m-regularscroll" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" regularScroll"}</code> | <span className="api-desc">The normal cosmetic scroller, reset when the store opens.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Scroll list showing the cosmetics on the store right now.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-open" /><code>{"void Open()"}</code> | Fills the list with cosmetic definitions currently on the store and clears the regular scroller's category. |
+| <Link id="m-open" /><code>{"void Open()"}</code> | <span className="api-desc">Fills the list with cosmetic definitions currently on the store and clears the regular scroller's category.</span> |

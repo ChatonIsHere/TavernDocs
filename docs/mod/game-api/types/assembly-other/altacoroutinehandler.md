@@ -22,10 +22,14 @@ Internal singleton behaviour that `AltaCoroutine` runs its coroutines on when no
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaCoroutineHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AltaCoroutineHandler()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AltaCoroutineHandler`:
 
+<div className="api-used-in">
+
 [`AltaCoroutine.AltaCoroutineHandler`](/mod/game-api/types/assembly-other/altacoroutine#m-altacoroutinehandler).
+
+</div>

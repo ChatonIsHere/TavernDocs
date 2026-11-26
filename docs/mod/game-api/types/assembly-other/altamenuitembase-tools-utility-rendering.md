@@ -22,4 +22,4 @@ Editor menu folder `Tools/Utility/Rendering`: menu item classes inherit it to ap
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Rendering()"}</code> | Creates an `AltaMenuItemBase.Tools.Utility.Rendering` with default values. |
+| <Link id="m-ctor" /><code>{"protected Rendering()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Utility.Rendering` with default values.</span> |

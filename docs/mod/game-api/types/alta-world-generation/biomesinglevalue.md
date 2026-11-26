@@ -21,11 +21,15 @@ A biome paired with a float, serialisable in the inspector. `Section` uses an ar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeSingleValue()"}</code> | Creates a `BiomeSingleValue` from `biome` and `value`. |
-| <Link id="m-ctor-2" /><code>{"BiomeSingleValue("}<Link to="/mod/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome, float value)"}</code> | Creates a `BiomeSingleValue` from `biome` and `value`. |
+| <Link id="m-ctor" /><code>{"BiomeSingleValue()"}</code> | <span className="api-desc">Creates a `BiomeSingleValue` from `biome` and `value`.</span> |
+| <Link id="m-ctor-2" /><code>{"BiomeSingleValue("}<Link to="/mod/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome, float value)"}</code> | <span className="api-desc">Creates a `BiomeSingleValue` from `biome` and `value`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BiomeSingleValue`:
 
+<div className="api-used-in">
+
 [`Section.biomeWeightings`](/mod/game-api/types/alta-world-generation/section#m-biomeweightings).
+
+</div>

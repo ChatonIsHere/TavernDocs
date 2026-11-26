@@ -21,10 +21,10 @@ Runtime instance of the `Stretch` plugin part: extends a height map into the Y a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StretchInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/stretch">{"Stretch"}</Link>{" part)"}</code> | Creates a `StretchInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"StretchInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/stretch">{"Stretch"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `StretchInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | For each column, sets the first cell to 0.75 and fills the rest from the height map value times the stretch curve, clamped to the part's range. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">For each column, sets the first cell to 0.75 and fills the rest from the height map value times the stretch curve, clamped to the part's range.</span> |

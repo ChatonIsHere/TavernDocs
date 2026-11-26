@@ -22,16 +22,20 @@ Asset for something that happens when the local player enters or leaves a `Locat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ChunkEffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ChunkEffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"abstract void Apply(bool isContained)"}</code> | Called when the chunk's `HasLocalPlayerChanged` fires. `isContained` is true when the local player is now in the chunk. |
+| <Link id="m-apply" /><code>{"abstract void Apply(bool isContained)"}</code> | <span className="api-desc">Called when the chunk's `HasLocalPlayerChanged` fires. `isContained` is true when the local player is now in the chunk.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChunkEffect`:
 
+<div className="api-used-in">
+
 [`LocationChunk.chunkEffects`](/mod/game-api/types/alta-world/locationchunk#m-chunkeffects).
+
+</div>

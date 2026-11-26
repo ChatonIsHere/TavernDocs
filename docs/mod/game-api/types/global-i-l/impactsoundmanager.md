@@ -22,16 +22,16 @@ Scene singleton that holds the impact sound settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ImpactSoundManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impactsoundsettings" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" impactSoundSettings"}</code> | Backing field for `ImpactSoundSettings`. |
+| <Link id="m-impactsoundsettings" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" impactSoundSettings"}</code> | <span className="api-desc">Backing field for `ImpactSoundSettings`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Scene singleton that holds the impact sound settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impactsoundsettings-2" /><code><Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" { get; }"}</code> | The impact sound settings asset. |
+| <Link id="m-impactsoundsettings-2" /><code><Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/impactsoundsettings">{"ImpactSoundSettings"}</Link>{" { get; }"}</code> | <span className="api-desc">The impact sound settings asset.</span> |

@@ -20,5 +20,5 @@ Static info about this device that the API client sends with logins and joins. `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"static string Identifier { get; set; }"}</code> | This device's id; the game sets it to Unity's `SystemInfo.deviceUniqueIdentifier`. |
-| <Link id="m-platformtarget" /><code>{"static int PlatformTarget { get; set; }"}</code> | Platform the game runs on, sent as the login `Target`; the game sets it from `ServerFeatureSetProvider.FeatureSet`. Defaults to 1. |
+| <Link id="m-identifier" /><code>{"static string Identifier { get; set; }"}</code> | <span className="api-desc">This device's id; the game sets it to Unity's `SystemInfo.deviceUniqueIdentifier`.</span> |
+| <Link id="m-platformtarget" /><code>{"static int PlatformTarget { get; set; }"}</code> | <span className="api-desc">Platform the game runs on, sent as the login `Target`; the game sets it from `ServerFeatureSetProvider.FeatureSet`. Defaults to 1.</span> |

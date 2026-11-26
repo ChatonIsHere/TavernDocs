@@ -21,4 +21,4 @@ Device lifecycle for OpenXR headsets. Adds nothing to `VirtualRealityDeviceLifec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OpenXRDeviceLifecycle("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Creates an `OpenXRDeviceLifecycle` from `player` and `platformDevice`. |
+| <Link id="m-ctor" /><code>{"OpenXRDeviceLifecycle("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | <span className="api-desc">Creates an `OpenXRDeviceLifecycle` from `player` and `platformDevice`.</span> |

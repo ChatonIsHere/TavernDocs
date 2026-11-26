@@ -20,17 +20,17 @@ Serialized settings for a world landmark: how many chunks away it stays loaded, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> | Creates a `WorldLandmarkConfig` with default values. |
+| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> | <span className="api-desc">Creates a `WorldLandmarkConfig` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidchunkloaddistance" /><code>{"private int androidChunkLoadDistance"}</code> | Chunk load distance for Android builds. Default 5. |
-| <Link id="m-chunkloaddistance" /><code>{"private int chunkLoadDistance"}</code> | Chunk load distance for other platforms. Default 5. |
+| <Link id="m-androidchunkloaddistance" /><code>{"private int androidChunkLoadDistance"}</code> | <span className="api-desc">Chunk load distance for Android builds. Default 5.</span> |
+| <Link id="m-chunkloaddistance" /><code>{"private int chunkLoadDistance"}</code> | <span className="api-desc">Chunk load distance for other platforms. Default 5.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Serialized settings for a world landmark: how many chunks away it stays loaded, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunkloaddistance-2" /><code>{"int ChunkLoadDistance { get; }"}</code> | Chunk load distance for this landmark. Returns the non-Android value. |
+| <Link id="m-chunkloaddistance-2" /><code>{"int ChunkLoadDistance { get; }"}</code> | <span className="api-desc">Chunk load distance for this landmark. Returns the non-Android value.</span> |

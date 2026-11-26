@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Global Settings/Field Access, used for settings
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Field_Access()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access` with default values. |
+| <Link id="m-ctor" /><code>{"protected Field_Access()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access` with default values.</span> |

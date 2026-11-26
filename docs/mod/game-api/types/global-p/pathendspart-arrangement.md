@@ -30,4 +30,8 @@ How `PathEndsPart` picks which path end gets which side: fixed direction, side A
 
 Members of other types that take, return or hold a `Arrangement`:
 
+<div className="api-used-in">
+
 [`PathEndsPart.arrangement`](/mod/game-api/types/global-p/pathendspart#m-arrangement).
+
+</div>

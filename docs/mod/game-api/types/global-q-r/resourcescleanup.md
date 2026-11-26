@@ -21,17 +21,17 @@ Runs `Resources.UnloadUnusedAssets` at the end of the frame, from a hidden objec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/resourcescleanup">{"ResourcesCleanup"}</Link>{" instance"}</code> | The cleanup object, made on first `Run`. |
-| <Link id="m-isunloading" /><code>{"private static bool isUnloading"}</code> | True while an unload is in progress. |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/resourcescleanup">{"ResourcesCleanup"}</Link>{" instance"}</code> | <span className="api-desc">The cleanup object, made on first `Run`.</span> |
+| <Link id="m-isunloading" /><code>{"private static bool isUnloading"}</code> | <span className="api-desc">True while an unload is in progress.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Runs `Resources.UnloadUnusedAssets` at the end of the frame, from a hidden objec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"static void Run()"}</code> | Starts an end-of-frame unload in play mode if one isn't already running. |
+| <Link id="m-run" /><code>{"static void Run()"}</code> | <span className="api-desc">Starts an end-of-frame unload in play mode if one isn't already running.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears the unloading flag. |
-| <Link id="m-unloadatendofframe" /><code>{"private static IEnumerator UnloadAtEndOfFrame() (iterator)"}</code> | Coroutine that waits for end of frame and unloads unused assets. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Clears the unloading flag.</span> |
+| <Link id="m-unloadatendofframe" /><code>{"private static IEnumerator UnloadAtEndOfFrame() (iterator)"}</code> | <span className="api-desc">Coroutine that waits for end of frame and unloads unused assets.</span> |
 
 </details>

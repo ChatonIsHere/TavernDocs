@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Woodcutting`: menu item clas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Woodcutting()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting` with default values. |
+| <Link id="m-ctor" /><code>{"protected Woodcutting()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting` with default values.</span> |

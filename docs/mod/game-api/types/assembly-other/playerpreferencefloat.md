@@ -21,4 +21,4 @@ A float stored in `PlayerPreferences` under a fixed key. Not used in this build.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceFloat(string key)"}</code> | Creates a `PlayerPreferenceFloat` from `key`. |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceFloat(string key)"}</code> | <span className="api-desc">Creates a `PlayerPreferenceFloat` from `key`.</span> |

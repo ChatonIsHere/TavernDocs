@@ -20,17 +20,17 @@ Network message from `PickupContainer` asking to pull a pouch of items out for a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RequestPouchArguments("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, bool isFull)"}</code> | Creates a `RequestPouchArguments` from `interactor` and `isFull`. |
+| <Link id="m-ctor" /><code>{"RequestPouchArguments("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, bool isFull)"}</code> | <span className="api-desc">Creates a `RequestPouchArguments` from `interactor` and `isFull`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactorid" /><code>{"private uint interactorId"}</code> | Backing field for `InteractorId`. |
-| <Link id="m-isfull" /><code>{"private bool isFull"}</code> | Backing field for `IsFull`. |
+| <Link id="m-interactorid" /><code>{"private uint interactorId"}</code> | <span className="api-desc">Backing field for `InteractorId`.</span> |
+| <Link id="m-isfull" /><code>{"private bool isFull"}</code> | <span className="api-desc">Backing field for `IsFull`.</span> |
 
 </details>
 
@@ -38,17 +38,21 @@ Network message from `PickupContainer` asking to pull a pouch of items out for a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactorid-2" /><code>{"uint InteractorId { get; }"}</code> | Entity ID of the hand taking the pouch. |
-| <Link id="m-isfull-2" /><code>{"bool IsFull { get; }"}</code> | True to take everything stored, false to take half. |
+| <Link id="m-interactorid-2" /><code>{"uint InteractorId { get; }"}</code> | <span className="api-desc">Entity ID of the hand taking the pouch.</span> |
+| <Link id="m-isfull-2" /><code>{"bool IsFull { get; }"}</code> | <span className="api-desc">True to take everything stored, false to take half.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the hand ID and the flag. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes the hand ID and the flag.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RequestPouchArguments`:
 
+<div className="api-used-in">
+
 [`PickupContainer.NetworkSpawnPouch`](/mod/game-api/types/global-p/pickupcontainer#m-networkspawnpouch), [`PickupContainer.spawnPouch`](/mod/game-api/types/global-p/pickupcontainer#m-spawnpouch).
+
+</div>

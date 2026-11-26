@@ -20,5 +20,5 @@ A command sent to a game server over its WebSocket, with an id to match the repl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"string content"}</code> | The command text. |
-| <Link id="m-id" /><code>{"uint id"}</code> | Command id; probably echoed back as `CommandId` in the `GameServerWebsocketResponse`. |
+| <Link id="m-content" /><code>{"string content"}</code> | <span className="api-desc">The command text.</span> |
+| <Link id="m-id" /><code>{"uint id"}</code> | <span className="api-desc">Command id; probably echoed back as `CommandId` in the `GameServerWebsocketResponse`.</span> |

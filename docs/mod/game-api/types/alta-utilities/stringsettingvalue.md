@@ -20,18 +20,18 @@ Serializable check that a string game setting does, or does not, equal an expect
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StringSettingValue()"}</code> | Creates a `StringSettingValue` with default values. |
+| <Link id="m-ctor" /><code>{"StringSettingValue()"}</code> | <span className="api-desc">Creates a `StringSettingValue` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-expectedvalue" /><code>{"private string expectedValue"}</code> | The value to compare with. |
-| <Link id="m-isinversed" /><code>{"private bool isInversed"}</code> | Flips the check to not equal. |
-| <Link id="m-setting" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/stringgamesettingsaccess">{"StringGameSettingsAccess"}</Link>{" setting"}</code> | The string setting to read. |
+| <Link id="m-expectedvalue" /><code>{"private string expectedValue"}</code> | <span className="api-desc">The value to compare with.</span> |
+| <Link id="m-isinversed" /><code>{"private bool isInversed"}</code> | <span className="api-desc">Flips the check to not equal.</span> |
+| <Link id="m-setting" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/stringgamesettingsaccess">{"StringGameSettingsAccess"}</Link>{" setting"}</code> | <span className="api-desc">The string setting to read.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Serializable check that a string game setting does, or does not, equal an expect
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> | True when the setting equals `expectedValue`, or when it doesn't if `isInversed` is set. |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> | <span className="api-desc">True when the setting equals `expectedValue`, or when it doesn't if `isInversed` is set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StringSettingValue`:
 
+<div className="api-used-in">
+
 [`SettingBasedToggler.expectedStringValues`](/mod/game-api/types/alta-utilities/settingbasedtoggler#m-expectedstringvalues).
+
+</div>

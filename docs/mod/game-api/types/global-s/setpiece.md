@@ -22,18 +22,18 @@ A saved group of networked objects (`SetPieceData`) placed as one. On the server
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetPiece()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SetPiece()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"private "}<Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> | The set piece asset with the saved objects. Cleared on the server after spawning. |
-| <Link id="m-olddata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" oldData"}</code> | The last `data` seen by `OnValidate`, to spot changes. |
-| <Link id="m-savemode" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> | Save mode passed when loading the objects. Default `Ignore`. |
+| <Link id="m-data" /><code>{"private "}<Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> | <span className="api-desc">The set piece asset with the saved objects. Cleared on the server after spawning.</span> |
+| <Link id="m-olddata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" oldData"}</code> | <span className="api-desc">The last `data` seen by `OnValidate`, to spot changes.</span> |
+| <Link id="m-savemode" /><code>{"private "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode"}</code> | <span className="api-desc">Save mode passed when loading the objects. Default `Ignore`.</span> |
 
 </details>
 
@@ -41,22 +41,22 @@ A saved group of networked objects (`SetPieceData`) placed as one. On the server
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearpieceineditor" /><code>{"void ClearPieceInEditor()"}</code> | Editor: destroys all child objects. |
-| <Link id="m-ghostpieceforeditor" /><code>{"void GhostPieceForEditor()"}</code> | Editor: loads the data, copies its renderers as ghosts, removes the real objects and keeps the ghosts as a preview. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: loads the stored objects into the entity, clears `data` and waits to be added to a chunk. |
-| <Link id="m-storepieceineditor" /><code>{"void StorePieceInEditor()"}</code> | Editor: saves the children into the data. It destroys this component first and re-adds it with the data. |
-| <Link id="m-storepieceineditorwithoutdestroy" /><code>{"void StorePieceInEditorWithoutDestroy()"}</code> | Editor: saves the children into the data and keeps the component. |
+| <Link id="m-clearpieceineditor" /><code>{"void ClearPieceInEditor()"}</code> | <span className="api-desc">Editor: destroys all child objects.</span> |
+| <Link id="m-ghostpieceforeditor" /><code>{"void GhostPieceForEditor()"}</code> | <span className="api-desc">Editor: loads the data, copies its renderers as ghosts, removes the real objects and keeps the ghosts as a preview.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: loads the stored objects into the entity, clears `data` and waits to be added to a chunk.</span> |
+| <Link id="m-storepieceineditor" /><code>{"void StorePieceInEditor()"}</code> | <span className="api-desc">Editor: saves the children into the data. It destroys this component first and re-adds it with the data.</span> |
+| <Link id="m-storepieceineditorwithoutdestroy" /><code>{"void StorePieceInEditorWithoutDestroy()"}</code> | <span className="api-desc">Editor: saves the children into the data and keeps the component.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: once in a chunk, moves every child entity out to the parent, sets them to save on their own, then scene-destroys the set piece. |
-| <Link id="m-applyghostingeffecttorenderer" /><code>{"private static GameObject ApplyGhostingEffectToRenderer(Renderer renderer)"}</code> | Editor: makes a hidden, unsaved copy of a renderer with the same mesh and materials for previewing. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: refreshes the ghost preview when `data` changes, stops children from saving into the scene, and names the object after the data. |
-| <Link id="m-preparenetworkprefabsavemode" /><code>{"private void PrepareNetworkPrefabSaveMode()"}</code> | Sets every child network prefab to save as a child of the set piece. |
-| <Link id="m-save" /><code>{"private void Save()"}</code> | Stores the entity and its children into `data.DynamicData`. |
-| <Link id="m-updatecomponentdatareference" /><code>{"private void UpdateComponentDataReference()"}</code> | Puts `data` on the object's `SetPiece`, adding one if missing. |
+| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Server: once in a chunk, moves every child entity out to the parent, sets them to save on their own, then scene-destroys the set piece.</span> |
+| <Link id="m-applyghostingeffecttorenderer" /><code>{"private static GameObject ApplyGhostingEffectToRenderer(Renderer renderer)"}</code> | <span className="api-desc">Editor: makes a hidden, unsaved copy of a renderer with the same mesh and materials for previewing.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: refreshes the ghost preview when `data` changes, stops children from saving into the scene, and names the object after the data.</span> |
+| <Link id="m-preparenetworkprefabsavemode" /><code>{"private void PrepareNetworkPrefabSaveMode()"}</code> | <span className="api-desc">Sets every child network prefab to save as a child of the set piece.</span> |
+| <Link id="m-save" /><code>{"private void Save()"}</code> | <span className="api-desc">Stores the entity and its children into `data.DynamicData`.</span> |
+| <Link id="m-updatecomponentdatareference" /><code>{"private void UpdateComponentDataReference()"}</code> | <span className="api-desc">Puts `data` on the object's `SetPiece`, adding one if missing.</span> |
 
 </details>

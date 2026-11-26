@@ -20,4 +20,4 @@ Makes the right `ISync` for the side you are on.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" Create("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | Returns a `ServerSync` on the server or a `ClientSync` on clients, for the entity and message type. |
+| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" Create("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | <span className="api-desc">Returns a `ServerSync` on the server or a `ClientSync` on clients, for the entity and message type.</span> |

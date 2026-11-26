@@ -20,18 +20,22 @@ Three transforms on a hand that form a triangle, used by `FingerTipSettings` to 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> | Creates a `HandTriangle` with default values. |
+| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> | <span className="api-desc">Creates a `HandTriangle` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"Transform a"}</code> | First corner. |
-| <Link id="m-b" /><code>{"Transform b"}</code> | Second corner. |
-| <Link id="m-c" /><code>{"Transform c"}</code> | Third corner. |
+| <Link id="m-a" /><code>{"Transform a"}</code> | <span className="api-desc">First corner.</span> |
+| <Link id="m-b" /><code>{"Transform b"}</code> | <span className="api-desc">Second corner.</span> |
+| <Link id="m-c" /><code>{"Transform c"}</code> | <span className="api-desc">Third corner.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandTriangle`:
 
+<div className="api-used-in">
+
 [`FingerTipSettings.leftHandTriangle`](/mod/game-api/types/global-e-h/fingertipsettings#m-lefthandtriangle), [`FingerTipSettings.rightHandTriangle`](/mod/game-api/types/global-e-h/fingertipsettings#m-righthandtriangle), [`WorldSpaceTriangle.WorldSpaceTriangle`](/mod/game-api/types/global-t-x/worldspacetriangle#m-ctor).
+
+</div>

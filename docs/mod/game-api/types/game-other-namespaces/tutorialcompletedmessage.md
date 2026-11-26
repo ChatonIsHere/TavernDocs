@@ -20,17 +20,21 @@ Title and description text shown when a micro tutorial is completed. Set in the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> | Creates a `TutorialCompletedMessage` with default values. |
+| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> | <span className="api-desc">Creates a `TutorialCompletedMessage` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | Body text of the completion message. |
-| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> | Heading of the completion message. |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | <span className="api-desc">Body text of the completion message.</span> |
+| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> | <span className="api-desc">Heading of the completion message.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TutorialCompletedMessage`:
 
+<div className="api-used-in">
+
 [`IMicroTutorialSettings.CompletedMessage`](/mod/game-api/types/game-other-namespaces/imicrotutorialsettings#m-completedmessage), [`MicroTutorialSettings.CompletedMessage`](/mod/game-api/types/game-other-namespaces/microtutorialsettings#m-completedmessage).
+
+</div>

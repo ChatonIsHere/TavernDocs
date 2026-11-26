@@ -20,10 +20,10 @@ Request body for stopping a game server instance.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> | Creates a `StopInstanceRequest` with default values. |
+| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> | <span className="api-desc">Creates a `StopInstanceRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | Id of the server to stop. |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the server to stop.</span> |

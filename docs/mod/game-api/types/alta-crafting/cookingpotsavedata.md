@@ -23,10 +23,10 @@ Save data for a `CookingPot` (version 1): its current cooking stage.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingPotSaveData()"}</code> | Creates a `CookingPotSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CookingPotSaveData()"}</code> | <span className="api-desc">Creates a `CookingPotSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstage" /><code><Link to="/mod/game-api/types/alta-crafting/cookingpot-cookingstage">{"CookingPot.CookingStage"}</Link>{" currentStage"}</code> | The pot's saved `CookingPot.CookingStage`. |
+| <Link id="m-currentstage" /><code><Link to="/mod/game-api/types/alta-crafting/cookingpot-cookingstage">{"CookingPot.CookingStage"}</Link>{" currentStage"}</code> | <span className="api-desc">The pot's saved `CookingPot.CookingStage`.</span> |

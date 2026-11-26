@@ -21,19 +21,23 @@ Mirror of the Windows `PROCESS_MEMORY_COUNTERS` struct, filled by `GetProcessMem
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cb" /><code>{"int cb"}</code> | Size of the struct in bytes, as Windows expects. `RAM` passes the size as a separate argument and leaves this at 0. |
-| <Link id="m-pagefaultcount" /><code>{"int PageFaultCount"}</code> | Number of page faults the process has had. |
-| <Link id="m-pagefileusage" /><code>{"IntPtr PagefileUsage"}</code> | Bytes of private memory committed for the process (pagefile usage). |
-| <Link id="m-peakpagefileusage" /><code>{"IntPtr PeakPagefileUsage"}</code> | Highest `PagefileUsage` seen over the process's life. |
-| <Link id="m-peakworkingsetsize" /><code>{"IntPtr PeakWorkingSetSize"}</code> | Highest working set size seen over the process's life. |
-| <Link id="m-quotanonpagedpoolusage" /><code>{"IntPtr QuotaNonPagedPoolUsage"}</code> | Current non-paged pool usage. |
-| <Link id="m-quotapagedpoolusage" /><code>{"IntPtr QuotaPagedPoolUsage"}</code> | Current paged pool usage. |
-| <Link id="m-quotapeaknonpagedpoolusage" /><code>{"IntPtr QuotaPeakNonPagedPoolUsage"}</code> | Highest non-paged pool usage seen. |
-| <Link id="m-quotapeakpagedpoolusage" /><code>{"IntPtr QuotaPeakPagedPoolUsage"}</code> | Highest paged pool usage seen. |
-| <Link id="m-workingsetsize" /><code>{"IntPtr WorkingSetSize"}</code> | Current working set (physical memory in use). This is what `ProcessMetrics.RAM` returns. |
+| <Link id="m-cb" /><code>{"int cb"}</code> | <span className="api-desc">Size of the struct in bytes, as Windows expects. `RAM` passes the size as a separate argument and leaves this at 0.</span> |
+| <Link id="m-pagefaultcount" /><code>{"int PageFaultCount"}</code> | <span className="api-desc">Number of page faults the process has had.</span> |
+| <Link id="m-pagefileusage" /><code>{"IntPtr PagefileUsage"}</code> | <span className="api-desc">Bytes of private memory committed for the process (pagefile usage).</span> |
+| <Link id="m-peakpagefileusage" /><code>{"IntPtr PeakPagefileUsage"}</code> | <span className="api-desc">Highest `PagefileUsage` seen over the process's life.</span> |
+| <Link id="m-peakworkingsetsize" /><code>{"IntPtr PeakWorkingSetSize"}</code> | <span className="api-desc">Highest working set size seen over the process's life.</span> |
+| <Link id="m-quotanonpagedpoolusage" /><code>{"IntPtr QuotaNonPagedPoolUsage"}</code> | <span className="api-desc">Current non-paged pool usage.</span> |
+| <Link id="m-quotapagedpoolusage" /><code>{"IntPtr QuotaPagedPoolUsage"}</code> | <span className="api-desc">Current paged pool usage.</span> |
+| <Link id="m-quotapeaknonpagedpoolusage" /><code>{"IntPtr QuotaPeakNonPagedPoolUsage"}</code> | <span className="api-desc">Highest non-paged pool usage seen.</span> |
+| <Link id="m-quotapeakpagedpoolusage" /><code>{"IntPtr QuotaPeakPagedPoolUsage"}</code> | <span className="api-desc">Highest paged pool usage seen.</span> |
+| <Link id="m-workingsetsize" /><code>{"IntPtr WorkingSetSize"}</code> | <span className="api-desc">Current working set (physical memory in use). This is what `ProcessMetrics.RAM` returns.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MemoryCounters`:
 
+<div className="api-used-in">
+
 [`ProcessMetrics.GetProcessMemoryInfo`](/mod/game-api/types/global-p/processmetrics#m-getprocessmemoryinfo).
+
+</div>

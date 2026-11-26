@@ -19,12 +19,12 @@ Paged list of groups the current user has asked to join, from the Alta web API.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal RequestedGroups("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `RequestedGroups` from `api`. |
+| <Link id="m-ctor" /><code>{"internal RequestedGroups("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `RequestedGroups` from `api`.</span> |
 
 </details>
 
@@ -32,4 +32,8 @@ Paged list of groups the current user has asked to join, from the Alta web API.
 
 Members of other types that take, return or hold a `RequestedGroups`:
 
+<div className="api-used-in">
+
 [`PersonalGroups.Requested`](/mod/game-api/types/assembly-api-client/personalgroups#m-requested).
+
+</div>

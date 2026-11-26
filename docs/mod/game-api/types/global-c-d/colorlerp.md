@@ -21,19 +21,19 @@ Blends between two colours by a value and sends the result to a colour event. Wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColorLerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColorLerp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-color0" /><code>{"private Color color0"}</code> | Colour at 0. |
-| <Link id="m-color1" /><code>{"private Color color1"}</code> | Colour at 1. |
-| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> | True until `Set` is first called. |
-| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> | Event that receives the blended colour. |
+| <Link id="m-color0" /><code>{"private Color color0"}</code> | <span className="api-desc">Colour at 0.</span> |
+| <Link id="m-color1" /><code>{"private Color color1"}</code> | <span className="api-desc">Colour at 1.</span> |
+| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> | <span className="api-desc">True until `Set` is first called.</span> |
+| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> | <span className="api-desc">Event that receives the blended colour.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Blends between two colours by a value and sends the result to a colour event. Wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-set" /><code>{"void Set(float value)"}</code> | Lerps between the two colours by the value and invokes `output`. The int overload only gives either end. |
-| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> | Lerps between the two colours by the value and invokes `output`. The int overload only gives either end. |
+| <Link id="m-set" /><code>{"void Set(float value)"}</code> | <span className="api-desc">Lerps between the two colours by the value and invokes `output`. The int overload only gives either end.</span> |
+| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> | <span className="api-desc">Lerps between the two colours by the value and invokes `output`. The int overload only gives either end.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Outputs the first colour if nothing has set a value yet. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Outputs the first colour if nothing has set a value yet.</span> |
 
 </details>
 
@@ -57,4 +57,8 @@ Blends between two colours by a value and sends the result to a colour event. Wi
 
 Members of other types that take, return or hold a `ColorLerp`:
 
+<div className="api-used-in">
+
 [`HandHoverPoint.attractingHandTouchColor`](/mod/game-api/types/global-e-h/handhoverpoint#m-attractinghandtouchcolor), [`SkillOrbHolder.colorLerp`](/mod/game-api/types/global-s/skillorbholder#m-colorlerp).
+
+</div>

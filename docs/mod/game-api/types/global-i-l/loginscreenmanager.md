@@ -21,16 +21,16 @@ Internal controller for the registration scene: switches off normal startup and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoginScreenManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LoginScreenManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -38,22 +38,22 @@ Internal controller for the registration scene: switches off normal startup and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isprocessing" /><code>{"static bool IsProcessing { get; set; }"}</code> | Shared busy flag, also used by `LoginAndRegisterHelper`. |
+| <Link id="m-isprocessing" /><code>{"static bool IsProcessing { get; set; }"}</code> | <span className="api-desc">Shared busy flag, also used by `LoginAndRegisterHelper`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loaddeeplinkserver" /><code>{"void LoadDeeplinkServer()"}</code> | Marks a first time player and joins the server from the Oculus deep link. |
-| <Link id="m-skiptutorial" /><code>{"void SkipTutorial()"}</code> | Goes to the main menu and records a skipped deep link event. |
-| <Link id="m-starttutorial" /><code>{"void StartTutorial()"}</code> | Goes to the tutorial. |
+| <Link id="m-loaddeeplinkserver" /><code>{"void LoadDeeplinkServer()"}</code> | <span className="api-desc">Marks a first time player and joins the server from the Oculus deep link.</span> |
+| <Link id="m-skiptutorial" /><code>{"void SkipTutorial()"}</code> | <span className="api-desc">Goes to the main menu and records a skipped deep link event.</span> |
+| <Link id="m-starttutorial" /><code>{"void StartTutorial()"}</code> | <span className="api-desc">Goes to the tutorial.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Marks the scene as a local test and turns off the regular startup actions. |
-| <Link id="m-finishloginscreen" /><code>{"private async void FinishLoginScreen(bool isSkippingTutorial)"}</code> | Loads the tutorial, or the main menu if skipped or the tutorial fails to load. Ignored while busy. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Marks the scene as a local test and turns off the regular startup actions.</span> |
+| <Link id="m-finishloginscreen" /><code>{"private async void FinishLoginScreen(bool isSkippingTutorial)"}</code> | <span className="api-desc">Loads the tutorial, or the main menu if skipped or the tutorial fails to load. Ignored while busy.</span> |
 
 </details>

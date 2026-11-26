@@ -22,18 +22,18 @@ Asset that maps physic materials to Wwise switches, so impact sounds play the ri
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundMap()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactSoundMap()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> | The material and switch pairs set in the inspector. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for load warnings. |
-| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> | Backing field for `MaterialType`. |
+| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> | <span className="api-desc">The material and switch pairs set in the inspector.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for load warnings.</span> |
+| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> | <span className="api-desc">Backing field for `MaterialType`.</span> |
 
 </details>
 
@@ -41,16 +41,16 @@ Asset that maps physic materials to Wwise switches, so impact sounds play the ri
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> | Physic material to Wwise switch map, built on first use. |
+| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> | <span className="api-desc">Physic material to Wwise switch map, built on first use.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> | Builds `materialType` from the sound sets. Warns on null sets and duplicates; the last duplicate wins. |
+| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> | <span className="api-desc">Builds `materialType` from the sound sets. Warns on null sets and duplicates; the last duplicate wins.</span> |
 
 </details>
 
@@ -58,4 +58,8 @@ Asset that maps physic materials to Wwise switches, so impact sounds play the ri
 
 Members of other types that take, return or hold a `ImpactSoundMap`:
 
+<div className="api-used-in">
+
 [`ImpactSoundSettings.impactSoundMap`](/mod/game-api/types/global-i-l/impactsoundsettings#m-impactsoundmap), [`ImpactSoundSettings.ImpactSoundMap`](/mod/game-api/types/global-i-l/impactsoundsettings#m-impactsoundmap-2).
+
+</div>

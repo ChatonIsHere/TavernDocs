@@ -20,18 +20,22 @@ Result of a Talem shop purchase: success, or a `PurchaseError` saying why it fai
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> | Creates a `PurchaseResult` from `error`. |
-| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/mod/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> | Creates a `PurchaseResult` from `error`. |
+| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> | <span className="api-desc">Creates a `PurchaseResult` from `error`.</span> |
+| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/mod/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> | <span className="api-desc">Creates a `PurchaseResult` from `error`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code><Link to="/mod/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> | Why the purchase failed. Only meaningful when `IsSuccess` is false. |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> | True when the purchase went through. The no-argument constructor sets it. |
+| <Link id="m-error" /><code><Link to="/mod/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> | <span className="api-desc">Why the purchase failed. Only meaningful when `IsSuccess` is false.</span> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> | <span className="api-desc">True when the purchase went through. The no-argument constructor sets it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PurchaseResult`:
 
+<div className="api-used-in">
+
 [`IShopController.PurchaseAsync`](/mod/game-api/types/game-other-namespaces/ishopcontroller#m-purchaseasync).
+
+</div>

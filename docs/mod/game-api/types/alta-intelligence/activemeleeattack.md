@@ -21,12 +21,12 @@ Wyrm melee attack action. Prefers living, hurt targets in reach and sometimes tu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveMeleeAttack()"}</code> | Creates an `ActiveMeleeAttack` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveMeleeAttack()"}</code> | <span className="api-desc">Creates an `ActiveMeleeAttack` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activemeleeattack">{"ActiveMeleeAttack"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/wyrmmeleesettings">{"WyrmMeleeSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/wyrmmeleesettings">{"WyrmMeleeSettings"}</Link>{" settings)"}</code> | Builds the melee action: dangerous target in reach, sticky to the current target, preferring living and hurt ones. |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Turns the wyrm to face its target, if it has one. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Rolls `FlurryChance` for a flurry, fires a random attack trigger on the network animator and sets the duration. |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activemeleeattack">{"ActiveMeleeAttack"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/wyrmmeleesettings">{"WyrmMeleeSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/wyrmmeleesettings">{"WyrmMeleeSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Builds the melee action: dangerous target in reach, sticky to the current target, preferring living and hurt ones.</span> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Turns the wyrm to face its target, if it has one.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Rolls `FlurryChance` for a flurry, fires a random attack trigger on the network animator and sets the duration.</span> |

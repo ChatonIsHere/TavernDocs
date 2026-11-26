@@ -21,15 +21,15 @@ Results of a `ProfilingPositionCycler` run: the text report and the files writte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingLoader()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ProfilingLoader()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-files" /><code>{"string[] files"}</code> | All files in the run's folder. |
-| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> | Display name. |
-| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> | Editor fold state. |
-| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> | Editor fold state for the results. |
-| <Link id="m-loaders" /><code>{"string[] loaders"}</code> | Files in the folder other than `.data` and `.meta` files. |
-| <Link id="m-result" /><code>{"string result"}</code> | The text report. |
+| <Link id="m-files" /><code>{"string[] files"}</code> | <span className="api-desc">All files in the run's folder.</span> |
+| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> | <span className="api-desc">Display name.</span> |
+| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> | <span className="api-desc">Editor fold state.</span> |
+| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> | <span className="api-desc">Editor fold state for the results.</span> |
+| <Link id="m-loaders" /><code>{"string[] loaders"}</code> | <span className="api-desc">Files in the folder other than `.data` and `.meta` files.</span> |
+| <Link id="m-result" /><code>{"string result"}</code> | <span className="api-desc">The text report.</span> |

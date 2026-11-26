@@ -22,19 +22,19 @@ Swaps a renderer's mesh and/or material on chosen platforms, at bake time and ag
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformMeshController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlatformMeshController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replacements" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformmeshcontroller-platformdetails">{"PlatformMeshController.PlatformDetails"}</Link>{"[] replacements"}</code> | Replacement mesh and material per platform, with flags to allow null. |
-| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> | Mesh filter whose mesh is replaced. |
-| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> | Mesh renderer whose material is replaced. |
-| <Link id="m-targetskinnedmeshrenderer" /><code>{"private SkinnedMeshRenderer targetSkinnedMeshRenderer"}</code> | Skinned mesh renderer whose mesh and material are replaced. |
+| <Link id="m-replacements" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformmeshcontroller-platformdetails">{"PlatformMeshController.PlatformDetails"}</Link>{"[] replacements"}</code> | <span className="api-desc">Replacement mesh and material per platform, with flags to allow null.</span> |
+| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> | <span className="api-desc">Mesh filter whose mesh is replaced.</span> |
+| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> | <span className="api-desc">Mesh renderer whose material is replaced.</span> |
+| <Link id="m-targetskinnedmeshrenderer" /><code>{"private SkinnedMeshRenderer targetSkinnedMeshRenderer"}</code> | <span className="api-desc">Skinned mesh renderer whose mesh and material are replaced.</span> |
 
 </details>
 
@@ -42,14 +42,14 @@ Swaps a renderer's mesh and/or material on chosen platforms, at bake time and ag
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Applies the first matching platform's replacement mesh and material to the target renderers. |
-| <Link id="m-createplatformmeshcontroller" /><code>{"static void CreatePlatformMeshController(Renderer renderer, Material newMaterial)"}</code> | Adds a controller to a renderer that swaps in the given material on Android. |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | <span className="api-desc">Applies the first matching platform's replacement mesh and material to the target renderers.</span> |
+| <Link id="m-createplatformmeshcontroller" /><code>{"static void CreatePlatformMeshController(Renderer renderer, Material newMaterial)"}</code> | <span className="api-desc">Adds a controller to a renderer that swaps in the given material on Android.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Applies the platform replacement when the game is running. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Applies the platform replacement when the game is running.</span> |
 
 </details>

@@ -24,16 +24,16 @@ A hashed asset wrapping an `AnimationCurve`, stored under `StatDefinition/Curves
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Curve()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Curve()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | The animation curve that `Evaluate` reads. |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | <span className="api-desc">The animation curve that `Evaluate` reads.</span> |
 
 </details>
 
@@ -41,10 +41,14 @@ A hashed asset wrapping an `AnimationCurve`, stored under `StatDefinition/Curves
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"float Evaluate(float time)"}</code> | Returns the curve's value at a time. |
+| <Link id="m-evaluate" /><code>{"float Evaluate(float time)"}</code> | <span className="api-desc">Returns the curve's value at a time.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Curve`:
 
+<div className="api-used-in">
+
 [`IndirectModifier.IndirectModifier`](/mod/game-api/types/alta-stats-effects/indirectmodifier#m-ctor), [`IndirectModifier.valueOverDuration`](/mod/game-api/types/alta-stats-effects/indirectmodifier#m-valueoverduration), [`IndirectModifierSaveData.valueOverDuration`](/mod/game-api/types/alta-stats-effects/indirectmodifiersavedata#m-valueoverduration), [`IndirectStatModifierDefinition.curveOverDuration`](/mod/game-api/types/alta-stats-effects/indirectstatmodifierdefinition#m-curveoverduration).
+
+</div>

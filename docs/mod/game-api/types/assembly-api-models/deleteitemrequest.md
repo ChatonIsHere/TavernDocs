@@ -20,10 +20,10 @@ Request body naming a shop item to delete.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> | Creates a `DeleteItemRequest` with default values. |
+| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> | <span className="api-desc">Creates a `DeleteItemRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | Id of the item, sent as `item_id`. |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the item, sent as `item_id`.</span> |

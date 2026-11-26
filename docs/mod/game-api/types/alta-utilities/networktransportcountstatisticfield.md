@@ -21,16 +21,20 @@ A network transport profiling statistic that counts events, such as packets, rea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> | Creates a `NetworkTransportCountStatisticField` from `getValueFunction`. |
+| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> | <span className="api-desc">Creates a `NetworkTransportCountStatisticField` from `getValueFunction`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | Formats the total count and the count per second over the given duration. |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | <span className="api-desc">Formats the total count and the count per second over the given duration.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NetworkTransportCountStatisticField`:
 
+<div className="api-used-in">
+
 [`NetworkStatisticWithIncomingPackets.incomingPacketCountTotal`](/mod/game-api/types/alta-utilities/networkstatisticwithincomingpackets#m-incomingpacketcounttotal), [`NetworkStatisticWithIncomingPackets.incomingPacketsLostTotal`](/mod/game-api/types/alta-utilities/networkstatisticwithincomingpackets#m-incomingpacketslosttotal), [`NetworkTransportHostStatistic.incomingMessageQueueSize`](/mod/game-api/types/alta-utilities/networktransporthoststatistic#m-incomingmessagequeuesize), [`NetworkTransportHostStatistic.outgoingMessageQueueSize`](/mod/game-api/types/alta-utilities/networktransporthoststatistic#m-outgoingmessagequeuesize), [`NetworkTransportStatistic.outgoingMessageCountTotal`](/mod/game-api/types/alta-utilities/networktransportstatistic#m-outgoingmessagecounttotal), [`NetworkTransportStatistic.outgoingPacketCountTotal`](/mod/game-api/types/alta-utilities/networktransportstatistic#m-outgoingpacketcounttotal).
+
+</div>

@@ -21,23 +21,23 @@ Launches a pickup (an arrow or any item) from a bow or similar launcher and sync
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Shooter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Shooter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultdeviation" /><code>{"private float defaultDeviation"}</code> | Maximum random angle in degrees added to non-arrow shots fired locally. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
-| <Link id="m-maxextra" /><code>{"private float maxExtra"}</code> | Extra velocity factor for arrows, scaled by the string tightness. |
-| <Link id="m-maxvelocity" /><code>{"private float maxVelocity"}</code> | Launch speed at full strength, before weight and material adjustments. |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterial"}</code> | Optional material of the bow string; gives tightness, minimum projectile weight and the velocity multiplier for light items. |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | The launcher itself; only used to copy its last interactor onto the launched item. |
-| <Link id="m-shootstrengthrtpc" /><code>{"private RTPC shootStrengthRTPC"}</code> | Wwise RTPC set from the shot strength for the shoot sound. |
-| <Link id="m-syncshoot" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/mod/game-api/types/global-s/shootarguments">{"ShootArguments"}</Link>{"> syncShoot"}</code> | Sync message that carries a shot (`ShootArguments`). |
+| <Link id="m-defaultdeviation" /><code>{"private float defaultDeviation"}</code> | <span className="api-desc">Maximum random angle in degrees added to non-arrow shots fired locally.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger for this class.</span> |
+| <Link id="m-maxextra" /><code>{"private float maxExtra"}</code> | <span className="api-desc">Extra velocity factor for arrows, scaled by the string tightness.</span> |
+| <Link id="m-maxvelocity" /><code>{"private float maxVelocity"}</code> | <span className="api-desc">Launch speed at full strength, before weight and material adjustments.</span> |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterial"}</code> | <span className="api-desc">Optional material of the bow string; gives tightness, minimum projectile weight and the velocity multiplier for light items.</span> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | <span className="api-desc">The launcher itself; only used to copy its last interactor onto the launched item.</span> |
+| <Link id="m-shootstrengthrtpc" /><code>{"private RTPC shootStrengthRTPC"}</code> | <span className="api-desc">Wwise RTPC set from the shot strength for the shoot sound.</span> |
+| <Link id="m-syncshoot" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/mod/game-api/types/global-s/shootarguments">{"ShootArguments"}</Link>{"> syncShoot"}</code> | <span className="api-desc">Sync message that carries a shot (`ShootArguments`).</span> |
 
 </details>
 
@@ -45,23 +45,23 @@ Launches a pickup (an arrow or any item) from a bow or similar launcher and sync
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onshoot" /><code>{"event Action<"}<Link to="/mod/game-api/types/global-s/shooter">{"Shooter"}</Link>{", "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", Vector3> OnShoot"}</code> | Raised after a shot with the shooter, the item and its launch velocity. |
-| <Link id="m-preshoot" /><code>{"event Action<"}<Link to="/mod/game-api/types/global-s/shooter">{"Shooter"}</Link>{", "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> PreShoot"}</code> | Raised before a shot, with the shooter and the item about to be launched. |
+| <Link id="m-onshoot" /><code>{"event Action<"}<Link to="/mod/game-api/types/global-s/shooter">{"Shooter"}</Link>{", "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", Vector3> OnShoot"}</code> | <span className="api-desc">Raised after a shot with the shooter, the item and its launch velocity.</span> |
+| <Link id="m-preshoot" /><code>{"event Action<"}<Link to="/mod/game-api/types/global-s/shooter">{"Shooter"}</Link>{", "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> PreShoot"}</code> | <span className="api-desc">Raised before a shot, with the shooter and the item about to be launched.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the sync used to send shots. |
-| <Link id="m-shoot" /><code>{"void Shoot("}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, float strength, bool isFromNetwork = false, Vector3 direction = null)"}</code> | Undocks the item and launches it with the given strength (0 to 1), playing the sound and sending the shot unless it came from the network. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Creates the sync used to send shots.</span> |
+| <Link id="m-shoot" /><code>{"void Shoot("}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, float strength, bool isFromNetwork = false, Vector3 direction = null)"}</code> | <span className="api-desc">Undocks the item and launches it with the given strength (0 to 1), playing the sound and sending the shot unless it came from the network.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultshoot" /><code>{"private Vector3 DefaultShoot(Vector3 direction, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, float strength, bool isApplyingDeviation)"}</code> | Launches a non-arrow item: optionally adds random deviation to its aim, then sets its velocity directly and clears spin. |
-| <Link id="m-syncshoot-2" /><code>{"private void SyncShoot("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-s/shootarguments">{"ShootArguments"}</Link>{" args)"}</code> | Network handler: on receive, moves the item to the sent pose and shoots it; the server then relays the shot to other players. |
+| <Link id="m-defaultshoot" /><code>{"private Vector3 DefaultShoot(Vector3 direction, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, float strength, bool isApplyingDeviation)"}</code> | <span className="api-desc">Launches a non-arrow item: optionally adds random deviation to its aim, then sets its velocity directly and clears spin.</span> |
+| <Link id="m-syncshoot-2" /><code>{"private void SyncShoot("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-s/shootarguments">{"ShootArguments"}</Link>{" args)"}</code> | <span className="api-desc">Network handler: on receive, moves the item to the sent pose and shoots it; the server then relays the shot to other players.</span> |
 
 </details>
 
@@ -69,4 +69,8 @@ Launches a pickup (an arrow or any item) from a bow or similar launcher and sync
 
 Members of other types that take, return or hold a `Shooter`:
 
+<div className="api-used-in">
+
 [`BowString.IgnoreArrowCollisions`](/mod/game-api/types/global-a-b/bowstring#m-ignorearrowcollisions), [`BowString.OnShoot`](/mod/game-api/types/global-a-b/bowstring#m-onshoot), [`BowString.shooter`](/mod/game-api/types/global-a-b/bowstring#m-shooter), [`ItemShooter.IgnoreArrowCollisions`](/mod/game-api/types/global-i-l/itemshooter#m-ignorearrowcollisions), [`ItemShooter.shooter`](/mod/game-api/types/global-i-l/itemshooter#m-shooter).
+
+</div>

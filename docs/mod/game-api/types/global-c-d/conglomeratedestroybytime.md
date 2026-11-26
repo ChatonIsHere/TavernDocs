@@ -21,19 +21,19 @@ Pooled effect that merges with active copies nearby: it releases them and grows 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConglomerateDestroyByTime()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ConglomerateDestroyByTime()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-active" /><code>{"private static List<"}<Link to="/mod/game-api/types/global-c-d/conglomeratedestroybytime">{"ConglomerateDestroyByTime"}</Link>{"> active"}</code> | Every copy currently out of the pool. |
-| <Link id="m-currentcount" /><code>{"private int currentCount"}</code> | How many effects this one stands for, itself included. |
-| <Link id="m-nearbyrangesquared" /><code>{"private float nearbyRangeSquared"}</code> | Squared distance within which copies merge. |
-| <Link id="m-scaleonnearby" /><code>{"private AnimationCurve scaleOnNearby"}</code> | Curve from the number of merged copies to scale. |
+| <Link id="m-active" /><code>{"private static List<"}<Link to="/mod/game-api/types/global-c-d/conglomeratedestroybytime">{"ConglomerateDestroyByTime"}</Link>{"> active"}</code> | <span className="api-desc">Every copy currently out of the pool.</span> |
+| <Link id="m-currentcount" /><code>{"private int currentCount"}</code> | <span className="api-desc">How many effects this one stands for, itself included.</span> |
+| <Link id="m-nearbyrangesquared" /><code>{"private float nearbyRangeSquared"}</code> | <span className="api-desc">Squared distance within which copies merge.</span> |
+| <Link id="m-scaleonnearby" /><code>{"private AnimationCurve scaleOnNearby"}</code> | <span className="api-desc">Curve from the number of merged copies to scale.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Pooled effect that merges with active copies nearby: it releases them and grows 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> | Removes it from the active list and releases it. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks the pool request to `CheckNearby`. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | <span className="api-desc">Removes it from the active list and releases it.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Hooks the pool request to `CheckNearby`.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checknearby" /><code>{"private void CheckNearby("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Releases active copies in range, adds their counts to its own, and sets its scale from `scaleOnNearby`. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the merge range as a sphere. |
+| <Link id="m-checknearby" /><code>{"private void CheckNearby("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Releases active copies in range, adds their counts to its own, and sets its scale from `scaleOnNearby`.</span> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the merge range as a sphere.</span> |
 
 </details>

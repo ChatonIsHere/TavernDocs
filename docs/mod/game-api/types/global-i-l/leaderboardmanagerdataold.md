@@ -23,17 +23,17 @@ Version 1 save data for `LeaderboardManager`, which stored definition assets ins
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> | Creates a `LeaderboardManagerDataOld` with default values. |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> | <span className="api-desc">Creates a `LeaderboardManagerDataOld` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry">{"LeaderboardManagerDataOld.LeaderboardEntry"}</Link>{"[] entries"}</code> | Old per-course top player entries. |
-| <Link id="m-players" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes">{"LeaderboardManagerDataOld.PlayerBestTimes"}</Link>{"[] players"}</code> | Old per-player best time entries. |
+| <Link id="m-entries" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry">{"LeaderboardManagerDataOld.LeaderboardEntry"}</Link>{"[] entries"}</code> | <span className="api-desc">Old per-course top player entries.</span> |
+| <Link id="m-players" /><code><Link to="/mod/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes">{"LeaderboardManagerDataOld.PlayerBestTimes"}</Link>{"[] players"}</code> | <span className="api-desc">Old per-player best time entries.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the version 2 save, turning each definition asset into its data. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the version 2 save, turning each definition asset into its data.</span> |

@@ -24,10 +24,10 @@ Save data for a `GrowerGroup`: one entry per growing child.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> | Creates a `GrowerGroupSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> | <span className="api-desc">Creates a `GrowerGroupSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code><Link to="/mod/game-api/types/global-e-h/growergroupsavedata-item">{"GrowerGroupSaveData.Item"}</Link>{"[] items"}</code> | Saved state of each grower: stage, start time, definition, spawned stage, position and rotation. |
+| <Link id="m-items" /><code><Link to="/mod/game-api/types/global-e-h/growergroupsavedata-item">{"GrowerGroupSaveData.Item"}</Link>{"[] items"}</code> | <span className="api-desc">Saved state of each grower: stage, start time, definition, spawned stage, position and rotation.</span> |

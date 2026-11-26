@@ -21,17 +21,17 @@ Prefab apply attribute naming a sound effect field to migrate. In this build `Ha
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MigrateSoundEffectAttribute(string field)"}</code> | Creates a `MigrateSoundEffectAttribute` from `field`. |
+| <Link id="m-ctor" /><code>{"MigrateSoundEffectAttribute(string field)"}</code> | <span className="api-desc">Creates a `MigrateSoundEffectAttribute` from `field`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-field" /><code>{"private string field"}</code> | Name of the field to migrate. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-field" /><code>{"private string field"}</code> | <span className="api-desc">Name of the field to migrate.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Prefab apply attribute naming a sound effect field to migrate. In this build `Ha
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Always returns false. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Always returns false.</span> |

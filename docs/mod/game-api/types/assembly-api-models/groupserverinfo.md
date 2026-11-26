@@ -20,19 +20,23 @@ Web API model for one game server as listed inside a group's details (`GroupInfo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GroupServerInfo()"}</code> | Creates a `GroupServerInfo` with default values. |
+| <Link id="m-ctor" /><code>{"GroupServerInfo()"}</code> | <span className="api-desc">Creates a `GroupServerInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server's numeric ID. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The server's display name. |
-| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> | Index of the scene (map) the server runs. |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | Current `GameServerStatus` of the server, sent as a string in JSON. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | <span className="api-desc">The server's numeric ID.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The server's display name.</span> |
+| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> | <span className="api-desc">Index of the scene (map) the server runs.</span> |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | <span className="api-desc">Current `GameServerStatus` of the server, sent as a string in JSON.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GroupServerInfo`:
 
+<div className="api-used-in">
+
 [`GroupInfoDetailed.Servers`](/mod/game-api/types/assembly-api-models/groupinfodetailed#m-servers).
+
+</div>

@@ -19,23 +19,23 @@ Console module `maintenance`: memory housekeeping commands (garbage collection, 
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-garbagecollect" /><code>{"private static void GarbageCollect()"}</code> | `maintenance garbage` (alias `gc`): runs a full C# garbage collection, tracing memory before and after. |
-| <Link id="m-unloadresources" /><code>{"private static void UnloadResources()"}</code> | `maintenance resources`: calls Unity's `Resources.UnloadUnusedAssets`. |
+| <Link id="m-garbagecollect" /><code>{"private static void GarbageCollect()"}</code> | <span className="api-desc">`maintenance garbage` (alias `gc`): runs a full C# garbage collection, tracing memory before and after.</span> |
+| <Link id="m-unloadresources" /><code>{"private static void UnloadResources()"}</code> | <span className="api-desc">`maintenance resources`: calls Unity's `Resources.UnloadUnusedAssets`.</span> |
 
 </details>

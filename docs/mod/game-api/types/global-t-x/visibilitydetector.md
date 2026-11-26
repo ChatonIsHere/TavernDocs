@@ -21,17 +21,17 @@ Raises events when the renderer on the same object becomes visible to or hidden 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VisibilityDetector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"VisibilityDetector()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> | Serialized event behind `BecameInvisible`. |
-| <Link id="m-becamevisible" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> | Serialized event behind `BecameVisible`. |
+| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> | <span className="api-desc">Serialized event behind `BecameInvisible`.</span> |
+| <Link id="m-becamevisible" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> | <span className="api-desc">Serialized event behind `BecameVisible`.</span> |
 
 </details>
 
@@ -39,25 +39,25 @@ Raises events when the renderer on the same object becomes visible to or hidden 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> | Whether the renderer is currently seen by a camera. |
+| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> | <span className="api-desc">Whether the renderer is currently seen by a camera.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> | Raised when the renderer is no longer seen by any camera. |
-| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> | Raised when the renderer is first seen by a camera. |
+| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> | <span className="api-desc">Raised when the renderer is no longer seen by any camera.</span> |
+| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> | <span className="api-desc">Raised when the renderer is first seen by a camera.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> | Unity callback; clears `IsVisible` and raises `BecameInvisible`. |
-| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> | Unity callback; sets `IsVisible` and raises `BecameVisible`. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: throws if the object has no `Renderer`, naming the root object. |
+| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> | <span className="api-desc">Unity callback; clears `IsVisible` and raises `BecameInvisible`.</span> |
+| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> | <span className="api-desc">Unity callback; sets `IsVisible` and raises `BecameVisible`.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: throws if the object has no `Renderer`, naming the root object.</span> |
 
 </details>
 
@@ -65,4 +65,8 @@ Raises events when the renderer on the same object becomes visible to or hidden 
 
 Members of other types that take, return or hold a `VisibilityDetector`:
 
+<div className="api-used-in">
+
 [`StorageOrganizer.visibilityDetector`](/mod/game-api/types/alta-items/storageorganizer#m-visibilitydetector), [`LiquidStencilShaderController.volumeVisibilityDetector`](/mod/game-api/types/alta-stats-effects/liquidstencilshadercontroller#m-volumevisibilitydetector), [`LiquidSurfaceVisual.androidContainerLod0`](/mod/game-api/types/alta-stats-effects/liquidsurfacevisual#m-androidcontainerlod0), [`LiquidSurfaceVisual.containerLod0`](/mod/game-api/types/alta-stats-effects/liquidsurfacevisual#m-containerlod0), [`PageInstance.visibilityDetector`](/mod/game-api/types/alta-items/pageinstance#m-visibilitydetector).
+
+</div>

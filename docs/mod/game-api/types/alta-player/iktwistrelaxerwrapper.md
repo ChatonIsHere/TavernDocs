@@ -21,16 +21,16 @@ Character component that runs a Final IK `TwistRelaxer` as part of the character
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IKTwistRelaxerWrapper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"IKTwistRelaxerWrapper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-twistrelaxer" /><code>{"private TwistRelaxer twistRelaxer"}</code> | Backing field for `TwistRelaxer`. |
+| <Link id="m-twistrelaxer" /><code>{"private TwistRelaxer twistRelaxer"}</code> | <span className="api-desc">Backing field for `TwistRelaxer`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ Character component that runs a Final IK `TwistRelaxer` as part of the character
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-twistrelaxer-2" /><code>{"TwistRelaxer TwistRelaxer { get; set; }"}</code> | The twist relaxer this drives. |
+| <Link id="m-twistrelaxer-2" /><code>{"TwistRelaxer TwistRelaxer { get; set; }"}</code> | <span className="api-desc">The twist relaxer this drives.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | Relaxes the twist, then runs the base fixed update. |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | <span className="api-desc">Relaxes the twist, then runs the base fixed update.</span> |

@@ -20,16 +20,16 @@ One part of a cosmetic or equipment visual placed in a customization slot. Track
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationSlotEntry("}<Link to="/mod/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" visual, "}<Link to="/mod/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{" part, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Creates a `CustomizationSlotEntry` from `visual`, `part` and `arguments`. |
+| <Link id="m-ctor" /><code>{"CustomizationSlotEntry("}<Link to="/mod/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" visual, "}<Link to="/mod/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{" part, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Creates a `CustomizationSlotEntry` from `visual`, `part` and `arguments`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haspart" /><code>{"private bool hasPart"}</code> | Whether the entry has a part to show; entries without one count as primary and skip show and hide. |
+| <Link id="m-haspart" /><code>{"private bool hasPart"}</code> | <span className="api-desc">Whether the entry has a part to show; entries without one count as primary and skip show and hide.</span> |
 
 </details>
 
@@ -37,26 +37,30 @@ One part of a cosmetic or equipment visual placed in a customization slot. Track
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" Arguments { get; private set; }"}</code> | The current customization arguments for the part. |
-| <Link id="m-disablercount" /><code>{"int DisablerCount { get; private set; }"}</code> | How many disabling slots hide this part. The part shows only when this is 0. |
-| <Link id="m-impedercount" /><code>{"int ImpederCount { get; set; }"}</code> | How many other visuals in the slot cover this one. Above 0 sets `IsImpeded` in the arguments. |
-| <Link id="m-isprimary" /><code>{"bool IsPrimary { get; }"}</code> | True if the part is primary, or if this entry has no part (the visual itself). |
-| <Link id="m-part" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{" Part { get; }"}</code> | The visual part, or null for the entry that stands for the whole visual. |
-| <Link id="m-visual" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" Visual { get; }"}</code> | The customization visual this entry is part of. |
+| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" Arguments { get; private set; }"}</code> | <span className="api-desc">The current customization arguments for the part.</span> |
+| <Link id="m-disablercount" /><code>{"int DisablerCount { get; private set; }"}</code> | <span className="api-desc">How many disabling slots hide this part. The part shows only when this is 0.</span> |
+| <Link id="m-impedercount" /><code>{"int ImpederCount { get; set; }"}</code> | <span className="api-desc">How many other visuals in the slot cover this one. Above 0 sets `IsImpeded` in the arguments.</span> |
+| <Link id="m-isprimary" /><code>{"bool IsPrimary { get; }"}</code> | <span className="api-desc">True if the part is primary, or if this entry has no part (the visual itself).</span> |
+| <Link id="m-part" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationpart">{"ICustomizationPart"}</Link>{" Part { get; }"}</code> | <span className="api-desc">The visual part, or null for the entry that stands for the whole visual.</span> |
+| <Link id="m-visual" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationvisual">{"ICustomizationVisual"}</Link>{" Visual { get; }"}</code> | <span className="api-desc">The customization visual this entry is part of.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | Shows the part on the given handlers unless something disables it. |
-| <Link id="m-applyarguments" /><code>{"void ApplyArguments(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Stores new arguments (colours and so on) and applies them to the shown part. |
-| <Link id="m-modifydisablers" /><code>{"void ModifyDisablers(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers, bool isAdding)"}</code> | Adds or removes a disabler, hiding the part on the first and showing it again when the last goes. |
-| <Link id="m-remove" /><code>{"void Remove(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | Hides the part on the given handlers. |
-| <Link id="m-updatefirstperson" /><code>{"void UpdateFirstPerson("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler)"}</code> | Updates how the part looks in first person for one handler. |
-| <Link id="m-updateimpeded" /><code>{"void UpdateImpeded(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | Reapplies the arguments after `ImpederCount` changes. |
+| <Link id="m-add" /><code>{"void Add(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | <span className="api-desc">Shows the part on the given handlers unless something disables it.</span> |
+| <Link id="m-applyarguments" /><code>{"void ApplyArguments(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Stores new arguments (colours and so on) and applies them to the shown part.</span> |
+| <Link id="m-modifydisablers" /><code>{"void ModifyDisablers(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers, bool isAdding)"}</code> | <span className="api-desc">Adds or removes a disabler, hiding the part on the first and showing it again when the last goes.</span> |
+| <Link id="m-remove" /><code>{"void Remove(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | <span className="api-desc">Hides the part on the given handlers.</span> |
+| <Link id="m-updatefirstperson" /><code>{"void UpdateFirstPerson("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Updates how the part looks in first person for one handler.</span> |
+| <Link id="m-updateimpeded" /><code>{"void UpdateImpeded(IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> handlers)"}</code> | <span className="api-desc">Reapplies the arguments after `ImpederCount` changes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CustomizationSlotEntry`:
 
+<div className="api-used-in">
+
 [`CustomizationSlot.Add`](/mod/game-api/types/alta-customization/customizationslot#m-add), [`CustomizationSlot.entries`](/mod/game-api/types/alta-customization/customizationslot#m-entries), [`CustomizationSlot.Remove`](/mod/game-api/types/alta-customization/customizationslot#m-remove), [`CustomizationSlot.visible`](/mod/game-api/types/alta-customization/customizationslot#m-visible), [`CustomizationVisualManager.items`](/mod/game-api/types/alta-customization/customizationvisualmanager#m-items).
+
+</div>

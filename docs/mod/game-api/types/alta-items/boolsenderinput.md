@@ -22,10 +22,14 @@ Serializable link from a logic receiver to a bool sender (`LogicBoolSender`).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoolSenderInput()"}</code> | Creates a `BoolSenderInput` with default values. |
+| <Link id="m-ctor" /><code>{"BoolSenderInput()"}</code> | <span className="api-desc">Creates a `BoolSenderInput` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoolSenderInput`:
 
+<div className="api-used-in">
+
 [`LogicReset.BoolSenders.sender`](/mod/game-api/types/global-i-l/logicreset-boolsenders#m-sender).
+
+</div>

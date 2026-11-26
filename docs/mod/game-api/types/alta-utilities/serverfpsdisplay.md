@@ -21,16 +21,16 @@ Client live data display showing the server frame rate reported in `ServerDiagno
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerFpsDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ServerFpsDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | "Server FPS". |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">"Server FPS".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | Returns `ServerDiagnosticsMessage.ServerFPS` as text. |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">Returns `ServerDiagnosticsMessage.ServerFPS` as text.</span> |

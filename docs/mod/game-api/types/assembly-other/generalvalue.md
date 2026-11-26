@@ -23,16 +23,16 @@ Base for many of the game's ScriptableObject assets: just a description field an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneralValue()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected GeneralValue()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"private string description"}</code> | Backing field for `Description`. Defaults to "No description". |
+| <Link id="m-description" /><code>{"private string description"}</code> | <span className="api-desc">Backing field for `Description`. Defaults to "No description".</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Base for many of the game's ScriptableObject assets: just a description field an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description-2" /><code>{"string Description { get; }"}</code> | Free text description of the asset. "No description" by default. |
-| <Link id="m-type" /><code>{"virtual Type Type { get; set; }"}</code> | A `System.Type` that subclasses can use. Null by default. |
+| <Link id="m-description-2" /><code>{"string Description { get; }"}</code> | <span className="api-desc">Free text description of the asset. "No description" by default.</span> |
+| <Link id="m-type" /><code>{"virtual Type Type { get; set; }"}</code> | <span className="api-desc">A `System.Type` that subclasses can use. Null by default.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GeneralValue`:
 
+<div className="api-used-in">
+
 [`Element.variables`](/mod/game-api/types/alta-world-generation/element#m-variables), [`Element.Variables`](/mod/game-api/types/alta-world-generation/element#m-variables-2), [`Element.SerializedVariable.value`](/mod/game-api/types/alta-world-generation/element-serializedvariable#m-value).
+
+</div>

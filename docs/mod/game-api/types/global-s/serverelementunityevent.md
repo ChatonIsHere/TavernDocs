@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a `ServerElement` from the server list men
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerElementUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ServerElementUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

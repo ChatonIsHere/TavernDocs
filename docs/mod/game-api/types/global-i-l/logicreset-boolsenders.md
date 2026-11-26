@@ -21,11 +21,15 @@ A logic bool sender and the value `LogicReset` puts it back to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sender" /><code><Link to="/mod/game-api/types/alta-items/boolsenderinput">{"BoolSenderInput"}</Link>{" sender"}</code> | The bool sender to reset. |
-| <Link id="m-value" /><code>{"bool value"}</code> | Value the sender is set to on reset. |
+| <Link id="m-sender" /><code><Link to="/mod/game-api/types/alta-items/boolsenderinput">{"BoolSenderInput"}</Link>{" sender"}</code> | <span className="api-desc">The bool sender to reset.</span> |
+| <Link id="m-value" /><code>{"bool value"}</code> | <span className="api-desc">Value the sender is set to on reset.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoolSenders`:
 
+<div className="api-used-in">
+
 [`LogicReset.senders`](/mod/game-api/types/global-i-l/logicreset#m-senders).
+
+</div>

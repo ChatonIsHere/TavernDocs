@@ -22,15 +22,15 @@ Helper `LocalNetworkScene` adds to an inactive entity so it is initialized when 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InitializeOnAwake()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InitializeOnAwake()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Initializes this object's `NetworkEntity` through the current `LocalNetworkScene`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Initializes this object's `NetworkEntity` through the current `LocalNetworkScene`.</span> |
 
 </details>

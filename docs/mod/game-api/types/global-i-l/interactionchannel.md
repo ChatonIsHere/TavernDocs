@@ -30,4 +30,8 @@ Flags for which kinds of interaction an interactor accepts (normal, body customi
 
 Members of other types that take, return or hold a `InteractionChannel`:
 
+<div className="api-used-in">
+
 [`Interactable.channels`](/mod/game-api/types/global-i-l/interactable#m-channels), [`Interactable.Channels`](/mod/game-api/types/global-i-l/interactable#m-channels-2), [`InteractionChannelHelper.Intersects`](/mod/game-api/types/global-i-l/interactionchannelhelper#m-intersects), [`Interactor.channels`](/mod/game-api/types/global-i-l/interactor#m-channels), [`Interactor.Channels`](/mod/game-api/types/global-i-l/interactor#m-channels-2), [`Interactor.overrideChannels`](/mod/game-api/types/global-i-l/interactor#m-overridechannels), [`Interactor.SetOverrideInteractionChannels`](/mod/game-api/types/global-i-l/interactor#m-setoverrideinteractionchannels).
+
+</div>

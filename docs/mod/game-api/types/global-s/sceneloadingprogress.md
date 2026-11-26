@@ -21,26 +21,26 @@ Fires a float event every frame with the current scene loading progress from `Al
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneLoadingProgress()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SceneLoadingProgress()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onprogresschanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onProgressChanged"}</code> | Event that receives the load progress each frame. |
+| <Link id="m-onprogresschanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onProgressChanged"}</code> | <span className="api-desc">Event that receives the load progress each frame.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Invokes `onProgressChanged` with the current load progress. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Invokes `onProgressChanged` with the current load progress.</span> |
 
 </details>

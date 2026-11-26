@@ -20,18 +20,22 @@ A length of time as a count and a unit (day, month or year), used for subscripti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Duration()"}</code> | Creates a `Duration` with default values. |
+| <Link id="m-ctor" /><code>{"Duration()"}</code> | <span className="api-desc">Creates a `Duration` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-months" /><code>{"int Months { get; }"}</code> | The duration in whole months. Day durations give 0 and years count as 12 months. |
-| <Link id="m-period" /><code>{"int Period { get; set; }"}</code> | How many units (`value` in JSON). |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/durationtype">{"DurationType"}</Link>{" Type { get; set; }"}</code> | The unit. |
+| <Link id="m-months" /><code>{"int Months { get; }"}</code> | <span className="api-desc">The duration in whole months. Day durations give 0 and years count as 12 months.</span> |
+| <Link id="m-period" /><code>{"int Period { get; set; }"}</code> | <span className="api-desc">How many units (`value` in JSON).</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/durationtype">{"DurationType"}</Link>{" Type { get; set; }"}</code> | <span className="api-desc">The unit.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Duration`:
 
+<div className="api-used-in">
+
 [`ChargeInfo.Period`](/mod/game-api/types/assembly-api-models/chargeinfo#m-period), [`SubscriptionPlanInfo.Trial`](/mod/game-api/types/assembly-api-models/subscriptionplaninfo#m-trial).
+
+</div>

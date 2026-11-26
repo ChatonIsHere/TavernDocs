@@ -23,18 +23,22 @@ Save data for `OrbBasinVfxController`: the state of its three effects.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> | Creates an `OrbBasinVfxControllerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> | <span className="api-desc">Creates an `OrbBasinVfxControllerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-orbobtainedvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> | Saved state of the orb obtained effect. |
-| <Link id="m-permanentunlockvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" PermanentUnlockVfxData"}</code> | Saved state of the permanent unlock effect. |
-| <Link id="m-towercompletionvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> | Saved state of the tower completion effect. |
+| <Link id="m-orbobtainedvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" OrbObtainedVfxData"}</code> | <span className="api-desc">Saved state of the orb obtained effect.</span> |
+| <Link id="m-permanentunlockvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" PermanentUnlockVfxData"}</code> | <span className="api-desc">Saved state of the permanent unlock effect.</span> |
+| <Link id="m-towercompletionvfxdata" /><code><Link to="/mod/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" TowerCompletionVfxData"}</code> | <span className="api-desc">Saved state of the tower completion effect.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OrbBasinVfxControllerSaveData`:
 
+<div className="api-used-in">
+
 [`OrbBasinVfxController.Load`](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontroller#m-load), [`OrbBasinVfxController.Save`](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontroller#m-save).
+
+</div>

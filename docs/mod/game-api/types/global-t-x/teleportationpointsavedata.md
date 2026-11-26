@@ -23,11 +23,11 @@ Save data for `TeleportationPoint` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> | Creates a `TeleportationPointSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> | <span className="api-desc">Creates a `TeleportationPointSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mode" /><code><Link to="/mod/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> | Saved teleport mode. |
-| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> | Saved target position, local to the teleportation point. |
+| <Link id="m-mode" /><code><Link to="/mod/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> | <span className="api-desc">Saved teleport mode.</span> |
+| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> | <span className="api-desc">Saved target position, local to the teleportation point.</span> |

@@ -21,12 +21,12 @@ Status `not_whitelisted`, with the message `Not Whitelisted`.
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | Always `Not Whitelisted`. |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `not_whitelisted`. |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | <span className="api-desc">Always `Not Whitelisted`.</span> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `not_whitelisted`.</span> |
 
 </details>

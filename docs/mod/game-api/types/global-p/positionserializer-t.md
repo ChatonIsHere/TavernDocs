@@ -21,17 +21,17 @@ A `PositionSerializer` that can reparent a target of type `T` itself, through ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> | Creates a `PositionSerializer` from `entity`, `isParentNull` and `makeParentNull`. |
+| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> | <span className="api-desc">Creates a `PositionSerializer` from `entity`, `isParentNull` and `makeParentNull`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> | Callback that tells whether the target currently has no parent. |
-| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> | Callback that unparents the target. |
+| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> | <span className="api-desc">Callback that tells whether the target currently has no parent.</span> |
+| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> | <span className="api-desc">Callback that unparents the target.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ A `PositionSerializer` that can reparent a target of type `T` itself, through ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> | Parents the target's transform to the current movement context, or clears its parent through `makeParentNull` when the context is gone. |
+| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> | <span className="api-desc">Parents the target's transform to the current movement context, or clears its parent through `makeParentNull` when the context is gone.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PositionSerializer&lt;T>`:
 
+<div className="api-used-in">
+
 [`NetworkRigidbody.positionSerializer`](/mod/game-api/types/alta-networking/networkrigidbody#m-positionserializer), [`StaticPlatformSupport.positionSerializer`](/mod/game-api/types/alta-networking/staticplatformsupport#m-positionserializer).
+
+</div>

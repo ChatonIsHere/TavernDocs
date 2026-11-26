@@ -20,4 +20,4 @@ Component with a bake step that `FlattenAndCleanEmptyAtBakeTime` runs at build t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> | Runs the bake step. |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | <span className="api-desc">Runs the bake step.</span> |

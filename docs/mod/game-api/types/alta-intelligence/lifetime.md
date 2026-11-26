@@ -21,17 +21,17 @@ Scoring rule on the creature's age: seconds since it was created, mapped from mi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Lifetime(float minimum, float maximum)"}</code> | Creates a `Lifetime` from `minimum` and `maximum`. |
+| <Link id="m-ctor" /><code>{"Lifetime(float minimum, float maximum)"}</code> | <span className="api-desc">Creates a `Lifetime` from `minimum` and `maximum`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Age in seconds that maps to 1. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Age in seconds that maps to 0. |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Age in seconds that maps to 1.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Age in seconds that maps to 0.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Scoring rule on the creature's age: seconds since it was created, mapped from mi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Returns the inverse lerp of the creature's age between `minimum` and `maximum`. The target is ignored. |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">Returns the inverse lerp of the creature's age between `minimum` and `maximum`. The target is ignored.</span> |

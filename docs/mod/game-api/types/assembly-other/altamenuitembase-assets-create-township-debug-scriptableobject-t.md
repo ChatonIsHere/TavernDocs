@@ -23,4 +23,4 @@ Base for an Assets/Create/Township/Debug menu entry that creates a `T` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject` with default values.</span> |

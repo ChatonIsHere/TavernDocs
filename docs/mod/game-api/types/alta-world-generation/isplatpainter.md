@@ -21,10 +21,14 @@ A component under a `ForestGenerator` that paints splat (terrain texture) data f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-paint" /><code>{"void Paint("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, Random rowRandom, "}<Link to="/mod/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access, int x, int z, Vector2 position, ref "}<Link to="/mod/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> | Changes the splat data at one terrain point. Called from worker tasks that each paint one block, with a random seeded per block. |
+| <Link id="m-paint" /><code>{"void Paint("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, Random rowRandom, "}<Link to="/mod/game-api/types/global-t-x/terrainaccess">{"TerrainAccess"}</Link>{" access, int x, int z, Vector2 position, ref "}<Link to="/mod/game-api/types/alta-world-generation/splatdata">{"SplatData"}</Link>{" data)"}</code> | <span className="api-desc">Changes the splat data at one terrain point. Called from worker tasks that each paint one block, with a random seeded per block.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISplatPainter`:
 
+<div className="api-used-in">
+
 [`ForestGenerator.splatPainters`](/mod/game-api/types/alta-world-generation/forestgenerator#m-splatpainters).
+
+</div>

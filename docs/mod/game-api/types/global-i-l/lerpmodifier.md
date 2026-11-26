@@ -21,17 +21,17 @@ Float modifier that maps its input from 0 to 1 onto a range between `from` and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LerpModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LerpModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-from" /><code>{"private float from"}</code> | Output for an input of 0. |
-| <Link id="m-to" /><code>{"private float to"}</code> | Output for an input of 1. Defaults to 10. |
+| <Link id="m-from" /><code>{"private float from"}</code> | <span className="api-desc">Output for an input of 0.</span> |
+| <Link id="m-to" /><code>{"private float to"}</code> | <span className="api-desc">Output for an input of 1. Defaults to 10.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Float modifier that maps its input from 0 to 1 onto a range between `from` and `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-input" /><code>{"override void Input(float value)"}</code> | Outputs the value lerped between `from` and `to`. Inputs are clamped to 0 to 1. |
+| <Link id="m-input" /><code>{"override void Input(float value)"}</code> | <span className="api-desc">Outputs the value lerped between `from` and `to`. Inputs are clamped to 0 to 1.</span> |

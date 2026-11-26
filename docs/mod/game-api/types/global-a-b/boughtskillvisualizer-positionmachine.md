@@ -21,20 +21,20 @@ Private helper in `BoughtSkillVisualizer` that spaces a number of points evenly 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> | Creates a `BoughtSkillVisualizer.PositionMachine` from `transform`, `instancesCount` and `radius`. |
+| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> | <span className="api-desc">Creates a `BoughtSkillVisualizer.PositionMachine` from `transform`, `instancesCount` and `radius`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentposition" /><code>{"private readonly Vector3 currentPosition"}</code> | Centre of the circle (the transform's position when made). |
-| <Link id="m-forwardaxis" /><code>{"private readonly Vector3 forwardAxis"}</code> | Axis the circle turns around. |
-| <Link id="m-instancescount" /><code>{"private readonly int instancesCount"}</code> | Number of points. |
-| <Link id="m-startposition" /><code>{"private readonly Vector3 startPosition"}</code> | Offset of the first point from the centre (radius along the flipped up axis). |
-| <Link id="m-step" /><code>{"private readonly float step"}</code> | Degrees between points. |
+| <Link id="m-currentposition" /><code>{"private readonly Vector3 currentPosition"}</code> | <span className="api-desc">Centre of the circle (the transform's position when made).</span> |
+| <Link id="m-forwardaxis" /><code>{"private readonly Vector3 forwardAxis"}</code> | <span className="api-desc">Axis the circle turns around.</span> |
+| <Link id="m-instancescount" /><code>{"private readonly int instancesCount"}</code> | <span className="api-desc">Number of points.</span> |
+| <Link id="m-startposition" /><code>{"private readonly Vector3 startPosition"}</code> | <span className="api-desc">Offset of the first point from the centre (radius along the flipped up axis).</span> |
+| <Link id="m-step" /><code>{"private readonly float step"}</code> | <span className="api-desc">Degrees between points.</span> |
 
 </details>
 
@@ -42,5 +42,5 @@ Private helper in `BoughtSkillVisualizer` that spaces a number of points evenly 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"Vector3 GetPosition(int index)"}</code> | World position of the point at an index. |
-| <Link id="m-getpositions" /><code>{"IEnumerable<Vector3> GetPositions() (iterator)"}</code> | All the points in order. |
+| <Link id="m-getposition" /><code>{"Vector3 GetPosition(int index)"}</code> | <span className="api-desc">World position of the point at an index.</span> |
+| <Link id="m-getpositions" /><code>{"IEnumerable<Vector3> GetPositions() (iterator)"}</code> | <span className="api-desc">All the points in order.</span> |

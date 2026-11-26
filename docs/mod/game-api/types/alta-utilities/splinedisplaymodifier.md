@@ -22,10 +22,10 @@ Base for components that tweak a sibling `SplineDisplay`. Destroyed when the spl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SplineDisplayModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected SplineDisplayModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: calls `OnValidate` on the `SplineDisplay` on the same object so it can refresh. |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Editor: calls `OnValidate` on the `SplineDisplay` on the same object so it can refresh.</span> |

@@ -21,14 +21,14 @@ The internal side of a liquid container, used by the pouring code to change its 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-outtransition" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" OutTransition { get; }"}</code> | The pour currently leaving this container, if any. |
+| <Link id="m-outtransition" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" OutTransition { get; }"}</code> | <span className="api-desc">The pour currently leaving this container, if any.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addliquid" /><code>{"bool AddLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" containedLiquid, int amount, bool isForced = false)"}</code> | Adds an amount of a liquid. Returns whether it worked. |
-| <Link id="m-addliquidintransition" /><code>{"void AddLiquidInTransition("}<Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | Starts receiving liquid from a pour in progress. |
-| <Link id="m-removeliquid" /><code>{"bool RemoveLiquid(int amount, bool isForced = false)"}</code> | Removes an amount. Returns whether it worked. |
-| <Link id="m-removeliquidintransition" /><code>{"void RemoveLiquidInTransition("}<Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | Stops receiving from a pour in progress. |
-| <Link id="m-setcontent" /><code>{"void SetContent("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> | Replaces what liquid the container holds. |
+| <Link id="m-addliquid" /><code>{"bool AddLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" containedLiquid, int amount, bool isForced = false)"}</code> | <span className="api-desc">Adds an amount of a liquid. Returns whether it worked.</span> |
+| <Link id="m-addliquidintransition" /><code>{"void AddLiquidInTransition("}<Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | <span className="api-desc">Starts receiving liquid from a pour in progress.</span> |
+| <Link id="m-removeliquid" /><code>{"bool RemoveLiquid(int amount, bool isForced = false)"}</code> | <span className="api-desc">Removes an amount. Returns whether it worked.</span> |
+| <Link id="m-removeliquidintransition" /><code>{"void RemoveLiquidInTransition("}<Link to="/mod/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | <span className="api-desc">Stops receiving from a pour in progress.</span> |
+| <Link id="m-setcontent" /><code>{"void SetContent("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> | <span className="api-desc">Replaces what liquid the container holds.</span> |

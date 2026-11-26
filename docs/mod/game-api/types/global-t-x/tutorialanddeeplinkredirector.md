@@ -21,27 +21,27 @@ Client: when enabled, shows the deeplink popup if the game was launched from an 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> | Popup shown when launched from a deeplink. |
-| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> | Popup shown on a normal launch. |
+| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> | <span className="api-desc">Popup shown when launched from a deeplink.</span> |
+| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> | <span className="api-desc">Popup shown on a normal launch.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Checks the Oculus launch type; on a deeplink logs the start analytics event and shows `deeplinkPopup`, otherwise shows `tutorialPopup`. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Checks the Oculus launch type; on a deeplink logs the start analytics event and shows `deeplinkPopup`, otherwise shows `tutorialPopup`.</span> |
 
 </details>

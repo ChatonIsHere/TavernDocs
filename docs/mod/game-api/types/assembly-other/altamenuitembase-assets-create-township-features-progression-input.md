@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Progression/Input`: menu ite
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Input()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input` with default values. |
+| <Link id="m-ctor" /><code>{"protected Input()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input` with default values.</span> |

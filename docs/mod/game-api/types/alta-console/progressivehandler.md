@@ -20,10 +20,14 @@ Empty marker type. A console command whose first parameter is a `ProgressiveHand
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> | Creates a `ProgressiveHandler` with default values. |
+| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> | <span className="api-desc">Creates a `ProgressiveHandler` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ProgressiveHandler`:
 
+<div className="api-used-in">
+
 [`Command.Invoke`](/mod/game-api/types/alta-console/command#m-invoke), [`Command.InvokeCommand`](/mod/game-api/types/alta-console/command#m-invokecommand).
+
+</div>

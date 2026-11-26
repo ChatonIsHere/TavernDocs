@@ -21,10 +21,10 @@ A shop category as staff create or edit it. Same as `TownshipItemCategory` but t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> | Creates a `TownshipItemCategoryModificationRequest` with default values. |
+| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> | <span className="api-desc">Creates a `TownshipItemCategoryModificationRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parentcategory" /><code>{"int ParentCategory { get; set; }"}</code> | Id of the parent category; left out of the JSON when 0. Hides the base class's object property. |
+| <Link id="m-parentcategory" /><code>{"int ParentCategory { get; set; }"}</code> | <span className="api-desc">Id of the parent category; left out of the JSON when 0. Hides the base class's object property.</span> |

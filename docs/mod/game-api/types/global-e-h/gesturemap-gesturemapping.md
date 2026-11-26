@@ -21,17 +21,17 @@ One serialized D-pad direction and gesture pair in a `GestureMap`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> | Creates a `GestureMap.GestureMapping` with default values. |
+| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> | <span className="api-desc">Creates a `GestureMap.GestureMapping` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dpaddirection" /><code>{"private int dPadDirection"}</code> | Backing field for `DPadDirection`. |
-| <Link id="m-gesture" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" gesture"}</code> | Backing field for `Gesture`. |
+| <Link id="m-dpaddirection" /><code>{"private int dPadDirection"}</code> | <span className="api-desc">Backing field for `DPadDirection`.</span> |
+| <Link id="m-gesture" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" gesture"}</code> | <span className="api-desc">Backing field for `Gesture`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ One serialized D-pad direction and gesture pair in a `GestureMap`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dpaddirection-2" /><code>{"int DPadDirection { get; }"}</code> | The D-pad direction index. |
-| <Link id="m-gesture-2" /><code><Link to="/mod/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" Gesture { get; }"}</code> | The hand gesture for that direction. |
+| <Link id="m-dpaddirection-2" /><code>{"int DPadDirection { get; }"}</code> | <span className="api-desc">The D-pad direction index.</span> |
+| <Link id="m-gesture-2" /><code><Link to="/mod/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{" Gesture { get; }"}</code> | <span className="api-desc">The hand gesture for that direction.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GestureMapping`:
 
+<div className="api-used-in">
+
 [`GestureMap.gestureMappings`](/mod/game-api/types/global-e-h/gesturemap#m-gesturemappings).
+
+</div>

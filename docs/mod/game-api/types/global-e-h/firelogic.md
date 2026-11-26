@@ -22,18 +22,18 @@ Lets a logic signal light or put out a `Fire`, and reports the fire's on/off sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireLogic()"}</code> | Creates a `FireLogic` with default values. |
+| <Link id="m-ctor" /><code>{"FireLogic()"}</code> | <span className="api-desc">Creates a `FireLogic` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activatedbylogic" /><code>{"private bool activatedByLogic"}</code> | When false, logic input is ignored. Saved. |
-| <Link id="m-fire" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/fire">{"Fire"}</Link>{" fire"}</code> | The fire this controls. |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | Event fired with the fire's new state whenever it toggles. |
+| <Link id="m-activatedbylogic" /><code>{"private bool activatedByLogic"}</code> | <span className="api-desc">When false, logic input is ignored. Saved.</span> |
+| <Link id="m-fire" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/fire">{"Fire"}</Link>{" fire"}</code> | <span className="api-desc">The fire this controls.</span> |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | <span className="api-desc">Event fired with the fire's new state whenever it toggles.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Lets a logic signal light or put out a `Fire`, and reports the fire's on/off sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatefire" /><code>{"void UpdateFire(bool value)"}</code> | If `activatedByLogic` is set, lights the fire on true and puts it out instantly on false. |
+| <Link id="m-updatefire" /><code>{"void UpdateFire(bool value)"}</code> | <span className="api-desc">If `activatedByLogic` is set, lights the fire on true and puts it out instantly on false.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the fire's toggle event to `onValueUpdated`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the fire's toggle event to `onValueUpdated`.</span> |
 
 </details>

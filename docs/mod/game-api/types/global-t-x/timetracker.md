@@ -20,4 +20,4 @@ An empty class with no members and no users in the code.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeTracker()"}</code> | Creates a `TimeTracker` with default values. |
+| <Link id="m-ctor" /><code>{"TimeTracker()"}</code> | <span className="api-desc">Creates a `TimeTracker` with default values.</span> |

@@ -30,4 +30,8 @@ Which atlased shader a texture atlas uses: common, wind foliage, no-wind foliage
 
 Members of other types that take, return or hold a `AtlasType`:
 
+<div className="api-used-in">
+
 [`AtlasDefinition.type`](/mod/game-api/types/alta-utilities/atlasdefinition#m-type), [`AtlasSettings.IsShaderSupported`](/mod/game-api/types/alta-utilities/atlassettings#m-isshadersupported), [`AtlasSettings.ShaderBlits.type`](/mod/game-api/types/alta-utilities/atlassettings-shaderblits#m-type), [`AtlasSettings.ShaderBlits.Type`](/mod/game-api/types/alta-utilities/atlassettings-shaderblits#m-type-2).
+
+</div>

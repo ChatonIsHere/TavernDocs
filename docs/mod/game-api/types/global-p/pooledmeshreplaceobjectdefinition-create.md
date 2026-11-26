@@ -22,4 +22,4 @@ Editor menu entry for creating a `PooledMeshReplaceObjectDefinition` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PooledMeshReplaceObjectDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PooledMeshReplaceObjectDefinition.Create` with default values.</span> |

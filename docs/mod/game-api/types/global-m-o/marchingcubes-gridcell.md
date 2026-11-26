@@ -21,18 +21,22 @@ One cube of the marching cubes grid: its eight corners and their density values.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GridCell()"}</code> | Creates a `MarchingCubes.GridCell` with default values. |
+| <Link id="m-ctor" /><code>{"GridCell()"}</code> | <span className="api-desc">Creates a `MarchingCubes.GridCell` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coordinate" /><code><Link to="/mod/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" coordinate"}</code> | Grid coordinate of the cell, used to key shared edge vertices. |
-| <Link id="m-points" /><code>{"Vector3[] points"}</code> | World positions of the eight corners. |
-| <Link id="m-values" /><code>{"float[] values"}</code> | Density value at each corner, compared to the iso level. |
+| <Link id="m-coordinate" /><code><Link to="/mod/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" coordinate"}</code> | <span className="api-desc">Grid coordinate of the cell, used to key shared edge vertices.</span> |
+| <Link id="m-points" /><code>{"Vector3[] points"}</code> | <span className="api-desc">World positions of the eight corners.</span> |
+| <Link id="m-values" /><code>{"float[] values"}</code> | <span className="api-desc">Density value at each corner, compared to the iso level.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GridCell`:
 
+<div className="api-used-in">
+
 [`MarchingCubes.Polygonise`](/mod/game-api/types/global-m-o/marchingcubes#m-polygonise).
+
+</div>

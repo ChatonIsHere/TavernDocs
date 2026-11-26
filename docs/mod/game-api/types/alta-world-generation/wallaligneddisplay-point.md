@@ -21,19 +21,23 @@ One cell offset inside `WallAlignedDisplay`'s check radius, with a weight that f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> | Creates a `WallAlignedDisplay.Point` from `x`, `y`, `direction` and `value`. |
+| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> | <span className="api-desc">Creates a `WallAlignedDisplay.Point` from `x`, `y`, `direction` and `value`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> | The offset as a vector, used to sum up which way the nearby wall lies. |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | Weight of the cell: distance left to the check radius, divided by the threshold. |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | X offset from the centre cell. |
-| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> | Second grid offset from the centre cell (Z in map terms). |
+| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> | <span className="api-desc">The offset as a vector, used to sum up which way the nearby wall lies.</span> |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | <span className="api-desc">Weight of the cell: distance left to the check radius, divided by the threshold.</span> |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | <span className="api-desc">X offset from the centre cell.</span> |
+| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> | <span className="api-desc">Second grid offset from the centre cell (Z in map terms).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Point`:
 
+<div className="api-used-in">
+
 [`WallAlignedDisplay.checkPoints`](/mod/game-api/types/alta-world-generation/wallaligneddisplay#m-checkpoints).
+
+</div>

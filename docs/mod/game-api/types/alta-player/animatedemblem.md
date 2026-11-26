@@ -21,18 +21,18 @@ Name board emblem that plays a closing animation before it is removed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedEmblem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimatedEmblem()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> | Animator that plays the closing animation. |
-| <Link id="m-callback" /><code>{"private Action callBack"}</code> | Callback passed to `Close`. |
-| <Link id="m-disablingparameter" /><code>{"private string disablingParameter"}</code> | Animator bool set to start closing. |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | <span className="api-desc">Animator that plays the closing animation.</span> |
+| <Link id="m-callback" /><code>{"private Action callBack"}</code> | <span className="api-desc">Callback passed to `Close`.</span> |
+| <Link id="m-disablingparameter" /><code>{"private string disablingParameter"}</code> | <span className="api-desc">Animator bool set to start closing.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Name board emblem that plays a closing animation before it is removed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"override void Close(Action callBack)"}</code> | Sets the animator's disabling bool and stores the callback to run when the animation ends. |
+| <Link id="m-close" /><code>{"override void Close(Action callBack)"}</code> | <span className="api-desc">Sets the animator's disabling bool and stores the callback to run when the animation ends.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onanimationended" /><code>{"private void IAnimationEndCallbackReceiver.OnAnimationEnded()"}</code> | Runs the stored close callback. |
+| <Link id="m-onanimationended" /><code>{"private void IAnimationEndCallbackReceiver.OnAnimationEnded()"}</code> | <span className="api-desc">Runs the stored close callback.</span> |
 
 </details>

@@ -22,4 +22,4 @@ A `NetworkingStatisticsList` filled once in the constructor by mapping each item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> | Creates a `NetworkingStatisticsList` from `listToCreateFrom`, `createStatisticObject` and `name`. |
+| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> | <span className="api-desc">Creates a `NetworkingStatisticsList` from `listToCreateFrom`, `createStatisticObject` and `name`.</span> |

@@ -23,20 +23,20 @@ A private NLog filter that drops the game's log lines that print the whole text 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RefusedLoginFilter()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"RefusedLoginFilter()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addto" /><code>{"static void AddTo(LoggingConfiguration config)"}</code> | Adds the filter first on every rule and child rule of an NLog config, keeping rules that had no filters writing as before. |
-| <Link id="m-check" /><code>{"protected override FilterResult Check(LogEventInfo logEvent)"}</code> | Ignores the game's refused-authorization lines from the websocket console, the 1758 "Received token" line and the REST console's refusal. |
+| <Link id="m-addto" /><code>{"static void AddTo(LoggingConfiguration config)"}</code> | <span className="api-desc">Adds the filter first on every rule and child rule of an NLog config, keeping rules that had no filters writing as before.</span> |
+| <Link id="m-check" /><code>{"protected override FilterResult Check(LogEventInfo logEvent)"}</code> | <span className="api-desc">Ignores the game's refused-authorization lines from the websocket console, the 1758 "Received token" line and the REST console's refusal.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"private static void Add(LoggingRule rule)"}</code> | Adds the filter to a logging rule, and to its child rules, if it isn't there yet. |
+| <Link id="m-add" /><code>{"private static void Add(LoggingRule rule)"}</code> | <span className="api-desc">Adds the filter to a logging rule, and to its child rules, if it isn't there yet.</span> |
 
 </details>

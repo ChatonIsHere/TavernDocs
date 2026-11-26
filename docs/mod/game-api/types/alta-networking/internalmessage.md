@@ -18,14 +18,14 @@ Network message for an entity's own message types (`EntityMessageType`), used by
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-messagetype" /><code>{"private static uint messageType"}</code> | The entity message type being sent (8 bits). |
-| <Link id="m-writemethod" /><code>{"private static "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod"}</code> | Method that writes the message data. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-messagetype" /><code>{"private static uint messageType"}</code> | <span className="api-desc">The entity message type being sent (8 bits).</span> |
+| <Link id="m-writemethod" /><code>{"private static "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod"}</code> | <span className="api-desc">Method that writes the message data.</span> |
 
 </details>
 
@@ -33,6 +33,6 @@ Network message for an entity's own message types (`EntityMessageType`), used by
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendtoplayers" /><code>{"static void SendToPlayers("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod, "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players)"}</code> | Sends an entity message to the given players. |
-| <Link id="m-sendtoserver" /><code>{"static void SendToServer("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod, "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel = null)"}</code> | Client: sends an entity message to the server. Logs an error if called on the server. |
-| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/global-i-l/iconnection">{"IConnection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the entity, type and data, or on read passes the data to the entity's message handler, waiting for it to spawn if needed. |
+| <Link id="m-sendtoplayers" /><code>{"static void SendToPlayers("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod, "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, IEnumerable<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players)"}</code> | <span className="api-desc">Sends an entity message to the given players.</span> |
+| <Link id="m-sendtoserver" /><code>{"static void SendToServer("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writeMethod, "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel = null)"}</code> | <span className="api-desc">Client: sends an entity message to the server. Logs an error if called on the server.</span> |
+| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/global-i-l/iconnection">{"IConnection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes the entity, type and data, or on read passes the data to the entity's message handler, waiting for it to spawn if needed.</span> |

@@ -22,29 +22,29 @@ Pooled particle stream that flows along a spline from a player's elbow through t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkillOrbInteractionSpline()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SkillOrbInteractionSpline()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>14 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activecolor" /><code>{"private Color activeColor"}</code> | Current particle colour. |
-| <Link id="m-androidparticles" /><code>{"private ParticleSystem androidParticles"}</code> | Separate particle system, probably for the Android build. |
-| <Link id="m-buyingcolor" /><code>{"private Color buyingColor"}</code> | Particle colour when buying. |
-| <Link id="m-character" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character"}</code> | Player character whose IK update drives `RenderUpdate`. |
-| <Link id="m-direction" /><code>{"private int direction"}</code> | Side sign, flipped for the right hand. |
-| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> | The arm's elbow bone. |
-| <Link id="m-hand" /><code>{"private Transform hand"}</code> | The arm's wrist bone. |
-| <Link id="m-isbuying" /><code>{"private bool isBuying"}</code> | Whether the stream is for buying (reversed flow). |
-| <Link id="m-particles" /><code>{"private ParticleSystem particles"}</code> | Particle system moved along the spline. |
-| <Link id="m-particles-2" /><code>{"private ParticleSystem.Particle[] Particles"}</code> | Buffer of particles read and written each render update. |
-| <Link id="m-sellingcolor" /><code>{"private Color sellingColor"}</code> | Particle colour when selling. |
-| <Link id="m-speedparameters" /><code>{"private float[] speedParameters"}</code> | Tangent lengths at each spline stage, indexed by `SplineParamaters`. |
-| <Link id="m-spline" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline"}</code> | The Bezier spline the particles follow. |
-| <Link id="m-targetposition" /><code>{"private Vector3 targetPosition"}</code> | World position of the orb. |
+| <Link id="m-activecolor" /><code>{"private Color activeColor"}</code> | <span className="api-desc">Current particle colour.</span> |
+| <Link id="m-androidparticles" /><code>{"private ParticleSystem androidParticles"}</code> | <span className="api-desc">Separate particle system, probably for the Android build.</span> |
+| <Link id="m-buyingcolor" /><code>{"private Color buyingColor"}</code> | <span className="api-desc">Particle colour when buying.</span> |
+| <Link id="m-character" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character"}</code> | <span className="api-desc">Player character whose IK update drives `RenderUpdate`.</span> |
+| <Link id="m-direction" /><code>{"private int direction"}</code> | <span className="api-desc">Side sign, flipped for the right hand.</span> |
+| <Link id="m-elbow" /><code>{"private Transform elbow"}</code> | <span className="api-desc">The arm's elbow bone.</span> |
+| <Link id="m-hand" /><code>{"private Transform hand"}</code> | <span className="api-desc">The arm's wrist bone.</span> |
+| <Link id="m-isbuying" /><code>{"private bool isBuying"}</code> | <span className="api-desc">Whether the stream is for buying (reversed flow).</span> |
+| <Link id="m-particles" /><code>{"private ParticleSystem particles"}</code> | <span className="api-desc">Particle system moved along the spline.</span> |
+| <Link id="m-particles-2" /><code>{"private ParticleSystem.Particle[] Particles"}</code> | <span className="api-desc">Buffer of particles read and written each render update.</span> |
+| <Link id="m-sellingcolor" /><code>{"private Color sellingColor"}</code> | <span className="api-desc">Particle colour when selling.</span> |
+| <Link id="m-speedparameters" /><code>{"private float[] speedParameters"}</code> | <span className="api-desc">Tangent lengths at each spline stage, indexed by `SplineParamaters`.</span> |
+| <Link id="m-spline" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" spline"}</code> | <span className="api-desc">The Bezier spline the particles follow.</span> |
+| <Link id="m-targetposition" /><code>{"private Vector3 targetPosition"}</code> | <span className="api-desc">World position of the orb.</span> |
 
 </details>
 
@@ -52,16 +52,16 @@ Pooled particle stream that flows along a spline from a player's elbow through t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-renderupdate" /><code>{"void RenderUpdate()"}</code> | Rebuilds the spline from the arm and orb positions and moves each particle along it by lifetime. |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" orb, bool isBuying)"}</code> | Attaches the stream to the interacting hand's arm and the orb and picks the colour. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sizes the particle buffer and hooks `Requested` to clean up. |
+| <Link id="m-renderupdate" /><code>{"void RenderUpdate()"}</code> | <span className="api-desc">Rebuilds the spline from the arm and orb positions and moves each particle along it by lifetime.</span> |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" orb, bool isBuying)"}</code> | <span className="api-desc">Attaches the stream to the interacting hand's arm and the orb and picks the colour.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Sizes the particle buffer and hooks `Requested` to clean up.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getindex" /><code>{"private int GetIndex(int index, int max)"}</code> | Reverses a control point index when buying, so the stream flows the other way. |
-| <Link id="m-resetunpooled" /><code>{"private void ResetUnpooled("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Unhooks from the character's IK pre-render callback. |
+| <Link id="m-getindex" /><code>{"private int GetIndex(int index, int max)"}</code> | <span className="api-desc">Reverses a control point index when buying, so the stream flows the other way.</span> |
+| <Link id="m-resetunpooled" /><code>{"private void ResetUnpooled("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Unhooks from the character's IK pre-render callback.</span> |
 
 </details>

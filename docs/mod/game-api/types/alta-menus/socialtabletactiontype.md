@@ -28,4 +28,8 @@ Moderation action sent from the social tablet's recent players page: report, ban
 
 Members of other types that take, return or hold a `SocialTabletActionType`:
 
+<div className="api-used-in">
+
 [`SocialTabletActionSyncStruct.ActionType`](/mod/game-api/types/alta-menus/socialtabletactionsyncstruct#m-actiontype).
+
+</div>

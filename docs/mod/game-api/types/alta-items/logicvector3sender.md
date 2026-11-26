@@ -23,16 +23,16 @@ Logic sender that outputs a `Vector3` to linked receivers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3Sender()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicVector3Sender()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"private Vector3 currentValue"}</code> | The vector currently being output. |
+| <Link id="m-currentvalue" /><code>{"private Vector3 currentValue"}</code> | <span className="api-desc">The vector currently being output.</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Logic sender that outputs a `Vector3` to linked receivers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatevalue" /><code>{"void UpdateValue(Vector3 value)"}</code> | Sets and sends a new value if it differs from the current one. |
-| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> | Copies the saved data value into `currentValue`. |
-| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> | Copies `currentValue` into the data that is sent and saved. |
+| <Link id="m-updatevalue" /><code>{"void UpdateValue(Vector3 value)"}</code> | <span className="api-desc">Sets and sends a new value if it differs from the current one.</span> |
+| <Link id="m-readdatavalue" /><code>{"protected override void ReadDataValue()"}</code> | <span className="api-desc">Copies the saved data value into `currentValue`.</span> |
+| <Link id="m-writedatavalue" /><code>{"protected override void WriteDataValue()"}</code> | <span className="api-desc">Copies `currentValue` into the data that is sent and saved.</span> |

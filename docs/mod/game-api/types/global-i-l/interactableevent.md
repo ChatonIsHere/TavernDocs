@@ -21,10 +21,14 @@ Serializable event with an `Interactable` and the `Interactor` using it, editabl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractableEvent()"}</code> | Creates an `InteractableEvent` with default values. |
+| <Link id="m-ctor" /><code>{"InteractableEvent()"}</code> | <span className="api-desc">Creates an `InteractableEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InteractableEvent`:
 
+<div className="api-used-in">
+
 [`LocalPlayerInteractionEvents.firstInteractionStarted`](/mod/game-api/types/global-i-l/localplayerinteractionevents#m-firstinteractionstarted), [`LocalPlayerInteractionEvents.interactionEnded`](/mod/game-api/types/global-i-l/localplayerinteractionevents#m-interactionended), [`LocalPlayerInteractionEvents.interactionStarted`](/mod/game-api/types/global-i-l/localplayerinteractionevents#m-interactionstarted), [`LocalPlayerInteractionEvents.lastInteractionEnded`](/mod/game-api/types/global-i-l/localplayerinteractionevents#m-lastinteractionended).
+
+</div>

@@ -19,12 +19,12 @@ A small registry holding one object per type, where TavernLib keeps `TavernManag
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serviceentries" /><code>{"private static readonly Dictionary<Type, "}<Link to="/mod/tavernlib-api/types/services/iservice">{"IService"}</Link>{"> ServiceEntries"}</code> | The registered services, keyed by their type. |
+| <Link id="m-serviceentries" /><code>{"private static readonly Dictionary<Type, "}<Link to="/mod/tavernlib-api/types/services/iservice">{"IService"}</Link>{"> ServiceEntries"}</code> | <span className="api-desc">The registered services, keyed by their type.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ A small registry holding one object per type, where TavernLib keeps `TavernManag
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addservice" /><code>{"static void AddService<T>(T instance)"}</code> | Registers an instance under the generic type `T`. Logs a warning and does nothing if `T` is already registered. |
-| <Link id="m-getservice" /><code>{"static T GetService<T>()"}</code> | The instance registered under exactly `T`, or `null` with an error logged. On a client `TavernManager` is never there. |
+| <Link id="m-addservice" /><code>{"static void AddService<T>(T instance)"}</code> | <span className="api-desc">Registers an instance under the generic type `T`. Logs a warning and does nothing if `T` is already registered.</span> |
+| <Link id="m-getservice" /><code>{"static T GetService<T>()"}</code> | <span className="api-desc">The instance registered under exactly `T`, or `null` with an error logged. On a client `TavernManager` is never there.</span> |

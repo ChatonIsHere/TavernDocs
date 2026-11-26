@@ -22,4 +22,4 @@ Editor menu entry that creates a new `ImpactDetectorSettings` asset under the To
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactDetectorSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ImpactDetectorSettings.Create` with default values.</span> |

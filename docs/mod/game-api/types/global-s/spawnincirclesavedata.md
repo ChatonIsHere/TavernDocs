@@ -23,14 +23,14 @@ Save data for `SpawnInCircle` (version 2): its ring settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> | Creates a `SpawnInCircleSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> | <span className="api-desc">Creates a `SpawnInCircleSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> | Saved `maxRadius`. |
-| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> | Saved `minRadius`. |
-| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> | Saved `numOfItems`. |
-| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> | Saved `randomOffset`. |
-| <Link id="m-shouldbekinematicsaved" /><code>{"bool shouldBeKinematicSaved"}</code> | Saved `shouldBeKinematic`. |
+| <Link id="m-maxradiussaved" /><code>{"float maxRadiusSaved"}</code> | <span className="api-desc">Saved `maxRadius`.</span> |
+| <Link id="m-minradiussaved" /><code>{"float minRadiusSaved"}</code> | <span className="api-desc">Saved `minRadius`.</span> |
+| <Link id="m-numofitemssaved" /><code>{"int numOfItemsSaved"}</code> | <span className="api-desc">Saved `numOfItems`.</span> |
+| <Link id="m-randomoffsetsaved" /><code>{"Vector3 randomOffsetSaved"}</code> | <span className="api-desc">Saved `randomOffset`.</span> |
+| <Link id="m-shouldbekinematicsaved" /><code>{"bool shouldBeKinematicSaved"}</code> | <span className="api-desc">Saved `shouldBeKinematic`.</span> |

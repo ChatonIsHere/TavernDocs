@@ -21,17 +21,17 @@ Debug record of an LOD group and its LOD values, kept in a `LODChange` asset for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> | Creates a `LODChange.LODLog` from `group` and `lods`. |
+| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> | <span className="api-desc">Creates a `LODChange.LODLog` from `group` and `lods`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group" /><code>{"private LODGroup group"}</code> | Backing field for `Group`. |
-| <Link id="m-lods" /><code>{"private float[] lods"}</code> | Backing field for `LODs`. |
+| <Link id="m-group" /><code>{"private LODGroup group"}</code> | <span className="api-desc">Backing field for `Group`.</span> |
+| <Link id="m-lods" /><code>{"private float[] lods"}</code> | <span className="api-desc">Backing field for `LODs`.</span> |
 
 </details>
 
@@ -39,12 +39,16 @@ Debug record of an LOD group and its LOD values, kept in a `LODChange` asset for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group-2" /><code>{"LODGroup Group { get; }"}</code> | The logged LOD group. |
-| <Link id="m-isexpanding" /><code>{"bool IsExpanding { get; set; }"}</code> | UI state: whether the entry is expanded. |
-| <Link id="m-lods-2" /><code>{"float[] LODs { get; }"}</code> | Recorded LOD values for the group. |
+| <Link id="m-group-2" /><code>{"LODGroup Group { get; }"}</code> | <span className="api-desc">The logged LOD group.</span> |
+| <Link id="m-isexpanding" /><code>{"bool IsExpanding { get; set; }"}</code> | <span className="api-desc">UI state: whether the entry is expanded.</span> |
+| <Link id="m-lods-2" /><code>{"float[] LODs { get; }"}</code> | <span className="api-desc">Recorded LOD values for the group.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LODLog`:
 
+<div className="api-used-in">
+
 [`LODChange.logs`](/mod/game-api/types/global-i-l/lodchange#m-logs), [`LODChange.Logs`](/mod/game-api/types/global-i-l/lodchange#m-logs-2).
+
+</div>

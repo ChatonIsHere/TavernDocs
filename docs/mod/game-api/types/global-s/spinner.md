@@ -21,30 +21,30 @@ Client visual that spins an object each frame and loops its Z scale along a curv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Spinner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Spinner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | Position in the scale loop, 0 to 1. |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> | Degrees turned per frame, not per second. |
-| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> | Local axis to spin around. |
-| <Link id="m-scalecurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" scaleCurve"}</code> | Curve and duration for the looping Z scale. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">Position in the scale loop, 0 to 1.</span> |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> | <span className="api-desc">Degrees turned per frame, not per second.</span> |
+| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> | <span className="api-desc">Local axis to spin around.</span> |
+| <Link id="m-scalecurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" scaleCurve"}</code> | <span className="api-desc">Curve and duration for the looping Z scale.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Disables itself on headless builds and restarts the scale loop. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Rotates by `rotation` degrees and sets Z scale from the curve. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Disables itself on headless builds and restarts the scale loop.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Rotates by `rotation` degrees and sets Z scale from the curve.</span> |
 
 </details>

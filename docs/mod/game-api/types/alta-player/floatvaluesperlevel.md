@@ -21,10 +21,14 @@ A `ValuePerLevel` of floats, for skill values that change by level, such as `Bow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FloatValuesPerLevel()"}</code> | Creates a `FloatValuesPerLevel` with default values. |
+| <Link id="m-ctor" /><code>{"FloatValuesPerLevel()"}</code> | <span className="api-desc">Creates a `FloatValuesPerLevel` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FloatValuesPerLevel`:
 
+<div className="api-used-in">
+
 [`BowDrawSkill.damageMultiplierPerLevel`](/mod/game-api/types/alta-player/bowdrawskill#m-damagemultiplierperlevel).
+
+</div>

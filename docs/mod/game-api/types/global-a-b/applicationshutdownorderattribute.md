@@ -22,16 +22,16 @@ Class attribute that sets the order of a class's shutdown handlers. `ShutdownOrd
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> | Creates an `ApplicationShutdownOrderAttribute` from `order`. |
+| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> | <span className="api-desc">Creates an `ApplicationShutdownOrderAttribute` from `order`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-shutdownorder" /><code>{"int ShutdownOrder { get; private set; }"}</code> | The order value given in the constructor. |
+| <Link id="m-shutdownorder" /><code>{"int ShutdownOrder { get; private set; }"}</code> | <span className="api-desc">The order value given in the constructor.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getshutdownorder" /><code>{"static int GetShutdownOrder(Type targetType)"}</code> | Returns the order on the given type's attribute, or 0 when it has none. |
+| <Link id="m-getshutdownorder" /><code>{"static int GetShutdownOrder(Type targetType)"}</code> | <span className="api-desc">Returns the order on the given type's attribute, or 0 when it has none.</span> |

@@ -19,28 +19,28 @@ Console module `info` about game systems. Needs the `server_owner` permission. O
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>7 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-all" /><code>{"private static void All()"}</code> | Command `info`: runs all the info commands. |
-| <Link id="m-commandlinearguments" /><code>{"private static void CommandLineArguments()"}</code> | Command `info cli`: empty in this build. |
-| <Link id="m-currentversion" /><code>{"private static void CurrentVersion()"}</code> | Command `info version`: logs the build version. |
-| <Link id="m-playermode" /><code>{"private static void PlayerMode()"}</code> | Command `info player-mode`: logs the current player mode. |
-| <Link id="m-server" /><code>{"private static void Server()"}</code> | Command `info server`: empty in this build. |
-| <Link id="m-systeminfo" /><code>{"private static void SystemInfo()"}</code> | Command `info system`: empty in this build. |
-| <Link id="m-user" /><code>{"private static void User()"}</code> | Command `info user`: empty in this build. |
+| <Link id="m-all" /><code>{"private static void All()"}</code> | <span className="api-desc">Command `info`: runs all the info commands.</span> |
+| <Link id="m-commandlinearguments" /><code>{"private static void CommandLineArguments()"}</code> | <span className="api-desc">Command `info cli`: empty in this build.</span> |
+| <Link id="m-currentversion" /><code>{"private static void CurrentVersion()"}</code> | <span className="api-desc">Command `info version`: logs the build version.</span> |
+| <Link id="m-playermode" /><code>{"private static void PlayerMode()"}</code> | <span className="api-desc">Command `info player-mode`: logs the current player mode.</span> |
+| <Link id="m-server" /><code>{"private static void Server()"}</code> | <span className="api-desc">Command `info server`: empty in this build.</span> |
+| <Link id="m-systeminfo" /><code>{"private static void SystemInfo()"}</code> | <span className="api-desc">Command `info system`: empty in this build.</span> |
+| <Link id="m-user" /><code>{"private static void User()"}</code> | <span className="api-desc">Command `info user`: empty in this build.</span> |
 
 </details>

@@ -37,4 +37,8 @@ Lifecycle state of an Agones game server, from `Creating` through `Ready` and `A
 
 Members of other types that take, return or hold a `GameServerState`:
 
+<div className="api-used-in">
+
 [`Status.State`](/mod/game-api/types/assembly-api-models/status#m-state).
+
+</div>

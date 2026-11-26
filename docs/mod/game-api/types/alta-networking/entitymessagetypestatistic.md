@@ -22,16 +22,16 @@ Network traffic statistic for one entity message type.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> | Creates an `EntityMessageTypeStatistic` from `messageType`. |
+| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> | <span className="api-desc">Creates an `EntityMessageTypeStatistic` from `messageType`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-messagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType"}</code> | Backing field for `MessageType`. |
+| <Link id="m-messagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType"}</code> | <span className="api-desc">Backing field for `MessageType`.</span> |
 
 </details>
 
@@ -39,16 +39,20 @@ Network traffic statistic for one entity message type.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-messagetype-2" /><code><Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" MessageType { get; }"}</code> | The entity message type counted. |
+| <Link id="m-messagetype-2" /><code><Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" MessageType { get; }"}</code> | <span className="api-desc">The entity message type counted.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | Returns a one-line summary with the message type and the base traffic figures. |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | <span className="api-desc">Returns a one-line summary with the message type and the base traffic figures.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EntityMessageTypeStatistic`:
 
+<div className="api-used-in">
+
 [`EntityMessageStatistics.CreateNewStatistic`](/mod/game-api/types/alta-networking/entitymessagestatistics#m-createnewstatistic).
+
+</div>

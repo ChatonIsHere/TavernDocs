@@ -21,19 +21,23 @@ A triangle of three forest nodes in a `ForestInfo`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Space()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Space` with default values. |
+| <Link id="m-ctor" /><code>{"Space()"}</code> | <span className="api-desc">Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Space` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"int a"}</code> | Index of the first node. |
-| <Link id="m-b" /><code>{"int b"}</code> | Index of the second node. |
-| <Link id="m-c" /><code>{"int c"}</code> | Index of the third node. |
-| <Link id="m-id" /><code>{"int id"}</code> | The space's position in the forest's space list. |
+| <Link id="m-a" /><code>{"int a"}</code> | <span className="api-desc">Index of the first node.</span> |
+| <Link id="m-b" /><code>{"int b"}</code> | <span className="api-desc">Index of the second node.</span> |
+| <Link id="m-c" /><code>{"int c"}</code> | <span className="api-desc">Index of the third node.</span> |
+| <Link id="m-id" /><code>{"int id"}</code> | <span className="api-desc">The space's position in the forest's space list.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Space`:
 
+<div className="api-used-in">
+
 [`WorldCommandModule.ForestCommandModule.ForestInfo.spaces`](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo#m-spaces).
+
+</div>

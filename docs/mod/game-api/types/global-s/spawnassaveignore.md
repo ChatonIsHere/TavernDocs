@@ -21,10 +21,10 @@ Server: marks the entity's prefab so it is never saved.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnAsSaveIgnore()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpawnAsSaveIgnore()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Sets the entity's prefab save mode to `Ignore`. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Sets the entity's prefab save mode to `Ignore`.</span> |

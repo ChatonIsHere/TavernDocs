@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Character/Renderers`: menu item classes in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Renderers()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Character.Renderers` with default values. |
+| <Link id="m-ctor" /><code>{"protected Renderers()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Character.Renderers` with default values.</span> |

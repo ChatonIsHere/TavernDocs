@@ -21,16 +21,20 @@ Base class for a platform specific startup step. `StartupLoader` runs every load
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlatformLoader()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected PlatformLoader()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"abstract Task<bool> Load()"}</code> | Runs the startup step. Returns false if it failed. |
+| <Link id="m-load" /><code>{"abstract Task<bool> Load()"}</code> | <span className="api-desc">Runs the startup step. Returns false if it failed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlatformLoader`:
 
+<div className="api-used-in">
+
 [`StartupLoader.platformLoaders`](/mod/game-api/types/global-s/startuploader#m-platformloaders).
+
+</div>

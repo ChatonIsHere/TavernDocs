@@ -21,10 +21,10 @@ Inspector attribute that marks a field as a hash pointing to an object of a give
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> | Creates a `HashedObjectAttribute` from `targetType`. |
+| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> | <span className="api-desc">Creates a `HashedObjectAttribute` from `targetType`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> | Type of object the hash refers to. |
+| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> | <span className="api-desc">Type of object the hash refers to.</span> |

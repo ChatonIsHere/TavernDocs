@@ -21,4 +21,4 @@ An object a pooled factory can return to its pool.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondespawn" /><code>{"void OnDespawn()"}</code> | Called by the pooled factory when the object goes back to the pool. |
+| <Link id="m-ondespawn" /><code>{"void OnDespawn()"}</code> | <span className="api-desc">Called by the pooled factory when the object goes back to the pool.</span> |

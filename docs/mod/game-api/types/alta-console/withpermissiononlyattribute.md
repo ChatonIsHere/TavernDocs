@@ -21,17 +21,17 @@ Console requirement: the caller needs all the listed policies (for example `serv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> | Creates a `WithPermissionOnlyAttribute` from `roles`. |
+| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> | <span className="api-desc">Creates a `WithPermissionOnlyAttribute` from `roles`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-roles" /><code>{"string[] Roles { get; set; }"}</code> | The policies required. |
+| <Link id="m-roles" /><code>{"string[] Roles { get; set; }"}</code> | <span className="api-desc">The policies required.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | True only if there is a calling user whose policies include every listed role. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Names the required roles. |
+| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | <span className="api-desc">True only if there is a calling user whose policies include every listed role.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Names the required roles.</span> |

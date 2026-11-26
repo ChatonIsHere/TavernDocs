@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Post Processing.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Post_Processing()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Post_Processing` with default values. |
+| <Link id="m-ctor" /><code>{"protected Post_Processing()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Post_Processing` with default values.</span> |

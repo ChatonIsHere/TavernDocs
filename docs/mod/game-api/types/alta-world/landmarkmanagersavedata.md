@@ -23,16 +23,20 @@ Save data for the `LandmarkManager` (save structure version 1). Holds the map ma
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> | Creates a `LandmarkManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> | <span className="api-desc">Creates a `LandmarkManagerSaveData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-markers" /><code><Link to="/mod/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{"[] Markers { get; set; }"}</code> | The saved map markers. |
+| <Link id="m-markers" /><code><Link to="/mod/game-api/types/alta-world/markerinfo">{"MarkerInfo"}</Link>{"[] Markers { get; set; }"}</code> | <span className="api-desc">The saved map markers.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LandmarkManagerSaveData`:
 
+<div className="api-used-in">
+
 [`ServerLandmarkManager.LoadSave`](/mod/game-api/types/alta-world/serverlandmarkmanager#m-loadsave), [`ServerLandmarkManager.Save`](/mod/game-api/types/alta-world/serverlandmarkmanager#m-save).
+
+</div>

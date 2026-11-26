@@ -21,12 +21,12 @@ Property attribute for an array indexed by an enum, so the inspector can label e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> | Creates an `EnumArrayAttribute` from `enumType`, `startIndex` and `isFlagEnum`. |
+| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> | <span className="api-desc">Creates an `EnumArrayAttribute` from `enumType`, `startIndex` and `isFlagEnum`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enumtype" /><code>{"Type EnumType { get; }"}</code> | The enum whose names label the entries. |
-| <Link id="m-isflagenum" /><code>{"bool IsFlagEnum { get; }"}</code> | Whether the enum is a flags enum. |
-| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> | Enum value that the first entry stands for, probably. |
+| <Link id="m-enumtype" /><code>{"Type EnumType { get; }"}</code> | <span className="api-desc">The enum whose names label the entries.</span> |
+| <Link id="m-isflagenum" /><code>{"bool IsFlagEnum { get; }"}</code> | <span className="api-desc">Whether the enum is a flags enum.</span> |
+| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> | <span className="api-desc">Enum value that the first entry stands for, probably.</span> |

@@ -22,21 +22,21 @@ A dock array that fills its docks with random loot from its chunk's biome and re
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GeneratedLoot()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GeneratedLoot()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cachedpluginidentifier" /><code>{"private int cachedPluginIdentifier"}</code> | An int kept in the save data and restored on load; nothing else in this class reads it. |
-| <Link id="m-incrementingfailchance" /><code>{"private float incrementingFailChance"}</code> | How much the chance to stop filling grows with each dock tried. Passed to `LootHelper.Spawn`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-respawnfrequency" /><code>{"private float respawnFrequency"}</code> | Seconds between refills. Default 86400 (one day). |
-| <Link id="m-spawndata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | Unused field; `Respawn` uses the chunk's spawn data instead. |
-| <Link id="m-waittorefill" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" waitToRefill"}</code> | The `Timeline` entry for the repeating refill. Saved, and on load any missed refill runs on the next frame. |
+| <Link id="m-cachedpluginidentifier" /><code>{"private int cachedPluginIdentifier"}</code> | <span className="api-desc">An int kept in the save data and restored on load; nothing else in this class reads it.</span> |
+| <Link id="m-incrementingfailchance" /><code>{"private float incrementingFailChance"}</code> | <span className="api-desc">How much the chance to stop filling grows with each dock tried. Passed to `LootHelper.Spawn`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-respawnfrequency" /><code>{"private float respawnFrequency"}</code> | <span className="api-desc">Seconds between refills. Default 86400 (one day).</span> |
+| <Link id="m-spawndata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | <span className="api-desc">Unused field; `Respawn` uses the chunk's spawn data instead.</span> |
+| <Link id="m-waittorefill" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" waitToRefill"}</code> | <span className="api-desc">The `Timeline` entry for the repeating refill. Saved, and on load any missed refill runs on the next frame.</span> |
 
 </details>
 
@@ -44,21 +44,21 @@ A dock array that fills its docks with random loot from its chunk's biome and re
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isgenerationvalueused" /><code>{"bool IsGenerationValueUsed { get; }"}</code> | Always true. |
+| <Link id="m-isgenerationvalueused" /><code>{"bool IsGenerationValueUsed { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: fills the docks on first generation (on the next frame) and starts the repeating refill timer if none was loaded. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: fills the docks on first generation (on the next frame) and starts the repeating refill timer if none was loaded.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the refill timer. |
-| <Link id="m-respawn" /><code>{"private void Respawn()"}</code> | Server: clears the docks and fills them again through `LootHelper.Spawn` with the chunk's spawn data. Logs an error if the entity has no chunk. |
-| <Link id="m-respawn-2" /><code>{"private void Respawn(int count)"}</code> | Server: clears the docks and fills them again through `LootHelper.Spawn` with the chunk's spawn data. Logs an error if the entity has no chunk. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Cancels the refill timer.</span> |
+| <Link id="m-respawn" /><code>{"private void Respawn()"}</code> | <span className="api-desc">Server: clears the docks and fills them again through `LootHelper.Spawn` with the chunk's spawn data. Logs an error if the entity has no chunk.</span> |
+| <Link id="m-respawn-2" /><code>{"private void Respawn(int count)"}</code> | <span className="api-desc">Server: clears the docks and fills them again through `LootHelper.Spawn` with the chunk's spawn data. Logs an error if the entity has no chunk.</span> |
 
 </details>

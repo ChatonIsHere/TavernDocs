@@ -21,15 +21,15 @@ Component holding a curve from health percentage to speed modifier. Nothing uses
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCrippleController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerCrippleController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cripplehealthpercentagetospeedmodifier" /><code>{"private AnimationCurve crippleHealthPercentageToSpeedModifier"}</code> | Curve from health percentage to movement speed modifier. |
+| <Link id="m-cripplehealthpercentagetospeedmodifier" /><code>{"private AnimationCurve crippleHealthPercentageToSpeedModifier"}</code> | <span className="api-desc">Curve from health percentage to movement speed modifier.</span> |
 
 </details>

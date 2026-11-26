@@ -21,17 +21,21 @@ Moves a player from FirstJoin straight to Playing. `FirstJoinState` triggers it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FirstJoinToPlayingTransition()"}</code> | Creates a `FirstJoinToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"FirstJoinToPlayingTransition()"}</code> | <span className="api-desc">Creates a `FirstJoinToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Does nothing. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Does nothing. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FirstJoinToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.firstJoinToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-firstjointoplaying), [`AllTransitions.FirstJoinToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-firstjointoplayingtransition).
+
+</div>

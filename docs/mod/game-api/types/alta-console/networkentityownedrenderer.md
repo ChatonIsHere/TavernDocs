@@ -22,10 +22,10 @@ NLog layout renderer `${entity-owned}` for a `NetworkEntity` passed as the first
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityOwnedRenderer()"}</code> | Creates a `NetworkEntityOwnedRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkEntityOwnedRenderer()"}</code> | <span className="api-desc">Creates a `NetworkEntityOwnedRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's `IsInitialized`, despite the renderer's name. |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Returns the entity's `IsInitialized`, despite the renderer's name.</span> |

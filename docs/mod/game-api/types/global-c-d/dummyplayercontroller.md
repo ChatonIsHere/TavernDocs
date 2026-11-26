@@ -21,11 +21,11 @@ Placeholder `PlayerController` with no body. Its `Head` throws, so it is only sa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DummyPlayerController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DummyPlayerController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | Throws `NotImplementedException`. |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | Never set, so always null. |
+| <Link id="m-head" /><code>{"override Transform Head { get; }"}</code> | <span className="api-desc">Throws `NotImplementedException`.</span> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | <span className="api-desc">Never set, so always null.</span> |

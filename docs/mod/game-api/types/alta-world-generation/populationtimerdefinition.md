@@ -23,24 +23,28 @@ Base class for the timer that drives a `GlobalPopulationDefinition`: decides whe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PopulationTimerDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected PopulationTimerDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elementdecaytime" /><code>{"abstract float ElementDecayTime { get; }"}</code> | How long each spawned element lasts, passed to every `SpawnedElement`. |
-| <Link id="m-spawnoninitialize" /><code>{"abstract bool SpawnOnInitialize { get; }"}</code> | If true, the population spawns its starting amount at start-up. |
+| <Link id="m-elementdecaytime" /><code>{"abstract float ElementDecayTime { get; }"}</code> | <span className="api-desc">How long each spawned element lasts, passed to every `SpawnedElement`.</span> |
+| <Link id="m-spawnoninitialize" /><code>{"abstract bool SpawnOnInitialize { get; }"}</code> | <span className="api-desc">If true, the population spawns its starting amount at start-up.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"abstract void Clean("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | Called from the population's `Clean`; stops the timer for it. |
-| <Link id="m-setup" /><code>{"abstract void Setup("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | Called from the population's `StartUp`; starts the timer for it. |
+| <Link id="m-clean" /><code>{"abstract void Clean("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | <span className="api-desc">Called from the population's `Clean`; stops the timer for it.</span> |
+| <Link id="m-setup" /><code>{"abstract void Setup("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | <span className="api-desc">Called from the population's `StartUp`; starts the timer for it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PopulationTimerDefinition`:
 
+<div className="api-used-in">
+
 [`GlobalPopulationDefinition.timer`](/mod/game-api/types/alta-world-generation/globalpopulationdefinition#m-timer).
+
+</div>

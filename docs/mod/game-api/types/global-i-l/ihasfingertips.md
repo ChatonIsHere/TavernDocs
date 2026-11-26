@@ -21,4 +21,4 @@ A player controller that has fingertip settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fingertips" /><code><Link to="/mod/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" FingerTips { get; }"}</code> | The fingertip settings. |
+| <Link id="m-fingertips" /><code><Link to="/mod/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" FingerTips { get; }"}</code> | <span className="api-desc">The fingertip settings.</span> |

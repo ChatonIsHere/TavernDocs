@@ -22,27 +22,27 @@ Turns a list of behaviours off on a dedicated server and on everywhere else (cli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClientOnly()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ClientOnly()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-behaviours" /><code>{"private Behaviour[] behaviours"}</code> | The behaviours switched on or off. |
+| <Link id="m-behaviours" /><code>{"private Behaviour[] behaviours"}</code> | <span className="api-desc">The behaviours switched on or off.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Disables the listed behaviours on a non-local-test server and enables them otherwise. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops null entries from `behaviours`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Disables the listed behaviours on a non-local-test server and enables them otherwise.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: drops null entries from `behaviours`.</span> |
 
 </details>

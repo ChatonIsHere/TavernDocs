@@ -20,4 +20,4 @@ Static table of the first 6542 prime numbers. Nothing else in the server build r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-primes" /><code>{"static int[] Primes"}</code> | The prime numbers in ascending order, starting at 2. |
+| <Link id="m-primes" /><code>{"static int[] Primes"}</code> | <span className="api-desc">The prime numbers in ascending order, starting at 2.</span> |

@@ -21,18 +21,22 @@ A user's public info plus their private name and email, from the Alta web API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PersonalUserInfoResponse()"}</code> | Creates a `PersonalUserInfoResponse` with default values. |
+| <Link id="m-ctor" /><code>{"PersonalUserInfoResponse()"}</code> | <span className="api-desc">Creates a `PersonalUserInfoResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | The user's email address. |
-| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> | The user's first name. |
-| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> | The user's last name. |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | <span className="api-desc">The user's email address.</span> |
+| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> | <span className="api-desc">The user's first name.</span> |
+| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> | <span className="api-desc">The user's last name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PersonalUserInfoResponse`:
 
+<div className="api-used-in">
+
 [`IUserApiClient.GetPersonalUserInfo`](/mod/game-api/types/assembly-api-client/iuserapiclient#m-getpersonaluserinfo), [`OfflineUserApiClient.GetPersonalUserInfo`](/mod/game-api/types/assembly-api-client/offlineuserapiclient#m-getpersonaluserinfo), [`UserApiClient.GetPersonalUserInfo`](/mod/game-api/types/assembly-api-client/userapiclient#m-getpersonaluserinfo).
+
+</div>

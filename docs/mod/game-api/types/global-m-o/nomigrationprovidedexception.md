@@ -21,4 +21,4 @@ Logged (not thrown) by `NewSaveData` when something asks the newest save data ve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NoMigrationProvidedException()"}</code> | Creates the exception. |
+| <Link id="m-ctor" /><code>{"NoMigrationProvidedException()"}</code> | <span className="api-desc">Creates the exception.</span> |

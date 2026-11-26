@@ -30,4 +30,8 @@ Platform a service status notice applies to: `Quest`, `Pc`, `Pico` or `All`.
 
 Members of other types that take, return or hold a `StatusPlatform`:
 
+<div className="api-used-in">
+
 [`Status.Platform`](/mod/game-api/types/assembly-api-client/status#m-platform).
+
+</div>

@@ -22,4 +22,4 @@ Factory that takes two parameters, for the VContainer layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"TInterface Create(TParam1 param, TParam2 param2)"}</code> | Makes a new instance from the parameters. |
+| <Link id="m-create" /><code>{"TInterface Create(TParam1 param, TParam2 param2)"}</code> | <span className="api-desc">Makes a new instance from the parameters.</span> |

@@ -21,10 +21,14 @@ Inspector event with a `Color` argument.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColorEvent()"}</code> | Creates a `ColorEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ColorEvent()"}</code> | <span className="api-desc">Creates a `ColorEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ColorEvent`:
 
+<div className="api-used-in">
+
 [`RespawnShrine.glyphColorChanged`](/mod/game-api/types/game-other-namespaces/respawnshrine#m-glyphcolorchanged), [`ColorLerp.output`](/mod/game-api/types/global-c-d/colorlerp#m-output), [`SyncedColor.colorChanged`](/mod/game-api/types/global-s/syncedcolor#m-colorchanged).
+
+</div>

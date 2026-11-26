@@ -21,4 +21,4 @@ Empty component with no code.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FoodProcesser()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FoodProcesser()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

@@ -21,19 +21,19 @@ A tree attachment saved in a preset step: its prefab hash and its local position
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Attachment()"}</code> | Creates a `PresetTree.Step.Attachment` with default values. |
+| <Link id="m-ctor" /><code>{"Attachment()"}</code> | <span className="api-desc">Creates a `PresetTree.Step.Attachment` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attachmenthash" /><code>{"private uint attachmentHash"}</code> | Backing field for `AttachmentHash`. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Backing field for `Rotation`. |
-| <Link id="m-scale" /><code>{"private float scale"}</code> | Backing field for `Scale`. |
+| <Link id="m-attachmenthash" /><code>{"private uint attachmentHash"}</code> | <span className="api-desc">Backing field for `AttachmentHash`.</span> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | <span className="api-desc">Backing field for `Position`.</span> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | <span className="api-desc">Backing field for `Rotation`.</span> |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | <span className="api-desc">Backing field for `Scale`.</span> |
 
 </details>
 
@@ -41,13 +41,17 @@ A tree attachment saved in a preset step: its prefab hash and its local position
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attachmenthash-2" /><code>{"uint AttachmentHash { get; set; }"}</code> | Prefab hash of the `TreeAttachment` to spawn. |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> | Local position on the parent tree piece. |
-| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; set; }"}</code> | Local rotation on the parent tree piece. |
-| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> | Uniform local scale (only the x scale is saved). |
+| <Link id="m-attachmenthash-2" /><code>{"uint AttachmentHash { get; set; }"}</code> | <span className="api-desc">Prefab hash of the `TreeAttachment` to spawn.</span> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> | <span className="api-desc">Local position on the parent tree piece.</span> |
+| <Link id="m-rotation-2" /><code>{"Quaternion Rotation { get; set; }"}</code> | <span className="api-desc">Local rotation on the parent tree piece.</span> |
+| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> | <span className="api-desc">Uniform local scale (only the x scale is saved).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Attachment`:
 
+<div className="api-used-in">
+
 [`PresetTree.Step.attachments`](/mod/game-api/types/alta-crafting/presettree-step#m-attachments), [`PresetTree.Step.Attachments`](/mod/game-api/types/alta-crafting/presettree-step#m-attachments-2), [`WoodcutTree.MapNode.SpawnAttachment`](/mod/game-api/types/alta-crafting/woodcuttree-mapnode#m-spawnattachment).
+
+</div>

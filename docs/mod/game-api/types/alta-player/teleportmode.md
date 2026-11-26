@@ -28,4 +28,8 @@ Which part of the player lands on the teleport target: the room centre, the feet
 
 Members of other types that take, return or hold a `TeleportMode`:
 
+<div className="api-used-in">
+
 [`LocomotionController.GetTeleportTarget`](/mod/game-api/types/global-i-l/locomotioncontroller#m-getteleporttarget), [`LocomotionController.MoveTo`](/mod/game-api/types/global-i-l/locomotioncontroller#m-moveto-2), [`LocomotionController.TeleportArgument.Mode`](/mod/game-api/types/global-i-l/locomotioncontroller-teleportargument#m-mode), [`LocomotionController.TeleportArgument.TeleportArgument`](/mod/game-api/types/global-i-l/locomotioncontroller-teleportargument#m-ctor-2), [`PlayerLocomotionController.TeleportTo`](/mod/game-api/types/global-p/playerlocomotioncontroller#m-teleportto), [`TeleportationPoint.teleportMode`](/mod/game-api/types/global-t-x/teleportationpoint#m-teleportmode), [`TeleportationPointSaveData.mode`](/mod/game-api/types/global-t-x/teleportationpointsavedata#m-mode).
+
+</div>

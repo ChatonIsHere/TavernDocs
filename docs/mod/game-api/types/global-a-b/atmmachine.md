@@ -22,23 +22,23 @@ A bank teller machine. The server loads the owning player's bank coins into its 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ATMMachine()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ATMMachine()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basedock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" baseDock"}</code> | The teller dock holding the owner's coins. |
-| <Link id="m-depositdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" depositDock"}</code> | Slot where the owner drops coins to deposit. |
-| <Link id="m-inversethrottleinteraction" /><code>{"private bool inverseThrottleInteraction"}</code> | If true (default), throttle movement is reversed. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-owner" /><code>{"private int owner"}</code> | User ID of the owner; 0 for none. |
-| <Link id="m-syncowner" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncOwner"}</code> | Method sync for the owner. |
-| <Link id="m-throttleinteractable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" throttleInteractable"}</code> | Lever that moves coins in and out of the withdraw slot. |
-| <Link id="m-withdrawdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" withdrawDock"}</code> | Slot coins are taken out from. |
+| <Link id="m-basedock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" baseDock"}</code> | <span className="api-desc">The teller dock holding the owner's coins.</span> |
+| <Link id="m-depositdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" depositDock"}</code> | <span className="api-desc">Slot where the owner drops coins to deposit.</span> |
+| <Link id="m-inversethrottleinteraction" /><code>{"private bool inverseThrottleInteraction"}</code> | <span className="api-desc">If true (default), throttle movement is reversed.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-owner" /><code>{"private int owner"}</code> | <span className="api-desc">User ID of the owner; 0 for none.</span> |
+| <Link id="m-syncowner" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncOwner"}</code> | <span className="api-desc">Method sync for the owner.</span> |
+| <Link id="m-throttleinteractable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" throttleInteractable"}</code> | <span className="api-desc">Lever that moves coins in and out of the withdraw slot.</span> |
+| <Link id="m-withdrawdock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" withdrawDock"}</code> | <span className="api-desc">Slot coins are taken out from.</span> |
 
 </details>
 
@@ -46,38 +46,38 @@ A bank teller machine. The server loads the owning player's bank coins into its 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-quantityinteller" /><code>{"int QuantityInTeller { get; }"}</code> | Coins in the teller plus the withdraw slot; this is the owner's balance while open. |
+| <Link id="m-quantityinteller" /><code>{"int QuantityInTeller { get; }"}</code> | <span className="api-desc">Coins in the teller plus the withdraw slot; this is the owner's balance while open.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changeplayer" /><code>{"async void ChangePlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: saves the previous owner's balance, clears the docks, then loads the new player's coins (or no owner for null). |
-| <Link id="m-close" /><code>{"void Close()"}</code> | Saves and clears the machine with no owner. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks the owner and deposit filters and creates the owner sync. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: hooks deposits. |
-| <Link id="m-movetofromwithdraw" /><code>{"void MoveToFromWithdraw(int movement)"}</code> | Server: moves coins between the teller and the withdraw slot by an amount, sign flipped if `inverseThrottleInteraction`. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the owner to the chunk. |
-| <Link id="m-updatewhileactive" /><code>{"void UpdateWhileActive(int value)"}</code> | Called when the bank balance is set while open: adds or removes coins so the teller matches. |
+| <Link id="m-changeplayer" /><code>{"async void ChangePlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Server: saves the previous owner's balance, clears the docks, then loads the new player's coins (or no owner for null).</span> |
+| <Link id="m-close" /><code>{"void Close()"}</code> | <span className="api-desc">Saves and clears the machine with no owner.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Hooks the owner and deposit filters and creates the owner sync.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: hooks deposits.</span> |
+| <Link id="m-movetofromwithdraw" /><code>{"void MoveToFromWithdraw(int movement)"}</code> | <span className="api-desc">Server: moves coins between the teller and the withdraw slot by an amount, sign flipped if `inverseThrottleInteraction`.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sends the owner to the chunk.</span> |
+| <Link id="m-updatewhileactive" /><code>{"void UpdateWhileActive(int value)"}</code> | <span className="api-desc">Called when the bank balance is set while open: adds or removes coins so the teller matches.</span> |
 
-<details>
+<details className="api-private">
 <summary>13 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addquantitytodock" /><code>{"private void AddQuantityToDock(int quantity, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | Adds coins to a dock, spawning a coin stack if the dock is empty. |
-| <Link id="m-deposittaken" /><code>{"private void DepositTaken("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Server: moves coins docked in the deposit slot into the teller next frame. Pouches are ignored. |
-| <Link id="m-filterdeposit" /><code>{"private void FilterDeposit("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> | Only accepts coins last held by the owner. |
-| <Link id="m-filterowner" /><code>{"private void FilterOwner("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Only lets the owner use the withdraw slot and the throttle. |
-| <Link id="m-loadplayerbankcontent" /><code>{"private async Task LoadPlayerBankContent()"}</code> | Spawns the owner's bank balance as coins in the teller and links the account to this machine. |
-| <Link id="m-logbalancechangewithconsoleevents" /><code>{"private void LogBalanceChangeWithConsoleEvents("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, int previousBalance, int newBalance)"}</code> | Server: raises the `AtmBalanceChanged` console event with the change and new balance. |
-| <Link id="m-movequantitybetweendocks" /><code>{"private void MoveQuantityBetweenDocks(int movement, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fromDock, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | Moves up to a number of coins from one dock to another. |
-| <Link id="m-ownerisnull" /><code>{"private bool OwnerIsNull()"}</code> | True when nobody owns the machine. |
-| <Link id="m-removequantityfromatm" /><code>{"private void RemoveQuantityFromATM(int quantity)"}</code> | Removes coins from the teller, then the withdraw slot. When it needs the withdraw slot it passes a negative count, so that part doesn't work. |
-| <Link id="m-resetdocks" /><code>{"private void ResetDocks()"}</code> | Destroys all coins in the teller and withdraw slot. |
-| <Link id="m-spawnandsetcoinsindock" /><code>{"private void SpawnAndSetCoinsInDock(int quantity, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | Spawns a coin stack of a size in a dock. |
-| <Link id="m-syncowner-2" /><code>{"private void SyncOwner("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the owner's player ID to clients. |
-| <Link id="m-trysave" /><code>{"private async void TrySave()"}</code> | Writes the teller amount back to the owner's bank account, logs the change and unlinks the machine. |
+| <Link id="m-addquantitytodock" /><code>{"private void AddQuantityToDock(int quantity, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | <span className="api-desc">Adds coins to a dock, spawning a coin stack if the dock is empty.</span> |
+| <Link id="m-deposittaken" /><code>{"private void DepositTaken("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | <span className="api-desc">Server: moves coins docked in the deposit slot into the teller next frame. Pouches are ignored.</span> |
+| <Link id="m-filterdeposit" /><code>{"private void FilterDeposit("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> | <span className="api-desc">Only accepts coins last held by the owner.</span> |
+| <Link id="m-filterowner" /><code>{"private void FilterOwner("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | <span className="api-desc">Only lets the owner use the withdraw slot and the throttle.</span> |
+| <Link id="m-loadplayerbankcontent" /><code>{"private async Task LoadPlayerBankContent()"}</code> | <span className="api-desc">Spawns the owner's bank balance as coins in the teller and links the account to this machine.</span> |
+| <Link id="m-logbalancechangewithconsoleevents" /><code>{"private void LogBalanceChangeWithConsoleEvents("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, int previousBalance, int newBalance)"}</code> | <span className="api-desc">Server: raises the `AtmBalanceChanged` console event with the change and new balance.</span> |
+| <Link id="m-movequantitybetweendocks" /><code>{"private void MoveQuantityBetweenDocks(int movement, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fromDock, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | <span className="api-desc">Moves up to a number of coins from one dock to another.</span> |
+| <Link id="m-ownerisnull" /><code>{"private bool OwnerIsNull()"}</code> | <span className="api-desc">True when nobody owns the machine.</span> |
+| <Link id="m-removequantityfromatm" /><code>{"private void RemoveQuantityFromATM(int quantity)"}</code> | <span className="api-desc">Removes coins from the teller, then the withdraw slot. When it needs the withdraw slot it passes a negative count, so that part doesn't work.</span> |
+| <Link id="m-resetdocks" /><code>{"private void ResetDocks()"}</code> | <span className="api-desc">Destroys all coins in the teller and withdraw slot.</span> |
+| <Link id="m-spawnandsetcoinsindock" /><code>{"private void SpawnAndSetCoinsInDock(int quantity, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" toDock)"}</code> | <span className="api-desc">Spawns a coin stack of a size in a dock.</span> |
+| <Link id="m-syncowner-2" /><code>{"private void SyncOwner("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Syncs the owner's player ID to clients.</span> |
+| <Link id="m-trysave" /><code>{"private async void TrySave()"}</code> | <span className="api-desc">Writes the teller amount back to the owner's bank account, logs the change and unlinks the machine.</span> |
 
 </details>
 
@@ -85,4 +85,8 @@ A bank teller machine. The server loads the owning player's bank coins into its 
 
 Members of other types that take, return or hold a `ATMMachine`:
 
+<div className="api-used-in">
+
 [`PlayerGoldBankAccountData.CurrentAtm`](/mod/game-api/types/global-p/playergoldbankaccountdata#m-currentatm).
+
+</div>

@@ -21,17 +21,17 @@ JSON property attribute that clamps a float between a minimum and maximum whenev
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeFloatAttribute(float min, float max)"}</code> | Creates a `JsonRangeFloatAttribute` from `min` and `max`. |
+| <Link id="m-ctor" /><code>{"JsonRangeFloatAttribute(float min, float max)"}</code> | <span className="api-desc">Creates a `JsonRangeFloatAttribute` from `min` and `max`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> | The upper limit. |
-| <Link id="m-min" /><code>{"private float min"}</code> | The lower limit. |
+| <Link id="m-max" /><code>{"private float max"}</code> | <span className="api-desc">The upper limit.</span> |
+| <Link id="m-min" /><code>{"private float min"}</code> | <span className="api-desc">The lower limit.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ JSON property attribute that clamps a float between a minimum and maximum whenev
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | Wraps the property's value provider in a `JsonRangeFloatValueProvider`. |
+| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | <span className="api-desc">Wraps the property's value provider in a `JsonRangeFloatValueProvider`.</span> |

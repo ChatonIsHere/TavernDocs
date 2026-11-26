@@ -21,10 +21,10 @@ A shop item set as staff create or edit it: a shop item plus the items in the se
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> | Creates a `ShopItemSetModificationRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> | <span className="api-desc">Creates a `ShopItemSetModificationRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setitems" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{"> SetItems { get; set; }"}</code> | The items the set contains. |
+| <Link id="m-setitems" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{"> SetItems { get; set; }"}</code> | <span className="api-desc">The items the set contains.</span> |

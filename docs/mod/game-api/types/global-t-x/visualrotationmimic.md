@@ -21,34 +21,34 @@ Client: turns this transform to follow how a target transform turns, tracked thr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VisualRotationMimic()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"VisualRotationMimic()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | This object's transform. |
-| <Link id="m-copyrotation" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" copyRotation"}</code> | Handle for the registered late-update method. |
-| <Link id="m-lastvalue" /><code>{"private Vector3 lastValue"}</code> | The target's axis direction, in this transform's space, from the last update. |
-| <Link id="m-nonrotationaxis" /><code>{"private Vector3 nonRotationAxis"}</code> | Axis on the target whose direction is tracked (default forward). |
-| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> | Scales the copied rotation angle. |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> | Transform whose rotation is followed. |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | <span className="api-desc">This object's transform.</span> |
+| <Link id="m-copyrotation" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" copyRotation"}</code> | <span className="api-desc">Handle for the registered late-update method.</span> |
+| <Link id="m-lastvalue" /><code>{"private Vector3 lastValue"}</code> | <span className="api-desc">The target's axis direction, in this transform's space, from the last update.</span> |
+| <Link id="m-nonrotationaxis" /><code>{"private Vector3 nonRotationAxis"}</code> | <span className="api-desc">Axis on the target whose direction is tracked (default forward).</span> |
+| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> | <span className="api-desc">Scales the copied rotation angle.</span> |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> | <span className="api-desc">Transform whose rotation is followed.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: stores the starting axis direction and registers `CopyRotation` in late update. |
-| <Link id="m-copyrotation-2" /><code>{"private void CopyRotation()"}</code> | When the target has moved, applies the change in its `nonRotationAxis` direction (times `rotationMultiplier`) to this transform. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Deregisters `CopyRotation`. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the tracked axis on the target. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Client: stores the starting axis direction and registers `CopyRotation` in late update.</span> |
+| <Link id="m-copyrotation-2" /><code>{"private void CopyRotation()"}</code> | <span className="api-desc">When the target has moved, applies the change in its `nonRotationAxis` direction (times `rotationMultiplier`) to this transform.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Deregisters `CopyRotation`.</span> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the tracked axis on the target.</span> |
 
 </details>

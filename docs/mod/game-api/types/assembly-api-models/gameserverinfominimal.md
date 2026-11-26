@@ -22,17 +22,21 @@ A game server's id and name only, as Alta's web API returned in short lists.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> | Creates a `GameServerInfoMinimal` with default values. |
+| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> | <span className="api-desc">Creates a `GameServerInfoMinimal` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server id. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The server's name. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | <span className="api-desc">The server id.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The server's name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GameServerInfoMinimal`:
 
+<div className="api-used-in">
+
 [`PlayerReportSummary.Server`](/mod/game-api/types/assembly-api-client/playerreportsummary#m-server), [`PlayerReportInfo.Server`](/mod/game-api/types/assembly-api-models/playerreportinfo#m-server), [`RecentPlayerInteractionInfo.Server`](/mod/game-api/types/assembly-api-models/recentplayerinteractioninfo#m-server), [`JoinedServerInfo.Info`](/mod/game-api/types/alta-networking/joinedserverinfo#m-info).
+
+</div>

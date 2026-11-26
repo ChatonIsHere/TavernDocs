@@ -32,4 +32,8 @@ Order of an item's bounds axes from largest to smallest, used by `BoundsDockPosi
 
 Members of other types that take, return or hold a `SizeOrder`:
 
+<div className="api-used-in">
+
 [`BoundsDockPositioning.GetRotation`](/mod/game-api/types/alta-items/boundsdockpositioning#m-getrotation).
+
+</div>

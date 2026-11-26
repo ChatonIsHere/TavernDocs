@@ -21,10 +21,10 @@ Prefab-apply attribute meant for removing null entries from a list field. In thi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CleanNullsAttribute()"}</code> | Creates a `CleanNullsAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"CleanNullsAttribute()"}</code> | <span className="api-desc">Creates a `CleanNullsAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Always returns false without changing the field. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Always returns false without changing the field.</span> |

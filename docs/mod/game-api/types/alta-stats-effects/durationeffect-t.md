@@ -22,24 +22,24 @@ Base for old-style effects that last over time, with a `Stopped` event. Part of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> | Creates a `DurationEffect` with default values. |
+| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> | <span className="api-desc">Creates a `DurationEffect` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isduration" /><code>{"override bool IsDuration { get; }"}</code> | Always true for duration effects. |
+| <Link id="m-isduration" /><code>{"override bool IsDuration { get; }"}</code> | <span className="api-desc">Always true for duration effects.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stopped" /><code>{"event "}<Link to="/mod/game-api/types/alta-stats-effects/effecteventhandler-t">{"EffectEventHandler"}</Link>{"<T> Stopped"}</code> | Raised when the effect stops. |
+| <Link id="m-stopped" /><code>{"event "}<Link to="/mod/game-api/types/alta-stats-effects/effecteventhandler-t">{"EffectEventHandler"}</Link>{"<T> Stopped"}</code> | <span className="api-desc">Raised when the effect stops.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkstackallowed" /><code>{"virtual bool CheckStackAllowed(T newEffect)"}</code> | Called with a new effect of the same type; return false to stop it stacking. Default allows it. |
-| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> | Raises `Stopped` with this effect. Subclasses add their own clean-up. |
-| <Link id="m-update" /><code>{"abstract void Update()"}</code> | Per-tick work for the effect, written by each subclass. |
+| <Link id="m-checkstackallowed" /><code>{"virtual bool CheckStackAllowed(T newEffect)"}</code> | <span className="api-desc">Called with a new effect of the same type; return false to stop it stacking. Default allows it.</span> |
+| <Link id="m-stop" /><code>{"virtual void Stop()"}</code> | <span className="api-desc">Raises `Stopped` with this effect. Subclasses add their own clean-up.</span> |
+| <Link id="m-update" /><code>{"abstract void Update()"}</code> | <span className="api-desc">Per-tick work for the effect, written by each subclass.</span> |

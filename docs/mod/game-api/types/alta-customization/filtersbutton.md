@@ -21,23 +21,23 @@ Touch screen button on the hand camera that turns filter mode on, then lets the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FiltersButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FiltersButton()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activefilters" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/filter">{"Filter"}</Link>{"> activeFilters"}</code> | Filters whose `IsActive` is set, in the order swipes cycle through. |
-| <Link id="m-currentfilter" /><code>{"private int currentFilter"}</code> | Backing field for `CurrentFilter`. |
-| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/filter">{"Filter"}</Link>{"[] filters"}</code> | Every filter set on the button, active or not. |
-| <Link id="m-handcamera" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> | The hand camera this button belongs to. |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | True while filter mode is on. |
-| <Link id="m-ishorizontal" /><code>{"private bool isHorizontal"}</code> | Whether swipes along x (true) or y (false) change the filter. |
-| <Link id="m-targetvolume" /><code>{"private PostProcessVolume targetVolume"}</code> | Post process volume the filters change. |
-| <Link id="m-touchscreen" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/touchscreenmenu">{"TouchScreenMenu"}</Link>{" touchScreen"}</code> | Touch screen menu that reports swipes. |
+| <Link id="m-activefilters" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/filter">{"Filter"}</Link>{"> activeFilters"}</code> | <span className="api-desc">Filters whose `IsActive` is set, in the order swipes cycle through.</span> |
+| <Link id="m-currentfilter" /><code>{"private int currentFilter"}</code> | <span className="api-desc">Backing field for `CurrentFilter`.</span> |
+| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/filter">{"Filter"}</Link>{"[] filters"}</code> | <span className="api-desc">Every filter set on the button, active or not.</span> |
+| <Link id="m-handcamera" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera"}</code> | <span className="api-desc">The hand camera this button belongs to.</span> |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | <span className="api-desc">True while filter mode is on.</span> |
+| <Link id="m-ishorizontal" /><code>{"private bool isHorizontal"}</code> | <span className="api-desc">Whether swipes along x (true) or y (false) change the filter.</span> |
+| <Link id="m-targetvolume" /><code>{"private PostProcessVolume targetVolume"}</code> | <span className="api-desc">Post process volume the filters change.</span> |
+| <Link id="m-touchscreen" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/touchscreenmenu">{"TouchScreenMenu"}</Link>{" touchScreen"}</code> | <span className="api-desc">Touch screen menu that reports swipes.</span> |
 
 </details>
 
@@ -45,33 +45,33 @@ Touch screen button on the hand camera that turns filter mode on, then lets the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentfilter-2" /><code>{"int CurrentFilter { get; }"}</code> | Index into the active filters, or -1 for no filter. |
+| <Link id="m-currentfilter-2" /><code>{"int CurrentFilter { get; }"}</code> | <span className="api-desc">Index into the active filters, or -1 for no filter.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localownerswiped" /><code>{"event Action LocalOwnerSwiped"}</code> | Raised after the local owner swipes to a new filter. `CameraFilters` uses it to sync. |
+| <Link id="m-localownerswiped" /><code>{"event Action LocalOwnerSwiped"}</code> | <span className="api-desc">Raised after the local owner swipes to a new filter. `CameraFilters` uses it to sync.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatefilterexternal" /><code>{"void UpdateFilterExternal(int newFilter)"}</code> | Applies a filter index received from the network. Only remote clients apply the effect; the owner and server just store the index. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks owner changes and builds the list of active filters. Does nothing on a headless server. |
-| <Link id="m-internalpress" /><code>{"protected override void InternalPress()"}</code> | Toggles filter mode. Turning it off also removes the current filter. |
-| <Link id="m-internalrelease" /><code>{"protected override void InternalRelease()"}</code> | Does nothing. |
+| <Link id="m-updatefilterexternal" /><code>{"void UpdateFilterExternal(int newFilter)"}</code> | <span className="api-desc">Applies a filter index received from the network. Only remote clients apply the effect; the owner and server just store the index.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Hooks owner changes and builds the list of active filters. Does nothing on a headless server.</span> |
+| <Link id="m-internalpress" /><code>{"protected override void InternalPress()"}</code> | <span className="api-desc">Toggles filter mode. Turning it off also removes the current filter.</span> |
+| <Link id="m-internalrelease" /><code>{"protected override void InternalRelease()"}</code> | <span className="api-desc">Does nothing.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty. |
-| <Link id="m-swiped" /><code>{"private void Swiped(Vector2 swipe)"}</code> | Moves to the previous or next filter (wrapping through no filter) when filter mode is on and the swipe is along the button's axis. |
-| <Link id="m-terminate" /><code>{"private void Terminate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Removes the current filter when the camera entity is destroyed. |
-| <Link id="m-updatefilter" /><code>{"private void UpdateFilter(int newFilter)"}</code> | Terminates the old filter and initializes the new one. |
-| <Link id="m-updateowner" /><code>{"private void UpdateOwner(bool isOwned)"}</code> | When the local player owns the camera, subscribes to swipes and entity destruction. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-swiped" /><code>{"private void Swiped(Vector2 swipe)"}</code> | <span className="api-desc">Moves to the previous or next filter (wrapping through no filter) when filter mode is on and the swipe is along the button's axis.</span> |
+| <Link id="m-terminate" /><code>{"private void Terminate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Removes the current filter when the camera entity is destroyed.</span> |
+| <Link id="m-updatefilter" /><code>{"private void UpdateFilter(int newFilter)"}</code> | <span className="api-desc">Terminates the old filter and initializes the new one.</span> |
+| <Link id="m-updateowner" /><code>{"private void UpdateOwner(bool isOwned)"}</code> | <span className="api-desc">When the local player owns the camera, subscribes to swipes and entity destruction.</span> |
 
 </details>
 
@@ -79,4 +79,8 @@ Touch screen button on the hand camera that turns filter mode on, then lets the 
 
 Members of other types that take, return or hold a `FiltersButton`:
 
+<div className="api-used-in">
+
 [`CameraFilters.button`](/mod/game-api/types/alta-customization/camerafilters#m-button).
+
+</div>

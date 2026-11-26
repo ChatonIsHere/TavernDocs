@@ -20,11 +20,15 @@ Payload for `ModsMicMuteManager`'s mute request: which moderator is muting and w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool isActive"}</code> | True to start muting, false to stop. |
-| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> | Identifier of the moderator player the request is for. |
+| <Link id="m-isactive" /><code>{"bool isActive"}</code> | <span className="api-desc">True to start muting, false to stop.</span> |
+| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> | <span className="api-desc">Identifier of the moderator player the request is for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ModMuteArgument`:
 
+<div className="api-used-in">
+
 [`ModsMicMuteManager.SendRequest`](/mod/game-api/types/alta-player/modsmicmutemanager#m-sendrequest), [`ModsMicMuteManager.syncRequest`](/mod/game-api/types/alta-player/modsmicmutemanager#m-syncrequest), [`ModsMicMuteManager.SyncRequest`](/mod/game-api/types/alta-player/modsmicmutemanager#m-syncrequest-2).
+
+</div>

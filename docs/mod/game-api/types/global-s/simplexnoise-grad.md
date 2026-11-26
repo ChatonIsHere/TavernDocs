@@ -21,20 +21,24 @@ A gradient vector for `SimplexNoise` (3D, with `w` used only for 4D noise). Priv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> | Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`. |
-| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> | Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`. |
+| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> | <span className="api-desc">Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`.</span> |
+| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> | <span className="api-desc">Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-w" /><code>{"double w"}</code> | Fourth component, 0 for 3D gradients. |
-| <Link id="m-x" /><code>{"double x"}</code> | X part of the gradient vector. |
-| <Link id="m-y" /><code>{"double y"}</code> | Y part of the gradient vector. |
-| <Link id="m-z" /><code>{"double z"}</code> | Z part of the gradient vector. |
+| <Link id="m-w" /><code>{"double w"}</code> | <span className="api-desc">Fourth component, 0 for 3D gradients.</span> |
+| <Link id="m-x" /><code>{"double x"}</code> | <span className="api-desc">X part of the gradient vector.</span> |
+| <Link id="m-y" /><code>{"double y"}</code> | <span className="api-desc">Y part of the gradient vector.</span> |
+| <Link id="m-z" /><code>{"double z"}</code> | <span className="api-desc">Z part of the gradient vector.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Grad`:
 
+<div className="api-used-in">
+
 [`SimplexNoise.dot`](/mod/game-api/types/global-s/simplexnoise#m-dot), [`SimplexNoise.grad3`](/mod/game-api/types/global-s/simplexnoise#m-grad3), [`SimplexNoise.grad4`](/mod/game-api/types/global-s/simplexnoise#m-grad4).
+
+</div>

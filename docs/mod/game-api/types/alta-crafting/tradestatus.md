@@ -28,4 +28,8 @@ State of a trade vendor: unoccupied (no owner), out of stock, or open for sale.
 
 Members of other types that take, return or hold a `TradeStatus`:
 
+<div className="api-used-in">
+
 [`TradeStateManager.index`](/mod/game-api/types/alta-crafting/tradestatemanager#m-index), [`TradeStateManager.StatusChanged`](/mod/game-api/types/alta-crafting/tradestatemanager#m-statuschanged), [`TradeVendor.TradeState`](/mod/game-api/types/alta-crafting/tradevendor#m-tradestate), [`TradeVendor.StatusChangedHandler.BeginInvoke`](/mod/game-api/types/alta-crafting/tradevendor-statuschangedhandler#m-begininvoke), [`TradeVendor.StatusChangedHandler.Invoke`](/mod/game-api/types/alta-crafting/tradevendor-statuschangedhandler#m-invoke).
+
+</div>

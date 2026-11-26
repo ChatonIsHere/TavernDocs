@@ -22,16 +22,16 @@ Generation part that, during dynamic generation on a forest node map, spawns a n
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DynamicPathPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DynamicPathPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | Pipeline that picks the network prefab to spawn. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | <span className="api-desc">Pipeline that picks the network prefab to spawn.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Generation part that, during dynamic generation on a forest node map, spawns a n
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | Gets a prefab from the pipeline, spawns it in the best location chunk and calls `IDynamicPath.Initialize` with the edge. |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | <span className="api-desc">Gets a prefab from the pipeline, spawns it in the best location chunk and calls `IDynamicPath.Initialize` with the edge.</span> |

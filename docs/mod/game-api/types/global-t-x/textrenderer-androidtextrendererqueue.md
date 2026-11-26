@@ -19,15 +19,15 @@ Private helper for `TextRenderer` that spreads text mesh building on Android acr
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowance" /><code>{"private const float allowance"}</code> | Time budget per frame, 0.005 seconds. |
-| <Link id="m-coroutinerunner" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/emptybehaviour">{"EmptyBehaviour"}</Link>{" coroutineRunner"}</code> | Fallback object that runs the coroutine when `AltaCoroutine` isn't ready. |
-| <Link id="m-isrendering" /><code>{"private static bool isRendering"}</code> | True while the queue is being worked through. |
-| <Link id="m-queueitems" /><code>{"private static readonly Queue<"}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{"> queueItems"}</code> | Renderers waiting to be built. |
+| <Link id="m-allowance" /><code>{"private const float allowance"}</code> | <span className="api-desc">Time budget per frame, 0.005 seconds.</span> |
+| <Link id="m-coroutinerunner" /><code>{"private static "}<Link to="/mod/game-api/types/global-e-h/emptybehaviour">{"EmptyBehaviour"}</Link>{" coroutineRunner"}</code> | <span className="api-desc">Fallback object that runs the coroutine when `AltaCoroutine` isn't ready.</span> |
+| <Link id="m-isrendering" /><code>{"private static bool isRendering"}</code> | <span className="api-desc">True while the queue is being worked through.</span> |
+| <Link id="m-queueitems" /><code>{"private static readonly Queue<"}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{"> queueItems"}</code> | <span className="api-desc">Renderers waiting to be built.</span> |
 
 </details>
 
@@ -35,13 +35,13 @@ Private helper for `TextRenderer` that spreads text mesh building on Android acr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enterqueue" /><code>{"static bool EnterQueue("}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> | Starts processing if idle and returns true so the renderer builds now; otherwise queues it and returns false. |
+| <Link id="m-enterqueue" /><code>{"static bool EnterQueue("}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer)"}</code> | <span className="api-desc">Starts processing if idle and returns true so the renderer builds now; otherwise queues it and returns false.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatequeue" /><code>{"private static IEnumerator UpdateQueue() (iterator)"}</code> | Coroutine that builds queued renderers, skipping disabled or empty ones, yielding when the frame budget runs out. |
+| <Link id="m-updatequeue" /><code>{"private static IEnumerator UpdateQueue() (iterator)"}</code> | <span className="api-desc">Coroutine that builds queued renderers, skipping disabled or empty ones, yielding when the frame budget runs out.</span> |
 
 </details>

@@ -22,17 +22,17 @@ The set of join locks on a server, held as `ServerHandler.ServerLocks`. While an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> | Creates a `ServerLockCollection` with default values. |
+| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> | <span className="api-desc">Creates a `ServerLockCollection` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> | The active locks. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> | <span className="api-desc">The active locks.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -40,22 +40,22 @@ The set of join locks on a server, held as `ServerHandler.ServerLocks`. While an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of active locks; above zero means players can't join. |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | <span className="api-desc">Number of active locks; above zero means players can't join.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"bool Add("}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | Adds a lock and logs it. Returns false if it was already there. |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> | Enumerates the active locks. |
-| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | Removes a lock and logs it. Returns false if it wasn't there. |
+| <Link id="m-add" /><code>{"bool Add("}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | <span className="api-desc">Adds a lock and logs it. Returns false if it was already there.</span> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> | <span className="api-desc">Enumerates the active locks.</span> |
+| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/mod/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | <span className="api-desc">Removes a lock and logs it. Returns false if it wasn't there.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the active locks. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | <span className="api-desc">Enumerates the active locks.</span> |
 
 </details>
 
@@ -63,4 +63,8 @@ The set of join locks on a server, held as `ServerHandler.ServerLocks`. While an
 
 Members of other types that take, return or hold a `ServerLockCollection`:
 
+<div className="api-used-in">
+
 [`ServerHandler.ServerLocks`](/mod/game-api/types/alta-networking/serverhandler#m-serverlocks).
+
+</div>

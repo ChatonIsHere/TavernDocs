@@ -29,4 +29,8 @@ Result of a websocket console subscribe or unsubscribe: done, no change (already
 
 Members of other types that take, return or hold a `SubscriptionResult`:
 
+<div className="api-used-in">
+
 [`WebSocketCommandHandler.Subscribe`](/mod/game-api/types/alta-console/websocketcommandhandler#m-subscribe), [`WebSocketCommandHandler.Unsubscribe`](/mod/game-api/types/alta-console/websocketcommandhandler#m-unsubscribe), [`WebSocketConsoleCommandModule.Subscribe`](/mod/game-api/types/alta-console/websocketconsolecommandmodule#m-subscribe), [`WebSocketConsoleCommandModule.Unsubscribe`](/mod/game-api/types/alta-console/websocketconsolecommandmodule#m-unsubscribe).
+
+</div>

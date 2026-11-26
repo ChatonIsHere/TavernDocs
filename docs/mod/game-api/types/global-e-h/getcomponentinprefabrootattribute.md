@@ -21,10 +21,10 @@ Like `GetComponentAttribute`, but takes the component from the root `NetworkPref
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> | Creates a `GetComponentInPrefabRootAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentInPrefabRootAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | Finds the nearest `NetworkPrefab` in the parents and gets the component from it, or null. |
+| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | <span className="api-desc">Finds the nearest `NetworkPrefab` in the parents and gets the component from it, or null.</span> |

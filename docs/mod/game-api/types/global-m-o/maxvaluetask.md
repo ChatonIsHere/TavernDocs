@@ -22,17 +22,17 @@ Game task asset (`Game Tasks/Max Value Object`) that keeps the highest value it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaxValueTask()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MaxValueTask()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `MaxCount`. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `MaxCount`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivenewvalue" /><code>{"override int ReceiveNewValue(int currentValue, int newValue)"}</code> | Returns the larger of the current and new value. |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-m-o/maxvaluetaskargument">{"MaxValueTaskArgument"}</Link>{" argument)"}</code> | Always true. |
+| <Link id="m-receivenewvalue" /><code>{"override int ReceiveNewValue(int currentValue, int newValue)"}</code> | <span className="api-desc">Returns the larger of the current and new value.</span> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-m-o/maxvaluetaskargument">{"MaxValueTaskArgument"}</Link>{" argument)"}</code> | <span className="api-desc">Always true.</span> |

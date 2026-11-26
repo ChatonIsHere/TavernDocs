@@ -23,16 +23,16 @@ Asset listing the cave generation plugins to run. `GenerationBase` makes an inst
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PluginList()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PluginList()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-plugins" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> plugins"}</code> | Backing field for `Plugins`. |
+| <Link id="m-plugins" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> plugins"}</code> | <span className="api-desc">Backing field for `Plugins`.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ Asset listing the cave generation plugins to run. `GenerationBase` makes an inst
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-plugins-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> Plugins { get; }"}</code> | The plugins in run order. |
+| <Link id="m-plugins-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{"> Plugins { get; }"}</code> | <span className="api-desc">The plugins in run order.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PluginList`:
 
+<div className="api-used-in">
+
 [`GenerationBase.pluginList`](/mod/game-api/types/alta-world-generation/generationbase#m-pluginlist), [`GenerationBase.PluginList`](/mod/game-api/types/alta-world-generation/generationbase#m-pluginlist-2), [`IGenerator.PluginList`](/mod/game-api/types/alta-world-generation/igenerator#m-pluginlist).
+
+</div>

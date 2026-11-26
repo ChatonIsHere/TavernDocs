@@ -21,16 +21,16 @@ Unity editor menu item that opens the client logs folder in Explorer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OpenClientLogs()"}</code> | Creates an `OpenClientLogs` with default values. |
+| <Link id="m-ctor" /><code>{"OpenClientLogs()"}</code> | <span className="api-desc">Creates an `OpenClientLogs` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"override string Description { get; }"}</code> | Menu tooltip text. |
+| <Link id="m-description" /><code>{"override string Description { get; }"}</code> | <span className="api-desc">Menu tooltip text.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Opens `%appdata%/A Township Tale/Client/Logs` in Explorer. |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | <span className="api-desc">Opens `%appdata%/A Township Tale/Client/Logs` in Explorer.</span> |

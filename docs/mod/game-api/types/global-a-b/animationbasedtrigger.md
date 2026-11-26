@@ -22,10 +22,10 @@ Base component with a virtual `Run` for animation events to call. `AnimationBase
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationBasedTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimationBasedTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"virtual void Run()"}</code> | Does nothing here; subclasses override it. |
+| <Link id="m-run" /><code>{"virtual void Run()"}</code> | <span className="api-desc">Does nothing here; subclasses override it.</span> |

@@ -23,16 +23,16 @@ Spawn modifier for forest and scatter generation that weights points by how stee
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NormalFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"NormalFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-normalmultiplier" /><code>{"private AnimationCurve normalMultiplier"}</code> | Curve from normal Y to weight multiplier. The default favours steep ground and gives flat ground 0. |
+| <Link id="m-normalmultiplier" /><code>{"private AnimationCurve normalMultiplier"}</code> | <span className="api-desc">Curve from normal Y to weight multiplier. The default favours steep ground and gives flat ground 0.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Spawn modifier for forest and scatter generation that weights points by how stee
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | Multiplies the point's weight by the curve evaluated at the normal's Y (1 is flat ground). |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | <span className="api-desc">Multiplies the point's weight by the curve evaluated at the normal's Y (1 is flat ground).</span> |

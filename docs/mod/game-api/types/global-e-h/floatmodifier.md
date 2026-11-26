@@ -22,16 +22,16 @@ Base for components that take a float, change it and pass it on through a float 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FloatModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected FloatModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" output"}</code> | Event that receives the modified value. |
+| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" output"}</code> | <span className="api-desc">Event that receives the modified value.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Base for components that take a float, change it and pass it on through a float 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-input" /><code>{"abstract void Input(float value)"}</code> | Receives a new input value. Subclasses decide when and what to output. |
-| <Link id="m-output-2" /><code>{"protected void Output(float value)"}</code> | Invokes the `output` event with a value. |
+| <Link id="m-input" /><code>{"abstract void Input(float value)"}</code> | <span className="api-desc">Receives a new input value. Subclasses decide when and what to output.</span> |
+| <Link id="m-output-2" /><code>{"protected void Output(float value)"}</code> | <span className="api-desc">Invokes the `output` event with a value.</span> |

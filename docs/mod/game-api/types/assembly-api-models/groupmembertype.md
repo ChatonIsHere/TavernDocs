@@ -31,4 +31,8 @@ A user's state in a group: banned, requested to join, invited, accepted (a membe
 
 Members of other types that take, return or hold a `GroupMemberType`:
 
+<div className="api-used-in">
+
 [`GroupMemberInfo.Type`](/mod/game-api/types/assembly-api-models/groupmemberinfo#m-type).
+
+</div>

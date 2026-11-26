@@ -23,16 +23,16 @@ Asset listing textures to shrink per platform, probably applied by an editor bui
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BakeableTextureDecimator()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BakeableTextureDecimator()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activedata" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/bakeabletexturedecimator-texturedata">{"BakeableTextureDecimator.TextureData"}</Link>{"> activeData"}</code> | Hidden record of each touched texture's override, max size and format, probably so it can be restored. |
-| <Link id="m-textures" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/bakeabletexturedecimator-platformtextures">{"BakeableTextureDecimator.PlatformTextures"}</Link>{"[] textures"}</code> | Per platform flag, the textures to decimate. |
+| <Link id="m-activedata" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/bakeabletexturedecimator-texturedata">{"BakeableTextureDecimator.TextureData"}</Link>{"> activeData"}</code> | <span className="api-desc">Hidden record of each touched texture's override, max size and format, probably so it can be restored.</span> |
+| <Link id="m-textures" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/bakeabletexturedecimator-platformtextures">{"BakeableTextureDecimator.PlatformTextures"}</Link>{"[] textures"}</code> | <span className="api-desc">Per platform flag, the textures to decimate.</span> |
 
 </details>

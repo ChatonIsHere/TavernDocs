@@ -21,16 +21,16 @@ The generated wrapper for the "Playing" input action map: in-game controller act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingActions("}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | Creates an `InputMap.PlayingActions` from `wrapper`. |
+| <Link id="m-ctor" /><code>{"PlayingActions("}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | <span className="api-desc">Creates an `InputMap.PlayingActions` from `wrapper`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> | The `InputMap` this action set reads its actions from. |
+| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> | <span className="api-desc">The `InputMap` this action set reads its actions from.</span> |
 
 </details>
 
@@ -38,45 +38,49 @@ The generated wrapper for the "Playing" input action map: in-game controller act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angularvelocity" /><code>{"InputAction AngularVelocity { get; }"}</code> | Controller angular velocity. |
-| <Link id="m-assistgrab" /><code>{"InputAction AssistGrab { get; }"}</code> | Grab assist button (trigger on most controllers, grip on the Vive wand). |
-| <Link id="m-enabled" /><code>{"bool enabled { get; }"}</code> | Whether the action map is enabled. |
-| <Link id="m-gestures" /><code>{"InputAction Gestures { get; }"}</code> | Thumbstick or trackpad used for gestures. |
-| <Link id="m-grabstrength" /><code>{"InputAction GrabStrength { get; }"}</code> | Valve Index grip force axis. |
-| <Link id="m-interact" /><code>{"InputAction Interact { get; }"}</code> | Grab button (grip on Oculus and WMR, trigger on Vive). |
-| <Link id="m-joystickdpad" /><code>{"InputAction JoystickDpad { get; }"}</code> | Stick used as a left and right dpad. Has no binding in this map. |
-| <Link id="m-metamenu" /><code>{"InputAction MetaMenu { get; }"}</code> | Menu button (secondary button on Oculus, menu on Vive and WMR). |
-| <Link id="m-pose" /><code>{"InputAction Pose { get; }"}</code> | Full controller pose. |
-| <Link id="m-position" /><code>{"InputAction Position { get; }"}</code> | Controller position. |
-| <Link id="m-releasetogglegrab" /><code>{"InputAction ReleaseToggleGrab { get; }"}</code> | Releases a toggle grab. Has no binding in this map. |
-| <Link id="m-rotation" /><code>{"InputAction Rotation { get; }"}</code> | Controller rotation. |
-| <Link id="m-smoothlocomotion" /><code>{"InputAction SmoothLocomotion { get; }"}</code> | Thumbstick or trackpad used for walking. |
-| <Link id="m-smoothrotation" /><code>{"InputAction SmoothRotation { get; }"}</code> | Thumbstick or trackpad used for turning. |
-| <Link id="m-squeeze" /><code>{"InputAction Squeeze { get; }"}</code> | Grip axis of any XR controller. |
-| <Link id="m-swipemotion" /><code>{"InputAction SwipeMotion { get; }"}</code> | Trackpad or touchpad position, for swipe locomotion. |
-| <Link id="m-swipetouch" /><code>{"InputAction SwipeTouch { get; }"}</code> | Vive trackpad touch, used for swipe input. |
-| <Link id="m-takescreenshotlong" /><code>{"InputAction TakeScreenShotLong { get; }"}</code> | Held trigger (grip on Vive) used for long photo capture. |
-| <Link id="m-teleport" /><code>{"InputAction Teleport { get; }"}</code> | Teleport button (primary button on Oculus, trackpad press on Vive and WMR). |
-| <Link id="m-togglegrab" /><code>{"InputAction ToggleGrab { get; }"}</code> | Toggle grab button (trigger on Oculus and WMR, grip on Vive). |
-| <Link id="m-togglerun" /><code>{"InputAction ToggleRun { get; }"}</code> | Run toggle (thumbstick or trackpad click). |
-| <Link id="m-touchingindexaxis" /><code>{"InputAction TouchingIndexAxis { get; }"}</code> | Index finger on the trigger (touch or trigger axis). |
-| <Link id="m-touchingthumb" /><code>{"InputAction TouchingThumb { get; }"}</code> | Thumb touching the face buttons, stick or trackpad. |
-| <Link id="m-touchingtriggerbutton" /><code>{"InputAction TouchingTriggerButton { get; }"}</code> | Valve Index trigger touch. |
-| <Link id="m-triggeraxis" /><code>{"InputAction TriggerAxis { get; }"}</code> | Trigger axis of any XR controller. |
-| <Link id="m-velocity" /><code>{"InputAction Velocity { get; }"}</code> | Controller velocity. |
+| <Link id="m-angularvelocity" /><code>{"InputAction AngularVelocity { get; }"}</code> | <span className="api-desc">Controller angular velocity.</span> |
+| <Link id="m-assistgrab" /><code>{"InputAction AssistGrab { get; }"}</code> | <span className="api-desc">Grab assist button (trigger on most controllers, grip on the Vive wand).</span> |
+| <Link id="m-enabled" /><code>{"bool enabled { get; }"}</code> | <span className="api-desc">Whether the action map is enabled.</span> |
+| <Link id="m-gestures" /><code>{"InputAction Gestures { get; }"}</code> | <span className="api-desc">Thumbstick or trackpad used for gestures.</span> |
+| <Link id="m-grabstrength" /><code>{"InputAction GrabStrength { get; }"}</code> | <span className="api-desc">Valve Index grip force axis.</span> |
+| <Link id="m-interact" /><code>{"InputAction Interact { get; }"}</code> | <span className="api-desc">Grab button (grip on Oculus and WMR, trigger on Vive).</span> |
+| <Link id="m-joystickdpad" /><code>{"InputAction JoystickDpad { get; }"}</code> | <span className="api-desc">Stick used as a left and right dpad. Has no binding in this map.</span> |
+| <Link id="m-metamenu" /><code>{"InputAction MetaMenu { get; }"}</code> | <span className="api-desc">Menu button (secondary button on Oculus, menu on Vive and WMR).</span> |
+| <Link id="m-pose" /><code>{"InputAction Pose { get; }"}</code> | <span className="api-desc">Full controller pose.</span> |
+| <Link id="m-position" /><code>{"InputAction Position { get; }"}</code> | <span className="api-desc">Controller position.</span> |
+| <Link id="m-releasetogglegrab" /><code>{"InputAction ReleaseToggleGrab { get; }"}</code> | <span className="api-desc">Releases a toggle grab. Has no binding in this map.</span> |
+| <Link id="m-rotation" /><code>{"InputAction Rotation { get; }"}</code> | <span className="api-desc">Controller rotation.</span> |
+| <Link id="m-smoothlocomotion" /><code>{"InputAction SmoothLocomotion { get; }"}</code> | <span className="api-desc">Thumbstick or trackpad used for walking.</span> |
+| <Link id="m-smoothrotation" /><code>{"InputAction SmoothRotation { get; }"}</code> | <span className="api-desc">Thumbstick or trackpad used for turning.</span> |
+| <Link id="m-squeeze" /><code>{"InputAction Squeeze { get; }"}</code> | <span className="api-desc">Grip axis of any XR controller.</span> |
+| <Link id="m-swipemotion" /><code>{"InputAction SwipeMotion { get; }"}</code> | <span className="api-desc">Trackpad or touchpad position, for swipe locomotion.</span> |
+| <Link id="m-swipetouch" /><code>{"InputAction SwipeTouch { get; }"}</code> | <span className="api-desc">Vive trackpad touch, used for swipe input.</span> |
+| <Link id="m-takescreenshotlong" /><code>{"InputAction TakeScreenShotLong { get; }"}</code> | <span className="api-desc">Held trigger (grip on Vive) used for long photo capture.</span> |
+| <Link id="m-teleport" /><code>{"InputAction Teleport { get; }"}</code> | <span className="api-desc">Teleport button (primary button on Oculus, trackpad press on Vive and WMR).</span> |
+| <Link id="m-togglegrab" /><code>{"InputAction ToggleGrab { get; }"}</code> | <span className="api-desc">Toggle grab button (trigger on Oculus and WMR, grip on Vive).</span> |
+| <Link id="m-togglerun" /><code>{"InputAction ToggleRun { get; }"}</code> | <span className="api-desc">Run toggle (thumbstick or trackpad click).</span> |
+| <Link id="m-touchingindexaxis" /><code>{"InputAction TouchingIndexAxis { get; }"}</code> | <span className="api-desc">Index finger on the trigger (touch or trigger axis).</span> |
+| <Link id="m-touchingthumb" /><code>{"InputAction TouchingThumb { get; }"}</code> | <span className="api-desc">Thumb touching the face buttons, stick or trackpad.</span> |
+| <Link id="m-touchingtriggerbutton" /><code>{"InputAction TouchingTriggerButton { get; }"}</code> | <span className="api-desc">Valve Index trigger touch.</span> |
+| <Link id="m-triggeraxis" /><code>{"InputAction TriggerAxis { get; }"}</code> | <span className="api-desc">Trigger axis of any XR controller.</span> |
+| <Link id="m-velocity" /><code>{"InputAction Velocity { get; }"}</code> | <span className="api-desc">Controller velocity.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> | Disables every action in this map. |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> | Enables every action in this map. |
-| <Link id="m-get" /><code>{"InputActionMap Get()"}</code> | Returns the underlying `InputActionMap`. |
-| <Link id="m-op-implicit" /><code>{"static InputActionMap op_Implicit("}<Link to="/mod/game-api/types/global-i-l/inputmap-playingactions">{"InputMap.PlayingActions"}</Link>{" set)"}</code> | Converts to the underlying `InputActionMap`. |
-| <Link id="m-setcallbacks" /><code>{"void SetCallbacks("}<Link to="/mod/game-api/types/global-i-l/inputmap-iplayingactions">{"InputMap.IPlayingActions"}</Link>{" instance)"}</code> | Hooks an object's `On...` methods to every action's started, performed and cancelled callbacks, unhooking the previous one. Pass null to unhook. |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | <span className="api-desc">Disables every action in this map.</span> |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> | <span className="api-desc">Enables every action in this map.</span> |
+| <Link id="m-get" /><code>{"InputActionMap Get()"}</code> | <span className="api-desc">Returns the underlying `InputActionMap`.</span> |
+| <Link id="m-op-implicit" /><code>{"static InputActionMap op_Implicit("}<Link to="/mod/game-api/types/global-i-l/inputmap-playingactions">{"InputMap.PlayingActions"}</Link>{" set)"}</code> | <span className="api-desc">Converts to the underlying `InputActionMap`.</span> |
+| <Link id="m-setcallbacks" /><code>{"void SetCallbacks("}<Link to="/mod/game-api/types/global-i-l/inputmap-iplayingactions">{"InputMap.IPlayingActions"}</Link>{" instance)"}</code> | <span className="api-desc">Hooks an object's `On...` methods to every action's started, performed and cancelled callbacks, unhooking the previous one. Pass null to unhook.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayingActions`:
 
+<div className="api-used-in">
+
 [`InputMap.Playing`](/mod/game-api/types/global-i-l/inputmap#m-playing).
+
+</div>

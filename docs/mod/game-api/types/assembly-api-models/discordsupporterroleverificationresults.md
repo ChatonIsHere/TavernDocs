@@ -20,11 +20,11 @@ Result of checking supporters against the Discord supporter role: who gained it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> | Creates a `DiscordSupporterRoleVerificationResults` with default values. |
+| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> | <span className="api-desc">Creates a `DiscordSupporterRoleVerificationResults` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gainedsupporters" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GainedSupporters { get; }"}</code> | Users who became supporters in this check. |
-| <Link id="m-removedsupporters" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> RemovedSupporters { get; }"}</code> | Users who stopped being supporters in this check. |
+| <Link id="m-gainedsupporters" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GainedSupporters { get; }"}</code> | <span className="api-desc">Users who became supporters in this check.</span> |
+| <Link id="m-removedsupporters" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> RemovedSupporters { get; }"}</code> | <span className="api-desc">Users who stopped being supporters in this check.</span> |

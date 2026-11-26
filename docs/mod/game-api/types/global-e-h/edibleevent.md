@@ -21,10 +21,14 @@ Serializable `AltaEvent` raised with an `EdibleObject`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EdibleEvent()"}</code> | Creates an `EdibleEvent` with default values. |
+| <Link id="m-ctor" /><code>{"EdibleEvent()"}</code> | <span className="api-desc">Creates an `EdibleEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EdibleEvent`:
 
+<div className="api-used-in">
+
 [`EdibleObject.finishedEating`](/mod/game-api/types/global-e-h/edibleobject#m-finishedeating), [`EdibleObject.FinishedEating`](/mod/game-api/types/global-e-h/edibleobject#m-finishedeating-2).
+
+</div>

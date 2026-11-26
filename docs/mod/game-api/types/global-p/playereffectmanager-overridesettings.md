@@ -29,4 +29,8 @@ Whether a player's effect points are set up for the local player or a remote pla
 
 Members of other types that take, return or hold a `OverrideSettings`:
 
+<div className="api-used-in">
+
 [`PlayerEffectManager.EffectPointStatus.EffectPointStatus`](/mod/game-api/types/global-p/playereffectmanager-effectpointstatus#m-ctor), [`PlayerEffectManager.EffectPosition.cullBurnEffect`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullburneffect), [`PlayerEffectManager.EffectPosition.CullBurnEffect`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullburneffect-2), [`PlayerEffectManager.EffectPosition.cullSmokeEffect`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullsmokeeffect), [`PlayerEffectManager.EffectPosition.CullSmokeEffect`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullsmokeeffect-2), [`PlayerEffectManager.EffectPosition.cullStatEffects`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullstateffects), [`PlayerEffectManager.EffectPosition.CullStatEffects`](/mod/game-api/types/global-p/playereffectmanager-effectposition#m-cullstateffects-2).
+
+</div>

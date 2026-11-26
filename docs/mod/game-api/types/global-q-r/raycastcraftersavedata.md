@@ -23,10 +23,10 @@ Save data for `RaycastCrafter`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> | Creates a `RaycastCrafterSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> | <span className="api-desc">Creates a `RaycastCrafterSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscrafted" /><code>{"bool isCrafted"}</code> | Whether the crafter has already crafted its result. |
+| <Link id="m-iscrafted" /><code>{"bool isCrafted"}</code> | <span className="api-desc">Whether the crafter has already crafted its result.</span> |

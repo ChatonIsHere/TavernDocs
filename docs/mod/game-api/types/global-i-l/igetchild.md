@@ -21,5 +21,5 @@ Told by `BuildupChild` when it gains or loses its child entity, for example `Dis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-losechild" /><code>{"void LoseChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | Called when the child entity is removed. |
-| <Link id="m-registerchild" /><code>{"void RegisterChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | Called when a child entity is attached. |
+| <Link id="m-losechild" /><code>{"void LoseChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | <span className="api-desc">Called when the child entity is removed.</span> |
+| <Link id="m-registerchild" /><code>{"void RegisterChild("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | <span className="api-desc">Called when a child entity is attached.</span> |

@@ -21,26 +21,26 @@ Sets its GameObject's layer whenever it is enabled.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MoveToLayer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MoveToLayer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-layer" /><code>{"private int layer"}</code> | Layer number to apply. |
+| <Link id="m-layer" /><code>{"private int layer"}</code> | <span className="api-desc">Layer number to apply.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets the GameObject's layer to `layer`. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Sets the GameObject's layer to `layer`.</span> |
 
 </details>

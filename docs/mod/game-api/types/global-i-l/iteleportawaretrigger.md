@@ -21,10 +21,14 @@ A trigger that wants to know when a player teleports through it instead of walki
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Client: called by `Teleporter` for each trigger on the teleport path after the local player moves. |
+| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Client: called by `Teleporter` for each trigger on the teleport path after the local player moves.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ITeleportAwareTrigger`:
 
+<div className="api-used-in">
+
 [`Pointer.triggersPassedThrough`](/mod/game-api/types/global-p/pointer#m-triggerspassedthrough), [`Pointer.TriggersPassedThrough`](/mod/game-api/types/global-p/pointer#m-triggerspassedthrough-2).
+
+</div>

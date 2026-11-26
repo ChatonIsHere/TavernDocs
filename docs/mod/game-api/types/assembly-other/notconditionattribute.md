@@ -21,4 +21,4 @@ Inspector attribute: hides the field while the named bool is true and shows it w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NotConditionAttribute(string boolean)"}</code> | Creates a `NotConditionAttribute` from `boolean`. |
+| <Link id="m-ctor" /><code>{"NotConditionAttribute(string boolean)"}</code> | <span className="api-desc">Creates a `NotConditionAttribute` from `boolean`.</span> |

@@ -21,4 +21,4 @@ Internal interface for stew recipe ingredients (`StewIngredientBase`): checks wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containscookable" /><code>{"bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | True if the cookable counts as this ingredient, with a match score. `StewRecipe` uses it to match what is in the pot. |
+| <Link id="m-containscookable" /><code>{"bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | <span className="api-desc">True if the cookable counts as this ingredient, with a match score. `StewRecipe` uses it to match what is in the pot.</span> |

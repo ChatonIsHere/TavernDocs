@@ -21,10 +21,10 @@ Request body for setting group permissions with the older Member, Moderator and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetGroupPermissionsRequest()"}</code> | Creates a `SetGroupPermissionsRequest` with default values. |
+| <Link id="m-ctor" /><code>{"SetGroupPermissionsRequest()"}</code> | <span className="api-desc">Creates a `SetGroupPermissionsRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-permissions" /><code><Link to="/mod/game-api/types/assembly-api-models/setgrouppermissionsrequest-oldgrouppermission">{"SetGroupPermissionsRequest.OldGroupPermission"}</Link>{" Permissions { get; set; }"}</code> | The permission flags to set. |
+| <Link id="m-permissions" /><code><Link to="/mod/game-api/types/assembly-api-models/setgrouppermissionsrequest-oldgrouppermission">{"SetGroupPermissionsRequest.OldGroupPermission"}</Link>{" Permissions { get; set; }"}</code> | <span className="api-desc">The permission flags to set.</span> |

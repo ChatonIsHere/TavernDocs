@@ -20,17 +20,21 @@ One recent player interaction sent to the Alta web API. Queued through `ApiBatch
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RecentPlayerInteractionRequest()"}</code> | Creates a `RecentPlayerInteractionRequest` with default values. |
+| <Link id="m-ctor" /><code>{"RecentPlayerInteractionRequest()"}</code> | <span className="api-desc">Creates a `RecentPlayerInteractionRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-otheruser" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" OtherUser { get; set; }"}</code> | The other player in the interaction. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> | Kind of interaction. |
+| <Link id="m-otheruser" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" OtherUser { get; set; }"}</code> | <span className="api-desc">The other player in the interaction.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> | <span className="api-desc">Kind of interaction.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RecentPlayerInteractionRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.EnqueueRecentPlayerInteraction`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-enqueuerecentplayerinteraction).
+
+</div>

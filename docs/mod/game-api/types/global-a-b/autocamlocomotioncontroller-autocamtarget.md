@@ -21,17 +21,21 @@ A player body the auto camera can frame, rebuilt every frame by `AutoCamLocomoti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> | Creates an `AutoCamLocomotionController.AutoCamTarget` with default values. |
+| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> | <span className="api-desc">Creates an `AutoCamLocomotionController.AutoCamTarget` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscontained" /><code>{"bool IsContained { get; set; }"}</code> | Whether this player is within `MaximumDistance` of the focused player, so the camera frames them too. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> | The player character's body transform. |
+| <Link id="m-iscontained" /><code>{"bool IsContained { get; set; }"}</code> | <span className="api-desc">Whether this player is within `MaximumDistance` of the focused player, so the camera frames them too.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; set; }"}</code> | <span className="api-desc">The player character's body transform.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AutoCamTarget`:
 
+<div className="api-used-in">
+
 [`AutoCamLocomotionController.targets`](/mod/game-api/types/global-a-b/autocamlocomotioncontroller#m-targets).
+
+</div>

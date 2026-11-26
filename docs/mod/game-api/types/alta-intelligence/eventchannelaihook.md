@@ -22,17 +22,17 @@ AI hook that fires a hook event channel on the creature when the action starts a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EventChannelAiHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EventChannelAiHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ended" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" ended"}</code> | Channel fired when the action ends. |
-| <Link id="m-started" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" started"}</code> | Channel fired when the action starts. |
+| <Link id="m-ended" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" ended"}</code> | <span className="api-desc">Channel fired when the action ends.</span> |
+| <Link id="m-started" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{" started"}</code> | <span className="api-desc">Channel fired when the action starts.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ AI hook that fires a hook event channel on the creature when the action starts a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Fires `ended` on the creature unless it's `None`. |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Fires `started` on the creature unless it's `None`. |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Fires `ended` on the creature unless it's `None`.</span> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Fires `started` on the creature unless it's `None`.</span> |

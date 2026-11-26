@@ -23,20 +23,20 @@ Global settings asset for character customization: effects, default cosmetics an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CustomizationSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" addedEffect"}</code> | Backing field for `AddedEffect`. |
-| <Link id="m-debugcategorywhitelist" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{"> debugCategoryWhitelist"}</code> | Backing field for `DebugCategoryWhitelist`. |
-| <Link id="m-defaultcosmetics" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercosmeticdefinitionset">{"PlayerCosmeticDefinitionSet"}</Link>{" defaultCosmetics"}</code> | Backing field for `DefaultCosmetics`. |
-| <Link id="m-disappeareffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" disappearEffect"}</code> | Backing field for `DisappearEffect`. |
-| <Link id="m-requireddefaults" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/defaultcosmeticinfo">{"DefaultCosmeticInfo"}</Link>{"> requiredDefaults"}</code> | Backing field for `RequiredDefaults`. |
+| <Link id="m-addedeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" addedEffect"}</code> | <span className="api-desc">Backing field for `AddedEffect`.</span> |
+| <Link id="m-debugcategorywhitelist" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{"> debugCategoryWhitelist"}</code> | <span className="api-desc">Backing field for `DebugCategoryWhitelist`.</span> |
+| <Link id="m-defaultcosmetics" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercosmeticdefinitionset">{"PlayerCosmeticDefinitionSet"}</Link>{" defaultCosmetics"}</code> | <span className="api-desc">Backing field for `DefaultCosmetics`.</span> |
+| <Link id="m-disappeareffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" disappearEffect"}</code> | <span className="api-desc">Backing field for `DisappearEffect`.</span> |
+| <Link id="m-requireddefaults" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-customization/defaultcosmeticinfo">{"DefaultCosmeticInfo"}</Link>{"> requiredDefaults"}</code> | <span className="api-desc">Backing field for `RequiredDefaults`.</span> |
 
 </details>
 
@@ -44,9 +44,9 @@ Global settings asset for character customization: effects, default cosmetics an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedeffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AddedEffect { get; }"}</code> | Pooled effect for adding an item. |
-| <Link id="m-debugcategorywhitelist-2" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{"> DebugCategoryWhitelist { get; }"}</code> | Categories to keep when saving in the editor, for debugging. |
-| <Link id="m-defaultcosmetics-2" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticdefinitionset">{"PlayerCosmeticDefinitionSet"}</Link>{" DefaultCosmetics { get; }"}</code> | Set of cosmetics everyone has by default. |
-| <Link id="m-disappeareffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DisappearEffect { get; }"}</code> | Pooled effect for an item disappearing. |
-| <Link id="m-requireddefaults-2" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/defaultcosmeticinfo">{"DefaultCosmeticInfo"}</Link>{"> RequiredDefaults { get; }"}</code> | Default parts that must always be present. |
-| <Link id="m-usecategorywhitelistwhensaving" /><code>{"bool UseCategoryWhitelistWhenSaving { get; }"}</code> | True only in the editor when the debug whitelist has entries. |
+| <Link id="m-addedeffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AddedEffect { get; }"}</code> | <span className="api-desc">Pooled effect for adding an item.</span> |
+| <Link id="m-debugcategorywhitelist-2" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{"> DebugCategoryWhitelist { get; }"}</code> | <span className="api-desc">Categories to keep when saving in the editor, for debugging.</span> |
+| <Link id="m-defaultcosmetics-2" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticdefinitionset">{"PlayerCosmeticDefinitionSet"}</Link>{" DefaultCosmetics { get; }"}</code> | <span className="api-desc">Set of cosmetics everyone has by default.</span> |
+| <Link id="m-disappeareffect-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" DisappearEffect { get; }"}</code> | <span className="api-desc">Pooled effect for an item disappearing.</span> |
+| <Link id="m-requireddefaults-2" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/defaultcosmeticinfo">{"DefaultCosmeticInfo"}</Link>{"> RequiredDefaults { get; }"}</code> | <span className="api-desc">Default parts that must always be present.</span> |
+| <Link id="m-usecategorywhitelistwhensaving" /><code>{"bool UseCategoryWhitelistWhenSaving { get; }"}</code> | <span className="api-desc">True only in the editor when the debug whitelist has entries.</span> |

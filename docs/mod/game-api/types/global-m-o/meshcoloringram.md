@@ -21,13 +21,13 @@ Settings holder with no logic; probably read by an editor mesh colouring tool.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeshColoringRam()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MeshColoringRam()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-autocolor" /><code>{"bool autoColor"}</code> | Settings flag; nothing in the server build reads it. |
-| <Link id="m-height" /><code>{"float height"}</code> | Settings value; nothing in the server build reads it. |
-| <Link id="m-newmesh" /><code>{"bool newMesh"}</code> | Settings flag; nothing in the server build reads it. |
-| <Link id="m-threshold" /><code>{"float threshold"}</code> | Settings value; nothing in the server build reads it. |
+| <Link id="m-autocolor" /><code>{"bool autoColor"}</code> | <span className="api-desc">Settings flag; nothing in the server build reads it.</span> |
+| <Link id="m-height" /><code>{"float height"}</code> | <span className="api-desc">Settings value; nothing in the server build reads it.</span> |
+| <Link id="m-newmesh" /><code>{"bool newMesh"}</code> | <span className="api-desc">Settings flag; nothing in the server build reads it.</span> |
+| <Link id="m-threshold" /><code>{"float threshold"}</code> | <span className="api-desc">Settings value; nothing in the server build reads it.</span> |

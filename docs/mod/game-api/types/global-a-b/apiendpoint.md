@@ -31,4 +31,8 @@ Which Alta web API environment to connect to: production, development, latest, t
 
 Members of other types that take, return or hold a `ApiEndpoint`:
 
+<div className="api-used-in">
+
 [`GameSettings.ApiEndpoint`](/mod/game-api/types/alta-utilities/gamesettings#m-apiendpoint), [`EditorApiSettings.endpointInEditor`](/mod/game-api/types/global-e-h/editorapisettings#m-endpointineditor), [`EditorApiSettings.EndpointInEditor`](/mod/game-api/types/global-e-h/editorapisettings#m-endpointineditor-2).
+
+</div>

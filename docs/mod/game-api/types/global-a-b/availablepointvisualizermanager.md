@@ -22,19 +22,23 @@ Base for a component that shows how many skill points are free and which slots a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected AvailablePointVisualizerManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected AvailablePointVisualizerManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleantemporary" /><code>{"abstract void CleanTemporary()"}</code> | Clears any temporary opening shown by `OpenTemporary`. |
-| <Link id="m-opentemporary" /><code>{"abstract void OpenTemporary(int index)"}</code> | Shows the slot at the given index as a temporary, unconfirmed opening. |
-| <Link id="m-openvisual" /><code>{"abstract void OpenVisual(int index)"}</code> | Shows the slot at the given index as opened. |
-| <Link id="m-updateavailablepointsvisual" /><code>{"abstract void UpdateAvailablePointsVisual(int freePoints)"}</code> | Updates the display for the given number of free points. |
+| <Link id="m-cleantemporary" /><code>{"abstract void CleanTemporary()"}</code> | <span className="api-desc">Clears any temporary opening shown by `OpenTemporary`.</span> |
+| <Link id="m-opentemporary" /><code>{"abstract void OpenTemporary(int index)"}</code> | <span className="api-desc">Shows the slot at the given index as a temporary, unconfirmed opening.</span> |
+| <Link id="m-openvisual" /><code>{"abstract void OpenVisual(int index)"}</code> | <span className="api-desc">Shows the slot at the given index as opened.</span> |
+| <Link id="m-updateavailablepointsvisual" /><code>{"abstract void UpdateAvailablePointsVisual(int freePoints)"}</code> | <span className="api-desc">Updates the display for the given number of free points.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AvailablePointVisualizerManager`:
 
+<div className="api-used-in">
+
 [`ExperienceFillVisualizer.availablePointVisualizer`](/mod/game-api/types/global-e-h/experiencefillvisualizer#m-availablepointvisualizer).
+
+</div>

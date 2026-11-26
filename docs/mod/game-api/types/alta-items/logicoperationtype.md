@@ -30,4 +30,8 @@ Logic gate kind: `And`, `Or`, `Xor`, `Nand` or `Toggle`.
 
 Members of other types that take, return or hold a `LogicOperationType`:
 
+<div className="api-used-in">
+
 [`LogicGateReceiver.operationType`](/mod/game-api/types/alta-items/logicgatereceiver#m-operationtype), [`LogicGateSaveData.operationType`](/mod/game-api/types/alta-items/logicgatesavedata#m-operationtype), [`LogicGateSaveData1.operationType`](/mod/game-api/types/alta-items/logicgatesavedata1#m-operationtype).
+
+</div>

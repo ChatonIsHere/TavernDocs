@@ -30,4 +30,8 @@ Region a service status notice applies to: `Australia`, `Usa`, `Europe` or `Glob
 
 Members of other types that take, return or hold a `StatusRegion`:
 
+<div className="api-used-in">
+
 [`Status.Region`](/mod/game-api/types/assembly-api-client/status#m-region).
+
+</div>

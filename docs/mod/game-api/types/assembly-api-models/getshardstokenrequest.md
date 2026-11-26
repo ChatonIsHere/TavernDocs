@@ -20,11 +20,11 @@ Request body for getting a payment token to buy a shards package.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> | Creates a `GetShardsTokenRequest` with default values. |
+| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> | <span className="api-desc">Creates a `GetShardsTokenRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> | How many packages to buy; 1 by default. |
-| <Link id="m-shardspackageidentifier" /><code>{"int ShardsPackageIdentifier { get; set; }"}</code> | Id of the shards package, sent as `shards_package_id`. |
+| <Link id="m-quantity" /><code>{"int Quantity { get; set; }"}</code> | <span className="api-desc">How many packages to buy; 1 by default.</span> |
+| <Link id="m-shardspackageidentifier" /><code>{"int ShardsPackageIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the shards package, sent as `shards_package_id`.</span> |

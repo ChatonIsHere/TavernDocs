@@ -29,4 +29,8 @@ Result of `Timeline.LoadEntry` for a saved timer: None (no time saved), Past (al
 
 Members of other types that take, return or hold a `SerializedEntryState`:
 
+<div className="api-used-in">
+
 [`Timeline.GetSerializedState`](/mod/game-api/types/assembly-other/timeline#m-getserializedstate), [`Timeline.LoadEntry`](/mod/game-api/types/assembly-other/timeline#m-loadentry), [`Timeline.SerializeEntry`](/mod/game-api/types/assembly-other/timeline#m-serializeentry).
+
+</div>

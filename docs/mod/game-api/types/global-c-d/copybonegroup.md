@@ -21,19 +21,19 @@ Group of `CopyBone` components that turns them on together, or off after a short
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CopyBoneGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CopyBoneGroup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setenable" /><code>{"void SetEnable(bool isEnabled)"}</code> | Enables all at once, or disables them all after 0.5 seconds. |
+| <Link id="m-setenable" /><code>{"void SetEnable(bool isEnabled)"}</code> | <span className="api-desc">Enables all at once, or disables them all after 0.5 seconds.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timeddisable" /><code>{"private IEnumerator TimedDisable() (iterator)"}</code> | Coroutine that waits 0.5 seconds then disables them. |
+| <Link id="m-timeddisable" /><code>{"private IEnumerator TimedDisable() (iterator)"}</code> | <span className="api-desc">Coroutine that waits 0.5 seconds then disables them.</span> |
 
 </details>

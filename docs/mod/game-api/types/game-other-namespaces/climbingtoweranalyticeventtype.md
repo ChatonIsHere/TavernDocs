@@ -31,4 +31,8 @@ Kinds of analytics event the climbing tower reports: falls, entering and leaving
 
 Members of other types that take, return or hold a `ClimbingTowerAnalyticEventType`:
 
+<div className="api-used-in">
+
 [`TowerAnalyticsReporter.ReportTowerAnalyticEvent`](/mod/game-api/types/game-other-namespaces/toweranalyticsreporter#m-reporttoweranalyticevent).
+
+</div>

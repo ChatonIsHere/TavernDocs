@@ -31,4 +31,8 @@ How a `GrabPoint` sets the hand's rotation when grabbed: `Free`, `Fixed`, `Fixed
 
 Members of other types that take, return or hold a `RotationMode`:
 
+<div className="api-used-in">
+
 [`GrabPoint.rotationMode`](/mod/game-api/types/global-e-h/grabpoint#m-rotationmode), [`GrabPoint.RotationMode`](/mod/game-api/types/global-e-h/grabpoint#m-rotationmode-2).
+
+</div>

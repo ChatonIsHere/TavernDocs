@@ -21,16 +21,20 @@ One match found by the `search` console command: a module or command whose name 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/mod/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> | Creates a `BaseCommands.SearchResult` from `part`. |
+| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/mod/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `BaseCommands.SearchResult` from `part`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-part" /><code><Link to="/mod/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> | The module or command that matched. |
+| <Link id="m-part" /><code><Link to="/mod/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> | <span className="api-desc">The module or command that matched.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SearchResult`:
 
+<div className="api-used-in">
+
 [`BaseCommands.SearchModule`](/mod/game-api/types/alta-console/basecommands#m-searchmodule).
+
+</div>

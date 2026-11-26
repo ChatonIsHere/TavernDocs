@@ -22,4 +22,4 @@ Editor menu folder `3rd Party/Quick LOD`: menu item classes inherit it to appear
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Quick_LOD()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Quick_LOD` with default values. |
+| <Link id="m-ctor" /><code>{"protected Quick_LOD()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase._3rd_Party.Quick_LOD` with default values.</span> |

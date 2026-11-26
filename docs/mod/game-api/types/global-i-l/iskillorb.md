@@ -21,12 +21,16 @@ A skill orb as seen by orb effects. `ProgressionSlotContainer` implements it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-internalmodeltransform" /><code>{"Transform InternalModelTransform { get; }"}</code> | Transform of the model inside the orb shell. |
-| <Link id="m-shellmaterial" /><code>{"Material ShellMaterial { get; }"}</code> | Material of the orb's outer shell. |
-| <Link id="m-slot" /><code><Link to="/mod/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> | The progression slot the orb holds. |
+| <Link id="m-internalmodeltransform" /><code>{"Transform InternalModelTransform { get; }"}</code> | <span className="api-desc">Transform of the model inside the orb shell.</span> |
+| <Link id="m-shellmaterial" /><code>{"Material ShellMaterial { get; }"}</code> | <span className="api-desc">Material of the orb's outer shell.</span> |
+| <Link id="m-slot" /><code><Link to="/mod/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" Slot { get; }"}</code> | <span className="api-desc">The progression slot the orb holds.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISkillOrb`:
 
+<div className="api-used-in">
+
 [`ProgressionSettings.OrbDestroyEffect`](/mod/game-api/types/global-p/progressionsettings#m-orbdestroyeffect), [`SkillOrbEffect.SetOriginalOrb`](/mod/game-api/types/global-s/skillorbeffect#m-setoriginalorb).
+
+</div>

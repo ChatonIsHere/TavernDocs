@@ -22,10 +22,14 @@ Something that saves itself during the world's regular save. `StreamerManager` c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> | Saves this object's data. Called by `StreamerManager` during each world save. |
+| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> | <span className="api-desc">Saves this object's data. Called by `StreamerManager` during each world save.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAutoSave`:
 
+<div className="api-used-in">
+
 [`StreamerManager.AutoSavingBehaviours`](/mod/game-api/types/global-s/streamermanager#m-autosavingbehaviours).
+
+</div>

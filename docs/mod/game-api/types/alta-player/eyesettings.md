@@ -20,18 +20,18 @@ The character dummy's eye blit materials, held on `CharacterDummy.Eyes`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> | Creates an `EyeSettings` with default values. |
+| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> | <span className="api-desc">Creates an `EyeSettings` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> | Backing field for `EyeAdditionalBlit`. |
-| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> | Backing field for `EyeBlit`. |
-| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> | Unused flag (not serialised). |
+| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> | <span className="api-desc">Backing field for `EyeAdditionalBlit`.</span> |
+| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> | <span className="api-desc">Backing field for `EyeBlit`.</span> |
+| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> | <span className="api-desc">Unused flag (not serialised).</span> |
 
 </details>
 
@@ -39,17 +39,21 @@ The character dummy's eye blit materials, held on `CharacterDummy.Eyes`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> | Second eye blit material. |
-| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> | Main eye blit material. |
+| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> | <span className="api-desc">Second eye blit material.</span> |
+| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> | <span className="api-desc">Main eye blit material.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> | Does nothing in this build. |
+| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> | <span className="api-desc">Does nothing in this build.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EyeSettings`:
 
+<div className="api-used-in">
+
 [`CharacterDummy.eyes`](/mod/game-api/types/alta-player/characterdummy#m-eyes), [`CharacterDummy.Eyes`](/mod/game-api/types/alta-player/characterdummy#m-eyes-2).
+
+</div>

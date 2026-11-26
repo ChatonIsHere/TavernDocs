@@ -22,4 +22,4 @@ A serialized link from a logic receiver to a `LogicIntSender`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IntSenderInput()"}</code> | Creates an `IntSenderInput` with default values. |
+| <Link id="m-ctor" /><code>{"IntSenderInput()"}</code> | <span className="api-desc">Creates an `IntSenderInput` with default values.</span> |

@@ -21,5 +21,5 @@ Extension methods for writing one comma-separated line. Used by debugging consol
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-writecsvline" /><code>{"static void WriteCsvLine(StreamWriter writer, params object[] parts)"}</code> | Writes the parts joined by commas plus a newline to a `StreamWriter` or `StringBuilder`. No quoting or escaping. |
-| <Link id="m-writecsvline-2" /><code>{"static void WriteCsvLine(StringBuilder writer, params object[] parts)"}</code> | Writes the parts joined by commas plus a newline to a `StreamWriter` or `StringBuilder`. No quoting or escaping. |
+| <Link id="m-writecsvline" /><code>{"static void WriteCsvLine(StreamWriter writer, params object[] parts)"}</code> | <span className="api-desc">Writes the parts joined by commas plus a newline to a `StreamWriter` or `StringBuilder`. No quoting or escaping.</span> |
+| <Link id="m-writecsvline-2" /><code>{"static void WriteCsvLine(StringBuilder writer, params object[] parts)"}</code> | <span className="api-desc">Writes the parts joined by commas plus a newline to a `StreamWriter` or `StringBuilder`. No quoting or escaping.</span> |

@@ -22,10 +22,10 @@ Editor menu entry ("Empty Folder") for creating an `EmptyFolderContents` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EmptyFolderContents.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `EmptyFolderContents.Create` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Menu label, "Empty Folder". |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | <span className="api-desc">Menu label, "Empty Folder".</span> |

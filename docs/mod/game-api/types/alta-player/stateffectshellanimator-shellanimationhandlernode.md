@@ -22,16 +22,20 @@ Private: wraps a `ShellAnimationHandler` so it can sit in the animator's priorit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/mod/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> | Creates a `StatEffectShellAnimator.ShellAnimationHandlerNode` from `handler`. |
+| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/mod/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Creates a `StatEffectShellAnimator.ShellAnimationHandlerNode` from `handler`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handler" /><code><Link to="/mod/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> | The queued handler. |
+| <Link id="m-handler" /><code><Link to="/mod/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> | <span className="api-desc">The queued handler.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ShellAnimationHandlerNode`:
 
+<div className="api-used-in">
+
 [`StatEffectShellAnimator.animationQueue`](/mod/game-api/types/alta-player/stateffectshellanimator#m-animationqueue).
+
+</div>

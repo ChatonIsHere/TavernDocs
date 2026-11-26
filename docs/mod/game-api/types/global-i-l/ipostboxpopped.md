@@ -21,4 +21,4 @@ Component on an item that `Postbox` calls after the item is spawned out of it, s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlepostpopped" /><code>{"void HandlePostPopped()"}</code> | Called after the item comes out of the postbox. |
+| <Link id="m-handlepostpopped" /><code>{"void HandlePostPopped()"}</code> | <span className="api-desc">Called after the item comes out of the postbox.</span> |

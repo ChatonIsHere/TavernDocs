@@ -23,19 +23,19 @@ Cave generator plugin that turns a density layer into a mesh with marching cubes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MarchingCubesPlugin()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MarchingCubesPlugin()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatorlayer" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" generatorLayer"}</code> | The plugin layer whose values are meshed. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-meshes" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{", "}<Link to="/mod/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{"> meshes"}</code> | Meshes built for each chunk, waiting to be collected with `GetMesh`. |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> | Density value where the surface is placed (default 0.5). |
+| <Link id="m-generatorlayer" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" generatorLayer"}</code> | <span className="api-desc">The plugin layer whose values are meshed.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-meshes" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{", "}<Link to="/mod/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{"> meshes"}</code> | <span className="api-desc">Meshes built for each chunk, waiting to be collected with `GetMesh`.</span> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> | <span className="api-desc">Density value where the surface is placed (default 0.5).</span> |
 
 </details>
 
@@ -43,15 +43,15 @@ Cave generator plugin that turns a density layer into a mesh with marching cubes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmesh" /><code><Link to="/mod/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{" GetMesh("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Returns and removes the mesh built for the chunk. Throws if none was built. |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> | Builds the chunk's mesh from `generatorLayer` at `threshold` (or takes the pregenerated one) and stores it for `GetMesh`. |
+| <Link id="m-getmesh" /><code><Link to="/mod/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh">{"MarchingCubesPlugin.GeneratedMesh"}</Link>{" GetMesh("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Returns and removes the mesh built for the chunk. Throws if none was built.</span> |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts)"}</code> | <span className="api-desc">Builds the chunk's mesh from `generatorLayer` at `threshold` (or takes the pregenerated one) and stores it for `GetMesh`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensurecleanmeshmap" /><code>{"private void EnsureCleanMeshMap()"}</code> | Removes entries for chunks that have been destroyed from `meshes`. |
+| <Link id="m-ensurecleanmeshmap" /><code>{"private void EnsureCleanMeshMap()"}</code> | <span className="api-desc">Removes entries for chunks that have been destroyed from `meshes`.</span> |
 
 </details>
 
@@ -59,4 +59,8 @@ Cave generator plugin that turns a density layer into a mesh with marching cubes
 
 Members of other types that take, return or hold a `MarchingCubesPlugin`:
 
+<div className="api-used-in">
+
 [`MarchingCubesChunkDisplay.GetMesh`](/mod/game-api/types/alta-world-generation/marchingcubeschunkdisplay#m-getmesh).
+
+</div>

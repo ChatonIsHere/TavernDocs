@@ -22,4 +22,4 @@ Base inspector attribute marking how much of the day cycle a value covers (`Full
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CycleAttribute()"}</code> | Creates a `CycleAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"protected CycleAttribute()"}</code> | <span className="api-desc">Creates a `CycleAttribute` with default values.</span> |

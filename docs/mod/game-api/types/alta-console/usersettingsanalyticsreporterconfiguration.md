@@ -22,17 +22,17 @@ Asset that sets the title and cut-off date of a user settings analytics report. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enddate" /><code>{"private string endDate"}</code> | Backing field for `EndDate`. |
-| <Link id="m-reporttitle" /><code>{"private string reportTitle"}</code> | Backing field for `ReportTitle`. |
+| <Link id="m-enddate" /><code>{"private string endDate"}</code> | <span className="api-desc">Backing field for `EndDate`.</span> |
+| <Link id="m-reporttitle" /><code>{"private string reportTitle"}</code> | <span className="api-desc">Backing field for `ReportTitle`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Asset that sets the title and cut-off date of a user settings analytics report. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enddate-2" /><code>{"string EndDate { get; }"}</code> | UTC date in YYYY-MM-DD form after which no data is collected. The day itself is excluded. |
-| <Link id="m-reporttitle-2" /><code>{"string ReportTitle { get; }"}</code> | Title of the report. |
+| <Link id="m-enddate-2" /><code>{"string EndDate { get; }"}</code> | <span className="api-desc">UTC date in YYYY-MM-DD form after which no data is collected. The day itself is excluded.</span> |
+| <Link id="m-reporttitle-2" /><code>{"string ReportTitle { get; }"}</code> | <span className="api-desc">Title of the report.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UserSettingsAnalyticsReporterConfiguration`:
 
+<div className="api-used-in">
+
 [`UserSettingsAnalyticsReporter.config`](/mod/game-api/types/alta-console/usersettingsanalyticsreporter#m-config), [`UserSettingsAnalyticsReporter.configHandle`](/mod/game-api/types/alta-console/usersettingsanalyticsreporter#m-confighandle).
+
+</div>

@@ -22,18 +22,18 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> | Cached `GameObject`, set in `Initialize` so later calls skip the Unity property. |
-| <Link id="m-piece" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> | The `StaticEnvironmentPiece` definition this instance came from; `Release` returns the instance to its pool. |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Cached `Transform`, set in `Initialize` and used by `MoveAndEnable` and `SetScale`. |
+| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> | <span className="api-desc">Cached `GameObject`, set in `Initialize` so later calls skip the Unity property.</span> |
+| <Link id="m-piece" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> | <span className="api-desc">The `StaticEnvironmentPiece` definition this instance came from; `Release` returns the instance to its pool.</span> |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | <span className="api-desc">Cached `Transform`, set in `Initialize` and used by `MoveAndEnable` and `SetScale`.</span> |
 
 </details>
 
@@ -41,31 +41,31 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code><Link to="/mod/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> | Surface material of the piece, for sounds and effects. |
+| <Link id="m-material" /><code><Link to="/mod/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" Material { get; }"}</code> | <span className="api-desc">Surface material of the piece, for sounds and effects.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-released" /><code>{"event Action Released"}</code> | Event declared for when the instance is released; not raised in this class. |
+| <Link id="m-released" /><code>{"event Action Released"}</code> | <span className="api-desc">Event declared for when the instance is released; not raised in this class.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createpiece" /><code><Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" CreatePiece()"}</code> | Returns the piece definition, logging an error if it's missing. |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece)"}</code> | Binds the instance to its piece definition. |
-| <Link id="m-moveandenable" /><code>{"void MoveAndEnable(Vector3 position, Quaternion rotation, Vector3 scale)"}</code> | Places, scales and turns on the instance. |
-| <Link id="m-release" /><code>{"virtual void Release()"}</code> | Turns the instance off and returns it to the piece's pool. |
-| <Link id="m-setscale" /><code>{"void SetScale(Vector3 scale)"}</code> | Sets the instance's scale. |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor hook. Empty here. |
+| <Link id="m-createpiece" /><code><Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" CreatePiece()"}</code> | <span className="api-desc">Returns the piece definition, logging an error if it's missing.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece)"}</code> | <span className="api-desc">Binds the instance to its piece definition.</span> |
+| <Link id="m-moveandenable" /><code>{"void MoveAndEnable(Vector3 position, Quaternion rotation, Vector3 scale)"}</code> | <span className="api-desc">Places, scales and turns on the instance.</span> |
+| <Link id="m-release" /><code>{"virtual void Release()"}</code> | <span className="api-desc">Turns the instance off and returns it to the piece's pool.</span> |
+| <Link id="m-setscale" /><code>{"void SetScale(Vector3 scale)"}</code> | <span className="api-desc">Sets the instance's scale.</span> |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Editor hook. Empty here.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> | Explicit `IInstructionResult` implementation: undoing the placement just calls `Release`. |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> | <span className="api-desc">Explicit `IInstructionResult` implementation: undoing the placement just calls `Release`.</span> |
 
 </details>
 
@@ -73,4 +73,8 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 
 Members of other types that take, return or hold a `StaticEnvironmentPieceInstance`:
 
+<div className="api-used-in">
+
 [`BasicObjectDisplay.staticPieces`](/mod/game-api/types/alta-world-generation/basicobjectdisplay#m-staticpieces), [`GameObjectDistribution.MigrateToStaticEnvironmentPiece`](/mod/game-api/types/alta-world-generation/gameobjectdistribution#m-migratetostaticenvironmentpiece), [`ForestBridges.Option.piece`](/mod/game-api/types/alta-world-generation/forestbridges-option#m-piece), [`IStaticEnvironmentPiecePool.Release`](/mod/game-api/types/alta-world/istaticenvironmentpiecepool#m-release), [`StaticEnvironmentPiece.prefab`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-prefab), [`StaticEnvironmentPiece.Prefab`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-prefab-2), [`StaticEnvironmentPiece.Release`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-release), [`StaticEnvironmentPiece.SetPrefab`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-setprefab), [`StaticEnvironmentPiece.Spawn`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-spawn), [`StaticEnvironmentPiece.stack`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-stack), [`SetPrefabModifier.pieces`](/mod/game-api/types/global-s/setprefabmodifier#m-pieces).
+
+</div>

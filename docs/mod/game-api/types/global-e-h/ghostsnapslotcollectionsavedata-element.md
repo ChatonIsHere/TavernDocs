@@ -22,4 +22,4 @@ Empty per-slot save element for `GhostSnapSlotCollectionSaveData`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `GhostSnapSlotCollectionSaveData.Element` with default values. |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | <span className="api-desc">Creates a `GhostSnapSlotCollectionSaveData.Element` with default values.</span> |

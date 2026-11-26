@@ -27,4 +27,8 @@ Kind of future user action stored for an outside user: add a friend or invite to
 
 Members of other types that take, return or hold a `FutureUserActionType`:
 
+<div className="api-used-in">
+
 [`FutureUserActionsClient.CreateCustomAction`](/mod/game-api/types/assembly-api-client/futureuseractionsclient#m-createcustomaction), [`IFutureUserActions.CreateCustomAction`](/mod/game-api/types/assembly-api-client/ifutureuseractions#m-createcustomaction), [`FutureUserActionCreateRequest.ActionType`](/mod/game-api/types/assembly-api-models/futureuseractioncreaterequest#m-actiontype).
+
+</div>

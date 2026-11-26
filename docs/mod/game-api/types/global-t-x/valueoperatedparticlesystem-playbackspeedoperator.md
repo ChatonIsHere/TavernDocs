@@ -22,16 +22,16 @@ Operator that drives a particle system's simulation speed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> | Creates a `ValueOperatedParticleSystem.PlaybackSpeedOperator` with default values. |
+| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> | <span className="api-desc">Creates a `ValueOperatedParticleSystem.PlaybackSpeedOperator` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-module" /><code>{"private ParticleSystem.MainModule module"}</code> | The main module being changed. |
+| <Link id="m-module" /><code>{"private ParticleSystem.MainModule module"}</code> | <span className="api-desc">The main module being changed.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Operator that drives a particle system's simulation speed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> | Grabs the target system's main module. |
-| <Link id="m-set" /><code>{"override void Set(float value)"}</code> | Sets the simulation speed. |
+| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> | <span className="api-desc">Grabs the target system's main module.</span> |
+| <Link id="m-set" /><code>{"override void Set(float value)"}</code> | <span className="api-desc">Sets the simulation speed.</span> |

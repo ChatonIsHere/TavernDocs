@@ -22,4 +22,4 @@ Editor menu entry for creating the `EdiblePageSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EdiblePageSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `EdiblePageSettings.Create` with default values.</span> |

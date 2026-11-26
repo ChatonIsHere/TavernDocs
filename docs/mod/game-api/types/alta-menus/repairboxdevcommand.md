@@ -27,4 +27,8 @@ Dev tool command sent from `RepairBoxDevControlPanel` to the server: instantly b
 
 Members of other types that take, return or hold a `RepairBoxDevCommand`:
 
+<div className="api-used-in">
+
 [`RepairBox.SendDevToolCommandToServer`](/mod/game-api/types/global-q-r/repairbox#m-senddevtoolcommandtoserver).
+
+</div>

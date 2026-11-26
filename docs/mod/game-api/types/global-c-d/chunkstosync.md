@@ -20,11 +20,15 @@ Message the server sends a player's `PlayerChunkManager` with the chunk they are
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentchunk" /><code><Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk"}</code> | The chunk the player is in. |
-| <Link id="m-loadedchunks" /><code><Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] loadedChunks"}</code> | Chunks loaded for the player. On receipt they are force loaded and any others are unloaded. |
+| <Link id="m-currentchunk" /><code><Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" currentChunk"}</code> | <span className="api-desc">The chunk the player is in.</span> |
+| <Link id="m-loadedchunks" /><code><Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] loadedChunks"}</code> | <span className="api-desc">Chunks loaded for the player. On receipt they are force loaded and any others are unloaded.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChunksToSync`:
 
+<div className="api-used-in">
+
 [`PlayerChunkManager.HandleChunkSync`](/mod/game-api/types/global-p/playerchunkmanager#m-handlechunksync), [`PlayerChunkManager.syncChunks`](/mod/game-api/types/global-p/playerchunkmanager#m-syncchunks).
+
+</div>

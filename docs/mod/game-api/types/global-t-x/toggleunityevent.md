@@ -22,10 +22,14 @@ A serializable `UnityEvent` with a bool argument, for wiring toggle callbacks in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleUnityEvent()"}</code> | Creates a `ToggleUnityEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ToggleUnityEvent()"}</code> | <span className="api-desc">Creates a `ToggleUnityEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ToggleUnityEvent`:
 
+<div className="api-used-in">
+
 [`HeatSourceBaseEventTriggers.invertedToggleEvent`](/mod/game-api/types/alta-stats-effects/heatsourcebaseeventtriggers#m-invertedtoggleevent), [`HeatSourceBaseEventTriggers.toggleEvent`](/mod/game-api/types/alta-stats-effects/heatsourcebaseeventtriggers#m-toggleevent), [`GroupPermissionsEnabler.hasPermissionsEvent`](/mod/game-api/types/alta-menus/grouppermissionsenabler#m-haspermissionsevent), [`BuildupChild.inverseToggleHasChild`](/mod/game-api/types/global-a-b/buildupchild#m-inversetogglehaschild), [`BuildupChild.toggleHasChild`](/mod/game-api/types/global-a-b/buildupchild#m-togglehaschild).
+
+</div>

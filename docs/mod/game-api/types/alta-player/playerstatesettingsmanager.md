@@ -18,12 +18,12 @@ Looks up the settings asset for each player state type. Loads every `PlayerState
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statesettings" /><code>{"private static Dictionary<Type, "}<Link to="/mod/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{"> stateSettings"}</code> | Settings assets keyed by state class; null until first lookup. |
+| <Link id="m-statesettings" /><code>{"private static Dictionary<Type, "}<Link to="/mod/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{"> stateSettings"}</code> | <span className="api-desc">Settings assets keyed by state class; null until first lookup.</span> |
 
 </details>
 
@@ -31,13 +31,13 @@ Looks up the settings asset for each player state type. Loads every `PlayerState
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsettings" /><code>{"static "}<Link to="/mod/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{" GetSettings(Type stateType)"}</code> | Returns the settings asset for the given state class, or null if there is none. |
+| <Link id="m-getsettings" /><code>{"static "}<Link to="/mod/game-api/types/alta-player/playerstatesettings">{"PlayerStateSettings"}</Link>{" GetSettings(Type stateType)"}</code> | <span className="api-desc">Returns the settings asset for the given state class, or null if there is none.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializedictionary" /><code>{"private static void InitializeDictionary()"}</code> | Loads all settings assets and keys them by their `StateType`. Throws if two share a type. |
+| <Link id="m-initializedictionary" /><code>{"private static void InitializeDictionary()"}</code> | <span className="api-desc">Loads all settings assets and keys them by their `StateType`. Throws if two share a type.</span> |
 
 </details>

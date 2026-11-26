@@ -20,19 +20,19 @@ Serializable set of shake settings that builds a `ShakeDetectorHelper` for a giv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> | Creates a `ShakeDetectorFactory` with default values. |
+| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> | <span className="api-desc">Creates a `ShakeDetectorFactory` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> | How fast built-up shake strength fades away. |
-| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> | Strength added for a full reversal of direction. |
-| <Link id="m-threshold" /><code>{"private float threshold"}</code> | Strength needed to count as a shake. At 0 or below the helper never fires. |
-| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> | Squared speed the rigidbody must reach before a direction change counts. |
+| <Link id="m-fadepersecond" /><code>{"private float fadePerSecond"}</code> | <span className="api-desc">How fast built-up shake strength fades away.</span> |
+| <Link id="m-jumpperchange" /><code>{"private float jumpPerChange"}</code> | <span className="api-desc">Strength added for a full reversal of direction.</span> |
+| <Link id="m-threshold" /><code>{"private float threshold"}</code> | <span className="api-desc">Strength needed to count as a shake. At 0 or below the helper never fires.</span> |
+| <Link id="m-velocitythresholdsquared" /><code>{"private float velocityThresholdSquared"}</code> | <span className="api-desc">Squared speed the rigidbody must reach before a direction change counts.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ Serializable set of shake settings that builds a `ShakeDetectorHelper` for a giv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethelper" /><code><Link to="/mod/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" GetHelper(Rigidbody targetRigidbody)"}</code> | Makes a new `ShakeDetectorHelper` with these settings for the rigidbody. |
+| <Link id="m-gethelper" /><code><Link to="/mod/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" GetHelper(Rigidbody targetRigidbody)"}</code> | <span className="api-desc">Makes a new `ShakeDetectorHelper` with these settings for the rigidbody.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ShakeDetectorFactory`:
 
+<div className="api-used-in">
+
 [`FireBug.shakeDetectorSettings`](/mod/game-api/types/alta-intelligence/firebug#m-shakedetectorsettings).
+
+</div>

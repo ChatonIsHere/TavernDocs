@@ -23,17 +23,21 @@ Save data for `ClimbingTowerProgressionVisualizer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> | Creates a `ClimbingTowerProgressionVisualizerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> | <span className="api-desc">Creates a `ClimbingTowerProgressionVisualizerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> | Saved height of each progress gauge. |
-| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> | Saved orb indexes shown by the visualizer. |
+| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> | <span className="api-desc">Saved height of each progress gauge.</span> |
+| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> | <span className="api-desc">Saved orb indexes shown by the visualizer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ClimbingTowerProgressionVisualizerSaveData`:
 
+<div className="api-used-in">
+
 [`ClimbingTowerProgressionVisualizer.Load`](/mod/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer#m-load), [`ClimbingTowerProgressionVisualizer.Save`](/mod/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer#m-save).
+
+</div>

@@ -23,10 +23,10 @@ A player state that decorates a base state of type `T`, for example `SpiritState
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerStateBase(T baseState)"}</code> | Creates a `PlayerStateBase` from `baseState`. |
+| <Link id="m-ctor" /><code>{"PlayerStateBase(T baseState)"}</code> | <span className="api-desc">Creates a `PlayerStateBase` from `baseState`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basestate" /><code>{"T BaseState { get; set; }"}</code> | The typed base state. Setting it in the constructor also sets the untyped one. |
+| <Link id="m-basestate" /><code>{"T BaseState { get; set; }"}</code> | <span className="api-desc">The typed base state. Setting it in the constructor also sets the untyped one.</span> |

@@ -21,16 +21,16 @@ A timed pooled effect whose particle system emits from a target mesh renderer's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledParticleSystemMeshEmision()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PooledParticleSystemMeshEmision()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> | The particle system that emits from the mesh. |
+| <Link id="m-system" /><code>{"private ParticleSystem system"}</code> | <span className="api-desc">The particle system that emits from the mesh.</span> |
 
 </details>
 
@@ -38,14 +38,14 @@ A timed pooled effect whose particle system emits from a target mesh renderer's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setmesh" /><code>{"void SetMesh(MeshRenderer targetMeshRenderer)"}</code> | Sets the particle shape to the given mesh renderer and plays the system. |
+| <Link id="m-setmesh" /><code>{"void SetMesh(MeshRenderer targetMeshRenderer)"}</code> | <span className="api-desc">Sets the particle shape to the given mesh renderer and plays the system.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: finds the particle system in children. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: finds the particle system in children.</span> |
 
 </details>
 
@@ -53,4 +53,8 @@ A timed pooled effect whose particle system emits from a target mesh renderer's 
 
 Members of other types that take, return or hold a `PooledParticleSystemMeshEmision`:
 
+<div className="api-used-in">
+
 [`ForgedModel<TB, TA>.MeshEffect`](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta#m-mesheffect), [`WoodcutTreeModel.MeshEffect`](/mod/game-api/types/alta-crafting/woodcuttreemodel#m-mesheffect), [`DurabilityStateChangeEffect.particleSystem`](/mod/game-api/types/global-c-d/durabilitystatechangeeffect#m-particlesystem).
+
+</div>

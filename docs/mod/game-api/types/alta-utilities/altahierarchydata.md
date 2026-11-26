@@ -22,19 +22,19 @@ Editor settings for Alta's custom hierarchy window: icons, a recompile beep and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaHierarchyData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AltaHierarchyData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbeepingwhenrecompiling" /><code>{"private bool isBeepingWhenRecompiling"}</code> | Backing field for `IsBeepingWhenRecompiling`. |
-| <Link id="m-isrenderinghierarchyicons" /><code>{"private bool isRenderingHierarchyIcons"}</code> | Backing field for `IsRenderingHierarchyIcons`. |
-| <Link id="m-projectpockets" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> projectPockets"}</code> | Backing field for `ProjectPockets`. |
-| <Link id="m-temporaryhierarchypath" /><code>{"private const string temporaryHierarchyPath"}</code> | Path for temporary hierarchy editor files, `/Temporary/Hierarchy/Editor/`. |
+| <Link id="m-isbeepingwhenrecompiling" /><code>{"private bool isBeepingWhenRecompiling"}</code> | <span className="api-desc">Backing field for `IsBeepingWhenRecompiling`.</span> |
+| <Link id="m-isrenderinghierarchyicons" /><code>{"private bool isRenderingHierarchyIcons"}</code> | <span className="api-desc">Backing field for `IsRenderingHierarchyIcons`.</span> |
+| <Link id="m-projectpockets" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> projectPockets"}</code> | <span className="api-desc">Backing field for `ProjectPockets`.</span> |
+| <Link id="m-temporaryhierarchypath" /><code>{"private const string temporaryHierarchyPath"}</code> | <span className="api-desc">Path for temporary hierarchy editor files, `/Temporary/Hierarchy/Editor/`.</span> |
 
 </details>
 
@@ -42,18 +42,18 @@ Editor settings for Alta's custom hierarchy window: icons, a recompile beep and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbeepingwhenrecompiling-2" /><code>{"bool IsBeepingWhenRecompiling { get; }"}</code> | Editor option: beep when scripts recompile. |
-| <Link id="m-isrenderinghierarchyicons-2" /><code>{"bool IsRenderingHierarchyIcons { get; }"}</code> | Editor option: draw icons in the hierarchy window. |
-| <Link id="m-projectpockets-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> ProjectPockets { get; }"}</code> | Saved named lists of project objects. |
+| <Link id="m-isbeepingwhenrecompiling-2" /><code>{"bool IsBeepingWhenRecompiling { get; }"}</code> | <span className="api-desc">Editor option: beep when scripts recompile.</span> |
+| <Link id="m-isrenderinghierarchyicons-2" /><code>{"bool IsRenderingHierarchyIcons { get; }"}</code> | <span className="api-desc">Editor option: draw icons in the hierarchy window.</span> |
+| <Link id="m-projectpockets-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata-pocket">{"AltaHierarchyData.Pocket"}</Link>{"> ProjectPockets { get; }"}</code> | <span className="api-desc">Saved named lists of project objects.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validate" /><code>{"event Action Validate"}</code> | Event for when the data is validated. Nothing raises it in this build. |
+| <Link id="m-validate" /><code>{"event Action Validate"}</code> | <span className="api-desc">Event for when the data is validated. Nothing raises it in this build.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata">{"AltaHierarchyData"}</Link>{" GetData(bool isCreatingIfMissing = true)"}</code> | Returns the editor data asset. Always null in this build. |
+| <Link id="m-getdata" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/altahierarchydata">{"AltaHierarchyData"}</Link>{" GetData(bool isCreatingIfMissing = true)"}</code> | <span className="api-desc">Returns the editor data asset. Always null in this build.</span> |

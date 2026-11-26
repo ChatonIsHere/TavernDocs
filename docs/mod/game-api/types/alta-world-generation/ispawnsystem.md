@@ -22,12 +22,16 @@ Something populations spawn through, implemented by `PopulationSpawnArea`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The spawner's network entity. |
-| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> | Spawn information for a population, by population hash. |
-| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> | The spawner's transform. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The spawner's network entity.</span> |
+| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> | <span className="api-desc">Spawn information for a population, by population hash.</span> |
+| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> | <span className="api-desc">The spawner's transform.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISpawnSystem`:
 
+<div className="api-used-in">
+
 [`PopulationFolderBase.Initialize`](/mod/game-api/types/alta-world-generation/populationfolderbase#m-initialize), [`PopulationSample.Initialize`](/mod/game-api/types/alta-world-generation/populationsample#m-initialize), [`PopulationSample.PopulationSample`](/mod/game-api/types/alta-world-generation/populationsample#m-ctor-2), [`PopulationSample.spawner`](/mod/game-api/types/alta-world-generation/populationsample#m-spawner).
+
+</div>

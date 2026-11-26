@@ -29,4 +29,8 @@ Which value of a hit drives the stat change: health damage, cripple damage or ef
 
 Members of other types that take, return or hold a `HitValue`:
 
+<div className="api-used-in">
+
 [`ImpactModifierStatAffect.isBasedOn`](/mod/game-api/types/alta-items/impactmodifierstataffect#m-isbasedon).
+
+</div>

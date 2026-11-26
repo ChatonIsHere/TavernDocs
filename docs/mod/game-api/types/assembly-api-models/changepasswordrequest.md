@@ -20,18 +20,22 @@ Body of an Alta web API request to change the account password. Sends hashes, no
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> | Creates a `ChangePasswordRequest` with default values. |
-| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> | Creates a `ChangePasswordRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> | <span className="api-desc">Creates a `ChangePasswordRequest` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> | <span className="api-desc">Creates a `ChangePasswordRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> | Hash of the new password. |
-| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> | Hash of the current password. |
+| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> | <span className="api-desc">Hash of the new password.</span> |
+| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> | <span className="api-desc">Hash of the current password.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChangePasswordRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ChangePasswordAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-changepasswordasync).
+
+</div>

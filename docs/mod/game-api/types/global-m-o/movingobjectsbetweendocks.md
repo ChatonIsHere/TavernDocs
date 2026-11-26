@@ -21,19 +21,19 @@ Pooled ghost visual that shows an item flying into a dock, used by `Gatherer` an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MovingObjectsBetweenDocks()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MovingObjectsBetweenDocks()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivedirections" /><code>{"void ReceiveDirections("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Starts moving the ghost toward a dock for an item. |
+| <Link id="m-receivedirections" /><code>{"void ReceiveDirections("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | <span className="api-desc">Starts moving the ghost toward a dock for an item.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-moving" /><code>{"private IEnumerator Moving("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item) (iterator)"}</code> | Runs the dock move animation, then releases the ghosts and itself. |
+| <Link id="m-moving" /><code>{"private IEnumerator Moving("}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, Transform target, "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item) (iterator)"}</code> | <span className="api-desc">Runs the dock move animation, then releases the ghosts and itself.</span> |
 
 </details>

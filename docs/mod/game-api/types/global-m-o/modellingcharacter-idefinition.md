@@ -22,11 +22,15 @@ Private shared shape of `ModellingCharacter`'s cosmetic entries: a cosmetic and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] Arguments { get; set; }"}</code> | The colour pairs for the cosmetic. |
-| <Link id="m-asset" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Asset { get; set; }"}</code> | The cosmetic definition. |
+| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] Arguments { get; set; }"}</code> | <span className="api-desc">The colour pairs for the cosmetic.</span> |
+| <Link id="m-asset" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Asset { get; set; }"}</code> | <span className="api-desc">The cosmetic definition.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IDefinition`:
 
+<div className="api-used-in">
+
 [`ModellingCharacter.Add`](/mod/game-api/types/global-m-o/modellingcharacter#m-add), [`ModellingCharacter.Fix`](/mod/game-api/types/global-m-o/modellingcharacter#m-fix).
+
+</div>

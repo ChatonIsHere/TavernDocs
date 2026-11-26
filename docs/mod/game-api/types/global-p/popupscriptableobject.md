@@ -22,10 +22,10 @@ Base for assets such as `TreeSize`, `DurabilitySettings` and `LootValue` that na
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopupScriptableObject()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PopupScriptableObject()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subfolder" /><code>{"virtual string SubFolder { get; }"}</code> | Sub folder for this asset type, for example "Items/". Empty by default. |
+| <Link id="m-subfolder" /><code>{"virtual string SubFolder { get; }"}</code> | <span className="api-desc">Sub folder for this asset type, for example "Items/". Empty by default.</span> |

@@ -21,17 +21,17 @@ A menu button whose label is drawn by a `TextRenderer`, kept in step with the bu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TextButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TextButton()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> | The GameObject that `SetButtonLayer` changes. |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | The text that shows the label. |
+| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> | <span className="api-desc">The GameObject that `SetButtonLayer` changes.</span> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | <span className="api-desc">The text that shows the label.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ A menu button whose label is drawn by a `TextRenderer`, kept in step with the bu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> | Moves the button object to another physics or render layer. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Copies the label onto the text and keeps it updated when the label changes. |
+| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> | <span className="api-desc">Moves the button object to another physics or render layer.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Copies the label onto the text and keeps it updated when the label changes.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> | Copies the new label to the text renderer. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: syncs the label and the text renderer, taking the text when the label is empty. |
+| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> | <span className="api-desc">Copies the new label to the text renderer.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: syncs the label and the text renderer, taking the text when the label is empty.</span> |
 
 </details>
 
@@ -56,4 +56,8 @@ A menu button whose label is drawn by a `TextRenderer`, kept in step with the bu
 
 Members of other types that take, return or hold a `TextButton`:
 
+<div className="api-used-in">
+
 [`AssistedSpawnCommandAction.DynamicButtonSetup`](/mod/game-api/types/alta-menus/assistedspawncommandaction#m-dynamicbuttonsetup), [`AssistedSpawnCommandAction.submitButton`](/mod/game-api/types/alta-menus/assistedspawncommandaction#m-submitbutton), [`ServerMultiCommandAction.buttonPrefab`](/mod/game-api/types/alta-menus/servermulticommandaction#m-buttonprefab), [`ServerMultiCommandAction.DynamicButtonSetup`](/mod/game-api/types/alta-menus/servermulticommandaction#m-dynamicbuttonsetup), [`DevToolsBoard.nextPageButton`](/mod/game-api/types/alta-player/devtoolsboard#m-nextpagebutton), [`DevToolsBoard.previousPageButton`](/mod/game-api/types/alta-player/devtoolsboard#m-previouspagebutton), [`DevToolsBoard.SafeSubscribe`](/mod/game-api/types/alta-player/devtoolsboard#m-safesubscribe), [`DevToolsBoard.showConsoleButton`](/mod/game-api/types/alta-player/devtoolsboard#m-showconsolebutton).
+
+</div>

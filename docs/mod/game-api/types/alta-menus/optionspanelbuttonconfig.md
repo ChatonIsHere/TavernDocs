@@ -20,17 +20,17 @@ Pairs a UI button type with the button prefab an `OptionsPanel` uses for it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> | Creates an `OptionsPanelButtonConfig` with default values. |
+| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> | <span className="api-desc">Creates an `OptionsPanelButtonConfig` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" buttonPrefab"}</code> | Backing field for `ButtonPrefab`. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type"}</code> | Backing field for `Type`. |
+| <Link id="m-buttonprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" buttonPrefab"}</code> | <span className="api-desc">Backing field for `ButtonPrefab`.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type"}</code> | <span className="api-desc">Backing field for `Type`.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ Pairs a UI button type with the button prefab an `OptionsPanel` uses for it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonprefab-2" /><code><Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" ButtonPrefab { get; }"}</code> | The button prefab. |
-| <Link id="m-type-2" /><code><Link to="/mod/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> | The button type it's for. |
+| <Link id="m-buttonprefab-2" /><code><Link to="/mod/game-api/types/alta-menus/button">{"Button"}</Link>{" ButtonPrefab { get; }"}</code> | <span className="api-desc">The button prefab.</span> |
+| <Link id="m-type-2" /><code><Link to="/mod/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> | <span className="api-desc">The button type it's for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OptionsPanelButtonConfig`:
 
+<div className="api-used-in">
+
 [`OptionsPanel.buttonConfig`](/mod/game-api/types/alta-menus/optionspanel#m-buttonconfig).
+
+</div>

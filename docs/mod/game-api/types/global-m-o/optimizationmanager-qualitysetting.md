@@ -19,14 +19,14 @@ One quality level for `OptimizationManager`: LOD bias and shadow settings applie
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> | Value for `QualitySettings.lodBias`. |
-| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> | Value for `QualitySettings.shadowDistance`. |
-| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> | Value for `QualitySettings.shadowResolution`. |
+| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> | <span className="api-desc">Value for `QualitySettings.lodBias`.</span> |
+| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> | <span className="api-desc">Value for `QualitySettings.shadowDistance`.</span> |
+| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> | <span className="api-desc">Value for `QualitySettings.shadowResolution`.</span> |
 
 </details>
 
@@ -34,10 +34,14 @@ One quality level for `OptimizationManager`: LOD bias and shadow settings applie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> | Writes the LOD bias, shadow resolution and shadow distance to Unity's `QualitySettings`. |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> | <span className="api-desc">Writes the LOD bias, shadow resolution and shadow distance to Unity's `QualitySettings`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `QualitySetting`:
 
+<div className="api-used-in">
+
 [`OptimizationManager.qualityLevels`](/mod/game-api/types/global-m-o/optimizationmanager#m-qualitylevels).
+
+</div>

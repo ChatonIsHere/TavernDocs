@@ -22,4 +22,4 @@ Editor menu entry that creates a new `ArmorDefinition` asset under the Township 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ArmorDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ArmorDefinition.Create` with default values.</span> |

@@ -21,17 +21,17 @@ Turns a scene's terrain and a list of objects on or off together.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameSceneVisuals()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GameSceneVisuals()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> | Objects switched with the visuals. |
-| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | Terrain switched with the visuals. |
+| <Link id="m-gameobjects" /><code>{"private GameObject[] gameObjects"}</code> | <span className="api-desc">Objects switched with the visuals.</span> |
+| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | <span className="api-desc">Terrain switched with the visuals.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Turns a scene's terrain and a list of objects on or off together.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setvisualsactive" /><code>{"void SetVisualsActive(bool isActive)"}</code> | Enables or disables the terrain and sets each object active or inactive. |
+| <Link id="m-setvisualsactive" /><code>{"void SetVisualsActive(bool isActive)"}</code> | <span className="api-desc">Enables or disables the terrain and sets each object active or inactive.</span> |

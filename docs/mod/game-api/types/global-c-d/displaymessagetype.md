@@ -29,4 +29,8 @@ How a display message is queued: added to the queue, shown next, shown next repl
 
 Members of other types that take, return or hold a `DisplayMessageType`:
 
+<div className="api-used-in">
+
 [`PlayerDebugMessager.displayType`](/mod/game-api/types/global-p/playerdebugmessager#m-displaytype), [`PlayerMessageDisplay.Display`](/mod/game-api/types/global-p/playermessagedisplay#m-display).
+
+</div>

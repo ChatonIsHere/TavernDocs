@@ -21,17 +21,17 @@ A list of components kept only on certain platforms. Baking destroys them on any
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> | Creates a `PlatformComponents.PlatformObjectSetup` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> | <span className="api-desc">Creates a `PlatformComponents.PlatformObjectSetup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> | The platforms that keep the components. Defaults to Windows. |
-| <Link id="m-targets" /><code>{"private Component[] targets"}</code> | The components to keep or destroy. |
+| <Link id="m-targetplatforms" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatforms"}</code> | <span className="api-desc">The platforms that keep the components. Defaults to Windows.</span> |
+| <Link id="m-targets" /><code>{"private Component[] targets"}</code> | <span className="api-desc">The components to keep or destroy.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ A list of components kept only on certain platforms. Baking destroys them on any
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> | Destroys every target component unless the current runtime platform is one of `targetPlatforms`. |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | <span className="api-desc">Destroys every target component unless the current runtime platform is one of `targetPlatforms`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlatformObjectSetup`:
 
+<div className="api-used-in">
+
 [`PlatformComponents.platformObjects`](/mod/game-api/types/global-p/platformcomponents#m-platformobjects).
+
+</div>

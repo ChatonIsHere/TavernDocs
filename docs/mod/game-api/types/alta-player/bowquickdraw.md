@@ -23,10 +23,10 @@ Bow draw skill asset for quickdraw. Same as `BowDrawSkill` but requests no tool 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BowQuickdraw()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BowQuickdraw()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Does nothing, so this skill shows no tool effect. |
+| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Does nothing, so this skill shows no tool effect.</span> |

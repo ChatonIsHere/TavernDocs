@@ -22,17 +22,17 @@ Old save format for `DrawBridgeRangeLogic` with full up and down angle vectors, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData1()"}</code> | Creates a `DrawBridgeRangeLogicSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData1()"}</code> | <span className="api-desc">Creates a `DrawBridgeRangeLogicSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-downanglessaved" /><code>{"Vector3 downAnglesSaved"}</code> | Down angles as Euler angles; only Z survives migration. |
-| <Link id="m-upanglessaved" /><code>{"Vector3 upAnglesSaved"}</code> | Up angles as Euler angles; only Z survives migration. |
+| <Link id="m-downanglessaved" /><code>{"Vector3 downAnglesSaved"}</code> | <span className="api-desc">Down angles as Euler angles; only Z survives migration.</span> |
+| <Link id="m-upanglessaved" /><code>{"Vector3 upAnglesSaved"}</code> | <span className="api-desc">Up angles as Euler angles; only Z survives migration.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the new save data, keeping only the Z of each angle (down becomes `angle0`, up becomes `angle1`). |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the new save data, keeping only the Z of each angle (down becomes `angle0`, up becomes `angle1`).</span> |

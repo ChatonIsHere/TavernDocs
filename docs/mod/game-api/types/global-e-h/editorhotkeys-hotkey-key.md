@@ -73,4 +73,8 @@ Keys an editor hotkey can use: letters, arrows, F1 to F12, Home, End, Page Up an
 
 Members of other types that take, return or hold a `Key`:
 
+<div className="api-used-in">
+
 [`EditorHotKeys.Hotkey.key`](/mod/game-api/types/global-e-h/editorhotkeys-hotkey#m-key).
+
+</div>

@@ -22,4 +22,4 @@ Editor menu entry for creating the `ProfilingPositionCycler` global settings ass
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ProfilingPositionCycler.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `ProfilingPositionCycler.Create` with default values.</span> |

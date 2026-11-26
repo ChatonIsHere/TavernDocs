@@ -21,28 +21,28 @@ Editor tool meant to rebind child skinned meshes to a character's bones. `Rebind
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RebindSkinnedMeshRenderers()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RebindSkinnedMeshRenderers()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnrebind" /><code>{"private bool btnRebind"}</code> | Inspector button that calls `Rebind`. |
-| <Link id="m-pointer" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> | Character dummy pointer to bind to. |
-| <Link id="m-root" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> | Root bone to bind from. |
+| <Link id="m-btnrebind" /><code>{"private bool btnRebind"}</code> | <span className="api-desc">Inspector button that calls `Rebind`.</span> |
+| <Link id="m-pointer" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> | <span className="api-desc">Character dummy pointer to bind to.</span> |
+| <Link id="m-root" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> | <span className="api-desc">Root bone to bind from.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rebind" /><code>{"private void Rebind()"}</code> | Empty in this build. |
+| <Link id="m-rebind" /><code>{"private void Rebind()"}</code> | <span className="api-desc">Empty in this build.</span> |
 
 </details>

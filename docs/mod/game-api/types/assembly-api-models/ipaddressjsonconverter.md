@@ -21,12 +21,12 @@ JSON converter that writes an `IPAddress` as its string and parses it back.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IPAddressJsonConverter()"}</code> | Creates an `IPAddressJsonConverter` with default values. |
+| <Link id="m-ctor" /><code>{"IPAddressJsonConverter()"}</code> | <span className="api-desc">Creates an `IPAddressJsonConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | True for `IPAddress` and subclasses. |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | Parses the string to an `IPAddress`; empty gives null and an unparseable value is returned as the raw string. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | Writes the address as a string. |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | <span className="api-desc">True for `IPAddress` and subclasses.</span> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Parses the string to an `IPAddress`; empty gives null and an unparseable value is returned as the raw string.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes the address as a string.</span> |

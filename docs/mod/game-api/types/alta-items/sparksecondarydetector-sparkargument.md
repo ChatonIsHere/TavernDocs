@@ -21,11 +21,15 @@ Message the wielding client sends when its tool strikes sparks. The server then 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> | Hit effectiveness from 0 to 1, which sets the chance of starting a fire. |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> | World position of the spark; sent relative to the detector, within 10 units. |
+| <Link id="m-effectiveness" /><code>{"float effectiveness"}</code> | <span className="api-desc">Hit effectiveness from 0 to 1, which sets the chance of starting a fire.</span> |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> | <span className="api-desc">World position of the spark; sent relative to the detector, within 10 units.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SparkArgument`:
 
+<div className="api-used-in">
+
 [`SparkSecondaryDetector.syncSpark`](/mod/game-api/types/alta-items/sparksecondarydetector#m-syncspark), [`SparkSecondaryDetector.SyncSpark`](/mod/game-api/types/alta-items/sparksecondarydetector#m-syncspark-2).
+
+</div>

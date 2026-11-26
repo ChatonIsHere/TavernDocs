@@ -21,10 +21,14 @@ A `ComponentGroup` of `ControllerExtension`s. `Controller` instantiates these gr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ControllerExtensionGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ControllerExtensionGroup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ControllerExtensionGroup`:
 
+<div className="api-used-in">
+
 [`Controller.AddExtension`](/mod/game-api/types/global-c-d/controller#m-addextension), [`Controller.CreateExtensionObject`](/mod/game-api/types/global-c-d/controller#m-createextensionobject), [`Controller.extensionsGroup`](/mod/game-api/types/global-c-d/controller#m-extensionsgroup), [`Controller.localExtensionsGroup`](/mod/game-api/types/global-c-d/controller#m-localextensionsgroup).
+
+</div>

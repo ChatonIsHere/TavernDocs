@@ -53,4 +53,8 @@ Names the fixed spawn and teleport points in the world, such as the respawn poin
 
 Members of other types that take, return or hold a `SpawnAreaIdentifier`:
 
+<div className="api-used-in">
+
 [`BuildupTeleportEffect.landingTarget`](/mod/game-api/types/alta-stats-effects/buildupteleporteffect#m-landingtarget), [`TeleportEffect.landingTarget`](/mod/game-api/types/alta-stats-effects/teleporteffect#m-landingtarget), [`SpawnArea.identifier`](/mod/game-api/types/global-s/spawnarea#m-identifier), [`SpawnArea.Identifier`](/mod/game-api/types/global-s/spawnarea#m-identifier-2), [`SpawnArea.InstanceMap`](/mod/game-api/types/global-s/spawnarea#m-instancemap).
+
+</div>

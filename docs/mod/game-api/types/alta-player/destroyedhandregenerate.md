@@ -21,21 +21,21 @@ Marker added to a hand target object so the game can rebuild it if it gets destr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyedHandRegenerate()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DestroyedHandRegenerate()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyed" /><code>{"Action Destroyed"}</code> | Callback run when the object is destroyed outside of quitting or reloading. |
+| <Link id="m-destroyed" /><code>{"Action Destroyed"}</code> | <span className="api-desc">Callback run when the object is destroyed outside of quitting or reloading.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Calls `Destroyed` unless the application is quitting or reloading. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Calls `Destroyed` unless the application is quitting or reloading.</span> |
 
 </details>

@@ -21,25 +21,25 @@ Base for an S3 file or folder: a bucket name and object key, with delete calls t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"S3StorageObject(string bucketName, string fullName)"}</code> | Creates a `S3StorageObject` from `bucketName` and `fullName`. |
+| <Link id="m-ctor" /><code>{"S3StorageObject(string bucketName, string fullName)"}</code> | <span className="api-desc">Creates a `S3StorageObject` from `bucketName` and `fullName`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectcontenttype" /><code>{"protected const string ObjectContentType"}</code> | Constant null content type. |
+| <Link id="m-objectcontenttype" /><code>{"protected const string ObjectContentType"}</code> | <span className="api-desc">Constant null content type.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bucketname" /><code>{"string BucketName { get; }"}</code> | The S3 bucket. |
-| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | The object key, with any trailing slash removed. |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The last part of the key. |
+| <Link id="m-bucketname" /><code>{"string BucketName { get; }"}</code> | <span className="api-desc">The S3 bucket.</span> |
+| <Link id="m-fullname" /><code>{"string FullName { get; }"}</code> | <span className="api-desc">The object key, with any trailing slash removed.</span> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">The last part of the key.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"virtual void Delete()"}</code> | Deletes the object with this key from the bucket. |
-| <Link id="m-deleteasync" /><code>{"virtual Task DeleteAsync()"}</code> | Async version of `Delete`. |
+| <Link id="m-delete" /><code>{"virtual void Delete()"}</code> | <span className="api-desc">Deletes the object with this key from the bucket.</span> |
+| <Link id="m-deleteasync" /><code>{"virtual Task DeleteAsync()"}</code> | <span className="api-desc">Async version of `Delete`.</span> |

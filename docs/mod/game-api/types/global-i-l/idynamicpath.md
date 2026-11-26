@@ -21,4 +21,4 @@ A path piece spawned along an edge by `DynamicPathPart`, such as `BasicDynamicPa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | Sets the path piece up for the given edge. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | <span className="api-desc">Sets the path piece up for the given edge.</span> |

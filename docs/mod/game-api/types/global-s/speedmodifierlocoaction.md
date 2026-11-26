@@ -22,16 +22,16 @@ Locomotion modifier action asset that scales the player's movement speed while a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpeedModifierLocoAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SpeedModifierLocoAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-speedmodifier" /><code>{"private float speedModifier"}</code> | Speed multiplier applied while active. |
+| <Link id="m-speedmodifier" /><code>{"private float speedModifier"}</code> | <span className="api-desc">Speed multiplier applied while active.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Locomotion modifier action asset that scales the player's movement speed while a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Sets the player's `EnvironmentSpeedModifier` to `speedModifier`. |
-| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Resets `EnvironmentSpeedModifier` to 1. |
+| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Sets the player's `EnvironmentSpeedModifier` to `speedModifier`.</span> |
+| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Resets `EnvironmentSpeedModifier` to 1.</span> |

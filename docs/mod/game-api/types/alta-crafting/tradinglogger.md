@@ -19,12 +19,12 @@ Logging for the trade deck. Sales are raised as the `TradeDeckUsed` console even
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger for this class.</span> |
 
 </details>
 
@@ -32,6 +32,6 @@ Logging for the trade deck. Sales are raised as the `TradeDeckUsed` console even
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-log" /><code>{"static void Log(string message)"}</code> | Writes a debug log line. |
-| <Link id="m-log-2" /><code>{"static void Log(string message, params object[] parameters)"}</code> | Writes a debug log line. |
-| <Link id="m-recordsale" /><code>{"static void RecordSale("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item, int outputQuantity, int askPrice, int askAmount, int buyer, int seller)"}</code> | Server: raises `ConsoleEvents.TradeDeckUsed` with the item, unit price, quantity, buyer and seller. Called by `TradeVendor` on a sale. |
+| <Link id="m-log" /><code>{"static void Log(string message)"}</code> | <span className="api-desc">Writes a debug log line.</span> |
+| <Link id="m-log-2" /><code>{"static void Log(string message, params object[] parameters)"}</code> | <span className="api-desc">Writes a debug log line.</span> |
+| <Link id="m-recordsale" /><code>{"static void RecordSale("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item, int outputQuantity, int askPrice, int askAmount, int buyer, int seller)"}</code> | <span className="api-desc">Server: raises `ConsoleEvents.TradeDeckUsed` with the item, unit price, quantity, buyer and seller. Called by `TradeVendor` on a sale.</span> |

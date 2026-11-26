@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Stats`: menu item classes in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Stats()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Stats` with default values. |
+| <Link id="m-ctor" /><code>{"protected Stats()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Stats` with default values.</span> |

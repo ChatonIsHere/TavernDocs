@@ -21,4 +21,4 @@ Inspector marker for a value that spans a quarter of the day cycle.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QuarterCycle()"}</code> | Creates a `QuarterCycle` with default values. |
+| <Link id="m-ctor" /><code>{"QuarterCycle()"}</code> | <span className="api-desc">Creates a `QuarterCycle` with default values.</span> |

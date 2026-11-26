@@ -24,16 +24,16 @@ Global audio settings asset with the curve for blending between audio environmen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AudioEnvironmentBlendSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AudioEnvironmentBlendSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> | Backing field for `BlendCurve`. |
+| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> | <span className="api-desc">Backing field for `BlendCurve`.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Global audio settings asset with the curve for blending between audio environmen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> | Blend amount over distance, where 0 is an environment's centre and 1 the edge of its bounds. |
+| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> | <span className="api-desc">Blend amount over distance, where 0 is an environment's centre and 1 the edge of its bounds.</span> |

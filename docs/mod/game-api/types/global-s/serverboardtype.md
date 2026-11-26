@@ -29,4 +29,8 @@ Which list a server board in the menu shows: public servers, my servers, open se
 
 Members of other types that take, return or hold a `ServerBoardType`:
 
+<div className="api-used-in">
+
 [`ServerBoard.type`](/mod/game-api/types/global-s/serverboard#m-type), [`ServerBoard.Type`](/mod/game-api/types/global-s/serverboard#m-type-2), [`ServerSelectionMenu.boardsByType`](/mod/game-api/types/global-s/serverselectionmenu#m-boardsbytype), [`ServerSelectionMenu.SelectServer`](/mod/game-api/types/global-s/serverselectionmenu#m-selectserver), [`ServerSelectionMenu.startingBoard`](/mod/game-api/types/global-s/serverselectionmenu#m-startingboard), [`ServerSelectionMenu.SwitchToBoard`](/mod/game-api/types/global-s/serverselectionmenu#m-switchtoboard-2).
+
+</div>

@@ -27,4 +27,8 @@ Whether a platform stat holds an int or a float.
 
 Members of other types that take, return or hold a `StatType`:
 
+<div className="api-used-in">
+
 [`AchievementStatDefinition.type`](/mod/game-api/types/alta-player/achievementstatdefinition#m-type), [`AchievementStatDefinition.Type`](/mod/game-api/types/alta-player/achievementstatdefinition#m-type-2).
+
+</div>

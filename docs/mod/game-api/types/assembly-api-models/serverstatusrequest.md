@@ -20,10 +20,10 @@ Request body for setting a game server's status.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerStatusRequest()"}</code> | Creates a `ServerStatusRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ServerStatusRequest()"}</code> | <span className="api-desc">Creates a `ServerStatusRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | The new status. |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | <span className="api-desc">The new status.</span> |

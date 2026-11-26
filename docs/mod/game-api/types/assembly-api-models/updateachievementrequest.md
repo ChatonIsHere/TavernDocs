@@ -20,17 +20,21 @@ Body for updating one achievement for a user on the Alta web API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> | Creates an `UpdateAchievementRequest` with default values. |
+| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> | <span className="api-desc">Creates an `UpdateAchievementRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> | Hash of the achievement. |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> | Whether the achievement is completed. |
+| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> | <span className="api-desc">Hash of the achievement.</span> |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> | <span className="api-desc">Whether the achievement is completed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UpdateAchievementRequest`:
 
+<div className="api-used-in">
+
 [`AchievementApiClient.updateAchievementRequest`](/mod/game-api/types/assembly-api-client/achievementapiclient#m-updateachievementrequest), [`LowLevelApiClient.UpdateAchievementForUserAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-updateachievementforuserasync).
+
+</div>

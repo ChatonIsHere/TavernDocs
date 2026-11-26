@@ -22,4 +22,4 @@ Editor menu entry for creating the cave `BiomeSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BiomeSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `BiomeSettings.Create` with default values.</span> |

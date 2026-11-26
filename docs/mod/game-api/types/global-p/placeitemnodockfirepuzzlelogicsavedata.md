@@ -24,18 +24,22 @@ Saved config for `PlaceItemNoDockFirePuzzleLogic`. The fire puzzle only checks f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> | <span className="api-desc">Creates a `PlaceItemNoDockFirePuzzleLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> | Output value meant for when nothing is placed. |
-| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> | Output value meant for a wrong item. Defaults to -1. |
-| <Link id="m-options" /><code><Link to="/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option">{"PlaceItemNoDockFirePuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> | The accepted options and their outputs. |
+| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> | <span className="api-desc">Output value meant for when nothing is placed.</span> |
+| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> | <span className="api-desc">Output value meant for a wrong item. Defaults to -1.</span> |
+| <Link id="m-options" /><code><Link to="/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option">{"PlaceItemNoDockFirePuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> | <span className="api-desc">The accepted options and their outputs.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlaceItemNoDockFirePuzzleLogicSaveData`:
 
+<div className="api-used-in">
+
 [`PlaceItemNoDockFirePuzzleLogic.config`](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogic#m-config).
+
+</div>

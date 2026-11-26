@@ -21,10 +21,14 @@ Serializable `AltaEvent` with an `IPlayer` argument. Runs inspector-wired listen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEvent()"}</code> | Creates a `PlayerEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerEvent()"}</code> | <span className="api-desc">Creates a `PlayerEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerEvent`:
 
+<div className="api-used-in">
+
 [`ImpactHitThresholdTrigger.onEffectivelyHitByPlayer`](/mod/game-api/types/alta-items/impacthitthresholdtrigger#m-oneffectivelyhitbyplayer), [`PullAway.onPulled`](/mod/game-api/types/alta-items/pullaway#m-onpulled), [`GetInteractionPlayer.interactionEnded`](/mod/game-api/types/global-e-h/getinteractionplayer#m-interactionended), [`GetInteractionPlayer.interactionStarted`](/mod/game-api/types/global-e-h/getinteractionplayer#m-interactionstarted), [`HandHoverPoint.activated`](/mod/game-api/types/global-e-h/handhoverpoint#m-activated), [`HandHoverPoint.deactivated`](/mod/game-api/types/global-e-h/handhoverpoint#m-deactivated), [`NearbyPlayerTracker.enteredRadius`](/mod/game-api/types/global-m-o/nearbyplayertracker#m-enteredradius), [`NearbyPlayerTracker.leftRadius`](/mod/game-api/types/global-m-o/nearbyplayertracker#m-leftradius), [`NearbyPlayerTracker.stoppedTracking`](/mod/game-api/types/global-m-o/nearbyplayertracker#m-stoppedtracking), [`ServerAchievementEvent.onComplete`](/mod/game-api/types/global-s/serverachievementevent#m-oncomplete).
+
+</div>

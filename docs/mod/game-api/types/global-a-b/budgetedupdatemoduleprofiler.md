@@ -21,16 +21,16 @@ Static store of timing data per `BudgetedUpdateModule`, filled while allowance d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> | Creates a `BudgetedUpdateModuleProfiler` with default values. |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> | <span className="api-desc">Creates a `BudgetedUpdateModuleProfiler` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elapsedtime" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> elapsedTime"}</code> | Backing field for `ElapsedTime`. |
+| <Link id="m-elapsedtime" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> elapsedTime"}</code> | <span className="api-desc">Backing field for `ElapsedTime`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ Static store of timing data per `BudgetedUpdateModule`, filled while allowance d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elapsedtime-2" /><code>{"static Dictionary<"}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> ElapsedTime { get; }"}</code> | Recorded data per module. |
+| <Link id="m-elapsedtime-2" /><code>{"static Dictionary<"}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{", "}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> ElapsedTime { get; }"}</code> | <span className="api-desc">Recorded data per module.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recordusagetime" /><code>{"static void RecordUsageTime("}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{" module, double elapsedMilliseconds)"}</code> | Adds one timing sample for a module, creating its entry if needed, and stores its registered method count. |
+| <Link id="m-recordusagetime" /><code>{"static void RecordUsageTime("}<Link to="/mod/game-api/types/global-a-b/budgetedupdatemodule">{"BudgetedUpdateModule"}</Link>{" module, double elapsedMilliseconds)"}</code> | <span className="api-desc">Adds one timing sample for a module, creating its entry if needed, and stores its registered method count.</span> |

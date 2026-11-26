@@ -21,11 +21,15 @@ Something that must be finished before its `GenericCraftingComponent` can be add
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forceactive" /><code>{"void ForceActive()"}</code> | Forces it into the finished state. Used when the item is set up as refuse. |
-| <Link id="m-isactive" /><code>{"bool IsActive()"}</code> | Whether it is finished, so the item can be used in a crafting project. |
+| <Link id="m-forceactive" /><code>{"void ForceActive()"}</code> | <span className="api-desc">Forces it into the finished state. Used when the item is set up as refuse.</span> |
+| <Link id="m-isactive" /><code>{"bool IsActive()"}</code> | <span className="api-desc">Whether it is finished, so the item can be used in a crafting project.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAffectCrafting`:
 
+<div className="api-used-in">
+
 [`GenericCraftingComponent.affectedBy`](/mod/game-api/types/alta-crafting/genericcraftingcomponent#m-affectedby).
+
+</div>

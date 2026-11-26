@@ -19,14 +19,14 @@ Client: joins a game server. Keeps one client socket and one join attempt at a t
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-joinserverpipeline" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/joinserverpipeline">{"JoinServerPipeline"}</Link>{" joinServerPipeline"}</code> | The join attempt in progress. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
-| <Link id="m-socket" /><code>{"private static "}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket"}</code> | The client socket. |
+| <Link id="m-joinserverpipeline" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/joinserverpipeline">{"JoinServerPipeline"}</Link>{" joinServerPipeline"}</code> | <span className="api-desc">The join attempt in progress.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Logger for this class.</span> |
+| <Link id="m-socket" /><code>{"private static "}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket"}</code> | <span className="api-desc">The client socket.</span> |
 
 </details>
 
@@ -34,17 +34,17 @@ Client: joins a game server. Keeps one client socket and one join attempt at a t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connecttoserver" /><code>{"static async Task<"}<Link to="/mod/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{"> ConnectToServer("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Creates the client socket if needed, cancels any other join in progress, and runs a `JoinServerPipeline` to the server. |
-| <Link id="m-stopcurrentconnectionattempt" /><code>{"static void StopCurrentConnectionAttempt()"}</code> | Closes the client socket and cancels the join attempt. |
+| <Link id="m-connecttoserver" /><code>{"static async Task<"}<Link to="/mod/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{"> ConnectToServer("}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | <span className="api-desc">Creates the client socket if needed, cancels any other join in progress, and runs a `JoinServerPipeline` to the server.</span> |
+| <Link id="m-stopcurrentconnectionattempt" /><code>{"static void StopCurrentConnectionAttempt()"}</code> | <span className="api-desc">Closes the client socket and cancels the join attempt.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleanstaticsocket" /><code>{"private static void CleanStaticSocket("}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" obj)"}</code> | Clears the socket and join attempt when the socket is destroyed. |
-| <Link id="m-handleconnectionresulttoserver" /><code>{"private static void HandleConnectionResultToServer("}<Link to="/mod/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" result)"}</code> | On success, raises the client started event and sets up the connection's message handlers. |
-| <Link id="m-serializepause" /><code>{"private static void SerializePause("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes whether the application is paused; not hooked up here. |
-| <Link id="m-setupconnectiontoserver" /><code>{"private static void SetupConnectionToServer("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Sets the handlers for server messages such as spawn, destroy, move, entity sync and ping. |
+| <Link id="m-cleanstaticsocket" /><code>{"private static void CleanStaticSocket("}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" obj)"}</code> | <span className="api-desc">Clears the socket and join attempt when the socket is destroyed.</span> |
+| <Link id="m-handleconnectionresulttoserver" /><code>{"private static void HandleConnectionResultToServer("}<Link to="/mod/game-api/types/alta-networking/joinresult">{"JoinResult"}</Link>{" result)"}</code> | <span className="api-desc">On success, raises the client started event and sets up the connection's message handlers.</span> |
+| <Link id="m-serializepause" /><code>{"private static void SerializePause("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes whether the application is paused; not hooked up here.</span> |
+| <Link id="m-setupconnectiontoserver" /><code>{"private static void SetupConnectionToServer("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | <span className="api-desc">Sets the handlers for server messages such as spawn, destroy, move, entity sync and ping.</span> |
 
 </details>

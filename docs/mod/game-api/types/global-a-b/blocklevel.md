@@ -30,4 +30,8 @@ Flags for how much a pickup blocks a hit from an impact tool: can't block, block
 
 Members of other types that take, return or hold a `BlockLevel`:
 
+<div className="api-used-in">
+
 [`ImpactTool.GenerateHit`](/mod/game-api/types/alta-items/impacttool#m-generatehit), [`ImpactTool.requiredBlockLevel`](/mod/game-api/types/alta-items/impacttool#m-requiredblocklevel), [`Pickup.blockLevel`](/mod/game-api/types/global-p/pickup#m-blocklevel), [`Pickup.BlockLevel`](/mod/game-api/types/global-p/pickup#m-blocklevel-2).
+
+</div>

@@ -23,21 +23,21 @@ Server: fires a list of events after set delays using the `Timeline`, and saves 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedTimedEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SerializedTimedEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowrestartafterstop" /><code>{"private bool allowRestartAfterStop"}</code> | Whether `StartTimers` works again after a stop. Default true. |
-| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> | Starts the timers when the server initializes the entity. Default true. |
-| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> | Whether the timers have been started. Saved. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-setup" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serializedtimedevent-timedeventsetup">{"SerializedTimedEvent.TimedEventSetup"}</Link>{"[] setup"}</code> | The delays and the event each one fires. |
-| <Link id="m-timers" /><code>{"private List<"}<Link to="/mod/game-api/types/global-s/serializedtimedevent-timerdata">{"SerializedTimedEvent.TimerData"}</Link>{"> timers"}</code> | Pending `Timeline` entries and their setup index. |
+| <Link id="m-allowrestartafterstop" /><code>{"private bool allowRestartAfterStop"}</code> | <span className="api-desc">Whether `StartTimers` works again after a stop. Default true.</span> |
+| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> | <span className="api-desc">Starts the timers when the server initializes the entity. Default true.</span> |
+| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> | <span className="api-desc">Whether the timers have been started. Saved.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serializedtimedevent-timedeventsetup">{"SerializedTimedEvent.TimedEventSetup"}</Link>{"[] setup"}</code> | <span className="api-desc">The delays and the event each one fires.</span> |
+| <Link id="m-timers" /><code>{"private List<"}<Link to="/mod/game-api/types/global-s/serializedtimedevent-timerdata">{"SerializedTimedEvent.TimerData"}</Link>{"> timers"}</code> | <span className="api-desc">Pending `Timeline` entries and their setup index.</span> |
 
 </details>
 
@@ -45,6 +45,6 @@ Server: fires a list of events after set delays using the `Timeline`, and saves 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts the timers if `autoStart` is on and they haven't started. |
-| <Link id="m-starttimers" /><code>{"void StartTimers()"}</code> | Schedules every set-up event on the `Timeline`. Does nothing if already started. |
-| <Link id="m-stoptimers" /><code>{"void StopTimers()"}</code> | Cancels all pending timers. If `allowRestartAfterStop` is on, they can be started again. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: starts the timers if `autoStart` is on and they haven't started.</span> |
+| <Link id="m-starttimers" /><code>{"void StartTimers()"}</code> | <span className="api-desc">Schedules every set-up event on the `Timeline`. Does nothing if already started.</span> |
+| <Link id="m-stoptimers" /><code>{"void StopTimers()"}</code> | <span className="api-desc">Cancels all pending timers. If `allowRestartAfterStop` is on, they can be started again.</span> |

@@ -22,20 +22,20 @@ Forged metal part with no colour model points: a heat model that is hammered int
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForgedModel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForgedModel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reevaluate" /><code>{"void Reevaluate()"}</code> | Editor context menu: re-runs the colour check on the model. |
+| <Link id="m-reevaluate" /><code>{"void Reevaluate()"}</code> | <span className="api-desc">Editor context menu: re-runs the colour check on the model.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/mod/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | Lets two forged parts dock together only if both are done or both are not. Assumes the other is also a `ForgedModel`. |
+| <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/mod/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | <span className="api-desc">Lets two forged parts dock together only if both are done or both are not. Assumes the other is also a `ForgedModel`.</span> |
 
 </details>
 
@@ -43,4 +43,8 @@ Forged metal part with no colour model points: a heat model that is hammered int
 
 Members of other types that take, return or hold a `ForgedModel`:
 
+<div className="api-used-in">
+
 [`SteelSong.IdentifiedModel.IdentifiedModel`](/mod/game-api/types/global-s/steelsong-identifiedmodel#m-ctor), [`SteelSong.IdentifiedModel.Model`](/mod/game-api/types/global-s/steelsong-identifiedmodel#m-model).
+
+</div>

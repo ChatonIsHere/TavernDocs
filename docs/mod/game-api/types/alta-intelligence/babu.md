@@ -23,21 +23,21 @@ The babu creature's AI (`Agent<Babu>`). Has a view cone and an interactor. Its p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Babu()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Babu()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> | Transform whose position is the babu's `Position`. |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | Backing field for `Interactor`, the interactor the babu eats food with. |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> | Animator bool set on the local animator when the babu dies. Default "Killed". |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | The starting action set. Only the first babu's set is used, stored in the static `PassiveActions`. |
-| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> | The stunned action. Only the first babu's is used, stored in the static `Stunned`. |
-| <Link id="m-viewcone" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | Backing field for `ViewCone`. |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | <span className="api-desc">Transform whose position is the babu's `Position`.</span> |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | <span className="api-desc">Backing field for `Interactor`, the interactor the babu eats food with.</span> |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> | <span className="api-desc">Animator bool set on the local animator when the babu dies. Default "Killed".</span> |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | <span className="api-desc">The starting action set. Only the first babu's set is used, stored in the static `PassiveActions`.</span> |
+| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> | <span className="api-desc">The stunned action. Only the first babu's is used, stored in the static `Stunned`.</span> |
+| <Link id="m-viewcone" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | <span className="api-desc">Backing field for `ViewCone`.</span> |
 
 </details>
 
@@ -45,17 +45,17 @@ The babu creature's AI (`Agent<Babu>`). Has a view cone and an interactor. Its p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactor-2" /><code><Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> | The babu's interactor, from `IInteractAgent`, which actions such as `ActiveEat` use. |
-| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> | The body's position. |
-| <Link id="m-stunned" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/babu">{"Babu"}</Link>{"> Stunned { get; private set; }"}</code> | The shared stunned action. |
-| <Link id="m-viewcone-2" /><code><Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" { get; }"}</code> | What it can see, read by its view cone sense. |
-| <Link id="m-passiveactions-2" /><code>{"protected static "}<Link to="/mod/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/babu">{"Babu"}</Link>{"> PassiveActions { get; private set; }"}</code> | The shared passive action set. |
+| <Link id="m-interactor-2" /><code><Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> | <span className="api-desc">The babu's interactor, from `IInteractAgent`, which actions such as `ActiveEat` use.</span> |
+| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> | <span className="api-desc">The body's position.</span> |
+| <Link id="m-stunned" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/babu">{"Babu"}</Link>{"> Stunned { get; private set; }"}</code> | <span className="api-desc">The shared stunned action.</span> |
+| <Link id="m-viewcone-2" /><code><Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" { get; }"}</code> | <span className="api-desc">What it can see, read by its view cone sense.</span> |
+| <Link id="m-passiveactions-2" /><code>{"protected static "}<Link to="/mod/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/babu">{"Babu"}</Link>{"> PassiveActions { get; private set; }"}</code> | <span className="api-desc">The shared passive action set.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stun" /><code>{"void Stun(float strength)"}</code> | Starts the stunned action. `strength` is not used. Called on the server by the prefab's `StatTrigger`. |
-| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | Starts choosing from the shared passive action set. |
-| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | Stores the passive set and stunned action in statics, once per class. |
-| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/mod/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | Turns off collision and sets the animator's killed bool. |
+| <Link id="m-stun" /><code>{"void Stun(float strength)"}</code> | <span className="api-desc">Starts the stunned action. `strength` is not used. Called on the server by the prefab's `StatTrigger`.</span> |
+| <Link id="m-initializeai" /><code>{"protected override void InitializeAi()"}</code> | <span className="api-desc">Starts choosing from the shared passive action set.</span> |
+| <Link id="m-initializestatic" /><code>{"protected override void InitializeStatic()"}</code> | <span className="api-desc">Stores the passive set and stunned action in statics, once per class.</span> |
+| <Link id="m-killed" /><code>{"protected override void Killed("}<Link to="/mod/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthobject)"}</code> | <span className="api-desc">Turns off collision and sets the animator's killed bool.</span> |

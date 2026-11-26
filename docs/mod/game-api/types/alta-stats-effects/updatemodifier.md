@@ -22,17 +22,17 @@ Internal modifier that runs an action on every `StatManager` update while applie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> | Creates an `UpdateModifier` from `update`. |
+| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> | <span className="api-desc">Creates an `UpdateModifier` from `update`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"Action<"}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Update { get; private set; }"}</code> | The action run each stat update. |
+| <Link id="m-update" /><code>{"Action<"}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> Update { get; private set; }"}</code> | <span className="api-desc">The action run each stat update.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-internalapply" /><code>{"protected override void InternalApply()"}</code> | Subscribes the action to the manager's `Updated` event. |
-| <Link id="m-internalremove" /><code>{"protected override void InternalRemove()"}</code> | Unsubscribes the action. |
+| <Link id="m-internalapply" /><code>{"protected override void InternalApply()"}</code> | <span className="api-desc">Subscribes the action to the manager's `Updated` event.</span> |
+| <Link id="m-internalremove" /><code>{"protected override void InternalRemove()"}</code> | <span className="api-desc">Unsubscribes the action.</span> |

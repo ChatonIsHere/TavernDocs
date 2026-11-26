@@ -21,10 +21,10 @@ Probably a leftover from before the service registry: TavernLib never creates or
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TavernMessageHandler()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"TavernMessageHandler()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serverentrancehandler" /><code><Link to="/mod/tavernlib-api/types/backend/entrancemessagehandler">{"EntranceMessageHandler"}</Link>{" ServerEntranceHandler { get; private set; }"}</code> | A new `EntranceMessageHandler` made with the object, which hooks every new connection's roles message. |
+| <Link id="m-serverentrancehandler" /><code><Link to="/mod/tavernlib-api/types/backend/entrancemessagehandler">{"EntranceMessageHandler"}</Link>{" ServerEntranceHandler { get; private set; }"}</code> | <span className="api-desc">A new `EntranceMessageHandler` made with the object, which hooks every new connection's roles message.</span> |

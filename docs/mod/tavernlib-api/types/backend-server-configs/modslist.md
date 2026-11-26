@@ -22,22 +22,26 @@ A modlist file, as `/modlist` reads it: the mod ids, each optionally pinned to a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModsList()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"ModsList()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mods" /><code>{"List<string> Mods { get; set; }"}</code> | The entries, each `id` or `id@version`. |
+| <Link id="m-mods" /><code>{"List<string> Mods { get; set; }"}</code> | <span className="api-desc">The entries, each `id` or `id@version`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parseentry" /><code>{"static ValueTuple<string, string> ParseEntry(string entry)"}</code> | Splits an entry into the id and the pinned version. A bare `id@` or no `@` means latest (`null`). |
+| <Link id="m-parseentry" /><code>{"static ValueTuple<string, string> ParseEntry(string entry)"}</code> | <span className="api-desc">Splits an entry into the id and the pinned version. A bare `id@` or no `@` means latest (`null`).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ModsList`:
 
+<div className="api-used-in">
+
 [`ModReconciler.Reconcile`](/mod/tavernlib-api/types/backend-mods/modreconciler#m-reconcile), [`ModReconciler.Pass.Run`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-run).
+
+</div>

@@ -21,17 +21,21 @@ Alta web API response model for a stored settings entry: an id and its content a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Settings()"}</code> | Creates a `Settings` with default values. |
+| <Link id="m-ctor" /><code>{"Settings()"}</code> | <span className="api-desc">Creates a `Settings` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> | The settings content as a string (JSON field `content`). |
-| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> | The settings entry's id (JSON field `id`). |
+| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> | <span className="api-desc">The settings content as a string (JSON field `content`).</span> |
+| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> | <span className="api-desc">The settings entry's id (JSON field `id`).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Settings`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetSettings`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getsettings).
+
+</div>

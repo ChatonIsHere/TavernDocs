@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Audio.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Audio()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Audio` with default values. |
+| <Link id="m-ctor" /><code>{"protected Audio()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Audio` with default values.</span> |

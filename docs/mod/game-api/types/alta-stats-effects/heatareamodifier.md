@@ -23,11 +23,11 @@ Base for components that give a `HeatArea` on the same object a shape, by settin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected HeatAreaModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected HeatAreaModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets the `HeatArea`'s `GetTemperatureMultiplier` to this component's version. |
-| <Link id="m-gettemperaturemultiplier" /><code>{"protected abstract float GetTemperatureMultiplier("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Returns 0 to 1 for how much of the area's temperature a heat point receives. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Sets the `HeatArea`'s `GetTemperatureMultiplier` to this component's version.</span> |
+| <Link id="m-gettemperaturemultiplier" /><code>{"protected abstract float GetTemperatureMultiplier("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | <span className="api-desc">Returns 0 to 1 for how much of the area's temperature a heat point receives.</span> |

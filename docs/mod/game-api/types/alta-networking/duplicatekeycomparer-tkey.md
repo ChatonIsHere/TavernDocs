@@ -21,16 +21,20 @@ Internal comparer that never reports two keys as equal, so a sorted list can hol
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> | Creates a `DuplicateKeyComparer` with default values. |
+| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> | <span className="api-desc">Creates a `DuplicateKeyComparer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> | Compares normally, but returns 1 instead of 0 for equal keys. |
+| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> | <span className="api-desc">Compares normally, but returns 1 instead of 0 for equal keys.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DuplicateKeyComparer&lt;TKey>`:
 
+<div className="api-used-in">
+
 [`EntityStatistics.comparer`](/mod/game-api/types/alta-networking/entitystatistics#m-comparer).
+
+</div>

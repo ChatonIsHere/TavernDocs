@@ -30,4 +30,8 @@ Which part of a stat `player set-stat` changes: its base value, its minimum or i
 
 Members of other types that take, return or hold a `StatApplicationType`:
 
+<div className="api-used-in">
+
 [`PlayerCommandModule.SetStat`](/mod/tavernlib-api/types/moduleports/playercommandmodule#m-setstat).
+
+</div>

@@ -23,10 +23,14 @@ Profession skill asset that `MiningEcho` checks for to turn on its stronger "int
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MiningEchoIntensity`:
 
+<div className="api-used-in">
+
 [`MiningEcho.intensityPlusSkill`](/mod/game-api/types/global-m-o/miningecho#m-intensityplusskill).
+
+</div>

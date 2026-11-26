@@ -23,28 +23,28 @@ Server: clamps the temperature of the `HeatPoint` on the same object between a m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HeatPointTemperatureController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"HeatPointTemperatureController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> | Highest temperature the heat point can reach. Default 100. |
-| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> | Lowest temperature the heat point can reach. Default 0. |
+| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> | <span className="api-desc">Highest temperature the heat point can reach. Default 100.</span> |
+| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> | <span className="api-desc">Lowest temperature the heat point can reach. Default 0.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> | Temperature modifier that clamps new temperatures to the range, and replaces NaN with the midpoint. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Server: hooks `ClampTemperature` into the heat point's `TemperatureModifier`. |
+| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> | <span className="api-desc">Temperature modifier that clamps new temperatures to the range, and replaces NaN with the midpoint.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Server: hooks `ClampTemperature` into the heat point's `TemperatureModifier`.</span> |
 
 </details>

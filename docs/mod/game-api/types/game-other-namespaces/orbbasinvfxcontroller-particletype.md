@@ -29,4 +29,8 @@ Which orb basin effect to play: orb obtained, permanent unlock or tower completi
 
 Members of other types that take, return or hold a `ParticleType`:
 
+<div className="api-used-in">
+
 [`OrbBasinVfxController.GetVfxData`](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontroller#m-getvfxdata).
+
+</div>

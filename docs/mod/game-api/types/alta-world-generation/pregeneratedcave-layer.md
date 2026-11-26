@@ -21,16 +21,20 @@ One layer of a pregenerated cave asset: its baked mesh.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Layer()"}</code> | Creates a `PregeneratedCave.Layer` with default values. |
+| <Link id="m-ctor" /><code>{"Layer()"}</code> | <span className="api-desc">Creates a `PregeneratedCave.Layer` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> | The cave mesh for this layer. |
+| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> | <span className="api-desc">The cave mesh for this layer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Layer`:
 
+<div className="api-used-in">
+
 [`PregeneratedCave.Add`](/mod/game-api/types/alta-world-generation/pregeneratedcave#m-add), [`PregeneratedCave.Get`](/mod/game-api/types/alta-world-generation/pregeneratedcave#m-get), [`PregeneratedCave.layers`](/mod/game-api/types/alta-world-generation/pregeneratedcave#m-layers).
+
+</div>

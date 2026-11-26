@@ -22,17 +22,17 @@ Replaces this entity with another prefab at the same position and rotation. Serv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenericReplacer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GenericReplacer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnreplace" /><code>{"private bool btnReplace"}</code> | Inspector button that runs `Replace`. |
-| <Link id="m-targetprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" targetPrefab"}</code> | Prefab spawned in place of this one. |
+| <Link id="m-btnreplace" /><code>{"private bool btnReplace"}</code> | <span className="api-desc">Inspector button that runs `Replace`.</span> |
+| <Link id="m-targetprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" targetPrefab"}</code> | <span className="api-desc">Prefab spawned in place of this one.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Replaces this entity with another prefab at the same position and rotation. Serv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replace" /><code>{"void Replace()"}</code> | Server: spawns `targetPrefab` in this entity's chunk and calls `OnReplace`. |
-| <Link id="m-onreplace" /><code>{"protected virtual void OnReplace("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing)"}</code> | Called with the new entity after spawning. By default destroys this entity. |
+| <Link id="m-replace" /><code>{"void Replace()"}</code> | <span className="api-desc">Server: spawns `targetPrefab` in this entity's chunk and calls `OnReplace`.</span> |
+| <Link id="m-onreplace" /><code>{"protected virtual void OnReplace("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing)"}</code> | <span className="api-desc">Called with the new entity after spawning. By default destroys this entity.</span> |

@@ -21,16 +21,20 @@ Group details from the Alta web API for a group the user was invited to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InvitedGroupInfo()"}</code> | Creates an `InvitedGroupInfo` with default values. |
+| <Link id="m-ctor" /><code>{"InvitedGroupInfo()"}</code> | <span className="api-desc">Creates an `InvitedGroupInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invitedat" /><code>{"DateTime InvitedAt { get; set; }"}</code> | When the invite was sent. |
+| <Link id="m-invitedat" /><code>{"DateTime InvitedAt { get; set; }"}</code> | <span className="api-desc">When the invite was sent.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InvitedGroupInfo`:
 
+<div className="api-used-in">
+
 [`IncomingGroupInvite.GroupInfo`](/mod/game-api/types/assembly-api-client/incominggroupinvite#m-groupinfo), [`IncomingGroupInvite.IncomingGroupInvite`](/mod/game-api/types/assembly-api-client/incominggroupinvite#m-ctor), [`LowLevelApiClient.GetGroupInvites`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getgroupinvites).
+
+</div>

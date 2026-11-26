@@ -21,27 +21,27 @@ Editor debug helper on a `Player`: chunks dropped into its lists in the Inspecto
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlayerHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FakePlayerHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadchunks" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> loadChunks"}</code> | Chunks to add this player to on the next Inspector change. Cleared after use. |
-| <Link id="m-unloadchunks" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> unloadChunks"}</code> | Chunks to remove this player from on the next Inspector change. Cleared after use. |
+| <Link id="m-loadchunks" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> loadChunks"}</code> | <span className="api-desc">Chunks to add this player to on the next Inspector change. Cleared after use.</span> |
+| <Link id="m-unloadchunks" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> unloadChunks"}</code> | <span className="api-desc">Chunks to remove this player from on the next Inspector change. Cleared after use.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | In play mode, adds the player to each `loadChunks` chunk and removes it from each `unloadChunks` chunk, then clears both lists. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">In play mode, adds the player to each `loadChunks` chunk and removes it from each `unloadChunks` chunk, then clears both lists.</span> |
 
 </details>

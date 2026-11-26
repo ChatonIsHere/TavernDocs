@@ -21,19 +21,23 @@ Private message the server sends to a player when they reach a climbing challeng
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completedtower" /><code>{"bool completedTower"}</code> | True when the player finished the challenge, false for a checkpoint. |
-| <Link id="m-currentorbcount" /><code>{"int currentOrbCount"}</code> | How many orbs the player holds in their unlock manager (0 to 5). |
-| <Link id="m-currentunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> | The player unlock for the challenge. |
-| <Link id="m-orbcollected" /><code>{"int orbCollected"}</code> | This station's orb index (0 to 5). |
+| <Link id="m-completedtower" /><code>{"bool completedTower"}</code> | <span className="api-desc">True when the player finished the challenge, false for a checkpoint.</span> |
+| <Link id="m-currentorbcount" /><code>{"int currentOrbCount"}</code> | <span className="api-desc">How many orbs the player holds in their unlock manager (0 to 5).</span> |
+| <Link id="m-currentunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> | <span className="api-desc">The player unlock for the challenge.</span> |
+| <Link id="m-orbcollected" /><code>{"int orbCollected"}</code> | <span className="api-desc">This station's orb index (0 to 5).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the unlock, orb counts and completed flag. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Syncs the unlock, orb counts and completed flag.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InteractionInfo`:
 
+<div className="api-used-in">
+
 [`PlayerUnlockStation.SendAnalyticsEvent`](/mod/game-api/types/global-p/playerunlockstation#m-sendanalyticsevent), [`PlayerUnlockStation.syncInteractionInfoToClient`](/mod/game-api/types/global-p/playerunlockstation#m-syncinteractioninfotoclient), [`PlayerUnlockStation.SyncInteractionInfoToClient`](/mod/game-api/types/global-p/playerunlockstation#m-syncinteractioninfotoclient-2).
+
+</div>

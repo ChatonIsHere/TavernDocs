@@ -23,10 +23,10 @@ Save data (version 1) for `MRK_ActivationLever`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> | Creates a `MRK_ActivationLeverSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> | <span className="api-desc">Creates a `MRK_ActivationLeverSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool isActive"}</code> | Whether the lever is on. |
+| <Link id="m-isactive" /><code>{"bool isActive"}</code> | <span className="api-desc">Whether the lever is on.</span> |

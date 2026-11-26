@@ -21,10 +21,10 @@ Sorts `ApplicationQuit` handlers by the `ApplicationShutdownOrderAttribute` on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> | Creates a `ShutdownOrderComparer` with default values. |
+| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> | <span className="api-desc">Creates a `ShutdownOrderComparer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(Delegate x, Delegate y)"}</code> | Compares two delegates by the shutdown order of the types that declare them. |
+| <Link id="m-compare" /><code>{"int Compare(Delegate x, Delegate y)"}</code> | <span className="api-desc">Compares two delegates by the shutdown order of the types that declare them.</span> |

@@ -21,17 +21,17 @@ A `HoverPickup` that waits before floating back to its hover spot after being le
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedHoverPickup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DelayedHoverPickup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delaytohover" /><code>{"private float delayToHover"}</code> | Seconds to wait after release before moving back. |
-| <Link id="m-hoverstart" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" hoverStart"}</code> | The scheduled `Timeline` entry for the move back. |
+| <Link id="m-delaytohover" /><code>{"private float delayToHover"}</code> | <span className="api-desc">Seconds to wait after release before moving back.</span> |
+| <Link id="m-hoverstart" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" hoverStart"}</code> | <span className="api-desc">The scheduled `Timeline` entry for the move back.</span> |
 
 </details>
 
@@ -39,6 +39,6 @@ A `HoverPickup` that waits before floating back to its hover spot after being le
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlegrabbed" /><code>{"protected override void HandleGrabbed("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Cancels a pending move back, then handles the grab as normal. |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Cancels a pending move back. |
-| <Link id="m-startmovingback" /><code>{"protected override void StartMovingBack("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Schedules the normal move back after `delayToHover` seconds on the `Timeline`. |
+| <Link id="m-handlegrabbed" /><code>{"protected override void HandleGrabbed("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Cancels a pending move back, then handles the grab as normal.</span> |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | <span className="api-desc">Cancels a pending move back.</span> |
+| <Link id="m-startmovingback" /><code>{"protected override void StartMovingBack("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Schedules the normal move back after `delayToHover` seconds on the `Timeline`.</span> |

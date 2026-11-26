@@ -23,4 +23,4 @@ Base for an Assets/Create/Township/Features/Cooking menu entry that creates a `T
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Cooking.ScriptableObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Cooking.ScriptableObject` with default values.</span> |

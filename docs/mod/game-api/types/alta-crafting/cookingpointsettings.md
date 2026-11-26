@@ -21,17 +21,17 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingPointSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CookingPointSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookingtemperatures" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" cookingTemperatures"}</code> | Backing field for `CookingTemperatures`. |
-| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> | Backing field for `IsBurnable`. |
+| <Link id="m-cookingtemperatures" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" cookingTemperatures"}</code> | <span className="api-desc">Backing field for `CookingTemperatures`.</span> |
+| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> | <span className="api-desc">Backing field for `IsBurnable`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookingtemperatures-2" /><code><Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> | The temperature settings used to cook this object. |
-| <Link id="m-isburnable-2" /><code>{"bool IsBurnable { get; }"}</code> | Whether this object can burn after it is cooked. |
+| <Link id="m-cookingtemperatures-2" /><code><Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> | <span className="api-desc">The temperature settings used to cook this object.</span> |
+| <Link id="m-isburnable-2" /><code>{"bool IsBurnable { get; }"}</code> | <span className="api-desc">Whether this object can burn after it is cooked.</span> |

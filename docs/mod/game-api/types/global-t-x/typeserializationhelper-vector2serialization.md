@@ -22,10 +22,10 @@ Serializer for `Vector2`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Vector2Serialization()"}</code> | Creates a `TypeSerializationHelper.Vector2Serialization` with default values. |
+| <Link id="m-ctor" /><code>{"Vector2Serialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.Vector2Serialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector2 value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the vector. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector2 value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Reads or writes the vector.</span> |

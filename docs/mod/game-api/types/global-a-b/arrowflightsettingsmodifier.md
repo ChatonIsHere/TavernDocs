@@ -22,16 +22,20 @@ Base asset for something that changes how an arrow flies. Nothing in this build 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ArrowFlightSettingsModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ArrowFlightSettingsModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> | Multiplier on arrow deviance; 1 by default. |
+| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> | <span className="api-desc">Multiplier on arrow deviance; 1 by default.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ArrowFlightSettingsModifier`:
 
+<div className="api-used-in">
+
 [`Arrow.FlightModifiers`](/mod/game-api/types/global-a-b/arrow#m-flightmodifiers), [`ArrowFlightModifierComponent.modifier`](/mod/game-api/types/global-a-b/arrowflightmodifiercomponent#m-modifier), [`ArrowFlightModifierComponent.Modifier`](/mod/game-api/types/global-a-b/arrowflightmodifiercomponent#m-modifier-2), [`ArrowFlightSettings.GetDeviance`](/mod/game-api/types/global-a-b/arrowflightsettings#m-getdeviance), [`ArrowFlightSettings.GetVelocity`](/mod/game-api/types/global-a-b/arrowflightsettings#m-getvelocity).
+
+</div>

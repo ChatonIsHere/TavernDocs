@@ -27,4 +27,8 @@ Whether a ban came from the server owner or a moderator. Returned by `SocialServ
 
 Members of other types that take, return or hold a `BanRole`:
 
+<div className="api-used-in">
+
 [`BanPlayerSocialAnalyticsEvent.BanPlayerSocialAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/banplayersocialanalyticsevent#m-ctor), [`SocialService.BanPlayer`](/mod/game-api/types/global-s/socialservice#m-banplayer).
+
+</div>

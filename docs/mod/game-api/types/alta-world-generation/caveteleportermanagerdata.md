@@ -23,10 +23,10 @@ Save data for the `CaveTeleporterManager` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterManagerData()"}</code> | Creates a `CaveTeleporterManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"CaveTeleporterManagerData()"}</code> | <span className="api-desc">Creates a `CaveTeleporterManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-proxiesdata" /><code><Link to="/mod/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{"[] proxiesData"}</code> | Saved data for each teleporter proxy. |
+| <Link id="m-proxiesdata" /><code><Link to="/mod/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{"[] proxiesData"}</code> | <span className="api-desc">Saved data for each teleporter proxy.</span> |

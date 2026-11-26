@@ -21,4 +21,4 @@ Inspector attribute for a float field, probably so it is edited in degrees and s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DegreeToRadian()"}</code> | Creates a `DegreeToRadian` with default values. |
+| <Link id="m-ctor" /><code>{"DegreeToRadian()"}</code> | <span className="api-desc">Creates a `DegreeToRadian` with default values.</span> |

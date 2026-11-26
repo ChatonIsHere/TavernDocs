@@ -19,12 +19,12 @@ Compares leaderboard definitions by their hash, so they work as dictionary keys 
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private LeaderboardComparer()"}</code> | Creates a `LeaderboardComparer` with default values. |
+| <Link id="m-ctor" /><code>{"private LeaderboardComparer()"}</code> | <span className="api-desc">Creates a `LeaderboardComparer` with default values.</span> |
 
 </details>
 
@@ -32,4 +32,4 @@ Compares leaderboard definitions by their hash, so they work as dictionary keys 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-i-l/leaderboardcomparer">{"LeaderboardComparer"}</Link>{" Instance { get; }"}</code> | The shared comparer. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-i-l/leaderboardcomparer">{"LeaderboardComparer"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The shared comparer.</span> |

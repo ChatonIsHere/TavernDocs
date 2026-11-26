@@ -21,16 +21,16 @@ Marks a river entrance with a volume value; nothing else in this build reads it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RiverEntrance()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RiverEntrance()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-volume" /><code>{"private float volume"}</code> | Backing field for `Volume`. |
+| <Link id="m-volume" /><code>{"private float volume"}</code> | <span className="api-desc">Backing field for `Volume`.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Marks a river entrance with a volume value; nothing else in this build reads it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> | The entrance's volume value, 1 by default. |
+| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> | <span className="api-desc">The entrance's volume value, 1 by default.</span> |

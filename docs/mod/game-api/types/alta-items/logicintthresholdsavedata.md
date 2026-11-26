@@ -23,17 +23,17 @@ Save data for `LogicIntThresholdReceiver`: the threshold settings and the linked
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> | Creates a `LogicIntThresholdSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> | <span className="api-desc">Creates a `LogicIntThresholdSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactiveabovethreshold" /><code>{"bool isActiveAboveThreshold"}</code> | If true the output is on when the value is above the threshold; if false, when below. |
-| <Link id="m-threshold" /><code>{"int threshold"}</code> | The int value the input is compared against. |
+| <Link id="m-isactiveabovethreshold" /><code>{"bool isActiveAboveThreshold"}</code> | <span className="api-desc">If true the output is on when the value is above the threshold; if false, when below.</span> |
+| <Link id="m-threshold" /><code>{"int threshold"}</code> | <span className="api-desc">The int value the input is compared against.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | The linked int sender's logic data, used to relink the input on load. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked int sender's logic data, used to relink the input on load.</span> |

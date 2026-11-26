@@ -22,16 +22,16 @@ Singleton holding the Wwise RTPC used for ambience volume. Get it with `Singleto
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AmbienceManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AmbienceManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-volumertpc" /><code>{"private RTPC volumeRTPC"}</code> | Backing field for `VolumeRTPC`. |
+| <Link id="m-volumertpc" /><code>{"private RTPC volumeRTPC"}</code> | <span className="api-desc">Backing field for `VolumeRTPC`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Singleton holding the Wwise RTPC used for ambience volume. Get it with `Singleto
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-volumertpc-2" /><code>{"RTPC VolumeRTPC { get; }"}</code> | The ambience volume RTPC that `AmbienceAudio` prepares and sets. |
+| <Link id="m-volumertpc-2" /><code>{"RTPC VolumeRTPC { get; }"}</code> | <span className="api-desc">The ambience volume RTPC that `AmbienceAudio` prepares and sets.</span> |

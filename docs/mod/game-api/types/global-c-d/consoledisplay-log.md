@@ -21,11 +21,15 @@ One log line kept by `ConsoleDisplay` for its on-screen server console.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> | NLog level; picks the colour (red for errors, yellow for warnings). |
-| <Link id="m-message" /><code>{"string message"}</code> | The log text. |
+| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> | <span className="api-desc">NLog level; picks the colour (red for errors, yellow for warnings).</span> |
+| <Link id="m-message" /><code>{"string message"}</code> | <span className="api-desc">The log text.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Log`:
 
+<div className="api-used-in">
+
 [`ConsoleDisplay.logs`](/mod/game-api/types/global-c-d/consoledisplay#m-logs).
+
+</div>

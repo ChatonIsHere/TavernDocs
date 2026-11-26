@@ -21,31 +21,31 @@ One undo/redo step in the character customiser: the look before and after a chan
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/mod/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> | Creates a `CustomizationHistoryAction` from `target`, `oldState` and `newState`. |
+| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/mod/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> | <span className="api-desc">Creates a `CustomizationHistoryAction` from `target`, `oldState` and `newState`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newstate" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState"}</code> | Cosmetic preset data after the change. |
-| <Link id="m-oldstate" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState"}</code> | Cosmetic preset data before the change. |
-| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target"}</code> | The customisation wrapper the states are loaded into. |
+| <Link id="m-newstate" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState"}</code> | <span className="api-desc">Cosmetic preset data after the change.</span> |
+| <Link id="m-oldstate" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState"}</code> | <span className="api-desc">Cosmetic preset data before the change.</span> |
+| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target"}</code> | <span className="api-desc">The customisation wrapper the states are loaded into.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-redo" /><code>{"private void IHistoryAction.Redo()"}</code> | Loads the after state back onto the wrapper. |
-| <Link id="m-release" /><code>{"private void IHistoryAction.Release()"}</code> | Clears the stored before state when the step is dropped from history. |
-| <Link id="m-undo" /><code>{"private void IHistoryAction.Undo()"}</code> | Loads the before state back onto the wrapper. |
+| <Link id="m-redo" /><code>{"private void IHistoryAction.Redo()"}</code> | <span className="api-desc">Loads the after state back onto the wrapper.</span> |
+| <Link id="m-release" /><code>{"private void IHistoryAction.Release()"}</code> | <span className="api-desc">Clears the stored before state when the step is dropped from history.</span> |
+| <Link id="m-undo" /><code>{"private void IHistoryAction.Undo()"}</code> | <span className="api-desc">Loads the before state back onto the wrapper.</span> |
 
 </details>
 
@@ -53,4 +53,8 @@ One undo/redo step in the character customiser: the look before and after a chan
 
 Members of other types that take, return or hold a `CustomizationHistoryAction`:
 
+<div className="api-used-in">
+
 [`CustomizationWrapper.historyManager`](/mod/game-api/types/alta-customization/customizationwrapper#m-historymanager), [`CustomizationWrapper.HistoryManager`](/mod/game-api/types/alta-customization/customizationwrapper#m-historymanager-2).
+
+</div>

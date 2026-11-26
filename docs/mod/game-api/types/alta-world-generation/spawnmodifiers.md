@@ -21,19 +21,19 @@ Lists of modifiers that forest fill runs on a spawn candidate at each stage (poi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> | Creates a `SpawnModifiers` with default values. |
+| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> | <span className="api-desc">Creates a `SpawnModifiers` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-networkentitymodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/networkentitymodifiers">{"NetworkEntityModifiers"}</Link>{"[] networkEntityModifiers"}</code> | Modifiers that score a spawned entity. Not initialized by `Initialize`. |
-| <Link id="m-pointmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierpoint">{"SpawnModifierPoint"}</Link>{"[] pointModifiers"}</code> | Modifiers that filter and score a spawn point on an edge. |
-| <Link id="m-pointnormalmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierpointnormal">{"SpawnModifierPointNormal"}</Link>{"[] pointNormalModifiers"}</code> | Modifiers that filter and score a spawn point with a normal. |
-| <Link id="m-spawnparametermodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierspawnparameters">{"SpawnModifierSpawnParameters"}</Link>{"[] spawnParameterModifiers"}</code> | Modifiers that adjust and score the spawn parameters. |
+| <Link id="m-networkentitymodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/networkentitymodifiers">{"NetworkEntityModifiers"}</Link>{"[] networkEntityModifiers"}</code> | <span className="api-desc">Modifiers that score a spawned entity. Not initialized by `Initialize`.</span> |
+| <Link id="m-pointmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierpoint">{"SpawnModifierPoint"}</Link>{"[] pointModifiers"}</code> | <span className="api-desc">Modifiers that filter and score a spawn point on an edge.</span> |
+| <Link id="m-pointnormalmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierpointnormal">{"SpawnModifierPointNormal"}</Link>{"[] pointNormalModifiers"}</code> | <span className="api-desc">Modifiers that filter and score a spawn point with a normal.</span> |
+| <Link id="m-spawnparametermodifiers" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnmodifierspawnparameters">{"SpawnModifierSpawnParameters"}</Link>{"[] spawnParameterModifiers"}</code> | <span className="api-desc">Modifiers that adjust and score the spawn parameters.</span> |
 
 </details>
 
@@ -41,14 +41,18 @@ Lists of modifiers that forest fill runs on a spawn candidate at each stage (poi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Initializes the point, point normal and spawn parameter modifiers. |
-| <Link id="m-process" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
-| <Link id="m-process-2" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
-| <Link id="m-process-3" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" parameters, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
-| <Link id="m-process-4" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, float score, ref float currentScore)"}</code> | Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers. |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Initializes the point, point normal and spawn parameter modifiers.</span> |
+| <Link id="m-process" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, float score, ref float currentScore)"}</code> | <span className="api-desc">Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers.</span> |
+| <Link id="m-process-2" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, float score, ref float currentScore)"}</code> | <span className="api-desc">Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers.</span> |
+| <Link id="m-process-3" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" parameters, float score, ref float currentScore)"}</code> | <span className="api-desc">Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers.</span> |
+| <Link id="m-process-4" /><code>{"bool Process("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, float score, ref float currentScore)"}</code> | <span className="api-desc">Runs this stage's modifiers on the candidate. Returns false once the score drops to the threshold; hands off if a modifier switched the setup's modifiers.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpawnModifiers`:
 
+<div className="api-used-in">
+
 [`FillSet.SpawnModifiers`](/mod/game-api/types/alta-world-generation/fillset#m-spawnmodifiers), [`ForestFillCore.Setup.SpawnModifiers`](/mod/game-api/types/alta-world-generation/forestfillcore-setup#m-spawnmodifiers), [`ForestFillSet.spawnModifiers`](/mod/game-api/types/alta-world-generation/forestfillset#m-spawnmodifiers), [`ForestFillSet.SpawnModifiers`](/mod/game-api/types/alta-world-generation/forestfillset#m-spawnmodifiers-2), [`IFillSet.SpawnModifiers`](/mod/game-api/types/alta-world-generation/ifillset#m-spawnmodifiers), [`SplatPaintSet.SpawnModifiers`](/mod/game-api/types/alta-world-generation/splatpaintset#m-spawnmodifiers), [`PopulationSetup.spawnModifiers`](/mod/game-api/types/alta-world-generation/populationsetup#m-spawnmodifiers), [`PopulationSetup.SpawnModifiers`](/mod/game-api/types/alta-world-generation/populationsetup#m-spawnmodifiers-2).
+
+</div>

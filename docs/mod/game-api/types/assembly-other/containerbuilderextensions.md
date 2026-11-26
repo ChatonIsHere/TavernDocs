@@ -21,5 +21,5 @@ Extension methods on VContainer's `IContainerBuilder` used by the game's install
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bind" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> Bind<TContract>(IContainerBuilder container)"}</code> | Starts a fluent `Binder<TContract>` and registers it with the builder. Bindings are singletons by default. |
-| <Link id="m-injectandisolate" /><code>{"static void InjectAndIsolate<TContract>(IContainerBuilder container)"}</code> | Registers the type as a VContainer entry point. |
+| <Link id="m-bind" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> Bind<TContract>(IContainerBuilder container)"}</code> | <span className="api-desc">Starts a fluent `Binder<TContract>` and registers it with the builder. Bindings are singletons by default.</span> |
+| <Link id="m-injectandisolate" /><code>{"static void InjectAndIsolate<TContract>(IContainerBuilder container)"}</code> | <span className="api-desc">Registers the type as a VContainer entry point.</span> |

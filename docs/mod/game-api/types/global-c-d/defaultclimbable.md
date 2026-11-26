@@ -21,31 +21,31 @@ The climbable used when a grabbed collider has no climbable of its own, so plain
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DefaultClimbable()"}</code> | Creates a `DefaultClimbable` with default values. |
+| <Link id="m-ctor" /><code>{"DefaultClimbable()"}</code> | <span className="api-desc">Creates a `DefaultClimbable` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canclimb" /><code>{"bool CanClimb { get; }"}</code> | Always true. |
-| <Link id="m-canmove" /><code>{"bool CanMove { get; }"}</code> | Always false. |
-| <Link id="m-curentpressure" /><code>{"Vector3 CurentPressure { get; }"}</code> | Always zero. |
-| <Link id="m-currentpressureratio" /><code>{"float CurrentPressureRatio { get; }"}</code> | Always 0. |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | Always null. |
-| <Link id="m-grippriority" /><code>{"float GripPriority { get; }"}</code> | Always 1. Climbables with a higher priority win the grab. |
-| <Link id="m-maximumpressure" /><code>{"float MaximumPressure { get; }"}</code> | Always -1 (no limit). |
-| <Link id="m-oldpressureratio" /><code>{"float OldPressureRatio { get; }"}</code> | Always 0. |
-| <Link id="m-releasesimmediately" /><code>{"bool ReleasesImmediately { get; }"}</code> | Always false. |
+| <Link id="m-canclimb" /><code>{"bool CanClimb { get; }"}</code> | <span className="api-desc">Always true.</span> |
+| <Link id="m-canmove" /><code>{"bool CanMove { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-curentpressure" /><code>{"Vector3 CurentPressure { get; }"}</code> | <span className="api-desc">Always zero.</span> |
+| <Link id="m-currentpressureratio" /><code>{"float CurrentPressureRatio { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">Always null.</span> |
+| <Link id="m-grippriority" /><code>{"float GripPriority { get; }"}</code> | <span className="api-desc">Always 1. Climbables with a higher priority win the grab.</span> |
+| <Link id="m-maximumpressure" /><code>{"float MaximumPressure { get; }"}</code> | <span className="api-desc">Always -1 (no limit).</span> |
+| <Link id="m-oldpressureratio" /><code>{"float OldPressureRatio { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-releasesimmediately" /><code>{"bool ReleasesImmediately { get; }"}</code> | <span className="api-desc">Always false.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-break" /><code>{"event Action Break"}</code> | Never raised; adding handlers does nothing. |
+| <Link id="m-break" /><code>{"event Action Break"}</code> | <span className="api-desc">Never raised; adding handlers does nothing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applypressure" /><code>{"bool ApplyPressure(Vector3 pressure)"}</code> | Ignores the pressure and returns true. |
-| <Link id="m-getgravityboost" /><code>{"virtual float GetGravityBoost(Vector3 normal)"}</code> | Returns the surface normal's Y, so flatter tops give more boost. |
+| <Link id="m-applypressure" /><code>{"bool ApplyPressure(Vector3 pressure)"}</code> | <span className="api-desc">Ignores the pressure and returns true.</span> |
+| <Link id="m-getgravityboost" /><code>{"virtual float GetGravityBoost(Vector3 normal)"}</code> | <span className="api-desc">Returns the surface normal's Y, so flatter tops give more boost.</span> |

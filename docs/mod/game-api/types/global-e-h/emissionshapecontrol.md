@@ -21,16 +21,16 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionShapeControl()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmissionShapeControl()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialradii" /><code>{"private float[] initialRadii"}</code> | Original shape radius of each system. |
+| <Link id="m-initialradii" /><code>{"private float[] initialRadii"}</code> | <span className="api-desc">Original shape radius of each system.</span> |
 
 </details>
 
@@ -38,6 +38,6 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setemissionshaperadius" /><code>{"void SetEmissionShapeRadius(float radiusMultiplier)"}</code> | Sets each system's shape radius to its original radius times the multiplier. |
-| <Link id="m-resetsystems" /><code>{"protected override void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Resets like the base and puts the radius multiplier back to 1. |
-| <Link id="m-setupsystems" /><code>{"protected override void SetupSystems()"}</code> | Sets up like the base and records each system's original shape radius. |
+| <Link id="m-setemissionshaperadius" /><code>{"void SetEmissionShapeRadius(float radiusMultiplier)"}</code> | <span className="api-desc">Sets each system's shape radius to its original radius times the multiplier.</span> |
+| <Link id="m-resetsystems" /><code>{"protected override void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Resets like the base and puts the radius multiplier back to 1.</span> |
+| <Link id="m-setupsystems" /><code>{"protected override void SetupSystems()"}</code> | <span className="api-desc">Sets up like the base and records each system's original shape radius.</span> |

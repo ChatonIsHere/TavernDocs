@@ -21,18 +21,18 @@ Base of the legacy effect classes (`DurationEffect`, `EnvironmentalEffect`). It 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Effect()"}</code> | Creates an `Effect` with default values. |
+| <Link id="m-ctor" /><code>{"protected Effect()"}</code> | <span className="api-desc">Creates an `Effect` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cooldown" /><code>{"virtual float Cooldown { get; }"}</code> | Cooldown in seconds; -1 (none) unless a subclass overrides it. |
-| <Link id="m-handler" /><code><Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" Handler { get; private set; }"}</code> | The `EffectHandler` this effect was last applied to. |
-| <Link id="m-isduration" /><code>{"virtual bool IsDuration { get; }"}</code> | False here; true for `DurationEffect` subclasses. |
+| <Link id="m-cooldown" /><code>{"virtual float Cooldown { get; }"}</code> | <span className="api-desc">Cooldown in seconds; -1 (none) unless a subclass overrides it.</span> |
+| <Link id="m-handler" /><code><Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" Handler { get; private set; }"}</code> | <span className="api-desc">The `EffectHandler` this effect was last applied to.</span> |
+| <Link id="m-isduration" /><code>{"virtual bool IsDuration { get; }"}</code> | <span className="api-desc">False here; true for `DurationEffect` subclasses.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"virtual void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Stores the `EffectHandler` the effect was applied to. Subclasses add behaviour. |
+| <Link id="m-apply" /><code>{"virtual void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Stores the `EffectHandler` the effect was applied to. Subclasses add behaviour.</span> |

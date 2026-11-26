@@ -23,10 +23,14 @@ Empty marker asset naming a surface type. Static environment pieces and `ICollis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SurfaceMaterial()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SurfaceMaterial()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SurfaceMaterial`:
 
+<div className="api-used-in">
+
 [`ICollisionStandard.Material`](/mod/game-api/types/alta-utilities/icollisionstandard#m-material), [`StaticEnvironmentPiece.material`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-material), [`StaticEnvironmentPiece.Material`](/mod/game-api/types/alta-world/staticenvironmentpiece#m-material-2), [`StaticEnvironmentPieceInstance.Material`](/mod/game-api/types/alta-world/staticenvironmentpieceinstance#m-material).
+
+</div>

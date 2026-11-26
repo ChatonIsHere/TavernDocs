@@ -18,12 +18,12 @@ Static events for when a client connects to a server and when a server starts or
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for handler errors. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for handler errors.</span> |
 
 </details>
 
@@ -31,14 +31,14 @@ Static events for when a client connects to a server and when a server starts or
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientstarted" /><code>{"static event Action ClientStarted"}</code> | Client: raised by `ConnectToServerUtility` when it connects to a server. |
-| <Link id="m-serverended" /><code>{"static event Action ServerEnded"}</code> | Server: raised by `ServerHandler` when the server shuts down. |
-| <Link id="m-serverstarted" /><code>{"static event Action ServerStarted"}</code> | Server: raised by `ServerHandler` once the server has started. |
+| <Link id="m-clientstarted" /><code>{"static event Action ClientStarted"}</code> | <span className="api-desc">Client: raised by `ConnectToServerUtility` when it connects to a server.</span> |
+| <Link id="m-serverended" /><code>{"static event Action ServerEnded"}</code> | <span className="api-desc">Server: raised by `ServerHandler` when the server shuts down.</span> |
+| <Link id="m-serverstarted" /><code>{"static event Action ServerStarted"}</code> | <span className="api-desc">Server: raised by `ServerHandler` once the server has started.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onclientstarted" /><code>{"static void OnClientStarted()"}</code> | Raises `ClientStarted`. |
-| <Link id="m-onserverended" /><code>{"static void OnServerEnded()"}</code> | Raises `ServerEnded`. |
-| <Link id="m-onserverstarted" /><code>{"static void OnServerStarted()"}</code> | Raises `ServerStarted`. |
+| <Link id="m-onclientstarted" /><code>{"static void OnClientStarted()"}</code> | <span className="api-desc">Raises `ClientStarted`.</span> |
+| <Link id="m-onserverended" /><code>{"static void OnServerEnded()"}</code> | <span className="api-desc">Raises `ServerEnded`.</span> |
+| <Link id="m-onserverstarted" /><code>{"static void OnServerStarted()"}</code> | <span className="api-desc">Raises `ServerStarted`.</span> |

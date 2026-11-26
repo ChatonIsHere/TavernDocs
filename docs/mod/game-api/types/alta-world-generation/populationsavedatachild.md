@@ -20,17 +20,21 @@ Save record linking one saved child of a population folder to the spawn point it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> | Creates a `PopulationSaveDataChild` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> | <span className="api-desc">Creates a `PopulationSaveDataChild` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-index" /><code>{"int index"}</code> | The child's index in the folder's saved children. |
-| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> | Index of the spawn point the child was spawned at, or -1 if it had none. |
+| <Link id="m-index" /><code>{"int index"}</code> | <span className="api-desc">The child's index in the folder's saved children.</span> |
+| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> | <span className="api-desc">Index of the spawn point the child was spawned at, or -1 if it had none.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PopulationSaveDataChild`:
 
+<div className="api-used-in">
+
 [`IPopulationFolderSaveDataBase.Children`](/mod/game-api/types/alta-world-generation/ipopulationfoldersavedatabase#m-children), [`PopulationFolderSaveData.children`](/mod/game-api/types/alta-world-generation/populationfoldersavedata#m-children), [`PopulationFolderSaveData.Children`](/mod/game-api/types/alta-world-generation/populationfoldersavedata#m-children-2), [`PopulationFolderSaveData1.children`](/mod/game-api/types/alta-world-generation/populationfoldersavedata1#m-children), [`PopulationSpawnAreaSaveData.children`](/mod/game-api/types/alta-world-generation/populationspawnareasavedata#m-children), [`PopulationSpawnAreaSaveData.Children`](/mod/game-api/types/alta-world-generation/populationspawnareasavedata#m-children-2), [`PopulationSpawnAreaSaveData1.children`](/mod/game-api/types/alta-world-generation/populationspawnareasavedata1#m-children).
+
+</div>

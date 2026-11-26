@@ -22,16 +22,16 @@ Wraps a Json.NET `IValueProvider` so values are clamped to a range both when rea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> | Creates a `JsonRangeValueProviderFilter` from `baseProvider`. |
+| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> | <span className="api-desc">Creates a `JsonRangeValueProviderFilter` from `baseProvider`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> | The wrapped value provider that does the real get and set. |
+| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> | <span className="api-desc">The wrapped value provider that does the real get and set.</span> |
 
 </details>
 
@@ -39,6 +39,6 @@ Wraps a Json.NET `IValueProvider` so values are clamped to a range both when rea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamp" /><code>{"abstract T Clamp(T value)"}</code> | Limits a value to the allowed range. |
-| <Link id="m-getvalue" /><code>{"object GetValue(object target)"}</code> | Reads the value from the wrapped provider and returns it clamped. |
-| <Link id="m-setvalue" /><code>{"void SetValue(object target, object value)"}</code> | Clamps the value, then writes it through the wrapped provider. |
+| <Link id="m-clamp" /><code>{"abstract T Clamp(T value)"}</code> | <span className="api-desc">Limits a value to the allowed range.</span> |
+| <Link id="m-getvalue" /><code>{"object GetValue(object target)"}</code> | <span className="api-desc">Reads the value from the wrapped provider and returns it clamped.</span> |
+| <Link id="m-setvalue" /><code>{"void SetValue(object target, object value)"}</code> | <span className="api-desc">Clamps the value, then writes it through the wrapped provider.</span> |

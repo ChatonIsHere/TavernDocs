@@ -173,4 +173,8 @@ Every attachment point and body feature a customization item can fill, such as n
 
 Members of other types that take, return or hold a `PlayerCustomizationSlot`:
 
+<div className="api-used-in">
+
 [`PaintBrush.ApplyColor`](/mod/game-api/types/global-p/paintbrush#m-applycolor).
+
+</div>

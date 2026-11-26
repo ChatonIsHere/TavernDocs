@@ -28,4 +28,8 @@ Private: how `GetRandomRotation` turns spawned items: Y (random spin around the 
 
 Members of other types that take, return or hold a `RandomRotationType`:
 
+<div className="api-used-in">
+
 [`PopulationDefinition.randomRotationType`](/mod/game-api/types/alta-world-generation/populationdefinition#m-randomrotationtype).
+
+</div>

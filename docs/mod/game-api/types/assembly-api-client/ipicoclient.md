@@ -21,13 +21,17 @@ Alta web API calls for linking a Pico account to an Alta account, per Pico regio
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Gets the Alta user linked to a Pico id. |
-| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Asks whether a Pico id is linked to a given Alta user. |
-| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Links a Pico account to the logged-in Alta account using a user proof. |
-| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> | Removes the Pico link from an Alta account. |
+| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | <span className="api-desc">Gets the Alta user linked to a Pico id.</span> |
+| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | <span className="api-desc">Asks whether a Pico id is linked to a given Alta user.</span> |
+| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/mod/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | <span className="api-desc">Links a Pico account to the logged-in Alta account using a user proof.</span> |
+| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> | <span className="api-desc">Removes the Pico link from an Alta account.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPicoClient`:
 
+<div className="api-used-in">
+
 [`HighLevelApiClient.Pico`](/mod/game-api/types/assembly-api-client/highlevelapiclient#m-pico), [`IHighLevelApiClient.Pico`](/mod/game-api/types/assembly-api-client/ihighlevelapiclient#m-pico), [`OfflineHighLevelApiClient.Pico`](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient#m-pico).
+
+</div>

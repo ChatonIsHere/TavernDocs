@@ -21,17 +21,17 @@ An atom carrying a value (for example a position) in the unused Prolog-like logi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DataAtom(string name, T data)"}</code> | Creates a `DataAtom` from `name` and `data`. |
+| <Link id="m-ctor" /><code>{"DataAtom(string name, T data)"}</code> | <span className="api-desc">Creates a `DataAtom` from `name` and `data`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | The value this atom carries. |
+| <Link id="m-data" /><code>{"T Data { get; set; }"}</code> | <span className="api-desc">The value this atom carries.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/dataatom-t">{"DataAtom"}</Link>{"<T> op_Implicit(string name)"}</code> | Lets a string become a `DataAtom` of that name with a default value, or a value become one named "Data". |
-| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/dataatom-t">{"DataAtom"}</Link>{"<T> op_Implicit(T value)"}</code> | Lets a string become a `DataAtom` of that name with a default value, or a value become one named "Data". |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/dataatom-t">{"DataAtom"}</Link>{"<T> op_Implicit(string name)"}</code> | <span className="api-desc">Lets a string become a `DataAtom` of that name with a default value, or a value become one named "Data".</span> |
+| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/dataatom-t">{"DataAtom"}</Link>{"<T> op_Implicit(T value)"}</code> | <span className="api-desc">Lets a string become a `DataAtom` of that name with a default value, or a value become one named "Data".</span> |

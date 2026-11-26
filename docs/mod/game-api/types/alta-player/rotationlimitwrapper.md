@@ -21,18 +21,18 @@ Character component that applies a rotation limit to a bone (such as a wrist) ev
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RotationLimitWrapper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RotationLimitWrapper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iscachingbonerotation" /><code>{"private bool isCachingBoneRotation"}</code> | When true (the default), the last rotation inside the limit is kept and restored. |
-| <Link id="m-lastwristrotation" /><code>{"private Quaternion lastWristRotation"}</code> | The last local rotation that needed no correction. |
-| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> | Backing field for `RotationLimit`. |
+| <Link id="m-iscachingbonerotation" /><code>{"private bool isCachingBoneRotation"}</code> | <span className="api-desc">When true (the default), the last rotation inside the limit is kept and restored.</span> |
+| <Link id="m-lastwristrotation" /><code>{"private Quaternion lastWristRotation"}</code> | <span className="api-desc">The last local rotation that needed no correction.</span> |
+| <Link id="m-rotationlimit" /><code>{"private RotationLimit rotationLimit"}</code> | <span className="api-desc">Backing field for `RotationLimit`.</span> |
 
 </details>
 
@@ -40,16 +40,20 @@ Character component that applies a rotation limit to a bone (such as a wrist) ev
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { get; set; }"}</code> | The rotation limit to apply. |
+| <Link id="m-rotationlimit-2" /><code>{"RotationLimit RotationLimit { get; set; }"}</code> | <span className="api-desc">The rotation limit to apply.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | Applies the limit. With caching on, keeps the rotation if no correction was needed, otherwise puts back the last good one. |
+| <Link id="m-fixedupdatecharactercomponent" /><code>{"override void FixedUpdateCharacterComponent()"}</code> | <span className="api-desc">Applies the limit. With caching on, keeps the rotation if no correction was needed, otherwise puts back the last good one.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RotationLimitWrapper`:
 
+<div className="api-used-in">
+
 [`ArmIKController.rotationLimitWrapper`](/mod/game-api/types/alta-player/armikcontroller#m-rotationlimitwrapper).
+
+</div>

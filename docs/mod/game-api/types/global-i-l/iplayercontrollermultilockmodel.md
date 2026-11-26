@@ -21,17 +21,21 @@ A lock that many objects can hold at once on a player controller feature. It sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> | True while at least one holder has the lock. |
+| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> | <span className="api-desc">True while at least one holder has the lock.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> | Adds a holder of the lock. |
-| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> | Removes a holder of the lock. |
+| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> | <span className="api-desc">Adds a holder of the lock.</span> |
+| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> | <span className="api-desc">Removes a holder of the lock.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPlayerControllerMultiLockModel`:
 
+<div className="api-used-in">
+
 [`PlayerHealth.Inject`](/mod/game-api/types/global-p/playerhealth#m-inject), [`PlayerHealth.playerControllerMultiLockModel`](/mod/game-api/types/global-p/playerhealth#m-playercontrollermultilockmodel), [`PlayerScreenFader.Inject`](/mod/game-api/types/global-p/playerscreenfader#m-inject), [`PlayerScreenFader.playerControllerMultiLockModel`](/mod/game-api/types/global-p/playerscreenfader#m-playercontrollermultilockmodel), [`SmoothLocomotion.Inject`](/mod/game-api/types/global-s/smoothlocomotion#m-inject), [`SmoothLocomotion.playerControllerMultiLockModel`](/mod/game-api/types/global-s/smoothlocomotion#m-playercontrollermultilockmodel).
+
+</div>

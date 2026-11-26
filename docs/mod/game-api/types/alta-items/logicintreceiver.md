@@ -22,16 +22,16 @@ Logic receiver that listens to an int sender and raises a Unity event with each 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicIntReceiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueChanged"}</code> | Unity event called with the new int value. |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueChanged"}</code> | <span className="api-desc">Unity event called with the new int value.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Logic receiver that listens to an int sender and raises a Unity event with each 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | Invokes `onValueChanged` with the sender's current value. |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | <span className="api-desc">Invokes `onValueChanged` with the sender's current value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogicIntReceiver`:
 
+<div className="api-used-in">
+
 [`LogicIntToBool.receiver`](/mod/game-api/types/alta-items/logicinttobool#m-receiver).
+
+</div>

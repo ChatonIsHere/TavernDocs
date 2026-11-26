@@ -21,11 +21,15 @@ A particle system's starting emission rates, saved so `EmissionControl` can scal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rateoverdistance" /><code>{"float rateOverDistance"}</code> | Starting rate-over-distance multiplier. |
-| <Link id="m-rateovertime" /><code>{"float rateOverTime"}</code> | Starting rate-over-time multiplier. |
+| <Link id="m-rateoverdistance" /><code>{"float rateOverDistance"}</code> | <span className="api-desc">Starting rate-over-distance multiplier.</span> |
+| <Link id="m-rateovertime" /><code>{"float rateOverTime"}</code> | <span className="api-desc">Starting rate-over-time multiplier.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InitialValues`:
 
+<div className="api-used-in">
+
 [`EmissionControl.initialValues`](/mod/game-api/types/global-e-h/emissioncontrol#m-initialvalues).
+
+</div>

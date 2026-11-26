@@ -22,16 +22,16 @@ Action component that runs `ActiveAttackDirectionReact` on a random timer, using
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentAttackDirectionReactSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentAttackDirectionReactSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" settings"}</code> | Backing field for `Settings`. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" settings"}</code> | <span className="api-desc">Backing field for `Settings`.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Action component that runs `ActiveAttackDirectionReact` on a random timer, using
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings-2" /><code><Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" Settings { get; }"}</code> | The attack direction settings used by the action. |
+| <Link id="m-settings-2" /><code><Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" Settings { get; }"}</code> | <span className="api-desc">The attack direction settings used by the action.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the `ActiveAttackDirectionReact` action, using a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the `ActiveAttackDirectionReact` action, using a target.</span> |

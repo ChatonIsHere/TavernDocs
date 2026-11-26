@@ -21,17 +21,17 @@ XR support system for Valve OpenVR mode. Touches the SteamVR settings and instan
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SteamOpenVrInitializer()"}</code> | Creates a `SteamOpenVrInitializer` with default values. |
+| <Link id="m-ctor" /><code>{"SteamOpenVrInitializer()"}</code> | <span className="api-desc">Creates a `SteamOpenVrInitializer` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-steamvr" /><code>{"private SteamVR steamVR"}</code> | Held SteamVR instance. |
-| <Link id="m-steamvrsettings" /><code>{"private SteamVR_Settings steamVRSettings"}</code> | Held SteamVR settings. |
+| <Link id="m-steamvr" /><code>{"private SteamVR steamVR"}</code> | <span className="api-desc">Held SteamVR instance.</span> |
+| <Link id="m-steamvrsettings" /><code>{"private SteamVR_Settings steamVRSettings"}</code> | <span className="api-desc">Held SteamVR settings.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ XR support system for Valve OpenVR mode. Touches the SteamVR settings and instan
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | True only for `TownshipXRMode.Valve`. |
-| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> | Reads `SteamVR_Settings.instance` and `SteamVR.instance` so SteamVR sets itself up. |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" mode)"}</code> | <span className="api-desc">True only for `TownshipXRMode.Valve`.</span> |
+| <Link id="m-preconfigureinitialize" /><code>{"void PreconfigureInitialize()"}</code> | <span className="api-desc">Reads `SteamVR_Settings.instance` and `SteamVR.instance` so SteamVR sets itself up.</span> |

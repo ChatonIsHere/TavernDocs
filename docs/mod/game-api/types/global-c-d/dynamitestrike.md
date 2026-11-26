@@ -23,18 +23,18 @@ Area attack skill that fires when an active tool collides with something on the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DynamiteStrike()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DynamiteStrike()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceptrigidbodies" /><code>{"private bool acceptRigidbodies"}</code> | Whether hitting a rigidbody can trigger it. |
-| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> | Layers a collision must hit to count. |
-| <Link id="m-toolinputs" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> toolInputs"}</code> | Skill input for each registered pickup. |
+| <Link id="m-acceptrigidbodies" /><code>{"private bool acceptRigidbodies"}</code> | <span className="api-desc">Whether hitting a rigidbody can trigger it.</span> |
+| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> | <span className="api-desc">Layers a collision must hit to count.</span> |
+| <Link id="m-toolinputs" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> toolInputs"}</code> | <span className="api-desc">Skill input for each registered pickup.</span> |
 
 </details>
 
@@ -42,16 +42,16 @@ Area attack skill that fires when an active tool collides with something on the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Unhooks the tool's collision event and forgets the input. |
-| <Link id="m-register" /><code>{"override void Register("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Remembers the input under its pickup. |
-| <Link id="m-seteffectactive" /><code>{"override void SetEffectActive("}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isEffectActive)"}</code> | Hooks the tool's collision event while the effect is active and unhooks it otherwise. |
-| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Always false, so normal hits never trigger this skill. |
+| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | <span className="api-desc">Unhooks the tool's collision event and forgets the input.</span> |
+| <Link id="m-register" /><code>{"override void Register("}<Link to="/mod/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | <span className="api-desc">Remembers the input under its pickup.</span> |
+| <Link id="m-seteffectactive" /><code>{"override void SetEffectActive("}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, bool isEffectActive)"}</code> | <span className="api-desc">Hooks the tool's collision event while the effect is active and unhooks it otherwise.</span> |
+| <Link id="m-validateexecutionhit" /><code>{"override bool ValidateExecutionHit("}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">Always false, so normal hits never trigger this skill.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collided" /><code>{"private void Collided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | On a collision with an active input, finds the most effective contact hit, runs the attack if it meets the minimum, then resets the input next frame. |
+| <Link id="m-collided" /><code>{"private void Collided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">On a collision with an active input, finds the most effective contact hit, runs the attack if it meets the minimum, then resets the input next frame.</span> |
 
 </details>

@@ -22,19 +22,19 @@ A basic button-style `Interactable` that raises `Interacted` on grab and `Releas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleInteractPoint()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SimpleInteractPoint()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttondisabled" /><code>{"private Action ButtonDisabled"}</code> | Private callback run whenever `IsDisabled` is set. `OnEnable` adds `OnButtonDisabled` again each time it runs. |
-| <Link id="m-interacted" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" interacted"}</code> | Event behind `Interacted`, can also be set in the inspector. |
-| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> | Backing field for `IsDisabled`. |
-| <Link id="m-released" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" released"}</code> | Event behind `Released`, can also be set in the inspector. |
+| <Link id="m-buttondisabled" /><code>{"private Action ButtonDisabled"}</code> | <span className="api-desc">Private callback run whenever `IsDisabled` is set. `OnEnable` adds `OnButtonDisabled` again each time it runs.</span> |
+| <Link id="m-interacted" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" interacted"}</code> | <span className="api-desc">Event behind `Interacted`, can also be set in the inspector.</span> |
+| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> | <span className="api-desc">Backing field for `IsDisabled`.</span> |
+| <Link id="m-released" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" released"}</code> | <span className="api-desc">Event behind `Released`, can also be set in the inspector.</span> |
 
 </details>
 
@@ -42,29 +42,29 @@ A basic button-style `Interactable` that raises `Interacted` on grab and `Releas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisabled-2" /><code>{"bool IsDisabled { get; set; }"}</code> | While true, grabs and releases raise nothing. Disabling while held raises `Released` once. |
+| <Link id="m-isdisabled-2" /><code>{"bool IsDisabled { get; set; }"}</code> | <span className="api-desc">While true, grabs and releases raise nothing. Disabling while held raises `Released` once.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interacted-2" /><code>{"event Action Interacted"}</code> | Raised when the point is grabbed while enabled. |
-| <Link id="m-released-2" /><code>{"event Action Released"}</code> | Raised when the point is let go while enabled. |
+| <Link id="m-interacted-2" /><code>{"event Action Interacted"}</code> | <span className="api-desc">Raised when the point is grabbed while enabled.</span> |
+| <Link id="m-released-2" /><code>{"event Action Released"}</code> | <span className="api-desc">Raised when the point is let go while enabled.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onbuttondisabled" /><code>{"protected virtual void OnButtonDisabled()"}</code> | Override to react when `IsDisabled` is set. Empty here. |
-| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | Hooks the grab and release handlers. |
+| <Link id="m-onbuttondisabled" /><code>{"protected virtual void OnButtonDisabled()"}</code> | <span className="api-desc">Override to react when `IsDisabled` is set. Empty here.</span> |
+| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | <span className="api-desc">Hooks the grab and release handlers.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks the grab and release handlers. |
-| <Link id="m-oninteract" /><code>{"private void OnInteract("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" __, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" _)"}</code> | Raises `Interacted` unless disabled. |
-| <Link id="m-onrelease" /><code>{"private void OnRelease("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" __, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" _)"}</code> | Raises `Released` unless disabled. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Unhooks the grab and release handlers.</span> |
+| <Link id="m-oninteract" /><code>{"private void OnInteract("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" __, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" _)"}</code> | <span className="api-desc">Raises `Interacted` unless disabled.</span> |
+| <Link id="m-onrelease" /><code>{"private void OnRelease("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" __, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" _)"}</code> | <span className="api-desc">Raises `Released` unless disabled.</span> |
 
 </details>

@@ -21,21 +21,21 @@ Plays a pooled effect at a spawn point when items are docked into or undocked fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemDockedVfxEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ItemDockedVfxEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> | Inspector button that plays the first-docked effect. |
-| <Link id="m-firstitemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstItemDockedVfx"}</code> | Effect for the first item docked. |
-| <Link id="m-itemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemDockedVfx"}</code> | Effect for each item docked. |
-| <Link id="m-itemundockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemUndockedVfx"}</code> | Effect for each item undocked. |
-| <Link id="m-lastitemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lastItemDockedVfx"}</code> | Effect for the last item undocked. |
-| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> | Where effects are spawned. |
+| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> | <span className="api-desc">Inspector button that plays the first-docked effect.</span> |
+| <Link id="m-firstitemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstItemDockedVfx"}</code> | <span className="api-desc">Effect for the first item docked.</span> |
+| <Link id="m-itemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemDockedVfx"}</code> | <span className="api-desc">Effect for each item docked.</span> |
+| <Link id="m-itemundockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemUndockedVfx"}</code> | <span className="api-desc">Effect for each item undocked.</span> |
+| <Link id="m-lastitemdockedvfx" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lastItemDockedVfx"}</code> | <span className="api-desc">Effect for the last item undocked.</span> |
+| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> | <span className="api-desc">Where effects are spawned.</span> |
 
 </details>
 
@@ -43,8 +43,8 @@ Plays a pooled effect at a spawn point when items are docked into or undocked fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-firstdocked" /><code>{"protected override void FirstDocked()"}</code> | Plays `firstItemDockedVfx`. |
-| <Link id="m-itemdocked" /><code>{"protected override void ItemDocked()"}</code> | Plays `itemDockedVfx`. |
-| <Link id="m-itemundocked" /><code>{"protected override void ItemUndocked()"}</code> | Plays `itemUndockedVfx`. |
-| <Link id="m-lastundocked" /><code>{"protected override void LastUndocked()"}</code> | Plays `lastItemDockedVfx` (despite the name, on the last undock). |
-| <Link id="m-playeffect" /><code>{"protected virtual void PlayEffect("}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" vfx)"}</code> | Spawns the given pooled effect at `spawnPoint`, if set. |
+| <Link id="m-firstdocked" /><code>{"protected override void FirstDocked()"}</code> | <span className="api-desc">Plays `firstItemDockedVfx`.</span> |
+| <Link id="m-itemdocked" /><code>{"protected override void ItemDocked()"}</code> | <span className="api-desc">Plays `itemDockedVfx`.</span> |
+| <Link id="m-itemundocked" /><code>{"protected override void ItemUndocked()"}</code> | <span className="api-desc">Plays `itemUndockedVfx`.</span> |
+| <Link id="m-lastundocked" /><code>{"protected override void LastUndocked()"}</code> | <span className="api-desc">Plays `lastItemDockedVfx` (despite the name, on the last undock).</span> |
+| <Link id="m-playeffect" /><code>{"protected virtual void PlayEffect("}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" vfx)"}</code> | <span className="api-desc">Spawns the given pooled effect at `spawnPoint`, if set.</span> |

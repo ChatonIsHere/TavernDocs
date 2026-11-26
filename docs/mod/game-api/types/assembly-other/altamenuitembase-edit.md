@@ -22,4 +22,4 @@ Editor menu folder `Edit`: menu item classes inherit it to appear under that pat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Edit()"}</code> | Creates an `AltaMenuItemBase.Edit` with default values. |
+| <Link id="m-ctor" /><code>{"protected Edit()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Edit` with default values.</span> |

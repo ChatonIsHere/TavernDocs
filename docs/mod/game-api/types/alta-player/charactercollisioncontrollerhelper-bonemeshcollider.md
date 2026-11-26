@@ -22,17 +22,17 @@ Settings for mesh colliders on a character bone. `CharacterCollisionControllerHe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneMeshCollider` with default values. |
+| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> | <span className="api-desc">Creates a `CharacterCollisionControllerHelper.BoneMeshCollider` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> | Backing field for `Meshes`. |
-| <Link id="m-positionoffset" /><code>{"private Vector3 positionOffset"}</code> | Backing field for `PositionOffset`. |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> | <span className="api-desc">Backing field for `Meshes`.</span> |
+| <Link id="m-positionoffset" /><code>{"private Vector3 positionOffset"}</code> | <span className="api-desc">Backing field for `PositionOffset`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Settings for mesh colliders on a character bone. `CharacterCollisionControllerHe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> | The meshes to make colliders from, one collider each. |
-| <Link id="m-positionoffset-2" /><code>{"Vector3 PositionOffset { get; }"}</code> | Local position of the child object that holds the colliders. |
+| <Link id="m-meshes-2" /><code>{"Mesh[] Meshes { get; }"}</code> | <span className="api-desc">The meshes to make colliders from, one collider each.</span> |
+| <Link id="m-positionoffset-2" /><code>{"Vector3 PositionOffset { get; }"}</code> | <span className="api-desc">Local position of the child object that holds the colliders.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoneMeshCollider`:
 
+<div className="api-used-in">
+
 [`CharacterCollisionControllerHelper.meshColliders`](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper#m-meshcolliders).
+
+</div>

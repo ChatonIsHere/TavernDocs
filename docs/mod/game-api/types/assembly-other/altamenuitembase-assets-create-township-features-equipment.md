@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Equipment`: menu item classe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Equipment()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Equipment` with default values. |
+| <Link id="m-ctor" /><code>{"protected Equipment()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Equipment` with default values.</span> |

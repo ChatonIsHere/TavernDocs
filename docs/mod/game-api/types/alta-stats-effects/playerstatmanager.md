@@ -21,26 +21,26 @@ The `StatManager` on players, with a list of stats meant to carry over through d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerStatManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerStatManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definitionstokeepondeath" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] definitionsToKeepOnDeath"}</code> | Stats meant to keep their values when the player dies. |
+| <Link id="m-definitionstokeepondeath" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"[] definitionsToKeepOnDeath"}</code> | <span className="api-desc">Stats meant to keep their values when the player dies.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"private void Load("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private and not called anywhere in this build. Writes the kept stats into a stream and disposes it. |
+| <Link id="m-load" /><code>{"private void Load("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Private and not called anywhere in this build. Writes the kept stats into a stream and disposes it.</span> |
 
 </details>

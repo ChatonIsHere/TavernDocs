@@ -22,4 +22,4 @@ A serializable UnityEvent that passes a `ModifiableStaticObject`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ModifiableStaticUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

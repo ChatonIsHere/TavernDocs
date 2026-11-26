@@ -29,4 +29,8 @@ What happened in a population event (initialize, update, spawned, lost). Sent wi
 
 Members of other types that take, return or hold a `PopulationAction`:
 
+<div className="api-used-in">
+
 [`PopulationAnalytics.SendRecord`](/mod/game-api/types/alta-world-generation/populationanalytics#m-sendrecord), [`PopulationEventData.action`](/mod/game-api/types/alta-world-generation/populationeventdata#m-action), [`PopulationEventData.PopulationEventData`](/mod/game-api/types/alta-world-generation/populationeventdata#m-ctor).
+
+</div>

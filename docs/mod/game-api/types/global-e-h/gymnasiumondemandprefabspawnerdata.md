@@ -23,17 +23,21 @@ Save data for the feature test gymnasium's on-demand prefab spawner.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> | Creates a `GymnasiumOnDemandPrefabSpawnerData` with default values. |
+| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> | <span className="api-desc">Creates a `GymnasiumOnDemandPrefabSpawnerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> | Saved local position of the spawner's board. |
-| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> | Saved list of prefab hashes the spawner makes. |
+| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> | <span className="api-desc">Saved local position of the spawner's board.</span> |
+| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> | <span className="api-desc">Saved list of prefab hashes the spawner makes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GymnasiumOnDemandPrefabSpawnerData`:
 
+<div className="api-used-in">
+
 [`GymnasiumOnDemandPrefabSpawner.Load`](/mod/game-api/types/game-other-namespaces/gymnasiumondemandprefabspawner#m-load), [`GymnasiumOnDemandPrefabSpawner.Save`](/mod/game-api/types/game-other-namespaces/gymnasiumondemandprefabspawner#m-save).
+
+</div>

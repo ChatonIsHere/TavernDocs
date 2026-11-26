@@ -22,30 +22,30 @@ Deals one burst of area damage when it starts, to every health object in a spher
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AOEDamage()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AOEDamage()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-damage" /><code>{"private float damage"}</code> | Base damage dealt to each target. |
-| <Link id="m-damagedlayers" /><code>{"private LayerMask damagedLayers"}</code> | Layers searched for targets. Each hit collider needs an `ImpactDetector` in its parents. |
-| <Link id="m-damagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType"}</code> | Impact type set in the inspector. Not used by `Start`. |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the damage sphere. |
+| <Link id="m-damage" /><code>{"private float damage"}</code> | <span className="api-desc">Base damage dealt to each target.</span> |
+| <Link id="m-damagedlayers" /><code>{"private LayerMask damagedLayers"}</code> | <span className="api-desc">Layers searched for targets. Each hit collider needs an `ImpactDetector` in its parents.</span> |
+| <Link id="m-damagetype" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" damageType"}</code> | <span className="api-desc">Impact type set in the inspector. Not used by `Start`.</span> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Radius of the damage sphere.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the damage sphere in the editor. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Finds colliders in the sphere and damages each one's health target once (server only), with source `AreaOfEffect`. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the damage sphere in the editor.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Finds colliders in the sphere and damages each one's health target once (server only), with source `AreaOfEffect`.</span> |
 
 </details>

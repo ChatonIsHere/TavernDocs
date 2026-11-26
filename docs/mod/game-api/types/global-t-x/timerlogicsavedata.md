@@ -23,12 +23,12 @@ Save data (version 2) for `TimerLogic`: its duration and start and retrigger set
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> | Creates a `TimerLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> | <span className="api-desc">Creates a `TimerLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activedurationsaved" /><code>{"float activeDurationSaved"}</code> | Saved `activeDuration`, in seconds. |
-| <Link id="m-activeonloadsaved" /><code>{"bool activeOnLoadSaved"}</code> | Saved `activeOnLoad`: whether the timer starts on load. |
-| <Link id="m-timerresetswhenretriggeredsaved" /><code>{"bool timerResetsWhenRetriggeredSaved"}</code> | Saved `timerResetsWhenRetriggered`: whether starting it again restarts the countdown. |
+| <Link id="m-activedurationsaved" /><code>{"float activeDurationSaved"}</code> | <span className="api-desc">Saved `activeDuration`, in seconds.</span> |
+| <Link id="m-activeonloadsaved" /><code>{"bool activeOnLoadSaved"}</code> | <span className="api-desc">Saved `activeOnLoad`: whether the timer starts on load.</span> |
+| <Link id="m-timerresetswhenretriggeredsaved" /><code>{"bool timerResetsWhenRetriggeredSaved"}</code> | <span className="api-desc">Saved `timerResetsWhenRetriggered`: whether starting it again restarts the countdown.</span> |

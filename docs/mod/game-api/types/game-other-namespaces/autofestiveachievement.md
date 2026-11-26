@@ -21,16 +21,16 @@ Achievement that can only complete while its festivity is active.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AutoFestiveAchievement()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AutoFestiveAchievement()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | The festivity that must be active. |
+| <Link id="m-festivity" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity"}</code> | <span className="api-desc">The festivity that must be active.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Achievement that can only complete while its festivity is active.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-complete" /><code>{"override void Complete("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Completes the achievement only if the festivity is active. Logs an error if none is set. |
+| <Link id="m-complete" /><code>{"override void Complete("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Completes the achievement only if the festivity is active. Logs an error if none is set.</span> |

@@ -22,4 +22,4 @@ Editor menu entry for creating the `DurabilityGlobalSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DurabilityGlobalSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `DurabilityGlobalSettings.Create` with default values.</span> |

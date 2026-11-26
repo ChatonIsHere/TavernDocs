@@ -21,7 +21,7 @@ A link between two nodes for the A* pathfinder.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> | Cost of crossing this link. |
-| <Link id="m-from" /><code>{"TNode From { get; }"}</code> | Node the link starts at. |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> | Whether the link can be used right now. |
-| <Link id="m-to" /><code>{"TNode To { get; }"}</code> | Node the link leads to. |
+| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> | <span className="api-desc">Cost of crossing this link.</span> |
+| <Link id="m-from" /><code>{"TNode From { get; }"}</code> | <span className="api-desc">Node the link starts at.</span> |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> | <span className="api-desc">Whether the link can be used right now.</span> |
+| <Link id="m-to" /><code>{"TNode To { get; }"}</code> | <span className="api-desc">Node the link leads to.</span> |

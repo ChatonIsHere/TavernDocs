@@ -26,4 +26,8 @@ Types of game command message. The only value is `PrepareForUpdate`.
 
 Members of other types that take, return or hold a `CommandType`:
 
+<div className="api-used-in">
+
 [`GameCommandMessage.CommandType`](/mod/game-api/types/game-other-namespaces/gamecommandmessage#m-commandtype).
+
+</div>

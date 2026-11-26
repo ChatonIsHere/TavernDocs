@@ -21,17 +21,17 @@ Prefab scoring component that adds a `Grounded` rule. It has no multiplier, so i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GroundedOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GroundedOperation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-airvalue" /><code>{"private float airValue"}</code> | Value when the creature is in the air (default 0). |
-| <Link id="m-groundedvalue" /><code>{"private float groundedValue"}</code> | Value when the creature is grounded (default 1). |
+| <Link id="m-airvalue" /><code>{"private float airValue"}</code> | <span className="api-desc">Value when the creature is in the air (default 0).</span> |
+| <Link id="m-groundedvalue" /><code>{"private float groundedValue"}</code> | <span className="api-desc">Value when the creature is grounded (default 1).</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Prefab scoring component that adds a `Grounded` rule. It has no multiplier, so i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes the `Grounded` rule with these values. |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Grounded ? 1 : 0`. |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Makes the `Grounded` rule with these values.</span> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | <span className="api-desc">Builds the GameObject name, like `Grounded ? 1 : 0`.</span> |

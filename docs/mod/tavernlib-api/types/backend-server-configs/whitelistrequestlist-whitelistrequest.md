@@ -22,22 +22,22 @@ One whitelist application.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequest()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"WhitelistRequest()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-appliedat" /><code>{"string AppliedAt { get; set; }"}</code> | When it was filed, as UTC ISO 8601 text. |
-| <Link id="m-ip" /><code>{"string Ip { get; set; }"}</code> | The address it came from. |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | The name that applied. |
+| <Link id="m-appliedat" /><code>{"string AppliedAt { get; set; }"}</code> | <span className="api-desc">When it was filed, as UTC ISO 8601 text.</span> |
+| <Link id="m-ip" /><code>{"string Ip { get; set; }"}</code> | <span className="api-desc">The address it came from.</span> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | <span className="api-desc">The name that applied.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | <span className="api-desc">Holds JSON keys TavernLib doesn't model, so they are written back unchanged.</span> |
 
 </details>
 
@@ -45,4 +45,8 @@ One whitelist application.
 
 Members of other types that take, return or hold a `WhitelistRequest`:
 
+<div className="api-used-in">
+
 [`WhitelistRequestList.Requests`](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist#m-requests).
+
+</div>

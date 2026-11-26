@@ -21,15 +21,15 @@ A `LiquidContainer` that holds a reference to its `StewComponent`. Adds no behav
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StewContainer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StewContainer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stew" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" stew"}</code> | The stew component for this container. |
+| <Link id="m-stew" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/stewcomponent">{"StewComponent"}</Link>{" stew"}</code> | <span className="api-desc">The stew component for this container.</span> |
 
 </details>

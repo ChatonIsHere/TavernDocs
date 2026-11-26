@@ -21,5 +21,5 @@ Private pair of a player ID and a progression path, used inside `SkillShrine` wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | The progression path chosen. |
-| <Link id="m-playerid" /><code>{"int playerId"}</code> | ID of the player choosing it. |
+| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | <span className="api-desc">The progression path chosen.</span> |
+| <Link id="m-playerid" /><code>{"int playerId"}</code> | <span className="api-desc">ID of the player choosing it.</span> |

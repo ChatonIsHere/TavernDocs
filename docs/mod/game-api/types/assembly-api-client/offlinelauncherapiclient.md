@@ -21,11 +21,11 @@ Offline stand-in for the launcher client.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineLauncherApiClient()"}</code> | Creates an `OfflineLauncherApiClient` with default values. |
+| <Link id="m-ctor" /><code>{"OfflineLauncherApiClient()"}</code> | <span className="api-desc">Creates an `OfflineLauncherApiClient` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getalllaunchergamesasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> | Returns an empty list. |
-| <Link id="m-getlaunchergameasync" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> | Returns an empty `LauncherGameInfoFull`. |
+| <Link id="m-getalllaunchergamesasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> | <span className="api-desc">Returns an empty list.</span> |
+| <Link id="m-getlaunchergameasync" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> | <span className="api-desc">Returns an empty `LauncherGameInfoFull`.</span> |

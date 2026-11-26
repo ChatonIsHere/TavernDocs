@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/3rd Party/Rope Tools`: menu item classes inher
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Rope_Tools()"}</code> | Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools` with default values. |
+| <Link id="m-ctor" /><code>{"protected Rope_Tools()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools` with default values.</span> |

@@ -20,17 +20,21 @@ Body of an Alta web API request to verify an account with a token.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> | Creates a `VerifyUserRequest` with default values. |
-| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> | Creates a `VerifyUserRequest` with default values. |
+| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> | <span className="api-desc">Creates a `VerifyUserRequest` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> | <span className="api-desc">Creates a `VerifyUserRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-verificationtoken" /><code>{"string VerificationToken { get; set; }"}</code> | Token from the verification email. |
+| <Link id="m-verificationtoken" /><code>{"string VerificationToken { get; set; }"}</code> | <span className="api-desc">Token from the verification email.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `VerifyUserRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.VerifyUserAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-verifyuserasync).
+
+</div>

@@ -23,20 +23,20 @@ A numbered logic variable in the unused Prolog-like logic engine. Two variables 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> | Creates a `Variable` from `value`. |
+| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> | <span className="api-desc">Creates a `Variable` from `value`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-context" /><code><Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" Context { get; set; }"}</code> | The definition this variable belongs to. |
+| <Link id="m-context" /><code><Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" Context { get; set; }"}</code> | <span className="api-desc">The definition this variable belongs to.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"private int Value { get; set; }"}</code> | The variable's number. |
+| <Link id="m-value" /><code>{"private int Value { get; set; }"}</code> | <span className="api-desc">The variable's number.</span> |
 
 </details>
 
@@ -44,8 +44,8 @@ A numbered logic variable in the unused Prolog-like logic engine. Two variables 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-constantinitialize" /><code>{"override void ConstantInitialize("}<Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | Ties the variable to the definition it appears in. |
-| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> | True only for itself. |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Equal if the same object, or the same number in the same definition. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Combines the definition's hash and the number. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows the variable as `%` followed by its number. |
+| <Link id="m-constantinitialize" /><code>{"override void ConstantInitialize("}<Link to="/mod/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Ties the variable to the definition it appears in.</span> |
+| <Link id="m-contains" /><code>{"override bool Contains("}<Link to="/mod/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" other)"}</code> | <span className="api-desc">True only for itself.</span> |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">Equal if the same object, or the same number in the same definition.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Combines the definition's hash and the number.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Shows the variable as `%` followed by its number.</span> |

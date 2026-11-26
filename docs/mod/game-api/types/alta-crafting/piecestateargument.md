@@ -20,11 +20,11 @@ Network argument pairing a crafting piece hash with whether the piece is enabled
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> | Whether the piece is enabled. |
-| <Link id="m-piecehash" /><code>{"int pieceHash"}</code> | Hash of the piece. |
+| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> | <span className="api-desc">Whether the piece is enabled.</span> |
+| <Link id="m-piecehash" /><code>{"int pieceHash"}</code> | <span className="api-desc">Hash of the piece.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the hash and flag on a network stream. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes the hash and flag on a network stream.</span> |

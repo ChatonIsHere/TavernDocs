@@ -22,12 +22,12 @@ Inspector attribute that shows a comment box above a field.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/mod/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> | Creates a `CommentAttribute` from `message`, `numberOfLines` and `messageType`. |
+| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/mod/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> | <span className="api-desc">Creates a `CommentAttribute` from `message`, `numberOfLines` and `messageType`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> | Text shown. |
-| <Link id="m-numberoflines" /><code>{"float NumberOfLines { get; private set; }"}</code> | Height of the box in lines. Default 3. |
-| <Link id="m-typeofmessage" /><code><Link to="/mod/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" TypeOfMessage { get; private set; }"}</code> | Icon style: none, info, warning or error. |
+| <Link id="m-message" /><code>{"string Message { get; private set; }"}</code> | <span className="api-desc">Text shown.</span> |
+| <Link id="m-numberoflines" /><code>{"float NumberOfLines { get; private set; }"}</code> | <span className="api-desc">Height of the box in lines. Default 3.</span> |
+| <Link id="m-typeofmessage" /><code><Link to="/mod/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" TypeOfMessage { get; private set; }"}</code> | <span className="api-desc">Icon style: none, info, warning or error.</span> |

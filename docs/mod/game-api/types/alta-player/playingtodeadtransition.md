@@ -21,16 +21,16 @@ Playing to Dead transition. Its listeners are empty and nothing adds it, so in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToDeadTransition()"}</code> | Creates a `PlayingToDeadTransition` with default values. |
+| <Link id="m-ctor" /><code>{"PlayingToDeadTransition()"}</code> | <span className="api-desc">Creates a `PlayingToDeadTransition` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-killingimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> | The damage that killed the player. |
+| <Link id="m-killingimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> | <span className="api-desc">The damage that killed the player.</span> |
 
 </details>
 
@@ -38,16 +38,16 @@ Playing to Dead transition. Its listeners are empty and nothing adds it, so in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Does nothing. |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | Hands the killing damage to the new Dead state. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Does nothing. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | <span className="api-desc">Hands the killing damage to the new Dead state.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handledeath" /><code>{"private void HandleDeath("}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | Stores the killing damage and switches to Dead. Not hooked to anything. |
+| <Link id="m-handledeath" /><code>{"private void HandleDeath("}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | <span className="api-desc">Stores the killing damage and switches to Dead. Not hooked to anything.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ Playing to Dead transition. Its listeners are empty and nothing adds it, so in t
 
 Members of other types that take, return or hold a `PlayingToDeadTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.playingToDead`](/mod/game-api/types/alta-player/alltransitions#m-playingtodead), [`AllTransitions.PlayingToDeadTransition`](/mod/game-api/types/alta-player/alltransitions#m-playingtodeadtransition).
+
+</div>

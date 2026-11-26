@@ -22,35 +22,35 @@ Base for the liquid surface inside a container. It tracks how far the container 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected LiquidSurfaceVisual()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected LiquidSurfaceVisual()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>20 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidcontainerlod0" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" androidContainerLod0"}</code> | Visibility detector kept from an older field name; not used in code in this build. |
-| <Link id="m-colorid" /><code>{"private static readonly int ColorId"}</code> | Shader ID of `_Color`. |
-| <Link id="m-containerlod0" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" containerLod0"}</code> | Visibility detector on the container's main LOD; the surface only updates while it is visible (always on the server). |
-| <Link id="m-dynamicrenderer" /><code>{"private Renderer dynamicRenderer"}</code> | The renderer of the moving liquid surface. Backing field for `DynamicRenderer`. |
-| <Link id="m-dynamicrendererpropertyblock" /><code>{"private MaterialPropertyBlock dynamicRendererPropertyBlock"}</code> | Property block set on the surface renderer from the current liquid. Backing field for `DynamicRendererPropertyBlock`. |
-| <Link id="m-dynamicrenderertemplatematerial" /><code>{"private Material dynamicRendererTemplateMaterial"}</code> | The surface renderer's original material, used as the template for each liquid's material. |
-| <Link id="m-fullnesschanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" fullnessChanged"}</code> | Event raised with the new fullness value; exposed as `FullnessChanged`. |
-| <Link id="m-fullypouringlimit" /><code>{"private float fullyPouringLimit"}</code> | Tip value above which the container counts as fully pouring. |
-| <Link id="m-liquidgravity" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" liquidGravity"}</code> | Simulates the liquid sloshing and tipping as the container moves. Backing field for `LiquidGravity`. |
-| <Link id="m-lodpropertyblock" /><code>{"private MaterialPropertyBlock lodPropertyBlock"}</code> | Property block set on the lower LOD renderers from the current liquid. |
-| <Link id="m-otherlods" /><code>{"private Renderer[] otherLods"}</code> | Renderers for the lower LODs of the liquid; shown only while there is liquid. |
-| <Link id="m-tip" /><code>{"private float tip"}</code> | Read-only inspector value showing the current tip. |
-| <Link id="m-tippingthreshold" /><code>{"private float tippingThreshold"}</code> | Tip value at which the liquid starts to pour. Backing field for `TippingThreshold`. |
-| <Link id="m-tippingvalue" /><code>{"private float tippingValue"}</code> | Read-only inspector value for tipping; not written in this build. |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Late update module that runs `UpdateVisual` while the liquid is moving. |
-| <Link id="m-visualloop" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" visualLoop"}</code> | Handle of the registered `UpdateVisual` loop. |
-| <Link id="m-visualtiplimit" /><code>{"private float visualTipLimit"}</code> | Limit on how far the surface visually tips. Backing field for `VisualTipLimit`. |
-| <Link id="m-volumeclamp" /><code>{"private float volumeClamp"}</code> | Fullness is multiplied by this before the volume curve, so the surface never looks fuller than this. |
-| <Link id="m-volumecurve" /><code>{"private AnimationCurve volumeCurve"}</code> | Maps the container's fill amount to the visual fullness. |
-| <Link id="m-wasmoving" /><code>{"private bool wasMoving"}</code> | Moving state from the last fixed update, used to start and stop the visual loop. |
+| <Link id="m-androidcontainerlod0" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" androidContainerLod0"}</code> | <span className="api-desc">Visibility detector kept from an older field name; not used in code in this build.</span> |
+| <Link id="m-colorid" /><code>{"private static readonly int ColorId"}</code> | <span className="api-desc">Shader ID of `_Color`.</span> |
+| <Link id="m-containerlod0" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" containerLod0"}</code> | <span className="api-desc">Visibility detector on the container's main LOD; the surface only updates while it is visible (always on the server).</span> |
+| <Link id="m-dynamicrenderer" /><code>{"private Renderer dynamicRenderer"}</code> | <span className="api-desc">The renderer of the moving liquid surface. Backing field for `DynamicRenderer`.</span> |
+| <Link id="m-dynamicrendererpropertyblock" /><code>{"private MaterialPropertyBlock dynamicRendererPropertyBlock"}</code> | <span className="api-desc">Property block set on the surface renderer from the current liquid. Backing field for `DynamicRendererPropertyBlock`.</span> |
+| <Link id="m-dynamicrenderertemplatematerial" /><code>{"private Material dynamicRendererTemplateMaterial"}</code> | <span className="api-desc">The surface renderer's original material, used as the template for each liquid's material.</span> |
+| <Link id="m-fullnesschanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" fullnessChanged"}</code> | <span className="api-desc">Event raised with the new fullness value; exposed as `FullnessChanged`.</span> |
+| <Link id="m-fullypouringlimit" /><code>{"private float fullyPouringLimit"}</code> | <span className="api-desc">Tip value above which the container counts as fully pouring.</span> |
+| <Link id="m-liquidgravity" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" liquidGravity"}</code> | <span className="api-desc">Simulates the liquid sloshing and tipping as the container moves. Backing field for `LiquidGravity`.</span> |
+| <Link id="m-lodpropertyblock" /><code>{"private MaterialPropertyBlock lodPropertyBlock"}</code> | <span className="api-desc">Property block set on the lower LOD renderers from the current liquid.</span> |
+| <Link id="m-otherlods" /><code>{"private Renderer[] otherLods"}</code> | <span className="api-desc">Renderers for the lower LODs of the liquid; shown only while there is liquid.</span> |
+| <Link id="m-tip" /><code>{"private float tip"}</code> | <span className="api-desc">Read-only inspector value showing the current tip.</span> |
+| <Link id="m-tippingthreshold" /><code>{"private float tippingThreshold"}</code> | <span className="api-desc">Tip value at which the liquid starts to pour. Backing field for `TippingThreshold`.</span> |
+| <Link id="m-tippingvalue" /><code>{"private float tippingValue"}</code> | <span className="api-desc">Read-only inspector value for tipping; not written in this build.</span> |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | <span className="api-desc">Late update module that runs `UpdateVisual` while the liquid is moving.</span> |
+| <Link id="m-visualloop" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" visualLoop"}</code> | <span className="api-desc">Handle of the registered `UpdateVisual` loop.</span> |
+| <Link id="m-visualtiplimit" /><code>{"private float visualTipLimit"}</code> | <span className="api-desc">Limit on how far the surface visually tips. Backing field for `VisualTipLimit`.</span> |
+| <Link id="m-volumeclamp" /><code>{"private float volumeClamp"}</code> | <span className="api-desc">Fullness is multiplied by this before the volume curve, so the surface never looks fuller than this.</span> |
+| <Link id="m-volumecurve" /><code>{"private AnimationCurve volumeCurve"}</code> | <span className="api-desc">Maps the container's fill amount to the visual fullness.</span> |
+| <Link id="m-wasmoving" /><code>{"private bool wasMoving"}</code> | <span className="api-desc">Moving state from the last fixed update, used to start and stop the visual loop.</span> |
 
 </details>
 
@@ -58,55 +58,55 @@ Base for the liquid surface inside a container. It tracks how far the container 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dynamicrenderer-2" /><code>{"Renderer DynamicRenderer { get; }"}</code> | The renderer that draws the moving liquid surface. |
-| <Link id="m-dynamicrenderermaterial" /><code>{"Material DynamicRendererMaterial { get; internal set; }"}</code> | Instance material of the dynamic renderer, made in `SetLiquid`. |
-| <Link id="m-dynamicrendererpropertyblock-2" /><code>{"MaterialPropertyBlock DynamicRendererPropertyBlock { get; }"}</code> | Property block used on the dynamic renderer. |
-| <Link id="m-fullness" /><code>{"float Fullness { get; private set; }"}</code> | How full it looks, 0 to 1, after the volume curve. |
-| <Link id="m-iscontainervisible" /><code>{"bool IsContainerVisible { get; private set; }"}</code> | True while the container's LOD 0 is visible. |
-| <Link id="m-iscontainingliquid" /><code>{"bool IsContainingLiquid { get; private set; }"}</code> | True above 1% fullness. |
-| <Link id="m-isfullypouring" /><code>{"bool IsFullyPouring { get; }"}</code> | True when tipped past the fully pouring limit. |
-| <Link id="m-ismoving" /><code>{"bool IsMoving { get; private set; }"}</code> | True while the liquid surface is still moving. |
-| <Link id="m-isusingupdateloop" /><code>{"virtual bool IsUsingUpdateLoop { get; }"}</code> | Whether `UpdateVisual` runs while moving. True by default. |
-| <Link id="m-liquid" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" Liquid { get; private set; }"}</code> | The liquid shown. |
-| <Link id="m-liquidgravity-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" "}<Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" { get; }"}</code> | Tracks the tip and movement of the liquid. |
-| <Link id="m-otherrendererlods" /><code>{"List<Renderer> OtherRendererLODs { get; }"}</code> | Lower LOD renderers for the liquid, shown only when there is liquid. |
-| <Link id="m-tippingthreshold-2" /><code>{"float TippingThreshold { get; set; }"}</code> | Tip value at which the container starts to pour. |
-| <Link id="m-visualtiplimit-2" /><code>{"float VisualTipLimit { get; set; }"}</code> | Tip limit used for the surface visuals. |
+| <Link id="m-dynamicrenderer-2" /><code>{"Renderer DynamicRenderer { get; }"}</code> | <span className="api-desc">The renderer that draws the moving liquid surface.</span> |
+| <Link id="m-dynamicrenderermaterial" /><code>{"Material DynamicRendererMaterial { get; internal set; }"}</code> | <span className="api-desc">Instance material of the dynamic renderer, made in `SetLiquid`.</span> |
+| <Link id="m-dynamicrendererpropertyblock-2" /><code>{"MaterialPropertyBlock DynamicRendererPropertyBlock { get; }"}</code> | <span className="api-desc">Property block used on the dynamic renderer.</span> |
+| <Link id="m-fullness" /><code>{"float Fullness { get; private set; }"}</code> | <span className="api-desc">How full it looks, 0 to 1, after the volume curve.</span> |
+| <Link id="m-iscontainervisible" /><code>{"bool IsContainerVisible { get; private set; }"}</code> | <span className="api-desc">True while the container's LOD 0 is visible.</span> |
+| <Link id="m-iscontainingliquid" /><code>{"bool IsContainingLiquid { get; private set; }"}</code> | <span className="api-desc">True above 1% fullness.</span> |
+| <Link id="m-isfullypouring" /><code>{"bool IsFullyPouring { get; }"}</code> | <span className="api-desc">True when tipped past the fully pouring limit.</span> |
+| <Link id="m-ismoving" /><code>{"bool IsMoving { get; private set; }"}</code> | <span className="api-desc">True while the liquid surface is still moving.</span> |
+| <Link id="m-isusingupdateloop" /><code>{"virtual bool IsUsingUpdateLoop { get; }"}</code> | <span className="api-desc">Whether `UpdateVisual` runs while moving. True by default.</span> |
+| <Link id="m-liquid" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" Liquid { get; private set; }"}</code> | <span className="api-desc">The liquid shown.</span> |
+| <Link id="m-liquidgravity-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" "}<Link to="/mod/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" { get; }"}</code> | <span className="api-desc">Tracks the tip and movement of the liquid.</span> |
+| <Link id="m-otherrendererlods" /><code>{"List<Renderer> OtherRendererLODs { get; }"}</code> | <span className="api-desc">Lower LOD renderers for the liquid, shown only when there is liquid.</span> |
+| <Link id="m-tippingthreshold-2" /><code>{"float TippingThreshold { get; set; }"}</code> | <span className="api-desc">Tip value at which the container starts to pour.</span> |
+| <Link id="m-visualtiplimit-2" /><code>{"float VisualTipLimit { get; set; }"}</code> | <span className="api-desc">Tip limit used for the surface visuals.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dynamicrenderermaterialupdated" /><code>{"event Action DynamicRendererMaterialUpdated"}</code> | Raised after the materials change for a new liquid. |
-| <Link id="m-fullnesschanged-2" /><code>{"event Action<float> FullnessChanged"}</code> | Raised with the new fullness. |
-| <Link id="m-liquidchanged" /><code>{"event "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddataeventhandler">{"LiquidDataEventHandler"}</Link>{" LiquidChanged"}</code> | Raised when `SetLiquid` sets a new liquid. |
+| <Link id="m-dynamicrenderermaterialupdated" /><code>{"event Action DynamicRendererMaterialUpdated"}</code> | <span className="api-desc">Raised after the materials change for a new liquid.</span> |
+| <Link id="m-fullnesschanged-2" /><code>{"event Action<float> FullnessChanged"}</code> | <span className="api-desc">Raised with the new fullness.</span> |
+| <Link id="m-liquidchanged" /><code>{"event "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddataeventhandler">{"LiquidDataEventHandler"}</Link>{" LiquidChanged"}</code> | <span className="api-desc">Raised when `SetLiquid` sets a new liquid.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setfullness" /><code>{"virtual void SetFullness(float fullness)"}</code> | Sets how full it is (through the volume curve) and shows or hides the liquid. |
-| <Link id="m-setliquid" /><code>{"virtual void SetLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Shows a new liquid: sets thickness and materials and raises `LiquidChanged`. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets up property blocks and the tip tracker, and listens for the container becoming visible. |
-| <Link id="m-fixedupdate" /><code>{"protected virtual void FixedUpdate()"}</code> | Updates the tip tracker, and on clients starts or stops the visual update when movement starts or stops. |
-| <Link id="m-handleinvisible" /><code>{"protected virtual void HandleInvisible()"}</code> | Called when the container goes out of view. Stays enabled on the server. |
-| <Link id="m-handlevisible" /><code>{"protected virtual void HandleVisible()"}</code> | Called when the container comes into view; enables the visual if there is liquid. |
-| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | Hides the surface and stops the visual update. |
-| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | Resets the tip tracker, shows the surface and starts the visual update on clients. |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Pushes inspector changes to the tip tracker while playing. |
-| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected abstract void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Fills a property block for the LOD renderers from a liquid. Subclasses implement it. |
-| <Link id="m-setmaterialsacordingtoliquid" /><code>{"protected void SetMaterialsAcordingToLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Applies the liquid's material and property blocks to the dynamic and LOD renderers. |
-| <Link id="m-setpropertyblockfromliquid" /><code>{"protected abstract void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | Fills a property block from a liquid. Subclasses implement it. |
-| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected abstract Material SetupMaterialFromLiquidVisualSettings("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> | Builds the shared material for a liquid visual from the template. Subclasses implement it. |
-| <Link id="m-updatevisual" /><code>{"protected abstract void UpdateVisual()"}</code> | Redraws the surface while it moves. Subclasses implement it. |
+| <Link id="m-setfullness" /><code>{"virtual void SetFullness(float fullness)"}</code> | <span className="api-desc">Sets how full it is (through the volume curve) and shows or hides the liquid.</span> |
+| <Link id="m-setliquid" /><code>{"virtual void SetLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Shows a new liquid: sets thickness and materials and raises `LiquidChanged`.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Sets up property blocks and the tip tracker, and listens for the container becoming visible.</span> |
+| <Link id="m-fixedupdate" /><code>{"protected virtual void FixedUpdate()"}</code> | <span className="api-desc">Updates the tip tracker, and on clients starts or stops the visual update when movement starts or stops.</span> |
+| <Link id="m-handleinvisible" /><code>{"protected virtual void HandleInvisible()"}</code> | <span className="api-desc">Called when the container goes out of view. Stays enabled on the server.</span> |
+| <Link id="m-handlevisible" /><code>{"protected virtual void HandleVisible()"}</code> | <span className="api-desc">Called when the container comes into view; enables the visual if there is liquid.</span> |
+| <Link id="m-ondisable" /><code>{"protected virtual void OnDisable()"}</code> | <span className="api-desc">Hides the surface and stops the visual update.</span> |
+| <Link id="m-onenable" /><code>{"protected virtual void OnEnable()"}</code> | <span className="api-desc">Resets the tip tracker, shows the surface and starts the visual update on clients.</span> |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Pushes inspector changes to the tip tracker while playing.</span> |
+| <Link id="m-setlodrendererpropertyblockfromliquid" /><code>{"protected abstract void SetLODRendererPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Fills a property block for the LOD renderers from a liquid. Subclasses implement it.</span> |
+| <Link id="m-setmaterialsacordingtoliquid" /><code>{"protected void SetMaterialsAcordingToLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Applies the liquid's material and property blocks to the dynamic and LOD renderers.</span> |
+| <Link id="m-setpropertyblockfromliquid" /><code>{"protected abstract void SetPropertyBlockFromLiquid(MaterialPropertyBlock propertyBlock, "}<Link to="/mod/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" liquid)"}</code> | <span className="api-desc">Fills a property block from a liquid. Subclasses implement it.</span> |
+| <Link id="m-setupmaterialfromliquidvisualsettings" /><code>{"protected abstract Material SetupMaterialFromLiquidVisualSettings("}<Link to="/mod/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" visualSettings, Material materialTemplate)"}</code> | <span className="api-desc">Builds the shared material for a liquid visual from the template. Subclasses implement it.</span> |
+| <Link id="m-updatevisual" /><code>{"protected abstract void UpdateVisual()"}</code> | <span className="api-desc">Redraws the surface while it moves. Subclasses implement it.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the container visibility events. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops missing renderers from the other LODs list. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Unhooks the container visibility events.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: drops missing renderers from the other LODs list.</span> |
 
 </details>
 
@@ -114,4 +114,8 @@ Base for the liquid surface inside a container. It tracks how far the container 
 
 Members of other types that take, return or hold a `LiquidSurfaceVisual`:
 
+<div className="api-used-in">
+
 [`ILiquidContainer.SurfaceVisual`](/mod/game-api/types/alta-stats-effects/iliquidcontainer#m-surfacevisual), [`LiquidContainer.surfaceVisual`](/mod/game-api/types/alta-stats-effects/liquidcontainer#m-surfacevisual), [`LiquidContainer.SurfaceVisual`](/mod/game-api/types/alta-stats-effects/liquidcontainer#m-surfacevisual-2), [`PickupLiquidContainerEnabler.surfaceVisual`](/mod/game-api/types/alta-stats-effects/pickupliquidcontainerenabler#m-surfacevisual), [`StaticLiquidContainer.Alta.Liquid.ILiquidContainer.SurfaceVisual`](/mod/game-api/types/alta-stats-effects/staticliquidcontainer#m-alta-liquid-iliquidcontainer-surfacevisual).
+
+</div>

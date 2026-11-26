@@ -22,16 +22,20 @@ Pod template inside an Agones game server spec.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerTemplate()"}</code> | Creates a `GameServerSpec.GameServerTemplate` with default values. |
+| <Link id="m-ctor" /><code>{"GameServerTemplate()"}</code> | <span className="api-desc">Creates a `GameServerSpec.GameServerTemplate` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spec" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec"}</Link>{" Spec { get; set; }"}</code> | The pod spec with its containers. |
+| <Link id="m-spec" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec">{"GameServerSpec.GameServerTemplate.GameServerTemplateSpec"}</Link>{" Spec { get; set; }"}</code> | <span className="api-desc">The pod spec with its containers.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GameServerTemplate`:
 
+<div className="api-used-in">
+
 [`GameServerSpec.Template`](/mod/game-api/types/assembly-api-models/gameserverspec#m-template).
+
+</div>

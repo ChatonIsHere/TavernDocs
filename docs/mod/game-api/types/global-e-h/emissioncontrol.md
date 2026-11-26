@@ -23,20 +23,20 @@ Pooled effect that scales the emission rate of a set of particle systems. It tur
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmissionControl()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmissionControl()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-systemstochange" /><code>{"protected ParticleSystem[] systemsToChange"}</code> | The particle systems whose emission this component scales. Set in the inspector. |
+| <Link id="m-systemstochange" /><code>{"protected ParticleSystem[] systemsToChange"}</code> | <span className="api-desc">The particle systems whose emission this component scales. Set in the inspector.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialvalues" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/emissioncontrol-initialvalues">{"EmissionControl.InitialValues"}</Link>{"[] initialValues"}</code> | Starting rate over time and rate over distance for each system, captured in `SetupSystems`. |
+| <Link id="m-initialvalues" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/emissioncontrol-initialvalues">{"EmissionControl.InitialValues"}</Link>{"[] initialValues"}</code> | <span className="api-desc">Starting rate over time and rate over distance for each system, captured in `SetupSystems`.</span> |
 
 </details>
 
@@ -44,18 +44,18 @@ Pooled effect that scales the emission rate of a set of particle systems. It tur
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> | Sets emission to zero, unparents the object and returns it to the pool. |
-| <Link id="m-setemissionmultiplier" /><code>{"void SetEmissionMultiplier(float value)"}</code> | Scales rate over time and rate over distance of every system by the value, relative to their starting rates. |
-| <Link id="m-resetsystems" /><code>{"protected virtual void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Hooked to the pool's `Requested` event; restores emission to full (multiplier 1). |
-| <Link id="m-setupsystems" /><code>{"protected virtual void SetupSystems()"}</code> | Subscribes `ResetSystems` to `Requested` and stores each system's starting emission rates. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | <span className="api-desc">Sets emission to zero, unparents the object and returns it to the pool.</span> |
+| <Link id="m-setemissionmultiplier" /><code>{"void SetEmissionMultiplier(float value)"}</code> | <span className="api-desc">Scales rate over time and rate over distance of every system by the value, relative to their starting rates.</span> |
+| <Link id="m-resetsystems" /><code>{"protected virtual void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Hooked to the pool's `Requested` event; restores emission to full (multiplier 1).</span> |
+| <Link id="m-setupsystems" /><code>{"protected virtual void SetupSystems()"}</code> | <span className="api-desc">Subscribes `ResetSystems` to `Requested` and stores each system's starting emission rates.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Calls `SetupSystems` to record the starting emission rates. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops null entries from `systemsToChange` and re-runs `SetupSystems` if any were removed. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Calls `SetupSystems` to record the starting emission rates.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: drops null entries from `systemsToChange` and re-runs `SetupSystems` if any were removed.</span> |
 
 </details>
 
@@ -63,4 +63,8 @@ Pooled effect that scales the emission rate of a set of particle systems. It tur
 
 Members of other types that take, return or hold a `EmissionControl`:
 
+<div className="api-used-in">
+
 [`CookingPoint.particles`](/mod/game-api/types/alta-crafting/cookingpoint#m-particles), [`CookingPoint.Particles`](/mod/game-api/types/alta-crafting/cookingpoint#m-particles-2).
+
+</div>

@@ -21,11 +21,15 @@ Marks a garnish that a cooking pot can take in. `CookingPot` looks for it on ite
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookingplayer" /><code><Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" CookingPlayer { get; }"}</code> | The player who added the garnish. The built-in implementation uses the last player who held the pickup. |
-| <Link id="m-garnishitem" /><code><Link to="/mod/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{" GarnishItem { get; }"}</code> | The garnish definition this item adds to the stew. |
+| <Link id="m-cookingplayer" /><code><Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" CookingPlayer { get; }"}</code> | <span className="api-desc">The player who added the garnish. The built-in implementation uses the last player who held the pickup.</span> |
+| <Link id="m-garnishitem" /><code><Link to="/mod/game-api/types/alta-crafting/cookinggarnish">{"CookingGarnish"}</Link>{" GarnishItem { get; }"}</code> | <span className="api-desc">The garnish definition this item adds to the stew.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ICookingGarnishMarker`:
 
+<div className="api-used-in">
+
 [`CookingPot.containedGarnishes`](/mod/game-api/types/alta-crafting/cookingpot#m-containedgarnishes), [`CookingPot.GarnishAdded`](/mod/game-api/types/alta-crafting/cookingpot#m-garnishadded), [`StewManager.AddGarnishToStew`](/mod/game-api/types/alta-crafting/stewmanager#m-addgarnishtostew).
+
+</div>

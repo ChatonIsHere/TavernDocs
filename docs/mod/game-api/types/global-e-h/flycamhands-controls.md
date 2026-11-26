@@ -29,4 +29,8 @@ Private list of the actions the fly cam hands can do: spark, invisibility and hi
 
 Members of other types that take, return or hold a `Controls`:
 
+<div className="api-used-in">
+
 [`FlyCamHands.ReceiveControls`](/mod/game-api/types/global-e-h/flycamhands#m-receivecontrols), [`FlyCamHands.syncInput`](/mod/game-api/types/global-e-h/flycamhands#m-syncinput).
+
+</div>

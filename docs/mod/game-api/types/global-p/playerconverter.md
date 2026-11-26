@@ -21,17 +21,17 @@ Type converter that turns a string (username or user ID) into an online player, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerConverter()"}</code> | Creates a `PlayerConverter` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerConverter()"}</code> | <span className="api-desc">Creates a `PlayerConverter` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-last" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Last { get; private set; }"}</code> | The player from the last conversion, which stat converters use to look up stats. |
+| <Link id="m-last" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Last { get; private set; }"}</code> | <span className="api-desc">The player from the last conversion, which stat converters use to look up stats.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Finds an online player by username or ID, ignoring case, then again ignoring spaces and underscores. Null if none. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Finds an online player by username or ID, ignoring case, then again ignoring spaces and underscores. Null if none.</span> |

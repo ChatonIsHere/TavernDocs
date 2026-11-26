@@ -20,14 +20,14 @@ Static cache of coroutine yield objects, so coroutines can reuse them instead of
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-endofframe" /><code>{"private static WaitForEndOfFrame endOfFrame"}</code> | Backing field for `EndOfFrame`. |
-| <Link id="m-fixedupdate" /><code>{"private static WaitForFixedUpdate fixedUpdate"}</code> | Backing field for `FixedUpdate`. |
-| <Link id="m-timedyields" /><code>{"private static Dictionary<float, WaitForSeconds> timedYields"}</code> | Cache of `WaitForSeconds` objects keyed by time, compared with a 0.01 second tolerance. |
+| <Link id="m-endofframe" /><code>{"private static WaitForEndOfFrame endOfFrame"}</code> | <span className="api-desc">Backing field for `EndOfFrame`.</span> |
+| <Link id="m-fixedupdate" /><code>{"private static WaitForFixedUpdate fixedUpdate"}</code> | <span className="api-desc">Backing field for `FixedUpdate`.</span> |
+| <Link id="m-timedyields" /><code>{"private static Dictionary<float, WaitForSeconds> timedYields"}</code> | <span className="api-desc">Cache of `WaitForSeconds` objects keyed by time, compared with a 0.01 second tolerance.</span> |
 
 </details>
 
@@ -35,11 +35,11 @@ Static cache of coroutine yield objects, so coroutines can reuse them instead of
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-endofframe-2" /><code>{"static WaitForEndOfFrame EndOfFrame { get; }"}</code> | A shared `WaitForEndOfFrame`. |
-| <Link id="m-fixedupdate-2" /><code>{"static WaitForFixedUpdate FixedUpdate { get; }"}</code> | A shared `WaitForFixedUpdate`. |
+| <Link id="m-endofframe-2" /><code>{"static WaitForEndOfFrame EndOfFrame { get; }"}</code> | <span className="api-desc">A shared `WaitForEndOfFrame`.</span> |
+| <Link id="m-fixedupdate-2" /><code>{"static WaitForFixedUpdate FixedUpdate { get; }"}</code> | <span className="api-desc">A shared `WaitForFixedUpdate`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waitforseconds" /><code>{"static WaitForSeconds WaitForSeconds(float seconds)"}</code> | Returns a cached `WaitForSeconds` for the given time, creating it on first use. Times within 0.01 seconds count as the same. |
+| <Link id="m-waitforseconds" /><code>{"static WaitForSeconds WaitForSeconds(float seconds)"}</code> | <span className="api-desc">Returns a cached `WaitForSeconds` for the given time, creating it on first use. Times within 0.01 seconds count as the same.</span> |

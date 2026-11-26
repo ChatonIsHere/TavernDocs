@@ -23,17 +23,17 @@ Impact asset that sets how much damage a channel deals to health, or whether it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HealthChannel()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HealthChannel()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> | Backing field for `IsOneHit`. |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Backing field for `Multiplier`. |
+| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> | <span className="api-desc">Backing field for `IsOneHit`.</span> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Backing field for `Multiplier`.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Impact asset that sets how much damage a channel deals to health, or whether it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> | True if a hit on this channel destroys the target in one go. |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | Damage multiplier for this channel. |
+| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> | <span className="api-desc">True if a hit on this channel destroys the target in one go.</span> |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | <span className="api-desc">Damage multiplier for this channel.</span> |

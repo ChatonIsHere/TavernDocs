@@ -23,22 +23,22 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> | Creates a `ForgedPoint` with default values. |
+| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> | <span className="api-desc">Creates a `ForgedPoint` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> | Heat conductivity multiplier when fully forged. |
-| <Link id="m-heatpoint" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> | Backing field for `HeatPoint`. |
-| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> | Heat conductivity multiplier when not forged at all. |
-| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> | True when progress changed since the last sync. |
-| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> | True once progress reaches 1, so it syncs as finished. |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | Backing field for `Progress`. |
-| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> | How much hammer damage adds to progress, also scaled by the metal's glow. |
+| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> | <span className="api-desc">Heat conductivity multiplier when fully forged.</span> |
+| <Link id="m-heatpoint" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> | <span className="api-desc">Backing field for `HeatPoint`.</span> |
+| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> | <span className="api-desc">Heat conductivity multiplier when not forged at all.</span> |
+| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> | <span className="api-desc">True when progress changed since the last sync.</span> |
+| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> | <span className="api-desc">True once progress reaches 1, so it syncs as finished.</span> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">Backing field for `Progress`.</span> |
+| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> | <span className="api-desc">How much hammer damage adds to progress, also scaled by the metal's glow.</span> |
 
 </details>
 
@@ -46,35 +46,35 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The forged item's entity. |
-| <Link id="m-glow" /><code>{"float Glow { get; }"}</code> | How hot the point is, from its heat point. Hammering scales with it. |
-| <Link id="m-heatpoint-2" /><code><Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" HeatPoint { get; }"}</code> | The `MetalHeatPoint` on the same object. |
-| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> | How forged the point is, from 0 to 1. Also changes the heat point's conductivity. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | <span className="api-desc">The forged item's entity.</span> |
+| <Link id="m-glow" /><code>{"float Glow { get; }"}</code> | <span className="api-desc">How hot the point is, from its heat point. Hammering scales with it.</span> |
+| <Link id="m-heatpoint-2" /><code><Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" HeatPoint { get; }"}</code> | <span className="api-desc">The `MetalHeatPoint` on the same object.</span> |
+| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> | <span className="api-desc">How forged the point is, from 0 to 1. Also changes the heat point's conductivity.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{"> Changed"}</code> | Raised when progress changes. |
+| <Link id="m-changed" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{"> Changed"}</code> | <span className="api-desc">Raised when progress changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{" other)"}</code> | Copies another point's progress. |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{"> collection)"}</code> | Does nothing. |
-| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Does nothing. |
-| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{" other)"}</code> | True if both points have the same progress. |
-| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | True if progress changed since the last sync. |
-| <Link id="m-sync" /><code>{"void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads progress, as a finished flag or a 0 to 1 value. Remote clients apply it. |
-| <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> | Server: adds damage times the multiplier times the glow. 0.99 or more counts as finished. |
+| <Link id="m-copyfrom" /><code>{"void CopyFrom("}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{" other)"}</code> | <span className="api-desc">Copies another point's progress.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/global-c-d/childsyncablecollectionbase-t">{"ChildSyncableCollectionBase"}</Link>{"<"}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{"> collection)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-initializeasserver" /><code>{"void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-isequal" /><code>{"bool IsEqual("}<Link to="/mod/game-api/types/alta-crafting/forgedpoint">{"ForgedPoint"}</Link>{" other)"}</code> | <span className="api-desc">True if both points have the same progress.</span> |
+| <Link id="m-isneedingsync" /><code>{"bool IsNeedingSync()"}</code> | <span className="api-desc">True if progress changed since the last sync.</span> |
+| <Link id="m-sync" /><code>{"void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes or reads progress, as a finished flag or a 0 to 1 value. Remote clients apply it.</span> |
+| <Link id="m-takedamage" /><code>{"void TakeDamage(float damage)"}</code> | <span className="api-desc">Server: adds damage times the multiplier times the glow. 0.99 or more counts as finished.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Marks the point for sync, updates the heat point's thickness conductivity from progress and fires `Changed`. |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | <span className="api-desc">Marks the point for sync, updates the heat point's thickness conductivity from progress and fires `Changed`.</span> |
 
 </details>
 
@@ -82,4 +82,8 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 
 Members of other types that take, return or hold a `ForgedPoint`:
 
+<div className="api-used-in">
+
 [`ForgedModel<TB, TA>.forgedPoints`](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta#m-forgedpoints), [`ForgedModel<TB, TA>.ForgedPoints`](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta#m-forgedpoints-2), [`ForgedModel<TB, TA>.GreenPoints`](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta#m-greenpoints).
+
+</div>

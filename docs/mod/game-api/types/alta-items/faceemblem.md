@@ -23,10 +23,14 @@ A book flair asset for the emblem on a book's cover. Used by `FlairSettings` whe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FaceEmblem()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FaceEmblem()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FaceEmblem`:
 
+<div className="api-used-in">
+
 [`FlairSettings.emblem`](/mod/game-api/types/alta-items/flairsettings#m-emblem), [`FlairSettings.Emblem`](/mod/game-api/types/alta-items/flairsettings#m-emblem-2).
+
+</div>

@@ -21,17 +21,17 @@ Empty `ModBase` named "Empty Mod" that does nothing on start or stop.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FixMod()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FixMod()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Always "Empty Mod". |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | <span className="api-desc">Always "Empty Mod".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | Does nothing. |
-| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> | Does nothing. |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> | <span className="api-desc">Does nothing.</span> |

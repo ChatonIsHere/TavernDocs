@@ -20,12 +20,12 @@ Moves the game's hard-coded web server (1761) and websocket console (1760) to `w
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ports" /><code>{"private static "}<Link to="/mod/tavernlib-api/types/backend-server-configs/tavernserver">{"TavernServer"}</Link>{" Ports { get; }"}</code> | The last-read `tavern_server.json` settings for the web and console ports, or null before `TavernManager` exists. |
+| <Link id="m-ports" /><code>{"private static "}<Link to="/mod/tavernlib-api/types/backend-server-configs/tavernserver">{"TavernServer"}</Link>{" Ports { get; }"}</code> | <span className="api-desc">The last-read `tavern_server.json` settings for the web and console ports, or null before `TavernManager` exists.</span> |
 
 </details>
 
@@ -33,6 +33,6 @@ Moves the game's hard-coded web server (1761) and websocket console (1760) to `w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consoleport" /><code>{"static int ConsolePort()"}</code> | The console port from `tavern_server.json`, or 1760 without one. Called from the patched `WebSocketRemoteConsole.Start`. |
-| <Link id="m-consoleporttranspiler" /><code>{"static IEnumerable<CodeInstruction> ConsolePortTranspiler(IEnumerable<CodeInstruction> instructions) (iterator)"}</code> | Transpiler on `WebSocketRemoteConsole.Start` that swaps the constant 1760 for a call to `ConsolePort`. Warns unless it found exactly one. |
-| <Link id="m-webport" /><code>{"static void WebPort(ref int port)"}</code> | Prefix on the `WebServerThread` constructor that changes a port of 1761 to the configured web port. |
+| <Link id="m-consoleport" /><code>{"static int ConsolePort()"}</code> | <span className="api-desc">The console port from `tavern_server.json`, or 1760 without one. Called from the patched `WebSocketRemoteConsole.Start`.</span> |
+| <Link id="m-consoleporttranspiler" /><code>{"static IEnumerable<CodeInstruction> ConsolePortTranspiler(IEnumerable<CodeInstruction> instructions) (iterator)"}</code> | <span className="api-desc">Transpiler on `WebSocketRemoteConsole.Start` that swaps the constant 1760 for a call to `ConsolePort`. Warns unless it found exactly one.</span> |
+| <Link id="m-webport" /><code>{"static void WebPort(ref int port)"}</code> | <span className="api-desc">Prefix on the `WebServerThread` constructor that changes a port of 1761 to the configured web port.</span> |

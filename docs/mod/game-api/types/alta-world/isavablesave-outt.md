@@ -22,4 +22,4 @@ The saving half of `ISavable<T>`: a component that can produce its save data.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-save" /><code>{"T Save("}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Server: returns this component's current state as save data. Child entities go through the given child serializer. |
+| <Link id="m-save" /><code>{"T Save("}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | <span className="api-desc">Server: returns this component's current state as save data. Child entities go through the given child serializer.</span> |

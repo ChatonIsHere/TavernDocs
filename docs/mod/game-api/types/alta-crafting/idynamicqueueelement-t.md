@@ -21,5 +21,5 @@ An element of a doubly linked queue that keeps its own `Next` and `Previous` lin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> | The next element in the queue. |
-| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> | The previous element in the queue. |
+| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> | <span className="api-desc">The next element in the queue.</span> |
+| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> | <span className="api-desc">The previous element in the queue.</span> |

@@ -21,10 +21,14 @@ Data for a zone trigger event, passed to `ZoneEvent.Trigger` and used for area a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | Name of the event, as sent to analytics. |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | <span className="api-desc">Name of the event, as sent to analytics.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ITriggerEventData`:
 
+<div className="api-used-in">
+
 [`AreaTriggerAnalyticsEvent.AreaTriggerAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/areatriggeranalyticsevent#m-ctor), [`DebugTriggerEvent.Trigger`](/mod/game-api/types/game-other-namespaces/debugtriggerevent#m-trigger), [`SetChallengeCheckpointTriggerEvent.Trigger`](/mod/game-api/types/game-other-namespaces/setchallengecheckpointtriggerevent#m-trigger), [`ZoneAnalyticsTriggerEvent.Trigger`](/mod/game-api/types/game-other-namespaces/zoneanalyticstriggerevent#m-trigger), [`ZoneEvent.Trigger`](/mod/game-api/types/game-other-namespaces/zoneevent#m-trigger).
+
+</div>

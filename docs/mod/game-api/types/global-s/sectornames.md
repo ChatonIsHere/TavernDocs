@@ -21,17 +21,17 @@ XML-serializable list of `SectorName` entries.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SectorNames()"}</code> | Creates a `SectorNames` with default values. |
+| <Link id="m-ctor" /><code>{"SectorNames()"}</code> | <span className="api-desc">Creates a `SectorNames` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-names" /><code>{"List<"}<Link to="/mod/game-api/types/global-s/sectorname">{"SectorName"}</Link>{"> names"}</code> | The sector names. |
+| <Link id="m-names" /><code>{"List<"}<Link to="/mod/game-api/types/global-s/sectorname">{"SectorName"}</Link>{"> names"}</code> | <span className="api-desc">The sector names.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"static "}<Link to="/mod/game-api/types/global-s/sectornames">{"SectorNames"}</Link>{" Load(string path)"}</code> | Reads a `SectorNames` list from an XML file. The decompiled body is incomplete. |
-| <Link id="m-save" /><code>{"void Save(string path)"}</code> | Writes the list to an XML file. The decompiled body is incomplete. |
+| <Link id="m-load" /><code>{"static "}<Link to="/mod/game-api/types/global-s/sectornames">{"SectorNames"}</Link>{" Load(string path)"}</code> | <span className="api-desc">Reads a `SectorNames` list from an XML file. The decompiled body is incomplete.</span> |
+| <Link id="m-save" /><code>{"void Save(string path)"}</code> | <span className="api-desc">Writes the list to an XML file. The decompiled body is incomplete.</span> |

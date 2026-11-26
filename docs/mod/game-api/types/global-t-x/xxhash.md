@@ -21,21 +21,21 @@ Seeded 32-bit xxHash, a `HashFunction`. Cave generation uses it to get repeatabl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> | Creates a `XXHash` from `seed`. |
+| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> | <span className="api-desc">Creates a `XXHash` from `seed`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prime32-1" /><code>{"private const uint PRIME32_1"}</code> | xxHash32 prime constant. |
-| <Link id="m-prime32-2" /><code>{"private const uint PRIME32_2"}</code> | xxHash32 prime constant. |
-| <Link id="m-prime32-3" /><code>{"private const uint PRIME32_3"}</code> | xxHash32 prime constant. |
-| <Link id="m-prime32-4" /><code>{"private const uint PRIME32_4"}</code> | xxHash32 prime constant. |
-| <Link id="m-prime32-5" /><code>{"private const uint PRIME32_5"}</code> | xxHash32 prime constant. |
-| <Link id="m-seed" /><code>{"private uint seed"}</code> | Seed mixed into every hash. |
+| <Link id="m-prime32-1" /><code>{"private const uint PRIME32_1"}</code> | <span className="api-desc">xxHash32 prime constant.</span> |
+| <Link id="m-prime32-2" /><code>{"private const uint PRIME32_2"}</code> | <span className="api-desc">xxHash32 prime constant.</span> |
+| <Link id="m-prime32-3" /><code>{"private const uint PRIME32_3"}</code> | <span className="api-desc">xxHash32 prime constant.</span> |
+| <Link id="m-prime32-4" /><code>{"private const uint PRIME32_4"}</code> | <span className="api-desc">xxHash32 prime constant.</span> |
+| <Link id="m-prime32-5" /><code>{"private const uint PRIME32_5"}</code> | <span className="api-desc">xxHash32 prime constant.</span> |
+| <Link id="m-seed" /><code>{"private uint seed"}</code> | <span className="api-desc">Seed mixed into every hash.</span> |
 
 </details>
 
@@ -43,18 +43,18 @@ Seeded 32-bit xxHash, a `HashFunction`. Cave generation uses it to get repeatabl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethash" /><code>{"uint GetHash(byte[] buf)"}</code> | Hashes a byte array, a uint or int array, or a single int, mixed with the seed. |
-| <Link id="m-gethash-2" /><code>{"uint GetHash(params uint[] buf)"}</code> | Hashes a byte array, a uint or int array, or a single int, mixed with the seed. |
-| <Link id="m-gethash-3" /><code>{"override uint GetHash(params int[] buf)"}</code> | Hashes a byte array, a uint or int array, or a single int, mixed with the seed. |
-| <Link id="m-gethash-4" /><code>{"override uint GetHash(int buf)"}</code> | Hashes a byte array, a uint or int array, or a single int, mixed with the seed. |
+| <Link id="m-gethash" /><code>{"uint GetHash(byte[] buf)"}</code> | <span className="api-desc">Hashes a byte array, a uint or int array, or a single int, mixed with the seed.</span> |
+| <Link id="m-gethash-2" /><code>{"uint GetHash(params uint[] buf)"}</code> | <span className="api-desc">Hashes a byte array, a uint or int array, or a single int, mixed with the seed.</span> |
+| <Link id="m-gethash-3" /><code>{"override uint GetHash(params int[] buf)"}</code> | <span className="api-desc">Hashes a byte array, a uint or int array, or a single int, mixed with the seed.</span> |
+| <Link id="m-gethash-4" /><code>{"override uint GetHash(int buf)"}</code> | <span className="api-desc">Hashes a byte array, a uint or int array, or a single int, mixed with the seed.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calcsubhash" /><code>{"private static uint CalcSubHash(uint value, byte[] buf, int index)"}</code> | One xxHash lane round on 4 bytes or one uint. |
-| <Link id="m-calcsubhash-2" /><code>{"private static uint CalcSubHash(uint value, uint read_value)"}</code> | One xxHash lane round on 4 bytes or one uint. |
-| <Link id="m-rotateleft" /><code>{"private static uint RotateLeft(uint value, int count)"}</code> | 32-bit rotate left. |
+| <Link id="m-calcsubhash" /><code>{"private static uint CalcSubHash(uint value, byte[] buf, int index)"}</code> | <span className="api-desc">One xxHash lane round on 4 bytes or one uint.</span> |
+| <Link id="m-calcsubhash-2" /><code>{"private static uint CalcSubHash(uint value, uint read_value)"}</code> | <span className="api-desc">One xxHash lane round on 4 bytes or one uint.</span> |
+| <Link id="m-rotateleft" /><code>{"private static uint RotateLeft(uint value, int count)"}</code> | <span className="api-desc">32-bit rotate left.</span> |
 
 </details>

@@ -21,16 +21,16 @@ Json.NET contract resolver that lets a `JsonPropertyFilterAttribute` on a member
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> | Creates an `AltaContractResolver` with default values. |
+| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> | <span className="api-desc">Creates an `AltaContractResolver` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settings" /><code>{"static JsonSerializerSettings settings"}</code> | Ready-made serializer settings: indented output with this resolver. |
+| <Link id="m-settings" /><code>{"static JsonSerializerSettings settings"}</code> | <span className="api-desc">Ready-made serializer settings: indented output with this resolver.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> | Builds the property as usual, then wraps its value provider with the member's filter attribute, if any. |
+| <Link id="m-createproperty" /><code>{"protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)"}</code> | <span className="api-desc">Builds the property as usual, then wraps its value provider with the member's filter attribute, if any.</span> |

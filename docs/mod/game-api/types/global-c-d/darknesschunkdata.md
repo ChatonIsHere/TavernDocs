@@ -22,10 +22,10 @@ Chunk effect asset that turns darkness on while the player is in its chunks (for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DarknessChunkData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DarknessChunkData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | Sets `DarknessTrigger` dark when the chunk contains the player and light when not. |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | <span className="api-desc">Sets `DarknessTrigger` dark when the chunk contains the player and light when not.</span> |

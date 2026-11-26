@@ -22,18 +22,18 @@ Base for the game's VContainer lifetime scopes. Subclasses register their bindin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> | Creates an `AbstractAltaLifetimeScope` with default values. |
+| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> | <span className="api-desc">Creates an `AbstractAltaLifetimeScope` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Class logger. |
-| <Link id="m-profilesession" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/profilingsession">{"ProfilingSession"}</Link>{" profileSession"}</code> | Profiling session for the configure step. |
-| <Link id="m-typename" /><code>{"private string typeName"}</code> | The scope's type name, used to name the profiling session. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-profilesession" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/profilingsession">{"ProfilingSession"}</Link>{" profileSession"}</code> | <span className="api-desc">Profiling session for the configure step.</span> |
+| <Link id="m-typename" /><code>{"private string typeName"}</code> | <span className="api-desc">The scope's type name, used to name the profiling session.</span> |
 
 </details>
 
@@ -41,16 +41,16 @@ Base for the game's VContainer lifetime scopes. Subclasses register their bindin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logstartup" /><code>{"void LogStartup()"}</code> | Logs the scope's GameObject name and its parent scope. |
-| <Link id="m-configure" /><code>{"protected sealed override void Configure(IContainerBuilder builder)"}</code> | Sealed VContainer hook: makes sure the auto-inject list exists and runs `ConfigureScope`, with profiling around it. |
-| <Link id="m-configurescope" /><code>{"protected abstract void ConfigureScope(IContainerBuilder builder)"}</code> | Implemented by subclasses to register their bindings. |
+| <Link id="m-logstartup" /><code>{"void LogStartup()"}</code> | <span className="api-desc">Logs the scope's GameObject name and its parent scope.</span> |
+| <Link id="m-configure" /><code>{"protected sealed override void Configure(IContainerBuilder builder)"}</code> | <span className="api-desc">Sealed VContainer hook: makes sure the auto-inject list exists and runs `ConfigureScope`, with profiling around it.</span> |
+| <Link id="m-configurescope" /><code>{"protected abstract void ConfigureScope(IContainerBuilder builder)"}</code> | <span className="api-desc">Implemented by subclasses to register their bindings.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-startprofiling" /><code>{"private void StartProfiling()"}</code> | Debug builds: starts a profiling session and logs startup. |
-| <Link id="m-stopprofiling" /><code>{"private void StopProfiling()"}</code> | Debug builds: ends the profiling session and logs its report. |
+| <Link id="m-startprofiling" /><code>{"private void StartProfiling()"}</code> | <span className="api-desc">Debug builds: starts a profiling session and logs startup.</span> |
+| <Link id="m-stopprofiling" /><code>{"private void StopProfiling()"}</code> | <span className="api-desc">Debug builds: ends the profiling session and logs its report.</span> |
 
 </details>

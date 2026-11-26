@@ -21,18 +21,22 @@ Data sent with the console's log events (`TraceLog` to `FatalLog`), one per serv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogEvent()"}</code> | Creates a `ConsoleLogEvents.LogEvent` with default values. |
+| <Link id="m-ctor" /><code>{"LogEvent()"}</code> | <span className="api-desc">Creates a `ConsoleLogEvents.LogEvent` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"string logger"}</code> | Name of the logger that wrote the line. |
-| <Link id="m-message" /><code>{"string message"}</code> | The log message. |
-| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> | When the line was logged. |
+| <Link id="m-logger" /><code>{"string logger"}</code> | <span className="api-desc">Name of the logger that wrote the line.</span> |
+| <Link id="m-message" /><code>{"string message"}</code> | <span className="api-desc">The log message.</span> |
+| <Link id="m-timestamp" /><code>{"DateTime timeStamp"}</code> | <span className="api-desc">When the line was logged.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogEvent`:
 
+<div className="api-used-in">
+
 [`ConsoleLogEvents.LogEvents`](/mod/game-api/types/alta-console/consolelogevents#m-logevents).
+
+</div>

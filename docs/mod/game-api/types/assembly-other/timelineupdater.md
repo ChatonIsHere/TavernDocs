@@ -21,28 +21,28 @@ Hidden object that `Timeline.Instance` creates to drive the timeline with real t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimelineUpdater()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TimelineUpdater()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastupdate" /><code>{"private DateTime lastUpdate"}</code> | Wall clock time of the last update. |
-| <Link id="m-timeline" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/itimeline">{"ITimeline"}</Link>{" timeline"}</code> | The timeline being driven. |
+| <Link id="m-lastupdate" /><code>{"private DateTime lastUpdate"}</code> | <span className="api-desc">Wall clock time of the last update.</span> |
+| <Link id="m-timeline" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/itimeline">{"ITimeline"}</Link>{" timeline"}</code> | <span className="api-desc">The timeline being driven.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Grabs the timeline, marks the object to survive scene loads and starts the clock. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Advances the timeline by the real time passed since the last frame (wall clock, not Unity time). |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Grabs the timeline, marks the object to survive scene loads and starts the clock.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Advances the timeline by the real time passed since the last frame (wall clock, not Unity time).</span> |
 
 </details>

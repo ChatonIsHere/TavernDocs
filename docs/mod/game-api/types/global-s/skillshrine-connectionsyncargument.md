@@ -21,23 +21,27 @@ Network message telling clients which skill orbs on a shrine to draw connections
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> | Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`. |
-| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/mod/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> | Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`. |
+| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> | <span className="api-desc">Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`.</span> |
+| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/mod/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> | <span className="api-desc">Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> | Flat list of orb entity ID pairs; an orb with no dependencies is paired with 0. |
+| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> | <span className="api-desc">Flat list of orb entity ID pairs; an orb with no dependencies is paired with 0.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the count and IDs; clients read them back. The count is limited to 127 IDs. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes the count and IDs; clients read them back. The count is limited to 127 IDs.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ConnectionSyncArgument`:
 
+<div className="api-used-in">
+
 [`SkillShrine.syncConnections`](/mod/game-api/types/global-s/skillshrine#m-syncconnections), [`SkillShrine.SyncConnections`](/mod/game-api/types/global-s/skillshrine#m-syncconnections-2).
+
+</div>

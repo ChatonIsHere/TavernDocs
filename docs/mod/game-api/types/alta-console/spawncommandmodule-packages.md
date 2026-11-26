@@ -20,12 +20,12 @@ Console submodule `spawn package`: drops named spawn packages through `PackageMa
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-droppackage" /><code>{"private static void DropPackage("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, params string[] arguments)"}</code> | Server: `spawn package drop` drops the named package for each player (or with no player), passing the rest of the arguments on. |
-| <Link id="m-list" /><code>{"private static IEnumerable<string> List()"}</code> | `spawn package list`: lists the names of all packages. |
+| <Link id="m-droppackage" /><code>{"private static void DropPackage("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, params string[] arguments)"}</code> | <span className="api-desc">Server: `spawn package drop` drops the named package for each player (or with no player), passing the rest of the arguments on.</span> |
+| <Link id="m-list" /><code>{"private static IEnumerable<string> List()"}</code> | <span className="api-desc">`spawn package list`: lists the names of all packages.</span> |
 
 </details>

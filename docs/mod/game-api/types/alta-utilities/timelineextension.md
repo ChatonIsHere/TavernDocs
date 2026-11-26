@@ -21,5 +21,5 @@ Extension methods for running an `Action` later through `Timeline.Instance`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delay" /><code>{"static void Delay(Action callback, float duration)"}</code> | Runs the callback after the given number of seconds. |
-| <Link id="m-runat" /><code>{"static void RunAt(Action callback, float time)"}</code> | Meant to run at a time, but also calls `CallAfterDuration`, so the value is treated as a delay. |
+| <Link id="m-delay" /><code>{"static void Delay(Action callback, float duration)"}</code> | <span className="api-desc">Runs the callback after the given number of seconds.</span> |
+| <Link id="m-runat" /><code>{"static void RunAt(Action callback, float time)"}</code> | <span className="api-desc">Meant to run at a time, but also calls `CallAfterDuration`, so the value is treated as a delay.</span> |

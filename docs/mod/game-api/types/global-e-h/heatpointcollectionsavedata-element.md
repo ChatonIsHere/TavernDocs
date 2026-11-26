@@ -22,10 +22,10 @@ Saved state of one heat point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `HeatPointCollectionSaveData.Element` with default values. |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | <span className="api-desc">Creates a `HeatPointCollectionSaveData.Element` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-temperature" /><code>{"float temperature"}</code> | The heat point's temperature. |
+| <Link id="m-temperature" /><code>{"float temperature"}</code> | <span className="api-desc">The heat point's temperature.</span> |

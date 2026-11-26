@@ -21,13 +21,13 @@ Extension methods for `MonoBehaviour`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-callactioninupdate" /><code>{"static void CallActionInUpdate(MonoBehaviour monoBehaviour, Action action)"}</code> | Runs an action one frame later, using a coroutine on the given behaviour. |
+| <Link id="m-callactioninupdate" /><code>{"static void CallActionInUpdate(MonoBehaviour monoBehaviour, Action action)"}</code> | <span className="api-desc">Runs an action one frame later, using a coroutine on the given behaviour.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-callactioninupdate-2" /><code>{"private static IEnumerator CallActionInUpdate(Action action) (iterator)"}</code> | Runs an action one frame later, using a coroutine on the given behaviour. |
+| <Link id="m-callactioninupdate-2" /><code>{"private static IEnumerator CallActionInUpdate(Action action) (iterator)"}</code> | <span className="api-desc">Runs an action one frame later, using a coroutine on the given behaviour.</span> |
 
 </details>

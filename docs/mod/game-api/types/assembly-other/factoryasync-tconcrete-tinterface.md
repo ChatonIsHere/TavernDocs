@@ -21,10 +21,10 @@ Async prefab factory with no parameters. Loads the prefab, instantiates it throu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | Creates a `FactoryAsync` with default values. |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | <span className="api-desc">Creates a `FactoryAsync` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"async Task<TInterface> Create()"}</code> | Loads the prefab, instantiates it with injection, calls `FactoryConstruct` on the component, tracks it for disposal and returns it. |
+| <Link id="m-create" /><code>{"async Task<TInterface> Create()"}</code> | <span className="api-desc">Loads the prefab, instantiates it with injection, calls `FactoryConstruct` on the component, tracks it for disposal and returns it.</span> |

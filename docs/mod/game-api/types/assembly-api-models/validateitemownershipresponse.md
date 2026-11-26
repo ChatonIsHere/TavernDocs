@@ -20,16 +20,20 @@ Web API answer to `ValidateItemsOwnershipAsync`, which checks that a user owns a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> | Creates a `ValidateItemOwnershipResponse` with default values. |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> | <span className="api-desc">Creates a `ValidateItemOwnershipResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> | True when the user owns every item in the list. |
+| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> | <span className="api-desc">True when the user owns every item in the list.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ValidateItemOwnershipResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ValidateItemsOwnershipAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-validateitemsownershipasync).
+
+</div>

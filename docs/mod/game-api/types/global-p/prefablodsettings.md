@@ -21,17 +21,17 @@ Asset holding a last LOD distance and a list of network prefabs to leave out. No
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabLODSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PrefabLODSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filteredout" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> filteredOut"}</code> | Backing field for `FilteredOut`. |
-| <Link id="m-lastlod" /><code>{"private float lastLOD"}</code> | Backing field for `LastLOD`. |
+| <Link id="m-filteredout" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> filteredOut"}</code> | <span className="api-desc">Backing field for `FilteredOut`.</span> |
+| <Link id="m-lastlod" /><code>{"private float lastLOD"}</code> | <span className="api-desc">Backing field for `LastLOD`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Asset holding a last LOD distance and a list of network prefabs to leave out. No
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filteredout-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> FilteredOut { get; }"}</code> | Network prefabs that are left out. |
-| <Link id="m-lastlod-2" /><code>{"float LastLOD { get; set; }"}</code> | Last LOD value. |
+| <Link id="m-filteredout-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> FilteredOut { get; }"}</code> | <span className="api-desc">Network prefabs that are left out.</span> |
+| <Link id="m-lastlod-2" /><code>{"float LastLOD { get; set; }"}</code> | <span className="api-desc">Last LOD value.</span> |

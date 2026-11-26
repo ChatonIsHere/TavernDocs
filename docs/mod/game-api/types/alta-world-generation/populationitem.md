@@ -23,29 +23,29 @@ Marks an entity as spawned by a `PopulationSample`, with the spawn point it used
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The spawned entity. |
-| <Link id="m-population" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Population { get; set; }"}</code> | The population sample that spawned it. |
-| <Link id="m-spawnpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" { get; set; }"}</code> | The spawn point the item was spawned at. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | <span className="api-desc">The spawned entity.</span> |
+| <Link id="m-population" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" Population { get; set; }"}</code> | <span className="api-desc">The population sample that spawned it.</span> |
+| <Link id="m-spawnpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The spawn point the item was spawned at.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Makes the entity work out its chunk from its own position. |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Asks the population to swap this item for another entity. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | <span className="api-desc">Makes the entity work out its chunk from its own position.</span> |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Asks the population to swap this item for another entity.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Finds the location chunk that best contains the entity's current position. Installed on the entity by `Initialize`. |
+| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Finds the location chunk that best contains the entity's current position. Installed on the entity by `Initialize`.</span> |
 
 </details>
 
@@ -53,4 +53,8 @@ Marks an entity as spawned by a `PopulationSample`, with the spawn point it used
 
 Members of other types that take, return or hold a `PopulationItem`:
 
+<div className="api-used-in">
+
 [`Agent.PopulationItem`](/mod/game-api/types/alta-intelligence/agent#m-populationitem), [`IAgent.PopulationItem`](/mod/game-api/types/alta-intelligence/iagent#m-populationitem), [`PopulationSample.AddItemTo`](/mod/game-api/types/alta-world-generation/populationsample#m-additemto), [`PopulationSample.Replace`](/mod/game-api/types/alta-world-generation/populationsample#m-replace), [`PopulationSample.SpawnedEntities`](/mod/game-api/types/alta-world-generation/populationsample#m-spawnedentities).
+
+</div>

@@ -22,10 +22,14 @@ Implemented by agents that attack by jumping, such as the `Spriggull`. The `Acti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> | Called with true when the jump attack starts and false when it ends. |
+| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> | <span className="api-desc">Called with true when the jump attack starts and false when it ends.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IJumpAttacker`:
 
+<div className="api-used-in">
+
 [`ActiveJumpAt.jumpAttacker`](/mod/game-api/types/alta-intelligence/activejumpat#m-jumpattacker).
+
+</div>

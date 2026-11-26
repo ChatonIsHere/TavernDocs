@@ -26,4 +26,8 @@ Kind of response sent over the remote console. Only `Log` exists.
 
 Members of other types that take, return or hold a `RemoteConsoleResponseType`:
 
+<div className="api-used-in">
+
 [`ClientCommandHandler.SendBuffer`](/mod/game-api/types/global-c-d/clientcommandhandler#m-sendbuffer-2).
+
+</div>

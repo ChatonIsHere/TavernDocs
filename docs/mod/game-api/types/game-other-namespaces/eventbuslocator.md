@@ -21,17 +21,17 @@ Static lookup for event buses by interface type. `ProjectLifetimeScope` register
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> | Creates an `EventBusLocator` with default values. |
+| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> | <span className="api-desc">Creates an `EventBusLocator` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instances" /><code>{"private static readonly Dictionary<Type, IEventBus> instances"}</code> | Registered event buses, keyed by type. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-instances" /><code>{"private static readonly Dictionary<Type, IEventBus> instances"}</code> | <span className="api-desc">Registered event buses, keyed by type.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Static lookup for event buses by interface type. `ProjectLifetimeScope` register
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"static T Get<T>()"}</code> | Returns the event bus registered for `T`. Logs an error and returns null if none is registered. |
-| <Link id="m-register" /><code>{"static void Register<T>(IEventBus eventBus)"}</code> | Registers an event bus under the type `T`, replacing any earlier one. |
+| <Link id="m-get" /><code>{"static T Get<T>()"}</code> | <span className="api-desc">Returns the event bus registered for `T`. Logs an error and returns null if none is registered.</span> |
+| <Link id="m-register" /><code>{"static void Register<T>(IEventBus eventBus)"}</code> | <span className="api-desc">Registers an event bus under the type `T`, replacing any earlier one.</span> |

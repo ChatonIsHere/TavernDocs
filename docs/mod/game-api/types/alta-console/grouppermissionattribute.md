@@ -21,16 +21,16 @@ Console requirement: on a simple server the caller needs all the listed group pe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GroupPermissionAttribute(params "}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions)"}</code> | Creates a `GroupPermissionAttribute` from `permissions`. |
+| <Link id="m-ctor" /><code>{"GroupPermissionAttribute(params "}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions)"}</code> | <span className="api-desc">Creates a `GroupPermissionAttribute` from `permissions`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-permissions" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions"}</code> | Group permissions required on a simple server. |
+| <Link id="m-permissions" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions"}</code> | <span className="api-desc">Group permissions required on a simple server.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Console requirement: on a simple server the caller needs all the listed group pe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | False with no server; true on a non-simple server; otherwise true only if the caller has every listed group permission. |
+| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | <span className="api-desc">False with no server; true on a non-simple server; otherwise true only if the caller has every listed group permission.</span> |

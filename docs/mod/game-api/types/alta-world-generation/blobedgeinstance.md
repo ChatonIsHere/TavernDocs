@@ -21,18 +21,18 @@ Runtime instance of the `BlobEdge` plugin part: draws a main circle and hashed s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BlobEdgeInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/blobedge">{"BlobEdge"}</Link>{" part)"}</code> | Creates a `BlobEdgeInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"BlobEdgeInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/blobedge">{"BlobEdge"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `BlobEdgeInstance` from `plugin` and `part`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Size multiplier read from the biome's size attribute. |
-| <Link id="m-positions" /><code>{"private Vector2[] positions"}</code> | Centres of the main and edge circles. |
-| <Link id="m-radiuses" /><code>{"private float[] radiuses"}</code> | Radius of each circle. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Size multiplier read from the biome's size attribute.</span> |
+| <Link id="m-positions" /><code>{"private Vector2[] positions"}</code> | <span className="api-desc">Centres of the main and edge circles.</span> |
+| <Link id="m-radiuses" /><code>{"private float[] radiuses"}</code> | <span className="api-desc">Radius of each circle.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Runtime instance of the `BlobEdge` plugin part: draws a main circle and hashed s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | For each circle that overlaps the chunk, applies the curve by distance from its centre with the part's operation. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">For each circle that overlaps the chunk, applies the curve by distance from its centre with the part's operation.</span> |

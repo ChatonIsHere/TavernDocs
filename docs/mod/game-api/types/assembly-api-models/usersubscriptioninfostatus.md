@@ -28,4 +28,8 @@ State of a user's subscription: active, cancelled or non-renewing.
 
 Members of other types that take, return or hold a `UserSubscriptionInfoStatus`:
 
+<div className="api-used-in">
+
 [`UserSubscription.Status`](/mod/game-api/types/assembly-api-models/usersubscription#m-status).
+
+</div>

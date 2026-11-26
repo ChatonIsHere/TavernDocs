@@ -21,31 +21,31 @@ Mesh builder used by `LODBaker.Bake`. Collects the meshes that share one materia
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeshBase()"}</code> | Creates a `LODBaker.MeshBase` with default values. |
+| <Link id="m-ctor" /><code>{"MeshBase()"}</code> | <span className="api-desc">Creates a `LODBaker.MeshBase` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>16 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colors" /><code>{"private List<Color> colors"}</code> | Combined vertex colours. |
-| <Link id="m-needscolor" /><code>{"private bool needsColor"}</code> | Set when any added mesh had vertex colours. |
-| <Link id="m-needsuv" /><code>{"private bool needsUV"}</code> | Set when any added mesh had UV channel 0. |
-| <Link id="m-needsuv2" /><code>{"private bool needsUV2"}</code> | Set when any added mesh had UV channel 1. |
-| <Link id="m-needsuv4" /><code>{"private bool needsUV4"}</code> | Set when any added mesh had UV channel 3. |
-| <Link id="m-normals" /><code>{"private List<Vector3> normals"}</code> | Combined normals. |
-| <Link id="m-triangles" /><code>{"private List<int> triangles"}</code> | Combined triangle indices, offset for each added mesh. |
-| <Link id="m-uv2s" /><code>{"private List<Vector4> uv2s"}</code> | Combined UV channel 1. |
-| <Link id="m-uv4s" /><code>{"private List<Vector4> uv4s"}</code> | Combined UV channel 3. |
-| <Link id="m-uvs" /><code>{"private List<Vector4> uvs"}</code> | Combined UV channel 0. |
-| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> | Combined vertices. |
-| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> | Shared scratch list for reading colours. |
-| <Link id="m-workingint" /><code>{"private static List<int> workingInt"}</code> | Shared scratch list for reading triangles. |
-| <Link id="m-workingnormals" /><code>{"private static List<Vector3> workingNormals"}</code> | Shared scratch list for reading normals. |
-| <Link id="m-workinguv" /><code>{"private static List<Vector4> workingUV"}</code> | Shared scratch list for reading UVs. |
-| <Link id="m-workingvertices" /><code>{"private static List<Vector3> workingVertices"}</code> | Shared scratch list for reading vertices. |
+| <Link id="m-colors" /><code>{"private List<Color> colors"}</code> | <span className="api-desc">Combined vertex colours.</span> |
+| <Link id="m-needscolor" /><code>{"private bool needsColor"}</code> | <span className="api-desc">Set when any added mesh had vertex colours.</span> |
+| <Link id="m-needsuv" /><code>{"private bool needsUV"}</code> | <span className="api-desc">Set when any added mesh had UV channel 0.</span> |
+| <Link id="m-needsuv2" /><code>{"private bool needsUV2"}</code> | <span className="api-desc">Set when any added mesh had UV channel 1.</span> |
+| <Link id="m-needsuv4" /><code>{"private bool needsUV4"}</code> | <span className="api-desc">Set when any added mesh had UV channel 3.</span> |
+| <Link id="m-normals" /><code>{"private List<Vector3> normals"}</code> | <span className="api-desc">Combined normals.</span> |
+| <Link id="m-triangles" /><code>{"private List<int> triangles"}</code> | <span className="api-desc">Combined triangle indices, offset for each added mesh.</span> |
+| <Link id="m-uv2s" /><code>{"private List<Vector4> uv2s"}</code> | <span className="api-desc">Combined UV channel 1.</span> |
+| <Link id="m-uv4s" /><code>{"private List<Vector4> uv4s"}</code> | <span className="api-desc">Combined UV channel 3.</span> |
+| <Link id="m-uvs" /><code>{"private List<Vector4> uvs"}</code> | <span className="api-desc">Combined UV channel 0.</span> |
+| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> | <span className="api-desc">Combined vertices.</span> |
+| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> | <span className="api-desc">Shared scratch list for reading colours.</span> |
+| <Link id="m-workingint" /><code>{"private static List<int> workingInt"}</code> | <span className="api-desc">Shared scratch list for reading triangles.</span> |
+| <Link id="m-workingnormals" /><code>{"private static List<Vector3> workingNormals"}</code> | <span className="api-desc">Shared scratch list for reading normals.</span> |
+| <Link id="m-workinguv" /><code>{"private static List<Vector4> workingUV"}</code> | <span className="api-desc">Shared scratch list for reading UVs.</span> |
+| <Link id="m-workingvertices" /><code>{"private static List<Vector3> workingVertices"}</code> | <span className="api-desc">Shared scratch list for reading vertices.</span> |
 
 </details>
 
@@ -53,14 +53,14 @@ Mesh builder used by `LODBaker.Bake`. Collects the meshes that share one materia
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addmesh" /><code>{"void AddMesh(Mesh mesh, Matrix4x4 convertion)"}</code> | Appends a mesh transformed by a matrix: vertices, normals, UV channels 0, 1 and 3, colours and triangles. |
-| <Link id="m-getrenderer" /><code>{"Renderer GetRenderer(Material material)"}</code> | Builds the combined mesh and returns a `MeshRenderer` for it on a new GameObject with the given material. |
+| <Link id="m-addmesh" /><code>{"void AddMesh(Mesh mesh, Matrix4x4 convertion)"}</code> | <span className="api-desc">Appends a mesh transformed by a matrix: vertices, normals, UV channels 0, 1 and 3, colours and triangles.</span> |
+| <Link id="m-getrenderer" /><code>{"Renderer GetRenderer(Material material)"}</code> | <span className="api-desc">Builds the combined mesh and returns a `MeshRenderer` for it on a new GameObject with the given material.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addrange" /><code>{"private void AddRange<T>(List<T> source, List<T> destination, int count, ref bool need)"}</code> | Copies a channel's data, or pads it with defaults when the mesh lacks it, and flags the channel as used if present. |
+| <Link id="m-addrange" /><code>{"private void AddRange<T>(List<T> source, List<T> destination, int count, ref bool need)"}</code> | <span className="api-desc">Copies a channel's data, or pads it with defaults when the mesh lacks it, and flags the channel as used if present.</span> |
 
 </details>

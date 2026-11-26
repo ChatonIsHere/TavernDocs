@@ -21,18 +21,18 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PendingRepairBoxCompletionCondition()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PendingRepairBoxCompletionCondition()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> | Whether `Setup` has run. |
-| <Link id="m-onconditionchanged" /><code>{"private Action onConditionChanged"}</code> | Backing field for `OnConditionChanged`. |
-| <Link id="m-repairbox" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/repairbox">{"RepairBox"}</Link>{" repairBox"}</code> | The repair box this condition watches. |
+| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> | <span className="api-desc">Whether `Setup` has run.</span> |
+| <Link id="m-onconditionchanged" /><code>{"private Action onConditionChanged"}</code> | <span className="api-desc">Backing field for `OnConditionChanged`.</span> |
+| <Link id="m-repairbox" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/repairbox">{"RepairBox"}</Link>{" repairBox"}</code> | <span className="api-desc">The repair box this condition watches.</span> |
 
 </details>
 
@@ -40,20 +40,20 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onconditionchanged-2" /><code>{"Action OnConditionChanged { get; set; }"}</code> | Change callback. The first read hooks the repair box's `OnRepaired` event. |
+| <Link id="m-onconditionchanged-2" /><code>{"Action OnConditionChanged { get; set; }"}</code> | <span className="api-desc">Change callback. The first read hooks the repair box's `OnRepaired` event.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | True while the repair box is not done. |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | <span className="api-desc">True while the repair box is not done.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-repairboxcompleted" /><code>{"private void RepairBoxCompleted()"}</code> | Runs the change callback when the box is repaired. |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> | Hooks the box's `OnRepaired` event, done lazily on the first `OnConditionChanged` read. |
+| <Link id="m-repairboxcompleted" /><code>{"private void RepairBoxCompleted()"}</code> | <span className="api-desc">Runs the change callback when the box is repaired.</span> |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> | <span className="api-desc">Hooks the box's `OnRepaired` event, done lazily on the first `OnConditionChanged` read.</span> |
 
 </details>

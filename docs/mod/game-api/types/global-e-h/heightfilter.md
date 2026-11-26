@@ -23,16 +23,16 @@ Spawn modifier for generation that scales a point's weight by a curve of its wor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HeightFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HeightFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heightmultiplier" /><code>{"private AnimationCurve heightMultiplier"}</code> | Curve from height to weight multiplier. |
+| <Link id="m-heightmultiplier" /><code>{"private AnimationCurve heightMultiplier"}</code> | <span className="api-desc">Curve from height to weight multiplier.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Spawn modifier for generation that scales a point's weight by a curve of its wor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | Multiplies the weight by the curve at the point's Y position. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | <span className="api-desc">Multiplies the weight by the curve at the point's Y position.</span> |

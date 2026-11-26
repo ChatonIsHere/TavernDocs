@@ -21,12 +21,12 @@ Spawn data passed to things spawned on the river map during forest generation, c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RiverNodeMapSpawnData("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/mod/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" edge, bool isGenerating)"}</code> | Creates a `RiverNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`. |
+| <Link id="m-ctor" /><code>{"RiverNodeMapSpawnData("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/mod/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" edge, bool isGenerating)"}</code> | <span className="api-desc">Creates a `RiverNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" Edge { get; }"}</code> | River path the spawn is on, or null. |
-| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; }"}</code> | Forest generation doing the spawn. |
-| <Link id="m-node" /><code><Link to="/mod/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Node { get; }"}</code> | River node the spawn is at, or null. |
+| <Link id="m-edge" /><code><Link to="/mod/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" Edge { get; }"}</code> | <span className="api-desc">River path the spawn is on, or null.</span> |
+| <Link id="m-forest" /><code><Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" Forest { get; }"}</code> | <span className="api-desc">Forest generation doing the spawn.</span> |
+| <Link id="m-node" /><code><Link to="/mod/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" Node { get; }"}</code> | <span className="api-desc">River node the spawn is at, or null.</span> |

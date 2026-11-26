@@ -20,4 +20,4 @@ Maps kcp2k error codes to the game's own `AltaNetworkError` values. Used by the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convertkcperrortoaltaerror" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" ConvertKcpErrorToAltaError(ErrorCode error)"}</code> | Returns the matching `AltaNetworkError` for a kcp2k `ErrorCode`, or `Unexpected` for anything unknown. |
+| <Link id="m-convertkcperrortoaltaerror" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" ConvertKcpErrorToAltaError(ErrorCode error)"}</code> | <span className="api-desc">Returns the matching `AltaNetworkError` for a kcp2k `ErrorCode`, or `Unexpected` for anything unknown.</span> |

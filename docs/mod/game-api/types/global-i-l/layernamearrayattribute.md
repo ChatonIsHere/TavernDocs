@@ -21,4 +21,4 @@ Property attribute for an editor drawer, probably one that shows each entry of a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LayerNameArrayAttribute()"}</code> | Creates a `LayerNameArrayAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"LayerNameArrayAttribute()"}</code> | <span className="api-desc">Creates a `LayerNameArrayAttribute` with default values.</span> |

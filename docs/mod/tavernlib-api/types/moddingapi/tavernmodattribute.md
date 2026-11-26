@@ -23,10 +23,10 @@ Put on a mod's `MelonMod` class to label which side it's for. A label only: wher
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TavernModAttribute("}<Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" side)"}</code> | Marks a mod class as running on the given side. |
+| <Link id="m-ctor" /><code>{"TavernModAttribute("}<Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" side)"}</code> | <span className="api-desc">Marks a mod class as running on the given side.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-side" /><code><Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" Side { get; }"}</code> | The side given to the constructor. |
+| <Link id="m-side" /><code><Link to="/mod/tavernlib-api/types/moddingapi/modside">{"ModSide"}</Link>{" Side { get; }"}</code> | <span className="api-desc">The side given to the constructor.</span> |

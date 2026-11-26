@@ -22,17 +22,17 @@ Atmosphere plugin for forests that takes its ambient and fog colours from the da
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestAmbience()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForestAmbience()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-daytimemanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/daytimemanager">{"DayTimeManager"}</Link>{" dayTimeManager"}</code> | Source of the day/night colours. |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | Fog density in the forest. |
+| <Link id="m-daytimemanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/daytimemanager">{"DayTimeManager"}</Link>{" dayTimeManager"}</code> | <span className="api-desc">Source of the day/night colours.</span> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | <span className="api-desc">Fog density in the forest.</span> |
 
 </details>
 
@@ -40,23 +40,23 @@ Atmosphere plugin for forests that takes its ambient and fog colours from the da
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | The day time manager's current ambient colour. |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The day time manager's current fog colour. |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The forest fog density. |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | <span className="api-desc">The day time manager's current ambient colour.</span> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | <span className="api-desc">The day time manager's current fog colour.</span> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | <span className="api-desc">The forest fog density.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Disables the component. |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | Enables the component. |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | <span className="api-desc">Disables the component.</span> |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | <span className="api-desc">Enables the component.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Starts disabled. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Empty. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Starts disabled.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

@@ -21,16 +21,16 @@ Gives a child object a weight for `ChooseRandomChild`, which picks one child by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomChildWeight()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RandomChildWeight()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-weight" /><code>{"private float weight"}</code> | Backing field for `Weight`. |
+| <Link id="m-weight" /><code>{"private float weight"}</code> | <span className="api-desc">Backing field for `Weight`.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Gives a child object a weight for `ChooseRandomChild`, which picks one child by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> | Weight of this child in a random pick, 1 by default. |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> | <span className="api-desc">Weight of this child in a random pick, 1 by default.</span> |

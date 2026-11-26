@@ -22,21 +22,21 @@ Old save format (version 1) for `Landmark`. Migrated to `LandmarkSaveData` with 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> | Creates an `OldLandmarkSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> | <span className="api-desc">Creates an `OldLandmarkSaveData1` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awareicon" /><code><Link to="/mod/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" AwareIcon { get; set; }"}</code> | Icon shown when a player is aware of the landmark but has not discovered it. |
-| <Link id="m-defaultstate" /><code><Link to="/mod/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" DefaultState { get; set; }"}</code> | Discovery state players start with for this landmark. |
-| <Link id="m-discovericon" /><code><Link to="/mod/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" DiscoverIcon { get; set; }"}</code> | Icon shown once the landmark is discovered. |
-| <Link id="m-index" /><code>{"uint Index { get; set; }"}</code> | The landmark's index in its map. |
-| <Link id="m-ismasked" /><code>{"bool IsMasked { get; set; }"}</code> | Whether the landmark is drawn below the map mask. |
-| <Link id="m-map" /><code><Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" { get; set; }"}</code> | The `Map` asset the landmark belongs to. |
+| <Link id="m-awareicon" /><code><Link to="/mod/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" AwareIcon { get; set; }"}</code> | <span className="api-desc">Icon shown when a player is aware of the landmark but has not discovered it.</span> |
+| <Link id="m-defaultstate" /><code><Link to="/mod/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" DefaultState { get; set; }"}</code> | <span className="api-desc">Discovery state players start with for this landmark.</span> |
+| <Link id="m-discovericon" /><code><Link to="/mod/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" DiscoverIcon { get; set; }"}</code> | <span className="api-desc">Icon shown once the landmark is discovered.</span> |
+| <Link id="m-index" /><code>{"uint Index { get; set; }"}</code> | <span className="api-desc">The landmark's index in its map.</span> |
+| <Link id="m-ismasked" /><code>{"bool IsMasked { get; set; }"}</code> | <span className="api-desc">Whether the landmark is drawn below the map mask.</span> |
+| <Link id="m-map" /><code><Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" "}<Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The `Map` asset the landmark belongs to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Copies every field into a new `LandmarkSaveData`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Copies every field into a new `LandmarkSaveData`.</span> |

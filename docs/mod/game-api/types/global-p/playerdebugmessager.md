@@ -21,17 +21,17 @@ Component with a method that shows a message on the local player's screen, for w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDebugMessager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerDebugMessager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displaytype" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" displayType"}</code> | How the message replaces any current one. |
-| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> | Seconds the message is shown (2 by default). |
+| <Link id="m-displaytype" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" displayType"}</code> | <span className="api-desc">How the message replaces any current one.</span> |
+| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> | <span className="api-desc">Seconds the message is shown (2 by default).</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Component with a method that shows a message on the local player's screen, for w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displaymessage" /><code>{"void DisplayMessage(string message)"}</code> | Client: shows the message on the local player's message display. |
+| <Link id="m-displaymessage" /><code>{"void DisplayMessage(string message)"}</code> | <span className="api-desc">Client: shows the message on the local player's message display.</span> |

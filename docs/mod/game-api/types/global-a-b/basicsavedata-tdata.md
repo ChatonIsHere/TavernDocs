@@ -22,16 +22,16 @@ Base for save data types that are also their own savable: applying the data copi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicSaveData()"}</code> | Creates a `BasicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"protected BasicSaveData()"}</code> | <span className="api-desc">Creates a `BasicSaveData` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger, used when a migration is asked for that this type doesn't provide. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger, used when a migration is asked for that this type doesn't provide.</span> |
 
 </details>
 
@@ -39,12 +39,12 @@ Base for save data types that are also their own savable: applying the data copi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string name { get; }"}</code> | The data type's name. |
+| <Link id="m-name" /><code>{"string name { get; }"}</code> | <span className="api-desc">The data type's name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Copies this data onto the target with `CopyTo`. |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | No migration: logs an error and returns null. |
-| <Link id="m-copyto" /><code>{"protected abstract void CopyTo(TData target)"}</code> | Copies this data's values onto the target. |
+| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | <span className="api-desc">Copies this data onto the target with `CopyTo`.</span> |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">No migration: logs an error and returns null.</span> |
+| <Link id="m-copyto" /><code>{"protected abstract void CopyTo(TData target)"}</code> | <span className="api-desc">Copies this data's values onto the target.</span> |

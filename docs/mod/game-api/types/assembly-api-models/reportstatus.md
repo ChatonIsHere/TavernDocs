@@ -28,4 +28,8 @@ State of a player report: awaiting action, ignored, or acted on.
 
 Members of other types that take, return or hold a `ReportStatus`:
 
+<div className="api-used-in">
+
 [`IPlayerReportsClient.ViewAllReports`](/mod/game-api/types/assembly-api-client/iplayerreportsclient#m-viewallreports), [`IPlayerReportsClient.ViewAllReportsAsSummary`](/mod/game-api/types/assembly-api-client/iplayerreportsclient#m-viewallreportsassummary), [`PlayerReportsClient.ViewAllReports`](/mod/game-api/types/assembly-api-client/playerreportsclient#m-viewallreports), [`PlayerReportsClient.ViewAllReportsAsSummary`](/mod/game-api/types/assembly-api-client/playerreportsclient#m-viewallreportsassummary), [`LowLevelApiClient.GetPlayerReports`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getplayerreports), [`ModifyReportRequest.Status`](/mod/game-api/types/assembly-api-models/modifyreportrequest#m-status), [`PlayerReportInfo.Status`](/mod/game-api/types/assembly-api-models/playerreportinfo#m-status), [`ReportPlayers.GetReports`](/mod/game-api/types/global-q-r/reportplayers#m-getreports).
+
+</div>

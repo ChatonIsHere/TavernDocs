@@ -22,16 +22,20 @@ Base ScriptableObject for a filter on contact points, listed in `ImpactorSetting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ImpactorFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ImpactorFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> | Whether the contact point passes, with a multiplier to apply. |
+| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> | <span className="api-desc">Whether the contact point passes, with a multiplier to apply.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactorFilter`:
 
+<div className="api-used-in">
+
 [`ImpactorSettings.filters`](/mod/game-api/types/alta-items/impactorsettings#m-filters), [`ImpactorSettings.Filters`](/mod/game-api/types/alta-items/impactorsettings#m-filters-2).
+
+</div>

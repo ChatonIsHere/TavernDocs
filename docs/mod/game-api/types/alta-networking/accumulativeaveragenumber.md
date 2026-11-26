@@ -20,17 +20,17 @@ Profiling helper: adds up numbers over one period, then records the total into a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> | Creates an `AccumulativeAverageNumber` with default values. |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> | <span className="api-desc">Creates an `AccumulativeAverageNumber` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> | The running average the totals are recorded into. |
-| <Link id="m-sum" /><code>{"private double sum"}</code> | The total for the current period. |
+| <Link id="m-duration" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration"}</code> | <span className="api-desc">The running average the totals are recorded into.</span> |
+| <Link id="m-sum" /><code>{"private double sum"}</code> | <span className="api-desc">The total for the current period.</span> |
 
 </details>
 
@@ -38,18 +38,22 @@ Profiling helper: adds up numbers over one period, then records the total into a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-durationms" /><code>{"float DurationMs { get; }"}</code> | The running average of the recorded totals, as a float (milliseconds by how it is used). |
+| <Link id="m-durationms" /><code>{"float DurationMs { get; }"}</code> | <span className="api-desc">The running average of the recorded totals, as a float (milliseconds by how it is used).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> | Resets the running average. |
-| <Link id="m-recordandresetcurrentsum" /><code>{"void RecordAndResetCurrentSum()"}</code> | Adds the current total to the average and starts a new total at zero. |
-| <Link id="m-recordnumber" /><code>{"void RecordNumber(double number)"}</code> | Adds a number to the current total. |
+| <Link id="m-clearrecord" /><code>{"void ClearRecord()"}</code> | <span className="api-desc">Resets the running average.</span> |
+| <Link id="m-recordandresetcurrentsum" /><code>{"void RecordAndResetCurrentSum()"}</code> | <span className="api-desc">Adds the current total to the average and starts a new total at zero.</span> |
+| <Link id="m-recordnumber" /><code>{"void RecordNumber(double number)"}</code> | <span className="api-desc">Adds a number to the current total.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AccumulativeAverageNumber`:
 
+<div className="api-used-in">
+
 [`EntitySerializer.PrepareDuration`](/mod/game-api/types/alta-networking/entityserializer#m-prepareduration), [`EntitySerializer.SerializationDuration`](/mod/game-api/types/alta-networking/entityserializer#m-serializationduration).
+
+</div>

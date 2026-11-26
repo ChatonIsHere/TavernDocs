@@ -22,16 +22,20 @@ Undo and redo history for one kind of action, such as the customization screen's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> | Whether a new action can be added now. |
+| <Link id="m-ispushpossible" /><code>{"bool IsPushPossible { get; }"}</code> | <span className="api-desc">Whether a new action can be added now.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-push" /><code>{"void Push(T item)"}</code> | Adds an action to the history. |
+| <Link id="m-push" /><code>{"void Push(T item)"}</code> | <span className="api-desc">Adds an action to the history.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IHistoryManager&lt;T>`:
 
+<div className="api-used-in">
+
 [`CustomizationWrapper.historyManager`](/mod/game-api/types/alta-customization/customizationwrapper#m-historymanager), [`CustomizationWrapper.HistoryManager`](/mod/game-api/types/alta-customization/customizationwrapper#m-historymanager-2).
+
+</div>

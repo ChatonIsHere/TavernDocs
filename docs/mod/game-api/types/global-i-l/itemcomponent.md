@@ -22,16 +22,16 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ItemComponent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ItemComponent()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> | Materials this component applies to; empty means all. Checked by `CheckMatch`. |
+| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> | <span className="api-desc">Materials this component applies to; empty means all. Checked by `CheckMatch`.</span> |
 
 </details>
 
@@ -39,20 +39,20 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" { get; private set; }"}</code> | The item this component is attached to, set when the item initializes. |
+| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The item this component is attached to, set when the item initializes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkmatch" /><code>{"bool CheckMatch("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> | Whether this component applies to a physical material. True if none are listed or the material is null. |
+| <Link id="m-checkmatch" /><code>{"bool CheckMatch("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial)"}</code> | <span className="api-desc">Whether this component applies to a physical material. True if none are listed or the material is null.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Stores the item this component belongs to in `Item`. |
+| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | <span className="api-desc">Stores the item this component belongs to in `Item`.</span> |
 
 </details>
 
@@ -60,4 +60,8 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 
 Members of other types that take, return or hold a `ItemComponent`:
 
+<div className="api-used-in">
+
 [`Item.components`](/mod/game-api/types/alta-items/item#m-components), [`Item.Components`](/mod/game-api/types/alta-items/item#m-components-2), [`Item.GetComponent`](/mod/game-api/types/alta-items/item#m-getcomponent-2).
+
+</div>

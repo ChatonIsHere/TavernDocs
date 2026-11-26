@@ -21,17 +21,17 @@ Live debug readout of the current graphics optimisation level.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GraphicsLevelDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GraphicsLevelDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `Graphics Level`. |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">Label `Graphics Level`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Only shown when an `OptimizationManager` exists. |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | `OptimizationManager.instance.CurrentLevel` as text. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | <span className="api-desc">Only shown when an `OptimizationManager` exists.</span> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">`OptimizationManager.instance.CurrentLevel` as text.</span> |

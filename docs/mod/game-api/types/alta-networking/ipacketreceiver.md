@@ -21,10 +21,14 @@ Something that pulls incoming packets off the transport each frame. `ServerPacke
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | Receives and processes this frame's waiting packets. |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | <span className="api-desc">Receives and processes this frame's waiting packets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPacketReceiver`:
 
+<div className="api-used-in">
+
 [`Socket.packetReceiver`](/mod/game-api/types/alta-networking/socket#m-packetreceiver).
+
+</div>

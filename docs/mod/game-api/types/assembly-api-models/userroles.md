@@ -20,18 +20,22 @@ Roles read from a user's identity token by `UserRolesUtility.GetRolesFromIdentit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserRoles()"}</code> | Creates an `UserRoles` with default values. |
+| <Link id="m-ctor" /><code>{"UserRoles()"}</code> | <span className="api-desc">Creates an `UserRoles` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdeveloper" /><code>{"bool IsDeveloper { get; set; }"}</code> | The token has the `dev` policy. |
-| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> | The token has the `supporter` policy. |
-| <Link id="m-ismoderator" /><code>{"bool IsModerator { get; set; }"}</code> | The token has the `mod` policy. |
+| <Link id="m-isdeveloper" /><code>{"bool IsDeveloper { get; set; }"}</code> | <span className="api-desc">The token has the `dev` policy.</span> |
+| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> | <span className="api-desc">The token has the `supporter` policy.</span> |
+| <Link id="m-ismoderator" /><code>{"bool IsModerator { get; set; }"}</code> | <span className="api-desc">The token has the `mod` policy.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UserRoles`:
 
+<div className="api-used-in">
+
 [`UserRolesUtility.GetRolesFromIdentityToken`](/mod/game-api/types/assembly-api-models/userrolesutility#m-getrolesfromidentitytoken), [`UserInfoAndRole.UserInfoAndRole`](/mod/game-api/types/global-t-x/userinfoandrole#m-ctor).
+
+</div>

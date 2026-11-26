@@ -22,12 +22,12 @@ Lets a Unity coroutine wait for a `Task<T>` and then read its result.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> | Creates a `TaskYield` from `task`. |
+| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> | <span className="api-desc">Creates a `TaskYield` from `task`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> | True until the task completes. Rethrows the task's exception if it failed. |
-| <Link id="m-result" /><code>{"T Result { get; }"}</code> | The task's result; read it after the yield returns. |
-| <Link id="m-task" /><code>{"Task<T> Task { get; set; }"}</code> | The task being waited on. |
+| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> | <span className="api-desc">True until the task completes. Rethrows the task's exception if it failed.</span> |
+| <Link id="m-result" /><code>{"T Result { get; }"}</code> | <span className="api-desc">The task's result; read it after the yield returns.</span> |
+| <Link id="m-task" /><code>{"Task<T> Task { get; set; }"}</code> | <span className="api-desc">The task being waited on.</span> |

@@ -21,16 +21,16 @@ The default pool for a `PooledObjectDefinition`: reuses inactive instances and m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledObjectPool("}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> | Creates a `PooledObjectPool` from `definition`. |
+| <Link id="m-ctor" /><code>{"PooledObjectPool("}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Creates a `PooledObjectPool` from `definition`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for release errors. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for release errors.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ The default pool for a `PooledObjectDefinition`: reuses inactive instances and m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> | Deactivates and stores the object, or destroys it if the pool is over its maximum size. Logs double or destroyed releases. |
-| <Link id="m-request" /><code>{"override "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> | Takes a stored instance or makes one, places it and finishes the request. |
+| <Link id="m-release" /><code>{"override void Release("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> | <span className="api-desc">Deactivates and stores the object, or destroys it if the pool is over its maximum size. Logs double or destroyed releases.</span> |
+| <Link id="m-request" /><code>{"override "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> | <span className="api-desc">Takes a stored instance or makes one, places it and finishes the request.</span> |

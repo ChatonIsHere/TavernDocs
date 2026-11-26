@@ -21,16 +21,16 @@ Editor menu item under Township/Utility. Its `Run` reads the workspace folder na
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> | Creates a `Show_Workspace` with default values. |
+| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> | <span className="api-desc">Creates a `Show_Workspace` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. Not used. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class. Not used.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Editor menu item under Township/Utility. Its `Run` reads the workspace folder na
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Splits `Application.dataPath` and reads the third-from-last part, then discards it. |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | <span className="api-desc">Splits `Application.dataPath` and reads the third-from-last part, then discards it.</span> |

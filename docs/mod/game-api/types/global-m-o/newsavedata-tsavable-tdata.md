@@ -22,16 +22,16 @@ Base for the current version of a component's save data. `Apply` hands the data 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected NewSaveData()"}</code> | Creates a `NewSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"protected NewSaveData()"}</code> | <span className="api-desc">Creates a `NewSaveData` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for load failures and missing migrations. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger for load failures and missing migrations.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Base for the current version of a component's save data. `Apply` hands the data 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Calls `Load` on the target with this data. Logs and returns false if loading throws. |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Logs an error and returns null: the latest version has nothing to migrate to. |
+| <Link id="m-apply" /><code>{"override bool Apply(object target, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | <span className="api-desc">Calls `Load` on the target with this data. Logs and returns false if loading throws.</span> |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Logs an error and returns null: the latest version has nothing to migrate to.</span> |

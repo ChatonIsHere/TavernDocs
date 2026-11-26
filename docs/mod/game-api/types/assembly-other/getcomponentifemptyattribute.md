@@ -21,10 +21,10 @@ Like `GetComponentAttribute`, but only fills the field when it is empty.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentIfEmptyAttribute()"}</code> | Creates a `GetComponentIfEmptyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentIfEmptyAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentIfEmptyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Skips the field if it already has a value, else looks it up as the base does. |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Skips the field if it already has a value, else looks it up as the base does.</span> |

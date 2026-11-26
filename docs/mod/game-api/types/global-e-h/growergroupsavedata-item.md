@@ -21,23 +21,27 @@ Saved state of one growing item in a `GrowerGroup`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `GrowerGroupSaveData.Item` with default values. |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | <span className="api-desc">Creates a `GrowerGroupSaveData.Item` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> | Child serializer index of the item's spawned entity, or -1 if it has none. |
-| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | The growth stage the item has reached. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | The growth definition the item follows. |
-| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | Whether growth has started. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Saved position of the item. |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Saved rotation of the item. |
-| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> | The stage whose object is currently spawned. |
-| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | Timeline time when growth started. Stage progress on load is worked out from this. |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> | <span className="api-desc">Child serializer index of the item's spawned entity, or -1 if it has none.</span> |
+| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | <span className="api-desc">The growth stage the item has reached.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The growth definition the item follows.</span> |
+| <Link id="m-hasstarted" /><code>{"bool hasStarted"}</code> | <span className="api-desc">Whether growth has started.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Saved position of the item.</span> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | <span className="api-desc">Saved rotation of the item.</span> |
+| <Link id="m-spawnedstageindex" /><code>{"int spawnedStageIndex"}</code> | <span className="api-desc">The stage whose object is currently spawned.</span> |
+| <Link id="m-startedtime" /><code>{"TimeSpan startedTime"}</code> | <span className="api-desc">Timeline time when growth started. Stage progress on load is worked out from this.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Item`:
 
+<div className="api-used-in">
+
 [`GrowerGroupSaveData.items`](/mod/game-api/types/global-e-h/growergroupsavedata#m-items).
+
+</div>

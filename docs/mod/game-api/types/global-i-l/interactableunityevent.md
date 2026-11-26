@@ -22,10 +22,14 @@ Serializable `UnityEvent` that passes an `Interactable` and the `Interactor` usi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractableUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InteractableUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InteractableUnityEvent`:
 
+<div className="api-used-in">
+
 [`InteractableEvents.interactionEnded`](/mod/game-api/types/global-i-l/interactableevents#m-interactionended), [`InteractableEvents.interactionStarted`](/mod/game-api/types/global-i-l/interactableevents#m-interactionstarted).
+
+</div>

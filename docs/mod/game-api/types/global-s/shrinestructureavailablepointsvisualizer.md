@@ -21,16 +21,16 @@ Experience fill visualizer for a skill shrine that also has settings for showing
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShrineStructureAvailablePointsVisualizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ShrineStructureAvailablePointsVisualizer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> | Where the free points effect is placed. |
-| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> | Pooled effect used to show available points. |
+| <Link id="m-availablepointsposition" /><code>{"private Transform availablePointsPosition"}</code> | <span className="api-desc">Where the free points effect is placed.</span> |
+| <Link id="m-freepointseffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" freePointsEffectDefinition"}</code> | <span className="api-desc">Pooled effect used to show available points.</span> |
 
 </details>

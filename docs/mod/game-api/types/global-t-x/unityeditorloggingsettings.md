@@ -24,21 +24,21 @@ Global settings asset for logging to the Unity editor console: on or off, and a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnityEditorLoggingSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UnityEditorLoggingSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> | Whether logs go to the Unity console in the editor. Copied to `UnityConsoleLogTarget.IsLoggingInEditor`. |
+| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> | <span className="api-desc">Whether logs go to the Unity console in the editor. Copied to `UnityConsoleLogTarget.IsLoggingInEditor`.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxlevel" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> | Backing field for `MaxLevel`. |
-| <Link id="m-minlevel" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> | Backing field for `MinLevel`. |
+| <Link id="m-maxlevel" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> | <span className="api-desc">Backing field for `MaxLevel`.</span> |
+| <Link id="m-minlevel" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> | <span className="api-desc">Backing field for `MinLevel`.</span> |
 
 </details>
 
@@ -46,16 +46,16 @@ Global settings asset for logging to the Unity editor console: on or off, and a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxlevel-2" /><code><Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> | Highest log level shown. |
-| <Link id="m-minlevel-2" /><code><Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> | Lowest log level shown. |
+| <Link id="m-maxlevel-2" /><code><Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> | <span className="api-desc">Highest log level shown.</span> |
+| <Link id="m-minlevel-2" /><code><Link to="/mod/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> | <span className="api-desc">Lowest log level shown.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Applies `IsLogging` to the Unity console log target when changed in the inspector. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Applies `IsLogging` to the Unity console log target when changed in the inspector.</span> |
 
 </details>

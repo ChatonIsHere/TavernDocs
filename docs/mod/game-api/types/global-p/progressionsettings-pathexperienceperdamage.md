@@ -22,16 +22,16 @@ Per progression path entry in `ProgressionSettings` that sets how much experienc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> | Creates a `ProgressionSettings.PathExperiencePerDamage` with default values. |
+| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> | <span className="api-desc">Creates a `ProgressionSettings.PathExperiencePerDamage` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-experienceperdamage" /><code>{"private float experiencePerDamage"}</code> | Backing field for `ExperiencePerDamage`. Defaults to 1. |
+| <Link id="m-experienceperdamage" /><code>{"private float experiencePerDamage"}</code> | <span className="api-desc">Backing field for `ExperiencePerDamage`. Defaults to 1.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Per progression path entry in `ProgressionSettings` that sets how much experienc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-experienceperdamage-2" /><code>{"float ExperiencePerDamage { get; }"}</code> | Experience given per point of damage on this entry's path. |
+| <Link id="m-experienceperdamage-2" /><code>{"float ExperiencePerDamage { get; }"}</code> | <span className="api-desc">Experience given per point of damage on this entry's path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PathExperiencePerDamage`:
 
+<div className="api-used-in">
+
 [`ProgressionSettings.experiencePerDamage`](/mod/game-api/types/global-p/progressionsettings#m-experienceperdamage).
+
+</div>

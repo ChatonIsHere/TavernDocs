@@ -23,11 +23,11 @@ Save data (version 2) for the `GlobalPagesManager`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> | Creates a `GlobalPagesManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> | <span className="api-desc">Creates a `GlobalPagesManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pages" /><code>{"uint[] pages"}</code> | Page hashes of the pages added to the manager, matched by index with `providers`. |
-| <Link id="m-providers" /><code>{"int[] providers"}</code> | Page provider id for each entry in `pages`, matched by index. |
+| <Link id="m-pages" /><code>{"uint[] pages"}</code> | <span className="api-desc">Page hashes of the pages added to the manager, matched by index with `providers`.</span> |
+| <Link id="m-providers" /><code>{"int[] providers"}</code> | <span className="api-desc">Page provider id for each entry in `pages`, matched by index.</span> |

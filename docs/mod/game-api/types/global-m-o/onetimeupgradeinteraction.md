@@ -22,16 +22,16 @@ A `StatUpgradeTarget` that gives each player its stat upgrade only once, remembe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeUpgradeInteraction()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"OneTimeUpgradeInteraction()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-upgradedplayerids" /><code>{"private HashSet<int> upgradedPlayerIDs"}</code> | User IDs of players who already got the upgrade. Saved through `OneTimeUpgradeSaveData`. |
+| <Link id="m-upgradedplayerids" /><code>{"private HashSet<int> upgradedPlayerIDs"}</code> | <span className="api-desc">User IDs of players who already got the upgrade. Saved through `OneTimeUpgradeSaveData`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A `StatUpgradeTarget` that gives each player its stat upgrade only once, remembe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onetimeupgrade" /><code>{"void OneTimeUpgrade("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Upgrades the player if their user ID isn't in `upgradedPlayerIDs` yet, then records them. |
-| <Link id="m-upgradeplayernovalidcheck" /><code>{"void UpgradePlayerNoValidCheck("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: applies the upgrade to the player's controller without checking whether they already had it. |
+| <Link id="m-onetimeupgrade" /><code>{"void OneTimeUpgrade("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Upgrades the player if their user ID isn't in `upgradedPlayerIDs` yet, then records them.</span> |
+| <Link id="m-upgradeplayernovalidcheck" /><code>{"void UpgradePlayerNoValidCheck("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Server: applies the upgrade to the player's controller without checking whether they already had it.</span> |

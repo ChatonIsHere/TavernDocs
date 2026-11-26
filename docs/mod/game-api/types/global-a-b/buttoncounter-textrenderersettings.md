@@ -21,17 +21,17 @@ A text label on a `ButtonCounter` that shows the amount, hidden below a minimum.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> | Creates a `ButtonCounter.TextRendererSettings` with default values. |
+| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> | <span className="api-desc">Creates a `ButtonCounter.TextRendererSettings` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minimumquantityfortext" /><code>{"private int minimumQuantityForText"}</code> | Smallest amount that is shown. Defaults to 1. |
-| <Link id="m-renderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer"}</code> | The text renderer to write to. |
+| <Link id="m-minimumquantityfortext" /><code>{"private int minimumQuantityForText"}</code> | <span className="api-desc">Smallest amount that is shown. Defaults to 1.</span> |
+| <Link id="m-renderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" renderer"}</code> | <span className="api-desc">The text renderer to write to.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ A text label on a `ButtonCounter` that shows the amount, hidden below a minimum.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatetext" /><code>{"void UpdateText(int value)"}</code> | Shows the value, or blank text if it is below `minimumQuantityForText`. |
+| <Link id="m-updatetext" /><code>{"void UpdateText(int value)"}</code> | <span className="api-desc">Shows the value, or blank text if it is below `minimumQuantityForText`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TextRendererSettings`:
 
+<div className="api-used-in">
+
 [`ButtonCounter.labels`](/mod/game-api/types/global-a-b/buttoncounter#m-labels).
+
+</div>

@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Township/Features. Its nested classes group fea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Features()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features` with default values. |
+| <Link id="m-ctor" /><code>{"protected Features()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features` with default values.</span> |

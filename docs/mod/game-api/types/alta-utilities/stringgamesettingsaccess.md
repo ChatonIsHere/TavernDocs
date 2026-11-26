@@ -23,10 +23,14 @@ Setting access asset for a string property on `GameSettings` or `ServerSettings`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StringGameSettingsAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StringGameSettingsAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StringGameSettingsAccess`:
 
+<div className="api-used-in">
+
 [`StringSettingValue.setting`](/mod/game-api/types/alta-utilities/stringsettingvalue#m-setting).
+
+</div>

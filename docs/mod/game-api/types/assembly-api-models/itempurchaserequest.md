@@ -22,10 +22,10 @@ Request body for buying a shop item with a payment method.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemPurchaseRequest()"}</code> | Creates an `ItemPurchaseRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ItemPurchaseRequest()"}</code> | <span className="api-desc">Creates an `ItemPurchaseRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | Id of the item to buy, sent as `item_id`. |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the item to buy, sent as `item_id`.</span> |

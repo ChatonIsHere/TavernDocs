@@ -22,16 +22,16 @@ Old save data (version 1) for `Trigger`, migrated to `TriggerSaveData`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerSaveDataOLD1()"}</code> | Creates a `TriggerSaveDataOLD1` with default values. |
+| <Link id="m-ctor" /><code>{"TriggerSaveDataOLD1()"}</code> | <span className="api-desc">Creates a `TriggerSaveDataOLD1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> | Saved `toggle` setting. |
+| <Link id="m-togglesaved" /><code>{"bool toggleSaved"}</code> | <span className="api-desc">Saved `toggle` setting.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `TriggerSaveData`, keeping `toggle`; `syncWithSender` comes out false. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `TriggerSaveData`, keeping `toggle`; `syncWithSender` comes out false.</span> |

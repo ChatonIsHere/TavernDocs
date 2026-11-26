@@ -21,5 +21,5 @@ An entity that is at some stage of growth, such as a plant (`GrowerComponent`, `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentstage" /><code><Link to="/mod/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> | The growth stage it is at now. |
-| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> | True once the stage has been set up. |
+| <Link id="m-currentstage" /><code><Link to="/mod/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" CurrentStage { get; }"}</code> | <span className="api-desc">The growth stage it is at now.</span> |
+| <Link id="m-issetup" /><code>{"bool IsSetup { get; }"}</code> | <span className="api-desc">True once the stage has been set up.</span> |

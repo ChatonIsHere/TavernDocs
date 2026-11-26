@@ -21,25 +21,25 @@ Build step that flattens a prefab's hierarchy: children move up to this root and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FlattenAndCleanEmptyAtBakeTime()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FlattenAndCleanEmptyAtBakeTime()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sortingorder" /><code>{"override int SortingOrder { get; }"}</code> | 100, so it runs after most bake steps. |
+| <Link id="m-sortingorder" /><code>{"override int SortingOrder { get; }"}</code> | <span className="api-desc">100, so it runs after most bake steps.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Flattens the hierarchy under this transform. |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | <span className="api-desc">Flattens the hierarchy under this transform.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-flatten" /><code>{"private static void Flatten(Transform transform, Transform root)"}</code> | Recursively bakes `IPointerPrefabBakable` components, reparents objects with components to the root and destroys empty ones. Stops at `IIgnoreForStaticFlatten`. |
+| <Link id="m-flatten" /><code>{"private static void Flatten(Transform transform, Transform root)"}</code> | <span className="api-desc">Recursively bakes `IPointerPrefabBakable` components, reparents objects with components to the root and destroys empty ones. Stops at `IIgnoreForStaticFlatten`.</span> |
 
 </details>

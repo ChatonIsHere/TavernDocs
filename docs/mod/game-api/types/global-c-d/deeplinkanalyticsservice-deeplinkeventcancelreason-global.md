@@ -27,4 +27,8 @@ Reason passed to `DeepLinkAnalyticsService.CreateCancelEvent` when a deep link j
 
 Members of other types that take, return or hold a `DeeplinkEventCancelReason`:
 
+<div className="api-used-in">
+
 [`DeepLinkAnalyticsService.CreateCancelEvent`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-createcancelevent), [`DeepLinkAnalyticsService.GetCancelReasonAsFormattedString`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-getcancelreasonasformattedstring).
+
+</div>

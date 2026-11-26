@@ -21,29 +21,29 @@ Startup component that loads the hashed item, material and page collection table
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HashedGeneralValuesWarmer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"HashedGeneralValuesWarmer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-framemillisecondallowance" /><code>{"private float frameMillisecondAllowance"}</code> | Milliseconds of prefab loading allowed per frame. |
-| <Link id="m-prefabstowarm" /><code>{"private uint[] prefabsToWarm"}</code> | Hashes of prefabs to load early. |
+| <Link id="m-framemillisecondallowance" /><code>{"private float frameMillisecondAllowance"}</code> | <span className="api-desc">Milliseconds of prefab loading allowed per frame.</span> |
+| <Link id="m-prefabstowarm" /><code>{"private uint[] prefabsToWarm"}</code> | <span className="api-desc">Hashes of prefabs to load early.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private async void Awake()"}</code> | Runs `Initialize` and then `WarmPrefabs`. |
-| <Link id="m-initialize" /><code>{"private async Task Initialize()"}</code> | Loads the `Item`, `PhysicalMaterial` and `PageCollection` tables and the pickup type dictionary, yielding a frame between each. |
-| <Link id="m-warmprefabs" /><code>{"private async Task WarmPrefabs()"}</code> | Loads each listed prefab, yielding a frame whenever the time budget is used up. |
+| <Link id="m-awake" /><code>{"private async void Awake()"}</code> | <span className="api-desc">Runs `Initialize` and then `WarmPrefabs`.</span> |
+| <Link id="m-initialize" /><code>{"private async Task Initialize()"}</code> | <span className="api-desc">Loads the `Item`, `PhysicalMaterial` and `PageCollection` tables and the pickup type dictionary, yielding a frame between each.</span> |
+| <Link id="m-warmprefabs" /><code>{"private async Task WarmPrefabs()"}</code> | <span className="api-desc">Loads each listed prefab, yielding a frame whenever the time budget is used up.</span> |
 
 </details>

@@ -22,17 +22,17 @@ Forest fill step that scatters objects on a grid across the forest, outside path
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestFill()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForestFill()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
-| <Link id="m-step" /><code>{"private float step"}</code> | Grid spacing in metres. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger for this class.</span> |
+| <Link id="m-step" /><code>{"private float step"}</code> | <span className="api-desc">Grid spacing in metres.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill step that scatters objects on a grid across the forest, outside path
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generateinternal" /><code>{"protected override async Task GenerateInternal("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | Tests grid points in the chunk row by row on worker threads, raycasts the ground on the main thread and adds spawn instructions for points that pass. |
+| <Link id="m-generateinternal" /><code>{"protected override async Task GenerateInternal("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | <span className="api-desc">Tests grid points in the chunk row by row on worker threads, raycasts the ground on the main thread and adds spawn instructions for points that pass.</span> |

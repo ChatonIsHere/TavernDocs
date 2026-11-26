@@ -28,4 +28,8 @@ Which way an agent circles around its target when repositioning: right or left.
 
 Members of other types that take, return or hold a `MovementDirection`:
 
+<div className="api-used-in">
+
 [`AgentCircleRepositionSettings.movementDirection`](/mod/game-api/types/alta-intelligence/agentcirclerepositionsettings#m-movementdirection).
+
+</div>

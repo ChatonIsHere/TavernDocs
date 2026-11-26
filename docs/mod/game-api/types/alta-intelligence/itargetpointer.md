@@ -21,4 +21,4 @@ Anything that can name an AI target for itself. Every `ITarget` and agent is one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | The target this object stands for (often itself). |
+| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | <span className="api-desc">The target this object stands for (often itself).</span> |

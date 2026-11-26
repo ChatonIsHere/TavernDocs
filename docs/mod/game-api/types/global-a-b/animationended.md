@@ -21,10 +21,10 @@ Animator state behaviour that tells the animator's `IAnimationEndCallbackReceive
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationEnded()"}</code> | Creates an `AnimationEnded` with default values. |
+| <Link id="m-ctor" /><code>{"AnimationEnded()"}</code> | <span className="api-desc">Creates an `AnimationEnded` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstateexit" /><code>{"override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"}</code> | Calls `OnAnimationEnded` on the `IAnimationEndCallbackReceiver` on the animator's object. |
+| <Link id="m-onstateexit" /><code>{"override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"}</code> | <span className="api-desc">Calls `OnAnimationEnded` on the `IAnimationEndCallbackReceiver` on the animator's object.</span> |

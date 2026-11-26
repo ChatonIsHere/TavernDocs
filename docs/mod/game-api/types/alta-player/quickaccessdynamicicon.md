@@ -21,18 +21,18 @@ Bubble icon that fires toggle events when its action turns on or off.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QuickAccessDynamicIcon()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"QuickAccessDynamicIcon()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> | The action shown. |
-| <Link id="m-toggleonactive" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" toggleOnActive"}</code> | Event given the active state. |
-| <Link id="m-toggleonactiveinverse" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" toggleOnActiveInverse"}</code> | Event given the opposite of the active state. |
+| <Link id="m-action" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action"}</code> | <span className="api-desc">The action shown.</span> |
+| <Link id="m-toggleonactive" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" toggleOnActive"}</code> | <span className="api-desc">Event given the active state.</span> |
+| <Link id="m-toggleonactiveinverse" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" toggleOnActiveInverse"}</code> | <span className="api-desc">Event given the opposite of the active state.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Bubble icon that fires toggle events when its action turns on or off.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> | Hooks the action's active event and applies the current state. |
+| <Link id="m-setupaction" /><code>{"void SetupAction("}<Link to="/mod/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" action)"}</code> | <span className="api-desc">Hooks the action's active event and applies the current state.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from the action. |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> | Fires `toggleOnActive` with the state and `toggleOnActiveInverse` with its opposite. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Unhooks from the action.</span> |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> | <span className="api-desc">Fires `toggleOnActive` with the state and `toggleOnActiveInverse` with its opposite.</span> |
 
 </details>

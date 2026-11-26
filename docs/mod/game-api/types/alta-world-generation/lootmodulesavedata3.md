@@ -22,21 +22,21 @@ Old save format (version 3) for `LootModule`, which added `isOneOff`. Migrates t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData3()"}</code> | Creates a `LootModuleSaveData3` with default values. |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData3()"}</code> | <span className="api-desc">Creates a `LootModuleSaveData3` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-biome" /><code><Link to="/mod/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome"}</code> | Override biome for the loot. |
-| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> | Whether the module had spawned loot. |
-| <Link id="m-incrementingfailchance" /><code>{"float incrementingFailChance"}</code> | How much the chance to stop filling grows with each dock tried. |
-| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> | Whether the module spawned once and then destroyed itself. Lost on migration. |
-| <Link id="m-prosperity" /><code>{"float prosperity"}</code> | Prosperity value the loot is generated with. |
-| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> | Time left on the refill timer. |
+| <Link id="m-biome" /><code><Link to="/mod/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biome"}</code> | <span className="api-desc">Override biome for the loot.</span> |
+| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> | <span className="api-desc">Whether the module had spawned loot.</span> |
+| <Link id="m-incrementingfailchance" /><code>{"float incrementingFailChance"}</code> | <span className="api-desc">How much the chance to stop filling grows with each dock tried.</span> |
+| <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> | <span className="api-desc">Whether the module spawned once and then destroyed itself. Lost on migration.</span> |
+| <Link id="m-prosperity" /><code>{"float prosperity"}</code> | <span className="api-desc">Prosperity value the loot is generated with.</span> |
+| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> | <span className="api-desc">Time left on the refill timer.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to version 4 with `respawnFrequency` set to -1. `isOneOff` is not copied, so it becomes false. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to version 4 with `respawnFrequency` set to -1. `isOneOff` is not copied, so it becomes false.</span> |

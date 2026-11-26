@@ -22,4 +22,4 @@ Unity event type with a `Chiselable`, a float and two `Vector3` arguments, used 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselableUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ChiselableUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

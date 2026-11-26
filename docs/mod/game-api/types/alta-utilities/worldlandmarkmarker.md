@@ -21,4 +21,4 @@ Empty marker component that tags a large static object as a world landmark. Adde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WorldLandmarkMarker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WorldLandmarkMarker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

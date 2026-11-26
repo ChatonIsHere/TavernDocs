@@ -23,20 +23,20 @@ Impact modifier asset that changes a stat's base value on the target or the wiel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactModifierStatAffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactModifierStatAffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addvalueoverhitvalue" /><code>{"private AnimationCurve addValueOverHitValue"}</code> | Amount added to the stat, by hit value. |
-| <Link id="m-isaffectingwielder" /><code>{"private bool isAffectingWielder"}</code> | When on, changes the wielding player's stat instead of the target's. |
-| <Link id="m-isbasedon" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactmodifierstataffect-hitvalue">{"ImpactModifierStatAffect.HitValue"}</Link>{" isBasedOn"}</code> | Which hit value drives the curves: damage, cripple damage or effectiveness. |
-| <Link id="m-multiplyvalueoverhitvalue" /><code>{"private AnimationCurve multiplyValueOverHitValue"}</code> | Factor the stat's base is multiplied by, by hit value. |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> | The stat changed. |
+| <Link id="m-addvalueoverhitvalue" /><code>{"private AnimationCurve addValueOverHitValue"}</code> | <span className="api-desc">Amount added to the stat, by hit value.</span> |
+| <Link id="m-isaffectingwielder" /><code>{"private bool isAffectingWielder"}</code> | <span className="api-desc">When on, changes the wielding player's stat instead of the target's.</span> |
+| <Link id="m-isbasedon" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactmodifierstataffect-hitvalue">{"ImpactModifierStatAffect.HitValue"}</Link>{" isBasedOn"}</code> | <span className="api-desc">Which hit value drives the curves: damage, cripple damage or effectiveness.</span> |
+| <Link id="m-multiplyvalueoverhitvalue" /><code>{"private AnimationCurve multiplyValueOverHitValue"}</code> | <span className="api-desc">Factor the stat's base is multiplied by, by hit value.</span> |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> | <span className="api-desc">The stat changed.</span> |
 
 </details>
 
@@ -44,13 +44,13 @@ Impact modifier asset that changes a stat's base value on the target or the wiel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Picks the hit value and applies it to the wielder's or the hit target's stats. |
+| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">Picks the hit value and applies it to the wielder's or the hit target's stats.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-affectstatmanager" /><code>{"private void AffectStatManager("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, float value)"}</code> | Sets the stat's base to base times the multiply curve plus the add curve times `ImpactModifierValueMultiplier`. |
+| <Link id="m-affectstatmanager" /><code>{"private void AffectStatManager("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, float value)"}</code> | <span className="api-desc">Sets the stat's base to base times the multiply curve plus the add curve times `ImpactModifierValueMultiplier`.</span> |
 
 </details>

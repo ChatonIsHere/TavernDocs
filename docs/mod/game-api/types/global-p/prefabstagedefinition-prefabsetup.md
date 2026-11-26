@@ -21,18 +21,18 @@ One stage of a `PrefabStageDefinition`: the prefab to use and its local offset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> | Creates a `PrefabStageDefinition.PrefabSetup` with default values. |
+| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> | <span className="api-desc">Creates a `PrefabStageDefinition.PrefabSetup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | Backing field for `LocalPosition`. |
-| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> | Backing field for `LocalRotation`. |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Backing field for `Prefab`. |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | <span className="api-desc">Backing field for `LocalPosition`.</span> |
+| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> | <span className="api-desc">Backing field for `LocalRotation`.</span> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">Backing field for `Prefab`.</span> |
 
 </details>
 
@@ -40,12 +40,16 @@ One stage of a `PrefabStageDefinition`: the prefab to use and its local offset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> | Local position of the stage prefab. |
-| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> | Local rotation as Euler angles. |
-| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> | The network prefab for this stage. |
+| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> | <span className="api-desc">Local position of the stage prefab.</span> |
+| <Link id="m-localrotation-2" /><code>{"Vector3 LocalRotation { get; }"}</code> | <span className="api-desc">Local rotation as Euler angles.</span> |
+| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> | <span className="api-desc">The network prefab for this stage.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PrefabSetup`:
 
+<div className="api-used-in">
+
 [`PrefabStageDefinition.GetStage`](/mod/game-api/types/global-p/prefabstagedefinition#m-getstage), [`PrefabStageDefinition.stages`](/mod/game-api/types/global-p/prefabstagedefinition#m-stages), [`PrefabStageDefinition.Stages`](/mod/game-api/types/global-p/prefabstagedefinition#m-stages-2).
+
+</div>

@@ -21,5 +21,5 @@ Result of a join check with the web API: whether it passed and an error message.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> | Why the join failed. |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; set; }"}</code> | Whether the join is allowed. |
+| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> | <span className="api-desc">Why the join failed.</span> |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; set; }"}</code> | <span className="api-desc">Whether the join is allowed.</span> |

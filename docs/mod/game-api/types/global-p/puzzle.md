@@ -21,26 +21,26 @@ A puzzle condition that becomes complete once all its child conditions are compl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Puzzle()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Puzzle()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-conditions" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> | Conditions that must all be complete. |
+| <Link id="m-conditions" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> | <span className="api-desc">Conditions that must all be complete.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Sets the puzzle complete when every condition is complete. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Sets the puzzle complete when every condition is complete.</span> |
 
 </details>

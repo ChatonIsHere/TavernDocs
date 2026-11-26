@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Township/Features/Carpentry.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Carpentry()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Carpentry` with default values. |
+| <Link id="m-ctor" /><code>{"protected Carpentry()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Carpentry` with default values.</span> |

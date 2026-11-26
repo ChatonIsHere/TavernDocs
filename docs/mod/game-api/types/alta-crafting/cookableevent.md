@@ -21,10 +21,14 @@ A serialized event that passes a `Cookable`, set up in the Inspector. `CookingPo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> | Creates a `CookableEvent` with default values. |
+| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> | <span className="api-desc">Creates a `CookableEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CookableEvent`:
 
+<div className="api-used-in">
+
 [`CookingPot.rejectedIngredient`](/mod/game-api/types/alta-crafting/cookingpot#m-rejectedingredient).
+
+</div>

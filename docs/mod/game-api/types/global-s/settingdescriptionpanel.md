@@ -21,18 +21,18 @@ In-world text panel that shows the name and description of the setting a player 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SettingDescriptionPanel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SettingDescriptionPanel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentsetting" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" currentSetting"}</code> | The setting currently shown. |
-| <Link id="m-descriptiontext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" descriptionText"}</code> | Text for the setting's description. |
-| <Link id="m-fieldname" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" fieldName"}</code> | Text for the setting's display name. |
+| <Link id="m-currentsetting" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" currentSetting"}</code> | <span className="api-desc">The setting currently shown.</span> |
+| <Link id="m-descriptiontext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" descriptionText"}</code> | <span className="api-desc">Text for the setting's description.</span> |
+| <Link id="m-fieldname" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" fieldName"}</code> | <span className="api-desc">Text for the setting's display name.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ In-world text panel that shows the name and description of the setting a player 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-showsetting" /><code>{"void ShowSetting("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" setting)"}</code> | Shows a setting's display name and description, if it isn't already the one shown. |
+| <Link id="m-showsetting" /><code>{"void ShowSetting("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" setting)"}</code> | <span className="api-desc">Shows a setting's display name and description, if it isn't already the one shown.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SettingDescriptionPanel`:
 
+<div className="api-used-in">
+
 [`SettingsPanel.descriptionPanel`](/mod/game-api/types/global-s/settingspanel#m-descriptionpanel), [`SettingsPanel.DescriptionPanel`](/mod/game-api/types/global-s/settingspanel#m-descriptionpanel-2).
+
+</div>

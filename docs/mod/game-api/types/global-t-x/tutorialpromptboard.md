@@ -21,20 +21,20 @@ Popup board asking the player whether to play the tutorial. Join loads the tutor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TutorialPromptBoard()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TutorialPromptBoard()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isjoining" /><code>{"private bool isJoining"}</code> | True once join was pressed, to block repeats. |
-| <Link id="m-jointutorialbutton" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" joinTutorialButton"}</code> | Button that starts the tutorial. |
-| <Link id="m-skiptutorialbutton" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" skipTutorialButton"}</code> | Button that closes the board. |
-| <Link id="m-skiptutorialfollowupmessage" /><code>{"private string skipTutorialFollowupMessage"}</code> | Message text for a follow-up after skipping. Not used in this class. |
-| <Link id="m-skiptutorialfollowuptitle" /><code>{"private string skipTutorialFollowupTitle"}</code> | Title for a follow-up after skipping. Not used in this class. |
+| <Link id="m-isjoining" /><code>{"private bool isJoining"}</code> | <span className="api-desc">True once join was pressed, to block repeats.</span> |
+| <Link id="m-jointutorialbutton" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" joinTutorialButton"}</code> | <span className="api-desc">Button that starts the tutorial.</span> |
+| <Link id="m-skiptutorialbutton" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" skipTutorialButton"}</code> | <span className="api-desc">Button that closes the board.</span> |
+| <Link id="m-skiptutorialfollowupmessage" /><code>{"private string skipTutorialFollowupMessage"}</code> | <span className="api-desc">Message text for a follow-up after skipping. Not used in this class.</span> |
+| <Link id="m-skiptutorialfollowuptitle" /><code>{"private string skipTutorialFollowupTitle"}</code> | <span className="api-desc">Title for a follow-up after skipping. Not used in this class.</span> |
 
 </details>
 
@@ -42,17 +42,17 @@ Popup board asking the player whether to play the tutorial. Join loads the tutor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-jointutorialselected" /><code>{"event Action JoinTutorialSelected"}</code> | Raised when the player picks the tutorial, before it loads. |
+| <Link id="m-jointutorialselected" /><code>{"event Action JoinTutorialSelected"}</code> | <span className="api-desc">Raised when the player picks the tutorial, before it loads.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the join button to `JoinTutorial` and the skip button to close. |
-| <Link id="m-jointutorial" /><code>{"private async void JoinTutorial()"}</code> | Raises `JoinTutorialSelected`, loads the tutorial scene and closes. Ignores repeat presses. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the join button to `JoinTutorial` and the skip button to close.</span> |
+| <Link id="m-jointutorial" /><code>{"private async void JoinTutorial()"}</code> | <span className="api-desc">Raises `JoinTutorialSelected`, loads the tutorial scene and closes. Ignores repeat presses.</span> |
 
 </details>
 
@@ -60,4 +60,8 @@ Popup board asking the player whether to play the tutorial. Join loads the tutor
 
 Members of other types that take, return or hold a `TutorialPromptBoard`:
 
+<div className="api-used-in">
+
 [`PlayTutorialChecker.popup`](/mod/game-api/types/global-p/playtutorialchecker#m-popup).
+
+</div>

@@ -23,21 +23,21 @@ Settings for `ActiveCircleReposition`: a short sidestep around the target, left 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentCircleRepositionSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentCircleRepositionSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> | Backing field for `IsFacingTarget`. |
-| <Link id="m-ismovingbackwards" /><code>{"private bool isMovingBackwards"}</code> | Backing field for `IsMovingBackwards`. |
-| <Link id="m-movementdirection" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/agentcirclerepositionsettings-movementdirection">{"AgentCircleRepositionSettings.MovementDirection"}</Link>{" movementDirection"}</code> | Right or left. |
-| <Link id="m-movementduration" /><code>{"private float movementDuration"}</code> | Backing field for `MovementDuration`. |
-| <Link id="m-raycasthieght" /><code>{"private float raycastHieght"}</code> | Backing field for `RaycastHieght`. |
-| <Link id="m-repositionangle" /><code>{"private float repositionAngle"}</code> | Angle in degrees to move around the target. |
+| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> | <span className="api-desc">Backing field for `IsFacingTarget`.</span> |
+| <Link id="m-ismovingbackwards" /><code>{"private bool isMovingBackwards"}</code> | <span className="api-desc">Backing field for `IsMovingBackwards`.</span> |
+| <Link id="m-movementdirection" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/agentcirclerepositionsettings-movementdirection">{"AgentCircleRepositionSettings.MovementDirection"}</Link>{" movementDirection"}</code> | <span className="api-desc">Right or left.</span> |
+| <Link id="m-movementduration" /><code>{"private float movementDuration"}</code> | <span className="api-desc">Backing field for `MovementDuration`.</span> |
+| <Link id="m-raycasthieght" /><code>{"private float raycastHieght"}</code> | <span className="api-desc">Backing field for `RaycastHieght`.</span> |
+| <Link id="m-repositionangle" /><code>{"private float repositionAngle"}</code> | <span className="api-desc">Angle in degrees to move around the target.</span> |
 
 </details>
 
@@ -45,15 +45,15 @@ Settings for `ActiveCircleReposition`: a short sidestep around the target, left 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfacingtarget-2" /><code>{"bool IsFacingTarget { get; }"}</code> | Whether the agent keeps facing the target while moving. |
-| <Link id="m-ismovingbackwards-2" /><code>{"bool IsMovingBackwards { get; }"}</code> | Whether the sidestep also backs away. |
-| <Link id="m-ismovingright" /><code>{"bool IsMovingRight { get; private set; }"}</code> | True when the direction is right; set in `GetAction`. |
-| <Link id="m-movementduration-2" /><code>{"float MovementDuration { get; }"}</code> | Passed to the walker's `NormalizedMove`. |
-| <Link id="m-raycasthieght-2" /><code>{"float RaycastHieght { get; }"}</code> | Height raycasts start from when checking the new spot. |
-| <Link id="m-repositionangle-2" /><code>{"Quaternion RepositionAngle { get; private set; }"}</code> | Rotation around the target for the sidestep; set in `GetAction`. |
+| <Link id="m-isfacingtarget-2" /><code>{"bool IsFacingTarget { get; }"}</code> | <span className="api-desc">Whether the agent keeps facing the target while moving.</span> |
+| <Link id="m-ismovingbackwards-2" /><code>{"bool IsMovingBackwards { get; }"}</code> | <span className="api-desc">Whether the sidestep also backs away.</span> |
+| <Link id="m-ismovingright" /><code>{"bool IsMovingRight { get; private set; }"}</code> | <span className="api-desc">True when the direction is right; set in `GetAction`.</span> |
+| <Link id="m-movementduration-2" /><code>{"float MovementDuration { get; }"}</code> | <span className="api-desc">Passed to the walker's `NormalizedMove`.</span> |
+| <Link id="m-raycasthieght-2" /><code>{"float RaycastHieght { get; }"}</code> | <span className="api-desc">Height raycasts start from when checking the new spot.</span> |
+| <Link id="m-repositionangle-2" /><code>{"Quaternion RepositionAngle { get; private set; }"}</code> | <span className="api-desc">Rotation around the target for the sidestep; set in `GetAction`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Works out `IsMovingRight` and `RepositionAngle`, then builds the `ActiveCircleReposition` action. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Works out `IsMovingRight` and `RepositionAngle`, then builds the `ActiveCircleReposition` action.</span> |

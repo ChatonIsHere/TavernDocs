@@ -22,16 +22,16 @@ Quick access action that switches the local player between playing and equipment
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentModeQuickAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EquipmentModeQuickAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"private bool isValid"}</code> | Whether a playing/equipment transition was available at the last check. |
+| <Link id="m-isvalid" /><code>{"private bool isValid"}</code> | <span className="api-desc">Whether a playing/equipment transition was available at the last check.</span> |
 
 </details>
 
@@ -39,22 +39,22 @@ Quick access action that switches the local player between playing and equipment
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | True while the player is in the equipment state. |
-| <Link id="m-isvalid-2" /><code>{"override bool IsValid { get; }"}</code> | True if a playing/equipment transition is available and the player isn't downed. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">True while the player is in the equipment state.</span> |
+| <Link id="m-isvalid-2" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">True if a playing/equipment transition is available and the player isn't downed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"override void Close()"}</code> | Stops watching player state changes. |
-| <Link id="m-open" /><code>{"override void Open()"}</code> | Watches player state changes and checks whether a switch is possible. |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Triggers the switch into or out of equipment mode. |
+| <Link id="m-close" /><code>{"override void Close()"}</code> | <span className="api-desc">Stops watching player state changes.</span> |
+| <Link id="m-open" /><code>{"override void Open()"}</code> | <span className="api-desc">Watches player state changes and checks whether a switch is possible.</span> |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Triggers the switch into or out of equipment mode.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatestate" /><code>{"private void UpdateState("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" playerState)"}</code> | On a state change, rechecks whether a switch is possible and refreshes the bubble. |
+| <Link id="m-updatestate" /><code>{"private void UpdateState("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" playerState)"}</code> | <span className="api-desc">On a state change, rechecks whether a switch is possible and refreshes the bubble.</span> |
 
 </details>

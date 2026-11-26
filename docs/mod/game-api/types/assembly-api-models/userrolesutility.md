@@ -20,5 +20,5 @@ Reads a user's roles from the policy claims in their identity token.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrolesfromidentitytoken" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(string identityToken)"}</code> | Returns the roles in a token (string or parsed): `dev` sets developer, `supporter` sets member, `mod` sets moderator. No signature check. |
-| <Link id="m-getrolesfromidentitytoken-2" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(JwtSecurityToken identityToken)"}</code> | Returns the roles in a token (string or parsed): `dev` sets developer, `supporter` sets member, `mod` sets moderator. No signature check. |
+| <Link id="m-getrolesfromidentitytoken" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(string identityToken)"}</code> | <span className="api-desc">Returns the roles in a token (string or parsed): `dev` sets developer, `supporter` sets member, `mod` sets moderator. No signature check.</span> |
+| <Link id="m-getrolesfromidentitytoken-2" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/userroles">{"UserRoles"}</Link>{" GetRolesFromIdentityToken(JwtSecurityToken identityToken)"}</code> | <span className="api-desc">Returns the roles in a token (string or parsed): `dev` sets developer, `supporter` sets member, `mod` sets moderator. No signature check.</span> |

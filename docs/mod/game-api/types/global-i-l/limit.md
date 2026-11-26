@@ -21,18 +21,18 @@ Splits a float signal by a threshold: values above it go to one event, the rest 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Limit()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Limit()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-limit" /><code>{"private float limit"}</code> | The threshold. |
-| <Link id="m-over" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" over"}</code> | Invoked with values above the limit. |
-| <Link id="m-under" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" under"}</code> | Invoked with values at or below the limit. |
+| <Link id="m-limit" /><code>{"private float limit"}</code> | <span className="api-desc">The threshold.</span> |
+| <Link id="m-over" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" over"}</code> | <span className="api-desc">Invoked with values above the limit.</span> |
+| <Link id="m-under" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" under"}</code> | <span className="api-desc">Invoked with values at or below the limit.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Splits a float signal by a threshold: values above it go to one event, the rest 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-input" /><code>{"void Input(float value)"}</code> | Invokes `over` when the value is above `limit`, otherwise `under`. |
+| <Link id="m-input" /><code>{"void Input(float value)"}</code> | <span className="api-desc">Invokes `over` when the value is above `limit`, otherwise `under`.</span> |

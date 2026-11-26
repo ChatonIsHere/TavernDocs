@@ -21,11 +21,15 @@ One named value on an analytics event.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Property name. |
-| <Link id="m-value" /><code>{"object Value { get; }"}</code> | Property value. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">Property name.</span> |
+| <Link id="m-value" /><code>{"object Value { get; }"}</code> | <span className="api-desc">Property value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAnalyticsProperty`:
 
+<div className="api-used-in">
+
 [`AnalyticsData.GetEnumerator`](/mod/game-api/types/assembly-other/analyticsdata#m-getenumerator), [`AnalyticsData.properties`](/mod/game-api/types/assembly-other/analyticsdata#m-properties).
+
+</div>

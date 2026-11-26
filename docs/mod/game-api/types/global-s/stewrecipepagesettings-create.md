@@ -22,4 +22,4 @@ Editor menu entry for creating a `StewRecipePageSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StewRecipePageSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StewRecipePageSettings.Create` with default values.</span> |

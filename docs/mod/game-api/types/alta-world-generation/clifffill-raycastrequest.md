@@ -21,11 +21,15 @@ A raycast queued by `CliffFill` to find a spot on a cliff face to spawn on.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pointedge" /><code><Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge"}</code> | The point along the cliff edge to cast from. Its position is updated to the hit point. |
-| <Link id="m-y" /><code>{"float y"}</code> | Height the ray starts at. |
+| <Link id="m-pointedge" /><code><Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" pointEdge"}</code> | <span className="api-desc">The point along the cliff edge to cast from. Its position is updated to the hit point.</span> |
+| <Link id="m-y" /><code>{"float y"}</code> | <span className="api-desc">Height the ray starts at.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RaycastRequest`:
 
+<div className="api-used-in">
+
 [`CliffFill.Raycasts`](/mod/game-api/types/alta-world-generation/clifffill#m-raycasts).
+
+</div>

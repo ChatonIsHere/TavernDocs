@@ -21,16 +21,16 @@ Unity editor menu item that opens the server folder (where server logs live) in 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> | Creates an `OpenServerLogs` with default values. |
+| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> | <span className="api-desc">Creates an `OpenServerLogs` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"override string Description { get; }"}</code> | Menu tooltip text. |
+| <Link id="m-description" /><code>{"override string Description { get; }"}</code> | <span className="api-desc">Menu tooltip text.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Opens `%appdata%/A Township Tale/Servers` in Explorer. |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | <span className="api-desc">Opens `%appdata%/A Township Tale/Servers` in Explorer.</span> |

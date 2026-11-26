@@ -21,4 +21,4 @@ Something with an undo and redo history.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history" /><code><Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | The history manager. |
+| <Link id="m-history" /><code><Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | <span className="api-desc">The history manager.</span> |

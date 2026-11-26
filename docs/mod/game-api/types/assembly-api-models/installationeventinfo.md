@@ -20,17 +20,17 @@ A stored install or update event as the API returns it; the read side of `Instal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> | Creates an `InstallationEventInfo` with default values. |
+| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> | <span className="api-desc">Creates an `InstallationEventInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> | Error text, if the step failed. |
-| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> | What happened, as a string. |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The event's id. |
-| <Link id="m-startidentifier" /><code>{"int StartIdentifier { get; set; }"}</code> | Id of the start event this one belongs to. |
-| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> | When the event was recorded. |
-| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> | Id of the user who reported it. |
-| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> | Version updated from. |
-| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> | Version installed or updated to. |
+| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> | <span className="api-desc">Error text, if the step failed.</span> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> | <span className="api-desc">What happened, as a string.</span> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | <span className="api-desc">The event's id.</span> |
+| <Link id="m-startidentifier" /><code>{"int StartIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the start event this one belongs to.</span> |
+| <Link id="m-time" /><code>{"DateTime Time { get; set; }"}</code> | <span className="api-desc">When the event was recorded.</span> |
+| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the user who reported it.</span> |
+| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> | <span className="api-desc">Version updated from.</span> |
+| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> | <span className="api-desc">Version installed or updated to.</span> |

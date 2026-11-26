@@ -21,18 +21,18 @@ Save folder that mirrors a local folder to a second directory on disk. Files and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteAltaFolder("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, DirectoryInfo remoteInfo)"}</code> | Creates a `RemoteAltaFolder` from `localFolder` and `remoteInfo`. |
+| <Link id="m-ctor" /><code>{"RemoteAltaFolder("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, DirectoryInfo remoteInfo)"}</code> | <span className="api-desc">Creates a `RemoteAltaFolder` from `localFolder` and `remoteInfo`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localfolder" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder"}</code> | The local folder that holds the working copies. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-remoteinfo" /><code>{"private DirectoryInfo remoteInfo"}</code> | The remote directory. Created in the constructor if missing. |
+| <Link id="m-localfolder" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder"}</code> | <span className="api-desc">The local folder that holds the working copies.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-remoteinfo" /><code>{"private DirectoryInfo remoteInfo"}</code> | <span className="api-desc">The remote directory. Created in the constructor if missing.</span> |
 
 </details>
 
@@ -40,20 +40,20 @@ Save folder that mirrors a local folder to a second directory on disk. Files and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delete" /><code>{"override void Delete()"}</code> | Deletes the remote directory and its files, then the local folder. |
-| <Link id="m-fileexists" /><code>{"override bool FileExists(string name, out "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | Checks the remote directory for the file and, if found, caches and returns a remote-backed file. |
-| <Link id="m-getfile" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile(string name)"}</code> | Returns the cached remote-backed file for the name, creating it if needed. |
-| <Link id="m-getsubfolder" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetSubfolder(string name)"}</code> | Returns the cached remote-backed subfolder, creating it if needed. |
-| <Link id="m-subfolderexists" /><code>{"override bool SubfolderExists(string name, out "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | Checks the remote directory for the subfolder and, if found, caches and returns it. |
-| <Link id="m-findallfiles" /><code>{"protected override void FindAllFiles()"}</code> | Loads every file in the remote directory, skipping names containing `_backup`. |
-| <Link id="m-findallsubfolders" /><code>{"protected override void FindAllSubFolders()"}</code> | Loads every subdirectory of the remote directory. |
+| <Link id="m-delete" /><code>{"override void Delete()"}</code> | <span className="api-desc">Deletes the remote directory and its files, then the local folder.</span> |
+| <Link id="m-fileexists" /><code>{"override bool FileExists(string name, out "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | <span className="api-desc">Checks the remote directory for the file and, if found, caches and returns a remote-backed file.</span> |
+| <Link id="m-getfile" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile(string name)"}</code> | <span className="api-desc">Returns the cached remote-backed file for the name, creating it if needed.</span> |
+| <Link id="m-getsubfolder" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetSubfolder(string name)"}</code> | <span className="api-desc">Returns the cached remote-backed subfolder, creating it if needed.</span> |
+| <Link id="m-subfolderexists" /><code>{"override bool SubfolderExists(string name, out "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | <span className="api-desc">Checks the remote directory for the subfolder and, if found, caches and returns it.</span> |
+| <Link id="m-findallfiles" /><code>{"protected override void FindAllFiles()"}</code> | <span className="api-desc">Loads every file in the remote directory, skipping names containing `_backup`.</span> |
+| <Link id="m-findallsubfolders" /><code>{"protected override void FindAllSubFolders()"}</code> | <span className="api-desc">Loads every subdirectory of the remote directory.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getremotedirectory" /><code>{"private DirectoryInfo GetRemoteDirectory(string name)"}</code> | Builds the remote `DirectoryInfo` for a subfolder name. |
-| <Link id="m-getremotefileinfo" /><code>{"private FileInfo GetRemoteFileInfo(string name)"}</code> | Builds the remote `FileInfo` for a file name. |
+| <Link id="m-getremotedirectory" /><code>{"private DirectoryInfo GetRemoteDirectory(string name)"}</code> | <span className="api-desc">Builds the remote `DirectoryInfo` for a subfolder name.</span> |
+| <Link id="m-getremotefileinfo" /><code>{"private FileInfo GetRemoteFileInfo(string name)"}</code> | <span className="api-desc">Builds the remote `FileInfo` for a file name.</span> |
 
 </details>

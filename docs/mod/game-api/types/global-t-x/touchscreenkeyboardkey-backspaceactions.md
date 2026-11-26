@@ -29,4 +29,8 @@ Stages of holding the backspace key: one deletion, then repeated letters after a
 
 Members of other types that take, return or hold a `BackspaceActions`:
 
+<div className="api-used-in">
+
 [`TouchScreenKeyboardKey.currentAction`](/mod/game-api/types/global-t-x/touchscreenkeyboardkey#m-currentaction).
+
+</div>

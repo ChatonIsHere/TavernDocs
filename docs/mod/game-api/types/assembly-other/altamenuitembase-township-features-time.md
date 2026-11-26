@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Time`: menu item classes inherit it to app
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Time()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Time` with default values. |
+| <Link id="m-ctor" /><code>{"protected Time()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Time` with default values.</span> |

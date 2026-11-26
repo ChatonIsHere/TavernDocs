@@ -23,11 +23,11 @@ Save data for a `Cookable` (version 1): how far it has cooked and burnt.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> | Creates a `CookableSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> | <span className="api-desc">Creates a `CookableSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-burntprogress" /><code>{"float burntProgress"}</code> | Saved burn progress. |
-| <Link id="m-cookedprogress" /><code>{"float cookedProgress"}</code> | Saved cooking progress. |
+| <Link id="m-burntprogress" /><code>{"float burntProgress"}</code> | <span className="api-desc">Saved burn progress.</span> |
+| <Link id="m-cookedprogress" /><code>{"float cookedProgress"}</code> | <span className="api-desc">Saved cooking progress.</span> |

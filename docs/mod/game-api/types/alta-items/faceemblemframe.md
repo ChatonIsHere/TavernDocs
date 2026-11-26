@@ -23,10 +23,14 @@ A book flair asset for the frame around a book's cover emblem, glyph or letter.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FaceEmblemFrame()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FaceEmblemFrame()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FaceEmblemFrame`:
 
+<div className="api-used-in">
+
 [`FlairSettings.emblemFrame`](/mod/game-api/types/alta-items/flairsettings#m-emblemframe), [`FlairSettings.EmblemFrame`](/mod/game-api/types/alta-items/flairsettings#m-emblemframe-2).
+
+</div>

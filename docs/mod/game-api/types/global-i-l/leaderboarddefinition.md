@@ -23,18 +23,18 @@ Asset for a leaderboard (a course), with its size and whether lower scores are b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LeaderboardDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coursename" /><code>{"private string courseName"}</code> | Backing field for `CourseName`, the name of the course or challenge ranked. |
-| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> | True when the lowest score ranks first (probably for times). Default true. |
-| <Link id="m-size" /><code>{"private int size"}</code> | How many entries the leaderboard keeps. Default 5. |
+| <Link id="m-coursename" /><code>{"private string courseName"}</code> | <span className="api-desc">Backing field for `CourseName`, the name of the course or challenge ranked.</span> |
+| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> | <span className="api-desc">True when the lowest score ranks first (probably for times). Default true.</span> |
+| <Link id="m-size" /><code>{"private int size"}</code> | <span className="api-desc">How many entries the leaderboard keeps. Default 5.</span> |
 
 </details>
 
@@ -42,16 +42,20 @@ Asset for a leaderboard (a course), with its size and whether lower scores are b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-coursename-2" /><code>{"string CourseName { get; }"}</code> | Course name shown for the leaderboard. |
+| <Link id="m-coursename-2" /><code>{"string CourseName { get; }"}</code> | <span className="api-desc">Course name shown for the leaderboard.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdata" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData()"}</code> | A `LeaderboardDefinitionData` with this definition, its hash, name, size and lowest-is-best flag. |
+| <Link id="m-getdata" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" GetData()"}</code> | <span className="api-desc">A `LeaderboardDefinitionData` with this definition, its hash, name, size and lowest-is-best flag.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LeaderboardDefinition`:
 
+<div className="api-used-in">
+
 [`CheckPoint.beginnings`](/mod/game-api/types/global-c-d/checkpoint#m-beginnings), [`CheckPoint.CopyArray`](/mod/game-api/types/global-c-d/checkpoint#m-copyarray), [`CheckPoint.endings`](/mod/game-api/types/global-c-d/checkpoint#m-endings), [`CheckPoint.SerializeArray`](/mod/game-api/types/global-c-d/checkpoint#m-serializearray), [`Leaderboard.definition`](/mod/game-api/types/global-i-l/leaderboard#m-definition), [`LeaderboardDefinitionData.definition`](/mod/game-api/types/global-i-l/leaderboarddefinitiondata#m-definition), [`LeaderboardManagerDataOld.LeaderboardEntry.definition`](/mod/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry#m-definition), [`LeaderboardManagerDataOld.PlayerBestTimes.definitions`](/mod/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes#m-definitions).
+
+</div>

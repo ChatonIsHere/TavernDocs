@@ -23,12 +23,12 @@ Post-processing effect settings ("Alta/Depth To Alpha") that write depth into th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> | Creates a `ScreenShotAlpha` with default values. |
+| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> | <span className="api-desc">Creates a `ScreenShotAlpha` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ispreviewing" /><code>{"BoolParameter isPreviewing"}</code> | Shows the alpha result on screen for previewing. |
-| <Link id="m-maxdistance" /><code>{"FloatParameter maxDistance"}</code> | Far distance for the depth to alpha range. Default 10000. |
-| <Link id="m-mindistance" /><code>{"FloatParameter minDistance"}</code> | Near distance for the depth to alpha range. Default 10000. |
+| <Link id="m-ispreviewing" /><code>{"BoolParameter isPreviewing"}</code> | <span className="api-desc">Shows the alpha result on screen for previewing.</span> |
+| <Link id="m-maxdistance" /><code>{"FloatParameter maxDistance"}</code> | <span className="api-desc">Far distance for the depth to alpha range. Default 10000.</span> |
+| <Link id="m-mindistance" /><code>{"FloatParameter minDistance"}</code> | <span className="api-desc">Near distance for the depth to alpha range. Default 10000.</span> |

@@ -19,12 +19,12 @@ Client console module `report-players` (alias `report`) for listing and filing p
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for report output. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for report output.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ Client console module `report-players` (alias `report`) for listing and filing p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createreport" /><code>{"static async void CreateReport(int userId, "}<Link to="/mod/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int? serverId = null)"}</code> | Command `create`: reports a user for a reason on a server, the current one by default. Does nothing with no server. |
-| <Link id="m-getreports" /><code>{"static async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetReports("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | Command `list`: fetches player reports from the API, optionally filtered by status or server. |
+| <Link id="m-createreport" /><code>{"static async void CreateReport(int userId, "}<Link to="/mod/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int? serverId = null)"}</code> | <span className="api-desc">Command `create`: reports a user for a reason on a server, the current one by default. Does nothing with no server.</span> |
+| <Link id="m-getreports" /><code>{"static async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetReports("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | <span className="api-desc">Command `list`: fetches player reports from the API, optionally filtered by status or server.</span> |

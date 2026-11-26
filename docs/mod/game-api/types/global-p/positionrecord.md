@@ -20,19 +20,23 @@ A saved position and rotation, either in world space or relative to another tran
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
-| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
-| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
+| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> | <span className="api-desc">Creates a `PositionRecord` from `to` and `from`.</span> |
+| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> | <span className="api-desc">Creates a `PositionRecord` from `to` and `from`.</span> |
+| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> | <span className="api-desc">Creates a `PositionRecord` from `to` and `from`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | The position, world or local to the reference transform. |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | The rotation, world or local to the reference transform. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">The position, world or local to the reference transform.</span> |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | <span className="api-desc">The rotation, world or local to the reference transform.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PositionRecord`:
 
+<div className="api-used-in">
+
 [`ImpactGenerator.FromTool`](/mod/game-api/types/alta-items/impactgenerator#m-fromtool), [`PositionRecorder.positionArray`](/mod/game-api/types/global-p/positionrecorder#m-positionarray), [`PositionRecorder.Positions`](/mod/game-api/types/global-p/positionrecorder#m-positions).
+
+</div>

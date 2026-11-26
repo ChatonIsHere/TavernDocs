@@ -21,4 +21,4 @@ Empty marker component, probably to exclude an object from a bake step. Nothing 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AvoidBakingMarker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AvoidBakingMarker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

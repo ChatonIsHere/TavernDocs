@@ -21,17 +21,21 @@ Body of an Alta web API login with an email, password hash and device id.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> | Creates a `LoginWithEmailRequest` with default values. |
-| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> | Creates a `LoginWithEmailRequest` with default values. |
+| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> | <span className="api-desc">Creates a `LoginWithEmailRequest` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> | <span className="api-desc">Creates a `LoginWithEmailRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; private set; }"}</code> | The email to log in with. |
+| <Link id="m-email" /><code>{"string Email { get; private set; }"}</code> | <span className="api-desc">The email to log in with.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LoginWithEmailRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.LoginWithEmailAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-loginwithemailasync).
+
+</div>

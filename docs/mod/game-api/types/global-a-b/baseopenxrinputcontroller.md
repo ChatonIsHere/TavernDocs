@@ -21,4 +21,4 @@ OpenXR input controller that turns on the base playing input actions and routes 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BaseOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `BaseOpenXRInputController` from `controller`. |
+| <Link id="m-ctor" /><code>{"BaseOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `BaseOpenXRInputController` from `controller`.</span> |

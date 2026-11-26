@@ -21,19 +21,19 @@ Component that adds a constant acceleration to a rigidbody every physics step, w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PhysicsAcceleration()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PhysicsAcceleration()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-acceleration" /><code>{"private Vector3 acceleration"}</code> | Acceleration added each physics step. |
-| <Link id="m-maximumangularimpulse" /><code>{"private float maximumAngularImpulse"}</code> | Largest random spin for `Wobble`. |
-| <Link id="m-minimumangularimpulse" /><code>{"private float minimumAngularImpulse"}</code> | Smallest random spin for `Wobble`. |
-| <Link id="m-target" /><code>{"private Rigidbody target"}</code> | The rigidbody to accelerate. |
+| <Link id="m-acceleration" /><code>{"private Vector3 acceleration"}</code> | <span className="api-desc">Acceleration added each physics step.</span> |
+| <Link id="m-maximumangularimpulse" /><code>{"private float maximumAngularImpulse"}</code> | <span className="api-desc">Largest random spin for `Wobble`.</span> |
+| <Link id="m-minimumangularimpulse" /><code>{"private float minimumAngularImpulse"}</code> | <span className="api-desc">Smallest random spin for `Wobble`.</span> |
+| <Link id="m-target" /><code>{"private Rigidbody target"}</code> | <span className="api-desc">The rigidbody to accelerate.</span> |
 
 </details>
 
@@ -41,14 +41,14 @@ Component that adds a constant acceleration to a rigidbody every physics step, w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-wobble" /><code>{"void Wobble()"}</code> | Gives the rigidbody a random angular velocity change between the min and max impulse. |
+| <Link id="m-wobble" /><code>{"void Wobble()"}</code> | <span className="api-desc">Gives the rigidbody a random angular velocity change between the min and max impulse.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Uses the rigidbody on the same object if `target` isn't set. |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Adds `acceleration` to the rigidbody's velocity. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Uses the rigidbody on the same object if `target` isn't set.</span> |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | <span className="api-desc">Adds `acceleration` to the rigidbody's velocity.</span> |
 
 </details>

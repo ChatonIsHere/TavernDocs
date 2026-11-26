@@ -28,4 +28,8 @@ How `DelayEnable` picks its delay: a random time in a range, or a random point o
 
 Members of other types that take, return or hold a `DelayMode`:
 
+<div className="api-used-in">
+
 [`DelayEnable.mode`](/mod/game-api/types/global-c-d/delayenable#m-mode).
+
+</div>

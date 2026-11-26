@@ -29,4 +29,8 @@ File format for `ScreenshotTaker` captures: PNG, JPG or TGA.
 
 Members of other types that take, return or hold a `ImageFormat`:
 
+<div className="api-used-in">
+
 [`ScreenshotTaker.imageFormat`](/mod/game-api/types/global-s/screenshottaker#m-imageformat).
+
+</div>

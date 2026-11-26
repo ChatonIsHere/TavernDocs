@@ -22,4 +22,4 @@ Editor menu item that creates a `ChiselRecipePageSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ChiselRecipePageSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `ChiselRecipePageSettings.Create` with default values.</span> |

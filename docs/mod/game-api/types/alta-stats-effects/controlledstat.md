@@ -23,16 +23,16 @@ Base for a stat that cancels out against another stat: whenever it changes, both
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ControlledStat()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ControlledStat()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-controlleddefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" controlledDefinition"}</code> | The opposing stat this one cancels against. |
+| <Link id="m-controlleddefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" controlledDefinition"}</code> | <span className="api-desc">The opposing stat this one cancels against.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Base for a stat that cancels out against another stat: whenever it changes, both
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Binds the stat so any change subtracts the smaller of this and the controlled stat's value from both. |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Binds the stat so any change subtracts the smaller of this and the controlled stat's value from both.</span> |

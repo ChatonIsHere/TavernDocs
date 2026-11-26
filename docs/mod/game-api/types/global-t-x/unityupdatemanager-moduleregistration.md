@@ -21,11 +21,15 @@ An update module and the segment it runs in, queued when a module registers befo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-module" /><code><Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module { get; set; }"}</code> | The update module waiting to be registered. |
-| <Link id="m-segment" /><code><Link to="/mod/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" Segment { get; set; }"}</code> | The update segment (Update, LateUpdate, FixedUpdate and so on) to register it in. |
+| <Link id="m-module" /><code><Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module { get; set; }"}</code> | <span className="api-desc">The update module waiting to be registered.</span> |
+| <Link id="m-segment" /><code><Link to="/mod/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" Segment { get; set; }"}</code> | <span className="api-desc">The update segment (Update, LateUpdate, FixedUpdate and so on) to register it in.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ModuleRegistration`:
 
+<div className="api-used-in">
+
 [`UnityUpdateManager.startUpModules`](/mod/game-api/types/global-t-x/unityupdatemanager#m-startupmodules).
+
+</div>

@@ -21,11 +21,15 @@ Private network argument sent from the client to say whether a hold was long or 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> | Entity ID of the controller that held. The server checks it belongs to the sender. |
-| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> | True for a long hold, false for a short one. |
+| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> | <span className="api-desc">Entity ID of the controller that held. The server checks it belongs to the sender.</span> |
+| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> | <span className="api-desc">True for a long hold, false for a short one.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InteractArguments`:
 
+<div className="api-used-in">
+
 [`LongHoldInteractable.syncInteract`](/mod/game-api/types/global-i-l/longholdinteractable#m-syncinteract), [`LongHoldInteractable.SyncInteract`](/mod/game-api/types/global-i-l/longholdinteractable#m-syncinteract-2).
+
+</div>

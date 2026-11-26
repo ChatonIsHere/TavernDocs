@@ -22,4 +22,4 @@ Editor menu item that creates a new `BodyControllerSettings` asset under the Tow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BodyControllerSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `BodyControllerSettings.Create` with default values.</span> |

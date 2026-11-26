@@ -27,4 +27,8 @@ The build state a repairable object condition checks for: not built or built.
 
 Members of other types that take, return or hold a `RepairableObjectBuildState`:
 
+<div className="api-used-in">
+
 [`RepairableObject.RepairableObject`](/mod/game-api/types/game-other-namespaces/repairableobject#m-ctor), [`RepairableObject.requirement`](/mod/game-api/types/game-other-namespaces/repairableobject#m-requirement), [`RepairableObject.Requirement`](/mod/game-api/types/game-other-namespaces/repairableobject#m-requirement-2).
+
+</div>

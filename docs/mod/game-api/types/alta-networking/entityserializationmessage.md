@@ -18,12 +18,12 @@ Network message that carries an entity's full serialized data (its `EntitySerial
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; warns when the entity is missing on read. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger; warns when the entity is missing on read.</span> |
 
 </details>
 
@@ -31,5 +31,5 @@ Network message that carries an entity's full serialized data (its `EntitySerial
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writing: serializes and writes the entity's full data. Reading: reads it in if the sender has authority, otherwise logs an error. |
-| <Link id="m-set" /><code>{"static void Set("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Sets the entity the message is for. |
+| <Link id="m-serialize" /><code>{"static void Serialize("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writing: serializes and writes the entity's full data. Reading: reads it in if the sender has authority, otherwise logs an error.</span> |
+| <Link id="m-set" /><code>{"static void Set("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Sets the entity the message is for.</span> |

@@ -21,10 +21,14 @@ The player's armour manager, keyed by `EquipmentSlot`. Found on `PlayerCustomiza
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerArmorManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerArmorManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerArmorManager`:
 
+<div className="api-used-in">
+
 [`PlayerCustomizationHandler.armorManager`](/mod/game-api/types/alta-customization/playercustomizationhandler#m-armormanager), [`PlayerCustomizationHandler.ArmorManager`](/mod/game-api/types/alta-customization/playercustomizationhandler#m-armormanager-2).
+
+</div>

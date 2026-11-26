@@ -21,4 +21,4 @@ Object from a pooled factory that is told when it is spawned and despawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onspawn" /><code>{"void OnSpawn()"}</code> | Called when the object is taken from the pool. |
+| <Link id="m-onspawn" /><code>{"void OnSpawn()"}</code> | <span className="api-desc">Called when the object is taken from the pool.</span> |

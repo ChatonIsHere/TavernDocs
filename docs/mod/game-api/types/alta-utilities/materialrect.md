@@ -20,20 +20,24 @@ A material with its offset and scale inside a texture atlas, and whether mesh UV
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
-| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
-| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
+| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> | <span className="api-desc">Creates a `MaterialRect` from `atlasedMaterial`.</span> |
+| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> | <span className="api-desc">Creates a `MaterialRect` from `atlasedMaterial`.</span> |
+| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> | <span className="api-desc">Creates a `MaterialRect` from `atlasedMaterial`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | The material. |
-| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> | True when built from an atlased material, so mesh UVs must be remapped to its area. |
-| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> | Offset (x, y) and scale (z, w) of the material's area in the atlas; zero when not atlased. |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | <span className="api-desc">The material.</span> |
+| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> | <span className="api-desc">True when built from an atlased material, so mesh UVs must be remapped to its area.</span> |
+| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> | <span className="api-desc">Offset (x, y) and scale (z, w) of the material's area in the atlas; zero when not atlased.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MaterialRect`:
 
+<div className="api-used-in">
+
 [`MeshFilterExtensions.GetAtlasedMesh`](/mod/game-api/types/alta-utilities/meshfilterextensions-alta-utilities-atlas#m-getatlasedmesh), [`TreeSpecies.LeafMaterialRects`](/mod/game-api/types/alta-crafting/treespecies#m-leafmaterialrects), [`WoodcutTreeAttachmentBaker.GetAttachmentMaterial`](/mod/game-api/types/alta-crafting/woodcuttreeattachmentbaker#m-getattachmentmaterial), [`PhysicalMaterial.GetNonDeformingMaterial`](/mod/game-api/types/global-p/physicalmaterial#m-getnondeformingmaterial), [`PhysicalMaterial.MaterialChannel.NonDeformingMaterial`](/mod/game-api/types/global-p/physicalmaterial-materialchannel#m-nondeformingmaterial-2).
+
+</div>

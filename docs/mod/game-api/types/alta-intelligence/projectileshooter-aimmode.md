@@ -30,4 +30,8 @@ How a `ProjectileShooter` aims: straight forward, at the target, or mixing forwa
 
 Members of other types that take, return or hold a `AimMode`:
 
+<div className="api-used-in">
+
 [`ProjectileShooter.aimMode`](/mod/game-api/types/alta-intelligence/projectileshooter#m-aimmode).
+
+</div>

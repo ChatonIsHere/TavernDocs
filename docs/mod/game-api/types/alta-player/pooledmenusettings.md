@@ -21,17 +21,17 @@ Pooled settings control on a quick access settings board, wrapping a `MenuGameSe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledMenuSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PooledMenuSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-menugamesetting" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/menugamesetting">{"MenuGameSetting"}</Link>{" menuGameSetting"}</code> | The setting control. |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Optional pickup on the control, dropped on release. |
+| <Link id="m-menugamesetting" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/menugamesetting">{"MenuGameSetting"}</Link>{" menuGameSetting"}</code> | <span className="api-desc">The setting control.</span> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | <span className="api-desc">Optional pickup on the control, dropped on release.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Pooled settings control on a quick access settings board, wrapping a `MenuGameSe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> | Force drops the pickup and returns the control to its pool. |
-| <Link id="m-setsettings" /><code>{"void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{" setting)"}</code> | Points the control at a setting. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | <span className="api-desc">Force drops the pickup and returns the control to its pool.</span> |
+| <Link id="m-setsettings" /><code>{"void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{" setting)"}</code> | <span className="api-desc">Points the control at a setting.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Marks the pickup's entity as initialised, so it works without the network. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Marks the pickup's entity as initialised, so it works without the network.</span> |
 
 </details>

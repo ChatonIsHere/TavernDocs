@@ -21,4 +21,4 @@ Serializable pair of float values (`Value` and `Value2`) tied to a `Biome`, for 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> | Creates a `BiomeDoubleValue` with default values. |
+| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> | <span className="api-desc">Creates a `BiomeDoubleValue` with default values.</span> |

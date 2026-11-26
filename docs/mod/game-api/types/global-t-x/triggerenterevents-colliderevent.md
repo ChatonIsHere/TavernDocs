@@ -22,10 +22,14 @@ Serializable event that passes a collider, raised by `TriggerEnterEvents` when s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderEvent()"}</code> | Creates a `TriggerEnterEvents.ColliderEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ColliderEvent()"}</code> | <span className="api-desc">Creates a `TriggerEnterEvents.ColliderEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ColliderEvent`:
 
+<div className="api-used-in">
+
 [`TriggerEnterEvents.onTriggerEnter`](/mod/game-api/types/global-t-x/triggerenterevents#m-ontriggerenter), [`TriggerEnterEvents.onTriggerExit`](/mod/game-api/types/global-t-x/triggerenterevents#m-ontriggerexit).
+
+</div>

@@ -22,16 +22,16 @@ Cave generator part that blurs one Y slice of a layer with a 3 by 3 weighted ave
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Blur()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Blur()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> | Backing field for `YIndex`. |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> | <span className="api-desc">Backing field for `YIndex`.</span> |
 
 </details>
 
@@ -39,16 +39,20 @@ Cave generator part that blurs one Y slice of a layer with a 3 by 3 weighted ave
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-yindex-2" /><code>{"int YIndex { get; }"}</code> | Which Y slice of the layer is blurred. |
+| <Link id="m-yindex-2" /><code>{"int YIndex { get; }"}</code> | <span className="api-desc">Which Y slice of the layer is blurred.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the `BlurInstance` that does the work. |
+| <Link id="m-getinstance" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | <span className="api-desc">Creates the `BlurInstance` that does the work.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Blur`:
 
+<div className="api-used-in">
+
 [`BlurInstance.BlurInstance`](/mod/game-api/types/alta-world-generation/blurinstance#m-ctor).
+
+</div>

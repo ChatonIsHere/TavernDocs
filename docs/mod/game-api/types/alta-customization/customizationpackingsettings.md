@@ -23,17 +23,17 @@ Global settings asset with the default blit materials for packing cosmetic textu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationPackingSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CustomizationPackingSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-diffuseblit" /><code>{"private Material diffuseBlit"}</code> | Backing field for `DiffuseBlit`. |
-| <Link id="m-normalblit" /><code>{"private Material normalBlit"}</code> | Backing field for `NormalBlit`. |
+| <Link id="m-diffuseblit" /><code>{"private Material diffuseBlit"}</code> | <span className="api-desc">Backing field for `DiffuseBlit`.</span> |
+| <Link id="m-normalblit" /><code>{"private Material normalBlit"}</code> | <span className="api-desc">Backing field for `NormalBlit`.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Global settings asset with the default blit materials for packing cosmetic textu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-diffuseblit-2" /><code>{"Material DiffuseBlit { get; }"}</code> | Material copied by each mesh part to blit its diffuse texture into the character atlas. |
-| <Link id="m-normalblit-2" /><code>{"Material NormalBlit { get; }"}</code> | Material copied by each mesh part to blit its normal map into the normal atlas. |
+| <Link id="m-diffuseblit-2" /><code>{"Material DiffuseBlit { get; }"}</code> | <span className="api-desc">Material copied by each mesh part to blit its diffuse texture into the character atlas.</span> |
+| <Link id="m-normalblit-2" /><code>{"Material NormalBlit { get; }"}</code> | <span className="api-desc">Material copied by each mesh part to blit its normal map into the normal atlas.</span> |

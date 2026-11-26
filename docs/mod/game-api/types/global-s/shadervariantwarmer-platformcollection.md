@@ -21,18 +21,18 @@ Shader variant collections to warm up on one platform, part of `ShaderVariantWar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> | Creates a `ShaderVariantWarmer.PlatformCollection` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> | <span className="api-desc">Creates a `ShaderVariantWarmer.PlatformCollection` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collections" /><code>{"private ShaderVariantCollection[] collections"}</code> | The collections set in the inspector. Cleared when the build is baked. |
-| <Link id="m-platform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> | Platforms this entry applies to. |
-| <Link id="m-runtimecollections" /><code>{"private List<ShaderVariantCollection> runtimeCollections"}</code> | Collections left after baking, which `Warm` walks through. |
+| <Link id="m-collections" /><code>{"private ShaderVariantCollection[] collections"}</code> | <span className="api-desc">The collections set in the inspector. Cleared when the build is baked.</span> |
+| <Link id="m-platform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> | <span className="api-desc">Platforms this entry applies to.</span> |
+| <Link id="m-runtimecollections" /><code>{"private List<ShaderVariantCollection> runtimeCollections"}</code> | <span className="api-desc">Collections left after baking, which `Warm` walks through.</span> |
 
 </details>
 
@@ -40,15 +40,15 @@ Shader variant collections to warm up on one platform, part of `ShaderVariantWar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bakeruntime" /><code>{"void BakeRuntime()"}</code> | Build step: makes an empty runtime list, runs `SplitCollection` on each collection, then clears `collections`. |
-| <Link id="m-warm" /><code>{"async Task Warm()"}</code> | On the matching platform, warms each collection not yet warmed, one per frame, logging how long each took. |
+| <Link id="m-bakeruntime" /><code>{"void BakeRuntime()"}</code> | <span className="api-desc">Build step: makes an empty runtime list, runs `SplitCollection` on each collection, then clears `collections`.</span> |
+| <Link id="m-warm" /><code>{"async Task Warm()"}</code> | <span className="api-desc">On the matching platform, warms each collection not yet warmed, one per frame, logging how long each took.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-splitcollection" /><code>{"private void SplitCollection(ShaderVariantCollection collection)"}</code> | Empty in this build, so baking leaves `runtimeCollections` empty and `Warm` has nothing to do. |
+| <Link id="m-splitcollection" /><code>{"private void SplitCollection(ShaderVariantCollection collection)"}</code> | <span className="api-desc">Empty in this build, so baking leaves `runtimeCollections` empty and `Warm` has nothing to do.</span> |
 
 </details>
 
@@ -56,4 +56,8 @@ Shader variant collections to warm up on one platform, part of `ShaderVariantWar
 
 Members of other types that take, return or hold a `PlatformCollection`:
 
+<div className="api-used-in">
+
 [`ShaderVariantWarmer.collectionsToWarm`](/mod/game-api/types/global-s/shadervariantwarmer#m-collectionstowarm).
+
+</div>

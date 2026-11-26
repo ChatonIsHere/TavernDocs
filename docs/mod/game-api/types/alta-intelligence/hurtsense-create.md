@@ -22,4 +22,4 @@ Editor menu item for making a `HurtSense` asset. Does nothing at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `HurtSense.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `HurtSense.Create` with default values.</span> |

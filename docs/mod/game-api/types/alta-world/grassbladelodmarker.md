@@ -22,16 +22,16 @@ Marks a grass blade object and lists its LOD child objects.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GrassBladeLODMarker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GrassBladeLODMarker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodobjects" /><code>{"private GameObject[] lodObjects"}</code> | Backing field for `LODObjects`. |
+| <Link id="m-lodobjects" /><code>{"private GameObject[] lodObjects"}</code> | <span className="api-desc">Backing field for `LODObjects`.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ Marks a grass blade object and lists its LOD child objects.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodobjects-2" /><code>{"GameObject[] LODObjects { get; set; }"}</code> | The LOD objects for this blade. |
+| <Link id="m-lodobjects-2" /><code>{"GameObject[] LODObjects { get; set; }"}</code> | <span className="api-desc">The LOD objects for this blade.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: fills the list from the child objects if empty. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: fills the list from the child objects if empty.</span> |
 
 </details>

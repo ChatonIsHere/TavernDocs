@@ -23,10 +23,10 @@ Save format (version 1) for `OneTimeUpgradeInteraction`, holding the players who
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> | Creates an `OneTimeUpgradeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> | <span className="api-desc">Creates an `OneTimeUpgradeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-upgradedplayeridssaved" /><code>{"int[] upgradedPlayerIDsSaved"}</code> | User IDs of players who have used the upgrade. |
+| <Link id="m-upgradedplayeridssaved" /><code>{"int[] upgradedPlayerIDsSaved"}</code> | <span className="api-desc">User IDs of players who have used the upgrade.</span> |

@@ -21,10 +21,10 @@ Something that precomputes data in the editor, such as text meshes, spline displ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> | Whether the data has been baked. |
+| <Link id="m-isbaked" /><code>{"bool IsBaked { get; set; }"}</code> | <span className="api-desc">Whether the data has been baked.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> | Builds and stores the precomputed data. |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | <span className="api-desc">Builds and stores the precomputed data.</span> |

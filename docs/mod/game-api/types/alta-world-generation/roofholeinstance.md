@@ -21,10 +21,10 @@ Runtime instance of the `RoofHole` plugin part: carves the sloped passage that l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RoofHoleInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/roofhole">{"RoofHole"}</Link>{" part)"}</code> | Creates a `RoofHoleInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"RoofHoleInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/roofhole">{"RoofHole"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `RoofHoleInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | Carves floor, open space and roof along a path from the biggest (roof) or second biggest room, using the room fix plugin's width and height curves. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">Carves floor, open space and roof along a path from the biggest (roof) or second biggest room, using the room fix plugin's width and height curves.</span> |

@@ -22,18 +22,18 @@ Debug inspector tool that moves the holder to a random position in one of the sc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnPointTeleporter("}<Link to="/mod/game-api/types/global-i-l/ingameinspector">{"InGameInspector"}</Link>{" inspector)"}</code> | Creates an `InGameInspector.SpawnPointTeleporter` from `inspector`. |
+| <Link id="m-ctor" /><code>{"SpawnPointTeleporter("}<Link to="/mod/game-api/types/global-i-l/ingameinspector">{"InGameInspector"}</Link>{" inspector)"}</code> | <span className="api-desc">Creates an `InGameInspector.SpawnPointTeleporter` from `inspector`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availablepoints" /><code>{"private List<"}<Link to="/mod/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{"> availablePoints"}</code> | Spawn areas found in `SpawnArea.InstanceMap` when the tool was built. |
-| <Link id="m-currentpoint" /><code>{"private int currentPoint"}</code> | Index of the selected spawn area. |
-| <Link id="m-length" /><code>{"private int length"}</code> | Number of spawn areas found. |
+| <Link id="m-availablepoints" /><code>{"private List<"}<Link to="/mod/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{"> availablePoints"}</code> | <span className="api-desc">Spawn areas found in `SpawnArea.InstanceMap` when the tool was built.</span> |
+| <Link id="m-currentpoint" /><code>{"private int currentPoint"}</code> | <span className="api-desc">Index of the selected spawn area.</span> |
+| <Link id="m-length" /><code>{"private int length"}</code> | <span className="api-desc">Number of spawn areas found.</span> |
 
 </details>
 
@@ -41,17 +41,17 @@ Debug inspector tool that moves the holder to a random position in one of the sc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Shown on the inspector as "Spawn Point Teleporter". |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | <span className="api-desc">Shown on the inspector as "Spawn Point Teleporter".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Does nothing for this tool. |
-| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Does nothing for this tool. |
-| <Link id="m-pressclearasync" /><code>{"override void PressClearAsync()"}</code> | Moves the holder to a random spawn position in the selected spawn area. |
-| <Link id="m-pressdown" /><code>{"override void PressDown()"}</code> | Selects the previous spawn area, wrapping round. |
-| <Link id="m-pressup" /><code>{"override void PressUp()"}</code> | Selects the next spawn area, wrapping round. |
-| <Link id="m-receiveangle" /><code>{"override void ReceiveAngle(float angle)"}</code> | Does nothing for this tool. |
-| <Link id="m-receiveinput" /><code>{"override void ReceiveInput("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Does nothing for this tool. |
-| <Link id="m-update" /><code>{"override void Update()"}</code> | Shows the selected spawn area. |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | <span className="api-desc">Does nothing for this tool.</span> |
+| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | <span className="api-desc">Does nothing for this tool.</span> |
+| <Link id="m-pressclearasync" /><code>{"override void PressClearAsync()"}</code> | <span className="api-desc">Moves the holder to a random spawn position in the selected spawn area.</span> |
+| <Link id="m-pressdown" /><code>{"override void PressDown()"}</code> | <span className="api-desc">Selects the previous spawn area, wrapping round.</span> |
+| <Link id="m-pressup" /><code>{"override void PressUp()"}</code> | <span className="api-desc">Selects the next spawn area, wrapping round.</span> |
+| <Link id="m-receiveangle" /><code>{"override void ReceiveAngle(float angle)"}</code> | <span className="api-desc">Does nothing for this tool.</span> |
+| <Link id="m-receiveinput" /><code>{"override void ReceiveInput("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Does nothing for this tool.</span> |
+| <Link id="m-update" /><code>{"override void Update()"}</code> | <span className="api-desc">Shows the selected spawn area.</span> |

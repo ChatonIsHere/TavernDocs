@@ -20,11 +20,11 @@ Internal pair of integer coordinates used by `LineDraw` and the room flood fill.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> | Creates a `Point` from `x` and `y`. |
+| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> | <span className="api-desc">Creates a `Point` from `x` and `y`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-x" /><code>{"int x"}</code> | X coordinate. |
-| <Link id="m-y" /><code>{"int y"}</code> | Second coordinate (Z in layer space). |
+| <Link id="m-x" /><code>{"int x"}</code> | <span className="api-desc">X coordinate.</span> |
+| <Link id="m-y" /><code>{"int y"}</code> | <span className="api-desc">Second coordinate (Z in layer space).</span> |

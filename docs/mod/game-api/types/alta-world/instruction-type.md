@@ -30,4 +30,8 @@ Kind of static world build instruction (Spawn, Spline, ForestGCore, RiverGCore).
 
 Members of other types that take, return or hold a `Type`:
 
+<div className="api-used-in">
+
 [`Instruction.create`](/mod/game-api/types/alta-world/instruction#m-create), [`Instruction.execute`](/mod/game-api/types/alta-world/instruction#m-execute), [`Instruction.Instruction`](/mod/game-api/types/alta-world/instruction#m-ctor), [`Instruction.type`](/mod/game-api/types/alta-world/instruction#m-type).
+
+</div>

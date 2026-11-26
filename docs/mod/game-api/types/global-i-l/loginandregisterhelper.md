@@ -22,22 +22,22 @@ Internal base for client login and registration forms: holds the username and pa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected LoginAndRegisterHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected LoginAndRegisterHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-genericerrortext" /><code>{"protected "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" genericErrorText"}</code> | Text that shows form errors. |
-| <Link id="m-passwordinput" /><code>{"protected "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" passwordInput"}</code> | Password field. |
-| <Link id="m-usernameinput" /><code>{"protected "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" usernameInput"}</code> | Username field. |
+| <Link id="m-genericerrortext" /><code>{"protected "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" genericErrorText"}</code> | <span className="api-desc">Text that shows form errors.</span> |
+| <Link id="m-passwordinput" /><code>{"protected "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" passwordInput"}</code> | <span className="api-desc">Password field.</span> |
+| <Link id="m-usernameinput" /><code>{"protected "}<Link to="/mod/game-api/types/alta-menus/inputfield">{"InputField"}</Link>{" usernameInput"}</code> | <span className="api-desc">Username field.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadingobject" /><code>{"private GameObject loadingObject"}</code> | Object shown while a submit is running. |
+| <Link id="m-loadingobject" /><code>{"private GameObject loadingObject"}</code> | <span className="api-desc">Object shown while a submit is running.</span> |
 
 </details>
 
@@ -45,12 +45,12 @@ Internal base for client login and registration forms: holds the username and pa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isprocessing" /><code>{"protected bool IsProcessing { get; set; }"}</code> | Shared busy flag (`LoginScreenManager.IsProcessing`); setting it also shows or hides the loading object. |
+| <Link id="m-isprocessing" /><code>{"protected bool IsProcessing { get; set; }"}</code> | <span className="api-desc">Shared busy flag (`LoginScreenManager.IsProcessing`); setting it also shows or hides the loading object.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"virtual void OnDisable()"}</code> | Clears the error text and releases the UI action lock. |
-| <Link id="m-submit" /><code>{"async void Submit()"}</code> | Runs `InternalSubmit` unless already busy or the UI is locked, clearing errors and showing loading meanwhile. |
-| <Link id="m-internalsubmit" /><code>{"protected abstract Task InternalSubmit()"}</code> | The form's actual submit work, written by each subclass. |
+| <Link id="m-ondisable" /><code>{"virtual void OnDisable()"}</code> | <span className="api-desc">Clears the error text and releases the UI action lock.</span> |
+| <Link id="m-submit" /><code>{"async void Submit()"}</code> | <span className="api-desc">Runs `InternalSubmit` unless already busy or the UI is locked, clearing errors and showing loading meanwhile.</span> |
+| <Link id="m-internalsubmit" /><code>{"protected abstract Task InternalSubmit()"}</code> | <span className="api-desc">The form's actual submit work, written by each subclass.</span> |

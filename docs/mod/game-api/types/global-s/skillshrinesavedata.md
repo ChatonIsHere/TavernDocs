@@ -23,10 +23,10 @@ Save data for a `SkillShrine` (version 1): stores the shrine's current progressi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> | Creates a `SkillShrineSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> | <span className="api-desc">Creates a `SkillShrineSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pathindex" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" pathIndex"}</code> | The shrine's current progression path, restored into `currentPath` on load. |
+| <Link id="m-pathindex" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" pathIndex"}</code> | <span className="api-desc">The shrine's current progression path, restored into `currentPath` on load.</span> |

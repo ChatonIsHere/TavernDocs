@@ -27,4 +27,8 @@ Alta server type: `Normal` or `World`.
 
 Members of other types that take, return or hold a `ServerType`:
 
+<div className="api-used-in">
+
 [`GameServerInfo.ServerType`](/mod/game-api/types/assembly-api-models/gameserverinfo#m-servertype).
+
+</div>

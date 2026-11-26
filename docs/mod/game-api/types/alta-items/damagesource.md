@@ -34,4 +34,8 @@ What caused a hit of damage (fall, impact, command, area of effect, poison, hung
 
 Members of other types that take, return or hold a `DamageSource`:
 
+<div className="api-used-in">
+
 [`DamageData.DamageData`](/mod/game-api/types/alta-items/damagedata#m-ctor), [`DamageData.Source`](/mod/game-api/types/alta-items/damagedata#m-source), [`KilledData.source`](/mod/game-api/types/alta-player/killeddata#m-source).
+
+</div>

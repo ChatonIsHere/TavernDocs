@@ -23,10 +23,10 @@ Save data for a `LogicBoolReceiver`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicBoolReceiverData()"}</code> | Creates a `LogicBoolReceiverData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicBoolReceiverData()"}</code> | <span className="api-desc">Creates a `LogicBoolReceiverData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{" Data { get; set; }"}</code> | The saved logic bool (identifier and value). |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The saved logic bool (identifier and value).</span> |

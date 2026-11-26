@@ -22,12 +22,16 @@ Internal copy of an input `ICircle` used by `PulleyBeltHelper`, with the radius 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-face" /><code>{"Vector3 Face { get; set; }"}</code> | The circle's facing axis (the pulley's axle direction). |
-| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> | Centre of the circle in world space. |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | Input radius plus the offset passed to `GetRope` or `GetExterior`. |
+| <Link id="m-face" /><code>{"Vector3 Face { get; set; }"}</code> | <span className="api-desc">The circle's facing axis (the pulley's axle direction).</span> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; set; }"}</code> | <span className="api-desc">Centre of the circle in world space.</span> |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | <span className="api-desc">Input radius plus the offset passed to `GetRope` or `GetExterior`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Circle`:
 
+<div className="api-used-in">
+
 [`PulleyBeltHelper.circles`](/mod/game-api/types/global-p/pulleybelthelper#m-circles).
+
+</div>

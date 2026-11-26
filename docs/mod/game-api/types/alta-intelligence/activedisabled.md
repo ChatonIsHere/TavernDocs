@@ -22,11 +22,11 @@ Server: running action that does nothing, so the creature sits idle while it run
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDisabled()"}</code> | Creates an `ActiveDisabled` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveDisabled()"}</code> | <span className="api-desc">Creates an `ActiveDisabled` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Does nothing. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Does nothing. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Does nothing.</span> |

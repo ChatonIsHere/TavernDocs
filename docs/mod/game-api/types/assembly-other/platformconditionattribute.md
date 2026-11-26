@@ -21,11 +21,11 @@ Inspector attribute that marks a field as only relevant on certain platforms, ei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> | Creates a `PlatformConditionAttribute` from `isAndroid`. |
-| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> | Creates a `PlatformConditionAttribute` from `isAndroid`. |
+| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> | <span className="api-desc">Creates a `PlatformConditionAttribute` from `isAndroid`.</span> |
+| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> | <span className="api-desc">Creates a `PlatformConditionAttribute` from `isAndroid`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runtime" /><code><Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" Runtime { get; }"}</code> | The platforms the field applies to. The bool constructor gives Android, or Windows and Linux. |
+| <Link id="m-runtime" /><code><Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" Runtime { get; }"}</code> | <span className="api-desc">The platforms the field applies to. The bool constructor gives Android, or Windows and Linux.</span> |

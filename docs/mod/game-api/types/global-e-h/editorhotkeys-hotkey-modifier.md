@@ -30,4 +30,8 @@ Modifier flags for an editor hotkey: Ctrl, Shift and Alt.
 
 Members of other types that take, return or hold a `Modifier`:
 
+<div className="api-used-in">
+
 [`EditorHotKeys.Hotkey.modifier`](/mod/game-api/types/global-e-h/editorhotkeys-hotkey#m-modifier).
+
+</div>

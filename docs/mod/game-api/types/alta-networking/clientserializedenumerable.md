@@ -21,19 +21,19 @@ Client-side enumerator over the entities the client serializes, in identifier or
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> | Creates a `ClientSerializedEnumerable` from `pairs`. |
+| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> | <span className="api-desc">Creates a `ClientSerializedEnumerable` from `pairs`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> | Whether iteration has reached the entity whose identifier is `Start`. |
-| <Link id="m-pairenumerator" /><code>{"private IEnumerator<KeyValuePair<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{">> pairEnumerator"}</code> | Enumerator over `pairs` for the current pass. |
-| <Link id="m-pairs" /><code>{"private SortedList<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs"}</code> | The sorted list of identifier to entity link that it walks (shared with `EntityManager`). |
-| <Link id="m-tempemptyentities" /><code>{"private List<uint> tempEmptyEntities"}</code> | Identifiers of links found without an entity, removed on the next `Reset`. |
+| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> | <span className="api-desc">Whether iteration has reached the entity whose identifier is `Start`.</span> |
+| <Link id="m-pairenumerator" /><code>{"private IEnumerator<KeyValuePair<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{">> pairEnumerator"}</code> | <span className="api-desc">Enumerator over `pairs` for the current pass.</span> |
+| <Link id="m-pairs" /><code>{"private SortedList<uint, "}<Link to="/mod/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs"}</code> | <span className="api-desc">The sorted list of identifier to entity link that it walks (shared with `EntityManager`).</span> |
+| <Link id="m-tempemptyentities" /><code>{"private List<uint> tempEmptyEntities"}</code> | <span className="api-desc">Identifiers of links found without an entity, removed on the next `Reset`.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Client-side enumerator over the entities the client serializes, in identifier or
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-movenext" /><code>{"override bool MoveNext()"}</code> | Moves to the next entity from `Start` onwards, skipping and noting links whose entity has gone. |
-| <Link id="m-reset" /><code>{"override void Reset()"}</code> | Removes the noted empty links from the list and starts again from the beginning. |
+| <Link id="m-movenext" /><code>{"override bool MoveNext()"}</code> | <span className="api-desc">Moves to the next entity from `Start` onwards, skipping and noting links whose entity has gone.</span> |
+| <Link id="m-reset" /><code>{"override void Reset()"}</code> | <span className="api-desc">Removes the noted empty links from the list and starts again from the beginning.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ClientSerializedEnumerable`:
 
+<div className="api-used-in">
+
 [`EntityManager.clientSerializedEnumerable`](/mod/game-api/types/alta-networking/entitymanager#m-clientserializedenumerable).
+
+</div>

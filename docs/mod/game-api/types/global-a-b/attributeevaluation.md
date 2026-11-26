@@ -21,4 +21,4 @@ Static extension for scoring an `AttributeSet` against a list of `AttributeCurve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getefficiency" /><code>{"static float GetEfficiency(IEnumerable<"}<Link to="/mod/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"> attributeWeightings, "}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | Evaluates each range's curve at the attribute's position in the range and returns their harmonic mean. Any zero gives 0; no valid ranges gives 1. |
+| <Link id="m-getefficiency" /><code>{"static float GetEfficiency(IEnumerable<"}<Link to="/mod/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"> attributeWeightings, "}<Link to="/mod/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | <span className="api-desc">Evaluates each range's curve at the attribute's position in the range and returns their harmonic mean. Any zero gives 0; no valid ranges gives 1.</span> |

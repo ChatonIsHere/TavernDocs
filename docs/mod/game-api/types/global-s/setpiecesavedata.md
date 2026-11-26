@@ -23,10 +23,10 @@ Save data (version 1) for a `SetPiece`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> | Creates a `SetPieceSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> | <span className="api-desc">Creates a `SetPieceSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> | The `SetPieceData` asset. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> | <span className="api-desc">The `SetPieceData` asset.</span> |

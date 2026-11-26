@@ -22,27 +22,27 @@ Obsolete client UI helper that reports the "Choose Registration Or Link Account"
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AccountRequiredPopupAnalytics()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AccountRequiredPopupAnalytics()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-analyticseventname" /><code>{"private const string AnalyticsEventName"}</code> | The screen name reported, "Choose Registration Or Link Account". |
+| <Link id="m-analyticseventname" /><code>{"private const string AnalyticsEventName"}</code> | <span className="api-desc">The screen name reported, "Choose Registration Or Link Account".</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Reports the screen as finished. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Reports the screen as started. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Reports the screen as finished.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Reports the screen as started.</span> |
 
 </details>

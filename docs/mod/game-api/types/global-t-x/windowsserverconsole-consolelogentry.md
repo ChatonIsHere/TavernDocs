@@ -21,11 +21,15 @@ A log line queued for the Windows console thread, with its level (used for the c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> | NLog level: warnings print yellow, errors and above red, the rest white. |
-| <Link id="m-message" /><code>{"string message"}</code> | The log text. |
+| <Link id="m-loglevel" /><code>{"LogLevel logLevel"}</code> | <span className="api-desc">NLog level: warnings print yellow, errors and above red, the rest white.</span> |
+| <Link id="m-message" /><code>{"string message"}</code> | <span className="api-desc">The log text.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ConsoleLogEntry`:
 
+<div className="api-used-in">
+
 [`WindowsServerConsole.entryQueue`](/mod/game-api/types/global-t-x/windowsserverconsole#m-entryqueue).
+
+</div>

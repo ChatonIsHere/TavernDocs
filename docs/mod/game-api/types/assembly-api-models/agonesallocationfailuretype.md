@@ -30,4 +30,8 @@ Why allocating an Agones game server failed: no access to the cluster, web reque
 
 Members of other types that take, return or hold a `AgonesAllocationFailureType`:
 
+<div className="api-used-in">
+
 [`AllocationResult.FailureType`](/mod/game-api/types/assembly-api-models/allocationresult#m-failuretype).
+
+</div>

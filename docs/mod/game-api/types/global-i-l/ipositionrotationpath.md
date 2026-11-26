@@ -21,10 +21,14 @@ A path that gives a position and rotation for a value along it. Implemented by `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"void GetPosition(float value, out Vector3 position, out Quaternion rotation, bool isNormalized = true)"}</code> | Gets the position and rotation at `value` along the path, which is 0 to 1 when `isNormalized` is true. |
+| <Link id="m-getposition" /><code>{"void GetPosition(float value, out Vector3 position, out Quaternion rotation, bool isNormalized = true)"}</code> | <span className="api-desc">Gets the position and rotation at `value` along the path, which is 0 to 1 when `isNormalized` is true.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPositionRotationPath`:
 
+<div className="api-used-in">
+
 [`GuidedMovement.path`](/mod/game-api/types/global-e-h/guidedmovement#m-path).
+
+</div>

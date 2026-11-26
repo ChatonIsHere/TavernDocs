@@ -22,16 +22,16 @@ Old (version 1) save data for an `Embeddable`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableSaveData1()"}</code> | Creates an `EmbeddableSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"EmbeddableSaveData1()"}</code> | <span className="api-desc">Creates an `EmbeddableSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isembedded" /><code>{"bool isEmbedded"}</code> | Whether it was embedded. |
+| <Link id="m-isembedded" /><code>{"bool isEmbedded"}</code> | <span className="api-desc">Whether it was embedded.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a new version 1 object with `isEmbedded` false rather than the version 2 type, so old embeds are dropped. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Returns a new version 1 object with `isEmbedded` false rather than the version 2 type, so old embeds are dropped.</span> |

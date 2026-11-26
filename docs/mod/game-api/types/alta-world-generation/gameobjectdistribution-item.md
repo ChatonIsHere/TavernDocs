@@ -23,4 +23,4 @@ Concrete weighted entry for `GameObjectDistribution`, holding a `GameObject`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `GameObjectDistribution.Item` with default values. |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | <span className="api-desc">Creates a `GameObjectDistribution.Item` with default values.</span> |

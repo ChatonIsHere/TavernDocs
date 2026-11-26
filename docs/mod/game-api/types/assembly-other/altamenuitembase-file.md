@@ -23,4 +23,4 @@ Editor menu folder `File`: menu item classes inherit it to appear under that pat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected File()"}</code> | Creates an `AltaMenuItemBase.File` with default values. |
+| <Link id="m-ctor" /><code>{"protected File()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.File` with default values.</span> |

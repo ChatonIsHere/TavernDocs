@@ -21,23 +21,27 @@ A cosmetic set that `ModellingCharacter` puts on its character, with per-item co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OverrideSet()"}</code> | Creates a `ModellingCharacter.OverrideSet` with default values. |
+| <Link id="m-ctor" /><code>{"OverrideSet()"}</code> | <span className="api-desc">Creates a `ModellingCharacter.OverrideSet` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/global-m-o/modellingcharacter-itemarguments">{"ModellingCharacter.ItemArguments"}</Link>{"[] arguments"}</code> | Colour arguments for each item in the set, in the set's order. |
-| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-customization/cosmeticsetdefinition">{"CosmeticSetDefinition"}</Link>{" set"}</code> | The cosmetic set to apply. |
+| <Link id="m-arguments" /><code><Link to="/mod/game-api/types/global-m-o/modellingcharacter-itemarguments">{"ModellingCharacter.ItemArguments"}</Link>{"[] arguments"}</code> | <span className="api-desc">Colour arguments for each item in the set, in the set's order.</span> |
+| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-customization/cosmeticsetdefinition">{"CosmeticSetDefinition"}</Link>{" set"}</code> | <span className="api-desc">The cosmetic set to apply.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatearguments" /><code>{"void UpdateArguments()"}</code> | Resizes and renames `arguments` to match the set's items and fills in default colours where none are set. Clears them if there is no set. |
+| <Link id="m-updatearguments" /><code>{"void UpdateArguments()"}</code> | <span className="api-desc">Resizes and renames `arguments` to match the set's items and fills in default colours where none are set. Clears them if there is no set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OverrideSet`:
 
+<div className="api-used-in">
+
 [`ModellingCharacter.set`](/mod/game-api/types/global-m-o/modellingcharacter#m-set).
+
+</div>

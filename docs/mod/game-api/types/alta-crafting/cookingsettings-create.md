@@ -22,4 +22,4 @@ Unity editor menu entry (Create, Global Settings) for making a new `CookingSetti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `CookingSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `CookingSettings.Create` with default values.</span> |

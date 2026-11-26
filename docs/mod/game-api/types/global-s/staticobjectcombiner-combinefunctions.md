@@ -34,4 +34,8 @@ Flags for which combine steps `StaticObjectCombiner` runs: joining LODs, meshes 
 
 Members of other types that take, return or hold a `CombineFunctions`:
 
+<div className="api-used-in">
+
 [`StaticObjectCombiner.functions`](/mod/game-api/types/global-s/staticobjectcombiner#m-functions).
+
+</div>

@@ -22,17 +22,17 @@ Asset that pairs a physic material with the Wwise switch used for its impact sou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSoundSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactSoundSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialswitch" /><code>{"private Switch materialSwitch"}</code> | Backing field for `MaterialSwitch`. |
-| <Link id="m-physicmaterial" /><code>{"private PhysicMaterial physicMaterial"}</code> | Backing field for `PhysicMaterial`. |
+| <Link id="m-materialswitch" /><code>{"private Switch materialSwitch"}</code> | <span className="api-desc">Backing field for `MaterialSwitch`.</span> |
+| <Link id="m-physicmaterial" /><code>{"private PhysicMaterial physicMaterial"}</code> | <span className="api-desc">Backing field for `PhysicMaterial`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Asset that pairs a physic material with the Wwise switch used for its impact sou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialswitch-2" /><code>{"Switch MaterialSwitch { get; }"}</code> | Wwise switch set when playing impacts on this material. |
-| <Link id="m-physicmaterial-2" /><code>{"PhysicMaterial PhysicMaterial { get; }"}</code> | The physic material this set applies to. |
+| <Link id="m-materialswitch-2" /><code>{"Switch MaterialSwitch { get; }"}</code> | <span className="api-desc">Wwise switch set when playing impacts on this material.</span> |
+| <Link id="m-physicmaterial-2" /><code>{"PhysicMaterial PhysicMaterial { get; }"}</code> | <span className="api-desc">The physic material this set applies to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactSoundSet`:
 
+<div className="api-used-in">
+
 [`ImpactSoundMap.impactSoundSets`](/mod/game-api/types/global-i-l/impactsoundmap#m-impactsoundsets).
+
+</div>

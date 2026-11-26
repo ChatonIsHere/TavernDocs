@@ -21,10 +21,10 @@ Converter that finds a `PlayerUnlock` from text: a number is looked up as a hash
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> | Creates a `PlayerUnlockConverter` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> | <span className="api-desc">Creates a `PlayerUnlockConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> GetFromString(string input)"}</code> | Returns the unlock whose lowercase name matches the input, or null. |
+| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> GetFromString(string input)"}</code> | <span className="api-desc">Returns the unlock whose lowercase name matches the input, or null.</span> |

@@ -28,4 +28,8 @@ Whose player markers show on the map: everyone, friends only, or none.
 
 Members of other types that take, return or hold a `PlayerLandmarkMode`:
 
+<div className="api-used-in">
+
 [`ServerSettings.PlayerLandmarkMode`](/mod/game-api/types/alta-utilities/serversettings#m-playerlandmarkmode).
+
+</div>

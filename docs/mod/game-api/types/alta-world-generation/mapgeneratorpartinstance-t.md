@@ -22,21 +22,21 @@ Runtime instance of a `MapGeneratorPart` for one cave generator plugin run. It w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapGeneratorPartInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, T part)"}</code> | Creates a `MapGeneratorPartInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"MapGeneratorPartInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, T part)"}</code> | <span className="api-desc">Creates a `MapGeneratorPartInstance` from `plugin` and `part`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-part" /><code>{"T Part { get; private set; }"}</code> | The part asset this instance was made from. |
-| <Link id="m-partidentifier" /><code>{"int PartIdentifier { get; private set; }"}</code> | Random identifier from the generator's hash function, seeded by the plugin's random identifier and the part's identifier. |
-| <Link id="m-plugin" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> | The plugin asset of the owning plugin instance. |
-| <Link id="m-plugininstance" /><code><Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" { get; private set; }"}</code> | The plugin instance that created this part instance. |
-| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" Target { get; private set; }"}</code> | Plugin whose layer this part changes: the part's `OverrideTarget`, or the owning plugin if none. |
+| <Link id="m-part" /><code>{"T Part { get; private set; }"}</code> | <span className="api-desc">The part asset this instance was made from.</span> |
+| <Link id="m-partidentifier" /><code>{"int PartIdentifier { get; private set; }"}</code> | <span className="api-desc">Random identifier from the generator's hash function, seeded by the plugin's random identifier and the part's identifier.</span> |
+| <Link id="m-plugin" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The plugin asset of the owning plugin instance.</span> |
+| <Link id="m-plugininstance" /><code><Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The plugin instance that created this part instance.</span> |
+| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" Target { get; private set; }"}</code> | <span className="api-desc">Plugin whose layer this part changes: the part's `OverrideTarget`, or the owning plugin if none.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets. |
-| <Link id="m-modify-2" /><code>{"abstract void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" target, int offX, int offY)"}</code> | Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets. |
+| <Link id="m-modify" /><code>{"void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets.</span> |
+| <Link id="m-modify-2" /><code>{"abstract void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" target, int offX, int offY)"}</code> | <span className="api-desc">Changes the target layer of a map chunk. The chunk overload finds the layer and passes on the chunk offsets.</span> |

@@ -28,4 +28,8 @@ How `RotatedPositionHelper` spreads positions around an origin: default, padded 
 
 Members of other types that take, return or hold a `PositioningMode`:
 
+<div className="api-used-in">
+
 [`RotatedPositionHelper.RotatedPositionHelper`](/mod/game-api/types/global-q-r/rotatedpositionhelper#m-ctor).
+
+</div>

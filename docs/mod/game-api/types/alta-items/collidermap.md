@@ -20,17 +20,17 @@ Pairs a collider with an `ImpactDetectorColliderModifier`, so an `ImpactDetector
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> | Creates a `ColliderMap` from `collider` and `modifier`. |
+| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> | <span className="api-desc">Creates a `ColliderMap` from `collider` and `modifier`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collider" /><code>{"private Collider collider"}</code> | Backing field for `Collider`. |
-| <Link id="m-modifier" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier"}</code> | Backing field for `Modifier`. |
+| <Link id="m-collider" /><code>{"private Collider collider"}</code> | <span className="api-desc">Backing field for `Collider`.</span> |
+| <Link id="m-modifier" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier"}</code> | <span className="api-desc">Backing field for `Modifier`.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ Pairs a collider with an `ImpactDetectorColliderModifier`, so an `ImpactDetector
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collider-2" /><code>{"Collider Collider { get; }"}</code> | The collider. |
-| <Link id="m-modifier-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" Modifier { get; }"}</code> | The modifier applied to hits on that collider. |
+| <Link id="m-collider-2" /><code>{"Collider Collider { get; }"}</code> | <span className="api-desc">The collider.</span> |
+| <Link id="m-modifier-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" Modifier { get; }"}</code> | <span className="api-desc">The modifier applied to hits on that collider.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ColliderMap`:
 
+<div className="api-used-in">
+
 [`ImpactDetector.mappedColliders`](/mod/game-api/types/alta-items/impactdetector#m-mappedcolliders).
+
+</div>

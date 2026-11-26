@@ -21,4 +21,4 @@ Something that updates respawn beacons when the respawn system model changes. Im
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model)"}</code> | Called with the new respawn system model. |
+| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model)"}</code> | <span className="api-desc">Called with the new respawn system model.</span> |

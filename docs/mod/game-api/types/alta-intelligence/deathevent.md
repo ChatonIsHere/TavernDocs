@@ -21,10 +21,14 @@ Inspector event that passes a `DeathEffect`. Used for a death effect's start and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> | Creates a `DeathEvent` with default values. |
+| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> | <span className="api-desc">Creates a `DeathEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DeathEvent`:
 
+<div className="api-used-in">
+
 [`DeathEffect.onEnd`](/mod/game-api/types/alta-intelligence/deatheffect#m-onend), [`DeathEffect.onStart`](/mod/game-api/types/alta-intelligence/deatheffect#m-onstart).
+
+</div>

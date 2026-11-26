@@ -22,10 +22,10 @@ Chunk effect asset that unloads every world landmark while the local player is i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnloadAllLandmarks()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UnloadAllLandmarks()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | When the chunk contains the player, calls `WorldLandmarkManager.ForceUnloadAll`. |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | <span className="api-desc">When the chunk contains the player, calls `WorldLandmarkManager.ForceUnloadAll`.</span> |

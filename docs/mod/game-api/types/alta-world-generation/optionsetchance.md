@@ -20,17 +20,17 @@ An `OptionSet` with a chance to run, used in an `OptionSet`'s list of sub-sets.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OptionSetChance()"}</code> | Creates an `OptionSetChance` with default values. |
+| <Link id="m-ctor" /><code>{"OptionSetChance()"}</code> | <span className="api-desc">Creates an `OptionSetChance` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-optionset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" optionSet"}</code> | Backing field for `OptionSet`. |
-| <Link id="m-weight" /><code>{"private float weight"}</code> | Backing field for `Weight`. |
+| <Link id="m-optionset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" optionSet"}</code> | <span className="api-desc">Backing field for `OptionSet`.</span> |
+| <Link id="m-weight" /><code>{"private float weight"}</code> | <span className="api-desc">Backing field for `Weight`.</span> |
 
 </details>
 
@@ -38,11 +38,15 @@ An `OptionSet` with a chance to run, used in an `OptionSet`'s list of sub-sets.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-optionset-2" /><code><Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" { get; }"}</code> | The option set to evaluate. |
-| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> | Chance from 0 to 1 that the set is evaluated (default 1). |
+| <Link id="m-optionset-2" /><code><Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/optionset">{"OptionSet"}</Link>{" { get; }"}</code> | <span className="api-desc">The option set to evaluate.</span> |
+| <Link id="m-weight-2" /><code>{"float Weight { get; }"}</code> | <span className="api-desc">Chance from 0 to 1 that the set is evaluated (default 1).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OptionSetChance`:
 
+<div className="api-used-in">
+
 [`OptionSet.optionSets`](/mod/game-api/types/alta-world-generation/optionset#m-optionsets).
+
+</div>

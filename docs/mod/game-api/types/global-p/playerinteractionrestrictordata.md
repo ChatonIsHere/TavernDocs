@@ -23,11 +23,11 @@ Save data for a `PlayerInteractionRestrictor`: its id and its interaction limit.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> | Creates a `PlayerInteractionRestrictorData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> | <span className="api-desc">Creates a `PlayerInteractionRestrictorData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"int id"}</code> | The restrictor's id in `PlayerInteractionManager`. |
-| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> | How many interactions a player gets per charge. |
+| <Link id="m-id" /><code>{"int id"}</code> | <span className="api-desc">The restrictor's id in `PlayerInteractionManager`.</span> |
+| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> | <span className="api-desc">How many interactions a player gets per charge.</span> |

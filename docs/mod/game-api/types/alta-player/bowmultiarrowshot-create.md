@@ -22,4 +22,4 @@ Editor menu entry for creating a `BowMultiArrowShot` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BowMultiArrowShot.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `BowMultiArrowShot.Create` with default values.</span> |

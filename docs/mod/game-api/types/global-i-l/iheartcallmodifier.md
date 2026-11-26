@@ -21,10 +21,14 @@ Something that changes a hit while the Heart Call skill is active on a tool. `He
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit)"}</code> | Changes the hit before it is applied. If any modifier exists, `HeartCall` may skip its own multiplier. |
+| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit)"}</code> | <span className="api-desc">Changes the hit before it is applied. If any modifier exists, `HeartCall` may skip its own multiplier.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IHeartCallModifier`:
 
+<div className="api-used-in">
+
 [`HeartCall.modifiers`](/mod/game-api/types/global-e-h/heartcall#m-modifiers), [`HeartCall.Modify`](/mod/game-api/types/global-e-h/heartcall#m-modify).
+
+</div>

@@ -21,16 +21,16 @@ The client side `ISync` that `SyncFactory.Create` makes when not on the server. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClientSync("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | Creates a `ClientSync` from `entity` and `type`. |
+| <Link id="m-ctor" /><code>{"ClientSync("}<Link to="/mod/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | <span className="api-desc">Creates a `ClientSync` from `entity` and `type`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onclientread" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnClientRead("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader)"}</code> | Sets the method used to read incoming messages of this type. |
-| <Link id="m-onclientwrite" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnClientWrite("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | Sets the method used to write this sync's data when sending. |
-| <Link id="m-onserverread" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerRead("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader)"}</code> | Does nothing on the client. |
-| <Link id="m-onserverreadandrelay" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerReadAndRelay("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | Does nothing on the client. |
-| <Link id="m-onserverwrite" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerWrite("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | Does nothing on the client. |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Not allowed on the client; logs an error. |
-| <Link id="m-setowner" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" SetOwner("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Does nothing on the client. |
+| <Link id="m-onclientread" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnClientRead("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader)"}</code> | <span className="api-desc">Sets the method used to read incoming messages of this type.</span> |
+| <Link id="m-onclientwrite" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnClientWrite("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | <span className="api-desc">Sets the method used to write this sync's data when sending.</span> |
+| <Link id="m-onserverread" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerRead("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader)"}</code> | <span className="api-desc">Does nothing on the client.</span> |
+| <Link id="m-onserverreadandrelay" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerReadAndRelay("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader, "}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | <span className="api-desc">Does nothing on the client.</span> |
+| <Link id="m-onserverwrite" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" OnServerWrite("}<Link to="/mod/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer)"}</code> | <span className="api-desc">Does nothing on the client.</span> |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Not allowed on the client; logs an error.</span> |
+| <Link id="m-setowner" /><code><Link to="/mod/game-api/types/alta-networking/isync">{"ISync"}</Link>{" SetOwner("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Does nothing on the client.</span> |

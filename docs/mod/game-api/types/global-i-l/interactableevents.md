@@ -21,18 +21,18 @@ Exposes an `Interactable`'s interaction started and ended events as Unity events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractableEvents()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InteractableEvents()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> | The interactable on the same object. |
-| <Link id="m-interactionended" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactableunityevent">{"InteractableUnityEvent"}</Link>{" interactionEnded"}</code> | Invoked when an interaction ends. |
-| <Link id="m-interactionstarted" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactableunityevent">{"InteractableUnityEvent"}</Link>{" interactionStarted"}</code> | Invoked when an interaction starts. |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> | <span className="api-desc">The interactable on the same object.</span> |
+| <Link id="m-interactionended" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactableunityevent">{"InteractableUnityEvent"}</Link>{" interactionEnded"}</code> | <span className="api-desc">Invoked when an interaction ends.</span> |
+| <Link id="m-interactionstarted" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactableunityevent">{"InteractableUnityEvent"}</Link>{" interactionStarted"}</code> | <span className="api-desc">Invoked when an interaction starts.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Exposes an `Interactable`'s interaction started and ended events as Unity events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copyend" /><code>{"void CopyEnd(UnityEventBase unityEventBase)"}</code> | Replaces the ended event with another one. Only takes effect if called before `Awake`. |
-| <Link id="m-copystart" /><code>{"void CopyStart(UnityEventBase unityEventBase)"}</code> | Replaces the started event with another one. Only takes effect if called before `Awake`. |
+| <Link id="m-copyend" /><code>{"void CopyEnd(UnityEventBase unityEventBase)"}</code> | <span className="api-desc">Replaces the ended event with another one. Only takes effect if called before `Awake`.</span> |
+| <Link id="m-copystart" /><code>{"void CopyStart(UnityEventBase unityEventBase)"}</code> | <span className="api-desc">Replaces the started event with another one. Only takes effect if called before `Awake`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the Unity events to the interactable's `InteractionStarted` and `InteractionEnded`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the Unity events to the interactable's `InteractionStarted` and `InteractionEnded`.</span> |
 
 </details>

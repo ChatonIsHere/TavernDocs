@@ -22,16 +22,16 @@ A `HashedGeneralValue` asset that can be marked as turned off on simple servers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SimpleHashedGeneralValue()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SimpleHashedGeneralValue()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> | Backing field for `IsDisabledOnSimpleServer`, set in the asset. |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> | <span className="api-desc">Backing field for `IsDisabledOnSimpleServer`, set in the asset.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A `HashedGeneralValue` asset that can be marked as turned off on simple servers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | True if this value is turned off on simple servers. |
-| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> | Every value of this type except the ones turned off on simple servers. |
+| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | <span className="api-desc">True if this value is turned off on simple servers.</span> |
+| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> | <span className="api-desc">Every value of this type except the ones turned off on simple servers.</span> |

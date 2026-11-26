@@ -21,17 +21,17 @@ Do-nothing `IPlayerControllerMultiLockModel` that is never locked. `PlayerContro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> | Creates a `FakePlayerControllerMultiLockModel` with default values. |
+| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> | <span className="api-desc">Creates a `FakePlayerControllerMultiLockModel` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> | Always false. |
+| <Link id="m-islocked" /><code>{"bool IsLocked { get; }"}</code> | <span className="api-desc">Always false.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> | Does nothing. |
-| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> | Does nothing. |
+| <Link id="m-addlock" /><code>{"void AddLock(object lockerObject)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-removelock" /><code>{"void RemoveLock(object lockerObject)"}</code> | <span className="api-desc">Does nothing.</span> |

@@ -23,17 +23,21 @@ Save data for a `DrawBridgeRangeLogic` component (save structure version 2).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> | Creates a `DrawBridgeRangeLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> | <span className="api-desc">Creates a `DrawBridgeRangeLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angle0" /><code>{"float angle0"}</code> | First saved angle of the drawbridge's range. |
-| <Link id="m-angle1" /><code>{"float angle1"}</code> | Second saved angle of the drawbridge's range. |
+| <Link id="m-angle0" /><code>{"float angle0"}</code> | <span className="api-desc">First saved angle of the drawbridge's range.</span> |
+| <Link id="m-angle1" /><code>{"float angle1"}</code> | <span className="api-desc">Second saved angle of the drawbridge's range.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DrawBridgeRangeLogicSaveData`:
 
+<div className="api-used-in">
+
 [`DrawBridgeRangeLogic.saved`](/mod/game-api/types/global-c-d/drawbridgerangelogic#m-saved).
+
+</div>

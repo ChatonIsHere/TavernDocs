@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Progression/Shape`: menu ite
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Shape()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape` with default values. |
+| <Link id="m-ctor" /><code>{"protected Shape()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape` with default values.</span> |

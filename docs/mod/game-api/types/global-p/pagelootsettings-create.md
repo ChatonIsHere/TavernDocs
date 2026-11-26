@@ -22,4 +22,4 @@ Unity editor menu item that creates a `PageLootSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PageLootSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PageLootSettings.Create` with default values.</span> |

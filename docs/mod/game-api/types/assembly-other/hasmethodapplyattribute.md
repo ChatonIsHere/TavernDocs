@@ -22,4 +22,4 @@ Marker attribute for classes; it holds no data.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HasMethodApplyAttribute()"}</code> | Creates a `HasMethodApplyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"HasMethodApplyAttribute()"}</code> | <span className="api-desc">Creates a `HasMethodApplyAttribute` with default values.</span> |

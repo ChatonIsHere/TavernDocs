@@ -21,4 +21,4 @@ A plain `ChunkPrefabPointer` with nothing added.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NormalPrefabPointer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"NormalPrefabPointer()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

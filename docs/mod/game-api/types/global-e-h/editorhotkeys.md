@@ -23,16 +23,16 @@ Asset listing editor menu paths and the hotkeys to bind to them.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorHotKeys()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EditorHotKeys()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hotkeys" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/editorhotkeys-hotkey">{"EditorHotKeys.Hotkey"}</Link>{"[] hotkeys"}</code> | The configured hotkeys, each a menu path, modifier flags and key. |
+| <Link id="m-hotkeys" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/editorhotkeys-hotkey">{"EditorHotKeys.Hotkey"}</Link>{"[] hotkeys"}</code> | <span className="api-desc">The configured hotkeys, each a menu path, modifier flags and key.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Asset listing editor menu paths and the hotkeys to bind to them.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmap" /><code>{"Dictionary<string, string> GetMap()"}</code> | Returns a map from menu path to Unity menu shortcut text (such as `_%#a`) for each hotkey. |
+| <Link id="m-getmap" /><code>{"Dictionary<string, string> GetMap()"}</code> | <span className="api-desc">Returns a map from menu path to Unity menu shortcut text (such as `_%#a`) for each hotkey.</span> |

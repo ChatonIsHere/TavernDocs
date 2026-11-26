@@ -23,17 +23,21 @@ Game task action argument sent when a player's hand touches a hover point on an 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> | Creates a `HandTouchTaskArgument` from `hash`. |
+| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> | <span className="api-desc">Creates a `HandTouchTaskArgument` from `hash`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.HandTouch`. |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | Prefab hash of the touched object's root. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.HandTouch`.</span> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | <span className="api-desc">Prefab hash of the touched object's root.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandTouchTaskArgument`:
 
+<div className="api-used-in">
+
 [`HandTouchTask.IsValid`](/mod/game-api/types/global-e-h/handtouchtask#m-isvalid).
+
+</div>

@@ -20,17 +20,17 @@ Repeating timer on the game `Timeline` that fires `Ticked` at a fixed interval, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TickTimer(TimeSpan interval)"}</code> | Creates a `TickTimer` from `interval`. |
+| <Link id="m-ctor" /><code>{"TickTimer(TimeSpan interval)"}</code> | <span className="api-desc">Creates a `TickTimer` from `interval`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | The current timeline entry. |
-| <Link id="m-interval" /><code>{"private TimeSpan interval"}</code> | Time between ticks. |
+| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | <span className="api-desc">The current timeline entry.</span> |
+| <Link id="m-interval" /><code>{"private TimeSpan interval"}</code> | <span className="api-desc">Time between ticks.</span> |
 
 </details>
 
@@ -38,23 +38,23 @@ Repeating timer on the game `Timeline` that fires `Ticked` at a fixed interval, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ticked" /><code>{"event Action Ticked"}</code> | Raised every interval. |
+| <Link id="m-ticked" /><code>{"event Action Ticked"}</code> | <span className="api-desc">Raised every interval.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"int Load(TimeSpan time)"}</code> | Restarts from a saved time and returns how many ticks were missed while unloaded. It doesn't fire them. |
-| <Link id="m-save" /><code>{"TimeSpan Save()"}</code> | Returns the time of the next tick, for saving. |
-| <Link id="m-start" /><code>{"void Start()"}</code> | Restarts the timer, first tick one interval from now. |
-| <Link id="m-stop" /><code>{"void Stop()"}</code> | Cancels the timeline entry. |
+| <Link id="m-load" /><code>{"int Load(TimeSpan time)"}</code> | <span className="api-desc">Restarts from a saved time and returns how many ticks were missed while unloaded. It doesn't fire them.</span> |
+| <Link id="m-save" /><code>{"TimeSpan Save()"}</code> | <span className="api-desc">Returns the time of the next tick, for saving.</span> |
+| <Link id="m-start" /><code>{"void Start()"}</code> | <span className="api-desc">Restarts the timer, first tick one interval from now.</span> |
+| <Link id="m-stop" /><code>{"void Stop()"}</code> | <span className="api-desc">Cancels the timeline entry.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tick" /><code>{"private void Tick()"}</code> | Raises `Ticked`. |
+| <Link id="m-tick" /><code>{"private void Tick()"}</code> | <span className="api-desc">Raises `Ticked`.</span> |
 
 </details>
 
@@ -62,4 +62,8 @@ Repeating timer on the game `Timeline` that fires `Ticked` at a fixed interval, 
 
 Members of other types that take, return or hold a `TickTimer`:
 
+<div className="api-used-in">
+
 [`BasicPopulation.Timer`](/mod/game-api/types/alta-world-generation/basicpopulation#m-timer).
+
+</div>

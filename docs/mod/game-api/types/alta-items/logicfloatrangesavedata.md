@@ -23,18 +23,18 @@ Save data for `LogicFloatRangeReceiver`: the range settings and the linked float
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> | Creates a `LogicFloatRangeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> | <span className="api-desc">Creates a `LogicFloatRangeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> | If true the output is on while the value is inside the range; if false, while it is outside. |
-| <Link id="m-maximumvalue" /><code>{"float maximumValue"}</code> | Upper end of the range. |
-| <Link id="m-minimumvalue" /><code>{"float minimumValue"}</code> | Lower end of the range. |
+| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> | <span className="api-desc">If true the output is on while the value is inside the range; if false, while it is outside.</span> |
+| <Link id="m-maximumvalue" /><code>{"float maximumValue"}</code> | <span className="api-desc">Upper end of the range.</span> |
+| <Link id="m-minimumvalue" /><code>{"float minimumValue"}</code> | <span className="api-desc">Lower end of the range.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> | The linked float sender's logic data, used to relink the input on load. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked float sender's logic data, used to relink the input on load.</span> |

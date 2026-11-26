@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Items/Docking`: menu item cl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Docking()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking` with default values. |
+| <Link id="m-ctor" /><code>{"protected Docking()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking` with default values.</span> |

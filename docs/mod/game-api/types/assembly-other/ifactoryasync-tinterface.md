@@ -22,4 +22,4 @@ Async factory with no parameters, for the VContainer layer. `FactoryAsync` imple
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"Task<TInterface> Create()"}</code> | Makes a new instance and returns it when ready. |
+| <Link id="m-create" /><code>{"Task<TInterface> Create()"}</code> | <span className="api-desc">Makes a new instance and returns it when ready.</span> |

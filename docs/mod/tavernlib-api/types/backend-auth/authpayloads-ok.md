@@ -21,11 +21,11 @@ A plain `ok` status, the answer to an accepted `set_mods`.
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `ok`. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `ok`.</span> |
 
 </details>

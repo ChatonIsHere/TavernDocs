@@ -21,10 +21,10 @@ An `ItemPurchaseRequest` with a reason, used to remove an item.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> | Creates an `ItemDeleteRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> | <span className="api-desc">Creates an `ItemDeleteRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> | Why the item is being removed. |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> | <span className="api-desc">Why the item is being removed.</span> |

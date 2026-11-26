@@ -21,17 +21,21 @@ Payload of the `TrialStarted` and `TrialFinished` console events, raised by `Tri
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> | Creates a `TrialEventData` with default values. |
+| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> | <span className="api-desc">Creates a `TrialEventData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-players" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> | Account info of the players in the trial. |
-| <Link id="m-trial" /><code>{"string trial"}</code> | The trial's key: the chunk identifier of the trial. |
+| <Link id="m-players" /><code>{"List<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> | <span className="api-desc">Account info of the players in the trial.</span> |
+| <Link id="m-trial" /><code>{"string trial"}</code> | <span className="api-desc">The trial's key: the chunk identifier of the trial.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TrialEventData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.TrialFinished`](/mod/game-api/types/alta-console/consoleevents#m-trialfinished), [`ConsoleEvents.TrialStarted`](/mod/game-api/types/alta-console/consoleevents#m-trialstarted).
+
+</div>

@@ -20,17 +20,21 @@ Body of an Alta web API request that sets a new password with a reset token.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> | Creates a `ResetPasswordRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> | <span className="api-desc">Creates a `ResetPasswordRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; set; }"}</code> | Hash of the new password. |
-| <Link id="m-resettoken" /><code>{"string ResetToken { get; set; }"}</code> | Token from the password reset email. |
+| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; set; }"}</code> | <span className="api-desc">Hash of the new password.</span> |
+| <Link id="m-resettoken" /><code>{"string ResetToken { get; set; }"}</code> | <span className="api-desc">Token from the password reset email.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ResetPasswordRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ResetPasswordAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-resetpasswordasync).
+
+</div>

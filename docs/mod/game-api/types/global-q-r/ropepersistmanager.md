@@ -19,23 +19,23 @@ Leftover from the Ultimate Rope Editor asset that records rope transform data. I
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-s-hashinstanceid2ropedata" /><code>{"private static Dictionary<int, "}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata">{"RopePersistManager.RopeData"}</Link>{"> s_hashInstanceID2RopeData"}</code> | Stored rope data by rope instance ID. Never filled in this build. |
+| <Link id="m-s-hashinstanceid2ropedata" /><code>{"private static Dictionary<int, "}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata">{"RopePersistManager.RopeData"}</Link>{"> s_hashInstanceID2RopeData"}</code> | <span className="api-desc">Stored rope data by rope instance ID. Never filled in this build.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-computetransforminfo" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" ComputeTransformInfo("}<Link to="/mod/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope, GameObject node, GameObject parent)"}</code> | Records a rope node's name, parent, position and rotation relative to the parent, scale and kinematic flags. |
-| <Link id="m-settransforminfo" /><code>{"private static void SetTransformInfo("}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" transformInfo, GameObject node)"}</code> | Restores a node's position, rotation and scale from recorded transform info. |
+| <Link id="m-computetransforminfo" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" ComputeTransformInfo("}<Link to="/mod/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope, GameObject node, GameObject parent)"}</code> | <span className="api-desc">Records a rope node's name, parent, position and rotation relative to the parent, scale and kinematic flags.</span> |
+| <Link id="m-settransforminfo" /><code>{"private static void SetTransformInfo("}<Link to="/mod/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo">{"RopePersistManager.RopeData.TransformInfo"}</Link>{" transformInfo, GameObject node)"}</code> | <span className="api-desc">Restores a node's position, rotation and scale from recorded transform info.</span> |
 
 </details>

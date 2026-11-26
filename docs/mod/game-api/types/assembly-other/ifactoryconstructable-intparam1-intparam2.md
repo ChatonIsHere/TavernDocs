@@ -20,4 +20,4 @@ MonoBehaviour that an async factory sets up with two parameters straight after c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam1 param1, TParam2 param2)"}</code> | Called by `FactoryAsync` with the create parameters once the instance exists. |
+| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam1 param1, TParam2 param2)"}</code> | <span className="api-desc">Called by `FactoryAsync` with the create parameters once the instance exists.</span> |

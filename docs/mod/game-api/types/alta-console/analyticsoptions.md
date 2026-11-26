@@ -31,4 +31,8 @@ Obsolete flags for which extra fields (timestamp, user ID, server ID, game time)
 
 Members of other types that take, return or hold a `AnalyticsOptions`:
 
+<div className="api-used-in">
+
 [`Analytics.SendRecord`](/mod/game-api/types/alta-console/analytics#m-sendrecord), [`AnalyticsRecordForAllAttribute.AnalyticsRecordForAllAttribute`](/mod/game-api/types/alta-console/analyticsrecordforallattribute#m-ctor), [`AnalyticsRecordForAllAttribute.Options`](/mod/game-api/types/alta-console/analyticsrecordforallattribute#m-options), [`AnalyticsTools.CreateSerializationFunction`](/mod/game-api/types/alta-console/analyticstools#m-createserializationfunction), [`AnalyticsTools.CreateSerializationHandler`](/mod/game-api/types/alta-console/analyticstools#m-createserializationhandler), [`AnalyticsTools.Serialize`](/mod/game-api/types/alta-console/analyticstools#m-serialize).
+
+</div>

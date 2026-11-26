@@ -21,4 +21,4 @@ Client: OpenXR input controller for normal play. Turns on the input map's `Playi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `PlayingOpenXRInputController` from `controller`. |
+| <Link id="m-ctor" /><code>{"PlayingOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `PlayingOpenXRInputController` from `controller`.</span> |

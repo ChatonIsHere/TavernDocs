@@ -22,10 +22,10 @@ Old save format (version 1) for `PlaceItemNoDockFirePuzzleLogic`, migrated on lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData1()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData1()"}</code> | <span className="api-desc">Creates a `PlaceItemNoDockFirePuzzleLogicSaveData1` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current save data with one option whose output is 1. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current save data with one option whose output is 1.</span> |

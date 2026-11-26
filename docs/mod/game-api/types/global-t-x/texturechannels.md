@@ -27,4 +27,8 @@ Channels kept when writing a `TextureOutput`: `RGBA` or `RGB`.
 
 Members of other types that take, return or hold a `TextureChannels`:
 
+<div className="api-used-in">
+
 [`TextureOutput.Channels`](/mod/game-api/types/global-t-x/textureoutput#m-channels), [`TextureOutput.TextureOutput`](/mod/game-api/types/global-t-x/textureoutput#m-ctor-2).
+
+</div>

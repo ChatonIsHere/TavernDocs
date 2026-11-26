@@ -21,6 +21,6 @@ One undoable action stored in a `HistoryManager<T>`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> | Applies the action again. |
-| <Link id="m-release" /><code>{"void Release()"}</code> | Frees the action when it drops out of the history or the history is cleared. |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> | Reverses the action. |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> | <span className="api-desc">Applies the action again.</span> |
+| <Link id="m-release" /><code>{"void Release()"}</code> | <span className="api-desc">Frees the action when it drops out of the history or the history is cleared.</span> |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | <span className="api-desc">Reverses the action.</span> |

@@ -24,19 +24,19 @@ Cave settings asset for how biomes change from layer to layer. Loaded from `Reso
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BiomeSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BiomeSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cumulativetransitionchance" /><code>{"private float cumulativeTransitionChance"}</code> | Backing field for `CumulativeTransitionChance`. |
-| <Link id="m-prosperityattribute" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" prosperityAttribute"}</code> | Backing field for `ProsperityAttribute`. |
-| <Link id="m-transitionprogressmax" /><code>{"private float transitionProgressMax"}</code> | Backing field for `TransitionProgressMax`. |
-| <Link id="m-transitionprogressmin" /><code>{"private float transitionProgressMin"}</code> | Backing field for `TransitionProgressMin`. |
+| <Link id="m-cumulativetransitionchance" /><code>{"private float cumulativeTransitionChance"}</code> | <span className="api-desc">Backing field for `CumulativeTransitionChance`.</span> |
+| <Link id="m-prosperityattribute" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" prosperityAttribute"}</code> | <span className="api-desc">Backing field for `ProsperityAttribute`.</span> |
+| <Link id="m-transitionprogressmax" /><code>{"private float transitionProgressMax"}</code> | <span className="api-desc">Backing field for `TransitionProgressMax`.</span> |
+| <Link id="m-transitionprogressmin" /><code>{"private float transitionProgressMin"}</code> | <span className="api-desc">Backing field for `TransitionProgressMin`.</span> |
 
 </details>
 
@@ -44,7 +44,7 @@ Cave settings asset for how biomes change from layer to layer. Loaded from `Reso
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cumulativetransitionchance-2" /><code>{"float CumulativeTransitionChance { get; }"}</code> | Chance added each layer for the cave to start moving to a new biome; it builds up until a transition starts. |
-| <Link id="m-prosperityattribute-2" /><code><Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" ProsperityAttribute { get; }"}</code> | The biome attribute used as prosperity. |
-| <Link id="m-transitionprogressmax-2" /><code>{"float TransitionProgressMax { get; }"}</code> | Upper bound of the random progress added per layer while moving between two biomes. |
-| <Link id="m-transitionprogressmin-2" /><code>{"float TransitionProgressMin { get; }"}</code> | Lower bound of the random progress added per layer while moving between two biomes. |
+| <Link id="m-cumulativetransitionchance-2" /><code>{"float CumulativeTransitionChance { get; }"}</code> | <span className="api-desc">Chance added each layer for the cave to start moving to a new biome; it builds up until a transition starts.</span> |
+| <Link id="m-prosperityattribute-2" /><code><Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" ProsperityAttribute { get; }"}</code> | <span className="api-desc">The biome attribute used as prosperity.</span> |
+| <Link id="m-transitionprogressmax-2" /><code>{"float TransitionProgressMax { get; }"}</code> | <span className="api-desc">Upper bound of the random progress added per layer while moving between two biomes.</span> |
+| <Link id="m-transitionprogressmin-2" /><code>{"float TransitionProgressMin { get; }"}</code> | <span className="api-desc">Lower bound of the random progress added per layer while moving between two biomes.</span> |

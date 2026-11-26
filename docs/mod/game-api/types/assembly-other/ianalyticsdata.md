@@ -22,10 +22,14 @@ A writable set of analytics properties for one event, which can also be tagged w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> | Sets the Alta user id the event belongs to. |
+| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> | <span className="api-desc">Sets the Alta user id the event belongs to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAnalyticsData`:
 
+<div className="api-used-in">
+
 [`AnalyticsEvent.data`](/mod/game-api/types/assembly-other/analyticsevent#m-data), [`IAnalyticsInstrument.AppendResult`](/mod/game-api/types/assembly-other/ianalyticsinstrument#m-appendresult), [`ServerInfoInstrument.AppendResult`](/mod/game-api/types/game-other-namespaces/serverinfoinstrument#m-appendresult).
+
+</div>

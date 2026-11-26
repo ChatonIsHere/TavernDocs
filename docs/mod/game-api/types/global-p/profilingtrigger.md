@@ -21,16 +21,16 @@ Debug component: when triggered, takes nine profiler samples one after another t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProfilingTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ProfilingTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-profiling" /><code>{"private int profiling"}</code> | Number of the current sample. |
+| <Link id="m-profiling" /><code>{"private int profiling"}</code> | <span className="api-desc">Number of the current sample.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ Debug component: when triggered, takes nine profiler samples one after another t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-profile" /><code>{"void Profile()"}</code> | Starts the sample run. |
+| <Link id="m-profile" /><code>{"void Profile()"}</code> | <span className="api-desc">Starts the sample run.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> | Starts the next 300-frame sample until nine have run. |
+| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> | <span className="api-desc">Starts the next 300-frame sample until nine have run.</span> |
 
 </details>

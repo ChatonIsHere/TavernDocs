@@ -20,16 +20,16 @@ List of addressable cubemaps for one scene, used by `ServerCubeMaps` for the mai
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> | Creates a `SceneCubeMaps` with default values. |
+| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> | <span className="api-desc">Creates a `SceneCubeMaps` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cubemaps" /><code>{"private AssetReference[] cubemaps"}</code> | Backing field for `Cubemaps`. |
+| <Link id="m-cubemaps" /><code>{"private AssetReference[] cubemaps"}</code> | <span className="api-desc">Backing field for `Cubemaps`.</span> |
 
 </details>
 
@@ -37,10 +37,14 @@ List of addressable cubemaps for one scene, used by `ServerCubeMaps` for the mai
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cubemaps-2" /><code>{"AssetReference[] Cubemaps { get; }"}</code> | Addressable references to this scene's cubemaps. |
+| <Link id="m-cubemaps-2" /><code>{"AssetReference[] Cubemaps { get; }"}</code> | <span className="api-desc">Addressable references to this scene's cubemaps.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SceneCubeMaps`:
 
+<div className="api-used-in">
+
 [`ServerCubeMaps.sceneBasedcubemaps`](/mod/game-api/types/global-s/servercubemaps#m-scenebasedcubemaps).
+
+</div>

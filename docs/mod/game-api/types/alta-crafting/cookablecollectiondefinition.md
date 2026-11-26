@@ -22,17 +22,17 @@ A stew ingredient slot that accepts any cookable from a fixed list.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookableCollectionDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CookableCollectionDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookablelookup" /><code>{"private HashSet<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> cookableLookup"}</code> | Set built from `cookables` on first check. |
-| <Link id="m-cookables" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> cookables"}</code> | Serialized list of accepted cookables. |
+| <Link id="m-cookablelookup" /><code>{"private HashSet<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> cookableLookup"}</code> | <span className="api-desc">Set built from `cookables` on first check.</span> |
+| <Link id="m-cookables" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> cookables"}</code> | <span className="api-desc">Serialized list of accepted cookables.</span> |
 
 </details>
 
@@ -40,10 +40,10 @@ A stew ingredient slot that accepts any cookable from a fixed list.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookables-2" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | The cookables this ingredient accepts. |
+| <Link id="m-cookables-2" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | <span className="api-desc">The cookables this ingredient accepts.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | True if the cookable is in the list. A match scores 2. |
+| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | <span className="api-desc">True if the cookable is in the list. A match scores 2.</span> |

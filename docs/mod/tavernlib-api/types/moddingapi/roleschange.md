@@ -21,18 +21,22 @@ What `Roles.RolesChanged` hands its handlers: one user whose roles in `users.jso
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RolesChange(string username, IReadOnlyList<string> oldRoles, IReadOnlyList<string> newRoles)"}</code> | Sets the username and the roles before and after the change. |
+| <Link id="m-ctor" /><code>{"RolesChange(string username, IReadOnlyList<string> oldRoles, IReadOnlyList<string> newRoles)"}</code> | <span className="api-desc">Sets the username and the roles before and after the change.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newroles" /><code>{"IReadOnlyList<string> NewRoles { get; }"}</code> | Their roles now. Empty if they have none left or were removed from the file. |
-| <Link id="m-oldroles" /><code>{"IReadOnlyList<string> OldRoles { get; }"}</code> | Their roles before the change. Empty if they had none. |
-| <Link id="m-username" /><code>{"string Username { get; }"}</code> | The name as it's written in `users.json`. |
+| <Link id="m-newroles" /><code>{"IReadOnlyList<string> NewRoles { get; }"}</code> | <span className="api-desc">Their roles now. Empty if they have none left or were removed from the file.</span> |
+| <Link id="m-oldroles" /><code>{"IReadOnlyList<string> OldRoles { get; }"}</code> | <span className="api-desc">Their roles before the change. Empty if they had none.</span> |
+| <Link id="m-username" /><code>{"string Username { get; }"}</code> | <span className="api-desc">The name as it's written in `users.json`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RolesChange`:
 
+<div className="api-used-in">
+
 [`Roles.Announce`](/mod/tavernlib-api/types/moddingapi/roles#m-announce), [`Roles.RolesChanged`](/mod/tavernlib-api/types/moddingapi/roles#m-roleschanged).
+
+</div>

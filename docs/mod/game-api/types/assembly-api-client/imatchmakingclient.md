@@ -21,10 +21,14 @@ Alta web API matchmaking. `ApiAccess.ApiClient.MatchMaking`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> | Asks the API for the best server running the tutorial scene (scene index 1). |
+| <Link id="m-gettutorialserver" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> GetTutorialServer()"}</code> | <span className="api-desc">Asks the API for the best server running the tutorial scene (scene index 1).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IMatchMakingClient`:
 
+<div className="api-used-in">
+
 [`HighLevelApiClient.MatchMaking`](/mod/game-api/types/assembly-api-client/highlevelapiclient#m-matchmaking), [`IHighLevelApiClient.MatchMaking`](/mod/game-api/types/assembly-api-client/ihighlevelapiclient#m-matchmaking), [`OfflineHighLevelApiClient.MatchMaking`](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient#m-matchmaking).
+
+</div>

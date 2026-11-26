@@ -27,4 +27,8 @@ How the atlas tool fixes a mesh's UVs after packing: not at all, or through text
 
 Members of other types that take, return or hold a `UVFixType`:
 
+<div className="api-used-in">
+
 [`AtlasDefinition.uvFixType`](/mod/game-api/types/alta-utilities/atlasdefinition#m-uvfixtype).
+
+</div>

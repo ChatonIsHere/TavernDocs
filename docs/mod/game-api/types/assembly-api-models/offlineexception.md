@@ -21,15 +21,15 @@ Thrown when an API method is called while the client is in offline mode. The mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineException()"}</code> | Creates the exception. |
+| <Link id="m-ctor" /><code>{"OfflineException()"}</code> | <span className="api-desc">Creates the exception.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getmethodname" /><code>{"private static string GetMethodName()"}</code> | Builds the message from the method two frames up the stack, the one that threw. |
+| <Link id="m-getmethodname" /><code>{"private static string GetMethodName()"}</code> | <span className="api-desc">Builds the message from the method two frames up the stack, the one that threw.</span> |
 
 </details>

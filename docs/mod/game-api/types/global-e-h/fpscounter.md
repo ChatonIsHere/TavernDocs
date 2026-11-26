@@ -21,17 +21,17 @@ Measures frame rate as a smoothed average each frame and exposes it statically. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FPSCounter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FPSCounter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-framemodification" /><code>{"private float frameModification"}</code> | Weight of the newest frame in the smoothing (0.1 by default). |
-| <Link id="m-stopwatch" /><code>{"private readonly Stopwatch stopwatch"}</code> | Times each frame. |
+| <Link id="m-framemodification" /><code>{"private float frameModification"}</code> | <span className="api-desc">Weight of the newest frame in the smoothing (0.1 by default).</span> |
+| <Link id="m-stopwatch" /><code>{"private readonly Stopwatch stopwatch"}</code> | <span className="api-desc">Times each frame.</span> |
 
 </details>
 
@@ -39,17 +39,17 @@ Measures frame rate as a smoothed average each frame and exposes it statically. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fps" /><code>{"static float FPS { get; private set; }"}</code> | Smoothed frames per second. |
-| <Link id="m-fpsrecord" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" FPSRecord { get; }"}</code> | Running average of `FPS` values, reset and read by chunk loading profiling. |
+| <Link id="m-fps" /><code>{"static float FPS { get; private set; }"}</code> | <span className="api-desc">Smoothed frames per second.</span> |
+| <Link id="m-fpsrecord" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" FPSRecord { get; }"}</code> | <span className="api-desc">Running average of `FPS` values, reset and read by chunk loading profiling.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Starts the frame stopwatch. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Blends the latest frame's rate into `FPS` and records it. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Starts the frame stopwatch.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Blends the latest frame's rate into `FPS` and records it.</span> |
 
 </details>

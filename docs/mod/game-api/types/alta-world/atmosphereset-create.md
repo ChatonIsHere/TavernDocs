@@ -22,4 +22,4 @@ Editor menu entry that creates an `AtmosphereSet` asset under Global Settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AtmosphereSet.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `AtmosphereSet.Create` with default values.</span> |

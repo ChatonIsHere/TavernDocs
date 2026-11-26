@@ -22,16 +22,16 @@ NLog layout renderer `${fullstacktrace}`: the full stack trace with file and lin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> | Creates a `FullStackTraceRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> | <span className="api-desc">Creates a `FullStackTraceRenderer` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> | Asks NLog to capture the stack trace with source info. |
+| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> | <span className="api-desc">Asks NLog to capture the stack trace with source info.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> | Writes a `stacktrace` event property if there is one, otherwise each frame from the caller down. |
+| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> | <span className="api-desc">Writes a `stacktrace` event property if there is one, otherwise each frame from the caller down.</span> |

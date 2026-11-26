@@ -23,17 +23,21 @@ Base class for ScriptableObject rules a `MeltingModel` runs on the server, for e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MeltingModelModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected MeltingModelModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | Called by the model in `InitializeAsServer`; subclasses hook the model's filter events here. |
-| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | Called when the model is destroyed by the scene or, on the server, by `OnDestroy`; subclasses unhook here. |
+| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | <span className="api-desc">Called by the model in `InitializeAsServer`; subclasses hook the model's filter events here.</span> |
+| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | <span className="api-desc">Called when the model is destroyed by the scene or, on the server, by `OnDestroy`; subclasses unhook here.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MeltingModelModifier`:
 
+<div className="api-used-in">
+
 [`MeltingModel.modifiers`](/mod/game-api/types/alta-crafting/meltingmodel#m-modifiers).
+
+</div>

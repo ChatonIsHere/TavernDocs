@@ -29,4 +29,8 @@ Light state for `LightHands`: off, strong or flickering.
 
 Members of other types that take, return or hold a `Modes`:
 
+<div className="api-used-in">
+
 [`LightHands.currentMode`](/mod/game-api/types/global-i-l/lighthands#m-currentmode).
+
+</div>

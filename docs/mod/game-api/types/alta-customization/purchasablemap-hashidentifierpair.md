@@ -21,17 +21,21 @@ Maps a store SKU to an item hash, for `PurchasableMap.ConvertStoreSKUToHash`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> | Creates a `PurchasableMap.HashIdentifierPair` with default values. |
+| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> | <span className="api-desc">Creates a `PurchasableMap.HashIdentifierPair` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> | The item's hash. |
-| <Link id="m-sku" /><code>{"string sku"}</code> | The store SKU. |
+| <Link id="m-hash" /><code>{"uint hash"}</code> | <span className="api-desc">The item's hash.</span> |
+| <Link id="m-sku" /><code>{"string sku"}</code> | <span className="api-desc">The store SKU.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HashIdentifierPair`:
 
+<div className="api-used-in">
+
 [`PurchasableMap.hashIdentifierPairs`](/mod/game-api/types/alta-customization/purchasablemap#m-hashidentifierpairs).
+
+</div>

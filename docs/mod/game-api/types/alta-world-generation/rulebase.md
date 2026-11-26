@@ -23,33 +23,37 @@ Base asset for a PAGaC (procedural generation) rule: a 3D grid of tag lists, wit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected RuleBase()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected RuleBase()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-configurations" /><code>{"protected int configurations"}</code> | Number of tag configurations the rule has. Each is a full grid of tag lists. |
-| <Link id="m-serializedtagcounts" /><code>{"protected int[] serializedTagCounts"}</code> | How many tags each cell has in `serializedTags`, probably. |
-| <Link id="m-serializedtags" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[] serializedTags"}</code> | Flat list of tags as stored in the asset, probably unpacked into `tags` on load. |
-| <Link id="m-sizex" /><code>{"protected int sizeX"}</code> | Width of the rule's grid in cells. |
-| <Link id="m-sizey" /><code>{"protected int sizeY"}</code> | Height of the rule's grid in cells. |
-| <Link id="m-sizez" /><code>{"protected int sizeZ"}</code> | Depth of the rule's grid in cells. |
-| <Link id="m-tags" /><code>{"protected List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags"}</code> | The 4D grid of tag lists, indexed by configuration, x, y, z. Rebuilt from the serialized arrays on load. |
+| <Link id="m-configurations" /><code>{"protected int configurations"}</code> | <span className="api-desc">Number of tag configurations the rule has. Each is a full grid of tag lists.</span> |
+| <Link id="m-serializedtagcounts" /><code>{"protected int[] serializedTagCounts"}</code> | <span className="api-desc">How many tags each cell has in `serializedTags`, probably.</span> |
+| <Link id="m-serializedtags" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[] serializedTags"}</code> | <span className="api-desc">Flat list of tags as stored in the asset, probably unpacked into `tags` on load.</span> |
+| <Link id="m-sizex" /><code>{"protected int sizeX"}</code> | <span className="api-desc">Width of the rule's grid in cells.</span> |
+| <Link id="m-sizey" /><code>{"protected int sizeY"}</code> | <span className="api-desc">Height of the rule's grid in cells.</span> |
+| <Link id="m-sizez" /><code>{"protected int sizeZ"}</code> | <span className="api-desc">Depth of the rule's grid in cells.</span> |
+| <Link id="m-tags" /><code>{"protected List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags"}</code> | <span className="api-desc">The 4D grid of tag lists, indexed by configuration, x, y, z. Rebuilt from the serialized arrays on load.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-configurations-2" /><code>{"int Configurations { get; }"}</code> | Number of configurations the rule has, each with its own tag grid. |
-| <Link id="m-item" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> this[int configuration, int x, int y, int z] { get; }"}</code> | Indexer: the tag list at a configuration and cell. |
-| <Link id="m-sizex-2" /><code>{"int SizeX { get; }"}</code> | Width of the rule's grid in cells. |
-| <Link id="m-sizey-2" /><code>{"int SizeY { get; }"}</code> | Height of the rule's grid in cells. |
-| <Link id="m-sizez-2" /><code>{"int SizeZ { get; }"}</code> | Depth of the rule's grid in cells. |
-| <Link id="m-tags-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] Tags { get; }"}</code> | The tag lists, indexed by configuration, x, y and z. |
+| <Link id="m-configurations-2" /><code>{"int Configurations { get; }"}</code> | <span className="api-desc">Number of configurations the rule has, each with its own tag grid.</span> |
+| <Link id="m-item" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"> this[int configuration, int x, int y, int z] { get; }"}</code> | <span className="api-desc">Indexer: the tag list at a configuration and cell.</span> |
+| <Link id="m-sizex-2" /><code>{"int SizeX { get; }"}</code> | <span className="api-desc">Width of the rule's grid in cells.</span> |
+| <Link id="m-sizey-2" /><code>{"int SizeY { get; }"}</code> | <span className="api-desc">Height of the rule's grid in cells.</span> |
+| <Link id="m-sizez-2" /><code>{"int SizeZ { get; }"}</code> | <span className="api-desc">Depth of the rule's grid in cells.</span> |
+| <Link id="m-tags-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] Tags { get; }"}</code> | <span className="api-desc">The tag lists, indexed by configuration, x, y and z.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RuleBase`:
 
+<div className="api-used-in">
+
 [`Constructor.CheckPlace`](/mod/game-api/types/alta-world-generation/constructor#m-checkplace), [`Constructor.CreateData`](/mod/game-api/types/alta-world-generation/constructor#m-createdata), [`Constructor.HandlePart`](/mod/game-api/types/alta-world-generation/constructor#m-handlepart), [`Constructor.usedRules`](/mod/game-api/types/alta-world-generation/constructor#m-usedrules).
+
+</div>

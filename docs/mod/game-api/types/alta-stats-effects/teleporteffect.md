@@ -22,16 +22,16 @@ Chance-based effect that teleports the target to a spawn area. `Home` sends a pl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TeleportEffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TeleportEffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-landingtarget" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" landingTarget"}</code> | Spawn area to teleport to. |
+| <Link id="m-landingtarget" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" landingTarget"}</code> | <span className="api-desc">Spawn area to teleport to.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Chance-based effect that teleports the target to a spawn area. `Home` sends a pl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Teleports to a random point in the landing area. Home uses the player's spawn point (not for spirits); missing areas fall back to `RespawnPoint`. |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Teleports to a random point in the landing area. Home uses the player's spawn point (not for spirits); missing areas fall back to `RespawnPoint`.</span> |

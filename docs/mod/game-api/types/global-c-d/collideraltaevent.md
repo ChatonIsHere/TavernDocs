@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes a `Collider`, for inspector-wired callbacks
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderAltaEvent()"}</code> | Creates a `ColliderAltaEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ColliderAltaEvent()"}</code> | <span className="api-desc">Creates a `ColliderAltaEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ColliderAltaEvent`:
 
+<div className="api-used-in">
+
 [`RaycastProjectile.collided`](/mod/game-api/types/global-q-r/raycastprojectile#m-collided).
+
+</div>

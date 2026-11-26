@@ -22,10 +22,10 @@ Base for field attributes that fill in or check a field when a prefab is applied
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PrefabApplyAttribute()"}</code> | Creates a `PrefabApplyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"protected PrefabApplyAttribute()"}</code> | <span className="api-desc">Creates a `PrefabApplyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleapply" /><code>{"abstract bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Sets up or checks the field on the component. Returns whether anything changed, probably so the prefab is marked dirty. |
+| <Link id="m-handleapply" /><code>{"abstract bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Sets up or checks the field on the component. Returns whether anything changed, probably so the prefab is marked dirty.</span> |

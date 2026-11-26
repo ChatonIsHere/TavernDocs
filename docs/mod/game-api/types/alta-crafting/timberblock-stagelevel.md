@@ -29,4 +29,8 @@ The three carving stages of a timber block in order: outer, inner and core. Fini
 
 Members of other types that take, return or hold a `StageLevel`:
 
+<div className="api-used-in">
+
 [`TimberBlock.CurrentStageLevel`](/mod/game-api/types/alta-crafting/timberblock#m-currentstagelevel), [`TimberBlock.stageMap`](/mod/game-api/types/alta-crafting/timberblock#m-stagemap), [`TimberBlock.CoreStage.StageLevel`](/mod/game-api/types/alta-crafting/timberblock-corestage#m-stagelevel), [`TimberBlock.InnerStage.StageLevel`](/mod/game-api/types/alta-crafting/timberblock-innerstage#m-stagelevel), [`TimberBlock.OuterStage.StageLevel`](/mod/game-api/types/alta-crafting/timberblock-outerstage#m-stagelevel), [`TimberBlock.Stage.StageLevel`](/mod/game-api/types/alta-crafting/timberblock-stage#m-stagelevel).
+
+</div>

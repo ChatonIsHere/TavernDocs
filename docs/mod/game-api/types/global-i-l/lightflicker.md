@@ -22,29 +22,29 @@ Client-side effect that drifts a light's colour towards random colours from a gr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LightFlicker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LightFlicker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colors" /><code>{"private Gradient colors"}</code> | Gradient the random colours are picked from. |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | How fast the colour drifts. |
-| <Link id="m-targetlight" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> | The light on this object. |
+| <Link id="m-colors" /><code>{"private Gradient colors"}</code> | <span className="api-desc">Gradient the random colours are picked from.</span> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | <span className="api-desc">How fast the colour drifts.</span> |
+| <Link id="m-targetlight" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> | <span className="api-desc">The light on this object.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Destroys itself when headless, otherwise finds the light. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Moves the light colour towards a random gradient colour. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Destroys itself when headless, otherwise finds the light.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Moves the light colour towards a random gradient colour.</span> |
 
 </details>

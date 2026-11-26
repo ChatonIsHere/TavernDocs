@@ -21,16 +21,16 @@ Client tool that, on login, asks the API whether the account's email is verified
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmailVerificationController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmailVerificationController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-emailverificationpopup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" emailVerificationPopup"}</code> | Popup shown to unverified users. |
+| <Link id="m-emailverificationpopup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/popupboard">{"PopupBoard"}</Link>{" emailVerificationPopup"}</code> | <span className="api-desc">Popup shown to unverified users.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Client tool that, on login, asks the API whether the account's email is verified
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | Checks verification with the user client and shows `emailVerificationPopup` when unverified. |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | Does nothing. |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | <span className="api-desc">Checks verification with the user client and shows `emailVerificationPopup` when unverified.</span> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | <span className="api-desc">Does nothing.</span> |

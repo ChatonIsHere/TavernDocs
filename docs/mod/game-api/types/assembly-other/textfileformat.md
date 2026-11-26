@@ -21,18 +21,18 @@ File format that stores a file's whole content as one string.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TextFileFormat()"}</code> | Creates a `TextFileFormat` with default values. |
+| <Link id="m-ctor" /><code>{"TextFileFormat()"}</code> | <span className="api-desc">Creates a `TextFileFormat` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-text" /><code>{"string Text { get; set; }"}</code> | The file's text content. |
+| <Link id="m-text" /><code>{"string Text { get; set; }"}</code> | <span className="api-desc">The file's text content.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Returns a new `TextFileFormat` with the same text. |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the whole stream into `Text`. |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes `Text` to the stream. Ignores the cancellation token. |
+| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | <span className="api-desc">Returns a new `TextFileFormat` with the same text.</span> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | <span className="api-desc">Reads the whole stream into `Text`.</span> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | <span className="api-desc">Writes `Text` to the stream. Ignores the cancellation token.</span> |

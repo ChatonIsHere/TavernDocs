@@ -28,4 +28,8 @@ How the `RaycastGrounded` AI evaluator checks for ground: a ray straight down in
 
 Members of other types that take, return or hold a `RaycastGroundedOperationType`:
 
+<div className="api-used-in">
+
 [`CreateTargetOperation.RaycastGrounded`](/mod/game-api/types/alta-intelligence/createtargetoperation#m-raycastgrounded), [`RaycastGrounded.RaycastGrounded`](/mod/game-api/types/alta-intelligence/raycastgrounded#m-ctor), [`RaycastGroundedOperation.operationType`](/mod/game-api/types/alta-intelligence/raycastgroundedoperation#m-operationtype).
+
+</div>

@@ -21,15 +21,15 @@ Base for Agones (Kubernetes game server manager) objects as the Alta API reads a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> | Creates an `AgonesObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> | <span className="api-desc">Creates an `AgonesObject` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apigroup" /><code>{"virtual string ApiGroup { get; set; }"}</code> | Agones API group, `allocation.agones.dev` by default. Not serialised itself. |
-| <Link id="m-apiversion" /><code>{"string ApiVersion { get; set; }"}</code> | Serialised as `apiVersion`; built from `ApiGroup` and `Version`. Setting it does nothing. |
-| <Link id="m-kind" /><code>{"virtual string Kind { get; set; }"}</code> | The Kubernetes object kind. |
-| <Link id="m-metadata" /><code><Link to="/mod/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> | The object's Kubernetes metadata. |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/status">{"Status"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/status">{"Status"}</Link>{" { get; set; }"}</code> | The object's status as Agones reports it. |
-| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> | API version part, `v1` by default. Not serialised itself. |
+| <Link id="m-apigroup" /><code>{"virtual string ApiGroup { get; set; }"}</code> | <span className="api-desc">Agones API group, `allocation.agones.dev` by default. Not serialised itself.</span> |
+| <Link id="m-apiversion" /><code>{"string ApiVersion { get; set; }"}</code> | <span className="api-desc">Serialised as `apiVersion`; built from `ApiGroup` and `Version`. Setting it does nothing.</span> |
+| <Link id="m-kind" /><code>{"virtual string Kind { get; set; }"}</code> | <span className="api-desc">The Kubernetes object kind.</span> |
+| <Link id="m-metadata" /><code><Link to="/mod/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/metadata">{"Metadata"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The object's Kubernetes metadata.</span> |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/status">{"Status"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/status">{"Status"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The object's status as Agones reports it.</span> |
+| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> | <span className="api-desc">API version part, `v1` by default. Not serialised itself.</span> |

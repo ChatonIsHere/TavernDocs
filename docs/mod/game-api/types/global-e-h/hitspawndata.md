@@ -21,10 +21,10 @@ Spawn data that carries the impact hit which caused the spawn.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HitSpawnData("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome = null)"}</code> | Creates a `HitSpawnData` from `hit` and `biome`. |
+| <Link id="m-ctor" /><code>{"HitSpawnData("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" biome = null)"}</code> | <span className="api-desc">Creates a `HitSpawnData` from `hit` and `biome`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hit" /><code><Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" Hit { get; }"}</code> | The hit that caused the spawn. |
+| <Link id="m-hit" /><code><Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" Hit { get; }"}</code> | <span className="api-desc">The hit that caused the spawn.</span> |

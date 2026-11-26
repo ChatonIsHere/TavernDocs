@@ -22,17 +22,17 @@ Drives a particle system's playback speed or emission rates from one 0 to 1 valu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValueOperatedParticleSystem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ValueOperatedParticleSystem()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-operators" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition">{"ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition"}</Link>{"[] operators"}</code> | The values to drive and their curves. |
-| <Link id="m-targetsystem" /><code>{"private ParticleSystem targetSystem"}</code> | The particle system to change. |
+| <Link id="m-operators" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition">{"ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition"}</Link>{"[] operators"}</code> | <span className="api-desc">The values to drive and their curves.</span> |
+| <Link id="m-targetsystem" /><code>{"private ParticleSystem targetSystem"}</code> | <span className="api-desc">The particle system to change.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Drives a particle system's playback speed or emission rates from one 0 to 1 valu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setvalue" /><code>{"void SetValue(float value)"}</code> | Client: passes the value to every operator, which maps it through its curve and applies it. |
+| <Link id="m-setvalue" /><code>{"void SetValue(float value)"}</code> | <span className="api-desc">Client: passes the value to every operator, which maps it through its curve and applies it.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: sets up each operator on the target system. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Client: sets up each operator on the target system.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ Drives a particle system's playback speed or emission rates from one 0 to 1 valu
 
 Members of other types that take, return or hold a `ValueOperatedParticleSystem`:
 
+<div className="api-used-in">
+
 [`PlayerHealthVisualEffectsSettings.NightmareEffectController.valueOperator`](/mod/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller#m-valueoperator).
+
+</div>

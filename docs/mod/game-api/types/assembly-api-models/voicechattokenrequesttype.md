@@ -27,4 +27,8 @@ What a voice chat token is for: `Login` or `JoinChannel`.
 
 Members of other types that take, return or hold a `VoiceChatTokenRequestType`:
 
+<div className="api-used-in">
+
 [`VoiceChatTokenRequest.Type`](/mod/game-api/types/assembly-api-models/voicechattokenrequest#m-type).
+
+</div>

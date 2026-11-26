@@ -22,22 +22,22 @@ Base for a component that should exist once. The first one to wake becomes `Inst
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SingletonBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SingletonBehaviour()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instanceset" /><code>{"static Action<T> InstanceSet"}</code> | Called with the instance when it is set. |
+| <Link id="m-instanceset" /><code>{"static Action<T> InstanceSet"}</code> | <span className="api-desc">Called with the instance when it is set.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static T Instance { get; protected set; }"}</code> | The single instance, or null before one has woken. |
+| <Link id="m-instance" /><code>{"static T Instance { get; protected set; }"}</code> | <span className="api-desc">The single instance, or null before one has woken.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Registers this as `Instance`, or destroys this component if one already exists. Call the base if you override it. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Registers this as `Instance`, or destroys this component if one already exists. Call the base if you override it.</span> |

@@ -22,10 +22,10 @@ Base for stacking instructions assets that build their layout with a setup class
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsetup" /><code>{"override "}<Link to="/mod/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> | Creates a new `T` and sets it up for the given bounds and transform. |
+| <Link id="m-getsetup" /><code>{"override "}<Link to="/mod/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> | <span className="api-desc">Creates a new `T` and sets it up for the given bounds and transform.</span> |

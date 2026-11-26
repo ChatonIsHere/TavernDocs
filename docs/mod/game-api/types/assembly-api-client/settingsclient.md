@@ -20,12 +20,12 @@ High-level API client for named settings documents stored on the Alta API. Reach
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal SettingsClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `SettingsClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal SettingsClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `SettingsClient` from `clientManager`.</span> |
 
 </details>
 
@@ -33,5 +33,5 @@ High-level API client for named settings documents stored on the Alta API. Reach
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsettings" /><code>{"async Task<string> GetSettings(string name)"}</code> | Fetches the named settings and returns their content, or an empty string if none exist. |
-| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> | Stores the content under the given settings name. |
+| <Link id="m-getsettings" /><code>{"async Task<string> GetSettings(string name)"}</code> | <span className="api-desc">Fetches the named settings and returns their content, or an empty string if none exist.</span> |
+| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> | <span className="api-desc">Stores the content under the given settings name.</span> |

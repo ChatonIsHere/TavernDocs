@@ -23,10 +23,10 @@ Save data for a `CommunalStorage`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> | Creates a `CommunalStorageData` with default values. |
+| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> | <span className="api-desc">Creates a `CommunalStorageData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-uniqueidentifier" /><code><Link to="/mod/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{" uniqueIdentifier"}</code> | Identifier that ties a unique communal storage to its global stored quantity. |
+| <Link id="m-uniqueidentifier" /><code><Link to="/mod/game-api/types/alta-items/communalstorageuniqueidentifier">{"CommunalStorageUniqueIdentifier"}</Link>{" uniqueIdentifier"}</code> | <span className="api-desc">Identifier that ties a unique communal storage to its global stored quantity.</span> |

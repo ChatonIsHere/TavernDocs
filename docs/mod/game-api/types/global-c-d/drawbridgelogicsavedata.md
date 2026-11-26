@@ -23,12 +23,12 @@ Save data for a `DrawBridgeLogic`: its angle, up state and rotation time.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> | Creates a `DrawBridgeLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> | <span className="api-desc">Creates a `DrawBridgeLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> | Saved `angleToRotate`, including its current sign. |
-| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> | Saved `isUp`. |
-| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> | Saved `rotationTime`. |
+| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> | <span className="api-desc">Saved `angleToRotate`, including its current sign.</span> |
+| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> | <span className="api-desc">Saved `isUp`.</span> |
+| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> | <span className="api-desc">Saved `rotationTime`.</span> |

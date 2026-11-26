@@ -21,18 +21,18 @@ Editor tool that joins this object's meshes into combined meshes with `LodMeshJo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CombinedMeshSource()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CombinedMeshSource()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bones" /><code>{"private Transform[] bones"}</code> | Bones passed to the joiner. |
-| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> | Inspector button that runs `Process`. |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> | The joined meshes. |
+| <Link id="m-bones" /><code>{"private Transform[] bones"}</code> | <span className="api-desc">Bones passed to the joiner.</span> |
+| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> | <span className="api-desc">Inspector button that runs `Process`.</span> |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> | <span className="api-desc">The joined meshes.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Editor tool that joins this object's meshes into combined meshes with `LodMeshJo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> | Runs `LodMeshJoiner.Batch` on this object and stores the result in `meshes`. |
+| <Link id="m-process" /><code>{"void Process()"}</code> | <span className="api-desc">Runs `LodMeshJoiner.Batch` on this object and stores the result in `meshes`.</span> |

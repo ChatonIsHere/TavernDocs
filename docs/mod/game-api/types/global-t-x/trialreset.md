@@ -21,16 +21,16 @@ An `ITrialReset` that invokes a Unity event when its trial resets, and once when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TrialReset()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TrialReset()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reset" /><code>{"private UnityEvent reset"}</code> | Unity event fired on each trial reset. |
+| <Link id="m-reset" /><code>{"private UnityEvent reset"}</code> | <span className="api-desc">Unity event fired on each trial reset.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ An `ITrialReset` that invokes a Unity event when its trial resets, and once when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: invokes the reset event once at startup. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: invokes the reset event once at startup.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trialreset" /><code>{"private void ITrialReset.TrialReset()"}</code> | Invokes the `reset` event. Called by `TrialLogic.ResetState`. |
+| <Link id="m-trialreset" /><code>{"private void ITrialReset.TrialReset()"}</code> | <span className="api-desc">Invokes the `reset` event. Called by `TrialLogic.ResetState`.</span> |
 
 </details>

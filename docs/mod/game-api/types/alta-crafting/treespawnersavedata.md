@@ -23,10 +23,10 @@ Current save data (version 2) for a `TreeSpawner`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> | Creates a `TreeSpawnerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> | <span className="api-desc">Creates a `TreeSpawnerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> | Time left before the spawner grows a new tree. |
+| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> | <span className="api-desc">Time left before the spawner grows a new tree.</span> |

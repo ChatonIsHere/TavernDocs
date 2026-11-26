@@ -21,10 +21,14 @@ Serializable single value tied to a `BiomeAttribute`, used in biome generation s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AttributeSingleValue()"}</code> | Creates an `AttributeSingleValue` with default values. |
+| <Link id="m-ctor" /><code>{"AttributeSingleValue()"}</code> | <span className="api-desc">Creates an `AttributeSingleValue` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AttributeSingleValue`:
 
+<div className="api-used-in">
+
 [`CutoutPathModifier.attributes`](/mod/game-api/types/alta-world-generation/cutoutpathmodifier#m-attributes), [`SpawnerBase.attributes`](/mod/game-api/types/global-s/spawnerbase#m-attributes).
+
+</div>

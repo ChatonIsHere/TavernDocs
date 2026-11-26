@@ -20,10 +20,10 @@ Request body carrying a token for moving a WebSocket session, probably to anothe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> | Creates a `MigrateWebsocketRequest` with default values. |
+| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> | <span className="api-desc">Creates a `MigrateWebsocketRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> | The migration token. |
+| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> | <span className="api-desc">The migration token.</span> |

@@ -29,4 +29,8 @@ SAColliderBuilder (third party, editor) option for whether generated colliders g
 
 Members of other types that take, return or hold a `ColliderToChild`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.colliderToChild`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-collidertochild).
+
+</div>

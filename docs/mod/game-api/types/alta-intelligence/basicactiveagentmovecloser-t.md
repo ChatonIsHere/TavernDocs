@@ -22,18 +22,18 @@ Base for running actions that move a creature straight at its target without pat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> | Creates a `BasicActiveAgentMoveCloser` with default values. |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> | <span className="api-desc">Creates a `BasicActiveAgentMoveCloser` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getspeedmultiplier" /><code>{"protected Func<float> getSpeedMultiplier"}</code> | Returns the creature's current "speed" stat value, or 1. Set in `OnStart`. |
+| <Link id="m-getspeedmultiplier" /><code>{"protected Func<float> getSpeedMultiplier"}</code> | <span className="api-desc">Returns the creature's current "speed" stat value, or 1. Set in `OnStart`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Each tick: cancels without a target or past `MaxDistanceBeforeCancelSquared`, turns the body to the target, then calls the abstract overload with the offset to the stopping point. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Picks up the creature's "speed" stat as a speed multiplier, or 1 if it has none. |
-| <Link id="m-update-2" /><code>{"protected abstract void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | Each tick: cancels without a target or past `MaxDistanceBeforeCancelSquared`, turns the body to the target, then calls the abstract overload with the offset to the stopping point. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Each tick: cancels without a target or past `MaxDistanceBeforeCancelSquared`, turns the body to the target, then calls the abstract overload with the offset to the stopping point.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Picks up the creature's "speed" stat as a speed multiplier, or 1 if it has none.</span> |
+| <Link id="m-update-2" /><code>{"protected abstract void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | <span className="api-desc">Each tick: cancels without a target or past `MaxDistanceBeforeCancelSquared`, turns the body to the target, then calls the abstract overload with the offset to the stopping point.</span> |

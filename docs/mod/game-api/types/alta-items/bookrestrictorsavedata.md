@@ -23,10 +23,10 @@ Save data (version 1) for a `BookRestrictor`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BookRestrictorSaveData()"}</code> | Creates a `BookRestrictorSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"BookRestrictorSaveData()"}</code> | <span className="api-desc">Creates a `BookRestrictorSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collection" /><code><Link to="/mod/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> | The page collection the restrictor is set to. |
+| <Link id="m-collection" /><code><Link to="/mod/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> | <span className="api-desc">The page collection the restrictor is set to.</span> |

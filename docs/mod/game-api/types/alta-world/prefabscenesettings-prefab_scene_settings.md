@@ -22,4 +22,4 @@ Editor menu entry that creates a `PrefabSceneSettings` asset under Global Settin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Prefab_Scene_Settings()"}</code> | Creates a `PrefabSceneSettings.Prefab_Scene_Settings` with default values. |
+| <Link id="m-ctor" /><code>{"Prefab_Scene_Settings()"}</code> | <span className="api-desc">Creates a `PrefabSceneSettings.Prefab_Scene_Settings` with default values.</span> |

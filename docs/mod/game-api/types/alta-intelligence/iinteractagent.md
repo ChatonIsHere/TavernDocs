@@ -22,4 +22,4 @@ A creature that can grab things with an `Interactor`, so it can run `ActiveEat`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interactor" /><code><Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> | The creature's interactor, used to grab the item it eats. |
+| <Link id="m-interactor" /><code><Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" { get; }"}</code> | <span className="api-desc">The creature's interactor, used to grab the item it eats.</span> |

@@ -21,34 +21,34 @@ Scales a `TouchScreenButtonOld` along a curve while it is pressed, and snaps it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TouchScreenButtonGrower()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TouchScreenButtonGrower()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/touchscreenbuttonold">{"TouchScreenButtonOld"}</Link>{" button"}</code> | The button being scaled. |
-| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> | Scale multiplier over normalised time 0 to 1. |
-| <Link id="m-growduration" /><code>{"private float growDuration"}</code> | Seconds the grow takes. |
-| <Link id="m-growroutine" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" growRoutine"}</code> | The running grow coroutine, or null. |
-| <Link id="m-startingscale" /><code>{"private Vector3 startingScale"}</code> | The button's local scale at `Start`. |
+| <Link id="m-button" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/touchscreenbuttonold">{"TouchScreenButtonOld"}</Link>{" button"}</code> | <span className="api-desc">The button being scaled.</span> |
+| <Link id="m-growcurve" /><code>{"private AnimationCurve growCurve"}</code> | <span className="api-desc">Scale multiplier over normalised time 0 to 1.</span> |
+| <Link id="m-growduration" /><code>{"private float growDuration"}</code> | <span className="api-desc">Seconds the grow takes.</span> |
+| <Link id="m-growroutine" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" growRoutine"}</code> | <span className="api-desc">The running grow coroutine, or null.</span> |
+| <Link id="m-startingscale" /><code>{"private Vector3 startingScale"}</code> | <span className="api-desc">The button's local scale at `Start`.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-growbutton" /><code>{"private IEnumerator GrowButton() (iterator)"}</code> | Coroutine that scales the button by `growCurve` over `growDuration` seconds. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Resets the button's scale. |
-| <Link id="m-resetscale" /><code>{"private void ResetScale()"}</code> | Stops any grow in progress and restores the starting scale. Called on release. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks the button's press and release events and records its starting scale. |
-| <Link id="m-startgrow" /><code>{"private void StartGrow()"}</code> | Restarts the grow coroutine. Called on press. |
+| <Link id="m-growbutton" /><code>{"private IEnumerator GrowButton() (iterator)"}</code> | <span className="api-desc">Coroutine that scales the button by `growCurve` over `growDuration` seconds.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Resets the button's scale.</span> |
+| <Link id="m-resetscale" /><code>{"private void ResetScale()"}</code> | <span className="api-desc">Stops any grow in progress and restores the starting scale. Called on release.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Hooks the button's press and release events and records its starting scale.</span> |
+| <Link id="m-startgrow" /><code>{"private void StartGrow()"}</code> | <span className="api-desc">Restarts the grow coroutine. Called on press.</span> |
 
 </details>

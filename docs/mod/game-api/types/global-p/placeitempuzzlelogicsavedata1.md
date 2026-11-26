@@ -22,16 +22,16 @@ Old save format (version 1) for `PlaceItemPuzzleLogic`, migrated on load.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData1()"}</code> | Creates a `PlaceItemPuzzleLogicSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData1()"}</code> | <span className="api-desc">Creates a `PlaceItemPuzzleLogicSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-correctitemssaved" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> | Items that solved the puzzle in the old format. |
+| <Link id="m-correctitemssaved" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> | <span className="api-desc">Items that solved the puzzle in the old format.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current save data with one option holding the old correct items and output 1. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the current save data with one option holding the old correct items and output 1.</span> |

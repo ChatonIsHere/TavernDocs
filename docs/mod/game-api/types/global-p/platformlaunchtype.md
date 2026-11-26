@@ -30,4 +30,8 @@ How the game was launched on the platform: normal, invite, coordinated or deep l
 
 Members of other types that take, return or hold a `PlatformLaunchType`:
 
+<div className="api-used-in">
+
 [`PlatformLaunchDetails.LaunchType`](/mod/game-api/types/alta-menus/platformlaunchdetails#m-launchtype), [`IOculusWrapper.GetPlatformLaunchType`](/mod/game-api/types/game-other-namespaces/ioculuswrapper#m-getplatformlaunchtype).
+
+</div>

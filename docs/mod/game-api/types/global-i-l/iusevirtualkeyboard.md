@@ -21,21 +21,25 @@ Something that takes text from the in-game virtual keyboard, such as a text fiel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxcharacterslimit" /><code>{"int MaxCharactersLimit { get; }"}</code> | Most characters the field accepts. |
+| <Link id="m-maxcharacterslimit" /><code>{"int MaxCharactersLimit { get; }"}</code> | <span className="api-desc">Most characters the field accepts.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlekeyboardinput" /><code>{"void HandleKeyboardInput(string input)"}</code> | Called with the new input text. |
-| <Link id="m-handlekeyboardsubmit" /><code>{"void HandleKeyboardSubmit()"}</code> | Called when the keyboard's submit key is pressed. |
-| <Link id="m-isshowingsecret" /><code>{"bool IsShowingSecret()"}</code> | True if the text should be hidden, as for a password. |
-| <Link id="m-lostfocus" /><code>{"void LostFocus()"}</code> | Called when the keyboard stops targeting this field. |
-| <Link id="m-next" /><code>{"void Next()"}</code> | Moves to the next field, probably. |
-| <Link id="m-previous" /><code>{"void Previous()"}</code> | Moves to the previous field, probably. |
+| <Link id="m-handlekeyboardinput" /><code>{"void HandleKeyboardInput(string input)"}</code> | <span className="api-desc">Called with the new input text.</span> |
+| <Link id="m-handlekeyboardsubmit" /><code>{"void HandleKeyboardSubmit()"}</code> | <span className="api-desc">Called when the keyboard's submit key is pressed.</span> |
+| <Link id="m-isshowingsecret" /><code>{"bool IsShowingSecret()"}</code> | <span className="api-desc">True if the text should be hidden, as for a password.</span> |
+| <Link id="m-lostfocus" /><code>{"void LostFocus()"}</code> | <span className="api-desc">Called when the keyboard stops targeting this field.</span> |
+| <Link id="m-next" /><code>{"void Next()"}</code> | <span className="api-desc">Moves to the next field, probably.</span> |
+| <Link id="m-previous" /><code>{"void Previous()"}</code> | <span className="api-desc">Moves to the previous field, probably.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IUseVirtualKeyboard`:
 
+<div className="api-used-in">
+
 [`AssistedSpawnCommandAction.baseUser`](/mod/game-api/types/alta-menus/assistedspawncommandaction#m-baseuser), [`DevToolsBoard.SetRuntimeConsoleActiveState`](/mod/game-api/types/alta-player/devtoolsboard#m-setruntimeconsoleactivestate), [`RuntimeConsole.KeyboardUser`](/mod/game-api/types/global-q-r/runtimeconsole#m-keyboarduser), [`TouchScreenKeyboard.CurrentUser`](/mod/game-api/types/global-t-x/touchscreenkeyboard#m-currentuser), [`TouchScreenKeyboard.Get`](/mod/game-api/types/global-t-x/touchscreenkeyboard#m-get-2), [`TouchScreenKeyboard.Hide`](/mod/game-api/types/global-t-x/touchscreenkeyboard#m-hide), [`TouchScreenKeyboard.SetupNewUser`](/mod/game-api/types/global-t-x/touchscreenkeyboard#m-setupnewuser).
+
+</div>

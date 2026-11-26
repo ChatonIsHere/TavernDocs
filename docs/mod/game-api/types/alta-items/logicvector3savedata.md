@@ -23,23 +23,27 @@ Save data for `LogicVector3Sender`: the shared logic data and the current vector
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3SaveData()"}</code> | Creates a `LogicVector3SaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicVector3SaveData()"}</code> | <span className="api-desc">Creates a `LogicVector3SaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | Backing field for `LogicSaveData`. |
-| <Link id="m-value" /><code>{"Vector3 value"}</code> | The vector being sent. |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">Backing field for `LogicSaveData`.</span> |
+| <Link id="m-value" /><code>{"Vector3 value"}</code> | <span className="api-desc">The vector being sent.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | The shared logic data. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The shared logic data.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogicVector3SaveData`:
 
+<div className="api-used-in">
+
 [`LogicVector3ReceiverData.Data`](/mod/game-api/types/alta-items/logicvector3receiverdata#m-data).
+
+</div>

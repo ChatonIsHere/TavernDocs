@@ -21,19 +21,23 @@ One candidate tangent line from a pulley circle to the next, worked out by `Pull
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> | Creates a `PulleyBeltHelper.BeltOutput` from `tangent`, `isAExternal`, `isBExternal` and `isCExternal`. |
+| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> | <span className="api-desc">Creates a `PulleyBeltHelper.BeltOutput` from `tangent`, `isAExternal`, `isBExternal` and `isCExternal`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isaexternal" /><code>{"bool isAExternal"}</code> | Whether the belt wraps the outside of this circle (A) on this tangent. |
-| <Link id="m-isbexternal" /><code>{"bool isBExternal"}</code> | Which side of the next circle (B) the tangent meets. |
-| <Link id="m-iscexternal" /><code>{"bool isCExternal"}</code> | Which side of the circle after that (C) this option was checked against. |
-| <Link id="m-tangent" /><code>{"Vector3 tangent"}</code> | The tangent line offset from circle A's centre toward circle B. |
+| <Link id="m-isaexternal" /><code>{"bool isAExternal"}</code> | <span className="api-desc">Whether the belt wraps the outside of this circle (A) on this tangent.</span> |
+| <Link id="m-isbexternal" /><code>{"bool isBExternal"}</code> | <span className="api-desc">Which side of the next circle (B) the tangent meets.</span> |
+| <Link id="m-iscexternal" /><code>{"bool isCExternal"}</code> | <span className="api-desc">Which side of the circle after that (C) this option was checked against.</span> |
+| <Link id="m-tangent" /><code>{"Vector3 tangent"}</code> | <span className="api-desc">The tangent line offset from circle A's centre toward circle B.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BeltOutput`:
 
+<div className="api-used-in">
+
 [`PulleyBeltHelper.outputs`](/mod/game-api/types/global-p/pulleybelthelper#m-outputs).
+
+</div>

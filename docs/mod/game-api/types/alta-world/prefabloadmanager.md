@@ -18,16 +18,16 @@ Reference counts prefabs loaded through chunk prefab pointers: the prefab is ins
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-asyncrequest" /><code>{"private static ResourceRequest asyncRequest"}</code> | Unused resource request field. |
-| <Link id="m-instantiatedfolder" /><code>{"private static Transform instantiatedFolder"}</code> | Backing field for `InstantiatedFolder`. |
-| <Link id="m-loadedpointerprefabs" /><code>{"private static Dictionary<uint, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{">> loadedPointerPrefabs"}</code> | The chunks using each pointer, by pointer id. |
-| <Link id="m-pointersbyid" /><code>{"private static Dictionary<uint, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{"> pointersByID"}</code> | Pointers by id, for the id overloads. Nothing in this class fills it, so those overloads log an error. |
-| <Link id="m-prefabreferencesinscene" /><code>{"private static Dictionary<uint, GameObject> prefabReferencesInScene"}</code> | The live instance for each pointer id, or null. |
+| <Link id="m-asyncrequest" /><code>{"private static ResourceRequest asyncRequest"}</code> | <span className="api-desc">Unused resource request field.</span> |
+| <Link id="m-instantiatedfolder" /><code>{"private static Transform instantiatedFolder"}</code> | <span className="api-desc">Backing field for `InstantiatedFolder`.</span> |
+| <Link id="m-loadedpointerprefabs" /><code>{"private static Dictionary<uint, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{">> loadedPointerPrefabs"}</code> | <span className="api-desc">The chunks using each pointer, by pointer id.</span> |
+| <Link id="m-pointersbyid" /><code>{"private static Dictionary<uint, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{"> pointersByID"}</code> | <span className="api-desc">Pointers by id, for the id overloads. Nothing in this class fills it, so those overloads log an error.</span> |
+| <Link id="m-prefabreferencesinscene" /><code>{"private static Dictionary<uint, GameObject> prefabReferencesInScene"}</code> | <span className="api-desc">The live instance for each pointer id, or null.</span> |
 
 </details>
 
@@ -35,22 +35,22 @@ Reference counts prefabs loaded through chunk prefab pointers: the prefab is ins
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instantiatedfolder-2" /><code>{"static Transform InstantiatedFolder { get; }"}</code> | The `Static Objects Folder` GameObject loaded pointer prefabs are put under. Made on first use. |
+| <Link id="m-instantiatedfolder-2" /><code>{"static Transform InstantiatedFolder { get; }"}</code> | <span className="api-desc">The `Static Objects Folder` GameObject loaded pointer prefabs are put under. Made on first use.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadpointer" /><code>{"static GameObject LoadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, uint pointerID)"}</code> | Marks the chunk as using the pointer and returns the shared instance, creating it if needed. |
-| <Link id="m-loadpointer-2" /><code>{"static GameObject LoadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{" pointer)"}</code> | Marks the chunk as using the pointer and returns the shared instance, creating it if needed. |
-| <Link id="m-unloadpointer" /><code>{"static bool UnloadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, uint pointerID)"}</code> | Removes the chunk's use of the pointer and destroys the instance when no chunk uses it. True if destroyed. |
-| <Link id="m-unloadpointer-2" /><code>{"static bool UnloadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{" pointer)"}</code> | Removes the chunk's use of the pointer and destroys the instance when no chunk uses it. True if destroyed. |
+| <Link id="m-loadpointer" /><code>{"static GameObject LoadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, uint pointerID)"}</code> | <span className="api-desc">Marks the chunk as using the pointer and returns the shared instance, creating it if needed.</span> |
+| <Link id="m-loadpointer-2" /><code>{"static GameObject LoadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{" pointer)"}</code> | <span className="api-desc">Marks the chunk as using the pointer and returns the shared instance, creating it if needed.</span> |
+| <Link id="m-unloadpointer" /><code>{"static bool UnloadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, uint pointerID)"}</code> | <span className="api-desc">Removes the chunk's use of the pointer and destroys the instance when no chunk uses it. True if destroyed.</span> |
+| <Link id="m-unloadpointer-2" /><code>{"static bool UnloadPointer("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/chunkprefabpointer">{"ChunkPrefabPointer"}</Link>{" pointer)"}</code> | <span className="api-desc">Removes the chunk's use of the pointer and destroys the instance when no chunk uses it. True if destroyed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearpointers" /><code>{"private static void ClearPointers()"}</code> | Forgets all loaded pointers and their instances on game reload. |
+| <Link id="m-clearpointers" /><code>{"private static void ClearPointers()"}</code> | <span className="api-desc">Forgets all loaded pointers and their instances on game reload.</span> |
 
 </details>

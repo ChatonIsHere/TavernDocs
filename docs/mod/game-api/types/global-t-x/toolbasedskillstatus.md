@@ -29,4 +29,8 @@ Stage of a tool-based skill use: cancelled, charging started, charged or consume
 
 Members of other types that take, return or hold a `ToolBasedSkillStatus`:
 
+<div className="api-used-in">
+
 [`BowDrawSkill.GetTransformToCallAt`](/mod/game-api/types/alta-player/bowdrawskill#m-gettransformtocallat), [`BowMultiArrowShot.HandleSkillStatus`](/mod/game-api/types/alta-player/bowmultiarrowshot#m-handleskillstatus), [`ForgingHeartCall.EffectsRequested`](/mod/game-api/types/global-e-h/forgingheartcall#m-effectsrequested), [`Gatherer.EffectsRequested`](/mod/game-api/types/global-e-h/gatherer#m-effectsrequested), [`MiningEcho.EffectsRequested`](/mod/game-api/types/global-m-o/miningecho#m-effectsrequested), [`PickupBasedSkill.EffectsRequested`](/mod/game-api/types/global-p/pickupbasedskill#m-effectsrequested), [`PickupBasedSkill.GetTransformToCallAt`](/mod/game-api/types/global-p/pickupbasedskill#m-gettransformtocallat), [`PickupBasedSkill.status`](/mod/game-api/types/global-p/pickupbasedskill#m-status), [`PickupBasedSkillModifier.HandleSkillStatus`](/mod/game-api/types/global-p/pickupbasedskillmodifier#m-handleskillstatus), [`PickupBasedSkillModifier.status`](/mod/game-api/types/global-p/pickupbasedskillmodifier#m-status), [`SkillInputStructure.PlaySoundAt`](/mod/game-api/types/global-s/skillinputstructure#m-playsoundat), [`TargetBasedSkill.EffectsRequested`](/mod/game-api/types/global-t-x/targetbasedskill#m-effectsrequested).
+
+</div>

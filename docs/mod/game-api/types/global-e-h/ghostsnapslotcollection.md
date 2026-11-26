@@ -22,16 +22,16 @@ Synced, saved collection of `GhostSnapSlot` children. On server spawn it snaps c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GhostSnapSlotCollection()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GhostSnapSlotCollection()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isusingsyncmessage" /><code>{"protected override bool IsUsingSyncMessage { get; }"}</code> | Same as the base value. |
+| <Link id="m-isusingsyncmessage" /><code>{"protected override bool IsUsingSyncMessage { get; }"}</code> | <span className="api-desc">Same as the base value.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: snaps each child `GhostSnapObject` into its parent slot; any that fail are detached and saved on their own. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: snaps each child `GhostSnapObject` into its parent slot; any that fail are detached and saved on their own.</span> |

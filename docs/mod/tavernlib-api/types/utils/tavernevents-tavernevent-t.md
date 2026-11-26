@@ -21,16 +21,16 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Events
 
-<details>
+<details className="api-private">
 <summary>1 private and internal event</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> | The subscribed handlers, called by `Invoke`. |
+| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> | <span className="api-desc">The subscribed handlers, called by `Invoke`.</span> |
 
 </details>
 
@@ -38,15 +38,15 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subscribe" /><code>{"void Subscribe(Action<T> handler)"}</code> | Adds a handler. |
-| <Link id="m-unsubscribe" /><code>{"void Unsubscribe(Action<T> handler)"}</code> | Removes a handler. Pass the same delegate you subscribed, not a new lambda. |
+| <Link id="m-subscribe" /><code>{"void Subscribe(Action<T> handler)"}</code> | <span className="api-desc">Adds a handler.</span> |
+| <Link id="m-unsubscribe" /><code>{"void Unsubscribe(Action<T> handler)"}</code> | <span className="api-desc">Removes a handler. Pass the same delegate you subscribed, not a new lambda.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"internal void Invoke(T arg)"}</code> | Internal: raises the event, calling every handler with `arg`. Nothing catches a handler's exception. |
+| <Link id="m-invoke" /><code>{"internal void Invoke(T arg)"}</code> | <span className="api-desc">Internal: raises the event, calling every handler with `arg`. Nothing catches a handler's exception.</span> |
 
 </details>
 
@@ -54,4 +54,8 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 
 Members of other types that take, return or hold a `TavernEvent&lt;T>`:
 
+<div className="api-used-in">
+
 [`Roles.RolesChanged`](/mod/tavernlib-api/types/moddingapi/roles#m-roleschanged), [`TavernEvents.SocketCreated`](/mod/tavernlib-api/types/utils/tavernevents#m-socketcreated).
+
+</div>

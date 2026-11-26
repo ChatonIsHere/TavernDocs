@@ -22,17 +22,17 @@ Field attribute that fills the field with a component from the same object when 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> | Creates a `GetComponentAttribute` from `type`. |
-| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> | Creates a `GetComponentAttribute` from `type`. |
+| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentAttribute` from `type`.</span> |
+| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> | <span className="api-desc">Creates a `GetComponentAttribute` from `type`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -40,12 +40,12 @@ Field attribute that fills the field with a component from the same object when 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> | Component type to look for. Defaults to the field's type. |
-| <Link id="m-warnonnull" /><code>{"bool WarnOnNull { get; set; }"}</code> | Log an error when no component is found. |
+| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> | <span className="api-desc">Component type to look for. Defaults to the field's type.</span> |
+| <Link id="m-warnonnull" /><code>{"bool WarnOnNull { get; set; }"}</code> | <span className="api-desc">Log an error when no component is found.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponent" /><code>{"virtual Component GetComponent(Transform transform, Type type)"}</code> | Finds the component. Overridden by subclasses to search children, parents or the prefab root. |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Sets the field to the found component; returns true if it changed. Logs an error if none found and `WarnOnNull` is set. |
+| <Link id="m-getcomponent" /><code>{"virtual Component GetComponent(Transform transform, Type type)"}</code> | <span className="api-desc">Finds the component. Overridden by subclasses to search children, parents or the prefab root.</span> |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Sets the field to the found component; returns true if it changed. Logs an error if none found and `WarnOnNull` is set.</span> |

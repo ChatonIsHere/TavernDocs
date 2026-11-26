@@ -23,11 +23,11 @@ Save data for `GlobalLogicManager`: every logic value it holds and the next free
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> | Creates a `LogicManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> | <span className="api-desc">Creates a `LogicManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nextid" /><code>{"uint nextId"}</code> | The identifier the manager hands to the next new logic value. |
-| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-items/logicmanagerset">{"LogicManagerSet"}</Link>{" set"}</code> | The manager's stored logic values, which senders and receivers link to by identifier. |
+| <Link id="m-nextid" /><code>{"uint nextId"}</code> | <span className="api-desc">The identifier the manager hands to the next new logic value.</span> |
+| <Link id="m-set" /><code><Link to="/mod/game-api/types/alta-items/logicmanagerset">{"LogicManagerSet"}</Link>{" set"}</code> | <span className="api-desc">The manager's stored logic values, which senders and receivers link to by identifier.</span> |

@@ -22,10 +22,10 @@ Postfixes the `ServerHandler.PlayerLimit` getter so the limit comes from `server
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setplayerlimit" /><code>{"static void SetPlayerLimit(ref int __result)"}</code> | Returns the last-read server settings' `PlayerLimit`, or `DefaultMaxPlayers` if none were read. Needs `TavernManager` registered. |
+| <Link id="m-setplayerlimit" /><code>{"static void SetPlayerLimit(ref int __result)"}</code> | <span className="api-desc">Returns the last-read server settings' `PlayerLimit`, or `DefaultMaxPlayers` if none were read. Needs `TavernManager` registered.</span> |

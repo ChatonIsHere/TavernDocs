@@ -23,12 +23,12 @@ Save data for a `Fuse`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> | Creates a `FuseSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> | <span className="api-desc">Creates a `FuseSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentfuseamount" /><code>{"float currentFuseAmount"}</code> | How much fuse is left. |
-| <Link id="m-isfinished" /><code>{"bool isFinished"}</code> | Whether the fuse has burned out. |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> | Whether the fuse is burning. |
+| <Link id="m-currentfuseamount" /><code>{"float currentFuseAmount"}</code> | <span className="api-desc">How much fuse is left.</span> |
+| <Link id="m-isfinished" /><code>{"bool isFinished"}</code> | <span className="api-desc">Whether the fuse has burned out.</span> |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> | <span className="api-desc">Whether the fuse is burning.</span> |

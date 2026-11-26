@@ -18,23 +18,23 @@ Wraps a group so its info can be edited through the Alta web API.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupInfoUpdate("}<Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupInfoUpdate` from `group` and `api`. |
+| <Link id="m-ctor" /><code>{"internal GroupInfoUpdate("}<Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `GroupInfoUpdate` from `group` and `api`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | Low level API client used for the call. |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | <span className="api-desc">Low level API client used for the call.</span> |
 
 </details>
 
@@ -42,16 +42,20 @@ Wraps a group so its info can be edited through the Alta web API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group" /><code><Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> | The group being edited. |
+| <Link id="m-group" /><code><Link to="/mod/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> | <span className="api-desc">The group being edited.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"Task Update("}<Link to="/mod/game-api/types/assembly-api-models/editgrouprequest">{"EditGroupRequest"}</Link>{" request)"}</code> | Sends an edit group request for this group. |
+| <Link id="m-update" /><code>{"Task Update("}<Link to="/mod/game-api/types/assembly-api-models/editgrouprequest">{"EditGroupRequest"}</Link>{" request)"}</code> | <span className="api-desc">Sends an edit group request for this group.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GroupInfoUpdate`:
 
+<div className="api-used-in">
+
 [`GroupInfoManager.Info`](/mod/game-api/types/assembly-api-client/groupinfomanager#m-info).
+
+</div>

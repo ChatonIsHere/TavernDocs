@@ -21,30 +21,30 @@ Editor tool that places empty child objects on mesh surfaces at given texture co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenerateUVPoints()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GenerateUVPoints()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> | Inspector button that runs `Generate`. |
-| <Link id="m-isyflipped" /><code>{"private bool isYFlipped"}</code> | Flips the V coordinate. |
-| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> | Meshes to place points on. |
-| <Link id="m-texturesize" /><code>{"private Vector2 textureSize"}</code> | Texture size in pixels; UV points are divided by it. |
-| <Link id="m-uvpoints" /><code>{"private Vector2[] uvPoints"}</code> | Points in texture pixels. |
+| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> | <span className="api-desc">Inspector button that runs `Generate`.</span> |
+| <Link id="m-isyflipped" /><code>{"private bool isYFlipped"}</code> | <span className="api-desc">Flips the V coordinate.</span> |
+| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> | <span className="api-desc">Meshes to place points on.</span> |
+| <Link id="m-texturesize" /><code>{"private Vector2 textureSize"}</code> | <span className="api-desc">Texture size in pixels; UV points are divided by it.</span> |
+| <Link id="m-uvpoints" /><code>{"private Vector2[] uvPoints"}</code> | <span className="api-desc">Points in texture pixels.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generate" /><code>{"private void Generate()"}</code> | For each UV point, finds the triangles that contain it on each mesh and creates a child object at that spot. |
+| <Link id="m-generate" /><code>{"private void Generate()"}</code> | <span className="api-desc">For each UV point, finds the triangles that contain it on each mesh and creates a child object at that spot.</span> |
 
 </details>

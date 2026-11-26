@@ -21,16 +21,16 @@ Client: plays a pooled effect where the object was when it is destroyed. Skipped
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnOnDestroyed()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpawnOnDestroyed()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pooldefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" poolDefinition"}</code> | The pooled effect to spawn. |
+| <Link id="m-pooldefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" poolDefinition"}</code> | <span className="api-desc">The pooled effect to spawn.</span> |
 
 </details>
 
@@ -38,14 +38,14 @@ Client: plays a pooled effect where the object was when it is destroyed. Skipped
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"virtual void Awake()"}</code> | Hooks app quit so no effect spawns while shutting down. |
+| <Link id="m-awake" /><code>{"virtual void Awake()"}</code> | <span className="api-desc">Hooks app quit so no effect spawns while shutting down.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Gets the pooled effect at this position and rotation, unless headless or quitting. |
-| <Link id="m-quit" /><code>{"private void Quit()"}</code> | Clears the pool definition so `OnDestroy` does nothing. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Gets the pooled effect at this position and rotation, unless headless or quitting.</span> |
+| <Link id="m-quit" /><code>{"private void Quit()"}</code> | <span className="api-desc">Clears the pool definition so `OnDestroy` does nothing.</span> |
 
 </details>

@@ -21,10 +21,14 @@ Handles packets the network transport receives.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-process" /><code>{"void Process("}<Link to="/mod/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> | Handles one packet from a connection on the given socket and channel. |
+| <Link id="m-process" /><code>{"void Process("}<Link to="/mod/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> | <span className="api-desc">Handles one packet from a connection on the given socket and channel.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPacketProcessor`:
 
+<div className="api-used-in">
+
 [`ITransportSocket.ProcessIncoming`](/mod/game-api/types/assembly-other/itransportsocket#m-processincoming), [`KcpClientWrapper.ProcessIncoming`](/mod/game-api/types/assembly-other/kcpclientwrapper#m-processincoming), [`KcpClientWrapper.processor`](/mod/game-api/types/assembly-other/kcpclientwrapper#m-processor), [`KcpServerWrapper.ProcessIncoming`](/mod/game-api/types/assembly-other/kcpserverwrapper#m-processincoming), [`KcpServerWrapper.processor`](/mod/game-api/types/assembly-other/kcpserverwrapper#m-processor).
+
+</div>

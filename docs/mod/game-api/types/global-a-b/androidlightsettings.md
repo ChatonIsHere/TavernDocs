@@ -23,17 +23,17 @@ Global settings asset with a mesh and material used to fake point lights on Andr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AndroidLightSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AndroidLightSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lightmaterial" /><code>{"private Material lightMaterial"}</code> | Material put on the fake point light renderer. |
-| <Link id="m-pointlightmesh" /><code>{"private Mesh pointLightMesh"}</code> | Mesh used for the fake point light. |
+| <Link id="m-lightmaterial" /><code>{"private Material lightMaterial"}</code> | <span className="api-desc">Material put on the fake point light renderer.</span> |
+| <Link id="m-pointlightmesh" /><code>{"private Mesh pointLightMesh"}</code> | <span className="api-desc">Mesh used for the fake point light.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Global settings asset with a mesh and material used to fake point lights on Andr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializepointlight" /><code>{"static MeshRenderer InitializePointLight(GameObject target)"}</code> | Adds a `MeshFilter` and `MeshRenderer` with the configured mesh and material to the target and returns the renderer. |
+| <Link id="m-initializepointlight" /><code>{"static MeshRenderer InitializePointLight(GameObject target)"}</code> | <span className="api-desc">Adds a `MeshFilter` and `MeshRenderer` with the configured mesh and material to the target and returns the renderer.</span> |

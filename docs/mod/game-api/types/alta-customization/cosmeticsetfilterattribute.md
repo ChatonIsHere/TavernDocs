@@ -21,4 +21,4 @@ Inspector attribute for a field that picks a cosmetic set. Editor use only, for 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticSetFilterAttribute()"}</code> | Creates a `CosmeticSetFilterAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"CosmeticSetFilterAttribute()"}</code> | <span className="api-desc">Creates a `CosmeticSetFilterAttribute` with default values.</span> |

@@ -23,20 +23,20 @@ Logic receiver that outputs true while a float input is strictly between a minim
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatRangeReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicFloatRangeReceiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> | Last output value. |
-| <Link id="m-isactivewithinrange" /><code>{"private bool isActiveWithinRange"}</code> | True to output true inside the range, false to output true outside it. |
-| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> | Upper bound (exclusive). |
-| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> | Lower bound (exclusive). |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | Unity event fired with the new output. |
+| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> | <span className="api-desc">Last output value.</span> |
+| <Link id="m-isactivewithinrange" /><code>{"private bool isActiveWithinRange"}</code> | <span className="api-desc">True to output true inside the range, false to output true outside it.</span> |
+| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> | <span className="api-desc">Upper bound (exclusive).</span> |
+| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> | <span className="api-desc">Lower bound (exclusive).</span> |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueUpdated"}</code> | <span className="api-desc">Unity event fired with the new output.</span> |
 
 </details>
 
@@ -44,14 +44,14 @@ Logic receiver that outputs true while a float input is strictly between a minim
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: works out the starting value and fires `onValueUpdated` with it. |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | When the input changes, fires `onValueUpdated` if the result changed. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: works out the starting value and fires `onValueUpdated` with it.</span> |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | <span className="api-desc">When the input changes, fires `onValueUpdated` if the result changed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> | Checks whether the input is strictly between the bounds, inverted if `isActiveWithinRange` is off. |
+| <Link id="m-getvalue" /><code>{"private bool GetValue()"}</code> | <span className="api-desc">Checks whether the input is strictly between the bounds, inverted if `isActiveWithinRange` is off.</span> |
 
 </details>

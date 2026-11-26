@@ -50,4 +50,8 @@ Category of a cosmetic shop item, from body types and skin colours to clothing, 
 
 Members of other types that take, return or hold a `ItemCategory`:
 
+<div className="api-used-in">
+
 [`ShopItemDetailed.Category`](/mod/game-api/types/assembly-api-models/shopitemdetailed#m-category), [`CustomizationCategory.type`](/mod/game-api/types/alta-customization/customizationcategory#m-type), [`CustomizationCategory.Type`](/mod/game-api/types/alta-customization/customizationcategory#m-type-2), [`CustomizationWrapperSerializer.GetDefaults`](/mod/game-api/types/alta-customization/customizationwrapperserializer#m-getdefaults), [`CustomizationWrapperSerializer.GetMissingDefaults`](/mod/game-api/types/alta-customization/customizationwrapperserializer#m-getmissingdefaults), [`ICustomizationCategory.Type`](/mod/game-api/types/alta-customization/icustomizationcategory#m-type).
+
+</div>

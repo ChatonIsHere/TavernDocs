@@ -21,10 +21,10 @@ Property attribute that marks a serialized field as holding an object that must 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> | Creates a `SerializedInterfaceAttribute` from `interfaceType`. |
+| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> | <span className="api-desc">Creates a `SerializedInterfaceAttribute` from `interfaceType`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> | The required interface. Stays null if the type passed in isn't an interface. |
+| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> | <span className="api-desc">The required interface. Stays null if the type passed in isn't an interface.</span> |

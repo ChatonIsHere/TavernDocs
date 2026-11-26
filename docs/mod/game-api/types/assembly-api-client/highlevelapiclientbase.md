@@ -19,22 +19,22 @@ Internal base for the high level web API client parts; each holds a reference to
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal HighLevelApiClientBase("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `HighLevelApiClientBase` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal HighLevelApiClientBase("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `HighLevelApiClientBase` from `clientManager`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lowlevel" /><code>{"internal "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel"}</code> | The client manager that owns this client; subclasses send requests through its `ApiClient`. |
+| <Link id="m-lowlevel" /><code>{"internal "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" lowLevel"}</code> | <span className="api-desc">The client manager that owns this client; subclasses send requests through its `ApiClient`.</span> |
 
 </details>

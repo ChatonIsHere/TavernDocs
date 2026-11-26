@@ -21,17 +21,17 @@ Atmosphere plugin for indoors that adds a fixed amount to the day time ambience 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IndoorAmbienceBoost()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"IndoorAmbienceBoost()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ambienceboost" /><code>{"private Color ambienceBoost"}</code> | Colour added to the ambience. Default 0.1 grey. |
-| <Link id="m-daytimemanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/daytimemanager">{"DayTimeManager"}</Link>{" dayTimeManager"}</code> | Source of the normal ambience colour. |
+| <Link id="m-ambienceboost" /><code>{"private Color ambienceBoost"}</code> | <span className="api-desc">Colour added to the ambience. Default 0.1 grey.</span> |
+| <Link id="m-daytimemanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/daytimemanager">{"DayTimeManager"}</Link>{" dayTimeManager"}</code> | <span className="api-desc">Source of the normal ambience colour.</span> |
 
 </details>
 
@@ -39,12 +39,12 @@ Atmosphere plugin for indoors that adds a fixed amount to the day time ambience 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | The day time manager's ambience plus `ambienceBoost` (alpha unchanged). |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The current fog colour, unchanged. |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The current fog density, unchanged. |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | <span className="api-desc">The day time manager's ambience plus `ambienceBoost` (alpha unchanged).</span> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | <span className="api-desc">The current fog colour, unchanged.</span> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | <span className="api-desc">The current fog density, unchanged.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | Does nothing. |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | <span className="api-desc">Does nothing.</span> |

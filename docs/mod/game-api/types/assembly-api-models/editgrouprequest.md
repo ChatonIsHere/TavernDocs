@@ -20,24 +20,24 @@ Body for updating a group's details on the Alta web API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditGroupRequest()"}</code> | Creates an `EditGroupRequest` with default values. |
+| <Link id="m-ctor" /><code>{"EditGroupRequest()"}</code> | <span className="api-desc">Creates an `EditGroupRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | New group description. |
-| <Link id="m-ischangingservers" /><code>{"bool IsChangingServers { get; set; }"}</code> | Sent as `changing_servers`, true by default. Probably whether the change also applies to the group's servers. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | New group name. |
-| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> | New list of group tags. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Type { get; set; }"}</code> | New group type. |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | <span className="api-desc">New group description.</span> |
+| <Link id="m-ischangingservers" /><code>{"bool IsChangingServers { get; set; }"}</code> | <span className="api-desc">Sent as `changing_servers`, true by default. Probably whether the change also applies to the group's servers.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">New group name.</span> |
+| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> | <span className="api-desc">New list of group tags.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Type { get; set; }"}</code> | <span className="api-desc">New group type.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-visibility" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Visibility { set; }"}</code> | Private setter for an older `visibility` JSON field. It sets `Type`. |
+| <Link id="m-visibility" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Visibility { set; }"}</code> | <span className="api-desc">Private setter for an older `visibility` JSON field. It sets `Type`.</span> |
 
 </details>
 
@@ -45,4 +45,8 @@ Body for updating a group's details on the Alta web API.
 
 Members of other types that take, return or hold a `EditGroupRequest`:
 
+<div className="api-used-in">
+
 [`GroupInfoUpdate.Update`](/mod/game-api/types/assembly-api-client/groupinfoupdate#m-update), [`LowLevelApiClient.UpdateGroupInfo`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-updategroupinfo).
+
+</div>

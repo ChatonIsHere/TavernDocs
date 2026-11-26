@@ -21,5 +21,5 @@ A component on an impact tool or crafting part that wants to know when the tool 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncollided" /><code>{"void OnCollided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Called when the tool's collider touches something, with whether it counts as a hit. |
-| <Link id="m-onhit" /><code>{"void OnHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Called when the tool lands a hit. |
+| <Link id="m-oncollided" /><code>{"void OnCollided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">Called when the tool's collider touches something, with whether it counts as a hit.</span> |
+| <Link id="m-onhit" /><code>{"void OnHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">Called when the tool lands a hit.</span> |

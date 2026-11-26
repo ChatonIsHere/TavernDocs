@@ -27,4 +27,8 @@ Whether a chunk's content is loaded or unloaded. Used for `ChunkContentManager.D
 
 Members of other types that take, return or hold a `ContentState`:
 
+<div className="api-used-in">
+
 [`ChunkContentManager.CurrentProcess`](/mod/game-api/types/alta-world/chunkcontentmanager#m-currentprocess), [`ChunkContentManager.DesiredState`](/mod/game-api/types/alta-world/chunkcontentmanager#m-desiredstate).
+
+</div>

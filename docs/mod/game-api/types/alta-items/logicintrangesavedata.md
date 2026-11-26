@@ -23,18 +23,18 @@ Save data for `LogicIntRangeReceiver`: the range settings and the linked int sen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> | Creates a `LogicIntRangeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> | <span className="api-desc">Creates a `LogicIntRangeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> | If true the output is on while the value is inside the range; if false, while it is outside. |
-| <Link id="m-maximumvalueinclusive" /><code>{"int maximumValueInclusive"}</code> | Upper end of the range, inclusive. |
-| <Link id="m-minimumvalueinclusive" /><code>{"int minimumValueInclusive"}</code> | Lower end of the range, inclusive. |
+| <Link id="m-isactivewithinrange" /><code>{"bool isActiveWithinRange"}</code> | <span className="api-desc">If true the output is on while the value is inside the range; if false, while it is outside.</span> |
+| <Link id="m-maximumvalueinclusive" /><code>{"int maximumValueInclusive"}</code> | <span className="api-desc">Upper end of the range, inclusive.</span> |
+| <Link id="m-minimumvalueinclusive" /><code>{"int minimumValueInclusive"}</code> | <span className="api-desc">Lower end of the range, inclusive.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | The linked int sender's logic data, used to relink the input on load. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked int sender's logic data, used to relink the input on load.</span> |

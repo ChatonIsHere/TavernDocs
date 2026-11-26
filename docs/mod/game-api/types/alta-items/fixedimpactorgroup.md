@@ -22,11 +22,11 @@ A group of `FixedImpactor` components that can be charged or reset together.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FixedImpactorGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FixedImpactorGroup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-charge" /><code>{"void Charge()"}</code> | Calls `Charge` on every impactor in the group. |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> | Calls `Reset` on every impactor in the group. |
+| <Link id="m-charge" /><code>{"void Charge()"}</code> | <span className="api-desc">Calls `Charge` on every impactor in the group.</span> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | <span className="api-desc">Calls `Reset` on every impactor in the group.</span> |

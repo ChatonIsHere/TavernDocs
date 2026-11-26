@@ -21,4 +21,4 @@ Something with a display name for debug GUI. Implemented by `AnimatedValue<T>`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-guiname" /><code>{"string GUIName { get; }"}</code> | Name to show in debug GUI; for animated values it is the name plus the current value. |
+| <Link id="m-guiname" /><code>{"string GUIName { get; }"}</code> | <span className="api-desc">Name to show in debug GUI; for animated values it is the name plus the current value.</span> |

@@ -21,18 +21,22 @@ One projectile in a `SeedSpray` shot: the pooled object, its impact tool, and wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Seed()"}</code> | Creates a `SeedSpray.Seed` with default values. |
+| <Link id="m-ctor" /><code>{"Seed()"}</code> | <span className="api-desc">Creates a `SeedSpray.Seed` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isalive" /><code>{"bool isAlive"}</code> | True from when the seed is fired until it's destroyed by the cutoff curve or cleanup. |
-| <Link id="m-pooledobject" /><code><Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject"}</code> | The pooled seed object that was fired. |
-| <Link id="m-tool" /><code><Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool"}</code> | The seed's impact tool, with its `Entity` set to the spraying entity. |
+| <Link id="m-isalive" /><code>{"bool isAlive"}</code> | <span className="api-desc">True from when the seed is fired until it's destroyed by the cutoff curve or cleanup.</span> |
+| <Link id="m-pooledobject" /><code><Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject"}</code> | <span className="api-desc">The pooled seed object that was fired.</span> |
+| <Link id="m-tool" /><code><Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool"}</code> | <span className="api-desc">The seed's impact tool, with its `Entity` set to the spraying entity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Seed`:
 
+<div className="api-used-in">
+
 [`SeedSpray.currentShots`](/mod/game-api/types/alta-intelligence/seedspray#m-currentshots), [`SeedSpray.Destroy`](/mod/game-api/types/alta-intelligence/seedspray#m-destroy), [`SeedSpray.TimedShootItems`](/mod/game-api/types/alta-intelligence/seedspray#m-timedshootitems).
+
+</div>

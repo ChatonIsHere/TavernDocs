@@ -30,4 +30,8 @@ Layout `TestSpawner` uses to place spawned objects: a grid, an even or weighted 
 
 Members of other types that take, return or hold a `Mode`:
 
+<div className="api-used-in">
+
 [`TestSpawner.mode`](/mod/game-api/types/global-t-x/testspawner#m-mode).
+
+</div>

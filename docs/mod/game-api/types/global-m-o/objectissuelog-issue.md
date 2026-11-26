@@ -21,17 +21,21 @@ Editor issue log entry: an object and the problem messages logged about it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Issue()"}</code> | Creates an `ObjectIssueLog.Issue` with default values. |
+| <Link id="m-ctor" /><code>{"Issue()"}</code> | <span className="api-desc">Creates an `ObjectIssueLog.Issue` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-messages" /><code>{"List<string> messages"}</code> | Messages for the object; duplicates are skipped. |
-| <Link id="m-topic" /><code>{"Object topic"}</code> | The object the issues are about. |
+| <Link id="m-messages" /><code>{"List<string> messages"}</code> | <span className="api-desc">Messages for the object; duplicates are skipped.</span> |
+| <Link id="m-topic" /><code>{"Object topic"}</code> | <span className="api-desc">The object the issues are about.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Issue`:
 
+<div className="api-used-in">
+
 [`ObjectIssueLog.issues`](/mod/game-api/types/global-m-o/objectissuelog#m-issues), [`ObjectIssueLog.map`](/mod/game-api/types/global-m-o/objectissuelog#m-map).
+
+</div>

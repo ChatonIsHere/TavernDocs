@@ -21,5 +21,5 @@ Extension helpers for `BuildVersion`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-drawgui" /><code>{"static BuildVersion DrawGui(BuildVersion version)"}</code> | Editor GUI hook. Returns the version unchanged in this build. |
-| <Link id="m-getbuildversionforbuild" /><code>{"static BuildVersion GetBuildVersionForBuild(BuildVersion version, int changeSet)"}</code> | Returns a copy of the version with the given changeset number, keeping stream, season, major and minor. |
+| <Link id="m-drawgui" /><code>{"static BuildVersion DrawGui(BuildVersion version)"}</code> | <span className="api-desc">Editor GUI hook. Returns the version unchanged in this build.</span> |
+| <Link id="m-getbuildversionforbuild" /><code>{"static BuildVersion GetBuildVersionForBuild(BuildVersion version, int changeSet)"}</code> | <span className="api-desc">Returns a copy of the version with the given changeset number, keeping stream, season, major and minor.</span> |

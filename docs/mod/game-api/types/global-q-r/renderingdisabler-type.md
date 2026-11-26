@@ -34,4 +34,8 @@ Group of renderers a `RenderingDisabler` belongs to (rocks, houses, terrain, veg
 
 Members of other types that take, return or hold a `Type`:
 
+<div className="api-used-in">
+
 [`RenderingDisabler.map`](/mod/game-api/types/global-q-r/renderingdisabler#m-map), [`RenderingDisabler.toggleType`](/mod/game-api/types/global-q-r/renderingdisabler#m-toggletype).
+
+</div>

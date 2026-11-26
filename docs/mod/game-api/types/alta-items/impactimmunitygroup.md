@@ -24,16 +24,16 @@ Asset for an impact immunity group. When a tool and a detector share a group, th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactImmunityGroup()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactImmunityGroup()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Backing field for `Multiplier`. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Backing field for `Multiplier`.</span> |
 
 </details>
 
@@ -41,10 +41,14 @@ Asset for an impact immunity group. When a tool and a detector share a group, th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | Efficiency multiplier (0 to 1) for hits between a tool and detector that share this group. |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | <span className="api-desc">Efficiency multiplier (0 to 1) for hits between a tool and detector that share this group.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactImmunityGroup`:
 
+<div className="api-used-in">
+
 [`ImpactDetector.immunityGroups`](/mod/game-api/types/alta-items/impactdetector#m-immunitygroups), [`ImpactDetector.ImmunityGroups`](/mod/game-api/types/alta-items/impactdetector#m-immunitygroups-2), [`ImpactGenerator.ImmunityGroups`](/mod/game-api/types/alta-items/impactgenerator#m-immunitygroups), [`ImpactorSettings.immunityGroups`](/mod/game-api/types/alta-items/impactorsettings#m-immunitygroups), [`ImpactorSettings.ImmunityGroups`](/mod/game-api/types/alta-items/impactorsettings#m-immunitygroups-2).
+
+</div>

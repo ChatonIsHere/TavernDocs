@@ -21,11 +21,11 @@ Remote-backed save file stored as an S3 object. Used when the server starts with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/mod/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> | Creates a `S3CloudStorageRemoteFile` from `internalFile` and `remoteFileInfo`. |
+| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/mod/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> | <span className="api-desc">Creates a `S3CloudStorageRemoteFile` from `internalFile` and `remoteFileInfo`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> | Uploads the local file to the S3 object on a background task. |
-| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> | Downloads the S3 object over the local file on a background task. |
+| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> | <span className="api-desc">Uploads the local file to the S3 object on a background task.</span> |
+| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> | <span className="api-desc">Downloads the S3 object over the local file on a background task.</span> |

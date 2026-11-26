@@ -20,19 +20,19 @@ Stopwatch that logs how long a step took, at debug, warn or error level.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> | Creates a `LoggingWatch` from `errorLevel`. |
-| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> | Creates a `LoggingWatch` from `errorLevel`. |
+| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> | <span className="api-desc">Creates a `LoggingWatch` from `errorLevel`.</span> |
+| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> | <span className="api-desc">Creates a `LoggingWatch` from `errorLevel`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-errorlevel" /><code>{"private int errorLevel"}</code> | Log level: 0 is debug, 1 is warn, anything else is error. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
-| <Link id="m-watch" /><code>{"private Stopwatch watch"}</code> | The underlying `Stopwatch`. |
+| <Link id="m-errorlevel" /><code>{"private int errorLevel"}</code> | <span className="api-desc">Log level: 0 is debug, 1 is warn, anything else is error.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-watch" /><code>{"private Stopwatch watch"}</code> | <span className="api-desc">The underlying `Stopwatch`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Stopwatch that logs how long a step took, at debug, warn or error level.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-measure" /><code>{"void Measure(string name)"}</code> | Stops the watch and logs that the named step took so many milliseconds, at the chosen level. |
-| <Link id="m-start" /><code>{"void Start()"}</code> | Restarts the watch from zero. |
+| <Link id="m-measure" /><code>{"void Measure(string name)"}</code> | <span className="api-desc">Stops the watch and logs that the named step took so many milliseconds, at the chosen level.</span> |
+| <Link id="m-start" /><code>{"void Start()"}</code> | <span className="api-desc">Restarts the watch from zero.</span> |

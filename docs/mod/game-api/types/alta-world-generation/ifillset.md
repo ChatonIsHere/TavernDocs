@@ -21,6 +21,6 @@ A set of spawn modifiers plus a fail score range, used to decide where forest co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumfailscore" /><code>{"float MaximumFailScore { get; }"}</code> | Highest random fail score a point can roll. |
-| <Link id="m-minimumfailscore" /><code>{"float MinimumFailScore { get; }"}</code> | Lowest random fail score a point can roll. |
-| <Link id="m-spawnmodifiers" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | The modifier chain each candidate point is run through. |
+| <Link id="m-maximumfailscore" /><code>{"float MaximumFailScore { get; }"}</code> | <span className="api-desc">Highest random fail score a point can roll.</span> |
+| <Link id="m-minimumfailscore" /><code>{"float MinimumFailScore { get; }"}</code> | <span className="api-desc">Lowest random fail score a point can roll.</span> |
+| <Link id="m-spawnmodifiers" /><code><Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | <span className="api-desc">The modifier chain each candidate point is run through.</span> |

@@ -19,12 +19,12 @@ High-level Alta API calls that get voice chat tokens.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal VoiceApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `VoiceApiClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal VoiceApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates a `VoiceApiClient` from `clientManager`.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ High-level Alta API calls that get voice chat tokens.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"async Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> | Gets a voice token for joining the voice channel of the given server. |
-| <Link id="m-getlogintokenasync" /><code>{"async Task<string> GetLoginTokenAsync()"}</code> | Gets a voice token for logging in to the voice service. |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"async Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> | <span className="api-desc">Gets a voice token for joining the voice channel of the given server.</span> |
+| <Link id="m-getlogintokenasync" /><code>{"async Task<string> GetLoginTokenAsync()"}</code> | <span className="api-desc">Gets a voice token for logging in to the voice service.</span> |

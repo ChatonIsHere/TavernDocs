@@ -29,4 +29,8 @@ How an `UltimateRope` is built: procedurally, from linked objects, or from impor
 
 Members of other types that take, return or hold a `ERopeType`:
 
+<div className="api-used-in">
+
 [`UltimateRope.RopeType`](/mod/game-api/types/global-t-x/ultimaterope#m-ropetype).
+
+</div>

@@ -21,11 +21,15 @@ Something that reacts to a light `Beam` hitting it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> | Called when a beam starts hitting it. |
-| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> | Called when a beam stops hitting it. |
+| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> | <span className="api-desc">Called when a beam starts hitting it.</span> |
+| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> | <span className="api-desc">Called when a beam stops hitting it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ILightDetector`:
 
+<div className="api-used-in">
+
 [`Beam.Hit`](/mod/game-api/types/global-a-b/beam#m-hit).
+
+</div>

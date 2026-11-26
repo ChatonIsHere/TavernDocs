@@ -22,17 +22,17 @@ Prefixes `StatManager.Awake` to rename the stat definition with hash 44538 from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> | Hash of the stat definition that gets renamed. |
-| <Link id="m-done" /><code>{"private static bool done"}</code> | Set once the stat has been found, so the rename runs once. |
+| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> | <span className="api-desc">Hash of the stat definition that gets renamed.</span> |
+| <Link id="m-done" /><code>{"private static bool done"}</code> | <span className="api-desc">Set once the stat has been found, so the rename runs once.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Prefixes `StatManager.Awake` to rename the stat definition with hash 44538 from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-renamecrippledamageprotection" /><code>{"static void RenameCrippleDamageProtection()"}</code> | Sets that stat definition's private `statName` the first time it's found, if it's still `damageprotection`. |
+| <Link id="m-renamecrippledamageprotection" /><code>{"static void RenameCrippleDamageProtection()"}</code> | <span className="api-desc">Sets that stat definition's private `statName` the first time it's found, if it's still `damageprotection`.</span> |

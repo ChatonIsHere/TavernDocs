@@ -24,18 +24,18 @@ Effect that adds a timed modifier to one stat. The strength is passed as the mod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatMultiplierEffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StatMultiplierEffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> | If true, the modifier multiplies the stat; otherwise it adds. |
-| <Link id="m-modifiervalue" /><code>{"private float modifierValue"}</code> | Amount the modifier adds or multiplies by. Defaults to 3. |
-| <Link id="m-stattoaffect" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statToAffect"}</code> | The stat the modifier applies to. |
+| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> | <span className="api-desc">If true, the modifier multiplies the stat; otherwise it adds.</span> |
+| <Link id="m-modifiervalue" /><code>{"private float modifierValue"}</code> | <span className="api-desc">Amount the modifier adds or multiplies by. Defaults to 3.</span> |
+| <Link id="m-stattoaffect" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statToAffect"}</code> | <span className="api-desc">The stat the modifier applies to.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ Effect that adds a timed modifier to one stat. The strength is passed as the mod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies a timed stat modifier with `modifierValue` to the target's stat, using the strength as the time. |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Applies a timed stat modifier with `modifierValue` to the target's stat, using the strength as the time.</span> |

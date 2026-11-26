@@ -23,12 +23,12 @@ Save data (version 3) for a `PlayerUnlockStation`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> | Creates a `PlayerUnlockStationSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> | <span className="api-desc">Creates a `PlayerUnlockStationSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-climbingunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> | The unlock this station gives. |
-| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> | Index of the orb this station belongs to. |
-| <Link id="m-unlockstationindex" /><code>{"uint unlockStationIndex"}</code> | Index of this station. |
+| <Link id="m-climbingunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" climbingUnlock"}</code> | <span className="api-desc">The unlock this station gives.</span> |
+| <Link id="m-orbindex" /><code>{"int orbIndex"}</code> | <span className="api-desc">Index of the orb this station belongs to.</span> |
+| <Link id="m-unlockstationindex" /><code>{"uint unlockStationIndex"}</code> | <span className="api-desc">Index of this station.</span> |

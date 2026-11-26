@@ -22,6 +22,6 @@ A multi-button menu command whose arguments are filled in at runtime by name, su
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string name)"}</code> | Whether the named argument currently has a valid value. |
-| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> | Returns the current value of the named argument. |
-| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> | Sets the named argument to a string value. |
+| <Link id="m-argumentisvalid" /><code>{"bool ArgumentIsValid(string name)"}</code> | <span className="api-desc">Whether the named argument currently has a valid value.</span> |
+| <Link id="m-getargument" /><code>{"string GetArgument(string name)"}</code> | <span className="api-desc">Returns the current value of the named argument.</span> |
+| <Link id="m-setargument" /><code>{"void SetArgument(string name, string argument)"}</code> | <span className="api-desc">Sets the named argument to a string value.</span> |

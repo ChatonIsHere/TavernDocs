@@ -22,4 +22,4 @@ Serializable Unity event with a transform and a float (the scale), used by `Tran
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformScaledHandler()"}</code> | Creates a `TransformScaledHandler` with default values. |
+| <Link id="m-ctor" /><code>{"TransformScaledHandler()"}</code> | <span className="api-desc">Creates a `TransformScaledHandler` with default values.</span> |

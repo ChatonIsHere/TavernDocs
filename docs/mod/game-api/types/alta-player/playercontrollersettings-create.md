@@ -22,4 +22,4 @@ Editor menu item that creates a new `PlayerControllerSettings` asset under the T
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PlayerControllerSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PlayerControllerSettings.Create` with default values.</span> |

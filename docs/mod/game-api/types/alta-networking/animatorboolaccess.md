@@ -21,17 +21,17 @@ Small helper that sets one bool on a plain Unity `Animator`, so a UnityEvent can
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatorBoolAccess()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimatorBoolAccess()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> | The Unity animator. |
-| <Link id="m-boolname" /><code>{"private string boolName"}</code> | Name of the animator bool. |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | <span className="api-desc">The Unity animator.</span> |
+| <Link id="m-boolname" /><code>{"private string boolName"}</code> | <span className="api-desc">Name of the animator bool.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Small helper that sets one bool on a plain Unity `Animator`, so a UnityEvent can
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-set" /><code>{"void Set(bool value)"}</code> | Sets the animator bool to the given value. |
+| <Link id="m-set" /><code>{"void Set(bool value)"}</code> | <span className="api-desc">Sets the animator bool to the given value.</span> |

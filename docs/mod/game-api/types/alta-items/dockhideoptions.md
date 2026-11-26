@@ -28,4 +28,8 @@ Game setting for hiding dock visuals in screenshots: never, only empty docks, or
 
 Members of other types that take, return or hold a `DockHideOptions`:
 
+<div className="api-used-in">
+
 [`GameSettings.ScreenshotDockHideOptions`](/mod/game-api/types/alta-utilities/gamesettings#m-screenshotdockhideoptions).
+
+</div>

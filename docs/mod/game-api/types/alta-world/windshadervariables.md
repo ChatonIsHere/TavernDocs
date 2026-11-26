@@ -18,11 +18,11 @@ Internal cache of the wind shader property ID.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-windparameters" /><code>{"internal static readonly int _WindParameters"}</code> | ID of `_WindParameters`: wind map offset in xy, direction times strength in zw. |
+| <Link id="m-windparameters" /><code>{"internal static readonly int _WindParameters"}</code> | <span className="api-desc">ID of `_WindParameters`: wind map offset in xy, direction times strength in zw.</span> |
 
 </details>

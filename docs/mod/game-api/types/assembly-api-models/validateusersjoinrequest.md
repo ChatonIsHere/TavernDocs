@@ -20,13 +20,13 @@ Request body for checking that a player may join a game server, probably sent by
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> | Creates a `ValidateUsersJoinRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> | <span className="api-desc">Creates a `ValidateUsersJoinRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | The player's device id. |
-| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> | The player's identity token, encoded. |
-| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> | The player's IP address. |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | Id of the server being joined. |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | <span className="api-desc">The player's device id.</span> |
+| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; set; }"}</code> | <span className="api-desc">The player's identity token, encoded.</span> |
+| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> | <span className="api-desc">The player's IP address.</span> |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the server being joined.</span> |

@@ -21,18 +21,22 @@ Something a chisel can carve, such as a timber piece. `ChiselingTool` checks it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> | False when the target cannot be chiselled right now. The chisel skips it. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> | <span className="api-desc">False when the target cannot be chiselled right now. The chisel skips it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdirectionleniency" /><code>{"void GetDirectionLeniency(ref float directionMultiplier)"}</code> | Lets the target change how strict the hit direction check is, by adjusting the multiplier passed in. |
-| <Link id="m-gethitmultiplier" /><code>{"float GetHitMultiplier(Vector3 hitDirection)"}</code> | How well a hit from this direction lines up, raised to a power by the chisel to scale damage. |
-| <Link id="m-receivedamage" /><code>{"void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Applies chisel damage at a point and direction, with the tool and the collider that was hit. |
+| <Link id="m-getdirectionleniency" /><code>{"void GetDirectionLeniency(ref float directionMultiplier)"}</code> | <span className="api-desc">Lets the target change how strict the hit direction check is, by adjusting the multiplier passed in.</span> |
+| <Link id="m-gethitmultiplier" /><code>{"float GetHitMultiplier(Vector3 hitDirection)"}</code> | <span className="api-desc">How well a hit from this direction lines up, raised to a power by the chisel to scale damage.</span> |
+| <Link id="m-receivedamage" /><code>{"void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | <span className="api-desc">Applies chisel damage at a point and direction, with the tool and the collider that was hit.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IChiselable`:
 
+<div className="api-used-in">
+
 [`Chiselable.GetChiseleable`](/mod/game-api/types/alta-crafting/chiselable#m-getchiseleable), [`ChiselingTool.hitPiece`](/mod/game-api/types/alta-crafting/chiselingtool#m-hitpiece).
+
+</div>

@@ -21,11 +21,11 @@ Type converter that turns a console argument string into a `UserInfoAccess`: a n
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserInfoAccessConverter()"}</code> | Creates an `UserInfoAccessConverter` with default values. |
+| <Link id="m-ctor" /><code>{"UserInfoAccessConverter()"}</code> | <span className="api-desc">Creates an `UserInfoAccessConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Lowercases the string and makes a `UserInfoAccess` from it as an id if it parses as an int, otherwise as a name. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Lowercases the string and makes a `UserInfoAccess` from it as an id if it parses as an int, otherwise as a name.</span> |

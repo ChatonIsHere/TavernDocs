@@ -21,10 +21,14 @@ Serializable `AltaEvent` raised with a `WoodcutTree`, used for a tree's `cut` an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeEvent()"}</code> | Creates a `WoodcutTreeEvent` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeEvent()"}</code> | <span className="api-desc">Creates a `WoodcutTreeEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WoodcutTreeEvent`:
 
+<div className="api-used-in">
+
 [`WoodcutTree.cut`](/mod/game-api/types/alta-crafting/woodcuttree#m-cut), [`WoodcutTree.onThump`](/mod/game-api/types/alta-crafting/woodcuttree#m-onthump).
+
+</div>

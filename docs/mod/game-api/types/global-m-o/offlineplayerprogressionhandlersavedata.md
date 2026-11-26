@@ -23,10 +23,10 @@ Save data (version 1) for `OfflinePlayerProgressionHandler`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> | Creates an `OfflinePlayerProgressionHandlerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> | <span className="api-desc">Creates an `OfflinePlayerProgressionHandlerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progresses" /><code><Link to="/mod/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> | Pending levels for each user. |
+| <Link id="m-progresses" /><code><Link to="/mod/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> | <span className="api-desc">Pending levels for each user.</span> |

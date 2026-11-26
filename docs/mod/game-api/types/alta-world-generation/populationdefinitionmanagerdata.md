@@ -23,11 +23,11 @@ Save data (version 1) for the `PopulationDefinitionManager`: a value per populat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> | Creates a `PopulationDefinitionManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> | <span className="api-desc">Creates a `PopulationDefinitionManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> | Definition hashes. |
-| <Link id="m-times" /><code>{"float[] times"}</code> | Saved value for each hash, matched by index. |
+| <Link id="m-hashes" /><code>{"uint[] hashes"}</code> | <span className="api-desc">Definition hashes.</span> |
+| <Link id="m-times" /><code>{"float[] times"}</code> | <span className="api-desc">Saved value for each hash, matched by index.</span> |

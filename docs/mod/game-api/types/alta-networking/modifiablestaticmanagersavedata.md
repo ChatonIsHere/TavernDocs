@@ -24,10 +24,10 @@ Save data for `ModifiableStaticManager`: which static objects (by hash) are modi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> | Creates a `ModifiableStaticManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> | <span className="api-desc">Creates a `ModifiableStaticManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code><Link to="/mod/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> | Each object's hash and modified state. |
+| <Link id="m-items" /><code><Link to="/mod/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> | <span className="api-desc">Each object's hash and modified state.</span> |

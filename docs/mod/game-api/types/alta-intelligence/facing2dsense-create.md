@@ -22,4 +22,4 @@ Editor menu item for making a `Facing2DSense` asset. Does nothing at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Facing2DSense.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `Facing2DSense.Create` with default values.</span> |

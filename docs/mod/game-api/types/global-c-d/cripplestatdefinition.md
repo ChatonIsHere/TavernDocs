@@ -24,17 +24,17 @@ Stat definition for cripple-style stats that move back by a fixed amount every s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CrippleStatDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CrippleStatDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbuildup" /><code>{"private bool isBuildup"}</code> | If true, the stat drains by `regenPerTick` each update instead of filling. |
-| <Link id="m-regenpertick" /><code>{"private float regenPerTick"}</code> | Amount added to (or taken from) the stat's base each update. Defaults to 0.01. |
+| <Link id="m-isbuildup" /><code>{"private bool isBuildup"}</code> | <span className="api-desc">If true, the stat drains by `regenPerTick` each update instead of filling.</span> |
+| <Link id="m-regenpertick" /><code>{"private float regenPerTick"}</code> | <span className="api-desc">Amount added to (or taken from) the stat's base each update. Defaults to 0.01.</span> |
 
 </details>
 
@@ -42,10 +42,14 @@ Stat definition for cripple-style stats that move back by a fixed amount every s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Hooks the manager's update to regen the stat up to its maximum, or with `isBuildup` to drain it. |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Hooks the manager's update to regen the stat up to its maximum, or with `isBuildup` to drain it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CrippleStatDefinition`:
 
+<div className="api-used-in">
+
 [`CombatStateSettings.crippleStatDefinition`](/mod/game-api/types/alta-player/combatstatesettings#m-cripplestatdefinition), [`CombatStateSettings.CrippleStatDefinition`](/mod/game-api/types/alta-player/combatstatesettings#m-cripplestatdefinition-2).
+
+</div>

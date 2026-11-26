@@ -21,17 +21,21 @@ Stamina use multiplier for climbing on one physics layer, read by `ClimbingSetti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> | Creates a `ClimbingSettings.LayerStaminaConsumptionMultiplier` with default values. |
+| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> | <span className="api-desc">Creates a `ClimbingSettings.LayerStaminaConsumptionMultiplier` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> | The physics layer this entry applies to. |
-| <Link id="m-multiplier" /><code>{"float multiplier"}</code> | Stamina use multiplier while climbing that layer. At least 0.001. |
+| <Link id="m-layer" /><code>{"int layer"}</code> | <span className="api-desc">The physics layer this entry applies to.</span> |
+| <Link id="m-multiplier" /><code>{"float multiplier"}</code> | <span className="api-desc">Stamina use multiplier while climbing that layer. At least 0.001.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LayerStaminaConsumptionMultiplier`:
 
+<div className="api-used-in">
+
 [`ClimbingSettings.layerStaminaConsumptionMultipliers`](/mod/game-api/types/global-c-d/climbingsettings#m-layerstaminaconsumptionmultipliers).
+
+</div>

@@ -23,5 +23,5 @@ Postfixes `ForestGenerator`'s explicit `Load` method to delete forest and river 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/mod/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" data)"}</code> | Deletes the forest's cache files whose seed isn't the loaded one. Logs a warning if that fails. |
-| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> | Finds `ForestGenerator`'s explicit `Load` method that takes `ForestGeneratorSaveData`. |
+| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/mod/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" data)"}</code> | <span className="api-desc">Deletes the forest's cache files whose seed isn't the loaded one. Logs a warning if that fails.</span> |
+| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> | <span className="api-desc">Finds `ForestGenerator`'s explicit `Load` method that takes `ForestGeneratorSaveData`.</span> |

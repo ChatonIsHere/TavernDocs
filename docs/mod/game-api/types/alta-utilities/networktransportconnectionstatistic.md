@@ -21,28 +21,28 @@ Transport statistics for one `Connection`. Mostly a stub: `SetupFields` and `Upd
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportConnectionStatistic("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Creates a `NetworkTransportConnectionStatistic` from `connection`. |
+| <Link id="m-ctor" /><code>{"NetworkTransportConnectionStatistic("}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | <span className="api-desc">Creates a `NetworkTransportConnectionStatistic` from `connection`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ackbuffercount" /><code>{"protected int ackBufferCount"}</code> | Size of the buffer holding packet acknowledgements. Never set. |
-| <Link id="m-maxallowedbandwith" /><code>{"protected int maxAllowedBandwith"}</code> | Current bandwidth cap, which flow control can change. Never set. |
-| <Link id="m-outgoingpacketnetworklosspercent" /><code>{"protected int outgoingPacketNetworkLossPercent"}</code> | Percent of outgoing packets lost in the network. Never set. |
-| <Link id="m-outgoingpacketoverflowlosspercent" /><code>{"protected int outgoingPacketOverflowLossPercent"}</code> | Percent of outgoing packets lost to full buffers. Never set. |
-| <Link id="m-returntriptime" /><code>{"protected int returnTripTime"}</code> | Round trip time in ms. Never set. |
+| <Link id="m-ackbuffercount" /><code>{"protected int ackBufferCount"}</code> | <span className="api-desc">Size of the buffer holding packet acknowledgements. Never set.</span> |
+| <Link id="m-maxallowedbandwith" /><code>{"protected int maxAllowedBandwith"}</code> | <span className="api-desc">Current bandwidth cap, which flow control can change. Never set.</span> |
+| <Link id="m-outgoingpacketnetworklosspercent" /><code>{"protected int outgoingPacketNetworkLossPercent"}</code> | <span className="api-desc">Percent of outgoing packets lost in the network. Never set.</span> |
+| <Link id="m-outgoingpacketoverflowlosspercent" /><code>{"protected int outgoingPacketOverflowLossPercent"}</code> | <span className="api-desc">Percent of outgoing packets lost to full buffers. Never set.</span> |
+| <Link id="m-returntriptime" /><code>{"protected int returnTripTime"}</code> | <span className="api-desc">Round trip time in ms. Never set.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connection" /><code><Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" "}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" { get; private set; }"}</code> | The connection these statistics are for, set in the constructor. |
+| <Link id="m-connection" /><code><Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" "}<Link to="/mod/game-api/types/alta-networking/connection">{"Connection"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The connection these statistics are for, set in the constructor.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createsummarydump" /><code>{"override string CreateSummaryDump(float statisticDuration)"}</code> | Adds ack buffer, round trip, bandwidth and outgoing loss lines ahead of the base report. |
-| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> | Empty. |
-| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> | Empty, so the inherited counter fields stay null. |
+| <Link id="m-createsummarydump" /><code>{"override string CreateSummaryDump(float statisticDuration)"}</code> | <span className="api-desc">Adds ack buffer, round trip, bandwidth and outgoing loss lines ahead of the base report.</span> |
+| <Link id="m-updateallstatisticvalues" /><code>{"override void UpdateAllStatisticValues()"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-setupfields" /><code>{"protected override void SetupFields()"}</code> | <span className="api-desc">Empty, so the inherited counter fields stay null.</span> |

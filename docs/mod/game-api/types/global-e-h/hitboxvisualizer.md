@@ -22,28 +22,28 @@ Debug visual for a capsule hitbox: scales an object to the capsule's height and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HitboxVisualizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"HitboxVisualizer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> | The hitbox being shown. |
-| <Link id="m-visual" /><code>{"private GameObject visual"}</code> | Object that draws the hitbox. |
+| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> | <span className="api-desc">The hitbox being shown.</span> |
+| <Link id="m-visual" /><code>{"private GameObject visual"}</code> | <span className="api-desc">Object that draws the hitbox.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Scales the visual by the capsule's height. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Shows the visual only while the capsule collider is enabled. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Scales the visual by the capsule's height.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Shows the visual only while the capsule collider is enabled.</span> |
 
 </details>

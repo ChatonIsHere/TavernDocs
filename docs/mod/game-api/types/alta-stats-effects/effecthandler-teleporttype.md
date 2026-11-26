@@ -29,4 +29,8 @@ Why a player is being teleported by `EffectHandler.Teleport`: default, a potion,
 
 Members of other types that take, return or hold a `TeleportType`:
 
+<div className="api-used-in">
+
 [`EffectHandler.Teleport`](/mod/game-api/types/alta-stats-effects/effecthandler#m-teleport), [`PlayerEffectController.PlayerRepositioned`](/mod/game-api/types/alta-stats-effects/playereffectcontroller#m-playerrepositioned), [`PlayerEffectController.Teleport`](/mod/game-api/types/alta-stats-effects/playereffectcontroller#m-teleport), [`PlayerEffectController.PlayerEffectTeleportInformation.teleportType`](/mod/game-api/types/alta-stats-effects/playereffectcontroller-playereffectteleportinformation#m-teleporttype), [`PlayerUnlockAnalytics.CanSendChallengeRespawnEvent`](/mod/game-api/types/game-other-namespaces/playerunlockanalytics#m-cansendchallengerespawnevent), [`PlayerUnlockAnalytics.SendChallengeRespawnEvent`](/mod/game-api/types/game-other-namespaces/playerunlockanalytics#m-sendchallengerespawnevent).
+
+</div>

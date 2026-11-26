@@ -22,19 +22,23 @@ The `ServerConfigFile` for `users.json`, with lookups on the last read. Use the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getuser" /><code><Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" GetUser(string username)"}</code> | A user from `LastRead` by username (without case) or by user id, or `null`. |
-| <Link id="m-getuser-2" /><code><Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" GetUser(int identifier)"}</code> | A user from `LastRead` by username (without case) or by user id, or `null`. |
-| <Link id="m-trygetuser" /><code>{"bool TryGetUser(string username, out "}<Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" user)"}</code> | The same as `GetUser`, as a try-pattern. |
-| <Link id="m-trygetuser-2" /><code>{"bool TryGetUser(int identifier, out "}<Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" user)"}</code> | The same as `GetUser`, as a try-pattern. |
+| <Link id="m-getuser" /><code><Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" GetUser(string username)"}</code> | <span className="api-desc">A user from `LastRead` by username (without case) or by user id, or `null`.</span> |
+| <Link id="m-getuser-2" /><code><Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" GetUser(int identifier)"}</code> | <span className="api-desc">A user from `LastRead` by username (without case) or by user id, or `null`.</span> |
+| <Link id="m-trygetuser" /><code>{"bool TryGetUser(string username, out "}<Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" user)"}</code> | <span className="api-desc">The same as `GetUser`, as a try-pattern.</span> |
+| <Link id="m-trygetuser-2" /><code>{"bool TryGetUser(int identifier, out "}<Link to="/mod/tavernlib-api/types/backend-server-configs/userconfig-user">{"UserConfig.User"}</Link>{" user)"}</code> | <span className="api-desc">The same as `GetUser`, as a try-pattern.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UserConfigFile`:
 
+<div className="api-used-in">
+
 [`TavernManager.UserConfig`](/mod/tavernlib-api/types/backend-api/tavernmanager#m-userconfig).
+
+</div>

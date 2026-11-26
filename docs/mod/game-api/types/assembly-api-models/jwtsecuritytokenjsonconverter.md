@@ -21,12 +21,12 @@ JSON converter that stores a `JwtSecurityToken` as its encoded string.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JwtSecurityTokenJsonConverter()"}</code> | Creates a `JwtSecurityTokenJsonConverter` with default values. |
+| <Link id="m-ctor" /><code>{"JwtSecurityTokenJsonConverter()"}</code> | <span className="api-desc">Creates a `JwtSecurityTokenJsonConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | True only for `JwtSecurityToken`. |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | Rebuilds the token from the string with `JWTUtility.CreateFromString`, keeping the raw string as a claim. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | Writes the token as its encoded string. |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | <span className="api-desc">True only for `JwtSecurityToken`.</span> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Rebuilds the token from the string with `JWTUtility.CreateFromString`, keeping the raw string as a claim.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes the token as its encoded string.</span> |

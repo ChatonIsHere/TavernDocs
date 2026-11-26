@@ -21,4 +21,4 @@ Marker component: the teleport pointer won't land on a collider that has it. It 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NonTeleportable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NonTeleportable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

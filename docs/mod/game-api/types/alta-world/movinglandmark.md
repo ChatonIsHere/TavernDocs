@@ -22,16 +22,16 @@ A landmark on something that moves. Besides registering it re-syncs its position
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MovingLandmark()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MovingLandmark()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | The `Timeline` entry for the once-a-second sync. |
+| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | <span className="api-desc">The `Timeline` entry for the once-a-second sync.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A landmark on something that moves. Besides registering it re-syncs its position
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyed" /><code>{"protected override void Destroyed("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Deregisters the landmark (unless it is kept after unload and this is an unload) and, on the server, stops the sync timer. |
-| <Link id="m-register" /><code>{"protected override void Register()"}</code> | Registers with the `LandmarkManager` and starts a repeating `ForceSync` every second. |
+| <Link id="m-destroyed" /><code>{"protected override void Destroyed("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Deregisters the landmark (unless it is kept after unload and this is an unload) and, on the server, stops the sync timer.</span> |
+| <Link id="m-register" /><code>{"protected override void Register()"}</code> | <span className="api-desc">Registers with the `LandmarkManager` and starts a repeating `ForceSync` every second.</span> |

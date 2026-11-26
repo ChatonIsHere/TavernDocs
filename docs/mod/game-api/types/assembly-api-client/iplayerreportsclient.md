@@ -21,12 +21,16 @@ Alta web API calls for reporting players and reading reports. `ApiAccess.ApiClie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reportplayer" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ReportPlayer(int userId, "}<Link to="/mod/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int serverId)"}</code> | Reports a user on a server for a reason. |
-| <Link id="m-viewallreports" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{">> ViewAllReports("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | Lists reports in full, optionally by status and server. |
-| <Link id="m-viewallreportsassummary" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{">> ViewAllReportsAsSummary("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | Lists reports as summaries, optionally by status and server. |
+| <Link id="m-reportplayer" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ReportPlayer(int userId, "}<Link to="/mod/game-api/types/assembly-api-models/reporttype">{"ReportType"}</Link>{" type, int serverId)"}</code> | <span className="api-desc">Reports a user on a server for a reason.</span> |
+| <Link id="m-viewallreports" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-client/playerreportadmin">{"PlayerReportAdmin"}</Link>{">> ViewAllReports("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | <span className="api-desc">Lists reports in full, optionally by status and server.</span> |
+| <Link id="m-viewallreportsassummary" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-client/playerreportsummary">{"PlayerReportSummary"}</Link>{">> ViewAllReportsAsSummary("}<Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | <span className="api-desc">Lists reports as summaries, optionally by status and server.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPlayerReportsClient`:
 
+<div className="api-used-in">
+
 [`HighLevelApiClient.PlayerReports`](/mod/game-api/types/assembly-api-client/highlevelapiclient#m-playerreports), [`IHighLevelApiClient.PlayerReports`](/mod/game-api/types/assembly-api-client/ihighlevelapiclient#m-playerreports), [`OfflineHighLevelApiClient.PlayerReports`](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient#m-playerreports).
+
+</div>

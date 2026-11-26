@@ -21,16 +21,16 @@ Component that adds or removes renderers on one level of a referenced `LODGroup`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LODGroupWrapper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LODGroupWrapper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | The LOD group being edited. |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | <span className="api-desc">The LOD group being edited.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Component that adds or removes renderers on one level of a referenced `LODGroup`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int lodIndex, IEnumerable<Renderer> renderers)"}</code> | Adds renderers to the given LOD level. |
-| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int lodIndex, IEnumerable<Renderer> renderersToRemove)"}</code> | Removes renderers from the given LOD level. |
+| <Link id="m-addrendererstolod" /><code>{"void AddRenderersToLOD(int lodIndex, IEnumerable<Renderer> renderers)"}</code> | <span className="api-desc">Adds renderers to the given LOD level.</span> |
+| <Link id="m-removerenderersfromlod" /><code>{"void RemoveRenderersFromLOD(int lodIndex, IEnumerable<Renderer> renderersToRemove)"}</code> | <span className="api-desc">Removes renderers from the given LOD level.</span> |

@@ -21,20 +21,20 @@ Editor debugging helper that draws a small sphere at a static position in the Sc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GizmosHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GizmosHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"static Vector3 position"}</code> | Where the sphere is drawn. Set it from anywhere. |
+| <Link id="m-position" /><code>{"static Vector3 position"}</code> | <span className="api-desc">Where the sphere is drawn. Set it from anywhere.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-helper" /><code>{"private static "}<Link to="/mod/game-api/types/alta-intelligence/gizmoshelper">{"GizmosHelper"}</Link>{" helper"}</code> | The single instance, made by `EnsureExist`. |
+| <Link id="m-helper" /><code>{"private static "}<Link to="/mod/game-api/types/alta-intelligence/gizmoshelper">{"GizmosHelper"}</Link>{" helper"}</code> | <span className="api-desc">The single instance, made by `EnsureExist`.</span> |
 
 </details>
 
@@ -42,14 +42,14 @@ Editor debugging helper that draws a small sphere at a static position in the Sc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensureexist" /><code>{"static void EnsureExist()"}</code> | Creates a "Gizmos Helper" GameObject with this component if there isn't one. |
+| <Link id="m-ensureexist" /><code>{"static void EnsureExist()"}</code> | <span className="api-desc">Creates a "Gizmos Helper" GameObject with this component if there isn't one.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears the static instance if it's this one. |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws a 0.1 radius sphere at `position`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Clears the static instance if it's this one.</span> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Draws a 0.1 radius sphere at `position`.</span> |
 
 </details>

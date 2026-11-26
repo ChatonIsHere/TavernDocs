@@ -22,11 +22,11 @@ Township event bus event broadcast when a player grabs a pickup. Server (and loc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerGrabbedPrefabEvent()"}</code> | Creates a `PlayerGrabbedPrefabEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerGrabbedPrefabEvent()"}</code> | <span className="api-desc">Creates a `PlayerGrabbedPrefabEvent` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-grabbedprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GrabbedPrefab { get; set; }"}</code> | Prefab of the grabbed pickup. |
-| <Link id="m-source" /><code>{"virtual "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; set; }"}</code> | The player who grabbed it. |
+| <Link id="m-grabbedprefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" GrabbedPrefab { get; set; }"}</code> | <span className="api-desc">Prefab of the grabbed pickup.</span> |
+| <Link id="m-source" /><code>{"virtual "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; set; }"}</code> | <span className="api-desc">The player who grabbed it.</span> |

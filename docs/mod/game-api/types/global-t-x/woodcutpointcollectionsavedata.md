@@ -24,4 +24,4 @@ Save data for a `WoodcutPointCollection`, one element per woodcut point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutPointCollectionSaveData()"}</code> | Creates a `WoodcutPointCollectionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutPointCollectionSaveData()"}</code> | <span className="api-desc">Creates a `WoodcutPointCollectionSaveData` with default values.</span> |

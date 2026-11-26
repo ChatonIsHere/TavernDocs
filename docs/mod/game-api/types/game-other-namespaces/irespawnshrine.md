@@ -21,4 +21,4 @@ A respawn shrine a player can set as their spawn point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onsetspawnpointtoggle" /><code>{"void OnSetSpawnPointToggle("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Called when a player toggles this shrine as their spawn point. |
+| <Link id="m-onsetspawnpointtoggle" /><code>{"void OnSetSpawnPointToggle("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Called when a player toggles this shrine as their spawn point.</span> |

@@ -21,10 +21,10 @@ Pooled async prefab factory whose instances take two parameters on spawn through
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> | Creates a `FactoryAsyncPooled` with default values. |
+| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> | <span className="api-desc">Creates a `FactoryAsyncPooled` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"async Task<TInterface> Spawn(TParam1 param1, TParam2 param2)"}</code> | Gets a pooled or new instance, calls `OnSpawn` with both parameters and returns it. |
+| <Link id="m-spawn" /><code>{"async Task<TInterface> Spawn(TParam1 param1, TParam2 param2)"}</code> | <span className="api-desc">Gets a pooled or new instance, calls `OnSpawn` with both parameters and returns it.</span> |

@@ -22,26 +22,26 @@ Version 1 save data for a `LogicFloatChangeOnBool`, migrated to `LogicFloatChang
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData1()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData1()"}</code> | <span className="api-desc">Creates a `LogicFloatChangeOnBoolSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue" /><code>{"float currentValue"}</code> | The float value when saved. |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The logic identifier data. |
-| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | How fast the value moves per second. |
-| <Link id="m-targetvalue" /><code>{"float targetValue"}</code> | The value it was moving toward. |
-| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | Delay left before it starts moving. |
+| <Link id="m-currentvalue" /><code>{"float currentValue"}</code> | <span className="api-desc">The float value when saved.</span> |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The logic identifier data.</span> |
+| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | <span className="api-desc">How fast the value moves per second.</span> |
+| <Link id="m-targetvalue" /><code>{"float targetValue"}</code> | <span className="api-desc">The value it was moving toward.</span> |
+| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | <span className="api-desc">Delay left before it starts moving.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | Property over `logicData`. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Property over `logicData`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Copies every field into `LogicFloatChangeOnBoolSaveData2`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Copies every field into `LogicFloatChangeOnBoolSaveData2`.</span> |

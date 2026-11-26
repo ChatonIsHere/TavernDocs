@@ -22,18 +22,22 @@ Callback the PAGaC `Constructor` runs for each spot where a rule or part fits: t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceFound(object object, IntPtr method)"}</code> | Made by the compiler when you assign a method to this delegate; you don't call it directly. |
+| <Link id="m-ctor" /><code>{"PlaceFound(object object, IntPtr method)"}</code> | <span className="api-desc">Made by the compiler when you assign a method to this delegate; you don't call it directly.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(T part, int x, int y, int z, int rotation, int startX, int startZ, int xxMultiplier, int xzMultiplier, int zxMultiplier, int zzMultiplier, AsyncCallback callback, object object)"}</code> | Starts the call on another thread; not supported in Unity, so use `Invoke`. |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | Waits for a call started with `BeginInvoke`; not supported in Unity. |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(T part, int x, int y, int z, int rotation, int startX, int startZ, int xxMultiplier, int xzMultiplier, int zxMultiplier, int zzMultiplier)"}</code> | Calls every method on this delegate with these arguments. |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(T part, int x, int y, int z, int rotation, int startX, int startZ, int xxMultiplier, int xzMultiplier, int zxMultiplier, int zzMultiplier, AsyncCallback callback, object object)"}</code> | <span className="api-desc">Starts the call on another thread; not supported in Unity, so use `Invoke`.</span> |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | <span className="api-desc">Waits for a call started with `BeginInvoke`; not supported in Unity.</span> |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(T part, int x, int y, int z, int rotation, int startX, int startZ, int xxMultiplier, int xzMultiplier, int zxMultiplier, int zzMultiplier)"}</code> | <span className="api-desc">Calls every method on this delegate with these arguments.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlaceFound&lt;T>`:
 
+<div className="api-used-in">
+
 [`Constructor.CheckPlace`](/mod/game-api/types/alta-world-generation/constructor#m-checkplace), [`Constructor.HandlePart`](/mod/game-api/types/alta-world-generation/constructor#m-handlepart).
+
+</div>

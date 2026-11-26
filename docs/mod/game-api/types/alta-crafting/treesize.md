@@ -24,16 +24,20 @@ A named tree size asset, picked from a popup. `PresetTree` has one and `TreeSpaw
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TreeSize()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TreeSize()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> | Folder the popup assets live in: `Woodcutting/`. |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> | <span className="api-desc">Folder the popup assets live in: `Woodcutting/`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TreeSize`:
 
+<div className="api-used-in">
+
 [`PresetTree.size`](/mod/game-api/types/alta-crafting/presettree#m-size), [`PresetTree.Size`](/mod/game-api/types/alta-crafting/presettree#m-size-2), [`TreeSpawner.sizes`](/mod/game-api/types/alta-crafting/treespawner#m-sizes).
+
+</div>

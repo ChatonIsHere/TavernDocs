@@ -32,4 +32,8 @@ Flags for which export settings an override changes: output toggle, name suffix,
 
 Members of other types that take, return or hold a `OverrideMask`:
 
+<div className="api-used-in">
+
 [`TextureOutput.OverrideMask`](/mod/game-api/types/global-t-x/textureoutput#m-overridemask).
+
+</div>

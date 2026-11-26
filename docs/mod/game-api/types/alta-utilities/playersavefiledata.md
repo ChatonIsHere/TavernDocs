@@ -23,23 +23,27 @@ Basic save data inside a `PlayerSave`: the player's last position and home point
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> | Creates a `PlayerSaveFileData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> | <span className="api-desc">Creates a `PlayerSaveFileData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-home" /><code>{"Vector3 home"}</code> | The player's saved home (respawn) position. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | The player's last saved world position. |
+| <Link id="m-home" /><code>{"Vector3 home"}</code> | <span className="api-desc">The player's saved home (respawn) position.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">The player's last saved world position.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/mod/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> | Copies position and home into another instance. |
+| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/mod/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> | <span className="api-desc">Copies position and home into another instance.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerSaveFileData`:
 
+<div className="api-used-in">
+
 [`PlayerSave.Data`](/mod/game-api/types/alta-utilities/playersave#m-data), [`PlayerSave.saveData`](/mod/game-api/types/alta-utilities/playersave#m-savedata).
+
+</div>

@@ -21,16 +21,16 @@ Colours a child `ColoredParticleSystem` with a cosmetic colour's first colour.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticParticleColorer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CosmeticParticleColorer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-particlesystemwithcolor" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithColor"}</code> | The particle system coloured. |
+| <Link id="m-particlesystemwithcolor" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/coloredparticlesystem">{"ColoredParticleSystem"}</Link>{" particleSystemWithColor"}</code> | <span className="api-desc">The particle system coloured.</span> |
 
 </details>
 
@@ -38,13 +38,13 @@ Colours a child `ColoredParticleSystem` with a cosmetic colour's first colour.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setcolor" /><code>{"void SetColor("}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> | Sets the particle colour to the cosmetic colour's `Color1`. |
+| <Link id="m-setcolor" /><code>{"void SetColor("}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> | <span className="api-desc">Sets the particle colour to the cosmetic colour's `Color1`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build bake step: finds the `ColoredParticleSystem` in the children. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build bake step: finds the `ColoredParticleSystem` in the children.</span> |
 
 </details>

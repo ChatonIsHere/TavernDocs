@@ -23,24 +23,24 @@ Generation part for forest node map edges: builds a Bezier spline along part of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TerrainSpline()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TerrainSpline()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edgelengthpercentmaximum" /><code>{"protected float edgeLengthPercentMaximum"}</code> | Largest share of half the edge length the spline reaches each side. |
-| <Link id="m-edgelengthpercentminimum" /><code>{"protected float edgeLengthPercentMinimum"}</code> | Smallest share of half the edge length the spline reaches each side. |
-| <Link id="m-prefab" /><code>{"protected "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | Pipeline that picks the prefab placed on the spline. |
+| <Link id="m-edgelengthpercentmaximum" /><code>{"protected float edgeLengthPercentMaximum"}</code> | <span className="api-desc">Largest share of half the edge length the spline reaches each side.</span> |
+| <Link id="m-edgelengthpercentminimum" /><code>{"protected float edgeLengthPercentMinimum"}</code> | <span className="api-desc">Smallest share of half the edge length the spline reaches each side.</span> |
+| <Link id="m-prefab" /><code>{"protected "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | <span className="api-desc">Pipeline that picks the prefab placed on the spline.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-customoffset" /><code>{"protected Vector3 CustomOffset { get; set; }"}</code> | Extra offset added to the spline's start, for subclasses. |
+| <Link id="m-customoffset" /><code>{"protected Vector3 CustomOffset { get; set; }"}</code> | <span className="api-desc">Extra offset added to the spline's start, for subclasses.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | With forest node map spawn data, makes a random-length spline along the edge and instantiates the chosen prefab under it. |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | <span className="api-desc">With forest node map spawn data, makes a random-length spline along the edge and instantiates the chosen prefab under it.</span> |

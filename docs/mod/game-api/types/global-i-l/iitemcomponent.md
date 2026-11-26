@@ -21,4 +21,4 @@ A component on an `Item` asset that gets set up by the item.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Called by the item with itself. |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | <span className="api-desc">Called by the item with itself.</span> |

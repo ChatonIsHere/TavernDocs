@@ -20,4 +20,4 @@ Holds one constant for skill status serialization.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxserialization" /><code>{"const int MaxSerialization"}</code> | Constant 10. Nothing else in this build reads it. |
+| <Link id="m-maxserialization" /><code>{"const int MaxSerialization"}</code> | <span className="api-desc">Constant 10. Nothing else in this build reads it.</span> |

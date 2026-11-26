@@ -22,18 +22,18 @@ Base impactor filter that only allows hits whose contact point is inside a colli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ImpactorAreaFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ImpactorAreaFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> | Shared buffer for the overlap check (20 slots). |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger used when `IsLogging` is on. |
-| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> | Layers the overlap check looks at. |
+| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> | <span className="api-desc">Shared buffer for the overlap check (20 slots).</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger used when `IsLogging` is on.</span> |
+| <Link id="m-targetlayer" /><code>{"private LayerMask targetLayer"}</code> | <span className="api-desc">Layers the overlap check looks at.</span> |
 
 </details>
 
@@ -41,10 +41,10 @@ Base impactor filter that only allows hits whose contact point is inside a colli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islogging" /><code>{"static bool IsLogging { get; set; }"}</code> | When true, logs how many colliders each check found. |
+| <Link id="m-islogging" /><code>{"static bool IsLogging { get; set; }"}</code> | <span className="api-desc">When true, logs how many colliders each check found.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkfilter" /><code>{"override bool CheckFilter("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> | Checks a tiny sphere at the contact point for a collider with `T`; multiplier 1 if found, else 0. |
+| <Link id="m-checkfilter" /><code>{"override bool CheckFilter("}<Link to="/mod/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> | <span className="api-desc">Checks a tiny sphere at the contact point for a collider with `T`; multiplier 1 if found, else 0.</span> |

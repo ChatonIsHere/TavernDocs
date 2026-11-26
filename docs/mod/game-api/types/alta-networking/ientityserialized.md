@@ -21,4 +21,4 @@ Something that has an `EntitySerializer` for its full network data. Implemented 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializer" /><code><Link to="/mod/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> | The entity's serializer. |
+| <Link id="m-serializer" /><code><Link to="/mod/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" Serializer { get; }"}</code> | <span className="api-desc">The entity's serializer.</span> |

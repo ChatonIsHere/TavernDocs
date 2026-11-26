@@ -28,4 +28,8 @@ Flags for which platform feature set a server runs: PC, mobile or both. Chosen b
 
 Members of other types that take, return or hold a `FeatureSetFlags`:
 
+<div className="api-used-in">
+
 [`ServerFeatureSetProvider.FeatureSet`](/mod/game-api/types/game-other-namespaces/serverfeaturesetprovider#m-featureset), [`ServerFeatureSetProvider.GetEditorServerType`](/mod/game-api/types/game-other-namespaces/serverfeaturesetprovider#m-geteditorservertype), [`ServerFeatureSetProvider.GetServerType`](/mod/game-api/types/game-other-namespaces/serverfeaturesetprovider#m-getservertype), [`ServerFeatureSetProvider.serverType`](/mod/game-api/types/game-other-namespaces/serverfeaturesetprovider#m-servertype).
+
+</div>

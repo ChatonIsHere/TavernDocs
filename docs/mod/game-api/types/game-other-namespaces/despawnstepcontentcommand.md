@@ -20,10 +20,14 @@ Message the server sends to one player through the micro tutorial `SyncControlle
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-microtutorialstep" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> | The step whose content should be despawned. |
+| <Link id="m-microtutorialstep" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> | <span className="api-desc">The step whose content should be despawned.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DespawnStepContentCommand`:
 
+<div className="api-used-in">
+
 [`ISyncController.NotifyClientToDespawnStep`](/mod/game-api/types/game-other-namespaces/isynccontroller#m-notifyclienttodespawnstep), [`SyncController.NotifyClientToDespawnStep`](/mod/game-api/types/game-other-namespaces/synccontroller#m-notifyclienttodespawnstep), [`SyncController.notifyClientToDespawnTutorial`](/mod/game-api/types/game-other-namespaces/synccontroller#m-notifyclienttodespawntutorial), [`SyncController.SyncNotifyPlayerToDespawnTutorial`](/mod/game-api/types/game-other-namespaces/synccontroller#m-syncnotifyplayertodespawntutorial).
+
+</div>

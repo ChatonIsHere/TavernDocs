@@ -28,4 +28,8 @@ Whose voices the local player can hear (`VoiceChat.AudibleScope`): no one, frien
 
 Members of other types that take, return or hold a `VoiceChatScope`:
 
+<div className="api-used-in">
+
 [`IVoiceChat.AudibleScope`](/mod/game-api/types/alta-networking/ivoicechat#m-audiblescope), [`VoiceChat.AudibleScope`](/mod/game-api/types/alta-networking/voicechat#m-audiblescope).
+
+</div>

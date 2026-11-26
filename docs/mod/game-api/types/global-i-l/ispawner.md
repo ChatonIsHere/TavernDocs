@@ -21,4 +21,4 @@ A spawner that remembers what it last spawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastspawned" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" LastSpawned { get; }"}</code> | The entity it spawned most recently. |
+| <Link id="m-lastspawned" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" LastSpawned { get; }"}</code> | <span className="api-desc">The entity it spawned most recently.</span> |

@@ -21,18 +21,22 @@ One step of a running micro tutorial and the content it has spawned. `StepInstan
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The step's name from its settings. |
-| <Link id="m-settings" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" Settings { get; }"}</code> | The `MicroTutorialStep` asset this step runs. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">The step's name from its settings.</span> |
+| <Link id="m-settings" /><code><Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" Settings { get; }"}</code> | <span className="api-desc">The `MicroTutorialStep` asset this step runs.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-despawnstaticcontent" /><code>{"void DespawnStaticContent()"}</code> | Removes the step's spawned static content. |
-| <Link id="m-spawnadditionalstaticcontent" /><code>{"void SpawnAdditionalStaticContent()"}</code> | Spawns the step's extra static content. |
+| <Link id="m-despawnstaticcontent" /><code>{"void DespawnStaticContent()"}</code> | <span className="api-desc">Removes the step's spawned static content.</span> |
+| <Link id="m-spawnadditionalstaticcontent" /><code>{"void SpawnAdditionalStaticContent()"}</code> | <span className="api-desc">Spawns the step's extra static content.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IStepInstance`:
 
+<div className="api-used-in">
+
 [`ClientStepInstanceMap.Add`](/mod/game-api/types/game-other-namespaces/clientstepinstancemap#m-add), [`ClientStepInstanceMap.clientMap`](/mod/game-api/types/game-other-namespaces/clientstepinstancemap#m-clientmap), [`ClientStepInstanceMap.GetSteps`](/mod/game-api/types/game-other-namespaces/clientstepinstancemap#m-getsteps), [`ClientStepInstanceMap.TryGet`](/mod/game-api/types/game-other-namespaces/clientstepinstancemap#m-tryget).
+
+</div>

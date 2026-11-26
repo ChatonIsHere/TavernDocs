@@ -35,4 +35,8 @@ Body slots armour can go in: head, shoulders, arms, chest and tassets. Used as t
 
 Members of other types that take, return or hold a `EquipmentSlot`:
 
+<div className="api-used-in">
+
 [`PlayerEquipmentDefinition.armorSlot`](/mod/game-api/types/alta-customization/playerequipmentdefinition#m-armorslot), [`PlayerEquipmentDefinition.ArmorSlot`](/mod/game-api/types/alta-customization/playerequipmentdefinition#m-armorslot-2).
+
+</div>

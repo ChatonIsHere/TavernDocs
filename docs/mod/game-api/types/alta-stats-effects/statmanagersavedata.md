@@ -25,12 +25,12 @@ Save data for a `StatManager` (save structure version 2): stat values, timed mod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> | Creates a `StatManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> | <span className="api-desc">Creates a `StatManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-indirectmodifiers" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier">{"StatManagerSaveData.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> | Saved indirect modifiers, each with its stat, time and modifier list. |
-| <Link id="m-modifiers" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{"[] modifiers"}</code> | Saved timed modifiers: stat, value, whether it multiplies, and time. |
-| <Link id="m-stats" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> | Saved stat values. |
+| <Link id="m-indirectmodifiers" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier">{"StatManagerSaveData.IndirectStatModifier"}</Link>{"[] indirectModifiers"}</code> | <span className="api-desc">Saved indirect modifiers, each with its stat, time and modifier list.</span> |
+| <Link id="m-modifiers" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier">{"StatManagerSaveData.TimedModifier"}</Link>{"[] modifiers"}</code> | <span className="api-desc">Saved timed modifiers: stat, value, whether it multiplies, and time.</span> |
+| <Link id="m-stats" /><code><Link to="/mod/game-api/types/alta-stats-effects/statmanagersavedatastat">{"StatManagerSaveDataStat"}</Link>{"[] stats"}</code> | <span className="api-desc">Saved stat values.</span> |

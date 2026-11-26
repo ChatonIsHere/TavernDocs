@@ -22,11 +22,11 @@ Helpers for making `IDisposable` objects from actions.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-empty" /><code>{"static readonly IDisposable Empty"}</code> | A disposable that does nothing. |
+| <Link id="m-empty" /><code>{"static readonly IDisposable Empty"}</code> | <span className="api-desc">A disposable that does nothing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"static IDisposable Create(Action disposeAction)"}</code> | Returns a disposable that runs the action once when disposed. |
-| <Link id="m-createwithstate" /><code>{"static IDisposable CreateWithState<TState>(TState state, Action<TState> disposeAction)"}</code> | Returns a disposable that runs the action with the given state once when disposed. |
+| <Link id="m-create" /><code>{"static IDisposable Create(Action disposeAction)"}</code> | <span className="api-desc">Returns a disposable that runs the action once when disposed.</span> |
+| <Link id="m-createwithstate" /><code>{"static IDisposable CreateWithState<TState>(TState state, Action<TState> disposeAction)"}</code> | <span className="api-desc">Returns a disposable that runs the action with the given state once when disposed.</span> |

@@ -23,4 +23,4 @@ Editor menu folder `File/Export`: menu item classes inherit it to appear under t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Export()"}</code> | Creates an `AltaMenuItemBase.File.Export` with default values. |
+| <Link id="m-ctor" /><code>{"protected Export()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.File.Export` with default values.</span> |

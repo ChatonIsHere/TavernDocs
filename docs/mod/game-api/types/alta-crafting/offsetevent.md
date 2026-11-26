@@ -20,20 +20,20 @@ Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> | Creates an `OffsetEvent` from `timeline`, `minimumDelay`, `offsetDelay` and `delayedEvent`. |
+| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> | <span className="api-desc">Creates an `OffsetEvent` from `timeline`, `minimumDelay`, `offsetDelay` and `delayedEvent`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delayedevent" /><code>{"private Action delayedEvent"}</code> | The action to run. |
-| <Link id="m-lastoffset" /><code>{"private TimeSpan lastOffset"}</code> | Timeline time of the last `Offset` (or creation). |
-| <Link id="m-minimumdelay" /><code>{"private TimeSpan minimumDelay"}</code> | Quiet time needed after the last offset before the action runs. |
-| <Link id="m-offsetdelay" /><code>{"private TimeSpan offsetDelay"}</code> | Delay before each check. |
-| <Link id="m-timeline" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline"}</code> | Timeline used for timing and scheduling checks. |
+| <Link id="m-delayedevent" /><code>{"private Action delayedEvent"}</code> | <span className="api-desc">The action to run.</span> |
+| <Link id="m-lastoffset" /><code>{"private TimeSpan lastOffset"}</code> | <span className="api-desc">Timeline time of the last `Offset` (or creation).</span> |
+| <Link id="m-minimumdelay" /><code>{"private TimeSpan minimumDelay"}</code> | <span className="api-desc">Quiet time needed after the last offset before the action runs.</span> |
+| <Link id="m-offsetdelay" /><code>{"private TimeSpan offsetDelay"}</code> | <span className="api-desc">Delay before each check.</span> |
+| <Link id="m-timeline" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline"}</code> | <span className="api-desc">Timeline used for timing and scheduling checks.</span> |
 
 </details>
 
@@ -41,14 +41,14 @@ Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-offset" /><code>{"void Offset()"}</code> | Pushes the action back, counting the delay from now. |
+| <Link id="m-offset" /><code>{"void Offset()"}</code> | <span className="api-desc">Pushes the action back, counting the delay from now.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"private void Check()"}</code> | Runs the action if enough time has passed since the last offset, otherwise checks again later. |
+| <Link id="m-check" /><code>{"private void Check()"}</code> | <span className="api-desc">Runs the action if enough time has passed since the last offset, otherwise checks again later.</span> |
 
 </details>
 
@@ -56,4 +56,8 @@ Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called 
 
 Members of other types that take, return or hold a `OffsetEvent`:
 
+<div className="api-used-in">
+
 [`OffsetEventHelper.CreateOffset`](/mod/game-api/types/alta-crafting/offseteventhelper#m-createoffset).
+
+</div>

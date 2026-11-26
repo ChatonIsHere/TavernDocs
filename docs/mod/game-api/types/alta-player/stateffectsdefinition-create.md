@@ -22,4 +22,4 @@ Editor menu item under Assets/Create/Township/Features/Stats that makes a new `S
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StatEffectsDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StatEffectsDefinition.Create` with default values.</span> |

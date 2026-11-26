@@ -22,17 +22,21 @@ Base asset that describes how items stack in a space. It makes a `StackingInstru
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected StackingInstructions()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos(Transform transform)"}</code> | Editor: draws the stacking layout. Does nothing unless a subclass overrides it. |
-| <Link id="m-getsetup" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> | Creates the stacking setup for a box with these bounds and this local-to-world matrix. |
+| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos(Transform transform)"}</code> | <span className="api-desc">Editor: draws the stacking layout. Does nothing unless a subclass overrides it.</span> |
+| <Link id="m-getsetup" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-items/stackinginstructionsetup">{"StackingInstructionSetup"}</Link>{" GetSetup(Bounds bounds, Matrix4x4 localToWorld)"}</code> | <span className="api-desc">Creates the stacking setup for a box with these bounds and this local-to-world matrix.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StackingInstructions`:
 
+<div className="api-used-in">
+
 [`StackingComponent.instructions`](/mod/game-api/types/alta-items/stackingcomponent#m-instructions), [`StackingInstructionSetup.Setup`](/mod/game-api/types/alta-items/stackinginstructionsetup#m-setup), [`StackingInstructionSetup<T>.Setup`](/mod/game-api/types/alta-items/stackinginstructionsetup-t#m-setup).
+
+</div>

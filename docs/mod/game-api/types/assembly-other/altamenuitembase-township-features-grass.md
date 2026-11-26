@@ -22,4 +22,4 @@ Editor menu folder `Township/Features/Grass`: menu item classes inherit it to ap
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Grass()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Grass` with default values. |
+| <Link id="m-ctor" /><code>{"protected Grass()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Features.Grass` with default values.</span> |

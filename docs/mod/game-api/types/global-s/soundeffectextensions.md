@@ -21,4 +21,4 @@ Extension method to turn a `SoundEffect` enum value into its sound set.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resolve" /><code>{"static "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" effect, GameObject context)"}</code> | Looks up the `SoundEffectSet` for this effect through `AudioManager.Instance` for the given object. |
+| <Link id="m-resolve" /><code>{"static "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Resolve("}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" effect, GameObject context)"}</code> | <span className="api-desc">Looks up the `SoundEffectSet` for this effect through `AudioManager.Instance` for the given object.</span> |

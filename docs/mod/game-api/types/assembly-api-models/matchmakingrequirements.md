@@ -20,17 +20,21 @@ Body of the Alta web API call that picks the best server to join (`GetBestServer
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> | Creates a `MatchMakingRequirements` with default values. |
+| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> | <span className="api-desc">Creates a `MatchMakingRequirements` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> | Scene the server must run. `MatchMakingClient` sends 1. |
-| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> | Optional target value for the match. |
+| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> | <span className="api-desc">Scene the server must run. `MatchMakingClient` sends 1.</span> |
+| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> | <span className="api-desc">Optional target value for the match.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MatchMakingRequirements`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetBestServer`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getbestserver).
+
+</div>

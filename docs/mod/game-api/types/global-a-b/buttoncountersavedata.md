@@ -23,16 +23,20 @@ Save data for a `ButtonCounter`: its current amount.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> | Creates a `ButtonCounterSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> | <span className="api-desc">Creates a `ButtonCounterSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> | The counter's `Amount` when saved, restored on load. |
+| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> | <span className="api-desc">The counter's `Amount` when saved, restored on load.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ButtonCounterSaveData`:
 
+<div className="api-used-in">
+
 [`ButtonCounter.Load`](/mod/game-api/types/global-a-b/buttoncounter#m-load), [`ButtonCounter.Save`](/mod/game-api/types/global-a-b/buttoncounter#m-save).
+
+</div>

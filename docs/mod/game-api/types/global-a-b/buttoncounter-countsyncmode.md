@@ -28,4 +28,8 @@ When a `ButtonCounter` syncs its amount: immediately on each change, or after th
 
 Members of other types that take, return or hold a `CountSyncMode`:
 
+<div className="api-used-in">
+
 [`ButtonCounter.CheckSync`](/mod/game-api/types/global-a-b/buttoncounter#m-checksync), [`ButtonCounter.syncMode`](/mod/game-api/types/global-a-b/buttoncounter#m-syncmode), [`ButtonCounter.SyncMode`](/mod/game-api/types/global-a-b/buttoncounter#m-syncmode-2).
+
+</div>

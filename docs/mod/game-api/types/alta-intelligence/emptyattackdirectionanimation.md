@@ -21,24 +21,24 @@ Do-nothing `IAttackDirectionAnimation` used by `AttackDirectionCore` when a laye
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyAttackDirectionAnimation()"}</code> | Creates an `EmptyAttackDirectionAnimation` with default values. |
+| <Link id="m-ctor" /><code>{"EmptyAttackDirectionAnimation()"}</code> | <span className="api-desc">Creates an `EmptyAttackDirectionAnimation` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/emptyattackdirectionanimation">{"EmptyAttackDirectionAnimation"}</Link>{" Instance { get; }"}</code> | The single shared instance. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/emptyattackdirectionanimation">{"EmptyAttackDirectionAnimation"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The single shared instance.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Disable()"}</code> | Does nothing. |
-| <Link id="m-setdirection" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.SetDirection(int direction)"}</code> | Does nothing. |
-| <Link id="m-setup" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Setup("}<Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, string parameterName)"}</code> | Does nothing. |
-| <Link id="m-update" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Update(float lerp)"}</code> | Does nothing. |
+| <Link id="m-disable" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Disable()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-setdirection" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.SetDirection(int direction)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-setup" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Setup("}<Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, string parameterName)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-update" /><code>{"private void Alta.Intelligence.IAttackDirectionAnimation.Update(float lerp)"}</code> | <span className="api-desc">Does nothing.</span> |
 
 </details>

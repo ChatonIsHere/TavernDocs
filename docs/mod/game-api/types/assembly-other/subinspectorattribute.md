@@ -21,4 +21,4 @@ Inspector attribute, probably to draw a referenced object's fields inline. No co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SubInspectorAttribute()"}</code> | Creates a `SubInspectorAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"SubInspectorAttribute()"}</code> | <span className="api-desc">Creates a `SubInspectorAttribute` with default values.</span> |

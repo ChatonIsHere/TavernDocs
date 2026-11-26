@@ -27,4 +27,8 @@ File formats for screenshots taken by `ScreenshotTaker`.
 
 Members of other types that take, return or hold a `ImageFormat`:
 
+<div className="api-used-in">
+
 [`TextureOutput.ImageFormat`](/mod/game-api/types/global-t-x/textureoutput#m-imageformat), [`TextureOutput.TextureOutput`](/mod/game-api/types/global-t-x/textureoutput#m-ctor-2).
+
+</div>

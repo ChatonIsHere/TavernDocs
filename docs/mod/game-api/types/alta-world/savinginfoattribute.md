@@ -21,17 +21,17 @@ Attribute that gives a type a fixed saving hash, from a string or a number. With
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> | Creates a `SavingInfoAttribute` from `hash` and `isTag`. |
-| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> | Creates a `SavingInfoAttribute` from `hash` and `isTag`. |
+| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> | <span className="api-desc">Creates a `SavingInfoAttribute` from `hash` and `isTag`.</span> |
+| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> | <span className="api-desc">Creates a `SavingInfoAttribute` from `hash` and `isTag`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> | Cache of hashes by type. |
+| <Link id="m-savinghashes" /><code>{"private static Dictionary<Type, uint> savingHashes"}</code> | <span className="api-desc">Cache of hashes by type.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Attribute that gives a type a fixed saving hash, from a string or a number. With
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | The hash this attribute sets. |
-| <Link id="m-istag" /><code>{"bool IsTag { get; }"}</code> | Whether the type is a tag. |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | <span className="api-desc">The hash this attribute sets.</span> |
+| <Link id="m-istag" /><code>{"bool IsTag { get; }"}</code> | <span className="api-desc">Whether the type is a tag.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethash" /><code>{"static uint GetHash(Type type)"}</code> | The type's saving hash: from its attribute if set and non-zero, otherwise a hash of its name. Cached. |
+| <Link id="m-gethash" /><code>{"static uint GetHash(Type type)"}</code> | <span className="api-desc">The type's saving hash: from its attribute if set and non-zero, otherwise a hash of its name. Cached.</span> |

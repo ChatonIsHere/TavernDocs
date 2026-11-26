@@ -29,4 +29,8 @@ Outcome of a friend request: befriended, request sent, already friends or alread
 
 Members of other types that take, return or hold a `FriendRequestedType`:
 
+<div className="api-used-in">
+
 [`ISocialClient.AddFriend`](/mod/game-api/types/assembly-api-client/isocialclient#m-addfriend), [`OfflineSocialClient.AddFriend`](/mod/game-api/types/assembly-api-client/offlinesocialclient#m-addfriend), [`SocialClient.AddFriend`](/mod/game-api/types/assembly-api-client/socialclient#m-addfriend), [`FriendRequestResult.Result`](/mod/game-api/types/assembly-api-models/friendrequestresult#m-result), [`SocialService.AcceptFriendRequest`](/mod/game-api/types/global-s/socialservice#m-acceptfriendrequest), [`SocialService.RequestFriend`](/mod/game-api/types/global-s/socialservice#m-requestfriend).
+
+</div>

@@ -22,10 +22,10 @@ Save data for a `ChildSyncableCollection`: one saved element per child, in child
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChildSyncableCollectionSaveData()"}</code> | Creates a `ChildSyncableCollectionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ChildSyncableCollectionSaveData()"}</code> | <span className="api-desc">Creates a `ChildSyncableCollectionSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elements" /><code>{"TData[] elements"}</code> | Saved data for each child, by index. |
+| <Link id="m-elements" /><code>{"TData[] elements"}</code> | <span className="api-desc">Saved data for each child, by index.</span> |

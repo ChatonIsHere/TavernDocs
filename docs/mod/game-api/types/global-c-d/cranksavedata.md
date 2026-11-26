@@ -23,10 +23,10 @@ Save structure (version 1) for a `Crank`: stores its current value. Internal; us
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CrankSaveData()"}</code> | Creates a `CrankSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CrankSaveData()"}</code> | <span className="api-desc">Creates a `CrankSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"float value"}</code> | The crank's saved value. |
+| <Link id="m-value" /><code>{"float value"}</code> | <span className="api-desc">The crank's saved value.</span> |

@@ -23,17 +23,17 @@ Private list of pointer names to skip, read from `PointersSkip.json` in the stor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Skip()"}</code> | Creates a `StaticChunkContentManager.Skip` with default values. |
+| <Link id="m-ctor" /><code>{"Skip()"}</code> | <span className="api-desc">Creates a `StaticChunkContentManager.Skip` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world/staticchunkcontentmanager-skip">{"StaticChunkContentManager.Skip"}</Link>{" current"}</code> | The loaded skip list. |
-| <Link id="m-data" /><code>{"private string[] data"}</code> | The pointer names to skip. |
+| <Link id="m-current" /><code>{"private static "}<Link to="/mod/game-api/types/alta-world/staticchunkcontentmanager-skip">{"StaticChunkContentManager.Skip"}</Link>{" current"}</code> | <span className="api-desc">The loaded skip list.</span> |
+| <Link id="m-data" /><code>{"private string[] data"}</code> | <span className="api-desc">The pointer names to skip.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Private list of pointer names to skip, read from `PointersSkip.json` in the stor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getskipping" /><code>{"static async Task<bool> GetSkipping(string pointer)"}</code> | True if the pointer name is in the skip list. Loads (or creates) the file on first call. |
+| <Link id="m-getskipping" /><code>{"static async Task<bool> GetSkipping(string pointer)"}</code> | <span className="api-desc">True if the pointer name is in the skip list. Loads (or creates) the file on first call.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> | Shallow copy. |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> | <span className="api-desc">Shallow copy.</span> |
 
 </details>

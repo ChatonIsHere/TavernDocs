@@ -22,17 +22,21 @@ Pair of sound and visual effects played when a quick access bubble is selected, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-active" /><code><Link to="/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" active"}</code> | Effects played when the selected bubble's action is active. |
-| <Link id="m-inactive" /><code><Link to="/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" inactive"}</code> | Effects played when the selected bubble's action is inactive. |
+| <Link id="m-active" /><code><Link to="/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" active"}</code> | <span className="api-desc">Effects played when the selected bubble's action is active.</span> |
+| <Link id="m-inactive" /><code><Link to="/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit"}</Link>{" inactive"}</code> | <span className="api-desc">Effects played when the selected bubble's action is inactive.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/mod/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> | Plays the sound and visual effect for the bubble, using the active or inactive set depending on its state. |
+| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/mod/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> | <span className="api-desc">Plays the sound and visual effect for the bubble, using the active or inactive set depending on its state.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `QuickAccessMenuBubbleSelectEvent`:
 
+<div className="api-used-in">
+
 [`QuickAccessMenuSettings.onSelectBubbleEvents`](/mod/game-api/types/alta-player/quickaccessmenusettings#m-onselectbubbleevents).
+
+</div>

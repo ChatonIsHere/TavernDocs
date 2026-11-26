@@ -21,4 +21,4 @@ Request body for changing a user's email and username. Adds nothing to `EmailAnd
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateUserInfoRequest()"}</code> | Creates an `UpdateUserInfoRequest` with default values. |
+| <Link id="m-ctor" /><code>{"UpdateUserInfoRequest()"}</code> | <span className="api-desc">Creates an `UpdateUserInfoRequest` with default values.</span> |

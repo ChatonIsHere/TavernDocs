@@ -18,12 +18,12 @@ Packs NLog log events into byte buffers for sending to a remote console; used by
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for oversized messages. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for oversized messages.</span> |
 
 </details>
 
@@ -31,4 +31,4 @@ Packs NLog log events into byte buffers for sending to a remote console; used by
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializelogevent" /><code>{"static int SerializeLogEvent(LogEventInfo log, byte[] buffer, int offset)"}</code> | Writes a 2-byte length, timestamp ticks, level and UTF-8 message into the buffer. Returns bytes written, or -1 if the message is too long. |
+| <Link id="m-serializelogevent" /><code>{"static int SerializeLogEvent(LogEventInfo log, byte[] buffer, int offset)"}</code> | <span className="api-desc">Writes a 2-byte length, timestamp ticks, level and UTF-8 message into the buffer. Returns bytes written, or -1 if the message is too long.</span> |

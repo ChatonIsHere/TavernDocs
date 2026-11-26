@@ -22,25 +22,25 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> | Creates an `ActionTarget` from `action`, `target` and `weight`. |
+| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> | <span className="api-desc">Creates an `ActionTarget` from `action`, `target` and `weight`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-action" /><code>{"readonly "}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> Action"}</code> | The action to do. |
-| <Link id="m-target" /><code>{"readonly "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target"}</code> | What the action is aimed at. |
-| <Link id="m-weight" /><code>{"readonly float Weight"}</code> | The choice's score. |
+| <Link id="m-action" /><code>{"readonly "}<Link to="/mod/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> Action"}</code> | <span className="api-desc">The action to do.</span> |
+| <Link id="m-target" /><code>{"readonly "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target"}</code> | <span className="api-desc">What the action is aimed at.</span> |
+| <Link id="m-weight" /><code>{"readonly float Weight"}</code> | <span className="api-desc">The choice's score.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> | Explicit interface property returning the `Target` field. |
-| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> | Explicit interface property returning the `Weight` field. |
+| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> | <span className="api-desc">Explicit interface property returning the `Target` field.</span> |
+| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> | <span className="api-desc">Explicit interface property returning the `Weight` field.</span> |
 
 </details>
 
@@ -48,4 +48,8 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 
 Members of other types that take, return or hold a `ActionTarget&lt;TAgent>`:
 
+<div className="api-used-in">
+
 [`ActionDecider<TAgent>.CurrentAction`](/mod/game-api/types/alta-intelligence/actiondecider-tagent#m-currentaction), [`ActionDecider<TAgent>.GetBestAction`](/mod/game-api/types/alta-intelligence/actiondecider-tagent#m-getbestaction), [`ActionDecider<TAgent>.GetBestBaseAction`](/mod/game-api/types/alta-intelligence/actiondecider-tagent#m-getbestbaseaction), [`ActionDecider<TAgent>.GetBestTargetAction`](/mod/game-api/types/alta-intelligence/actiondecider-tagent#m-getbesttargetaction), [`Agent<TThis>.currentAction`](/mod/game-api/types/alta-intelligence/agent-tthis#m-currentaction), [`Agent<TThis>.GetBestAction`](/mod/game-api/types/alta-intelligence/agent-tthis#m-getbestaction), [`Agent<TThis>.PreviewAction`](/mod/game-api/types/alta-intelligence/agent-tthis#m-previewaction), [`Agent<TThis>.StartAction`](/mod/game-api/types/alta-intelligence/agent-tthis#m-startaction), [`Dragonfly.Stunned`](/mod/game-api/types/alta-intelligence/dragonfly#m-stunned), [`Dragonfly.stunnedActionMap`](/mod/game-api/types/alta-intelligence/dragonfly#m-stunnedactionmap), [`Gotera.Stunned`](/mod/game-api/types/alta-intelligence/gotera#m-stunned), [`Gotera.stunnedActionMap`](/mod/game-api/types/alta-intelligence/gotera#m-stunnedactionmap), [`GreaterGotera.Stunned`](/mod/game-api/types/alta-intelligence/greatergotera#m-stunned), [`GreaterGotera.stunnedActionMap`](/mod/game-api/types/alta-intelligence/greatergotera#m-stunnedactionmap), [`Phantom.actionTargetMap`](/mod/game-api/types/alta-intelligence/phantom#m-actiontargetmap), [`Spriggull.flailingAction`](/mod/game-api/types/alta-intelligence/spriggull#m-flailingaction), [`Turabada.Stunned`](/mod/game-api/types/alta-intelligence/turabada#m-stunned), [`Turabada.stunnedActionMap`](/mod/game-api/types/alta-intelligence/turabada#m-stunnedactionmap).
+
+</div>

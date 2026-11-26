@@ -22,4 +22,4 @@ TavernLib's static events, which mods subscribe to. Both sides.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-socketcreated" /><code>{"static readonly "}<Link to="/mod/tavernlib-api/types/utils/tavernevents-tavernevent-t">{"TavernEvents.TavernEvent"}</Link>{"<"}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> SocketCreated"}</code> | Raised with the new socket each time the game makes its network socket, from a postfix on the `Socket` constructor. |
+| <Link id="m-socketcreated" /><code>{"static readonly "}<Link to="/mod/tavernlib-api/types/utils/tavernevents-tavernevent-t">{"TavernEvents.TavernEvent"}</Link>{"<"}<Link to="/mod/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> SocketCreated"}</code> | <span className="api-desc">Raised with the new socket each time the game makes its network socket, from a postfix on the `Socket` constructor.</span> |

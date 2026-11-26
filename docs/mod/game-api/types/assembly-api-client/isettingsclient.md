@@ -21,11 +21,15 @@ Alta web API calls for named settings stored as text. `ApiAccess.ApiClient.Setti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsettings" /><code>{"Task<string> GetSettings(string name)"}</code> | Gets the content of a named setting. |
-| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> | Saves the content of a named setting. |
+| <Link id="m-getsettings" /><code>{"Task<string> GetSettings(string name)"}</code> | <span className="api-desc">Gets the content of a named setting.</span> |
+| <Link id="m-setsettings" /><code>{"Task SetSettings(string name, string content)"}</code> | <span className="api-desc">Saves the content of a named setting.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISettingsClient`:
 
+<div className="api-used-in">
+
 [`HighLevelApiClient.SettingsClient`](/mod/game-api/types/assembly-api-client/highlevelapiclient#m-settingsclient), [`IHighLevelApiClient.SettingsClient`](/mod/game-api/types/assembly-api-client/ihighlevelapiclient#m-settingsclient), [`OfflineHighLevelApiClient.SettingsClient`](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient#m-settingsclient).
+
+</div>

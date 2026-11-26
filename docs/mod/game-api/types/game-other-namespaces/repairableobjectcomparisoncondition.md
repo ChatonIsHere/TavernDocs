@@ -23,17 +23,17 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RepairableObjectComparisonCondition()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RepairableObjectComparisonCondition()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> | Set once save data has loaded. |
-| <Link id="m-repairableobjects" /><code>{"private List<"}<Link to="/mod/game-api/types/game-other-namespaces/repairableobject">{"RepairableObject"}</Link>{"> repairableObjects"}</code> | Object hashes with their required state. Loading appends the saved entries to this list rather than replacing it. |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> | <span className="api-desc">Set once save data has loaded.</span> |
+| <Link id="m-repairableobjects" /><code>{"private List<"}<Link to="/mod/game-api/types/game-other-namespaces/repairableobject">{"RepairableObject"}</Link>{"> repairableObjects"}</code> | <span className="api-desc">Object hashes with their required state. Loading appends the saved entries to this list rather than replacing it.</span> |
 
 </details>
 
@@ -41,21 +41,21 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | Change callback, run on any static object change and after loading. |
+| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | <span className="api-desc">Change callback, run on any static object change and after loading.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | False before load; otherwise true only if every object's modified state matches its requirement. |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet()"}</code> | <span className="api-desc">False before load; otherwise true only if every object's modified state matches its requirement.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-notifyeventlistenersofobjectchange" /><code>{"private void NotifyEventListenersOfObjectChange(uint objectHash, bool isModified)"}</code> | Runs `OnConditionChanged` whenever any modifiable static object changes. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks `ModifiableStaticManager.ObjectChanged`. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks `ModifiableStaticManager.ObjectChanged`. |
+| <Link id="m-notifyeventlistenersofobjectchange" /><code>{"private void NotifyEventListenersOfObjectChange(uint objectHash, bool isModified)"}</code> | <span className="api-desc">Runs `OnConditionChanged` whenever any modifiable static object changes.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Unhooks `ModifiableStaticManager.ObjectChanged`.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Hooks `ModifiableStaticManager.ObjectChanged`.</span> |
 
 </details>

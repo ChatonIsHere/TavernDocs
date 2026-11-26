@@ -23,16 +23,16 @@ A named set of prefabs and quantities that the server spawns with `PackageManage
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-package" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> package"}</code> | Backing field for `Package`. |
+| <Link id="m-package" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> package"}</code> | <span className="api-desc">Backing field for `Package`.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ A named set of prefabs and quantities that the server spawns with `PackageManage
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-package-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> Package { get; }"}</code> | The prefabs in the package, each with a quantity. |
+| <Link id="m-package-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world-generation/debugpackage-prefabquantity">{"DebugPackage.PrefabQuantity"}</Link>{"> Package { get; }"}</code> | <span className="api-desc">The prefabs in the package, each with a quantity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DebugPackage`:
 
+<div className="api-used-in">
+
 [`PackageManager.DelayedSpawn`](/mod/game-api/types/alta-world-generation/packagemanager#m-delayedspawn), [`PackageManager.packageMap`](/mod/game-api/types/alta-world-generation/packagemanager#m-packagemap), [`PackageManager.PackageMap`](/mod/game-api/types/alta-world-generation/packagemanager#m-packagemap-2).
+
+</div>

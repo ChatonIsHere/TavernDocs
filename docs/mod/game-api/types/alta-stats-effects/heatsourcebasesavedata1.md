@@ -22,18 +22,18 @@ Old version 1 save data for a `HeatSourceBase`, kept so old saves load.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> | Creates a `HeatSourceBaseSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> | <span className="api-desc">Creates a `HeatSourceBaseSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islit" /><code>{"bool isLit"}</code> | Whether the heat source was lit. |
-| <Link id="m-progress" /><code>{"float progress"}</code> | The heat source's progress value. |
-| <Link id="m-time" /><code>{"float time"}</code> | Saved time in seconds. |
+| <Link id="m-islit" /><code>{"bool isLit"}</code> | <span className="api-desc">Whether the heat source was lit.</span> |
+| <Link id="m-progress" /><code>{"float progress"}</code> | <span className="api-desc">The heat source's progress value.</span> |
+| <Link id="m-time" /><code>{"float time"}</code> | <span className="api-desc">Saved time in seconds.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `HeatSourceBaseSaveData`, turning `time` from seconds into a `TimeSpan`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `HeatSourceBaseSaveData`, turning `time` from seconds into a `TimeSpan`.</span> |

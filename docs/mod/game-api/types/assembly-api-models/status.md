@@ -21,20 +21,24 @@ Status of an Agones game server: its state, address and ports.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Status()"}</code> | Creates a `Status` with default values. |
+| <Link id="m-ctor" /><code>{"Status()"}</code> | <span className="api-desc">Creates a `Status` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> | IP address of the game server. |
-| <Link id="m-gameservername" /><code>{"string GameServerName { get; set; }"}</code> | Name of the Agones game server. |
-| <Link id="m-nodename" /><code>{"string NodeName { get; set; }"}</code> | Kubernetes node the server runs on. |
-| <Link id="m-ports" /><code><Link to="/mod/game-api/types/assembly-api-models/portconfig">{"PortConfig"}</Link>{"[] Ports { get; set; }"}</code> | Ports the server has been given. |
-| <Link id="m-state" /><code><Link to="/mod/game-api/types/assembly-api-models/status-gameserverstate">{"Status.GameServerState"}</Link>{" State { get; set; }"}</code> | Current Agones state, such as `Ready` or `Allocated`. |
+| <Link id="m-address" /><code>{"IPAddress Address { get; set; }"}</code> | <span className="api-desc">IP address of the game server.</span> |
+| <Link id="m-gameservername" /><code>{"string GameServerName { get; set; }"}</code> | <span className="api-desc">Name of the Agones game server.</span> |
+| <Link id="m-nodename" /><code>{"string NodeName { get; set; }"}</code> | <span className="api-desc">Kubernetes node the server runs on.</span> |
+| <Link id="m-ports" /><code><Link to="/mod/game-api/types/assembly-api-models/portconfig">{"PortConfig"}</Link>{"[] Ports { get; set; }"}</code> | <span className="api-desc">Ports the server has been given.</span> |
+| <Link id="m-state" /><code><Link to="/mod/game-api/types/assembly-api-models/status-gameserverstate">{"Status.GameServerState"}</Link>{" State { get; set; }"}</code> | <span className="api-desc">Current Agones state, such as `Ready` or `Allocated`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Status`:
 
+<div className="api-used-in">
+
 [`AgonesObject.Status`](/mod/game-api/types/assembly-api-models/agonesobject#m-status).
+
+</div>

@@ -21,17 +21,17 @@ Value provider used by `JsonRangeFloatAttribute`: clamps a float property betwee
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> | Creates a `JsonRangeFloatValueProvider` from `baseProvider`, `min` and `max`. |
+| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> | <span className="api-desc">Creates a `JsonRangeFloatValueProvider` from `baseProvider`, `min` and `max`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> | The upper limit. |
-| <Link id="m-min" /><code>{"private float min"}</code> | The lower limit. |
+| <Link id="m-max" /><code>{"private float max"}</code> | <span className="api-desc">The upper limit.</span> |
+| <Link id="m-min" /><code>{"private float min"}</code> | <span className="api-desc">The lower limit.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Value provider used by `JsonRangeFloatAttribute`: clamps a float property betwee
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | Clamps the value between `min` and `max`. |
+| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | <span className="api-desc">Clamps the value between `min` and `max`.</span> |

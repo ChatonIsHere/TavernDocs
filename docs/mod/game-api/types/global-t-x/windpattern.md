@@ -23,17 +23,17 @@ A ScriptableObject holding one wind speed and strength pair, used by the grass a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WindPattern()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"WindPattern()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> | Backing field for `WindSpeed`. |
-| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> | Backing field for `WindStrength`. |
+| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> | <span className="api-desc">Backing field for `WindSpeed`.</span> |
+| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> | <span className="api-desc">Backing field for `WindStrength`.</span> |
 
 </details>
 
@@ -41,17 +41,21 @@ A ScriptableObject holding one wind speed and strength pair, used by the grass a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-windspeed-2" /><code>{"float WindSpeed { get; }"}</code> | Wind speed. |
-| <Link id="m-windstrength-2" /><code>{"float WindStrength { get; }"}</code> | Wind strength. |
+| <Link id="m-windspeed-2" /><code>{"float WindSpeed { get; }"}</code> | <span className="api-desc">Wind speed.</span> |
+| <Link id="m-windstrength-2" /><code>{"float WindStrength { get; }"}</code> | <span className="api-desc">Wind strength.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"void Create(float windSpeed, float windStrength)"}</code> | Sets the speed and strength. |
+| <Link id="m-create" /><code>{"void Create(float windSpeed, float windStrength)"}</code> | <span className="api-desc">Sets the speed and strength.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WindPattern`:
 
+<div className="api-used-in">
+
 [`GrassManager.availablePatterns`](/mod/game-api/types/alta-world/grassmanager#m-availablepatterns), [`GrassManager.AvailablePatterns`](/mod/game-api/types/alta-world/grassmanager#m-availablepatterns-2), [`GrassManager.ReadPattern`](/mod/game-api/types/alta-world/grassmanager#m-readpattern), [`LocalWindManager.availablePatterns`](/mod/game-api/types/alta-world/localwindmanager#m-availablepatterns), [`LocalWindManager.AvailablePatterns`](/mod/game-api/types/alta-world/localwindmanager#m-availablepatterns-2), [`LocalWindManager.ReadPattern`](/mod/game-api/types/alta-world/localwindmanager#m-readpattern).
+
+</div>

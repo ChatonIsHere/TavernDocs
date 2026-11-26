@@ -21,17 +21,17 @@ Base for a typed shader property that can be set on a material or on a `Material
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> | Creates a `MaterialProperty` from `propertyName`. |
+| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> | <span className="api-desc">Creates a `MaterialProperty` from `propertyName`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-propertyindex" /><code>{"protected int PropertyIndex { get; }"}</code> | Shader property ID for the name given to the constructor. |
+| <Link id="m-propertyindex" /><code>{"protected int PropertyIndex { get; }"}</code> | <span className="api-desc">Shader property ID for the name given to the constructor.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setonmaterial" /><code>{"abstract void SetOnMaterial(T value, Material material)"}</code> | Sets the value on a material. |
-| <Link id="m-setonpropertyblock" /><code>{"abstract void SetOnPropertyBlock(T value, MaterialPropertyBlock propertyBlock)"}</code> | Sets the value on a `MaterialPropertyBlock`. |
+| <Link id="m-setonmaterial" /><code>{"abstract void SetOnMaterial(T value, Material material)"}</code> | <span className="api-desc">Sets the value on a material.</span> |
+| <Link id="m-setonpropertyblock" /><code>{"abstract void SetOnPropertyBlock(T value, MaterialPropertyBlock propertyBlock)"}</code> | <span className="api-desc">Sets the value on a `MaterialPropertyBlock`.</span> |

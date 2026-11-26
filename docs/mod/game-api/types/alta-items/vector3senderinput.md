@@ -22,4 +22,4 @@ A serializable input slot that links a receiver to a `LogicVector3Sender`, as us
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> | Creates a `Vector3SenderInput` with default values. |
+| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> | <span className="api-desc">Creates a `Vector3SenderInput` with default values.</span> |

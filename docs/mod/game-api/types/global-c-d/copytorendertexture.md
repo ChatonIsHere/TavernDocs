@@ -22,28 +22,28 @@ On a camera, also copies its image into a render texture when it isn't already r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CopyToRenderTexture()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CopyToRenderTexture()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-camera" /><code>{"private Camera camera"}</code> | The camera on this object. |
-| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> | Texture the image is copied into. |
+| <Link id="m-camera" /><code>{"private Camera camera"}</code> | <span className="api-desc">The camera on this object.</span> |
+| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> | <span className="api-desc">Texture the image is copied into.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Gets the camera. |
-| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> | Copies the frame to `renderTexture` if the camera has no target texture, then passes it on. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Gets the camera.</span> |
+| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> | <span className="api-desc">Copies the frame to `renderTexture` if the camera has no target texture, then passes it on.</span> |
 
 </details>

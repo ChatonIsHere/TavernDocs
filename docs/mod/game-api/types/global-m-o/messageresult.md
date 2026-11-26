@@ -21,11 +21,11 @@ Simple success flag plus error text. Nothing else in the server build uses it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | Creates a `MessageResult` with default values. |
+| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | <span className="api-desc">Creates a `MessageResult` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code>{"string Error"}</code> | Error message when it failed. |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> | Whether it succeeded. |
+| <Link id="m-error" /><code>{"string Error"}</code> | <span className="api-desc">Error message when it failed.</span> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> | <span className="api-desc">Whether it succeeded.</span> |

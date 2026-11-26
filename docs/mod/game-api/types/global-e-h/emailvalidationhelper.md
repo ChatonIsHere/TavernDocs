@@ -20,14 +20,14 @@ Static check that an email address is well formed, used by the account UI.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invalidemailerrormessage" /><code>{"const string InvalidEmailErrorMessage"}</code> | Message shown for a bad address: "Enter a valid email address". |
+| <Link id="m-invalidemailerrormessage" /><code>{"const string InvalidEmailErrorMessage"}</code> | <span className="api-desc">Message shown for a bad address: "Enter a valid email address".</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -35,4 +35,4 @@ Static check that an email address is well formed, used by the account UI.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalidemail" /><code>{"static bool IsValidEmail(string email)"}</code> | True when `MailAddress` parses the text to exactly the same address; logs and returns false on a parse error. |
+| <Link id="m-isvalidemail" /><code>{"static bool IsValidEmail(string email)"}</code> | <span className="api-desc">True when `MailAddress` parses the text to exactly the same address; logs and returns false on a parse error.</span> |

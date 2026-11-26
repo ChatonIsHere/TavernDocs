@@ -23,23 +23,27 @@ Save data for a `LogicFloatSender`: its logic link data and its float value.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatSaveData()"}</code> | Creates a `LogicFloatSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatSaveData()"}</code> | <span className="api-desc">Creates a `LogicFloatSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The sender's logic data, including its identifier. |
-| <Link id="m-value" /><code>{"float value"}</code> | The saved float value. |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The sender's logic data, including its identifier.</span> |
+| <Link id="m-value" /><code>{"float value"}</code> | <span className="api-desc">The saved float value.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | Same as `logicData`, through the `ILogicValueData` interface. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Same as `logicData`, through the `ILogicValueData` interface.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogicFloatSaveData`:
 
+<div className="api-used-in">
+
 [`LogicFloatRangeSaveData.Data`](/mod/game-api/types/alta-items/logicfloatrangesavedata#m-data), [`LogicFloatReceiverData.Data`](/mod/game-api/types/alta-items/logicfloatreceiverdata#m-data), [`LogicFloatThresholdSaveData.Data`](/mod/game-api/types/alta-items/logicfloatthresholdsavedata#m-data), [`LogicSumFloatSaveData.Datas`](/mod/game-api/types/alta-items/logicsumfloatsavedata#m-datas).
+
+</div>

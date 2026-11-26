@@ -21,4 +21,4 @@ Settings types shared by the SA Collider Builder tools: shape, fit and mesh enum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SAColliderBuilderCommon()"}</code> | Creates a `SAColliderBuilderCommon` with default values. |
+| <Link id="m-ctor" /><code>{"SAColliderBuilderCommon()"}</code> | <span className="api-desc">Creates a `SAColliderBuilderCommon` with default values.</span> |

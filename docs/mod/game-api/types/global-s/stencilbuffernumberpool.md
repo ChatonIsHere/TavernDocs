@@ -18,13 +18,13 @@ Hands out unique stencil buffer values (1 to 250) so effects don't share a stenc
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastused" /><code>{"private static int lastUsed"}</code> | Index the next search starts from. |
-| <Link id="m-used" /><code>{"private static bool[] used"}</code> | Which stencil slots are taken. |
+| <Link id="m-lastused" /><code>{"private static int lastUsed"}</code> | <span className="api-desc">Index the next search starts from.</span> |
+| <Link id="m-used" /><code>{"private static bool[] used"}</code> | <span className="api-desc">Which stencil slots are taken.</span> |
 
 </details>
 
@@ -32,5 +32,5 @@ Hands out unique stencil buffer values (1 to 250) so effects don't share a stenc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getstencilbuffernumber" /><code>{"static int GetStencilBufferNumber()"}</code> | Returns a free stencil number and marks it used. Returns 1 if all are taken. |
-| <Link id="m-releasestencilbuffernumber" /><code>{"static void ReleaseStencilBufferNumber(int stencilNumber)"}</code> | Marks a stencil number as free again. |
+| <Link id="m-getstencilbuffernumber" /><code>{"static int GetStencilBufferNumber()"}</code> | <span className="api-desc">Returns a free stencil number and marks it used. Returns 1 if all are taken.</span> |
+| <Link id="m-releasestencilbuffernumber" /><code>{"static void ReleaseStencilBufferNumber(int stencilNumber)"}</code> | <span className="api-desc">Marks a stencil number as free again.</span> |

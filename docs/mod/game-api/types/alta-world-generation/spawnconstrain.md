@@ -22,16 +22,20 @@ Base asset for a rule that limits what a `ConstrainedSpawnerDisplay` spawns in a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/mod/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> | Returns false to stop the spawn for this chunk's generator. Can also change the quantity to spawn. |
+| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/mod/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> | <span className="api-desc">Returns false to stop the spawn for this chunk's generator. Can also change the quantity to spawn.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpawnConstrain`:
 
+<div className="api-used-in">
+
 [`ConstrainedSpawnerDisplay.constrains`](/mod/game-api/types/alta-world-generation/constrainedspawnerdisplay#m-constrains).
+
+</div>

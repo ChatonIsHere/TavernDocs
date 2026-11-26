@@ -21,14 +21,14 @@ Server: a log record of a progression event (level up, skill bought or skill sol
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> | Creates a `PlayerProgression` from `player`, `path`, `eventType`, `currentLevel` and `hash`. |
+| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/mod/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> | <span className="api-desc">Creates a `PlayerProgression` from `player`, `path`, `eventType`, `currentLevel` and `hash`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlevel" /><code>{"uint CurrentLevel { get; }"}</code> | The player's level in the path at the time. |
-| <Link id="m-eventtype" /><code>{"string EventType { get; }"}</code> | Event name: `LevelUp`, `SkillBought` or `SkillSold`. |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | Hash of the skill slot bought or sold, or 0 for a level up. |
-| <Link id="m-path" /><code>{"string Path { get; }"}</code> | Name of the progression path. |
-| <Link id="m-playerid" /><code>{"int PlayerID { get; }"}</code> | The player's user id. |
+| <Link id="m-currentlevel" /><code>{"uint CurrentLevel { get; }"}</code> | <span className="api-desc">The player's level in the path at the time.</span> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; }"}</code> | <span className="api-desc">Event name: `LevelUp`, `SkillBought` or `SkillSold`.</span> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | <span className="api-desc">Hash of the skill slot bought or sold, or 0 for a level up.</span> |
+| <Link id="m-path" /><code>{"string Path { get; }"}</code> | <span className="api-desc">Name of the progression path.</span> |
+| <Link id="m-playerid" /><code>{"int PlayerID { get; }"}</code> | <span className="api-desc">The player's user id.</span> |

@@ -22,4 +22,4 @@ Implement on a `NetworkEntityBehaviour` to have its state saved with the entity 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"void Load(T data, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Server: restores the component from loaded save data, after any migration from older versions. |
+| <Link id="m-load" /><code>{"void Load(T data, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | <span className="api-desc">Server: restores the component from loaded save data, after any migration from older versions.</span> |

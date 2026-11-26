@@ -21,22 +21,22 @@ Syncs a chunk's force-loaded state from the server to clients through the chunk'
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEntitySync("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates a `PlayerEntitySync` from `chunk`. |
+| <Link id="m-ctor" /><code>{"PlayerEntitySync("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Creates a `PlayerEntitySync` from `chunk`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | The chunk this syncs. |
-| <Link id="m-syncloaded" /><code>{"protected "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncLoaded"}</code> | Method sync on the chunk entity using the `ChunkStateChanged` message. |
+| <Link id="m-chunk" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | <span className="api-desc">The chunk this syncs.</span> |
+| <Link id="m-syncloaded" /><code>{"protected "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncLoaded"}</code> | <span className="api-desc">Method sync on the chunk entity using the `ChunkStateChanged` message.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientload" /><code>{"private void ClientLoad("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLoaded)"}</code> | Reads or writes the loaded flag. On a client, sets the chunk's `IsForceLoaded` from it. |
+| <Link id="m-clientload" /><code>{"private void ClientLoad("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLoaded)"}</code> | <span className="api-desc">Reads or writes the loaded flag. On a client, sets the chunk's `IsForceLoaded` from it.</span> |
 
 </details>

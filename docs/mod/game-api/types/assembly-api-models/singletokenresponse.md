@@ -20,10 +20,10 @@ An API response holding a single JWT token.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SingleTokenResponse()"}</code> | Creates a `SingleTokenResponse` with default values. |
+| <Link id="m-ctor" /><code>{"SingleTokenResponse()"}</code> | <span className="api-desc">Creates a `SingleTokenResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> | The token, parsed by `JwtSecurityTokenJsonConverter`. |
+| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> | <span className="api-desc">The token, parsed by `JwtSecurityTokenJsonConverter`.</span> |

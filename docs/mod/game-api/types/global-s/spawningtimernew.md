@@ -21,18 +21,18 @@ Disposable timer for spawning code: wrap work in a `using` and it logs name, mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> | Creates a `SpawningTimerNew` from `message` and `objectName`. |
+| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> | <span className="api-desc">Creates a `SpawningTimerNew` from `message` and `objectName`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-framenumber" /><code>{"private int frameNumber"}</code> | Frame the timer started on. |
-| <Link id="m-message" /><code>{"private string message"}</code> | What is being timed. |
-| <Link id="m-stopwatch" /><code>{"private Stopwatch stopwatch"}</code> | The running stopwatch. |
+| <Link id="m-framenumber" /><code>{"private int frameNumber"}</code> | <span className="api-desc">Frame the timer started on.</span> |
+| <Link id="m-message" /><code>{"private string message"}</code> | <span className="api-desc">What is being timed.</span> |
+| <Link id="m-stopwatch" /><code>{"private Stopwatch stopwatch"}</code> | <span className="api-desc">The running stopwatch.</span> |
 
 </details>
 
@@ -40,15 +40,15 @@ Disposable timer for spawning code: wrap work in a `using` and it logs name, mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectname" /><code>{"string ObjectName { get; set; }"}</code> | Name of the object being timed, written first in the log line. |
+| <Link id="m-objectname" /><code>{"string ObjectName { get; set; }"}</code> | <span className="api-desc">Name of the object being timed, written first in the log line.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> | Stops the timer and writes a trace line to `SpawningLogger`. |
+| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> | <span className="api-desc">Stops the timer and writes a trace line to `SpawningLogger`.</span> |
 
 </details>

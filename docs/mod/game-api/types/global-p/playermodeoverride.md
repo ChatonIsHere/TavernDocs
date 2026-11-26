@@ -23,16 +23,16 @@ Debug asset for overriding the player mode. In this build the override is fixed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerModeOverride()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayerModeOverride()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playermodeforempty" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerModeForEmpty"}</code> | Serialized mode that nothing reads. |
+| <Link id="m-playermodeforempty" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerModeForEmpty"}</code> | <span className="api-desc">Serialized mode that nothing reads.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Debug asset for overriding the player mode. In this build the override is fixed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-override" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Override { get; }"}</code> | Always returns `PlayerMode.Fly`. Nothing in this build reads it. |
+| <Link id="m-override" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Override { get; }"}</code> | <span className="api-desc">Always returns `PlayerMode.Fly`. Nothing in this build reads it.</span> |

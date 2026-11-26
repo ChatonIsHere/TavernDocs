@@ -21,16 +21,16 @@ Component on a feather model that points at its bottom part. `DummyArrow` copies
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Feather()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Feather()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> | Backing field for `Bottom`. |
+| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> | <span className="api-desc">Backing field for `Bottom`.</span> |
 
 </details>
 
@@ -38,10 +38,14 @@ Component on a feather model that points at its bottom part. `DummyArrow` copies
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> | The feather's bottom object, instantiated by `DummyArrow` at the arrow's feather position. |
+| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> | <span className="api-desc">The feather's bottom object, instantiated by `DummyArrow` at the arrow's feather position.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Feather`:
 
+<div className="api-used-in">
+
 [`DummyArrow.Configure`](/mod/game-api/types/global-c-d/dummyarrow#m-configure), [`Quiver.dockedFeather`](/mod/game-api/types/global-q-r/quiver#m-dockedfeather).
+
+</div>

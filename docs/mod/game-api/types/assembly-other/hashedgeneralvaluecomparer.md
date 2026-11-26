@@ -20,12 +20,12 @@ Equality comparer that treats `HashedGeneralValue` assets as equal when their ha
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 </details>
 
@@ -33,4 +33,4 @@ Equality comparer that treats `HashedGeneralValue` assets as equal when their ha
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> | The shared comparer. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The shared comparer.</span> |

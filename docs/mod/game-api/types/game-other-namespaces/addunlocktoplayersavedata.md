@@ -23,10 +23,10 @@ Save data (version 1) for `AddUnlockToPlayer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> | Creates an `AddUnlockToPlayerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> | <span className="api-desc">Creates an `AddUnlockToPlayerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link></code> | The permanent unlock the component gives players. |
+| <Link id="m-playerunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link></code> | <span className="api-desc">The permanent unlock the component gives players.</span> |

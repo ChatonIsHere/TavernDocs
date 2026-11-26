@@ -22,18 +22,22 @@ Analytics record of a death: who died, where, and who killed them.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> | Creates a `HealthObject.DeathAnalytics` from `victim`, `killingHit` and `position`. |
+| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> | <span className="api-desc">Creates a `HealthObject.DeathAnalytics` from `victim`, `killingHit` and `position`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-murderer" /><code>{"string murderer"}</code> | Username of the player who landed the killing hit, the wielder's name if not a player, or "unknown" if no tool wielder. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the victim was when it died. |
-| <Link id="m-victim" /><code>{"string victim"}</code> | The dead entity's original name. |
+| <Link id="m-murderer" /><code>{"string murderer"}</code> | <span className="api-desc">Username of the player who landed the killing hit, the wielder's name if not a player, or "unknown" if no tool wielder.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Where the victim was when it died.</span> |
+| <Link id="m-victim" /><code>{"string victim"}</code> | <span className="api-desc">The dead entity's original name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DeathAnalytics`:
 
+<div className="api-used-in">
+
 [`HealthObject.AnalyticsRecord`](/mod/game-api/types/global-e-h/healthobject#m-analyticsrecord), [`PlayerHealth.AnalyticsRecord`](/mod/game-api/types/global-p/playerhealth#m-analyticsrecord).
+
+</div>

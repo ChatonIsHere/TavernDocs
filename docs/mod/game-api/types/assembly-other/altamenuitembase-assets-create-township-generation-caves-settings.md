@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Generation/Caves/Settings`: menu item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Settings()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Settings` with default values. |
+| <Link id="m-ctor" /><code>{"protected Settings()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Settings` with default values.</span> |

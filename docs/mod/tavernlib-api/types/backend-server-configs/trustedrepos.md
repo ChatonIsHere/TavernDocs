@@ -22,17 +22,17 @@ The contents of `mod_repos.json`: the mod sources reconcile may pull from. Only 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TrustedRepos()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"TrustedRepos()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-repos" /><code>{"Dictionary<string, string> Repos { get; set; }"}</code> | Added sources, by shorthand (`user/repo`) to raw-content base URL. |
-| <Link id="m-schema" /><code>{"int Schema { get; set; }"}</code> | The file's schema number, 1. |
+| <Link id="m-repos" /><code>{"Dictionary<string, string> Repos { get; set; }"}</code> | <span className="api-desc">Added sources, by shorthand (`user/repo`) to raw-content base URL.</span> |
+| <Link id="m-schema" /><code>{"int Schema { get; set; }"}</code> | <span className="api-desc">The file's schema number, 1.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectiverepourls" /><code>{"List<string> EffectiveRepoUrls()"}</code> | The default TavernMods source first, then every other added source. |
+| <Link id="m-effectiverepourls" /><code>{"List<string> EffectiveRepoUrls()"}</code> | <span className="api-desc">The default TavernMods source first, then every other added source.</span> |

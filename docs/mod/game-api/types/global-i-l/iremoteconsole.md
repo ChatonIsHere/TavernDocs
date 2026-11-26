@@ -21,18 +21,22 @@ A remote console server, such as `WebSocketRemoteConsole` (port 1760) and `Serve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> | A session logged in. |
-| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> | A session closed. |
+| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> | <span className="api-desc">A session logged in.</span> |
+| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> | <span className="api-desc">A session closed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"void Close()"}</code> | Stops the console and its connections. |
-| <Link id="m-start" /><code>{"void Start()"}</code> | Starts listening. |
+| <Link id="m-close" /><code>{"void Close()"}</code> | <span className="api-desc">Stops the console and its connections.</span> |
+| <Link id="m-start" /><code>{"void Start()"}</code> | <span className="api-desc">Starts listening.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IRemoteConsole`:
 
+<div className="api-used-in">
+
 [`ServerConsoleManager.CloseConsole`](/mod/game-api/types/global-s/serverconsolemanager#m-closeconsole), [`ServerConsoleManager.remoteConsole`](/mod/game-api/types/global-s/serverconsolemanager#m-remoteconsole), [`ServerConsoleManager.remoteConsoleWS`](/mod/game-api/types/global-s/serverconsolemanager#m-remoteconsolews), [`ServerConsoleManager.StartNewConsole`](/mod/game-api/types/global-s/serverconsolemanager#m-startnewconsole).
+
+</div>

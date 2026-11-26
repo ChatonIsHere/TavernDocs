@@ -21,4 +21,4 @@ Inspector marker attribute, probably for showing a field as a prefab hash. Nothi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabHashAttribute()"}</code> | Creates a `PrefabHashAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"PrefabHashAttribute()"}</code> | <span className="api-desc">Creates a `PrefabHashAttribute` with default values.</span> |

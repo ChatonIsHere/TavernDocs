@@ -22,16 +22,16 @@ HTTP string content holding an object serialized to UTF-8 JSON. Used by the JSON
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> | Creates a `HttpClientExtensions.JsonContent` from `obj`. |
+| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> | <span className="api-desc">Creates a `HttpClientExtensions.JsonContent` from `obj`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> | Serializes the object with Json.NET. A null object gives an empty string and a warning. |
+| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> | <span className="api-desc">Serializes the object with Json.NET. A null object gives an empty string and a warning.</span> |
 
 </details>
 
@@ -39,4 +39,8 @@ HTTP string content holding an object serialized to UTF-8 JSON. Used by the JSON
 
 Members of other types that take, return or hold a `JsonContent`:
 
+<div className="api-used-in">
+
 [`HttpClientExtensions.LogApiRequest`](/mod/game-api/types/assembly-api-models/httpclientextensions#m-logapirequest), [`HttpClientExtensions.PostJsonAsync`](/mod/game-api/types/assembly-api-models/httpclientextensions#m-postjsonasync).
+
+</div>

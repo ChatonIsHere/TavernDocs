@@ -21,16 +21,16 @@ Holds a preview material for woodcutting. Nothing in the decompiled code reads i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutPreparer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WoodcutPreparer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-previewmaterial" /><code>{"private Material previewMaterial"}</code> | Backing field for `PreviewMaterial`. |
+| <Link id="m-previewmaterial" /><code>{"private Material previewMaterial"}</code> | <span className="api-desc">Backing field for `PreviewMaterial`.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Holds a preview material for woodcutting. Nothing in the decompiled code reads i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-previewmaterial-2" /><code>{"Material PreviewMaterial { get; }"}</code> | The preview material set in the inspector. |
+| <Link id="m-previewmaterial-2" /><code>{"Material PreviewMaterial { get; }"}</code> | <span className="api-desc">The preview material set in the inspector.</span> |

@@ -26,4 +26,8 @@ Which network transport to use. KCP is the only option and the default.
 
 Members of other types that take, return or hold a `TransportSystem`:
 
+<div className="api-used-in">
+
 [`NetworkingSettings.currentTransportSystem`](/mod/game-api/types/alta-networking/networkingsettings#m-currenttransportsystem), [`NetworkingSettings.defaultNetworkTransport`](/mod/game-api/types/alta-networking/networkingsettings#m-defaultnetworktransport), [`NetworkingSettings.GetTransportSystem`](/mod/game-api/types/alta-networking/networkingsettings#m-gettransportsystem), [`NetworkingSettings.SetTransportSystem`](/mod/game-api/types/alta-networking/networkingsettings#m-settransportsystem), [`NetworkingSettings.TransportSystem`](/mod/game-api/types/alta-networking/networkingsettings#m-transportsystem), [`NetworkManager.CreateSocket`](/mod/game-api/types/alta-networking/networkmanager#m-createsocket).
+
+</div>

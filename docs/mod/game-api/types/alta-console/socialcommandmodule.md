@@ -19,12 +19,12 @@ Console module `social`: adds, removes and lists friends through the Alta API. N
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
@@ -32,6 +32,6 @@ Console module `social`: adds, removes and lists friends through the Alta API. N
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addfriend" /><code>{"static async Task AddFriend("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" player)"}</code> | `social addfriend`: sends a friend request to the player and logs the result. |
-| <Link id="m-listfriends" /><code>{"static async Task ListFriends("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | `social listfriends`: logs a table of a user's friends and whether each is on this server. |
-| <Link id="m-removefriend" /><code>{"static async Task RemoveFriend("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" player)"}</code> | `social removefriend`: removes the player as a friend if they are one and updates their in-game friend status. |
+| <Link id="m-addfriend" /><code>{"static async Task AddFriend("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" player)"}</code> | <span className="api-desc">`social addfriend`: sends a friend request to the player and logs the result.</span> |
+| <Link id="m-listfriends" /><code>{"static async Task ListFriends("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | <span className="api-desc">`social listfriends`: logs a table of a user's friends and whether each is on this server.</span> |
+| <Link id="m-removefriend" /><code>{"static async Task RemoveFriend("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" player)"}</code> | <span className="api-desc">`social removefriend`: removes the player as a friend if they are one and updates their in-game friend status.</span> |

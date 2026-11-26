@@ -21,10 +21,10 @@ Async prefab factory taking one parameter, passed to the component's `FactoryCon
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | Creates a `FactoryAsync` with default values. |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | <span className="api-desc">Creates a `FactoryAsync` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"async Task<TInterface> Create(TParam param)"}</code> | Loads and instantiates the prefab with injection, calls `FactoryConstruct(param)` on the component, tracks it for disposal and returns it. |
+| <Link id="m-create" /><code>{"async Task<TInterface> Create(TParam param)"}</code> | <span className="api-desc">Loads and instantiates the prefab with injection, calls `FactoryConstruct(param)` on the component, tracks it for disposal and returns it.</span> |

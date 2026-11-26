@@ -21,18 +21,22 @@ Moves a player from Dead to Playing (respawn). `DeadState` triggers it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> | Creates a `DeadToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> | <span className="api-desc">Creates a `DeadToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Does nothing. |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" toBeActivatedState)"}</code> | Marks the new Playing state as respawning before it activates. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Does nothing. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" toBeActivatedState)"}</code> | <span className="api-desc">Marks the new Playing state as respawning before it activates.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DeadToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.deadToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-deadtoplaying), [`AllTransitions.DeadToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-deadtoplayingtransition).
+
+</div>

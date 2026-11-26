@@ -24,16 +24,16 @@ A crafting joint slot type, listing which insert types can fit into it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JointSlotType()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"JointSlotType()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowedinserts" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{"> allowedInserts"}</code> | Backing field for `AllowedInserts`. |
+| <Link id="m-allowedinserts" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{"> allowedInserts"}</code> | <span className="api-desc">Backing field for `AllowedInserts`.</span> |
 
 </details>
 
@@ -41,10 +41,14 @@ A crafting joint slot type, listing which insert types can fit into it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowedinserts-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{"> AllowedInserts { get; }"}</code> | The `JointInsertType`s that fit this slot. `JointSlot` checks against it. |
+| <Link id="m-allowedinserts-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{"> AllowedInserts { get; }"}</code> | <span className="api-desc">The `JointInsertType`s that fit this slot. `JointSlot` checks against it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `JointSlotType`:
 
+<div className="api-used-in">
+
 [`JointSlot.types`](/mod/game-api/types/alta-crafting/jointslot#m-types), [`JointSlot.Types`](/mod/game-api/types/alta-crafting/jointslot#m-types-2).
+
+</div>

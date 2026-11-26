@@ -24,16 +24,16 @@ A stew ingredient that matches any cookable item in a category, rather than one 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookableCategoryDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CookableCategoryDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allcookableitems" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> allCookableItems"}</code> | Backing field for `AllCookableItems`. |
+| <Link id="m-allcookableitems" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> allCookableItems"}</code> | <span className="api-desc">Backing field for `AllCookableItems`.</span> |
 
 </details>
 
@@ -41,17 +41,21 @@ A stew ingredient that matches any cookable item in a category, rather than one 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allcookableitems-2" /><code>{"static Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> AllCookableItems { get; }"}</code> | Every `CookableItem` grouped by its category, built from all items on first use. |
-| <Link id="m-cookables" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | The cookable items in this category. |
+| <Link id="m-allcookableitems-2" /><code>{"static Dictionary<"}<Link to="/mod/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{">> AllCookableItems { get; }"}</code> | <span className="api-desc">Every `CookableItem` grouped by its category, built from all items on first use.</span> |
+| <Link id="m-cookables" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | <span className="api-desc">The cookable items in this category.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | True, with score 1, if the item's category is this one. |
+| <Link id="m-containscookable" /><code>{"override bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | <span className="api-desc">True, with score 1, if the item's category is this one.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CookableCategoryDefinition`:
 
+<div className="api-used-in">
+
 [`CookableItem.category`](/mod/game-api/types/alta-crafting/cookableitem#m-category), [`CookableItem.Category`](/mod/game-api/types/alta-crafting/cookableitem#m-category-2).
+
+</div>

@@ -23,11 +23,11 @@ Save data for a `CheckPoint`: the leaderboards it begins and ends.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> | Creates a `CheckPointData` with default values. |
+| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> | <span className="api-desc">Creates a `CheckPointData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beginningdatas" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] beginningDatas"}</code> | Leaderboards that start timing at the checkpoint. |
-| <Link id="m-endingdatas" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] endingDatas"}</code> | Leaderboards that stop timing at the checkpoint. |
+| <Link id="m-beginningdatas" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] beginningDatas"}</code> | <span className="api-desc">Leaderboards that start timing at the checkpoint.</span> |
+| <Link id="m-endingdatas" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] endingDatas"}</code> | <span className="api-desc">Leaderboards that stop timing at the checkpoint.</span> |

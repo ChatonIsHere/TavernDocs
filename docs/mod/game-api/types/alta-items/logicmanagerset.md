@@ -21,16 +21,20 @@ Save wrapper for the global logic manager's values, stored in `LogicManagerData.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> | Creates a `LogicManagerSet` with default values. |
+| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> | <span className="api-desc">Creates a `LogicManagerSet` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"[] datas"}</code> | Save data of each logic value in the manager. |
+| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{"[] datas"}</code> | <span className="api-desc">Save data of each logic value in the manager.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogicManagerSet`:
 
+<div className="api-used-in">
+
 [`LogicManagerData.set`](/mod/game-api/types/alta-items/logicmanagerdata#m-set), [`TypeSerializationHelper.LogicManagerSetSerialization.Serialize`](/mod/game-api/types/global-t-x/typeserializationhelper-logicmanagersetserialization#m-serialize).
+
+</div>

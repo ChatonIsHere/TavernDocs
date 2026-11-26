@@ -21,10 +21,10 @@ Request body for quickly creating a server in a region.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> | Creates a `QuickCreateRequest` with default values. |
+| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> | <span className="api-desc">Creates a `QuickCreateRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> | Region to create the server in, sent as `region`. |
+| <Link id="m-launchregion" /><code>{"string LaunchRegion { get; set; }"}</code> | <span className="api-desc">Region to create the server in, sent as `region`.</span> |

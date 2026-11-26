@@ -20,19 +20,19 @@ Serializable width and height pair for a stream. Defaults to 0 by 0.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> | Creates a `StreamSettings` with default values. |
-| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> | Creates a `StreamSettings` with default values. |
+| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> | <span className="api-desc">Creates a `StreamSettings` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> | <span className="api-desc">Creates a `StreamSettings` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-height" /><code>{"int height"}</code> | Backing field for `Height`. |
-| <Link id="m-width" /><code>{"int width"}</code> | Backing field for `Width`. |
+| <Link id="m-height" /><code>{"int height"}</code> | <span className="api-desc">Backing field for `Height`.</span> |
+| <Link id="m-width" /><code>{"int width"}</code> | <span className="api-desc">Backing field for `Width`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> | Height value. |
-| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> | Width value. |
+| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> | <span className="api-desc">Height value.</span> |
+| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> | <span className="api-desc">Width value.</span> |

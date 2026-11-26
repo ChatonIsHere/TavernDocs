@@ -23,10 +23,10 @@ Save data for a `Leaderboard`: the course definition it shows.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LeaderboardData()"}</code> | Creates a `LeaderboardData` with default values. |
+| <Link id="m-ctor" /><code>{"LeaderboardData()"}</code> | <span className="api-desc">Creates a `LeaderboardData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" definition"}</code> | The board's course definition. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" definition"}</code> | <span className="api-desc">The board's course definition.</span> |

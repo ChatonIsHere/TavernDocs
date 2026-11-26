@@ -21,20 +21,20 @@ Enumerator over an array snapshot, returned by `SortedList`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> | Creates a `SortedEnumerator` from `list`. |
+| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> | <span className="api-desc">Creates a `SortedEnumerator` from `list`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> | The array being enumerated. |
+| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> | <span className="api-desc">The array being enumerated.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position" /><code>{"private int position"}</code> | Current index, -1 before the start. |
+| <Link id="m-position" /><code>{"private int position"}</code> | <span className="api-desc">Current index, -1 before the start.</span> |
 
 </details>
 
@@ -42,14 +42,14 @@ Enumerator over an array snapshot, returned by `SortedList`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"T Current { get; }"}</code> | Item at the current position. Throws `InvalidOperationException` before the first `MoveNext` or past the end. |
+| <Link id="m-current" /><code>{"T Current { get; }"}</code> | <span className="api-desc">Item at the current position. Throws `InvalidOperationException` before the first `MoveNext` or past the end.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | Non-generic `Current`. |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | <span className="api-desc">Non-generic `Current`.</span> |
 
 </details>
 
@@ -57,12 +57,16 @@ Enumerator over an array snapshot, returned by `SortedList`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Drops the array. |
-| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> | Moves to the next item. False once past the end. |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> | Goes back to before the first item. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Drops the array.</span> |
+| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> | <span className="api-desc">Moves to the next item. False once past the end.</span> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | <span className="api-desc">Goes back to before the first item.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SortedEnumerator&lt;T>`:
 
+<div className="api-used-in">
+
 [`SortedList<T>.GetEnumerator`](/mod/game-api/types/alta-utilities/sortedlist-t#m-getenumerator-2).
+
+</div>

@@ -20,11 +20,11 @@ A list response from the Alta API: the items plus query metadata.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/mod/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> | Creates an `AltaApiResponse` from `data` and `meta`. |
+| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/mod/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> | <span className="api-desc">Creates an `AltaApiResponse` from `data` and `meta`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"IEnumerable<T> Data { get; }"}</code> | The returned items. |
-| <Link id="m-meta" /><code><Link to="/mod/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" Meta { get; }"}</code> | Metadata about the query, such as paging. |
+| <Link id="m-data" /><code>{"IEnumerable<T> Data { get; }"}</code> | <span className="api-desc">The returned items.</span> |
+| <Link id="m-meta" /><code><Link to="/mod/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" Meta { get; }"}</code> | <span className="api-desc">Metadata about the query, such as paging.</span> |

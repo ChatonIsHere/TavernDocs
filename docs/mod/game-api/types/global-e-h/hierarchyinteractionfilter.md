@@ -21,18 +21,18 @@ Stops other players from using a set of interactables while a parent item (or it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HierarchyInteractionFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"HierarchyInteractionFilter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentparent" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" currentParent"}</code> | The interactable currently checked for being held. |
-| <Link id="m-interactablestofilter" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"[] interactablesToFilter"}</code> | Interactables that get the filter. |
-| <Link id="m-parent" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" parent"}</code> | The starting parent interactable. |
+| <Link id="m-currentparent" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" currentParent"}</code> | <span className="api-desc">The interactable currently checked for being held.</span> |
+| <Link id="m-interactablestofilter" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{"[] interactablesToFilter"}</code> | <span className="api-desc">Interactables that get the filter.</span> |
+| <Link id="m-parent" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" parent"}</code> | <span className="api-desc">The starting parent interactable.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Stops other players from using a set of interactables while a parent item (or it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Adds the filter to each interactable and follows crafting root changes of the parent pickup. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Adds the filter to each interactable and follows crafting root changes of the parent pickup.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"private void Filter("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Blocks the interaction if the parent is held by a player other than the interactor's. |
-| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" root)"}</code> | Switches the checked parent to the new crafting root's pickup. |
+| <Link id="m-filter" /><code>{"private void Filter("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | <span className="api-desc">Blocks the interaction if the parent is held by a player other than the interactor's.</span> |
+| <Link id="m-updateparent" /><code>{"private void UpdateParent("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" root)"}</code> | <span className="api-desc">Switches the checked parent to the new crafting root's pickup.</span> |
 
 </details>

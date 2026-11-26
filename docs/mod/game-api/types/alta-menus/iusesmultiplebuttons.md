@@ -21,11 +21,15 @@ A menu command shown as a row of buttons, one per label.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | Name shown for the command. |
-| <Link id="m-labels" /><code>{"string[] Labels { get; }"}</code> | Text for each button. |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | <span className="api-desc">Name shown for the command.</span> |
+| <Link id="m-labels" /><code>{"string[] Labels { get; }"}</code> | <span className="api-desc">Text for each button.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IUsesMultipleButtons`:
 
+<div className="api-used-in">
+
 [`ServerMultiCommandAction.SetupControlView`](/mod/game-api/types/alta-menus/servermulticommandaction#m-setupcontrolview).
+
+</div>

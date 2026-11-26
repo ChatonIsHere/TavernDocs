@@ -22,16 +22,16 @@ A file object in an S3 bucket, used through the `IFileAccess` storage interface.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> | Creates a `S3StorageFile` from `bucketName` and `fullName`. |
+| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> | <span className="api-desc">Creates a `S3StorageFile` from `bucketName` and `fullName`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,20 +39,24 @@ A file object in an S3 bucket, used through the `IFileAccess` storage interface.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | Whether the object exists, by fetching it. Any error counts as not existing. |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | <span className="api-desc">Whether the object exists, by fetching it. Any error counts as not existing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> | Streams the object's contents into the given local stream. |
-| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> | Async version of `Exists`. |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Does nothing for S3 files. |
-| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> | Uploads the stream to this key, blocking. |
-| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> | Uploads the stream to this key. |
+| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> | <span className="api-desc">Streams the object's contents into the given local stream.</span> |
+| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> | <span className="api-desc">Async version of `Exists`.</span> |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | <span className="api-desc">Does nothing for S3 files.</span> |
+| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> | <span className="api-desc">Uploads the stream to this key, blocking.</span> |
+| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> | <span className="api-desc">Uploads the stream to this key.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `S3StorageFile`:
 
+<div className="api-used-in">
+
 [`S3CloudStorageRemoteFile.S3CloudStorageRemoteFile`](/mod/game-api/types/assembly-other/s3cloudstorageremotefile#m-ctor), [`S3RemoteFolder.GetFile`](/mod/game-api/types/assembly-other/s3remotefolder#m-getfile), [`S3RemoteFolder.GetStorageFileSubInfo`](/mod/game-api/types/assembly-other/s3remotefolder#m-getstoragefilesubinfo), [`S3StorageFolder.GetFiles`](/mod/game-api/types/assembly-other/s3storagefolder#m-getfiles).
+
+</div>

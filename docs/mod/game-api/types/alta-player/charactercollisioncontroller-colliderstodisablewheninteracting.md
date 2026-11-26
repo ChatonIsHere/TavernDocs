@@ -21,17 +21,17 @@ Inspector pairing of a hand `Controller` with the body colliders to turn off whi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CollidersToDisableWhenInteracting()"}</code> | Creates a `CharacterCollisionController.CollidersToDisableWhenInteracting` with default values. |
+| <Link id="m-ctor" /><code>{"CollidersToDisableWhenInteracting()"}</code> | <span className="api-desc">Creates a `CharacterCollisionController.CollidersToDisableWhenInteracting` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderstodisable" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" collidersToDisable"}</code> | Backing field for `CollidersToDisable`. |
-| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> | Backing field for `Controller`. |
+| <Link id="m-colliderstodisable" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" collidersToDisable"}</code> | <span className="api-desc">Backing field for `CollidersToDisable`.</span> |
+| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> | <span className="api-desc">Backing field for `Controller`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ Inspector pairing of a hand `Controller` with the body colliders to turn off whi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderstodisable-2" /><code><Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" CollidersToDisable { get; set; }"}</code> | The collider group ignored while that hand holds a pickup, then re-enabled after a short delay when it lets go. |
-| <Link id="m-controller-2" /><code><Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" { get; }"}</code> | The hand controller whose `Interactor` is watched for interactions starting and ending. |
+| <Link id="m-colliderstodisable-2" /><code><Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" CollidersToDisable { get; set; }"}</code> | <span className="api-desc">The collider group ignored while that hand holds a pickup, then re-enabled after a short delay when it lets go.</span> |
+| <Link id="m-controller-2" /><code><Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" { get; }"}</code> | <span className="api-desc">The hand controller whose `Interactor` is watched for interactions starting and ending.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CollidersToDisableWhenInteracting`:
 
+<div className="api-used-in">
+
 [`CharacterCollisionController.collidersToDisableWhenInteracting`](/mod/game-api/types/alta-player/charactercollisioncontroller#m-colliderstodisablewheninteracting), [`CharacterCollisionController.CollidersToDisableWhenInteractingList`](/mod/game-api/types/alta-player/charactercollisioncontroller#m-colliderstodisablewheninteractinglist).
+
+</div>

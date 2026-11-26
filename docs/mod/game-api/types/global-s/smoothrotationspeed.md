@@ -29,4 +29,8 @@ Smooth turn speed setting (slow to super fast). `RoomRotator` uses it to pick a 
 
 Members of other types that take, return or hold a `SmoothRotationSpeed`:
 
+<div className="api-used-in">
+
 [`GameSettings.SmoothRotationSpeed`](/mod/game-api/types/alta-utilities/gamesettings#m-smoothrotationspeed).
+
+</div>

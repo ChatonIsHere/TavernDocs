@@ -20,5 +20,5 @@ Debug helper that turns integers into binary strings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> | Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8. |
-| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> | Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8. |
+| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> | <span className="api-desc">Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8.</span> |
+| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> | <span className="api-desc">Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8.</span> |

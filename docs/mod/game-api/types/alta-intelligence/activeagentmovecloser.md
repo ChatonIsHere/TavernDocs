@@ -22,10 +22,10 @@ Server: running action that slides a creature's rigidbody straight towards its t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveAgentMoveCloser()"}</code> | Creates an `ActiveAgentMoveCloser` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveAgentMoveCloser()"}</code> | <span className="api-desc">Creates an `ActiveAgentMoveCloser` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | Moves the rigidbody towards the edge of the reached distance at `Speed` times the creature's speed stat, and finishes once there. |
+| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | <span className="api-desc">Moves the rigidbody towards the edge of the reached distance at `Speed` times the creature's speed stat, and finishes once there.</span> |

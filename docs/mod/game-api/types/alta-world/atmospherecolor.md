@@ -21,16 +21,20 @@ A colour value in the atmosphere system that blends smoothly to a new target and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> | Creates an `AtmosphereColor` from `setValue`. |
+| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> | <span className="api-desc">Creates an `AtmosphereColor` from `setValue`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> | Blends between two colours with `Color.Lerp`. |
+| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> | <span className="api-desc">Blends between two colours with `Color.Lerp`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AtmosphereColor`:
 
+<div className="api-used-in">
+
 [`AtmosphereManager.AmbientColor`](/mod/game-api/types/alta-world/atmospheremanager#m-ambientcolor), [`AtmosphereManager.FogColor`](/mod/game-api/types/alta-world/atmospheremanager#m-fogcolor).
+
+</div>

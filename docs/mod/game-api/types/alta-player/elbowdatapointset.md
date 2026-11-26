@@ -21,16 +21,16 @@ A ScriptableObject holding a list of elbow guide data points, used to place the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowDataPointSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ElbowDataPointSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> | Backing field for `DataPoints`. |
+| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> | <span className="api-desc">Backing field for `DataPoints`.</span> |
 
 </details>
 
@@ -38,17 +38,21 @@ A ScriptableObject holding a list of elbow guide data points, used to place the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datapoints" /><code>{"List<"}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> | The data point assets in the set. |
-| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> | A plain settable count; nothing in this class keeps it in step with the list. |
+| <Link id="m-datapoints" /><code>{"List<"}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> | <span className="api-desc">The data point assets in the set.</span> |
+| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> | <span className="api-desc">A plain settable count; nothing in this class keeps it in step with the list.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> | Removes a data point from the set and destroys its asset. Editor tooling. |
+| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/mod/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> | <span className="api-desc">Removes a data point from the set and destroys its asset. Editor tooling.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ElbowDataPointSet`:
 
+<div className="api-used-in">
+
 [`ElbowController.ElbowDataPoints`](/mod/game-api/types/alta-player/elbowcontroller#m-elbowdatapoints), [`ElbowGuideDataPoint.dataPointSet`](/mod/game-api/types/alta-player/elbowguidedatapoint#m-datapointset), [`ElbowGuideDataPoint.DataPointSet`](/mod/game-api/types/alta-player/elbowguidedatapoint#m-datapointset-2), [`ElbowGuideDataPointRuntime.DataPointSet`](/mod/game-api/types/alta-player/elbowguidedatapointruntime#m-datapointset), [`IElbowGuideDataPoint.DataPointSet`](/mod/game-api/types/alta-player/ielbowguidedatapoint#m-datapointset), [`PlayerControllerSettings.elbowDataPointSet`](/mod/game-api/types/alta-player/playercontrollersettings#m-elbowdatapointset), [`PlayerControllerSettings.ElbowDataPointSet`](/mod/game-api/types/alta-player/playercontrollersettings#m-elbowdatapointset-2).
+
+</div>

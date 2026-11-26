@@ -21,12 +21,12 @@ Something a page can be generated about, such as an item or recipe, so books and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | Whether pages about this are left out on simple servers. |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | <span className="api-desc">Whether pages about this are left out on simple servers.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createpage" /><code><Link to="/mod/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> | Makes a page about this, using the preferred page provider if it can. |
-| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The hash that identifies this subject in page data. |
-| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | Which page provider would make the page, given a preferred one. |
+| <Link id="m-createpage" /><code><Link to="/mod/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" CreatePage(int preferredProvider)"}</code> | <span className="api-desc">Makes a page about this, using the preferred page provider if it can.</span> |
+| <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | <span className="api-desc">The hash that identifies this subject in page data.</span> |
+| <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | <span className="api-desc">Which page provider would make the page, given a preferred one.</span> |

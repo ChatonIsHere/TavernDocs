@@ -31,4 +31,8 @@ Windows console control signals (Ctrl+C, Ctrl+Break, close, logoff, shutdown) pa
 
 Members of other types that take, return or hold a `CtrlType`:
 
+<div className="api-used-in">
+
 [`ConsoleWindow.ConsoleCtrlCheck`](/mod/game-api/types/game-other-namespaces/consolewindow#m-consolectrlcheck), [`ConsoleWindow.HandlerRoutine.BeginInvoke`](/mod/game-api/types/game-other-namespaces/consolewindow-handlerroutine#m-begininvoke), [`ConsoleWindow.HandlerRoutine.Invoke`](/mod/game-api/types/game-other-namespaces/consolewindow-handlerroutine#m-invoke).
+
+</div>

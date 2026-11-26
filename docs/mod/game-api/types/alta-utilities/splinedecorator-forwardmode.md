@@ -28,4 +28,8 @@ How `SplineDecorator` picks each placed object's forward direction: the curve's 
 
 Members of other types that take, return or hold a `ForwardMode`:
 
+<div className="api-used-in">
+
 [`SplineDecorator.forwardMode`](/mod/game-api/types/alta-utilities/splinedecorator#m-forwardmode).
+
+</div>

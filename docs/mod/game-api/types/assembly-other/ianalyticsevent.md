@@ -22,18 +22,22 @@ An analytics event: a name, an optional user id and its properties, plus instrum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> | The event's properties so far, read-only. |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | Name of the event, such as "Micro Tutorial Enter". |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | Id of the player the event is about, or null. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> | <span className="api-desc">The event's properties so far, read-only.</span> |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | <span className="api-desc">Name of the event, such as "Micro Tutorial Enter".</span> |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | <span className="api-desc">Id of the player the event is about, or null.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/mod/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> | Adds an instrument that writes extra properties into the event. It runs straight away if a resolver is set, otherwise when the event is sent. |
+| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/mod/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> | <span className="api-desc">Adds an instrument that writes extra properties into the event. It runs straight away if a resolver is set, otherwise when the event is sent.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAnalyticsEvent`:
 
+<div className="api-used-in">
+
 [`AnalyticsService.Send`](/mod/game-api/types/assembly-other/analyticsservice#m-send), [`IAnalyticsService.Send`](/mod/game-api/types/assembly-other/ianalyticsservice#m-send).
+
+</div>

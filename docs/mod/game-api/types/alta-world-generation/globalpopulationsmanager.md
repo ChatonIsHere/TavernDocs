@@ -23,16 +23,16 @@ Scene entity that runs the `GlobalPopulationDefinition` assets on the server: in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalPopulationsManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GlobalPopulationsManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-populations" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{"[] populations"}</code> | The global population assets this manager runs. |
+| <Link id="m-populations" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{"[] populations"}</code> | <span className="api-desc">The global population assets this manager runs.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Scene entity that runs the `GlobalPopulationDefinition` assets on the server: in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Server: initializes every population and waits for `BootupFinished` to start them. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Server: initializes every population and waits for `BootupFinished` to start them.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onscenedestroy" /><code>{"private void OnSceneDestroy("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Cleans every population when the entity is destroyed. |
-| <Link id="m-startup" /><code>{"private void StartUp()"}</code> | Starts every population once the server finishes booting. |
+| <Link id="m-onscenedestroy" /><code>{"private void OnSceneDestroy("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Cleans every population when the entity is destroyed.</span> |
+| <Link id="m-startup" /><code>{"private void StartUp()"}</code> | <span className="api-desc">Starts every population once the server finishes booting.</span> |
 
 </details>

@@ -23,29 +23,29 @@ Analytics dispatcher that posts each analytics event to the Alta API as a generi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaAnalyticsDispatcher("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Built by the game's dependency injection (VContainer), which passes the services in. |
+| <Link id="m-ctor" /><code>{"AltaAnalyticsDispatcher("}<Link to="/mod/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | <span className="api-desc">Built by the game's dependency injection (VContainer), which passes the services in.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-stringbuilder" /><code>{"private static readonly StringBuilder stringBuilder"}</code> | Shared builder used by `LogPretty`. |
-| <Link id="m-userid" /><code>{"private static int userId"}</code> | Cached user ID, -1 until read. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-stringbuilder" /><code>{"private static readonly StringBuilder stringBuilder"}</code> | <span className="api-desc">Shared builder used by `LogPretty`.</span> |
+| <Link id="m-userid" /><code>{"private static int userId"}</code> | <span className="api-desc">Cached user ID, -1 until read.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-userid-2" /><code>{"private static int UserId { get; }"}</code> | Logged-in user's ID, cached after the first read until logout. |
+| <Link id="m-userid-2" /><code>{"private static int UserId { get; }"}</code> | <span className="api-desc">Logged-in user's ID, cached after the first read until logout.</span> |
 
 </details>
 
@@ -53,15 +53,15 @@ Analytics dispatcher that posts each analytics event to the Alta API as a generi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onanalyticsevent" /><code>{"protected override void OnAnalyticsEvent("}<Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | Sends the event on a background task. |
+| <Link id="m-onanalyticsevent" /><code>{"protected override void OnAnalyticsEvent("}<Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | <span className="api-desc">Sends the event on a background task.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loggedout" /><code>{"private static void LoggedOut()"}</code> | Clears the cached user ID when the user logs out. |
-| <Link id="m-logpretty" /><code>{"private static void LogPretty(string dataName, Dictionary<string, object> props)"}</code> | Logs the sent event name and its properties at debug level. |
-| <Link id="m-senddata" /><code>{"private static async Task SendData("}<Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | Turns the event's properties into a dictionary and posts it with `PostGenericEventAsync`. Errors are logged. |
+| <Link id="m-loggedout" /><code>{"private static void LoggedOut()"}</code> | <span className="api-desc">Clears the cached user ID when the user logs out.</span> |
+| <Link id="m-logpretty" /><code>{"private static void LogPretty(string dataName, Dictionary<string, object> props)"}</code> | <span className="api-desc">Logs the sent event name and its properties at debug level.</span> |
+| <Link id="m-senddata" /><code>{"private static async Task SendData("}<Link to="/mod/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | <span className="api-desc">Turns the event's properties into a dictionary and posts it with `PostGenericEventAsync`. Errors are logged.</span> |
 
 </details>

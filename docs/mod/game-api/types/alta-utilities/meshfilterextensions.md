@@ -21,4 +21,4 @@ Vertex colour helper for mesh filters.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setcolor" /><code>{"static void SetColor(MeshFilter meshFilter, Color color, bool useSharedMesh = false)"}</code> | Swaps the mesh for a cached copy with every vertex set to one colour. Changes the shared mesh if `useSharedMesh` is true. |
+| <Link id="m-setcolor" /><code>{"static void SetColor(MeshFilter meshFilter, Color color, bool useSharedMesh = false)"}</code> | <span className="api-desc">Swaps the mesh for a cached copy with every vertex set to one colour. Changes the shared mesh if `useSharedMesh` is true.</span> |

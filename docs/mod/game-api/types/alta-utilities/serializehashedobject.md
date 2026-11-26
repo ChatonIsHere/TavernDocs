@@ -21,6 +21,6 @@ Stream extension methods that send a `HashedGeneralValue` (or a `PlayerProgressF
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializehashed" /><code>{"static void SerializeHashed<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> | Writes the value's hash in 16 bits (0 for null) and looks it up again on read. |
-| <Link id="m-serializehashedcached" /><code>{"static void SerializeHashedCached<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value, ref T last)"}</code> | Sends one bit if the value is the same as `last`, otherwise the hash, and updates `last`. |
-| <Link id="m-serializeprogressflag" /><code>{"static void SerializeProgressFlag<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> | Like `SerializeHashed`, for progress flags, cast back to the flag type on read. |
+| <Link id="m-serializehashed" /><code>{"static void SerializeHashed<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> | <span className="api-desc">Writes the value's hash in 16 bits (0 for null) and looks it up again on read.</span> |
+| <Link id="m-serializehashedcached" /><code>{"static void SerializeHashedCached<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value, ref T last)"}</code> | <span className="api-desc">Sends one bit if the value is the same as `last`, otherwise the hash, and updates `last`.</span> |
+| <Link id="m-serializeprogressflag" /><code>{"static void SerializeProgressFlag<T>("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref T value)"}</code> | <span className="api-desc">Like `SerializeHashed`, for progress flags, cast back to the flag type on read.</span> |

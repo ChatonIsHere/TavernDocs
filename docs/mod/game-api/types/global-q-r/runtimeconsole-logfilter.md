@@ -33,4 +33,8 @@ Flags for log levels the runtime console hides. The check casts the NLog level o
 
 Members of other types that take, return or hold a `LogFilter`:
 
+<div className="api-used-in">
+
 [`RuntimeConsole.logFilter`](/mod/game-api/types/global-q-r/runtimeconsole#m-logfilter).
+
+</div>

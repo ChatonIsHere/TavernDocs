@@ -21,15 +21,15 @@ Editor helper that draws the bounds of this object's mesh as a wire box when sel
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShowBounds()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ShowBounds()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the `MeshFilter` mesh's bounds in local space. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the `MeshFilter` mesh's bounds in local space.</span> |
 
 </details>

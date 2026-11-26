@@ -22,18 +22,22 @@ A group's info from the web API with its servers and roles included.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> | Creates a `GroupInfoDetailed` with default values. |
+| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> | <span className="api-desc">Creates a `GroupInfoDetailed` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowedserverscount" /><code>{"int AllowedServersCount { get; set; }"}</code> | How many servers the group may have. |
-| <Link id="m-roles" /><code><Link to="/mod/game-api/types/assembly-api-models/grouproleinfo">{"GroupRoleInfo"}</Link>{"[] Roles { get; set; }"}</code> | The group's roles. |
-| <Link id="m-servers" /><code><Link to="/mod/game-api/types/assembly-api-models/groupserverinfo">{"GroupServerInfo"}</Link>{"[] Servers { get; set; }"}</code> | The group's servers. |
+| <Link id="m-allowedserverscount" /><code>{"int AllowedServersCount { get; set; }"}</code> | <span className="api-desc">How many servers the group may have.</span> |
+| <Link id="m-roles" /><code><Link to="/mod/game-api/types/assembly-api-models/grouproleinfo">{"GroupRoleInfo"}</Link>{"[] Roles { get; set; }"}</code> | <span className="api-desc">The group's roles.</span> |
+| <Link id="m-servers" /><code><Link to="/mod/game-api/types/assembly-api-models/groupserverinfo">{"GroupServerInfo"}</Link>{"[] Servers { get; set; }"}</code> | <span className="api-desc">The group's servers.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GroupInfoDetailed`:
 
+<div className="api-used-in">
+
 [`GroupInfoManager.GroupInfoManager`](/mod/game-api/types/assembly-api-client/groupinfomanager#m-ctor), [`JoinedGroupManager.Group`](/mod/game-api/types/assembly-api-client/joinedgroupmanager#m-group), [`JoinedGroupManager.JoinedGroupManager`](/mod/game-api/types/assembly-api-client/joinedgroupmanager#m-ctor), [`LowLevelApiClient.GetGroupByIdentifier`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getgroupbyidentifier), [`LowLevelApiClient.UpdateGroupInfo`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-updategroupinfo), [`JoinedGroupInfo.Group`](/mod/game-api/types/assembly-api-models/joinedgroupinfo#m-group).
+
+</div>

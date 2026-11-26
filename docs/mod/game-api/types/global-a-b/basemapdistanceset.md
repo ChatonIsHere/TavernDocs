@@ -22,17 +22,17 @@ Sets the `Terrain` on the same object to a given basemap distance (where it swit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasemapDistanceSet()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BasemapDistanceSet()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> | Backing field for `Distance` (2000 by default). |
-| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | The terrain on this object. |
+| <Link id="m-distance" /><code>{"private float distance"}</code> | <span className="api-desc">Backing field for `Distance` (2000 by default).</span> |
+| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | <span className="api-desc">The terrain on this object.</span> |
 
 </details>
 
@@ -40,16 +40,16 @@ Sets the `Terrain` on the same object to a given basemap distance (where it swit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance-2" /><code>{"float Distance { get; set; }"}</code> | Basemap distance to apply. Setting it doesn't reapply until the next enable. |
+| <Link id="m-distance-2" /><code>{"float Distance { get; set; }"}</code> | <span className="api-desc">Basemap distance to apply. Setting it doesn't reapply until the next enable.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Gets the terrain, disables itself if headless, then applies the distance. |
-| <Link id="m-set" /><code>{"private void Set()"}</code> | Applies the distance to the terrain if it differs. If the terrain wasn't cached yet it only fetches it and doesn't apply. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Gets the terrain, disables itself if headless, then applies the distance.</span> |
+| <Link id="m-set" /><code>{"private void Set()"}</code> | <span className="api-desc">Applies the distance to the terrain if it differs. If the terrain wasn't cached yet it only fetches it and doesn't apply.</span> |
 
 </details>

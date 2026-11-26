@@ -21,17 +21,21 @@ Pairs an impact channel with the impact effect to play when a hit on that channe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> | Creates a `PickupTypeSettings.ChannelInneficientHardnessHitEffect` with default values. |
+| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> | <span className="api-desc">Creates a `PickupTypeSettings.ChannelInneficientHardnessHitEffect` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | The impact channel this entry is for. |
-| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> | The impact effect settings to use for that channel. |
+| <Link id="m-channel" /><code><Link to="/mod/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | <span className="api-desc">The impact channel this entry is for.</span> |
+| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> | <span className="api-desc">The impact effect settings to use for that channel.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChannelInneficientHardnessHitEffect`:
 
+<div className="api-used-in">
+
 [`PickupTypeSettings.perChannelHardnessInnefectiveHitEffect`](/mod/game-api/types/global-p/pickuptypesettings#m-perchannelhardnessinnefectivehiteffect).
+
+</div>

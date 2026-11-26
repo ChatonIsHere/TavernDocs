@@ -21,11 +21,15 @@ Implemented by scene components that spawn dynamic objects when their parent is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Spawns this component's content under the given dynamic parent using the spawn data. |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> | Clears generated state, such as editor previews. |
+| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Spawns this component's content under the given dynamic parent using the spawn data.</span> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | <span className="api-desc">Clears generated state, such as editor previews.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IStaticGeneration`:
 
+<div className="api-used-in">
+
 [`StaticGenerationHelper.Generate`](/mod/game-api/types/global-s/staticgenerationhelper#m-generate-2).
+
+</div>

@@ -21,10 +21,10 @@ Base request body for a purchase: which saved payment method to charge.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> | Creates a `PurchaseRequest` with default values. |
+| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> | <span className="api-desc">Creates a `PurchaseRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-paymentmethodidentifier" /><code>{"int PaymentMethodIdentifier { get; set; }"}</code> | Id of the payment method, sent as `payment_method_id`. |
+| <Link id="m-paymentmethodidentifier" /><code>{"int PaymentMethodIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the payment method, sent as `payment_method_id`.</span> |

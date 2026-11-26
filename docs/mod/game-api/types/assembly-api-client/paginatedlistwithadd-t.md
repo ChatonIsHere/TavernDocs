@@ -22,10 +22,10 @@ Paged API list that a user can also be added to, such as a group's bans or invit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PaginatedListWithAdd("}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `PaginatedListWithAdd` from `page` and `api`. |
+| <Link id="m-ctor" /><code>{"protected PaginatedListWithAdd("}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `PaginatedListWithAdd` from `page` and `api`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"abstract Task<T> Add("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> | Adds the user to the list through the API. |
+| <Link id="m-add" /><code>{"abstract Task<T> Add("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> | <span className="api-desc">Adds the user to the list through the API.</span> |

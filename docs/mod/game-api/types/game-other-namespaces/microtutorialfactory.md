@@ -22,17 +22,17 @@ Creates `MicroTutorial` instances for a player. Registered in the DI container.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialFactory("}<Link to="/mod/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController, "}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsystem">{"IMicroTutorialSystem"}</Link>{" microTutorialSystem)"}</code> | Creates a `MicroTutorialFactory` from `domainController` and `microTutorialSystem`. |
+| <Link id="m-ctor" /><code>{"MicroTutorialFactory("}<Link to="/mod/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController, "}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsystem">{"IMicroTutorialSystem"}</Link>{" microTutorialSystem)"}</code> | <span className="api-desc">Creates a `MicroTutorialFactory` from `domainController` and `microTutorialSystem`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-domaincontroller" /><code>{"private readonly "}<Link to="/mod/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController"}</code> | Domain controller passed to each tutorial. |
-| <Link id="m-microtutorialsystem" /><code>{"private readonly "}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsystem">{"IMicroTutorialSystem"}</Link>{" microTutorialSystem"}</code> | Micro tutorial system passed to each tutorial. |
+| <Link id="m-domaincontroller" /><code>{"private readonly "}<Link to="/mod/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController"}</code> | <span className="api-desc">Domain controller passed to each tutorial.</span> |
+| <Link id="m-microtutorialsystem" /><code>{"private readonly "}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsystem">{"IMicroTutorialSystem"}</Link>{" microTutorialSystem"}</code> | <span className="api-desc">Micro tutorial system passed to each tutorial.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Creates `MicroTutorial` instances for a player. Registered in the DI container.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createtutorial" /><code><Link to="/mod/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Returns a new `MicroTutorial` for the settings and player, using the injected system and domain controller. |
+| <Link id="m-createtutorial" /><code><Link to="/mod/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Returns a new `MicroTutorial` for the settings and player, using the injected system and domain controller.</span> |

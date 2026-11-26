@@ -20,17 +20,21 @@ An elbow guide data point and how well it matches the current hand pose. `ElbowC
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/mod/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> | Creates an `ElbowDataPointScore` from `point` and `score`. |
+| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/mod/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> | <span className="api-desc">Creates an `ElbowDataPointScore` from `point` and `score`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-point" /><code><Link to="/mod/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" Point { get; set; }"}</code> | The data point being scored. |
-| <Link id="m-score" /><code>{"float Score { get; set; }"}</code> | Match score from position and rotation difference, divided by the point's weight. Lower is better. |
+| <Link id="m-point" /><code><Link to="/mod/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" Point { get; set; }"}</code> | <span className="api-desc">The data point being scored.</span> |
+| <Link id="m-score" /><code>{"float Score { get; set; }"}</code> | <span className="api-desc">Match score from position and rotation difference, divided by the point's weight. Lower is better.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ElbowDataPointScore`:
 
+<div className="api-used-in">
+
 [`ElbowController.bestMatches`](/mod/game-api/types/alta-player/elbowcontroller#m-bestmatches).
+
+</div>

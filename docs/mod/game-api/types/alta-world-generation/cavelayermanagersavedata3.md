@@ -22,18 +22,18 @@ Old save data for the `CaveLayerManager` (version 3) with only seed, layer count
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData3()"}</code> | Creates a `CaveLayerManagerSaveData3` with default values. |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData3()"}</code> | <span className="api-desc">Creates a `CaveLayerManagerSaveData3` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> | Number of cave layers generated. |
-| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> | Entrance position of each layer. |
-| <Link id="m-seed" /><code>{"int seed"}</code> | Cave generation seed. |
+| <Link id="m-currentlayercount" /><code>{"int currentLayerCount"}</code> | <span className="api-desc">Number of cave layers generated.</span> |
+| <Link id="m-entrances" /><code>{"Vector2[] entrances"}</code> | <span className="api-desc">Entrance position of each layer.</span> |
+| <Link id="m-seed" /><code>{"int seed"}</code> | <span className="api-desc">Cave generation seed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Builds version 4 data with fixed layer depths and seeded entrance directions, then clears the seed. It writes into `layerPrefabs` without creating it, so it probably throws. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Builds version 4 data with fixed layer depths and seeded entrance directions, then clears the seed. It writes into `layerPrefabs` without creating it, so it probably throws.</span> |

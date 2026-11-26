@@ -22,18 +22,18 @@ Fills the parent `PickupDockGroup` with a fixed `PresetLootSet` instead of rando
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootModule()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PresetLootModule()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group"}</code> | Backing field for `Group`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs an error when the preset set is missing. |
-| <Link id="m-setup" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/presetlootmodulesavedata">{"PresetLootModuleSaveData"}</Link>{" setup"}</code> | The saved settings: which `PresetLootSet` to use and whether to clear the group first. Saved and loaded as is. |
+| <Link id="m-group" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" group"}</code> | <span className="api-desc">Backing field for `Group`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger; logs an error when the preset set is missing.</span> |
+| <Link id="m-setup" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/presetlootmodulesavedata">{"PresetLootModuleSaveData"}</Link>{" setup"}</code> | <span className="api-desc">The saved settings: which `PresetLootSet` to use and whether to clear the group first. Saved and loaded as is.</span> |
 
 </details>
 
@@ -41,19 +41,19 @@ Fills the parent `PickupDockGroup` with a fixed `PresetLootSet` instead of rando
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group-2" /><code><Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" Group { get; }"}</code> | The `PickupDockGroup` in the parents, found on first access. |
+| <Link id="m-group-2" /><code><Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" Group { get; }"}</code> | <span className="api-desc">The `PickupDockGroup` in the parents, found on first access.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn()"}</code> | Spawns the preset set into the group now, or waits until the entity is added to a chunk. No code callers; probably hooked up from a Unity event. |
+| <Link id="m-spawn" /><code>{"void Spawn()"}</code> | <span className="api-desc">Spawns the preset set into the group now, or waits until the entity is added to a chunk. No code callers; probably hooked up from a Unity event.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haschunk" /><code>{"private void HasChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk = null)"}</code> | Runs the spawn once the entity has a chunk, using the chunk's spawn data. Clears the group first if `clearWhenSpawn` is set. |
+| <Link id="m-haschunk" /><code>{"private void HasChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk = null)"}</code> | <span className="api-desc">Runs the spawn once the entity has a chunk, using the chunk's spawn data. Clears the group first if `clearWhenSpawn` is set.</span> |
 
 </details>

@@ -21,17 +21,17 @@ Live debug readout of the chunk the local player is in.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ChunkDisplay()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `Chunk`. |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | <span className="api-desc">Label `Chunk`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Only shown while the local player is in a chunk. |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | The identifier of `LocationChunk.ChunkWithLocalPlayer`. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | <span className="api-desc">Only shown while the local player is in a chunk.</span> |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | <span className="api-desc">The identifier of `LocationChunk.ChunkWithLocalPlayer`.</span> |

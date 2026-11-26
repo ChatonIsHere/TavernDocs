@@ -22,4 +22,4 @@ Serializable `UnityEvent` with the interactor, pickup and dock, for dock events 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockedUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PickupDockedUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

@@ -24,23 +24,23 @@ Network entity component that instantiates a list of static prefabs under itself
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AdditionalStaticContent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AdditionalStaticContent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbaking" /><code>{"static bool IsBaking"}</code> | Static flag set during baking, which stops the editor gizmo preview. |
+| <Link id="m-isbaking" /><code>{"static bool IsBaking"}</code> | <span className="api-desc">Static flag set during baking, which stops the editor gizmo preview.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mtransform" /><code>{"private Transform mTransform"}</code> | Backing field for `Transform`. |
-| <Link id="m-needstoinstantiate" /><code>{"private bool needsToInstantiate"}</code> | Whether clients should spawn the content. Saved. |
-| <Link id="m-staticcontent" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/additionalstaticcontent-staticcontent">{"AdditionalStaticContent.StaticContent"}</Link>{"[] staticContent"}</code> | The prefabs to spawn, with their local transforms. |
-| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for the content flag. |
+| <Link id="m-mtransform" /><code>{"private Transform mTransform"}</code> | <span className="api-desc">Backing field for `Transform`.</span> |
+| <Link id="m-needstoinstantiate" /><code>{"private bool needsToInstantiate"}</code> | <span className="api-desc">Whether clients should spawn the content. Saved.</span> |
+| <Link id="m-staticcontent" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/additionalstaticcontent-staticcontent">{"AdditionalStaticContent.StaticContent"}</Link>{"[] staticContent"}</code> | <span className="api-desc">The prefabs to spawn, with their local transforms.</span> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | <span className="api-desc">Method sync for the content flag.</span> |
 
 </details>
 
@@ -48,23 +48,23 @@ Network entity component that instantiates a list of static prefabs under itself
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | Cached transform. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">Cached transform.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the method sync for the content flag. |
-| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> | Instantiates every configured prefab under the parent with its local position, rotation and scale. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the content flag to the joining player. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Creates the method sync for the content flag.</span> |
+| <Link id="m-instantiatecontent" /><code>{"void InstantiateContent(Transform parent, HideFlags hideFlags = 0)"}</code> | <span className="api-desc">Instantiates every configured prefab under the parent with its local position, rotation and scale.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sends the content flag to the joining player.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instantiatecontenteditor" /><code>{"private void InstantiateContentEditor()"}</code> | Empty in this build. |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor preview hook. Does nothing in this build. |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Method sync body for `needsToInstantiate`. Clients and local test spawn the content when the flag is set. |
+| <Link id="m-instantiatecontenteditor" /><code>{"private void InstantiateContentEditor()"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Editor preview hook. Does nothing in this build.</span> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Method sync body for `needsToInstantiate`. Clients and local test spawn the content when the flag is set.</span> |
 
 </details>

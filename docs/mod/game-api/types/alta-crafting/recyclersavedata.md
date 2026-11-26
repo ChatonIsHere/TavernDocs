@@ -23,4 +23,4 @@ Save data for a `Recycler` (version 1): the saved state of each of its output sl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RecyclerSaveData()"}</code> | Creates a `RecyclerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RecyclerSaveData()"}</code> | <span className="api-desc">Creates a `RecyclerSaveData` with default values.</span> |

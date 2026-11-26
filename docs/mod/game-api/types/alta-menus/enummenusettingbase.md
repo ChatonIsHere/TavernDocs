@@ -22,21 +22,21 @@ A menu setting that steps through a list of string values (next and previous) an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnumMenuSettingBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnumMenuSettingBase()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrefreshing" /><code>{"protected bool isRefreshing"}</code> | True while the values are loading. Changes are ignored meanwhile. |
-| <Link id="m-possiblevalues" /><code>{"protected string[] possibleValues"}</code> | The values to step through, from the setting. |
+| <Link id="m-isrefreshing" /><code>{"protected bool isRefreshing"}</code> | <span className="api-desc">True while the values are loading. Changes are ignored meanwhile.</span> |
+| <Link id="m-possiblevalues" /><code>{"protected string[] possibleValues"}</code> | <span className="api-desc">The values to step through, from the setting.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valuetext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" valueText"}</code> | Text that shows the current value. |
+| <Link id="m-valuetext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" valueText"}</code> | <span className="api-desc">Text that shows the current value.</span> |
 
 </details>
 
@@ -44,25 +44,25 @@ A menu setting that steps through a list of string values (next and previous) an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentenumindex" /><code>{"int CurrentEnumIndex { get; protected set; }"}</code> | Index of the shown value in `possibleValues`. |
+| <Link id="m-currentenumindex" /><code>{"int CurrentEnumIndex { get; protected set; }"}</code> | <span className="api-desc">Index of the shown value in `possibleValues`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gotonextvalue" /><code>{"void GoToNextValue()"}</code> | Moves to the next value, wrapping round, and saves it. |
-| <Link id="m-gotopreviousvalue" /><code>{"void GoToPreviousValue()"}</code> | Moves to the previous value, wrapping round, and saves it. |
-| <Link id="m-finishedrefresh" /><code>{"protected virtual void FinishedRefresh()"}</code> | Called after the values have loaded. Empty by default. |
-| <Link id="m-refresh" /><code>{"protected void Refresh()"}</code> | Wraps the index, writes the value to the setting and updates the text. |
-| <Link id="m-setup" /><code>{"protected override void Setup()"}</code> | Loads the possible values and current value from the setting. |
-| <Link id="m-updatetext" /><code>{"protected virtual void UpdateText()"}</code> | Shows the current value on the label. |
-| <Link id="m-wrapenumindex" /><code>{"protected int WrapEnumIndex(int index)"}</code> | Wraps an index into the range of `possibleValues`. |
+| <Link id="m-gotonextvalue" /><code>{"void GoToNextValue()"}</code> | <span className="api-desc">Moves to the next value, wrapping round, and saves it.</span> |
+| <Link id="m-gotopreviousvalue" /><code>{"void GoToPreviousValue()"}</code> | <span className="api-desc">Moves to the previous value, wrapping round, and saves it.</span> |
+| <Link id="m-finishedrefresh" /><code>{"protected virtual void FinishedRefresh()"}</code> | <span className="api-desc">Called after the values have loaded. Empty by default.</span> |
+| <Link id="m-refresh" /><code>{"protected void Refresh()"}</code> | <span className="api-desc">Wraps the index, writes the value to the setting and updates the text.</span> |
+| <Link id="m-setup" /><code>{"protected override void Setup()"}</code> | <span className="api-desc">Loads the possible values and current value from the setting.</span> |
+| <Link id="m-updatetext" /><code>{"protected virtual void UpdateText()"}</code> | <span className="api-desc">Shows the current value on the label.</span> |
+| <Link id="m-wrapenumindex" /><code>{"protected int WrapEnumIndex(int index)"}</code> | <span className="api-desc">Wraps an index into the range of `possibleValues`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-refreshvalues" /><code>{"private async void RefreshValues()"}</code> | Loads the setting's possible values and current value, finds its index and updates the text. Blocks changes while it runs. |
+| <Link id="m-refreshvalues" /><code>{"private async void RefreshValues()"}</code> | <span className="api-desc">Loads the setting's possible values and current value, finds its index and updates the text. Blocks changes while it runs.</span> |
 
 </details>

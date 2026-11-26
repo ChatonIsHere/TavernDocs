@@ -21,26 +21,26 @@ Default `IChunkLoader` for a player, created by `PlayerChunkManager`. Loads the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NormalChunkLoader("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `NormalChunkLoader` from `player`. |
+| <Link id="m-ctor" /><code>{"NormalChunkLoader("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Creates a `NormalChunkLoader` from `player`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | The player this loader belongs to. Not used when picking chunks. |
+| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | <span className="api-desc">The player this loader belongs to. Not used when picking chunks.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"private void IChunkLoader.GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> | Fills the dynamic and static chunk sets with the normal neighbours of the current chunk. |
+| <Link id="m-getchunkstoload" /><code>{"private void IChunkLoader.GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> staticList)"}</code> | <span className="api-desc">Fills the dynamic and static chunk sets with the normal neighbours of the current chunk.</span> |
 
 </details>

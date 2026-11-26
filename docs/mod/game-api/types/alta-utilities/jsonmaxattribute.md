@@ -21,16 +21,16 @@ JSON property attribute that caps a float at a maximum whenever the property is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonMaxAttribute(float max)"}</code> | Creates a `JsonMaxAttribute` from `max`. |
+| <Link id="m-ctor" /><code>{"JsonMaxAttribute(float max)"}</code> | <span className="api-desc">Creates a `JsonMaxAttribute` from `max`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> | The upper limit. |
+| <Link id="m-max" /><code>{"private float max"}</code> | <span className="api-desc">The upper limit.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ JSON property attribute that caps a float at a maximum whenever the property is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | Wraps the property's value provider in a `JsonMaxValueProvider`. |
+| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | <span className="api-desc">Wraps the property's value provider in a `JsonMaxValueProvider`.</span> |

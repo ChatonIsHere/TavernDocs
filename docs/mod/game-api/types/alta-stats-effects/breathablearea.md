@@ -22,15 +22,15 @@ Obsolete `EffectArea` subclass with no behaviour of its own. Kept so old prefabs
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BreathableArea()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BreathableArea()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nothing" /><code>{"private bool nothing"}</code> | Unused placeholder field shown under an OBSOLETE header in the inspector. |
+| <Link id="m-nothing" /><code>{"private bool nothing"}</code> | <span className="api-desc">Unused placeholder field shown under an OBSOLETE header in the inspector.</span> |
 
 </details>

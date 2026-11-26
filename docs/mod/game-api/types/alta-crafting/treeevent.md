@@ -22,4 +22,4 @@ Serializable Unity event that passes a `WoodcutTree`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TreeEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TreeEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

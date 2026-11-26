@@ -29,4 +29,8 @@ Outcome of a friend request token touch (new friend, already friends, or denied)
 
 Members of other types that take, return or hold a `FriendshipSyncResult`:
 
+<div className="api-used-in">
+
 [`FriendRequestToken.RunEffects`](/mod/game-api/types/global-e-h/friendrequesttoken#m-runeffects).
+
+</div>

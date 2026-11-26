@@ -28,4 +28,8 @@ How a teleport or rotation is shown to the player: instantly, as a lerp, or with
 
 Members of other types that take, return or hold a `LocomotionStyle`:
 
+<div className="api-used-in">
+
 [`PlayerCharacter.teleportStyle`](/mod/game-api/types/alta-player/playercharacter#m-teleportstyle), [`PlayerCharacter.TeleportStyle`](/mod/game-api/types/alta-player/playercharacter#m-teleportstyle-2), [`LocomotionController.RotateAroundPlayer`](/mod/game-api/types/global-i-l/locomotioncontroller#m-rotatearoundplayer-2), [`LocomotionController.RotateTo`](/mod/game-api/types/global-i-l/locomotioncontroller#m-rotateto-2), [`LocomotionController.teleportStyle`](/mod/game-api/types/global-i-l/locomotioncontroller#m-teleportstyle), [`PlayerLocomotionController.RotateAroundPlayer`](/mod/game-api/types/global-p/playerlocomotioncontroller#m-rotatearoundplayer), [`PlayerLocomotionController.style`](/mod/game-api/types/global-p/playerlocomotioncontroller#m-style), [`PlayerLocomotionController.TeleportTo`](/mod/game-api/types/global-p/playerlocomotioncontroller#m-teleportto-2).
+
+</div>

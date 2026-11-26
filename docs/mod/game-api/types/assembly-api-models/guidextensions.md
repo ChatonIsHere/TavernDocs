@@ -21,6 +21,6 @@ Helpers for turning GUIDs into short strings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-newbase64string" /><code>{"static string NewBase64String()"}</code> | Makes a new GUID and returns it as a base64 string. |
-| <Link id="m-tobase64string" /><code>{"static string ToBase64String(Guid guid)"}</code> | Returns the GUID's bytes as a base64 string. |
-| <Link id="m-toshortstring" /><code>{"static string ToShortString(Guid guid)"}</code> | Returns the GUID as 32 hex digits with no dashes. |
+| <Link id="m-newbase64string" /><code>{"static string NewBase64String()"}</code> | <span className="api-desc">Makes a new GUID and returns it as a base64 string.</span> |
+| <Link id="m-tobase64string" /><code>{"static string ToBase64String(Guid guid)"}</code> | <span className="api-desc">Returns the GUID's bytes as a base64 string.</span> |
+| <Link id="m-toshortstring" /><code>{"static string ToShortString(Guid guid)"}</code> | <span className="api-desc">Returns the GUID as 32 hex digits with no dashes.</span> |

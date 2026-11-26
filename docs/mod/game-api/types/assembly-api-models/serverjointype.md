@@ -32,4 +32,8 @@ Who may join a server: group members, public, open group, supporters only, world
 
 Members of other types that take, return or hold a `ServerJoinType`:
 
+<div className="api-used-in">
+
 [`GameServerCreateRequest.JoinType`](/mod/game-api/types/assembly-api-models/gameservercreaterequest#m-jointype), [`GameServerInfo.JoinType`](/mod/game-api/types/assembly-api-models/gameserverinfo#m-jointype), [`GroupTypeExtensions.ConvertToServerJoinType`](/mod/game-api/types/assembly-api-models/grouptypeextensions#m-converttoserverjointype).
+
+</div>

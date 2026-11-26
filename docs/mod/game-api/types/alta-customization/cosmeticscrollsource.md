@@ -21,16 +21,16 @@ Holds the list of cosmetic hashes a customisation scroll list shows, and raises 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticScrollSource()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CosmeticScrollSource()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code>{"private List<uint> items"}</code> | Backing field for `Items`. |
+| <Link id="m-items" /><code>{"private List<uint> items"}</code> | <span className="api-desc">Backing field for `Items`.</span> |
 
 </details>
 
@@ -38,22 +38,26 @@ Holds the list of cosmetic hashes a customisation scroll list shows, and raises 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> | Cosmetic hashes to show. Setting it raises `ItemsChanged`. |
+| <Link id="m-items-2" /><code>{"List<uint> Items { get; set; }"}</code> | <span className="api-desc">Cosmetic hashes to show. Setting it raises `ItemsChanged`.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> | Raised when `Items` is replaced or `OnItemsChanged` is called. |
+| <Link id="m-itemschanged" /><code>{"event Action ItemsChanged"}</code> | <span className="api-desc">Raised when `Items` is replaced or `OnItemsChanged` is called.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> | Raises `ItemsChanged`. Call it after editing the list in place. |
+| <Link id="m-onitemschanged" /><code>{"void OnItemsChanged()"}</code> | <span className="api-desc">Raises `ItemsChanged`. Call it after editing the list in place.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CosmeticScrollSource`:
 
+<div className="api-used-in">
+
 [`CosmeticScrollElement.scrollSource`](/mod/game-api/types/alta-customization/cosmeticscrollelement#m-scrollsource), [`ScrollManager.target`](/mod/game-api/types/alta-customization/scrollmanager#m-target).
+
+</div>

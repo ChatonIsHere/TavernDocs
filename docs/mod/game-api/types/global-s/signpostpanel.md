@@ -22,30 +22,30 @@ Editor sizing helper for a sign post panel: scales the mesh, content and text ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SignPostPanel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SignPostPanel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"private Transform content"}</code> | Transform scaled on Z by the panel depth. |
-| <Link id="m-mesh" /><code>{"private Transform mesh"}</code> | Transform scaled on X and Y by the panel size. |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> | Panel width, height and depth. |
-| <Link id="m-text" /><code>{"private Text text"}</code> | The panel's UI text; its canvas is resized to fit. |
-| <Link id="m-textscale" /><code>{"private Vector2 textScale"}</code> | Canvas units per unit of panel size. |
+| <Link id="m-content" /><code>{"private Transform content"}</code> | <span className="api-desc">Transform scaled on Z by the panel depth.</span> |
+| <Link id="m-mesh" /><code>{"private Transform mesh"}</code> | <span className="api-desc">Transform scaled on X and Y by the panel size.</span> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> | <span className="api-desc">Panel width, height and depth.</span> |
+| <Link id="m-text" /><code>{"private Text text"}</code> | <span className="api-desc">The panel's UI text; its canvas is resized to fit.</span> |
+| <Link id="m-textscale" /><code>{"private Vector2 textScale"}</code> | <span className="api-desc">Canvas units per unit of panel size.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Applies `size` to the mesh and content scales and sizes the text canvas from `textScale`. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Applies `size` to the mesh and content scales and sizes the text canvas from `textScale`.</span> |
 
 </details>

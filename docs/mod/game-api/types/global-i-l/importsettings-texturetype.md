@@ -28,4 +28,8 @@ Texture scaling mode in import settings: `Standard` or `Cosmetic`.
 
 Members of other types that take, return or hold a `TextureType`:
 
+<div className="api-used-in">
+
 [`ImportSettings.PlatformSettings.scaleMode`](/mod/game-api/types/global-i-l/importsettings-platformsettings#m-scalemode).
+
+</div>

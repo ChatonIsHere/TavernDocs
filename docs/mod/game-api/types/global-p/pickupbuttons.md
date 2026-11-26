@@ -21,15 +21,15 @@ Component on a pickup with buttons that stops the buttons' colliders counting as
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupButtons()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PickupButtons()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Removes every child `PhysicalButton` collider from the pickup's `Colliders` list. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Removes every child `PhysicalButton` collider from the pickup's `Colliders` list.</span> |
 
 </details>

@@ -21,16 +21,20 @@ A friendship returned for an Oculus friends list, from `LowLevelApiClient.GetOcu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> | Creates an `OculusFriendInfo` with default values. |
+| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> | <span className="api-desc">Creates an `OculusFriendInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> | The friend's Oculus user id. |
+| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> | <span className="api-desc">The friend's Oculus user id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OculusFriendInfo`:
 
+<div className="api-used-in">
+
 [`ISocialClient.GetOculusFriends`](/mod/game-api/types/assembly-api-client/isocialclient#m-getoculusfriends), [`OfflineSocialClient.GetOculusFriends`](/mod/game-api/types/assembly-api-client/offlinesocialclient#m-getoculusfriends), [`SocialClient.GetOculusFriends`](/mod/game-api/types/assembly-api-client/socialclient#m-getoculusfriends), [`LowLevelApiClient.GetOculusFriendships`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getoculusfriendships).
+
+</div>

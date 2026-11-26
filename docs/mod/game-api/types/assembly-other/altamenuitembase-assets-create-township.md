@@ -23,4 +23,4 @@ Menu path node for Assets/Create/Township.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Township()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township` with default values. |
+| <Link id="m-ctor" /><code>{"protected Township()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township` with default values.</span> |

@@ -23,10 +23,10 @@ Save data for `LogicFloatReceiver`: which float sender it listens to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReceiverData()"}</code> | Creates a `LogicFloatReceiverData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatReceiverData()"}</code> | <span className="api-desc">Creates a `LogicFloatReceiverData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> | The linked float sender's logic data. On load the receiver relinks to it through the logic manager. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicfloatsavedata">{"LogicFloatSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked float sender's logic data. On load the receiver relinks to it through the logic manager.</span> |

@@ -21,17 +21,17 @@ One running mining echo pulse: a sphere that grows from where a tool hit, used b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/mod/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> | Creates a `MiningEcho.MiningEchoExecution` from `center` and `levelDefinition`. |
+| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/mod/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> | <span className="api-desc">Creates a `MiningEcho.MiningEchoExecution` from `center` and `levelDefinition`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-leveldefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition"}</code> | The skill level settings (size, curve and duration) for this pulse. |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | How far through the pulse is, from 0 to 1. |
+| <Link id="m-leveldefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition"}</code> | <span className="api-desc">The skill level settings (size, curve and duration) for this pulse.</span> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">How far through the pulse is, from 0 to 1.</span> |
 
 </details>
 
@@ -39,18 +39,22 @@ One running mining echo pulse: a sphere that grows from where a tool hit, used b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> | The world point of the hit the echo started from. |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> | True once the pulse has run for its full duration. |
-| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> | The current radius: the level's size times its curve at the current progress. |
+| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> | <span className="api-desc">The world point of the hit the echo started from.</span> |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> | <span className="api-desc">True once the pulse has run for its full duration.</span> |
+| <Link id="m-radius" /><code>{"float Radius { get; }"}</code> | <span className="api-desc">The current radius: the level's size times its curve at the current progress.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"void Update()"}</code> | Moves the pulse forward by one frame of its duration. Called by `MiningEcho`'s update loop. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | <span className="api-desc">Moves the pulse forward by one frame of its duration. Called by `MiningEcho`'s update loop.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MiningEchoExecution`:
 
+<div className="api-used-in">
+
 [`MiningEcho.miningEchoes`](/mod/game-api/types/global-m-o/miningecho#m-miningechoes).
+
+</div>

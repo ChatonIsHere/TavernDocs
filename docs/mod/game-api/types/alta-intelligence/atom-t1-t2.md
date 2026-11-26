@@ -21,18 +21,22 @@ A named AI logic atom that takes two terms. `Define` turns it into a weighted de
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | Creates an `Atom` from `name`. |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | <span className="api-desc">Creates an `Atom` from `name`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-define" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, float weighting = 1)"}</code> | Builds a definition testing the two terms, with an optional goal predicate (true by default) and a weighting. |
-| <Link id="m-define-2" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> | Builds a definition testing the two terms, with an optional goal predicate (true by default) and a weighting. |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/atom-t1-t2">{"Atom"}</Link>{"<T1, T2> op_Implicit(string name)"}</code> | Makes an atom from its name. |
+| <Link id="m-define" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, float weighting = 1)"}</code> | <span className="api-desc">Builds a definition testing the two terms, with an optional goal predicate (true by default) and a weighting.</span> |
+| <Link id="m-define-2" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> | <span className="api-desc">Builds a definition testing the two terms, with an optional goal predicate (true by default) and a weighting.</span> |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/atom-t1-t2">{"Atom"}</Link>{"<T1, T2> op_Implicit(string name)"}</code> | <span className="api-desc">Makes an atom from its name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Atom&lt;T1, T2>`:
 
+<div className="api-used-in">
+
 [`Intelligence.Attacked`](/mod/game-api/types/alta-intelligence/intelligence#m-attacked), [`Intelligence.AttackedLocated`](/mod/game-api/types/alta-intelligence/intelligence#m-attackedlocated), [`Intelligence.Equal`](/mod/game-api/types/alta-intelligence/intelligence#m-equal), [`Intelligence.IsLocated`](/mod/game-api/types/alta-intelligence/intelligence#m-islocated), [`Intelligence.Owner`](/mod/game-api/types/alta-intelligence/intelligence#m-owner), [`Intelligence.Owns`](/mod/game-api/types/alta-intelligence/intelligence#m-owns).
+
+</div>

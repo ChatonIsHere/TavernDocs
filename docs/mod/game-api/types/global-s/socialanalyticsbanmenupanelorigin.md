@@ -28,4 +28,8 @@ Which menu panel a ban was made from (inbox, reports or group page). Sent with t
 
 Members of other types that take, return or hold a `SocialAnalyticsBanMenuPanelOrigin`:
 
+<div className="api-used-in">
+
 [`PlayerReportBaseNotification.BanUserFromReport`](/mod/game-api/types/alta-menus/playerreportbasenotification#m-banuserfromreport), [`BanPlayerSocialAnalyticsEvent.BanPlayerSocialAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/banplayersocialanalyticsevent#m-ctor), [`PlayerCommunityAnalytics.BanPlayerInMainMenu`](/mod/game-api/types/global-p/playercommunityanalytics#m-banplayerinmainmenu).
+
+</div>

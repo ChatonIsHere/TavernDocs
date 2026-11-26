@@ -21,16 +21,16 @@ Serializable array of values, one per skill level, used by skills for level scal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> | Creates a `ValuePerLevel` with default values. |
+| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> | <span className="api-desc">Creates a `ValuePerLevel` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valueperlevel" /><code>{"private T[] valuePerLevel"}</code> | The values, first entry for level 1. |
+| <Link id="m-valueperlevel" /><code>{"private T[] valuePerLevel"}</code> | <span className="api-desc">The values, first entry for level 1.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Serializable array of values, one per skill level, used by skills for level scal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getforlevel" /><code>{"T GetForLevel(int level)"}</code> | Value for a level (level 1 is the first entry), clamped to the array, so higher levels reuse the last value. |
+| <Link id="m-getforlevel" /><code>{"T GetForLevel(int level)"}</code> | <span className="api-desc">Value for a level (level 1 is the first entry), clamped to the array, so higher levels reuse the last value.</span> |

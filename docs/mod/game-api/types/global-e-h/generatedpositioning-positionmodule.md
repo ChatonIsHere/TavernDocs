@@ -27,4 +27,8 @@ Position module choices for `GeneratedPositioning`. Only `Static` (no change) ex
 
 Members of other types that take, return or hold a `PositionModule`:
 
+<div className="api-used-in">
+
 [`GeneratedPositioning.position`](/mod/game-api/types/global-e-h/generatedpositioning#m-position), [`GeneratedPositioning.positionTypes`](/mod/game-api/types/global-e-h/generatedpositioning#m-positiontypes).
+
+</div>

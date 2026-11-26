@@ -22,4 +22,4 @@ Editor menu entry for creating a cave `Element` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `Element.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `Element.Create` with default values.</span> |

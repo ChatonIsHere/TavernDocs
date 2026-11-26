@@ -30,4 +30,8 @@ Flags for why a platform effect called FFV should be on: movement, hurt, low per
 
 Members of other types that take, return or hold a `FfvSource`:
 
+<div className="api-used-in">
+
 [`FakePlatformDevice.SetFfvSource`](/mod/game-api/types/assembly-other/fakeplatformdevice#m-setffvsource), [`IPlatformDevice.SetFfvSource`](/mod/game-api/types/assembly-other/iplatformdevice#m-setffvsource).
+
+</div>

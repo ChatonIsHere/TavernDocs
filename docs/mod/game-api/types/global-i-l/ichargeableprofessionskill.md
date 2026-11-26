@@ -21,11 +21,15 @@ Internal: a profession skill that can be charged, like a bow draw. `BowStringPul
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendcancelled" /><code>{"void SendCancelled("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends that the player cancelled charging the skill on the entity. |
-| <Link id="m-sendchargingstarted" /><code>{"void SendChargingStarted("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends that the player started charging the skill on the entity. |
+| <Link id="m-sendcancelled" /><code>{"void SendCancelled("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sends that the player cancelled charging the skill on the entity.</span> |
+| <Link id="m-sendchargingstarted" /><code>{"void SendChargingStarted("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sends that the player started charging the skill on the entity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IChargeableProfessionSkill`:
 
+<div className="api-used-in">
+
 [`BowStringPullbackInputMethod.skill`](/mod/game-api/types/global-a-b/bowstringpullbackinputmethod#m-skill).
+
+</div>

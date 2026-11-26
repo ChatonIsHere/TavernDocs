@@ -20,24 +20,28 @@ One mesh triangle with its corners, centre, edges and normal, used when deciding
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RemovingTriangle(List<Vector3> vertices, List<int> triangles, int startIndex)"}</code> | Creates a `RemovingTriangle` from `vertices`, `triangles` and `startIndex`. |
+| <Link id="m-ctor" /><code>{"RemovingTriangle(List<Vector3> vertices, List<int> triangles, int startIndex)"}</code> | <span className="api-desc">Creates a `RemovingTriangle` from `vertices`, `triangles` and `startIndex`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"Vector3 A { get; }"}</code> | First corner. |
-| <Link id="m-b" /><code>{"Vector3 B { get; }"}</code> | Second corner. |
-| <Link id="m-c" /><code>{"Vector3 C { get; }"}</code> | Third corner. |
-| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> | Average of the three corners. |
-| <Link id="m-indices" /><code>{"int[] Indices { get; }"}</code> | The three vertex indices. |
-| <Link id="m-linesegments" /><code>{"Vector3[] LineSegments { get; }"}</code> | The three edge vectors: A minus B, B minus C and C minus A. |
-| <Link id="m-normal" /><code>{"Vector3 Normal { get; }"}</code> | Unit normal of the triangle. |
-| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> | Index of the triangle's first entry in the triangle list. |
-| <Link id="m-willremove" /><code>{"bool WillRemove { get; set; }"}</code> | Whether the triangle will be removed. Starts true. |
+| <Link id="m-a" /><code>{"Vector3 A { get; }"}</code> | <span className="api-desc">First corner.</span> |
+| <Link id="m-b" /><code>{"Vector3 B { get; }"}</code> | <span className="api-desc">Second corner.</span> |
+| <Link id="m-c" /><code>{"Vector3 C { get; }"}</code> | <span className="api-desc">Third corner.</span> |
+| <Link id="m-center" /><code>{"Vector3 Center { get; }"}</code> | <span className="api-desc">Average of the three corners.</span> |
+| <Link id="m-indices" /><code>{"int[] Indices { get; }"}</code> | <span className="api-desc">The three vertex indices.</span> |
+| <Link id="m-linesegments" /><code>{"Vector3[] LineSegments { get; }"}</code> | <span className="api-desc">The three edge vectors: A minus B, B minus C and C minus A.</span> |
+| <Link id="m-normal" /><code>{"Vector3 Normal { get; }"}</code> | <span className="api-desc">Unit normal of the triangle.</span> |
+| <Link id="m-startindex" /><code>{"int StartIndex { get; }"}</code> | <span className="api-desc">Index of the triangle's first entry in the triangle list.</span> |
+| <Link id="m-willremove" /><code>{"bool WillRemove { get; set; }"}</code> | <span className="api-desc">Whether the triangle will be removed. Starts true.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RemovingTriangle`:
 
+<div className="api-used-in">
+
 [`OldVisibilityTest.CalculateOccludedTriangles`](/mod/game-api/types/global-m-o/oldvisibilitytest#m-calculateoccludedtriangles), [`StaticObjectCombiner.ExcludeOccludedTriangles`](/mod/game-api/types/global-s/staticobjectcombiner#m-excludeoccludedtriangles), [`TriangleVisibilityUtility.CalculateOccludedTriangles`](/mod/game-api/types/global-t-x/trianglevisibilityutility#m-calculateoccludedtriangles).
+
+</div>

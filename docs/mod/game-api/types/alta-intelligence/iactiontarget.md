@@ -21,11 +21,15 @@ A possible target for an AI action, with the weight it scored.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | The target. |
-| <Link id="m-weight" /><code>{"float Weight { get; }"}</code> | How strongly the action wants this target. |
+| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | <span className="api-desc">The target.</span> |
+| <Link id="m-weight" /><code>{"float Weight { get; }"}</code> | <span className="api-desc">How strongly the action wants this target.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IActionTarget`:
 
+<div className="api-used-in">
+
 [`Agent.InternalStartAction`](/mod/game-api/types/alta-intelligence/agent#m-internalstartaction).
+
+</div>

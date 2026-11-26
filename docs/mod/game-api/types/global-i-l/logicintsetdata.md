@@ -23,10 +23,10 @@ Save data (version 1) for `LogicIntSet`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntSetData()"}</code> | Creates a `LogicIntSetData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntSetData()"}</code> | <span className="api-desc">Creates a `LogicIntSetData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"int value"}</code> | The saved integer. |
+| <Link id="m-value" /><code>{"int value"}</code> | <span className="api-desc">The saved integer.</span> |

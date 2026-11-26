@@ -21,17 +21,17 @@ Network entity that syncs the server's player smoothing level to clients. `Playe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSmoothManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerSmoothManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-syncsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSettings"}</code> | Method sync used to send the level. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-syncsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSettings"}</code> | <span className="api-desc">Method sync used to send the level.</span> |
 
 </details>
 
@@ -39,29 +39,29 @@ Network entity that syncs the server's player smoothing level to clients. `Playe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settingindex" /><code>{"static int SettingIndex { get; private set; }"}</code> | Current player smoothing level (static, 0 by default). |
+| <Link id="m-settingindex" /><code>{"static int SettingIndex { get; private set; }"}</code> | <span className="api-desc">Current player smoothing level (static, 0 by default).</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settingchanged" /><code>{"static event Action<int> SettingChanged"}</code> | Static event raised with the new smoothing level on either side. |
+| <Link id="m-settingchanged" /><code>{"static event Action<int> SettingChanged"}</code> | <span className="api-desc">Static event raised with the new smoothing level on either side.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the settings sync message. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: reads the smoothing level from server settings and watches for changes. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends the level to a joining player if it isn't 0. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Sets up the settings sync message.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: reads the smoothing level from server settings and watches for changes.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: sends the level to a joining player if it isn't 0.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: stops watching server settings. |
-| <Link id="m-settingsupdated" /><code>{"private void SettingsUpdated(Settings settings)"}</code> | Server: on a settings change, updates the level and sends it to all chunks if it changed. |
-| <Link id="m-syncsettings-2" /><code>{"private void SyncSettings("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the level. On clients, stores it and raises `SettingChanged`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Server: stops watching server settings.</span> |
+| <Link id="m-settingsupdated" /><code>{"private void SettingsUpdated(Settings settings)"}</code> | <span className="api-desc">Server: on a settings change, updates the level and sends it to all chunks if it changed.</span> |
+| <Link id="m-syncsettings-2" /><code>{"private void SyncSettings("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes or reads the level. On clients, stores it and raises `SettingChanged`.</span> |
 
 </details>

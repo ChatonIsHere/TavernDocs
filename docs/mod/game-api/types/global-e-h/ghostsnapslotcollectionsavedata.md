@@ -24,4 +24,4 @@ Save data for a `GhostSnapSlotCollection`. Its elements hold no fields.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GhostSnapSlotCollectionSaveData()"}</code> | Creates a `GhostSnapSlotCollectionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GhostSnapSlotCollectionSaveData()"}</code> | <span className="api-desc">Creates a `GhostSnapSlotCollectionSaveData` with default values.</span> |

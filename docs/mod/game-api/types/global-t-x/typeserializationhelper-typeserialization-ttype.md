@@ -23,19 +23,23 @@ Base for a serializer of one value type (float, vector, prefab, save data and so
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TypeSerialization()"}</code> | Creates a `TypeSerializationHelper.TypeSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"protected TypeSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.TypeSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handle" /><code>{"virtual void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Adds read and write steps for a single field of this type, given its getter and setter. Logs an error on a type mismatch. |
-| <Link id="m-handlearray" /><code>{"virtual void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Same as `Handle` for an array field: writes the length, then each element. |
-| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | Optional setup hook. Empty by default. |
-| <Link id="m-serialize" /><code>{"protected abstract void Serialize(Type type, ref TType value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Subclasses read or write one value of the type to the stream here. |
+| <Link id="m-handle" /><code>{"virtual void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | <span className="api-desc">Adds read and write steps for a single field of this type, given its getter and setter. Logs an error on a type mismatch.</span> |
+| <Link id="m-handlearray" /><code>{"virtual void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | <span className="api-desc">Same as `Handle` for an array field: writes the length, then each element.</span> |
+| <Link id="m-initialize" /><code>{"virtual void Initialize()"}</code> | <span className="api-desc">Optional setup hook. Empty by default.</span> |
+| <Link id="m-serialize" /><code>{"protected abstract void Serialize(Type type, ref TType value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Subclasses read or write one value of the type to the stream here.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TypeSerialization&lt;TType>`:
 
+<div className="api-used-in">
+
 [`TypeSerializationHelper.Add`](/mod/game-api/types/global-t-x/typeserializationhelper#m-add-2).
+
+</div>

@@ -22,16 +22,20 @@ Pooled emblem (the member status shield) shown on a `NameBoard`. Subclasses can 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoardEmblem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NameBoardEmblem()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"virtual void Close(Action callBack)"}</code> | Plays the emblem's close and then calls the callback. The base version calls it straight away. |
+| <Link id="m-close" /><code>{"virtual void Close(Action callBack)"}</code> | <span className="api-desc">Plays the emblem's close and then calls the callback. The base version calls it straight away.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NameBoardEmblem`:
 
+<div className="api-used-in">
+
 [`NameBoard.activeEmblem`](/mod/game-api/types/alta-player/nameboard#m-activeemblem).
+
+</div>

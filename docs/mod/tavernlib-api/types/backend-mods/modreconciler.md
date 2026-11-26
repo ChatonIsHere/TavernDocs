@@ -20,13 +20,13 @@ Brings `Mods` in line with a modlist before mods load on a headless server: inst
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxseconds" /><code>{"private const int MaxSeconds"}</code> | Time budget, in seconds, for one reconcile pass. |
-| <Link id="m-target" /><code>{"private const string Target"}</code> | The target this pass works on, `server`. |
+| <Link id="m-maxseconds" /><code>{"private const int MaxSeconds"}</code> | <span className="api-desc">Time budget, in seconds, for one reconcile pass.</span> |
+| <Link id="m-target" /><code>{"private const string Target"}</code> | <span className="api-desc">The target this pass works on, `server`.</span> |
 
 </details>
 
@@ -34,5 +34,5 @@ Brings `Mods` in line with a modlist before mods load on a headless server: inst
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reconcile" /><code>{"static void Reconcile(string gameDir, "}<Link to="/mod/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList, List<string> repos, string scene)"}</code> | Runs one pass for a scene against the given sources, with a 300 second budget. |
-| <Link id="m-reconcilemodlist" /><code>{"static void ReconcileModList(string modsListPathArg)"}</code> | What `/modlist` runs. Reads the modlist and `mod_repos.json`, then reconciles. Never throws; a failure leaves `Mods` as it was. |
+| <Link id="m-reconcile" /><code>{"static void Reconcile(string gameDir, "}<Link to="/mod/tavernlib-api/types/backend-server-configs/modslist">{"ModsList"}</Link>{" modsList, List<string> repos, string scene)"}</code> | <span className="api-desc">Runs one pass for a scene against the given sources, with a 300 second budget.</span> |
+| <Link id="m-reconcilemodlist" /><code>{"static void ReconcileModList(string modsListPathArg)"}</code> | <span className="api-desc">What `/modlist` runs. Reads the modlist and `mod_repos.json`, then reconciles. Never throws; a failure leaves `Mods` as it was.</span> |

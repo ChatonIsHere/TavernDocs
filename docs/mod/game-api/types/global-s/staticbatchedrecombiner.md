@@ -21,4 +21,4 @@ Merges all mesh renderers under a transform into one mesh per material (split at
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> | Combines child meshes by material into new `Recombined` objects on the Terrain layer, skipping impostors and deleting the old renderers. |
+| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> | <span className="api-desc">Combines child meshes by material into new `Recombined` objects on the Terrain layer, skipping impostors and deleting the old renderers.</span> |

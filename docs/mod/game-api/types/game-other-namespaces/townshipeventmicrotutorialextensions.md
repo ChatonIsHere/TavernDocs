@@ -21,4 +21,4 @@ Extension methods for player events, used by the micro tutorial.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrelevant" /><code>{"static bool IsRelevant("}<Link to="/mod/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | True if the event's source is the given player. |
+| <Link id="m-isrelevant" /><code>{"static bool IsRelevant("}<Link to="/mod/game-api/types/game-other-namespaces/iplayerevent">{"IPlayerEvent"}</Link>{" playerEvent, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">True if the event's source is the given player.</span> |

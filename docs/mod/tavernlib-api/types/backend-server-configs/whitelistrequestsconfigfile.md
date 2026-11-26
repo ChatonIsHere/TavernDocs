@@ -22,10 +22,14 @@ The `ServerConfigFile` for `whitelist_requests.json`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WhitelistRequestsConfigFile`:
 
+<div className="api-used-in">
+
 [`TavernManager.WhitelistRequests`](/mod/tavernlib-api/types/backend-api/tavernmanager#m-whitelistrequests).
+
+</div>

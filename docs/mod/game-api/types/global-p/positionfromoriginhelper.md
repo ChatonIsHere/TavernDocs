@@ -22,16 +22,20 @@ Base component that works out a position from an origin point; subclasses decide
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PositionFromOriginHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected PositionFromOriginHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> | Returns the position for the given origin. |
+| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> | <span className="api-desc">Returns the position for the given origin.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PositionFromOriginHelper`:
 
+<div className="api-used-in">
+
 [`HeatPoint.positionHelper`](/mod/game-api/types/alta-stats-effects/heatpoint#m-positionhelper), [`HealthObject.positionHelper`](/mod/game-api/types/global-e-h/healthobject#m-positionhelper), [`PositionFromOriginHandler.PositionFromOriginHandler`](/mod/game-api/types/global-p/positionfromoriginhandler#m-ctor).
+
+</div>

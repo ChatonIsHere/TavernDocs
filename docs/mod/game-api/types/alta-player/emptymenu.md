@@ -22,17 +22,17 @@ Placeholder quick access action that just shows its own name in the player's mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyMenu()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EmptyMenu()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Always true. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Shows the action's display name as a message. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Shows the action's display name as a message.</span> |

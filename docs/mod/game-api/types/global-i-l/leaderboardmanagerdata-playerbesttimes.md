@@ -21,24 +21,28 @@ Saved best times for one player across leaderboards.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> | Creates a `LeaderboardManagerData.PlayerBestTimes` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> | <span className="api-desc">Creates a `LeaderboardManagerData.PlayerBestTimes` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definitions" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] definitions"}</code> | Leaderboards the player has a time on. |
-| <Link id="m-identifier" /><code>{"int identifier"}</code> | The player's ID. |
-| <Link id="m-times" /><code>{"int[] times"}</code> | Best time for each leaderboard, same order as `definitions`. |
+| <Link id="m-definitions" /><code><Link to="/mod/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"[] definitions"}</code> | <span className="api-desc">Leaderboards the player has a time on.</span> |
+| <Link id="m-identifier" /><code>{"int identifier"}</code> | <span className="api-desc">The player's ID.</span> |
+| <Link id="m-times" /><code>{"int[] times"}</code> | <span className="api-desc">Best time for each leaderboard, same order as `definitions`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(KeyValuePair<int, "}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> tracker)"}</code> | Fills the record from a player's tracker. |
+| <Link id="m-setup" /><code>{"void Setup(KeyValuePair<int, "}<Link to="/mod/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> tracker)"}</code> | <span className="api-desc">Fills the record from a player's tracker.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerBestTimes`:
 
+<div className="api-used-in">
+
 [`LeaderboardManagerData.players`](/mod/game-api/types/global-i-l/leaderboardmanagerdata#m-players), [`LeaderboardManagerDataOld.PlayerBestTimes.Migrate`](/mod/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes#m-migrate).
+
+</div>

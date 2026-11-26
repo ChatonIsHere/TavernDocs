@@ -21,4 +21,8 @@ Empty marker for a light emitter in the test light detector setup (`TempLaser`, 
 
 Members of other types that take, return or hold a `ILightEmitterTemp`:
 
+<div className="api-used-in">
+
 [`ILightDetectorTemp.BeginHit`](/mod/game-api/types/global-i-l/ilightdetectortemp#m-beginhit), [`ILightDetectorTemp.EndHit`](/mod/game-api/types/global-i-l/ilightdetectortemp#m-endhit), [`TempAbsorber.BeginHit`](/mod/game-api/types/global-t-x/tempabsorber#m-beginhit), [`TempAbsorber.EndHit`](/mod/game-api/types/global-t-x/tempabsorber#m-endhit).
+
+</div>

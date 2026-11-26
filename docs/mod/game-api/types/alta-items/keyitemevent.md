@@ -21,10 +21,14 @@ A serializable event with a `KeyItem` argument, such as a lock's key turn event.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"KeyItemEvent()"}</code> | Creates a `KeyItemEvent` with default values. |
+| <Link id="m-ctor" /><code>{"KeyItemEvent()"}</code> | <span className="api-desc">Creates a `KeyItemEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `KeyItemEvent`:
 
+<div className="api-used-in">
+
 [`Lock.keyTurnEvent`](/mod/game-api/types/alta-items/lock#m-keyturnevent), [`Lock.KeyTurnEvent`](/mod/game-api/types/alta-items/lock#m-keyturnevent-2), [`Lock.receivedNewKeyEvent`](/mod/game-api/types/alta-items/lock#m-receivednewkeyevent), [`Lock.ReceivedNewKeyEvent`](/mod/game-api/types/alta-items/lock#m-receivednewkeyevent-2).
+
+</div>

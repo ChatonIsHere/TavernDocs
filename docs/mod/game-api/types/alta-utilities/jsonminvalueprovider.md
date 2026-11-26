@@ -21,16 +21,16 @@ Value provider used by `JsonMinAttribute`: keeps a float property at or above `m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonMinValueProvider(IValueProvider baseProvider, float min)"}</code> | Creates a `JsonMinValueProvider` from `baseProvider` and `min`. |
+| <Link id="m-ctor" /><code>{"JsonMinValueProvider(IValueProvider baseProvider, float min)"}</code> | <span className="api-desc">Creates a `JsonMinValueProvider` from `baseProvider` and `min`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-min" /><code>{"private float min"}</code> | The lower limit. |
+| <Link id="m-min" /><code>{"private float min"}</code> | <span className="api-desc">The lower limit.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Value provider used by `JsonMinAttribute`: keeps a float property at or above `m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | Returns the larger of the value and `min`. |
+| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | <span className="api-desc">Returns the larger of the value and `min`.</span> |

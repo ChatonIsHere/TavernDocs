@@ -22,10 +22,14 @@ Serializable `UnityEvent` with a string. The keyboard's output event, fired with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OutputEvent()"}</code> | Creates a `TouchScreenKeyboard.OutputEvent` with default values. |
+| <Link id="m-ctor" /><code>{"OutputEvent()"}</code> | <span className="api-desc">Creates a `TouchScreenKeyboard.OutputEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OutputEvent`:
 
+<div className="api-used-in">
+
 [`TouchScreenKeyboard.output`](/mod/game-api/types/global-t-x/touchscreenkeyboard#m-output).
+
+</div>

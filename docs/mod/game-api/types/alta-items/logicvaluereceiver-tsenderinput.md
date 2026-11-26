@@ -22,38 +22,38 @@ Base for a logic component that listens to one logic value sender and reacts whe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected LogicValueReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected LogicValueReceiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sender" /><code>{"protected TSenderInput sender"}</code> | Backing field for `Sender`, set in the inspector. |
+| <Link id="m-sender" /><code>{"protected TSenderInput sender"}</code> | <span className="api-desc">Backing field for `Sender`, set in the inspector.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicmanager" /><code><Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" LogicManager { get; private set; }"}</code> | The logic manager this receiver belongs to: one in a parent, or the global one. |
-| <Link id="m-sender-2" /><code>{"TSenderInput Sender { get; }"}</code> | The sender input this receiver reads from. |
+| <Link id="m-logicmanager" /><code><Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" LogicManager { get; private set; }"}</code> | <span className="api-desc">The logic manager this receiver belongs to: one in a parent, or the global one.</span> |
+| <Link id="m-sender-2" /><code>{"TSenderInput Sender { get; }"}</code> | <span className="api-desc">The sender input this receiver reads from.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> | Editor: sets the logic manager and points the sender input at it before saving. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: subscribes to the sender, finds the logic manager (parent or global) and calls `ValueUpdated` once. |
-| <Link id="m-loadcontext" /><code>{"protected void LoadContext()"}</code> | Sets `LogicManager` to `GlobalLogicManager.Current`. |
-| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Cleans up the sender input subscription. |
-| <Link id="m-ondrawgizmos" /><code>{"protected virtual void OnDrawGizmos()"}</code> | Draws the link to the sender in the editor. |
-| <Link id="m-valueupdated" /><code>{"protected abstract void ValueUpdated()"}</code> | Called when the sender's value changes, and once at server start. Implement the reaction here. |
+| <Link id="m-editorpresave" /><code>{"void EditorPreSave("}<Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" manager)"}</code> | <span className="api-desc">Editor: sets the logic manager and points the sender input at it before saving.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: subscribes to the sender, finds the logic manager (parent or global) and calls `ValueUpdated` once.</span> |
+| <Link id="m-loadcontext" /><code>{"protected void LoadContext()"}</code> | <span className="api-desc">Sets `LogicManager` to `GlobalLogicManager.Current`.</span> |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | <span className="api-desc">Cleans up the sender input subscription.</span> |
+| <Link id="m-ondrawgizmos" /><code>{"protected virtual void OnDrawGizmos()"}</code> | <span className="api-desc">Draws the link to the sender in the editor.</span> |
+| <Link id="m-valueupdated" /><code>{"protected abstract void ValueUpdated()"}</code> | <span className="api-desc">Called when the sender's value changes, and once at server start. Implement the reaction here.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attemptlink" /><code>{"private bool Alta.Logic.ILogicValueLinkReceiver.AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | Explicit `ILogicValueLinkReceiver` method; passes the sender to `Sender.AttemptLink` and returns whether it linked. |
-| <Link id="m-findlogicmanager" /><code>{"private void FindLogicManager()"}</code> | Sets `LogicManager` to the nearest `GlobalLogicManager` in the parents, or the global one, if not already set. Called from `InitializeAsServer`. |
+| <Link id="m-attemptlink" /><code>{"private bool Alta.Logic.ILogicValueLinkReceiver.AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | <span className="api-desc">Explicit `ILogicValueLinkReceiver` method; passes the sender to `Sender.AttemptLink` and returns whether it linked.</span> |
+| <Link id="m-findlogicmanager" /><code>{"private void FindLogicManager()"}</code> | <span className="api-desc">Sets `LogicManager` to the nearest `GlobalLogicManager` in the parents, or the global one, if not already set. Called from `InitializeAsServer`.</span> |
 
 </details>

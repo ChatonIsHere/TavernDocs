@@ -22,4 +22,4 @@ An `IEntityReplaceHandler` that names which component type to look for on the ne
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replacetype" /><code>{"Type ReplaceType { get; }"}</code> | Component type to find on the replacement entity (for `AssistGrabInteractable` this is `Interactable`). |
+| <Link id="m-replacetype" /><code>{"Type ReplaceType { get; }"}</code> | <span className="api-desc">Component type to find on the replacement entity (for `AssistGrabInteractable` this is `Interactable`).</span> |

@@ -21,11 +21,15 @@ Message the server sends to clients so they play a hit modifier effect between t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sourcehash" /><code>{"uint sourceHash"}</code> | Entity identifier where the effect starts. Only sent when the source isn't this object. |
-| <Link id="m-targethash" /><code>{"uint targetHash"}</code> | Entity identifier the effect travels to. Only sent when the target isn't this object. |
+| <Link id="m-sourcehash" /><code>{"uint sourceHash"}</code> | <span className="api-desc">Entity identifier where the effect starts. Only sent when the source isn't this object.</span> |
+| <Link id="m-targethash" /><code>{"uint targetHash"}</code> | <span className="api-desc">Entity identifier the effect travels to. Only sent when the target isn't this object.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SyncHitArguments`:
 
+<div className="api-used-in">
+
 [`HitModifierEffect.syncHit`](/mod/game-api/types/alta-items/hitmodifiereffect#m-synchit), [`HitModifierEffect.SyncHit`](/mod/game-api/types/alta-items/hitmodifiereffect#m-synchit-2).
+
+</div>

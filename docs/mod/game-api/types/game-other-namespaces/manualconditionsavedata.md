@@ -23,10 +23,10 @@ Save data (version 1) for `ManualCondition`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> | Creates a `ManualConditionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> | <span className="api-desc">Creates a `ManualConditionSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> | The saved met flag. |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> | <span className="api-desc">The saved met flag.</span> |

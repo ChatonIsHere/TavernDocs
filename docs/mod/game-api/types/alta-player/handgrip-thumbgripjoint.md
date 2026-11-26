@@ -22,17 +22,17 @@ A thumb joint of a `HandGrip`. The root thumb joint resets to the current thumb 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ThumbGripJoint()"}</code> | Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`. |
-| <Link id="m-ctor-2" /><code>{"ThumbGripJoint("}<Link to="/mod/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/mod/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/mod/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations, bool isRoot)"}</code> | Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`. |
+| <Link id="m-ctor" /><code>{"ThumbGripJoint()"}</code> | <span className="api-desc">Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`.</span> |
+| <Link id="m-ctor-2" /><code>{"ThumbGripJoint("}<Link to="/mod/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/mod/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/mod/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations, bool isRoot)"}</code> | <span className="api-desc">Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> | True for the thumb's base joint. |
+| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> | <span className="api-desc">True for the thumb's base joint.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ A thumb joint of a `HandGrip`. The root thumb joint resets to the current thumb 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preparecurl" /><code>{"override void PrepareCurl()"}</code> | For the root joint, sets its local rotation to the thumb configuration's base rotation, then does the normal joint prep. |
+| <Link id="m-preparecurl" /><code>{"override void PrepareCurl()"}</code> | <span className="api-desc">For the root joint, sets its local rotation to the thumb configuration's base rotation, then does the normal joint prep.</span> |

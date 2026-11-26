@@ -23,11 +23,11 @@ Save data for `PositionProvider`, which sends its transform's position as a logi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> | Creates a `PositionProviderSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> | <span className="api-desc">Creates a `PositionProviderSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocalposition" /><code>{"bool isLocalPosition"}</code> | If true it sends the local position, otherwise the world position. |
-| <Link id="m-ismoving" /><code>{"bool isMoving"}</code> | If true it keeps sending the position each update when the transform changes, not just once at start. |
+| <Link id="m-islocalposition" /><code>{"bool isLocalPosition"}</code> | <span className="api-desc">If true it sends the local position, otherwise the world position.</span> |
+| <Link id="m-ismoving" /><code>{"bool isMoving"}</code> | <span className="api-desc">If true it keeps sending the position each update when the transform changes, not just once at start.</span> |

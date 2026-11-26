@@ -23,10 +23,14 @@ Setting access asset for a bool property on `GameSettings` or `ServerSettings`, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleGameSettingAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ToggleGameSettingAccess()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ToggleGameSettingAccess`:
 
+<div className="api-used-in">
+
 [`BoolSettingValue.setting`](/mod/game-api/types/alta-utilities/boolsettingvalue#m-setting).
+
+</div>

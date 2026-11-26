@@ -21,4 +21,4 @@ Test hook for swapping the `UnityApplicationWrapper` singleton for a fake.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overrideinstance" /><code>{"void OverrideInstance("}<Link to="/mod/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> | Replaces the shared `IUnityApplicationWrapper` instance. |
+| <Link id="m-overrideinstance" /><code>{"void OverrideInstance("}<Link to="/mod/game-api/types/game-other-namespaces/iunityapplicationwrapper">{"IUnityApplicationWrapper"}</Link>{" wrapper)"}</code> | <span className="api-desc">Replaces the shared `IUnityApplicationWrapper` instance.</span> |

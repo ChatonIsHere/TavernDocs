@@ -36,4 +36,8 @@ State of an Alta shop purchase, from started and processing to successful or ref
 
 Members of other types that take, return or hold a `ShopTransactionStatus`:
 
+<div className="api-used-in">
+
 [`ShopTransactionStatusResponse.Status`](/mod/game-api/types/assembly-api-models/shoptransactionstatusresponse#m-status).
+
+</div>

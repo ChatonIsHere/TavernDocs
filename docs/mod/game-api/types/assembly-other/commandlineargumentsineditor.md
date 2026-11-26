@@ -23,16 +23,16 @@ Global settings asset with extra command line arguments to use when running in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CommandLineArgumentsInEditor()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CommandLineArgumentsInEditor()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extraarguments" /><code>{"private string extraArguments"}</code> | Backing field for `ExtraArguments`. |
+| <Link id="m-extraarguments" /><code>{"private string extraArguments"}</code> | <span className="api-desc">Backing field for `ExtraArguments`.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Global settings asset with extra command line arguments to use when running in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extraarguments-2" /><code>{"string ExtraArguments { get; }"}</code> | The extra argument string. |
+| <Link id="m-extraarguments-2" /><code>{"string ExtraArguments { get; }"}</code> | <span className="api-desc">The extra argument string.</span> |

@@ -21,18 +21,18 @@ HTTP handler for the API client that adds a timeout per attempt and retries fail
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RetryHandler(float timeOutInSeconds, int maxRetryAmount = 3)"}</code> | Creates a `RetryHandler` from `timeOutInSeconds` and `maxRetryAmount`. |
+| <Link id="m-ctor" /><code>{"RetryHandler(float timeOutInSeconds, int maxRetryAmount = 3)"}</code> | <span className="api-desc">Creates a `RetryHandler` from `timeOutInSeconds` and `maxRetryAmount`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | Class logger. |
-| <Link id="m-maxretryamount" /><code>{"private readonly int maxRetryAmount"}</code> | Most attempts per request; 3 by default. |
-| <Link id="m-timeout" /><code>{"private readonly TimeSpan timeout"}</code> | Time allowed for each attempt. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-maxretryamount" /><code>{"private readonly int maxRetryAmount"}</code> | <span className="api-desc">Most attempts per request; 3 by default.</span> |
+| <Link id="m-timeout" /><code>{"private readonly TimeSpan timeout"}</code> | <span className="api-desc">Time allowed for each attempt.</span> |
 
 </details>
 
@@ -40,19 +40,19 @@ HTTP handler for the API client that adds a timeout per attempt and retries fail
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timedout" /><code>{"static event Action<HttpRequestMessage> TimedOut"}</code> | Raised when every attempt at a request timed out. The low-level API client listens to it. |
+| <Link id="m-timedout" /><code>{"static event Action<HttpRequestMessage> TimedOut"}</code> | <span className="api-desc">Raised when every attempt at a request timed out. The low-level API client listens to it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendasync" /><code>{"protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)"}</code> | Sends the request, retrying on timeouts and errors. After the last attempt, errors throw `HttpRequestException` and timeouts raise `TimedOut` then throw `TimeoutException`. |
+| <Link id="m-sendasync" /><code>{"protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)"}</code> | <span className="api-desc">Sends the request, retrying on timeouts and errors. After the last attempt, errors throw `HttpRequestException` and timeouts raise `TimedOut` then throw `TimeoutException`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createtimeouttokensource" /><code>{"private CancellationTokenSource CreateTimeoutTokenSource(CancellationToken cancellationToken)"}</code> | Makes a cancel token that fires after `timeout` or when the caller cancels. |
+| <Link id="m-createtimeouttokensource" /><code>{"private CancellationTokenSource CreateTimeoutTokenSource(CancellationToken cancellationToken)"}</code> | <span className="api-desc">Makes a cancel token that fires after `timeout` or when the caller cancels.</span> |
 
 </details>

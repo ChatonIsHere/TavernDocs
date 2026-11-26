@@ -22,10 +22,10 @@ Obsolete. Marked a class or struct so the old `AnalyticsTools.Serialize` include
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> | Creates an `AnalyticsRecordForAllAttribute` from `option`. |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> | <span className="api-desc">Creates an `AnalyticsRecordForAllAttribute` from `option`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-options" /><code><Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" Options { get; private set; }"}</code> | Extra `AnalyticsOptions` (user ID, server ID, timestamps) added when the type is serialized. |
+| <Link id="m-options" /><code><Link to="/mod/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" Options { get; private set; }"}</code> | <span className="api-desc">Extra `AnalyticsOptions` (user ID, server ID, timestamps) added when the type is serialized.</span> |

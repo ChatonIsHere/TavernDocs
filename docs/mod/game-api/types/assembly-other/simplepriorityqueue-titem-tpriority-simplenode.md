@@ -22,16 +22,20 @@ Internal node that wraps one item in `SimplePriorityQueue` so it can sit in the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> | Creates a `SimplePriorityQueue` from `data`. |
+| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> | <span className="api-desc">Creates a `SimplePriorityQueue` from `data`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> | The queued item. |
+| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> | <span className="api-desc">The queued item.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SimpleNode`:
 
+<div className="api-used-in">
+
 [`SimplePriorityQueue<TItem, TPriority>._itemToNodesCache`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-itemtonodescache), [`SimplePriorityQueue<TItem, TPriority>._nullNodesCache`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-nullnodescache), [`SimplePriorityQueue<TItem, TPriority>._queue`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-queue), [`SimplePriorityQueue<TItem, TPriority>.AddToNodeCache`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-addtonodecache), [`SimplePriorityQueue<TItem, TPriority>.EnqueueNoLockOrCache`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-enqueuenolockorcache), [`SimplePriorityQueue<TItem, TPriority>.GetExistingNode`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-getexistingnode), [`SimplePriorityQueue<TItem, TPriority>.RemoveFromNodeCache`](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority#m-removefromnodecache).
+
+</div>

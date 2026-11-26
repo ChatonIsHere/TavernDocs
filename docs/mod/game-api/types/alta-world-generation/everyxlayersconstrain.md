@@ -22,18 +22,18 @@ Spawn constraint asset that only allows spawning on every Nth cave layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EveryXLayersConstrain()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EveryXLayersConstrain()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnatzero" /><code>{"private bool spawnAtZero"}</code> | Whether layer 0 may pass the check. |
-| <Link id="m-spawneveryxlayers" /><code>{"private int spawnEveryXLayers"}</code> | Spacing between allowed layers. |
-| <Link id="m-startcountoffset" /><code>{"private int startCountOffset"}</code> | Shifts which layers count as the Nth. |
+| <Link id="m-spawnatzero" /><code>{"private bool spawnAtZero"}</code> | <span className="api-desc">Whether layer 0 may pass the check.</span> |
+| <Link id="m-spawneveryxlayers" /><code>{"private int spawnEveryXLayers"}</code> | <span className="api-desc">Spacing between allowed layers.</span> |
+| <Link id="m-startcountoffset" /><code>{"private int startCountOffset"}</code> | <span className="api-desc">Shifts which layers count as the Nth.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Spawn constraint asset that only allows spawning on every Nth cave layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnparameters" /><code>{"override bool SpawnParameters("}<Link to="/mod/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> | True when (layer minus offset plus 1) divides evenly by `spawnEveryXLayers`; layer 0 is refused unless `spawnAtZero` is set. |
+| <Link id="m-spawnparameters" /><code>{"override bool SpawnParameters("}<Link to="/mod/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> | <span className="api-desc">True when (layer minus offset plus 1) divides evenly by `spawnEveryXLayers`; layer 0 is refused unless `spawnAtZero` is set.</span> |

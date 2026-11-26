@@ -21,17 +21,17 @@ Client component that blends audio environment settings (reverb) towards the cur
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnvironmentHandler()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-adjustseconds" /><code>{"private float adjustSeconds"}</code> | Seconds a full blend takes. Defaults to 1. |
-| <Link id="m-defaultenvironment" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment"}</code> | Environment used when no other is set. |
+| <Link id="m-adjustseconds" /><code>{"private float adjustSeconds"}</code> | <span className="api-desc">Seconds a full blend takes. Defaults to 1.</span> |
+| <Link id="m-defaultenvironment" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment"}</code> | <span className="api-desc">Environment used when no other is set.</span> |
 
 </details>
 
@@ -39,19 +39,19 @@ Client component that blends audio environment settings (reverb) towards the cur
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-environment" /><code><Link to="/mod/game-api/types/global-e-h/environmentlerp">{"EnvironmentLerp"}</Link>{" Environment { get; private set; }"}</code> | The `EnvironmentLerp` that tracks the target environment and the blended values. |
+| <Link id="m-environment" /><code><Link to="/mod/game-api/types/global-e-h/environmentlerp">{"EnvironmentLerp"}</Link>{" Environment { get; private set; }"}</code> | <span className="api-desc">The `EnvironmentLerp` that tracks the target environment and the blended values.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates the `EnvironmentLerp` from the default node and hooks its events. |
-| <Link id="m-targetchanged" /><code>{"private void TargetChanged()"}</code> | Turns the component on when the target environment changes, so `Update` runs. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Advances the blend and turns the component off once it is done. |
-| <Link id="m-updatereverb" /><code>{"private void UpdateReverb(float reverb)"}</code> | Called when the blended reverb changes. Empty in this build. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Creates the `EnvironmentLerp` from the default node and hooks its events.</span> |
+| <Link id="m-targetchanged" /><code>{"private void TargetChanged()"}</code> | <span className="api-desc">Turns the component on when the target environment changes, so `Update` runs.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Advances the blend and turns the component off once it is done.</span> |
+| <Link id="m-updatereverb" /><code>{"private void UpdateReverb(float reverb)"}</code> | <span className="api-desc">Called when the blended reverb changes. Empty in this build.</span> |
 
 </details>
 
@@ -59,4 +59,8 @@ Client component that blends audio environment settings (reverb) towards the cur
 
 Members of other types that take, return or hold a `EnvironmentHandler`:
 
+<div className="api-used-in">
+
 [`ChunkBasedEnvironment.environmentAssesser`](/mod/game-api/types/global-c-d/chunkbasedenvironment#m-environmentassesser).
+
+</div>

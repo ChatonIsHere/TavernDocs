@@ -21,15 +21,15 @@ Short info about a submitted form response, without the answers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> | Creates a `FormResponseSummary` with default values. |
+| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> | <span className="api-desc">Creates a `FormResponseSummary` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-formidentifier" /><code>{"int FormIdentifier { get; set; }"}</code> | Id of the form answered. |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The response's id. |
-| <Link id="m-processed" /><code>{"DateTime Processed { get; set; }"}</code> | When the response was processed. |
-| <Link id="m-submitted" /><code>{"DateTime Submitted { get; set; }"}</code> | When it was submitted. |
-| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> | Id of the user who submitted it. |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | Name of the user who submitted it. |
+| <Link id="m-formidentifier" /><code>{"int FormIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the form answered.</span> |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | <span className="api-desc">The response's id.</span> |
+| <Link id="m-processed" /><code>{"DateTime Processed { get; set; }"}</code> | <span className="api-desc">When the response was processed.</span> |
+| <Link id="m-submitted" /><code>{"DateTime Submitted { get; set; }"}</code> | <span className="api-desc">When it was submitted.</span> |
+| <Link id="m-useridentifier" /><code>{"int UserIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the user who submitted it.</span> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | <span className="api-desc">Name of the user who submitted it.</span> |

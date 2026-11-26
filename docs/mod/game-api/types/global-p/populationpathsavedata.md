@@ -23,13 +23,13 @@ Save data for a `PopulationPath`: its population setup, timer and creature count
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> | Creates a `PopulationPathSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> | <span className="api-desc">Creates a `PopulationPathSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> | The path's accumulated spawn time. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | The `PopulationSetup` the path uses. |
-| <Link id="m-population" /><code>{"int population"}</code> | Total population when saved. |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> | Saved population timer value. |
+| <Link id="m-accumulatedtime" /><code>{"float accumulatedTime"}</code> | <span className="api-desc">The path's accumulated spawn time.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | <span className="api-desc">The `PopulationSetup` the path uses.</span> |
+| <Link id="m-population" /><code>{"int population"}</code> | <span className="api-desc">Total population when saved.</span> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | <span className="api-desc">Saved population timer value.</span> |

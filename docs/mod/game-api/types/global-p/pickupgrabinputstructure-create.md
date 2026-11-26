@@ -22,4 +22,4 @@ Unity editor menu item that creates a `PickupGrabInputStructure` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PickupGrabInputStructure.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PickupGrabInputStructure.Create` with default values.</span> |

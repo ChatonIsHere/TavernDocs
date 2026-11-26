@@ -28,4 +28,8 @@ Which kind of account a user id belongs to: Alta, Oculus or Discord.
 
 Members of other types that take, return or hold a `UserType`:
 
+<div className="api-used-in">
+
 [`FutureUserActionsClient.CreateCustomAction`](/mod/game-api/types/assembly-api-client/futureuseractionsclient#m-createcustomaction), [`IFutureUserActions.CreateCustomAction`](/mod/game-api/types/assembly-api-client/ifutureuseractions#m-createcustomaction), [`FutureUserActionCreateRequest.UserType`](/mod/game-api/types/assembly-api-models/futureuseractioncreaterequest#m-usertype).
+
+</div>

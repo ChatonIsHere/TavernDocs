@@ -22,16 +22,16 @@ Chunk effect asset that turns the master terrain on or off while the local playe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MasterTerrainChunkEffectData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MasterTerrainChunkEffectData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Whether the master terrain should be on inside the chunk. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | <span className="api-desc">Whether the master terrain should be on inside the chunk.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Chunk effect asset that turns the master terrain on or off while the local playe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | When the chunk contains the player, sets `MasterTerrain.Instance.IsActive` to `isActive`. |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | <span className="api-desc">When the chunk contains the player, sets `MasterTerrain.Instance.IsActive` to `isActive`.</span> |

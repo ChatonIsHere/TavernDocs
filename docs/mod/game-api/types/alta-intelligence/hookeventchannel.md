@@ -46,4 +46,8 @@ Named channels (A to T, or None) an AI agent can fire hook events on, mapped to 
 
 Members of other types that take, return or hold a `HookEventChannel`:
 
+<div className="api-used-in">
+
 [`Agent.eventMap`](/mod/game-api/types/alta-intelligence/agent#m-eventmap), [`Agent.FireChannelEvent`](/mod/game-api/types/alta-intelligence/agent#m-firechannelevent), [`EventChannelAiHook.ended`](/mod/game-api/types/alta-intelligence/eventchannelaihook#m-ended), [`EventChannelAiHook.started`](/mod/game-api/types/alta-intelligence/eventchannelaihook#m-started), [`EventChannelTimedAiHook.Delay.started`](/mod/game-api/types/alta-intelligence/eventchanneltimedaihook-delay#m-started), [`IAgent.FireChannelEvent`](/mod/game-api/types/alta-intelligence/iagent#m-firechannelevent).
+
+</div>

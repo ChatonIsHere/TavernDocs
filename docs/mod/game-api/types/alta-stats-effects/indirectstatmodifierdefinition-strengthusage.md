@@ -29,4 +29,8 @@ Flags for what an indirect stat modifier's effect strength scales: its duration,
 
 Members of other types that take, return or hold a `StrengthUsage`:
 
+<div className="api-used-in">
+
 [`IndirectStatModifierDefinition.strengthAffects`](/mod/game-api/types/alta-stats-effects/indirectstatmodifierdefinition#m-strengthaffects).
+
+</div>

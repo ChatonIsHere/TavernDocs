@@ -21,4 +21,4 @@ Equality comparer that treats two values as equal only if they are the same obje
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> | Creates a `ReferenceEqualsComparer` with default values. |
+| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> | <span className="api-desc">Creates a `ReferenceEqualsComparer` with default values.</span> |

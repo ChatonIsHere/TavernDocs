@@ -21,4 +21,4 @@ Inspector attribute for a field holding a network prefab hash. No behaviour of i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabHashAttribute()"}</code> | Creates a `NetworkPrefabHashAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkPrefabHashAttribute()"}</code> | <span className="api-desc">Creates a `NetworkPrefabHashAttribute` with default values.</span> |

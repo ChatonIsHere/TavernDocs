@@ -20,13 +20,13 @@ Info about a fleet of game servers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> | Creates a `FleetInfo` with default values. |
+| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> | <span className="api-desc">Creates a `FleetInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-additionalbuffer" /><code>{"int? AdditionalBuffer { get; set; }"}</code> | Probably extra spare servers kept ready on top of the normal amount, if set. |
-| <Link id="m-bufferlastupdatetime" /><code>{"DateTime? BufferLastUpdateTime { get; set; }"}</code> | When `AdditionalBuffer` was last changed. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Fleet name. |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | The fleet's status. |
+| <Link id="m-additionalbuffer" /><code>{"int? AdditionalBuffer { get; set; }"}</code> | <span className="api-desc">Probably extra spare servers kept ready on top of the normal amount, if set.</span> |
+| <Link id="m-bufferlastupdatetime" /><code>{"DateTime? BufferLastUpdateTime { get; set; }"}</code> | <span className="api-desc">When `AdditionalBuffer` was last changed.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Fleet name.</span> |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | <span className="api-desc">The fleet's status.</span> |

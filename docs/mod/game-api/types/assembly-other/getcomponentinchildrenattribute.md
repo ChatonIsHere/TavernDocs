@@ -21,16 +21,16 @@ Like `GetComponentAttribute`, but searches this object and its children.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentInChildrenAttribute()"}</code> | Creates a `GetComponentInChildrenAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentInChildrenAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentInChildrenAttribute` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> | Also searches inactive children. |
+| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> | <span className="api-desc">Also searches inactive children.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | First matching component in this object or its children. |
+| <Link id="m-getcomponent" /><code>{"override Component GetComponent(Transform transform, Type type)"}</code> | <span className="api-desc">First matching component in this object or its children.</span> |

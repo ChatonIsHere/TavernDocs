@@ -23,22 +23,26 @@ An NLog target that writes the game's log lines to TavernLib's MelonLoader log, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MelonTarget()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"MelonTarget()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logginglevels" /><code>{"Dictionary<string, bool> LoggingLevels { get; }"}</code> | Which NLog levels are copied, by level name. All on at first; `DebugHelper`'s toggles change them. |
+| <Link id="m-logginglevels" /><code>{"Dictionary<string, bool> LoggingLevels { get; }"}</code> | <span className="api-desc">Which NLog levels are copied, by level name. All on at first; `DebugHelper`'s toggles change them.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | Copies one log line, skipping a few noisy loggers (`Connection`, `MessageDebug`, `SpawingLogger`) and levels that are off. |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | <span className="api-desc">Copies one log line, skipping a few noisy loggers (`Connection`, `MessageDebug`, `SpawingLogger`) and levels that are off.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MelonTarget`:
 
+<div className="api-used-in">
+
 [`NLogCatcher.Target`](/mod/tavernlib-api/types/debugging/nlogcatcher#m-target).
+
+</div>

@@ -20,19 +20,23 @@ A port in an Agones game server spec.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpecPortConfig()"}</code> | Creates a `SpecPortConfig` with default values. |
+| <Link id="m-ctor" /><code>{"SpecPortConfig()"}</code> | <span className="api-desc">Creates a `SpecPortConfig` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containerport" /><code>{"int ContainerPort { get; set; }"}</code> | Port inside the container. |
-| <Link id="m-hostport" /><code>{"int HostPort { get; set; }"}</code> | Port on the host node. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Port name. |
-| <Link id="m-portpolicy" /><code>{"string PortPolicy { get; set; }"}</code> | Agones port policy name. |
+| <Link id="m-containerport" /><code>{"int ContainerPort { get; set; }"}</code> | <span className="api-desc">Port inside the container.</span> |
+| <Link id="m-hostport" /><code>{"int HostPort { get; set; }"}</code> | <span className="api-desc">Port on the host node.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Port name.</span> |
+| <Link id="m-portpolicy" /><code>{"string PortPolicy { get; set; }"}</code> | <span className="api-desc">Agones port policy name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpecPortConfig`:
 
+<div className="api-used-in">
+
 [`GameServerSpec.Ports`](/mod/game-api/types/assembly-api-models/gameserverspec#m-ports).
+
+</div>

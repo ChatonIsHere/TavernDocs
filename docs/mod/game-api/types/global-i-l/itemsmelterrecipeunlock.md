@@ -21,16 +21,16 @@ Component on an item that unlocks a smelter upgrade. `SmelterRecipeUnlock` reads
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-unlockdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" unlockDefinition"}</code> | Backing field for `UnlockDefinition`. |
+| <Link id="m-unlockdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" unlockDefinition"}</code> | <span className="api-desc">Backing field for `UnlockDefinition`.</span> |
 
 </details>
 
@@ -38,10 +38,14 @@ Component on an item that unlocks a smelter upgrade. `SmelterRecipeUnlock` reads
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-unlockdefinition-2" /><code><Link to="/mod/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" UnlockDefinition { get; }"}</code> | The smelter upgrade this item unlocks. |
+| <Link id="m-unlockdefinition-2" /><code><Link to="/mod/game-api/types/alta-crafting/smelterupgrades">{"SmelterUpgrades"}</Link>{" UnlockDefinition { get; }"}</code> | <span className="api-desc">The smelter upgrade this item unlocks.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ItemSmelterRecipeUnlock`:
 
+<div className="api-used-in">
+
 [`SmelterRecipeUnlock.unlock`](/mod/game-api/types/global-s/smelterrecipeunlock#m-unlock).
+
+</div>

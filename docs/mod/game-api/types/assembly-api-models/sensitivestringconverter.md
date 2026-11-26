@@ -21,12 +21,12 @@ JSON converter for strings that masks secrets: any value whose JSON path contain
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SensitiveStringConverter()"}</code> | Creates a `SensitiveStringConverter` with default values. |
+| <Link id="m-ctor" /><code>{"SensitiveStringConverter()"}</code> | <span className="api-desc">Creates a `SensitiveStringConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | True for strings. |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | Reads the string unchanged. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | Writes the string, or `*` when the path mentions password, token or nonce. |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Reads the string unchanged.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes the string, or `*` when the path mentions password, token or nonce.</span> |

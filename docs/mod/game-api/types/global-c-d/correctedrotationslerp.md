@@ -21,18 +21,18 @@ Sets local rotation between two Euler angles from a progress value, through a co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CorrectedRotationSlerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CorrectedRotationSlerp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> | Euler angles at progress 0. |
-| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> | Euler angles at progress 1. |
-| <Link id="m-valuecorrection" /><code>{"private AnimationCurve valueCorrection"}</code> | Curve applied to progress first. |
+| <Link id="m-position0" /><code>{"private Vector3 position0"}</code> | <span className="api-desc">Euler angles at progress 0.</span> |
+| <Link id="m-position1" /><code>{"private Vector3 position1"}</code> | <span className="api-desc">Euler angles at progress 1.</span> |
+| <Link id="m-valuecorrection" /><code>{"private AnimationCurve valueCorrection"}</code> | <span className="api-desc">Curve applied to progress first.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Sets local rotation between two Euler angles from a progress value, through a co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> | Evaluates the curve, lerps between the two Euler angles and applies it. |
+| <Link id="m-setrotation" /><code>{"void SetRotation(float progress)"}</code> | <span className="api-desc">Evaluates the curve, lerps between the two Euler angles and applies it.</span> |

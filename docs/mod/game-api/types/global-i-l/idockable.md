@@ -21,5 +21,5 @@ Something pickups can be docked into and undocked from.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dock" /><code>{"void Dock("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity, bool isInstantMovementForced = false)"}</code> | Docks a quantity of the pickup, optionally forcing it to move there at once. |
-| <Link id="m-undock" /><code>{"void Undock("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity)"}</code> | Takes a quantity of the pickup out. |
+| <Link id="m-dock" /><code>{"void Dock("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity, bool isInstantMovementForced = false)"}</code> | <span className="api-desc">Docks a quantity of the pickup, optionally forcing it to move there at once.</span> |
+| <Link id="m-undock" /><code>{"void Undock("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int quantity)"}</code> | <span className="api-desc">Takes a quantity of the pickup out.</span> |

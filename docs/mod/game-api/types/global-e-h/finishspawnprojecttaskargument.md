@@ -23,17 +23,21 @@ Game task action argument sent when a player finishes a spawn project, such as a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FinishSpawnProjectTaskArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning)"}</code> | Creates a `FinishSpawnProjectTaskArgument` from `spawning`. |
+| <Link id="m-ctor" /><code>{"FinishSpawnProjectTaskArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning)"}</code> | <span className="api-desc">Creates a `FinishSpawnProjectTaskArgument` from `spawning`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.FinishRepair`. |
-| <Link id="m-spawning" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Spawning { get; }"}</code> | Prefab that was spawned. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.FinishRepair`.</span> |
+| <Link id="m-spawning" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Spawning { get; }"}</code> | <span className="api-desc">Prefab that was spawned.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FinishSpawnProjectTaskArgument`:
 
+<div className="api-used-in">
+
 [`FinishSpawnProjectTask.IsValid`](/mod/game-api/types/global-e-h/finishspawnprojecttask#m-isvalid).
+
+</div>

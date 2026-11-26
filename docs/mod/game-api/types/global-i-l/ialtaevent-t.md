@@ -21,4 +21,4 @@ An event with one value, raised with `Invoke`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T value)"}</code> | Fires the event with the value. |
+| <Link id="m-invoke" /><code>{"void Invoke(T value)"}</code> | <span className="api-desc">Fires the event with the value.</span> |

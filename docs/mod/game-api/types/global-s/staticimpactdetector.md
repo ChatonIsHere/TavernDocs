@@ -21,4 +21,4 @@ Empty marker component with no code of its own.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticImpactDetector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticImpactDetector()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

@@ -23,10 +23,10 @@ Save data (version 1) for a `DirectionalBoundsSurface`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> | Creates a `DirectionalBoundsSurfaceSave` with default values. |
+| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> | <span className="api-desc">Creates a `DirectionalBoundsSurfaceSave` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extents" /><code>{"Vector3 extents"}</code> | The saved box half-size. |
+| <Link id="m-extents" /><code>{"Vector3 extents"}</code> | <span className="api-desc">The saved box half-size.</span> |

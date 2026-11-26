@@ -23,13 +23,13 @@ Save data (version 2) for a `SpiritModeDoorway` in the climbing tower.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> | Creates a `SpiritModeDoorwaySaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> | <span className="api-desc">Creates a `SpiritModeDoorwaySaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-doorwaymode" /><code><Link to="/mod/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> | The doorway's mode. |
-| <Link id="m-isonewaydoor" /><code>{"bool isOneWayDoor"}</code> | True if the doorway only lets players through one way. |
-| <Link id="m-playerunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> | Player unlock tied to the doorway. |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> | Size of the doorway. |
+| <Link id="m-doorwaymode" /><code><Link to="/mod/game-api/types/game-other-namespaces/spiritmodedoorwaymode">{"SpiritModeDoorwayMode"}</Link>{" doorwayMode"}</code> | <span className="api-desc">The doorway's mode.</span> |
+| <Link id="m-isonewaydoor" /><code>{"bool isOneWayDoor"}</code> | <span className="api-desc">True if the doorway only lets players through one way.</span> |
+| <Link id="m-playerunlock" /><code><Link to="/mod/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" playerUnlock"}</code> | <span className="api-desc">Player unlock tied to the doorway.</span> |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> | <span className="api-desc">Size of the doorway.</span> |

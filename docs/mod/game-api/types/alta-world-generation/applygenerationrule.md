@@ -21,17 +21,17 @@ PAGaC generation step that runs a set of `GenerationRule`s over the generator's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generationrules" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/generationrule">{"GenerationRule"}</Link>{"[] generationRules"}</code> | The rules to apply. |
-| <Link id="m-isrepeatinguntilnone" /><code>{"private bool isRepeatingUntilNone"}</code> | If set, repeats the pass until no rule matches. |
+| <Link id="m-generationrules" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/generationrule">{"GenerationRule"}</Link>{"[] generationRules"}</code> | <span className="api-desc">The rules to apply.</span> |
+| <Link id="m-isrepeatinguntilnone" /><code>{"private bool isRepeatingUntilNone"}</code> | <span className="api-desc">If set, repeats the pass until no rule matches.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ PAGaC generation step that runs a set of `GenerationRule`s over the generator's 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | Applies the rules once, or keeps applying them until a pass makes no changes when `isRepeatingUntilNone` is set. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | <span className="api-desc">Applies the rules once, or keeps applying them until a pass makes no changes when `isRepeatingUntilNone` is set.</span> |

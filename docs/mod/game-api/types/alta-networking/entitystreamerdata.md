@@ -20,18 +20,22 @@ An `EntitySerializer`'s last written state data for one entity.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> | Creates an `EntityStreamerData` with default values. |
+| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> | <span className="api-desc">Creates an `EntityStreamerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bitcount" /><code>{"uint bitCount"}</code> | How many bits of `data` are used. |
-| <Link id="m-data" /><code>{"uint[] data"}</code> | The serialized state bits. |
-| <Link id="m-unchangedcount" /><code>{"int unchangedCount"}</code> | How many serialize passes the data has gone without changing. 0 means it must be rewritten; at 10 or more, off frames skip the entity. |
+| <Link id="m-bitcount" /><code>{"uint bitCount"}</code> | <span className="api-desc">How many bits of `data` are used.</span> |
+| <Link id="m-data" /><code>{"uint[] data"}</code> | <span className="api-desc">The serialized state bits.</span> |
+| <Link id="m-unchangedcount" /><code>{"int unchangedCount"}</code> | <span className="api-desc">How many serialize passes the data has gone without changing. 0 means it must be rewritten; at 10 or more, off frames skip the entity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EntityStreamerData`:
 
+<div className="api-used-in">
+
 [`EntitySerializer.data`](/mod/game-api/types/alta-networking/entityserializer#m-data), [`EntitySerializer.fullData`](/mod/game-api/types/alta-networking/entityserializer#m-fulldata), [`EntitySerializer.SerializeDataInternal`](/mod/game-api/types/alta-networking/entityserializer#m-serializedatainternal), [`EntitySerializer.WriteIntoStreamInternal`](/mod/game-api/types/alta-networking/entityserializer#m-writeintostreaminternal).
+
+</div>

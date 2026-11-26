@@ -21,12 +21,12 @@ Private helper for `StaticObjectCombiner` that gathers the vertices, triangles a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> | Creates a `StaticObjectCombiner.IncrementalMesh` with default values. |
+| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> | <span className="api-desc">Creates a `StaticObjectCombiner.IncrementalMesh` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliders" /><code>{"List<Collider> Colliders { get; }"}</code> | The mesh colliders folded into this mesh; they are destroyed once the joined collider is made. |
-| <Link id="m-indices" /><code>{"List<int> Indices { get; }"}</code> | Triangle indices, already offset into the combined vertex list. |
-| <Link id="m-vertices" /><code>{"List<Vector3> Vertices { get; }"}</code> | Vertices moved into the combiner's local space. |
+| <Link id="m-colliders" /><code>{"List<Collider> Colliders { get; }"}</code> | <span className="api-desc">The mesh colliders folded into this mesh; they are destroyed once the joined collider is made.</span> |
+| <Link id="m-indices" /><code>{"List<int> Indices { get; }"}</code> | <span className="api-desc">Triangle indices, already offset into the combined vertex list.</span> |
+| <Link id="m-vertices" /><code>{"List<Vector3> Vertices { get; }"}</code> | <span className="api-desc">Vertices moved into the combiner's local space.</span> |

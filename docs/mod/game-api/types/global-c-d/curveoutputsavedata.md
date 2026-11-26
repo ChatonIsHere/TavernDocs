@@ -23,17 +23,21 @@ Save data for a `CurveOutput` logic component (save structure version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> | Creates a `CurveOutputSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> | <span className="api-desc">Creates a `CurveOutputSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> | Whether the curve was still playing when saved. |
-| <Link id="m-progress" /><code>{"float progress"}</code> | How far along its curve the output was when saved. |
+| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> | <span className="api-desc">Whether the curve was still playing when saved.</span> |
+| <Link id="m-progress" /><code>{"float progress"}</code> | <span className="api-desc">How far along its curve the output was when saved.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CurveOutputSaveData`:
 
+<div className="api-used-in">
+
 [`CurveOutput.data`](/mod/game-api/types/global-c-d/curveoutput#m-data).
+
+</div>

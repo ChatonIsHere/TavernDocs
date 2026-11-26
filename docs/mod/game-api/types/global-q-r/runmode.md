@@ -27,4 +27,8 @@ How the smooth locomotion run button works: toggle or hold. Read from the game s
 
 Members of other types that take, return or hold a `RunMode`:
 
+<div className="api-used-in">
+
 [`GameSettings.SmoothLocomotionRunMode`](/mod/game-api/types/alta-utilities/gamesettings#m-smoothlocomotionrunmode).
+
+</div>

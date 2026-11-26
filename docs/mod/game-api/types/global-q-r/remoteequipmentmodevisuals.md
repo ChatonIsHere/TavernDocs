@@ -21,16 +21,16 @@ Visuals that scale in when shown and destroy themselves after scaling out. Clien
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-appearscaler" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> | Curve scaler that runs the scale animation. |
+| <Link id="m-appearscaler" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> | <span className="api-desc">Curve scaler that runs the scale animation.</span> |
 
 </details>
 
@@ -38,15 +38,15 @@ Visuals that scale in when shown and destroy themselves after scaling out. Clien
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> | Starts the scale-in animation. |
-| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> | Starts the scale-out animation and destroys the object when it ends. |
+| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> | <span className="api-desc">Starts the scale-in animation.</span> |
+| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> | <span className="api-desc">Starts the scale-out animation and destroys the object when it ends.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> | Coroutine that waits for the scale animation to finish, then destroys the object. |
+| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> | <span className="api-desc">Coroutine that waits for the scale animation to finish, then destroys the object.</span> |
 
 </details>
 
@@ -54,4 +54,8 @@ Visuals that scale in when shown and destroy themselves after scaling out. Clien
 
 Members of other types that take, return or hold a `RemoteEquipmentModeVisuals`:
 
+<div className="api-used-in">
+
 [`EquipmentState.remoteDummyEffects`](/mod/game-api/types/alta-player/equipmentstate#m-remotedummyeffects), [`EquipmentStateSettings.remoteDummyEffects`](/mod/game-api/types/alta-player/equipmentstatesettings#m-remotedummyeffects), [`EquipmentStateSettings.RemoteDummyEffects`](/mod/game-api/types/alta-player/equipmentstatesettings#m-remotedummyeffects-2).
+
+</div>

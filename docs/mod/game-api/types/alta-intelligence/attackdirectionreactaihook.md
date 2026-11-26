@@ -22,17 +22,17 @@ AI hook that runs an attack direction reaction (from `AttackDirectionCoreSetting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionReactAIHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AttackDirectionReactAIHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/hookaction">{"HookAction"}</Link>{"> actions"}</code> | The running reaction per creature. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" settings"}</code> | The attack direction settings the reaction uses. |
+| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/hookaction">{"HookAction"}</Link>{"> actions"}</code> | <span className="api-desc">The running reaction per creature.</span> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncoresettings">{"AttackDirectionCoreSettings"}</Link>{" settings"}</code> | <span className="api-desc">The attack direction settings the reaction uses.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ AI hook that runs an attack direction reaction (from `AttackDirectionCoreSetting
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Disables and drops the creature's reaction. |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Starts a new reaction for the creature, disabling any old one first. |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Disables and drops the creature's reaction.</span> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Starts a new reaction for the creature, disabling any old one first.</span> |

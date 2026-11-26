@@ -23,12 +23,12 @@ Save data for a `PickupDock` (version 2): what is docked and how many.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockSaveData()"}</code> | Creates a `PickupDockSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PickupDockSaveData()"}</code> | <span className="api-desc">Creates a `PickupDockSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> | Index of the saved child entity that is the docked pickup. |
-| <Link id="m-dockedtype" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | Item type in the dock. |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> | How many are stored. |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> | <span className="api-desc">Index of the saved child entity that is the docked pickup.</span> |
+| <Link id="m-dockedtype" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | <span className="api-desc">Item type in the dock.</span> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> | <span className="api-desc">How many are stored.</span> |

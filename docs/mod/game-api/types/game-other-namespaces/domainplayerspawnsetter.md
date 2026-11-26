@@ -21,28 +21,28 @@ Marker that sets its parent `Domain`'s player spawn point to its own transform w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DomainPlayerSpawnSetter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DomainPlayerSpawnSetter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws a yellow sphere at the spawn point. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Server or local test: calls `SetDomainSpawnPoint`. |
-| <Link id="m-setdomainspawnpoint" /><code>{"private void SetDomainSpawnPoint()"}</code> | Sets the parent domain's spawn point to this transform, or logs an error if there is no parent domain. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Draws a yellow sphere at the spawn point.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Server or local test: calls `SetDomainSpawnPoint`.</span> |
+| <Link id="m-setdomainspawnpoint" /><code>{"private void SetDomainSpawnPoint()"}</code> | <span className="api-desc">Sets the parent domain's spawn point to this transform, or logs an error if there is no parent domain.</span> |
 
 </details>

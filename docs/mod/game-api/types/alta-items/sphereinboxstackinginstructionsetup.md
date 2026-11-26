@@ -22,16 +22,16 @@ Builds the stacking layout for the sphere in box instruction: a grid of randomly
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> | Creates a `SphereInBoxStackingInstructionSetup` with default values. |
+| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> | <span className="api-desc">Creates a `SphereInBoxStackingInstructionSetup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-levelcount" /><code>{"private int levelCount"}</code> | How many items fit in one layer. |
+| <Link id="m-levelcount" /><code>{"private int levelCount"}</code> | <span className="api-desc">How many items fit in one layer.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Builds the stacking layout for the sphere in box instruction: a grid of randomly
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/mod/game-api/types/alta-items/sphereinboxstackinginstruction">{"SphereInBoxStackingInstruction"}</Link>{" instructions)"}</code> | Fills `Positions` and `MaxQuantity` with a 3D grid, bottom layer first. |
+| <Link id="m-setup" /><code>{"protected override void Setup(Bounds bounds, "}<Link to="/mod/game-api/types/alta-items/sphereinboxstackinginstruction">{"SphereInBoxStackingInstruction"}</Link>{" instructions)"}</code> | <span className="api-desc">Fills `Positions` and `MaxQuantity` with a 3D grid, bottom layer first.</span> |

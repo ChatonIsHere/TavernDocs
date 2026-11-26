@@ -22,23 +22,27 @@ Base for a component that changes the forest generator's node map before it is u
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected NodeMapModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected NodeMapModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactivecache" /><code>{"bool IsActiveCache { get; set; }"}</code> | Whether the component was active and enabled when the generator collected modifiers; inactive ones are skipped. |
+| <Link id="m-isactivecache" /><code>{"bool IsActiveCache { get; set; }"}</code> | <span className="api-desc">Whether the component was active and enabled when the generator collected modifiers; inactive ones are skipped.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishinitialize" /><code>{"virtual Task FinishInitialize()"}</code> | Async setup hook run before modifying. Finishes at once by default. |
-| <Link id="m-modify" /><code>{"abstract void Modify("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Changes the forest's node map. Implement in subclasses. |
+| <Link id="m-finishinitialize" /><code>{"virtual Task FinishInitialize()"}</code> | <span className="api-desc">Async setup hook run before modifying. Finishes at once by default.</span> |
+| <Link id="m-modify" /><code>{"abstract void Modify("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | <span className="api-desc">Changes the forest's node map. Implement in subclasses.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NodeMapModifier`:
 
+<div className="api-used-in">
+
 [`ForestGenerator.nodeMapModifiers`](/mod/game-api/types/alta-world-generation/forestgenerator#m-nodemapmodifiers).
+
+</div>

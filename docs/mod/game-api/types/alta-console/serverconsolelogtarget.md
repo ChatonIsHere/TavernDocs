@@ -22,17 +22,17 @@ NLog target `ServerConsoleTarget` that raises static events for each log line. T
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> | Creates a `ServerConsoleLogTarget` with default values. |
+| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> | <span className="api-desc">Creates a `ServerConsoleLogTarget` with default values.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logsent" /><code>{"static event "}<Link to="/mod/game-api/types/alta-console/loghandler">{"LogHandler"}</Link>{" LogSent"}</code> | Raised with the rendered message and level. Used by the on-screen consoles. |
-| <Link id="m-logsentraw" /><code>{"static event "}<Link to="/mod/game-api/types/alta-console/rawloghandler">{"RawLogHandler"}</Link>{" LogSentRaw"}</code> | Raised with the raw log event. Used by `ConsoleLogEvents` and `ClientLogSender`. |
+| <Link id="m-logsent" /><code>{"static event "}<Link to="/mod/game-api/types/alta-console/loghandler">{"LogHandler"}</Link>{" LogSent"}</code> | <span className="api-desc">Raised with the rendered message and level. Used by the on-screen consoles.</span> |
+| <Link id="m-logsentraw" /><code>{"static event "}<Link to="/mod/game-api/types/alta-console/rawloghandler">{"RawLogHandler"}</Link>{" LogSentRaw"}</code> | <span className="api-desc">Raised with the raw log event. Used by `ConsoleLogEvents` and `ClientLogSender`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | Raises `LogSent`, then `LogSentRaw`. |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | <span className="api-desc">Raises `LogSent`, then `LogSentRaw`.</span> |

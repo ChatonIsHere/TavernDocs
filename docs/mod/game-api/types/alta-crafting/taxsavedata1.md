@@ -22,17 +22,17 @@ Old version 1 save data for a `TaxManager`, with the time in float seconds. Migr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TaxSaveData1()"}</code> | Creates a `TaxSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"TaxSaveData1()"}</code> | <span className="api-desc">Creates a `TaxSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenttime" /><code>{"float currentTime"}</code> | Saved tax timer, in seconds. |
-| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> | Whether tax was being taken. |
+| <Link id="m-currenttime" /><code>{"float currentTime"}</code> | <span className="api-desc">Saved tax timer, in seconds.</span> |
+| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> | <span className="api-desc">Whether tax was being taken.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a `TaxSaveData` with the time turned into a `TimeSpan`. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Returns a `TaxSaveData` with the time turned into a `TimeSpan`.</span> |

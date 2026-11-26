@@ -21,18 +21,22 @@ Payload of the `PlayerJoined` and `PlayerLeft` console events, built from a play
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a `PlayerJoinLeaveData` from `player`. |
+| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Creates a `PlayerJoinLeaveData` from `player`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mode" /><code><Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> | The player's `PlayerMode` at the time. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | The player's saved position. |
-| <Link id="m-user" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> | The player's account info. |
+| <Link id="m-mode" /><code><Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> | <span className="api-desc">The player's `PlayerMode` at the time.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">The player's saved position.</span> |
+| <Link id="m-user" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> | <span className="api-desc">The player's account info.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerJoinLeaveData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.PlayerJoined`](/mod/game-api/types/alta-console/consoleevents#m-playerjoined), [`ConsoleEvents.PlayerLeft`](/mod/game-api/types/alta-console/consoleevents#m-playerleft).
+
+</div>

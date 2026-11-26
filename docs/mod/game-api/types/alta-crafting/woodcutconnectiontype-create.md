@@ -22,4 +22,4 @@ Editor menu entry that creates a `WoodcutConnectionType` asset under Assets/Crea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `WoodcutConnectionType.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `WoodcutConnectionType.Create` with default values.</span> |

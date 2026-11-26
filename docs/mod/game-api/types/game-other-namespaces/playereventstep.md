@@ -22,16 +22,16 @@ A micro tutorial step completed by player events, with a setting for how far bac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerEventStep()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayerEventStep()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playereventsearchdepth" /><code>{"private int playerEventSearchDepth"}</code> | How many earlier steps' events can complete this step; -1 searches all. Defaults to 1. |
+| <Link id="m-playereventsearchdepth" /><code>{"private int playerEventSearchDepth"}</code> | <span className="api-desc">How many earlier steps' events can complete this step; -1 searches all. Defaults to 1.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ A micro tutorial step completed by player events, with a setting for how far bac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playereventsearchdepth-2" /><code>{"override int PlayerEventSearchDepth { get; }"}</code> | How many earlier steps' player events can complete this step. 1 by default; -1 searches all earlier steps. |
+| <Link id="m-playereventsearchdepth-2" /><code>{"override int PlayerEventSearchDepth { get; }"}</code> | <span className="api-desc">How many earlier steps' player events can complete this step. 1 by default; -1 searches all earlier steps.</span> |

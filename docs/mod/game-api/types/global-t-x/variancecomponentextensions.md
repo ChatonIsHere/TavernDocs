@@ -21,5 +21,5 @@ GameObject extensions that get components of one base type and keep those that a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getvariantcomponents" /><code>{"static IEnumerable<TVariant> GetVariantComponents<TBase, TVariant>(GameObject gameObject)"}</code> | Components of type `TBase` on the object that are also `TVariant`. |
-| <Link id="m-getvariantcomponentsinchildren" /><code>{"static IEnumerable<TVariant> GetVariantComponentsInChildren<TBase, TVariant>(GameObject gameObject)"}</code> | Components of type `TBase` on the object and its children that are also `TVariant`. |
+| <Link id="m-getvariantcomponents" /><code>{"static IEnumerable<TVariant> GetVariantComponents<TBase, TVariant>(GameObject gameObject)"}</code> | <span className="api-desc">Components of type `TBase` on the object that are also `TVariant`.</span> |
+| <Link id="m-getvariantcomponentsinchildren" /><code>{"static IEnumerable<TVariant> GetVariantComponentsInChildren<TBase, TVariant>(GameObject gameObject)"}</code> | <span className="api-desc">Components of type `TBase` on the object and its children that are also `TVariant`.</span> |

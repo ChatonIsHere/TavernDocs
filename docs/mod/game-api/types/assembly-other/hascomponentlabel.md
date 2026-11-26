@@ -21,11 +21,11 @@ Conditional label attribute that picks one of two labels (and default values) ba
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
-| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
+| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> | <span className="api-desc">Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`.</span> |
+| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> | <span className="api-desc">Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-componenttype" /><code>{"Type ComponentType { get; private set; }"}</code> | The component type to look for. |
+| <Link id="m-componenttype" /><code>{"Type ComponentType { get; private set; }"}</code> | <span className="api-desc">The component type to look for.</span> |

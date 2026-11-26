@@ -21,25 +21,25 @@ Animates a transform's local rotation between stored key rotations when `Animate
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScriptedRotation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ScriptedRotation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>10 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationspeed" /><code>{"private float animationSpeed"}</code> | Unused: the animation always takes one second. |
-| <Link id="m-btnsavekey" /><code>{"private bool btnSaveKey"}</code> | Inspector button that calls `SaveKey`. |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | Cached own transform. |
-| <Link id="m-currentkey" /><code>{"private int currentKey"}</code> | Index of the key it's at, or turning from. |
-| <Link id="m-keys" /><code>{"private Quaternion[] keys"}</code> | The stored local rotations. |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | Animation progress from 0 to 1. |
-| <Link id="m-startingkey" /><code>{"private int startingKey"}</code> | Key it starts at. |
-| <Link id="m-targetkey" /><code>{"private int targetKey"}</code> | Index of the key it's turning toward. |
-| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Registered update method while animating. |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared update module for all scripted rotations. |
+| <Link id="m-animationspeed" /><code>{"private float animationSpeed"}</code> | <span className="api-desc">Unused: the animation always takes one second.</span> |
+| <Link id="m-btnsavekey" /><code>{"private bool btnSaveKey"}</code> | <span className="api-desc">Inspector button that calls `SaveKey`.</span> |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | <span className="api-desc">Cached own transform.</span> |
+| <Link id="m-currentkey" /><code>{"private int currentKey"}</code> | <span className="api-desc">Index of the key it's at, or turning from.</span> |
+| <Link id="m-keys" /><code>{"private Quaternion[] keys"}</code> | <span className="api-desc">The stored local rotations.</span> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">Animation progress from 0 to 1.</span> |
+| <Link id="m-startingkey" /><code>{"private int startingKey"}</code> | <span className="api-desc">Key it starts at.</span> |
+| <Link id="m-targetkey" /><code>{"private int targetKey"}</code> | <span className="api-desc">Index of the key it's turning toward.</span> |
+| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | <span className="api-desc">Registered update method while animating.</span> |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | <span className="api-desc">Shared update module for all scripted rotations.</span> |
 
 </details>
 
@@ -47,16 +47,16 @@ Animates a transform's local rotation between stored key rotations when `Animate
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animate" /><code>{"void Animate(int targetKey)"}</code> | Starts turning toward the key at the given index, unless it's already there or heading there. |
+| <Link id="m-animate" /><code>{"void Animate(int targetKey)"}</code> | <span className="api-desc">Starts turning toward the key at the given index, unless it's already there or heading there.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Destroys itself on headless servers, otherwise snaps to the starting key. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Keeps `startingKey` inside the key list. |
-| <Link id="m-savekey" /><code>{"private void SaveKey()"}</code> | Editor: adds the current local rotation to `keys` if not already in it. |
-| <Link id="m-updaterotation" /><code>{"private void UpdateRotation()"}</code> | Lerps from the current to the target key over one second, then stops updating. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Destroys itself on headless servers, otherwise snaps to the starting key.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Keeps `startingKey` inside the key list.</span> |
+| <Link id="m-savekey" /><code>{"private void SaveKey()"}</code> | <span className="api-desc">Editor: adds the current local rotation to `keys` if not already in it.</span> |
+| <Link id="m-updaterotation" /><code>{"private void UpdateRotation()"}</code> | <span className="api-desc">Lerps from the current to the target key over one second, then stops updating.</span> |
 
 </details>

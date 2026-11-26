@@ -22,19 +22,19 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColliderGroup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> | When false, trigger colliders are left out of the group. |
-| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> | Inspector button labelled Delete All Colliders; does nothing in this build. |
-| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> | Ignores collisions between the group's own colliders on `Start`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> | <span className="api-desc">When false, trigger colliders are left out of the group.</span> |
+| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> | <span className="api-desc">Inspector button labelled Delete All Colliders; does nothing in this build.</span> |
+| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> | <span className="api-desc">Ignores collisions between the group's own colliders on `Start`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -42,24 +42,24 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ignorecollisionscoroutine" /><code>{"static IEnumerator IgnoreCollisionsCoroutine(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, float secondsToIgnore = 0.1) (iterator)"}</code> | Coroutine that ignores collisions between two sets of colliders for a time, then restores them. |
-| <Link id="m-ignorecollisionsforduration" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" IgnoreCollisionsForDuration(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, MonoBehaviour nullCheck, float secondsToIgnore = 0.1)"}</code> | Starts `IgnoreCollisionsCoroutine`, stopping if the given behaviour is destroyed. Default 0.1 seconds. |
-| <Link id="m-ignoreself" /><code>{"void IgnoreSelf(bool isIgnoring = true)"}</code> | Makes the group's colliders ignore each other (or stop ignoring). Runs on `Start` if set to. |
-| <Link id="m-setactive" /><code>{"virtual void SetActive(bool isEnabled)"}</code> | Enables or disables every collider in the group. |
-| <Link id="m-setignore" /><code>{"void SetIgnore(Collider ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
-| <Link id="m-setignore-2" /><code>{"void SetIgnore("}<Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
-| <Link id="m-setignore-3" /><code>{"void SetIgnore(IEnumerable<Collider> ignore, bool isIgnoring)"}</code> | Ignores or restores collision between the group and a collider, another group, or a list of colliders. |
-| <Link id="m-setlayer" /><code>{"void SetLayer(int layer)"}</code> | Moves every collider's object to a layer. |
-| <Link id="m-ignorecollision" /><code>{"protected virtual void IgnoreCollision(Collider thisCollider, Collider otherCollider, bool isIgnoring)"}</code> | Ignores or restores collision between two colliders. Subclasses can override it. |
-| <Link id="m-iselementvalid" /><code>{"protected override bool IsElementValid(Collider element)"}</code> | Skips trigger colliders when the group does not accept triggers. |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor hook. Does nothing useful. |
+| <Link id="m-ignorecollisionscoroutine" /><code>{"static IEnumerator IgnoreCollisionsCoroutine(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, float secondsToIgnore = 0.1) (iterator)"}</code> | <span className="api-desc">Coroutine that ignores collisions between two sets of colliders for a time, then restores them.</span> |
+| <Link id="m-ignorecollisionsforduration" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" IgnoreCollisionsForDuration(IEnumerable<Collider> colliders, IEnumerable<Collider> otherColliders, MonoBehaviour nullCheck, float secondsToIgnore = 0.1)"}</code> | <span className="api-desc">Starts `IgnoreCollisionsCoroutine`, stopping if the given behaviour is destroyed. Default 0.1 seconds.</span> |
+| <Link id="m-ignoreself" /><code>{"void IgnoreSelf(bool isIgnoring = true)"}</code> | <span className="api-desc">Makes the group's colliders ignore each other (or stop ignoring). Runs on `Start` if set to.</span> |
+| <Link id="m-setactive" /><code>{"virtual void SetActive(bool isEnabled)"}</code> | <span className="api-desc">Enables or disables every collider in the group.</span> |
+| <Link id="m-setignore" /><code>{"void SetIgnore(Collider ignore, bool isIgnoring)"}</code> | <span className="api-desc">Ignores or restores collision between the group and a collider, another group, or a list of colliders.</span> |
+| <Link id="m-setignore-2" /><code>{"void SetIgnore("}<Link to="/mod/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" ignore, bool isIgnoring)"}</code> | <span className="api-desc">Ignores or restores collision between the group and a collider, another group, or a list of colliders.</span> |
+| <Link id="m-setignore-3" /><code>{"void SetIgnore(IEnumerable<Collider> ignore, bool isIgnoring)"}</code> | <span className="api-desc">Ignores or restores collision between the group and a collider, another group, or a list of colliders.</span> |
+| <Link id="m-setlayer" /><code>{"void SetLayer(int layer)"}</code> | <span className="api-desc">Moves every collider's object to a layer.</span> |
+| <Link id="m-ignorecollision" /><code>{"protected virtual void IgnoreCollision(Collider thisCollider, Collider otherCollider, bool isIgnoring)"}</code> | <span className="api-desc">Ignores or restores collision between two colliders. Subclasses can override it.</span> |
+| <Link id="m-iselementvalid" /><code>{"protected override bool IsElementValid(Collider element)"}</code> | <span className="api-desc">Skips trigger colliders when the group does not accept triggers.</span> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Editor hook. Does nothing useful.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Turns off collisions between the group's own colliders when `isDisablingInternalCollisionOnStart` is set. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Turns off collisions between the group's own colliders when `isDisablingInternalCollisionOnStart` is set.</span> |
 
 </details>
 
@@ -67,4 +67,8 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 
 Members of other types that take, return or hold a `ColliderGroup`:
 
+<div className="api-used-in">
+
 [`ChisellingDeck.colliderGroup`](/mod/game-api/types/alta-crafting/chisellingdeck#m-collidergroup), [`TimberBlock.colliderGroup`](/mod/game-api/types/alta-crafting/timberblock#m-collidergroup), [`TimberBlock.ColliderGroup`](/mod/game-api/types/alta-crafting/timberblock#m-collidergroup-2), [`CharacterCollisionController.collidersMap`](/mod/game-api/types/alta-player/charactercollisioncontroller#m-collidersmap), [`CharacterCollisionController.CollidersToDisableWhenInteracting.collidersToDisable`](/mod/game-api/types/alta-player/charactercollisioncontroller-colliderstodisablewheninteracting#m-colliderstodisable), [`CharacterCollisionController.CollidersToDisableWhenInteracting.CollidersToDisable`](/mod/game-api/types/alta-player/charactercollisioncontroller-colliderstodisablewheninteracting#m-colliderstodisable-2), [`CharacterCollisionControllerHelper.ReplaceColliderGroup`](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper#m-replacecollidergroup), [`InteractionCollisionController.colliders`](/mod/game-api/types/alta-player/interactioncollisioncontroller#m-colliders), [`PlayerCharacter.bodyColliderGroup`](/mod/game-api/types/alta-player/playercharacter#m-bodycollidergroup), [`PlayerCharacter.BodyColliderGroup`](/mod/game-api/types/alta-player/playercharacter#m-bodycollidergroup-2), [`EmbeddableManager.collidersToAddTo`](/mod/game-api/types/alta-items/embeddablemanager#m-colliderstoaddto), [`Agent.collision`](/mod/game-api/types/alta-intelligence/agent#m-collision), [`Agent.Collision`](/mod/game-api/types/alta-intelligence/agent#m-collision-2), [`IAgent.Collision`](/mod/game-api/types/alta-intelligence/iagent#m-collision), [`LockableHinge.baseColliders`](/mod/game-api/types/alta-items/lockablehinge#m-basecolliders), [`AnimatedRagdoll.colliders`](/mod/game-api/types/global-a-b/animatedragdoll#m-colliders), [`CustomizationPlayerController.GetHandCollidersForInteractor`](/mod/game-api/types/global-c-d/customizationplayercontroller#m-gethandcollidersforinteractor), [`CustomizationPlayerController.leftGhostHandColliders`](/mod/game-api/types/global-c-d/customizationplayercontroller#m-leftghosthandcolliders), [`CustomizationPlayerController.rightGhostHandColliders`](/mod/game-api/types/global-c-d/customizationplayercontroller#m-rightghosthandcolliders), [`ExtraArrowUpdater.ExtraArrowData.ColliderGroup`](/mod/game-api/types/global-e-h/extraarrowupdater-extraarrowdata#m-collidergroup), [`LocomotionlessPlayerController.leftGhostHandColliders`](/mod/game-api/types/global-i-l/locomotionlessplayercontroller#m-leftghosthandcolliders), [`LocomotionlessPlayerController.rightGhostHandColliders`](/mod/game-api/types/global-i-l/locomotionlessplayercontroller#m-rightghosthandcolliders), [`MainMenuPlayerController.GetHandCollidersForInteractor`](/mod/game-api/types/global-m-o/mainmenuplayercontroller#m-gethandcollidersforinteractor), [`MainMenuPlayerController.leftGhostHandColliders`](/mod/game-api/types/global-m-o/mainmenuplayercontroller#m-leftghosthandcolliders), [`MainMenuPlayerController.rightGhostHandColliders`](/mod/game-api/types/global-m-o/mainmenuplayercontroller#m-rightghosthandcolliders), [`Projectile.colliders`](/mod/game-api/types/global-p/projectile#m-colliders), [`Projectile.Colliders`](/mod/game-api/types/global-p/projectile#m-colliders-2), [`Projectile.disabledAgainst`](/mod/game-api/types/global-p/projectile#m-disabledagainst), [`Projectile.Shoot`](/mod/game-api/types/global-p/projectile#m-shoot).
+
+</div>

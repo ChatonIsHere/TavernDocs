@@ -21,16 +21,16 @@ Forest fill entity modifier that sets a spawned entity's rigidbody to kinematic 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetKinematicModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SetKinematicModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> | Value to set. Default true. |
+| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> | <span className="api-desc">Value to set. Default true.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Forest fill entity modifier that sets a spawned entity's rigidbody to kinematic 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" point, ref float weight)"}</code> | Sets `isKinematic` on the entity's `Rigidbody`, if it has one. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Sets `isKinematic` on the entity's `Rigidbody`, if it has one.</span> |

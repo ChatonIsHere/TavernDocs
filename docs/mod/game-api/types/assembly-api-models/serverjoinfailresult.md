@@ -39,4 +39,8 @@ Why the API refused a server join, such as not allowed, not online, banned, wron
 
 Members of other types that take, return or hold a `ServerJoinFailResult`:
 
+<div className="api-used-in">
+
 [`ServerJoinResult.FailReason`](/mod/game-api/types/assembly-api-models/serverjoinresult#m-failreason), [`ServerJoinResult.SetToFailState`](/mod/game-api/types/assembly-api-models/serverjoinresult#m-settofailstate).
+
+</div>

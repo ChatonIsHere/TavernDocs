@@ -21,16 +21,16 @@ Server side store of summoned action item handlers: one `ActionItemHandlerCollec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActionItemHandlerCollectionMap("}<Link to="/mod/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> | Creates an `ActionItemHandlerCollectionMap` from `actionItems` and `destroyItem`. |
+| <Link id="m-ctor" /><code>{"ActionItemHandlerCollectionMap("}<Link to="/mod/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{"[] actionItems, Action<int, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> | <span className="api-desc">Creates an `ActionItemHandlerCollectionMap` from `actionItems` and `destroyItem`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serversideallplayersactionitemsmap" /><code>{"private readonly Dictionary<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/mod/game-api/types/alta-player/actionitemhandlercollection">{"ActionItemHandlerCollection"}</Link>{"> serverSideAllPlayersActionItemsMap"}</code> | Handler collection for each player. |
+| <Link id="m-serversideallplayersactionitemsmap" /><code>{"private readonly Dictionary<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/mod/game-api/types/alta-player/actionitemhandlercollection">{"ActionItemHandlerCollection"}</Link>{"> serverSideAllPlayersActionItemsMap"}</code> | <span className="api-desc">Handler collection for each player.</span> |
 
 </details>
 
@@ -38,6 +38,6 @@ Server side store of summoned action item handlers: one `ActionItemHandlerCollec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gethandlerforactionindex" /><code><Link to="/mod/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionIndex)"}</code> | Gets the player's handler for an action index, creating the player's collection on first use. |
-| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> | True if the player has the action's item spawned. |
-| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Drops a player's handlers, called when they disconnect. Logs a warning if they had none. |
+| <Link id="m-gethandlerforactionindex" /><code><Link to="/mod/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionIndex)"}</code> | <span className="api-desc">Gets the player's handler for an action index, creating the player's collection on first use.</span> |
+| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int index)"}</code> | <span className="api-desc">True if the player has the action's item spawned.</span> |
+| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Drops a player's handlers, called when they disconnect. Logs a warning if they had none.</span> |

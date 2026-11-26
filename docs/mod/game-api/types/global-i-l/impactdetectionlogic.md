@@ -21,28 +21,28 @@ Timer logic that switches on for a while each time an impact detector is hit, ra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectionLogic()"}</code> | Creates an `ImpactDetectionLogic` with default values. |
+| <Link id="m-ctor" /><code>{"ImpactDetectionLogic()"}</code> | <span className="api-desc">Creates an `ImpactDetectionLogic` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | The detector to watch. |
-| <Link id="m-onhitchanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onHitChanged"}</code> | Event raised with true when hit and false when the timer runs out. |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | <span className="api-desc">The detector to watch.</span> |
+| <Link id="m-onhitchanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onHitChanged"}</code> | <span className="api-desc">Event raised with true when hit and false when the timer runs out.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the detector's hits and forwards the timer toggle to `onHitChanged`. |
-| <Link id="m-washit" /><code>{"private void WasHit("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Starts the active timer when the detector is hit. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the detector's hits and forwards the timer toggle to `onHitChanged`.</span> |
+| <Link id="m-washit" /><code>{"private void WasHit("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | <span className="api-desc">Starts the active timer when the detector is hit.</span> |
 
 </details>

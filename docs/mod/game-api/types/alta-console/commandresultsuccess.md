@@ -30,4 +30,8 @@ Outcome of matching console input to a command: success, or why the parameters d
 
 Members of other types that take, return or hold a `CommandResultSuccess`:
 
+<div className="api-used-in">
+
 [`CommandSearchResult.CommandSearchResult`](/mod/game-api/types/alta-console/commandsearchresult#m-ctor), [`CommandSearchResult.success`](/mod/game-api/types/alta-console/commandsearchresult#m-success).
+
+</div>

@@ -21,18 +21,18 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"KeyboardInputSource(Key keyCode, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `KeyboardInputSource` from `keyCode` and `controller`. |
+| <Link id="m-ctor" /><code>{"KeyboardInputSource(Key keyCode, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `KeyboardInputSource` from `keyCode` and `controller`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> | The `PlayerInput` passed to the pressed and released events. |
-| <Link id="m-pressedhandler" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ikeyboardtriggerhandler">{"IKeyBoardTriggerHandler"}</Link>{" pressedHandler"}</code> | Handle for the key down registration. |
-| <Link id="m-releasedhandler" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ikeyboardtriggerhandler">{"IKeyBoardTriggerHandler"}</Link>{" releasedHandler"}</code> | Handle for the key up registration. |
+| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> | <span className="api-desc">The `PlayerInput` passed to the pressed and released events.</span> |
+| <Link id="m-pressedhandler" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ikeyboardtriggerhandler">{"IKeyBoardTriggerHandler"}</Link>{" pressedHandler"}</code> | <span className="api-desc">Handle for the key down registration.</span> |
+| <Link id="m-releasedhandler" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/ikeyboardtriggerhandler">{"IKeyBoardTriggerHandler"}</Link>{" releasedHandler"}</code> | <span className="api-desc">Handle for the key up registration.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keycode" /><code>{"Key KeyCode { get; }"}</code> | The key this source listens to. |
+| <Link id="m-keycode" /><code>{"Key KeyCode { get; }"}</code> | <span className="api-desc">The key this source listens to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | Registers key down and key up handlers with `KeyboardEventTriggers`. Called by the constructor. |
-| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | Removes both key handlers. |
+| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | <span className="api-desc">Registers key down and key up handlers with `KeyboardEventTriggers`. Called by the constructor.</span> |
+| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | <span className="api-desc">Removes both key handlers.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keypressed" /><code>{"private void KeyPressed(Key code)"}</code> | Fires the source's pressed event for the controller. |
-| <Link id="m-keyunpressed" /><code>{"private void KeyUnpressed(Key code)"}</code> | Fires the source's released event for the controller. |
+| <Link id="m-keypressed" /><code>{"private void KeyPressed(Key code)"}</code> | <span className="api-desc">Fires the source's pressed event for the controller.</span> |
+| <Link id="m-keyunpressed" /><code>{"private void KeyUnpressed(Key code)"}</code> | <span className="api-desc">Fires the source's released event for the controller.</span> |
 
 </details>

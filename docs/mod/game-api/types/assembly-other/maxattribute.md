@@ -21,10 +21,10 @@ Inspector attribute that sets a maximum for a float field. The drawer that enfor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> | Creates a `MaxAttribute` from `max`. |
+| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> | <span className="api-desc">Creates a `MaxAttribute` from `max`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"readonly float max"}</code> | The maximum value. |
+| <Link id="m-max" /><code>{"readonly float max"}</code> | <span className="api-desc">The maximum value.</span> |

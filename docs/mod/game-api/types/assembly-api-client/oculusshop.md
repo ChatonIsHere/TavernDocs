@@ -19,23 +19,23 @@ Online client that claims a player's Oculus store purchases into their Alta shop
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal OculusShop("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates an `OculusShop` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal OculusShop("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates an `OculusShop` from `clientManager`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager"}</code> | The client manager requests are sent through. |
+| <Link id="m-clientmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager"}</code> | <span className="api-desc">The client manager requests are sent through.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ Online client that claims a player's Oculus store purchases into their Alta shop
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consumealloculuspurchases" /><code>{"async Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> | Consumes all the user's Oculus purchases and returns the items they claimed. |
+| <Link id="m-consumealloculuspurchases" /><code>{"async Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> | <span className="api-desc">Consumes all the user's Oculus purchases and returns the items they claimed.</span> |

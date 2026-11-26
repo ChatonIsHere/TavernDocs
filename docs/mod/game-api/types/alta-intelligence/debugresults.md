@@ -20,18 +20,18 @@ Holder for action scoring results, probably meant for AI debugging. Nothing else
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DebugResults()"}</code> | Creates a `DebugResults` with default values. |
+| <Link id="m-ctor" /><code>{"DebugResults()"}</code> | <span className="api-desc">Creates a `DebugResults` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-results" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/targetresult">{"TargetResult"}</Link>{"> results"}</code> | Scoring results per target. |
-| <Link id="m-targeted" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targeted"}</code> | Results for target actions. |
-| <Link id="m-targetless" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targetless"}</code> | Results for base actions with no target. |
+| <Link id="m-results" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/targetresult">{"TargetResult"}</Link>{"> results"}</code> | <span className="api-desc">Scoring results per target.</span> |
+| <Link id="m-targeted" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targeted"}</code> | <span className="api-desc">Results for target actions.</span> |
+| <Link id="m-targetless" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetresult-result">{"TargetResult.Result"}</Link>{"> targetless"}</code> | <span className="api-desc">Results for base actions with no target.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Empties all three collections. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Empties all three collections.</span> |

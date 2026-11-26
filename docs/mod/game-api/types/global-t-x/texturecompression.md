@@ -29,4 +29,8 @@ Compression level for a `TextureOutput`: `None`, `Normal`, `High` or `Low`.
 
 Members of other types that take, return or hold a `TextureCompression`:
 
+<div className="api-used-in">
+
 [`TextureOutput.Compression`](/mod/game-api/types/global-t-x/textureoutput#m-compression), [`TextureOutput.TextureOutput`](/mod/game-api/types/global-t-x/textureoutput#m-ctor-2).
+
+</div>

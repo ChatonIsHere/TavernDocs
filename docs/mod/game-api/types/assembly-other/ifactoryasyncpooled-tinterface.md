@@ -21,5 +21,5 @@ Async factory that reuses instances from a pool, with no spawn parameters.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-despawn" /><code>{"void Despawn(TInterface instance)"}</code> | Returns the instance to the pool. |
-| <Link id="m-spawn" /><code>{"Task<TInterface> Spawn()"}</code> | Gets an instance from the pool, or makes one, and returns it when ready. |
+| <Link id="m-despawn" /><code>{"void Despawn(TInterface instance)"}</code> | <span className="api-desc">Returns the instance to the pool.</span> |
+| <Link id="m-spawn" /><code>{"Task<TInterface> Spawn()"}</code> | <span className="api-desc">Gets an instance from the pool, or makes one, and returns it when ready.</span> |

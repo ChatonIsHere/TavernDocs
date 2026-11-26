@@ -23,11 +23,11 @@ Save data (version 2) for `Mould`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MouldSaveData()"}</code> | Creates a `MouldSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"MouldSaveData()"}</code> | <span className="api-desc">Creates a `MouldSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | Saved mould definition, or null for a blank mould. |
-| <Link id="m-usage" /><code>{"int usage"}</code> | Uses left; -1 means unlimited. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Saved mould definition, or null for a blank mould.</span> |
+| <Link id="m-usage" /><code>{"int usage"}</code> | <span className="api-desc">Uses left; -1 means unlimited.</span> |

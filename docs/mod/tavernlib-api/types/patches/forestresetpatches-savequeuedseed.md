@@ -23,5 +23,5 @@ Postfixes `ForestGenerator`'s explicit `Save` method so the save holds a queued 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/mod/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" __result)"}</code> | Writes the queued seed into the returned `ForestGeneratorSaveData`, when a reset is queued. |
-| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> | Finds `ForestGenerator`'s explicit `Save` method that returns `ForestGeneratorSaveData`. |
+| <Link id="m-postfix" /><code>{"static void Postfix("}<Link to="/mod/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" __instance, "}<Link to="/mod/game-api/types/alta-world-generation/forestgeneratorsavedata">{"ForestGeneratorSaveData"}</Link>{" __result)"}</code> | <span className="api-desc">Writes the queued seed into the returned `ForestGeneratorSaveData`, when a reset is queued.</span> |
+| <Link id="m-targetmethod" /><code>{"static MethodBase TargetMethod()"}</code> | <span className="api-desc">Finds `ForestGenerator`'s explicit `Save` method that returns `ForestGeneratorSaveData`.</span> |

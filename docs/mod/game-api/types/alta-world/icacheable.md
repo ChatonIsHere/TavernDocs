@@ -21,16 +21,20 @@ Data that can be saved to and loaded from a versioned cache file, such as forest
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-version" /><code>{"uint Version { get; }"}</code> | Current data version, written at the start of the cache file. |
+| <Link id="m-version" /><code>{"uint Version { get; }"}</code> | <span className="api-desc">Current data version, written at the start of the cache file.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializeasync" /><code>{"Task SerializeAsync(uint version, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the data on the stream. When reading, `version` is the version stored in the file. |
+| <Link id="m-serializeasync" /><code>{"Task SerializeAsync(uint version, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes the data on the stream. When reading, `version` is the version stored in the file.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ICacheable`:
 
+<div className="api-used-in">
+
 [`CacheFileFormat.Write`](/mod/game-api/types/alta-world/cachefileformat#m-write).
+
+</div>

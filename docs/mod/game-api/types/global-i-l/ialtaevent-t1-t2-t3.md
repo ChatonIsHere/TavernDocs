@@ -21,4 +21,4 @@ An event with three values, raised with `Invoke`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 arguments3)"}</code> | Fires the event with all three arguments. |
+| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 arguments3)"}</code> | <span className="api-desc">Fires the event with all three arguments.</span> |

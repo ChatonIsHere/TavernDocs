@@ -21,17 +21,21 @@ A game or server setting shown in a menu, with a display name and description. I
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | Name shown for the setting in the menu. |
-| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> | Help text shown in the setting description panel. |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | <span className="api-desc">Name shown for the setting in the menu.</span> |
+| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> | <span className="api-desc">Help text shown in the setting description panel.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> | Whether the setting should be shown or used right now. |
+| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> | <span className="api-desc">Whether the setting should be shown or used right now.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISettingsFieldAccess`:
 
+<div className="api-used-in">
+
 [`AssistedSpawnCommandAction.SetSettings`](/mod/game-api/types/alta-menus/assistedspawncommandaction#m-setsettings), [`MenuGameSetting.SetSettings`](/mod/game-api/types/alta-menus/menugamesetting#m-setsettings), [`MenuGameSetting<T>.SetSettings`](/mod/game-api/types/alta-menus/menugamesetting-t#m-setsettings), [`ServerCommandAction.SetSettings`](/mod/game-api/types/alta-menus/servercommandaction#m-setsettings), [`ServerMultiCommandAction.SetSettings`](/mod/game-api/types/alta-menus/servermulticommandaction#m-setsettings), [`SettingDescriptionPanel.currentSetting`](/mod/game-api/types/global-s/settingdescriptionpanel#m-currentsetting), [`SettingDescriptionPanel.ShowSetting`](/mod/game-api/types/global-s/settingdescriptionpanel#m-showsetting).
+
+</div>

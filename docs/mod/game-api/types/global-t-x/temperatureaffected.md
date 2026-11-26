@@ -21,15 +21,15 @@ Component with no behaviour; it only holds a room temperature constant.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TemperatureAffected()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TemperatureAffected()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-roomtemperature" /><code>{"private const float RoomTemperature"}</code> | Room temperature, 20 degrees. |
+| <Link id="m-roomtemperature" /><code>{"private const float RoomTemperature"}</code> | <span className="api-desc">Room temperature, 20 degrees.</span> |
 
 </details>

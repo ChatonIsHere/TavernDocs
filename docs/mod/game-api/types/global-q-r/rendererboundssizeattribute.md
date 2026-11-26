@@ -21,4 +21,4 @@ Inspector attribute with no members; probably drives an editor drawer that shows
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererBoundsSizeAttribute()"}</code> | Creates a `RendererBoundsSizeAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"RendererBoundsSizeAttribute()"}</code> | <span className="api-desc">Creates a `RendererBoundsSizeAttribute` with default values.</span> |

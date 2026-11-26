@@ -29,4 +29,8 @@ Downscale factor for a `TextureOutput`: full, half, quarter or eighth size (the 
 
 Members of other types that take, return or hold a `TextureScale`:
 
+<div className="api-used-in">
+
 [`TextureOutput.Scale`](/mod/game-api/types/global-t-x/textureoutput#m-scale), [`TextureOutput.TextureOutput`](/mod/game-api/types/global-t-x/textureoutput#m-ctor-2).
+
+</div>

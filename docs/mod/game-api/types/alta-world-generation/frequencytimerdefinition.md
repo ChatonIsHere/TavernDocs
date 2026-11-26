@@ -23,18 +23,18 @@ Population timer asset that checks each population every `tickTime` seconds on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FrequencyTimerDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FrequencyTimerDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elementdecaytime" /><code>{"private float elementDecayTime"}</code> | Seconds a spawned element lasts. |
-| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{", "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> | The timeline entry for each population. |
-| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> | Seconds between population checks. |
+| <Link id="m-elementdecaytime" /><code>{"private float elementDecayTime"}</code> | <span className="api-desc">Seconds a spawned element lasts.</span> |
+| <Link id="m-entries" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{", "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{"> entries"}</code> | <span className="api-desc">The timeline entry for each population.</span> |
+| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> | <span className="api-desc">Seconds between population checks.</span> |
 
 </details>
 
@@ -42,12 +42,12 @@ Population timer asset that checks each population every `tickTime` seconds on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elementdecaytime-2" /><code>{"override float ElementDecayTime { get; }"}</code> | Seconds before a spawned element decays, from `elementDecayTime`. |
-| <Link id="m-spawnoninitialize" /><code>{"override bool SpawnOnInitialize { get; }"}</code> | Always true: populations spawn when they initialize. |
+| <Link id="m-elementdecaytime-2" /><code>{"override float ElementDecayTime { get; }"}</code> | <span className="api-desc">Seconds before a spawned element decays, from `elementDecayTime`.</span> |
+| <Link id="m-spawnoninitialize" /><code>{"override bool SpawnOnInitialize { get; }"}</code> | <span className="api-desc">Always true: populations spawn when they initialize.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"override void Clean("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | Cancels the population's repeating timeline entry. |
-| <Link id="m-setup" /><code>{"override void Setup("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | Starts (or restarts) a repeating `CheckSpawned` call for the population every `tickTime` seconds. |
+| <Link id="m-clean" /><code>{"override void Clean("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | <span className="api-desc">Cancels the population's repeating timeline entry.</span> |
+| <Link id="m-setup" /><code>{"override void Setup("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | <span className="api-desc">Starts (or restarts) a repeating `CheckSpawned` call for the population every `tickTime` seconds.</span> |

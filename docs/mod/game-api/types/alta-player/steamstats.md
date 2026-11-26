@@ -21,21 +21,21 @@ Steam backend for achievements and stats, built by `AchievementManager`. Does no
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SteamStats()"}</code> | Creates a `SteamStats` with default values. |
+| <Link id="m-ctor" /><code>{"SteamStats()"}</code> | <span className="api-desc">Creates a `SteamStats` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gameid" /><code>{"private CGameID gameId"}</code> | This game's Steam ID, used to filter callbacks. |
-| <Link id="m-isstatschanged" /><code>{"private bool isStatsChanged"}</code> | True when there are unsaved changes to store on Steam. |
-| <Link id="m-isstatsrequested" /><code>{"private bool isStatsRequested"}</code> | True once the request for current stats went through. |
-| <Link id="m-userachievementstored" /><code>{"private Callback<UserAchievementStored_t> userAchievementStored"}</code> | Steam callback handle for achievement stored events. |
-| <Link id="m-userstatsreceived" /><code>{"private Callback<UserStatsReceived_t> userStatsReceived"}</code> | Steam callback handle for stats received events. |
-| <Link id="m-userstatsstored" /><code>{"private Callback<UserStatsStored_t> userStatsStored"}</code> | Steam callback handle for stats stored events. |
+| <Link id="m-gameid" /><code>{"private CGameID gameId"}</code> | <span className="api-desc">This game's Steam ID, used to filter callbacks.</span> |
+| <Link id="m-isstatschanged" /><code>{"private bool isStatsChanged"}</code> | <span className="api-desc">True when there are unsaved changes to store on Steam.</span> |
+| <Link id="m-isstatsrequested" /><code>{"private bool isStatsRequested"}</code> | <span className="api-desc">True once the request for current stats went through.</span> |
+| <Link id="m-userachievementstored" /><code>{"private Callback<UserAchievementStored_t> userAchievementStored"}</code> | <span className="api-desc">Steam callback handle for achievement stored events.</span> |
+| <Link id="m-userstatsreceived" /><code>{"private Callback<UserStatsReceived_t> userStatsReceived"}</code> | <span className="api-desc">Steam callback handle for stats received events.</span> |
+| <Link id="m-userstatsstored" /><code>{"private Callback<UserStatsStored_t> userStatsStored"}</code> | <span className="api-desc">Steam callback handle for stats stored events.</span> |
 
 </details>
 
@@ -43,21 +43,21 @@ Steam backend for achievements and stats, built by `AchievementManager`. Does no
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Reads the Steam app ID and registers the stats received, stored and achievement stored callbacks. |
-| <Link id="m-lateupdate" /><code>{"override void LateUpdate()"}</code> | Requests current stats from Steam until it succeeds, and stores pending changes once per frame when anything changed. |
-| <Link id="m-requestupdate" /><code>{"override void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | Reads one achievement (achieved flag, name, description, hidden) or one stat from Steam into the game object. |
-| <Link id="m-requestupdate-2" /><code>{"override void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | Reads one achievement (achieved flag, name, description, hidden) or one stat from Steam into the game object. |
-| <Link id="m-statchanged" /><code>{"override void StatChanged("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | Writes a stat's int or float value to Steam and flags stats to be stored. |
-| <Link id="m-unlockachievement" /><code>{"override void UnlockAchievement("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | Sets the achievement on Steam and flags stats to be stored next `LateUpdate`. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Reads the Steam app ID and registers the stats received, stored and achievement stored callbacks.</span> |
+| <Link id="m-lateupdate" /><code>{"override void LateUpdate()"}</code> | <span className="api-desc">Requests current stats from Steam until it succeeds, and stores pending changes once per frame when anything changed.</span> |
+| <Link id="m-requestupdate" /><code>{"override void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Reads one achievement (achieved flag, name, description, hidden) or one stat from Steam into the game object.</span> |
+| <Link id="m-requestupdate-2" /><code>{"override void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Reads one achievement (achieved flag, name, description, hidden) or one stat from Steam into the game object.</span> |
+| <Link id="m-statchanged" /><code>{"override void StatChanged("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Writes a stat's int or float value to Steam and flags stats to be stored.</span> |
+| <Link id="m-unlockachievement" /><code>{"override void UnlockAchievement("}<Link to="/mod/game-api/types/alta-player/achievement">{"Achievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Sets the achievement on Steam and flags stats to be stored next `LateUpdate`.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-achievementstored" /><code>{"private void AchievementStored(UserAchievementStored_t param)"}</code> | Steam callback: marks the stored achievement as achieved, or passes its progress on. |
-| <Link id="m-iscorrectgame" /><code>{"private bool IsCorrectGame(ulong paramGameId)"}</code> | Checks that a Steam callback is for this game's ID. |
-| <Link id="m-statsreceived" /><code>{"private void StatsReceived(UserStatsReceived_t param)"}</code> | Steam callback: on success calls `AchievementManager.UpdateAll`. |
-| <Link id="m-statsstored" /><code>{"private void StatsStored(UserStatsStored_t param)"}</code> | Steam callback: logs the result, and reloads all stats if Steam reports an invalid parameter. |
+| <Link id="m-achievementstored" /><code>{"private void AchievementStored(UserAchievementStored_t param)"}</code> | <span className="api-desc">Steam callback: marks the stored achievement as achieved, or passes its progress on.</span> |
+| <Link id="m-iscorrectgame" /><code>{"private bool IsCorrectGame(ulong paramGameId)"}</code> | <span className="api-desc">Checks that a Steam callback is for this game's ID.</span> |
+| <Link id="m-statsreceived" /><code>{"private void StatsReceived(UserStatsReceived_t param)"}</code> | <span className="api-desc">Steam callback: on success calls `AchievementManager.UpdateAll`.</span> |
+| <Link id="m-statsstored" /><code>{"private void StatsStored(UserStatsStored_t param)"}</code> | <span className="api-desc">Steam callback: logs the result, and reloads all stats if Steam reports an invalid parameter.</span> |
 
 </details>

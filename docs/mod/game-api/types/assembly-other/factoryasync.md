@@ -22,17 +22,17 @@ Base for factories that spawn a prefab loaded through Addressables. The prefab's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | Creates a `FactoryAsync` with default values. |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | <span className="api-desc">Creates a `FactoryAsync` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-assethandles" /><code>{"private readonly List<AsyncOperationHandle> assetHandles"}</code> | Addressables load handles taken so far, released in `Dispose`. |
-| <Link id="m-prefabreference" /><code>{"private AssetReference prefabReference"}</code> | The Addressables reference of the prefab this factory instantiates. |
+| <Link id="m-assethandles" /><code>{"private readonly List<AsyncOperationHandle> assetHandles"}</code> | <span className="api-desc">Addressables load handles taken so far, released in `Dispose`.</span> |
+| <Link id="m-prefabreference" /><code>{"private AssetReference prefabReference"}</code> | <span className="api-desc">The Addressables reference of the prefab this factory instantiates.</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Base for factories that spawn a prefab loaded through Addressables. The prefab's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Releases every Addressables handle this factory loaded, then disposes the created instances. |
-| <Link id="m-construct" /><code>{"protected void Construct(AssetReference prefabReference)"}</code> | Injection method that stores the Addressables prefab reference to load. |
-| <Link id="m-loadasset" /><code>{"protected Task<GameObject> LoadAsset()"}</code> | Starts loading the prefab through Addressables, keeps the handle for release, and returns the load task. |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | <span className="api-desc">Releases every Addressables handle this factory loaded, then disposes the created instances.</span> |
+| <Link id="m-construct" /><code>{"protected void Construct(AssetReference prefabReference)"}</code> | <span className="api-desc">Injection method that stores the Addressables prefab reference to load.</span> |
+| <Link id="m-loadasset" /><code>{"protected Task<GameObject> LoadAsset()"}</code> | <span className="api-desc">Starts loading the prefab through Addressables, keeps the handle for release, and returns the load task.</span> |

@@ -21,17 +21,21 @@ A shop item with details for one user: whether they own it and the price they wo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> | Creates a `ShopItemDetailedForUser` with default values. |
+| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> | <span className="api-desc">Creates a `ShopItemDetailedForUser` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> | Price for this user after any discounts. |
-| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> | True if the user already owns the item. |
+| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> | <span className="api-desc">Price for this user after any discounts.</span> |
+| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> | <span className="api-desc">True if the user already owns the item.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ShopItemDetailedForUser`:
 
+<div className="api-used-in">
+
 [`IShopApiClient.GetCurrentShopConfigurationForUser`](/mod/game-api/types/assembly-api-client/ishopapiclient#m-getcurrentshopconfigurationforuser), [`OfflineShopApiClient.GetCurrentShopConfigurationForUser`](/mod/game-api/types/assembly-api-client/offlineshopapiclient#m-getcurrentshopconfigurationforuser), [`ShopApiClient.GetCurrentShopConfigurationForUser`](/mod/game-api/types/assembly-api-client/shopapiclient#m-getcurrentshopconfigurationforuser), [`LowLevelApiClient.GetCurrentShopConfigurationForUser`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getcurrentshopconfigurationforuser), [`MainMenuShopItem.Setup`](/mod/game-api/types/alta-customization/mainmenushopitem#m-setup), [`MainMenuShopItem.shopItem`](/mod/game-api/types/alta-customization/mainmenushopitem#m-shopitem), [`ShopConfigUtility.GetCurrentShopConfigurationForUser`](/mod/game-api/types/alta-customization/shopconfigutility#m-getcurrentshopconfigurationforuser), [`ShopInterface.mappedItems`](/mod/game-api/types/alta-customization/shopinterface#m-mappeditems), [`ShopInterfaceItem.Setup`](/mod/game-api/types/alta-customization/shopinterfaceitem#m-setup), [`ShopInterfaceItem.ShopItem`](/mod/game-api/types/alta-customization/shopinterfaceitem#m-shopitem).
+
+</div>

@@ -21,18 +21,18 @@ A pooled tool effect that fades a material's `_Progress` value between a minimum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToolBasedEffect()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ToolBasedEffect()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | Seconds the fade takes. |
-| <Link id="m-maxvalue" /><code>{"private float maxvalue"}</code> | `_Progress` value at the hidden end of the fade (default 1). |
-| <Link id="m-minvalue" /><code>{"private float minValue"}</code> | `_Progress` value at the shown end of the fade. |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | <span className="api-desc">Seconds the fade takes.</span> |
+| <Link id="m-maxvalue" /><code>{"private float maxvalue"}</code> | <span className="api-desc">`_Progress` value at the hidden end of the fade (default 1).</span> |
+| <Link id="m-minvalue" /><code>{"private float minValue"}</code> | <span className="api-desc">`_Progress` value at the shown end of the fade.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ A pooled tool effect that fades a material's `_Progress` value between a minimum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> | Coroutine that lerps `_Progress` from max to min when going in, or min to max when going out, then cleans up and releases on the way out. |
+| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> | <span className="api-desc">Coroutine that lerps `_Progress` from max to min when going in, or min to max when going out, then cleans up and releases on the way out.</span> |

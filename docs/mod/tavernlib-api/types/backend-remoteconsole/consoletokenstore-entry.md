@@ -22,18 +22,22 @@ Private: one named token in the in-memory copy, with its granted paths worked ou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Entry("}<Link to="/mod/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" token)"}</code> | Builds the entry for a token, with its granted command paths and their parent paths. |
+| <Link id="m-ctor" /><code>{"Entry("}<Link to="/mod/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" token)"}</code> | <span className="api-desc">Builds the entry for a token, with its granted command paths and their parent paths.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-above" /><code>{"readonly HashSet<string> Above"}</code> | Every module path above a granted path, so a token can see the modules that lead to its commands. |
-| <Link id="m-granted" /><code>{"readonly HashSet<string> Granted"}</code> | The token's access paths, normalized. |
-| <Link id="m-token" /><code>{"readonly "}<Link to="/mod/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" Token"}</code> | The token's row. |
+| <Link id="m-above" /><code>{"readonly HashSet<string> Above"}</code> | <span className="api-desc">Every module path above a granted path, so a token can see the modules that lead to its commands.</span> |
+| <Link id="m-granted" /><code>{"readonly HashSet<string> Granted"}</code> | <span className="api-desc">The token's access paths, normalized.</span> |
+| <Link id="m-token" /><code>{"readonly "}<Link to="/mod/tavernlib-api/types/backend-remoteconsole/consoletoken">{"ConsoleToken"}</Link>{" Token"}</code> | <span className="api-desc">The token's row.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Entry`:
 
+<div className="api-used-in">
+
 [`ConsoleTokenStore._byId`](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore#m-byid).
+
+</div>

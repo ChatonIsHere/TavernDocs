@@ -30,4 +30,8 @@ Private flags for how deep the player is in a volume checked by `DepthCheckLocoC
 
 Members of other types that take, return or hold a `Depth`:
 
+<div className="api-used-in">
+
 [`DepthCheckLocoCheck.EnterDepth`](/mod/game-api/types/global-c-d/depthchecklococheck#m-enterdepth), [`DepthCheckLocoCheck.GetDepth`](/mod/game-api/types/global-c-d/depthchecklococheck#m-getdepth), [`DepthCheckLocoCheck.LeaveDepth`](/mod/game-api/types/global-c-d/depthchecklococheck#m-leavedepth), [`DepthCheckLocoCheck.teleportBlock`](/mod/game-api/types/global-c-d/depthchecklococheck#m-teleportblock), [`DepthCheckLocoCheck.ModifierCheck.Depth`](/mod/game-api/types/global-c-d/depthchecklococheck-modifiercheck#m-depth).
+
+</div>

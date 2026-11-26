@@ -36,4 +36,8 @@ Whether a player can buy, sell or use a skill slot, from `IsSlotAvailable` on th
 
 Members of other types that take, return or hold a `SkillStatus`:
 
+<div className="api-used-in">
+
 [`PathExperience.IsSlotAvailable`](/mod/game-api/types/global-p/pathexperience#m-isslotavailable), [`PlayerProgressionManager.IsSlotAvailable`](/mod/game-api/types/global-p/playerprogressionmanager#m-isslotavailable), [`SkillOrb.InitializeSkill`](/mod/game-api/types/global-s/skillorb#m-initializeskill), [`SkillOrb.InitializeSlot`](/mod/game-api/types/global-s/skillorb#m-initializeslot), [`SkillOrb.Status`](/mod/game-api/types/global-s/skillorb#m-status), [`SkillOrb.UpdateAllowed`](/mod/game-api/types/global-s/skillorb#m-updateallowed), [`SkillOrbConnectionline.UpdateColor`](/mod/game-api/types/global-s/skillorbconnectionline#m-updatecolor), [`SkillOrbStatusUpdateDelegate.BeginInvoke`](/mod/game-api/types/global-s/skillorbstatusupdatedelegate#m-begininvoke), [`SkillOrbStatusUpdateDelegate.Invoke`](/mod/game-api/types/global-s/skillorbstatusupdatedelegate#m-invoke).
+
+</div>

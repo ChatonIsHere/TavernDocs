@@ -27,4 +27,8 @@ Amount of smoothing for player movement: default or low.
 
 Members of other types that take, return or hold a `PlayerSmoothingLevel`:
 
+<div className="api-used-in">
+
 [`ServerSettings.PlayerSmoothingLevel`](/mod/game-api/types/alta-utilities/serversettings#m-playersmoothinglevel).
+
+</div>

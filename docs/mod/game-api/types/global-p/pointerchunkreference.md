@@ -21,11 +21,11 @@ Component holding a list of chunks and an id. Nothing in this build reads it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PointerChunkReference()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PointerChunkReference()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunks" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> Chunks"}</code> | List of chunks. |
-| <Link id="m-id" /><code>{"uint id"}</code> | An id number. |
+| <Link id="m-chunks" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> Chunks"}</code> | <span className="api-desc">List of chunks.</span> |
+| <Link id="m-id" /><code>{"uint id"}</code> | <span className="api-desc">An id number.</span> |

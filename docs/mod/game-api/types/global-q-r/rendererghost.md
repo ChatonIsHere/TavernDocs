@@ -21,17 +21,17 @@ Pooled copy of a mesh renderer, given the same mesh and materials; used by `Obje
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererGhost()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RendererGhost()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> | Mesh filter that gets the mesh. |
-| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> | Renderer that gets the materials. |
+| <Link id="m-targetfilter" /><code>{"private MeshFilter targetFilter"}</code> | <span className="api-desc">Mesh filter that gets the mesh.</span> |
+| <Link id="m-targetrenderer" /><code>{"private MeshRenderer targetRenderer"}</code> | <span className="api-desc">Renderer that gets the materials.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Pooled copy of a mesh renderer, given the same mesh and materials; used by `Obje
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"void Setup(MeshRenderer renderer)"}</code> | Copies the source renderer's shared materials and mesh. |
+| <Link id="m-setup" /><code>{"void Setup(MeshRenderer renderer)"}</code> | <span className="api-desc">Copies the source renderer's shared materials and mesh.</span> |

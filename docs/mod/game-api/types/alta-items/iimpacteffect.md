@@ -21,4 +21,4 @@ Something that reacts to an impact hit.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> | Runs the reaction for the given hit. |
+| <Link id="m-trigger" /><code>{"void Trigger("}<Link to="/mod/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" hit)"}</code> | <span className="api-desc">Runs the reaction for the given hit.</span> |

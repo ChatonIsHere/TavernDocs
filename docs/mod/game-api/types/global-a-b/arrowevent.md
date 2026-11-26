@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes an `Arrow`, for hooking arrow callbacks up 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowEvent()"}</code> | Creates an `ArrowEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ArrowEvent()"}</code> | <span className="api-desc">Creates an `ArrowEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ArrowEvent`:
 
+<div className="api-used-in">
+
 [`Arrow.onShotOnServer`](/mod/game-api/types/global-a-b/arrow#m-onshotonserver).
+
+</div>

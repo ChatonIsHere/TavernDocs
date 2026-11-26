@@ -20,16 +20,20 @@ Body of the Alta web API call that generates an identity token (`GenerateIdentit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IdentityTokenRequest()"}</code> | Creates an `IdentityTokenRequest` with default values. |
+| <Link id="m-ctor" /><code>{"IdentityTokenRequest()"}</code> | <span className="api-desc">Creates an `IdentityTokenRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-userdata" /><code>{"object UserData { get; set; }"}</code> | Extra data to put in the token, any JSON shape. |
+| <Link id="m-userdata" /><code>{"object UserData { get; set; }"}</code> | <span className="api-desc">Extra data to put in the token, any JSON shape.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IdentityTokenRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GenerateIdentityTokenAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-generateidentitytokenasync).
+
+</div>

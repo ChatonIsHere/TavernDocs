@@ -21,16 +21,16 @@ Save file holding which pieces of each map are still hidden. Server: loaded per 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapSaveFormat()"}</code> | Creates a `MapSaveFormat` with default values. |
+| <Link id="m-ctor" /><code>{"MapSaveFormat()"}</code> | <span className="api-desc">Creates a `MapSaveFormat` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-version" /><code>{"private const uint Version"}</code> | File format version written at the start of the file (0). |
+| <Link id="m-version" /><code>{"private const uint Version"}</code> | <span className="api-desc">File format version written at the start of the file (0).</span> |
 
 </details>
 
@@ -38,18 +38,22 @@ Save file holding which pieces of each map are still hidden. Server: loaded per 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mappiecestates" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{", bool[]> MapPieceStates { get; set; }"}</code> | One bool array per map, one entry per piece. `true` means the piece is still undiscovered; a new file starts all true. |
+| <Link id="m-mappiecestates" /><code>{"Dictionary<"}<Link to="/mod/game-api/types/alta-world/map">{"Map"}</Link>{", bool[]> MapPieceStates { get; set; }"}</code> | <span className="api-desc">One bool array per map, one entry per piece. `true` means the piece is still undiscovered; a new file starts all true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Returns a copy with the piece states of every map copied over. |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the version, then each map's hash followed by its piece states. |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the version, map count, then each map's hash and piece states. |
+| <Link id="m-clone" /><code>{"override "}<Link to="/mod/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | <span className="api-desc">Returns a copy with the piece states of every map copied over.</span> |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | <span className="api-desc">Reads the version, then each map's hash followed by its piece states.</span> |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | <span className="api-desc">Writes the version, map count, then each map's hash and piece states.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MapSaveFormat`:
 
+<div className="api-used-in">
+
 [`PlayerMapManager.PlayerMapManager`](/mod/game-api/types/alta-world/playermapmanager#m-ctor-3), [`PlayerMapManager.save`](/mod/game-api/types/alta-world/playermapmanager#m-save).
+
+</div>

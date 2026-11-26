@@ -21,12 +21,12 @@ Status `wrong_password`, with the message `Wrong Password`.
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | Always `Wrong Password`. |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `wrong_password`. |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | <span className="api-desc">Always `Wrong Password`.</span> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `wrong_password`.</span> |
 
 </details>

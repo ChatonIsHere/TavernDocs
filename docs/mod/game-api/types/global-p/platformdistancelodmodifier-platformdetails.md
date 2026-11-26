@@ -21,17 +21,21 @@ LOD distances to use on one platform, applied to a `DistanceLODGroup` at bake ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> | Creates a `PlatformDistanceLODModifier.PlatformDetails` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> | <span className="api-desc">Creates a `PlatformDistanceLODModifier.PlatformDetails` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distances" /><code>{"float[] distances"}</code> | Distance for each LOD level, in order. Stored squared on the group when baked. |
-| <Link id="m-platform" /><code><Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> | The platform these distances are for. Defaults to Android. |
+| <Link id="m-distances" /><code>{"float[] distances"}</code> | <span className="api-desc">Distance for each LOD level, in order. Stored squared on the group when baked.</span> |
+| <Link id="m-platform" /><code><Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> | <span className="api-desc">The platform these distances are for. Defaults to Android.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlatformDetails`:
 
+<div className="api-used-in">
+
 [`PlatformDistanceLODModifier.platformDetails`](/mod/game-api/types/global-p/platformdistancelodmodifier#m-platformdetails).
+
+</div>

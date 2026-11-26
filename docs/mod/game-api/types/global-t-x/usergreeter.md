@@ -21,17 +21,17 @@ A `LoggedInTool` that shows a random greeting with the logged-in username on a t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basegreetings" /><code>{"private string[] baseGreetings"}</code> | Greeting formats; `{0}` is replaced with the username. |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | Text renderer the greeting is shown on. |
+| <Link id="m-basegreetings" /><code>{"private string[] baseGreetings"}</code> | <span className="api-desc">Greeting formats; `{0}` is replaced with the username.</span> |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | <span className="api-desc">Text renderer the greeting is shown on.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ A `LoggedInTool` that shows a random greeting with the logged-in username on a t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> | Sets the text to a random greeting filled with the logged-in username. |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | Clears the text. |
+| <Link id="m-loggedin" /><code>{"protected override void LoggedIn()"}</code> | <span className="api-desc">Sets the text to a random greeting filled with the logged-in username.</span> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | <span className="api-desc">Clears the text.</span> |

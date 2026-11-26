@@ -21,4 +21,4 @@ Pooled object that gets one parameter each time it is spawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam param)"}</code> | Called with the spawn parameter when the object is taken from the pool. |
+| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam param)"}</code> | <span className="api-desc">Called with the spawn parameter when the object is taken from the pool.</span> |

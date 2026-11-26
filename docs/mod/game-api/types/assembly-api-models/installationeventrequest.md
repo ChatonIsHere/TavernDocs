@@ -20,14 +20,14 @@ Request body reporting an install or update event to the API, probably from the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InstallationEventRequest()"}</code> | Creates an `InstallationEventRequest` with default values. |
+| <Link id="m-ctor" /><code>{"InstallationEventRequest()"}</code> | <span className="api-desc">Creates an `InstallationEventRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> | Error text if the step failed. |
-| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> | What happened, as a string. Sent as `type`. |
-| <Link id="m-startidentifier" /><code>{"int? StartIdentifier { get; set; }"}</code> | Id of the earlier start event this one belongs to, if any. |
-| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> | Version being updated from. |
-| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> | Version being installed or updated to. |
+| <Link id="m-error" /><code>{"string Error { get; set; }"}</code> | <span className="api-desc">Error text if the step failed.</span> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; set; }"}</code> | <span className="api-desc">What happened, as a string. Sent as `type`.</span> |
+| <Link id="m-startidentifier" /><code>{"int? StartIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the earlier start event this one belongs to, if any.</span> |
+| <Link id="m-versionfrom" /><code>{"string VersionFrom { get; set; }"}</code> | <span className="api-desc">Version being updated from.</span> |
+| <Link id="m-versionto" /><code>{"string VersionTo { get; set; }"}</code> | <span className="api-desc">Version being installed or updated to.</span> |

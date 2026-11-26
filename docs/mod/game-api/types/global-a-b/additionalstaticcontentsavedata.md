@@ -23,10 +23,10 @@ Save data for `AdditionalStaticContent`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AdditionalStaticContentSaveData()"}</code> | Creates an `AdditionalStaticContentSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"AdditionalStaticContentSaveData()"}</code> | <span className="api-desc">Creates an `AdditionalStaticContentSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> | Whether clients should spawn the content. |
+| <Link id="m-needstoinstantiate" /><code>{"bool needsToInstantiate"}</code> | <span className="api-desc">Whether clients should spawn the content.</span> |

@@ -22,26 +22,26 @@ An interactable that forwards its interactions to another interactable, for exam
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteractionForwarder()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InteractionForwarder()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" target"}</code> | The interactable that receives forwarded interactions. |
+| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" target"}</code> | <span className="api-desc">The interactable that receives forwarded interactions.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Adds `target` to `ForwardTo`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Adds `target` to `ForwardTo`.</span> |
 
 </details>

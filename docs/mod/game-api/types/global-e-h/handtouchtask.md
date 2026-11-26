@@ -22,16 +22,16 @@ Game task action that completes when a player touches one of the listed prefabs 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandTouchTask()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HandTouchTask()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targethashes" /><code>{"private List<uint> targetHashes"}</code> | Prefab hashes that count for this task. |
+| <Link id="m-targethashes" /><code>{"private List<uint> targetHashes"}</code> | <span className="api-desc">Prefab hashes that count for this task.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Game task action that completes when a player touches one of the listed prefabs 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.HandTouch`. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.HandTouch`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/handtouchtaskargument">{"HandTouchTaskArgument"}</Link>{" argument)"}</code> | True if the touched prefab hash is in `targetHashes`. |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/handtouchtaskargument">{"HandTouchTaskArgument"}</Link>{" argument)"}</code> | <span className="api-desc">True if the touched prefab hash is in `targetHashes`.</span> |

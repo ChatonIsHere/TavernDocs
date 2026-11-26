@@ -22,4 +22,4 @@ Per-player manager for `ClimbingTowerTeleporterSaveData`. Nothing else in the de
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterPerPlayerSaveable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterPerPlayerSaveable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

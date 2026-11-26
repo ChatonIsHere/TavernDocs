@@ -20,17 +20,21 @@ Alta web API request body for buying a shop item.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> | Creates a `PurchaseItemTokenRequest` with default values. |
+| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> | <span className="api-desc">Creates a `PurchaseItemTokenRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | Id of the item to buy (`item_id`). |
-| <Link id="m-oculuscredentials" /><code><Link to="/mod/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> | Oculus credentials for buying through the Oculus store (`oculus_credentials`). |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the item to buy (`item_id`).</span> |
+| <Link id="m-oculuscredentials" /><code><Link to="/mod/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> | <span className="api-desc">Oculus credentials for buying through the Oculus store (`oculus_credentials`).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PurchaseItemTokenRequest`:
 
+<div className="api-used-in">
+
 [`ShopPurchase.itemTokenRequest`](/mod/game-api/types/assembly-api-client/shoppurchase#m-itemtokenrequest), [`ShopPurchase.purchaseItemTokenRequest`](/mod/game-api/types/assembly-api-client/shoppurchase#m-purchaseitemtokenrequest), [`LowLevelApiClient.PurchaseItem`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-purchaseitem).
+
+</div>

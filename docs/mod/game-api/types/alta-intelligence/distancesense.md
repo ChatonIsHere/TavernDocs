@@ -24,16 +24,16 @@ Sense asset giving the ground distance between the creature and a target. Height
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceSense()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DistanceSense()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-yflexibility" /><code>{"private float yFlexibility"}</code> | Height difference in metres that doesn't count towards the distance. Default 1. |
+| <Link id="m-yflexibility" /><code>{"private float yFlexibility"}</code> | <span className="api-desc">Height difference in metres that doesn't count towards the distance. Default 1.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Sense asset giving the ground distance between the creature and a target. Height
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"override float Get("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | The distance between the two ground positions, ignoring up to `yFlexibility` of height difference. |
-| <Link id="m-getinverselerp" /><code>{"override float GetInverseLerp("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float from, float to)"}</code> | Maps the distance onto 0 to 1 between `from` and `to`, comparing squared distances first to skip the square root at the ends. |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">The distance between the two ground positions, ignoring up to `yFlexibility` of height difference.</span> |
+| <Link id="m-getinverselerp" /><code>{"override float GetInverseLerp("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float from, float to)"}</code> | <span className="api-desc">Maps the distance onto 0 to 1 between `from` and `to`, comparing squared distances first to skip the square root at the ends.</span> |

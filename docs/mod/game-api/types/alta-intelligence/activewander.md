@@ -22,10 +22,10 @@ Navigation action that makes the agent wander, up to `HeuristicMaximum`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveWander()"}</code> | Creates an `ActiveWander` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveWander()"}</code> | <span className="api-desc">Creates an `ActiveWander` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Applies navigation settings and starts a wander. |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Applies navigation settings and starts a wander.</span> |

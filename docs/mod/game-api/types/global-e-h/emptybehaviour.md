@@ -21,10 +21,14 @@ A `MonoBehaviour` with no code. Probably used as a marker or a placeholder compo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmptyBehaviour()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EmptyBehaviour`:
 
+<div className="api-used-in">
+
 [`TextRenderer.AndroidTextRendererQueue.coroutineRunner`](/mod/game-api/types/global-t-x/textrenderer-androidtextrendererqueue#m-coroutinerunner).
+
+</div>

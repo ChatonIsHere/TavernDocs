@@ -21,10 +21,10 @@ Property attribute with a label, probably for an editor drawer that shows an int
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> | Creates an `InversedIntAttribute` from `label`. |
+| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> | <span className="api-desc">Creates an `InversedIntAttribute` from `label`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-label" /><code>{"string Label { get; }"}</code> | Label passed to the attribute. |
+| <Link id="m-label" /><code>{"string Label { get; }"}</code> | <span className="api-desc">Label passed to the attribute.</span> |

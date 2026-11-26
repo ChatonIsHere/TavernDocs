@@ -22,4 +22,4 @@ The `ServerConfigFile` for `mod_repos.json`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TrustedReposConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"TrustedReposConfig(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |

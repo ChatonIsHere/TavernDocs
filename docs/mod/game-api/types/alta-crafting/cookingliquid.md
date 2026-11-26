@@ -22,20 +22,20 @@ The liquid inside a cooking pot: links the pot's liquid container to its heat po
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingLiquid()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CookingLiquid()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-liquidcontainer" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" liquidContainer"}</code> | Backing field for `LiquidContainer`. |
-| <Link id="m-potliquid" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingliquidvisual">{"CookingLiquidVisual"}</Link>{" potLiquid"}</code> | The liquid visual: surface and boiling effect. |
-| <Link id="m-spawnedaudio" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" spawnedAudio"}</code> | Private: the playing boiling sound. |
-| <Link id="m-temperaturertpcvalue" /><code>{"private RTPCValue temperatureRTPCValue"}</code> | Private: Wwise parameter fed the water temperature for the boiling sound. |
-| <Link id="m-waterheatpoint" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" waterHeatPoint"}</code> | Backing field for `HeatPoint`. A `CookingPoint` holding the water temperature. |
+| <Link id="m-liquidcontainer" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" liquidContainer"}</code> | <span className="api-desc">Backing field for `LiquidContainer`.</span> |
+| <Link id="m-potliquid" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingliquidvisual">{"CookingLiquidVisual"}</Link>{" potLiquid"}</code> | <span className="api-desc">The liquid visual: surface and boiling effect.</span> |
+| <Link id="m-spawnedaudio" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" spawnedAudio"}</code> | <span className="api-desc">Private: the playing boiling sound.</span> |
+| <Link id="m-temperaturertpcvalue" /><code>{"private RTPCValue temperatureRTPCValue"}</code> | <span className="api-desc">Private: Wwise parameter fed the water temperature for the boiling sound.</span> |
+| <Link id="m-waterheatpoint" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" waterHeatPoint"}</code> | <span className="api-desc">Backing field for `HeatPoint`. A `CookingPoint` holding the water temperature.</span> |
 
 </details>
 
@@ -43,41 +43,41 @@ The liquid inside a cooking pot: links the pot's liquid container to its heat po
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heatpoint" /><code><Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" "}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" { get; }"}</code> | The heat point that holds the water's temperature. |
-| <Link id="m-isnotempty" /><code>{"bool IsNotEmpty { get; }"}</code> | True when the parent liquid container has any content. |
-| <Link id="m-isrejectingmoreliquid" /><code>{"bool IsRejectingMoreLiquid { get; set; }"}</code> | Set by `CookingPot` to stop more liquid being added, for example while it holds a stew. |
-| <Link id="m-liquidcontainer-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" LiquidContainer { get; }"}</code> | The liquid container found in the parent objects. |
-| <Link id="m-surface" /><code>{"Transform Surface { get; }"}</code> | The transform at the visible liquid surface. Boiling sounds play from here. |
-| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> | The current water temperature from the heat point. |
+| <Link id="m-heatpoint" /><code><Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" "}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" { get; }"}</code> | <span className="api-desc">The heat point that holds the water's temperature.</span> |
+| <Link id="m-isnotempty" /><code>{"bool IsNotEmpty { get; }"}</code> | <span className="api-desc">True when the parent liquid container has any content.</span> |
+| <Link id="m-isrejectingmoreliquid" /><code>{"bool IsRejectingMoreLiquid { get; set; }"}</code> | <span className="api-desc">Set by `CookingPot` to stop more liquid being added, for example while it holds a stew.</span> |
+| <Link id="m-liquidcontainer-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" LiquidContainer { get; }"}</code> | <span className="api-desc">The liquid container found in the parent objects.</span> |
+| <Link id="m-surface" /><code>{"Transform Surface { get; }"}</code> | <span className="api-desc">The transform at the visible liquid surface. Boiling sounds play from here.</span> |
+| <Link id="m-temperature" /><code>{"float Temperature { get; }"}</code> | <span className="api-desc">The current water temperature from the heat point.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-liquidadded" /><code>{"event Action LiquidAdded"}</code> | Server: raised when the content level goes up, after the water's temperature is pulled to ambient. |
-| <Link id="m-liquidemptied" /><code>{"event Action LiquidEmptied"}</code> | Server: raised when liquid is removed and the container is now empty. |
-| <Link id="m-waterremoved" /><code>{"event Action WaterRemoved"}</code> | Server: raised whenever the content level goes down. |
+| <Link id="m-liquidadded" /><code>{"event Action LiquidAdded"}</code> | <span className="api-desc">Server: raised when the content level goes up, after the water's temperature is pulled to ambient.</span> |
+| <Link id="m-liquidemptied" /><code>{"event Action LiquidEmptied"}</code> | <span className="api-desc">Server: raised when liquid is removed and the container is now empty.</span> |
+| <Link id="m-waterremoved" /><code>{"event Action WaterRemoved"}</code> | <span className="api-desc">Server: raised whenever the content level goes down.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convertcontainerliquidtostewliquid" /><code>{"void ConvertContainerLiquidToStewLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> | Replaces the container's content with the given stew liquid. Called by `StewManager` when a stew forms. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks scene destroy so the pooled boiling sound is released. |
+| <Link id="m-convertcontainerliquidtostewliquid" /><code>{"void ConvertContainerLiquidToStewLiquid("}<Link to="/mod/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" stewLiquidContent)"}</code> | <span className="api-desc">Replaces the container's content with the given stew liquid. Called by `StewManager` when a stew forms.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Hooks scene destroy so the pooled boiling sound is released.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-adjustwatertemperature" /><code>{"private void AdjustWaterTemperature()"}</code> | Private: pulls the water heat point fully to ambient temperature when water is added. |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the liquid container in the parents and hooks its level changes and the heat point's changes. |
-| <Link id="m-liquidcontainercontentlevelchanged" /><code>{"private void LiquidContainerContentLevelChanged("}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int oldLevel, int newLevel)"}</code> | Private, server: raises `LiquidAdded`, `WaterRemoved` or `LiquidEmptied` as the level changes. Clients unhook on the first change. |
-| <Link id="m-receivedwater" /><code>{"private void ReceivedWater()"}</code> | Private: resets the water temperature and raises `LiquidAdded`. |
-| <Link id="m-releasepooledaudio" /><code>{"private void ReleasePooledAudio()"}</code> | Private: stops the boiling sound. Called when the entity is destroyed. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Private: sets the starting boil effect and prepares the temperature sound parameter. |
-| <Link id="m-updateliquidsounds" /><code>{"private void UpdateLiquidSounds(float temperature)"}</code> | Private, client: plays or updates the boiling sound once the water is above the minimum stewing temperature. |
-| <Link id="m-updatewaterboilingeffects" /><code>{"private void UpdateWaterBoilingEffects("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Private: updates the boil visuals and sound when the heat point changes. |
+| <Link id="m-adjustwatertemperature" /><code>{"private void AdjustWaterTemperature()"}</code> | <span className="api-desc">Private: pulls the water heat point fully to ambient temperature when water is added.</span> |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Finds the liquid container in the parents and hooks its level changes and the heat point's changes.</span> |
+| <Link id="m-liquidcontainercontentlevelchanged" /><code>{"private void LiquidContainerContentLevelChanged("}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container, int oldLevel, int newLevel)"}</code> | <span className="api-desc">Private, server: raises `LiquidAdded`, `WaterRemoved` or `LiquidEmptied` as the level changes. Clients unhook on the first change.</span> |
+| <Link id="m-receivedwater" /><code>{"private void ReceivedWater()"}</code> | <span className="api-desc">Private: resets the water temperature and raises `LiquidAdded`.</span> |
+| <Link id="m-releasepooledaudio" /><code>{"private void ReleasePooledAudio()"}</code> | <span className="api-desc">Private: stops the boiling sound. Called when the entity is destroyed.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Private: sets the starting boil effect and prepares the temperature sound parameter.</span> |
+| <Link id="m-updateliquidsounds" /><code>{"private void UpdateLiquidSounds(float temperature)"}</code> | <span className="api-desc">Private, client: plays or updates the boiling sound once the water is above the minimum stewing temperature.</span> |
+| <Link id="m-updatewaterboilingeffects" /><code>{"private void UpdateWaterBoilingEffects("}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | <span className="api-desc">Private: updates the boil visuals and sound when the heat point changes.</span> |
 
 </details>
 
@@ -85,4 +85,8 @@ The liquid inside a cooking pot: links the pot's liquid container to its heat po
 
 Members of other types that take, return or hold a `CookingLiquid`:
 
+<div className="api-used-in">
+
 [`CookingPot.cookingLiquid`](/mod/game-api/types/alta-crafting/cookingpot#m-cookingliquid), [`CookingPot.CookingLiquid`](/mod/game-api/types/alta-crafting/cookingpot#m-cookingliquid-2).
+
+</div>

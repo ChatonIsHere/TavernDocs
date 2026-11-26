@@ -21,26 +21,26 @@ Base component that adds a condition to the `ItemLevitator` on the same object: 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-levitator" /><code>{"protected "}<Link to="/mod/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> | The `ItemLevitator` on the same object. |
+| <Link id="m-levitator" /><code>{"protected "}<Link to="/mod/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> | <span className="api-desc">The `ItemLevitator` on the same object.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> | Subclasses return whether the item may hover now. |
+| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> | <span className="api-desc">Subclasses return whether the item may hover now.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the `ItemLevitator` and hooks its `CheckHover` event. |
-| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> | Handler for the levitator's check: clears the valid flag if `IsValid` is false. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Finds the `ItemLevitator` and hooks its `CheckHover` event.</span> |
+| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> | <span className="api-desc">Handler for the levitator's check: clears the valid flag if `IsValid` is false.</span> |
 
 </details>

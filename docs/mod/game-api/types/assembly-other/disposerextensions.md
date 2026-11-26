@@ -21,5 +21,5 @@ Extension methods for adding things to an `IDisposer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addtodisposer" /><code>{"static T AddToDisposer<T>(T disposable, "}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer)"}</code> | Adds the disposable to a disposer and returns the disposable. |
-| <Link id="m-ondisposal" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" OnDisposal("}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer, Action action)"}</code> | Runs an action when the disposer is disposed. Returns the disposer for chaining. |
+| <Link id="m-addtodisposer" /><code>{"static T AddToDisposer<T>(T disposable, "}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer)"}</code> | <span className="api-desc">Adds the disposable to a disposer and returns the disposable.</span> |
+| <Link id="m-ondisposal" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" OnDisposal("}<Link to="/mod/game-api/types/assembly-other/idisposer">{"IDisposer"}</Link>{" disposer, Action action)"}</code> | <span className="api-desc">Runs an action when the disposer is disposed. Returns the disposer for chaining.</span> |

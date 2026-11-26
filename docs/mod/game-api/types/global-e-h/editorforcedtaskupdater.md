@@ -18,12 +18,12 @@ Editor helper meant to keep the editor updating while a task runs. Mostly stubbe
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waitingtask" /><code>{"private static Task waitingTask"}</code> | The task being waited on. |
+| <Link id="m-waitingtask" /><code>{"private static Task waitingTask"}</code> | <span className="api-desc">The task being waited on.</span> |
 
 </details>
 
@@ -31,14 +31,14 @@ Editor helper meant to keep the editor updating while a task runs. Mostly stubbe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forceupdatewhile" /><code>{"static void ForceUpdateWhile(Task task)"}</code> | Stores the task to wait for. |
+| <Link id="m-forceupdatewhile" /><code>{"static void ForceUpdateWhile(Task task)"}</code> | <span className="api-desc">Stores the task to wait for.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forceupdate" /><code>{"private static void ForceUpdate()"}</code> | Calls `StopUpdating` once the waiting task has finished. |
-| <Link id="m-stopupdating" /><code>{"private static void StopUpdating()"}</code> | Empty in this build. |
+| <Link id="m-forceupdate" /><code>{"private static void ForceUpdate()"}</code> | <span className="api-desc">Calls `StopUpdating` once the waiting task has finished.</span> |
+| <Link id="m-stopupdating" /><code>{"private static void StopUpdating()"}</code> | <span className="api-desc">Empty in this build.</span> |
 
 </details>

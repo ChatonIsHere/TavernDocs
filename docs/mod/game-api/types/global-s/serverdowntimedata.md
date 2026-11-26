@@ -20,21 +20,25 @@ A date and time split into fields, probably for a planned server downtime. Not u
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> | Creates a `ServerDowntimeData` with default values. |
+| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> | <span className="api-desc">Creates a `ServerDowntimeData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-day" /><code>{"int day"}</code> | Day of the month. |
-| <Link id="m-hour" /><code>{"int hour"}</code> | Hour. |
-| <Link id="m-minute" /><code>{"int minute"}</code> | Minute. |
-| <Link id="m-month" /><code>{"int month"}</code> | Month. |
-| <Link id="m-second" /><code>{"int second"}</code> | Second. |
-| <Link id="m-year" /><code>{"int year"}</code> | Year. |
+| <Link id="m-day" /><code>{"int day"}</code> | <span className="api-desc">Day of the month.</span> |
+| <Link id="m-hour" /><code>{"int hour"}</code> | <span className="api-desc">Hour.</span> |
+| <Link id="m-minute" /><code>{"int minute"}</code> | <span className="api-desc">Minute.</span> |
+| <Link id="m-month" /><code>{"int month"}</code> | <span className="api-desc">Month.</span> |
+| <Link id="m-second" /><code>{"int second"}</code> | <span className="api-desc">Second.</span> |
+| <Link id="m-year" /><code>{"int year"}</code> | <span className="api-desc">Year.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ServerDowntimeData`:
 
+<div className="api-used-in">
+
 [`TimeManagerSaveDataOld1.downtime`](/mod/game-api/types/global-t-x/timemanagersavedataold1#m-downtime), [`TimeManagerSaveDataOld2.downtime`](/mod/game-api/types/global-t-x/timemanagersavedataold2#m-downtime).
+
+</div>

@@ -22,4 +22,4 @@ Editor menu entry that creates a `ShakeInputStructure` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ShakeInputStructure.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `ShakeInputStructure.Create` with default values.</span> |

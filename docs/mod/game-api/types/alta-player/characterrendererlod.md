@@ -20,18 +20,18 @@ Internal: one renderer in a character's LOD list, with a flag for whether it use
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> | Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`. |
-| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> | Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`. |
+| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> | <span className="api-desc">Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`.</span> |
+| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> | <span className="api-desc">Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isusingshell" /><code>{"private bool isUsingShell"}</code> | Backing field for `IsUsingShell`. |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> | Backing field for `Renderer`. |
+| <Link id="m-isusingshell" /><code>{"private bool isUsingShell"}</code> | <span className="api-desc">Backing field for `IsUsingShell`.</span> |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> | <span className="api-desc">Backing field for `Renderer`.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Internal: one renderer in a character's LOD list, with a flag for whether it use
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isusingshell-2" /><code>{"bool IsUsingShell { get; }"}</code> | Whether this LOD renderer uses the shell. |
-| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> | The renderer for this LOD. |
+| <Link id="m-isusingshell-2" /><code>{"bool IsUsingShell { get; }"}</code> | <span className="api-desc">Whether this LOD renderer uses the shell.</span> |
+| <Link id="m-renderer-2" /><code>{"Renderer Renderer { get; }"}</code> | <span className="api-desc">The renderer for this LOD.</span> |

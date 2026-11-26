@@ -18,14 +18,14 @@ Internal helper that sends a float as its raw 32 bits.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-floatvalue" /><code>{"private static readonly float[] floatValue"}</code> | Static one-float buffer for the byte copy. |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/assembly-other/ufloatbytes">{"UFloatBytes"}</Link>{" instance"}</code> | Unused default instance. |
-| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> | Static one-uint buffer for the byte copy. |
+| <Link id="m-floatvalue" /><code>{"private static readonly float[] floatValue"}</code> | <span className="api-desc">Static one-float buffer for the byte copy.</span> |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/mod/game-api/types/assembly-other/ufloatbytes">{"UFloatBytes"}</Link>{" instance"}</code> | <span className="api-desc">Unused default instance.</span> |
+| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> | <span className="api-desc">Static one-uint buffer for the byte copy.</span> |
 
 </details>
 
@@ -33,4 +33,4 @@ Internal helper that sends a float as its raw 32 bits.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize(ref float value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Copies the float's bytes into a uint and serializes that, then back on read. Uses static buffers, so it is not thread safe. |
+| <Link id="m-serialize" /><code>{"static void Serialize(ref float value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Copies the float's bytes into a uint and serializes that, then back on read. Uses static buffers, so it is not thread safe.</span> |

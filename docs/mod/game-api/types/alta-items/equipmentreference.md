@@ -23,16 +23,16 @@ A component on a body part that holds the armour equipped there. `ArmorManager` 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentReference()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EquipmentReference()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-armor" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> | Backing field for `Equipment`. |
+| <Link id="m-armor" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> | <span className="api-desc">Backing field for `Equipment`.</span> |
 
 </details>
 
@@ -40,16 +40,20 @@ A component on a body part that holds the armour equipped there. `ArmorManager` 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equipment" /><code><Link to="/mod/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> | The `ArmorDefinition` worn on this part, or null. Setting it raises `Changed`. |
+| <Link id="m-equipment" /><code><Link to="/mod/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> | <span className="api-desc">The `ArmorDefinition` worn on this part, or null. Setting it raises `Changed`.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"event "}<Link to="/mod/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> | Raised with the new armour whenever `Equipment` is set. Setting it with no listener throws. |
+| <Link id="m-changed" /><code>{"event "}<Link to="/mod/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> | <span className="api-desc">Raised with the new armour whenever `Equipment` is set. Setting it with no listener throws.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EquipmentReference`:
 
+<div className="api-used-in">
+
 [`ArmorManager<TSlot>.SlotPairing.detectors`](/mod/game-api/types/alta-customization/armormanager-tslot-slotpairing#m-detectors), [`HeatPoint.equipmentSlot`](/mod/game-api/types/alta-stats-effects/heatpoint#m-equipmentslot), [`ImpactDetector.equipmentSlot`](/mod/game-api/types/alta-items/impactdetector#m-equipmentslot).
+
+</div>

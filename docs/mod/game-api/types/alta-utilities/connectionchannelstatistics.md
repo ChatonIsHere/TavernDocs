@@ -21,4 +21,4 @@ Named "Connection Channels" list of `ConnectionChannelStatistic` entries, built 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/mod/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> | Creates a `ConnectionChannelStatistics` from `messageDictionary`. |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/mod/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> | <span className="api-desc">Creates a `ConnectionChannelStatistics` from `messageDictionary`.</span> |

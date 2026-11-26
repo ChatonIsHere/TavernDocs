@@ -21,17 +21,17 @@ A bone and how far it may twist, set in the inspector. `ShoulderTwistControllerH
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> | Creates a `BoneWithTwistLimit` with default values. |
+| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> | <span className="api-desc">Creates a `BoneWithTwistLimit` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bone" /><code>{"private Transform bone"}</code> | Backing field for `Bone`. |
-| <Link id="m-rotationtwist" /><code>{"private float rotationTwist"}</code> | Backing field for `RotationTwist`. |
+| <Link id="m-bone" /><code>{"private Transform bone"}</code> | <span className="api-desc">Backing field for `Bone`.</span> |
+| <Link id="m-rotationtwist" /><code>{"private float rotationTwist"}</code> | <span className="api-desc">Backing field for `RotationTwist`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A bone and how far it may twist, set in the inspector. `ShoulderTwistControllerH
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> | The bone transform. |
-| <Link id="m-rotationtwist-2" /><code>{"float RotationTwist { get; set; }"}</code> | Twist limit in degrees, from 0 to 180. |
+| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> | <span className="api-desc">The bone transform.</span> |
+| <Link id="m-rotationtwist-2" /><code>{"float RotationTwist { get; set; }"}</code> | <span className="api-desc">Twist limit in degrees, from 0 to 180.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoneWithTwistLimit`:
 
+<div className="api-used-in">
+
 [`ShoulderTwistControllerHelper.twistLimit`](/mod/game-api/types/alta-player/shouldertwistcontrollerhelper#m-twistlimit).
+
+</div>

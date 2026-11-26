@@ -22,23 +22,27 @@ Takes a renderer's own material copy (`renderer.material`) and cleans it up when
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> | Creates a `MaterialInstance` from `renderer`. |
+| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> | <span className="api-desc">Creates a `MaterialInstance` from `renderer`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | The renderer's own material copy, made when this object is created. |
-| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> | The renderer the material belongs to. |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | <span className="api-desc">The renderer's own material copy, made when this object is created.</span> |
+| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> | <span className="api-desc">The renderer the material belongs to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Cleans up the material copy. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Cleans up the material copy.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MaterialInstance`:
 
+<div className="api-used-in">
+
 [`MaterialInstanceGroup.GetEnumerator`](/mod/game-api/types/alta-utilities/materialinstancegroup#m-getenumerator), [`MaterialInstanceGroup.instances`](/mod/game-api/types/alta-utilities/materialinstancegroup#m-instances).
+
+</div>

@@ -85,4 +85,8 @@ Error codes the Alta web API returns, covering shop, accounts, bans, groups, ser
 
 Members of other types that take, return or hold a `ErrorCode`:
 
+<div className="api-used-in">
+
 [`ApiError.ApiError`](/mod/game-api/types/assembly-api-models/apierror#m-ctor), [`ApiError.ErrorCode`](/mod/game-api/types/assembly-api-models/apierror#m-errorcode), [`ApiError.Verbose`](/mod/game-api/types/assembly-api-models/apierror#m-verbose), [`ApiErrorException.ApiErrorException`](/mod/game-api/types/assembly-api-models/apierrorexception#m-ctor-2).
+
+</div>

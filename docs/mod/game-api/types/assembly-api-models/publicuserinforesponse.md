@@ -22,11 +22,11 @@ Public user info plus statistics and supporter status.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> | Creates a `PublicUserInfoResponse` with default values. |
+| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> | <span className="api-desc">Creates a `PublicUserInfoResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> | Whether the user is a paying supporter. |
-| <Link id="m-statistics" /><code><Link to="/mod/game-api/types/assembly-api-models/userstatistics">{"UserStatistics"}</Link>{" Statistics { get; set; }"}</code> | The user's play statistics. |
+| <Link id="m-issupporter" /><code>{"bool IsSupporter { get; set; }"}</code> | <span className="api-desc">Whether the user is a paying supporter.</span> |
+| <Link id="m-statistics" /><code><Link to="/mod/game-api/types/assembly-api-models/userstatistics">{"UserStatistics"}</Link>{" Statistics { get; set; }"}</code> | <span className="api-desc">The user's play statistics.</span> |

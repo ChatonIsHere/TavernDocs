@@ -23,12 +23,12 @@ Save data (version 2) for a `PlayerDetect` trigger: its detection radius, or box
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> | Creates a `PlayerDetectSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> | <span className="api-desc">Creates a `PlayerDetectSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> | Size of the detection box, used when `isUsingBoundsSaved` is true. |
-| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> | True if the detector uses a box (`boundsSizeSaved`) instead of a radius. |
-| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> | Detection radius. |
+| <Link id="m-boundssizesaved" /><code>{"Vector3 boundsSizeSaved"}</code> | <span className="api-desc">Size of the detection box, used when `isUsingBoundsSaved` is true.</span> |
+| <Link id="m-isusingboundssaved" /><code>{"bool isUsingBoundsSaved"}</code> | <span className="api-desc">True if the detector uses a box (`boundsSizeSaved`) instead of a radius.</span> |
+| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> | <span className="api-desc">Detection radius.</span> |

@@ -23,10 +23,14 @@ An empty ScriptableObject asset for UI button settings (menu Township/UI/Button 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ButtonSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ButtonSettings`:
 
+<div className="api-used-in">
+
 [`Button.settings`](/mod/game-api/types/alta-menus/button#m-settings), [`Button.Settings`](/mod/game-api/types/alta-menus/button#m-settings-2).
+
+</div>

@@ -20,14 +20,14 @@ Console submodule `select rotate` (alias `r`): rotates the selected entity and f
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exact" /><code>{"private static void Exact(Vector3 rotation)"}</code> | `select rotate exact`: sets the selection's world Euler angles. |
-| <Link id="m-pitch" /><code>{"private static void Pitch(float degrees = 90)"}</code> | `select rotate pitch`: rotates the selection about its local X axis (default 90 degrees). |
-| <Link id="m-roll" /><code>{"private static void Roll(float degrees = 90)"}</code> | `select rotate roll`: rotates the selection about its local Z axis (default 90 degrees). |
-| <Link id="m-yaw" /><code>{"private static void Yaw(float degrees = 90)"}</code> | `select rotate yaw`: rotates the selection about its local Y axis (default 90 degrees). |
+| <Link id="m-exact" /><code>{"private static void Exact(Vector3 rotation)"}</code> | <span className="api-desc">`select rotate exact`: sets the selection's world Euler angles.</span> |
+| <Link id="m-pitch" /><code>{"private static void Pitch(float degrees = 90)"}</code> | <span className="api-desc">`select rotate pitch`: rotates the selection about its local X axis (default 90 degrees).</span> |
+| <Link id="m-roll" /><code>{"private static void Roll(float degrees = 90)"}</code> | <span className="api-desc">`select rotate roll`: rotates the selection about its local Z axis (default 90 degrees).</span> |
+| <Link id="m-yaw" /><code>{"private static void Yaw(float degrees = 90)"}</code> | <span className="api-desc">`select rotate yaw`: rotates the selection about its local Y axis (default 90 degrees).</span> |
 
 </details>

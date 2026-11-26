@@ -20,4 +20,4 @@ Helper for checking JWT tokens on the client.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istokenexpired" /><code>{"static bool IsTokenExpired(string tokenString)"}</code> | Parses a JWT and returns true if its expiry time is already past (UTC). |
+| <Link id="m-istokenexpired" /><code>{"static bool IsTokenExpired(string tokenString)"}</code> | <span className="api-desc">Parses a JWT and returns true if its expiry time is already past (UTC).</span> |

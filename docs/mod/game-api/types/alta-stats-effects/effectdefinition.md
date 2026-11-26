@@ -24,23 +24,27 @@ Base asset for an alchemy or food effect applied to an `EffectHandler`. Stored u
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected EffectDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected EffectDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectglyph" /><code><Link to="/mod/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectGlyph"}</code> | Glyph shown for this effect. |
+| <Link id="m-effectglyph" /><code><Link to="/mod/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" effectGlyph"}</code> | <span className="api-desc">Glyph shown for this effect.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Entry point for applying the effect. The base version just calls `Apply`; subclasses can add checks. |
-| <Link id="m-apply" /><code>{"protected abstract void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect at the given strength. Subclasses implement it. |
+| <Link id="m-checkapply" /><code>{"virtual void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Entry point for applying the effect. The base version just calls `Apply`; subclasses can add checks.</span> |
+| <Link id="m-apply" /><code>{"protected abstract void Apply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Applies the effect at the given strength. Subclasses implement it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EffectDefinition`:
 
+<div className="api-used-in">
+
 [`EffectDefinitionApplication.EffectDefinitionApplication`](/mod/game-api/types/alta-stats-effects/effectdefinitionapplication#m-ctor), [`EffectDefinitionApplication.effectToModify`](/mod/game-api/types/alta-stats-effects/effectdefinitionapplication#m-effecttomodify), [`EffectDefinitionApplication.EffectToModify`](/mod/game-api/types/alta-stats-effects/effectdefinitionapplication#m-effecttomodify-2), [`EffectEventHandler.BeginInvoke`](/mod/game-api/types/alta-stats-effects/effecteventhandler#m-begininvoke), [`EffectEventHandler.Invoke`](/mod/game-api/types/alta-stats-effects/effecteventhandler#m-invoke), [`EffectHandler.EffectOverTime`](/mod/game-api/types/alta-stats-effects/effecthandler#m-effectovertime), [`EffectHandler.unitsToRegen`](/mod/game-api/types/alta-stats-effects/effecthandler#m-unitstoregen), [`EffectHandler.EffectOverTimeData.effectDefinition`](/mod/game-api/types/alta-stats-effects/effecthandler-effectovertimedata#m-effectdefinition), [`EffectHandler.EffectOverTimeData.EffectOverTimeData`](/mod/game-api/types/alta-stats-effects/effecthandler-effectovertimedata#m-ctor), [`EffectHandler.EffectOverTimeData.handleUpdate`](/mod/game-api/types/alta-stats-effects/effecthandler-effectovertimedata#m-handleupdate), [`EffectVolumeTrigger.Effect.effect`](/mod/game-api/types/alta-stats-effects/effectvolumetrigger-effect#m-effect), [`StewRecipe.combinedStrengths`](/mod/game-api/types/alta-crafting/stewrecipe#m-combinedstrengths), [`StewRecipe.effectModifiersMap`](/mod/game-api/types/alta-crafting/stewrecipe#m-effectmodifiersmap), [`StewRecipe.EffectModifiersMap`](/mod/game-api/types/alta-crafting/stewrecipe#m-effectmodifiersmap-2), [`StewRecipe.GetModifiedStrength`](/mod/game-api/types/alta-crafting/stewrecipe#m-getmodifiedstrength), [`StewRecipe.HandleEffectApplication`](/mod/game-api/types/alta-crafting/stewrecipe#m-handleeffectapplication), [`StewRecipe.HandleGarnishModifiers`](/mod/game-api/types/alta-crafting/stewrecipe#m-handlegarnishmodifiers), [`LiquidContainerSaveData.Effect.definition`](/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-effect#m-definition).
+
+</div>

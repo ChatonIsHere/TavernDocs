@@ -22,15 +22,15 @@ Component on a fluid trigger that puts out fires on anything it touches.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireExtinguishingFluid()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FireExtinguishingFluid()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Extinguishes every `Fire` under the touching collider's rigidbody, not instantly. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Extinguishes every `Fire` under the touching collider's rigidbody, not instantly.</span> |
 
 </details>

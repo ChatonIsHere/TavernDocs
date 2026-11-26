@@ -23,16 +23,16 @@ A `FillSet` asset whose spawn modifiers are `PaintModifiers`, used to paint spla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SplatPaintSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SplatPaintSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> | Backing field for `PaintModifiers`. |
+| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> | <span className="api-desc">Backing field for `PaintModifiers`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ A `FillSet` asset whose spawn modifiers are `PaintModifiers`, used to paint spla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-paintmodifiers-2" /><code><Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> | The paint modifiers for this set. |
-| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | Returns `PaintModifiers`. |
+| <Link id="m-paintmodifiers-2" /><code><Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> | <span className="api-desc">The paint modifiers for this set.</span> |
+| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | <span className="api-desc">Returns `PaintModifiers`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SplatPaintSet`:
 
+<div className="api-used-in">
+
 [`SplatPainter.paintSet`](/mod/game-api/types/alta-world-generation/splatpainter#m-paintset).
+
+</div>

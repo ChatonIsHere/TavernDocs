@@ -23,24 +23,24 @@ Saved component that runs a timer for a set duration and fires an event when it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> | Creates a `TimerLogic` with default values. |
+| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> | <span className="api-desc">Creates a `TimerLogic` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeprogress" /><code>{"protected float activeProgress"}</code> | Timer progress from 0 to 1. |
-| <Link id="m-timeralreadyactive" /><code>{"protected bool timerAlreadyActive"}</code> | True while the timer runs. |
-| <Link id="m-timerresetswhenretriggered" /><code>{"protected bool timerResetsWhenRetriggered"}</code> | Whether starting the timer again resets its progress. |
+| <Link id="m-activeprogress" /><code>{"protected float activeProgress"}</code> | <span className="api-desc">Timer progress from 0 to 1.</span> |
+| <Link id="m-timeralreadyactive" /><code>{"protected bool timerAlreadyActive"}</code> | <span className="api-desc">True while the timer runs.</span> |
+| <Link id="m-timerresetswhenretriggered" /><code>{"protected bool timerResetsWhenRetriggered"}</code> | <span className="api-desc">Whether starting the timer again resets its progress.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> | Seconds the timer runs for once started. Saved. |
-| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> | When true, the timer starts as soon as it is loaded from save (in play mode). |
-| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> | Unity event invoked when the timer reaches the end. |
+| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> | <span className="api-desc">Seconds the timer runs for once started. Saved.</span> |
+| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> | <span className="api-desc">When true, the timer starts as soon as it is loaded from save (in play mode).</span> |
+| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> | <span className="api-desc">Unity event invoked when the timer reaches the end.</span> |
 
 </details>
 
@@ -48,11 +48,11 @@ Saved component that runs a timer for a set duration and fires an event when it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-timertoggle" /><code>{"protected event "}<Link to="/mod/game-api/types/global-t-x/timerlogic-timeevent">{"TimerLogic.TimeEvent"}</Link>{" timerToggle"}</code> | Raised with true when the timer starts and false when it ends. |
+| <Link id="m-timertoggle" /><code>{"protected event "}<Link to="/mod/game-api/types/global-t-x/timerlogic-timeevent">{"TimerLogic.TimeEvent"}</Link>{" timerToggle"}</code> | <span className="api-desc">Raised with true when the timer starts and false when it ends.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-starttimer" /><code>{"void StartTimer()"}</code> | Starts the timer. If it is already running, it restarts the progress when `timerResetsWhenRetriggered` is set. |
-| <Link id="m-waitactivetimer" /><code>{"protected IEnumerator WaitActiveTimer() (iterator)"}</code> | The timer coroutine. Raises `timerToggle` at start and end, then fires the timer over event. |
+| <Link id="m-starttimer" /><code>{"void StartTimer()"}</code> | <span className="api-desc">Starts the timer. If it is already running, it restarts the progress when `timerResetsWhenRetriggered` is set.</span> |
+| <Link id="m-waitactivetimer" /><code>{"protected IEnumerator WaitActiveTimer() (iterator)"}</code> | <span className="api-desc">The timer coroutine. Raises `timerToggle` at start and end, then fires the timer over event.</span> |

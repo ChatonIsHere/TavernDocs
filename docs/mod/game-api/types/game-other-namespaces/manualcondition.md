@@ -22,16 +22,16 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ManualCondition()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ManualCondition()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet" /><code>{"private bool isConditionMet"}</code> | The flag itself, saved with the entity. |
+| <Link id="m-isconditionmet" /><code>{"private bool isConditionMet"}</code> | <span className="api-desc">The flag itself, saved with the entity.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | Callback run after the flag is loaded from save data. |
+| <Link id="m-onconditionchanged" /><code>{"Action OnConditionChanged { get; set; }"}</code> | <span className="api-desc">Callback run after the flag is loaded from save data.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isconditionmet-2" /><code>{"bool IsConditionMet()"}</code> | Returns the saved flag. |
+| <Link id="m-isconditionmet-2" /><code>{"bool IsConditionMet()"}</code> | <span className="api-desc">Returns the saved flag.</span> |

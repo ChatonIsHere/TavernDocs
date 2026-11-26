@@ -23,16 +23,20 @@ Base of every global settings asset. The generic `GlobalSettings<T>` gives each 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GlobalSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected GlobalSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeinstance" /><code>{"abstract void InitializeInstance()"}</code> | Makes this asset the type's static `Instance`. Called by `GlobalSettingsInstaller` and `GlobalSettingsInitializer`. |
+| <Link id="m-initializeinstance" /><code>{"abstract void InitializeInstance()"}</code> | <span className="api-desc">Makes this asset the type's static `Instance`. Called by `GlobalSettingsInstaller` and `GlobalSettingsInitializer`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GlobalSettings`:
 
+<div className="api-used-in">
+
 [`GlobalSettingsInstaller.globalSettings`](/mod/game-api/types/assembly-other/globalsettingsinstaller#m-globalsettings), [`GlobalSettingsInitializer.settings`](/mod/game-api/types/assembly-other/globalsettingsinitializer#m-settings).
+
+</div>

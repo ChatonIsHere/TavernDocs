@@ -23,22 +23,22 @@ One cached world-generation step (spawn, spline, forest core or river core) that
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> | Creates an `Instruction` from `type`. |
+| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> | <span className="api-desc">Creates an `Instruction` from `type`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger shared by instructions. |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | <span className="api-desc">NLog logger shared by instructions.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/mod/game-api/types/alta-world/instruction">{"Instruction"}</Link>{">> create"}</code> | Factory per instruction type, used by `Reconstruct` to make an empty instruction before reading it. |
-| <Link id="m-execute" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/mod/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{", object, "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{">> execute"}</code> | Read-and-run function per instruction type, used by the static `Execute`. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type"}</code> | This instruction's type, written as the first 8 bits by `Save`. |
+| <Link id="m-create" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/mod/game-api/types/alta-world/instruction">{"Instruction"}</Link>{">> create"}</code> | <span className="api-desc">Factory per instruction type, used by `Reconstruct` to make an empty instruction before reading it.</span> |
+| <Link id="m-execute" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{", Func<"}<Link to="/mod/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{", object, "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{">> execute"}</code> | <span className="api-desc">Read-and-run function per instruction type, used by the static `Execute`.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type"}</code> | <span className="api-desc">This instruction's type, written as the first 8 bits by `Save`.</span> |
 
 </details>
 
@@ -46,15 +46,19 @@ One cached world-generation step (spawn, spline, forest core or river core) that
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-execute-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute("}<Link to="/mod/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream, object context)"}</code> | Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object. |
-| <Link id="m-execute-3" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> | Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object. |
-| <Link id="m-reconstruct" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" Reconstruct("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads a type id from a stream and builds that instruction from the data that follows. |
-| <Link id="m-save" /><code>{"void Save("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the instruction's type id, then its own data. |
-| <Link id="m-serializeandexecute" /><code><Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" SerializeAndExecute("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, object context)"}</code> | Reads the instruction's fields from a stream and runs it straight away. |
-| <Link id="m-serializeinternal" /><code>{"protected abstract void SerializeInternal("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the instruction's own fields. |
+| <Link id="m-execute-2" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute("}<Link to="/mod/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" stream, object context)"}</code> | <span className="api-desc">Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object.</span> |
+| <Link id="m-execute-3" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> | <span className="api-desc">Runs the instruction. The static overload reads type and data from a stream and runs it without keeping the object.</span> |
+| <Link id="m-reconstruct" /><code>{"static "}<Link to="/mod/game-api/types/alta-world/instruction">{"Instruction"}</Link>{" Reconstruct("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads a type id from a stream and builds that instruction from the data that follows.</span> |
+| <Link id="m-save" /><code>{"void Save("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Writes the instruction's type id, then its own data.</span> |
+| <Link id="m-serializeandexecute" /><code><Link to="/mod/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" SerializeAndExecute("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, object context)"}</code> | <span className="api-desc">Reads the instruction's fields from a stream and runs it straight away.</span> |
+| <Link id="m-serializeinternal" /><code>{"protected abstract void SerializeInternal("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes the instruction's own fields.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Instruction`:
 
+<div className="api-used-in">
+
 [`InstructionSet.Add`](/mod/game-api/types/alta-world/instructionset#m-add), [`InstructionSet.adding`](/mod/game-api/types/alta-world/instructionset#m-adding), [`InstructionSet.GetInstructions`](/mod/game-api/types/alta-world/instructionset#m-getinstructions), [`InstructionSet.instructions`](/mod/game-api/types/alta-world/instructionset#m-instructions).
+
+</div>

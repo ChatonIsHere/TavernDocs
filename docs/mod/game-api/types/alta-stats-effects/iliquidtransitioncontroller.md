@@ -21,4 +21,8 @@ Marker for whatever is driving a liquid transition (pouring or gradual drinking)
 
 Members of other types that take, return or hold a `ILiquidTransitionController`:
 
+<div className="api-used-in">
+
 [`LiquidTransition.currentController`](/mod/game-api/types/alta-stats-effects/liquidtransition#m-currentcontroller), [`LiquidTransition.ProgressTransition`](/mod/game-api/types/alta-stats-effects/liquidtransition#m-progresstransition), [`LiquidTransition.ResetAndRemoveReceivingContainer`](/mod/game-api/types/alta-stats-effects/liquidtransition#m-resetandremovereceivingcontainer), [`LiquidTransition.SetTarget`](/mod/game-api/types/alta-stats-effects/liquidtransition#m-settarget).
+
+</div>

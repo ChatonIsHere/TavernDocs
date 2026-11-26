@@ -28,4 +28,8 @@ Whether a platform's authentication can hand out access tokens: not at all, sing
 
 Members of other types that take, return or hold a `AccessTokenMode`:
 
+<div className="api-used-in">
+
 [`AuthenticationFeatures.AccessTokenMode`](/mod/game-api/types/assembly-other/authenticationfeatures#m-accesstokenmode), [`IAuthenticationFeatures.AccessTokenMode`](/mod/game-api/types/assembly-other/iauthenticationfeatures#m-accesstokenmode).
+
+</div>

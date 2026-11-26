@@ -21,12 +21,12 @@ Base class for items in a `GenericPriorityQueue`, with any comparable priority t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenericPriorityQueueNode()"}</code> | Creates a `GenericPriorityQueueNode` with default values. |
+| <Link id="m-ctor" /><code>{"GenericPriorityQueueNode()"}</code> | <span className="api-desc">Creates a `GenericPriorityQueueNode` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> | Order in which the node was queued, used to break ties so equal priorities come out first in, first out. |
-| <Link id="m-priority" /><code>{"TPriority Priority { get; protected internal set; }"}</code> | The priority the node was queued with. |
-| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | The node's slot in the queue's heap array. |
+| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> | <span className="api-desc">Order in which the node was queued, used to break ties so equal priorities come out first in, first out.</span> |
+| <Link id="m-priority" /><code>{"TPriority Priority { get; protected internal set; }"}</code> | <span className="api-desc">The priority the node was queued with.</span> |
+| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | <span className="api-desc">The node's slot in the queue's heap array.</span> |

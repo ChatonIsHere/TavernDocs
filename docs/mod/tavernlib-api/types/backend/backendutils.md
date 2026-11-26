@@ -21,12 +21,12 @@ Small helpers shared by TavernLib's backend: the listing URL, SHA-256 hashing an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serveruri" /><code>{"static string ServerUri { get; }"}</code> | `/servers`, the listing API's path for posting and removing a server. |
-| <Link id="m-tavernapi" /><code>{"static string TavernApi { get; }"}</code> | The Community Servers listing's base URL: `/listing_api`'s value, or `http://themoddingtavern.com:1763`. |
+| <Link id="m-serveruri" /><code>{"static string ServerUri { get; }"}</code> | <span className="api-desc">`/servers`, the listing API's path for posting and removing a server.</span> |
+| <Link id="m-tavernapi" /><code>{"static string TavernApi { get; }"}</code> | <span className="api-desc">The Community Servers listing's base URL: `/listing_api`'s value, or `http://themoddingtavern.com:1763`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashdigest" /><code>{"static string HashDigest(string input)"}</code> | The SHA-256 hash of a string's UTF-8 bytes, as lower-case hex. |
-| <Link id="m-tokenurlsafe" /><code>{"static string TokenUrlSafe(int nbytes = 32)"}</code> | A random token from a cryptographic generator, as base64url with no padding. 32 bytes by default. |
+| <Link id="m-hashdigest" /><code>{"static string HashDigest(string input)"}</code> | <span className="api-desc">The SHA-256 hash of a string's UTF-8 bytes, as lower-case hex.</span> |
+| <Link id="m-tokenurlsafe" /><code>{"static string TokenUrlSafe(int nbytes = 32)"}</code> | <span className="api-desc">A random token from a cryptographic generator, as base64url with no padding. 32 bytes by default.</span> |

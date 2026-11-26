@@ -21,10 +21,14 @@ Inspector event that passes an `ImpactHitWithTool`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactHitEvent()"}</code> | Creates an `ImpactHitEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ImpactHitEvent()"}</code> | <span className="api-desc">Creates an `ImpactHitEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactHitEvent`:
 
+<div className="api-used-in">
+
 [`TriggerImpactDetector.onHit`](/mod/game-api/types/alta-items/triggerimpactdetector#m-onhit), [`TriggerImpactDetector.OnHit`](/mod/game-api/types/alta-items/triggerimpactdetector#m-onhit-2).
+
+</div>

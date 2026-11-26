@@ -21,17 +21,21 @@ A row in the cave teleporter list command: one available cave layer's teleporter
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/mod/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> | Creates a `ProgressCommandModule.CaveTeleporterDetails` from `proxy`. |
+| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/mod/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> | <span className="api-desc">Creates a `ProgressCommandModule.CaveTeleporterDetails` from `proxy`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fuel" /><code>{"int Fuel { get; }"}</code> | The teleporter's current fuel. |
-| <Link id="m-level" /><code>{"int Level { get; }"}</code> | The cave layer the teleporter goes to. |
+| <Link id="m-fuel" /><code>{"int Fuel { get; }"}</code> | <span className="api-desc">The teleporter's current fuel.</span> |
+| <Link id="m-level" /><code>{"int Level { get; }"}</code> | <span className="api-desc">The cave layer the teleporter goes to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CaveTeleporterDetails`:
 
+<div className="api-used-in">
+
 [`ProgressCommandModule.ListCaveTeleporter`](/mod/game-api/types/alta-console/progresscommandmodule#m-listcaveteleporter).
+
+</div>

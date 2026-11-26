@@ -22,4 +22,4 @@ A component that can tell its population sample an entity should no longer count
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-removefrompopulation" /><code>{"event "}<Link to="/mod/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" RemoveFromPopulation"}</code> | Raised with the entity that should leave its population. `PopulationSample` counts it as lost. |
+| <Link id="m-removefrompopulation" /><code>{"event "}<Link to="/mod/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" RemoveFromPopulation"}</code> | <span className="api-desc">Raised with the entity that should leave its population. `PopulationSample` counts it as lost.</span> |

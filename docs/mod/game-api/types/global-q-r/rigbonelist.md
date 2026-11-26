@@ -22,16 +22,16 @@ Asset holding a list of rig bones (`BoneIdentifier`s), made from the Township/An
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RigBoneList()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RigBoneList()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bones" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> bones"}</code> | Backing field for `Bones`. |
+| <Link id="m-bones" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> bones"}</code> | <span className="api-desc">Backing field for `Bones`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Asset holding a list of rig bones (`BoneIdentifier`s), made from the Township/An
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bones-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> Bones { get; }"}</code> | The bones in this list. |
+| <Link id="m-bones-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"> Bones { get; }"}</code> | <span className="api-desc">The bones in this list.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RigBoneList`:
 
+<div className="api-used-in">
+
 [`RigMap.requiredList`](/mod/game-api/types/global-q-r/rigmap#m-requiredlist).
+
+</div>

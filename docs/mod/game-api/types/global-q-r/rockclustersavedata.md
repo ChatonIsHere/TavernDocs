@@ -23,10 +23,10 @@ Save data (version 1) for a `RockCluster`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> | Creates a `RockClusterSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> | <span className="api-desc">Creates a `RockClusterSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> | The cluster's `BoulderDefinition`. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The cluster's `BoulderDefinition`.</span> |

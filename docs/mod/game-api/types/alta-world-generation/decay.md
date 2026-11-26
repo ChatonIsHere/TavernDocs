@@ -21,19 +21,19 @@ PAGaC generation step that turns cells to air using 3D simplex noise, with more 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Decay()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Decay()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decaylimit" /><code>{"private float decayLimit"}</code> | Threshold above which a cell is removed. |
-| <Link id="m-extradecaywithheight" /><code>{"private float extraDecayWithHeight"}</code> | Added to the noise per cell of height. |
-| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> | Scales the noise value. |
-| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> | Scales cell coordinates before sampling noise. |
+| <Link id="m-decaylimit" /><code>{"private float decayLimit"}</code> | <span className="api-desc">Threshold above which a cell is removed.</span> |
+| <Link id="m-extradecaywithheight" /><code>{"private float extraDecayWithHeight"}</code> | <span className="api-desc">Added to the noise per cell of height.</span> |
+| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> | <span className="api-desc">Scales the noise value.</span> |
+| <Link id="m-noisescale" /><code>{"private float noiseScale"}</code> | <span className="api-desc">Scales cell coordinates before sampling noise.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ PAGaC generation step that turns cells to air using 3D simplex noise, with more 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | Sets every cell whose scaled noise plus height bonus is over `decayLimit` to the air tag, with a fresh random noise seed. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | <span className="api-desc">Sets every cell whose scaled noise plus height bonus is over `decayLimit` to the air tag, with a fresh random noise seed.</span> |

@@ -22,17 +22,17 @@ Base for forest spawn modifiers that scale a spawn point's weight by a curve of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected DistanceFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected DistanceFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distancemultiplier" /><code>{"private AnimationCurve distanceMultiplier"}</code> | Curve from distance to weight multiplier; eases from 1 at 0 to 0 at 1 by default. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; unused here. |
+| <Link id="m-distancemultiplier" /><code>{"private AnimationCurve distanceMultiplier"}</code> | <span className="api-desc">Curve from distance to weight multiplier; eases from 1 at 0 to 0 at 1 by default.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger; unused here.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Base for forest spawn modifiers that scale a spawn point's weight by a curve of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Multiplies the point's weight by `distanceMultiplier` at the distance. |
-| <Link id="m-evaluatedistance" /><code>{"protected abstract float EvaluateDistance("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Returns the distance to feed into the curve. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Multiplies the point's weight by `distanceMultiplier` at the distance.</span> |
+| <Link id="m-evaluatedistance" /><code>{"protected abstract float EvaluateDistance("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Returns the distance to feed into the curve.</span> |

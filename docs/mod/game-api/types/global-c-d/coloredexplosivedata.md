@@ -23,10 +23,10 @@ Save data for a `ColoredExplosive`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColoredExplosiveData()"}</code> | Creates a `ColoredExplosiveData` with default values. |
+| <Link id="m-ctor" /><code>{"ColoredExplosiveData()"}</code> | <span className="api-desc">Creates a `ColoredExplosiveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colorindex" /><code>{"int colorIndex"}</code> | Saved index into the explosive's colour list. |
+| <Link id="m-colorindex" /><code>{"int colorIndex"}</code> | <span className="api-desc">Saved index into the explosive's colour list.</span> |

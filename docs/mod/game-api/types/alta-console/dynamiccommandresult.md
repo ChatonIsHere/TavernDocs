@@ -22,5 +22,5 @@ A `CommandResult<object>` for commands whose return type isn't known ahead of ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DynamicCommandResult("}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `DynamicCommandResult` from `resultString` and `command`. |
-| <Link id="m-ctor-2" /><code>{"DynamicCommandResult(string resultString, "}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `DynamicCommandResult` from `resultString` and `command`. |
+| <Link id="m-ctor" /><code>{"DynamicCommandResult("}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | <span className="api-desc">Creates a `DynamicCommandResult` from `resultString` and `command`.</span> |
+| <Link id="m-ctor-2" /><code>{"DynamicCommandResult(string resultString, "}<Link to="/mod/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | <span className="api-desc">Creates a `DynamicCommandResult` from `resultString` and `command`.</span> |

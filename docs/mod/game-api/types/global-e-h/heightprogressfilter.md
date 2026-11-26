@@ -23,22 +23,22 @@ Spawn modifier for forest generation that weights a point by its height relative
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HeightProgressFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"HeightProgressFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islinearweighting" /><code>{"private bool isLinearWeighting"}</code> | Whether to apply the linear height curve. |
-| <Link id="m-isnormalizedweighting" /><code>{"private bool isNormalizedWeighting"}</code> | Whether to apply the curve over the space's 0 to 1 height range. |
-| <Link id="m-linearmaxheight" /><code>{"private float linearMaxHeight"}</code> | Top of the linear range, relative to the reference height. |
-| <Link id="m-linearminheight" /><code>{"private float linearMinHeight"}</code> | Bottom of the linear range, relative to the reference height. |
-| <Link id="m-linearmode" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/heightprogressfilter-linearmode">{"HeightProgressFilter.LinearMode"}</Link>{" linearMode"}</code> | Reference height for the linear curve: lowest, highest or middle node. |
-| <Link id="m-linearweight" /><code>{"private AnimationCurve linearWeight"}</code> | Weight curve over the linear range. |
-| <Link id="m-normalizedweight" /><code>{"private AnimationCurve normalizedWeight"}</code> | Weight curve over the space's normalized height. |
+| <Link id="m-islinearweighting" /><code>{"private bool isLinearWeighting"}</code> | <span className="api-desc">Whether to apply the linear height curve.</span> |
+| <Link id="m-isnormalizedweighting" /><code>{"private bool isNormalizedWeighting"}</code> | <span className="api-desc">Whether to apply the curve over the space's 0 to 1 height range.</span> |
+| <Link id="m-linearmaxheight" /><code>{"private float linearMaxHeight"}</code> | <span className="api-desc">Top of the linear range, relative to the reference height.</span> |
+| <Link id="m-linearminheight" /><code>{"private float linearMinHeight"}</code> | <span className="api-desc">Bottom of the linear range, relative to the reference height.</span> |
+| <Link id="m-linearmode" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/heightprogressfilter-linearmode">{"HeightProgressFilter.LinearMode"}</Link>{" linearMode"}</code> | <span className="api-desc">Reference height for the linear curve: lowest, highest or middle node.</span> |
+| <Link id="m-linearweight" /><code>{"private AnimationCurve linearWeight"}</code> | <span className="api-desc">Weight curve over the linear range.</span> |
+| <Link id="m-normalizedweight" /><code>{"private AnimationCurve normalizedWeight"}</code> | <span className="api-desc">Weight curve over the space's normalized height.</span> |
 
 </details>
 
@@ -46,4 +46,4 @@ Spawn modifier for forest generation that weights a point by its height relative
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> | Sets weight to 0 outside any space, else applies the normalized and/or linear height curves. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Sets weight to 0 outside any space, else applies the normalized and/or linear height curves.</span> |

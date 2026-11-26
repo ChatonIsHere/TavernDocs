@@ -24,16 +24,16 @@ Save data for a `LiquidContainer` (save version 1): its fill level, whether it c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidContainerSaveData()"}</code> | Creates a `LiquidContainerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LiquidContainerSaveData()"}</code> | <span className="api-desc">Creates a `LiquidContainerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canaddto" /><code>{"bool canAddTo"}</code> | Whether liquid can be poured into the container. |
-| <Link id="m-canremovefrom" /><code>{"bool canRemoveFrom"}</code> | Whether liquid can be poured out of the container. |
-| <Link id="m-contentlevel" /><code>{"int contentLevel"}</code> | How full the container is, as an integer level. |
-| <Link id="m-customdata" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" customData"}</code> | The colour, effects, visuals and chunks of a custom liquid. Used when `isCustom` is true. |
-| <Link id="m-hascontent" /><code>{"bool hasContent"}</code> | Whether the container holds any liquid. |
-| <Link id="m-iscustom" /><code>{"bool isCustom"}</code> | True when the content is a custom mix (stored in `customData`) rather than a `preset`. |
-| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" preset"}</code> | The liquid definition of the content when it is not custom. |
+| <Link id="m-canaddto" /><code>{"bool canAddTo"}</code> | <span className="api-desc">Whether liquid can be poured into the container.</span> |
+| <Link id="m-canremovefrom" /><code>{"bool canRemoveFrom"}</code> | <span className="api-desc">Whether liquid can be poured out of the container.</span> |
+| <Link id="m-contentlevel" /><code>{"int contentLevel"}</code> | <span className="api-desc">How full the container is, as an integer level.</span> |
+| <Link id="m-customdata" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata">{"LiquidContainerSaveData.CustomData"}</Link>{" customData"}</code> | <span className="api-desc">The colour, effects, visuals and chunks of a custom liquid. Used when `isCustom` is true.</span> |
+| <Link id="m-hascontent" /><code>{"bool hasContent"}</code> | <span className="api-desc">Whether the container holds any liquid.</span> |
+| <Link id="m-iscustom" /><code>{"bool isCustom"}</code> | <span className="api-desc">True when the content is a custom mix (stored in `customData`) rather than a `preset`.</span> |
+| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" preset"}</code> | <span className="api-desc">The liquid definition of the content when it is not custom.</span> |

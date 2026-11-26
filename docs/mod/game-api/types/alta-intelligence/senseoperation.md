@@ -21,20 +21,20 @@ Prefab scoring component that adds a sense rule: a sense asset read on the targe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SenseOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SenseOperation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-from" /><code>{"private float from"}</code> | Sense value that maps to 0. |
-| <Link id="m-istarget" /><code>{"private bool isTarget"}</code> | Read the sense on the target (true) or on the creature itself. |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
-| <Link id="m-sense" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense"}</code> | The sense asset read. |
-| <Link id="m-to" /><code>{"private float to"}</code> | Sense value that maps to 1 (default 1). |
+| <Link id="m-from" /><code>{"private float from"}</code> | <span className="api-desc">Sense value that maps to 0.</span> |
+| <Link id="m-istarget" /><code>{"private bool isTarget"}</code> | <span className="api-desc">Read the sense on the target (true) or on the creature itself.</span> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Weight of the rule. Only matters for preferred rules.</span> |
+| <Link id="m-sense" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense"}</code> | <span className="api-desc">The sense asset read.</span> |
+| <Link id="m-to" /><code>{"private float to"}</code> | <span className="api-desc">Sense value that maps to 1 (default 1).</span> |
 
 </details>
 
@@ -42,6 +42,6 @@ Prefab scoring component that adds a sense rule: a sense asset read on the targe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes the sense rule with these settings, weighted by `multiplier`. |
-| <Link id="m-migrate" /><code>{"static void Migrate(Component old, "}<Link to="/mod/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to, bool isTarget, float multiplier)"}</code> | Editor: adds or reuses a `SenseOperation` on the old component's GameObject and copies the settings over. |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Danger 0 -> 1 (x1)`. |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Makes the sense rule with these settings, weighted by `multiplier`.</span> |
+| <Link id="m-migrate" /><code>{"static void Migrate(Component old, "}<Link to="/mod/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to, bool isTarget, float multiplier)"}</code> | <span className="api-desc">Editor: adds or reuses a `SenseOperation` on the old component's GameObject and copies the settings over.</span> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | <span className="api-desc">Builds the GameObject name, like `Danger 0 -> 1 (x1)`.</span> |

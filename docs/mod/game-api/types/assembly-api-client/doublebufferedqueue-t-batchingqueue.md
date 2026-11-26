@@ -28,4 +28,8 @@ Which of the two queues in a `DoubleBufferedQueue<T>` is active: `Primary` or `S
 
 Members of other types that take, return or hold a `BatchingQueue`:
 
+<div className="api-used-in">
+
 [`DoubleBufferedQueue<T>.activeQueue`](/mod/game-api/types/assembly-api-client/doublebufferedqueue-t#m-activequeue).
+
+</div>

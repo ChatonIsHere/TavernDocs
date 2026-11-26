@@ -28,4 +28,8 @@ Who owns a `ButtonCounter`'s value: the server, or the single active player's cl
 
 Members of other types that take, return or hold a `CounterMode`:
 
+<div className="api-used-in">
+
 [`ButtonCounter.mode`](/mod/game-api/types/global-a-b/buttoncounter#m-mode), [`ButtonCounter.Mode`](/mod/game-api/types/global-a-b/buttoncounter#m-mode-2).
+
+</div>

@@ -21,19 +21,23 @@ A ground contact point found while working out how a fallen agent should turn up
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> | Creates an `AgentRollUpInPlace.Point` from `point` and `normal`. |
-| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> | Creates an `AgentRollUpInPlace.Point` from `point` and `normal`. |
+| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> | <span className="api-desc">Creates an `AgentRollUpInPlace.Point` from `point` and `normal`.</span> |
+| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> | <span className="api-desc">Creates an `AgentRollUpInPlace.Point` from `point` and `normal`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasnormal" /><code>{"bool hasNormal"}</code> | True when `normal` holds a real surface normal from a raycast. |
-| <Link id="m-normal" /><code>{"Vector3 normal"}</code> | Surface normal at the point, if known. |
-| <Link id="m-point" /><code>{"Vector3 point"}</code> | The contact position. |
+| <Link id="m-hasnormal" /><code>{"bool hasNormal"}</code> | <span className="api-desc">True when `normal` holds a real surface normal from a raycast.</span> |
+| <Link id="m-normal" /><code>{"Vector3 normal"}</code> | <span className="api-desc">Surface normal at the point, if known.</span> |
+| <Link id="m-point" /><code>{"Vector3 point"}</code> | <span className="api-desc">The contact position.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Point`:
 
+<div className="api-used-in">
+
 [`AgentRollUpInPlace.GetClosestPoint`](/mod/game-api/types/alta-intelligence/agentrollupinplace#m-getclosestpoint).
+
+</div>

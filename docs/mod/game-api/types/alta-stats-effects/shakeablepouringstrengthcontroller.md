@@ -21,17 +21,17 @@ Pouring strength controller where shaking the container adds to the pour from ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShakeablePouringStrengthController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ShakeablePouringStrengthController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxpouringfromshaking" /><code>{"private float maxPouringFromShaking"}</code> | Most pouring strength shaking can add. |
-| <Link id="m-shakedetector" /><code>{"private "}<Link to="/mod/game-api/types/global-s/shakedetector">{"ShakeDetector"}</Link>{" shakeDetector"}</code> | Detects how hard the container is shaken. |
+| <Link id="m-maxpouringfromshaking" /><code>{"private float maxPouringFromShaking"}</code> | <span className="api-desc">Most pouring strength shaking can add.</span> |
+| <Link id="m-shakedetector" /><code>{"private "}<Link to="/mod/game-api/types/global-s/shakedetector">{"ShakeDetector"}</Link>{" shakeDetector"}</code> | <span className="api-desc">Detects how hard the container is shaken.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Pouring strength controller where shaking the container adds to the pour from ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> | Tipping value plus the shake strength squared (capped by `maxPouringFromShaking`), times the multipliers. |
+| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> | <span className="api-desc">Tipping value plus the shake strength squared (capped by `maxPouringFromShaking`), times the multipliers.</span> |

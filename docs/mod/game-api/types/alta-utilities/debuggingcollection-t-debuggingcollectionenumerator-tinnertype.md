@@ -22,17 +22,17 @@ Enumerator for `DebuggingCollection` that tracks whether enumeration is under wa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> | Creates a `DebuggingCollection` from `enumerator` and `enumerationFinishedCallback`. |
+| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> | <span className="api-desc">Creates a `DebuggingCollection` from `enumerator` and `enumerationFinishedCallback`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enumerationfinishedcallback" /><code>{"private Action enumerationFinishedCallback"}</code> | Called when enumeration ends. The collection uses it to forget this enumerator. |
-| <Link id="m-internalenumerator" /><code>{"private IEnumerator<TInnerType> internalEnumerator"}</code> | The wrapped collection's enumerator. |
+| <Link id="m-enumerationfinishedcallback" /><code>{"private Action enumerationFinishedCallback"}</code> | <span className="api-desc">Called when enumeration ends. The collection uses it to forget this enumerator.</span> |
+| <Link id="m-internalenumerator" /><code>{"private IEnumerator<TInnerType> internalEnumerator"}</code> | <span className="api-desc">The wrapped collection's enumerator.</span> |
 
 </details>
 
@@ -40,15 +40,15 @@ Enumerator for `DebuggingCollection` that tracks whether enumeration is under wa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code>{"TInnerType Current { get; }"}</code> | The current item of the wrapped enumerator. |
-| <Link id="m-isenumerating" /><code>{"bool IsEnumerating { get; private set; }"}</code> | True until `MoveNext` returns false. |
+| <Link id="m-current" /><code>{"TInnerType Current { get; }"}</code> | <span className="api-desc">The current item of the wrapped enumerator.</span> |
+| <Link id="m-isenumerating" /><code>{"bool IsEnumerating { get; private set; }"}</code> | <span className="api-desc">True until `MoveNext` returns false.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | Non-generic `Current`. |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | <span className="api-desc">Non-generic `Current`.</span> |
 
 </details>
 
@@ -56,12 +56,16 @@ Enumerator for `DebuggingCollection` that tracks whether enumeration is under wa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes the wrapped enumerator. |
-| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> | Advances the wrapped enumerator and calls the finished callback at the end. |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> | Resets the wrapped enumerator. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Disposes the wrapped enumerator.</span> |
+| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> | <span className="api-desc">Advances the wrapped enumerator and calls the finished callback at the end.</span> |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | <span className="api-desc">Resets the wrapped enumerator.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DebuggingCollectionEnumerator&lt;TInnerType>`:
 
+<div className="api-used-in">
+
 [`DebuggingCollection<T>.enumerator`](/mod/game-api/types/alta-utilities/debuggingcollection-t#m-enumerator).
+
+</div>

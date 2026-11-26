@@ -21,4 +21,4 @@ Empty MonoBehaviour with no code. Probably a leftover marker on shrine prefabs.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkillShrineRotator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SkillShrineRotator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

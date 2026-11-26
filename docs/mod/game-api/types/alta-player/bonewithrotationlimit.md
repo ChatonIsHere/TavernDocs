@@ -21,16 +21,16 @@ A spine bone with a swing limit as well as the twist limit from `BoneWithTwistLi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneWithRotationLimit()"}</code> | Creates a `BoneWithRotationLimit` with default values. |
+| <Link id="m-ctor" /><code>{"BoneWithRotationLimit()"}</code> | <span className="api-desc">Creates a `BoneWithRotationLimit` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationangle" /><code>{"private float rotationAngle"}</code> | Backing field for `RotationAngle`. |
+| <Link id="m-rotationangle" /><code>{"private float rotationAngle"}</code> | <span className="api-desc">Backing field for `RotationAngle`.</span> |
 
 </details>
 
@@ -38,10 +38,14 @@ A spine bone with a swing limit as well as the twist limit from `BoneWithTwistLi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationangle-2" /><code>{"float RotationAngle { get; set; }"}</code> | Swing limit in degrees (0 to 180), copied to the bone's `RotationLimitAngle.limit` when the spine IK is set up. |
+| <Link id="m-rotationangle-2" /><code>{"float RotationAngle { get; set; }"}</code> | <span className="api-desc">Swing limit in degrees (0 to 180), copied to the bone's `RotationLimitAngle.limit` when the spine IK is set up.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoneWithRotationLimit`:
 
+<div className="api-used-in">
+
 [`NeckIKControllerHelper.neckBones`](/mod/game-api/types/alta-player/neckikcontrollerhelper#m-neckbones), [`SpineIKHelper.spineBones`](/mod/game-api/types/alta-player/spineikhelper#m-spinebones).
+
+</div>

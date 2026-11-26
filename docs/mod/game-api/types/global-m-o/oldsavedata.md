@@ -22,16 +22,16 @@ Base for retired save data formats. Its `Apply` refuses to load them.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected OldSaveData()"}</code> | Creates an `OldSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"protected OldSaveData()"}</code> | <span className="api-desc">Creates an `OldSaveData` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger used when something tries to apply old save data directly. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger used when something tries to apply old save data directly.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Base for retired save data formats. Its `Apply` refuses to load them.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override bool Apply(object component, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | Logs an error that old save data was used and returns false, so nothing is applied. |
+| <Link id="m-apply" /><code>{"override bool Apply(object component, "}<Link to="/mod/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" childSerializer)"}</code> | <span className="api-desc">Logs an error that old save data was used and returns false, so nothing is applied.</span> |

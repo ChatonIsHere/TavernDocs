@@ -21,20 +21,20 @@ Base for a paged list from the API, such as group members, bans, invites and joi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PaginatedList("}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `PaginatedList` from `page` and `api`. |
+| <Link id="m-ctor" /><code>{"protected PaginatedList("}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `PaginatedList` from `page` and `api`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-api" /><code>{"protected "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | The low-level client subclasses send their own requests through. |
+| <Link id="m-api" /><code>{"protected "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | <span className="api-desc">The low-level client subclasses send their own requests through.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-page" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page"}</code> | The paged result being read. |
+| <Link id="m-page" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<T> page"}</code> | <span className="api-desc">The paged result being read.</span> |
 
 </details>
 
@@ -42,5 +42,5 @@ Base for a paged list from the API, such as group members, bans, invites and joi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getall" /><code>{"Task<IEnumerable<T>> GetAll()"}</code> | Fetches every remaining page and returns all items. |
-| <Link id="m-getnext" /><code>{"Task<IEnumerable<T>> GetNext()"}</code> | Fetches the next page. |
+| <Link id="m-getall" /><code>{"Task<IEnumerable<T>> GetAll()"}</code> | <span className="api-desc">Fetches every remaining page and returns all items.</span> |
+| <Link id="m-getnext" /><code>{"Task<IEnumerable<T>> GetNext()"}</code> | <span className="api-desc">Fetches the next page.</span> |

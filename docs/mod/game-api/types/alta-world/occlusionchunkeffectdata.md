@@ -22,16 +22,16 @@ Chunk effect asset that sets how occlusion culling works while the local player 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OcclusionChunkEffectData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"OcclusionChunkEffectData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mode" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/occlusionmode">{"OcclusionMode"}</Link>{" mode"}</code> | The occlusion mode for the chunk. |
+| <Link id="m-mode" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/occlusionmode">{"OcclusionMode"}</Link>{" mode"}</code> | <span className="api-desc">The occlusion mode for the chunk.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ Chunk effect asset that sets how occlusion culling works while the local player 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | When the chunk contains the player, switches portal culling on or off by mode. `None` also turns off the player camera's occlusion culling. |
+| <Link id="m-apply" /><code>{"override void Apply(bool isContained)"}</code> | <span className="api-desc">When the chunk contains the player, switches portal culling on or off by mode. `None` also turns off the player camera's occlusion culling.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableforplayer" /><code>{"private void DisableForPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Turns off occlusion culling on the player's camera once the local player appears. |
+| <Link id="m-disableforplayer" /><code>{"private void DisableForPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Turns off occlusion culling on the player's camera once the local player appears.</span> |
 
 </details>

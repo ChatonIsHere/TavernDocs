@@ -22,16 +22,16 @@ Server: running action for a creature recovering after being knocked about. Wait
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveRegainControl()"}</code> | Creates an `ActiveRegainControl` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveRegainControl()"}</code> | <span className="api-desc">Creates an `ActiveRegainControl` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minimumvelocitysquared" /><code>{"private float minimumVelocitySquared"}</code> | Squared `MinimumVelocity` from the settings. |
+| <Link id="m-minimumvelocitysquared" /><code>{"private float minimumVelocitySquared"}</code> | <span className="api-desc">Squared `MinimumVelocity` from the settings.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Server: running action for a creature recovering after being knocked about. Wait
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Finishes once the rigidbody is slower than the minimum velocity. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Sets an optional max duration and the walker's power gain per second. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Finishes once the rigidbody is slower than the minimum velocity.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Sets an optional max duration and the walker's power gain per second.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Sets walker power back to 1 and switches to the `ExitTo` set if one is set. |
+| <Link id="m-onfinished" /><code>{"private void OnFinished("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Sets walker power back to 1 and switches to the `ExitTo` set if one is set.</span> |
 
 </details>

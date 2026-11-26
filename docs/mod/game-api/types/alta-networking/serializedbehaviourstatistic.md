@@ -22,16 +22,16 @@ Network traffic statistic for one serialized behaviour, by name.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> | Creates a `SerializedBehaviourStatistic` from `name`. |
+| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> | <span className="api-desc">Creates a `SerializedBehaviourStatistic` from `name`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> | Backing field for `BehaviourName`. |
+| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> | <span className="api-desc">Backing field for `BehaviourName`.</span> |
 
 </details>
 
@@ -39,16 +39,20 @@ Network traffic statistic for one serialized behaviour, by name.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> | Name of the behaviour counted. |
+| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> | <span className="api-desc">Name of the behaviour counted.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | Returns a one-line summary with the behaviour name and the base traffic figures. |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | <span className="api-desc">Returns a one-line summary with the behaviour name and the base traffic figures.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SerializedBehaviourStatistic`:
 
+<div className="api-used-in">
+
 [`SerializedBehaviourStatistics.CreateNewStatistic`](/mod/game-api/types/alta-networking/serializedbehaviourstatistics#m-createnewstatistic).
+
+</div>

@@ -22,4 +22,4 @@ Editor menu entry that creates a new `AchievementStatDefinition` asset. Editor o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AchievementStatDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `AchievementStatDefinition.Create` with default values.</span> |

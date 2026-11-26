@@ -19,12 +19,12 @@ Paged list of the groups the logged-in user is a member of, from the Alta web AP
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal JoinedGroups("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `JoinedGroups` from `api`. |
+| <Link id="m-ctor" /><code>{"internal JoinedGroups("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `JoinedGroups` from `api`.</span> |
 
 </details>
 
@@ -32,10 +32,14 @@ Paged list of the groups the logged-in user is a member of, from the Alta web AP
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> | Fetches a group and the user's membership in it, as a `JoinedGroupManager`. |
+| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> | <span className="api-desc">Fetches a group and the user's membership in it, as a `JoinedGroupManager`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `JoinedGroups`:
 
+<div className="api-used-in">
+
 [`GroupsClient.Joined`](/mod/game-api/types/assembly-api-client/groupsclient#m-joined), [`IGroupsClient.Joined`](/mod/game-api/types/assembly-api-client/igroupsclient#m-joined), [`OfflineGroupsClient.Joined`](/mod/game-api/types/assembly-api-client/offlinegroupsclient#m-joined).
+
+</div>

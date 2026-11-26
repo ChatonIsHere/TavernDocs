@@ -23,4 +23,4 @@ Editor menu folder `GameObject`: menu item classes inherit it to appear under th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GameObject()"}</code> | Creates an `AltaMenuItemBase.GameObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected GameObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.GameObject` with default values.</span> |

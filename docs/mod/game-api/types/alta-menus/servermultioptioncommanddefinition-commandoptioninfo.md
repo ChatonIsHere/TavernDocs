@@ -21,11 +21,15 @@ One option in a `ServerMultiOptionCommandDefinition`: the command to run and its
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-argument" /><code>{"string Argument"}</code> | Button label for the option (renamed from `buttonLabel`). |
-| <Link id="m-command" /><code>{"string command"}</code> | The full console command to run. |
+| <Link id="m-argument" /><code>{"string Argument"}</code> | <span className="api-desc">Button label for the option (renamed from `buttonLabel`).</span> |
+| <Link id="m-command" /><code>{"string command"}</code> | <span className="api-desc">The full console command to run.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CommandOptionInfo`:
 
+<div className="api-used-in">
+
 [`ServerMultiOptionCommandDefinition.commands`](/mod/game-api/types/alta-menus/servermultioptioncommanddefinition#m-commands).
+
+</div>

@@ -20,18 +20,22 @@ Body of an Alta web API request to check whether a user owns some shop items.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> | Creates a `ValidateItemOwnershipRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> | <span className="api-desc">Creates a `ValidateItemOwnershipRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> | Old numeric item ids. Marked obsolete in favour of `ItemSKUs`. |
-| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> | SKUs of the items to check. |
-| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> | Id of the user to check (the name is misspelt in the game). |
+| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> | <span className="api-desc">Old numeric item ids. Marked obsolete in favour of `ItemSKUs`.</span> |
+| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> | <span className="api-desc">SKUs of the items to check.</span> |
+| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> | <span className="api-desc">Id of the user to check (the name is misspelt in the game).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ValidateItemOwnershipRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ValidateItemsOwnershipAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-validateitemsownershipasync).
+
+</div>

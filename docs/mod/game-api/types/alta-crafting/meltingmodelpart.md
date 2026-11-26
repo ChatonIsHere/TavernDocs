@@ -21,16 +21,16 @@ Melting model that reads and writes its material through a `PhysicalMaterialPart
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeltingModelPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MeltingModelPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterialpart" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterialPart"}</code> | The part that holds this model's material. |
+| <Link id="m-physicalmaterialpart" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterialPart"}</code> | <span className="api-desc">The part that holds this model's material.</span> |
 
 </details>
 
@@ -38,11 +38,11 @@ Melting model that reads and writes its material through a `PhysicalMaterialPart
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterial" /><code>{"override "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | The material of the linked `PhysicalMaterialPart`. |
+| <Link id="m-physicalmaterial" /><code>{"override "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | <span className="api-desc">The material of the linked `PhysicalMaterialPart`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"override void OnValidate()"}</code> | Editor: finds the `PhysicalMaterialPart` on this object if not set. |
-| <Link id="m-internalsetup" /><code>{"protected override void InternalSetup("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Sets the material on the `PhysicalMaterialPart`. |
+| <Link id="m-onvalidate" /><code>{"override void OnValidate()"}</code> | <span className="api-desc">Editor: finds the `PhysicalMaterialPart` on this object if not set.</span> |
+| <Link id="m-internalsetup" /><code>{"protected override void InternalSetup("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | <span className="api-desc">Sets the material on the `PhysicalMaterialPart`.</span> |

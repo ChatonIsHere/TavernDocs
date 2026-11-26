@@ -27,4 +27,8 @@ Currency of a `ShopPrice`: US dollars or shards.
 
 Members of other types that take, return or hold a `PriceType`:
 
+<div className="api-used-in">
+
 [`ShopPrice.PriceType`](/mod/game-api/types/assembly-api-models/shopprice#m-pricetype).
+
+</div>

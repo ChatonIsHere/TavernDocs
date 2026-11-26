@@ -30,4 +30,8 @@ Setting on `OptionSet` and `RuleOptionSet` for how a random choice is locked (No
 
 Members of other types that take, return or hold a `LockMode`:
 
+<div className="api-used-in">
+
 [`OptionSet.lockMode`](/mod/game-api/types/alta-world-generation/optionset#m-lockmode), [`OptionSet.LockMode`](/mod/game-api/types/alta-world-generation/optionset#m-lockmode-2), [`RuleOptionSet.lockMode`](/mod/game-api/types/alta-world-generation/ruleoptionset#m-lockmode), [`RuleOptionSet.LockMode`](/mod/game-api/types/alta-world-generation/ruleoptionset#m-lockmode-2).
+
+</div>

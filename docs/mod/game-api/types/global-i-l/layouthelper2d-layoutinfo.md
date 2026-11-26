@@ -21,17 +21,21 @@ Result of a 2D grid layout: element positions and the scale to draw them at.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> | Creates a `LayoutHelper2D.LayoutInfo` from `positions` and `scale`. |
+| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> | <span className="api-desc">Creates a `LayoutHelper2D.LayoutInfo` from `positions` and `scale`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positions" /><code>{"List<Vector3> Positions"}</code> | Position of each element, one per element. |
-| <Link id="m-scale" /><code>{"float Scale"}</code> | Scale factor for the elements so they fit. |
+| <Link id="m-positions" /><code>{"List<Vector3> Positions"}</code> | <span className="api-desc">Position of each element, one per element.</span> |
+| <Link id="m-scale" /><code>{"float Scale"}</code> | <span className="api-desc">Scale factor for the elements so they fit.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LayoutInfo`:
 
+<div className="api-used-in">
+
 [`LayoutHelper2D.GetPositionsAndScaleFactor`](/mod/game-api/types/global-i-l/layouthelper2d#m-getpositionsandscalefactor).
+
+</div>

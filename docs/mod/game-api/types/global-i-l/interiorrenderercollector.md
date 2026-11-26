@@ -21,17 +21,17 @@ Trigger that changes the LOD transition heights of LOD groups while they are ins
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteriorRendererCollector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InteriorRendererCollector()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addedgroup" /><code>{"private List<LODGroup> addedGroup"}</code> | LOD groups currently changed by this trigger. |
-| <Link id="m-lodmultiplier" /><code>{"private float lodMultiplier"}</code> | Strength of the change. Defaults to 3. |
+| <Link id="m-addedgroup" /><code>{"private List<LODGroup> addedGroup"}</code> | <span className="api-desc">LOD groups currently changed by this trigger.</span> |
+| <Link id="m-lodmultiplier" /><code>{"private float lodMultiplier"}</code> | <span className="api-desc">Strength of the change. Defaults to 3.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ Trigger that changes the LOD transition heights of LOD groups while they are ins
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodmultiplier-2" /><code>{"protected float LodMultiplier { get; set; }"}</code> | Gets or sets `lodMultiplier`. |
+| <Link id="m-lodmultiplier-2" /><code>{"protected float LodMultiplier { get; set; }"}</code> | <span className="api-desc">Gets or sets `lodMultiplier`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Raises each LOD transition height of an entering group to the power one over `lodMultiplier`, once per group. |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> | Undoes the change when the group leaves. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Raises each LOD transition height of an entering group to the power one over `lodMultiplier`, once per group.</span> |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> | <span className="api-desc">Undoes the change when the group leaves.</span> |
 
 </details>

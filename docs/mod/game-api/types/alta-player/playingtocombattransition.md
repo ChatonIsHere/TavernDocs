@@ -21,10 +21,14 @@ Moves a player from Playing to Combat when they take a tool hit within range or 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> | Creates a `PlayingToCombatTransition` with default values. |
+| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> | <span className="api-desc">Creates a `PlayingToCombatTransition` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayingToCombatTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.playingToCombat`](/mod/game-api/types/alta-player/alltransitions#m-playingtocombat), [`AllTransitions.PlayingToCombatTransition`](/mod/game-api/types/alta-player/alltransitions#m-playingtocombattransition).
+
+</div>

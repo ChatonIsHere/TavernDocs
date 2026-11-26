@@ -22,17 +22,17 @@ Base ScriptableObject for a forest fill or paint set: a set of spawn modifiers p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected FillSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected FillSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> | Backing field for `MaximumFailScore`, default 1. |
-| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> | Backing field for `MinimumFailScore`. |
+| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> | <span className="api-desc">Backing field for `MaximumFailScore`, default 1.</span> |
+| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> | <span className="api-desc">Backing field for `MinimumFailScore`.</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Base ScriptableObject for a forest fill or paint set: a set of spawn modifiers p
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> | Highest random fail score (0 to 1) a point can roll. |
-| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> | Lowest random fail score (0 to 1) a point can roll. Higher makes spawning rarer. |
-| <Link id="m-spawnmodifiers" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | The modifier chain each candidate point runs through to decide whether, and how, something spawns there. |
+| <Link id="m-maximumfailscore-2" /><code>{"float MaximumFailScore { get; }"}</code> | <span className="api-desc">Highest random fail score (0 to 1) a point can roll.</span> |
+| <Link id="m-minimumfailscore-2" /><code>{"float MinimumFailScore { get; }"}</code> | <span className="api-desc">Lowest random fail score (0 to 1) a point can roll. Higher makes spawning rarer.</span> |
+| <Link id="m-spawnmodifiers" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/mod/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | <span className="api-desc">The modifier chain each candidate point runs through to decide whether, and how, something spawns there.</span> |

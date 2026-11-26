@@ -21,17 +21,17 @@ One movement smoothing level for remote players, picked by `PlayerSmoothManager.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> | Creates a `PlayerLocomotionController.SmoothingSetting` with default values. |
+| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> | <span className="api-desc">Creates a `PlayerLocomotionController.SmoothingSetting` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-locomotionlerp" /><code>{"private float locomotionLerp"}</code> | Backing field for `LocomotionLerp`. |
-| <Link id="m-transformslerp" /><code>{"private float transformsLerp"}</code> | Backing field for `TransformsLerp`. |
+| <Link id="m-locomotionlerp" /><code>{"private float locomotionLerp"}</code> | <span className="api-desc">Backing field for `LocomotionLerp`.</span> |
+| <Link id="m-transformslerp" /><code>{"private float transformsLerp"}</code> | <span className="api-desc">Backing field for `TransformsLerp`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ One movement smoothing level for remote players, picked by `PlayerSmoothManager.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-locomotionlerp-2" /><code>{"float LocomotionLerp { get; }"}</code> | Lerp used for the locomotion's fixed update. |
-| <Link id="m-transformslerp-2" /><code>{"float TransformsLerp { get; }"}</code> | Lerp given to the smoothed network transforms. |
+| <Link id="m-locomotionlerp-2" /><code>{"float LocomotionLerp { get; }"}</code> | <span className="api-desc">Lerp used for the locomotion's fixed update.</span> |
+| <Link id="m-transformslerp-2" /><code>{"float TransformsLerp { get; }"}</code> | <span className="api-desc">Lerp given to the smoothed network transforms.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SmoothingSetting`:
 
+<div className="api-used-in">
+
 [`PlayerLocomotionController.smoothingSettings`](/mod/game-api/types/global-p/playerlocomotioncontroller#m-smoothingsettings).
+
+</div>

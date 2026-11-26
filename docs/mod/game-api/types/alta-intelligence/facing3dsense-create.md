@@ -22,4 +22,4 @@ Editor menu item for making a `Facing3DSense` asset. Does nothing at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Facing3DSense.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `Facing3DSense.Create` with default values.</span> |

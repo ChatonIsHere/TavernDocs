@@ -21,29 +21,29 @@ Static generation step that spawns one networked prefab (picked by an `ObjectPip
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticDynamicSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticDynamicSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-editorpreview" /><code>{"private GameObject editorPreview"}</code> | Preview object shown in the editor; cleared by `Reset`. |
-| <Link id="m-positioning" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/generatedpositioning">{"GeneratedPositioning"}</Link>{" positioning"}</code> | Optional `GeneratedPositioning` that tweaks the spawn position and rotation. |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | Pipeline that picks the `NetworkPrefab` to spawn. |
+| <Link id="m-editorpreview" /><code>{"private GameObject editorPreview"}</code> | <span className="api-desc">Preview object shown in the editor; cleared by `Reset`.</span> |
+| <Link id="m-positioning" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/generatedpositioning">{"GeneratedPositioning"}</Link>{" positioning"}</code> | <span className="api-desc">Optional `GeneratedPositioning` that tweaks the spawn position and rotation.</span> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefab"}</code> | <span className="api-desc">Pipeline that picks the `NetworkPrefab` to spawn.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generate" /><code>{"private void IStaticGeneration.Generate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Spawns the chosen `NetworkPrefab` at this transform (adjusted by `positioning`) as a saved child of `dynamicParent`, but only when `SpawnData` says this is a generating first load. |
-| <Link id="m-reset" /><code>{"private void IStaticGeneration.Reset()"}</code> | Destroys the editor preview object, if any. |
+| <Link id="m-generate" /><code>{"private void IStaticGeneration.Generate("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" dynamicParent, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Spawns the chosen `NetworkPrefab` at this transform (adjusted by `positioning`) as a saved child of `dynamicParent`, but only when `SpawnData` says this is a generating first load.</span> |
+| <Link id="m-reset" /><code>{"private void IStaticGeneration.Reset()"}</code> | <span className="api-desc">Destroys the editor preview object, if any.</span> |
 
 </details>

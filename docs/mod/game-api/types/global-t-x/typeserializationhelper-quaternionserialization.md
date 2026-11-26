@@ -22,10 +22,10 @@ Serializer for `Quaternion`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QuaternionSerialization()"}</code> | Creates a `TypeSerializationHelper.QuaternionSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"QuaternionSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.QuaternionSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Quaternion value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the rotation. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Quaternion value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Reads or writes the rotation.</span> |

@@ -23,20 +23,20 @@ Turns an int logic input into a bool: true when the value is in a list of correc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntToBool()"}</code> | Creates a `LogicIntToBool` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntToBool()"}</code> | <span className="api-desc">Creates a `LogicIntToBool` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-correctvalues" /><code>{"private int[] correctValues"}</code> | Values that count as correct. |
-| <Link id="m-oncorrect" /><code>{"private UnityEvent onCorrect"}</code> | Unity event fired when the value is correct. |
-| <Link id="m-onincorrect" /><code>{"private UnityEvent onIncorrect"}</code> | Unity event fired when the value is not correct. |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueChanged"}</code> | Unity event fired with whether the value is correct. |
-| <Link id="m-receiver" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/logicintreceiver">{"LogicIntReceiver"}</Link>{" receiver"}</code> | Int receiver whose value is checked. |
+| <Link id="m-correctvalues" /><code>{"private int[] correctValues"}</code> | <span className="api-desc">Values that count as correct.</span> |
+| <Link id="m-oncorrect" /><code>{"private UnityEvent onCorrect"}</code> | <span className="api-desc">Unity event fired when the value is correct.</span> |
+| <Link id="m-onincorrect" /><code>{"private UnityEvent onIncorrect"}</code> | <span className="api-desc">Unity event fired when the value is not correct.</span> |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onValueChanged"}</code> | <span className="api-desc">Unity event fired with whether the value is correct.</span> |
+| <Link id="m-receiver" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/logicintreceiver">{"LogicIntReceiver"}</Link>{" receiver"}</code> | <span className="api-desc">Int receiver whose value is checked.</span> |
 
 </details>
 
@@ -44,5 +44,5 @@ Turns an int logic input into a bool: true when the value is in a list of correc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inttobool" /><code>{"bool IntToBool(int i)"}</code> | True when the value is one of `correctValues`. |
-| <Link id="m-valuechanged" /><code>{"void ValueChanged()"}</code> | Checks the receiver's current value and fires `onValueChanged`, then `onCorrect` or `onIncorrect`. |
+| <Link id="m-inttobool" /><code>{"bool IntToBool(int i)"}</code> | <span className="api-desc">True when the value is one of `correctValues`.</span> |
+| <Link id="m-valuechanged" /><code>{"void ValueChanged()"}</code> | <span className="api-desc">Checks the receiver's current value and fires `onValueChanged`, then `onCorrect` or `onIncorrect`.</span> |

@@ -23,12 +23,12 @@ Save data (version 2) for `GeneratedLoot`. Internal.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> | Creates a `GeneratedLootSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> | <span className="api-desc">Creates a `GeneratedLootSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cachedpluginidentifier" /><code>{"int cachedPluginIdentifier"}</code> | Stored int restored to `GeneratedLoot.cachedPluginIdentifier`. |
-| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> | Carried over from old saves; `GeneratedLoot` does not read or write it. |
-| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> | Time left on the refill timer, as saved by `Timeline.SaveEntry`. |
+| <Link id="m-cachedpluginidentifier" /><code>{"int cachedPluginIdentifier"}</code> | <span className="api-desc">Stored int restored to `GeneratedLoot.cachedPluginIdentifier`.</span> |
+| <Link id="m-hasrun" /><code>{"bool hasRun"}</code> | <span className="api-desc">Carried over from old saves; `GeneratedLoot` does not read or write it.</span> |
+| <Link id="m-waittorefill" /><code>{"TimeSpan waitToRefill"}</code> | <span className="api-desc">Time left on the refill timer, as saved by `Timeline.SaveEntry`.</span> |

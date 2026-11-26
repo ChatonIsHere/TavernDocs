@@ -21,13 +21,17 @@ One animator parameter (bool, float or layer weight) that shows which way a crea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> | Resets the parameter to off. |
-| <Link id="m-setdirection" /><code>{"void SetDirection(int direction)"}</code> | Sets the target direction value. |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, string parameterName)"}</code> | Binds to the named parameter on a network animator. |
-| <Link id="m-update" /><code>{"void Update(float lerp)"}</code> | Moves the parameter toward its target, by the given lerp amount. |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | <span className="api-desc">Resets the parameter to off.</span> |
+| <Link id="m-setdirection" /><code>{"void SetDirection(int direction)"}</code> | <span className="api-desc">Sets the target direction value.</span> |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator, string parameterName)"}</code> | <span className="api-desc">Binds to the named parameter on a network animator.</span> |
+| <Link id="m-update" /><code>{"void Update(float lerp)"}</code> | <span className="api-desc">Moves the parameter toward its target, by the given lerp amount.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAttackDirectionAnimation`:
 
+<div className="api-used-in">
+
 [`AttackDirectionAnimationBoolSettings.GetAnimation`](/mod/game-api/types/alta-intelligence/attackdirectionanimationboolsettings#m-getanimation), [`AttackDirectionAnimationFloatSettings.GetAnimation`](/mod/game-api/types/alta-intelligence/attackdirectionanimationfloatsettings#m-getanimation), [`AttackDirectionAnimationLayerLerpSettings.GetAnimation`](/mod/game-api/types/alta-intelligence/attackdirectionanimationlayerlerpsettings#m-getanimation), [`AttackDirectionAnimationSettings.GetAnimation`](/mod/game-api/types/alta-intelligence/attackdirectionanimationsettings#m-getanimation), [`AttackDirectionAnimationSettings.GetNewAnimation`](/mod/game-api/types/alta-intelligence/attackdirectionanimationsettings#m-getnewanimation), [`AttackDirectionCore.GetAnimation`](/mod/game-api/types/alta-intelligence/attackdirectioncore#m-getanimation), [`AttackDirectionCore.layer`](/mod/game-api/types/alta-intelligence/attackdirectioncore#m-layer), [`AttackDirectionCore.side`](/mod/game-api/types/alta-intelligence/attackdirectioncore#m-side), [`AttackDirectionCore.up`](/mod/game-api/types/alta-intelligence/attackdirectioncore#m-up).
+
+</div>

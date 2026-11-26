@@ -22,31 +22,31 @@ Test component that moves or spins its object in a loop on the server, to test s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LocalMoveTest()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LocalMoveTest()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-magnitude" /><code>{"private float magnitude"}</code> | Distance of the sine movement. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Start position. |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Start rotation. |
-| <Link id="m-speed" /><code>{"private float speed"}</code> | Rate of the motion. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/localmovetest-type">{"LocalMoveTest.Type"}</Link>{" type"}</code> | Which motion to run: Y rotation, Y movement or X movement. |
+| <Link id="m-magnitude" /><code>{"private float magnitude"}</code> | <span className="api-desc">Distance of the sine movement.</span> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | <span className="api-desc">Start position.</span> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | <span className="api-desc">Start rotation.</span> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> | <span className="api-desc">Rate of the motion.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/localmovetest-type">{"LocalMoveTest.Type"}</Link>{" type"}</code> | <span className="api-desc">Which motion to run: Y rotation, Y movement or X movement.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Server: spins the object around Y, or bobs it on Y or X with a sine wave, from its start pose. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Stores the start position and rotation. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | <span className="api-desc">Server: spins the object around Y, or bobs it on Y or X with a sine wave, from its start pose.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Stores the start position and rotation.</span> |
 
 </details>

@@ -23,24 +23,24 @@ A one-shot scheduled callback in a `Timeline` priority queue, ordered by target 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Entry(Action callback)"}</code> | Creates a `Timeline.Entry` from `callback`. |
+| <Link id="m-ctor" /><code>{"Entry(Action callback)"}</code> | <span className="api-desc">Creates a `Timeline.Entry` from `callback`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-callback" /><code>{"Action callback"}</code> | Action run when the entry fires. Null once released. |
-| <Link id="m-targettime" /><code>{"TimeSpan targetTime"}</code> | Timeline time the entry fires at. |
+| <Link id="m-callback" /><code>{"Action callback"}</code> | <span className="api-desc">Action run when the entry fires. Null once released.</span> |
+| <Link id="m-targettime" /><code>{"TimeSpan targetTime"}</code> | <span className="api-desc">Timeline time the entry fires at.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-timing-timeline-ientry-isactive" /><code>{"private bool Alta.Timing.Timeline.IEntry.IsActive { get; }"}</code> | True until the entry is released, as long as it still has a callback. |
-| <Link id="m-alta-timing-timeline-ientry-time" /><code>{"private TimeSpan Alta.Timing.Timeline.IEntry.Time { get; }"}</code> | The timeline time the entry fires at. |
+| <Link id="m-alta-timing-timeline-ientry-isactive" /><code>{"private bool Alta.Timing.Timeline.IEntry.IsActive { get; }"}</code> | <span className="api-desc">True until the entry is released, as long as it still has a callback.</span> |
+| <Link id="m-alta-timing-timeline-ientry-time" /><code>{"private TimeSpan Alta.Timing.Timeline.IEntry.Time { get; }"}</code> | <span className="api-desc">The timeline time the entry fires at.</span> |
 
 </details>
 
@@ -48,12 +48,16 @@ A one-shot scheduled callback in a `Timeline` priority queue, ordered by target 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkentryreuse" /><code>{"virtual bool CheckEntryReuse("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> | Called after the entry fires. Returns false so the timeline releases it; repeatable entries requeue instead. |
-| <Link id="m-get" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" Get(Action callback, TimeSpan time)"}</code> | Makes a new entry for the callback at the given time. |
-| <Link id="m-release" /><code>{"virtual void Release()"}</code> | Clears the callback, which marks the entry inactive. |
+| <Link id="m-checkentryreuse" /><code>{"virtual bool CheckEntryReuse("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> | <span className="api-desc">Called after the entry fires. Returns false so the timeline releases it; repeatable entries requeue instead.</span> |
+| <Link id="m-get" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" Get(Action callback, TimeSpan time)"}</code> | <span className="api-desc">Makes a new entry for the callback at the given time.</span> |
+| <Link id="m-release" /><code>{"virtual void Release()"}</code> | <span className="api-desc">Clears the callback, which marks the entry inactive.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Entry`:
 
+<div className="api-used-in">
+
 [`Timeline.EnqueEntry`](/mod/game-api/types/assembly-other/timeline#m-enqueentry), [`Timeline.entries`](/mod/game-api/types/assembly-other/timeline#m-entries).
+
+</div>

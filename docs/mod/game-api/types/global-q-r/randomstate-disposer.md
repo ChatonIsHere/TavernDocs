@@ -22,16 +22,16 @@ Shared `IDisposable` returned by `RandomState.Push`, so a `using` block restores
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Disposer()"}</code> | Creates a `RandomState.Disposer` with default values. |
+| <Link id="m-ctor" /><code>{"Disposer()"}</code> | <span className="api-desc">Creates a `RandomState.Disposer` with default values.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> | Calls `RandomState.Pop`, putting back the random state saved by the matching `Push`. |
+| <Link id="m-dispose" /><code>{"private void System.IDisposable.Dispose()"}</code> | <span className="api-desc">Calls `RandomState.Pop`, putting back the random state saved by the matching `Push`.</span> |
 
 </details>
 
@@ -39,4 +39,8 @@ Shared `IDisposable` returned by `RandomState.Push`, so a `using` block restores
 
 Members of other types that take, return or hold a `Disposer`:
 
+<div className="api-used-in">
+
 [`RandomState.disposer`](/mod/game-api/types/global-q-r/randomstate#m-disposer).
+
+</div>

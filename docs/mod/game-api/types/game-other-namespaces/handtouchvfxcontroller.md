@@ -21,17 +21,17 @@ A `GenericVFXController` with two named effects for something a hand touches: on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandTouchVfxController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"HandTouchVfxController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activatingvfxindex" /><code>{"private int activatingVfxIndex"}</code> | Index of the effect played while activating. Defaults to 0. |
-| <Link id="m-completedvfxindex" /><code>{"private int completedVfxIndex"}</code> | Index of the effect played on completion. Defaults to 1. |
+| <Link id="m-activatingvfxindex" /><code>{"private int activatingVfxIndex"}</code> | <span className="api-desc">Index of the effect played while activating. Defaults to 0.</span> |
+| <Link id="m-completedvfxindex" /><code>{"private int completedVfxIndex"}</code> | <span className="api-desc">Index of the effect played on completion. Defaults to 1.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A `GenericVFXController` with two named effects for something a hand touches: on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playactivatingeffect" /><code>{"void PlayActivatingEffect()"}</code> | Plays the effect at `activatingVfxIndex`. |
-| <Link id="m-playcompletedeffect" /><code>{"void PlayCompletedEffect()"}</code> | Plays the effect at `completedVfxIndex`. |
+| <Link id="m-playactivatingeffect" /><code>{"void PlayActivatingEffect()"}</code> | <span className="api-desc">Plays the effect at `activatingVfxIndex`.</span> |
+| <Link id="m-playcompletedeffect" /><code>{"void PlayCompletedEffect()"}</code> | <span className="api-desc">Plays the effect at `completedVfxIndex`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandTouchVfxController`:
 
+<div className="api-used-in">
+
 [`HandHoverPoint.handTouchVfxController`](/mod/game-api/types/global-e-h/handhoverpoint#m-handtouchvfxcontroller).
+
+</div>

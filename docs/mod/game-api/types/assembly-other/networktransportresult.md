@@ -21,19 +21,19 @@ Simple success or error result returned by transport calls such as `ProcessIncom
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> | Creates a `NetworkTransportResult` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> | <span className="api-desc">Creates a `NetworkTransportResult` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code>{"string Error { get; private set; }"}</code> | The error message; null on success. |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; private set; }"}</code> | True when the call worked. |
-| <Link id="m-noresources" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" NoResources { get; }"}</code> | Shared failed result with the message "No resources". |
-| <Link id="m-success" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" Success { get; }"}</code> | Shared successful result, returned by most transport calls. |
+| <Link id="m-error" /><code>{"string Error { get; private set; }"}</code> | <span className="api-desc">The error message; null on success.</span> |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; private set; }"}</code> | <span className="api-desc">True when the call worked.</span> |
+| <Link id="m-noresources" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" NoResources { get; }"}</code> | <span className="api-desc">Shared failed result with the message "No resources".</span> |
+| <Link id="m-success" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" Success { get; }"}</code> | <span className="api-desc">Shared successful result, returned by most transport calls.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fromerror" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" FromError(string error)"}</code> | Makes a failed result with the given message. |
+| <Link id="m-fromerror" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/networktransportresult">{"NetworkTransportResult"}</Link>{" FromError(string error)"}</code> | <span className="api-desc">Makes a failed result with the given message.</span> |

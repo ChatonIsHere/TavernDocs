@@ -22,10 +22,14 @@ Base class for spawn modifiers that work on a `NetworkEntity`. It adds nothing t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected NetworkEntityModifiers()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected NetworkEntityModifiers()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NetworkEntityModifiers`:
 
+<div className="api-used-in">
+
 [`SpawnModifiers.networkEntityModifiers`](/mod/game-api/types/alta-world-generation/spawnmodifiers#m-networkentitymodifiers).
+
+</div>

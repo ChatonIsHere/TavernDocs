@@ -20,16 +20,20 @@ API response describing what the game's home screen shows.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> | Creates a `GameHomeConfiguration` with default values. |
+| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> | <span className="api-desc">Creates a `GameHomeConfiguration` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-elements" /><code><Link to="/mod/game-api/types/assembly-api-models/homeelement">{"HomeElement"}</Link>{"[] Elements { get; set; }"}</code> | The home screen elements. |
+| <Link id="m-elements" /><code><Link to="/mod/game-api/types/assembly-api-models/homeelement">{"HomeElement"}</Link>{"[] Elements { get; set; }"}</code> | <span className="api-desc">The home screen elements.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GameHomeConfiguration`:
 
+<div className="api-used-in">
+
 [`ShopPageConfigurationWithBanner.Create`](/mod/game-api/types/assembly-api-models/shoppageconfigurationwithbanner#m-create), [`ShopConfigUtility.ShopItemConfigurations.GameHomeConfiguration`](/mod/game-api/types/alta-customization/shopconfigutility-shopitemconfigurations#m-gamehomeconfiguration).
+
+</div>

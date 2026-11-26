@@ -21,16 +21,16 @@ Makes a `MaterialInstance` for each of a set of renderers and disposes them toge
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> | Creates a `MaterialInstanceGroup` from `renderers`. |
+| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> | <span className="api-desc">Creates a `MaterialInstanceGroup` from `renderers`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/mod/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> | The material instances, one per renderer passed to the constructor. |
+| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/mod/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> | <span className="api-desc">The material instances, one per renderer passed to the constructor.</span> |
 
 </details>
 
@@ -38,21 +38,21 @@ Makes a `MaterialInstance` for each of a set of renderers and disposes them toge
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of material instances in the group. |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | <span className="api-desc">Number of material instances in the group.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes every material instance and empties the group. |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> | Enumerates the material instances. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Disposes every material instance and empties the group.</span> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> | <span className="api-desc">Enumerates the material instances.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the material instances. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | <span className="api-desc">Enumerates the material instances.</span> |
 
 </details>
 
@@ -60,4 +60,8 @@ Makes a `MaterialInstance` for each of a set of renderers and disposes them toge
 
 Members of other types that take, return or hold a `MaterialInstanceGroup`:
 
+<div className="api-used-in">
+
 [`ActionOrb.squishableMaterialGroup`](/mod/game-api/types/global-a-b/actionorb#m-squishablematerialgroup).
+
+</div>

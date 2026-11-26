@@ -23,10 +23,10 @@ Asset that drives an animator layer weight from where the target's weapon is: 1 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionAnimationLayerLerpSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AttackDirectionAnimationLayerLerpSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> | Returns a new `LayerAnimation`. |
+| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> | <span className="api-desc">Returns a new `LayerAnimation`.</span> |

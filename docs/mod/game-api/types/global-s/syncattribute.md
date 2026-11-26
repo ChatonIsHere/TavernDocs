@@ -23,10 +23,10 @@ Obsolete base attribute for automatic member syncing.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SyncAttribute()"}</code> | Creates a `SyncAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"protected SyncAttribute()"}</code> | <span className="api-desc">Creates a `SyncAttribute` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-core" /><code><Link to="/mod/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" Core { get; protected set; }"}</code> | The type serializer for the marked member. |
+| <Link id="m-core" /><code><Link to="/mod/game-api/types/global-t-x/typeserializationhelper-itypeserialization">{"TypeSerializationHelper.ITypeSerialization"}</Link>{" Core { get; protected set; }"}</code> | <span className="api-desc">The type serializer for the marked member.</span> |

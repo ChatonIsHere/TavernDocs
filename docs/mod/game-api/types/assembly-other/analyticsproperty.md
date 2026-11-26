@@ -21,11 +21,11 @@ One name and value pair in an analytics event.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> | Creates an `AnalyticsProperty` from `name` and `value`. |
+| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> | <span className="api-desc">Creates an `AnalyticsProperty` from `name` and `value`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The property name. |
-| <Link id="m-value" /><code>{"object Value { get; }"}</code> | The property value, any object. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">The property name.</span> |
+| <Link id="m-value" /><code>{"object Value { get; }"}</code> | <span className="api-desc">The property value, any object.</span> |

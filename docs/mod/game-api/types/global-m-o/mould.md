@@ -24,29 +24,29 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Mould()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Mould()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>14 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. Saved. |
-| <Link id="m-graphic" /><code>{"private MeshFilter graphic"}</code> | Mesh showing the shape the mould makes. |
-| <Link id="m-inputcount" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputCount"}</code> | Text showing the definition's cost. |
-| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> | Whether a blank mould picks a random definition when spawned. Off for crafted moulds. |
-| <Link id="m-isusingrestrictor" /><code>{"private bool isUsingRestrictor"}</code> | Backing field for `IsUsingRestrictor`. Defaults to true. |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | LOD group whose first level gets the shape and text renderers. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Private: logger. Not used in this build. |
-| <Link id="m-outputcount" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" outputCount"}</code> | Text showing how many items one use makes, shown when more than one. |
-| <Link id="m-outputquantityrenderer" /><code>{"private MeshRenderer outputQuantityRenderer"}</code> | The 'x' renderer next to `outputCount`. |
-| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Private: message for `Sync`, sent when the definition changes and to joining players. |
-| <Link id="m-syncuse" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncUse"}</code> | Private: message for `SyncUse`, sent by `Consume`. |
-| <Link id="m-usage" /><code>{"private int usage"}</code> | Backing field for `Usage`. -1 means unlimited uses. |
-| <Link id="m-usagevisual" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/integervisual">{"IntegerVisual"}</Link>{" usageVisual"}</code> | Optional visual showing the uses left. |
-| <Link id="m-workingrendererslist" /><code>{"private static List<Renderer> workingRenderersList"}</code> | Private static: scratch list used to rebuild the LOD renderers. |
+| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Backing field for `Definition`. Saved.</span> |
+| <Link id="m-graphic" /><code>{"private MeshFilter graphic"}</code> | <span className="api-desc">Mesh showing the shape the mould makes.</span> |
+| <Link id="m-inputcount" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputCount"}</code> | <span className="api-desc">Text showing the definition's cost.</span> |
+| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> | <span className="api-desc">Whether a blank mould picks a random definition when spawned. Off for crafted moulds.</span> |
+| <Link id="m-isusingrestrictor" /><code>{"private bool isUsingRestrictor"}</code> | <span className="api-desc">Backing field for `IsUsingRestrictor`. Defaults to true.</span> |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | <span className="api-desc">LOD group whose first level gets the shape and text renderers.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Private: logger. Not used in this build.</span> |
+| <Link id="m-outputcount" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" outputCount"}</code> | <span className="api-desc">Text showing how many items one use makes, shown when more than one.</span> |
+| <Link id="m-outputquantityrenderer" /><code>{"private MeshRenderer outputQuantityRenderer"}</code> | <span className="api-desc">The 'x' renderer next to `outputCount`.</span> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | <span className="api-desc">Private: message for `Sync`, sent when the definition changes and to joining players.</span> |
+| <Link id="m-syncuse" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncUse"}</code> | <span className="api-desc">Private: message for `SyncUse`, sent by `Consume`.</span> |
+| <Link id="m-usage" /><code>{"private int usage"}</code> | <span className="api-desc">Backing field for `Usage`. -1 means unlimited uses.</span> |
+| <Link id="m-usagevisual" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/integervisual">{"IntegerVisual"}</Link>{" usageVisual"}</code> | <span className="api-desc">Optional visual showing the uses left.</span> |
+| <Link id="m-workingrendererslist" /><code>{"private static List<Renderer> workingRenderersList"}</code> | <span className="api-desc">Private static: scratch list used to rebuild the LOD renderers.</span> |
 
 </details>
 
@@ -54,17 +54,17 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" Definition { get; }"}</code> | What this mould casts, or null for an empty mould. Saved with the mould. |
-| <Link id="m-isusingrestrictor-2" /><code>{"bool IsUsingRestrictor { get; }"}</code> | Whether a `MouldRestrictor` keeps only one mould per definition, destroying the older copy when a new one registers. |
-| <Link id="m-usage-2" /><code>{"int Usage { get; }"}</code> | Uses left. -1 means unlimited; the smelter breaks the mould when `Consume` takes it to zero. |
-| <Link id="m-isgeneratingfirsttime" /><code>{"protected override bool IsGeneratingFirstTime { get; }"}</code> | True only when the mould has no definition yet and is set to generate one. |
+| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" Definition { get; }"}</code> | <span className="api-desc">What this mould casts, or null for an empty mould. Saved with the mould.</span> |
+| <Link id="m-isusingrestrictor-2" /><code>{"bool IsUsingRestrictor { get; }"}</code> | <span className="api-desc">Whether a `MouldRestrictor` keeps only one mould per definition, destroying the older copy when a new one registers.</span> |
+| <Link id="m-usage-2" /><code>{"int Usage { get; }"}</code> | <span className="api-desc">Uses left. -1 means unlimited; the smelter breaks the mould when `Consume` takes it to zero.</span> |
+| <Link id="m-isgeneratingfirsttime" /><code>{"protected override bool IsGeneratingFirstTime { get; }"}</code> | <span className="api-desc">True only when the mould has no definition yet and is set to generate one.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> | True only while the mould has no definition (it is blank). |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> | <span className="api-desc">True only while the mould has no definition (it is blank).</span> |
 
 </details>
 
@@ -72,20 +72,20 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consume" /><code>{"bool Consume()"}</code> | Server: uses up one charge if the mould has limited uses and syncs it. Returns true when uses reach zero. |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Sets up the network syncs for the definition and the remaining uses. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the current definition and uses to a player who joins. |
-| <Link id="m-setdefinition" /><code>{"void SetDefinition("}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition, bool isOnvalidate = false)"}</code> | Changes what the mould casts. The server syncs it; clients rebuild the mesh, cost and output-count visuals. |
-| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | On first spawn, gives the mould a random definition if generation is turned on for it. |
+| <Link id="m-consume" /><code>{"bool Consume()"}</code> | <span className="api-desc">Server: uses up one charge if the mould has limited uses and syncs it. Returns true when uses reach zero.</span> |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Sets up the network syncs for the definition and the remaining uses.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Sends the current definition and uses to a player who joins.</span> |
+| <Link id="m-setdefinition" /><code>{"void SetDefinition("}<Link to="/mod/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition, bool isOnvalidate = false)"}</code> | <span className="api-desc">Changes what the mould casts. The server syncs it; clients rebuild the mesh, cost and output-count visuals.</span> |
+| <Link id="m-generate" /><code>{"protected override void Generate("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">On first spawn, gives the mould a random definition if generation is turned on for it.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty in this build. |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private: syncs the definition hash and, if the mould has limited uses, the uses left. Clients apply them. |
-| <Link id="m-syncuse-2" /><code>{"private void SyncUse("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private: syncs the uses left and updates the visual on clients. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Private: syncs the definition hash and, if the mould has limited uses, the uses left. Clients apply them.</span> |
+| <Link id="m-syncuse-2" /><code>{"private void SyncUse("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Private: syncs the uses left and updates the visual on clients.</span> |
 
 </details>
 
@@ -93,4 +93,8 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 
 Members of other types that take, return or hold a `Mould`:
 
+<div className="api-used-in">
+
 [`Smelter.currentMould`](/mod/game-api/types/alta-crafting/smelter#m-currentmould), [`MouldCopyTest.CheckMouldDock`](/mod/game-api/types/global-m-o/mouldcopytest#m-checkmoulddock), [`MouldCopyTest.mould`](/mod/game-api/types/global-m-o/mouldcopytest#m-mould).
+
+</div>

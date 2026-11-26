@@ -28,4 +28,8 @@ Group join type: Open, Public or Private. Group discovery lists the public and o
 
 Members of other types that take, return or hold a `GroupType`:
 
+<div className="api-used-in">
+
 [`GroupGet.GroupGet`](/mod/game-api/types/assembly-api-client/groupget#m-ctor), [`LowLevelApiClient.GetGroupsByType`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getgroupsbytype), [`CreateGroupAndServerRequest.GroupType`](/mod/game-api/types/assembly-api-models/creategroupandserverrequest#m-grouptype), [`CreateGroupRequest.Type`](/mod/game-api/types/assembly-api-models/creategrouprequest#m-type), [`EditGroupRequest.Type`](/mod/game-api/types/assembly-api-models/editgrouprequest#m-type), [`EditGroupRequest.Visibility`](/mod/game-api/types/assembly-api-models/editgrouprequest#m-visibility), [`GroupInfo.GroupType`](/mod/game-api/types/assembly-api-models/groupinfo#m-grouptype), [`GroupTypeExtensions.ConvertToServerJoinType`](/mod/game-api/types/assembly-api-models/grouptypeextensions#m-converttoserverjointype).
+
+</div>

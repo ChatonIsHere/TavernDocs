@@ -21,7 +21,7 @@ Internal exception type for an object that has been destroyed. Nothing in this b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectDestroyedException()"}</code> | Creates the exception with `info`, `context`. |
-| <Link id="m-ctor-2" /><code>{"ObjectDestroyedException(string message)"}</code> | Creates the exception with `info`, `context`. |
-| <Link id="m-ctor-3" /><code>{"ObjectDestroyedException(string message, Exception innerException)"}</code> | Creates the exception with `info`, `context`. |
-| <Link id="m-ctor-4" /><code>{"protected ObjectDestroyedException(SerializationInfo info, StreamingContext context)"}</code> | Creates the exception with `info`, `context`. |
+| <Link id="m-ctor" /><code>{"ObjectDestroyedException()"}</code> | <span className="api-desc">Creates the exception with `info`, `context`.</span> |
+| <Link id="m-ctor-2" /><code>{"ObjectDestroyedException(string message)"}</code> | <span className="api-desc">Creates the exception with `info`, `context`.</span> |
+| <Link id="m-ctor-3" /><code>{"ObjectDestroyedException(string message, Exception innerException)"}</code> | <span className="api-desc">Creates the exception with `info`, `context`.</span> |
+| <Link id="m-ctor-4" /><code>{"protected ObjectDestroyedException(SerializationInfo info, StreamingContext context)"}</code> | <span className="api-desc">Creates the exception with `info`, `context`.</span> |

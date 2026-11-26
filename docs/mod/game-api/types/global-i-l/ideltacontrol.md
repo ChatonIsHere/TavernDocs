@@ -21,4 +21,4 @@ An input that reports amounts of movement, such as a `Crank`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deltaprovided" /><code>{"event Action<float> DeltaProvided"}</code> | Raised with each amount of movement. |
+| <Link id="m-deltaprovided" /><code>{"event Action<float> DeltaProvided"}</code> | <span className="api-desc">Raised with each amount of movement.</span> |

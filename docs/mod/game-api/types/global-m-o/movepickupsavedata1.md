@@ -22,25 +22,25 @@ Old save data (version 1) for `MovePickup`. Migrating it throws all the values a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> | Creates a `MovePickupSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> | <span className="api-desc">Creates a `MovePickupSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fallspeedsaved" /><code>{"float fallSpeedSaved"}</code> | Old saved fall speed; dropped on migration. |
-| <Link id="m-handsrequiredtoliftsaved" /><code>{"int handsRequiredToLiftSaved"}</code> | Old saved hands needed to lift; dropped on migration. |
-| <Link id="m-maxdistancepersecondperhandsaved" /><code>{"float maxDistancePerSecondPerHandSaved"}</code> | Old saved per hand speed limit; dropped on migration. |
-| <Link id="m-maxdistancepersecondtotalsaved" /><code>{"float maxDistancePerSecondTotalSaved"}</code> | Old saved total speed limit; dropped on migration. |
-| <Link id="m-maxdistancesaved" /><code>{"float maxDistanceSaved"}</code> | Old saved maximum distance; dropped on migration. |
-| <Link id="m-movementaxisxsaved" /><code>{"float movementAxisXSaved"}</code> | Old saved movement axis X; dropped on migration. |
-| <Link id="m-movementaxisysaved" /><code>{"float movementAxisYSaved"}</code> | Old saved movement axis Y; dropped on migration. |
-| <Link id="m-movementaxiszsaved" /><code>{"float movementAxisZSaved"}</code> | Old saved movement axis Z; dropped on migration. |
-| <Link id="m-readytodisablesaved" /><code>{"bool readyToDisableSaved"}</code> | Old saved ready to disable flag; dropped on migration. |
-| <Link id="m-totaldistancesaved" /><code>{"float totalDistanceSaved"}</code> | Old saved distance moved; dropped on migration. |
+| <Link id="m-fallspeedsaved" /><code>{"float fallSpeedSaved"}</code> | <span className="api-desc">Old saved fall speed; dropped on migration.</span> |
+| <Link id="m-handsrequiredtoliftsaved" /><code>{"int handsRequiredToLiftSaved"}</code> | <span className="api-desc">Old saved hands needed to lift; dropped on migration.</span> |
+| <Link id="m-maxdistancepersecondperhandsaved" /><code>{"float maxDistancePerSecondPerHandSaved"}</code> | <span className="api-desc">Old saved per hand speed limit; dropped on migration.</span> |
+| <Link id="m-maxdistancepersecondtotalsaved" /><code>{"float maxDistancePerSecondTotalSaved"}</code> | <span className="api-desc">Old saved total speed limit; dropped on migration.</span> |
+| <Link id="m-maxdistancesaved" /><code>{"float maxDistanceSaved"}</code> | <span className="api-desc">Old saved maximum distance; dropped on migration.</span> |
+| <Link id="m-movementaxisxsaved" /><code>{"float movementAxisXSaved"}</code> | <span className="api-desc">Old saved movement axis X; dropped on migration.</span> |
+| <Link id="m-movementaxisysaved" /><code>{"float movementAxisYSaved"}</code> | <span className="api-desc">Old saved movement axis Y; dropped on migration.</span> |
+| <Link id="m-movementaxiszsaved" /><code>{"float movementAxisZSaved"}</code> | <span className="api-desc">Old saved movement axis Z; dropped on migration.</span> |
+| <Link id="m-readytodisablesaved" /><code>{"bool readyToDisableSaved"}</code> | <span className="api-desc">Old saved ready to disable flag; dropped on migration.</span> |
+| <Link id="m-totaldistancesaved" /><code>{"float totalDistanceSaved"}</code> | <span className="api-desc">Old saved distance moved; dropped on migration.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a blank `MovePickupSaveData`; none of the old values carry over. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Returns a blank `MovePickupSaveData`; none of the old values carry over.</span> |

@@ -21,4 +21,4 @@ Helpers for sequences of PAGaC grid `Node`s.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-within" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Within(IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes, int minX, int minY, int minZ, int maxX, int maxY, int maxZ) (iterator)"}</code> | Yields the nodes whose coordinates fall inside the given box, bounds included. |
+| <Link id="m-within" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> Within(IEnumerable<"}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes, int minX, int minY, int minZ, int maxX, int maxY, int maxZ) (iterator)"}</code> | <span className="api-desc">Yields the nodes whose coordinates fall inside the given box, bounds included.</span> |

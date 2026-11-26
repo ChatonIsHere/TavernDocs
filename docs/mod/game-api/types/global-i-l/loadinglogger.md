@@ -20,5 +20,5 @@ Holds a shared NLog logger named `LoadingLogger` for loading messages.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | The shared logger. |
-| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | The logger name, `LoadingLogger`. |
+| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | <span className="api-desc">The shared logger.</span> |
+| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | <span className="api-desc">The logger name, `LoadingLogger`.</span> |

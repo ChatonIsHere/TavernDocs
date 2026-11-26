@@ -21,16 +21,16 @@ A pooled object that shows text through a `TextRenderer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledTextRenderer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PooledTextRenderer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | The renderer that shows the text. |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | <span className="api-desc">The renderer that shows the text.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A pooled object that shows text through a `TextRenderer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-text" /><code>{"string Text { get; set; }"}</code> | The text shown. |
+| <Link id="m-text" /><code>{"string Text { get; set; }"}</code> | <span className="api-desc">The text shown.</span> |

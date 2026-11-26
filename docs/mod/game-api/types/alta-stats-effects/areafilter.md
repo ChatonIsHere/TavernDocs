@@ -28,4 +28,8 @@ Flags for which part of a player a stat area affects: `None`, `Body` or `Mind`. 
 
 Members of other types that take, return or hold a `AreaFilter`:
 
+<div className="api-used-in">
+
 [`StatAffectAccessor.filters`](/mod/game-api/types/alta-stats-effects/stataffectaccessor#m-filters), [`StatAffectAccessor.IsAffecting`](/mod/game-api/types/alta-stats-effects/stataffectaccessor#m-isaffecting), [`StatAffectingArea.target`](/mod/game-api/types/alta-stats-effects/stataffectingarea#m-target).
+
+</div>

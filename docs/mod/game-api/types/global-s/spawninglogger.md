@@ -20,5 +20,5 @@ Holds the NLog logger that spawn timing (`SpawningTimerNew`) writes to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | The spawn timing logger. |
-| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | Logger name, spelt `SpawingLogger`. |
+| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | <span className="api-desc">The spawn timing logger.</span> |
+| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | <span className="api-desc">Logger name, spelt `SpawingLogger`.</span> |

@@ -21,10 +21,14 @@ An `EditableSlot` for cosmetics, used by `CosmeticCustomizationManager`. Adds no
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditableCosmeticSlot()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EditableCosmeticSlot()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EditableCosmeticSlot`:
 
+<div className="api-used-in">
+
 [`CosmeticCustomizationManager.editableSlots`](/mod/game-api/types/alta-customization/cosmeticcustomizationmanager#m-editableslots).
+
+</div>

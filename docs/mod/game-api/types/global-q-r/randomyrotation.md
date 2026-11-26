@@ -21,10 +21,10 @@ Generated positioning module that spins the placed object by a random angle arou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomYRotation()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RandomYRotation()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> | Adds a random 0 to 360 degree rotation around the up axis. |
+| <Link id="m-modify" /><code>{"override void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> | <span className="api-desc">Adds a random 0 to 360 degree rotation around the up axis.</span> |

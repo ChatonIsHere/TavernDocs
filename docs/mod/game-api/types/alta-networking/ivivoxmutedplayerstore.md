@@ -21,12 +21,16 @@ Internal store of user IDs the local player has muted. `VoiceChat` uses the Play
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"bool Add(int userId)"}</code> | Adds a user ID. False if it was already there. |
-| <Link id="m-contains" /><code>{"bool Contains(int userId)"}</code> | True if the user ID is muted. |
-| <Link id="m-remove" /><code>{"bool Remove(int userId)"}</code> | Removes a user ID. False if it wasn't there. |
+| <Link id="m-add" /><code>{"bool Add(int userId)"}</code> | <span className="api-desc">Adds a user ID. False if it was already there.</span> |
+| <Link id="m-contains" /><code>{"bool Contains(int userId)"}</code> | <span className="api-desc">True if the user ID is muted.</span> |
+| <Link id="m-remove" /><code>{"bool Remove(int userId)"}</code> | <span className="api-desc">Removes a user ID. False if it wasn't there.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IVivoxMutedPlayerStore`:
 
+<div className="api-used-in">
+
 [`VoiceChat.mutedStore`](/mod/game-api/types/alta-networking/voicechat#m-mutedstore).
+
+</div>

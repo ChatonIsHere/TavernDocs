@@ -27,4 +27,8 @@ Which Alta platform region an account belongs to: Global or China.
 
 Members of other types that take, return or hold a `Region`:
 
+<div className="api-used-in">
+
 [`IPicoClient.GetLinkedAccount`](/mod/game-api/types/assembly-api-client/ipicoclient#m-getlinkedaccount), [`IPicoClient.HasLinkedAccount`](/mod/game-api/types/assembly-api-client/ipicoclient#m-haslinkedaccount), [`IPicoClient.LinkLoggedInAccount`](/mod/game-api/types/assembly-api-client/ipicoclient#m-linkloggedinaccount), [`PicoClient.GetLinkedAccount`](/mod/game-api/types/assembly-api-client/picoclient#m-getlinkedaccount), [`PicoClient.HasLinkedAccount`](/mod/game-api/types/assembly-api-client/picoclient#m-haslinkedaccount), [`PicoClient.LinkLoggedInAccount`](/mod/game-api/types/assembly-api-client/picoclient#m-linkloggedinaccount), [`AccountLinkData.Region`](/mod/game-api/types/assembly-api-models/accountlinkdata#m-region), [`AccountRequestBase.Region`](/mod/game-api/types/assembly-api-models/accountrequestbase#m-region).
+
+</div>

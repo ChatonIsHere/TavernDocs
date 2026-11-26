@@ -22,15 +22,15 @@ Private comparer that treats floats within 0.01 of each other as equal, so `Wait
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> | Creates a `CoroutineYields.FloatComparer` with default values. |
+| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> | <span className="api-desc">Creates a `CoroutineYields.FloatComparer` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"private const float check"}</code> | The 0.01 tolerance. |
+| <Link id="m-check" /><code>{"private const float check"}</code> | <span className="api-desc">The 0.01 tolerance.</span> |
 
 </details>

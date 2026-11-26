@@ -22,10 +22,10 @@ Gives a console module or command extra names it can be called by, such as `mic`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> | Creates an `AliasAttribute` from `aliases`. |
+| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> | <span className="api-desc">Creates an `AliasAttribute` from `aliases`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-aliases" /><code>{"string[] Aliases { get; private set; }"}</code> | The extra names. |
+| <Link id="m-aliases" /><code>{"string[] Aliases { get; private set; }"}</code> | <span className="api-desc">The extra names.</span> |

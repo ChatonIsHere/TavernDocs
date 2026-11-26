@@ -23,16 +23,16 @@ Forest fill modifier asset that gives each spawn a random uniform scale from a c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomScaleModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RandomScaleModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sizecurve" /><code>{"private AnimationCurve sizeCurve"}</code> | Maps a random 0 to 1 value to scale. |
+| <Link id="m-sizecurve" /><code>{"private AnimationCurve sizeCurve"}</code> | <span className="api-desc">Maps a random 0 to 1 value to scale.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill modifier asset that gives each spawn a random uniform scale from a c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | Sets the spawn's scale to the curve value at a random 0 to 1 input. Replaces any earlier scale. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Sets the spawn's scale to the curve value at a random 0 to 1 input. Replaces any earlier scale.</span> |

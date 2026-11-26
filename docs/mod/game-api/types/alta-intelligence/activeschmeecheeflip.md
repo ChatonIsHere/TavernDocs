@@ -21,17 +21,17 @@ Schmeechee action that flips it back over when upside down: a pop animation, the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlip()"}</code> | Creates an `ActiveSchmeecheeFlip` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlip()"}</code> | <span className="api-desc">Creates an `ActiveSchmeecheeFlip` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nexttime" /><code>{"private float nextTime"}</code> | Time the next step runs. |
-| <Link id="m-step" /><code>{"private int step"}</code> | Which step of the flip comes next. |
+| <Link id="m-nexttime" /><code>{"private float nextTime"}</code> | <span className="api-desc">Time the next step runs.</span> |
+| <Link id="m-step" /><code>{"private int step"}</code> | <span className="api-desc">Which step of the flip comes next.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Schmeechee action that flips it back over when upside down: a pop animation, the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Step 0 cancels if upright or pops; step 1 adds the flip force and torque; then finishes. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Resets the step and waits a random head-flip time. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Step 0 cancels if upright or pops; step 1 adds the flip force and torque; then finishes.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Resets the step and waits a random head-flip time.</span> |

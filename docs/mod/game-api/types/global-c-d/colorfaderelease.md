@@ -21,17 +21,17 @@ Delayed pooled object that fades its particle systems' start and trail colour al
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColorFadeRelease()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColorFadeRelease()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fadeoutduration" /><code>{"private float fadeOutDuration"}</code> | Seconds to fade out before the release delay. |
-| <Link id="m-systemstochange" /><code>{"private ParticleSystem[] systemsToChange"}</code> | Particle systems that fade. |
+| <Link id="m-fadeoutduration" /><code>{"private float fadeOutDuration"}</code> | <span className="api-desc">Seconds to fade out before the release delay.</span> |
+| <Link id="m-systemstochange" /><code>{"private ParticleSystem[] systemsToChange"}</code> | <span className="api-desc">Particle systems that fade.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ Delayed pooled object that fades its particle systems' start and trail colour al
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delayrelease" /><code>{"protected override IEnumerator DelayRelease() (iterator)"}</code> | Fades alpha over `fadeOutDuration`, waits the release delay, then releases. |
+| <Link id="m-delayrelease" /><code>{"protected override IEnumerator DelayRelease() (iterator)"}</code> | <span className="api-desc">Fades alpha over `fadeOutDuration`, waits the release delay, then releases.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Resets alpha to full whenever it's taken from the pool. |
-| <Link id="m-resetsystems" /><code>{"private void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Sets alpha back to 1. |
-| <Link id="m-updatesystems" /><code>{"private void UpdateSystems(float alpha)"}</code> | Sets start colour and (if on) trail colour alpha on each system. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Resets alpha to full whenever it's taken from the pool.</span> |
+| <Link id="m-resetsystems" /><code>{"private void ResetSystems("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Sets alpha back to 1.</span> |
+| <Link id="m-updatesystems" /><code>{"private void UpdateSystems(float alpha)"}</code> | <span className="api-desc">Sets start colour and (if on) trail colour alpha on each system.</span> |
 
 </details>

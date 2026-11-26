@@ -23,10 +23,10 @@ Save data for `HealthBasedDigable`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> | Creates a `HealthBasedDigableData` with default values. |
+| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> | <span className="api-desc">Creates a `HealthBasedDigableData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenthealth" /><code>{"float currentHealth"}</code> | Remaining dig health from 1 down to 0. |
+| <Link id="m-currenthealth" /><code>{"float currentHealth"}</code> | <span className="api-desc">Remaining dig health from 1 down to 0.</span> |

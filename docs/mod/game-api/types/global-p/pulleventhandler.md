@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a `PullPickup`, for inspector-wired pull c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PullEventHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PullEventHandler()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

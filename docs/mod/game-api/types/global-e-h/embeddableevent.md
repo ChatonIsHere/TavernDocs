@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes an `Embeddable`, so inspector-wired listene
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableEvent()"}</code> | Creates an `EmbeddableEvent` with default values. |
+| <Link id="m-ctor" /><code>{"EmbeddableEvent()"}</code> | <span className="api-desc">Creates an `EmbeddableEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EmbeddableEvent`:
 
+<div className="api-used-in">
+
 [`Embeddable.embedded`](/mod/game-api/types/global-e-h/embeddable#m-embedded), [`Embeddable.unembedded`](/mod/game-api/types/global-e-h/embeddable#m-unembedded).
+
+</div>

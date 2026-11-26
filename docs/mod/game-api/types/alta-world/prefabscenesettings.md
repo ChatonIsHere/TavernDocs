@@ -24,42 +24,42 @@ Asset with day and night sky, sun, moon and fog curves for a prefab scene, read 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabSceneSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PrefabSceneSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>27 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btncopy" /><code>{"private bool btnCopy"}</code> | Inspector button that runs `Copy`. |
-| <Link id="m-cloudscoloroverday" /><code>{"private Gradient cloudsColorOverDay"}</code> | Backing field for `CloudsColorOverDay`. |
-| <Link id="m-debugdayprogress" /><code>{"private float debugDayProgress"}</code> | Editor preview of the time of day, from 0 to 1. |
-| <Link id="m-debugmonthprogress" /><code>{"private float debugMonthProgress"}</code> | Editor preview of the month (moon) progress, from 0 to 1. |
-| <Link id="m-fogcolorduringday" /><code>{"private Gradient fogColorDuringDay"}</code> | Backing field for `FogColorDuringDay`. |
-| <Link id="m-fogdensityduringday" /><code>{"private AnimationCurve fogDensityDuringDay"}</code> | Backing field for `FogDensityDuringDay`. |
-| <Link id="m-haloinversesizeoverday" /><code>{"private AnimationCurve haloInverseSizeOverDay"}</code> | Backing field for `HaloInverseSizeOverDay`. |
-| <Link id="m-moonambience" /><code>{"private Gradient moonAmbience"}</code> | Backing field for `MoonAmbience`. |
-| <Link id="m-moonfadeintime" /><code>{"private float moonFadeInTime"}</code> | Backing field for `MoonFadeInTime` (default 30). |
-| <Link id="m-moonlightintensitycurve" /><code>{"private AnimationCurve moonLightIntensityCurve"}</code> | Backing field for `MoonLightIntensityCurve`. |
-| <Link id="m-moonspiningaxis" /><code>{"private Vector3 moonSpiningAxis"}</code> | Backing field for `MoonSpiningAxis`. |
-| <Link id="m-moontosundotshift" /><code>{"private float moonToSunDotShift"}</code> | Sun height below the horizon where ambient light starts blending from moon to sun ambience. |
-| <Link id="m-nighttimeshift" /><code>{"private float nightTimeShift"}</code> | Backing field for `NightTimeShift`. |
-| <Link id="m-skybotcolor" /><code>{"private Gradient skyBotcolor"}</code> | Backing field for `SkyBotcolor`. |
-| <Link id="m-skyboxmaterial" /><code>{"private Material skyBoxMaterial"}</code> | Backing field for `SkyBoxMaterial`. |
-| <Link id="m-skycolorbotbending" /><code>{"private AnimationCurve skyColorBotBending"}</code> | Backing field for `SkyColorBotBending`. |
-| <Link id="m-skycolormidpointposition" /><code>{"private AnimationCurve skyColorMidPointPosition"}</code> | Backing field for `SkyColorMidPointPosition`. |
-| <Link id="m-skycolortopbending" /><code>{"private AnimationCurve skyColorTopBending"}</code> | Backing field for `SkyColorTopBending`. |
-| <Link id="m-skymidcolor" /><code>{"private Gradient skyMidcolor"}</code> | Backing field for `SkyMidcolor`. |
-| <Link id="m-skytopcolor" /><code>{"private Gradient skyTopcolor"}</code> | Backing field for `SkyTopcolor`. |
-| <Link id="m-sunambience" /><code>{"private Gradient sunAmbience"}</code> | Backing field for `SunAmbience`. |
-| <Link id="m-suncolor" /><code>{"private Gradient sunColor"}</code> | Backing field for `SunColor`. |
-| <Link id="m-suninversesizeoverday" /><code>{"private AnimationCurve sunInverseSizeOverDay"}</code> | Backing field for `SunInverseSizeOverDay`. |
-| <Link id="m-sunlightduringday" /><code>{"private Gradient sunlightDuringDay"}</code> | Backing field for `SunlightDuringDay`. |
-| <Link id="m-sunlightintensitycurve" /><code>{"private AnimationCurve sunLightIntensityCurve"}</code> | Backing field for `SunLightIntensityCurve`. |
-| <Link id="m-sunspiningaxis" /><code>{"private Vector3 sunSpiningAxis"}</code> | Backing field for `SunSpiningAxis`. |
-| <Link id="m-sunupskew" /><code>{"private float sunUpSkew"}</code> | Backing field for `SunUpSkew`. |
+| <Link id="m-btncopy" /><code>{"private bool btnCopy"}</code> | <span className="api-desc">Inspector button that runs `Copy`.</span> |
+| <Link id="m-cloudscoloroverday" /><code>{"private Gradient cloudsColorOverDay"}</code> | <span className="api-desc">Backing field for `CloudsColorOverDay`.</span> |
+| <Link id="m-debugdayprogress" /><code>{"private float debugDayProgress"}</code> | <span className="api-desc">Editor preview of the time of day, from 0 to 1.</span> |
+| <Link id="m-debugmonthprogress" /><code>{"private float debugMonthProgress"}</code> | <span className="api-desc">Editor preview of the month (moon) progress, from 0 to 1.</span> |
+| <Link id="m-fogcolorduringday" /><code>{"private Gradient fogColorDuringDay"}</code> | <span className="api-desc">Backing field for `FogColorDuringDay`.</span> |
+| <Link id="m-fogdensityduringday" /><code>{"private AnimationCurve fogDensityDuringDay"}</code> | <span className="api-desc">Backing field for `FogDensityDuringDay`.</span> |
+| <Link id="m-haloinversesizeoverday" /><code>{"private AnimationCurve haloInverseSizeOverDay"}</code> | <span className="api-desc">Backing field for `HaloInverseSizeOverDay`.</span> |
+| <Link id="m-moonambience" /><code>{"private Gradient moonAmbience"}</code> | <span className="api-desc">Backing field for `MoonAmbience`.</span> |
+| <Link id="m-moonfadeintime" /><code>{"private float moonFadeInTime"}</code> | <span className="api-desc">Backing field for `MoonFadeInTime` (default 30).</span> |
+| <Link id="m-moonlightintensitycurve" /><code>{"private AnimationCurve moonLightIntensityCurve"}</code> | <span className="api-desc">Backing field for `MoonLightIntensityCurve`.</span> |
+| <Link id="m-moonspiningaxis" /><code>{"private Vector3 moonSpiningAxis"}</code> | <span className="api-desc">Backing field for `MoonSpiningAxis`.</span> |
+| <Link id="m-moontosundotshift" /><code>{"private float moonToSunDotShift"}</code> | <span className="api-desc">Sun height below the horizon where ambient light starts blending from moon to sun ambience.</span> |
+| <Link id="m-nighttimeshift" /><code>{"private float nightTimeShift"}</code> | <span className="api-desc">Backing field for `NightTimeShift`.</span> |
+| <Link id="m-skybotcolor" /><code>{"private Gradient skyBotcolor"}</code> | <span className="api-desc">Backing field for `SkyBotcolor`.</span> |
+| <Link id="m-skyboxmaterial" /><code>{"private Material skyBoxMaterial"}</code> | <span className="api-desc">Backing field for `SkyBoxMaterial`.</span> |
+| <Link id="m-skycolorbotbending" /><code>{"private AnimationCurve skyColorBotBending"}</code> | <span className="api-desc">Backing field for `SkyColorBotBending`.</span> |
+| <Link id="m-skycolormidpointposition" /><code>{"private AnimationCurve skyColorMidPointPosition"}</code> | <span className="api-desc">Backing field for `SkyColorMidPointPosition`.</span> |
+| <Link id="m-skycolortopbending" /><code>{"private AnimationCurve skyColorTopBending"}</code> | <span className="api-desc">Backing field for `SkyColorTopBending`.</span> |
+| <Link id="m-skymidcolor" /><code>{"private Gradient skyMidcolor"}</code> | <span className="api-desc">Backing field for `SkyMidcolor`.</span> |
+| <Link id="m-skytopcolor" /><code>{"private Gradient skyTopcolor"}</code> | <span className="api-desc">Backing field for `SkyTopcolor`.</span> |
+| <Link id="m-sunambience" /><code>{"private Gradient sunAmbience"}</code> | <span className="api-desc">Backing field for `SunAmbience`.</span> |
+| <Link id="m-suncolor" /><code>{"private Gradient sunColor"}</code> | <span className="api-desc">Backing field for `SunColor`.</span> |
+| <Link id="m-suninversesizeoverday" /><code>{"private AnimationCurve sunInverseSizeOverDay"}</code> | <span className="api-desc">Backing field for `SunInverseSizeOverDay`.</span> |
+| <Link id="m-sunlightduringday" /><code>{"private Gradient sunlightDuringDay"}</code> | <span className="api-desc">Backing field for `SunlightDuringDay`.</span> |
+| <Link id="m-sunlightintensitycurve" /><code>{"private AnimationCurve sunLightIntensityCurve"}</code> | <span className="api-desc">Backing field for `SunLightIntensityCurve`.</span> |
+| <Link id="m-sunspiningaxis" /><code>{"private Vector3 sunSpiningAxis"}</code> | <span className="api-desc">Backing field for `SunSpiningAxis`.</span> |
+| <Link id="m-sunupskew" /><code>{"private float sunUpSkew"}</code> | <span className="api-desc">Backing field for `SunUpSkew`.</span> |
 
 </details>
 
@@ -67,41 +67,45 @@ Asset with day and night sky, sun, moon and fog curves for a prefab scene, read 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cloudscoloroverday-2" /><code>{"Gradient CloudsColorOverDay { get; }"}</code> | Cloud colour through the day. |
-| <Link id="m-debugdayprogress-2" /><code>{"float DebugDayProgress { get; }"}</code> | Editor preview of day progress (0 to 1). |
-| <Link id="m-debugmonthprogress-2" /><code>{"float DebugMonthProgress { get; }"}</code> | Editor preview of month progress (0 to 1). |
-| <Link id="m-fogcolorduringday-2" /><code>{"Gradient FogColorDuringDay { get; }"}</code> | Fog colour through the day. |
-| <Link id="m-fogdensityduringday-2" /><code>{"AnimationCurve FogDensityDuringDay { get; }"}</code> | Fog density through the day. |
-| <Link id="m-haloinversesizeoverday-2" /><code>{"AnimationCurve HaloInverseSizeOverDay { get; }"}</code> | Inverse size of the sun halo through the day. |
-| <Link id="m-moonambience-2" /><code>{"Gradient MoonAmbience { get; }"}</code> | Ambient colour from the moon. |
-| <Link id="m-moonfadeintime-2" /><code>{"float MoonFadeInTime { get; }"}</code> | Time the moon takes to fade in. |
-| <Link id="m-moonlightintensitycurve-2" /><code>{"AnimationCurve MoonLightIntensityCurve { get; }"}</code> | Moonlight intensity through the night. |
-| <Link id="m-moonspiningaxis-2" /><code>{"Vector3 MoonSpiningAxis { get; }"}</code> | Axis the moon turns around. |
-| <Link id="m-moontosundotshift-2" /><code>{"float MoonToSunDotShift { get; }"}</code> | Shift between moon and sun positions, lerped from this value to 0. |
-| <Link id="m-nighttimeshift-2" /><code>{"float NightTimeShift { get; }"}</code> | Skybox shift used at night (default -0.004). |
-| <Link id="m-skybotcolor-2" /><code>{"Gradient SkyBotcolor { get; }"}</code> | Sky colour near the horizon through the day. |
-| <Link id="m-skyboxmaterial-2" /><code>{"Material SkyBoxMaterial { get; }"}</code> | The skybox material these values drive. |
-| <Link id="m-skycolorbotbending-2" /><code>{"AnimationCurve SkyColorBotBending { get; }"}</code> | How the lower sky gradient bends through the day. |
-| <Link id="m-skycolormidpointposition-2" /><code>{"AnimationCurve SkyColorMidPointPosition { get; }"}</code> | Where the middle sky colour sits through the day. |
-| <Link id="m-skycolortopbending-2" /><code>{"AnimationCurve SkyColorTopBending { get; }"}</code> | How the upper sky gradient bends through the day. |
-| <Link id="m-skymidcolor-2" /><code>{"Gradient SkyMidcolor { get; }"}</code> | Middle sky colour through the day. |
-| <Link id="m-skytopcolor-2" /><code>{"Gradient SkyTopcolor { get; }"}</code> | Sky colour overhead through the day. |
-| <Link id="m-sunambience-2" /><code>{"Gradient SunAmbience { get; }"}</code> | Ambient colour from the sun through the day. |
-| <Link id="m-suncolor-2" /><code>{"Gradient SunColor { get; }"}</code> | Sun colour through the day. |
-| <Link id="m-suninversesizeoverday-2" /><code>{"AnimationCurve SunInverseSizeOverDay { get; }"}</code> | Inverse size of the sun disc through the day. |
-| <Link id="m-sunlightduringday-2" /><code>{"Gradient SunlightDuringDay { get; }"}</code> | Sunlight colour through the day. |
-| <Link id="m-sunlightintensitycurve-2" /><code>{"AnimationCurve SunLightIntensityCurve { get; }"}</code> | Sunlight intensity through the day. |
-| <Link id="m-sunspiningaxis-2" /><code>{"Vector3 SunSpiningAxis { get; }"}</code> | Axis the sun turns around. |
-| <Link id="m-sunupskew-2" /><code>{"float SunUpSkew { get; }"}</code> | Degrees added past each horizon to the sun's daytime arc, so the sun is up for more than half the cycle. |
+| <Link id="m-cloudscoloroverday-2" /><code>{"Gradient CloudsColorOverDay { get; }"}</code> | <span className="api-desc">Cloud colour through the day.</span> |
+| <Link id="m-debugdayprogress-2" /><code>{"float DebugDayProgress { get; }"}</code> | <span className="api-desc">Editor preview of day progress (0 to 1).</span> |
+| <Link id="m-debugmonthprogress-2" /><code>{"float DebugMonthProgress { get; }"}</code> | <span className="api-desc">Editor preview of month progress (0 to 1).</span> |
+| <Link id="m-fogcolorduringday-2" /><code>{"Gradient FogColorDuringDay { get; }"}</code> | <span className="api-desc">Fog colour through the day.</span> |
+| <Link id="m-fogdensityduringday-2" /><code>{"AnimationCurve FogDensityDuringDay { get; }"}</code> | <span className="api-desc">Fog density through the day.</span> |
+| <Link id="m-haloinversesizeoverday-2" /><code>{"AnimationCurve HaloInverseSizeOverDay { get; }"}</code> | <span className="api-desc">Inverse size of the sun halo through the day.</span> |
+| <Link id="m-moonambience-2" /><code>{"Gradient MoonAmbience { get; }"}</code> | <span className="api-desc">Ambient colour from the moon.</span> |
+| <Link id="m-moonfadeintime-2" /><code>{"float MoonFadeInTime { get; }"}</code> | <span className="api-desc">Time the moon takes to fade in.</span> |
+| <Link id="m-moonlightintensitycurve-2" /><code>{"AnimationCurve MoonLightIntensityCurve { get; }"}</code> | <span className="api-desc">Moonlight intensity through the night.</span> |
+| <Link id="m-moonspiningaxis-2" /><code>{"Vector3 MoonSpiningAxis { get; }"}</code> | <span className="api-desc">Axis the moon turns around.</span> |
+| <Link id="m-moontosundotshift-2" /><code>{"float MoonToSunDotShift { get; }"}</code> | <span className="api-desc">Shift between moon and sun positions, lerped from this value to 0.</span> |
+| <Link id="m-nighttimeshift-2" /><code>{"float NightTimeShift { get; }"}</code> | <span className="api-desc">Skybox shift used at night (default -0.004).</span> |
+| <Link id="m-skybotcolor-2" /><code>{"Gradient SkyBotcolor { get; }"}</code> | <span className="api-desc">Sky colour near the horizon through the day.</span> |
+| <Link id="m-skyboxmaterial-2" /><code>{"Material SkyBoxMaterial { get; }"}</code> | <span className="api-desc">The skybox material these values drive.</span> |
+| <Link id="m-skycolorbotbending-2" /><code>{"AnimationCurve SkyColorBotBending { get; }"}</code> | <span className="api-desc">How the lower sky gradient bends through the day.</span> |
+| <Link id="m-skycolormidpointposition-2" /><code>{"AnimationCurve SkyColorMidPointPosition { get; }"}</code> | <span className="api-desc">Where the middle sky colour sits through the day.</span> |
+| <Link id="m-skycolortopbending-2" /><code>{"AnimationCurve SkyColorTopBending { get; }"}</code> | <span className="api-desc">How the upper sky gradient bends through the day.</span> |
+| <Link id="m-skymidcolor-2" /><code>{"Gradient SkyMidcolor { get; }"}</code> | <span className="api-desc">Middle sky colour through the day.</span> |
+| <Link id="m-skytopcolor-2" /><code>{"Gradient SkyTopcolor { get; }"}</code> | <span className="api-desc">Sky colour overhead through the day.</span> |
+| <Link id="m-sunambience-2" /><code>{"Gradient SunAmbience { get; }"}</code> | <span className="api-desc">Ambient colour from the sun through the day.</span> |
+| <Link id="m-suncolor-2" /><code>{"Gradient SunColor { get; }"}</code> | <span className="api-desc">Sun colour through the day.</span> |
+| <Link id="m-suninversesizeoverday-2" /><code>{"AnimationCurve SunInverseSizeOverDay { get; }"}</code> | <span className="api-desc">Inverse size of the sun disc through the day.</span> |
+| <Link id="m-sunlightduringday-2" /><code>{"Gradient SunlightDuringDay { get; }"}</code> | <span className="api-desc">Sunlight colour through the day.</span> |
+| <Link id="m-sunlightintensitycurve-2" /><code>{"AnimationCurve SunLightIntensityCurve { get; }"}</code> | <span className="api-desc">Sunlight intensity through the day.</span> |
+| <Link id="m-sunspiningaxis-2" /><code>{"Vector3 SunSpiningAxis { get; }"}</code> | <span className="api-desc">Axis the sun turns around.</span> |
+| <Link id="m-sunupskew-2" /><code>{"float SunUpSkew { get; }"}</code> | <span className="api-desc">Degrees added past each horizon to the sun's daytime arc, so the sun is up for more than half the cycle.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-copy" /><code>{"void Copy()"}</code> | Editor helper: copies every field with a matching name from the scene's `DayTimeManager` into this asset. |
+| <Link id="m-copy" /><code>{"void Copy()"}</code> | <span className="api-desc">Editor helper: copies every field with a matching name from the scene's `DayTimeManager` into this asset.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PrefabSceneSettings`:
 
+<div className="api-used-in">
+
 [`PrefabSceneDayTimeManager.settings`](/mod/game-api/types/alta-world/prefabscenedaytimemanager#m-settings).
+
+</div>

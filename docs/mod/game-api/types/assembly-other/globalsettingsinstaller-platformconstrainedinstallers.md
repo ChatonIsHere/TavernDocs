@@ -21,18 +21,18 @@ A group of `PlatformSpecificScriptableObjectInstaller` assets that only run on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> | Creates a `GlobalSettingsInstaller.PlatformConstrainedInstallers` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> | <span className="api-desc">Creates a `GlobalSettingsInstaller.PlatformConstrainedInstallers` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-installers" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformspecificscriptableobjectinstaller">{"PlatformSpecificScriptableObjectInstaller"}</Link>{"[] installers"}</code> | The installers in this group. |
-| <Link id="m-isvalidineditor" /><code>{"private bool isValidInEditor"}</code> | Whether the group also runs in the Unity editor. |
-| <Link id="m-validplatforms" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" validPlatforms"}</code> | Platforms the group runs on. |
+| <Link id="m-installers" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformspecificscriptableobjectinstaller">{"PlatformSpecificScriptableObjectInstaller"}</Link>{"[] installers"}</code> | <span className="api-desc">The installers in this group.</span> |
+| <Link id="m-isvalidineditor" /><code>{"private bool isValidInEditor"}</code> | <span className="api-desc">Whether the group also runs in the Unity editor.</span> |
+| <Link id="m-validplatforms" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" validPlatforms"}</code> | <span className="api-desc">Platforms the group runs on.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ A group of `PlatformSpecificScriptableObjectInstaller` assets that only run on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | Runs each installer in the group if the current runtime platform matches or the editor is allowed. |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | <span className="api-desc">Runs each installer in the group if the current runtime platform matches or the editor is allowed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalidifineditor" /><code>{"private bool IsValidIfInEditor()"}</code> | True in the editor when `isValidInEditor` is set. |
+| <Link id="m-isvalidifineditor" /><code>{"private bool IsValidIfInEditor()"}</code> | <span className="api-desc">True in the editor when `isValidInEditor` is set.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ A group of `PlatformSpecificScriptableObjectInstaller` assets that only run on t
 
 Members of other types that take, return or hold a `PlatformConstrainedInstallers`:
 
+<div className="api-used-in">
+
 [`GlobalSettingsInstaller.platformSpecificInstallers`](/mod/game-api/types/assembly-other/globalsettingsinstaller#m-platformspecificinstallers).
+
+</div>

@@ -20,16 +20,16 @@ Internal helper that keeps at most one `ModifierSet` applied at a time.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> | Creates a `SetSwitch` with default values. |
+| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> | <span className="api-desc">Creates a `SetSwitch` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-active" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" active"}</code> | The set that is applied now. |
+| <Link id="m-active" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" active"}</code> | <span className="api-desc">The set that is applied now.</span> |
 
 </details>
 
@@ -37,4 +37,4 @@ Internal helper that keeps at most one `ModifierSet` applied at a time.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/mod/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" set)"}</code> | Removes the current set and applies the new one, if it is different. Null clears it. |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/mod/game-api/types/alta-stats-effects/modifierset">{"ModifierSet"}</Link>{" set)"}</code> | <span className="api-desc">Removes the current set and applies the new one, if it is different. Null clears it.</span> |

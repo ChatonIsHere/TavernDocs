@@ -22,16 +22,16 @@ Array field attribute that fills the field with all matching components on the s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> | Creates a `GetComponentsAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> | <span className="api-desc">Creates a `GetComponentsAttribute` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ Array field attribute that fills the field with all matching components on the s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> | Also includes inactive objects (used by the children and parent variants). |
-| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> | Component type to look for. Defaults to the array's element type. |
-| <Link id="m-warnonempty" /><code>{"bool WarnOnEmpty { get; set; }"}</code> | Meant to log when nothing is found, but the check is never reached. |
+| <Link id="m-includeinactive" /><code>{"bool IncludeInActive { get; set; }"}</code> | <span className="api-desc">Also includes inactive objects (used by the children and parent variants).</span> |
+| <Link id="m-type" /><code>{"Type Type { get; set; }"}</code> | <span className="api-desc">Component type to look for. Defaults to the array's element type.</span> |
+| <Link id="m-warnonempty" /><code>{"bool WarnOnEmpty { get; set; }"}</code> | <span className="api-desc">Meant to log when nothing is found, but the check is never reached.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcomponents" /><code>{"virtual Component[] GetComponents(Transform transform, Type type)"}</code> | Finds the components. Overridden to search children or parents. |
-| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | Replaces the array if the found components differ; returns true if it changed. |
+| <Link id="m-getcomponents" /><code>{"virtual Component[] GetComponents(Transform transform, Type type)"}</code> | <span className="api-desc">Finds the components. Overridden to search children or parents.</span> |
+| <Link id="m-handleapply" /><code>{"override bool HandleApply(Component component, FieldInfo field, GameObject prefab)"}</code> | <span className="api-desc">Replaces the array if the found components differ; returns true if it changed.</span> |

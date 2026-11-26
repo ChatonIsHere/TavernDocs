@@ -21,17 +21,21 @@ Saved state of one running timer of a `SerializedTimedEvent`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimerData()"}</code> | Creates a `TimedEventSaveData.TimerData` with default values. |
+| <Link id="m-ctor" /><code>{"TimerData()"}</code> | <span className="api-desc">Creates a `TimedEventSaveData.TimerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-index" /><code>{"int index"}</code> | Index of the timed event setup this timer belongs to. |
-| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> | Saved timeline entry for the timer (a time span). |
+| <Link id="m-index" /><code>{"int index"}</code> | <span className="api-desc">Index of the timed event setup this timer belongs to.</span> |
+| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> | <span className="api-desc">Saved timeline entry for the timer (a time span).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TimerData`:
 
+<div className="api-used-in">
+
 [`SerializedTimedEvent.TimerData.Save`](/mod/game-api/types/global-s/serializedtimedevent-timerdata#m-save), [`TimedEventSaveData.timers`](/mod/game-api/types/global-t-x/timedeventsavedata#m-timers).
+
+</div>

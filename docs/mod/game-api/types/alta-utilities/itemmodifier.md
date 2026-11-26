@@ -22,11 +22,11 @@ Base for components that sit next to a `SplineDecorator` and pick or change the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ItemModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ItemModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getprefab" /><code>{"virtual GameObject GetPrefab(List<"}<Link to="/mod/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index)"}</code> | Returns the prefab to place at part `index`, or null to let the next modifier (or the default) choose. |
-| <Link id="m-modify" /><code>{"virtual void Modify(List<"}<Link to="/mod/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index, GameObject result)"}</code> | Called on each placed object so the modifier can change it. |
+| <Link id="m-getprefab" /><code>{"virtual GameObject GetPrefab(List<"}<Link to="/mod/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index)"}</code> | <span className="api-desc">Returns the prefab to place at part `index`, or null to let the next modifier (or the default) choose.</span> |
+| <Link id="m-modify" /><code>{"virtual void Modify(List<"}<Link to="/mod/game-api/types/alta-utilities/splinedecorator-part">{"SplineDecorator.Part"}</Link>{"> parts, int index, GameObject result)"}</code> | <span className="api-desc">Called on each placed object so the modifier can change it.</span> |

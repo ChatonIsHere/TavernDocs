@@ -21,17 +21,17 @@ A movement context that converts positions and rotations to and from a transform
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformMovementContext("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Creates a `TransformMovementContext` from `entity` and `transform`. |
-| <Link id="m-ctor-2" /><code>{"TransformMovementContext("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Transform transform)"}</code> | Creates a `TransformMovementContext` from `entity` and `transform`. |
+| <Link id="m-ctor" /><code>{"TransformMovementContext("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Creates a `TransformMovementContext` from `entity` and `transform`.</span> |
+| <Link id="m-ctor-2" /><code>{"TransformMovementContext("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Transform transform)"}</code> | <span className="api-desc">Creates a `TransformMovementContext` from `entity` and `transform`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Backing field for `Transform`. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | <span className="api-desc">Backing field for `Transform`.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ A movement context that converts positions and rotations to and from a transform
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The entity this context belongs to. |
-| <Link id="m-movementcontext" /><code><Link to="/mod/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" MovementContext { get; }"}</code> | Returns itself, so it can be used as an `IHasMovementContext`. |
-| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> | The transform used as the local space. |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The entity this context belongs to.</span> |
+| <Link id="m-movementcontext" /><code><Link to="/mod/game-api/types/global-i-l/imovementcontext">{"IMovementContext"}</Link>{" MovementContext { get; }"}</code> | <span className="api-desc">Returns itself, so it can be used as an `IHasMovementContext`.</span> |
+| <Link id="m-transform-2" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The transform used as the local space.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localtoworld" /><code>{"Vector3 LocalToWorld(Vector3 local)"}</code> | Converts a local position or rotation to world space using the transform. |
-| <Link id="m-localtoworld-2" /><code>{"Quaternion LocalToWorld(Quaternion local)"}</code> | Converts a local position or rotation to world space using the transform. |
-| <Link id="m-worldtolocal" /><code>{"Vector3 WorldToLocal(Vector3 world)"}</code> | Converts a world position or rotation to the transform's local space. |
-| <Link id="m-worldtolocal-2" /><code>{"Quaternion WorldToLocal(Quaternion world)"}</code> | Converts a world position or rotation to the transform's local space. |
+| <Link id="m-localtoworld" /><code>{"Vector3 LocalToWorld(Vector3 local)"}</code> | <span className="api-desc">Converts a local position or rotation to world space using the transform.</span> |
+| <Link id="m-localtoworld-2" /><code>{"Quaternion LocalToWorld(Quaternion local)"}</code> | <span className="api-desc">Converts a local position or rotation to world space using the transform.</span> |
+| <Link id="m-worldtolocal" /><code>{"Vector3 WorldToLocal(Vector3 world)"}</code> | <span className="api-desc">Converts a world position or rotation to the transform's local space.</span> |
+| <Link id="m-worldtolocal-2" /><code>{"Quaternion WorldToLocal(Quaternion world)"}</code> | <span className="api-desc">Converts a world position or rotation to the transform's local space.</span> |

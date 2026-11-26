@@ -21,41 +21,41 @@ Client: gives a liquid container's volume and surface renderers a stencil number
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LiquidStencilShaderController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LiquidStencilShaderController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-container" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> | The liquid container on this object. |
-| <Link id="m-isstencilassigned" /><code>{"private bool isStencilAssigned"}</code> | Whether a stencil number is held. |
-| <Link id="m-stencilnumber" /><code>{"private int stencilNumber"}</code> | The held stencil number. |
-| <Link id="m-surfacerenderer" /><code>{"private Renderer surfaceRenderer"}</code> | Liquid surface renderer. |
-| <Link id="m-surfacerendererpropertyblock" /><code>{"private MaterialPropertyBlock surfaceRendererPropertyBlock"}</code> | The surface visual's property block. |
-| <Link id="m-volumerenderer" /><code>{"private Renderer volumeRenderer"}</code> | Liquid volume renderer. |
-| <Link id="m-volumerendererpropertyblock" /><code>{"private MaterialPropertyBlock volumeRendererPropertyBlock"}</code> | Property block for the volume renderer. |
-| <Link id="m-volumevisibilitydetector" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" volumeVisibilityDetector"}</code> | Tells when the volume becomes visible or not. |
+| <Link id="m-container" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> | <span className="api-desc">The liquid container on this object.</span> |
+| <Link id="m-isstencilassigned" /><code>{"private bool isStencilAssigned"}</code> | <span className="api-desc">Whether a stencil number is held.</span> |
+| <Link id="m-stencilnumber" /><code>{"private int stencilNumber"}</code> | <span className="api-desc">The held stencil number.</span> |
+| <Link id="m-surfacerenderer" /><code>{"private Renderer surfaceRenderer"}</code> | <span className="api-desc">Liquid surface renderer.</span> |
+| <Link id="m-surfacerendererpropertyblock" /><code>{"private MaterialPropertyBlock surfaceRendererPropertyBlock"}</code> | <span className="api-desc">The surface visual's property block.</span> |
+| <Link id="m-volumerenderer" /><code>{"private Renderer volumeRenderer"}</code> | <span className="api-desc">Liquid volume renderer.</span> |
+| <Link id="m-volumerendererpropertyblock" /><code>{"private MaterialPropertyBlock volumeRendererPropertyBlock"}</code> | <span className="api-desc">Property block for the volume renderer.</span> |
+| <Link id="m-volumevisibilitydetector" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" volumeVisibilityDetector"}</code> | <span className="api-desc">Tells when the volume becomes visible or not.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>9 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Gets the container and listens for its surface material changing. |
-| <Link id="m-checkforstencil" /><code>{"private void CheckForStencil()"}</code> | Takes a stencil number when visible with liquid, otherwise releases it. |
-| <Link id="m-handleliquidlevelchanged" /><code>{"private void HandleLiquidLevelChanged("}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> | Rechecks the stencil when the shown amount changes. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks the liquid level and visibility events. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks the liquid level and visibility events. |
-| <Link id="m-releasestencilbuffernumber" /><code>{"private void ReleaseStencilBufferNumber()"}</code> | Gives the stencil number back to the pool. |
-| <Link id="m-setrenderersstencilbuffernumber" /><code>{"private void SetRenderersStencilBufferNumber(bool isForced)"}</code> | Takes a stencil number (if none or forced) and sets it on both materials. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Checks the stencil and sets up property blocks. |
-| <Link id="m-updatestencilonnewmaterial" /><code>{"private void UpdateStencilOnNewMaterial()"}</code> | Assigns a fresh stencil number when the surface material is replaced. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Gets the container and listens for its surface material changing.</span> |
+| <Link id="m-checkforstencil" /><code>{"private void CheckForStencil()"}</code> | <span className="api-desc">Takes a stencil number when visible with liquid, otherwise releases it.</span> |
+| <Link id="m-handleliquidlevelchanged" /><code>{"private void HandleLiquidLevelChanged("}<Link to="/mod/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container)"}</code> | <span className="api-desc">Rechecks the stencil when the shown amount changes.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Unhooks the liquid level and visibility events.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Hooks the liquid level and visibility events.</span> |
+| <Link id="m-releasestencilbuffernumber" /><code>{"private void ReleaseStencilBufferNumber()"}</code> | <span className="api-desc">Gives the stencil number back to the pool.</span> |
+| <Link id="m-setrenderersstencilbuffernumber" /><code>{"private void SetRenderersStencilBufferNumber(bool isForced)"}</code> | <span className="api-desc">Takes a stencil number (if none or forced) and sets it on both materials.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Checks the stencil and sets up property blocks.</span> |
+| <Link id="m-updatestencilonnewmaterial" /><code>{"private void UpdateStencilOnNewMaterial()"}</code> | <span className="api-desc">Assigns a fresh stencil number when the surface material is replaced.</span> |
 
 </details>

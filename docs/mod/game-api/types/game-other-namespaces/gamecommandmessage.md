@@ -20,10 +20,10 @@ Message carrying a game command type. Nothing else in this build uses it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> | Creates a `GameCommandMessage` with default values. |
+| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> | <span className="api-desc">Creates a `GameCommandMessage` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-commandtype" /><code><Link to="/mod/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" { get; set; }"}</code> | Which command to run. |
+| <Link id="m-commandtype" /><code><Link to="/mod/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" "}<Link to="/mod/game-api/types/game-other-namespaces/commandtype">{"CommandType"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Which command to run.</span> |

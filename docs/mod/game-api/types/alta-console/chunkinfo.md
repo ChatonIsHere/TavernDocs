@@ -20,16 +20,16 @@ Small result object for console commands that shows a chunk by its identifier.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkInfo()"}</code> | Creates a `ChunkInfo` with default values. |
+| <Link id="m-ctor" /><code>{"ChunkInfo()"}</code> | <span className="api-desc">Creates a `ChunkInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunkidentifier" /><code>{"string ChunkIdentifier { get; set; }"}</code> | The chunk's identifier. |
+| <Link id="m-chunkidentifier" /><code>{"string ChunkIdentifier { get; set; }"}</code> | <span className="api-desc">The chunk's identifier.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/chunkinfo">{"ChunkInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Turns a `Chunk` into a `ChunkInfo`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/chunkinfo">{"ChunkInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Turns a `Chunk` into a `ChunkInfo`.</span> |

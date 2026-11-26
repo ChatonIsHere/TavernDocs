@@ -20,10 +20,10 @@ Request body asking for a server's save files by path; the matching answer is pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSaveFileRequest()"}</code> | Creates a `ServerSaveFileRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ServerSaveFileRequest()"}</code> | <span className="api-desc">Creates a `ServerSaveFileRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filepaths" /><code>{"IEnumerable<string> FilePaths { get; set; }"}</code> | Paths of the save files wanted. |
+| <Link id="m-filepaths" /><code>{"IEnumerable<string> FilePaths { get; set; }"}</code> | <span className="api-desc">Paths of the save files wanted.</span> |

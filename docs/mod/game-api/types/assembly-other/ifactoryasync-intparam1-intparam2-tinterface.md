@@ -22,4 +22,4 @@ Async factory that takes two parameters, for the VContainer layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2)"}</code> | Makes a new instance from the parameters and returns it when ready. |
+| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2)"}</code> | <span className="api-desc">Makes a new instance from the parameters and returns it when ready.</span> |

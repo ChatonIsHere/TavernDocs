@@ -23,17 +23,17 @@ Sends impact syncs for all the `ImpactDetector` components on one entity through
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectorCentral()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ImpactDetectorCentral()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availabledetectors" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors"}</code> | The `ImpactDetector` components on this object, found automatically. |
-| <Link id="m-syncimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/mod/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{"> syncImpact"}</code> | The shared impact method sync. |
+| <Link id="m-availabledetectors" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors"}</code> | <span className="api-desc">The `ImpactDetector` components on this object, found automatically.</span> |
+| <Link id="m-syncimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/mod/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{"> syncImpact"}</code> | <span className="api-desc">The shared impact method sync.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Sends impact syncs for all the `ImpactDetector` components on one entity through
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the `syncImpact` method sync. |
-| <Link id="m-sendarguments" /><code>{"void SendArguments("}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/mod/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments)"}</code> | Sends an impact for one of the entity's detectors to the chunk. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Creates the `syncImpact` method sync.</span> |
+| <Link id="m-sendarguments" /><code>{"void SendArguments("}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/mod/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Sends an impact for one of the entity's detectors to the chunk.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-syncimpact-2" /><code>{"private void SyncImpact("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{" arguments)"}</code> | Method sync handler: writes or reads which detector it is, then lets that detector sync the impact. |
+| <Link id="m-syncimpact-2" /><code>{"private void SyncImpact("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-items/impactdetectorcentral-centralizedarguments">{"ImpactDetectorCentral.CentralizedArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Method sync handler: writes or reads which detector it is, then lets that detector sync the impact.</span> |
 
 </details>
 
@@ -57,4 +57,8 @@ Sends impact syncs for all the `ImpactDetector` components on one entity through
 
 Members of other types that take, return or hold a `ImpactDetectorCentral`:
 
+<div className="api-used-in">
+
 [`ImpactDetector.detectorCentral`](/mod/game-api/types/alta-items/impactdetector#m-detectorcentral).
+
+</div>

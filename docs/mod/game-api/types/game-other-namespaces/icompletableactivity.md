@@ -21,12 +21,12 @@ An activity that builds up progress until it completes, and can be cancelled or 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completed" /><code>{"event Action Completed"}</code> | Raised when the activity completes. |
+| <Link id="m-completed" /><code>{"event Action Completed"}</code> | <span className="api-desc">Raised when the activity completes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addprogress" /><code>{"void AddProgress(float progress)"}</code> | Adds an amount of progress. |
-| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | Cancels the activity. |
-| <Link id="m-restart" /><code>{"void Restart()"}</code> | Starts the activity over. |
+| <Link id="m-addprogress" /><code>{"void AddProgress(float progress)"}</code> | <span className="api-desc">Adds an amount of progress.</span> |
+| <Link id="m-cancel" /><code>{"void Cancel()"}</code> | <span className="api-desc">Cancels the activity.</span> |
+| <Link id="m-restart" /><code>{"void Restart()"}</code> | <span className="api-desc">Starts the activity over.</span> |

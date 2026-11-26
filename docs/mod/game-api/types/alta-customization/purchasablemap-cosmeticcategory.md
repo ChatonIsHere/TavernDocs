@@ -21,20 +21,20 @@ A cosmetic category and the item hashes in it, stored in `PurchasableMap`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticCategory()"}</code> | Creates a `PurchasableMap.CosmeticCategory` with default values. |
+| <Link id="m-ctor" /><code>{"CosmeticCategory()"}</code> | <span className="api-desc">Creates a `PurchasableMap.CosmeticCategory` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemhashes" /><code>{"uint[] itemHashes"}</code> | Hashes of the items in the category. |
+| <Link id="m-itemhashes" /><code>{"uint[] itemHashes"}</code> | <span className="api-desc">Hashes of the items in the category.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category"}</code> | Backing field for `Category`. |
+| <Link id="m-category" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category"}</code> | <span className="api-desc">Backing field for `Category`.</span> |
 
 </details>
 
@@ -42,10 +42,14 @@ A cosmetic category and the item hashes in it, stored in `PurchasableMap`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category-2" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> | The category, as an `ICustomizationCategory`. Setting it casts to `PlayerCosmeticCategory`. |
+| <Link id="m-category-2" /><code><Link to="/mod/game-api/types/alta-customization/icustomizationcategory">{"ICustomizationCategory"}</Link>{" Category { get; set; }"}</code> | <span className="api-desc">The category, as an `ICustomizationCategory`. Setting it casts to `PlayerCosmeticCategory`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CosmeticCategory`:
 
+<div className="api-used-in">
+
 [`PurchasableMap.categories`](/mod/game-api/types/alta-customization/purchasablemap#m-categories).
+
+</div>

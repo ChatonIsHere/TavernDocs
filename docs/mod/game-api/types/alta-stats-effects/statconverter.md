@@ -21,17 +21,17 @@ Type converter that turns a stat name into the `Stat` on the last parsed player,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatConverter()"}</code> | Creates a `StatConverter` with default values. |
+| <Link id="m-ctor" /><code>{"StatConverter()"}</code> | <span className="api-desc">Creates a `StatConverter` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-last" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" Last { get; private set; }"}</code> | The stat returned by the last conversion. |
+| <Link id="m-last" /><code>{"static "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" Last { get; private set; }"}</code> | <span className="api-desc">The stat returned by the last conversion.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Looks the lowercased name up in the health stat manager of `PlayerConverter.Last`. Returns null and logs if there is no player. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Looks the lowercased name up in the health stat manager of `PlayerConverter.Last`. Returns null and logs if there is no player.</span> |

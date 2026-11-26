@@ -21,28 +21,28 @@ A pooled object holding a set of `LerpFollow` components. Its methods are empty 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TrailLerper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TrailLerper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerpers" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{"[] lerpers"}</code> | The `LerpFollow` components it was meant to drive. |
+| <Link id="m-lerpers" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/lerpfollow">{"LerpFollow"}</Link>{"[] lerpers"}</code> | <span className="api-desc">The `LerpFollow` components it was meant to drive.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resettimer" /><code>{"private void ResetTimer()"}</code> | Empty in this build. |
-| <Link id="m-setposition" /><code>{"private void SetPosition(Vector3 position)"}</code> | Empty in this build. |
-| <Link id="m-settarget" /><code>{"private void SetTarget(Transform target)"}</code> | Empty in this build. |
+| <Link id="m-resettimer" /><code>{"private void ResetTimer()"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-setposition" /><code>{"private void SetPosition(Vector3 position)"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-settarget" /><code>{"private void SetTarget(Transform target)"}</code> | <span className="api-desc">Empty in this build.</span> |
 
 </details>

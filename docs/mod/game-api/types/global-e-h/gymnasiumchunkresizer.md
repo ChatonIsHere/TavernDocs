@@ -21,18 +21,18 @@ Editor tool for the Gymnasium test scene: rebuilds its grid of chunks as `Locati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btn" /><code>{"private bool btn"}</code> | Inspector button that runs `Resize`. |
-| <Link id="m-btn2" /><code>{"private bool btn2"}</code> | Inspector button that runs `SetAdjacent`. |
-| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> | Width and depth in metres of each rebuilt chunk. |
+| <Link id="m-btn" /><code>{"private bool btn"}</code> | <span className="api-desc">Inspector button that runs `Resize`.</span> |
+| <Link id="m-btn2" /><code>{"private bool btn2"}</code> | <span className="api-desc">Inspector button that runs `SetAdjacent`.</span> |
+| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> | <span className="api-desc">Width and depth in metres of each rebuilt chunk.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Editor tool for the Gymnasium test scene: rebuilds its grid of chunks as `Locati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resize" /><code>{"void Resize()"}</code> | Replaces each child `OverworldChunk` with a `LocationChunk` named `x-z`, with identifier `gym x-z` and bounds `chunkSize` wide and 100 high. |
-| <Link id="m-setadjacent" /><code>{"void SetAdjacent()"}</code> | Works out the neighbours of each `x-z` named chunk on a 5 by 5 grid, but throws the result away, so it changes nothing. |
+| <Link id="m-resize" /><code>{"void Resize()"}</code> | <span className="api-desc">Replaces each child `OverworldChunk` with a `LocationChunk` named `x-z`, with identifier `gym x-z` and bounds `chunkSize` wide and 100 high.</span> |
+| <Link id="m-setadjacent" /><code>{"void SetAdjacent()"}</code> | <span className="api-desc">Works out the neighbours of each `x-z` named chunk on a 5 by 5 grid, but throws the result away, so it changes nothing.</span> |

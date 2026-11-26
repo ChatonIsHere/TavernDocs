@@ -21,11 +21,11 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PageCollectionConverter()"}</code> | Creates a `PageCollectionConverter` with default values. |
+| <Link id="m-ctor" /><code>{"PageCollectionConverter()"}</code> | <span className="api-desc">Creates a `PageCollectionConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings, otherwise defers to the base converter. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Finds the `PageCollection` whose name matches the string, ignoring case. Logs and returns null if there is none. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings, otherwise defers to the base converter.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Finds the `PageCollection` whose name matches the string, ignoring case. Logs and returns null if there is none.</span> |

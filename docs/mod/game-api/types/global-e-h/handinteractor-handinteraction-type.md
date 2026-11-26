@@ -29,4 +29,8 @@ Flags for whose hands a gesture works with: `Self` (one player's two hands), `Ot
 
 Members of other types that take, return or hold a `Type`:
 
+<div className="api-used-in">
+
 [`HandInteractor.HandInteraction.type`](/mod/game-api/types/global-e-h/handinteractor-handinteraction#m-type).
+
+</div>

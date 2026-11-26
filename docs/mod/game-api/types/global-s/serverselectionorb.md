@@ -21,19 +21,19 @@ Main-menu orb the player grabs and lets go of to act on the selected server in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerSelectionOrb()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ServerSelectionOrb()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionorb" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> | The `ActionOrb` the player grabs. |
-| <Link id="m-selectedelement" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" selectedElement"}</code> | The server currently selected in the list. |
-| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> | Where the orb sits when not held. |
-| <Link id="m-validorbletgo" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serverelementevent">{"ServerElementEvent"}</Link>{" validOrbLetGo"}</code> | Event fired with the selected server on a valid let-go. |
+| <Link id="m-actionorb" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> | <span className="api-desc">The `ActionOrb` the player grabs.</span> |
+| <Link id="m-selectedelement" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" selectedElement"}</code> | <span className="api-desc">The server currently selected in the list.</span> |
+| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> | <span className="api-desc">Where the orb sits when not held.</span> |
+| <Link id="m-validorbletgo" /><code>{"private "}<Link to="/mod/game-api/types/global-s/serverelementevent">{"ServerElementEvent"}</Link>{" validOrbLetGo"}</code> | <span className="api-desc">Event fired with the selected server on a valid let-go.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Main-menu orb the player grabs and lets go of to act on the selected server in t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateselectionorbbasedonselection" /><code>{"void UpdateSelectionOrbBasedOnSelection("}<Link to="/mod/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> | Stores the new selection. If it's null, force-drops the orb. |
+| <Link id="m-updateselectionorbbasedonselection" /><code>{"void UpdateSelectionOrbBasedOnSelection("}<Link to="/mod/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> | <span className="api-desc">Stores the new selection. If it's null, force-drops the orb.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the orb's pickup filter and valid let-go event, and sets its home position. |
-| <Link id="m-ensureserverisselected" /><code>{"private void EnsureServerIsSelected("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Pickup filter that blocks grabbing the orb while no server is selected. |
-| <Link id="m-letgo" /><code>{"private void LetGo()"}</code> | Fires `validOrbLetGo` with the selected server when the orb is let go in a valid place. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the orb's pickup filter and valid let-go event, and sets its home position.</span> |
+| <Link id="m-ensureserverisselected" /><code>{"private void EnsureServerIsSelected("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | <span className="api-desc">Pickup filter that blocks grabbing the orb while no server is selected.</span> |
+| <Link id="m-letgo" /><code>{"private void LetGo()"}</code> | <span className="api-desc">Fires `validOrbLetGo` with the selected server when the orb is let go in a valid place.</span> |
 
 </details>

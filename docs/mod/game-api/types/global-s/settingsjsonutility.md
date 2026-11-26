@@ -21,16 +21,16 @@ Empty MonoBehaviour with no behaviour. Nothing in the code references it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SettingsJsonUtility()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SettingsJsonUtility()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Empty. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Empty. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

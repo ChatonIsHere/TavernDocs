@@ -29,4 +29,8 @@ Which hand an input mapping applies to: both, left or right.
 
 Members of other types that take, return or hold a `HandType`:
 
+<div className="api-used-in">
+
 [`InputToActionMapping.hand`](/mod/game-api/types/global-i-l/inputtoactionmapping#m-hand), [`InputToActionMapping.Hand`](/mod/game-api/types/global-i-l/inputtoactionmapping#m-hand-2).
+
+</div>

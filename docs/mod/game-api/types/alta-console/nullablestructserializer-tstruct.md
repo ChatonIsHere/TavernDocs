@@ -21,11 +21,11 @@ JSON converter for a nullable struct that writes null or hands the value to the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> | Creates a `NullableStructSerializer` with default values. |
+| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> | <span className="api-desc">Creates a `NullableStructSerializer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readjson" /><code>{"override TStruct? ReadJson(JsonReader reader, Type objectType, TStruct? existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | Returns null for a JSON null, otherwise deserializes the struct. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, TStruct? value, JsonSerializer serializer)"}</code> | Writes null when empty, otherwise serializes the value. |
+| <Link id="m-readjson" /><code>{"override TStruct? ReadJson(JsonReader reader, Type objectType, TStruct? existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Returns null for a JSON null, otherwise deserializes the struct.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, TStruct? value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes null when empty, otherwise serializes the value.</span> |

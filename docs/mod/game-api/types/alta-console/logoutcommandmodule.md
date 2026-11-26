@@ -19,22 +19,22 @@ Console module `logout`: signs the current user out through `LoginManager`.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logout" /><code>{"private static void Logout()"}</code> | `logout`: signs out the logged-in user. |
+| <Link id="m-logout" /><code>{"private static void Logout()"}</code> | <span className="api-desc">`logout`: signs out the logged-in user.</span> |
 
 </details>

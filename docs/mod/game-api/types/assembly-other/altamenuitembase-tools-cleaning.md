@@ -22,4 +22,4 @@ Editor menu folder `Tools/Cleaning`: menu item classes inherit it to appear unde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Cleaning()"}</code> | Creates an `AltaMenuItemBase.Tools.Cleaning` with default values. |
+| <Link id="m-ctor" /><code>{"protected Cleaning()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Cleaning` with default values.</span> |

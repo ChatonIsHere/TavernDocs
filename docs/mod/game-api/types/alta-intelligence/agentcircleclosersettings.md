@@ -22,16 +22,16 @@ Move-closer settings that also circle around the target, run by `ActiveAgentRota
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentCircleCloserSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentCircleCloserSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-circlespeed" /><code>{"private float circleSpeed"}</code> | Backing field for `CircleSpeed`. |
+| <Link id="m-circlespeed" /><code>{"private float circleSpeed"}</code> | <span className="api-desc">Backing field for `CircleSpeed`.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Move-closer settings that also circle around the target, run by `ActiveAgentRota
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-circlespeed-2" /><code>{"float CircleSpeed { get; }"}</code> | How fast the agent circles while closing in. |
+| <Link id="m-circlespeed-2" /><code>{"float CircleSpeed { get; }"}</code> | <span className="api-desc">How fast the agent circles while closing in.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the `ActiveAgentRotateClose` action, using a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the `ActiveAgentRotateClose` action, using a target.</span> |

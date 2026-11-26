@@ -26,4 +26,8 @@ Kinds of creature nest. Only `Spriggull`.
 
 Members of other types that take, return or hold a `NestType`:
 
+<div className="api-used-in">
+
 [`Nest.FindClosest`](/mod/game-api/types/alta-intelligence/nest#m-findclosest), [`Nest.nests`](/mod/game-api/types/alta-intelligence/nest#m-nests), [`Nest.type`](/mod/game-api/types/alta-intelligence/nest#m-type), [`AgentNestSettings.type`](/mod/game-api/types/alta-intelligence/agentnestsettings#m-type), [`AgentNestSettings.Type`](/mod/game-api/types/alta-intelligence/agentnestsettings#m-type-2).
+
+</div>

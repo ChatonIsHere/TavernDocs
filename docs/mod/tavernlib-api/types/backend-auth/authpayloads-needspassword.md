@@ -21,11 +21,11 @@ Status `needs_password`: the server has a password and the join gave none.
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `needs_password`. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `needs_password`.</span> |
 
 </details>

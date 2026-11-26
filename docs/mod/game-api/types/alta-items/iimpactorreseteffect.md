@@ -21,10 +21,14 @@ An effect that is reset when its impactor resets after a hit or block. Added to 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> | Called when the impactor resets. |
+| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> | <span className="api-desc">Called when the impactor resets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IImpactorResetEffect`:
 
+<div className="api-used-in">
+
 [`ImpactGenerator.EffectsOnReset`](/mod/game-api/types/alta-items/impactgenerator#m-effectsonreset).
+
+</div>

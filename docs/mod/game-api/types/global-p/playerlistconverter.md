@@ -21,11 +21,11 @@ Type converter that turns a comma-separated string into a `PlayerList`, used for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerListConverter()"}</code> | Creates a `PlayerListConverter` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerListConverter()"}</code> | <span className="api-desc">Creates a `PlayerListConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Matches each name or user id against online players, ignoring spaces and case. `*` returns every player; unknown names are skipped. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Matches each name or user id against online players, ignoring spaces and case. `*` returns every player; unknown names are skipped.</span> |

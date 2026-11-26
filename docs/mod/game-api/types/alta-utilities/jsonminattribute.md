@@ -21,16 +21,16 @@ JSON property attribute that keeps a float at or above a minimum whenever the pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonMinAttribute(float min)"}</code> | Creates a `JsonMinAttribute` from `min`. |
+| <Link id="m-ctor" /><code>{"JsonMinAttribute(float min)"}</code> | <span className="api-desc">Creates a `JsonMinAttribute` from `min`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-min" /><code>{"private float min"}</code> | The lower limit. |
+| <Link id="m-min" /><code>{"private float min"}</code> | <span className="api-desc">The lower limit.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ JSON property attribute that keeps a float at or above a minimum whenever the pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | Wraps the property's value provider in a `JsonMinValueProvider`. |
+| <Link id="m-filter" /><code>{"override IValueProvider Filter(IValueProvider baseProvider)"}</code> | <span className="api-desc">Wraps the property's value provider in a `JsonMinValueProvider`.</span> |

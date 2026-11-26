@@ -22,10 +22,10 @@ Serializer for any enum, sent as its `int` value. Made on demand by `GetSerializ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnumSerialization()"}</code> | Creates a `TypeSerializationHelper.EnumSerialization` with default values. |
+| <Link id="m-ctor" /><code>{"EnumSerialization()"}</code> | <span className="api-desc">Creates a `TypeSerializationHelper.EnumSerialization` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T enumValue, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Writes the enum as an int over the full int range, or reads it back and casts it. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T enumValue, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | <span className="api-desc">Writes the enum as an int over the full int range, or reads it back and casts it.</span> |

@@ -22,11 +22,11 @@ Navigation action that walks up to the target and then runs `CanReach`, or `Cant
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> | Creates an `ActiveInteractApproach` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> | <span className="api-desc">Creates an `ActiveInteractApproach` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Gives up if too far, else on arrival stops and checks height, then runs `CanReach` or `CantReach` (dropping the target for a while). |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Starts following the target to `ArrivalDistance`. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Gives up if too far, else on arrival stops and checks height, then runs `CanReach` or `CantReach` (dropping the target for a while).</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Starts following the target to `ArrivalDistance`.</span> |

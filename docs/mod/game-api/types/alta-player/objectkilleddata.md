@@ -22,18 +22,22 @@ Payload of the `ConsoleEvents.ObjectKilled` console event, raised when a `Health
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectKilledData("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | Creates an `ObjectKilledData` from `entity` and `killingHit`. |
+| <Link id="m-ctor" /><code>{"ObjectKilledData("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | <span className="api-desc">Creates an `ObjectKilledData` from `entity` and `killingHit`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"uint identifier"}</code> | Network identifier of the entity that died. |
-| <Link id="m-name" /><code>{"string name"}</code> | The entity's original name. |
-| <Link id="m-prefab" /><code>{"uint prefab"}</code> | Prefab hash of the entity, or 0 if it has no prefab. |
+| <Link id="m-identifier" /><code>{"uint identifier"}</code> | <span className="api-desc">Network identifier of the entity that died.</span> |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">The entity's original name.</span> |
+| <Link id="m-prefab" /><code>{"uint prefab"}</code> | <span className="api-desc">Prefab hash of the entity, or 0 if it has no prefab.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ObjectKilledData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.ObjectKilled`](/mod/game-api/types/alta-console/consoleevents#m-objectkilled).
+
+</div>

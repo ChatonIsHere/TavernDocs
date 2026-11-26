@@ -21,11 +21,11 @@ Type converter that turns a string (a prefab hash or name) into a `NetworkPrefab
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabConverter()"}</code> | Creates a `NetworkPrefabConverter` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkPrefabConverter()"}</code> | <span className="api-desc">Creates a `NetworkPrefabConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Looks up the prefab by hash or lower-case name; returns null if it can't be spawned by command. An unknown name probably throws. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Looks up the prefab by hash or lower-case name; returns null if it can't be spawned by command. An unknown name probably throws.</span> |

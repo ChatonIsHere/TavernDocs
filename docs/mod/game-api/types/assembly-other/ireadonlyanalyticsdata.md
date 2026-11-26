@@ -23,11 +23,15 @@ Read-only view of an analytics event: its name, the user it's for and its proper
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | Name of the analytics event. |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | The user the event is for, or null if none was set. |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | <span className="api-desc">Name of the analytics event.</span> |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | <span className="api-desc">The user the event is for, or null if none was set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IReadonlyAnalyticsData`:
 
+<div className="api-used-in">
+
 [`AbstractAnalyticsDispatcher.OnAnalyticsEvent`](/mod/game-api/types/assembly-other/abstractanalyticsdispatcher#m-onanalyticsevent), [`AnalyticsEvent.Data`](/mod/game-api/types/assembly-other/analyticsevent#m-data-2), [`AnalyticsService.AddListener`](/mod/game-api/types/assembly-other/analyticsservice#m-addlistener), [`AnalyticsService.eventBus`](/mod/game-api/types/assembly-other/analyticsservice#m-eventbus), [`AnalyticsService.RemoveListener`](/mod/game-api/types/assembly-other/analyticsservice#m-removelistener), [`IAnalyticsEvent.Data`](/mod/game-api/types/assembly-other/ianalyticsevent#m-data), [`AltaAnalyticsDispatcher.OnAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/altaanalyticsdispatcher#m-onanalyticsevent), [`AltaAnalyticsDispatcher.SendData`](/mod/game-api/types/game-other-namespaces/altaanalyticsdispatcher#m-senddata).
+
+</div>

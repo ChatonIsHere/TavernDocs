@@ -22,4 +22,8 @@ AI logic term that carries a value of type `T`. Implemented by `Variable<T>` and
 
 Members of other types that take, return or hold a `IData&lt;T>`:
 
+<div className="api-used-in">
+
 [`Intelligence.AttackedLocated`](/mod/game-api/types/alta-intelligence/intelligence#m-attackedlocated), [`Intelligence.IsLocated`](/mod/game-api/types/alta-intelligence/intelligence#m-islocated).
+
+</div>

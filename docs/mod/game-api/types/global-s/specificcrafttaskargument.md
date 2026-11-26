@@ -23,18 +23,22 @@ Game task action argument sent when a player joins one crafting part into anothe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> | Creates a `SpecificCraftTaskArgument` from `slot` and `insert`. |
+| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> | <span className="api-desc">Creates a `SpecificCraftTaskArgument` from `slot` and `insert`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.CraftItem`. |
-| <Link id="m-insert" /><code><Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> | The part that was inserted. |
-| <Link id="m-slot" /><code><Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> | The top-level part it was inserted into. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.CraftItem`.</span> |
+| <Link id="m-insert" /><code><Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> | <span className="api-desc">The part that was inserted.</span> |
+| <Link id="m-slot" /><code><Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> | <span className="api-desc">The top-level part it was inserted into.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpecificCraftTaskArgument`:
 
+<div className="api-used-in">
+
 [`SpecificCraftTask.IsValid`](/mod/game-api/types/global-s/specificcrafttask#m-isvalid).
+
+</div>

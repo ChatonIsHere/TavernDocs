@@ -21,11 +21,15 @@ A view that shows a respawn shrine's state and is updated when the shrine model 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-init" /><code>{"void Init("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> | Gives the view the respawn system settings. |
-| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> | Called with the shrine's model when it changes. |
+| <Link id="m-init" /><code>{"void Init("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Gives the view the respawn system settings.</span> |
+| <Link id="m-onmodelchanged" /><code>{"void OnModelChanged("}<Link to="/mod/game-api/types/game-other-namespaces/irespawnshrinemodel">{"IRespawnShrineModel"}</Link>{" model)"}</code> | <span className="api-desc">Called with the shrine's model when it changes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IRespawnBeaconView`:
 
+<div className="api-used-in">
+
 [`RespawnBeaconController.respawnBeaconViews`](/mod/game-api/types/game-other-namespaces/respawnbeaconcontroller#m-respawnbeaconviews).
+
+</div>

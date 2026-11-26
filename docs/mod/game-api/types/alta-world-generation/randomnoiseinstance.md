@@ -21,10 +21,10 @@ Runtime instance of the `RandomNoise` plugin part: hashed per-cell random values
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomNoiseInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/randomnoise">{"RandomNoise"}</Link>{" part)"}</code> | Creates a `RandomNoiseInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"RandomNoiseInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/randomnoise">{"RandomNoise"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `RandomNoiseInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | For cells within coverage (optionally scaled by another layer), applies a hashed random value in the part's range; others get 0. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">For cells within coverage (optionally scaled by another layer), applies a hashed random value in the part's range; others get 0.</span> |

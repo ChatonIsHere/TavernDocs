@@ -22,4 +22,4 @@ Editor menu entry for creating an `AreaAttackSkill` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AreaAttackSkill.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `AreaAttackSkill.Create` with default values.</span> |

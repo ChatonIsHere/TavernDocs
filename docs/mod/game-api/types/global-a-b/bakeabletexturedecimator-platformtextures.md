@@ -21,17 +21,17 @@ Lists the textures a `BakeableTextureDecimator` reduces for one platform.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformTextures()"}</code> | Creates a `BakeableTextureDecimator.PlatformTextures` with default values. |
+| <Link id="m-ctor" /><code>{"PlatformTextures()"}</code> | <span className="api-desc">Creates a `BakeableTextureDecimator.PlatformTextures` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetplatform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> | Platforms this entry applies to. |
-| <Link id="m-targettextures" /><code>{"private Texture2D[] targetTextures"}</code> | Textures to reduce on those platforms. |
+| <Link id="m-targetplatform" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" targetPlatform"}</code> | <span className="api-desc">Platforms this entry applies to.</span> |
+| <Link id="m-targettextures" /><code>{"private Texture2D[] targetTextures"}</code> | <span className="api-desc">Textures to reduce on those platforms.</span> |
 
 </details>
 
@@ -39,4 +39,8 @@ Lists the textures a `BakeableTextureDecimator` reduces for one platform.
 
 Members of other types that take, return or hold a `PlatformTextures`:
 
+<div className="api-used-in">
+
 [`BakeableTextureDecimator.textures`](/mod/game-api/types/global-a-b/bakeabletexturedecimator#m-textures).
+
+</div>

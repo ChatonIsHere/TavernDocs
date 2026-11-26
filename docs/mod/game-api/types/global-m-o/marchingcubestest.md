@@ -21,32 +21,32 @@ Test component that builds a marching cubes mesh from random spheres when enable
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MarchingCubesTest()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MarchingCubesTest()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isolevel" /><code>{"private float isoLevel"}</code> | Density level the surface is built at. |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> | Largest sphere radius. |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> | The generated mesh. |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> | Smallest sphere radius. |
-| <Link id="m-size" /><code>{"private int size"}</code> | Grid size on each axis. |
-| <Link id="m-spheres" /><code>{"private int spheres"}</code> | Number of random spheres. |
+| <Link id="m-isolevel" /><code>{"private float isoLevel"}</code> | <span className="api-desc">Density level the surface is built at.</span> |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> | <span className="api-desc">Largest sphere radius.</span> |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> | <span className="api-desc">The generated mesh.</span> |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> | <span className="api-desc">Smallest sphere radius.</span> |
+| <Link id="m-size" /><code>{"private int size"}</code> | <span className="api-desc">Grid size on each axis.</span> |
+| <Link id="m-spheres" /><code>{"private int spheres"}</code> | <span className="api-desc">Number of random spheres.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Cleans up the generated mesh. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Fills a density grid with random spheres, meshes it with `MarchingCubes` and puts the result on the `MeshFilter`. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Cleans up the generated mesh.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Fills a density grid with random spheres, meshes it with `MarchingCubes` and puts the result on the `MeshFilter`.</span> |
 
 </details>

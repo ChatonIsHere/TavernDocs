@@ -21,16 +21,20 @@ Moves a player from Playing to equipment mode. Fired through the static `Trigger
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> | Creates a `PlayingToEquipmentTransition` with default values. |
+| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> | <span className="api-desc">Creates a `PlayingToEquipmentTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> | Static: runs the transition for whichever equipment transition is currently active. |
+| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> | <span className="api-desc">Static: runs the transition for whichever equipment transition is currently active.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayingToEquipmentTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.playingToEquipment`](/mod/game-api/types/alta-player/alltransitions#m-playingtoequipment), [`AllTransitions.PlayingToEquipmentTransition`](/mod/game-api/types/alta-player/alltransitions#m-playingtoequipmenttransition).
+
+</div>

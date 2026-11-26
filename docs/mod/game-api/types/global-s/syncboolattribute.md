@@ -22,4 +22,4 @@ Obsolete `SyncAttribute` that marks a field to be synced with the default `bool`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SyncBoolAttribute()"}</code> | Creates a `SyncBoolAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"SyncBoolAttribute()"}</code> | <span className="api-desc">Creates a `SyncBoolAttribute` with default values.</span> |

@@ -21,10 +21,14 @@ Serializable inspector event that passes a `Projectile`, built on `AltaEvent` wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProjectileAltaEvent()"}</code> | Creates a `ProjectileAltaEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ProjectileAltaEvent()"}</code> | <span className="api-desc">Creates a `ProjectileAltaEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ProjectileAltaEvent`:
 
+<div className="api-used-in">
+
 [`Projectile.fired`](/mod/game-api/types/global-p/projectile#m-fired).
+
+</div>

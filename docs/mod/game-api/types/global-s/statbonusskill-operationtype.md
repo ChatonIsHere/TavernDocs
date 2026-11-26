@@ -29,4 +29,8 @@ How a `StatBonusSkill` applies its value: multiply, add, or set (the old value i
 
 Members of other types that take, return or hold a `OperationType`:
 
+<div className="api-used-in">
+
 [`StatBonusSkill.operationType`](/mod/game-api/types/global-s/statbonusskill#m-operationtype).
+
+</div>

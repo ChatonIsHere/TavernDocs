@@ -22,28 +22,28 @@ Passes Unity trigger enter and exit callbacks on as events carrying the collider
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerEnterEvents()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TriggerEnterEvents()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> | Event fired for each collider that enters. |
-| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> | Event fired for each collider that leaves. |
+| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> | <span className="api-desc">Event fired for each collider that enters.</span> |
+| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> | <span className="api-desc">Event fired for each collider that leaves.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Invokes `onTriggerEnter` with the entering collider. |
-| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> | Invokes `onTriggerExit` with the leaving collider. |
+| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Invokes `onTriggerEnter` with the entering collider.</span> |
+| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> | <span className="api-desc">Invokes `onTriggerExit` with the leaving collider.</span> |
 
 </details>

@@ -21,10 +21,10 @@ Do-nothing `IPlatformDevice` for platforms without device features.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> | Creates a `FakePlatformDevice` with default values. |
+| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> | <span className="api-desc">Creates a `FakePlatformDevice` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/mod/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> | Does nothing. |
+| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/mod/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> | <span className="api-desc">Does nothing.</span> |

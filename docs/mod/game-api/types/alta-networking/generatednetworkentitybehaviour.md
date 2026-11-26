@@ -22,17 +22,17 @@ Base for an entity behaviour that builds its content procedurally when it first 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isgeneratingfirsttime" /><code>{"protected virtual bool IsGeneratingFirstTime { get; }"}</code> | Override to true to also generate on the first load of a chunk that isn't generating. False by default. |
+| <Link id="m-isgeneratingfirsttime" /><code>{"protected virtual bool IsGeneratingFirstTime { get; }"}</code> | <span className="api-desc">Override to true to also generate on the first load of a chunk that isn't generating. False by default.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: calls `Generate` if the spawn data says to generate (or it's the first chunk load and `IsGeneratingFirstTime` is set). |
-| <Link id="m-generate" /><code>{"protected abstract void Generate("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Builds the content. Implement in subclasses. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: calls `Generate` if the spawn data says to generate (or it's the first chunk load and `IsGeneratingFirstTime` is set).</span> |
+| <Link id="m-generate" /><code>{"protected abstract void Generate("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Builds the content. Implement in subclasses.</span> |

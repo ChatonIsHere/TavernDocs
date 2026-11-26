@@ -21,28 +21,28 @@ Syncs one transform's local rotation from the server to clients, who blend towar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkedIKBone()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NetworkedIKBone()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared timing stats for `PrepareForWrite`. |
-| <Link id="m-serializetimer" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared timing stats for `Serialize`. |
+| <Link id="m-prepareforwritetimer" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | <span className="api-desc">Shared timing stats for `PrepareForWrite`.</span> |
+| <Link id="m-serializetimer" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | <span className="api-desc">Shared timing stats for `Serialize`.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-anglethreshold" /><code>{"private float angleThreshold"}</code> | Degrees the bone must turn before it is sent again. |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | Transform being rotated. |
-| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> | Blend factor per fixed update. |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | Set by `Initialize`; blending waits for it. |
-| <Link id="m-latestrotation" /><code>{"private Quaternion latestRotation"}</code> | Last blended rotation. |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Last sent or received rotation. |
-| <Link id="m-snapdistance" /><code>{"private float snapDistance"}</code> | Unused in this build. |
-| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> | Constant 30; unused in this build. |
+| <Link id="m-anglethreshold" /><code>{"private float angleThreshold"}</code> | <span className="api-desc">Degrees the bone must turn before it is sent again.</span> |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | <span className="api-desc">Transform being rotated.</span> |
+| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> | <span className="api-desc">Blend factor per fixed update.</span> |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | <span className="api-desc">Set by `Initialize`; blending waits for it.</span> |
+| <Link id="m-latestrotation" /><code>{"private Quaternion latestRotation"}</code> | <span className="api-desc">Last blended rotation.</span> |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | <span className="api-desc">Last sent or received rotation.</span> |
+| <Link id="m-snapdistance" /><code>{"private float snapDistance"}</code> | <span className="api-desc">Unused in this build.</span> |
+| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> | <span className="api-desc">Constant 30; unused in this build.</span> |
 
 </details>
 
@@ -50,16 +50,16 @@ Syncs one transform's local rotation from the server to clients, who blend towar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastsynctime" /><code>{"float LastSyncTime { get; private set; }"}</code> | Time of the last sync, or 0 if none yet. |
+| <Link id="m-lastsynctime" /><code>{"float LastSyncTime { get; private set; }"}</code> | <span className="api-desc">Time of the last sync, or 0 if none yet.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> | 33 bits. |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | Returns the shared `prepareForWriteTimer`. |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | Returns the shared `serializeTimer`. |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> | <span className="api-desc">33 bits.</span> |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | <span className="api-desc">Returns the shared `prepareForWriteTimer`.</span> |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | <span className="api-desc">Returns the shared `serializeTimer`.</span> |
 
 </details>
 
@@ -67,16 +67,16 @@ Syncs one transform's local rotation from the server to clients, who blend towar
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Marks the component initialized. |
-| <Link id="m-prepareforwrite" /><code>{"bool PrepareForWrite(bool isWriteFull)"}</code> | True if the rotation has moved more than `angleThreshold` since it was last sent. |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | Writes or reads a flag and the compressed rotation. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Marks the component initialized.</span> |
+| <Link id="m-prepareforwrite" /><code>{"bool PrepareForWrite(bool isWriteFull)"}</code> | <span className="api-desc">True if the rotation has moved more than `angleThreshold` since it was last sent.</span> |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | <span className="api-desc">Writes or reads a flag and the compressed rotation.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Client: blends toward the received rotation. |
-| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> | Blends the transform toward the received rotation once one has arrived. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | <span className="api-desc">Client: blends toward the received rotation.</span> |
+| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> | <span className="api-desc">Blends the transform toward the received rotation once one has arrived.</span> |
 
 </details>

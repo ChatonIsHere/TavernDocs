@@ -21,5 +21,5 @@ Part of the network scene that tracks which entities have serialized (streamed) 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-markserialized" /><code>{"void MarkSerialized("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer)"}</code> | Registers an entity's serializer. Called when the entity has `INetworkSerialized` behaviours. |
-| <Link id="m-serializeasclient" /><code>{"void SerializeAsClient("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Marks the entity as one the local client streams, after the local player gets authority over it. |
+| <Link id="m-markserialized" /><code>{"void MarkSerialized("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/mod/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer)"}</code> | <span className="api-desc">Registers an entity's serializer. Called when the entity has `INetworkSerialized` behaviours.</span> |
+| <Link id="m-serializeasclient" /><code>{"void SerializeAsClient("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Marks the entity as one the local client streams, after the local player gets authority over it.</span> |

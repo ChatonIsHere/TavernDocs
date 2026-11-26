@@ -20,18 +20,22 @@ One saved row of the global communal storage: an item, its material and how many
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StorageData()"}</code> | Creates a `StorageData` with default values. |
+| <Link id="m-ctor" /><code>{"StorageData()"}</code> | <span className="api-desc">Creates a `StorageData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | The stored item. |
-| <Link id="m-material" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> | Physical material of the stored item, or null; rows are matched on item and material. |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> | How many are stored. |
+| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | <span className="api-desc">The stored item.</span> |
+| <Link id="m-material" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> | <span className="api-desc">Physical material of the stored item, or null; rows are matched on item and material.</span> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> | <span className="api-desc">How many are stored.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StorageData`:
 
+<div className="api-used-in">
+
 [`GlobalCommunalStorageValues.availableData`](/mod/game-api/types/alta-items/globalcommunalstoragevalues#m-availabledata), [`GlobalCommunalStorageValuesData.storageDatas`](/mod/game-api/types/alta-items/globalcommunalstoragevaluesdata#m-storagedatas).
+
+</div>

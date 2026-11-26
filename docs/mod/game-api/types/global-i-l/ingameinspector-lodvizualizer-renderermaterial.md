@@ -21,17 +21,21 @@ A renderer and its original shared material, so the LOD visualizer can put the m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> | Creates an `InGameInspector.LODVizualizer.RendererMaterial` from `renderer`. |
+| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> | <span className="api-desc">Creates an `InGameInspector.LODVizualizer.RendererMaterial` from `renderer`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code>{"Material Material { get; private set; }"}</code> | The renderer's shared material before the visualizer changed it. |
-| <Link id="m-renderer" /><code>{"Renderer Renderer { get; private set; }"}</code> | The renderer. |
+| <Link id="m-material" /><code>{"Material Material { get; private set; }"}</code> | <span className="api-desc">The renderer's shared material before the visualizer changed it.</span> |
+| <Link id="m-renderer" /><code>{"Renderer Renderer { get; private set; }"}</code> | <span className="api-desc">The renderer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RendererMaterial`:
 
+<div className="api-used-in">
+
 [`InGameInspector.LODVizualizer.references`](/mod/game-api/types/global-i-l/ingameinspector-lodvizualizer#m-references).
+
+</div>

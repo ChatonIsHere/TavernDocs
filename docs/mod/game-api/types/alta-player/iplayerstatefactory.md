@@ -21,10 +21,14 @@ Makes player state objects for a `PlayerStateManager`. `PlayerStateFactory` is t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createnewplayerstate" /><code><Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" CreateNewPlayerState("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseStateForDecorators)"}</code> | Creates the state for the given state type, wrapping the given base state when the new state is a decorator. |
+| <Link id="m-createnewplayerstate" /><code><Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" CreateNewPlayerState("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" stateType, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseStateForDecorators)"}</code> | <span className="api-desc">Creates the state for the given state type, wrapping the given base state when the new state is a decorator.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPlayerStateFactory`:
 
+<div className="api-used-in">
+
 [`PlayerStateManager.Inject`](/mod/game-api/types/alta-player/playerstatemanager#m-inject), [`PlayerStateManager.playerStateFactory`](/mod/game-api/types/alta-player/playerstatemanager#m-playerstatefactory).
+
+</div>

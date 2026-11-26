@@ -21,18 +21,18 @@ Prefab scoring component that adds a `Lifetime` rule.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LifetimeOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LifetimeOperation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Age in seconds that maps to 1. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Age in seconds that maps to 0. |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Age in seconds that maps to 1.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Age in seconds that maps to 0.</span> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Weight of the rule. Only matters for preferred rules.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Prefab scoring component that adds a `Lifetime` rule.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes the `Lifetime` rule, weighted by `multiplier`. |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Lifetime 0 -> 10 (x1)`. |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Makes the `Lifetime` rule, weighted by `multiplier`.</span> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | <span className="api-desc">Builds the GameObject name, like `Lifetime 0 -> 10 (x1)`.</span> |

@@ -20,16 +20,16 @@ Keeps track of every power-of-two array pool in the game so they can be logged.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allpools" /><code>{"static List<"}<Link to="/mod/game-api/types/assembly-other/iunclearedpower2arraypool">{"IUnclearedPower2ArrayPool"}</Link>{"> AllPools"}</code> | Every array pool made; each pool adds itself when created. |
-| <Link id="m-minimumpower" /><code>{"const int MinimumPower"}</code> | Smallest bucket size as a power of two (4, so 16 items). |
-| <Link id="m-numberofbuckets" /><code>{"const int NumberOfBuckets"}</code> | How many size buckets each pool has (27). |
+| <Link id="m-allpools" /><code>{"static List<"}<Link to="/mod/game-api/types/assembly-other/iunclearedpower2arraypool">{"IUnclearedPower2ArrayPool"}</Link>{"> AllPools"}</code> | <span className="api-desc">Every array pool made; each pool adds itself when created.</span> |
+| <Link id="m-minimumpower" /><code>{"const int MinimumPower"}</code> | <span className="api-desc">Smallest bucket size as a power of two (4, so 16 items).</span> |
+| <Link id="m-numberofbuckets" /><code>{"const int NumberOfBuckets"}</code> | <span className="api-desc">How many size buckets each pool has (27).</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | Class logger. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | <span className="api-desc">Class logger.</span> |
 
 </details>
 
@@ -37,4 +37,4 @@ Keeps track of every power-of-two array pool in the game so they can be logged.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logallpools" /><code>{"static void LogAllPools(bool isPrintingEachArraysLength = false)"}</code> | Logs how many arrays each pool holds per size, and optionally each array's length. |
+| <Link id="m-logallpools" /><code>{"static void LogAllPools(bool isPrintingEachArraysLength = false)"}</code> | <span className="api-desc">Logs how many arrays each pool holds per size, and optionally each array's length.</span> |

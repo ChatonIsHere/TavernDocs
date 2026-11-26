@@ -23,17 +23,17 @@ Global settings for embedding (such as arrows sticking into things): whether onl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableGlobalSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EmbeddableGlobalSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrestrictingpickupsbytag" /><code>{"private bool isRestrictingPickupsByTag"}</code> | Backing field for `IsRestrictingPickupsByTag`. |
-| <Link id="m-validpickupstoembedinto" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" validPickupsToEmbedInto"}</code> | Backing field for `ValidPickupsToEmbedInto`. |
+| <Link id="m-isrestrictingpickupsbytag" /><code>{"private bool isRestrictingPickupsByTag"}</code> | <span className="api-desc">Backing field for `IsRestrictingPickupsByTag`.</span> |
+| <Link id="m-validpickupstoembedinto" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" validPickupsToEmbedInto"}</code> | <span className="api-desc">Backing field for `ValidPickupsToEmbedInto`.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Global settings for embedding (such as arrows sticking into things): whether onl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrestrictingpickupsbytag-2" /><code>{"bool IsRestrictingPickupsByTag { get; }"}</code> | Whether embedding into pickups is limited by tag. |
-| <Link id="m-validpickupstoembedinto-2" /><code><Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" ValidPickupsToEmbedInto { get; }"}</code> | Tag a pickup needs to be embedded into when the restriction is on. |
+| <Link id="m-isrestrictingpickupsbytag-2" /><code>{"bool IsRestrictingPickupsByTag { get; }"}</code> | <span className="api-desc">Whether embedding into pickups is limited by tag.</span> |
+| <Link id="m-validpickupstoembedinto-2" /><code><Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{" ValidPickupsToEmbedInto { get; }"}</code> | <span className="api-desc">Tag a pickup needs to be embedded into when the restriction is on.</span> |

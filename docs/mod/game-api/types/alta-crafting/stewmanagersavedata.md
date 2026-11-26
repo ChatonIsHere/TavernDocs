@@ -23,12 +23,12 @@ Save data for a `StewManager` (version 1): the stew's ingredients, garnishes and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> | Creates a `StewManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> | <span className="api-desc">Creates a `StewManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-garnishes" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] garnishes"}</code> | Items added as garnishes. |
-| <Link id="m-ingredients" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] ingredients"}</code> | Items added as ingredients. |
-| <Link id="m-liquidbase" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquidBase"}</code> | The liquid the stew is made from. |
+| <Link id="m-garnishes" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] garnishes"}</code> | <span className="api-desc">Items added as garnishes.</span> |
+| <Link id="m-ingredients" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] ingredients"}</code> | <span className="api-desc">Items added as ingredients.</span> |
+| <Link id="m-liquidbase" /><code><Link to="/mod/game-api/types/alta-stats-effects/liquiddefinition">{"LiquidDefinition"}</Link>{" liquidBase"}</code> | <span className="api-desc">The liquid the stew is made from.</span> |

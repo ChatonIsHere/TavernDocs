@@ -18,25 +18,25 @@ Server debug helper that spawns preset QA item sets for a player from `Streaming
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasfile" /><code>{"private static bool? hasFile"}</code> | Cached result of the file check. |
-| <Link id="m-maxindex" /><code>{"private static int maxIndex"}</code> | Number of sets in the file. |
-| <Link id="m-userinfoindex" /><code>{"private static Dictionary<int, int> userInfoIndex"}</code> | Next set to give each user ID. |
+| <Link id="m-hasfile" /><code>{"private static bool? hasFile"}</code> | <span className="api-desc">Cached result of the file check.</span> |
+| <Link id="m-maxindex" /><code>{"private static int maxIndex"}</code> | <span className="api-desc">Number of sets in the file.</span> |
+| <Link id="m-userinfoindex" /><code>{"private static Dictionary<int, int> userInfoIndex"}</code> | <span className="api-desc">Next set to give each user ID.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filepath" /><code>{"private static string FilePath { get; }"}</code> | Path to `DebugQASets.txt` in streaming assets. |
+| <Link id="m-filepath" /><code>{"private static string FilePath { get; }"}</code> | <span className="api-desc">Path to `DebugQASets.txt` in streaming assets.</span> |
 
 </details>
 
@@ -44,14 +44,14 @@ Server debug helper that spawns preset QA item sets for a player from `Streaming
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnforuser" /><code>{"static int SpawnForUser("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int overrideIndex)"}</code> | Spawns the given set, or the player's next one in turn, and moves them on to the next. Returns -1 without the file. |
+| <Link id="m-spawnforuser" /><code>{"static int SpawnForUser("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int overrideIndex)"}</code> | <span className="api-desc">Spawns the given set, or the player's next one in turn, and moves them on to the next. Returns -1 without the file.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkforfile" /><code>{"private static bool CheckForFile()"}</code> | Checks once whether the file exists and counts how many four-line sets it has. |
-| <Link id="m-spawnforplayer" /><code>{"private static async void SpawnForPlayer("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int index)"}</code> | Runs `spawn` plus the player's name with each of the set's four lines, half a second apart. |
+| <Link id="m-checkforfile" /><code>{"private static bool CheckForFile()"}</code> | <span className="api-desc">Checks once whether the file exists and counts how many four-line sets it has.</span> |
+| <Link id="m-spawnforplayer" /><code>{"private static async void SpawnForPlayer("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, int index)"}</code> | <span className="api-desc">Runs `spawn` plus the player's name with each of the set's four lines, half a second apart.</span> |
 
 </details>

@@ -28,4 +28,8 @@ How `ServerConfiguration` uses its player list: `None` (ignored), `BlackList` (l
 
 Members of other types that take, return or hold a `ServerListType`:
 
+<div className="api-used-in">
+
 [`ServerConfiguration.listType`](/mod/game-api/types/global-s/serverconfiguration#m-listtype), [`ServerConfiguration.ListType`](/mod/game-api/types/global-s/serverconfiguration#m-listtype-2).
+
+</div>

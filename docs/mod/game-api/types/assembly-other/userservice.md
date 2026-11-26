@@ -22,16 +22,16 @@ A **class** in `Alta.Platform.Generic`, `Alta.Platform.Generic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserService("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/mod/game-api/types/assembly-other/iauthenticationutility">{"IAuthenticationUtility"}</Link>{" authUtility)"}</code> | Creates an `UserService` from `apiClient` and `authUtility`. |
+| <Link id="m-ctor" /><code>{"UserService("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient, "}<Link to="/mod/game-api/types/assembly-other/iauthenticationutility">{"IAuthenticationUtility"}</Link>{" authUtility)"}</code> | <span className="api-desc">Creates an `UserService` from `apiClient` and `authUtility`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-authservice" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-other/iauthenticationservice">{"IAuthenticationService"}</Link>{" authService"}</code> | The inner `AuthenticationService` that does the work. |
+| <Link id="m-authservice" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-other/iauthenticationservice">{"IAuthenticationService"}</Link>{" authService"}</code> | <span className="api-desc">The inner `AuthenticationService` that does the work.</span> |
 
 </details>
 
@@ -39,17 +39,17 @@ A **class** in `Alta.Platform.Generic`, `Alta.Platform.Generic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-externalplatformsigninrequired" /><code>{"bool ExternalPlatformSigninRequired { get; }"}</code> | From the inner service; always false. |
-| <Link id="m-features" /><code><Link to="/mod/game-api/types/assembly-other/iauthenticationfeatures">{"IAuthenticationFeatures"}</Link>{" Features { get; }"}</code> | From the inner service; everything off. |
-| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> | Always false: there is no platform user. This is not the Alta API login. |
-| <Link id="m-loggedinuser" /><code><Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> | Always null. |
+| <Link id="m-externalplatformsigninrequired" /><code>{"bool ExternalPlatformSigninRequired { get; }"}</code> | <span className="api-desc">From the inner service; always false.</span> |
+| <Link id="m-features" /><code><Link to="/mod/game-api/types/assembly-other/iauthenticationfeatures">{"IAuthenticationFeatures"}</Link>{" Features { get; }"}</code> | <span className="api-desc">From the inner service; everything off.</span> |
+| <Link id="m-isloggedin" /><code>{"bool IsLoggedIn { get; }"}</code> | <span className="api-desc">Always false: there is no platform user. This is not the Alta API login.</span> |
+| <Link id="m-loggedinuser" /><code><Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{" LoggedInUser { get; }"}</code> | <span className="api-desc">Always null.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-noservicesmessage" /><code>{"private static string NoServicesMessage { get; }"}</code> | Error text saying this platform has no user services. |
+| <Link id="m-noservicesmessage" /><code>{"private static string NoServicesMessage { get; }"}</code> | <span className="api-desc">Error text saying this platform has no user services.</span> |
 
 </details>
 
@@ -57,13 +57,13 @@ A **class** in `Alta.Platform.Generic`, `Alta.Platform.Generic`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-autologinasync" /><code>{"Task<IResult> AutoLoginAsync()"}</code> | Passes through to the inner `AuthenticationService`. |
-| <Link id="m-getaccesstoken" /><code>{"Task<IResult<string>> GetAccessToken()"}</code> | Passes through; always an error here. |
-| <Link id="m-getaccesstoken-2" /><code>{"Task<IResult<string>> GetAccessToken(bool forceRefresh)"}</code> | Passes through; always an error here. |
-| <Link id="m-getusername" /><code>{"string GetUsername()"}</code> | Throws `NotImplementedException`. |
-| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> | Throws `NotImplementedException`. |
-| <Link id="m-linkplatformaccount" /><code>{"Task<IResult> LinkPlatformAccount()"}</code> | Passes through; throws. |
-| <Link id="m-loginwithplatformcredentials" /><code>{"Task<IResult> LoginWithPlatformCredentials()"}</code> | Passes through; throws. |
-| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> | Succeeds in the editor; throws `NotImplementedException` in builds. |
-| <Link id="m-registeraccount" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{">> RegisterAccount(string username, string password, string email, string referral)"}</code> | Passes through to register an Alta account. |
-| <Link id="m-unlinkplatformaccount" /><code>{"Task<IResult> UnlinkPlatformAccount()"}</code> | Passes through; throws. |
+| <Link id="m-autologinasync" /><code>{"Task<IResult> AutoLoginAsync()"}</code> | <span className="api-desc">Passes through to the inner `AuthenticationService`.</span> |
+| <Link id="m-getaccesstoken" /><code>{"Task<IResult<string>> GetAccessToken()"}</code> | <span className="api-desc">Passes through; always an error here.</span> |
+| <Link id="m-getaccesstoken-2" /><code>{"Task<IResult<string>> GetAccessToken(bool forceRefresh)"}</code> | <span className="api-desc">Passes through; always an error here.</span> |
+| <Link id="m-getusername" /><code>{"string GetUsername()"}</code> | <span className="api-desc">Throws `NotImplementedException`.</span> |
+| <Link id="m-getuserwithid" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-other/iuser">{"IUser"}</Link>{">> GetUserWithId(string userId)"}</code> | <span className="api-desc">Throws `NotImplementedException`.</span> |
+| <Link id="m-linkplatformaccount" /><code>{"Task<IResult> LinkPlatformAccount()"}</code> | <span className="api-desc">Passes through; throws.</span> |
+| <Link id="m-loginwithplatformcredentials" /><code>{"Task<IResult> LoginWithPlatformCredentials()"}</code> | <span className="api-desc">Passes through; throws.</span> |
+| <Link id="m-refreshloggedinuser" /><code>{"Task<IResult> RefreshLoggedInUser()"}</code> | <span className="api-desc">Succeeds in the editor; throws `NotImplementedException` in builds.</span> |
+| <Link id="m-registeraccount" /><code>{"Task<IResult<"}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{">> RegisterAccount(string username, string password, string email, string referral)"}</code> | <span className="api-desc">Passes through to register an Alta account.</span> |
+| <Link id="m-unlinkplatformaccount" /><code>{"Task<IResult> UnlinkPlatformAccount()"}</code> | <span className="api-desc">Passes through; throws.</span> |

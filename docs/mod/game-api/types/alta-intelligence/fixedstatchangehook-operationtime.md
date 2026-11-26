@@ -29,4 +29,8 @@ Flags for when a `FixedStatChangeHook` acts: on action start, on end, or reverti
 
 Members of other types that take, return or hold a `OperationTime`:
 
+<div className="api-used-in">
+
 [`FixedStatChangeHook.statOperation`](/mod/game-api/types/alta-intelligence/fixedstatchangehook#m-statoperation).
+
+</div>

@@ -21,11 +21,11 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkConverter()"}</code> | Creates a `ChunkConverter` with default values. |
+| <Link id="m-ctor" /><code>{"ChunkConverter()"}</code> | <span className="api-desc">Creates a `ChunkConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | "global" gives the global chunk; anything else matches a chunk identifier as a whole word, ignoring case. Null and a log line if none match. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">"global" gives the global chunk; anything else matches a chunk identifier as a whole word, ignoring case. Null and a log line if none match.</span> |

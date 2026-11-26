@@ -21,16 +21,16 @@ Moves a playing player to Downed when their `Downed` event fires.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> | Creates a `PlayingToDownedTransition` with default values. |
+| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> | <span className="api-desc">Creates a `PlayingToDownedTransition` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-killingimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> | The damage that downed the player. |
+| <Link id="m-killingimpact" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingImpact"}</code> | <span className="api-desc">The damage that downed the player.</span> |
 
 </details>
 
@@ -38,16 +38,16 @@ Moves a playing player to Downed when their `Downed` event fires.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Subscribes to the player's `Downed` event (and logs it). |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | Hands the damage that downed the player to the new Downed state. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Unsubscribes from `Downed`. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Subscribes to the player's `Downed` event (and logs it).</span> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected override void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | <span className="api-desc">Hands the damage that downed the player to the new Downed state.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Unsubscribes from `Downed`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleplayerdowned" /><code>{"private void HandlePlayerDowned("}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | Stores the damage and switches to Downed. |
+| <Link id="m-handleplayerdowned" /><code>{"private void HandlePlayerDowned("}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | <span className="api-desc">Stores the damage and switches to Downed.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ Moves a playing player to Downed when their `Downed` event fires.
 
 Members of other types that take, return or hold a `PlayingToDownedTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.playingToDowned`](/mod/game-api/types/alta-player/alltransitions#m-playingtodowned), [`AllTransitions.PlayingToDownedTransition`](/mod/game-api/types/alta-player/alltransitions#m-playingtodownedtransition).
+
+</div>

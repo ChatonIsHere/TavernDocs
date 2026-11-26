@@ -22,11 +22,11 @@ Base of the `JsonMin`, `JsonMax` and `JsonRange` attributes on settings properti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected JsonPropertyFilterAttribute()"}</code> | Creates a `JsonPropertyFilterAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"protected JsonPropertyFilterAttribute()"}</code> | <span className="api-desc">Creates a `JsonPropertyFilterAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"abstract IValueProvider Filter(IValueProvider baseProvider)"}</code> | Wraps the JSON value provider so values are clamped. |
-| <Link id="m-filtervalue" /><code>{"T FilterValue<T>(T value)"}</code> | Clamps a value to the attribute's range. The console settings command uses it, but for int settings it throws the clamped result away. |
+| <Link id="m-filter" /><code>{"abstract IValueProvider Filter(IValueProvider baseProvider)"}</code> | <span className="api-desc">Wraps the JSON value provider so values are clamped.</span> |
+| <Link id="m-filtervalue" /><code>{"T FilterValue<T>(T value)"}</code> | <span className="api-desc">Clamps a value to the attribute's range. The console settings command uses it, but for int settings it throws the clamped result away.</span> |

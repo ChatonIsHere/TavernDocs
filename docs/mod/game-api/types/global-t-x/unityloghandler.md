@@ -21,16 +21,16 @@ A Unity `ILogHandler` that sends Unity's own logs and exceptions into NLog, pref
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> | Creates an `UnityLogHandler` with default values. |
+| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> | <span className="api-desc">Creates an `UnityLogHandler` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-unhandledlogger" /><code>{"private Logger unhandledLogger"}</code> | NLog logger the messages go to. |
+| <Link id="m-unhandledlogger" /><code>{"private Logger unhandledLogger"}</code> | <span className="api-desc">NLog logger the messages go to.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ A Unity `ILogHandler` that sends Unity's own logs and exceptions into NLog, pref
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logexception" /><code>{"void LogException(Exception exception, Object context)"}</code> | Logs the exception and its context to NLog as an error. |
-| <Link id="m-logformat" /><code>{"void LogFormat(LogType logType, Object context, string format, params object[] args)"}</code> | Logs a Unity message to NLog at the matching level, prefixed with `Unhandled Unity Log`. |
+| <Link id="m-logexception" /><code>{"void LogException(Exception exception, Object context)"}</code> | <span className="api-desc">Logs the exception and its context to NLog as an error.</span> |
+| <Link id="m-logformat" /><code>{"void LogFormat(LogType logType, Object context, string format, params object[] args)"}</code> | <span className="api-desc">Logs a Unity message to NLog at the matching level, prefixed with `Unhandled Unity Log`.</span> |

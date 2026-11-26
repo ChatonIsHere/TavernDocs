@@ -21,16 +21,16 @@ Input source that fires a single press and release when the controller's d-pad r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SwipeInputSource(int direction, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `SwipeInputSource` from `direction` and `controller`. |
+| <Link id="m-ctor" /><code>{"SwipeInputSource(int direction, "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `SwipeInputSource` from `direction` and `controller`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | The hand input whose d-pad is watched. |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | <span className="api-desc">The hand input whose d-pad is watched.</span> |
 
 </details>
 
@@ -38,20 +38,20 @@ Input source that fires a single press and release when the controller's d-pad r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> | The swipe direction this source reacts to. |
+| <Link id="m-direction" /><code>{"int Direction { get; }"}</code> | <span className="api-desc">The swipe direction this source reacts to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | Subscribes to the d-pad's swipe event. |
-| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | Unsubscribes from the d-pad's swipe event. |
+| <Link id="m-addlisteners" /><code>{"void AddListeners()"}</code> | <span className="api-desc">Subscribes to the d-pad's swipe event.</span> |
+| <Link id="m-removelisteners" /><code>{"void RemoveListeners()"}</code> | <span className="api-desc">Unsubscribes from the d-pad's swipe event.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> | On a swipe in this direction, presses and immediately releases. |
+| <Link id="m-keypressed" /><code>{"private void KeyPressed(int direction)"}</code> | <span className="api-desc">On a swipe in this direction, presses and immediately releases.</span> |
 
 </details>

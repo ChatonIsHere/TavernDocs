@@ -22,16 +22,16 @@ Base for pickup skills that only work with items carrying one of a set of pickup
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpecificPickupBasedSkill()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected SpecificPickupBasedSkill()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validitemstags" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> validItemsTags"}</code> | Pickup tags this skill applies to. |
+| <Link id="m-validitemstags" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> validItemsTags"}</code> | <span className="api-desc">Pickup tags this skill applies to.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Base for pickup skills that only work with items carrying one of a set of pickup
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | True if the held pickup has an item with at least one of the valid tags. |
+| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | <span className="api-desc">True if the held pickup has an item with at least one of the valid tags.</span> |

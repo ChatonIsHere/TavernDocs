@@ -22,16 +22,16 @@ Server: running action that drives an `AttackDirectionCore` (reacting to the dir
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveAttackDirectionReact()"}</code> | Creates an `ActiveAttackDirectionReact` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveAttackDirectionReact()"}</code> | <span className="api-desc">Creates an `ActiveAttackDirectionReact` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-core" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncore">{"AttackDirectionCore"}</Link>{" core"}</code> | The attack direction core in use, cleared when the action ends. |
+| <Link id="m-core" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/attackdirectioncore">{"AttackDirectionCore"}</Link>{" core"}</code> | <span className="api-desc">The attack direction core in use, cleared when the action ends.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Server: running action that drives an `AttackDirectionCore` (reacting to the dir
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Updates the core each tick, or finishes if the target is gone. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Sets a random duration, gets the core from the settings for this creature and hooks the end events. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Updates the core each tick, or finishes if the target is gone.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Sets a random duration, gets the core from the settings for this creature and hooks the end events.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcanceled" /><code>{"private void FinishedOrCanceled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Disables the core for this creature when the action ends either way. |
+| <Link id="m-finishedorcanceled" /><code>{"private void FinishedOrCanceled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Disables the core for this creature when the action ends either way.</span> |
 
 </details>

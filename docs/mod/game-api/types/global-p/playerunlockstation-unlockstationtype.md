@@ -30,4 +30,8 @@ What a `PlayerUnlockStation` does: `Normal`, `Start` (begins a challenge), `Comp
 
 Members of other types that take, return or hold a `UnlockStationType`:
 
+<div className="api-used-in">
+
 [`PlayerUnlockStation.stationType`](/mod/game-api/types/global-p/playerunlockstation#m-stationtype), [`PlayerUnlockStation.StationType`](/mod/game-api/types/global-p/playerunlockstation#m-stationtype-2).
+
+</div>

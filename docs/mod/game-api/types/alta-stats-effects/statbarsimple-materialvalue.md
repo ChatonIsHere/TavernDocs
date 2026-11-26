@@ -21,22 +21,22 @@ One float on a stat bar's material that can be set straight away or eased toward
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/mod/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> | Creates a `StatBarSimple.MaterialValue` from `property`, `bar` and `lerpSpeed`. |
+| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/mod/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> | <span className="api-desc">Creates a `StatBarSimple.MaterialValue` from `property`, `bar` and `lerpSpeed`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bar" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar"}</code> | The stat bar whose material and `Lerping` event are used. |
-| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> | Backing field for `CurrentValue`. |
-| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> | True while hooked to the bar's `Lerping` event. |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | How fast the value moves towards the target, per second. |
-| <Link id="m-lerptarget" /><code>{"private float lerpTarget"}</code> | The value being eased towards. |
-| <Link id="m-material" /><code>{"private Material material"}</code> | The bar's material that holds the property. |
-| <Link id="m-propertyid" /><code>{"private int propertyID"}</code> | Shader property id of the float. |
+| <Link id="m-bar" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar"}</code> | <span className="api-desc">The stat bar whose material and `Lerping` event are used.</span> |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> | <span className="api-desc">Backing field for `CurrentValue`.</span> |
+| <Link id="m-islerping" /><code>{"private bool isLerping"}</code> | <span className="api-desc">True while hooked to the bar's `Lerping` event.</span> |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | <span className="api-desc">How fast the value moves towards the target, per second.</span> |
+| <Link id="m-lerptarget" /><code>{"private float lerpTarget"}</code> | <span className="api-desc">The value being eased towards.</span> |
+| <Link id="m-material" /><code>{"private Material material"}</code> | <span className="api-desc">The bar's material that holds the property.</span> |
+| <Link id="m-propertyid" /><code>{"private int propertyID"}</code> | <span className="api-desc">Shader property id of the float.</span> |
 
 </details>
 
@@ -44,14 +44,14 @@ One float on a stat bar's material that can be set straight away or eased toward
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> | Get or set the value directly. Setting it stops at the new value with no easing. |
+| <Link id="m-value" /><code>{"float Value { get; set; }"}</code> | <span className="api-desc">Get or set the value directly. Setting it stops at the new value with no easing.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvalue-2" /><code>{"private float CurrentValue { get; set; }"}</code> | The value currently on the material. Setting it writes the shader property. |
+| <Link id="m-currentvalue-2" /><code>{"private float CurrentValue { get; set; }"}</code> | <span className="api-desc">The value currently on the material. Setting it writes the shader property.</span> |
 
 </details>
 
@@ -59,14 +59,14 @@ One float on a stat bar's material that can be set straight away or eased toward
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerp" /><code>{"void Lerp(float target)"}</code> | Starts easing towards a target at `lerpSpeed` per second, hooking the bar's `Lerping` event until it arrives. Sets it straight away if already there. |
+| <Link id="m-lerp" /><code>{"void Lerp(float target)"}</code> | <span className="api-desc">Starts easing towards a target at `lerpSpeed` per second, hooking the bar's `Lerping` event until it arrives. Sets it straight away if already there.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerp-2" /><code>{"private void Lerp(ref bool isLerping)"}</code> | Starts easing towards a target at `lerpSpeed` per second, hooking the bar's `Lerping` event until it arrives. Sets it straight away if already there. |
+| <Link id="m-lerp-2" /><code>{"private void Lerp(ref bool isLerping)"}</code> | <span className="api-desc">Starts easing towards a target at `lerpSpeed` per second, hooking the bar's `Lerping` event until it arrives. Sets it straight away if already there.</span> |
 
 </details>
 
@@ -74,4 +74,8 @@ One float on a stat bar's material that can be set straight away or eased toward
 
 Members of other types that take, return or hold a `MaterialValue`:
 
+<div className="api-used-in">
+
 [`StatBarSimple.fill`](/mod/game-api/types/alta-stats-effects/statbarsimple#m-fill), [`StatBarSimple.negativeChange`](/mod/game-api/types/alta-stats-effects/statbarsimple#m-negativechange), [`StatBarSimple.positiveChange`](/mod/game-api/types/alta-stats-effects/statbarsimple#m-positivechange).
+
+</div>

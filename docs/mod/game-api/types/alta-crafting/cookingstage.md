@@ -22,10 +22,10 @@ Item component that tags an item with a cooking stage: burnt, cooked, ripe or un
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookingStage()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"CookingStage()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stage" /><code><Link to="/mod/game-api/types/alta-crafting/cookingstage-stage">{"CookingStage.Stage"}</Link>{" stage"}</code> | The item's stage. |
+| <Link id="m-stage" /><code><Link to="/mod/game-api/types/alta-crafting/cookingstage-stage">{"CookingStage.Stage"}</Link>{" stage"}</code> | <span className="api-desc">The item's stage.</span> |

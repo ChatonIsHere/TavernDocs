@@ -23,11 +23,11 @@ Current save data (version 3) for a `WoodcutTree`: which preset and species it u
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> | Creates a `WoodcutTreeSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> | <span className="api-desc">Creates a `WoodcutTreeSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | The tree's preset shape. |
-| <Link id="m-species" /><code><Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> | The tree's species. |
+| <Link id="m-preset" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | <span className="api-desc">The tree's preset shape.</span> |
+| <Link id="m-species" /><code><Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species"}</code> | <span className="api-desc">The tree's species.</span> |

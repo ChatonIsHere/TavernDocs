@@ -21,11 +21,11 @@ Device lifecycle for AutoCam mode. Its only job is to show the mouse cursor whil
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AutoCamDeviceLifecycle("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Creates an `AutoCamDeviceLifecycle` from `player` and `platformDevice`. |
+| <Link id="m-ctor" /><code>{"AutoCamDeviceLifecycle("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | <span className="api-desc">Creates an `AutoCamDeviceLifecycle` from `player` and `platformDevice`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disablesdk" /><code>{"override void DisableSDK()"}</code> | Hides the cursor. |
-| <Link id="m-enablesdk" /><code>{"override void EnableSDK()"}</code> | Shows the cursor. |
+| <Link id="m-disablesdk" /><code>{"override void DisableSDK()"}</code> | <span className="api-desc">Hides the cursor.</span> |
+| <Link id="m-enablesdk" /><code>{"override void EnableSDK()"}</code> | <span className="api-desc">Shows the cursor.</span> |

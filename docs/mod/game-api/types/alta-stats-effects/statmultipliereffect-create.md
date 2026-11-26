@@ -22,4 +22,4 @@ Editor menu entry that creates a new `StatMultiplierEffect` asset. Editor only, 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StatMultiplierEffect.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StatMultiplierEffect.Create` with default values.</span> |

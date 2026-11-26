@@ -20,17 +20,21 @@ One rename entry in the XML `SectorNames` file: an original sector name and what
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SectorName()"}</code> | Creates a `SectorName` with default values. |
+| <Link id="m-ctor" /><code>{"SectorName()"}</code> | <span className="api-desc">Creates a `SectorName` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-originalname" /><code>{"string originalName"}</code> | Sector name to replace. |
-| <Link id="m-rename" /><code>{"string rename"}</code> | New name for that sector. |
+| <Link id="m-originalname" /><code>{"string originalName"}</code> | <span className="api-desc">Sector name to replace.</span> |
+| <Link id="m-rename" /><code>{"string rename"}</code> | <span className="api-desc">New name for that sector.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SectorName`:
 
+<div className="api-used-in">
+
 [`SectorNames.names`](/mod/game-api/types/global-s/sectornames#m-names).
+
+</div>

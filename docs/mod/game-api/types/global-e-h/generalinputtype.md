@@ -46,4 +46,8 @@ General player input actions not tied to a tool: grab, teleport, snap turn, menu
 
 Members of other types that take, return or hold a `GeneralInputType`:
 
+<div className="api-used-in">
+
 [`ControllerInput.GetButton`](/mod/game-api/types/global-c-d/controllerinput#m-getbutton), [`ControllerInputButtonPressed.button`](/mod/game-api/types/global-c-d/controllerinputbuttonpressed#m-button), [`InputToActionMapping.primaryInput`](/mod/game-api/types/global-i-l/inputtoactionmapping#m-primaryinput), [`InputToActionMapping.secondaryInput`](/mod/game-api/types/global-i-l/inputtoactionmapping#m-secondaryinput).
+
+</div>

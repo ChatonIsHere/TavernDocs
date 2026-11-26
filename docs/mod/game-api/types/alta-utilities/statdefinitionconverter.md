@@ -21,10 +21,10 @@ Type converter that turns a stat name or hash string into a `StatDefinition`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> | Creates a `StatDefinitionConverter` with default values. |
+| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> | <span className="api-desc">Creates a `StatDefinitionConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> GetFromString(string input)"}</code> | Finds the stat whose name matches the input, ignoring case. |
+| <Link id="m-getfromstring" /><code>{"protected override "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<"}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{"> GetFromString(string input)"}</code> | <span className="api-desc">Finds the stat whose name matches the input, ignoring case.</span> |

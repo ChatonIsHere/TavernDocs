@@ -22,29 +22,29 @@ Fires a position event on collision or trigger enter, filtered by layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OnCollidedEventTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"OnCollidedEventTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> | Layers that count; empty means all. |
-| <Link id="m-oncollided" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnCollided"}</code> | Event fired with the first contact point, or this object's position for a trigger. |
-| <Link id="m-validevent" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/oncollidedeventtrigger-collisiontype">{"OnCollidedEventTrigger.CollisionType"}</Link>{" validEvent"}</code> | Which of collision and trigger enter fire the event. |
+| <Link id="m-layerfilter" /><code>{"private LayerMask layerFilter"}</code> | <span className="api-desc">Layers that count; empty means all.</span> |
+| <Link id="m-oncollided" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" OnCollided"}</code> | <span className="api-desc">Event fired with the first contact point, or this object's position for a trigger.</span> |
+| <Link id="m-validevent" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/oncollidedeventtrigger-collisiontype">{"OnCollidedEventTrigger.CollisionType"}</Link>{" validEvent"}</code> | <span className="api-desc">Which of collision and trigger enter fire the event.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Fires the event if collisions are enabled and the layer passes. |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Fires the event if trigger enter is enabled and the layer passes. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | <span className="api-desc">Fires the event if collisions are enabled and the layer passes.</span> |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Fires the event if trigger enter is enabled and the layer passes.</span> |
 
 </details>

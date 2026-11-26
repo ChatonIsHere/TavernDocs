@@ -22,10 +22,10 @@ Default `IPlayerRespawnPositionProvider`: picks a random point from the current 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DefaultPlayerRespawnPositionProvider()"}</code> | Creates a `DefaultPlayerRespawnPositionProvider` with default values. |
+| <Link id="m-ctor" /><code>{"DefaultPlayerRespawnPositionProvider()"}</code> | <span className="api-desc">Creates a `DefaultPlayerRespawnPositionProvider` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> | Returns a random position from the scene's respawn point, or zero if there is no scene. Always flags it as the default respawn. |
+| <Link id="m-getrespawnposition" /><code>{"Vector3 GetRespawnPosition("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, out bool isDefaultRespawn)"}</code> | <span className="api-desc">Returns a random position from the scene's respawn point, or zero if there is no scene. Always flags it as the default respawn.</span> |

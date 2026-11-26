@@ -20,17 +20,21 @@ A named game version shown in the launcher, part of `LauncherGameInfoFull.Versio
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> | Creates a `VersionMarker` with default values. |
+| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> | <span className="api-desc">Creates a `VersionMarker` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The marker's name. |
-| <Link id="m-version" /><code><Link to="/mod/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> | The game version it marks. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The marker's name.</span> |
+| <Link id="m-version" /><code><Link to="/mod/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> | <span className="api-desc">The game version it marks.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `VersionMarker`:
 
+<div className="api-used-in">
+
 [`LauncherGameInfoFull.VersionMarkers`](/mod/game-api/types/assembly-api-models/launchergameinfofull#m-versionmarkers).
+
+</div>

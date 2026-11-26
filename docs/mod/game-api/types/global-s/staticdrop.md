@@ -21,16 +21,16 @@ Detaches its object from its parent at start but still destroys it when the pare
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticDrop()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticDrop()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" obj)"}</code> | Destroys this object. Called when the former parent's entity is destroyed. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks the parent's destroyed event, then unparents itself. |
+| <Link id="m-destroy" /><code>{"private void Destroy("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" obj)"}</code> | <span className="api-desc">Destroys this object. Called when the former parent's entity is destroyed.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Hooks the parent's destroyed event, then unparents itself.</span> |
 
 </details>

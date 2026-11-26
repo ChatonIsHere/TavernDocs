@@ -20,16 +20,16 @@ Static helper that posts a JSON string to a URL in the background and ignores th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WebInterface()"}</code> | Creates a `WebInterface` with default values. |
+| <Link id="m-ctor" /><code>{"WebInterface()"}</code> | <span className="api-desc">Creates a `WebInterface` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-client" /><code>{"private static WebClient client"}</code> | Shared `WebClient` with a JSON content type header. |
+| <Link id="m-client" /><code>{"private static WebClient client"}</code> | <span className="api-desc">Shared `WebClient` with a JSON content type header.</span> |
 
 </details>
 
@@ -37,10 +37,10 @@ Static helper that posts a JSON string to a URL in the background and ignores th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isofflinemode" /><code>{"static bool IsOfflineMode { get; set; }"}</code> | When true, `FireAndForget` sends nothing. |
+| <Link id="m-isofflinemode" /><code>{"static bool IsOfflineMode { get; set; }"}</code> | <span className="api-desc">When true, `FireAndForget` sends nothing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fireandforget" /><code>{"static void FireAndForget(string uri, string data)"}</code> | Posts the data to the URI on a background task with the shared `WebClient`. Does nothing in offline mode; errors are swallowed. |
+| <Link id="m-fireandforget" /><code>{"static void FireAndForget(string uri, string data)"}</code> | <span className="api-desc">Posts the data to the URI on a background task with the shared `WebClient`. Does nothing in offline mode; errors are swallowed.</span> |

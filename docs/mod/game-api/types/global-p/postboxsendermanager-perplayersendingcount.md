@@ -21,23 +21,27 @@ For one sender, how many more gifts they can post to each other player.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> | Creates a `PostBoxSenderManager.PerPlayerSendingCount` with default values. |
+| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> | <span className="api-desc">Creates a `PostBoxSenderManager.PerPlayerSendingCount` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countperplayer" /><code>{"Dictionary<int, int> CountPerPlayer { get; }"}</code> | Gifts left for each recipient, keyed by user id. |
+| <Link id="m-countperplayer" /><code>{"Dictionary<int, int> CountPerPlayer { get; }"}</code> | <span className="api-desc">Gifts left for each recipient, keyed by user id.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the whole recipient list. |
-| <Link id="m-serializesingle" /><code>{"void SerializeSingle("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int toIdentifier)"}</code> | Syncs the count for one recipient. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Syncs the whole recipient list.</span> |
+| <Link id="m-serializesingle" /><code>{"void SerializeSingle("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int toIdentifier)"}</code> | <span className="api-desc">Syncs the count for one recipient.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PerPlayerSendingCount`:
 
+<div className="api-used-in">
+
 [`PostBoxSenderManager.perPlayerCounter`](/mod/game-api/types/global-p/postboxsendermanager#m-perplayercounter).
+
+</div>

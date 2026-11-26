@@ -22,32 +22,36 @@ Base for a component that draws one cave generation plugin's output in one map c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MapChunkDisplay()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected MapChunkDisplay()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> | The map chunk being drawn. |
-| <Link id="m-layer" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer"}</code> | The map chunk layer being drawn. |
-| <Link id="m-renderindex" /><code>{"protected int renderIndex"}</code> | Index of this display in the render order. |
+| <Link id="m-chunk" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk"}</code> | <span className="api-desc">The map chunk being drawn.</span> |
+| <Link id="m-layer" /><code>{"protected "}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer"}</code> | <span className="api-desc">The map chunk layer being drawn.</span> |
+| <Link id="m-renderindex" /><code>{"protected int renderIndex"}</code> | <span className="api-desc">Index of this display in the render order.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-plugin" /><code><Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; private set; }"}</code> | The plugin instance this display renders for. |
+| <Link id="m-plugin" /><code><Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" Plugin { get; private set; }"}</code> | <span className="api-desc">The plugin instance this display renders for.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, int renderIndex)"}</code> | With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup. |
-| <Link id="m-initialize-2" /><code>{"abstract void Initialize()"}</code> | With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup. |
-| <Link id="m-render" /><code>{"abstract IEnumerator Render()"}</code> | Coroutine that builds the display, run step by step by the generator. |
+| <Link id="m-initialize" /><code>{"virtual void Initialize("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/mod/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk, int renderIndex)"}</code> | <span className="api-desc">With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup.</span> |
+| <Link id="m-initialize-2" /><code>{"abstract void Initialize()"}</code> | <span className="api-desc">With arguments: stores the plugin, layer, chunk and render index, then calls the parameterless version for subclass setup.</span> |
+| <Link id="m-render" /><code>{"abstract IEnumerator Render()"}</code> | <span className="api-desc">Coroutine that builds the display, run step by step by the generator.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MapChunkDisplay`:
 
+<div className="api-used-in">
+
 [`Element.prefab`](/mod/game-api/types/alta-world-generation/element#m-prefab), [`Element.Prefab`](/mod/game-api/types/alta-world-generation/element#m-prefab-2), [`MapChunk.displays`](/mod/game-api/types/alta-world-generation/mapchunk#m-displays), [`MapChunk.Displays`](/mod/game-api/types/alta-world-generation/mapchunk#m-displays-2), [`MapChunk.Render`](/mod/game-api/types/alta-world-generation/mapchunk#m-render).
+
+</div>

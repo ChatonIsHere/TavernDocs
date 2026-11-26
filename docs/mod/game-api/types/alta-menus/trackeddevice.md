@@ -28,4 +28,8 @@ Tracked XR devices: the headset and the left and right controllers.
 
 Members of other types that take, return or hold a `TrackedDevice`:
 
+<div className="api-used-in">
+
 [`VRTrackedDevice.AddTracking`](/mod/game-api/types/alta-menus/vrtrackeddevice#m-addtracking), [`PlayerInput.TrackedDevice`](/mod/game-api/types/global-p/playerinput#m-trackeddevice).
+
+</div>

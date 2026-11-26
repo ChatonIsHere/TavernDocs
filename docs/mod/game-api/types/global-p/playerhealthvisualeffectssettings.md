@@ -22,34 +22,34 @@ Asset with the local player's health effects: hurt vignette, saturation by healt
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerHealthVisualEffectsSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayerHealthVisualEffectsSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>19 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blurrydelay" /><code>{"private float blurryDelay"}</code> | Backing field for `BlurryDelay`. Shown only when `isBlurringOnRepeat` is on. |
-| <Link id="m-blurryeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" blurryEffect"}</code> | Backing field for `BlurryEffect`. |
-| <Link id="m-chanceofstomachaudio" /><code>{"private float chanceOfStomachAudio"}</code> | Backing field for `ChanceOfStomachAudio`. Shown only when `isBlurringOnRepeat` is on. |
-| <Link id="m-deadsaturation" /><code>{"private float deadSaturation"}</code> | Backing field for `DeadSaturation`. |
-| <Link id="m-fogdensityovervalue" /><code>{"private AnimationCurve fogDensityOverValue"}</code> | Curve from the nightmare stat's value to fog density. |
-| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> | Backing field for `HungerDefinition`. |
-| <Link id="m-hurtshell" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" hurtShell"}</code> | Backing field for `HurtShell`. |
-| <Link id="m-hurtshellcurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" hurtShellCurve"}</code> | Backing field for `HurtShellCurve`. |
-| <Link id="m-isblurringonrepeat" /><code>{"private bool isBlurringOnRepeat"}</code> | Backing field for `IsBlurringOnRepeat`. |
-| <Link id="m-maxhungerlevelbeforeblur" /><code>{"private int maxHungerLevelBeforeBlur"}</code> | Backing field for `MaxHungerLevelBeforeBlur`. |
-| <Link id="m-nightmareeffectcontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller">{"PlayerHealthVisualEffectsSettings.NightmareEffectController"}</Link>{" nightmareEffectController"}</code> | The nightmare effect controller, made on the first `SetupNightmare` call. |
-| <Link id="m-nightmareeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition"}</code> | Pooled particle effect spawned at the player's feet during a nightmare. |
-| <Link id="m-nightmarestatdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition"}</code> | The stat that drives the nightmare effect. |
-| <Link id="m-recentdamagecooldown" /><code>{"private float recentDamageCooldown"}</code> | Backing field for `RecentDamageCooldown`. |
-| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> | Backing field for `RecentDamageDefinition`. |
-| <Link id="m-repeatstartsonlevel" /><code>{"private int repeatStartsOnLevel"}</code> | Backing field for `RepeatStartsOnLevel`. Shown only when `isBlurringOnRepeat` is on. |
-| <Link id="m-saturationcurve" /><code>{"private AnimationCurve saturationCurve"}</code> | Backing field for `SaturationCurve`. |
-| <Link id="m-vignettedurationcurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" vignetteDurationCurve"}</code> | Backing field for `VignetteDurationCurve`. |
-| <Link id="m-visionlerpspeed" /><code>{"private float visionLerpSpeed"}</code> | Backing field for `VisionLerpSpeed`. |
+| <Link id="m-blurrydelay" /><code>{"private float blurryDelay"}</code> | <span className="api-desc">Backing field for `BlurryDelay`. Shown only when `isBlurringOnRepeat` is on.</span> |
+| <Link id="m-blurryeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" blurryEffect"}</code> | <span className="api-desc">Backing field for `BlurryEffect`.</span> |
+| <Link id="m-chanceofstomachaudio" /><code>{"private float chanceOfStomachAudio"}</code> | <span className="api-desc">Backing field for `ChanceOfStomachAudio`. Shown only when `isBlurringOnRepeat` is on.</span> |
+| <Link id="m-deadsaturation" /><code>{"private float deadSaturation"}</code> | <span className="api-desc">Backing field for `DeadSaturation`.</span> |
+| <Link id="m-fogdensityovervalue" /><code>{"private AnimationCurve fogDensityOverValue"}</code> | <span className="api-desc">Curve from the nightmare stat's value to fog density.</span> |
+| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> | <span className="api-desc">Backing field for `HungerDefinition`.</span> |
+| <Link id="m-hurtshell" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" hurtShell"}</code> | <span className="api-desc">Backing field for `HurtShell`.</span> |
+| <Link id="m-hurtshellcurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" hurtShellCurve"}</code> | <span className="api-desc">Backing field for `HurtShellCurve`.</span> |
+| <Link id="m-isblurringonrepeat" /><code>{"private bool isBlurringOnRepeat"}</code> | <span className="api-desc">Backing field for `IsBlurringOnRepeat`.</span> |
+| <Link id="m-maxhungerlevelbeforeblur" /><code>{"private int maxHungerLevelBeforeBlur"}</code> | <span className="api-desc">Backing field for `MaxHungerLevelBeforeBlur`.</span> |
+| <Link id="m-nightmareeffectcontroller" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller">{"PlayerHealthVisualEffectsSettings.NightmareEffectController"}</Link>{" nightmareEffectController"}</code> | <span className="api-desc">The nightmare effect controller, made on the first `SetupNightmare` call.</span> |
+| <Link id="m-nightmareeffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition"}</code> | <span className="api-desc">Pooled particle effect spawned at the player's feet during a nightmare.</span> |
+| <Link id="m-nightmarestatdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition"}</code> | <span className="api-desc">The stat that drives the nightmare effect.</span> |
+| <Link id="m-recentdamagecooldown" /><code>{"private float recentDamageCooldown"}</code> | <span className="api-desc">Backing field for `RecentDamageCooldown`.</span> |
+| <Link id="m-recentdamagedefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" recentDamageDefinition"}</code> | <span className="api-desc">Backing field for `RecentDamageDefinition`.</span> |
+| <Link id="m-repeatstartsonlevel" /><code>{"private int repeatStartsOnLevel"}</code> | <span className="api-desc">Backing field for `RepeatStartsOnLevel`. Shown only when `isBlurringOnRepeat` is on.</span> |
+| <Link id="m-saturationcurve" /><code>{"private AnimationCurve saturationCurve"}</code> | <span className="api-desc">Backing field for `SaturationCurve`.</span> |
+| <Link id="m-vignettedurationcurve" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" vignetteDurationCurve"}</code> | <span className="api-desc">Backing field for `VignetteDurationCurve`.</span> |
+| <Link id="m-visionlerpspeed" /><code>{"private float visionLerpSpeed"}</code> | <span className="api-desc">Backing field for `VisionLerpSpeed`.</span> |
 
 </details>
 
@@ -57,30 +57,34 @@ Asset with the local player's health effects: hurt vignette, saturation by healt
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blurrydelay-2" /><code>{"float BlurryDelay { get; }"}</code> | Seconds between repeated hunger blurs. |
-| <Link id="m-blurryeffect-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" BlurryEffect { get; }"}</code> | Curve and length of one hunger blur. |
-| <Link id="m-chanceofstomachaudio-2" /><code>{"float ChanceOfStomachAudio { get; }"}</code> | Chance of a stomach rumble with each blur. |
-| <Link id="m-deadsaturation-2" /><code>{"float DeadSaturation { get; }"}</code> | Screen saturation while dead. |
-| <Link id="m-hungerdefinition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" HungerDefinition { get; }"}</code> | The hunger stat, used to get the hunger level. |
-| <Link id="m-hurtshell-2" /><code><Link to="/mod/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" HurtShell { get; }"}</code> | Shell setting for the hurt effect. |
-| <Link id="m-hurtshellcurve-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" HurtShellCurve { get; }"}</code> | Curve and length of the hurt shell effect. |
-| <Link id="m-isblurringonrepeat-2" /><code>{"bool IsBlurringOnRepeat { get; }"}</code> | Whether the hunger blur repeats at low hunger levels. |
-| <Link id="m-maxhungerlevelbeforeblur-2" /><code>{"int MaxHungerLevelBeforeBlur { get; }"}</code> | Hunger levels at or above this don't blur. |
-| <Link id="m-recentdamagecooldown-2" /><code>{"float RecentDamageCooldown { get; }"}</code> | Seconds the recent damage stat stays on after damage. |
-| <Link id="m-recentdamagedefinition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" RecentDamageDefinition { get; }"}</code> | The stat set to 1 while the player was recently damaged. |
-| <Link id="m-repeatstartsonlevel-2" /><code>{"int RepeatStartsOnLevel { get; }"}</code> | Hunger level at or below which the blur repeats. |
-| <Link id="m-saturationcurve-2" /><code>{"AnimationCurve SaturationCurve { get; }"}</code> | Curve from health to screen saturation. |
-| <Link id="m-vignettedurationcurve-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" VignetteDurationCurve { get; }"}</code> | Curve and length of the hurt vignette. |
-| <Link id="m-visionlerpspeed-2" /><code>{"float VisionLerpSpeed { get; }"}</code> | How fast saturation changes. |
+| <Link id="m-blurrydelay-2" /><code>{"float BlurryDelay { get; }"}</code> | <span className="api-desc">Seconds between repeated hunger blurs.</span> |
+| <Link id="m-blurryeffect-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" BlurryEffect { get; }"}</code> | <span className="api-desc">Curve and length of one hunger blur.</span> |
+| <Link id="m-chanceofstomachaudio-2" /><code>{"float ChanceOfStomachAudio { get; }"}</code> | <span className="api-desc">Chance of a stomach rumble with each blur.</span> |
+| <Link id="m-deadsaturation-2" /><code>{"float DeadSaturation { get; }"}</code> | <span className="api-desc">Screen saturation while dead.</span> |
+| <Link id="m-hungerdefinition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" HungerDefinition { get; }"}</code> | <span className="api-desc">The hunger stat, used to get the hunger level.</span> |
+| <Link id="m-hurtshell-2" /><code><Link to="/mod/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" HurtShell { get; }"}</code> | <span className="api-desc">Shell setting for the hurt effect.</span> |
+| <Link id="m-hurtshellcurve-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" HurtShellCurve { get; }"}</code> | <span className="api-desc">Curve and length of the hurt shell effect.</span> |
+| <Link id="m-isblurringonrepeat-2" /><code>{"bool IsBlurringOnRepeat { get; }"}</code> | <span className="api-desc">Whether the hunger blur repeats at low hunger levels.</span> |
+| <Link id="m-maxhungerlevelbeforeblur-2" /><code>{"int MaxHungerLevelBeforeBlur { get; }"}</code> | <span className="api-desc">Hunger levels at or above this don't blur.</span> |
+| <Link id="m-recentdamagecooldown-2" /><code>{"float RecentDamageCooldown { get; }"}</code> | <span className="api-desc">Seconds the recent damage stat stays on after damage.</span> |
+| <Link id="m-recentdamagedefinition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" RecentDamageDefinition { get; }"}</code> | <span className="api-desc">The stat set to 1 while the player was recently damaged.</span> |
+| <Link id="m-repeatstartsonlevel-2" /><code>{"int RepeatStartsOnLevel { get; }"}</code> | <span className="api-desc">Hunger level at or below which the blur repeats.</span> |
+| <Link id="m-saturationcurve-2" /><code>{"AnimationCurve SaturationCurve { get; }"}</code> | <span className="api-desc">Curve from health to screen saturation.</span> |
+| <Link id="m-vignettedurationcurve-2" /><code><Link to="/mod/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" VignetteDurationCurve { get; }"}</code> | <span className="api-desc">Curve and length of the hurt vignette.</span> |
+| <Link id="m-visionlerpspeed-2" /><code>{"float VisionLerpSpeed { get; }"}</code> | <span className="api-desc">How fast saturation changes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupnightmare" /><code>{"void SetupNightmare("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | Starts watching the nightmare stat to show its particles and fog. |
+| <Link id="m-setupnightmare" /><code>{"void SetupNightmare("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | <span className="api-desc">Starts watching the nightmare stat to show its particles and fog.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerHealthVisualEffectsSettings`:
 
+<div className="api-used-in">
+
 [`PlayerHealth.settings`](/mod/game-api/types/global-p/playerhealth#m-settings).
+
+</div>

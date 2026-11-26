@@ -22,4 +22,4 @@ Obsolete. Marked a field or property for the old `AnalyticsTools.Serialize` to i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> | Creates an `AnalyticsRecordAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> | <span className="api-desc">Creates an `AnalyticsRecordAttribute` with default values.</span> |

@@ -29,4 +29,8 @@ Which way `OptimizationManager` is stepping quality: towards performance, holdin
 
 Members of other types that take, return or hold a `Direction`:
 
+<div className="api-used-in">
+
 [`OptimizationManager.stepDirection`](/mod/game-api/types/global-m-o/optimizationmanager#m-stepdirection).
+
+</div>

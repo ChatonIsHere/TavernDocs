@@ -21,11 +21,11 @@ Console requirement: the command only runs in play mode.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayOnlyAttribute()"}</code> | Creates a `PlayOnlyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"PlayOnlyAttribute()"}</code> | <span className="api-desc">Creates a `PlayOnlyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> | True when the application is playing. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Play Only". |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> | <span className="api-desc">True when the application is playing.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Play Only".</span> |

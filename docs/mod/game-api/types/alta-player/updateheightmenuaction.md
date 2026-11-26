@@ -22,17 +22,17 @@ Accessibility quick access action that raises or lowers the player's adjusted he
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateHeightMenuAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UpdateHeightMenuAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isincrease" /><code>{"private bool isIncrease"}</code> | True to raise, false to lower. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playeradjustableheightfixersettings">{"PlayerAdjustableHeightFixerSettings"}</Link>{" settings"}</code> | The adjustable height settings it changes. |
+| <Link id="m-isincrease" /><code>{"private bool isIncrease"}</code> | <span className="api-desc">True to raise, false to lower.</span> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playeradjustableheightfixersettings">{"PlayerAdjustableHeightFixerSettings"}</Link>{" settings"}</code> | <span className="api-desc">The adjustable height settings it changes.</span> |
 
 </details>
 
@@ -40,12 +40,12 @@ Accessibility quick access action that raises or lowers the player's adjusted he
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | Hidden unless accessibility features are on and the height can change in this direction. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | True while the height can change in this direction. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | <span className="api-desc">Hidden unless accessibility features are on and the height can change in this direction.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">True while the height can change in this direction.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Raises or lowers the height one step. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Raises or lowers the height one step.</span> |

@@ -23,10 +23,10 @@ Save data for a `BuildupPickup`: which saved child goes in each of its build-up 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildupPickupSaveData()"}</code> | Creates a `BuildupPickupSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"BuildupPickupSaveData()"}</code> | <span className="api-desc">Creates a `BuildupPickupSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attachedindexes" /><code>{"int[] attachedIndexes"}</code> | One entry per build-up slot: the saved child index of the attached piece, or -1 when the slot is empty. |
+| <Link id="m-attachedindexes" /><code>{"int[] attachedIndexes"}</code> | <span className="api-desc">One entry per build-up slot: the saved child index of the attached piece, or -1 when the slot is empty.</span> |

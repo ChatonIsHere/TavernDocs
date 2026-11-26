@@ -23,19 +23,23 @@ Identifies one mesh part of a cosmetic: the cosmetic's hash and the part's index
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint hash"}</code> | The cosmetic's hash (its purchasable ID). |
-| <Link id="m-index" /><code>{"int index"}</code> | Which part of the cosmetic's visual this is. |
+| <Link id="m-hash" /><code>{"uint hash"}</code> | <span className="api-desc">The cosmetic's hash (its purchasable ID).</span> |
+| <Link id="m-index" /><code>{"int index"}</code> | <span className="api-desc">Which part of the cosmetic's visual this is.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Equal when both the hash and the index match. |
-| <Link id="m-equals-2" /><code>{"bool Equals("}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{" other)"}</code> | Equal when both the hash and the index match. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Combines the hash and the index. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">Equal when both the hash and the index match.</span> |
+| <Link id="m-equals-2" /><code>{"bool Equals("}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-partid">{"CosmeticPacker.PartId"}</Link>{" other)"}</code> | <span className="api-desc">Equal when both the hash and the index match.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Combines the hash and the index.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PartId`:
 
+<div className="api-used-in">
+
 [`CosmeticPacker.cacheInputs`](/mod/game-api/types/alta-customization/cosmeticpacker#m-cacheinputs), [`CosmeticPacker.inputs`](/mod/game-api/types/alta-customization/cosmeticpacker#m-inputs), [`CosmeticPacker.Inputs`](/mod/game-api/types/alta-customization/cosmeticpacker#m-inputs-2), [`CosmeticPacker.partMap`](/mod/game-api/types/alta-customization/cosmeticpacker#m-partmap), [`CosmeticPacker.workingIndexes`](/mod/game-api/types/alta-customization/cosmeticpacker#m-workingindexes), [`CosmeticPacker.Input.CopyFrom`](/mod/game-api/types/alta-customization/cosmeticpacker-input#m-copyfrom), [`CosmeticPacker.Input.PartId`](/mod/game-api/types/alta-customization/cosmeticpacker-input#m-partid), [`CustomizationVisualPart.PartId`](/mod/game-api/types/alta-customization/customizationvisualpart#m-partid), [`ICosmeticMeshPartBase.PartId`](/mod/game-api/types/alta-customization/icosmeticmeshpartbase#m-partid), [`MeshPacker.Pack`](/mod/game-api/types/alta-customization/meshpacker#m-pack), [`TexturePacker.Pack`](/mod/game-api/types/alta-customization/texturepacker#m-pack), [`PaintBrush.ApplyColor`](/mod/game-api/types/global-p/paintbrush#m-applycolor-2).
+
+</div>

@@ -21,16 +21,16 @@ Base for something the logged-in user sent or set in a group (an invite, a join 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Outgoing("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates an `Outgoing` from `api`. |
+| <Link id="m-ctor" /><code>{"protected Outgoing("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates an `Outgoing` from `api`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-api" /><code>{"protected "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | The low-level client the request is sent through. |
+| <Link id="m-api" /><code>{"protected "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | <span className="api-desc">The low-level client the request is sent through.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-revoke" /><code>{"abstract Task Revoke()"}</code> | Withdraws the request through the API. |
+| <Link id="m-revoke" /><code>{"abstract Task Revoke()"}</code> | <span className="api-desc">Withdraws the request through the API.</span> |

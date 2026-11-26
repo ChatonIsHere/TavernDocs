@@ -21,23 +21,27 @@ One savable component type on an entity, as listed by `PrefabInfoDump`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> | Creates a `PrefabInfoDump.SavableInfoDump` with default values. |
+| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> | <span className="api-desc">Creates a `PrefabInfoDump.SavableInfoDump` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> | The savable's save hash, from its `SavingInfoAttribute`. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The savable's type name. |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> | <span className="api-desc">The savable's save hash, from its `SavingInfoAttribute`.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The savable's type name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{" op_Implicit(Type savable)"}</code> | Builds the dump from a savable component's `Type`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/prefabinfodump-savableinfodump">{"PrefabInfoDump.SavableInfoDump"}</Link>{" op_Implicit(Type savable)"}</code> | <span className="api-desc">Builds the dump from a savable component's `Type`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SavableInfoDump`:
 
+<div className="api-used-in">
+
 [`PrefabInfoDump.NetworkEntityInfoDump.Savables`](/mod/game-api/types/alta-console/prefabinfodump-networkentityinfodump#m-savables).
+
+</div>

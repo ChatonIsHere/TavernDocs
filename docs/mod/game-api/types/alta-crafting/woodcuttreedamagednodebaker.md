@@ -21,20 +21,20 @@ Node baker for chopped trunk pieces: one LOD, copies vertex colours, and uses th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> | Creates a `WoodcutTreeDamagedNodeBaker` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> | <span className="api-desc">Creates a `WoodcutTreeDamagedNodeBaker` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/woodcuttreedamagednodebaker">{"WoodcutTreeDamagedNodeBaker"}</Link>{" Instance { get; }"}</code> | Shared instance. |
-| <Link id="m-iscopyingcolors" /><code>{"override bool IsCopyingColors { get; }"}</code> | True, so baked meshes carry the node's damage colours. |
-| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> | 1. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/woodcuttreedamagednodebaker">{"WoodcutTreeDamagedNodeBaker"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">Shared instance.</span> |
+| <Link id="m-iscopyingcolors" /><code>{"override bool IsCopyingColors { get; }"}</code> | <span className="api-desc">True, so baked meshes carry the node's damage colours.</span> |
+| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> | <span className="api-desc">1.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> | Always 1. |
-| <Link id="m-getmaterial" /><code>{"override Material GetMaterial("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int index)"}</code> | The species' physical material for channel A. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int lod)"}</code> | Always true. |
+| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> | <span className="api-desc">Always 1.</span> |
+| <Link id="m-getmaterial" /><code>{"override Material GetMaterial("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int index)"}</code> | <span className="api-desc">The species' physical material for channel A.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item, int lod)"}</code> | <span className="api-desc">Always true.</span> |

@@ -22,16 +22,20 @@ Internal: adds a `MelonTarget` to NLog's configuration once the app has started,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> | After late start, adds a target that forwards the game's NLog lines to MelonLoader, and re-adds it if the NLog configuration changes. |
+| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> | <span className="api-desc">After late start, adds a target that forwards the game's NLog lines to MelonLoader, and re-adds it if the NLog configuration changes.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code><Link to="/mod/tavernlib-api/types/debugging/nlogcatcher-melontarget">{"NLogCatcher.MelonTarget"}</Link>{" Target { get; private set; }"}</code> | The NLog target that writes to MelonLoader. `null` until the app's late start. |
+| <Link id="m-target" /><code><Link to="/mod/tavernlib-api/types/debugging/nlogcatcher-melontarget">{"NLogCatcher.MelonTarget"}</Link>{" Target { get; private set; }"}</code> | <span className="api-desc">The NLog target that writes to MelonLoader. `null` until the app's late start.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NLogCatcher`:
 
+<div className="api-used-in">
+
 [`DebugHelper._logCatcher`](/mod/tavernlib-api/types/debugging/debughelper#m-logcatcher).
+
+</div>

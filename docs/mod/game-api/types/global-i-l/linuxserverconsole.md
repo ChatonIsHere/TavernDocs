@@ -21,17 +21,17 @@ Server console for Linux builds: reads commands from standard input on a backgro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> | Creates a `LinuxServerConsole` with default values. |
+| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> | <span className="api-desc">Creates a `LinuxServerConsole` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isalive" /><code>{"private bool isAlive"}</code> | Keeps the input loop in `RunConsole` running; cleared by `Shutdown`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-isalive" /><code>{"private bool isAlive"}</code> | <span className="api-desc">Keeps the input loop in `RunConsole` running; cleared by `Shutdown`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ Server console for Linux builds: reads commands from standard input on a backgro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> | Writes a log line to the console, coloured by level (yellow warn, red error, dark red fatal). |
-| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> | Stops the input thread loop. |
+| <Link id="m-handlelog" /><code>{"override void HandleLog(string message, LogLevel level)"}</code> | <span className="api-desc">Writes a log line to the console, coloured by level (yellow warn, red error, dark red fatal).</span> |
+| <Link id="m-shutdown" /><code>{"override void Shutdown()"}</code> | <span className="api-desc">Stops the input thread loop.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handleinteruptsignal" /><code>{"private void HandleInteruptSignal(object sender, ConsoleCancelEventArgs e)"}</code> | SIGINT (Ctrl+C) handler: cancels the default kill and asks `ApplicationManager` to quit with an expected shutdown reason. |
-| <Link id="m-handleterminatesignal" /><code>{"private void HandleTerminateSignal(object sender, EventArgs e)"}</code> | Process exit (SIGTERM) handler: asks `ApplicationManager` to quit with a `SIGTERM Received` reason. |
-| <Link id="m-runconsole" /><code>{"private void RunConsole()"}</code> | Background thread loop that reads lines from standard input and passes each to `OnTextEntered` as a command. |
+| <Link id="m-handleinteruptsignal" /><code>{"private void HandleInteruptSignal(object sender, ConsoleCancelEventArgs e)"}</code> | <span className="api-desc">SIGINT (Ctrl+C) handler: cancels the default kill and asks `ApplicationManager` to quit with an expected shutdown reason.</span> |
+| <Link id="m-handleterminatesignal" /><code>{"private void HandleTerminateSignal(object sender, EventArgs e)"}</code> | <span className="api-desc">Process exit (SIGTERM) handler: asks `ApplicationManager` to quit with a `SIGTERM Received` reason.</span> |
+| <Link id="m-runconsole" /><code>{"private void RunConsole()"}</code> | <span className="api-desc">Background thread loop that reads lines from standard input and passes each to `OnTextEntered` as a command.</span> |
 
 </details>

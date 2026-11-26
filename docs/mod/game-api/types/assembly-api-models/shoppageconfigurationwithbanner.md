@@ -21,22 +21,26 @@ A shop page layout with a banner image taken from the game home configuration.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> | Creates a `ShopPageConfigurationWithBanner` with default values. |
+| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> | <span className="api-desc">Creates a `ShopPageConfigurationWithBanner` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | The banner image. |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | <span className="api-desc">The banner image.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/shoppageconfigurationwithbanner">{"ShopPageConfigurationWithBanner"}</Link>{" Create("}<Link to="/mod/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" shop, "}<Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" gameHome)"}</code> | Copies the shop's primary and secondary items and takes the image of the first home element that has pages. |
+| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/assembly-api-models/shoppageconfigurationwithbanner">{"ShopPageConfigurationWithBanner"}</Link>{" Create("}<Link to="/mod/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" shop, "}<Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" gameHome)"}</code> | <span className="api-desc">Copies the shop's primary and secondary items and takes the image of the first home element that has pages.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ShopPageConfigurationWithBanner`:
 
+<div className="api-used-in">
+
 [`IShopApiClient.GetCurrentShopConfigurationWithBanner`](/mod/game-api/types/assembly-api-client/ishopapiclient#m-getcurrentshopconfigurationwithbanner), [`OfflineShopApiClient.GetCurrentShopConfigurationWithBanner`](/mod/game-api/types/assembly-api-client/offlineshopapiclient#m-getcurrentshopconfigurationwithbanner), [`ShopApiClient.GetCurrentShopConfigurationWithBanner`](/mod/game-api/types/assembly-api-client/shopapiclient#m-getcurrentshopconfigurationwithbanner), [`LowLevelApiClient.GetCurrentShopConfigurationWithBanner`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getcurrentshopconfigurationwithbanner), [`ShopConfigUtility.GetCurrentShopConfiguration`](/mod/game-api/types/alta-customization/shopconfigutility#m-getcurrentshopconfiguration).
+
+</div>

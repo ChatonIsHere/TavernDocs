@@ -21,10 +21,10 @@ Debug component holding a list of chunks. Nothing in this class acts on it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DebugLoader()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DebugLoader()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunks" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks"}</code> | Chunks set in the inspector. |
+| <Link id="m-chunks" /><code>{"List<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks"}</code> | <span className="api-desc">Chunks set in the inspector.</span> |

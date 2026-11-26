@@ -21,16 +21,16 @@ Pouring strength controller with a strength set from code instead of from tippin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FixedPouringStrengthController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FixedPouringStrengthController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentpouringstrength" /><code>{"private float currentPouringStrength"}</code> | The set strength. |
+| <Link id="m-currentpouringstrength" /><code>{"private float currentPouringStrength"}</code> | <span className="api-desc">The set strength.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Pouring strength controller with a strength set from code instead of from tippin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> | Returns the set strength times the pouring multiplier. Never reports fully pouring. |
-| <Link id="m-setpouringstrength" /><code>{"void SetPouringStrength(float newPouringStrength)"}</code> | Sets the strength. |
+| <Link id="m-getpouringstrength" /><code>{"override float GetPouringStrength(out bool isFullyPouring)"}</code> | <span className="api-desc">Returns the set strength times the pouring multiplier. Never reports fully pouring.</span> |
+| <Link id="m-setpouringstrength" /><code>{"void SetPouringStrength(float newPouringStrength)"}</code> | <span className="api-desc">Sets the strength.</span> |

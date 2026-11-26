@@ -27,4 +27,8 @@ Flags for why an entity's position sync is paused, passed to `LockPositionSync` 
 
 Members of other types that take, return or hold a `PositionSyncBlocker`:
 
+<div className="api-used-in">
+
 [`NetworkPrefab.LockPositionSync`](/mod/game-api/types/alta-networking/networkprefab#m-lockpositionsync), [`NetworkPrefab.positionSyncLock`](/mod/game-api/types/alta-networking/networkprefab#m-positionsynclock), [`NetworkPrefab.UnlockPositionSync`](/mod/game-api/types/alta-networking/networkprefab#m-unlockpositionsync).
+
+</div>

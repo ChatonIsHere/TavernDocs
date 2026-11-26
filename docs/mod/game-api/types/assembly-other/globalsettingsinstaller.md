@@ -22,17 +22,17 @@ ScriptableObject that runs platform-specific installers and registers a list of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettingsInstaller()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GlobalSettingsInstaller()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/mod/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> | Global settings assets to initialise and register. |
-| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> | Groups of installers, each limited to some platforms. |
+| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/mod/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> | <span className="api-desc">Global settings assets to initialise and register.</span> |
+| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> | <span className="api-desc">Groups of installers, each limited to some platforms.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ ScriptableObject that runs platform-specific installers and registers a list of 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | Runs the installers for the current platform, then initialises each global settings asset and registers it as its own type. |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | <span className="api-desc">Runs the installers for the current platform, then initialises each global settings asset and registers it as its own type.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GlobalSettingsInstaller`:
 
+<div className="api-used-in">
+
 [`ProjectLifetimeScope.settingsInstaller`](/mod/game-api/types/assembly-other/projectlifetimescope#m-settingsinstaller).
+
+</div>

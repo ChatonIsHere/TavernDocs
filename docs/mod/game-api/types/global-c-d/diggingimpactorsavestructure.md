@@ -23,11 +23,11 @@ Save structure (version 1) for a `DiggingImpactor`: whether and how it is buried
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> | Creates a `DiggingImpactorSaveStructure` with default values. |
+| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> | <span className="api-desc">Creates a `DiggingImpactorSaveStructure` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-efficiencyratio" /><code>{"float efficiencyRatio"}</code> | Hit efficiency when buried; -1 when not buried. |
-| <Link id="m-pivot" /><code>{"Vector3 pivot"}</code> | Ground point the buried tool levers around. |
+| <Link id="m-efficiencyratio" /><code>{"float efficiencyRatio"}</code> | <span className="api-desc">Hit efficiency when buried; -1 when not buried.</span> |
+| <Link id="m-pivot" /><code>{"Vector3 pivot"}</code> | <span className="api-desc">Ground point the buried tool levers around.</span> |

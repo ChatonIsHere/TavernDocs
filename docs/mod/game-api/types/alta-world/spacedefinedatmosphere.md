@@ -22,16 +22,16 @@ Blends between atmosphere sets using placed ambience points: the closer point pa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpaceDefinedAtmosphere()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpaceDefinedAtmosphere()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ambientpoints" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{"[] ambientPoints"}</code> | Serialized ambience points. |
+| <Link id="m-ambientpoints" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{"[] ambientPoints"}</code> | <span className="api-desc">Serialized ambience points.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Blends between atmosphere sets using placed ambience points: the closer point pa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-points" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{"> Points { get; }"}</code> | The ambience points. |
+| <Link id="m-points" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{"> Points { get; }"}</code> | <span className="api-desc">The ambience points.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exitarea" /><code>{"protected override void ExitArea()"}</code> | On leaving the area, applies whichever set of the closest point pair the player was nearer. |
-| <Link id="m-sendnewcloserpoint" /><code>{"protected override void SendNewCloserPoint("}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{" from, "}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{" to, float progress)"}</code> | Blends ambient colour between the two sets and crossfades their ambience audio by progress. |
+| <Link id="m-exitarea" /><code>{"protected override void ExitArea()"}</code> | <span className="api-desc">On leaving the area, applies whichever set of the closest point pair the player was nearer.</span> |
+| <Link id="m-sendnewcloserpoint" /><code>{"protected override void SendNewCloserPoint("}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{" from, "}<Link to="/mod/game-api/types/alta-world/ambiencespacepoint">{"AmbienceSpacePoint"}</Link>{" to, float progress)"}</code> | <span className="api-desc">Blends ambient colour between the two sets and crossfades their ambience audio by progress.</span> |

@@ -21,11 +21,11 @@ Base class for items in a `FastPriorityQueue` with a float priority. The queue s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueueNode()"}</code> | Creates a `FastPriorityQueueNode` with default values. |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueNode()"}</code> | <span className="api-desc">Creates a `FastPriorityQueueNode` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-priority" /><code>{"float Priority { get; protected internal set; }"}</code> | The priority the node was queued with. Lower values come out first. |
-| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | The node's slot in the queue's heap array. |
+| <Link id="m-priority" /><code>{"float Priority { get; protected internal set; }"}</code> | <span className="api-desc">The priority the node was queued with. Lower values come out first.</span> |
+| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | <span className="api-desc">The node's slot in the queue's heap array.</span> |

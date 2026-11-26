@@ -26,4 +26,8 @@ Small image keys for Discord rich presence. Only `None` exists in this build.
 
 Members of other types that take, return or hold a `DiscordSmall`:
 
+<div className="api-used-in">
+
 [`DiscordController.smallImage`](/mod/game-api/types/global-c-d/discordcontroller#m-smallimage), [`DiscordController.SmallImage`](/mod/game-api/types/global-c-d/discordcontroller#m-smallimage-2).
+
+</div>

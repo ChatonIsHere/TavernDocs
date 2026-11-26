@@ -21,4 +21,4 @@ Builds URL query strings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-toquerystring" /><code>{"static string ToQueryString(NameValueCollection nvc)"}</code> | Joins every key and value of the collection into a URL-encoded `key=value&...` string, without the leading `?`. |
+| <Link id="m-toquerystring" /><code>{"static string ToQueryString(NameValueCollection nvc)"}</code> | <span className="api-desc">Joins every key and value of the collection into a URL-encoded `key=value&...` string, without the leading `?`.</span> |

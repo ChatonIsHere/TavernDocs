@@ -21,10 +21,14 @@ Inspector event that passes a `JointPoint`. Used for a joint point's connected a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> | Creates a `JointPointEvent` with default values. |
+| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> | <span className="api-desc">Creates a `JointPointEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `JointPointEvent`:
 
+<div className="api-used-in">
+
 [`JointPoint.connected`](/mod/game-api/types/alta-crafting/jointpoint#m-connected), [`JointPoint.disconnected`](/mod/game-api/types/alta-crafting/jointpoint#m-disconnected).
+
+</div>

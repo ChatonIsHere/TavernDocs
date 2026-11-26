@@ -22,4 +22,4 @@ Editor menu entry that creates a `StringGameSettingsAccess` asset under Assets/C
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StringGameSettingsAccess.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StringGameSettingsAccess.Create` with default values.</span> |

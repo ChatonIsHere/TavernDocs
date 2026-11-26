@@ -23,20 +23,20 @@ Asset holding the shared settings for an impactor (a weapon or tool edge): immun
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactorSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactorSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectonblock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" effectOnBlock"}</code> | Backing field for `EffectOnBlock`. |
-| <Link id="m-effectondamage" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" effectOnDamage"}</code> | Backing field for `EffectOnDamage`. |
-| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactorfilter">{"ImpactorFilter"}</Link>{"[] filters"}</code> | Backing field for `Filters`. |
-| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> | Backing field for `HardnessLevel`. |
-| <Link id="m-immunitygroups" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> immunityGroups"}</code> | Backing field for `ImmunityGroups`. |
+| <Link id="m-effectonblock" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" effectOnBlock"}</code> | <span className="api-desc">Backing field for `EffectOnBlock`.</span> |
+| <Link id="m-effectondamage" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" effectOnDamage"}</code> | <span className="api-desc">Backing field for `EffectOnDamage`.</span> |
+| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactorfilter">{"ImpactorFilter"}</Link>{"[] filters"}</code> | <span className="api-desc">Backing field for `Filters`.</span> |
+| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> | <span className="api-desc">Backing field for `HardnessLevel`.</span> |
+| <Link id="m-immunitygroups" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> immunityGroups"}</code> | <span className="api-desc">Backing field for `ImmunityGroups`.</span> |
 
 </details>
 
@@ -44,22 +44,26 @@ Asset holding the shared settings for an impactor (a weapon or tool edge): immun
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectonblock-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" EffectOnBlock { get; }"}</code> | Effect spawned at the contact point when a hit is blocked. Client only (skipped on headless servers). |
-| <Link id="m-effectondamage-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" EffectOnDamage { get; }"}</code> | Effect spawned at the contact point when a hit does damage. |
-| <Link id="m-filters-2" /><code><Link to="/mod/game-api/types/alta-items/impactorfilter">{"ImpactorFilter"}</Link>{"[] Filters { get; }"}</code> | Filters an `Impactor` runs to decide whether a hit counts. |
-| <Link id="m-hardnesslevel-2" /><code>{"uint HardnessLevel { get; }"}</code> | Hardness of the impactor. If the target detector is harder, the hit does no damage and plays the ineffective-hit effect. |
-| <Link id="m-immunitygroups-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> ImmunityGroups { get; }"}</code> | Groups shared with the target detector; each shared group multiplies the hit's efficiency by its multiplier. |
+| <Link id="m-effectonblock-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" EffectOnBlock { get; }"}</code> | <span className="api-desc">Effect spawned at the contact point when a hit is blocked. Client only (skipped on headless servers).</span> |
+| <Link id="m-effectondamage-2" /><code><Link to="/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" EffectOnDamage { get; }"}</code> | <span className="api-desc">Effect spawned at the contact point when a hit does damage.</span> |
+| <Link id="m-filters-2" /><code><Link to="/mod/game-api/types/alta-items/impactorfilter">{"ImpactorFilter"}</Link>{"[] Filters { get; }"}</code> | <span className="api-desc">Filters an `Impactor` runs to decide whether a hit counts.</span> |
+| <Link id="m-hardnesslevel-2" /><code>{"uint HardnessLevel { get; }"}</code> | <span className="api-desc">Hardness of the impactor. If the target detector is harder, the hit does no damage and plays the ineffective-hit effect.</span> |
+| <Link id="m-immunitygroups-2" /><code>{"List<"}<Link to="/mod/game-api/types/alta-items/impactimmunitygroup">{"ImpactImmunityGroup"}</Link>{"> ImmunityGroups { get; }"}</code> | <span className="api-desc">Groups shared with the target detector; each shared group multiplies the hit's efficiency by its multiplier.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Compares every setting, including hardness, with another `ImpactorSettings`. |
-| <Link id="m-getcopy" /><code><Link to="/mod/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" GetCopy()"}</code> | Returns a new in-memory copy with the immunity groups and filters copied into new collections. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash built from every setting; logs an error naming the asset when an entry is missing. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">Compares every setting, including hardness, with another `ImpactorSettings`.</span> |
+| <Link id="m-getcopy" /><code><Link to="/mod/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" GetCopy()"}</code> | <span className="api-desc">Returns a new in-memory copy with the immunity groups and filters copied into new collections.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Hash built from every setting; logs an error naming the asset when an entry is missing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactorSettings`:
 
+<div className="api-used-in">
+
 [`ImpactGenerator.impactorSettings`](/mod/game-api/types/alta-items/impactgenerator#m-impactorsettings), [`ImpactGenerator.ImpactorSettings`](/mod/game-api/types/alta-items/impactgenerator#m-impactorsettings-2).
+
+</div>

@@ -29,4 +29,8 @@ Kind of inventory change in the pickup event stream log: pickup, drop, dock or u
 
 Members of other types that take, return or hold a `InventoryChangeType`:
 
+<div className="api-used-in">
+
 [`PickupActionData.ChangeType`](/mod/game-api/types/alta-items/pickupactiondata#m-changetype), [`InventoryChangeData.ChangeType`](/mod/game-api/types/game-other-namespaces/inventorychangedata#m-changetype).
+
+</div>

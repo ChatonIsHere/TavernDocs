@@ -21,11 +21,11 @@ An Agones `GameServerAllocation` request, which asks Agones for a ready game ser
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> | Creates a `GameServerAllocation` with default values. |
+| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> | <span className="api-desc">Creates a `GameServerAllocation` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> | Always `GameServerAllocation` by default. |
-| <Link id="m-spec" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverallocationspec">{"GameServerAllocationSpec"}</Link>{" Spec { get; set; }"}</code> | What kind of game server to allocate. |
+| <Link id="m-kind" /><code>{"override string Kind { get; set; }"}</code> | <span className="api-desc">Always `GameServerAllocation` by default.</span> |
+| <Link id="m-spec" /><code><Link to="/mod/game-api/types/assembly-api-models/gameserverallocationspec">{"GameServerAllocationSpec"}</Link>{" Spec { get; set; }"}</code> | <span className="api-desc">What kind of game server to allocate.</span> |

@@ -21,17 +21,17 @@ Client meta tool that, on login, fetches the servers the player can control from
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServersManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ServersManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-friendsmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" friendsManager"}</code> | Serialized `FriendsManager` reference; not used in this class. |
-| <Link id="m-servers" /><code>{"private List<"}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{"> servers"}</code> | The controllable servers from the last login. |
+| <Link id="m-friendsmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" friendsManager"}</code> | <span className="api-desc">Serialized `FriendsManager` reference; not used in this class.</span> |
+| <Link id="m-servers" /><code>{"private List<"}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{"> servers"}</code> | <span className="api-desc">The controllable servers from the last login.</span> |
 
 </details>
 
@@ -39,6 +39,6 @@ Client meta tool that, on login, fetches the servers the player can control from
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-selectedserverchanged" /><code>{"async void SelectedServerChanged("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server)"}</code> | Empty. |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | Fetches the player's controllable servers from the API and stores them in `servers`. |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | Does nothing. |
+| <Link id="m-selectedserverchanged" /><code>{"async void SelectedServerChanged("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server)"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | <span className="api-desc">Fetches the player's controllable servers from the API and stores them in `servers`.</span> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | <span className="api-desc">Does nothing.</span> |

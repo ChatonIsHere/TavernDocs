@@ -28,4 +28,8 @@ How far a `Crank` turns between activations: half a turn (170 degrees) or a quar
 
 Members of other types that take, return or hold a `RotationType`:
 
+<div className="api-used-in">
+
 [`Crank.type`](/mod/game-api/types/alta-items/crank#m-type).
+
+</div>

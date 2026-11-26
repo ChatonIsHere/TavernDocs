@@ -21,29 +21,29 @@ Test door for the light puzzle: turns its material green when its condition is c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleDoor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PuzzleDoor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-condition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition"}</code> | Condition that opens the door. |
+| <Link id="m-condition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition"}</code> | <span className="api-desc">Condition that opens the door.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Subscribes to the condition and applies its current state. |
-| <Link id="m-closedoor" /><code>{"private void CloseDoor()"}</code> | Sets the renderer colour to red. |
-| <Link id="m-doorstatechanged" /><code>{"private void DoorStateChanged("}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> | Opens or closes the door to match the condition, logging each change. |
-| <Link id="m-opendoor" /><code>{"private void OpenDoor()"}</code> | Sets the renderer colour to green. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Subscribes to the condition and applies its current state.</span> |
+| <Link id="m-closedoor" /><code>{"private void CloseDoor()"}</code> | <span className="api-desc">Sets the renderer colour to red.</span> |
+| <Link id="m-doorstatechanged" /><code>{"private void DoorStateChanged("}<Link to="/mod/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{" condition)"}</code> | <span className="api-desc">Opens or closes the door to match the condition, logging each change.</span> |
+| <Link id="m-opendoor" /><code>{"private void OpenDoor()"}</code> | <span className="api-desc">Sets the renderer colour to green.</span> |
 
 </details>

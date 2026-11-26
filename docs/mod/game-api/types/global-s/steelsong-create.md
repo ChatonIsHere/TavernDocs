@@ -22,4 +22,4 @@ Editor menu entry for creating a `SteelSong` skill asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SteelSong.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `SteelSong.Create` with default values.</span> |

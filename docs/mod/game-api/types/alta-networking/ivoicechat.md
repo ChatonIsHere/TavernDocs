@@ -21,18 +21,22 @@ The voice chat service, implemented by `VoiceChat`: who you can hear and per-pla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-audiblescope" /><code><Link to="/mod/game-api/types/alta-networking/voicechatscope">{"VoiceChatScope"}</Link>{" AudibleScope { get; }"}</code> | Who you can hear. Starts at `Everyone`. |
+| <Link id="m-audiblescope" /><code><Link to="/mod/game-api/types/alta-networking/voicechatscope">{"VoiceChatScope"}</Link>{" AudibleScope { get; }"}</code> | <span className="api-desc">Who you can hear. Starts at `Everyone`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cycleaudiblescope" /><code>{"void CycleAudibleScope()"}</code> | Steps the scope down one (towards `Noone`, then back to `Everyone`) and updates mutes. |
-| <Link id="m-getplayermuted" /><code>{"bool GetPlayerMuted(int player)"}</code> | True if the player with that id is muted. |
-| <Link id="m-setplayermuted" /><code>{"void SetPlayerMuted(int player, bool isMuted)"}</code> | Mutes or unmutes the player with that id. |
+| <Link id="m-cycleaudiblescope" /><code>{"void CycleAudibleScope()"}</code> | <span className="api-desc">Steps the scope down one (towards `Noone`, then back to `Everyone`) and updates mutes.</span> |
+| <Link id="m-getplayermuted" /><code>{"bool GetPlayerMuted(int player)"}</code> | <span className="api-desc">True if the player with that id is muted.</span> |
+| <Link id="m-setplayermuted" /><code>{"void SetPlayerMuted(int player, bool isMuted)"}</code> | <span className="api-desc">Mutes or unmutes the player with that id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IVoiceChat`:
 
+<div className="api-used-in">
+
 [`MuteNonFriendsActionIcon.voiceChat`](/mod/game-api/types/alta-player/mutenonfriendsactionicon#m-voicechat), [`MuteNonFriendsQuickAccessAction.voiceChat`](/mod/game-api/types/alta-player/mutenonfriendsquickaccessaction#m-voicechat), [`InterfaceResolver.CreateVoiceChat`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-createvoicechat), [`InterfaceResolver.iVoiceChat`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-ivoicechat), [`InterfaceResolver.IVoiceChat`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-ivoicechat-2), [`RecentPlayers.voiceChat`](/mod/game-api/types/global-q-r/recentplayers#m-voicechat), [`RecentPlayers.VoiceChat`](/mod/game-api/types/global-q-r/recentplayers#m-voicechat-2).
+
+</div>

@@ -21,12 +21,12 @@ A controller input action (such as a button) with a pressed state and start and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-state" /><code>{"bool State { get; }"}</code> | True while the action is held. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" Type { get; set; }"}</code> | Which controller action this is. |
+| <Link id="m-state" /><code>{"bool State { get; }"}</code> | <span className="api-desc">True while the action is held.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" Type { get; set; }"}</code> | <span className="api-desc">Which controller action this is.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ended" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/clickedendeventhandler">{"ClickedEndEventHandler"}</Link>{" Ended"}</code> | Raised when the action is released. |
-| <Link id="m-started" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/clickedeventhandler">{"ClickedEventHandler"}</Link>{" Started"}</code> | Raised when the action is pressed. |
+| <Link id="m-ended" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/clickedendeventhandler">{"ClickedEndEventHandler"}</Link>{" Ended"}</code> | <span className="api-desc">Raised when the action is released.</span> |
+| <Link id="m-started" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/clickedeventhandler">{"ClickedEventHandler"}</Link>{" Started"}</code> | <span className="api-desc">Raised when the action is pressed.</span> |

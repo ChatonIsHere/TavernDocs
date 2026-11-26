@@ -21,11 +21,15 @@ A savable component that must be active while its prefab's children are saved or
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-popcontext" /><code>{"void PopContext()"}</code> | Called after the prefab's children are done; leaves the context. |
-| <Link id="m-pushcontext" /><code>{"void PushContext()"}</code> | Called before the prefab's children are serialized; enters the context. |
+| <Link id="m-popcontext" /><code>{"void PopContext()"}</code> | <span className="api-desc">Called after the prefab's children are done; leaves the context.</span> |
+| <Link id="m-pushcontext" /><code>{"void PushContext()"}</code> | <span className="api-desc">Called before the prefab's children are serialized; enters the context.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISavingContext`:
 
+<div className="api-used-in">
+
 [`SavingSystem.Load`](/mod/game-api/types/alta-world/savingsystem#m-load), [`SavingSystem.Serialize`](/mod/game-api/types/alta-world/savingsystem#m-serialize).
+
+</div>

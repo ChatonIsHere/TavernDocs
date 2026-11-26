@@ -29,4 +29,8 @@ State of a friendship between two accounts in the Alta API: none, waiting for re
 
 Members of other types that take, return or hold a `FriendshipType`:
 
+<div className="api-used-in">
+
 [`FriendshipInfo.Type`](/mod/game-api/types/assembly-api-models/friendshipinfo#m-type), [`FriendshipManager.GetFriendshipType`](/mod/game-api/types/global-e-h/friendshipmanager#m-getfriendshiptype), [`FriendshipManager.LocalStatusUpdate`](/mod/game-api/types/global-e-h/friendshipmanager#m-localstatusupdate), [`RecentPlayerActionPage.FriendButtonMap.type`](/mod/game-api/types/global-q-r/recentplayeractionpage-friendbuttonmap#m-type), [`RecentPlayers.GetFriendshipType`](/mod/game-api/types/global-q-r/recentplayers#m-getfriendshiptype).
+
+</div>

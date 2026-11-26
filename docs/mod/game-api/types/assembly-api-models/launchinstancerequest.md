@@ -20,14 +20,14 @@ Request body for launching a game server instance.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> | Creates a `LaunchInstanceRequest` with default values. |
+| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> | <span className="api-desc">Creates a `LaunchInstanceRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extraarguments" /><code>{"string[] ExtraArguments { get; set; }"}</code> | Extra command-line arguments for the server. |
-| <Link id="m-iswiping" /><code>{"bool IsWiping { get; set; }"}</code> | Probably whether to wipe the server's save on launch. |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | Id of the server to launch. |
-| <Link id="m-startshell" /><code>{"bool StartShell { get; set; }"}</code> | Probably whether to start the server with a shell attached. |
-| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> | Game version to run; `latest` by default. |
+| <Link id="m-extraarguments" /><code>{"string[] ExtraArguments { get; set; }"}</code> | <span className="api-desc">Extra command-line arguments for the server.</span> |
+| <Link id="m-iswiping" /><code>{"bool IsWiping { get; set; }"}</code> | <span className="api-desc">Probably whether to wipe the server's save on launch.</span> |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | <span className="api-desc">Id of the server to launch.</span> |
+| <Link id="m-startshell" /><code>{"bool StartShell { get; set; }"}</code> | <span className="api-desc">Probably whether to start the server with a shell attached.</span> |
+| <Link id="m-version" /><code>{"string Version { get; set; }"}</code> | <span className="api-desc">Game version to run; `latest` by default.</span> |

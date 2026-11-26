@@ -20,16 +20,16 @@ Collects every collision an impact tool makes in a frame and turns them into one
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-framehits" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{">> frameHits"}</code> | Collisions queued this frame, grouped per impact tool. |
-| <Link id="m-hitspool" /><code>{"private static Stack<List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{">> hitsPool"}</code> | Reused hit lists, to avoid allocating each frame. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger, used when generating a hit throws. |
-| <Link id="m-update" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | The registered late update, or null when stopped. |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | The `LateUpdate` module named "Impact Detector Resolver". |
+| <Link id="m-framehits" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{", List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{">> frameHits"}</code> | <span className="api-desc">Collisions queued this frame, grouped per impact tool.</span> |
+| <Link id="m-hitspool" /><code>{"private static Stack<List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{">> hitsPool"}</code> | <span className="api-desc">Reused hit lists, to avoid allocating each frame.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Class logger, used when generating a hit throws.</span> |
+| <Link id="m-update" /><code>{"private static "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | <span className="api-desc">The registered late update, or null when stopped.</span> |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/mod/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | <span className="api-desc">The `LateUpdate` module named "Impact Detector Resolver".</span> |
 
 </details>
 
@@ -37,17 +37,17 @@ Collects every collision an impact tool makes in a frame and turns them into one
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hit" /><code>{"static void Hit("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector, Collision collision)"}</code> | Queues a tool's collision with a detector for this frame and makes sure the late update is running. |
-| <Link id="m-processimmediate" /><code>{"static void ProcessImmediate("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool, "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector, Collision collision, Action<"}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{"> hitProcessor)"}</code> | Picks the most effective hit from one collision right away and passes it to the callback. Used for tools that need instant processing. |
-| <Link id="m-stop" /><code>{"static void Stop()"}</code> | Deregisters the late update and drops any queued hits. |
+| <Link id="m-hit" /><code>{"static void Hit("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool, "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector, Collision collision)"}</code> | <span className="api-desc">Queues a tool's collision with a detector for this frame and makes sure the late update is running.</span> |
+| <Link id="m-processimmediate" /><code>{"static void ProcessImmediate("}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool, "}<Link to="/mod/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector, Collision collision, Action<"}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{"> hitProcessor)"}</code> | <span className="api-desc">Picks the most effective hit from one collision right away and passes it to the callback. Used for tools that need instant processing.</span> |
+| <Link id="m-stop" /><code>{"static void Stop()"}</code> | <span className="api-desc">Deregisters the late update and drops any queued hits.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pushhitslistintopool" /><code>{"private static void PushHitsListIntoPool(List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{"> hits)"}</code> | Clears a hit list and returns it to the pool. |
-| <Link id="m-start" /><code>{"private static void Start()"}</code> | Registers `Update` with the update module if it isn't already. |
-| <Link id="m-update-2" /><code>{"private static void Update()"}</code> | Late update: for each tool, keeps the most effective hit across all its queued collisions, applies it, then resets that tool's impact generators. |
+| <Link id="m-pushhitslistintopool" /><code>{"private static void PushHitsListIntoPool(List<"}<Link to="/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit">{"DelayedImpactResolver.ImpactDetectorHit"}</Link>{"> hits)"}</code> | <span className="api-desc">Clears a hit list and returns it to the pool.</span> |
+| <Link id="m-start" /><code>{"private static void Start()"}</code> | <span className="api-desc">Registers `Update` with the update module if it isn't already.</span> |
+| <Link id="m-update-2" /><code>{"private static void Update()"}</code> | <span className="api-desc">Late update: for each tool, keeps the most effective hit across all its queued collisions, applies it, then resets that tool's impact generators.</span> |
 
 </details>

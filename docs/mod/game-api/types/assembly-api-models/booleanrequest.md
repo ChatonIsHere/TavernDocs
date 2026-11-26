@@ -20,10 +20,10 @@ Request body holding a single true or false, sent as `value`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> | Creates a `BooleanRequest` with default values. |
+| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> | <span className="api-desc">Creates a `BooleanRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | The flag being sent. |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | <span className="api-desc">The flag being sent.</span> |

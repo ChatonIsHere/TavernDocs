@@ -22,21 +22,21 @@ Server: running action that walks a creature to a spot rotated around its target
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveCircleReposition()"}</code> | Creates an `ActiveCircleReposition` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveCircleReposition()"}</code> | <span className="api-desc">Creates an `ActiveCircleReposition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Keeps the creature facing the target if `IsFacingTarget` is set. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Finds the destination and starts walking there for the set duration, or finishes on the next frame if there's no valid spot. |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Keeps the creature facing the target if `IsFacingTarget` is set.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Finds the destination and starts walking there for the set duration, or finishes on the next frame if there's no valid spot.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishorcancel" /><code>{"private void FinishOrCancel("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Stops the walker and director and clears the forward facing flag. |
-| <Link id="m-getposition" /><code>{"private bool GetPosition(Vector3 topicPosition, Vector3 targetPosition, out Vector3 intendedPosition)"}</code> | Works out the destination by rotating the offset from the target by `RepositionAngle`, then raycasts for walls and ground. False if no ground is found. |
+| <Link id="m-finishorcancel" /><code>{"private void FinishOrCancel("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Stops the walker and director and clears the forward facing flag.</span> |
+| <Link id="m-getposition" /><code>{"private bool GetPosition(Vector3 topicPosition, Vector3 targetPosition, out Vector3 intendedPosition)"}</code> | <span className="api-desc">Works out the destination by rotating the offset from the target by `RepositionAngle`, then raycasts for walls and ground. False if no ground is found.</span> |
 
 </details>

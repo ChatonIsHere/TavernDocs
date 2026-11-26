@@ -21,17 +21,17 @@ A `BlockableCamera` that counts as blocked when a capsule in front of the lens o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-height" /><code>{"private float height"}</code> | Length of the check capsule along the camera's forward axis. |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the check capsule. |
+| <Link id="m-height" /><code>{"private float height"}</code> | <span className="api-desc">Length of the check capsule along the camera's forward axis.</span> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Radius of the check capsule.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ A `BlockableCamera` that counts as blocked when a capsule in front of the lens o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> | Checks a capsule from the camera forward by `height` with `radius` against the settings' block layer mask. |
+| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> | <span className="api-desc">Checks a capsule from the camera forward by `height` with `radius` against the settings' block layer mask.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor only: draws the check capsule. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Editor only: draws the check capsule.</span> |
 
 </details>

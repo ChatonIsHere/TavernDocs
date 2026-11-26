@@ -21,16 +21,16 @@ A `TriggerShape` that adds its own capsule trigger collider when initialised fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerCapsule()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TriggerCapsule()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> | The capsule collider added by `Initialize`. |
+| <Link id="m-capsulecollider" /><code>{"private CapsuleCollider capsuleCollider"}</code> | <span className="api-desc">The capsule collider added by `Initialize`.</span> |
 
 </details>
 
@@ -38,11 +38,11 @@ A `TriggerShape` that adds its own capsule trigger collider when initialised fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-height" /><code>{"float Height { get; set; }"}</code> | The capsule's height, or 0 before `Initialize`. |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | The capsule's radius, or 0 before `Initialize`. |
+| <Link id="m-height" /><code>{"float Height { get; set; }"}</code> | <span className="api-desc">The capsule's height, or 0 before `Initialize`.</span> |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | <span className="api-desc">The capsule's radius, or 0 before `Initialize`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(float radius, float height)"}</code> | Adds a trigger capsule collider with the given radius and height and renames the object. |
+| <Link id="m-initialize" /><code>{"void Initialize(float radius, float height)"}</code> | <span className="api-desc">Adds a trigger capsule collider with the given radius and height and renames the object.</span> |

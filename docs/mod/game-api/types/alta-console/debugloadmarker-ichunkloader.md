@@ -22,10 +22,14 @@ Picks which chunks a `DebugLoadMarker` keeps loaded around its entity. There is 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | Adds the chunks to load around a position in the current chunk to the given set. |
+| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | <span className="api-desc">Adds the chunks to load around a position in the current chunk to the given set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IChunkLoader`:
 
+<div className="api-used-in">
+
 [`DebugLoadMarker.chunkLoader`](/mod/game-api/types/alta-console/debugloadmarker#m-chunkloader).
+
+</div>

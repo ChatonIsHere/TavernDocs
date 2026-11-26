@@ -23,10 +23,10 @@ Save data for a `SerializedFullEmptyStatTrigger`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> | Creates a `SerializedFullEmptyStatTriggerData` with default values. |
+| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> | <span className="api-desc">Creates a `SerializedFullEmptyStatTriggerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-wasfull" /><code>{"bool wasFull"}</code> | Whether the tracked stat was full when saved. |
+| <Link id="m-wasfull" /><code>{"bool wasFull"}</code> | <span className="api-desc">Whether the tracked stat was full when saved.</span> |

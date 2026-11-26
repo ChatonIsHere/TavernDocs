@@ -21,11 +21,11 @@ Console requirement: the command only runs on a server (when `ServerHandler.Curr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerOnlyAttribute()"}</code> | Creates a `ServerOnlyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"ServerOnlyAttribute()"}</code> | <span className="api-desc">Creates a `ServerOnlyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> | True when there is a current server handler. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Server Only". |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> | <span className="api-desc">True when there is a current server handler.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Server Only".</span> |

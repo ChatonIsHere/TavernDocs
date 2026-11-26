@@ -23,17 +23,21 @@ Game task action argument sent when a player destroys a health object with a too
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DestroyActionArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" destroyed)"}</code> | Creates a `DestroyActionArgument` from `destroyed`. |
+| <Link id="m-ctor" /><code>{"DestroyActionArgument("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" destroyed)"}</code> | <span className="api-desc">Creates a `DestroyActionArgument` from `destroyed`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.DestroyObject`. |
-| <Link id="m-destroyed" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Destroyed { get; }"}</code> | Prefab of the object that was destroyed. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.DestroyObject`.</span> |
+| <Link id="m-destroyed" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Destroyed { get; }"}</code> | <span className="api-desc">Prefab of the object that was destroyed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `DestroyActionArgument`:
 
+<div className="api-used-in">
+
 [`DestroyHealthObjectTask.IsValid`](/mod/game-api/types/global-c-d/destroyhealthobjecttask#m-isvalid).
+
+</div>

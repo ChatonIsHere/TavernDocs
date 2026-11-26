@@ -23,11 +23,11 @@ Save data for `WayPointPath`: its point positions and rotations.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> | Creates a `WayPointPathData` with default values. |
+| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> | <span className="api-desc">Creates a `WayPointPathData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> | Saved point positions. On load they're moved by the active chunk matrix if there is one. |
-| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> | Saved point rotations. |
+| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> | <span className="api-desc">Saved point positions. On load they're moved by the active chunk matrix if there is one.</span> |
+| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> | <span className="api-desc">Saved point rotations.</span> |

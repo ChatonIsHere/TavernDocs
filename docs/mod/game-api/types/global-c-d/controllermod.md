@@ -21,12 +21,12 @@ Base for a developer debug mod that runs when `ModHands` fires, which happens on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ControllerMod()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ControllerMod()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | Hooks `ModHands.ModCalled`. |
-| <Link id="m-runmod" /><code>{"protected abstract void RunMod("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | The mod's action, given the controller that triggered it. |
-| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> | Unhooks `ModHands.ModCalled`. |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | <span className="api-desc">Hooks `ModHands.ModCalled`.</span> |
+| <Link id="m-runmod" /><code>{"protected abstract void RunMod("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">The mod's action, given the controller that triggered it.</span> |
+| <Link id="m-terminate" /><code>{"protected override void Terminate()"}</code> | <span className="api-desc">Unhooks `ModHands.ModCalled`.</span> |

@@ -20,11 +20,11 @@ Helpers for shop SKUs. Item sets are told apart from single items by a `set_` pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemsetprefix" /><code>{"const string ItemSetPrefix"}</code> | The SKU prefix that marks an item set, `set_`. |
+| <Link id="m-itemsetprefix" /><code>{"const string ItemSetPrefix"}</code> | <span className="api-desc">The SKU prefix that marks an item set, `set_`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ensureitemsetsku" /><code>{"static string EnsureItemSetSku(string sku)"}</code> | Adds the `set_` prefix to a SKU if it doesn't have it yet. |
-| <Link id="m-isitemset" /><code>{"static bool IsItemSet(string itemSku)"}</code> | True if the SKU starts with `set_`. Null gives false. |
+| <Link id="m-ensureitemsetsku" /><code>{"static string EnsureItemSetSku(string sku)"}</code> | <span className="api-desc">Adds the `set_` prefix to a SKU if it doesn't have it yet.</span> |
+| <Link id="m-isitemset" /><code>{"static bool IsItemSet(string itemSku)"}</code> | <span className="api-desc">True if the SKU starts with `set_`. Null gives false.</span> |

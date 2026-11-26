@@ -21,11 +21,11 @@ Base class for items in a `FastPriorityQueueTimeSpan`, with a `TimeSpan` priorit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueueNodeTimeSpan()"}</code> | Creates a `FastPriorityQueueNodeTimeSpan` with default values. |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueNodeTimeSpan()"}</code> | <span className="api-desc">Creates a `FastPriorityQueueNodeTimeSpan` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-priority" /><code>{"TimeSpan Priority { get; protected internal set; }"}</code> | The time the node was queued with. Earlier times come out first. |
-| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | The node's slot in the queue's heap array. |
+| <Link id="m-priority" /><code>{"TimeSpan Priority { get; protected internal set; }"}</code> | <span className="api-desc">The time the node was queued with. Earlier times come out first.</span> |
+| <Link id="m-queueindex" /><code>{"int QueueIndex { get; internal set; }"}</code> | <span className="api-desc">The node's slot in the queue's heap array.</span> |

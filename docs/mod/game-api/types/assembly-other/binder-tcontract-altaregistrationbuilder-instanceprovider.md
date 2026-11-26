@@ -22,16 +22,16 @@ VContainer instance provider that always returns one fixed object, used when a b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> | Creates a `Binder` from `instance`. |
+| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> | <span className="api-desc">Creates a `Binder` from `instance`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"private readonly object instance"}</code> | The object handed out. |
+| <Link id="m-instance" /><code>{"private readonly object instance"}</code> | <span className="api-desc">The object handed out.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ VContainer instance provider that always returns one fixed object, used when a b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawninstance" /><code>{"object SpawnInstance(IObjectResolver resolver)"}</code> | Returns the stored instance. |
+| <Link id="m-spawninstance" /><code>{"object SpawnInstance(IObjectResolver resolver)"}</code> | <span className="api-desc">Returns the stored instance.</span> |

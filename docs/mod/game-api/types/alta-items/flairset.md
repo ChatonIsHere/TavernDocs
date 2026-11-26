@@ -23,18 +23,18 @@ Asset with one set of decorative flairs for a book's pages: spine, spine face an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FlairSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FlairSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> | Backing field for `EdgeFace`. |
-| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> | Backing field for `SpineFace`. |
-| <Link id="m-spineflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> | Backing field for `Spine`. |
+| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> | <span className="api-desc">Backing field for `EdgeFace`.</span> |
+| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> | <span className="api-desc">Backing field for `SpineFace`.</span> |
+| <Link id="m-spineflairs" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> | <span className="api-desc">Backing field for `Spine`.</span> |
 
 </details>
 
@@ -42,12 +42,16 @@ Asset with one set of decorative flairs for a book's pages: spine, spine face an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edgeface" /><code><Link to="/mod/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> | Flairs for the face of the page edge. |
-| <Link id="m-spine" /><code><Link to="/mod/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> | Flairs for the spine: top, middle and bottom. |
-| <Link id="m-spineface" /><code><Link to="/mod/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> | Flairs for the face next to the spine. |
+| <Link id="m-edgeface" /><code><Link to="/mod/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> | <span className="api-desc">Flairs for the face of the page edge.</span> |
+| <Link id="m-spine" /><code><Link to="/mod/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> | <span className="api-desc">Flairs for the spine: top, middle and bottom.</span> |
+| <Link id="m-spineface" /><code><Link to="/mod/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> | <span className="api-desc">Flairs for the face next to the spine.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FlairSet`:
 
+<div className="api-used-in">
+
 [`FlairSettings.baseEdgeFace`](/mod/game-api/types/alta-items/flairsettings#m-baseedgeface), [`FlairSettings.baseSpine`](/mod/game-api/types/alta-items/flairsettings#m-basespine), [`FlairSettings.baseSpineFace`](/mod/game-api/types/alta-items/flairsettings#m-basespineface).
+
+</div>

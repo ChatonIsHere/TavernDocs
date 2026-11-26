@@ -22,16 +22,16 @@ Asset listing the parts of a name board shield.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NameBoardShield()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"NameBoardShield()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parts" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] parts"}</code> | Backing field for `Parts`. |
+| <Link id="m-parts" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] parts"}</code> | <span className="api-desc">Backing field for `Parts`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Asset listing the parts of a name board shield.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parts-2" /><code><Link to="/mod/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] Parts { get; }"}</code> | The shield's part definitions. |
+| <Link id="m-parts-2" /><code><Link to="/mod/game-api/types/alta-player/shieldpartdefinition">{"ShieldPartDefinition"}</Link>{"[] Parts { get; }"}</code> | <span className="api-desc">The shield's part definitions.</span> |

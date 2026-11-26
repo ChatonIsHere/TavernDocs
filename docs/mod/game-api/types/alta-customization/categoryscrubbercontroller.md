@@ -21,29 +21,29 @@ Sets the customization category scrubber's step count once the customization man
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CategoryScrubberController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CategoryScrubberController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scroller" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" scroller"}</code> | Item scroller showing the categories. |
-| <Link id="m-scrollmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" scrollManager"}</code> | Category scroll manager. |
-| <Link id="m-scrubber" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/scrubber">{"Scrubber"}</Link>{" scrubber"}</code> | Scrubber whose steps are set. |
+| <Link id="m-scroller" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" scroller"}</code> | <span className="api-desc">Item scroller showing the categories.</span> |
+| <Link id="m-scrollmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" scrollManager"}</code> | <span className="api-desc">Category scroll manager.</span> |
+| <Link id="m-scrubber" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/scrubber">{"Scrubber"}</Link>{" scrubber"}</code> | <span className="api-desc">Scrubber whose steps are set.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> | Sets scrubber steps to the number of available categories minus the scroller's visible count. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Runs `Setup` now if owned cosmetics are loaded, otherwise when the customization manager initializes. |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> | <span className="api-desc">Sets scrubber steps to the number of available categories minus the scroller's visible count.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Runs `Setup` now if owned cosmetics are loaded, otherwise when the customization manager initializes.</span> |
 
 </details>

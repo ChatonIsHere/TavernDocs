@@ -29,4 +29,8 @@ How `DynamicMask.AddTexture` combines a texture with the mask: add, subtract, mu
 
 Members of other types that take, return or hold a `TextureMode`:
 
+<div className="api-used-in">
+
 [`DynamicMask.AddTexture`](/mod/game-api/types/alta-menus/dynamicmask#m-addtexture).
+
+</div>

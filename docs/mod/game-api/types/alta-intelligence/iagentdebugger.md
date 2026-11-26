@@ -21,4 +21,8 @@ Empty marker interface for AI agent debuggers.
 
 Members of other types that take, return or hold a `IAgentDebugger`:
 
+<div className="api-used-in">
+
 [`ActionDecider<TAgent>.debugger`](/mod/game-api/types/alta-intelligence/actiondecider-tagent#m-debugger).
+
+</div>

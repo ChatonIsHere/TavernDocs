@@ -21,19 +21,23 @@ A saved stat modifier that ends after a time, reapplied to the `StatManager` on 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> | Creates a `StatManagerSaveData.TimedModifier` with default values. |
+| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> | <span className="api-desc">Creates a `StatManagerSaveData.TimedModifier` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | The stat the modifier changes. |
-| <Link id="m-ismultiplier" /><code>{"bool isMultiplier"}</code> | True if `value` multiplies the stat rather than adding to it. |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> | The modifier's timeline entry time, saved with `Timeline.SaveEntry`. |
-| <Link id="m-value" /><code>{"float value"}</code> | Amount of the change. |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | <span className="api-desc">The stat the modifier changes.</span> |
+| <Link id="m-ismultiplier" /><code>{"bool isMultiplier"}</code> | <span className="api-desc">True if `value` multiplies the stat rather than adding to it.</span> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | <span className="api-desc">The modifier's timeline entry time, saved with `Timeline.SaveEntry`.</span> |
+| <Link id="m-value" /><code>{"float value"}</code> | <span className="api-desc">Amount of the change.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TimedModifier`:
 
+<div className="api-used-in">
+
 [`StatManagerSaveData.modifiers`](/mod/game-api/types/alta-stats-effects/statmanagersavedata#m-modifiers), [`TimedStatModifier.Load`](/mod/game-api/types/alta-stats-effects/timedstatmodifier#m-load), [`TimedStatModifier.Save`](/mod/game-api/types/alta-stats-effects/timedstatmodifier#m-save).
+
+</div>

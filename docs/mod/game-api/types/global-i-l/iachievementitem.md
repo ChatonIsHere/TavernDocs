@@ -21,4 +21,4 @@ Something that shows or uses a game achievement.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setachievement" /><code>{"void SetAchievement("}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Gives it the achievement. |
+| <Link id="m-setachievement" /><code>{"void SetAchievement("}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Gives it the achievement.</span> |

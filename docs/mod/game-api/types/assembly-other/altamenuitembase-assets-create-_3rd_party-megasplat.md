@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/3rd Party/MegaSplat`: menu item classes inheri
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MegaSplat()"}</code> | Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.MegaSplat` with default values. |
+| <Link id="m-ctor" /><code>{"protected MegaSplat()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create._3rd_Party.MegaSplat` with default values.</span> |

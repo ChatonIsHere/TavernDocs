@@ -31,4 +31,8 @@ Kind of setting control in a settings menu: toggle, scroll, enum float, command,
 
 Members of other types that take, return or hold a `SettingType`:
 
+<div className="api-used-in">
+
 [`DevToolsBoard.ScaleControl`](/mod/game-api/types/alta-player/devtoolsboard#m-scalecontrol), [`DevToolsBoard.SettingTypeScaler.settingType`](/mod/game-api/types/alta-player/devtoolsboard-settingtypescaler#m-settingtype), [`SettingsFieldAccess.settingType`](/mod/game-api/types/alta-utilities/settingsfieldaccess#m-settingtype), [`SettingsFieldAccess.SettingType`](/mod/game-api/types/alta-utilities/settingsfieldaccess#m-settingtype-2).
+
+</div>

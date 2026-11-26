@@ -24,21 +24,21 @@ A saved mesh placement for the Scrapper tool: local transform, mesh and material
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeshPlacementData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"MeshPlacementData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> | Atlas to try first when baking. Cleared after the bake attempt. |
-| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> | Saved local rotation in euler angles. |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | Saved local position. |
-| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> | Saved local scale. |
-| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> | Saved material; replaced by the atlas material when baked. |
-| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> | Saved mesh; replaced by the atlas mesh when baked. |
+| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> | <span className="api-desc">Atlas to try first when baking. Cleared after the bake attempt.</span> |
+| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> | <span className="api-desc">Saved local rotation in euler angles.</span> |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | <span className="api-desc">Saved local position.</span> |
+| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> | <span className="api-desc">Saved local scale.</span> |
+| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> | <span className="api-desc">Saved material; replaced by the atlas material when baked.</span> |
+| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> | <span className="api-desc">Saved mesh; replaced by the atlas mesh when baked.</span> |
 
 </details>
 
@@ -46,21 +46,25 @@ A saved mesh placement for the Scrapper tool: local transform, mesh and material
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localeulerangles-2" /><code>{"Vector3 LocalEulerAngles { get; }"}</code> | Saved local rotation in degrees. |
-| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> | Saved local position. |
-| <Link id="m-localscale-2" /><code>{"Vector3 LocalScale { get; }"}</code> | Saved local scale. |
-| <Link id="m-sharedmaterial-2" /><code>{"Material SharedMaterial { get; }"}</code> | Material to render the mesh with. |
-| <Link id="m-sharedmesh-2" /><code>{"Mesh SharedMesh { get; }"}</code> | The mesh to place. |
+| <Link id="m-localeulerangles-2" /><code>{"Vector3 LocalEulerAngles { get; }"}</code> | <span className="api-desc">Saved local rotation in degrees.</span> |
+| <Link id="m-localposition-2" /><code>{"Vector3 LocalPosition { get; }"}</code> | <span className="api-desc">Saved local position.</span> |
+| <Link id="m-localscale-2" /><code>{"Vector3 LocalScale { get; }"}</code> | <span className="api-desc">Saved local scale.</span> |
+| <Link id="m-sharedmaterial-2" /><code>{"Material SharedMaterial { get; }"}</code> | <span className="api-desc">Material to render the mesh with.</span> |
+| <Link id="m-sharedmesh-2" /><code>{"Mesh SharedMesh { get; }"}</code> | <span className="api-desc">The mesh to place.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bakeatlas" /><code>{"bool BakeAtlas(IEnumerable<"}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> | Swaps the mesh and material for an atlased version (forced atlas first, then the first that applies). True on success. |
-| <Link id="m-savedata" /><code>{"void SaveData(Vector3 localScale, Vector3 localEulerAngles, Vector3 localPosition, Mesh sharedMesh, Material sharedMaterial)"}</code> | Stores the transform, mesh and material. |
+| <Link id="m-bakeatlas" /><code>{"bool BakeAtlas(IEnumerable<"}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{"> definitions)"}</code> | <span className="api-desc">Swaps the mesh and material for an atlased version (forced atlas first, then the first that applies). True on success.</span> |
+| <Link id="m-savedata" /><code>{"void SaveData(Vector3 localScale, Vector3 localEulerAngles, Vector3 localPosition, Mesh sharedMesh, Material sharedMaterial)"}</code> | <span className="api-desc">Stores the transform, mesh and material.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MeshPlacementData`:
 
+<div className="api-used-in">
+
 [`MeshPlacement.data`](/mod/game-api/types/alta-crafting/meshplacement#m-data), [`MeshPlacementSaveData.data`](/mod/game-api/types/alta-crafting/meshplacementsavedata#m-data).
+
+</div>

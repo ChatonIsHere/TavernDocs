@@ -21,11 +21,15 @@ A network connection with its player. `Connection` is the implementation.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> | The player on this connection. Setting it also updates `PlayerName` in `Connection`. |
-| <Link id="m-playername" /><code>{"string PlayerName { get; }"}</code> | The player's username, or "Unknown Player" before one is set. |
+| <Link id="m-player" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Player { get; set; }"}</code> | <span className="api-desc">The player on this connection. Setting it also updates `PlayerName` in `Connection`.</span> |
+| <Link id="m-playername" /><code>{"string PlayerName { get; }"}</code> | <span className="api-desc">The player's username, or "Unknown Player" before one is set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IConnection`:
 
+<div className="api-used-in">
+
 [`InternalMessage.Serialize`](/mod/game-api/types/alta-networking/internalmessage#m-serialize), [`SceneEntityMessage.Serialize`](/mod/game-api/types/alta-networking/sceneentitymessage#m-serialize).
+
+</div>

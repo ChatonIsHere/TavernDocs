@@ -27,4 +27,8 @@ Which hand is meant: `Left` or `Right`.
 
 Members of other types that take, return or hold a `ActiveHandIndex`:
 
+<div className="api-used-in">
+
 [`GameSettings.SmoothLocomotionActiveHand`](/mod/game-api/types/alta-utilities/gamesettings#m-smoothlocomotionactivehand).
+
+</div>

@@ -24,16 +24,16 @@ Asset listing the network prefab for each stage of a staged object (under Woodcu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabStageDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PrefabStageDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stages" /><code>{"private "}<Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] stages"}</code> | Backing field for `Stages`. |
+| <Link id="m-stages" /><code>{"private "}<Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] stages"}</code> | <span className="api-desc">Backing field for `Stages`.</span> |
 
 </details>
 
@@ -41,17 +41,17 @@ Asset listing the network prefab for each stage of a staged object (under Woodcu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stagecount" /><code>{"int StageCount { get; }"}</code> | Number of stages. |
-| <Link id="m-stages-2" /><code><Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] Stages { get; }"}</code> | Prefab, local position and local rotation for each stage, in order. |
+| <Link id="m-stagecount" /><code>{"int StageCount { get; }"}</code> | <span className="api-desc">Number of stages.</span> |
+| <Link id="m-stages-2" /><code><Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{"[] Stages { get; }"}</code> | <span className="api-desc">Prefab, local position and local rotation for each stage, in order.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getstage" /><code>{"internal "}<Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{" GetStage(int index)"}</code> | Returns the setup for a stage index, or null if out of range. |
+| <Link id="m-getstage" /><code>{"internal "}<Link to="/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup">{"PrefabStageDefinition.PrefabSetup"}</Link>{" GetStage(int index)"}</code> | <span className="api-desc">Returns the setup for a stage index, or null if out of range.</span> |
 
 </details>
 
@@ -59,4 +59,8 @@ Asset listing the network prefab for each stage of a staged object (under Woodcu
 
 Members of other types that take, return or hold a `PrefabStageDefinition`:
 
+<div className="api-used-in">
+
 [`StageBasedPrefab.stages`](/mod/game-api/types/global-s/stagebasedprefab#m-stages), [`StageBasedPrefabSaveData.definition`](/mod/game-api/types/global-s/stagebasedprefabsavedata#m-definition).
+
+</div>

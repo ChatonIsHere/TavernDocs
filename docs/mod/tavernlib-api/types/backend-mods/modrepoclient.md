@@ -21,18 +21,18 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/mod/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> | Sets up the client with an HTTP helper, the repo URLs and an optional deadline. |
+| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/mod/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> | <span className="api-desc">Sets up the client with an HTTP helper, the repo URLs and an optional deadline.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> | Time allowed for one JSON fetch (15 seconds), shortened if the pass deadline is nearer. |
-| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> | Largest JSON download accepted (8 MB). |
-| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> | The repository index schema version this build reads (2). |
+| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> | <span className="api-desc">Time allowed for one JSON fetch (15 seconds), shortened if the pass deadline is nearer.</span> |
+| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> | <span className="api-desc">Largest JSON download accepted (8 MB).</span> |
+| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> | <span className="api-desc">The repository index schema version this build reads (2).</span> |
 
 </details>
 
@@ -40,21 +40,23 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fetchindexes" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modindex">{"ModIndex"}</Link>{" FetchIndexes()"}</code> | Downloads every source's index and merges them. For each mod and major, the default source wins, then the highest version. |
-| <Link id="m-fetchlatest" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchLatest(string modId, string preferRepo)"}</code> | A mod's `latest.json` manifest, trying the preferred source first if it's trusted. |
-| <Link id="m-fetchmanifest" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifest(string modId, string version, string preferRepo)"}</code> | One version's manifest, trying the preferred source first. Throws if no source serves the right id and version. |
-| <Link id="m-replacementsfrom" /><code>{"static List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> ReplacementsFrom(JObject index, string baseUrl)"}</code> | Reads a source index's `replaced` section, skipping malformed entries and ones that replace a mod with itself. |
-| <Link id="m-validaterepoindex" /><code>{"static void ValidateRepoIndex(string url)"}</code> | Throws `ModManagerException` unless the URL serves a version 2 `repository.json` with a `mods` object. |
+| <Link id="m-fetchindexes" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modindex">{"ModIndex"}</Link>{" FetchIndexes()"}</code> | <span className="api-desc">Downloads every source's index and merges them. For each mod and major, the default source wins, then the highest version.</span> |
+| <Link id="m-fetchlatest" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchLatest(string modId, string preferRepo)"}</code> | <span className="api-desc">A mod's `latest.json` manifest, trying the preferred source first if it's trusted.</span> |
+| <Link id="m-fetchmanifest" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifest(string modId, string version, string preferRepo)"}</code> | <span className="api-desc">One version's manifest, trying the preferred source first. Throws if no source serves the right id and version.</span> |
+| <Link id="m-incompatibilitiesfrom" /><code>{"static List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modincompatibility">{"ModIncompatibility"}</Link>{"> IncompatibilitiesFrom(JObject index, string baseUrl)"}</code> | <span className="api-desc">Reads a source index's `incompatible` list. An entry needs exactly two different mod ids and a string note; a `below` that isn't a version means every version clashes.</span> |
+| <Link id="m-replacementsfrom" /><code>{"static List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> ReplacementsFrom(JObject index, string baseUrl)"}</code> | <span className="api-desc">Reads a source index's `replaced` section, skipping malformed entries and ones that replace a mod with itself.</span> |
+| <Link id="m-validaterepoindex" /><code>{"static void ValidateRepoIndex(string url)"}</code> | <span className="api-desc">Throws `ModManagerException` unless the URL serves a version 2 `repository.json` with a `mods` object.</span> |
+| <Link id="m-withdrawalsfrom" /><code>{"static List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modwithdrawal">{"ModWithdrawal"}</Link>{"> WithdrawalsFrom(JObject index, string baseUrl)"}</code> | <span className="api-desc">Reads a source index's `withdrawn` object (`{id: {version: reason}}`), keeping string reasons only.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> | Fetches one manifest file for a mod, trying each repo with the preferred one first, and checks it names the right mod and version. |
-| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> | Fetches one repo's `repository.json` and returns its mod summaries and replacements; a bad repo is skipped with a warning. |
-| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> | Downloads and parses a JSON object from a URL; throws `ModManagerException` on any failure. |
-| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> | Returns whether an index has the integer `index_version` this build supports. |
+| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/mod/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> | <span className="api-desc">Fetches one manifest file for a mod, trying each repo with the preferred one first, and checks it names the right mod and version.</span> |
+| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modincompatibility">{"ModIncompatibility"}</Link>{">, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modwithdrawal">{"ModWithdrawal"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> | <span className="api-desc">Fetches one source's index and returns its mods, replacements, incompatible pairs and withdrawn versions, or empty lists if it can't be read.</span> |
+| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> | <span className="api-desc">Downloads and parses a JSON object from a URL; throws `ModManagerException` on any failure.</span> |
+| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> | <span className="api-desc">Returns whether an index has the integer `index_version` this build supports.</span> |
 
 </details>
 
@@ -62,4 +64,8 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 
 Members of other types that take, return or hold a `ModRepoClient`:
 
+<div className="api-used-in">
+
 [`ModReconciler.Pass._client`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-client).
+
+</div>

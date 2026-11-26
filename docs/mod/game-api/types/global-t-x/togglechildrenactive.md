@@ -21,10 +21,10 @@ A tiny component whose `ToggleActive` flips every direct child on or off. Meant 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-toggleactive" /><code>{"void ToggleActive()"}</code> | Flips the active state of each direct child of this transform. |
+| <Link id="m-toggleactive" /><code>{"void ToggleActive()"}</code> | <span className="api-desc">Flips the active state of each direct child of this transform.</span> |

@@ -21,4 +21,4 @@ An event with a value and an argument, raised with `Invoke`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T1 value, T2 argument)"}</code> | Fires the event with both arguments. |
+| <Link id="m-invoke" /><code>{"void Invoke(T1 value, T2 argument)"}</code> | <span className="api-desc">Fires the event with both arguments.</span> |

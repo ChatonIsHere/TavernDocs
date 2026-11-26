@@ -21,18 +21,18 @@ A pickup with jointed child rigidbodies that freezes them and snaps them back to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DockableJoints()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DockableJoints()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodiescount" /><code>{"private int bodiesCount"}</code> | Number of entries in `jointedBodies`, cached in `Awake`. |
-| <Link id="m-jointedbodies" /><code>{"private Rigidbody[] jointedBodies"}</code> | The child rigidbodies to freeze while docked. |
-| <Link id="m-saves" /><code>{"private TransformSave[] saves"}</code> | Local transform of each jointed body as recorded in `Awake`. |
+| <Link id="m-bodiescount" /><code>{"private int bodiesCount"}</code> | <span className="api-desc">Number of entries in `jointedBodies`, cached in `Awake`.</span> |
+| <Link id="m-jointedbodies" /><code>{"private Rigidbody[] jointedBodies"}</code> | <span className="api-desc">The child rigidbodies to freeze while docked.</span> |
+| <Link id="m-saves" /><code>{"private TransformSave[] saves"}</code> | <span className="api-desc">Local transform of each jointed body as recorded in `Awake`.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ A pickup with jointed child rigidbodies that freezes them and snaps them back to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks the dock and undock events and records each jointed body's local transform. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Hooks the dock and undock events and records each jointed body's local transform.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Makes every jointed body kinematic and restores its saved local transform. |
-| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Makes the jointed bodies non-kinematic again so the joints move freely. |
+| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | <span className="api-desc">Makes every jointed body kinematic and restores its saved local transform.</span> |
+| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | <span className="api-desc">Makes the jointed bodies non-kinematic again so the joints move freely.</span> |
 
 </details>

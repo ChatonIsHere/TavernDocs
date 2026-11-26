@@ -22,18 +22,18 @@ Base for the simple bone-chain controllers (`NeckController`, `SpineController`)
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SimpleIKController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected SimpleIKController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bones" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] bones"}</code> | The rig bones in the chain. |
-| <Link id="m-dummy" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> | Pointer to the character dummy whose rig holds the bones. |
-| <Link id="m-lerp" /><code>{"private float lerp"}</code> | Backing field for `Lerp`. Default 0.5. |
+| <Link id="m-bones" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{"[] bones"}</code> | <span className="api-desc">The rig bones in the chain.</span> |
+| <Link id="m-dummy" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> | <span className="api-desc">Pointer to the character dummy whose rig holds the bones.</span> |
+| <Link id="m-lerp" /><code>{"private float lerp"}</code> | <span className="api-desc">Backing field for `Lerp`. Default 0.5.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Base for the simple bone-chain controllers (`NeckController`, `SpineController`)
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bones-2" /><code>{"protected Transform[] Bones { get; private set; }"}</code> | The mapped bone transforms, in chain order. |
-| <Link id="m-boneslength" /><code>{"protected int BonesLength { get; private set; }"}</code> | Number of bones in the chain. |
-| <Link id="m-framerotations" /><code>{"protected Quaternion[] FrameRotations { get; private set; }"}</code> | Scratch buffer for each bone's rotation this frame. |
-| <Link id="m-lerp-2" /><code>{"protected float Lerp { get; }"}</code> | Blend factor from 0 to 1 used by subclasses. |
+| <Link id="m-bones-2" /><code>{"protected Transform[] Bones { get; private set; }"}</code> | <span className="api-desc">The mapped bone transforms, in chain order.</span> |
+| <Link id="m-boneslength" /><code>{"protected int BonesLength { get; private set; }"}</code> | <span className="api-desc">Number of bones in the chain.</span> |
+| <Link id="m-framerotations" /><code>{"protected Quaternion[] FrameRotations { get; private set; }"}</code> | <span className="api-desc">Scratch buffer for each bone's rotation this frame.</span> |
+| <Link id="m-lerp-2" /><code>{"protected float Lerp { get; }"}</code> | <span className="api-desc">Blend factor from 0 to 1 used by subclasses.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Maps the bone identifiers to the dummy's bones and sets up the rotation buffer. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Maps the bone identifiers to the dummy's bones and sets up the rotation buffer.</span> |

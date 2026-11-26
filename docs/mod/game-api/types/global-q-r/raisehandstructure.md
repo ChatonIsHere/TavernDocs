@@ -23,16 +23,16 @@ Tutorial input check asset: in position when the hands holding a pickup are rais
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RaiseHandStructure()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RaiseHandStructure()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minheighthandtohead" /><code>{"private float minHeightHandToHead"}</code> | How far above the head the hands must be. |
+| <Link id="m-minheighthandtohead" /><code>{"private float minHeightHandToHead"}</code> | <span className="api-desc">How far above the head the hands must be.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Tutorial input check asset: in position when the hands holding a pickup are rais
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | True when the average height of the hands holding the pickup is more than `minHeightHandToHead` above the head. |
+| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | <span className="api-desc">True when the average height of the hands holding the pickup is more than `minHeightHandToHead` above the head.</span> |

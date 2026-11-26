@@ -28,4 +28,8 @@ How a bezier spline keeps neighbouring control points in line: free, aligned or 
 
 Members of other types that take, return or hold a `BezierControlPointMode`:
 
+<div className="api-used-in">
+
 [`BezierSpline.GetControlPointMode`](/mod/game-api/types/alta-utilities/bezierspline#m-getcontrolpointmode), [`BezierSpline.modes`](/mod/game-api/types/alta-utilities/bezierspline#m-modes), [`BezierSpline.SetControlPointMode`](/mod/game-api/types/alta-utilities/bezierspline#m-setcontrolpointmode).
+
+</div>

@@ -22,16 +22,16 @@ The answer to `token list`: every named token.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TokenList()"}</code> | Makes an empty token list answer. |
+| <Link id="m-ctor" /><code>{"TokenList()"}</code> | <span className="api-desc">Makes an empty token list answer.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tokens" /><code>{"List<"}<Link to="/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokeninfo">{"TokenCommandModule.TokenInfo"}</Link>{"> Tokens { get; set; }"}</code> | Every named token, revoked and expired ones included, oldest first. |
+| <Link id="m-tokens" /><code>{"List<"}<Link to="/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokeninfo">{"TokenCommandModule.TokenInfo"}</Link>{"> Tokens { get; set; }"}</code> | <span className="api-desc">Every named token, revoked and expired ones included, oldest first.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | One token per line, or `No named tokens`. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">One token per line, or `No named tokens`.</span> |

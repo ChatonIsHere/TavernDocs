@@ -21,16 +21,16 @@ Player controller for the desktop (non VR) main menu; only supplies the head tra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-head" /><code>{"private Transform head"}</code> | The camera head transform. |
+| <Link id="m-head" /><code>{"private Transform head"}</code> | <span className="api-desc">The camera head transform.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Player controller for the desktop (non VR) main menu; only supplies the head tra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-head-2" /><code>{"override Transform Head { get; }"}</code> | Returns `head`. |
-| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | Returns `head`. |
+| <Link id="m-head-2" /><code>{"override Transform Head { get; }"}</code> | <span className="api-desc">Returns `head`.</span> |
+| <Link id="m-headfollow" /><code>{"override Transform HeadFollow { get; }"}</code> | <span className="api-desc">Returns `head`.</span> |

@@ -24,17 +24,17 @@ Asset listing when a `TimeBasedStagedPrefab` moves to each stage, counted from w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimedPrefabStageDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TimedPrefabStageDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdestroyingthisonlaststage" /><code>{"private bool isDestroyingThisOnLastStage"}</code> | Backing field for `IsDestroyingThisOnLastStage`. |
-| <Link id="m-timesperstage" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] timesPerStage"}</code> | Backing field for `Times`. |
+| <Link id="m-isdestroyingthisonlaststage" /><code>{"private bool isDestroyingThisOnLastStage"}</code> | <span className="api-desc">Backing field for `IsDestroyingThisOnLastStage`.</span> |
+| <Link id="m-timesperstage" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] timesPerStage"}</code> | <span className="api-desc">Backing field for `Times`.</span> |
 
 </details>
 
@@ -42,11 +42,15 @@ Asset listing when a `TimeBasedStagedPrefab` moves to each stage, counted from w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdestroyingthisonlaststage-2" /><code>{"bool IsDestroyingThisOnLastStage { get; }"}</code> | If true, reaching the last entry destroys the staged prefab and leaves the current stage entity in the world on its own. |
-| <Link id="m-times" /><code><Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] Times { get; }"}</code> | Stage changes in order; times must go up. |
+| <Link id="m-isdestroyingthisonlaststage-2" /><code>{"bool IsDestroyingThisOnLastStage { get; }"}</code> | <span className="api-desc">If true, reaching the last entry destroys the staged prefab and leaves the current stage entity in the world on its own.</span> |
+| <Link id="m-times" /><code><Link to="/mod/game-api/types/global-t-x/timedprefabstagedefinition-timesetup">{"TimedPrefabStageDefinition.TimeSetup"}</Link>{"[] Times { get; }"}</code> | <span className="api-desc">Stage changes in order; times must go up.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TimedPrefabStageDefinition`:
 
+<div className="api-used-in">
+
 [`TimeBasedStagedPrefab.timesSetup`](/mod/game-api/types/global-t-x/timebasedstagedprefab#m-timessetup), [`TimeBasedStagedPrefabSaveData.definition`](/mod/game-api/types/global-t-x/timebasedstagedprefabsavedata#m-definition).
+
+</div>

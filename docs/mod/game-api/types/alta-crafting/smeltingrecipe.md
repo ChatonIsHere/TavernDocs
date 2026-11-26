@@ -24,18 +24,18 @@ A smelter recipe asset: the items that go in, what comes out and how much fuel i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SmeltingRecipe()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SmeltingRecipe()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration`. Defaults to 2. |
-| <Link id="m-input" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] input"}</code> | Backing field for `Input`. |
-| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] output"}</code> | Backing field for `Output`. |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | <span className="api-desc">Backing field for `Duration`. Defaults to 2.</span> |
+| <Link id="m-input" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] input"}</code> | <span className="api-desc">Backing field for `Input`.</span> |
+| <Link id="m-output" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] output"}</code> | <span className="api-desc">Backing field for `Output`.</span> |
 
 </details>
 
@@ -43,12 +43,16 @@ A smelter recipe asset: the items that go in, what comes out and how much fuel i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | Fuel the smelter must hold for this recipe to match, and the fuel it then burns. Defaults to 2. |
-| <Link id="m-input-2" /><code><Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] Input { get; }"}</code> | Items and counts the smelter must contain. The smelter's contents must match these item types exactly. |
-| <Link id="m-output-2" /><code><Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] Output { get; }"}</code> | Items and counts the smelter produces when the recipe finishes. |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | <span className="api-desc">Fuel the smelter must hold for this recipe to match, and the fuel it then burns. Defaults to 2.</span> |
+| <Link id="m-input-2" /><code><Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] Input { get; }"}</code> | <span className="api-desc">Items and counts the smelter must contain. The smelter's contents must match these item types exactly.</span> |
+| <Link id="m-output-2" /><code><Link to="/mod/game-api/types/alta-items/itemcount">{"ItemCount"}</Link>{"[] Output { get; }"}</code> | <span className="api-desc">Items and counts the smelter produces when the recipe finishes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SmeltingRecipe`:
 
+<div className="api-used-in">
+
 [`Smelter.FindRecipe`](/mod/game-api/types/alta-crafting/smelter#m-findrecipe), [`Smelter.recipe`](/mod/game-api/types/alta-crafting/smelter#m-recipe), [`SmelterSaveData.currentRecipe`](/mod/game-api/types/alta-crafting/smeltersavedata#m-currentrecipe), [`SmelterUnlockManager.recipes`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-recipes), [`SmelterUnlockManager.Recipes`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-recipes-2), [`SmelterUpgrades.recipes`](/mod/game-api/types/alta-crafting/smelterupgrades#m-recipes), [`SmelterUpgrades.Recipes`](/mod/game-api/types/alta-crafting/smelterupgrades#m-recipes-2).
+
+</div>

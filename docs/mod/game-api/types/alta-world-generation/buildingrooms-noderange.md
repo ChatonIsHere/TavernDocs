@@ -21,17 +21,21 @@ A run of nodes from one node to another, used by `BuildingRooms` to describe a w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NodeRange("}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" start, "}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" end)"}</code> | Creates a `BuildingRooms.NodeRange` from `start` and `end`. |
+| <Link id="m-ctor" /><code>{"NodeRange("}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" start, "}<Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" end)"}</code> | <span className="api-desc">Creates a `BuildingRooms.NodeRange` from `start` and `end`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-end" /><code><Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" End { get; private set; }"}</code> | Last node of the run. |
-| <Link id="m-start" /><code><Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" Start { get; private set; }"}</code> | First node of the run. |
+| <Link id="m-end" /><code><Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" End { get; private set; }"}</code> | <span className="api-desc">Last node of the run.</span> |
+| <Link id="m-start" /><code><Link to="/mod/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" Start { get; private set; }"}</code> | <span className="api-desc">First node of the run.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `NodeRange`:
 
+<div className="api-used-in">
+
 [`BuildingRooms.GetWalls`](/mod/game-api/types/alta-world-generation/buildingrooms#m-getwalls).
+
+</div>

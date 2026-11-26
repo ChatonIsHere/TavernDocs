@@ -22,16 +22,16 @@ Old version 1 save data for a `PositionRestrictor`, holding only a radius.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictorSaveDataOld1()"}</code> | Creates a `PositionRestrictorSaveDataOld1` with default values. |
+| <Link id="m-ctor" /><code>{"PositionRestrictorSaveDataOld1()"}</code> | <span className="api-desc">Creates a `PositionRestrictorSaveDataOld1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"float radius"}</code> | Allowed radius. |
+| <Link id="m-radius" /><code>{"float radius"}</code> | <span className="api-desc">Allowed radius.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Upgrades to `PositionRestrictorSaveData2` with just the radius set. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Upgrades to `PositionRestrictorSaveData2` with just the radius set.</span> |

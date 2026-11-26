@@ -22,17 +22,17 @@ Pooled object that shows ghost copies of a set of mesh renderers, for example wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ObjectVisualDouble()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ObjectVisualDouble()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activeghosts" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeGhosts"}</code> | Ghosts currently shown. |
-| <Link id="m-rendererghostdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" rendererGhostDefinition"}</code> | Pool definition used to get each `RendererGhost`. |
+| <Link id="m-activeghosts" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeGhosts"}</code> | <span className="api-desc">Ghosts currently shown.</span> |
+| <Link id="m-rendererghostdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" rendererGhostDefinition"}</code> | <span className="api-desc">Pool definition used to get each `RendererGhost`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Pooled object that shows ghost copies of a set of mesh renderers, for example wh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-releaseactive" /><code>{"void ReleaseActive()"}</code> | Returns all current ghosts to the pool. |
-| <Link id="m-setuprenderers" /><code>{"void SetupRenderers(IEnumerable<MeshRenderer> renderers)"}</code> | Releases old ghosts, then makes a ghost of each active renderer and parents it to this object. |
+| <Link id="m-releaseactive" /><code>{"void ReleaseActive()"}</code> | <span className="api-desc">Returns all current ghosts to the pool.</span> |
+| <Link id="m-setuprenderers" /><code>{"void SetupRenderers(IEnumerable<MeshRenderer> renderers)"}</code> | <span className="api-desc">Releases old ghosts, then makes a ghost of each active renderer and parents it to this object.</span> |

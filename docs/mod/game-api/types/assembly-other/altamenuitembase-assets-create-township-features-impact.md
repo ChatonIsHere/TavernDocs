@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Impact`: menu item classes i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Impact()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Impact` with default values. |
+| <Link id="m-ctor" /><code>{"protected Impact()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Impact` with default values.</span> |

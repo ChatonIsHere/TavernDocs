@@ -22,28 +22,28 @@ Trigger volume that switches the atmosphere to a set when anything enters it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpaceAtmosphereTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpaceAtmosphereTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager"}</code> | The atmosphere manager. |
-| <Link id="m-usedset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" usedSet"}</code> | Atmosphere set to apply. |
+| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/atmospheremanager">{"AtmosphereManager"}</Link>{" manager"}</code> | <span className="api-desc">The atmosphere manager.</span> |
+| <Link id="m-usedset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" usedSet"}</code> | <span className="api-desc">Atmosphere set to apply.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Applies `usedSet` through the atmosphere manager. Fires for any collider. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Caches `AtmosphereManager.instance`. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Applies `usedSet` through the atmosphere manager. Fires for any collider.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Caches `AtmosphereManager.instance`.</span> |
 
 </details>

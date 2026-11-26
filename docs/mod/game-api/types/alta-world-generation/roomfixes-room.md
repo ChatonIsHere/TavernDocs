@@ -21,14 +21,14 @@ One open area found by the room fix flood fill.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Room(int startX, int startY, int totalX, int totalY, int count, int group)"}</code> | Creates a `RoomFixes.Room` from `startX`, `startY`, `totalX`, `totalY`, `count` and `group`. |
+| <Link id="m-ctor" /><code>{"Room(int startX, int startY, int totalX, int totalY, int count, int group)"}</code> | <span className="api-desc">Creates a `RoomFixes.Room` from `startX`, `startY`, `totalX`, `totalY`, `count` and `group`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-average" /><code>{"Vector2 average"}</code> | Average cell position of the room (its centre). |
-| <Link id="m-count" /><code>{"int count"}</code> | Number of cells in the room. |
-| <Link id="m-group" /><code>{"int group"}</code> | Connection group; rooms joined by a corridor share a group. |
-| <Link id="m-startx" /><code>{"int startX"}</code> | X of the cell the flood fill started from. |
-| <Link id="m-starty" /><code>{"int startY"}</code> | Z of the cell the flood fill started from. |
+| <Link id="m-average" /><code>{"Vector2 average"}</code> | <span className="api-desc">Average cell position of the room (its centre).</span> |
+| <Link id="m-count" /><code>{"int count"}</code> | <span className="api-desc">Number of cells in the room.</span> |
+| <Link id="m-group" /><code>{"int group"}</code> | <span className="api-desc">Connection group; rooms joined by a corridor share a group.</span> |
+| <Link id="m-startx" /><code>{"int startX"}</code> | <span className="api-desc">X of the cell the flood fill started from.</span> |
+| <Link id="m-starty" /><code>{"int startY"}</code> | <span className="api-desc">Z of the cell the flood fill started from.</span> |

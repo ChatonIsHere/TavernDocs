@@ -23,11 +23,11 @@ Marks a static class as a console command module. Its name becomes the word befo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> | Creates a `ModuleAttribute` from `name` and `description`. |
+| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> | <span className="api-desc">Creates a `ModuleAttribute` from `name` and `description`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | Help text for the module. |
-| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | The word typed to reach this module's commands, such as `caves`. |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | <span className="api-desc">Help text for the module.</span> |
+| <Link id="m-name" /><code>{"string Name { get; private set; }"}</code> | <span className="api-desc">The word typed to reach this module's commands, such as `caves`.</span> |

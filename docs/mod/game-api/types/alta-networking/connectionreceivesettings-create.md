@@ -22,4 +22,4 @@ Editor menu item for creating a `ConnectionReceiveSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ConnectionReceiveSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `ConnectionReceiveSettings.Create` with default values.</span> |

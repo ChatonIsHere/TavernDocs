@@ -23,16 +23,20 @@ Save data for `LinearPartCloner`: how many parts it has spawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> | Creates a `LinearPartClonerData` with default values. |
+| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> | <span className="api-desc">Creates a `LinearPartClonerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"int count"}</code> | Number of cloned parts (default 1). |
+| <Link id="m-count" /><code>{"int count"}</code> | <span className="api-desc">Number of cloned parts (default 1).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LinearPartClonerData`:
 
+<div className="api-used-in">
+
 [`LinearPartCloner.saveData`](/mod/game-api/types/global-i-l/linearpartcloner#m-savedata).
+
+</div>

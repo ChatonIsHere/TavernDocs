@@ -21,4 +21,4 @@ An int stored in `PlayerPreferences` under a fixed key. Not used in this build.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceInt(string key)"}</code> | Creates a `PlayerPreferenceInt` from `key`. |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceInt(string key)"}</code> | <span className="api-desc">Creates a `PlayerPreferenceInt` from `key`.</span> |

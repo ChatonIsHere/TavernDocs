@@ -22,17 +22,17 @@ Base class for components that react to one raw input button on a given controll
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ControllerInputButtonPressed()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ControllerInputButtonPressed()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/generalinputtype">{"GeneralInputType"}</Link>{" button"}</code> | The input button to listen for. |
-| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> | The controller whose input is watched. |
+| <Link id="m-button" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/generalinputtype">{"GeneralInputType"}</Link>{" button"}</code> | <span className="api-desc">The input button to listen for.</span> |
+| <Link id="m-controller" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> | <span className="api-desc">The controller whose input is watched.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Base class for components that react to one raw input button on a given controll
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Hooks the button's pressed event on the controller's raw input. |
-| <Link id="m-buttonpressed" /><code>{"protected abstract void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Called when the button is pressed. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Hooks the button's pressed event on the controller's raw input.</span> |
+| <Link id="m-buttonpressed" /><code>{"protected abstract void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Called when the button is pressed.</span> |

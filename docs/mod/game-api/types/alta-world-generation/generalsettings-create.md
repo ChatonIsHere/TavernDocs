@@ -22,4 +22,4 @@ Editor menu entry for creating the cave `GeneralSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `GeneralSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `GeneralSettings.Create` with default values.</span> |

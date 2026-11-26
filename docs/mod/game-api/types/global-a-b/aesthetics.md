@@ -20,4 +20,4 @@ Static helper for whether visual effects should show.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isshowing" /><code>{"static bool IsShowing { get; }"}</code> | True when there is a local player controller, so false on a headless server. |
+| <Link id="m-isshowing" /><code>{"static bool IsShowing { get; }"}</code> | <span className="api-desc">True when there is a local player controller, so false on a headless server.</span> |

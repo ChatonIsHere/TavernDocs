@@ -21,10 +21,10 @@ Online client that lists Alta's running game server instances. Reached as `ApiAc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InstancesClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates an `InstancesClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"InstancesClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates an `InstancesClient` from `clientManager`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> | Lists running instances, optionally filtered by region and fleet, or only visible regions. |
+| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> | <span className="api-desc">Lists running instances, optionally filtered by region and fleet, or only visible regions.</span> |

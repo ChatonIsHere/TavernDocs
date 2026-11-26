@@ -20,17 +20,17 @@ A `Bounds` with a world rotation, for testing whether a point lies inside a rota
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoundsContainer()"}</code> | Creates a `BoundsContainer` with default values. |
+| <Link id="m-ctor" /><code>{"BoundsContainer()"}</code> | <span className="api-desc">Creates a `BoundsContainer` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bounds" /><code>{"Bounds bounds"}</code> | The box, in rotated space. |
-| <Link id="m-worldrotation" /><code>{"Quaternion worldRotation"}</code> | The box's rotation. |
+| <Link id="m-bounds" /><code>{"Bounds bounds"}</code> | <span className="api-desc">The box, in rotated space.</span> |
+| <Link id="m-worldrotation" /><code>{"Quaternion worldRotation"}</code> | <span className="api-desc">The box's rotation.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkposition" /><code>{"bool CheckPosition(Vector3 position)"}</code> | Rotates the point by the inverse rotation and checks it against the bounds. The bounds centre is in that rotated space. |
+| <Link id="m-checkposition" /><code>{"bool CheckPosition(Vector3 position)"}</code> | <span className="api-desc">Rotates the point by the inverse rotation and checks it against the bounds. The bounds centre is in that rotated space.</span> |

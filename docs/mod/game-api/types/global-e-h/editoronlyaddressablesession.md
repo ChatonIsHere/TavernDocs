@@ -20,4 +20,4 @@ Holds one shared `AddressableSession` for editor-only addressable loading.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-session" /><code>{"static readonly "}<Link to="/mod/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" Session"}</code> | The shared session. |
+| <Link id="m-session" /><code>{"static readonly "}<Link to="/mod/game-api/types/global-a-b/addressablesession">{"AddressableSession"}</Link>{" Session"}</code> | <span className="api-desc">The shared session.</span> |

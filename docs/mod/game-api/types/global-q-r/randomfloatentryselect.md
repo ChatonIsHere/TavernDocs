@@ -21,18 +21,18 @@ Animator state machine behaviour that sets a float parameter to a random value o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomFloatEntrySelect()"}</code> | Creates a `RandomFloatEntrySelect` with default values. |
+| <Link id="m-ctor" /><code>{"RandomFloatEntrySelect()"}</code> | <span className="api-desc">Creates a `RandomFloatEntrySelect` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-indexvariable" /><code>{"private string indexVariable"}</code> | Animator float parameter to set, `Random` by default. |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Upper bound. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Lower bound. |
+| <Link id="m-indexvariable" /><code>{"private string indexVariable"}</code> | <span className="api-desc">Animator float parameter to set, `Random` by default.</span> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Upper bound.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Lower bound.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Animator state machine behaviour that sets a float parameter to a random value o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstatemachineenter" /><code>{"override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)"}</code> | Sets the float parameter to a random value between `minimum` and `maximum`. |
+| <Link id="m-onstatemachineenter" /><code>{"override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)"}</code> | <span className="api-desc">Sets the float parameter to a random value between `minimum` and `maximum`.</span> |

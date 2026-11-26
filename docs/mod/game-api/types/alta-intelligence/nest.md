@@ -21,17 +21,17 @@ A spot creatures can claim as a nest. Enabled nests are free and listed by type,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Nest()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Nest()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nests" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{", HashSet<"}<Link to="/mod/game-api/types/alta-intelligence/nest">{"Nest"}</Link>{">> nests"}</code> | Free nests, by nest type. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type"}</code> | The kind of nest this is. |
+| <Link id="m-nests" /><code>{"private static Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{", HashSet<"}<Link to="/mod/game-api/types/alta-intelligence/nest">{"Nest"}</Link>{">> nests"}</code> | <span className="api-desc">Free nests, by nest type.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type"}</code> | <span className="api-desc">The kind of nest this is.</span> |
 
 </details>
 
@@ -39,21 +39,21 @@ A spot creatures can claim as a nest. Enabled nests are free and listed by type,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isfree" /><code>{"bool IsFree { get; set; }"}</code> | Whether the nest is free. It is the component's `enabled` flag, so claiming a nest disables it. |
+| <Link id="m-isfree" /><code>{"bool IsFree { get; set; }"}</code> | <span className="api-desc">Whether the nest is free. It is the component's `enabled` flag, so claiming a nest disables it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-findclosest" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/nest">{"Nest"}</Link>{" FindClosest("}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type, Vector3 position, float maximumDistance)"}</code> | Returns the closest free nest of a type within the given distance, or null. |
+| <Link id="m-findclosest" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/nest">{"Nest"}</Link>{" FindClosest("}<Link to="/mod/game-api/types/alta-intelligence/nesttype">{"NestType"}</Link>{" type, Vector3 position, float maximumDistance)"}</code> | <span className="api-desc">Returns the closest free nest of a type within the given distance, or null.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Removes the nest from the free list. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Adds the nest to the free list for its type. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Removes the nest from the free list.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Adds the nest to the free list for its type.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ A spot creatures can claim as a nest. Enabled nests are free and listed by type,
 
 Members of other types that take, return or hold a `Nest`:
 
+<div className="api-used-in">
+
 [`ActiveNest.nest`](/mod/game-api/types/alta-intelligence/activenest#m-nest).
+
+</div>

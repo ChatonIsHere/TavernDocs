@@ -20,18 +20,18 @@ Picks the loading screen prefab for the platform (Quest, Pico or default). Bound
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> | Creates a `LoadingScreenFactory` with default values. |
+| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> | <span className="api-desc">Creates a `LoadingScreenFactory` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultloadingscreenobject" /><code>{"private AssetReference defaultLoadingScreenObject"}</code> | Loading screen for other platforms. |
-| <Link id="m-picoloadingscreenobject" /><code>{"private AssetReference picoLoadingScreenObject"}</code> | Loading screen for Pico. |
-| <Link id="m-questloadingscreenobject" /><code>{"private AssetReference questLoadingScreenObject"}</code> | Loading screen for Quest. |
+| <Link id="m-defaultloadingscreenobject" /><code>{"private AssetReference defaultLoadingScreenObject"}</code> | <span className="api-desc">Loading screen for other platforms.</span> |
+| <Link id="m-picoloadingscreenobject" /><code>{"private AssetReference picoLoadingScreenObject"}</code> | <span className="api-desc">Loading screen for Pico.</span> |
+| <Link id="m-questloadingscreenobject" /><code>{"private AssetReference questLoadingScreenObject"}</code> | <span className="api-desc">Loading screen for Quest.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Picks the loading screen prefab for the platform (Quest, Pico or default). Bound
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getloadingscreenobjecthandle" /><code>{"AsyncOperationHandle<GameObject> GetLoadingScreenObjectHandle()"}</code> | Starts loading the loading screen addressable for the current platform and returns its handle. |
+| <Link id="m-getloadingscreenobjecthandle" /><code>{"AsyncOperationHandle<GameObject> GetLoadingScreenObjectHandle()"}</code> | <span className="api-desc">Starts loading the loading screen addressable for the current platform and returns its handle.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LoadingScreenFactory`:
 
+<div className="api-used-in">
+
 [`ProjectLifetimeScope.loadingScreenFactory`](/mod/game-api/types/assembly-other/projectlifetimescope#m-loadingscreenfactory).
+
+</div>

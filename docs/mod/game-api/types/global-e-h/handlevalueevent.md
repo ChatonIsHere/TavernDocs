@@ -21,10 +21,14 @@ Serializable event with a float value and the `HandleHandler` that raised it. Us
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandleValueEvent()"}</code> | Creates a `HandleValueEvent` with default values. |
+| <Link id="m-ctor" /><code>{"HandleValueEvent()"}</code> | <span className="api-desc">Creates a `HandleValueEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandleValueEvent`:
 
+<div className="api-used-in">
+
 [`FaucetHandle.onValueChanged`](/mod/game-api/types/global-e-h/faucethandle#m-onvaluechanged).
+
+</div>

@@ -21,16 +21,16 @@ A `BaseReplacer` that swaps its target text for a fixed string, used with the st
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DirectReplacer(string target, string replacer)"}</code> | Creates a `DirectReplacer` from `target` and `replacer`. |
+| <Link id="m-ctor" /><code>{"DirectReplacer(string target, string replacer)"}</code> | <span className="api-desc">Creates a `DirectReplacer` from `target` and `replacer`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replacer" /><code>{"private string replacer"}</code> | The replacement text. |
+| <Link id="m-replacer" /><code>{"private string replacer"}</code> | <span className="api-desc">The replacement text.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `BaseReplacer` that swaps its target text for a fixed string, used with the st
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the replacement text. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns the replacement text.</span> |

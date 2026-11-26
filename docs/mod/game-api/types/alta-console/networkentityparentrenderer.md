@@ -22,10 +22,10 @@ NLog layout renderer `${entity-parent}`: the parent of a `NetworkEntity` passed 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityParentRenderer()"}</code> | Creates a `NetworkEntityParentRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"NetworkEntityParentRenderer()"}</code> | <span className="api-desc">Creates a `NetworkEntityParentRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's parent. |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Returns the entity's parent.</span> |

@@ -21,11 +21,11 @@ JSON shape of the local shop override file: the shop page and the game home page
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> | Creates a `ShopConfigUtility.ShopItemConfigurations` with default values. |
+| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> | <span className="api-desc">Creates a `ShopConfigUtility.ShopItemConfigurations` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gamehomeconfiguration" /><code><Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" { get; set; }"}</code> | Game home config, from the `home` key. |
-| <Link id="m-shopconfiguration" /><code><Link to="/mod/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" ShopConfiguration { get; set; }"}</code> | Shop page config, from the `shop` key. |
+| <Link id="m-gamehomeconfiguration" /><code><Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/gamehomeconfiguration">{"GameHomeConfiguration"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Game home config, from the `home` key.</span> |
+| <Link id="m-shopconfiguration" /><code><Link to="/mod/game-api/types/assembly-api-models/shoppageconfiguration">{"ShopPageConfiguration"}</Link>{" ShopConfiguration { get; set; }"}</code> | <span className="api-desc">Shop page config, from the `shop` key.</span> |

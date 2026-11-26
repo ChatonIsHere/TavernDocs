@@ -23,17 +23,17 @@ Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.ScriptableObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.ScriptableObject` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code>{"private string path"}</code> | Type name of `T` with dots and plus signs turned into underscores, used to name the generated create action class. |
-| <Link id="m-type" /><code>{"private string type"}</code> | Full C# name of this generic menu item type, written into the generated editor code. |
+| <Link id="m-path" /><code>{"private string path"}</code> | <span className="api-desc">Type name of `T` with dots and plus signs turned into underscores, used to name the generated create action class.</span> |
+| <Link id="m-type" /><code>{"private string type"}</code> | <span className="api-desc">Full C# name of this generic menu item type, written into the generated editor code.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-created" /><code>{"T Created { get; private set; }"}</code> | The asset created by the last run of the menu item. |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Menu label, the type name of `T` with spaces before capitals. |
-| <Link id="m-defaultname" /><code>{"protected virtual string DefaultName { get; }"}</code> | Default file name for new assets, "New TypeName.asset". |
+| <Link id="m-created" /><code>{"T Created { get; private set; }"}</code> | <span className="api-desc">The asset created by the last run of the menu item.</span> |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | <span className="api-desc">Menu label, the type name of `T` with spaces before capitals.</span> |
+| <Link id="m-defaultname" /><code>{"protected virtual string DefaultName { get; }"}</code> | <span className="api-desc">Default file name for new assets, "New TypeName.asset".</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-content" /><code>{"override void Content(TextWriter writer)"}</code> | Writes the generated editor code that creates the asset when the menu item runs. |
-| <Link id="m-externalcontent" /><code>{"override void ExternalContent(TextWriter writer)"}</code> | Writes the helper class the generated menu code needs. |
-| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | Builds the menu path from the nesting of the declaring class under `AltaMenuItemBase`. |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Empty in this build. |
+| <Link id="m-content" /><code>{"override void Content(TextWriter writer)"}</code> | <span className="api-desc">Writes the generated editor code that creates the asset when the menu item runs.</span> |
+| <Link id="m-externalcontent" /><code>{"override void ExternalContent(TextWriter writer)"}</code> | <span className="api-desc">Writes the helper class the generated menu code needs.</span> |
+| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | <span className="api-desc">Builds the menu path from the nesting of the declaring class under `AltaMenuItemBase`.</span> |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | <span className="api-desc">Empty in this build.</span> |

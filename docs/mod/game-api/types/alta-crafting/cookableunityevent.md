@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a `Cookable`, for inspector-wired cooking 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CookableUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CookableUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

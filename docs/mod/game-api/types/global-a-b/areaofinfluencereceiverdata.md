@@ -23,10 +23,10 @@ Save data for `AreaOfInfluenceReceiver` (version 1): its correct values.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> | Creates an `AreaOfInfluenceReceiverData` with default values. |
+| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> | <span className="api-desc">Creates an `AreaOfInfluenceReceiverData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> | The receiver's correct values. |
+| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> | <span className="api-desc">The receiver's correct values.</span> |

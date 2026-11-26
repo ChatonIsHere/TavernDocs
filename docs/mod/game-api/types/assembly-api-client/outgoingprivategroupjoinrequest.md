@@ -19,12 +19,12 @@ A join request to a group known only by id. Revoke it to withdraw.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> | Creates an `OutgoingPrivateGroupJoinRequest` from `api` and `groupId`. |
+| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> | <span className="api-desc">Creates an `OutgoingPrivateGroupJoinRequest` from `api` and `groupId`.</span> |
 
 </details>
 
@@ -32,16 +32,20 @@ A join request to a group known only by id. Revoke it to withdraw.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> | Id of the group the request was sent to. |
+| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> | <span className="api-desc">Id of the group the request was sent to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | Calls the API to withdraw the join request. |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | <span className="api-desc">Calls the API to withdraw the join request.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `OutgoingPrivateGroupJoinRequest`:
 
+<div className="api-used-in">
+
 [`PersonalGroups.JoinGroup`](/mod/game-api/types/assembly-api-client/personalgroups#m-joingroup).
+
+</div>

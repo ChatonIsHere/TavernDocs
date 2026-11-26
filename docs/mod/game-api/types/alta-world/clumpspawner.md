@@ -22,48 +22,48 @@ Scatters grass clump prefabs in a circle or square around itself at start and gr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClumpSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ClumpSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-grassmaterial" /><code>{"private Material grassMaterial"}</code> | Serialized grass material. Not read in this file. |
-| <Link id="m-istorefresh" /><code>{"private bool isToRefresh"}</code> | Tick to clear and respawn the clumps. |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | LOD group added at start. |
-| <Link id="m-lodsteps" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/clumpspawner-clumplod">{"ClumpSpawner.ClumpLOD"}</Link>{"[] lodSteps"}</code> | Prefab, LOD threshold and spawn chance for each LOD level. |
-| <Link id="m-loopinstancecontroler" /><code>{"private int loopInstanceControler"}</code> | Yields a frame after this many clumps. Default 100. |
-| <Link id="m-numberofclumps" /><code>{"private int numberOfClumps"}</code> | How many clumps to spawn. |
-| <Link id="m-shape" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/clumpspawner-shape">{"ClumpSpawner.Shape"}</Link>{" shape"}</code> | Spawn area shape, circle or square. |
-| <Link id="m-width" /><code>{"private float width"}</code> | Radius or half width of the spawn area. |
+| <Link id="m-grassmaterial" /><code>{"private Material grassMaterial"}</code> | <span className="api-desc">Serialized grass material. Not read in this file.</span> |
+| <Link id="m-istorefresh" /><code>{"private bool isToRefresh"}</code> | <span className="api-desc">Tick to clear and respawn the clumps.</span> |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | <span className="api-desc">LOD group added at start.</span> |
+| <Link id="m-lodsteps" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/clumpspawner-clumplod">{"ClumpSpawner.ClumpLOD"}</Link>{"[] lodSteps"}</code> | <span className="api-desc">Prefab, LOD threshold and spawn chance for each LOD level.</span> |
+| <Link id="m-loopinstancecontroler" /><code>{"private int loopInstanceControler"}</code> | <span className="api-desc">Yields a frame after this many clumps. Default 100.</span> |
+| <Link id="m-numberofclumps" /><code>{"private int numberOfClumps"}</code> | <span className="api-desc">How many clumps to spawn.</span> |
+| <Link id="m-shape" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/clumpspawner-shape">{"ClumpSpawner.Shape"}</Link>{" shape"}</code> | <span className="api-desc">Spawn area shape, circle or square.</span> |
+| <Link id="m-width" /><code>{"private float width"}</code> | <span className="api-desc">Radius or half width of the spawn area.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasprefabs" /><code>{"private bool HasPrefabs { get; }"}</code> | True if any LOD steps are set. |
+| <Link id="m-hasprefabs" /><code>{"private bool HasPrefabs { get; }"}</code> | <span className="api-desc">True if any LOD steps are set.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Empty. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: keeps `loopInstanceControler` at least 1 and, when `isToRefresh` is ticked, clears the spawned children. |
-| <Link id="m-spawnineditor" /><code>{"private void SpawnInEditor()"}</code> | Empty in this build. |
-| <Link id="m-start" /><code>{"private IEnumerator Start() (iterator)"}</code> | Coroutine that spawns `numberOfClumps` clumps at random spots and rotations, each LOD by its chance, then sets up the LOD group. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | When `isToRefresh` is set, destroys the children. It calls `Start` directly, which doesn't run the coroutine, so nothing respawns. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Empty.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: keeps `loopInstanceControler` at least 1 and, when `isToRefresh` is ticked, clears the spawned children.</span> |
+| <Link id="m-spawnineditor" /><code>{"private void SpawnInEditor()"}</code> | <span className="api-desc">Empty in this build.</span> |
+| <Link id="m-start" /><code>{"private IEnumerator Start() (iterator)"}</code> | <span className="api-desc">Coroutine that spawns `numberOfClumps` clumps at random spots and rotations, each LOD by its chance, then sets up the LOD group.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">When `isToRefresh` is set, destroys the children. It calls `Start` directly, which doesn't run the coroutine, so nothing respawns.</span> |
 
 </details>

@@ -23,12 +23,12 @@ Save data for `BasicDynamicPath` (version 1): enough to find the forest and edge
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> | Creates a `BasicDynamicPathSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> | <span className="api-desc">Creates a `BasicDynamicPathSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fromindex" /><code>{"int fromIndex"}</code> | Index of the edge's start node. |
-| <Link id="m-fromposition" /><code>{"Vector2 fromPosition"}</code> | 2D position of the edge's start node, used to find the forest generator. |
-| <Link id="m-toindex" /><code>{"int toIndex"}</code> | Index of the edge's end node. |
+| <Link id="m-fromindex" /><code>{"int fromIndex"}</code> | <span className="api-desc">Index of the edge's start node.</span> |
+| <Link id="m-fromposition" /><code>{"Vector2 fromPosition"}</code> | <span className="api-desc">2D position of the edge's start node, used to find the forest generator.</span> |
+| <Link id="m-toindex" /><code>{"int toIndex"}</code> | <span className="api-desc">Index of the edge's end node.</span> |

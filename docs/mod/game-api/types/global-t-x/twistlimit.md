@@ -21,16 +21,16 @@ A FinalIK rotation limit that only caps twist around the limit's axis.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TwistLimit()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TwistLimit()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-twistlimit" /><code>{"private float twistLimit"}</code> | Maximum twist in degrees, 0 to 180. Backing field for `TwistLimitAngle`. |
+| <Link id="m-twistlimit" /><code>{"private float twistLimit"}</code> | <span className="api-desc">Maximum twist in degrees, 0 to 180. Backing field for `TwistLimitAngle`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ A FinalIK rotation limit that only caps twist around the limit's axis.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-twistlimitangle" /><code>{"float TwistLimitAngle { get; set; }"}</code> | Gets or sets the twist limit in degrees. |
+| <Link id="m-twistlimitangle" /><code>{"float TwistLimitAngle { get; set; }"}</code> | <span className="api-desc">Gets or sets the twist limit in degrees.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-limitrotation" /><code>{"protected override Quaternion LimitRotation(Quaternion rotation)"}</code> | Applies `RotationLimit.LimitTwist` with the axis, secondary axis and `twistLimit`. |
+| <Link id="m-limitrotation" /><code>{"protected override Quaternion LimitRotation(Quaternion rotation)"}</code> | <span className="api-desc">Applies `RotationLimit.LimitTwist` with the axis, secondary axis and `twistLimit`.</span> |

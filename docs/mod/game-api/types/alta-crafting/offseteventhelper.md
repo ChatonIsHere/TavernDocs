@@ -21,4 +21,4 @@ Extension method for making an `OffsetEvent` on a `Timeline`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createoffset" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/offsetevent">{"OffsetEvent"}</Link>{" CreateOffset("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> | Creates an `OffsetEvent` on the timeline with a minimum delay, an offset delay and the action to run. |
+| <Link id="m-createoffset" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/offsetevent">{"OffsetEvent"}</Link>{" CreateOffset("}<Link to="/mod/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> | <span className="api-desc">Creates an `OffsetEvent` on the timeline with a minimum delay, an offset delay and the action to run.</span> |

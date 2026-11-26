@@ -21,17 +21,17 @@ Editor tool: on a controller button press, saves the body joint transforms as a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CharacterPoseSaver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CharacterPoseSaver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bodyrootjoint" /><code>{"private Transform bodyRootJoint"}</code> | Root joint whose hierarchy is saved. |
-| <Link id="m-posecount" /><code>{"private static int poseCount"}</code> | Number for the next pose file. Starts at 1 and is shared by all instances. |
+| <Link id="m-bodyrootjoint" /><code>{"private Transform bodyRootJoint"}</code> | <span className="api-desc">Root joint whose hierarchy is saved.</span> |
+| <Link id="m-posecount" /><code>{"private static int poseCount"}</code> | <span className="api-desc">Number for the next pose file. Starts at 1 and is shared by all instances.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Editor tool: on a controller button press, saves the body joint transforms as a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Saves the local transforms under `bodyRootJoint` to `Assets/PoseN (Transform Save).asset`. |
+| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Saves the local transforms under `bodyRootJoint` to `Assets/PoseN (Transform Save).asset`.</span> |

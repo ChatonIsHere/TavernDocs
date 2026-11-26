@@ -21,11 +21,15 @@ Pairs a friendship state with the button object to show for it on the recent pla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button" /><code>{"GameObject button"}</code> | Object shown only when the friendship matches `type`. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" type"}</code> | Friendship state this button is for. |
+| <Link id="m-button" /><code>{"GameObject button"}</code> | <span className="api-desc">Object shown only when the friendship matches `type`.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/assembly-api-models/friendshiptype">{"FriendshipType"}</Link>{" type"}</code> | <span className="api-desc">Friendship state this button is for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FriendButtonMap`:
 
+<div className="api-used-in">
+
 [`RecentPlayerActionPage.friendButtons`](/mod/game-api/types/global-q-r/recentplayeractionpage#m-friendbuttons).
+
+</div>

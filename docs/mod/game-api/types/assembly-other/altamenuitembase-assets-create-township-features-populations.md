@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Populations`: menu item clas
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Populations()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Populations` with default values. |
+| <Link id="m-ctor" /><code>{"protected Populations()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Populations` with default values.</span> |

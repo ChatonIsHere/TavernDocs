@@ -20,16 +20,16 @@ Static cache of the logged-in player's Talem (shop currency) balance, fetched fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentbalance" /><code>{"static int CurrentBalance { get; private set; }"}</code> | Last fetched balance. 0 until `RequestUpdate` succeeds. |
+| <Link id="m-currentbalance" /><code>{"static int CurrentBalance { get; private set; }"}</code> | <span className="api-desc">Last fetched balance. 0 until `RequestUpdate` succeeds.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onbalancechanged" /><code>{"static event Action<int> OnBalanceChanged"}</code> | Raised with the new balance when `RequestUpdate` finds it changed. |
+| <Link id="m-onbalancechanged" /><code>{"static event Action<int> OnBalanceChanged"}</code> | <span className="api-desc">Raised with the new balance when `RequestUpdate` finds it changed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requestupdate" /><code>{"static async Task<int> RequestUpdate()"}</code> | Fetches the shop account info from the API, stores the shard balance and returns it. |
+| <Link id="m-requestupdate" /><code>{"static async Task<int> RequestUpdate()"}</code> | <span className="api-desc">Fetches the shop account info from the API, stores the shard balance and returns it.</span> |

@@ -22,16 +22,16 @@ A box collider set up on a hand's palm bone by `CharacterCollisionControllerHelp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandPalmCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.HandPalmCollider` with default values. |
+| <Link id="m-ctor" /><code>{"HandPalmCollider()"}</code> | <span className="api-desc">Creates a `CharacterCollisionControllerHelper.HandPalmCollider` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handindex" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> | Backing field for `HandIndex`. |
+| <Link id="m-handindex" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> | <span className="api-desc">Backing field for `HandIndex`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ A box collider set up on a hand's palm bone by `CharacterCollisionControllerHelp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handindex-2" /><code><Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; }"}</code> | Which hand this palm belongs to; the right hand gets its box centre mirrored. |
+| <Link id="m-handindex-2" /><code><Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" { get; }"}</code> | <span className="api-desc">Which hand this palm belongs to; the right hand gets its box centre mirrored.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandPalmCollider`:
 
+<div className="api-used-in">
+
 [`CharacterCollisionControllerHelper.CreateHandPalmCollider`](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper#m-createhandpalmcollider), [`CharacterCollisionControllerHelper.handPalmColliders`](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper#m-handpalmcolliders).
+
+</div>

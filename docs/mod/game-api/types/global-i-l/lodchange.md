@@ -23,17 +23,17 @@ Debug asset that holds a list of LOD group changes as `LODLog` entries. The in-g
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LODChange()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LODChange()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logs" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> logs"}</code> | Backing field for `Logs`. |
-| <Link id="m-namedgroups" /><code>{"private Dictionary<string, LODGroup> namedGroups"}</code> | Not used in this file. |
+| <Link id="m-logs" /><code>{"private List<"}<Link to="/mod/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> logs"}</code> | <span className="api-desc">Backing field for `Logs`.</span> |
+| <Link id="m-namedgroups" /><code>{"private Dictionary<string, LODGroup> namedGroups"}</code> | <span className="api-desc">Not used in this file.</span> |
 
 </details>
 
@@ -41,10 +41,14 @@ Debug asset that holds a list of LOD group changes as `LODLog` entries. The in-g
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logs-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> Logs { get; }"}</code> | The recorded LOD changes, each a group and its LOD values. |
+| <Link id="m-logs-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-i-l/lodchange-lodlog">{"LODChange.LODLog"}</Link>{"> Logs { get; }"}</code> | <span className="api-desc">The recorded LOD changes, each a group and its LOD values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LODChange`:
 
+<div className="api-used-in">
+
 [`InGameInspector.log`](/mod/game-api/types/global-i-l/ingameinspector#m-log).
+
+</div>

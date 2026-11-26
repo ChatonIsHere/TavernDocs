@@ -22,4 +22,4 @@ An event source that can also send: anything holding it can raise `T` events to 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> | Raises the event, passing `eventObject` to every listener added through `AddListener`. |
+| <Link id="m-send" /><code>{"void Send(T eventObject)"}</code> | <span className="api-desc">Raises the event, passing `eventObject` to every listener added through `AddListener`.</span> |

@@ -21,27 +21,27 @@ Client menu control for a choice setting with two physical buttons that step to 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ButtonEnumMenuSetting()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ButtonEnumMenuSetting()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-next" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" next"}</code> | Physical button that moves to the next value. |
-| <Link id="m-previous" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" previous"}</code> | Physical button that moves to the previous value. |
+| <Link id="m-next" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" next"}</code> | <span className="api-desc">Physical button that moves to the next value.</span> |
+| <Link id="m-previous" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" previous"}</code> | <span className="api-desc">Physical button that moves to the previous value.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the buttons to `GoToNextValue` and `GoToPreviousValue`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the buttons to `GoToNextValue` and `GoToPreviousValue`.</span> |
 
 </details>

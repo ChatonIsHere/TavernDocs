@@ -22,17 +22,17 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MapGeneratorPart()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected MapGeneratorPart()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overridetarget" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> | Backing field for `OverrideTarget`, the plugin the part works on instead of its own plugin. Null means its own. |
-| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> | Backing field for `PartIdentifier`, hashed into the instance's seed. Set from the asset's instance id when negative. |
+| <Link id="m-overridetarget" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> | <span className="api-desc">Backing field for `OverrideTarget`, the plugin the part works on instead of its own plugin. Null means its own.</span> |
+| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> | <span className="api-desc">Backing field for `PartIdentifier`, hashed into the instance's seed. Set from the asset's instance id when negative.</span> |
 
 </details>
 
@@ -40,22 +40,22 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overridetarget-2" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" OverrideTarget { get; }"}</code> | Plugin whose layer this part writes to instead of its own plugin. Null means the owning plugin. |
-| <Link id="m-partidentifier-2" /><code>{"int PartIdentifier { get; }"}</code> | Seed value for the part. Generated from the instance ID when missing. |
+| <Link id="m-overridetarget-2" /><code><Link to="/mod/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" OverrideTarget { get; }"}</code> | <span className="api-desc">Plugin whose layer this part writes to instead of its own plugin. Null means the owning plugin.</span> |
+| <Link id="m-partidentifier-2" /><code>{"int PartIdentifier { get; }"}</code> | <span className="api-desc">Seed value for the part. Generated from the instance ID when missing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getinstance" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the runtime instance of this part for a plugin instance. |
-| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | Sets the identifier from the asset's instance ID. |
+| <Link id="m-getinstance" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | <span className="api-desc">Creates the runtime instance of this part for a plugin instance.</span> |
+| <Link id="m-regenerateidentifier" /><code>{"void RegenerateIdentifier()"}</code> | <span className="api-desc">Sets the identifier from the asset's instance ID.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: gives the part an identifier if it has none. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: gives the part an identifier if it has none.</span> |
 
 </details>
 
@@ -63,4 +63,8 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 
 Members of other types that take, return or hold a `MapGeneratorPart`:
 
+<div className="api-used-in">
+
 [`Plugin.parts`](/mod/game-api/types/alta-world-generation/plugin#m-parts), [`Plugin.Parts`](/mod/game-api/types/alta-world-generation/plugin#m-parts-2).
+
+</div>

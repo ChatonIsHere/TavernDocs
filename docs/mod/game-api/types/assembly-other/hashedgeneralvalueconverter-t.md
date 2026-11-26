@@ -23,16 +23,16 @@ Type converter that turns a string (a hash number or a name) into a `HashedGener
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HashedGeneralValueConverter()"}</code> | Creates a `HashedGeneralValueConverter` with default values. |
+| <Link id="m-ctor" /><code>{"HashedGeneralValueConverter()"}</code> | <span className="api-desc">Creates a `HashedGeneralValueConverter` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logs failed lookups. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Logs failed lookups.</span> |
 
 </details>
 
@@ -40,6 +40,6 @@ Type converter that turns a string (a hash number or a name) into a `HashedGener
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Lowercases the string, looks it up as a hash if it's a number, otherwise by name. Logs a warning and returns null if not found. |
-| <Link id="m-getfromstring" /><code>{"protected virtual "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<T> GetFromString(string input)"}</code> | Looks up the asset by name. Override for custom name matching. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Lowercases the string, looks it up as a hash if it's a number, otherwise by name. Logs a warning and returns null if not found.</span> |
+| <Link id="m-getfromstring" /><code>{"protected virtual "}<Link to="/mod/game-api/types/assembly-other/hashedgeneralvalue-t">{"HashedGeneralValue"}</Link>{"<T> GetFromString(string input)"}</code> | <span className="api-desc">Looks up the asset by name. Override for custom name matching.</span> |

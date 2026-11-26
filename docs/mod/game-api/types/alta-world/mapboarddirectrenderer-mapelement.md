@@ -21,11 +21,11 @@ Private serializable pair of a texture and its offset and scale. Not used by any
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapElement()"}</code> | Creates a `MapBoardDirectRenderer.MapElement` with default values. |
+| <Link id="m-ctor" /><code>{"MapElement()"}</code> | <span className="api-desc">Creates a `MapBoardDirectRenderer.MapElement` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-element" /><code>{"Texture2D element"}</code> | The texture. |
-| <Link id="m-offsetscale" /><code>{"Vector3 offsetScale"}</code> | Offset and scale for the texture. |
+| <Link id="m-element" /><code>{"Texture2D element"}</code> | <span className="api-desc">The texture.</span> |
+| <Link id="m-offsetscale" /><code>{"Vector3 offsetScale"}</code> | <span className="api-desc">Offset and scale for the texture.</span> |

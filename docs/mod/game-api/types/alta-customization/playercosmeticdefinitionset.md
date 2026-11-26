@@ -22,16 +22,16 @@ ScriptableObject list of cosmetic definition hashes (menu Township/Customization
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCosmeticDefinitionSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayerCosmeticDefinitionSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashes" /><code>{"private List<uint> hashes"}</code> | Backing field for `Hashes` (hidden in the inspector). |
+| <Link id="m-hashes" /><code>{"private List<uint> hashes"}</code> | <span className="api-desc">Backing field for `Hashes` (hidden in the inspector).</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ ScriptableObject list of cosmetic definition hashes (menu Township/Customization
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hashes-2" /><code>{"List<uint> Hashes { get; }"}</code> | Cosmetic definition hashes in the set. |
+| <Link id="m-hashes-2" /><code>{"List<uint> Hashes { get; }"}</code> | <span className="api-desc">Cosmetic definition hashes in the set.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerCosmeticDefinitionSet`:
 
+<div className="api-used-in">
+
 [`CustomizationSettings.defaultCosmetics`](/mod/game-api/types/alta-customization/customizationsettings#m-defaultcosmetics), [`CustomizationSettings.DefaultCosmetics`](/mod/game-api/types/alta-customization/customizationsettings#m-defaultcosmetics-2).
+
+</div>

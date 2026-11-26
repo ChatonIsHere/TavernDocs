@@ -22,15 +22,15 @@ Chunk loader for `DebugLoadMarker` that uses the current chunk's normal dynamic 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NormalChunkLoader()"}</code> | Creates a `DebugLoadMarker.NormalChunkLoader` with default values. |
+| <Link id="m-ctor" /><code>{"NormalChunkLoader()"}</code> | <span className="api-desc">Creates a `DebugLoadMarker.NormalChunkLoader` with default values.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | Adds the chunks reachable from the current chunk within its `DynamicLoadStrength`. |
+| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | <span className="api-desc">Adds the chunks reachable from the current chunk within its `DynamicLoadStrength`.</span> |
 
 </details>

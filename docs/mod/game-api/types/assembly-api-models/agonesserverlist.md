@@ -20,10 +20,10 @@ A list of Agones game servers as returned by Kubernetes.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgonesServerList()"}</code> | Creates an `AgonesServerList` with default values. |
+| <Link id="m-ctor" /><code>{"AgonesServerList()"}</code> | <span className="api-desc">Creates an `AgonesServerList` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/agonesgameserver">{"AgonesGameServer"}</Link>{"> Items { get; set; }"}</code> | The game servers in the list. |
+| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/agonesgameserver">{"AgonesGameServer"}</Link>{"> Items { get; set; }"}</code> | <span className="api-desc">The game servers in the list.</span> |

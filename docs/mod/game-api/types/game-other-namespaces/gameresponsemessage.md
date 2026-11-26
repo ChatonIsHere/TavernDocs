@@ -20,11 +20,11 @@ Reply to a game command message. Nothing else in this build uses it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> | Creates a `GameResponseMessage` with default values. |
+| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> | <span className="api-desc">Creates a `GameResponseMessage` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> | Error text when the command failed. |
-| <Link id="m-wassuccessfull" /><code>{"bool WasSuccessfull { get; set; }"}</code> | Whether the command succeeded. |
+| <Link id="m-errormessage" /><code>{"string ErrorMessage { get; set; }"}</code> | <span className="api-desc">Error text when the command failed.</span> |
+| <Link id="m-wassuccessfull" /><code>{"bool WasSuccessfull { get; set; }"}</code> | <span className="api-desc">Whether the command succeeded.</span> |

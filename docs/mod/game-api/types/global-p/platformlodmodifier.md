@@ -22,17 +22,17 @@ Build-time bake step that sets a `LODGroup`'s screen transition heights per plat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformLODModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlatformLODModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | The LOD group being changed. |
-| <Link id="m-platformdetails" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformlodmodifier-platformdetails">{"PlatformLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> | Transition heights per platform, one per LOD. |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | <span className="api-desc">The LOD group being changed.</span> |
+| <Link id="m-platformdetails" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformlodmodifier-platformdetails">{"PlatformLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> | <span className="api-desc">Transition heights per platform, one per LOD.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Build-time bake step that sets a `LODGroup`'s screen transition heights per plat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Applies the transition heights of the first matching platform entry to the LOD group. |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | <span className="api-desc">Applies the transition heights of the first matching platform entry to the LOD group.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Finds the LOD group, sizes each height list to the LOD count and keeps heights decreasing. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Finds the LOD group, sizes each height list to the LOD count and keeps heights decreasing.</span> |
 
 </details>

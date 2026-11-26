@@ -20,17 +20,21 @@ A social media link shown in the launcher, part of `LauncherGameInfoFull.SocialM
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> | Creates a `SocialMediaInfo` with default values. |
+| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> | <span className="api-desc">Creates a `SocialMediaInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> | The link's address. |
-| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> | Icon to show for the link. |
+| <Link id="m-address" /><code>{"string Address { get; set; }"}</code> | <span className="api-desc">The link's address.</span> |
+| <Link id="m-icon" /><code>{"string Icon { get; set; }"}</code> | <span className="api-desc">Icon to show for the link.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SocialMediaInfo`:
 
+<div className="api-used-in">
+
 [`LauncherGameInfoFull.SocialMedia`](/mod/game-api/types/assembly-api-models/launchergameinfofull#m-socialmedia).
+
+</div>

@@ -22,13 +22,13 @@ Base for menu tools that only work while logged in to Alta's account services, s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected LoggedInTool()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected LoggedInTool()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loggedin" /><code>{"protected abstract void LoggedIn()"}</code> | Called on login, and on `Start` if already logged in. |
-| <Link id="m-loggedout" /><code>{"protected abstract void LoggedOut()"}</code> | Called on logout. |
-| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | Unsubscribes from the login events. |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Subscribes to the login events. |
+| <Link id="m-loggedin" /><code>{"protected abstract void LoggedIn()"}</code> | <span className="api-desc">Called on login, and on `Start` if already logged in.</span> |
+| <Link id="m-loggedout" /><code>{"protected abstract void LoggedOut()"}</code> | <span className="api-desc">Called on logout.</span> |
+| <Link id="m-ondestroy" /><code>{"protected virtual void OnDestroy()"}</code> | <span className="api-desc">Unsubscribes from the login events.</span> |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | <span className="api-desc">Subscribes to the login events.</span> |

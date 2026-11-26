@@ -22,16 +22,16 @@ Old duration effect stub from the earlier alchemy code. It stores a strength and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> | Creates a `DamageOverTime` from `strength` and `frequency`. |
+| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> | <span className="api-desc">Creates a `DamageOverTime` from `strength` and `frequency`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> | The strength passed to the constructor. The frequency argument is ignored. |
+| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> | <span className="api-desc">The strength passed to the constructor. The frequency argument is ignored.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"override void Update()"}</code> | Empty. |
+| <Link id="m-update" /><code>{"override void Update()"}</code> | <span className="api-desc">Empty.</span> |

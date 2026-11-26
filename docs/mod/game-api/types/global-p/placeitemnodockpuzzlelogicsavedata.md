@@ -24,18 +24,22 @@ Saved config for `PlaceItemNoDockPuzzleLogic`: which items give which output val
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData()"}</code> | Creates a `PlaceItemNoDockPuzzleLogicSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData()"}</code> | <span className="api-desc">Creates a `PlaceItemNoDockPuzzleLogicSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> | Value sent when no item is present. |
-| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> | Value sent when an item matches no option. Defaults to -1. |
-| <Link id="m-options" /><code><Link to="/mod/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata-option">{"PlaceItemNoDockPuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> | The item groups the puzzle accepts, each with its output value. |
+| <Link id="m-emptyoutput" /><code>{"int emptyOutput"}</code> | <span className="api-desc">Value sent when no item is present.</span> |
+| <Link id="m-invalidoutput" /><code>{"int invalidOutput"}</code> | <span className="api-desc">Value sent when an item matches no option. Defaults to -1.</span> |
+| <Link id="m-options" /><code><Link to="/mod/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata-option">{"PlaceItemNoDockPuzzleLogicSaveData.Option"}</Link>{"[] options"}</code> | <span className="api-desc">The item groups the puzzle accepts, each with its output value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlaceItemNoDockPuzzleLogicSaveData`:
 
+<div className="api-used-in">
+
 [`PlaceItemNoDockPuzzleLogic.config`](/mod/game-api/types/global-p/placeitemnodockpuzzlelogic#m-config).
+
+</div>

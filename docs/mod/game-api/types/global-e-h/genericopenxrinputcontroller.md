@@ -21,4 +21,4 @@ OpenXR input controller for headsets with no specific mapping. Enables the gener
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenericOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `GenericOpenXRInputController` from `controller`. |
+| <Link id="m-ctor" /><code>{"GenericOpenXRInputController("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Creates a `GenericOpenXRInputController` from `controller`.</span> |

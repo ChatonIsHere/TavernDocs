@@ -22,17 +22,21 @@ Base asset for something that changes smooth locomotion for a while, started and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected LocomotionModifierAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected LocomotionModifierAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Applies the change to the player's locomotion. |
-| <Link id="m-finish" /><code>{"abstract void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Removes the change. |
+| <Link id="m-begin" /><code>{"abstract void Begin("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Applies the change to the player's locomotion.</span> |
+| <Link id="m-finish" /><code>{"abstract void Finish("}<Link to="/mod/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | <span className="api-desc">Removes the change.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LocomotionModifierAction`:
 
+<div className="api-used-in">
+
 [`DepthCheckLocoCheck.deepActions`](/mod/game-api/types/global-c-d/depthchecklococheck#m-deepactions), [`DepthCheckLocoCheck.shallowActions`](/mod/game-api/types/global-c-d/depthchecklococheck#m-shallowactions), [`EnterLocomotionCheck.actions`](/mod/game-api/types/global-e-h/enterlocomotioncheck#m-actions).
+
+</div>

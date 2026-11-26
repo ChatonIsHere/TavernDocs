@@ -19,24 +19,24 @@ Runs the dissolve swap between a cave teleporter and its replacement using the m
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> | Creates a `CaveTeleporterReplacerAnimator` from `originalRenderers`, `replacing` and `finished`. |
+| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> | <span className="api-desc">Creates a `CaveTeleporterReplacerAnimator` from `originalRenderers`, `replacing` and `finished`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finished" /><code>{"private Action finished"}</code> | Callback run when the animation is done. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/caveteleportsettings">{"CaveTeleportSettings"}</Link>{" settings"}</code> | The `CaveTeleportSettings` global settings used for material, curves and duration. |
+| <Link id="m-finished" /><code>{"private Action finished"}</code> | <span className="api-desc">Callback run when the animation is done.</span> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/caveteleportsettings">{"CaveTeleportSettings"}</Link>{" settings"}</code> | <span className="api-desc">The `CaveTeleportSettings` global settings used for material, curves and duration.</span> |
 
 </details>
 
@@ -44,13 +44,13 @@ Runs the dissolve swap between a cave teleporter and its replacement using the m
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animatereplace" /><code>{"static void AnimateReplace("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> | Starts the animation, then calls `finished` with the replacing entity when it ends. |
+| <Link id="m-animatereplace" /><code>{"static void AnimateReplace("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> | <span className="api-desc">Starts the animation, then calls `finished` with the replacing entity when it ends.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animation" /><code>{"private IEnumerator Animation("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing) (iterator)"}</code> | Coroutine: swaps both objects to an animating material, drives progress over the duration, then hides the old one and restores the new one. |
+| <Link id="m-animation" /><code>{"private IEnumerator Animation("}<Link to="/mod/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing) (iterator)"}</code> | <span className="api-desc">Coroutine: swaps both objects to an animating material, drives progress over the duration, then hides the old one and restores the new one.</span> |
 
 </details>

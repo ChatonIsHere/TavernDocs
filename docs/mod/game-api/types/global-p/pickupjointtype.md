@@ -31,4 +31,8 @@ How a held pickup is attached to the hand: fixed, spring, velocity-driven or cus
 
 Members of other types that take, return or hold a `PickUpJointType`:
 
+<div className="api-used-in">
+
 [`Pickup.jointType`](/mod/game-api/types/global-p/pickup#m-jointtype), [`Pickup.JointType`](/mod/game-api/types/global-p/pickup#m-jointtype-2), [`PickupJoints.jointType`](/mod/game-api/types/global-p/pickupjoints#m-jointtype), [`PickupJoints.PickupJoints`](/mod/game-api/types/global-p/pickupjoints#m-ctor), [`PickupTypeSetting.type`](/mod/game-api/types/global-p/pickuptypesetting#m-type), [`PickupTypeSetting.Type`](/mod/game-api/types/global-p/pickuptypesetting#m-type-2), [`PickupTypeSettings.GetPickupSettings`](/mod/game-api/types/global-p/pickuptypesettings#m-getpickupsettings), [`PickupTypeSettings.pickupSettings`](/mod/game-api/types/global-p/pickuptypesettings#m-pickupsettings).
+
+</div>

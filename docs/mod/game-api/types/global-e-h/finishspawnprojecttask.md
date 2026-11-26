@@ -22,16 +22,16 @@ Game task action that counts finishing a spawn project for one target prefab. As
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FinishSpawnProjectTask()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FinishSpawnProjectTask()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawningtarget" /><code>{"private uint spawningTarget"}</code> | Prefab hash the spawned object must match. |
+| <Link id="m-spawningtarget" /><code>{"private uint spawningTarget"}</code> | <span className="api-desc">Prefab hash the spawned object must match.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Game task action that counts finishing a spawn project for one target prefab. As
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Listens on `GameActionChannel.FinishRepair`, the same channel as repair tasks. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Listens on `GameActionChannel.FinishRepair`, the same channel as repair tasks.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/finishspawnprojecttaskargument">{"FinishSpawnProjectTaskArgument"}</Link>{" argument)"}</code> | True when the finished project spawned the prefab with hash `spawningTarget`. |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/finishspawnprojecttaskargument">{"FinishSpawnProjectTaskArgument"}</Link>{" argument)"}</code> | <span className="api-desc">True when the finished project spawned the prefab with hash `spawningTarget`.</span> |

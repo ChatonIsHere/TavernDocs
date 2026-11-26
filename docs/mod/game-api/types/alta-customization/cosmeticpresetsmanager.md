@@ -21,29 +21,29 @@ Client: runs the cosmetic preset shelf. On login it loads the account's saved pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticPresetsManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CosmeticPresetsManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>14 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basehandler" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" baseHandler"}</code> | Customization handler for the player's own outfit. |
-| <Link id="m-beganusingfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" beganUsingFromStore"}</code> | Event raised when the outfit starts using items the player doesn't own. |
-| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> | The cosmetic customization manager in the room. |
-| <Link id="m-handlerprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handlerPrefab"}</code> | Customization handler prefab. Not used in this class. |
-| <Link id="m-isdestroyed" /><code>{"private bool isDestroyed"}</code> | Set in `OnDestroy`. |
-| <Link id="m-isusingonlyowneditems" /><code>{"private bool isUsingOnlyOwnedItems"}</code> | Last known state of whether the outfit uses only owned items. |
-| <Link id="m-latesttrophy" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" latestTrophy"}</code> | The last trophy made by `GetCurrentPreset`. Burned if a new one is made before it is shelved. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-newpresetsposition" /><code>{"private Transform newPresetsPosition"}</code> | Where new trophies appear. |
-| <Link id="m-requestpresetfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" requestPresetFromStore"}</code> | Event raised when the outfit needs store items before it can become a preset. |
-| <Link id="m-rotatingslot" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticrotatingslot">{"CosmeticRotatingSlot"}</Link>{" rotatingSlot"}</code> | A `CosmeticRotatingSlot` reference. Not used in this class. |
-| <Link id="m-slots" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetslot">{"CosmeticPresetSlot"}</Link>{"[] slots"}</code> | The preset shelf slots. |
-| <Link id="m-stopedusingfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" stopedUsingFromStore"}</code> | Event raised when the outfit goes back to only owned items. |
-| <Link id="m-trophyprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophyPrefab"}</code> | Prefab for preset trophies. |
+| <Link id="m-basehandler" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" baseHandler"}</code> | <span className="api-desc">Customization handler for the player's own outfit.</span> |
+| <Link id="m-beganusingfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" beganUsingFromStore"}</code> | <span className="api-desc">Event raised when the outfit starts using items the player doesn't own.</span> |
+| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> | <span className="api-desc">The cosmetic customization manager in the room.</span> |
+| <Link id="m-handlerprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handlerPrefab"}</code> | <span className="api-desc">Customization handler prefab. Not used in this class.</span> |
+| <Link id="m-isdestroyed" /><code>{"private bool isDestroyed"}</code> | <span className="api-desc">Set in `OnDestroy`.</span> |
+| <Link id="m-isusingonlyowneditems" /><code>{"private bool isUsingOnlyOwnedItems"}</code> | <span className="api-desc">Last known state of whether the outfit uses only owned items.</span> |
+| <Link id="m-latesttrophy" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" latestTrophy"}</code> | <span className="api-desc">The last trophy made by `GetCurrentPreset`. Burned if a new one is made before it is shelved.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-newpresetsposition" /><code>{"private Transform newPresetsPosition"}</code> | <span className="api-desc">Where new trophies appear.</span> |
+| <Link id="m-requestpresetfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" requestPresetFromStore"}</code> | <span className="api-desc">Event raised when the outfit needs store items before it can become a preset.</span> |
+| <Link id="m-rotatingslot" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticrotatingslot">{"CosmeticRotatingSlot"}</Link>{" rotatingSlot"}</code> | <span className="api-desc">A `CosmeticRotatingSlot` reference. Not used in this class.</span> |
+| <Link id="m-slots" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetslot">{"CosmeticPresetSlot"}</Link>{"[] slots"}</code> | <span className="api-desc">The preset shelf slots.</span> |
+| <Link id="m-stopedusingfromstore" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" stopedUsingFromStore"}</code> | <span className="api-desc">Event raised when the outfit goes back to only owned items.</span> |
+| <Link id="m-trophyprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophyPrefab"}</code> | <span className="api-desc">Prefab for preset trophies.</span> |
 
 </details>
 
@@ -51,23 +51,23 @@ Client: runs the cosmetic preset shelf. On login it loads the account's saved pr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkstorageusage" /><code>{"void CheckStorageUsage()"}</code> | Raises the store events when the outfit switches between only owned items and items from the store. |
-| <Link id="m-getcurrentpreset" /><code>{"async void GetCurrentPreset()"}</code> | Makes a new trophy from the current outfit, or asks the player to buy store items first if the outfit uses any. |
-| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | Clears the slots, loads the account's presets into trophies, and deletes presets of 4 bytes or less. |
-| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | Does nothing. |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Marks the manager destroyed so a late login result is ignored. |
-| <Link id="m-start" /><code>{"protected override void Start()"}</code> | Gives each slot its index and listens for the customization end button. |
+| <Link id="m-checkstorageusage" /><code>{"void CheckStorageUsage()"}</code> | <span className="api-desc">Raises the store events when the outfit switches between only owned items and items from the store.</span> |
+| <Link id="m-getcurrentpreset" /><code>{"async void GetCurrentPreset()"}</code> | <span className="api-desc">Makes a new trophy from the current outfit, or asks the player to buy store items first if the outfit uses any.</span> |
+| <Link id="m-loggedin" /><code>{"protected override async void LoggedIn()"}</code> | <span className="api-desc">Clears the slots, loads the account's presets into trophies, and deletes presets of 4 bytes or less.</span> |
+| <Link id="m-loggedout" /><code>{"protected override void LoggedOut()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | <span className="api-desc">Marks the manager destroyed so a late login result is ignored.</span> |
+| <Link id="m-start" /><code>{"protected override void Start()"}</code> | <span className="api-desc">Gives each slot its index and listens for the customization end button.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checksavepresetifempty" /><code>{"private async void CheckSavePresetIfEmpty()"}</code> | When the player finishes customizing and no preset is saved, saves the current outfit as preset 0. |
-| <Link id="m-checkstorageusage-2" /><code>{"private void CheckStorageUsage(uint definition)"}</code> | Raises the store events when the outfit switches between only owned items and items from the store. |
-| <Link id="m-getnewtrophy" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" GetNewTrophy()"}</code> | Spawns a local, non-networked trophy from the prefab. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Destroys every trophy on the shelf and the latest unsaved trophy. |
-| <Link id="m-setupwithmanager" /><code>{"private void SetupWithManager("}<Link to="/mod/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Watches the customization manager's cosmetics for changes, or waits until the handler has one. |
+| <Link id="m-checksavepresetifempty" /><code>{"private async void CheckSavePresetIfEmpty()"}</code> | <span className="api-desc">When the player finishes customizing and no preset is saved, saves the current outfit as preset 0.</span> |
+| <Link id="m-checkstorageusage-2" /><code>{"private void CheckStorageUsage(uint definition)"}</code> | <span className="api-desc">Raises the store events when the outfit switches between only owned items and items from the store.</span> |
+| <Link id="m-getnewtrophy" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" GetNewTrophy()"}</code> | <span className="api-desc">Spawns a local, non-networked trophy from the prefab.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Destroys every trophy on the shelf and the latest unsaved trophy.</span> |
+| <Link id="m-setupwithmanager" /><code>{"private void SetupWithManager("}<Link to="/mod/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | <span className="api-desc">Watches the customization manager's cosmetics for changes, or waits until the handler has one.</span> |
 
 </details>
 
@@ -75,4 +75,8 @@ Client: runs the cosmetic preset shelf. On login it loads the account's saved pr
 
 Members of other types that take, return or hold a `CosmeticPresetsManager`:
 
+<div className="api-used-in">
+
 [`MainMenuShopInterface.presetsManager`](/mod/game-api/types/alta-customization/mainmenushopinterface#m-presetsmanager).
+
+</div>

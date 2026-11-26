@@ -21,20 +21,24 @@ Saved settings for one required item slot of a `RepairBox`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `RepairBoxSaveData.Item` with default values. |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | <span className="api-desc">Creates a `RepairBoxSaveData.Item` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cost" /><code>{"uint cost"}</code> | How many of the item the slot needs. |
-| <Link id="m-isignoringmaterialonsimpleserver" /><code>{"bool isIgnoringMaterialOnSimpleServer"}</code> | If true, the slot doesn't enforce `physMat` even when `usePhysMat` is set. |
-| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | The item type required. |
-| <Link id="m-physmat" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physMat"}</code> | Physical material the item must be made of, when `usePhysMat` is set. |
-| <Link id="m-usephysmat" /><code>{"bool usePhysMat"}</code> | Whether the slot also checks the item's physical material. |
+| <Link id="m-cost" /><code>{"uint cost"}</code> | <span className="api-desc">How many of the item the slot needs.</span> |
+| <Link id="m-isignoringmaterialonsimpleserver" /><code>{"bool isIgnoringMaterialOnSimpleServer"}</code> | <span className="api-desc">If true, the slot doesn't enforce `physMat` even when `usePhysMat` is set.</span> |
+| <Link id="m-item" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | <span className="api-desc">The item type required.</span> |
+| <Link id="m-physmat" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physMat"}</code> | <span className="api-desc">Physical material the item must be made of, when `usePhysMat` is set.</span> |
+| <Link id="m-usephysmat" /><code>{"bool usePhysMat"}</code> | <span className="api-desc">Whether the slot also checks the item's physical material.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Item`:
 
+<div className="api-used-in">
+
 [`RepairBoxSaveData.items`](/mod/game-api/types/global-q-r/repairboxsavedata#m-items), [`RepairBoxSaveDataOld.items`](/mod/game-api/types/global-q-r/repairboxsavedataold#m-items).
+
+</div>

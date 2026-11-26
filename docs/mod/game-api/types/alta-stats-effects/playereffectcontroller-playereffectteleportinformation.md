@@ -21,11 +21,15 @@ Network payload for a potion or effect teleport: where to show the teleport effe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-teleporteffectposition" /><code>{"Vector3 teleportEffectPosition"}</code> | Where the effect plays. When the server sends it to the owner, this is also where the player is teleported. |
-| <Link id="m-teleporttype" /><code><Link to="/mod/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType"}</code> | Kind of teleport, sent as an int and passed on to `PlayerRepositioned`. |
+| <Link id="m-teleporteffectposition" /><code>{"Vector3 teleportEffectPosition"}</code> | <span className="api-desc">Where the effect plays. When the server sends it to the owner, this is also where the player is teleported.</span> |
+| <Link id="m-teleporttype" /><code><Link to="/mod/game-api/types/alta-stats-effects/effecthandler-teleporttype">{"EffectHandler.TeleportType"}</Link>{" teleportType"}</code> | <span className="api-desc">Kind of teleport, sent as an int and passed on to `PlayerRepositioned`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerEffectTeleportInformation`:
 
+<div className="api-used-in">
+
 [`PlayerEffectController.NetworkTeleport`](/mod/game-api/types/alta-stats-effects/playereffectcontroller#m-networkteleport), [`PlayerEffectController.remoteTeleportEffect`](/mod/game-api/types/alta-stats-effects/playereffectcontroller#m-remoteteleporteffect).
+
+</div>

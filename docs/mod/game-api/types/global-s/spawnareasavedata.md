@@ -23,14 +23,14 @@ Save data for a `SpawnArea` (version 1): its size and placement settings.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> | Creates a `SpawnAreaSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> | <span className="api-desc">Creates a `SpawnAreaSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> | Layer mask of things to avoid spawning on. |
-| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> | Layer mask of ground to spawn on. |
-| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> | Whether spawned items align to the ground normal. |
-| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> | Steepest ground allowed, as a dot product. |
-| <Link id="m-size" /><code>{"float size"}</code> | Size of the spawn area. |
+| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> | <span className="api-desc">Layer mask of things to avoid spawning on.</span> |
+| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> | <span className="api-desc">Layer mask of ground to spawn on.</span> |
+| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> | <span className="api-desc">Whether spawned items align to the ground normal.</span> |
+| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> | <span className="api-desc">Steepest ground allowed, as a dot product.</span> |
+| <Link id="m-size" /><code>{"float size"}</code> | <span className="api-desc">Size of the spawn area.</span> |

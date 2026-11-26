@@ -22,18 +22,18 @@ Version 1 save data for a `PickupDock`, migrated to `PickupDockSaveData` when lo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> | Creates a `PickupDockSaveDataOld` with default values. |
+| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> | <span className="api-desc">Creates a `PickupDockSaveDataOld` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> | Index of the saved child entity that is the docked pickup. |
-| <Link id="m-dockedtype" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | Item type in the dock. |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> | How many are stored. |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> | <span className="api-desc">Index of the saved child entity that is the docked pickup.</span> |
+| <Link id="m-dockedtype" /><code><Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | <span className="api-desc">Item type in the dock.</span> |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> | <span className="api-desc">How many are stored.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the new format, capping one item type (hash 39982) at 100. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to the new format, capping one item type (hash 39982) at 100.</span> |

@@ -23,10 +23,10 @@ NLog target named `MainMenuTarget` that sends log lines to the `MainMenuLogger` 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> | Creates a `MainMenuTarget` with default values. |
+| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> | <span className="api-desc">Creates a `MainMenuTarget` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | Sends the rendered message to `MainMenuLogger`: levels up to Warn as info, Error and Fatal (or any exception) as error. |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | <span className="api-desc">Sends the rendered message to `MainMenuLogger`: levels up to Warn as info, Error and Fatal (or any exception) as error.</span> |

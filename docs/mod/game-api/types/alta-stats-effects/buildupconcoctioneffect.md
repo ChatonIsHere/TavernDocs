@@ -23,17 +23,17 @@ Base for effects whose strength adds up over repeated doses within a short windo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BuildUpconcoctionEffect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected BuildUpconcoctionEffect()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buildupduration" /><code>{"private float buildupDuration"}</code> | Seconds a build-up lasts after the first dose. Defaults to 1. |
-| <Link id="m-buildupmap" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", float> buildupMap"}</code> | Running strength per effect handler during its build-up window. |
+| <Link id="m-buildupduration" /><code>{"private float buildupDuration"}</code> | <span className="api-desc">Seconds a build-up lasts after the first dose. Defaults to 1.</span> |
+| <Link id="m-buildupmap" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", float> buildupMap"}</code> | <span className="api-desc">Running strength per effect handler during its build-up window.</span> |
 
 </details>
 
@@ -41,13 +41,13 @@ Base for effects whose strength adds up over repeated doses within a short windo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Adds this dose to the target's running strength (starting the window on the first dose), then applies the total. |
+| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Adds this dose to the target's running strength (starting the window on the first dose), then applies the total.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runbuildup" /><code>{"private IEnumerator RunBuildup("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target) (iterator)"}</code> | Coroutine that clears the target's running strength after `buildupDuration`. |
+| <Link id="m-runbuildup" /><code>{"private IEnumerator RunBuildup("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target) (iterator)"}</code> | <span className="api-desc">Coroutine that clears the target's running strength after `buildupDuration`.</span> |
 
 </details>

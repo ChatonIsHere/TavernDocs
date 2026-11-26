@@ -23,16 +23,16 @@ Forest fill modifier asset that spins each spawn around Y by a random angle, and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomRotationModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"RandomRotationModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isflippable" /><code>{"private bool isFlippable"}</code> | Allows the random upside-down flip. |
+| <Link id="m-isflippable" /><code>{"private bool isFlippable"}</code> | <span className="api-desc">Allows the random upside-down flip.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Forest fill modifier asset that spins each spawn around Y by a random angle, and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | Adds a random Y rotation, plus a 180 degree X flip on half the rolls if flippable. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/spawnparameters">{"SpawnParameters"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Adds a random Y rotation, plus a 180 degree X flip on half the rolls if flippable.</span> |

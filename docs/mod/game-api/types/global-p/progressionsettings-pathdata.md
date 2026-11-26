@@ -22,20 +22,20 @@ Private base for per-path entries in `ProgressionSettings`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PathData()"}</code> | Creates a `ProgressionSettings.PathData` with default values. |
+| <Link id="m-ctor" /><code>{"protected PathData()"}</code> | <span className="api-desc">Creates a `ProgressionSettings.PathData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"string name"}</code> | Label set to the path name, for the inspector. |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">Label set to the path name, for the inspector.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path" /><code>{"private "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | Backing field for `Path`. |
+| <Link id="m-path" /><code>{"private "}<Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | <span className="api-desc">Backing field for `Path`.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ Private base for per-path entries in `ProgressionSettings`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-path-2" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> | The progression path the entry is for. |
+| <Link id="m-path-2" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> | <span className="api-desc">The progression path the entry is for.</span> |

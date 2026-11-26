@@ -18,26 +18,26 @@ Server: scales the physics fixed timestep with server FPS, between the minimum a
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private DynamicPhysicsTimeSet()"}</code> | Creates a `DynamicPhysicsTimeSet` with default values. |
+| <Link id="m-ctor" /><code>{"private DynamicPhysicsTimeSet()"}</code> | <span className="api-desc">Creates a `DynamicPhysicsTimeSet` with default values.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> | Real time of the next adjustment. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings"}</code> | The current server settings. |
-| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Handle for the registered update method. |
-| <Link id="m-updateinterval" /><code>{"private const float UpdateInterval"}</code> | Seconds between adjustments (5). |
+| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> | <span className="api-desc">Real time of the next adjustment.</span> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings"}</code> | <span className="api-desc">The current server settings.</span> |
+| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | <span className="api-desc">Handle for the registered update method.</span> |
+| <Link id="m-updateinterval" /><code>{"private const float UpdateInterval"}</code> | <span className="api-desc">Seconds between adjustments (5).</span> |
 
 </details>
 
@@ -45,16 +45,16 @@ Server: scales the physics fixed timestep with server FPS, between the minimum a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"static void Start()"}</code> | Creates the instance, which hooks server settings changes and server end. |
+| <Link id="m-start" /><code>{"static void Start()"}</code> | <span className="api-desc">Creates the instance, which hooks server settings changes and server end.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"private void Disable()"}</code> | Sets the fixed timestep to the maximum physics frames per second and unregisters the update. |
-| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings settings)"}</code> | Re-reads the server settings and turns the update on or off by `IsUpdatingPhysicsFixedFrameCount`. |
-| <Link id="m-stop" /><code>{"private void Stop()"}</code> | Runs when the server ends: unhooks the events and calls `Disable`. |
-| <Link id="m-update-2" /><code>{"private void Update()"}</code> | Every 5 seconds, maps current FPS between the two FPS settings onto a physics rate and sets `Time.fixedDeltaTime`. |
+| <Link id="m-disable" /><code>{"private void Disable()"}</code> | <span className="api-desc">Sets the fixed timestep to the maximum physics frames per second and unregisters the update.</span> |
+| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings settings)"}</code> | <span className="api-desc">Re-reads the server settings and turns the update on or off by `IsUpdatingPhysicsFixedFrameCount`.</span> |
+| <Link id="m-stop" /><code>{"private void Stop()"}</code> | <span className="api-desc">Runs when the server ends: unhooks the events and calls `Disable`.</span> |
+| <Link id="m-update-2" /><code>{"private void Update()"}</code> | <span className="api-desc">Every 5 seconds, maps current FPS between the two FPS settings onto a physics rate and sets `Time.fixedDeltaTime`.</span> |
 
 </details>

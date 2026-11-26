@@ -21,17 +21,21 @@ Plain holder for a character model's animator and skinned mesh, used by `BonesBa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleDummy()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SimpleDummy()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"Animator animator"}</code> | The model's animator. |
-| <Link id="m-skinnedmeshrenderer" /><code>{"SkinnedMeshRenderer skinnedMeshRenderer"}</code> | The model's skinned mesh renderer. |
+| <Link id="m-animator" /><code>{"Animator animator"}</code> | <span className="api-desc">The model's animator.</span> |
+| <Link id="m-skinnedmeshrenderer" /><code>{"SkinnedMeshRenderer skinnedMeshRenderer"}</code> | <span className="api-desc">The model's skinned mesh renderer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SimpleDummy`:
 
+<div className="api-used-in">
+
 [`BonesBaking.dummyPrefab`](/mod/game-api/types/alta-customization/bonesbaking#m-dummyprefab), [`BonesBaking.sceneDummy`](/mod/game-api/types/alta-customization/bonesbaking#m-scenedummy).
+
+</div>

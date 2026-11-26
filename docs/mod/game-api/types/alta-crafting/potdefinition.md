@@ -24,17 +24,17 @@ Settings for a cooking pot type: how many ingredients make a stew and how many g
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PotDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PotDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> | Backing field for `MinNumberOfIngredients`. |
-| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> | Backing field for `NumberOfGarnishes`. |
+| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> | <span className="api-desc">Backing field for `MinNumberOfIngredients`.</span> |
+| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> | <span className="api-desc">Backing field for `NumberOfGarnishes`.</span> |
 
 </details>
 
@@ -42,11 +42,15 @@ Settings for a cooking pot type: how many ingredients make a stew and how many g
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> | Ingredients needed before the pot checks for a recipe. Defaults to 4. |
-| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> | Most garnishes the pot accepts; more are rejected. Defaults to 3. |
+| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> | <span className="api-desc">Ingredients needed before the pot checks for a recipe. Defaults to 4.</span> |
+| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> | <span className="api-desc">Most garnishes the pot accepts; more are rejected. Defaults to 3.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PotDefinition`:
 
+<div className="api-used-in">
+
 [`CookingPot.Definition`](/mod/game-api/types/alta-crafting/cookingpot#m-definition), [`CookingPot.potDefinition`](/mod/game-api/types/alta-crafting/cookingpot#m-potdefinition).
+
+</div>

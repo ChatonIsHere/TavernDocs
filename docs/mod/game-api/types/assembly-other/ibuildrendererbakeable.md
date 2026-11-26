@@ -22,11 +22,11 @@ Build-time hook for components that bake renderer data into a prefab. Bakers run
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> | Lower values bake first. |
+| <Link id="m-sortingorder" /><code>{"int SortingOrder { get; }"}</code> | <span className="api-desc">Lower values bake first.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> | Runs this component's bake, probably during the build or an editor bake. |
-| <Link id="m-clean" /><code>{"void Clean()"}</code> | Probably clears what an earlier bake produced. |
+| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> | <span className="api-desc">Runs this component's bake, probably during the build or an editor bake.</span> |
+| <Link id="m-clean" /><code>{"void Clean()"}</code> | <span className="api-desc">Probably clears what an earlier bake produced.</span> |

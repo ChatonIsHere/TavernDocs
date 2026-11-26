@@ -22,16 +22,16 @@ Old version 1 save data for the `GlobalPagesManager`, kept so old saves can load
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData1()"}</code> | Creates a `GlobalPagesManagerSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData1()"}</code> | <span className="api-desc">Creates a `GlobalPagesManagerSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pages" /><code>{"uint[] pages"}</code> | Page hashes from the old save. Not carried over by `Migrate`. |
+| <Link id="m-pages" /><code>{"uint[] pages"}</code> | <span className="api-desc">Page hashes from the old save. Not carried over by `Migrate`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Upgrades to version 2 with empty page and provider lists, so the old saved pages are dropped. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Upgrades to version 2 with empty page and provider lists, so the old saved pages are dropped.</span> |

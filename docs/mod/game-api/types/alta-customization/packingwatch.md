@@ -18,12 +18,12 @@ Shared stopwatch that lets cosmetic packing yield a frame on Android once more t
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-watch" /><code>{"private static Stopwatch watch"}</code> | The stopwatch. |
+| <Link id="m-watch" /><code>{"private static Stopwatch watch"}</code> | <span className="api-desc">The stopwatch.</span> |
 
 </details>
 
@@ -31,6 +31,6 @@ Shared stopwatch that lets cosmetic packing yield a frame on Android once more t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-measure" /><code>{"static bool Measure()"}</code> | True when more than 2 ms have passed since the last restart. |
-| <Link id="m-restart" /><code>{"static void Restart()"}</code> | Restarts the stopwatch. |
-| <Link id="m-stop" /><code>{"static void Stop()"}</code> | Stops the stopwatch. |
+| <Link id="m-measure" /><code>{"static bool Measure()"}</code> | <span className="api-desc">True when more than 2 ms have passed since the last restart.</span> |
+| <Link id="m-restart" /><code>{"static void Restart()"}</code> | <span className="api-desc">Restarts the stopwatch.</span> |
+| <Link id="m-stop" /><code>{"static void Stop()"}</code> | <span className="api-desc">Stops the stopwatch.</span> |

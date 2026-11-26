@@ -22,16 +22,16 @@ Server: running action that moves a creature in to its target, then circles the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> | Creates an `ActiveAgentRotateClose` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> | <span className="api-desc">Creates an `ActiveAgentRotateClose` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationangle" /><code>{"private Vector3 rotationAngle"}</code> | The circling axis, up or down, picked at random on start. |
+| <Link id="m-rotationangle" /><code>{"private Vector3 rotationAngle"}</code> | <span className="api-desc">The circling axis, up or down, picked at random on start.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Server: running action that moves a creature in to its target, then circles the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Sets up the speed multiplier and picks clockwise or anticlockwise at random. |
-| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | Moves straight in while still outside the reached distance, otherwise steps around the target at `CircleSpeed`. |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Sets up the speed multiplier and picks clockwise or anticlockwise at random.</span> |
+| <Link id="m-update" /><code>{"protected override void Update(Vector3 position, Vector3 targetPosition, Vector3 toTargetXZ, Vector3 toEdge, float flatDistance)"}</code> | <span className="api-desc">Moves straight in while still outside the reached distance, otherwise steps around the target at `CircleSpeed`.</span> |

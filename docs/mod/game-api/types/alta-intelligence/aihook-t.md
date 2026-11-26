@@ -23,17 +23,17 @@ Base for a component that hooks an effect onto an action: placed next to an `Act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected AiHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected AiHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isendcalledoncancelled" /><code>{"private bool isEndCalledOnCancelled"}</code> | Whether `FinishedOrCancelled` runs when the action is cancelled. Default true. |
-| <Link id="m-isendcalledonfinished" /><code>{"private bool isEndCalledOnFinished"}</code> | Whether `FinishedOrCancelled` runs when the action finishes. Default true. |
+| <Link id="m-isendcalledoncancelled" /><code>{"private bool isEndCalledOnCancelled"}</code> | <span className="api-desc">Whether `FinishedOrCancelled` runs when the action is cancelled. Default true.</span> |
+| <Link id="m-isendcalledonfinished" /><code>{"private bool isEndCalledOnFinished"}</code> | <span className="api-desc">Whether `FinishedOrCancelled` runs when the action finishes. Default true.</span> |
 
 </details>
 
@@ -41,14 +41,14 @@ Base for a component that hooks an effect onto an action: placed next to an `Act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected virtual void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Called when a creature's run of the action ends. Unhooks itself; subclasses undo their effect here. |
-| <Link id="m-used" /><code>{"protected virtual void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Called when a creature starts the action. Hooks `FinishedOrCancelled` onto the finish and cancel events as set. |
+| <Link id="m-finishedorcancelled" /><code>{"protected virtual void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Called when a creature's run of the action ends. Unhooks itself; subclasses undo their effect here.</span> |
+| <Link id="m-used" /><code>{"protected virtual void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Called when a creature starts the action. Hooks `FinishedOrCancelled` onto the finish and cancel events as set.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"private void Alta.Intelligence.IAiHook.Initialize()"}</code> | Subscribes `Used` to the sibling action component's `Used` event. Called on first use of the action. |
+| <Link id="m-initialize" /><code>{"private void Alta.Intelligence.IAiHook.Initialize()"}</code> | <span className="api-desc">Subscribes `Used` to the sibling action component's `Used` event. Called on first use of the action.</span> |
 
 </details>

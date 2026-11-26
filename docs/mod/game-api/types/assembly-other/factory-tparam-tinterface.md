@@ -21,11 +21,11 @@ Synchronous factory taking one parameter. Subclasses build the object in `Create
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | Creates a `Factory` with default values. |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | <span className="api-desc">Creates a `Factory` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"virtual TInterface Create(TParam param)"}</code> | Calls `CreateInstance` with the parameter, injects the result, registers it for disposal and returns it. |
-| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance(TParam param)"}</code> | Abstract. Builds the raw instance from the parameter. |
+| <Link id="m-create" /><code>{"virtual TInterface Create(TParam param)"}</code> | <span className="api-desc">Calls `CreateInstance` with the parameter, injects the result, registers it for disposal and returns it.</span> |
+| <Link id="m-createinstance" /><code>{"protected abstract TInterface CreateInstance(TParam param)"}</code> | <span className="api-desc">Abstract. Builds the raw instance from the parameter.</span> |

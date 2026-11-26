@@ -22,23 +22,27 @@ The last chiselling stage of a `TimberBlock`. Finishing it releases the crafted 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CoreStage()"}</code> | Creates a `TimberBlock.CoreStage` with default values. |
+| <Link id="m-ctor" /><code>{"CoreStage()"}</code> | <span className="api-desc">Creates a `TimberBlock.CoreStage` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stagelevel" /><code>{"override "}<Link to="/mod/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> | Always `StageLevel.Core`. |
+| <Link id="m-stagelevel" /><code>{"override "}<Link to="/mod/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> | <span className="api-desc">Always `StageLevel.Core`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotateto" /><code>{"override void RotateTo(bool isInversedUp)"}</code> | Does nothing, so core pieces don't flip when the block is rotated. |
-| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> | Plays the finish effect, releases the result to the player who last hit a piece, then destroys the block entity. |
+| <Link id="m-rotateto" /><code>{"override void RotateTo(bool isInversedUp)"}</code> | <span className="api-desc">Does nothing, so core pieces don't flip when the block is rotated.</span> |
+| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> | <span className="api-desc">Plays the finish effect, releases the result to the player who last hit a piece, then destroys the block entity.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CoreStage`:
 
+<div className="api-used-in">
+
 [`TimberBlock.coreStage`](/mod/game-api/types/alta-crafting/timberblock#m-corestage).
+
+</div>

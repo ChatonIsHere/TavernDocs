@@ -21,18 +21,18 @@ Atmosphere plugin for interiors such as basements: while it has priority, it ble
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basementambience" /><code>{"private Color basementAmbience"}</code> | Ambient colour used inside, default black. |
-| <Link id="m-basementfogcolor" /><code>{"private Color basementFogColor"}</code> | Fog colour used inside, default black. |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | Fog density used inside, default 0.05. |
+| <Link id="m-basementambience" /><code>{"private Color basementAmbience"}</code> | <span className="api-desc">Ambient colour used inside, default black.</span> |
+| <Link id="m-basementfogcolor" /><code>{"private Color basementFogColor"}</code> | <span className="api-desc">Fog colour used inside, default black.</span> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | <span className="api-desc">Fog density used inside, default 0.05.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Atmosphere plugin for interiors such as basements: while it has priority, it ble
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | The interior ambient colour, `basementAmbience`. |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The interior fog colour, `basementFogColor`. |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The interior fog density. |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | <span className="api-desc">The interior ambient colour, `basementAmbience`.</span> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | <span className="api-desc">The interior fog colour, `basementFogColor`.</span> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | <span className="api-desc">The interior fog density.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Calls the base disable only. |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | If this plugin has priority, blends ambience (or its override), fog colour and fog density to this plugin's values. |
-| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> | Blends the ambient colour back to this plugin's value if it has priority and no override is set. |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | <span className="api-desc">Calls the base disable only.</span> |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | <span className="api-desc">If this plugin has priority, blends ambience (or its override), fog colour and fog density to this plugin's values.</span> |
+| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> | <span className="api-desc">Blends the ambient colour back to this plugin's value if it has priority and no override is set.</span> |

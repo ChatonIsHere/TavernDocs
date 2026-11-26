@@ -21,11 +21,11 @@ Client-side transitions manager. Player states on a client get this one, so a tr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> | Creates a `RemoteStateTransitionsManager` from `parentState`. |
+| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> | <span className="api-desc">Creates a `RemoteStateTransitionsManager` from `parentState`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-settostate" /><code>{"override void SetToState("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType, "}<Link to="/mod/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" preActivationCallback)"}</code> | Asks the server to change to the given state; the pre-activation callback is not used. |
-| <Link id="m-triggertransition" /><code>{"override void TriggerTransition("}<Link to="/mod/game-api/types/alta-player/iplayerstatetransition">{"IPlayerStateTransition"}</Link>{" stateTransition)"}</code> | Asks the server to change to the transition's destination state. |
+| <Link id="m-settostate" /><code>{"override void SetToState("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType, "}<Link to="/mod/game-api/types/alta-player/playerstatehandler">{"PlayerStateHandler"}</Link>{" preActivationCallback)"}</code> | <span className="api-desc">Asks the server to change to the given state; the pre-activation callback is not used.</span> |
+| <Link id="m-triggertransition" /><code>{"override void TriggerTransition("}<Link to="/mod/game-api/types/alta-player/iplayerstatetransition">{"IPlayerStateTransition"}</Link>{" stateTransition)"}</code> | <span className="api-desc">Asks the server to change to the transition's destination state.</span> |

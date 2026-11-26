@@ -30,4 +30,8 @@ Texture import scale for a platform: full, half, quarter or pixel.
 
 Members of other types that take, return or hold a `Scale`:
 
+<div className="api-used-in">
+
 [`ImportSettings.PlatformSettings.textureScale`](/mod/game-api/types/global-i-l/importsettings-platformsettings#m-texturescale).
+
+</div>

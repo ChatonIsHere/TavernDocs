@@ -21,16 +21,16 @@ Wyrm ranged spit attack action, preferring targets near `BestRange`. Runs on the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> | Creates an `ActiveSpit` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> | <span className="api-desc">Creates an `ActiveSpit` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angle" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" angle"}</code> | Networked animator float for the spit's vertical aim angle, in radians. |
+| <Link id="m-angle" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" angle"}</code> | <span className="api-desc">Networked animator float for the spit's vertical aim angle, in radians.</span> |
 
 </details>
 
@@ -38,6 +38,6 @@ Wyrm ranged spit attack action, preferring targets near `BestRange`. Runs on the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activespit">{"ActiveSpit"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{" settings)"}</code> | Builds the spit action: dangerous target within `MaximumRange`, best near `BestRange`, preferring living and hurt ones. |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Faces the target and sets the aim angle float to the vertical angle toward it. |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Fires a random spit trigger, grabs the aim angle float and sets the duration. |
+| <Link id="m-getaction" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings">{"BasicAction"}</Link>{"<"}<Link to="/mod/game-api/types/alta-intelligence/wyrm">{"Wyrm"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/activespit">{"ActiveSpit"}</Link>{", "}<Link to="/mod/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{"> GetAction("}<Link to="/mod/game-api/types/alta-intelligence/wyrmspitsettings">{"WyrmSpitSettings"}</Link>{" settings)"}</code> | <span className="api-desc">Builds the spit action: dangerous target within `MaximumRange`, best near `BestRange`, preferring living and hurt ones.</span> |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | <span className="api-desc">Faces the target and sets the aim angle float to the vertical angle toward it.</span> |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Fires a random spit trigger, grabs the aim angle float and sets the duration.</span> |

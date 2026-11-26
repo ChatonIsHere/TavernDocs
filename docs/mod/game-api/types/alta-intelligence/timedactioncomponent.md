@@ -22,16 +22,16 @@ Base for a creature action component that runs for a set duration.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TimedActionComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected TimedActionComponent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration` (default 5 seconds). |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | <span className="api-desc">Backing field for `Duration` (default 5 seconds).</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Base for a creature action component that runs for a set duration.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | How long the action runs, in seconds probably. 5 by default. |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | <span className="api-desc">How long the action runs, in seconds probably. 5 by default.</span> |

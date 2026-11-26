@@ -22,10 +22,10 @@ The Harmony patch behind `TavernEvents.SocketCreated`: a postfix on the `Alta.Ne
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EventPatches()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"EventPatches()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-socketcreatedevent" /><code>{"static void SocketCreatedEvent()"}</code> | Postfix on the `Socket` constructor that raises `TavernEvents.SocketCreated` with `Socket.Current`, the socket just made. |
+| <Link id="m-socketcreatedevent" /><code>{"static void SocketCreatedEvent()"}</code> | <span className="api-desc">Postfix on the `Socket` constructor that raises `TavernEvents.SocketCreated` with `Socket.Current`, the socket just made.</span> |

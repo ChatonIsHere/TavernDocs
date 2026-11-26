@@ -23,18 +23,18 @@ Game task asset that counts items produced by crafting or smelting, filtered by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpecificSpawnItemTask()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SpecificSpawnItemTask()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recipefilter" /><code>{"private "}<Link to="/mod/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" recipeFilter"}</code> | Recipe kinds that count: followed, not followed, smelt, generic. All by default. |
-| <Link id="m-targetprefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> targetPrefabs"}</code> | Products that count. Empty means any. |
-| <Link id="m-targetprefabshashes" /><code>{"private HashSet<uint> targetPrefabsHashes"}</code> | Hashes of `targetPrefabs`. |
+| <Link id="m-recipefilter" /><code>{"private "}<Link to="/mod/game-api/types/global-s/specificspawnitemtask-recipefilter">{"SpecificSpawnItemTask.RecipeFilter"}</Link>{" recipeFilter"}</code> | <span className="api-desc">Recipe kinds that count: followed, not followed, smelt, generic. All by default.</span> |
+| <Link id="m-targetprefabs" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"> targetPrefabs"}</code> | <span className="api-desc">Products that count. Empty means any.</span> |
+| <Link id="m-targetprefabshashes" /><code>{"private HashSet<uint> targetPrefabsHashes"}</code> | <span className="api-desc">Hashes of `targetPrefabs`.</span> |
 
 </details>
 
@@ -42,11 +42,11 @@ Game task asset that counts items produced by crafting or smelting, filtered by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Listens on the `SpawnItem` game action channel. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Listens on the `SpawnItem` game action channel.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | Builds the hash set from `targetPrefabs`. |
-| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-s/specificspawnitemtaskargument">{"SpecificSpawnItemTaskArgument"}</Link>{" argument)"}</code> | True when the recipe kind matches `recipeFilter` and the product is in `targetPrefabs` (or the list is empty). |
+| <Link id="m-initialize" /><code>{"protected override void Initialize()"}</code> | <span className="api-desc">Builds the hash set from `targetPrefabs`.</span> |
+| <Link id="m-isvalid" /><code>{"protected override bool IsValid("}<Link to="/mod/game-api/types/global-s/specificspawnitemtaskargument">{"SpecificSpawnItemTaskArgument"}</Link>{" argument)"}</code> | <span className="api-desc">True when the recipe kind matches `recipeFilter` and the product is in `targetPrefabs` (or the list is empty).</span> |

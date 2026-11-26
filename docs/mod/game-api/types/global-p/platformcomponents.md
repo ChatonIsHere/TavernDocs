@@ -22,16 +22,16 @@ Build-time bake step that removes chosen components on platforms they aren't mea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformComponents()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlatformComponents()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platformobjects" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformcomponents-platformobjectsetup">{"PlatformComponents.PlatformObjectSetup"}</Link>{"[] platformObjects"}</code> | Groups of components and the platforms they're kept on. |
+| <Link id="m-platformobjects" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformcomponents-platformobjectsetup">{"PlatformComponents.PlatformObjectSetup"}</Link>{"[] platformObjects"}</code> | <span className="api-desc">Groups of components and the platforms they're kept on.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Build-time bake step that removes chosen components on platforms they aren't mea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group. |
-| <Link id="m-bake-2" /><code>{"void Bake()"}</code> | Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group. |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | <span className="api-desc">Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group.</span> |
+| <Link id="m-bake-2" /><code>{"void Bake()"}</code> | <span className="api-desc">Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Empty. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

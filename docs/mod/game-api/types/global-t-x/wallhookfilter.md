@@ -21,28 +21,28 @@ Only lets items dock on a wall hook once the hook has been crafted (its `Raycast
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WallHookFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WallHookFilter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-crafter" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/raycastcrafter">{"RaycastCrafter"}</Link>{" crafter"}</code> | The crafter whose crafted state allows docking. |
-| <Link id="m-docks" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" docks"}</code> | The docks the filter is added to. |
+| <Link id="m-crafter" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/raycastcrafter">{"RaycastCrafter"}</Link>{" crafter"}</code> | <span className="api-desc">The crafter whose crafted state allows docking.</span> |
+| <Link id="m-docks" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" docks"}</code> | <span className="api-desc">The docks the filter is added to.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Adds `CraftedFilter` to each dock's `DockFilter`. |
-| <Link id="m-craftedfilter" /><code>{"private void CraftedFilter("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> | Dock filter that blocks docking until `crafter.IsCrafted` is true. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Adds `CraftedFilter` to each dock's `DockFilter`.</span> |
+| <Link id="m-craftedfilter" /><code>{"private void CraftedFilter("}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool result)"}</code> | <span className="api-desc">Dock filter that blocks docking until `crafter.IsCrafted` is true.</span> |
 
 </details>

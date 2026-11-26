@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes an `Embeddable`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmbeddableUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

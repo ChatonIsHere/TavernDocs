@@ -21,26 +21,30 @@ One imported bone of a skinned rope in the third-party Ultimate Rope asset, with
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RopeBone()"}</code> | Creates an `UltimateRope.RopeBone` with default values. |
+| <Link id="m-ctor" /><code>{"RopeBone()"}</code> | <span className="api-desc">Creates an `UltimateRope.RopeBone` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bcreatedcollider" /><code>{"bool bCreatedCollider"}</code> | True if the rope added the collider, so it is removed again on cleanup. |
-| <Link id="m-bcreatedrigidbody" /><code>{"bool bCreatedRigidbody"}</code> | True if the rope added the rigidbody, so it is removed again on cleanup. |
-| <Link id="m-bisstatic" /><code>{"bool bIsStatic"}</code> | Whether the bone stays fixed under its non-bone parent instead of moving with the rope. |
-| <Link id="m-flength" /><code>{"float fLength"}</code> | Length of the bone, used to size its collider. |
-| <Link id="m-gobone" /><code>{"GameObject goBone"}</code> | The bone object. |
-| <Link id="m-noriginallayer" /><code>{"int nOriginalLayer"}</code> | Layer the bone had before the rope changed it. |
-| <Link id="m-qoriginallocalrot" /><code>{"Quaternion qOriginalLocalRot"}</code> | Original local rotation. |
-| <Link id="m-tfnonboneparent" /><code>{"Transform tfNonBoneParent"}</code> | The first parent of the bone that isn't itself a bone. |
-| <Link id="m-tfparent" /><code>{"Transform tfParent"}</code> | The bone's original parent. |
-| <Link id="m-v3originallocalpos" /><code>{"Vector3 v3OriginalLocalPos"}</code> | Original local position. |
-| <Link id="m-v3originallocalscale" /><code>{"Vector3 v3OriginalLocalScale"}</code> | Original local scale. |
+| <Link id="m-bcreatedcollider" /><code>{"bool bCreatedCollider"}</code> | <span className="api-desc">True if the rope added the collider, so it is removed again on cleanup.</span> |
+| <Link id="m-bcreatedrigidbody" /><code>{"bool bCreatedRigidbody"}</code> | <span className="api-desc">True if the rope added the rigidbody, so it is removed again on cleanup.</span> |
+| <Link id="m-bisstatic" /><code>{"bool bIsStatic"}</code> | <span className="api-desc">Whether the bone stays fixed under its non-bone parent instead of moving with the rope.</span> |
+| <Link id="m-flength" /><code>{"float fLength"}</code> | <span className="api-desc">Length of the bone, used to size its collider.</span> |
+| <Link id="m-gobone" /><code>{"GameObject goBone"}</code> | <span className="api-desc">The bone object.</span> |
+| <Link id="m-noriginallayer" /><code>{"int nOriginalLayer"}</code> | <span className="api-desc">Layer the bone had before the rope changed it.</span> |
+| <Link id="m-qoriginallocalrot" /><code>{"Quaternion qOriginalLocalRot"}</code> | <span className="api-desc">Original local rotation.</span> |
+| <Link id="m-tfnonboneparent" /><code>{"Transform tfNonBoneParent"}</code> | <span className="api-desc">The first parent of the bone that isn't itself a bone.</span> |
+| <Link id="m-tfparent" /><code>{"Transform tfParent"}</code> | <span className="api-desc">The bone's original parent.</span> |
+| <Link id="m-v3originallocalpos" /><code>{"Vector3 v3OriginalLocalPos"}</code> | <span className="api-desc">Original local position.</span> |
+| <Link id="m-v3originallocalscale" /><code>{"Vector3 v3OriginalLocalScale"}</code> | <span className="api-desc">Original local scale.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RopeBone`:
 
+<div className="api-used-in">
+
 [`UltimateRope.BuildImportedBoneList`](/mod/game-api/types/global-t-x/ultimaterope#m-buildimportedbonelist), [`UltimateRope.BuildImportedBoneListTry`](/mod/game-api/types/global-t-x/ultimaterope#m-buildimportedbonelisttry), [`UltimateRope.ImportedBones`](/mod/game-api/types/global-t-x/ultimaterope#m-importedbones).
+
+</div>

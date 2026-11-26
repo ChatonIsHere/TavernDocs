@@ -21,24 +21,24 @@ Private mesh buffer that `StaticBatchedRecombiner` fills for one material before
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WorkingMesh()"}</code> | Creates a `StaticBatchedRecombiner.WorkingMesh` with default values. |
+| <Link id="m-ctor" /><code>{"WorkingMesh()"}</code> | <span className="api-desc">Creates a `StaticBatchedRecombiner.WorkingMesh` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colors" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Color> colors"}</code> | Vertex colours, padded to match the vertex count. |
-| <Link id="m-normals" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector3> normals"}</code> | Normals, padded to match the vertex count. |
-| <Link id="m-tangents" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> tangents"}</code> | Tangents, padded to match the vertex count. |
-| <Link id="m-triangles" /><code>{"readonly List<int> triangles"}</code> | Triangle indices. |
-| <Link id="m-uv" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector2> uv"}</code> | UV channel 0. |
-| <Link id="m-uv2" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv2"}</code> | UV channel 1. |
-| <Link id="m-uv3" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv3"}</code> | UV channel 2. |
-| <Link id="m-uv4" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv4"}</code> | UV channel 3. |
-| <Link id="m-vertices" /><code>{"readonly List<Vector3> vertices"}</code> | Vertex positions in the parent's local space. |
+| <Link id="m-colors" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Color> colors"}</code> | <span className="api-desc">Vertex colours, padded to match the vertex count.</span> |
+| <Link id="m-normals" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector3> normals"}</code> | <span className="api-desc">Normals, padded to match the vertex count.</span> |
+| <Link id="m-tangents" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> tangents"}</code> | <span className="api-desc">Tangents, padded to match the vertex count.</span> |
+| <Link id="m-triangles" /><code>{"readonly List<int> triangles"}</code> | <span className="api-desc">Triangle indices.</span> |
+| <Link id="m-uv" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector2> uv"}</code> | <span className="api-desc">UV channel 0.</span> |
+| <Link id="m-uv2" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv2"}</code> | <span className="api-desc">UV channel 1.</span> |
+| <Link id="m-uv3" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv3"}</code> | <span className="api-desc">UV channel 2.</span> |
+| <Link id="m-uv4" /><code>{"readonly "}<Link to="/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t">{"StaticBatchedRecombiner.AnchoredList"}</Link>{"<Vector4> uv4"}</code> | <span className="api-desc">UV channel 3.</span> |
+| <Link id="m-vertices" /><code>{"readonly List<Vector3> vertices"}</code> | <span className="api-desc">Vertex positions in the parent's local space.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createmesh" /><code>{"Mesh CreateMesh()"}</code> | Builds a mesh from the buffers, only setting optional channels that have data, then clears the buffers. |
+| <Link id="m-createmesh" /><code>{"Mesh CreateMesh()"}</code> | <span className="api-desc">Builds a mesh from the buffers, only setting optional channels that have data, then clears the buffers.</span> |

@@ -22,17 +22,17 @@ A `CustomizationVisualPart` whose default arguments of type `TArguments` are set
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected CustomizationVisualPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultarguments" /><code>{"private TArguments defaultArguments"}</code> | Default arguments for this part, cloned by `CreateDefaultArguments` and exposed by `Arguments`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-defaultarguments" /><code>{"private TArguments defaultArguments"}</code> | <span className="api-desc">Default arguments for this part, cloned by `CreateDefaultArguments` and exposed by `Arguments`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -40,10 +40,10 @@ A `CustomizationVisualPart` whose default arguments of type `TArguments` are set
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-arguments" /><code>{"TArguments Arguments { get; }"}</code> | The default arguments set on the prefab. |
+| <Link id="m-arguments" /><code>{"TArguments Arguments { get; }"}</code> | <span className="api-desc">The default arguments set on the prefab.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createdefaultarguments" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" CreateDefaultArguments()"}</code> | A clone of the default arguments. |
+| <Link id="m-createdefaultarguments" /><code>{"override "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" CreateDefaultArguments()"}</code> | <span className="api-desc">A clone of the default arguments.</span> |

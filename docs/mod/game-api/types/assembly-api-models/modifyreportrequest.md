@@ -20,16 +20,20 @@ Body of an Alta web API request to change a report's status.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModifyReportRequest()"}</code> | Creates a `ModifyReportRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ModifyReportRequest()"}</code> | <span className="api-desc">Creates a `ModifyReportRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> | The new report status. |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> | <span className="api-desc">The new report status.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ModifyReportRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ModifyPlayerReport`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-modifyplayerreport).
+
+</div>

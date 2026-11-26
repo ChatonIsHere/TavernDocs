@@ -22,10 +22,10 @@ Bake-time marker that is destroyed on bake. Nothing in this build reads it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForcedChunking()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForcedChunking()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isforcedsingleprefab" /><code>{"bool isForcedSinglePrefab"}</code> | Flag for the chunking bake. Not read anywhere in this build. |
+| <Link id="m-isforcedsingleprefab" /><code>{"bool isForcedSinglePrefab"}</code> | <span className="api-desc">Flag for the chunking bake. Not read anywhere in this build.</span> |

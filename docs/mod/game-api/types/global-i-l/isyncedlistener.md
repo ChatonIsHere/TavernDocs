@@ -21,4 +21,4 @@ Obsolete. A synced class that `ClassSerializationHelper` calls after reading it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-aftersyncreceived" /><code>{"void AfterSyncReceived()"}</code> | Called after the synced data has been read. |
+| <Link id="m-aftersyncreceived" /><code>{"void AfterSyncReceived()"}</code> | <span className="api-desc">Called after the synced data has been read.</span> |

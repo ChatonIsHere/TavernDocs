@@ -22,4 +22,4 @@ Editor menu entry that creates a new `BoulderDefinition` asset under the Townshi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BoulderDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `BoulderDefinition.Create` with default values.</span> |

@@ -22,19 +22,19 @@ Component front for an undo and redo history, raising bool events when undo or r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected HistoryAccess()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected HistoryAccess()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> | Last known redo state. |
-| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> | Last known undo state. |
-| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> | Event raised with whether redo is now possible. |
-| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> | Event raised with whether undo is now possible. |
+| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> | <span className="api-desc">Last known redo state.</span> |
+| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> | <span className="api-desc">Last known undo state.</span> |
+| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> | <span className="api-desc">Event raised with whether redo is now possible.</span> |
+| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> | <span className="api-desc">Event raised with whether undo is now possible.</span> |
 
 </details>
 
@@ -42,31 +42,31 @@ Component front for an undo and redo history, raising bool events when undo or r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history" /><code>{"abstract "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | The history this component drives. |
-| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> | Whether there is something to redo. |
-| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> | Whether there is something to undo. |
+| <Link id="m-history" /><code>{"abstract "}<Link to="/mod/game-api/types/global-i-l/ihistorymanager">{"IHistoryManager"}</Link>{" History { get; }"}</code> | <span className="api-desc">The history this component drives.</span> |
+| <Link id="m-isredopossible" /><code>{"bool IsRedoPossible { get; }"}</code> | <span className="api-desc">Whether there is something to redo.</span> |
+| <Link id="m-isundopossible" /><code>{"bool IsUndoPossible { get; }"}</code> | <span className="api-desc">Whether there is something to undo.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> | Raised when a new item is added to the history. |
+| <Link id="m-itempushed" /><code>{"event Action ItemPushed"}</code> | <span className="api-desc">Raised when a new item is added to the history.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Clears the history. |
-| <Link id="m-redo" /><code>{"void Redo()"}</code> | Redoes the last undone item. |
-| <Link id="m-undo" /><code>{"void Undo()"}</code> | Undoes the last item. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Listens for new history items. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Clears the history.</span> |
+| <Link id="m-redo" /><code>{"void Redo()"}</code> | <span className="api-desc">Redoes the last undone item.</span> |
+| <Link id="m-undo" /><code>{"void Undo()"}</code> | <span className="api-desc">Undoes the last item.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Listens for new history items.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> | Updates the undo and redo state and raises `ItemPushed` when the history gets a new action. |
-| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> | Raises the undo and redo events when either becomes possible or impossible. |
+| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> | <span className="api-desc">Updates the undo and redo state and raises `ItemPushed` when the history gets a new action.</span> |
+| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> | <span className="api-desc">Raises the undo and redo events when either becomes possible or impossible.</span> |
 
 </details>

@@ -21,10 +21,10 @@ Scene loader that opens the registration (account setup) scene.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> | Creates an `AccountSetupSceneLoader` with default values. |
+| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> | <span className="api-desc">Creates an `AccountSetupSceneLoader` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-loadasync" /><code>{"Task LoadAsync()"}</code> | Loads the registration scene. |
+| <Link id="m-loadasync" /><code>{"Task LoadAsync()"}</code> | <span className="api-desc">Loads the registration scene.</span> |

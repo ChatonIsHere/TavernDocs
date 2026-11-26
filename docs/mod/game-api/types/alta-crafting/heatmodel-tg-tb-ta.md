@@ -24,17 +24,17 @@ Colour model whose red channel is a list of metal heat points, used to show heat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected HeatModel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected HeatModel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> | Heat point collection whose sync makes clients recheck the colour. |
-| <Link id="m-heatpoints" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> heatPoints"}</code> | Metal heat points that make up the red channel. |
+| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> | <span className="api-desc">Heat point collection whose sync makes clients recheck the colour.</span> |
+| <Link id="m-heatpoints" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> heatPoints"}</code> | <span className="api-desc">Metal heat points that make up the red channel.</span> |
 
 </details>
 
@@ -42,10 +42,10 @@ Colour model whose red channel is a list of metal heat points, used to show heat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-redpoints" /><code>{"protected override List<"}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> RedPoints { get; }"}</code> | Returns the metal heat points that drive the red channel. |
+| <Link id="m-redpoints" /><code>{"protected override List<"}<Link to="/mod/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> RedPoints { get; }"}</code> | <span className="api-desc">Returns the metal heat points that drive the red channel.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Does nothing on headless builds. Otherwise the server hooks each heat point's `Changed`, and clients hook the collection's sync. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Does nothing on headless builds. Otherwise the server hooks each heat point's `Changed`, and clients hook the collection's sync.</span> |

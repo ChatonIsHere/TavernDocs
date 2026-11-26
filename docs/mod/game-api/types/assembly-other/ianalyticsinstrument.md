@@ -21,10 +21,14 @@ Something that adds data to an analytics event when it is sent. Added to an even
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/mod/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> | Writes this instrument's values into the event's data. |
+| <Link id="m-appendresult" /><code>{"void AppendResult("}<Link to="/mod/game-api/types/assembly-other/ianalyticsdata">{"IAnalyticsData"}</Link>{" data)"}</code> | <span className="api-desc">Writes this instrument's values into the event's data.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IAnalyticsInstrument`:
 
+<div className="api-used-in">
+
 [`AnalyticsEvent.AddInstrument`](/mod/game-api/types/assembly-other/analyticsevent#m-addinstrument), [`AnalyticsEvent.cachedInstruments`](/mod/game-api/types/assembly-other/analyticsevent#m-cachedinstruments), [`AnalyticsEvent.instruments`](/mod/game-api/types/assembly-other/analyticsevent#m-instruments), [`IAnalyticsEvent.AddInstrument`](/mod/game-api/types/assembly-other/ianalyticsevent#m-addinstrument).
+
+</div>

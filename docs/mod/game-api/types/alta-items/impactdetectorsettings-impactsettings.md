@@ -21,19 +21,19 @@ The effect and sound for one impact outcome (critical, good or bad) in `ImpactDe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> | Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`. |
-| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> | Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`. |
+| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> | <span className="api-desc">Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`.</span> |
+| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> | <span className="api-desc">Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> | Backing field for `ObjectDefinition`, the pooled effect spawned on the impact. |
-| <Link id="m-sound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> | Backing field for `Sound`, the sound effect played on the impact (none by default). |
-| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> | Backing field for `SoundEffectSet`, a set of sounds for the impact. |
+| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> | <span className="api-desc">Backing field for `ObjectDefinition`, the pooled effect spawned on the impact.</span> |
+| <Link id="m-sound" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> | <span className="api-desc">Backing field for `Sound`, the sound effect played on the impact (none by default).</span> |
+| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> | <span className="api-desc">Backing field for `SoundEffectSet`, a set of sounds for the impact.</span> |
 
 </details>
 
@@ -41,19 +41,23 @@ The effect and sound for one impact outcome (critical, good or bad) in `ImpactDe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-objectdefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectDefinition { get; }"}</code> | Pooled effect spawned at the hit point. Its scale follows hit effectiveness. |
-| <Link id="m-sound-2" /><code><Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" Sound { get; }"}</code> | Sound played at the hit point, or `None`. |
-| <Link id="m-soundeffectset-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" { get; }"}</code> | A sound effect set for this outcome. Not used by `PlayEffects`. |
+| <Link id="m-objectdefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" ObjectDefinition { get; }"}</code> | <span className="api-desc">Pooled effect spawned at the hit point. Its scale follows hit effectiveness.</span> |
+| <Link id="m-sound-2" /><code><Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" Sound { get; }"}</code> | <span className="api-desc">Sound played at the hit point, or `None`.</span> |
+| <Link id="m-soundeffectset-2" /><code><Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" { get; }"}</code> | <span className="api-desc">A sound effect set for this outcome. Not used by `PlayEffects`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True if the sound and pooled effect match. Ignores `SoundEffectSet`. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of the sound and pooled effect. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">True if the sound and pooled effect match. Ignores `SoundEffectSet`.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Hash of the sound and pooled effect.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ImpactSettings`:
 
+<div className="api-used-in">
+
 [`ImpactDetectorSettings.bad`](/mod/game-api/types/alta-items/impactdetectorsettings#m-bad), [`ImpactDetectorSettings.critical`](/mod/game-api/types/alta-items/impactdetectorsettings#m-critical), [`ImpactDetectorSettings.good`](/mod/game-api/types/alta-items/impactdetectorsettings#m-good), [`ImpactGenerator.EffectOnBlock`](/mod/game-api/types/alta-items/impactgenerator#m-effectonblock), [`ImpactGenerator.EffectOnDamage`](/mod/game-api/types/alta-items/impactgenerator#m-effectondamage), [`ImpactorSettings.effectOnBlock`](/mod/game-api/types/alta-items/impactorsettings#m-effectonblock), [`ImpactorSettings.EffectOnBlock`](/mod/game-api/types/alta-items/impactorsettings#m-effectonblock-2), [`ImpactorSettings.effectOnDamage`](/mod/game-api/types/alta-items/impactorsettings#m-effectondamage), [`ImpactorSettings.EffectOnDamage`](/mod/game-api/types/alta-items/impactorsettings#m-effectondamage-2), [`PickupTypeSettings.GetHardnessInnefectiveHitEffect`](/mod/game-api/types/global-p/pickuptypesettings#m-gethardnessinnefectivehiteffect), [`PickupTypeSettings.ChannelInneficientHardnessHitEffect.settings`](/mod/game-api/types/global-p/pickuptypesettings-channelinneficienthardnesshiteffect#m-settings).
+
+</div>

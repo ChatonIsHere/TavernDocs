@@ -21,19 +21,19 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> | Creates a `SerializedSavedDynamicObject` from `savingData`, `sizeBytes`, `prefabHash` and `chunkVersioning`. |
+| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> | <span className="api-desc">Creates a `SerializedSavedDynamicObject` from `savingData`, `sizeBytes`, `prefabHash` and `chunkVersioning`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | True once the serialized arrays have been unpacked into `data` and `Versioning`. Not serialized. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> | The saved entity's bytes packed as `uint` words, so Unity can serialize them. |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | The chunk versioning array the data was saved with; `Initialize` rebuilds `Versioning` from it. |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | <span className="api-desc">True once the serialized arrays have been unpacked into `data` and `Versioning`. Not serialized.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> | <span className="api-desc">The saved entity's bytes packed as `uint` words, so Unity can serialize them.</span> |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | <span className="api-desc">The chunk versioning array the data was saved with; `Initialize` rebuilds `Versioning` from it.</span> |
 
 </details>
 
@@ -41,29 +41,29 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-versioning-2" /><code><Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" Versioning { get; private set; }"}</code> | The chunk versioning the data was saved under. Defaults to the latest. |
+| <Link id="m-versioning-2" /><code><Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" Versioning { get; private set; }"}</code> | <span className="api-desc">The chunk versioning the data was saved under. Defaults to the latest.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getfromstring" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" GetFromString(string value)"}</code> | Parses a spawn string: comma separated numbers (prefab hash, byte size, data) with optional versioning after a `\|`. |
-| <Link id="m-getsaveof" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" GetSaveOf("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Saves a prefab's current state under the latest versioning. |
-| <Link id="m-getversion" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" GetVersion()"}</code> | The chunk versioning the data was saved under. |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Rebuilds the working data and versioning after Unity deserialization. Safe to call more than once. |
-| <Link id="m-load" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Load(Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`. |
-| <Link id="m-loadinto" /><code>{"void LoadInto("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Server: loads the saved state into an existing entity, initializes it and sets its save mode. |
-| <Link id="m-loadintoprefablessentity" /><code>{"void LoadIntoPrefablessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Loads saved state into an entity that has no prefab, such as a scene object. |
-| <Link id="m-savefromprefablessentity" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" SaveFromPrefablessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Saves an entity that has no prefab, with a prefab hash of 0. |
-| <Link id="m-spawnfromstring" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnFromString(string value, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Spawns an object from a spawn string. Returns null and logs on failure. Used by `spawn string` and trade commands. |
+| <Link id="m-getfromstring" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" GetFromString(string value)"}</code> | <span className="api-desc">Parses a spawn string: comma separated numbers (prefab hash, byte size, data) with optional versioning after a `\|`.</span> |
+| <Link id="m-getsaveof" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" GetSaveOf("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | <span className="api-desc">Saves a prefab's current state under the latest versioning.</span> |
+| <Link id="m-getversion" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" GetVersion()"}</code> | <span className="api-desc">The chunk versioning the data was saved under.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Rebuilds the working data and versioning after Unity deserialization. Safe to call more than once.</span> |
+| <Link id="m-load" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Load(Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | <span className="api-desc">Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`.</span> |
+| <Link id="m-loadinto" /><code>{"void LoadInto("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | <span className="api-desc">Server: loads the saved state into an existing entity, initializes it and sets its save mode.</span> |
+| <Link id="m-loadintoprefablessentity" /><code>{"void LoadIntoPrefablessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Loads saved state into an entity that has no prefab, such as a scene object.</span> |
+| <Link id="m-savefromprefablessentity" /><code>{"static "}<Link to="/mod/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" SaveFromPrefablessEntity("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | <span className="api-desc">Saves an entity that has no prefab, with a prefab hash of 0.</span> |
+| <Link id="m-spawnfromstring" /><code>{"static "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnFromString(string value, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | <span className="api-desc">Spawns an object from a spawn string. Returns null and logs on failure. Used by `spawn string` and trade commands.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load-2" /><code>{"private void Load("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`. |
-| <Link id="m-spawn" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn()"}</code> | Spawns a fresh entity of the saved prefab hash through the spawn manager. Used by the obsolete `Load`. |
+| <Link id="m-load-2" /><code>{"private void Load("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/mod/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | <span className="api-desc">Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`.</span> |
+| <Link id="m-spawn" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn()"}</code> | <span className="api-desc">Spawns a fresh entity of the saved prefab hash through the spawn manager. Used by the obsolete `Load`.</span> |
 
 </details>
 
@@ -71,4 +71,8 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 
 Members of other types that take, return or hold a `SerializedSavedDynamicObject`:
 
+<div className="api-used-in">
+
 [`NonHashedData.dynamicData`](/mod/game-api/types/global-m-o/nonhasheddata#m-dynamicdata), [`NonHashedData.DynamicData`](/mod/game-api/types/global-m-o/nonhasheddata#m-dynamicdata-2), [`PlayerPostboxStorage.Push`](/mod/game-api/types/global-p/playerpostboxstorage#m-push), [`PositionedNetworkPrefab.savedDynamicObject`](/mod/game-api/types/global-p/positionednetworkprefab#m-saveddynamicobject), [`PostboxManager.TradeVendorData.Entities`](/mod/game-api/types/global-p/postboxmanager-tradevendordata#m-entities), [`PostboxManager.TradeVendorData.items`](/mod/game-api/types/global-p/postboxmanager-tradevendordata#m-items), [`SetPieceData.dynamicData`](/mod/game-api/types/global-s/setpiecedata#m-dynamicdata), [`SetPieceData.DynamicData`](/mod/game-api/types/global-s/setpiecedata#m-dynamicdata-2).
+
+</div>

@@ -21,11 +21,11 @@ Console requirement: the command needs the game to be logged in to the Alta API.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> | Creates a `LoggedInOnlyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> | <span className="api-desc">Creates a `LoggedInOnlyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> | True when `LoginManager.IsLoggedIn`. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Logged In Only". |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> | <span className="api-desc">True when `LoginManager.IsLoggedIn`.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Logged In Only".</span> |

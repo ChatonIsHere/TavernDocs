@@ -28,4 +28,8 @@ Where a social analytics event came from: the main menu, the social tablet or a 
 
 Members of other types that take, return or hold a `SocialAnalyticsEventOrigin`:
 
+<div className="api-used-in">
+
 [`BanPlayerSocialAnalyticsEvent.BanPlayerSocialAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/banplayersocialanalyticsevent#m-ctor), [`SocialAnalyticsEvent.SocialAnalyticsEvent`](/mod/game-api/types/game-other-namespaces/socialanalyticsevent#m-ctor), [`PlayerCommunityAnalytics.FriendlyText`](/mod/game-api/types/global-p/playercommunityanalytics#m-friendlytext), [`PlayerCommunityAnalytics.FriendRequestedFrom`](/mod/game-api/types/global-p/playercommunityanalytics#m-friendrequestedfrom), [`PlayerCommunityAnalytics.ReportPlayer`](/mod/game-api/types/global-p/playercommunityanalytics#m-reportplayer), [`PlayerCommunityAnalytics.RespondFriendRequestFrom`](/mod/game-api/types/global-p/playercommunityanalytics#m-respondfriendrequestfrom), [`PlayerCommunityAnalytics.UnFriend`](/mod/game-api/types/global-p/playercommunityanalytics#m-unfriend), [`RecentPlayerActionPage.Origin`](/mod/game-api/types/global-q-r/recentplayeractionpage#m-origin).
+
+</div>

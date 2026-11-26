@@ -18,23 +18,23 @@ Alta web API lists of groups a player can find and join. Reached through `ApiAcc
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupDiscovery("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupDiscovery` from `api`. |
+| <Link id="m-ctor" /><code>{"internal GroupDiscovery("}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `GroupDiscovery` from `api`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | The low-level client that sends the requests. |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | <span className="api-desc">The low-level client that sends the requests.</span> |
 
 </details>
 
@@ -42,17 +42,21 @@ Alta web API lists of groups a player can find and join. Reached through `ApiAcc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-opengroups" /><code><Link to="/mod/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" OpenGroups { get; }"}</code> | Paged list of open groups. |
-| <Link id="m-publicgroups" /><code><Link to="/mod/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" PublicGroups { get; }"}</code> | Paged list of public groups. |
+| <Link id="m-opengroups" /><code><Link to="/mod/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" OpenGroups { get; }"}</code> | <span className="api-desc">Paged list of open groups.</span> |
+| <Link id="m-publicgroups" /><code><Link to="/mod/game-api/types/assembly-api-client/groupget">{"GroupGet"}</Link>{" PublicGroups { get; }"}</code> | <span className="api-desc">Paged list of public groups.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-client/joinablegroupinfo">{"JoinableGroupInfo"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> | Fetches one group by id, wrapped so it can be joined. |
+| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/mod/game-api/types/assembly-api-client/joinablegroupinfo">{"JoinableGroupInfo"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> | <span className="api-desc">Fetches one group by id, wrapped so it can be joined.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GroupDiscovery`:
 
+<div className="api-used-in">
+
 [`GroupsClient.Discovery`](/mod/game-api/types/assembly-api-client/groupsclient#m-discovery), [`IGroupsClient.Discovery`](/mod/game-api/types/assembly-api-client/igroupsclient#m-discovery), [`OfflineGroupsClient.Discovery`](/mod/game-api/types/assembly-api-client/offlinegroupsclient#m-discovery).
+
+</div>

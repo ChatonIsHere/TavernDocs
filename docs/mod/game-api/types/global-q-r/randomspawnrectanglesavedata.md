@@ -23,14 +23,14 @@ Save data for `RandomSpawnRectangle`: the distribution, box size, count range an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> | Creates a `RandomSpawnRectangleSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> | <span className="api-desc">Creates a `RandomSpawnRectangleSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distribution" /><code><Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | Saved distribution to spawn from. |
-| <Link id="m-maximum" /><code>{"int maximum"}</code> | Saved upper bound on the item count. |
-| <Link id="m-minimum" /><code>{"int minimum"}</code> | Saved lower bound on the item count. |
-| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> | Saved tilt limit. |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> | Saved spawn box size. |
+| <Link id="m-distribution" /><code><Link to="/mod/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | <span className="api-desc">Saved distribution to spawn from.</span> |
+| <Link id="m-maximum" /><code>{"int maximum"}</code> | <span className="api-desc">Saved upper bound on the item count.</span> |
+| <Link id="m-minimum" /><code>{"int minimum"}</code> | <span className="api-desc">Saved lower bound on the item count.</span> |
+| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> | <span className="api-desc">Saved tilt limit.</span> |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> | <span className="api-desc">Saved spawn box size.</span> |

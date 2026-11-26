@@ -21,15 +21,19 @@ Snapshot of a walking creature's movement, sent by `Walker.Updated` each update 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forwardspeed" /><code>{"float ForwardSpeed"}</code> | Horizontal speed along the creature's forward direction. |
-| <Link id="m-isfinalstretch" /><code>{"bool IsFinalStretch"}</code> | True when the walker is on the last stretch to its target and not overshooting; drives the stopping animation. |
-| <Link id="m-isgrounded" /><code>{"bool IsGrounded"}</code> | Whether the walker is on the ground. |
-| <Link id="m-ispivoting" /><code>{"bool IsPivoting"}</code> | Whether the walker is turning on the spot. |
-| <Link id="m-turnspeed" /><code>{"float TurnSpeed"}</code> | How far the walker rotated this update. |
-| <Link id="m-velocity" /><code>{"Vector3 Velocity"}</code> | Full velocity, horizontal plus vertical. |
+| <Link id="m-forwardspeed" /><code>{"float ForwardSpeed"}</code> | <span className="api-desc">Horizontal speed along the creature's forward direction.</span> |
+| <Link id="m-isfinalstretch" /><code>{"bool IsFinalStretch"}</code> | <span className="api-desc">True when the walker is on the last stretch to its target and not overshooting; drives the stopping animation.</span> |
+| <Link id="m-isgrounded" /><code>{"bool IsGrounded"}</code> | <span className="api-desc">Whether the walker is on the ground.</span> |
+| <Link id="m-ispivoting" /><code>{"bool IsPivoting"}</code> | <span className="api-desc">Whether the walker is turning on the spot.</span> |
+| <Link id="m-turnspeed" /><code>{"float TurnSpeed"}</code> | <span className="api-desc">How far the walker rotated this update.</span> |
+| <Link id="m-velocity" /><code>{"Vector3 Velocity"}</code> | <span className="api-desc">Full velocity, horizontal plus vertical.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `WalkerState`:
 
+<div className="api-used-in">
+
 [`Walker.Updated`](/mod/game-api/types/alta-intelligence/walker#m-updated), [`WalkerAnimator.UpdateAnimation`](/mod/game-api/types/alta-intelligence/walkeranimator#m-updateanimation).
+
+</div>

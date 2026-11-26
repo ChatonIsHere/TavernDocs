@@ -21,16 +21,16 @@ Root of a nested class tree that mirrors Unity editor menu paths. Menu items inh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> | Creates an `AltaMenuItemBase` with default values. |
+| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-menuitems" /><code>{"private static readonly Dictionary<Type, "}<Link to="/mod/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{"> menuItems"}</code> | Cache of menu item instances by type. |
+| <Link id="m-menuitems" /><code>{"private static readonly Dictionary<Type, "}<Link to="/mod/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{"> menuItems"}</code> | <span className="api-desc">Cache of menu item instances by type.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Root of a nested class tree that mirrors Unity editor menu paths. Menu items inh
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getitem" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{" GetItem<T>()"}</code> | Returns a cached instance of the given menu item type, creating it on first use. |
+| <Link id="m-getitem" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/altamenuitem">{"AltaMenuItem"}</Link>{" GetItem<T>()"}</code> | <span className="api-desc">Returns a cached instance of the given menu item type, creating it on first use.</span> |

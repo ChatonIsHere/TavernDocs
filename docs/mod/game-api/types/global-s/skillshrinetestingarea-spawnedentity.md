@@ -21,18 +21,18 @@ One practice object spawned in a skill shrine's testing area. Server side: it re
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpawnedEntity("}<Link to="/mod/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab, "}<Link to="/mod/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> | Creates a `SkillShrineTestingArea.SpawnedEntity` from `positionedPrefab` and `testingArea`. |
+| <Link id="m-ctor" /><code>{"SpawnedEntity("}<Link to="/mod/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab, "}<Link to="/mod/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> | <span className="api-desc">Creates a `SkillShrineTestingArea.SpawnedEntity` from `positionedPrefab` and `testingArea`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positionedprefab" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab"}</code> | The prefab and its spot in the testing area. |
-| <Link id="m-spawnedentity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawnedEntity"}</code> | The currently spawned object. |
-| <Link id="m-testingarea" /><code>{"private "}<Link to="/mod/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> | The testing area this object belongs to. |
+| <Link id="m-positionedprefab" /><code>{"private "}<Link to="/mod/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab"}</code> | <span className="api-desc">The prefab and its spot in the testing area.</span> |
+| <Link id="m-spawnedentity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawnedEntity"}</code> | <span className="api-desc">The currently spawned object.</span> |
+| <Link id="m-testingarea" /><code>{"private "}<Link to="/mod/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> | <span className="api-desc">The testing area this object belongs to.</span> |
 
 </details>
 
@@ -40,23 +40,23 @@ One practice object spawned in a skill shrine's testing area. Server side: it re
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-needtocheck" /><code>{"bool NeedToCheck { get; }"}</code> | Whether the prefab can move, so distance checks and resets apply. |
+| <Link id="m-needtocheck" /><code>{"bool NeedToCheck { get; }"}</code> | <span className="api-desc">Whether the prefab can move, so distance checks and resets apply.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkdistance" /><code>{"void CheckDistance(Vector3 center)"}</code> | For movable objects, respawns it if it is further than the area's max distance from the centre (ignoring height). |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Destroys the spawned object without respawning it. |
-| <Link id="m-resetifneeded" /><code>{"void ResetIfNeeded()"}</code> | Respawns movable objects. Called when the same skill orb is opened again. |
+| <Link id="m-checkdistance" /><code>{"void CheckDistance(Vector3 center)"}</code> | <span className="api-desc">For movable objects, respawns it if it is further than the area's max distance from the centre (ignoring height).</span> |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Destroys the spawned object without respawning it.</span> |
+| <Link id="m-resetifneeded" /><code>{"void ResetIfNeeded()"}</code> | <span className="api-desc">Respawns movable objects. Called when the same skill orb is opened again.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyandrestart" /><code>{"private void DestroyAndRestart("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Respawns the object when it is destroyed, unless that was a chunk unload. |
-| <Link id="m-spawnentity" /><code>{"private void SpawnEntity()"}</code> | Spawns the prefab in the area, sets it up for the open skill and player, and marks it not to be saved. |
+| <Link id="m-destroyandrestart" /><code>{"private void DestroyAndRestart("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Respawns the object when it is destroyed, unless that was a chunk unload.</span> |
+| <Link id="m-spawnentity" /><code>{"private void SpawnEntity()"}</code> | <span className="api-desc">Spawns the prefab in the area, sets it up for the open skill and player, and marks it not to be saved.</span> |
 
 </details>
 
@@ -64,4 +64,8 @@ One practice object spawned in a skill shrine's testing area. Server side: it re
 
 Members of other types that take, return or hold a `SpawnedEntity`:
 
+<div className="api-used-in">
+
 [`SkillShrineTestingArea.spawnedEntities`](/mod/game-api/types/global-s/skillshrinetestingarea#m-spawnedentities).
+
+</div>

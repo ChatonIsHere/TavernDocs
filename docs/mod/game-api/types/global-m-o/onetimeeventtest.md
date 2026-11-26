@@ -22,27 +22,27 @@ Developer test component that exercises `OneTimeEvent` by adding and removing ha
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OneTimeEventTest()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"OneTimeEventTest()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onetimeevent" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<"}<Link to="/mod/game-api/types/global-m-o/onetimeeventtest-inttest">{"OneTimeEventTest.IntTest"}</Link>{"> oneTimeEvent"}</code> | The `OneTimeEvent` instance under test. |
+| <Link id="m-onetimeevent" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<"}<Link to="/mod/game-api/types/global-m-o/onetimeeventtest-inttest">{"OneTimeEventTest.IntTest"}</Link>{"> oneTimeEvent"}</code> | <span className="api-desc">The `OneTimeEvent` instance under test.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Adds and removes handlers on `oneTimeEvent` and invokes it twice, as a test. |
-| <Link id="m-testhandler" /><code>{"private void TestHandler(int number)"}</code> | Test handler that logs the number it receives. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Adds and removes handlers on `oneTimeEvent` and invokes it twice, as a test.</span> |
+| <Link id="m-testhandler" /><code>{"private void TestHandler(int number)"}</code> | <span className="api-desc">Test handler that logs the number it receives.</span> |
 
 </details>

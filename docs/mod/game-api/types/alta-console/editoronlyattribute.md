@@ -21,11 +21,11 @@ Console requirement: the command only runs outside play mode (in the Unity edito
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorOnlyAttribute()"}</code> | Creates an `EditorOnlyAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"EditorOnlyAttribute()"}</code> | <span className="api-desc">Creates an `EditorOnlyAttribute` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check()"}</code> | True when the application is not playing. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Editor Only". |
+| <Link id="m-check" /><code>{"override bool Check()"}</code> | <span className="api-desc">True when the application is not playing.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Editor Only".</span> |

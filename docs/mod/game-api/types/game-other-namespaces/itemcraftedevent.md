@@ -22,11 +22,11 @@ Township event bus event broadcast when a player joins two crafting parts. Serve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> | Creates an `ItemCraftedEvent` from `player` and `itemPartHashes`. |
+| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> | <span className="api-desc">Creates an `ItemCraftedEvent` from `player` and `itemPartHashes`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-itemparthashes" /><code>{"List<uint> ItemPartHashes { get; }"}</code> | Prefab hashes of the two parts joined: the primary part first, then the secondary. |
-| <Link id="m-source" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> | The player who crafted. |
+| <Link id="m-itemparthashes" /><code>{"List<uint> ItemPartHashes { get; }"}</code> | <span className="api-desc">Prefab hashes of the two parts joined: the primary part first, then the secondary.</span> |
+| <Link id="m-source" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> | <span className="api-desc">The player who crafted.</span> |

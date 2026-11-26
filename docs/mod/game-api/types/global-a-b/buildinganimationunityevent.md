@@ -22,4 +22,4 @@ Serializable `UnityEvent` with a `BuildingAnimation` argument, for inspector-wir
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildingAnimationUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BuildingAnimationUnityEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

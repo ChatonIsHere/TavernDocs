@@ -23,16 +23,16 @@ Loot category asset that items belong to (`Item.LootCategory`). Loot rolls first
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Category()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Category()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> | Backing field for `Weighting`. |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> | <span className="api-desc">Backing field for `Weighting`.</span> |
 
 </details>
 
@@ -40,16 +40,20 @@ Loot category asset that items belong to (`Item.LootCategory`). Loot rolls first
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> | Relative chance of this category being picked (default 1). |
+| <Link id="m-weighting-2" /><code>{"float Weighting { get; }"}</code> | <span className="api-desc">Relative chance of this category being picked (default 1).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"static void Filter(List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> entries)"}</code> | Picks one category at random by weighting from the entries' categories and removes entries from all others. Logs items missing a category. |
+| <Link id="m-filter" /><code>{"static void Filter(List<"}<Link to="/mod/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> entries)"}</code> | <span className="api-desc">Picks one category at random by weighting from the entries' categories and removes entries from all others. Logs items missing a category.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Category`:
 
+<div className="api-used-in">
+
 [`Item.lootCategory`](/mod/game-api/types/alta-items/item#m-lootcategory), [`Item.LootCategory`](/mod/game-api/types/alta-items/item#m-lootcategory-2).
+
+</div>

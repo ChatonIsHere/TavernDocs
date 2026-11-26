@@ -21,17 +21,21 @@ A mesh renderer and its original shared material, so `MaterialToggler` can resto
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererToMaterial(MeshRenderer renderer)"}</code> | Creates a `MaterialToggler.RendererToMaterial` from `renderer`. |
+| <Link id="m-ctor" /><code>{"RendererToMaterial(MeshRenderer renderer)"}</code> | <span className="api-desc">Creates a `MaterialToggler.RendererToMaterial` from `renderer`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-originalmaterial" /><code>{"Material OriginalMaterial { get; private set; }"}</code> | The renderer's shared material before toggling. |
-| <Link id="m-renderer" /><code>{"MeshRenderer Renderer { get; private set; }"}</code> | The mesh renderer. |
+| <Link id="m-originalmaterial" /><code>{"Material OriginalMaterial { get; private set; }"}</code> | <span className="api-desc">The renderer's shared material before toggling.</span> |
+| <Link id="m-renderer" /><code>{"MeshRenderer Renderer { get; private set; }"}</code> | <span className="api-desc">The mesh renderer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RendererToMaterial`:
 
+<div className="api-used-in">
+
 [`MaterialToggler.renderersToToggle`](/mod/game-api/types/global-m-o/materialtoggler#m-rendererstotoggle).
+
+</div>

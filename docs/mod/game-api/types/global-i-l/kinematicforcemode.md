@@ -28,4 +28,8 @@ How a growth stage sets rigidbodies: leave them, force kinematic, or force non-k
 
 Members of other types that take, return or hold a `KinematicForceMode`:
 
+<div className="api-used-in">
+
 [`GrowthStage.forceKinematic`](/mod/game-api/types/global-e-h/growthstage#m-forcekinematic), [`GrowthStage.ForceKinematic`](/mod/game-api/types/global-e-h/growthstage#m-forcekinematic-2).
+
+</div>

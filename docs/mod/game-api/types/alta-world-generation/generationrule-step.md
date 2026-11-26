@@ -29,4 +29,8 @@ What a `GenerationRule` step does to each cell: set it to a tag, remove listed t
 
 Members of other types that take, return or hold a `Step`:
 
+<div className="api-used-in">
+
 [`GenerationRule.steps`](/mod/game-api/types/alta-world-generation/generationrule#m-steps), [`GenerationRule.Steps`](/mod/game-api/types/alta-world-generation/generationrule#m-steps-2).
+
+</div>

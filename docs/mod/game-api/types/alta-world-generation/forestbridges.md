@@ -23,19 +23,19 @@ Forest generation step that places bridges, as spline instructions, where paths 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestBridges()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForestBridges()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnmigrate" /><code>{"private bool btnMigrate"}</code> | Inspector button for `Migrate`. |
-| <Link id="m-options" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestbridges-option">{"ForestBridges.Option"}</Link>{"[] options"}</code> | Bridge styles with offsets, handle lengths, heights and pick weights. |
-| <Link id="m-riverwidthmultiplier" /><code>{"private float riverWidthMultiplier"}</code> | Scales river radius to place the bank lines. |
-| <Link id="m-totalweights" /><code>{"private float totalWeights"}</code> | Sum of option weights, worked out on first use. |
+| <Link id="m-btnmigrate" /><code>{"private bool btnMigrate"}</code> | <span className="api-desc">Inspector button for `Migrate`.</span> |
+| <Link id="m-options" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestbridges-option">{"ForestBridges.Option"}</Link>{"[] options"}</code> | <span className="api-desc">Bridge styles with offsets, handle lengths, heights and pick weights.</span> |
+| <Link id="m-riverwidthmultiplier" /><code>{"private float riverWidthMultiplier"}</code> | <span className="api-desc">Scales river radius to place the bank lines.</span> |
+| <Link id="m-totalweights" /><code>{"private float totalWeights"}</code> | <span className="api-desc">Sum of option weights, worked out on first use.</span> |
 
 </details>
 
@@ -43,19 +43,19 @@ Forest generation step that places bridges, as spline instructions, where paths 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearstatic" /><code>{"void ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Does nothing. |
+| <Link id="m-clearstatic" /><code>{"void ClearStatic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Does nothing.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleardynamic" /><code>{"private void Alta.Forests.IForestGeneration.ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-generatedynamic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Does nothing. |
-| <Link id="m-generateglobal" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Does nothing. |
-| <Link id="m-generatestatic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | For each river crossing in the chunk, finds the path on both banks, picks a weighted bridge option and adds a spline between the banks. |
-| <Link id="m-getoverlap" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/path">{"Path"}</Link>{" GetOverlap("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, float pathProgress, Vector2 start, Vector2 end, out float progress)"}</code> | Finds the path (the edge or one leaving its nearer node) that crosses the given bank line, and where. |
-| <Link id="m-migrate" /><code>{"private void Migrate()"}</code> | Editor button: makes a `StaticEnvironmentPieceInstance` on each option's display object. |
+| <Link id="m-cleardynamic" /><code>{"private void Alta.Forests.IForestGeneration.ClearDynamic("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-generatedynamic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateDynamic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-generateglobal" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateGlobal("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-generatestatic" /><code>{"private Task Alta.Forests.IForestGeneration.GenerateStatic("}<Link to="/mod/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/mod/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | <span className="api-desc">For each river crossing in the chunk, finds the path on both banks, picks a weighted bridge option and adds a spline between the banks.</span> |
+| <Link id="m-getoverlap" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/path">{"Path"}</Link>{" GetOverlap("}<Link to="/mod/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, float pathProgress, Vector2 start, Vector2 end, out float progress)"}</code> | <span className="api-desc">Finds the path (the edge or one leaving its nearer node) that crosses the given bank line, and where.</span> |
+| <Link id="m-migrate" /><code>{"private void Migrate()"}</code> | <span className="api-desc">Editor button: makes a `StaticEnvironmentPieceInstance` on each option's display object.</span> |
 
 </details>

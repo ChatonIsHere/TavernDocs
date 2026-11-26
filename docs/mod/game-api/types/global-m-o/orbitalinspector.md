@@ -21,4 +21,4 @@ Editor inspector for orbital interactor values. Adds nothing to `InteractorInspe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OrbitalInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | Creates an `OrbitalInspector` from `targetMember`. |
+| <Link id="m-ctor" /><code>{"OrbitalInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | <span className="api-desc">Creates an `OrbitalInspector` from `targetMember`.</span> |

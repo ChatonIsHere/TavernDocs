@@ -21,23 +21,27 @@ One bone of an `AnimatedRagdoll`: the animated bone it follows, the physics body
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Bone()"}</code> | Creates an `AnimatedRagdoll.Bone` with default values. |
+| <Link id="m-ctor" /><code>{"Bone()"}</code> | <span className="api-desc">Creates an `AnimatedRagdoll.Bone` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animatedbone" /><code>{"Transform animatedBone"}</code> | Animated skeleton bone whose rotation the ragdoll bone tries to match. |
-| <Link id="m-connectedmassscale" /><code>{"float connectedMassScale"}</code> | Mass scale for the joint's connected body. |
-| <Link id="m-dampeningmultiplier" /><code>{"float dampeningMultiplier"}</code> | Multiplier on the ragdoll's dampening for this joint's drive. |
-| <Link id="m-massscale" /><code>{"float massScale"}</code> | Mass scale set on the joint (default 5). |
-| <Link id="m-maximumforcemultiplier" /><code>{"float maximumForceMultiplier"}</code> | Multiplier on the ragdoll's maximum drive force for this joint. |
-| <Link id="m-ragdollbone" /><code>{"Rigidbody ragdollBone"}</code> | Rigidbody of the physics bone. |
-| <Link id="m-ragdolljoint" /><code>{"ConfigurableJoint ragdollJoint"}</code> | Joint driven towards the animated bone's rotation. |
-| <Link id="m-torquemultiplier" /><code>{"float torqueMultiplier"}</code> | Multiplier on the ragdoll's torque for this joint's drive spring. |
+| <Link id="m-animatedbone" /><code>{"Transform animatedBone"}</code> | <span className="api-desc">Animated skeleton bone whose rotation the ragdoll bone tries to match.</span> |
+| <Link id="m-connectedmassscale" /><code>{"float connectedMassScale"}</code> | <span className="api-desc">Mass scale for the joint's connected body.</span> |
+| <Link id="m-dampeningmultiplier" /><code>{"float dampeningMultiplier"}</code> | <span className="api-desc">Multiplier on the ragdoll's dampening for this joint's drive.</span> |
+| <Link id="m-massscale" /><code>{"float massScale"}</code> | <span className="api-desc">Mass scale set on the joint (default 5).</span> |
+| <Link id="m-maximumforcemultiplier" /><code>{"float maximumForceMultiplier"}</code> | <span className="api-desc">Multiplier on the ragdoll's maximum drive force for this joint.</span> |
+| <Link id="m-ragdollbone" /><code>{"Rigidbody ragdollBone"}</code> | <span className="api-desc">Rigidbody of the physics bone.</span> |
+| <Link id="m-ragdolljoint" /><code>{"ConfigurableJoint ragdollJoint"}</code> | <span className="api-desc">Joint driven towards the animated bone's rotation.</span> |
+| <Link id="m-torquemultiplier" /><code>{"float torqueMultiplier"}</code> | <span className="api-desc">Multiplier on the ragdoll's torque for this joint's drive spring.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Bone`:
 
+<div className="api-used-in">
+
 [`AnimatedRagdoll.bones`](/mod/game-api/types/global-a-b/animatedragdoll#m-bones).
+
+</div>

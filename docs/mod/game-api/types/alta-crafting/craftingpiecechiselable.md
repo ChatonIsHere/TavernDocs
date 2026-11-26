@@ -21,17 +21,17 @@ A `Chiselable` on a generic crafting piece, so chisel hits damage the piece. Onl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CraftingPieceChiselable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CraftingPieceChiselable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing flag for `IsEnabled`. |
-| <Link id="m-piece" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/genericcraftingpiece">{"GenericCraftingPiece"}</Link>{" piece"}</code> | The crafting piece this chiselable belongs to. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | <span className="api-desc">Backing flag for `IsEnabled`.</span> |
+| <Link id="m-piece" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/genericcraftingpiece">{"GenericCraftingPiece"}</Link>{" piece"}</code> | <span className="api-desc">The crafting piece this chiselable belongs to.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ A `Chiselable` on a generic crafting piece, so chisel hits damage the piece. Onl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled-2" /><code>{"override bool IsEnabled { get; set; }"}</code> | True when enabled and the piece can be removed; setting it only changes the enabled flag. |
-| <Link id="m-triggerhaptics" /><code>{"override bool TriggerHaptics { get; }"}</code> | Haptics fire only while the piece can be removed. |
+| <Link id="m-isenabled-2" /><code>{"override bool IsEnabled { get; set; }"}</code> | <span className="api-desc">True when enabled and the piece can be removed; setting it only changes the enabled flag.</span> |
+| <Link id="m-triggerhaptics" /><code>{"override bool TriggerHaptics { get; }"}</code> | <span className="api-desc">Haptics fire only while the piece can be removed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Applies the normal chisel damage and passes the damage to the piece as a chisel hit. |
+| <Link id="m-receivedamage" /><code>{"override void ReceiveDamage(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | <span className="api-desc">Applies the normal chisel damage and passes the damage to the piece as a chisel hit.</span> |

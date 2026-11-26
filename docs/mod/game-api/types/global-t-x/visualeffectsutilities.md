@@ -20,5 +20,5 @@ Helper for visual doubles: pooled copies of an object's meshes that effects can 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getvisualdouble" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(Component component)"}</code> | Takes an `ObjectVisualDouble` from the pickup type settings pool, copies the object's mesh renderers into it and unparents it. Used by `DockedDissolver`. |
-| <Link id="m-getvisualdouble-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(GameObject gameObject)"}</code> | Takes an `ObjectVisualDouble` from the pickup type settings pool, copies the object's mesh renderers into it and unparents it. Used by `DockedDissolver`. |
+| <Link id="m-getvisualdouble" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(Component component)"}</code> | <span className="api-desc">Takes an `ObjectVisualDouble` from the pickup type settings pool, copies the object's mesh renderers into it and unparents it. Used by `DockedDissolver`.</span> |
+| <Link id="m-getvisualdouble-2" /><code>{"static "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" GetVisualDouble(GameObject gameObject)"}</code> | <span className="api-desc">Takes an `ObjectVisualDouble` from the pickup type settings pool, copies the object's mesh renderers into it and unparents it. Used by `DockedDissolver`.</span> |

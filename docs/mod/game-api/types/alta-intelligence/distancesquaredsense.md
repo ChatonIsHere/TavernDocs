@@ -24,16 +24,16 @@ Sense asset giving the squared ground distance between the creature and a target
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DistanceSquaredSense()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DistanceSquaredSense()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-yflexibility" /><code>{"private float yFlexibility"}</code> | Height difference in metres that doesn't count towards the distance. Default 1. |
+| <Link id="m-yflexibility" /><code>{"private float yFlexibility"}</code> | <span className="api-desc">Height difference in metres that doesn't count towards the distance. Default 1.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Sense asset giving the squared ground distance between the creature and a target
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"override float Get("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | The squared distance between the two ground positions. |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">The squared distance between the two ground positions.</span> |

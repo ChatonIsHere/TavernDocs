@@ -29,4 +29,8 @@ Which size a touch screen keyboard key uses: a normal key, a suggestion key (F5 
 
 Members of other types that take, return or hold a `KeySizeType`:
 
+<div className="api-used-in">
+
 [`TouchScreenKeyboardKey.buttonType`](/mod/game-api/types/global-t-x/touchscreenkeyboardkey#m-buttontype), [`TouchScreenKeyboardKey.GetButtonTypeFromKeyCode`](/mod/game-api/types/global-t-x/touchscreenkeyboardkey#m-getbuttontypefromkeycode).
+
+</div>

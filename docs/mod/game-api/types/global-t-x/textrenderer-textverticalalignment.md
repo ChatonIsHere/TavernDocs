@@ -29,4 +29,8 @@ Vertical alignment for a `TextRenderer`: top, center or bottom.
 
 Members of other types that take, return or hold a `TextVerticalAlignment`:
 
+<div className="api-used-in">
+
 [`TextRenderer.verticalAlignment`](/mod/game-api/types/global-t-x/textrenderer#m-verticalalignment).
+
+</div>

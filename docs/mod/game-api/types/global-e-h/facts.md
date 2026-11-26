@@ -20,10 +20,10 @@ Serializable holder for a hard-coded list of 167 trivia strings. Nothing else in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Facts()"}</code> | Creates a `Facts` with default values. |
+| <Link id="m-ctor" /><code>{"Facts()"}</code> | <span className="api-desc">Creates a `Facts` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-facts" /><code>{"string[] facts"}</code> | The trivia strings, filled in by the field initializer. |
+| <Link id="m-facts" /><code>{"string[] facts"}</code> | <span className="api-desc">The trivia strings, filled in by the field initializer.</span> |

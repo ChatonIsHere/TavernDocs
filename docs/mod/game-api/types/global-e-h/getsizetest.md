@@ -21,19 +21,19 @@ Editor test helper that shows the size of this object's mesh bounds in the inspe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GetSizeTest()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GetSizeTest()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-doj" /><code>{"private bool doj"}</code> | Inspector button that runs `GetWidth`. |
-| <Link id="m-x" /><code>{"private string x"}</code> | Bounds width, as text. |
-| <Link id="m-y" /><code>{"private string y"}</code> | Bounds height, as text. |
-| <Link id="m-z" /><code>{"private string z"}</code> | Bounds depth, as text. |
+| <Link id="m-doj" /><code>{"private bool doj"}</code> | <span className="api-desc">Inspector button that runs `GetWidth`.</span> |
+| <Link id="m-x" /><code>{"private string x"}</code> | <span className="api-desc">Bounds width, as text.</span> |
+| <Link id="m-y" /><code>{"private string y"}</code> | <span className="api-desc">Bounds height, as text.</span> |
+| <Link id="m-z" /><code>{"private string z"}</code> | <span className="api-desc">Bounds depth, as text.</span> |
 
 </details>
 
@@ -41,4 +41,4 @@ Editor test helper that shows the size of this object's mesh bounds in the inspe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getwidth" /><code>{"void GetWidth()"}</code> | Writes the mesh bounds size on each axis into `x`, `y` and `z`. |
+| <Link id="m-getwidth" /><code>{"void GetWidth()"}</code> | <span className="api-desc">Writes the mesh bounds size on each axis into `x`, `y` and `z`.</span> |

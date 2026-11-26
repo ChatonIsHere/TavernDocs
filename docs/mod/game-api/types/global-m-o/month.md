@@ -37,4 +37,8 @@ Calendar months, January = 1 to December = 12.
 
 Members of other types that take, return or hold a `Month`:
 
+<div className="api-used-in">
+
 [`MonthDayHour.month`](/mod/game-api/types/global-m-o/monthdayhour#m-month), [`MonthDayHour.Month`](/mod/game-api/types/global-m-o/monthdayhour#m-month-2), [`MonthDayHour.MonthDayHour`](/mod/game-api/types/global-m-o/monthdayhour#m-ctor).
+
+</div>

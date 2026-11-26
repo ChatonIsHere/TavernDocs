@@ -21,19 +21,19 @@ Prefab scoring component for schmeechees: one value when the schmeechee is groun
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SchmeecheeOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SchmeecheeOperation()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> | Value when the condition doesn't hold (default 0). |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
-| <Link id="m-operation" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> | Which condition to check: `Grounded` or `UpsideDown`. |
-| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> | Value when the condition holds (default 1). |
+| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> | <span className="api-desc">Value when the condition doesn't hold (default 0).</span> |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Weight of the rule. Only matters for preferred rules.</span> |
+| <Link id="m-operation" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> | <span className="api-desc">Which condition to check: `Grounded` or `UpsideDown`.</span> |
+| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> | <span className="api-desc">Value when the condition holds (default 1).</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Prefab scoring component for schmeechees: one value when the schmeechee is groun
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes a `Schmeechee.Operation` rule with these values, weighted by `multiplier`. |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Names the GameObject "Schmee Grounded" or "Schmee Upside Down". |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | <span className="api-desc">Makes a `Schmeechee.Operation` rule with these values, weighted by `multiplier`.</span> |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | <span className="api-desc">Names the GameObject "Schmee Grounded" or "Schmee Upside Down".</span> |

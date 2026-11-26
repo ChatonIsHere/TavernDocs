@@ -29,4 +29,8 @@ What a stat upgrade does to the related base stat: nothing, raise it by the upgr
 
 Members of other types that take, return or hold a `StatIncreaseType`:
 
+<div className="api-used-in">
+
 [`StatUpgradeTarget.onUpgradeIncrease`](/mod/game-api/types/alta-stats-effects/statupgradetarget#m-onupgradeincrease).
+
+</div>

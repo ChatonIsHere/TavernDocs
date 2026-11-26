@@ -22,18 +22,18 @@ Settings for `ActiveWander` and `ActiveBlockCanceleableWander`: walk to a random
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentWanderSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentWanderSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> | Backing field for `HeuristicMaximum` (default 20000). |
-| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> | If true, the wander cancels as soon as the walker is blocked. |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> | Backing field for `IsUsingTarget`. |
+| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> | <span className="api-desc">Backing field for `HeuristicMaximum` (default 20000).</span> |
+| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> | <span className="api-desc">If true, the wander cancels as soon as the walker is blocked.</span> |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> | <span className="api-desc">Backing field for `IsUsingTarget`.</span> |
 
 </details>
 
@@ -41,11 +41,11 @@ Settings for `ActiveWander` and `ActiveBlockCanceleableWander`: walk to a random
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> | Search length for the pathfinder's constant path, which limits how far away the random point can be. |
-| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> | Whether the action is scored and run against a target. With the blockable wander, losing the target cancels it. |
+| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> | <span className="api-desc">Search length for the pathfinder's constant path, which limits how far away the random point can be.</span> |
+| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> | <span className="api-desc">Whether the action is scored and run against a target. With the blockable wander, losing the target cancels it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds `ActiveBlockCanceleableWander` if `isCancelingOnBlocked` is on, otherwise `ActiveWander`, using a target only if `IsUsingTarget`. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds `ActiveBlockCanceleableWander` if `isCancelingOnBlocked` is on, otherwise `ActiveWander`, using a target only if `IsUsingTarget`.</span> |

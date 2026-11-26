@@ -22,4 +22,4 @@ Marks a method as a build test. Nothing in the server build looks for it, so it'
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildTestAttribute()"}</code> | Creates a `BuildTestAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"BuildTestAttribute()"}</code> | <span className="api-desc">Creates a `BuildTestAttribute` with default values.</span> |

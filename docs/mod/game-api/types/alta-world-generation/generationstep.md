@@ -22,10 +22,10 @@ Base component for one step of PAGaC generation, such as `BuildingRooms`, `Decay
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GenerationStep()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected GenerationStep()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"abstract void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | Does this step's work on the given `GenerationBase`'s grid. |
+| <Link id="m-run" /><code>{"abstract void Run("}<Link to="/mod/game-api/types/alta-world-generation/generationbase-alta-pagac">{"GenerationBase"}</Link>{" generationBase)"}</code> | <span className="api-desc">Does this step's work on the given `GenerationBase`'s grid.</span> |

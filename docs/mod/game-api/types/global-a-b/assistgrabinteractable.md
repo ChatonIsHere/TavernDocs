@@ -22,16 +22,16 @@ An `Interactable` that grab assist can pull toward the hand. `GrabAssistControll
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AssistGrabInteractable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AssistGrabInteractable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> | Returns `typeof(Interactable)`, so entity replacement treats this as a plain `Interactable`. |
+| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> | <span className="api-desc">Returns `typeof(Interactable)`, so entity replacement treats this as a plain `Interactable`.</span> |
 
 </details>
 
@@ -39,4 +39,8 @@ An `Interactable` that grab assist can pull toward the hand. `GrabAssistControll
 
 Members of other types that take, return or hold a `AssistGrabInteractable`:
 
+<div className="api-used-in">
+
 [`GrabAssistController.GetAssistGrabTargetScore`](/mod/game-api/types/global-e-h/grabassistcontroller#m-getassistgrabtargetscore).
+
+</div>

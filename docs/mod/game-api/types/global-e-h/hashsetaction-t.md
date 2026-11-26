@@ -22,16 +22,16 @@ Base for game task actions whose filters are sets built on first use. An empty s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected HashSetAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected HashSetAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | Set once `Initialize` has run, on the first `IsValid` call. |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | <span className="api-desc">Set once `Initialize` has run, on the first `IsValid` call.</span> |
 
 </details>
 
@@ -39,6 +39,6 @@ Base for game task actions whose filters are sets built on first use. An empty s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Runs `Initialize` the first time, then the normal argument check. |
-| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> | Builds the subclass's sets. Called once, the first time `IsValid` runs. |
-| <Link id="m-isskippingout" /><code>{"protected bool IsSkippingOut<TSet>(TSet value, HashSet<TSet> set)"}</code> | True when the set has entries and the value isn't one of them. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | <span className="api-desc">Runs `Initialize` the first time, then the normal argument check.</span> |
+| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> | <span className="api-desc">Builds the subclass's sets. Called once, the first time `IsValid` runs.</span> |
+| <Link id="m-isskippingout" /><code>{"protected bool IsSkippingOut<TSet>(TSet value, HashSet<TSet> set)"}</code> | <span className="api-desc">True when the set has entries and the value isn't one of them.</span> |

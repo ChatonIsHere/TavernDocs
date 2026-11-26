@@ -49,4 +49,8 @@ Why a dock accepted or refused a pickup: `Ok`, or a reason such as wrong item, t
 
 Members of other types that take, return or hold a `AllowedResult`:
 
+<div className="api-used-in">
+
 [`PickupDock.CheckAllowed`](/mod/game-api/types/alta-items/pickupdock#m-checkallowed), [`PickupDocker.DockInto`](/mod/game-api/types/alta-items/pickupdocker#m-dockinto), [`Pickup.DockInto`](/mod/game-api/types/global-p/pickup#m-dockinto).
+
+</div>

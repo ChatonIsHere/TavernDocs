@@ -23,16 +23,16 @@ Fader for a network entity: when the scene destroys the entity (not on chunk unl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FadeInOutNetworkEntity()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FadeInOutNetworkEntity()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`, set from the same GameObject. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | <span className="api-desc">Backing field for `Entity`, set from the same GameObject.</span> |
 
 </details>
 
@@ -40,19 +40,19 @@ Fader for a network entity: when the scene destroys the entity (not on chunk unl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entity-2" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The `NetworkEntity` on the same GameObject. |
+| <Link id="m-entity-2" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | <span className="api-desc">The `NetworkEntity` on the same GameObject.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Client: copies the fade material and hooks the entity's `DestroyedByScene` event to `FadeOut`. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Client: copies the fade material and hooks the entity's `DestroyedByScene` event to `FadeOut`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fadeout" /><code>{"private void FadeOut("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Handler for `DestroyedByScene`. Plays the fade-out unless the entity is only being unloaded. |
+| <Link id="m-fadeout" /><code>{"private void FadeOut("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Handler for `DestroyedByScene`. Plays the fade-out unless the entity is only being unloaded.</span> |
 
 </details>

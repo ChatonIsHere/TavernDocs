@@ -21,21 +21,21 @@ Test driver for a bird's animator: pushes inspector values into the animator eac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MediumBird()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MediumBird()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-aggression" /><code>{"private float aggression"}</code> | Value for the Aggression parameter. |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> | Whether the bird moves forward each frame. |
-| <Link id="m-passiveaction" /><code>{"private float passiveAction"}</code> | Value for the Idle Behaviour parameter. |
-| <Link id="m-passiveweight" /><code>{"private float passiveWeight"}</code> | Weight of animator layer 1. |
-| <Link id="m-speed" /><code>{"private float speed"}</code> | Value for the Speed parameter. |
-| <Link id="m-speedmovement" /><code>{"private float speedMovement"}</code> | Forward speed when moving. |
+| <Link id="m-aggression" /><code>{"private float aggression"}</code> | <span className="api-desc">Value for the Aggression parameter.</span> |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> | <span className="api-desc">Whether the bird moves forward each frame.</span> |
+| <Link id="m-passiveaction" /><code>{"private float passiveAction"}</code> | <span className="api-desc">Value for the Idle Behaviour parameter.</span> |
+| <Link id="m-passiveweight" /><code>{"private float passiveWeight"}</code> | <span className="api-desc">Weight of animator layer 1.</span> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> | <span className="api-desc">Value for the Speed parameter.</span> |
+| <Link id="m-speedmovement" /><code>{"private float speedMovement"}</code> | <span className="api-desc">Forward speed when moving.</span> |
 
 </details>
 
@@ -43,16 +43,16 @@ Test driver for a bird's animator: pushes inspector values into the animator eac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code><Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" Animator { get; private set; }"}</code> | The `NetworkAnimator` found in the children. |
+| <Link id="m-animator" /><code><Link to="/mod/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" Animator { get; private set; }"}</code> | <span className="api-desc">The `NetworkAnimator` found in the children.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the network animator. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Sets the Speed, Idle Behaviour and Aggression parameters and layer 1 weight, and moves forward if `isMoving`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Finds the network animator.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Sets the Speed, Idle Behaviour and Aggression parameters and layer 1 weight, and moves forward if `isMoving`.</span> |
 
 </details>

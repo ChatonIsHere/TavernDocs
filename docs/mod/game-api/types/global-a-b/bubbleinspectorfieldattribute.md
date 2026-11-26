@@ -22,10 +22,10 @@ Marks a field or property to show in the in-game bubble inspector, read by `Bubb
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/mod/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> | Creates a `BubbleInspectorFieldAttribute` from `interaction`. |
+| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/mod/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> | <span className="api-desc">Creates a `BubbleInspectorFieldAttribute` from `interaction`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-interaction" /><code><Link to="/mod/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" Interaction { get; }"}</code> | How the value can be interacted with in the bubble (`InteractionType.None` by default). |
+| <Link id="m-interaction" /><code><Link to="/mod/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" Interaction { get; }"}</code> | <span className="api-desc">How the value can be interacted with in the bubble (`InteractionType.None` by default).</span> |

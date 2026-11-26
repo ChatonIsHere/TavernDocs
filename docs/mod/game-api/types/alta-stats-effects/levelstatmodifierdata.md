@@ -23,10 +23,10 @@ Save data for a `LevelStatModifier`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LevelStatModifierData()"}</code> | Creates a `LevelStatModifierData` with default values. |
+| <Link id="m-ctor" /><code>{"LevelStatModifierData()"}</code> | <span className="api-desc">Creates a `LevelStatModifierData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlevel" /><code>{"int currentLevel"}</code> | The saved level. |
+| <Link id="m-currentlevel" /><code>{"int currentLevel"}</code> | <span className="api-desc">The saved level.</span> |

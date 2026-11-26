@@ -22,20 +22,20 @@ AI hook that sets a networked animator layer weight on the creature when the act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimatedLayerAiHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimatedLayerAiHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islerp" /><code>{"private bool isLerp"}</code> | Whether the weight blends to new values. Default true. |
-| <Link id="m-layername" /><code>{"private string layerName"}</code> | Animator layer name. |
-| <Link id="m-weightonend" /><code>{"private float weightOnEnd"}</code> | Weight set when the action ends. Default 1. |
-| <Link id="m-weightonstart" /><code>{"private float weightOnStart"}</code> | Weight set when the action starts. Default 1. |
-| <Link id="m-weights" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/mod/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> weights"}</code> | The networked layer weight per creature, kept until the action ends. |
+| <Link id="m-islerp" /><code>{"private bool isLerp"}</code> | <span className="api-desc">Whether the weight blends to new values. Default true.</span> |
+| <Link id="m-layername" /><code>{"private string layerName"}</code> | <span className="api-desc">Animator layer name.</span> |
+| <Link id="m-weightonend" /><code>{"private float weightOnEnd"}</code> | <span className="api-desc">Weight set when the action ends. Default 1.</span> |
+| <Link id="m-weightonstart" /><code>{"private float weightOnStart"}</code> | <span className="api-desc">Weight set when the action starts. Default 1.</span> |
+| <Link id="m-weights" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/mod/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> weights"}</code> | <span className="api-desc">The networked layer weight per creature, kept until the action ends.</span> |
 
 </details>
 
@@ -43,5 +43,5 @@ AI hook that sets a networked animator layer weight on the creature when the act
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Sets the layer weight to `weightOnEnd`. |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Sets the layer weight to `weightOnStart`, lerped if `isLerp` is set. |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Sets the layer weight to `weightOnEnd`.</span> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Sets the layer weight to `weightOnStart`, lerped if `isLerp` is set.</span> |

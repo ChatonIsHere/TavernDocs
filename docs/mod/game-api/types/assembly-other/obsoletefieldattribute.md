@@ -22,4 +22,4 @@ Inspector attribute that marks a serialized field as obsolete. No behaviour of i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ObsoleteFieldAttribute()"}</code> | Creates an `ObsoleteFieldAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"ObsoleteFieldAttribute()"}</code> | <span className="api-desc">Creates an `ObsoleteFieldAttribute` with default values.</span> |

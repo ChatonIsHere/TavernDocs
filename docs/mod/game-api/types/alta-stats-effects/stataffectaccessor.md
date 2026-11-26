@@ -21,17 +21,17 @@ Component that points area effects at a `StatManager`, but only for the area fil
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatAffectAccessor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StatAffectAccessor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filters"}</code> | Which `AreaFilter` flags may affect this manager. |
-| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager"}</code> | The stat manager area effects should change. |
+| <Link id="m-filters" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filters"}</code> | <span className="api-desc">Which `AreaFilter` flags may affect this manager.</span> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager"}</code> | <span className="api-desc">The stat manager area effects should change.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Component that points area effects at a `StatManager`, but only for the area fil
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isaffecting" /><code>{"bool IsAffecting("}<Link to="/mod/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filter, out "}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | If the filter overlaps the accepted filters, returns true and gives the manager. |
+| <Link id="m-isaffecting" /><code>{"bool IsAffecting("}<Link to="/mod/game-api/types/alta-stats-effects/areafilter">{"AreaFilter"}</Link>{" filter, out "}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | <span className="api-desc">If the filter overlaps the accepted filters, returns true and gives the manager.</span> |

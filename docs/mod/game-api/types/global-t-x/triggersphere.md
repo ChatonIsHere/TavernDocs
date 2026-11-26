@@ -21,16 +21,16 @@ A `TriggerShape` that adds its own sphere trigger collider when initialised from
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerSphere()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TriggerSphere()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> | The sphere collider added by `Initialize`. |
+| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> | <span className="api-desc">The sphere collider added by `Initialize`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ A `TriggerShape` that adds its own sphere trigger collider when initialised from
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | The sphere's radius, or 0 before `Initialize`. |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | <span className="api-desc">The sphere's radius, or 0 before `Initialize`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize(float radius)"}</code> | Adds a trigger sphere collider with the given radius and renames the object. |
+| <Link id="m-initialize" /><code>{"void Initialize(float radius)"}</code> | <span className="api-desc">Adds a trigger sphere collider with the given radius and renames the object.</span> |

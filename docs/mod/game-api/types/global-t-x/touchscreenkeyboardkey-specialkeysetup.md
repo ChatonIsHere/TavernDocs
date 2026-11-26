@@ -21,17 +21,17 @@ Event to run for one key code on a touch screen keyboard key, used for special k
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> | Creates a `TouchScreenKeyboardKey.SpecialKeySetup` with default values. |
+| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> | <span className="api-desc">Creates a `TouchScreenKeyboardKey.SpecialKeySetup` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"private UnityEvent setup"}</code> | Backing field for `Setup`. |
-| <Link id="m-targetkey" /><code>{"private KeyCode targetKey"}</code> | Backing field for `TargetKey`. |
+| <Link id="m-setup" /><code>{"private UnityEvent setup"}</code> | <span className="api-desc">Backing field for `Setup`.</span> |
+| <Link id="m-targetkey" /><code>{"private KeyCode targetKey"}</code> | <span className="api-desc">Backing field for `TargetKey`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ Event to run for one key code on a touch screen keyboard key, used for special k
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup-2" /><code>{"UnityEvent Setup { get; }"}</code> | Event invoked for the matching key. |
-| <Link id="m-targetkey-2" /><code>{"KeyCode TargetKey { get; }"}</code> | Key code this entry applies to. |
+| <Link id="m-setup-2" /><code>{"UnityEvent Setup { get; }"}</code> | <span className="api-desc">Event invoked for the matching key.</span> |
+| <Link id="m-targetkey-2" /><code>{"KeyCode TargetKey { get; }"}</code> | <span className="api-desc">Key code this entry applies to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpecialKeySetup`:
 
+<div className="api-used-in">
+
 [`TouchScreenKeyboardKey.onPressChange`](/mod/game-api/types/global-t-x/touchscreenkeyboardkey#m-onpresschange), [`TouchScreenKeyboardKey.specialSetups`](/mod/game-api/types/global-t-x/touchscreenkeyboardkey#m-specialsetups).
+
+</div>

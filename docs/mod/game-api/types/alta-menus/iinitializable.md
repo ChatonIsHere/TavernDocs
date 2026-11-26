@@ -20,4 +20,4 @@ Internal interface for something with an `Initialize` step.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Runs the object's setup. |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Runs the object's setup.</span> |

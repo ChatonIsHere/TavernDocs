@@ -20,10 +20,10 @@ A body holding one comment, used when giving a reward.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> | Creates a `GiftRewardComment` with default values. |
+| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> | <span className="api-desc">Creates a `GiftRewardComment` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> | The comment text. |
+| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> | <span className="api-desc">The comment text.</span> |

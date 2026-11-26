@@ -31,4 +31,8 @@ Effects the smelter plays and syncs to clients: starting and stopping operation,
 
 Members of other types that take, return or hold a `AnimationEvents`:
 
+<div className="api-used-in">
+
 [`Smelter.PlayEffect`](/mod/game-api/types/alta-crafting/smelter#m-playeffect), [`Smelter.syncEffects`](/mod/game-api/types/alta-crafting/smelter#m-synceffects), [`Smelter.SyncEffects`](/mod/game-api/types/alta-crafting/smelter#m-synceffects-2).
+
+</div>

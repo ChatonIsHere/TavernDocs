@@ -21,17 +21,17 @@ Sets a uniform local scale between two values from a 0 to 1 progress value. Driv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScaleLerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ScaleLerp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-scale0" /><code>{"private float scale0"}</code> | Scale at progress 0. |
-| <Link id="m-scale1" /><code>{"private float scale1"}</code> | Scale at progress 1. |
+| <Link id="m-scale0" /><code>{"private float scale0"}</code> | <span className="api-desc">Scale at progress 0.</span> |
+| <Link id="m-scale1" /><code>{"private float scale1"}</code> | <span className="api-desc">Scale at progress 1.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Sets a uniform local scale between two values from a 0 to 1 progress value. Driv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> | Sets the local scale to the lerp of `scale0` and `scale1` by `progress`. |
+| <Link id="m-setscale" /><code>{"void SetScale(float progress)"}</code> | <span className="api-desc">Sets the local scale to the lerp of `scale0` and `scale1` by `progress`.</span> |

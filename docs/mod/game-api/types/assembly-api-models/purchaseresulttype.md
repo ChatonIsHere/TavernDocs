@@ -33,4 +33,8 @@ Outcome of a shop purchase, such as success, not enough shards, already owned or
 
 Members of other types that take, return or hold a `PurchaseResultType`:
 
+<div className="api-used-in">
+
 [`PurchaseResult.PurchaseResult`](/mod/game-api/types/assembly-api-models/purchaseresult#m-ctor-2), [`PurchaseResult.Result`](/mod/game-api/types/assembly-api-models/purchaseresult#m-result).
+
+</div>

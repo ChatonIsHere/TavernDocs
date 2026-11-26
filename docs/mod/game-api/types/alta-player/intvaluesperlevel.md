@@ -21,4 +21,4 @@ Serializable list of whole number values, one per skill level (a `ValuePerLevel<
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> | Creates an `IntValuesPerLevel` with default values. |
+| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> | <span className="api-desc">Creates an `IntValuesPerLevel` with default values.</span> |

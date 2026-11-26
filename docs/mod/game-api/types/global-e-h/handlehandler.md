@@ -22,4 +22,4 @@ Serializable `UnityEvent` that passes a float.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandleHandler()"}</code> | Creates a `HandleHandler` with default values. |
+| <Link id="m-ctor" /><code>{"HandleHandler()"}</code> | <span className="api-desc">Creates a `HandleHandler` with default values.</span> |

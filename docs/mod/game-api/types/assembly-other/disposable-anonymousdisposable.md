@@ -22,17 +22,17 @@ Disposable returned by `Disposable.Create`: runs an action the first time it's d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnonymousDisposable(Action dispose)"}</code> | Creates a `Disposable.AnonymousDisposable` from `dispose`. |
+| <Link id="m-ctor" /><code>{"AnonymousDisposable(Action dispose)"}</code> | <span className="api-desc">Creates a `Disposable.AnonymousDisposable` from `dispose`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"private readonly Action dispose"}</code> | The action to run. |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | Whether it has already run. |
+| <Link id="m-dispose" /><code>{"private readonly Action dispose"}</code> | <span className="api-desc">The action to run.</span> |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | <span className="api-desc">Whether it has already run.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Disposable returned by `Disposable.Create`: runs an action the first time it's d
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> | Runs the action, only the first time. |
+| <Link id="m-dispose-2" /><code>{"void Dispose()"}</code> | <span className="api-desc">Runs the action, only the first time.</span> |

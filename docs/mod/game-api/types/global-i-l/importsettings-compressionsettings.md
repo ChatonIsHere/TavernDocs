@@ -21,17 +21,21 @@ Compression options in an `ImportSettings` platform entry.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CompressionSettings()"}</code> | Creates an `ImportSettings.CompressionSettings` with default values. |
+| <Link id="m-ctor" /><code>{"CompressionSettings()"}</code> | <span className="api-desc">Creates an `ImportSettings.CompressionSettings` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isignored" /><code>{"bool isIgnored"}</code> | Whether compression is left alone for matching assets. |
-| <Link id="m-isoverriden" /><code>{"bool isOverriden"}</code> | Whether compression is overridden for matching assets. |
+| <Link id="m-isignored" /><code>{"bool isIgnored"}</code> | <span className="api-desc">Whether compression is left alone for matching assets.</span> |
+| <Link id="m-isoverriden" /><code>{"bool isOverriden"}</code> | <span className="api-desc">Whether compression is overridden for matching assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CompressionSettings`:
 
+<div className="api-used-in">
+
 [`ImportSettings.PlatformSettings.compression`](/mod/game-api/types/global-i-l/importsettings-platformsettings#m-compression).
+
+</div>

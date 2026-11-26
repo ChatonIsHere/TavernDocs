@@ -21,4 +21,4 @@ Implemented by AI that has a `ViewCone` for sight checks.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-viewcone" /><code><Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" { get; }"}</code> | The view cone used to decide what this agent can see. |
+| <Link id="m-viewcone" /><code><Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" "}<Link to="/mod/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" { get; }"}</code> | <span className="api-desc">The view cone used to decide what this agent can see.</span> |

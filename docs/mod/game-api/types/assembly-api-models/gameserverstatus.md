@@ -28,4 +28,8 @@ Online state of a game server in the Alta API: forced offline, offline or online
 
 Members of other types that take, return or hold a `GameServerStatus`:
 
+<div className="api-used-in">
+
 [`ServerStatusRequest.Status`](/mod/game-api/types/assembly-api-models/serverstatusrequest#m-status), [`FleetInfo.Status`](/mod/game-api/types/assembly-api-models/fleetinfo#m-status), [`GameServerInfo.FinalStatus`](/mod/game-api/types/assembly-api-models/gameserverinfo#m-finalstatus), [`GameServerInfo.ServerStatus`](/mod/game-api/types/assembly-api-models/gameserverinfo#m-serverstatus), [`GroupServerInfo.Status`](/mod/game-api/types/assembly-api-models/groupserverinfo#m-status).
+
+</div>

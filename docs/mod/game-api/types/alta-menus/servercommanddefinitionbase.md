@@ -22,16 +22,20 @@ Base for quick access menu settings that run a server command when used, such as
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ServerCommandDefinitionBase()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ServerCommandDefinitionBase()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runcommandonclient" /><code>{"abstract void RunCommandOnClient()"}</code> | Client: sends the command. `ServerCommandDefinition` routes its command string through `CommandSync.Instance`. |
+| <Link id="m-runcommandonclient" /><code>{"abstract void RunCommandOnClient()"}</code> | <span className="api-desc">Client: sends the command. `ServerCommandDefinition` routes its command string through `CommandSync.Instance`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ServerCommandDefinitionBase`:
 
+<div className="api-used-in">
+
 [`ServerCommandAction.command`](/mod/game-api/types/alta-menus/servercommandaction#m-command).
+
+</div>

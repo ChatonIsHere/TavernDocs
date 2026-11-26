@@ -21,12 +21,12 @@ Console module `websocket`: lets a websocket console client list and subscribe t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> | Creates a `WebSocketConsoleCommandModule` with default values. |
+| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> | <span className="api-desc">Creates a `WebSocketConsoleCommandModule` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-subscribe" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Subscribe(string eventType)"}</code> | `websocket subscribe`: subscribes the calling websocket to an event type. Throws if not called over websocket. |
-| <Link id="m-subscriptions" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Subscriptions()"}</code> | `websocket subscriptions`: lists all registered console events. |
-| <Link id="m-unsubscribe" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Unsubscribe(string eventType)"}</code> | `websocket unsubscribe`: unsubscribes the calling websocket from an event type. Throws if not called over websocket. |
+| <Link id="m-subscribe" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Subscribe(string eventType)"}</code> | <span className="api-desc">`websocket subscribe`: subscribes the calling websocket to an event type. Throws if not called over websocket.</span> |
+| <Link id="m-subscriptions" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/iconsoleevent">{"IConsoleEvent"}</Link>{"> Subscriptions()"}</code> | <span className="api-desc">`websocket subscriptions`: lists all registered console events.</span> |
+| <Link id="m-unsubscribe" /><code>{"static "}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler-subscriptionresult">{"WebSocketCommandHandler.SubscriptionResult"}</Link>{" Unsubscribe(string eventType)"}</code> | <span className="api-desc">`websocket unsubscribe`: unsubscribes the calling websocket from an event type. Throws if not called over websocket.</span> |

@@ -23,17 +23,17 @@ The state a player starts in on their first join. Its only job is to move them o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> | Creates a `FirstJoinState` with default values. |
+| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> | <span className="api-desc">Creates a `FirstJoinState` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "First Join State". |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.FirstJoin`. |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | <span className="api-desc">"First Join State".</span> |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | <span className="api-desc">`PlayerStateType.FirstJoin`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> | Triggers the move to customization for normal players when the server has customization on and not skipped, otherwise to playing. |
+| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> | <span className="api-desc">Triggers the move to customization for normal players when the server has customization on and not skipped, otherwise to playing.</span> |

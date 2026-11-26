@@ -21,11 +21,15 @@ A light puzzle beam source, such as `PuzzleLightBeam` or `PuzzleLightMirror`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> | How far the beam reaches. |
-| <Link id="m-mask" /><code>{"LayerMask Mask { get; }"}</code> | Layers the beam can hit. |
+| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> | <span className="api-desc">How far the beam reaches.</span> |
+| <Link id="m-mask" /><code>{"LayerMask Mask { get; }"}</code> | <span className="api-desc">Layers the beam can hit.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ILightEmitter`:
 
+<div className="api-used-in">
+
 [`Beam.Beam`](/mod/game-api/types/global-a-b/beam#m-ctor), [`Beam.Emitter`](/mod/game-api/types/global-a-b/beam#m-emitter).
+
+</div>

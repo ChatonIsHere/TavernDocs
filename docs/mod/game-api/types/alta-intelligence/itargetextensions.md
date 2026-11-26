@@ -21,4 +21,4 @@ Extension methods on `ITarget`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | True if the target isn't null or a destroyed Unity object, and `IsAlive` is true. |
+| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">True if the target isn't null or a destroyed Unity object, and `IsAlive` is true.</span> |

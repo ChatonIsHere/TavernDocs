@@ -29,4 +29,8 @@ Flags for how `SplineDecorator` scales placed objects: stretch along Z to reach 
 
 Members of other types that take, return or hold a `ScaleMode`:
 
+<div className="api-used-in">
+
 [`SplineDecorator.scaleMode`](/mod/game-api/types/alta-utilities/splinedecorator#m-scalemode).
+
+</div>

@@ -22,16 +22,16 @@ Network entity holding a list of simple spawners, each spawning a prefab or dist
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MultipleSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MultipleSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawners" /><code>{"private List<"}<Link to="/mod/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> | Backing field for `Spawners`. |
+| <Link id="m-spawners" /><code>{"private List<"}<Link to="/mod/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> | <span className="api-desc">Backing field for `Spawners`.</span> |
 
 </details>
 
@@ -39,10 +39,10 @@ Network entity holding a list of simple spawners, each spawning a prefab or dist
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> | The simple spawners to run. |
+| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> | <span className="api-desc">The simple spawners to run.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn()"}</code> | Server: runs every spawner in the list, if the entity is in a chunk. |
+| <Link id="m-spawn" /><code>{"void Spawn()"}</code> | <span className="api-desc">Server: runs every spawner in the list, if the entity is in a chunk.</span> |

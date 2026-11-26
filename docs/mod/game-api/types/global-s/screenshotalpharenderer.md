@@ -21,10 +21,10 @@ Renderer for the `ScreenShotAlpha` post effect, using the `Hidden/DepthToAlpha` 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScreenShotAlphaRenderer()"}</code> | Creates a `ScreenShotAlphaRenderer` with default values. |
+| <Link id="m-ctor" /><code>{"ScreenShotAlphaRenderer()"}</code> | <span className="api-desc">Creates a `ScreenShotAlphaRenderer` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-render" /><code>{"override void Render(PostProcessRenderContext context)"}</code> | Clamps the distances to the camera's far plane, sets the shader values and blits the image through the shader. |
+| <Link id="m-render" /><code>{"override void Render(PostProcessRenderContext context)"}</code> | <span className="api-desc">Clamps the distances to the camera's far plane, sets the shader values and blits the image through the shader.</span> |

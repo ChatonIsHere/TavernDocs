@@ -28,4 +28,8 @@ Flags for a forest graph edge: a normal path, a land bridge or a water bridge. U
 
 Members of other types that take, return or hold a `EdgeType`:
 
+<div className="api-used-in">
+
 [`Edge.Edge`](/mod/game-api/types/alta-world-generation/edge#m-ctor), [`Edge.Is`](/mod/game-api/types/alta-world-generation/edge#m-is), [`Edge.IsCheck`](/mod/game-api/types/alta-world-generation/edge#m-ischeck), [`Edge.Type`](/mod/game-api/types/alta-world-generation/edge#m-type), [`ForestEncounters.edgeType`](/mod/game-api/types/alta-world-generation/forestencounters#m-edgetype), [`ForestGeneration.CreateEdge`](/mod/game-api/types/alta-world-generation/forestgeneration#m-createedge), [`ForestPopulationArea.edgeType`](/mod/game-api/types/alta-world-generation/forestpopulationarea#m-edgetype), [`LandBridgeModifier.floorType`](/mod/game-api/types/alta-world-generation/landbridgemodifier#m-floortype), [`DistanceToPathFilter.type`](/mod/game-api/types/global-c-d/distancetopathfilter#m-type), [`ElevationFromPath.edgeType`](/mod/game-api/types/global-e-h/elevationfrompath#m-edgetype).
+
+</div>

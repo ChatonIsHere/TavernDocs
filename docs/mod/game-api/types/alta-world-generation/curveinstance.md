@@ -21,10 +21,10 @@ Runtime instance of the `Curve` plugin part: remaps every cell through an animat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CurveInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/curve">{"Curve"}</Link>{" part)"}</code> | Creates a `CurveInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"CurveInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/curve">{"Curve"}</Link>{" part)"}</code> | <span className="api-desc">Creates a `CurveInstance` from `plugin` and `part`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | Replaces each cell with the curve evaluated at its value. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">Replaces each cell with the curve evaluated at its value.</span> |

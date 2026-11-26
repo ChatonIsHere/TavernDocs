@@ -22,25 +22,25 @@ Controller extension that fires `ModCalled` when the debug mod button is pressed
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModHands()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ModHands()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modcalled" /><code>{"static event "}<Link to="/mod/game-api/types/global-m-o/modhands-modevent">{"ModHands.ModEvent"}</Link>{" ModCalled"}</code> | Static event raised with the controller when a player triggers the debug mod input. |
+| <Link id="m-modcalled" /><code>{"static event "}<Link to="/mod/game-api/types/global-m-o/modhands-modevent">{"ModHands.ModEvent"}</Link>{" ModCalled"}</code> | <span className="api-desc">Static event raised with the controller when a player triggers the debug mod input.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> | Hooks the debug mod action if the user has `debug_features` and a controller is set. |
+| <Link id="m-initializecontrollerextension" /><code>{"override void InitializeControllerExtension()"}</code> | <span className="api-desc">Hooks the debug mod action if the user has `debug_features` and a controller is set.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonpressed" /><code>{"private void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Raises `ModCalled` with this controller if grab is held when the debug mod action starts. |
+| <Link id="m-buttonpressed" /><code>{"private void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | <span className="api-desc">Raises `ModCalled` with this controller if grab is held when the debug mod action starts.</span> |
 
 </details>

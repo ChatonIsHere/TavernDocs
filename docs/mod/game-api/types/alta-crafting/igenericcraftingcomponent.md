@@ -21,17 +21,21 @@ Something a generic crafting station accepts when a player drops it in: a recipe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isaddingproject" /><code>{"bool IsAddingProject { get; }"}</code> | True if this starts a project. The station only takes it when this matches whether the station is empty. |
+| <Link id="m-isaddingproject" /><code>{"bool IsAddingProject { get; }"}</code> | <span className="api-desc">True if this starts a project. The station only takes it when this matches whether the station is empty.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-released" /><code>{"void Released("}<Link to="/mod/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | Called by the station when the player lets go of the item over it and it's valid to add. |
-| <Link id="m-track" /><code>{"void Track("}<Link to="/mod/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | Called by the station each update while the item is held inside its trigger. |
+| <Link id="m-released" /><code>{"void Released("}<Link to="/mod/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | <span className="api-desc">Called by the station when the player lets go of the item over it and it's valid to add.</span> |
+| <Link id="m-track" /><code>{"void Track("}<Link to="/mod/game-api/types/alta-crafting/genericcraftingstation">{"GenericCraftingStation"}</Link>{" station)"}</code> | <span className="api-desc">Called by the station each update while the item is held inside its trigger.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IGenericCraftingComponent`:
 
+<div className="api-used-in">
+
 [`GenericCraftingStation.PickupColliders.Component`](/mod/game-api/types/alta-crafting/genericcraftingstation-pickupcolliders#m-component), [`GenericCraftingStation.PickupColliders.PickupColliders`](/mod/game-api/types/alta-crafting/genericcraftingstation-pickupcolliders#m-ctor-2).
+
+</div>

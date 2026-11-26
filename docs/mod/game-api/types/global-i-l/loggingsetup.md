@@ -21,15 +21,15 @@ Scene component that sets up the game's logging when it wakes.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LoggingSetup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LoggingSetup()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Calls `Debug.SetupLogging`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Calls `Debug.SetupLogging`.</span> |
 
 </details>

@@ -21,4 +21,4 @@ Property attribute that marks a string field as a scene name, probably so the in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneNameAttribute()"}</code> | Creates a `SceneNameAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"SceneNameAttribute()"}</code> | <span className="api-desc">Creates a `SceneNameAttribute` with default values.</span> |

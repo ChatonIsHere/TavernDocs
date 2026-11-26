@@ -18,12 +18,12 @@ Static helper that keeps named Unity profiler markers, only in debug builds. As 
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-markers" /><code>{"private static readonly Dictionary<string, ProfilerMarker> Markers"}</code> | The markers by name. |
+| <Link id="m-markers" /><code>{"private static readonly Dictionary<string, ProfilerMarker> Markers"}</code> | <span className="api-desc">The markers by name.</span> |
 
 </details>
 
@@ -31,5 +31,5 @@ Static helper that keeps named Unity profiler markers, only in debug builds. As 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addprofile" /><code>{"static void AddProfile(string name)"}</code> | Debug builds: creates a `ProfilerMarker` named "[ProfilingSession] " plus the name if it doesn't exist yet. |
-| <Link id="m-endprofile" /><code>{"static void EndProfile(string name)"}</code> | Debug builds: looks up the named marker but does nothing with it. |
+| <Link id="m-addprofile" /><code>{"static void AddProfile(string name)"}</code> | <span className="api-desc">Debug builds: creates a `ProfilerMarker` named "[ProfilingSession] " plus the name if it doesn't exist yet.</span> |
+| <Link id="m-endprofile" /><code>{"static void EndProfile(string name)"}</code> | <span className="api-desc">Debug builds: looks up the named marker but does nothing with it.</span> |

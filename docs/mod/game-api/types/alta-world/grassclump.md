@@ -22,16 +22,16 @@ Picks a random mesh for a grass clump at start and writes height-based vertex co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GrassClump()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"GrassClump()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availablemeshes" /><code>{"private Mesh[] availableMeshes"}</code> | Backing field for `AvailableMeshes`. |
+| <Link id="m-availablemeshes" /><code>{"private Mesh[] availableMeshes"}</code> | <span className="api-desc">Backing field for `AvailableMeshes`.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ Picks a random mesh for a grass clump at start and writes height-based vertex co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-availablemeshes-2" /><code>{"Mesh[] AvailableMeshes { get; set; }"}</code> | Meshes to pick from. |
+| <Link id="m-availablemeshes-2" /><code>{"Mesh[] AvailableMeshes { get; set; }"}</code> | <span className="api-desc">Meshes to pick from.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Picks a mesh, sets vertex colour red to half the vertex height (on the shared mesh) and turns shadows on. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Picks a mesh, sets vertex colour red to half the vertex height (on the shared mesh) and turns shadows on.</span> |
 
 </details>

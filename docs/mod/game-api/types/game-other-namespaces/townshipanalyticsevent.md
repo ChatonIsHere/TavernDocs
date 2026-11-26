@@ -22,4 +22,4 @@ Base for the game's analytics events. Adds the player's ID if given and server i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TownshipAnalyticsEvent(string name, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> | Creates a `TownshipAnalyticsEvent` from `name` and `player`. |
+| <Link id="m-ctor" /><code>{"protected TownshipAnalyticsEvent(string name, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player = null)"}</code> | <span className="api-desc">Creates a `TownshipAnalyticsEvent` from `name` and `player`.</span> |

@@ -20,16 +20,20 @@ Web API model that wraps a single JWT.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimpleTokenResultResponse(JwtSecurityToken token)"}</code> | Creates a `SimpleTokenResultResponse` from `token`. |
+| <Link id="m-ctor" /><code>{"SimpleTokenResultResponse(JwtSecurityToken token)"}</code> | <span className="api-desc">Creates a `SimpleTokenResultResponse` from `token`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> | The JWT. |
+| <Link id="m-token" /><code>{"JwtSecurityToken Token { get; set; }"}</code> | <span className="api-desc">The JWT.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SimpleTokenResultResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GenerateIdentityTokenAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-generateidentitytokenasync).
+
+</div>

@@ -22,27 +22,27 @@ A `Path` that moves an object along an arc around a pivot, for curved sliders an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BendPath()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BendPath()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>12 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-anglerange" /><code>{"private float angleRange"}</code> | Total angle of the arc in degrees (default 60). |
-| <Link id="m-facingdirection" /><code>{"private Vector3 facingDirection"}</code> | Local direction the moved object faces, turned along the arc. |
-| <Link id="m-initializedpivotdirection" /><code>{"private Vector3 initializedPivotDirection"}</code> | World direction to the pivot, cached by `Setup`. |
-| <Link id="m-minposition" /><code>{"private Vector3 minPosition"}</code> | Direction from the pivot to the start of the arc, cached by `Setup`. |
-| <Link id="m-needssetup" /><code>{"private bool needsSetup"}</code> | True until `Setup` has run. |
-| <Link id="m-pivot" /><code>{"private Vector3 pivot"}</code> | World pivot point, cached by `Setup`. |
-| <Link id="m-pivotdirection" /><code>{"private Vector3 pivotDirection"}</code> | Local direction from this transform to the pivot. |
-| <Link id="m-pivotdistance" /><code>{"private float pivotDistance"}</code> | Distance from this transform to the pivot. |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Arc radius the object is placed at. |
-| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> | Local axis the arc turns around. |
-| <Link id="m-selfrotation" /><code>{"private Quaternion selfRotation"}</code> | This transform's rotation, cached by `Setup`. |
-| <Link id="m-up" /><code>{"private Vector3 up"}</code> | World rotation axis, cached by `Setup`. |
+| <Link id="m-anglerange" /><code>{"private float angleRange"}</code> | <span className="api-desc">Total angle of the arc in degrees (default 60).</span> |
+| <Link id="m-facingdirection" /><code>{"private Vector3 facingDirection"}</code> | <span className="api-desc">Local direction the moved object faces, turned along the arc.</span> |
+| <Link id="m-initializedpivotdirection" /><code>{"private Vector3 initializedPivotDirection"}</code> | <span className="api-desc">World direction to the pivot, cached by `Setup`.</span> |
+| <Link id="m-minposition" /><code>{"private Vector3 minPosition"}</code> | <span className="api-desc">Direction from the pivot to the start of the arc, cached by `Setup`.</span> |
+| <Link id="m-needssetup" /><code>{"private bool needsSetup"}</code> | <span className="api-desc">True until `Setup` has run.</span> |
+| <Link id="m-pivot" /><code>{"private Vector3 pivot"}</code> | <span className="api-desc">World pivot point, cached by `Setup`.</span> |
+| <Link id="m-pivotdirection" /><code>{"private Vector3 pivotDirection"}</code> | <span className="api-desc">Local direction from this transform to the pivot.</span> |
+| <Link id="m-pivotdistance" /><code>{"private float pivotDistance"}</code> | <span className="api-desc">Distance from this transform to the pivot.</span> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Arc radius the object is placed at.</span> |
+| <Link id="m-rotationaxis" /><code>{"private Vector3 rotationAxis"}</code> | <span className="api-desc">Local axis the arc turns around.</span> |
+| <Link id="m-selfrotation" /><code>{"private Quaternion selfRotation"}</code> | <span className="api-desc">This transform's rotation, cached by `Setup`.</span> |
+| <Link id="m-up" /><code>{"private Vector3 up"}</code> | <span className="api-desc">World rotation axis, cached by `Setup`.</span> |
 
 </details>
 
@@ -50,14 +50,14 @@ A `Path` that moves an object along an arc around a pivot, for curved sliders an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getprogress" /><code>{"override float GetProgress(Transform transform)"}</code> | Returns 0 to 1 for where a transform sits along the arc, clamped at the ends. |
-| <Link id="m-settransform" /><code>{"override void SetTransform(Transform transform, float lerp)"}</code> | Places and rotates a transform on the arc at the given 0 to 1 progress. |
+| <Link id="m-getprogress" /><code>{"override float GetProgress(Transform transform)"}</code> | <span className="api-desc">Returns 0 to 1 for where a transform sits along the arc, clamped at the ends.</span> |
+| <Link id="m-settransform" /><code>{"override void SetTransform(Transform transform, float lerp)"}</code> | <span className="api-desc">Places and rotates a transform on the arc at the given 0 to 1 progress.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> | Caches the pivot point, axis and start direction from the current transform; runs on first use. |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> | <span className="api-desc">Caches the pivot point, axis and start direction from the current transform; runs on first use.</span> |
 
 </details>

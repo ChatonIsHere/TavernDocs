@@ -21,19 +21,19 @@ A JSON converter that can neither read nor write, so Json.NET falls back to defa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForceDefaultConverter()"}</code> | Creates a `ForceDefaultConverter` with default values. |
+| <Link id="m-ctor" /><code>{"ForceDefaultConverter()"}</code> | <span className="api-desc">Creates a `ForceDefaultConverter` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canread" /><code>{"override bool CanRead { get; }"}</code> | Always false, so the converter is skipped when reading. |
-| <Link id="m-canwrite" /><code>{"override bool CanWrite { get; }"}</code> | Always false, so the converter is skipped when writing. |
+| <Link id="m-canread" /><code>{"override bool CanRead { get; }"}</code> | <span className="api-desc">Always false, so the converter is skipped when reading.</span> |
+| <Link id="m-canwrite" /><code>{"override bool CanWrite { get; }"}</code> | <span className="api-desc">Always false, so the converter is skipped when writing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | Not implemented; throws. |
-| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | Not implemented; throws. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | Not implemented; throws. |
+| <Link id="m-canconvert" /><code>{"override bool CanConvert(Type objectType)"}</code> | <span className="api-desc">Not implemented; throws.</span> |
+| <Link id="m-readjson" /><code>{"override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Not implemented; throws.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)"}</code> | <span className="api-desc">Not implemented; throws.</span> |

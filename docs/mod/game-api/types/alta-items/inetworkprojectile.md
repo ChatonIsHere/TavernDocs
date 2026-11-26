@@ -21,13 +21,13 @@ A networked projectile: its entity, physics parts and effect setup.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> | The projectile's collider. |
-| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | The projectile's network entity. |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> | The projectile's rigidbody. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The projectile's transform. |
+| <Link id="m-collider" /><code>{"Collider Collider { get; }"}</code> | <span className="api-desc">The projectile's collider.</span> |
+| <Link id="m-entity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; set; }"}</code> | <span className="api-desc">The projectile's network entity.</span> |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> | <span className="api-desc">The projectile's rigidbody.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The projectile's transform.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> | Sets up the projectile's effects. |
+| <Link id="m-initializeeffects" /><code>{"void InitializeEffects()"}</code> | <span className="api-desc">Sets up the projectile's effects.</span> |

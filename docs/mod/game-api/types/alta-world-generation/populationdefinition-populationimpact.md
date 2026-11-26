@@ -21,16 +21,16 @@ Unused serialized pair inside `PopulationDefinition`: another population and a c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> | Creates a `PopulationDefinition.PopulationImpact` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> | <span className="api-desc">Creates a `PopulationDefinition.PopulationImpact` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-affectingpopulation" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" affectingPopulation"}</code> | The population that would affect this one. |
-| <Link id="m-populationmultiplier" /><code>{"private AnimationCurve populationMultiplier"}</code> | Curve for the multiplier it would apply. |
+| <Link id="m-affectingpopulation" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" affectingPopulation"}</code> | <span className="api-desc">The population that would affect this one.</span> |
+| <Link id="m-populationmultiplier" /><code>{"private AnimationCurve populationMultiplier"}</code> | <span className="api-desc">Curve for the multiplier it would apply.</span> |
 
 </details>

@@ -22,17 +22,17 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EffectVolumeTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EffectVolumeTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effects" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/effectvolumetrigger-effect">{"EffectVolumeTrigger.Effect"}</Link>{"[] effects"}</code> | The effect definitions and strengths to apply, set in the inspector. |
-| <Link id="m-isserver" /><code>{"private bool isServer"}</code> | Cached `NetworkSceneManager.IsServer` from `Awake`. |
+| <Link id="m-effects" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/effectvolumetrigger-effect">{"EffectVolumeTrigger.Effect"}</Link>{"[] effects"}</code> | <span className="api-desc">The effect definitions and strengths to apply, set in the inspector.</span> |
+| <Link id="m-isserver" /><code>{"private bool isServer"}</code> | <span className="api-desc">Cached `NetworkSceneManager.IsServer` from `Awake`.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ischeckingforeffecthandler" /><code>{"override bool IsCheckingForEffectHandler { get; }"}</code> | True on the server, so the base trigger tracks effect handlers there only. |
-| <Link id="m-ischeckingforrigidbody" /><code>{"override bool IsCheckingForRigidbody { get; }"}</code> | True on the server, so the base trigger tracks rigidbodies there only. |
+| <Link id="m-ischeckingforeffecthandler" /><code>{"override bool IsCheckingForEffectHandler { get; }"}</code> | <span className="api-desc">True on the server, so the base trigger tracks effect handlers there only.</span> |
+| <Link id="m-ischeckingforrigidbody" /><code>{"override bool IsCheckingForRigidbody { get; }"}</code> | <span className="api-desc">True on the server, so the base trigger tracks rigidbodies there only.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effecthandlerentered" /><code>{"protected override void EffectHandlerEntered("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Applies every listed effect at its strength and adds the handler to `ActiveEffectTargets`. |
-| <Link id="m-effecthandlerleft" /><code>{"protected override void EffectHandlerLeft("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | Applies every listed effect at negative strength and removes the handler from `ActiveEffectTargets`. |
+| <Link id="m-effecthandlerentered" /><code>{"protected override void EffectHandlerEntered("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Applies every listed effect at its strength and adds the handler to `ActiveEffectTargets`.</span> |
+| <Link id="m-effecthandlerleft" /><code>{"protected override void EffectHandlerLeft("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Applies every listed effect at negative strength and removes the handler from `ActiveEffectTargets`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches whether this is the server and disables the component if not. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Caches whether this is the server and disables the component if not.</span> |
 
 </details>

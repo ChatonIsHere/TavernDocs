@@ -27,4 +27,8 @@ Whether a network transport statistic counts bytes or message count.
 
 Members of other types that take, return or hold a `NetworkTransportStatisticType`:
 
+<div className="api-used-in">
+
 [`NetworkTransportStatisticField.NetworkTransportStatisticField`](/mod/game-api/types/alta-utilities/networktransportstatisticfield#m-ctor), [`NetworkTransportStatisticField.statisticType`](/mod/game-api/types/alta-utilities/networktransportstatisticfield#m-statistictype).
+
+</div>

@@ -22,4 +22,4 @@ Factory that takes one parameter, for the VContainer layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"TInterface Create(TParam param)"}</code> | Makes a new instance from the parameter. |
+| <Link id="m-create" /><code>{"TInterface Create(TParam param)"}</code> | <span className="api-desc">Makes a new instance from the parameter.</span> |

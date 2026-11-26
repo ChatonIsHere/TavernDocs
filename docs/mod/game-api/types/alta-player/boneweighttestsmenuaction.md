@@ -23,18 +23,18 @@ Developer quick access action that cycles through skin weight and skinned mesh q
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneWeightTestsMenuAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BoneWeightTestsMenuAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentsettings" /><code>{"private int currentSettings"}</code> | Index of the applied preset, -1 for the default. |
-| <Link id="m-defaultweights" /><code>{"private const SkinWeights defaultWeights"}</code> | Four bones, the weights restored after the last preset. |
-| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/boneweighttestsmenuaction-settings">{"BoneWeightTestsMenuAction.Settings"}</Link>{"[] settings"}</code> | The presets to cycle through. |
+| <Link id="m-currentsettings" /><code>{"private int currentSettings"}</code> | <span className="api-desc">Index of the applied preset, -1 for the default.</span> |
+| <Link id="m-defaultweights" /><code>{"private const SkinWeights defaultWeights"}</code> | <span className="api-desc">Four bones, the weights restored after the last preset.</span> |
+| <Link id="m-settings" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/boneweighttestsmenuaction-settings">{"BoneWeightTestsMenuAction.Settings"}</Link>{"[] settings"}</code> | <span className="api-desc">The presets to cycle through.</span> |
 
 </details>
 
@@ -42,20 +42,20 @@ Developer quick access action that cycles through skin weight and skinned mesh q
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Always true. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Applies the next preset and shows its name; after the last one, resets to four bones and auto quality. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Applies the next preset and shows its name; after the last one, resets to four bones and auto quality.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setweight" /><code>{"private static void SetWeight(SkinWeights weight)"}</code> | Sets Unity's global `QualitySettings.skinWeights`. |
+| <Link id="m-setweight" /><code>{"private static void SetWeight(SkinWeights weight)"}</code> | <span className="api-desc">Sets Unity's global `QualitySettings.skinWeights`.</span> |
 
 </details>

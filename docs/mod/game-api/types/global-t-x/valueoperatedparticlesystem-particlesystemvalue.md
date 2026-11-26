@@ -29,4 +29,8 @@ Which particle system value an operator drives: simulation speed, emission rate 
 
 Members of other types that take, return or hold a `ParticleSystemValue`:
 
+<div className="api-used-in">
+
 [`ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition.value`](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition#m-value).
+
+</div>

@@ -21,17 +21,17 @@ Holds a list of rigidbodies, filled from children in the editor, and gives them 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RigidbodyCollection()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RigidbodyCollection()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rigidbodies" /><code>{"private List<Rigidbody> rigidbodies"}</code> | Serialized list of rigidbodies. |
-| <Link id="m-uniquerigidbodies" /><code>{"private HashSet<Rigidbody> uniqueRigidbodies"}</code> | Cached set behind `Rigidbodies`. |
+| <Link id="m-rigidbodies" /><code>{"private List<Rigidbody> rigidbodies"}</code> | <span className="api-desc">Serialized list of rigidbodies.</span> |
+| <Link id="m-uniquerigidbodies" /><code>{"private HashSet<Rigidbody> uniqueRigidbodies"}</code> | <span className="api-desc">Cached set behind `Rigidbodies`.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ Holds a list of rigidbodies, filled from children in the editor, and gives them 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rigidbodies-2" /><code>{"HashSet<Rigidbody> Rigidbodies { get; }"}</code> | The rigidbodies as a set without duplicates, built on first use. |
+| <Link id="m-rigidbodies-2" /><code>{"HashSet<Rigidbody> Rigidbodies { get; }"}</code> | <span className="api-desc">The rigidbodies as a set without duplicates, built on first use.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> | Editor: fills the list with every rigidbody in the children. |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> | <span className="api-desc">Editor: fills the list with every rigidbody in the children.</span> |
 
 </details>
 
@@ -56,4 +56,8 @@ Holds a list of rigidbodies, filled from children in the editor, and gives them 
 
 Members of other types that take, return or hold a `RigidbodyCollection`:
 
+<div className="api-used-in">
+
 [`PlayerCharacter.rigidbodies`](/mod/game-api/types/alta-player/playercharacter#m-rigidbodies), [`PlayerCharacter.Rigidbodies`](/mod/game-api/types/alta-player/playercharacter#m-rigidbodies-2).
+
+</div>

@@ -21,4 +21,4 @@ Inspector attribute with no members; probably makes a field read only in the ins
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ReadOnlyInDebugAttribute()"}</code> | Creates a `ReadOnlyInDebugAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"ReadOnlyInDebugAttribute()"}</code> | <span className="api-desc">Creates a `ReadOnlyInDebugAttribute` with default values.</span> |

@@ -21,4 +21,4 @@ A logic receiver (or receiver array) that a `LogicValueSender` can be linked to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attemptlink" /><code>{"bool AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | Tries to link the sender to this receiver. Returns whether it worked. |
+| <Link id="m-attemptlink" /><code>{"bool AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | <span className="api-desc">Tries to link the sender to this receiver. Returns whether it worked.</span> |

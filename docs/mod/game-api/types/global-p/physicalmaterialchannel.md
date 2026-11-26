@@ -31,4 +31,8 @@ Which of a physical material's material slots (A to F) to use. Forging, chiselli
 
 Members of other types that take, return or hold a `PhysicalMaterialChannel`:
 
+<div className="api-used-in">
+
 [`ForgedModel<TB, TA>.UpdateMaterial`](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta#m-updatematerial), [`MetalHeatPoint.UpdateMaterial`](/mod/game-api/types/alta-crafting/metalheatpoint#m-updatematerial), [`ChiselingTool.NewMaterial`](/mod/game-api/types/alta-crafting/chiselingtool#m-newmaterial), [`GenericCraftingPieceDefinition.materialChannel`](/mod/game-api/types/alta-crafting/genericcraftingpiecedefinition#m-materialchannel), [`PhysicalMaterial.GetMaterial`](/mod/game-api/types/global-p/physicalmaterial#m-getmaterial), [`PhysicalMaterial.GetNonAtlasedNonDeformingMaterial`](/mod/game-api/types/global-p/physicalmaterial#m-getnonatlasednondeformingmaterial), [`PhysicalMaterial.GetNonDeformingMaterial`](/mod/game-api/types/global-p/physicalmaterial#m-getnondeformingmaterial), [`PhysicalMaterialPart.materialChannel`](/mod/game-api/types/global-p/physicalmaterialpart#m-materialchannel), [`PhysicalMaterialPart.ChangedMaterial.BeginInvoke`](/mod/game-api/types/global-p/physicalmaterialpart-changedmaterial#m-begininvoke), [`PhysicalMaterialPart.ChangedMaterial.Invoke`](/mod/game-api/types/global-p/physicalmaterialpart-changedmaterial#m-invoke).
+
+</div>

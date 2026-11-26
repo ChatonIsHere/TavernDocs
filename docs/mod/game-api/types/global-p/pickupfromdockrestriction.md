@@ -29,4 +29,8 @@ Flags limiting how a pickup can be taken from a dock: fixed, not with the left h
 
 Members of other types that take, return or hold a `PickupFromDockRestriction`:
 
+<div className="api-used-in">
+
 [`GrabPoint.dockedRestriction`](/mod/game-api/types/global-e-h/grabpoint#m-dockedrestriction), [`GrabPoint.nonDockedRestriction`](/mod/game-api/types/global-e-h/grabpoint#m-nondockedrestriction), [`GrabPoint.NonDockedRestriction`](/mod/game-api/types/global-e-h/grabpoint#m-nondockedrestriction-2).
+
+</div>

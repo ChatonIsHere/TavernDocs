@@ -21,17 +21,21 @@ A melting model inside the recycler's smelting area and the heat points touching
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> | Creates a `Recycler.MeltingModelReference` from `meltingModel`. |
+| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> | <span className="api-desc">Creates a `Recycler.MeltingModelReference` from `meltingModel`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-affectingheatpoints" /><code>{"List<"}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AffectingHeatPoints { get; }"}</code> | Heat points currently heating this model. |
-| <Link id="m-meltingmodel" /><code><Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" { get; }"}</code> | The `MeltingModel` component of the item being melted. |
+| <Link id="m-affectingheatpoints" /><code>{"List<"}<Link to="/mod/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> AffectingHeatPoints { get; }"}</code> | <span className="api-desc">Heat points currently heating this model.</span> |
+| <Link id="m-meltingmodel" /><code><Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" { get; }"}</code> | <span className="api-desc">The `MeltingModel` component of the item being melted.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MeltingModelReference`:
 
+<div className="api-used-in">
+
 [`Recycler.affecting`](/mod/game-api/types/alta-crafting/recycler#m-affecting), [`Recycler.destroyed`](/mod/game-api/types/alta-crafting/recycler#m-destroyed), [`Recycler.readyToMelt`](/mod/game-api/types/alta-crafting/recycler#m-readytomelt).
+
+</div>

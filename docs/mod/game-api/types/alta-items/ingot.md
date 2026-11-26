@@ -22,17 +22,17 @@ Item component on ingots that gives their smelting time and metal material.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Ingot()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Ingot()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | Backing field for `PhysicalMaterial`. |
-| <Link id="m-smeltingduration" /><code>{"private float smeltingDuration"}</code> | Backing field for `SmeltingDuration`. |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | <span className="api-desc">Backing field for `PhysicalMaterial`.</span> |
+| <Link id="m-smeltingduration" /><code>{"private float smeltingDuration"}</code> | <span className="api-desc">Backing field for `SmeltingDuration`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Item component on ingots that gives their smelting time and metal material.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-physicalmaterial-2" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | The metal this ingot is made of. |
-| <Link id="m-smeltingduration-2" /><code>{"float SmeltingDuration { get; }"}</code> | How long this ingot takes to smelt. |
+| <Link id="m-physicalmaterial-2" /><code><Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" { get; }"}</code> | <span className="api-desc">The metal this ingot is made of.</span> |
+| <Link id="m-smeltingduration-2" /><code>{"float SmeltingDuration { get; }"}</code> | <span className="api-desc">How long this ingot takes to smelt.</span> |

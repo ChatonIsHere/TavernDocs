@@ -21,4 +21,4 @@ Pooled object that gets three parameters each time it is spawned.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> | Called with the spawn parameters when the object is taken from the pool. |
+| <Link id="m-onspawn" /><code>{"void OnSpawn(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> | <span className="api-desc">Called with the spawn parameters when the object is taken from the pool.</span> |

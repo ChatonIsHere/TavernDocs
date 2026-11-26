@@ -11,9 +11,10 @@ const config: Config = {
     titleDelimiter: '-',
     favicon: 'img/favicon.png',
 
-    url: 'https://moddingtavern.github.io',
+    // Where the site lives now. Switch these three to ModdingTavern when the repo moves to the org.
+    url: 'https://chatonishere.github.io',
     baseUrl: '/TavernDocs/',
-    organizationName: 'ModdingTavern',
+    organizationName: 'ChatonIsHere',
     projectName: 'TavernDocs',
     trailingSlash: false,
 
@@ -55,7 +56,7 @@ const config: Config = {
                                 .filter((i) => !(i.type === 'category' && i.items.length === 0 && !i.link));
                         return prune(await defaultSidebarItemsGenerator(args));
                     },
-                    editUrl: 'https://github.com/ModdingTavern/TavernDocs/edit/main/',
+                    editUrl: 'https://github.com/ChatonIsHere/TavernDocs/edit/main/',
                 },
                 blog: false,
                 theme: {
@@ -84,6 +85,9 @@ const config: Config = {
                 useAllContextsWithNoSearchContext: true,
                 // The type indexes are one long list of names; search finds each type's own page instead.
                 ignoreFiles: [/type-index$/],
+                // Type pages stay findable by name, summary and public member names. Member descriptions, the folded
+                // private members and the Used in lists made up most of a 57 MB index.
+                ignoreCssSelectors: ['.api-desc', '.api-private', '.api-used-in'],
             },
         ],
     ],

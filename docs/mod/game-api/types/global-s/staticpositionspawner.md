@@ -21,29 +21,29 @@ Local decoration spawner: when enabled, instantiates a random non-networked pref
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticPositionSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticPositionSpawner()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positions" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnpositions">{"SpawnPositions"}</Link>{" positions"}</code> | The `SpawnPositions` on this object. |
-| <Link id="m-staticprefabs" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/gameobjectdistribution">{"GameObjectDistribution"}</Link>{" staticPrefabs"}</code> | Distribution the prefabs are picked from. |
+| <Link id="m-positions" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawnpositions">{"SpawnPositions"}</Link>{" positions"}</code> | <span className="api-desc">The `SpawnPositions` on this object.</span> |
+| <Link id="m-staticprefabs" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/gameobjectdistribution">{"GameObjectDistribution"}</Link>{" staticPrefabs"}</code> | <span className="api-desc">Distribution the prefabs are picked from.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches the `SpawnPositions` component. |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Destroys all child objects, including the spawned prefabs. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Spawns a random prefab from `staticPrefabs` at each spawn point. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Caches the `SpawnPositions` component.</span> |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | <span className="api-desc">Destroys all child objects, including the spawned prefabs.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Spawns a random prefab from `staticPrefabs` at each spawn point.</span> |
 
 </details>

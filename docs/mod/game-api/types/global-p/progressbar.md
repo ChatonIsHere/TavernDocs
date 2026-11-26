@@ -22,23 +22,23 @@ Base for a shader-driven gauge on one or more renderers. Setting `Progress` writ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ProgressBar()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ProgressBar()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-propertyblock" /><code>{"protected MaterialPropertyBlock propertyBlock"}</code> | Property block used to set the progress on the renderers. |
+| <Link id="m-propertyblock" /><code>{"protected MaterialPropertyBlock propertyBlock"}</code> | <span className="api-desc">Property block used to set the progress on the renderers.</span> |
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-gaugerenderer" /><code>{"private Renderer gaugeRenderer"}</code> | Single renderer, copied into `gaugeRenderers` if that list is empty. |
-| <Link id="m-gaugerenderers" /><code>{"private Renderer[] gaugeRenderers"}</code> | Renderers that show the gauge. |
-| <Link id="m-minimumvaluetorender" /><code>{"private float minimumValueToRender"}</code> | Progress at or under this hides the renderers (default -1, so always shown). |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | Backing field for `Progress`, 0 to 1. |
+| <Link id="m-gaugerenderer" /><code>{"private Renderer gaugeRenderer"}</code> | <span className="api-desc">Single renderer, copied into `gaugeRenderers` if that list is empty.</span> |
+| <Link id="m-gaugerenderers" /><code>{"private Renderer[] gaugeRenderers"}</code> | <span className="api-desc">Renderers that show the gauge.</span> |
+| <Link id="m-minimumvaluetorender" /><code>{"private float minimumValueToRender"}</code> | <span className="api-desc">Progress at or under this hides the renderers (default -1, so always shown).</span> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">Backing field for `Progress`, 0 to 1.</span> |
 
 </details>
 
@@ -46,26 +46,26 @@ Base for a shader-driven gauge on one or more renderers. Setting `Progress` writ
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> | Fill amount from 0 to 1. Setting it updates the renderers. |
-| <Link id="m-progressvariable" /><code>{"abstract int ProgressVariable { get; }"}</code> | Shader property id the progress is written to. |
+| <Link id="m-progress-2" /><code>{"float Progress { get; set; }"}</code> | <span className="api-desc">Fill amount from 0 to 1. Setting it updates the renderers.</span> |
+| <Link id="m-progressvariable" /><code>{"abstract int ProgressVariable { get; }"}</code> | <span className="api-desc">Shader property id the progress is written to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setpropertyblock" /><code>{"void SetPropertyBlock(MaterialPropertyBlock propertyBlock)"}</code> | Applies a property block to every gauge renderer. |
-| <Link id="m-setrenderersenable" /><code>{"void SetRenderersEnable(bool enabled)"}</code> | Turns every gauge renderer on or off. |
-| <Link id="m-updateprogressexternal" /><code>{"void UpdateProgressExternal(float newProgress)"}</code> | Sets the progress and updates the renderers, for use from events. |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Editor: fills the renderer list and previews the progress. |
-| <Link id="m-setup" /><code>{"protected virtual void Setup()"}</code> | Creates the property block. Skipped on a headless server. |
+| <Link id="m-setpropertyblock" /><code>{"void SetPropertyBlock(MaterialPropertyBlock propertyBlock)"}</code> | <span className="api-desc">Applies a property block to every gauge renderer.</span> |
+| <Link id="m-setrenderersenable" /><code>{"void SetRenderersEnable(bool enabled)"}</code> | <span className="api-desc">Turns every gauge renderer on or off.</span> |
+| <Link id="m-updateprogressexternal" /><code>{"void UpdateProgressExternal(float newProgress)"}</code> | <span className="api-desc">Sets the progress and updates the renderers, for use from events.</span> |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Editor: fills the renderer list and previews the progress.</span> |
+| <Link id="m-setup" /><code>{"protected virtual void Setup()"}</code> | <span className="api-desc">Creates the property block. Skipped on a headless server.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: makes the property block. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step that drops null renderers from the list. |
-| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> | Client: writes progress to the renderers, or hides them when at or under `minimumValueToRender`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Client: makes the property block.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step that drops null renderers from the list.</span> |
+| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> | <span className="api-desc">Client: writes progress to the renderers, or hides them when at or under `minimumValueToRender`.</span> |
 
 </details>

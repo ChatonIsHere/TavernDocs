@@ -23,16 +23,16 @@ Base for the cave settings assets (`GeneralSettings`, `BiomeSettings`, `Streamin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CaveSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected CaveSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"private static T instance"}</code> | Cached asset behind `Instance`. |
+| <Link id="m-instance" /><code>{"private static T instance"}</code> | <span className="api-desc">Cached asset behind `Instance`.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Base for the cave settings assets (`GeneralSettings`, `BiomeSettings`, `Streamin
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> | The settings asset of this type, loaded from `Resources/Caves/Settings` on first use. |
+| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> | <span className="api-desc">The settings asset of this type, loaded from `Resources/Caves/Settings` on first use.</span> |

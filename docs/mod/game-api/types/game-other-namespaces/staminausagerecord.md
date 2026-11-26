@@ -20,17 +20,21 @@ Internal record of one climb for analytics: distance travelled and the larger st
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> | Creates a `StaminaUsageRecord` from `distance`, `leftStamina` and `rightStamina`. |
+| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> | <span className="api-desc">Creates a `StaminaUsageRecord` from `distance`, `leftStamina` and `rightStamina`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"readonly float distance"}</code> | Distance travelled during the climb. |
-| <Link id="m-maxusedstamina" /><code>{"readonly float maxUsedStamina"}</code> | The higher of the left and right hand stamina used. |
+| <Link id="m-distance" /><code>{"readonly float distance"}</code> | <span className="api-desc">Distance travelled during the climb.</span> |
+| <Link id="m-maxusedstamina" /><code>{"readonly float maxUsedStamina"}</code> | <span className="api-desc">The higher of the left and right hand stamina used.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StaminaUsageRecord`:
 
+<div className="api-used-in">
+
 [`ClimbingHandlerAnalytics.staminaUsageRecords`](/mod/game-api/types/game-other-namespaces/climbinghandleranalytics#m-staminausagerecords), [`ClimbingMovementEvent.ClimbingMovementEvent`](/mod/game-api/types/game-other-namespaces/climbingmovementevent#m-ctor).
+
+</div>

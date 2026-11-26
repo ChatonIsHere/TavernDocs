@@ -21,20 +21,20 @@ Analytics event for leaving a trigger area, with the area name and time spent in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> | Creates an `AreaTriggerAnalyticsEvent` from `eventName`, `eventData` and `duration`. |
+| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> | <span className="api-desc">Creates an `AreaTriggerAnalyticsEvent` from `eventName`, `eventData` and `duration`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-areaexit" /><code>{"const string AreaExit"}</code> | Event name for leaving an area: "Area Exited". |
+| <Link id="m-areaexit" /><code>{"const string AreaExit"}</code> | <span className="api-desc">Event name for leaving an area: "Area Exited".</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-areakey" /><code>{"private const string AreaKey"}</code> | Property key for the area's name. |
-| <Link id="m-duration" /><code>{"private const string Duration"}</code> | Property key for the time spent in the area. |
+| <Link id="m-areakey" /><code>{"private const string AreaKey"}</code> | <span className="api-desc">Property key for the area's name.</span> |
+| <Link id="m-duration" /><code>{"private const string Duration"}</code> | <span className="api-desc">Property key for the time spent in the area.</span> |
 
 </details>

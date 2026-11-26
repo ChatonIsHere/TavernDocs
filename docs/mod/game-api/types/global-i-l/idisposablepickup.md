@@ -21,10 +21,10 @@ A pickup that gets used up, such as `DisposablePickup`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> | True once the pickup has been used up. |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> | <span className="api-desc">True once the pickup has been used up.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose(bool isForced)"}</code> | Uses up the pickup; the flag forces it. |
+| <Link id="m-dispose" /><code>{"void Dispose(bool isForced)"}</code> | <span className="api-desc">Uses up the pickup; the flag forces it.</span> |

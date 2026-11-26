@@ -23,17 +23,17 @@ The answer to `mods_list`: the server's mods and enabled untracked mods, sent wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModsListResponse(List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> mods, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> untracked)"}</code> | Sets the mod and untracked lists. |
+| <Link id="m-ctor" /><code>{"ModsListResponse(List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> mods, List<"}<Link to="/mod/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> untracked)"}</code> | <span className="api-desc">Sets the mod and untracked lists.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>3 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mods" /><code>{"private List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> Mods { get; }"}</code> | The enabled server mods. |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `ok`. |
-| <Link id="m-untracked" /><code>{"private List<"}<Link to="/mod/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> Untracked { get; }"}</code> | The enabled mods that this manager did not install. |
+| <Link id="m-mods" /><code>{"private List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> Mods { get; }"}</code> | <span className="api-desc">The enabled server mods.</span> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `ok`.</span> |
+| <Link id="m-untracked" /><code>{"private List<"}<Link to="/mod/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> Untracked { get; }"}</code> | <span className="api-desc">The enabled mods that this manager did not install.</span> |
 
 </details>

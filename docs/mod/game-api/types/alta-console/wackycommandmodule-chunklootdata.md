@@ -21,17 +21,21 @@ Loot module data for one chunk, used by the `ow-loot` command that restores Over
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> | Creates a `WackyCommandModule.ChunkLootData` with default values. |
+| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> | <span className="api-desc">Creates a `WackyCommandModule.ChunkLootData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"string chunk"}</code> | The chunk's identifier, such as `Chunk 27-33`. |
-| <Link id="m-lootdata" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/wackycommandmodule-lootdata">{"WackyCommandModule.LootData"}</Link>{"> lootData"}</code> | The loot modules to add to chests in that chunk. |
+| <Link id="m-chunk" /><code>{"string chunk"}</code> | <span className="api-desc">The chunk's identifier, such as `Chunk 27-33`.</span> |
+| <Link id="m-lootdata" /><code>{"List<"}<Link to="/mod/game-api/types/alta-console/wackycommandmodule-lootdata">{"WackyCommandModule.LootData"}</Link>{"> lootData"}</code> | <span className="api-desc">The loot modules to add to chests in that chunk.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ChunkLootData`:
 
+<div className="api-used-in">
+
 [`WackyCommandModule.ChunkData.chunkLootData`](/mod/game-api/types/alta-console/wackycommandmodule-chunkdata#m-chunklootdata).
+
+</div>

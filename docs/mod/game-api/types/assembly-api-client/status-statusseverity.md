@@ -30,4 +30,8 @@ Severity of a service status notice, from `Low` to `Critical`.
 
 Members of other types that take, return or hold a `StatusSeverity`:
 
+<div className="api-used-in">
+
 [`Status.Severity`](/mod/game-api/types/assembly-api-client/status#m-severity).
+
+</div>

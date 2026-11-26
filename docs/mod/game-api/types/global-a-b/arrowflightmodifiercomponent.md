@@ -21,17 +21,17 @@ Goes on an arrow part (such as fletching). When the part is crafted onto an arro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightModifierComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ArrowFlightModifierComponent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> | The crafting part whose connection is watched. |
-| <Link id="m-modifier" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" modifier"}</code> | Backing field for `Modifier`. |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> | <span className="api-desc">The crafting part whose connection is watched.</span> |
+| <Link id="m-modifier" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" modifier"}</code> | <span className="api-desc">Backing field for `Modifier`.</span> |
 
 </details>
 
@@ -39,17 +39,17 @@ Goes on an arrow part (such as fletching). When the part is crafted onto an arro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifier-2" /><code><Link to="/mod/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" Modifier { get; }"}</code> | The flight settings modifier this part adds. |
+| <Link id="m-modifier-2" /><code><Link to="/mod/game-api/types/global-a-b/arrowflightsettingsmodifier">{"ArrowFlightSettingsModifier"}</Link>{" Modifier { get; }"}</code> | <span className="api-desc">The flight settings modifier this part adds.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Subscribes to the crafting part's crafted and decrafted events. |
-| <Link id="m-oncrafted" /><code>{"private void OnCrafted("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, bool isLoad)"}</code> | Adds the modifier to the `Arrow` above the connected part. |
-| <Link id="m-ondecrafted" /><code>{"private void OnDecrafted("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" obj, bool isLoad)"}</code> | Removes the modifier from the `Arrow` above the connected part. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Subscribes to the crafting part's crafted and decrafted events.</span> |
+| <Link id="m-oncrafted" /><code>{"private void OnCrafted("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, bool isLoad)"}</code> | <span className="api-desc">Adds the modifier to the `Arrow` above the connected part.</span> |
+| <Link id="m-ondecrafted" /><code>{"private void OnDecrafted("}<Link to="/mod/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" obj, bool isLoad)"}</code> | <span className="api-desc">Removes the modifier from the `Arrow` above the connected part.</span> |
 
 </details>

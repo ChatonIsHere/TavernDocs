@@ -29,4 +29,8 @@ The tabs of the friends menu: friends, friend requests and Oculus friends.
 
 Members of other types that take, return or hold a `Tab`:
 
+<div className="api-used-in">
+
 [`FriendsManager.ChangeTab`](/mod/game-api/types/alta-menus/friendsmanager#m-changetab-2), [`FriendsManager.currentTab`](/mod/game-api/types/alta-menus/friendsmanager#m-currenttab).
+
+</div>

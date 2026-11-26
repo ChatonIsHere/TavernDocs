@@ -23,16 +23,16 @@ A list of users parsed from a comma-separated console argument of names or user 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> | Creates an `UserList` from `range`. |
+| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> | <span className="api-desc">Creates an `UserList` from `range`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-players" /><code>{"private IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> players"}</code> | The users in the list. |
+| <Link id="m-players" /><code>{"private IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> players"}</code> | <span className="api-desc">The users in the list.</span> |
 
 </details>
 
@@ -40,21 +40,21 @@ A list of users parsed from a comma-separated console argument of names or user 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> LastList { get; private set; }"}</code> | The most recently created list. |
+| <Link id="m-lastlist" /><code>{"static IEnumerable<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> LastList { get; private set; }"}</code> | <span className="api-desc">The most recently created list.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-countorname" /><code>{"async Task<string> CountOrName()"}</code> | Returns 'no one', the single user's name, or 'N players'. |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> GetEnumerator()"}</code> | Enumerates the users. |
+| <Link id="m-countorname" /><code>{"async Task<string> CountOrName()"}</code> | <span className="api-desc">Returns 'no one', the single user's name, or 'N players'.</span> |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> GetEnumerator()"}</code> | <span className="api-desc">Enumerates the users.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the users. |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | <span className="api-desc">Enumerates the users.</span> |
 
 </details>
 
@@ -62,4 +62,8 @@ A list of users parsed from a comma-separated console argument of names or user 
 
 Members of other types that take, return or hold a `UserList`:
 
+<div className="api-used-in">
+
 [`PlatformLaunchDetails.Users`](/mod/game-api/types/alta-menus/platformlaunchdetails#m-users), [`PlatformLaunchDetails.UsersOptional`](/mod/game-api/types/alta-menus/platformlaunchdetails#m-usersoptional).
+
+</div>

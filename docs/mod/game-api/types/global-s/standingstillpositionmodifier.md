@@ -22,16 +22,16 @@ Hand position input modifier asset for skills that only counts the hand as in po
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StandingStillPositionModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StandingStillPositionModifier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxvelocitysquared" /><code>{"private float maxVelocitySquared"}</code> | Highest squared movement speed still treated as standing still. |
+| <Link id="m-maxvelocitysquared" /><code>{"private float maxVelocitySquared"}</code> | <span className="api-desc">Highest squared movement speed still treated as standing still.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Hand position input modifier asset for skills that only counts the hand as in po
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifyisinposition" /><code>{"override void ModifyIsInPosition("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> | Clears `isInPosition` if the player's smooth locomotion speed is above the limit. |
+| <Link id="m-modifyisinposition" /><code>{"override void ModifyIsInPosition("}<Link to="/mod/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler, ref bool isInPosition)"}</code> | <span className="api-desc">Clears `isInPosition` if the player's smooth locomotion speed is above the limit.</span> |

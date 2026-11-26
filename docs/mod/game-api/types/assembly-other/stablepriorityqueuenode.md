@@ -21,10 +21,10 @@ Base class for items in a `StablePriorityQueue`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> | Creates a `StablePriorityQueueNode` with default values. |
+| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> | <span className="api-desc">Creates a `StablePriorityQueueNode` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> | Order in which the node was queued, used to keep equal priorities first in, first out. |
+| <Link id="m-insertionindex" /><code>{"long InsertionIndex { get; internal set; }"}</code> | <span className="api-desc">Order in which the node was queued, used to keep equal priorities first in, first out.</span> |

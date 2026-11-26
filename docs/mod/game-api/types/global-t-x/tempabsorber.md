@@ -21,16 +21,16 @@ Prototype puzzle condition that is complete while at least one temporary light e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TempAbsorber()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TempAbsorber()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hitcount" /><code>{"private int hitCount"}</code> | Number of emitters hitting it. |
+| <Link id="m-hitcount" /><code>{"private int hitCount"}</code> | <span className="api-desc">Number of emitters hitting it.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Prototype puzzle condition that is complete while at least one temporary light e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | Counts a new emitter hit and sets the condition complete. |
-| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | Removes a hit; the condition is no longer complete when none are left. |
+| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | <span className="api-desc">Counts a new emitter hit and sets the condition complete.</span> |
+| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | <span className="api-desc">Removes a hit; the condition is no longer complete when none are left.</span> |

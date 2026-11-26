@@ -21,4 +21,4 @@ Inspector attribute, probably to show a float as a time in seconds. No code of i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> | Creates a `TimeInSecondsAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> | <span className="api-desc">Creates a `TimeInSecondsAttribute` with default values.</span> |

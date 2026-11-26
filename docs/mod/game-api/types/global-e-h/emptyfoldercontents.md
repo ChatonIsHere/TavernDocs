@@ -23,4 +23,4 @@ Empty asset type, probably used as a placeholder so a folder is not empty.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmptyFolderContents()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"EmptyFolderContents()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

@@ -22,4 +22,4 @@ Editor menu entry (Assets, Create, Township, Generation, Loot) that makes a new 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Rarity.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `Rarity.Create` with default values.</span> |

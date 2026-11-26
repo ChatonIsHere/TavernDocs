@@ -21,11 +21,11 @@ Example `ITeleportAwareTrigger` that logs when a player teleports through the tr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerexit" /><code>{"void OnTriggerExit(Collider other)"}</code> | Does nothing. |
-| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Logs the player that teleported through. |
+| <Link id="m-ontriggerexit" /><code>{"void OnTriggerExit(Collider other)"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-ontriggerteleportedthrough" /><code>{"void OnTriggerTeleportedThrough("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Logs the player that teleported through.</span> |

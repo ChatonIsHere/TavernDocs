@@ -20,12 +20,12 @@ Console module `audio microphone` (alias `mic`) for the local microphone in Vivo
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-mute" /><code>{"private static void Mute()"}</code> | Command `mute`: mutes the Vivox microphone. |
-| <Link id="m-unmute" /><code>{"private static void Unmute()"}</code> | Command `unmute`: unmutes the Vivox microphone. |
+| <Link id="m-mute" /><code>{"private static void Mute()"}</code> | <span className="api-desc">Command `mute`: mutes the Vivox microphone.</span> |
+| <Link id="m-unmute" /><code>{"private static void Unmute()"}</code> | <span className="api-desc">Command `unmute`: unmutes the Vivox microphone.</span> |
 
 </details>

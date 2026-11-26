@@ -28,4 +28,8 @@ SAColliderBuilder (third party, editor) option for fitting a collider outside or
 
 Members of other types that take, return or hold a `FitType`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.fitType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-fittype).
+
+</div>

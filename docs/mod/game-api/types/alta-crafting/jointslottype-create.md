@@ -22,4 +22,4 @@ Unity editor menu entry (Create, Township, Features, Crafting) for making a new 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `JointSlotType.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `JointSlotType.Create` with default values.</span> |

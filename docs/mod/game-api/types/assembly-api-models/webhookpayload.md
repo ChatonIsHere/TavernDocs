@@ -20,10 +20,10 @@ Body of a webhook call carrying one message.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> | Creates a `WebhookPayload` with default values. |
+| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> | <span className="api-desc">Creates a `WebhookPayload` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | The message text. |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | <span className="api-desc">The message text.</span> |

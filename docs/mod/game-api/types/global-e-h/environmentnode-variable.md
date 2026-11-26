@@ -21,17 +21,17 @@ An optional float setting on an `EnvironmentNode` (used for reverb). It either o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> | Creates an `EnvironmentNode.Variable` with default values. |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> | <span className="api-desc">Creates an `EnvironmentNode.Variable` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> | Whether this node sets its own value instead of using the default. |
-| <Link id="m-value" /><code>{"private float value"}</code> | The override value, used only when `isOverriding` is on. |
+| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> | <span className="api-desc">Whether this node sets its own value instead of using the default.</span> |
+| <Link id="m-value" /><code>{"private float value"}</code> | <span className="api-desc">The override value, used only when `isOverriding` is on.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ An optional float setting on an `EnvironmentNode` (used for reverb). It either o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"float Get("}<Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> | Returns `value` when overriding, otherwise the given default variable's value, or 0 if there is none. |
+| <Link id="m-get" /><code>{"float Get("}<Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> | <span className="api-desc">Returns `value` when overriding, otherwise the given default variable's value, or 0 if there is none.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Variable`:
 
+<div className="api-used-in">
+
 [`EnvironmentNode.reverb`](/mod/game-api/types/global-e-h/environmentnode#m-reverb), [`EnvironmentNode.Reverb`](/mod/game-api/types/global-e-h/environmentnode#m-reverb-2).
+
+</div>

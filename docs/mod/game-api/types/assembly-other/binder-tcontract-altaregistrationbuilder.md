@@ -23,28 +23,28 @@ VContainer registration builder used by `Binder<TContract>`. Builds the registra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> | Creates a `Binder` from `binder`. |
+| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> | <span className="api-desc">Creates a `Binder` from `binder`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"private object instance"}</code> | Instance set by `BindToInstance`, or null. |
-| <Link id="m-instanceprovider" /><code>{"private IInstanceProvider instanceProvider"}</code> | Instance provider field. Not used in this class's code. |
+| <Link id="m-instance" /><code>{"private object instance"}</code> | <span className="api-desc">Instance set by `BindToInstance`, or null.</span> |
+| <Link id="m-instanceprovider" /><code>{"private IInstanceProvider instanceProvider"}</code> | <span className="api-desc">Instance provider field. Not used in this class's code.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-binder" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{" { get; }"}</code> | The binder this builder reads its types and lifetime from. |
+| <Link id="m-binder" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> "}<Link to="/mod/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{" { get; }"}</code> | <span className="api-desc">The binder this builder reads its types and lifetime from.</span> |
 
 </details>
 
@@ -52,16 +52,16 @@ VContainer registration builder used by `Binder<TContract>`. Builds the registra
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-build" /><code>{"override Registration Build()"}</code> | Adds any entry point interfaces, makes sure the entry point dispatcher is registered if needed, then builds the registration. |
+| <Link id="m-build" /><code>{"override Registration Build()"}</code> | <span className="api-desc">Adds any entry point interfaces, makes sure the entry point dispatcher is registered if needed, then builds the registration.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bindtoinstance" /><code>{"internal void BindToInstance(object instance)"}</code> | Stores an instance so the registration always returns it. |
-| <Link id="m-buildforcontract" /><code>{"private Registration BuildForContract()"}</code> | Builds a normal type registration bound to every contract type. |
-| <Link id="m-buildforinstance" /><code>{"private Registration BuildForInstance()"}</code> | Builds a registration whose provider always returns the bound instance. |
+| <Link id="m-bindtoinstance" /><code>{"internal void BindToInstance(object instance)"}</code> | <span className="api-desc">Stores an instance so the registration always returns it.</span> |
+| <Link id="m-buildforcontract" /><code>{"private Registration BuildForContract()"}</code> | <span className="api-desc">Builds a normal type registration bound to every contract type.</span> |
+| <Link id="m-buildforinstance" /><code>{"private Registration BuildForInstance()"}</code> | <span className="api-desc">Builds a registration whose provider always returns the bound instance.</span> |
 
 </details>
 
@@ -69,4 +69,8 @@ VContainer registration builder used by `Binder<TContract>`. Builds the registra
 
 Members of other types that take, return or hold a `AltaRegistrationBuilder`:
 
+<div className="api-used-in">
+
 [`Binder<TContract>.RegistrationBuilder`](/mod/game-api/types/assembly-other/binder-tcontract#m-registrationbuilder).
+
+</div>

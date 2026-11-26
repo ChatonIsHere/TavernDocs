@@ -30,4 +30,8 @@ SAColliderBuilder (third party, editor) option for how a mesh is split into coll
 
 Members of other types that take, return or hold a `SplitMode`:
 
+<div className="api-used-in">
+
 [`SAMeshCollider.splitMode`](/mod/game-api/types/global-s/sameshcollider#m-splitmode).
+
+</div>

@@ -23,16 +23,20 @@ Settings asset for the normal playing state. It adds nothing beyond `PlayerState
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingStateSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayingStateSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> | `PlayingState`. |
+| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> | <span className="api-desc">`PlayingState`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayingStateSettings`:
 
+<div className="api-used-in">
+
 [`PlayingState.Settings`](/mod/game-api/types/alta-player/playingstate#m-settings).
+
+</div>

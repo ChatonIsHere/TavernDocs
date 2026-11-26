@@ -29,4 +29,8 @@ Which docks a liquid container pickup may go in while it holds liquid: none, onl
 
 Members of other types that take, return or hold a `DockingElibility`:
 
+<div className="api-used-in">
+
 [`PickupLiquidContainerEnabler.dockingElibilityWhenFull`](/mod/game-api/types/alta-stats-effects/pickupliquidcontainerenabler#m-dockingelibilitywhenfull).
+
+</div>

@@ -21,16 +21,16 @@ Value provider used by `JsonMaxAttribute`: caps a float property at `max` on get
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonMaxValueProvider(IValueProvider baseProvider, float max)"}</code> | Creates a `JsonMaxValueProvider` from `baseProvider` and `max`. |
+| <Link id="m-ctor" /><code>{"JsonMaxValueProvider(IValueProvider baseProvider, float max)"}</code> | <span className="api-desc">Creates a `JsonMaxValueProvider` from `baseProvider` and `max`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"private float max"}</code> | The upper limit. |
+| <Link id="m-max" /><code>{"private float max"}</code> | <span className="api-desc">The upper limit.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Value provider used by `JsonMaxAttribute`: caps a float property at `max` on get
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | Returns the smaller of the value and `max`. |
+| <Link id="m-clamp" /><code>{"override float Clamp(float value)"}</code> | <span className="api-desc">Returns the smaller of the value and `max`.</span> |

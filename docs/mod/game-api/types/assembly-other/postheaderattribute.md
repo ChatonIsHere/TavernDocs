@@ -21,10 +21,10 @@ Inspector attribute carrying header text, probably drawn after the field it is o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> | Creates a `PostHeaderAttribute` from `headerText`. |
+| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> | <span className="api-desc">Creates a `PostHeaderAttribute` from `headerText`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-headertext" /><code>{"string HeaderText { get; }"}</code> | The header text. |
+| <Link id="m-headertext" /><code>{"string HeaderText { get; }"}</code> | <span className="api-desc">The header text.</span> |

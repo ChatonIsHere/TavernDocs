@@ -22,16 +22,20 @@ Base ScriptableObject for an action a zone trigger runs, such as an analytics ev
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ZoneEvent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ZoneEvent()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | Runs the event with the trigger's event data and a duration in seconds. |
+| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/mod/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | <span className="api-desc">Runs the event with the trigger's event data and a duration in seconds.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ZoneEvent`:
 
+<div className="api-used-in">
+
 [`TriggerZone.onExitTriggers`](/mod/game-api/types/game-other-namespaces/triggerzone#m-onexittriggers).
+
+</div>

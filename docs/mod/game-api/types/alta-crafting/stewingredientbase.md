@@ -22,28 +22,32 @@ Base ScriptableObject for a stew recipe ingredient slot, such as a cookable cate
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected StewIngredientBase()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected StewIngredientBase()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-glyph" /><code><Link to="/mod/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> | Glyph shown for this ingredient. |
+| <Link id="m-glyph" /><code><Link to="/mod/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> | <span className="api-desc">Glyph shown for this ingredient.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookables" /><code>{"abstract IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | All cookable items that count as this ingredient. |
+| <Link id="m-cookables" /><code>{"abstract IEnumerable<"}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"> Cookables { get; }"}</code> | <span className="api-desc">All cookable items that count as this ingredient.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containscookable" /><code>{"abstract bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | Whether a cookable item counts as this ingredient, with a match score. |
+| <Link id="m-containscookable" /><code>{"abstract bool ContainsCookable("}<Link to="/mod/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookable, out int score)"}</code> | <span className="api-desc">Whether a cookable item counts as this ingredient, with a match score.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StewIngredientBase`:
 
+<div className="api-used-in">
+
 [`StewRecipe.stewIngredients`](/mod/game-api/types/alta-crafting/stewrecipe#m-stewingredients), [`StewRecipe.StewIngredients`](/mod/game-api/types/alta-crafting/stewrecipe#m-stewingredients-2).
+
+</div>

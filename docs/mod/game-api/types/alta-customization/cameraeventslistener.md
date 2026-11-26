@@ -21,31 +21,31 @@ Fires inspector events before and after any hand camera renders for the chosen e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CameraEventsListener()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CameraEventsListener()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onpostrender" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPostRender"}</code> | Event fired after a matching render. |
-| <Link id="m-onprerender" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPreRender"}</code> | Event fired before a matching render. |
-| <Link id="m-targetevents" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" targetEvents"}</code> | Which hand camera events trigger it. |
+| <Link id="m-onpostrender" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPostRender"}</code> | <span className="api-desc">Event fired after a matching render.</span> |
+| <Link id="m-onprerender" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPreRender"}</code> | <span className="api-desc">Event fired before a matching render.</span> |
+| <Link id="m-targetevents" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" targetEvents"}</code> | <span className="api-desc">Which hand camera events trigger it.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Not headless: hooks the static `HandCamera` render events. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the render events. |
-| <Link id="m-post" /><code>{"private void Post("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Fires `onPostRender` if the camera event is one of the targets. |
-| <Link id="m-pre" /><code>{"private void Pre("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Fires `onPreRender` if the camera event is one of the targets. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Not headless: hooks the static `HandCamera` render events.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Unhooks the render events.</span> |
+| <Link id="m-post" /><code>{"private void Post("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | <span className="api-desc">Fires `onPostRender` if the camera event is one of the targets.</span> |
+| <Link id="m-pre" /><code>{"private void Pre("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/mod/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | <span className="api-desc">Fires `onPreRender` if the camera event is one of the targets.</span> |
 
 </details>

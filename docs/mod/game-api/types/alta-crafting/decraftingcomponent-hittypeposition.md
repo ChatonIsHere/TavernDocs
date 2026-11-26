@@ -21,17 +21,21 @@ Message the server sends to clients when a decrafting component is hit, so they 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> | Creates a `DecraftingComponent.HitTypePosition` from `position` and `isEffective`. |
+| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> | <span className="api-desc">Creates a `DecraftingComponent.HitTypePosition` from `position` and `isEffective`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> | Whether the hit counted towards decrafting. |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the hit landed. |
+| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> | <span className="api-desc">Whether the hit counted towards decrafting.</span> |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | <span className="api-desc">Where the hit landed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HitTypePosition`:
 
+<div className="api-used-in">
+
 [`DecraftingComponent.syncDecraftingHit`](/mod/game-api/types/alta-crafting/decraftingcomponent#m-syncdecraftinghit), [`DecraftingComponent.SyncDecraftingHit`](/mod/game-api/types/alta-crafting/decraftingcomponent#m-syncdecraftinghit-2).
+
+</div>

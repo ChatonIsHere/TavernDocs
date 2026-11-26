@@ -21,10 +21,10 @@ Formats a date for use in file and folder names, for example by profiling comman
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-foldersaveformat" /><code>{"const string FolderSaveFormat"}</code> | The format used: `yyyy-MM-dd_HH-mm-ss`. |
+| <Link id="m-foldersaveformat" /><code>{"const string FolderSaveFormat"}</code> | <span className="api-desc">The format used: `yyyy-MM-dd_HH-mm-ss`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tofolderfriendlystring" /><code>{"static string ToFolderFriendlyString(DateTime dateTime)"}</code> | Formats the date with `FolderSaveFormat`. |
+| <Link id="m-tofolderfriendlystring" /><code>{"static string ToFolderFriendlyString(DateTime dateTime)"}</code> | <span className="api-desc">Formats the date with `FolderSaveFormat`.</span> |

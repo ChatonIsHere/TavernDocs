@@ -28,4 +28,8 @@ Whether a collider builder setting (scale, minimum thickness, rotation optimisat
 
 Members of other types that take, return or hold a `ElementType`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.minThicknessElementType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-minthicknesselementtype), [`SAColliderBuilderCommon.ReducerProperty.optimizeRotationElementType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-optimizerotationelementtype), [`SAColliderBuilderCommon.ReducerProperty.scaleElementType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-scaleelementtype).
+
+</div>

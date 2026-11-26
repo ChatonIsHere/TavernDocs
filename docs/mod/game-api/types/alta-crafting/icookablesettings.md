@@ -21,11 +21,15 @@ Internal settings shared by cookables and cooking points: whether the item can b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cookingtemperatures" /><code><Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> | The temperatures the item cooks and burns at. |
-| <Link id="m-isburnable" /><code>{"bool IsBurnable { get; }"}</code> | Whether the item can burn. |
+| <Link id="m-cookingtemperatures" /><code><Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" "}<Link to="/mod/game-api/types/alta-crafting/cookingtemperatures">{"CookingTemperatures"}</Link>{" { get; }"}</code> | <span className="api-desc">The temperatures the item cooks and burns at.</span> |
+| <Link id="m-isburnable" /><code>{"bool IsBurnable { get; }"}</code> | <span className="api-desc">Whether the item can burn.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ICookableSettings`:
 
+<div className="api-used-in">
+
 [`CookingPoint.cookable`](/mod/game-api/types/alta-crafting/cookingpoint#m-cookable).
+
+</div>

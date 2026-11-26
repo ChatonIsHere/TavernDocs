@@ -20,4 +20,4 @@ A response model that can turn itself into another model type.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-convert" /><code>{"TModel Convert()"}</code> | Returns this model as a `TModel`. |
+| <Link id="m-convert" /><code>{"TModel Convert()"}</code> | <span className="api-desc">Returns this model as a `TModel`.</span> |

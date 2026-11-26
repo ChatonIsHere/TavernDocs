@@ -22,10 +22,14 @@ The `ServerConfigFile` for `console_tokens.json`. Only `ConsoleTokenStore` reads
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleTokenFile(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"ConsoleTokenFile(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ConsoleTokenFile`:
 
+<div className="api-used-in">
+
 [`ConsoleTokenStore.TokenFile`](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore#m-tokenfile).
+
+</div>

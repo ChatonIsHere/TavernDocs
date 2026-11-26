@@ -21,11 +21,11 @@ Request body for refreshing login tokens, and the base of the login requests.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> | Creates a `RefreshRequest` with default values. |
+| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> | <span className="api-desc">Creates a `RefreshRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | This device's id; the game fills it from `Device.Identifier`. |
-| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> | Platform target; the game fills it from `Device.PlatformTarget`. |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | <span className="api-desc">This device's id; the game fills it from `Device.Identifier`.</span> |
+| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> | <span className="api-desc">Platform target; the game fills it from `Device.PlatformTarget`.</span> |

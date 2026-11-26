@@ -21,10 +21,14 @@ Something that `TimelineUpdater` advances each frame. `Timeline` is the only imp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> | Advances the timeline by the given time and runs whatever is due. |
+| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> | <span className="api-desc">Advances the timeline by the given time and runs whatever is due.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ITimeline`:
 
+<div className="api-used-in">
+
 [`TimelineUpdater.timeline`](/mod/game-api/types/assembly-other/timelineupdater#m-timeline).
+
+</div>

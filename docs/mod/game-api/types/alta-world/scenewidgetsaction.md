@@ -22,16 +22,16 @@ Developer quick access menu action that toggles debug scene widgets. Only shown 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SceneWidgetsAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SceneWidgetsAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Backing field for `IsActive`. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | <span className="api-desc">Backing field for `IsActive`.</span> |
 
 </details>
 
@@ -39,12 +39,12 @@ Developer quick access menu action that toggles debug scene widgets. Only shown 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive-2" /><code>{"override bool IsActive { get; }"}</code> | Whether the widgets are on. |
-| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | True outside dev, so it is hidden. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | True only in dev. |
+| <Link id="m-isactive-2" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Whether the widgets are on.</span> |
+| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | <span className="api-desc">True outside dev, so it is hidden.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">True only in dev.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Toggles the debug widgets on or off. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Toggles the debug widgets on or off.</span> |

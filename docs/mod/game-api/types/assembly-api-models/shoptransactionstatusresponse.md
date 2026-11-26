@@ -20,10 +20,10 @@ The status of a shop transaction.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ShopTransactionStatusResponse()"}</code> | Creates a `ShopTransactionStatusResponse` with default values. |
+| <Link id="m-ctor" /><code>{"ShopTransactionStatusResponse()"}</code> | <span className="api-desc">Creates a `ShopTransactionStatusResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/shoptransactionstatus">{"ShopTransactionStatus"}</Link>{" Status { get; set; }"}</code> | Where the transaction is up to. |
+| <Link id="m-status" /><code><Link to="/mod/game-api/types/assembly-api-models/shoptransactionstatus">{"ShopTransactionStatus"}</Link>{" Status { get; set; }"}</code> | <span className="api-desc">Where the transaction is up to.</span> |

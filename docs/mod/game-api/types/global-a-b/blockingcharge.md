@@ -23,29 +23,29 @@ Profession skill: blocking a hit with a valid item at good enough effectiveness 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BlockingCharge()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BlockingCharge()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | Lowest hit effectiveness that counts (0.2 by default). |
-| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> | The pickup skill whose `StrikeSuccessionInput` gets the charge. |
-| <Link id="m-validitems" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> | Items that count as blocking with. |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | <span className="api-desc">Lowest hit effectiveness that counts (0.2 by default).</span> |
+| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> | <span className="api-desc">The pickup skill whose `StrikeSuccessionInput` gets the charge.</span> |
+| <Link id="m-validitems" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> | <span className="api-desc">Items that count as blocking with.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> | The skill whose strike succession this charges (`modifiedSkill`). |
+| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> | <span className="api-desc">The skill whose strike succession this charges (`modifiedSkill`).</span> |
 
 </details>
 
@@ -53,4 +53,4 @@ Profession skill: blocking a hit with a valid item at good enough effectiveness 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> | If the hit is effective enough and the hit pickup is a valid item, adds a strike to the linked skill's input on each held item, and runs this skill if any counted. |
+| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> | <span className="api-desc">If the hit is effective enough and the hit pickup is a valid item, adds a strike to the linked skill's input on each held item, and runs this skill if any counted.</span> |

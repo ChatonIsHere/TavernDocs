@@ -22,10 +22,10 @@ Base for helper components that only matter in the editor. It destroys itself in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ScriptHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Destroys this component. |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Destroys this component.</span> |

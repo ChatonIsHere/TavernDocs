@@ -22,10 +22,14 @@ Inspector event with an `IPlayer` argument.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerUnityEvent()"}</code> | Creates a `PlayerUnityEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerUnityEvent()"}</code> | <span className="api-desc">Creates a `PlayerUnityEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerUnityEvent`:
 
+<div className="api-used-in">
+
 [`PlayerDetect.playerEntered`](/mod/game-api/types/global-p/playerdetect#m-playerentered), [`PlayerDetect.playerLeft`](/mod/game-api/types/global-p/playerdetect#m-playerleft), [`PostboxSender.gotPlayer`](/mod/game-api/types/global-p/postboxsender#m-gotplayer).
+
+</div>

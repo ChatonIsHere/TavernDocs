@@ -28,4 +28,8 @@ Player setting for swipe sensitivity (low, medium, high), stored in `GameSetting
 
 Members of other types that take, return or hold a `SwipeSensitivityLevel`:
 
+<div className="api-used-in">
+
 [`GameSettings.SwipeSensitivityLevelValue`](/mod/game-api/types/alta-utilities/gamesettings#m-swipesensitivitylevelvalue).
+
+</div>

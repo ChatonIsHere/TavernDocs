@@ -21,16 +21,16 @@ Console module `quality`: LOD bias and chunk streaming distance multipliers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> | Creates a `QualityCommandModule` with default values. |
+| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> | <span className="api-desc">Creates a `QualityCommandModule` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this module. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this module.</span> |
 
 </details>
 
@@ -38,6 +38,6 @@ Console module `quality`: LOD bias and chunk streaming distance multipliers.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setdynamicloaddistance" /><code>{"static void SetDynamicLoadDistance(float loadMultiplier = 1)"}</code> | Server: `quality dynamic-load-multiplier` sets the streaming multiplier for dynamic chunk load distance. |
-| <Link id="m-setlodbias" /><code>{"static void SetLODBias(float lodbias)"}</code> | `quality lod-bias`: sets Unity's LOD bias, clamped to 0.001 to 10. |
-| <Link id="m-setstaticloaddistance" /><code>{"static void SetStaticLoadDistance(float loadMultiplier = 1)"}</code> | Server: `quality static-load-multiplier` sets the streaming multiplier for static chunk load distance. |
+| <Link id="m-setdynamicloaddistance" /><code>{"static void SetDynamicLoadDistance(float loadMultiplier = 1)"}</code> | <span className="api-desc">Server: `quality dynamic-load-multiplier` sets the streaming multiplier for dynamic chunk load distance.</span> |
+| <Link id="m-setlodbias" /><code>{"static void SetLODBias(float lodbias)"}</code> | <span className="api-desc">`quality lod-bias`: sets Unity's LOD bias, clamped to 0.001 to 10.</span> |
+| <Link id="m-setstaticloaddistance" /><code>{"static void SetStaticLoadDistance(float loadMultiplier = 1)"}</code> | <span className="api-desc">Server: `quality static-load-multiplier` sets the streaming multiplier for static chunk load distance.</span> |

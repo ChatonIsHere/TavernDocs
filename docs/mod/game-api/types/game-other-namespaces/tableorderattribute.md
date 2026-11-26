@@ -21,10 +21,10 @@ Sets a property's column position when `ToStringTable` prints a list of objects 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> | Creates a `TableOrderAttribute` from `order`. |
+| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> | <span className="api-desc">Creates a `TableOrderAttribute` from `order`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-order" /><code>{"int Order { get; set; }"}</code> | Sort key for the column; lower comes first. |
+| <Link id="m-order" /><code>{"int Order { get; set; }"}</code> | <span className="api-desc">Sort key for the column; lower comes first.</span> |

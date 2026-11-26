@@ -20,17 +20,21 @@ Alta web API reply to claiming all of a user's Oculus purchases (`ConsumeAllOcul
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> | Creates a `ClaimOculusItemsResponse` with default values. |
+| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> | <span className="api-desc">Creates a `ClaimOculusItemsResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> | Items that were claimed. |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | Old success flag. Marked obsolete. |
+| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> | <span className="api-desc">Items that were claimed.</span> |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | <span className="api-desc">Old success flag. Marked obsolete.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ClaimOculusItemsResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ConsumeAllOculusPurchases`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-consumealloculuspurchases).
+
+</div>

@@ -22,16 +22,16 @@ A spawn area that gives random points in a flat circle around its transform. Hei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Circle radius in metres. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Circle radius in metres.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ A spawn area that gives random points in a flat circle around its transform. Hei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandomspawnposition" /><code>{"override Vector3 GetRandomSpawnPosition()"}</code> | A random point inside the circle of `radius` around the transform, at the transform's height. |
+| <Link id="m-getrandomspawnposition" /><code>{"override Vector3 GetRandomSpawnPosition()"}</code> | <span className="api-desc">A random point inside the circle of `radius` around the transform, at the transform's height.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Empty. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

@@ -23,13 +23,13 @@ Save data (version 1) for a `SentGift`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> | Creates a `SentGiftData` with default values. |
+| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> | <span className="api-desc">Creates a `SentGiftData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-receiversname" /><code>{"string receiversName"}</code> | Receiver's username. |
-| <Link id="m-sendersname" /><code>{"string sendersName"}</code> | Sender's username. |
-| <Link id="m-sendertag" /><code><Link to="/mod/game-api/types/global-s/sentgifttag">{"SentGiftTag"}</Link>{" senderTag"}</code> | Sender and receiver user IDs. |
-| <Link id="m-tospawn" /><code><Link to="/mod/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{"[] toSpawn"}</code> | The saved items inside the gift. |
+| <Link id="m-receiversname" /><code>{"string receiversName"}</code> | <span className="api-desc">Receiver's username.</span> |
+| <Link id="m-sendersname" /><code>{"string sendersName"}</code> | <span className="api-desc">Sender's username.</span> |
+| <Link id="m-sendertag" /><code><Link to="/mod/game-api/types/global-s/sentgifttag">{"SentGiftTag"}</Link>{" senderTag"}</code> | <span className="api-desc">Sender and receiver user IDs.</span> |
+| <Link id="m-tospawn" /><code><Link to="/mod/game-api/types/alta-world/savablesaveddynamicobject">{"SavableSavedDynamicObject"}</Link>{"[] toSpawn"}</code> | <span className="api-desc">The saved items inside the gift.</span> |

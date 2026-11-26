@@ -21,11 +21,15 @@ Temporary light puzzle detector, hit by `TempLaser`. Implemented by `TempAbsorbe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | Called when the emitter's laser starts hitting it. |
-| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | Called when the emitter's laser stops hitting it. |
+| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | <span className="api-desc">Called when the emitter's laser starts hitting it.</span> |
+| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/mod/game-api/types/global-i-l/ilightemittertemp">{"ILightEmitterTemp"}</Link>{" emitter)"}</code> | <span className="api-desc">Called when the emitter's laser stops hitting it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ILightDetectorTemp`:
 
+<div className="api-used-in">
+
 [`TempLaser.oldDetector`](/mod/game-api/types/global-t-x/templaser#m-olddetector).
+
+</div>

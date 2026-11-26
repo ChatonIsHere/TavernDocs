@@ -30,4 +30,8 @@ Flags for the five fingers of a hand, one bit each.
 
 Members of other types that take, return or hold a `HandFingers`:
 
+<div className="api-used-in">
+
 [`HandGestureDefinition.activeFingers`](/mod/game-api/types/global-e-h/handgesturedefinition#m-activefingers), [`HandGestureDefinition.ActiveFingers`](/mod/game-api/types/global-e-h/handgesturedefinition#m-activefingers-2).
+
+</div>

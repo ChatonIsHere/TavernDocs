@@ -21,16 +21,16 @@ Pooled woodcutting particle effect that destroys itself after a time and takes o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutPooledObject()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WoodcutPooledObject()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-particles" /><code>{"private ParticleSystemRenderer[] particles"}</code> | The particle renderers that get the species material. |
+| <Link id="m-particles" /><code>{"private ParticleSystemRenderer[] particles"}</code> | <span className="api-desc">The particle renderers that get the species material.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Pooled woodcutting particle effect that destroys itself after a time and takes o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setspecies" /><code>{"void SetSpecies("}<Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> | Sets every particle renderer to the species' non-atlased, non-deforming wood material (channel A). |
+| <Link id="m-setspecies" /><code>{"void SetSpecies("}<Link to="/mod/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> | <span className="api-desc">Sets every particle renderer to the species' non-atlased, non-deforming wood material (channel A).</span> |

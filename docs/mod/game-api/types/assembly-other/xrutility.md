@@ -19,13 +19,13 @@ Works out which XR mode to start in from the command line: `/fly` for no VR, `-v
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultmode" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" DefaultMode"}</code> | The mode used when nothing on the command line says otherwise (OpenXR). |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-defaultmode" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" DefaultMode"}</code> | <span className="api-desc">The mode used when nothing on the command line says otherwise (OpenXR).</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -33,14 +33,14 @@ Works out which XR mode to start in from the command line: `/fly` for no VR, `-v
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcommandxrmode" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" GetCommandXRMode()"}</code> | Reads the XR mode from the command line. |
+| <Link id="m-getcommandxrmode" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" GetCommandXRMode()"}</code> | <span className="api-desc">Reads the XR mode from the command line.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containsvalvekeyword" /><code>{"private static bool ContainsValveKeyword(string commandString)"}</code> | True when the argument is exactly `valve` or `openvr`. |
-| <Link id="m-getcommandmode" /><code>{"private static "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" GetCommandMode(IReadOnlyList<string> args, "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" commandMode)"}</code> | Returns Valve when the `vrmode` argument names it; otherwise logs a warning and keeps the default. |
+| <Link id="m-containsvalvekeyword" /><code>{"private static bool ContainsValveKeyword(string commandString)"}</code> | <span className="api-desc">True when the argument is exactly `valve` or `openvr`.</span> |
+| <Link id="m-getcommandmode" /><code>{"private static "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" GetCommandMode(IReadOnlyList<string> args, "}<Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" commandMode)"}</code> | <span className="api-desc">Returns Valve when the `vrmode` argument names it; otherwise logs a warning and keeps the default.</span> |
 
 </details>

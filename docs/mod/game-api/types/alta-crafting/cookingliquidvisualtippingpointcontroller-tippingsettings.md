@@ -21,23 +21,27 @@ Tipping limits for one liquid level of a cooking container. The controller picks
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> | Creates a `CookingLiquidVisualTippingPointController.TippingSettings` with default values. |
+| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> | <span className="api-desc">Creates a `CookingLiquidVisualTippingPointController.TippingSettings` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> | Tipping threshold given to the liquid visual at this level. |
-| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> | Visual tip limit given to the liquid visual at this level. |
+| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> | <span className="api-desc">Tipping threshold given to the liquid visual at this level.</span> |
+| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> | <span className="api-desc">Visual tip limit given to the liquid visual at this level.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows both values, for debugging. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Shows both values, for debugging.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TippingSettings`:
 
+<div className="api-used-in">
+
 [`CookingLiquidVisualTippingPointController.GetTipLimitForContainerLevel`](/mod/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller#m-gettiplimitforcontainerlevel), [`CookingLiquidVisualTippingPointController.surfaceTipLimitAtDifferentFullnesses`](/mod/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller#m-surfacetiplimitatdifferentfullnesses).
+
+</div>

@@ -21,10 +21,14 @@ A `MemoizeOne` that caches `GetComponent<T>` for the last component passed in, c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MemoizeComponentOne()"}</code> | Creates a `MemoizeComponentOne` with default values. |
+| <Link id="m-ctor" /><code>{"MemoizeComponentOne()"}</code> | <span className="api-desc">Creates a `MemoizeComponentOne` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MemoizeComponentOne&lt;T>`:
 
+<div className="api-used-in">
+
 [`ClimbingHand.getColliderClimbable`](/mod/game-api/types/game-other-namespaces/climbinghand#m-getcolliderclimbable), [`ClimbingHand.getRigidbodyClimbable`](/mod/game-api/types/game-other-namespaces/climbinghand#m-getrigidbodyclimbable).
+
+</div>

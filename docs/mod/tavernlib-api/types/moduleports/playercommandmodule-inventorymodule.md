@@ -21,13 +21,13 @@ The `player inventory` submodule: view an online player's inventory, and save or
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/mod/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> | `player inventory`: server only, shows online players' inventories. |
-| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> | `player inventory load`: server only, writes inventory data into an offline player's save. |
-| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | `player inventory save`: server only, returns a player's inventory data as text, from the live player or from their save file. |
+| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/mod/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/mod/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/mod/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> | <span className="api-desc">`player inventory`: server only, shows online players' inventories.</span> |
+| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> | <span className="api-desc">`player inventory load`: server only, writes inventory data into an offline player's save.</span> |
+| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/mod/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | <span className="api-desc">`player inventory save`: server only, returns a player's inventory data as text, from the live player or from their save file.</span> |
 
 </details>

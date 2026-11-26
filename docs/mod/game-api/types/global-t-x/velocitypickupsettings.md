@@ -23,32 +23,32 @@ Pickup type settings for items held with a velocity joint: how strongly the item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"VelocityPickupSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"VelocityPickupSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>17 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> | Position spring used when the joint is an environmental joint (no damping). |
-| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> | Rotation spring used when the joint is an environmental joint (no damping). |
-| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> | If true, `VelocityJoint` limits how far the held item can be from the shoulder. |
-| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> | Serialized option. Not read anywhere in this build. |
-| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> | Damper of the position drive for swingable pickups. |
-| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> | Maximum force of the position drive for swingable pickups. |
-| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> | Curve passed to the velocity joint to scale position following. |
-| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> | Spring of the position drive for swingable pickups. |
-| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> | Damper of the rotation drive for swingable pickups. |
-| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> | Maximum force of the rotation drive for swingable pickups. |
-| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> | Curve passed to the velocity joint to scale rotation following. |
-| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> | Spring of the rotation drive for swingable pickups. |
-| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> | Rotation spring by distance, used by the distance overload of `ApplyRotationDrive` (which also logs every call). |
-| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> | Client: position multiplier for the held item's velocity joint. The server always uses 9. |
-| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> | Client: rotation multiplier for the held item's velocity joint. The server always uses 75. |
-| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> | Angular Z limit, in degrees, for swingable pickups. |
-| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> | Bounciness of the angular Z limit for swingable pickups. |
+| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> | <span className="api-desc">Position spring used when the joint is an environmental joint (no damping).</span> |
+| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> | <span className="api-desc">Rotation spring used when the joint is an environmental joint (no damping).</span> |
+| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> | <span className="api-desc">If true, `VelocityJoint` limits how far the held item can be from the shoulder.</span> |
+| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> | <span className="api-desc">Serialized option. Not read anywhere in this build.</span> |
+| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> | <span className="api-desc">Damper of the position drive for swingable pickups.</span> |
+| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> | <span className="api-desc">Maximum force of the position drive for swingable pickups.</span> |
+| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> | <span className="api-desc">Curve passed to the velocity joint to scale position following.</span> |
+| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> | <span className="api-desc">Spring of the position drive for swingable pickups.</span> |
+| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> | <span className="api-desc">Damper of the rotation drive for swingable pickups.</span> |
+| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> | <span className="api-desc">Maximum force of the rotation drive for swingable pickups.</span> |
+| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> | <span className="api-desc">Curve passed to the velocity joint to scale rotation following.</span> |
+| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> | <span className="api-desc">Spring of the rotation drive for swingable pickups.</span> |
+| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> | <span className="api-desc">Rotation spring by distance, used by the distance overload of `ApplyRotationDrive` (which also logs every call).</span> |
+| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> | <span className="api-desc">Client: position multiplier for the held item's velocity joint. The server always uses 9.</span> |
+| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> | <span className="api-desc">Client: rotation multiplier for the held item's velocity joint. The server always uses 75.</span> |
+| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> | <span className="api-desc">Angular Z limit, in degrees, for swingable pickups.</span> |
+| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> | <span className="api-desc">Bounciness of the angular Z limit for swingable pickups.</span> |
 
 </details>
 
@@ -56,27 +56,31 @@ Pickup type settings for items held with a velocity joint: how strongly the item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islimitingjointposition-2" /><code>{"bool IsLimitingJointPosition { get; set; }"}</code> | Whether the held item is kept within arm's reach of the shoulder. |
-| <Link id="m-isusingdistancecalculation-2" /><code>{"bool IsUsingDistanceCalculation { get; }"}</code> | Whether the rotation spring should come from the distance curve. |
-| <Link id="m-positionscaler-2" /><code>{"AnimationCurve PositionScaler { get; }"}</code> | Curve that scales how hard the item is pulled toward the hand. |
-| <Link id="m-rotationscaler-2" /><code>{"AnimationCurve RotationScaler { get; }"}</code> | Curve that scales how hard the item is turned toward the hand's rotation. |
-| <Link id="m-velocityjointpositionmultiplier-2" /><code>{"float VelocityJointPositionMultiplier { get; }"}</code> | Client: position pull strength. The server always uses 9. |
-| <Link id="m-velocityjointrotationmultiplier-2" /><code>{"float VelocityJointRotationMultiplier { get; }"}</code> | Client: rotation pull strength. The server always uses 75. |
-| <Link id="m-zanglerotationlimit-2" /><code>{"float ZAngleRotationLimit { get; }"}</code> | Z angle limit for swingable items, in degrees. |
-| <Link id="m-zbounciness-2" /><code>{"float ZBounciness { get; }"}</code> | Bounciness of the Z angle limit for swingable items. |
+| <Link id="m-islimitingjointposition-2" /><code>{"bool IsLimitingJointPosition { get; set; }"}</code> | <span className="api-desc">Whether the held item is kept within arm's reach of the shoulder.</span> |
+| <Link id="m-isusingdistancecalculation-2" /><code>{"bool IsUsingDistanceCalculation { get; }"}</code> | <span className="api-desc">Whether the rotation spring should come from the distance curve.</span> |
+| <Link id="m-positionscaler-2" /><code>{"AnimationCurve PositionScaler { get; }"}</code> | <span className="api-desc">Curve that scales how hard the item is pulled toward the hand.</span> |
+| <Link id="m-rotationscaler-2" /><code>{"AnimationCurve RotationScaler { get; }"}</code> | <span className="api-desc">Curve that scales how hard the item is turned toward the hand's rotation.</span> |
+| <Link id="m-velocityjointpositionmultiplier-2" /><code>{"float VelocityJointPositionMultiplier { get; }"}</code> | <span className="api-desc">Client: position pull strength. The server always uses 9.</span> |
+| <Link id="m-velocityjointrotationmultiplier-2" /><code>{"float VelocityJointRotationMultiplier { get; }"}</code> | <span className="api-desc">Client: rotation pull strength. The server always uses 75.</span> |
+| <Link id="m-zanglerotationlimit-2" /><code>{"float ZAngleRotationLimit { get; }"}</code> | <span className="api-desc">Z angle limit for swingable items, in degrees.</span> |
+| <Link id="m-zbounciness-2" /><code>{"float ZBounciness { get; }"}</code> | <span className="api-desc">Bounciness of the Z angle limit for swingable items.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyenvironmentalpositiondrive" /><code>{"JointDrive ApplyEnvironmentalPositionDrive(JointDrive drive)"}</code> | Sets a drive's spring to the environment position force with no damping, for items held against the world. |
-| <Link id="m-applyenvironmentalrotationdrive" /><code>{"JointDrive ApplyEnvironmentalRotationDrive(JointDrive drive)"}</code> | Sets a drive's spring to the environment rotation force with no damping. |
-| <Link id="m-applyrotationdrive" /><code>{"JointDrive ApplyRotationDrive(JointDrive drive)"}</code> | Sets a drive's spring, damper and max force for rotation. The distance version reads the spring from a curve and logs it. |
-| <Link id="m-applyrotationdrive-2" /><code>{"JointDrive ApplyRotationDrive(JointDrive drive, float distance)"}</code> | Sets a drive's spring, damper and max force for rotation. The distance version reads the spring from a curve and logs it. |
-| <Link id="m-appypositiondrive" /><code>{"JointDrive AppyPositionDrive(JointDrive drive)"}</code> | Sets a drive's spring, damper and max force for position. Used for swingable items. |
+| <Link id="m-applyenvironmentalpositiondrive" /><code>{"JointDrive ApplyEnvironmentalPositionDrive(JointDrive drive)"}</code> | <span className="api-desc">Sets a drive's spring to the environment position force with no damping, for items held against the world.</span> |
+| <Link id="m-applyenvironmentalrotationdrive" /><code>{"JointDrive ApplyEnvironmentalRotationDrive(JointDrive drive)"}</code> | <span className="api-desc">Sets a drive's spring to the environment rotation force with no damping.</span> |
+| <Link id="m-applyrotationdrive" /><code>{"JointDrive ApplyRotationDrive(JointDrive drive)"}</code> | <span className="api-desc">Sets a drive's spring, damper and max force for rotation. The distance version reads the spring from a curve and logs it.</span> |
+| <Link id="m-applyrotationdrive-2" /><code>{"JointDrive ApplyRotationDrive(JointDrive drive, float distance)"}</code> | <span className="api-desc">Sets a drive's spring, damper and max force for rotation. The distance version reads the spring from a curve and logs it.</span> |
+| <Link id="m-appypositiondrive" /><code>{"JointDrive AppyPositionDrive(JointDrive drive)"}</code> | <span className="api-desc">Sets a drive's spring, damper and max force for position. Used for swingable items.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `VelocityPickupSettings`:
 
+<div className="api-used-in">
+
 [`VelocityJoint.Initialize`](/mod/game-api/types/global-t-x/velocityjoint#m-initialize), [`VelocityJoint.velocityPickupSettings`](/mod/game-api/types/global-t-x/velocityjoint#m-velocitypickupsettings).
+
+</div>

@@ -21,16 +21,16 @@ Mesh part for eyes. Packs like other cosmetic meshes but blits with the characte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CosmeticEyePart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CosmeticEyePart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material" /><code>{"private Material material"}</code> | Backing field for `Material`. |
+| <Link id="m-material" /><code>{"private Material material"}</code> | <span className="api-desc">Backing field for `Material`.</span> |
 
 </details>
 
@@ -38,10 +38,10 @@ Mesh part for eyes. Packs like other cosmetic meshes but blits with the characte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> | Material used to show these eyes on the eye pickup (`EyePickup`). |
+| <Link id="m-material-2" /><code>{"Material Material { get; }"}</code> | <span className="api-desc">Material used to show these eyes on the eye pickup (`EyePickup`).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createinput" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{" CreateInput("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Builds the packer input as the base does, then swaps the blit materials for copies of the dummy's eye blit materials. |
+| <Link id="m-createinput" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{" CreateInput("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Builds the packer input as the base does, then swaps the blit materials for copies of the dummy's eye blit materials.</span> |

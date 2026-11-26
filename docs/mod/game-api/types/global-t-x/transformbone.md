@@ -21,20 +21,20 @@ Sets a fixed local position, rotation and scale on one bone of a character dummy
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformBone()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TransformBone()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bone" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" bone"}</code> | Which bone to move. |
-| <Link id="m-dummy" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> | Pointer to the character dummy that owns the rig. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Local position to set. |
-| <Link id="m-rotation" /><code>{"private Vector3 rotation"}</code> | Local rotation to set, as Euler angles. |
-| <Link id="m-scale" /><code>{"private Vector3 scale"}</code> | Local scale to set. |
+| <Link id="m-bone" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" bone"}</code> | <span className="api-desc">Which bone to move.</span> |
+| <Link id="m-dummy" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> | <span className="api-desc">Pointer to the character dummy that owns the rig.</span> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | <span className="api-desc">Local position to set.</span> |
+| <Link id="m-rotation" /><code>{"private Vector3 rotation"}</code> | <span className="api-desc">Local rotation to set, as Euler angles.</span> |
+| <Link id="m-scale" /><code>{"private Vector3 scale"}</code> | <span className="api-desc">Local scale to set.</span> |
 
 </details>
 
@@ -42,13 +42,13 @@ Sets a fixed local position, rotation and scale on one bone of a character dummy
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-move" /><code>{"void Move()"}</code> | Looks up the bone on the dummy's rig map and applies the stored local position, rotation and scale. |
+| <Link id="m-move" /><code>{"void Move()"}</code> | <span className="api-desc">Looks up the bone on the dummy's rig map and applies the stored local position, rotation and scale.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Calls `Move`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Calls `Move`.</span> |
 
 </details>

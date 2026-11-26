@@ -23,16 +23,16 @@ Base for effects that only apply some of the time: the chance is the strength ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ChanceBasedEffectDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected ChanceBasedEffectDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chancemultiplier" /><code>{"private float chanceMultiplier"}</code> | Scales strength into the apply chance. Defaults to 1. |
+| <Link id="m-chancemultiplier" /><code>{"private float chanceMultiplier"}</code> | <span className="api-desc">Scales strength into the apply chance. Defaults to 1.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Base for effects that only apply some of the time: the chance is the strength ti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Applies the effect if a random roll is below strength times `chanceMultiplier`. |
+| <Link id="m-checkapply" /><code>{"override void CheckApply("}<Link to="/mod/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | <span className="api-desc">Applies the effect if a random roll is below strength times `chanceMultiplier`.</span> |

@@ -22,16 +22,16 @@ Editor menu item base for a Unity inspector context menu entry on component type
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> | Creates an `AltaMenuItemBase.CONTEXT` with default values. |
+| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.CONTEXT` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> | The component the context menu was opened on. Its setter is private and nothing in this build sets it. |
+| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> | <span className="api-desc">The component the context menu was opened on. Its setter is private and nothing in this build sets it.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | Returns `CONTEXT/` followed by the name of `T`, the path Unity uses for component context menus. |
+| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | <span className="api-desc">Returns `CONTEXT/` followed by the name of `T`, the path Unity uses for component context menus.</span> |

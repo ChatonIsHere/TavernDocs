@@ -22,23 +22,23 @@ The auth port's answer to a ping: status `pong`, the server name, whether a pass
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PingResponse(string serverName, bool passwordRequired, bool whitelistEnabled, int gamePort, int webPort, int consolePort, string modsHash, int? modsCount)"}</code> | Sets every field of the ping response. |
+| <Link id="m-ctor" /><code>{"PingResponse(string serverName, bool passwordRequired, bool whitelistEnabled, int gamePort, int webPort, int consolePort, string modsHash, int? modsCount)"}</code> | <span className="api-desc">Sets every field of the ping response.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>9 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consoleport" /><code>{"private int ConsolePort { get; set; }"}</code> | The remote console port, which the launcher finds through this ping. |
-| <Link id="m-gameport" /><code>{"private int GamePort { get; set; }"}</code> | The game port. |
-| <Link id="m-modscount" /><code>{"private int? ModsCount { get; set; }"}</code> | Number of enabled server mods, or null if `Mods/` couldn't be read. |
-| <Link id="m-modshash" /><code>{"private string ModsHash { get; set; }"}</code> | Hash of the server's mods, or null if `Mods/` couldn't be read. |
-| <Link id="m-passwordrequired" /><code>{"private bool PasswordRequired { get; set; }"}</code> | Whether the server has a password. |
-| <Link id="m-pong" /><code>{"private string Pong { get; }"}</code> | Always `pong`, sent as `status`. |
-| <Link id="m-servername" /><code>{"private string ServerName { get; set; }"}</code> | The server's name. |
-| <Link id="m-webport" /><code>{"private int WebPort { get; set; }"}</code> | The web port. |
-| <Link id="m-whitelistenabled" /><code>{"private bool WhitelistEnabled { get; set; }"}</code> | Whether the whitelist is on. |
+| <Link id="m-consoleport" /><code>{"private int ConsolePort { get; set; }"}</code> | <span className="api-desc">The remote console port, which the launcher finds through this ping.</span> |
+| <Link id="m-gameport" /><code>{"private int GamePort { get; set; }"}</code> | <span className="api-desc">The game port.</span> |
+| <Link id="m-modscount" /><code>{"private int? ModsCount { get; set; }"}</code> | <span className="api-desc">Number of enabled server mods, or null if `Mods/` couldn't be read.</span> |
+| <Link id="m-modshash" /><code>{"private string ModsHash { get; set; }"}</code> | <span className="api-desc">Hash of the server's mods, or null if `Mods/` couldn't be read.</span> |
+| <Link id="m-passwordrequired" /><code>{"private bool PasswordRequired { get; set; }"}</code> | <span className="api-desc">Whether the server has a password.</span> |
+| <Link id="m-pong" /><code>{"private string Pong { get; }"}</code> | <span className="api-desc">Always `pong`, sent as `status`.</span> |
+| <Link id="m-servername" /><code>{"private string ServerName { get; set; }"}</code> | <span className="api-desc">The server's name.</span> |
+| <Link id="m-webport" /><code>{"private int WebPort { get; set; }"}</code> | <span className="api-desc">The web port.</span> |
+| <Link id="m-whitelistenabled" /><code>{"private bool WhitelistEnabled { get; set; }"}</code> | <span className="api-desc">Whether the whitelist is on.</span> |
 
 </details>

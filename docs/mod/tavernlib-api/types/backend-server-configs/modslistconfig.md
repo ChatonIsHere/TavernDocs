@@ -22,4 +22,4 @@ The `ServerConfigFile` for a modlist file, read by `ModReconciler.ReconcileModLi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModsListConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
+| <Link id="m-ctor" /><code>{"ModsListConfig(string filePath)"}</code> | <span className="api-desc">Created by TavernLib to read and write this config file at the given path.</span> |

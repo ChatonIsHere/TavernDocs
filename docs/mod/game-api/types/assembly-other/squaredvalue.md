@@ -21,4 +21,4 @@ Marker attribute for a serialized float that is stored as a squared value, such 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SquaredValue()"}</code> | Creates a `SquaredValue` with default values. |
+| <Link id="m-ctor" /><code>{"SquaredValue()"}</code> | <span className="api-desc">Creates a `SquaredValue` with default values.</span> |

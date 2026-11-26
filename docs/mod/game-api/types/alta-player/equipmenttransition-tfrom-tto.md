@@ -22,22 +22,22 @@ Base for transitions into and out of the equipment state. They fire when somethi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentTransition("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType)"}</code> | Creates an `EquipmentTransition` from `destinationType`. |
+| <Link id="m-ctor" /><code>{"EquipmentTransition("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationType)"}</code> | <span className="api-desc">Creates an `EquipmentTransition` from `destinationType`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"protected static Action trigger"}</code> | Static callback that `Trigger` calls. Shared by every instance of the same closed type, so only the last one turned on gets it. |
+| <Link id="m-trigger" /><code>{"protected static Action trigger"}</code> | <span className="api-desc">Static callback that `Trigger` calls. Shared by every instance of the same closed type, so only the last one turned on gets it.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equipmentsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" EquipmentSettings { get; }"}</code> | The `EquipmentStateSettings` asset. Not read in this class. |
+| <Link id="m-equipmentsettings" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" EquipmentSettings { get; }"}</code> | <span className="api-desc">The `EquipmentStateSettings` asset. Not read in this class.</span> |
 
 </details>
 
@@ -45,14 +45,14 @@ Base for transitions into and out of the equipment state. They fire when somethi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Points the static `trigger` at this transition. Logs an error instead if the player is missing. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Clears the static `trigger`. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Points the static `trigger` at this transition. Logs an error instead if the player is missing.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Clears the static `trigger`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-triggered" /><code>{"private void Triggered()"}</code> | Runs the transition to the destination state. |
+| <Link id="m-triggered" /><code>{"private void Triggered()"}</code> | <span className="api-desc">Runs the transition to the destination state.</span> |
 
 </details>

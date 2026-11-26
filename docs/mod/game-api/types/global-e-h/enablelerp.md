@@ -22,24 +22,24 @@ Animates a 0 to 1 progress value over time when switched on or off and reports i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnableLerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnableLerp()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lerpanimation" /><code>{"protected Coroutine lerpAnimation"}</code> | The running animation coroutine. |
+| <Link id="m-lerpanimation" /><code>{"protected Coroutine lerpAnimation"}</code> | <span className="api-desc">The running animation coroutine.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | Seconds for a full 0 to 1 change. |
-| <Link id="m-disabledvalue" /><code>{"private float disabledValue"}</code> | Progress at which the off animation stops before snapping to 0. |
-| <Link id="m-enabledvalue" /><code>{"private float enabledValue"}</code> | Progress at which the on animation stops before snapping to 1. |
-| <Link id="m-progress" /><code>{"private float progress"}</code> | Current progress value. |
-| <Link id="m-progressupdate" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" progressUpdate"}</code> | Event that receives the progress. |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | <span className="api-desc">Seconds for a full 0 to 1 change.</span> |
+| <Link id="m-disabledvalue" /><code>{"private float disabledValue"}</code> | <span className="api-desc">Progress at which the off animation stops before snapping to 0.</span> |
+| <Link id="m-enabledvalue" /><code>{"private float enabledValue"}</code> | <span className="api-desc">Progress at which the on animation stops before snapping to 1.</span> |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | <span className="api-desc">Current progress value.</span> |
+| <Link id="m-progressupdate" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" progressUpdate"}</code> | <span className="api-desc">Event that receives the progress.</span> |
 
 </details>
 
@@ -47,20 +47,20 @@ Animates a 0 to 1 progress value over time when switched on or off and reports i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | Current target state. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; private set; }"}</code> | <span className="api-desc">Current target state.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> | Changes the state and restarts the animation if it differs. |
-| <Link id="m-startanimation" /><code>{"protected virtual void StartAnimation()"}</code> | Stops any running animation and starts a new one. |
+| <Link id="m-setenabled" /><code>{"void SetEnabled(bool isEnabled)"}</code> | <span className="api-desc">Changes the state and restarts the animation if it differs.</span> |
+| <Link id="m-startanimation" /><code>{"protected virtual void StartAnimation()"}</code> | <span className="api-desc">Stops any running animation and starts a new one.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animation" /><code>{"private IEnumerator Animation() (iterator)"}</code> | Coroutine that moves progress up to `enabledValue` or down to `disabledValue`, invoking the event each frame, then snaps to 1 or 0. |
+| <Link id="m-animation" /><code>{"private IEnumerator Animation() (iterator)"}</code> | <span className="api-desc">Coroutine that moves progress up to `enabledValue` or down to `disabledValue`, invoking the event each frame, then snaps to 1 or 0.</span> |
 
 </details>

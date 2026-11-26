@@ -22,16 +22,16 @@ Impact modifier asset that multiplies a hit's `Multipliers` by a set amount.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ImpactModifierMultiplier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"ImpactModifierMultiplier()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Factor applied to the hit, default 1.2. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | <span className="api-desc">Factor applied to the hit, default 1.2.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ Impact modifier asset that multiplies a hit's `Multipliers` by a set amount.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Multiplies the hit's `Multipliers` by `multiplier`. |
+| <Link id="m-modifyhit" /><code>{"override void ModifyHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | <span className="api-desc">Multiplies the hit's `Multipliers` by `multiplier`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: renames the asset to match the multiplier, such as "1.2 Multiplier". |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor: renames the asset to match the multiplier, such as "1.2 Multiplier".</span> |
 
 </details>

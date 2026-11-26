@@ -21,17 +21,17 @@ Value provider used by `JsonRangeAttribute`: clamps an int property between `min
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"JsonRangeValueProvider(IValueProvider baseProvider, int min, int max)"}</code> | Creates a `JsonRangeValueProvider` from `baseProvider`, `min` and `max`. |
+| <Link id="m-ctor" /><code>{"JsonRangeValueProvider(IValueProvider baseProvider, int min, int max)"}</code> | <span className="api-desc">Creates a `JsonRangeValueProvider` from `baseProvider`, `min` and `max`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-max" /><code>{"private int max"}</code> | The upper limit. |
-| <Link id="m-min" /><code>{"private int min"}</code> | The lower limit. |
+| <Link id="m-max" /><code>{"private int max"}</code> | <span className="api-desc">The upper limit.</span> |
+| <Link id="m-min" /><code>{"private int min"}</code> | <span className="api-desc">The lower limit.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Value provider used by `JsonRangeAttribute`: clamps an int property between `min
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clamp" /><code>{"override int Clamp(int value)"}</code> | Clamps the value between `min` and `max`. |
+| <Link id="m-clamp" /><code>{"override int Clamp(int value)"}</code> | <span className="api-desc">Clamps the value between `min` and `max`.</span> |

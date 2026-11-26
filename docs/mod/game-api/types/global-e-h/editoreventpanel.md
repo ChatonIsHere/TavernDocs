@@ -21,4 +21,4 @@ Empty `MonoBehaviour` in this build.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorEventPanel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EditorEventPanel()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

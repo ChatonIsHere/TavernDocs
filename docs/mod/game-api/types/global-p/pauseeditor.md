@@ -21,10 +21,10 @@ Controller button handler that does nothing when pressed. Probably a leftover fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PauseEditor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PauseEditor()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Empty. |
+| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/mod/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | <span className="api-desc">Empty.</span> |

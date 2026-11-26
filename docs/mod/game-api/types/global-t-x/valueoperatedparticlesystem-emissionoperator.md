@@ -23,16 +23,16 @@ Base for operators that change a particle system's emission module.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> | Creates a `ValueOperatedParticleSystem.EmissionOperator` with default values. |
+| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> | <span className="api-desc">Creates a `ValueOperatedParticleSystem.EmissionOperator` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> | The emission module being changed. |
+| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> | <span className="api-desc">The emission module being changed.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> | Grabs the target system's emission module. |
+| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> | <span className="api-desc">Grabs the target system's emission module.</span> |

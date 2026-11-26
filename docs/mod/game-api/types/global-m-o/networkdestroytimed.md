@@ -21,18 +21,18 @@ Destroys its entity after a set time plus an optional random extra. Server only;
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkDestroyTimed()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NetworkDestroyTimed()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | Timeline entry for the scheduled destroy. |
-| <Link id="m-randomadditionaltime" /><code>{"private float randomAdditionalTime"}</code> | Up to this many extra random seconds are added. |
-| <Link id="m-time" /><code>{"private float time"}</code> | Seconds before the entity is destroyed. |
+| <Link id="m-entry" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | <span className="api-desc">Timeline entry for the scheduled destroy.</span> |
+| <Link id="m-randomadditionaltime" /><code>{"private float randomAdditionalTime"}</code> | <span className="api-desc">Up to this many extra random seconds are added.</span> |
+| <Link id="m-time" /><code>{"private float time"}</code> | <span className="api-desc">Seconds before the entity is destroyed.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ Destroys its entity after a set time plus an optional random extra. Server only;
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: stops a top-level entity from saving and schedules `Destroy`. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: stops a top-level entity from saving and schedules `Destroy`.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroy" /><code>{"private void Destroy()"}</code> | Destroys the entity across the network, first detaching it if it is embedded in a parent. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the scheduled destroy. |
+| <Link id="m-destroy" /><code>{"private void Destroy()"}</code> | <span className="api-desc">Destroys the entity across the network, first detaching it if it is embedded in a parent.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Cancels the scheduled destroy.</span> |
 
 </details>

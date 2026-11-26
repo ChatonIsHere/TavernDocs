@@ -28,4 +28,8 @@ Which up vector `SplineDecorator` uses when applying offsets: world up or the cu
 
 Members of other types that take, return or hold a `UpMode`:
 
+<div className="api-used-in">
+
 [`SplineDecorator.upMode`](/mod/game-api/types/alta-utilities/splinedecorator#m-upmode).
+
+</div>

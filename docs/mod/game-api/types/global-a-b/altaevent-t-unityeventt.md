@@ -22,17 +22,17 @@ A serializable event with one argument that fires both an inspector UnityEvent a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> | Creates an `AltaEvent` with default values. |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> | <span className="api-desc">Creates an `AltaEvent` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Shared `AltaEvent` logger, used when a handler throws. |
-| <Link id="m-triggered" /><code>{"private UnityEventT triggered"}</code> | The serialized inspector `UnityEvent`, invoked before the C# `Invoked` event. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Shared `AltaEvent` logger, used when a handler throws.</span> |
+| <Link id="m-triggered" /><code>{"private UnityEventT triggered"}</code> | <span className="api-desc">The serialized inspector `UnityEvent`, invoked before the C# `Invoked` event.</span> |
 
 </details>
 
@@ -40,14 +40,14 @@ A serializable event with one argument that fires both an inspector UnityEvent a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> | True if the inspector UnityEvent has persistent listeners. C# handlers added with `+=` do not count. |
+| <Link id="m-haslisteners" /><code>{"bool HasListeners { get; }"}</code> | <span className="api-desc">True if the inspector UnityEvent has persistent listeners. C# handlers added with `+=` do not count.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> | Exposes the inspector `UnityEvent` so `Validate` can clean it. |
+| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> | <span className="api-desc">Exposes the inspector `UnityEvent` so `Validate` can clean it.</span> |
 
 </details>
 
@@ -55,12 +55,12 @@ A serializable event with one argument that fires both an inspector UnityEvent a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoked" /><code>{"event Action<T> Invoked"}</code> | The C# side of the event. |
+| <Link id="m-invoked" /><code>{"event Action<T> Invoked"}</code> | <span className="api-desc">The C# side of the event.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T argument)"}</code> | Fires the inspector event, then the C# `Invoked` event, logging any exception from each. |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Addition("}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | `+` adds a C# handler to `Invoked`. |
-| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Subtraction("}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | `-` removes a C# handler from `Invoked`. |
+| <Link id="m-invoke" /><code>{"void Invoke(T argument)"}</code> | <span className="api-desc">Fires the inspector event, then the C# `Invoked` event, logging any exception from each.</span> |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Addition("}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | <span className="api-desc">`+` adds a C# handler to `Invoked`.</span> |
+| <Link id="m-op-subtraction" /><code>{"static "}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> op_Subtraction("}<Link to="/mod/game-api/types/global-a-b/altaevent-t-unityeventt">{"AltaEvent"}</Link>{"<T, UnityEventT> altaEvent, Action<T> eventHandler)"}</code> | <span className="api-desc">`-` removes a C# handler from `Invoked`.</span> |

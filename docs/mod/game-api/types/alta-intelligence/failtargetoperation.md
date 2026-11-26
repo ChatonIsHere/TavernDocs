@@ -19,12 +19,12 @@ Scoring rule that always returns 0, so a required rule built from it switches it
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private FailTargetOperation()"}</code> | Creates a `FailTargetOperation` with default values. |
+| <Link id="m-ctor" /><code>{"private FailTargetOperation()"}</code> | <span className="api-desc">Creates a `FailTargetOperation` with default values.</span> |
 
 </details>
 
@@ -32,10 +32,10 @@ Scoring rule that always returns 0, so a required rule built from it switches it
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/failtargetoperation">{"FailTargetOperation"}</Link>{" Instance { get; }"}</code> | The single shared instance. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/failtargetoperation">{"FailTargetOperation"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">The single shared instance.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Always returns 0. |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">Always returns 0.</span> |

@@ -22,4 +22,4 @@ Factory with no parameters, for the VContainer layer.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-create" /><code>{"TInstance Create()"}</code> | Makes a new instance. |
+| <Link id="m-create" /><code>{"TInstance Create()"}</code> | <span className="api-desc">Makes a new instance.</span> |

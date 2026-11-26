@@ -22,4 +22,4 @@ Editor menu entry that creates an `ImpactChannelProgressionFilter` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactChannelProgressionFilter.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates an `ImpactChannelProgressionFilter.Create` with default values.</span> |

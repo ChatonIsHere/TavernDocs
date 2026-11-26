@@ -20,17 +20,17 @@ Thread-safe pool of 64 KB byte arrays for received network messages, so the rece
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maximummessagesize" /><code>{"const int MaximumMessageSize"}</code> | Size of every pooled buffer: 65535 bytes. |
-| <Link id="m-maximumpoolsize" /><code>{"const int MaximumPoolSize"}</code> | Cap on pooled buffers (100). Buffers returned past it are dropped. |
+| <Link id="m-maximummessagesize" /><code>{"const int MaximumMessageSize"}</code> | <span className="api-desc">Size of every pooled buffer: 65535 bytes.</span> |
+| <Link id="m-maximumpoolsize" /><code>{"const int MaximumPoolSize"}</code> | <span className="api-desc">Cap on pooled buffers (100). Buffers returned past it are dropped.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ismonitoring" /><code>{"private static bool isMonitoring"}</code> | When true, the editor logs a warning on a full pool. Always false in this build. |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | NLog logger for this class. |
-| <Link id="m-pool" /><code>{"private static readonly ConcurrentBag<byte[]> Pool"}</code> | The `ConcurrentBag` holding free buffers. |
+| <Link id="m-ismonitoring" /><code>{"private static bool isMonitoring"}</code> | <span className="api-desc">When true, the editor logs a warning on a full pool. Always false in this build.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-pool" /><code>{"private static readonly ConcurrentBag<byte[]> Pool"}</code> | <span className="api-desc">The `ConcurrentBag` holding free buffers.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Thread-safe pool of 64 KB byte arrays for received network messages, so the rece
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-get" /><code>{"static byte[] Get()"}</code> | Takes a buffer from the pool, or allocates a new 65535-byte array if it is empty. |
-| <Link id="m-put" /><code>{"static void Put(byte[] bytes)"}</code> | Returns a buffer to the pool unless it already holds more than 100. Callers include the server packet receivers. |
+| <Link id="m-get" /><code>{"static byte[] Get()"}</code> | <span className="api-desc">Takes a buffer from the pool, or allocates a new 65535-byte array if it is empty.</span> |
+| <Link id="m-put" /><code>{"static void Put(byte[] bytes)"}</code> | <span className="api-desc">Returns a buffer to the pool unless it already holds more than 100. Callers include the server packet receivers.</span> |

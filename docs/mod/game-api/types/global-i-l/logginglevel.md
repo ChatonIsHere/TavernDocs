@@ -31,4 +31,8 @@ Log levels from Trace to Fatal, used by the micro tutorial logger to filter its 
 
 Members of other types that take, return or hold a `LoggingLevel`:
 
+<div className="api-used-in">
+
 [`MicroTutorialLogger.IsAboveLogThreshold`](/mod/game-api/types/game-other-namespaces/microtutoriallogger#m-isabovelogthreshold), [`MicroTutorialLogger.LogLevel`](/mod/game-api/types/game-other-namespaces/microtutoriallogger#m-loglevel), [`UnityEditorLoggingSettings.maxLevel`](/mod/game-api/types/global-t-x/unityeditorloggingsettings#m-maxlevel), [`UnityEditorLoggingSettings.MaxLevel`](/mod/game-api/types/global-t-x/unityeditorloggingsettings#m-maxlevel-2), [`UnityEditorLoggingSettings.minLevel`](/mod/game-api/types/global-t-x/unityeditorloggingsettings#m-minlevel), [`UnityEditorLoggingSettings.MinLevel`](/mod/game-api/types/global-t-x/unityeditorloggingsettings#m-minlevel-2), [`UnityLogUtility.ConvertToNLogLevel`](/mod/game-api/types/global-t-x/unitylogutility#m-converttonloglevel-2).
+
+</div>

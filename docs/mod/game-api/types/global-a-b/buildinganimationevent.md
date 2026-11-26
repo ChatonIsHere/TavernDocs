@@ -21,10 +21,14 @@ Serializable `AltaEvent` raised with a `BuildingAnimation`, used for its started
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> | Creates a `BuildingAnimationEvent` with default values. |
+| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> | <span className="api-desc">Creates a `BuildingAnimationEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BuildingAnimationEvent`:
 
+<div className="api-used-in">
+
 [`BuildingAnimation.animationFinished`](/mod/game-api/types/global-a-b/buildinganimation#m-animationfinished), [`BuildingAnimation.animationStarted`](/mod/game-api/types/global-a-b/buildinganimation#m-animationstarted).
+
+</div>

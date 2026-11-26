@@ -21,17 +21,17 @@ Node baker that only bakes LOD 0. Use the shared `Instance`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> | Creates a `WoodcutTreeNodeBakerLod0Only` with default values. |
+| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> | <span className="api-desc">Creates a `WoodcutTreeNodeBakerLod0Only` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/woodcuttreenodebakerlod0only">{"WoodcutTreeNodeBakerLod0Only"}</Link>{" Instance { get; }"}</code> | Shared instance. |
-| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> | 1. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/alta-crafting/woodcuttreenodebakerlod0only">{"WoodcutTreeNodeBakerLod0Only"}</Link>{" Instance { get; }"}</code> | <span className="api-desc">Shared instance.</span> |
+| <Link id="m-maxlods" /><code>{"override int MaxLods { get; }"}</code> | <span className="api-desc">1.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> | Always 1. |
+| <Link id="m-getlodcount" /><code>{"override int GetLodCount("}<Link to="/mod/game-api/types/alta-crafting/woodcuttree-mapnode">{"WoodcutTree.MapNode"}</Link>{" item)"}</code> | <span className="api-desc">Always 1.</span> |

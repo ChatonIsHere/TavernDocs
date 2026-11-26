@@ -21,16 +21,16 @@ Client list row with a second button, used for things like accept and reject on 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ListElementWith2Buttons()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ListElementWith2Buttons()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button2" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button2"}</code> | Backing field for `Button2`. |
+| <Link id="m-button2" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button2"}</code> | <span className="api-desc">Backing field for `Button2`.</span> |
 
 </details>
 
@@ -38,10 +38,14 @@ Client list row with a second button, used for things like accept and reject on 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-button2-2" /><code><Link to="/mod/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button2 { get; }"}</code> | The second button (the first is the base class `Button`). |
+| <Link id="m-button2-2" /><code><Link to="/mod/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button2 { get; }"}</code> | <span className="api-desc">The second button (the first is the base class `Button`).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ListElementWith2Buttons`:
 
+<div className="api-used-in">
+
 [`IncomingGroupRequestPage.listElement`](/mod/game-api/types/alta-menus/incominggrouprequestpage#m-listelement).
+
+</div>

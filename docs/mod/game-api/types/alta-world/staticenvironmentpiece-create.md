@@ -22,4 +22,4 @@ Editor menu entry that creates a new `StaticEnvironmentPiece` asset. Not used at
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StaticEnvironmentPiece.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StaticEnvironmentPiece.Create` with default values.</span> |

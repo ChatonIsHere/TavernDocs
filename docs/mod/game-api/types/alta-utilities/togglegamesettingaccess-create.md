@@ -22,4 +22,4 @@ Editor menu entry that creates a `ToggleGameSettingAccess` asset under Assets/Cr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ToggleGameSettingAccess.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `ToggleGameSettingAccess.Create` with default values.</span> |

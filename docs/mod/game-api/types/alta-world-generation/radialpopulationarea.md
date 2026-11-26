@@ -22,21 +22,21 @@ Point evaluator that finds a ground point by raycasting down at a random spot wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RadialPopulationArea()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RadialPopulationArea()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cachedposition" /><code>{"private Vector3 cachedPosition"}</code> | The transform position read at the start of `GetPoint`. |
-| <Link id="m-existing" /><code>{"private List<Vector2> existing"}</code> | Offsets picked so far, used for the minimum distance check. Never cleared. |
-| <Link id="m-iterationattempts" /><code>{"private int iterationAttempts"}</code> | How many spots to try before giving up. |
-| <Link id="m-minimumdistancefromexisting" /><code>{"private float minimumDistanceFromExisting"}</code> | Minimum distance from earlier picks. Zero or less turns the check off. |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Search radius in metres. Picks cluster toward the centre. |
-| <Link id="m-raycasttest" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationraycast">{"PopulationRaycast"}</Link>{" raycastTest"}</code> | The raycast settings used to find the ground. |
+| <Link id="m-cachedposition" /><code>{"private Vector3 cachedPosition"}</code> | <span className="api-desc">The transform position read at the start of `GetPoint`.</span> |
+| <Link id="m-existing" /><code>{"private List<Vector2> existing"}</code> | <span className="api-desc">Offsets picked so far, used for the minimum distance check. Never cleared.</span> |
+| <Link id="m-iterationattempts" /><code>{"private int iterationAttempts"}</code> | <span className="api-desc">How many spots to try before giving up.</span> |
+| <Link id="m-minimumdistancefromexisting" /><code>{"private float minimumDistanceFromExisting"}</code> | <span className="api-desc">Minimum distance from earlier picks. Zero or less turns the check off.</span> |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Search radius in metres. Picks cluster toward the centre.</span> |
+| <Link id="m-raycasttest" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationraycast">{"PopulationRaycast"}</Link>{" raycastTest"}</code> | <span className="api-desc">The raycast settings used to find the ground.</span> |
 
 </details>
 
@@ -44,4 +44,4 @@ Point evaluator that finds a ground point by raycasting down at a random spot wi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | Tries up to `iterationAttempts` random spots. Returns null at once if a spot is too close to an earlier one. |
+| <Link id="m-getpoint" /><code><Link to="/mod/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPoint()"}</code> | <span className="api-desc">Tries up to `iterationAttempts` random spots. Returns null at once if a spot is too close to an earlier one.</span> |

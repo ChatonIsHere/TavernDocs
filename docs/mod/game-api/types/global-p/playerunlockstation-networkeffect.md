@@ -29,4 +29,8 @@ Effect a player unlock station plays on clients: unlock given, challenge complet
 
 Members of other types that take, return or hold a `NetworkEffect`:
 
+<div className="api-used-in">
+
 [`PlayerUnlockStation.CancelUnlock`](/mod/game-api/types/global-p/playerunlockstation#m-cancelunlock), [`PlayerUnlockStation.syncEffect`](/mod/game-api/types/global-p/playerunlockstation#m-synceffect), [`PlayerUnlockStation.SyncEffect`](/mod/game-api/types/global-p/playerunlockstation#m-synceffect-2).
+
+</div>

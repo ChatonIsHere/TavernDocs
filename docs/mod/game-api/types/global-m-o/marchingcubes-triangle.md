@@ -21,17 +21,21 @@ A triangle produced by `Polygonise`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Triangle()"}</code> | Creates a `MarchingCubes.Triangle` with default values. |
+| <Link id="m-ctor" /><code>{"Triangle()"}</code> | <span className="api-desc">Creates a `MarchingCubes.Triangle` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-point4s" /><code><Link to="/mod/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{"[] point4s"}</code> | Edge key for each vertex (cell coordinate plus edge), so cave meshes can share vertices. |
-| <Link id="m-points" /><code>{"Vector3[] points"}</code> | The three vertex positions. |
+| <Link id="m-point4s" /><code><Link to="/mod/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{"[] point4s"}</code> | <span className="api-desc">Edge key for each vertex (cell coordinate plus edge), so cave meshes can share vertices.</span> |
+| <Link id="m-points" /><code>{"Vector3[] points"}</code> | <span className="api-desc">The three vertex positions.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Triangle`:
 
+<div className="api-used-in">
+
 [`MarchingCubes.Polygonise`](/mod/game-api/types/global-m-o/marchingcubes#m-polygonise).
+
+</div>

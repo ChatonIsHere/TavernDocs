@@ -21,20 +21,20 @@ A UI outline effect that draws eight shadow copies around a graphic, with an opt
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> | Creates a `CustomOutline` with default values. |
+| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> | <span className="api-desc">Creates a `CustomOutline` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-glintcolor" /><code>{"Color glintColor"}</code> | Colour used for the glint vertices. |
-| <Link id="m-glinteffect" /><code>{"bool glintEffect"}</code> | Whether to tint some vertices with `glintColor`. |
-| <Link id="m-glintvertex" /><code>{"int glintVertex"}</code> | Which vertex of each 6-vertex quad the glint centres on (0 to 5). |
-| <Link id="m-glintwidth" /><code>{"int glintWidth"}</code> | How many vertices either side of `glintVertex` also get the glint. |
-| <Link id="m-m-size" /><code>{"float m_size"}</code> | Outline offset in pixels (0 to 15). |
+| <Link id="m-glintcolor" /><code>{"Color glintColor"}</code> | <span className="api-desc">Colour used for the glint vertices.</span> |
+| <Link id="m-glinteffect" /><code>{"bool glintEffect"}</code> | <span className="api-desc">Whether to tint some vertices with `glintColor`.</span> |
+| <Link id="m-glintvertex" /><code>{"int glintVertex"}</code> | <span className="api-desc">Which vertex of each 6-vertex quad the glint centres on (0 to 5).</span> |
+| <Link id="m-glintwidth" /><code>{"int glintWidth"}</code> | <span className="api-desc">How many vertices either side of `glintVertex` also get the glint.</span> |
+| <Link id="m-m-size" /><code>{"float m_size"}</code> | <span className="api-desc">Outline offset in pixels (0 to 15).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modifymesh" /><code>{"override void ModifyMesh(VertexHelper vh)"}</code> | Optionally tints the glint vertices, then adds eight offset copies of the mesh in `effectColor` (four diagonals and four sides at 1.5 times the size). |
+| <Link id="m-modifymesh" /><code>{"override void ModifyMesh(VertexHelper vh)"}</code> | <span className="api-desc">Optionally tints the glint vertices, then adds eight offset copies of the mesh in `effectColor` (four diagonals and four sides at 1.5 times the size).</span> |

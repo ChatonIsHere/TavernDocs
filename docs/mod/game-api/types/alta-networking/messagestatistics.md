@@ -21,4 +21,4 @@ Network profiling list named "Messages" that shows the per message type statisti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MessageStatistics(Dictionary<"}<Link to="/mod/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/mod/game-api/types/alta-networking/messagetypestatistic">{"MessageTypeStatistic"}</Link>{"> messageDictionary)"}</code> | Creates a `MessageStatistics` from `messageDictionary`. |
+| <Link id="m-ctor" /><code>{"MessageStatistics(Dictionary<"}<Link to="/mod/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/mod/game-api/types/alta-networking/messagetypestatistic">{"MessageTypeStatistic"}</Link>{"> messageDictionary)"}</code> | <span className="api-desc">Creates a `MessageStatistics` from `messageDictionary`.</span> |

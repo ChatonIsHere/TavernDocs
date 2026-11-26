@@ -22,4 +22,4 @@ Editor menu folder `Township/Build`: menu item classes inherit it to appear unde
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Build()"}</code> | Creates an `AltaMenuItemBase.Township.Build` with default values. |
+| <Link id="m-ctor" /><code>{"protected Build()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Build` with default values.</span> |

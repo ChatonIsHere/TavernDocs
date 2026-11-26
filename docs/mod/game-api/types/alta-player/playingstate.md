@@ -23,37 +23,37 @@ The player state for normally playing in the world. On the server, entering it s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingState()"}</code> | Creates a `PlayingState` with default values. |
+| <Link id="m-ctor" /><code>{"PlayingState()"}</code> | <span className="api-desc">Creates a `PlayingState` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isrespawning" /><code>{"bool IsRespawning { get; set; }"}</code> | Set by the dead to playing transition so the new controller spawns at the respawn point. |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | Display name, "Playing State". |
-| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-player/playingstatesettings">{"PlayingStateSettings"}</Link>{" Settings { get; }"}</code> | The state's settings cast to `PlayingStateSettings`. |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | Always `PlayerStateType.Playing`. |
+| <Link id="m-isrespawning" /><code>{"bool IsRespawning { get; set; }"}</code> | <span className="api-desc">Set by the dead to playing transition so the new controller spawns at the respawn point.</span> |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | <span className="api-desc">Display name, "Playing State".</span> |
+| <Link id="m-settings" /><code><Link to="/mod/game-api/types/alta-player/playingstatesettings">{"PlayingStateSettings"}</Link>{" Settings { get; }"}</code> | <span className="api-desc">The state's settings cast to `PlayingStateSettings`.</span> |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | <span className="api-desc">Always `PlayerStateType.Playing`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-syncstateenter" /><code>{"override void SyncStateEnter("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends nothing extra when entering. |
-| <Link id="m-syncstateleave" /><code>{"override void SyncStateLeave("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends nothing extra when leaving. |
-| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | Server: spawns a new player controller and adds the transitions out of playing. |
-| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: adds the transition to the equipment state for the local player. |
-| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | Client: removes the equipment transition for the local player. |
-| <Link id="m-ondecorated" /><code>{"protected override void OnDecorated("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Server: turns off the playing to combat transition while another state (other than equipment) decorates this one. |
-| <Link id="m-ondecoratedremote" /><code>{"protected override void OnDecoratedRemote("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Client: turns off the equipment transition for the local player while decorated. |
-| <Link id="m-onundecorated" /><code>{"protected override void OnUndecorated("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Server: turns the combat transition back on when a non-equipment decorator is removed. |
-| <Link id="m-onundecoratedremote" /><code>{"protected override void OnUndecoratedRemote("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | Client: turns the equipment transition back on for the local player. |
+| <Link id="m-syncstateenter" /><code>{"override void SyncStateEnter("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Sends nothing extra when entering.</span> |
+| <Link id="m-syncstateleave" /><code>{"override void SyncStateLeave("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Sends nothing extra when leaving.</span> |
+| <Link id="m-onactivate" /><code>{"protected override void OnActivate()"}</code> | <span className="api-desc">Server: spawns a new player controller and adds the transitions out of playing.</span> |
+| <Link id="m-onactivateremote" /><code>{"protected override void OnActivateRemote(bool isPlayerCharacterSpawned)"}</code> | <span className="api-desc">Client: adds the transition to the equipment state for the local player.</span> |
+| <Link id="m-ondeactivateremote" /><code>{"protected override void OnDeactivateRemote(bool isPlayerCharacterSpawned)"}</code> | <span className="api-desc">Client: removes the equipment transition for the local player.</span> |
+| <Link id="m-ondecorated" /><code>{"protected override void OnDecorated("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | <span className="api-desc">Server: turns off the playing to combat transition while another state (other than equipment) decorates this one.</span> |
+| <Link id="m-ondecoratedremote" /><code>{"protected override void OnDecoratedRemote("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | <span className="api-desc">Client: turns off the equipment transition for the local player while decorated.</span> |
+| <Link id="m-onundecorated" /><code>{"protected override void OnUndecorated("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | <span className="api-desc">Server: turns the combat transition back on when a non-equipment decorator is removed.</span> |
+| <Link id="m-onundecoratedremote" /><code>{"protected override void OnUndecoratedRemote("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" baseState, "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" decorator)"}</code> | <span className="api-desc">Client: turns the equipment transition back on for the local player.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> | Spawns the player controller prefab for the player's mode (VR, flat and so on), as a respawn if `IsRespawning`. |
+| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> | <span className="api-desc">Spawns the player controller prefab for the player's mode (VR, flat and so on), as a respawn if `IsRespawning`.</span> |
 
 </details>
 
@@ -61,4 +61,8 @@ The player state for normally playing in the world. On the server, entering it s
 
 Members of other types that take, return or hold a `PlayingState`:
 
+<div className="api-used-in">
+
 [`CombatState.CombatState`](/mod/game-api/types/alta-player/combatstate#m-ctor), [`DownedState.DownedState`](/mod/game-api/types/alta-player/downedstate#m-ctor), [`EquipmentState.EquipmentState`](/mod/game-api/types/alta-player/equipmentstate#m-ctor), [`SpiritState.SpiritState`](/mod/game-api/types/alta-player/spiritstate#m-ctor).
+
+</div>

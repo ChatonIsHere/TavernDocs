@@ -21,12 +21,12 @@ A three-argument named symbol in the unused Prolog-like logic engine, with typed
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | Creates an `Atom` from `name`. |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | <span className="api-desc">Creates an `Atom` from `name`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-define" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, T3 term3, float weighting = 1)"}</code> | Makes a definition with three terms, an optional goal (default `True`) and weighting (default 1). |
-| <Link id="m-define-2" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, T3 term3, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> | Makes a definition with three terms, an optional goal (default `True`) and weighting (default 1). |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/atom-t1-t2-t3">{"Atom"}</Link>{"<T1, T2, T3> op_Implicit(string name)"}</code> | Lets a string be used as an atom of that name. |
+| <Link id="m-define" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, T3 term3, float weighting = 1)"}</code> | <span className="api-desc">Makes a definition with three terms, an optional goal (default `True`) and weighting (default 1).</span> |
+| <Link id="m-define-2" /><code><Link to="/mod/game-api/types/alta-intelligence/baseatom-definition">{"BaseAtom.Definition"}</Link>{" Define(T1 term1, T2 term2, T3 term3, "}<Link to="/mod/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting = 1)"}</code> | <span className="api-desc">Makes a definition with three terms, an optional goal (default `True`) and weighting (default 1).</span> |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-intelligence/atom-t1-t2-t3">{"Atom"}</Link>{"<T1, T2, T3> op_Implicit(string name)"}</code> | <span className="api-desc">Lets a string be used as an atom of that name.</span> |

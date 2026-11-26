@@ -30,4 +30,8 @@ Size multiplier for a material's textures in an atlas: four times, twice, regula
 
 Members of other types that take, return or hold a `Scale`:
 
+<div className="api-used-in">
+
 [`AtlasDefinition.AtlasedMaterial.scale`](/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial#m-scale).
+
+</div>

@@ -21,10 +21,14 @@ Serializable `AltaEvent` with a `Pickup` argument. Runs inspector-wired listener
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PickupEvent()"}</code> | Creates a `PickupEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PickupEvent()"}</code> | <span className="api-desc">Creates a `PickupEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PickupEvent`:
 
+<div className="api-used-in">
+
 [`DurabilityModule.stateChangeEffect`](/mod/game-api/types/global-c-d/durabilitymodule#m-statechangeeffect), [`Pickup.breakEvent`](/mod/game-api/types/global-p/pickup#m-breakevent), [`Pickup.BreakEvent`](/mod/game-api/types/global-p/pickup#m-breakevent-2), [`PickupArea.added`](/mod/game-api/types/global-p/pickuparea#m-added), [`PickupArea.Added`](/mod/game-api/types/global-p/pickuparea#m-added-2), [`PickupArea.removed`](/mod/game-api/types/global-p/pickuparea#m-removed), [`PickupArea.Removed`](/mod/game-api/types/global-p/pickuparea#m-removed-2), [`PickupClamp.onPickupClamped`](/mod/game-api/types/global-p/pickupclamp#m-onpickupclamped).
+
+</div>

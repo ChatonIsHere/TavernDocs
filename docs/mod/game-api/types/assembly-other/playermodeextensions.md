@@ -19,13 +19,13 @@ Extension methods on the `PlayerMode` flags.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cosmetics" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Cosmetics"}</code> | Flag mask of the modes that use cosmetics. Same as `VR`. |
-| <Link id="m-vr" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" VR"}</code> | Flag mask of the VR modes: OpenVR, Oculus and PicoXR. |
+| <Link id="m-cosmetics" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Cosmetics"}</code> | <span className="api-desc">Flag mask of the modes that use cosmetics. Same as `VR`.</span> |
+| <Link id="m-vr" /><code>{"private const "}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" VR"}</code> | <span className="api-desc">Flag mask of the VR modes: OpenVR, Oculus and PicoXR.</span> |
 
 </details>
 
@@ -33,5 +33,5 @@ Extension methods on the `PlayerMode` flags.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkcosmetics" /><code>{"static bool CheckCosmetics("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | True if the mode is a VR mode (OpenVR, Oculus or PicoXR). Same test as `CheckVR`. |
-| <Link id="m-checkvr" /><code>{"static bool CheckVR("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | True if the mode includes OpenVR, Oculus or PicoXR. |
+| <Link id="m-checkcosmetics" /><code>{"static bool CheckCosmetics("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | <span className="api-desc">True if the mode is a VR mode (OpenVR, Oculus or PicoXR). Same test as `CheckVR`.</span> |
+| <Link id="m-checkvr" /><code>{"static bool CheckVR("}<Link to="/mod/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode)"}</code> | <span className="api-desc">True if the mode includes OpenVR, Oculus or PicoXR.</span> |

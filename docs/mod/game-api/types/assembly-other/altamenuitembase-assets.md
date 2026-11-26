@@ -23,4 +23,4 @@ Menu path node for the editor's Assets menu.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Assets()"}</code> | Creates an `AltaMenuItemBase.Assets` with default values. |
+| <Link id="m-ctor" /><code>{"protected Assets()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets` with default values.</span> |

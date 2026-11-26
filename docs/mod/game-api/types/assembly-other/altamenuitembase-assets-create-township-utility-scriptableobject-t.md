@@ -22,4 +22,4 @@ Editor menu marker: a ScriptableObject type's nested `Create` class inherits it 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Utility.ScriptableObject` with default values. |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Utility.ScriptableObject` with default values.</span> |

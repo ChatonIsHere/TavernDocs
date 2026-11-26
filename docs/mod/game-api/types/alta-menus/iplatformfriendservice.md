@@ -20,12 +20,16 @@ Platform (Oculus) friend list service, got from `InterfaceResolver.IPlatformFrie
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getfriends" /><code>{"Task<List<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetFriends()"}</code> | Gets the player's platform friends. |
-| <Link id="m-getlinkedfriends" /><code>{"Task<List<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetLinkedFriends()"}</code> | Gets platform friends who have linked an Alta account. |
-| <Link id="m-getunlinkedfriends" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetUnlinkedFriends()"}</code> | Gets platform friends without a linked Alta account. Used by the group invite panel. |
+| <Link id="m-getfriends" /><code>{"Task<List<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetFriends()"}</code> | <span className="api-desc">Gets the player's platform friends.</span> |
+| <Link id="m-getlinkedfriends" /><code>{"Task<List<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetLinkedFriends()"}</code> | <span className="api-desc">Gets platform friends who have linked an Alta account.</span> |
+| <Link id="m-getunlinkedfriends" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/alta-menus/friend">{"Friend"}</Link>{">> GetUnlinkedFriends()"}</code> | <span className="api-desc">Gets platform friends without a linked Alta account. Used by the group invite panel.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPlatformFriendService`:
 
+<div className="api-used-in">
+
 [`InterfaceResolver.CreatePlatformFriendService`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-createplatformfriendservice), [`InterfaceResolver.iPlatformFriendService`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-iplatformfriendservice), [`InterfaceResolver.IPlatformFriendService`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-iplatformfriendservice-2).
+
+</div>

@@ -23,10 +23,14 @@ A book flair asset for the top or bottom end of the spine, used in `SpineFlairs`
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpineEdge()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SpineEdge()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpineEdge`:
 
+<div className="api-used-in">
+
 [`SpineFlairs.bottom`](/mod/game-api/types/alta-items/spineflairs#m-bottom), [`SpineFlairs.Bottom`](/mod/game-api/types/alta-items/spineflairs#m-bottom-2), [`SpineFlairs.top`](/mod/game-api/types/alta-items/spineflairs#m-top), [`SpineFlairs.Top`](/mod/game-api/types/alta-items/spineflairs#m-top-2).
+
+</div>

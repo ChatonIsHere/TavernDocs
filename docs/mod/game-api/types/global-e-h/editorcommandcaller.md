@@ -21,17 +21,17 @@ Editor helper meant to run a console command from an inspector button. Its metho
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorCommandCaller()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EditorCommandCaller()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-command" /><code>{"private string command"}</code> | Command text to run. |
-| <Link id="m-isrunning" /><code>{"private bool isRunning"}</code> | Inspector button field labelled Run. |
+| <Link id="m-command" /><code>{"private string command"}</code> | <span className="api-desc">Command text to run.</span> |
+| <Link id="m-isrunning" /><code>{"private bool isRunning"}</code> | <span className="api-desc">Inspector button field labelled Run.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Editor helper meant to run a console command from an inspector button. Its metho
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runcommandasync" /><code>{"async void RunCommandAsync()"}</code> | Empty in this build. |
+| <Link id="m-runcommandasync" /><code>{"async void RunCommandAsync()"}</code> | <span className="api-desc">Empty in this build.</span> |

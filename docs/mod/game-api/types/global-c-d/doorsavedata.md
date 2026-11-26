@@ -23,10 +23,10 @@ Save data for a `Door`: just whether it is open.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DoorSaveData()"}</code> | Creates a `DoorSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"DoorSaveData()"}</code> | <span className="api-desc">Creates a `DoorSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isopen" /><code>{"bool isOpen"}</code> | Whether the door was open when saved. |
+| <Link id="m-isopen" /><code>{"bool isOpen"}</code> | <span className="api-desc">Whether the door was open when saved.</span> |

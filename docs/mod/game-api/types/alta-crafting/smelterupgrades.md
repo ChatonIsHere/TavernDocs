@@ -24,18 +24,18 @@ An unlockable set of smelter abilities: extra recipes, metals it can melt for mo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SmelterUpgrades()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SmelterUpgrades()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> | Backing field for `BonusSmelterSpeed`, added to the smelter speed multiplier while unlocked. |
-| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> | Backing field for `PhysicalMaterials`: ingot materials the smelter accepts once unlocked. |
-| <Link id="m-recipes" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> | Backing field for `Recipes`: smelting recipes unlocked. |
+| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> | <span className="api-desc">Backing field for `BonusSmelterSpeed`, added to the smelter speed multiplier while unlocked.</span> |
+| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> | <span className="api-desc">Backing field for `PhysicalMaterials`: ingot materials the smelter accepts once unlocked.</span> |
+| <Link id="m-recipes" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> | <span className="api-desc">Backing field for `Recipes`: smelting recipes unlocked.</span> |
 
 </details>
 
@@ -43,12 +43,16 @@ An unlockable set of smelter abilities: extra recipes, metals it can melt for mo
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bonussmelterspeed-2" /><code>{"float BonusSmelterSpeed { get; }"}</code> | Added to the smelter's speed multiplier while this upgrade is unlocked, and taken off again when it is locked. |
-| <Link id="m-physicalmaterials-2" /><code>{"IReadOnlyCollection<"}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> PhysicalMaterials { get; }"}</code> | Metal materials whose ingots the smelter may pour into moulds once this is unlocked. |
-| <Link id="m-recipes-2" /><code>{"IReadOnlyCollection<"}<Link to="/mod/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"> Recipes { get; }"}</code> | Smelting recipes the smelter can run once this is unlocked. |
+| <Link id="m-bonussmelterspeed-2" /><code>{"float BonusSmelterSpeed { get; }"}</code> | <span className="api-desc">Added to the smelter's speed multiplier while this upgrade is unlocked, and taken off again when it is locked.</span> |
+| <Link id="m-physicalmaterials-2" /><code>{"IReadOnlyCollection<"}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> PhysicalMaterials { get; }"}</code> | <span className="api-desc">Metal materials whose ingots the smelter may pour into moulds once this is unlocked.</span> |
+| <Link id="m-recipes-2" /><code>{"IReadOnlyCollection<"}<Link to="/mod/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"> Recipes { get; }"}</code> | <span className="api-desc">Smelting recipes the smelter can run once this is unlocked.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SmelterUpgrades`:
 
+<div className="api-used-in">
+
 [`SmelterUnlockManager.defaultUpgrades`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-defaultupgrades), [`SmelterUnlockManager.Lock`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-lock), [`SmelterUnlockManager.simpleServerDefaultUpgrades`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-simpleserverdefaultupgrades), [`SmelterUnlockManager.Unlock`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-unlock), [`SmelterUnlockManager.unlocks`](/mod/game-api/types/alta-crafting/smelterunlockmanager#m-unlocks), [`ItemSmelterRecipeUnlock.unlockDefinition`](/mod/game-api/types/global-i-l/itemsmelterrecipeunlock#m-unlockdefinition), [`ItemSmelterRecipeUnlock.UnlockDefinition`](/mod/game-api/types/global-i-l/itemsmelterrecipeunlock#m-unlockdefinition-2).
+
+</div>

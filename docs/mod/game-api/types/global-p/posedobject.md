@@ -21,10 +21,14 @@ Empty marker component. Player controllers expose a list of them as `ExtraObject
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PosedObject()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PosedObject()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PosedObject`:
 
+<div className="api-used-in">
+
 [`LocomotionlessPlayerController.ExtraObjects`](/mod/game-api/types/global-i-l/locomotionlessplayercontroller#m-extraobjects), [`SteamVRDeviceLifecycle.AttemptAssignDevice`](/mod/game-api/types/global-s/steamvrdevicelifecycle#m-attemptassigndevice).
+
+</div>

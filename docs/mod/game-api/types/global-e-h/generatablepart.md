@@ -22,17 +22,21 @@ Base for parts of a `GenerationCore` (a procedurally placed static piece) that a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected GeneratablePart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected GeneratablePart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatedynamic" /><code>{"virtual void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | Called after `GenerateStatic`, only when the spawn data is generating (first time). Use it to make saved, dynamic content. |
-| <Link id="m-generatestatic" /><code>{"virtual void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Called every time the piece generates, with whether terrain may be changed. Use it for the parts rebuilt on each load. |
+| <Link id="m-generatedynamic" /><code>{"virtual void GenerateDynamic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | <span className="api-desc">Called after `GenerateStatic`, only when the spawn data is generating (first time). Use it to make saved, dynamic content.</span> |
+| <Link id="m-generatestatic" /><code>{"virtual void GenerateStatic("}<Link to="/mod/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | <span className="api-desc">Called every time the piece generates, with whether terrain may be changed. Use it for the parts rebuilt on each load.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GeneratablePart`:
 
+<div className="api-used-in">
+
 [`GenerationCore.AddPart`](/mod/game-api/types/global-e-h/generationcore#m-addpart), [`GenerationCore.parts`](/mod/game-api/types/global-e-h/generationcore#m-parts), [`GenerationCore.workingParts`](/mod/game-api/types/global-e-h/generationcore#m-workingparts).
+
+</div>

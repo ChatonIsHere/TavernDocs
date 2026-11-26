@@ -24,4 +24,4 @@ Save data for a `ForgedPointCollection`, one element per forged point.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForgedPointCollectionSaveData()"}</code> | Creates a `ForgedPointCollectionSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"ForgedPointCollectionSaveData()"}</code> | <span className="api-desc">Creates a `ForgedPointCollectionSaveData` with default values.</span> |

@@ -24,18 +24,18 @@ Stat definition for poison. While above 0, each stat update deals a small poison
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PoisonStat()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PoisonStat()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-poisondamage" /><code>{"private readonly "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" poisonDamage"}</code> | Damage data with `DamageSource.Poison`, set as the change source on the hurt stat. |
-| <Link id="m-poisonedstatdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" poisonedStatDefinition"}</code> | The stat that takes the damage. |
-| <Link id="m-tickdamage" /><code>{"private float tickDamage"}</code> | Amount taken from the poisoned stat each update. |
+| <Link id="m-poisondamage" /><code>{"private readonly "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" poisonDamage"}</code> | <span className="api-desc">Damage data with `DamageSource.Poison`, set as the change source on the hurt stat.</span> |
+| <Link id="m-poisonedstatdefinition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" poisonedStatDefinition"}</code> | <span className="api-desc">The stat that takes the damage.</span> |
+| <Link id="m-tickdamage" /><code>{"private float tickDamage"}</code> | <span className="api-desc">Amount taken from the poisoned stat each update.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ Stat definition for poison. While above 0, each stat update deals a small poison
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Starts the poison update while the value is above 0 and stops it at 0. |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Starts the poison update while the value is above 0 and stops it at 0.</span> |

@@ -21,27 +21,27 @@ Debug component that logs its object's X scale on start and whenever it changes.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ScaleTracker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ScaleTracker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-localscale" /><code>{"private float localscale"}</code> | Last logged X scale. |
+| <Link id="m-localscale" /><code>{"private float localscale"}</code> | <span className="api-desc">Last logged X scale.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Records the starting X scale and logs it. |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Logs the X scale when the transform changed or the scale differs from the last value. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Records the starting X scale and logs it.</span> |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Logs the X scale when the transform changed or the scale differs from the last value.</span> |
 
 </details>

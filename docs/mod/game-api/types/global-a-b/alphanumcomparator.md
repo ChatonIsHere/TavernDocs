@@ -22,19 +22,19 @@ Non-generic comparer for natural string sorting, so "item2" sorts before "item10
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> | Creates an `AlphanumComparator` with default values. |
+| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> | <span className="api-desc">Creates an `AlphanumComparator` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-compare" /><code>{"int Compare(object x, object y)"}</code> | Splits both strings into digit and non-digit runs and compares them in turn, numbers by value. |
+| <Link id="m-compare" /><code>{"int Compare(object x, object y)"}</code> | <span className="api-desc">Splits both strings into digit and non-digit runs and compares them in turn, numbers by value.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-inchunk" /><code>{"private bool InChunk(char ch, char otherCh)"}</code> | True if a character is the same kind (digit or not) as the run's first character. |
+| <Link id="m-inchunk" /><code>{"private bool InChunk(char ch, char otherCh)"}</code> | <span className="api-desc">True if a character is the same kind (digit or not) as the run's first character.</span> |
 
 </details>

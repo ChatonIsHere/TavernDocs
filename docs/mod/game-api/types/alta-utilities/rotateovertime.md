@@ -21,16 +21,16 @@ Script animation that spins a transform at a fixed rate in degrees per second on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RotateOverTime()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RotateOverTime()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotationamount" /><code>{"private Vector3 rotationAmount"}</code> | Degrees per second to rotate around each local axis. |
+| <Link id="m-rotationamount" /><code>{"private Vector3 rotationAmount"}</code> | <span className="api-desc">Degrees per second to rotate around each local axis.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Script animation that spins a transform at a fixed rate in degrees per second on
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> | Adds `rotationAmount` times delta time to the transform's local Euler rotation. |
+| <Link id="m-updateanimation" /><code>{"protected override void UpdateAnimation()"}</code> | <span className="api-desc">Adds `rotationAmount` times delta time to the transform's local Euler rotation.</span> |

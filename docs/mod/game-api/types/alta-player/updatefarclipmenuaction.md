@@ -22,17 +22,17 @@ Debug quick access action that raises or lowers the player camera's far clip pla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UpdateFarClipMenuAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"UpdateFarClipMenuAction()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isincrease" /><code>{"private bool isIncrease"}</code> | True to raise the far clip, false to lower it. |
-| <Link id="m-timer" /><code>{"private float timer"}</code> | Time until which another press counts as quick and doubles the step. |
+| <Link id="m-isincrease" /><code>{"private bool isIncrease"}</code> | <span className="api-desc">True to raise the far clip, false to lower it.</span> |
+| <Link id="m-timer" /><code>{"private float timer"}</code> | <span className="api-desc">Time until which another press counts as quick and doubles the step.</span> |
 
 </details>
 
@@ -40,11 +40,11 @@ Debug quick access action that raises or lowers the player camera's far clip pla
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Raise: while far clip is under 800. Lower: while it is more than 10 past the near clip. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">Raise: while far clip is under 800. Lower: while it is more than 10 past the near clip.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Changes the far clip plane and shows the new value as a message. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">Changes the far clip plane and shows the new value as a message.</span> |

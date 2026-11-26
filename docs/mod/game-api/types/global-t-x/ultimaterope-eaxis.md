@@ -32,4 +32,8 @@ An axis direction (plus or minus X, Y or Z) used by `UltimateRope` for its coil 
 
 Members of other types that take, return or hold a `EAxis`:
 
+<div className="api-used-in">
+
 [`UltimateRope.BoneAxis`](/mod/game-api/types/global-t-x/ultimaterope#m-boneaxis), [`UltimateRope.CoilAxisRight`](/mod/game-api/types/global-t-x/ultimaterope#m-coilaxisright), [`UltimateRope.CoilAxisUp`](/mod/game-api/types/global-t-x/ultimaterope#m-coilaxisup), [`UltimateRope.GetAxisVector`](/mod/game-api/types/global-t-x/ultimaterope#m-getaxisvector), [`UltimateRope.LinkAxis`](/mod/game-api/types/global-t-x/ultimaterope#m-linkaxis).
+
+</div>

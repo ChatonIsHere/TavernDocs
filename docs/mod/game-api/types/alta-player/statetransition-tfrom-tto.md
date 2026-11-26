@@ -22,21 +22,21 @@ Base for a rule that moves a player from one player state to another. Subclasses
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected StateTransition("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> | Creates a `StateTransition` from `destinationStateType`. |
+| <Link id="m-ctor" /><code>{"protected StateTransition("}<Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" destinationStateType)"}</code> | <span className="api-desc">Creates a `StateTransition` from `destinationStateType`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger for transitions. |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | <span className="api-desc">Shared logger for transitions.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Backing field for `IsActive`. |
-| <Link id="m-sourcestate" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" sourceState"}</code> | Backing field for `SourceState`. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | <span className="api-desc">Backing field for `IsActive`.</span> |
+| <Link id="m-sourcestate" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" sourceState"}</code> | <span className="api-desc">Backing field for `SourceState`.</span> |
 
 </details>
 
@@ -44,20 +44,20 @@ Base for a rule that moves a player from one player state to another. Subclasses
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destinationstatetype" /><code><Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" DestinationStateType { get; }"}</code> | The state type this transition leads to. |
-| <Link id="m-sourcestate-2" /><code><Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" SourceState { get; }"}</code> | The state this transition belongs to. |
-| <Link id="m-statetransitionsmanager" /><code><Link to="/mod/game-api/types/alta-player/istatetransitionsmanager">{"IStateTransitionsManager"}</Link>{" StateTransitionsManager { get; set; }"}</code> | Manager used to switch states. |
-| <Link id="m-player" /><code>{"protected "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" { get; private set; }"}</code> | The player whose state this is, taken from the source state. |
-| <Link id="m-playercontroller" /><code>{"protected "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> | The player's controller. Filled in later if the player had none when the source state was set. |
-| <Link id="m-statemanager" /><code>{"protected "}<Link to="/mod/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; private set; }"}</code> | The player's state manager, taken from the source state. |
+| <Link id="m-destinationstatetype" /><code><Link to="/mod/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" DestinationStateType { get; }"}</code> | <span className="api-desc">The state type this transition leads to.</span> |
+| <Link id="m-sourcestate-2" /><code><Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" SourceState { get; }"}</code> | <span className="api-desc">The state this transition belongs to.</span> |
+| <Link id="m-statetransitionsmanager" /><code><Link to="/mod/game-api/types/alta-player/istatetransitionsmanager">{"IStateTransitionsManager"}</Link>{" StateTransitionsManager { get; set; }"}</code> | <span className="api-desc">Manager used to switch states.</span> |
+| <Link id="m-player" /><code>{"protected "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The player whose state this is, taken from the source state.</span> |
+| <Link id="m-playercontroller" /><code>{"protected "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The player's controller. Filled in later if the player had none when the source state was set.</span> |
+| <Link id="m-statemanager" /><code>{"protected "}<Link to="/mod/game-api/types/alta-player/playerstatemanager">{"PlayerStateManager"}</Link>{" StateManager { get; private set; }"}</code> | <span className="api-desc">The player's state manager, taken from the source state.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-isactive" /><code>{"private bool Alta.PlayerStates.Transitions.IPlayerStateTransition.IsActive { get; set; }"}</code> | Turning it on calls `AddListeners`, off calls `RemoveListeners`. Setting the same value again only logs a warning. |
-| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-sourcestate" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Alta.PlayerStates.Transitions.IPlayerStateTransition.SourceState { set; }"}</code> | Sets the source state and picks up its state manager, player and player controller (waiting for the controller if it isn't set yet). |
+| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-isactive" /><code>{"private bool Alta.PlayerStates.Transitions.IPlayerStateTransition.IsActive { get; set; }"}</code> | <span className="api-desc">Turning it on calls `AddListeners`, off calls `RemoveListeners`. Setting the same value again only logs a warning.</span> |
+| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-sourcestate" /><code>{"private "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Alta.PlayerStates.Transitions.IPlayerStateTransition.SourceState { set; }"}</code> | <span className="api-desc">Sets the source state and picks up its state manager, player and player controller (waiting for the controller if it isn't set yet).</span> |
 
 </details>
 
@@ -65,19 +65,19 @@ Base for a rule that moves a player from one player state to another. Subclasses
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected abstract void AddListeners()"}</code> | Called when the transition becomes active; subscribe to whatever triggers it here. |
-| <Link id="m-destinationpreactivationcallback" /><code>{"protected virtual void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | Called on the new state just before it activates. Does nothing by default. |
-| <Link id="m-ontransitioncomplete" /><code>{"protected void OnTransitionComplete("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" transitionedState)"}</code> | Called after the switch with the new current state. Empty. |
-| <Link id="m-removelisteners" /><code>{"protected abstract void RemoveListeners()"}</code> | Called when the transition becomes inactive; undo `AddListeners` here. |
-| <Link id="m-transitiontodestinationstate" /><code>{"protected virtual "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> | Switches the player to the destination state and returns it. |
+| <Link id="m-addlisteners" /><code>{"protected abstract void AddListeners()"}</code> | <span className="api-desc">Called when the transition becomes active; subscribe to whatever triggers it here.</span> |
+| <Link id="m-destinationpreactivationcallback" /><code>{"protected virtual void DestinationPreActivationCallback("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" activatedState)"}</code> | <span className="api-desc">Called on the new state just before it activates. Does nothing by default.</span> |
+| <Link id="m-ontransitioncomplete" /><code>{"protected void OnTransitionComplete("}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" transitionedState)"}</code> | <span className="api-desc">Called after the switch with the new current state. Empty.</span> |
+| <Link id="m-removelisteners" /><code>{"protected abstract void RemoveListeners()"}</code> | <span className="api-desc">Called when the transition becomes inactive; undo `AddListeners` here.</span> |
+| <Link id="m-transitiontodestinationstate" /><code>{"protected virtual "}<Link to="/mod/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" TransitionToDestinationState()"}</code> | <span className="api-desc">Switches the player to the destination state and returns it.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.Clear()"}</code> | Clears the source state. |
-| <Link id="m-transitiontodestinationstateexternal" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.TransitionToDestinationStateExternal()"}</code> | Runs the transition from outside; used by the transitions manager's `TriggerTransition`. |
-| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Picks up the player controller once the player gets one, then unhooks. |
+| <Link id="m-clear" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.Clear()"}</code> | <span className="api-desc">Clears the source state.</span> |
+| <Link id="m-transitiontodestinationstateexternal" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.TransitionToDestinationStateExternal()"}</code> | <span className="api-desc">Runs the transition from outside; used by the transitions manager's `TriggerTransition`.</span> |
+| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Picks up the player controller once the player gets one, then unhooks.</span> |
 
 </details>

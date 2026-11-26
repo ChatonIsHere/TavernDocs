@@ -18,12 +18,12 @@ Collects a text log of warnings and errors during static batching and build baki
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-session" /><code>{"private static StringBuilder session"}</code> | The report text being built. |
+| <Link id="m-session" /><code>{"private static StringBuilder session"}</code> | <span className="api-desc">The report text being built.</span> |
 
 </details>
 
@@ -31,9 +31,9 @@ Collects a text log of warnings and errors during static batching and build baki
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clearsession" /><code>{"static void ClearSession()"}</code> | Starts a new empty report. |
-| <Link id="m-error" /><code>{"static void Error(Type context, string error)"}</code> | Adds an error line tagged with the context type's name. |
-| <Link id="m-exception" /><code>{"static void Exception(Type context, Exception exception)"}</code> | Adds an exception line tagged with the context type's name. |
-| <Link id="m-getsession" /><code>{"static string GetSession()"}</code> | Returns the report text so far. |
-| <Link id="m-log" /><code>{"static void Log(Type context, string log)"}</code> | Adds a log line tagged with the context type's name. |
-| <Link id="m-warning" /><code>{"static void Warning(Type context, string warning)"}</code> | Adds a warning line tagged with the context type's name. |
+| <Link id="m-clearsession" /><code>{"static void ClearSession()"}</code> | <span className="api-desc">Starts a new empty report.</span> |
+| <Link id="m-error" /><code>{"static void Error(Type context, string error)"}</code> | <span className="api-desc">Adds an error line tagged with the context type's name.</span> |
+| <Link id="m-exception" /><code>{"static void Exception(Type context, Exception exception)"}</code> | <span className="api-desc">Adds an exception line tagged with the context type's name.</span> |
+| <Link id="m-getsession" /><code>{"static string GetSession()"}</code> | <span className="api-desc">Returns the report text so far.</span> |
+| <Link id="m-log" /><code>{"static void Log(Type context, string log)"}</code> | <span className="api-desc">Adds a log line tagged with the context type's name.</span> |
+| <Link id="m-warning" /><code>{"static void Warning(Type context, string warning)"}</code> | <span className="api-desc">Adds a warning line tagged with the context type's name.</span> |

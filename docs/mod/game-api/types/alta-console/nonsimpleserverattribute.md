@@ -21,16 +21,16 @@ Console requirement: the command runs freely on non-simple servers; on a simple 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NonSimpleServerAttribute(params string[] roles)"}</code> | Creates a `NonSimpleServerAttribute` from `roles`. |
+| <Link id="m-ctor" /><code>{"NonSimpleServerAttribute(params string[] roles)"}</code> | <span className="api-desc">Creates a `NonSimpleServerAttribute` from `roles`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-roles" /><code>{"private string[] roles"}</code> | Policies needed on a simple server; `debug_features` when none are given. |
+| <Link id="m-roles" /><code>{"private string[] roles"}</code> | <span className="api-desc">Policies needed on a simple server; `debug_features` when none are given.</span> |
 
 </details>
 
@@ -38,5 +38,5 @@ Console requirement: the command runs freely on non-simple servers; on a simple 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | False with no server; true on a non-simple server; otherwise true only if the caller has every listed policy. |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "Non Simple Server". |
+| <Link id="m-check" /><code>{"override bool Check("}<Link to="/mod/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context)"}</code> | <span className="api-desc">False with no server; true on a non-simple server; otherwise true only if the caller has every listed policy.</span> |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">Returns "Non Simple Server".</span> |

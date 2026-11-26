@@ -22,10 +22,14 @@ A serializable `UnityEvent` that passes a `Transform`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformHandler()"}</code> | Creates a `TransformHandler` with default values. |
+| <Link id="m-ctor" /><code>{"TransformHandler()"}</code> | <span className="api-desc">Creates a `TransformHandler` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TransformHandler`:
 
+<div className="api-used-in">
+
 [`CosmeticPresetDestroyer.trophyGotDestroyed`](/mod/game-api/types/alta-customization/cosmeticpresetdestroyer#m-trophygotdestroyed), [`RejectDockArea.rejectEffect`](/mod/game-api/types/alta-items/rejectdockarea#m-rejecteffect), [`Leaderboard.individualChange`](/mod/game-api/types/global-i-l/leaderboard#m-individualchange), [`Leaderboard.personalBestChange`](/mod/game-api/types/global-i-l/leaderboard#m-personalbestchange), [`PostboxSender.coinInsertEffect`](/mod/game-api/types/global-p/postboxsender#m-coininserteffect), [`PostboxSender.rejectEffect`](/mod/game-api/types/global-p/postboxsender#m-rejecteffect), [`PostboxSender.sendEffect`](/mod/game-api/types/global-p/postboxsender#m-sendeffect).
+
+</div>

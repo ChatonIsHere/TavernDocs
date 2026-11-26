@@ -20,4 +20,4 @@ Something that writes its own part of a cluster to a stream. Nothing in this bui
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serializeclusterpart" /><code>{"void SerializeClusterPart("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes this object's cluster data on the stream. |
+| <Link id="m-serializeclusterpart" /><code>{"void SerializeClusterPart("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Reads or writes this object's cluster data on the stream.</span> |

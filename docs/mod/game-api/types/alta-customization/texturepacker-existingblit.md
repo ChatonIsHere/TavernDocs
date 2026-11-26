@@ -21,19 +21,19 @@ Key for a texture already packed into the cosmetics atlas, so parts with the sam
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ExistingBlit(int workingIndex, Texture2D texture, "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA, "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB)"}</code> | Creates a `TexturePacker.ExistingBlit` from `workingIndex`, `texture`, `colorA` and `colorB`. |
+| <Link id="m-ctor" /><code>{"ExistingBlit(int workingIndex, Texture2D texture, "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA, "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB)"}</code> | <span className="api-desc">Creates a `TexturePacker.ExistingBlit` from `workingIndex`, `texture`, `colorA` and `colorB`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colora" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA"}</code> | Primary colour applied. |
-| <Link id="m-colorb" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB"}</code> | Secondary colour applied. |
-| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> | The source texture. |
-| <Link id="m-workingindex" /><code>{"private int workingIndex"}</code> | The part's working index, or 0 when sharing is allowed. |
+| <Link id="m-colora" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA"}</code> | <span className="api-desc">Primary colour applied.</span> |
+| <Link id="m-colorb" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB"}</code> | <span className="api-desc">Secondary colour applied.</span> |
+| <Link id="m-texture" /><code>{"private Texture2D texture"}</code> | <span className="api-desc">The source texture.</span> |
+| <Link id="m-workingindex" /><code>{"private int workingIndex"}</code> | <span className="api-desc">The part's working index, or 0 when sharing is allowed.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Key for a texture already packed into the cosmetics atlas, so parts with the sam
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | Equal when index, texture and both colours are the same objects. |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash from the index, texture and both colours. |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | <span className="api-desc">Equal when index, texture and both colours are the same objects.</span> |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | <span className="api-desc">Hash from the index, texture and both colours.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ExistingBlit`:
 
+<div className="api-used-in">
+
 [`TexturePacker.existing`](/mod/game-api/types/alta-customization/texturepacker#m-existing).
+
+</div>

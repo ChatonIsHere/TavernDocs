@@ -23,19 +23,19 @@ Forest spawn point modifier asset that only allows spawning in certain forest sp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpaceFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SpaceFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allowedtypes" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" allowedTypes"}</code> | Space types that keep their weight. |
-| <Link id="m-isnonspaceallowed" /><code>{"private bool isNonSpaceAllowed"}</code> | Whether points outside any space keep their weight. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger. Unused in this code. |
-| <Link id="m-redirects" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spacefilter-redirect">{"SpaceFilter.Redirect"}</Link>{"[] redirects"}</code> | Space types that switch to another fill set's spawn modifiers instead of being dropped. |
+| <Link id="m-allowedtypes" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" allowedTypes"}</code> | <span className="api-desc">Space types that keep their weight.</span> |
+| <Link id="m-isnonspaceallowed" /><code>{"private bool isNonSpaceAllowed"}</code> | <span className="api-desc">Whether points outside any space keep their weight.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger. Unused in this code.</span> |
+| <Link id="m-redirects" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spacefilter-redirect">{"SpaceFilter.Redirect"}</Link>{"[] redirects"}</code> | <span className="api-desc">Space types that switch to another fill set's spawn modifiers instead of being dropped.</span> |
 
 </details>
 
@@ -43,4 +43,4 @@ Forest spawn point modifier asset that only allows spawning in certain forest sp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Keeps the point if its space type is allowed, swaps in a redirect's modifiers if one matches, else zeroes the weight. |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/mod/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/mod/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | <span className="api-desc">Keeps the point if its space type is allowed, swaps in a redirect's modifiers if one matches, else zeroes the weight.</span> |

@@ -22,22 +22,22 @@ Old save format (version 1) for `LogicGateReceiver`, before the inverted-output 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> | Creates a `LogicGateSaveData1` with default values. |
+| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> | <span className="api-desc">Creates a `LogicGateSaveData1` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-operationtype" /><code><Link to="/mod/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> | Which logic operation the gate applies to its inputs. |
+| <Link id="m-operationtype" /><code><Link to="/mod/game-api/types/alta-items/logicoperationtype">{"LogicOperationType"}</Link>{" operationType"}</code> | <span className="api-desc">Which logic operation the gate applies to its inputs.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> | Logic data of each linked bool sender, one per gate input. |
+| <Link id="m-datas" /><code><Link to="/mod/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{"[] Datas { get; set; }"}</code> | <span className="api-desc">Logic data of each linked bool sender, one per gate input.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `LogicGateSaveData`, keeping the inputs and operation; the output is not inverted. |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/mod/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | <span className="api-desc">Converts to `LogicGateSaveData`, keeping the inputs and operation; the output is not inverted.</span> |

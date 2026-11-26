@@ -20,11 +20,11 @@ Collects the shared serialize timers of every `INetworkSerialized` type marked w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prepareforwritetimers" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> prepareForWriteTimers"}</code> | Each profiled type's public static `prepareForWriteTimer`, by type name. |
-| <Link id="m-serializetimers" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> serializeTimers"}</code> | Each profiled type's public static `serializeTimer`, by type name. |
+| <Link id="m-prepareforwritetimers" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> prepareForWriteTimers"}</code> | <span className="api-desc">Each profiled type's public static `prepareForWriteTimer`, by type name.</span> |
+| <Link id="m-serializetimers" /><code>{"static Dictionary<string, "}<Link to="/mod/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{"> serializeTimers"}</code> | <span className="api-desc">Each profiled type's public static `serializeTimer`, by type name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-resetalltimers" /><code>{"static void ResetAllTimers()"}</code> | Records and resets every collected timer, plus the `EntitySerializer` prepare and serialize durations. |
+| <Link id="m-resetalltimers" /><code>{"static void ResetAllTimers()"}</code> | <span className="api-desc">Records and resets every collected timer, plus the `EntitySerializer` prepare and serialize durations.</span> |

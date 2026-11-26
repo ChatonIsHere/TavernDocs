@@ -21,22 +21,22 @@ Settings component from the SA Collider Builder asset for building colliders fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SABoneColliderBuilder()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SABoneColliderBuilder()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bonecolliderbuilderproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty">{"SABoneColliderCommon.SABoneColliderBuilderProperty"}</Link>{" boneColliderBuilderProperty"}</code> | All build settings: split, reducer, collider and rigidbody. |
-| <Link id="m-cleanupmodified" /><code>{"bool cleanupModified"}</code> | Editor flag. Not serialized. |
-| <Link id="m-edittingbonecolliderbuilderproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty">{"SABoneColliderCommon.SABoneColliderBuilderProperty"}</Link>{" edittingBoneColliderBuilderProperty"}</code> | Copy of the settings being edited in the inspector. Not serialized. |
-| <Link id="m-isdebug" /><code>{"bool isDebug"}</code> | Editor debug flag. Not serialized. |
+| <Link id="m-bonecolliderbuilderproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty">{"SABoneColliderCommon.SABoneColliderBuilderProperty"}</Link>{" boneColliderBuilderProperty"}</code> | <span className="api-desc">All build settings: split, reducer, collider and rigidbody.</span> |
+| <Link id="m-cleanupmodified" /><code>{"bool cleanupModified"}</code> | <span className="api-desc">Editor flag. Not serialized.</span> |
+| <Link id="m-edittingbonecolliderbuilderproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty">{"SABoneColliderCommon.SABoneColliderBuilderProperty"}</Link>{" edittingBoneColliderBuilderProperty"}</code> | <span className="api-desc">Copy of the settings being edited in the inspector. Not serialized.</span> |
+| <Link id="m-isdebug" /><code>{"bool isDebug"}</code> | <span className="api-desc">Editor debug flag. Not serialized.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-colliderproperty">{"SAColliderBuilderCommon.ColliderProperty"}</Link>{" colliderProperty { get; }"}</code> | Collider settings from `boneColliderBuilderProperty`, or null. |
-| <Link id="m-reducerproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty">{"SAColliderBuilderCommon.ReducerProperty"}</Link>{" reducerProperty { get; }"}</code> | Shape reduction settings from `boneColliderBuilderProperty`, or null. |
-| <Link id="m-rigidbodyproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" rigidbodyProperty { get; }"}</code> | Rigidbody settings from `boneColliderBuilderProperty`, or null. |
-| <Link id="m-splitproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-splitproperty">{"SABoneColliderCommon.SplitProperty"}</Link>{" splitProperty { get; }"}</code> | Bone weight split settings from `boneColliderBuilderProperty`, or null. |
+| <Link id="m-colliderproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-colliderproperty">{"SAColliderBuilderCommon.ColliderProperty"}</Link>{" colliderProperty { get; }"}</code> | <span className="api-desc">Collider settings from `boneColliderBuilderProperty`, or null.</span> |
+| <Link id="m-reducerproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty">{"SAColliderBuilderCommon.ReducerProperty"}</Link>{" reducerProperty { get; }"}</code> | <span className="api-desc">Shape reduction settings from `boneColliderBuilderProperty`, or null.</span> |
+| <Link id="m-rigidbodyproperty" /><code><Link to="/mod/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty">{"SAColliderBuilderCommon.RigidbodyProperty"}</Link>{" rigidbodyProperty { get; }"}</code> | <span className="api-desc">Rigidbody settings from `boneColliderBuilderProperty`, or null.</span> |
+| <Link id="m-splitproperty" /><code><Link to="/mod/game-api/types/global-s/sabonecollidercommon-splitproperty">{"SABoneColliderCommon.SplitProperty"}</Link>{" splitProperty { get; }"}</code> | <span className="api-desc">Bone weight split settings from `boneColliderBuilderProperty`, or null.</span> |

@@ -21,18 +21,22 @@ Exception that carries an `ApiError` and an HTTP status code (500 unless given).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> | Creates the exception with `errorCode`, `message`, `httpCode`. |
-| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/mod/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> | Creates the exception with `errorCode`, `message`, `httpCode`. |
+| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> | <span className="api-desc">Creates the exception with `errorCode`, `message`, `httpCode`.</span> |
+| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/mod/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> | <span className="api-desc">Creates the exception with `errorCode`, `message`, `httpCode`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-apierror" /><code><Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> | The error body. |
-| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> | HTTP status code for the error. |
+| <Link id="m-apierror" /><code><Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> | <span className="api-desc">The error body.</span> |
+| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> | <span className="api-desc">HTTP status code for the error.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ApiErrorException`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.CreateApiErrorExceptionAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-createapierrorexceptionasync), [`HttpResponseExtensionMethods.CreateApiErrorExceptionAsync`](/mod/game-api/types/assembly-api-models/httpresponseextensionmethods#m-createapierrorexceptionasync).
+
+</div>

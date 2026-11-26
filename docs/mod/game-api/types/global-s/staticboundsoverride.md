@@ -21,17 +21,17 @@ Fixed bounds for a prefab. `GetPointerBounds` uses it instead of measuring rende
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StaticBoundsOverride()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StaticBoundsOverride()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> | Backing field for `Bounds`. |
-| <Link id="m-btnreset" /><code>{"private bool btnReset"}</code> | Inspector button that calls `Reset`. |
+| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> | <span className="api-desc">Backing field for `Bounds`.</span> |
+| <Link id="m-btnreset" /><code>{"private bool btnReset"}</code> | <span className="api-desc">Inspector button that calls `Reset`.</span> |
 
 </details>
 
@@ -39,16 +39,16 @@ Fixed bounds for a prefab. `GetPointerBounds` uses it instead of measuring rende
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> | The override bounds. |
+| <Link id="m-bounds-2" /><code>{"Bounds Bounds { get; }"}</code> | <span className="api-desc">The override bounds.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the bounds as a wire box. |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> | Sets the bounds from the object's renderers. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the bounds as a wire box.</span> |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> | <span className="api-desc">Sets the bounds from the object's renderers.</span> |
 
 </details>

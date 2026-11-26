@@ -29,4 +29,8 @@ Flags for when an `ImpactTool` resets its impactors: on being blocked, on a vali
 
 Members of other types that take, return or hold a `ResetConditions`:
 
+<div className="api-used-in">
+
 [`ImpactTool.resetConditions`](/mod/game-api/types/alta-items/impacttool#m-resetconditions).
+
+</div>

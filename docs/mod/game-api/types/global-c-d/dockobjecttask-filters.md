@@ -29,4 +29,8 @@ Flags for `DockObjectTask`: count docking done by the player themselves, by othe
 
 Members of other types that take, return or hold a `Filters`:
 
+<div className="api-used-in">
+
 [`DockObjectTask.filters`](/mod/game-api/types/global-c-d/dockobjecttask#m-filters).
+
+</div>

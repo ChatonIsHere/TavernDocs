@@ -29,4 +29,8 @@ How a `FixedStatChangeHook` applies its value: set, add or multiply.
 
 Members of other types that take, return or hold a `OperationType`:
 
+<div className="api-used-in">
+
 [`FixedStatChangeHook.operationType`](/mod/game-api/types/alta-intelligence/fixedstatchangehook#m-operationtype).
+
+</div>

@@ -21,17 +21,17 @@ Placed surface dock that players can chisel off. Server: it ignores hits while a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChiselableSurfaceDock()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ChiselableSurfaceDock()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pickupdocks" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"[] pickupDocks"}</code> | Docks checked before damage is taken. |
-| <Link id="m-unplacedsurfacedockprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" unplacedSurfaceDockPrefab"}</code> | Prefab spawned in place of this one when it breaks. |
+| <Link id="m-pickupdocks" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"[] pickupDocks"}</code> | <span className="api-desc">Docks checked before damage is taken.</span> |
+| <Link id="m-unplacedsurfacedockprefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" unplacedSurfaceDockPrefab"}</code> | <span className="api-desc">Prefab spawned in place of this one when it breaks.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Placed surface dock that players can chisel off. Server: it ignores hits while a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onbrokenserver" /><code>{"protected override void OnBrokenServer(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Server: runs the base break, then replaces this entity with `unplacedSurfaceDockPrefab`. |
-| <Link id="m-ondamagetakenserver" /><code>{"protected override bool OnDamageTakenServer(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | Server: refuses damage while any listed pickup dock has an item in it. |
+| <Link id="m-onbrokenserver" /><code>{"protected override void OnBrokenServer(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | <span className="api-desc">Server: runs the base break, then replaces this entity with `unplacedSurfaceDockPrefab`.</span> |
+| <Link id="m-ondamagetakenserver" /><code>{"protected override bool OnDamageTakenServer(float damage, Vector3 position, Vector3 direction, "}<Link to="/mod/game-api/types/alta-crafting/chiselingtool">{"ChiselingTool"}</Link>{" tool, Collider hitCollider)"}</code> | <span className="api-desc">Server: refuses damage while any listed pickup dock has an item in it.</span> |

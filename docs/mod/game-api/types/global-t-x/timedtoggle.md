@@ -21,28 +21,28 @@ A local component that flips a target GameObject on and off every `delay` second
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimedToggle()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TimedToggle()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> | Seconds left until the next toggle. Starts at -1 so the first frame toggles straight away. |
-| <Link id="m-delay" /><code>{"private float delay"}</code> | Seconds between toggles (minimum 0.01). |
-| <Link id="m-target" /><code>{"private GameObject target"}</code> | The GameObject whose active state is flipped. |
+| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> | <span className="api-desc">Seconds left until the next toggle. Starts at -1 so the first frame toggles straight away.</span> |
+| <Link id="m-delay" /><code>{"private float delay"}</code> | <span className="api-desc">Seconds between toggles (minimum 0.01).</span> |
+| <Link id="m-target" /><code>{"private GameObject target"}</code> | <span className="api-desc">The GameObject whose active state is flipped.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> | Counts down `currentTime` and toggles `target` each time it runs out, then restarts the countdown. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | <span className="api-desc">Counts down `currentTime` and toggles `target` each time it runs out, then restarts the countdown.</span> |
 
 </details>

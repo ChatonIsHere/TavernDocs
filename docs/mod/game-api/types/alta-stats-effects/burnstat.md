@@ -24,18 +24,18 @@ Stat definition for being on fire. Above the ignite threshold it drains the `hea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BurnStat()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"BurnStat()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> | Health lost per stat update for a given burn value. |
-| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> | Backing field for `IgniteThreshold`. |
-| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> | Burn value removed every stat update while above 0. |
+| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> | <span className="api-desc">Health lost per stat update for a given burn value.</span> |
+| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> | <span className="api-desc">Backing field for `IgniteThreshold`.</span> |
+| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> | <span className="api-desc">Burn value removed every stat update while above 0.</span> |
 
 </details>
 
@@ -43,10 +43,10 @@ Stat definition for being on fire. Above the ignite threshold it drains the `hea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> | Burn value above which the target starts taking damage. |
+| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> | <span className="api-desc">Burn value above which the target starts taking damage.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Hooks the stat up: starts the health drain above `igniteThreshold`, stops it at 0, and lowers the burn by `putOutSpeed` each update. |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/mod/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/mod/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Hooks the stat up: starts the health drain above `igniteThreshold`, stops it at 0, and lowers the burn by `putOutSpeed` each update.</span> |

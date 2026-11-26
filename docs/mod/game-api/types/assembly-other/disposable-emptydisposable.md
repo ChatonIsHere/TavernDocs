@@ -20,12 +20,12 @@ Disposable that does nothing. Used for `Disposable.Empty`.
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> | Creates a `Disposable.EmptyDisposable` with default values. |
+| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> | <span className="api-desc">Creates a `Disposable.EmptyDisposable` with default values.</span> |
 
 </details>
 
@@ -33,10 +33,10 @@ Disposable that does nothing. Used for `Disposable.Empty`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-singleton" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/disposable-emptydisposable">{"Disposable.EmptyDisposable"}</Link>{" Singleton"}</code> | The shared instance. |
+| <Link id="m-singleton" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/disposable-emptydisposable">{"Disposable.EmptyDisposable"}</Link>{" Singleton"}</code> | <span className="api-desc">The shared instance.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Does nothing. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Does nothing.</span> |

@@ -23,10 +23,14 @@ A book flair asset for the middle of a cover next to the spine, used as the fron
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FaceSpineMiddle()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FaceSpineMiddle()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FaceSpineMiddle`:
 
+<div className="api-used-in">
+
 [`SpineFaceFlairs.backMiddle`](/mod/game-api/types/alta-items/spinefaceflairs#m-backmiddle), [`SpineFaceFlairs.BackMiddle`](/mod/game-api/types/alta-items/spinefaceflairs#m-backmiddle-2), [`SpineFaceFlairs.frontMiddle`](/mod/game-api/types/alta-items/spinefaceflairs#m-frontmiddle), [`SpineFaceFlairs.FrontMiddle`](/mod/game-api/types/alta-items/spinefaceflairs#m-frontmiddle-2).
+
+</div>

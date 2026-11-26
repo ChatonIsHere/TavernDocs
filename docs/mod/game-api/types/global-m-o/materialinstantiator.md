@@ -21,15 +21,15 @@ Gives each renderer on its object its own copy of its material when it wakes, so
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialInstantiator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MaterialInstantiator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Replaces each renderer's shared material with a new copy. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Replaces each renderer's shared material with a new copy.</span> |
 
 </details>

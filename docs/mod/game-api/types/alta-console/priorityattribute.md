@@ -22,10 +22,10 @@ Sets a console command overload's priority. When several commands match, higher 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> | Creates a `PriorityAttribute` from `priority`. |
+| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> | <span className="api-desc">Creates a `PriorityAttribute` from `priority`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-priority" /><code>{"int Priority { get; private set; }"}</code> | The priority value; default 0. |
+| <Link id="m-priority" /><code>{"int Priority { get; private set; }"}</code> | <span className="api-desc">The priority value; default 0.</span> |

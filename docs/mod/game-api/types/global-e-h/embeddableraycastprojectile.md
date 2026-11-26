@@ -21,28 +21,28 @@ Links a `RaycastProjectile` to an `Embeddable`, so a raycast hit makes the proje
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-embeddable" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{" embeddable"}</code> | The embeddable that sticks into the hit. |
-| <Link id="m-raycastprojectile" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/raycastprojectile">{"RaycastProjectile"}</Link>{" raycastProjectile"}</code> | The projectile whose hits are forwarded. |
+| <Link id="m-embeddable" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/embeddable">{"Embeddable"}</Link>{" embeddable"}</code> | <span className="api-desc">The embeddable that sticks into the hit.</span> |
+| <Link id="m-raycastprojectile" /><code>{"private "}<Link to="/mod/game-api/types/global-q-r/raycastprojectile">{"RaycastProjectile"}</Link>{" raycastProjectile"}</code> | <span className="api-desc">The projectile whose hits are forwarded.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generatehitforembeddable" /><code>{"private void GenerateHitForEmbeddable(RaycastHit hit)"}</code> | Passes the hit collider, point and normal to the embeddable as an external collision. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Subscribes to the projectile's collided event. |
+| <Link id="m-generatehitforembeddable" /><code>{"private void GenerateHitForEmbeddable(RaycastHit hit)"}</code> | <span className="api-desc">Passes the hit collider, point and normal to the embeddable as an external collision.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Subscribes to the projectile's collided event.</span> |
 
 </details>

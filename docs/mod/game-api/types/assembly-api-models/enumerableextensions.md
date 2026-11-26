@@ -21,9 +21,9 @@ Small collection helpers used by the API models.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addall" /><code>{"static void AddAll<T>(ICollection<T> list, IEnumerable<T> itemsToAdd)"}</code> | Adds every item from a sequence to the collection. |
-| <Link id="m-asenumerable" /><code>{"static IEnumerable<T> AsEnumerable<T>(T item) (iterator)"}</code> | Wraps a single item in a one-item sequence. |
-| <Link id="m-aslist" /><code>{"static List<T> AsList<T>(T item)"}</code> | Wraps a single item in a one-item list. |
-| <Link id="m-batch" /><code>{"static IEnumerable<IEnumerable<TSource>> Batch<TSource>(IEnumerable<TSource> source, int size) (iterator)"}</code> | Splits a sequence into chunks of the given size; the last chunk may be shorter. |
-| <Link id="m-containsany" /><code>{"static bool ContainsAny<T>(ICollection<T> list, IEnumerable<T> otherList)"}</code> | True if the collection contains any item of the other sequence. |
-| <Link id="m-removeall" /><code>{"static void RemoveAll<T>(ICollection<T> list, IEnumerable<T> itemsToRemove)"}</code> | Removes every item of a sequence from the collection. |
+| <Link id="m-addall" /><code>{"static void AddAll<T>(ICollection<T> list, IEnumerable<T> itemsToAdd)"}</code> | <span className="api-desc">Adds every item from a sequence to the collection.</span> |
+| <Link id="m-asenumerable" /><code>{"static IEnumerable<T> AsEnumerable<T>(T item) (iterator)"}</code> | <span className="api-desc">Wraps a single item in a one-item sequence.</span> |
+| <Link id="m-aslist" /><code>{"static List<T> AsList<T>(T item)"}</code> | <span className="api-desc">Wraps a single item in a one-item list.</span> |
+| <Link id="m-batch" /><code>{"static IEnumerable<IEnumerable<TSource>> Batch<TSource>(IEnumerable<TSource> source, int size) (iterator)"}</code> | <span className="api-desc">Splits a sequence into chunks of the given size; the last chunk may be shorter.</span> |
+| <Link id="m-containsany" /><code>{"static bool ContainsAny<T>(ICollection<T> list, IEnumerable<T> otherList)"}</code> | <span className="api-desc">True if the collection contains any item of the other sequence.</span> |
+| <Link id="m-removeall" /><code>{"static void RemoveAll<T>(ICollection<T> list, IEnumerable<T> itemsToRemove)"}</code> | <span className="api-desc">Removes every item of a sequence from the collection.</span> |

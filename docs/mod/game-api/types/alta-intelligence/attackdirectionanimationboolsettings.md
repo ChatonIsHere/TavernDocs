@@ -23,10 +23,10 @@ Asset that drives an animator bool from where the target's weapon is: true when 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionAnimationBoolSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AttackDirectionAnimationBoolSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> | Returns a new `BoolAnimation`. |
+| <Link id="m-getanimation" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iattackdirectionanimation">{"IAttackDirectionAnimation"}</Link>{" GetAnimation { get; }"}</code> | <span className="api-desc">Returns a new `BoolAnimation`.</span> |

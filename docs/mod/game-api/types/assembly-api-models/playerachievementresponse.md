@@ -20,16 +20,20 @@ Web API model listing the achievements a player has.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> | Creates a `PlayerAchievementResponse` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> | <span className="api-desc">Creates a `PlayerAchievementResponse` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-achievementhashes" /><code>{"IEnumerable<uint> AchievementHashes { get; set; }"}</code> | Hashes of the achievements the player has earned. |
+| <Link id="m-achievementhashes" /><code>{"IEnumerable<uint> AchievementHashes { get; set; }"}</code> | <span className="api-desc">Hashes of the achievements the player has earned.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerAchievementResponse`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetAchievementForUserAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getachievementforuserasync).
+
+</div>

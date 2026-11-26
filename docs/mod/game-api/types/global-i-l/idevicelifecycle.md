@@ -21,15 +21,15 @@ A VR or input device platform: turns its SDK on and off and gets update calls. `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player" /><code><Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; }"}</code> | The platform player this device drives. |
+| <Link id="m-player" /><code><Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" Player { get; }"}</code> | <span className="api-desc">The platform player this device drives.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disablesdk" /><code>{"void DisableSDK()"}</code> | Shuts down the device SDK. |
-| <Link id="m-enablesdk" /><code>{"void EnableSDK()"}</code> | Starts the device SDK. |
-| <Link id="m-fixedupdate" /><code>{"void FixedUpdate()"}</code> | Called each physics step. |
-| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> | Called each frame after updates. |
-| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> | Sets the platform player the device drives. |
-| <Link id="m-update" /><code>{"void Update()"}</code> | Called each frame. |
+| <Link id="m-disablesdk" /><code>{"void DisableSDK()"}</code> | <span className="api-desc">Shuts down the device SDK.</span> |
+| <Link id="m-enablesdk" /><code>{"void EnableSDK()"}</code> | <span className="api-desc">Starts the device SDK.</span> |
+| <Link id="m-fixedupdate" /><code>{"void FixedUpdate()"}</code> | <span className="api-desc">Called each physics step.</span> |
+| <Link id="m-lateupdate" /><code>{"void LateUpdate()"}</code> | <span className="api-desc">Called each frame after updates.</span> |
+| <Link id="m-setdeviceplayer" /><code>{"void SetDevicePlayer("}<Link to="/mod/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" newPlayer)"}</code> | <span className="api-desc">Sets the platform player the device drives.</span> |
+| <Link id="m-update" /><code>{"void Update()"}</code> | <span className="api-desc">Called each frame.</span> |

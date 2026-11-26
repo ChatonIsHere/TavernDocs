@@ -22,18 +22,18 @@ Fires an inspector event when its `ImpactTool` blocks a hit with enough effectiv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BlockedTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"BlockedTrigger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disableafterblock" /><code>{"private bool disableAfterBlock"}</code> | When set, `IsActive` turns off after one block. |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | Lowest hit effectiveness that counts as a block. |
-| <Link id="m-onblocked" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" onBlocked"}</code> | Event invoked with the hit's effectiveness. |
+| <Link id="m-disableafterblock" /><code>{"private bool disableAfterBlock"}</code> | <span className="api-desc">When set, `IsActive` turns off after one block.</span> |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | <span className="api-desc">Lowest hit effectiveness that counts as a block.</span> |
+| <Link id="m-onblocked" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" onBlocked"}</code> | <span className="api-desc">Event invoked with the hit's effectiveness.</span> |
 
 </details>
 
@@ -41,16 +41,16 @@ Fires an inspector event when its `ImpactTool` blocks a hit with enough effectiv
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> | Whether blocks currently fire the event. Starts false, so something must turn it on. |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> | <span className="api-desc">Whether blocks currently fire the event. Starts false, so something must turn it on.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the impact tool's `OnBlocked` event. |
-| <Link id="m-blocked" /><code>{"private void Blocked("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | If active and the hit's effectiveness is high enough, invokes `onBlocked` and maybe deactivates. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the impact tool's `OnBlocked` event.</span> |
+| <Link id="m-blocked" /><code>{"private void Blocked("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">If active and the hit's effectiveness is high enough, invokes `onBlocked` and maybe deactivates.</span> |
 
 </details>

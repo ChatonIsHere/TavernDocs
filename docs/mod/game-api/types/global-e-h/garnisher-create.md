@@ -22,4 +22,4 @@ Editor menu entry for creating a `Garnisher` skill asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Garnisher.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `Garnisher.Create` with default values.</span> |

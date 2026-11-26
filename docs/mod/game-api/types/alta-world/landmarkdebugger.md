@@ -22,17 +22,17 @@ Developer quick access menu action that dumps landmark state to the log. Client 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDebugger()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LandmarkDebugger()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forced" /><code>{"private int forced"}</code> | LOD level to force, flipped between -1 and 1 on each run. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-forced" /><code>{"private int forced"}</code> | <span className="api-desc">LOD level to force, flipped between -1 and 1 on each run.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -40,11 +40,11 @@ Developer quick access menu action that dumps landmark state to the log. Client 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | Always false. |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Always true. |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | With both grips held, loads every landmark. Otherwise logs details of `world_landmark 40` only and toggles its forced LOD. |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/mod/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | <span className="api-desc">With both grips held, loads every landmark. Otherwise logs details of `world_landmark 40` only and toggles its forced LOD.</span> |

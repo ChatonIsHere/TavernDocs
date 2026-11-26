@@ -21,10 +21,14 @@ A serializable event with a `Lock` argument, such as a lock's locked or broken e
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LockEvent()"}</code> | Creates a `LockEvent` with default values. |
+| <Link id="m-ctor" /><code>{"LockEvent()"}</code> | <span className="api-desc">Creates a `LockEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LockEvent`:
 
+<div className="api-used-in">
+
 [`ConsumableLock.lockBreakEvent`](/mod/game-api/types/alta-items/consumablelock#m-lockbreakevent), [`ConsumableLock.LockBreakEvent`](/mod/game-api/types/alta-items/consumablelock#m-lockbreakevent-2), [`Lock.isLockedEvent`](/mod/game-api/types/alta-items/lock#m-islockedevent), [`Lock.IsLockedEvent`](/mod/game-api/types/alta-items/lock#m-islockedevent-2).
+
+</div>

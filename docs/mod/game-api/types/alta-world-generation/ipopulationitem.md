@@ -21,4 +21,4 @@ A spawned population member. Growers use it to hand population membership on whe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> | Moves this member's place in its population to the replacement entity. |
+| <Link id="m-replacewith" /><code>{"void ReplaceWith("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacement)"}</code> | <span className="api-desc">Moves this member's place in its population to the replacement entity.</span> |

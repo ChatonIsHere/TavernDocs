@@ -22,22 +22,26 @@ A general-purpose game action asset on the General channel that accepts any argu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameActionStat()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GameActionStat()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.General`. |
+| <Link id="m-channel" /><code>{"override "}<Link to="/mod/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | <span className="api-desc">Always `GameActionChannel.General`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Always true. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/mod/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `GameActionStat`:
 
+<div className="api-used-in">
+
 [`GameAchievementSettings.cookFoodStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-cookfoodstat), [`GameAchievementSettings.CookFoodStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-cookfoodstat-2), [`GameAchievementSettings.distanceTravelledStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-distancetravelledstat), [`GameAchievementSettings.DistanceTravelledStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-distancetravelledstat-2), [`GameAchievementSettings.lightCampfireStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-lightcampfirestat), [`GameAchievementSettings.LightCampfireStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-lightcampfirestat-2), [`GameAchievementSettings.receivedPostboxStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-receivedpostboxstat), [`GameAchievementSettings.ReceivedPostboxStat`](/mod/game-api/types/global-e-h/gameachievementsettings#m-receivedpostboxstat-2).
+
+</div>

@@ -23,4 +23,4 @@ Editor menu folder `Assets/Create/Township/Features/Durability`: menu item class
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Durability()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Durability` with default values. |
+| <Link id="m-ctor" /><code>{"protected Durability()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Durability` with default values.</span> |

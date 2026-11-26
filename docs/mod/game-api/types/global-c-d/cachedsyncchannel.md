@@ -21,17 +21,17 @@ Remembers the `NetworkEntity.SyncChannel` that was active when it was made, so a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> | Creates a `CachedSyncChannel` with default values. |
+| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> | <span className="api-desc">Creates a `CachedSyncChannel` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cache" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" cache"}</code> | The sync channel captured in the constructor. |
-| <Link id="m-returnto" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" returnTo"}</code> | The sync channel that was active when `Activate` was called. |
+| <Link id="m-cache" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" cache"}</code> | <span className="api-desc">The sync channel captured in the constructor.</span> |
+| <Link id="m-returnto" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" returnTo"}</code> | <span className="api-desc">The sync channel that was active when `Activate` was called.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Remembers the `NetworkEntity.SyncChannel` that was active when it was made, so a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activate" /><code>{"IDisposable Activate()"}</code> | Sets `NetworkEntity.SyncChannel` back to the cached channel and returns this, so a `using` block restores the old one after. |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Puts back the sync channel that was active before `Activate`. |
+| <Link id="m-activate" /><code>{"IDisposable Activate()"}</code> | <span className="api-desc">Sets `NetworkEntity.SyncChannel` back to the cached channel and returns this, so a `using` block restores the old one after.</span> |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | <span className="api-desc">Puts back the sync channel that was active before `Activate`.</span> |

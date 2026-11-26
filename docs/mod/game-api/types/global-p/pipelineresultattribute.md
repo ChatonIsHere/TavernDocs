@@ -21,10 +21,10 @@ Attribute on an `ObjectPipeline` field that states which types the pipeline shou
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> | Creates a `PipelineResultAttribute` from `types`. |
+| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> | <span className="api-desc">Creates a `PipelineResultAttribute` from `types`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> | The result types the pipeline field expects. |
+| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> | <span className="api-desc">The result types the pipeline field expects.</span> |

@@ -18,12 +18,12 @@ Client: plays the quest-complete effect on the player's head for each unlocked a
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-effectqueue" /><code>{"private static Queue<"}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> effectQueue"}</code> | Achievements waiting to show their effect. |
+| <Link id="m-effectqueue" /><code>{"private static Queue<"}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{"> effectQueue"}</code> | <span className="api-desc">Achievements waiting to show their effect.</span> |
 
 </details>
 
@@ -31,14 +31,14 @@ Client: plays the quest-complete effect on the player's head for each unlocked a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calleffect" /><code>{"static void CallEffect("}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Queues an achievement's effect and starts playing if the queue was empty. |
+| <Link id="m-calleffect" /><code>{"static void CallEffect("}<Link to="/mod/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | <span className="api-desc">Queues an achievement's effect and starts playing if the queue was empty.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-movequeue" /><code>{"private static void MoveQueue("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | When an effect is released, removes it from the queue and plays the next. |
-| <Link id="m-play" /><code>{"private static async void Play()"}</code> | Waits the achievement's unlock delay, then spawns its effect with the description. Clears the queue if there's no local player. |
+| <Link id="m-movequeue" /><code>{"private static void MoveQueue("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">When an effect is released, removes it from the queue and plays the next.</span> |
+| <Link id="m-play" /><code>{"private static async void Play()"}</code> | <span className="api-desc">Waits the achievement's unlock delay, then spawns its effect with the description. Clears the queue if there's no local player.</span> |
 
 </details>

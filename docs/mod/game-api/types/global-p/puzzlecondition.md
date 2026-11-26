@@ -22,16 +22,16 @@ Base for one condition of an in-world puzzle. Subclasses set the completion stat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleCondition()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PuzzleCondition()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-state" /><code>{"private bool state"}</code> | Backing field for `CompletionState`. |
+| <Link id="m-state" /><code>{"private bool state"}</code> | <span className="api-desc">Backing field for `CompletionState`.</span> |
 
 </details>
 
@@ -39,16 +39,20 @@ Base for one condition of an in-world puzzle. Subclasses set the completion stat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> | Whether the condition is met. Only subclasses can set it. |
+| <Link id="m-completionstate" /><code>{"bool CompletionState { get; protected set; }"}</code> | <span className="api-desc">Whether the condition is met. Only subclasses can set it.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-statechanged" /><code>{"event "}<Link to="/mod/game-api/types/global-p/puzzleconditionhandler">{"PuzzleConditionHandler"}</Link>{" StateChanged"}</code> | Raised when the completion state changes. |
+| <Link id="m-statechanged" /><code>{"event "}<Link to="/mod/game-api/types/global-p/puzzleconditionhandler">{"PuzzleConditionHandler"}</Link>{" StateChanged"}</code> | <span className="api-desc">Raised when the completion state changes.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PuzzleCondition`:
 
+<div className="api-used-in">
+
 [`Puzzle.conditions`](/mod/game-api/types/global-p/puzzle#m-conditions), [`PuzzleConditionHandler.BeginInvoke`](/mod/game-api/types/global-p/puzzleconditionhandler#m-begininvoke), [`PuzzleConditionHandler.Invoke`](/mod/game-api/types/global-p/puzzleconditionhandler#m-invoke), [`PuzzleConditionsAND.ConditionChanged`](/mod/game-api/types/global-p/puzzleconditionsand#m-conditionchanged), [`PuzzleConditionsAND.conditions`](/mod/game-api/types/global-p/puzzleconditionsand#m-conditions), [`PuzzleDoor.condition`](/mod/game-api/types/global-p/puzzledoor#m-condition), [`PuzzleDoor.DoorStateChanged`](/mod/game-api/types/global-p/puzzledoor#m-doorstatechanged).
+
+</div>

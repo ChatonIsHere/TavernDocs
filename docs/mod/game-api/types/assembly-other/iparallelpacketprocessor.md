@@ -21,4 +21,4 @@ An `IPacketProcessor` that may handle packets in parallel and can say how many i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> | Number of packets still being handled. |
+| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> | <span className="api-desc">Number of packets still being handled.</span> |

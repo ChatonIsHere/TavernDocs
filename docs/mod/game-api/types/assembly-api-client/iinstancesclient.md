@@ -21,10 +21,14 @@ Alta web API call that lists running server instances in Alta's hosting. `ApiAcc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> | Lists running instances, optionally by region and fleet. |
+| <Link id="m-getallrunninginstance" /><code>{"Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/instanceinfo">{"InstanceInfo"}</Link>{">> GetAllRunningInstance(string region = null, string fleet = null, bool? onlyGetVisibleRegions = null)"}</code> | <span className="api-desc">Lists running instances, optionally by region and fleet.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IInstancesClient`:
 
+<div className="api-used-in">
+
 [`HighLevelApiClient.Instances`](/mod/game-api/types/assembly-api-client/highlevelapiclient#m-instances), [`IHighLevelApiClient.Instances`](/mod/game-api/types/assembly-api-client/ihighlevelapiclient#m-instances), [`OfflineHighLevelApiClient.Instances`](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient#m-instances).
+
+</div>

@@ -21,16 +21,16 @@ Runtime instance of the `ApplyElement` plugin part: combines every cell of the l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ApplyElementInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/applyelement">{"ApplyElement"}</Link>{" part)"}</code> | Creates an `ApplyElementInstance` from `plugin` and `part`. |
+| <Link id="m-ctor" /><code>{"ApplyElementInstance("}<Link to="/mod/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/mod/game-api/types/alta-world-generation/applyelement">{"ApplyElement"}</Link>{" part)"}</code> | <span className="api-desc">Creates an `ApplyElementInstance` from `plugin` and `part`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-element" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> | The element whose chance is applied; falls back to the plugin's element if the part has none. |
+| <Link id="m-element" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> | <span className="api-desc">The element whose chance is applied; falls back to the plugin's element if the part has none.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Runtime instance of the `ApplyElement` plugin part: combines every cell of the l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | Applies the part's operation between each cell and the biome's chance for `element`. |
+| <Link id="m-modify" /><code>{"override void Modify("}<Link to="/mod/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, int offX, int offZ)"}</code> | <span className="api-desc">Applies the part's operation between each cell and the biome's chance for `element`.</span> |

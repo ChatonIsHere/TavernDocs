@@ -21,10 +21,14 @@ Serializable event with a bool argument, shown in the inspector as a `ToggleUnit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ToggleEvent()"}</code> | Creates a `ToggleEvent` with default values. |
+| <Link id="m-ctor" /><code>{"ToggleEvent()"}</code> | <span className="api-desc">Creates a `ToggleEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ToggleEvent`:
 
+<div className="api-used-in">
+
 [`QuickAccessDynamicIcon.toggleOnActive`](/mod/game-api/types/alta-player/quickaccessdynamicicon#m-toggleonactive), [`QuickAccessDynamicIcon.toggleOnActiveInverse`](/mod/game-api/types/alta-player/quickaccessdynamicicon#m-toggleonactiveinverse), [`ServerElement.elementSelected`](/mod/game-api/types/global-s/serverelement#m-elementselected).
+
+</div>

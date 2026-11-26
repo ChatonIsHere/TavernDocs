@@ -23,27 +23,27 @@ Saves and loads the world's time of day and applies the server's time speed sett
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TimeManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> | The active time manager. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/mod/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> | <span className="api-desc">The active time manager.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Server: applies the time speed setting now and whenever the server config changes (skipped for entity identifier 1 or lower). |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Server: applies the time speed setting now and whenever the server config changes (skipped for entity identifier 1 or lower).</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `instance`, or destroys itself if another exists. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: stops listening to server config changes. |
-| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> | Server: sets `Timeline.Instance.TimeSpeed` from the server's `TimeSpeedMultiplier`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Sets `instance`, or destroys itself if another exists.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Server: stops listening to server config changes.</span> |
+| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> | <span className="api-desc">Server: sets `Timeline.Instance.TimeSpeed` from the server's `TimeSpeedMultiplier`.</span> |
 
 </details>

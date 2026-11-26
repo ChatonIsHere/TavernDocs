@@ -22,4 +22,4 @@ Editor menu folder `3rd Party/Impostors`: menu item classes inherit it to appear
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Impostors()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Impostors` with default values. |
+| <Link id="m-ctor" /><code>{"protected Impostors()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase._3rd_Party.Impostors` with default values.</span> |

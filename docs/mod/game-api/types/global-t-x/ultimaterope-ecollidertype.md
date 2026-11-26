@@ -29,4 +29,8 @@ Collider shape put on each rope segment of an `UltimateRope`: `None`, `Capsule` 
 
 Members of other types that take, return or hold a `EColliderType`:
 
+<div className="api-used-in">
+
 [`UltimateRope.BoneColliderType`](/mod/game-api/types/global-t-x/ultimaterope#m-bonecollidertype), [`UltimateRope.RopeNode.eColliderType`](/mod/game-api/types/global-t-x/ultimaterope-ropenode#m-ecollidertype).
+
+</div>

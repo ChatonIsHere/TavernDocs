@@ -21,4 +21,4 @@ Lets a component keep a renderer's mesh readable when the bake step would mark i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canmarkasnonlongerreadable" /><code>{"bool CanMarkAsNonLongerReadable(Renderer renderer)"}</code> | Return false to keep this renderer's mesh readable. |
+| <Link id="m-canmarkasnonlongerreadable" /><code>{"bool CanMarkAsNonLongerReadable(Renderer renderer)"}</code> | <span className="api-desc">Return false to keep this renderer's mesh readable.</span> |

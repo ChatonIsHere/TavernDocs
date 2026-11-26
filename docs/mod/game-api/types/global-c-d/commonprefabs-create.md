@@ -22,4 +22,4 @@ Editor menu item that creates a `CommonPrefabs` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `CommonPrefabs.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `CommonPrefabs.Create` with default values.</span> |

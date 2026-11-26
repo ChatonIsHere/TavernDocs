@@ -21,6 +21,6 @@ A `PlatformLight` with a position and distance, used by the lights controllers t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> | Squared distance from the camera; lower sorts first. |
-| <Link id="m-light" /><code><Link to="/mod/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> | The light. |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | The light's position. |
+| <Link id="m-distance" /><code>{"float Distance { get; }"}</code> | <span className="api-desc">Squared distance from the camera; lower sorts first.</span> |
+| <Link id="m-light" /><code><Link to="/mod/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" Light { get; }"}</code> | <span className="api-desc">The light.</span> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | <span className="api-desc">The light's position.</span> |

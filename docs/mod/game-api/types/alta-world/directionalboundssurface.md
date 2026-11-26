@@ -22,16 +22,16 @@ Spawn surface that finds points by raycasting straight down (in local space) fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DirectionalBoundsSurface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DirectionalBoundsSurface()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extents" /><code>{"private Vector3 extents"}</code> | Half-size of the box the raycasts are made in. |
+| <Link id="m-extents" /><code>{"private Vector3 extents"}</code> | <span className="api-desc">Half-size of the box the raycasts are made in.</span> |
 
 </details>
 
@@ -39,14 +39,14 @@ Spawn surface that finds points by raycasting straight down (in local space) fro
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | Tries up to the global retry count of downward raycasts across the box height and returns the first hit. |
-| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | Sets all three extents to the given size. |
+| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | <span className="api-desc">Tries up to the global retry count of downward raycasts across the box height and returns the first hit.</span> |
+| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | <span className="api-desc">Sets all three extents to the given size.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the box in the scene view. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the box in the scene view.</span> |
 
 </details>

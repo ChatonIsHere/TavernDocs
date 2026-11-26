@@ -21,17 +21,17 @@ A rule on a `SpaceFilter`: points in these forest space types use another fill s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Redirect()"}</code> | Creates a `SpaceFilter.Redirect` with default values. |
+| <Link id="m-ctor" /><code>{"Redirect()"}</code> | <span className="api-desc">Creates a `SpaceFilter.Redirect` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fillset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" fillSet"}</code> | Backing field for `FillSet`. |
-| <Link id="m-types" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" types"}</code> | Backing field for `Types`. |
+| <Link id="m-fillset" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" fillSet"}</code> | <span className="api-desc">Backing field for `FillSet`.</span> |
+| <Link id="m-types" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" types"}</code> | <span className="api-desc">Backing field for `Types`.</span> |
 
 </details>
 
@@ -39,11 +39,15 @@ A rule on a `SpaceFilter`: points in these forest space types use another fill s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fillset-2" /><code><Link to="/mod/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" FillSet { get; }"}</code> | Fill set whose spawn modifiers take over for matching spaces. |
-| <Link id="m-types-2" /><code><Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" Types { get; }"}</code> | Space types this redirect applies to. |
+| <Link id="m-fillset-2" /><code><Link to="/mod/game-api/types/alta-world-generation/forestfillset">{"ForestFillSet"}</Link>{" FillSet { get; }"}</code> | <span className="api-desc">Fill set whose spawn modifiers take over for matching spaces.</span> |
+| <Link id="m-types-2" /><code><Link to="/mod/game-api/types/alta-world-generation/spacetype">{"SpaceType"}</Link>{" Types { get; }"}</code> | <span className="api-desc">Space types this redirect applies to.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Redirect`:
 
+<div className="api-used-in">
+
 [`SpaceFilter.redirects`](/mod/game-api/types/global-s/spacefilter#m-redirects).
+
+</div>

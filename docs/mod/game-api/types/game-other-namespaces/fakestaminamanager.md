@@ -21,16 +21,16 @@ A **class** in `Root.Township`, `Features.Climbing`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> | Creates a `FakeStaminaManager` with default values. |
+| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> | <span className="api-desc">Creates a `FakeStaminaManager` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> | Always true. |
+| <Link id="m-hasstamina" /><code>{"bool HasStamina { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-process" /><code>{"void Process()"}</code> | Does nothing. |
+| <Link id="m-process" /><code>{"void Process()"}</code> | <span className="api-desc">Does nothing.</span> |

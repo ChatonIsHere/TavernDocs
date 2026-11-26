@@ -22,18 +22,18 @@ Base player controller for VR. When linked to the local player it adds vision co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected VRPlayerController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected VRPlayerController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platformdevice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice"}</code> | Injected platform device, passed to vision comfort. |
-| <Link id="m-visioncomfort" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playervisioncomfort">{"PlayerVisionComfort"}</Link>{" visionComfort"}</code> | Vision comfort handler for the local player, or null. |
-| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> | HMD tracking on the camera for the local player, or null. |
+| <Link id="m-platformdevice" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice"}</code> | <span className="api-desc">Injected platform device, passed to vision comfort.</span> |
+| <Link id="m-visioncomfort" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playervisioncomfort">{"PlayerVisionComfort"}</Link>{" visionComfort"}</code> | <span className="api-desc">Vision comfort handler for the local player, or null.</span> |
+| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> | <span className="api-desc">HMD tracking on the camera for the local player, or null.</span> |
 
 </details>
 
@@ -41,15 +41,15 @@ Base player controller for VR. When linked to the local player it adds vision co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-injectplatformdevice" /><code>{"void InjectPlatformDevice("}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | VContainer injection point for the platform device. |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Hooks the linked-to-local-player event. |
-| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | Disposes the HMD tracking and vision comfort. |
+| <Link id="m-injectplatformdevice" /><code>{"void InjectPlatformDevice("}<Link to="/mod/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | <span className="api-desc">VContainer injection point for the platform device.</span> |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | <span className="api-desc">Hooks the linked-to-local-player event.</span> |
+| <Link id="m-ondestroy" /><code>{"protected override void OnDestroy()"}</code> | <span className="api-desc">Disposes the HMD tracking and vision comfort.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-linked" /><code>{"private void Linked()"}</code> | For the local player, creates the vision comfort handler and starts HMD tracking on the camera. |
+| <Link id="m-linked" /><code>{"private void Linked()"}</code> | <span className="api-desc">For the local player, creates the vision comfort handler and starts HMD tracking on the camera.</span> |
 
 </details>

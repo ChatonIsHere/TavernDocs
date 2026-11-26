@@ -19,25 +19,25 @@ Online client for a user's achievements and action stats stored by Alta's web AP
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal AchievementApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates an `AchievementApiClient` from `clientManager`. |
+| <Link id="m-ctor" /><code>{"internal AchievementApiClient("}<Link to="/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | <span className="api-desc">Creates an `AchievementApiClient` from `clientManager`.</span> |
 
 </details>
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-actionstatrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateactionstatrequest">{"UpdateActionStatRequest"}</Link>{" actionStatRequest"}</code> | Last request built for the list overload of `UpdateActionStatForUserAsync`. |
-| <Link id="m-updateachievementrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateachievementrequest">{"UpdateAchievementRequest"}</Link>{" updateAchievementRequest"}</code> | Last request built by `UpdateAchievementForUserAsync`. |
-| <Link id="m-updateactionstatrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateactionstatrequest">{"UpdateActionStatRequest"}</Link>{" updateActionStatRequest"}</code> | Last request built for the single stat overload of `UpdateActionStatForUserAsync`. |
+| <Link id="m-actionstatrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateactionstatrequest">{"UpdateActionStatRequest"}</Link>{" actionStatRequest"}</code> | <span className="api-desc">Last request built for the list overload of `UpdateActionStatForUserAsync`.</span> |
+| <Link id="m-updateachievementrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateachievementrequest">{"UpdateAchievementRequest"}</Link>{" updateAchievementRequest"}</code> | <span className="api-desc">Last request built by `UpdateAchievementForUserAsync`.</span> |
+| <Link id="m-updateactionstatrequest" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-models/updateactionstatrequest">{"UpdateActionStatRequest"}</Link>{" updateActionStatRequest"}</code> | <span className="api-desc">Last request built for the single stat overload of `UpdateActionStatForUserAsync`.</span> |
 
 </details>
 
@@ -45,8 +45,8 @@ Online client for a user's achievements and action stats stored by Alta's web AP
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getachievementsforuserasync" /><code>{"async Task<IEnumerable<uint>> GetAchievementsForUserAsync(int userId)"}</code> | Gets the hashes of the user's completed achievements, or an empty list if the API returns none. |
-| <Link id="m-getactionstatsforuserasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{">> GetActionStatsForUserAsync(int userId)"}</code> | Gets the user's action stat progress, or an empty list if the API returns none. |
-| <Link id="m-updateachievementforuserasync" /><code>{"Task UpdateAchievementForUserAsync(int userId, uint achievementHash, bool isCompleted)"}</code> | Sets one achievement (by hash) as completed or not for the user. |
-| <Link id="m-updateactionstatforuserasync" /><code>{"Task UpdateActionStatForUserAsync(int userId, uint statHash, float newProgress)"}</code> | Sets the progress of one stat by hash, or of a list of stats at once. |
-| <Link id="m-updateactionstatforuserasync-2" /><code>{"Task UpdateActionStatForUserAsync(int userId, List<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> stats)"}</code> | Sets the progress of one stat by hash, or of a list of stats at once. |
+| <Link id="m-getachievementsforuserasync" /><code>{"async Task<IEnumerable<uint>> GetAchievementsForUserAsync(int userId)"}</code> | <span className="api-desc">Gets the hashes of the user's completed achievements, or an empty list if the API returns none.</span> |
+| <Link id="m-getactionstatsforuserasync" /><code>{"async Task<IEnumerable<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{">> GetActionStatsForUserAsync(int userId)"}</code> | <span className="api-desc">Gets the user's action stat progress, or an empty list if the API returns none.</span> |
+| <Link id="m-updateachievementforuserasync" /><code>{"Task UpdateAchievementForUserAsync(int userId, uint achievementHash, bool isCompleted)"}</code> | <span className="api-desc">Sets one achievement (by hash) as completed or not for the user.</span> |
+| <Link id="m-updateactionstatforuserasync" /><code>{"Task UpdateActionStatForUserAsync(int userId, uint statHash, float newProgress)"}</code> | <span className="api-desc">Sets the progress of one stat by hash, or of a list of stats at once.</span> |
+| <Link id="m-updateactionstatforuserasync-2" /><code>{"Task UpdateActionStatForUserAsync(int userId, List<"}<Link to="/mod/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> stats)"}</code> | <span className="api-desc">Sets the progress of one stat by hash, or of a list of stats at once.</span> |

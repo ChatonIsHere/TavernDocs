@@ -24,18 +24,18 @@ Asset holding a starting player save (prefab data, byte count and chunk versioni
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PlayerSaveData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> | Length in bytes of the stored setup data. |
-| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> | The stored prefab data for the starting player. |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | Chunk versioning the data was saved with. |
+| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> | <span className="api-desc">Length in bytes of the stored setup data.</span> |
+| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> | <span className="api-desc">The stored prefab data for the starting player.</span> |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | <span className="api-desc">Chunk versioning the data was saved with.</span> |
 
 </details>
 
@@ -43,6 +43,6 @@ Asset holding a starting player save (prefab data, byte count and chunk versioni
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcurrent" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> | The asset named after the server's `InitialPlayerInventory` setting, or null when the setting is `None` or no server is running. |
-| <Link id="m-populate" /><code>{"void Populate("}<Link to="/mod/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Copies the stored prefab data, byte count and versioning into a player save. |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Only calls the base. |
+| <Link id="m-getcurrent" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> | <span className="api-desc">The asset named after the server's `InitialPlayerInventory` setting, or null when the setting is `None` or no server is running.</span> |
+| <Link id="m-populate" /><code>{"void Populate("}<Link to="/mod/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | <span className="api-desc">Copies the stored prefab data, byte count and versioning into a player save.</span> |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | <span className="api-desc">Only calls the base.</span> |

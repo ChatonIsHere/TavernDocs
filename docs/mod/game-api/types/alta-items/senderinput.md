@@ -22,19 +22,19 @@ Base for a receiver's link to one logic sender: holds the manager and lets the r
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> | Creates a `SenderInput` with default values. |
+| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> | <span className="api-desc">Creates a `SenderInput` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Manager { get; set; }"}</code> | The `GlobalLogicManager` this input's sender data lives in. |
+| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" Manager { get; set; }"}</code> | <span className="api-desc">The `GlobalLogicManager` this input's sender data lives in.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attemptlink" /><code>{"abstract bool AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | Links this input to the given sender if it is the right type and uses the same logic manager. Returns whether it linked. |
-| <Link id="m-destroy" /><code>{"abstract void Destroy()"}</code> | Removes this input's listener from the sender's data. Called from the receiver's `OnDestroy`. |
-| <Link id="m-drawgizmos" /><code>{"abstract void DrawGizmos(Component receiver)"}</code> | Editor gizmo hook for showing the link from a receiver. Empty in the generic version. |
-| <Link id="m-subscribe" /><code>{"abstract void Subscribe(Action listener, bool isCalling = true)"}</code> | Adds a listener for value changes and, if `isCalling` is true and data is linked, calls it once now. |
+| <Link id="m-attemptlink" /><code>{"abstract bool AttemptLink("}<Link to="/mod/game-api/types/alta-items/logicvaluesender">{"LogicValueSender"}</Link>{" sender)"}</code> | <span className="api-desc">Links this input to the given sender if it is the right type and uses the same logic manager. Returns whether it linked.</span> |
+| <Link id="m-destroy" /><code>{"abstract void Destroy()"}</code> | <span className="api-desc">Removes this input's listener from the sender's data. Called from the receiver's `OnDestroy`.</span> |
+| <Link id="m-drawgizmos" /><code>{"abstract void DrawGizmos(Component receiver)"}</code> | <span className="api-desc">Editor gizmo hook for showing the link from a receiver. Empty in the generic version.</span> |
+| <Link id="m-subscribe" /><code>{"abstract void Subscribe(Action listener, bool isCalling = true)"}</code> | <span className="api-desc">Adds a listener for value changes and, if `isCalling` is true and data is linked, calls it once now.</span> |

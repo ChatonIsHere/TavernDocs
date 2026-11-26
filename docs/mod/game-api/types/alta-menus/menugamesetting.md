@@ -22,16 +22,20 @@ Base for an in-game menu widget that shows one game setting. The generic `MenuGa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected MenuGameSetting()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | Switches the widget to show another setting and sets it up again. |
+| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | <span className="api-desc">Switches the widget to show another setting and sets it up again.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MenuGameSetting`:
 
+<div className="api-used-in">
+
 [`PooledMenuSettings.menuGameSetting`](/mod/game-api/types/alta-player/pooledmenusettings#m-menugamesetting).
+
+</div>

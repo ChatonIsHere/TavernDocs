@@ -21,23 +21,23 @@ Leftover example script for predicting light reflections with gizmos. `OnDrawGiz
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxreflectioncount" /><code>{"int maxReflectionCount"}</code> | Bounces to draw. |
-| <Link id="m-maxstepdistance" /><code>{"float maxStepDistance"}</code> | Raycast length per bounce. |
+| <Link id="m-maxreflectioncount" /><code>{"int maxReflectionCount"}</code> | <span className="api-desc">Bounces to draw.</span> |
+| <Link id="m-maxstepdistance" /><code>{"float maxStepDistance"}</code> | <span className="api-desc">Raycast length per bounce.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-drawpredictedreflectionpattern" /><code>{"private void DrawPredictedReflectionPattern(Vector3 position, Vector3 direction, int reflectionRemaining)"}</code> | Draws yellow gizmo lines along a raycast path that bounces off surfaces until reflections run out. |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Empty. |
+| <Link id="m-drawpredictedreflectionpattern" /><code>{"private void DrawPredictedReflectionPattern(Vector3 position, Vector3 direction, int reflectionRemaining)"}</code> | <span className="api-desc">Draws yellow gizmo lines along a raycast path that bounces off surfaces until reflections run out.</span> |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

@@ -21,4 +21,4 @@ Leftover static class holding one LINQ-style extension method.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-map" /><code>{"static IEnumerable<TResult> Map<TItem, TResult>(IEnumerable<TItem> list, Func<TItem, int, bool, TResult> mappingFunc) (iterator)"}</code> | Maps each item with its index and a flag that is always true. |
+| <Link id="m-map" /><code>{"static IEnumerable<TResult> Map<TItem, TResult>(IEnumerable<TItem> list, Func<TItem, int, bool, TResult> mappingFunc) (iterator)"}</code> | <span className="api-desc">Maps each item with its index and a flag that is always true.</span> |

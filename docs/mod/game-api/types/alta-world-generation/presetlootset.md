@@ -23,18 +23,18 @@ Asset listing loot to spawn into a group of docks, one random free dock per spaw
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PresetLootSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PresetLootSet()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-entries" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> | The loot entries, in order. |
-| <Link id="m-temp" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> | Scratch list of docks still free. |
-| <Link id="m-used" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> | Scratch list of docks already filled. |
+| <Link id="m-entries" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> | <span className="api-desc">The loot entries, in order.</span> |
+| <Link id="m-temp" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> | <span className="api-desc">Scratch list of docks still free.</span> |
+| <Link id="m-used" /><code>{"private static List<"}<Link to="/mod/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> | <span className="api-desc">Scratch list of docks already filled.</span> |
 
 </details>
 
@@ -42,10 +42,14 @@ Asset listing loot to spawn into a group of docks, one random free dock per spaw
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Empties the dock group, then for each entry tries its rounds, each into a random unused dock. |
+| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/mod/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Empties the dock group, then for each entry tries its rounds, each into a random unused dock.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PresetLootSet`:
 
+<div className="api-used-in">
+
 [`PresetLootModuleSaveData.set`](/mod/game-api/types/alta-world-generation/presetlootmodulesavedata#m-set).
+
+</div>

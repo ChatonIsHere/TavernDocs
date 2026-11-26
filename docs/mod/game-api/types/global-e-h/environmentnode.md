@@ -22,16 +22,16 @@ Component on a chunk that can override environment audio values (only reverb so 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnvironmentNode()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnvironmentNode()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reverb" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" reverb"}</code> | Backing field for `Reverb`. |
+| <Link id="m-reverb" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" reverb"}</code> | <span className="api-desc">Backing field for `Reverb`.</span> |
 
 </details>
 
@@ -39,10 +39,14 @@ Component on a chunk that can override environment audio values (only reverb so 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reverb-2" /><code><Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" Reverb { get; }"}</code> | The reverb value. Its `Get` returns this node's value when it overrides, otherwise the default node's value. |
+| <Link id="m-reverb-2" /><code><Link to="/mod/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" Reverb { get; }"}</code> | <span className="api-desc">The reverb value. Its `Get` returns this node's value when it overrides, otherwise the default node's value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EnvironmentNode`:
 
+<div className="api-used-in">
+
 [`EnvironmentHandler.defaultEnvironment`](/mod/game-api/types/global-e-h/environmenthandler#m-defaultenvironment), [`EnvironmentLerp.Default`](/mod/game-api/types/global-e-h/environmentlerp#m-default), [`EnvironmentLerp.EnvironmentLerp`](/mod/game-api/types/global-e-h/environmentlerp#m-ctor), [`EnvironmentLerp.SetEnvironment`](/mod/game-api/types/global-e-h/environmentlerp#m-setenvironment), [`EnvironmentLerp.Target`](/mod/game-api/types/global-e-h/environmentlerp#m-target).
+
+</div>

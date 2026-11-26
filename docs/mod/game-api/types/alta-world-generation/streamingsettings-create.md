@@ -22,4 +22,4 @@ Editor menu entry for creating the cave `StreamingSettings` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StreamingSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `StreamingSettings.Create` with default values.</span> |

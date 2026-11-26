@@ -28,4 +28,8 @@ Where `PooledParticleSystemManipulator` sends particles: the player's hands, the
 
 Members of other types that take, return or hold a `ParticleDestination`:
 
+<div className="api-used-in">
+
 [`PooledParticleSystemManipulator.GetParticleTargets`](/mod/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator#m-getparticletargets), [`PooledParticleSystemManipulator.MoveToPlayer`](/mod/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator#m-movetoplayer), [`PooledParticleSystemManipulator.ParticleMovementRoutine`](/mod/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator#m-particlemovementroutine), [`VfxData.particleDestination`](/mod/game-api/types/game-other-namespaces/vfxdata#m-particledestination), [`VfxData.ParticleDestination`](/mod/game-api/types/game-other-namespaces/vfxdata#m-particledestination-2).
+
+</div>

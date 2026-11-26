@@ -21,4 +21,4 @@ For components that cache a rigidbody and must refresh it when a crafting part's
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updaterigidbody" /><code>{"void UpdateRigidbody()"}</code> | Finds the current rigidbody again. |
+| <Link id="m-updaterigidbody" /><code>{"void UpdateRigidbody()"}</code> | <span className="api-desc">Finds the current rigidbody again.</span> |

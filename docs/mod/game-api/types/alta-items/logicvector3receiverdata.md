@@ -23,10 +23,10 @@ Save data for `LogicVector3Receiver`: which Vector3 sender it listens to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> | Creates a `LogicVector3ReceiverData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> | <span className="api-desc">Creates a `LogicVector3ReceiverData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicvector3savedata">{"LogicVector3SaveData"}</Link>{" Data { get; set; }"}</code> | The linked Vector3 sender's logic data. On load the receiver relinks to it through the logic manager. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicvector3savedata">{"LogicVector3SaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked Vector3 sender's logic data. On load the receiver relinks to it through the logic manager.</span> |

@@ -22,23 +22,23 @@ One hand to hand gesture: which hands it applies to, whether hands are open or c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HandInteraction()"}</code> | Creates a `HandInteractor.HandInteraction` with default values. |
+| <Link id="m-ctor" /><code>{"HandInteraction()"}</code> | <span className="api-desc">Creates a `HandInteractor.HandInteraction` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dotlenience" /><code>{"private float dotLenience"}</code> | Minimum dot product between the move direction and each hand's valid direction. |
-| <Link id="m-isopenhanded" /><code>{"private bool isOpenHanded"}</code> | True needs both hands open (grab at most 0.9), false needs both closed. |
-| <Link id="m-mindistance" /><code>{"private float minDistance"}</code> | Minimum hand movement for the gesture to count. |
-| <Link id="m-otherparticleeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" otherParticleEffect"}</code> | Particle spawned when the hands belong to different players. |
-| <Link id="m-selfparticleeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" selfParticleEffect"}</code> | Particle spawned when both hands are the same player's. |
-| <Link id="m-soundeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffect"}</code> | Sound played on a match. |
-| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handinteractor-handinteraction-type">{"HandInteractor.HandInteraction.Type"}</Link>{" type"}</code> | Whether the gesture works with your own hands, other players' hands, or both. |
-| <Link id="m-validdirection" /><code>{"private Vector3 validDirection"}</code> | Local direction each hand must move in. Flipped for the other hand when both are the same side. |
+| <Link id="m-dotlenience" /><code>{"private float dotLenience"}</code> | <span className="api-desc">Minimum dot product between the move direction and each hand's valid direction.</span> |
+| <Link id="m-isopenhanded" /><code>{"private bool isOpenHanded"}</code> | <span className="api-desc">True needs both hands open (grab at most 0.9), false needs both closed.</span> |
+| <Link id="m-mindistance" /><code>{"private float minDistance"}</code> | <span className="api-desc">Minimum hand movement for the gesture to count.</span> |
+| <Link id="m-otherparticleeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" otherParticleEffect"}</code> | <span className="api-desc">Particle spawned when the hands belong to different players.</span> |
+| <Link id="m-selfparticleeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" selfParticleEffect"}</code> | <span className="api-desc">Particle spawned when both hands are the same player's.</span> |
+| <Link id="m-soundeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffect"}</code> | <span className="api-desc">Sound played on a match.</span> |
+| <Link id="m-type" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/handinteractor-handinteraction-type">{"HandInteractor.HandInteraction.Type"}</Link>{" type"}</code> | <span className="api-desc">Whether the gesture works with your own hands, other players' hands, or both.</span> |
+| <Link id="m-validdirection" /><code>{"private Vector3 validDirection"}</code> | <span className="api-desc">Local direction each hand must move in. Flipped for the other hand when both are the same side.</span> |
 
 </details>
 
@@ -46,10 +46,14 @@ One hand to hand gesture: which hands it applies to, whether hands are open or c
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/global-e-h/handinteractor">{"HandInteractor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-e-h/handinteractor">{"HandInteractor"}</Link>{" otherInteractor, float distance)"}</code> | Checks both hands match this gesture and, if so, plays its particle and sound. Returns whether it matched. |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/mod/game-api/types/global-e-h/handinteractor">{"HandInteractor"}</Link>{" interactor, "}<Link to="/mod/game-api/types/global-e-h/handinteractor">{"HandInteractor"}</Link>{" otherInteractor, float distance)"}</code> | <span className="api-desc">Checks both hands match this gesture and, if so, plays its particle and sound. Returns whether it matched.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HandInteraction`:
 
+<div className="api-used-in">
+
 [`HandInteractor.possibleInteractions`](/mod/game-api/types/global-e-h/handinteractor#m-possibleinteractions).
+
+</div>

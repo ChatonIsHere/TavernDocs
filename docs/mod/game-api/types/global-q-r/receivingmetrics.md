@@ -21,26 +21,30 @@ Old read-only view of the incoming packet averages kept by `ServerPacketReceiver
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> | Creates a `ReceivingMetrics` with default values. |
+| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> | <span className="api-desc">Creates a `ReceivingMetrics` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-networktransportms" /><code>{"float NetworkTransportMs { get; }"}</code> | Average milliseconds spent receiving packets from the transport. |
-| <Link id="m-reliablems" /><code>{"float ReliableMs { get; }"}</code> | Average milliseconds spent processing reliable messages. |
-| <Link id="m-reliablereceived" /><code>{"float ReliableReceived { get; }"}</code> | Average reliable messages received per frame. |
-| <Link id="m-unreliablems" /><code>{"float UnreliableMs { get; }"}</code> | Average milliseconds spent processing unreliable messages. |
-| <Link id="m-unreliablereceived" /><code>{"float UnreliableReceived { get; }"}</code> | Average unreliable messages received per frame. |
+| <Link id="m-networktransportms" /><code>{"float NetworkTransportMs { get; }"}</code> | <span className="api-desc">Average milliseconds spent receiving packets from the transport.</span> |
+| <Link id="m-reliablems" /><code>{"float ReliableMs { get; }"}</code> | <span className="api-desc">Average milliseconds spent processing reliable messages.</span> |
+| <Link id="m-reliablereceived" /><code>{"float ReliableReceived { get; }"}</code> | <span className="api-desc">Average reliable messages received per frame.</span> |
+| <Link id="m-unreliablems" /><code>{"float UnreliableMs { get; }"}</code> | <span className="api-desc">Average milliseconds spent processing unreliable messages.</span> |
+| <Link id="m-unreliablereceived" /><code>{"float UnreliableReceived { get; }"}</code> | <span className="api-desc">Average unreliable messages received per frame.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> | Clears all five averages in `ServerPacketReceiver`. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | <span className="api-desc">Clears all five averages in `ServerPacketReceiver`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ReceivingMetrics`:
 
+<div className="api-used-in">
+
 [`ServerProfilingData.Receiving`](/mod/game-api/types/global-s/serverprofilingdata#m-receiving).
+
+</div>

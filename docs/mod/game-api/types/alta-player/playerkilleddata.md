@@ -22,16 +22,20 @@ Payload of the `ConsoleEvents.PlayerKilled` console event, raised when a player 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | Creates a `PlayerKilledData` from `killedPlayer` and `killingHit`. |
+| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/mod/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | <span className="api-desc">Creates a `PlayerKilledData` from `killedPlayer` and `killingHit`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-killedplayer" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> | The player who died. |
+| <Link id="m-killedplayer" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> | <span className="api-desc">The player who died.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerKilledData`:
 
+<div className="api-used-in">
+
 [`ConsoleEvents.PlayerKilled`](/mod/game-api/types/alta-console/consoleevents#m-playerkilled).
+
+</div>

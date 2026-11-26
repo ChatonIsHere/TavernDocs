@@ -29,4 +29,8 @@ Which console a login came through: the websocket console, or another one. Named
 
 Members of other types that take, return or hold a `LoginPath`:
 
+<div className="api-used-in">
+
 [`ConsoleAuth.Check`](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth#m-check), [`ConsoleAuth.Validate`](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth#m-validate).
+
+</div>

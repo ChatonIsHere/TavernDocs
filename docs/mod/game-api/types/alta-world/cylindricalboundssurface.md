@@ -22,16 +22,16 @@ Spawn surface that finds points by raycasting sideways (outward or inward) insid
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CylindricalBoundsSurface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CylindricalBoundsSurface()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-config" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/cylindricalboundssurfacesavedata">{"CylindricalBoundsSurfaceSaveData"}</Link>{" config"}</code> | The cylinder settings (arc, height, max offset, start and end radius), also used as its save data. |
+| <Link id="m-config" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/cylindricalboundssurfacesavedata">{"CylindricalBoundsSurfaceSaveData"}</Link>{" config"}</code> | <span className="api-desc">The cylinder settings (arc, height, max offset, start and end radius), also used as its save data.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ Spawn surface that finds points by raycasting sideways (outward or inward) insid
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | Tries up to the global retry count of radial raycasts from the start radius toward the end radius and returns the first hit. |
-| <Link id="m-getraycast" /><code>{"void GetRaycast(out Vector3 position, out Vector3 direction)"}</code> | Picks a random start point and direction inside the configured arc, height and side offset, in world space. |
-| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | Does nothing for this surface. |
+| <Link id="m-getposition" /><code>{"override bool GetPosition(out Vector3 position, out Vector3 normal)"}</code> | <span className="api-desc">Tries up to the global retry count of radial raycasts from the start radius toward the end radius and returns the first hit.</span> |
+| <Link id="m-getraycast" /><code>{"void GetRaycast(out Vector3 position, out Vector3 direction)"}</code> | <span className="api-desc">Picks a random start point and direction inside the configured arc, height and side offset, in world space.</span> |
+| <Link id="m-setsize" /><code>{"override void SetSize(float size)"}</code> | <span className="api-desc">Does nothing for this surface.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Empty. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Empty.</span> |
 
 </details>

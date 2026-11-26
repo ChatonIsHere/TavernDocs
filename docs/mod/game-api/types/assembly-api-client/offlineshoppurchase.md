@@ -21,11 +21,11 @@ Offline stand-in for shop purchases. Every method throws `OfflineException`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OfflineShopPurchase()"}</code> | Creates an `OfflineShopPurchase` with default values. |
+| <Link id="m-ctor" /><code>{"OfflineShopPurchase()"}</code> | <span className="api-desc">Creates an `OfflineShopPurchase` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> | Throws `OfflineException`. |
-| <Link id="m-purchasespecial" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseSpecial(int identifier, ulong oculusId, string oculusUserProof)"}</code> | Throws `OfflineException`. |
+| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> | <span className="api-desc">Throws `OfflineException`.</span> |
+| <Link id="m-purchasespecial" /><code>{"Task<"}<Link to="/mod/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseSpecial(int identifier, ulong oculusId, string oculusUserProof)"}</code> | <span className="api-desc">Throws `OfflineException`.</span> |

@@ -21,19 +21,19 @@ A structure part the mining base generator can pick, with a weight that can grow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PartOption()"}</code> | Creates a `MiningBaseGenerator.PartOption` with default values. |
+| <Link id="m-ctor" /><code>{"PartOption()"}</code> | <span className="api-desc">Creates a `MiningBaseGenerator.PartOption` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attribute" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute"}</code> | Backing field for `Attribute`. |
-| <Link id="m-attributemultiplier" /><code>{"private float attributeMultiplier"}</code> | Backing field for `AttributeMultiplier`. |
-| <Link id="m-chance" /><code>{"private float chance"}</code> | Backing field for `Chance`. |
-| <Link id="m-part" /><code>{"private "}<Link to="/mod/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> | Backing field for `Part`. |
+| <Link id="m-attribute" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute"}</code> | <span className="api-desc">Backing field for `Attribute`.</span> |
+| <Link id="m-attributemultiplier" /><code>{"private float attributeMultiplier"}</code> | <span className="api-desc">Backing field for `AttributeMultiplier`.</span> |
+| <Link id="m-chance" /><code>{"private float chance"}</code> | <span className="api-desc">Backing field for `Chance`.</span> |
+| <Link id="m-part" /><code>{"private "}<Link to="/mod/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" part"}</code> | <span className="api-desc">Backing field for `Part`.</span> |
 
 </details>
 
@@ -41,13 +41,17 @@ A structure part the mining base generator can pick, with a weight that can grow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attribute-2" /><code><Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" Attribute { get; }"}</code> | Biome attribute that adds to the weight. |
-| <Link id="m-attributemultiplier-2" /><code>{"float AttributeMultiplier { get; }"}</code> | How much the attribute's value adds to the weight. |
-| <Link id="m-chance-2" /><code>{"float Chance { get; }"}</code> | Base weight for picking this part. |
-| <Link id="m-part-2" /><code><Link to="/mod/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" Part { get; }"}</code> | The structure part. |
+| <Link id="m-attribute-2" /><code><Link to="/mod/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" Attribute { get; }"}</code> | <span className="api-desc">Biome attribute that adds to the weight.</span> |
+| <Link id="m-attributemultiplier-2" /><code>{"float AttributeMultiplier { get; }"}</code> | <span className="api-desc">How much the attribute's value adds to the weight.</span> |
+| <Link id="m-chance-2" /><code>{"float Chance { get; }"}</code> | <span className="api-desc">Base weight for picking this part.</span> |
+| <Link id="m-part-2" /><code><Link to="/mod/game-api/types/global-s/structurepart">{"StructurePart"}</Link>{" Part { get; }"}</code> | <span className="api-desc">The structure part.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PartOption`:
 
+<div className="api-used-in">
+
 [`MiningBaseGenerator.centerPieces`](/mod/game-api/types/global-m-o/miningbasegenerator#m-centerpieces), [`MiningBaseGenerator.GetRandom`](/mod/game-api/types/global-m-o/miningbasegenerator#m-getrandom), [`MiningBaseGenerator.parts`](/mod/game-api/types/global-m-o/miningbasegenerator#m-parts).
+
+</div>

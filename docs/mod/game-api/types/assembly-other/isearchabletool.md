@@ -21,20 +21,24 @@ An editor tool or menu item that can be found by search. `AltaMenuItem` implemen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-description" /><code>{"string Description { get; }"}</code> | Text shown with the tool in search. |
-| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> | Icon path; `AltaMenuItem` always uses `Icons/Command.png`. |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Display name; `AltaMenuItem` uses the class name with spaces added. |
-| <Link id="m-priority" /><code>{"int Priority { get; }"}</code> | Ordering priority for the tool. |
+| <Link id="m-description" /><code>{"string Description { get; }"}</code> | <span className="api-desc">Text shown with the tool in search.</span> |
+| <Link id="m-icon" /><code>{"string Icon { get; }"}</code> | <span className="api-desc">Icon path; `AltaMenuItem` always uses `Icons/Command.png`.</span> |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | <span className="api-desc">Display name; `AltaMenuItem` uses the class name with spaces added.</span> |
+| <Link id="m-priority" /><code>{"int Priority { get; }"}</code> | <span className="api-desc">Ordering priority for the tool.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getpath" /><code>{"string GetPath()"}</code> | Returns the folder path the tool sits under, without its name; `AltaMenuItem` builds it from its base type's name. |
-| <Link id="m-validate" /><code>{"bool Validate()"}</code> | Whether the tool is available; `AltaMenuItem` returns true unless overridden. |
+| <Link id="m-getpath" /><code>{"string GetPath()"}</code> | <span className="api-desc">Returns the folder path the tool sits under, without its name; `AltaMenuItem` builds it from its base type's name.</span> |
+| <Link id="m-validate" /><code>{"bool Validate()"}</code> | <span className="api-desc">Whether the tool is available; `AltaMenuItem` returns true unless overridden.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISearchableTool`:
 
+<div className="api-used-in">
+
 [`AltaMenuItem.GeneratePath`](/mod/game-api/types/assembly-other/altamenuitem#m-generatepath), [`AltaMenuItem.GeneratePathSplit`](/mod/game-api/types/assembly-other/altamenuitem#m-generatepathsplit).
+
+</div>

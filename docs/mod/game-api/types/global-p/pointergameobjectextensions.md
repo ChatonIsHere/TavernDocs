@@ -21,6 +21,6 @@ Extension methods for working out the bounds of a game object from its renderers
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getobjectbounds" /><code>{"static Bounds GetObjectBounds(GameObject go)"}</code> | Bounds of all child renderers, skipping particle renderers and anything marked `IgnoreForBounds`. |
-| <Link id="m-getobjectboundswithcolliders" /><code>{"static Bounds GetObjectBoundsWithColliders(GameObject go)"}</code> | Like `GetObjectBounds` but also includes child colliders, estimating sizes for disabled ones from their shape. |
-| <Link id="m-getpointerbounds" /><code>{"static Bounds GetPointerBounds(GameObject prefab)"}</code> | Uses a `StaticBoundsOverride` if present, else renderer and collider bounds, inflated by `MenuSettings` when large enough. |
+| <Link id="m-getobjectbounds" /><code>{"static Bounds GetObjectBounds(GameObject go)"}</code> | <span className="api-desc">Bounds of all child renderers, skipping particle renderers and anything marked `IgnoreForBounds`.</span> |
+| <Link id="m-getobjectboundswithcolliders" /><code>{"static Bounds GetObjectBoundsWithColliders(GameObject go)"}</code> | <span className="api-desc">Like `GetObjectBounds` but also includes child colliders, estimating sizes for disabled ones from their shape.</span> |
+| <Link id="m-getpointerbounds" /><code>{"static Bounds GetPointerBounds(GameObject prefab)"}</code> | <span className="api-desc">Uses a `StaticBoundsOverride` if present, else renderer and collider bounds, inflated by `MenuSettings` when large enough.</span> |

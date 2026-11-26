@@ -20,4 +20,4 @@ Stands in for compile-time defines at runtime. Used by `Purchasable`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-is-external-cosmetics" /><code>{"static bool Is_EXTERNAL_COSMETICS()"}</code> | Whether cosmetics come from an external store; always false in this build. |
+| <Link id="m-is-external-cosmetics" /><code>{"static bool Is_EXTERNAL_COSMETICS()"}</code> | <span className="api-desc">Whether cosmetics come from an external store; always false in this build.</span> |

@@ -22,16 +22,16 @@ Base for components on the `Player` object (the player's network entity, not the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerComponent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | Backing field for `Player`, filled from the same GameObject. |
+| <Link id="m-player" /><code>{"private "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | <span className="api-desc">Backing field for `Player`, filled from the same GameObject.</span> |
 
 </details>
 
@@ -39,17 +39,21 @@ Base for components on the `Player` object (the player's network entity, not the
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-player-2" /><code><Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> | The `Player` on the same object. |
+| <Link id="m-player-2" /><code><Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> | <span className="api-desc">The `Player` on the same object.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializecomponent" /><code>{"void InitializeComponent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newIPlayer)"}</code> | Hooks `PlayerLoadComplete` to the player's `LoadComplete` event. |
-| <Link id="m-playerloadcomplete" /><code>{"protected virtual void PlayerLoadComplete()"}</code> | Called when the player has finished loading. Empty by default. |
+| <Link id="m-initializecomponent" /><code>{"void InitializeComponent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newIPlayer)"}</code> | <span className="api-desc">Hooks `PlayerLoadComplete` to the player's `LoadComplete` event.</span> |
+| <Link id="m-playerloadcomplete" /><code>{"protected virtual void PlayerLoadComplete()"}</code> | <span className="api-desc">Called when the player has finished loading. Empty by default.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerComponent`:
 
+<div className="api-used-in">
+
 [`Player.playerComponents`](/mod/game-api/types/global-p/player#m-playercomponents).
+
+</div>

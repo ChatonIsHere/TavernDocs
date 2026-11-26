@@ -32,4 +32,8 @@ Oculus launch result codes (success, room full, game started, room not found, us
 
 Members of other types that take, return or hold a `PlatformLaunchResult`:
 
+<div className="api-used-in">
+
 [`IOculusWrapper.DeeplinkLogResult`](/mod/game-api/types/game-other-namespaces/ioculuswrapper#m-deeplinklogresult).
+
+</div>

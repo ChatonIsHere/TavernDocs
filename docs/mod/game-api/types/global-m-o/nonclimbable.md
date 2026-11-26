@@ -22,35 +22,35 @@ Marks a collider as not climbable. Grabbing it either does nothing or holds then
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NonClimbable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"NonClimbable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-climbfailbehaviour" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/nonclimbable-climbfailbehaviour">{"NonClimbable.ClimbFailBehaviour"}</Link>{" climbFailBehaviour"}</code> | Ignored (can't grab at all) or ReleaseAfterHold (grab, then let go). |
+| <Link id="m-climbfailbehaviour" /><code>{"private "}<Link to="/mod/game-api/types/global-m-o/nonclimbable-climbfailbehaviour">{"NonClimbable.ClimbFailBehaviour"}</Link>{" climbFailBehaviour"}</code> | <span className="api-desc">Ignored (can't grab at all) or ReleaseAfterHold (grab, then let go).</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>9 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-iclimbable-canclimb" /><code>{"private bool IClimbable.CanClimb { get; }"}</code> | False when set to Ignored, so hands can't grab; true for ReleaseAfterHold. |
-| <Link id="m-iclimbable-canmove" /><code>{"private bool IClimbable.CanMove { get; }"}</code> | Always false. |
-| <Link id="m-iclimbable-curentpressure" /><code>{"private Vector3 IClimbable.CurentPressure { get; }"}</code> | Always zero. |
-| <Link id="m-iclimbable-currentpressureratio" /><code>{"private float IClimbable.CurrentPressureRatio { get; }"}</code> | Always 0. |
-| <Link id="m-iclimbable-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" IClimbable.Entity { get; }"}</code> | Always null. |
-| <Link id="m-iclimbable-grippriority" /><code>{"private float IClimbable.GripPriority { get; }"}</code> | Lowest possible priority, so any other climbable wins. |
-| <Link id="m-iclimbable-maximumpressure" /><code>{"private float IClimbable.MaximumPressure { get; }"}</code> | Always 0. |
-| <Link id="m-iclimbable-oldpressureratio" /><code>{"private float IClimbable.OldPressureRatio { get; }"}</code> | Always 0. |
-| <Link id="m-iclimbable-releasesimmediately" /><code>{"private bool IClimbable.ReleasesImmediately { get; }"}</code> | Always true. |
+| <Link id="m-iclimbable-canclimb" /><code>{"private bool IClimbable.CanClimb { get; }"}</code> | <span className="api-desc">False when set to Ignored, so hands can't grab; true for ReleaseAfterHold.</span> |
+| <Link id="m-iclimbable-canmove" /><code>{"private bool IClimbable.CanMove { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-iclimbable-curentpressure" /><code>{"private Vector3 IClimbable.CurentPressure { get; }"}</code> | <span className="api-desc">Always zero.</span> |
+| <Link id="m-iclimbable-currentpressureratio" /><code>{"private float IClimbable.CurrentPressureRatio { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-iclimbable-entity" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" IClimbable.Entity { get; }"}</code> | <span className="api-desc">Always null.</span> |
+| <Link id="m-iclimbable-grippriority" /><code>{"private float IClimbable.GripPriority { get; }"}</code> | <span className="api-desc">Lowest possible priority, so any other climbable wins.</span> |
+| <Link id="m-iclimbable-maximumpressure" /><code>{"private float IClimbable.MaximumPressure { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-iclimbable-oldpressureratio" /><code>{"private float IClimbable.OldPressureRatio { get; }"}</code> | <span className="api-desc">Always 0.</span> |
+| <Link id="m-iclimbable-releasesimmediately" /><code>{"private bool IClimbable.ReleasesImmediately { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 </details>
 
@@ -58,16 +58,16 @@ Marks a collider as not climbable. Grabbing it either does nothing or holds then
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-break" /><code>{"event Action Break"}</code> | Raised when a hand presses on it, to make the grip let go. |
+| <Link id="m-break" /><code>{"event Action Break"}</code> | <span className="api-desc">Raised when a hand presses on it, to make the grip let go.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applypressure" /><code>{"private bool IClimbable.ApplyPressure(Vector3 pressure)"}</code> | Raises `Break` and returns false, so the grip lets go. |
-| <Link id="m-getgravityboost" /><code>{"private float IClimbable.GetGravityBoost(Vector3 normal)"}</code> | Always 0. |
+| <Link id="m-applypressure" /><code>{"private bool IClimbable.ApplyPressure(Vector3 pressure)"}</code> | <span className="api-desc">Raises `Break` and returns false, so the grip lets go.</span> |
+| <Link id="m-getgravityboost" /><code>{"private float IClimbable.GetGravityBoost(Vector3 normal)"}</code> | <span className="api-desc">Always 0.</span> |
 
 </details>

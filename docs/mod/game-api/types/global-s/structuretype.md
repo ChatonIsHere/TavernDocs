@@ -23,16 +23,16 @@ Asset for a kind of mining or cave structure, giving the size of one tile. Used 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StructureType()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StructureType()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> | Backing field for `TileSize`. |
+| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> | <span className="api-desc">Backing field for `TileSize`.</span> |
 
 </details>
 
@@ -40,10 +40,14 @@ Asset for a kind of mining or cave structure, giving the size of one tile. Used 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> | Size of one structure tile in world units. |
+| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> | <span className="api-desc">Size of one structure tile in world units.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StructureType`:
 
+<div className="api-used-in">
+
 [`MiningBaseGenerator.structureType`](/mod/game-api/types/global-m-o/miningbasegenerator#m-structuretype), [`StructurePart.structureType`](/mod/game-api/types/global-s/structurepart#m-structuretype), [`StructurePart.StructureType`](/mod/game-api/types/global-s/structurepart#m-structuretype-2).
+
+</div>

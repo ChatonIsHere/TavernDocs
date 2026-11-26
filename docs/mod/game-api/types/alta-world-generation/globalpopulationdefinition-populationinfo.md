@@ -21,25 +21,29 @@ A snapshot of a global population for listing: hash, name, how many are spawned 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PopulationInfo()"}</code> | Creates a `GlobalPopulationDefinition.PopulationInfo` with default values. |
+| <Link id="m-ctor" /><code>{"PopulationInfo()"}</code> | <span className="api-desc">Creates a `GlobalPopulationDefinition.PopulationInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> | The population definition's hash. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The definition asset's name. |
-| <Link id="m-populationsize" /><code>{"int PopulationSize { get; set; }"}</code> | Maximum spawned count for the population. |
-| <Link id="m-spawnedcount" /><code>{"int SpawnedCount { get; set; }"}</code> | How many are spawned now. |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> | <span className="api-desc">The population definition's hash.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The definition asset's name.</span> |
+| <Link id="m-populationsize" /><code>{"int PopulationSize { get; set; }"}</code> | <span className="api-desc">Maximum spawned count for the population.</span> |
+| <Link id="m-spawnedcount" /><code>{"int SpawnedCount { get; set; }"}</code> | <span className="api-desc">How many are spawned now.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo">{"GlobalPopulationDefinition.PopulationInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" item)"}</code> | Builds a `PopulationInfo` from a `GlobalPopulationDefinition`. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo">{"GlobalPopulationDefinition.PopulationInfo"}</Link>{" op_Implicit("}<Link to="/mod/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" item)"}</code> | <span className="api-desc">Builds a `PopulationInfo` from a `GlobalPopulationDefinition`.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PopulationInfo`:
 
+<div className="api-used-in">
+
 [`GlobalPopulationDefinition.ListPopulations`](/mod/game-api/types/alta-world-generation/globalpopulationdefinition#m-listpopulations).
+
+</div>

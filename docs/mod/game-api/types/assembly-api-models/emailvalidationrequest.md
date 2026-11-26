@@ -20,16 +20,20 @@ Body of an Alta web API request to check an email address.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> | Creates an `EmailValidationRequest` with default values. |
+| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> | <span className="api-desc">Creates an `EmailValidationRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | The email address to check. |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | <span className="api-desc">The email address to check.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `EmailValidationRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.ValidateEmail`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-validateemail).
+
+</div>

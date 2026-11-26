@@ -21,19 +21,23 @@ Inspector settings that `CharacterEye.Bake` copies onto the `RotationLimitSpline
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> | Creates a `CharacterEye.RotationLimit` with default values. |
+| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> | <span className="api-desc">Creates a `CharacterEye.RotationLimit` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-axis" /><code>{"Vector3 axis"}</code> | Main axis of the limit (forward by default). |
-| <Link id="m-defaultlocalrotation" /><code>{"Quaternion defaultLocalRotation"}</code> | The eye's rest rotation that the limit is measured from. |
-| <Link id="m-spline" /><code>{"AnimationCurve spline"}</code> | Curve that shapes the limit around the axis. |
-| <Link id="m-twistlimit" /><code>{"float twistLimit"}</code> | Twist limit in degrees (180 by default, which is no limit). |
+| <Link id="m-axis" /><code>{"Vector3 axis"}</code> | <span className="api-desc">Main axis of the limit (forward by default).</span> |
+| <Link id="m-defaultlocalrotation" /><code>{"Quaternion defaultLocalRotation"}</code> | <span className="api-desc">The eye's rest rotation that the limit is measured from.</span> |
+| <Link id="m-spline" /><code>{"AnimationCurve spline"}</code> | <span className="api-desc">Curve that shapes the limit around the axis.</span> |
+| <Link id="m-twistlimit" /><code>{"float twistLimit"}</code> | <span className="api-desc">Twist limit in degrees (180 by default, which is no limit).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RotationLimit`:
 
+<div className="api-used-in">
+
 [`CharacterEye.limitArguments`](/mod/game-api/types/alta-player/charactereye#m-limitarguments).
+
+</div>

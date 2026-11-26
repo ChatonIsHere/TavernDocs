@@ -23,20 +23,20 @@ Global settings for achievements: the earned popup and the stats used for built-
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GameAchievementSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GameAchievementSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-achievementearneddefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" achievementEarnedDefinition"}</code> | Backing field for `AchievementEarnedDefinition`. |
-| <Link id="m-cookfoodstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" cookFoodStat"}</code> | Backing field for `CookFoodStat`. |
-| <Link id="m-distancetravelledstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" distanceTravelledStat"}</code> | Backing field for `DistanceTravelledStat`. |
-| <Link id="m-lightcampfirestat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" lightCampfireStat"}</code> | Backing field for `LightCampfireStat`. |
-| <Link id="m-receivedpostboxstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" receivedPostboxStat"}</code> | Backing field for `ReceivedPostboxStat`. |
+| <Link id="m-achievementearneddefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" achievementEarnedDefinition"}</code> | <span className="api-desc">Backing field for `AchievementEarnedDefinition`.</span> |
+| <Link id="m-cookfoodstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" cookFoodStat"}</code> | <span className="api-desc">Backing field for `CookFoodStat`.</span> |
+| <Link id="m-distancetravelledstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" distanceTravelledStat"}</code> | <span className="api-desc">Backing field for `DistanceTravelledStat`.</span> |
+| <Link id="m-lightcampfirestat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" lightCampfireStat"}</code> | <span className="api-desc">Backing field for `LightCampfireStat`.</span> |
+| <Link id="m-receivedpostboxstat" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" receivedPostboxStat"}</code> | <span className="api-desc">Backing field for `ReceivedPostboxStat`.</span> |
 
 </details>
 
@@ -44,8 +44,8 @@ Global settings for achievements: the earned popup and the stats used for built-
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-achievementearneddefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AchievementEarnedDefinition { get; }"}</code> | Pooled object shown when an achievement is earned. |
-| <Link id="m-cookfoodstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" CookFoodStat { get; }"}</code> | Stat counted when food is cooked. |
-| <Link id="m-distancetravelledstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" DistanceTravelledStat { get; }"}</code> | Stat for distance travelled. |
-| <Link id="m-lightcampfirestat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" LightCampfireStat { get; }"}</code> | Stat counted when a campfire is lit. |
-| <Link id="m-receivedpostboxstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" ReceivedPostboxStat { get; }"}</code> | Stat counted when a postbox delivery is received. |
+| <Link id="m-achievementearneddefinition-2" /><code><Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" AchievementEarnedDefinition { get; }"}</code> | <span className="api-desc">Pooled object shown when an achievement is earned.</span> |
+| <Link id="m-cookfoodstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" CookFoodStat { get; }"}</code> | <span className="api-desc">Stat counted when food is cooked.</span> |
+| <Link id="m-distancetravelledstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" DistanceTravelledStat { get; }"}</code> | <span className="api-desc">Stat for distance travelled.</span> |
+| <Link id="m-lightcampfirestat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" LightCampfireStat { get; }"}</code> | <span className="api-desc">Stat counted when a campfire is lit.</span> |
+| <Link id="m-receivedpostboxstat-2" /><code><Link to="/mod/game-api/types/global-e-h/gameactionstat">{"GameActionStat"}</Link>{" ReceivedPostboxStat { get; }"}</code> | <span className="api-desc">Stat counted when a postbox delivery is received.</span> |

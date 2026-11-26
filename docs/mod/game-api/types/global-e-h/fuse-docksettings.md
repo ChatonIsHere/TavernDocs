@@ -29,4 +29,8 @@ How a lit fuse limits docking: `Default` does nothing, `Single` blocks docks tha
 
 Members of other types that take, return or hold a `DockSettings`:
 
+<div className="api-used-in">
+
 [`Fuse.dockSettings`](/mod/game-api/types/global-e-h/fuse#m-docksettings).
+
+</div>

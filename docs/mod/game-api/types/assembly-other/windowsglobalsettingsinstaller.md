@@ -21,18 +21,18 @@ Windows installer asset that keeps the XR general settings referenced and binds 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WindowsGlobalSettingsInstaller()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"WindowsGlobalSettingsInstaller()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly ILogger logger"}</code> | Class logger. |
-| <Link id="m-windowsxrsettings" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/windowsxrloadersettings">{"WindowsXRLoaderSettings"}</Link>{" windowsXRSettings"}</code> | Windows XR loader settings bound into the container. |
-| <Link id="m-xrgeneralsettings" /><code>{"private XRGeneralSettings xrGeneralSettings"}</code> | XR general settings, referenced so they are included. |
+| <Link id="m-logger" /><code>{"private static readonly ILogger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-windowsxrsettings" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/windowsxrloadersettings">{"WindowsXRLoaderSettings"}</Link>{" windowsXRSettings"}</code> | <span className="api-desc">Windows XR loader settings bound into the container.</span> |
+| <Link id="m-xrgeneralsettings" /><code>{"private XRGeneralSettings xrGeneralSettings"}</code> | <span className="api-desc">XR general settings, referenced so they are included.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Windows installer asset that keeps the XR general settings referenced and binds 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-install" /><code>{"override void Install(IContainerBuilder builder)"}</code> | Logs the XR settings (keeping them referenced in the build) and binds `IWindowsXRLoaderSettings`. |
+| <Link id="m-install" /><code>{"override void Install(IContainerBuilder builder)"}</code> | <span className="api-desc">Logs the XR settings (keeping them referenced in the build) and binds `IWindowsXRLoaderSettings`.</span> |

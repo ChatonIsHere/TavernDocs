@@ -22,29 +22,29 @@ Spawns a population folder in each forest chunk as it generates, sized to the ch
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestPopulationCreator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ForestPopulationCreator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | Population setup used. |
-| <Link id="m-density" /><code>{"private float density"}</code> | Population density. |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Prefab with a `BasicPopulationFolder`. |
+| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" definition"}</code> | <span className="api-desc">Population setup used.</span> |
+| <Link id="m-density" /><code>{"private float density"}</code> | <span className="api-desc">Population density.</span> |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">Prefab with a `BasicPopulationFolder`.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the parent forest generator's `GeneratedDynamic`. |
-| <Link id="m-create" /><code>{"private void Create("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Spawns the prefab in the chunk and sets up its `BasicPopulationFolder` as an ecosystem. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the parent forest generator's `GeneratedDynamic`.</span> |
+| <Link id="m-create" /><code>{"private void Create("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Spawns the prefab in the chunk and sets up its `BasicPopulationFolder` as an ecosystem.</span> |
 
 </details>

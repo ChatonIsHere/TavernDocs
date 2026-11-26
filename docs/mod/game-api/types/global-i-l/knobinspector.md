@@ -21,17 +21,17 @@ Interactor inspector that edits a numeric member by turning, like a knob.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"KnobInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | Creates a `KnobInspector` from `targetMember`. |
+| <Link id="m-ctor" /><code>{"KnobInspector("}<Link to="/mod/game-api/types/global-t-x/valuemember">{"ValueMember"}</Link>{" targetMember)"}</code> | <span className="api-desc">Creates a `KnobInspector` from `targetMember`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canmove" /><code>{"override bool CanMove { get; }"}</code> | Always false. |
-| <Link id="m-canrotate" /><code>{"override bool CanRotate { get; }"}</code> | Always true. |
+| <Link id="m-canmove" /><code>{"override bool CanMove { get; }"}</code> | <span className="api-desc">Always false.</span> |
+| <Link id="m-canrotate" /><code>{"override bool CanRotate { get; }"}</code> | <span className="api-desc">Always true.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rotate" /><code>{"override void Rotate(float angle, Component target)"}</code> | Adds the turn angle to the target member's float value and writes it back. |
+| <Link id="m-rotate" /><code>{"override void Rotate(float angle, Component target)"}</code> | <span className="api-desc">Adds the turn angle to the target member's float value and writes it back.</span> |

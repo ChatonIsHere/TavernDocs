@@ -28,4 +28,8 @@ How an `UltimateRope` extends: by coil rotation steps or by linear length steps.
 
 Members of other types that take, return or hold a `ERopeExtensionMode`:
 
+<div className="api-used-in">
+
 [`UltimateRope.ExtendRope`](/mod/game-api/types/global-t-x/ultimaterope#m-extendrope).
+
+</div>

@@ -30,4 +30,8 @@ How `SplineDecorator` rotates placed objects: not at all, look along the forward
 
 Members of other types that take, return or hold a `RotationMode`:
 
+<div className="api-used-in">
+
 [`SplineDecorator.rotationMode`](/mod/game-api/types/alta-utilities/splinedecorator#m-rotationmode).
+
+</div>

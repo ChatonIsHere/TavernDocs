@@ -20,13 +20,13 @@ Folder names for the asset baking step, which probably moves these assets into t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-atlasmeshcachename" /><code>{"const string AtlasMeshCacheName"}</code> | Name of the atlas bake cache folder. |
-| <Link id="m-atlasmeshcachenamefullpath" /><code>{"const string AtlasMeshCacheNameFullPath"}</code> | Project path of the atlas bake cache, under `Assets/Temporary`. |
-| <Link id="m-unbakedbakeablefolder" /><code>{"const string UnbakedBakeableFolder"}</code> | Temporary folder for bakeable prefabs. |
-| <Link id="m-unbakedresourcesfolder" /><code>{"const string UnbakedResourcesFolder"}</code> | Temporary folder for network prefab resources. |
+| <Link id="m-atlasmeshcachename" /><code>{"const string AtlasMeshCacheName"}</code> | <span className="api-desc">Name of the atlas bake cache folder.</span> |
+| <Link id="m-atlasmeshcachenamefullpath" /><code>{"const string AtlasMeshCacheNameFullPath"}</code> | <span className="api-desc">Project path of the atlas bake cache, under `Assets/Temporary`.</span> |
+| <Link id="m-unbakedbakeablefolder" /><code>{"const string UnbakedBakeableFolder"}</code> | <span className="api-desc">Temporary folder for bakeable prefabs.</span> |
+| <Link id="m-unbakedresourcesfolder" /><code>{"const string UnbakedResourcesFolder"}</code> | <span className="api-desc">Temporary folder for network prefab resources.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-projecttounbakeddirectoriesmap" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/cacheddirectory">{"CachedDirectory"}</Link>{"[] ProjectToUnbakedDirectoriesMap { get; }"}</code> | Pairs of project folders and the temporary folders their assets are moved to during baking. |
+| <Link id="m-projecttounbakeddirectoriesmap" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/cacheddirectory">{"CachedDirectory"}</Link>{"[] ProjectToUnbakedDirectoriesMap { get; }"}</code> | <span className="api-desc">Pairs of project folders and the temporary folders their assets are moved to during baking.</span> |

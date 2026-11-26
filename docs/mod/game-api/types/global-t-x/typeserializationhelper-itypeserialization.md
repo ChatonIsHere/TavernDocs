@@ -22,12 +22,16 @@ A serializer for one field type, used to build the network sync and save read/wr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handle" /><code>{"void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Adds read and write steps for a single field (given its getter and setter) to the sync delegates. |
-| <Link id="m-handlearray" /><code>{"void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | Adds read and write steps for an array field, writing the length and then each element. |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Called once when the serializer is added to the type map. |
+| <Link id="m-handle" /><code>{"void Handle<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | <span className="api-desc">Adds read and write steps for a single field (given its getter and setter) to the sync delegates.</span> |
+| <Link id="m-handlearray" /><code>{"void HandleArray<T>(Type type, Delegate get, Delegate set, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncWrite, ref Action<T, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{"> syncRead)"}</code> | <span className="api-desc">Adds read and write steps for an array field, writing the length and then each element.</span> |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | <span className="api-desc">Called once when the serializer is added to the type map.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ITypeSerialization`:
 
+<div className="api-used-in">
+
 [`SyncAttribute.Core`](/mod/game-api/types/global-s/syncattribute#m-core), [`TypeSerializationHelper.Add`](/mod/game-api/types/global-t-x/typeserializationhelper#m-add), [`TypeSerializationHelper.GetSerialization`](/mod/game-api/types/global-t-x/typeserializationhelper#m-getserialization), [`TypeSerializationHelper.map`](/mod/game-api/types/global-t-x/typeserializationhelper#m-map).
+
+</div>

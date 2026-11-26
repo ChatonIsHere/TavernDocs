@@ -22,17 +22,17 @@ Build-time bake step that sets a `DistanceLODGroup`'s switch distances per platf
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlatformDistanceLODModifier()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlatformDistanceLODModifier()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lodgroup" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" lodGroup"}</code> | The distance LOD group being changed. |
-| <Link id="m-platformdetails" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformdistancelodmodifier-platformdetails">{"PlatformDistanceLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> | Distances per platform, one per LOD. |
+| <Link id="m-lodgroup" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/distancelodgroup">{"DistanceLODGroup"}</Link>{" lodGroup"}</code> | <span className="api-desc">The distance LOD group being changed.</span> |
+| <Link id="m-platformdetails" /><code>{"private "}<Link to="/mod/game-api/types/global-p/platformdistancelodmodifier-platformdetails">{"PlatformDistanceLODModifier.PlatformDetails"}</Link>{"[] platformDetails"}</code> | <span className="api-desc">Distances per platform, one per LOD.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ Build-time bake step that sets a `DistanceLODGroup`'s switch distances per platf
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Applies the distances of the first matching platform entry to the LOD group. |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | <span className="api-desc">Applies the distances of the first matching platform entry to the LOD group.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Finds the LOD group, sizes each distance list to the LOD count and keeps distances increasing. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Finds the LOD group, sizes each distance list to the LOD count and keeps distances increasing.</span> |
 
 </details>

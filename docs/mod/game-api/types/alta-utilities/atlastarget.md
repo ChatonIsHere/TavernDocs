@@ -28,4 +28,8 @@ Flags for which kind of objects an atlas definition targets: static, dynamic or 
 
 Members of other types that take, return or hold a `AtlasTarget`:
 
+<div className="api-used-in">
+
 [`AtlasDefinition.IsTargeting`](/mod/game-api/types/alta-utilities/atlasdefinition#m-istargeting), [`AtlasDefinition.target`](/mod/game-api/types/alta-utilities/atlasdefinition#m-target).
+
+</div>

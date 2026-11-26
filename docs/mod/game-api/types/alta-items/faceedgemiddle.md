@@ -23,10 +23,14 @@ A book flair asset for the middle of a cover's edge. A `BookFlair` ScriptableObj
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FaceEdgeMiddle()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"FaceEdgeMiddle()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `FaceEdgeMiddle`:
 
+<div className="api-used-in">
+
 [`EdgeFaceFlairs.backMiddle`](/mod/game-api/types/alta-items/edgefaceflairs#m-backmiddle), [`EdgeFaceFlairs.BackMiddle`](/mod/game-api/types/alta-items/edgefaceflairs#m-backmiddle-2), [`EdgeFaceFlairs.frontMiddle`](/mod/game-api/types/alta-items/edgefaceflairs#m-frontmiddle), [`EdgeFaceFlairs.FrontMiddle`](/mod/game-api/types/alta-items/edgefaceflairs#m-frontmiddle-2).
+
+</div>

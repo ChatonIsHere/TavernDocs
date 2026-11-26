@@ -22,4 +22,4 @@ A disposable that can report whether it has been disposed.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> | Whether it has been disposed. |
+| <Link id="m-isdisposed" /><code>{"bool IsDisposed { get; }"}</code> | <span className="api-desc">Whether it has been disposed.</span> |

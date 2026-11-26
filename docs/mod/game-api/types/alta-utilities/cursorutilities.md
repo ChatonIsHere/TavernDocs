@@ -20,4 +20,4 @@ Mouse cursor helper for desktop play.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setcursor" /><code>{"static void SetCursor(bool isEnabled)"}</code> | True locks and hides the mouse cursor; false unlocks and shows it. |
+| <Link id="m-setcursor" /><code>{"static void SetCursor(bool isEnabled)"}</code> | <span className="api-desc">True locks and hides the mouse cursor; false unlocks and shows it.</span> |

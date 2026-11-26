@@ -20,16 +20,20 @@ Body of an Alta web API request to find users by username.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> | Creates a `SearchByUsernameRequest` with default values. |
+| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> | <span className="api-desc">Creates a `SearchByUsernameRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | Username to search for. |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | <span className="api-desc">Username to search for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SearchByUsernameRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.GetUserByUsernameAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-getuserbyusernameasync).
+
+</div>

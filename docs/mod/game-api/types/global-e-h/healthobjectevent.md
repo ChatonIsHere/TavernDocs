@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes a `HealthObject`, for inspector-wired liste
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"HealthObjectEvent()"}</code> | Creates a `HealthObjectEvent` with default values. |
+| <Link id="m-ctor" /><code>{"HealthObjectEvent()"}</code> | <span className="api-desc">Creates a `HealthObjectEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `HealthObjectEvent`:
 
+<div className="api-used-in">
+
 [`HealthObject.destroyed`](/mod/game-api/types/global-e-h/healthobject#m-destroyed), [`HealthObject.Destroyed`](/mod/game-api/types/global-e-h/healthobject#m-destroyed-2).
+
+</div>

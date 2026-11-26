@@ -22,25 +22,25 @@ River visual that puts a pooled waterfall effect and sound on every waterfall, s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WaterfallEffectGenerator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"WaterfallEffectGenerator()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>10 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-btnregenerate" /><code>{"private bool btnRegenerate"}</code> | Inspector button for `Generate`. |
-| <Link id="m-effect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect"}</code> | Pooled waterfall effect. |
-| <Link id="m-heightrtpc" /><code>{"private RTPC heightRTPC"}</code> | Wwise parameter set to the waterfall's drop. |
-| <Link id="m-heightvolume" /><code>{"private AnimationCurve heightVolume"}</code> | Obsolete. |
-| <Link id="m-pooled" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> pooled"}</code> | Spawned effects and the chunk each sits in. |
-| <Link id="m-river" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" river"}</code> | River generator. |
-| <Link id="m-sizertpc" /><code>{"private RTPC sizeRTPC"}</code> | Wwise parameter set to the waterfall's water volume. |
-| <Link id="m-sizevolume" /><code>{"private AnimationCurve sizeVolume"}</code> | Obsolete. |
-| <Link id="m-soundeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> | Waterfall sound. |
-| <Link id="m-sounds" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{"> sounds"}</code> | Playing waterfall sounds. |
+| <Link id="m-btnregenerate" /><code>{"private bool btnRegenerate"}</code> | <span className="api-desc">Inspector button for `Generate`.</span> |
+| <Link id="m-effect" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effect"}</code> | <span className="api-desc">Pooled waterfall effect.</span> |
+| <Link id="m-heightrtpc" /><code>{"private RTPC heightRTPC"}</code> | <span className="api-desc">Wwise parameter set to the waterfall's drop.</span> |
+| <Link id="m-heightvolume" /><code>{"private AnimationCurve heightVolume"}</code> | <span className="api-desc">Obsolete.</span> |
+| <Link id="m-pooled" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{", "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> pooled"}</code> | <span className="api-desc">Spawned effects and the chunk each sits in.</span> |
+| <Link id="m-river" /><code>{"private "}<Link to="/mod/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" river"}</code> | <span className="api-desc">River generator.</span> |
+| <Link id="m-sizertpc" /><code>{"private RTPC sizeRTPC"}</code> | <span className="api-desc">Wwise parameter set to the waterfall's water volume.</span> |
+| <Link id="m-sizevolume" /><code>{"private AnimationCurve sizeVolume"}</code> | <span className="api-desc">Obsolete.</span> |
+| <Link id="m-soundeffect" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> | <span className="api-desc">Waterfall sound.</span> |
+| <Link id="m-sounds" /><code>{"private List<"}<Link to="/mod/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{"> sounds"}</code> | <span className="api-desc">Playing waterfall sounds.</span> |
 
 </details>
 
@@ -48,13 +48,13 @@ River visual that puts a pooled waterfall effect and sound on every waterfall, s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> | Clears old effects, then adds an effect and a looping sound (sized by height and volume) for each waterfall. |
+| <Link id="m-generate" /><code>{"void Generate("}<Link to="/mod/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" generation)"}</code> | <span className="api-desc">Clears old effects, then adds an effect and a looping sound (sized by height and volume) for each waterfall.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Releases the effects and stops the sounds. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Releases the effects and stops the sounds.</span> |
 
 </details>

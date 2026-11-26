@@ -21,16 +21,16 @@ Game mode that runs a server in the same process and joins it as a client, for l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> | Creates a `LocalTestGameMode` from `serverAccess`. |
+| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> | <span className="api-desc">Creates a `LocalTestGameMode` from `serverAccess`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serveraccess" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess"}</code> | Server details the local server is started with. |
+| <Link id="m-serveraccess" /><code>{"private "}<Link to="/mod/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess"}</code> | <span className="api-desc">Server details the local server is started with.</span> |
 
 </details>
 
@@ -38,11 +38,11 @@ Game mode that runs a server in the same process and joins it as a client, for l
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> | Always true; this process is the server. |
+| <Link id="m-isserver" /><code>{"override bool IsServer { get; }"}</code> | <span className="api-desc">Always true; this process is the server.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> | Loads the game scene, starts a local server on port 1757, connects to it and sets up the client scene. Returns false on failure. |
-| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> | Fades out, disconnects, stops the local server and the network, and clears `IsLocalTest`. |
+| <Link id="m-activateasync" /><code>{"override async Task<bool> ActivateAsync()"}</code> | <span className="api-desc">Loads the game scene, starts a local server on port 1757, connects to it and sets up the client scene. Returns false on failure.</span> |
+| <Link id="m-stopmodeasync" /><code>{"override async Task StopModeAsync(string reason)"}</code> | <span className="api-desc">Fades out, disconnects, stops the local server and the network, and clears `IsLocalTest`.</span> |

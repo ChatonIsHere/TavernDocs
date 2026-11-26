@@ -21,18 +21,18 @@ Analytics event carrying numbered jump velocity, stamina usage and distance clim
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/mod/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> | Creates a `ClimbingMovementEvent` from `jumpValueRecords` and `staminaUsageRecords`. |
+| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/mod/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> | <span className="api-desc">Creates a `ClimbingMovementEvent` from `jumpValueRecords` and `staminaUsageRecords`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-distanceclimbedpropertyprefix" /><code>{"private const string DistanceClimbedPropertyPrefix"}</code> | Property name prefix for each climb's distance, followed by its index. |
-| <Link id="m-eventtypekey" /><code>{"private const string EventTypeKey"}</code> | Event name, "Climbing Movement Event". |
-| <Link id="m-jumppropertyprefix" /><code>{"private const string JumpPropertyPrefix"}</code> | Property name prefix for each jump velocity, followed by its index. |
-| <Link id="m-staminausagepropertyprefix" /><code>{"private const string StaminaUsagePropertyPrefix"}</code> | Property name prefix for each climb's stamina used, followed by its index. |
+| <Link id="m-distanceclimbedpropertyprefix" /><code>{"private const string DistanceClimbedPropertyPrefix"}</code> | <span className="api-desc">Property name prefix for each climb's distance, followed by its index.</span> |
+| <Link id="m-eventtypekey" /><code>{"private const string EventTypeKey"}</code> | <span className="api-desc">Event name, "Climbing Movement Event".</span> |
+| <Link id="m-jumppropertyprefix" /><code>{"private const string JumpPropertyPrefix"}</code> | <span className="api-desc">Property name prefix for each jump velocity, followed by its index.</span> |
+| <Link id="m-staminausagepropertyprefix" /><code>{"private const string StaminaUsagePropertyPrefix"}</code> | <span className="api-desc">Property name prefix for each climb's stamina used, followed by its index.</span> |
 
 </details>

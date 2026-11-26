@@ -22,30 +22,34 @@ A named token as `token list` and `token whoami` answer it, with JSON names for 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TokenInfo()"}</code> | Makes an empty token description. |
+| <Link id="m-ctor" /><code>{"TokenInfo()"}</code> | <span className="api-desc">Makes an empty token description.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-access" /><code>{"List<string> Access { get; set; }"}</code> | The paths the token may run, or one line saying a full token has everything but `token` and `repeat`. |
-| <Link id="m-created" /><code>{"DateTime? Created { get; set; }"}</code> | When the token was made, in UTC. |
-| <Link id="m-expires" /><code>{"DateTime? Expires { get; set; }"}</code> | When it stops working, in UTC, or `null` for never. |
-| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> | The token's id, or `owner` for the owner token in `whoami`. |
-| <Link id="m-lastused" /><code>{"DateTime? LastUsed { get; set; }"}</code> | When it last logged in, in UTC, or `null` if never. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The name given at `token create`. |
-| <Link id="m-preset" /><code>{"string Preset { get; set; }"}</code> | The preset label: `full`, `custom` or another one-word label. |
-| <Link id="m-sessions" /><code>{"int Sessions { get; set; }"}</code> | How many console sessions are open with it right now. |
-| <Link id="m-status" /><code>{"string Status { get; set; }"}</code> | `active`, `expired` or `revoked`. |
+| <Link id="m-access" /><code>{"List<string> Access { get; set; }"}</code> | <span className="api-desc">The paths the token may run, or one line saying a full token has everything but `token` and `repeat`.</span> |
+| <Link id="m-created" /><code>{"DateTime? Created { get; set; }"}</code> | <span className="api-desc">When the token was made, in UTC.</span> |
+| <Link id="m-expires" /><code>{"DateTime? Expires { get; set; }"}</code> | <span className="api-desc">When it stops working, in UTC, or `null` for never.</span> |
+| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> | <span className="api-desc">The token's id, or `owner` for the owner token in `whoami`.</span> |
+| <Link id="m-lastused" /><code>{"DateTime? LastUsed { get; set; }"}</code> | <span className="api-desc">When it last logged in, in UTC, or `null` if never.</span> |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">The name given at `token create`.</span> |
+| <Link id="m-preset" /><code>{"string Preset { get; set; }"}</code> | <span className="api-desc">The preset label: `full`, `custom` or another one-word label.</span> |
+| <Link id="m-sessions" /><code>{"int Sessions { get; set; }"}</code> | <span className="api-desc">How many console sessions are open with it right now.</span> |
+| <Link id="m-status" /><code>{"string Status { get; set; }"}</code> | <span className="api-desc">`active`, `expired` or `revoked`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The token on one line: id, name, preset, status, access, expiry, last use and sessions. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | <span className="api-desc">The token on one line: id, name, preset, status, access, expiry, last use and sessions.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TokenInfo`:
 
+<div className="api-used-in">
+
 [`TokenCommandModule.Info`](/mod/tavernlib-api/types/moduleports/tokencommandmodule#m-info), [`TokenCommandModule.TokenList.Tokens`](/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokenlist#m-tokens).
+
+</div>

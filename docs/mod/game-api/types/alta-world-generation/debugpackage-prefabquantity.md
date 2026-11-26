@@ -21,17 +21,17 @@ One entry in a debug package: a network prefab and how many to give.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PrefabQuantity("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Creates a `DebugPackage.PrefabQuantity` from `prefab`. |
+| <Link id="m-ctor" /><code>{"PrefabQuantity("}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | <span className="api-desc">Creates a `DebugPackage.PrefabQuantity` from `prefab`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Backing field for `Prefab`. |
-| <Link id="m-quantity" /><code>{"private int quantity"}</code> | Backing field for `Quantity`. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">Backing field for `Prefab`.</span> |
+| <Link id="m-quantity" /><code>{"private int quantity"}</code> | <span className="api-desc">Backing field for `Quantity`.</span> |
 
 </details>
 
@@ -39,12 +39,16 @@ One entry in a debug package: a network prefab and how many to give.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | Hash of the prefab. |
-| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> | The network prefab to spawn. |
-| <Link id="m-quantity-2" /><code>{"int Quantity { get; }"}</code> | How many to spawn (default 1). |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> | <span className="api-desc">Hash of the prefab.</span> |
+| <Link id="m-prefab-2" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Prefab { get; }"}</code> | <span className="api-desc">The network prefab to spawn.</span> |
+| <Link id="m-quantity-2" /><code>{"int Quantity { get; }"}</code> | <span className="api-desc">How many to spawn (default 1).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PrefabQuantity`:
 
+<div className="api-used-in">
+
 [`DebugPackage.package`](/mod/game-api/types/alta-world-generation/debugpackage#m-package), [`DebugPackage.Package`](/mod/game-api/types/alta-world-generation/debugpackage#m-package-2).
+
+</div>

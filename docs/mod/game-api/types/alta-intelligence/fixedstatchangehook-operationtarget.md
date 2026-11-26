@@ -29,4 +29,8 @@ Which part of a stat a `FixedStatChangeHook` changes: base, minimum or maximum.
 
 Members of other types that take, return or hold a `OperationTarget`:
 
+<div className="api-used-in">
+
 [`FixedStatChangeHook.operationTarget`](/mod/game-api/types/alta-intelligence/fixedstatchangehook#m-operationtarget).
+
+</div>

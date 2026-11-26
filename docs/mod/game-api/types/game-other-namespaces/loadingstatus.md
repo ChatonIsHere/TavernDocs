@@ -27,4 +27,8 @@ Whether a micro tutorial is still waiting for the client to finish loading it (`
 
 Members of other types that take, return or hold a `LoadingStatus`:
 
+<div className="api-used-in">
+
 [`MicroTutorial.clientLoadStatus`](/mod/game-api/types/game-other-namespaces/microtutorial#m-clientloadstatus).
+
+</div>

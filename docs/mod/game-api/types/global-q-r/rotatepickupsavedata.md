@@ -23,11 +23,11 @@ Save data (version 1) for a `RotatePickup`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> | Creates a `RotatePickupSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> | <span className="api-desc">Creates a `RotatePickupSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-maxrotatepersecondperhandsaved" /><code>{"float maxRotatePerSecondPerHandSaved"}</code> | Saved maximum rotation speed per hand. |
-| <Link id="m-maxrotatepersecondtotalsaved" /><code>{"float maxRotatePerSecondTotalSaved"}</code> | Saved maximum total rotation speed. |
+| <Link id="m-maxrotatepersecondperhandsaved" /><code>{"float maxRotatePerSecondPerHandSaved"}</code> | <span className="api-desc">Saved maximum rotation speed per hand.</span> |
+| <Link id="m-maxrotatepersecondtotalsaved" /><code>{"float maxRotatePerSecondTotalSaved"}</code> | <span className="api-desc">Saved maximum total rotation speed.</span> |

@@ -22,34 +22,34 @@ Fires an event when a held pickup is pulled far enough from an origin point, lik
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PullCord()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PullCord()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ispulled" /><code>{"private bool isPulled"}</code> | True while the pickup is past the pull distance, so the event only fires once per pull. |
-| <Link id="m-origin" /><code>{"private Transform origin"}</code> | Point the pull distance is measured from. |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Pickup on this object that is pulled. |
-| <Link id="m-pulldistancesquared" /><code>{"private float pullDistanceSquared"}</code> | Squared distance from `origin` that counts as pulled. |
-| <Link id="m-pulled" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" pulled"}</code> | Event fired when the cord is pulled. |
-| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Handle for the registered late-update check. |
+| <Link id="m-ispulled" /><code>{"private bool isPulled"}</code> | <span className="api-desc">True while the pickup is past the pull distance, so the event only fires once per pull.</span> |
+| <Link id="m-origin" /><code>{"private Transform origin"}</code> | <span className="api-desc">Point the pull distance is measured from.</span> |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | <span className="api-desc">Pickup on this object that is pulled.</span> |
+| <Link id="m-pulldistancesquared" /><code>{"private float pullDistanceSquared"}</code> | <span className="api-desc">Squared distance from `origin` that counts as pulled.</span> |
+| <Link id="m-pulled" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" pulled"}</code> | <span className="api-desc">Event fired when the cord is pulled.</span> |
+| <Link id="m-update" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | <span className="api-desc">Handle for the registered late-update check.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>4 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the pickup's interaction start and end to start and stop checking. |
-| <Link id="m-endcheck" /><code>{"private void EndCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | Stops the distance check when the pickup is let go. |
-| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | Starts a late-update distance check when the pickup is grabbed. |
-| <Link id="m-updatepull" /><code>{"private void UpdatePull()"}</code> | Fires `pulled` the first time the pickup passes the pull distance; resets once it comes back. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the pickup's interaction start and end to start and stop checking.</span> |
+| <Link id="m-endcheck" /><code>{"private void EndCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | <span className="api-desc">Stops the distance check when the pickup is let go.</span> |
+| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/mod/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/mod/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | <span className="api-desc">Starts a late-update distance check when the pickup is grabbed.</span> |
+| <Link id="m-updatepull" /><code>{"private void UpdatePull()"}</code> | <span className="api-desc">Fires `pulled` the first time the pickup passes the pull distance; resets once it comes back.</span> |
 
 </details>

@@ -19,14 +19,14 @@ Static registry of every remote-backed save file, so changed files can be backed
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allremotefiles" /><code>{"private static List<"}<Link to="/mod/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{"> allRemoteFiles"}</code> | Every remote file created. Files add themselves in the constructor; the list holds them so they are never collected. |
-| <Link id="m-currentlybackingup" /><code>{"private static ConcurrentDictionary<"}<Link to="/mod/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{", byte> currentlyBackingUp"}</code> | Files with a backup in progress, so the same file is not backed up twice at once. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-allremotefiles" /><code>{"private static List<"}<Link to="/mod/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{"> allRemoteFiles"}</code> | <span className="api-desc">Every remote file created. Files add themselves in the constructor; the list holds them so they are never collected.</span> |
+| <Link id="m-currentlybackingup" /><code>{"private static ConcurrentDictionary<"}<Link to="/mod/game-api/types/assembly-other/iremotealtafile">{"IRemoteAltaFile"}</Link>{", byte> currentlyBackingUp"}</code> | <span className="api-desc">Files with a backup in progress, so the same file is not backed up twice at once.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -34,4 +34,4 @@ Static registry of every remote-backed save file, so changed files can be backed
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-backupallchanged" /><code>{"static void BackupAllChanged(bool isInstant)"}</code> | Server: backs up every remote file that has changed and is not already backing up, either blocking or async. |
+| <Link id="m-backupallchanged" /><code>{"static void BackupAllChanged(bool isInstant)"}</code> | <span className="api-desc">Server: backs up every remote file that has changed and is not already backing up, either blocking or async.</span> |

@@ -18,13 +18,13 @@ Internal helper that sends a `long` as two raw 32-bit uints.
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-decimalvalue" /><code>{"private static readonly long[] decimalValue"}</code> | Static one-long buffer for the byte copy. |
-| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> | Static two-uint buffer for the byte copy. |
+| <Link id="m-decimalvalue" /><code>{"private static readonly long[] decimalValue"}</code> | <span className="api-desc">Static one-long buffer for the byte copy.</span> |
+| <Link id="m-intvalue" /><code>{"private static readonly uint[] intValue"}</code> | <span className="api-desc">Static two-uint buffer for the byte copy.</span> |
 
 </details>
 
@@ -32,4 +32,4 @@ Internal helper that sends a `long` as two raw 32-bit uints.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"static void Serialize(ref long value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Copies the long's 8 bytes into two uints and serializes them, then back on read. Uses static buffers, so it is not thread safe. |
+| <Link id="m-serialize" /><code>{"static void Serialize(ref long value, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Copies the long's 8 bytes into two uints and serializes them, then back on read. Uses static buffers, so it is not thread safe.</span> |

@@ -27,4 +27,8 @@ Screen effect types for player states: `Frost` and `Exposure`.
 
 Members of other types that take, return or hold a `VisualEffectType`:
 
+<div className="api-used-in">
+
 [`PlayerStatBasedVisualEffect.effectType`](/mod/game-api/types/game-other-namespaces/playerstatbasedvisualeffect#m-effecttype).
+
+</div>

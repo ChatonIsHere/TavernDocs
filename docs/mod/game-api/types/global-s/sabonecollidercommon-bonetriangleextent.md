@@ -29,4 +29,8 @@ SAColliderBuilder (third party, editor) option for which triangles a bone collid
 
 Members of other types that take, return or hold a `BoneTriangleExtent`:
 
+<div className="api-used-in">
+
 [`SABoneColliderCommon.SplitProperty.boneTriangleExtent`](/mod/game-api/types/global-s/sabonecollidercommon-splitproperty#m-bonetriangleextent).
+
+</div>

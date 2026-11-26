@@ -22,5 +22,5 @@ A child element of a `ChildSyncableCollection` that also saves and loads its own
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-load" /><code>{"void Load(TElementSaveData data)"}</code> | Applies saved element data. |
-| <Link id="m-save" /><code>{"TElementSaveData Save()"}</code> | Returns this element's save data. |
+| <Link id="m-load" /><code>{"void Load(TElementSaveData data)"}</code> | <span className="api-desc">Applies saved element data.</span> |
+| <Link id="m-save" /><code>{"TElementSaveData Save()"}</code> | <span className="api-desc">Returns this element's save data.</span> |

@@ -18,23 +18,23 @@ Serializable wrapper around a GameObject prefab that converts to `GameObject` im
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-standaloneprefab" /><code>{"private GameObject standalonePrefab"}</code> | Serialized prefab reference. |
+| <Link id="m-standaloneprefab" /><code>{"private GameObject standalonePrefab"}</code> | <span className="api-desc">Serialized prefab reference.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-prefab" /><code>{"private GameObject Prefab { get; }"}</code> | The wrapped prefab. |
+| <Link id="m-prefab" /><code>{"private GameObject Prefab { get; }"}</code> | <span className="api-desc">The wrapped prefab.</span> |
 
 </details>
 
@@ -42,4 +42,4 @@ Serializable wrapper around a GameObject prefab that converts to `GameObject` im
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-op-implicit" /><code>{"static GameObject op_Implicit("}<Link to="/mod/game-api/types/game-other-namespaces/prefabreference">{"PrefabReference"}</Link>{" reference)"}</code> | Converts the reference to its prefab GameObject. |
+| <Link id="m-op-implicit" /><code>{"static GameObject op_Implicit("}<Link to="/mod/game-api/types/game-other-namespaces/prefabreference">{"PrefabReference"}</Link>{" reference)"}</code> | <span className="api-desc">Converts the reference to its prefab GameObject.</span> |

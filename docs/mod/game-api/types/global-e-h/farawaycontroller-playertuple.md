@@ -21,17 +21,21 @@ Server: one connected player's data in `FarAwayController` and the other players
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerTuple("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `FarAwayController.PlayerTuple` from `player`. |
+| <Link id="m-ctor" /><code>{"PlayerTuple("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Creates a `FarAwayController.PlayerTuple` from `player`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-closeby" /><code>{"List<"}<Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{"> CloseBy { get; }"}</code> | Other players within send range, refilled every other update and sent to this player. |
-| <Link id="m-playerdata" /><code><Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"PlayerData"}</Link>{" { get; }"}</code> | This player's position data. |
+| <Link id="m-closeby" /><code>{"List<"}<Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{"> CloseBy { get; }"}</code> | <span className="api-desc">Other players within send range, refilled every other update and sent to this player.</span> |
+| <Link id="m-playerdata" /><code><Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"FarAwayController.PlayerData"}</Link>{" "}<Link to="/mod/game-api/types/global-e-h/farawaycontroller-playerdata">{"PlayerData"}</Link>{" { get; }"}</code> | <span className="api-desc">This player's position data.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerTuple`:
 
+<div className="api-used-in">
+
 [`FarAwayController.preparedData`](/mod/game-api/types/global-e-h/farawaycontroller#m-prepareddata).
+
+</div>

@@ -21,15 +21,15 @@ Empty component left over from an on-screen error display; it only holds a text 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OnScreenErrorLogger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"OnScreenErrorLogger()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> | Serialized text colour, white by default. Nothing reads it. |
+| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> | <span className="api-desc">Serialized text colour, white by default. Nothing reads it.</span> |
 
 </details>

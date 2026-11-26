@@ -21,29 +21,29 @@ Private helper in `AtlasDefinition`: works out how much atlas space a material n
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MaterialReferences("}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" materialRect)"}</code> | Creates an `AtlasDefinition.MaterialReferences` from `materialRect`. |
+| <Link id="m-ctor" /><code>{"MaterialReferences("}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" materialRect)"}</code> | <span className="api-desc">Creates an `AtlasDefinition.MaterialReferences` from `materialRect`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-height" /><code>{"int Height { get; private set; }"}</code> | Texture height in pixels, after scaling. |
-| <Link id="m-materialrect" /><code><Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" MaterialRect { get; }"}</code> | The atlased material entry being measured. |
-| <Link id="m-size" /><code>{"int Size { get; }"}</code> | Area in pixels (height times width). |
-| <Link id="m-width" /><code>{"int Width { get; private set; }"}</code> | Texture width in pixels, after scaling. |
+| <Link id="m-height" /><code>{"int Height { get; private set; }"}</code> | <span className="api-desc">Texture height in pixels, after scaling.</span> |
+| <Link id="m-materialrect" /><code><Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" MaterialRect { get; }"}</code> | <span className="api-desc">The atlased material entry being measured.</span> |
+| <Link id="m-size" /><code>{"int Size { get; }"}</code> | <span className="api-desc">Area in pixels (height times width).</span> |
+| <Link id="m-width" /><code>{"int Width { get; private set; }"}</code> | <span className="api-desc">Texture width in pixels, after scaling.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-forcesquare" /><code>{"void ForceSquare(int size)"}</code> | Overrides the size with a square of the given side. |
+| <Link id="m-forcesquare" /><code>{"void ForceSquare(int size)"}</code> | <span className="api-desc">Overrides the size with a square of the given side.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyscale" /><code>{"private void ApplyScale()"}</code> | Scales the size by the material's `scale` setting (four, two, half or quarter). |
-| <Link id="m-gettexture" /><code>{"private void GetTexture(string textureProperty)"}</code> | Takes width and height from the named texture property, if the material has that texture. |
+| <Link id="m-applyscale" /><code>{"private void ApplyScale()"}</code> | <span className="api-desc">Scales the size by the material's `scale` setting (four, two, half or quarter).</span> |
+| <Link id="m-gettexture" /><code>{"private void GetTexture(string textureProperty)"}</code> | <span className="api-desc">Takes width and height from the named texture property, if the material has that texture.</span> |
 
 </details>

@@ -21,21 +21,21 @@ A stat definition paired with its default value and range, as set up on a `StatM
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> | Creates a `StatDefinitionApplication` from `definition`. |
-| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> | Creates a `StatDefinitionApplication` from `definition`. |
+| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> | <span className="api-desc">Creates a `StatDefinitionApplication` from `definition`.</span> |
+| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> | <span className="api-desc">Creates a `StatDefinitionApplication` from `definition`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> | Backing field for `DefaultMaximum`. |
-| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> | Backing field for `DefaultMinimum`. |
-| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> | Backing field for `Default`. |
-| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
-| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`; defaults to the definition's asset name. |
+| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> | <span className="api-desc">Backing field for `DefaultMaximum`.</span> |
+| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> | <span className="api-desc">Backing field for `DefaultMinimum`.</span> |
+| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> | <span className="api-desc">Backing field for `Default`.</span> |
+| <Link id="m-definition" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | <span className="api-desc">Backing field for `Definition`.</span> |
+| <Link id="m-name" /><code>{"private string name"}</code> | <span className="api-desc">Backing field for `Name`; defaults to the definition's asset name.</span> |
 
 </details>
 
@@ -43,20 +43,24 @@ A stat definition paired with its default value and range, as set up on a `StatM
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-default" /><code>{"float Default { get; }"}</code> | Starting value. |
-| <Link id="m-defaultmaximum" /><code>{"float DefaultMaximum { get; }"}</code> | Starting maximum. |
-| <Link id="m-defaultminimum" /><code>{"float DefaultMinimum { get; }"}</code> | Starting minimum. |
-| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; }"}</code> | The stat definition. |
-| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> | Display name. Defaults to the definition's asset name. |
+| <Link id="m-default" /><code>{"float Default { get; }"}</code> | <span className="api-desc">Starting value.</span> |
+| <Link id="m-defaultmaximum" /><code>{"float DefaultMaximum { get; }"}</code> | <span className="api-desc">Starting maximum.</span> |
+| <Link id="m-defaultminimum" /><code>{"float DefaultMinimum { get; }"}</code> | <span className="api-desc">Starting minimum.</span> |
+| <Link id="m-definition-2" /><code><Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" Definition { get; }"}</code> | <span className="api-desc">The stat definition.</span> |
+| <Link id="m-name-2" /><code>{"string Name { get; set; }"}</code> | <span className="api-desc">Display name. Defaults to the definition's asset name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setbase" /><code>{"void SetBase(float baseValue)"}</code> | Sets the default and maximum to the value and the minimum to 0. |
+| <Link id="m-setbase" /><code>{"void SetBase(float baseValue)"}</code> | <span className="api-desc">Sets the default and maximum to the value and the minimum to 0.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StatDefinitionApplication`:
 
+<div className="api-used-in">
+
 [`HealthValidation.GetRelatedApplication`](/mod/game-api/types/alta-stats-effects/healthvalidation#m-getrelatedapplication), [`Stat.Application`](/mod/game-api/types/alta-stats-effects/stat#m-application), [`Stat.Stat`](/mod/game-api/types/alta-stats-effects/stat#m-ctor-2), [`StatManager.Add`](/mod/game-api/types/alta-stats-effects/statmanager#m-add), [`StatManager.definitionApplications`](/mod/game-api/types/alta-stats-effects/statmanager#m-definitionapplications), [`StatManager.DefinitionApplications`](/mod/game-api/types/alta-stats-effects/statmanager#m-definitionapplications-2).
+
+</div>

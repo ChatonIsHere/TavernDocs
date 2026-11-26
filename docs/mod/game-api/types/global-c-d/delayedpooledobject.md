@@ -22,18 +22,18 @@ A `PooledObject` that waits before returning to its pool, so effects can finish 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DelayedPooledObject()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"DelayedPooledObject()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-releasedelay" /><code>{"protected float releaseDelay"}</code> | Seconds to wait before releasing. |
+| <Link id="m-releasedelay" /><code>{"protected float releaseDelay"}</code> | <span className="api-desc">Seconds to wait before releasing.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-release" /><code>{"override void Release()"}</code> | If the component is enabled, releases after the delay; otherwise releases now. |
-| <Link id="m-delayrelease" /><code>{"protected virtual IEnumerator DelayRelease() (iterator)"}</code> | Waits `releaseDelay` seconds, then releases. Subclasses can override it to play something first. |
-| <Link id="m-finalrelease" /><code>{"protected void FinalRelease()"}</code> | Returns the object to its pool straight away. |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | <span className="api-desc">If the component is enabled, releases after the delay; otherwise releases now.</span> |
+| <Link id="m-delayrelease" /><code>{"protected virtual IEnumerator DelayRelease() (iterator)"}</code> | <span className="api-desc">Waits `releaseDelay` seconds, then releases. Subclasses can override it to play something first.</span> |
+| <Link id="m-finalrelease" /><code>{"protected void FinalRelease()"}</code> | <span className="api-desc">Returns the object to its pool straight away.</span> |

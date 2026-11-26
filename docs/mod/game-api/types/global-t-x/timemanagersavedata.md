@@ -23,11 +23,11 @@ Current save data for `TimeManager` (version 3): the world's timeline time and w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> | Creates a `TimeManagerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> | <span className="api-desc">Creates a `TimeManagerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-downtime" /><code>{"DateTime downtime"}</code> | UTC time of the save. If the server advances time while offline, the gap is added to `time` on load. |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> | The `Timeline` time at save. |
+| <Link id="m-downtime" /><code>{"DateTime downtime"}</code> | <span className="api-desc">UTC time of the save. If the server advances time while offline, the gap is added to `time` on load.</span> |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | <span className="api-desc">The `Timeline` time at save.</span> |

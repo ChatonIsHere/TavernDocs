@@ -23,10 +23,10 @@ Save data for a `GenericAssemblyStation` (version 1).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> | Creates a `GenericAssemblyStationData` with default values. |
+| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> | <span className="api-desc">Creates a `GenericAssemblyStationData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isdockpositionup" /><code>{"bool isDockPositionUp"}</code> | Whether the station's dock was in the up position. |
+| <Link id="m-isdockpositionup" /><code>{"bool isDockPositionUp"}</code> | <span className="api-desc">Whether the station's dock was in the up position.</span> |

@@ -22,10 +22,10 @@ Settings for `ActiveSchmeecheeFlip`: an upside-down schmeechee pops itself back 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SchmeecheeFlipSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SchmeecheeFlipSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the shared `ActiveSchmeecheeFlip` action for schmeechees, without a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the shared `ActiveSchmeecheeFlip` action for schmeechees, without a target.</span> |

@@ -23,29 +23,29 @@ Raises a UnityEvent when a `SelectionLever` on the same object changes position,
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LeverToEvents()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LeverToEvents()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isserveronly" /><code>{"private bool isServerOnly"}</code> | If set, the events only run on the server. |
-| <Link id="m-onposition0" /><code>{"private UnityEvent onPosition0"}</code> | Event raised when the lever moves to position 0. |
-| <Link id="m-onposition1" /><code>{"private UnityEvent onPosition1"}</code> | Event raised when the lever moves to any other position. |
+| <Link id="m-isserveronly" /><code>{"private bool isServerOnly"}</code> | <span className="api-desc">If set, the events only run on the server.</span> |
+| <Link id="m-onposition0" /><code>{"private UnityEvent onPosition0"}</code> | <span className="api-desc">Event raised when the lever moves to position 0.</span> |
+| <Link id="m-onposition1" /><code>{"private UnityEvent onPosition1"}</code> | <span className="api-desc">Event raised when the lever moves to any other position.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the lever's `SelectionChanged`, unless `isServerOnly` is set and this isn't the server. |
-| <Link id="m-triggerevents" /><code>{"private void TriggerEvents("}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever, int oldIndex, int newIndex)"}</code> | Raises `onPosition0` for index 0 and `onPosition1` for any other index. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the lever's `SelectionChanged`, unless `isServerOnly` is set and this isn't the server.</span> |
+| <Link id="m-triggerevents" /><code>{"private void TriggerEvents("}<Link to="/mod/game-api/types/global-s/selectionlever">{"SelectionLever"}</Link>{" lever, int oldIndex, int newIndex)"}</code> | <span className="api-desc">Raises `onPosition0` for index 0 and `onPosition1` for any other index.</span> |
 
 </details>

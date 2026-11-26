@@ -21,18 +21,18 @@ One serialized entry of an `ImpactorMap`: a collider and the impact generators t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapElement(Collider collider, IEnumerable<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> | Creates an `ImpactorMap.MapElement` from `element`. |
-| <Link id="m-ctor-2" /><code>{"MapElement(KeyValuePair<Collider, HashSet<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> element)"}</code> | Creates an `ImpactorMap.MapElement` from `element`. |
+| <Link id="m-ctor" /><code>{"MapElement(Collider collider, IEnumerable<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> | <span className="api-desc">Creates an `ImpactorMap.MapElement` from `element`.</span> |
+| <Link id="m-ctor-2" /><code>{"MapElement(KeyValuePair<Collider, HashSet<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> element)"}</code> | <span className="api-desc">Creates an `ImpactorMap.MapElement` from `element`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collider" /><code>{"private Collider collider"}</code> | The collider. |
-| <Link id="m-impactors" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> | Backing field for `Impactors`. |
+| <Link id="m-collider" /><code>{"private Collider collider"}</code> | <span className="api-desc">The collider.</span> |
+| <Link id="m-impactors" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> | <span className="api-desc">Backing field for `Impactors`.</span> |
 
 </details>
 
@@ -40,16 +40,20 @@ One serialized entry of an `ImpactorMap`: a collider and the impact generators t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impactors-2" /><code><Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] Impactors { get; }"}</code> | The impact generators for this collider. |
+| <Link id="m-impactors-2" /><code><Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] Impactors { get; }"}</code> | <span className="api-desc">The impact generators for this collider.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add(Dictionary<Collider, HashSet<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> Map)"}</code> | Adds this collider and its impactors to the given lookup dictionary. |
+| <Link id="m-add" /><code>{"void Add(Dictionary<Collider, HashSet<"}<Link to="/mod/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> Map)"}</code> | <span className="api-desc">Adds this collider and its impactors to the given lookup dictionary.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `MapElement`:
 
+<div className="api-used-in">
+
 [`ImpactorMap.elements`](/mod/game-api/types/alta-items/impactormap#m-elements).
+
+</div>

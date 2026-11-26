@@ -23,23 +23,23 @@ Base for a creature action: its settings and the scoring rules the `ActionDecide
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Action()"}</code> | Creates an `Action` with default values. |
+| <Link id="m-ctor" /><code>{"protected Action()"}</code> | <span className="api-desc">Creates an `Action` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculatebasepreferred" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBasePreferred { get; set; }"}</code> | Preferred rules scored without a target. They can at most double or zero the score. |
-| <Link id="m-calculatebaserequired" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBaseRequired { get; set; }"}</code> | Required rules scored without a target. A rule below 0 rules the action out. |
-| <Link id="m-calculatetargetpreferred" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetPreferred { get; set; }"}</code> | Preferred rules scored for each possible target. |
-| <Link id="m-calculatetargetrequired" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetRequired { get; set; }"}</code> | Required rules scored for each possible target. |
-| <Link id="m-generalsettings" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> | The action's settings component. |
-| <Link id="m-isusingtarget" /><code>{"bool IsUsingTarget { get; set; }"}</code> | Whether the action is scored per target. |
-| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> | The base score from the settings. Rolled again on each read if the settings add a random part. |
-| <Link id="m-name" /><code>{"virtual string Name { get; }"}</code> | The settings object's name. |
+| <Link id="m-calculatebasepreferred" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBasePreferred { get; set; }"}</code> | <span className="api-desc">Preferred rules scored without a target. They can at most double or zero the score.</span> |
+| <Link id="m-calculatebaserequired" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateBaseRequired { get; set; }"}</code> | <span className="api-desc">Required rules scored without a target. A rule below 0 rules the action out.</span> |
+| <Link id="m-calculatetargetpreferred" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetPreferred { get; set; }"}</code> | <span className="api-desc">Preferred rules scored for each possible target.</span> |
+| <Link id="m-calculatetargetrequired" /><code>{"List<"}<Link to="/mod/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> CalculateTargetRequired { get; set; }"}</code> | <span className="api-desc">Required rules scored for each possible target.</span> |
+| <Link id="m-generalsettings" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/iactionsettings">{"IActionSettings"}</Link>{" GeneralSettings { get; }"}</code> | <span className="api-desc">The action's settings component.</span> |
+| <Link id="m-isusingtarget" /><code>{"bool IsUsingTarget { get; set; }"}</code> | <span className="api-desc">Whether the action is scored per target.</span> |
+| <Link id="m-multiplier" /><code>{"float Multiplier { get; }"}</code> | <span className="api-desc">The base score from the settings. Rolled again on each read if the settings add a random part.</span> |
+| <Link id="m-name" /><code>{"virtual string Name { get; }"}</code> | <span className="api-desc">The settings object's name.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> | Starts the action on an agent and returns the running action. |
+| <Link id="m-start" /><code>{"abstract "}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" Start(TAgent agent)"}</code> | <span className="api-desc">Starts the action on an agent and returns the running action.</span> |

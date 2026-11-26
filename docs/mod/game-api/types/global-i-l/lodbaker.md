@@ -22,20 +22,20 @@ Client: merges the mesh renderers of each LOD level in a `LODGroup` into one mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LODBaker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LODBaker()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-group" /><code>{"private LODGroup group"}</code> | The LOD group to bake. |
-| <Link id="m-isbaked" /><code>{"private bool isBaked"}</code> | Whether baking has run. |
-| <Link id="m-isbakingonstart" /><code>{"private bool isBakingOnStart"}</code> | Bake automatically in `Start`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
-| <Link id="m-preserved" /><code>{"private List<Renderer> preserved"}</code> | Renderers left as they are and not merged. |
+| <Link id="m-group" /><code>{"private LODGroup group"}</code> | <span className="api-desc">The LOD group to bake.</span> |
+| <Link id="m-isbaked" /><code>{"private bool isBaked"}</code> | <span className="api-desc">Whether baking has run.</span> |
+| <Link id="m-isbakingonstart" /><code>{"private bool isBakingOnStart"}</code> | <span className="api-desc">Bake automatically in `Start`.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-preserved" /><code>{"private List<Renderer> preserved"}</code> | <span className="api-desc">Renderers left as they are and not merged.</span> |
 
 </details>
 
@@ -43,16 +43,16 @@ Client: merges the mesh renderers of each LOD level in a `LODGroup` into one mes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> | Client, once: combines each LOD's mesh renderers by material into new child renderers and hides the originals. Preserved renderers are kept. |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | <span className="api-desc">Client, once: combines each LOD's mesh renderers by material into new child renderers and hides the originals. Preserved renderers are kept.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Marks as baked so it is not baked again. |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Client: recalculates the group's bounds if its size is 0. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Bakes if `isBakingOnStart` is set. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Marks as baked so it is not baked again.</span> |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | <span className="api-desc">Client: recalculates the group's bounds if its size is 0.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Bakes if `isBakingOnStart` is set.</span> |
 
 </details>
 
@@ -60,4 +60,8 @@ Client: merges the mesh renderers of each LOD level in a `LODGroup` into one mes
 
 Members of other types that take, return or hold a `LODBaker`:
 
+<div className="api-used-in">
+
 [`GenericCraftingResult.baker`](/mod/game-api/types/alta-crafting/genericcraftingresult#m-baker).
+
+</div>

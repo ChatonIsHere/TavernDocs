@@ -20,5 +20,5 @@ Holds the NLog logger named "FPSLogger" for frame rate logging.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | The `FPSLogger` NLog logger. |
-| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | Logger name, "FPSLogger". |
+| <Link id="m-logger" /><code>{"static Logger Logger"}</code> | <span className="api-desc">The `FPSLogger` NLog logger.</span> |
+| <Link id="m-loggername" /><code>{"const string LoggerName"}</code> | <span className="api-desc">Logger name, "FPSLogger".</span> |

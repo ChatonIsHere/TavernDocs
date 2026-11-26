@@ -21,10 +21,10 @@ Holds a chunk prefab pointer instance on a GameObject. Nothing else in this buil
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PointerReference()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PointerReference()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-pointer" /><code><Link to="/mod/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" pointer"}</code> | The pointer instance. |
+| <Link id="m-pointer" /><code><Link to="/mod/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" pointer"}</code> | <span className="api-desc">The pointer instance.</span> |

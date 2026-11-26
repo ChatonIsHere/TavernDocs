@@ -23,21 +23,21 @@ Save data for `LogicFloatChangeOnBool`, which moves a float between two values w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData()"}</code> | <span className="api-desc">Creates a `LogicFloatChangeOnBoolSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | Progress (0 to 1) between the start and end values. |
-| <Link id="m-ismovingforward" /><code>{"bool isMovingForward"}</code> | Whether it is moving towards the end value. |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | Backing field for `LogicSaveData`. |
-| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | Speed of the change, in value units per second. |
-| <Link id="m-oneway" /><code>{"bool oneWay"}</code> | If true it stops at the end instead of reversing. |
-| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | Seconds to wait before moving. |
+| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | <span className="api-desc">Progress (0 to 1) between the start and end values.</span> |
+| <Link id="m-ismovingforward" /><code>{"bool isMovingForward"}</code> | <span className="api-desc">Whether it is moving towards the end value.</span> |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">Backing field for `LogicSaveData`.</span> |
+| <Link id="m-movespeedpersec" /><code>{"float moveSpeedPerSec"}</code> | <span className="api-desc">Speed of the change, in value units per second.</span> |
+| <Link id="m-oneway" /><code>{"bool oneWay"}</code> | <span className="api-desc">If true it stops at the end instead of reversing.</span> |
+| <Link id="m-timebeforemoving" /><code>{"float timeBeforeMoving"}</code> | <span className="api-desc">Seconds to wait before moving.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | The shared logic data. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">The shared logic data.</span> |

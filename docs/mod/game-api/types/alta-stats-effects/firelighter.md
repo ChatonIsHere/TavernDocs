@@ -22,16 +22,16 @@ A trigger that tries to light any `IFlammable` collider that enters it, with a s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireLighter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FireLighter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chance" /><code>{"private float chance"}</code> | Backing field for `Chance`. |
+| <Link id="m-chance" /><code>{"private float chance"}</code> | <span className="api-desc">Backing field for `Chance`.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ A trigger that tries to light any `IFlammable` collider that enters it, with a s
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chance-2" /><code>{"float Chance { get; set; }"}</code> | Probability from 0 to 1 that an entering collider gets `TryLight` called. Default 1. |
+| <Link id="m-chance-2" /><code>{"float Chance { get; set; }"}</code> | <span className="api-desc">Probability from 0 to 1 that an entering collider gets `TryLight` called. Default 1.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> | Rolls against `Chance` and calls `TryLight` on the entering collider's `IFlammable`, if it has one. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> | <span className="api-desc">Rolls against `Chance` and calls `TryLight` on the entering collider's `IFlammable`, if it has one.</span> |
 
 </details>

@@ -23,19 +23,19 @@ The contents of `whitelist_requests.json`: players who asked to be whitelisted f
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-requests" /><code>{"List<"}<Link to="/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest">{"WhitelistRequestList.WhitelistRequest"}</Link>{"> Requests { get; set; }"}</code> | The pending applications. At most 3 per address and 100 in all are taken. |
+| <Link id="m-requests" /><code>{"List<"}<Link to="/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest">{"WhitelistRequestList.WhitelistRequest"}</Link>{"> Requests { get; set; }"}</code> | <span className="api-desc">The pending applications. At most 3 per address and 100 in all are taken.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | <span className="api-desc">Holds JSON keys TavernLib doesn't model, so they are written back unchanged.</span> |
 
 </details>

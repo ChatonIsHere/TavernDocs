@@ -23,16 +23,16 @@ Status `whitelist_application_received`, with `already_pending` true when the sa
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WhitelistApplicationReceived(bool wasNew)"}</code> | Sets whether the application was new. |
+| <Link id="m-ctor" /><code>{"WhitelistApplicationReceived(bool wasNew)"}</code> | <span className="api-desc">Sets whether the application was new.</span> |
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>2 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-alreadypending" /><code>{"private bool AlreadyPending { get; }"}</code> | True when the same application was already filed. |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `whitelist_application_received`. |
+| <Link id="m-alreadypending" /><code>{"private bool AlreadyPending { get; }"}</code> | <span className="api-desc">True when the same application was already filed.</span> |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | <span className="api-desc">Always `whitelist_application_received`.</span> |
 
 </details>

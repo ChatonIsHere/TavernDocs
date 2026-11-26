@@ -21,11 +21,11 @@ A `TypeConverter` that turns a string into a `ForestGenerator` by matching its `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForestConverter()"}</code> | Creates a `ForestConverter` with default values. |
+| <Link id="m-ctor" /><code>{"ForestConverter()"}</code> | <span className="api-desc">Creates a `ForestConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings, otherwise defers to the base converter. |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Returns the first `ForestGenerator.All` entry whose `Cache` matches the string case-insensitively, or null. |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | <span className="api-desc">True for strings, otherwise defers to the base converter.</span> |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | <span className="api-desc">Returns the first `ForestGenerator.All` entry whose `Cache` matches the string case-insensitively, or null.</span> |

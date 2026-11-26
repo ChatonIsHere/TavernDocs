@@ -22,16 +22,16 @@ The `Target` for a player, on the player prefab, so creatures can sense, chase a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCharacterTarget()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PlayerCharacterTarget()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-character" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> | Backing field for `Character`. |
+| <Link id="m-character" /><code>{"private "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" character"}</code> | <span className="api-desc">Backing field for `Character`.</span> |
 
 </details>
 
@@ -39,13 +39,13 @@ The `Target` for a player, on the player prefab, so creatures can sense, chase a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-character-2" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> | The player's `PlayerController`. |
-| <Link id="m-groundposition" /><code>{"override Vector3 GroundPosition { get; }"}</code> | The player's real feet position. |
-| <Link id="m-isalive" /><code>{"override bool IsAlive { get; }"}</code> | True while the player is alive and not a spirit. |
-| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> | The player's head position. |
+| <Link id="m-character-2" /><code><Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" Character { get; }"}</code> | <span className="api-desc">The player's `PlayerController`.</span> |
+| <Link id="m-groundposition" /><code>{"override Vector3 GroundPosition { get; }"}</code> | <span className="api-desc">The player's real feet position.</span> |
+| <Link id="m-isalive" /><code>{"override bool IsAlive { get; }"}</code> | <span className="api-desc">True while the player is alive and not a spirit.</span> |
+| <Link id="m-position" /><code>{"override Vector3 Position { get; }"}</code> | <span className="api-desc">The player's head position.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> | The current attack of every impact generator on the tools the player holds, so creatures can react to incoming swings. |
+| <Link id="m-attacks" /><code>{"override IEnumerable<"}<Link to="/mod/game-api/types/alta-intelligence/attackparameters">{"AttackParameters"}</Link>{"> Attacks() (iterator)"}</code> | <span className="api-desc">The current attack of every impact generator on the tools the player holds, so creatures can react to incoming swings.</span> |

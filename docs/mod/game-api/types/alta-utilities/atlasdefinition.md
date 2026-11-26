@@ -22,38 +22,38 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AtlasDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"AtlasDefinition()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-atlasedmaterialname" /><code>{"string atlasedMaterialName"}</code> | Base name for the atlas's files. |
-| <Link id="m-atlassize" /><code>{"int atlasSize"}</code> | Atlas texture size in pixels (a power of two). |
-| <Link id="m-bakedmaterial" /><code>{"Material bakedMaterial"}</code> | The combined material renderers are switched to. |
-| <Link id="m-freedetails" /><code>{"string freeDetails"}</code> | Text describing how full the atlas is. |
-| <Link id="m-generalpaddingvalue" /><code>{"int generalPaddingValue"}</code> | Default padding between atlas entries. |
-| <Link id="m-isdisablingalphaondifuse" /><code>{"bool isDisablingAlphaOnDifuse"}</code> | Turns off alpha in the diffuse atlas. Forced on for metal atlases. |
-| <Link id="m-isforcingnoemission" /><code>{"bool isForcingNoEmission"}</code> | Leaves emission out of the atlas. |
-| <Link id="m-materials" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materials"}</code> | The materials in the atlas, each with its rectangle, scale and padding. |
-| <Link id="m-needstobake" /><code>{"bool needsToBake"}</code> | Set when the atlas needs to be baked again. |
-| <Link id="m-priority" /><code>{"uint priority"}</code> | Order among atlases. |
-| <Link id="m-smallesttextureheight" /><code>{"int smallestTextureHeight"}</code> | Height of the smallest texture in the atlas. |
-| <Link id="m-smallesttexturewidth" /><code>{"int smallestTextureWidth"}</code> | Width of the smallest texture in the atlas. |
-| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-utilities/atlastarget">{"AtlasTarget"}</Link>{" target"}</code> | Flags for which builds or uses this atlas targets. |
-| <Link id="m-type" /><code><Link to="/mod/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" type"}</code> | Kind of atlas, which picks the atlased shader (common, foliage, metal). |
-| <Link id="m-uvfixtype" /><code><Link to="/mod/game-api/types/alta-utilities/uvfixtype">{"UVFixType"}</Link>{" uvFixType"}</code> | How UVs are remapped: through an extra UV channel (`Texcoord`) or by rewriting UV 0 (`None`). |
+| <Link id="m-atlasedmaterialname" /><code>{"string atlasedMaterialName"}</code> | <span className="api-desc">Base name for the atlas's files.</span> |
+| <Link id="m-atlassize" /><code>{"int atlasSize"}</code> | <span className="api-desc">Atlas texture size in pixels (a power of two).</span> |
+| <Link id="m-bakedmaterial" /><code>{"Material bakedMaterial"}</code> | <span className="api-desc">The combined material renderers are switched to.</span> |
+| <Link id="m-freedetails" /><code>{"string freeDetails"}</code> | <span className="api-desc">Text describing how full the atlas is.</span> |
+| <Link id="m-generalpaddingvalue" /><code>{"int generalPaddingValue"}</code> | <span className="api-desc">Default padding between atlas entries.</span> |
+| <Link id="m-isdisablingalphaondifuse" /><code>{"bool isDisablingAlphaOnDifuse"}</code> | <span className="api-desc">Turns off alpha in the diffuse atlas. Forced on for metal atlases.</span> |
+| <Link id="m-isforcingnoemission" /><code>{"bool isForcingNoEmission"}</code> | <span className="api-desc">Leaves emission out of the atlas.</span> |
+| <Link id="m-materials" /><code>{"List<"}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materials"}</code> | <span className="api-desc">The materials in the atlas, each with its rectangle, scale and padding.</span> |
+| <Link id="m-needstobake" /><code>{"bool needsToBake"}</code> | <span className="api-desc">Set when the atlas needs to be baked again.</span> |
+| <Link id="m-priority" /><code>{"uint priority"}</code> | <span className="api-desc">Order among atlases.</span> |
+| <Link id="m-smallesttextureheight" /><code>{"int smallestTextureHeight"}</code> | <span className="api-desc">Height of the smallest texture in the atlas.</span> |
+| <Link id="m-smallesttexturewidth" /><code>{"int smallestTextureWidth"}</code> | <span className="api-desc">Width of the smallest texture in the atlas.</span> |
+| <Link id="m-target" /><code><Link to="/mod/game-api/types/alta-utilities/atlastarget">{"AtlasTarget"}</Link>{" target"}</code> | <span className="api-desc">Flags for which builds or uses this atlas targets.</span> |
+| <Link id="m-type" /><code><Link to="/mod/game-api/types/alta-utilities/atlastype">{"AtlasType"}</Link>{" type"}</code> | <span className="api-desc">Kind of atlas, which picks the atlased shader (common, foliage, metal).</span> |
+| <Link id="m-uvfixtype" /><code><Link to="/mod/game-api/types/alta-utilities/uvfixtype">{"UVFixType"}</Link>{" uvFixType"}</code> | <span className="api-desc">How UVs are remapped: through an extra UV channel (`Texcoord`) or by rewriting UV 0 (`None`).</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bakedmeshes" /><code>{"private Dictionary<int, Mesh> bakedMeshes"}</code> | Cache of atlased meshes keyed by a mesh and material hash, so each pair is only rebuilt once. Cleared by `ClearBakedMeshes`. |
-| <Link id="m-colors" /><code>{"private static List<Color> colors"}</code> | Shared scratch list of colours. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-materialreferences" /><code>{"private Dictionary<Material, "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materialReferences"}</code> | Lookup from source material to its `AtlasedMaterial` entry, built by `PrepareReferences`. |
-| <Link id="m-offsetscaleuvs" /><code>{"private static List<Vector4> offsetScaleUVs"}</code> | Shared scratch list of UVs reused by `FixMeshUVs`. |
+| <Link id="m-bakedmeshes" /><code>{"private Dictionary<int, Mesh> bakedMeshes"}</code> | <span className="api-desc">Cache of atlased meshes keyed by a mesh and material hash, so each pair is only rebuilt once. Cleared by `ClearBakedMeshes`.</span> |
+| <Link id="m-colors" /><code>{"private static List<Color> colors"}</code> | <span className="api-desc">Shared scratch list of colours.</span> |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-materialreferences" /><code>{"private Dictionary<Material, "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materialReferences"}</code> | <span className="api-desc">Lookup from source material to its `AtlasedMaterial` entry, built by `PrepareReferences`.</span> |
+| <Link id="m-offsetscaleuvs" /><code>{"private static List<Vector4> offsetScaleUVs"}</code> | <span className="api-desc">Shared scratch list of UVs reused by `FixMeshUVs`.</span> |
 
 </details>
 
@@ -61,20 +61,20 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basepath" /><code>{"static string BasePath { get; }"}</code> | Resource folder for atlases: `Atlases/Standalone/` or `Atlases/Android/`. |
-| <Link id="m-definitionspath" /><code>{"static string DefinitionsPath { get; }"}</code> | Folder for atlas definitions under `BasePath`. |
+| <Link id="m-basepath" /><code>{"static string BasePath { get; }"}</code> | <span className="api-desc">Resource folder for atlases: `Atlases/Standalone/` or `Atlases/Android/`.</span> |
+| <Link id="m-definitionspath" /><code>{"static string DefinitionsPath { get; }"}</code> | <span className="api-desc">Folder for atlas definitions under `BasePath`.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal properties</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-horizontaltakensize" /><code>{"private int HorizontalTakenSize { get; }"}</code> | How many of the smallest textures fit across the atlas width. |
-| <Link id="m-materialspath" /><code>{"private static string MaterialsPath { get; }"}</code> | Project folder for baked atlas materials, under `ProjectPath`. |
-| <Link id="m-meshespath" /><code>{"private static string MeshesPath { get; }"}</code> | Project folder for baked atlas meshes, under `ProjectPath`. |
-| <Link id="m-projectpath" /><code>{"private static string ProjectPath { get; }"}</code> | `Assets/` plus `BasePath`, which differs for Android and standalone. |
-| <Link id="m-texturespath" /><code>{"private static string TexturesPath { get; }"}</code> | Project folder for baked atlas textures, under `ProjectPath`. |
-| <Link id="m-verticaltakensize" /><code>{"private int VerticalTakenSize { get; }"}</code> | How many of the smallest textures fit down the atlas height. |
+| <Link id="m-horizontaltakensize" /><code>{"private int HorizontalTakenSize { get; }"}</code> | <span className="api-desc">How many of the smallest textures fit across the atlas width.</span> |
+| <Link id="m-materialspath" /><code>{"private static string MaterialsPath { get; }"}</code> | <span className="api-desc">Project folder for baked atlas materials, under `ProjectPath`.</span> |
+| <Link id="m-meshespath" /><code>{"private static string MeshesPath { get; }"}</code> | <span className="api-desc">Project folder for baked atlas meshes, under `ProjectPath`.</span> |
+| <Link id="m-projectpath" /><code>{"private static string ProjectPath { get; }"}</code> | <span className="api-desc">`Assets/` plus `BasePath`, which differs for Android and standalone.</span> |
+| <Link id="m-texturespath" /><code>{"private static string TexturesPath { get; }"}</code> | <span className="api-desc">Project folder for baked atlas textures, under `ProjectPath`.</span> |
+| <Link id="m-verticaltakensize" /><code>{"private int VerticalTakenSize { get; }"}</code> | <span className="api-desc">How many of the smallest textures fit down the atlas height.</span> |
 
 </details>
 
@@ -82,31 +82,31 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-applyto" /><code>{"bool ApplyTo(IEnumerable<Renderer> renderers, bool isSavingMeshAsAsset = false, bool isSavingToTemporaryFolder = false)"}</code> | Points matching renderers (or one mesh) at the baked material, using UV-fixed mesh copies that are cached. True if anything changed. |
-| <Link id="m-applyto-2" /><code>{"bool ApplyTo(Mesh originalMesh, Material baseMaterial, out Mesh resultMesh, bool isSavingToTemporaryFolder = false)"}</code> | Points matching renderers (or one mesh) at the baked material, using UV-fixed mesh copies that are cached. True if anything changed. |
-| <Link id="m-autoestimatesize" /><code>{"void AutoEstimateSize(bool forceRebake = true)"}</code> | Works out the atlas size from the materials' texture sizes and fills in `freeDetails`. Marks it for rebake by default. |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> | Runs `AutoEstimateSize` if the atlas has a name and materials. It does not draw the atlas itself. |
-| <Link id="m-clearbakedmeshes" /><code>{"void ClearBakedMeshes()"}</code> | Forgets the cached UV-fixed meshes. |
-| <Link id="m-filterrenderers" /><code>{"IEnumerable<Renderer> FilterRenderers(IEnumerable<Renderer> renderers) (iterator)"}</code> | Yields the renderers that use any of the atlas's materials (once per matching material). |
-| <Link id="m-getmaterialrect" /><code>{"bool GetMaterialRect(Material material, out "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" reference)"}</code> | Finds the atlas entry for a material. |
-| <Link id="m-istargeting" /><code>{"bool IsTargeting("}<Link to="/mod/game-api/types/alta-utilities/atlastarget">{"AtlasTarget"}</Link>{" target)"}</code> | True if the atlas is for the given target. |
-| <Link id="m-preparereferences" /><code>{"void PrepareReferences()"}</code> | Rebuilds the material lookup and clears the mesh cache. |
-| <Link id="m-preparereferencesifneeded" /><code>{"void PrepareReferencesIfNeeded()"}</code> | Builds the material lookup if it is empty. |
-| <Link id="m-updateshader" /><code>{"void UpdateShader()"}</code> | Sets the baked material's shader from the atlas type. |
+| <Link id="m-applyto" /><code>{"bool ApplyTo(IEnumerable<Renderer> renderers, bool isSavingMeshAsAsset = false, bool isSavingToTemporaryFolder = false)"}</code> | <span className="api-desc">Points matching renderers (or one mesh) at the baked material, using UV-fixed mesh copies that are cached. True if anything changed.</span> |
+| <Link id="m-applyto-2" /><code>{"bool ApplyTo(Mesh originalMesh, Material baseMaterial, out Mesh resultMesh, bool isSavingToTemporaryFolder = false)"}</code> | <span className="api-desc">Points matching renderers (or one mesh) at the baked material, using UV-fixed mesh copies that are cached. True if anything changed.</span> |
+| <Link id="m-autoestimatesize" /><code>{"void AutoEstimateSize(bool forceRebake = true)"}</code> | <span className="api-desc">Works out the atlas size from the materials' texture sizes and fills in `freeDetails`. Marks it for rebake by default.</span> |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | <span className="api-desc">Runs `AutoEstimateSize` if the atlas has a name and materials. It does not draw the atlas itself.</span> |
+| <Link id="m-clearbakedmeshes" /><code>{"void ClearBakedMeshes()"}</code> | <span className="api-desc">Forgets the cached UV-fixed meshes.</span> |
+| <Link id="m-filterrenderers" /><code>{"IEnumerable<Renderer> FilterRenderers(IEnumerable<Renderer> renderers) (iterator)"}</code> | <span className="api-desc">Yields the renderers that use any of the atlas's materials (once per matching material).</span> |
+| <Link id="m-getmaterialrect" /><code>{"bool GetMaterialRect(Material material, out "}<Link to="/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" reference)"}</code> | <span className="api-desc">Finds the atlas entry for a material.</span> |
+| <Link id="m-istargeting" /><code>{"bool IsTargeting("}<Link to="/mod/game-api/types/alta-utilities/atlastarget">{"AtlasTarget"}</Link>{" target)"}</code> | <span className="api-desc">True if the atlas is for the given target.</span> |
+| <Link id="m-preparereferences" /><code>{"void PrepareReferences()"}</code> | <span className="api-desc">Rebuilds the material lookup and clears the mesh cache.</span> |
+| <Link id="m-preparereferencesifneeded" /><code>{"void PrepareReferencesIfNeeded()"}</code> | <span className="api-desc">Builds the material lookup if it is empty.</span> |
+| <Link id="m-updateshader" /><code>{"void UpdateShader()"}</code> | <span className="api-desc">Sets the baked material's shader from the atlas type.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blit" /><code>{"private void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material)"}</code> | Picks the shader-specific blit for a material and draws its textures into the atlas render textures. Logs an error for unmapped shaders. |
-| <Link id="m-clearrt" /><code>{"private void ClearRT(RenderTexture renderTexture)"}</code> | Clears a render texture to transparent, restoring the previously active one. |
-| <Link id="m-deletetexture" /><code>{"private void DeleteTexture(string textureName)"}</code> | Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty. |
-| <Link id="m-deletetexture-2" /><code>{"private void DeleteTexture(string textureBasePath, string textureName)"}</code> | Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty. |
-| <Link id="m-fixmeshuvs" /><code>{"private Mesh FixMeshUVs(List<int> triangles, Vector4 offsetScale, Mesh workingMesh, bool hasMultipleSubmeshes, int subMeshIndex, bool isOriginal)"}</code> | Rewrites a mesh's UVs for the atlas rect: writes offset/scale into UV channel 3, or remaps UV0, by `uvFixType`. Clones originals first. |
-| <Link id="m-getshader" /><code>{"private Shader GetShader()"}</code> | Finds the hidden atlased shader for `type`, adding a `Texcoord` suffix for that UV mode. Used by `UpdateShader`. |
-| <Link id="m-savetofile" /><code>{"private bool SaveToFile(string basePath, string textureName, RenderTexture renderTexture, bool isLinear, TextureFormat format = 4)"}</code> | Reads a render texture back to a PNG on disk. Returns false and writes nothing if every pixel is empty. |
-| <Link id="m-settexture" /><code>{"private void SetTexture(string textureName, bool isNormal)"}</code> | Empty in this build. |
+| <Link id="m-blit" /><code>{"private void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material)"}</code> | <span className="api-desc">Picks the shader-specific blit for a material and draws its textures into the atlas render textures. Logs an error for unmapped shaders.</span> |
+| <Link id="m-clearrt" /><code>{"private void ClearRT(RenderTexture renderTexture)"}</code> | <span className="api-desc">Clears a render texture to transparent, restoring the previously active one.</span> |
+| <Link id="m-deletetexture" /><code>{"private void DeleteTexture(string textureName)"}</code> | <span className="api-desc">Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty.</span> |
+| <Link id="m-deletetexture-2" /><code>{"private void DeleteTexture(string textureBasePath, string textureName)"}</code> | <span className="api-desc">Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty.</span> |
+| <Link id="m-fixmeshuvs" /><code>{"private Mesh FixMeshUVs(List<int> triangles, Vector4 offsetScale, Mesh workingMesh, bool hasMultipleSubmeshes, int subMeshIndex, bool isOriginal)"}</code> | <span className="api-desc">Rewrites a mesh's UVs for the atlas rect: writes offset/scale into UV channel 3, or remaps UV0, by `uvFixType`. Clones originals first.</span> |
+| <Link id="m-getshader" /><code>{"private Shader GetShader()"}</code> | <span className="api-desc">Finds the hidden atlased shader for `type`, adding a `Texcoord` suffix for that UV mode. Used by `UpdateShader`.</span> |
+| <Link id="m-savetofile" /><code>{"private bool SaveToFile(string basePath, string textureName, RenderTexture renderTexture, bool isLinear, TextureFormat format = 4)"}</code> | <span className="api-desc">Reads a render texture back to a PNG on disk. Returns false and writes nothing if every pixel is empty.</span> |
+| <Link id="m-settexture" /><code>{"private void SetTexture(string textureName, bool isNormal)"}</code> | <span className="api-desc">Empty in this build.</span> |
 
 </details>
 
@@ -114,4 +114,8 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 
 Members of other types that take, return or hold a `AtlasDefinition`:
 
+<div className="api-used-in">
+
 [`MeshPlacementData.BakeAtlas`](/mod/game-api/types/alta-crafting/meshplacementdata#m-bakeatlas), [`MeshPlacementData.forcedAtlasDefinition`](/mod/game-api/types/alta-crafting/meshplacementdata#m-forcedatlasdefinition), [`TreeAttachment.GenerateRenderers`](/mod/game-api/types/alta-crafting/treeattachment#m-generaterenderers), [`TreeSpecies.FixMaterials`](/mod/game-api/types/alta-crafting/treespecies#m-fixmaterials), [`WoodcutTreeBaker.attachmentDefinitions`](/mod/game-api/types/alta-crafting/woodcuttreebaker#m-attachmentdefinitions), [`WoodcutTreeBaker.trunkDefinitions`](/mod/game-api/types/alta-crafting/woodcuttreebaker#m-trunkdefinitions), [`ForcedAtlasDefinition.androidDefinition`](/mod/game-api/types/global-e-h/forcedatlasdefinition#m-androiddefinition), [`ForcedAtlasDefinition.standaloneDefinition`](/mod/game-api/types/global-e-h/forcedatlasdefinition#m-standalonedefinition), [`PhysicalMaterial.Setup`](/mod/game-api/types/global-p/physicalmaterial#m-setup), [`PhysicalMaterial.MaterialChannel.SetupOffsetScale`](/mod/game-api/types/global-p/physicalmaterial-materialchannel#m-setupoffsetscale), [`PooledMeshReplaceObjectDefinition.Bake`](/mod/game-api/types/global-p/pooledmeshreplaceobjectdefinition#m-bake).
+
+</div>

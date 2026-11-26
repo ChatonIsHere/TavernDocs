@@ -23,17 +23,17 @@ NLog target named `UnityConsoleLogTarget` that writes log lines to the Unity con
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UnityConsoleLogTarget()"}</code> | Creates an `UnityConsoleLogTarget` with default values. |
+| <Link id="m-ctor" /><code>{"UnityConsoleLogTarget()"}</code> | <span className="api-desc">Creates an `UnityConsoleLogTarget` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isloggingineditor" /><code>{"static bool IsLoggingInEditor"}</code> | Turns this target on or off; set from the editor logging settings. |
-| <Link id="m-unityconsolelogger" /><code>{"static ILogger unityConsoleLogger"}</code> | The Unity logger written to; set up in `Debug`. |
+| <Link id="m-isloggingineditor" /><code>{"static bool IsLoggingInEditor"}</code> | <span className="api-desc">Turns this target on or off; set from the editor logging settings.</span> |
+| <Link id="m-unityconsolelogger" /><code>{"static ILogger unityConsoleLogger"}</code> | <span className="api-desc">The Unity logger written to; set up in `Debug`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | Logs the rendered message to `unityConsoleLogger` at the matching Unity level, using the last log parameter as context if it is a Unity object. |
+| <Link id="m-write" /><code>{"protected override void Write(LogEventInfo logEvent)"}</code> | <span className="api-desc">Logs the rendered message to `unityConsoleLogger` at the matching Unity level, using the last log parameter as context if it is a Unity object.</span> |

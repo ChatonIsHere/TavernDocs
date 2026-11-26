@@ -21,6 +21,6 @@ Player preference key names for the stored login tokens.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-storedaccesstokenname" /><code>{"const string StoredAccessTokenName"}</code> | Key for the stored access token, `access_token`. |
-| <Link id="m-storedidentitytokenname" /><code>{"const string StoredIdentityTokenName"}</code> | Key for the stored identity token, `identity_token`. |
-| <Link id="m-storedrefreshtokenname" /><code>{"const string StoredRefreshTokenName"}</code> | Key for the stored refresh token, `refresh_token`. |
+| <Link id="m-storedaccesstokenname" /><code>{"const string StoredAccessTokenName"}</code> | <span className="api-desc">Key for the stored access token, `access_token`.</span> |
+| <Link id="m-storedidentitytokenname" /><code>{"const string StoredIdentityTokenName"}</code> | <span className="api-desc">Key for the stored identity token, `identity_token`.</span> |
+| <Link id="m-storedrefreshtokenname" /><code>{"const string StoredRefreshTokenName"}</code> | <span className="api-desc">Key for the stored refresh token, `refresh_token`.</span> |

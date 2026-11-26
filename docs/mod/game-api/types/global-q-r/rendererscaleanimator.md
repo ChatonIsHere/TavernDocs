@@ -21,16 +21,16 @@ Scale animator that also tells dock visuals whether the object is scaled up.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero, "}<Link to="/mod/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals)"}</code> | Creates a `RendererScaleAnimator` from `behaviour`, `isInitiallyOn`, `startScale`, `on`, `off`, `isDisallowingZero` and `dockVisuals`. |
+| <Link id="m-ctor" /><code>{"RendererScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero, "}<Link to="/mod/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals)"}</code> | <span className="api-desc">Creates a `RendererScaleAnimator` from `behaviour`, `isInitiallyOn`, `startScale`, `on`, `off`, `isDisallowingZero` and `dockVisuals`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> | Dock visuals told about the scale state. |
+| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/mod/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> | <span className="api-desc">Dock visuals told about the scale state.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ Scale animator that also tells dock visuals whether the object is scaled up.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> | Sets the scale, then marks each dock visual scaled up when the scale is above 0.01. |
+| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> | <span className="api-desc">Sets the scale, then marks each dock visual scaled up when the scale is above 0.01.</span> |

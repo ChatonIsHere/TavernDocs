@@ -21,19 +21,19 @@ A player's chunk and head position as sent by `FarAwayController`, so clients ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerData("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer)"}</code> | Creates a `FarAwayController.PlayerData` with default values. |
-| <Link id="m-ctor-2" /><code>{"PlayerData()"}</code> | Creates a `FarAwayController.PlayerData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerData("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer)"}</code> | <span className="api-desc">Creates a `FarAwayController.PlayerData` with default values.</span> |
+| <Link id="m-ctor-2" /><code>{"PlayerData()"}</code> | <span className="api-desc">Creates a `FarAwayController.PlayerData` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | The chunk the player's controller is in, or the global chunk when empty. |
-| <Link id="m-id" /><code>{"private int id"}</code> | Backing field for `Id`. |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | <span className="api-desc">The chunk the player's controller is in, or the global chunk when empty.</span> |
+| <Link id="m-id" /><code>{"private int id"}</code> | <span className="api-desc">Backing field for `Id`.</span> |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | <span className="api-desc">Backing field for `Position`.</span> |
 
 </details>
 
@@ -41,20 +41,24 @@ A player's chunk and head position as sent by `FarAwayController`, so clients ca
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id-2" /><code>{"int Id { get; }"}</code> | The player's user id. |
-| <Link id="m-isempty" /><code>{"bool IsEmpty { get; private set; }"}</code> | True when the player has no usable position (no head, no chunk, or in the global chunk). |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | The player's head position in its chunk. |
-| <Link id="m-targetplayer" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; private set; }"}</code> | The player this data is for. |
+| <Link id="m-id-2" /><code>{"int Id { get; }"}</code> | <span className="api-desc">The player's user id.</span> |
+| <Link id="m-isempty" /><code>{"bool IsEmpty { get; private set; }"}</code> | <span className="api-desc">True when the player has no usable position (no head, no chunk, or in the global chunk).</span> |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | <span className="api-desc">The player's head position in its chunk.</span> |
+| <Link id="m-targetplayer" /><code><Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; private set; }"}</code> | <span className="api-desc">The player this data is for.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the id, chunk and position, and looks up the `Player` for the id on read. |
-| <Link id="m-update" /><code>{"void Update()"}</code> | Server: refreshes chunk and head position from the player, or marks it empty. |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | <span className="api-desc">Syncs the id, chunk and position, and looks up the `Player` for the id on read.</span> |
+| <Link id="m-update" /><code>{"void Update()"}</code> | <span className="api-desc">Server: refreshes chunk and head position from the player, or marks it empty.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerData`:
 
+<div className="api-used-in">
+
 [`FarAwayController.workingList`](/mod/game-api/types/global-e-h/farawaycontroller#m-workinglist), [`FarAwayController.PlayerTuple.CloseBy`](/mod/game-api/types/global-e-h/farawaycontroller-playertuple#m-closeby), [`FarAwayController.PlayerTuple.PlayerData`](/mod/game-api/types/global-e-h/farawaycontroller-playertuple#m-playerdata).
+
+</div>

@@ -23,10 +23,10 @@ Base for components that give a random spawn position, such as `CircularSpawnPoi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected SpawnAreaBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected SpawnAreaBase()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getrandomspawnposition" /><code>{"abstract Vector3 GetRandomSpawnPosition()"}</code> | A random world position inside the area. |
+| <Link id="m-getrandomspawnposition" /><code>{"abstract Vector3 GetRandomSpawnPosition()"}</code> | <span className="api-desc">A random world position inside the area.</span> |

@@ -22,18 +22,18 @@ Settings for `ActiveCircleTarget`: the agent circles its target at a set distanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentCircleTargetSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentCircleTargetSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-circlingcalculationdistance" /><code>{"private float circlingCalculationDistance"}</code> | Backing field for `CirclingCalculationDistance`. |
-| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> | Backing field for `MaxDistanceFromTargetSquared`. |
-| <Link id="m-targetdistance" /><code>{"private float targetDistance"}</code> | Backing field for `TargetDistance`. |
+| <Link id="m-circlingcalculationdistance" /><code>{"private float circlingCalculationDistance"}</code> | <span className="api-desc">Backing field for `CirclingCalculationDistance`.</span> |
+| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> | <span className="api-desc">Backing field for `MaxDistanceFromTargetSquared`.</span> |
+| <Link id="m-targetdistance" /><code>{"private float targetDistance"}</code> | <span className="api-desc">Backing field for `TargetDistance`.</span> |
 
 </details>
 
@@ -41,12 +41,12 @@ Settings for `ActiveCircleTarget`: the agent circles its target at a set distanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-circlingcalculationdistance-2" /><code>{"float CirclingCalculationDistance { get; }"}</code> | Distance moved around the circle per second, also the reach of the path check. |
-| <Link id="m-maxdistancefromtargetsquared-2" /><code>{"float MaxDistanceFromTargetSquared { get; }"}</code> | Squared distance from the target past which circling finishes. |
-| <Link id="m-targetdistance-2" /><code>{"float TargetDistance { get; }"}</code> | Radius to circle the target at. |
+| <Link id="m-circlingcalculationdistance-2" /><code>{"float CirclingCalculationDistance { get; }"}</code> | <span className="api-desc">Distance moved around the circle per second, also the reach of the path check.</span> |
+| <Link id="m-maxdistancefromtargetsquared-2" /><code>{"float MaxDistanceFromTargetSquared { get; }"}</code> | <span className="api-desc">Squared distance from the target past which circling finishes.</span> |
+| <Link id="m-targetdistance-2" /><code>{"float TargetDistance { get; }"}</code> | <span className="api-desc">Radius to circle the target at.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the `ActiveCircleTarget` action, using a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Builds the `ActiveCircleTarget` action, using a target.</span> |

@@ -22,16 +22,16 @@ Hand camera filter asset that swaps in a post-processing profile.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PostProcessFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"PostProcessFilter()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-profile" /><code>{"private PostProcessProfile profile"}</code> | The post-processing profile the filter applies. |
+| <Link id="m-profile" /><code>{"private PostProcessProfile profile"}</code> | <span className="api-desc">The post-processing profile the filter applies.</span> |
 
 </details>
 
@@ -39,5 +39,5 @@ Hand camera filter asset that swaps in a post-processing profile.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> | Sets the camera's post-process volume to this filter's profile. |
-| <Link id="m-terminate" /><code>{"override void Terminate("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> | Clears the volume's profile if it is still this filter's one. |
+| <Link id="m-initialize" /><code>{"override void Initialize("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> | <span className="api-desc">Sets the camera's post-process volume to this filter's profile.</span> |
+| <Link id="m-terminate" /><code>{"override void Terminate("}<Link to="/mod/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, PostProcessVolume volume)"}</code> | <span className="api-desc">Clears the volume's profile if it is still this filter's one.</span> |

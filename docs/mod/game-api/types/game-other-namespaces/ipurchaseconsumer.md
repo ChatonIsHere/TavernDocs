@@ -20,11 +20,15 @@ Consumes completed store purchases, got from `InterfaceResolver.IPurchaseConsume
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consumepurchases" /><code>{"Task<bool> ConsumePurchases()"}</code> | Consumes pending purchases; true on success. |
-| <Link id="m-consumptiontask" /><code>{"Task ConsumptionTask()"}</code> | A task that finishes when consumption is done; the customization menu awaits it. |
+| <Link id="m-consumepurchases" /><code>{"Task<bool> ConsumePurchases()"}</code> | <span className="api-desc">Consumes pending purchases; true on success.</span> |
+| <Link id="m-consumptiontask" /><code>{"Task ConsumptionTask()"}</code> | <span className="api-desc">A task that finishes when consumption is done; the customization menu awaits it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IPurchaseConsumer`:
 
+<div className="api-used-in">
+
 [`InterfaceResolver.CreatePurchaseConsumer`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-createpurchaseconsumer), [`InterfaceResolver.iPurchaseConsumer`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-ipurchaseconsumer), [`InterfaceResolver.IPurchaseConsumer`](/mod/game-api/types/game-other-namespaces/interfaceresolver#m-ipurchaseconsumer-2).
+
+</div>

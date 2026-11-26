@@ -22,4 +22,4 @@ Editor menu folder `Tools/Capture`: menu item classes inherit it to appear under
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Capture()"}</code> | Creates an `AltaMenuItemBase.Tools.Capture` with default values. |
+| <Link id="m-ctor" /><code>{"protected Capture()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Tools.Capture` with default values.</span> |

@@ -22,32 +22,32 @@ A network entity that groups child entities (its parts) and destroys itself on t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Cluster()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Cluster()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-parts" /><code>{"protected HashSet<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> parts"}</code> | The entities currently in the cluster. |
+| <Link id="m-parts" /><code>{"protected HashSet<"}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> parts"}</code> | <span className="api-desc">The entities currently in the cluster.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isSingle, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Adds an entity as a part and watches for it being destroyed. Pass `isSingle` true to call `AddingFinished` straight after. |
-| <Link id="m-addingfinished" /><code>{"virtual void AddingFinished("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Hook for subclasses, called once the parts have been added. Does nothing by default. |
-| <Link id="m-checkdestroy" /><code>{"virtual void CheckDestroy()"}</code> | Server: destroys the cluster entity if it has no parts left. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Adds every child network prefab as a part, makes the cluster their chunking parent, then calls `AddingFinished`. |
-| <Link id="m-remove" /><code>{"void Remove("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed. |
-| <Link id="m-addinternal" /><code>{"protected virtual void AddInternal("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Hook for subclasses, called when a new part is added. |
-| <Link id="m-removeinternal" /><code>{"protected virtual void RemoveInternal("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | Hook for subclasses, called when a part is removed. |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isSingle, "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Adds an entity as a part and watches for it being destroyed. Pass `isSingle` true to call `AddingFinished` straight after.</span> |
+| <Link id="m-addingfinished" /><code>{"virtual void AddingFinished("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Hook for subclasses, called once the parts have been added. Does nothing by default.</span> |
+| <Link id="m-checkdestroy" /><code>{"virtual void CheckDestroy()"}</code> | <span className="api-desc">Server: destroys the cluster entity if it has no parts left.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Adds every child network prefab as a part, makes the cluster their chunking parent, then calls `AddingFinished`.</span> |
+| <Link id="m-remove" /><code>{"void Remove("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | <span className="api-desc">Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed.</span> |
+| <Link id="m-addinternal" /><code>{"protected virtual void AddInternal("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | <span className="api-desc">Hook for subclasses, called when a new part is added.</span> |
+| <Link id="m-removeinternal" /><code>{"protected virtual void RemoveInternal("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part)"}</code> | <span className="api-desc">Hook for subclasses, called when a part is removed.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-remove-2" /><code>{"private void Remove("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isUnloading)"}</code> | Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed. |
+| <Link id="m-remove-2" /><code>{"private void Remove("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" part, bool isUnloading)"}</code> | <span className="api-desc">Removes a part, calls `RemoveInternal`, then `CheckDestroy`. Also runs when a part is destroyed.</span> |
 
 </details>
 
@@ -55,4 +55,8 @@ A network entity that groups child entities (its parts) and destroys itself on t
 
 Members of other types that take, return or hold a `Cluster`:
 
+<div className="api-used-in">
+
 [`ClusterGenerator.cluster`](/mod/game-api/types/alta-world-generation/clustergenerator#m-cluster).
+
+</div>

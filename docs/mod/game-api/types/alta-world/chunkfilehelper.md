@@ -20,13 +20,13 @@ Server helper for finding chunk save files: shared chunks go in the server's chu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overridefoldersavepath" /><code>{"static string OverrideFolderSavePath { get; set; }"}</code> | Settable path. Not read by this class. |
+| <Link id="m-overridefoldersavepath" /><code>{"static string OverrideFolderSavePath { get; set; }"}</code> | <span className="api-desc">Settable path. Not read by this class.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cleancavessave" /><code>{"static void CleanCavesSave()"}</code> | Deletes every chunk save file whose name contains `Cave Layer`. Called by `CaveLayerManager`. |
-| <Link id="m-getfile" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name)"}</code> | Gets a chunk's `.bytes` save file, by folder and name or from a `Chunk` (in its owner's folder if it is a personal chunk). |
-| <Link id="m-getfile-2" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Gets a chunk's `.bytes` save file, by folder and name or from a `Chunk` (in its owner's folder if it is a personal chunk). |
-| <Link id="m-getfolder" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetFolder(int playerIdentifier = 0)"}</code> | The server's chunks folder, or for a non-zero player id, that player's subfolder. |
+| <Link id="m-cleancavessave" /><code>{"static void CleanCavesSave()"}</code> | <span className="api-desc">Deletes every chunk save file whose name contains `Cave Layer`. Called by `CaveLayerManager`.</span> |
+| <Link id="m-getfile" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile("}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name)"}</code> | <span className="api-desc">Gets a chunk's `.bytes` save file, by folder and name or from a `Chunk` (in its owner's folder if it is a personal chunk).</span> |
+| <Link id="m-getfile-2" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetFile("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | <span className="api-desc">Gets a chunk's `.bytes` save file, by folder and name or from a `Chunk` (in its owner's folder if it is a personal chunk).</span> |
+| <Link id="m-getfolder" /><code>{"static "}<Link to="/mod/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetFolder(int playerIdentifier = 0)"}</code> | <span className="api-desc">The server's chunks folder, or for a non-zero player id, that player's subfolder.</span> |

@@ -21,17 +21,21 @@ A cave layer that uses its own streamer prefab instead of the default cave strea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> | Creates a `StreamingSettings.SpecialLayer` with default values. |
+| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> | <span className="api-desc">Creates a `StreamingSettings.SpecialLayer` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-layer" /><code>{"int layer"}</code> | Index of the cave layer. |
-| <Link id="m-prefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Prefab spawned for that layer. |
+| <Link id="m-layer" /><code>{"int layer"}</code> | <span className="api-desc">Index of the cave layer.</span> |
+| <Link id="m-prefab" /><code><Link to="/mod/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | <span className="api-desc">Prefab spawned for that layer.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpecialLayer`:
 
+<div className="api-used-in">
+
 [`StreamingSettings.specialLayers`](/mod/game-api/types/alta-world-generation/streamingsettings#m-speciallayers), [`StreamingSettings.SpecialLayers`](/mod/game-api/types/alta-world-generation/streamingsettings#m-speciallayers-2).
+
+</div>

@@ -22,4 +22,4 @@ Serializable UnityEvent that takes a position and a rotation.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRotationHandler()"}</code> | Creates a `PositionRotationHandler` with default values. |
+| <Link id="m-ctor" /><code>{"PositionRotationHandler()"}</code> | <span className="api-desc">Creates a `PositionRotationHandler` with default values.</span> |

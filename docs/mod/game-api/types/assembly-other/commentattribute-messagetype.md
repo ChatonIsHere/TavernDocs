@@ -30,4 +30,8 @@ Icon style for a `CommentAttribute` note in the inspector: none, info, warning o
 
 Members of other types that take, return or hold a `MessageType`:
 
+<div className="api-used-in">
+
 [`CommentAttribute.CommentAttribute`](/mod/game-api/types/assembly-other/commentattribute#m-ctor), [`CommentAttribute.TypeOfMessage`](/mod/game-api/types/assembly-other/commentattribute#m-typeofmessage).
+
+</div>

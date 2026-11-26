@@ -23,16 +23,16 @@ AI hook that fires hook event channels on the creature at set delays after the a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EventChannelTimedAiHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EventChannelTimedAiHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-delays" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/eventchanneltimedaihook-delay">{"EventChannelTimedAiHook.Delay"}</Link>{"[] delays"}</code> | The channels to fire and how many seconds after the start each fires. |
+| <Link id="m-delays" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/eventchanneltimedaihook-delay">{"EventChannelTimedAiHook.Delay"}</Link>{"[] delays"}</code> | <span className="api-desc">The channels to fire and how many seconds after the start each fires.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ AI hook that fires hook event channels on the creature at set delays after the a
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Cancels every delayed channel still waiting for this run. |
-| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Schedules each entry in `delays` to fire its channel after its delay. |
+| <Link id="m-finishedorcancelled" /><code>{"protected override void FinishedOrCancelled("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | <span className="api-desc">Cancels every delayed channel still waiting for this run.</span> |
+| <Link id="m-used" /><code>{"protected override void Used("}<Link to="/mod/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | <span className="api-desc">Schedules each entry in `delays` to fire its channel after its delay.</span> |

@@ -21,4 +21,4 @@ Told by `PhysicalMaterialPart` when its physical material changes, for example `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setphysicalmaterial" /><code>{"void SetPhysicalMaterial("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" newMaterial)"}</code> | Called with the new physical material. |
+| <Link id="m-setphysicalmaterial" /><code>{"void SetPhysicalMaterial("}<Link to="/mod/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" newMaterial)"}</code> | <span className="api-desc">Called with the new physical material.</span> |

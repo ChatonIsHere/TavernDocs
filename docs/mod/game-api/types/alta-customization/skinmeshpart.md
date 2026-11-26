@@ -21,16 +21,16 @@ Mesh part for bare skin (body parts). Always coloured with the character's skin 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SkinMeshPart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SkinMeshPart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-impeded" /><code>{"private static "}<Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" impeded"}</code> | Shared arguments marked impeded, used when the skin is covered. |
+| <Link id="m-impeded" /><code>{"private static "}<Link to="/mod/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" impeded"}</code> | <span className="api-desc">Shared arguments marked impeded, used when the skin is covered.</span> |
 
 </details>
 
@@ -38,12 +38,12 @@ Mesh part for bare skin (body parts). Always coloured with the character's skin 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-istexturesharingforced" /><code>{"override bool IsTextureSharingForced { get; }"}</code> | Always true, so skin textures share atlas space even when sharing is off. |
+| <Link id="m-istexturesharingforced" /><code>{"override bool IsTextureSharingForced { get; }"}</code> | <span className="api-desc">Always true, so skin textures share atlas space even when sharing is off.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getcustompickupcolors" /><code>{"override void GetCustomPickupColors(out "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" primary, out "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" secondary)"}</code> | Uses the local player's skin colours for the pickup preview, when there is a local player. |
-| <Link id="m-changearguments" /><code>{"protected override void ChangeArguments("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Updates the packer input to the skin colour, or the impeded marker when impeded, and repacks. |
-| <Link id="m-createinput" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{" CreateInput("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | Builds the packer input with the skin colour and copies of the dummy's skin blit materials. |
+| <Link id="m-getcustompickupcolors" /><code>{"override void GetCustomPickupColors(out "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" primary, out "}<Link to="/mod/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" secondary)"}</code> | <span className="api-desc">Uses the local player's skin colours for the pickup preview, when there is a local player.</span> |
+| <Link id="m-changearguments" /><code>{"protected override void ChangeArguments("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Updates the packer input to the skin colour, or the impeded marker when impeded, and repacks.</span> |
+| <Link id="m-createinput" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-customization/cosmeticpacker-input">{"CosmeticPacker.Input"}</Link>{" CreateInput("}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{" handler, "}<Link to="/mod/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{" arguments)"}</code> | <span className="api-desc">Builds the packer input with the skin colour and copies of the dummy's skin blit materials.</span> |

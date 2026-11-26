@@ -23,10 +23,10 @@ Internal save data (version 1) for a `CaveLayerStreamer`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> | Creates a `CaveLayerStreamerSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> | <span className="api-desc">Creates a `CaveLayerStreamerSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> | Whether the cave layer has already been generated. |
+| <Link id="m-isgenerated" /><code>{"bool isGenerated"}</code> | <span className="api-desc">Whether the cave layer has already been generated.</span> |

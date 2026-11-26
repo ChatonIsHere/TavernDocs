@@ -22,17 +22,17 @@ Plays sound effects from animation events. Sits next to an `Animator`; an animat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AnimationBasedSound()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AnimationBasedSound()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clips" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"[] clips"}</code> | The sound effect sets to pick from. |
-| <Link id="m-clipstoplay" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{"[] clipsToPlay"}</code> | Obsolete list of single sound effects, kept as a fallback and migrated to `clips`. |
+| <Link id="m-clips" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{"[] clips"}</code> | <span className="api-desc">The sound effect sets to pick from.</span> |
+| <Link id="m-clipstoplay" /><code>{"private "}<Link to="/mod/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{"[] clipsToPlay"}</code> | <span className="api-desc">Obsolete list of single sound effects, kept as a fallback and migrated to `clips`.</span> |
 
 </details>
 
@@ -40,4 +40,4 @@ Plays sound effects from animation events. Sits next to an `Animator`; an animat
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playsound" /><code>{"void PlaySound(int clipIndex)"}</code> | Plays the sound at the given index at this object's position, using `clips`, or the old `clipsToPlay` list if `clips` is empty. |
+| <Link id="m-playsound" /><code>{"void PlaySound(int clipIndex)"}</code> | <span className="api-desc">Plays the sound at the given index at this object's position, using `clips`, or the old `clipsToPlay` list if `clips` is empty.</span> |

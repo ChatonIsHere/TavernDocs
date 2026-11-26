@@ -22,4 +22,4 @@ A serialized link from a logic receiver to a `LogicFloatSender`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FloatSenderInput()"}</code> | Creates a `FloatSenderInput` with default values. |
+| <Link id="m-ctor" /><code>{"FloatSenderInput()"}</code> | <span className="api-desc">Creates a `FloatSenderInput` with default values.</span> |

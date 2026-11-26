@@ -29,4 +29,8 @@ Which slope direction `AlignWithPathSlope` accepts between path nodes: `Either`,
 
 Members of other types that take, return or hold a `Hill`:
 
+<div className="api-used-in">
+
 [`AlignWithPathSlope.hill`](/mod/game-api/types/global-a-b/alignwithpathslope#m-hill).
+
+</div>

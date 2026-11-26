@@ -21,10 +21,10 @@ Starts every layer of the object's Animator at a random point in its current sta
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomAnimationStart()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"RandomAnimationStart()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | Plays each layer's current state from a random normalized time. |
+| <Link id="m-start" /><code>{"protected virtual void Start()"}</code> | <span className="api-desc">Plays each layer's current state from a random normalized time.</span> |

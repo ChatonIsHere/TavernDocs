@@ -23,4 +23,4 @@ Non-generic version of `AiHook<T>` bound to `ActionComponent`. An AI hook listen
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AiHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AiHook()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |

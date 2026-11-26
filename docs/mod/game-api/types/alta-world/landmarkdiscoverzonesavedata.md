@@ -23,10 +23,10 @@ Save data for `LandmarkDiscoverZone`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> | Creates a `LandmarkDiscoverZoneSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> | <span className="api-desc">Creates a `LandmarkDiscoverZoneSaveData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | Radius of the trigger sphere. |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | <span className="api-desc">Radius of the trigger sphere.</span> |

@@ -22,28 +22,28 @@ Server population manager that spawns one item into a population folder at a poi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationManager("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Creates a `BasicPopulationManager` from `spawnData`. |
+| <Link id="m-ctor" /><code>{"BasicPopulationManager("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Creates a `BasicPopulationManager` from `spawnData`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
-| <Link id="m-spawndata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | Spawn data passed in at construction. Not used by `Spawn`, which builds its own from the point's biome. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-spawndata" /><code>{"private "}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | <span className="api-desc">Spawn data passed in at construction. Not used by `Spawn`, which builds its own from the point's biome.</span> |
 
 </details>
 
 ## Properties
 
-<details>
+<details className="api-private">
 <summary>1 private and internal property</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-random" /><code>{"private static Random Random { get; }"}</code> | Shared random number generator for the forest spawn setup. |
+| <Link id="m-random" /><code>{"private static Random Random { get; }"}</code> | <span className="api-desc">Shared random number generator for the forest spawn setup.</span> |
 
 </details>
 
@@ -51,4 +51,4 @@ Server population manager that spawns one item into a population folder at a poi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> | Picks a point, runs the folder definition's spawn modifiers in the matching forest, and spawns the prefab under the folder. Returns null if any step fails. |
+| <Link id="m-spawn" /><code><Link to="/mod/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/mod/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> | <span className="api-desc">Picks a point, runs the folder definition's spawn modifiers in the matching forest, and spawns the prefab under the folder. Returns null if any step fails.</span> |

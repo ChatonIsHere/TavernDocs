@@ -28,4 +28,8 @@ When a `MethodSyncClass` makes a new argument object while reading a message: on
 
 Members of other types that take, return or hold a `RecreateArgumentMode`:
 
+<div className="api-used-in">
+
 [`MethodSyncClass<T>.MethodSyncClass<T>`](/mod/game-api/types/alta-networking/methodsyncclass-t#m-ctor), [`MethodSyncClass<T>.recreateArgumentMode`](/mod/game-api/types/alta-networking/methodsyncclass-t#m-recreateargumentmode).
+
+</div>

@@ -20,18 +20,22 @@ One choice in a web API form question (`Query.Options`).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Option(int id, string value)"}</code> | Creates an `Option` from `id` and `value`. |
+| <Link id="m-ctor" /><code>{"Option(int id, string value)"}</code> | <span className="api-desc">Creates an `Option` from `id` and `value`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | The option's numeric ID. |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | Optional image shown with the option. |
-| <Link id="m-value" /><code>{"string Value { get; set; }"}</code> | The option's text. |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | <span className="api-desc">The option's numeric ID.</span> |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | <span className="api-desc">Optional image shown with the option.</span> |
+| <Link id="m-value" /><code>{"string Value { get; set; }"}</code> | <span className="api-desc">The option's text.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Option`:
 
+<div className="api-used-in">
+
 [`Query.Options`](/mod/game-api/types/assembly-api-models/query#m-options).
+
+</div>

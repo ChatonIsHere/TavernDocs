@@ -20,17 +20,21 @@ The entity a console user has selected, kept on their `CommandContext` as `Selec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> | Creates an `AltaSelection` with default values. |
+| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> | <span className="api-desc">Creates an `AltaSelection` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-current" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> | The selected network entity, or null. |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The selected entity's transform, or null when nothing is selected. |
+| <Link id="m-current" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> | <span className="api-desc">The selected network entity, or null.</span> |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | <span className="api-desc">The selected entity's transform, or null when nothing is selected.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `AltaSelection`:
 
+<div className="api-used-in">
+
 [`CommandContext.Selection`](/mod/game-api/types/alta-console/commandcontext#m-selection).
+
+</div>

@@ -21,16 +21,16 @@ Pooled UI image for one piece of the map mask; `Setup` places and sizes it from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MapMaskPiece()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"MapMaskPiece()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-image" /><code>{"private Image image"}</code> | The image showing the piece's sprite. |
+| <Link id="m-image" /><code>{"private Image image"}</code> | <span className="api-desc">The image showing the piece's sprite.</span> |
 
 </details>
 
@@ -38,19 +38,19 @@ Pooled UI image for one piece of the map mask; `Setup` places and sizes it from 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-recttransform" /><code>{"RectTransform RectTransform { get; private set; }"}</code> | This piece's rect transform. |
+| <Link id="m-recttransform" /><code>{"RectTransform RectTransform { get; private set; }"}</code> | <span className="api-desc">This piece's rect transform.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece, RectTransform parent, float resolution)"}</code> | Sets the sprite, parent, size, position and scale from the map piece and the map resolution. |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece, RectTransform parent, float resolution)"}</code> | <span className="api-desc">Sets the sprite, parent, size, position and scale from the map piece and the map resolution.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches the image and rect transform. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Caches the image and rect transform.</span> |
 
 </details>

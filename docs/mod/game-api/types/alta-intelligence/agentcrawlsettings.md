@@ -22,23 +22,23 @@ Action settings for a creature crawling over surfaces for a random duration (`Ac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"AgentCrawlSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"AgentCrawlSettings()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>8 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderradius" /><code>{"private float colliderRadius"}</code> | Backing field for `ColliderRadius`: radius used for crawl surface and obstacle checks. |
-| <Link id="m-collisioncheck" /><code>{"private LayerMask collisionCheck"}</code> | Backing field for `CollisionCheck`: layers that block the crawl. |
-| <Link id="m-raycasteveryxframes" /><code>{"private int raycastEveryXFrames"}</code> | Backing field for `RaycastEveryXFrames`: how many frames between surface raycasts. |
-| <Link id="m-recoverfromfalling" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" recoverFromFalling"}</code> | Backing field for `RecoverFromFalling`: action set used when the crawler loses the surface. |
-| <Link id="m-uprightrotationspeed" /><code>{"private float uprightRotationSpeed"}</code> | Backing field for `UprightRotationSpeed`. |
-| <Link id="m-walkingspeed" /><code>{"private float walkingSpeed"}</code> | Backing field for `WalkingSpeed`. |
-| <Link id="m-walkon" /><code>{"private LayerMask walkOn"}</code> | Backing field for `WalkOn`: layers the agent can crawl on. |
-| <Link id="m-walkrotationspeed" /><code>{"private float walkRotationSpeed"}</code> | Backing field for `WalkRotationSpeed`. |
+| <Link id="m-colliderradius" /><code>{"private float colliderRadius"}</code> | <span className="api-desc">Backing field for `ColliderRadius`: radius used for crawl surface and obstacle checks.</span> |
+| <Link id="m-collisioncheck" /><code>{"private LayerMask collisionCheck"}</code> | <span className="api-desc">Backing field for `CollisionCheck`: layers that block the crawl.</span> |
+| <Link id="m-raycasteveryxframes" /><code>{"private int raycastEveryXFrames"}</code> | <span className="api-desc">Backing field for `RaycastEveryXFrames`: how many frames between surface raycasts.</span> |
+| <Link id="m-recoverfromfalling" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" recoverFromFalling"}</code> | <span className="api-desc">Backing field for `RecoverFromFalling`: action set used when the crawler loses the surface.</span> |
+| <Link id="m-uprightrotationspeed" /><code>{"private float uprightRotationSpeed"}</code> | <span className="api-desc">Backing field for `UprightRotationSpeed`.</span> |
+| <Link id="m-walkingspeed" /><code>{"private float walkingSpeed"}</code> | <span className="api-desc">Backing field for `WalkingSpeed`.</span> |
+| <Link id="m-walkon" /><code>{"private LayerMask walkOn"}</code> | <span className="api-desc">Backing field for `WalkOn`: layers the agent can crawl on.</span> |
+| <Link id="m-walkrotationspeed" /><code>{"private float walkRotationSpeed"}</code> | <span className="api-desc">Backing field for `WalkRotationSpeed`.</span> |
 
 </details>
 
@@ -46,17 +46,17 @@ Action settings for a creature crawling over surfaces for a random duration (`Ac
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-colliderradius-2" /><code>{"float ColliderRadius { get; }"}</code> | Radius used for the surface and collision checks around the body. |
-| <Link id="m-collisioncheck-2" /><code>{"LayerMask CollisionCheck { get; }"}</code> | Layers that block the crawl. |
-| <Link id="m-raycasteveryxframes-2" /><code>{"int RaycastEveryXFrames { get; }"}</code> | How many frames between the forward surface raycasts. |
-| <Link id="m-recoverfromfalling-2" /><code><Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" RecoverFromFalling { get; }"}</code> | Action set switched to when the creature loses the surface, if set. |
-| <Link id="m-uprightrotationspeed-2" /><code>{"float UprightRotationSpeed { get; }"}</code> | How fast it turns to match the surface. |
-| <Link id="m-walkingspeed-2" /><code>{"float WalkingSpeed { get; }"}</code> | Crawl speed in metres per second. |
-| <Link id="m-walkon-2" /><code>{"LayerMask WalkOn { get; }"}</code> | Layers it can crawl on. |
-| <Link id="m-walkrotationspeed-2" /><code>{"float WalkRotationSpeed { get; }"}</code> | How fast it turns while walking. |
+| <Link id="m-colliderradius-2" /><code>{"float ColliderRadius { get; }"}</code> | <span className="api-desc">Radius used for the surface and collision checks around the body.</span> |
+| <Link id="m-collisioncheck-2" /><code>{"LayerMask CollisionCheck { get; }"}</code> | <span className="api-desc">Layers that block the crawl.</span> |
+| <Link id="m-raycasteveryxframes-2" /><code>{"int RaycastEveryXFrames { get; }"}</code> | <span className="api-desc">How many frames between the forward surface raycasts.</span> |
+| <Link id="m-recoverfromfalling-2" /><code><Link to="/mod/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" RecoverFromFalling { get; }"}</code> | <span className="api-desc">Action set switched to when the creature loses the surface, if set.</span> |
+| <Link id="m-uprightrotationspeed-2" /><code>{"float UprightRotationSpeed { get; }"}</code> | <span className="api-desc">How fast it turns to match the surface.</span> |
+| <Link id="m-walkingspeed-2" /><code>{"float WalkingSpeed { get; }"}</code> | <span className="api-desc">Crawl speed in metres per second.</span> |
+| <Link id="m-walkon-2" /><code>{"LayerMask WalkOn { get; }"}</code> | <span className="api-desc">Layers it can crawl on.</span> |
+| <Link id="m-walkrotationspeed-2" /><code>{"float WalkRotationSpeed { get; }"}</code> | <span className="api-desc">How fast it turns while walking.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Creates the `ActiveCrawl` action without a target. |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/mod/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | <span className="api-desc">Creates the `ActiveCrawl` action without a target.</span> |

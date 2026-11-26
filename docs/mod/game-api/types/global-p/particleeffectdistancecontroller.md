@@ -22,21 +22,21 @@ Shortens the life of world-space particles that drift too far from this object. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ParticleEffectDistanceController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ParticleEffectDistanceController()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluatorcount" /><code>{"private int evaluatorCount"}</code> | Number of evaluators. |
-| <Link id="m-evaluators" /><code>{"private "}<Link to="/mod/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator">{"ParticleEffectDistanceController.ParticleSystemEvaluator"}</Link>{"[] evaluators"}</code> | One per world-space child particle system. |
-| <Link id="m-framecount" /><code>{"private int frameCount"}</code> | Frame counter for the update interval. |
-| <Link id="m-maxdistancesquared" /><code>{"private float maxDistanceSquared"}</code> | Squared distance past which particles are cut short. |
-| <Link id="m-remaininglifetimewhenfar" /><code>{"private float remainingLifetimeWhenFar"}</code> | Backing field for `RemainingLifetimeWhenFar`. |
-| <Link id="m-updateframecount" /><code>{"private int updateFrameCount"}</code> | Frames between checks (default 15). |
+| <Link id="m-evaluatorcount" /><code>{"private int evaluatorCount"}</code> | <span className="api-desc">Number of evaluators.</span> |
+| <Link id="m-evaluators" /><code>{"private "}<Link to="/mod/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator">{"ParticleEffectDistanceController.ParticleSystemEvaluator"}</Link>{"[] evaluators"}</code> | <span className="api-desc">One per world-space child particle system.</span> |
+| <Link id="m-framecount" /><code>{"private int frameCount"}</code> | <span className="api-desc">Frame counter for the update interval.</span> |
+| <Link id="m-maxdistancesquared" /><code>{"private float maxDistanceSquared"}</code> | <span className="api-desc">Squared distance past which particles are cut short.</span> |
+| <Link id="m-remaininglifetimewhenfar" /><code>{"private float remainingLifetimeWhenFar"}</code> | <span className="api-desc">Backing field for `RemainingLifetimeWhenFar`.</span> |
+| <Link id="m-updateframecount" /><code>{"private int updateFrameCount"}</code> | <span className="api-desc">Frames between checks (default 15).</span> |
 
 </details>
 
@@ -44,18 +44,18 @@ Shortens the life of world-space particles that drift too far from this object. 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-remaininglifetimewhenfar-2" /><code>{"float RemainingLifetimeWhenFar { get; }"}</code> | Remaining lifetime given to particles beyond the max distance. |
+| <Link id="m-remaininglifetimewhenfar-2" /><code>{"float RemainingLifetimeWhenFar { get; }"}</code> | <span className="api-desc">Remaining lifetime given to particles beyond the max distance.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Removes itself on headless builds, otherwise sets up an evaluator for each world-space child particle system. |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | Every `updateFrameCount` frames, cuts the remaining life of far particles. |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the max distance as a sphere. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Removes itself on headless builds, otherwise sets up an evaluator for each world-space child particle system.</span> |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | <span className="api-desc">Every `updateFrameCount` frames, cuts the remaining life of far particles.</span> |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Editor: draws the max distance as a sphere.</span> |
 
 </details>
 
@@ -63,4 +63,8 @@ Shortens the life of world-space particles that drift too far from this object. 
 
 Members of other types that take, return or hold a `ParticleEffectDistanceController`:
 
+<div className="api-used-in">
+
 [`ParticleEffectDistanceController.ParticleSystemEvaluator.controller`](/mod/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator#m-controller), [`ParticleEffectDistanceController.ParticleSystemEvaluator.ParticleSystemEvaluator`](/mod/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator#m-ctor).
+
+</div>

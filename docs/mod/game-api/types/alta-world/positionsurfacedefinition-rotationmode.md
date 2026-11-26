@@ -29,4 +29,8 @@ How a `PositionSurfaceDefinition` rotates a spawned object to the surface normal
 
 Members of other types that take, return or hold a `RotationMode`:
 
+<div className="api-used-in">
+
 [`PositionSurfaceDefinition.rotationMode`](/mod/game-api/types/alta-world/positionsurfacedefinition#m-rotationmode).
+
+</div>

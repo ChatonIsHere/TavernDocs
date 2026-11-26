@@ -21,13 +21,13 @@ Private holder for a part's PC and Android textures and normal maps. Not used an
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TextureCache()"}</code> | Creates a `CosmeticMeshPartBase` with default values. |
+| <Link id="m-ctor" /><code>{"TextureCache()"}</code> | <span className="api-desc">Creates a `CosmeticMeshPartBase` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-androidnormal" /><code>{"Texture2D androidNormal"}</code> | Android normal map. |
-| <Link id="m-androidtexture" /><code>{"Texture2D androidTexture"}</code> | Android diffuse texture. |
-| <Link id="m-normal" /><code>{"Texture2D normal"}</code> | PC normal map. |
-| <Link id="m-texture" /><code>{"Texture2D texture"}</code> | PC diffuse texture. |
+| <Link id="m-androidnormal" /><code>{"Texture2D androidNormal"}</code> | <span className="api-desc">Android normal map.</span> |
+| <Link id="m-androidtexture" /><code>{"Texture2D androidTexture"}</code> | <span className="api-desc">Android diffuse texture.</span> |
+| <Link id="m-normal" /><code>{"Texture2D normal"}</code> | <span className="api-desc">PC normal map.</span> |
+| <Link id="m-texture" /><code>{"Texture2D texture"}</code> | <span className="api-desc">PC diffuse texture.</span> |

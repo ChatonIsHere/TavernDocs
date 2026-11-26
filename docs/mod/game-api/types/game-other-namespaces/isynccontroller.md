@@ -21,23 +21,27 @@ Messages between server and client for micro tutorials: the server tells a playe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clientloadcompleted" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> ClientLoadCompleted"}</code> | Server: raised with the player when their client has finished spawning step content. |
-| <Link id="m-serverclearedtutorialsteps" /><code>{"event Action<int> ServerClearedTutorialSteps"}</code> | Client: raised with the player ID when the server asks to clear all steps. |
-| <Link id="m-serverdespawnedtutorialstepcontent" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"> ServerDespawnedTutorialStepContent"}</code> | Client: raised with the player ID and step when the server asks to despawn it. |
-| <Link id="m-serverspawnedadditionalstepcontent" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"> ServerSpawnedAdditionalStepContent"}</code> | Client: raised with the player ID and step when the server asks for its additional content. |
-| <Link id="m-serverspawnedstep" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{", Transform> ServerSpawnedStep"}</code> | Client: raised with the player ID, step and parent transform when the server asks to spawn a step. |
+| <Link id="m-clientloadcompleted" /><code>{"event Action<"}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> ClientLoadCompleted"}</code> | <span className="api-desc">Server: raised with the player when their client has finished spawning step content.</span> |
+| <Link id="m-serverclearedtutorialsteps" /><code>{"event Action<int> ServerClearedTutorialSteps"}</code> | <span className="api-desc">Client: raised with the player ID when the server asks to clear all steps.</span> |
+| <Link id="m-serverdespawnedtutorialstepcontent" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"> ServerDespawnedTutorialStepContent"}</code> | <span className="api-desc">Client: raised with the player ID and step when the server asks to despawn it.</span> |
+| <Link id="m-serverspawnedadditionalstepcontent" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"> ServerSpawnedAdditionalStepContent"}</code> | <span className="api-desc">Client: raised with the player ID and step when the server asks for its additional content.</span> |
+| <Link id="m-serverspawnedstep" /><code>{"event Action<int, "}<Link to="/mod/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{", Transform> ServerSpawnedStep"}</code> | <span className="api-desc">Client: raised with the player ID, step and parent transform when the server asks to spawn a step.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-notifyclienttocleartutorialsteps" /><code>{"void NotifyClientToClearTutorialSteps("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Server: tells the player's client to clear all tutorial steps. |
-| <Link id="m-notifyclienttodespawnstep" /><code>{"void NotifyClientToDespawnStep("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/despawnstepcontentcommand">{"DespawnStepContentCommand"}</Link>{" content)"}</code> | Server: tells the player's client to despawn one step's content. |
-| <Link id="m-notifyclienttospawnadditionalstepcontent" /><code>{"void NotifyClientToSpawnAdditionalStepContent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/spawnstepcontentcommand">{"SpawnStepContentCommand"}</Link>{" content)"}</code> | Server: tells the player's client to spawn a step's additional content. |
-| <Link id="m-notifyclienttospawnstep" /><code>{"void NotifyClientToSpawnStep("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/spawnstepcontentcommand">{"SpawnStepContentCommand"}</Link>{" content)"}</code> | Server: tells the player's client to spawn a step's content under a parent entity. The client answers with a load complete message. |
+| <Link id="m-notifyclienttocleartutorialsteps" /><code>{"void NotifyClientToClearTutorialSteps("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Server: tells the player's client to clear all tutorial steps.</span> |
+| <Link id="m-notifyclienttodespawnstep" /><code>{"void NotifyClientToDespawnStep("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/despawnstepcontentcommand">{"DespawnStepContentCommand"}</Link>{" content)"}</code> | <span className="api-desc">Server: tells the player's client to despawn one step's content.</span> |
+| <Link id="m-notifyclienttospawnadditionalstepcontent" /><code>{"void NotifyClientToSpawnAdditionalStepContent("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/spawnstepcontentcommand">{"SpawnStepContentCommand"}</Link>{" content)"}</code> | <span className="api-desc">Server: tells the player's client to spawn a step's additional content.</span> |
+| <Link id="m-notifyclienttospawnstep" /><code>{"void NotifyClientToSpawnStep("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/game-other-namespaces/spawnstepcontentcommand">{"SpawnStepContentCommand"}</Link>{" content)"}</code> | <span className="api-desc">Server: tells the player's client to spawn a step's content under a parent entity. The client answers with a load complete message.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `ISyncController`:
 
+<div className="api-used-in">
+
 [`ClientController.ClientController`](/mod/game-api/types/game-other-namespaces/clientcontroller#m-ctor), [`IMicroTutorialSystem.SyncController`](/mod/game-api/types/game-other-namespaces/imicrotutorialsystem#m-synccontroller), [`MicroTutorialSystem.SyncController`](/mod/game-api/types/game-other-namespaces/microtutorialsystem#m-synccontroller), [`ServerController.ServerController`](/mod/game-api/types/game-other-namespaces/servercontroller#m-ctor), [`ServerController.syncController`](/mod/game-api/types/game-other-namespaces/servercontroller#m-synccontroller).
+
+</div>

@@ -21,16 +21,16 @@ For one player character, maps each LOD0 clothing renderer to its original mater
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/mod/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> | Creates a `PlayerSwapMaterialFilter.PlayerOriginalMaterials` from `character` and `filter`. |
+| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/mod/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> | <span className="api-desc">Creates a `PlayerSwapMaterialFilter.PlayerOriginalMaterials` from `character` and `filter`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-materialmap" /><code>{"private Dictionary<Renderer, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{"> materialMap"}</code> | Renderer to original and copy material pairs. |
+| <Link id="m-materialmap" /><code>{"private Dictionary<Renderer, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple">{"PlayerSwapMaterialFilter.MaterialTuple"}</Link>{"> materialMap"}</code> | <span className="api-desc">Renderer to original and copy material pairs.</span> |
 
 </details>
 
@@ -38,15 +38,15 @@ For one player character, maps each LOD0 clothing renderer to its original mater
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> | Cleans up copied materials that were marked as needing it. |
-| <Link id="m-toggle" /><code>{"void Toggle(bool isSpectral)"}</code> | Puts the filter copies on every renderer when true, or the originals back when false. |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | <span className="api-desc">Cleans up copied materials that were marked as needing it.</span> |
+| <Link id="m-toggle" /><code>{"void Toggle(bool isSpectral)"}</code> | <span className="api-desc">Puts the filter copies on every renderer when true, or the originals back when false.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-processrenderer" /><code>{"private void ProcessRenderer(Renderer renderer, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter, Material baseMaterial, bool needsClearing)"}</code> | Adds a renderer with its original material and a copy set up by the filter. Skips renderers with no material or already added. |
+| <Link id="m-processrenderer" /><code>{"private void ProcessRenderer(Renderer renderer, "}<Link to="/mod/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter, Material baseMaterial, bool needsClearing)"}</code> | <span className="api-desc">Adds a renderer with its original material and a copy set up by the filter. Skips renderers with no material or already added.</span> |
 
 </details>
 
@@ -54,4 +54,8 @@ For one player character, maps each LOD0 clothing renderer to its original mater
 
 Members of other types that take, return or hold a `PlayerOriginalMaterials`:
 
+<div className="api-used-in">
+
 [`PlayerSwapMaterialFilter.playerMap`](/mod/game-api/types/alta-customization/playerswapmaterialfilter#m-playermap).
+
+</div>

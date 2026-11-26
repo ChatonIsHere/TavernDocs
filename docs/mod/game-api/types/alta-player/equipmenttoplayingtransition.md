@@ -21,22 +21,22 @@ Leaves equipment mode back to Playing, either through the quick access menu or w
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EquipmentToPlayingTransition()"}</code> | Creates an `EquipmentToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"EquipmentToPlayingTransition()"}</code> | <span className="api-desc">Creates an `EquipmentToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> | Static: runs the transition for whichever equipment transition is currently active. Called by the equipment quick access action. |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Sets up the static trigger, and for the local player listens for leaving the customization room boundary. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Clears the trigger and stops listening to the room boundary. |
+| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> | <span className="api-desc">Static: runs the transition for whichever equipment transition is currently active. Called by the equipment quick access action.</span> |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Sets up the static trigger, and for the local player listens for leaving the customization room boundary.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Clears the trigger and stops listening to the room boundary.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerleftboundary" /><code>{"private void PlayerLeftBoundary()"}</code> | Switches back to Playing when the player leaves the room boundary. |
+| <Link id="m-playerleftboundary" /><code>{"private void PlayerLeftBoundary()"}</code> | <span className="api-desc">Switches back to Playing when the player leaves the room boundary.</span> |
 
 </details>
 
@@ -44,4 +44,8 @@ Leaves equipment mode back to Playing, either through the quick access menu or w
 
 Members of other types that take, return or hold a `EquipmentToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.equipmentToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-equipmenttoplaying), [`AllTransitions.EquipmentToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-equipmenttoplayingtransition).
+
+</div>

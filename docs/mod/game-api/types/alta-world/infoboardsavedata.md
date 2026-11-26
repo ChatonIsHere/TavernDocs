@@ -23,16 +23,20 @@ Save data for an `InfoBoard`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> | Creates an `InfoBoardSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> | <span className="api-desc">Creates an `InfoBoardSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-identifier" /><code>{"string identifier"}</code> | The board's saved identifier. |
+| <Link id="m-identifier" /><code>{"string identifier"}</code> | <span className="api-desc">The board's saved identifier.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InfoBoardSaveData`:
 
+<div className="api-used-in">
+
 [`InfoBoard.data`](/mod/game-api/types/alta-world/infoboard#m-data).
+
+</div>

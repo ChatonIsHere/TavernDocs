@@ -21,16 +21,16 @@ A `PositionFromOriginHelper` that gives the closest point on a collider to the o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ColliderPositionHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ColliderPositionHelper()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-positioncollider" /><code>{"private Collider positionCollider"}</code> | Collider whose surface is used. |
+| <Link id="m-positioncollider" /><code>{"private Collider positionCollider"}</code> | <span className="api-desc">Collider whose surface is used.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `PositionFromOriginHelper` that gives the closest point on a collider to the o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> | Closest point on `positionCollider` to the origin. |
+| <Link id="m-getposition" /><code>{"override Vector3 GetPosition(Vector3 origin)"}</code> | <span className="api-desc">Closest point on `positionCollider` to the origin.</span> |

@@ -20,16 +20,16 @@ One day in an AI `History`, holding the events registered on it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Day("}<Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> | Creates a `Day` from `history` and `index`. |
+| <Link id="m-ctor" /><code>{"Day("}<Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> | <span className="api-desc">Creates a `Day` from `history` and `index`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-events" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> | Events that happened on this day. |
+| <Link id="m-events" /><code>{"private List<"}<Link to="/mod/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> | <span className="api-desc">Events that happened on this day.</span> |
 
 </details>
 
@@ -37,17 +37,21 @@ One day in an AI `History`, holding the events registered on it.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-history" /><code><Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> | The history this day belongs to. |
-| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> | Day number within the history. |
+| <Link id="m-history" /><code><Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/mod/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The history this day belongs to.</span> |
+| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> | <span className="api-desc">Day number within the history.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/mod/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> | Adds an event to the day. |
+| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/mod/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> | <span className="api-desc">Adds an event to the day.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Day`:
 
+<div className="api-used-in">
+
 [`Event.Day`](/mod/game-api/types/alta-intelligence/event#m-day), [`Event.Event`](/mod/game-api/types/alta-intelligence/event#m-ctor), [`History.Current`](/mod/game-api/types/alta-intelligence/history#m-current), [`History.days`](/mod/game-api/types/alta-intelligence/history#m-days), [`KnowledgeHolder.knownEvents`](/mod/game-api/types/alta-intelligence/knowledgeholder#m-knownevents).
+
+</div>

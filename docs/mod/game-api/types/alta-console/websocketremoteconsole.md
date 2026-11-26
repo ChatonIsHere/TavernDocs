@@ -21,22 +21,22 @@ The server's websocket remote console: a Fleck server on port 1760 that makes a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"WebSocketRemoteConsole()"}</code> | Creates a `WebSocketRemoteConsole` with default values. |
+| <Link id="m-ctor" /><code>{"WebSocketRemoteConsole()"}</code> | <span className="api-desc">Creates a `WebSocketRemoteConsole` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-handlers" /><code>{"static List<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{"> Handlers"}</code> | Command handlers for the open websocket connections. |
-| <Link id="m-websocketport" /><code>{"const int WebsocketPort"}</code> | The websocket console port, 1760. |
+| <Link id="m-handlers" /><code>{"static List<"}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{"> Handlers"}</code> | <span className="api-desc">Command handlers for the open websocket connections.</span> |
+| <Link id="m-websocketport" /><code>{"const int WebsocketPort"}</code> | <span className="api-desc">The websocket console port, 1760.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
-| <Link id="m-server" /><code>{"private WebSocketServer server"}</code> | The Fleck websocket server. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
+| <Link id="m-server" /><code>{"private WebSocketServer server"}</code> | <span className="api-desc">The Fleck websocket server.</span> |
 
 </details>
 
@@ -44,29 +44,29 @@ The server's websocket remote console: a Fleck server on port 1760 that makes a 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isactive" /><code>{"static bool IsActive { get; private set; }"}</code> | True while the websocket server is started. |
+| <Link id="m-isactive" /><code>{"static bool IsActive { get; private set; }"}</code> | <span className="api-desc">True while the websocket server is started.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> | Raised when a connection's handler is authorized, with its user. |
-| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> | Raised when an authorized connection closes. |
+| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> | <span className="api-desc">Raised when a connection's handler is authorized, with its user.</span> |
+| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/mod/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/mod/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> | <span className="api-desc">Raised when an authorized connection closes.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-close" /><code>{"void Close()"}</code> | Disposes the websocket server and marks it inactive. |
-| <Link id="m-start" /><code>{"void Start()"}</code> | Starts listening on `ws://0.0.0.0:1760`, routing Fleck logs into NLog; on failure logs and stays inactive. |
+| <Link id="m-close" /><code>{"void Close()"}</code> | <span className="api-desc">Disposes the websocket server and marks it inactive.</span> |
+| <Link id="m-start" /><code>{"void Start()"}</code> | <span className="api-desc">Starts listening on `ws://0.0.0.0:1760`, routing Fleck logs into NLog; on failure logs and stays inactive.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createnewcommandhandler" /><code>{"private void CreateNewCommandHandler(IWebSocketConnection socket)"}</code> | Makes and tracks a command handler for a new socket and hooks its closed and authorized events. |
-| <Link id="m-handlerauthorized" /><code>{"private void HandlerAuthorized("}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" handler)"}</code> | Raises `ConsoleConnected` once a handler is authorized. |
-| <Link id="m-remoteconsoleclosed" /><code>{"private void RemoteConsoleClosed("}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" handler)"}</code> | Drops a closed handler from `Handlers` and raises `ConsoleDisconnected` if it was authorized. |
+| <Link id="m-createnewcommandhandler" /><code>{"private void CreateNewCommandHandler(IWebSocketConnection socket)"}</code> | <span className="api-desc">Makes and tracks a command handler for a new socket and hooks its closed and authorized events.</span> |
+| <Link id="m-handlerauthorized" /><code>{"private void HandlerAuthorized("}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Raises `ConsoleConnected` once a handler is authorized.</span> |
+| <Link id="m-remoteconsoleclosed" /><code>{"private void RemoteConsoleClosed("}<Link to="/mod/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Drops a closed handler from `Handlers` and raises `ConsoleDisconnected` if it was authorized.</span> |
 
 </details>

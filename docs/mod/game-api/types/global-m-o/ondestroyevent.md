@@ -21,20 +21,20 @@ Fires a Unity event when its entity is destroyed, on the sides you pick. Also fi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"OnDestroyEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"OnDestroyEvent()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyevent" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" destroyEvent"}</code> | Event to fire. |
-| <Link id="m-iscallinginlocaltest" /><code>{"private bool isCallingInLocalTest"}</code> | Fire in local test. |
-| <Link id="m-iscallingonclient" /><code>{"private bool isCallingOnClient"}</code> | Fire on clients. |
-| <Link id="m-iscallingonserver" /><code>{"private bool isCallingOnServer"}</code> | Fire on the server. |
-| <Link id="m-isusingunitydestroy" /><code>{"private bool isUsingUnityDestroy"}</code> | If true, fires from Unity's `OnDestroy`, when child objects are already gone, instead of the scene destroy event. |
+| <Link id="m-destroyevent" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" destroyEvent"}</code> | <span className="api-desc">Event to fire.</span> |
+| <Link id="m-iscallinginlocaltest" /><code>{"private bool isCallingInLocalTest"}</code> | <span className="api-desc">Fire in local test.</span> |
+| <Link id="m-iscallingonclient" /><code>{"private bool isCallingOnClient"}</code> | <span className="api-desc">Fire on clients.</span> |
+| <Link id="m-iscallingonserver" /><code>{"private bool isCallingOnServer"}</code> | <span className="api-desc">Fire on the server.</span> |
+| <Link id="m-isusingunitydestroy" /><code>{"private bool isUsingUnityDestroy"}</code> | <span className="api-desc">If true, fires from Unity's `OnDestroy`, when child objects are already gone, instead of the scene destroy event.</span> |
 
 </details>
 
@@ -42,15 +42,15 @@ Fires a Unity event when its entity is destroyed, on the sides you pick. Also fi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Hooks the entity's scene destroy event, unless using Unity's destroy. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Hooks the entity's scene destroy event, unless using Unity's destroy.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-destroyed" /><code>{"private void Destroyed()"}</code> | Fires the event if this side is enabled. |
-| <Link id="m-entitydestroyedbyscene" /><code>{"private void EntityDestroyedByScene("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Calls `Destroyed` when the scene destroys or unloads the entity. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Calls `Destroyed` if using Unity's destroy. |
+| <Link id="m-destroyed" /><code>{"private void Destroyed()"}</code> | <span className="api-desc">Fires the event if this side is enabled.</span> |
+| <Link id="m-entitydestroyedbyscene" /><code>{"private void EntityDestroyedByScene("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | <span className="api-desc">Calls `Destroyed` when the scene destroys or unloads the entity.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Calls `Destroyed` if using Unity's destroy.</span> |
 
 </details>

@@ -21,11 +21,11 @@ JSON converter that writes a `Vector2` as a two-number array and reads it back.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Vector2TypeConverter()"}</code> | Creates a `Vector2TypeConverter` with default values. |
+| <Link id="m-ctor" /><code>{"Vector2TypeConverter()"}</code> | <span className="api-desc">Creates a `Vector2TypeConverter` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readjson" /><code>{"override Vector2 ReadJson(JsonReader reader, Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | Reads `[x, y]`; returns zero if the token is not an array. |
-| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)"}</code> | Writes `[x, y]`. |
+| <Link id="m-readjson" /><code>{"override Vector2 ReadJson(JsonReader reader, Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)"}</code> | <span className="api-desc">Reads `[x, y]`; returns zero if the token is not an array.</span> |
+| <Link id="m-writejson" /><code>{"override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)"}</code> | <span className="api-desc">Writes `[x, y]`.</span> |

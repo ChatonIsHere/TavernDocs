@@ -21,17 +21,21 @@ A path and level pair, used only to log a player's levels as a table.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> | Creates an `OfflinePlayerProgressionHandler.PathLevel` from `path` and `level`. |
+| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> | <span className="api-desc">Creates an `OfflinePlayerProgressionHandler.PathLevel` from `path` and `level`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-level" /><code>{"int level"}</code> | The level in that path. |
-| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | The progression path. |
+| <Link id="m-level" /><code>{"int level"}</code> | <span className="api-desc">The level in that path.</span> |
+| <Link id="m-path" /><code><Link to="/mod/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | <span className="api-desc">The progression path.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PathLevel`:
 
+<div className="api-used-in">
+
 [`OfflinePlayerProgressionHandler.GetTable`](/mod/game-api/types/global-m-o/offlineplayerprogressionhandler#m-gettable).
+
+</div>

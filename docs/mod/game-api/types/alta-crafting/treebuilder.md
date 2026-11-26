@@ -22,17 +22,17 @@ Editor helper that holds the currently selected woodcut connection and preset tr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TreeBuilder()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TreeBuilder()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preset" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | Backing field for `Preset`. |
-| <Link id="m-selected" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" selected"}</code> | Backing field for `Selected`. |
+| <Link id="m-preset" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" preset"}</code> | <span className="api-desc">Backing field for `Preset`.</span> |
+| <Link id="m-selected" /><code>{"private "}<Link to="/mod/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" selected"}</code> | <span className="api-desc">Backing field for `Selected`.</span> |
 
 </details>
 
@@ -40,5 +40,5 @@ Editor helper that holds the currently selected woodcut connection and preset tr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preset-2" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" Preset { get; set; }"}</code> | The preset tree being edited. |
-| <Link id="m-selected-2" /><code><Link to="/mod/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Selected { get; set; }"}</code> | The selected woodcut connection. |
+| <Link id="m-preset-2" /><code><Link to="/mod/game-api/types/alta-crafting/presettree">{"PresetTree"}</Link>{" Preset { get; set; }"}</code> | <span className="api-desc">The preset tree being edited.</span> |
+| <Link id="m-selected-2" /><code><Link to="/mod/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" Selected { get; set; }"}</code> | <span className="api-desc">The selected woodcut connection.</span> |

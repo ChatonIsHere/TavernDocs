@@ -22,10 +22,10 @@ A `HeatSourceBase` variant that adds energy to its heat point instead of conduct
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> | Adds energy to the attached heat point's `InternalEnergy` each heat tick. The amount is always 0 in this build. |
+| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> | <span className="api-desc">Adds energy to the attached heat point's `InternalEnergy` each heat tick. The amount is always 0 in this build.</span> |

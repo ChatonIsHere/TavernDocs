@@ -22,4 +22,4 @@ Editor menu entry for creating a `MouldDefinition` asset. Not used at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MouldDefinition.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `MouldDefinition.Create` with default values.</span> |

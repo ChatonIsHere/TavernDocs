@@ -23,10 +23,10 @@ Save data for a `Fire` (save structure version 2).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> | Creates a `FireSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> | <span className="api-desc">Creates a `FireSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-fuelconsumptionprogress" /><code>{"float fuelConsumptionProgress"}</code> | How far the fire is through its current fuel. |
+| <Link id="m-fuelconsumptionprogress" /><code>{"float fuelConsumptionProgress"}</code> | <span className="api-desc">How far the fire is through its current fuel.</span> |

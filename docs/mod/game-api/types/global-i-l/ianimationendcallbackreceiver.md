@@ -21,4 +21,4 @@ Receives a call when an animation ends.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> | Called when the animation ends. |
+| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> | <span className="api-desc">Called when the animation ends.</span> |

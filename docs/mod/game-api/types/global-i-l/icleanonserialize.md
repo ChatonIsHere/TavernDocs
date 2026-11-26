@@ -21,4 +21,4 @@ Component that needs to reset state before its object is packed into a save, for
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onserialize" /><code>{"void OnSerialize()"}</code> | Called just before the object is serialized. |
+| <Link id="m-onserialize" /><code>{"void OnSerialize()"}</code> | <span className="api-desc">Called just before the object is serialized.</span> |

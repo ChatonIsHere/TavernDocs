@@ -21,16 +21,16 @@ Component that points at a `Target` elsewhere on the prefab, so code looking up 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TargetPointer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TargetPointer()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/target">{"Target"}</Link>{" target"}</code> | Serialized backing field for `Target`. |
+| <Link id="m-target" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/target">{"Target"}</Link>{" target"}</code> | <span className="api-desc">Serialized backing field for `Target`.</span> |
 
 </details>
 
@@ -38,15 +38,15 @@ Component that points at a `Target` elsewhere on the prefab, so code looking up 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-target-2" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | The target pointed at. |
+| <Link id="m-target-2" /><code><Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Target { get; }"}</code> | <span className="api-desc">The target pointed at.</span> |
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-find" /><code>{"private void Find()"}</code> | Editor context menu "Find in children": sets `target` to the first `Target` in the children. |
+| <Link id="m-find" /><code>{"private void Find()"}</code> | <span className="api-desc">Editor context menu "Find in children": sets `target` to the first `Target` in the children.</span> |
 
 </details>

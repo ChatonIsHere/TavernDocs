@@ -23,4 +23,4 @@ Editor menu folder `Township/Logs`: menu item classes inherit it to appear under
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Logs()"}</code> | Creates an `AltaMenuItemBase.Township.Logs` with default values. |
+| <Link id="m-ctor" /><code>{"protected Logs()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Township.Logs` with default values.</span> |

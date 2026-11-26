@@ -21,4 +21,4 @@ An API model with an integer database id.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | The model's id in the API. |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | <span className="api-desc">The model's id in the API.</span> |

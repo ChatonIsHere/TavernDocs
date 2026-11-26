@@ -21,5 +21,5 @@ Internal exception for a corrupt player save file. Nothing in this build throws 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> | Creates the exception with `message`. |
-| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> | Creates the exception with `message`. |
+| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> | <span className="api-desc">Creates the exception with `message`.</span> |
+| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> | <span className="api-desc">Creates the exception with `message`.</span> |

@@ -21,10 +21,10 @@ Inspector attribute that sets a minimum for a float field. The drawer that enfor
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> | Creates a `MinAttribute` from `min`. |
+| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> | <span className="api-desc">Creates a `MinAttribute` from `min`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-min" /><code>{"readonly float min"}</code> | The minimum value. |
+| <Link id="m-min" /><code>{"readonly float min"}</code> | <span className="api-desc">The minimum value.</span> |

@@ -22,11 +22,11 @@ Harmony patches that raise the game's `ConsoleEvents.PlayerJoined` and `PlayerLe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleEventsPatch()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"ConsoleEventsPatch()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-playerjoinpatch" /><code>{"static void PlayerJoinPatch("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" __instance)"}</code> | Postfix on `Player.InitializePlayerOnServer` that raises `ConsoleEvents.PlayerJoined` for that player. |
-| <Link id="m-playerleavepatch" /><code>{"static void PlayerLeavePatch("}<Link to="/mod/game-api/types/alta-networking/serverplayerconnectionhandlerold">{"ServerPlayerConnectionHandlerOld"}</Link>{" __instance)"}</code> | Postfix on the `ServerPlayerConnectionHandlerOld` constructor that hooks `UserLeft` to raise `ConsoleEvents.PlayerLeft` when a player leaves. |
+| <Link id="m-playerjoinpatch" /><code>{"static void PlayerJoinPatch("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" __instance)"}</code> | <span className="api-desc">Postfix on `Player.InitializePlayerOnServer` that raises `ConsoleEvents.PlayerJoined` for that player.</span> |
+| <Link id="m-playerleavepatch" /><code>{"static void PlayerLeavePatch("}<Link to="/mod/game-api/types/alta-networking/serverplayerconnectionhandlerold">{"ServerPlayerConnectionHandlerOld"}</Link>{" __instance)"}</code> | <span className="api-desc">Postfix on the `ServerPlayerConnectionHandlerOld` constructor that hooks `UserLeft` to raise `ConsoleEvents.PlayerLeft` when a player leaves.</span> |

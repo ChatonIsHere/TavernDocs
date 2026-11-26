@@ -22,17 +22,17 @@ A topic with two values and an animation curve, evaluated across the range betwe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CurveRange()"}</code> | Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`. |
-| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> | Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`. |
+| <Link id="m-ctor" /><code>{"CurveRange()"}</code> | <span className="api-desc">Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`.</span> |
+| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> | <span className="api-desc">Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | Backing field for `Curve`. |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | <span className="api-desc">Backing field for `Curve`.</span> |
 
 </details>
 
@@ -40,10 +40,10 @@ A topic with two values and an animation curve, evaluated across the range betwe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> | The curve; defaults to 0 at both ends and 1 in the middle. |
+| <Link id="m-curve-2" /><code>{"AnimationCurve Curve { get; }"}</code> | <span className="api-desc">The curve; defaults to 0 at both ends and 1 in the middle.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluateasminmax" /><code>{"float EvaluateAsMinMax(float value)"}</code> | Maps the value to 0 to 1 between the two values and evaluates the curve there. |
+| <Link id="m-evaluateasminmax" /><code>{"float EvaluateAsMinMax(float value)"}</code> | <span className="api-desc">Maps the value to 0 to 1 between the two values and evaluates the curve there.</span> |

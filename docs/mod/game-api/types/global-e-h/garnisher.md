@@ -23,4 +23,4 @@ Profession skill asset with no code of its own; its behaviour comes from `Profes
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Garnisher()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"Garnisher()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |

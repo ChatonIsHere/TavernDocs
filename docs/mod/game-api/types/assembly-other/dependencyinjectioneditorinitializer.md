@@ -21,16 +21,16 @@ Editor asset holding a reference to the project lifetime scope. Has no behaviour
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Class logger. |
-| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> | The project lifetime scope prefab. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">Class logger.</span> |
+| <Link id="m-projectlifetimescope" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/projectlifetimescope">{"ProjectLifetimeScope"}</Link>{" projectLifetimeScope"}</code> | <span className="api-desc">The project lifetime scope prefab.</span> |
 
 </details>

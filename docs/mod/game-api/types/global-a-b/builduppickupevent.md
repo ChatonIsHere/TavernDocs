@@ -21,10 +21,14 @@ Serializable `AltaEvent` that passes a `BuildupPickup`, for inspector-wired call
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BuildupPickupEvent()"}</code> | Creates a `BuildupPickupEvent` with default values. |
+| <Link id="m-ctor" /><code>{"BuildupPickupEvent()"}</code> | <span className="api-desc">Creates a `BuildupPickupEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BuildupPickupEvent`:
 
+<div className="api-used-in">
+
 [`BuildupPickup.finished`](/mod/game-api/types/global-a-b/builduppickup#m-finished).
+
+</div>

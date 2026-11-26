@@ -22,4 +22,4 @@ Editor menu entry that creates a new `MiningSettings` global settings asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MiningSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `MiningSettings.Create` with default values.</span> |

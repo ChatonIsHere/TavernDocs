@@ -29,4 +29,8 @@ Which way the straight jumper tool moves the player: horizontally where the head
 
 Members of other types that take, return or hold a `Direction`:
 
+<div className="api-used-in">
+
 [`InGameInspector.StraightJumper.currentDirection`](/mod/game-api/types/global-i-l/ingameinspector-straightjumper#m-currentdirection).
+
+</div>

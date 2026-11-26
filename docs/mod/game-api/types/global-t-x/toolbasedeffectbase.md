@@ -22,27 +22,27 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ToolBasedEffectBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ToolBasedEffectBase()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-progress" /><code>{"protected readonly int _Progress"}</code> | Shader property ID for `_Progress`. |
-| <Link id="m-material" /><code>{"protected Material material"}</code> | Copy of the base material used by every mesh effect. |
-| <Link id="m-meshanimation" /><code>{"protected Coroutine meshAnimation"}</code> | The running animation coroutine. |
+| <Link id="m-progress" /><code>{"protected readonly int _Progress"}</code> | <span className="api-desc">Shader property ID for `_Progress`.</span> |
+| <Link id="m-material" /><code>{"protected Material material"}</code> | <span className="api-desc">Copy of the base material used by every mesh effect.</span> |
+| <Link id="m-meshanimation" /><code>{"protected Coroutine meshAnimation"}</code> | <span className="api-desc">The running animation coroutine.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> | Material copied for the effect meshes. |
-| <Link id="m-effectcache" /><code>{"private static readonly List<MeshRenderer> effectCache"}</code> | Shared static list reused while gathering renderers. |
-| <Link id="m-filtercache" /><code>{"private static readonly List<MeshRenderer> filterCache"}</code> | Shared static list returned by `GetRenderersWithoutDocks`. |
-| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> | Pooled mesh effect spawned on each renderer, copying its mesh. |
-| <Link id="m-mesheffects" /><code>{"private readonly List<"}<Link to="/mod/game-api/types/global-m-o/mesheffect">{"MeshEffect"}</Link>{"> meshEffects"}</code> | Mesh effects spawned for the current target; released by `CleanEffects`. |
-| <Link id="m-transformstack" /><code>{"private static readonly Stack<Transform> transformStack"}</code> | Shared static stack used to walk the hierarchy. |
+| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> | <span className="api-desc">Material copied for the effect meshes.</span> |
+| <Link id="m-effectcache" /><code>{"private static readonly List<MeshRenderer> effectCache"}</code> | <span className="api-desc">Shared static list reused while gathering renderers.</span> |
+| <Link id="m-filtercache" /><code>{"private static readonly List<MeshRenderer> filterCache"}</code> | <span className="api-desc">Shared static list returned by `GetRenderersWithoutDocks`.</span> |
+| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> | <span className="api-desc">Pooled mesh effect spawned on each renderer, copying its mesh.</span> |
+| <Link id="m-mesheffects" /><code>{"private readonly List<"}<Link to="/mod/game-api/types/global-m-o/mesheffect">{"MeshEffect"}</Link>{"> meshEffects"}</code> | <span className="api-desc">Mesh effects spawned for the current target; released by `CleanEffects`.</span> |
+| <Link id="m-transformstack" /><code>{"private static readonly Stack<Transform> transformStack"}</code> | <span className="api-desc">Shared static stack used to walk the hierarchy.</span> |
 
 </details>
 
@@ -50,19 +50,19 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeeffect" /><code>{"void InitializeEffect(Component component)"}</code> | Spawns a mesh effect copy for each enabled mesh renderer (from a component's children, skipping docks, or a given list) and plays the in animation. |
-| <Link id="m-initializeeffect-2" /><code>{"void InitializeEffect(IEnumerable<MeshRenderer> renderers)"}</code> | Spawns a mesh effect copy for each enabled mesh renderer (from a component's children, skipping docks, or a given list) and plays the in animation. |
-| <Link id="m-release" /><code>{"override void Release()"}</code> | Plays the out animation instead of releasing straight away. |
-| <Link id="m-animate" /><code>{"protected abstract IEnumerator Animate(bool isIn)"}</code> | Coroutine for the in or out animation. Subclasses drive `_Progress` here. |
-| <Link id="m-cleaneffects" /><code>{"protected void CleanEffects()"}</code> | Clears and releases every mesh effect copy. |
+| <Link id="m-initializeeffect" /><code>{"void InitializeEffect(Component component)"}</code> | <span className="api-desc">Spawns a mesh effect copy for each enabled mesh renderer (from a component's children, skipping docks, or a given list) and plays the in animation.</span> |
+| <Link id="m-initializeeffect-2" /><code>{"void InitializeEffect(IEnumerable<MeshRenderer> renderers)"}</code> | <span className="api-desc">Spawns a mesh effect copy for each enabled mesh renderer (from a component's children, skipping docks, or a given list) and plays the in animation.</span> |
+| <Link id="m-release" /><code>{"override void Release()"}</code> | <span className="api-desc">Plays the out animation instead of releasing straight away.</span> |
+| <Link id="m-animate" /><code>{"protected abstract IEnumerator Animate(bool isIn)"}</code> | <span className="api-desc">Coroutine for the in or out animation. Subclasses drive `_Progress` here.</span> |
+| <Link id="m-cleaneffects" /><code>{"protected void CleanEffects()"}</code> | <span className="api-desc">Clears and releases every mesh effect copy.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Makes this effect's own copy of `baseMaterial`. |
-| <Link id="m-getrendererswithoutdocks" /><code>{"private static List<MeshRenderer> GetRenderersWithoutDocks(Transform root)"}</code> | Collects mesh renderers under a transform, skipping any branch that has a `PickupDock` (so docked items are left out). Uses a shared static list. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Makes this effect's own copy of `baseMaterial`.</span> |
+| <Link id="m-getrendererswithoutdocks" /><code>{"private static List<MeshRenderer> GetRenderersWithoutDocks(Transform root)"}</code> | <span className="api-desc">Collects mesh renderers under a transform, skipping any branch that has a `PickupDock` (so docked items are left out). Uses a shared static list.</span> |
 
 </details>
 
@@ -70,4 +70,8 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 
 Members of other types that take, return or hold a `ToolBasedEffectBase`:
 
+<div className="api-used-in">
+
 [`ProfessionSkill.RequestEffect`](/mod/game-api/types/global-p/professionskill#m-requesteffect), [`ProfessionSkill.ActiveEffect.PooledObject`](/mod/game-api/types/global-p/professionskill-activeeffect#m-pooledobject).
+
+</div>

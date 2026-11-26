@@ -23,10 +23,10 @@ Save data (version 1) for a `SafePositionSetter`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> | Creates a `SafePositionSetterData` with default values. |
+| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> | <span className="api-desc">Creates a `SafePositionSetterData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> | The target's local position. |
+| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> | <span className="api-desc">The target's local position.</span> |

@@ -21,6 +21,6 @@ A **class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
-| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<float> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
-| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<float> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
+| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> | <span className="api-desc">Creates a `SimplePriorityQueue` from `comparer`.</span> |
+| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<float> comparer)"}</code> | <span className="api-desc">Creates a `SimplePriorityQueue` from `comparer`.</span> |
+| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<float> comparer)"}</code> | <span className="api-desc">Creates a `SimplePriorityQueue` from `comparer`.</span> |

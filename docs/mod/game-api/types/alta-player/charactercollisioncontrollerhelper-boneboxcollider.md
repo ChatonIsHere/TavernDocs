@@ -23,17 +23,17 @@ Settings for a box collider on a character bone, used by `CharacterCollisionCont
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneBoxCollider` with default values. |
+| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> | <span className="api-desc">Creates a `CharacterCollisionControllerHelper.BoneBoxCollider` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-center" /><code>{"private Vector3 center"}</code> | Backing field for `Center`. |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> | Backing field for `Size`. |
+| <Link id="m-center" /><code>{"private Vector3 center"}</code> | <span className="api-desc">Backing field for `Center`.</span> |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> | <span className="api-desc">Backing field for `Size`.</span> |
 
 </details>
 
@@ -41,11 +41,15 @@ Settings for a box collider on a character bone, used by `CharacterCollisionCont
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> | Centre of the box in the bone's space. |
-| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> | Size of the box. |
+| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> | <span className="api-desc">Centre of the box in the bone's space.</span> |
+| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> | <span className="api-desc">Size of the box.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `BoneBoxCollider`:
 
+<div className="api-used-in">
+
 [`CharacterCollisionControllerHelper.CreateBoxCollider`](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper#m-createboxcollider).
+
+</div>

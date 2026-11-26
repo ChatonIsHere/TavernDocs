@@ -21,16 +21,20 @@ One set of sense setups for the fly cam. The controller cycles through these set
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> | Creates a `FlyCamLocomotionController.SenseSetupSet` with default values. |
+| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> | <span className="api-desc">Creates a `FlyCamLocomotionController.SenseSetupSet` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setup" /><code><Link to="/mod/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup"}</code> | The sense setups applied to the fly cam player's senses when this set is selected. |
+| <Link id="m-setup" /><code><Link to="/mod/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] setup"}</code> | <span className="api-desc">The sense setups applied to the fly cam player's senses when this set is selected.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SenseSetupSet`:
 
+<div className="api-used-in">
+
 [`FlyCamLocomotionController.senseSetups`](/mod/game-api/types/global-e-h/flycamlocomotioncontroller#m-sensesetups).
+
+</div>

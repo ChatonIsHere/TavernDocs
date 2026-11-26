@@ -22,16 +22,16 @@ Logic component that takes one float sender input and fires a Unity event with t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LogicFloatReceiver()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onValueChanged"}</code> | Unity event set in the inspector, fired with the sender's float value. |
+| <Link id="m-onvaluechanged" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onValueChanged"}</code> | <span className="api-desc">Unity event set in the inspector, fired with the sender's float value.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Logic component that takes one float sender input and fires a Unity event with t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | Called when the linked sender's value changes; invokes `onValueChanged` with the new float. |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | <span className="api-desc">Called when the linked sender's value changes; invokes `onValueChanged` with the new float.</span> |

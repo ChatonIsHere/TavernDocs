@@ -21,28 +21,28 @@ Startup scene component that sets up logging, runs the platform loaders, quits i
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StartupLoader()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"StartupLoader()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-platformloaders" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/platformloader">{"PlatformLoader"}</Link>{"> platformLoaders"}</code> | Platform setup steps that must all succeed. |
-| <Link id="m-sceneloaders" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/loadscenes">{"LoadScenes"}</Link>{"[] sceneLoaders"}</code> | Scene loaders run after the platform loaders. |
+| <Link id="m-platformloaders" /><code>{"private List<"}<Link to="/mod/game-api/types/global-p/platformloader">{"PlatformLoader"}</Link>{"> platformLoaders"}</code> | <span className="api-desc">Platform setup steps that must all succeed.</span> |
+| <Link id="m-sceneloaders" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/loadscenes">{"LoadScenes"}</Link>{"[] sceneLoaders"}</code> | <span className="api-desc">Scene loaders run after the platform loaders.</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>2 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private async void Awake()"}</code> | Sets up logging, saves the game config, awaits all platform loaders (quitting on failure) and loads the scenes. |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: removes null scene loaders. |
+| <Link id="m-awake" /><code>{"private async void Awake()"}</code> | <span className="api-desc">Sets up logging, saves the game config, awaits all platform loaders (quitting on failure) and loads the scenes.</span> |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | <span className="api-desc">Build step: removes null scene loaders.</span> |
 
 </details>

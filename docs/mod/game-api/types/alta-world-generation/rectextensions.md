@@ -21,4 +21,4 @@ Extension methods on `Rect` used by forest generation.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-containsline" /><code>{"static bool ContainsLine(Rect rect, Vector2 start, Vector2 end)"}</code> | True if the line segment from `start` to `end` touches or crosses the rect. |
+| <Link id="m-containsline" /><code>{"static bool ContainsLine(Rect rect, Vector2 start, Vector2 end)"}</code> | <span className="api-desc">True if the line segment from `start` to `end` touches or crosses the rect.</span> |

@@ -21,12 +21,12 @@ A **class** in `Root.Township`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"MainMenuPlayerLogger()"}</code> | Creates a `MainMenuPlayerLogger` with default values. |
+| <Link id="m-ctor" /><code>{"MainMenuPlayerLogger()"}</code> | <span className="api-desc">Creates a `MainMenuPlayerLogger` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> | Shows the error text in red on the local player's message display. |
-| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage)"}</code> | Shows the error text in red on the local player's message display. |
-| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> | Does nothing. |
+| <Link id="m-error" /><code>{"void Error(string errorMessage)"}</code> | <span className="api-desc">Shows the error text in red on the local player's message display.</span> |
+| <Link id="m-error-2" /><code>{"void Error(Exception exception, string errorMessage)"}</code> | <span className="api-desc">Shows the error text in red on the local player's message display.</span> |
+| <Link id="m-info" /><code>{"void Info(string logMessage)"}</code> | <span className="api-desc">Does nothing.</span> |

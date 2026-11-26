@@ -22,4 +22,4 @@ Editor menu item under Assets/Create/Township/Features/Player that makes a new `
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `CombatStateSettings.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `CombatStateSettings.Create` with default values.</span> |

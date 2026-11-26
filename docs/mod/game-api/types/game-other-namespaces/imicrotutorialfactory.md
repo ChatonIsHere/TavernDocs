@@ -21,10 +21,14 @@ Makes micro tutorial instances. Implemented by `MicroTutorialFactory` and used b
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-createtutorial" /><code><Link to="/mod/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a tutorial for a player from its settings. |
+| <Link id="m-createtutorial" /><code><Link to="/mod/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/mod/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | <span className="api-desc">Creates a tutorial for a player from its settings.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IMicroTutorialFactory`:
 
+<div className="api-used-in">
+
 [`ServerController.ServerController`](/mod/game-api/types/game-other-namespaces/servercontroller#m-ctor), [`ServerController.tutorialFactory`](/mod/game-api/types/game-other-namespaces/servercontroller#m-tutorialfactory).
+
+</div>

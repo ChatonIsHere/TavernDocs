@@ -21,5 +21,5 @@ The listen-only side of an event bus: lets code subscribe to `T` events without 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> | Subscribes a callback that runs each time a `T` event is sent. |
-| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> | Unsubscribes a callback added with `AddListener`. |
+| <Link id="m-addlistener" /><code>{"void AddListener(Action<T> listener)"}</code> | <span className="api-desc">Subscribes a callback that runs each time a `T` event is sent.</span> |
+| <Link id="m-removelistener" /><code>{"void RemoveListener(Action<T> listener)"}</code> | <span className="api-desc">Unsubscribes a callback added with `AddListener`.</span> |

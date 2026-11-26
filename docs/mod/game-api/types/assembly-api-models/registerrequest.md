@@ -21,19 +21,23 @@ Body of an Alta web API request to create an account, with optional Oculus or Pi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> | Creates a `RegisterRequest` with default values. |
+| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> | <span className="api-desc">Creates a `RegisterRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oculusaccountlink" /><code><Link to="/mod/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" OculusAccountLink { get; set; }"}</code> | Oculus account to link on sign-up, if any. |
-| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; set; }"}</code> | Hash of the chosen password. |
-| <Link id="m-picoaccountlink" /><code><Link to="/mod/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" PicoAccountLink { get; set; }"}</code> | Pico account to link on sign-up, if any. |
-| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> | Referral string. |
+| <Link id="m-oculusaccountlink" /><code><Link to="/mod/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" OculusAccountLink { get; set; }"}</code> | <span className="api-desc">Oculus account to link on sign-up, if any.</span> |
+| <Link id="m-passwordhash" /><code>{"string PasswordHash { get; set; }"}</code> | <span className="api-desc">Hash of the chosen password.</span> |
+| <Link id="m-picoaccountlink" /><code><Link to="/mod/game-api/types/assembly-api-models/accountlinkdata">{"AccountLinkData"}</Link>{" PicoAccountLink { get; set; }"}</code> | <span className="api-desc">Pico account to link on sign-up, if any.</span> |
+| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> | <span className="api-desc">Referral string.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `RegisterRequest`:
 
+<div className="api-used-in">
+
 [`LowLevelApiClient.RegisterAsync`](/mod/game-api/types/assembly-api-client/lowlevelapiclient#m-registerasync).
+
+</div>

@@ -22,16 +22,16 @@ ScriptableObject that names a trigger event. The name is sent to analytics, so t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TriggerEventData()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"TriggerEventData()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventname" /><code>{"private string eventName"}</code> | Backing field for `EventName`. |
+| <Link id="m-eventname" /><code>{"private string eventName"}</code> | <span className="api-desc">Backing field for `EventName`.</span> |
 
 </details>
 
@@ -39,16 +39,20 @@ ScriptableObject that names a trigger event. The name is sent to analytics, so t
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-eventname-2" /><code>{"string EventName { get; }"}</code> | The event's name as sent to analytics. |
+| <Link id="m-eventname-2" /><code>{"string EventName { get; }"}</code> | <span className="api-desc">The event's name as sent to analytics.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setname" /><code>{"void SetName(string newName)"}</code> | Sets the event name. |
+| <Link id="m-setname" /><code>{"void SetName(string newName)"}</code> | <span className="api-desc">Sets the event name.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TriggerEventData`:
 
+<div className="api-used-in">
+
 [`TriggerZone.triggerEventData`](/mod/game-api/types/game-other-namespaces/triggerzone#m-triggereventdata).
+
+</div>

@@ -21,21 +21,21 @@ Animator state behaviour that sets a float parameter (usually a blend tree value
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RandomTreeValue()"}</code> | Creates a `RandomTreeValue` with default values. |
+| <Link id="m-ctor" /><code>{"RandomTreeValue()"}</code> | <span className="api-desc">Creates a `RandomTreeValue` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-isbinary" /><code>{"private bool isBinary"}</code> | Pick only `minimum` or `maximum`, half the time each. |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> | Set the value through the `NetworkAnimator` so the server's value syncs to clients. |
-| <Link id="m-isnetworklerped" /><code>{"private bool isNetworkLerped"}</code> | When networked, write to the lerped network float instead of the plain one. |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Upper bound. |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Lower bound. |
-| <Link id="m-valuename" /><code>{"private string valueName"}</code> | Float parameter to set, `Blend` by default. |
+| <Link id="m-isbinary" /><code>{"private bool isBinary"}</code> | <span className="api-desc">Pick only `minimum` or `maximum`, half the time each.</span> |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> | <span className="api-desc">Set the value through the `NetworkAnimator` so the server's value syncs to clients.</span> |
+| <Link id="m-isnetworklerped" /><code>{"private bool isNetworkLerped"}</code> | <span className="api-desc">When networked, write to the lerped network float instead of the plain one.</span> |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | <span className="api-desc">Upper bound.</span> |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | <span className="api-desc">Lower bound.</span> |
+| <Link id="m-valuename" /><code>{"private string valueName"}</code> | <span className="api-desc">Float parameter to set, `Blend` by default.</span> |
 
 </details>
 
@@ -43,13 +43,13 @@ Animator state behaviour that sets a float parameter (usually a blend tree value
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstateenter" /><code>{"override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"}</code> | Sets the float on the Animator, or when networked sets it on the `NetworkAnimator` from the server only. |
+| <Link id="m-onstateenter" /><code>{"override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)"}</code> | <span className="api-desc">Sets the float on the Animator, or when networked sets it on the `NetworkAnimator` from the server only.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getvalue" /><code>{"private float GetValue()"}</code> | Random value between the bounds, or one of the two bounds if binary. |
+| <Link id="m-getvalue" /><code>{"private float GetValue()"}</code> | <span className="api-desc">Random value between the bounds, or one of the two bounds if binary.</span> |
 
 </details>

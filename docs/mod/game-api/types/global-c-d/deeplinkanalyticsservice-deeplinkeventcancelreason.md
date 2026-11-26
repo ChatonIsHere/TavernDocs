@@ -28,4 +28,8 @@ Reasons a deep link join was cancelled: skipped for the tutorial, or the player 
 
 Members of other types that take, return or hold a `DeepLinkEventCancelReason`:
 
+<div className="api-used-in">
+
 [`DeepLinkAnalyticsService.CreateCancelEvent`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-createcancelevent-2), [`DeepLinkAnalyticsService.GetCancelReasonAsFormattedString`](/mod/game-api/types/global-c-d/deeplinkanalyticsservice#m-getcancelreasonasformattedstring-2).
+
+</div>

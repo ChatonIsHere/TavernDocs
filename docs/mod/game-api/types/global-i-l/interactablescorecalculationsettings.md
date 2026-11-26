@@ -20,6 +20,6 @@ Constant priority multipliers for interactables. Nothing in the decompiled code 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultinteractableprioritymodifier" /><code>{"const float DefaultInteractablePriorityModifier"}</code> | Value 1. |
-| <Link id="m-pickupcontainerprioritymodifier" /><code>{"const float PickupContainerPriorityModifier"}</code> | Value 2, double the plain pickup value. |
-| <Link id="m-pickupprioritymodifier" /><code>{"const float PickupPriorityModifier"}</code> | Value 1. |
+| <Link id="m-defaultinteractableprioritymodifier" /><code>{"const float DefaultInteractablePriorityModifier"}</code> | <span className="api-desc">Value 1.</span> |
+| <Link id="m-pickupcontainerprioritymodifier" /><code>{"const float PickupContainerPriorityModifier"}</code> | <span className="api-desc">Value 2, double the plain pickup value.</span> |
+| <Link id="m-pickupprioritymodifier" /><code>{"const float PickupPriorityModifier"}</code> | <span className="api-desc">Value 1.</span> |

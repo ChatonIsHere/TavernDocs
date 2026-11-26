@@ -28,4 +28,8 @@ What an `Interactable` does when a new grab isn't allowed alongside current ones
 
 Members of other types that take, return or hold a `MultipleNotAllowedAction`:
 
+<div className="api-used-in">
+
 [`Interactable.DefaultMultipleBlockedAction`](/mod/game-api/types/global-i-l/interactable#m-defaultmultipleblockedaction), [`Interactable.multipleNotAllowedAction`](/mod/game-api/types/global-i-l/interactable#m-multiplenotallowedaction), [`Pickup.DefaultMultipleBlockedAction`](/mod/game-api/types/global-p/pickup#m-defaultmultipleblockedaction), [`PickupContainer.DefaultMultipleBlockedAction`](/mod/game-api/types/global-p/pickupcontainer#m-defaultmultipleblockedaction).
+
+</div>

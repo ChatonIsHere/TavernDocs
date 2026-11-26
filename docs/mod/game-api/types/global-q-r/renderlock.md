@@ -19,12 +19,12 @@ Client: static set of reasons rendering is held off, such as no player controlle
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentlocks" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" currentLocks"}</code> | Flags of the lock reasons in effect. |
+| <Link id="m-currentlocks" /><code>{"private static "}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" currentLocks"}</code> | <span className="api-desc">Flags of the lock reasons in effect.</span> |
 
 </details>
 
@@ -32,17 +32,17 @@ Client: static set of reasons rendering is held off, such as no player controlle
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-islocked" /><code>{"static bool IsLocked { get; }"}</code> | True while any lock reason is set. |
+| <Link id="m-islocked" /><code>{"static bool IsLocked { get; }"}</code> | <span className="api-desc">True while any lock reason is set.</span> |
 
 ## Events
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onlockedchanged" /><code>{"static event Action<bool> OnLockedChanged"}</code> | Fired when the lock turns on or off. |
+| <Link id="m-onlockedchanged" /><code>{"static event Action<bool> OnLockedChanged"}</code> | <span className="api-desc">Fired when the lock turns on or off.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lock" /><code>{"static void Lock("}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" renderingLock)"}</code> | Adds a lock reason; fires `OnLockedChanged` with true if it was unlocked. |
-| <Link id="m-unlock" /><code>{"static void Unlock("}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" renderingLock)"}</code> | Removes a lock reason; fires `OnLockedChanged` with false when none remain. |
+| <Link id="m-lock" /><code>{"static void Lock("}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" renderingLock)"}</code> | <span className="api-desc">Adds a lock reason; fires `OnLockedChanged` with true if it was unlocked.</span> |
+| <Link id="m-unlock" /><code>{"static void Unlock("}<Link to="/mod/game-api/types/global-q-r/renderlock-renderlocktype">{"RenderLock.RenderLockType"}</Link>{" renderingLock)"}</code> | <span className="api-desc">Removes a lock reason; fires `OnLockedChanged` with false when none remain.</span> |

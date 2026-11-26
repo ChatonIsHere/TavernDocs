@@ -23,23 +23,27 @@ Save data for a `LogicIntSender`: its logic link data and its int value.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntSaveData()"}</code> | Creates a `LogicIntSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntSaveData()"}</code> | <span className="api-desc">Creates a `LogicIntSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | The sender's logic data, including its identifier. |
-| <Link id="m-value" /><code>{"int value"}</code> | The saved int value. |
+| <Link id="m-logicdata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" logicData"}</code> | <span className="api-desc">The sender's logic data, including its identifier.</span> |
+| <Link id="m-value" /><code>{"int value"}</code> | <span className="api-desc">The saved int value.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | Same as `logicData`, through the `ILogicValueData` interface. |
+| <Link id="m-logicsavedata" /><code><Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" "}<Link to="/mod/game-api/types/alta-items/logicsavedata">{"LogicSaveData"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Same as `logicData`, through the `ILogicValueData` interface.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LogicIntSaveData`:
 
+<div className="api-used-in">
+
 [`LogicIntRangeSaveData.Data`](/mod/game-api/types/alta-items/logicintrangesavedata#m-data), [`LogicIntReceiverData.Data`](/mod/game-api/types/alta-items/logicintreceiverdata#m-data), [`LogicIntThresholdSaveData.Data`](/mod/game-api/types/alta-items/logicintthresholdsavedata#m-data), [`LogicSumIntSaveData.Datas`](/mod/game-api/types/alta-items/logicsumintsavedata#m-datas).
+
+</div>

@@ -21,29 +21,29 @@ Component on a spriggull that starts its flailing action when it is hit hard by 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpriggullFlail()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"SpriggullFlail()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hitcollider" /><code>{"private Collider hitCollider"}</code> | The only collider whose contacts count. |
-| <Link id="m-spriggull" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{" spriggull"}</code> | The spriggull that flails. |
-| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> | Impulse at or above which flail strength is 1 (default 2). |
-| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> | Impulse at or below which the hit is ignored (default 1). |
+| <Link id="m-hitcollider" /><code>{"private Collider hitCollider"}</code> | <span className="api-desc">The only collider whose contacts count.</span> |
+| <Link id="m-spriggull" /><code>{"private "}<Link to="/mod/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{" spriggull"}</code> | <span className="api-desc">The spriggull that flails.</span> |
+| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> | <span className="api-desc">Impulse at or above which flail strength is 1 (default 2).</span> |
+| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> | <span className="api-desc">Impulse at or below which the hit is ignored (default 1).</span> |
 
 </details>
 
 ## Methods
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Ignores weak hits and any where a contact isn't on `hitCollider`; otherwise maps impulse to 0 to 1 and calls `Spriggull.BeginFlail` next frame. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | <span className="api-desc">Ignores weak hits and any where a contact isn't on `hitCollider`; otherwise maps impulse to 0 to 1 and calls `Spriggull.BeginFlail` next frame.</span> |
 
 </details>

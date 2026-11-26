@@ -21,11 +21,15 @@ One ingredient's floating chunk visuals in a liquid, tracked by `LiquidChunkVisu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentvisuals" /><code>{"Dictionary<int, List<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{">> CurrentVisuals { get; set; }"}</code> | The pooled chunk objects shown, keyed by liquid level. |
-| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" Definition { get; set; }"}</code> | The chunk visual definition these objects come from. |
+| <Link id="m-currentvisuals" /><code>{"Dictionary<int, List<"}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{">> CurrentVisuals { get; set; }"}</code> | <span className="api-desc">The pooled chunk objects shown, keyed by liquid level.</span> |
+| <Link id="m-definition" /><code><Link to="/mod/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" Definition { get; set; }"}</code> | <span className="api-desc">The chunk visual definition these objects come from.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LiquidChunkData`:
 
+<div className="api-used-in">
+
 [`LiquidChunkVisuals.displayingChunks`](/mod/game-api/types/alta-crafting/liquidchunkvisuals#m-displayingchunks).
+
+</div>

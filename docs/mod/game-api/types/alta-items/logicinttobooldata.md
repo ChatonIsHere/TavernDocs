@@ -23,10 +23,10 @@ Save data for `LogicIntToBool`, which turns an int input into a bool.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> | Creates a `LogicIntToBoolData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> | <span className="api-desc">Creates a `LogicIntToBoolData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> | The int values that make the output true; any other value gives false. |
+| <Link id="m-correctvalues" /><code>{"int[] correctValues"}</code> | <span className="api-desc">The int values that make the output true; any other value gives false.</span> |

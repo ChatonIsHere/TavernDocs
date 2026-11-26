@@ -45,4 +45,8 @@ Outcome of a client trying to join a server: the reasons it can fail (not allowe
 
 Members of other types that take, return or hold a `ClientJoinResult`:
 
+<div className="api-used-in">
+
 [`ConfirmJoinMessage.ConfirmJoinMessage`](/mod/game-api/types/alta-networking/confirmjoinmessage#m-ctor), [`ConfirmJoinMessage.JoinResult`](/mod/game-api/types/alta-networking/confirmjoinmessage#m-joinresult-2), [`JoinResult.FailedResult`](/mod/game-api/types/alta-networking/joinresult#m-failedresult), [`JoinResult.Result`](/mod/game-api/types/alta-networking/joinresult#m-result).
+
+</div>

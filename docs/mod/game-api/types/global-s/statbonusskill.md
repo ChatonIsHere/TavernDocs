@@ -23,20 +23,20 @@ Profession skill asset that changes one of the player's stats while unlocked: mu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StatBonusSkill()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"StatBonusSkill()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-defaultvalues" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{", float> defaultValues"}</code> | Per player, the stat value from before a `Set` operation, restored on lock. |
-| <Link id="m-operationtarget" /><code>{"private "}<Link to="/mod/game-api/types/global-s/statbonusskill-operationtarget">{"StatBonusSkill.OperationTarget"}</Link>{" operationTarget"}</code> | Which part of the stat changes: max, base value or min. |
-| <Link id="m-operationtype" /><code>{"private "}<Link to="/mod/game-api/types/global-s/statbonusskill-operationtype">{"StatBonusSkill.OperationType"}</Link>{" operationType"}</code> | How `value` is applied: multiply, add or set. |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> | The stat to change. |
-| <Link id="m-value" /><code>{"private float value"}</code> | The amount used by the operation. |
+| <Link id="m-defaultvalues" /><code>{"private Dictionary<"}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{", float> defaultValues"}</code> | <span className="api-desc">Per player, the stat value from before a `Set` operation, restored on lock.</span> |
+| <Link id="m-operationtarget" /><code>{"private "}<Link to="/mod/game-api/types/global-s/statbonusskill-operationtarget">{"StatBonusSkill.OperationTarget"}</Link>{" operationTarget"}</code> | <span className="api-desc">Which part of the stat changes: max, base value or min.</span> |
+| <Link id="m-operationtype" /><code>{"private "}<Link to="/mod/game-api/types/global-s/statbonusskill-operationtype">{"StatBonusSkill.OperationType"}</Link>{" operationType"}</code> | <span className="api-desc">How `value` is applied: multiply, add or set.</span> |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> | <span className="api-desc">The stat to change.</span> |
+| <Link id="m-value" /><code>{"private float value"}</code> | <span className="api-desc">The amount used by the operation.</span> |
 
 </details>
 
@@ -44,16 +44,16 @@ Profession skill asset that changes one of the player's stats while unlocked: mu
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-lock" /><code>{"override void Lock("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" player)"}</code> | Stops listening for new player controllers and undoes the change on the current one. |
-| <Link id="m-unlock" /><code>{"override void Unlock("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" player)"}</code> | Applies the bonus now and again each time the player's controller is set. |
+| <Link id="m-lock" /><code>{"override void Lock("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" player)"}</code> | <span className="api-desc">Stops listening for new player controllers and undoes the change on the current one.</span> |
+| <Link id="m-unlock" /><code>{"override void Unlock("}<Link to="/mod/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" player)"}</code> | <span className="api-desc">Applies the bonus now and again each time the player's controller is set.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-preparegetset" /><code>{"private void PrepareGetSet("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, out Func<float> get, out Action<float> set)"}</code> | Builds getter and setter functions for the chosen part (max, base or min) of the target stat. |
-| <Link id="m-removevalue" /><code>{"private void RemoveValue("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Undoes the change: divides, subtracts, or restores the value saved before a set. |
-| <Link id="m-setvalue" /><code>{"private void SetValue("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | On the next frame, applies the operation to the stat on the given player controller. |
+| <Link id="m-preparegetset" /><code>{"private void PrepareGetSet("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController, out Func<float> get, out Action<float> set)"}</code> | <span className="api-desc">Builds getter and setter functions for the chosen part (max, base or min) of the target stat.</span> |
+| <Link id="m-removevalue" /><code>{"private void RemoveValue("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Undoes the change: divides, subtracts, or restores the value saved before a set.</span> |
+| <Link id="m-setvalue" /><code>{"private void SetValue("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">On the next frame, applies the operation to the stat on the given player controller.</span> |
 
 </details>

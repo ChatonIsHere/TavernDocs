@@ -30,4 +30,8 @@ SAColliderBuilder (third party, editor) axis to slice along: auto, X, Y or Z.
 
 Members of other types that take, return or hold a `SliceMode`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.sliceMode`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-slicemode).
+
+</div>

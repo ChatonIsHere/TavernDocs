@@ -21,5 +21,5 @@ Extension methods for finding a component on a collider or its attached rigidbod
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getbodycomponent" /><code>{"static T GetBodyComponent<T>(Collider collider)"}</code> | Gets the component from the attached rigidbody, or from the collider if it has none. |
-| <Link id="m-getcomponentincludingbody" /><code>{"static T GetComponentIncludingBody<T>(Collider collider)"}</code> | Gets the component from the collider, then from the attached rigidbody if not found. |
+| <Link id="m-getbodycomponent" /><code>{"static T GetBodyComponent<T>(Collider collider)"}</code> | <span className="api-desc">Gets the component from the attached rigidbody, or from the collider if it has none.</span> |
+| <Link id="m-getcomponentincludingbody" /><code>{"static T GetComponentIncludingBody<T>(Collider collider)"}</code> | <span className="api-desc">Gets the component from the collider, then from the attached rigidbody if not found.</span> |

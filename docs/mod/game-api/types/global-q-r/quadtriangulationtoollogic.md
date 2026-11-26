@@ -21,15 +21,15 @@ Static mesh tool that turns a quad submesh into triangles, flipping quad splits 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-calculatechanges" /><code>{"static bool CalculateChanges(Mesh meshToTriangulate, out int targetSubMesh, out int[] triangles)"}</code> | Finds the first quad submesh and fixes each quad's two triangles where they fold inward. Returns true if anything changed. |
-| <Link id="m-checkfixtriangulation" /><code>{"static void CheckFixTriangulation(Mesh mesh)"}</code> | Fixes and merges the quad submesh if needed, or just switches submesh 0 from quads to triangles. |
-| <Link id="m-mergetriangulatedmesh" /><code>{"static void MergeTriangulatedMesh(Mesh meshToTriangulate, int targetSubMesh, int[] triangles)"}</code> | Appends the new triangles to another submesh and removes the old quad submesh, or replaces it if there is no other. |
+| <Link id="m-calculatechanges" /><code>{"static bool CalculateChanges(Mesh meshToTriangulate, out int targetSubMesh, out int[] triangles)"}</code> | <span className="api-desc">Finds the first quad submesh and fixes each quad's two triangles where they fold inward. Returns true if anything changed.</span> |
+| <Link id="m-checkfixtriangulation" /><code>{"static void CheckFixTriangulation(Mesh mesh)"}</code> | <span className="api-desc">Fixes and merges the quad submesh if needed, or just switches submesh 0 from quads to triangles.</span> |
+| <Link id="m-mergetriangulatedmesh" /><code>{"static void MergeTriangulatedMesh(Mesh meshToTriangulate, int targetSubMesh, int[] triangles)"}</code> | <span className="api-desc">Appends the new triangles to another submesh and removes the old quad submesh, or replaces it if there is no other.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getsafebasesubmesh" /><code>{"private static bool GetSafeBaseSubMesh(Mesh mesh, int targetSubMesh, out int baseSubMeshIndex)"}</code> | Picks another submesh to merge the triangles into. Returns false if there is only one. |
+| <Link id="m-getsafebasesubmesh" /><code>{"private static bool GetSafeBaseSubMesh(Mesh mesh, int targetSubMesh, out int baseSubMeshIndex)"}</code> | <span className="api-desc">Picks another submesh to merge the triangles into. Returns false if there is only one.</span> |
 
 </details>

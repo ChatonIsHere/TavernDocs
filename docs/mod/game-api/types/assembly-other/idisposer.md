@@ -22,10 +22,14 @@ A disposable that collects other disposables and disposes them together.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> | Adds a disposable to be disposed with this one. |
+| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> | <span className="api-desc">Adds a disposable to be disposed with this one.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IDisposer`:
 
+<div className="api-used-in">
+
 [`DisposerExtensions.AddToDisposer`](/mod/game-api/types/assembly-other/disposerextensions#m-addtodisposer), [`DisposerExtensions.OnDisposal`](/mod/game-api/types/assembly-other/disposerextensions#m-ondisposal), [`Factory.disposer`](/mod/game-api/types/assembly-other/factory#m-disposer).
+
+</div>

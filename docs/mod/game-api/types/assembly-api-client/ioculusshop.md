@@ -21,10 +21,14 @@ Alta web API call for turning Oculus store purchases into Alta shop items. `Shop
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-consumealloculuspurchases" /><code>{"Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> | Claims all the user's Oculus purchases and returns the items claimed. |
+| <Link id="m-consumealloculuspurchases" /><code>{"Task<IEnumerable<string>> ConsumeAllOculusPurchases(string userToken)"}</code> | <span className="api-desc">Claims all the user's Oculus purchases and returns the items claimed.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IOculusShop`:
 
+<div className="api-used-in">
+
 [`IShopApiClient.Oculus`](/mod/game-api/types/assembly-api-client/ishopapiclient#m-oculus), [`OfflineShopApiClient.Oculus`](/mod/game-api/types/assembly-api-client/offlineshopapiclient#m-oculus), [`ShopApiClient.Oculus`](/mod/game-api/types/assembly-api-client/shopapiclient#m-oculus).
+
+</div>

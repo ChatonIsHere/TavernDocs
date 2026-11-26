@@ -22,16 +22,16 @@ Base for components that bake renderer setup at build time and then remove thems
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected BuildRendererBakeable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected BuildRendererBakeable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,20 +39,20 @@ Base for components that bake renderer setup at build time and then remove thems
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sortingorder" /><code>{"virtual int SortingOrder { get; }"}</code> | Bake order; lower goes first (1 by default). |
+| <Link id="m-sortingorder" /><code>{"virtual int SortingOrder { get; }"}</code> | <span className="api-desc">Bake order; lower goes first (1 by default).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bake" /><code>{"abstract void Bake(bool isSaving)"}</code> | Does this component's bake. Implemented by subclasses. |
-| <Link id="m-bakebuildbakeables" /><code>{"static void BakeBuildBakeables(GameObject target, bool isSaving)"}</code> | Unpacks the target's prefabs, bakes every `IBuildRendererBakeable` under it in `SortingOrder` (removing each after), then runs post-bake hooks. |
+| <Link id="m-bake" /><code>{"abstract void Bake(bool isSaving)"}</code> | <span className="api-desc">Does this component's bake. Implemented by subclasses.</span> |
+| <Link id="m-bakebuildbakeables" /><code>{"static void BakeBuildBakeables(GameObject target, bool isSaving)"}</code> | <span className="api-desc">Unpacks the target's prefabs, bakes every `IBuildRendererBakeable` under it in `SortingOrder` (removing each after), then runs post-bake hooks.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Destroys this component after baking. |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | <span className="api-desc">Destroys this component after baking.</span> |
 
 </details>

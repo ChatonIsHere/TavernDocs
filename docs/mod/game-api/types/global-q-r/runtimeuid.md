@@ -20,10 +20,10 @@ A per-launch ID made from the time since 2018-01-01 in 5 second units. `Generati
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> | Creates a `RuntimeUid` with default values. |
+| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> | <span className="api-desc">Creates a `RuntimeUid` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> | The ID for this process, fixed when the class first loads. |
+| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> | <span className="api-desc">The ID for this process, fixed when the class first loads.</span> |

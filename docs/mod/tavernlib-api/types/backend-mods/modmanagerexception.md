@@ -22,10 +22,10 @@ The exception the mod manager throws for a problem it can describe, such as a ba
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ModManagerException(string message)"}</code> | Creates the exception with the given message. |
+| <Link id="m-ctor" /><code>{"ModManagerException(string message)"}</code> | <span className="api-desc">Creates the exception with the given message.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-describe" /><code>{"static string Describe(Exception e)"}</code> | An exception's message followed by each inner exception's type and message. |
+| <Link id="m-describe" /><code>{"static string Describe(Exception e)"}</code> | <span className="api-desc">An exception's message followed by each inner exception's type and message.</span> |

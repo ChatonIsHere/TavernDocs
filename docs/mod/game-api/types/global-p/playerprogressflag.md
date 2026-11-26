@@ -23,17 +23,21 @@ Base for per-player completion flags looked up by hash: game achievements and mi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected PlayerProgressFlag()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"protected PlayerProgressFlag()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-tryget" /><code>{"static bool TryGet<TProgressFlagType>(uint hash, out TProgressFlagType flag)"}</code> | Looks up a flag by hash or name and checks it is the type you asked for. |
-| <Link id="m-tryget-2" /><code>{"static bool TryGet<T>(string input, out T flag, bool isLogging = true)"}</code> | Looks up a flag by hash or name and checks it is the type you asked for. |
+| <Link id="m-tryget" /><code>{"static bool TryGet<TProgressFlagType>(uint hash, out TProgressFlagType flag)"}</code> | <span className="api-desc">Looks up a flag by hash or name and checks it is the type you asked for.</span> |
+| <Link id="m-tryget-2" /><code>{"static bool TryGet<T>(string input, out T flag, bool isLogging = true)"}</code> | <span className="api-desc">Looks up a flag by hash or name and checks it is the type you asked for.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerProgressFlag`:
 
+<div className="api-used-in">
+
 [`GameTaskManager.IsProgressFlagLocallyCompleted`](/mod/game-api/types/global-e-h/gametaskmanager#m-isprogressflaglocallycompleted), [`GameTaskManager.ProgressFlagSync.Completed`](/mod/game-api/types/global-e-h/gametaskmanager-progressflagsync#m-completed), [`GameTaskManager.ProgressFlagSync.WriteProgressFlags`](/mod/game-api/types/global-e-h/gametaskmanager-progressflagsync#m-writeprogressflags).
+
+</div>

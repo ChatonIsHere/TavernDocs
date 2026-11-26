@@ -21,13 +21,13 @@ Lets you `await` a Unity `ResourceRequest` and get the loaded asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getawaiter" /><code>{"static TaskAwaiter<Object> GetAwaiter(ResourceRequest request)"}</code> | Awaiter that runs the request as a coroutine and returns its asset. |
+| <Link id="m-getawaiter" /><code>{"static TaskAwaiter<Object> GetAwaiter(ResourceRequest request)"}</code> | <span className="api-desc">Awaiter that runs the request as a coroutine and returns its asset.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waitfor" /><code>{"private static IEnumerator WaitFor(ResourceRequest request) (iterator)"}</code> | Coroutine that waits for the request to finish. |
+| <Link id="m-waitfor" /><code>{"private static IEnumerator WaitFor(ResourceRequest request) (iterator)"}</code> | <span className="api-desc">Coroutine that waits for the request to finish.</span> |
 
 </details>

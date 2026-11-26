@@ -23,21 +23,21 @@ Global settings asset that records the version of the `com.alta.networktransport
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportPackageVersion()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"NetworkTransportPackageVersion()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-servertransportversion" /><code>{"const string ServerTransportVersion"}</code> | Key name `transport_version`, probably for reporting the version in server data. |
+| <Link id="m-servertransportversion" /><code>{"const string ServerTransportVersion"}</code> | <span className="api-desc">Key name `transport_version`, probably for reporting the version in server data.</span> |
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-packagename" /><code>{"private const string PackageName"}</code> | The package name, `com.alta.networktransport`. |
-| <Link id="m-version" /><code>{"private string version"}</code> | Backing field for `Version`. |
+| <Link id="m-packagename" /><code>{"private const string PackageName"}</code> | <span className="api-desc">The package name, `com.alta.networktransport`.</span> |
+| <Link id="m-version" /><code>{"private string version"}</code> | <span className="api-desc">Backing field for `Version`.</span> |
 
 </details>
 
@@ -45,4 +45,4 @@ Global settings asset that records the version of the `com.alta.networktransport
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-version-2" /><code>{"string Version { get; }"}</code> | The transport package version. |
+| <Link id="m-version-2" /><code>{"string Version { get; }"}</code> | <span className="api-desc">The transport package version.</span> |

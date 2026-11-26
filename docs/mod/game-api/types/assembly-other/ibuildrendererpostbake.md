@@ -22,4 +22,4 @@ For components that need a step after a build renderer bake. `BuildRendererBakea
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-postbake" /><code>{"void PostBake()"}</code> | Called on each such component under the target after all bakeables have baked. |
+| <Link id="m-postbake" /><code>{"void PostBake()"}</code> | <span className="api-desc">Called on each such component under the target after all bakeables have baked.</span> |

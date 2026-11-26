@@ -21,16 +21,20 @@ Asset listing the live data displays that `LiveDataDisplayView` shows on the deb
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LiveDataDisplayCollection()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"LiveDataDisplayCollection()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-datadisplays" /><code><Link to="/mod/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"[] DataDisplays"}</code> | The displays, stored by reference so each can be a different `LiveDataDisplayBase` subclass. |
+| <Link id="m-datadisplays" /><code><Link to="/mod/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"[] DataDisplays"}</code> | <span className="api-desc">The displays, stored by reference so each can be a different `LiveDataDisplayBase` subclass.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `LiveDataDisplayCollection`:
 
+<div className="api-used-in">
+
 [`LiveDataDisplayView.dataDisplays`](/mod/game-api/types/alta-utilities/livedatadisplayview#m-datadisplays).
+
+</div>

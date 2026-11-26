@@ -21,17 +21,21 @@ Moves a player from Customization to Playing. Has no listeners; `CustomizationSt
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CustomizationToPlayingTransition()"}</code> | Creates a `CustomizationToPlayingTransition` with default values. |
+| <Link id="m-ctor" /><code>{"CustomizationToPlayingTransition()"}</code> | <span className="api-desc">Creates a `CustomizationToPlayingTransition` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | Does nothing. |
-| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | Does nothing. |
+| <Link id="m-addlisteners" /><code>{"protected override void AddListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
+| <Link id="m-removelisteners" /><code>{"protected override void RemoveListeners()"}</code> | <span className="api-desc">Does nothing.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `CustomizationToPlayingTransition`:
 
+<div className="api-used-in">
+
 [`AllTransitions.customizationToPlaying`](/mod/game-api/types/alta-player/alltransitions#m-customizationtoplaying), [`AllTransitions.CustomizationToPlayingTransition`](/mod/game-api/types/alta-player/alltransitions#m-customizationtoplayingtransition).
+
+</div>

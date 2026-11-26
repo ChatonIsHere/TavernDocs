@@ -20,4 +20,4 @@ A shared scratch array of 256 uints, used by spawn and sync messages to hold emb
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-array" /><code>{"static uint[] array"}</code> | The scratch array. Its contents only last until the next message uses it. |
+| <Link id="m-array" /><code>{"static uint[] array"}</code> | <span className="api-desc">The scratch array. Its contents only last until the next message uses it.</span> |

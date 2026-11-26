@@ -21,4 +21,4 @@ Implemented by components on a player controller that need setup only on the loc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeaslocalplayer" /><code>{"void InitializeAsLocalPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Called when the controller turns out to be the local player's. |
+| <Link id="m-initializeaslocalplayer" /><code>{"void InitializeAsLocalPlayer("}<Link to="/mod/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | <span className="api-desc">Called when the controller turns out to be the local player's.</span> |

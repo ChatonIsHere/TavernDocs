@@ -22,10 +22,14 @@ Inspector event with a `TransformProxy` argument, used for `BreakOnImpact`'s ser
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TransformProxyEvent()"}</code> | Creates a `BreakOnImpact.TransformProxyEvent` with default values. |
+| <Link id="m-ctor" /><code>{"TransformProxyEvent()"}</code> | <span className="api-desc">Creates a `BreakOnImpact.TransformProxyEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `TransformProxyEvent`:
 
+<div className="api-used-in">
+
 [`BreakOnImpact.OnBreak`](/mod/game-api/types/global-a-b/breakonimpact#m-onbreak), [`BreakOnImpact.onClientBreak`](/mod/game-api/types/global-a-b/breakonimpact#m-onclientbreak), [`BreakOnImpact.onServerBreak`](/mod/game-api/types/global-a-b/breakonimpact#m-onserverbreak).
+
+</div>

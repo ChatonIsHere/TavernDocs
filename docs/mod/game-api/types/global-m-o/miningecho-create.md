@@ -22,4 +22,4 @@ Editor menu entry for creating a `MiningEcho` skill asset. Not used at runtime.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MiningEcho.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `MiningEcho.Create` with default values.</span> |

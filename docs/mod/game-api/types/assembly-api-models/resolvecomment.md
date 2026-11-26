@@ -20,11 +20,11 @@ Body for adding a comment that also marks something resolved or not.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ResolveComment()"}</code> | Creates a `ResolveComment` with default values. |
+| <Link id="m-ctor" /><code>{"ResolveComment()"}</code> | <span className="api-desc">Creates a `ResolveComment` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> | The comment text. |
-| <Link id="m-isresolved" /><code>{"bool IsResolved { get; set; }"}</code> | Whether to mark it resolved. |
+| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> | <span className="api-desc">The comment text.</span> |
+| <Link id="m-isresolved" /><code>{"bool IsResolved { get; set; }"}</code> | <span className="api-desc">Whether to mark it resolved.</span> |

@@ -21,17 +21,17 @@ A player's cosmetics and equipment visuals, shared by every handler (body or dum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerCharacterCustomizationManager()"}</code> | Creates a `PlayerCharacterCustomizationManager` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerCharacterCustomizationManager()"}</code> | <span className="api-desc">Creates a `PlayerCharacterCustomizationManager` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-internalmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" internalManager"}</code> | The `CustomizationVisualManager` that the cosmetic and equipment wrappers and the attached handlers work through. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-internalmanager" /><code>{"private readonly "}<Link to="/mod/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" internalManager"}</code> | <span className="api-desc">The `CustomizationVisualManager` that the cosmetic and equipment wrappers and the attached handlers work through.</span> |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | <span className="api-desc">NLog logger for this class.</span> |
 
 </details>
 
@@ -39,20 +39,24 @@ A player's cosmetics and equipment visuals, shared by every handler (body or dum
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cosmetics" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" Cosmetics { get; private set; }"}</code> | The player's cosmetic items and their history. |
-| <Link id="m-equipment" /><code><Link to="/mod/game-api/types/alta-customization/playerequipmentwrapper">{"PlayerEquipmentWrapper"}</Link>{" Equipment { get; private set; }"}</code> | The equipment worn on the character. |
-| <Link id="m-handlers" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> Handlers { get; }"}</code> | The handlers attached now. |
+| <Link id="m-cosmetics" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" Cosmetics { get; private set; }"}</code> | <span className="api-desc">The player's cosmetic items and their history.</span> |
+| <Link id="m-equipment" /><code><Link to="/mod/game-api/types/alta-customization/playerequipmentwrapper">{"PlayerEquipmentWrapper"}</Link>{" Equipment { get; private set; }"}</code> | <span className="api-desc">The equipment worn on the character.</span> |
+| <Link id="m-handlers" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/alta-customization/icustomizationhandler">{"ICustomizationHandler"}</Link>{"> Handlers { get; }"}</code> | <span className="api-desc">The handlers attached now.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-attach" /><code>{"void Attach("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | Attaches a customization handler so it shows these cosmetics and equipment. Refuses destroyed handlers. |
-| <Link id="m-detach" /><code>{"void Detach("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | Detaches a handler so it stops following this manager. |
-| <Link id="m-updatefirstperson" /><code>{"void UpdateFirstPerson("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | Refreshes a handler's first-person visuals. |
+| <Link id="m-attach" /><code>{"void Attach("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Attaches a customization handler so it shows these cosmetics and equipment. Refuses destroyed handlers.</span> |
+| <Link id="m-detach" /><code>{"void Detach("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Detaches a handler so it stops following this manager.</span> |
+| <Link id="m-updatefirstperson" /><code>{"void UpdateFirstPerson("}<Link to="/mod/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" handler)"}</code> | <span className="api-desc">Refreshes a handler's first-person visuals.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayerCharacterCustomizationManager`:
 
+<div className="api-used-in">
+
 [`CharacterDummy.Manager`](/mod/game-api/types/alta-player/characterdummy#m-manager), [`CosmeticCustomizationManager.InitializeForPlayer`](/mod/game-api/types/alta-customization/cosmeticcustomizationmanager#m-initializeforplayer-2), [`CosmeticCustomizationManager.Manager`](/mod/game-api/types/alta-customization/cosmeticcustomizationmanager#m-manager), [`CosmeticCustomizationManager.StartSession`](/mod/game-api/types/alta-customization/cosmeticcustomizationmanager#m-startsession), [`CosmeticOwnershipManager.CosmeticOwnershipManager`](/mod/game-api/types/alta-customization/cosmeticownershipmanager#m-ctor), [`CosmeticOwnershipManager.LoadFor`](/mod/game-api/types/alta-customization/cosmeticownershipmanager#m-loadfor-2), [`CosmeticOwnershipManager.manager`](/mod/game-api/types/alta-customization/cosmeticownershipmanager#m-manager), [`CosmeticPresetsManager.SetupWithManager`](/mod/game-api/types/alta-customization/cosmeticpresetsmanager#m-setupwithmanager), [`CosmeticPresetTrophy.Manager`](/mod/game-api/types/alta-customization/cosmeticpresettrophy#m-manager), [`ICustomizationHandler.Manager`](/mod/game-api/types/alta-customization/icustomizationhandler#m-manager), [`ICustomizationHandler.SetManager`](/mod/game-api/types/alta-customization/icustomizationhandler#m-setmanager), [`PlayerCustomizationHandler.Manager`](/mod/game-api/types/alta-customization/playercustomizationhandler#m-manager), [`PlayerCustomizationHandler.onManagerUpdated`](/mod/game-api/types/alta-customization/playercustomizationhandler#m-onmanagerupdated), [`PlayerCustomizationHandler.SetManager`](/mod/game-api/types/alta-customization/playercustomizationhandler#m-setmanager), [`ShopInterface.manager`](/mod/game-api/types/alta-customization/shopinterface#m-manager), [`PlayerLikeSpectralGhost.manager`](/mod/game-api/types/alta-intelligence/playerlikespectralghost#m-manager), [`IPlayer.Customization`](/mod/game-api/types/alta-networking/iplayer#m-customization), [`LocalPlayerAdvertisingTrophy.localManager`](/mod/game-api/types/global-i-l/localplayeradvertisingtrophy#m-localmanager), [`ModellingCharacter.manager`](/mod/game-api/types/global-m-o/modellingcharacter#m-manager), [`Player.Customization`](/mod/game-api/types/global-p/player#m-customization).
+
+</div>

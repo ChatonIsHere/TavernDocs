@@ -31,4 +31,8 @@ How a spawned instance is saved when its chunk saves or unloads: `Base` (on its 
 
 Members of other types that take, return or hold a `SaveMode`:
 
+<div className="api-used-in">
+
 [`PlayerCharacter.SaveMode`](/mod/game-api/types/alta-player/playercharacter#m-savemode), [`NetworkPrefab.SaveMode`](/mod/game-api/types/alta-networking/networkprefab#m-savemode), [`Interactable.BaseSaveMode`](/mod/game-api/types/global-i-l/interactable#m-basesavemode), [`PlayerController.SaveMode`](/mod/game-api/types/global-p/playercontroller#m-savemode), [`PositionedNetworkPrefab.saveMode`](/mod/game-api/types/global-p/positionednetworkprefab#m-savemode), [`SerializedSavedDynamicObject.Load`](/mod/game-api/types/global-s/serializedsaveddynamicobject#m-load), [`SerializedSavedDynamicObject.LoadInto`](/mod/game-api/types/global-s/serializedsaveddynamicobject#m-loadinto), [`SerializedSavedDynamicObject.SpawnFromString`](/mod/game-api/types/global-s/serializedsaveddynamicobject#m-spawnfromstring), [`SetPiece.saveMode`](/mod/game-api/types/global-s/setpiece#m-savemode), [`SpawnHelper.Spawn`](/mod/game-api/types/global-s/spawnhelper#m-spawn).
+
+</div>

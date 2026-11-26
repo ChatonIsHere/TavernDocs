@@ -31,4 +31,8 @@ Old analytics record categories (combat hit, teleportation, device stats and so 
 
 Members of other types that take, return or hold a `AnalyticsType`:
 
+<div className="api-used-in">
+
 [`Analytics.GetAPIEndpoint`](/mod/game-api/types/alta-console/analytics#m-getapiendpoint), [`Analytics.SendRecord`](/mod/game-api/types/alta-console/analytics#m-sendrecord).
+
+</div>

@@ -29,4 +29,8 @@ Which of a trigger's event sets `EnchantmentTrigger.CallEvents` fires: charged, 
 
 Members of other types that take, return or hold a `EffectType`:
 
+<div className="api-used-in">
+
 [`EnchantmentTrigger.CallEvents`](/mod/game-api/types/alta-crafting/enchantmenttrigger#m-callevents), [`EnchantmentTriggerApplication<T>.CallEvents`](/mod/game-api/types/alta-crafting/enchantmenttriggerapplication-t#m-callevents).
+
+</div>

@@ -21,17 +21,17 @@ Obsolete: reads total CPU use and one process's memory. Marked to be replaced by
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> | Creates a `ProcessDiagnostics` from `processToTrack`. |
+| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> | <span className="api-desc">Creates a `ProcessDiagnostics` from `processToTrack`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cpucounter" /><code>{"private PerformanceCounter cpuCounter"}</code> | Performance counter for total processor time. |
-| <Link id="m-processtotrack" /><code>{"private Process processToTrack"}</code> | Process whose memory is read. |
+| <Link id="m-cpucounter" /><code>{"private PerformanceCounter cpuCounter"}</code> | <span className="api-desc">Performance counter for total processor time.</span> |
+| <Link id="m-processtotrack" /><code>{"private Process processToTrack"}</code> | <span className="api-desc">Process whose memory is read.</span> |
 
 </details>
 
@@ -39,11 +39,11 @@ Obsolete: reads total CPU use and one process's memory. Marked to be replaced by
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cpupercentage" /><code>{"float CPUPercentage { get; }"}</code> | Total CPU use across all cores, from a performance counter. |
-| <Link id="m-memorysizeinbytes" /><code>{"long MemorySizeInBytes { get; }"}</code> | Working set of the tracked process as of the last `UpdateValues`. |
+| <Link id="m-cpupercentage" /><code>{"float CPUPercentage { get; }"}</code> | <span className="api-desc">Total CPU use across all cores, from a performance counter.</span> |
+| <Link id="m-memorysizeinbytes" /><code>{"long MemorySizeInBytes { get; }"}</code> | <span className="api-desc">Working set of the tracked process as of the last `UpdateValues`.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatevalues" /><code>{"void UpdateValues()"}</code> | Refreshes the process info. |
+| <Link id="m-updatevalues" /><code>{"void UpdateValues()"}</code> | <span className="api-desc">Refreshes the process info.</span> |

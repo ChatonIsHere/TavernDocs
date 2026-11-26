@@ -29,4 +29,8 @@ Shape of the population area the `spawn population` command spawns: disk, sphere
 
 Members of other types that take, return or hold a `PopulationType`:
 
+<div className="api-used-in">
+
 [`SpawnCommandModule.SpawnPopulation`](/mod/game-api/types/alta-console/spawncommandmodule#m-spawnpopulation).
+
+</div>

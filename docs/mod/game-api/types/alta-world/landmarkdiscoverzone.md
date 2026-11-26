@@ -22,17 +22,17 @@ A sphere trigger that marks a landmark as discovered for any player who walks in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LandmarkDiscoverZone()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"LandmarkDiscoverZone()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-landmark" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/landmark">{"Landmark"}</Link>{" landmark"}</code> | The landmark this zone discovers. |
-| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> | The trigger sphere. Its radius is saved and loaded. |
+| <Link id="m-landmark" /><code>{"private "}<Link to="/mod/game-api/types/alta-world/landmark">{"Landmark"}</Link>{" landmark"}</code> | <span className="api-desc">The landmark this zone discovers.</span> |
+| <Link id="m-spherecollider" /><code>{"private SphereCollider sphereCollider"}</code> | <span className="api-desc">The trigger sphere. Its radius is saved and loaded.</span> |
 
 </details>
 
@@ -40,13 +40,13 @@ A sphere trigger that marks a landmark as discovered for any player who walks in
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Turns the sphere collider off when not running on the server. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Turns the sphere collider off when not running on the server.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Server: when a player's character enters, discovers `landmark` for that player. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | <span className="api-desc">Server: when a player's character enters, discovers `landmark` for that player.</span> |
 
 </details>

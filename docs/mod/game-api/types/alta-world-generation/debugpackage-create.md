@@ -22,4 +22,4 @@ Editor menu entry (Assets, Create, Township, Debug) that makes a new `DebugPacka
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DebugPackage.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `DebugPackage.Create` with default values.</span> |

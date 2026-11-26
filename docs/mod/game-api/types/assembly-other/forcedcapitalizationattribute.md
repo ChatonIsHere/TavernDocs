@@ -21,4 +21,4 @@ Marker property attribute, probably for an editor drawer that forces a string fi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ForcedCapitalizationAttribute()"}</code> | Creates a `ForcedCapitalizationAttribute` with default values. |
+| <Link id="m-ctor" /><code>{"ForcedCapitalizationAttribute()"}</code> | <span className="api-desc">Creates a `ForcedCapitalizationAttribute` with default values.</span> |

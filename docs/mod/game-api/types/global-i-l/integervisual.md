@@ -21,21 +21,21 @@ Shows a small integer as a fan of bars, one shown per point of value. Used by `M
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"IntegerVisual()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"IntegerVisual()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>6 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-anglerange" /><code>{"private float angleRange"}</code> | Total angle the bars fan across (default 70). |
-| <Link id="m-barprefab" /><code>{"private GameObject barPrefab"}</code> | Prefab for one bar. |
-| <Link id="m-max" /><code>{"private int max"}</code> | Number of bars (default 3). |
-| <Link id="m-spawnedbars" /><code>{"private GameObject[] spawnedBars"}</code> | The spawned bar objects. |
-| <Link id="m-testbutton" /><code>{"private bool testButton"}</code> | Editor button to test the visual. |
-| <Link id="m-value" /><code>{"private int value"}</code> | Backing field for `Value`. |
+| <Link id="m-anglerange" /><code>{"private float angleRange"}</code> | <span className="api-desc">Total angle the bars fan across (default 70).</span> |
+| <Link id="m-barprefab" /><code>{"private GameObject barPrefab"}</code> | <span className="api-desc">Prefab for one bar.</span> |
+| <Link id="m-max" /><code>{"private int max"}</code> | <span className="api-desc">Number of bars (default 3).</span> |
+| <Link id="m-spawnedbars" /><code>{"private GameObject[] spawnedBars"}</code> | <span className="api-desc">The spawned bar objects.</span> |
+| <Link id="m-testbutton" /><code>{"private bool testButton"}</code> | <span className="api-desc">Editor button to test the visual.</span> |
+| <Link id="m-value" /><code>{"private int value"}</code> | <span className="api-desc">Backing field for `Value`.</span> |
 
 </details>
 
@@ -43,22 +43,22 @@ Shows a small integer as a fan of bars, one shown per point of value. Used by `M
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-value-2" /><code>{"int Value { get; internal set; }"}</code> | The number shown. Setting it (internal) updates the bars. |
+| <Link id="m-value-2" /><code>{"int Value { get; internal set; }"}</code> | <span className="api-desc">The number shown. Setting it (internal) updates the bars.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-updatebars" /><code>{"void UpdateBars()"}</code> | Shows the first `Value` bars and hides the rest. |
+| <Link id="m-updatebars" /><code>{"void UpdateBars()"}</code> | <span className="api-desc">Shows the first `Value` bars and hides the rest.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setupallbars" /><code>{"private void SetupAllBars()"}</code> | Spawns `max` bars once, spread across the angle range. |
-| <Link id="m-spawnbar" /><code>{"private GameObject SpawnBar(int i, int barCount)"}</code> | Instantiates one bar and rotates it to its place in the fan. |
-| <Link id="m-start" /><code>{"private void Start()"}</code> | Spawns the bars and shows the current value. |
+| <Link id="m-setupallbars" /><code>{"private void SetupAllBars()"}</code> | <span className="api-desc">Spawns `max` bars once, spread across the angle range.</span> |
+| <Link id="m-spawnbar" /><code>{"private GameObject SpawnBar(int i, int barCount)"}</code> | <span className="api-desc">Instantiates one bar and rotates it to its place in the fan.</span> |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | <span className="api-desc">Spawns the bars and shows the current value.</span> |
 
 </details>
 
@@ -66,4 +66,8 @@ Shows a small integer as a fan of bars, one shown per point of value. Used by `M
 
 Members of other types that take, return or hold a `IntegerVisual`:
 
+<div className="api-used-in">
+
 [`Mould.usageVisual`](/mod/game-api/types/global-m-o/mould#m-usagevisual).
+
+</div>

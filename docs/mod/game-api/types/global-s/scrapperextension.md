@@ -21,4 +21,4 @@ String extension for text templates that use `BaseReplacer` objects.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-replace" /><code>{"static string Replace(string original, "}<Link to="/mod/game-api/types/global-a-b/basereplacer">{"BaseReplacer"}</Link>{" replacer)"}</code> | Replaces the replacer's `Target` text in the string with the replacer's string value. |
+| <Link id="m-replace" /><code>{"static string Replace(string original, "}<Link to="/mod/game-api/types/global-a-b/basereplacer">{"BaseReplacer"}</Link>{" replacer)"}</code> | <span className="api-desc">Replaces the replacer's `Target` text in the string with the replacer's string value.</span> |

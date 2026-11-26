@@ -20,10 +20,10 @@ Request body carrying one console command to run, probably on a game server.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ConsoleCommandRequest()"}</code> | Creates a `ConsoleCommandRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ConsoleCommandRequest()"}</code> | <span className="api-desc">Creates a `ConsoleCommandRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-command" /><code>{"string Command { get; set; }"}</code> | The command text. |
+| <Link id="m-command" /><code>{"string Command { get; set; }"}</code> | <span className="api-desc">The command text.</span> |

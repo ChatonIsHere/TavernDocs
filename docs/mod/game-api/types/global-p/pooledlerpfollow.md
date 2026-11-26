@@ -21,17 +21,17 @@ A `LerpFollow` on a pooled object that restarts each time the object is taken fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PooledLerpFollow()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"PooledLerpFollow()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> | Whether to follow the parent transform (default true). |
-| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> | The pooled object whose requests restart the lerp. |
+| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> | <span className="api-desc">Whether to follow the parent transform (default true).</span> |
+| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> | <span className="api-desc">The pooled object whose requests restart the lerp.</span> |
 
 </details>
 
@@ -39,15 +39,15 @@ A `LerpFollow` on a pooled object that restarts each time the object is taken fr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> | Stops following and disables the component. |
+| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> | <span className="api-desc">Stops following and disables the component.</span> |
 
-<details>
+<details className="api-private">
 <summary>3 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the pooled object's `Requested` event. |
-| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Resets the start position and waits a frame before starting the lerp. |
-| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> | Coroutine: at end of frame, sets the target to the parent if wanted and starts the lerp. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | <span className="api-desc">Hooks the pooled object's `Requested` event.</span> |
+| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/mod/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | <span className="api-desc">Resets the start position and waits a frame before starting the lerp.</span> |
+| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> | <span className="api-desc">Coroutine: at end of frame, sets the target to the parent if wanted and starts the lerp.</span> |
 
 </details>

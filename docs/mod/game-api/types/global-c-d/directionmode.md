@@ -29,4 +29,8 @@ What smooth locomotion steers by: the head or the controller, and locked variant
 
 Members of other types that take, return or hold a `DirectionMode`:
 
+<div className="api-used-in">
+
 [`GameSettings.PressLocomotionMode`](/mod/game-api/types/alta-utilities/gamesettings#m-presslocomotionmode), [`GameSettings.TouchLocomotionMode`](/mod/game-api/types/alta-utilities/gamesettings#m-touchlocomotionmode).
+
+</div>

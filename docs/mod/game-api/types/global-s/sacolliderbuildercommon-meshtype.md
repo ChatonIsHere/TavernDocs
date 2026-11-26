@@ -30,4 +30,8 @@ SAColliderBuilder (third party, editor) option for the mesh collider shape: raw,
 
 Members of other types that take, return or hold a `MeshType`:
 
+<div className="api-used-in">
+
 [`SAColliderBuilderCommon.ReducerProperty.meshType`](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty#m-meshtype).
+
+</div>

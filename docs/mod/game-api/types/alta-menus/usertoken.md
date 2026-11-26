@@ -21,20 +21,20 @@ One user entry on the friends board, with optional accept and reject buttons.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"UserToken()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"UserToken()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>5 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accept" /><code>{"private Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> | Callback run when the player presses accept; the accept button only shows when it's set. |
-| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> | Accept button object, shown when an accept callback is given. |
-| <Link id="m-reject" /><code>{"private Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> | Callback run when the player presses reject; the reject button only shows when it's set. |
-| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> | Reject button object, shown when a reject callback is given. |
-| <Link id="m-username" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> | Text showing the user's name. |
+| <Link id="m-accept" /><code>{"private Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> | <span className="api-desc">Callback run when the player presses accept; the accept button only shows when it's set.</span> |
+| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> | <span className="api-desc">Accept button object, shown when an accept callback is given.</span> |
+| <Link id="m-reject" /><code>{"private Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> | <span className="api-desc">Callback run when the player presses reject; the reject button only shows when it's set.</span> |
+| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> | <span className="api-desc">Reject button object, shown when a reject callback is given.</span> |
+| <Link id="m-username" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> | <span className="api-desc">Text showing the user's name.</span> |
 
 </details>
 
@@ -42,18 +42,22 @@ One user entry on the friends board, with optional accept and reject buttons.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" Manager { get; private set; }"}</code> | The friends manager that owns it. |
-| <Link id="m-userinfo" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; private set; }"}</code> | The user shown. |
+| <Link id="m-manager" /><code><Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" Manager { get; private set; }"}</code> | <span className="api-desc">The friends manager that owns it.</span> |
+| <Link id="m-userinfo" /><code><Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; private set; }"}</code> | <span className="api-desc">The user shown.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-run" /><code>{"void Run(bool hasAccepted)"}</code> | Runs the accept or reject action. |
-| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" manager, Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept, Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject)"}</code> | Sets the user, name text and actions. A button is hidden when its action is null. |
+| <Link id="m-run" /><code>{"void Run(bool hasAccepted)"}</code> | <span className="api-desc">Runs the accept or reject action.</span> |
+| <Link id="m-setup" /><code>{"void Setup("}<Link to="/mod/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo, "}<Link to="/mod/game-api/types/alta-menus/friendsmanager">{"FriendsManager"}</Link>{" manager, Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept, Action<"}<Link to="/mod/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject)"}</code> | <span className="api-desc">Sets the user, name text and actions. A button is hidden when its action is null.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `UserToken`:
 
+<div className="api-used-in">
+
 [`FriendsManager.activeTokens`](/mod/game-api/types/alta-menus/friendsmanager#m-activetokens), [`FriendsManager.AddFriend`](/mod/game-api/types/alta-menus/friendsmanager#m-addfriend), [`FriendsManager.ConfigureTokenForTab`](/mod/game-api/types/alta-menus/friendsmanager#m-configuretokenfortab), [`FriendsManager.JoinFriendServer`](/mod/game-api/types/alta-menus/friendsmanager#m-joinfriendserver), [`FriendsManager.ReleaseToken`](/mod/game-api/types/alta-menus/friendsmanager#m-releasetoken), [`FriendsManager.RemoveFriend`](/mod/game-api/types/alta-menus/friendsmanager#m-removefriend), [`FriendsManager.tokenPool`](/mod/game-api/types/alta-menus/friendsmanager#m-tokenpool), [`FriendsManager.userTokenPrefab`](/mod/game-api/types/alta-menus/friendsmanager#m-usertokenprefab).
+
+</div>

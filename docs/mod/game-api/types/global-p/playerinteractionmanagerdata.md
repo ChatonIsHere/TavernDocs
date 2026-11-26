@@ -24,11 +24,11 @@ Save data for `PlayerInteractionManager`: how many interactions each player has 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> | Creates a `PlayerInteractionManagerData` with default values. |
+| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> | <span className="api-desc">Creates a `PlayerInteractionManagerData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-nextid" /><code>{"int nextID"}</code> | Next id to hand out to a new restrictor. |
-| <Link id="m-trackers" /><code><Link to="/mod/game-api/types/global-p/playerinteractionmanagerdata-playerdata">{"PlayerInteractionManagerData.PlayerData"}</Link>{"[] trackers"}</code> | One entry per player, each holding the interactions left per restrictor id. |
+| <Link id="m-nextid" /><code>{"int nextID"}</code> | <span className="api-desc">Next id to hand out to a new restrictor.</span> |
+| <Link id="m-trackers" /><code><Link to="/mod/game-api/types/global-p/playerinteractionmanagerdata-playerdata">{"PlayerInteractionManagerData.PlayerData"}</Link>{"[] trackers"}</code> | <span className="api-desc">One entry per player, each holding the interactions left per restrictor id.</span> |

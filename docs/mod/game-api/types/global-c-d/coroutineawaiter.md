@@ -21,14 +21,14 @@ Extension methods that let async code await a coroutine run through `AltaCorouti
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-waitforcoroutineasync" /><code>{"static async Task WaitForCoroutineAsync(IEnumerator coroutine, MonoBehaviour target = null)"}</code> | Starts the coroutine and finishes when it does. The generic overload then returns `getResult()`. |
-| <Link id="m-waitforcoroutineasync-2" /><code>{"static async Task<T> WaitForCoroutineAsync<T>(IEnumerator coroutine, Func<T> getResult, MonoBehaviour target = null)"}</code> | Starts the coroutine and finishes when it does. The generic overload then returns `getResult()`. |
+| <Link id="m-waitforcoroutineasync" /><code>{"static async Task WaitForCoroutineAsync(IEnumerator coroutine, MonoBehaviour target = null)"}</code> | <span className="api-desc">Starts the coroutine and finishes when it does. The generic overload then returns `getResult()`.</span> |
+| <Link id="m-waitforcoroutineasync-2" /><code>{"static async Task<T> WaitForCoroutineAsync<T>(IEnumerator coroutine, Func<T> getResult, MonoBehaviour target = null)"}</code> | <span className="api-desc">Starts the coroutine and finishes when it does. The generic overload then returns `getResult()`.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-runcoroutine" /><code>{"private static IEnumerator RunCoroutine(IEnumerator coroutine, TaskCompletionSource<bool> completion) (iterator)"}</code> | Wrapper coroutine that runs the given one and completes the task. |
+| <Link id="m-runcoroutine" /><code>{"private static IEnumerator RunCoroutine(IEnumerator coroutine, TaskCompletionSource<bool> completion) (iterator)"}</code> | <span className="api-desc">Wrapper coroutine that runs the given one and completes the task.</span> |
 
 </details>

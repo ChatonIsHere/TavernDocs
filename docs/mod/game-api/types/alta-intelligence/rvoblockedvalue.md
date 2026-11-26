@@ -21,17 +21,17 @@ Scoring rule on whether the creature's walker is blocked by local avoidance. Mad
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RVOBlockedValue(float unblocked, float blocked)"}</code> | Creates a `RVOBlockedValue` from `unblocked` and `blocked`. |
+| <Link id="m-ctor" /><code>{"RVOBlockedValue(float unblocked, float blocked)"}</code> | <span className="api-desc">Creates a `RVOBlockedValue` from `unblocked` and `blocked`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-blocked" /><code>{"private float blocked"}</code> | Value when blocked. |
-| <Link id="m-unblocked" /><code>{"private float unblocked"}</code> | Value when not blocked, or when the creature has no walker. |
+| <Link id="m-blocked" /><code>{"private float blocked"}</code> | <span className="api-desc">Value when blocked.</span> |
+| <Link id="m-unblocked" /><code>{"private float unblocked"}</code> | <span className="api-desc">Value when not blocked, or when the creature has no walker.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Scoring rule on whether the creature's walker is blocked by local avoidance. Mad
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Returns `blocked` if the creature has a walker and it's blocked, otherwise `unblocked`. |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/mod/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/mod/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | <span className="api-desc">Returns `blocked` if the creature has a walker and it's blocked, otherwise `unblocked`.</span> |

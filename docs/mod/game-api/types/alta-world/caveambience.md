@@ -22,19 +22,19 @@ Atmosphere plugin for caves: a fixed ambient colour, fog colour and density, and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CaveAmbience()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CaveAmbience()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-caveambience" /><code>{"private Color caveAmbience"}</code> | Ambient colour in caves. |
-| <Link id="m-cavefogcolor" /><code>{"private Color caveFogColor"}</code> | Fog colour in caves. |
-| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | Fog density in caves. |
-| <Link id="m-todisable" /><code>{"private GameObject[] toDisable"}</code> | Objects hidden while the cave ambience is active. |
+| <Link id="m-caveambience" /><code>{"private Color caveAmbience"}</code> | <span className="api-desc">Ambient colour in caves.</span> |
+| <Link id="m-cavefogcolor" /><code>{"private Color caveFogColor"}</code> | <span className="api-desc">Fog colour in caves.</span> |
+| <Link id="m-fogdensity" /><code>{"private float fogDensity"}</code> | <span className="api-desc">Fog density in caves.</span> |
+| <Link id="m-todisable" /><code>{"private GameObject[] toDisable"}</code> | <span className="api-desc">Objects hidden while the cave ambience is active.</span> |
 
 </details>
 
@@ -42,14 +42,14 @@ Atmosphere plugin for caves: a fixed ambient colour, fog colour and density, and
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | The cave ambient colour. |
-| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | The cave fog colour. |
-| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | The cave fog density. |
+| <Link id="m-currentambience" /><code>{"override Color CurrentAmbience { get; }"}</code> | <span className="api-desc">The cave ambient colour.</span> |
+| <Link id="m-currentfog" /><code>{"override Color CurrentFog { get; }"}</code> | <span className="api-desc">The cave fog colour.</span> |
+| <Link id="m-currentfogdensity" /><code>{"override float CurrentFogDensity { get; }"}</code> | <span className="api-desc">The cave fog density.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Turns the hidden objects back on. |
-| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | If it has priority, hides `toDisable` and blends ambient, fog colour and density to the cave values. |
-| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> | Blends back to the cave ambient colour if nothing overrides it. |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | <span className="api-desc">Turns the hidden objects back on.</span> |
+| <Link id="m-enabled" /><code>{"protected override void Enabled()"}</code> | <span className="api-desc">If it has priority, hides `toDisable` and blends ambient, fog colour and density to the cave values.</span> |
+| <Link id="m-reenabled" /><code>{"protected override void Reenabled()"}</code> | <span className="api-desc">Blends back to the cave ambient colour if nothing overrides it.</span> |

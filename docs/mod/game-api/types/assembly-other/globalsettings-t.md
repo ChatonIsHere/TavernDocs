@@ -23,17 +23,17 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"GlobalSettings()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance" /><code>{"private static T instance"}</code> | The settings asset, set by `InitializeInstance`. |
-| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> | Unused. |
+| <Link id="m-instance" /><code>{"private static T instance"}</code> | <span className="api-desc">The settings asset, set by `InitializeInstance`.</span> |
+| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> | <span className="api-desc">Unused.</span> |
 
 </details>
 
@@ -41,19 +41,19 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> | The active settings asset. Null until it has been initialized (the editor fallback returns null in this build). |
+| <Link id="m-instance-2" /><code>{"static T Instance { get; }"}</code> | <span className="api-desc">The active settings asset. Null until it has been initialized (the editor fallback returns null in this build).</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> | Makes this asset the static `Instance`. Called at startup for every listed settings asset. |
+| <Link id="m-initializeinstance" /><code>{"sealed override void InitializeInstance()"}</code> | <span className="api-desc">Makes this asset the static `Instance`. Called at startup for every listed settings asset.</span> |
 
-<details>
+<details className="api-private">
 <summary>1 private and internal method</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> | Returns null in this build; `Instance` stays null until the asset is initialized. |
+| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> | <span className="api-desc">Returns null in this build; `Instance` stays null until the asset is initialized.</span> |
 
 </details>

@@ -21,19 +21,23 @@ A G-core encounter placed in a forest, in a `ForestInfo`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Encounter()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Encounter` with default values. |
+| <Link id="m-ctor" /><code>{"Encounter()"}</code> | <span className="api-desc">Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Encounter` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-edgea" /><code>{"int edgeA"}</code> | The instruction's first edge value. |
-| <Link id="m-edgeb" /><code>{"int edgeB"}</code> | The instruction's second edge value. |
-| <Link id="m-name" /><code>{"string name"}</code> | Name of the G-core. |
-| <Link id="m-node" /><code>{"int node"}</code> | Index of the node it is placed at. |
+| <Link id="m-edgea" /><code>{"int edgeA"}</code> | <span className="api-desc">The instruction's first edge value.</span> |
+| <Link id="m-edgeb" /><code>{"int edgeB"}</code> | <span className="api-desc">The instruction's second edge value.</span> |
+| <Link id="m-name" /><code>{"string name"}</code> | <span className="api-desc">Name of the G-core.</span> |
+| <Link id="m-node" /><code>{"int node"}</code> | <span className="api-desc">Index of the node it is placed at.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Encounter`:
 
+<div className="api-used-in">
+
 [`WorldCommandModule.ForestCommandModule.ForestInfo.encounters`](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo#m-encounters).
+
+</div>

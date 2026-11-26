@@ -22,4 +22,4 @@ Editor menu item under Assets/Create/Township/Features/Pages that makes a new `P
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PageCollection.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `PageCollection.Create` with default values.</span> |

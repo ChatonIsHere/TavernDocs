@@ -20,11 +20,11 @@ Request body for sending a message to a list of users.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SendMessageRequest()"}</code> | Creates a `SendMessageRequest` with default values. |
+| <Link id="m-ctor" /><code>{"SendMessageRequest()"}</code> | <span className="api-desc">Creates a `SendMessageRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | The message text. |
-| <Link id="m-userids" /><code>{"List<int> UserIds { get; set; }"}</code> | Ids of the users to send it to. |
+| <Link id="m-message" /><code>{"string Message { get; set; }"}</code> | <span className="api-desc">The message text.</span> |
+| <Link id="m-userids" /><code>{"List<int> UserIds { get; set; }"}</code> | <span className="api-desc">Ids of the users to send it to.</span> |

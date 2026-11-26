@@ -19,12 +19,12 @@ Paged list of joinable groups of one group type, fetched from the Alta web API a
 
 ## Constructors
 
-<details>
+<details className="api-private">
 <summary>1 private and internal constructor</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"internal GroupGet("}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" type, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupGet` from `type` and `api`. |
+| <Link id="m-ctor" /><code>{"internal GroupGet("}<Link to="/mod/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" type, "}<Link to="/mod/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | <span className="api-desc">Creates a `GroupGet` from `type` and `api`.</span> |
 
 </details>
 
@@ -32,4 +32,8 @@ Paged list of joinable groups of one group type, fetched from the Alta web API a
 
 Members of other types that take, return or hold a `GroupGet`:
 
+<div className="api-used-in">
+
 [`GroupDiscovery.OpenGroups`](/mod/game-api/types/assembly-api-client/groupdiscovery#m-opengroups), [`GroupDiscovery.PublicGroups`](/mod/game-api/types/assembly-api-client/groupdiscovery#m-publicgroups).
+
+</div>

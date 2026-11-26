@@ -23,22 +23,22 @@ Base for an old projectile that reacts when its impactor hits something. It reco
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected ContactProjectile()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"protected ContactProjectile()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> | The projectile's rigidbody, stopped in `ResetEffect`. Must be set before a hit resets. |
-| <Link id="m-hascontacted" /><code>{"protected abstract bool HasContacted { get; }"}</code> | Whether the projectile has already hit something. Set by the subclass. |
-| <Link id="m-lasthitrotation" /><code>{"protected Quaternion LastHitRotation { get; private set; }"}</code> | Rotation facing back along the last hit direction or collision normal, for placing a hit effect. |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; set; }"}</code> | <span className="api-desc">The projectile's rigidbody, stopped in `ResetEffect`. Must be set before a hit resets.</span> |
+| <Link id="m-hascontacted" /><code>{"protected abstract bool HasContacted { get; }"}</code> | <span className="api-desc">Whether the projectile has already hit something. Set by the subclass.</span> |
+| <Link id="m-lasthitrotation" /><code>{"protected Quaternion LastHitRotation { get; private set; }"}</code> | <span className="api-desc">Rotation facing back along the last hit direction or collision normal, for placing a hit effect.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-oncollided" /><code>{"void OnCollided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Records the first contact's normal as `LastHitRotation`. |
-| <Link id="m-onhit" /><code>{"void OnHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Records the reverse of the tool hit's direction as `LastHitRotation`, or straight up if the hit had no direction. |
-| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> | Called by the impactor on reset: stops the rigidbody and calls `OnContact`. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Registers this projectile with every `ImpactGenerator` in its children so their reset calls `ResetEffect`. |
-| <Link id="m-oncontact" /><code>{"protected abstract void OnContact()"}</code> | Subclass hook run when the impactor resets after a hit. |
+| <Link id="m-oncollided" /><code>{"void OnCollided(Collision collision, bool isHitting, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">Records the first contact's normal as `LastHitRotation`.</span> |
+| <Link id="m-onhit" /><code>{"void OnHit("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/mod/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | <span className="api-desc">Records the reverse of the tool hit's direction as `LastHitRotation`, or straight up if the hit had no direction.</span> |
+| <Link id="m-reseteffect" /><code>{"void ResetEffect()"}</code> | <span className="api-desc">Called by the impactor on reset: stops the rigidbody and calls `OnContact`.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Registers this projectile with every `ImpactGenerator` in its children so their reset calls `ResetEffect`.</span> |
+| <Link id="m-oncontact" /><code>{"protected abstract void OnContact()"}</code> | <span className="api-desc">Subclass hook run when the impactor resets after a hit.</span> |

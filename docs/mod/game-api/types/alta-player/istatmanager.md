@@ -21,11 +21,15 @@ What a `Stat` calls back into to sync with the platform. Implemented by `Achieve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changed" /><code>{"void Changed("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | Tells the platform stats that the stat's value changed. |
-| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | Asks the platform for the stat's current value. |
+| <Link id="m-changed" /><code>{"void Changed("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Tells the platform stats that the stat's value changed.</span> |
+| <Link id="m-requestupdate" /><code>{"void RequestUpdate("}<Link to="/mod/game-api/types/alta-player/stat">{"Stat"}</Link>{" stat)"}</code> | <span className="api-desc">Asks the platform for the stat's current value.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IStatManager`:
 
+<div className="api-used-in">
+
 [`Stat.manager`](/mod/game-api/types/alta-player/stat#m-manager), [`Stat.Stat`](/mod/game-api/types/alta-player/stat#m-ctor).
+
+</div>

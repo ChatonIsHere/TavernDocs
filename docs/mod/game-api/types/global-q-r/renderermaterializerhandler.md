@@ -20,27 +20,27 @@ Helper that fades a set of renderers in or out with a dissolve shader, then puts
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"RendererMaterializerHandler(Shader shader, Texture dissolveTexture)"}</code> | Creates a `RendererMaterializerHandler` from `shader` and `dissolveTexture`. |
+| <Link id="m-ctor" /><code>{"RendererMaterializerHandler(Shader shader, Texture dissolveTexture)"}</code> | <span className="api-desc">Creates a `RendererMaterializerHandler` from `shader` and `dissolveTexture`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>12 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-allrenderers" /><code>{"private List<Renderer> allRenderers"}</code> | The renderers being animated. |
-| <Link id="m-colorshadervariable" /><code>{"private static readonly int ColorShaderVariable"}</code> | Shader id of `_Color`. |
-| <Link id="m-coroutinebehaviour" /><code>{"private MonoBehaviour coroutineBehaviour"}</code> | Behaviour the animation coroutines run on. |
-| <Link id="m-dissolveshadervariable" /><code>{"private static readonly int DissolveShaderVariable"}</code> | Shader id of `_Dissolve`, the dissolve noise texture. |
-| <Link id="m-emissioncolorshadervariable" /><code>{"private static readonly int EmissionColorShaderVariable"}</code> | Shader id of `_EmissionColor`. |
-| <Link id="m-emissionshadervariable" /><code>{"private static readonly int EmissionShaderVariable"}</code> | Shader id of `_Emission`. |
-| <Link id="m-maintexture" /><code>{"private static readonly int MainTexture"}</code> | Shader id of `_MainTex`. |
-| <Link id="m-materializationanimation" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" materializationAnimation"}</code> | The running materialise coroutine, so dematerialise can stop it. |
-| <Link id="m-materialstoanimate" /><code>{"private List<Material> materialsToAnimate"}</code> | Dissolve materials made so far. It is never cleared, so it grows with each run. |
-| <Link id="m-originalmaterials" /><code>{"private Dictionary<Renderer, Material> originalMaterials"}</code> | Each renderer's material from before the first dissolve. |
-| <Link id="m-particlesystemrenderer" /><code>{"private static Type particleSystemRenderer"}</code> | Cached `ParticleSystemRenderer` type, skipped by `SetTargetObject`. |
-| <Link id="m-progressshadervariable" /><code>{"private static readonly int ProgressShaderVariable"}</code> | Shader id of `_Progress`, the dissolve amount. |
+| <Link id="m-allrenderers" /><code>{"private List<Renderer> allRenderers"}</code> | <span className="api-desc">The renderers being animated.</span> |
+| <Link id="m-colorshadervariable" /><code>{"private static readonly int ColorShaderVariable"}</code> | <span className="api-desc">Shader id of `_Color`.</span> |
+| <Link id="m-coroutinebehaviour" /><code>{"private MonoBehaviour coroutineBehaviour"}</code> | <span className="api-desc">Behaviour the animation coroutines run on.</span> |
+| <Link id="m-dissolveshadervariable" /><code>{"private static readonly int DissolveShaderVariable"}</code> | <span className="api-desc">Shader id of `_Dissolve`, the dissolve noise texture.</span> |
+| <Link id="m-emissioncolorshadervariable" /><code>{"private static readonly int EmissionColorShaderVariable"}</code> | <span className="api-desc">Shader id of `_EmissionColor`.</span> |
+| <Link id="m-emissionshadervariable" /><code>{"private static readonly int EmissionShaderVariable"}</code> | <span className="api-desc">Shader id of `_Emission`.</span> |
+| <Link id="m-maintexture" /><code>{"private static readonly int MainTexture"}</code> | <span className="api-desc">Shader id of `_MainTex`.</span> |
+| <Link id="m-materializationanimation" /><code>{"private "}<Link to="/mod/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" materializationAnimation"}</code> | <span className="api-desc">The running materialise coroutine, so dematerialise can stop it.</span> |
+| <Link id="m-materialstoanimate" /><code>{"private List<Material> materialsToAnimate"}</code> | <span className="api-desc">Dissolve materials made so far. It is never cleared, so it grows with each run.</span> |
+| <Link id="m-originalmaterials" /><code>{"private Dictionary<Renderer, Material> originalMaterials"}</code> | <span className="api-desc">Each renderer's material from before the first dissolve.</span> |
+| <Link id="m-particlesystemrenderer" /><code>{"private static Type particleSystemRenderer"}</code> | <span className="api-desc">Cached `ParticleSystemRenderer` type, skipped by `SetTargetObject`.</span> |
+| <Link id="m-progressshadervariable" /><code>{"private static readonly int ProgressShaderVariable"}</code> | <span className="api-desc">Shader id of `_Progress`, the dissolve amount.</span> |
 
 </details>
 
@@ -48,31 +48,31 @@ Helper that fades a set of renderers in or out with a dissolve shader, then puts
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-dissolvetexture" /><code>{"Texture DissolveTexture { get; set; }"}</code> | Noise texture set on every dissolve material. |
-| <Link id="m-shader" /><code>{"Shader Shader { get; set; }"}</code> | The dissolve shader used for the temporary materials. |
+| <Link id="m-dissolvetexture" /><code>{"Texture DissolveTexture { get; set; }"}</code> | <span className="api-desc">Noise texture set on every dissolve material.</span> |
+| <Link id="m-shader" /><code>{"Shader Shader { get; set; }"}</code> | <span className="api-desc">The dissolve shader used for the temporary materials.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-demateralizerenderers" /><code>{"void DemateralizeRenderers(float duration, Action animationFinishedCallback = null)"}</code> | Stops any materialise run, then glows the renderers up and dissolves them away over `duration`. |
-| <Link id="m-materializerenderers" /><code>{"void MaterializeRenderers(float duration, Action animationFinishedCallback = null)"}</code> | Hides the renderers, then dissolves them in over `duration` and calls the callback when done. |
-| <Link id="m-settargetobject" /><code>{"void SetTargetObject(Transform rendererParent, MonoBehaviour coroutineBehaviour)"}</code> | Targets every renderer under a transform except particle renderers, and sets the behaviour that runs the coroutines. |
-| <Link id="m-settargets" /><code>{"void SetTargets(IEnumerable<Renderer> renderers, MonoBehaviour coroutineBehaviour)"}</code> | Targets the given renderers and sets the behaviour that runs the coroutines. |
+| <Link id="m-demateralizerenderers" /><code>{"void DemateralizeRenderers(float duration, Action animationFinishedCallback = null)"}</code> | <span className="api-desc">Stops any materialise run, then glows the renderers up and dissolves them away over `duration`.</span> |
+| <Link id="m-materializerenderers" /><code>{"void MaterializeRenderers(float duration, Action animationFinishedCallback = null)"}</code> | <span className="api-desc">Hides the renderers, then dissolves them in over `duration` and calls the callback when done.</span> |
+| <Link id="m-settargetobject" /><code>{"void SetTargetObject(Transform rendererParent, MonoBehaviour coroutineBehaviour)"}</code> | <span className="api-desc">Targets every renderer under a transform except particle renderers, and sets the behaviour that runs the coroutines.</span> |
+| <Link id="m-settargets" /><code>{"void SetTargets(IEnumerable<Renderer> renderers, MonoBehaviour coroutineBehaviour)"}</code> | <span className="api-desc">Targets the given renderers and sets the behaviour that runs the coroutines.</span> |
 
-<details>
+<details className="api-private">
 <summary>8 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changeallmaterialstodissolve" /><code>{"private void ChangeAllMaterialsToDissolve()"}</code> | Gives each renderer a new dissolve material copying its texture or colour, and remembers the original. Multi-material renderers end up with one material. |
-| <Link id="m-dematerializeanimation" /><code>{"private IEnumerator DematerializeAnimation(float duration, Action animationFinishedCallback) (iterator)"}</code> | Coroutine: raises emission, swaps to dissolve materials, then runs progress 0 to 1, then calls the callback. |
-| <Link id="m-instanceallmaterials" /><code>{"private void InstanceAllMaterials()"}</code> | Gives each renderer its own material instance so emission changes don't touch shared materials. |
-| <Link id="m-materializeanimation" /><code>{"private IEnumerator MaterializeAnimation(float duration, Action animationFinishedCallback) (iterator)"}</code> | Coroutine: waits two frames, dissolves in from 1 to 0, fades emission out, restores originals, then calls the callback. |
-| <Link id="m-resetallmaterials" /><code>{"private void ResetAllMaterials()"}</code> | Puts each renderer's original material back. |
-| <Link id="m-resetallmaterialsinstanced" /><code>{"private void ResetAllMaterialsInstanced()"}</code> | Gives each renderer a fresh copy of its original material, so emission can fade without changing the shared one. |
-| <Link id="m-setmaterialsemission" /><code>{"private void SetMaterialsEmission(float emission)"}</code> | Sets emission colour (and `_Emission` if present) on every renderer's material. |
-| <Link id="m-setmaterialsprogress" /><code>{"private void SetMaterialsProgress(float progress)"}</code> | Sets `_Progress` on every dissolve material. |
+| <Link id="m-changeallmaterialstodissolve" /><code>{"private void ChangeAllMaterialsToDissolve()"}</code> | <span className="api-desc">Gives each renderer a new dissolve material copying its texture or colour, and remembers the original. Multi-material renderers end up with one material.</span> |
+| <Link id="m-dematerializeanimation" /><code>{"private IEnumerator DematerializeAnimation(float duration, Action animationFinishedCallback) (iterator)"}</code> | <span className="api-desc">Coroutine: raises emission, swaps to dissolve materials, then runs progress 0 to 1, then calls the callback.</span> |
+| <Link id="m-instanceallmaterials" /><code>{"private void InstanceAllMaterials()"}</code> | <span className="api-desc">Gives each renderer its own material instance so emission changes don't touch shared materials.</span> |
+| <Link id="m-materializeanimation" /><code>{"private IEnumerator MaterializeAnimation(float duration, Action animationFinishedCallback) (iterator)"}</code> | <span className="api-desc">Coroutine: waits two frames, dissolves in from 1 to 0, fades emission out, restores originals, then calls the callback.</span> |
+| <Link id="m-resetallmaterials" /><code>{"private void ResetAllMaterials()"}</code> | <span className="api-desc">Puts each renderer's original material back.</span> |
+| <Link id="m-resetallmaterialsinstanced" /><code>{"private void ResetAllMaterialsInstanced()"}</code> | <span className="api-desc">Gives each renderer a fresh copy of its original material, so emission can fade without changing the shared one.</span> |
+| <Link id="m-setmaterialsemission" /><code>{"private void SetMaterialsEmission(float emission)"}</code> | <span className="api-desc">Sets emission colour (and `_Emission` if present) on every renderer's material.</span> |
+| <Link id="m-setmaterialsprogress" /><code>{"private void SetMaterialsProgress(float progress)"}</code> | <span className="api-desc">Sets `_Progress` on every dissolve material.</span> |
 
 </details>
 
@@ -80,4 +80,8 @@ Helper that fades a set of renderers in or out with a dissolve shader, then puts
 
 Members of other types that take, return or hold a `RendererMaterializerHandler`:
 
+<div className="api-used-in">
+
 [`RendererMaterializer.Handler`](/mod/game-api/types/global-q-r/renderermaterializer#m-handler).
+
+</div>

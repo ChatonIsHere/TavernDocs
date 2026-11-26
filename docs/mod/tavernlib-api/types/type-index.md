@@ -9,7 +9,7 @@ pagination_next: null
 
 # Type index
 
-Every one of TavernLib's 132 types, A to Z. Each name links to its page in the [type browser](overview.md); the namespace is after it.
+Every one of TavernLib's 134 types, A to Z. Each name links to its page in the [type browser](overview.md); the namespace is after it.
 
 <div className="type-index-letters">
 
@@ -145,6 +145,7 @@ Every one of TavernLib's 132 types, A to Z. Each name links to its page in the [
 - [ModDependencyResolver](/mod/tavernlib-api/types/backend-mods/moddependencyresolver) <span>TavernLib.Backend.Mods</span>
 - [ModHandshake](/mod/tavernlib-api/types/backend-mods/modhandshake) <span>TavernLib.Backend.Mods</span>
 - [ModHandshake.Entry](/mod/tavernlib-api/types/backend-mods/modhandshake-entry) <span>TavernLib.Backend.Mods</span>
+- [ModIncompatibility](/mod/tavernlib-api/types/backend-mods/modincompatibility) <span>TavernLib.Backend.Mods</span>
 - [ModIndex](/mod/tavernlib-api/types/backend-mods/modindex) <span>TavernLib.Backend.Mods</span>
 - [ModInstaller](/mod/tavernlib-api/types/backend-mods/modinstaller) <span>TavernLib.Backend.Mods</span>
 - [ModManagerConstants](/mod/tavernlib-api/types/backend-mods/modmanagerconstants) <span>TavernLib.Backend.Mods</span>
@@ -164,6 +165,7 @@ Every one of TavernLib's 132 types, A to Z. Each name links to its page in the [
 - [ModsListConfig](/mod/tavernlib-api/types/backend-server-configs/modslistconfig) <span>TavernLib.Backend.Server.Configs</span>
 - [ModSummary](/mod/tavernlib-api/types/backend-mods/modsummary) <span>TavernLib.Backend.Mods</span>
 - [ModVersion](/mod/tavernlib-api/types/backend-mods/modversion) <span>TavernLib.Backend.Mods</span>
+- [ModWithdrawal](/mod/tavernlib-api/types/backend-mods/modwithdrawal) <span>TavernLib.Backend.Mods</span>
 
 </div>
 

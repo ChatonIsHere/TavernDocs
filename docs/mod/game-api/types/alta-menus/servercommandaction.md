@@ -21,19 +21,19 @@ Client menu button that runs one server command definition, with a short cooldow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ServerCommandAction()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"ServerCommandAction()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-buttontext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" buttonText"}</code> | Text showing the command's name. |
-| <Link id="m-command" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/servercommanddefinitionbase">{"ServerCommandDefinitionBase"}</Link>{" command"}</code> | The command definition this button runs. |
-| <Link id="m-mindelaybetweencommands" /><code>{"private float minDelayBetweenCommands"}</code> | Cooldown in seconds after a command. Default 0.5. |
-| <Link id="m-nextcommand" /><code>{"private static float nextCommand"}</code> | Static time before which no button of this type can send again. |
+| <Link id="m-buttontext" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" buttonText"}</code> | <span className="api-desc">Text showing the command's name.</span> |
+| <Link id="m-command" /><code>{"private "}<Link to="/mod/game-api/types/alta-menus/servercommanddefinitionbase">{"ServerCommandDefinitionBase"}</Link>{" command"}</code> | <span className="api-desc">The command definition this button runs.</span> |
+| <Link id="m-mindelaybetweencommands" /><code>{"private float minDelayBetweenCommands"}</code> | <span className="api-desc">Cooldown in seconds after a command. Default 0.5.</span> |
+| <Link id="m-nextcommand" /><code>{"private static float nextCommand"}</code> | <span className="api-desc">Static time before which no button of this type can send again.</span> |
 
 </details>
 
@@ -41,5 +41,5 @@ Client menu button that runs one server command definition, with a short cooldow
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sendcommand" /><code>{"void SendCommand()"}</code> | Runs the command unless the shared cooldown is still running, then restarts the cooldown. |
-| <Link id="m-setsettings" /><code>{"override void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | Takes the command definition and shows its display name on the button. |
+| <Link id="m-sendcommand" /><code>{"void SendCommand()"}</code> | <span className="api-desc">Runs the command unless the shared cooldown is still running, then restarts the cooldown.</span> |
+| <Link id="m-setsettings" /><code>{"override void SetSettings("}<Link to="/mod/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | <span className="api-desc">Takes the command definition and shows its display name on the button.</span> |

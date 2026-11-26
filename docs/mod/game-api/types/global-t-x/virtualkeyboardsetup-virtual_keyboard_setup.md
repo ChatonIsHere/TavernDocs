@@ -22,4 +22,4 @@ Editor menu entry that creates a `VirtualKeyboardSetup` asset.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Virtual_Keyboard_Setup()"}</code> | Creates a `VirtualKeyboardSetup.Virtual_Keyboard_Setup` with default values. |
+| <Link id="m-ctor" /><code>{"Virtual_Keyboard_Setup()"}</code> | <span className="api-desc">Creates a `VirtualKeyboardSetup.Virtual_Keyboard_Setup` with default values.</span> |

@@ -23,10 +23,14 @@ A book flair asset for the middle of a book's spine.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SpineMiddle()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SpineMiddle()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `SpineMiddle`:
 
+<div className="api-used-in">
+
 [`SpineFlairs.middle`](/mod/game-api/types/alta-items/spineflairs#m-middle), [`SpineFlairs.Middle`](/mod/game-api/types/alta-items/spineflairs#m-middle-2).
+
+</div>

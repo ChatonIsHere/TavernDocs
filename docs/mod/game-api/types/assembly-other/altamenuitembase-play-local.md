@@ -22,4 +22,4 @@ Editor menu folder `Play/Local`: menu item classes inherit it to appear under th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"protected Local()"}</code> | Creates an `AltaMenuItemBase.Play.Local` with default values. |
+| <Link id="m-ctor" /><code>{"protected Local()"}</code> | <span className="api-desc">Creates an `AltaMenuItemBase.Play.Local` with default values.</span> |

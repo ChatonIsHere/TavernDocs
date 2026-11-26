@@ -23,16 +23,16 @@ Shape impact collector asset for skills that collects every collider within a sp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"SphereImpactCollector()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
+| <Link id="m-ctor" /><code>{"SphereImpactCollector()"}</code> | <span className="api-desc">Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-radius" /><code>{"private float radius"}</code> | Collection radius around the hit point. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | <span className="api-desc">Collection radius around the hit point.</span> |
 
 </details>
 
@@ -40,10 +40,10 @@ Shape impact collector asset for skills that collects every collider within a sp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-sizesquared" /><code>{"override float SizeSquared { get; }"}</code> | The radius squared. |
+| <Link id="m-sizesquared" /><code>{"override float SizeSquared { get; }"}</code> | <span className="api-desc">The radius squared.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-collectcolliders" /><code>{"override IEnumerable<Collider> CollectColliders("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> | Returns the colliders on the given layers within `radius` of the hit point. |
+| <Link id="m-collectcolliders" /><code>{"override IEnumerable<Collider> CollectColliders("}<Link to="/mod/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> | <span className="api-desc">Returns the colliders on the given layers within `radius` of the hit point.</span> |

@@ -21,16 +21,16 @@ A `RaycastCrafter` that copies a fire's state onto what it crafts, so a lit item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FireStatusRaycastCrafter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FireStatusRaycastCrafter()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-basefire" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/fire">{"Fire"}</Link>{" baseFire"}</code> | The fire whose state is copied. |
+| <Link id="m-basefire" /><code>{"private "}<Link to="/mod/game-api/types/alta-stats-effects/fire">{"Fire"}</Link>{" baseFire"}</code> | <span className="api-desc">The fire whose state is copied.</span> |
 
 </details>
 
@@ -38,4 +38,4 @@ A `RaycastCrafter` that copies a fire's state onto what it crafts, so a lit item
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onspawn" /><code>{"protected override void OnSpawn("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> | Copies `baseFire`'s progress and enabled state to the first `Fire` found on the spawned entity. |
+| <Link id="m-onspawn" /><code>{"protected override void OnSpawn("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> | <span className="api-desc">Copies `baseFire`'s progress and enabled state to the first `Fire` found on the spawned entity.</span> |

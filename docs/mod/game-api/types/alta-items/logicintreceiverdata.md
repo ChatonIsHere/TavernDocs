@@ -23,10 +23,10 @@ Save data for `LogicIntReceiver`: which int sender it listens to.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"LogicIntReceiverData()"}</code> | Creates a `LogicIntReceiverData` with default values. |
+| <Link id="m-ctor" /><code>{"LogicIntReceiverData()"}</code> | <span className="api-desc">Creates a `LogicIntReceiverData` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | The linked int sender's logic data. On load the receiver relinks to it through the logic manager. |
+| <Link id="m-data" /><code><Link to="/mod/game-api/types/alta-items/logicintsavedata">{"LogicIntSaveData"}</Link>{" Data { get; set; }"}</code> | <span className="api-desc">The linked int sender's logic data. On load the receiver relinks to it through the logic manager.</span> |

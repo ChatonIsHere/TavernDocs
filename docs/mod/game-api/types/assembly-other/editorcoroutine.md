@@ -21,10 +21,10 @@ A **class** in `Alta.Coroutines`, the global namespace.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> | Creates an `EditorCoroutine` with default values. |
+| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> | <span className="api-desc">Creates an `EditorCoroutine` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> | Steps the enumerator, and any nested enumerators it yields, until finished, all at once. |
+| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> | <span className="api-desc">Steps the enumerator, and any nested enumerators it yields, until finished, all at once.</span> |

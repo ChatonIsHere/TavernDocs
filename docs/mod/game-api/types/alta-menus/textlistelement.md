@@ -22,16 +22,16 @@ A `ListElement` that just holds a text renderer, for plain text rows in a UI lis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"TextListElement()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"TextListElement()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-text" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> | Backing field for `Text`. |
+| <Link id="m-text" /><code>{"private "}<Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> | <span className="api-desc">Backing field for `Text`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ A `ListElement` that just holds a text renderer, for plain text rows in a UI lis
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-text-2" /><code><Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" Text { get; }"}</code> | The row's text renderer. |
+| <Link id="m-text-2" /><code><Link to="/mod/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" Text { get; }"}</code> | <span className="api-desc">The row's text renderer.</span> |

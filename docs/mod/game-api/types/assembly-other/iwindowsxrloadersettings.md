@@ -21,12 +21,16 @@ Client (Windows): settings the XR loader initializer reads to pick between OpenX
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-openxrloader" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> | The OpenXR loader asset added to the XR manager. |
-| <Link id="m-valveopenvrloader" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> | The OpenVR loader asset added for SteamVR mode. |
-| <Link id="m-xrmode" /><code><Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> | XR mode to use in the editor. Builds read the mode from the command line instead. |
+| <Link id="m-openxrloader" /><code>{"OpenXRLoader OpenXrLoader { get; }"}</code> | <span className="api-desc">The OpenXR loader asset added to the XR manager.</span> |
+| <Link id="m-valveopenvrloader" /><code>{"OpenVRLoader ValveOpenVrLoader { get; }"}</code> | <span className="api-desc">The OpenVR loader asset added for SteamVR mode.</span> |
+| <Link id="m-xrmode" /><code><Link to="/mod/game-api/types/assembly-other/townshipxrmode">{"TownshipXRMode"}</Link>{" XrMode { get; }"}</code> | <span className="api-desc">XR mode to use in the editor. Builds read the mode from the command line instead.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `IWindowsXRLoaderSettings`:
 
+<div className="api-used-in">
+
 [`WindowsXRLoaderInitializer.settings`](/mod/game-api/types/assembly-other/windowsxrloaderinitializer#m-settings), [`WindowsXRLoaderInitializer.WindowsXRLoaderInitializer`](/mod/game-api/types/assembly-other/windowsxrloaderinitializer#m-ctor).
+
+</div>

@@ -30,4 +30,8 @@ What the menu does after start-up: nothing, start a local test, start a local se
 
 Members of other types that take, return or hold a `AfterStartActionType`:
 
+<div className="api-used-in">
+
 [`MenuSettings.afterStartAction`](/mod/game-api/types/global-m-o/menusettings#m-afterstartaction), [`MenuSettings.AfterStartAction`](/mod/game-api/types/global-m-o/menusettings#m-afterstartaction-2).
+
+</div>

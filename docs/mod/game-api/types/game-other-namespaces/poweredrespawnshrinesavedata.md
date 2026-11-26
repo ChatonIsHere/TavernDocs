@@ -23,16 +23,20 @@ Save data for a `PoweredRespawnShrine`: which shrine settings it uses.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> | Creates a `PoweredRespawnShrineSaveData` with default values. |
+| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> | <span className="api-desc">Creates a `PoweredRespawnShrineSaveData` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-shrineid" /><code>{"string ShrineId"}</code> | Shrine GUID as a string. On load the shrine looks up its settings by this id. |
+| <Link id="m-shrineid" /><code>{"string ShrineId"}</code> | <span className="api-desc">Shrine GUID as a string. On load the shrine looks up its settings by this id.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PoweredRespawnShrineSaveData`:
 
+<div className="api-used-in">
+
 [`PoweredRespawnShrine.Load`](/mod/game-api/types/game-other-namespaces/poweredrespawnshrine#m-load), [`PoweredRespawnShrine.Save`](/mod/game-api/types/game-other-namespaces/poweredrespawnshrine#m-save).
+
+</div>

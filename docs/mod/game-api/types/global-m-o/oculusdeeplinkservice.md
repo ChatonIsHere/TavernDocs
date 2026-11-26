@@ -18,12 +18,12 @@ Client on Quest: handles Meta deep links that launch the game into a server, at 
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for the deep link flow. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | <span className="api-desc">Logger for the deep link flow.</span> |
 
 </details>
 
@@ -31,20 +31,20 @@ Client on Quest: handles Meta deep links that launch the game into a server, at 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-changesserverviadeeplink" /><code>{"static async void ChangesServerViaDeepLink()"}</code> | Joins the server from the launch details, and goes back to the main menu if that fails. |
-| <Link id="m-simulatedeeplinkintent" /><code>{"static void SimulateDeepLinkIntent()"}</code> | Runs the intent handler as if a deep link arrived. For testing. |
-| <Link id="m-tryconnecttodeeplinkserver" /><code>{"static async Task<bool> TryConnectToDeepLinkServer()"}</code> | If the app was launched by a deep link, joins that server. Returns whether it joined. |
+| <Link id="m-changesserverviadeeplink" /><code>{"static async void ChangesServerViaDeepLink()"}</code> | <span className="api-desc">Joins the server from the launch details, and goes back to the main menu if that fails.</span> |
+| <Link id="m-simulatedeeplinkintent" /><code>{"static void SimulateDeepLinkIntent()"}</code> | <span className="api-desc">Runs the intent handler as if a deep link arrived. For testing.</span> |
+| <Link id="m-tryconnecttodeeplinkserver" /><code>{"static async Task<bool> TryConnectToDeepLinkServer()"}</code> | <span className="api-desc">If the app was launched by a deep link, joins that server. Returns whether it joined.</span> |
 
-<details>
+<details className="api-private">
 <summary>6 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> | Runs on load; on Quest outside the editor, hooks `Startup` to app start. |
-| <Link id="m-isinlocaltestserver" /><code>{"private static bool IsInLocalTestServer()"}</code> | True in local test with a joined server. |
-| <Link id="m-joinserverviadeeplink" /><code>{"private static async Task<bool> JoinServerViaDeepLink("}<Link to="/mod/game-api/types/alta-menus/platformlaunchdetails">{"PlatformLaunchDetails"}</Link>{" launchDetails, int serverID)"}</code> | Looks up the server through the API and joins it, logging the result to Meta and showing an error on failure. |
-| <Link id="m-ondeeplinkintent" /><code>{"private static void OnDeepLinkIntent()"}</code> | Handles a new launch intent; skips if not logged in yet. |
-| <Link id="m-startup" /><code>{"private static void Startup()"}</code> | Registers for Meta's launch intent change notification. |
-| <Link id="m-trygetvalidlaunchdetails" /><code>{"private static bool TryGetValidLaunchDetails(out "}<Link to="/mod/game-api/types/alta-menus/platformlaunchdetails">{"PlatformLaunchDetails"}</Link>{" launchDetails, out int serverID)"}</code> | Reads the launch details and server ID; fails if not a deep link or already on that server. |
+| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> | <span className="api-desc">Runs on load; on Quest outside the editor, hooks `Startup` to app start.</span> |
+| <Link id="m-isinlocaltestserver" /><code>{"private static bool IsInLocalTestServer()"}</code> | <span className="api-desc">True in local test with a joined server.</span> |
+| <Link id="m-joinserverviadeeplink" /><code>{"private static async Task<bool> JoinServerViaDeepLink("}<Link to="/mod/game-api/types/alta-menus/platformlaunchdetails">{"PlatformLaunchDetails"}</Link>{" launchDetails, int serverID)"}</code> | <span className="api-desc">Looks up the server through the API and joins it, logging the result to Meta and showing an error on failure.</span> |
+| <Link id="m-ondeeplinkintent" /><code>{"private static void OnDeepLinkIntent()"}</code> | <span className="api-desc">Handles a new launch intent; skips if not logged in yet.</span> |
+| <Link id="m-startup" /><code>{"private static void Startup()"}</code> | <span className="api-desc">Registers for Meta's launch intent change notification.</span> |
+| <Link id="m-trygetvalidlaunchdetails" /><code>{"private static bool TryGetValidLaunchDetails(out "}<Link to="/mod/game-api/types/alta-menus/platformlaunchdetails">{"PlatformLaunchDetails"}</Link>{" launchDetails, out int serverID)"}</code> | <span className="api-desc">Reads the launch details and server ID; fails if not a deep link or already on that server.</span> |
 
 </details>

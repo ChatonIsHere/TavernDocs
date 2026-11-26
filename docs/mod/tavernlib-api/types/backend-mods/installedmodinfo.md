@@ -21,17 +21,21 @@ A tracked mod from `ModInstaller.ScanMods`: its record and whether it's enabled.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"InstalledModInfo()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"InstalledModInfo()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> | True when the record is `manifest.json`, not `manifest.disabled.json`. |
-| <Link id="m-record" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" Record { get; set; }"}</code> | The mod's parsed record. |
+| <Link id="m-enabled" /><code>{"bool Enabled { get; set; }"}</code> | <span className="api-desc">True when the record is `manifest.json`, not `manifest.disabled.json`.</span> |
+| <Link id="m-record" /><code><Link to="/mod/tavernlib-api/types/backend-mods/modrecord">{"ModRecord"}</Link>{" Record { get; set; }"}</code> | <span className="api-desc">The mod's parsed record.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `InstalledModInfo`:
 
+<div className="api-used-in">
+
 [`ModInstaller.ScanMods`](/mod/tavernlib-api/types/backend-mods/modinstaller#m-scanmods), [`ModReconciler.Pass._installed`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-installed).
+
+</div>

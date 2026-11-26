@@ -28,4 +28,8 @@ Projection used when baking an Amplify impostor: spherical, octahedron or hemi-o
 
 Members of other types that take, return or hold a `ImpostorType`:
 
+<div className="api-used-in">
+
 [`BakeLODGroupGrouper.impostorType`](/mod/game-api/types/alta-utilities/bakelodgroupgrouper#m-impostortype), [`AmplifyImpostorAsset.ImpostorType`](/mod/game-api/types/global-a-b/amplifyimpostorasset#m-impostortype).
+
+</div>

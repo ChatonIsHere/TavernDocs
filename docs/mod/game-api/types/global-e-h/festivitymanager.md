@@ -21,18 +21,18 @@ Network entity that turns festivities on and off by the real date and syncs thei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"FestivityManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"FestivityManager()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>3 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> | Cancels the recheck loop when the manager is destroyed. |
-| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{"> sync"}</code> | Method sync (`SyncA`) used to send festivity state. |
-| <Link id="m-updateintervalseconds" /><code>{"private float updateIntervalSeconds"}</code> | Seconds between date checks. Default 1. |
+| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> | <span className="api-desc">Cancels the recheck loop when the manager is destroyed.</span> |
+| <Link id="m-sync" /><code>{"private "}<Link to="/mod/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{"> sync"}</code> | <span className="api-desc">Method sync (`SyncA`) used to send festivity state.</span> |
+| <Link id="m-updateintervalseconds" /><code>{"private float updateIntervalSeconds"}</code> | <span className="api-desc">Seconds between date checks. Default 1.</span> |
 
 </details>
 
@@ -40,20 +40,20 @@ Network entity that turns festivities on and off by the real date and syncs thei
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Both sides: resets every festivity to inactive and sets up the sync message. |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: starts the `Recheck` loop. |
-| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: sends each active festivity to a joining player. |
-| <Link id="m-setfestivityactive" /><code>{"void SetFestivityActive("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity, bool isActive)"}</code> | Sets a festivity's state and, if it changed, sends it to all chunks. Used by `Check` and the console commands. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | <span className="api-desc">Both sides: resets every festivity to inactive and sets up the sync message.</span> |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | <span className="api-desc">Server: starts the `Recheck` loop.</span> |
+| <Link id="m-onconnected" /><code>{"override void OnConnected("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | <span className="api-desc">Server: sends each active festivity to a joining player.</span> |
+| <Link id="m-setfestivityactive" /><code>{"void SetFestivityActive("}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity, bool isActive)"}</code> | <span className="api-desc">Sets a festivity's state and, if it changed, sends it to all chunks. Used by `Check` and the console commands.</span> |
 
-<details>
+<details className="api-private">
 <summary>5 private and internal methods</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-check" /><code>{"private void Check()"}</code> | Server: sets each festivity active if it is enabled and the current `MonthDayHour` is between its start and end. |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the recheck loop. |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor while playing on a server: restarts the check loop after inspector changes. |
-| <Link id="m-recheck" /><code>{"private async void Recheck(CancellationToken token)"}</code> | Server: async loop that runs `Check` every `updateIntervalSeconds` until cancelled. |
-| <Link id="m-syncfestivity" /><code>{"private void SyncFestivity("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | Sync handler: writes the festivity hash and state; remote clients apply the state on read. |
+| <Link id="m-check" /><code>{"private void Check()"}</code> | <span className="api-desc">Server: sets each festivity active if it is enabled and the current `MonthDayHour` is between its start and end.</span> |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | <span className="api-desc">Cancels the recheck loop.</span> |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | <span className="api-desc">Editor while playing on a server: restarts the check loop after inspector changes.</span> |
+| <Link id="m-recheck" /><code>{"private async void Recheck(CancellationToken token)"}</code> | <span className="api-desc">Server: async loop that runs `Check` every `updateIntervalSeconds` until cancelled.</span> |
+| <Link id="m-syncfestivity" /><code>{"private void SyncFestivity("}<Link to="/mod/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/mod/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/mod/game-api/types/global-e-h/festivity">{"Festivity"}</Link>{" festivity)"}</code> | <span className="api-desc">Sync handler: writes the festivity hash and state; remote clients apply the state on read.</span> |
 
 </details>

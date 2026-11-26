@@ -22,16 +22,16 @@ Patches `GarbageCollectTimer.Start` to set the timer's interval from `garbage_co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> | Created by TavernLib; mods don't make one. |
+| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> | <span className="api-desc">Created by TavernLib; mods don't make one.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> | Reflection handle on the private `interval` field of `GarbageCollectTimer`. |
+| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> | <span className="api-desc">Reflection handle on the private `interval` field of `GarbageCollectTimer`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Patches `GarbageCollectTimer.Start` to set the timer's interval from `garbage_co
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-overrideinterval" /><code>{"static void OverrideInterval("}<Link to="/mod/game-api/types/global-e-h/garbagecollecttimer">{"GarbageCollectTimer"}</Link>{" __instance)"}</code> | Prefix that re-reads the server settings and sets the private `interval`. Keeps the prefab's value with no `TavernManager` or unreadable settings. |
+| <Link id="m-overrideinterval" /><code>{"static void OverrideInterval("}<Link to="/mod/game-api/types/global-e-h/garbagecollecttimer">{"GarbageCollectTimer"}</Link>{" __instance)"}</code> | <span className="api-desc">Prefix that re-reads the server settings and sets the private `interval`. Keeps the prefab's value with no `TavernManager` or unreadable settings.</span> |

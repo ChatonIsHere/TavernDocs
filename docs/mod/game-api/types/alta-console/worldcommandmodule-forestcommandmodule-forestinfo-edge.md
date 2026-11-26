@@ -21,18 +21,22 @@ A path between two forest nodes in a `ForestInfo`.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Edge()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Edge` with default values. |
+| <Link id="m-ctor" /><code>{"Edge()"}</code> | <span className="api-desc">Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Edge` with default values.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-a" /><code>{"int a"}</code> | Index of the first node. |
-| <Link id="m-b" /><code>{"int b"}</code> | Index of the second node. |
-| <Link id="m-id" /><code>{"int id"}</code> | The edge's position in the forest's edge list. |
+| <Link id="m-a" /><code>{"int a"}</code> | <span className="api-desc">Index of the first node.</span> |
+| <Link id="m-b" /><code>{"int b"}</code> | <span className="api-desc">Index of the second node.</span> |
+| <Link id="m-id" /><code>{"int id"}</code> | <span className="api-desc">The edge's position in the forest's edge list.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Edge`:
 
+<div className="api-used-in">
+
 [`WorldCommandModule.ForestCommandModule.ForestInfo.edges`](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo#m-edges).
+
+</div>

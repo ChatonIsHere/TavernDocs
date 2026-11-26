@@ -28,4 +28,8 @@ Flags on an interactable for whether it can be held by both hands of one player 
 
 Members of other types that take, return or hold a `MultipleInteractionAllowance`:
 
+<div className="api-used-in">
+
 [`Interactable.DefaultMultipleInteractionAllowance`](/mod/game-api/types/global-i-l/interactable#m-defaultmultipleinteractionallowance), [`Interactable.multipleAllowance`](/mod/game-api/types/global-i-l/interactable#m-multipleallowance), [`Interactable.MultipleAllowance`](/mod/game-api/types/global-i-l/interactable#m-multipleallowance-2), [`MultipleInteractionAllowanceHelper.ContainsAll`](/mod/game-api/types/global-m-o/multipleinteractionallowancehelper#m-containsall), [`MultipleInteractionAllowanceHelper.ContainsAny`](/mod/game-api/types/global-m-o/multipleinteractionallowancehelper#m-containsany), [`Pickup.DefaultMultipleInteractionAllowance`](/mod/game-api/types/global-p/pickup#m-defaultmultipleinteractionallowance), [`PickupContainer.DefaultMultipleInteractionAllowance`](/mod/game-api/types/global-p/pickupcontainer#m-defaultmultipleinteractionallowance).
+
+</div>

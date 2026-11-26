@@ -22,27 +22,27 @@ A gear or wheel in a simple torque network: connected turnables share torque, al
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Turnable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"Turnable()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connected" /><code>{"protected List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> connected"}</code> | Backing list for `Connected`. |
-| <Link id="m-radius" /><code>{"protected float radius"}</code> | Backing value for `Radius`. |
+| <Link id="m-connected" /><code>{"protected List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> connected"}</code> | <span className="api-desc">Backing list for `Connected`.</span> |
+| <Link id="m-radius" /><code>{"protected float radius"}</code> | <span className="api-desc">Backing value for `Radius`.</span> |
 
-<details>
+<details className="api-private">
 <summary>7 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-friction" /><code>{"private float friction"}</code> | Torque lost per second while turning. |
-| <Link id="m-iscurrentflipped" /><code>{"private bool isCurrentFlipped"}</code> | Whether this gear turns the opposite way in the current cluster update (every other gear in a chain is flipped). |
-| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> | Inspector flag that nothing reads. |
-| <Link id="m-mass" /><code>{"private float mass"}</code> | Mass used for the moment of inertia (minimum 0.001). |
-| <Link id="m-speed" /><code>{"private float speed"}</code> | Starting speed, turned into torque on `Awake`. |
-| <Link id="m-torque" /><code>{"private float torque"}</code> | Current torque; `Speed` is this over the moment of inertia. |
-| <Link id="m-turning" /><code>{"private List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> turning"}</code> | Unused list in this build. |
+| <Link id="m-friction" /><code>{"private float friction"}</code> | <span className="api-desc">Torque lost per second while turning.</span> |
+| <Link id="m-iscurrentflipped" /><code>{"private bool isCurrentFlipped"}</code> | <span className="api-desc">Whether this gear turns the opposite way in the current cluster update (every other gear in a chain is flipped).</span> |
+| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> | <span className="api-desc">Inspector flag that nothing reads.</span> |
+| <Link id="m-mass" /><code>{"private float mass"}</code> | <span className="api-desc">Mass used for the moment of inertia (minimum 0.001).</span> |
+| <Link id="m-speed" /><code>{"private float speed"}</code> | <span className="api-desc">Starting speed, turned into torque on `Awake`.</span> |
+| <Link id="m-torque" /><code>{"private float torque"}</code> | <span className="api-desc">Current torque; `Speed` is this over the moment of inertia.</span> |
+| <Link id="m-turning" /><code>{"private List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> turning"}</code> | <span className="api-desc">Unused list in this build.</span> |
 
 </details>
 
@@ -50,30 +50,34 @@ A gear or wheel in a simple torque network: connected turnables share torque, al
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connected-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> Connected { get; }"}</code> | Turnables meshed with this one. |
-| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> | Local forward direction. |
-| <Link id="m-momentofinertia" /><code>{"float MomentOfInertia { get; }"}</code> | Mass times radius squared over 2. |
-| <Link id="m-motor" /><code><Link to="/mod/game-api/types/global-m-o/motor">{"Motor"}</Link>{" "}<Link to="/mod/game-api/types/global-m-o/motor">{"Motor"}</Link>{" { get; set; }"}</code> | Motor driving this turnable, if any. |
-| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | Local position. |
-| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> | Radius of the turnable. |
-| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> | Torque divided by moment of inertia. |
-| <Link id="m-torque-2" /><code>{"float Torque { get; set; }"}</code> | Current torque. Settable. |
+| <Link id="m-connected-2" /><code>{"List<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> Connected { get; }"}</code> | <span className="api-desc">Turnables meshed with this one.</span> |
+| <Link id="m-face" /><code>{"Vector3 Face { get; }"}</code> | <span className="api-desc">Local forward direction.</span> |
+| <Link id="m-momentofinertia" /><code>{"float MomentOfInertia { get; }"}</code> | <span className="api-desc">Mass times radius squared over 2.</span> |
+| <Link id="m-motor" /><code><Link to="/mod/game-api/types/global-m-o/motor">{"Motor"}</Link>{" "}<Link to="/mod/game-api/types/global-m-o/motor">{"Motor"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Motor driving this turnable, if any.</span> |
+| <Link id="m-position" /><code>{"Vector3 Position { get; }"}</code> | <span className="api-desc">Local position.</span> |
+| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> | <span className="api-desc">Radius of the turnable.</span> |
+| <Link id="m-speed-2" /><code>{"float Speed { get; }"}</code> | <span className="api-desc">Torque divided by moment of inertia.</span> |
+| <Link id="m-torque-2" /><code>{"float Torque { get; set; }"}</code> | <span className="api-desc">Current torque. Settable.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-branchupdate" /><code>{"virtual void BranchUpdate("}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{" from, ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped = false)"}</code> | Adds this turnable's torque and inertia to the cluster totals and walks on; marks the cluster jammed if reached again in the other direction. |
-| <Link id="m-updatewithsystemtorque" /><code>{"virtual void UpdateWithSystemTorque(float torquePerMoi)"}</code> | Sets this turnable's torque from the cluster's shared value and turns it. |
-| <Link id="m-applyfrictionandmotor" /><code>{"protected virtual void ApplyFrictionAndMotor()"}</code> | Reduces torque by friction, then lets the motor change it. With no friction (or no torque) the torque is reset to 0 first. |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Sets the starting torque from the inspector speed. |
-| <Link id="m-branchtoconnected" /><code>{"protected virtual void BranchToConnected(ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped)"}</code> | Passes the update on to every connected turnable with the direction flipped. |
-| <Link id="m-ondrawgizmosselected" /><code>{"protected virtual void OnDrawGizmosSelected()"}</code> | Draws the radius and lines to connected turnables. |
-| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | Keeps mass above 0 and resets torque from speed. |
-| <Link id="m-rotate" /><code>{"protected virtual void Rotate()"}</code> | Turns the transform around local forward by speed times delta time. |
+| <Link id="m-branchupdate" /><code>{"virtual void BranchUpdate("}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{" from, ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped = false)"}</code> | <span className="api-desc">Adds this turnable's torque and inertia to the cluster totals and walks on; marks the cluster jammed if reached again in the other direction.</span> |
+| <Link id="m-updatewithsystemtorque" /><code>{"virtual void UpdateWithSystemTorque(float torquePerMoi)"}</code> | <span className="api-desc">Sets this turnable's torque from the cluster's shared value and turns it.</span> |
+| <Link id="m-applyfrictionandmotor" /><code>{"protected virtual void ApplyFrictionAndMotor()"}</code> | <span className="api-desc">Reduces torque by friction, then lets the motor change it. With no friction (or no torque) the torque is reset to 0 first.</span> |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | <span className="api-desc">Sets the starting torque from the inspector speed.</span> |
+| <Link id="m-branchtoconnected" /><code>{"protected virtual void BranchToConnected(ref float totalTorque, ref float totalMoi, HashSet<"}<Link to="/mod/game-api/types/global-t-x/turnable">{"Turnable"}</Link>{"> cluster, ref bool isJammed, bool isFlipped)"}</code> | <span className="api-desc">Passes the update on to every connected turnable with the direction flipped.</span> |
+| <Link id="m-ondrawgizmosselected" /><code>{"protected virtual void OnDrawGizmosSelected()"}</code> | <span className="api-desc">Draws the radius and lines to connected turnables.</span> |
+| <Link id="m-onvalidate" /><code>{"protected virtual void OnValidate()"}</code> | <span className="api-desc">Keeps mass above 0 and resets torque from speed.</span> |
+| <Link id="m-rotate" /><code>{"protected virtual void Rotate()"}</code> | <span className="api-desc">Turns the transform around local forward by speed times delta time.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `Turnable`:
 
+<div className="api-used-in">
+
 [`Belt.BranchToConnected`](/mod/game-api/types/global-a-b/belt#m-branchtoconnected), [`Belt.BranchUpdate`](/mod/game-api/types/global-a-b/belt#m-branchupdate), [`Belt.exterior`](/mod/game-api/types/global-a-b/belt#m-exterior), [`Motor.calculatingCluster`](/mod/game-api/types/global-m-o/motor#m-calculatingcluster), [`Motor.Turnable`](/mod/game-api/types/global-m-o/motor#m-turnable).
+
+</div>

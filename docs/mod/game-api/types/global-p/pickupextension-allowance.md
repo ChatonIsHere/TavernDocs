@@ -29,4 +29,8 @@ When a `PickupExtension` forwards grabs to its target: always, not to the player
 
 Members of other types that take, return or hold a `Allowance`:
 
+<div className="api-used-in">
+
 [`PickupExtension.allowance`](/mod/game-api/types/global-p/pickupextension#m-allowance).
+
+</div>

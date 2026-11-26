@@ -22,17 +22,17 @@ Per-path multipliers for shared experience, read by `GetExperienceSharedMultipli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> | Creates a `ProgressionSettings.PathExperienceShare` with default values. |
+| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> | <span className="api-desc">Creates a `ProgressionSettings.PathExperienceShare` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>2 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> | Backing field for `ExperienceShareSelfHold`. |
-| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> | Backing field for `ExperienceShareSupportHold`. |
+| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> | <span className="api-desc">Backing field for `ExperienceShareSelfHold`.</span> |
+| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> | <span className="api-desc">Backing field for `ExperienceShareSupportHold`.</span> |
 
 </details>
 
@@ -40,11 +40,15 @@ Per-path multipliers for shared experience, read by `GetExperienceSharedMultipli
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> | Extra fraction of experience the main player gets when they are also the supporting player (default 0.2). |
-| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> | Fraction of experience given to a different supporting player (default 0.6). |
+| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> | <span className="api-desc">Extra fraction of experience the main player gets when they are also the supporting player (default 0.2).</span> |
+| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> | <span className="api-desc">Fraction of experience given to a different supporting player (default 0.6).</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PathExperienceShare`:
 
+<div className="api-used-in">
+
 [`ProgressionSettings.experienceShare`](/mod/game-api/types/global-p/progressionsettings#m-experienceshare), [`ProgressionSettings.experienceShareMap`](/mod/game-api/types/global-p/progressionsettings#m-experiencesharemap).
+
+</div>

@@ -20,11 +20,11 @@ Keeps the main menu's random character look between scene loads.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-currentrandom" /><code>{"static "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" CurrentRandom { get; private set; }"}</code> | The saved look, or null until `Save` runs. |
-| <Link id="m-isinuse" /><code>{"static bool IsInUse { get; set; }"}</code> | Flag for whether the random look is in use; not set in this file. |
+| <Link id="m-currentrandom" /><code>{"static "}<Link to="/mod/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" CurrentRandom { get; private set; }"}</code> | <span className="api-desc">The saved look, or null until `Save` runs.</span> |
+| <Link id="m-isinuse" /><code>{"static bool IsInUse { get; set; }"}</code> | <span className="api-desc">Flag for whether the random look is in use; not set in this file.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-save" /><code>{"static async Task Save("}<Link to="/mod/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" wrapper)"}</code> | Clears the old saved look and stores a new preset made from the wrapper. |
+| <Link id="m-save" /><code>{"static async Task Save("}<Link to="/mod/game-api/types/alta-customization/playercosmeticwrapper">{"PlayerCosmeticWrapper"}</Link>{" wrapper)"}</code> | <span className="api-desc">Clears the old saved look and stores a new preset made from the wrapper.</span> |

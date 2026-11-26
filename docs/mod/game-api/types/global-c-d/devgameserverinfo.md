@@ -22,16 +22,16 @@ A `GameServerInfo` for a local dev server, with the address given directly inste
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> | Creates a `DevGameServerInfo` with default values. |
+| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> | <span className="api-desc">Creates a `DevGameServerInfo` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-connectioninfo" /><code><Link to="/mod/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> | Address and game port to connect to. |
+| <Link id="m-connectioninfo" /><code><Link to="/mod/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" "}<Link to="/mod/game-api/types/assembly-api-models/connectioninfo">{"ConnectionInfo"}</Link>{" { get; set; }"}</code> | <span className="api-desc">Address and game port to connect to.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-getdevserver" /><code>{"static "}<Link to="/mod/game-api/types/global-c-d/devgameserverinfo">{"DevGameServerInfo"}</Link>{" GetDevServer(string ipAddress, int port, int sceneIndex)"}</code> | Makes an online server entry named Dev Server, id -1, for the given IP, port and scene index. |
+| <Link id="m-getdevserver" /><code>{"static "}<Link to="/mod/game-api/types/global-c-d/devgameserverinfo">{"DevGameServerInfo"}</Link>{" GetDevServer(string ipAddress, int port, int sceneIndex)"}</code> | <span className="api-desc">Makes an online server entry named Dev Server, id -1, for the given IP, port and scene index.</span> |

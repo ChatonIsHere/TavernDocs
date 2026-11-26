@@ -21,11 +21,11 @@ Request body holding an email and a username.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> | Creates an `EmailAndUsernameRequest` with default values. |
+| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> | <span className="api-desc">Creates an `EmailAndUsernameRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | Email address. |
-| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | Username. |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | <span className="api-desc">Email address.</span> |
+| <Link id="m-username" /><code>{"string Username { get; set; }"}</code> | <span className="api-desc">Username.</span> |

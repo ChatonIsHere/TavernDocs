@@ -21,16 +21,16 @@ Typed access to the `PlayingBase` action map of `InputMap`, one `InputAction` pe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | Creates an `InputMap.PlayingBaseActions` from `wrapper`. |
+| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | <span className="api-desc">Creates an `InputMap.PlayingBaseActions` from `wrapper`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> | The `InputMap` this action set reads its actions from. |
+| <Link id="m-m-wrapper" /><code>{"private "}<Link to="/mod/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" m_Wrapper"}</code> | <span className="api-desc">The `InputMap` this action set reads its actions from.</span> |
 
 </details>
 
@@ -38,38 +38,42 @@ Typed access to the `PlayingBase` action map of `InputMap`, one `InputAction` pe
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-angularvelocity" /><code>{"InputAction AngularVelocity { get; }"}</code> | The controller's angular velocity. |
-| <Link id="m-directioninput" /><code>{"InputAction DirectionInput { get; }"}</code> | Thumbstick or trackpad direction, depending on the controller. |
-| <Link id="m-enabled" /><code>{"bool enabled { get; }"}</code> | True if this map is enabled. |
-| <Link id="m-grabstrength" /><code>{"InputAction GrabStrength { get; }"}</code> | Valve Index grip force. |
-| <Link id="m-interact" /><code>{"InputAction Interact { get; }"}</code> | Grip button (trigger on Vive wands), the game's grab and interact. |
-| <Link id="m-metamenu" /><code>{"InputAction MetaMenu { get; }"}</code> | Menu button: secondary face button on Oculus, menu on Vive and WMR. |
-| <Link id="m-pose" /><code>{"InputAction Pose { get; }"}</code> | The controller's full tracked pose. |
-| <Link id="m-position" /><code>{"InputAction Position { get; }"}</code> | The controller's tracked position. |
-| <Link id="m-rotation" /><code>{"InputAction Rotation { get; }"}</code> | The controller's tracked rotation. |
-| <Link id="m-secondaryinteract" /><code>{"InputAction SecondaryInteract { get; }"}</code> | Trigger press (grip on Vive). |
-| <Link id="m-squeeze" /><code>{"InputAction Squeeze { get; }"}</code> | Grip axis. |
-| <Link id="m-takescreenshotlong" /><code>{"InputAction TakeScreenShotLong { get; }"}</code> | Trigger press, for the long-press photo. |
-| <Link id="m-teleport" /><code>{"InputAction Teleport { get; }"}</code> | Primary face button on Oculus, trackpad press on Vive and WMR. |
-| <Link id="m-togglerun" /><code>{"InputAction ToggleRun { get; }"}</code> | Thumbstick or trackpad click. |
-| <Link id="m-touchingindexaxis" /><code>{"InputAction TouchingIndexAxis { get; }"}</code> | Whether, or how far, the finger is on the trigger. |
-| <Link id="m-touchingthumb" /><code>{"InputAction TouchingThumb { get; }"}</code> | Thumb touching a face button, thumbstick or trackpad. |
-| <Link id="m-touchingtriggerbutton" /><code>{"InputAction TouchingTriggerButton { get; }"}</code> | Valve Index trigger touch. |
-| <Link id="m-triggeraxis" /><code>{"InputAction TriggerAxis { get; }"}</code> | Trigger axis. |
-| <Link id="m-velocity" /><code>{"InputAction Velocity { get; }"}</code> | The controller's linear velocity. |
+| <Link id="m-angularvelocity" /><code>{"InputAction AngularVelocity { get; }"}</code> | <span className="api-desc">The controller's angular velocity.</span> |
+| <Link id="m-directioninput" /><code>{"InputAction DirectionInput { get; }"}</code> | <span className="api-desc">Thumbstick or trackpad direction, depending on the controller.</span> |
+| <Link id="m-enabled" /><code>{"bool enabled { get; }"}</code> | <span className="api-desc">True if this map is enabled.</span> |
+| <Link id="m-grabstrength" /><code>{"InputAction GrabStrength { get; }"}</code> | <span className="api-desc">Valve Index grip force.</span> |
+| <Link id="m-interact" /><code>{"InputAction Interact { get; }"}</code> | <span className="api-desc">Grip button (trigger on Vive wands), the game's grab and interact.</span> |
+| <Link id="m-metamenu" /><code>{"InputAction MetaMenu { get; }"}</code> | <span className="api-desc">Menu button: secondary face button on Oculus, menu on Vive and WMR.</span> |
+| <Link id="m-pose" /><code>{"InputAction Pose { get; }"}</code> | <span className="api-desc">The controller's full tracked pose.</span> |
+| <Link id="m-position" /><code>{"InputAction Position { get; }"}</code> | <span className="api-desc">The controller's tracked position.</span> |
+| <Link id="m-rotation" /><code>{"InputAction Rotation { get; }"}</code> | <span className="api-desc">The controller's tracked rotation.</span> |
+| <Link id="m-secondaryinteract" /><code>{"InputAction SecondaryInteract { get; }"}</code> | <span className="api-desc">Trigger press (grip on Vive).</span> |
+| <Link id="m-squeeze" /><code>{"InputAction Squeeze { get; }"}</code> | <span className="api-desc">Grip axis.</span> |
+| <Link id="m-takescreenshotlong" /><code>{"InputAction TakeScreenShotLong { get; }"}</code> | <span className="api-desc">Trigger press, for the long-press photo.</span> |
+| <Link id="m-teleport" /><code>{"InputAction Teleport { get; }"}</code> | <span className="api-desc">Primary face button on Oculus, trackpad press on Vive and WMR.</span> |
+| <Link id="m-togglerun" /><code>{"InputAction ToggleRun { get; }"}</code> | <span className="api-desc">Thumbstick or trackpad click.</span> |
+| <Link id="m-touchingindexaxis" /><code>{"InputAction TouchingIndexAxis { get; }"}</code> | <span className="api-desc">Whether, or how far, the finger is on the trigger.</span> |
+| <Link id="m-touchingthumb" /><code>{"InputAction TouchingThumb { get; }"}</code> | <span className="api-desc">Thumb touching a face button, thumbstick or trackpad.</span> |
+| <Link id="m-touchingtriggerbutton" /><code>{"InputAction TouchingTriggerButton { get; }"}</code> | <span className="api-desc">Valve Index trigger touch.</span> |
+| <Link id="m-triggeraxis" /><code>{"InputAction TriggerAxis { get; }"}</code> | <span className="api-desc">Trigger axis.</span> |
+| <Link id="m-velocity" /><code>{"InputAction Velocity { get; }"}</code> | <span className="api-desc">The controller's linear velocity.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-disable" /><code>{"void Disable()"}</code> | Disables this map. |
-| <Link id="m-enable" /><code>{"void Enable()"}</code> | Enables this map. |
-| <Link id="m-get" /><code>{"InputActionMap Get()"}</code> | The underlying `InputActionMap`. |
-| <Link id="m-op-implicit" /><code>{"static InputActionMap op_Implicit("}<Link to="/mod/game-api/types/global-i-l/inputmap-playingbaseactions">{"InputMap.PlayingBaseActions"}</Link>{" set)"}</code> | Converts to the underlying `InputActionMap`. |
-| <Link id="m-setcallbacks" /><code>{"void SetCallbacks("}<Link to="/mod/game-api/types/global-i-l/inputmap-iplayingbaseactions">{"InputMap.IPlayingBaseActions"}</Link>{" instance)"}</code> | Replaces the callback receiver for every action in this map. Pass null to remove it. |
+| <Link id="m-disable" /><code>{"void Disable()"}</code> | <span className="api-desc">Disables this map.</span> |
+| <Link id="m-enable" /><code>{"void Enable()"}</code> | <span className="api-desc">Enables this map.</span> |
+| <Link id="m-get" /><code>{"InputActionMap Get()"}</code> | <span className="api-desc">The underlying `InputActionMap`.</span> |
+| <Link id="m-op-implicit" /><code>{"static InputActionMap op_Implicit("}<Link to="/mod/game-api/types/global-i-l/inputmap-playingbaseactions">{"InputMap.PlayingBaseActions"}</Link>{" set)"}</code> | <span className="api-desc">Converts to the underlying `InputActionMap`.</span> |
+| <Link id="m-setcallbacks" /><code>{"void SetCallbacks("}<Link to="/mod/game-api/types/global-i-l/inputmap-iplayingbaseactions">{"InputMap.IPlayingBaseActions"}</Link>{" instance)"}</code> | <span className="api-desc">Replaces the callback receiver for every action in this map. Pass null to remove it.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PlayingBaseActions`:
 
+<div className="api-used-in">
+
 [`InputMap.PlayingBase`](/mod/game-api/types/global-i-l/inputmap#m-playingbase).
+
+</div>

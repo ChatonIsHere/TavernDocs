@@ -21,10 +21,14 @@ Serializable `AltaEvent` with a position and a rotation argument. Runs inspector
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"PositionRotationEvent()"}</code> | Creates a `PositionRotationEvent` with default values. |
+| <Link id="m-ctor" /><code>{"PositionRotationEvent()"}</code> | <span className="api-desc">Creates a `PositionRotationEvent` with default values.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `PositionRotationEvent`:
 
+<div className="api-used-in">
+
 [`EnchantmentEffect.onAlignedHitEffect`](/mod/game-api/types/alta-crafting/enchantmenteffect#m-onalignedhiteffect), [`ForgedHitEffectOverride.coldHit`](/mod/game-api/types/global-e-h/forgedhiteffectoverride#m-coldhit), [`ForgedHitEffectOverride.hotHit`](/mod/game-api/types/global-e-h/forgedhiteffectoverride#m-hothit), [`PickupBasedSkill.hitPositionAndBladeAlignedEffect`](/mod/game-api/types/global-p/pickupbasedskill#m-hitpositionandbladealignedeffect), [`PickupBasedSkill.localPlayerHitPositionAndBladeAlignedEffect`](/mod/game-api/types/global-p/pickupbasedskill#m-localplayerhitpositionandbladealignedeffect), [`PowerStinger.executeEffect`](/mod/game-api/types/global-p/powerstinger#m-executeeffect), [`SteelSong.badHitEffect`](/mod/game-api/types/global-s/steelsong#m-badhiteffect), [`SteelSong.goodHitEffect`](/mod/game-api/types/global-s/steelsong#m-goodhiteffect).
+
+</div>

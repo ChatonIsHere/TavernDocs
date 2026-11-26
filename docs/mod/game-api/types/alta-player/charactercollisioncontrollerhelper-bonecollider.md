@@ -22,16 +22,16 @@ Base settings for a collider built on one character bone. Subclasses add capsule
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneCollider` with default values. |
+| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> | <span className="api-desc">Creates a `CharacterCollisionControllerHelper.BoneCollider` with default values.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>1 private and internal field</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bone" /><code>{"private Transform bone"}</code> | Backing field for `Bone`. |
+| <Link id="m-bone" /><code>{"private Transform bone"}</code> | <span className="api-desc">Backing field for `Bone`.</span> |
 
 </details>
 
@@ -39,4 +39,4 @@ Base settings for a collider built on one character bone. Subclasses add capsule
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> | The bone transform the collider is created on. |
+| <Link id="m-bone-2" /><code>{"Transform Bone { get; set; }"}</code> | <span className="api-desc">The bone transform the collider is created on.</span> |

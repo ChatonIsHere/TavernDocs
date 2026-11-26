@@ -22,4 +22,4 @@ Editor menu entry for creating a `SetPrefabModifier` asset under the Township ge
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SetPrefabModifier.Create` with default values. |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | <span className="api-desc">Creates a `SetPrefabModifier.Create` with default values.</span> |

@@ -20,10 +20,10 @@ Request body for changing a balance by an amount, probably a user's virtual curr
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ChangeBalanceRequest()"}</code> | Creates a `ChangeBalanceRequest` with default values. |
+| <Link id="m-ctor" /><code>{"ChangeBalanceRequest()"}</code> | <span className="api-desc">Creates a `ChangeBalanceRequest` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-change" /><code>{"int Change { get; set; }"}</code> | Amount to add; probably negative to take away. |
+| <Link id="m-change" /><code>{"int Change { get; set; }"}</code> | <span className="api-desc">Amount to add; probably negative to take away.</span> |

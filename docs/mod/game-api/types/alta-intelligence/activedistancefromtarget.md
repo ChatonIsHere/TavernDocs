@@ -22,10 +22,10 @@ Navigation action that makes the agent wander relative to its target's ground po
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"ActiveDistanceFromTarget()"}</code> | Creates an `ActiveDistanceFromTarget` with default values. |
+| <Link id="m-ctor" /><code>{"ActiveDistanceFromTarget()"}</code> | <span className="api-desc">Creates an `ActiveDistanceFromTarget` with default values.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Starts a wander around the target's ground position, biased away from the target when `BestDotOf` is over 1. |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | <span className="api-desc">Starts a wander around the target's ground position, biased away from the target when `BestDotOf` is over 1.</span> |

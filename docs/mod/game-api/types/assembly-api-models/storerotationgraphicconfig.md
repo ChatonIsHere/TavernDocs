@@ -20,18 +20,22 @@ One graphic in the shop page's rotation (`ShopPageConfiguration.Graphics`).
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> | Creates a `StoreRotationGraphicConfig` with default values. |
+| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> | <span className="api-desc">Creates a `StoreRotationGraphicConfig` with default values.</span> |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-brightness" /><code>{"double Brightness { get; set; }"}</code> | Brightness to show the graphic at. |
-| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> | The graphic's ID. |
-| <Link id="m-src" /><code>{"string Src { get; set; }"}</code> | Source address of the image. |
+| <Link id="m-brightness" /><code>{"double Brightness { get; set; }"}</code> | <span className="api-desc">Brightness to show the graphic at.</span> |
+| <Link id="m-id" /><code>{"string Id { get; set; }"}</code> | <span className="api-desc">The graphic's ID.</span> |
+| <Link id="m-src" /><code>{"string Src { get; set; }"}</code> | <span className="api-desc">Source address of the image.</span> |
 
 ## Used in
 
 Members of other types that take, return or hold a `StoreRotationGraphicConfig`:
 
+<div className="api-used-in">
+
 [`ShopPageConfiguration.Graphics`](/mod/game-api/types/assembly-api-models/shoppageconfiguration#m-graphics).
+
+</div>

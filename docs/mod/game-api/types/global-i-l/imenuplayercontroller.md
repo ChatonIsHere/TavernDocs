@@ -21,4 +21,4 @@ A player controller used in the main menu.
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-setcontrols" /><code>{"void SetControls()"}</code> | Sets up the menu controls; called by `MainMenuControllerSpawner`. |
+| <Link id="m-setcontrols" /><code>{"void SetControls()"}</code> | <span className="api-desc">Sets up the menu controls; called by `MainMenuControllerSpawner`.</span> |

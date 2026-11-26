@@ -21,19 +21,19 @@ One entry in the customization category scroller. Shows a cosmetic category's ic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ctor" /><code>{"CategoryScrollElement()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+| <Link id="m-ctor" /><code>{"CategoryScrollElement()"}</code> | <span className="api-desc">Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`.</span> |
 
 ## Fields
 
-<details>
+<details className="api-private">
 <summary>4 private and internal fields</summary>
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> | Animator with the `Visible` flag. |
-| <Link id="m-cosmeticmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" cosmeticManager"}</code> | Cosmetic scroll manager switched when pressed. |
-| <Link id="m-icon" /><code>{"private SpriteRenderer icon"}</code> | Sprite renderer for the category icon. |
-| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" manager"}</code> | Category scroll manager that lists the available categories. |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | <span className="api-desc">Animator with the `Visible` flag.</span> |
+| <Link id="m-cosmeticmanager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/cosmeticscrollmanager">{"CosmeticScrollManager"}</Link>{" cosmeticManager"}</code> | <span className="api-desc">Cosmetic scroll manager switched when pressed.</span> |
+| <Link id="m-icon" /><code>{"private SpriteRenderer icon"}</code> | <span className="api-desc">Sprite renderer for the category icon.</span> |
+| <Link id="m-manager" /><code>{"private "}<Link to="/mod/game-api/types/alta-customization/categoryscrollmanager">{"CategoryScrollManager"}</Link>{" manager"}</code> | <span className="api-desc">Category scroll manager that lists the available categories.</span> |
 
 </details>
 
@@ -41,12 +41,12 @@ One entry in the customization category scroller. Shows a cosmetic category's ic
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-category" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" Category { get; private set; }"}</code> | The cosmetic category this element shows. |
+| <Link id="m-category" /><code><Link to="/mod/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" Category { get; private set; }"}</code> | <span className="api-desc">The cosmetic category this element shows.</span> |
 
 ## Methods
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-hide" /><code>{"override void Hide()"}</code> | Hides the element through its animator. |
-| <Link id="m-pressed" /><code>{"void Pressed()"}</code> | If shown, tells the cosmetic scroll manager to show this category. |
-| <Link id="m-show" /><code>{"override void Show(int index)"}</code> | Picks the available category for the index (wrapping), sets the icon and shows it. |
+| <Link id="m-hide" /><code>{"override void Hide()"}</code> | <span className="api-desc">Hides the element through its animator.</span> |
+| <Link id="m-pressed" /><code>{"void Pressed()"}</code> | <span className="api-desc">If shown, tells the cosmetic scroll manager to show this category.</span> |
+| <Link id="m-show" /><code>{"override void Show(int index)"}</code> | <span className="api-desc">Picks the available category for the index (wrapping), sets the icon and shows it.</span> |
