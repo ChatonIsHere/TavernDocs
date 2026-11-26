@@ -2,6 +2,7 @@ import { Injectable, UseInterceptors } from '@nestjs/common';
 import { InteractionContextType } from 'discord.js';
 import { Context, MessageCommand, type MessageCommandContext, Options, SlashCommand, type SlashCommandContext, StringOption, TargetMessage } from 'necord';
 import type { Message } from 'discord.js';
+import { EVERYWHERE } from '../discord/contexts';
 import { DocsAutocomplete, registerAutocomplete } from '../discord/autocomplete';
 import { choiceName, plain, truncate } from '../discord/limits';
 import { ReplyService } from '../discord/reply.service';
@@ -48,7 +49,7 @@ export class SearchCommands {
     ) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'search', description: 'Search all of TavernDocs', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'search', description: 'Search all of TavernDocs', ...EVERYWHERE })
     async onSearch(@Context() [interaction]: SlashCommandContext, @Options() { query }: SearchOptions) {
         if (!this.sources.ready) return this.replies.fail(interaction, 'NOT_READY');
         // A picked suggestion: show that one thing.
@@ -65,20 +66,11 @@ export class SearchCommands {
         return this.replies.send(interaction, resultsReply(truncate(`Results for "${query}"`, 200), hits));
     }
 
-    @MessageCommand({ name: 'Find in TavernDocs', contexts: [InteractionContextType.Guild] })
+    @MessageCommand({ name: 'Find in TavernDocs', contexts: [InteractionContextType.Guild, InteractionContextType.PrivateChannel], integrationTypes: EVERYWHERE.integrationTypes })
     async onFind(@Context() [interaction]: MessageCommandContext, @TargetMessage() message: Message) {
         if (!this.sources.ready) return this.replies.fail(interaction, 'NOT_READY');
         const text = searchableText(message.content ?? '');
-        // Whole message first; if that's too specific, its longest words one at a time.
-        let hits = text ? this.sources.searchAll(text, 5) : [];
-        if (!hits.length && text) {
-            const words = [...new Set(text.split(' ').filter((w) => w.length >= 4))].sort((a, b) => b.length - a.length).slice(0, 6);
-            const seen = new Set<string>();
-            hits = words.flatMap((w) => this.sources.searchAll(w, 3)).filter((h) => {
-                const k = h.source.id + h.source.keyOf(h.hit.entry as never);
-                return !seen.has(k) && !!seen.add(k);
-            }).sort((a, b) => a.hit.score - b.hit.score).slice(0, 5);
-        }
+        const hits = text ? this.sources.findForText(text, 5) : [];
         if (!hits.length) {
             this.gaps.record('find', text || '(empty)');
             return this.replies.fail(interaction, 'NOT_FOUND');

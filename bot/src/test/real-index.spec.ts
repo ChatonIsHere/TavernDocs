@@ -37,6 +37,21 @@ describe('real index', { skip: !index && 'no local build at ../build/bot' }, () 
         assert.ok(table('troubleshoot').search('greyed out')[0].entry.key.includes('greyed out'));
     });
 
+    it('answers plain questions and words only found in page text', () => {
+        const { SourcesService } = require('../sources/sources.service');
+        const { SnippetsSource } = require('../sources/snippets/snippets.source');
+        const snippets = new SnippetsSource();
+        snippets.load(index!);
+        const svc = Object.create(SourcesService.prototype);
+        svc.fixed = [guides, types, snippets];
+        svc.reference = new Map(index!.reference.tables.map((t) => [t.id, new ReferenceSource(index!, t)]));
+        const titles = (hits: any[]) => hits.map((h) => h.source.title(h.hit.entry));
+        assert.ok(svc.searchAll('melonloader', 5).length > 0);
+        assert.match(titles(svc.findForText('how do i install the game', 5))[0], /Set up the game|Install the launcher/);
+        assert.match(titles(svc.findForText('PlayerChunkManager keeps loading chunks', 5))[0], /^PlayerChunkManager/);
+        assert.ok(titles(svc.findForText('where do I find my logs', 5)).includes('Where are my logs?'));
+    });
+
     it('renders every guide, step and type page within limits', () => {
         for (const g of index!.guides.guides) {
             for (const e of guides.render({ guide: g }, { userId: '1', summary: true }).embeds) assert.deepEqual(embedProblems(e), [], g.id);

@@ -2,8 +2,9 @@ import type { ReferenceRow, ReferenceTable } from '../../index/schema';
 import { siteUrl, type LoadedIndex } from '../../index/loaded-index';
 import { SearchIndex } from '../../search/rank';
 import { shortKey } from '../../search/key';
+import { TextIndex, terms, textScore } from '../../search/text';
 import { addFields, embed } from '../../discord/style';
-import type { Hit, RenderOptions, Reply, SearchOptions, Source } from '../source';
+import { withText, type Hit, type RenderOptions, type Reply, type SearchOptions, type Source } from '../source';
 
 /**
  * One table from bot/content/sources.yml (config keys, console commands, log lines, FAQ, ...). The registry makes one
@@ -14,6 +15,7 @@ export class ReferenceSource implements Source<ReferenceRow> {
     readonly label: string;
     readonly description: string;
     private search_: SearchIndex<ReferenceRow>;
+    private text_: TextIndex<ReferenceRow>;
     private byKey = new Map<string, ReferenceRow>();
 
     constructor(
@@ -26,6 +28,7 @@ export class ReferenceSource implements Source<ReferenceRow> {
         for (const row of table.rows) this.byKey.set(this.keyOf(row), row);
         // The key is what people search; its heading ("server_settings.json") helps tell rows apart.
         this.search_ = new SearchIndex(table.rows.map((row) => ({ value: row, name: row.key, also: [`${row.context} ${row.key}`] })));
+        this.text_ = new TextIndex(table.rows.map((row) => ({ value: row, fields: [{ text: row.key, weight: 3 }, { text: row.text, weight: 1 }, { text: row.context, weight: 1 }] })));
     }
 
     load(_index: LoadedIndex): void {
@@ -33,7 +36,14 @@ export class ReferenceSource implements Source<ReferenceRow> {
     }
 
     search(query: string, opts: SearchOptions = {}): Hit<ReferenceRow>[] {
-        return this.search_.search(query, opts.limit ?? 25, this.index.aliases.aliases).map((h) => ({ entry: h.value, score: h.score }));
+        const limit = opts.limit ?? 25;
+        const names = this.search_.search(query, limit, this.index.aliases.aliases).map((h) => ({ entry: h.value, score: h.score }));
+        return withText(this, names, names.length < limit ? this.searchText(query, opts) : [], limit);
+    }
+
+    searchText(query: string, opts: SearchOptions = {}): Hit<ReferenceRow>[] {
+        const n = terms(query).length;
+        return this.text_.search(query, opts.limit ?? 25).map((h) => ({ entry: h.value, score: textScore(h, n) }));
     }
 
     keyOf(row: ReferenceRow): string {

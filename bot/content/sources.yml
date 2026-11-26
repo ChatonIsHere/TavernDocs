@@ -19,12 +19,13 @@
 # For kind: headings
 #   levels: which heading levels count, e.g. [2, 3]. A heading with no text under it (only subheadings) is skipped.
 #
-# Headings named in skip_headings are never used, in any entry.
+# Headings named in skip_headings are never used, in any entry, and aren't offered as parts of guides either.
 
 skip_headings:
     - Something went wrong?
     - See also
     - Still stuck?
+    - Next
 
 sources:
     - id: config

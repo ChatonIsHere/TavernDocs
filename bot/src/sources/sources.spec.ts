@@ -137,6 +137,12 @@ describe('every render fits Discord', () => {
         for (const r of renders) for (const e of r.embeds) assert.deepEqual(embedProblems(e), [], e.data.title);
     });
 
+    it('private replies have no Delete button', () => {
+        const replies = new ReplyService(new CooldownService({ get: () => 5 } as never));
+        const buttons = (replies.payload(renders[0], '42', false).components!.at(-1) as any).components.map((c: any) => c.data);
+        assert.deepEqual(buttons.map((b: any) => b.style), [ButtonStyle.Link]);
+    });
+
     it('with Open and Delete buttons, and no pings', () => {
         const replies = new ReplyService(new CooldownService({ get: () => 5 } as never));
         const payload = replies.payload(renders[0], '42');
@@ -154,6 +160,13 @@ describe('cooldown', () => {
         assert.equal(c.take('a', 1000), 4);
         assert.equal(c.take('b', 1000), 0);
         assert.equal(c.take('a', 5000), 0);
+    });
+});
+
+describe('text fallback', () => {
+    it('finds a guide by words in its body when no name matches', () => {
+        const hits = guides.search('Browse');
+        assert.equal(hits[0].entry.guide.id, 'play/getting-started/set-up-the-game');
     });
 });
 

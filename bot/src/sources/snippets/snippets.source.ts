@@ -7,8 +7,9 @@ import { Injectable } from '@nestjs/common';
 import type { Snippet } from '../../index/schema';
 import { siteUrl, type LoadedIndex } from '../../index/loaded-index';
 import { SearchIndex } from '../../search/rank';
+import { TextIndex, terms, textScore } from '../../search/text';
 import { addFields, embed } from '../../discord/style';
-import type { Hit, RenderOptions, Reply, SearchOptions, Source } from '../source';
+import { withText, type Hit, type RenderOptions, type Reply, type SearchOptions, type Source } from '../source';
 
 @Injectable()
 export class SnippetsSource implements Source<Snippet> {
@@ -16,14 +17,23 @@ export class SnippetsSource implements Source<Snippet> {
     readonly label = 'Snippet';
     private index: LoadedIndex;
     private search_: SearchIndex<Snippet> = new SearchIndex([]);
+    private text_: TextIndex<Snippet> = new TextIndex([]);
 
     load(index: LoadedIndex): void {
         this.index = index;
         this.search_ = new SearchIndex(index.snippets.snippets.map((s) => ({ value: s, name: s.title, also: [s.id, ...s.aliases] })));
+        this.text_ = new TextIndex(index.snippets.snippets.map((s) => ({ value: s, fields: [{ text: s.title, weight: 3 }, { text: s.aliases.join(' '), weight: 3 }, { text: s.body, weight: 1 }] })));
     }
 
     search(query: string, opts: SearchOptions = {}): Hit<Snippet>[] {
-        return this.search_.search(query, opts.limit ?? 25, this.index.aliases.aliases).map((h) => ({ entry: h.value, score: h.score }));
+        const limit = opts.limit ?? 25;
+        const names = this.search_.search(query, limit, this.index.aliases.aliases).map((h) => ({ entry: h.value, score: h.score }));
+        return withText(this, names, names.length < limit ? this.searchText(query, opts) : [], limit);
+    }
+
+    searchText(query: string, opts: SearchOptions = {}): Hit<Snippet>[] {
+        const n = terms(query).length;
+        return this.text_.search(query, opts.limit ?? 25).map((h) => ({ entry: h.value, score: textScore(h, n) }));
     }
 
     /** Every snippet, for autocomplete before anything is typed. */

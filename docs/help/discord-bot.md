@@ -1,17 +1,26 @@
 ---
 title: Discord bot
 description: The TavernDocs bot links guides, game types and answers in Discord. What it does, what it keeps, and the rules for using it.
+# It names every command and what the bot keeps, so it would match almost any question. Found by name only.
+bot_text: false
 ---
 
 # The TavernDocs Discord bot
 
 The TavernDocs bot answers questions in Discord with links to these docs. Start typing a command and it suggests matches as you type.
 
+<div className="bot-install">
+  <a className="button button--primary button--lg" href="https://discord.com/oauth2/authorize?client_id=1575473485227098202&permissions=0&integration_type=0&scope=bot+applications.commands">Add to a server</a>
+  <a className="button button--secondary button--lg" href="https://discord.com/oauth2/authorize?client_id=1575473485227098202&integration_type=1&scope=applications.commands">Add to your account</a>
+</div>
+
+**Add to a server** puts it in a server you manage, for everyone there. It asks for no permissions: it only answers commands. **Add to your account** lets you use it yourself in any server, DM or group chat, even where it isn't added. A server can still turn off apps added this way in its settings.
+
 ## Commands
 
 | Command | What it does |
 | --- | --- |
-| `/guide` | Links a guide. Add `summary` for the short version, or `steps` to go through it one step at a time. |
+| `/guide` | Links a guide. Add `summary` for the short version, or `steps` to go through it one step at a time (only you see the steps in a server). |
 | `/type` | Looks up a game or TavernLib type, or one of its members, like `PlayerChunkManager.WipeChunk`. |
 | `/search` | Searches everything below at once. |
 | `/config` | A setting from the [config reference](../host/config-reference.md). |
@@ -25,7 +34,7 @@ The TavernDocs bot answers questions in Discord with links to these docs. Start 
 | **Find in TavernDocs** | Right-click a message, then **Apps**: suggests pages that match it. |
 | `/admin refresh` and `/admin stats` | For server managers: load the newest docs now, and see searches that found nothing. |
 
-Replies are posted in the channel. The person who asked, or anyone who can manage messages, can remove one with its **Delete** button.
+Replies are posted in the channel. The person who asked, or anyone with **Manage Server**, can remove one with its **Delete** button.
 
 ## For server admins
 

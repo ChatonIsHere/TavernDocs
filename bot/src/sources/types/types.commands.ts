@@ -1,6 +1,7 @@
 import { Injectable, UseInterceptors } from '@nestjs/common';
 import { InteractionContextType } from 'discord.js';
 import { Context, Options, SlashCommand, type SlashCommandContext, StringOption } from 'necord';
+import { EVERYWHERE } from '../../discord/contexts';
 import { DocsAutocomplete, choicesFrom, registerAutocomplete } from '../../discord/autocomplete';
 import { choiceName } from '../../discord/limits';
 import { ReplyService } from '../../discord/reply.service';
@@ -53,7 +54,7 @@ export class TypeCommands {
     ) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'type', description: 'Look up a game or TavernLib type, or one of its members', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'type', description: 'Look up a game or TavernLib type, or one of its members', ...EVERYWHERE })
     async onType(@Context() [interaction]: SlashCommandContext, @Options() { name, member, from }: TypeOptions) {
         if (!this.types.ready) return this.replies.fail(interaction, 'NOT_READY');
         const scope = from as TypeScope | undefined;

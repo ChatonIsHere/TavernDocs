@@ -25,11 +25,13 @@ export class ReplyService {
 
     constructor(private readonly cooldown: CooldownService) {}
 
-    payload(reply: Reply, userId: string): InteractionReplyOptions {
+    /** deletable: false for private replies, which only the user sees and can dismiss anyway. */
+    payload(reply: Reply, userId: string, deletable = true): InteractionReplyOptions {
         const actions = new ActionRowBuilder<ButtonBuilder>();
         if (reply.url) actions.addComponents(new ButtonBuilder().setStyle(ButtonStyle.Link).setURL(reply.url).setLabel(truncate(reply.urlLabel ?? 'Open', LIMITS.buttonLabel)));
-        actions.addComponents(new ButtonBuilder().setCustomId(`td-del/${userId}`).setStyle(ButtonStyle.Secondary).setLabel('Delete'));
-        return { embeds: reply.embeds, components: [...(reply.rows ?? []).slice(0, 4), actions], allowedMentions: { parse: [] } };
+        if (deletable) actions.addComponents(new ButtonBuilder().setCustomId(`td-del/${userId}`).setStyle(ButtonStyle.Secondary).setLabel('Delete'));
+        const rows = [...(reply.rows ?? []).slice(0, 4), ...(actions.components.length ? [actions] : [])];
+        return { embeds: reply.embeds, components: rows, allowedMentions: { parse: [] } };
     }
 
     /** Post a reply publicly, unless the user is on cooldown. */
@@ -39,9 +41,15 @@ export class ReplyService {
         await interaction.reply(this.payload(reply, interaction.user.id));
     }
 
-    /** Replace the message a button is on (step-through). */
+    /** A reply only the user sees. No cooldown: it can't crowd a channel. */
+    async sendPrivate(interaction: ChatInputCommandInteraction | MessageContextMenuCommandInteraction, reply: Reply): Promise<void> {
+        await interaction.reply({ ...this.payload(reply, interaction.user.id, false), flags: MessageFlags.Ephemeral });
+    }
+
+    /** Replace the message a button is on (step-through), keeping it private if it was. */
     async update(interaction: ButtonInteraction, reply: Reply, ownerId: string): Promise<void> {
-        await interaction.update({ ...this.payload(reply, ownerId), allowedMentions: { parse: [] } } as never);
+        const isPrivate = interaction.message.flags.has(MessageFlags.Ephemeral);
+        await interaction.update(this.payload(reply, ownerId, !isPrivate) as never);
     }
 
     /** A private error with its code. */

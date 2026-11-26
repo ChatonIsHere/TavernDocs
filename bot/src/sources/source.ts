@@ -43,6 +43,8 @@ export interface Source<E = unknown> {
     /** Rebuild the in-memory tables from a freshly loaded index. Called on every refresh. */
     load(index: LoadedIndex): void;
     search(query: string, opts?: SearchOptions): Hit<E>[];
+    /** Optional: matches on the entries' text rather than their names, for plain questions ("Find in TavernDocs"). */
+    searchText?(query: string, opts?: SearchOptions): Hit<E>[];
 
     /** A stable key for an entry, at most 60 characters, used in autocomplete values and button ids. */
     keyOf(entry: E): string;
@@ -73,4 +75,11 @@ export function resolve<E>(source: Source<E>, value: string, opts?: SearchOption
         if (hit) return hit;
     }
     return source.search(value, { ...opts, limit: 1 })[0]?.entry;
+}
+
+/** Name hits first, then text hits that aren't already there, up to the limit. */
+export function withText<E>(source: Pick<Source<E>, 'keyOf'>, names: Hit<E>[], text: Hit<E>[], limit: number): Hit<E>[] {
+    if (names.length >= limit) return names.slice(0, limit);
+    const seen = new Set(names.map((h) => source.keyOf(h.entry)));
+    return [...names, ...text.filter((h) => !seen.has(source.keyOf(h.entry)))].slice(0, limit);
 }

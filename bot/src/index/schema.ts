@@ -46,6 +46,8 @@ export interface Guide {
     headings: Heading[];
     /** The page split at its h2 headings, for step-through mode and the outline when there's no summary. */
     sections: GuideSection[];
+    /** False when the page's bot_text frontmatter keeps it out of text search (it's still found by name). */
+    searchText?: boolean;
 }
 
 export interface Heading {
@@ -171,6 +173,7 @@ const section = obj({ id: str, title: str, text: str, image: strOrNull });
 const guide = obj({
     id: str, title: str, area: str, section: str, path: strList, description: str, url: str,
     aliases: strList, summary: strList, headings: listOf(heading), sections: listOf(section),
+    searchText: (v, w, p) => void (v !== undefined && typeof v !== 'boolean' && p.push(`${w}: expected true or false`)),
 });
 const member = obj({ name: str, kind: str, vis: str, sig: str, desc: str, anchor: str });
 const type = obj({ full: str, name: str, kind: str, ns: str, asm: str, vis: str, bases: strList, summary: str, url: str, members: listOf(member) });

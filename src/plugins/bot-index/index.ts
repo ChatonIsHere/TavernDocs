@@ -55,7 +55,7 @@ export default function botIndex(context: LoadContext): Plugin {
 
             const files: Record<IndexFileName, unknown> = {
                 guides: {guides: [...pages.values()].filter(({doc}) => !NOT_GUIDES.test(doc.id) && !doc.frontMatter?.bot_hidden)
-                    .map(({doc, blocks}) => toGuide(doc, blocks, base, sidebars))},
+                    .map(({doc, blocks}) => toGuide(doc, blocks, base, sidebars, skip))},
                 'types-game': readJson(path.join(context.siteDir, 'src', 'bot-index', 'types-game.json')),
                 'types-tavernlib': readJson(path.join(context.siteDir, 'src', 'bot-index', 'types-tavernlib.json')),
                 reference: {tables: sourcesYml.sources.map((s) => toTable(s, pages, base, skip))},
@@ -159,8 +159,9 @@ function sidebarPath(sidebar: any[] | undefined, id: string): string[] {
     return find(sidebar ?? [], []) ?? [];
 }
 
-function toGuide(doc: any, blocks: Block[], base: string, sidebars: Record<string, any[]>): Guide {
-    const headings: Heading[] = blocks.filter((b): b is Extract<Block, {type: 'heading'}> => b.type === 'heading' && (b.level === 2 || b.level === 3) && !!b.id)
+function toGuide(doc: any, blocks: Block[], base: string, sidebars: Record<string, any[]>, skip: Set<string>): Guide {
+    // Headings like "Something went wrong?" or "Next" (skip_headings in sources.yml) aren't worth finding.
+    const headings: Heading[] = blocks.filter((b): b is Extract<Block, {type: 'heading'}> => b.type === 'heading' && (b.level === 2 || b.level === 3) && !!b.id && !skip.has(b.text.toLowerCase()))
         .map((b) => ({id: b.id, text: b.text, level: b.level as 2 | 3}));
     const sections: GuideSection[] = [];
     let current: GuideSection = {id: '', title: doc.title, text: '', image: null};
@@ -187,6 +188,7 @@ function toGuide(doc: any, blocks: Block[], base: string, sidebars: Record<strin
         id: doc.id, title: doc.title, area: doc.id.split('/')[0], section: SECTION_LABELS[doc.sidebar] ?? SECTION_LABELS[doc.id.split('/')[0]] ?? '',
         path: sidebarPath(sidebars[doc.sidebar], doc.id), description: doc.description ?? '', url: doc.permalink.slice(base.length) || '/',
         aliases: listOfStrings(fm.bot_aliases), summary: listOfStrings(fm.summary), headings, sections,
+        ...(fm.bot_text === false ? {searchText: false} : {}),
     };
 }
 

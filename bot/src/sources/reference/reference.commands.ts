@@ -1,6 +1,7 @@
 import { Injectable, UseInterceptors, type Type } from '@nestjs/common';
 import { InteractionContextType, type ChatInputCommandInteraction } from 'discord.js';
 import { Context, Options, SlashCommand, type SlashCommandContext, StringOption } from 'necord';
+import { EVERYWHERE } from '../../discord/contexts';
 import { DocsAutocomplete, choicesFrom, registerAutocomplete } from '../../discord/autocomplete';
 import { choiceName } from '../../discord/limits';
 import { ReplyService } from '../../discord/reply.service';
@@ -64,7 +65,7 @@ function referenceCommand(def: (typeof REFERENCE_COMMANDS)[number]): Type<unknow
         constructor(private readonly handler: ReferenceHandler) {}
 
         @UseInterceptors(DocsAutocomplete)
-        @SlashCommand({ name: def.name, description: def.description, contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+        @SlashCommand({ name: def.name, description: def.description, ...EVERYWHERE })
         run(@Context() [interaction]: SlashCommandContext, @Options() { query }: QueryOptions) {
             return this.handler.answer(interaction, def.table, query, def.name);
         }
@@ -97,7 +98,7 @@ export class LookupCommand {
     constructor(private readonly handler: ReferenceHandler) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'lookup', description: 'Look something up in one of the reference tables', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'lookup', description: 'Look something up in one of the reference tables', ...EVERYWHERE })
     run(@Context() [interaction]: SlashCommandContext, @Options() { table, query }: LookupOptions) {
         return this.handler.answer(interaction, table, query, 'lookup');
     }

@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InteractionContextType } from 'discord.js';
 import { BooleanOption, Button, type ButtonContext, ComponentParam, Context, Options, SlashCommand, type SlashCommandContext, StringOption } from 'necord';
 import { UseInterceptors } from '@nestjs/common';
+import { EVERYWHERE } from '../../discord/contexts';
 import { DocsAutocomplete, choicesFrom, registerAutocomplete } from '../../discord/autocomplete';
 import { ReplyService } from '../../discord/reply.service';
 import { GapsService } from '../../gaps/gaps.service';
@@ -53,7 +54,7 @@ export class GuideCommands {
     ) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'guide', description: 'Link a TavernDocs guide', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'guide', description: 'Link a TavernDocs guide', ...EVERYWHERE })
     async onGuide(@Context() [interaction]: SlashCommandContext, @Options() { query, section, summary, steps }: GuideOptions) {
         if (!this.guides.loaded) return this.replies.fail(interaction, 'NOT_READY');
         const entry = resolve(this.guides, query, { scope: section });
@@ -64,7 +65,9 @@ export class GuideCommands {
         if (steps) {
             // Start at the section that was picked, or at the top.
             const start = entry.heading ? Math.max(0, stepsOf(entry.guide).findIndex((s) => s.id === entry.heading!.id)) : 0;
-            return this.replies.send(interaction, renderStep(this.guides.loaded, entry.guide, start, interaction.user.id));
+            // Turning pages in a server channel would be noise for everyone else, so there it's private.
+            const reply = renderStep(this.guides.loaded, entry.guide, start, interaction.user.id);
+            return interaction.inGuild() ? this.replies.sendPrivate(interaction, reply) : this.replies.send(interaction, reply);
         }
         return this.replies.send(interaction, this.guides.render(entry, { summary, userId: interaction.user.id }));
     }

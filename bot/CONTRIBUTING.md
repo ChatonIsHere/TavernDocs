@@ -9,6 +9,7 @@ Most of what the bot knows comes from the docs themselves, so most changes need 
 | Make a guide show bullets in `/guide summary:true` | Add a `summary:` list (3 to 5 short bullets) to the page's frontmatter. |
 | Make a page easier to find | Add `bot_aliases: [words, people, use]` to its frontmatter. |
 | Hide a page from the bot | Add `bot_hidden: true` to its frontmatter. |
+| Keep a page out of text search, but still findable by its title | Add `bot_text: false`. For pages that mention everything, like the bot's own page. |
 | Teach every search a word | Add a line to `content/aliases.yml`, e.g. `mm: [mod manager]`. |
 | Add a canned answer for `/snippet` | Add `content/snippets/<name>.md`. See `content/snippets/README.md`. |
 | Make a docs table or a page of questions searchable | Add an entry to `content/sources.yml`. It works in `/search` and `/lookup` straight away. |

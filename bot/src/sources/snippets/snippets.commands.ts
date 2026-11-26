@@ -1,6 +1,7 @@
 import { Injectable, UseInterceptors } from '@nestjs/common';
 import { InteractionContextType } from 'discord.js';
 import { Context, Options, SlashCommand, type SlashCommandContext, StringOption } from 'necord';
+import { EVERYWHERE } from '../../discord/contexts';
 import { DocsAutocomplete, choicesFrom, registerAutocomplete } from '../../discord/autocomplete';
 import { ReplyService } from '../../discord/reply.service';
 import { GapsService } from '../../gaps/gaps.service';
@@ -26,7 +27,7 @@ export class SnippetCommands {
     ) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'snippet', description: 'Post a short answer to a common question', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'snippet', description: 'Post a short answer to a common question', ...EVERYWHERE })
     async onSnippet(@Context() [interaction]: SlashCommandContext, @Options() { name }: SnippetOptions) {
         const snippet = resolve(this.snippets, name);
         if (!snippet) {

@@ -1,6 +1,7 @@
 import { Injectable, UseInterceptors } from '@nestjs/common';
 import { InteractionContextType } from 'discord.js';
 import { Context, Options, SlashCommand, type SlashCommandContext, StringOption } from 'necord';
+import { EVERYWHERE } from '../../discord/contexts';
 import { DocsAutocomplete, choicesFrom, registerAutocomplete } from '../../discord/autocomplete';
 import { ReplyService } from '../../discord/reply.service';
 import { GapsService } from '../../gaps/gaps.service';
@@ -26,7 +27,7 @@ export class ModCommands {
     ) {}
 
     @UseInterceptors(DocsAutocomplete)
-    @SlashCommand({ name: 'mod', description: 'Look up a mod on TavernMods', contexts: [InteractionContextType.Guild, InteractionContextType.BotDM] })
+    @SlashCommand({ name: 'mod', description: 'Look up a mod on TavernMods', ...EVERYWHERE })
     async onMod(@Context() [interaction]: SlashCommandContext, @Options() { name }: ModOptions) {
         if (!this.mods.available) return this.replies.fail(interaction, 'MODS_UNAVAILABLE');
         const mod = resolve(this.mods, name);
