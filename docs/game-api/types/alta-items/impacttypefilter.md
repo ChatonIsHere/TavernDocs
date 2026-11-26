@@ -1,6 +1,6 @@
 ---
 title: "ImpactTypeFilter"
-description: "class ImpactTypeFilter in Root.Township."
+description: "Inspector list of allowed impact types."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactTypeFilter
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+Inspector list of allowed impact types. An empty list allows everything.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
@@ -25,18 +27,18 @@ A **class** in `Root.Township`, `Alta.Impact`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-types" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{"[] types"}</code> | The allowed impact types. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> |
-| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid("}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type)"}</code> | Whether the impact type is in the list (always true if the list is empty). |
+| <Link id="m-validateimpactool" /><code>{"bool ValidateImpacTool("}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Whether any of the tool's impactors has an allowed impact type (always true if the list is empty). |
 
 ## Used in
 

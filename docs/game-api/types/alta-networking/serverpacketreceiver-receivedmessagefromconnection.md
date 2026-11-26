@@ -1,6 +1,6 @@
 ---
 title: "ServerPacketReceiver.ReceivedMessageFromConnection"
-description: "struct ServerPacketReceiver.ReceivedMessageFromConnection in Root.Township."
+description: "Server: one buffered reliable packet and the connection it came from, held until the frame's processing step."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 A **private struct** in `Root.Township`, `Alta.Networking`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Server: one buffered reliable packet and the connection it came from, held until the frame's processing step.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`ServerPacketReceiver`](/game-api/types/alta-networking/serverpacketreceiver)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> |
-| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connectionidentifier" /><code>{"int connectionIdentifier"}</code> | Transport id of the sending connection. |
+| <Link id="m-data" /><code>{"ArraySegment<byte> data"}</code> | The packet bytes, from `MessageReceivePool`. |
 
 ## Used in
 

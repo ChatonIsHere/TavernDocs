@@ -1,6 +1,6 @@
 ---
 title: "WorldCommandModule.ForestCommandModule.ForestInfo.Encounter"
-description: "class WorldCommandModule.ForestCommandModule.ForestInfo.Encounter in Root.Township."
+description: "A G-core encounter placed in a forest, in a ForestInfo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WorldCommandModule.ForestCommandModule.ForestInfo.Encounter
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A G-core encounter placed in a forest, in a `ForestInfo`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WorldCommandModule.ForestCommandModule.ForestInfo`](/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-edgea" /><code>{"int edgeA"}</code> |
-| <Link id="m-edgeb" /><code>{"int edgeB"}</code> |
-| <Link id="m-name" /><code>{"string name"}</code> |
-| <Link id="m-node" /><code>{"int node"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-edgea" /><code>{"int edgeA"}</code> | The instruction's first edge value. |
+| <Link id="m-edgeb" /><code>{"int edgeB"}</code> | The instruction's second edge value. |
+| <Link id="m-name" /><code>{"string name"}</code> | Name of the G-core. |
+| <Link id="m-node" /><code>{"int node"}</code> | Index of the node it is placed at. |
 
 ## Used in
 

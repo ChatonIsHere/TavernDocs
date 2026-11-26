@@ -1,6 +1,6 @@
 ---
 title: "ClassSerializationHelper.Finalize<T>"
-description: "delegate ClassSerializationHelper.Finalize<T> in Root.Township."
+description: "Callback for ClassSerializationHelper.Prepare, called once with the read and write delegates it built for a type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClassSerializationHelper.Finalize&lt;T&gt;
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for `ClassSerializationHelper.Prepare`, called once with the read and write delegates it built for a type.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`ClassSerializationHelper`](/game-api/types/global-c-d/classserializationhelper)

@@ -1,6 +1,6 @@
 ---
 title: "ParentChangedHandler"
-description: "delegate ParentChangedHandler in Root.Township."
+description: "Callback for when a network entity's parent changes, with the entity, its old parent and its new parent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ParentChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback for when a network entity's parent changes, with the entity, its old parent and its new parent.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

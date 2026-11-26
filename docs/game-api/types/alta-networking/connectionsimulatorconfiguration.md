@@ -1,6 +1,6 @@
 ---
 title: "ConnectionSimulatorConfiguration"
-description: "class ConnectionSimulatorConfiguration in Root.Township."
+description: "Settings for simulating a bad connection: send and receive delays in ms and a packet loss chance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
+Settings for simulating a bad connection: send and receive delays in ms and a packet loss chance. Held by `NetworkingProfiler`.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
 ## Constructors
@@ -22,13 +24,13 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-inaveragedelay" /><code>{"int inAverageDelay"}</code> |
-| <Link id="m-inmindelay" /><code>{"int inMinDelay"}</code> |
-| <Link id="m-outaveragedelay" /><code>{"int outAverageDelay"}</code> |
-| <Link id="m-outmindelay" /><code>{"int outMinDelay"}</code> |
-| <Link id="m-packetloss" /><code>{"float packetLoss"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inaveragedelay" /><code>{"int inAverageDelay"}</code> | Average delay on incoming packets, in ms. |
+| <Link id="m-inmindelay" /><code>{"int inMinDelay"}</code> | Minimum delay on incoming packets, in ms. |
+| <Link id="m-outaveragedelay" /><code>{"int outAverageDelay"}</code> | Average delay on outgoing packets, in ms. |
+| <Link id="m-outmindelay" /><code>{"int outMinDelay"}</code> | Minimum delay on outgoing packets, in ms. |
+| <Link id="m-packetloss" /><code>{"float packetLoss"}</code> | Chance from 0 to 1 that a packet is dropped. |
 
 ## Used in
 

@@ -29,14 +29,14 @@ A menu orb that runs a set action when the player lets go of it in a valid place
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-actionorb" /><code>{"private "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> |
-| <Link id="m-isinteractiononserver" /><code>{"private bool isInteractionOnServer"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-onreleaseaction" /><code>{"private Action onReleaseAction"}</code> |
-| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |
-| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionorb" /><code>{"private "}<Link to="/game-api/types/global-a-b/actionorb">{"ActionOrb"}</Link>{" actionOrb"}</code> | The `ActionOrb` the player grabs and releases. |
+| <Link id="m-isinteractiononserver" /><code>{"private bool isInteractionOnServer"}</code> | When true, clients may pick the orb up without a release action because the server handles it. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-onreleaseaction" /><code>{"private Action onReleaseAction"}</code> | Action run when the orb is released. Set with `SetReleaseAction`. |
+| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> | Player character field. Not used in this class's code. |
+| <Link id="m-selectionorbposition" /><code>{"private Transform selectionOrbPosition"}</code> | Transform the action orb is set to return to. |
 
 </details>
 
@@ -58,10 +58,10 @@ A menu orb that runs a set action when the player lets go of it in a valid place
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-hasinteractionexception" /><code>{"private bool HasInteractionException()"}</code> |
-| <Link id="m-onvalidletgo" /><code>{"private void OnValidLetGo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasinteractionexception" /><code>{"private bool HasInteractionException()"}</code> | True on a client when `isInteractionOnServer` is set, so the orb can be grabbed without a local release action. |
+| <Link id="m-onvalidletgo" /><code>{"private void OnValidLetGo()"}</code> | Runs the release action when the orb is let go in a valid way, or logs an error if none is set. |
 
 </details>
 

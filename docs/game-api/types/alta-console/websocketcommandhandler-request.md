@@ -1,6 +1,6 @@
 ---
 title: "WebSocketCommandHandler.Request"
-description: "struct WebSocketCommandHandler.Request in Root.Township."
+description: "A command request sent by a websocket console client, parsed from JSON."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Console`.
 
+A command request sent by a websocket console client, parsed from JSON.
+
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-content" /><code>{"string content"}</code> |
-| <Link id="m-id" /><code>{"uint id"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-content" /><code>{"string content"}</code> | The command text to run. |
+| <Link id="m-id" /><code>{"uint id"}</code> | The client's request ID, sent back with the command result. |
 
 ## Used in
 

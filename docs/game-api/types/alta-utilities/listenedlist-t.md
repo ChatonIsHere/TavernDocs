@@ -29,9 +29,9 @@ A list that raises events when items are added or removed. Adding through the `I
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-list" /><code>{"private List<T> list"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-list" /><code>{"private List<T> list"}</code> | The inner list. Other code reaches it through `IListenedList.Internal`, which skips the events. |
 
 </details>
 
@@ -39,7 +39,7 @@ A list that raises events when items are added or removed. Adding through the `I
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |  |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of items in the list. |
 | <Link id="m-item" /><code>{"T this[int index] { get; }"}</code> | Read-only access by index. |
 
 ## Events
@@ -57,17 +57,17 @@ A list that raises events when items are added or removed. Adding through the `I
 | <Link id="m-add" /><code>{"void Add(T item)"}</code> | Adds an item and raises `ItemAdded`. |
 | <Link id="m-addrange" /><code>{"void AddRange(IEnumerable<T> items)"}</code> | Adds several items and raises `ItemAdded` for each. |
 | <Link id="m-clear" /><code>{"void Clear()"}</code> | Removes items one at a time, raising `ItemRemoved` for each. |
-| <Link id="m-contains" /><code>{"bool Contains(T item)"}</code> |  |
+| <Link id="m-contains" /><code>{"bool Contains(T item)"}</code> | True if the item is in the list. |
 | <Link id="m-copyto" /><code>{"void CopyTo(T[] array, int arrayIndex)"}</code> | Copies the items into an array from the given index. |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<T> GetEnumerator()"}</code> |  |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<T> GetEnumerator()"}</code> | Enumerates the inner list, so changing the list while looping throws. |
 | <Link id="m-remove" /><code>{"bool Remove(T item)"}</code> | Removes an item, raises `ItemRemoved` and returns whether it was found. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the inner list, so changing the list while looping throws. |
 
 </details>
 

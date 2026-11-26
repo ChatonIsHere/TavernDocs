@@ -1,6 +1,6 @@
 ---
 title: "ColorLerp"
-description: "class ColorLerp in Root.Township."
+description: "Blends between two colours by a value and sends the result to a colour event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ColorLerp
 
 A **class** in `Root.Township`, no namespace.
+
+Blends between two colours by a value and sends the result to a colour event. Wire it to other components in the inspector.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,28 +28,28 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-color0" /><code>{"private Color color0"}</code> |
-| <Link id="m-color1" /><code>{"private Color color1"}</code> |
-| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-color0" /><code>{"private Color color0"}</code> | Colour at 0. |
+| <Link id="m-color1" /><code>{"private Color color1"}</code> | Colour at 1. |
+| <Link id="m-needstobeset" /><code>{"private bool needsToBeSet"}</code> | True until `Set` is first called. |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-c-d/colorevent">{"ColorEvent"}</Link>{" output"}</code> | Event that receives the blended colour. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-set" /><code>{"void Set(float value)"}</code> |
-| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-set" /><code>{"void Set(float value)"}</code> | Lerps between the two colours by the value and invokes `output`. The int overload only gives either end. |
+| <Link id="m-set-2" /><code>{"void Set(int value)"}</code> | Lerps between the two colours by the value and invokes `output`. The int overload only gives either end. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Outputs the first colour if nothing has set a value yet. |
 
 </details>
 

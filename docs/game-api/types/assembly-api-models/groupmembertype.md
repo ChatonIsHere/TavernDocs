@@ -1,6 +1,6 @@
 ---
 title: "GroupMemberType"
-description: "enum GroupMemberType in Alta.Api.DataTransferModels."
+description: "A user's state in a group: banned, requested to join, invited, accepted (a member), left or kicked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupMemberType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A user's state in a group: banned, requested to join, invited, accepted (a member), left or kicked.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

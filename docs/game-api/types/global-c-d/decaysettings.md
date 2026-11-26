@@ -30,11 +30,11 @@ Asset with decay timing, used by decay components such as `BasicDecay`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-maximumdecaytime" /><code>{"private float maximumDecayTime"}</code> |
-| <Link id="m-minimumdecaytime" /><code>{"private float minimumDecayTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
+| <Link id="m-maximumdecaytime" /><code>{"private float maximumDecayTime"}</code> | Backing field for `MaximumDecayTime`, in seconds. Defaults to 60. |
+| <Link id="m-minimumdecaytime" /><code>{"private float minimumDecayTime"}</code> | Backing field for `MinimumDecayTime`, in seconds. Defaults to 60. |
 
 </details>
 

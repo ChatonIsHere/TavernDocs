@@ -1,6 +1,6 @@
 ---
 title: "TouchScreenKeyboardKey.KeySizeType"
-description: "enum TouchScreenKeyboardKey.KeySizeType in Root.Township."
+description: "Which size a touch screen keyboard key uses: a normal key, a suggestion key (F5 to F7) or the space bar."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TouchScreenKeyboardKey.KeySizeType
 
 An **enum** in `Root.Township`, no namespace.
+
+Which size a touch screen keyboard key uses: a normal key, a suggestion key (F5 to F7) or the space bar.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TouchScreenKeyboardKey`](/game-api/types/global-t-x/touchscreenkeyboardkey)

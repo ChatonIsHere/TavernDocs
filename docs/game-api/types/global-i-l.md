@@ -37,7 +37,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ICleanOnSerialize`](/game-api/types/global-i-l/icleanonserialize) | interface |  | 1 |  |
 | [`IClimbable`](/game-api/types/global-i-l/iclimbable) | interface |  | 12 | Something a climbing hand can grip. `Climbable` is the usual component; anything without one counts as a `DefaultClimbable`, and `NonClimbable` blocks climbing. |
 | [`IColorModelPoint<out T>`](/game-api/types/global-i-l/icolormodelpoint-outt) | interface |  | 2 | A point whose value drives one colour channel of a `ColorModel`, written into mesh vertex colours by bone weight. Used for forging and heat (for example `ForgedPoint`). |
-| [`IConnection`](/game-api/types/global-i-l/iconnection) | interface |  | 2 |  |
+| [`IConnection`](/game-api/types/global-i-l/iconnection) | interface |  | 2 | A network connection with its player. `Connection` is the implementation. |
 | [`IControllerAction`](/game-api/types/global-i-l/icontrolleraction) | interface |  | 4 |  |
 | [`ICraftingIngredientProvider`](/game-api/types/global-i-l/icraftingingredientprovider) | interface |  | 1 |  |
 | [`IDeltaControl`](/game-api/types/global-i-l/ideltacontrol) | interface |  | 1 |  |
@@ -56,15 +56,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IgnoreForBounds`](/game-api/types/global-i-l/ignoreforbounds) | class | `MonoBehaviour` | 0 |  |
 | [`IGrowthManager`](/game-api/types/global-i-l/igrowthmanager) | interface |  | 3 |  |
 | [`IGrowthStage`](/game-api/types/global-i-l/igrowthstage) | interface |  | 2 |  |
-| [`IHandStaminaManager`](/game-api/types/global-i-l/ihandstaminamanager) | interface |  | 2 |  |
+| [`IHandStaminaManager`](/game-api/types/global-i-l/ihandstaminamanager) | interface |  | 2 | Stamina for one climbing hand, as used by `ClimbingHandler.LeftStamina` and `RightStamina`. Implemented by `HandStaminaManager` and `FakeStaminaManager`. |
 | [`IHasFingertips`](/game-api/types/global-i-l/ihasfingertips) | interface |  | 1 |  |
 | [`IHasHead`](/game-api/types/global-i-l/ihashead) | interface |  | 1 |  |
 | [`IHasHistory`](/game-api/types/global-i-l/ihashistory) | interface |  | 1 |  |
 | [`IHasMovementContext`](/game-api/types/global-i-l/ihasmovementcontext) | interface |  | 1 |  |
-| [`IHeartCallModifier`](/game-api/types/global-i-l/iheartcallmodifier) | interface |  | 1 |  |
+| [`IHeartCallModifier`](/game-api/types/global-i-l/iheartcallmodifier) | interface |  | 1 | Something that changes a hit while the Heart Call skill is active on a tool. `HeartCall` calls every modifier registered for the hitting tool. Implemented by `ForgingHeartCallModifier`. |
 | [`IHistoryAction`](/game-api/types/global-i-l/ihistoryaction) | interface |  | 3 |  |
 | [`IHistoryManager`](/game-api/types/global-i-l/ihistorymanager) | interface |  | 6 | An undo and redo history. The cosmetics editor uses one for outfit changes. |
-| [`IHistoryManager<T>`](/game-api/types/global-i-l/ihistorymanager-t) | interface | `IHistoryManager` | 2 |  |
+| [`IHistoryManager<T>`](/game-api/types/global-i-l/ihistorymanager-t) | interface | `IHistoryManager` | 2 | Undo and redo history for one kind of action, such as the customization screen's. Implemented by `HistoryManager<T>` and `EmptyHistory<T>`. |
 | [`IIgnoreColliderFlattening`](/game-api/types/global-i-l/iignorecolliderflattening) | interface | `IDontSplit` | 0 |  |
 | [`IInitializeAsLocalPlayer`](/game-api/types/global-i-l/iinitializeaslocalplayer) | interface |  | 1 | Implemented by components on a player controller that need setup only on the local player's own copy, such as docks, impact detectors and `LocomotionController`. |
 | [`IInitializeAsRemotePlayer`](/game-api/types/global-i-l/iinitializeasremoteplayer) | interface |  | 1 |  |
@@ -76,11 +76,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ILabeledTouchScreenButton`](/game-api/types/global-i-l/ilabeledtouchscreenbutton) | interface | `ITouchScreenButton` | 2 |  |
 | [`ILightDetector`](/game-api/types/global-i-l/ilightdetector) | interface |  | 2 |  |
 | [`ILightDetectorTemp`](/game-api/types/global-i-l/ilightdetectortemp) | interface |  | 2 |  |
-| [`ILightEmitter`](/game-api/types/global-i-l/ilightemitter) | interface |  | 2 |  |
+| [`ILightEmitter`](/game-api/types/global-i-l/ilightemitter) | interface |  | 2 | A light puzzle beam source, such as `PuzzleLightBeam` or `PuzzleLightMirror`. |
 | [`ILightEmitterTemp`](/game-api/types/global-i-l/ilightemittertemp) | interface |  | 0 | Empty marker for a light emitter in the test light detector setup (`TempLaser`, `ILightDetectorTemp`). Probably test or prototype code. |
 | [`IListenToMiningEcho`](/game-api/types/global-i-l/ilistentominingecho) | interface |  | 1 | Something that reacts to a mining echo spreading out. Register with `MiningEcho.StartListening`; `Phantom` uses it to crack. |
 | [`IListenToPhysicalMaterial`](/game-api/types/global-i-l/ilistentophysicalmaterial) | interface |  | 1 |  |
-| [`ImageFormat`](/game-api/types/global-i-l/imageformat) | enum |  | 2 |  |
+| [`ImageFormat`](/game-api/types/global-i-l/imageformat) | enum |  | 2 | File formats for screenshots taken by `ScreenshotTaker`. |
 | [`IMainMenuLogger`](/game-api/types/global-i-l/imainmenulogger) | interface |  | 3 |  |
 | [`IMenuPlayerController`](/game-api/types/global-i-l/imenuplayercontroller) | interface |  | 1 |  |
 | [`ImmediateDecay`](/game-api/types/global-i-l/immediatedecay) | class | `NetworkEntityBehaviour` | 1 |  |
@@ -92,7 +92,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImpactorStatParameters`](/game-api/types/global-i-l/impactorstatparameters) | class | `ItemComponent` | 3 |  |
 | [`ImpactSound`](/game-api/types/global-i-l/impactsound) | class | `MonoBehaviour` | 0 |  |
 | [`ImpactSoundManager`](/game-api/types/global-i-l/impactsoundmanager) | class | `SingletonBehaviour<ImpactSoundManager>` | 1 |  |
-| [`ImpactSoundMap`](/game-api/types/global-i-l/impactsoundmap) | class | `ScriptableObject` | 1 |  |
+| [`ImpactSoundMap`](/game-api/types/global-i-l/impactsoundmap) | class | `ScriptableObject` | 1 | Asset that maps physic materials to Wwise switches, so impact sounds play the right material sound. |
 | [`ImpactSoundSet`](/game-api/types/global-i-l/impactsoundset) | class | `ScriptableObject` | 2 |  |
 | [`ImpactSoundSettings`](/game-api/types/global-i-l/impactsoundsettings) | class | `GlobalSettings<ImpactSoundSettings>` | 5 | Global settings for Wwise impact sounds: the send and receive events, velocity RTPC and material sound map. `ImpactSoundManager` holds it, but nothing in this server build reads the values. |
 | [`ImpactSoundSettings.Create`](/game-api/types/global-i-l/impactsoundsettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<ImpactSoundSettings>` | 0 |  |
@@ -101,16 +101,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImportSettings.CompressionSettings`](/game-api/types/global-i-l/importsettings-compressionsettings) | class |  | 2 |  |
 | [`ImportSettings.Create`](/game-api/types/global-i-l/importsettings-create) | class | `AltaMenuItemBase.Assets.Create.Platform.ScriptableObject<ImportSettings>` | 0 |  |
 | [`ImportSettings.Filter`](/game-api/types/global-i-l/importsettings-filter) | class |  | 3 |  |
-| [`ImportSettings.PlatformSettings`](/game-api/types/global-i-l/importsettings-platformsettings) | class |  | 7 |  |
+| [`ImportSettings.PlatformSettings`](/game-api/types/global-i-l/importsettings-platformsettings) | class |  | 7 | Asset import settings for one group of platforms, picked by `ImportSettings.Find` from the last matching filter. |
 | [`ImportSettings.Scale`](/game-api/types/global-i-l/importsettings-scale) | enum |  | 4 |  |
 | [`ImportSettings.TextureType`](/game-api/types/global-i-l/importsettings-texturetype) | enum |  | 2 |  |
-| [`ImportSettings.Type`](/game-api/types/global-i-l/importsettings-type) | enum |  | 2 |  |
+| [`ImportSettings.Type`](/game-api/types/global-i-l/importsettings-type) | enum |  | 2 | Kind of asset an import filter applies to: texture or mesh. |
 | [`ImpostorType`](/game-api/types/global-i-l/impostortype) | enum |  | 3 | Projection used when baking an Amplify impostor: spherical, octahedron or hemi-octahedron. |
 | [`IncrementStat`](/game-api/types/global-i-l/incrementstat) | delegate |  | 0 |  |
 | [`INetworkInteractArgument`](/game-api/types/global-i-l/inetworkinteractargument) | interface |  | 4 | Data sent over the network to start an interaction, such as `GrabPointArguments`. |
 | [`InfoDisplayer`](/game-api/types/global-i-l/infodisplayer) | class | `MonoBehaviour` | 0 |  |
 | [`InfoDisplayerAccess`](/game-api/types/global-i-l/infodisplayeraccess) | class | `ScriptableObject` | 6 | A debug text asset that code writes a line of text to and an `InfoDisplayer` shows on screen. Wraps the text in a set prefix and suffix. |
-| [`InfoDisplayerAccess.AccessUpdate`](/game-api/types/global-i-l/infodisplayeraccess-accessupdate) | delegate |  | 0 |  |
+| [`InfoDisplayerAccess.AccessUpdate`](/game-api/types/global-i-l/infodisplayeraccess-accessupdate) | delegate |  | 0 | Handler for `InfoDisplayerAccess` changes (`EnabledUpdated`, `TextUpdated`); gets the access asset that changed. |
 | [`InGameGizmosSettings`](/game-api/types/global-i-l/ingamegizmossettings) | class | `GlobalSettings<InGameGizmosSettings>` | 5 |  |
 | [`InGameGizmosSettings.Create`](/game-api/types/global-i-l/ingamegizmossettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<InGameGizmosSettings>` | 0 |  |
 | [`InGameInspector`](/game-api/types/global-i-l/ingameinspector) | class | `NetworkEntityBehaviour` | 10 | A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console command runner, cloner, bubble inspector). Only players with the `debug_features` permission can hold it; others are forced to drop it. |
@@ -131,10 +131,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`InputMap.PlayingPicoActions`](/game-api/types/global-i-l/inputmap-playingpicoactions) | struct |  | 26 | The generated wrapper for the "PlayingPico" input action map: in-game actions for a generic XR controller, with Pico trigger bindings for grab assist and trigger axis. Nothing outside `InputMap` reads it in this build. |
 | [`InputScaler`](/game-api/types/global-i-l/inputscaler) | class | `MonoBehaviour` | 1 |  |
 | [`InputSource`](/game-api/types/global-i-l/inputsource) | abstract class |  | 12 | Base for one button-like input on a controller (see `ControllerInput`). It holds pressed state, notes when it changed, and raises pressed and released events. |
-| [`InputSourceHandler`](/game-api/types/global-i-l/inputsourcehandler) | delegate |  | 0 |  |
+| [`InputSourceHandler`](/game-api/types/global-i-l/inputsourcehandler) | delegate |  | 0 | Handler for `InputSource.InputStarted` and `InputEnded`: gets the input source and the `PlayerInput` it came from. |
 | [`InputSourcePair`](/game-api/types/global-i-l/inputsourcepair) | class | `InputSource` | 4 | An input source made of a primary and optional secondary input (for example a key and a button), built by `ControllerAction` from a platform mapping. |
 | [`InputToActionMapping`](/game-api/types/global-i-l/inputtoactionmapping) | class |  | 8 | One binding from a VR input or keyboard key (with an optional second input) to a controller action, for one or both hands. |
-| [`InputToActionMapping.HandType`](/game-api/types/global-i-l/inputtoactionmapping-handtype) | enum |  | 3 |  |
+| [`InputToActionMapping.HandType`](/game-api/types/global-i-l/inputtoactionmapping-handtype) | enum |  | 3 | Which hand an input mapping applies to: both, left or right. |
 | [`InsetModifier`](/game-api/types/global-i-l/insetmodifier) | class | `SpawnModifierPointNormal` | 1 |  |
 | [`InsetModifier.Create`](/game-api/types/global-i-l/insetmodifier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<InsetModifier>` | 0 |  |
 | [`InspectorBase`](/game-api/types/global-i-l/inspectorbase) | abstract class |  | 11 | Base for the debug bubble inspector's entries (component, method, value and interactor inspectors). Each is shown as a floating bubble you can grab, move and twist. |
@@ -148,7 +148,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`InteractableInspector`](/game-api/types/global-i-l/interactableinspector) | class | `PooledObject` | 3 | Debug bubble shown in the world for inspecting a prefab's components, methods and values in game. Pooled, client side, and released when you move more than 5 m away. |
 | [`InteractableLastPlayerInteractorHandler`](/game-api/types/global-i-l/interactablelastplayerinteractorhandler) | class | `NetworkEntityBehaviour`, `IEntityReplaceHandler` | 0 |  |
 | [`InteractableScoreCalculationSettings`](/game-api/types/global-i-l/interactablescorecalculationsettings) | static class |  | 3 |  |
-| [`InteractableUnityEvent`](/game-api/types/global-i-l/interactableunityevent) | class | `UnityEvent<Interactable, Interactor>` | 0 |  |
+| [`InteractableUnityEvent`](/game-api/types/global-i-l/interactableunityevent) | class | `UnityEvent<Interactable, Interactor>` | 0 | Serializable `UnityEvent` that passes an `Interactable` and the `Interactor` using it. |
 | [`InteractArguments`](/game-api/types/global-i-l/interactarguments) | struct | `INetworkInteractArgument` | 17 | The network message sent when a hand starts holding an entity: the held entity, its velocity and pose, the hand's pose, and force flags. |
 | [`InteractionChannel`](/game-api/types/global-i-l/interactionchannel) | enum |  | 5 | Flags for which kinds of interaction an interactor accepts (normal, body customisation, equipment, skill practice, downed character). Interactors can override their channels, for example while downed. |
 | [`InteractionChannelHelper`](/game-api/types/global-i-l/interactionchannelhelper) | static class |  | 1 |  |
@@ -178,11 +178,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IRemoteConsole`](/game-api/types/global-i-l/iremoteconsole) | interface |  | 4 | A remote console server, such as `WebSocketRemoteConsole` (port 1760) and `ServerRemoteConsole` (port 1758). Started and closed by `ServerConsoleManager`. |
 | [`IRemoteConsoleHandler`](/game-api/types/global-i-l/iremoteconsolehandler) | interface |  | 1 | One connected remote console session (WebSocket console or client handler). Passed with the `ConsoleConnected` and `ConsoleDisconnected` events of `ServerRemoteConsole`. |
 | [`ISavable<T>`](/game-api/types/global-i-l/isavable-t) | interface | `ISavableSave<T>`, `ISavableSaveBase` | 1 | Implement on a `NetworkEntityBehaviour` to have its state saved with the entity and loaded back. Server only. |
-| [`ISavingContext`](/game-api/types/global-i-l/isavingcontext) | interface |  | 2 |  |
+| [`ISavingContext`](/game-api/types/global-i-l/isavingcontext) | interface |  | 2 | A savable component that must be active while its prefab's children are saved or loaded. `NetworkPrefab` pushes every one it finds before handling children and pops them after. `GlobalLogicManager` uses it. |
 | [`IServerHostController`](/game-api/types/global-i-l/iserverhostcontroller) | interface |  | 7 | Hook for an outside host to start, reset and stop the server and track player counts. Clients bind `FakeHostController` (all no-ops); the managers that receive it never call it in this build. |
-| [`IShootable`](/game-api/types/global-i-l/ishootable) | interface |  | 4 |  |
+| [`IShootable`](/game-api/types/global-i-l/ishootable) | interface |  | 4 | A projectile a bow can fire, such as `Arrow` or a light beam. Used by `ExtraArrowUpdater` for extra arrows. |
 | [`ISkillInputMethod`](/game-api/types/global-i-l/iskillinputmethod) | interface |  | 10 | One gesture a held tool skill waits for (shake, downward swing, strike succession, bow pullback, hand position and so on). Created from a `SkillInputStructure` and owned by a `HeldPickupHandler`. |
-| [`ISkillOrb`](/game-api/types/global-i-l/iskillorb) | interface |  | 3 |  |
+| [`ISkillOrb`](/game-api/types/global-i-l/iskillorb) | interface |  | 3 | A skill orb as seen by orb effects. `ProgressionSlotContainer` implements it. |
 | [`ISmoothLocomotionModifier`](/game-api/types/global-i-l/ismoothlocomotionmodifier) | interface |  | 8 | Something that changes smooth locomotion, such as `Climber`. `SmoothLocomotion.InitializeModifier` hooks each member into its movement update. Base class `SmoothLocomotionModifier`. |
 | [`ISoundProperty`](/game-api/types/global-i-l/isoundproperty) | interface |  | 2 | A Wwise sound setting (switch, RTPC value or trigger) that an audio control applies to a sound's game object before it plays. |
 | [`ISpawner`](/game-api/types/global-i-l/ispawner) | interface |  | 1 |  |
@@ -190,7 +190,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IStaticGeneration`](/game-api/types/global-i-l/istaticgeneration) | interface |  | 2 | Implemented by scene components that spawn dynamic objects when their parent is generated, such as `StaticDynamicSpawner` and `StaticClusterGenerator`. |
 | [`IStrikeSuccessionModifier`](/game-api/types/global-i-l/istrikesuccessionmodifier) | interface |  | 1 |  |
 | [`ISyncedListener`](/game-api/types/global-i-l/isyncedlistener) | interface |  | 1 |  |
-| [`ITeleportAwareTrigger`](/game-api/types/global-i-l/iteleportawaretrigger) | interface |  | 1 |  |
+| [`ITeleportAwareTrigger`](/game-api/types/global-i-l/iteleportawaretrigger) | interface |  | 1 | A trigger that wants to know when a player teleports through it instead of walking in. The teleport pointer collects them along its path. Implemented by `TriggerZone` and `SpiritModeDoorway`. |
 | [`ItemComponent`](/game-api/types/global-i-l/itemcomponent) | abstract class | `ScriptableObject`, `IItemComponent` | 2 | Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be limited to some physical materials. |
 | [`ItemScroller`](/game-api/types/global-i-l/itemscroller) | class | `MonoBehaviour` | 9 | Client UI: a row of `ScrollElement`s that slides along to show a window of a longer list, reusing a few element copies. Scrolling left moves to higher indices. |
 | [`ItemShooter`](/game-api/types/global-i-l/itemshooter) | class | `NetworkEntityBehaviour` | 2 |  |
@@ -223,7 +223,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`KeyboardInputSource`](/game-api/types/global-i-l/keyboardinputsource) | class | `InputSource` | 4 |  |
 | [`KeyboardSet`](/game-api/types/global-i-l/keyboardset) | class | `ScriptableObject` | 3 | Asset listing a set of virtual keyboard layouts, which one is the default, and a completion keyboard. |
 | [`KeyEventHandler`](/game-api/types/global-i-l/keyeventhandler) | delegate |  | 0 | Callback for a keyboard key going down or up, used by `KeyboardEventTriggers`. |
-| [`KinematicForceMode`](/game-api/types/global-i-l/kinematicforcemode) | enum |  | 3 |  |
+| [`KinematicForceMode`](/game-api/types/global-i-l/kinematicforcemode) | enum |  | 3 | How a growth stage sets rigidbodies: leave them, force kinematic, or force non-kinematic. Read by `GrowthItem` and `GrowerComponent`. |
 | [`KnobInspector`](/game-api/types/global-i-l/knobinspector) | class | `InteractorInspector` | 4 |  |
 
 ## L
@@ -245,13 +245,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LeaderboardManager.PlayerTracker`](/game-api/types/global-i-l/leaderboardmanager-playertracker) | class |  | 2 | Server side timing state for one player, keyed by user id in `LeaderboardManager`. |
 | [`LeaderboardManager.RankedPlayer`](/game-api/types/global-i-l/leaderboardmanager-rankedplayer) | class |  | 5 | One player in a leaderboard ranking: their user info, id and time. |
 | [`LeaderboardManagerData`](/game-api/types/global-i-l/leaderboardmanagerdata) | class | `NewSaveData<LeaderboardManager, LeaderboardManagerData>` | 3 |  |
-| [`LeaderboardManagerData.LeaderboardEntry`](/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry) | class |  | 4 |  |
-| [`LeaderboardManagerData.PlayerBestTimes`](/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes) | class |  | 4 |  |
+| [`LeaderboardManagerData.LeaderboardEntry`](/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry) | class |  | 4 | Saved ranking for one leaderboard: player IDs and times in rank order. |
+| [`LeaderboardManagerData.PlayerBestTimes`](/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes) | class |  | 4 | Saved best times for one player across leaderboards. |
 | [`LeaderboardManagerDataOld`](/game-api/types/global-i-l/leaderboardmanagerdataold) | class | `OldSaveData` | 3 |  |
 | [`LeaderboardManagerDataOld.LeaderboardEntry`](/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry) | class |  | 4 |  |
 | [`LeaderboardManagerDataOld.PlayerBestTimes`](/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes) | class |  | 4 |  |
 | [`Legacy`](/game-api/types/global-i-l/legacy) | class | `MonoBehaviour` | 0 |  |
-| [`LerpFollow`](/game-api/types/global-i-l/lerpfollow) | class | `LerpFollowBase<Transform>` | 2 |  |
+| [`LerpFollow`](/game-api/types/global-i-l/lerpfollow) | class | `LerpFollowBase<Transform>` | 2 | Smoothly moves this object toward a target `Transform`'s position. The movement is in `LerpFollowBase`. |
 | [`LerpFollowBase<T>`](/game-api/types/global-i-l/lerpfollowbase-t) | abstract class | `MonoBehaviour` | 3 | Makes an object trail smoothly after a target's position plus an offset, in late update. Off on a dedicated server by default. `LerpFollow` and `ScaledLerpFollow` derive from it. |
 | [`LerpModifier`](/game-api/types/global-i-l/lerpmodifier) | class | `FloatModifier` | 1 |  |
 | [`LetterMesh`](/game-api/types/global-i-l/lettermesh) | class |  | 3 | One character and its 3D mesh, used by `TextFont` for letters and digits. |
@@ -296,13 +296,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LocomotionlessPlayerController`](/game-api/types/global-i-l/locomotionlessplayercontroller) | class | `VRPlayerController`, `IPlatformPlayer`, `IHasFingertips`, +1 more | 11 | A VR player controller that cannot move, used for menu scenes. Always counts as the local player and alive. Client only. |
 | [`LocomotionModifier`](/game-api/types/global-i-l/locomotionmodifier) | class | `MonoBehaviour`, `IDontSplit`, `IBuildRendererBakeable`, +1 more | 3 |  |
 | [`LocomotionModifierAction`](/game-api/types/global-i-l/locomotionmodifieraction) | abstract class | `ScriptableObject` | 2 | Base asset for something that changes smooth locomotion for a while, started and ended on the player controller. |
-| [`LocomotionModifierCheck`](/game-api/types/global-i-l/locomotionmodifiercheck) | abstract class | `ScriptableObject` | 3 |  |
+| [`LocomotionModifierCheck`](/game-api/types/global-i-l/locomotionmodifiercheck) | abstract class | `ScriptableObject` | 3 | Asset with rules for a `LocomotionModifier` area: what happens when a player enters or leaves, and where they may teleport. Examples are `DepthCheckLocoCheck` and `EnterLocomotionCheck`. |
 | [`LocomotionModifierVolumeTrigger`](/game-api/types/global-i-l/locomotionmodifiervolumetrigger) | class | `VolumeTrigger` | 1 |  |
 | [`LocomotionStatSettings`](/game-api/types/global-i-l/locomotionstatsettings) | class | `ScriptableObject` | 3 |  |
 | [`LODBaker`](/game-api/types/global-i-l/lodbaker) | class | `MonoBehaviour` | 1 |  |
 | [`LODChange`](/game-api/types/global-i-l/lodchange) | class | `ScriptableObject` | 1 |  |
 | [`LODChange.Create`](/game-api/types/global-i-l/lodchange-create) | class | `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject<LODChange>` | 0 |  |
-| [`LODChange.LODLog`](/game-api/types/global-i-l/lodchange-lodlog) | class |  | 4 |  |
+| [`LODChange.LODLog`](/game-api/types/global-i-l/lodchange-lodlog) | class |  | 4 | Debug record of an LOD group and its LOD values, kept in a `LODChange` asset for the in-game inspector. |
 | [`LODGroupWrapper`](/game-api/types/global-i-l/lodgroupwrapper) | class | `MonoBehaviour` | 2 |  |
 | [`LodMeshJoiner`](/game-api/types/global-i-l/lodmeshjoiner) | static class |  | 1 |  |
 | [`LoggedInTool`](/game-api/types/global-i-l/loggedintool) | abstract class | `MonoBehaviour` | 0 | Base for menu tools that only work while logged in to Alta's account services, such as the shop and cosmetics interfaces. It follows `LoginManager`'s login and logout events. |

@@ -45,11 +45,11 @@ Tuning values for a schmeechee (mushroom critter): floor checks, push and turn f
 | <Link id="m-kinematictime" /><code>{"float kinematicTime"}</code> | Seconds into planting before the rigidbody goes kinematic. |
 | <Link id="m-maximumappliedturnforce" /><code>{"float maximumAppliedTurnForce"}</code> | Largest turn torque applied in one step. |
 | <Link id="m-maximumstoredturnforce" /><code>{"float maximumStoredTurnForce"}</code> | Largest turn force that can build up. |
-| <Link id="m-maxturnvelocity" /><code>{"float maxTurnVelocity"}</code> |  |
+| <Link id="m-maxturnvelocity" /><code>{"float maxTurnVelocity"}</code> | Turn speed limit setting (default 15). Not read anywhere in this code. |
 | <Link id="m-maxveloctiy" /><code>{"float maxVeloctiy"}</code> | Speed cap while playing or fleeing. |
 | <Link id="m-popvelocity" /><code>{"float popVelocity"}</code> | Upward speed it pops out of the ground with when planting ends. |
 | <Link id="m-turnjerkpersec" /><code>{"float turnJerkPerSec"}</code> | How fast turn force builds up per second when steering. |
-| <Link id="m-uprighttorquelerp" /><code>{"float uprightTorqueLerp"}</code> |  |
+| <Link id="m-uprighttorquelerp" /><code>{"float uprightTorqueLerp"}</code> | Upright torque blend setting (default 0.5). Not read anywhere in this code. |
 | <Link id="m-uprighttorquemultiplier" /><code>{"float uprightTorqueMultiplier"}</code> | Strength of the torque that keeps it upright. |
 
 ## Properties
@@ -63,10 +63,10 @@ Tuning values for a schmeechee (mushroom critter): floor checks, push and turn f
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Records another `MushroomCritter` it bumps into as `Hit`. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the head check line used for flip detection. |
 
 </details>
 

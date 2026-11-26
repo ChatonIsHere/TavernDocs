@@ -1,6 +1,6 @@
 ---
 title: "Array2dGenerationHelper.ThreadRowsAction<T, TData>"
-description: "delegate Array2dGenerationHelper.ThreadRowsAction<T, TData> in Root.Township."
+description: "Work for one block of a 2D array in Array2dGenerationHelper.ThreadRows, given the block's bounds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Array2dGenerationHelper.ThreadRowsAction&lt;T, TData&gt;
 
 A **delegate** in `Root.Township`, `Alta.Forests`.
+
+Work for one block of a 2D array in `Array2dGenerationHelper.ThreadRows`, given the block's bounds. Blocks are up to 64 by 64 and run as separate tasks.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`Array2dGenerationHelper`](/game-api/types/alta-world-generation/array2dgenerationhelper)

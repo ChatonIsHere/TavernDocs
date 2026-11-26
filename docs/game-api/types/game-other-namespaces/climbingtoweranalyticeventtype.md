@@ -1,6 +1,6 @@
 ---
 title: "ClimbingTowerAnalyticEventType"
-description: "enum ClimbingTowerAnalyticEventType in Root.Township."
+description: "Kinds of analytics event the climbing tower reports: falls, entering and leaving, checkpoints, and logging in or out in spirit mode."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimbingTowerAnalyticEventType
 
 An **enum** in `Root.Township`, `Features.Analytics.ClimbingTower`.
+
+Kinds of analytics event the climbing tower reports: falls, entering and leaving, checkpoints, and logging in or out in spirit mode.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

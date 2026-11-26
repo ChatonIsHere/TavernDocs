@@ -1,6 +1,6 @@
 ---
 title: "EmptyBehaviour"
-description: "class EmptyBehaviour in Root.Township."
+description: "A MonoBehaviour with no code."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EmptyBehaviour
 
 A **class** in `Root.Township`, no namespace.
+
+A `MonoBehaviour` with no code. Probably used as a marker or a placeholder component on prefabs.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`

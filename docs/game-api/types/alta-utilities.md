@@ -17,12 +17,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CurveRange<T>`](/game-api/types/alta-utilities/curverange-t) | class | `DoubleValue<T>` | 4 |  |
 | [`CurveValue<T>`](/game-api/types/alta-utilities/curvevalue-t) | class |  | 4 |  |
 | [`DoubleValue<T>`](/game-api/types/alta-utilities/doublevalue-t) | class | `SingleValue<T>` | 3 | A `SingleValue<T>` with a second float value. |
-| [`FileDownload`](/game-api/types/alta-utilities/filedownload) | class |  | 6 |  |
+| [`FileDownload`](/game-api/types/alta-utilities/filedownload) | class |  | 6 | Result type for console commands that write a file for the caller, stored under the game's storage folder in Command Output, one subfolder per calling user. A string converts to it implicitly. |
 | [`ICollisionStandard`](/game-api/types/alta-utilities/icollisionstandard) | interface |  | 1 |  |
 | [`IDisableOnSimpleServer`](/game-api/types/alta-utilities/idisableonsimpleserver) | interface |  | 1 |  |
 | [`Math2d`](/game-api/types/alta-utilities/math2d) | static class |  | 1 |  |
 | [`MathfOperation`](/game-api/types/alta-utilities/mathfoperation) | static class |  | 6 |  |
-| [`Operation`](/game-api/types/alta-utilities/operation) | delegate |  | 0 |  |
+| [`Operation`](/game-api/types/alta-utilities/operation) | delegate |  | 0 | A function that combines two floats into one. `MathfOperation.GetOperation` returns one for the cave generator parts. |
 | [`OperationType`](/game-api/types/alta-utilities/operationtype) | enum |  | 7 | How to combine two floats, turned into a function by `MathfOperation.GetOperation`: Set (take the new value), Max, Min, Add, Subtract, Multiply, or Multiply1Minus (`a * (1 - b)`). |
 | [`SerializeHashedObject`](/game-api/types/alta-utilities/serializehashedobject) | static class |  | 3 |  |
 | [`SimpleHashedGeneralValue<T>`](/game-api/types/alta-utilities/simplehashedgeneralvalue-t) | abstract class | `HashedGeneralValue<T>`, `IDisableOnSimpleServer` | 2 |  |
@@ -36,7 +36,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AssetBakingSettings`](/game-api/types/alta-utilities/assetbakingsettings) | static class |  | 5 |  |
-| [`CachedDirectory`](/game-api/types/alta-utilities/cacheddirectory) | class |  | 3 |  |
+| [`CachedDirectory`](/game-api/types/alta-utilities/cacheddirectory) | class |  | 3 | A pair of folders used by asset baking: a project folder and the temporary folder its assets are moved to. `AssetBakingSettings.ProjectToUnbakedDirectoriesMap` lists them. |
 
 ## Alta.Bezier
 
@@ -46,14 +46,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BezierSpline`](/game-api/types/alta-utilities/bezierspline) | class | `MonoBehaviour`, `IInstructionResult` | 19 | A cubic Bezier spline component: control points in groups of three per curve, with free, aligned or mirrored handles and optional looping. Used by spline displays, terrain splines, forest spline instructions and some effects. |
 | [`ItemModifier`](/game-api/types/alta-utilities/itemmodifier) | abstract class | `SplineDisplayModifier` | 2 |  |
 | [`Skip`](/game-api/types/alta-utilities/skip) | class | `ItemModifier`, `IIgnoreForStaticFlatten`, `IDontSplit` | 1 |  |
-| [`SplineChangedHandler`](/game-api/types/alta-utilities/splinechangedhandler) | delegate |  | 0 |  |
+| [`SplineChangedHandler`](/game-api/types/alta-utilities/splinechangedhandler) | delegate |  | 0 | Callback for `BezierSpline.Changed`, passed the spline that changed. `SplineDisplay` uses it to redraw. |
 | [`SplineCylinder`](/game-api/types/alta-utilities/splinecylinder) | class | `SplineDisplay` | 0 |  |
 | [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator) | class | `SplineDisplay` | 1 |  |
-| [`SplineDecorator.ForwardMode`](/game-api/types/alta-utilities/splinedecorator-forwardmode) | enum |  | 2 |  |
+| [`SplineDecorator.ForwardMode`](/game-api/types/alta-utilities/splinedecorator-forwardmode) | enum |  | 2 | How `SplineDecorator` picks each placed object's forward direction: the curve's direction, or towards the next placed point. |
 | [`SplineDecorator.Part`](/game-api/types/alta-utilities/splinedecorator-part) | struct |  | 5 | One placement point that `SplineDecorator` works out along a spline before spawning an item there. |
-| [`SplineDecorator.RotationMode`](/game-api/types/alta-utilities/splinedecorator-rotationmode) | enum |  | 4 |  |
-| [`SplineDecorator.ScaleMode`](/game-api/types/alta-utilities/splinedecorator-scalemode) | enum |  | 2 |  |
-| [`SplineDecorator.UpMode`](/game-api/types/alta-utilities/splinedecorator-upmode) | enum |  | 2 |  |
+| [`SplineDecorator.RotationMode`](/game-api/types/alta-utilities/splinedecorator-rotationmode) | enum |  | 4 | How `SplineDecorator` rotates placed objects: not at all, look along the forward direction, look along it flattened to horizontal, or look along it with up set to the terrain normal. |
+| [`SplineDecorator.ScaleMode`](/game-api/types/alta-utilities/splinedecorator-scalemode) | enum |  | 2 | Flags for how `SplineDecorator` scales placed objects: stretch along Z to reach the next point, and scale Y by height. |
+| [`SplineDecorator.UpMode`](/game-api/types/alta-utilities/splinedecorator-upmode) | enum |  | 2 | Which up vector `SplineDecorator` uses when applying offsets: world up or the curve's own up. |
 | [`SplineDisplay`](/game-api/types/alta-utilities/splinedisplay) | abstract class | `MonoBehaviour`, `IBakeable` | 5 | Base for something built along a parent `BezierSpline` (a mesh, fence and so on). It rebuilds when the spline changes and can be baked to remove itself. |
 | [`SplineDisplayModifier`](/game-api/types/alta-utilities/splinedisplaymodifier) | abstract class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
 | [`SplineMesh`](/game-api/types/alta-utilities/splinemesh) | class | `SplineDisplay` | 0 |  |
@@ -64,8 +64,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`MaterialInstance`](/game-api/types/alta-utilities/materialinstance) | class | `IDisposable` | 4 |  |
-| [`MaterialInstanceGroup`](/game-api/types/alta-utilities/materialinstancegroup) | class | `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, +1 more | 4 |  |
+| [`MaterialInstance`](/game-api/types/alta-utilities/materialinstance) | class | `IDisposable` | 4 | Takes a renderer's own material copy (`renderer.material`) and cleans it up when disposed, so the copy does not leak. |
+| [`MaterialInstanceGroup`](/game-api/types/alta-utilities/materialinstancegroup) | class | `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, +1 more | 4 | Makes a `MaterialInstance` for each of a set of renderers and disposes them together. |
 
 ## Alta.UnityWrappers
 
@@ -82,9 +82,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AndroidExtensions`](/game-api/types/alta-utilities/androidextensions) | static class |  | 1 |  |
 | [`AsyncPump`](/game-api/types/alta-utilities/asyncpump) | static class |  | 2 |  |
 | [`AvailablePlayerSaveData`](/game-api/types/alta-utilities/availableplayersavedata) | class |  | 0 |  |
-| [`AvailablePlayerSaveData.Available`](/game-api/types/alta-utilities/availableplayersavedata-available) | enum |  | 3 |  |
+| [`AvailablePlayerSaveData.Available`](/game-api/types/alta-utilities/availableplayersavedata-available) | enum |  | 3 | Which player save is available: none, the decked out one or the default one. |
 | [`BakeLODGroupGrouper`](/game-api/types/alta-utilities/bakelodgroupgrouper) | class | `MonoBehaviour`, `IBakeable` | 2 |  |
-| [`BoolSettingValue`](/game-api/types/alta-utilities/boolsettingvalue) | class |  | 1 |  |
+| [`BoolSettingValue`](/game-api/types/alta-utilities/boolsettingvalue) | class |  | 1 | Serializable check that a bool game setting has an expected value. |
 | [`BuildVersionException`](/game-api/types/alta-utilities/buildversionexception) | class | `Exception` | 1 |  |
 | [`BuildVersionExtensions`](/game-api/types/alta-utilities/buildversionextensions) | static class |  | 2 |  |
 | [`ChunkSaveFormat`](/game-api/types/alta-utilities/chunksaveformat) | class | `IAltaFileFormat` | 13 | File format for one chunk's save: a list of versions, each with the chunk's own data and its saved objects. Shared by reference count. |
@@ -95,10 +95,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DamagePopup`](/game-api/types/alta-utilities/damagepopup) | class | `TextPopup` | 3 | [Items, interaction and damage](../items/overview.md) |
 | [`DatabaseSettingsFile`](/game-api/types/alta-utilities/databasesettingsfile) | class | `IAltaFile` | 20 | A settings "file" stored through the Alta web API's settings endpoint instead of on disk. Most file operations do nothing. |
 | [`DebuggingCollection<T>`](/game-api/types/alta-utilities/debuggingcollection-t) | class | `IEnumerable`, `ICollection<T>`, `IEnumerable<T>` | 9 |  |
-| [`DebuggingCollection<T>.DebuggingCollectionEnumerator<TInnerType>`](/game-api/types/alta-utilities/debuggingcollection-t-debuggingcollectionenumerator-tinnertype) | class | `IEnumerator<TInnerType>`, `IEnumerator`, `IDisposable` | 6 |  |
+| [`DebuggingCollection<T>.DebuggingCollectionEnumerator<TInnerType>`](/game-api/types/alta-utilities/debuggingcollection-t-debuggingcollectionenumerator-tinnertype) | class | `IEnumerator<TInnerType>`, `IEnumerator`, `IDisposable` | 6 | Enumerator for `DebuggingCollection` that tracks whether enumeration is under way, so the collection can log changes made while iterating. |
 | [`DevOnlyAttribute`](/game-api/types/alta-utilities/devonlyattribute) | class | `Attribute` | 0 |  |
 | [`DynamicPhysicsTimeSet`](/game-api/types/alta-utilities/dynamicphysicstimeset) | class |  | 1 |  |
-| [`EnumFloatGameSettingsAccess`](/game-api/types/alta-utilities/enumfloatgamesettingsaccess) | class | `FloatGameSettingsAccess` | 2 |  |
+| [`EnumFloatGameSettingsAccess`](/game-api/types/alta-utilities/enumfloatgamesettingsaccess) | class | `FloatGameSettingsAccess` | 2 | Float setting access that only takes values from a fixed list, each with a display name, for settings shown as a set of choices. |
 | [`EnumFloatGameSettingsAccess.CreateEnum`](/game-api/types/alta-utilities/enumfloatgamesettingsaccess-createenum) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumFloatGameSettingsAccess>` | 0 |  |
 | [`EnumGameSettingAccess`](/game-api/types/alta-utilities/enumgamesettingaccess) | class | `EnumSettingAccess` | 3 |  |
 | [`EnumGameSettingAccess.Create`](/game-api/types/alta-utilities/enumgamesettingaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<EnumGameSettingAccess>` | 0 |  |
@@ -132,7 +132,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LandmarkCandidateFinder`](/game-api/types/alta-utilities/landmarkcandidatefinder) | class | `MonoBehaviour` | 0 |  |
 | [`LauncherSettings`](/game-api/types/alta-utilities/launchersettings) | class | `Settings`, `ICloneable` | 1 | Settings shared with the launcher, read through `SettingsManager.LauncherConfig`. Holds only the camera photo folder. |
 | [`LerpingControlledFloatValue`](/game-api/types/alta-utilities/lerpingcontrolledfloatvalue) | class |  | 12 | A float that eases toward a target over time and writes each step through a setter callback. A control value can temporarily take over the target. Call `Update` every frame. |
-| [`LerpingFloatGetValue`](/game-api/types/alta-utilities/lerpingfloatgetvalue) | class |  | 8 |  |
+| [`LerpingFloatGetValue`](/game-api/types/alta-utilities/lerpingfloatgetvalue) | class |  | 8 | A float that eases from its current value towards a target over time. The target can be a function, read again each update. Call `Update` every frame. |
 | [`LerpingFloatValue`](/game-api/types/alta-utilities/lerpingfloatvalue) | class |  | 10 | Helper that moves a float towards a target over time and pushes each new value to a setter. You call `Update` every frame yourself. |
 | [`LerpingValue<T>`](/game-api/types/alta-utilities/lerpingvalue-t) | abstract class |  | 9 |  |
 | [`Line`](/game-api/types/alta-utilities/line) | struct |  | 3 | A line segment between two world points. |
@@ -151,11 +151,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerSaveFileData1`](/game-api/types/alta-utilities/playersavefiledata1) | class | `OldSaveData` | 3 |  |
 | [`PlayerSaveFileData2`](/game-api/types/alta-utilities/playersavefiledata2) | class | `OldSaveData` | 3 |  |
 | [`PlayerSaveUtility`](/game-api/types/alta-utilities/playersaveutility) | class |  | 4 | Server: finds and loads per-player save files. `ServerSaveUtility` makes one over the save's `Players` folder; each player has a subfolder and file named after their user ID. |
-| [`PlayerSmoothingLevel`](/game-api/types/alta-utilities/playersmoothinglevel) | enum |  | 2 |  |
+| [`PlayerSmoothingLevel`](/game-api/types/alta-utilities/playersmoothinglevel) | enum |  | 2 | Amount of smoothing for player movement: default or low. |
 | [`RotateOverTime`](/game-api/types/alta-utilities/rotateovertime) | class | `TransformScriptAnimation`, `IIgnoreForStaticFlatten`, `IDontSplit` | 0 |  |
-| [`Screenshot`](/game-api/types/alta-utilities/screenshot) | class |  | 8 |  |
+| [`Screenshot`](/game-api/types/alta-utilities/screenshot) | class |  | 8 | Takes a photo through a hand camera into a texture and saves it as a PNG (Windows) or to the gallery (Android). Client only. |
 | [`ScriptHelper`](/game-api/types/alta-utilities/scripthelper) | abstract class | `MonoBehaviour` | 0 |  |
-| [`ServerSaveUtility`](/game-api/types/alta-utilities/serversaveutility) | class |  | 12 |  |
+| [`ServerSaveUtility`](/game-api/types/alta-utilities/serversaveutility) | class |  | 12 | Paths to one game server's save folders (save, chunks, cache, logs and player saves). The server makes one for itself; static helpers work from a `GameServerInfo`. |
 | [`ServerSettings`](/game-api/types/alta-utilities/serversettings) | class | `Settings`, `ICloneable` | 49 | [ServerSettings](../../tavernlib-api/types/backend-server-configs/serversettings.md), [Server settings](../networking/server-settings.md#serversettings): A **class** in `TavernLib`, `TavernLib.Backend.Server.Configs`. |
 | [`SetRenderQueue`](/game-api/types/alta-utilities/setrenderqueue) | class | `MonoBehaviour` | 0 |  |
 | [`SettingBasedToggler`](/game-api/types/alta-utilities/settingbasedtoggler) | class | `MonoBehaviour` | 0 |  |
@@ -166,16 +166,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SettingsManager`](/game-api/types/alta-utilities/settingsmanager) | class | `ISettingsManager` | 5 | [Settings and files](../console-and-utilities/settings-and-files.md#settingsmanager): Static members, plus an instance that VContainer hands out as `ISettingsManager`. |
 | [`SettingType`](/game-api/types/alta-utilities/settingtype) | enum |  | 6 | Kind of setting control in a settings menu: toggle, scroll, enum float, command, multi command or assisted multi command. Used to pick the menu widget, as in `DevToolsBoard`. |
 | [`Show_Workspace`](/game-api/types/alta-utilities/show_workspace) | class | `AltaMenuItemBase.Township.Utility` | 0 |  |
-| [`SortedEnumerator<T>`](/game-api/types/alta-utilities/sortedenumerator-t) | class | `IEnumerator<T>`, `IEnumerator`, `IDisposable` | 6 |  |
-| [`SortedList<T>`](/game-api/types/alta-utilities/sortedlist-t) | class | `IEnumerable<T>`, `IEnumerable` | 7 |  |
+| [`SortedEnumerator<T>`](/game-api/types/alta-utilities/sortedenumerator-t) | class | `IEnumerator<T>`, `IEnumerator`, `IDisposable` | 6 | Enumerator over an array snapshot, returned by `SortedList`. |
+| [`SortedList<T>`](/game-api/types/alta-utilities/sortedlist-t) | class | `IEnumerable<T>`, `IEnumerable` | 7 | List kept in ascending order by a comparer, with linear time inserts. Not `System.Collections.Generic.SortedList`. |
 | [`SpawnPoint`](/game-api/types/alta-utilities/spawnpoint) | struct |  | 2 | A plain position and rotation pair for spawning something. |
-| [`StringGameSettingsAccess`](/game-api/types/alta-utilities/stringgamesettingsaccess) | class | `SettingsFieldAccess<string>` | 0 |  |
+| [`StringGameSettingsAccess`](/game-api/types/alta-utilities/stringgamesettingsaccess) | class | `SettingsFieldAccess<string>` | 0 | Setting access asset for a string property on `GameSettings` or `ServerSettings`, found by name. |
 | [`StringGameSettingsAccess.Create`](/game-api/types/alta-utilities/stringgamesettingsaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<StringGameSettingsAccess>` | 0 |  |
-| [`StringSettingValue`](/game-api/types/alta-utilities/stringsettingvalue) | class |  | 1 |  |
+| [`StringSettingValue`](/game-api/types/alta-utilities/stringsettingvalue) | class |  | 1 | Serializable check that a string game setting does, or does not, equal an expected value. |
 | [`TargetChangedHandler<T>`](/game-api/types/alta-utilities/targetchangedhandler-t) | delegate |  | 0 | Callback for when a `ForwardedList<T>` switches the list it forwards to. Gets the forwarded list plus the old and new target lists. |
 | [`TextPopup`](/game-api/types/alta-utilities/textpopup) | class | `MonoBehaviour` | 3 | Client: pooled floating text that drifts upward, faces the local player's head and scales with distance. It switches itself off beyond `maxDistance` and back on when the player comes close. `DamagePopup` extends it. |
 | [`TimelineExtension`](/game-api/types/alta-utilities/timelineextension) | static class |  | 2 |  |
-| [`ToggleGameSettingAccess`](/game-api/types/alta-utilities/togglegamesettingaccess) | class | `SettingsFieldAccess<bool>` | 0 |  |
+| [`ToggleGameSettingAccess`](/game-api/types/alta-utilities/togglegamesettingaccess) | class | `SettingsFieldAccess<bool>` | 0 | Setting access asset for a bool property on `GameSettings` or `ServerSettings`, found by name. Used by toggles and `BoolSettingValue`. |
 | [`ToggleGameSettingAccess.Create`](/game-api/types/alta-utilities/togglegamesettingaccess-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<ToggleGameSettingAccess>` | 0 |  |
 | [`Vector3MaterialProperty`](/game-api/types/alta-utilities/vector3materialproperty) | class | `MaterialProperty<Vector3>` | 3 | A named shader property that takes a `Vector3`, set by cached property id. |
 | [`VertexColorUtility`](/game-api/types/alta-utilities/vertexcolorutility) | static class |  | 1 |  |
@@ -204,11 +204,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RampLerp_CosmeticTestBlit`](/game-api/types/alta-utilities/ramplerp_cosmetictestblit) | internal class | `ShaderBlit` | 1 |  |
 | [`RampLerpBlit`](/game-api/types/alta-utilities/ramplerpblit) | internal class | `ShaderBlit` | 1 |  |
 | [`RampLerpNoCullCutoutBlit`](/game-api/types/alta-utilities/ramplerpnocullcutoutblit) | internal class | `ShaderBlit` | 1 |  |
-| [`Scale`](/game-api/types/alta-utilities/scale) | enum |  | 5 |  |
+| [`Scale`](/game-api/types/alta-utilities/scale) | enum |  | 5 | Size multiplier for a material's textures in an atlas: four times, twice, regular, half or quarter. |
 | [`ShaderBlit`](/game-api/types/alta-utilities/shaderblit) | internal abstract class |  | 1 |  |
 | [`SimpleStandardBlit`](/game-api/types/alta-utilities/simplestandardblit) | internal class | `ShaderBlit` | 1 |  |
 | [`StandardHeatBlit`](/game-api/types/alta-utilities/standardheatblit) | internal class | `ShaderBlit` | 1 |  |
-| [`UVFixType`](/game-api/types/alta-utilities/uvfixtype) | enum |  | 2 |  |
+| [`UVFixType`](/game-api/types/alta-utilities/uvfixtype) | enum |  | 2 | How the atlas tool fixes a mesh's UVs after packing: not at all, or through texture coordinates (the default). |
 | [`WindFoliageBlit`](/game-api/types/alta-utilities/windfoliageblit) | internal class | `ShaderBlit` | 1 |  |
 | [`WindFoliageRampLerp3Blit`](/game-api/types/alta-utilities/windfoliageramplerp3blit) | internal class | `ShaderBlit` | 1 |  |
 | [`WindFoliageTextureSwayBlit`](/game-api/types/alta-utilities/windfoliagetextureswayblit) | internal class | `ShaderBlit` | 1 |  |
@@ -231,7 +231,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GraphicsLevelDisplay`](/game-api/types/alta-utilities/graphicsleveldisplay) | class | `LiveDataDisplayBase` | 1 |  |
 | [`LastCombatHit`](/game-api/types/alta-utilities/lastcombathit) | class | `LiveDataDisplayBase` | 2 |  |
 | [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase) | abstract class | `ScriptableObject` | 6 | Base asset for one line of the live debug data display (a title and a value). Subclasses supply the value text. |
-| [`LiveDataDisplayCollection`](/game-api/types/alta-utilities/livedatadisplaycollection) | class | `ScriptableObject` | 1 |  |
+| [`LiveDataDisplayCollection`](/game-api/types/alta-utilities/livedatadisplaycollection) | class | `ScriptableObject` | 1 | Asset listing the live data displays that `LiveDataDisplayView` shows on the debug overlay. |
 | [`LiveDataDisplayView`](/game-api/types/alta-utilities/livedatadisplayview) | class | `MonoBehaviour` | 1 | Client: the on-screen debug readout (FPS and similar stats) on the player. Toggled by the DisplayFPS controller action for users with the `debug_features` permission. |
 | [`NetworkBytesDisplay`](/game-api/types/alta-utilities/networkbytesdisplay) | class | `LiveDataDisplayBase` | 2 |  |
 | [`NetworkMessagesDisplay`](/game-api/types/alta-utilities/networkmessagesdisplay) | class | `LiveDataDisplayBase` | 2 |  |
@@ -246,7 +246,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ConnectionChannelStatistic`](/game-api/types/alta-utilities/connectionchannelstatistic) | class | `NetworkingStatistic` | 2 |  |
+| [`ConnectionChannelStatistic`](/game-api/types/alta-utilities/connectionchannelstatistic) | class | `NetworkingStatistic` | 2 | Network transport statistic for one connection channel, labelled with the channel's quality of service. |
 | [`ConnectionChannelStatistics`](/game-api/types/alta-utilities/connectionchannelstatistics) | class | `NetworkingStatisticsList<ConnectionChannelStatistic, KeyValuePair<ConnectionChannel, ConnectionChannelStatistic>>` | 1 |  |
 | [`INetworkStatistic`](/game-api/types/alta-utilities/inetworkstatistic) | interface |  | 4 |  |
 | [`INetworkStatisticCollection`](/game-api/types/alta-utilities/inetworkstatisticcollection) | interface |  | 4 |  |

@@ -1,6 +1,6 @@
 ---
 title: "UltimateRope.EColliderType"
-description: "enum UltimateRope.EColliderType in Root.Township."
+description: "Collider shape put on each rope segment of an UltimateRope: None, Capsule or Box."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UltimateRope.EColliderType
 
 An **enum** in `Root.Township`, no namespace.
+
+Collider shape put on each rope segment of an `UltimateRope`: `None`, `Capsule` or `Box`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`UltimateRope`](/game-api/types/global-t-x/ultimaterope)

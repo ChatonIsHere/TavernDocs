@@ -1,6 +1,6 @@
 ---
 title: "RequestShopTokenRequest"
-description: "class RequestShopTokenRequest in Alta.Api.DataTransferModels."
+description: "Empty body of the Alta web API call that gets a shop token (GetShopTokenAsync)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RequestShopTokenRequest
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Empty body of the Alta web API call that gets a shop token (`GetShopTokenAsync`).
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

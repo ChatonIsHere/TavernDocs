@@ -1,6 +1,6 @@
 ---
 title: "AchievementItem"
-description: "class AchievementItem in Root.Township."
+description: "One row on an achievement board that shows a GameAchievement description as text."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AchievementItem
 
 A **class** in `Root.Township`, no namespace.
+
+One row on an achievement board that shows a `GameAchievement` description as text. Filled by `AchievementBoard`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`, [`IAchievementItem`](/game-api/types/global-i-l/iachievementitem)
@@ -26,25 +28,25 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-achievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement"}</code> |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-achievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement"}</code> | The achievement this row shows. |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | Text that shows the description. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setachievement" /><code>{"void SetAchievement("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setachievement" /><code>{"void SetAchievement("}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Sets the achievement and shows its description. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Shows the assigned achievement's description, except on a headless server. |
 
 </details>
 

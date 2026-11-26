@@ -1,6 +1,6 @@
 ---
 title: "SplineDecorator.ScaleMode"
-description: "enum SplineDecorator.ScaleMode in Root.Township."
+description: "Flags for how SplineDecorator scales placed objects: stretch along Z to reach the next point, and scale Y by height."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplineDecorator.ScaleMode
 
 An **enum** in `Root.Township`, `Alta.Bezier`.
+
+Flags for how `SplineDecorator` scales placed objects: stretch along Z to reach the next point, and scale Y by height.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator)

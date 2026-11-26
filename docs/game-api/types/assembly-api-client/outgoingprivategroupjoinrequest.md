@@ -1,6 +1,6 @@
 ---
 title: "OutgoingPrivateGroupJoinRequest"
-description: "class OutgoingPrivateGroupJoinRequest in Alta.Api.Client."
+description: "A join request to a group known only by id."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OutgoingPrivateGroupJoinRequest
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+A join request to a group known only by id. Revoke it to withdraw.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`Outgoing`](/game-api/types/assembly-api-client/outgoing)
@@ -28,15 +30,15 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-groupidentifier" /><code>{"int GroupIdentifier { get; }"}</code> | Id of the group the request was sent to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | Calls the API to withdraw the join request. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "SpecPortConfig"
-description: "class SpecPortConfig in Alta.Api.DataTransferModels."
+description: "A port in an Agones game server spec."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Agones`.
 
+A port in an Agones game server spec.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-containerport" /><code>{"int ContainerPort { get; set; }"}</code> |
-| <Link id="m-hostport" /><code>{"int HostPort { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-portpolicy" /><code>{"string PortPolicy { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-containerport" /><code>{"int ContainerPort { get; set; }"}</code> | Port inside the container. |
+| <Link id="m-hostport" /><code>{"int HostPort { get; set; }"}</code> | Port on the host node. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Port name. |
+| <Link id="m-portpolicy" /><code>{"string PortPolicy { get; set; }"}</code> | Agones port policy name. |
 
 ## Used in
 

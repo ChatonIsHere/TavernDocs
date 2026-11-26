@@ -1,6 +1,6 @@
 ---
 title: "ApplicationType"
-description: "enum ApplicationType in Root.Township."
+description: "How a scrapper argument applies saved values: one target and value, many targets sharing one value, or many targets with their own values."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ApplicationType
 
 An **enum** in `Root.Township`, `Alta.Scrapper`.
+
+How a scrapper argument applies saved values: one target and value, many targets sharing one value, or many targets with their own values.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Attributes** `Flags`

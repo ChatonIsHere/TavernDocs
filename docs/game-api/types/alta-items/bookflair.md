@@ -29,9 +29,9 @@ Base asset for a decoration (spine, edge, emblem) added to a book's model, with 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-items/flairlodset">{"FlairLodSet"}</Link>{" prefab"}</code> | The `FlairLodSet` prefab that `AddTo` spawns under the attach point. |
 
 </details>
 

@@ -31,13 +31,13 @@ Global settings for Wwise impact sounds: the send and receive events, velocity R
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-defaultimpactsound" /><code>{"private Switch defaultImpactSound"}</code> |
-| <Link id="m-impactreceiveevent" /><code>{"private Event impactReceiveEvent"}</code> |
-| <Link id="m-impactsendevent" /><code>{"private Event impactSendEvent"}</code> |
-| <Link id="m-impactsoundmap" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" impactSoundMap"}</code> |
-| <Link id="m-impactvelocityrtpc" /><code>{"private RTPC impactVelocityRTPC"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-defaultimpactsound" /><code>{"private Switch defaultImpactSound"}</code> | Backing field for `DefaultImpactSound`: the switch used when a material isn't in the map. |
+| <Link id="m-impactreceiveevent" /><code>{"private Event impactReceiveEvent"}</code> | Backing field for `ImpactRecieveEvent` (spelled that way). |
+| <Link id="m-impactsendevent" /><code>{"private Event impactSendEvent"}</code> | Backing field for `ImpactSendEvent`. |
+| <Link id="m-impactsoundmap" /><code>{"private "}<Link to="/game-api/types/global-i-l/impactsoundmap">{"ImpactSoundMap"}</Link>{" impactSoundMap"}</code> | Backing field for `ImpactSoundMap`. |
+| <Link id="m-impactvelocityrtpc" /><code>{"private RTPC impactVelocityRTPC"}</code> | Backing field for `ImpactVelocityRTPC`, the Wwise parameter for impact speed. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerSmoothingLevel"
-description: "enum PlayerSmoothingLevel in Root.Township."
+description: "Amount of smoothing for player movement: default or low."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSmoothingLevel
 
 An **enum** in `Root.Township`, `Alta.Utilities`.
+
+Amount of smoothing for player movement: default or low.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

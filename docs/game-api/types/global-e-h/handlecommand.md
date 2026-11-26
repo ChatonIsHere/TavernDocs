@@ -1,6 +1,6 @@
 ---
 title: "HandleCommand"
-description: "delegate HandleCommand in Root.Township."
+description: "Handler for a remote console command received by ClientCommandHandler: gets the raw message buffer and its length."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandleCommand
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for a remote console command received by `ClientCommandHandler`: gets the raw message buffer and its length. Registered per command type with `AddHandler`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MulticastDelegate`

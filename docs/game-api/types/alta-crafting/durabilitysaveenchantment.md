@@ -1,6 +1,6 @@
 ---
 title: "DurabilitySaveEnchantment"
-description: "class DurabilitySaveEnchantment in Root.Township."
+description: "Enchantment effect asset that scales how much durability a tool loses on a hit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DurabilitySaveEnchantment
 
 A **class** in `Root.Township`, `Alta.Enchantments`.
+
+Enchantment effect asset that scales how much durability a tool loses on a hit.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`EnchantmentEffect`](/game-api/types/alta-crafting/enchantmenteffect)
@@ -28,23 +30,23 @@ A **class** in `Root.Township`, `Alta.Enchantments`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-durabilitylostmultiplier" /><code>{"private float durabilityLostMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-durabilitylostmultiplier" /><code>{"private float durabilityLostMultiplier"}</code> | Backing field for `DurabilityLostMultiplier`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-durabilitylostmultiplier-2" /><code>{"float DurabilityLostMultiplier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-durabilitylostmultiplier-2" /><code>{"float DurabilityLostMultiplier { get; }"}</code> | Factor the hit's durability loss is multiplied by. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-createnew" /><code>{"protected override "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createnew" /><code>{"protected override "}<Link to="/game-api/types/alta-crafting/ienchantmenteffectapplication">{"IEnchantmentEffectApplication"}</Link>{" CreateNew("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment)"}</code> | Creates the `DurabilitySaveEnchantmentApplication` that applies this effect to an enchanted item. |
 
 ## Used in
 

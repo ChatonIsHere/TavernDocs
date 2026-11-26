@@ -31,14 +31,14 @@ A saved mesh placement for the Scrapper tool: local transform, mesh and material
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> |
-| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
-| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> |
-| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> |
-| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forcedatlasdefinition" /><code>{"private "}<Link to="/game-api/types/alta-utilities/atlasdefinition">{"AtlasDefinition"}</Link>{" forcedAtlasDefinition"}</code> | Atlas to try first when baking. Cleared after the bake attempt. |
+| <Link id="m-localeulerangles" /><code>{"private Vector3 localEulerAngles"}</code> | Saved local rotation in euler angles. |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | Saved local position. |
+| <Link id="m-localscale" /><code>{"private Vector3 localScale"}</code> | Saved local scale. |
+| <Link id="m-sharedmaterial" /><code>{"private Material sharedMaterial"}</code> | Saved material; replaced by the atlas material when baked. |
+| <Link id="m-sharedmesh" /><code>{"private Mesh sharedMesh"}</code> | Saved mesh; replaced by the atlas mesh when baked. |
 
 </details>
 

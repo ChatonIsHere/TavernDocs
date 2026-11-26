@@ -1,6 +1,6 @@
 ---
 title: "RawLogHandler"
-description: "delegate RawLogHandler in Root.Township."
+description: "Event handler for a raw NLog event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RawLogHandler
 
 A **delegate** in `Root.Township`, `Alta.Logging.Targets`.
+
+Event handler for a raw NLog event. Used by the `LogSentRaw` events on `ServerConsoleLogTarget` and `ConsoleCommandsLogTarget`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** `MulticastDelegate`

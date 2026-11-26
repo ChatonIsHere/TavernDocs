@@ -1,6 +1,6 @@
 ---
 title: "Curve"
-description: "class Curve in Root.Township."
+description: "Cave generator part that remaps every cell of a layer through an animation curve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Curve
 
 A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
+
+Cave generator part that remaps every cell of a layer through an animation curve.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`MapGeneratorPart`](/game-api/types/alta-world-generation/mapgeneratorpart)
@@ -27,23 +29,23 @@ A **class** in `Root.Township`, `Alta.Caves.PluginParts`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | Backing field for `AnimationCurve`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-animationcurve" /><code>{"AnimationCurve AnimationCurve { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationcurve" /><code>{"AnimationCurve AnimationCurve { get; }"}</code> | The curve each cell value is passed through. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getinstance" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{" GetInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin)"}</code> | Creates the `CurveInstance` that does the work. |
 
 ## Used in
 

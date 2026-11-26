@@ -1,6 +1,6 @@
 ---
 title: "BaseCommands.SearchResult"
-description: "class BaseCommands.SearchResult in Root.Township."
+description: "One match found by the search console command: a module or command whose name matched."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BaseCommands.SearchResult
 
 A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+One match found by the `search` console command: a module or command whose name matched.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`BaseCommands`](/game-api/types/alta-console/basecommands)
@@ -23,9 +25,9 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-part" /><code><Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-part" /><code><Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" Part { get; set; }"}</code> | The module or command that matched. |
 
 ## Used in
 

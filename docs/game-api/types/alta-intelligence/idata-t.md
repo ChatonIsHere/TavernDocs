@@ -1,6 +1,6 @@
 ---
 title: "IData<T>"
-description: "interface IData<T> in Root.Township."
+description: "AI logic term that carries a value of type T."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IData&lt;T&gt;
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
+
+AI logic term that carries a value of type `T`. Implemented by `Variable<T>` and `DataAtom<T>`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`ITerm`](/game-api/types/alta-intelligence/iterm)

@@ -1,6 +1,6 @@
 ---
 title: "PickupTypeSetting"
-description: "abstract class PickupTypeSetting in Root.Township."
+description: "Base settings asset for one pickup joint type, looked up from PickupTypeSettings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupTypeSetting
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base settings asset for one pickup joint type, looked up from `PickupTypeSettings`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`OverridableSettings`](/game-api/types/global-m-o/overridablesettings)
@@ -27,17 +29,17 @@ An **abstract class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" type"}</code> | Backing field for `Type`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" Type { get; }"}</code> | The joint type these settings are for. |
 
 ## Used in
 

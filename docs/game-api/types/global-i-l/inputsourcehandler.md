@@ -1,6 +1,6 @@
 ---
 title: "InputSourceHandler"
-description: "delegate InputSourceHandler in Root.Township."
+description: "Handler for InputSource.InputStarted and InputEnded: gets the input source and the PlayerInput it came from."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InputSourceHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `InputSource.InputStarted` and `InputEnded`: gets the input source and the `PlayerInput` it came from.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MulticastDelegate`

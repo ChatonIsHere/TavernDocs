@@ -1,6 +1,6 @@
 ---
 title: "TriggerEnterEvents.ColliderEvent"
-description: "class TriggerEnterEvents.ColliderEvent in Root.Township."
+description: "Serializable event that passes a collider, raised by TriggerEnterEvents when something enters its trigger."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TriggerEnterEvents.ColliderEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable event that passes a collider, raised by `TriggerEnterEvents` when something enters its trigger.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TriggerEnterEvents`](/game-api/types/global-t-x/triggerenterevents)

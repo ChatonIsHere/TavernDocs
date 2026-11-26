@@ -1,6 +1,6 @@
 ---
 title: "InputToActionMapping.HandType"
-description: "enum InputToActionMapping.HandType in Root.Township."
+description: "Which hand an input mapping applies to: both, left or right."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InputToActionMapping.HandType
 
 An **enum** in `Root.Township`, no namespace.
+
+Which hand an input mapping applies to: both, left or right.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InputToActionMapping`](/game-api/types/global-i-l/inputtoactionmapping)

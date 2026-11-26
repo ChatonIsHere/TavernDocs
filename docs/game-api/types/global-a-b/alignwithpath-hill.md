@@ -1,6 +1,6 @@
 ---
 title: "AlignWithPath.Hill"
-description: "enum AlignWithPath.Hill in Root.Township."
+description: "Which slope direction AlignWithPath accepts between path nodes: Either, Uphill or Downhill."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AlignWithPath.Hill
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which slope direction `AlignWithPath` accepts between path nodes: `Either`, `Uphill` or `Downhill`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`AlignWithPath`](/game-api/types/global-a-b/alignwithpath)

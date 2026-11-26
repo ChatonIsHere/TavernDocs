@@ -1,6 +1,6 @@
 ---
 title: "ModHands.ModEvent"
-description: "delegate ModHands.ModEvent in Root.Township."
+description: "Handler for ModHands.ModCalled, given the controller whose debug mod button was pressed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ModHands.ModEvent
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `ModHands.ModCalled`, given the controller whose debug mod button was pressed.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`ModHands`](/game-api/types/global-m-o/modhands)

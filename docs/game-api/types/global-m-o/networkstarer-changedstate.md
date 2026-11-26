@@ -1,6 +1,6 @@
 ---
 title: "NetworkStarer.ChangedState"
-description: "delegate NetworkStarer.ChangedState in Root.Township."
+description: "Handler for NetworkStarer.ChangedTurning: true when the body starts turning to face the target, false when it stops."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkStarer.ChangedState
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `NetworkStarer.ChangedTurning`: true when the body starts turning to face the target, false when it stops.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`NetworkStarer`](/game-api/types/global-m-o/networkstarer)

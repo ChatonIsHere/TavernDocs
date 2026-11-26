@@ -1,6 +1,6 @@
 ---
 title: "PickupLiquidContainerEnabler.DockingElibility"
-description: "enum PickupLiquidContainerEnabler.DockingElibility in Root.Township."
+description: "Which docks a liquid container pickup may go in while it holds liquid: none, only physical docks, or any."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupLiquidContainerEnabler.DockingElibility
 
 An **enum** in `Root.Township`, `Alta.Liquid`.
+
+Which docks a liquid container pickup may go in while it holds liquid: none, only physical docks, or any.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`PickupLiquidContainerEnabler`](/game-api/types/alta-stats-effects/pickupliquidcontainerenabler)

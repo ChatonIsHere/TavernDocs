@@ -1,6 +1,6 @@
 ---
 title: "HeatArea.PointFilterDelegate"
-description: "delegate HeatArea.PointFilterDelegate in Root.Township."
+description: "Handler for HeatArea.PointFilter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HeatArea.PointFilterDelegate
 
 A **delegate** in `Root.Township`, `Alta.Heat`.
+
+Handler for `HeatArea.PointFilter`. Set `isValid` to false to stop a heat point that entered the area from being registered.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`HeatArea`](/game-api/types/alta-stats-effects/heatarea)

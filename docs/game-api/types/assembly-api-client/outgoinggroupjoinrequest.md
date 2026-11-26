@@ -1,6 +1,6 @@
 ---
 title: "OutgoingGroupJoinRequest"
-description: "class OutgoingGroupJoinRequest in Alta.Api.Client."
+description: "A join request the current user has sent to a group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OutgoingGroupJoinRequest
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+A join request the current user has sent to a group. Revoke it to withdraw.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`Outgoing`](/game-api/types/assembly-api-client/outgoing)
@@ -29,15 +31,15 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> | The group the request was sent to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | Calls the API to withdraw the join request. |
 
 ## Used in
 

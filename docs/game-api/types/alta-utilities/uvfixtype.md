@@ -1,6 +1,6 @@
 ---
 title: "UVFixType"
-description: "enum UVFixType in Root.Township."
+description: "How the atlas tool fixes a mesh's UVs after packing: not at all, or through texture coordinates (the default)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UVFixType
 
 An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
+
+How the atlas tool fixes a mesh's UVs after packing: not at all, or through texture coordinates (the default).
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

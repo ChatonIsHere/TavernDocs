@@ -1,6 +1,6 @@
 ---
 title: "PlayerTextMessage"
-description: "struct PlayerTextMessage in Root.Township."
+description: "A text message and how long to show it, sent from the server to one player by PlayerCommunicationManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerTextMessage
 
 A **struct** in `Root.Township`, no namespace.
+
+A text message and how long to show it, sent from the server to one player by `PlayerCommunicationManager`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 
@@ -25,25 +27,25 @@ A **struct** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-displayduration" /><code>{"private float displayDuration"}</code> |
-| <Link id="m-message" /><code>{"private string message"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayduration" /><code>{"private float displayDuration"}</code> | Backing field for `DisplayDuration`. |
+| <Link id="m-message" /><code>{"private string message"}</code> | Backing field for `Message`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-displayduration-2" /><code>{"float DisplayDuration { get; }"}</code> |
-| <Link id="m-message-2" /><code>{"string Message { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayduration-2" /><code>{"float DisplayDuration { get; }"}</code> | How long the message stays on screen, in seconds (synced in 0.1 s steps, up to 100). |
+| <Link id="m-message-2" /><code>{"string Message { get; }"}</code> | The message text. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the message and duration on the network stream. |
 
 ## Used in
 

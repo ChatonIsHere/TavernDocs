@@ -1,6 +1,6 @@
 ---
 title: "SoundSourceEvent"
-description: "delegate SoundSourceEvent in Root.Township."
+description: "Parameterless handler for SoundSource.OnPlay and SoundSource.OnStop."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SoundSourceEvent
 
 A **delegate** in `Root.Township`, no namespace.
+
+Parameterless handler for `SoundSource.OnPlay` and `SoundSource.OnStop`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MulticastDelegate`

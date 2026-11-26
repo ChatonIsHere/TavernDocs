@@ -1,6 +1,6 @@
 ---
 title: "TrackerData"
-description: "class TrackerData in Root.Township."
+description: "Save data for a Tracker, the component that registers a network entity under a name so it can be looked up later."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TrackerData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `Tracker`, the component that registers a network entity under a name so it can be looked up later.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`NewSaveData<Tracker, TrackerData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string name"}</code> | Name the entity is tracked under. |
 
 ## Used in
 

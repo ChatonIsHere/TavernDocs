@@ -1,6 +1,6 @@
 ---
 title: "PathWalker.OnTargetReached"
-description: "delegate PathWalker.OnTargetReached in Root.Township."
+description: "Handler for PathWalker.OnPathEndReached, called when the walker reaches the end of its path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PathWalker.OnTargetReached
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `PathWalker.OnPathEndReached`, called when the walker reaches the end of its path.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PathWalker`](/game-api/types/global-p/pathwalker)

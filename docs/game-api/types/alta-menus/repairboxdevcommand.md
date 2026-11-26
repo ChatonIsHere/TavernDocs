@@ -1,6 +1,6 @@
 ---
 title: "RepairBoxDevCommand"
-description: "enum RepairBoxDevCommand in Root.Township."
+description: "Dev tool command sent from RepairBoxDevControlPanel to the server: instantly build (repair) or destroy (unrepair) a repair box."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RepairBoxDevCommand
 
 An **enum** in `Root.Township`, `Alta.UI`.
+
+Dev tool command sent from `RepairBoxDevControlPanel` to the server: instantly build (repair) or destroy (unrepair) a repair box.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

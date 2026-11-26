@@ -1,6 +1,6 @@
 ---
 title: "ImpactModifierStatAffect.HitValue"
-description: "enum ImpactModifierStatAffect.HitValue in Root.Township."
+description: "Which value of a hit drives the stat change: health damage, cripple damage or effectiveness."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactModifierStatAffect.HitValue
 
 An **private enum** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which value of a hit drives the stat change: health damage, cripple damage or effectiveness.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactModifierStatAffect`](/game-api/types/alta-items/impactmodifierstataffect)

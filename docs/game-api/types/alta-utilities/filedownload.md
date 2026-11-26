@@ -1,6 +1,6 @@
 ---
 title: "FileDownload"
-description: "class FileDownload in Root.Township."
+description: "Result type for console commands that write a file for the caller, stored under the game's storage folder in Command Output, one subfolder per calling user."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta`.
 
+Result type for console commands that write a file for the caller, stored under the game's storage folder in Command Output, one subfolder per calling user. A string converts to it implicitly.
+
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
 ## Constructors
@@ -22,32 +24,32 @@ A **class** in `Root.Township`, `Alta`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-folder" /><code>{"static string Folder"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-folder" /><code>{"static string Folder"}</code> | Root output folder: Command Output inside the game's storage folder. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-downloadurl" /><code>{"string DownloadUrl { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-downloadurl" /><code>{"string DownloadUrl { get; set; }"}</code> | The file name (serialised as `downloadUrl`) the command output is written to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getpath" /><code>{"static string GetPath(string input)"}</code> |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-utilities/filedownload">{"FileDownload"}</Link>{" op_Implicit(string url)"}</code> |
-| <Link id="m-openwrite" /><code>{"StreamWriter OpenWrite()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getpath" /><code>{"static string GetPath(string input)"}</code> | Full path for a file in the calling user's output folder. Logs an error and returns the root if there's no command context. |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-utilities/filedownload">{"FileDownload"}</Link>{" op_Implicit(string url)"}</code> | Lets a command return a file name string as a `FileDownload`. |
+| <Link id="m-openwrite" /><code>{"StreamWriter OpenWrite()"}</code> | Deletes any old file at this path and opens a new text file for writing. |
 
 ## Used in
 

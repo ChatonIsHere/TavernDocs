@@ -1,6 +1,6 @@
 ---
 title: "RotationChangedHandler"
-description: "delegate RotationChangedHandler in Root.Township."
+description: "Callback for LocomotionController.RotationChanged: the player plus their old and new rotation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RotationChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Character`.
+
+Callback for `LocomotionController.RotationChanged`: the player plus their old and new rotation.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "EquipmentReference.EquipmentChangedHandler"
-description: "delegate EquipmentReference.EquipmentChangedHandler in Root.Township."
+description: "Handler for EquipmentReference.Changed, called with the new armour definition when Equipment is set."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EquipmentReference.EquipmentChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Impact`.
+
+Handler for `EquipmentReference.Changed`, called with the new armour definition when `Equipment` is set.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`EquipmentReference`](/game-api/types/alta-items/equipmentreference)

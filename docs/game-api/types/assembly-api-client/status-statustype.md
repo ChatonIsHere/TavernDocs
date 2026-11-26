@@ -1,6 +1,6 @@
 ---
 title: "Status.StatusType"
-description: "enum Status.StatusType in Alta.Api.Client."
+description: "Whether a service status notice is OnGoing or Resolved."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Status.StatusType
 
 An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Whether a service status notice is `OnGoing` or `Resolved`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Nested in** [`Status`](/game-api/types/assembly-api-client/status)

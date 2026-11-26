@@ -1,6 +1,6 @@
 ---
 title: "AudioMuteEvent"
-description: "delegate AudioMuteEvent in Root.Township."
+description: "Delegate for a mute change; the argument says whether audio is now muted."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AudioMuteEvent
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate for a mute change; the argument says whether audio is now muted.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MulticastDelegate`

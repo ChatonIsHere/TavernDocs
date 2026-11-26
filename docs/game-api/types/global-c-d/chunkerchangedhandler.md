@@ -1,6 +1,6 @@
 ---
 title: "ChunkerChangedHandler"
-description: "delegate ChunkerChangedHandler in Root.Township."
+description: "Delegate raised when an object's Chunker changes, with the old and new chunker."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkerChangedHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate raised when an object's `Chunker` changes, with the old and new chunker.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

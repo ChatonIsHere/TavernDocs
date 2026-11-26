@@ -1,6 +1,6 @@
 ---
 title: "AttributeUsage"
-description: "class AttributeUsage in Root.Township."
+description: "A float value made from a base value scaled by attribute curves, such as biome attributes in world generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttributeUsage
 
 A **class** in `Root.Township`, no namespace.
+
+A float value made from a base value scaled by attribute curves, such as biome attributes in world generation.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 
@@ -25,18 +27,18 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |
-| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] multipliers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> | The starting value before multipliers. Defaults to 1. |
+| <Link id="m-multipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] multipliers"}</code> | Curves that each scale the value by one attribute. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getvalue" /><code>{"float GetValue("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes = null)"}</code> | Returns `baseValue` times each multiplier curve evaluated at its attribute. With no attribute set, returns `baseValue`. |
 
 ## Used in
 

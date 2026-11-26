@@ -1,6 +1,6 @@
 ---
 title: "WackyCommandModule.LootData"
-description: "class WackyCommandModule.LootData in Root.Township."
+description: "One chest's loot module for the ow-loot command."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WackyCommandModule.LootData
 
 A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+One chest's loot module for the `ow-loot` command.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WackyCommandModule`](/game-api/types/alta-console/wackycommandmodule)
@@ -23,10 +25,10 @@ A **private class** in `Root.Township`, `Alta.Console.Commands`. Reach it throug
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-json" /><code>{"string json"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-json" /><code>{"string json"}</code> | `LootModule` settings as JSON, applied to the new module with `JsonUtility.FromJsonOverwrite`. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the chest is. The nearest chest within 1 metre gets the module. |
 
 ## Used in
 

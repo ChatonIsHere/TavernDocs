@@ -1,6 +1,6 @@
 ---
 title: "DurationType"
-description: "enum DurationType in Alta.Api.DataTransferModels."
+description: "Unit of a Duration: day, month or year."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DurationType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Unit of a `Duration`: day, month or year.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

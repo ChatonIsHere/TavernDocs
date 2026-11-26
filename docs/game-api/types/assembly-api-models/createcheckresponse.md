@@ -1,6 +1,6 @@
 ---
 title: "CreateCheckResponse"
-description: "class CreateCheckResponse in Alta.Api.DataTransferModels."
+description: "Alta web API reply to CanCreateGroups: how many more groups the user may create on each platform."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Alta web API reply to `CanCreateGroups`: how many more groups the user may create on each platform.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-pcgroupsleft" /><code>{"int PcGroupsLeft { get; set; }"}</code> |
-| <Link id="m-questgroupsleft" /><code>{"int QuestGroupsLeft { get; set; }"}</code> |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pcgroupsleft" /><code>{"int PcGroupsLeft { get; set; }"}</code> | PC groups the user can still create. |
+| <Link id="m-questgroupsleft" /><code>{"int QuestGroupsLeft { get; set; }"}</code> | Quest groups the user can still create. |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | Old yes or no flag. Marked obsolete. |
 
 ## Used in
 

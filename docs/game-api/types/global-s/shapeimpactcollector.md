@@ -1,6 +1,6 @@
 ---
 title: "ShapeImpactCollector"
-description: "abstract class ShapeImpactCollector in Root.Township."
+description: "Asset describing a shape (sphere or cylinder) that collects the colliders an area attack hits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShapeImpactCollector
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Asset describing a shape (sphere or cylinder) that collects the colliders an area attack hits. `AreaAttackSkill` picks one per skill level.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `ScriptableObject`
@@ -24,16 +26,16 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-sizesquared" /><code>{"abstract float SizeSquared { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sizesquared" /><code>{"abstract float SizeSquared { get; }"}</code> | Squared radius of the shape; `AreaAttackSkill` divides squared distances by it to scale damage falloff. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-collectcolliders" /><code>{"abstract IEnumerable<Collider> CollectColliders("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> |
-| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-collectcolliders" /><code>{"abstract IEnumerable<Collider> CollectColliders("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, LayerMask collectionLayer)"}</code> | Returns the colliders on the given layers inside the shape at a tool hit. |
+| <Link id="m-drawgizmos" /><code>{"virtual void DrawGizmos()"}</code> | Draws the shape in the editor; does nothing by default. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ButtonSoundSettings"
-description: "class ButtonSoundSettings in Root.Township."
+description: "UI button settings asset that adds sounds for press and release."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonSoundSettings
 
 A **class** in `Root.Township`, no namespace.
+
+UI button settings asset that adds sounds for press and release.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`ButtonSettings`](/game-api/types/alta-menus/buttonsettings)
@@ -24,10 +26,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-onpressed" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onPressed"}</code> |
-| <Link id="m-onreleased" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onReleased"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onpressed" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onPressed"}</code> | Sounds played when the button is pressed. |
+| <Link id="m-onreleased" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" onReleased"}</code> | Sounds played when the button is released. |
 
 ## Used in
 

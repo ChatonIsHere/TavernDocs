@@ -1,6 +1,6 @@
 ---
 title: "ITimeline"
-description: "interface ITimeline in Alta.Timing.Runtime."
+description: "Something that TimelineUpdater advances each frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Timing.Runtime`, `Alta.Timing`.
 
+Something that `TimelineUpdater` advances each frame. `Timeline` is the only implementation.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`Timeline`](/game-api/types/assembly-other/timeline)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"void Update(TimeSpan deltaTime)"}</code> | Advances the timeline by the given time and runs whatever is due. |
 
 ## Used in
 

@@ -33,13 +33,13 @@ Base for a kind of page content (for books and notes). Each provider registers i
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnrandomtest" /><code>{"private bool btnRandomTest"}</code> |
-| <Link id="m-btntest" /><code>{"private bool btnTest"}</code> |
-| <Link id="m-providers" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> providers"}</code> |
-| <Link id="m-spawnweight" /><code>{"private float spawnWeight"}</code> |
-| <Link id="m-totalspawnweight" /><code>{"private static float totalSpawnWeight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnrandomtest" /><code>{"private bool btnRandomTest"}</code> | Inspector button that runs `TestRandom`. |
+| <Link id="m-btntest" /><code>{"private bool btnTest"}</code> | Inspector button that runs `Test`. |
+| <Link id="m-providers" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{"> providers"}</code> | Backing field for `Providers`: all registered providers by identifier. |
+| <Link id="m-spawnweight" /><code>{"private float spawnWeight"}</code> | How likely this provider's pages are picked by `GetRandomSpawn`. |
+| <Link id="m-totalspawnweight" /><code>{"private static float totalSpawnWeight"}</code> | Sum of all providers' spawn weights. |
 
 </details>
 
@@ -66,9 +66,9 @@ Base for a kind of page content (for books and notes). Each provider registers i
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Registers this provider by `Identifier` and recalculates the total spawn weight. |
 
 </details>
 

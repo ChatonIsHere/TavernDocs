@@ -1,6 +1,6 @@
 ---
 title: "AgonesAllocationFailureType"
-description: "enum AgonesAllocationFailureType in Alta.Api.DataTransferModels."
+description: "Why allocating an Agones game server failed: no access to the cluster, web request failed, could not allocate, or server locked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AgonesAllocationFailureType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Agones`.
+
+Why allocating an Agones game server failed: no access to the cluster, web request failed, could not allocate, or server locked.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

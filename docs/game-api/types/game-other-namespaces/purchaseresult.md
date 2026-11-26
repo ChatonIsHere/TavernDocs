@@ -1,6 +1,6 @@
 ---
 title: "PurchaseResult"
-description: "class PurchaseResult in Root.Township."
+description: "Result of a Talem shop purchase: success, or a PurchaseError saying why it failed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PurchaseResult
 
 A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop`.
+
+Result of a Talem shop purchase: success, or a `PurchaseError` saying why it failed.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-error" /><code><Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-error" /><code><Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" Error"}</code> | Why the purchase failed. Only meaningful when `IsSuccess` is false. |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess"}</code> | True when the purchase went through. The no-argument constructor sets it. |
 
 ## Used in
 

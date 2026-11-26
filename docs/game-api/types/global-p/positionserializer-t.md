@@ -1,6 +1,6 @@
 ---
 title: "PositionSerializer<T>"
-description: "class PositionSerializer<T> in Root.Township."
+description: "A PositionSerializer that can reparent a target of type T itself, through callbacks it was built with."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionSerializer&lt;T&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+A `PositionSerializer` that can reparent a target of type `T` itself, through callbacks it was built with. `NetworkRigidbody` uses it to parent a body to the platform it rides on.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PositionSerializer`](/game-api/types/global-p/positionserializer)
@@ -26,18 +28,18 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> |
-| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isparentnull" /><code>{"private Func<T, bool> isParentNull"}</code> | Callback that tells whether the target currently has no parent. |
+| <Link id="m-makeparentnull" /><code>{"private Action<T> makeParentNull"}</code> | Callback that unparents the target. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fixparent" /><code>{"void FixParent(T target, Transform targetTransform)"}</code> | Parents the target's transform to the current movement context, or clears its parent through `makeParentNull` when the context is gone. |
 
 ## Used in
 

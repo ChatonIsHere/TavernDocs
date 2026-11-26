@@ -1,6 +1,6 @@
 ---
 title: "IHeartCallModifier"
-description: "interface IHeartCallModifier in Root.Township."
+description: "Something that changes a hit while the Heart Call skill is active on a tool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Something that changes a hit while the Heart Call skill is active on a tool. `HeartCall` calls every modifier registered for the hitting tool. Implemented by `ForgingHeartCallModifier`.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`ForgingHeartCallModifier`](/game-api/types/global-e-h/forgingheartcallmodifier)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modifyhit" /><code>{"void ModifyHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit)"}</code> | Changes the hit before it is applied. If any modifier exists, `HeartCall` may skip its own multiplier. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "SpawnCommandModule.PageCollectionInfo"
-description: "class SpawnCommandModule.PageCollectionInfo in Root.Township."
+description: "A row in the page collection list console command."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnCommandModule.PageCollectionInfo
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A row in the page collection list console command.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`SpawnCommandModule`](/game-api/types/alta-console/spawncommandmodule)
@@ -23,16 +25,16 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | The collection's description. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The collection's asset name. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo">{"SpawnCommandModule.PageCollectionInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo">{"SpawnCommandModule.PageCollectionInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection)"}</code> | Builds the row from a `PageCollection`. |
 
 ## Used in
 

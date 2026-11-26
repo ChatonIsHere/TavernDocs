@@ -67,10 +67,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RecentPlayerElement.NameplateMeshReference`](/game-api/types/global-q-r/recentplayerelement-nameplatemeshreference) | class |  | 2 |  |
 | [`RecentPlayers`](/game-api/types/global-q-r/recentplayers) | static class |  | 13 | Client-only helpers and the `recent-players` console module (alias `recent`) for the recent players list, which is stored through the Alta API. |
 | [`RedesignedAltaAccountLinker`](/game-api/types/global-q-r/redesignedaltaaccountlinker) | internal class | `LoginAndRegisterHelper` | 3 |  |
-| [`RefBoolDelegate`](/game-api/types/global-q-r/refbooldelegate) | delegate |  | 0 |  |
+| [`RefBoolDelegate`](/game-api/types/global-q-r/refbooldelegate) | delegate |  | 0 | Veto callback: listeners get a `ref bool` they can set false to block something. Used by events like `Embeddable.CheckEmbed` and `ItemLevitator.CheckHover`. |
 | [`ReferenceEqualsComparer<T>`](/game-api/types/global-q-r/referenceequalscomparer-t) | internal class | `IEqualityComparer<T>` | 0 |  |
 | [`RelativePoint`](/game-api/types/global-q-r/relativepoint) | struct |  | 8 | A position and rotation stored relative to a transform, so it follows that transform when it moves. With no transform it holds world values. |
-| [`RemoteConsoleCommandType`](/game-api/types/global-q-r/remoteconsolecommandtype) | enum | `byte` | 2 |  |
+| [`RemoteConsoleCommandType`](/game-api/types/global-q-r/remoteconsolecommandtype) | enum | `byte` | 2 | Kind of remote request `ClientCommandHandler` handles: a console command or a mod upload. |
 | [`RemoteConsoleResponseType`](/game-api/types/global-q-r/remoteconsoleresponsetype) | enum | `byte` | 1 |  |
 | [`RemoteConsoleUtility`](/game-api/types/global-q-r/remoteconsoleutility) | static class |  | 1 |  |
 | [`RemoteEquipmentModeVisuals`](/game-api/types/global-q-r/remoteequipmentmodevisuals) | class | `MonoBehaviour` | 2 | Visuals that scale in when shown and destroy themselves after scaling out. Client side. |
@@ -84,7 +84,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RendererScaleAnimator`](/game-api/types/global-q-r/rendererscaleanimator) | class | `ScaleAnimator` | 1 |  |
 | [`RendererScalePulsator`](/game-api/types/global-q-r/rendererscalepulsator) | class | `ScalePulsator` | 1 |  |
 | [`RenderingDisabler`](/game-api/types/global-q-r/renderingdisabler) | class | `MonoBehaviour` | 2 |  |
-| [`RenderingDisabler.Type`](/game-api/types/global-q-r/renderingdisabler-type) | enum |  | 8 |  |
+| [`RenderingDisabler.Type`](/game-api/types/global-q-r/renderingdisabler-type) | enum |  | 8 | Group of renderers a `RenderingDisabler` belongs to (rocks, houses, terrain, vegetation and so on); pressing the key matching the name's first letter toggles that group. |
 | [`RenderingMaps`](/game-api/types/global-q-r/renderingmaps) | enum |  | 2 |  |
 | [`RenderLock`](/game-api/types/global-q-r/renderlock) | static class |  | 4 |  |
 | [`RenderLock.RenderLockType`](/game-api/types/global-q-r/renderlock-renderlocktype) | enum |  | 2 | Reasons rendering is held back, used as bit flags in `RenderLock`: no player controller spawned yet, or faded to black. |
@@ -96,15 +96,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RepairBoxSaveDataOld3`](/game-api/types/global-q-r/repairboxsavedataold3) | internal class | `OldSaveData` | 10 |  |
 | [`RepairBoxSaveDataOld4`](/game-api/types/global-q-r/repairboxsavedataold4) | internal class | `OldSaveData` | 10 |  |
 | [`ReportPlayers`](/game-api/types/global-q-r/reportplayers) | static class |  | 2 |  |
-| [`RequestDockArguments`](/game-api/types/global-q-r/requestdockarguments) | struct |  | 8 |  |
-| [`RequestPouchArguments`](/game-api/types/global-q-r/requestpoucharguments) | struct |  | 4 |  |
+| [`RequestDockArguments`](/game-api/types/global-q-r/requestdockarguments) | struct |  | 8 | Network message for a pickup docking into or leaving a dock, sent by `PickupDocker` from client to server and from server to chunks. |
+| [`RequestPouchArguments`](/game-api/types/global-q-r/requestpoucharguments) | struct |  | 4 | Network message from `PickupContainer` asking to pull a pouch of items out for a hand. |
 | [`ResourcesCleanup`](/game-api/types/global-q-r/resourcescleanup) | class | `MonoBehaviour` | 1 |  |
 | [`RespawnOnDestroy`](/game-api/types/global-q-r/respawnondestroy) | class | `NetworkEntityBehaviour`, `ISavable<RespawnOnDestroySaveData>`, `ISavableSave<RespawnOnDestroySaveData>`, +1 more | 1 |  |
 | [`RespawnOnDestroySaveData`](/game-api/types/global-q-r/respawnondestroysavedata) | class | `NewSaveData<RespawnOnDestroy, RespawnOnDestroySaveData>` | 4 |  |
 | [`RigBoneList`](/game-api/types/global-q-r/rigbonelist) | class | `ScriptableObject` | 1 |  |
-| [`RigidbodyCollection`](/game-api/types/global-q-r/rigidbodycollection) | class | `MonoBehaviour` | 1 |  |
+| [`RigidbodyCollection`](/game-api/types/global-q-r/rigidbodycollection) | class | `MonoBehaviour` | 1 | Holds a list of rigidbodies, filled from children in the editor, and gives them as a set. |
 | [`RigidbodyGroup`](/game-api/types/global-q-r/rigidbodygroup) | class | `ComponentGroup<Rigidbody>` | 3 |  |
-| [`RigMap`](/game-api/types/global-q-r/rigmap) | class | `MonoBehaviour` | 3 |  |
+| [`RigMap`](/game-api/types/global-q-r/rigmap) | class | `MonoBehaviour` | 3 | Maps each `BoneIdentifier` in a required bone list to the matching transform in a character rig. Used, for example, to attach orbs to the player's body. |
 | [`RiverEntrance`](/game-api/types/global-q-r/riverentrance) | class | `MonoBehaviour` | 1 |  |
 | [`RiverNodeMapSpawnData`](/game-api/types/global-q-r/rivernodemapspawndata) | class | `SpawnData` | 4 |  |
 | [`Rock`](/game-api/types/global-q-r/rock) | class | `HealthObject` | 3 |  |
@@ -118,7 +118,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RopeGrabSaveData1`](/game-api/types/global-q-r/ropegrabsavedata1) | class | `OldSaveData` | 2 |  |
 | [`RopePersistAttribute`](/game-api/types/global-q-r/ropepersistattribute) | class | `Attribute` | 0 |  |
 | [`RopePersistManager`](/game-api/types/global-q-r/ropepersistmanager) | static class |  | 0 |  |
-| [`RopePoweredElementBoard`](/game-api/types/global-q-r/ropepoweredelementboard) | class | `MonoBehaviour` | 7 |  |
+| [`RopePoweredElementBoard`](/game-api/types/global-q-r/ropepoweredelementboard) | class | `MonoBehaviour` | 7 | Scrolling list board driven by pulling ropes: places its element transforms along a spline and moves them as the ropes are pulled. Used by the friends board and `RopeUIList`. Client side. |
 | [`RotatedPositionHelper`](/game-api/types/global-q-r/rotatedpositionhelper) | class |  | 8 |  |
 | [`RotatePickup`](/game-api/types/global-q-r/rotatepickup) | class | `NetworkEntityBehaviour`, `ISavable<RotatePickupSaveData>`, `ISavableSave<RotatePickupSaveData>`, +1 more | 0 | [Items, interaction and damage](../items/overview.md) |
 | [`RotatePickupPuzzleOLD`](/game-api/types/global-q-r/rotatepickuppuzzleold) | class | `MonoBehaviour` | 0 |  |
@@ -126,7 +126,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RotateTransform`](/game-api/types/global-q-r/rotatetransform) | class | `MonoBehaviour` | 2 |  |
 | [`RotationBucket`](/game-api/types/global-q-r/rotationbucket) | internal class |  | 9 | One part that `FaceObject` turns to face the hands holding its handle pickups. |
 | [`RotationBucketOLD`](/game-api/types/global-q-r/rotationbucketold) | internal class |  | 9 |  |
-| [`RotationMode`](/game-api/types/global-q-r/rotationmode) | enum |  | 6 |  |
+| [`RotationMode`](/game-api/types/global-q-r/rotationmode) | enum |  | 6 | How a `GrabPoint` sets the hand's rotation when grabbed: `Free`, `Fixed`, `FixedFlip`, `Pole`, `OneWayPole` or `Surface`. |
 | [`RotationOverrider`](/game-api/types/global-q-r/rotationoverrider) | class | `MonoBehaviour` | 0 |  |
 | [`RotationSlerp`](/game-api/types/global-q-r/rotationslerp) | class | `MonoBehaviour` | 1 |  |
 | [`RunMode`](/game-api/types/global-q-r/runmode) | enum |  | 2 |  |

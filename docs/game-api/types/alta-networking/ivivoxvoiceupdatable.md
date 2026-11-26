@@ -1,6 +1,6 @@
 ---
 title: "IVivoxVoiceUpdatable"
-description: "interface IVivoxVoiceUpdatable in Root.Township."
+description: "Positional voice that VivoxClient updates each frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Voice`.
 
+Positional voice that `VivoxClient` updates each frame. `VivoxVoice` implements it.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`VivoxVoice`](/game-api/types/alta-networking/vivoxvoice)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update3dposition" /><code>{"void Update3DPosition()"}</code> | Sends the voice position and facing to Vivox. `VivoxVoice` does it at most every 0.3 seconds while connected. |
 
 ## Used in
 

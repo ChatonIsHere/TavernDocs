@@ -1,6 +1,6 @@
 ---
 title: "KinematicForceMode"
-description: "enum KinematicForceMode in Root.Township."
+description: "How a growth stage sets rigidbodies: leave them, force kinematic, or force non-kinematic."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # KinematicForceMode
 
 An **enum** in `Root.Township`, no namespace.
+
+How a growth stage sets rigidbodies: leave them, force kinematic, or force non-kinematic. Read by `GrowthItem` and `GrowerComponent`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

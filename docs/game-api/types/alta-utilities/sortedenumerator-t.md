@@ -1,6 +1,6 @@
 ---
 title: "SortedEnumerator<T>"
-description: "class SortedEnumerator<T> in Root.Township."
+description: "Enumerator over an array snapshot, returned by SortedList."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SortedEnumerator&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Enumerator over an array snapshot, returned by `SortedList`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `IEnumerator<T>`, `IEnumerator`, `IDisposable`
@@ -23,41 +25,41 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sortedlist" /><code>{"T[] sortedList"}</code> | The array being enumerated. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"private int position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"private int position"}</code> | Current index, -1 before the start. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-current" /><code>{"T Current { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-current" /><code>{"T Current { get; }"}</code> | Item at the current position. Throws `InvalidOperationException` before the first `MoveNext` or past the end. |
 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | Non-generic `Current`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
-| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Drops the array. |
+| <Link id="m-movenext" /><code>{"bool MoveNext()"}</code> | Moves to the next item. False once past the end. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Goes back to before the first item. |
 
 ## Used in
 

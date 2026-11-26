@@ -1,6 +1,6 @@
 ---
 title: "AStarDestinationCondition<TNode, TConnection>"
-description: "delegate AStarDestinationCondition<TNode, TConnection> in Root.Township."
+description: "Callback passed to AStar.Pathfind that returns true when a node is an acceptable end point for the search."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AStarDestinationCondition&lt;TNode, TConnection&gt;
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback passed to `AStar.Pathfind` that returns true when a node is an acceptable end point for the search.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MulticastDelegate`

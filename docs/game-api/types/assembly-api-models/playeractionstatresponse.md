@@ -1,6 +1,6 @@
 ---
 title: "PlayerActionStatResponse"
-description: "class PlayerActionStatResponse in Alta.Api.DataTransferModels."
+description: "Web API model listing a player's action stats."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Web API model listing a player's action stats.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-actionstats" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionstats" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> ActionStats { get; set; }"}</code> | Progress for each tracked stat. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ListElementWith2Buttons"
-description: "class ListElementWith2Buttons in Root.Township."
+description: "Client list row with a second button, used for things like accept and reject on group join requests."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ListElementWith2Buttons
 
 A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
+
+Client list row with a second button, used for things like accept and reject on group join requests.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`ListElementWithButton`](/game-api/types/alta-menus/listelementwithbutton)
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-button2" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button2"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-button2" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button2"}</code> | Backing field for `Button2`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-button2-2" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button2 { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-button2-2" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" Button2 { get; }"}</code> | The second button (the first is the base class `Button`). |
 
 ## Used in
 

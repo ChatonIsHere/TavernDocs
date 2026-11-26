@@ -1,6 +1,6 @@
 ---
 title: "ConsoleEvent.Processor"
-description: "class ConsoleEvent.Processor in Root.Township."
+description: "Background task that takes queued console event messages and raises each event's Invoked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConsoleEvent.Processor
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+Background task that takes queued console event messages and raises each event's `Invoked`. One shared instance runs for all events.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`ConsoleEvent`](/game-api/types/alta-console/consoleevent)
@@ -27,25 +29,25 @@ A **class** in `Root.Township`, `Alta.Console`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cancel" /><code>{"private CancellationTokenSource cancel"}</code> | Token source that stops the background task. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Cancels the background task's token. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-processqueue" /><code>{"private static void ProcessQueue()"}</code> | The background loop: raises `Invoked` for each queued message and logs the message rate every 10 seconds. |
 
 </details>
 

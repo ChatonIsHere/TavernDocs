@@ -1,6 +1,6 @@
 ---
 title: "IndirectStatModifierDefinition.StrengthUsage"
-description: "enum IndirectStatModifierDefinition.StrengthUsage in Root.Township."
+description: "Flags for what an indirect stat modifier's effect strength scales: its duration, its value, or both."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IndirectStatModifierDefinition.StrengthUsage
 
 An **private enum** in `Root.Township`, `Alta.StatSystem`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Flags for what an indirect stat modifier's effect strength scales: its duration, its value, or both.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`IndirectStatModifierDefinition`](/game-api/types/alta-stats-effects/indirectstatmodifierdefinition)

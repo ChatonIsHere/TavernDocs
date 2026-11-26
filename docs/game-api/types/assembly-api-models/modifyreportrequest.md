@@ -1,6 +1,6 @@
 ---
 title: "ModifyReportRequest"
-description: "class ModifyReportRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to change a report's status."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of an Alta web API request to change a report's status.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{" Status { get; set; }"}</code> | The new report status. |
 
 ## Used in
 

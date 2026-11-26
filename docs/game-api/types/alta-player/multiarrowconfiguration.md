@@ -1,6 +1,6 @@
 ---
 title: "MultiArrowConfiguration"
-description: "class MultiArrowConfiguration in Root.Township."
+description: "Settings for the multi-arrow bow skill (BowMultiArrowShot): where the extra arrows sit and how hard they hit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MultiArrowConfiguration
 
 A **class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Settings for the multi-arrow bow skill (`BowMultiArrowShot`): where the extra arrows sit and how hard they hit.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -25,19 +27,19 @@ A **class** in `Root.Township`, `Alta.Progression.Skills`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-arrowdamagemultiplier" /><code>{"private float arrowDamageMultiplier"}</code> |
-| <Link id="m-arrowoffsets" /><code>{"private Vector3[] arrowOffsets"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arrowdamagemultiplier" /><code>{"private float arrowDamageMultiplier"}</code> | Backing field for `ArrowDamageMultiplier`. |
+| <Link id="m-arrowoffsets" /><code>{"private Vector3[] arrowOffsets"}</code> | Backing field for `ArrowOffsets`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-arrowdamagemultiplier-2" /><code>{"float ArrowDamageMultiplier { get; }"}</code> |
-| <Link id="m-arrowoffsets-2" /><code>{"Vector3[] ArrowOffsets { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arrowdamagemultiplier-2" /><code>{"float ArrowDamageMultiplier { get; }"}</code> | Damage multiplier for the extra arrows (default 1). |
+| <Link id="m-arrowoffsets-2" /><code>{"Vector3[] ArrowOffsets { get; }"}</code> | Local offset of each extra arrow; one arrow per entry. |
 
 ## Used in
 

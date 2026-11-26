@@ -1,6 +1,6 @@
 ---
 title: "ClimberSettings.Raycast"
-description: "class ClimberSettings.Raycast in Root.Township."
+description: "A start and end point for one climbing raycast, listed in ClimberSettings.raycasts."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimberSettings.Raycast
 
 A **class** in `Root.Township`, no namespace.
+
+A start and end point for one climbing raycast, listed in `ClimberSettings.raycasts`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`ClimberSettings`](/game-api/types/global-c-d/climbersettings)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-endposition" /><code>{"private Vector3 endPosition"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-endposition" /><code>{"private Vector3 endPosition"}</code> | Backing field for `EndPosition`. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-endposition-2" /><code>{"Vector3 EndPosition { get; }"}</code> |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-endposition-2" /><code>{"Vector3 EndPosition { get; }"}</code> | Where the ray ends. |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | Where the ray starts. |
 
 ## Used in
 

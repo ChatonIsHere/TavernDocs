@@ -1,6 +1,6 @@
 ---
 title: "EditorOverrideCredentials"
-description: "class EditorOverrideCredentials in Root.Township."
+description: "Plain username and password pair, probably for signing in from the Unity editor during development."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+Plain username and password pair, probably for signing in from the Unity editor during development.
+
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-password" /><code>{"string password"}</code> |
-| <Link id="m-username" /><code>{"string username"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-password" /><code>{"string password"}</code> | Password to sign in with. Defaults to the text "password". |
+| <Link id="m-username" /><code>{"string username"}</code> | Account name to sign in with. Defaults to the text "username". |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "JoinableGroupInfo"
-description: "class JoinableGroupInfo in Alta.Api.Client."
+description: "A group the current user can ask to join through the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JoinableGroupInfo
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+A group the current user can ask to join through the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`GroupGet`](/game-api/types/assembly-api-client/groupget)
@@ -31,23 +33,23 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | Low level API client used for the call. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> | The group's info. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-requesttojoin" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/outgoinggroupjoinrequest">{"OutgoingGroupJoinRequest"}</Link>{"> RequestToJoin()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-requesttojoin" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/outgoinggroupjoinrequest">{"OutgoingGroupJoinRequest"}</Link>{"> RequestToJoin()"}</code> | Sends a join request and returns it so it can be revoked. |
 
 ## Used in
 

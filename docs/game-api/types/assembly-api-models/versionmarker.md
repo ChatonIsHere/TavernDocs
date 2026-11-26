@@ -1,6 +1,6 @@
 ---
 title: "VersionMarker"
-description: "class VersionMarker in Alta.Api.DataTransferModels."
+description: "A named game version shown in the launcher, part of LauncherGameInfoFull.VersionMarkers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+A named game version shown in the launcher, part of `LauncherGameInfoFull.VersionMarkers`.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The marker's name. |
+| <Link id="m-version" /><code><Link to="/game-api/types/assembly-api-models/gameversion">{"GameVersion"}</Link>{" Version { get; set; }"}</code> | The game version it marks. |
 
 ## Used in
 

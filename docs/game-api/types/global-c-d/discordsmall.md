@@ -1,6 +1,6 @@
 ---
 title: "DiscordSmall"
-description: "enum DiscordSmall in Root.Township."
+description: "Small image keys for Discord rich presence."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DiscordSmall
 
 An **enum** in `Root.Township`, no namespace.
+
+Small image keys for Discord rich presence. Only `None` exists in this build.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

@@ -17,7 +17,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BasicMeltingModel`](/game-api/types/alta-crafting/basicmeltingmodel) | class | `MeltingModel` | 1 |  |
 | [`CraftingMeltingAllowedModifier`](/game-api/types/alta-crafting/craftingmeltingallowedmodifier) | class | `MeltingModelModifier` | 2 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
 | [`DurabilityMeltingYieldModifier`](/game-api/types/alta-crafting/durabilitymeltingyieldmodifier) | class | `MeltingModelModifier` | 2 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
-| [`DynamicQueue<T>`](/game-api/types/alta-crafting/dynamicqueue-t) | class |  | 4 |  |
+| [`DynamicQueue<T>`](/game-api/types/alta-crafting/dynamicqueue-t) | class |  | 4 | A circular doubly linked queue of elements that link themselves (`IDynamicQueueElement`). `Recycler` uses it to rotate through its output slots. |
 | [`ForgedModel`](/game-api/types/alta-crafting/forgedmodel) | class | `ForgedModel<NullColorModelPoint, NullColorModelPoint>`, `IInterfereWithDocking` | 1 | Forged metal part with no colour model points: a heat model that is hammered into shape and counts as done once every forged point reaches full progress. A component on forgeable prefabs. |
 | [`ForgedModel<TB, TA>`](/game-api/types/alta-crafting/forgedmodel-tb-ta) | abstract class | `HeatModel<ForgedPoint, TB, TA>`, `ISpawnArguments`, `IAffectCrafting` | 11 | A metal piece that's shaped by hammering. Each hit on its forged points adds progress (and heat on the server); when every point is done the piece is complete, gives forging XP along the way and raises an item forged event. |
 | [`ForgedPoint`](/game-api/types/alta-crafting/forgedpoint) | class | `MonoBehaviour`, `IColorModelPoint<ForgedPoint>`, `IChildSyncable<ForgedPoint, ForgedPointCollectionSaveData.Element>`, +1 more | 12 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
@@ -27,10 +27,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IDynamicQueueElement<T>`](/game-api/types/alta-crafting/idynamicqueueelement-t) | interface |  | 2 |  |
 | [`MeltingHeatPoint`](/game-api/types/alta-crafting/meltingheatpoint) | class | `HeatPoint` | 2 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
 | [`MeltingModel`](/game-api/types/alta-crafting/meltingmodel) | abstract class | `NetworkEntityBehaviour` | 13 | Base for items that can be melted down in a smelter (ingots, forged parts). The smelter checks whether every counted heat point is hot enough, then adds `IngotValue` of the material. |
-| [`MeltingModelAllowed`](/game-api/types/alta-crafting/meltingmodelallowed) | delegate |  | 0 |  |
+| [`MeltingModelAllowed`](/game-api/types/alta-crafting/meltingmodelallowed) | delegate |  | 0 | Filter for `MeltingModel.isAllowedFilter`. Handlers can set `isAllowed` to false to stop the model melting. |
 | [`MeltingModelModifier`](/game-api/types/alta-crafting/meltingmodelmodifier) | abstract class | `ScriptableObject` | 2 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
 | [`MeltingModelPart`](/game-api/types/alta-crafting/meltingmodelpart) | class | `MeltingModel` | 2 |  |
-| [`MeltingModelYield`](/game-api/types/alta-crafting/meltingmodelyield) | delegate |  | 0 |  |
+| [`MeltingModelYield`](/game-api/types/alta-crafting/meltingmodelyield) | delegate |  | 0 | Filter for `MeltingModel.yieldMultiplierFilter`. Handlers can change `multiplier` to scale how much the model yields. |
 | [`MetalHeatPoint`](/game-api/types/alta-crafting/metalheatpoint) | class | `HeatPoint`, `IColorModelPoint<MetalHeatPoint>` | 4 | [Smelting and forging](../game-systems/smelting-and-forging.md) |
 | [`MouldRack`](/game-api/types/alta-crafting/mouldrack) | class | `MonoBehaviour` | 1 | [Smelting and forging](../game-systems/smelting-and-forging.md): Visual rack for moulds. |
 | [`Recycler`](/game-api/types/alta-crafting/recycler) | class | `NetworkEntityBehaviour`, `ISavable<RecyclerSaveData>`, `ISavableSave<RecyclerSaveData>`, +1 more | 4 | [Smelting and forging](../game-systems/smelting-and-forging.md#recycler): Pump its bellows (`PumpingMechanism`) and it burns fuel from its fuel dock and raises its `HeatArea`'s target temperature. |
@@ -50,19 +50,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BuilderDock`](/game-api/types/alta-crafting/builderdock) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 8 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
-| [`BuilderDock.BoolDelegate`](/game-api/types/alta-crafting/builderdock-booldelegate) | delegate |  | 0 |  |
+| [`BuilderDock.BoolDelegate`](/game-api/types/alta-crafting/builderdock-booldelegate) | delegate |  | 0 | Callback for `BuilderDock.ActiveChanged`, passed the dock's new `IsActive` value. |
 | [`Chiselable`](/game-api/types/alta-crafting/chiselable) | class | `MonoBehaviour`, `IChiselable` | 7 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
 | [`ChiselableEvent`](/game-api/types/alta-crafting/chiselableevent) | class | `AltaEvent<Chiselable, float, Vector3, Vector3, ChiselableUnityEvent>` | 0 |  |
 | [`ChiselableUnityEvent`](/game-api/types/alta-crafting/chiselableunityevent) | class | `UnityEvent<Chiselable, float, Vector3, Vector3>` | 0 |  |
 | [`ChiselBlockSize`](/game-api/types/alta-crafting/chiselblocksize) | enum |  | 4 | Size of a timber block, or the size a chisel cuts: Empty, Small, Medium or Large. |
 | [`ChiselDefinition`](/game-api/types/alta-crafting/chiseldefinition) | class | `SimpleHashedGeneralValue<ChiselDefinition>`, `IPageBasis` | 11 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): `SimpleHashedGeneralValue<ChiselDefinition>` under `Carpentry/Chisel Definitions`: a recipe page for chiselling. |
 | [`ChiselDefinition.Create`](/game-api/types/alta-crafting/chiseldefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Carpentry.ScriptableObject<ChiselDefinition>` | 0 |  |
-| [`ChiselHit`](/game-api/types/alta-crafting/chiselhit) | delegate |  | 0 |  |
+| [`ChiselHit`](/game-api/types/alta-crafting/chiselhit) | delegate |  | 0 | Callback for `Chiselable.onHit`: the damage, hit position and direction, the chisel tool and the collider that was hit. |
 | [`ChiselingFilter`](/game-api/types/alta-crafting/chiselingfilter) | class | `MonoBehaviour` | 0 |  |
 | [`ChiselingFilterSettings`](/game-api/types/alta-crafting/chiselingfiltersettings) | class | `ImpactorFilter` | 1 |  |
 | [`ChiselingTool`](/game-api/types/alta-crafting/chiselingtool) | class | `CraftableImpactDetectorBase` | 4 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
 | [`ChisellingDeck`](/game-api/types/alta-crafting/chisellingdeck) | class | `NetworkEntityBehaviour`, `ISavableFull<ChisellingDeckSaveData>`, `ISavable<ChisellingDeckSaveData>`, +3 more | 16 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): Holds the current `TimberBlock` (`CurrentBlock`), the `Guide` (`ChiselDefinition`), its size and `MaxSize`. `Resize(ChiselBlockSize)` is server only. |
-| [`ChisellingDeck.BuilderLevel`](/game-api/types/alta-crafting/chisellingdeck-builderlevel) | class |  | 2 |  |
+| [`ChisellingDeck.BuilderLevel`](/game-api/types/alta-crafting/chisellingdeck-builderlevel) | class |  | 2 | Inspector entry on `ChisellingDeck` that maps a block size to the timber block prefab spawned for it. |
 | [`ChisellingDeckSaveData`](/game-api/types/alta-crafting/chisellingdecksavedata) | class | `NewSaveData<ChisellingDeck, ChisellingDeckSaveData>` | 7 | Save data for a `ChisellingDeck`, the carpentry chiselling station. The deck saves its size; its current `TimberBlock` fills in the rest. |
 | [`ChisellingDeckSaveData2`](/game-api/types/alta-crafting/chisellingdecksavedata2) | class | `OldSaveData` | 7 |  |
 | [`DeckClamp`](/game-api/types/alta-crafting/deckclamp) | class | `MonoBehaviour` | 0 |  |
@@ -72,17 +72,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PrefabSpawnPosition`](/game-api/types/alta-crafting/prefabspawnposition) | class |  | 3 | A prefab and the local position and rotation to spawn it at. Used for the pieces a `TimberBlock` spawns as its crafted result. |
 | [`RecipePlacer`](/game-api/types/alta-crafting/recipeplacer) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
 | [`TimberBlock`](/game-api/types/alta-crafting/timberblock) | class | `NetworkEntityBehaviour` | 20 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): The block being chiselled, in stages (outer, inner, core). |
-| [`TimberBlock.CoreStage`](/game-api/types/alta-crafting/timberblock-corestage) | class | `Stage` | 2 |  |
-| [`TimberBlock.InnerStage`](/game-api/types/alta-crafting/timberblock-innerstage) | class | `Stage` | 1 |  |
-| [`TimberBlock.OuterStage`](/game-api/types/alta-crafting/timberblock-outerstage) | class | `Stage` | 1 |  |
+| [`TimberBlock.CoreStage`](/game-api/types/alta-crafting/timberblock-corestage) | class | `Stage` | 2 | The last chiselling stage of a `TimberBlock`. Finishing it releases the crafted result and destroys the block. |
+| [`TimberBlock.InnerStage`](/game-api/types/alta-crafting/timberblock-innerstage) | class | `Stage` | 1 | The middle chiselling stage of a `TimberBlock`. Finishing it moves the block on to the core stage. |
+| [`TimberBlock.OuterStage`](/game-api/types/alta-crafting/timberblock-outerstage) | class | `Stage` | 1 | The first chiselling stage of a `TimberBlock`. The pieces chiselled off here decide what the block becomes. |
 | [`TimberBlock.Stage`](/game-api/types/alta-crafting/timberblock-stage) | abstract class |  | 13 | One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterStage`, `InnerStage` and `CoreStage`, each moving the block on when all its pieces are done. |
 | [`TimberBlock.StageLevel`](/game-api/types/alta-crafting/timberblock-stagelevel) | enum |  | 3 | The three carving stages of a timber block in order: outer, inner and core. Finishing one stage starts the next. |
 | [`TimberBlockEvent`](/game-api/types/alta-crafting/timberblockevent) | delegate |  | 0 | Callback with a `TimberBlock`, used for its `Done` and `Modified` events and the chiselling deck's block events. |
 | [`TimberBlockSpawner`](/game-api/types/alta-crafting/timberblockspawner) | class | `NetworkEntityBehaviour` | 10 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
-| [`TimberBlockSpawner.ChiselingSizePoint`](/game-api/types/alta-crafting/timberblockspawner-chiselingsizepoint) | class |  | 2 |  |
-| [`TimberBlockSpawner.SizedSpawnPoints`](/game-api/types/alta-crafting/timberblockspawner-sizedspawnpoints) | struct |  | 3 |  |
+| [`TimberBlockSpawner.ChiselingSizePoint`](/game-api/types/alta-crafting/timberblockspawner-chiselingsizepoint) | class |  | 2 | A stop along the `TimberBlockSpawner` slider and the largest block size allowed there. Sliding to a smaller stop resizes the deck's block. |
+| [`TimberBlockSpawner.SizedSpawnPoints`](/game-api/types/alta-crafting/timberblockspawner-sizedspawnpoints) | struct |  | 3 | Per block size settings on `TimberBlockSpawner`: where that size of block spawns and where the builder sits. |
 | [`TimberPiece`](/game-api/types/alta-crafting/timberpiece) | class | `TimberPieceBase` | 13 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
-| [`TimberPiece.RotationModel`](/game-api/types/alta-crafting/timberpiece-rotationmodel) | class |  | 5 |  |
+| [`TimberPiece.RotationModel`](/game-api/types/alta-crafting/timberpiece-rotationmodel) | class |  | 5 | Works out how a `TimberPiece` tips over as it is chiselled: the axis it rotates around and how far the pivot edge is from its centre. |
 | [`TimberPieceBase`](/game-api/types/alta-crafting/timberpiecebase) | abstract class | `Chiselable` | 15 | Base for one chiselable piece of a timber block in carpentry. Starts disabled; a `TimberBlock` stage enables, saves and syncs its pieces. |
 | [`TimberPieceDelegate`](/game-api/types/alta-crafting/timberpiecedelegate) | delegate |  | 0 | Callback for a timber piece event. Used for `TimberPieceBase.OnChanged` and `OnDone`, which `TimberBlock` stages hook on the server. |
 | [`TimberPieceGroup`](/game-api/types/alta-crafting/timberpiecegroup) | class | `TimberPieceBase` | 7 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
@@ -95,7 +95,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CookableCategoryDefinition`](/game-api/types/alta-crafting/cookablecategorydefinition) | class | `StewIngredientBase` | 3 | [Cooking](../game-systems/cooking.md) |
 | [`CookableCategoryDefinition.Create`](/game-api/types/alta-crafting/cookablecategorydefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Cooking.ScriptableObject<CookableCategoryDefinition>` | 0 |  |
 | [`CookableCollectionDefinition`](/game-api/types/alta-crafting/cookablecollectiondefinition) | class | `StewIngredientBase` | 2 | [Cooking](../game-systems/cooking.md) |
-| [`CookableEvent`](/game-api/types/alta-crafting/cookableevent) | class | `AltaEvent<Cookable, CookableUnityEvent>` | 0 |  |
+| [`CookableEvent`](/game-api/types/alta-crafting/cookableevent) | class | `AltaEvent<Cookable, CookableUnityEvent>` | 0 | A serialized event that passes a `Cookable`, set up in the Inspector. `CookingPot` uses one for rejected ingredients. |
 | [`CookableItem`](/game-api/types/alta-crafting/cookableitem) | class | `ItemComponent` | 3 | Item component for a cooking ingredient: its cooking category, how it looks floating in a liquid and the effects it adds. Read through `Cookable` and the ingredient recipe pages. |
 | [`CookableSaveData`](/game-api/types/alta-crafting/cookablesavedata) | internal class | `NewSaveData<Cookable, CookableSaveData>` | 2 |  |
 | [`CookableUnityEvent`](/game-api/types/alta-crafting/cookableunityevent) | class | `UnityEvent<Cookable>` | 0 |  |
@@ -111,15 +111,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CookingPot`](/game-api/types/alta-crafting/cookingpot) | class | `NetworkEntityBehaviour`, `ISavableFull<CookingPotSaveData>`, `ISavable<CookingPotSaveData>`, +3 more | 6 | [Cooking](../game-systems/cooking.md#cookingpot): Its `CookingStage` (an enum inside `CookingPot`) moves through `Preparation`, `WarmingUp`, `Stewing` and `StewLocked`. Everything below is set up in `InitializeAsServer`. |
 | [`CookingPot.CookingStage`](/game-api/types/alta-crafting/cookingpot-cookingstage) | enum |  | 4 | Where a cooking pot is in making a stew: preparation, warming up, stewing, then locked once the stew is done. |
 | [`CookingPotSaveData`](/game-api/types/alta-crafting/cookingpotsavedata) | internal class | `NewSaveData<CookingPot, CookingPotSaveData>` | 1 |  |
-| [`CookingPotVolume`](/game-api/types/alta-crafting/cookingpotvolume) | class | `MonoBehaviour` | 3 |  |
+| [`CookingPotVolume`](/game-api/types/alta-crafting/cookingpotvolume) | class | `MonoBehaviour` | 3 | Trigger volume on a cooking pot that tracks which rigidbodies are inside it. `CookingPot` listens to its events. |
 | [`CookingSettings`](/game-api/types/alta-crafting/cookingsettings) | class | `GlobalSettings<CookingSettings>` | 18 | [Cooking](../game-systems/cooking.md#cookingsettings): `CookableDecayDuration`, `MinimumStewingTemperature`, `DefaultStew`, `NonRecipeStewPrefab`, `GlobalStewEffects`, `MaxNumberOfItemsInStew` (the network limit), `IsAssumingNoEffectModificationOnMissing` and the dissolve effects. |
 | [`CookingSettings.Create`](/game-api/types/alta-crafting/cookingsettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<CookingSettings>` | 0 |  |
 | [`CookingStage`](/game-api/types/alta-crafting/cookingstage) | class | `ItemComponent` | 1 |  |
-| [`CookingStage.Stage`](/game-api/types/alta-crafting/cookingstage-stage) | enum |  | 4 |  |
+| [`CookingStage.Stage`](/game-api/types/alta-crafting/cookingstage-stage) | enum |  | 4 | How cooked a food item is: burnt, cooked, ripe or unripe. Held in `CookingStage.stage` and read by the edible page provider. |
 | [`CookingTemperatureDuration`](/game-api/types/alta-crafting/cookingtemperatureduration) | class |  | 3 | A temperature and the time food must spend at it, used for the weak, optimal and burning thresholds in `CookingTemperatures`. |
 | [`CookingTemperatures`](/game-api/types/alta-crafting/cookingtemperatures) | class |  | 4 | Temperature bands and times for cooking food: weak, optimal and burning, plus an instant burn point. |
 | [`FruitNinja`](/game-api/types/alta-crafting/fruitninja) | class | `NetworkEntityBehaviour` | 2 | [Cooking](../game-systems/cooking.md): A test spawner (editor Start and Stop buttons) that spawns random `itemsToSpawn`, faster over time. |
-| [`ICookableSettings`](/game-api/types/alta-crafting/icookablesettings) | internal interface |  | 2 |  |
+| [`ICookableSettings`](/game-api/types/alta-crafting/icookablesettings) | internal interface |  | 2 | Internal settings shared by cookables and cooking points: whether the item can burn and its cooking temperatures. |
 | [`ICookingGarnishMarker`](/game-api/types/alta-crafting/icookinggarnishmarker) | interface |  | 2 | Marks a garnish that a cooking pot can take in. `CookingPot` looks for it on items that enter and passes it to the stew; `CookingGarnishComponent` implements it. |
 | [`IStewIngredient`](/game-api/types/alta-crafting/istewingredient) | internal interface |  | 1 |  |
 | [`LiquidChunkVisuals`](/game-api/types/alta-crafting/liquidchunkvisuals) | class | `MonoBehaviour` | 2 | [Cooking](../game-systems/cooking.md) |
@@ -129,7 +129,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PrimesUtility`](/game-api/types/alta-crafting/primesutility) | static class |  | 1 |  |
 | [`StewComponent`](/game-api/types/alta-crafting/stewcomponent) | class | `NetworkEntityBehaviour` | 14 | [Cooking](../game-systems/cooking.md): On a stew entity: tint, effect multipliers, and its own `Cookable` for the next stage. |
 | [`StewContainer`](/game-api/types/alta-crafting/stewcontainer) | class | `LiquidContainer` | 0 |  |
-| [`StewContentArguments`](/game-api/types/alta-crafting/stewcontentarguments) | struct |  | 5 |  |
+| [`StewContentArguments`](/game-api/types/alta-crafting/stewcontentarguments) | struct |  | 5 | What is in a stew, passed to `StewRecipe.GetStewEffects` to work out the stew's effects. |
 | [`StewIngredientBase`](/game-api/types/alta-crafting/stewingredientbase) | abstract class | `ScriptableObject`, `IStewIngredient` | 3 | Base ScriptableObject for a stew recipe ingredient slot, such as a cookable category or collection, that `StewRecipe` checks given ingredients against. |
 | [`StewManager`](/game-api/types/alta-crafting/stewmanager) | class | `NetworkEntityBehaviour`, `ISavable<StewManagerSaveData>`, `ISavableSave<StewManagerSaveData>`, +1 more | 12 | [Cooking](../game-systems/cooking.md#stewmanager): Next to the pot, saved with it. Holds the stew. |
 | [`StewManagerSaveData`](/game-api/types/alta-crafting/stewmanagersavedata) | internal class | `NewSaveData<StewManager, StewManagerSaveData>` | 3 |  |
@@ -144,9 +144,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ConfirmationCraftingPart.ClientSideNailHitSync`](/game-api/types/alta-crafting/confirmationcraftingpart-clientsidenailhitsync) | struct |  | 8 | Message a client sends when it hits one of a confirmation crafting part's nails. The server works out the damage and applies the hit. |
 | [`ConnectEvent`](/game-api/types/alta-crafting/connectevent) | delegate |  | 0 |  |
 | [`CraftingChanged`](/game-api/types/alta-crafting/craftingchanged) | delegate |  | 0 | Event handler for a crafting part being crafted or decrafted; `isLoad` is true when it happens while loading. Used by `CraftingPart.OnCrafted` and `OnDecrafted`. |
-| [`CraftingOptions`](/game-api/types/alta-crafting/craftingoptions) | class |  | 3 |  |
+| [`CraftingOptions`](/game-api/types/alta-crafting/craftingoptions) | class |  | 3 | A possible connection between two crafting parts the local player is holding together. It finds free slots that fit the insert, shows glow and guide lines, and requests the craft when the insert part is let go. |
 | [`CraftingPart`](/game-api/types/alta-crafting/craftingpart) | class | `NetworkEntityBehaviour`, `IEntityReplaceHandler`, `IBlockGenericDecrafting` | 34 | [Crafting](../game-systems/crafting.md#craftingpart): On every part that can join or be joined. Get it with `pickup.CraftingPart` or `GetComponent<CraftingPart>()`. |
-| [`CraftingPartTracker`](/game-api/types/alta-crafting/craftingparttracker) | class |  | 4 |  |
+| [`CraftingPartTracker`](/game-api/types/alta-crafting/craftingparttracker) | class |  | 4 | Tracks a crafting part inside a `GenericAssemblyStation`'s trigger, with the colliders of it that are inside. |
 | [`CraftingPartType`](/game-api/types/alta-crafting/craftingparttype) | class | `HashedGeneralValue<CraftingPartType>` | 0 |  |
 | [`CraftingPartType.Create`](/game-api/types/alta-crafting/craftingparttype-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Crafting.ScriptableObject<CraftingPartType>` | 0 |  |
 | [`CraftingPieceChiselable`](/game-api/types/alta-crafting/craftingpiecechiselable) | class | `Chiselable` | 3 |  |
@@ -162,14 +162,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GenericCraftingNail`](/game-api/types/alta-crafting/genericcraftingnail) | class | `PooledObject` | 17 | [Crafting](../game-systems/crafting.md) |
 | [`GenericCraftingPiece`](/game-api/types/alta-crafting/genericcraftingpiece) | class | `PooledObject`, `INailable` | 32 | [Crafting](../game-systems/crafting.md) |
 | [`GenericCraftingPieceDefinition`](/game-api/types/alta-crafting/genericcraftingpiecedefinition) | class |  | 16 | One ghost piece in a generic crafting recipe: where it sits, its mesh, the item that fills it, its build level and how easily it breaks off. |
-| [`GenericCraftingProject`](/game-api/types/alta-crafting/genericcraftingproject) | class | `IProject` | 6 |  |
+| [`GenericCraftingProject`](/game-api/types/alta-crafting/genericcraftingproject) | class | `IProject` | 6 | The project in progress on a `GenericCraftingStation`: the recipe's pieces grouped into levels, where each level unlocks once the one before is complete. |
 | [`GenericCraftingRecipe`](/game-api/types/alta-crafting/genericcraftingrecipe) | class | `SimpleHashedGeneralValue<GenericCraftingRecipe>`, `IPageBasis`, `ICraftingIngredientProvider` | 11 | [Crafting](../game-systems/crafting.md#genericcraftingrecipe): Get one with `GenericCraftingRecipe.All`, or by the result with `static GenericCraftingRecipe GetRecipe(NetworkPrefab prefab)` (the result map is built once, on first use). |
 | [`GenericCraftingResult`](/game-api/types/alta-crafting/genericcraftingresult) | class | `NetworkEntityBehaviour`, `ISerializationCallbackReceiver`, `IGenericCraftingComponent`, +1 more | 3 | Component on a finished generic-crafting item (one built from pieces on a crafting station). It maps part hashes to their materials, and lets the item be put back on a station to take it apart. Both sides. |
 | [`GenericCraftingSettings`](/game-api/types/alta-crafting/genericcraftingsettings) | class | `GlobalSettings<GenericCraftingSettings>` | 16 | Global settings for generic crafting (building from ghost pieces and nailing them): piece and nail prefabs, ghost materials and effects. All members are static shortcuts to `GenericCraftingSettings.Instance`. |
 | [`GenericCraftingStation`](/game-api/types/alta-crafting/genericcraftingstation) | class | `NetworkEntityBehaviour`, `ISavable<GenericCraftingStationData>`, `ISavableSave<GenericCraftingStationData>`, +1 more | 16 | [Crafting](../game-systems/crafting.md#genericcraftingstation): A station in the world. |
 | [`GenericCraftingStation.ClientSideNailHitSync`](/game-api/types/alta-crafting/genericcraftingstation-clientsidenailhitsync) | struct |  | 9 | Message a client sends when it hits a nail on a piece in a generic crafting station's project. The server finds the piece and nail and applies the hit. |
 | [`GenericCraftingStationData`](/game-api/types/alta-crafting/genericcraftingstationdata) | class | `NewSaveData<GenericCraftingStation, GenericCraftingStationData>` | 2 |  |
-| [`IAffectCrafting`](/game-api/types/alta-crafting/iaffectcrafting) | interface |  | 2 |  |
+| [`IAffectCrafting`](/game-api/types/alta-crafting/iaffectcrafting) | interface |  | 2 | Something that must be finished before its `GenericCraftingComponent` can be added to a crafting station, such as a forged model that must be fully forged. |
 | [`IBlockDisassembly`](/game-api/types/alta-crafting/iblockdisassembly) | interface |  | 1 |  |
 | [`IBlockGenericDecrafting`](/game-api/types/alta-crafting/iblockgenericdecrafting) | interface |  | 1 | Implemented by components that can stop a generic crafting result from being decrafted, such as `LiquidContainer` (only when empty) and `CraftingPart`. |
 | [`IGenericCraftingComponent`](/game-api/types/alta-crafting/igenericcraftingcomponent) | interface |  | 3 | Something a generic crafting station accepts when a player drops it in: a recipe result that starts a project, or a component added to one. Implemented by `GenericCraftingResult` and `GenericCraftingComponent`. |
@@ -201,22 +201,22 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`DamageMultiplier`](/game-api/types/alta-crafting/damagemultiplier) | class | `EnchantmentEffect` | 1 |  |
+| [`DamageMultiplier`](/game-api/types/alta-crafting/damagemultiplier) | class | `EnchantmentEffect` | 1 | Enchantment effect asset that multiplies the damage of an impact hit. |
 | [`DamageMultiplier.Create`](/game-api/types/alta-crafting/damagemultiplier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Crafting.ScriptableObject<DamageMultiplier>` | 0 |  |
 | [`DamageMultiplierApplication`](/game-api/types/alta-crafting/damagemultiplierapplication) | class | `EnchantmentEffectApplication<DamageMultiplier>` | 2 |  |
-| [`DurabilitySaveEnchantment`](/game-api/types/alta-crafting/durabilitysaveenchantment) | class | `EnchantmentEffect` | 1 |  |
+| [`DurabilitySaveEnchantment`](/game-api/types/alta-crafting/durabilitysaveenchantment) | class | `EnchantmentEffect` | 1 | Enchantment effect asset that scales how much durability a tool loses on a hit. |
 | [`DurabilitySaveEnchantment.Create`](/game-api/types/alta-crafting/durabilitysaveenchantment-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Crafting.ScriptableObject<DurabilitySaveEnchantment>` | 0 |  |
 | [`DurabilitySaveEnchantmentApplication`](/game-api/types/alta-crafting/durabilitysaveenchantmentapplication) | class | `EnchantmentEffectApplication<DurabilitySaveEnchantment>` | 2 |  |
 | [`Enchantable`](/game-api/types/alta-crafting/enchantable) | class | `NetworkEntityBehaviour`, `ISavable<EnchantableData>`, `ISavableSave<EnchantableData>`, +1 more | 7 | [Other systems](../game-systems/other-systems.md): On an item. `EnchantmentApplication Add(Enchantment)`, `EnchantmentApplication Get(Enchantment)`. Adds its `initial` enchantments on the server at spawn. |
 | [`EnchantableData`](/game-api/types/alta-crafting/enchantabledata) | class | `NewSaveData<Enchantable, EnchantableData>` | 1 |  |
 | [`Enchantment`](/game-api/types/alta-crafting/enchantment) | class | `HashedGeneralValue<Enchantment>` | 1 | An enchantment asset: a list of bindings, each linking triggers to the effects they cause. |
-| [`Enchantment.Binding`](/game-api/types/alta-crafting/enchantment-binding) | class |  | 2 |  |
+| [`Enchantment.Binding`](/game-api/types/alta-crafting/enchantment-binding) | class |  | 2 | One rule in an enchantment: a set of triggers tied to the effects they set off. An enchantment holds a list of these in `Bindings`. |
 | [`Enchantment.Create`](/game-api/types/alta-crafting/enchantment-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Crafting.ScriptableObject<Enchantment>` | 0 |  |
 | [`EnchantmentApplication`](/game-api/types/alta-crafting/enchantmentapplication) | class |  | 7 | [Other systems](../game-systems/other-systems.md): An enchantment active on one item. |
 | [`EnchantmentEffect`](/game-api/types/alta-crafting/enchantmenteffect) | abstract class | `ScriptableObject` | 2 | [Other systems](../game-systems/other-systems.md): What it does: `DamageMultiplier` (default 1.2x), `DurabilitySaveEnchantment` (less durability lost). |
 | [`EnchantmentEffectApplication<T>`](/game-api/types/alta-crafting/enchantmenteffectapplication-t) | abstract class | `IEnchantmentEffectApplication` | 6 |  |
 | [`EnchantmentTrigger`](/game-api/types/alta-crafting/enchantmenttrigger) | abstract class | `ScriptableObject` | 2 | [Other systems](../game-systems/other-systems.md): When it fires. `CreateApplication` applies the trigger on the server only. `QuickDrawTrigger` is one (a fast, effective hit within `timeToHit`). |
-| [`EnchantmentTrigger.EffectType`](/game-api/types/alta-crafting/enchantmenttrigger-effecttype) | enum |  | 3 |  |
+| [`EnchantmentTrigger.EffectType`](/game-api/types/alta-crafting/enchantmenttrigger-effecttype) | enum |  | 3 | Which of a trigger's event sets `EnchantmentTrigger.CallEvents` fires: charged, executed or cancelled. |
 | [`EnchantmentTriggerApplication<T>`](/game-api/types/alta-crafting/enchantmenttriggerapplication-t) | abstract class | `IEnchantmentTriggerApplication` | 8 | Runtime part of an `EnchantmentTrigger` on one item: hooks game events when applied and fires `Invoked` when the trigger condition is met. |
 | [`IEnchantmentEffectApplication`](/game-api/types/alta-crafting/ienchantmenteffectapplication) | interface |  | 4 | Runtime part of an `EnchantmentEffect` on one item. Run when the enchantment's trigger fires. |
 | [`IEnchantmentTriggerApplication`](/game-api/types/alta-crafting/ienchantmenttriggerapplication) | interface |  | 6 | A trigger of an enchantment applied to one enchanted object. It watches for its condition and raises `Invoked` when it fires. |
@@ -228,7 +228,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ApplicationType`](/game-api/types/alta-crafting/applicationtype) | enum |  | 3 |  |
+| [`ApplicationType`](/game-api/types/alta-crafting/applicationtype) | enum |  | 3 | How a scrapper argument applies saved values: one target and value, many targets sharing one value, or many targets with their own values. |
 | [`MeshPlacement`](/game-api/types/alta-crafting/meshplacement) | class | `NetworkEntityBehaviour`, `ISavable<MeshPlacementSaveData>`, `ISavableSave<MeshPlacementSaveData>`, +1 more | 3 |  |
 | [`MeshPlacementSaveData`](/game-api/types/alta-crafting/meshplacementsavedata) | internal class | `NewSaveData<MeshPlacement, MeshPlacementSaveData>` | 1 |  |
 | [`ScrapperArgumentAttribute`](/game-api/types/alta-crafting/scrapperargumentattribute) | class | `Attribute` | 7 |  |
@@ -241,7 +241,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`MeshPlacementData`](/game-api/types/alta-crafting/meshplacementdata) | class | `HashedGeneralValue<MeshPlacementData>` | 7 | A saved mesh placement for the Scrapper tool: local transform, mesh and material, with optional texture atlas baking. Build-time data. |
 | [`MeshPlacementData.Create`](/game-api/types/alta-crafting/meshplacementdata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<MeshPlacementData>` | 0 |  |
-| [`VisibilityData`](/game-api/types/alta-crafting/visibilitydata) | class | `HashedGeneralValue<VisibilityData>` | 2 |  |
+| [`VisibilityData`](/game-api/types/alta-crafting/visibilitydata) | class | `HashedGeneralValue<VisibilityData>` | 2 | A hashed scrapper asset holding one on or off value for mesh renderers. A `Visibility` component applies it and syncs it by hash. |
 | [`VisibilityData.Create`](/game-api/types/alta-crafting/visibilitydata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<VisibilityData>` | 0 |  |
 
 ## Alta.Trading
@@ -255,7 +255,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TradeStateManager`](/game-api/types/alta-crafting/tradestatemanager) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`TradeStatus`](/game-api/types/alta-crafting/tradestatus) | enum |  | 3 | State of a trade vendor: unoccupied (no owner), out of stock, or open for sale. |
 | [`TradeVendor`](/game-api/types/alta-crafting/tradevendor) | class | `NetworkEntityBehaviour`, `ISavableFull<TradeVendorSaveData>`, `ISavable<TradeVendorSaveData>`, +4 more | 12 | [Trading](../game-systems/trading.md#tradevendor-and-taxmanager), [Performance](../performance.md): Subscribes to `ServerHandler.PlayerJoined` and never unsubscribes. A destroyed vendor throws when its owner joins, which stops the handlers after it. |
-| [`TradeVendor.StatusChangedHandler`](/game-api/types/alta-crafting/tradevendor-statuschangedhandler) | delegate |  | 0 |  |
+| [`TradeVendor.StatusChangedHandler`](/game-api/types/alta-crafting/tradevendor-statuschangedhandler) | delegate |  | 0 | Handler for `TradeVendor.StatusChanged`, called with the vendor's new trade status. |
 | [`TradeVendorSaveData`](/game-api/types/alta-crafting/tradevendorsavedata) | class | `NewSaveData<TradeVendor, TradeVendorSaveData>` | 1 | Save data for a `TradeVendor` (version 2): just the vendor's owner. |
 | [`TradeVendorSaveDataOld`](/game-api/types/alta-crafting/tradevendorsavedataold) | class | `OldSaveData` | 3 |  |
 | [`TradingLogger`](/game-api/types/alta-crafting/tradinglogger) | static class |  | 3 |  |
@@ -265,8 +265,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AttachmentEvent`](/game-api/types/alta-crafting/attachmentevent) | class | `AltaEvent<TreeAttachment, UnityAttachmentEvent>` | 0 |  |
-| [`OffsetEvent`](/game-api/types/alta-crafting/offsetevent) | class |  | 2 |  |
+| [`AttachmentEvent`](/game-api/types/alta-crafting/attachmentevent) | class | `AltaEvent<TreeAttachment, UnityAttachmentEvent>` | 0 | Serializable event with a `TreeAttachment` argument, used for a tree attachment's broken event. |
+| [`OffsetEvent`](/game-api/types/alta-crafting/offsetevent) | class |  | 2 | Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called for a minimum delay. Made with `Timeline.CreateOffset`. |
 | [`OffsetEventHelper`](/game-api/types/alta-crafting/offseteventhelper) | static class |  | 1 |  |
 | [`PresetTree`](/game-api/types/alta-crafting/presettree) | class | `HashedGeneralValue<PresetTree>`, `ISerializationCallbackReceiver` | 7 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
 | [`PresetTree.Create`](/game-api/types/alta-crafting/presettree-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<PresetTree>` | 0 |  |
@@ -298,8 +298,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`WoodcutTreeDamagedNodeBaker`](/game-api/types/alta-crafting/woodcuttreedamagednodebaker) | class | `WoodcutTreeNodeBaker` | 6 |  |
 | [`WoodcutTreeEvent`](/game-api/types/alta-crafting/woodcuttreeevent) | class | `AltaEvent<WoodcutTree, TreeEvent>` | 0 | Serializable `AltaEvent` raised with a `WoodcutTree`, used for a tree's `cut` and `onThump` events. |
 | [`WoodcutTreeModel`](/game-api/types/alta-crafting/woodcuttreemodel) | class | `NetworkEntityBehaviour` | 21 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): Takes hits on its `WoodcutPoints`; when chopped through (`PieceChopped`, server) it spawns the species' wedge or stick drops at its drop locations and destroys itself. |
-| [`WoodcutTreeModelChopped`](/game-api/types/alta-crafting/woodcuttreemodelchopped) | delegate |  | 0 |  |
-| [`WoodcutTreeModelDamaged`](/game-api/types/alta-crafting/woodcuttreemodeldamaged) | delegate |  | 0 |  |
+| [`WoodcutTreeModelChopped`](/game-api/types/alta-crafting/woodcuttreemodelchopped) | delegate |  | 0 | Handler for `WoodcutTreeModel.Chopped`, called with the tree model that was chopped down. |
+| [`WoodcutTreeModelDamaged`](/game-api/types/alta-crafting/woodcuttreemodeldamaged) | delegate |  | 0 | Handler for `WoodcutTreeModel.TookDamage`, called with the tree model and the damage it took. |
 | [`WoodcutTreeModelEvent`](/game-api/types/alta-crafting/woodcuttreemodelevent) | class | `AltaEvent<WoodcutTreeModel, UnityWoodcutTreeModelEvent>` | 0 | Serializable `AltaEvent` raised with a `WoodcutTreeModel`, used for `WoodcutConnectionType.Broken`. |
 | [`WoodcutTreeNodeBaker`](/game-api/types/alta-crafting/woodcuttreenodebaker) | class | `WoodcutTreeBakerAccess<WoodcutTree.MapNode>` | 8 | Reads meshes and materials from woodcut tree nodes for the tree baker. Use the shared `Instance`. Build-time tooling. |
 | [`WoodcutTreeNodeBakerLod0Only`](/game-api/types/alta-crafting/woodcuttreenodebakerlod0only) | class | `WoodcutTreeNodeBaker` | 3 |  |

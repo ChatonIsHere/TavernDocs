@@ -1,6 +1,6 @@
 ---
 title: "HitModifierEffect.EffectPosition"
-description: "enum HitModifierEffect.EffectPosition in Root.Township."
+description: "Where a hit modifier effect starts or ends: on this object, on the thing hit, or on the player wielding the tool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HitModifierEffect.EffectPosition
 
 An **private enum** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Where a hit modifier effect starts or ends: on this object, on the thing hit, or on the player wielding the tool.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`HitModifierEffect`](/game-api/types/alta-items/hitmodifiereffect)

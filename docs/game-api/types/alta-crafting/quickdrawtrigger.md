@@ -30,13 +30,13 @@ Enchantment trigger that charges when the item is taken out of a dock and goes o
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cooldowntime" /><code>{"private float cooldownTime"}</code> |
-| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |
-| <Link id="m-timetohit" /><code>{"private float timeToHit"}</code> |
-| <Link id="m-validdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"[] validDocks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cooldowntime" /><code>{"private float cooldownTime"}</code> | Seconds after a proc before the trigger can charge again. |
+| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> | If true, the charge ends after the first hit that procs. |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | A hit must be more effective than this (0 to 1) to proc. |
+| <Link id="m-timetohit" /><code>{"private float timeToHit"}</code> | Seconds after drawing the tool that a hit still counts. The charge is cancelled after that. |
+| <Link id="m-validdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"[] validDocks"}</code> | Dock types the tool must be drawn from. Empty means any dock. |
 
 </details>
 

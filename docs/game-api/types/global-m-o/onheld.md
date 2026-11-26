@@ -1,6 +1,6 @@
 ---
 title: "OnHeld"
-description: "delegate OnHeld in Root.Township."
+description: "Handler that receives a held pickup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OnHeld
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler that receives a held pickup.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `MulticastDelegate`

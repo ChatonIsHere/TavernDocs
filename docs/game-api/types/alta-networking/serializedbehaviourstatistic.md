@@ -1,6 +1,6 @@
 ---
 title: "SerializedBehaviourStatistic"
-description: "class SerializedBehaviourStatistic in Root.Township."
+description: "Network traffic statistic for one serialized behaviour, by name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializedBehaviourStatistic
 
 A **class** in `Root.Township`, `Alta.Profiling.Networking`.
+
+Network traffic statistic for one serialized behaviour, by name.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NetworkingStatistic`](/game-api/types/alta-utilities/networkingstatistic)
@@ -27,23 +29,23 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-behaviourname" /><code>{"private string behaviourName"}</code> | Backing field for `BehaviourName`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-behaviourname-2" /><code>{"string BehaviourName { get; }"}</code> | Name of the behaviour counted. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getsummary" /><code>{"override string GetSummary(float statisticDuration)"}</code> | Returns a one-line summary with the behaviour name and the base traffic figures. |
 
 ## Used in
 

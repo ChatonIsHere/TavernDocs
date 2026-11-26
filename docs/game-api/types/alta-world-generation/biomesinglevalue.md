@@ -1,6 +1,6 @@
 ---
 title: "BiomeSingleValue"
-description: "class BiomeSingleValue in Root.Township."
+description: "A biome paired with a float, serialisable in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BiomeSingleValue
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+A biome paired with a float, serialisable in the inspector. `Section` uses an array of them for its biome weightings.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`SingleValue<Biome>`](/game-api/types/alta-utilities/singlevalue-t)

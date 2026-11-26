@@ -1,6 +1,6 @@
 ---
 title: "ResourceDropChance"
-description: "class ResourceDropChance in Root.Township."
+description: "One possible resource drop with its weighting, used in BoulderDefinition.ResourcesDropChances."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Impact`.
 
+One possible resource drop with its weighting, used in `BoulderDefinition.ResourcesDropChances`.
+
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `Alta.Impact`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> |
-| <Link id="m-resourcedefinition" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dropweighting" /><code>{"float dropWeighting"}</code> | Weighting from 0 to 1 for this resource. |
+| <Link id="m-resourcedefinition" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" resourceDefinition"}</code> | The item that can drop. |
 
 ## Used in
 

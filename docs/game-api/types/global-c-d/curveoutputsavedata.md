@@ -1,6 +1,6 @@
 ---
 title: "CurveOutputSaveData"
-description: "class CurveOutputSaveData in Root.Township."
+description: "Save data for a CurveOutput logic component (save structure version 1)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CurveOutputSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `CurveOutput` logic component (save structure version 1).
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NewSaveData<CurveOutput, CurveOutputSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,10 +27,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> |
-| <Link id="m-progress" /><code>{"float progress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isrunning" /><code>{"bool isRunning"}</code> | Whether the curve was still playing when saved. |
+| <Link id="m-progress" /><code>{"float progress"}</code> | How far along its curve the output was when saved. |
 
 ## Used in
 

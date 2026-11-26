@@ -1,6 +1,6 @@
 ---
 title: "ScaleChangedHandler"
-description: "delegate ScaleChangedHandler in Root.Township."
+description: "Callback for PlayerCharacter.ScaleChanged: the player plus their old and new scale."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ScaleChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Character`.
+
+Callback for `PlayerCharacter.ScaleChanged`: the player plus their old and new scale.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MulticastDelegate`

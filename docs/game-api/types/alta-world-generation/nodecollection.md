@@ -27,9 +27,9 @@ A set of grid nodes from the PAGaC procedural generator, with a running bounding
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-nodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nodes" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"> nodes"}</code> | The set of nodes in the collection. |
 
 </details>
 
@@ -60,9 +60,9 @@ A set of grid nodes from the PAGaC procedural generator, with a running bounding
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-removingfinished" /><code>{"private void RemovingFinished(int recalculating)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-removingfinished" /><code>{"private void RemovingFinished(int recalculating)"}</code> | Recalculates the bounds that removed nodes sat on; the flags say which min or max sides to redo. |
 
 </details>
 

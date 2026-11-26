@@ -1,6 +1,6 @@
 ---
 title: "AgentCircleRepositionSettings.MovementDirection"
-description: "enum AgentCircleRepositionSettings.MovementDirection in Root.Township."
+description: "Which way an agent circles around its target when repositioning: right or left."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AgentCircleRepositionSettings.MovementDirection
 
 An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which way an agent circles around its target when repositioning: right or left.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`AgentCircleRepositionSettings`](/game-api/types/alta-intelligence/agentcirclerepositionsettings)

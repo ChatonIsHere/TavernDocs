@@ -1,6 +1,6 @@
 ---
 title: "GroupMemberListElement"
-description: "class GroupMemberListElement in Root.Township."
+description: "Row in a group's member list, showing the member's username."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupMemberListElement
 
 A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
+
+Row in a group's member list, showing the member's username.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`ListElementWithData<GroupMember>`](/game-api/types/alta-menus/listelementwithdata-tdata)
@@ -23,9 +25,9 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/groupmember">{"GroupMember"}</Link>{" data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gettext" /><code>{"protected override string GetText("}<Link to="/game-api/types/assembly-api-client/groupmember">{"GroupMember"}</Link>{" data)"}</code> | Returns the member's username. |
 
 ## Used in
 

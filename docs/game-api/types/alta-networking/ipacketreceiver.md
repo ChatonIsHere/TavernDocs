@@ -1,6 +1,6 @@
 ---
 title: "IPacketReceiver"
-description: "interface IPacketReceiver in Root.Township."
+description: "Something that pulls incoming packets off the transport each frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Networking`.
 
+Something that pulls incoming packets off the transport each frame. `ServerPacketReceiver` and `ClientPacketReceiver` implement it, and `Socket` holds one.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Derived types** [`ClientPacketReceiver`](/game-api/types/alta-networking/clientpacketreceiver), [`ServerPacketReceiver`](/game-api/types/alta-networking/serverpacketreceiver)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | Receives and processes this frame's waiting packets. |
 
 ## Used in
 

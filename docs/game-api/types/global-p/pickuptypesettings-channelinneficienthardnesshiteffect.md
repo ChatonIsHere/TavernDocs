@@ -1,6 +1,6 @@
 ---
 title: "PickupTypeSettings.ChannelInneficientHardnessHitEffect"
-description: "class PickupTypeSettings.ChannelInneficientHardnessHitEffect in Root.Township."
+description: "Pairs an impact channel with the impact effect to play when a hit on that channel is too soft to work."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupTypeSettings.ChannelInneficientHardnessHitEffect
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Pairs an impact channel with the impact effect to play when a hit on that channel is too soft to work.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PickupTypeSettings`](/game-api/types/global-p/pickuptypesettings)
@@ -23,10 +25,10 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> |
-| <Link id="m-settings" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code><Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" channel"}</code> | The impact channel this entry is for. |
+| <Link id="m-settings" /><code><Link to="/game-api/types/alta-items/impactdetectorsettings-impactsettings">{"ImpactDetectorSettings.ImpactSettings"}</Link>{" settings"}</code> | The impact effect settings to use for that channel. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "MaterialInstance"
-description: "class MaterialInstance in Root.Township."
+description: "Takes a renderer's own material copy (renderer.material) and cleans it up when disposed, so the copy does not leak."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MaterialInstance
 
 A **class** in `Root.Township`, `Alta.Rendering`.
+
+Takes a renderer's own material copy (`renderer.material`) and cleans it up when disposed, so the copy does not leak.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `IDisposable`
@@ -24,16 +26,16 @@ A **class** in `Root.Township`, `Alta.Rendering`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |
-| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | The renderer's own material copy, made when this object is created. |
+| <Link id="m-renderer" /><code>{"Renderer Renderer { get; }"}</code> | The renderer the material belongs to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Cleans up the material copy. |
 
 ## Used in
 

@@ -27,16 +27,16 @@ A float that eases toward a target over time and writes each step through a sett
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-control" /><code>{"private float control"}</code> |
-| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |
-| <Link id="m-initial" /><code>{"private float initial"}</code> |
-| <Link id="m-iscontrolled" /><code>{"private bool isControlled"}</code> |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
-| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |
-| <Link id="m-snapvalue" /><code>{"private float snapValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-control" /><code>{"private float control"}</code> | Value the lerp heads to while controlled. |
+| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> | Function giving the current target when not controlled. |
+| <Link id="m-initial" /><code>{"private float initial"}</code> | Value at the start of the current lerp. |
+| <Link id="m-iscontrolled" /><code>{"private bool isControlled"}</code> | True between `SetControl` and `StopControl`. |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | Duration of a lerp in seconds, despite the name. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | Lerp progress from 0 to 1. |
+| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> | Callback that receives each new value. |
+| <Link id="m-snapvalue" /><code>{"private float snapValue"}</code> | Value stored by a `Snap` made while controlled. |
 
 </details>
 
@@ -70,9 +70,9 @@ A float that eases toward a target over time and writes each step through a sett
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-snapvalue-2" /><code>{"private float SnapValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-snapvalue-2" /><code>{"private float SnapValue()"}</code> | Returns the value saved by a `Snap` made while controlled, used as the target once control stops. |
 
 </details>
 

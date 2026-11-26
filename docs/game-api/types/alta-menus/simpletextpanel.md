@@ -1,6 +1,6 @@
 ---
 title: "SimpleTextPanel"
-description: "class SimpleTextPanel in Root.Township."
+description: "Client UI panel that just shows a block of text."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimpleTextPanel
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+Client UI panel that just shows a block of text.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`Panel`](/game-api/types/alta-menus/panel)
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | The text renderer the text goes into. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setup" /><code>{"void Setup(string text)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setup" /><code>{"void Setup(string text)"}</code> | Sets the text and shows the panel. |
 
 ## Used in
 

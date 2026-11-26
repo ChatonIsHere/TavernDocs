@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlockStation.UnlockStationType"
-description: "enum PlayerUnlockStation.UnlockStationType in Root.Township."
+description: "What a PlayerUnlockStation does: Normal, Start (begins a challenge), Completion (ends one) or Unlock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerUnlockStation.UnlockStationType
 
 An **enum** in `Root.Township`, no namespace.
+
+What a `PlayerUnlockStation` does: `Normal`, `Start` (begins a challenge), `Completion` (ends one) or `Unlock`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerUnlockStation`](/game-api/types/global-p/playerunlockstation)

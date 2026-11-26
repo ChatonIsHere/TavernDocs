@@ -28,7 +28,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ClientPacketReceiver`](/game-api/types/alta-networking/clientpacketreceiver) | class | `IPacketReceiver`, `IPacketProcessor` | 2 |  |
 | [`ClientSpawnManager`](/game-api/types/alta-networking/clientspawnmanager) | class | `SpawnManager` | 5 | [Spawning](../world/spawning.md) |
 | [`ClientSync`](/game-api/types/alta-networking/clientsync) | class | `BaseSync`, `ISync` | 8 |  |
-| [`ConfirmJoinMessage`](/game-api/types/alta-networking/confirmjoinmessage) | internal struct |  | 8 |  |
+| [`ConfirmJoinMessage`](/game-api/types/alta-networking/confirmjoinmessage) | internal struct |  | 8 | Internal message the server sends back to a client's join request: allowed or not, whether prerequisites are running, a join result and an error text. Server writes, client reads. |
 | [`Connection`](/game-api/types/alta-networking/connection) | class | `IConnection` | 30 | [Sockets and connections](../networking/connections.md#connection): One per peer. On a server, a player's is `player.ConnectionToRemotePlayer`. |
 | [`ConnectionChannel`](/game-api/types/alta-networking/connectionchannel) | class | `ScriptableObject` | 7 | [Sockets and connections](../networking/connections.md#connectionchannel): The channels come from `GlobalSettings<NetworkingSettings>.Instance.Channels`; each connection has one outgoing queue per channel. |
 | [`ConnectionChannel.Create`](/game-api/types/alta-networking/connectionchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Networking.ScriptableObject<ConnectionChannel>` | 0 |  |
@@ -58,7 +58,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`INetworkSceneInternal`](/game-api/types/alta-networking/inetworksceneinternal) | interface | `INetworkScene`, `IEntityManager` | 8 | Internal side of the network scene used by the networking code: connections, the scene serializer and forced entity registration. `NetworkScene` implements it; get it from `NetworkSceneManager.CurrentInternal`. |
 | [`INetworkSerialized`](/game-api/types/alta-networking/inetworkserialized) | interface |  | 5 | Implement on a component of a `NetworkEntity` to have its state sent by the entity's serializer on each sync. The owning side writes, others read. |
 | [`InternalMessage`](/game-api/types/alta-networking/internalmessage) | static class |  | 3 |  |
-| [`IPacketReceiver`](/game-api/types/alta-networking/ipacketreceiver) | interface |  | 1 |  |
+| [`IPacketReceiver`](/game-api/types/alta-networking/ipacketreceiver) | interface |  | 1 | Something that pulls incoming packets off the transport each frame. `ServerPacketReceiver` and `ClientPacketReceiver` implement it, and `Socket` holds one. |
 | [`ISerializeChildren`](/game-api/types/alta-networking/iserializechildren) | interface |  | 7 | Passed to `ISavable` load and save methods so a component can save and restore the child prefabs spawned under its entity. |
 | [`ISocket`](/game-api/types/alta-networking/isocket) | interface | `IDisposable` | 17 | The game's network socket: owns the list of `Connection`s and sends messages over the transport. The live one is `Socket.Current` (a `FakeSocket` when offline); on a server it holds one connection per player. |
 | [`ISync`](/game-api/types/alta-networking/isync) | interface |  | 8 | Fluent helper for one entity message type, with separate server and client read and write methods. Made by `SyncFactory.Create`; only `ExampleBehaviour` uses it in this build. The server and client versions ignore the other side's methods. |
@@ -75,11 +75,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ModificationArguments`](/game-api/types/alta-networking/modificationarguments) | struct |  | 4 | Message payload `ModifiableStaticManager` sends to chunks when a static scene object's modified state changes: the object's hash and whether it is modified. |
 | [`MoveMessage`](/game-api/types/alta-networking/movemessage) | static class |  | 2 |  |
 | [`NetworkAxisPosition`](/game-api/types/alta-networking/networkaxisposition) | class | `NetworkAxisValue` | 0 |  |
-| [`NetworkAxisRotation`](/game-api/types/alta-networking/networkaxisrotation) | class | `NetworkAxisValue` | 1 |  |
+| [`NetworkAxisRotation`](/game-api/types/alta-networking/networkaxisrotation) | class | `NetworkAxisValue` | 1 | A `NetworkAxisValue` that syncs a rotation around one local axis, in degrees from 0 to 360, with wrap-around. |
 | [`NetworkAxisValue`](/game-api/types/alta-networking/networkaxisvalue) | abstract class | `NetworkEntityBehaviour`, `INetworkSerialized` | 7 | Base for a networked value along one axis (a slider, lever or hinge position). The server sends it compressed in a range; clients lerp to it, or snap when it's far off. |
 | [`NetworkColliderGroup`](/game-api/types/alta-networking/networkcollidergroup) | class | `ColliderGroup`, `INetworkEntityBehaviour` | 6 |  |
 | [`NetworkEntity`](/game-api/types/alta-networking/networkentity) | class | `MonoBehaviour`, `IChunkedEntity`, `IEntitySerialized`, +1 more | 70 | [NetworkEntity](../world/network-entity.md): Runs on server and clients. |
-| [`NetworkEntity.SyncPriorityModifiers`](/game-api/types/alta-networking/networkentity-syncprioritymodifiers) | enum |  | 1 |  |
+| [`NetworkEntity.SyncPriorityModifiers`](/game-api/types/alta-networking/networkentity-syncprioritymodifiers) | enum |  | 1 | Flags on `NetworkEntity.CurrentPriorityModifiers` that change sync priority. `DockedOrInteracted` is set while a pickup is docked or an interactable is in use. |
 | [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour) | abstract class | `MonoBehaviour`, `INetworkEntityBehaviour` | 5 | [Entity sync](../networking/entity-sync.md#networkentitybehaviour): The base class for networked components. `Entity` gets the `NetworkEntity`. Overridable: |
 | [`NetworkEntityComponentController`](/game-api/types/alta-networking/networkentitycomponentcontroller) | class | `MonoBehaviour`, `IInitializeAsLocalPlayer`, `IInitializeAsRemotePlayer` | 0 |  |
 | [`NetworkEntityHandler`](/game-api/types/alta-networking/networkentityhandler) | delegate |  | 0 | Callback that takes a `NetworkEntity`. Used by events such as `Cookable.SwappedToCookedVersion` and an entity's `InitializationFinished`. |
@@ -94,15 +94,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NetworkPrefab.ChildPrefab`](/game-api/types/alta-networking/networkprefab-childprefab) | class |  | 3 | Pairs a child network prefab with the entity it sits under, for saving and spawning nested prefabs. |
 | [`NetworkPrefabChildEventHandler`](/game-api/types/alta-networking/networkprefabchildeventhandler) | delegate |  | 0 | Callback for when a saved child of a prefab has spawned, given the child prefab, its parent entity and the child index. Used with `ISerializeChildren.GetSpawnedChildren`. |
 | [`NetworkPrefabConverter`](/game-api/types/alta-networking/networkprefabconverter) | class | `TypeConverter` | 2 |  |
-| [`NetworkPrefabEventHandler`](/game-api/types/alta-networking/networkprefabeventhandler) | delegate |  | 0 |  |
+| [`NetworkPrefabEventHandler`](/game-api/types/alta-networking/networkprefabeventhandler) | delegate |  | 0 | Callback with a `NetworkPrefab`, used by `NetworkPrefab.PreDestroyed`. |
 | [`NetworkRigidbody`](/game-api/types/alta-networking/networkrigidbody) | class | `NetworkEntityBehaviour`, `INetworkSerialized`, `ISavableFull<NetworkRigidbodySaveData>`, +6 more | 21 | Syncs a physics object's position, rotation, velocity, kinematic and sleep state from the server to clients, and saves them. On clients it eases the local rigidbody towards the server's values and sleeps it when updates stop. On almost every physics prefab. |
 | [`NetworkRigidbodySaveData`](/game-api/types/alta-networking/networkrigidbodysavedata) | internal class | `NewSaveData<NetworkRigidbody, NetworkRigidbodySaveData>` | 6 |  |
 | [`NetworkRotation`](/game-api/types/alta-networking/networkrotation) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`NetworkScene`](/game-api/types/alta-networking/networkscene) | class | `NetworkEntityParent`, `INetworkSceneInternal`, `INetworkScene`, +1 more | 22 | The networked scene: holds the entity manager, global and void chunks, the spawner and the connections, and sends entity sync each frame. One per loaded scene, reached through `NetworkSceneManager.Current`. |
 | [`NetworkSerializedProfiler`](/game-api/types/alta-networking/networkserializedprofiler) | static class |  | 3 |  |
 | [`NetworkTransform`](/game-api/types/alta-networking/networktransform) | class | `NetworkEntityBehaviour`, `INetworkSerialized`, `IInitializeAsLocalPlayer` | 8 | Syncs a transform's local position, rotation and optional scale from the authoritative side. Remote copies lerp toward it each fixed update, or snap when far off. |
-| [`PacketSentHandler`](/game-api/types/alta-networking/packetsenthandler) | delegate |  | 0 |  |
-| [`ParentChangedHandler`](/game-api/types/alta-networking/parentchangedhandler) | delegate |  | 0 |  |
+| [`PacketSentHandler`](/game-api/types/alta-networking/packetsenthandler) | delegate |  | 0 | Callback for `Connection.PacketSent`, with the connection, the bytes sent, their count, the channel and the transport result. |
+| [`ParentChangedHandler`](/game-api/types/alta-networking/parentchangedhandler) | delegate |  | 0 | Callback for when a network entity's parent changes, with the entity, its old parent and its new parent. |
 | [`PhysicsSerializationSettings`](/game-api/types/alta-networking/physicsserializationsettings) | static class |  | 10 |  |
 | [`PingMessage`](/game-api/types/alta-networking/pingmessage) | static class |  | 6 |  |
 | [`PlayerComponentController`](/game-api/types/alta-networking/playercomponentcontroller) | class | `MonoBehaviour`, `IInitializeAsLocalPlayer` | 0 |  |
@@ -121,7 +121,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SerializeMethod`](/game-api/types/alta-networking/serializemethod) | delegate |  | 0 | Handler for a network message: gets the sending or receiving player and the stream, and both reads and writes the message with the same calls. The generic version also gets a typed argument. |
 | [`SerializeMethod<T>`](/game-api/types/alta-networking/serializemethod-t) | delegate |  | 0 | Callback that reads or writes data for one player on a stream, with an extra argument of type `T`. A non-generic version without the argument sits in the same file. |
 | [`ServerDiagnosticsMessage`](/game-api/types/alta-networking/serverdiagnosticsmessage) | static class |  | 5 |  |
-| [`ServerMessageReceiverPerConnection`](/game-api/types/alta-networking/servermessagereceiverperconnection) | class |  | 5 |  |
+| [`ServerMessageReceiverPerConnection`](/game-api/types/alta-networking/servermessagereceiverperconnection) | class |  | 5 | Server: per-connection receiver that holds incoming unreliable packets until the frame's processing step and handles connect and disconnect events. Made by `ServerPacketReceiver`. |
 | [`ServerPacketReceiver`](/game-api/types/alta-networking/serverpacketreceiver) | class | `IPacketReceiver`, `IPacketProcessor` | 8 |  |
 | [`ServerSpawnManager`](/game-api/types/alta-networking/serverspawnmanager) | class | `SpawnManager` | 6 | [Spawning](../world/spawning.md) |
 | [`ServerSync`](/game-api/types/alta-networking/serversync) | class | `BaseSync`, `ISync` | 8 |  |
@@ -130,7 +130,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SpawnIndex`](/game-api/types/alta-networking/spawnindex) | class |  | 4 | Per-entity counter that orders spawns and despawns, so clients drop destroy messages that are older than the entity's latest spawn. |
 | [`SpawnManager`](/game-api/types/alta-networking/spawnmanager) | abstract class |  | 13 | [Spawning](../world/spawning.md#spawnmanager): Get it from `NetworkSceneManager.Current.Spawner`, `entity.Spawner` or `SpawnHelper.Manager`. |
 | [`SpawnMessage`](/game-api/types/alta-networking/spawnmessage) | static class |  | 2 |  |
-| [`StaticChangeEvent`](/game-api/types/alta-networking/staticchangeevent) | delegate |  | 0 |  |
+| [`StaticChangeEvent`](/game-api/types/alta-networking/staticchangeevent) | delegate |  | 0 | Callback for `ModifiableStaticManager.ObjectChanged`, with a static object's hash and whether it is now modified. |
 | [`StaticPlatformSupport`](/game-api/types/alta-networking/staticplatformsupport) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`StreamAuthorityHelper`](/game-api/types/alta-networking/streamauthorityhelper) | static class |  | 2 |  |
 | [`StreamEntityExtensions`](/game-api/types/alta-networking/streamentityextensions) | static class |  | 7 |  |
@@ -139,7 +139,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Sync<T>`](/game-api/types/alta-networking/sync-t) | abstract class |  | 5 |  |
 | [`SyncFactory`](/game-api/types/alta-networking/syncfactory) | static class |  | 1 |  |
 | [`TemporaryUint256`](/game-api/types/alta-networking/temporaryuint256) | static class |  | 1 |  |
-| [`ThrottledMethodSync`](/game-api/types/alta-networking/throttledmethodsync) | class |  | 3 |  |
+| [`ThrottledMethodSync`](/game-api/types/alta-networking/throttledmethodsync) | class |  | 3 | Wraps an entity message so it is sent at most once per set interval; extra sends inside the interval are dropped, not delayed. |
 | [`TransportSystem`](/game-api/types/alta-networking/transportsystem) | enum |  | 1 | Which network transport to use. KCP is the only option and the default. |
 
 ## Alta.Networking.Animation
@@ -165,9 +165,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ClientSerializedEnumerable`](/game-api/types/alta-networking/clientserializedenumerable) | class | `SerializedEnumerable` | 3 |  |
+| [`ClientSerializedEnumerable`](/game-api/types/alta-networking/clientserializedenumerable) | class | `SerializedEnumerable` | 3 | Client-side enumerator over the entities the client serializes, in identifier order from a sorted list. `EntityManager.GetClientSerialized` returns its single instance. |
 | [`ConnectionReceiver`](/game-api/types/alta-networking/connectionreceiver) | abstract class | `IDisposable` | 3 | Takes received packets for one connection channel and processes them now or queues them. The channel picks normal, timed or counted; servers always use normal. |
-| [`ConnectionReceiverType`](/game-api/types/alta-networking/connectionreceivertype) | enum |  | 3 |  |
+| [`ConnectionReceiverType`](/game-api/types/alta-networking/connectionreceivertype) | enum |  | 3 | How a client connection channel processes incoming reliable packets: Normal (all at once), Timed (by time budget) or Counted (by message count). The server always uses Normal. |
 | [`ConnectionReceiveSettings`](/game-api/types/alta-networking/connectionreceivesettings) | class | `GlobalSettings<ConnectionReceiveSettings>` | 6 | Global settings for how a client spreads processing of received reliable messages over frames. Servers always process straight away. |
 | [`ConnectionReceiveSettings.Create`](/game-api/types/alta-networking/connectionreceivesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Networking.ScriptableObject<ConnectionReceiveSettings>` | 0 |  |
 | [`CountedQueuedConnectionReceiver`](/game-api/types/alta-networking/countedqueuedconnectionreceiver) | class | `QueuedConnectionReceiver` | 1 |  |
@@ -178,12 +178,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NormalConnectionReceiver`](/game-api/types/alta-networking/normalconnectionreceiver) | class | `ConnectionReceiver` | 3 |  |
 | [`OutgoingPacketManager`](/game-api/types/alta-networking/outgoingpacketmanager) | class | `IDisposable` | 13 | Batches outgoing messages for one connection channel into packets and sends them. Reliable channels keep up to 64 unsent packets and disconnect the player when that fills up. Each `Connection` has one per channel. |
 | [`Packet`](/game-api/types/alta-networking/packet) | class |  | 8 | An outgoing packet buffer that several messages are written into, each with a 2-byte length, before it is sent on a connection. |
-| [`PooledDataQueueItem`](/game-api/types/alta-networking/pooleddataqueueitem) | class |  | 3 |  |
+| [`PooledDataQueueItem`](/game-api/types/alta-networking/pooleddataqueueitem) | class |  | 3 | A pooled wrapper around a received packet's bytes, used by `QueuedConnectionReceiver` to queue packets for later frames. |
 | [`QueuedConnectionHelper`](/game-api/types/alta-networking/queuedconnectionhelper) | static class |  | 4 |  |
 | [`QueuedConnectionReceiver`](/game-api/types/alta-networking/queuedconnectionreceiver) | abstract class | `ConnectionReceiver` | 5 | A connection receiver that can hold packets back and process them later, so incoming messages can be spread over frames. Subclasses decide when to queue. |
 | [`SceneSerializer`](/game-api/types/alta-networking/sceneserializer) | class |  | 11 | Sends and reads the regular state updates of every `EntitySerializer` in a network scene, packing as many as fit into each `SceneSerialize` message. The server writes per connection. |
 | [`SerializedEnumerable`](/game-api/types/alta-networking/serializedenumerable) | class | `IEnumerable<EntitySerializer>`, `IEnumerable`, `IEnumerator<EntitySerializer>`, +2 more | 7 | Walks the linked list of serialized entities from a start index, returning each entity's serializer. Used by `EntityManager`; skips placeholder links. |
-| [`SerializingEntityHandler`](/game-api/types/alta-networking/serializingentityhandler) | delegate |  | 0 |  |
+| [`SerializingEntityHandler`](/game-api/types/alta-networking/serializingentityhandler) | delegate |  | 0 | Callback for `SceneSerializer.WritingEntity`, raised before each entity's data is written into a sync stream, with its index, serializer, bit size and stream. |
 | [`TimedQueuedConnectionReceiver`](/game-api/types/alta-networking/timedqueuedconnectionreceiver) | class | `QueuedConnectionReceiver` | 2 |  |
 
 ## Alta.Networking.Scripts.Player
@@ -205,7 +205,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerJoinLock`](/game-api/types/alta-networking/serverjoinlock) | struct |  | 5 | [Server lifecycle](../networking/server-lifecycle.md) |
 | [`ServerLifetimePipeline`](/game-api/types/alta-networking/serverlifetimepipeline) | static class |  | 6 | [Server lifecycle](../networking/server-lifecycle.md): Opens the server socket and makes the handler. `GetServerRegion()`, `GetServerFleet()`. |
 | [`ServerLockCollection`](/game-api/types/alta-networking/serverlockcollection) | class | `IEnumerable<ServerJoinLock>`, `IEnumerable` | 4 | [Server lifecycle](../networking/server-lifecycle.md) |
-| [`ServerPlayerConnectionHandlerOld`](/game-api/types/alta-networking/serverplayerconnectionhandlerold) | class |  | 6 |  |
+| [`ServerPlayerConnectionHandlerOld`](/game-api/types/alta-networking/serverplayerconnectionhandlerold) | class |  | 6 | Server: checks join requests and accepts or refuses players. Despite the name, `ServerHandler` still creates and uses it. |
 | [`ServerPlayerConnectionHandlerOld.ApiServerJoinResult`](/game-api/types/alta-networking/serverplayerconnectionhandlerold-apiserverjoinresult) | struct |  | 2 |  |
 
 ## Alta.Networking.Voice
@@ -218,17 +218,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ConnectionSimulatorConfiguration`](/game-api/types/alta-networking/connectionsimulatorconfiguration) | class |  | 5 |  |
-| [`DuplicateKeyComparer<TKey>`](/game-api/types/alta-networking/duplicatekeycomparer-tkey) | internal class | `IComparer<TKey>` | 1 |  |
-| [`EntityMessageStatistics`](/game-api/types/alta-networking/entitymessagestatistics) | class | `IndexedStatisticList<EntityMessageTypeStatistic, EntityMessageType>` | 1 |  |
-| [`EntityMessageTypeStatistic`](/game-api/types/alta-networking/entitymessagetypestatistic) | class | `NetworkingStatistic` | 3 |  |
+| [`ConnectionSimulatorConfiguration`](/game-api/types/alta-networking/connectionsimulatorconfiguration) | class |  | 5 | Settings for simulating a bad connection: send and receive delays in ms and a packet loss chance. Held by `NetworkingProfiler`. |
+| [`DuplicateKeyComparer<TKey>`](/game-api/types/alta-networking/duplicatekeycomparer-tkey) | internal class | `IComparer<TKey>` | 1 | Internal comparer that never reports two keys as equal, so a sorted list can hold duplicate keys. `EntityStatistics` uses it to sort by float values. |
+| [`EntityMessageStatistics`](/game-api/types/alta-networking/entitymessagestatistics) | class | `IndexedStatisticList<EntityMessageTypeStatistic, EntityMessageType>` | 1 | Profiling list of bytes sent, one statistic per entity message type. |
+| [`EntityMessageTypeStatistic`](/game-api/types/alta-networking/entitymessagetypestatistic) | class | `NetworkingStatistic` | 3 | Network traffic statistic for one entity message type. |
 | [`EntityStatistic`](/game-api/types/alta-networking/entitystatistic) | class | `NetworkingStatistic` | 10 | Network profiling stats for one entity: bytes sent, split by entity message type and by behaviour. Used by the networking profiler. |
 | [`EntityStatistics`](/game-api/types/alta-networking/entitystatistics) | class | `NetworkingStatisticsListNonSerialized<EntityStatistic>` | 7 |  |
 | [`IndexedStatisticList<TStatistic, TStatType>`](/game-api/types/alta-networking/indexedstatisticlist-tstatistic-tstattype) | abstract class | `NetworkingStatisticsList<TStatistic>` | 0 |  |
 | [`MessageStatistics`](/game-api/types/alta-networking/messagestatistics) | class | `NetworkingStatisticsList<MessageTypeStatistic, KeyValuePair<MessageType, MessageTypeStatistic>>` | 1 |  |
-| [`MessageTypeStatistic`](/game-api/types/alta-networking/messagetypestatistic) | class | `NetworkingStatistic` | 2 |  |
-| [`SerializedBehaviourStatistic`](/game-api/types/alta-networking/serializedbehaviourstatistic) | class | `NetworkingStatistic` | 3 |  |
-| [`SerializedBehaviourStatistics`](/game-api/types/alta-networking/serializedbehaviourstatistics) | class | `IndexedStatisticList<SerializedBehaviourStatistic, string>` | 1 |  |
+| [`MessageTypeStatistic`](/game-api/types/alta-networking/messagetypestatistic) | class | `NetworkingStatistic` | 2 | Network traffic statistic for one top-level `MessageType`. |
+| [`SerializedBehaviourStatistic`](/game-api/types/alta-networking/serializedbehaviourstatistic) | class | `NetworkingStatistic` | 3 | Network traffic statistic for one serialized behaviour, by name. |
+| [`SerializedBehaviourStatistics`](/game-api/types/alta-networking/serializedbehaviourstatistics) | class | `IndexedStatisticList<SerializedBehaviourStatistic, string>` | 1 | Profiling list of bytes sent, one statistic per serialized behaviour name. |
 
 ## Alta.Streaming
 
@@ -242,8 +242,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IVivoxMutedPlayerStore`](/game-api/types/alta-networking/ivivoxmutedplayerstore) | internal interface |  | 3 |  |
-| [`IVivoxVoiceUpdatable`](/game-api/types/alta-networking/ivivoxvoiceupdatable) | interface |  | 1 |  |
+| [`IVivoxMutedPlayerStore`](/game-api/types/alta-networking/ivivoxmutedplayerstore) | internal interface |  | 3 | Internal store of user IDs the local player has muted. `VoiceChat` uses the PlayerPrefs version, which saves on every change. |
+| [`IVivoxVoiceUpdatable`](/game-api/types/alta-networking/ivivoxvoiceupdatable) | interface |  | 1 | Positional voice that `VivoxClient` updates each frame. `VivoxVoice` implements it. |
 | [`IVoiceChat`](/game-api/types/alta-networking/ivoicechat) | interface |  | 4 | The voice chat service, implemented by `VoiceChat`: who you can hear and per-player mutes. |
 | [`VivoxChannel`](/game-api/types/alta-networking/vivoxchannel) | class |  | 5 | Settings for one Vivox voice or text channel; `VivoxManager` makes one for the server and `VivoxSession` joins it. Client side. |
 | [`VivoxClient`](/game-api/types/alta-networking/vivoxclient) | class |  | 27 | Wrapper around the Vivox voice and text chat client: login, audio devices, channels and muting. Client only; one is made by `VivoxManager` and reached through `VivoxManager.Instance.Client`. |
@@ -255,7 +255,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`VivoxUtility`](/game-api/types/alta-networking/vivoxutility) | static class |  | 7 | [Startup and app state](../console-and-utilities/startup-and-app-state.md) |
 | [`VivoxVoice`](/game-api/types/alta-networking/vivoxvoice) | class | `IVivoxVoiceUpdatable` | 3 | Client: positional Vivox voice for one channel session. Connects the audio and sends the head's position to Vivox while active. Made by `VivoxSession`. |
 | [`VoiceChat`](/game-api/types/alta-networking/voicechat) | class | `IVoiceChat` | 5 | [Connection messages](../networking/messages.md) |
-| [`VoiceChatScope`](/game-api/types/alta-networking/voicechatscope) | enum |  | 3 | Who a player hears or talks to in voice chat: no one, friends only, or everyone. |
+| [`VoiceChatScope`](/game-api/types/alta-networking/voicechatscope) | enum |  | 3 | Whose voices the local player can hear (`VoiceChat.AudibleScope`): no one, friends only, or everyone. Toggled by the mute non-friends quick action. |
 
 ## Alta.WebServer
 
@@ -264,4 +264,4 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AltaConsoleModule`](/game-api/types/alta-networking/altaconsolemodule) | class | `WebModuleBase` | 2 | [Remote console](../console-and-utilities/remote-console.md): the game's web server, path `/console` |
 | [`AltaFolderModule`](/game-api/types/alta-networking/altafoldermodule) | class | `WebModuleBase`, `IDisposable` | 4 | [Remote console](../console-and-utilities/remote-console.md) |
 | [`OutputFolderModule`](/game-api/types/alta-networking/outputfoldermodule) | class | `WebModuleBase`, `IDisposable` | 3 | [Remote console](../console-and-utilities/remote-console.md) |
-| [`WebServerThread`](/game-api/types/alta-networking/webserverthread) | class | `IDisposable` | 4 |  |
+| [`WebServerThread`](/game-api/types/alta-networking/webserverthread) | class | `IDisposable` | 4 | Server: small HTTP server on its own thread that serves the save cache at `/cache`, output files at `/output` and the console at `/console`, with CORS open. `ServerHandler` starts it. |

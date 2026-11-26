@@ -29,10 +29,10 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-spawnarea" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" spawnArea"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs entities that fail to initialize. |
+| <Link id="m-spawnarea" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" spawnArea"}</code> | Spawn area returned as `RespawnPoint`. |
 
 </details>
 
@@ -60,9 +60,9 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> | Always null; a local scene has no serializer. |
 
 </details>
 
@@ -96,12 +96,12 @@ An offline stand-in network scene for the main menu: it pretends to be the serve
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-setallitemstonotnetwork" /><code>{"private void SetAllItemsToNotNetwork()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Makes this the current scene, marks it as server, starts a dummy local server and sets a fake socket. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Stops the dummy local server. |
+| <Link id="m-setallitemstonotnetwork" /><code>{"private void SetAllItemsToNotNetwork()"}</code> | Turns networking off on every child interactable, initializes every child entity as owned, then raises `ServerStarted`. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Calls `SetAllItemsToNotNetwork`. |
 
 </details>
 

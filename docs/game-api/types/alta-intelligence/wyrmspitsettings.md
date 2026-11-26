@@ -29,15 +29,15 @@ Action settings for a wyrm's spit attack (`ActiveSpit`), scored by distance, hur
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatedangle" /><code>{"private string animatedAngle"}</code> |
-| <Link id="m-bestrange" /><code>{"private float bestRange"}</code> |
-| <Link id="m-changetargetmultiplier" /><code>{"private float changeTargetMultiplier"}</code> |
-| <Link id="m-hurtweighting" /><code>{"private float hurtWeighting"}</code> |
-| <Link id="m-maximumrange" /><code>{"private float maximumRange"}</code> |
-| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |
-| <Link id="m-spittriggers" /><code>{"private string[] spitTriggers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatedangle" /><code>{"private string animatedAngle"}</code> | Backing field for `AnimatedAngle`, the animator float set to the aim angle (default `Aim Angle`). |
+| <Link id="m-bestrange" /><code>{"private float bestRange"}</code> | Backing field for `BestRange`, the distance that scores best for spitting. |
+| <Link id="m-changetargetmultiplier" /><code>{"private float changeTargetMultiplier"}</code> | Backing field for `ChangeTargetMultiplier`. |
+| <Link id="m-hurtweighting" /><code>{"private float hurtWeighting"}</code> | Backing field for `HurtWeighting`. |
+| <Link id="m-maximumrange" /><code>{"private float maximumRange"}</code> | Backing field for `MaximumRange`, beyond which targets score zero. |
+| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> | Backing field for `SameTargetMultiplier`. |
+| <Link id="m-spittriggers" /><code>{"private string[] spitTriggers"}</code> | Animator triggers, one picked at random per spit. |
 
 </details>
 

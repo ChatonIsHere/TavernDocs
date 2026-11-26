@@ -1,6 +1,6 @@
 ---
 title: "ServerType"
-description: "enum ServerType in Alta.Api.DataTransferModels."
+description: "Alta server type: Normal or World."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Alta server type: `Normal` or `World`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

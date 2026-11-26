@@ -1,6 +1,6 @@
 ---
 title: "ButtonCounter.AmountChangedHandler"
-description: "delegate ButtonCounter.AmountChangedHandler in Root.Township."
+description: "Delegate for ButtonCounter.AmountChanged, passing the counter whose amount changed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonCounter.AmountChangedHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate for `ButtonCounter.AmountChanged`, passing the counter whose amount changed.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`ButtonCounter`](/game-api/types/global-a-b/buttoncounter)

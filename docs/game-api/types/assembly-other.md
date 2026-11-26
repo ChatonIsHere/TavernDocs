@@ -36,7 +36,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ArrayPoolManager`](/game-api/types/assembly-other/arraypoolmanager) | static class |  | 4 |  |
-| [`IUnclearedPower2ArrayPool`](/game-api/types/assembly-other/iunclearedpower2arraypool) | interface |  | 1 |  |
+| [`IUnclearedPower2ArrayPool`](/game-api/types/assembly-other/iunclearedpower2arraypool) | interface |  | 1 | Non-generic view of an `UnclearedPower2ArrayPool` so `ArrayPoolManager.LogAllPools` can list every pool's arrays. |
 | [`UnclearedPower2ArrayPool<T>`](/game-api/types/assembly-other/unclearedpower2arraypool-t) | class | `IUnclearedPower2ArrayPool` | 7 | Thread-safe pool of arrays in power-of-two sizes (16 and up). Arrays are not cleared, so a requested array can be larger than asked for and hold old data. Use `Shared` for the common pool. |
 
 ## Alta.Attributes
@@ -53,7 +53,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CleanNullsAttribute`](/game-api/types/assembly-other/cleannullsattribute) | class | `PrefabApplyAttribute` | 1 |  |
 | [`CleanRange`](/game-api/types/assembly-other/cleanrange) | class | `PropertyAttribute` | 5 |  |
 | [`CommentAttribute`](/game-api/types/assembly-other/commentattribute) | class | `PropertyAttribute` | 4 |  |
-| [`CommentAttribute.MessageType`](/game-api/types/assembly-other/commentattribute-messagetype) | enum |  | 4 |  |
+| [`CommentAttribute.MessageType`](/game-api/types/assembly-other/commentattribute-messagetype) | enum |  | 4 | Icon style for a `CommentAttribute` note in the inspector: none, info, warning or error. |
 | [`ConditionalLabeling`](/game-api/types/assembly-other/conditionallabeling) | abstract class | `PropertyAttribute` | 7 |  |
 | [`ConditionAttribute`](/game-api/types/assembly-other/conditionattribute) | class | `PropertyAttribute` | 4 |  |
 | [`CustomMethodApplyAttribute`](/game-api/types/assembly-other/custommethodapplyattribute) | class | `PrefabApplyAttribute` | 3 |  |
@@ -158,7 +158,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaCoroutine`](/game-api/types/assembly-other/altacoroutine) | class |  | 14 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#altacoroutine), [Alta assemblies](../console-and-utilities/alta-assemblies.md): A wrapper around a Unity coroutine that catches exceptions and tells you how it ended. |
-| [`AltaCoroutineState`](/game-api/types/assembly-other/altacoroutinestate) | enum |  | 5 |  |
+| [`AltaCoroutineState`](/game-api/types/assembly-other/altacoroutinestate) | enum |  | 5 | State of an `AltaCoroutine`: not started, running, stopped, finished or error. |
 | [`CoroutineYields`](/game-api/types/assembly-other/coroutineyields) | static class |  | 3 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#coroutineyields-and-taskyield) |
 | [`EditorCoroutine`](/game-api/types/assembly-other/editorcoroutine) | class | `AltaCoroutine` | 1 |  |
 | [`TaskYield<T>`](/game-api/types/assembly-other/taskyield-t) | class | `CustomYieldInstruction` | 4 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#coroutineyields-and-taskyield) |
@@ -167,7 +167,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AltaCoroutineHandler`](/game-api/types/assembly-other/altacoroutinehandler) | internal class | `SingletonBehaviour<AltaCoroutineHandler>` | 0 |  |
+| [`AltaCoroutineHandler`](/game-api/types/assembly-other/altacoroutinehandler) | internal class | `SingletonBehaviour<AltaCoroutineHandler>` | 0 | Internal singleton behaviour that `AltaCoroutine` runs its coroutines on when no target object is given. |
 | [`RateLimiter`](/game-api/types/assembly-other/ratelimiter) | class |  | 2 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#ratelimiter), [Alta assemblies](../console-and-utilities/alta-assemblies.md): `new RateLimiter(float targetTickRate)` then `bool IsRateLimited()`: false at most `targetTickRate` times a second (by `Time.realtimeSinceStartup`), true in between. |
 
 ## Alta.EventBus.Runtime
@@ -261,19 +261,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AbstractAltaLifetimeScope`](/game-api/types/assembly-other/abstractaltalifetimescope) | abstract class | `LifetimeScope` | 1 |  |
-| [`AnalyticsInstaller`](/game-api/types/assembly-other/analyticsinstaller) | class |  | 1 |  |
+| [`AnalyticsInstaller`](/game-api/types/assembly-other/analyticsinstaller) | class |  | 1 | VContainer installer for analytics: registers `AnalyticsService` and the `AltaAnalyticsDispatcher` entry point, and injects the zone enter and exit analytics events. |
 | [`ApplicationLifetimeScope`](/game-api/types/assembly-other/applicationlifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`Binder`](/game-api/types/assembly-other/binder) | abstract class |  | 0 |  |
 | [`Binder<TContract>`](/game-api/types/assembly-other/binder-tcontract) | class | `Binder` | 7 | Fluent helper for registering a type in a VContainer container, made by `container.Bind<TContract>()`. Registers as a singleton by default and picks up VContainer entry point interfaces (like `ITickable`) by itself. |
-| [`Binder<TContract>.AltaRegistrationBuilder`](/game-api/types/assembly-other/binder-tcontract-altaregistrationbuilder) | class | `RegistrationBuilder` | 2 |  |
+| [`Binder<TContract>.AltaRegistrationBuilder`](/game-api/types/assembly-other/binder-tcontract-altaregistrationbuilder) | class | `RegistrationBuilder` | 2 | VContainer registration builder used by `Binder<TContract>`. Builds the registration from the binder's types and lifetime, or from a bound instance. |
 | [`ContainerBuilderExtensions`](/game-api/types/assembly-other/containerbuilderextensions) | static class |  | 2 |  |
 | [`DependencyInjectionEditorInitializer`](/game-api/types/assembly-other/dependencyinjectioneditorinitializer) | class | `ScriptableObject` | 0 |  |
 | [`DependencyInjectionInitializer`](/game-api/types/assembly-other/dependencyinjectioninitializer) | class | `MonoBehaviour` | 0 |  |
 | [`GameLifetimeScope`](/game-api/types/assembly-other/gamelifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`GameObjectLifetimeScope`](/game-api/types/assembly-other/gameobjectlifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
-| [`GlobalSettingsInstaller`](/game-api/types/assembly-other/globalsettingsinstaller) | class | `ScriptableObject` | 1 |  |
+| [`GlobalSettingsInstaller`](/game-api/types/assembly-other/globalsettingsinstaller) | class | `ScriptableObject` | 1 | ScriptableObject that runs platform-specific installers and registers a list of `GlobalSettings` assets in a VContainer scope. |
 | [`MainMenuVrLifetimeScope`](/game-api/types/assembly-other/mainmenuvrlifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
-| [`PlatformSpecificScriptableObjectInstaller`](/game-api/types/assembly-other/platformspecificscriptableobjectinstaller) | class | `ScriptableObject` | 1 |  |
+| [`PlatformSpecificScriptableObjectInstaller`](/game-api/types/assembly-other/platformspecificscriptableobjectinstaller) | class | `ScriptableObject` | 1 | Base ScriptableObject for an installer that registers platform-specific services. Run by `GlobalSettingsInstaller`. |
 | [`PlayerControllerLifetimeScope`](/game-api/types/assembly-other/playercontrollerlifetimescope) | class | `GameObjectLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`ProjectLifetimeScope`](/game-api/types/assembly-other/projectlifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`WindowsGlobalSettingsInstaller`](/game-api/types/assembly-other/windowsglobalsettingsinstaller) | class | `PlatformSpecificScriptableObjectInstaller` | 1 |  |
@@ -310,10 +310,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`KcpClientConnection`](/game-api/types/assembly-other/kcpclientconnection) | class | `ITransportConnection` | 10 |  |
+| [`KcpClientConnection`](/game-api/types/assembly-other/kcpclientconnection) | class | `ITransportConnection` | 10 | Client: the `ITransportConnection` for the client's single KCP connection to the server. |
 | [`KcpClientWrapper`](/game-api/types/assembly-other/kcpclientwrapper) | class | `ITransportClient`, `ITransportSocket` | 14 |  |
 | [`KcpErrorConverter`](/game-api/types/assembly-other/kcperrorconverter) | static class |  | 1 |  |
-| [`KcpServerConnection`](/game-api/types/assembly-other/kcpserverconnection) | class | `ITransportConnection` | 10 |  |
+| [`KcpServerConnection`](/game-api/types/assembly-other/kcpserverconnection) | class | `ITransportConnection` | 10 | Server: the `ITransportConnection` for one client's KCP connection, wrapping a kcp2k server connection by id. |
 | [`KcpServerWrapper`](/game-api/types/assembly-other/kcpserverwrapper) | class | `ITransportServer`, `ITransportSocket` | 13 |  |
 | [`KcpSettings`](/game-api/types/assembly-other/kcpsettings) | class | `GlobalSettings<KcpSettings>` | 11 | Global settings asset for the KCP network transport: latency, timeout, window and buffer options used by the KCP client and server wrappers. |
 | [`KcpTransport`](/game-api/types/assembly-other/kcptransport) | class | `ITransport` | 9 | The KCP (reliable UDP) network transport the game uses by default. `NetworkManager` creates it from `KcpSettings`; both sides use it to open servers and client connections. |
@@ -330,7 +330,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 | Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking). Passed to `SetFfvSource` on the platform device. |
+| [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 | Flags for why a platform effect called FFV should be on: movement, hurt, low performance or character baking (probably fixed foveated rendering). Passed to `IPlatformDevice.SetFfvSource`; the server's fake device ignores it. |
 | [`PlatformTarget`](/game-api/types/assembly-other/platformtarget) | enum |  | 2 | [Player](../networking/player.md#platformtarget): `PC = 1`, `Quest = 2` (flags, in `Alta.Platform.dll`). The client sends it in its join request. |
 | [`PlayerMode`](/game-api/types/assembly-other/playermode) | enum |  | 8 | [Player](../networking/player.md#playermode): `PlayerMode` (no namespace, in `Alta.Platform.dll`), a flags enum: |
 | [`PlayerModeExtensions`](/game-api/types/assembly-other/playermodeextensions) | static class |  | 2 |  |
@@ -341,7 +341,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`AccessTokenMode`](/game-api/types/assembly-other/accesstokenmode) | enum |  | 3 | Whether a platform's authentication can hand out access tokens: not at all, single use or multi use. Reported by `IAuthenticationFeatures`. |
 | [`IAuthenticationFeatures`](/game-api/types/assembly-other/iauthenticationfeatures) | interface |  | 3 | What the current platform's login supports. Read from `IAuthenticationService.Features`; the generic (PC) one supports none of it. |
-| [`IAuthenticationService`](/game-api/types/assembly-other/iauthenticationservice) | interface |  | 9 |  |
+| [`IAuthenticationService`](/game-api/types/assembly-other/iauthenticationservice) | interface |  | 9 | Signs the player in to the Alta account service and supplies access tokens. Client side; `AuthenticationService` in Alta.Platform.Generic implements it. |
 | [`IPlatformDevice`](/game-api/types/assembly-other/iplatformdevice) | interface |  | 1 | Platform hook for device-level settings. Only `FakePlatformDevice` (does nothing) is bound in the Windows build. |
 | [`IPlatformService`](/game-api/types/assembly-other/iplatformservice) | interface |  | 2 |  |
 | [`IUserService`](/game-api/types/assembly-other/iuserservice) | interface | `IAuthenticationService` | 4 | Platform service for the signed-in Alta user: login state, the current user and lookups of other users by ID. |
@@ -377,8 +377,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`LocalPlatformProvider`](/game-api/types/assembly-other/localplatformprovider) | internal class |  | 1 |  |
-| [`OverridePlatformProvider`](/game-api/types/assembly-other/overrideplatformprovider) | internal class |  | 4 |  |
+| [`LocalPlatformProvider`](/game-api/types/assembly-other/localplatformprovider) | internal class |  | 1 | Internal: works out which platform the game is running on. In this build the Quest, Pico and Android preview checks always return false. |
+| [`OverridePlatformProvider`](/game-api/types/assembly-other/overrideplatformprovider) | internal class |  | 4 | Internal: holds a platform override for testing. The override only counts in the Unity editor. |
 | [`PlatformFlags`](/game-api/types/assembly-other/platformflags) | enum |  | 7 | Flags for the platform the game runs on: Windows, Linux, Android, Android preview, and Quest and Pico (both include the Android bit), or Unknown. |
 | [`PlatformProvider`](/game-api/types/assembly-other/platformprovider) | static class |  | 20 |  |
 
@@ -389,7 +389,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ProfileMarker`](/game-api/types/assembly-other/profilemarker) | static class |  | 2 |  |
-| [`ProfilingSession`](/game-api/types/assembly-other/profilingsession) | class | `IDisposable` | 6 |  |
+| [`ProfilingSession`](/game-api/types/assembly-other/profilingsession) | class | `IDisposable` | 6 | A timed, nestable profiling scope. Making one starts it and makes it the current session; sessions made inside become its children. Dispose it to stop. |
 
 ## Alta.SearchableTools
 
@@ -397,7 +397,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ISearchableTool`](/game-api/types/assembly-other/isearchabletool) | interface |  | 6 |  |
+| [`ISearchableTool`](/game-api/types/assembly-other/isearchabletool) | interface |  | 6 | An editor tool or menu item that can be found by search. `AltaMenuItem` implements it. |
 
 ## Alta.Serialization.Runtime
 
@@ -406,8 +406,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BitDisplay`](/game-api/types/assembly-other/bitdisplay) | static class |  | 2 |  |
-| [`BitReader`](/game-api/types/assembly-other/bitreader) | class |  | 12 |  |
-| [`BitWriter`](/game-api/types/assembly-other/bitwriter) | class |  | 14 |  |
+| [`BitReader`](/game-api/types/assembly-other/bitreader) | class |  | 12 | Reads values bit by bit from a buffer of 32 bit words, the reading half of the game's network and save serialization. Used by `Stream` on both sides. |
+| [`BitWriter`](/game-api/types/assembly-other/bitwriter) | class |  | 14 | Writes values bit by bit into a buffer of 32 bit words, the writing half of the game's network and save serialization. Used by `Stream` on both sides. |
 | [`BitWriter.GetMoreData`](/game-api/types/assembly-other/bitwriter-getmoredata) | delegate |  | 0 | Callback a `BitWriter` calls when its buffer is full to get a bigger one. Called with null at start to get the first buffer. Without it, a full buffer logs a fatal error and corrupts the write. |
 | [`Compressor`](/game-api/types/assembly-other/compressor) | class | `Stream` | 10 |  |
 | [`Stream`](/game-api/types/assembly-other/stream) | abstract class | `IDisposable`, `ICloneable` | 51 | [Stream](../networking/stream.md): Every network message and every save file in the game is written with this: a bit stream with one abstract base and two concrete types, `StreamWriter` and `StreamReader`. |
@@ -432,7 +432,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ITimeline`](/game-api/types/assembly-other/itimeline) | interface |  | 1 |  |
+| [`ITimeline`](/game-api/types/assembly-other/itimeline) | interface |  | 1 | Something that `TimelineUpdater` advances each frame. `Timeline` is the only implementation. |
 | [`Timeline`](/game-api/types/assembly-other/timeline) | class | `ITimeline` | 21 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline), [Time and environment](../world/time-and-environment.md#timeline): A scheduler for "call this in N seconds" and "every N seconds", used for respawns, decay, loot refills, taxes, timed stat changes and the like. Main thread. |
 | [`Timeline.IEntry`](/game-api/types/assembly-other/timeline-ientry) | interface |  | 2 | Handle to a callback scheduled on the game `Timeline` (from `CallAfterDuration`, `CallRepeatableAfterDuration` and so on). Pass it to `Timeline.Cancel` to stop it. |
 | [`Timeline.SerializedEntryState`](/game-api/types/assembly-other/timeline-serializedentrystate) | enum |  | 3 | Result of `Timeline.LoadEntry` for a saved timer: None (no time saved), Past (already due, callback run if asked) or Future (registered on the timeline). |
@@ -442,11 +442,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`FastPriorityQueue<T>`](/game-api/types/assembly-other/fastpriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 14 |  |
+| [`FastPriorityQueue<T>`](/game-api/types/assembly-other/fastpriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 14 | Fixed size binary heap of nodes with a float priority, lowest value first. Nodes store their own index, and there are no safety checks. |
 | [`FastPriorityQueueNode`](/game-api/types/assembly-other/fastpriorityqueuenode) | class |  | 2 |  |
 | [`FastPriorityQueueNodeTimeSpan`](/game-api/types/assembly-other/fastpriorityqueuenodetimespan) | class |  | 2 |  |
-| [`FastPriorityQueueTimeSpan<T>`](/game-api/types/assembly-other/fastpriorityqueuetimespan-t) | class | `IFixedSizePriorityQueue<T, TimeSpan>`, `IPriorityQueue<T, TimeSpan>`, `IEnumerable<T>`, +1 more | 13 |  |
-| [`GenericPriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/genericpriorityqueue-titem-tpriority) | class | `IFixedSizePriorityQueue<TItem, TPriority>`, `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, +1 more | 15 |  |
+| [`FastPriorityQueueTimeSpan<T>`](/game-api/types/assembly-other/fastpriorityqueuetimespan-t) | class | `IFixedSizePriorityQueue<T, TimeSpan>`, `IPriorityQueue<T, TimeSpan>`, `IEnumerable<T>`, +1 more | 13 | Copy of `FastPriorityQueue` that uses a `TimeSpan` priority, earliest first. `Timeline` uses it to order its scheduled calls. |
+| [`GenericPriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/genericpriorityqueue-titem-tpriority) | class | `IFixedSizePriorityQueue<TItem, TPriority>`, `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, +1 more | 15 | Fixed size binary heap with any comparable priority. Ties go to whichever node was enqueued first, so equal priorities come out in order. |
 | [`GenericPriorityQueueNode<TPriority>`](/game-api/types/assembly-other/genericpriorityqueuenode-tpriority) | class |  | 3 |  |
 | [`IFixedSizePriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ifixedsizepriorityqueue-titem-intpriority) | internal interface | `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, `IEnumerable` | 2 |  |
 | [`IPriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ipriorityqueue-titem-intpriority) | interface | `IEnumerable<TItem>`, `IEnumerable` | 8 |  |
@@ -545,4 +545,4 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IXRSupportSystem`](/game-api/types/assembly-other/ixrsupportsystem) | interface |  | 2 | Client (Windows): extra setup for one XR mode, run before XR starts. `SteamOpenVrInitializer` is one; the Windows loader initializer runs each one that is valid for the mode. |
 | [`SteamOpenVrInitializer`](/game-api/types/assembly-other/steamopenvrinitializer) | class | `IXRSupportSystem` | 2 |  |
 | [`WindowsXRLoaderInitializer`](/game-api/types/assembly-other/windowsxrloaderinitializer) | class | `IInitializable`, `IXRLoaderInitializer` | 3 |  |
-| [`WindowsXRLoaderSettings`](/game-api/types/assembly-other/windowsxrloadersettings) | class | `GlobalSettings<WindowsXRLoaderSettings>`, `IWindowsXRLoaderSettings` | 4 |  |
+| [`WindowsXRLoaderSettings`](/game-api/types/assembly-other/windowsxrloadersettings) | class | `GlobalSettings<WindowsXRLoaderSettings>`, `IWindowsXRLoaderSettings` | 4 | Global settings for the Windows build's XR loaders: which XR mode to use and the OpenXR and OpenVR loaders. Read by `WindowsXRLoaderInitializer`. Client only. |

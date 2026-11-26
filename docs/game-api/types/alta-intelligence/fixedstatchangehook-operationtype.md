@@ -1,6 +1,6 @@
 ---
 title: "FixedStatChangeHook.OperationType"
-description: "enum FixedStatChangeHook.OperationType in Root.Township."
+description: "How a FixedStatChangeHook applies its value: set, add or multiply."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FixedStatChangeHook.OperationType
 
 An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+How a `FixedStatChangeHook` applies its value: set, add or multiply.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`FixedStatChangeHook`](/game-api/types/alta-intelligence/fixedstatchangehook)

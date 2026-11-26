@@ -1,6 +1,6 @@
 ---
 title: "VisualEffectType"
-description: "enum VisualEffectType in Root.Township."
+description: "Screen effect types for player states: Frost and Exposure."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VisualEffectType
 
 An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+Screen effect types for player states: `Frost` and `Exposure`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

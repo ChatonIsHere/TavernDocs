@@ -1,6 +1,6 @@
 ---
 title: "EditorHotKeys.Hotkey.Key"
-description: "enum EditorHotKeys.Hotkey.Key in Root.Township."
+description: "Keys an editor hotkey can use: letters, arrows, F1 to F12, Home, End, Page Up and Down, and backquote."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EditorHotKeys.Hotkey.Key
 
 An **enum** in `Root.Township`, no namespace.
+
+Keys an editor hotkey can use: letters, arrows, F1 to F12, Home, End, Page Up and Down, and backquote.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`EditorHotKeys.Hotkey`](/game-api/types/global-e-h/editorhotkeys-hotkey)

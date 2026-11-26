@@ -1,6 +1,6 @@
 ---
 title: "QuantityChangeHandler"
-description: "delegate QuantityChangeHandler in Root.Township."
+description: "Parameterless handler for PickupDock.QuantityChanged."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # QuantityChangeHandler
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Parameterless handler for `PickupDock.QuantityChanged`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

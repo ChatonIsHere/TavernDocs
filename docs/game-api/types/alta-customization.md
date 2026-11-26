@@ -17,7 +17,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ArmorManager<TSlot>`](/game-api/types/alta-customization/armormanager-tslot) | class | `MonoBehaviour` | 1 | [Customization](../game-systems/customization.md): `Set(TSlot slot, ArmorDefinition armor)`: shows armour on a slot. |
 | [`ArmorManager<TSlot>.SlotPairing`](/game-api/types/alta-customization/armormanager-tslot-slotpairing) | class |  | 2 | Inspector pairing of one armour slot with the equipment references (detectors) that should take whatever armour goes in that slot. |
 | [`BodyTypePickup`](/game-api/types/alta-customization/bodytypepickup) | class | `CustomizationPickup` | 1 |  |
-| [`BonesBaking`](/game-api/types/alta-customization/bonesbaking) | class | `ScriptableObject` | 4 |  |
+| [`BonesBaking`](/game-api/types/alta-customization/bonesbaking) | class | `ScriptableObject` | 4 | Editor test asset (menu `TEST/Bones Baking`) that bakes a body type into cosmetic meshes and moves weights from masked bones onto their parents. Probably only used in the editor. |
 | [`CategoryScrollElement`](/game-api/types/alta-customization/categoryscrollelement) | class | `ScrollElement` | 4 |  |
 | [`CategoryScrollManager`](/game-api/types/alta-customization/categoryscrollmanager) | class | `MonoBehaviour` | 3 | Customisation menu component holding the cosmetic categories the category scroller shows, filtered to those the player owns options for. |
 | [`CategoryScrubberController`](/game-api/types/alta-customization/categoryscrubbercontroller) | class | `MonoBehaviour` | 0 |  |
@@ -41,15 +41,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CosmeticPresetApplier`](/game-api/types/alta-customization/cosmeticpresetapplier) | class | `MonoBehaviour` | 1 |  |
 | [`CosmeticPresetData`](/game-api/types/alta-customization/cosmeticpresetdata) | class |  | 5 | A player's whole cosmetic setup written out as packed bits, so it can be stored or sent as a preset. |
 | [`CosmeticPresetDestroyer`](/game-api/types/alta-customization/cosmeticpresetdestroyer) | class | `MonoBehaviour` | 0 |  |
-| [`CosmeticPresetSlot`](/game-api/types/alta-customization/cosmeticpresetslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 8 |  |
-| [`CosmeticPresetsManager`](/game-api/types/alta-customization/cosmeticpresetsmanager) | class | `LoggedInTool` | 2 |  |
+| [`CosmeticPresetSlot`](/game-api/types/alta-customization/cosmeticpresetslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 8 | Client: one shelf slot in the customization room that holds a saved cosmetic preset trophy. Putting a trophy in saves it to the player's account presets; taking it out deletes it. |
+| [`CosmeticPresetsManager`](/game-api/types/alta-customization/cosmeticpresetsmanager) | class | `LoggedInTool` | 2 | Client: runs the cosmetic preset shelf. On login it loads the account's saved presets into trophies on the slots, and it makes new trophies from the current outfit. |
 | [`CosmeticPresetTrophy`](/game-api/types/alta-customization/cosmeticpresettrophy) | class | `MonoBehaviour` | 12 | A small character figure that shows a saved cosmetic preset and can be picked up and placed in a preset slot. Client-side (not a network entity); it burns away when destroyed. |
 | [`CosmeticPresetTrophyTrigger`](/game-api/types/alta-customization/cosmeticpresettrophytrigger) | class | `MonoBehaviour` | 5 | Trigger volume that tracks cosmetic preset trophies placed in it, for example on a customization stand. Raises events as trophies come and go. |
 | [`CosmeticRotatingSlot`](/game-api/types/alta-customization/cosmeticrotatingslot) | class | `MonoBehaviour`, `ICosmeticPresetSlot` | 12 | The cosmetic preset shelf slot in the customization room: ten numbered preset slots shown one at a time, each saved to the API as a trophy. Client side; used by `CosmeticPresetsManager`. |
 | [`CosmeticScrollElement`](/game-api/types/alta-customization/cosmeticscrollelement) | class | `ScrollElement` | 2 |  |
 | [`CosmeticScrollManager`](/game-api/types/alta-customization/cosmeticscrollmanager) | class | `ScrollManager` | 1 | Client: a scroll list of the cosmetics the local player owns in one category. Fills itself from `CustomizationManager.Owned` once customization has loaded. |
 | [`CosmeticScrollSource`](/game-api/types/alta-customization/cosmeticscrollsource) | class | `MonoBehaviour` | 3 | Holds the list of cosmetic hashes a customisation scroll list shows, and raises an event when it changes. Read by `ScrollManager` and `CosmeticScrollElement`. |
-| [`CosmeticSetDefinition`](/game-api/types/alta-customization/cosmeticsetdefinition) | class | `Purchasable` | 2 |  |
+| [`CosmeticSetDefinition`](/game-api/types/alta-customization/cosmeticsetdefinition) | class | `Purchasable` | 2 | A purchasable set of cosmetic items sold together. Asset created from `Township/Cosmetic Set Definition`. |
 | [`CosmeticSetFilterAttribute`](/game-api/types/alta-customization/cosmeticsetfilterattribute) | class | `PropertyAttribute` | 0 |  |
 | [`CosmeticSkinColor`](/game-api/types/alta-customization/cosmeticskincolor) | class | `CustomizationVisualPart<CustomizationArguments>` | 1 |  |
 | [`CurrentTalemBalance`](/game-api/types/alta-customization/currenttalembalance) | static class |  | 3 |  |
@@ -71,9 +71,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CustomizationWrapper`](/game-api/types/alta-customization/customizationwrapper) | abstract class | `IHasHistory`, `ICustomizationWrapper` | 26 | [Customization](../game-systems/customization.md): Base of both wrappers. `IEnumerable<uint> Items`, `Arguments`, `Task<bool> Add(uint item, CustomizationArguments[] arguments)`, undo history. |
 | [`CustomizationWrapperSerializer`](/game-api/types/alta-customization/customizationwrapperserializer) | static class |  | 7 | [Customization](../game-systems/customization.md): Writes and reads a wrapper to a stream or a save (`Save`, `LoadAsync`, `SerializeStreamAsync`). |
 | [`DefaultCosmeticInfo`](/game-api/types/alta-customization/defaultcosmeticinfo) | class | `ISerializationCallbackReceiver` | 9 | A cosmetic every player must wear in a category unless they pick another, with its colours. Listed in `CustomizationSettings.RequiredDefaults` and added when loading a look that lacks one. |
-| [`EditableCosmeticSlot`](/game-api/types/alta-customization/editablecosmeticslot) | class | `EditableSlot` | 0 |  |
+| [`EditableCosmeticSlot`](/game-api/types/alta-customization/editablecosmeticslot) | class | `EditableSlot` | 0 | An `EditableSlot` for cosmetics, used by `CosmeticCustomizationManager`. Adds nothing to the base class. |
 | [`EditableEquipmentManager`](/game-api/types/alta-customization/editableequipmentmanager) | class |  | 2 | The set of editable equipment slots on a player's customisation handler, switched on and off together. Found on `PlayerCustomizationHandler.EditableEquipmentManager`. |
-| [`EditableEquipmentSlot`](/game-api/types/alta-customization/editableequipmentslot) | class | `EditableSlot` | 0 |  |
+| [`EditableEquipmentSlot`](/game-api/types/alta-customization/editableequipmentslot) | class | `EditableSlot` | 0 | An `EditableSlot` for equipment, used by `EditableEquipmentManager`. Adds nothing to the base class. |
 | [`EditableSlot`](/game-api/types/alta-customization/editableslot) | class | `MonoBehaviour` | 2 |  |
 | [`EquipmentCustomizationRoom`](/game-api/types/alta-customization/equipmentcustomizationroom) | class | `MonoBehaviour` | 6 | Client: the room spawned for a player's equipment (dress-up) mode, with a dummy that shows their customization and copies their pose. `EquipmentState` links and unlinks it. |
 | [`EquipmentPart`](/game-api/types/alta-customization/equipmentpart) | class | `CustomizationVisualPart<CustomizationArguments>` | 0 |  |
@@ -101,17 +101,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerCosmeticDefinitionSet`](/game-api/types/alta-customization/playercosmeticdefinitionset) | class | `ScriptableObject` | 1 | ScriptableObject list of cosmetic definition hashes (menu Township/Customization/Cosmetic Set). Used for `CustomizationSettings.DefaultCosmetics`. |
 | [`PlayerCosmeticWrapper`](/game-api/types/alta-customization/playercosmeticwrapper) | class | `CustomizationWrapper` | 3 | The customization wrapper for player cosmetics: loads `PlayerCosmeticDefinition` items through the wrapper's addressable session. |
 | [`PlayerCustomizationHandler`](/game-api/types/alta-customization/playercustomizationhandler) | class | `MonoBehaviour`, `ICustomizationHandler` | 15 | [Customization](../game-systems/customization.md): On a body: applies the visuals, finds bones, first-person mode. `ArmorManager`, `EditableEquipmentManager`. |
-| [`PlayerCustomizationSlot`](/game-api/types/alta-customization/playercustomizationslot) | enum |  | 148 |  |
+| [`PlayerCustomizationSlot`](/game-api/types/alta-customization/playercustomizationslot) | enum |  | 148 | Every attachment point and body feature a customization item can fill, such as numbered slots per body area, eyes, hair, body type, toolbelt and sash. |
 | [`PlayerCustomizationSlotSet`](/game-api/types/alta-customization/playercustomizationslotset) | class |  | 1 | A list of customization slot numbers. `EditableSlot` uses one to know which slots it edits. |
 | [`PlayerEquipmentCategory`](/game-api/types/alta-customization/playerequipmentcategory) | class | `CustomizationCategory` | 2 |  |
 | [`PlayerEquipmentDefinition`](/game-api/types/alta-customization/playerequipmentdefinition) | class | `HashedGeneralValue<PlayerEquipmentDefinition>`, `ICustomizationDefinition` | 12 | [Customization](../game-systems/customization.md): `HashedGeneralValue<PlayerEquipmentDefinition>`: an armour piece's look, with its `ArmorDefinition` and `ArmorSlot`. |
-| [`PlayerEquipmentWrapper`](/game-api/types/alta-customization/playerequipmentwrapper) | class | `CustomizationWrapper` | 2 |  |
+| [`PlayerEquipmentWrapper`](/game-api/types/alta-customization/playerequipmentwrapper) | class | `CustomizationWrapper` | 2 | A `CustomizationWrapper` for a player's equipment, looking items up as `PlayerEquipmentDefinition`. |
 | [`Purchasable`](/game-api/types/alta-customization/purchasable) | class | `ScriptableObject` | 14 | Base asset for a shop item or cosmetic that can be owned, loaded through Addressables by its hash. With external cosmetics on, the catalog comes from Alta's DigitalOcean bundle store. |
 | [`PurchasableMap`](/game-api/types/alta-customization/purchasablemap) | class | `GlobalSettings<PurchasableMap>` | 6 |  |
-| [`PurchasableMap.CosmeticCategory`](/game-api/types/alta-customization/purchasablemap-cosmeticcategory) | class |  | 2 |  |
-| [`PurchasableMap.CosmeticSet`](/game-api/types/alta-customization/purchasablemap-cosmeticset) | class |  | 4 |  |
+| [`PurchasableMap.CosmeticCategory`](/game-api/types/alta-customization/purchasablemap-cosmeticcategory) | class |  | 2 | A cosmetic category and the item hashes in it, stored in `PurchasableMap`. |
+| [`PurchasableMap.CosmeticSet`](/game-api/types/alta-customization/purchasablemap-cosmeticset) | class |  | 4 | A cosmetic set's hash and the item hashes it contains, stored in `PurchasableMap`. Buying the set grants every item in it. |
 | [`PurchasedList`](/game-api/types/alta-customization/purchasedlist) | class |  | 17 | Which cosmetic hashes the local player owns or can pick, built from default cosmetics, the shop API's owned items and developer items. The owned and available sets are static, so every instance shares them. Does nothing on a dedicated server. |
-| [`ScrollManager`](/game-api/types/alta-customization/scrollmanager) | abstract class | `MonoBehaviour` | 4 |  |
+| [`ScrollManager`](/game-api/types/alta-customization/scrollmanager) | abstract class | `MonoBehaviour` | 4 | Base for a scrolling grid of cosmetic items in the customization room. Holds the item hashes and resizes the scroller when they change. |
 | [`ShopConfigUtility`](/game-api/types/alta-customization/shopconfigutility) | static class |  | 2 |  |
 | [`ShopConfigUtility.ShopItemConfigurations`](/game-api/types/alta-customization/shopconfigutility-shopitemconfigurations) | class |  | 2 |  |
 | [`ShopInterface`](/game-api/types/alta-customization/shopinterface) | class | `LoggedInTool` | 5 |  |
@@ -136,11 +136,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CameraRenderEvents`](/game-api/types/alta-customization/camerarenderevents) | class | `MonoBehaviour` | 1 |  |
 | [`CameraStabilization`](/game-api/types/alta-customization/camerastabilization) | class | `MonoBehaviour` | 0 |  |
 | [`CapsuleBlockableCamera`](/game-api/types/alta-customization/capsuleblockablecamera) | class | `BlockableCamera` | 0 |  |
-| [`Filter`](/game-api/types/alta-customization/filter) | class |  | 3 |  |
-| [`FilterAction`](/game-api/types/alta-customization/filteraction) | abstract class | `ScriptableObject` | 2 |  |
-| [`FiltersButton`](/game-api/types/alta-customization/filtersbutton) | class | `BasicTouchScreenButton` | 3 |  |
+| [`Filter`](/game-api/types/alta-customization/filter) | class |  | 3 | A hand camera filter: a list of actions run on the camera and its post process volume, optionally only during a festivity. |
+| [`FilterAction`](/game-api/types/alta-customization/filteraction) | abstract class | `ScriptableObject` | 2 | Base scriptable object for an effect a hand camera filter turns on and off on the camera's post process volume. |
+| [`FiltersButton`](/game-api/types/alta-customization/filtersbutton) | class | `BasicTouchScreenButton` | 3 | Touch screen button on the hand camera that turns filter mode on, then lets the owner swipe through the filters. `CameraFilters` syncs the choice to other players. Client only. |
 | [`FocusButton`](/game-api/types/alta-customization/focusbutton) | class | `CameraButton` | 0 |  |
-| [`FocusPuller`](/game-api/types/alta-customization/focuspuller) | class | `MonoBehaviour` | 3 |  |
+| [`FocusPuller`](/game-api/types/alta-customization/focuspuller) | class | `MonoBehaviour` | 3 | Depth of field control on the hand camera with three modes (perfect, auto and manual). Auto focus reads depth at weighted focus points with a compute shader; manual focus turns a dial as you twist your hand. Runs for the camera's owner only. |
 | [`FocusPuller.FocusMode`](/game-api/types/alta-customization/focuspuller-focusmode) | enum |  | 3 | Hand camera focus mode: `Perfect`, `Auto` (focuses when a photo is taken or the screen is free) or `Manual` (set by the player turning the control). |
 | [`HandCamera`](/game-api/types/alta-customization/handcamera) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 29 | The handheld photo camera a player spawns from the quick access menu. Only its owner can pick it up; photos, selfie mode and streaming sync to others. Never saved. `HandCamera.Current` is the local player's. |
 | [`HandCameraEvent`](/game-api/types/alta-customization/handcameraevent) | enum |  | 2 | Flags for what the hand-held screenshot camera is doing: `idle` or taking a `photo`. |
@@ -149,17 +149,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HandCameraStreamer`](/game-api/types/alta-customization/handcamerastreamer) | class | `MonoBehaviour` | 2 | Client: shows the hand camera's live view on a plane through its own camera. `HandyCameraManager.StartStreaming` spawns one from a prefab on first use. |
 | [`HandCameraViewfinderResizerSettings`](/game-api/types/alta-customization/handcameraviewfinderresizersettings) | internal class | `ScriptableObject` | 2 | Client: keeps the hand camera's viewfinder from going further than a set distance from the player's head, pulling it in along the line of sight. Internal asset. |
 | [`HandyCameraManager`](/game-api/types/alta-customization/handycameramanager) | class | `NetworkEntityBehaviour` | 5 |  |
-| [`LocalPlayerHeadRenderer`](/game-api/types/alta-customization/localplayerheadrenderer) | class |  | 2 |  |
+| [`LocalPlayerHeadRenderer`](/game-api/types/alta-customization/localplayerheadrenderer) | class |  | 2 | Turns the local player's head renderers on while a hand camera renders, so selfies show your head, then restores them. Client only. |
 | [`OnDrawFilter`](/game-api/types/alta-customization/ondrawfilter) | abstract class | `FilterAction` | 2 |  |
 | [`OpticalZoom`](/game-api/types/alta-customization/opticalzoom) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`PlayerSwapMaterialFilter`](/game-api/types/alta-customization/playerswapmaterialfilter) | abstract class | `OnDrawFilter` | 1 | Base for hand camera filters that swap every living player's clothing materials for a copy while the camera renders, then put the originals back. Subclasses build the copy in `SetupTuple`. |
 | [`PlayerSwapMaterialFilter.MaterialTuple`](/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple) | class |  | 3 | A renderer's original material and the swapped copy a hand camera filter shows instead (for example the spectral look). |
 | [`PostProcessFilter`](/game-api/types/alta-customization/postprocessfilter) | class | `FilterAction` | 2 |  |
-| [`RemoteObiturator`](/game-api/types/alta-customization/remoteobiturator) | class | `MonoBehaviour` | 0 |  |
+| [`RemoteObiturator`](/game-api/types/alta-customization/remoteobiturator) | class | `MonoBehaviour` | 0 | The hand camera's detachable remote. It sits in a slot on the camera; the owner pulls it out to use as a remote shutter and puts it back by bringing it close. Slot state is synced. |
 | [`SpectralFilter`](/game-api/types/alta-customization/spectralfilter) | class | `PlayerSwapMaterialFilter` | 0 |  |
 | [`SphereBlockableCamera`](/game-api/types/alta-customization/sphereblockablecamera) | class | `BlockableCamera` | 0 |  |
 | [`StreamingButton`](/game-api/types/alta-customization/streamingbutton) | class | `CameraButton` | 0 |  |
 | [`SummonCameraQuickAccess`](/game-api/types/alta-customization/summoncameraquickaccess) | class | `QuickAccessMenuAction` | 3 |  |
 | [`TimerButton`](/game-api/types/alta-customization/timerbutton) | class | `CameraButton` | 0 |  |
-| [`TouchScreenMenu`](/game-api/types/alta-customization/touchscreenmenu) | class | `TouchScreenMenuBase` | 0 |  |
-| [`VisibilityTrigger`](/game-api/types/alta-customization/visibilitytrigger) | class | `MonoBehaviour` | 2 |  |
+| [`TouchScreenMenu`](/game-api/types/alta-customization/touchscreenmenu) | class | `TouchScreenMenuBase` | 0 | The hand camera's touch screen menu. Sets up for the owner and hides its buttons while the camera renders. |
+| [`VisibilityTrigger`](/game-api/types/alta-customization/visibilitytrigger) | class | `MonoBehaviour` | 2 | Reports when a renderer on this object becomes visible or invisible to any camera. |

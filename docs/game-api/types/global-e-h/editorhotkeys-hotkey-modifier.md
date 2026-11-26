@@ -1,6 +1,6 @@
 ---
 title: "EditorHotKeys.Hotkey.Modifier"
-description: "enum EditorHotKeys.Hotkey.Modifier in Root.Township."
+description: "Modifier flags for an editor hotkey: Ctrl, Shift and Alt."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EditorHotKeys.Hotkey.Modifier
 
 An **enum** in `Root.Township`, no namespace.
+
+Modifier flags for an editor hotkey: Ctrl, Shift and Alt.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`EditorHotKeys.Hotkey`](/game-api/types/global-e-h/editorhotkeys-hotkey)

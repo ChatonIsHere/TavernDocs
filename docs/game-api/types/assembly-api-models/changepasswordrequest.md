@@ -1,6 +1,6 @@
 ---
 title: "ChangePasswordRequest"
-description: "class ChangePasswordRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to change the account password."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChangePasswordRequest
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Body of an Alta web API request to change the account password. Sends hashes, not plain passwords.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -23,10 +25,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> |
-| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-newpasswordhash" /><code>{"string NewPasswordHash { get; private set; }"}</code> | Hash of the new password. |
+| <Link id="m-oldpasswordhash" /><code>{"string OldPasswordHash { get; private set; }"}</code> | Hash of the current password. |
 
 ## Used in
 

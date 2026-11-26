@@ -1,6 +1,6 @@
 ---
 title: "MatchMakingRequirements"
-description: "class MatchMakingRequirements in Alta.Api.DataTransferModels."
+description: "Body of the Alta web API call that picks the best server to join (GetBestServer)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of the Alta web API call that picks the best server to join (`GetBestServer`).
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> |
-| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sceneindex" /><code>{"int? SceneIndex { get; set; }"}</code> | Scene the server must run. `MatchMakingClient` sends 1. |
+| <Link id="m-target" /><code>{"int? Target { get; set; }"}</code> | Optional target value for the match. |
 
 ## Used in
 

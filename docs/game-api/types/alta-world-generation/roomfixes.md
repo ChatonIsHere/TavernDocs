@@ -30,16 +30,16 @@ Cave map generator part that tidies open areas: fills rooms below a minimum size
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-linethreshold" /><code>{"private float lineThreshold"}</code> |
-| <Link id="m-manmadelayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" manMadeLayer"}</code> |
-| <Link id="m-maximumcorridorwidth" /><code>{"private float maximumCorridorWidth"}</code> |
-| <Link id="m-minimumcorridorwidth" /><code>{"private float minimumCorridorWidth"}</code> |
-| <Link id="m-minimumroomsize" /><code>{"private int minimumRoomSize"}</code> |
-| <Link id="m-room" /><code>{"private int room"}</code> |
-| <Link id="m-wall" /><code>{"private int wall"}</code> |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-linethreshold" /><code>{"private float lineThreshold"}</code> | Backing field for `LineThreshold`. |
+| <Link id="m-manmadelayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" manMadeLayer"}</code> | Backing field for `ManMadeLayer`. |
+| <Link id="m-maximumcorridorwidth" /><code>{"private float maximumCorridorWidth"}</code> | Backing field for `MaximumCorridorWidth`. |
+| <Link id="m-minimumcorridorwidth" /><code>{"private float minimumCorridorWidth"}</code> | Backing field for `MinimumCorridorWidth`. |
+| <Link id="m-minimumroomsize" /><code>{"private int minimumRoomSize"}</code> | Backing field for `MinimumRoomSize`. |
+| <Link id="m-room" /><code>{"private int room"}</code> | Backing field for `RoomValue`. |
+| <Link id="m-wall" /><code>{"private int wall"}</code> | Backing field for `WallValue`. |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> | Backing field for `YIndex`. |
 
 </details>
 

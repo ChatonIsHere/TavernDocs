@@ -1,6 +1,6 @@
 ---
 title: "ImageFormat"
-description: "enum ImageFormat in Root.Township."
+description: "File formats for screenshots taken by ScreenshotTaker."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImageFormat
 
 An **enum** in `Root.Township`, no namespace.
+
+File formats for screenshots taken by `ScreenshotTaker`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

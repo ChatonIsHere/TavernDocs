@@ -1,6 +1,6 @@
 ---
 title: "GroupInfoManager"
-description: "class GroupInfoManager in Alta.Api.Client."
+description: "Admin view of a joined group: its editable info, roles and members."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupInfoManager
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Admin view of a joined group: its editable info, roles and members.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
@@ -27,11 +29,11 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfoupdate">{"GroupInfoUpdate"}</Link>{" Info { get; }"}</code> |
-| <Link id="m-members" /><code><Link to="/game-api/types/assembly-api-client/groupmembers">{"GroupMembers"}</Link>{" Members { get; }"}</code> |
-| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-client/grouproles">{"GroupRoles"}</Link>{" Roles { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfoupdate">{"GroupInfoUpdate"}</Link>{" Info { get; }"}</code> | Lets you update the group's info. |
+| <Link id="m-members" /><code><Link to="/game-api/types/assembly-api-client/groupmembers">{"GroupMembers"}</Link>{" Members { get; }"}</code> | Paged list of the group's members. |
+| <Link id="m-roles" /><code><Link to="/game-api/types/assembly-api-client/grouproles">{"GroupRoles"}</Link>{" Roles { get; }"}</code> | The group's roles and the current user's role. |
 
 ## Used in
 

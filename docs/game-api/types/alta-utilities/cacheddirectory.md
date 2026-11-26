@@ -1,6 +1,6 @@
 ---
 title: "CachedDirectory"
-description: "class CachedDirectory in Root.Township."
+description: "A pair of folders used by asset baking: a project folder and the temporary folder its assets are moved to."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.AssetBaking`.
 
+A pair of folders used by asset baking: a project folder and the temporary folder its assets are moved to. `AssetBakingSettings.ProjectToUnbakedDirectoriesMap` lists them.
+
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `Alta.AssetBaking`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-cachepath" /><code>{"string CachePath { get; }"}</code> |
-| <Link id="m-projectpath" /><code>{"string ProjectPath { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachepath" /><code>{"string CachePath { get; }"}</code> | The temporary cache folder, with directory separators fixed for the platform. |
+| <Link id="m-projectpath" /><code>{"string ProjectPath { get; }"}</code> | The folder in the project, with directory separators fixed for the platform. |
 
 ## Used in
 

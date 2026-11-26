@@ -1,6 +1,6 @@
 ---
 title: "EmailValidationRequest"
-description: "class EmailValidationRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to check an email address."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of an Alta web API request to check an email address.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | The email address to check. |
 
 ## Used in
 

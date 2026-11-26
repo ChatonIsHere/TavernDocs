@@ -1,6 +1,6 @@
 ---
 title: "SocialTabletActionType"
-description: "enum SocialTabletActionType in Root.Township."
+description: "Moderation action sent from the social tablet's recent players page: report, ban or unban."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SocialTabletActionType
 
 An **enum** in `Root.Township`, `Alta.UserInterface.SocialTablet`.
+
+Moderation action sent from the social tablet's recent players page: report, ban or unban.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

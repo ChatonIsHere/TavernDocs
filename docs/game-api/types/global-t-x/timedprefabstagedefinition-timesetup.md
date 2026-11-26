@@ -1,6 +1,6 @@
 ---
 title: "TimedPrefabStageDefinition.TimeSetup"
-description: "class TimedPrefabStageDefinition.TimeSetup in Root.Township."
+description: "One timed stage change: after a number of seconds, switch to a given stage."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimedPrefabStageDefinition.TimeSetup
 
 A **class** in `Root.Township`, no namespace.
+
+One timed stage change: after a number of seconds, switch to a given stage.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TimedPrefabStageDefinition`](/game-api/types/global-t-x/timedprefabstagedefinition)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> |
-| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stageindex" /><code>{"private int stageIndex"}</code> | Backing field for `StageIndex`. |
+| <Link id="m-timesincestart" /><code>{"private float timeSinceStart"}</code> | Backing field for `TimeSinceStart`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> |
-| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stageindex-2" /><code>{"int StageIndex { get; }"}</code> | Stage to switch to. |
+| <Link id="m-timesincestart-2" /><code>{"float TimeSinceStart { get; }"}</code> | Seconds after the timer starts (default 10). |
 
 ## Used in
 

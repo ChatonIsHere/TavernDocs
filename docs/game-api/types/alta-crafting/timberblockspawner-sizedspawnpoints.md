@@ -1,6 +1,6 @@
 ---
 title: "TimberBlockSpawner.SizedSpawnPoints"
-description: "struct TimberBlockSpawner.SizedSpawnPoints in Root.Township."
+description: "Per block size settings on TimberBlockSpawner: where that size of block spawns and where the builder sits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Carpentry`.
 
+Per block size settings on `TimberBlockSpawner`: where that size of block spawns and where the builder sits.
+
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`TimberBlockSpawner`](/game-api/types/alta-crafting/timberblockspawner)
 
@@ -20,21 +22,21 @@ A **struct** in `Root.Township`, `Alta.Carpentry`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-builderx" /><code>{"private float builderX"}</code> |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |
-| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-builderx" /><code>{"private float builderX"}</code> | Backing field for `BuilderX`. |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> | Backing field for `Size`. |
+| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> | Backing field for `SpawnPoint`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-builderx-2" /><code>{"float BuilderX { get; }"}</code> |
-| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" Size { get; }"}</code> |
-| <Link id="m-spawnpoint-2" /><code>{"Transform SpawnPoint { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-builderx-2" /><code>{"float BuilderX { get; }"}</code> | Builder X position used while the current block is this size. |
+| <Link id="m-size-2" /><code><Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" Size { get; }"}</code> | The block size this entry is for. |
+| <Link id="m-spawnpoint-2" /><code>{"Transform SpawnPoint { get; }"}</code> | Transform the block spawns at, returned by `GetSpawnPosition`. |
 
 ## Used in
 

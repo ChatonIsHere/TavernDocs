@@ -1,6 +1,6 @@
 ---
 title: "RiverIntersections"
-description: "class RiverIntersections in Root.Township."
+description: "Generation helper that finds where forest edges cross above-ground river paths, marks those edges as water bridges and groups the crossings by location chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RiverIntersections
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Generation helper that finds where forest edges cross above-ground river paths, marks those edges as water bridges and groups the crossings by location chunk.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested types** [`Intersection`](/game-api/types/alta-world-generation/riverintersections-intersection)
@@ -26,18 +28,18 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-intersections" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{", List<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{">> intersections"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-intersections" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{", List<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{">> intersections"}</code> | Crossings grouped by the location chunk they fall in. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-evaluate" /><code>{"void Evaluate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" river)"}</code> |
-| <Link id="m-get" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{"> Get("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-evaluate" /><code>{"void Evaluate("}<Link to="/game-api/types/alta-world-generation/rivergeneration">{"RiverGeneration"}</Link>{" river)"}</code> | Checks every edge of the relevant type against each river path, recording crossings and setting the edge type to `WaterBridge`. |
+| <Link id="m-get" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-world-generation/riverintersections-intersection">{"RiverIntersections.Intersection"}</Link>{"> Get("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Crossings inside the given chunk, or none. |
 
 ## Used in
 

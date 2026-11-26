@@ -1,6 +1,6 @@
 ---
 title: "AnalyticsInstaller"
-description: "class AnalyticsInstaller in Alta.LifetimeScopes."
+description: "VContainer installer for analytics: registers AnalyticsService and the AltaAnalyticsDispatcher entry point, and injects the zone enter and exit analytics..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticsInstaller
 
 A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
+
+VContainer installer for analytics: registers `AnalyticsService` and the `AltaAnalyticsDispatcher` entry point, and injects the zone enter and exit analytics events.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 
@@ -25,19 +27,19 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-enterevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" enterEvent"}</code> |
-| <Link id="m-exitevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" exitEvent"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enterevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" enterEvent"}</code> | Zone analytics event for entering a zone, injected after build. |
+| <Link id="m-exitevent" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/zoneanalyticstriggerevent">{"ZoneAnalyticsTriggerEvent"}</Link>{" exitEvent"}</code> | Zone analytics event for leaving a zone, injected after build. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | Registers the analytics service and dispatcher, then injects the zone events and a `ClimbingHandlerAnalytics` once the container is built. |
 
 ## Used in
 

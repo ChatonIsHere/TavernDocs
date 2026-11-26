@@ -1,6 +1,6 @@
 ---
 title: "PopulationDefinition.RandomRotationType"
-description: "enum PopulationDefinition.RandomRotationType in Root.Township."
+description: "Private: how GetRandomRotation turns spawned items: Y (random spin around the up axis) or XYZ (fully random)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationDefinition.RandomRotationType
 
 An **private enum** in `Root.Township`, `Alta.Populations`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private: how `GetRandomRotation` turns spawned items: Y (random spin around the up axis) or XYZ (fully random).
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`PopulationDefinition`](/game-api/types/alta-world-generation/populationdefinition)

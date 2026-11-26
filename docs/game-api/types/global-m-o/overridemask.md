@@ -1,6 +1,6 @@
 ---
 title: "OverrideMask"
-description: "enum OverrideMask in Root.Township."
+description: "Flags for which export settings an override changes: output toggle, name suffix, relative scale, colour space, compression and file format."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OverrideMask
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for which export settings an override changes: output toggle, name suffix, relative scale, colour space, compression and file format.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Attributes** `Flags`

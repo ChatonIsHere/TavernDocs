@@ -1,6 +1,6 @@
 ---
 title: "PresetLootSet"
-description: "class PresetLootSet in Root.Township."
+description: "Asset listing loot to spawn into a group of docks, one random free dock per spawn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PresetLootSet
 
 A **class** in `Root.Township`, `Alta.Loot`.
+
+Asset listing loot to spawn into a group of docks, one random free dock per spawn. Used by `PresetLootModule` on the server.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`HashedGeneralValue<PresetLootSet>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -28,19 +30,19 @@ A **class** in `Root.Township`, `Alta.Loot`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> |
-| <Link id="m-temp" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> |
-| <Link id="m-used" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entries" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/presetlootset-entry">{"PresetLootSet.Entry"}</Link>{"[] entries"}</code> | The loot entries, in order. |
+| <Link id="m-temp" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> temp"}</code> | Scratch list of docks still free. |
+| <Link id="m-used" /><code>{"private static List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> used"}</code> | Scratch list of docks already filled. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawn" /><code>{"void Spawn("}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" docks, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Empties the dock group, then for each entry tries its rounds, each into a random unused dock. |
 
 ## Used in
 

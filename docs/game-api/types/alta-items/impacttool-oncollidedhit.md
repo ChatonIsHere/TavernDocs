@@ -1,6 +1,6 @@
 ---
 title: "ImpactTool.OnCollidedHit"
-description: "delegate ImpactTool.OnCollidedHit in Root.Township."
+description: "Handler for ImpactTool.OnCollided."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactTool.OnCollidedHit
 
 A **delegate** in `Root.Township`, `Alta.Impact`.
+
+Handler for `ImpactTool.OnCollided`. Called with the collision, whether it became a hit, and the tool.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactTool`](/game-api/types/alta-items/impacttool)

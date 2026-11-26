@@ -1,6 +1,6 @@
 ---
 title: "VoiceChatScope"
-description: "Who a player hears or talks to in voice chat: no one, friends only, or everyone."
+description: "Whose voices the local player can hear (VoiceChat.AudibleScope): no one, friends only, or everyone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, `Alta.Voice`.
 
-Who a player hears or talks to in voice chat: no one, friends only, or everyone.
+Whose voices the local player can hear (`VoiceChat.AudibleScope`): no one, friends only, or everyone. Toggled by the mute non-friends quick action.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 

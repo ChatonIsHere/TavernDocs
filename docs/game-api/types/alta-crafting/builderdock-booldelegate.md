@@ -1,6 +1,6 @@
 ---
 title: "BuilderDock.BoolDelegate"
-description: "delegate BuilderDock.BoolDelegate in Root.Township."
+description: "Callback for BuilderDock.ActiveChanged, passed the dock's new IsActive value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BuilderDock.BoolDelegate
 
 A **delegate** in `Root.Township`, `Alta.Carpentry`.
+
+Callback for `BuilderDock.ActiveChanged`, passed the dock's new `IsActive` value.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`BuilderDock`](/game-api/types/alta-crafting/builderdock)

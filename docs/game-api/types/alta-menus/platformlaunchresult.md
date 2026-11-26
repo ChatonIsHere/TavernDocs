@@ -1,6 +1,6 @@
 ---
 title: "PlatformLaunchResult"
-description: "enum PlatformLaunchResult in Root.Township."
+description: "Oculus launch result codes (success, room full, game started, room not found, user declined, other), with the Oculus string in each Description."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformLaunchResult
 
 An **enum** in `Root.Township`, `Alta.PlatformSpecific.Oculus`.
+
+Oculus launch result codes (success, room full, game started, room not found, user declined, other), with the Oculus string in each `Description`.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

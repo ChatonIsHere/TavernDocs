@@ -1,6 +1,6 @@
 ---
 title: "BaseReplacer"
-description: "abstract class BaseReplacer in Root.Township."
+description: "Base class for a replacer that is tied to a target string given in the constructor."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BaseReplacer
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base class for a replacer that is tied to a target string given in the constructor.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Derived types** [`DirectReplacer`](/game-api/types/global-c-d/directreplacer), [`StringBuilderReplacer`](/game-api/types/global-s/stringbuilderreplacer)
@@ -23,9 +25,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-target" /><code>{"string Target { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target" /><code>{"string Target { get; private set; }"}</code> | The string this replacer targets, set once in the constructor. |
 
 ## Used in
 

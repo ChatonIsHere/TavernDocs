@@ -1,6 +1,6 @@
 ---
 title: "MenuGameSetting"
-description: "abstract class MenuGameSetting in Root.Township."
+description: "Base for an in-game menu widget that shows one game setting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MenuGameSetting
 
 An **abstract class** in `Root.Township`, `Alta.Menu`.
+
+Base for an in-game menu widget that shows one game setting. The generic `MenuGameSetting<T>` does the work.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, `Alta.Menu`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setsettings" /><code>{"abstract void SetSettings("}<Link to="/game-api/types/alta-utilities/isettingsfieldaccess">{"ISettingsFieldAccess"}</Link>{" newSettingToDisplay)"}</code> | Switches the widget to show another setting and sets it up again. |
 
 ## Used in
 

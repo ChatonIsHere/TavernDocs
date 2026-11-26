@@ -1,6 +1,6 @@
 ---
 title: "SteelSong.MessageType"
-description: "enum SteelSong.MessageType in Root.Township."
+description: "Who a Steel Song skill message is for: the local player (status), other players (effects), or the server (hit count report)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SteelSong.MessageType
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Who a Steel Song skill message is for: the local player (status), other players (effects), or the server (hit count report).
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SteelSong`](/game-api/types/global-s/steelsong)

@@ -30,25 +30,25 @@ Pickup type settings for items held with a velocity joint: how strongly the item
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> |
-| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> |
-| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> |
-| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> |
-| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> |
-| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> |
-| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> |
-| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> |
-| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> |
-| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> |
-| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> |
-| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> |
-| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> |
-| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> |
-| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> |
-| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> |
-| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-environmentpositiondriveforce" /><code>{"private float environmentPositionDriveForce"}</code> | Position spring used when the joint is an environmental joint (no damping). |
+| <Link id="m-environmentrotationdriveforce" /><code>{"private float environmentRotationDriveForce"}</code> | Rotation spring used when the joint is an environmental joint (no damping). |
+| <Link id="m-islimitingjointposition" /><code>{"private bool isLimitingJointPosition"}</code> | If true, `VelocityJoint` limits how far the held item can be from the shoulder. |
+| <Link id="m-isusingdistancecalculation" /><code>{"private bool isUsingDistanceCalculation"}</code> | Serialized option. Not read anywhere in this build. |
+| <Link id="m-positiondamper" /><code>{"private float positionDamper"}</code> | Damper of the position drive for swingable pickups. |
+| <Link id="m-positionmaximumforce" /><code>{"private float positionMaximumForce"}</code> | Maximum force of the position drive for swingable pickups. |
+| <Link id="m-positionscaler" /><code>{"private AnimationCurve positionScaler"}</code> | Curve passed to the velocity joint to scale position following. |
+| <Link id="m-positionspring" /><code>{"private float positionSpring"}</code> | Spring of the position drive for swingable pickups. |
+| <Link id="m-rotationdamper" /><code>{"private float rotationDamper"}</code> | Damper of the rotation drive for swingable pickups. |
+| <Link id="m-rotationmaximumforce" /><code>{"private float rotationMaximumForce"}</code> | Maximum force of the rotation drive for swingable pickups. |
+| <Link id="m-rotationscaler" /><code>{"private AnimationCurve rotationScaler"}</code> | Curve passed to the velocity joint to scale rotation following. |
+| <Link id="m-rotationspring" /><code>{"private float rotationSpring"}</code> | Spring of the rotation drive for swingable pickups. |
+| <Link id="m-rotationspringoverdistance" /><code>{"private AnimationCurve rotationSpringOverDistance"}</code> | Rotation spring by distance, used by the distance overload of `ApplyRotationDrive` (which also logs every call). |
+| <Link id="m-velocityjointpositionmultiplier" /><code>{"private float velocityJointPositionMultiplier"}</code> | Client: position multiplier for the held item's velocity joint. The server always uses 9. |
+| <Link id="m-velocityjointrotationmultiplier" /><code>{"private float velocityJointRotationMultiplier"}</code> | Client: rotation multiplier for the held item's velocity joint. The server always uses 75. |
+| <Link id="m-zanglerotationlimit" /><code>{"private float zAngleRotationLimit"}</code> | Angular Z limit, in degrees, for swingable pickups. |
+| <Link id="m-zbounciness" /><code>{"private float zBounciness"}</code> | Bounciness of the angular Z limit for swingable pickups. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "AtmosphereManager.ResolveAtmosphere"
-description: "delegate AtmosphereManager.ResolveAtmosphere in Root.Township."
+description: "Handler for AtmosphereManager.Resolve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AtmosphereManager.ResolveAtmosphere
 
 A **delegate** in `Root.Township`, `Alta.Environmental.Atmosphere`.
+
+Handler for `AtmosphereManager.Resolve`. Gets the chunk's atmosphere set by reference and can replace it before it is applied.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`AtmosphereManager`](/game-api/types/alta-world/atmospheremanager)

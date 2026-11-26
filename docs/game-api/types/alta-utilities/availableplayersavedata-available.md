@@ -1,6 +1,6 @@
 ---
 title: "AvailablePlayerSaveData.Available"
-description: "enum AvailablePlayerSaveData.Available in Root.Township."
+description: "Which player save is available: none, the decked out one or the default one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AvailablePlayerSaveData.Available
 
 An **enum** in `Root.Township`, `Alta.Utilities`.
+
+Which player save is available: none, the decked out one or the default one.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`AvailablePlayerSaveData`](/game-api/types/alta-utilities/availableplayersavedata)

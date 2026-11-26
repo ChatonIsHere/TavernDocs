@@ -1,6 +1,6 @@
 ---
 title: "TriggerHandler"
-description: "delegate TriggerHandler in Root.Township."
+description: "Handler for TriggerShape.Entered and TriggerShape.Exited, given the collider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TriggerHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `TriggerShape.Entered` and `TriggerShape.Exited`, given the collider.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MulticastDelegate`

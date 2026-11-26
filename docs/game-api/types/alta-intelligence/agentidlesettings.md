@@ -29,18 +29,18 @@ Settings for a creature's idle action: how long it lasts, whether it faces or fo
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-followfrom" /><code>{"private float followFrom"}</code> |
-| <Link id="m-followmovementfrom" /><code>{"private float followMovementFrom"}</code> |
-| <Link id="m-followmovementto" /><code>{"private float followMovementTo"}</code> |
-| <Link id="m-followto" /><code>{"private float followTo"}</code> |
-| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |
-| <Link id="m-isfollowingmovement" /><code>{"private bool isFollowingMovement"}</code> |
-| <Link id="m-isslowingdownwhenmoving" /><code>{"private bool isSlowingDownWhenMoving"}</code> |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |
-| <Link id="m-movespawnchance" /><code>{"private float moveSpawnChance"}</code> |
-| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-followfrom" /><code>{"private float followFrom"}</code> | Seconds into the idle after which the agent starts facing its target (-1 means from the start). |
+| <Link id="m-followmovementfrom" /><code>{"private float followMovementFrom"}</code> | Seconds into the idle after which the agent starts walking after its target. |
+| <Link id="m-followmovementto" /><code>{"private float followMovementTo"}</code> | Seconds into the idle after which it stops walking after the target; below 0 means no end. |
+| <Link id="m-followto" /><code>{"private float followTo"}</code> | Seconds into the idle after which it stops facing the target; below 0 means no end. |
+| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> | Whether the agent turns to face its target during the idle. |
+| <Link id="m-isfollowingmovement" /><code>{"private bool isFollowingMovement"}</code> | Whether the agent walks towards its target during the idle. |
+| <Link id="m-isslowingdownwhenmoving" /><code>{"private bool isSlowingDownWhenMoving"}</code> | Value given to the walker's `IsSlowedWhenNotMoving` while following; restored when the idle ends. |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> | Whether the idle action uses a target at all. |
+| <Link id="m-movespawnchance" /><code>{"private float moveSpawnChance"}</code> | Chance (0 to 1) that starting the idle asks the agent's population to move it elsewhere. |
+| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> | Distance at which following the target counts as reached (default 0.1). |
 
 </details>
 

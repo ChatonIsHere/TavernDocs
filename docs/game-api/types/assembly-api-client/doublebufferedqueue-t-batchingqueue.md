@@ -1,6 +1,6 @@
 ---
 title: "DoubleBufferedQueue<T>.BatchingQueue"
-description: "enum DoubleBufferedQueue<T>.BatchingQueue in Alta.Api.Client."
+description: "Which of the two queues in a DoubleBufferedQueue<T> is active: Primary or Secondary."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DoubleBufferedQueue&lt;T&gt;.BatchingQueue
 
 An **private enum** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which of the two queues in a `DoubleBufferedQueue<T>` is active: `Primary` or `Secondary`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Nested in** [`DoubleBufferedQueue<T>`](/game-api/types/assembly-api-client/doublebufferedqueue-t)

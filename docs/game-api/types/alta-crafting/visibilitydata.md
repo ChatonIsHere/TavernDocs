@@ -1,6 +1,6 @@
 ---
 title: "VisibilityData"
-description: "class VisibilityData in Root.Township."
+description: "A hashed scrapper asset holding one on or off value for mesh renderers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VisibilityData
 
 A **class** in `Root.Township`, `Alta.Scrapper.Data`.
+
+A hashed scrapper asset holding one on or off value for mesh renderers. A `Visibility` component applies it and syncs it by hash.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`HashedGeneralValue<VisibilityData>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -29,23 +31,23 @@ A **class** in `Root.Township`, `Alta.Scrapper.Data`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-enabled" /><code>{"private bool enabled"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enabled" /><code>{"private bool enabled"}</code> | Backing field for `Enabled`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enabled-2" /><code>{"bool Enabled { get; }"}</code> | Whether the renderers should be shown. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-savedata" /><code>{"void SaveData(bool enabled)"}</code> | Sets the stored enabled value. |
 
 ## Used in
 

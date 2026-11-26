@@ -1,6 +1,6 @@
 ---
 title: "DelayEnable.DelayMode"
-description: "enum DelayEnable.DelayMode in Root.Township."
+description: "How DelayEnable picks its delay: a random time in a range, or a random point on a curve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DelayEnable.DelayMode
 
 An **enum** in `Root.Township`, no namespace.
+
+How `DelayEnable` picks its delay: a random time in a range, or a random point on a curve.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`DelayEnable`](/game-api/types/global-c-d/delayenable)

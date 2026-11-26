@@ -1,6 +1,6 @@
 ---
 title: "BasicPopulationItem.PopulationItemEventHandler"
-description: "delegate BasicPopulationItem.PopulationItemEventHandler in Root.Township."
+description: "Callback with a BasicPopulationItem, used by its Removed event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicPopulationItem.PopulationItemEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Populations`.
+
+Callback with a `BasicPopulationItem`, used by its `Removed` event.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`BasicPopulationItem`](/game-api/types/alta-world-generation/basicpopulationitem)

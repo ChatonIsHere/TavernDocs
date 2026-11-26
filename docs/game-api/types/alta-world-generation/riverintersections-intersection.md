@@ -1,6 +1,6 @@
 ---
 title: "RiverIntersections.Intersection"
-description: "class RiverIntersections.Intersection in Root.Township."
+description: "One place where a forest edge crosses a river path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RiverIntersections.Intersection
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+One place where a forest edge crosses a river path.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`RiverIntersections`](/game-api/types/alta-world-generation/riverintersections)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, `Alta.Forests`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge"}</code> |
-| <Link id="m-pathprogress" /><code>{"float pathProgress"}</code> |
-| <Link id="m-river" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" river"}</code> |
-| <Link id="m-riverprogress" /><code>{"float riverProgress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-edge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge"}</code> | The forest edge crossing the river. |
+| <Link id="m-pathprogress" /><code>{"float pathProgress"}</code> | How far along the edge the crossing is, from 0 to 1. |
+| <Link id="m-river" /><code><Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" river"}</code> | The river path that is crossed. |
+| <Link id="m-riverprogress" /><code>{"float riverProgress"}</code> | How far along the river path the crossing is, from 0 to 1. |
 
 ## Used in
 

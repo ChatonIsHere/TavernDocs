@@ -1,6 +1,6 @@
 ---
 title: "PacketSentHandler"
-description: "delegate PacketSentHandler in Root.Township."
+description: "Callback for Connection.PacketSent, with the connection, the bytes sent, their count, the channel and the transport result."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PacketSentHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback for `Connection.PacketSent`, with the connection, the bytes sent, their count, the channel and the transport result.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "NonClimbable.ClimbFailBehaviour"
-description: "enum NonClimbable.ClimbFailBehaviour in Root.Township."
+description: "What a NonClimbable surface does when grabbed: Ignored can't be climbed at all, ReleaseAfterHold lets the grab start then releases it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NonClimbable.ClimbFailBehaviour
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+What a `NonClimbable` surface does when grabbed: `Ignored` can't be climbed at all, `ReleaseAfterHold` lets the grab start then releases it.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`NonClimbable`](/game-api/types/global-m-o/nonclimbable)

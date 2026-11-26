@@ -1,6 +1,6 @@
 ---
 title: "LiquidDataEventHandler"
-description: "delegate LiquidDataEventHandler in Root.Township."
+description: "Handler for an event that passes LiquidData."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidDataEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Liquid`.
+
+Handler for an event that passes `LiquidData`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

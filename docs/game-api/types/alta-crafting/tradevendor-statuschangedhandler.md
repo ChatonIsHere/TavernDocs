@@ -1,6 +1,6 @@
 ---
 title: "TradeVendor.StatusChangedHandler"
-description: "delegate TradeVendor.StatusChangedHandler in Root.Township."
+description: "Handler for TradeVendor.StatusChanged, called with the vendor's new trade status."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TradeVendor.StatusChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Trading`.
+
+Handler for `TradeVendor.StatusChanged`, called with the vendor's new trade status.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`TradeVendor`](/game-api/types/alta-crafting/tradevendor)

@@ -1,6 +1,6 @@
 ---
 title: "MultiPositionTypeLabel"
-description: "enum MultiPositionTypeLabel in Root.Township."
+description: "Labels for the simple, large and multi-position modes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MultiPositionTypeLabel
 
 An **enum** in `Root.Township`, no namespace.
+
+Labels for the simple, large and multi-position modes.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 

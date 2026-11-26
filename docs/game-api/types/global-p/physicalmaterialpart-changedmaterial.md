@@ -1,6 +1,6 @@
 ---
 title: "PhysicalMaterialPart.ChangedMaterial"
-description: "delegate PhysicalMaterialPart.ChangedMaterial in Root.Township."
+description: "Handler for PhysicalMaterialPart.MaterialChanged, given the new physical material and the channel it changed on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PhysicalMaterialPart.ChangedMaterial
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `PhysicalMaterialPart.MaterialChanged`, given the new physical material and the channel it changed on.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PhysicalMaterialPart`](/game-api/types/global-p/physicalmaterialpart)

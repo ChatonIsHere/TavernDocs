@@ -1,6 +1,6 @@
 ---
 title: "AtmosphereColor"
-description: "class AtmosphereColor in Root.Township."
+description: "A colour value in the atmosphere system that blends smoothly to a new target and passes each step to a setter callback."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AtmosphereColor
 
 A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
+
+A colour value in the atmosphere system that blends smoothly to a new target and passes each step to a setter callback.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`LerpingValue<Color>`](/game-api/types/alta-utilities/lerpingvalue-t)
@@ -23,9 +25,9 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lerp" /><code>{"protected override Color Lerp(Color initial, Color target, float progress)"}</code> | Blends between two colours with `Color.Lerp`. |
 
 ## Used in
 

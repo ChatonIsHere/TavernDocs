@@ -19,9 +19,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BlockedTrigger`](/game-api/types/alta-items/blockedtrigger) | class | `MonoBehaviour` | 1 |  |
 | [`BoulderDefinition`](/game-api/types/alta-items/boulderdefinition) | class | `HashedGeneralValue<BoulderDefinition>` | 6 | An asset describing a mineable rock: its health, what it drops, how its hits look, and its ore material. Used by `Rock`. |
 | [`BoulderDefinition.Create`](/game-api/types/alta-items/boulderdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Mining.ScriptableObject<BoulderDefinition>` | 0 |  |
-| [`ColliderMap`](/game-api/types/alta-items/collidermap) | class |  | 3 |  |
+| [`ColliderMap`](/game-api/types/alta-items/collidermap) | class |  | 3 | Pairs a collider with an `ImpactDetectorColliderModifier`, so an `ImpactDetector` can treat hits on that collider differently. |
 | [`ColliderModifierSettings`](/game-api/types/alta-items/collidermodifiersettings) | abstract class | `ScriptableObject` | 2 | [Impacts and hit detection](../items/impacts.md) |
-| [`CollisionFilter`](/game-api/types/alta-items/collisionfilter) | delegate |  | 0 |  |
+| [`CollisionFilter`](/game-api/types/alta-items/collisionfilter) | delegate |  | 0 | Handler for `ImpactTool.CollisionFilter`. Set `isHitconsumed` to true to stop the collision from becoming a hit, as `ChiselingTool` does. |
 | [`ContactPointStructure`](/game-api/types/alta-items/contactpointstructure) | struct |  | 8 | A copy of one collision contact (point, normal, colliders, separation) plus the impact detector that saw it. Passed around the impact system. |
 | [`ContactProjectile`](/game-api/types/alta-items/contactprojectile) | abstract class | `MonoBehaviour`, `IToolHitDependant`, `IImpactorResetEffect` | 4 | [Impacts and hit detection](../items/impacts.md) |
 | [`CraftableImpactDetector`](/game-api/types/alta-items/craftableimpactdetector) | class | `CraftableImpactDetectorBase` | 0 | [Impacts and hit detection](../items/impacts.md) |
@@ -32,15 +32,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DamageSource`](/game-api/types/alta-items/damagesource) | enum |  | 8 | [Health and damage](../items/health-and-damage.md#damagedata-and-damagesource) |
 | [`DelayedImpactResolver`](/game-api/types/alta-items/delayedimpactresolver) | static class |  | 3 | [Impacts and hit detection](../items/impacts.md) |
 | [`DirectionalMultiplierCollider`](/game-api/types/alta-items/directionalmultipliercollider) | class | `ColliderModifierSettings` | 2 | [Impacts and hit detection](../items/impacts.md) |
-| [`EmbeddableManager`](/game-api/types/alta-items/embeddablemanager) | class | `MonoBehaviour` | 9 |  |
+| [`EmbeddableManager`](/game-api/types/alta-items/embeddablemanager) | class | `MonoBehaviour` | 9 | Sits on something that arrows, knives and other `Embeddable`s can stick into. Tracks what is embedded and frees it on death, docking, destruction or crafting. |
 | [`EmbeddableSurface`](/game-api/types/alta-items/embeddablesurface) | class | `MonoBehaviour` | 0 |  |
 | [`EquipmentReference`](/game-api/types/alta-items/equipmentreference) | class | `MonoBehaviour` | 2 | [Impacts and hit detection](../items/impacts.md) |
-| [`EquipmentReference.EquipmentChangedHandler`](/game-api/types/alta-items/equipmentreference-equipmentchangedhandler) | delegate |  | 0 |  |
+| [`EquipmentReference.EquipmentChangedHandler`](/game-api/types/alta-items/equipmentreference-equipmentchangedhandler) | delegate |  | 0 | Handler for `EquipmentReference.Changed`, called with the new armour definition when `Equipment` is set. |
 | [`FixedImpactor`](/game-api/types/alta-items/fixedimpactor) | class | `ImpactGenerator`, `INetworkEntityBehaviour` | 11 | An impact source that only hurts while charged, such as a creature's beak or a seed projectile. The charged state syncs from server to clients. |
 | [`FixedImpactorGroup`](/game-api/types/alta-items/fixedimpactorgroup) | class | `ComponentGroup<FixedImpactor>` | 2 | [Combat, damage and death](../creatures/combat-and-damage.md): `Charge()` and `Reset()` for several at once. |
 | [`HitModifierEffect`](/game-api/types/alta-items/hitmodifiereffect) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`IImpactEffect`](/game-api/types/alta-items/iimpacteffect) | interface |  | 1 |  |
-| [`IImpactorResetEffect`](/game-api/types/alta-items/iimpactorreseteffect) | interface |  | 1 |  |
+| [`IImpactorResetEffect`](/game-api/types/alta-items/iimpactorreseteffect) | interface |  | 1 | An effect that is reset when its impactor resets after a hit or block. Added to `ImpactGenerator.EffectsOnReset`. |
 | [`ImpactChannel`](/game-api/types/alta-items/impactchannel) | class | `ScriptableObject` | 1 | [Impacts and hit detection](../items/impacts.md) |
 | [`ImpactChannel.Create`](/game-api/types/alta-items/impactchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject<ImpactChannel>` | 0 |  |
 | [`ImpactDetector`](/game-api/types/alta-items/impactdetector) | class | `MonoBehaviour`, `IListenToPhysicalMaterial`, `INetworkEntityBehaviour`, +2 more | 16 | [Impacts and hit detection](../items/impacts.md#impactdetector): On anything that can be hit: creature body parts, rocks, trees, players. |
@@ -52,7 +52,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImpactDetectorSettings.ImpactSettings`](/game-api/types/alta-items/impactdetectorsettings-impactsettings) | class |  | 7 | The effect and sound for one impact outcome (critical, good or bad) in `ImpactDetectorSettings`. |
 | [`ImpactGenerator`](/game-api/types/alta-items/impactgenerator) | abstract class | `MonoBehaviour` | 25 | Base component for the part of an item or creature that deals hits (a blade edge, a point, a creature attack). It holds the damage values and settings that impact detectors read when hit. |
 | [`ImpactHit`](/game-api/types/alta-items/impacthit) | class | `DamageData` | 23 | [Impacts and hit detection](../items/impacts.md#impacthit-and-impacthitwithtool) |
-| [`ImpactHitEvent`](/game-api/types/alta-items/impacthitevent) | class | `AltaEvent<ImpactHitWithTool, ImpactHitUnityevent>` | 0 |  |
+| [`ImpactHitEvent`](/game-api/types/alta-items/impacthitevent) | class | `AltaEvent<ImpactHitWithTool, ImpactHitUnityevent>` | 0 | Inspector event that passes an `ImpactHitWithTool`. |
 | [`ImpactHitThresholdTrigger`](/game-api/types/alta-items/impacthitthresholdtrigger) | class | `MonoBehaviour` | 0 |  |
 | [`ImpactHitTrigger`](/game-api/types/alta-items/impacthittrigger) | class | `MonoBehaviour` | 0 |  |
 | [`ImpactHitUnityevent`](/game-api/types/alta-items/impacthitunityevent) | class | `UnityEvent<ImpactHitWithTool>` | 0 |  |
@@ -65,16 +65,16 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImpactModifierStatAffect`](/game-api/types/alta-items/impactmodifierstataffect) | class | `ImpactModifierComponent` | 1 |  |
 | [`Impactor`](/game-api/types/alta-items/impactor) | class | `ImpactGenerator`, `IGetRigidbody` | 4 |  |
 | [`ImpactorAreaFilter<T>`](/game-api/types/alta-items/impactorareafilter-t) | abstract class | `ImpactorFilter` | 2 |  |
-| [`ImpactorFilter`](/game-api/types/alta-items/impactorfilter) | abstract class | `ScriptableObject` | 1 |  |
+| [`ImpactorFilter`](/game-api/types/alta-items/impactorfilter) | abstract class | `ScriptableObject` | 1 | Base ScriptableObject for a filter on contact points, listed in `ImpactorSettings.Filters`. `ChiselingFilterSettings` is one. |
 | [`ImpactorMap`](/game-api/types/alta-items/impactormap) | class | `MonoBehaviour` | 5 | Component on a crafting part that maps each of its colliders to the `ImpactGenerator`s under it. Used by `ImpactTool` and `ImpactModifier` when parts are joined into a tool. |
 | [`ImpactorSettings`](/game-api/types/alta-items/impactorsettings) | class | `ScriptableObject` | 8 | [Impacts and hit detection](../items/impacts.md) |
 | [`ImpactorValues`](/game-api/types/alta-items/impactorvalues) | class | `ScriptableObject` | 12 | [Impacts and hit detection](../items/impacts.md#impactorvalues): Each impactor points at an `ImpactorValues` asset: |
 | [`ImpactTool`](/game-api/types/alta-items/impacttool) | class | `MonoBehaviour`, `IGetRigidbody` | 45 | [Impacts and hit detection](../items/impacts.md#impacttool): Get it with `GetComponent<ImpactTool>()` on the item, or `entity.CommonImpactTool`. |
-| [`ImpactTool.OnCollidedHit`](/game-api/types/alta-items/impacttool-oncollidedhit) | delegate |  | 0 |  |
-| [`ImpactTool.OnCollisionEnterEvent`](/game-api/types/alta-items/impacttool-oncollisionenterevent) | delegate |  | 0 |  |
+| [`ImpactTool.OnCollidedHit`](/game-api/types/alta-items/impacttool-oncollidedhit) | delegate |  | 0 | Handler for `ImpactTool.OnCollided`. Called with the collision, whether it became a hit, and the tool. |
+| [`ImpactTool.OnCollisionEnterEvent`](/game-api/types/alta-items/impacttool-oncollisionenterevent) | delegate |  | 0 | Handler for `ImpactTool.OnCollisionEnterCalled`, raised when a held tool collides with something on a blockable layer. |
 | [`ImpactTool.OnGeneratedHit`](/game-api/types/alta-items/impacttool-ongeneratedhit) | delegate |  | 0 | Callback for an `ImpactTool` hit or block, given the hit and the tool. Used by `OnHit`, `OnBlocked` and the static `OnHitAny`. |
 | [`ImpactType`](/game-api/types/alta-items/impacttype) | enum |  | 7 | Kind of damage an impact does: pierce, slash, blunt, caustic, poison, explosive or spiritual. |
-| [`ImpactTypeFilter`](/game-api/types/alta-items/impacttypefilter) | class |  | 2 |  |
+| [`ImpactTypeFilter`](/game-api/types/alta-items/impacttypefilter) | class |  | 2 | Inspector list of allowed impact types. An empty list allows everything. |
 | [`INetworkProjectile`](/game-api/types/alta-items/inetworkprojectile) | interface |  | 5 |  |
 | [`IToolHitDependant`](/game-api/types/alta-items/itoolhitdependant) | interface |  | 2 | A component on an impact tool or crafting part that wants to know when the tool hits or collides with something, such as arrows or breakable items. Found automatically in the tool's children. |
 | [`MiningSettings`](/game-api/types/alta-items/miningsettings) | class | `GlobalSettings<MiningSettings>` | 14 | [Impacts and hit detection](../items/impacts.md): Global haptics and strike sound settings. |
@@ -84,7 +84,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ParticleImpactor`](/game-api/types/alta-items/particleimpactor) | class | `MonoBehaviour` | 5 | [Impacts and hit detection](../items/impacts.md): Particle damage (`ParticleHit`). |
 | [`PickupBreakOnImpact`](/game-api/types/alta-items/pickupbreakonimpact) | class | `BreakOnImpact` | 0 | [Impacts and hit detection](../items/impacts.md): Breaks an item on a hard hit. |
 | [`PooledFixedImpactor`](/game-api/types/alta-items/pooledfixedimpactor) | class | `FixedImpactor` | 1 |  |
-| [`ResourceDropChance`](/game-api/types/alta-items/resourcedropchance) | class |  | 2 |  |
+| [`ResourceDropChance`](/game-api/types/alta-items/resourcedropchance) | class |  | 2 | One possible resource drop with its weighting, used in `BoulderDefinition.ResourcesDropChances`. |
 | [`SparkImpactDetector`](/game-api/types/alta-items/sparkimpactdetector) | class | `CraftableImpactDetector` | 0 | [Impacts and hit detection](../items/impacts.md) |
 | [`SparkSecondaryDetector`](/game-api/types/alta-items/sparksecondarydetector) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`TriggerImpactDetector`](/game-api/types/alta-items/triggerimpactdetector) | class | `MonoBehaviour` | 2 | [Impacts and hit detection](../items/impacts.md) |
@@ -108,27 +108,27 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DockArray`](/game-api/types/alta-items/dockarray) | class | `NetworkEntityBehaviour` | 14 | A group of pickup docks (a bag's or belt's slots) with totals for count, stored quantity and weight. Arrays can nest, so a parent includes its children's docks. |
 | [`DockedOffset`](/game-api/types/alta-items/dockedoffset) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`DockFilter`](/game-api/types/alta-items/dockfilter) | delegate |  | 0 | [Docks](../items/docks.md) |
-| [`DockHideOptions`](/game-api/types/alta-items/dockhideoptions) | enum |  | 3 |  |
-| [`DockPositioning`](/game-api/types/alta-items/dockpositioning) | delegate |  | 0 |  |
+| [`DockHideOptions`](/game-api/types/alta-items/dockhideoptions) | enum |  | 3 | Game setting for hiding dock visuals in screenshots: never, only empty docks, or always. |
+| [`DockPositioning`](/game-api/types/alta-items/dockpositioning) | delegate |  | 0 | Override for where a docked pickup sits: fills in local position, rotation and scale, returning false if it can't place it. Set through `PickupDock.OverridePositioning`. |
 | [`DockVisibilityMode`](/game-api/types/alta-items/dockvisibilitymode) | enum |  | 4 |  |
 | [`DockVisual`](/game-api/types/alta-items/dockvisual) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 9 | The bubble and item count label on a pickup dock. Switches materials by distance to the local player's head, pulses while hovered, and can hide from the hand camera. Client only; does nothing on a headless server. |
 | [`GlobalCommunalStorageValues`](/game-api/types/alta-items/globalcommunalstoragevalues) | class | `NetworkEntityBehaviour` | 6 |  |
-| [`GlobalCommunalStorageValuesData`](/game-api/types/alta-items/globalcommunalstoragevaluesdata) | class | `BasicSaveData<GlobalCommunalStorageValuesData>` | 3 |  |
+| [`GlobalCommunalStorageValuesData`](/game-api/types/alta-items/globalcommunalstoragevaluesdata) | class | `BasicSaveData<GlobalCommunalStorageValuesData>` | 3 | Save data for the global communal storage: parallel lists of storage data, their identifiers and stored counts. |
 | [`IInterfereWithDocking`](/game-api/types/alta-items/iinterferewithdocking) | interface |  | 1 | A component that can stop two items from stacking in one dock, such as liquid containers with different contents. Checked when an item is docked onto one already there. |
 | [`Ingot`](/game-api/types/alta-items/ingot) | class | `ItemComponent` | 2 | [Smelting and forging](../game-systems/smelting-and-forging.md): `ItemComponent` on ingot items: `SmeltingDuration` and `PhysicalMaterial`. |
-| [`InvertedTriangleStackingInstruction`](/game-api/types/alta-items/invertedtrianglestackinginstruction) | class | `StackingInstructions<InvertedTriangleStackingInstructionSetup>` | 7 |  |
+| [`InvertedTriangleStackingInstruction`](/game-api/types/alta-items/invertedtrianglestackinginstruction) | class | `StackingInstructions<InvertedTriangleStackingInstructionSetup>` | 7 | Stacking instructions asset that piles items in an inverted triangle inside a dock. Created from the Township/Stacking asset menu. |
 | [`InvertedTriangleStackingInstructionSetup`](/game-api/types/alta-items/invertedtrianglestackinginstructionsetup) | class | `StackingInstructionSetup<InvertedTriangleStackingInstruction>` | 0 |  |
 | [`Item`](/game-api/types/alta-items/item) | class | `HashedGeneralValue<Item>`, `IPageBasis` | 35 | [Items and materials](../items/items-and-materials.md#item), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `ScriptableObject` asset (through `Alta.HashedGeneralValue<Item>` in `Alta.Values`). The same on both sides; it's data. |
 | [`Item.Create`](/game-api/types/alta-items/item-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<Item>` | 0 |  |
-| [`Item.CustomDockPositioning`](/game-api/types/alta-items/item-customdockpositioning) | class | `DockPositioning` | 2 |  |
+| [`Item.CustomDockPositioning`](/game-api/types/alta-items/item-customdockpositioning) | class | `DockPositioning` | 2 | A store position and rotation for an item in one kind of dock. A null dock type acts as the fallback for any dock. |
 | [`Item.DockPositioning`](/game-api/types/alta-items/item-dockpositioning) | class |  | 3 | Where an item sits when stored in a dock: a local position and rotation. `PickupDock` gets one from `Item.GetPositioning` and scales the position to fit. |
 | [`ItemCount`](/game-api/types/alta-items/itemcount) | class |  | 2 | An item and an amount, used for smelting recipe inputs and outputs. |
 | [`ItemDockedVfxEvent`](/game-api/types/alta-items/itemdockedvfxevent) | class | `AbstractDockEvents` | 0 |  |
-| [`ItemSet`](/game-api/types/alta-items/itemset) | class | `ScriptableObject` | 1 |  |
+| [`ItemSet`](/game-api/types/alta-items/itemset) | class | `ScriptableObject` | 1 | ScriptableObject holding a list of item definitions. |
 | [`ItemSet.Create`](/game-api/types/alta-items/itemset-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<ItemSet>` | 0 |  |
-| [`JengaStackingInstruction`](/game-api/types/alta-items/jengastackinginstruction) | class | `StackingInstructions<JengaStackingInstructionSetup>` | 4 |  |
+| [`JengaStackingInstruction`](/game-api/types/alta-items/jengastackinginstruction) | class | `StackingInstructions<JengaStackingInstructionSetup>` | 4 | Stacking instructions that lay items in alternating crossed layers like a Jenga tower (menu Township/Stacking/Jenga Instructions). |
 | [`JengaStackingInstructionSetup`](/game-api/types/alta-items/jengastackinginstructionsetup) | class | `StackingInstructionSetup<JengaStackingInstruction>` | 0 |  |
-| [`JengaStackingInstructionSetup.Level`](/game-api/types/alta-items/jengastackinginstructionsetup-level) | struct |  | 3 |  |
+| [`JengaStackingInstructionSetup.Level`](/game-api/types/alta-items/jengastackinginstructionsetup-level) | struct |  | 3 | One layer of a jenga stack: how many items fit along X and Z, and the total. |
 | [`KeyItem`](/game-api/types/alta-items/keyitem) | class | `Pickup` | 7 | [Items, interaction and damage](../items/overview.md) |
 | [`KeyItemEvent`](/game-api/types/alta-items/keyitemevent) | class | `AltaEvent<KeyItem, KeyUnityEvent>` | 0 | A serializable event with a `KeyItem` argument, such as a lock's key turn event. |
 | [`KeyUnityEvent`](/game-api/types/alta-items/keyunityevent) | class | `UnityEvent<KeyItem>` | 0 |  |
@@ -139,30 +139,30 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LockableUnityEvent`](/game-api/types/alta-items/lockableunityevent) | class | `UnityEvent<LockableHinge>` | 0 |  |
 | [`LockEffectUnityEvent`](/game-api/types/alta-items/lockeffectunityevent) | class | `UnityEvent<Lock>` | 0 |  |
 | [`LockEvent`](/game-api/types/alta-items/lockevent) | class | `AltaEvent<Lock, LockUnityEvent>` | 0 | A serializable event with a `Lock` argument, such as a lock's locked or broken events. |
-| [`LockItemEvent`](/game-api/types/alta-items/lockitemevent) | class | `AltaEvent<Lock, LockEffectUnityEvent>` | 0 |  |
+| [`LockItemEvent`](/game-api/types/alta-items/lockitemevent) | class | `AltaEvent<Lock, LockEffectUnityEvent>` | 0 | Inspector event that passes a `Lock`. Used for `Chest.LockJingleJangle`. |
 | [`LockUnityEvent`](/game-api/types/alta-items/lockunityevent) | class | `UnityEvent<Lock>` | 0 |  |
 | [`OnlyAllowDockingWhenEmpty`](/game-api/types/alta-items/onlyallowdockingwhenempty) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`PersonalChunk`](/game-api/types/alta-items/personalchunk) | class | `NetworkEntityBehaviour` | 4 |  |
 | [`PickupDock`](/game-api/types/alta-items/pickupdock) | class | `Interactable`, `ISavableFull<PickupDockSaveData>`, `ISavable<PickupDockSaveData>`, +9 more | 54 | [Other systems](../game-systems/other-systems.md), [Player inventory](../items/player-inventory.md) |
 | [`PickupDock.AllowedResult`](/game-api/types/alta-items/pickupdock-allowedresult) | enum |  | 23 | Why a dock accepted or refused a pickup: `Ok`, or a reason such as wrong item, tag filter, full or crafting rules. |
-| [`PickupDocker`](/game-api/types/alta-items/pickupdocker) | class |  | 10 |  |
-| [`PickupDockFilter`](/game-api/types/alta-items/pickupdockfilter) | delegate |  | 0 |  |
-| [`PickupDockHandler`](/game-api/types/alta-items/pickupdockhandler) | delegate |  | 0 |  |
-| [`PickupDockHoverHandler`](/game-api/types/alta-items/pickupdockhoverhandler) | delegate |  | 0 |  |
+| [`PickupDocker`](/game-api/types/alta-items/pickupdocker) | class |  | 10 | The part of a `Pickup` that docks it into and out of a `PickupDock` and syncs that over the network. Both sides; each pickup owns one. |
+| [`PickupDockFilter`](/game-api/types/alta-items/pickupdockfilter) | delegate |  | 0 | Filter called before a pickup docks; set `result` to false to stop it docking in that dock. |
+| [`PickupDockHandler`](/game-api/types/alta-items/pickupdockhandler) | delegate |  | 0 | Handler for an event about a single dock. |
+| [`PickupDockHoverHandler`](/game-api/types/alta-items/pickupdockhoverhandler) | delegate |  | 0 | Handler for `PickupDock.HoverCountChanged`, with the dock and its previous hover count. |
 | [`PickupDockInteractionHandler`](/game-api/types/alta-items/pickupdockinteractionhandler) | delegate |  | 0 | Callback with the interactor, pickup and dock, used by `PickupDocker`'s `PreDocked`, `Docked` and `Undocked` events. |
 | [`PickupDockSaveData`](/game-api/types/alta-items/pickupdocksavedata) | internal class | `NewSaveData<PickupDock, PickupDockSaveData>` | 3 |  |
 | [`PickupDockSaveDataOld`](/game-api/types/alta-items/pickupdocksavedataold) | internal class | `OldSaveData` | 4 |  |
 | [`PickupDockSettings`](/game-api/types/alta-items/pickupdocksettings) | class | `ScriptableObject` | 42 | [Docks](../items/docks.md#pickupdocksettings): `Alta.Inventory.PickupDockSettings` is a `ScriptableObject` asset that many docks share. |
 | [`PickupDockSettings.Create`](/game-api/types/alta-items/pickupdocksettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<PickupDockSettings>` | 0 |  |
-| [`PickupDockVisualSettings`](/game-api/types/alta-items/pickupdockvisualsettings) | class | `ScriptableObject` | 6 |  |
+| [`PickupDockVisualSettings`](/game-api/types/alta-items/pickupdockvisualsettings) | class | `ScriptableObject` | 6 | ScriptableObject with how dock bubbles look: materials by distance, colours for whether a held item fits, and hover and fade settings. Client side, used by `DockVisual`. |
 | [`PickupDockVisualSettings.Create`](/game-api/types/alta-items/pickupdockvisualsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking.ScriptableObject<PickupDockVisualSettings>` | 0 |  |
 | [`PickupTag`](/game-api/types/alta-items/pickuptag) | class | `ScriptableObject` | 0 | An empty asset used as a tag for marking and matching pickups. |
 | [`PickupTag.Create`](/game-api/types/alta-items/pickuptag-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<PickupTag>` | 0 |  |
 | [`PlayerDocks`](/game-api/types/alta-items/playerdocks) | class | `MonoBehaviour` | 0 | [Player inventory](../items/player-inventory.md): On the body; adds an `InteractionFilter` to every dock so only the owner can take from them. |
-| [`PooledDockVisual`](/game-api/types/alta-items/pooleddockvisual) | class | `PooledObject` | 4 |  |
-| [`QuantityChangeHandler`](/game-api/types/alta-items/quantitychangehandler) | delegate |  | 0 |  |
+| [`PooledDockVisual`](/game-api/types/alta-items/pooleddockvisual) | class | `PooledObject` | 4 | Pooled visual for a dock: the bubble mesh, its filter and a 3D count label. |
+| [`QuantityChangeHandler`](/game-api/types/alta-items/quantitychangehandler) | delegate |  | 0 | Parameterless handler for `PickupDock.QuantityChanged`. |
 | [`RejectDockArea`](/game-api/types/alta-items/rejectdockarea) | class | `AutomaticDockArea`, `INetworkEntityBehaviour` | 1 | [Items, interaction and damage](../items/overview.md) |
-| [`SphereInBoxStackingInstruction`](/game-api/types/alta-items/sphereinboxstackinginstruction) | class | `StackingInstructions<SphereInBoxStackingInstructionSetup>` | 4 |  |
+| [`SphereInBoxStackingInstruction`](/game-api/types/alta-items/sphereinboxstackinginstruction) | class | `StackingInstructions<SphereInBoxStackingInstructionSetup>` | 4 | Stacking instructions asset that packs spheres in a box grid inside a dock. Created from the Township/Stacking asset menu. |
 | [`SphereInBoxStackingInstructionSetup`](/game-api/types/alta-items/sphereinboxstackinginstructionsetup) | class | `StackingInstructionSetup<SphereInBoxStackingInstruction>` | 0 |  |
 | [`StabilizeJointContainer`](/game-api/types/alta-items/stabilizejointcontainer) | class | `StabilizePickupJoint` | 0 |  |
 | [`StabilizeLantern`](/game-api/types/alta-items/stabilizelantern) | class | `StabilizeJointContainer` | 0 |  |
@@ -172,22 +172,22 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StackingInstructions<T>`](/game-api/types/alta-items/stackinginstructions-t) | abstract class | `StackingInstructions` | 1 |  |
 | [`StackingInstructionSetup`](/game-api/types/alta-items/stackinginstructionsetup) | abstract class |  | 5 | Base for working out where stacked copies of an item go inside some bounds, from `StackingInstructions`. Used by `StorageOrganizer`. |
 | [`StackingInstructionSetup<T>`](/game-api/types/alta-items/stackinginstructionsetup-t) | abstract class | `StackingInstructionSetup` | 1 |  |
-| [`StorageData`](/game-api/types/alta-items/storagedata) | class |  | 3 |  |
+| [`StorageData`](/game-api/types/alta-items/storagedata) | class |  | 3 | One saved row of the global communal storage: an item, its material and how many are stored. Kept by `GlobalCommunalStorageValues`. |
 | [`StorageOrganizer`](/game-api/types/alta-items/storageorganizer) | class | `MonoBehaviour`, `IUpdateOnMove` | 0 | [Items, interaction and damage](../items/overview.md) |
-| [`SubDockHandler`](/game-api/types/alta-items/subdockhandler) | delegate |  | 0 |  |
+| [`SubDockHandler`](/game-api/types/alta-items/subdockhandler) | delegate |  | 0 | Event handler for a pickup docking into or out of a sub dock of a docked item. Used by `PickupDock.OnSubDocked` and `OnSubUndocked`. |
 
 ## Alta.Inventory.Pickups.Scripts
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`PickupActionData`](/game-api/types/alta-items/pickupactiondata) | struct |  | 6 |  |
+| [`PickupActionData`](/game-api/types/alta-items/pickupactiondata) | struct |  | 6 | Plain data about one pickup inventory action: who did it, what pickup, how many and where it went. |
 | [`PickupEventStreamLogger`](/game-api/types/alta-items/pickupeventstreamlogger) | static class |  | 4 |  |
 
 ## Alta.Logic
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BoolSenderInput`](/game-api/types/alta-items/boolsenderinput) | class | `SenderInput<LogicBoolSender, LogicBoolSaveData>` | 0 |  |
+| [`BoolSenderInput`](/game-api/types/alta-items/boolsenderinput) | class | `SenderInput<LogicBoolSender, LogicBoolSaveData>` | 0 | Serializable link from a logic receiver to a bool sender (`LogicBoolSender`). |
 | [`FloatSenderInput`](/game-api/types/alta-items/floatsenderinput) | class | `SenderInput<LogicFloatSender, LogicFloatSaveData>` | 0 | A serialized link from a logic receiver to a `LogicFloatSender`. |
 | [`GlobalLogicManager`](/game-api/types/alta-items/globallogicmanager) | class | `NetworkEntityBehaviour`, `ISavable<LogicManagerData>`, `ISavableSave<LogicManagerData>`, +2 more | 6 | [Other systems](../game-systems/other-systems.md): Holds every logic value (`GetData<TData>(ref uint identifier)`). Saved. |
 | [`ILogicComponent`](/game-api/types/alta-items/ilogiccomponent) | interface |  | 1 |  |
@@ -219,7 +219,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LogicGateSaveData1`](/game-api/types/alta-items/logicgatesavedata1) | class | `OldSaveData` | 3 |  |
 | [`LogicIntRangeReceiver`](/game-api/types/alta-items/logicintrangereceiver) | class | `LogicValueReceiver<IntSenderInput>`, `ISavable<LogicIntRangeSaveData>`, `ISavableSave<LogicIntRangeSaveData>`, +1 more | 1 | [Other systems](../game-systems/other-systems.md) |
 | [`LogicIntRangeSaveData`](/game-api/types/alta-items/logicintrangesavedata) | class | `NewSaveData<LogicIntRangeReceiver, LogicIntRangeSaveData>` | 4 |  |
-| [`LogicIntReceiver`](/game-api/types/alta-items/logicintreceiver) | class | `LogicValueReceiver<IntSenderInput>`, `ISavable<LogicIntReceiverData>`, `ISavableSave<LogicIntReceiverData>`, +1 more | 0 |  |
+| [`LogicIntReceiver`](/game-api/types/alta-items/logicintreceiver) | class | `LogicValueReceiver<IntSenderInput>`, `ISavable<LogicIntReceiverData>`, `ISavableSave<LogicIntReceiverData>`, +1 more | 0 | Logic receiver that listens to an int sender and raises a Unity event with each new value. Saves the link to its sender. |
 | [`LogicIntReceiverData`](/game-api/types/alta-items/logicintreceiverdata) | class | `NewSaveData<LogicIntReceiver, LogicIntReceiverData>` | 1 |  |
 | [`LogicIntSaveData`](/game-api/types/alta-items/logicintsavedata) | class | `NewSaveData<LogicIntSender, LogicIntSaveData>`, `ILogicValueData` | 3 | Save data for a `LogicIntSender`: its logic link data and its int value. |
 | [`LogicIntSender`](/game-api/types/alta-items/logicintsender) | class | `LogicValueSender<LogicIntSaveData>` | 2 | [Other systems](../game-systems/other-systems.md) |
@@ -228,7 +228,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LogicIntToBool`](/game-api/types/alta-items/logicinttobool) | class | `MonoBehaviour`, `ISavable<LogicIntToBoolData>`, `ISavableSave<LogicIntToBoolData>`, +1 more | 2 | [Other systems](../game-systems/other-systems.md) |
 | [`LogicIntToBoolData`](/game-api/types/alta-items/logicinttobooldata) | class | `NewSaveData<LogicIntToBool, LogicIntToBoolData>` | 1 |  |
 | [`LogicManagerData`](/game-api/types/alta-items/logicmanagerdata) | class | `NewSaveData<GlobalLogicManager, LogicManagerData>` | 2 |  |
-| [`LogicManagerSet`](/game-api/types/alta-items/logicmanagerset) | class |  | 1 |  |
+| [`LogicManagerSet`](/game-api/types/alta-items/logicmanagerset) | class |  | 1 | Save wrapper for the global logic manager's values, stored in `LogicManagerData.set`. |
 | [`LogicOperationType`](/game-api/types/alta-items/logicoperationtype) | enum |  | 5 | Logic gate kind: `And`, `Or`, `Xor`, `Nand` or `Toggle`. |
 | [`LogicSaveData`](/game-api/types/alta-items/logicsavedata) | class | `BasicSaveData<LogicSaveData>` | 5 | Saved state of a logic value with an identifier and change events. |
 | [`LogicSumFloatReceiver`](/game-api/types/alta-items/logicsumfloatreceiver) | class | `LogicValueReceiverArray<FloatSenderInput>`, `ISavable<LogicSumFloatSaveData>`, `ISavableSave<LogicSumFloatSaveData>`, +1 more | 1 | [Other systems](../game-systems/other-systems.md) |
@@ -312,9 +312,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PageData`](/game-api/types/alta-items/pagedata) | class |  | 11 | The content of a book or paper page: a list of placed glyphs, or data from a `PageProvider` for generated pages. Serialised over the network and compared by value. |
 | [`PageInstance`](/game-api/types/alta-items/pageinstance) | class | `GeneratedNetworkEntityBehaviour`, `ISavable<PageInstanceSaveData>`, `ISavableSave<PageInstanceSaveData>`, +1 more | 11 | [Pages and books](../items/pages-and-books.md): A page inside a book or on paper: `Book`, `Data`, `Set(PageData)`, `event Action<PageInstance> OnChangedPage`. |
 | [`PageInstanceSaveData`](/game-api/types/alta-items/pageinstancesavedata) | class | `NewSaveData<PageInstance, PageInstanceSaveData>` | 5 | Save data for a `PageInstance`: either a reference to a page from a page provider, or a list of custom glyph positions. |
-| [`PageInstanceSaveData1`](/game-api/types/alta-items/pageinstancesavedata1) | class | `OldSaveData` | 4 |  |
+| [`PageInstanceSaveData1`](/game-api/types/alta-items/pageinstancesavedata1) | class | `OldSaveData` | 4 | Old (version 1) save data for a `PageInstance`. It is migrated to `PageInstanceSaveData` on load. |
 | [`PageInstanceSaveData2`](/game-api/types/alta-items/pageinstancesavedata2) | class | `OldSaveData` | 5 |  |
-| [`PageRenderer`](/game-api/types/alta-items/pagerenderer) | class | `MonoBehaviour` | 3 |  |
+| [`PageRenderer`](/game-api/types/alta-items/pagerenderer) | class | `MonoBehaviour` | 3 | Client: renders page glyphs into render texture materials with its own camera, caching and pooling them per `PageData`. A singleton; does nothing on a headless server. |
 | [`PaperPageInstance`](/game-api/types/alta-items/paperpageinstance) | class | `PageInstance` | 4 | [Pages and books](../items/pages-and-books.md): A loose page you find. |
 | [`Pinboard`](/game-api/types/alta-items/pinboard) | class | `NetworkEntityBehaviour` | 1 | [Pages and books](../items/pages-and-books.md): A board that shows a set of pages. |
 | [`PositionRestrictor`](/game-api/types/alta-items/positionrestrictor) | class | `NetworkEntityBehaviour`, `ISavable<PositionRestrictorSaveData>`, `ISavableSave<PositionRestrictorSaveData>`, +1 more | 11 | [Pages and books](../items/pages-and-books.md) |

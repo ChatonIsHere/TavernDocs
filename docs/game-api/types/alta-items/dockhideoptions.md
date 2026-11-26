@@ -1,6 +1,6 @@
 ---
 title: "DockHideOptions"
-description: "enum DockHideOptions in Root.Township."
+description: "Game setting for hiding dock visuals in screenshots: never, only empty docks, or always."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DockHideOptions
 
 An **enum** in `Root.Township`, `Alta.Inventory`.
+
+Game setting for hiding dock visuals in screenshots: never, only empty docks, or always.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 

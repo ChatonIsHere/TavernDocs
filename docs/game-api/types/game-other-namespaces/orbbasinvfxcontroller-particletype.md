@@ -1,6 +1,6 @@
 ---
 title: "OrbBasinVfxController.ParticleType"
-description: "enum OrbBasinVfxController.ParticleType in Root.Township."
+description: "Which orb basin effect to play: orb obtained, permanent unlock or tower completion."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OrbBasinVfxController.ParticleType
 
 An **private enum** in `Root.Township`, `Features.Gameplay`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which orb basin effect to play: orb obtained, permanent unlock or tower completion.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Nested in** [`OrbBasinVfxController`](/game-api/types/game-other-namespaces/orbbasinvfxcontroller)

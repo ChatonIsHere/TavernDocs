@@ -1,6 +1,6 @@
 ---
 title: "Item.CustomDockPositioning"
-description: "class Item.CustomDockPositioning in Root.Township."
+description: "A store position and rotation for an item in one kind of dock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Item.CustomDockPositioning
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A store position and rotation for an item in one kind of dock. A null dock type acts as the fallback for any dock.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`Item`](/game-api/types/alta-items/item)
@@ -27,17 +29,17 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-docktype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-docktype" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockType"}</code> | Backing field for `Type`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-type" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" Type { get; }"}</code> | The dock settings this positioning applies to, or null for the fallback. |
 
 ## Used in
 

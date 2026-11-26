@@ -1,6 +1,6 @@
 ---
 title: "DuplicateKeyComparer<TKey>"
-description: "class DuplicateKeyComparer<TKey> in Root.Township."
+description: "Internal comparer that never reports two keys as equal, so a sorted list can hold duplicate keys."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DuplicateKeyComparer&lt;TKey&gt;
 
 A **internal class** in `Root.Township`, `Alta.Profiling.Networking`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Internal comparer that never reports two keys as equal, so a sorted list can hold duplicate keys. `EntityStatistics` uses it to sort by float values.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `IComparer<TKey>`
@@ -23,9 +25,9 @@ A **internal class** in `Root.Township`, `Alta.Profiling.Networking`. Reach it t
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-compare" /><code>{"int Compare(TKey x, TKey y)"}</code> | Compares normally, but returns 1 instead of 0 for equal keys. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "AltaCoroutineState"
-description: "enum AltaCoroutineState in Alta.Coroutines."
+description: "State of an AltaCoroutine: not started, running, stopped, finished or error."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaCoroutineState
 
 An **enum** in `Alta.Coroutines`, no namespace.
+
+State of an `AltaCoroutine`: not started, running, stopped, finished or error.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 

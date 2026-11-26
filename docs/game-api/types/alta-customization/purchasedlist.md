@@ -28,15 +28,15 @@ Which cosmetic hashes the local player owns or can pick, built from default cosm
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-available" /><code>{"private static HashSet<uint> available"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-owned" /><code>{"private static HashSet<uint> owned"}</code> |
-| <Link id="m-owneditems" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{"> ownedItems"}</code> |
-| <Link id="m-personal" /><code>{"private static "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" personal"}</code> |
-| <Link id="m-playerid" /><code>{"private int playerId"}</code> |
-| <Link id="m-status" /><code>{"private "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-available" /><code>{"private static HashSet<uint> available"}</code> | Static set of item hashes the player can use, owned or not. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-owned" /><code>{"private static HashSet<uint> owned"}</code> | Static set of item hashes the player owns. Shared by every `PurchasedList`, not per player. |
+| <Link id="m-owneditems" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/assembly-api-models/ownedshopitem">{"OwnedShopItem"}</Link>{"> ownedItems"}</code> | Cached owned shop items from the API. |
+| <Link id="m-personal" /><code>{"private static "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" personal"}</code> | The local player's list, reused between calls. |
+| <Link id="m-playerid" /><code>{"private int playerId"}</code> | The player's user ID. |
+| <Link id="m-status" /><code>{"private "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status"}</code> | The player's subscriber status, used to grant developer items. |
 
 </details>
 
@@ -73,16 +73,16 @@ Which cosmetic hashes the local player owns or can pick, built from default cosm
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-additems" /><code>{"private static void AddItems("}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"[] items)"}</code> |
-| <Link id="m-clearavailablehashes" /><code>{"private static void ClearAvailableHashes()"}</code> |
-| <Link id="m-clearpurchasedhashes" /><code>{"private static void ClearPurchasedHashes()"}</code> |
-| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> |
-| <Link id="m-invalidatecache" /><code>{"private static void InvalidateCache()"}</code> |
-| <Link id="m-refreshowneditemscache" /><code>{"private static async Task RefreshOwnedItemsCache()"}</code> |
-| <Link id="m-updatedeveloperitems" /><code>{"private void UpdateDeveloperItems()"}</code> |
-| <Link id="m-updateowneditems" /><code>{"private static void UpdateOwnedItems()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-additems" /><code>{"private static void AddItems("}<Link to="/game-api/types/assembly-api-models/shopitemconfiguration">{"ShopItemConfiguration"}</Link>{"[] items)"}</code> | Adds store items to the current rotation, expanding sets into their items. |
+| <Link id="m-clearavailablehashes" /><code>{"private static void ClearAvailableHashes()"}</code> | Resets the available set to the items everyone owns. |
+| <Link id="m-clearpurchasedhashes" /><code>{"private static void ClearPurchasedHashes()"}</code> | Resets the owned set to the items everyone owns. |
+| <Link id="m-initialize" /><code>{"private static void Initialize()"}</code> | On first use, fills `OwnedByAll` from the default cosmetics. |
+| <Link id="m-invalidatecache" /><code>{"private static void InvalidateCache()"}</code> | Drops the cached owned items so the next refresh fetches them again. |
+| <Link id="m-refreshowneditemscache" /><code>{"private static async Task RefreshOwnedItemsCache()"}</code> | Fetches the account's owned shop items from the API. |
+| <Link id="m-updatedeveloperitems" /><code>{"private void UpdateDeveloperItems()"}</code> | For developers, adds the developer-only items to owned and available. |
+| <Link id="m-updateowneditems" /><code>{"private static void UpdateOwnedItems()"}</code> | Adds the cached owned shop items to owned and available. |
 
 </details>
 

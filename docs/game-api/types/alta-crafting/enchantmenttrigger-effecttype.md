@@ -1,6 +1,6 @@
 ---
 title: "EnchantmentTrigger.EffectType"
-description: "enum EnchantmentTrigger.EffectType in Root.Township."
+description: "Which of a trigger's event sets EnchantmentTrigger.CallEvents fires: charged, executed or cancelled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EnchantmentTrigger.EffectType
 
 An **enum** in `Root.Township`, `Alta.Enchantments`.
+
+Which of a trigger's event sets `EnchantmentTrigger.CallEvents` fires: charged, executed or cancelled.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`EnchantmentTrigger`](/game-api/types/alta-crafting/enchantmenttrigger)

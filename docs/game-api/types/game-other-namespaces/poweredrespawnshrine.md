@@ -29,15 +29,15 @@ A respawn shrine that runs on fuel. Players toggle it as their spawn point, and 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fueldisplay" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinefueldisplay">{"RespawnShrineFuelDisplay"}</Link>{" fuelDisplay"}</code> |
-| <Link id="m-powerstatechanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" powerStateChanged"}</code> |
-| <Link id="m-shrineidsavedata" /><code>{"private string shrineIdSaveData"}</code> |
-| <Link id="m-shrinesettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnshrinesettings">{"IRespawnShrineSettings"}</Link>{" shrineSettings"}</code> |
-| <Link id="m-staticaudiocontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinestaticaudiocontroller">{"RespawnShrineStaticAudioController"}</Link>{" staticAudioController"}</code> |
-| <Link id="m-subscribermarkcontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinesubscribermarkcontroller">{"RespawnShrineSubscriberMarkController"}</Link>{" subscriberMarkController"}</code> |
-| <Link id="m-syncshrineidtoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncShrineIdToClient"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fueldisplay" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinefueldisplay">{"RespawnShrineFuelDisplay"}</Link>{" fuelDisplay"}</code> | Shows the fuel item and amount above the shrine. |
+| <Link id="m-powerstatechanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" powerStateChanged"}</code> | Event raised with the normalised remaining power, for visuals. |
+| <Link id="m-shrineidsavedata" /><code>{"private string shrineIdSaveData"}</code> | The shrine's id as a string. Saved, loaded and synced to clients. |
+| <Link id="m-shrinesettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnshrinesettings">{"IRespawnShrineSettings"}</Link>{" shrineSettings"}</code> | Settings for this shrine (id, fuel capacity, fuel item), looked up from the id. |
+| <Link id="m-staticaudiocontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinestaticaudiocontroller">{"RespawnShrineStaticAudioController"}</Link>{" staticAudioController"}</code> | Plays the looping sound while the shrine has subscribers. |
+| <Link id="m-subscribermarkcontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/respawnshrinesubscribermarkcontroller">{"RespawnShrineSubscriberMarkController"}</Link>{" subscriberMarkController"}</code> | Draws the orbiting marks that show how many players use this shrine. |
+| <Link id="m-syncshrineidtoclient" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncShrineIdToClient"}</code> | Method sync (SyncA) sent to each connecting player with the shrine id. |
 
 </details>
 
@@ -50,9 +50,9 @@ A respawn shrine that runs on fuel. Players toggle it as their spawn point, and 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-isloaded" /><code>{"private bool IsLoaded { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isloaded" /><code>{"private bool IsLoaded { get; }"}</code> | True once the shrine settings have been looked up from the shrine id. |
 
 </details>
 
@@ -76,16 +76,16 @@ A respawn shrine that runs on fuel. Players toggle it as their spawn point, and 
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-initializeshrinesettings" /><code>{"private void InitializeShrineSettings()"}</code> |
-| <Link id="m-onplayercountchanged" /><code>{"private void OnPlayerCountChanged("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
-| <Link id="m-playemptiedshrinesfx" /><code>{"private void PlayEmptiedShrineSfx(bool hasConsumedAllFuel)"}</code> |
-| <Link id="m-refreshsubscribermarks" /><code>{"private async void RefreshSubscriberMarks()"}</code> |
-| <Link id="m-syncshrineidtoclient-2" /><code>{"private void SyncShrineIdToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updatepowerstate" /><code>{"private void UpdatePowerState(float shrinePower)"}</code> |
-| <Link id="m-updateshrine" /><code>{"private void UpdateShrine(int numberOfSubscribers, bool isSubscribedToShrine, float shrinePower, float currentFuel, bool hasConsumedAllFuel)"}</code> |
-| <Link id="m-waitforsavedata" /><code>{"private async Task WaitForSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializeshrinesettings" /><code>{"private void InitializeShrineSettings()"}</code> | Parses the saved shrine id and looks up its settings in the respawn system settings. |
+| <Link id="m-onplayercountchanged" /><code>{"private void OnPlayerCountChanged("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Player join, leave or local player handler that refreshes the subscriber marks. |
+| <Link id="m-playemptiedshrinesfx" /><code>{"private void PlayEmptiedShrineSfx(bool hasConsumedAllFuel)"}</code> | Plays the shrine deactivation sound when the shrine has used up all its fuel. |
+| <Link id="m-refreshsubscribermarks" /><code>{"private async void RefreshSubscriberMarks()"}</code> | Waits for the shrine id, then redraws the marks from the current subscriber count. |
+| <Link id="m-syncshrineidtoclient-2" /><code>{"private void SyncShrineIdToClient("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler: the server sends the shrine id string and clients look up the shrine settings from it. |
+| <Link id="m-updatepowerstate" /><code>{"private void UpdatePowerState(float shrinePower)"}</code> | Raises `powerStateChanged` with the shrine's normalised remaining power. |
+| <Link id="m-updateshrine" /><code>{"private void UpdateShrine(int numberOfSubscribers, bool isSubscribedToShrine, float shrinePower, float currentFuel, bool hasConsumedAllFuel)"}</code> | Updates the glyph colour, power state, empty sound, subscriber marks, fuel display and audio in one go. |
+| <Link id="m-waitforsavedata" /><code>{"private async Task WaitForSaveData()"}</code> | Waits in 100 ms steps until the shrine settings are loaded. |
 
 </details>
 

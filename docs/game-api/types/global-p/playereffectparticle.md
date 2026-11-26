@@ -1,6 +1,6 @@
 ---
 title: "PlayerEffectParticle"
-description: "class PlayerEffectParticle in Root.Township."
+description: "Effect on a player that fades and releases, with a radius you can set across all its particle systems."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEffectParticle
 
 A **class** in `Root.Township`, no namespace.
+
+Effect on a player that fades and releases, with a radius you can set across all its particle systems.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`EffectReleaseOnFade`](/game-api/types/global-e-h/effectreleaseonfade)
@@ -26,30 +28,30 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-particles" /><code>{"private ParticleSystem[] particles"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-particles" /><code>{"private ParticleSystem[] particles"}</code> | The particle systems whose shape radius is set. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-radius" /><code>{"float Radius { get; set; }"}</code> | Shape radius of the particles in world scale. Setting it updates every system. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-postbake" /><code>{"override void PostBake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-postbake" /><code>{"override void PostBake()"}</code> | Build step: removes null particle systems. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: fills `particles` from children if empty. |
 
 </details>
 

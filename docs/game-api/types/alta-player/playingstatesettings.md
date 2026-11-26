@@ -1,6 +1,6 @@
 ---
 title: "PlayingStateSettings"
-description: "class PlayingStateSettings in Root.Township."
+description: "Settings asset for the normal playing state."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayingStateSettings
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Settings asset for the normal playing state. It adds nothing beyond `PlayerStateSettings`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateSettings`](/game-api/types/alta-player/playerstatesettings)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-statetype" /><code>{"override Type StateType { get; }"}</code> | `PlayingState`. |
 
 ## Used in
 

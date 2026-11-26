@@ -1,6 +1,6 @@
 ---
 title: "ComponentGroup<T>.GroupModifiedHandler"
-description: "delegate ComponentGroup<T>.GroupModifiedHandler in Root.Township."
+description: "Handler for a ComponentGroup's ItemAdded and ItemRemoved events, given the group and the item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ComponentGroup&lt;T&gt;.GroupModifiedHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for a `ComponentGroup`'s `ItemAdded` and `ItemRemoved` events, given the group and the item.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`ComponentGroup<T>`](/game-api/types/global-c-d/componentgroup-t)

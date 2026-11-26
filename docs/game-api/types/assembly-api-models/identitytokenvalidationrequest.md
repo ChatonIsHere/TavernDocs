@@ -1,6 +1,6 @@
 ---
 title: "IdentityTokenValidationRequest"
-description: "class IdentityTokenValidationRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to check an identity token."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IdentityTokenValidationRequest
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Body of an Alta web API request to check an identity token.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -23,9 +25,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identitytoken" /><code>{"string IdentityToken { get; private set; }"}</code> | The identity token to check. |
 
 ## Used in
 

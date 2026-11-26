@@ -1,6 +1,6 @@
 ---
 title: "PosedObject"
-description: "class PosedObject in Root.Township."
+description: "Empty marker component."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PosedObject
 
 A **class** in `Root.Township`, no namespace.
+
+Empty marker component. Player controllers expose a list of them as `ExtraObjects`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`

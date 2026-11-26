@@ -1,6 +1,6 @@
 ---
 title: "DeepLinkAnalyticsService.DeepLinkEventCancelReason"
-description: "enum DeepLinkAnalyticsService.DeepLinkEventCancelReason in Root.Township."
+description: "Reasons a deep link join was cancelled: skipped for the tutorial, or the player was already on the server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeepLinkAnalyticsService.DeepLinkEventCancelReason
 
 An **enum** in `Root.Township`, no namespace.
+
+Reasons a deep link join was cancelled: skipped for the tutorial, or the player was already on the server. Nothing uses this one in this build; `DeeplinkEventCancelReason` is the one passed to `CreateCancelEvent`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`DeepLinkAnalyticsService`](/game-api/types/global-c-d/deeplinkanalyticsservice)

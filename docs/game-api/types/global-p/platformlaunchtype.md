@@ -1,6 +1,6 @@
 ---
 title: "PlatformLaunchType"
-description: "enum PlatformLaunchType in Root.Township."
+description: "How the game was launched on the platform: normal, invite, coordinated or deep link."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformLaunchType
 
 An **enum** in `Root.Township`, no namespace.
+
+How the game was launched on the platform: normal, invite, coordinated or deep link. Set by Oculus launch details.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 

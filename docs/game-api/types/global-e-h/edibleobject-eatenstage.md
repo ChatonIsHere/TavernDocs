@@ -1,6 +1,6 @@
 ---
 title: "EdibleObject.EatenStage"
-description: "class EdibleObject.EatenStage in Root.Township."
+description: "Bite settings for an EdibleObject: how many bites, how long each takes and the effect each bite plays."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EdibleObject.EatenStage
 
 A **class** in `Root.Township`, no namespace.
+
+Bite settings for an `EdibleObject`: how many bites, how long each takes and the effect each bite plays.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`EdibleObject`](/game-api/types/global-e-h/edibleobject)
@@ -26,21 +28,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-biteduration" /><code>{"private float biteDuration"}</code> |
-| <Link id="m-biteeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" biteEffect"}</code> |
-| <Link id="m-numberofbites" /><code>{"private int numberOfBites"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-biteduration" /><code>{"private float biteDuration"}</code> | Backing field for `BiteDuration`. |
+| <Link id="m-biteeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" biteEffect"}</code> | Backing field for `BiteEffect`. |
+| <Link id="m-numberofbites" /><code>{"private int numberOfBites"}</code> | Backing field for `NumberOfBites`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-biteduration-2" /><code>{"float BiteDuration { get; }"}</code> |
-| <Link id="m-biteeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BiteEffect { get; }"}</code> |
-| <Link id="m-numberofbites-2" /><code>{"int NumberOfBites { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-biteduration-2" /><code>{"float BiteDuration { get; }"}</code> | Seconds between bites. |
+| <Link id="m-biteeffect-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" BiteEffect { get; }"}</code> | Pooled effect spawned at the mouth on each bite (not on headless servers). |
+| <Link id="m-numberofbites-2" /><code>{"int NumberOfBites { get; }"}</code> | Bites needed to finish eating. |
 
 ## Used in
 

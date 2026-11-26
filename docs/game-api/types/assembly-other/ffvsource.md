@@ -1,6 +1,6 @@
 ---
 title: "FfvSource"
-description: "Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking)."
+description: "Flags for why a platform effect called FFV should be on: movement, hurt, low performance or character baking (probably fixed foveated rendering)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Alta.Platform`, no namespace.
 
-Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking). Passed to `SetFfvSource` on the platform device.
+Flags for why a platform effect called FFV should be on: movement, hurt, low performance or character baking (probably fixed foveated rendering). Passed to `IPlatformDevice.SetFfvSource`; the server's fake device ignores it.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Attributes** `Flags`

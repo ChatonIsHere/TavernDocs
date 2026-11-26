@@ -1,6 +1,6 @@
 ---
 title: "PickupDockHoverHandler"
-description: "delegate PickupDockHoverHandler in Root.Township."
+description: "Handler for PickupDock.HoverCountChanged, with the dock and its previous hover count."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockHoverHandler
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Handler for `PickupDock.HoverCountChanged`, with the dock and its previous hover count.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

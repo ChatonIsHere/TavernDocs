@@ -1,6 +1,6 @@
 ---
 title: "InfoBoardSaveData"
-description: "class InfoBoardSaveData in Root.Township."
+description: "Save data for an InfoBoard."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InfoBoardSaveData
 
 A **class** in `Root.Township`, `Alta.Map`.
+
+Save data for an `InfoBoard`.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`NewSaveData<InfoBoard, InfoBoardSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, `Alta.Map`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"string identifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"string identifier"}</code> | The board's saved identifier. |
 
 ## Used in
 

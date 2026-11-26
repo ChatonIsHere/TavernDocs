@@ -36,53 +36,53 @@ Global settings for held items: per-grip-type settings, damage popups, crafting 
 <details>
 <summary>45 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activelinecolor" /><code>{"private Color activeLineColor"}</code> |
-| <Link id="m-androidactivelinecolor" /><code>{"private Color androidActiveLineColor"}</code> |
-| <Link id="m-androidcraftinglineiterations" /><code>{"private int androidCraftingLineIterations"}</code> |
-| <Link id="m-androiddefaultbreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDefaultBreakEffect"}</code> |
-| <Link id="m-androidnormallinecolor" /><code>{"private Color androidNormalLineColor"}</code> |
-| <Link id="m-androidpickupdockmaterial" /><code>{"private Material androidPickupDockMaterial"}</code> |
-| <Link id="m-attachedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" attachedEffect"}</code> |
-| <Link id="m-blockchannel" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] blockChannel"}</code> |
-| <Link id="m-craftinglineiterations" /><code>{"private int craftingLineIterations"}</code> |
-| <Link id="m-craftinglinematerial" /><code>{"private Material craftingLineMaterial"}</code> |
-| <Link id="m-craftinglinevelocity" /><code>{"private float craftingLineVelocity"}</code> |
-| <Link id="m-crippledamageprotectiondefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleDamageProtectionDefinition"}</code> |
-| <Link id="m-cripplehealthdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleHealthDefinition"}</code> |
-| <Link id="m-damagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" damageDefinition"}</code> |
-| <Link id="m-damagepopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" damagePopup"}</code> |
-| <Link id="m-damageprotectiondefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" damageProtectionDefinition"}</code> |
-| <Link id="m-debugbubbleinspectordefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" debugBubbleInspectorDefinition"}</code> |
-| <Link id="m-defaultbreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" defaultBreakEffect"}</code> |
-| <Link id="m-defaultbreaksound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultBreakSound"}</code> |
-| <Link id="m-dissolvingpagedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissolvingPageDefinition"}</code> |
-| <Link id="m-hitcooldown" /><code>{"private float hitCooldown"}</code> |
-| <Link id="m-impactorarraysize" /><code>{"private int impactorArraySize"}</code> |
-| <Link id="m-largertextpopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" largerTextPopup"}</code> |
-| <Link id="m-linespooldefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" linesPoolDefinition"}</code> |
-| <Link id="m-maxdistancetowaitinteractconfirmation" /><code>{"private float maxDistanceToWaitInteractConfirmation"}</code> |
-| <Link id="m-maxrecorderpoolsize" /><code>{"private int maxRecorderPoolSize"}</code> |
-| <Link id="m-minimumdistancetoteleportsquared" /><code>{"private float minimumDistanceToTeleportSquared"}</code> |
-| <Link id="m-normallinecolor" /><code>{"private Color normalLineColor"}</code> |
-| <Link id="m-perchannelhardnessinnefectivehiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pickuptypesettings-channelinneficienthardnesshiteffect">{"PickupTypeSettings.ChannelInneficientHardnessHitEffect"}</Link>{"[] perChannelHardnessInnefectiveHitEffect"}</code> |
-| <Link id="m-pickupmovingghost" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pickupMovingGhost"}</code> |
-| <Link id="m-pickupsettings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{", "}<Link to="/game-api/types/global-p/pickuptypesetting">{"PickupTypeSetting"}</Link>{"> pickupSettings"}</code> |
-| <Link id="m-pickuptypesettings" /><code>{"private "}<Link to="/game-api/types/global-p/pickuptypesetting">{"PickupTypeSetting"}</Link>{"[] pickupTypeSettings"}</code> |
-| <Link id="m-recorders" /><code>{"private static Stack<"}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{"> recorders"}</code> |
-| <Link id="m-scaleupanimationduration" /><code>{"private float scaleUpAnimationDuration"}</code> |
-| <Link id="m-shrinkingparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrinkingParticles"}</code> |
-| <Link id="m-shrunkendefaultvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenDefaultVisual"}</code> |
-| <Link id="m-simpletextpopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" simpleTextPopup"}</code> |
-| <Link id="m-sizeofshrunkenpickups" /><code>{"private float sizeOfShrunkenPickups"}</code> |
-| <Link id="m-smoothlerp" /><code>{"private float smoothLerp"}</code> |
-| <Link id="m-smoothlocomotionfollowdiscard" /><code>{"private float smoothLocomotionFollowDiscard"}</code> |
-| <Link id="m-temperaturecolor" /><code>{"private Gradient temperatureColor"}</code> |
-| <Link id="m-temperaturetocolorbias" /><code>{"private AnimationCurve temperatureToColorBias"}</code> |
-| <Link id="m-visualdoubledefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" visualDoubleDefinition"}</code> |
-| <Link id="m-weightmaxperhand" /><code>{"private float weightMaxPerHand"}</code> |
-| <Link id="m-weightpenalty" /><code>{"private float weightPenalty"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activelinecolor" /><code>{"private Color activeLineColor"}</code> | Backing field for `ActiveLineColor`. |
+| <Link id="m-androidactivelinecolor" /><code>{"private Color androidActiveLineColor"}</code> | Android version of the active crafting line colour. Nothing reads it in the server build. |
+| <Link id="m-androidcraftinglineiterations" /><code>{"private int androidCraftingLineIterations"}</code> | Android version of `craftingLineIterations`. Nothing reads it in the server build. |
+| <Link id="m-androiddefaultbreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" androidDefaultBreakEffect"}</code> | Android version of the default break effect. Nothing reads it in the server build. |
+| <Link id="m-androidnormallinecolor" /><code>{"private Color androidNormalLineColor"}</code> | Android version of the normal crafting line colour. Nothing reads it in the server build. |
+| <Link id="m-androidpickupdockmaterial" /><code>{"private Material androidPickupDockMaterial"}</code> | Android dock material. Nothing reads it in the server build. |
+| <Link id="m-attachedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" attachedEffect"}</code> | Backing field for `AttachedEffect`. |
+| <Link id="m-blockchannel" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] blockChannel"}</code> | Backing field for `BlockChannel`. |
+| <Link id="m-craftinglineiterations" /><code>{"private int craftingLineIterations"}</code> | Backing field for `CraftingLineIterations`. |
+| <Link id="m-craftinglinematerial" /><code>{"private Material craftingLineMaterial"}</code> | Backing field for `CraftingLineMaterial`. |
+| <Link id="m-craftinglinevelocity" /><code>{"private float craftingLineVelocity"}</code> | Backing field for `CraftingLineVelocity`. |
+| <Link id="m-crippledamageprotectiondefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleDamageProtectionDefinition"}</code> | Backing field for `CrippleDamageProtectionDefinition`. |
+| <Link id="m-cripplehealthdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" crippleHealthDefinition"}</code> | Backing field for `CrippleHealthDefinition`. |
+| <Link id="m-damagedefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" damageDefinition"}</code> | Backing field for `DamageDefinition`. |
+| <Link id="m-damagepopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" damagePopup"}</code> | Backing field for `DamagePopup`. |
+| <Link id="m-damageprotectiondefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" damageProtectionDefinition"}</code> | Backing field for `DamageProtectionDefinition`. |
+| <Link id="m-debugbubbleinspectordefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" debugBubbleInspectorDefinition"}</code> | Backing field for `DebugBubbleInspectorDefinition`. |
+| <Link id="m-defaultbreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" defaultBreakEffect"}</code> | Backing field for `DefaultBreakEffect`. |
+| <Link id="m-defaultbreaksound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultBreakSound"}</code> | Backing field for `DefaultBreakSound`. |
+| <Link id="m-dissolvingpagedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissolvingPageDefinition"}</code> | Backing field for `DissolvingPageDefinition`. |
+| <Link id="m-hitcooldown" /><code>{"private float hitCooldown"}</code> | Backing field for `HitCooldown`. |
+| <Link id="m-impactorarraysize" /><code>{"private int impactorArraySize"}</code> | Backing field for `ImpactorArraySize`. |
+| <Link id="m-largertextpopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" largerTextPopup"}</code> | Backing field for `LargerTextPopup`. |
+| <Link id="m-linespooldefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" linesPoolDefinition"}</code> | Backing field for `LinesPoolDefinition`. |
+| <Link id="m-maxdistancetowaitinteractconfirmation" /><code>{"private float maxDistanceToWaitInteractConfirmation"}</code> | Backing field for `MaxDistanceToWaitInteractConfirmation`. |
+| <Link id="m-maxrecorderpoolsize" /><code>{"private int maxRecorderPoolSize"}</code> | Most `PositionRecorder` objects kept in the pool; extra ones released are dropped. |
+| <Link id="m-minimumdistancetoteleportsquared" /><code>{"private float minimumDistanceToTeleportSquared"}</code> | Backing field for `MinimumDistanceToTeleportSquared`, stored squared. |
+| <Link id="m-normallinecolor" /><code>{"private Color normalLineColor"}</code> | Backing field for `NormalLineColor`. |
+| <Link id="m-perchannelhardnessinnefectivehiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pickuptypesettings-channelinneficienthardnesshiteffect">{"PickupTypeSettings.ChannelInneficientHardnessHitEffect"}</Link>{"[] perChannelHardnessInnefectiveHitEffect"}</code> | Impact effects for hits too soft to work, per impact channel. The first entry is the fallback. |
+| <Link id="m-pickupmovingghost" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pickupMovingGhost"}</code> | Backing field for `PickupMovingGhost`. |
+| <Link id="m-pickupsettings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{", "}<Link to="/game-api/types/global-p/pickuptypesetting">{"PickupTypeSetting"}</Link>{"> pickupSettings"}</code> | Lookup from joint type to its `PickupTypeSetting`, built on first use. |
+| <Link id="m-pickuptypesettings" /><code>{"private "}<Link to="/game-api/types/global-p/pickuptypesetting">{"PickupTypeSetting"}</Link>{"[] pickupTypeSettings"}</code> | The per joint type pickup settings, as set in the asset. |
+| <Link id="m-recorders" /><code>{"private static Stack<"}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{"> recorders"}</code> | Static pool of `PositionRecorder` objects used by `GetPositionRecorder` and `ReleasePositionRecorder`. |
+| <Link id="m-scaleupanimationduration" /><code>{"private float scaleUpAnimationDuration"}</code> | Backing field for `ScaleUpAnimationDuration`. |
+| <Link id="m-shrinkingparticles" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrinkingParticles"}</code> | Backing field for `ShrinkingParticles`. |
+| <Link id="m-shrunkendefaultvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenDefaultVisual"}</code> | Backing field for `ShrunkenDefaultVisual`. |
+| <Link id="m-simpletextpopup" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" simpleTextPopup"}</code> | Backing field for `SimpleTextPopup`. |
+| <Link id="m-sizeofshrunkenpickups" /><code>{"private float sizeOfShrunkenPickups"}</code> | Backing field for `SizeOfShrunkenPickups`. |
+| <Link id="m-smoothlerp" /><code>{"private float smoothLerp"}</code> | Backing field for `SmoothLerp`. |
+| <Link id="m-smoothlocomotionfollowdiscard" /><code>{"private float smoothLocomotionFollowDiscard"}</code> | Backing field for `SmoothLocomotionFollowDiscard`. |
+| <Link id="m-temperaturecolor" /><code>{"private Gradient temperatureColor"}</code> | Gradient used by `GetTemperatureColor`. |
+| <Link id="m-temperaturetocolorbias" /><code>{"private AnimationCurve temperatureToColorBias"}</code> | Curve that maps temperature to a point on `temperatureColor`. |
+| <Link id="m-visualdoubledefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" visualDoubleDefinition"}</code> | Backing field for `VisualDoubleDefinition`. |
+| <Link id="m-weightmaxperhand" /><code>{"private float weightMaxPerHand"}</code> | Backing field for `WeightMaxPerHand`. |
+| <Link id="m-weightpenalty" /><code>{"private float weightPenalty"}</code> | Backing field for `WeightPenalty`. |
 
 </details>
 
@@ -140,9 +140,9 @@ Global settings for held items: per-grip-type settings, damage popups, crafting 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-filldictionary" /><code>{"private void FillDictionary()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filldictionary" /><code>{"private void FillDictionary()"}</code> | Builds the joint type lookup from `pickupTypeSettings`, logging an error for duplicate types. |
 
 </details>
 

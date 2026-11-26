@@ -1,6 +1,6 @@
 ---
 title: "FixedStatChangeHook.OperationTime"
-description: "enum FixedStatChangeHook.OperationTime in Root.Township."
+description: "Flags for when a FixedStatChangeHook acts: on action start, on end, or reverting on end."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FixedStatChangeHook.OperationTime
 
 An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Flags for when a `FixedStatChangeHook` acts: on action start, on end, or reverting on end.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`FixedStatChangeHook`](/game-api/types/alta-intelligence/fixedstatchangehook)

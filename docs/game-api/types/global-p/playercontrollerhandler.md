@@ -1,6 +1,6 @@
 ---
 title: "PlayerControllerHandler"
-description: "delegate PlayerControllerHandler in Root.Township."
+description: "Handler for Player.PlayerControllerSet: gets the player and its new PlayerController (may be null)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerControllerHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `Player.PlayerControllerSet`: gets the player and its new `PlayerController` (may be null).
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MulticastDelegate`

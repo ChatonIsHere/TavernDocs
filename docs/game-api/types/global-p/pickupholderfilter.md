@@ -1,6 +1,6 @@
 ---
 title: "PickupHolderFilter"
-description: "delegate PickupHolderFilter in Root.Township."
+description: "Filter callback that can set isValid to false to reject a pickup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupHolderFilter
 
 A **delegate** in `Root.Township`, no namespace.
+
+Filter callback that can set `isValid` to false to reject a pickup.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MulticastDelegate`

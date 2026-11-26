@@ -1,6 +1,6 @@
 ---
 title: "EffectHandler.EffectTypes"
-description: "enum EffectHandler.EffectTypes in Root.Township."
+description: "Flags for the effects an EffectHandler can be immune to: Poison, Teleport and Reveal."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EffectHandler.EffectTypes
 
 An **private enum** in `Root.Township`, `Alta.Alchemy`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Flags for the effects an `EffectHandler` can be immune to: `Poison`, `Teleport` and `Reveal`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`EffectHandler`](/game-api/types/alta-stats-effects/effecthandler)

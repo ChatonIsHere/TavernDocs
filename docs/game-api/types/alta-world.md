@@ -27,9 +27,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ChunkEnvironment`](/game-api/types/alta-world/chunkenvironment) | class |  | 11 | Per-chunk environment settings on a `LocationChunk`: ambient temperature override, atmosphere override, terrain collision and the biome used for spawning. |
 | [`ChunkFileHelper`](/game-api/types/alta-world/chunkfilehelper) | static class |  | 5 |  |
 | [`ChunkMatrix`](/game-api/types/alta-world/chunkmatrix) | class |  | 4 | Wraps a transform matrix and applies it in place to positions, rotations and directions. |
-| [`ChunkPlayerManager`](/game-api/types/alta-world/chunkplayermanager) | class |  | 11 |  |
+| [`ChunkPlayerManager`](/game-api/types/alta-world/chunkplayermanager) | class |  | 11 | Server: the players that have a chunk loaded. Each `Chunk` has one as `Players`, and the chunk loads or unloads when the first player is added or the last removed. |
 | [`ChunkPositions`](/game-api/types/alta-world/chunkpositions) | class |  | 3 | A location chunk's set of weighted surfaces for picking random spawn points. Held by `LocationChunk.Positions`; `ChunkPositionSurface` components add themselves to it. |
-| [`ChunkPositionSurface`](/game-api/types/alta-world/chunkpositionsurface) | class | `NetworkEntityBehaviour` | 3 |  |
+| [`ChunkPositionSurface`](/game-api/types/alta-world/chunkpositionsurface) | class | `NetworkEntityBehaviour` | 3 | Server: marks a networked object as a surface that random positions in its location chunk can be picked from. Needs an `IPointNormalEvaluator` on the same object. |
 | [`ChunkPrefabPointer`](/game-api/types/alta-world/chunkprefabpointer) | class | `ScriptableObject` | 11 | Points at static chunk content loaded through Addressables. The static methods reference count which chunks use each piece and spawn or destroy it a little each frame, within a time budget. |
 | [`ChunkPrefabPointer.PointerInstance`](/game-api/types/alta-world/chunkprefabpointer-pointerinstance) | class |  | 10 | One loaded static scenery pointer (an Addressables prefab) shared by every chunk that uses it. `ChunkPrefabPointer` creates these and instantiates or destroys them in its load queue. |
 | [`ChunkReference`](/game-api/types/alta-world/chunkreference) | class |  | 5 | A serializable reference to a chunk by its identifier string, resolved through `Chunk.ChunksByIdentifier` when read. |
@@ -39,7 +39,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ClusterStreamer`](/game-api/types/alta-world/clusterstreamer) | class | `MonoBehaviour` | 0 |  |
 | [`ContentState`](/game-api/types/alta-world/contentstate) | enum |  | 2 | Whether a chunk's content is loaded or unloaded. Used for `ChunkContentManager.DesiredState` and `CurrentProcess`. |
 | [`CylindricalBoundsSurface`](/game-api/types/alta-world/cylindricalboundssurface) | class | `PositionSurfaceDefinition`, `ISavable<CylindricalBoundsSurfaceSaveData>`, `ISavableSave<CylindricalBoundsSurfaceSaveData>`, +1 more | 3 |  |
-| [`CylindricalBoundsSurfaceSaveData`](/game-api/types/alta-world/cylindricalboundssurfacesavedata) | class | `NewSaveData<CylindricalBoundsSurface, CylindricalBoundsSurfaceSaveData>` | 5 |  |
+| [`CylindricalBoundsSurfaceSaveData`](/game-api/types/alta-world/cylindricalboundssurfacesavedata) | class | `NewSaveData<CylindricalBoundsSurface, CylindricalBoundsSurfaceSaveData>` | 5 | Saved settings for a `CylindricalBoundsSurface`: the arc, height and radii it raycasts across to find spawn positions. |
 | [`DirectionalBoundsSurface`](/game-api/types/alta-world/directionalboundssurface) | class | `PositionSurfaceDefinition`, `ISavable<DirectionalBoundsSurfaceSave>`, `ISavableSave<DirectionalBoundsSurfaceSave>`, +1 more | 2 |  |
 | [`DirectionalBoundsSurfaceSave`](/game-api/types/alta-world/directionalboundssurfacesave) | class | `NewSaveData<DirectionalBoundsSurface, DirectionalBoundsSurfaceSave>` | 1 |  |
 | [`DynamicChunkContentManager`](/game-api/types/alta-world/dynamicchunkcontentmanager) | class | `ChunkContentManager` | 9 | [Chunk loading and saving](../world/chunk-loading-and-saving.md): The chunk's save file, procedural content, then its entities. |
@@ -47,7 +47,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FastChunkLookup`](/game-api/types/alta-world/fastchunklookup) | class |  | 15 | Fast lookup from positions or bounds to location chunks. Overworld chunks sit in a grid indexed by position; other chunks (caves and so on) are checked one by one. `LocationChunkHelper` holds the one the game uses. |
 | [`ICaveLayer`](/game-api/types/alta-world/icavelayer) | interface | `IPortalApplier` | 13 | One layer of a procedural cave, managed by a `CaveLayerManager` and linked to the layers around it by portals. |
 | [`IClusterSerialized`](/game-api/types/alta-world/iclusterserialized) | interface |  | 1 |  |
-| [`IPortalApplier`](/game-api/types/alta-world/iportalapplier) | interface |  | 2 |  |
+| [`IPortalApplier`](/game-api/types/alta-world/iportalapplier) | interface |  | 2 | Something that owns static renderers that portal culling can show or hide, such as `CaveLayerStreamer`. A `LocationChunk` holds one in `PortalApplier`. |
 | [`IProceduralGenerationStreamer`](/game-api/types/alta-world/iproceduralgenerationstreamer) | interface |  | 5 | A chunk component that streams generated content in and out (the cave layers use it). The chunk content managers call it when the chunk loads or unloads. |
 | [`ISavableFull`](/game-api/types/alta-world/isavablefull) | interface |  | 1 | A saved component that needs a setup step after its whole entity tree has loaded, such as a smelter or chiselling deck. |
 | [`ISavableFull<T>`](/game-api/types/alta-world/isavablefull-t) | interface | `ISavable<T>`, `ISavableSave<T>`, `ISavableSaveBase`, +1 more | 0 | Shorthand for a component that both saves and loads data of type `T`, plus a `LoadSetup` step from the non-generic `ISavableFull`. |
@@ -60,13 +60,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ModifiableLandmarkSelector`](/game-api/types/alta-world/modifiablelandmarkselector) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 4 |  |
 | [`NormalPrefabPointer`](/game-api/types/alta-world/normalprefabpointer) | class | `ChunkPrefabPointer` | 0 |  |
 | [`OcclusionChunkEffectData`](/game-api/types/alta-world/occlusionchunkeffectdata) | class | `ChunkEffect` | 1 |  |
-| [`OcclusionMode`](/game-api/types/alta-world/occlusionmode) | enum |  | 3 |  |
+| [`OcclusionMode`](/game-api/types/alta-world/occlusionmode) | enum |  | 3 | How an `OcclusionChunkEffectData` sets culling while the local player is in its chunk: normal occlusion culling, portal-based culling, or no culling at all. |
 | [`OverworldChunk`](/game-api/types/alta-world/overworldchunk) | class | `LocationChunk` | 5 | [Chunks](../world/chunks.md): A `LocationChunk` in the square grid that covers the outdoor map. Named `"Chunk <x>-<z>"`. |
 | [`PlayerEntitySync`](/game-api/types/alta-world/playerentitysync) | class |  | 1 |  |
-| [`PlayerEntitySyncServer`](/game-api/types/alta-world/playerentitysyncserver) | class | `PlayerEntitySync` | 5 |  |
+| [`PlayerEntitySyncServer`](/game-api/types/alta-world/playerentitysyncserver) | class | `PlayerEntitySync` | 5 | Server: the server half of a chunk's entity sync. It spawns and despawns the chunk's entities for players as they load and unload the chunk, spreading the work out over time with `ChunkSync`. |
 | [`PointerReference`](/game-api/types/alta-world/pointerreference) | class | `MonoBehaviour` | 1 |  |
 | [`PositionSurfaceDefinition`](/game-api/types/alta-world/positionsurfacedefinition) | abstract class | `MonoBehaviour`, `ISpawnPositions`, `IPointNormalEvaluator` | 4 | Base for components that pick random points (with normals) on a shape, used as spawn positions and population spawn points. Subclasses define the shape. |
-| [`PositionSurfaceDefinition.RotationMode`](/game-api/types/alta-world/positionsurfacedefinition-rotationmode) | enum |  | 3 |  |
+| [`PositionSurfaceDefinition.RotationMode`](/game-api/types/alta-world/positionsurfacedefinition-rotationmode) | enum |  | 3 | How a `PositionSurfaceDefinition` rotates a spawned object to the surface normal: Y axis out with a random spin, Z axis out with a random spin, or Z out kept flat. |
 | [`PrefabLoadManager`](/game-api/types/alta-world/prefabloadmanager) | static class |  | 5 |  |
 | [`ResourceRequestExtensions`](/game-api/types/alta-world/resourcerequestextensions) | static class |  | 1 |  |
 | [`SavableSavedDynamicObject`](/game-api/types/alta-world/savablesaveddynamicobject) | class |  | 7 | A saved entity in a form that can be stored inside other save data, with the chunk versioning it was saved under. Used by `RespawnOnDestroy` and `SentGift`. |
@@ -89,9 +89,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`AmbienceArea`](/game-api/types/alta-world/ambiencearea) | class | `MonoBehaviour` | 0 |  |
 | [`AmbienceSpacePoint`](/game-api/types/alta-world/ambiencespacepoint) | class | `SpacePoint` | 2 | Client: a point in a `SpaceDefinedAtmosphere` area that blends between two atmosphere sets as the player moves through it. |
-| [`AtmosphereColor`](/game-api/types/alta-world/atmospherecolor) | class | `LerpingValue<Color>` | 1 |  |
+| [`AtmosphereColor`](/game-api/types/alta-world/atmospherecolor) | class | `LerpingValue<Color>` | 1 | A colour value in the atmosphere system that blends smoothly to a new target and passes each step to a setter callback. |
 | [`AtmosphereManager`](/game-api/types/alta-world/atmospheremanager) | class | `NetworkEntityBehaviour` | 23 | [Time and environment](../world/time-and-environment.md): Scene behaviour, `static AtmosphereManager instance`. Blends `AtmospherePlugin`s into the ambient colour, fog colour and density and ambience audio. |
-| [`AtmosphereManager.ResolveAtmosphere`](/game-api/types/alta-world/atmospheremanager-resolveatmosphere) | delegate |  | 0 |  |
+| [`AtmosphereManager.ResolveAtmosphere`](/game-api/types/alta-world/atmospheremanager-resolveatmosphere) | delegate |  | 0 | Handler for `AtmosphereManager.Resolve`. Gets the chunk's atmosphere set by reference and can replace it before it is applied. |
 | [`AtmospherePlugin`](/game-api/types/alta-world/atmosphereplugin) | abstract class | `MonoBehaviour` | 18 | Base for an atmosphere source (such as a zone or weather) that supplies ambient light, fog and ambience audio. The `AtmosphereManager` initializes plugins and probably uses the enabled one with the highest `Priority`. |
 | [`AtmosphereSet`](/game-api/types/alta-world/atmosphereset) | class | `ScriptableObject` | 6 | [Time and environment](../world/time-and-environment.md): A set of colours, fog and audio. A chunk's `Environment.OverrideSet` can force one. |
 | [`AtmosphereSet.Create`](/game-api/types/alta-world/atmosphereset-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<AtmosphereSet>` | 0 |  |
@@ -120,8 +120,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClumpSpawner`](/game-api/types/alta-world/clumpspawner) | class | `MonoBehaviour` | 0 |  |
-| [`ClumpSpawner.ClumpLOD`](/game-api/types/alta-world/clumpspawner-clumplod) | class |  | 4 |  |
-| [`GrassBlade`](/game-api/types/alta-world/grassblade) | class | `MonoBehaviour` | 4 |  |
+| [`ClumpSpawner.ClumpLOD`](/game-api/types/alta-world/clumpspawner-clumplod) | class |  | 4 | One LOD step of a `ClumpSpawner`: the prefab spawned at that level and the renderers made from it. |
+| [`GrassBlade`](/game-api/types/alta-world/grassblade) | class | `MonoBehaviour` | 4 | A single grass blade object, with a mesh built from a `GrassBladeMesh` asset. |
 | [`GrassBladeLODMarker`](/game-api/types/alta-world/grassbladelodmarker) | class | `MonoBehaviour` | 1 |  |
 | [`GrassBladeMesh`](/game-api/types/alta-world/grassblademesh) | class | `ScriptableObject` | 5 | A ScriptableObject holding one grass blade's mesh data and base colour, used by the grass system. |
 | [`GrassBladeMesh.Create`](/game-api/types/alta-world/grassblademesh-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Grass.ScriptableObject<GrassBladeMesh>` | 0 |  |
@@ -140,7 +140,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AndroidLightsController`](/game-api/types/alta-world/androidlightscontroller) | class | `BaseLightsController` | 0 |  |
 | [`BaseLightsController`](/game-api/types/alta-world/baselightscontroller) | abstract class |  | 3 | Base for the platform light controllers (PC and Android) that manage the active `PlatformLight`s and tick while any are active. |
 | [`ISortedLight`](/game-api/types/alta-world/isortedlight) | internal interface |  | 3 |  |
-| [`LightSorter<T>`](/game-api/types/alta-world/lightsorter-t) | internal class |  | 5 |  |
+| [`LightSorter<T>`](/game-api/types/alta-world/lightsorter-t) | internal class |  | 5 | Fixed-size list that keeps the nearest lights sorted by distance, capped at `PlatformLight.MaxLightCount`. Internal; used by the PC and Android light controllers. |
 | [`PCLightsController`](/game-api/types/alta-world/pclightscontroller) | class | `BaseLightsController` | 2 |  |
 | [`PlatformLight`](/game-api/types/alta-world/platformlight) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 13 | A light that registers with a platform lights controller. On PC it wraps a Unity `Light`; on Android it uses a fake light mesh instead. Enabling and disabling it adds and removes it from the controller. |
 | [`PlatformLightsAndroidUtilities`](/game-api/types/alta-world/platformlightsandroidutilities) | static class |  | 3 |  |
@@ -149,11 +149,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ClientLandmarkManager`](/game-api/types/alta-world/clientlandmarkmanager) | class |  | 4 |  |
-| [`ClientLandmarkManager.MarkerEvent`](/game-api/types/alta-world/clientlandmarkmanager-markerevent) | delegate |  | 0 |  |
+| [`ClientLandmarkManager`](/game-api/types/alta-world/clientlandmarkmanager) | class |  | 4 | Client copy of the map markers the server has told this player about. Reach it through `LandmarkManager.Instance.ClientLandmarkManager`. |
+| [`ClientLandmarkManager.MarkerEvent`](/game-api/types/alta-world/clientlandmarkmanager-markerevent) | delegate |  | 0 | Handler for a map marker change. |
 | [`DiscoveryState`](/game-api/types/alta-world/discoverystate) | enum |  | 3 | How much a player knows about a map landmark: nothing, aware of it, or discovered. Landmarks can start in a default state. |
 | [`InfoBoard`](/game-api/types/alta-world/infoboard) | class | `NetworkEntityBehaviour`, `ISavable<InfoBoardSaveData>`, `ISavableSave<InfoBoardSaveData>`, +1 more | 4 |  |
-| [`InfoBoardSaveData`](/game-api/types/alta-world/infoboardsavedata) | class | `NewSaveData<InfoBoard, InfoBoardSaveData>` | 1 |  |
+| [`InfoBoardSaveData`](/game-api/types/alta-world/infoboardsavedata) | class | `NewSaveData<InfoBoard, InfoBoardSaveData>` | 1 | Save data for an `InfoBoard`. |
 | [`Landmark`](/game-api/types/alta-world/landmark) | class | `NetworkEntityBehaviour`, `ISavable<LandmarkSaveData>`, `ISavableSave<LandmarkSaveData>`, +1 more | 14 | A point of interest that can appear on a map once a player is aware of it or has discovered it. Server side; registers itself with `LandmarkManager` after spawning and is saved with its icons and state. |
 | [`LandmarkDiscoverZone`](/game-api/types/alta-world/landmarkdiscoverzone) | class | `NetworkEntityBehaviour`, `ISavable<LandmarkDiscoverZoneSaveData>`, `ISavableSave<LandmarkDiscoverZoneSaveData>`, +1 more | 1 |  |
 | [`LandmarkDiscoverZoneSaveData`](/game-api/types/alta-world/landmarkdiscoverzonesavedata) | class | `NewSaveData<LandmarkDiscoverZone, LandmarkDiscoverZoneSaveData>` | 1 |  |
@@ -161,13 +161,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LandmarkManager`](/game-api/types/alta-world/landmarkmanager) | class | `SingletonBehaviour<LandmarkManager>`, `INetworkEntityBehaviour`, `ISavable<LandmarkManagerSaveData>`, +2 more | 9 | Singleton network entity behind map landmarks: which markers exist and which each player is aware of or has discovered. The server work is done by its `ServerLandmarkManager`. |
 | [`LandmarkManagerSaveData`](/game-api/types/alta-world/landmarkmanagersavedata) | class | `NewSaveData<LandmarkManager, LandmarkManagerSaveData>` | 1 | Save data for the `LandmarkManager` (save structure version 1). Holds the map markers. |
 | [`LandmarkSaveData`](/game-api/types/alta-world/landmarksavedata) | class | `NewSaveData<Landmark, LandmarkSaveData>` | 7 | Save data for a map `Landmark`: which map and index it is, its icons, starting discovery state and the achievement for finding it. |
-| [`LandmarkSaveFormat`](/game-api/types/alta-world/landmarksaveformat) | class | `IAltaFileFormat` | 6 |  |
+| [`LandmarkSaveFormat`](/game-api/types/alta-world/landmarksaveformat) | class | `IAltaFileFormat` | 6 | Per-player save file of which landmarks the player knows: true for discovered, false for only aware. |
 | [`Map`](/game-api/types/alta-world/map) | class | `HashedGeneralValue<Map>` | 7 | [Map and landmarks](../world/map-and-landmarks.md): The map is a set of pieces players uncover as they explore, plus landmarks (icons) they become aware of and then discover. |
 | [`MapBoard`](/game-api/types/alta-world/mapboard) | class | `NetworkEntityBehaviour`, `ISavable<MapBoardSaveData1>`, `ISavableSave<MapBoardSaveData1>`, +1 more | 10 | A board in the world that shows a map and, when a player touches its hover point, reveals one map piece for them. The server saves which map, piece, offset and zoom; clients get them synced. |
 | [`MapBoardDirectRenderer`](/game-api/types/alta-world/mapboarddirectrenderer) | class | `MonoBehaviour` | 0 |  |
 | [`MapBoardRenderer`](/game-api/types/alta-world/mapboardrenderer) | class | `MonoBehaviour` | 0 |  |
 | [`MapBoardSaveData1`](/game-api/types/alta-world/mapboardsavedata1) | class | `NewSaveData<MapBoard, MapBoardSaveData1>` | 4 |  |
-| [`MapLandmarkDisplay`](/game-api/types/alta-world/maplandmarkdisplay) | class | `NetworkEntityBehaviour` | 3 |  |
+| [`MapLandmarkDisplay`](/game-api/types/alta-world/maplandmarkdisplay) | class | `NetworkEntityBehaviour` | 3 | Keeps the list of landmark markers to show on a map board, following the client landmark manager. Client side. |
 | [`MapManager`](/game-api/types/alta-world/mapmanager) | class | `NetworkEntityBehaviour` | 8 | [Map and landmarks](../world/map-and-landmarks.md): Scene behaviour, `static MapManager Instance`. Holds each player's `PlayerMapManager`, or one shared one if `IsUsingSharedMap`. |
 | [`MapPiece`](/game-api/types/alta-world/mappiece) | class | `HashedGeneralValue<MapPiece>` | 2 | [Map and landmarks](../world/map-and-landmarks.md): One piece: a `Sprite` and an `Offset`. |
 | [`MapSaveFormat`](/game-api/types/alta-world/mapsaveformat) | class | `IAltaFileFormat` | 5 | Save file holding which pieces of each map are still hidden. Server: loaded per player, or once as a shared file when the map is shared. |
@@ -176,9 +176,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OldLandmarkSaveData1`](/game-api/types/alta-world/oldlandmarksavedata1) | class | `OldSaveData` | 7 |  |
 | [`PlayerDataFileHelper<T>`](/game-api/types/alta-world/playerdatafilehelper-t) | class |  | 5 |  |
 | [`PlayerLandmark`](/game-api/types/alta-world/playerlandmark) | class | `MovingLandmark` | 1 |  |
-| [`PlayerLandmarkMode`](/game-api/types/alta-world/playerlandmarkmode) | enum |  | 3 |  |
+| [`PlayerLandmarkMode`](/game-api/types/alta-world/playerlandmarkmode) | enum |  | 3 | Whose player markers show on the map: everyone, friends only, or none. |
 | [`PlayerMapManager`](/game-api/types/alta-world/playermapmanager) | class |  | 7 | [Map and landmarks](../world/map-and-landmarks.md): One player's discovered pieces. `IsThisMapPieceDiscovered(Map, int)`, `GetUndiscoveredMapPieces(Map)`, `DiscoverPiece(Map, int)`. |
-| [`ServerClientLandmarkManager`](/game-api/types/alta-world/serverclientlandmarkmanager) | class |  | 10 |  |
+| [`ServerClientLandmarkManager`](/game-api/types/alta-world/serverclientlandmarkmanager) | class |  | 10 | Server: one player's landmark knowledge. Loads their save file, sends their markers when they join and sends changes as they discover more. |
 | [`ServerLandmarkManager`](/game-api/types/alta-world/serverlandmarkmanager) | class |  | 13 | Server: holds every registered map marker and one tracker per connected player for what they know. Created by `LandmarkManager`. |
 | [`StaticAchievementTrigger`](/game-api/types/alta-world/staticachievementtrigger) | class | `MonoBehaviour` | 0 |  |
 
@@ -186,7 +186,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BasicSaveDataWrapper<TData>`](/game-api/types/alta-world/basicsavedatawrapper-tdata) | class |  | 6 |  |
+| [`BasicSaveDataWrapper<TData>`](/game-api/types/alta-world/basicsavedatawrapper-tdata) | class |  | 6 | Holds a basic save data object along with its serialized bits, so it is only serialized again after it changes. |
 | [`BasicSaveFile<T>`](/game-api/types/alta-world/basicsavefile-t) | class | `IAltaFileFormat` | 8 |  |
 | [`ChunkVersioning`](/game-api/types/alta-world/chunkversioning) | class |  | 15 | The set of save format versions a chunk was written with: a map from save type hash to version number. `SavingSystem.LatestChunkVersioning` holds the current one; each chunk save stores the versioning it used. |
 | [`ISavableSave<out T>`](/game-api/types/alta-world/isavablesave-outt) | interface | `ISavableSaveBase` | 1 | The saving half of `ISavable<T>`: a component that can produce its save data. |

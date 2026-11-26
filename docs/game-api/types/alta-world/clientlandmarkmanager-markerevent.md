@@ -1,6 +1,6 @@
 ---
 title: "ClientLandmarkManager.MarkerEvent"
-description: "delegate ClientLandmarkManager.MarkerEvent in Root.Township."
+description: "Handler for a map marker change."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClientLandmarkManager.MarkerEvent
 
 A **delegate** in `Root.Township`, `Alta.Map`.
+
+Handler for a map marker change.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`ClientLandmarkManager`](/game-api/types/alta-world/clientlandmarkmanager)

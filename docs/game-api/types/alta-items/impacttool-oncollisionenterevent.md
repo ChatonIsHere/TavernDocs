@@ -1,6 +1,6 @@
 ---
 title: "ImpactTool.OnCollisionEnterEvent"
-description: "delegate ImpactTool.OnCollisionEnterEvent in Root.Township."
+description: "Handler for ImpactTool.OnCollisionEnterCalled, raised when a held tool collides with something on a blockable layer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactTool.OnCollisionEnterEvent
 
 A **delegate** in `Root.Township`, `Alta.Impact`.
+
+Handler for `ImpactTool.OnCollisionEnterCalled`, raised when a held tool collides with something on a blockable layer.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactTool`](/game-api/types/alta-items/impacttool)

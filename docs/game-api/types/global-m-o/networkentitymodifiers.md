@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntityModifiers"
-description: "abstract class NetworkEntityModifiers in Root.Township."
+description: "Base class for spawn modifiers that work on a NetworkEntity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkEntityModifiers
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base class for spawn modifiers that work on a `NetworkEntity`. It adds nothing to `SpawnModifier`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`SpawnModifier<NetworkEntity>`](/game-api/types/global-s/spawnmodifier-t)

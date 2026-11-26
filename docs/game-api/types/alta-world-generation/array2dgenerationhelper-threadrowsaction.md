@@ -1,6 +1,6 @@
 ---
 title: "Array2dGenerationHelper.ThreadRowsAction"
-description: "delegate Array2dGenerationHelper.ThreadRowsAction in Root.Township."
+description: "Work for one row in Array2dGenerationHelper.ThreadRows."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Array2dGenerationHelper.ThreadRowsAction
 
 A **delegate** in `Root.Township`, `Alta.Forests`.
+
+Work for one row in `Array2dGenerationHelper.ThreadRows`. Each row runs as its own task with its own seeded random.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`Array2dGenerationHelper`](/game-api/types/alta-world-generation/array2dgenerationhelper)

@@ -1,6 +1,6 @@
 ---
 title: "ChiselHit"
-description: "delegate ChiselHit in Root.Township."
+description: "Callback for Chiselable.onHit: the damage, hit position and direction, the chisel tool and the collider that was hit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChiselHit
 
 A **delegate** in `Root.Township`, `Alta.Carpentry`.
+
+Callback for `Chiselable.onHit`: the damage, hit position and direction, the chisel tool and the collider that was hit.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

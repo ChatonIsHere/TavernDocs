@@ -1,6 +1,6 @@
 ---
 title: "RequestedGroups"
-description: "class RequestedGroups in Alta.Api.Client."
+description: "Paged list of groups the current user has asked to join, from the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RequestedGroups
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Paged list of groups the current user has asked to join, from the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`PaginatedList<OutgoingGroupJoinRequest>`](/game-api/types/assembly-api-client/paginatedlist-t)

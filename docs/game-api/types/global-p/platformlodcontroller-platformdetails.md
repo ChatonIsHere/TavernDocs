@@ -1,6 +1,6 @@
 ---
 title: "PlatformLODController.PlatformDetails"
-description: "class PlatformLODController.PlatformDetails in Root.Township."
+description: "Private: the LOD range to keep on one platform (default Android) when PlatformLODController bakes an LOD group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformLODController.PlatformDetails
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private: the LOD range to keep on one platform (default Android) when `PlatformLODController` bakes an LOD group.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlatformLODController`](/game-api/types/global-p/platformlodcontroller)
@@ -23,11 +25,11 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-maxlod" /><code>{"int maxLOD"}</code> |
-| <Link id="m-minlod" /><code>{"int minLOD"}</code> |
-| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxlod" /><code>{"int maxLOD"}</code> | Highest LOD kept. The default 100 means not set, and baking is skipped with a warning. |
+| <Link id="m-minlod" /><code>{"int minLOD"}</code> | Lowest LOD kept (default 1); above 0, renderer references move to that LOD's renderers. |
+| <Link id="m-platform" /><code><Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform"}</code> | Platforms these settings apply to. |
 
 ## Used in
 

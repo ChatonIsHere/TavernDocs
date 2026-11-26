@@ -1,6 +1,6 @@
 ---
 title: "DiscordLarge"
-description: "enum DiscordLarge in Root.Township."
+description: "Large image keys for Discord rich presence (splash, town, caves, forest)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DiscordLarge
 
 An **enum** in `Root.Township`, no namespace.
+
+Large image keys for Discord rich presence (splash, town, caves, forest). The lowercased name is sent as the image key.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

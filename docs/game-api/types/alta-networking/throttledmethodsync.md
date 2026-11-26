@@ -1,6 +1,6 @@
 ---
 title: "ThrottledMethodSync"
-description: "class ThrottledMethodSync in Root.Township."
+description: "Wraps an entity message so it is sent at most once per set interval; extra sends inside the interval are dropped, not delayed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ThrottledMethodSync
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+Wraps an entity message so it is sent at most once per set interval; extra sends inside the interval are dropped, not delayed.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -25,29 +27,29 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler"}</code> |
-| <Link id="m-nextavailablemessage" /><code>{"private float nextAvailableMessage"}</code> |
-| <Link id="m-throttlefrequencyinseconds" /><code>{"private readonly float throttleFrequencyInSeconds"}</code> |
-| <Link id="m-type" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The entity the message belongs to. |
+| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" handler"}</code> | Method that writes and reads the message; registered as the entity's handler for `type`. |
+| <Link id="m-nextavailablemessage" /><code>{"private float nextAvailableMessage"}</code> | Real time after which the next send is allowed. |
+| <Link id="m-throttlefrequencyinseconds" /><code>{"private readonly float throttleFrequencyInSeconds"}</code> | Minimum seconds between sends. |
+| <Link id="m-type" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> | The entity message type. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-sendtochunks" /><code>{"void SendToChunks(params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sendtochunks" /><code>{"void SendToChunks(params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> | Sends the message to players in the entity's chunks (minus `except`), unless throttled. |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Sends the message to one player, unless throttled. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-shouldthrottlemessage" /><code>{"private bool ShouldThrottleMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-shouldthrottlemessage" /><code>{"private bool ShouldThrottleMessage()"}</code> | True if the interval has not passed yet; otherwise starts a new interval. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerPostboxStorageEventHandler"
-description: "delegate PlayerPostboxStorageEventHandler in Root.Township."
+description: "Handler for a postbox's ItemAdded and ItemRemoved: gets the storage and its new item count."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerPostboxStorageEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for a postbox's `ItemAdded` and `ItemRemoved`: gets the storage and its new item count.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MulticastDelegate`

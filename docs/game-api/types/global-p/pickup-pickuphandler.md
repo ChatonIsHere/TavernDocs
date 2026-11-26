@@ -1,6 +1,6 @@
 ---
 title: "Pickup.PickupHandler"
-description: "delegate Pickup.PickupHandler in Root.Township."
+description: "Handler for Pickup.PickupGrabbed, given the pickup and the interactor that grabbed it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Pickup.PickupHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `Pickup.PickupGrabbed`, given the pickup and the interactor that grabbed it.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`Pickup`](/game-api/types/global-p/pickup)

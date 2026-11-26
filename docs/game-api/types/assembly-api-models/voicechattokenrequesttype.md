@@ -1,6 +1,6 @@
 ---
 title: "VoiceChatTokenRequestType"
-description: "enum VoiceChatTokenRequestType in Alta.Api.DataTransferModels."
+description: "What a voice chat token is for: Login or JoinChannel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VoiceChatTokenRequestType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+What a voice chat token is for: `Login` or `JoinChannel`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

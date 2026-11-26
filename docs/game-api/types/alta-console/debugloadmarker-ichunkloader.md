@@ -1,6 +1,6 @@
 ---
 title: "DebugLoadMarker.IChunkLoader"
-description: "interface DebugLoadMarker.IChunkLoader in Root.Township."
+description: "Picks which chunks a DebugLoadMarker keeps loaded around its entity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.QATools`.
 
+Picks which chunks a `DebugLoadMarker` keeps loaded around its entity. There is an optimised version for simple servers and a normal one.
+
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker)
 - **Derived types** [`DebugLoadMarker.NormalChunkLoader`](/game-api/types/alta-console/debugloadmarker-normalchunkloader), [`DebugLoadMarker.OptimisedChunkLoader`](/game-api/types/alta-console/debugloadmarker-optimisedchunkloader)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getchunkstoload" /><code>{"void GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | Adds the chunks to load around a position in the current chunk to the given set. |
 
 ## Used in
 

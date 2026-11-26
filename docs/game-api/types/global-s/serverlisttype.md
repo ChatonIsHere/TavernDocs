@@ -1,6 +1,6 @@
 ---
 title: "ServerListType"
-description: "enum ServerListType in Root.Township."
+description: "How ServerConfiguration uses its player list: None (ignored), BlackList (listed players blocked) or WhiteList (only listed players allowed)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerListType
 
 An **enum** in `Root.Township`, no namespace.
+
+How `ServerConfiguration` uses its player list: `None` (ignored), `BlackList` (listed players blocked) or `WhiteList` (only listed players allowed).
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

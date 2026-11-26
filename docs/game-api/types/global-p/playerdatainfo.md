@@ -1,6 +1,6 @@
 ---
 title: "PlayerDataInfo"
-description: "class PlayerDataInfo in Root.Township."
+description: "Leaderboard row returned by the leaderboard console command: player name and time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+Leaderboard row returned by the leaderboard console command: player name and time. Made from `PlayerData`.
+
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-player" /><code>{"string Player { get; set; }"}</code> |
-| <Link id="m-time" /><code>{"string Time { get; set; }"}</code> |
-| <Link id="m-timeinseconds" /><code>{"int TimeInSeconds { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-player" /><code>{"string Player { get; set; }"}</code> | The player's name. |
+| <Link id="m-time" /><code>{"string Time { get; set; }"}</code> | The time as text. |
+| <Link id="m-timeinseconds" /><code>{"int TimeInSeconds { get; set; }"}</code> | The time in seconds. |
 
 ## Used in
 

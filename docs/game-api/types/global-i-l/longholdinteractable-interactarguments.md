@@ -1,6 +1,6 @@
 ---
 title: "LongHoldInteractable.InteractArguments"
-description: "struct LongHoldInteractable.InteractArguments in Root.Township."
+description: "Private network argument sent from the client to say whether a hold was long or short."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 A **private struct** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Private network argument sent from the client to say whether a hold was long or short.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`LongHoldInteractable`](/game-api/types/global-i-l/longholdinteractable)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> |
-| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interactoridentifier" /><code>{"uint interactorIdentifier"}</code> | Entity ID of the controller that held. The server checks it belongs to the sender. |
+| <Link id="m-islonghold" /><code>{"bool isLongHold"}</code> | True for a long hold, false for a short one. |
 
 ## Used in
 

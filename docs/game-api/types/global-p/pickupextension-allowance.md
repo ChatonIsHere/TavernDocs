@@ -1,6 +1,6 @@
 ---
 title: "PickupExtension.Allowance"
-description: "enum PickupExtension.Allowance in Root.Township."
+description: "When a PickupExtension forwards grabs to its target: always, not to the player already holding it, or never while it's held."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupExtension.Allowance
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+When a `PickupExtension` forwards grabs to its target: always, not to the player already holding it, or never while it's held.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PickupExtension`](/game-api/types/global-p/pickupextension)

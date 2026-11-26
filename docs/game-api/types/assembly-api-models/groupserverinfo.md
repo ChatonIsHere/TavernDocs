@@ -1,6 +1,6 @@
 ---
 title: "GroupServerInfo"
-description: "class GroupServerInfo in Alta.Api.DataTransferModels."
+description: "Web API model for one game server as listed inside a group's details (GroupInfoDetailed.Servers)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Web API model for one game server as listed inside a group's details (`GroupInfoDetailed.Servers`).
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> |
-| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server's numeric ID. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The server's display name. |
+| <Link id="m-sceneindex" /><code>{"int SceneIndex { get; set; }"}</code> | Index of the scene (map) the server runs. |
+| <Link id="m-status" /><code><Link to="/game-api/types/assembly-api-models/gameserverstatus">{"GameServerStatus"}</Link>{" Status { get; set; }"}</code> | Current `GameServerStatus` of the server, sent as a string in JSON. |
 
 ## Used in
 

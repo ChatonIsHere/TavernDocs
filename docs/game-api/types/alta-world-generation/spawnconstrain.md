@@ -1,6 +1,6 @@
 ---
 title: "SpawnConstrain"
-description: "abstract class SpawnConstrain in Root.Township."
+description: "Base asset for a rule that limits what a ConstrainedSpawnerDisplay spawns in a cave chunk, such as EveryXLayersConstrain."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnConstrain
 
 An **abstract class** in `Root.Township`, `Alta.Caves`.
+
+Base asset for a rule that limits what a `ConstrainedSpawnerDisplay` spawns in a cave chunk, such as `EveryXLayersConstrain`. Checked on the server before spawning.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `ScriptableObject`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, `Alta.Caves`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawnparameters" /><code>{"abstract bool SpawnParameters("}<Link to="/game-api/types/alta-world-generation/generationbase">{"GenerationBase"}</Link>{" generation, ref int quantity)"}</code> | Returns false to stop the spawn for this chunk's generator. Can also change the quantity to spawn. |
 
 ## Used in
 

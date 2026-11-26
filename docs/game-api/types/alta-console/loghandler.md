@@ -1,6 +1,6 @@
 ---
 title: "LogHandler"
-description: "delegate LogHandler in Root.Township."
+description: "Event handler for a formatted log line and its level."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogHandler
 
 A **delegate** in `Root.Township`, `Alta.Logging.Targets`.
+
+Event handler for a formatted log line and its level. Used by `ServerConsoleLogTarget.LogSent` and `ConsoleCommandsLogTarget.LogSent`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** `MulticastDelegate`

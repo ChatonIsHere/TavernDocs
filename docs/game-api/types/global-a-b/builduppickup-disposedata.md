@@ -1,6 +1,6 @@
 ---
 title: "BuildupPickup.DisposeData"
-description: "struct BuildupPickup.DisposeData in Root.Township."
+description: "Message the server sends to chunks when a BuildupPickup loses a child, so clients dispose the same slot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BuildupPickup.DisposeData
 
 A **private struct** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Message the server sends to chunks when a `BuildupPickup` loses a child, so clients dispose the same slot.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`BuildupPickup`](/game-api/types/global-a-b/builduppickup)
@@ -23,10 +25,10 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-index" /><code>{"int Index { get; }"}</code> |
-| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index" /><code>{"int Index { get; }"}</code> | Index of the slot that lost its child. |
+| <Link id="m-isforced" /><code>{"bool IsForced { get; }"}</code> | Whether the dispose was forced, passed on to the child's disposable pickups. |
 
 ## Used in
 

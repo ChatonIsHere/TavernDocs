@@ -1,6 +1,6 @@
 ---
 title: "MaterialInstanceGroup"
-description: "class MaterialInstanceGroup in Root.Township."
+description: "Makes a MaterialInstance for each of a set of renderers and disposes them together."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MaterialInstanceGroup
 
 A **class** in `Root.Township`, `Alta.Rendering`.
+
+Makes a `MaterialInstance` for each of a set of renderers and disposes them together.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `IDisposable`, `IReadOnlyCollection<MaterialInstance>`, `IEnumerable<MaterialInstance>`, `IEnumerable`
@@ -26,31 +28,31 @@ A **class** in `Root.Township`, `Alta.Rendering`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instances" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> instances"}</code> | The material instances, one per renderer passed to the constructor. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of material instances in the group. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes every material instance and empties the group. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-utilities/materialinstance">{"MaterialInstance"}</Link>{"> GetEnumerator()"}</code> | Enumerates the material instances. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the material instances. |
 
 </details>
 

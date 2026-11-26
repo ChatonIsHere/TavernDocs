@@ -1,6 +1,6 @@
 ---
 title: "InfoDisplayerAccess.AccessUpdate"
-description: "delegate InfoDisplayerAccess.AccessUpdate in Root.Township."
+description: "Handler for InfoDisplayerAccess changes (EnabledUpdated, TextUpdated); gets the access asset that changed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InfoDisplayerAccess.AccessUpdate
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `InfoDisplayerAccess` changes (`EnabledUpdated`, `TextUpdated`); gets the access asset that changed.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InfoDisplayerAccess`](/game-api/types/global-i-l/infodisplayeraccess)

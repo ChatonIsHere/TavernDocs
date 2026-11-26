@@ -1,6 +1,6 @@
 ---
 title: "ProgressionSettings.InputSystemSound"
-description: "class ProgressionSettings.InputSystemSound in Root.Township."
+description: "Pair of sound sets for a skill input turning on and off, set in ProgressionSettings for power strike and raise hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProgressionSettings.InputSystemSound
 
 A **class** in `Root.Township`, no namespace.
+
+Pair of sound sets for a skill input turning on and off, set in `ProgressionSettings` for power strike and raise hand.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`ProgressionSettings`](/game-api/types/global-p/progressionsettings)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activated" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" activated"}</code> |
-| <Link id="m-deactivated" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" deactivated"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activated" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" activated"}</code> | Backing field for `Activated`. |
+| <Link id="m-deactivated" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" deactivated"}</code> | Backing field for `Deactivated`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-activated-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Activated { get; }"}</code> |
-| <Link id="m-deactivated-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Deactivated { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activated-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Activated { get; }"}</code> | Sound played when the input turns on. |
+| <Link id="m-deactivated-2" /><code><Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" Deactivated { get; }"}</code> | Sound played when the input turns off. |
 
 ## Used in
 

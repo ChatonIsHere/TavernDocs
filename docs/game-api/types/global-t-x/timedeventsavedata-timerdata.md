@@ -1,6 +1,6 @@
 ---
 title: "TimedEventSaveData.TimerData"
-description: "class TimedEventSaveData.TimerData in Root.Township."
+description: "Saved state of one running timer of a SerializedTimedEvent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimedEventSaveData.TimerData
 
 A **class** in `Root.Township`, no namespace.
+
+Saved state of one running timer of a `SerializedTimedEvent`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TimedEventSaveData`](/game-api/types/global-t-x/timedeventsavedata)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-index" /><code>{"int index"}</code> |
-| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index" /><code>{"int index"}</code> | Index of the timed event setup this timer belongs to. |
+| <Link id="m-timer" /><code>{"TimeSpan timer"}</code> | Saved timeline entry for the timer (a time span). |
 
 ## Used in
 

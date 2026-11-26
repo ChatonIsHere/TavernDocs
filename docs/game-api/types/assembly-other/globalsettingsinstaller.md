@@ -1,6 +1,6 @@
 ---
 title: "GlobalSettingsInstaller"
-description: "class GlobalSettingsInstaller in Alta.LifetimeScopes."
+description: "ScriptableObject that runs platform-specific installers and registers a list of GlobalSettings assets in a VContainer scope."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GlobalSettingsInstaller
 
 A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
+
+ScriptableObject that runs platform-specific installers and registers a list of `GlobalSettings` assets in a VContainer scope.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `ScriptableObject`
@@ -27,18 +29,18 @@ A **class** in `Alta.LifetimeScopes`, `Alta.ATT.LifetimeScopes`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> |
-| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-globalsettings" /><code>{"private List<"}<Link to="/game-api/types/assembly-other/globalsettings">{"GlobalSettings"}</Link>{"> globalSettings"}</code> | Global settings assets to initialise and register. |
+| <Link id="m-platformspecificinstallers" /><code>{"private "}<Link to="/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers">{"GlobalSettingsInstaller.PlatformConstrainedInstallers"}</Link>{"[] platformSpecificInstallers"}</code> | Groups of installers, each limited to some platforms. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-install" /><code>{"void Install(IContainerBuilder builder)"}</code> | Runs the installers for the current platform, then initialises each global settings asset and registers it as its own type. |
 
 ## Used in
 

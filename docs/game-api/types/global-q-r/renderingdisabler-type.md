@@ -1,6 +1,6 @@
 ---
 title: "RenderingDisabler.Type"
-description: "enum RenderingDisabler.Type in Root.Township."
+description: "Group of renderers a RenderingDisabler belongs to (rocks, houses, terrain, vegetation and so on); pressing the key matching the name's first letter toggles..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RenderingDisabler.Type
 
 An **enum** in `Root.Township`, no namespace.
+
+Group of renderers a `RenderingDisabler` belongs to (rocks, houses, terrain, vegetation and so on); pressing the key matching the name's first letter toggles that group.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Nested in** [`RenderingDisabler`](/game-api/types/global-q-r/renderingdisabler)

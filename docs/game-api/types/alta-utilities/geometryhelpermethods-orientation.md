@@ -1,6 +1,6 @@
 ---
 title: "GeometryHelperMethods.Orientation"
-description: "enum GeometryHelperMethods.Orientation in Root.Township."
+description: "Turn direction of three points (collinear, clockwise or anticlockwise), used by the line intersection helpers in GeometryHelperMethods."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeometryHelperMethods.Orientation
 
 An **private enum** in `Root.Township`, `Alta.Utilities`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Turn direction of three points (collinear, clockwise or anticlockwise), used by the line intersection helpers in `GeometryHelperMethods`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`GeometryHelperMethods`](/game-api/types/alta-utilities/geometryhelpermethods)

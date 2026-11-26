@@ -1,6 +1,6 @@
 ---
 title: "PoolChangedHandler"
-description: "delegate PoolChangedHandler in Root.Township."
+description: "Handler for PooledObject.Released and PooledObject.Requested, given the pooled object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PoolChangedHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `PooledObject.Released` and `PooledObject.Requested`, given the pooled object.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MulticastDelegate`

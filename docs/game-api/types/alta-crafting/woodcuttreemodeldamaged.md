@@ -1,6 +1,6 @@
 ---
 title: "WoodcutTreeModelDamaged"
-description: "delegate WoodcutTreeModelDamaged in Root.Township."
+description: "Handler for WoodcutTreeModel.TookDamage, called with the tree model and the damage it took."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WoodcutTreeModelDamaged
 
 A **delegate** in `Root.Township`, `Alta.Woodcutting`.
+
+Handler for `WoodcutTreeModel.TookDamage`, called with the tree model and the damage it took.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

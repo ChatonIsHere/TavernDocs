@@ -1,6 +1,6 @@
 ---
 title: "AltaCoroutineHandler"
-description: "class AltaCoroutineHandler in Alta.Coroutines."
+description: "Internal singleton behaviour that AltaCoroutine runs its coroutines on when no target object is given."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaCoroutineHandler
 
 A **internal class** in `Alta.Coroutines`, `Alta.Utilities`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Internal singleton behaviour that `AltaCoroutine` runs its coroutines on when no target object is given.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`SingletonBehaviour<AltaCoroutineHandler>`](/game-api/types/assembly-other/singletonbehaviour-t)

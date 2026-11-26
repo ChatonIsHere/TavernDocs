@@ -1,6 +1,6 @@
 ---
 title: "ModInfo"
-description: "class ModInfo in Root.Township."
+description: "A row returned by the mod list console command: a loaded script bundle's name and whether it is active."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ModInfo
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A row returned by the mod list console command: a loaded script bundle's name and whether it is active.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"bool IsActive { get; set; }"}</code> | Whether the script bundle is currently active. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The script bundle's name. |
 
 ## Used in
 

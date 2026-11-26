@@ -1,6 +1,6 @@
 ---
 title: "DirectionMode"
-description: "enum DirectionMode in Root.Township."
+description: "What smooth locomotion steers by: the head or the controller, and locked variants of each."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DirectionMode
 
 An **enum** in `Root.Township`, no namespace.
+
+What smooth locomotion steers by: the head or the controller, and locked variants of each. Set separately for touch and press movement in game settings.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

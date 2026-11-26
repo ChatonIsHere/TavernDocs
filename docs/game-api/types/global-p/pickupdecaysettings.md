@@ -1,6 +1,6 @@
 ---
 title: "PickupDecaySettings"
-description: "class PickupDecaySettings in Root.Township."
+description: "Decay settings asset for pickups, adding rules for crafted and kinematic pickups."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDecaySettings
 
 A **class** in `Root.Township`, no namespace.
+
+Decay settings asset for pickups, adding rules for crafted and kinematic pickups. Read by `PickupDecay`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`DecaySettings`](/game-api/types/global-c-d/decaysettings)
@@ -28,21 +30,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-candecaywhencrafted" /><code>{"private bool canDecayWhenCrafted"}</code> |
-| <Link id="m-candecaywhenkinematic" /><code>{"private bool canDecayWhenKinematic"}</code> |
-| <Link id="m-crafteddecaytimemultiplier" /><code>{"private float craftedDecayTimeMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-candecaywhencrafted" /><code>{"private bool canDecayWhenCrafted"}</code> | Backing field for `CanDecayWhenCrafted`. |
+| <Link id="m-candecaywhenkinematic" /><code>{"private bool canDecayWhenKinematic"}</code> | Backing field for `CanDecayWhenKinematic`. |
+| <Link id="m-crafteddecaytimemultiplier" /><code>{"private float craftedDecayTimeMultiplier"}</code> | Backing field for `CraftedDecayTimeMultiplier`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-candecaywhencrafted-2" /><code>{"bool CanDecayWhenCrafted { get; }"}</code> |
-| <Link id="m-candecaywhenkinematic-2" /><code>{"bool CanDecayWhenKinematic { get; }"}</code> |
-| <Link id="m-crafteddecaytimemultiplier-2" /><code>{"float CraftedDecayTimeMultiplier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-candecaywhencrafted-2" /><code>{"bool CanDecayWhenCrafted { get; }"}</code> | If false, pickups that are crafted don't decay. |
+| <Link id="m-candecaywhenkinematic-2" /><code>{"bool CanDecayWhenKinematic { get; }"}</code> | If false, pickups don't decay while their rigidbody is kinematic. |
+| <Link id="m-crafteddecaytimemultiplier-2" /><code>{"float CraftedDecayTimeMultiplier { get; }"}</code> | Multiplier on decay time for crafted pickups, when they are allowed to decay. |
 
 ## Used in
 

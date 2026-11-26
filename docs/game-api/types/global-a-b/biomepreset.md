@@ -1,6 +1,6 @@
 ---
 title: "BiomePreset"
-description: "Hashed ScriptableObject holding a serialized biome for cave and world generation."
+description: "Hashed ScriptableObject holding a serialized biome, referenced by GenerationStarter to generate an area."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-Hashed ScriptableObject holding a serialized biome for cave and world generation. The generated biome is built on first use and cached.
+Hashed ScriptableObject holding a serialized biome, referenced by `GenerationStarter` to generate an area. The generated biome is built on first use and cached.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`HashedGeneralValue<BiomePreset>`](/game-api/types/assembly-other/hashedgeneralvalue-t)

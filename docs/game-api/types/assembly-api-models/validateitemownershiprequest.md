@@ -1,6 +1,6 @@
 ---
 title: "ValidateItemOwnershipRequest"
-description: "class ValidateItemOwnershipRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to check whether a user owns some shop items."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of an Alta web API request to check whether a user owns some shop items.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> |
-| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> |
-| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code>{"IEnumerable<uint> Items { get; set; }"}</code> | Old numeric item ids. Marked obsolete in favour of `ItemSKUs`. |
+| <Link id="m-itemskus" /><code>{"IEnumerable<string> ItemSKUs { get; set; }"}</code> | SKUs of the items to check. |
+| <Link id="m-useridentifer" /><code>{"int UserIdentifer { get; set; }"}</code> | Id of the user to check (the name is misspelt in the game). |
 
 ## Used in
 

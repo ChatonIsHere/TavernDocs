@@ -1,6 +1,6 @@
 ---
 title: "GenerateSignUpCodeRequest"
-description: "class GenerateSignUpCodeRequest in Alta.Api.DataTransferModels."
+description: "Body of an Alta web API request to generate a sign-up code for someone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of an Alta web API request to generate a sign-up code for someone.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,13 +24,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-campaign" /><code>{"string Campaign { get; set; }"}</code> |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |
-| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> |
-| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> |
-| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-campaign" /><code>{"string Campaign { get; set; }"}</code> | Campaign the code belongs to. |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | Email of the person the code is for. |
+| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> | First name of the person the code is for. |
+| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> | Last name of the person the code is for. |
+| <Link id="m-referral" /><code>{"string Referral { get; set; }"}</code> | Referral string. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "EffectEventHandler<T>"
-description: "delegate EffectEventHandler<T> in Root.Township."
+description: "Callback with an effect of type T."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EffectEventHandler&lt;T&gt;
 
 A **delegate** in `Root.Township`, `Alta.Alchemy`.
+
+Callback with an effect of type `T`. Used for `DurationEffect<T>.Stopped`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

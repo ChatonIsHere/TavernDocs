@@ -1,6 +1,6 @@
 ---
 title: "CurveWall.CurvePoint"
-description: "class CurveWall.CurvePoint in Root.Township."
+description: "One node of a CurveWall Bezier spline: a position and its back and forward handles, both relative to the position."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CurveWall.CurvePoint
 
 A **class** in `Root.Township`, no namespace.
+
+One node of a `CurveWall` Bezier spline: a position and its back and forward handles, both relative to the position.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`CurveWall`](/game-api/types/global-c-d/curvewall)
@@ -26,27 +28,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleback" /><code>{"private Vector3 handleBack"}</code> |
-| <Link id="m-handleforward" /><code>{"private Vector3 handleForward"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleback" /><code>{"private Vector3 handleBack"}</code> | Backing field for `HandleBack`. |
+| <Link id="m-handleforward" /><code>{"private Vector3 handleForward"}</code> | Backing field for `HandleForward`. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-handleback-2" /><code>{"Vector3 HandleBack { get; set; }"}</code> |
-| <Link id="m-handleforward-2" /><code>{"Vector3 HandleForward { get; set; }"}</code> |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleback-2" /><code>{"Vector3 HandleBack { get; set; }"}</code> | Handle offset toward the previous node. |
+| <Link id="m-handleforward-2" /><code>{"Vector3 HandleForward { get; set; }"}</code> | Handle offset toward the next node. |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; set; }"}</code> | Node position. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-calculatepoint" /><code>{"Vector3 CalculatePoint("}<Link to="/game-api/types/global-c-d/curvewall-curvepoint">{"CurveWall.CurvePoint"}</Link>{" next, float time)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-calculatepoint" /><code>{"Vector3 CalculatePoint("}<Link to="/game-api/types/global-c-d/curvewall-curvepoint">{"CurveWall.CurvePoint"}</Link>{" next, float time)"}</code> | Returns the point on the cubic Bezier segment from this node to the next at the given time (0 to 1). |
 
 ## Used in
 

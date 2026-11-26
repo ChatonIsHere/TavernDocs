@@ -1,6 +1,6 @@
 ---
 title: "FormQueryType"
-description: "enum FormQueryType in Alta.Api.DataTransferModels."
+description: "Kind of question in an Alta web API form, such as boolean, text, rating, choice, or a pick of an item, server or player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FormQueryType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums.Alta.WebApi.Models`.
+
+Kind of question in an Alta web API form, such as boolean, text, rating, choice, or a pick of an item, server or player.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

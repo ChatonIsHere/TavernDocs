@@ -1,6 +1,6 @@
 ---
 title: "StatBarSimple.IsLerping"
-description: "delegate StatBarSimple.IsLerping in Root.Township."
+description: "Callback for StatBarSimple.Lerping."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatBarSimple.IsLerping
 
 A **delegate** in `Root.Township`, `Alta.StatSystem`.
+
+Callback for `StatBarSimple.Lerping`. Each listener sets the flag to true while it is still animating, and the bar keeps animating until none do.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`StatBarSimple`](/game-api/types/alta-stats-effects/statbarsimple)

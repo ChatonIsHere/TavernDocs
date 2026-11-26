@@ -1,6 +1,6 @@
 ---
 title: "CombatEventHandler"
-description: "delegate CombatEventHandler in Root.Township."
+description: "Handler for CausedCombat on PlayerController and PlayerEventsManager: who attacked, what was hit, the squared distance ratio between them, and the damage."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CombatEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `CausedCombat` on `PlayerController` and `PlayerEventsManager`: who attacked, what was hit, the squared distance ratio between them, and the damage.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

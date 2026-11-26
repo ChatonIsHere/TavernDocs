@@ -1,6 +1,6 @@
 ---
 title: "ForestCliffEvaluator.CliffPoint"
-description: "struct ForestCliffEvaluator.CliffPoint in Root.Township."
+description: "A sample point along a cliff found during forest generation, stepped along each cliff path at a fixed spacing."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestCliffEvaluator.CliffPoint
 
 A **struct** in `Root.Township`, `Alta.Forests`.
+
+A sample point along a cliff found during forest generation, stepped along each cliff path at a fixed spacing.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`ForestCliffEvaluator`](/game-api/types/alta-world-generation/forestcliffevaluator)
@@ -23,14 +25,14 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-cliff" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{"> cliff"}</code> |
-| <Link id="m-direction" /><code>{"Vector2 direction"}</code> |
-| <Link id="m-height" /><code>{"float height"}</code> |
-| <Link id="m-pathindex" /><code>{"int pathIndex"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-ray" /><code>{"float ray"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cliff" /><code>{"List<"}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{"> cliff"}</code> | The chain of paths that make up this cliff. |
+| <Link id="m-direction" /><code>{"Vector2 direction"}</code> | Flat direction facing out from the cliff at this point. |
+| <Link id="m-height" /><code>{"float height"}</code> | Height drop of the cliff at this point. |
+| <Link id="m-pathindex" /><code>{"int pathIndex"}</code> | Index of the path in `cliff` this point lies on. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position of the sample. |
+| <Link id="m-ray" /><code>{"float ray"}</code> | Horizontal width of the cliff slope at this point. |
 
 ## Used in
 

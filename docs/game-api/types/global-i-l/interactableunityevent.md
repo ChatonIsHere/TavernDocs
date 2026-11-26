@@ -1,6 +1,6 @@
 ---
 title: "InteractableUnityEvent"
-description: "class InteractableUnityEvent in Root.Township."
+description: "Serializable UnityEvent that passes an Interactable and the Interactor using it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractableUnityEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `UnityEvent` that passes an `Interactable` and the `Interactor` using it.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `UnityEvent<Interactable, Interactor>`

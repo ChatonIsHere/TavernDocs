@@ -1,6 +1,6 @@
 ---
 title: "EvaluateWielder"
-description: "delegate EvaluateWielder in Root.Township."
+description: "Delegate that reports who is wielding something, as a network entity and, if it is a player, their PlayerController."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EvaluateWielder
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate that reports who is wielding something, as a network entity and, if it is a player, their `PlayerController`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MulticastDelegate`

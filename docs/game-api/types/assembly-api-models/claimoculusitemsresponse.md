@@ -1,6 +1,6 @@
 ---
 title: "ClaimOculusItemsResponse"
-description: "class ClaimOculusItemsResponse in Alta.Api.DataTransferModels."
+description: "Alta web API reply to claiming all of a user's Oculus purchases (ConsumeAllOculusPurchases)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Alta web API reply to claiming all of a user's Oculus purchases (`ConsumeAllOculusPurchases`).
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> |
-| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-claimeditems" /><code>{"List<string> ClaimedItems { get; set; }"}</code> | Items that were claimed. |
+| <Link id="m-value" /><code>{"bool Value { get; set; }"}</code> | Old success flag. Marked obsolete. |
 
 ## Used in
 

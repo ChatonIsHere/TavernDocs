@@ -1,6 +1,6 @@
 ---
 title: "TextureMode"
-description: "enum TextureMode in Root.Township."
+description: "How DynamicMask.AddTexture combines a texture with the mask: add, subtract, multiply or replace."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextureMode
 
 An **enum** in `Root.Township`, `Alta.UI`.
+
+How `DynamicMask.AddTexture` combines a texture with the mask: add, subtract, multiply or replace.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

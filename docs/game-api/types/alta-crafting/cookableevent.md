@@ -1,6 +1,6 @@
 ---
 title: "CookableEvent"
-description: "class CookableEvent in Root.Township."
+description: "A serialized event that passes a Cookable, set up in the Inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CookableEvent
 
 A **class** in `Root.Township`, `Alta.Cooking`.
+
+A serialized event that passes a `Cookable`, set up in the Inspector. `CookingPot` uses one for rejected ingredients.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`AltaEvent<Cookable, CookableUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

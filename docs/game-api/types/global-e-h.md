@@ -15,14 +15,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`EatAmountTask`](/game-api/types/global-e-h/eatamounttask) | class | `TransferAmountTask` | 1 |  |
-| [`Eater`](/game-api/types/global-e-h/eater) | class | `MonoBehaviour` | 0 |  |
+| [`Eater`](/game-api/types/global-e-h/eater) | class | `MonoBehaviour` | 0 | Mouth trigger on a player: starts eating an `EdibleObject` that enters it and stops shortly after it leaves. |
 | [`EatingAmountArgument`](/game-api/types/global-e-h/eatingamountargument) | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md): `Eater`, when a player finishes eating (on whichever side ran the bite) |
 | [`EcholocationEffect`](/game-api/types/global-e-h/echolocationeffect) | class | `PooledObject` | 1 |  |
 | [`EdgeCutFilter`](/game-api/types/global-e-h/edgecutfilter) | class | `SpawnModifierPoint` | 1 |  |
 | [`EdgeCutFilter.Create`](/game-api/types/global-e-h/edgecutfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<EdgeCutFilter>` | 0 |  |
-| [`EdibleEvent`](/game-api/types/global-e-h/edibleevent) | class | `AltaEvent<EdibleObject, EdibleUnityEvent>` | 0 |  |
+| [`EdibleEvent`](/game-api/types/global-e-h/edibleevent) | class | `AltaEvent<EdibleObject, EdibleUnityEvent>` | 0 | Serializable `AltaEvent` raised with an `EdibleObject`. |
 | [`EdibleObject`](/game-api/types/global-e-h/edibleobject) | class | `NetworkEntityBehaviour` | 4 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#edibleobject): On every food prefab. |
-| [`EdibleObject.EatenStage`](/game-api/types/global-e-h/edibleobject-eatenstage) | class |  | 3 |  |
+| [`EdibleObject.EatenStage`](/game-api/types/global-e-h/edibleobject-eatenstage) | class |  | 3 | Bite settings for an `EdibleObject`: how many bites, how long each takes and the effect each bite plays. |
 | [`EdiblePageProvider`](/game-api/types/global-e-h/ediblepageprovider) | class | `GeneratedPageProvider<Item>` | 5 |  |
 | [`EdiblePageSettings`](/game-api/types/global-e-h/ediblepagesettings) | class | `GlobalSettings<EdiblePageSettings>` | 12 | Global settings for the generated pages that describe an edible item: the page template, where each glyph goes and how effect strength is drawn. Used by `EdiblePageProvider`. |
 | [`EdiblePageSettings.Create`](/game-api/types/global-e-h/ediblepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<EdiblePageSettings>` | 0 |  |
@@ -34,15 +34,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EditorForcedTaskUpdater`](/game-api/types/global-e-h/editorforcedtaskupdater) | static class |  | 1 |  |
 | [`EditorHotKeys`](/game-api/types/global-e-h/editorhotkeys) | class | `ScriptableObject` | 1 |  |
 | [`EditorHotKeys.Create`](/game-api/types/global-e-h/editorhotkeys-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<EditorHotKeys>` | 0 |  |
-| [`EditorLink`](/game-api/types/global-e-h/editorlink) | class |  | 4 |  |
+| [`EditorLink`](/game-api/types/global-e-h/editorlink) | class |  | 4 | Serializable link to an asset by GUID, meant for editor use. In the game build every method is a stub. |
 | [`EditorOnlyAddressableSession`](/game-api/types/global-e-h/editoronlyaddressablesession) | static class |  | 1 |  |
-| [`EditorOverrideCredentials`](/game-api/types/global-e-h/editoroverridecredentials) | class |  | 2 |  |
+| [`EditorOverrideCredentials`](/game-api/types/global-e-h/editoroverridecredentials) | class |  | 2 | Plain username and password pair, probably for signing in from the Unity editor during development. |
 | [`EditorWindowGizmosDrawer`](/game-api/types/global-e-h/editorwindowgizmosdrawer) | class | `MonoBehaviour` | 2 |  |
 | [`EffectPlayStatus`](/game-api/types/global-e-h/effectplaystatus) | enum |  | 3 | Flags for an effect that is playing with its visuals or its sound turned off. |
-| [`EffectReleaseOnFade`](/game-api/types/global-e-h/effectreleaseonfade) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 |  |
+| [`EffectReleaseOnFade`](/game-api/types/global-e-h/effectreleaseonfade) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 | Pooled effect that, when released, stops its particle systems and sound and waits for the longest particle duration before going back to the pool. |
 | [`EffectToggleColor`](/game-api/types/global-e-h/effecttogglecolor) | class | `MonoBehaviour` | 1 |  |
-| [`EffectToggleColor.ParticleLifetimeColor`](/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor) | class | `ParticleStartColor` | 2 |  |
-| [`EffectToggleColor.ParticleStartColor`](/game-api/types/global-e-h/effecttogglecolor-particlestartcolor) | class |  | 3 |  |
+| [`EffectToggleColor.ParticleLifetimeColor`](/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor) | class | `ParticleStartColor` | 2 | A particle system whose start colour and colour-over-lifetime gradient switch between on and off values. |
+| [`EffectToggleColor.ParticleStartColor`](/game-api/types/global-e-h/effecttogglecolor-particlestartcolor) | class |  | 3 | A particle system whose start colour switches between an on and an off colour. |
 | [`ElevationFromPath`](/game-api/types/global-e-h/elevationfrompath) | class | `SpawnModifierPointNormal` | 1 |  |
 | [`ElevationFromPath.Create`](/game-api/types/global-e-h/elevationfrompath-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ElevationFromPath>` | 0 |  |
 | [`EmailValidationHelper`](/game-api/types/global-e-h/emailvalidationhelper) | static class |  | 2 |  |
@@ -56,12 +56,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EmbeddableSaveData`](/game-api/types/global-e-h/embeddablesavedata) | internal class | `NewSaveData<Embeddable, EmbeddableSaveData>` | 5 |  |
 | [`EmbeddableSaveData1`](/game-api/types/global-e-h/embeddablesavedata1) | internal class | `OldSaveData` | 2 |  |
 | [`EmbeddableUnityEvent`](/game-api/types/global-e-h/embeddableunityevent) | class | `UnityEvent<Embeddable>` | 0 |  |
-| [`EmberComposer`](/game-api/types/global-e-h/embercomposer) | class | `PickupBasedSkill` | 4 |  |
+| [`EmberComposer`](/game-api/types/global-e-h/embercomposer) | class | `PickupBasedSkill` | 4 | Skill that heats a held meltable item: while active it pours energy into the heat point nearest the hand until the whole item is hot, then fires the skill. |
 | [`EmberComposer.Create`](/game-api/types/global-e-h/embercomposer-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<EmberComposer>` | 0 |  |
 | [`EmberComposerFireEffect`](/game-api/types/global-e-h/embercomposerfireeffect) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 |  |
 | [`EmissionControl`](/game-api/types/global-e-h/emissioncontrol) | class | `DelayedPooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 | Pooled effect that scales the emission rate of a set of particle systems. It turns emission off when released to the pool and back on when requested again. |
 | [`EmissionShapeControl`](/game-api/types/global-e-h/emissionshapecontrol) | class | `EmissionControl` | 1 |  |
-| [`EmptyBehaviour`](/game-api/types/global-e-h/emptybehaviour) | class | `MonoBehaviour` | 0 |  |
+| [`EmptyBehaviour`](/game-api/types/global-e-h/emptybehaviour) | class | `MonoBehaviour` | 0 | A `MonoBehaviour` with no code. Probably used as a marker or a placeholder component on prefabs. |
 | [`EmptyChildrenSerializer`](/game-api/types/global-e-h/emptychildrenserializer) | class | `ISerializeChildren` | 1 |  |
 | [`EmptyDockAfterTimePeriod`](/game-api/types/global-e-h/emptydockaftertimeperiod) | class | `MonoBehaviour` | 0 | [Items, interaction and damage](../items/overview.md) |
 | [`EmptyFolderContents`](/game-api/types/global-e-h/emptyfoldercontents) | class | `ScriptableObject` | 0 |  |
@@ -74,15 +74,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EntitySpawnTest`](/game-api/types/global-e-h/entityspawntest) | class | `MonoBehaviour` | 0 |  |
 | [`EnumArrayAttribute`](/game-api/types/global-e-h/enumarrayattribute) | class | `PropertyAttribute` | 4 |  |
 | [`EnvironmentalPropertyBlock`](/game-api/types/global-e-h/environmentalpropertyblock) | class | `MonoBehaviour` | 2 |  |
-| [`EnvironmentHandler`](/game-api/types/global-e-h/environmenthandler) | class | `MonoBehaviour` | 1 |  |
-| [`EnvironmentLerp`](/game-api/types/global-e-h/environmentlerp) | class |  | 7 |  |
-| [`EnvironmentLerp.Variable`](/game-api/types/global-e-h/environmentlerp-variable) | class |  | 6 |  |
+| [`EnvironmentHandler`](/game-api/types/global-e-h/environmenthandler) | class | `MonoBehaviour` | 1 | Client component that blends audio environment settings (reverb) towards the current `EnvironmentNode` over time. |
+| [`EnvironmentLerp`](/game-api/types/global-e-h/environmentlerp) | class |  | 7 | Blends audio environment values (reverb) from the current settings to a target `EnvironmentNode`. Owned by `EnvironmentHandler`. |
+| [`EnvironmentLerp.Variable`](/game-api/types/global-e-h/environmentlerp-variable) | class |  | 6 | One float in an `EnvironmentLerp` that blends from a start value to a target. |
 | [`EnvironmentNode`](/game-api/types/global-e-h/environmentnode) | class | `MonoBehaviour` | 1 | Component on a chunk that can override environment audio values (only reverb so far) for that area. `ChunkBasedEnvironment` looks it up on the chunk and blends to it. |
 | [`EnvironmentNode.Variable`](/game-api/types/global-e-h/environmentnode-variable) | class |  | 1 | An optional float setting on an `EnvironmentNode` (used for reverb). It either overrides the value or falls back to a default node's value. |
-| [`EquipmentRoomAnimator`](/game-api/types/global-e-h/equipmentroomanimator) | class | `MonoBehaviour` | 2 |  |
+| [`EquipmentRoomAnimator`](/game-api/types/global-e-h/equipmentroomanimator) | class | `MonoBehaviour` | 2 | Plays the appear and disappear animations of the equipment customization room: boundary, dummy materialising, particles, ground and pedestal. |
 | [`ErrorTrackerSettings`](/game-api/types/global-e-h/errortrackersettings) | class | `ScriptableObject` | 2 |  |
 | [`EruptAreaAttack`](/game-api/types/global-e-h/eruptareaattack) | class | `NetworkEntityBehaviour` | 2 |  |
-| [`EvaluateWielder`](/game-api/types/global-e-h/evaluatewielder) | delegate |  | 0 |  |
+| [`EvaluateWielder`](/game-api/types/global-e-h/evaluatewielder) | delegate |  | 0 | Delegate that reports who is wielding something, as a network entity and, if it is a player, their `PlayerController`. |
 | [`EventAtPosition`](/game-api/types/global-e-h/eventatposition) | class | `MonoBehaviour` | 1 |  |
 | [`ExampleEventPlayer`](/game-api/types/global-e-h/exampleeventplayer) | class | `MonoBehaviour` | 0 |  |
 | [`ExperienceFillVisualizer`](/game-api/types/global-e-h/experiencefillvisualizer) | class | `SkillShrineVisualizer` | 8 | Skill shrine visual that fills with a player's XP toward the next level on one path, and animates buying and selling skills. The server sends the values; clients animate. |
@@ -272,7 +272,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HandIndex`](/game-api/types/global-e-h/handindex) | enum |  | 3 | Which hand: `Left`, `Right` or `Both`. |
 | [`HandInteractor`](/game-api/types/global-e-h/handinteractor) | class | `MonoBehaviour` | 4 |  |
 | [`HandInteractor.HandInteraction`](/game-api/types/global-e-h/handinteractor-handinteraction) | class |  | 1 |  |
-| [`HandleCommand`](/game-api/types/global-e-h/handlecommand) | delegate |  | 0 |  |
+| [`HandleCommand`](/game-api/types/global-e-h/handlecommand) | delegate |  | 0 | Handler for a remote console command received by `ClientCommandHandler`: gets the raw message buffer and its length. Registered per command type with `AddHandler`. |
 | [`HandleEnchantment`](/game-api/types/global-e-h/handleenchantment) | class | `MonoBehaviour` | 0 |  |
 | [`HandleHandler`](/game-api/types/global-e-h/handlehandler) | class | `UnityEvent<float>` | 0 |  |
 | [`HandleValueEvent`](/game-api/types/global-e-h/handlevalueevent) | class | `AltaEvent<float, HandleHandler>` | 0 |  |
@@ -296,9 +296,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HealthChannel`](/game-api/types/global-e-h/healthchannel) | class | `ScriptableObject` | 2 |  |
 | [`HealthChannel.Create`](/game-api/types/global-e-h/healthchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject<HealthChannel>` | 0 |  |
 | [`HealthObject`](/game-api/types/global-e-h/healthobject) | class | `NetworkEntityBehaviour` | 22 | [Health and damage](../items/health-and-damage.md#healthobject), [Impacts and hit detection](../items/impacts.md): A `NetworkEntityBehaviour` on creatures, players, breakable things, ore and trees. `PlayerHealth` and `FakePlayerHealth` derive from it. |
-| [`HealthObject.DeathAnalytics`](/game-api/types/global-e-h/healthobject-deathanalytics) | struct |  | 4 |  |
-| [`HealthObject.HealthChangedHandler`](/game-api/types/global-e-h/healthobject-healthchangedhandler) | delegate |  | 0 |  |
-| [`HealthObjectEvent`](/game-api/types/global-e-h/healthobjectevent) | class | `AltaEvent<HealthObject, HealthObjectUnityEvent>` | 0 |  |
+| [`HealthObject.DeathAnalytics`](/game-api/types/global-e-h/healthobject-deathanalytics) | struct |  | 4 | Analytics record of a death: who died, where, and who killed them. |
+| [`HealthObject.HealthChangedHandler`](/game-api/types/global-e-h/healthobject-healthchangedhandler) | delegate |  | 0 | Handler for `HealthObject.HealthChanged`: gets the health object, the amount changed and the damage data that caused it. |
+| [`HealthObjectEvent`](/game-api/types/global-e-h/healthobjectevent) | class | `AltaEvent<HealthObject, HealthObjectUnityEvent>` | 0 | Serializable `AltaEvent` that passes a `HealthObject`, for inspector-wired listeners. |
 | [`HealthObjectUnityEvent`](/game-api/types/global-e-h/healthobjectunityevent) | class | `UnityEvent<HealthObject>` | 0 |  |
 | [`HeartCall`](/game-api/types/global-e-h/heartcall) | class | `PickupBasedSkill` | 5 |  |
 | [`HeartCall.Create`](/game-api/types/global-e-h/heartcall-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<HeartCall>` | 0 |  |

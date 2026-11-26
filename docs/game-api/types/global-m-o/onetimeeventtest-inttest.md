@@ -1,6 +1,6 @@
 ---
 title: "OneTimeEventTest.IntTest"
-description: "delegate OneTimeEventTest.IntTest in Root.Township."
+description: "Test delegate taking one int, used by OneTimeEventTest to try out OneTimeEvent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OneTimeEventTest.IntTest
 
 A **private delegate** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Test delegate taking one int, used by `OneTimeEventTest` to try out `OneTimeEvent`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`OneTimeEventTest`](/game-api/types/global-m-o/onetimeeventtest)

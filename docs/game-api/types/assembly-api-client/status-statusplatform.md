@@ -1,6 +1,6 @@
 ---
 title: "Status.StatusPlatform"
-description: "enum Status.StatusPlatform in Alta.Api.Client."
+description: "Platform a service status notice applies to: Quest, Pc, Pico or All."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Status.StatusPlatform
 
 An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Platform a service status notice applies to: `Quest`, `Pc`, `Pico` or `All`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Nested in** [`Status`](/game-api/types/assembly-api-client/status)

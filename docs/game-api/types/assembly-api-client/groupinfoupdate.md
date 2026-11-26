@@ -1,6 +1,6 @@
 ---
 title: "GroupInfoUpdate"
-description: "class GroupInfoUpdate in Alta.Api.Client."
+description: "Wraps a group so its info can be edited through the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupInfoUpdate
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Wraps a group so its info can be edited through the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
@@ -30,23 +32,23 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | Low level API client used for the call. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; }"}</code> | The group being edited. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"Task Update("}<Link to="/game-api/types/assembly-api-models/editgrouprequest">{"EditGroupRequest"}</Link>{" request)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"Task Update("}<Link to="/game-api/types/assembly-api-models/editgrouprequest">{"EditGroupRequest"}</Link>{" request)"}</code> | Sends an edit group request for this group. |
 
 ## Used in
 

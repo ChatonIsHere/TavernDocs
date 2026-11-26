@@ -1,6 +1,6 @@
 ---
 title: "MenuSettings.AfterStartActionType"
-description: "enum MenuSettings.AfterStartActionType in Root.Township."
+description: "What the menu does after start-up: nothing, start a local test, start a local server, or join a local server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MenuSettings.AfterStartActionType
 
 An **enum** in `Root.Township`, no namespace.
+
+What the menu does after start-up: nothing, start a local test, start a local server, or join a local server.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MenuSettings`](/game-api/types/global-m-o/menusettings)

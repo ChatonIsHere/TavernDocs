@@ -34,11 +34,11 @@ Walks the linked list of serialized entities from a start index, returning each 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-iterationindex" /><code>{"private int iterationIndex"}</code> |
-| <Link id="m-links" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] links"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iterationindex" /><code>{"private int iterationIndex"}</code> | How many links this pass has stepped through; used in error logs. |
+| <Link id="m-links" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] links"}</code> | The entity link array it walks, following each link's next-serialized pointer. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for broken serialized-list errors. |
 
 </details>
 
@@ -52,9 +52,9 @@ Walks the linked list of serialized entities from a start index, returning each 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-system-collections-ienumerator-current" /><code>{"private object System.Collections.IEnumerator.Current { get; }"}</code> | Non-generic `Current`; returns the current `EntitySerializer`. |
 
 </details>
 

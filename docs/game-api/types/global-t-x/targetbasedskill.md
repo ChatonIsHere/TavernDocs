@@ -34,12 +34,12 @@ Base for charged tool skills that show a target on the struck object and fire wh
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activehandlermap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> activeHandlerMap"}</code> |
-| <Link id="m-activetargets" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeTargets"}</code> |
-| <Link id="m-impacttypefilter" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttypefilter">{"ImpactTypeFilter"}</Link>{" impactTypeFilter"}</code> |
-| <Link id="m-isexecutingonclient" /><code>{"private bool isExecutingOnClient"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activehandlermap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> activeHandlerMap"}</code> | Active skill inputs by tool entity ID, so a client-reported hit can be matched to its input on the server. |
+| <Link id="m-activetargets" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{"> activeTargets"}</code> | Pooled target markers shown on the local player's charged tools, by tool entity ID. |
+| <Link id="m-impacttypefilter" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttypefilter">{"ImpactTypeFilter"}</Link>{" impactTypeFilter"}</code> | Which tools and impact types this skill accepts. |
+| <Link id="m-isexecutingonclient" /><code>{"private bool isExecutingOnClient"}</code> | Set while sending a client hit report, so the next message carries the hit instead of the base skill data. |
 
 </details>
 

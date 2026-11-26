@@ -1,6 +1,6 @@
 ---
 title: "IActionItemHandlerCollection"
-description: "interface IActionItemHandlerCollection in Root.Township."
+description: "Internal: per-player store of quick access action item handlers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,16 +12,18 @@ import Link from '@docusaurus/Link';
 
 An **internal interface** in `Root.Township`, `Alta.QuickAccessActions`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Internal: per-player store of quick access action item handlers. `ActionItemsManager` uses `ActionItemHandlerCollectionMap` on the server and `ActionItemHandlerCollection` on the client.
+
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Derived types** [`ActionItemHandlerCollection`](/game-api/types/alta-player/actionitemhandlercollection), [`ActionItemHandlerCollectionMap`](/game-api/types/alta-player/actionitemhandlercollectionmap)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-gethandlerforactionindex" /><code><Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionItemIndex)"}</code> |
-| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionItemIndex)"}</code> |
-| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gethandlerforactionindex" /><code><Link to="/game-api/types/alta-player/actionitemhandler">{"ActionItemHandler"}</Link>{" GetHandlerForActionIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionItemIndex)"}</code> | Gets the handler for a player's action item index, creating it if needed. |
+| <Link id="m-isspawnedfor" /><code>{"bool IsSpawnedFor("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int actionItemIndex)"}</code> | Whether that action item is currently spawned for the player. |
+| <Link id="m-removeplayer" /><code>{"void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Disposes a player's handlers. |
 
 ## Used in
 

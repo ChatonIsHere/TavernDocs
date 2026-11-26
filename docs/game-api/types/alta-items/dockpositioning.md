@@ -1,6 +1,6 @@
 ---
 title: "DockPositioning"
-description: "delegate DockPositioning in Root.Township."
+description: "Override for where a docked pickup sits: fills in local position, rotation and scale, returning false if it can't place it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DockPositioning
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Override for where a docked pickup sits: fills in local position, rotation and scale, returning false if it can't place it. Set through `PickupDock.OverridePositioning`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

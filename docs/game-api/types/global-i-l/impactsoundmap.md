@@ -1,6 +1,6 @@
 ---
 title: "ImpactSoundMap"
-description: "class ImpactSoundMap in Root.Township."
+description: "Asset that maps physic materials to Wwise switches, so impact sounds play the right material sound."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactSoundMap
 
 A **class** in `Root.Township`, no namespace.
+
+Asset that maps physic materials to Wwise switches, so impact sounds play the right material sound.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `ScriptableObject`
@@ -27,28 +29,28 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-impactsoundsets" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/impactsoundset">{"ImpactSoundSet"}</Link>{"> impactSoundSets"}</code> | The material and switch pairs set in the inspector. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for load warnings. |
+| <Link id="m-materialtype" /><code>{"private Dictionary<PhysicMaterial, Switch> materialType"}</code> | Backing field for `MaterialType`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-materialtype-2" /><code>{"Dictionary<PhysicMaterial, Switch> MaterialType { get; }"}</code> | Physic material to Wwise switch map, built on first use. |
 
 ## Methods
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loadimpactsoundmap" /><code>{"private void LoadImpactSoundMap()"}</code> | Builds `materialType` from the sound sets. Warns on null sets and duplicates; the last duplicate wins. |
 
 </details>
 

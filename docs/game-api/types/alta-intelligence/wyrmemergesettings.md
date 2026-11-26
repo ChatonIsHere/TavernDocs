@@ -29,13 +29,13 @@ Action settings for a burrowed wyrm coming up when a target is close (`ActiveEme
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatedbool" /><code>{"private string animatedBool"}</code> |
-| <Link id="m-chance" /><code>{"private float chance"}</code> |
-| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |
-| <Link id="m-emergedsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] emergedSenses"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatedbool" /><code>{"private string animatedBool"}</code> | Backing field for `AnimatedBool`, the animator bool cleared on emerging (default `Burrowed`). |
+| <Link id="m-chance" /><code>{"private float chance"}</code> | Backing field for `Chance`, the chance the emerge scores at all. |
+| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> | Backing field for `ChangeSenseDelay`, the delay before the emerged senses apply. |
+| <Link id="m-emergedsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] emergedSenses"}</code> | Backing field for `EmergedSenses`, the senses applied after emerging. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Backing field for `Radius`, the target distance within which it emerges. |
 
 </details>
 

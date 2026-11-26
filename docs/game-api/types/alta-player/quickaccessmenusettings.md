@@ -31,25 +31,25 @@ Global settings for the quick access (wrist) menu: where its bubbles spawn, how 
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-centertitlebackgrounddiameter" /><code>{"private float centerTitleBackgroundDiameter"}</code> |
-| <Link id="m-centertitlebackgroundprefab" /><code>{"private GameObject centerTitleBackgroundPrefab"}</code> |
-| <Link id="m-centertitlemaxcharacters" /><code>{"private int centerTitleMaxCharacters"}</code> |
-| <Link id="m-centertitlemaxlines" /><code>{"private int centerTitleMaxLines"}</code> |
-| <Link id="m-displaytitlesincenter" /><code>{"private bool displayTitlesInCenter"}</code> |
-| <Link id="m-islerpingtowardshandposition" /><code>{"private bool isLerpingTowardsHandPosition"}</code> |
-| <Link id="m-maxanglebeforelerp" /><code>{"private float maxAngleBeforeLerp"}</code> |
-| <Link id="m-maxbubbledistancesquared" /><code>{"private float maxBubbleDistanceSquared"}</code> |
-| <Link id="m-maxdistancebeforelerp" /><code>{"private float maxDistanceBeforeLerp"}</code> |
-| <Link id="m-menuprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" menuPrefabDefinition"}</code> |
-| <Link id="m-nestedmaxdistancebeforelerp" /><code>{"private float nestedMaxDistanceBeforeLerp"}</code> |
-| <Link id="m-onselectbubbleevents" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent"}</Link>{" onSelectBubbleEvents"}</code> |
-| <Link id="m-positionlerpspeedoverdistance" /><code>{"private AnimationCurve positionLerpSpeedOverDistance"}</code> |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
-| <Link id="m-spawnnestedradius" /><code>{"private float spawnNestedRadius"}</code> |
-| <Link id="m-spawnradius" /><code>{"private float spawnRadius"}</code> |
-| <Link id="m-targetdistancebeforelerpsquared" /><code>{"private float targetDistanceBeforeLerpSquared"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-centertitlebackgrounddiameter" /><code>{"private float centerTitleBackgroundDiameter"}</code> | Backing field for `CenterTitleBackgroundDiameter`, the size of the background behind the center title. |
+| <Link id="m-centertitlebackgroundprefab" /><code>{"private GameObject centerTitleBackgroundPrefab"}</code> | Backing field for `CenterTitleBackgroundPrefab`, the background shown behind the center title. |
+| <Link id="m-centertitlemaxcharacters" /><code>{"private int centerTitleMaxCharacters"}</code> | Backing field for `CenterTitleMaxCharacters`, the character limit for the center title (default 24). |
+| <Link id="m-centertitlemaxlines" /><code>{"private int centerTitleMaxLines"}</code> | Backing field for `CenterTitleMaxLines`, the line limit for the center title (default 2). |
+| <Link id="m-displaytitlesincenter" /><code>{"private bool displayTitlesInCenter"}</code> | Backing field for `DisplayTitlesInCenter`, whether the selected bubble's title shows in the middle of the menu. |
+| <Link id="m-islerpingtowardshandposition" /><code>{"private bool isLerpingTowardsHandPosition"}</code> | Backing field for `IsLerpingTowardsHandPosition`. When true the menu follows the hand once it gets far enough away. |
+| <Link id="m-maxanglebeforelerp" /><code>{"private float maxAngleBeforeLerp"}</code> | Backing field for `MaxAngleBeforeLerp`, degrees the menu can lag behind its target rotation before it starts turning to face the player. |
+| <Link id="m-maxbubbledistancesquared" /><code>{"private float maxBubbleDistanceSquared"}</code> | Backing field for `MaxBubbleDistanceSquared`, how close (squared) the controller must be to a bubble to select it. |
+| <Link id="m-maxdistancebeforelerp" /><code>{"private float maxDistanceBeforeLerp"}</code> | Base distance the hand can move from the menu before it starts following. Used by `MaxDistanceBeforeLerp`. |
+| <Link id="m-menuprefabdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" menuPrefabDefinition"}</code> | Backing field for `MenuPrefabDefinition`, the pooled bubble prefab. |
+| <Link id="m-nestedmaxdistancebeforelerp" /><code>{"private float nestedMaxDistanceBeforeLerp"}</code> | Extra follow distance added per nesting level in `MaxDistanceBeforeLerp`. |
+| <Link id="m-onselectbubbleevents" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent">{"QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent"}</Link>{" onSelectBubbleEvents"}</code> | Sound and visual effects played when a bubble is selected, split by whether the bubble is active. |
+| <Link id="m-positionlerpspeedoverdistance" /><code>{"private AnimationCurve positionLerpSpeedOverDistance"}</code> | Backing field for `PositionLerpSpeedOverDistance`, follow speed by how far the hand is from the menu. |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> | Backing field for `RotationLerpSpeed`, how fast the menu turns towards the player. |
+| <Link id="m-spawnnestedradius" /><code>{"private float spawnNestedRadius"}</code> | Backing field for `SpawnNestedRadius`, the radius nested bubbles spawn at. |
+| <Link id="m-spawnradius" /><code>{"private float spawnRadius"}</code> | Backing field for `SpawnRadius`, the radius top level bubbles spawn at around the hand. |
+| <Link id="m-targetdistancebeforelerpsquared" /><code>{"private float targetDistanceBeforeLerpSquared"}</code> | Backing field for `TargetDistanceBeforeLerpSquared`, extra squared distance where following stops. |
 
 </details>
 

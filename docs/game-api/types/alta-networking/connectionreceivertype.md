@@ -1,6 +1,6 @@
 ---
 title: "ConnectionReceiverType"
-description: "enum ConnectionReceiverType in Root.Township."
+description: "How a client connection channel processes incoming reliable packets: Normal (all at once), Timed (by time budget) or Counted (by message count)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConnectionReceiverType
 
 An **enum** in `Root.Township`, `Alta.Networking.Internal`.
+
+How a client connection channel processes incoming reliable packets: Normal (all at once), Timed (by time budget) or Counted (by message count). The server always uses Normal.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 

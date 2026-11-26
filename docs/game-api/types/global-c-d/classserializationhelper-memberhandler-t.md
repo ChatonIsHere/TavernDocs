@@ -1,6 +1,6 @@
 ---
 title: "ClassSerializationHelper.MemberHandler<T>"
-description: "delegate ClassSerializationHelper.MemberHandler<T> in Root.Township."
+description: "Handler that builds the stream read and write actions for one reflected field or property, given its type and getter and setter delegates."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClassSerializationHelper.MemberHandler&lt;T&gt;
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler that builds the stream read and write actions for one reflected field or property, given its type and getter and setter delegates. Used when preparing reflection-based save serializers.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`ClassSerializationHelper`](/game-api/types/global-c-d/classserializationhelper)

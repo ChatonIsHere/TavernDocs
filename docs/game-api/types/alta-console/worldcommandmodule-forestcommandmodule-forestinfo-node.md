@@ -1,6 +1,6 @@
 ---
 title: "WorldCommandModule.ForestCommandModule.ForestInfo.Node"
-description: "class WorldCommandModule.ForestCommandModule.ForestInfo.Node in Root.Township."
+description: "A forest node in a ForestInfo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WorldCommandModule.ForestCommandModule.ForestInfo.Node
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A forest node in a `ForestInfo`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WorldCommandModule.ForestCommandModule.ForestInfo`](/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"int id"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-radius" /><code>{"float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"int id"}</code> | The node's index. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | The node's world position. |
+| <Link id="m-radius" /><code>{"float radius"}</code> | The node's radius. |
 
 ## Used in
 

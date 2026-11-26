@@ -1,6 +1,6 @@
 ---
 title: "RemoteConsoleCommandType"
-description: "enum RemoteConsoleCommandType in Root.Township."
+description: "Kind of remote request ClientCommandHandler handles: a console command or a mod upload."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RemoteConsoleCommandType
 
 An **enum** in `Root.Township`, no namespace.
+
+Kind of remote request `ClientCommandHandler` handles: a console command or a mod upload.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 

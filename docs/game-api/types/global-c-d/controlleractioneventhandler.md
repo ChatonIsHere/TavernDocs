@@ -1,6 +1,6 @@
 ---
 title: "ControllerActionEventHandler"
-description: "delegate ControllerActionEventHandler in Root.Township."
+description: "Handler for a ControllerActionProxy's Enabled and Disabled events, given the proxy."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControllerActionEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for a `ControllerActionProxy`'s `Enabled` and `Disabled` events, given the proxy.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

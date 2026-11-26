@@ -1,6 +1,6 @@
 ---
 title: "CookingStage.Stage"
-description: "enum CookingStage.Stage in Root.Township."
+description: "How cooked a food item is: burnt, cooked, ripe or unripe."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CookingStage.Stage
 
 An **enum** in `Root.Township`, `Alta.Cooking`.
+
+How cooked a food item is: burnt, cooked, ripe or unripe. Held in `CookingStage.stage` and read by the edible page provider.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`CookingStage`](/game-api/types/alta-crafting/cookingstage)

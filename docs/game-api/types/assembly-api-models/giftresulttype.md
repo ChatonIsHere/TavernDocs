@@ -1,6 +1,6 @@
 ---
 title: "GiftResultType"
-description: "enum GiftResultType in Alta.Api.DataTransferModels."
+description: "Result of giving a shop item: Failed, AlreadyOwned or Success."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GiftResultType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Result of giving a shop item: `Failed`, `AlreadyOwned` or `Success`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

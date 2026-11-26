@@ -28,18 +28,18 @@ Client UI: a text field typed into with the in-game virtual keyboard, with a car
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-backspaceonempty" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" backspaceOnEmpty"}</code> |
-| <Link id="m-caret" /><code>{"private Transform caret"}</code> |
-| <Link id="m-keyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" keyboard"}</code> |
-| <Link id="m-maxcharacterslimit" /><code>{"private int maxCharactersLimit"}</code> |
-| <Link id="m-next" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualinputfield">{"VirtualInputField"}</Link>{" next"}</code> |
-| <Link id="m-nextaction" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" nextAction"}</code> |
-| <Link id="m-nextonlywhenhasinput" /><code>{"private bool nextOnlyWhenHasInput"}</code> |
-| <Link id="m-onlostfocus" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onLostFocus"}</code> |
-| <Link id="m-previous" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualinputfield">{"VirtualInputField"}</Link>{" previous"}</code> |
-| <Link id="m-showsecret" /><code>{"private bool showSecret"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-backspaceonempty" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" backspaceOnEmpty"}</code> | Event run when backspace is pressed on an empty field. |
+| <Link id="m-caret" /><code>{"private Transform caret"}</code> | Caret transform placed after the text. |
+| <Link id="m-keyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" keyboard"}</code> | In-world touch screen keyboard that types into this field. |
+| <Link id="m-maxcharacterslimit" /><code>{"private int maxCharactersLimit"}</code> | Most characters allowed; -1 for no limit. |
+| <Link id="m-next" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualinputfield">{"VirtualInputField"}</Link>{" next"}</code> | Field focused when the keyboard asks for the next field. |
+| <Link id="m-nextaction" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" nextAction"}</code> | Event run when the keyboard submits. |
+| <Link id="m-nextonlywhenhasinput" /><code>{"private bool nextOnlyWhenHasInput"}</code> | If true, submitting an empty field does nothing. |
+| <Link id="m-onlostfocus" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onLostFocus"}</code> | Event run when the field loses focus. |
+| <Link id="m-previous" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualinputfield">{"VirtualInputField"}</Link>{" previous"}</code> | Field focused when the keyboard asks for the previous field. |
+| <Link id="m-showsecret" /><code>{"private bool showSecret"}</code> | Value returned by `IsShowingSecret`. |
 
 </details>
 
@@ -70,10 +70,10 @@ Client UI: a text field typed into with the in-game virtual keyboard, with a car
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checknext" /><code>{"private void CheckNext()"}</code> |  |
+| <Link id="m-checknext" /><code>{"private void CheckNext()"}</code> | Runs `nextAction` only if the field has text. |
 | <Link id="m-next-3" /><code>{"private void IUseVirtualKeyboard.Next()"}</code> | Field to move to after this one. |
 | <Link id="m-previous-3" /><code>{"private void IUseVirtualKeyboard.Previous()"}</code> | Field to move back to. |
-| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> |  |
+| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> | Moves the caret to the end of the shown text. |
 
 </details>
 

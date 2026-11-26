@@ -28,21 +28,21 @@ In-world VR keyboard that builds keys from a `VirtualKeyboardSetup`, optionally 
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bendingaxis" /><code>{"private Vector3 bendingAxis"}</code> |
-| <Link id="m-bendingnormal" /><code>{"private Vector3 bendingNormal"}</code> |
-| <Link id="m-bendingradius" /><code>{"private float bendingRadius"}</code> |
-| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |
-| <Link id="m-input" /><code>{"private string input"}</code> |
-| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |
-| <Link id="m-keyparent" /><code>{"private Transform keyParent"}</code> |
-| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkey">{"VirtualKey"}</Link>{" keyPrefab"}</code> |
-| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |
-| <Link id="m-shiftlockmarker" /><code>{"private GameObject shiftLockMarker"}</code> |
-| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bendingaxis" /><code>{"private Vector3 bendingAxis"}</code> | Axis the keyboard curves around when `bendingRadius` is positive. |
+| <Link id="m-bendingnormal" /><code>{"private Vector3 bendingNormal"}</code> | Direction the keyboard faces, used when bending the key layout. |
+| <Link id="m-bendingradius" /><code>{"private float bendingRadius"}</code> | Radius of the keyboard's curve. Zero or less (the default is -1) keeps the keys flat. |
+| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> | Seconds within which a second shift press locks shift (default 0.5). |
+| <Link id="m-input" /><code>{"private string input"}</code> | Backing field for `Input`, the text typed so far. |
+| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> | True when shift is locked by a double press, so it stays on after typing a character. |
+| <Link id="m-keyparent" /><code>{"private Transform keyParent"}</code> | Transform the spawned keys are parented to. |
+| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkey">{"VirtualKey"}</Link>{" keyPrefab"}</code> | The `VirtualKey` prefab spawned for each key. |
+| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> | Offset added to every key's layout position after scaling. |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | Multiplier applied to the key layout positions. |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> | The `VirtualKeyboardSetup` asset that lists the keys and their layout positions. |
+| <Link id="m-shiftlockmarker" /><code>{"private GameObject shiftLockMarker"}</code> | Object meant to show that shift lock is on. Not used in this class's code. |
+| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> | Real time until which a second shift press counts as a double press. |
 
 </details>
 
@@ -74,14 +74,14 @@ In-world VR keyboard that builds keys from a `VirtualKeyboardSetup`, optionally 
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getposition" /><code>{"private void GetPosition(Vector2 original, out Vector3 position, out Quaternion rotation)"}</code> |
-| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> |
-| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getposition" /><code>{"private void GetPosition(Vector2 original, out Vector3 position, out Quaternion rotation)"}</code> | Turns a key's 2D layout position into a local position and rotation, applying `scale`, `originOffset` and the optional bend. |
+| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> | Appends a letter to `Input`, upper case if shift is down and lower case otherwise. |
+| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> | Appends a digit to `Input`. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor only: draws a wire box at each key position from `setup` while not playing. |
+| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> | Toggles shift. A second press within `doubleShiftTimer` seconds turns on shift lock instead. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Spawns one `keyPrefab` per entry in `setup` under `keyParent` and places each one. |
 
 </details>
 

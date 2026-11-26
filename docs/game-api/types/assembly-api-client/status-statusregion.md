@@ -1,6 +1,6 @@
 ---
 title: "Status.StatusRegion"
-description: "enum Status.StatusRegion in Alta.Api.Client."
+description: "Region a service status notice applies to: Australia, Usa, Europe or Global."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Status.StatusRegion
 
 An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Region a service status notice applies to: `Australia`, `Usa`, `Europe` or `Global`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Nested in** [`Status`](/game-api/types/assembly-api-client/status)

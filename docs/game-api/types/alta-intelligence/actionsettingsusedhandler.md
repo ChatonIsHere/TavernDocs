@@ -1,6 +1,6 @@
 ---
 title: "ActionSettingsUsedHandler"
-description: "delegate ActionSettingsUsedHandler in Root.Township."
+description: "Event handler for an AI action being used, passing the running action."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActionSettingsUsedHandler
 
 A **delegate** in `Root.Township`, `Alta.Intelligence`.
+
+Event handler for an AI action being used, passing the running action. Used by `IActionSettings.Used`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MulticastDelegate`

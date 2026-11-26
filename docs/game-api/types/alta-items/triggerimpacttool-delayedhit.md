@@ -1,6 +1,6 @@
 ---
 title: "TriggerImpactTool.DelayedHit"
-description: "struct TriggerImpactTool.DelayedHit in Root.Township."
+description: "A hit TriggerImpactTool collects during a frame and runs later with a delayed call."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TriggerImpactTool.DelayedHit
 
 A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+A hit `TriggerImpactTool` collects during a frame and runs later with a delayed call.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`TriggerImpactTool`](/game-api/types/alta-items/triggerimpacttool)
@@ -23,10 +25,10 @@ A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stu
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |
-| <Link id="m-impacthit" /><code><Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> | The impact detector that was hit. |
+| <Link id="m-impacthit" /><code><Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactHit"}</code> | The best hit found for that detector. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "IShootable"
-description: "interface IShootable in Root.Township."
+description: "A projectile a bow can fire, such as Arrow or a light beam."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,22 +12,24 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A projectile a bow can fire, such as `Arrow` or a light beam. Used by `ExtraArrowUpdater` for extra arrows.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`Arrow`](/game-api/types/global-a-b/arrow), [`Projectile`](/game-api/types/global-p/projectile)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> |
-| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> |
-| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Entity { get; }"}</code> | The projectile's network entity. |
+| <Link id="m-rigidbody" /><code>{"Rigidbody Rigidbody { get; }"}</code> | The projectile's rigidbody; kept kinematic while it rides on the bow. |
+| <Link id="m-transform" /><code>{"Transform transform { get; }"}</code> | The projectile's transform. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-shoot" /><code>{"void Shoot(Vector3 velocity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-shoot" /><code>{"void Shoot(Vector3 velocity)"}</code> | Launches the projectile with the given velocity. |
 
 ## Used in
 

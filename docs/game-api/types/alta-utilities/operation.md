@@ -1,6 +1,6 @@
 ---
 title: "Operation"
-description: "delegate Operation in Root.Township."
+description: "A function that combines two floats into one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Operation
 
 A **delegate** in `Root.Township`, `Alta`.
+
+A function that combines two floats into one. `MathfOperation.GetOperation` returns one for the cave generator parts.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `MulticastDelegate`

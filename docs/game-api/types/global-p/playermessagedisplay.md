@@ -1,6 +1,6 @@
 ---
 title: "PlayerMessageDisplay"
-description: "class PlayerMessageDisplay in Root.Township."
+description: "Client text shown in front of the player's view, such as login errors."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerMessageDisplay
 
 A **class** in `Root.Township`, no namespace.
+
+Client text shown in front of the player's view, such as login errors. Messages queue and fade in and out.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`, [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -26,16 +28,16 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidonscreentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" androidOnScreenText"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-messagedisplaycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" messageDisplayCoroutine"}</code> |
-| <Link id="m-messagequeue" /><code>{"private List<DisplayMessage> messageQueue"}</code> |
-| <Link id="m-onscreentext" /><code>{"private Text onScreenText"}</code> |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
-| <Link id="m-positionfromhead" /><code>{"private Vector3 positionFromHead"}</code> |
-| <Link id="m-rotationfromhead" /><code>{"private Quaternion rotationFromHead"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidonscreentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" androidOnScreenText"}</code> | Android text renderer; not used by this code. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs each message shown. |
+| <Link id="m-messagedisplaycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" messageDisplayCoroutine"}</code> | The running queue coroutine. |
+| <Link id="m-messagequeue" /><code>{"private List<DisplayMessage> messageQueue"}</code> | Messages waiting; the first is the one shown. Capped at about 1000. |
+| <Link id="m-onscreentext" /><code>{"private Text onScreenText"}</code> | UI text that shows the message. |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | The owning player controller. |
+| <Link id="m-positionfromhead" /><code>{"private Vector3 positionFromHead"}</code> | Offset from the head; not used by this code. |
+| <Link id="m-rotationfromhead" /><code>{"private Quaternion rotationFromHead"}</code> | Rotation from the head; not used by this code. |
 
 </details>
 
@@ -44,31 +46,31 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> | Always 0. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> |
-| <Link id="m-display" /><code>{"void Display(string message, float duration = 2, "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" type = 2)"}</code> |
-| <Link id="m-display-2" /><code>{"void Display(DisplayMessage message, "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" type = 2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"void Bake(bool isSaving)"}</code> | Empty build step. |
+| <Link id="m-display" /><code>{"void Display(string message, float duration = 2, "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" type = 2)"}</code> | Shows a message. By default it replaces the current one; it can also queue or go next. |
+| <Link id="m-display-2" /><code>{"void Display(DisplayMessage message, "}<Link to="/game-api/types/global-c-d/displaymessagetype">{"DisplayMessageType"}</Link>{" type = 2)"}</code> | Shows a message. By default it replaces the current one; it can also queue or go next. |
 
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
-| <Link id="m-displaymessagequeue" /><code>{"private IEnumerator DisplayMessageQueue() (iterator)"}</code> |
-| <Link id="m-displaytextdelayedcoroutine" /><code>{"private IEnumerator DisplayTextDelayedCoroutine(float time, string message, float textFadeOutDuration = 5) (iterator)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onloginattemptfailed" /><code>{"private void OnLoginAttemptFailed(string message)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Empty. |
+| <Link id="m-displaymessagequeue" /><code>{"private IEnumerator DisplayMessageQueue() (iterator)"}</code> | Coroutine: shows each queued message with its fade in, duration and fade out, then hides the text. |
+| <Link id="m-displaytextdelayedcoroutine" /><code>{"private IEnumerator DisplayTextDelayedCoroutine(float time, string message, float textFadeOutDuration = 5) (iterator)"}</code> | Coroutine: after a delay, shows text and fades it out. Nothing in this code starts it. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the login failure event. |
+| <Link id="m-onloginattemptfailed" /><code>{"private void OnLoginAttemptFailed(string message)"}</code> | Shows the failed login message in red. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks `LoginManager.LoginAttemptFailed`. |
 
 </details>
 

@@ -28,9 +28,9 @@ Receives OpenXR input action callbacks and turns them into per-hand `OpenXRContr
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for the class. |
 
 </details>
 
@@ -84,9 +84,9 @@ Receives OpenXR input action callbacks and turns them into per-hand `OpenXRContr
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getinput" /><code>{"private bool GetInput(InputAction.CallbackContext context, out "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" input)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getinput" /><code>{"private bool GetInput(InputAction.CallbackContext context, out "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" input)"}</code> | Returns the left or right controller input for an input action callback, based on the device. Returns false unless the action is in the performed phase. |
 
 </details>
 

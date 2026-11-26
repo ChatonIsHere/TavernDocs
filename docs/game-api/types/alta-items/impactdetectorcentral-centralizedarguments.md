@@ -1,6 +1,6 @@
 ---
 title: "ImpactDetectorCentral.CentralizedArguments"
-description: "struct ImpactDetectorCentral.CentralizedArguments in Root.Township."
+description: "Wraps an impact sync message with which of the entity's impact detectors it belongs to, so several detectors can share one network channel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,21 +12,23 @@ import Link from '@docusaurus/Link';
 
 A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Wraps an impact sync message with which of the entity's impact detectors it belongs to, so several detectors can share one network channel.
+
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactDetectorCentral`](/game-api/types/alta-items/impactdetectorcentral)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments"}</code> |
-| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-items/impactdetector-impactsyncarguments">{"ImpactDetector.ImpactSyncArguments"}</Link>{" arguments"}</code> | The detector's own impact sync data. |
+| <Link id="m-detector" /><code><Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector"}</code> | The impact detector this message is for. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{"[] availableDetectors)"}</code> | Writes or reads the detector as an index into the entity's detector list. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Array2dGenerationHelper.ThreadRowsAction<TContext>"
-description: "delegate Array2dGenerationHelper.ThreadRowsAction<TContext> in Root.Township."
+description: "Like ThreadRowsAction, with a context object passed to every row."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Array2dGenerationHelper.ThreadRowsAction&lt;TContext&gt;
 
 A **delegate** in `Root.Township`, `Alta.Forests`.
+
+Like `ThreadRowsAction`, with a context object passed to every row.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`Array2dGenerationHelper`](/game-api/types/alta-world-generation/array2dgenerationhelper)

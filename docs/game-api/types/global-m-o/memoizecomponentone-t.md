@@ -1,6 +1,6 @@
 ---
 title: "MemoizeComponentOne<T>"
-description: "class MemoizeComponentOne<T> in Root.Township."
+description: "A MemoizeOne that caches GetComponent<T> for the last component passed in, comparing Unity objects properly."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MemoizeComponentOne&lt;T&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+A `MemoizeOne` that caches `GetComponent<T>` for the last component passed in, comparing Unity objects properly.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`MemoizeOne<Component, T>`](/game-api/types/global-m-o/memoizeone-tinput-toutput)

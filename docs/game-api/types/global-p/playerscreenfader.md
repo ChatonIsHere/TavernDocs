@@ -35,10 +35,10 @@ Fades the local player's view to and from black. Subclasses draw the fade. Locke
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fadeinlockers" /><code>{"private HashSet<object> fadeInLockers"}</code> |
-| <Link id="m-playercontrollermultilockmodel" /><code>{"private "}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fadeinlockers" /><code>{"private HashSet<object> fadeInLockers"}</code> | Objects holding the screen black. The first one blacks it out and locks the player controller. |
+| <Link id="m-playercontrollermultilockmodel" /><code>{"private "}<Link to="/game-api/types/global-i-l/iplayercontrollermultilockmodel">{"IPlayerControllerMultiLockModel"}</Link>{" playerControllerMultiLockModel"}</code> | Injected lock model used to lock the player while fade lockers exist. |
 
 </details>
 
@@ -69,9 +69,9 @@ Fades the local player's view to and from black. Subclasses draw the fade. Locke
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-handlefade" /><code>{"private IEnumerator HandleFade(float duration, float alphaStart, float alphaEnd, float delay) (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handlefade" /><code>{"private IEnumerator HandleFade(float duration, float alphaStart, float alphaEnd, float delay) (iterator)"}</code> | Coroutine behind `CustomFade`: waits the delay, fades, runs the callback, and holds the faded-to-black render lock while black. |
 
 </details>
 

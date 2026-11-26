@@ -1,6 +1,6 @@
 ---
 title: "SplineChangedHandler"
-description: "delegate SplineChangedHandler in Root.Township."
+description: "Callback for BezierSpline.Changed, passed the spline that changed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplineChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Bezier`.
+
+Callback for `BezierSpline.Changed`, passed the spline that changed. `SplineDisplay` uses it to redraw.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `MulticastDelegate`

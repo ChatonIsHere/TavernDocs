@@ -1,6 +1,6 @@
 ---
 title: "StatEffectShellAnimator.ShellAnimationHandlerNode"
-description: "class StatEffectShellAnimator.ShellAnimationHandlerNode in Root.Township."
+description: "Private: wraps a ShellAnimationHandler so it can sit in the animator's priority queue of waiting shell animations."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatEffectShellAnimator.ShellAnimationHandlerNode
 
 A **private class** in `Root.Township`, `Alta.PlayerEffects`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private: wraps a `ShellAnimationHandler` so it can sit in the animator's priority queue of waiting shell animations.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`StatEffectShellAnimator`](/game-api/types/alta-player/stateffectshellanimator)
@@ -24,9 +26,9 @@ A **private class** in `Root.Township`, `Alta.PlayerEffects`. Reach it through a
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handler" /><code><Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" Handler { get; }"}</code> | The queued handler. |
 
 ## Used in
 

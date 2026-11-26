@@ -1,6 +1,6 @@
 ---
 title: "LocomotionModifierCheck"
-description: "abstract class LocomotionModifierCheck in Root.Township."
+description: "Asset with rules for a LocomotionModifier area: what happens when a player enters or leaves, and where they may teleport."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LocomotionModifierCheck
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Asset with rules for a `LocomotionModifier` area: what happens when a player enters or leaves, and where they may teleport. Examples are `DepthCheckLocoCheck` and `EnterLocomotionCheck`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `ScriptableObject`
@@ -24,11 +26,11 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-enter" /><code>{"abstract void Enter("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> |
-| <Link id="m-isvalidteleportationposition" /><code>{"abstract bool IsValidTeleportationPosition(Vector3 position, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Bounds bounds)"}</code> |
-| <Link id="m-leave" /><code>{"abstract void Leave("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enter" /><code>{"abstract void Enter("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | Called when a player enters the area. |
+| <Link id="m-isvalidteleportationposition" /><code>{"abstract bool IsValidTeleportationPosition(Vector3 position, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Bounds bounds)"}</code> | Whether a player may teleport to this position inside the area. |
+| <Link id="m-leave" /><code>{"abstract void Leave("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player, Bounds bounds)"}</code> | Called when a player leaves the area. |
 
 ## Used in
 

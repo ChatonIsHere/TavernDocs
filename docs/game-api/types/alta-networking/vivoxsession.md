@@ -27,10 +27,10 @@ One joined Vivox voice or text channel. Connects with a token from the API and p
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-session" /><code>{"private readonly IChannelSession session"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-session" /><code>{"private readonly IChannelSession session"}</code> | The underlying Vivox channel session. |
 
 </details>
 
@@ -63,13 +63,13 @@ One joined Vivox voice or text channel. Connects with a token from the API and p
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-connectasync" /><code>{"private async Task<bool> ConnectAsync(string accessToken)"}</code> |
-| <Link id="m-pairwithplayer" /><code>{"private void PairWithPlayer(string key, IParticipant player, float delay = 0.5)"}</code> |
-| <Link id="m-playerjoined" /><code>{"private void PlayerJoined(object sender, KeyEventArg<string> e)"}</code> |
-| <Link id="m-playerleft" /><code>{"private void PlayerLeft(object sender, KeyEventArg<string> e)"}</code> |
-| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connectasync" /><code>{"private async Task<bool> ConnectAsync(string accessToken)"}</code> | Connects the channel session with the access token and returns whether it worked. |
+| <Link id="m-pairwithplayer" /><code>{"private void PairWithPlayer(string key, IParticipant player, float delay = 0.5)"}</code> | Links a Vivox participant to the matching player by user ID, retrying with a doubling delay until the player shows up or the participant leaves. |
+| <Link id="m-playerjoined" /><code>{"private void PlayerJoined(object sender, KeyEventArg<string> e)"}</code> | Called when a participant joins; logs it and starts pairing them with a player. |
+| <Link id="m-playerleft" /><code>{"private void PlayerLeft(object sender, KeyEventArg<string> e)"}</code> | Called when a participant leaves. Only logs it. |
+| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> | Logs session changes and raises `AudioConnected` or `TextConnected` when that state becomes connected. |
 
 </details>
 

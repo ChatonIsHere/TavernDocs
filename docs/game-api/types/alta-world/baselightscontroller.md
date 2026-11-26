@@ -32,9 +32,9 @@ Base for the platform light controllers (PC and Android) that manage the active 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Registered update method; added when the first light is added and removed when the last one goes. |
 
 </details>
 

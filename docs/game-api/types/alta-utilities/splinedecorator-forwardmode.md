@@ -1,6 +1,6 @@
 ---
 title: "SplineDecorator.ForwardMode"
-description: "enum SplineDecorator.ForwardMode in Root.Township."
+description: "How SplineDecorator picks each placed object's forward direction: the curve's direction, or towards the next placed point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplineDecorator.ForwardMode
 
 An **enum** in `Root.Township`, `Alta.Bezier`.
+
+How `SplineDecorator` picks each placed object's forward direction: the curve's direction, or towards the next placed point.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator)

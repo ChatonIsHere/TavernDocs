@@ -35,14 +35,14 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> |
-| <Link id="m-effectcache" /><code>{"private static readonly List<MeshRenderer> effectCache"}</code> |
-| <Link id="m-filtercache" /><code>{"private static readonly List<MeshRenderer> filterCache"}</code> |
-| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> |
-| <Link id="m-mesheffects" /><code>{"private readonly List<"}<Link to="/game-api/types/global-m-o/mesheffect">{"MeshEffect"}</Link>{"> meshEffects"}</code> |
-| <Link id="m-transformstack" /><code>{"private static readonly Stack<Transform> transformStack"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> | Material copied for the effect meshes. |
+| <Link id="m-effectcache" /><code>{"private static readonly List<MeshRenderer> effectCache"}</code> | Shared static list reused while gathering renderers. |
+| <Link id="m-filtercache" /><code>{"private static readonly List<MeshRenderer> filterCache"}</code> | Shared static list returned by `GetRenderersWithoutDocks`. |
+| <Link id="m-mesheffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" meshEffectDefinition"}</code> | Pooled mesh effect spawned on each renderer, copying its mesh. |
+| <Link id="m-mesheffects" /><code>{"private readonly List<"}<Link to="/game-api/types/global-m-o/mesheffect">{"MeshEffect"}</Link>{"> meshEffects"}</code> | Mesh effects spawned for the current target; released by `CleanEffects`. |
+| <Link id="m-transformstack" /><code>{"private static readonly Stack<Transform> transformStack"}</code> | Shared static stack used to walk the hierarchy. |
 
 </details>
 
@@ -59,10 +59,10 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-getrendererswithoutdocks" /><code>{"private static List<MeshRenderer> GetRenderersWithoutDocks(Transform root)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Makes this effect's own copy of `baseMaterial`. |
+| <Link id="m-getrendererswithoutdocks" /><code>{"private static List<MeshRenderer> GetRenderersWithoutDocks(Transform root)"}</code> | Collects mesh renderers under a transform, skipping any branch that has a `PickupDock` (so docked items are left out). Uses a shared static list. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "EditorLink"
-description: "class EditorLink in Root.Township."
+description: "Serializable link to an asset by GUID, meant for editor use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EditorLink
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable link to an asset by GUID, meant for editor use. In the game build every method is a stub.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
@@ -25,21 +27,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-guid" /><code>{"private string guid"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-guid" /><code>{"private string guid"}</code> | GUID of the linked asset. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-load" /><code>{"T Load<T>()"}</code> |
-| <Link id="m-set" /><code>{"void Set(Object value)"}</code> |
-| <Link id="m-setifnull" /><code>{"void SetIfNull(Func<Object> getValue)"}</code> |
-| <Link id="m-setifnull-2" /><code>{"void SetIfNull(Object value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-load" /><code>{"T Load<T>()"}</code> | Logs an error and returns null outside the editor. |
+| <Link id="m-set" /><code>{"void Set(Object value)"}</code> | Does nothing in the game build. |
+| <Link id="m-setifnull" /><code>{"void SetIfNull(Func<Object> getValue)"}</code> | Does nothing in the game build. |
+| <Link id="m-setifnull-2" /><code>{"void SetIfNull(Object value)"}</code> | Does nothing in the game build. |
 
 ## Used in
 

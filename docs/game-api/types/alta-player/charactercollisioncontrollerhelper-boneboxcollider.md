@@ -1,6 +1,6 @@
 ---
 title: "CharacterCollisionControllerHelper.BoneBoxCollider"
-description: "class CharacterCollisionControllerHelper.BoneBoxCollider in Root.Township."
+description: "Settings for a box collider on a character bone, used by CharacterCollisionControllerHelper when it builds the body colliders."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CharacterCollisionControllerHelper.BoneBoxCollider
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Settings for a box collider on a character bone, used by `CharacterCollisionControllerHelper` when it builds the body colliders.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`CharacterCollisionControllerHelper`](/game-api/types/alta-player/charactercollisioncontrollerhelper)
@@ -28,19 +30,19 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-center" /><code>{"private Vector3 center"}</code> |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-center" /><code>{"private Vector3 center"}</code> | Backing field for `Center`. |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> | Backing field for `Size`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> |
-| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-center-2" /><code>{"Vector3 Center { get; }"}</code> | Centre of the box in the bone's space. |
+| <Link id="m-size-2" /><code>{"Vector3 Size { get; }"}</code> | Size of the box. |
 
 ## Used in
 

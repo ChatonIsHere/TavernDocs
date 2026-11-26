@@ -28,11 +28,11 @@ A snapshot of server performance numbers (FPS, networking, serialization, entity
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cachedtime" /><code>{"private float cachedTime"}</code> |
-| <Link id="m-processmetrics" /><code>{"private readonly "}<Link to="/game-api/types/global-p/processmetrics">{"ProcessMetrics"}</Link>{" processMetrics"}</code> |
-| <Link id="m-serverstarttime" /><code>{"private readonly float serverStartTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachedtime" /><code>{"private float cachedTime"}</code> | `Time.time` when the data was last refreshed; used for `TimeSinceServerStart`. |
+| <Link id="m-processmetrics" /><code>{"private readonly "}<Link to="/game-api/types/global-p/processmetrics">{"ProcessMetrics"}</Link>{" processMetrics"}</code> | Reads the server process's CPU and RAM use. |
+| <Link id="m-serverstarttime" /><code>{"private readonly float serverStartTime"}</code> | `Time.time` when this object was made. |
 
 </details>
 

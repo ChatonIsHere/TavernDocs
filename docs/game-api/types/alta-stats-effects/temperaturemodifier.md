@@ -1,6 +1,6 @@
 ---
 title: "TemperatureModifier"
-description: "delegate TemperatureModifier in Root.Township."
+description: "Handler for HeatPoint.TemperatureModifier."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TemperatureModifier
 
 A **delegate** in `Root.Township`, `Alta.Heat`.
+
+Handler for `HeatPoint.TemperatureModifier`. Can change a new temperature by reference before the heat point stores it, as `HeatPointTemperatureController` does to clamp it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

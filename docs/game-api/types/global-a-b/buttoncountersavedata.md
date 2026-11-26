@@ -1,6 +1,6 @@
 ---
 title: "ButtonCounterSaveData"
-description: "class ButtonCounterSaveData in Root.Township."
+description: "Save data for a ButtonCounter: its current amount."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonCounterSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `ButtonCounter`: its current amount.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NewSaveData<ButtonCounter, ButtonCounterSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-savedamount" /><code>{"int savedAmount"}</code> | The counter's `Amount` when saved, restored on load. |
 
 ## Used in
 

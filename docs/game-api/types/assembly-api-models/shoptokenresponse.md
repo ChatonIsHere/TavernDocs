@@ -1,6 +1,6 @@
 ---
 title: "ShopTokenResponse"
-description: "class ShopTokenResponse in Alta.Api.DataTransferModels."
+description: "Web API model for a shop purchase token from the Xsolla payment provider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Web API model for a shop purchase token from the Xsolla payment provider.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-shopurl" /><code>{"string ShopUrl { get; }"}</code> |
-| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> |
-| <Link id="m-transactionidentifier" /><code>{"int TransactionIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-shopurl" /><code>{"string ShopUrl { get; }"}</code> | Xsolla pay station address built from `Token`. |
+| <Link id="m-token" /><code>{"string Token { get; set; }"}</code> | The Xsolla access token for the purchase. |
+| <Link id="m-transactionidentifier" /><code>{"int TransactionIdentifier { get; set; }"}</code> | ID of the shop transaction. |
 
 ## Used in
 

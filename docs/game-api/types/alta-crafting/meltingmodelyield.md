@@ -1,6 +1,6 @@
 ---
 title: "MeltingModelYield"
-description: "delegate MeltingModelYield in Root.Township."
+description: "Filter for MeltingModel.yieldMultiplierFilter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeltingModelYield
 
 A **delegate** in `Root.Township`, `Alta.Blacksmithing`.
+
+Filter for `MeltingModel.yieldMultiplierFilter`. Handlers can change `multiplier` to scale how much the model yields.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

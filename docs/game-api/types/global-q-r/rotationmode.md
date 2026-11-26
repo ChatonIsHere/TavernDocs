@@ -1,6 +1,6 @@
 ---
 title: "RotationMode"
-description: "enum RotationMode in Root.Township."
+description: "How a GrabPoint sets the hand's rotation when grabbed: Free, Fixed, FixedFlip, Pole, OneWayPole or Surface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RotationMode
 
 An **enum** in `Root.Township`, no namespace.
+
+How a `GrabPoint` sets the hand's rotation when grabbed: `Free`, `Fixed`, `FixedFlip`, `Pole`, `OneWayPole` or `Surface`.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 

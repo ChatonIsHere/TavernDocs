@@ -29,17 +29,17 @@ Marks a surface players can climb. Hands add pressure each physics step, and the
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canmove" /><code>{"private bool canMove"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-grippriority" /><code>{"private float gripPriority"}</code> |
-| <Link id="m-lasttime" /><code>{"private float lastTime"}</code> |
-| <Link id="m-maximumpressure" /><code>{"private float maximumPressure"}</code> |
-| <Link id="m-oldpressuremagnitude" /><code>{"private float oldPressureMagnitude"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-totalpressure" /><code>{"private Vector3 totalPressure"}</code> |
-| <Link id="m-totalpressuremagnitude" /><code>{"private float totalPressureMagnitude"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canmove" /><code>{"private bool canMove"}</code> | Backing field for `CanMove`. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`. Must be on this object or a parent. |
+| <Link id="m-grippriority" /><code>{"private float gripPriority"}</code> | Backing field for `GripPriority`. Negative means ungrabbable. |
+| <Link id="m-lasttime" /><code>{"private float lastTime"}</code> | Fixed time pressure was last applied. Used to reset the total each physics step. |
+| <Link id="m-maximumpressure" /><code>{"private float maximumPressure"}</code> | Backing field for `MaximumPressure`. Above it the grip breaks; -1 means it never breaks. |
+| <Link id="m-oldpressuremagnitude" /><code>{"private float oldPressureMagnitude"}</code> | Total pressure from the previous physics step. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Rigidbody this surface is on. If it is not kinematic, the surface can't be gripped. |
+| <Link id="m-totalpressure" /><code>{"private Vector3 totalPressure"}</code> | Pressure added this physics step. |
+| <Link id="m-totalpressuremagnitude" /><code>{"private float totalPressureMagnitude"}</code> | Magnitude of `totalPressure`. |
 
 </details>
 
@@ -60,9 +60,9 @@ Marks a surface players can climb. Hands add pressure each physics step, and the
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-fadetime" /><code>{"private float FadeTime { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fadetime" /><code>{"private float FadeTime { get; }"}</code> | 1 just after pressure was applied, fading to 0 over 0.2 seconds. Scales the current pressure values. |
 
 </details>
 

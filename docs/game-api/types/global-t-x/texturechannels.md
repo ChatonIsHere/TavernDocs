@@ -1,6 +1,6 @@
 ---
 title: "TextureChannels"
-description: "enum TextureChannels in Root.Township."
+description: "Channels kept when writing a TextureOutput: RGBA or RGB."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextureChannels
 
 An **enum** in `Root.Township`, no namespace.
+
+Channels kept when writing a `TextureOutput`: `RGBA` or `RGB`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

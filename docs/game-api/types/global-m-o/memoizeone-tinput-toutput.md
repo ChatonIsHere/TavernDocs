@@ -1,6 +1,6 @@
 ---
 title: "MemoizeOne<TInput, TOutput>"
-description: "class MemoizeOne<TInput, TOutput> in Root.Township."
+description: "Caches the result of a function for the last input only."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MemoizeOne&lt;TInput, TOutput&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+Caches the result of a function for the last input only. A new input reruns the function.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Derived types** [`MemoizeComponentOne<T>`](/game-api/types/global-m-o/memoizecomponentone-t)
@@ -26,21 +28,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-comparer" /><code>{"private IEqualityComparer<TInput> comparer"}</code> |
-| <Link id="m-evaluate" /><code>{"private Func<TInput, TOutput> evaluate"}</code> |
-| <Link id="m-lastinput" /><code>{"private TInput lastInput"}</code> |
-| <Link id="m-lastoutput" /><code>{"private TOutput lastOutput"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-comparer" /><code>{"private IEqualityComparer<TInput> comparer"}</code> | Comparer used to match inputs. |
+| <Link id="m-evaluate" /><code>{"private Func<TInput, TOutput> evaluate"}</code> | The function being cached. |
+| <Link id="m-lastinput" /><code>{"private TInput lastInput"}</code> | The last input evaluated. |
+| <Link id="m-lastoutput" /><code>{"private TOutput lastOutput"}</code> | The result for `lastInput`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-forget" /><code>{"void Forget()"}</code> |
-| <Link id="m-get" /><code>{"TOutput Get(TInput input)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forget" /><code>{"void Forget()"}</code> | Clears the cached input and output. |
+| <Link id="m-get" /><code>{"TOutput Get(TInput input)"}</code> | Returns the cached output if the input matches the last one, otherwise evaluates and caches. A default input on first call returns default without evaluating. |
 
 ## Used in
 

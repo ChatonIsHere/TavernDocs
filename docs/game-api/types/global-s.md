@@ -18,10 +18,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SABoneColliderBuilder`](/game-api/types/global-s/sabonecolliderbuilder) | class | `MonoBehaviour` | 8 |  |
 | [`SABoneColliderChild`](/game-api/types/global-s/sabonecolliderchild) | class | `MonoBehaviour` | 0 |  |
 | [`SABoneColliderCommon`](/game-api/types/global-s/sabonecollidercommon) | class |  | 0 |  |
-| [`SABoneColliderCommon.BoneProperty`](/game-api/types/global-s/sabonecollidercommon-boneproperty) | class |  | 2 |  |
+| [`SABoneColliderCommon.BoneProperty`](/game-api/types/global-s/sabonecollidercommon-boneproperty) | class |  | 2 | Per-bone option for the SA bone collider builder (a third-party editor tool for making colliders from skinned meshes). |
 | [`SABoneColliderCommon.BoneTriangleExtent`](/game-api/types/global-s/sabonecollidercommon-bonetriangleextent) | enum |  | 3 |  |
 | [`SABoneColliderCommon.BoneWeightType`](/game-api/types/global-s/sabonecollidercommon-boneweighttype) | enum |  | 2 |  |
-| [`SABoneColliderCommon.SABoneColliderBuilderProperty`](/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty) | class |  | 7 |  |
+| [`SABoneColliderCommon.SABoneColliderBuilderProperty`](/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty) | class |  | 7 | Settings for the SA bone collider builder (third-party editor tool): how to split, reduce and shape colliders for each bone, and what rigidbodies to add. |
 | [`SABoneColliderCommon.SABoneColliderProperty`](/game-api/types/global-s/sabonecollidercommon-sabonecolliderproperty) | class |  | 7 | Editor settings for building colliders on one bone (from the SA collider builder tool): bone, split, reducer, collider and rigidbody options. |
 | [`SABoneColliderCommon.SplitProperty`](/game-api/types/global-s/sabonecollidercommon-splitproperty) | class |  | 7 | Settings for how the SA collider builder (a third-party editor tool) splits a skinned mesh by bone weight before making bone colliders. Editor data only, nothing in game code reads it. |
 | [`SAColliderBuilderCommon`](/game-api/types/global-s/sacolliderbuildercommon) | class |  | 0 |  |
@@ -41,7 +41,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SAMeshCollider`](/game-api/types/global-s/sameshcollider) | class | `MonoBehaviour` | 26 | Component from the third-party SA Collider Builder editor tool: holds the settings used to build mesh colliders for an object. Editor-time data; nothing in the game reads it at runtime. |
 | [`SAMeshColliderBuilder`](/game-api/types/global-s/sameshcolliderbuilder) | class | `MonoBehaviour` | 12 | Editor component from the SA Collider Builder tool that builds mesh colliders for its object. The properties are shortcuts into `meshColliderBuilderProperty`. |
 | [`SAMeshColliderCommon`](/game-api/types/global-s/sameshcollidercommon) | class |  | 0 |  |
-| [`SAMeshColliderCommon.SAMeshColliderBuilderProperty`](/game-api/types/global-s/sameshcollidercommon-sameshcolliderbuilderproperty) | class |  | 7 |  |
+| [`SAMeshColliderCommon.SAMeshColliderBuilderProperty`](/game-api/types/global-s/sameshcollidercommon-sameshcolliderbuilderproperty) | class |  | 7 | Settings for the SA mesh collider builder (third-party editor tool): how to split, reduce and shape colliders made from a mesh. |
 | [`SAMeshColliderCommon.SAMeshColliderProperty`](/game-api/types/global-s/sameshcollidercommon-sameshcolliderproperty) | class |  | 6 | All the settings of one SA mesh collider build (split, reducer, collider and rigidbody options), from the third-party SA collider builder tool. Held by `SAMeshCollider`. |
 | [`SAMeshColliderCommon.SplitMesh`](/game-api/types/global-s/sameshcollidercommon-splitmesh) | class |  | 10 |  |
 | [`SAMeshColliderCommon.SplitMode`](/game-api/types/global-s/sameshcollidercommon-splitmode) | enum |  | 4 |  |
@@ -85,7 +85,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SentGiftTag`](/game-api/types/global-s/sentgifttag) | class |  | 4 | The sender and receiver of a gift sent by post box, saved with the `SentGift`. |
 | [`SerializableServerSettings`](/game-api/types/global-s/serializableserversettings) | class |  | 5 |  |
 | [`SerializedImpactHit`](/game-api/types/global-s/serializedimpacthit) | struct |  | 8 | A tool hit packed for the network by `ImpactSystemHitManager`: the tool entity, where it hit and the damage values. |
-| [`SerializedRenderTextureDescriptor`](/game-api/types/global-s/serializedrendertexturedescriptor) | class |  | 7 |  |
+| [`SerializedRenderTextureDescriptor`](/game-api/types/global-s/serializedrendertexturedescriptor) | class |  | 7 | Inspector-editable render texture settings that can hand out a temporary render texture. |
 | [`SerializedSavedDynamicObject`](/game-api/types/global-s/serializedsaveddynamicobject) | class | `SavedDynamicObject` | 11 | A saved object (prefab hash plus its serialized state) in a form Unity can serialize, with the chunk versioning it was saved under. Used for postboxes, set pieces and spawn strings. |
 | [`SerializedTimedEvent`](/game-api/types/global-s/serializedtimedevent) | class | `NetworkEntityBehaviour`, `ISavable<TimedEventSaveData>`, `ISavableSave<TimedEventSaveData>`, +1 more | 3 |  |
 | [`SerializeValue<T>`](/game-api/types/global-s/serializevalue-t) | delegate |  | 0 |  |
@@ -94,7 +94,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerBoardType`](/game-api/types/global-s/serverboardtype) | enum |  | 4 | Which list a server board in the menu shows: public servers, my servers, open servers or discover. |
 | [`ServerCacheManager`](/game-api/types/global-s/servercachemanager) | class | `CacheManager` | 4 |  |
 | [`ServerConfigFileManager`](/game-api/types/global-s/serverconfigfilemanager) | class |  | 1 |  |
-| [`ServerConfiguration`](/game-api/types/global-s/serverconfiguration) | class | `ICloneable` | 3 |  |
+| [`ServerConfiguration`](/game-api/types/global-s/serverconfiguration) | class | `ICloneable` | 3 | A server's join list, saved as JSON in the server's `server_config` file. The old join handler checks it when a player connects. |
 | [`ServerConsole`](/game-api/types/global-s/serverconsole) | abstract class |  | 5 | [Logging](../console-and-utilities/logging.md) |
 | [`ServerConsoleManager`](/game-api/types/global-s/serverconsolemanager) | class | `SingletonBehaviour<ServerConsoleManager>` | 5 | [Remote console](../console-and-utilities/remote-console.md#serverconsolemanager), [Startup and app state](../console-and-utilities/startup-and-app-state.md): Get it with `SingletonBehaviour<ServerConsoleManager>.Instance`; most of what you need is static. |
 | [`ServerCreator`](/game-api/types/global-s/servercreator) | class | `MonoBehaviour` | 1 |  |
@@ -102,14 +102,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ServerCubeMaps.Create`](/game-api/types/global-s/servercubemaps-create) | class | `AltaMenuItemBase.Assets.Create.Township.Meta.ScriptableObject<ServerCubeMaps>` | 0 |  |
 | [`ServerDiagnosticsManager`](/game-api/types/global-s/serverdiagnosticsmanager) | class | `MonoBehaviour` | 3 |  |
 | [`ServerDiagnosticsSettings`](/game-api/types/global-s/serverdiagnosticssettings) | class | `GlobalSettings<ServerDiagnosticsSettings>` | 2 |  |
-| [`ServerDowntimeData`](/game-api/types/global-s/serverdowntimedata) | class |  | 6 |  |
+| [`ServerDowntimeData`](/game-api/types/global-s/serverdowntimedata) | class |  | 6 | A date and time split into fields, probably for a planned server downtime. Not used elsewhere in this build. |
 | [`ServerElement`](/game-api/types/global-s/serverelement) | class | `Interactable`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 | One entry on the main menu's server list: shows a server's name, player count and playability colour, and can be selected. |
 | [`ServerElementEvent`](/game-api/types/global-s/serverelementevent) | class | `AltaEvent<ServerElement, ServerElementUnityEvent>` | 0 | A serializable `AltaEvent` that passes a `ServerElement`, for wiring server list callbacks in the inspector. Client menu UI. |
 | [`ServerElementUnityEvent`](/game-api/types/global-s/serverelementunityevent) | class | `UnityEvent<ServerElement>` | 0 |  |
 | [`ServerHeartbeat`](/game-api/types/global-s/serverheartbeat) | class |  | 3 | [Startup and app state](../console-and-utilities/startup-and-app-state.md) |
 | [`ServerHostingGameMode`](/game-api/types/global-s/serverhostinggamemode) | class | `GameMode` | 7 |  |
 | [`ServerInfoBoard`](/game-api/types/global-s/serverinfoboard) | class | `MonoBehaviour` | 2 |  |
-| [`ServerListType`](/game-api/types/global-s/serverlisttype) | enum |  | 3 |  |
+| [`ServerListType`](/game-api/types/global-s/serverlisttype) | enum |  | 3 | How `ServerConfiguration` uses its player list: `None` (ignored), `BlackList` (listed players blocked) or `WhiteList` (only listed players allowed). |
 | [`ServerProfilingData`](/game-api/types/global-s/serverprofilingdata) | class |  | 61 | A snapshot of server performance numbers (FPS, networking, serialization, entity and creature counts, CPU and RAM) sent out by `ServerDiagnosticsManager` as the `ProfilingData` console event. Obsolete in favour of the analytics system; server only. |
 | [`ServerRemoteConsole`](/game-api/types/global-s/serverremoteconsole) | class | `IRemoteConsole` | 7 | [Remote console](../console-and-utilities/remote-console.md) |
 | [`ServerSelectionDisplay`](/game-api/types/global-s/serverselectiondisplay) | class | `MonoBehaviour` | 8 | Main menu server list laid out along a spline. Scrolling moves the elements along it; the one nearest the selection point is selected. Client only. |
@@ -130,9 +130,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SetPrefabModifier`](/game-api/types/global-s/setprefabmodifier) | class | `SpawnModifierSpawnParameters` | 1 |  |
 | [`SetPrefabModifier.Create`](/game-api/types/global-s/setprefabmodifier-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SetPrefabModifier>` | 0 |  |
 | [`SetStepSoundOverrideLocoAction`](/game-api/types/global-s/setstepsoundoverridelocoaction) | class | `LocomotionModifierAction` | 2 |  |
-| [`SettingDescriptionPanel`](/game-api/types/global-s/settingdescriptionpanel) | class | `MonoBehaviour` | 1 |  |
+| [`SettingDescriptionPanel`](/game-api/types/global-s/settingdescriptionpanel) | class | `MonoBehaviour` | 1 | In-world text panel that shows the name and description of the setting a player is looking at on a settings board. Client side; reached through `SettingsPanel.DescriptionPanel`. |
 | [`SettingsJsonUtility`](/game-api/types/global-s/settingsjsonutility) | class | `MonoBehaviour` | 0 |  |
-| [`SettingsPanel`](/game-api/types/global-s/settingspanel) | class | `MonoBehaviour` | 3 |  |
+| [`SettingsPanel`](/game-api/types/global-s/settingspanel) | class | `MonoBehaviour` | 3 | In-world settings board that slides down when a lever is pulled and shows that lever's board, then slides back up when every lever is off. Client side. |
 | [`ShaderVariantWarmer`](/game-api/types/global-s/shadervariantwarmer) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 4 |  |
 | [`ShakeDetector`](/game-api/types/global-s/shakedetector) | class | `MonoBehaviour` | 2 |  |
 | [`ShakeDetectorFactory`](/game-api/types/global-s/shakedetectorfactory) | class |  | 1 |  |
@@ -141,7 +141,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ShakeInputStructure`](/game-api/types/global-s/shakeinputstructure) | class | `SkillInputStructure` | 6 |  |
 | [`ShakeInputStructure.Create`](/game-api/types/global-s/shakeinputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<ShakeInputStructure>` | 0 |  |
 | [`ShapeCollectorHelper`](/game-api/types/global-s/shapecollectorhelper) | class | `MonoBehaviour` | 1 |  |
-| [`ShapeImpactCollector`](/game-api/types/global-s/shapeimpactcollector) | abstract class | `ScriptableObject` | 3 |  |
+| [`ShapeImpactCollector`](/game-api/types/global-s/shapeimpactcollector) | abstract class | `ScriptableObject` | 3 | Asset describing a shape (sphere or cylinder) that collects the colliders an area attack hits. `AreaAttackSkill` picks one per skill level. |
 | [`ShootArguments`](/game-api/types/global-s/shootarguments) | struct |  | 7 | Network payload for a shot from a bow or `Shooter`: the projectile entity, where it was released and how hard. Sent with a `MethodSyncStruct` in both directions. |
 | [`Shooter`](/game-api/types/global-s/shooter) | class | `NetworkEntityBehaviour` | 4 | Launches a pickup (an arrow or any item) from a bow or similar launcher and syncs the shot. Both sides: the shooting client simulates and sends it, the server relays it to the chunk. |
 | [`ShowBounds`](/game-api/types/global-s/showbounds) | class | `MonoBehaviour` | 0 |  |
@@ -151,7 +151,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SignPostPanel`](/game-api/types/global-s/signpostpanel) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 0 |  |
 | [`SilenceAnimationEvents`](/game-api/types/global-s/silenceanimationevents) | class | `MonoBehaviour` | 4 |  |
 | [`SimpleAudioControl`](/game-api/types/global-s/simpleaudiocontrol) | class |  | 1 |  |
-| [`SimpleDummy`](/game-api/types/global-s/simpledummy) | class | `MonoBehaviour` | 2 |  |
+| [`SimpleDummy`](/game-api/types/global-s/simpledummy) | class | `MonoBehaviour` | 2 | Plain holder for a character model's animator and skinned mesh, used by `BonesBaking` in the editor. |
 | [`SimpleNetworkedPivot`](/game-api/types/global-s/simplenetworkedpivot) | class | `NetworkEntityBehaviour`, `INetworkSerialized` | 3 |  |
 | [`SimpleNoiseFilter`](/game-api/types/global-s/simplenoisefilter) | class | `SpawnModifierPoint` | 1 |  |
 | [`SimpleNoiseFilter.Create`](/game-api/types/global-s/simplenoisefilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SimpleNoiseFilter>` | 0 |  |
@@ -166,8 +166,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SkillOrbHolder`](/game-api/types/global-s/skillorbholder) | class | `MonoBehaviour` | 2 | Client visual for one orb socket in the bought-skills display: animates rotator pieces open or closed and lerps a colour. Driven by `BoughtSkillVisualizer`. |
 | [`SkillOrbInteractionSpline`](/game-api/types/global-s/skillorbinteractionspline) | class | `PooledObject` | 2 |  |
 | [`SkillOrbInteractionSpline.SplineParamaters`](/game-api/types/global-s/skillorbinteractionspline-splineparamaters) | enum |  | 4 |  |
-| [`SkillOrbMovement`](/game-api/types/global-s/skillorbmovement) | class | `MonoBehaviour` | 6 |  |
-| [`SkillOrbOperator`](/game-api/types/global-s/skillorboperator) | class | `MonoBehaviour` | 4 |  |
+| [`SkillOrbMovement`](/game-api/types/global-s/skillorbmovement) | class | `MonoBehaviour` | 6 | Moves a skill orb from its origin up to a midpoint, then out to its target slot, when a skill shrine spawns it. Reached through `SkillOrb.Movement`. |
+| [`SkillOrbOperator`](/game-api/types/global-s/skillorboperator) | class | `MonoBehaviour` | 4 | The point on a skill shrine where a player holds a skill orb to buy or swap it. `SkillOrbReplacer` joins to it, drives the fill and breaks the joint when done. |
 | [`SkillOrbReplacer`](/game-api/types/global-s/skillorbreplacer) | class | `ProgressionSlotContainer` | 3 | The orb a player pulls from a skill shrine to buy a skill. Holding it at the shrine's operator for a few seconds unlocks the slot; letting go floats it back and destroys it. |
 | [`SkillOrbScaler`](/game-api/types/global-s/skillorbscaler) | class | `SkillShrineVisualizer` | 3 |  |
 | [`SkillOrbStatusUpdateDelegate`](/game-api/types/global-s/skillorbstatusupdatedelegate) | delegate |  | 0 |  |
@@ -205,7 +205,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SoundEffectsMap`](/game-api/types/global-s/soundeffectsmap) | class | `ScriptableObject` | 1 |  |
 | [`SoundEffectsMap.Create`](/game-api/types/global-s/soundeffectsmap-create) | class | `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject<SoundEffectsMap>` | 0 |  |
 | [`SoundSource`](/game-api/types/global-s/soundsource) | class | `MonoBehaviour` | 6 | Plays a sound effect on (or at) its object, optionally when enabled, and stops it when disabled. Does nothing when headless. |
-| [`SoundSourceEvent`](/game-api/types/global-s/soundsourceevent) | delegate |  | 0 |  |
+| [`SoundSourceEvent`](/game-api/types/global-s/soundsourceevent) | delegate |  | 0 | Parameterless handler for `SoundSource.OnPlay` and `SoundSource.OnStop`. |
 | [`SpaceDefinedAttribute<T>`](/game-api/types/global-s/spacedefinedattribute-t) | abstract class | `MonoBehaviour` | 1 | Base for trigger areas whose effect follows a network of connected `SpacePoint`s, such as atmosphere and darkness areas. While the local player is inside, it finds the nearest point pair and reports progress between them. |
 | [`SpaceFilter`](/game-api/types/global-s/spacefilter) | class | `SpawnModifierPoint` | 1 |  |
 | [`SpaceFilter.Create`](/game-api/types/global-s/spacefilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SpaceFilter>` | 0 |  |
@@ -241,7 +241,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SpawnModifierSpawnParameters`](/game-api/types/global-s/spawnmodifierspawnparameters) | abstract class | `SpawnModifier<SpawnParameters>` | 0 | Base for spawn modifiers in forest generation that work on spawn parameters. |
 | [`SpawnModifierSpawnParametersRedirect`](/game-api/types/global-s/spawnmodifierspawnparametersredirect) | class | `SpawnModifierSpawnParameters` | 2 |  |
 | [`SpawnOnDestroyed`](/game-api/types/global-s/spawnondestroyed) | class | `MonoBehaviour` | 1 |  |
-| [`SpawnPositions`](/game-api/types/global-s/spawnpositions) | class | `MonoBehaviour`, `ISpawnPositions` | 4 |  |
+| [`SpawnPositions`](/game-api/types/global-s/spawnpositions) | class | `MonoBehaviour`, `ISpawnPositions` | 4 | Fixed list of spawn points for a population, either live child transforms or positions and rotations cached relative to this object. |
 | [`SpecialBiomeAttributes`](/game-api/types/global-s/specialbiomeattributes) | class | `GlobalSettings<SpecialBiomeAttributes>` | 9 | Global settings asset listing the biome attributes forest generation fills in for each node and path (depth, radius, elevation, slope and so on). Get it with `GlobalSettings<SpecialBiomeAttributes>.Instance`. |
 | [`SpecialBiomeAttributes.Create`](/game-api/types/global-s/specialbiomeattributes-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<SpecialBiomeAttributes>` | 0 |  |
 | [`SpecificCraftTask`](/game-api/types/global-s/specificcrafttask) | class | `HashSetAction<SpecificCraftTaskArgument>` | 1 |  |
@@ -283,7 +283,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StaticPageProvider`](/game-api/types/global-s/staticpageprovider) | class | `PageProvider` | 6 |  |
 | [`StaticPositionSpawner`](/game-api/types/global-s/staticpositionspawner) | class | `MonoBehaviour` | 0 |  |
 | [`StatReachedAchievement`](/game-api/types/global-s/statreachedachievement) | class | `GameAchievement` | 2 |  |
-| [`StatType`](/game-api/types/global-s/stattype) | enum |  | 2 |  |
+| [`StatType`](/game-api/types/global-s/stattype) | enum |  | 2 | Whether a Steam stat is stored as an `Int` or a `Float`; checked by `SteamStats`. |
 | [`StatUpgradeEffect`](/game-api/types/global-s/statupgradeeffect) | class | `PooledObject` | 2 |  |
 | [`SteamVRDeviceController`](/game-api/types/global-s/steamvrdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
 | [`SteamVRDeviceLifecycle`](/game-api/types/global-s/steamvrdevicelifecycle) | class | `VirtualRealityDeviceLifecycle` | 2 |  |

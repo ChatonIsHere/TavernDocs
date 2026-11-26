@@ -1,6 +1,6 @@
 ---
 title: "TextureScale"
-description: "enum TextureScale in Root.Township."
+description: "Downscale factor for a TextureOutput: full, half, quarter or eighth size (the value is the divisor)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextureScale
 
 An **enum** in `Root.Township`, no namespace.
+
+Downscale factor for a `TextureOutput`: full, half, quarter or eighth size (the value is the divisor).
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

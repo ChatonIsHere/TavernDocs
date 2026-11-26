@@ -1,6 +1,6 @@
 ---
 title: "ServerSaveUtility"
-description: "class ServerSaveUtility in Root.Township."
+description: "Paths to one game server's save folders (save, chunks, cache, logs and player saves)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerSaveUtility
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Paths to one game server's save folders (save, chunks, cache, logs and player saves). The server makes one for itself; static helpers work from a `GameServerInfo`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
@@ -26,39 +28,39 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-playersaveutility" /><code>{"private "}<Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" playerSaveUtility"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-playersaveutility" /><code>{"private "}<Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" playerSaveUtility"}</code> | Backing field for `PlayerSaveUtility`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-cachefolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" CacheFolder { get; }"}</code> |
-| <Link id="m-chunksfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ChunksFolder { get; }"}</code> |
-| <Link id="m-logsfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" LogsFolder { get; }"}</code> |
-| <Link id="m-logspath" /><code>{"string LogsPath { get; }"}</code> |
-| <Link id="m-playersaveutility-2" /><code><Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" "}<Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" { get; }"}</code> |
-| <Link id="m-savefolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" SaveFolder { get; }"}</code> |
-| <Link id="m-serverfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ServerFolder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachefolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" CacheFolder { get; }"}</code> | The `Save/Cache` folder. The server's web server serves it at `/cache`. |
+| <Link id="m-chunksfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ChunksFolder { get; }"}</code> | The `Save/Chunks` folder where chunk saves go. |
+| <Link id="m-logsfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" LogsFolder { get; }"}</code> | The server's `Logs` folder. |
+| <Link id="m-logspath" /><code>{"string LogsPath { get; }"}</code> | Path of `LogsFolder`. |
+| <Link id="m-playersaveutility-2" /><code><Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" "}<Link to="/game-api/types/alta-utilities/playersaveutility">{"PlayerSaveUtility"}</Link>{" { get; }"}</code> | Player save helper for the `Save/Players` folder. |
+| <Link id="m-savefolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" SaveFolder { get; }"}</code> | The server's `Save` folder. |
+| <Link id="m-serverfolder" /><code><Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" ServerFolder { get; }"}</code> | The server's root folder under the servers folder. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-deletesave" /><code>{"static void DeleteSave("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |
-| <Link id="m-getconfig" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetConfig("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server, string name)"}</code> |
-| <Link id="m-unload" /><code>{"void Unload()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deletesave" /><code>{"static void DeleteSave("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Deletes a server's whole `Save` folder, if it exists. |
+| <Link id="m-getconfig" /><code>{"static "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" GetConfig("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server, string name)"}</code> | Gets a JSON file with the given name from the server's folder. |
+| <Link id="m-unload" /><code>{"void Unload()"}</code> | Unloads every cached file under the server folder. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getserversavesfolder" /><code>{"private static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetServerSavesFolder("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getserversavesfolder" /><code>{"private static "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" GetServerSavesFolder("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Finds the server's folder, using the old folder name if that one exists. |
 
 </details>
 

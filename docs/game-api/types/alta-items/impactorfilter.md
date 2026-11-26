@@ -1,6 +1,6 @@
 ---
 title: "ImpactorFilter"
-description: "abstract class ImpactorFilter in Root.Township."
+description: "Base ScriptableObject for a filter on contact points, listed in ImpactorSettings.Filters."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactorFilter
 
 An **abstract class** in `Root.Township`, `Alta.Impact`.
+
+Base ScriptableObject for a filter on contact points, listed in `ImpactorSettings.Filters`. `ChiselingFilterSettings` is one.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, `Alta.Impact`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkfilter" /><code>{"abstract bool CheckFilter("}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{" contactPoint, out float multiplier)"}</code> | Whether the contact point passes, with a multiplier to apply. |
 
 ## Used in
 

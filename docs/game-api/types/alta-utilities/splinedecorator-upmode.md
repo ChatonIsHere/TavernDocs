@@ -1,6 +1,6 @@
 ---
 title: "SplineDecorator.UpMode"
-description: "enum SplineDecorator.UpMode in Root.Township."
+description: "Which up vector SplineDecorator uses when applying offsets: world up or the curve's own up."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplineDecorator.UpMode
 
 An **enum** in `Root.Township`, `Alta.Bezier`.
+
+Which up vector `SplineDecorator` uses when applying offsets: world up or the curve's own up.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator)

@@ -1,6 +1,6 @@
 ---
 title: "ShopPrice"
-description: "class ShopPrice in Alta.Api.DataTransferModels."
+description: "A price in the shop: an amount and its currency."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
 
+A price in the shop: an amount and its currency. Defaults to 1 shard.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,16 +24,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-amount" /><code>{"decimal Amount { get; set; }"}</code> |
-| <Link id="m-pricetype" /><code><Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-amount" /><code>{"decimal Amount { get; set; }"}</code> | The price amount, 1 by default. |
+| <Link id="m-pricetype" /><code><Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/pricetype">{"PriceType"}</Link>{" { get; set; }"}</code> | Currency of the price, shards by default. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-multiply" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Multiply(int quantity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-multiply" /><code><Link to="/game-api/types/assembly-api-models/shopprice">{"ShopPrice"}</Link>{" Multiply(int quantity)"}</code> | Returns a new price in the same currency for the given quantity. |
 
 ## Used in
 

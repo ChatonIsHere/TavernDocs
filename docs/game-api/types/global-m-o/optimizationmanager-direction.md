@@ -1,6 +1,6 @@
 ---
 title: "OptimizationManager.Direction"
-description: "enum OptimizationManager.Direction in Root.Township."
+description: "Which way OptimizationManager is stepping quality: towards performance, holding still, or towards graphics."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OptimizationManager.Direction
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which way `OptimizationManager` is stepping quality: towards performance, holding still, or towards graphics.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`OptimizationManager`](/game-api/types/global-m-o/optimizationmanager)

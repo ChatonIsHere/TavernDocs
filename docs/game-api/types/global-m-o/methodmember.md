@@ -1,6 +1,6 @@
 ---
 title: "MethodMember"
-description: "class MethodMember in Root.Township."
+description: "An in-game inspector entry for a method on a component."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MethodMember
 
 A **class** in `Root.Township`, no namespace.
+
+An in-game inspector entry for a method on a component. Interacting with it calls the method with no arguments.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`InspectorBase`](/game-api/types/global-i-l/inspectorbase)
@@ -26,24 +28,24 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-method" /><code>{"private MethodInfo method"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-method" /><code>{"private MethodInfo method"}</code> | The reflected method this entry calls. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inspectortype" /><code>{"override "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" "}<Link to="/game-api/types/global-i-l/inspectortype">{"InspectorType"}</Link>{" { get; }"}</code> | Always `InspectorType.Method`. |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | The method's name. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interact" /><code>{"override void Interact(Component target, "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" interactable)"}</code> | Invokes the method on the target component, with no arguments. |
 
 ## Used in
 

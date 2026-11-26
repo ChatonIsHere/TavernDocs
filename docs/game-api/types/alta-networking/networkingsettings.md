@@ -31,21 +31,21 @@ Global networking settings: transport (KCP) settings, channels and send and rece
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> |
-| <Link id="m-connectionconfiguration" /><code>{"private ConnectionConfig connectionConfiguration"}</code> |
-| <Link id="m-currenttransportsystem" /><code>{"private "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" currentTransportSystem"}</code> |
-| <Link id="m-defaultchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel"}</code> |
-| <Link id="m-defaultnetworktransport" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" defaultNetworkTransport"}</code> |
-| <Link id="m-kcpsettings" /><code>{"private "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" kcpSettings"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger Logger"}</code> |
-| <Link id="m-maxbitsperserializationmessage" /><code>{"private uint maxBitsPerSerializationMessage"}</code> |
-| <Link id="m-maxconnectionqueuesize" /><code>{"private int maxConnectionQueueSize"}</code> |
-| <Link id="m-maxserverqueuesize" /><code>{"private int maxServerQueueSize"}</code> |
-| <Link id="m-maxunreliablereceivedperframe" /><code>{"private int maxUnreliableReceivedPerFrame"}</code> |
-| <Link id="m-networkconfiguration" /><code>{"private GlobalConfig networkConfiguration"}</code> |
-| <Link id="m-simulatenointernetineditor" /><code>{"private bool simulateNoInternetInEditor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> | Backing field for `Channels`, the connection channels. |
+| <Link id="m-connectionconfiguration" /><code>{"private ConnectionConfig connectionConfiguration"}</code> | Backing field for `ConnectionConfiguration`. |
+| <Link id="m-currenttransportsystem" /><code>{"private "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" currentTransportSystem"}</code> | Transport chosen by `SetTransportSystem`. |
+| <Link id="m-defaultchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel"}</code> | Backing field for `DefaultChannel`. |
+| <Link id="m-defaultnetworktransport" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/transportsystem">{"TransportSystem"}</Link>{" defaultNetworkTransport"}</code> | Transport used when the server info has no override: KCP. |
+| <Link id="m-kcpsettings" /><code>{"private "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" kcpSettings"}</code> | Backing field for `KcpSettings`. |
+| <Link id="m-logger" /><code>{"private static Logger Logger"}</code> | Logger for transport selection messages. |
+| <Link id="m-maxbitsperserializationmessage" /><code>{"private uint maxBitsPerSerializationMessage"}</code> | Bit limit for one entity sync message (default 1300); `SceneSerializer` stops adding entities past it. |
+| <Link id="m-maxconnectionqueuesize" /><code>{"private int maxConnectionQueueSize"}</code> | Outgoing queue size per connection above which further packets are held back for the frame. |
+| <Link id="m-maxserverqueuesize" /><code>{"private int maxServerQueueSize"}</code> | Outgoing queue size for the whole socket above which packets are held back for the frame. |
+| <Link id="m-maxunreliablereceivedperframe" /><code>{"private int maxUnreliableReceivedPerFrame"}</code> | Size of the server's per-connection unreliable buffer (default 100); older unreliable packets in a frame are dropped. |
+| <Link id="m-networkconfiguration" /><code>{"private GlobalConfig networkConfiguration"}</code> | Backing field for `NetworkConfiguration`. |
+| <Link id="m-simulatenointernetineditor" /><code>{"private bool simulateNoInternetInEditor"}</code> | Editor only: makes `SimulateNoInternet` true. |
 
 </details>
 

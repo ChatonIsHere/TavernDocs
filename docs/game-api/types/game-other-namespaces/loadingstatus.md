@@ -1,6 +1,6 @@
 ---
 title: "LoadingStatus"
-description: "enum LoadingStatus in Root.Township."
+description: "Whether a micro tutorial is still waiting for the client to finish loading it (InProgress) or not (Completed)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LoadingStatus
 
 An **enum** in `Root.Township`, `ATT.MicroTutorial`.
+
+Whether a micro tutorial is still waiting for the client to finish loading it (`InProgress`) or not (`Completed`).
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

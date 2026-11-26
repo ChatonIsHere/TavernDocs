@@ -1,6 +1,6 @@
 ---
 title: "CollisionFilter"
-description: "delegate CollisionFilter in Root.Township."
+description: "Handler for ImpactTool.CollisionFilter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CollisionFilter
 
 A **delegate** in `Root.Township`, `Alta.Impact`.
+
+Handler for `ImpactTool.CollisionFilter`. Set `isHitconsumed` to true to stop the collision from becoming a hit, as `ChiselingTool` does.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

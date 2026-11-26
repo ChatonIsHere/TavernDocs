@@ -1,6 +1,6 @@
 ---
 title: "SkillShrine.ConnectionSyncArgument"
-description: "class SkillShrine.ConnectionSyncArgument in Root.Township."
+description: "Network message telling clients which skill orbs on a shrine to draw connections between, built on the server from the spawned orbs and their slot dependencies."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillShrine.ConnectionSyncArgument
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Network message telling clients which skill orbs on a shrine to draw connections between, built on the server from the spawned orbs and their slot dependencies.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SkillShrine`](/game-api/types/global-s/skillshrine)
@@ -24,15 +26,15 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-orbstoconnect" /><code>{"List<uint> OrbsToConnect { get; }"}</code> | Flat list of orb entity ID pairs; an orb with no dependencies is paired with 0. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the count and IDs; clients read them back. The count is limited to 127 IDs. |
 
 ## Used in
 

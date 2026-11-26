@@ -1,6 +1,6 @@
 ---
 title: "AltaSelection"
-description: "class AltaSelection in Root.Township."
+description: "The entity a console user has selected, kept on their CommandContext as Selection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
 
+The entity a console user has selected, kept on their `CommandContext` as `Selection`.
+
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-current" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> |
-| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-current" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Current { get; set; }"}</code> | The selected network entity, or null. |
+| <Link id="m-transform" /><code>{"Transform Transform { get; }"}</code> | The selected entity's transform, or null when nothing is selected. |
 
 ## Used in
 

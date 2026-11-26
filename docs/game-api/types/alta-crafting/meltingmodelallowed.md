@@ -1,6 +1,6 @@
 ---
 title: "MeltingModelAllowed"
-description: "delegate MeltingModelAllowed in Root.Township."
+description: "Filter for MeltingModel.isAllowedFilter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeltingModelAllowed
 
 A **delegate** in `Root.Township`, `Alta.Blacksmithing`.
+
+Filter for `MeltingModel.isAllowedFilter`. Handlers can set `isAllowed` to false to stop the model melting.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

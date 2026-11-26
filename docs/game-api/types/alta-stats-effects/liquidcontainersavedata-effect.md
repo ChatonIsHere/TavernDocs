@@ -1,6 +1,6 @@
 ---
 title: "LiquidContainerSaveData.Effect"
-description: "class LiquidContainerSaveData.Effect in Root.Township."
+description: "One saved effect on a custom liquid."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidContainerSaveData.Effect
 
 A **class** in `Root.Township`, `Alta.Liquid`.
+
+One saved effect on a custom liquid.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`LiquidContainerSaveData`](/game-api/types/alta-stats-effects/liquidcontainersavedata)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.Liquid`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" definition"}</code> | The effect applied. |
+| <Link id="m-strengthmultiplier" /><code>{"float strengthMultiplier"}</code> | Multiplier on the effect's strength. |
 
 ## Used in
 

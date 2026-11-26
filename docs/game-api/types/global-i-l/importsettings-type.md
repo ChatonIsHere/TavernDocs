@@ -1,6 +1,6 @@
 ---
 title: "ImportSettings.Type"
-description: "enum ImportSettings.Type in Root.Township."
+description: "Kind of asset an import filter applies to: texture or mesh."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImportSettings.Type
 
 An **enum** in `Root.Township`, no namespace.
+
+Kind of asset an import filter applies to: texture or mesh.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`ImportSettings`](/game-api/types/global-i-l/importsettings)

@@ -1,6 +1,6 @@
 ---
 title: "Status.StatusSeverity"
-description: "enum Status.StatusSeverity in Alta.Api.Client."
+description: "Severity of a service status notice, from Low to Critical."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Status.StatusSeverity
 
 An **enum** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Severity of a service status notice, from `Low` to `Critical`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Nested in** [`Status`](/game-api/types/assembly-api-client/status)

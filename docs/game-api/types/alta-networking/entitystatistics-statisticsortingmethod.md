@@ -1,6 +1,6 @@
 ---
 title: "EntityStatistics.StatisticSortingMethod"
-description: "enum EntityStatistics.StatisticSortingMethod in Root.Township."
+description: "Private: what EntityStatistics sorts entities by: bytes per second, bytes per frame, average send size or send count."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EntityStatistics.StatisticSortingMethod
 
 An **private enum** in `Root.Township`, `Alta.Profiling.Networking`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private: what `EntityStatistics` sorts entities by: bytes per second, bytes per frame, average send size or send count.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`EntityStatistics`](/game-api/types/alta-networking/entitystatistics)

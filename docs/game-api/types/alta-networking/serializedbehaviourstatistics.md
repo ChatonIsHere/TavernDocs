@@ -1,6 +1,6 @@
 ---
 title: "SerializedBehaviourStatistics"
-description: "class SerializedBehaviourStatistics in Root.Township."
+description: "Profiling list of bytes sent, one statistic per serialized behaviour name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializedBehaviourStatistics
 
 A **class** in `Root.Township`, `Alta.Profiling.Networking`.
+
+Profiling list of bytes sent, one statistic per serialized behaviour name.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`IndexedStatisticList<SerializedBehaviourStatistic, string>`](/game-api/types/alta-networking/indexedstatisticlist-tstatistic-tstattype)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.Profiling.Networking`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-registerbehavioursend" /><code>{"void RegisterBehaviourSend(string behaviourName, int bytesSent)"}</code> |
-| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistic">{"SerializedBehaviourStatistic"}</Link>{" CreateNewStatistic(string creationArgument)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-registerbehavioursend" /><code>{"void RegisterBehaviourSend(string behaviourName, int bytesSent)"}</code> | Records a send of the given size for a behaviour. |
+| <Link id="m-createnewstatistic" /><code>{"protected override "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistic">{"SerializedBehaviourStatistic"}</Link>{" CreateNewStatistic(string creationArgument)"}</code> | Makes a statistic for a behaviour name the first time it is seen. |
 
 ## Used in
 

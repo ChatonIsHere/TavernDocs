@@ -1,6 +1,6 @@
 ---
 title: "SubDockHandler"
-description: "delegate SubDockHandler in Root.Township."
+description: "Event handler for a pickup docking into or out of a sub dock of a docked item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SubDockHandler
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Event handler for a pickup docking into or out of a sub dock of a docked item. Used by `PickupDock.OnSubDocked` and `OnSubUndocked`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

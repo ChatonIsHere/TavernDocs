@@ -1,6 +1,6 @@
 ---
 title: "OcclusionMode"
-description: "enum OcclusionMode in Root.Township."
+description: "How an OcclusionChunkEffectData sets culling while the local player is in its chunk: normal occlusion culling, portal-based culling, or no culling at all."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OcclusionMode
 
 An **enum** in `Root.Township`, `Alta.Chunks`.
+
+How an `OcclusionChunkEffectData` sets culling while the local player is in its chunk: normal occlusion culling, portal-based culling, or no culling at all.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 

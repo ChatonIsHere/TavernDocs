@@ -28,18 +28,18 @@ The cosmetic preset shelf slot in the customization room: ten numbered preset sl
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidwaittimer" /><code>{"private GameObject androidWaitTimer"}</code> |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{"[] data"}</code> |
-| <Link id="m-effectparent" /><code>{"private GameObject effectParent"}</code> |
-| <Link id="m-gottrophy" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" gotTrophy"}</code> |
-| <Link id="m-haptics" /><code>{"private Coroutine haptics"}</code> |
-| <Link id="m-hapticstrength" /><code>{"private float hapticStrength"}</code> |
-| <Link id="m-index" /><code>{"private int index"}</code> |
-| <Link id="m-indextext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" indexText"}</code> |
-| <Link id="m-trophyposition" /><code>{"private Transform trophyPosition"}</code> |
-| <Link id="m-trophysource" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" trophySource"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidwaittimer" /><code>{"private GameObject androidWaitTimer"}</code> | GameObject hidden when switching to an empty index. |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{"[] data"}</code> | Preset data for the 10 indices, null where empty. |
+| <Link id="m-effectparent" /><code>{"private GameObject effectParent"}</code> | GameObject holding the highlight effects. |
+| <Link id="m-gottrophy" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" gotTrophy"}</code> | Event raised when a preset is saved. |
+| <Link id="m-haptics" /><code>{"private Coroutine haptics"}</code> | The running haptics coroutine, if any. |
+| <Link id="m-hapticstrength" /><code>{"private float hapticStrength"}</code> | Strength of the hover haptic pulse. |
+| <Link id="m-index" /><code>{"private int index"}</code> | Backing field for `Index`. |
+| <Link id="m-indextext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" indexText"}</code> | Text showing the current index. |
+| <Link id="m-trophyposition" /><code>{"private Transform trophyPosition"}</code> | Transform marking where the trophy sits. |
+| <Link id="m-trophysource" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresettrophytrigger">{"CosmeticPresetTrophyTrigger"}</Link>{" trophySource"}</code> | Trigger that detects trophies near the slot. |
 
 </details>
 
@@ -54,9 +54,9 @@ The cosmetic preset shelf slot in the customization room: ten numbered preset sl
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-index-2" /><code>{"private int Index { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index-2" /><code>{"private int Index { get; set; }"}</code> | The preset index (0 to 9) shown. Setting it updates the number text, shown one higher. |
 
 </details>
 
@@ -77,17 +77,17 @@ The cosmetic preset shelf slot in the customization room: ten numbered preset sl
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-applytrophy" /><code>{"private bool ApplyTrophy(int index)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-disableeffects" /><code>{"private void DisableEffects("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
-| <Link id="m-disableeffects-2" /><code>{"private void DisableEffects()"}</code> |
-| <Link id="m-enableeffects" /><code>{"private void EnableEffects("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> |
-| <Link id="m-getdatafrom" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" GetDataFrom("}<Link to="/game-api/types/assembly-api-models/userpresetdatainfo">{"UserPresetDataInfo"}</Link>{" source)"}</code> |
-| <Link id="m-getdatafrom-2" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" GetDataFrom("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" source)"}</code> |
-| <Link id="m-haptics-2" /><code>{"private IEnumerator Haptics() (iterator)"}</code> |
-| <Link id="m-resettrophy" /><code>{"private void ResetTrophy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applytrophy" /><code>{"private bool ApplyTrophy(int index)"}</code> | Shows the preset at an index on the trophy, if that preset has data. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the trophy trigger's release, enter and exit events. |
+| <Link id="m-disableeffects" /><code>{"private void DisableEffects("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> | Hides the highlight effects. The overload taking a trophy only does it once no trophies are in the trigger. |
+| <Link id="m-disableeffects-2" /><code>{"private void DisableEffects()"}</code> | Hides the highlight effects. The overload taking a trophy only does it once no trophies are in the trigger. |
+| <Link id="m-enableeffects" /><code>{"private void EnableEffects("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" trophy)"}</code> | Shows the highlight effects and starts haptics while the current index is empty. |
+| <Link id="m-getdatafrom" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" GetDataFrom("}<Link to="/game-api/types/assembly-api-models/userpresetdatainfo">{"UserPresetDataInfo"}</Link>{" source)"}</code> | Copies preset data from an API preset or a trophy into a pooled array. |
+| <Link id="m-getdatafrom-2" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" GetDataFrom("}<Link to="/game-api/types/alta-customization/cosmeticpresettrophy">{"CosmeticPresetTrophy"}</Link>{" source)"}</code> | Copies preset data from an API preset or a trophy into a pooled array. |
+| <Link id="m-haptics-2" /><code>{"private IEnumerator Haptics() (iterator)"}</code> | Coroutine that buzzes the hand holding a hovering trophy. |
+| <Link id="m-resettrophy" /><code>{"private void ResetTrophy()"}</code> | Snaps the trophy back to the slot, makes it kinematic and enables its colliders. |
 
 </details>
 

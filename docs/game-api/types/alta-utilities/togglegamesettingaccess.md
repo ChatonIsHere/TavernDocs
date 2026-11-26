@@ -1,6 +1,6 @@
 ---
 title: "ToggleGameSettingAccess"
-description: "class ToggleGameSettingAccess in Root.Township."
+description: "Setting access asset for a bool property on GameSettings or ServerSettings, found by name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ToggleGameSettingAccess
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Setting access asset for a bool property on `GameSettings` or `ServerSettings`, found by name. Used by toggles and `BoolSettingValue`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`SettingsFieldAccess<bool>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype)

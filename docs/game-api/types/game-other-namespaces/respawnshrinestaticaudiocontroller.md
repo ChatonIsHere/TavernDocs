@@ -1,6 +1,6 @@
 ---
 title: "RespawnShrineStaticAudioController"
-description: "class RespawnShrineStaticAudioController in Root.Township."
+description: "Plays a respawn shrine's looping sound while it has at least one subscriber."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RespawnShrineStaticAudioController
 
 A **class** in `Root.Township`, `ATT.Respawn`.
+
+Plays a respawn shrine's looping sound while it has at least one subscriber.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, `ATT.Respawn`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-loopingsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-i-l/loopingsoundeffect">{"LoopingSoundEffect"}</Link>{" loopingSoundEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loopingsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-i-l/loopingsoundeffect">{"LoopingSoundEffect"}</Link>{" loopingSoundEffect"}</code> | The looping sound played while fuel is being used. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setfuelconsumptionaudioplaystate" /><code>{"void SetFuelConsumptionAudioPlayState(int numberOfSubscribers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setfuelconsumptionaudioplaystate" /><code>{"void SetFuelConsumptionAudioPlayState(int numberOfSubscribers)"}</code> | Starts the loop when there are subscribers and stops it when there are none. |
 
 ## Used in
 

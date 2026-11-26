@@ -1,6 +1,6 @@
 ---
 title: "TextureCompression"
-description: "enum TextureCompression in Root.Township."
+description: "Compression level for a TextureOutput: None, Normal, High or Low."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextureCompression
 
 An **enum** in `Root.Township`, no namespace.
+
+Compression level for a `TextureOutput`: `None`, `Normal`, `High` or `Low`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

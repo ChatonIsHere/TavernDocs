@@ -1,6 +1,6 @@
 ---
 title: "ProgressionSettings.PathExperienceShare"
-description: "class ProgressionSettings.PathExperienceShare in Root.Township."
+description: "Per-path multipliers for shared experience, read by GetExperienceSharedMultiplier when PlayerProgressionManager.GainSharedExperience runs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProgressionSettings.PathExperienceShare
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Per-path multipliers for shared experience, read by `GetExperienceSharedMultiplier` when `PlayerProgressionManager.GainSharedExperience` runs.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`ProgressionSettings`](/game-api/types/global-p/progressionsettings)
@@ -27,19 +29,19 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> |
-| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-experienceshareselfhold" /><code>{"private float experienceShareSelfHold"}</code> | Backing field for `ExperienceShareSelfHold`. |
+| <Link id="m-experiencesharesupporthold" /><code>{"private float experienceShareSupportHold"}</code> | Backing field for `ExperienceShareSupportHold`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> |
-| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-experienceshareselfhold-2" /><code>{"float ExperienceShareSelfHold { get; }"}</code> | Extra fraction of experience the main player gets when they are also the supporting player (default 0.2). |
+| <Link id="m-experiencesharesupporthold-2" /><code>{"float ExperienceShareSupportHold { get; }"}</code> | Fraction of experience given to a different supporting player (default 0.6). |
 
 ## Used in
 

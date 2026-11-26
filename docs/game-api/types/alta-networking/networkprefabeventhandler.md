@@ -1,6 +1,6 @@
 ---
 title: "NetworkPrefabEventHandler"
-description: "delegate NetworkPrefabEventHandler in Root.Township."
+description: "Callback with a NetworkPrefab, used by NetworkPrefab.PreDestroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkPrefabEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback with a `NetworkPrefab`, used by `NetworkPrefab.PreDestroyed`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

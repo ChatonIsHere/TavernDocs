@@ -29,15 +29,15 @@ The networked object that tracks respawn shrines: which shrine each player is su
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-decrementfuelentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" decrementFuelEntry"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-model" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model"}</code> |
-| <Link id="m-syncmodeltoclients" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncModelToClients"}</code> |
-| <Link id="m-systemmodelchanged" /><code>{"private Action<"}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{"> systemModelChanged"}</code> |
-| <Link id="m-timeofpreviousfueldecrement" /><code>{"private float timeOfPreviousFuelDecrement"}</code> |
-| <Link id="m-updatemodelentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" updateModelEntry"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-decrementfuelentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" decrementFuelEntry"}</code> | Timeline entry for the repeating fuel tick. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-model" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{" model"}</code> | The respawn system model with every shrine's fuel and subscribers. Saved and loaded with the entity. |
+| <Link id="m-syncmodeltoclients" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncModelToClients"}</code> | Method sync (SyncB) that sends the model to clients. |
+| <Link id="m-systemmodelchanged" /><code>{"private Action<"}<Link to="/game-api/types/game-other-namespaces/irespawnsystemmodel">{"IRespawnSystemModel"}</Link>{"> systemModelChanged"}</code> | Listeners added with `AddSystemModelChangedListener`. |
+| <Link id="m-timeofpreviousfueldecrement" /><code>{"private float timeOfPreviousFuelDecrement"}</code> | Time of the last fuel tick, used to work out how much fuel to take. |
+| <Link id="m-updatemodelentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" updateModelEntry"}</code> | Timeline entry for the repeating model sync check. |
 
 </details>
 
@@ -46,9 +46,9 @@ The networked object that tracks respawn shrines: which shrine each player is su
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-systemsettings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/irespawnsystemsettings">{"IRespawnSystemSettings"}</Link>{" SystemSettings { get; }"}</code> | The global `RespawnSystemSettings`, with tick rates and per-shrine settings. |
 
 </details>
 
@@ -74,14 +74,14 @@ The networked object that tracks respawn shrines: which shrine each player is su
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-raisemodelchangedevent" /><code>{"private void RaiseModelChangedEvent()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-syncmodeltoclients-2" /><code>{"private void SyncModelToClients("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-tickfuelconsumption" /><code>{"private void TickFuelConsumption()"}</code> |
-| <Link id="m-tickupdatemodel" /><code>{"private void TickUpdateModel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the fuel and model update timers. |
+| <Link id="m-raisemodelchangedevent" /><code>{"private void RaiseModelChangedEvent()"}</code> | Calls the model changed listeners with the current model. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Creates an empty model if none was loaded. |
+| <Link id="m-syncmodeltoclients-2" /><code>{"private void SyncModelToClients("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler: the model writes or reads itself on the stream, then listeners are told it changed. |
+| <Link id="m-tickfuelconsumption" /><code>{"private void TickFuelConsumption()"}</code> | Server timer: takes fuel off shrines for the time since the last tick. |
+| <Link id="m-tickupdatemodel" /><code>{"private void TickUpdateModel()"}</code> | Server timer: syncs the model to clients if it has changed. |
 
 </details>
 

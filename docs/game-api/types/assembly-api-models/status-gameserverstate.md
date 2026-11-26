@@ -1,6 +1,6 @@
 ---
 title: "Status.GameServerState"
-description: "enum Status.GameServerState in Alta.Api.DataTransferModels."
+description: "Lifecycle state of an Agones game server, from Creating through Ready and Allocated to Shutdown or Unhealthy."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Status.GameServerState
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Agones`.
+
+Lifecycle state of an Agones game server, from `Creating` through `Ready` and `Allocated` to `Shutdown` or `Unhealthy`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Nested in** [`Status`](/game-api/types/assembly-api-models/status)

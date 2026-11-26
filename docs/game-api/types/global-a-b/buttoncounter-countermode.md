@@ -1,6 +1,6 @@
 ---
 title: "ButtonCounter.CounterMode"
-description: "enum ButtonCounter.CounterMode in Root.Township."
+description: "Who owns a ButtonCounter's value: the server, or the single active player's client, whose changes the server accepts and passes on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonCounter.CounterMode
 
 An **enum** in `Root.Township`, no namespace.
+
+Who owns a `ButtonCounter`'s value: the server, or the single active player's client, whose changes the server accepts and passes on.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`ButtonCounter`](/game-api/types/global-a-b/buttoncounter)

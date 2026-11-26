@@ -1,6 +1,6 @@
 ---
 title: "ValidateItemOwnershipResponse"
-description: "class ValidateItemOwnershipResponse in Alta.Api.DataTransferModels."
+description: "Web API answer to ValidateItemsOwnershipAsync, which checks that a user owns a list of shop items."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Web API answer to `ValidateItemsOwnershipAsync`, which checks that a user owns a list of shop items.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalidlist" /><code>{"bool IsValidList { get; set; }"}</code> | True when the user owns every item in the list. |
 
 ## Used in
 

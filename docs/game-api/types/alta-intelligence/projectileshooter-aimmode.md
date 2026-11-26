@@ -1,6 +1,6 @@
 ---
 title: "ProjectileShooter.AimMode"
-description: "enum ProjectileShooter.AimMode in Root.Township."
+description: "How a ProjectileShooter aims: straight forward, at the target, or mixing forward and target direction per axis."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProjectileShooter.AimMode
 
 An **enum** in `Root.Township`, `Alta.Intelligence`.
+
+How a `ProjectileShooter` aims: straight forward, at the target, or mixing forward and target direction per axis.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`ProjectileShooter`](/game-api/types/alta-intelligence/projectileshooter)

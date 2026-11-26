@@ -1,6 +1,6 @@
 ---
 title: "PickupDockFilter"
-description: "delegate PickupDockFilter in Root.Township."
+description: "Filter called before a pickup docks; set result to false to stop it docking in that dock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockFilter
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Filter called before a pickup docks; set `result` to false to stop it docking in that dock.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "ItemSet"
-description: "class ItemSet in Root.Township."
+description: "ScriptableObject holding a list of item definitions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemSet
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+ScriptableObject holding a list of item definitions.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -28,17 +30,17 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code>{"private List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> items"}</code> | Backing field for `Items`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items-2" /><code>{"List<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"> Items { get; }"}</code> | The items in the set. |
 
 ## Used in
 

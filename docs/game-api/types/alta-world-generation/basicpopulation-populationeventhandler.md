@@ -1,6 +1,6 @@
 ---
 title: "BasicPopulation.PopulationEventHandler"
-description: "delegate BasicPopulation.PopulationEventHandler in Root.Township."
+description: "Handler for BasicPopulation.PopulationIncreased and PopulationDecreased, given the population and the item that was added or removed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicPopulation.PopulationEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Populations`.
+
+Handler for `BasicPopulation.PopulationIncreased` and `PopulationDecreased`, given the population and the item that was added or removed.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`BasicPopulation`](/game-api/types/alta-world-generation/basicpopulation)

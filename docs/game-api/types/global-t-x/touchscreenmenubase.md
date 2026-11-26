@@ -35,30 +35,30 @@ Base for an in-world touch screen that the local player's fingertips press: maps
 <details>
 <summary>22 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activebuttonpress" /><code>{"private "}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" activeButtonPress"}</code> |
-| <Link id="m-alwaysshowbuttons" /><code>{"private bool alwaysShowButtons"}</code> |
-| <Link id="m-baserect" /><code>{"private Rect baseRect"}</code> |
-| <Link id="m-buttonpresscache" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> buttonPressCache"}</code> |
-| <Link id="m-buttonsparent" /><code>{"private GameObject buttonsParent"}</code> |
-| <Link id="m-canvastransform" /><code>{"private Transform canvasTransform"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-ismultitouch" /><code>{"private bool isMultiTouch"}</code> |
-| <Link id="m-issetuplocal" /><code>{"private bool isSetupLocal"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-mindistancetorendersquared" /><code>{"private float minDistanceToRenderSquared"}</code> |
-| <Link id="m-onscreenreleasedeffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onScreenReleasedEffects"}</code> |
-| <Link id="m-onscreentoucheffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onScreenTouchEffects"}</code> |
-| <Link id="m-setuponstart" /><code>{"private bool setupOnStart"}</code> |
-| <Link id="m-torelease" /><code>{"private HashSet<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> toRelease"}</code> |
-| <Link id="m-touched" /><code>{"private HashSet<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> touched"}</code> |
-| <Link id="m-touchhaptic" /><code>{"private float touchHaptic"}</code> |
-| <Link id="m-touchinputs" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{"[] touchInputs"}</code> |
-| <Link id="m-touchreleasethreshold" /><code>{"private float touchReleaseThreshold"}</code> |
-| <Link id="m-touchthreshold" /><code>{"private float touchThreshold"}</code> |
-| <Link id="m-triggereffectsonbuttontouchonly" /><code>{"private bool triggerEffectsOnButtonTouchOnly"}</code> |
-| <Link id="m-updatetouch" /><code>{"private Coroutine updateTouch"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activebuttonpress" /><code>{"private "}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" activeButtonPress"}</code> | With multi-touch off, the one button now pressed. |
+| <Link id="m-alwaysshowbuttons" /><code>{"private bool alwaysShowButtons"}</code> | If true, the buttons stay visible; else they only show while a finger is close. |
+| <Link id="m-baserect" /><code>{"private Rect baseRect"}</code> | Screen area that covers every mapped button, in local space. |
+| <Link id="m-buttonpresscache" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> buttonPressCache"}</code> | Reused list of buttons to press this frame. |
+| <Link id="m-buttonsparent" /><code>{"private GameObject buttonsParent"}</code> | Object holding the buttons; turned on and off to show them. |
+| <Link id="m-canvastransform" /><code>{"private Transform canvasTransform"}</code> | Transform used to measure finger distance; set to the buttons parent. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Set each frame when a finger is close, to show the buttons. |
+| <Link id="m-ismultitouch" /><code>{"private bool isMultiTouch"}</code> | Whether several buttons can be pressed at once. |
+| <Link id="m-issetuplocal" /><code>{"private bool isSetupLocal"}</code> | Set once `Setup` has run for the local player with fingertips. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-mindistancetorendersquared" /><code>{"private float minDistanceToRenderSquared"}</code> | Squared distance a fingertip must be within for touches to count and buttons to show. |
+| <Link id="m-onscreenreleasedeffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onScreenReleasedEffects"}</code> | Effects played at a button's position when it is released. |
+| <Link id="m-onscreentoucheffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onScreenTouchEffects"}</code> | Effects played at the fingertip when the screen is touched. |
+| <Link id="m-setuponstart" /><code>{"private bool setupOnStart"}</code> | Serialized option. Not read in this class. |
+| <Link id="m-torelease" /><code>{"private HashSet<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> toRelease"}</code> | Buttons to check for release this frame. |
+| <Link id="m-touched" /><code>{"private HashSet<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> touched"}</code> | Buttons pressed this frame, so they aren't released. |
+| <Link id="m-touchhaptic" /><code>{"private float touchHaptic"}</code> | Haptic strength sent to the hand on a touch. |
+| <Link id="m-touchinputs" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{"[] touchInputs"}</code> | Touch trackers for the right and left fingertips. |
+| <Link id="m-touchreleasethreshold" /><code>{"private float touchReleaseThreshold"}</code> | Distance from the screen a finger must pull back to end a touch. |
+| <Link id="m-touchthreshold" /><code>{"private float touchThreshold"}</code> | Distance from the screen within which a finger starts a touch. |
+| <Link id="m-triggereffectsonbuttontouchonly" /><code>{"private bool triggerEffectsOnButtonTouchOnly"}</code> | If true, touch and release effects only play when a button is hit. |
+| <Link id="m-updatetouch" /><code>{"private Coroutine updateTouch"}</code> | Running touch update coroutine, or null. |
 
 </details>
 
@@ -97,18 +97,18 @@ Base for an in-world touch screen that the local player's fingertips press: maps
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-isbuttonvalid" /><code>{"private bool IsButtonValid(KeyValuePair<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{", Rect> buttonPair, "}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> |
-| <Link id="m-isfirstpressinbounds" /><code>{"private bool IsFirstPressInBounds("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> |
-| <Link id="m-mapkey" /><code>{"private void MapKey(Matrix4x4 matrix, "}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" button, ref Vector2 min, ref Vector2 max)"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-processbuttonpress" /><code>{"private void ProcessButtonPress("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> |
-| <Link id="m-updatebuttonpresses" /><code>{"private void UpdateButtonPresses()"}</code> |
-| <Link id="m-updatebuttonreleases" /><code>{"private void UpdateButtonReleases()"}</code> |
-| <Link id="m-updatetouch-2" /><code>{"private IEnumerator UpdateTouch() (iterator)"}</code> |
-| <Link id="m-validatemultitouch" /><code>{"private bool ValidateMultiTouch("}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" button)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isbuttonvalid" /><code>{"private bool IsButtonValid(KeyValuePair<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{", Rect> buttonPair, "}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> | True if the button is enabled, active, allowed under the multi-touch rule and contains the touch. |
+| <Link id="m-isfirstpressinbounds" /><code>{"private bool IsFirstPressInBounds("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> | True if the touch just started and is inside the screen's button area. |
+| <Link id="m-mapkey" /><code>{"private void MapKey(Matrix4x4 matrix, "}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" button, ref Vector2 min, ref Vector2 max)"}</code> | Works out a button's rectangle on the screen and grows the overall bounds to fit it. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops the touch update coroutine. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Restarts the touch update coroutine if the screen was set up for the local player. |
+| <Link id="m-processbuttonpress" /><code>{"private void ProcessButtonPress("}<Link to="/game-api/types/global-t-x/touchscreenmenubase-touchinput">{"TouchScreenMenuBase.TouchInput"}</Link>{" touch)"}</code> | On a new touch inside the screen, presses every button under the finger and plays the haptic and touch effects. |
+| <Link id="m-updatebuttonpresses" /><code>{"private void UpdateButtonPresses()"}</code> | Updates each free hand's finger touch, presses buttons, raises swipes and notes if a finger is close. |
+| <Link id="m-updatebuttonreleases" /><code>{"private void UpdateButtonReleases()"}</code> | Releases pressed buttons no finger is still touching and plays the release effects. |
+| <Link id="m-updatetouch-2" /><code>{"private IEnumerator UpdateTouch() (iterator)"}</code> | Coroutine run at the end of each frame: handles presses and releases and shows or hides the buttons. |
+| <Link id="m-validatemultitouch" /><code>{"private bool ValidateMultiTouch("}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{" button)"}</code> | With multi-touch off, only the button already being pressed counts. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "FixedStatChangeHook.OperationTarget"
-description: "enum FixedStatChangeHook.OperationTarget in Root.Township."
+description: "Which part of a stat a FixedStatChangeHook changes: base, minimum or maximum."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FixedStatChangeHook.OperationTarget
 
 An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which part of a stat a `FixedStatChangeHook` changes: base, minimum or maximum.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`FixedStatChangeHook`](/game-api/types/alta-intelligence/fixedstatchangehook)

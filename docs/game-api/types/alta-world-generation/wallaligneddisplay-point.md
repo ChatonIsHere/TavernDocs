@@ -1,6 +1,6 @@
 ---
 title: "WallAlignedDisplay.Point"
-description: "class WallAlignedDisplay.Point in Root.Township."
+description: "One cell offset inside WallAlignedDisplay's check radius, with a weight that falls off with distance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WallAlignedDisplay.Point
 
 A **private class** in `Root.Township`, `Alta.Caves.Displays`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+One cell offset inside `WallAlignedDisplay`'s check radius, with a weight that falls off with distance. Built once in `Initialize`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`WallAlignedDisplay`](/game-api/types/alta-world-generation/wallaligneddisplay)
@@ -23,12 +25,12 @@ A **private class** in `Root.Township`, `Alta.Caves.Displays`. Reach it through 
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> |
-| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> |
-| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> |
-| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-direction" /><code>{"Vector2 Direction { get; private set; }"}</code> | The offset as a vector, used to sum up which way the nearby wall lies. |
+| <Link id="m-value" /><code>{"float Value { get; private set; }"}</code> | Weight of the cell: distance left to the check radius, divided by the threshold. |
+| <Link id="m-x" /><code>{"int X { get; private set; }"}</code> | X offset from the centre cell. |
+| <Link id="m-y" /><code>{"int Y { get; private set; }"}</code> | Second grid offset from the centre cell (Z in map terms). |
 
 ## Used in
 

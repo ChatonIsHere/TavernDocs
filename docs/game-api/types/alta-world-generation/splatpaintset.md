@@ -1,6 +1,6 @@
 ---
 title: "SplatPaintSet"
-description: "class SplatPaintSet in Root.Township."
+description: "A FillSet asset whose spawn modifiers are PaintModifiers, used to paint splat rather than spawn objects."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplatPaintSet
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A `FillSet` asset whose spawn modifiers are `PaintModifiers`, used to paint splat rather than spawn objects.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`FillSet`](/game-api/types/alta-world-generation/fillset)
@@ -28,18 +30,18 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-paintmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" paintModifiers"}</code> | Backing field for `PaintModifiers`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-paintmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> |
-| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-paintmodifiers-2" /><code><Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/paintmodifiers">{"PaintModifiers"}</Link>{" { get; }"}</code> | The paint modifiers for this set. |
+| <Link id="m-spawnmodifiers" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | Returns `PaintModifiers`. |
 
 ## Used in
 

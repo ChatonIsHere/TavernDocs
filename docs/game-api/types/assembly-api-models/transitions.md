@@ -1,6 +1,6 @@
 ---
 title: "Transitions"
-description: "class Transitions in Alta.Api.DataTransferModels."
+description: "A rule on a form Page that says which page comes next when its conditions are met."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+A rule on a form `Page` that says which page comes next when its conditions are met.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-conditions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/condition">{"Condition"}</Link>{"> Conditions { get; set; }"}</code> |
-| <Link id="m-pageid" /><code>{"int PageId { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-conditions" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/condition">{"Condition"}</Link>{"> Conditions { get; set; }"}</code> | Conditions that must hold for this transition. |
+| <Link id="m-pageid" /><code>{"int PageId { get; set; }"}</code> | ID of the page to go to. |
 
 ## Used in
 

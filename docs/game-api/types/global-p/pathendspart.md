@@ -1,6 +1,6 @@
 ---
 title: "PathEndsPart"
-description: "class PathEndsPart in Root.Township."
+description: "Generatable part that places two objects at the ends of a forest path edge during generation, facing along the path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PathEndsPart
 
 A **class** in `Root.Township`, no namespace.
+
+Generatable part that places two objects at the ends of a forest path edge during generation, facing along the path.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`GeneratablePart`](/game-api/types/global-e-h/generatablepart)
@@ -28,27 +30,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-arrangement" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart-arrangement">{"PathEndsPart.Arrangement"}</Link>{" arrangement"}</code> |
-| <Link id="m-distancefromends" /><code>{"private float distanceFromEnds"}</code> |
-| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> |
-| <Link id="m-sidea" /><code>{"private Transform sideA"}</code> |
-| <Link id="m-sideb" /><code>{"private Transform sideB"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arrangement" /><code>{"private "}<Link to="/game-api/types/global-p/pathendspart-arrangement">{"PathEndsPart.Arrangement"}</Link>{" arrangement"}</code> | Which side goes towards the forest entrance, or random or symmetrical. |
+| <Link id="m-distancefromends" /><code>{"private float distanceFromEnds"}</code> | Backing field for `DistanceFromEnds`. |
+| <Link id="m-entranceindex" /><code>{"private int entranceIndex"}</code> | Index of the forest node treated as the entrance when choosing which end is which. |
+| <Link id="m-sidea" /><code>{"private Transform sideA"}</code> | The object placed at one end of the path. |
+| <Link id="m-sideb" /><code>{"private Transform sideB"}</code> | The object placed at the other end of the path. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-distancefromends-2" /><code>{"float DistanceFromEnds { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distancefromends-2" /><code>{"float DistanceFromEnds { get; set; }"}</code> | How far in from each end of the path the two sides are placed. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Places `sideA` and `sideB` at the ends of the forest edge being spawned. Only runs when the spawn data is forest node map data. |
 
 ## Used in
 

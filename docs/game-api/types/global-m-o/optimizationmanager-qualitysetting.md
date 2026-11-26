@@ -1,6 +1,6 @@
 ---
 title: "OptimizationManager.QualitySetting"
-description: "struct OptimizationManager.QualitySetting in Root.Township."
+description: "One quality level for OptimizationManager: LOD bias and shadow settings applied together."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **private struct** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+One quality level for `OptimizationManager`: LOD bias and shadow settings applied together.
+
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`OptimizationManager`](/game-api/types/global-m-o/optimizationmanager)
 
@@ -20,19 +22,19 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> |
-| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> |
-| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lodbias" /><code>{"private float lodBias"}</code> | Value for `QualitySettings.lodBias`. |
+| <Link id="m-shadowdistance" /><code>{"private float shadowDistance"}</code> | Value for `QualitySettings.shadowDistance`. |
+| <Link id="m-shadowresolution" /><code>{"private ShadowResolution shadowResolution"}</code> | Value for `QualitySettings.shadowResolution`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> | Writes the LOD bias, shadow resolution and shadow distance to Unity's `QualitySettings`. |
 
 ## Used in
 

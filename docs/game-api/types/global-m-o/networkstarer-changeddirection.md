@@ -1,6 +1,6 @@
 ---
 title: "NetworkStarer.ChangedDirection"
-description: "delegate NetworkStarer.ChangedDirection in Root.Township."
+description: "Handler for NetworkStarer.ChangedTurningDirection: the side the body is turning towards (1 or -1), or 0 when it stops."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkStarer.ChangedDirection
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `NetworkStarer.ChangedTurningDirection`: the side the body is turning towards (1 or -1), or 0 when it stops.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`NetworkStarer`](/game-api/types/global-m-o/networkstarer)

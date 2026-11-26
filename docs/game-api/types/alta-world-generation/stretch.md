@@ -29,16 +29,16 @@ Cave map generator part that shapes a layer vertically from a height map, using 
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-floorvalue" /><code>{"private float floorValue"}</code> |
-| <Link id="m-heightmaplayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" heightMapLayer"}</code> |
-| <Link id="m-heightmapyindex" /><code>{"private int heightMapYIndex"}</code> |
-| <Link id="m-isfromroof" /><code>{"private bool isFromRoof"}</code> |
-| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> |
-| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> |
-| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |
-| <Link id="m-stretchcurve" /><code>{"private AnimationCurve stretchCurve"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-floorvalue" /><code>{"private float floorValue"}</code> | Backing field for `FloorValue`. |
+| <Link id="m-heightmaplayer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" heightMapLayer"}</code> | Backing field for `HeightMapLayer`. |
+| <Link id="m-heightmapyindex" /><code>{"private int heightMapYIndex"}</code> | Backing field for `HeightMapYIndex`. |
+| <Link id="m-isfromroof" /><code>{"private bool isFromRoof"}</code> | Backing field for `IsFromRoof`. |
+| <Link id="m-maximumvalue" /><code>{"private float maximumValue"}</code> | Backing field for `MaximumValue`. |
+| <Link id="m-minimumvalue" /><code>{"private float minimumValue"}</code> | Backing field for `MinimumValue`. |
+| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> | Backing field for `OperationType`. |
+| <Link id="m-stretchcurve" /><code>{"private AnimationCurve stretchCurve"}</code> | Backing field for `StretchCurve`. |
 
 </details>
 

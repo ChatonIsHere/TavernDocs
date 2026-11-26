@@ -1,6 +1,6 @@
 ---
 title: "PositionSurfaceDefinition.RotationMode"
-description: "enum PositionSurfaceDefinition.RotationMode in Root.Township."
+description: "How a PositionSurfaceDefinition rotates a spawned object to the surface normal: Y axis out with a random spin, Z axis out with a random spin, or Z out kept..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionSurfaceDefinition.RotationMode
 
 An **enum** in `Root.Township`, `Alta.Chunks`.
+
+How a `PositionSurfaceDefinition` rotates a spawned object to the surface normal: Y axis out with a random spin, Z axis out with a random spin, or Z out kept flat.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`PositionSurfaceDefinition`](/game-api/types/alta-world/positionsurfacedefinition)

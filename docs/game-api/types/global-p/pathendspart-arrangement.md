@@ -1,6 +1,6 @@
 ---
 title: "PathEndsPart.Arrangement"
-description: "enum PathEndsPart.Arrangement in Root.Township."
+description: "How PathEndsPart picks which path end gets which side: fixed direction, side A or B towards the forest entrance, or random."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PathEndsPart.Arrangement
 
 An **enum** in `Root.Township`, no namespace.
+
+How `PathEndsPart` picks which path end gets which side: fixed direction, side A or B towards the forest entrance, or random.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PathEndsPart`](/game-api/types/global-p/pathendspart)

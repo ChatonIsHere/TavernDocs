@@ -1,6 +1,6 @@
 ---
 title: "ThumbPosition"
-description: "enum ThumbPosition in Root.Township."
+description: "How the hand's thumb is posed on a grab point: around a Pole or flat on a Plane."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ThumbPosition
 
 An **enum** in `Root.Township`, no namespace.
+
+How the hand's thumb is posed on a grab point: around a `Pole` or flat on a `Plane`. Picks the thumb configuration in `HandGripConfiguration`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

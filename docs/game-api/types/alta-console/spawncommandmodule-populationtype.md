@@ -1,6 +1,6 @@
 ---
 title: "SpawnCommandModule.PopulationType"
-description: "enum SpawnCommandModule.PopulationType in Root.Township."
+description: "Shape of the population area the spawn population command spawns: disk, sphere or directional."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnCommandModule.PopulationType
 
 An **enum** in `Root.Township`, `Alta.Console.Commands`.
+
+Shape of the population area the `spawn population` command spawns: disk, sphere or directional. Each picks a different built-in prefab.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`SpawnCommandModule`](/game-api/types/alta-console/spawncommandmodule)

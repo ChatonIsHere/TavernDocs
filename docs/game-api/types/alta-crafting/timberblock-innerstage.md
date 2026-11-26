@@ -1,6 +1,6 @@
 ---
 title: "TimberBlock.InnerStage"
-description: "class TimberBlock.InnerStage in Root.Township."
+description: "The middle chiselling stage of a TimberBlock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimberBlock.InnerStage
 
 A **class** in `Root.Township`, `Alta.Carpentry`.
+
+The middle chiselling stage of a `TimberBlock`. Finishing it moves the block on to the core stage.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`TimberBlock`](/game-api/types/alta-crafting/timberblock)
@@ -24,15 +26,15 @@ A **class** in `Root.Township`, `Alta.Carpentry`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stagelevel" /><code>{"override "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{" "}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"StageLevel"}</Link>{" { get; }"}</code> | Always `StageLevel.Inner`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-finalizestage" /><code>{"protected override void FinalizeStage(bool isForced)"}</code> | Plays the finish effect and makes the core stage current. |
 
 ## Used in
 

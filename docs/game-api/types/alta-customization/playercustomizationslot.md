@@ -1,6 +1,6 @@
 ---
 title: "PlayerCustomizationSlot"
-description: "enum PlayerCustomizationSlot in Root.Township."
+description: "Every attachment point and body feature a customization item can fill, such as numbered slots per body area, eyes, hair, body type, toolbelt and sash."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerCustomizationSlot
 
 An **enum** in `Root.Township`, `Alta.Customization`.
+
+Every attachment point and body feature a customization item can fill, such as numbered slots per body area, eyes, hair, body type, toolbelt and sash.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 

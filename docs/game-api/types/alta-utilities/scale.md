@@ -1,6 +1,6 @@
 ---
 title: "Scale"
-description: "enum Scale in Root.Township."
+description: "Size multiplier for a material's textures in an atlas: four times, twice, regular, half or quarter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Scale
 
 An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
+
+Size multiplier for a material's textures in an atlas: four times, twice, regular, half or quarter.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

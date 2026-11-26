@@ -1,6 +1,6 @@
 ---
 title: "CommentAttribute.MessageType"
-description: "enum CommentAttribute.MessageType in Alta.Attributes."
+description: "Icon style for a CommentAttribute note in the inspector: none, info, warning or error."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommentAttribute.MessageType
 
 An **enum** in `Alta.Attributes`, no namespace.
+
+Icon style for a `CommentAttribute` note in the inspector: none, info, warning or error.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`CommentAttribute`](/game-api/types/assembly-other/commentattribute)

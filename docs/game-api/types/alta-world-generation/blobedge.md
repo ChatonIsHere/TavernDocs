@@ -29,19 +29,19 @@ A cave map generator part that stamps a blob (a centre circle plus smaller circl
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-circles" /><code>{"private int circles"}</code> |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
-| <Link id="m-maximumcircledistance" /><code>{"private float maximumCircleDistance"}</code> |
-| <Link id="m-maximumedgeradius" /><code>{"private float maximumEdgeRadius"}</code> |
-| <Link id="m-minimumcircledistance" /><code>{"private float minimumCircleDistance"}</code> |
-| <Link id="m-minimumedgeradius" /><code>{"private float minimumEdgeRadius"}</code> |
-| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-sizeattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" sizeAttribute"}</code> |
-| <Link id="m-yindex" /><code>{"private int yIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-circles" /><code>{"private int circles"}</code> | Backing field for `Circles`. |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | Backing field for `Curve`. |
+| <Link id="m-maximumcircledistance" /><code>{"private float maximumCircleDistance"}</code> | Backing field for `MaximumCircleDistance`. |
+| <Link id="m-maximumedgeradius" /><code>{"private float maximumEdgeRadius"}</code> | Backing field for `MaximumEdgeRadius`. |
+| <Link id="m-minimumcircledistance" /><code>{"private float minimumCircleDistance"}</code> | Backing field for `MinimumCircleDistance`. |
+| <Link id="m-minimumedgeradius" /><code>{"private float minimumEdgeRadius"}</code> | Backing field for `MinimumEdgeRadius`. |
+| <Link id="m-operationtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> | Backing field for `OperationType`. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Backing field for `Radius`. |
+| <Link id="m-sizeattribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" sizeAttribute"}</code> | Backing field for `SizeAttribute`. |
+| <Link id="m-yindex" /><code>{"private int yIndex"}</code> | Backing field for `YIndex`. |
 
 </details>
 

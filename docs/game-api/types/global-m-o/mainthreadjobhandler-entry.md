@@ -1,6 +1,6 @@
 ---
 title: "MainThreadJobHandler.Entry"
-description: "abstract class MainThreadJobHandler.Entry in Root.Township."
+description: "Handle for a job queued on MainThreadJobHandler with Schedule."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MainThreadJobHandler.Entry
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Handle for a job queued on `MainThreadJobHandler` with `Schedule`. Await it to wait for the job.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MainThreadJobHandler`](/game-api/types/global-m-o/mainthreadjobhandler)
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getawaiter" /><code>{"abstract TaskAwaiter<bool> GetAwaiter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getawaiter" /><code>{"abstract TaskAwaiter<bool> GetAwaiter()"}</code> | Lets the entry be awaited; the result is a bool from the job's completion. |
 
 ## Used in
 

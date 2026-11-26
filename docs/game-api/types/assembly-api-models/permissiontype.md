@@ -1,6 +1,6 @@
 ---
 title: "PermissionType"
-description: "enum PermissionType in Alta.Api.DataTransferModels."
+description: "Flags for what a user may do with an Alta web API form: edit, respond, view responses or comments, comment, resolve and unresolve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PermissionType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Flags for what a user may do with an Alta web API form: edit, respond, view responses or comments, comment, resolve and unresolve.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Attributes** `Flags`

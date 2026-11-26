@@ -40,18 +40,18 @@ One finger joint of a hand grip. It curls in steps until it touches a grabbed ob
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> |
-| <Link id="m-closedrotation" /><code>{"private Quaternion closedRotation"}</code> |
-| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> |
-| <Link id="m-ishit" /><code>{"private bool isHit"}</code> |
-| <Link id="m-lastcurlmultiplier" /><code>{"private int lastCurlMultiplier"}</code> |
-| <Link id="m-layermask" /><code>{"private int layerMask"}</code> |
-| <Link id="m-openrotation" /><code>{"private Quaternion openRotation"}</code> |
-| <Link id="m-savedrotation" /><code>{"private Quaternion savedRotation"}</code> |
-| <Link id="m-sidemultiplier" /><code>{"private int sideMultiplier"}</code> |
-| <Link id="m-splaidrotation" /><code>{"private Quaternion splaidRotation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-axis" /><code>{"private Vector3 axis"}</code> | Axis the joint curls around, from the current thumb configuration. |
+| <Link id="m-closedrotation" /><code>{"private Quaternion closedRotation"}</code> | The joint's rotation in the closed hand pose. |
+| <Link id="m-defaultrotation" /><code>{"private Quaternion defaultRotation"}</code> | The joint's local rotation when it was set up. |
+| <Link id="m-ishit" /><code>{"private bool isHit"}</code> | True when the last collision check found something. Gizmos draw red when set. |
+| <Link id="m-lastcurlmultiplier" /><code>{"private int lastCurlMultiplier"}</code> | The curl step the joint stopped at. This is what gets synced. |
+| <Link id="m-layermask" /><code>{"private int layerMask"}</code> | Layer mask for the Active Tight Grip layer, used in the collision check. |
+| <Link id="m-openrotation" /><code>{"private Quaternion openRotation"}</code> | The joint's rotation in the open hand pose. |
+| <Link id="m-savedrotation" /><code>{"private Quaternion savedRotation"}</code> | The rotation saved as the grip pose, blended towards when gripping. |
+| <Link id="m-sidemultiplier" /><code>{"private int sideMultiplier"}</code> | 1 for the left hand and -1 for the right, so the joint box points the right way. |
+| <Link id="m-splaidrotation" /><code>{"private Quaternion splaidRotation"}</code> | The joint's rotation in the splayed hand pose. |
 
 </details>
 

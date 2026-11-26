@@ -27,22 +27,22 @@ Turns a hand's touchpad and thumbstick input into numbered directions and four-w
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-broaderdirectionsensitivity" /><code>{"private float broaderDirectionSensitivity"}</code> |
-| <Link id="m-buttoncount" /><code>{"private int buttonCount"}</code> |
-| <Link id="m-currenttouchpad" /><code>{"private Vector2 currentTouchPad"}</code> |
-| <Link id="m-debugvector" /><code>{"private Vector2 debugVector"}</code> |
-| <Link id="m-innerradius" /><code>{"private float innerRadius"}</code> |
-| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input"}</code> |
-| <Link id="m-isclockwiseforrighthand" /><code>{"private bool isClockwiseForRightHand"}</code> |
-| <Link id="m-oldtouchpaddirection" /><code>{"private int oldTouchPadDirection"}</code> |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |
-| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> |
-| <Link id="m-swipesensitivity" /><code>{"private float swipeSensitivity"}</code> |
-| <Link id="m-swipesentivitylevels" /><code>{"private float[] swipeSentivityLevels"}</code> |
-| <Link id="m-touchstart" /><code>{"private Vector2 touchStart"}</code> |
-| <Link id="m-usedebugvector" /><code>{"private bool useDebugVector"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-broaderdirectionsensitivity" /><code>{"private float broaderDirectionSensitivity"}</code> | Squared half of the swipe sensitivity. |
+| <Link id="m-buttoncount" /><code>{"private int buttonCount"}</code> | Number of direction sectors around the pad. 12. |
+| <Link id="m-currenttouchpad" /><code>{"private Vector2 currentTouchPad"}</code> | Last touchpad position read. |
+| <Link id="m-debugvector" /><code>{"private Vector2 debugVector"}</code> | Test input used instead of the touchpad when `useDebugVector` is on. |
+| <Link id="m-innerradius" /><code>{"private float innerRadius"}</code> | Squared radius of the centre zone. |
+| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input"}</code> | The raw controller input it reads. |
+| <Link id="m-isclockwiseforrighthand" /><code>{"private bool isClockwiseForRightHand"}</code> | Mirrors the angle for the right hand so directions run the same way on both hands. |
+| <Link id="m-oldtouchpaddirection" /><code>{"private int oldTouchPadDirection"}</code> | Direction from the previous check, to detect changes. |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | The hand's `PlayerInput`. |
+| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> | Angle offset in degrees applied before splitting into sectors. -90. |
+| <Link id="m-swipesensitivity" /><code>{"private float swipeSensitivity"}</code> | Squared minimum swipe length. |
+| <Link id="m-swipesentivitylevels" /><code>{"private float[] swipeSentivityLevels"}</code> | Swipe lengths for each settings level: 1.5, 1 and 0.5. |
+| <Link id="m-touchstart" /><code>{"private Vector2 touchStart"}</code> | Touchpad position when the touch began. |
+| <Link id="m-usedebugvector" /><code>{"private bool useDebugVector"}</code> | Use `debugVector` instead of the real touchpad. |
 
 </details>
 
@@ -75,13 +75,13 @@ Turns a hand's touchpad and thumbstick input into numbered directions and four-w
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-calculategesturedirection" /><code>{"private void CalculateGestureDirection()"}</code> |
-| <Link id="m-calculateswipe" /><code>{"private void CalculateSwipe("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
-| <Link id="m-calculateswipedirection" /><code>{"private void CalculateSwipeDirection()"}</code> |
-| <Link id="m-checkforswipesensitivitylevelinsettings" /><code>{"private void CheckForSwipeSensitivityLevelInSettings("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> |
-| <Link id="m-padtouched" /><code>{"private void PadTouched("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-calculategesturedirection" /><code>{"private void CalculateGestureDirection()"}</code> | Sets `CurrentThumbStickDirection` from the thumbstick angle, split into `buttonCount` sectors. |
+| <Link id="m-calculateswipe" /><code>{"private void CalculateSwipe("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | On touch release, works out the swipe direction (0 right, 1 up, 2 left, 3 down) and raises `SwipeExecuted`, or -1 if too short. |
+| <Link id="m-calculateswipedirection" /><code>{"private void CalculateSwipeDirection()"}</code> | Sets `CurrentDpadDirection` from the touchpad position and raises `TouchChanged` when it changes. 0 is the centre. |
+| <Link id="m-checkforswipesensitivitylevelinsettings" /><code>{"private void CheckForSwipeSensitivityLevelInSettings("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> | Reads the swipe sensitivity level from game settings and squares it for distance checks. |
+| <Link id="m-padtouched" /><code>{"private void PadTouched("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | On touch start, stores the start point and updates the direction. |
 
 </details>
 

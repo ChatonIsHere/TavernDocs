@@ -26,19 +26,19 @@ Cave generator part that fills a map layer with hashed random values, combined w
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-coverage" /><code>{"protected float coverage"}</code> |
-| <Link id="m-maximumexclusive" /><code>{"protected float maximumExclusive"}</code> |
-| <Link id="m-minimuminclusive" /><code>{"protected float minimumInclusive"}</code> |
-| <Link id="m-operationtype" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-coverage" /><code>{"protected float coverage"}</code> | Backing field for `Coverage`. |
+| <Link id="m-maximumexclusive" /><code>{"protected float maximumExclusive"}</code> | Backing field for `MaximumExclusive`. |
+| <Link id="m-minimuminclusive" /><code>{"protected float minimumInclusive"}</code> | Backing field for `MinimumInclusive`. |
+| <Link id="m-operationtype" /><code>{"protected "}<Link to="/game-api/types/alta-utilities/operationtype">{"OperationType"}</Link>{" operationType"}</code> | Backing field for `OperationType`. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-coveragemultiplier" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" coverageMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-coveragemultiplier" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" coverageMultiplier"}</code> | Backing field for `CoverageMultiplier`. |
 
 </details>
 

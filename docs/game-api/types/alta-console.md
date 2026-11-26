@@ -51,8 +51,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CommandResultSuccess`](/game-api/types/alta-console/commandresultsuccess) | enum |  | 5 | Outcome of matching console input to a command: success, or why the parameters didn't fit (too few, too many, wrong types, failed to parse). Carried on `CommandSearchResult`. |
 | [`CommandSearchResult`](/game-api/types/alta-console/commandsearchresult) | struct |  | 8 | The outcome of matching console input to a command: which command was found, whether its arguments fit, and the parsed arguments. |
 | [`CommandService`](/game-api/types/alta-console/commandservice) | static class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandservice), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Main thread: every console the game has calls it from Unity's main thread, and you should too. |
-| [`ConsoleEvent`](/game-api/types/alta-console/consoleevent) | abstract class |  | 5 |  |
-| [`ConsoleEvent.Processor`](/game-api/types/alta-console/consoleevent-processor) | class | `IDisposable` | 2 |  |
+| [`ConsoleEvent`](/game-api/types/alta-console/consoleevent) | abstract class |  | 5 | Base for a named event that websocket console users can subscribe to. Messages are queued and sent from a background task, not the main thread. |
+| [`ConsoleEvent.Processor`](/game-api/types/alta-console/consoleevent-processor) | class | `IDisposable` | 2 | Background task that takes queued console event messages and raises each event's `Invoked`. One shared instance runs for all events. |
 | [`ConsoleEvent<T>`](/game-api/types/alta-console/consoleevent-t) | class | `ConsoleEvent`, `IConsoleEvent` | 4 | [Console, utilities and Alta assemblies](../console-and-utilities/overview.md) |
 | [`ConsoleEventProcessor`](/game-api/types/alta-console/consoleeventprocessor) | static class |  | 5 |  |
 | [`ConsoleEvents`](/game-api/types/alta-console/consoleevents) | static class |  | 16 | The game's console events as static fields. Console (websocket) sessions subscribe to them by name. See the Console events guide for what raises each one. |
@@ -71,7 +71,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NotAllowedInRemoteAttribute`](/game-api/types/alta-console/notallowedinremoteattribute) | class | `RequirementAttribute` | 2 |  |
 | [`NullableStructSerializer<TStruct>`](/game-api/types/alta-console/nullablestructserializer-tstruct) | class | `JsonConverter<TStruct?>` | 2 |  |
 | [`ParamAttribute`](/game-api/types/alta-console/paramattribute) | class | `Attribute` | 2 |  |
-| [`Parameter`](/game-api/types/alta-console/parameter) | class | `BasePart` | 9 |  |
+| [`Parameter`](/game-api/types/alta-console/parameter) | class | `BasePart` | 9 | One parameter of a console `Command`, built from the method's `ParameterInfo`. |
 | [`PlayOnlyAttribute`](/game-api/types/alta-console/playonlyattribute) | class | `RequirementAttribute` | 2 |  |
 | [`PriorityAttribute`](/game-api/types/alta-console/priorityattribute) | class | `Attribute` | 2 |  |
 | [`ProgressiveHandler`](/game-api/types/alta-console/progressivehandler) | class |  | 0 | Empty marker type. A console command whose first parameter is a `ProgressiveHandler` is flagged as progressive; it must be the first parameter or registration throws. |
@@ -83,7 +83,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Vector3TypeConverter`](/game-api/types/alta-console/vector3typeconverter) | class | `JsonConverter<Vector3>` | 2 |  |
 | [`Vector4TypeConverter`](/game-api/types/alta-console/vector4typeconverter) | class | `JsonConverter<Vector4>` | 2 |  |
 | [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler) | class | `IRemoteConsoleHandler` | 8 | [Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler): One per websocket connection. `WebSocketRemoteConsole.Handlers` (a static list) holds every one, logged in or not. |
-| [`WebSocketCommandHandler.Request`](/game-api/types/alta-console/websocketcommandhandler-request) | struct |  | 2 |  |
+| [`WebSocketCommandHandler.Request`](/game-api/types/alta-console/websocketcommandhandler-request) | struct |  | 2 | A command request sent by a websocket console client, parsed from JSON. |
 | [`WebSocketCommandHandler.ResponseData`](/game-api/types/alta-console/websocketcommandhandler-responsedata) | class |  | 7 | One message sent to a remote console client over the WebSocket: a system message, subscription event or command result, serialized to JSON. |
 | [`WebSocketCommandHandler.ResponseType`](/game-api/types/alta-console/websocketcommandhandler-responsetype) | enum |  | 3 | Kind of message the remote console websocket sends back: a system message (such as the auth result), a subscription event, or the result of a command. |
 | [`WebSocketCommandHandler.SubscriptionResult`](/game-api/types/alta-console/websocketcommandhandler-subscriptionresult) | enum |  | 3 | Result of a websocket console subscribe or unsubscribe: done, no change (already in that state) or the event type wasn't found. |
@@ -97,7 +97,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AltaSelection`](/game-api/types/alta-console/altaselection) | class |  | 2 |  |
+| [`AltaSelection`](/game-api/types/alta-console/altaselection) | class |  | 2 | The entity a console user has selected, kept on their `CommandContext` as `Selection`. |
 | [`AudioCommandModule`](/game-api/types/alta-console/audiocommandmodule) | static class |  | 0 |  |
 | [`AudioCommandModule.Microphone`](/game-api/types/alta-console/audiocommandmodule-microphone) | static class |  | 0 |  |
 | [`BaseCommands`](/game-api/types/alta-console/basecommands) | static class |  | 5 |  |
@@ -115,11 +115,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LogoutCommandModule`](/game-api/types/alta-console/logoutcommandmodule) | static class |  | 0 |  |
 | [`MaintenanceCommandModule`](/game-api/types/alta-console/maintenancecommandmodule) | static class |  | 0 |  |
 | [`ModCommands`](/game-api/types/alta-console/modcommands) | static class |  | 8 |  |
-| [`ModInfo`](/game-api/types/alta-console/modinfo) | class |  | 4 |  |
+| [`ModInfo`](/game-api/types/alta-console/modinfo) | class |  | 4 | A row returned by the mod list console command: a loaded script bundle's name and whether it is active. |
 | [`NetworkEntityInfo`](/game-api/types/alta-console/networkentityinfo) | class |  | 3 | A short summary of a network entity (ID and name) returned by console commands such as spawn. Any `NetworkEntity` converts to it. |
-| [`PrefabInfoDump`](/game-api/types/alta-console/prefabinfodump) | class |  | 4 |  |
-| [`PrefabInfoDump.NetworkEntityInfoDump`](/game-api/types/alta-console/prefabinfodump-networkentityinfodump) | class |  | 4 |  |
-| [`PrefabInfoDump.SavableInfoDump`](/game-api/types/alta-console/prefabinfodump-savableinfodump) | class |  | 3 |  |
+| [`PrefabInfoDump`](/game-api/types/alta-console/prefabinfodump) | class |  | 4 | Server: one prefab's entry in the `spawn infodump` command output, with its hash, name and the network entities inside it. |
+| [`PrefabInfoDump.NetworkEntityInfoDump`](/game-api/types/alta-console/prefabinfodump-networkentityinfodump) | class |  | 4 | One network entity inside a prefab, as listed by `PrefabInfoDump`. |
+| [`PrefabInfoDump.SavableInfoDump`](/game-api/types/alta-console/prefabinfodump-savableinfodump) | class |  | 3 | One savable component type on an entity, as listed by `PrefabInfoDump`. |
 | [`ProfilingCommandModule`](/game-api/types/alta-console/profilingcommandmodule) | static class |  | 1 |  |
 | [`ProgressCommandModule`](/game-api/types/alta-console/progresscommandmodule) | static class |  | 1 |  |
 | [`QualityCommandModule`](/game-api/types/alta-console/qualitycommandmodule) | class |  | 3 |  |
@@ -135,12 +135,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SettingsCommandModules.PopulationSettings`](/game-api/types/alta-console/settingscommandmodules-populationsettings) | static class |  | 3 |  |
 | [`SocialCommandModule`](/game-api/types/alta-console/socialcommandmodule) | static class |  | 3 |  |
 | [`SpawnCommandModule`](/game-api/types/alta-console/spawncommandmodule) | static class |  | 3 |  |
-| [`SpawnCommandModule.MouldDefinitionInfo`](/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo) | class |  | 2 |  |
+| [`SpawnCommandModule.MouldDefinitionInfo`](/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo) | class |  | 2 | A row in the mould list console command. |
 | [`SpawnCommandModule.Moulds`](/game-api/types/alta-console/spawncommandmodule-moulds) | static class |  | 0 |  |
 | [`SpawnCommandModule.Packages`](/game-api/types/alta-console/spawncommandmodule-packages) | static class |  | 0 |  |
-| [`SpawnCommandModule.PageCollectionInfo`](/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo) | class |  | 3 |  |
+| [`SpawnCommandModule.PageCollectionInfo`](/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo) | class |  | 3 | A row in the page collection list console command. |
 | [`SpawnCommandModule.Pages`](/game-api/types/alta-console/spawncommandmodule-pages) | static class |  | 0 |  |
-| [`SpawnCommandModule.PopulationType`](/game-api/types/alta-console/spawncommandmodule-populationtype) | enum |  | 3 |  |
+| [`SpawnCommandModule.PopulationType`](/game-api/types/alta-console/spawncommandmodule-populationtype) | enum |  | 3 | Shape of the population area the `spawn population` command spawns: disk, sphere or directional. Each picks a different built-in prefab. |
 | [`SpawnCommandModule.SpawnLists`](/game-api/types/alta-console/spawncommandmodule-spawnlists) | static class |  | 0 |  |
 | [`TimeCommandModule`](/game-api/types/alta-console/timecommandmodule) | static class |  | 0 |  |
 | [`TradeCommandModule`](/game-api/types/alta-console/tradecommandmodule) | static class |  | 0 |  |
@@ -165,7 +165,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`ConsoleCommandsLogTarget`](/game-api/types/alta-console/consolecommandslogtarget) | class | `TargetWithLayout` | 2 |  |
 | [`FullStackTraceRenderer`](/game-api/types/alta-console/fullstacktracerenderer) | class | `LayoutRenderer`, `IUsesStackTrace` | 1 |  |
-| [`LogHandler`](/game-api/types/alta-console/loghandler) | delegate |  | 0 |  |
+| [`LogHandler`](/game-api/types/alta-console/loghandler) | delegate |  | 0 | Event handler for a formatted log line and its level. Used by `ServerConsoleLogTarget.LogSent` and `ConsoleCommandsLogTarget.LogSent`. |
 | [`MainMenuTarget`](/game-api/types/alta-console/mainmenutarget) | class | `TargetWithLayout` | 0 | [Logging](../console-and-utilities/logging.md) |
 | [`NetworkEntityChunkRenderer`](/game-api/types/alta-console/networkentitychunkrenderer) | class | `NetworkEntityRenderer` | 0 |  |
 | [`NetworkEntityIdentifierRenderer`](/game-api/types/alta-console/networkentityidentifierrenderer) | class | `NetworkEntityRenderer` | 0 |  |
@@ -173,7 +173,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`NetworkEntityParentRenderer`](/game-api/types/alta-console/networkentityparentrenderer) | class | `NetworkEntityRenderer` | 0 |  |
 | [`NetworkEntityPrefabRenderer`](/game-api/types/alta-console/networkentityprefabrenderer) | class | `NetworkEntityRenderer` | 0 |  |
 | [`NetworkEntityRenderer`](/game-api/types/alta-console/networkentityrenderer) | abstract class | `LayoutRenderer` | 0 | Base for NLog layout renderers that print something about a `NetworkEntity` passed as the log message's first parameter (its prefab, parent, owner, identifier or chunk). |
-| [`RawLogHandler`](/game-api/types/alta-console/rawloghandler) | delegate |  | 0 |  |
+| [`RawLogHandler`](/game-api/types/alta-console/rawloghandler) | delegate |  | 0 | Event handler for a raw NLog event. Used by the `LogSentRaw` events on `ServerConsoleLogTarget` and `ConsoleCommandsLogTarget`. |
 | [`ServerConsoleLogTarget`](/game-api/types/alta-console/serverconsolelogtarget) | class | `TargetWithLayout` | 2 |  |
 | [`UnityConsoleLogTarget`](/game-api/types/alta-console/unityconsolelogtarget) | class | `TargetWithLayout` | 2 | [Logging](../console-and-utilities/logging.md) |
 
@@ -182,4 +182,4 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker) | class |  | 1 |  |
-| [`DebugLoadMarker.IChunkLoader`](/game-api/types/alta-console/debugloadmarker-ichunkloader) | interface |  | 1 |  |
+| [`DebugLoadMarker.IChunkLoader`](/game-api/types/alta-console/debugloadmarker-ichunkloader) | interface |  | 1 | Picks which chunks a `DebugLoadMarker` keeps loaded around its entity. There is an optimised version for simple servers and a normal one. |

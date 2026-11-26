@@ -1,6 +1,6 @@
 ---
 title: "PlayerHandler"
-description: "delegate PlayerHandler in Root.Township."
+description: "Handler that gets an IPlayer, as used by Player.LocalPlayerSet."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler that gets an `IPlayer`, as used by `Player.LocalPlayerSet`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "InvitedGroups"
-description: "class InvitedGroups in Alta.Api.Client."
+description: "Paged list of group invites the current user has received, from the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InvitedGroups
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Paged list of group invites the current user has received, from the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`PaginatedList<IncomingGroupInvite>`](/game-api/types/assembly-api-client/paginatedlist-t)

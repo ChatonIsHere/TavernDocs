@@ -1,6 +1,6 @@
 ---
 title: "StatusAPI"
-description: "class StatusAPI in Alta.Api.Client."
+description: "Fetches service status notices from Alta's Strapi site (strapi.townshiptale.dev)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatusAPI
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Fetches service status notices from Alta's Strapi site (strapi.townshiptale.dev).
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
@@ -25,17 +27,17 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-client" /><code>{"private readonly HttpClient client"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-client" /><code>{"private readonly HttpClient client"}</code> | HTTP client with retries, pointed at the status site. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getstatus" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{">> GetStatus()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getstatus" /><code>{"async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{">> GetStatus()"}</code> | Gets the list of status notices. Returns an empty list if the request fails. |
 
 ## Used in
 

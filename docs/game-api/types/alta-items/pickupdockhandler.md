@@ -1,6 +1,6 @@
 ---
 title: "PickupDockHandler"
-description: "delegate PickupDockHandler in Root.Township."
+description: "Handler for an event about a single dock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockHandler
 
 A **delegate** in `Root.Township`, `Alta.Inventory`.
+
+Handler for an event about a single dock.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MulticastDelegate`

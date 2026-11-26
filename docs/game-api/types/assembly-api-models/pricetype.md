@@ -1,6 +1,6 @@
 ---
 title: "PriceType"
-description: "enum PriceType in Alta.Api.DataTransferModels."
+description: "Currency of a ShopPrice: US dollars or shards."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PriceType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Currency of a `ShopPrice`: US dollars or shards.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

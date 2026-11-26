@@ -1,6 +1,6 @@
 ---
 title: "SplineDecorator.RotationMode"
-description: "enum SplineDecorator.RotationMode in Root.Township."
+description: "How SplineDecorator rotates placed objects: not at all, look along the forward direction, look along it flattened to horizontal, or look along it with up..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplineDecorator.RotationMode
 
 An **enum** in `Root.Township`, `Alta.Bezier`.
+
+How `SplineDecorator` rotates placed objects: not at all, look along the forward direction, look along it flattened to horizontal, or look along it with up set to the terrain normal.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`SplineDecorator`](/game-api/types/alta-utilities/splinedecorator)

@@ -1,6 +1,6 @@
 ---
 title: "Book.LODRenderers"
-description: "class Book.LODRenderers in Root.Township."
+description: "Private: the renderers for one LOD level of a Book, kept so flair renderers can be added to the LOD group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Book.LODRenderers
 
 A **private class** in `Root.Township`, `Alta.Pages`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private: the renderers for one LOD level of a `Book`, kept so flair renderers can be added to the LOD group.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`Book`](/game-api/types/alta-items/book)
@@ -24,15 +26,15 @@ A **private class** in `Root.Township`, `Alta.Pages`. Reach it through att-stubs
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-renderers" /><code>{"List<Renderer> renderers"}</code> | The renderers in this LOD level. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-toarray" /><code>{"Renderer[] ToArray()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-toarray" /><code>{"Renderer[] ToArray()"}</code> | Returns the renderers as an array. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "HealthObject.HealthChangedHandler"
-description: "delegate HealthObject.HealthChangedHandler in Root.Township."
+description: "Handler for HealthObject.HealthChanged: gets the health object, the amount changed and the damage data that caused it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HealthObject.HealthChangedHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Handler for `HealthObject.HealthChanged`: gets the health object, the amount changed and the damage data that caused it.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`HealthObject`](/game-api/types/global-e-h/healthobject)

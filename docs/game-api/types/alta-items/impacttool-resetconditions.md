@@ -1,6 +1,6 @@
 ---
 title: "ImpactTool.ResetConditions"
-description: "enum ImpactTool.ResetConditions in Root.Township."
+description: "Flags for when an ImpactTool resets its impactors: on being blocked, on a valid hit, or both."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactTool.ResetConditions
 
 An **private enum** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Flags for when an `ImpactTool` resets its impactors: on being blocked, on a valid hit, or both. Defaults to valid hit.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactTool`](/game-api/types/alta-items/impacttool)

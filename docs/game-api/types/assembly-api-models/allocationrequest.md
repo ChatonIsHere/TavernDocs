@@ -1,6 +1,6 @@
 ---
 title: "AllocationRequest"
-description: "class AllocationRequest in Alta.Api.DataTransferModels."
+description: "Body of the Alta web API call that allocates a server for migration (AllocateServerForMigration)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body of the Alta web API call that allocates a server for migration (`AllocateServerForMigration`).
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serveridentifier" /><code>{"int ServerIdentifier { get; set; }"}</code> | Id of the server to allocate. |
 
 ## Used in
 

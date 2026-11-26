@@ -1,6 +1,6 @@
 ---
 title: "WorldCommandModule.ForestCommandModule.ForestInfo.Space"
-description: "class WorldCommandModule.ForestCommandModule.ForestInfo.Space in Root.Township."
+description: "A triangle of three forest nodes in a ForestInfo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WorldCommandModule.ForestCommandModule.ForestInfo.Space
 
 A **class** in `Root.Township`, `Alta.Console.Commands`.
+
+A triangle of three forest nodes in a `ForestInfo`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WorldCommandModule.ForestCommandModule.ForestInfo`](/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, `Alta.Console.Commands`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-a" /><code>{"int a"}</code> |
-| <Link id="m-b" /><code>{"int b"}</code> |
-| <Link id="m-c" /><code>{"int c"}</code> |
-| <Link id="m-id" /><code>{"int id"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-a" /><code>{"int a"}</code> | Index of the first node. |
+| <Link id="m-b" /><code>{"int b"}</code> | Index of the second node. |
+| <Link id="m-c" /><code>{"int c"}</code> | Index of the third node. |
+| <Link id="m-id" /><code>{"int id"}</code> | The space's position in the forest's space list. |
 
 ## Used in
 

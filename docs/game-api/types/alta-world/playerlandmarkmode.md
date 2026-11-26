@@ -1,6 +1,6 @@
 ---
 title: "PlayerLandmarkMode"
-description: "enum PlayerLandmarkMode in Root.Township."
+description: "Whose player markers show on the map: everyone, friends only, or none."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerLandmarkMode
 
 An **enum** in `Root.Township`, `Alta.Map`.
+
+Whose player markers show on the map: everyone, friends only, or none.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 

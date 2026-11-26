@@ -1,6 +1,6 @@
 ---
 title: "GroupInvites"
-description: "class GroupInvites in Alta.Api.Client."
+description: "Paged list of a group's outgoing invites from the Alta web API, with a way to invite more users."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupInvites
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Paged list of a group's outgoing invites from the Alta web API, with a way to invite more users.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`PaginatedListWithAdd<OutgoingGroupInvite>`](/game-api/types/assembly-api-client/paginatedlistwithadd-t)
@@ -28,15 +30,15 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" { get; }"}</code> | The group these invites are for. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"override async Task<"}<Link to="/game-api/types/assembly-api-client/outgoinggroupinvite">{"OutgoingGroupInvite"}</Link>{"> Add("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"override async Task<"}<Link to="/game-api/types/assembly-api-client/outgoinggroupinvite">{"OutgoingGroupInvite"}</Link>{"> Add("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user)"}</code> | Invites a user to the group and returns the new invite. |
 
 ## Used in
 

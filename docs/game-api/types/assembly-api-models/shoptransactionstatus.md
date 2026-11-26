@@ -1,6 +1,6 @@
 ---
 title: "ShopTransactionStatus"
-description: "enum ShopTransactionStatus in Alta.Api.DataTransferModels."
+description: "State of an Alta shop purchase, from started and processing to successful or refunded, with values for each kind of failure."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShopTransactionStatus
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+State of an Alta shop purchase, from started and processing to successful or refunded, with values for each kind of failure.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

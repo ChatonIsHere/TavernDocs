@@ -1,6 +1,6 @@
 ---
 title: "WyrmDigSettings"
-description: "class WyrmDigSettings in Root.Township."
+description: "Wyrm action component for burrowing."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WyrmDigSettings
 
 A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
+
+Wyrm action component for burrowing. The wyrm switches to its burrowed actions and senses, and gets more likely to dig the longer it has idled.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`TimedActionComponent`](/game-api/types/alta-intelligence/timedactioncomponent)
@@ -27,30 +29,30 @@ A **class** in `Root.Township`, `Alta.Intelligence.Wyrms`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> |
-| <Link id="m-dugsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] dugSenses"}</code> |
-| <Link id="m-failchance" /><code>{"private float failChance"}</code> |
-| <Link id="m-maxstrengthduration" /><code>{"private float maxStrengthDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changesensedelay" /><code>{"private float changeSenseDelay"}</code> | Backing field for `ChangeSenseDelay`. |
+| <Link id="m-dugsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] dugSenses"}</code> | Backing field for `DugSenses`. |
+| <Link id="m-failchance" /><code>{"private float failChance"}</code> | Backing field for `FailChance`. |
+| <Link id="m-maxstrengthduration" /><code>{"private float maxStrengthDuration"}</code> | Backing field for `MaxStrengthDuration`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-changesensedelay-2" /><code>{"float ChangeSenseDelay { get; }"}</code> |
-| <Link id="m-dugsenses-2" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] DugSenses { get; }"}</code> |
-| <Link id="m-failchance-2" /><code>{"float FailChance { get; }"}</code> |
-| <Link id="m-maxstrengthduration-2" /><code>{"float MaxStrengthDuration { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changesensedelay-2" /><code>{"float ChangeSenseDelay { get; }"}</code> | Seconds after the dig starts before the senses switch to `DugSenses`. |
+| <Link id="m-dugsenses-2" /><code><Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] DugSenses { get; }"}</code> | Senses applied once the wyrm is underground (all others are zeroed). |
+| <Link id="m-failchance-2" /><code>{"float FailChance { get; }"}</code> | Chance that the dig scores zero on a given check. |
+| <Link id="m-maxstrengthduration-2" /><code>{"float MaxStrengthDuration { get; }"}</code> | Idle seconds after which the dig reaches full weight. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Returns the `ActiveDig` action for these settings. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: fixes up each entry in `dugSenses`. |
 
 ## Used in
 

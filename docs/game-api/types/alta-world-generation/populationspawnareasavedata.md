@@ -29,13 +29,13 @@ Save data for a `PopulationSpawnArea`: which population it holds, its counts, sp
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> |  |
-| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> |  |
-| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |  |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |  |
+| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> | Saved timer state of the population sample, restored on load. |
+| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> | Saved population members of this area. |
+| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> | How many members the area had when saved. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> | The population this spawn area spawns. |
 | <Link id="m-isoneoff" /><code>{"bool isOneOff"}</code> | If true, the area spawns once and doesn't refill. |
-| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> |  |
-| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |  |
+| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> | Whether the area had a running population when saved. |
+| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> | The area's maximum population. |
 | <Link id="m-numberofspawnpoints" /><code>{"int numberOfSpawnPoints"}</code> | How many static spawn points the area picks. |
 | <Link id="m-startingpopulation" /><code>{"int startingPopulation"}</code> | How many members spawn when the area first starts. |
 

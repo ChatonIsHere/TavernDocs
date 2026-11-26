@@ -1,6 +1,6 @@
 ---
 title: "GenericCraftingStation.PickupColliders"
-description: "class GenericCraftingStation.PickupColliders in Root.Township."
+description: "Tracks a pickup with a generic crafting component inside a GenericCraftingStation's trigger."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenericCraftingStation.PickupColliders
 
 A **private class** in `Root.Township`, `Alta.Crafting`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Tracks a pickup with a generic crafting component inside a `GenericCraftingStation`'s trigger.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`GenericCraftingStation`](/game-api/types/alta-crafting/genericcraftingstation)
@@ -24,17 +26,17 @@ A **private class** in `Root.Township`, `Alta.Crafting`. Reach it through att-st
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colliders" /><code>{"HashSet<Collider> Colliders"}</code> | The pickup's colliders currently inside the trigger. |
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-component" /><code><Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" Component { get; }"}</code> |
-| <Link id="m-needstoremove" /><code>{"bool NeedsToRemove { get; }"}</code> |
-| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-component" /><code><Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" Component { get; }"}</code> | The pickup's generic crafting component. |
+| <Link id="m-needstoremove" /><code>{"bool NeedsToRemove { get; }"}</code> | True once the pickup is docked or being destroyed. |
+| <Link id="m-pickup" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The tracked pickup. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "EdibleEvent"
-description: "class EdibleEvent in Root.Township."
+description: "Serializable AltaEvent raised with an EdibleObject."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EdibleEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `AltaEvent` raised with an `EdibleObject`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`AltaEvent<EdibleObject, EdibleUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

@@ -1,6 +1,6 @@
 ---
 title: "ZoneEvent"
-description: "abstract class ZoneEvent in Root.Township."
+description: "Base ScriptableObject for an action a zone trigger runs, such as an analytics event or setting a challenge checkpoint."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ZoneEvent
 
 An **abstract class** in `Root.Township`, `ATT.Triggers`.
+
+Base ScriptableObject for an action a zone trigger runs, such as an analytics event or setting a challenge checkpoint.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** `ScriptableObject`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, `ATT.Triggers`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-trigger" /><code>{"abstract void Trigger("}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int durationInSeconds)"}</code> | Runs the event with the trigger's event data and a duration in seconds. |
 
 ## Used in
 
