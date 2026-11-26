@@ -72,8 +72,9 @@ for (let i = 0; i < changed.length; i += 500) {
     const up = await cf('POST', `/vectorize/v2/indexes/${INDEX}/upsert`, ndjson, 'application/x-ndjson');
     if (!up.ok) throw new Error('Vectorize upsert failed: ' + JSON.stringify(up.data.errors ?? up.data));
 }
-for (let i = 0; i < gone.length; i += 500) {
-    const del = await cf('POST', `/vectorize/v2/indexes/${INDEX}/delete_by_ids`, {ids: gone.slice(i, i + 500).map(vectorId)});
+// Vectorize takes at most 100 ids per delete.
+for (let i = 0; i < gone.length; i += 100) {
+    const del = await cf('POST', `/vectorize/v2/indexes/${INDEX}/delete_by_ids`, {ids: gone.slice(i, i + 100).map(vectorId)});
     if (!del.ok) throw new Error('Vectorize delete failed: ' + JSON.stringify(del.data.errors ?? del.data));
 }
 console.log(`[semantic] Vectorize: ${changed.length} upserted, ${gone.length} deleted, ${chunks.length} in total`);
