@@ -1,6 +1,6 @@
 ---
 title: "InsetModifier.Create"
-description: "class InsetModifier.Create in Root.Township."
+description: "Editor menu entry that creates an InsetModifier asset under Generation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InsetModifier.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates an `InsetModifier` asset under Generation.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InsetModifier`](/game-api/types/global-i-l/insetmodifier)

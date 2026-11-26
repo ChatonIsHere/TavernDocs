@@ -1,6 +1,6 @@
 ---
 title: "SimpleNoiseFilter.Create"
-description: "class SimpleNoiseFilter.Create in Root.Township."
+description: "Editor menu entry that creates a SimpleNoiseFilter asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimpleNoiseFilter.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `SimpleNoiseFilter` asset.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SimpleNoiseFilter`](/game-api/types/global-s/simplenoisefilter)

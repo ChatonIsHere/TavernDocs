@@ -1,6 +1,6 @@
 ---
 title: "EnableAndUnchildIfClose"
-description: "class EnableAndUnchildIfClose in Root.Township."
+description: "Client effect helper: when triggered near the local player, unparents and enables its object, then destroys it after a delay."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EnableAndUnchildIfClose
 
 A **class** in `Root.Township`, no namespace.
+
+Client effect helper: when triggered near the local player, unparents and enables its object, then destroys it after a delay.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`, [`IDontGetRigibody`](/game-api/types/global-i-l/idontgetrigibody)
@@ -26,15 +28,15 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> |
-| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroyafter" /><code>{"private float destroyAfter"}</code> | Seconds before the object is destroyed; 0 or less keeps it. |
+| <Link id="m-distancesquared" /><code>{"private float distanceSquared"}</code> | Squared distance from the local player within which it triggers. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-trigger" /><code>{"void Trigger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-trigger" /><code>{"void Trigger()"}</code> | Does nothing on a headless server or if the local player is too far; otherwise unparents, enables and schedules destruction. |

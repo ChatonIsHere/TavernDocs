@@ -1,6 +1,6 @@
 ---
 title: "PowerHit.Create"
-description: "class PowerHit.Create in Root.Township."
+description: "Editor menu entry for creating a PowerHit skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PowerHit.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `PowerHit` skill asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PowerHit`](/game-api/types/global-p/powerhit)

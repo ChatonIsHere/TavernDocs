@@ -1,6 +1,6 @@
 ---
 title: "RandomInterval"
-description: "class RandomInterval in Root.Township."
+description: "Fires an event over and over at random intervals while the object is enabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomInterval
 
 A **class** in `Root.Township`, no namespace.
+
+Fires an event over and over at random intervals while the object is enabled.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maximuminterval" /><code>{"private float maximumInterval"}</code> |
-| <Link id="m-minimuminterval" /><code>{"private float minimumInterval"}</code> |
-| <Link id="m-triggered" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggered"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maximuminterval" /><code>{"private float maximumInterval"}</code> | Longest wait in seconds. |
+| <Link id="m-minimuminterval" /><code>{"private float minimumInterval"}</code> | Shortest wait in seconds. |
+| <Link id="m-triggered" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" triggered"}</code> | Event fired each interval. |
 
 </details>
 
@@ -39,9 +41,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-trigger" /><code>{"private IEnumerator Trigger() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Starts the trigger loop. |
+| <Link id="m-trigger" /><code>{"private IEnumerator Trigger() (iterator)"}</code> | Coroutine that waits a random time between the bounds and fires `triggered`, forever. |
 
 </details>

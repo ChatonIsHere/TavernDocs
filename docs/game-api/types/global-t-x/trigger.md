@@ -29,13 +29,13 @@ Base of on/off inputs like `Lever` and `TwoStepLever`. Fires turned on and turne
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-syncwithsender" /><code>{"private bool syncWithSender"}</code> |
-| <Link id="m-toggle" /><code>{"private bool toggle"}</code> |
-| <Link id="m-togglestate" /><code>{"private bool toggleState"}</code> |
-| <Link id="m-turnedoff" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOff"}</code> |
-| <Link id="m-turnedon" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOn"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-syncwithsender" /><code>{"private bool syncWithSender"}</code> | In toggle mode, keeps the toggle state in line with this object's `LogicBoolSender` value. Saved. |
+| <Link id="m-toggle" /><code>{"private bool toggle"}</code> | When true, each turn-on flips between firing `turnedOn` and `turnedOff`, like a push button. Saved. |
+| <Link id="m-togglestate" /><code>{"private bool toggleState"}</code> | Current state in toggle mode. |
+| <Link id="m-turnedoff" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOff"}</code> | Event fired when the trigger turns off (or toggles off). |
+| <Link id="m-turnedon" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" turnedOn"}</code> | Event fired when the trigger turns on (or toggles on). |
 
 </details>
 
@@ -61,8 +61,8 @@ Base of on/off inputs like `Lever` and `TwoStepLever`. Fires turned on and turne
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-checksendermatch" /><code>{"private bool CheckSenderMatch(bool value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checksendermatch" /><code>{"private bool CheckSenderMatch(bool value)"}</code> | Whether the given value matches the `LogicBoolSender` on this object. |
 
 </details>

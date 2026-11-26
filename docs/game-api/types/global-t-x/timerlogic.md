@@ -36,11 +36,11 @@ Saved component that runs a timer for a set duration and fires an event when it 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> |
-| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> |
-| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeduration" /><code>{"private float activeDuration"}</code> | Seconds the timer runs for once started. Saved. |
+| <Link id="m-activeonload" /><code>{"private bool activeOnLoad"}</code> | When true, the timer starts as soon as it is loaded from save (in play mode). |
+| <Link id="m-timerover" /><code>{"private UnityEvent timerOver"}</code> | Unity event invoked when the timer reaches the end. |
 
 </details>
 

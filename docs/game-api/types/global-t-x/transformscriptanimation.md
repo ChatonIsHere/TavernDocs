@@ -33,12 +33,12 @@ Base for simple code-driven transform animations that tick through the budgeted 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |
-| <Link id="m-isallowedtorun" /><code>{"private bool isAllowedToRun"}</code> |
-| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |
-| <Link id="m-updater" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updater"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> | When true, the animation starts in `Start` if it is allowed to run. |
+| <Link id="m-isallowedtorun" /><code>{"private bool isAllowedToRun"}</code> | Set in `Start`: false on a dedicated server when `isDisabledOnServer` is on. Note it stays false (never auto-starts) when `isDisabledOnServer` is off. |
+| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> | When true (default), the animation does not run on a server unless it is a local test. |
+| <Link id="m-updater" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updater"}</code> | Handle for the budgeted update callback while animating. |
 
 </details>
 
@@ -63,8 +63,8 @@ Base for simple code-driven transform animations that tick through the budgeted 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Stops the animation so its update is deregistered. |
 
 </details>

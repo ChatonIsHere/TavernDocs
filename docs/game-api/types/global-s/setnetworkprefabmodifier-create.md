@@ -1,6 +1,6 @@
 ---
 title: "SetNetworkPrefabModifier.Create"
-description: "class SetNetworkPrefabModifier.Create in Root.Township."
+description: "Editor menu entry for creating a SetNetworkPrefabModifier asset under the Township generation create menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetNetworkPrefabModifier.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `SetNetworkPrefabModifier` asset under the Township generation create menu.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SetNetworkPrefabModifier`](/game-api/types/global-s/setnetworkprefabmodifier)

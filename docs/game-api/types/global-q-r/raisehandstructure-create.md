@@ -1,6 +1,6 @@
 ---
 title: "RaiseHandStructure.Create"
-description: "class RaiseHandStructure.Create in Root.Township."
+description: "Editor menu entry for creating a RaiseHandStructure asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RaiseHandStructure.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `RaiseHandStructure` asset.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Nested in** [`RaiseHandStructure`](/game-api/types/global-q-r/raisehandstructure)

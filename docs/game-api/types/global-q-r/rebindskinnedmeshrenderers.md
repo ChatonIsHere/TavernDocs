@@ -1,6 +1,6 @@
 ---
 title: "RebindSkinnedMeshRenderers"
-description: "class RebindSkinnedMeshRenderers in Root.Township."
+description: "Editor tool meant to rebind child skinned meshes to a character's bones."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RebindSkinnedMeshRenderers
 
 A **class** in `Root.Township`, no namespace.
+
+Editor tool meant to rebind child skinned meshes to a character's bones. `Rebind` is empty in this build.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnrebind" /><code>{"private bool btnRebind"}</code> |
-| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> |
-| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnrebind" /><code>{"private bool btnRebind"}</code> | Inspector button that calls `Rebind`. |
+| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" pointer"}</code> | Character dummy pointer to bind to. |
+| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> | Root bone to bind from. |
 
 </details>
 
@@ -39,8 +41,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-rebind" /><code>{"private void Rebind()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-rebind" /><code>{"private void Rebind()"}</code> | Empty in this build. |
 
 </details>

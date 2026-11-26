@@ -1,6 +1,6 @@
 ---
 title: "IDoubleLinkedListNode<T, TData>"
-description: "interface IDoubleLinkedListNode<T, TData> in Root.Township."
+description: "A node in a doubly linked list that is set up from data and told when it turns active or inactive."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,18 +12,20 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A node in a doubly linked list that is set up from data and told when it turns active or inactive.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> |
-| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-next" /><code>{"T Next { get; set; }"}</code> | The next node. |
+| <Link id="m-previous" /><code>{"T Previous { get; set; }"}</code> | The previous node. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-activechanged" /><code>{"void ActiveChanged(bool isActive)"}</code> |
-| <Link id="m-initialize" /><code>{"void Initialize(TData nodeData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activechanged" /><code>{"void ActiveChanged(bool isActive)"}</code> | Called when the node turns active or inactive. |
+| <Link id="m-initialize" /><code>{"void Initialize(TData nodeData)"}</code> | Sets the node up from its data. |

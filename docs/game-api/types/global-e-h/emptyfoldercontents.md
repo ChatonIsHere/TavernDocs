@@ -1,6 +1,6 @@
 ---
 title: "EmptyFolderContents"
-description: "class EmptyFolderContents in Root.Township."
+description: "Empty asset type, probably used as a placeholder so a folder is not empty."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EmptyFolderContents
 
 A **class** in `Root.Township`, no namespace.
+
+Empty asset type, probably used as a placeholder so a folder is not empty.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`

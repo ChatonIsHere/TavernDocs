@@ -1,6 +1,6 @@
 ---
 title: "MoveToLayer"
-description: "class MoveToLayer in Root.Township."
+description: "Sets its GameObject's layer whenever it is enabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MoveToLayer
 
 A **class** in `Root.Township`, no namespace.
+
+Sets its GameObject's layer whenever it is enabled.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-layer" /><code>{"private int layer"}</code> | Layer number to apply. |
 
 </details>
 
@@ -37,8 +39,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets the GameObject's layer to `layer`. |
 
 </details>

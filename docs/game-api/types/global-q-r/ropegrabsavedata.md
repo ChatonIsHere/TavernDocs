@@ -1,6 +1,6 @@
 ---
 title: "RopeGrabSaveData"
-description: "class RopeGrabSaveData in Root.Township."
+description: "Save data (version 2) for a RopeGrab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RopeGrabSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 2) for a `RopeGrab`.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`NewSaveData<RopeGrab, RopeGrabSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,8 +27,8 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> |
-| <Link id="m-isgrabclampedsaved" /><code>{"bool isGrabClampedSaved"}</code> |
-| <Link id="m-length" /><code>{"float length"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | Saved position of the grab along the rope. |
+| <Link id="m-isgrabclampedsaved" /><code>{"bool isGrabClampedSaved"}</code> | Saved clamp state of the grab. |
+| <Link id="m-length" /><code>{"float length"}</code> | Saved rope length. |

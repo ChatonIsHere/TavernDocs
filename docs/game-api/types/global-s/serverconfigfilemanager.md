@@ -1,6 +1,6 @@
 ---
 title: "ServerConfigFileManager"
-description: "class ServerConfigFileManager in Root.Township."
+description: "Loads a server's server_config JSON file, creating an empty ServerConfiguration if there isn't one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerConfigFileManager
 
 A **class** in `Root.Township`, no namespace.
+
+Loads a server's `server_config` JSON file, creating an empty `ServerConfiguration` if there isn't one.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 
@@ -25,14 +27,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-configfilename" /><code>{"private static string configFileName"}</code> | Name of the config file: `server_config`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getconfigfile" /><code>{"static async Task<"}<Link to="/game-api/types/global-s/serverconfiguration">{"ServerConfiguration"}</Link>{"> GetConfigFile("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Reads the server's config file and returns its `ServerConfiguration`, or a new one set as the file's content. |

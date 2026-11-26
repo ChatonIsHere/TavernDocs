@@ -1,6 +1,6 @@
 ---
 title: "EdiblePageSettings.Create"
-description: "class EdiblePageSettings.Create in Root.Township."
+description: "Editor menu entry for creating the EdiblePageSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EdiblePageSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating the `EdiblePageSettings` asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`EdiblePageSettings`](/game-api/types/global-e-h/ediblepagesettings)

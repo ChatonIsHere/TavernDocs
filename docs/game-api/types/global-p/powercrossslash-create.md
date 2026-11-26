@@ -1,6 +1,6 @@
 ---
 title: "PowerCrossSlash.Create"
-description: "class PowerCrossSlash.Create in Root.Township."
+description: "Editor menu entry for creating a PowerCrossSlash skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PowerCrossSlash.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `PowerCrossSlash` skill asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PowerCrossSlash`](/game-api/types/global-p/powercrossslash)

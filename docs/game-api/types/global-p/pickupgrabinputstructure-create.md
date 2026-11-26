@@ -1,6 +1,6 @@
 ---
 title: "PickupGrabInputStructure.Create"
-description: "class PickupGrabInputStructure.Create in Root.Township."
+description: "Unity editor menu item that creates a PickupGrabInputStructure asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupGrabInputStructure.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Unity editor menu item that creates a `PickupGrabInputStructure` asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PickupGrabInputStructure`](/game-api/types/global-p/pickupgrabinputstructure)

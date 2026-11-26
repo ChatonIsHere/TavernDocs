@@ -1,6 +1,6 @@
 ---
 title: "RandomPooledObjectDefinition"
-description: "class RandomPooledObjectDefinition in Root.Township."
+description: "Pooled object definition asset that picks one of several pooled definitions by weight each time an object is requested."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomPooledObjectDefinition
 
 A **class** in `Root.Township`, no namespace.
+
+Pooled object definition asset that picks one of several pooled definitions by weight each time an object is requested.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`PooledObjectDefinitionBase`](/game-api/types/global-p/pooledobjectdefinitionbase)
@@ -28,16 +30,16 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/global-q-r/randompooledobjectdefinition-pooledobjectelement">{"RandomPooledObjectDefinition.PooledObjectElement"}</Link>{"[] definitions"}</code> |
-| <Link id="m-totalweight" /><code>{"private int totalWeight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/global-q-r/randompooledobjectdefinition-pooledobjectelement">{"RandomPooledObjectDefinition.PooledObjectElement"}</Link>{"[] definitions"}</code> | Pooled definitions with their weights. |
+| <Link id="m-totalweight" /><code>{"private int totalWeight"}</code> | Sum of all weights, set by `InitializePool`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-get" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Get(Vector3 position, Quaternion rotation)"}</code> |
-| <Link id="m-initializepool" /><code>{"override void InitializePool()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-get" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Get(Vector3 position, Quaternion rotation)"}</code> | Meant to pick a definition by weight and get an object from it. The roll is cast to int before scaling, so it almost always picks the first entry with weight above 0. |
+| <Link id="m-initializepool" /><code>{"override void InitializePool()"}</code> | Initializes every listed definition's pool and totals their weights. |

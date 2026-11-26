@@ -1,6 +1,6 @@
 ---
 title: "IAStarConnection<TNode, TConnection>"
-description: "interface IAStarConnection<TNode, TConnection> in Root.Township."
+description: "A link between two nodes for the A pathfinder."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A link between two nodes for the A* pathfinder.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`Path<TNode, TPath>`](/game-api/types/alta-world-generation/path-tnode-tpath)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> |
-| <Link id="m-from" /><code>{"TNode From { get; }"}</code> |
-| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> |
-| <Link id="m-to" /><code>{"TNode To { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cost" /><code>{"float Cost { get; }"}</code> | Cost of crossing this link. |
+| <Link id="m-from" /><code>{"TNode From { get; }"}</code> | Node the link starts at. |
+| <Link id="m-isenabled" /><code>{"bool IsEnabled { get; }"}</code> | Whether the link can be used right now. |
+| <Link id="m-to" /><code>{"TNode To { get; }"}</code> | Node the link leads to. |

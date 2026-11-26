@@ -1,6 +1,6 @@
 ---
 title: "TeleporterBlock"
-description: "static class TeleporterBlock in Root.Township."
+description: "Global switch that turns off the player's teleport while any behaviour is blocking it (for example ClimberActivator)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Global switch that turns off the player's teleport while any behaviour is blocking it (for example `ClimberActivator`). Checked by `Teleporter`.
+
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 
 ## Fields
@@ -19,21 +21,21 @@ A **static class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-blockingbehaviours" /><code>{"private static HashSet<MonoBehaviour> blockingBehaviours"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blockingbehaviours" /><code>{"private static HashSet<MonoBehaviour> blockingBehaviours"}</code> | Behaviours currently blocking teleport. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isblocked" /><code>{"static bool IsBlocked { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isblocked" /><code>{"static bool IsBlocked { get; private set; }"}</code> | True while at least one behaviour is blocking teleport. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-startblocking" /><code>{"static void StartBlocking(MonoBehaviour blockingBehaviour)"}</code> |
-| <Link id="m-stopblocking" /><code>{"static void StopBlocking(MonoBehaviour blockingBehaviour)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-startblocking" /><code>{"static void StartBlocking(MonoBehaviour blockingBehaviour)"}</code> | Adds a behaviour to the blockers and turns blocking on. |
+| <Link id="m-stopblocking" /><code>{"static void StopBlocking(MonoBehaviour blockingBehaviour)"}</code> | Removes a behaviour; blocking turns off when none are left. |

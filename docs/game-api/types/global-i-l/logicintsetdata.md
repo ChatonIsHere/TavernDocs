@@ -1,6 +1,6 @@
 ---
 title: "LogicIntSetData"
-description: "class LogicIntSetData in Root.Township."
+description: "Save data (version 1) for LogicIntSet."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicIntSetData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 1) for `LogicIntSet`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`NewSaveData<LogicIntSet, LogicIntSetData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-value" /><code>{"int value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-value" /><code>{"int value"}</code> | The saved integer. |

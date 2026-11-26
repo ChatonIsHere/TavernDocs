@@ -1,6 +1,6 @@
 ---
 title: "UnityEditorLoggingSettings.Create"
-description: "class UnityEditorLoggingSettings.Create in Root.Township."
+description: "Editor menu entry that creates a UnityEditorLoggingSettings asset under Global Settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UnityEditorLoggingSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `UnityEditorLoggingSettings` asset under Global Settings.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`UnityEditorLoggingSettings`](/game-api/types/global-t-x/unityeditorloggingsettings)

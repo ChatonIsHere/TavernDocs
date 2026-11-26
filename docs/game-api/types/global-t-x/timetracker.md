@@ -1,6 +1,6 @@
 ---
 title: "TimeTracker"
-description: "class TimeTracker in Root.Township."
+description: "An empty class with no members and no users in the code."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimeTracker
 
 A **class** in `Root.Township`, no namespace.
+
+An empty class with no members and no users in the code.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

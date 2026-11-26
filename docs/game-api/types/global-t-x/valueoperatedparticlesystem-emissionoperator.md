@@ -1,6 +1,6 @@
 ---
 title: "ValueOperatedParticleSystem.EmissionOperator"
-description: "abstract class ValueOperatedParticleSystem.EmissionOperator in Root.Township."
+description: "Base for operators that change a particle system's emission module."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ValueOperatedParticleSystem.EmissionOperator
 
 An **private abstract class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Base for operators that change a particle system's emission module.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`ValueOperatedParticleSystem`](/game-api/types/global-t-x/valueoperatedparticlesystem)
@@ -25,12 +27,12 @@ An **private abstract class** in `Root.Township`, no namespace. Reach it through
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-module" /><code>{"protected ParticleSystem.EmissionModule module"}</code> | The emission module being changed. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"override void Initialize(ParticleSystem targetSystem)"}</code> | Grabs the target system's emission module. |

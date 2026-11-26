@@ -1,6 +1,6 @@
 ---
 title: "OnScreenErrorLogger"
-description: "class OnScreenErrorLogger in Root.Township."
+description: "Empty component left over from an on-screen error display; it only holds a text colour and does nothing in this build."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OnScreenErrorLogger
 
 A **class** in `Root.Township`, no namespace.
+
+Empty component left over from an on-screen error display; it only holds a text colour and does nothing in this build.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,8 +28,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-textcolor" /><code>{"private Color textColor"}</code> | Serialized text colour, white by default. Nothing reads it. |
 
 </details>

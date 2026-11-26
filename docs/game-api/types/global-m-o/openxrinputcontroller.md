@@ -34,17 +34,17 @@ Client: reads one hand's controller through OpenXR and fills the game's controll
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-angularvelocity" /><code>{"private Vector3 angularVelocity"}</code> |
-| <Link id="m-angularvelocitythreshold" /><code>{"private const float AngularVelocityThreshold"}</code> |
-| <Link id="m-devicecharacteristics" /><code>{"private InputDeviceCharacteristics deviceCharacteristics"}</code> |
-| <Link id="m-devices" /><code>{"private static List<InputDevice> devices"}</code> |
-| <Link id="m-isrighthand" /><code>{"private bool isRightHand"}</code> |
-| <Link id="m-lerpspeed" /><code>{"private const float LerpSpeed"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-openxrinput" /><code>{"private "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" openXRInput"}</code> |
-| <Link id="m-previousrotation" /><code>{"private Quaternion previousRotation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angularvelocity" /><code>{"private Vector3 angularVelocity"}</code> | Angular velocity from `UpdateAngularVelocity`, passed into the input's velocities. |
+| <Link id="m-angularvelocitythreshold" /><code>{"private const float AngularVelocityThreshold"}</code> | If the frame's rotation change has a `w` above this, angular velocity is treated as zero. |
+| <Link id="m-devicecharacteristics" /><code>{"private InputDeviceCharacteristics deviceCharacteristics"}</code> | Left or right device characteristics for this hand. |
+| <Link id="m-devices" /><code>{"private static List<InputDevice> devices"}</code> | Shared scratch list of input devices. |
+| <Link id="m-isrighthand" /><code>{"private bool isRightHand"}</code> | True when this controller is for the right hand. |
+| <Link id="m-lerpspeed" /><code>{"private const float LerpSpeed"}</code> | Seconds it takes the finger skeleton values to move fully towards their target. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-openxrinput" /><code>{"private "}<Link to="/game-api/types/global-m-o/openxrcontrollerinput">{"OpenXRControllerInput"}</Link>{" openXRInput"}</code> | The hand's input state from the shared `OpenXRWrapper`. |
+| <Link id="m-previousrotation" /><code>{"private Quaternion previousRotation"}</code> | Hand rotation from the previous frame, used for angular velocity. |
 
 </details>
 
@@ -57,9 +57,9 @@ Client: reads one hand's controller through OpenXR and fills the game's controll
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-device" /><code>{"private XRController Device { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-device" /><code>{"private XRController Device { get; }"}</code> | The left or right `XRController`, used to send haptics. |
 
 </details>
 
@@ -74,9 +74,9 @@ Client: reads one hand's controller through OpenXR and fills the game's controll
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-lerptouchskeleton" /><code>{"private void LerpTouchSkeleton("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input, int index, bool isTouching, float axis, float lerp)"}</code> |
-| <Link id="m-updateangularvelocity" /><code>{"private void UpdateAngularVelocity()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lerptouchskeleton" /><code>{"private void LerpTouchSkeleton("}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input, int index, bool isTouching, float axis, float lerp)"}</code> | Moves one finger's skeleton value towards its target, which depends on whether it's touching and the axis value. |
+| <Link id="m-updateangularvelocity" /><code>{"private void UpdateAngularVelocity()"}</code> | Works out the hand's angular velocity from its rotation change since last frame, relative to the player's rotation. |
 
 </details>

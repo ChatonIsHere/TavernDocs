@@ -1,6 +1,6 @@
 ---
 title: "PlayerDetectSaveDataOld1"
-description: "class PlayerDetectSaveDataOld1 in Root.Township."
+description: "Old save data (version 1) for PlayerDetect, holding only a radius."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerDetectSaveDataOld1
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Old save data (version 1) for `PlayerDetect`, holding only a radius. Migrates to `PlayerDetectSaveData`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -24,12 +26,12 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-radiussaved" /><code>{"float radiusSaved"}</code> | Detection radius. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a `PlayerDetectSaveData` with the same radius and default bounds settings. |

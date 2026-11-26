@@ -1,6 +1,6 @@
 ---
 title: "PlayerModeOverride"
-description: "class PlayerModeOverride in Root.Township."
+description: "Debug asset for overriding the player mode."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerModeOverride
 
 A **class** in `Root.Township`, no namespace.
+
+Debug asset for overriding the player mode. In this build the override is fixed to fly mode.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -28,14 +30,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-playermodeforempty" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerModeForEmpty"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-playermodeforempty" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerModeForEmpty"}</code> | Serialized mode that nothing reads. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-override" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Override { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-override" /><code>{"static "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Override { get; }"}</code> | Always returns `PlayerMode.Fly`. Nothing in this build reads it. |

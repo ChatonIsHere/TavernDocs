@@ -1,6 +1,6 @@
 ---
 title: "ProjectileEffect"
-description: "class ProjectileEffect in Root.Township."
+description: "Plays a pooled effect and a sound where its projectile hits, facing out from the surface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProjectileEffect
 
 A **class** in `Root.Township`, no namespace.
+
+Plays a pooled effect and a sound where its projectile hits, facing out from the surface.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`ProjectileComponent`](/game-api/types/global-p/projectilecomponent)
@@ -26,15 +28,15 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |
-| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> | Optional pooled effect at the hit point. |
+| <Link id="m-soundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect"}</code> | Optional sound at the hit point. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-projectilecollided" /><code>{"protected override void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-projectilecollided" /><code>{"protected override void ProjectileCollided("}<Link to="/game-api/types/global-p/projectile">{"Projectile"}</Link>{" projectile)"}</code> | Spawns `effectDefinition` and plays `soundEffect` at the hit point. |

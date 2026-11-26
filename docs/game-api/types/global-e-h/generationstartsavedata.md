@@ -1,6 +1,6 @@
 ---
 title: "GenerationStartSaveData"
-description: "class GenerationStartSaveData in Root.Township."
+description: "Save data for a GenerationStarter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenerationStartSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `GenerationStarter`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NewSaveData<GenerationStarter, GenerationStartSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -24,10 +26,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-generatedbiome" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |
-| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> |
-| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> |
-| <Link id="m-seed" /><code>{"int seed"}</code> |
-| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generatedbiome" /><code><Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> | The biome that was generated. |
+| <Link id="m-lastloadid" /><code>{"uint lastLoadId"}</code> | Runtime ID of the session that saved it, to tell a reload in the same run from a fresh start. |
+| <Link id="m-preset" /><code><Link to="/game-api/types/global-a-b/biomepreset">{"BiomePreset"}</Link>{" preset"}</code> | Biome preset used. |
+| <Link id="m-seed" /><code>{"int seed"}</code> | Random seed for generation. |
+| <Link id="m-terrainmodificationid" /><code>{"uint terrainModificationId"}</code> | Terrain modification ID, kept only within the same run. |

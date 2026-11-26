@@ -1,6 +1,6 @@
 ---
 title: "PooledMeshReplaceObjectDefinition.Create"
-description: "class PooledMeshReplaceObjectDefinition.Create in Root.Township."
+description: "Editor menu entry for creating a PooledMeshReplaceObjectDefinition asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledMeshReplaceObjectDefinition.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `PooledMeshReplaceObjectDefinition` asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PooledMeshReplaceObjectDefinition`](/game-api/types/global-p/pooledmeshreplaceobjectdefinition)

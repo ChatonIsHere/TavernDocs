@@ -1,6 +1,6 @@
 ---
 title: "VirtualKeyboardSetup.Virtual_Keyboard_Setup"
-description: "class VirtualKeyboardSetup.Virtual_Keyboard_Setup in Root.Township."
+description: "Editor menu entry that creates a VirtualKeyboardSetup asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VirtualKeyboardSetup.Virtual_Keyboard_Setup
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `VirtualKeyboardSetup` asset.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`VirtualKeyboardSetup`](/game-api/types/global-t-x/virtualkeyboardsetup)

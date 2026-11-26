@@ -1,6 +1,6 @@
 ---
 title: "NormalFilter.Create"
-description: "class NormalFilter.Create in Root.Township."
+description: "Editor menu entry for creating a NormalFilter asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NormalFilter.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `NormalFilter` asset. Not used at runtime.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`NormalFilter`](/game-api/types/global-m-o/normalfilter)

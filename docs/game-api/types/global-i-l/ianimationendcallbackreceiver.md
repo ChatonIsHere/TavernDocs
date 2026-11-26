@@ -1,6 +1,6 @@
 ---
 title: "IAnimationEndCallbackReceiver"
-description: "interface IAnimationEndCallbackReceiver in Root.Township."
+description: "Receives a call when an animation ends."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Receives a call when an animation ends.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`AnimatedEmblem`](/game-api/types/alta-player/animatedemblem)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onanimationended" /><code>{"void OnAnimationEnded()"}</code> | Called when the animation ends. |

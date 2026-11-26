@@ -1,6 +1,6 @@
 ---
 title: "PuzzleLightTarget"
-description: "class PuzzleLightTarget in Root.Township."
+description: "Light puzzle target: a puzzle condition that is complete while at least one beam hits it, shown by turning green or red."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PuzzleLightTarget
 
 A **class** in `Root.Township`, no namespace.
+
+Light puzzle target: a puzzle condition that is complete while at least one beam hits it, shown by turning green or red.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PuzzleCondition`](/game-api/types/global-p/puzzlecondition), [`ILightDetector`](/game-api/types/global-i-l/ilightdetector)
@@ -26,27 +28,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-hitcount" /><code>{"private int hitCount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hitcount" /><code>{"private int hitCount"}</code> | Number of beams hitting the target. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" input)"}</code> |
-| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" input)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-beginhit" /><code>{"void BeginHit("}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" input)"}</code> | Counts the beam, marks complete and turns green. |
+| <Link id="m-endhit" /><code>{"void EndHit("}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" input)"}</code> | Uncounts the beam; when none are left, marks incomplete and turns red. |
 
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-turngreen" /><code>{"private void TurnGreen()"}</code> |
-| <Link id="m-turnred" /><code>{"private void TurnRed()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Starts red. |
+| <Link id="m-turngreen" /><code>{"private void TurnGreen()"}</code> | Sets the renderer colour to green. |
+| <Link id="m-turnred" /><code>{"private void TurnRed()"}</code> | Sets the renderer colour to red. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Empty. |
 
 </details>

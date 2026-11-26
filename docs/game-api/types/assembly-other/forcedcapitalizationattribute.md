@@ -1,6 +1,6 @@
 ---
 title: "ForcedCapitalizationAttribute"
-description: "class ForcedCapitalizationAttribute in Alta.Attributes."
+description: "Marker property attribute, probably for an editor drawer that forces a string field's capitalisation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForcedCapitalizationAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Marker property attribute, probably for an editor drawer that forces a string field's capitalisation. Not used in this build.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`

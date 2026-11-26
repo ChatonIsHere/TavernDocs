@@ -1,6 +1,6 @@
 ---
 title: "ProfilingTrigger"
-description: "class ProfilingTrigger in Root.Township."
+description: "Debug component: when triggered, takes nine profiler samples one after another through ProfilingCommandModule."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProfilingTrigger
 
 A **class** in `Root.Township`, no namespace.
+
+Debug component: when triggered, takes nine profiler samples one after another through `ProfilingCommandModule`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,23 +28,23 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-profiling" /><code>{"private int profiling"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-profiling" /><code>{"private int profiling"}</code> | Number of the current sample. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-profile" /><code>{"void Profile()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-profile" /><code>{"void Profile()"}</code> | Starts the sample run. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-advanceprofiler" /><code>{"private void AdvanceProfiler()"}</code> | Starts the next 300-frame sample until nine have run. |
 
 </details>

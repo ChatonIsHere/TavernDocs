@@ -1,6 +1,6 @@
 ---
 title: "LiquidGradualDrinker"
-description: "class LiquidGradualDrinker in Root.Township."
+description: "Trigger component on a liquid container that slowly drains liquid out of another container held in its trigger (for example drinking from a bottle), instead..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidGradualDrinker
 
 A **class** in `Root.Township`, no namespace.
+
+Trigger component on a liquid container that slowly drains liquid out of another container held in its trigger (for example drinking from a bottle), instead of pouring. Server only.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`, [`ILiquidTransitionController`](/game-api/types/alta-stats-effects/iliquidtransitioncontroller)
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-containerdrinkingfrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" containerDrinkingFrom"}</code> |
-| <Link id="m-cooldown" /><code>{"private int cooldown"}</code> |
-| <Link id="m-cooldownreset" /><code>{"private const int CooldownReset"}</code> |
-| <Link id="m-handledrigidbodyorcolliders" /><code>{"private HashSet<Component> handledRigidbodyOrColliders"}</code> |
-| <Link id="m-iscontainerdrinkingfromcontained" /><code>{"private bool isContainerDrinkingFromContained"}</code> |
-| <Link id="m-outtransitionupdatemethod" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" outTransitionUpdateMethod"}</code> |
-| <Link id="m-pourablecontainerdrinkingfrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/ipourablecontainer">{"IPourableContainer"}</Link>{" pourableContainerDrinkingFrom"}</code> |
-| <Link id="m-thiscontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontainer">{"LiquidContainer"}</Link>{" thisContainer"}</code> |
-| <Link id="m-transitionduration" /><code>{"private float transitionDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-containerdrinkingfrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" containerDrinkingFrom"}</code> | The container liquid is currently drawn from, or null. |
+| <Link id="m-cooldown" /><code>{"private int cooldown"}</code> | Frames left before an absent source cancels the transfer. |
+| <Link id="m-cooldownreset" /><code>{"private const int CooldownReset"}</code> | Frames (35) the source container may be outside the trigger before the transfer is cancelled. |
+| <Link id="m-handledrigidbodyorcolliders" /><code>{"private HashSet<Component> handledRigidbodyOrColliders"}</code> | Rigidbodies or colliders currently inside the trigger, so each is handled once. |
+| <Link id="m-iscontainerdrinkingfromcontained" /><code>{"private bool isContainerDrinkingFromContained"}</code> | True while the source container is inside the trigger. |
+| <Link id="m-outtransitionupdatemethod" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" outTransitionUpdateMethod"}</code> | Handle of the registered late update method, or null. |
+| <Link id="m-pourablecontainerdrinkingfrom" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/ipourablecontainer">{"IPourableContainer"}</Link>{" pourableContainerDrinkingFrom"}</code> | The source's `IPourableContainer`, whose pouring is turned off while drinking. |
+| <Link id="m-thiscontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontainer">{"LiquidContainer"}</Link>{" thisContainer"}</code> | The container that receives the liquid. |
+| <Link id="m-transitionduration" /><code>{"private float transitionDuration"}</code> | Seconds a full transfer takes. |
 
 </details>
 
@@ -45,17 +47,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkdisabletransitionupdatingroutine" /><code>{"private void CheckDisableTransitionUpdatingRoutine()"}</code> |
-| <Link id="m-checkenabletransitionupdatingroutine" /><code>{"private void CheckEnableTransitionUpdatingRoutine()"}</code> |
-| <Link id="m-handleliquidcontainer" /><code>{"private void HandleLiquidContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer)"}</code> |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
-| <Link id="m-removeouttransitionandstopupdating" /><code>{"private void RemoveOutTransitionAndStopUpdating()"}</code> |
-| <Link id="m-resetouttransition" /><code>{"private void ResetOutTransition()"}</code> |
-| <Link id="m-triggerenterinternal" /><code>{"private void TriggerEnterInternal(Component target)"}</code> |
-| <Link id="m-triggerexitinternal" /><code>{"private void TriggerExitInternal(Component component)"}</code> |
-| <Link id="m-updateouttransition" /><code>{"private void UpdateOutTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkdisabletransitionupdatingroutine" /><code>{"private void CheckDisableTransitionUpdatingRoutine()"}</code> | Removes the late update method that progresses the transfer, if registered. |
+| <Link id="m-checkenabletransitionupdatingroutine" /><code>{"private void CheckEnableTransitionUpdatingRoutine()"}</code> | Registers `UpdateOutTransition` on the late update module, if not already registered. |
+| <Link id="m-handleliquidcontainer" /><code>{"private void HandleLiquidContainer("}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" otherContainer)"}</code> | Starts drinking from a container: targets its out transition at this container, turns off its pouring and starts the update loop. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Server: passes the entering collider's rigidbody (or the collider) to `TriggerEnterInternal`. |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> | Server: passes the leaving collider's rigidbody (or the collider) to `TriggerExitInternal`. |
+| <Link id="m-removeouttransitionandstopupdating" /><code>{"private void RemoveOutTransitionAndStopUpdating()"}</code> | Ends drinking: turns pouring back on for the source, clears it and stops the update loop. |
+| <Link id="m-resetouttransition" /><code>{"private void ResetOutTransition()"}</code> | Resets the source's unfinished out transition and detaches this receiver from it. |
+| <Link id="m-triggerenterinternal" /><code>{"private void TriggerEnterInternal(Component target)"}</code> | Starts drinking from a new container that allows gradual consumption, or marks the current source as back inside. |
+| <Link id="m-triggerexitinternal" /><code>{"private void TriggerExitInternal(Component component)"}</code> | Marks the current source container as no longer inside the trigger. |
+| <Link id="m-updateouttransition" /><code>{"private void UpdateOutTransition()"}</code> | Each late update, moves liquid along the source's out transition, and stops when it finishes or the source has been out for `CooldownReset` frames. |
 
 </details>

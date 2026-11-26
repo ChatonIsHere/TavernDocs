@@ -1,6 +1,6 @@
 ---
 title: "FlyCamDeviceController"
-description: "class FlyCamDeviceController in Root.Township."
+description: "Device controller for the fly cam (spectator) player mode."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FlyCamDeviceController
 
 A **class** in `Root.Township`, no namespace.
+
+Device controller for the fly cam (spectator) player mode. Creates the fly cam's device lifecycle and keyboard/mouse/gamepad input controller.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`XrDeviceSdkController`](/game-api/types/global-t-x/xrdevicesdkcontroller)
@@ -23,15 +25,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isprovidingposition" /><code>{"override bool IsProvidingPosition { get; }"}</code> |
-| <Link id="m-mode" /><code>{"override "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Mode { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isprovidingposition" /><code>{"override bool IsProvidingPosition { get; }"}</code> | Always true. |
+| <Link id="m-mode" /><code>{"override "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" Mode { get; }"}</code> | `PlayerMode.Fly`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-createcontroller" /><code>{"override "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" CreateController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-createinterface" /><code>{"override "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" CreateInterface("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> |
-| <Link id="m-start" /><code>{"protected override IEnumerator Start() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createcontroller" /><code>{"override "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" CreateController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Returns a `FlyCamInputController` for a hand. |
+| <Link id="m-createinterface" /><code>{"override "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" CreateInterface("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Returns a plain `FlyCamDeviceLifecycle`. |
+| <Link id="m-start" /><code>{"protected override IEnumerator Start() (iterator)"}</code> | Does nothing, unlike XR controllers that start an SDK. |

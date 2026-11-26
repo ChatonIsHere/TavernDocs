@@ -1,6 +1,6 @@
 ---
 title: "RockClusterSaveData"
-description: "class RockClusterSaveData in Root.Township."
+description: "Save data (version 1) for a RockCluster."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RockClusterSaveData
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data (version 1) for a `RockCluster`.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`NewSaveData<RockCluster, RockClusterSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-items/boulderdefinition">{"BoulderDefinition"}</Link>{" definition"}</code> | The cluster's `BoulderDefinition`. |

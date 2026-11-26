@@ -30,12 +30,12 @@ Logs the client in to the Alta API: automatic login at startup, or username (or 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-loginpreferences" /><code>{"private "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> |
-| <Link id="m-postloginactions" /><code>{"private readonly List<Action> postLoginActions"}</code> |
-| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-loginpreferences" /><code>{"private "}<Link to="/game-api/types/assembly-other/iloginpreferences">{"ILoginPreferences"}</Link>{" loginPreferences"}</code> | Saved login settings and credentials, injected. |
+| <Link id="m-postloginactions" /><code>{"private readonly List<Action> postLoginActions"}</code> | Actions waiting for the next successful login. |
+| <Link id="m-userservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/iuserservice">{"IUserService"}</Link>{" userService"}</code> | Injected user service used for automatic login. |
 
 </details>
 
@@ -70,10 +70,10 @@ Logs the client in to the Alta API: automatic login at startup, or username (or 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-autologinasync" /><code>{"private async void AutoLoginAsync()"}</code> |
-| <Link id="m-executepostloginactions" /><code>{"private void ExecutePostLoginActions()"}</code> |
-| <Link id="m-processautologinfailed" /><code>{"private async Task ProcessAutoLoginFailed(IResult loginResult)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autologinasync" /><code>{"private async void AutoLoginAsync()"}</code> | Runs when the app has started: tries an automatic login through the user service and handles success or failure. |
+| <Link id="m-executepostloginactions" /><code>{"private void ExecutePostLoginActions()"}</code> | Runs and clears the actions queued with `AddPostLoginAction`, and marks Quest logins as Oculus. |
+| <Link id="m-processautologinfailed" /><code>{"private async Task ProcessAutoLoginFailed(IResult loginResult)"}</code> | Raises `LoginAttemptFailed` and, on Android, loads the registration scene. |
 
 </details>

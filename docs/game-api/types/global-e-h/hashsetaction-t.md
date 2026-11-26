@@ -29,9 +29,9 @@ Base for game task actions whose filters are sets built on first use. An empty s
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | Set once `Initialize` has run, on the first `IsValid` call. |
 
 </details>
 

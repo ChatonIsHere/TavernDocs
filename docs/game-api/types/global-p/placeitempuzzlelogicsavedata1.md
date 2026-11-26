@@ -1,6 +1,6 @@
 ---
 title: "PlaceItemPuzzleLogicSaveData1"
-description: "class PlaceItemPuzzleLogicSaveData1 in Root.Township."
+description: "Old save format (version 1) for PlaceItemPuzzleLogic, migrated on load."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlaceItemPuzzleLogicSaveData1
 
 A **class** in `Root.Township`, no namespace.
+
+Old save format (version 1) for `PlaceItemPuzzleLogic`, migrated on load.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -24,12 +26,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-correctitemssaved" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-correctitemssaved" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] correctItemsSaved"}</code> | Items that solved the puzzle in the old format. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to the current save data with one option holding the old correct items and output 1. |

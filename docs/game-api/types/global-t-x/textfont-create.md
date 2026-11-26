@@ -1,6 +1,6 @@
 ---
 title: "TextFont.Create"
-description: "class TextFont.Create in Root.Township."
+description: "Editor menu entry for creating a TextFont asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextFont.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `TextFont` asset.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TextFont`](/game-api/types/global-t-x/textfont)

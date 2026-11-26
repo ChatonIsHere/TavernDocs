@@ -1,6 +1,6 @@
 ---
 title: "SkillOrbInteractionSpline.SplineParamaters"
-description: "enum SkillOrbInteractionSpline.SplineParamaters in Root.Township."
+description: "Stages of the skill orb particle spline (leaving the elbow, entering and leaving the wrist, entering the item), used to index tangent lengths."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkillOrbInteractionSpline.SplineParamaters
 
 An **enum** in `Root.Township`, no namespace.
+
+Stages of the skill orb particle spline (leaving the elbow, entering and leaving the wrist, entering the item), used to index tangent lengths.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SkillOrbInteractionSpline`](/game-api/types/global-s/skillorbinteractionspline)

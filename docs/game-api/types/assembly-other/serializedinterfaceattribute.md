@@ -1,6 +1,6 @@
 ---
 title: "SerializedInterfaceAttribute"
-description: "class SerializedInterfaceAttribute in Alta.Attributes."
+description: "Property attribute that marks a serialized field as holding an object that must implement a given interface, probably for an inspector picker."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializedInterfaceAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Property attribute that marks a serialized field as holding an object that must implement a given interface, probably for an inspector picker.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -23,6 +25,6 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interfacetype" /><code>{"Type InterfaceType { get; private set; }"}</code> | The required interface. Stays null if the type passed in isn't an interface. |

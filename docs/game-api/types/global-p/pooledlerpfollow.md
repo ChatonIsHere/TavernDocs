@@ -1,6 +1,6 @@
 ---
 title: "PooledLerpFollow"
-description: "class PooledLerpFollow in Root.Township."
+description: "A LerpFollow on a pooled object that restarts each time the object is taken from the pool, by default following its new parent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledLerpFollow
 
 A **class** in `Root.Township`, no namespace.
+
+A `LerpFollow` on a pooled object that restarts each time the object is taken from the pool, by default following its new parent.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`LerpFollow`](/game-api/types/global-i-l/lerpfollow)
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> |
-| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-issettingtargettoparent" /><code>{"private bool isSettingTargetToParent"}</code> | Whether to follow the parent transform (default true). |
+| <Link id="m-targetpooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" targetPooledObject"}</code> | The pooled object whose requests restart the lerp. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stoplerp" /><code>{"void StopLerp()"}</code> | Stops following and disables the component. |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
-| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the pooled object's `Requested` event. |
+| <Link id="m-restart" /><code>{"private void Restart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Resets the start position and waits a frame before starting the lerp. |
+| <Link id="m-waitforsetup" /><code>{"private IEnumerator WaitForSetup() (iterator)"}</code> | Coroutine: at end of frame, sets the target to the parent if wanted and starts the lerp. |
 
 </details>

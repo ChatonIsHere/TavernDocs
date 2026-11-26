@@ -1,6 +1,6 @@
 ---
 title: "HealthObject.RegenUnit"
-description: "class HealthObject.RegenUnit in Root.Township."
+description: "Protected helper that pairs a regeneration amount with a duration."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HealthObject.RegenUnit
 
 A **protected class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Protected helper that pairs a regeneration amount with a duration. Nothing in `HealthObject` uses it.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`HealthObject`](/game-api/types/global-e-h/healthobject)
@@ -26,16 +28,16 @@ A **protected class** in `Root.Township`, no namespace. Reach it through att-stu
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-amount" /><code>{"private float amount"}</code> |
-| <Link id="m-duration" /><code>{"private int duration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-amount" /><code>{"private float amount"}</code> | Backing field for `Amount`. |
+| <Link id="m-duration" /><code>{"private int duration"}</code> | Backing field for `Duration`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> |
-| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-amount-2" /><code>{"float Amount { get; }"}</code> | Health to regenerate. |
+| <Link id="m-duration-2" /><code>{"int Duration { get; }"}</code> | Duration of the regeneration. |

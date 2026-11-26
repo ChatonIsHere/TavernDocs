@@ -1,6 +1,6 @@
 ---
 title: "IPointTowards"
-description: "interface IPointTowards in Root.Township."
+description: "Something that can be turned to face a point, such as DrawBridgeRangeLogic."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,17 +12,19 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Something that can be turned to face a point, such as `DrawBridgeRangeLogic`. `PointTowardsEachotherPart` points two spawned objects at each other.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`DrawBridgeRangeLogic`](/game-api/types/global-c-d/drawbridgerangelogic)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-origin" /><code>{"Vector3 Origin { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-origin" /><code>{"Vector3 Origin { get; }"}</code> | The point it turns around. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-pointtowards" /><code>{"void PointTowards(Vector3 target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pointtowards" /><code>{"void PointTowards(Vector3 target)"}</code> | Turns it to face the target position. |

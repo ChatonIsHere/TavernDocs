@@ -1,6 +1,6 @@
 ---
 title: "ReferenceEqualsComparer<T>"
-description: "class ReferenceEqualsComparer<T> in Root.Township."
+description: "Equality comparer that treats two values as equal only if they are the same object reference."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ReferenceEqualsComparer&lt;T&gt;
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Equality comparer that treats two values as equal only if they are the same object reference.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `IEqualityComparer<T>`

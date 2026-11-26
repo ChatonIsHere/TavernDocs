@@ -1,6 +1,6 @@
 ---
 title: "OfflinePlayerProgressionHandlerSaveData"
-description: "class OfflinePlayerProgressionHandlerSaveData in Root.Township."
+description: "Save data (version 1) for OfflinePlayerProgressionHandler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OfflinePlayerProgressionHandlerSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 1) for `OfflinePlayerProgressionHandler`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`NewSaveData<OfflinePlayerProgressionHandler, OfflinePlayerProgressionHandlerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-progresses" /><code><Link to="/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-progresses" /><code><Link to="/game-api/types/global-m-o/offlineplayerprogress">{"OfflinePlayerProgress"}</Link>{"[] progresses"}</code> | Pending levels for each user. |

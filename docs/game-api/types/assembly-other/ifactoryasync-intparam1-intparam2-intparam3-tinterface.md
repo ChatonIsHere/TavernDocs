@@ -1,6 +1,6 @@
 ---
 title: "IFactoryAsync<TParam1, TParam2, TParam3, TInterface>"
-description: "interface IFactoryAsync<TParam1, TParam2, TParam3, TInterface> in Alta.VContainerLayer.Runtime."
+description: "Async factory that takes three parameters, for the VContainer layer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,12 +12,14 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
+Async factory that takes three parameters, for the VContainer layer.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IFactory`](/game-api/types/assembly-other/ifactory), `IDisposable`
 - **Derived types** [`FactoryAsync<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tparam3-tconcrete-tinterface)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-create" /><code>{"Task<TInterface> Create(TParam1 param1, TParam2 param2, TParam3 param3)"}</code> | Makes a new instance from the parameters and returns it when ready. |

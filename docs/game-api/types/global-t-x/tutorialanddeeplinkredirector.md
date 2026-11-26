@@ -1,6 +1,6 @@
 ---
 title: "TutorialAndDeeplinkRedirector"
-description: "class TutorialAndDeeplinkRedirector in Root.Township."
+description: "Client: when enabled, shows the deeplink popup if the game was launched from an Oculus deeplink, otherwise the tutorial popup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TutorialAndDeeplinkRedirector
 
 A **class** in `Root.Township`, no namespace.
+
+Client: when enabled, shows the deeplink popup if the game was launched from an Oculus deeplink, otherwise the tutorial popup.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> |
-| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deeplinkpopup" /><code>{"private GameObject deeplinkPopup"}</code> | Popup shown when launched from a deeplink. |
+| <Link id="m-tutorialpopup" /><code>{"private GameObject tutorialPopup"}</code> | Popup shown on a normal launch. |
 
 </details>
 
@@ -38,8 +40,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Checks the Oculus launch type; on a deeplink logs the start analytics event and shows `deeplinkPopup`, otherwise shows `tutorialPopup`. |
 
 </details>

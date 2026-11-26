@@ -1,6 +1,6 @@
 ---
 title: "MenuSettings.Create"
-description: "class MenuSettings.Create in Root.Township."
+description: "Editor menu entry that creates the MenuSettings global settings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MenuSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates the `MenuSettings` global settings asset.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MenuSettings`](/game-api/types/global-m-o/menusettings)

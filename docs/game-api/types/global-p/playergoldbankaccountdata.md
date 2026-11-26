@@ -1,6 +1,6 @@
 ---
 title: "PlayerGoldBankAccountData"
-description: "class PlayerGoldBankAccountData in Root.Township."
+description: "Server: the saved contents of a player's gold bank account (one coin count), stored per player as a small binary file."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerGoldBankAccountData
 
 A **class** in `Root.Township`, no namespace.
+
+Server: the saved contents of a player's gold bank account (one coin count), stored per player as a small binary file. While an ATM is open for the player it reads through to the ATM.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat)
@@ -27,23 +29,23 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-quantity" /><code>{"private int quantity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-quantity" /><code>{"private int quantity"}</code> | Backing field for `Quantity` when no ATM is open. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-currentatm" /><code><Link to="/game-api/types/global-a-b/atmmachine">{"ATMMachine"}</Link>{" CurrentAtm { get; set; }"}</code> |
-| <Link id="m-quantity-2" /><code>{"int Quantity { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentatm" /><code><Link to="/game-api/types/global-a-b/atmmachine">{"ATMMachine"}</Link>{" CurrentAtm { get; set; }"}</code> | The `ATMMachine` the player is using right now, or null. While set, `Quantity` reads and writes go through it. |
+| <Link id="m-quantity-2" /><code>{"int Quantity { get; set; }"}</code> | Coins in the account. Reads the ATM teller amount while an ATM is open, and setting it updates that ATM. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> |
-| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> |
-| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clone" /><code>{"override "}<Link to="/game-api/types/assembly-other/ialtafileformat">{"IAltaFileFormat"}</Link>{" Clone()"}</code> | Returns a copy with the same quantity. |
+| <Link id="m-readfrom" /><code>{"override void ReadFrom(FileInfo info, Stream stream)"}</code> | Reads the quantity as one 32-bit integer. |
+| <Link id="m-writeto" /><code>{"override void WriteTo(Stream stream, CancellationToken token)"}</code> | Writes the quantity as one 32-bit integer. |

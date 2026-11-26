@@ -1,6 +1,6 @@
 ---
 title: "GhostSnapSlotCollectionSaveData.Element"
-description: "class GhostSnapSlotCollectionSaveData.Element in Root.Township."
+description: "Empty per-slot save element for GhostSnapSlotCollectionSaveData."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GhostSnapSlotCollectionSaveData.Element
 
 A **class** in `Root.Township`, no namespace.
+
+Empty per-slot save element for `GhostSnapSlotCollectionSaveData`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GhostSnapSlotCollectionSaveData`](/game-api/types/global-e-h/ghostsnapslotcollectionsavedata)

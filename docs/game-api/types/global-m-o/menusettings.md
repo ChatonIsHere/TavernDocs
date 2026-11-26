@@ -36,40 +36,40 @@ Global settings asset for the menu and startup: scene names, server list colours
 <details>
 <summary>32 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-afterstartaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/menusettings-afterstartactiontype">{"MenuSettings.AfterStartActionType"}</Link>{" afterStartAction"}</code> |
-| <Link id="m-distancetohapticstrength" /><code>{"private AnimationCurve distanceToHapticStrength"}</code> |
-| <Link id="m-distancetoscreenfade" /><code>{"private AnimationCurve distanceToScreenFade"}</code> |
-| <Link id="m-elementnormalmaterial" /><code>{"private Material elementNormalMaterial"}</code> |
-| <Link id="m-elementselectedmaterial" /><code>{"private Material elementSelectedMaterial"}</code> |
-| <Link id="m-emptypingbarcolor" /><code>{"private Color emptyPingBarColor"}</code> |
-| <Link id="m-gamescenes" /><code>{"private string[] gameScenes"}</code> |
-| <Link id="m-instantiatingplatformmanagertask" /><code>{"private static TaskCompletionSource<GameObject> instantiatingPlatformManagerTask"}</code> |
-| <Link id="m-isclearingsavewhendirectlaunching" /><code>{"private bool isClearingSaveWhenDirectLaunching"}</code> |
-| <Link id="m-isdisablingastarcalculation" /><code>{"private bool isDisablingAstarCalculation"}</code> |
-| <Link id="m-isdisablingoculusservicesineditor" /><code>{"private bool isDisablingOculusServicesInEditor"}</code> |
-| <Link id="m-isforcedheadless" /><code>{"private bool isForcedHeadless"}</code> |
-| <Link id="m-isjoiningtutorialfirsttimeineditor" /><code>{"private bool isJoiningTutorialFirstTimeInEditor"}</code> |
-| <Link id="m-isrequestingowneditemsineditor" /><code>{"private bool isRequestingOwnedItemsInEditor"}</code> |
-| <Link id="m-minpingperlevel" /><code>{"private int[] minPingPerLevel"}</code> |
-| <Link id="m-minpointerprefabsizeforinflation" /><code>{"private float minPointerPrefabSizeForInflation"}</code> |
-| <Link id="m-nointernetscene" /><code>{"private string noInternetScene"}</code> |
-| <Link id="m-pingbarcolor" /><code>{"private Gradient pingBarColor"}</code> |
-| <Link id="m-pingcolorhighlight" /><code>{"private Color pingColorHighlight"}</code> |
-| <Link id="m-platformmanager" /><code>{"private static GameObject platformManager"}</code> |
-| <Link id="m-playabilitycolorgradient" /><code>{"private Gradient playabilityColorGradient"}</code> |
-| <Link id="m-pointerprefabinflationmultiplier" /><code>{"private float pointerPrefabInflationMultiplier"}</code> |
-| <Link id="m-registrationscene" /><code>{"private string registrationScene"}</code> |
-| <Link id="m-selectionorbinfacematerial" /><code>{"private Material selectionOrbInFaceMaterial"}</code> |
-| <Link id="m-selectionorbinvalidmaterial" /><code>{"private Material selectionOrbInvalidMaterial"}</code> |
-| <Link id="m-selectionorbletgothreshold" /><code>{"private float selectionOrbLetGoThreshold"}</code> |
-| <Link id="m-selectionorbvalidmaterial" /><code>{"private Material selectionOrbValidMaterial"}</code> |
-| <Link id="m-startlocaltestonserverjoinfail" /><code>{"private bool startLocalTestOnServerJoinFail"}</code> |
-| <Link id="m-startmenusceneonserverjoinfail" /><code>{"private bool startMenuSceneOnServerJoinFail"}</code> |
-| <Link id="m-toggleoffcolor" /><code>{"private Color toggleOffColor"}</code> |
-| <Link id="m-toggleoncolor" /><code>{"private Color toggleOnColor"}</code> |
-| <Link id="m-vrmenuscene" /><code>{"private string vrMenuScene"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-afterstartaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/menusettings-afterstartactiontype">{"MenuSettings.AfterStartActionType"}</Link>{" afterStartAction"}</code> | Backing field for `AfterStartAction`. |
+| <Link id="m-distancetohapticstrength" /><code>{"private AnimationCurve distanceToHapticStrength"}</code> | Backing field for `DistanceToHapticstrength`. |
+| <Link id="m-distancetoscreenfade" /><code>{"private AnimationCurve distanceToScreenFade"}</code> | Backing field for `DistanceToScreenFade`. |
+| <Link id="m-elementnormalmaterial" /><code>{"private Material elementNormalMaterial"}</code> | Backing field for `ElementNormalMaterial`. |
+| <Link id="m-elementselectedmaterial" /><code>{"private Material elementSelectedMaterial"}</code> | Backing field for `ElementSelectedMaterial`. |
+| <Link id="m-emptypingbarcolor" /><code>{"private Color emptyPingBarColor"}</code> | Backing field for `EmptyPingBarColor`. |
+| <Link id="m-gamescenes" /><code>{"private string[] gameScenes"}</code> | Backing field for `GameScenes`. |
+| <Link id="m-instantiatingplatformmanagertask" /><code>{"private static TaskCompletionSource<GameObject> instantiatingPlatformManagerTask"}</code> | Pending load of the platform manager, so parallel calls to `InstantiatePlatformManagerAsync` wait for one load. |
+| <Link id="m-isclearingsavewhendirectlaunching" /><code>{"private bool isClearingSaveWhenDirectLaunching"}</code> | Whether local test saves are cleared on direct launch. |
+| <Link id="m-isdisablingastarcalculation" /><code>{"private bool isDisablingAstarCalculation"}</code> | Backing field for `IsDisablingAstarCalculation`. |
+| <Link id="m-isdisablingoculusservicesineditor" /><code>{"private bool isDisablingOculusServicesInEditor"}</code> | Backing field for `IsDisablingOculusServicesInEditor`. |
+| <Link id="m-isforcedheadless" /><code>{"private bool isForcedHeadless"}</code> | Backing field for `IsForcedHeadless`. |
+| <Link id="m-isjoiningtutorialfirsttimeineditor" /><code>{"private bool isJoiningTutorialFirstTimeInEditor"}</code> | Backing field for `IsJoiningTutorialFirstTimeInEditor`. |
+| <Link id="m-isrequestingowneditemsineditor" /><code>{"private bool isRequestingOwnedItemsInEditor"}</code> | Backing field for `IsRequestingOwnedItemsInEditor`. |
+| <Link id="m-minpingperlevel" /><code>{"private int[] minPingPerLevel"}</code> | Backing field for `MinPingPerLevel`; defaults to 35, 100 and 250 ms. |
+| <Link id="m-minpointerprefabsizeforinflation" /><code>{"private float minPointerPrefabSizeForInflation"}</code> | Backing field for `MinPointerPrefabSizeForInflation`. |
+| <Link id="m-nointernetscene" /><code>{"private string noInternetScene"}</code> | Backing field for `NoInternetScene`. |
+| <Link id="m-pingbarcolor" /><code>{"private Gradient pingBarColor"}</code> | Backing field for `PingBarColor`. |
+| <Link id="m-pingcolorhighlight" /><code>{"private Color pingColorHighlight"}</code> | Backing field for `PingColorHighlight`. |
+| <Link id="m-platformmanager" /><code>{"private static GameObject platformManager"}</code> | The platform manager object, loaded once from Addressables and kept across scenes. |
+| <Link id="m-playabilitycolorgradient" /><code>{"private Gradient playabilityColorGradient"}</code> | Backing field for `PlayabilityColorGradient`. |
+| <Link id="m-pointerprefabinflationmultiplier" /><code>{"private float pointerPrefabInflationMultiplier"}</code> | Backing field for `PointerPrefabInflationMultiplier`. |
+| <Link id="m-registrationscene" /><code>{"private string registrationScene"}</code> | Backing field for `RegistrationScene`. |
+| <Link id="m-selectionorbinfacematerial" /><code>{"private Material selectionOrbInFaceMaterial"}</code> | Backing field for `SelectionOrbInFaceMaterial`. |
+| <Link id="m-selectionorbinvalidmaterial" /><code>{"private Material selectionOrbInvalidMaterial"}</code> | Backing field for `SelectionOrbInvalidMaterial`. |
+| <Link id="m-selectionorbletgothreshold" /><code>{"private float selectionOrbLetGoThreshold"}</code> | Backing field for `SelectionOrbLetGoThreshold`. |
+| <Link id="m-selectionorbvalidmaterial" /><code>{"private Material selectionOrbValidMaterial"}</code> | Backing field for `SelectionOrbValidMaterial`. |
+| <Link id="m-startlocaltestonserverjoinfail" /><code>{"private bool startLocalTestOnServerJoinFail"}</code> | Backing field for `StartLocalTestOnServerJoinFail`. |
+| <Link id="m-startmenusceneonserverjoinfail" /><code>{"private bool startMenuSceneOnServerJoinFail"}</code> | Backing field for `StartMenuSceneOnServerJoinFail`. |
+| <Link id="m-toggleoffcolor" /><code>{"private Color toggleOffColor"}</code> | Backing field for `ToggleOffColor`. |
+| <Link id="m-toggleoncolor" /><code>{"private Color toggleOnColor"}</code> | Backing field for `ToggleOnColor`. |
+| <Link id="m-vrmenuscene" /><code>{"private string vrMenuScene"}</code> | Backing field for `MenuSceneName`. |
 
 </details>
 
@@ -121,8 +121,8 @@ Global settings asset for the menu and startup: scene names, server list colours
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-initlocalserversave" /><code>{"private void InitLocalServerSave()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initlocalserversave" /><code>{"private void InitLocalServerSave()"}</code> | Deletes the local server save if `isClearingSaveWhenDirectLaunching` is set. Nothing calls it. |
 
 </details>

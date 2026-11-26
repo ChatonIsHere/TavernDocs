@@ -29,22 +29,22 @@ Base for networked spawners that spawn a prefab at themselves, at random or sequ
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributesinglevalue">{"AttributeSingleValue"}</Link>{"[] attributes"}</code> |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-ischildingspawned" /><code>{"private bool isChildingSpawned"}</code> |
-| <Link id="m-isrotationrandom" /><code>{"private bool isRotationRandom"}</code> |
-| <Link id="m-isrotationrandomyonly" /><code>{"private bool isRotationRandomYOnly"}</code> |
-| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> |
-| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmethod">{"SpawnMethod"}</Link>{" method"}</code> |
-| <Link id="m-nextid" /><code>{"private int nextId"}</code> |
-| <Link id="m-nextposition" /><code>{"private Vector3 nextPosition"}</code> |
-| <Link id="m-nextrotation" /><code>{"private Quaternion nextRotation"}</code> |
-| <Link id="m-positioncache" /><code>{"private Vector3 positionCache"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-rotationcache" /><code>{"private Quaternion rotationCache"}</code> |
-| <Link id="m-spawnpoints" /><code>{"private Transform[] spawnPoints"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributesinglevalue">{"AttributeSingleValue"}</Link>{"[] attributes"}</code> | Attribute overrides written into the spawn data for every spawned entity. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Backing field for `IsActive`. While false, spawning does nothing. |
+| <Link id="m-ischildingspawned" /><code>{"private bool isChildingSpawned"}</code> | Spawns entities as saved children parented to this spawner instead of into its chunk. |
+| <Link id="m-isrotationrandom" /><code>{"private bool isRotationRandom"}</code> | Gives spawned entities a random rotation instead of the spawn point's. |
+| <Link id="m-isrotationrandomyonly" /><code>{"private bool isRotationRandomYOnly"}</code> | Limits random rotation to a turn about Y. |
+| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> | Physical material copied onto spawned entities that have a `PhysicalMaterialPart`. |
+| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/global-s/spawnmethod">{"SpawnMethod"}</Link>{" method"}</code> | How spawn points are chosen: sequence, random, or the spawner itself. |
+| <Link id="m-nextid" /><code>{"private int nextId"}</code> | Index of the last spawn point used in sequence mode. |
+| <Link id="m-nextposition" /><code>{"private Vector3 nextPosition"}</code> | Position chosen for the entity being spawned. |
+| <Link id="m-nextrotation" /><code>{"private Quaternion nextRotation"}</code> | Rotation chosen for the entity being spawned. |
+| <Link id="m-positioncache" /><code>{"private Vector3 positionCache"}</code> | Spawner position captured at the start of a spawn when there are no spawn points. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Random scatter radius around the spawner when there are no spawn points. |
+| <Link id="m-rotationcache" /><code>{"private Quaternion rotationCache"}</code> | Spawner rotation captured with `positionCache`. |
+| <Link id="m-spawnpoints" /><code>{"private Transform[] spawnPoints"}</code> | Optional transforms to spawn at. |
 
 </details>
 
@@ -59,9 +59,9 @@ Base for networked spawners that spawn a prefab at themselves, at random or sequ
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-nextspawnpoint" /><code>{"private Transform NextSpawnPoint { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nextspawnpoint" /><code>{"private Transform NextSpawnPoint { get; }"}</code> | Next spawn point by `method`: in sequence, at random, or this transform. |
 
 </details>
 
@@ -77,12 +77,12 @@ Base for networked spawners that spawn a prefab at themselves, at random or sequ
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-evaluateposition" /><code>{"private void EvaluatePosition()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-position" /><code>{"private void Position("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-prechunk" /><code>{"private void PreChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-randomrotation" /><code>{"private Quaternion RandomRotation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-evaluateposition" /><code>{"private void EvaluatePosition()"}</code> | Picks the next spawn position and rotation: a forced position, a random spot within `radius`, or the next spawn point. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the spawn radius as a faint sphere. |
+| <Link id="m-position" /><code>{"private void Position("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Spawn callback that places the new entity at the chosen position and rotation. |
+| <Link id="m-prechunk" /><code>{"private void PreChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Spawn callback that applies `materialPart`'s physical material to the new entity, if set. |
+| <Link id="m-randomrotation" /><code>{"private Quaternion RandomRotation()"}</code> | A random rotation, or a random turn about Y only if `isRotationRandomYOnly`. |
 
 </details>

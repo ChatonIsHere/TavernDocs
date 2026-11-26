@@ -49,12 +49,12 @@ Editor tool for terrain: strokes a ramp along control points into the terrain he
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-distbetweenpoints" /><code>{"private List<float> _distBetweenPoints"}</code> |
-| <Link id="m-totallength" /><code>{"private float _totalLength"}</code> |
-| <Link id="m-totallengthpixels" /><code>{"private float _totalLengthPixels"}</code> |
-| <Link id="m-verbose" /><code>{"private bool VERBOSE"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distbetweenpoints" /><code>{"private List<float> _distBetweenPoints"}</code> | Length of each segment between control points, filled by `calculateDistBetweenPoints`. |
+| <Link id="m-totallength" /><code>{"private float _totalLength"}</code> | Total path length through the control points in world units. |
+| <Link id="m-totallengthpixels" /><code>{"private float _totalLengthPixels"}</code> | Total path length in heightmap pixels, used to space brush samples when stroking a path. |
+| <Link id="m-verbose" /><code>{"private bool VERBOSE"}</code> | Private flag that turns on debug logging while painting; off by default. |
 
 </details>
 
@@ -73,10 +73,10 @@ Editor tool for terrain: strokes a ramp along control points into the terrain he
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-calculatedistbetweenpoints" /><code>{"private void calculateDistBetweenPoints(List<Vector3> cps)"}</code> |
-| <Link id="m-calculatedistbetweenpointsinpixels" /><code>{"private void calculateDistBetweenPointsInPixels(List<Vector3> cps, TerrainData terData)"}</code> |
-| <Link id="m-parameterizedline" /><code>{"private Ray parameterizedLine(float t, List<Vector3> cps, StringBuilder sb = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-calculatedistbetweenpoints" /><code>{"private void calculateDistBetweenPoints(List<Vector3> cps)"}</code> | Fills `_distBetweenPoints` and `_totalLength` from a list of control points. |
+| <Link id="m-calculatedistbetweenpointsinpixels" /><code>{"private void calculateDistBetweenPointsInPixels(List<Vector3> cps, TerrainData terData)"}</code> | Sums the path length in heightmap pixels into `_totalLengthPixels`. |
+| <Link id="m-parameterizedline" /><code>{"private Ray parameterizedLine(float t, List<Vector3> cps, StringBuilder sb = null)"}</code> | Returns the point and direction at fraction `t` along a Catmull-Rom spline through the control points. |
 
 </details>

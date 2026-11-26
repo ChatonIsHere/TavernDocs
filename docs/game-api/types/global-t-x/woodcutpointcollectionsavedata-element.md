@@ -1,6 +1,6 @@
 ---
 title: "WoodcutPointCollectionSaveData.Element"
-description: "class WoodcutPointCollectionSaveData.Element in Root.Township."
+description: "Saved state of one woodcut point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WoodcutPointCollectionSaveData.Element
 
 A **class** in `Root.Township`, no namespace.
+
+Saved state of one woodcut point.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`WoodcutPointCollectionSaveData`](/game-api/types/global-t-x/woodcutpointcollectionsavedata)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-progress" /><code>{"float progress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-progress" /><code>{"float progress"}</code> | How far the point has been cut. |

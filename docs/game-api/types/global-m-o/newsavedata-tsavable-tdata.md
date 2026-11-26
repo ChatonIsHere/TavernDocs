@@ -29,9 +29,9 @@ Base for the current version of a component's save data. `Apply` hands the data 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for load failures and missing migrations. |
 
 </details>
 

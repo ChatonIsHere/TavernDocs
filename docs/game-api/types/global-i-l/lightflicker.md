@@ -1,6 +1,6 @@
 ---
 title: "LightFlicker"
-description: "class LightFlicker in Root.Township."
+description: "Client-side effect that drifts a light's colour towards random colours from a gradient."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LightFlicker
 
 A **class** in `Root.Township`, no namespace.
+
+Client-side effect that drifts a light's colour towards random colours from a gradient. Removes itself on a headless server.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,11 +29,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-colors" /><code>{"private Gradient colors"}</code> |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
-| <Link id="m-targetlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colors" /><code>{"private Gradient colors"}</code> | Gradient the random colours are picked from. |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | How fast the colour drifts. |
+| <Link id="m-targetlight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" targetLight"}</code> | The light on this object. |
 
 </details>
 
@@ -40,9 +42,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Destroys itself when headless, otherwise finds the light. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Moves the light colour towards a random gradient colour. |
 
 </details>

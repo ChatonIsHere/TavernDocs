@@ -1,6 +1,6 @@
 ---
 title: "VelocityPickupSettings.Create"
-description: "class VelocityPickupSettings.Create in Root.Township."
+description: "Editor menu entry that creates a VelocityPickupSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VelocityPickupSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `VelocityPickupSettings` asset.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`VelocityPickupSettings`](/game-api/types/global-t-x/velocitypickupsettings)

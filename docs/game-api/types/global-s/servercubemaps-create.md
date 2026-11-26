@@ -1,6 +1,6 @@
 ---
 title: "ServerCubeMaps.Create"
-description: "class ServerCubeMaps.Create in Root.Township."
+description: "Editor menu entry for creating a ServerCubeMaps asset under the Township meta create menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerCubeMaps.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `ServerCubeMaps` asset under the Township meta create menu.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`ServerCubeMaps`](/game-api/types/global-s/servercubemaps)

@@ -1,6 +1,6 @@
 ---
 title: "MeshReplacePooledObject"
-description: "abstract class MeshReplacePooledObject in Root.Township."
+description: "Base for pooled objects that take a mesh and material when handed out, such as ParticleMeshReplacePooledObject and RendererMeshReplacePooledObject."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeshReplacePooledObject
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for pooled objects that take a mesh and material when handed out, such as `ParticleMeshReplacePooledObject` and `RendererMeshReplacePooledObject`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -24,6 +26,6 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setup" /><code>{"abstract void Setup(Mesh mesh, Material material)"}</code> | Applies the given mesh and material to the object. |

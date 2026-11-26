@@ -1,6 +1,6 @@
 ---
 title: "WorldLerpAngle"
-description: "class WorldLerpAngle in Root.Township."
+description: "Makes this transform lag behind its parent's rotation, smoothing it in world space."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WorldLerpAngle
 
 A **class** in `Root.Township`, no namespace.
+
+Makes this transform lag behind its parent's rotation, smoothing it in world space. Put it on a child.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |
-| <Link id="m-lerp" /><code>{"private float lerp"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> | The smoothed world rotation from last frame. |
+| <Link id="m-lerp" /><code>{"private float lerp"}</code> | Smoothing speed. Higher follows the parent faster. |
 
 </details>
 
@@ -38,9 +40,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lateupdate" /><code>{"private void LateUpdate()"}</code> | Lerps the stored rotation toward the parent's by `lerp` per second and applies it. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Snaps to the parent's rotation. |
 
 </details>

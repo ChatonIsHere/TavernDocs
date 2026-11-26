@@ -1,6 +1,6 @@
 ---
 title: "PauseEditor"
-description: "class PauseEditor in Root.Township."
+description: "Controller button handler that does nothing when pressed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PauseEditor
 
 A **class** in `Root.Township`, no namespace.
+
+Controller button handler that does nothing when pressed. Probably a leftover from an editor pause shortcut.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`ControllerInputButtonPressed`](/game-api/types/global-c-d/controllerinputbuttonpressed)
@@ -23,6 +25,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-buttonpressed" /><code>{"protected override void ButtonPressed("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Empty. |

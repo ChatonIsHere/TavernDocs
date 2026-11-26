@@ -1,6 +1,6 @@
 ---
 title: "ProfilingLoader"
-description: "class ProfilingLoader in Root.Township."
+description: "Results of a ProfilingPositionCycler run: the text report and the files written."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProfilingLoader
 
 A **class** in `Root.Township`, no namespace.
+
+Results of a `ProfilingPositionCycler` run: the text report and the files written.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-files" /><code>{"string[] files"}</code> |
-| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |
-| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> |
-| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> |
-| <Link id="m-loaders" /><code>{"string[] loaders"}</code> |
-| <Link id="m-result" /><code>{"string result"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-files" /><code>{"string[] files"}</code> | All files in the run's folder. |
+| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> | Display name. |
+| <Link id="m-isexpanding" /><code>{"bool isExpanding"}</code> | Editor fold state. |
+| <Link id="m-isexpandingresults" /><code>{"bool isExpandingResults"}</code> | Editor fold state for the results. |
+| <Link id="m-loaders" /><code>{"string[] loaders"}</code> | Files in the folder other than `.data` and `.meta` files. |
+| <Link id="m-result" /><code>{"string result"}</code> | The text report. |

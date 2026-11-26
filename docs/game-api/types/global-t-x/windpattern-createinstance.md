@@ -1,6 +1,6 @@
 ---
 title: "WindPattern.CreateInstance"
-description: "class WindPattern.CreateInstance in Root.Township."
+description: "Editor menu entry that creates a WindPattern asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WindPattern.CreateInstance
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `WindPattern` asset.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`WindPattern`](/game-api/types/global-t-x/windpattern)

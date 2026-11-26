@@ -47,9 +47,9 @@ Server: a save file that belongs to one player (by user ID), loaded whether or n
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-loseplayer" /><code>{"private void LosePlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-playerjoined" /><code>{"private void PlayerJoined("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newPlayer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loseplayer" /><code>{"private void LosePlayer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Clears `TargetPlayer` when the player's entity is destroyed. |
+| <Link id="m-playerjoined" /><code>{"private void PlayerJoined("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" newPlayer)"}</code> | Sets `TargetPlayer` when the player with this content's ID joins, and watches for them leaving. |
 
 </details>

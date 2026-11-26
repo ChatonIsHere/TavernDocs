@@ -1,6 +1,6 @@
 ---
 title: "HandleEnchantment"
-description: "class HandleEnchantment in Root.Township."
+description: "Empty component with no behaviour."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandleEnchantment
 
 A **class** in `Root.Township`, no namespace.
+
+Empty component with no behaviour.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Empty. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Empty. |
 
 </details>

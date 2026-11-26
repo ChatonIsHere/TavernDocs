@@ -29,9 +29,9 @@ Base for a device SDK controller (one per player mode): starts the SDK, makes th
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-devicelifecycle" /><code>{"private "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" deviceLifecycle"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-devicelifecycle" /><code>{"private "}<Link to="/game-api/types/global-c-d/devicelifecycle">{"DeviceLifecycle"}</Link>{" deviceLifecycle"}</code> | The `DeviceLifecycle` made by `CreateInterface` in `StartDevice`. The update calls are passed on to it. |
 
 </details>
 

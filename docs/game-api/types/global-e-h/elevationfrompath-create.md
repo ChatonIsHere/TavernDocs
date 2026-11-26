@@ -1,6 +1,6 @@
 ---
 title: "ElevationFromPath.Create"
-description: "class ElevationFromPath.Create in Root.Township."
+description: "Editor menu entry for creating an ElevationFromPath asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ElevationFromPath.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating an `ElevationFromPath` asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`ElevationFromPath`](/game-api/types/global-e-h/elevationfrompath)

@@ -1,6 +1,6 @@
 ---
 title: "TempLaser"
-description: "class TempLaser in Root.Township."
+description: "Prototype light emitter: raycasts forward each frame and tells any ILightDetectorTemp it hits when the beam starts and stops hitting it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TempLaser
 
 A **class** in `Root.Township`, no namespace.
+
+Prototype light emitter: raycasts forward each frame and tells any `ILightDetectorTemp` it hits when the beam starts and stops hitting it.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`, [`ILightEmitterTemp`](/game-api/types/global-i-l/ilightemittertemp)
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |
-| <Link id="m-olddetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/ilightdetectortemp">{"ILightDetectorTemp"}</Link>{" oldDetector"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distance" /><code>{"private float distance"}</code> | Ray length. |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | Layers the ray hits. |
+| <Link id="m-olddetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/ilightdetectortemp">{"ILightDetectorTemp"}</Link>{" oldDetector"}</code> | Detector hit last frame. |
 
 </details>
 
@@ -39,8 +41,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Raycasts forward and calls `BeginHit` or `EndHit` when the hit detector changes. |
 
 </details>

@@ -22,11 +22,11 @@ Client-only helpers and the `recent-players` console module (alias `recent`) for
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-recentstatustime" /><code>{"private const string RecentStatusTime"}</code> |
-| <Link id="m-voicechat" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for API errors. |
+| <Link id="m-recentstatustime" /><code>{"private const string RecentStatusTime"}</code> | The text `a moment ago` used in status strings. |
+| <Link id="m-voicechat" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" voiceChat"}</code> | Backing field for `VoiceChat`. |
 
 </details>
 
@@ -35,9 +35,9 @@ Client-only helpers and the `recent-players` console module (alias `recent`) for
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-voicechat-2" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" VoiceChat { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-voicechat-2" /><code>{"private static "}<Link to="/game-api/types/alta-networking/ivoicechat">{"IVoiceChat"}</Link>{" VoiceChat { get; }"}</code> | Voice chat service, resolved on first use, used to check mutes. |
 
 </details>
 
@@ -62,9 +62,9 @@ Client-only helpers and the `recent-players` console module (alias `recent`) for
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-querydbforinteractions" /><code>{"private static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> QueryDbForInteractions(int? serverIdToCheck = null)"}</code> |
-| <Link id="m-timesince" /><code>{"private static TimeSpan TimeSince("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" info)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-querydbforinteractions" /><code>{"private static async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> QueryDbForInteractions(int? serverIdToCheck = null)"}</code> | Fetches recent player interactions from the API, for one server or all. Returns empty on error. |
+| <Link id="m-timesince" /><code>{"private static TimeSpan TimeSince("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{" info)"}</code> | Time since the interaction happened, in UTC. |
 
 </details>

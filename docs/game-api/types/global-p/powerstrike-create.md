@@ -1,6 +1,6 @@
 ---
 title: "PowerStrike.Create"
-description: "class PowerStrike.Create in Root.Township."
+description: "Editor menu entry for creating a PowerStrike skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PowerStrike.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `PowerStrike` skill asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PowerStrike`](/game-api/types/global-p/powerstrike)

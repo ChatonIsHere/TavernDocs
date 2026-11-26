@@ -1,6 +1,6 @@
 ---
 title: "ForgedPointCollectionSaveData"
-description: "class ForgedPointCollectionSaveData in Root.Township."
+description: "Save data for a ForgedPointCollection, one element per forged point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForgedPointCollectionSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `ForgedPointCollection`, one element per forged point.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`ChildSyncableCollectionSaveData<ForgedPointCollectionSaveData, ForgedPointCollection, ForgedPointCollectionSaveData.Element>`](/game-api/types/global-c-d/childsyncablecollectionsavedata-tthis-tsavable-tdata)

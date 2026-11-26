@@ -33,15 +33,15 @@ Base for in-world text fields typed into with the virtual keyboard. Shows placeh
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-defaultvalue" /><code>{"private string defaultValue"}</code> |
-| <Link id="m-inputcolor" /><code>{"private Color inputColor"}</code> |
-| <Link id="m-inputrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputRenderer"}</code> |
-| <Link id="m-issecret" /><code>{"private bool isSecret"}</code> |
-| <Link id="m-placeholdercolor" /><code>{"private Color placeHolderColor"}</code> |
-| <Link id="m-placeholderselectedcolor" /><code>{"private Color placeHolderSelectedColor"}</code> |
-| <Link id="m-secretkey" /><code>{"private string secretKey"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-defaultvalue" /><code>{"private string defaultValue"}</code> | Placeholder text shown while the input is empty. |
+| <Link id="m-inputcolor" /><code>{"private Color inputColor"}</code> | Text colour for typed input. |
+| <Link id="m-inputrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputRenderer"}</code> | The `TextRenderer` that shows the input or the placeholder. |
+| <Link id="m-issecret" /><code>{"private bool isSecret"}</code> | When true, typed text is shown masked with `secretKey`. |
+| <Link id="m-placeholdercolor" /><code>{"private Color placeHolderColor"}</code> | Placeholder colour when the field isn't focused. |
+| <Link id="m-placeholderselectedcolor" /><code>{"private Color placeHolderSelectedColor"}</code> | Placeholder colour while the field is focused. |
+| <Link id="m-secretkey" /><code>{"private string secretKey"}</code> | String shown once per character when masking secret input (default `*`). |
 
 </details>
 

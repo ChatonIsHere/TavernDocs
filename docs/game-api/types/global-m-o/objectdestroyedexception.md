@@ -1,6 +1,6 @@
 ---
 title: "ObjectDestroyedException"
-description: "class ObjectDestroyedException in Root.Township."
+description: "Internal exception type for an object that has been destroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ObjectDestroyedException
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Internal exception type for an object that has been destroyed. Nothing in this build throws it.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `Exception`

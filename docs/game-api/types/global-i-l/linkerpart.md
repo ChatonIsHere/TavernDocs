@@ -1,6 +1,6 @@
 ---
 title: "LinkerPart"
-description: "class LinkerPart in Root.Township."
+description: "Generation part (Generatable/GPart Linker) that wires logic between spawned objects: after generation it links the LogicValueSender spawned by each from..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LinkerPart
 
 A **class** in `Root.Township`, no namespace.
+
+Generation part (`Generatable/GPart Linker`) that wires logic between spawned objects: after generation it links the `LogicValueSender` spawned by each `from` spawner to the receivers spawned by each `to` spawner.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`GeneratablePart`](/game-api/types/global-e-h/generatablepart)
@@ -27,15 +29,15 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] from"}</code> |
-| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] to"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] from"}</code> | Spawner parts whose last spawned objects are the logic senders. |
+| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/global-s/spawnerpart">{"SpawnerPart"}</Link>{"[] to"}</code> | Spawner parts whose last spawned objects are the logic receivers. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generatedynamic" /><code>{"override void GenerateDynamic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core)"}</code> | For each `from` spawner's last spawned object, links its `LogicValueSender` to every `to` spawner's `ILogicValueLinkReceiver`, logging errors when either is missing. |

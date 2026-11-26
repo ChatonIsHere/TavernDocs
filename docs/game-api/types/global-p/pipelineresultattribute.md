@@ -1,6 +1,6 @@
 ---
 title: "PipelineResultAttribute"
-description: "class PipelineResultAttribute in Root.Township."
+description: "Attribute on an ObjectPipeline field that states which types the pipeline should produce, such as GameObject or NetworkPrefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PipelineResultAttribute
 
 A **class** in `Root.Township`, no namespace.
+
+Attribute on an `ObjectPipeline` field that states which types the pipeline should produce, such as `GameObject` or `NetworkPrefab`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `Attribute`
@@ -23,6 +25,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-types" /><code>{"IEnumerable<Type> Types { get; }"}</code> | The result types the pipeline field expects. |

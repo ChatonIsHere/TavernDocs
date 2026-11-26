@@ -1,6 +1,6 @@
 ---
 title: "GenericCraftingRecipePageSettings.Create"
-description: "class GenericCraftingRecipePageSettings.Create in Root.Township."
+description: "Editor menu entry for creating the GenericCraftingRecipePageSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenericCraftingRecipePageSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating the `GenericCraftingRecipePageSettings` asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GenericCraftingRecipePageSettings`](/game-api/types/global-e-h/genericcraftingrecipepagesettings)

@@ -1,6 +1,6 @@
 ---
 title: "Garnisher"
-description: "class Garnisher in Root.Township."
+description: "Profession skill asset with no code of its own; its behaviour comes from ProfessionSkill."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Garnisher
 
 A **class** in `Root.Township`, no namespace.
+
+Profession skill asset with no code of its own; its behaviour comes from `ProfessionSkill`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`ProfessionSkill<Garnisher>`](/game-api/types/global-p/professionskill-t)

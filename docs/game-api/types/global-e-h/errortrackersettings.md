@@ -1,6 +1,6 @@
 ---
 title: "ErrorTrackerSettings"
-description: "class ErrorTrackerSettings in Root.Township."
+description: "Settings asset for how the editor reports logged errors."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ErrorTrackerSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Settings asset for how the editor reports logged errors.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -23,7 +25,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-displaydialogonfirsterror" /><code>{"bool displayDialogOnFirstError"}</code> |
-| <Link id="m-displaymessagewhenthereareerrors" /><code>{"bool displayMessageWhenThereAreErrors"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displaydialogonfirsterror" /><code>{"bool displayDialogOnFirstError"}</code> | Show a dialog on the first error. |
+| <Link id="m-displaymessagewhenthereareerrors" /><code>{"bool displayMessageWhenThereAreErrors"}</code> | Show a message while there are errors. |

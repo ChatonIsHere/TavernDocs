@@ -1,6 +1,6 @@
 ---
 title: "PickupTypeSettings.Create"
-description: "class PickupTypeSettings.Create in Root.Township."
+description: "Unity editor menu item that creates a PickupTypeSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupTypeSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Unity editor menu item that creates a `PickupTypeSettings` asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PickupTypeSettings`](/game-api/types/global-p/pickuptypesettings)

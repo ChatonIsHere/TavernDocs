@@ -1,6 +1,6 @@
 ---
 title: "PlatformComponents"
-description: "class PlatformComponents in Root.Township."
+description: "Build-time bake step that removes chosen components on platforms they aren't meant for (for example Windows-only components on Quest)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformComponents
 
 A **class** in `Root.Township`, no namespace.
+
+Build-time bake step that removes chosen components on platforms they aren't meant for (for example Windows-only components on Quest).
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`BuildRendererBakeable`](/game-api/types/assembly-other/buildrendererbakeable)
@@ -27,24 +29,24 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-platformobjects" /><code>{"private "}<Link to="/game-api/types/global-p/platformcomponents-platformobjectsetup">{"PlatformComponents.PlatformObjectSetup"}</Link>{"[] platformObjects"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-platformobjects" /><code>{"private "}<Link to="/game-api/types/global-p/platformcomponents-platformobjectsetup">{"PlatformComponents.PlatformObjectSetup"}</Link>{"[] platformObjects"}</code> | Groups of components and the platforms they're kept on. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |
-| <Link id="m-bake-2" /><code>{"void Bake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group. |
+| <Link id="m-bake-2" /><code>{"void Bake()"}</code> | Destroys each listed component whose target platforms don't include the current runtime, then clears missing renderers from the LOD group. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Empty. |
 
 </details>

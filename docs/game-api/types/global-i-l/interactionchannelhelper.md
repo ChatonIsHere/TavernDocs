@@ -1,6 +1,6 @@
 ---
 title: "InteractionChannelHelper"
-description: "static class InteractionChannelHelper in Root.Township."
+description: "Extension method for InteractionChannel flags."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Extension method for `InteractionChannel` flags.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Attributes** `Extension`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-intersects" /><code>{"static bool Intersects("}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channel, "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" otherChannel)"}</code> | True when the two channel masks share any flag. |

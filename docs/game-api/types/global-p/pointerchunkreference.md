@@ -1,6 +1,6 @@
 ---
 title: "PointerChunkReference"
-description: "class PointerChunkReference in Root.Township."
+description: "Component holding a list of chunks and an id."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PointerChunkReference
 
 A **class** in `Root.Township`, no namespace.
+
+Component holding a list of chunks and an id. Nothing in this build reads it.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -23,7 +25,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-chunks" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> Chunks"}</code> |
-| <Link id="m-id" /><code>{"uint id"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunks" /><code>{"List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> Chunks"}</code> | List of chunks. |
+| <Link id="m-id" /><code>{"uint id"}</code> | An id number. |

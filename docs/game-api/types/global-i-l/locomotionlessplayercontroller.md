@@ -28,14 +28,14 @@ A VR player controller that cannot move, used for menu scenes. Always counts as 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |
-| <Link id="m-leftghosthandcolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" leftGhostHandColliders"}</code> |
-| <Link id="m-leftinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" leftInput"}</code> |
-| <Link id="m-rightghosthandcolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" rightGhostHandColliders"}</code> |
-| <Link id="m-rightinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" rightInput"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> | Fingertip settings. |
+| <Link id="m-head" /><code>{"private Transform head"}</code> | Transform used as `Head` and `HeadFollow`. |
+| <Link id="m-leftghosthandcolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" leftGhostHandColliders"}</code> | Left ghost hand colliders. |
+| <Link id="m-leftinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" leftInput"}</code> | Left hand input. |
+| <Link id="m-rightghosthandcolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" rightGhostHandColliders"}</code> | Right ghost hand colliders. |
+| <Link id="m-rightinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" rightInput"}</code> | Right hand input. |
 
 </details>
 
@@ -57,9 +57,9 @@ A VR player controller that cannot move, used for menu scenes. Always counts as 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> | Returns `fingerTips`. |
 
 </details>
 
@@ -73,12 +73,12 @@ A VR player controller that cannot move, used for menu scenes. Always counts as 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-hideghosthand" /><code>{"private void HideGhostHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |
-| <Link id="m-ondisconnectedfromplatform" /><code>{"private void IPlatformPlayer.OnDisconnectedFromPlatform()"}</code> |
-| <Link id="m-setghosthandcollidersactive" /><code>{"private void SetGhostHandCollidersActive(bool isActive)"}</code> |
-| <Link id="m-showghosthand" /><code>{"private void ShowGhostHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hideghosthand" /><code>{"private void HideGhostHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Turns off the ghost hand colliders when a hand grabs something. |
+| <Link id="m-ondisconnectedfromplatform" /><code>{"private void IPlatformPlayer.OnDisconnectedFromPlatform()"}</code> | Unlinks the controller from the player and fades to black. |
+| <Link id="m-setghosthandcollidersactive" /><code>{"private void SetGhostHandCollidersActive(bool isActive)"}</code> | Turns both ghost hand collider groups on or off. |
+| <Link id="m-showghosthand" /><code>{"private void ShowGhostHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Turns the ghost hand colliders back on when a hand lets go. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Links the controller to its inputs and hooks grab and release on both hands to the ghost hand colliders. |
 
 </details>

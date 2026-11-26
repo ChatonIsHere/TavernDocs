@@ -1,6 +1,6 @@
 ---
 title: "ImpactChannelProgressionFilter.Create"
-description: "class ImpactChannelProgressionFilter.Create in Root.Township."
+description: "Editor menu entry that creates an ImpactChannelProgressionFilter asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactChannelProgressionFilter.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates an `ImpactChannelProgressionFilter` asset.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`ImpactChannelProgressionFilter`](/game-api/types/global-i-l/impactchannelprogressionfilter)

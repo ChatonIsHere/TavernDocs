@@ -1,6 +1,6 @@
 ---
 title: "PickupGrabInputStructure"
-description: "class PickupGrabInputStructure in Root.Township."
+description: "Skill input structure asset whose input is simply grabbing the pickup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupGrabInputStructure
 
 A **class** in `Root.Township`, no namespace.
+
+Skill input structure asset whose input is simply grabbing the pickup.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`SkillInputStructure`](/game-api/types/global-s/skillinputstructure)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getnewinput" /><code>{"override "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" GetNewInput()"}</code> | Returns a new `PickupGrabInputMethod`. |

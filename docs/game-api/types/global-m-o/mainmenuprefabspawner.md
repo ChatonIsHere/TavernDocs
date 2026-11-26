@@ -1,6 +1,6 @@
 ---
 title: "MainMenuPrefabSpawner"
-description: "class MainMenuPrefabSpawner in Root.Township."
+description: "Spawns a network prefab unchunked as a child of this object when the scene starts."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MainMenuPrefabSpawner
 
 A **class** in `Root.Township`, no namespace.
+
+Spawns a network prefab unchunked as a child of this object when the scene starts. Used in the main menu.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | The prefab to spawn. |
 
 </details>
 
@@ -37,8 +39,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Spawns `prefab` and resets its local position, rotation and scale under this object. |
 
 </details>

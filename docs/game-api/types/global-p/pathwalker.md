@@ -38,35 +38,35 @@ Moves a rigidbody along an A* path towards a target transform or position, steer
 <details>
 <summary>27 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
-| <Link id="m-cansearchagain" /><code>{"private bool canSearchAgain"}</code> |
-| <Link id="m-enddistance" /><code>{"private float endDistance"}</code> |
-| <Link id="m-enddistancesquared" /><code>{"private float endDistanceSquared"}</code> |
-| <Link id="m-groundmask" /><code>{"private LayerMask groundMask"}</code> |
-| <Link id="m-interpolator" /><code>{"private PathInterpolator interpolator"}</code> |
-| <Link id="m-lastrepath" /><code>{"private float lastRepath"}</code> |
-| <Link id="m-minimundistance" /><code>{"private float minimunDistance"}</code> |
-| <Link id="m-minturn" /><code>{"private float minTurn"}</code> |
-| <Link id="m-monomodifier" /><code>{"private MonoModifier monoModifier"}</code> |
-| <Link id="m-movementplane" /><code>{"private IMovementPlane movementPlane"}</code> |
-| <Link id="m-path" /><code>{"private Path path"}</code> |
-| <Link id="m-picknextwaypointdist" /><code>{"private float pickNextWaypointDist"}</code> |
-| <Link id="m-repathrate" /><code>{"private float repathRate"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |
-| <Link id="m-searchpath" /><code>{"private Coroutine searchPath"}</code> |
-| <Link id="m-seeker" /><code>{"private Seeker seeker"}</code> |
-| <Link id="m-sharpturn" /><code>{"private float sharpTurn"}</code> |
-| <Link id="m-slowdowndistance" /><code>{"private float slowdownDistance"}</code> |
-| <Link id="m-starthasrun" /><code>{"private bool startHasRun"}</code> |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |
-| <Link id="m-targetedposition" /><code>{"private Vector3? targetedPosition"}</code> |
-| <Link id="m-targetpoint" /><code>{"private Vector3 targetPoint"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
-| <Link id="m-turningperpendicularratio" /><code>{"private float TurningPerpendicularRatio"}</code> |
-| <Link id="m-verticalvelocity" /><code>{"private float verticalVelocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> | Acceleration towards the path. |
+| <Link id="m-cansearchagain" /><code>{"private bool canSearchAgain"}</code> | False while a path request is waiting for its result. |
+| <Link id="m-enddistance" /><code>{"private float endDistance"}</code> | Backing field for `EndReachedDistance`. |
+| <Link id="m-enddistancesquared" /><code>{"private float endDistanceSquared"}</code> | Squared end distance used for the reached checks. |
+| <Link id="m-groundmask" /><code>{"private LayerMask groundMask"}</code> | Layers the ground raycast hits. |
+| <Link id="m-interpolator" /><code>{"private PathInterpolator interpolator"}</code> | Tracks the walker's position along the current path. |
+| <Link id="m-lastrepath" /><code>{"private float lastRepath"}</code> | Time of the last path request. |
+| <Link id="m-minimundistance" /><code>{"private float minimunDistance"}</code> | Unused minimum distance setting. |
+| <Link id="m-minturn" /><code>{"private float minTurn"}</code> | Smallest share of sideways acceleration kept when turning. |
+| <Link id="m-monomodifier" /><code>{"private MonoModifier monoModifier"}</code> | Path modifier on the same object, enabled with the walker. |
+| <Link id="m-movementplane" /><code>{"private IMovementPlane movementPlane"}</code> | Movement plane of the graph the path is on. |
+| <Link id="m-path" /><code>{"private Path path"}</code> | The current path from the `Seeker`. |
+| <Link id="m-picknextwaypointdist" /><code>{"private float pickNextWaypointDist"}</code> | How far ahead along the path to aim. |
+| <Link id="m-repathrate" /><code>{"private float repathRate"}</code> | Seconds between path searches. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Rigidbody moved with `MovePosition`. |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> | Turn speed in degrees per second. |
+| <Link id="m-searchpath" /><code>{"private Coroutine searchPath"}</code> | The running path search coroutine. |
+| <Link id="m-seeker" /><code>{"private Seeker seeker"}</code> | The A* `Seeker` that finds paths. |
+| <Link id="m-sharpturn" /><code>{"private float sharpTurn"}</code> | How sharply the walker turns, from 0 to 1. |
+| <Link id="m-slowdowndistance" /><code>{"private float slowdownDistance"}</code> | Distance from the end at which the walker starts slowing. |
+| <Link id="m-starthasrun" /><code>{"private bool startHasRun"}</code> | True once `Start` has run, so searching can begin. |
+| <Link id="m-target" /><code>{"private Transform target"}</code> | Backing field for `Target`. |
+| <Link id="m-targetedposition" /><code>{"private Vector3? targetedPosition"}</code> | Fixed position to walk to when there is no `Target`. |
+| <Link id="m-targetpoint" /><code>{"private Vector3 targetPoint"}</code> | The point on the path being steered at. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Cached transform. |
+| <Link id="m-turningperpendicularratio" /><code>{"private float TurningPerpendicularRatio"}</code> | How much sideways acceleration is kept when turning, from `sharpTurn` and `minTurn`. |
+| <Link id="m-verticalvelocity" /><code>{"private float verticalVelocity"}</code> | Vertical speed, reset when the ground ray hits. |
 
 </details>
 
@@ -93,15 +93,15 @@ Moves a rigidbody along an A* path towards a target transform or position, steer
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
-| <Link id="m-initializepath" /><code>{"private void InitializePath()"}</code> |
-| <Link id="m-move" /><code>{"private void Move(Vector3 position3D, Vector3 deltaPosition)"}</code> |
-| <Link id="m-raycastposition" /><code>{"private Vector3 RaycastPosition(Vector3 position, float lastElevation)"}</code> |
-| <Link id="m-rotatetowards" /><code>{"private void RotateTowards(Vector2 direction, float maxDegrees)"}</code> |
-| <Link id="m-searchpath-2" /><code>{"private void SearchPath()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Disables the component and its modifier, and works out the turning ratio. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Moves towards the target each physics step until within the end distance. |
+| <Link id="m-initializepath" /><code>{"private void InitializePath()"}</code> | Resets the repath timer and restarts the repeating path search coroutine. |
+| <Link id="m-move" /><code>{"private void Move(Vector3 position3D, Vector3 deltaPosition)"}</code> | Moves the rigidbody by the step, snapping down to the ground. |
+| <Link id="m-raycastposition" /><code>{"private Vector3 RaycastPosition(Vector3 position, float lastElevation)"}</code> | Casts down from the previous height to find the ground under the new position. |
+| <Link id="m-rotatetowards" /><code>{"private void RotateTowards(Vector2 direction, float maxDegrees)"}</code> | Turns the transform towards the movement direction by up to the given degrees. |
+| <Link id="m-searchpath-2" /><code>{"private void SearchPath()"}</code> | Asks the `Seeker` for a new path to the target position. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Marks start as run and starts path searching. |
 
 </details>

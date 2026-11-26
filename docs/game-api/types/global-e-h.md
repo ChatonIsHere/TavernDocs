@@ -23,73 +23,73 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EdibleEvent`](/game-api/types/global-e-h/edibleevent) | class | `AltaEvent<EdibleObject, EdibleUnityEvent>` | 0 | Serializable `AltaEvent` raised with an `EdibleObject`. |
 | [`EdibleObject`](/game-api/types/global-e-h/edibleobject) | class | `NetworkEntityBehaviour` | 4 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#edibleobject): On every food prefab. |
 | [`EdibleObject.EatenStage`](/game-api/types/global-e-h/edibleobject-eatenstage) | class |  | 3 | Bite settings for an `EdibleObject`: how many bites, how long each takes and the effect each bite plays. |
-| [`EdiblePageProvider`](/game-api/types/global-e-h/ediblepageprovider) | class | `GeneratedPageProvider<Item>` | 5 |  |
+| [`EdiblePageProvider`](/game-api/types/global-e-h/ediblepageprovider) | class | `GeneratedPageProvider<Item>` | 5 | Generated page provider (identifier 5) that builds a glyph page for an edible item, showing its glyph, cooking stage and consumption effects. Get it with `EdiblePageProvider.Instance`. |
 | [`EdiblePageSettings`](/game-api/types/global-e-h/ediblepagesettings) | class | `GlobalSettings<EdiblePageSettings>` | 12 | Global settings for the generated pages that describe an edible item: the page template, where each glyph goes and how effect strength is drawn. Used by `EdiblePageProvider`. |
-| [`EdiblePageSettings.Create`](/game-api/types/global-e-h/ediblepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<EdiblePageSettings>` | 0 |  |
-| [`EdibleUnityEvent`](/game-api/types/global-e-h/edibleunityevent) | class | `UnityEvent<EdibleObject>` | 0 |  |
-| [`EditorApiSettings`](/game-api/types/global-e-h/editorapisettings) | class | `GlobalSettings<EditorApiSettings>` | 6 |  |
-| [`EditorCommandCaller`](/game-api/types/global-e-h/editorcommandcaller) | class | `MonoBehaviour` | 1 |  |
-| [`EditorEventPanel`](/game-api/types/global-e-h/editoreventpanel) | class | `MonoBehaviour` | 0 |  |
-| [`EditorFakeFocusEvents`](/game-api/types/global-e-h/editorfakefocusevents) | class | `MonoBehaviour` | 3 |  |
-| [`EditorForcedTaskUpdater`](/game-api/types/global-e-h/editorforcedtaskupdater) | static class |  | 1 |  |
-| [`EditorHotKeys`](/game-api/types/global-e-h/editorhotkeys) | class | `ScriptableObject` | 1 |  |
-| [`EditorHotKeys.Create`](/game-api/types/global-e-h/editorhotkeys-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<EditorHotKeys>` | 0 |  |
+| [`EdiblePageSettings.Create`](/game-api/types/global-e-h/ediblepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<EdiblePageSettings>` | 0 | Editor menu entry for creating the `EdiblePageSettings` asset. |
+| [`EdibleUnityEvent`](/game-api/types/global-e-h/edibleunityevent) | class | `UnityEvent<EdibleObject>` | 0 | Serializable `UnityEvent` that passes an `EdibleObject`. |
+| [`EditorApiSettings`](/game-api/types/global-e-h/editorapisettings) | class | `GlobalSettings<EditorApiSettings>` | 6 | Global settings for how the editor talks to the web API: offline mode, which endpoint to use, and an optional credentials override file. Read through `GlobalSettings<EditorApiSettings>.Instance`. |
+| [`EditorCommandCaller`](/game-api/types/global-e-h/editorcommandcaller) | class | `MonoBehaviour` | 1 | Editor helper meant to run a console command from an inspector button. Its method is empty in this build. |
+| [`EditorEventPanel`](/game-api/types/global-e-h/editoreventpanel) | class | `MonoBehaviour` | 0 | Empty `MonoBehaviour` in this build. |
+| [`EditorFakeFocusEvents`](/game-api/types/global-e-h/editorfakefocusevents) | class | `MonoBehaviour` | 3 | Tracks whether the game window has input focus and raises static events when it changes. `MenuSettings.isAlwaysOnFocus` forces it to count as focused. |
+| [`EditorForcedTaskUpdater`](/game-api/types/global-e-h/editorforcedtaskupdater) | static class |  | 1 | Editor helper meant to keep the editor updating while a task runs. Mostly stubbed out in this build. |
+| [`EditorHotKeys`](/game-api/types/global-e-h/editorhotkeys) | class | `ScriptableObject` | 1 | Asset listing editor menu paths and the hotkeys to bind to them. |
+| [`EditorHotKeys.Create`](/game-api/types/global-e-h/editorhotkeys-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<EditorHotKeys>` | 0 | Editor menu entry for creating an `EditorHotKeys` asset. |
 | [`EditorLink`](/game-api/types/global-e-h/editorlink) | class |  | 4 | Serializable link to an asset by GUID, meant for editor use. In the game build every method is a stub. |
-| [`EditorOnlyAddressableSession`](/game-api/types/global-e-h/editoronlyaddressablesession) | static class |  | 1 |  |
+| [`EditorOnlyAddressableSession`](/game-api/types/global-e-h/editoronlyaddressablesession) | static class |  | 1 | Holds one shared `AddressableSession` for editor-only addressable loading. |
 | [`EditorOverrideCredentials`](/game-api/types/global-e-h/editoroverridecredentials) | class |  | 2 | Plain username and password pair, probably for signing in from the Unity editor during development. |
-| [`EditorWindowGizmosDrawer`](/game-api/types/global-e-h/editorwindowgizmosdrawer) | class | `MonoBehaviour` | 2 |  |
+| [`EditorWindowGizmosDrawer`](/game-api/types/global-e-h/editorwindowgizmosdrawer) | class | `MonoBehaviour` | 2 | Hidden object that lets non-scene code draw gizmos: register a callback and it is run from `OnDrawGizmos`. |
 | [`EffectPlayStatus`](/game-api/types/global-e-h/effectplaystatus) | enum |  | 3 | Flags for an effect that is playing with its visuals or its sound turned off. |
 | [`EffectReleaseOnFade`](/game-api/types/global-e-h/effectreleaseonfade) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 | Pooled effect that, when released, stops its particle systems and sound and waits for the longest particle duration before going back to the pool. |
-| [`EffectToggleColor`](/game-api/types/global-e-h/effecttogglecolor) | class | `MonoBehaviour` | 1 |  |
+| [`EffectToggleColor`](/game-api/types/global-e-h/effecttogglecolor) | class | `MonoBehaviour` | 1 | Switches the particle systems under it between on and off start colours and colour-over-lifetime gradients. |
 | [`EffectToggleColor.ParticleLifetimeColor`](/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor) | class | `ParticleStartColor` | 2 | A particle system whose start colour and colour-over-lifetime gradient switch between on and off values. |
 | [`EffectToggleColor.ParticleStartColor`](/game-api/types/global-e-h/effecttogglecolor-particlestartcolor) | class |  | 3 | A particle system whose start colour switches between an on and an off colour. |
-| [`ElevationFromPath`](/game-api/types/global-e-h/elevationfrompath) | class | `SpawnModifierPointNormal` | 1 |  |
-| [`ElevationFromPath.Create`](/game-api/types/global-e-h/elevationfrompath-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ElevationFromPath>` | 0 |  |
-| [`EmailValidationHelper`](/game-api/types/global-e-h/emailvalidationhelper) | static class |  | 2 |  |
-| [`EmailVerificationController`](/game-api/types/global-e-h/emailverificationcontroller) | class | `LoggedInTool` | 0 |  |
-| [`EmailVerificationManager`](/game-api/types/global-e-h/emailverificationmanager) | class | `MonoBehaviour` | 1 |  |
+| [`ElevationFromPath`](/game-api/types/global-e-h/elevationfrompath) | class | `SpawnModifierPointNormal` | 1 | Forest spawn filter that weights points by their height above the nearest path and can pull them towards the path's height. |
+| [`ElevationFromPath.Create`](/game-api/types/global-e-h/elevationfrompath-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ElevationFromPath>` | 0 | Editor menu entry for creating an `ElevationFromPath` asset. |
+| [`EmailValidationHelper`](/game-api/types/global-e-h/emailvalidationhelper) | static class |  | 2 | Static check that an email address is well formed, used by the account UI. |
+| [`EmailVerificationController`](/game-api/types/global-e-h/emailverificationcontroller) | class | `LoggedInTool` | 0 | Client tool that, on login, asks the API whether the account's email is verified and shows a popup if not. |
+| [`EmailVerificationManager`](/game-api/types/global-e-h/emailverificationmanager) | class | `MonoBehaviour` | 1 | UI for the email verification popup: validates the typed address and asks the API to change the account email to it, which probably sends the verification mail. |
 | [`EmbedArguments`](/game-api/types/global-e-h/embedarguments) | class |  | 10 | Network state of an `Embeddable` item: whether it is stuck in something and where, or its scale when free. |
 | [`Embeddable`](/game-api/types/global-e-h/embeddable) | class | `NetworkEntityBehaviour`, `ISavable<EmbeddableSaveData>`, `ISavableSave<EmbeddableSaveData>`, +2 more | 14 | Lets a pointed item (arrow, knife, spear) stick into what it hits and parents it there, saved across restarts. The server decides when it embeds; clients follow a synced message. Get it with `GetComponent<Embeddable>()` on the item. |
 | [`EmbeddableEvent`](/game-api/types/global-e-h/embeddableevent) | class | `AltaEvent<Embeddable, EmbeddableUnityEvent>` | 0 | Serializable `AltaEvent` that passes an `Embeddable`, so inspector-wired listeners can react to embed events. |
-| [`EmbeddableGlobalSettings`](/game-api/types/global-e-h/embeddableglobalsettings) | class | `GlobalSettings<EmbeddableGlobalSettings>` | 2 |  |
-| [`EmbeddableRaycastProjectile`](/game-api/types/global-e-h/embeddableraycastprojectile) | class | `MonoBehaviour` | 0 |  |
-| [`EmbeddableSaveData`](/game-api/types/global-e-h/embeddablesavedata) | internal class | `NewSaveData<Embeddable, EmbeddableSaveData>` | 5 |  |
-| [`EmbeddableSaveData1`](/game-api/types/global-e-h/embeddablesavedata1) | internal class | `OldSaveData` | 2 |  |
-| [`EmbeddableUnityEvent`](/game-api/types/global-e-h/embeddableunityevent) | class | `UnityEvent<Embeddable>` | 0 |  |
+| [`EmbeddableGlobalSettings`](/game-api/types/global-e-h/embeddableglobalsettings) | class | `GlobalSettings<EmbeddableGlobalSettings>` | 2 | Global settings for embedding (such as arrows sticking into things): whether only pickups with a given tag can be embedded into. |
+| [`EmbeddableRaycastProjectile`](/game-api/types/global-e-h/embeddableraycastprojectile) | class | `MonoBehaviour` | 0 | Links a `RaycastProjectile` to an `Embeddable`, so a raycast hit makes the projectile embed where it hit. |
+| [`EmbeddableSaveData`](/game-api/types/global-e-h/embeddablesavedata) | internal class | `NewSaveData<Embeddable, EmbeddableSaveData>` | 5 | Save data (version 2) for an `Embeddable`: whether it is stuck in something and where. |
+| [`EmbeddableSaveData1`](/game-api/types/global-e-h/embeddablesavedata1) | internal class | `OldSaveData` | 2 | Old (version 1) save data for an `Embeddable`. |
+| [`EmbeddableUnityEvent`](/game-api/types/global-e-h/embeddableunityevent) | class | `UnityEvent<Embeddable>` | 0 | Serializable `UnityEvent` that passes an `Embeddable`. |
 | [`EmberComposer`](/game-api/types/global-e-h/embercomposer) | class | `PickupBasedSkill` | 4 | Skill that heats a held meltable item: while active it pours energy into the heat point nearest the hand until the whole item is hot, then fires the skill. |
-| [`EmberComposer.Create`](/game-api/types/global-e-h/embercomposer-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<EmberComposer>` | 0 |  |
-| [`EmberComposerFireEffect`](/game-api/types/global-e-h/embercomposerfireeffect) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 |  |
+| [`EmberComposer.Create`](/game-api/types/global-e-h/embercomposer-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<EmberComposer>` | 0 | Editor menu entry for creating an `EmberComposer` skill asset. |
+| [`EmberComposerFireEffect`](/game-api/types/global-e-h/embercomposerfireeffect) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 5 | Pooled fire effect used by the `EmberComposer` skill: particle systems plus a light that fades in when lit and fades out on release. |
 | [`EmissionControl`](/game-api/types/global-e-h/emissioncontrol) | class | `DelayedPooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 | Pooled effect that scales the emission rate of a set of particle systems. It turns emission off when released to the pool and back on when requested again. |
-| [`EmissionShapeControl`](/game-api/types/global-e-h/emissionshapecontrol) | class | `EmissionControl` | 1 |  |
+| [`EmissionShapeControl`](/game-api/types/global-e-h/emissionshapecontrol) | class | `EmissionControl` | 1 | `EmissionControl` that can also scale the shape radius of its particle systems. |
 | [`EmptyBehaviour`](/game-api/types/global-e-h/emptybehaviour) | class | `MonoBehaviour` | 0 | A `MonoBehaviour` with no code. Probably used as a marker or a placeholder component on prefabs. |
-| [`EmptyChildrenSerializer`](/game-api/types/global-e-h/emptychildrenserializer) | class | `ISerializeChildren` | 1 |  |
+| [`EmptyChildrenSerializer`](/game-api/types/global-e-h/emptychildrenserializer) | class | `ISerializeChildren` | 1 | `ISerializeChildren` with no children, for saving or loading an object that has none. Use the shared `Instance`. |
 | [`EmptyDockAfterTimePeriod`](/game-api/types/global-e-h/emptydockaftertimeperiod) | class | `MonoBehaviour` | 0 | [Items, interaction and damage](../items/overview.md) |
-| [`EmptyFolderContents`](/game-api/types/global-e-h/emptyfoldercontents) | class | `ScriptableObject` | 0 |  |
-| [`EmptyFolderContents.Create`](/game-api/types/global-e-h/emptyfoldercontents-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<EmptyFolderContents>` | 1 |  |
-| [`EmptyHistory<T>`](/game-api/types/global-e-h/emptyhistory-t) | class | `IHistoryManager<T>`, `IHistoryManager` | 9 |  |
-| [`EmptyJoint`](/game-api/types/global-e-h/emptyjoint) | class | `MonoBehaviour` | 2 |  |
-| [`EnableAndUnchildIfClose`](/game-api/types/global-e-h/enableandunchildifclose) | class | `MonoBehaviour`, `IDontGetRigibody` | 1 |  |
-| [`EnableLerp`](/game-api/types/global-e-h/enablelerp) | class | `MonoBehaviour` | 2 |  |
-| [`EnterLocomotionCheck`](/game-api/types/global-e-h/enterlocomotioncheck) | class | `LocomotionModifierCheck` | 3 |  |
-| [`EntitySpawnTest`](/game-api/types/global-e-h/entityspawntest) | class | `MonoBehaviour` | 0 |  |
-| [`EnumArrayAttribute`](/game-api/types/global-e-h/enumarrayattribute) | class | `PropertyAttribute` | 4 |  |
-| [`EnvironmentalPropertyBlock`](/game-api/types/global-e-h/environmentalpropertyblock) | class | `MonoBehaviour` | 2 |  |
+| [`EmptyFolderContents`](/game-api/types/global-e-h/emptyfoldercontents) | class | `ScriptableObject` | 0 | Empty asset type, probably used as a placeholder so a folder is not empty. |
+| [`EmptyFolderContents.Create`](/game-api/types/global-e-h/emptyfoldercontents-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<EmptyFolderContents>` | 1 | Editor menu entry ("Empty Folder") for creating an `EmptyFolderContents` asset. |
+| [`EmptyHistory<T>`](/game-api/types/global-e-h/emptyhistory-t) | class | `IHistoryManager<T>`, `IHistoryManager` | 9 | Undo history that stores nothing: pushes, undos and redos do nothing. Use the shared `Instance` where no history is wanted. |
+| [`EmptyJoint`](/game-api/types/global-e-h/emptyjoint) | class | `MonoBehaviour` | 2 | Added to a hand's interaction point by `PickupJoints` for the `EmptyJoint` grab type: no physical joint, it just turns off the pickup's network rigidbody while held. |
+| [`EnableAndUnchildIfClose`](/game-api/types/global-e-h/enableandunchildifclose) | class | `MonoBehaviour`, `IDontGetRigibody` | 1 | Client effect helper: when triggered near the local player, unparents and enables its object, then destroys it after a delay. |
+| [`EnableLerp`](/game-api/types/global-e-h/enablelerp) | class | `MonoBehaviour` | 2 | Animates a 0 to 1 progress value over time when switched on or off and reports it through a float event. |
+| [`EnterLocomotionCheck`](/game-api/types/global-e-h/enterlocomotioncheck) | class | `LocomotionModifierCheck` | 3 | Locomotion modifier check that runs a list of actions when a smooth-locomotion player enters or leaves its area, and can block teleporting in. |
+| [`EntitySpawnTest`](/game-api/types/global-e-h/entityspawntest) | class | `MonoBehaviour` | 0 | Debug stress test that spawns or destroys a number of copies of a network prefab every frame through its entity's spawner. |
+| [`EnumArrayAttribute`](/game-api/types/global-e-h/enumarrayattribute) | class | `PropertyAttribute` | 4 | Property attribute for an array indexed by an enum, so the inspector can label each entry with an enum name. |
+| [`EnvironmentalPropertyBlock`](/game-api/types/global-e-h/environmentalpropertyblock) | class | `MonoBehaviour` | 2 | Holds the global wind direction and raises an event when it changes. |
 | [`EnvironmentHandler`](/game-api/types/global-e-h/environmenthandler) | class | `MonoBehaviour` | 1 | Client component that blends audio environment settings (reverb) towards the current `EnvironmentNode` over time. |
 | [`EnvironmentLerp`](/game-api/types/global-e-h/environmentlerp) | class |  | 7 | Blends audio environment values (reverb) from the current settings to a target `EnvironmentNode`. Owned by `EnvironmentHandler`. |
 | [`EnvironmentLerp.Variable`](/game-api/types/global-e-h/environmentlerp-variable) | class |  | 6 | One float in an `EnvironmentLerp` that blends from a start value to a target. |
 | [`EnvironmentNode`](/game-api/types/global-e-h/environmentnode) | class | `MonoBehaviour` | 1 | Component on a chunk that can override environment audio values (only reverb so far) for that area. `ChunkBasedEnvironment` looks it up on the chunk and blends to it. |
 | [`EnvironmentNode.Variable`](/game-api/types/global-e-h/environmentnode-variable) | class |  | 1 | An optional float setting on an `EnvironmentNode` (used for reverb). It either overrides the value or falls back to a default node's value. |
 | [`EquipmentRoomAnimator`](/game-api/types/global-e-h/equipmentroomanimator) | class | `MonoBehaviour` | 2 | Plays the appear and disappear animations of the equipment customization room: boundary, dummy materialising, particles, ground and pedestal. |
-| [`ErrorTrackerSettings`](/game-api/types/global-e-h/errortrackersettings) | class | `ScriptableObject` | 2 |  |
-| [`EruptAreaAttack`](/game-api/types/global-e-h/eruptareaattack) | class | `NetworkEntityBehaviour` | 2 |  |
+| [`ErrorTrackerSettings`](/game-api/types/global-e-h/errortrackersettings) | class | `ScriptableObject` | 2 | Settings asset for how the editor reports logged errors. |
+| [`EruptAreaAttack`](/game-api/types/global-e-h/eruptareaattack) | class | `NetworkEntityBehaviour` | 2 | Networked creature attack that makes an object erupt from the ground near the agent's target. The server picks the spot and syncs it to clients. |
 | [`EvaluateWielder`](/game-api/types/global-e-h/evaluatewielder) | delegate |  | 0 | Delegate that reports who is wielding something, as a network entity and, if it is a player, their `PlayerController`. |
-| [`EventAtPosition`](/game-api/types/global-e-h/eventatposition) | class | `MonoBehaviour` | 1 |  |
-| [`ExampleEventPlayer`](/game-api/types/global-e-h/exampleeventplayer) | class | `MonoBehaviour` | 0 |  |
+| [`EventAtPosition`](/game-api/types/global-e-h/eventatposition) | class | `MonoBehaviour` | 1 | Fires a transform event with its own transform, so wiring can spawn something at this object's position. |
+| [`ExampleEventPlayer`](/game-api/types/global-e-h/exampleeventplayer) | class | `MonoBehaviour` | 0 | Test component that, once enabled, fires one of two events at random every two seconds, forever. |
 | [`ExperienceFillVisualizer`](/game-api/types/global-e-h/experiencefillvisualizer) | class | `SkillShrineVisualizer` | 8 | Skill shrine visual that fills with a player's XP toward the next level on one path, and animates buying and selling skills. The server sends the values; clients animate. |
-| [`ExplosionRadius`](/game-api/types/global-e-h/explosionradius) | class | `MonoBehaviour` | 0 |  |
-| [`Explosive`](/game-api/types/global-e-h/explosive) | class | `NetworkEntityBehaviour` | 4 |  |
-| [`ExposedScriptableObjectAttribute`](/game-api/types/global-e-h/exposedscriptableobjectattribute) | class | `PropertyAttribute` | 0 |  |
-| [`ExposurePlayerScreenFader`](/game-api/types/global-e-h/exposureplayerscreenfader) | class | `PlayerScreenFader` | 1 |  |
+| [`ExplosionRadius`](/game-api/types/global-e-h/explosionradius) | class | `MonoBehaviour` | 0 | Visual for an explosion's radius: it unparents itself while enabled, follows its original parent and scales a child to the radius, destroying itself if the parent is gone. |
+| [`Explosive`](/game-api/types/global-e-h/explosive) | class | `NetworkEntityBehaviour` | 4 | Networked explosion: when triggered, the server damages health objects and impact detectors in range with linear falloff and can push rigidbodies; the effect plays on every client. |
+| [`ExposedScriptableObjectAttribute`](/game-api/types/global-e-h/exposedscriptableobjectattribute) | class | `PropertyAttribute` | 0 | Property attribute with no fields, probably telling the inspector to show a referenced ScriptableObject's fields inline. |
+| [`ExposurePlayerScreenFader`](/game-api/types/global-e-h/exposureplayerscreenfader) | class | `PlayerScreenFader` | 1 | Client screen fader that fades to black by lowering post-process exposure, and shortens the camera far plane while fully dark. Also does camera-flash effects. |
 | [`ExtraArrowUpdater`](/game-api/types/global-e-h/extraarrowupdater) | class | `NetworkEntityBehaviour` | 6 | Bow component that spawns extra arrows next to the knocked one, keeps them lined up while the string is drawn, and fires them with the main shot. Used by the multi-arrow and light beam skills; the server spawns and syncs the arrows. |
 | [`ExtraArrowUpdater.ExtraArrowData`](/game-api/types/global-e-h/extraarrowupdater-extraarrowdata) | class |  | 3 | One extra arrow nocked on a bow alongside the main arrow (multi-shot), with its offset and colliders. Synced from the server by `ExtraArrowUpdater`. |
 
@@ -97,140 +97,140 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`FaceObject`](/game-api/types/global-e-h/faceobject) | class | `MonoBehaviour` | 0 |  |
-| [`Facts`](/game-api/types/global-e-h/facts) | class |  | 1 |  |
+| [`FaceObject`](/game-api/types/global-e-h/faceobject) | class | `MonoBehaviour` | 0 | Rotates parts around an axis to follow the average position of the hands holding linked pickups, like a crank or lever. Looks like test code: it spawns a stray sphere in `Start`. |
+| [`Facts`](/game-api/types/global-e-h/facts) | class |  | 1 | Serializable holder for a hard-coded list of 167 trivia strings. Nothing else in the decompiled code references it. |
 | [`FadeInOutBase`](/game-api/types/global-e-h/fadeinoutbase) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 4 | Base for objects that fade out using a `_Progress` shader value, or by spawning pooled mesh fader effects in their place. Does nothing on a headless server. |
-| [`FadeInOutNetworkEntity`](/game-api/types/global-e-h/fadeinoutnetworkentity) | class | `PracticeAreaShrinkFader` | 1 |  |
-| [`FakeHostController`](/game-api/types/global-e-h/fakehostcontroller) | class | `IServerHostController` | 7 |  |
+| [`FadeInOutNetworkEntity`](/game-api/types/global-e-h/fadeinoutnetworkentity) | class | `PracticeAreaShrinkFader` | 1 | Fader for a network entity: when the scene destroys the entity (not on chunk unload), it spawns the fade-out effect for its meshes. Client only; does nothing on a headless server. |
+| [`FakeHostController`](/game-api/types/global-e-h/fakehostcontroller) | class | `IServerHostController` | 7 | Do-nothing `IServerHostController`, bound as the singleton in `ApplicationLifetimeScope`. Reports itself as an offline server and every method is a no-op. |
 | [`FakePickup`](/game-api/types/global-e-h/fakepickup) | class | `Interactable` | 8 | [Items, interaction and damage](../items/overview.md): An `Interactable` that looks like a pickup but isn't one. |
-| [`FakePlayerControllerMultiLockModel`](/game-api/types/global-e-h/fakeplayercontrollermultilockmodel) | class | `IPlayerControllerMultiLockModel` | 3 |  |
+| [`FakePlayerControllerMultiLockModel`](/game-api/types/global-e-h/fakeplayercontrollermultilockmodel) | class | `IPlayerControllerMultiLockModel` | 3 | Do-nothing `IPlayerControllerMultiLockModel` that is never locked. `PlayerControllerLifetimeScope` binds it in some setups instead of the real lock model. |
 | [`FakePlayerHealth`](/game-api/types/global-e-h/fakeplayerhealth) | class | `HealthObject` | 2 | [Items, interaction and damage](../items/overview.md): A `HealthObject` for training targets. |
-| [`FakePlayerHelper`](/game-api/types/global-e-h/fakeplayerhelper) | class | `MonoBehaviour` | 0 |  |
-| [`FallbackCamera`](/game-api/types/global-e-h/fallbackcamera) | class | `SingletonBehaviour<FallbackCamera>` | 1 |  |
-| [`FarAwayController`](/game-api/types/global-e-h/farawaycontroller) | class | `NetworkEntityBehaviour` | 4 |  |
-| [`FaucetHandle`](/game-api/types/global-e-h/faucethandle) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`FakePlayerHelper`](/game-api/types/global-e-h/fakeplayerhelper) | class | `MonoBehaviour` | 0 | Editor debug helper on a `Player`: chunks dropped into its lists in the Inspector during play get the player added to or removed from their player lists. |
+| [`FallbackCamera`](/game-api/types/global-e-h/fallbackcamera) | class | `SingletonBehaviour<FallbackCamera>` | 1 | Black, lowest-depth camera that switches on whenever there is no current `PlayerController`, so the screen is not left without a camera. A `DontDestroyOnLoad` singleton made by `PlayerController`. |
+| [`FarAwayController`](/game-api/types/global-e-h/farawaycontroller) | class | `NetworkEntityBehaviour` | 4 | Shows markers for nearby players whose player controllers a client has not loaded. On a simple server it sends each player the chunk and head position of the other players within range; clients draw a marker prefab at those spots. |
+| [`FaucetHandle`](/game-api/types/global-e-h/faucethandle) | class | `NetworkEntityBehaviour` | 4 | Twistable handle that turns around its local Z axis while a player holds its pickup, and reports a 0 to 1 value through `onValueChanged`. The angle is only synced to players when they join. |
 | [`FauxRigidbody`](/game-api/types/global-e-h/fauxrigidbody) | class |  | 5 | Moves a transform by a velocity and angular velocity each time `Update` is called, without physics. Also has a helper to work out acceleration toward a point. |
 | [`Feather`](/game-api/types/global-e-h/feather) | class | `MonoBehaviour` | 1 | Component on a feather model that points at its bottom part. `DummyArrow` copies that part onto arrows. |
-| [`FestiveFeature`](/game-api/types/global-e-h/festivefeature) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable`, +3 more | 0 |  |
+| [`FestiveFeature`](/game-api/types/global-e-h/festivefeature) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable`, +3 more | 0 | Turns components and child objects on or off while a `Festivity` is active, for seasonal decorations. Runs on each side from the festivity's synced state. |
 | [`Festivity`](/game-api/types/global-e-h/festivity) | class | `HashedGeneralValue<Festivity>` | 5 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
-| [`Festivity.Create`](/game-api/types/global-e-h/festivity-create) | class | `AltaMenuItemBase.Assets.Create.Township.Meta.ScriptableObject<Festivity>` | 0 |  |
-| [`FestivityCommandModule`](/game-api/types/global-e-h/festivitycommandmodule) | class |  | 0 |  |
-| [`FestivityManager`](/game-api/types/global-e-h/festivitymanager) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`Festivity.Create`](/game-api/types/global-e-h/festivity-create) | class | `AltaMenuItemBase.Assets.Create.Township.Meta.ScriptableObject<Festivity>` | 0 | Editor menu entry for creating a `Festivity` asset. |
+| [`FestivityCommandModule`](/game-api/types/global-e-h/festivitycommandmodule) | class |  | 0 | Console module `festivities` for listing, inspecting, starting and stopping festivities. Calls the scene's `FestivityManager`. |
+| [`FestivityManager`](/game-api/types/global-e-h/festivitymanager) | class | `NetworkEntityBehaviour` | 4 | Network entity that turns festivities on and off by the real date and syncs their state to players. The server checks dates; clients only receive. |
 | [`Filter`](/game-api/types/global-e-h/filter) | delegate |  | 0 | Delegate for a veto check: handlers set `isVaild` to false to block something. Used by `PumpingMechanism.CanPump`. |
 | [`FingerTipSettings`](/game-api/types/global-e-h/fingertipsettings) | class |  | 2 | Per-character setup of each hand's index finger tip transform and hand triangle. Used by `PlayerCharacter` and `CharacterDummy`. |
-| [`FinishSpawnProjectTask`](/game-api/types/global-e-h/finishspawnprojecttask) | class | `CustomArgumentGameAction<FinishSpawnProjectTaskArgument>` | 1 |  |
+| [`FinishSpawnProjectTask`](/game-api/types/global-e-h/finishspawnprojecttask) | class | `CustomArgumentGameAction<FinishSpawnProjectTaskArgument>` | 1 | Game task action that counts finishing a spawn project for one target prefab. Asset made from the Game Tasks menu. |
 | [`FinishSpawnProjectTaskArgument`](/game-api/types/global-e-h/finishspawnprojecttaskargument) | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md) |
-| [`FireLogic`](/game-api/types/global-e-h/firelogic) | class | `MonoBehaviour`, `ISavable<FireLogicSaveData>`, `ISavableSave<FireLogicSaveData>`, +1 more | 1 |  |
-| [`FireLogicSaveData`](/game-api/types/global-e-h/firelogicsavedata) | class | `NewSaveData<FireLogic, FireLogicSaveData>` | 1 |  |
-| [`FireParticleDivergence`](/game-api/types/global-e-h/fireparticledivergence) | class | `MonoBehaviour` | 0 |  |
-| [`FixMod`](/game-api/types/global-e-h/fixmod) | class | `ModBase` | 1 |  |
-| [`FlagAnimationManager`](/game-api/types/global-e-h/flaganimationmanager) | class | `NetworkEntityBehaviour` | 3 |  |
-| [`FlattenAndCleanEmptyAtBakeTime`](/game-api/types/global-e-h/flattenandcleanemptyatbaketime) | class | `BuildRendererBakeable` | 2 |  |
-| [`FlintSpark`](/game-api/types/global-e-h/flintspark) | class | `PooledObject`, `IImpactEffect` | 2 |  |
+| [`FireLogic`](/game-api/types/global-e-h/firelogic) | class | `MonoBehaviour`, `ISavable<FireLogicSaveData>`, `ISavableSave<FireLogicSaveData>`, +1 more | 1 | Lets a logic signal light or put out a `Fire`, and reports the fire's on/off state as a bool event. Saved with the object. |
+| [`FireLogicSaveData`](/game-api/types/global-e-h/firelogicsavedata) | class | `NewSaveData<FireLogic, FireLogicSaveData>` | 1 | Save data for `FireLogic`. |
+| [`FireParticleDivergence`](/game-api/types/global-e-h/fireparticledivergence) | class | `MonoBehaviour` | 0 | Pushes fire particles sideways and shortens their life when they enter the particle system's first trigger collider, so flames part around an object. |
+| [`FixMod`](/game-api/types/global-e-h/fixmod) | class | `ModBase` | 1 | Empty `ModBase` named "Empty Mod" that does nothing on start or stop. |
+| [`FlagAnimationManager`](/game-api/types/global-e-h/flaganimationmanager) | class | `NetworkEntityBehaviour` | 3 | Raises or lowers a flag by setting the animator's `Active` bool from an index. Network entity behaviour, but the state is not synced or saved here. |
+| [`FlattenAndCleanEmptyAtBakeTime`](/game-api/types/global-e-h/flattenandcleanemptyatbaketime) | class | `BuildRendererBakeable` | 2 | Build step that flattens a prefab's hierarchy: children move up to this root and empty transforms are deleted. Runs late (order 100). |
+| [`FlintSpark`](/game-api/types/global-e-h/flintspark) | class | `PooledObject`, `IImpactEffect` | 2 | Pooled spark light effect for flint strikes. Fades the light over its duration, then returns to the pool. Client visual. |
 | [`FloatEvent`](/game-api/types/global-e-h/floatevent) | class | `AltaEvent<float, FloatUnityEvent>` | 0 | A serializable `AltaEvent` carrying a `float`, for wiring in the inspector. |
-| [`FloatModifier`](/game-api/types/global-e-h/floatmodifier) | abstract class | `MonoBehaviour` | 1 |  |
+| [`FloatModifier`](/game-api/types/global-e-h/floatmodifier) | abstract class | `MonoBehaviour` | 1 | Base for components that take a float, change it and pass it on through a float event. Subclasses include `LerpModifier` and `MoveTowardsModifier`. |
 | [`FloatUnityEvent`](/game-api/types/global-e-h/floatunityevent) | class | `UnityEvent<float>` | 0 | Serializable `UnityEvent` with a float argument, so float events can be wired in the inspector. |
-| [`FlyCamDeviceController`](/game-api/types/global-e-h/flycamdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
-| [`FlyCamDeviceLifecycle`](/game-api/types/global-e-h/flycamdevicelifecycle) | class | `DeviceLifecycle` | 1 |  |
-| [`FlyCamHands`](/game-api/types/global-e-h/flycamhands) | class | `ControllerExtension` | 2 |  |
+| [`FlyCamDeviceController`](/game-api/types/global-e-h/flycamdevicecontroller) | class | `XrDeviceSdkController` | 4 | Device controller for the fly cam (spectator) player mode. Creates the fly cam's device lifecycle and keyboard/mouse/gamepad input controller. |
+| [`FlyCamDeviceLifecycle`](/game-api/types/global-e-h/flycamdevicelifecycle) | class | `DeviceLifecycle` | 1 | Device lifecycle for the fly cam. Adds nothing to the base `DeviceLifecycle`. |
+| [`FlyCamHands`](/game-api/types/global-e-h/flycamhands) | class | `ControllerExtension` | 2 | Controller extension on the fly cam's hands: sparks or explosions, invisibility toggle and mic mute shortcuts. Actions are synced so other players see them. |
 | [`FlyCamInput`](/game-api/types/global-e-h/flycaminput) | class | `IInputActionCollection2`, `IInputActionCollection`, `IEnumerable<InputAction>`, +2 more | 14 | Generated Unity Input System wrapper for the fly cam (spectator camera) controls, with a single `Playing` action map (move, look, elevation, sensitivity, show names, mute and so on). Client only. |
 | [`FlyCamInput.IPlayingActions`](/game-api/types/global-e-h/flycaminput-iplayingactions) | interface |  | 13 | Callbacks for the fly camera's "Playing" input action map (generated by Unity's Input System). Pass an implementation to `SetCallbacks`. Nothing in the game code implements it. |
 | [`FlyCamInput.PlayingActions`](/game-api/types/global-e-h/flycaminput-playingactions) | struct |  | 19 | The fly cam's generated input action map. Keyboard, mouse and gamepad bindings for moving, looking and fly cam toggles. |
-| [`FlyCamInputController`](/game-api/types/global-e-h/flycaminputcontroller) | class | `DeviceInputController` | 2 |  |
-| [`FlyCamLocomotionController`](/game-api/types/global-e-h/flycamlocomotioncontroller) | class | `LocomotionController` | 2 |  |
+| [`FlyCamInputController`](/game-api/types/global-e-h/flycaminputcontroller) | class | `DeviceInputController` | 2 | Fly cam hand input: places each hand in front of the camera and maps grab to mouse buttons or gamepad triggers. |
+| [`FlyCamLocomotionController`](/game-api/types/global-e-h/flycamlocomotioncontroller) | class | `LocomotionController` | 2 | Moves the fly cam from keyboard, mouse and gamepad, with optional cinematic smoothing, and handles its hotkeys. Movement runs on the local player and is streamed. |
 | [`FlyCamPlayer`](/game-api/types/global-e-h/flycamplayer) | class | `PlayerController`, `INetworkEntityBehaviour` | 15 | A keyboard-and-mouse fly camera that acts as a player controller (for spectating or filming). It can hide itself from other players. |
-| [`FogAnimator`](/game-api/types/global-e-h/foganimator) | class | `MonoBehaviour` | 3 |  |
-| [`FollowCamera`](/game-api/types/global-e-h/followcamera) | class | `MonoBehaviour` | 0 |  |
-| [`FoodProcesser`](/game-api/types/global-e-h/foodprocesser) | class | `MonoBehaviour` | 0 |  |
-| [`ForcedAtlasDefinition`](/game-api/types/global-e-h/forcedatlasdefinition) | class | `BuildRendererBakeable` | 1 |  |
-| [`ForcedChunking`](/game-api/types/global-e-h/forcedchunking) | class | `MonoBehaviour`, `IDestroyOnBake` | 1 |  |
-| [`ForceLoadChunk`](/game-api/types/global-e-h/forceloadchunk) | class | `MonoBehaviour` | 0 |  |
+| [`FogAnimator`](/game-api/types/global-e-h/foganimator) | class | `MonoBehaviour` | 3 | Drives the scene's fog density, fog colour and skybox fade from its own fields every frame, and restores the originals when disabled. Works in edit mode. |
+| [`FollowCamera`](/game-api/types/global-e-h/followcamera) | class | `MonoBehaviour` | 0 | Debug camera that slowly orbits a group of transforms and zooms to keep them in frame. Arrow keys change the focus target. |
+| [`FoodProcesser`](/game-api/types/global-e-h/foodprocesser) | class | `MonoBehaviour` | 0 | Empty component with no code. |
+| [`ForcedAtlasDefinition`](/game-api/types/global-e-h/forcedatlasdefinition) | class | `BuildRendererBakeable` | 1 | Build step that applies a fixed atlas definition to every renderer under this object. |
+| [`ForcedChunking`](/game-api/types/global-e-h/forcedchunking) | class | `MonoBehaviour`, `IDestroyOnBake` | 1 | Bake-time marker that is destroyed on bake. Nothing in this build reads it. |
+| [`ForceLoadChunk`](/game-api/types/global-e-h/forceloadchunk) | class | `MonoBehaviour` | 0 | Keeps a chunk force loaded while this component is enabled. It disables itself on `Awake`, so something must enable it. |
 | [`ForestBiome`](/game-api/types/global-e-h/forestbiome) | class | `HashedGeneralValue<ForestBiome>` | 11 | A forest generation biome asset, with weighting and noise settings used to score which biome wins at a point. Looked up by hash like other `HashedGeneralValue` assets. |
-| [`ForestBiome.Create`](/game-api/types/global-e-h/forestbiome-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ForestBiome>` | 0 |  |
-| [`ForestChunk`](/game-api/types/global-e-h/forestchunk) | class | `MonoBehaviour`, `IProceduralGenerationStreamer` | 3 |  |
-| [`ForestNodeMapSpawnData`](/game-api/types/global-e-h/forestnodemapspawndata) | class | `SpawnData` | 4 |  |
+| [`ForestBiome.Create`](/game-api/types/global-e-h/forestbiome-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ForestBiome>` | 0 | Editor menu entry for creating a `ForestBiome` asset. |
+| [`ForestChunk`](/game-api/types/global-e-h/forestchunk) | class | `MonoBehaviour`, `IProceduralGenerationStreamer` | 3 | Streams procedural forests for a `LocationChunk`: asks each overlapping `ForestGenerator` for static and dynamic content as the chunk loads and unloads. |
+| [`ForestNodeMapSpawnData`](/game-api/types/global-e-h/forestnodemapspawndata) | class | `SpawnData` | 4 | Spawn data for objects placed by forest generation on a node or edge of the forest map. Takes its attributes from that node or edge. |
 | [`ForgedHitEffectOverride`](/game-api/types/global-e-h/forgedhiteffectoverride) | class |  | 5 | Per-tool override for forging hit effects and the heat a hit adds. Heart call skills register one against a tool entity, and `ForgedModel` checks it on each hit. |
-| [`ForgedPointCollectionSaveData`](/game-api/types/global-e-h/forgedpointcollectionsavedata) | class | `ChildSyncableCollectionSaveData<ForgedPointCollectionSaveData, ForgedPointCollection, ForgedPointCollectionSaveData.Element>` | 0 |  |
-| [`ForgedPointCollectionSaveData.Element`](/game-api/types/global-e-h/forgedpointcollectionsavedata-element) | class |  | 1 |  |
-| [`ForgingHeartCall`](/game-api/types/global-e-h/forgingheartcall) | class | `HeartCall` | 1 |  |
-| [`ForgingHeartCall.Create`](/game-api/types/global-e-h/forgingheartcall-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<ForgingHeartCall>` | 0 |  |
-| [`ForgingHeartCallModifier`](/game-api/types/global-e-h/forgingheartcallmodifier) | class | `PickupBasedSkillModifier`, `IHeartCallModifier` | 0 |  |
-| [`FPSCounter`](/game-api/types/global-e-h/fpscounter) | class | `MonoBehaviour` | 2 |  |
-| [`FPSLogger`](/game-api/types/global-e-h/fpslogger) | static class |  | 2 |  |
-| [`FrequencyLimiter`](/game-api/types/global-e-h/frequencylimiter) | class | `MonoBehaviour` | 1 |  |
-| [`FriendRequestToken`](/game-api/types/global-e-h/friendrequesttoken) | class | `ActionItem` | 2 |  |
+| [`ForgedPointCollectionSaveData`](/game-api/types/global-e-h/forgedpointcollectionsavedata) | class | `ChildSyncableCollectionSaveData<ForgedPointCollectionSaveData, ForgedPointCollection, ForgedPointCollectionSaveData.Element>` | 0 | Save data for a `ForgedPointCollection`, one element per forged point. |
+| [`ForgedPointCollectionSaveData.Element`](/game-api/types/global-e-h/forgedpointcollectionsavedata-element) | class |  | 1 | Saved state of one forged point. |
+| [`ForgingHeartCall`](/game-api/types/global-e-h/forgingheartcall) | class | `HeartCall` | 1 | Heart Call skill variant that also swaps the tool's forged hit effect while the skill is active. |
+| [`ForgingHeartCall.Create`](/game-api/types/global-e-h/forgingheartcall-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<ForgingHeartCall>` | 0 | Editor menu entry for creating a `ForgingHeartCall` asset. |
+| [`ForgingHeartCallModifier`](/game-api/types/global-e-h/forgingheartcallmodifier) | class | `PickupBasedSkillModifier`, `IHeartCallModifier` | 0 | Skill modifier that adds a forging hit effect and damage multiplier to Heart Call hits. |
+| [`FPSCounter`](/game-api/types/global-e-h/fpscounter) | class | `MonoBehaviour` | 2 | Measures frame rate as a smoothed average each frame and exposes it statically. Server diagnostics, the frame limiter and physics timing read it. |
+| [`FPSLogger`](/game-api/types/global-e-h/fpslogger) | static class |  | 2 | Holds the NLog logger named "FPSLogger" for frame rate logging. |
+| [`FrequencyLimiter`](/game-api/types/global-e-h/frequencylimiter) | class | `MonoBehaviour` | 1 | Passes an event on at most once per interval. Call `Invoke` as often as you like. |
+| [`FriendRequestToken`](/game-api/types/global-e-h/friendrequesttoken) | class | `ActionItem` | 2 | A player's friend token: hand it to another player and, if both sides report the handover within 2 seconds, the server sends a friend request through the API. Not saved. |
 | [`FriendSelector`](/game-api/types/global-e-h/friendselector) | class | `NetworkEntityBehaviour`, `IProvideEnumerable<string>` | 5 | Networked scroller for picking one of a player's friends. Syncs the list as user IDs, and each client keeps only the ones in its own friends list. `SetPlayer` is empty in this build, so nothing fills the list. |
 | [`FriendshipManager`](/game-api/types/global-e-h/friendshipmanager) | class |  | 17 | Each `Player` has one. Holds that player's friend list, and on the client, whether that player is a friend of the local player. Data comes from the Alta social API. |
-| [`FromPlayingToCustomization`](/game-api/types/global-e-h/fromplayingtocustomization) | class | `NetworkEntityBehaviour` | 2 |  |
+| [`FromPlayingToCustomization`](/game-api/types/global-e-h/fromplayingtocustomization) | class | `NetworkEntityBehaviour` | 2 | Sends a player from the game back to character customization, after a fade to black. Clients ask the server, which runs the transition. |
 | [`Fuel`](/game-api/types/global-e-h/fuel) | class | `ItemComponent` | 8 | [Heat](../game-systems/heat.md#fuel): On an `Item`, so it's per item type, not per object. |
 | [`FunctionKeyDefinition`](/game-api/types/global-e-h/functionkeydefinition) | class |  | 8 | Inspector entry that binds a keyboard key to a `UnityEvent`, with an optional on-screen key visual. |
 | [`Fuse`](/game-api/types/global-e-h/fuse) | class | `NetworkEntityBehaviour`, `ISavable<FuseSaveData>`, `ISavableSave<FuseSaveData>`, +3 more | 13 | [Other systems](../game-systems/other-systems.md#fuse): Burns down over `fuseTime` once lit, then raises `finishedOnServer` (explosives use this). An `IFlammable`, so fires and sparks can light it. |
 | [`Fuse.DockSettings`](/game-api/types/global-e-h/fuse-docksettings) | enum |  | 3 | How a lit fuse limits docking: `Default` does nothing, `Single` blocks docks that already hold something and blocks the dock it sits in, `Blocked` stops all docking while lit. |
-| [`FuseSaveData`](/game-api/types/global-e-h/fusesavedata) | internal class | `NewSaveData<Fuse, FuseSaveData>` | 3 |  |
+| [`FuseSaveData`](/game-api/types/global-e-h/fusesavedata) | internal class | `NewSaveData<Fuse, FuseSaveData>` | 3 | Save data for a `Fuse`. |
 
 ## G
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`GachaHandle`](/game-api/types/global-e-h/gachahandle) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`GachaHandle`](/game-api/types/global-e-h/gachahandle) | class | `NetworkEntityBehaviour` | 4 | A crank or lever handle turned by grabbing it. Turning past a threshold fires `onActivated`; let go and it springs back. Rotation runs locally for the holder. |
 | [`GameAchievement`](/game-api/types/global-e-h/gameachievement) | class | `PlayerProgressFlag` | 9 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
-| [`GameAchievementSettings`](/game-api/types/global-e-h/gameachievementsettings) | class | `GlobalSettings<GameAchievementSettings>` | 5 |  |
+| [`GameAchievementSettings`](/game-api/types/global-e-h/gameachievementsettings) | class | `GlobalSettings<GameAchievementSettings>` | 5 | Global settings for achievements: the earned popup and the stats used for built-in achievements. Get it with `GlobalSettings<GameAchievementSettings>.Instance`. |
 | [`GameAction`](/game-api/types/global-e-h/gameaction) | abstract class | `HashedGeneralValue<GameAction>` | 10 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
 | [`GameActionChannel`](/game-api/types/global-e-h/gameactionchannel) | enum |  | 10 | Channel a game action is filed under, such as destroying, crafting, repairing, docking, spawning, transferring or eating. |
 | [`GameActionStat`](/game-api/types/global-e-h/gameactionstat) | class | `GameAction` | 2 | A general-purpose game action asset on the General channel that accepts any argument. Used for plain stat-counting actions. |
 | [`GameMode`](/game-api/types/global-e-h/gamemode) | abstract class |  | 6 | [Server lifecycle](../networking/server-lifecycle.md): Abstract base: `IsClient`, `IsServer`, `ActivateAsync()`, `StopModeAsync`. Subclasses: `ServerHostingGameMode`, `JoinedServerGameMode`, `LocalTestGameMode`. |
 | [`GameModeManager`](/game-api/types/global-e-h/gamemodemanager) | static class |  | 8 | [Server lifecycle](../networking/server-lifecycle.md): `CurrentMode`, `CurrentGameServerInfo`, `StartServer`, `JoinServer`, `StartLocalTest`, `StopCurrentModeAsync`, event `ModeChanged`. |
-| [`GameSceneVisuals`](/game-api/types/global-e-h/gamescenevisuals) | class | `MonoBehaviour` | 1 |  |
-| [`GameServerInfoExtensions`](/game-api/types/global-e-h/gameserverinfoextensions) | static class |  | 3 |  |
+| [`GameSceneVisuals`](/game-api/types/global-e-h/gamescenevisuals) | class | `MonoBehaviour` | 1 | Turns a scene's terrain and a list of objects on or off together. |
+| [`GameServerInfoExtensions`](/game-api/types/global-e-h/gameserverinfoextensions) | static class |  | 3 | Extension methods on `GameServerInfo` for joining a server and naming its save folder. |
 | [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument) | class |  | 3 | Describes one action a player did, reported to `GameTaskManager` to update `GameAction` counts. Subclasses add details and pick a channel. |
 | [`GameTaskManager`](/game-api/types/global-e-h/gametaskmanager) | class | `NetworkEntityBehaviour`, `IAutoSave` | 14 | [Other systems](../game-systems/other-systems.md#gametaskmanager): The singleton behind achievements, action stats and micro tutorial flags. `static GameTaskManager Instance`. |
 | [`GameTimeManager`](/game-api/types/global-e-h/gametimemanager) | class | `NetworkEntityBehaviour`, `ISavable<GameTimeManagerSaveData>`, `ISavableSave<GameTimeManagerSaveData>`, +1 more | 22 | [Time and environment](../world/time-and-environment.md#gametimemanager): A scene `NetworkEntityBehaviour`. `public static GameTimeManager Instance` (a field). |
 | [`GameTimeManager.TimeName`](/game-api/types/global-e-h/gametimemanager-timename) | class |  | 2 | A named time of day, such as a keyword for the time command. `GameTimeManager.UpdateTimeByKeyWord` rushes to its time. |
-| [`GameTimeManagerSaveData`](/game-api/types/global-e-h/gametimemanagersavedata) | internal class | `NewSaveData<GameTimeManager, GameTimeManagerSaveData>` | 1 |  |
-| [`GameTimeManagerSaveDataOld`](/game-api/types/global-e-h/gametimemanagersavedataold) | internal class | `OldSaveData` | 2 |  |
+| [`GameTimeManagerSaveData`](/game-api/types/global-e-h/gametimemanagersavedata) | internal class | `NewSaveData<GameTimeManager, GameTimeManagerSaveData>` | 1 | Save data for `GameTimeManager` (version 2). |
+| [`GameTimeManagerSaveDataOld`](/game-api/types/global-e-h/gametimemanagersavedataold) | internal class | `OldSaveData` | 2 | Version 1 save data for `GameTimeManager`, migrated on load. |
 | [`GarbageCollectTimer`](/game-api/types/global-e-h/garbagecollecttimer) | class | `MonoBehaviour` | 0 | [Server lifecycle](../networking/server-lifecycle.md): On the scene. Only runs when the process is headless: every interval it asks for a non-blocking, optimized `GC.Collect` of every generation. |
-| [`Garnisher`](/game-api/types/global-e-h/garnisher) | class | `ProfessionSkill<Garnisher>` | 0 |  |
-| [`Garnisher.Create`](/game-api/types/global-e-h/garnisher-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<Garnisher>` | 0 |  |
-| [`Gatherer`](/game-api/types/global-e-h/gatherer) | class | `PickupBasedSkill` | 3 |  |
-| [`Gatherer.Create`](/game-api/types/global-e-h/gatherer-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<Gatherer>` | 0 |  |
+| [`Garnisher`](/game-api/types/global-e-h/garnisher) | class | `ProfessionSkill<Garnisher>` | 0 | Profession skill asset with no code of its own; its behaviour comes from `ProfessionSkill`. |
+| [`Garnisher.Create`](/game-api/types/global-e-h/garnisher-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<Garnisher>` | 0 | Editor menu entry for creating a `Garnisher` skill asset. |
+| [`Gatherer`](/game-api/types/global-e-h/gatherer) | class | `PickupBasedSkill` | 3 | Skill that, when a pouch is thrown, pulls nearby loose pickups of the pouch's docked type into it after a delay. The server docks them; clients show them flying in. |
+| [`Gatherer.Create`](/game-api/types/global-e-h/gatherer-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<Gatherer>` | 0 | Editor menu entry for creating a `Gatherer` skill asset. |
 | [`GaugeProgressBar`](/game-api/types/global-e-h/gaugeprogressbar) | class | `ProgressBar` | 2 | A progress bar drawn with a gauge shader, with an extra alpha limit that hides the renderers at zero. Client side. |
-| [`Gear`](/game-api/types/global-e-h/gear) | class | `Turnable` | 3 |  |
+| [`Gear`](/game-api/types/global-e-h/gear) | class | `Turnable` | 3 | A 2D gear on a `Turnable` chain that snaps to meshing gears nearby and lines up its teeth with them. Probably an editor or prototype tool. |
 | [`GeneralInputType`](/game-api/types/global-e-h/generalinputtype) | enum |  | 21 | General player input actions not tied to a tool: grab, teleport, snap turn, menus, smooth locomotion, gestures, photo, grab assist and so on. |
 | [`GeneratablePart`](/game-api/types/global-e-h/generatablepart) | abstract class | `MonoBehaviour` | 2 | Base for parts of a `GenerationCore` (a procedurally placed static piece) that adjust or add to it when it generates, such as aligning to a path or the terrain slope. |
 | [`GeneratedPageProvider<T>`](/game-api/types/global-e-h/generatedpageprovider-t) | abstract class | `PageProvider` | 3 | Base for a page provider that builds a page from a hashed asset (for example an effect or recipe), saving only the asset's hash. |
-| [`GeneratedPageSettings`](/game-api/types/global-e-h/generatedpagesettings) | class | `GlobalSettings<GeneratedPageSettings>` | 5 |  |
-| [`GeneratedPageSettings.Create`](/game-api/types/global-e-h/generatedpagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<GeneratedPageSettings>` | 0 |  |
+| [`GeneratedPageSettings`](/game-api/types/global-e-h/generatedpagesettings) | class | `GlobalSettings<GeneratedPageSettings>` | 5 | Global settings with the border and segment glyphs used to draw generated pages. |
+| [`GeneratedPageSettings.Create`](/game-api/types/global-e-h/generatedpagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<GeneratedPageSettings>` | 0 | Editor menu entry for creating the `GeneratedPageSettings` asset. |
 | [`GeneratedPositioning`](/game-api/types/global-e-h/generatedpositioning) | class | `ScriptableObject` | 1 | Asset that adjusts a generated object's position and rotation through position and rotation modules. Used by `StaticGeneration` and `StaticDynamicSpawner`. |
-| [`GeneratedPositioning.Create`](/game-api/types/global-e-h/generatedpositioning-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<GeneratedPositioning>` | 0 |  |
+| [`GeneratedPositioning.Create`](/game-api/types/global-e-h/generatedpositioning-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<GeneratedPositioning>` | 0 | Editor menu entry for creating a `GeneratedPositioning` asset. |
 | [`GeneratedPositioning.Module`](/game-api/types/global-e-h/generatedpositioning-module) | abstract class | `ScriptableObject` | 1 | Base asset for a step that changes a generated position or rotation, such as `RandomYRotation`. |
 | [`GeneratedPositioning.PositionModule`](/game-api/types/global-e-h/generatedpositioning-positionmodule) | enum |  | 1 | Position module choices for `GeneratedPositioning`. Only `Static` (no change) exists. |
 | [`GeneratedPositioning.RotationModule`](/game-api/types/global-e-h/generatedpositioning-rotationmodule) | enum |  | 2 | Rotation module choices for `GeneratedPositioning`: `Static` or `RandomY`. |
-| [`GenerateUVPoints`](/game-api/types/global-e-h/generateuvpoints) | class | `MonoBehaviour` | 0 |  |
+| [`GenerateUVPoints`](/game-api/types/global-e-h/generateuvpoints) | class | `MonoBehaviour` | 0 | Editor tool that places empty child objects on mesh surfaces at given texture coordinates. |
 | [`GenerationCore`](/game-api/types/global-e-h/generationcore) | class | `StaticEnvironmentPieceInstance`, `IDistributionValue` | 12 | A procedural set piece (an encounter, a camp) placed by forest or cave generation. Its `GeneratablePart`s build static content first and, when the chunk is being generated, dynamic content after. |
-| [`GenerationStarter`](/game-api/types/global-e-h/generationstarter) | class | `NetworkEntityBehaviour`, `ISavable<GenerationStartSaveData>`, `ISavableSave<GenerationStartSaveData>`, +1 more | 3 |  |
-| [`GenerationStartSaveData`](/game-api/types/global-e-h/generationstartsavedata) | class | `NewSaveData<GenerationStarter, GenerationStartSaveData>` | 5 |  |
-| [`GenericCraftingRecipePageProvider`](/game-api/types/global-e-h/genericcraftingrecipepageprovider) | class | `GeneratedPageProvider<GenericCraftingRecipe>` | 5 |  |
+| [`GenerationStarter`](/game-api/types/global-e-h/generationstarter) | class | `NetworkEntityBehaviour`, `ISavable<GenerationStartSaveData>`, `ISavableSave<GenerationStartSaveData>`, +1 more | 3 | Network entity that spawns a `GenerationCore` and runs procedural generation from a saved seed. The server generates and sends the seed so clients generate the same result. |
+| [`GenerationStartSaveData`](/game-api/types/global-e-h/generationstartsavedata) | class | `NewSaveData<GenerationStarter, GenerationStartSaveData>` | 5 | Save data for a `GenerationStarter`. |
+| [`GenericCraftingRecipePageProvider`](/game-api/types/global-e-h/genericcraftingrecipepageprovider) | class | `GeneratedPageProvider<GenericCraftingRecipe>` | 5 | Page provider (ID 2) that draws a generic crafting recipe as a page: result item glyph plus one glyph and count per material. Get it with `Instance`. |
 | [`GenericCraftingRecipePageSettings`](/game-api/types/global-e-h/genericcraftingrecipepagesettings) | class | `GlobalSettings<GenericCraftingRecipePageSettings>` | 6 | Global settings for generated crafting recipe pages: the page template and where the item and material glyphs go. |
-| [`GenericCraftingRecipePageSettings.Create`](/game-api/types/global-e-h/genericcraftingrecipepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<GenericCraftingRecipePageSettings>` | 0 |  |
-| [`GenericOpenXRInputController`](/game-api/types/global-e-h/genericopenxrinputcontroller) | class | `OpenXRInputController` | 1 |  |
-| [`GenericReplacer`](/game-api/types/global-e-h/genericreplacer) | class | `NetworkEntityBehaviour` | 1 |  |
+| [`GenericCraftingRecipePageSettings.Create`](/game-api/types/global-e-h/genericcraftingrecipepagesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<GenericCraftingRecipePageSettings>` | 0 | Editor menu entry for creating the `GenericCraftingRecipePageSettings` asset. |
+| [`GenericOpenXRInputController`](/game-api/types/global-e-h/genericopenxrinputcontroller) | class | `OpenXRInputController` | 1 | OpenXR input controller for headsets with no specific mapping. Enables the generic playing action map. |
+| [`GenericReplacer`](/game-api/types/global-e-h/genericreplacer) | class | `NetworkEntityBehaviour` | 1 | Replaces this entity with another prefab at the same position and rotation. Server only; subclasses can change what happens to the old entity. |
 | [`GestureMap`](/game-api/types/global-e-h/gesturemap) | class | `ScriptableObject` | 4 | Asset that maps D-pad directions to hand gestures, plus the idle gesture. Used by `HandGestureController`. |
-| [`GestureMap.Create`](/game-api/types/global-e-h/gesturemap-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<GestureMap>` | 0 |  |
-| [`GetComponentInPrefabRootAttribute`](/game-api/types/global-e-h/getcomponentinprefabrootattribute) | class | `GetComponentAttribute` | 1 |  |
-| [`GetInteractionPlayer`](/game-api/types/global-e-h/getinteractionplayer) | class | `MonoBehaviour` | 0 |  |
-| [`GetSizeTest`](/game-api/types/global-e-h/getsizetest) | class | `MonoBehaviour` | 1 |  |
+| [`GestureMap.Create`](/game-api/types/global-e-h/gesturemap-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<GestureMap>` | 0 | Editor menu entry for creating a `GestureMap` asset. |
+| [`GetComponentInPrefabRootAttribute`](/game-api/types/global-e-h/getcomponentinprefabrootattribute) | class | `GetComponentAttribute` | 1 | Like `GetComponentAttribute`, but takes the component from the root `NetworkPrefab` object above the field's object. |
+| [`GetInteractionPlayer`](/game-api/types/global-e-h/getinteractionplayer) | class | `MonoBehaviour` | 0 | Passes the player who starts or stops using an interactable on to player events. |
+| [`GetSizeTest`](/game-api/types/global-e-h/getsizetest) | class | `MonoBehaviour` | 1 | Editor test helper that shows the size of this object's mesh bounds in the inspector. |
 | [`GhostBook`](/game-api/types/global-e-h/ghostbook) | class | `PooledObject` | 4 | Client: pooled ghost book that fades in, opens, pulls nearby auto-added pages into it, then closes and fades out. `PageAutoAddEffect` reuses an open one nearby or gets a new one. |
 | [`GhostHandSettings`](/game-api/types/global-e-h/ghosthandsettings) | class | `ScriptableObject` | 2 | Settings asset for ghost hands: whether they fade and how alpha changes with distance from the real hand. |
-| [`GhostHandSettings.Create`](/game-api/types/global-e-h/ghosthandsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<GhostHandSettings>` | 0 |  |
+| [`GhostHandSettings.Create`](/game-api/types/global-e-h/ghosthandsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<GhostHandSettings>` | 0 | Editor menu entry for creating a `GhostHandSettings` asset. |
 | [`GhostSnapChannel`](/game-api/types/global-e-h/ghostsnapchannel) | class | `ScriptableObject` | 0 | Empty asset used as a tag: a `GhostSnapObject` only snaps into a `GhostSnapSlot` that lists its channel. |
-| [`GhostSnapChannel.Create`](/game-api/types/global-e-h/ghostsnapchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<GhostSnapChannel>` | 0 |  |
+| [`GhostSnapChannel.Create`](/game-api/types/global-e-h/ghostsnapchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<GhostSnapChannel>` | 0 | Editor menu entry for creating a `GhostSnapChannel` asset. |
 | [`GhostSnapObject`](/game-api/types/global-e-h/ghostsnapobject) | class | `NetworkEntityBehaviour` | 7 | An item that shows a ghost preview at a matching `GhostSnapSlot` while held, and snaps into it when let go. The server does the snap. |
 | [`GhostSnapSlot`](/game-api/types/global-e-h/ghostsnapslot) | class | `MonoBehaviour`, `IChildSyncable<GhostSnapSlot, GhostSnapSlotCollectionSaveData.Element>`, `IChildSyncable<GhostSnapSlot>` | 6 | A slot that shows a ghost preview when a matching `GhostSnapObject` is brought near and holds it when snapped. The held object rides on this entity and saves as its child. |
-| [`GhostSnapSlotCollection`](/game-api/types/global-e-h/ghostsnapslotcollection) | class | `ChildSyncableCollection<GhostSnapSlot, GhostSnapSlotCollection, GhostSnapSlotCollectionSaveData, GhostSnapSlotCollectionSaveData.Element>` | 1 |  |
-| [`GhostSnapSlotCollectionSaveData`](/game-api/types/global-e-h/ghostsnapslotcollectionsavedata) | class | `ChildSyncableCollectionSaveData<GhostSnapSlotCollectionSaveData, GhostSnapSlotCollection, GhostSnapSlotCollectionSaveData.Element>` | 0 |  |
-| [`GhostSnapSlotCollectionSaveData.Element`](/game-api/types/global-e-h/ghostsnapslotcollectionsavedata-element) | class |  | 0 |  |
+| [`GhostSnapSlotCollection`](/game-api/types/global-e-h/ghostsnapslotcollection) | class | `ChildSyncableCollection<GhostSnapSlot, GhostSnapSlotCollection, GhostSnapSlotCollectionSaveData, GhostSnapSlotCollectionSaveData.Element>` | 1 | Synced, saved collection of `GhostSnapSlot` children. On server spawn it snaps child ghost snap objects into their slots. |
+| [`GhostSnapSlotCollectionSaveData`](/game-api/types/global-e-h/ghostsnapslotcollectionsavedata) | class | `ChildSyncableCollectionSaveData<GhostSnapSlotCollectionSaveData, GhostSnapSlotCollection, GhostSnapSlotCollectionSaveData.Element>` | 0 | Save data for a `GhostSnapSlotCollection`. Its elements hold no fields. |
+| [`GhostSnapSlotCollectionSaveData.Element`](/game-api/types/global-e-h/ghostsnapslotcollectionsavedata-element) | class |  | 0 | Empty per-slot save element for `GhostSnapSlotCollectionSaveData`. |
 | [`GizmosExtension`](/game-api/types/global-e-h/gizmosextension) | static class |  | 24 | Static helpers that draw shapes with Unity `Gizmos`, for use inside `OnDrawGizmos`. Each overload with a colour restores the previous gizmo colour. |
-| [`GlyphDisplayer`](/game-api/types/global-e-h/glyphdisplayer) | class | `PooledObject` | 4 |  |
+| [`GlyphDisplayer`](/game-api/types/global-e-h/glyphdisplayer) | class | `PooledObject` | 4 | Pooled object that shows a glyph renderer after a delay, starting its shader animation at that moment. |
 | [`GlyphPosition`](/game-api/types/global-e-h/glyphposition) | struct |  | 4 | Where a glyph goes on a page: position, rotation and scale. Used by the generated page settings. |
 | [`GrabAssistController`](/game-api/types/global-e-h/grabassistcontroller) | class |  | 8 | [Items, interaction and damage](../items/overview.md) |
 | [`GrabAssistEventData`](/game-api/types/global-e-h/grabassisteventdata) | struct |  | 4 | Data sent with `GrabAssistController.GrabAssistUpdated` each time the grab assist target is rechecked. |
@@ -239,23 +239,23 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GrabPoint`](/game-api/types/global-e-h/grabpoint) | class |  | 14 | [Grab points and hand-touch points](../items/grab-points.md#grabpoint): A plain serialized class, not a component. Runs wherever a grab is worked out (the holder's client first, then replayed elsewhere from the synced grab point). |
 | [`GrabPointArguments`](/game-api/types/global-e-h/grabpointarguments) | struct | `INetworkInteractArgument` | 7 | Network argument sent when a hand grabs a pickup. It carries the pickup ID, which grab point was used and its last position, so the other side sets up the same grip. |
 | [`GrabPointParameters`](/game-api/types/global-e-h/grabpointparameters) | class |  | 5 | Which grab point of a pickup a hand holds and where along it, so a grab can be sent over the network and reapplied. |
-| [`GravityChanger`](/game-api/types/global-e-h/gravitychanger) | class | `MonoBehaviour` | 1 |  |
-| [`GridSpawner`](/game-api/types/global-e-h/gridspawner) | class | `MonoBehaviour` | 0 |  |
+| [`GravityChanger`](/game-api/types/global-e-h/gravitychanger) | class | `MonoBehaviour` | 1 | Debug component on a player character: holding the Debug1 action on both hands raises global gravity until it is reversed, then it drops back. |
+| [`GridSpawner`](/game-api/types/global-e-h/gridspawner) | class | `MonoBehaviour` | 0 | Editor tool that places copies of objects in a 3D grid under this transform. |
 | [`GrowerComponent`](/game-api/types/global-e-h/growercomponent) | class | `NetworkEntityBehaviour`, `IGrowthStage`, `ISavable<GrowthSaveData>`, +2 more | 9 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md#growercomponent): Each stage, the private `GoToStage` rolls survival and runs the checks. |
 | [`GrowerGroup`](/game-api/types/global-e-h/growergroup) | class | `NetworkEntityBehaviour`, `ISavable<GrowerGroupSaveData>`, `ISavableSave<GrowerGroupSaveData>`, +2 more | 7 | Networked, saved group of growing items that each go through a `GrowthDefinition`'s stages, such as the potato sapling's crops. Raises events as grown pickups appear and go away. |
-| [`GrowerGroupSaveData`](/game-api/types/global-e-h/growergroupsavedata) | class | `NewSaveData<GrowerGroup, GrowerGroupSaveData>` | 1 |  |
+| [`GrowerGroupSaveData`](/game-api/types/global-e-h/growergroupsavedata) | class | `NewSaveData<GrowerGroup, GrowerGroupSaveData>` | 1 | Save data for a `GrowerGroup`: one entry per growing child. |
 | [`GrowerGroupSaveData.Item`](/game-api/types/global-e-h/growergroupsavedata-item) | class |  | 8 | Saved state of one growing item in a `GrowerGroup`. |
 | [`GrowthDefinition`](/game-api/types/global-e-h/growthdefinition) | class | `HashedGeneralValue<GrowthDefinition>` | 2 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md#growthdefinition-and-growthstage) |
 | [`GrowthItem`](/game-api/types/global-e-h/growthitem) | class |  | 21 | One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s stages on timeline timers, spawning each stage's prefab as a child. Server side. |
 | [`GrowthSaveData`](/game-api/types/global-e-h/growthsavedata) | class | `NewSaveData<GrowerComponent, GrowthSaveData>` | 8 | Save data for a `GrowerComponent`: definition, stage, start time and which child is the current stage object. |
 | [`GrowthStage`](/game-api/types/global-e-h/growthstage) | class |  | 16 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md#growthdefinition-and-growthstage) |
 | [`GrowthStageComponent`](/game-api/types/global-e-h/growthstagecomponent) | class | `NetworkEntityBehaviour`, `ISavable<GrowthStageSaveData>`, `ISavableSave<GrowthStageSaveData>`, +2 more | 9 | On a prefab spawned as a growth stage: remembers which grower, definition and stage it belongs to. |
-| [`GrowthStageSaveData`](/game-api/types/global-e-h/growthstagesavedata) | class | `NewSaveData<GrowthStageComponent, GrowthStageSaveData>` | 2 |  |
-| [`GuidedMovement`](/game-api/types/global-e-h/guidedmovement) | class | `MonoBehaviour` | 2 |  |
-| [`GymnasiumChunkResizer`](/game-api/types/global-e-h/gymnasiumchunkresizer) | class | `MonoBehaviour` | 2 |  |
-| [`GymnasiumCraftingIngredientSpawner`](/game-api/types/global-e-h/gymnasiumcraftingingredientspawner) | class | `MonoBehaviour` | 0 |  |
+| [`GrowthStageSaveData`](/game-api/types/global-e-h/growthstagesavedata) | class | `NewSaveData<GrowthStageComponent, GrowthStageSaveData>` | 2 | Save data for a `GrowthStageComponent`. |
+| [`GuidedMovement`](/game-api/types/global-e-h/guidedmovement) | class | `MonoBehaviour` | 2 | Moves this object along an `IPositionRotationPath` on the same object from a progress value, applied in fixed update by default. |
+| [`GymnasiumChunkResizer`](/game-api/types/global-e-h/gymnasiumchunkresizer) | class | `MonoBehaviour` | 2 | Editor tool for the Gymnasium test scene: rebuilds its grid of chunks as `LocationChunk`s of a set size. |
+| [`GymnasiumCraftingIngredientSpawner`](/game-api/types/global-e-h/gymnasiumcraftingingredientspawner) | class | `MonoBehaviour` | 0 | Gymnasium test helper: docking a recipe page in one dock spawns that recipe's ingredients into a row of other docks. |
 | [`GymnasiumOnDemandPrefabSpawnerData`](/game-api/types/global-e-h/gymnasiumondemandprefabspawnerdata) | class | `NewSaveData<GymnasiumOnDemandPrefabSpawner, GymnasiumOnDemandPrefabSpawnerData>` | 2 | Save data for the feature test gymnasium's on-demand prefab spawner. |
-| [`GymnasiumStaticContentSpawner`](/game-api/types/global-e-h/gymnasiumstaticcontentspawner) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 |  |
+| [`GymnasiumStaticContentSpawner`](/game-api/types/global-e-h/gymnasiumstaticcontentspawner) | class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 | Gymnasium-only component that forces `AdditionalStaticContent` to spawn in its chunks once they finish loading. It removes itself when baked into any other scene. |
 
 ## H
 
@@ -265,58 +265,58 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HandFingers`](/game-api/types/global-e-h/handfingers) | enum |  | 5 | Flags for the five fingers of a hand, one bit each. |
 | [`HandGestureController`](/game-api/types/global-e-h/handgesturecontroller) | class | `ControllerExtension`, `INetworkSerialized`, `INetworkEntityBehaviour` | 5 | Hand extension that drives the hand animator from grip and gesture input and syncs it to other players. It handles preset gestures, a gradual grip, and free finger tracking when the controller has a skeleton. |
 | [`HandGestureDefinition`](/game-api/types/global-e-h/handgesturedefinition) | class | `ScriptableObject` | 4 | A hand gesture asset (such as pointing), matched to a transition on the hand animator. All of them are loaded from `Resources/Gesture Definitions`. |
-| [`HandGestureDefinition.Create`](/game-api/types/global-e-h/handgesturedefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<HandGestureDefinition>` | 0 |  |
-| [`HandGestureTrigger`](/game-api/types/global-e-h/handgesturetrigger) | class | `MonoBehaviour` | 0 |  |
+| [`HandGestureDefinition.Create`](/game-api/types/global-e-h/handgesturedefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<HandGestureDefinition>` | 0 | Editor menu entry that creates a `HandGestureDefinition` asset. |
+| [`HandGestureTrigger`](/game-api/types/global-e-h/handgesturetrigger) | class | `MonoBehaviour` | 0 | Client: forces a hand gesture (such as a pose) on the local player's free hand while it is inside a box near this object. Destroys itself on a headless server. |
 | [`HandHandler`](/game-api/types/global-e-h/handhandler) | class |  | 14 | Client: per-hand state for smooth locomotion, with the hand's controller and its teleporter, rotator and gesture input. Get them from `SmoothLocomotion.LeftHand` and `RightHand`. |
 | [`HandHoverPoint`](/game-api/types/global-e-h/handhoverpoint) | class | `NetworkEntityBehaviour`, `IGameCondition` | 9 | [Grab points and hand-touch points](../items/grab-points.md#handhoverpoint), [Other systems](../game-systems/other-systems.md): Needs an `Interactable` on the same object. The hand tracking runs on the server and on the hovering player's client; the server decides activation. |
 | [`HandIndex`](/game-api/types/global-e-h/handindex) | enum |  | 3 | Which hand: `Left`, `Right` or `Both`. |
 | [`HandInteractor`](/game-api/types/global-e-h/handinteractor) | class | `MonoBehaviour` | 4 | Client: detects hand to hand gestures like high fives or fist bumps when two empty hands' triggers meet, and plays their effects and sound. Off on the headless server. |
 | [`HandInteractor.HandInteraction`](/game-api/types/global-e-h/handinteractor-handinteraction) | class |  | 1 | One hand to hand gesture: which hands it applies to, whether hands are open or closed, the motion direction needed, and its effects. |
 | [`HandleCommand`](/game-api/types/global-e-h/handlecommand) | delegate |  | 0 | Handler for a remote console command received by `ClientCommandHandler`: gets the raw message buffer and its length. Registered per command type with `AddHandler`. |
-| [`HandleEnchantment`](/game-api/types/global-e-h/handleenchantment) | class | `MonoBehaviour` | 0 |  |
-| [`HandleHandler`](/game-api/types/global-e-h/handlehandler) | class | `UnityEvent<float>` | 0 |  |
+| [`HandleEnchantment`](/game-api/types/global-e-h/handleenchantment) | class | `MonoBehaviour` | 0 | Empty component with no behaviour. |
+| [`HandleHandler`](/game-api/types/global-e-h/handlehandler) | class | `UnityEvent<float>` | 0 | Serializable `UnityEvent` that passes a float. |
 | [`HandleValueEvent`](/game-api/types/global-e-h/handlevalueevent) | class | `AltaEvent<float, HandleHandler>` | 0 | Serializable event with a float value and the `HandleHandler` that raised it. Used by `FaucetHandle` for value changes. |
-| [`HandOnSideStructure`](/game-api/types/global-e-h/handonsidestructure) | class | `HandPositionStructure` | 0 |  |
-| [`HandPositionInput`](/game-api/types/global-e-h/handpositioninput) | class | `ISkillInputMethod` | 3 |  |
+| [`HandOnSideStructure`](/game-api/types/global-e-h/handonsidestructure) | class | `HandPositionStructure` | 0 | Skill input asset that is active when the hands holding the item are level with the head and out to the side or behind it. |
+| [`HandPositionInput`](/game-api/types/global-e-h/handpositioninput) | class | `ISkillInputMethod` | 3 | Skill input method made by a `HandPositionStructure`: turns active after the held item stays in position long enough, and off again after `ActiveTime` out of position. |
 | [`HandPositionInputModifier`](/game-api/types/global-e-h/handpositioninputmodifier) | abstract class | `ScriptableObject` | 1 | Asset that can change the result of a `HandPositionStructure` position check, for extra conditions on hand position skills. |
 | [`HandPositionStructure`](/game-api/types/global-e-h/handpositionstructure) | abstract class | `SkillInputStructure` | 4 | Base asset for skill inputs triggered by holding a hand in a set position (such as hand to heart) for a time. Subclasses decide what counts as in position. |
 | [`HandSettings`](/game-api/types/global-e-h/handsettings) | class | `ScriptableObject` | 5 | Settings asset for player hands, read by `Hand` from the player controller's settings. |
-| [`HandSettings.Create`](/game-api/types/global-e-h/handsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<HandSettings>` | 0 |  |
-| [`HandToHeartInputStructure`](/game-api/types/global-e-h/handtoheartinputstructure) | class | `HandPositionStructure` | 0 |  |
-| [`HandToHeartInputStructure.Create`](/game-api/types/global-e-h/handtoheartinputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<HandToHeartInputStructure>` | 0 |  |
-| [`HandTouchTask`](/game-api/types/global-e-h/handtouchtask) | class | `CustomArgumentGameAction<HandTouchTaskArgument>` | 1 |  |
+| [`HandSettings.Create`](/game-api/types/global-e-h/handsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<HandSettings>` | 0 | Editor menu entry that creates a `HandSettings` asset. |
+| [`HandToHeartInputStructure`](/game-api/types/global-e-h/handtoheartinputstructure) | class | `HandPositionStructure` | 0 | Skill input asset that is active when a hand holding the item is close to the player's heart. |
+| [`HandToHeartInputStructure.Create`](/game-api/types/global-e-h/handtoheartinputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<HandToHeartInputStructure>` | 0 | Editor menu entry that creates a `HandToHeartInputStructure` asset. |
+| [`HandTouchTask`](/game-api/types/global-e-h/handtouchtask) | class | `CustomArgumentGameAction<HandTouchTaskArgument>` | 1 | Game task action that completes when a player touches one of the listed prefabs with a hand (raised by `HandHoverPoint`). |
 | [`HandTouchTaskArgument`](/game-api/types/global-e-h/handtouchtaskargument) | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md) |
 | [`HandTriangle`](/game-api/types/global-e-h/handtriangle) | class |  | 3 | Three transforms on a hand that form a triangle, used by `FingerTipSettings` to build a `WorldSpaceTriangle`. |
-| [`HashComparer`](/game-api/types/global-e-h/hashcomparer) | class | `IEqualityComparer<uint>` | 1 |  |
-| [`HashedGeneralValuesWarmer`](/game-api/types/global-e-h/hashedgeneralvalueswarmer) | class | `MonoBehaviour` | 0 |  |
+| [`HashComparer`](/game-api/types/global-e-h/hashcomparer) | class | `IEqualityComparer<uint>` | 1 | Equality comparer for `uint` hashes that returns the hash itself as the hash code. Use the shared `Instance`. |
+| [`HashedGeneralValuesWarmer`](/game-api/types/global-e-h/hashedgeneralvalueswarmer) | class | `MonoBehaviour` | 0 | Startup component that loads the hashed item, material and page collection tables and a list of prefabs over several frames, to avoid a stall later. |
 | [`HashFunction`](/game-api/types/global-e-h/hashfunction) | abstract class |  | 16 | Base for a seeded hash that turns integers into repeatable pseudo-random values. `XXHash` is the one used for cave seeds. |
 | [`HashSetAction<T>`](/game-api/types/global-e-h/hashsetaction-t) | abstract class | `CustomArgumentGameAction<T>` | 1 | Base for game task actions whose filters are sets built on first use. An empty set matches anything. |
-| [`HealthBasedDigable`](/game-api/types/global-e-h/healthbaseddigable) | class | `BasicDigable`, `ISavable<HealthBasedDigableData>`, `ISavableSave<HealthBasedDigableData>`, +1 more | 3 |  |
-| [`HealthBasedDigableData`](/game-api/types/global-e-h/healthbaseddigabledata) | class | `NewSaveData<HealthBasedDigable, HealthBasedDigableData>` | 1 |  |
-| [`HealthChannel`](/game-api/types/global-e-h/healthchannel) | class | `ScriptableObject` | 2 |  |
-| [`HealthChannel.Create`](/game-api/types/global-e-h/healthchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject<HealthChannel>` | 0 |  |
+| [`HealthBasedDigable`](/game-api/types/global-e-h/healthbaseddigable) | class | `BasicDigable`, `ISavable<HealthBasedDigableData>`, `ISavableSave<HealthBasedDigableData>`, +1 more | 3 | Diggable object (such as a dirt pile) that takes several digs to remove. Server tracks and saves its remaining health and syncs it to clients. |
+| [`HealthBasedDigableData`](/game-api/types/global-e-h/healthbaseddigabledata) | class | `NewSaveData<HealthBasedDigable, HealthBasedDigableData>` | 1 | Save data for `HealthBasedDigable`. |
+| [`HealthChannel`](/game-api/types/global-e-h/healthchannel) | class | `ScriptableObject` | 2 | Impact asset that sets how much damage a channel deals to health, or whether it kills in one hit. |
+| [`HealthChannel.Create`](/game-api/types/global-e-h/healthchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject<HealthChannel>` | 0 | Editor menu entry that creates a `HealthChannel` asset. |
 | [`HealthObject`](/game-api/types/global-e-h/healthobject) | class | `NetworkEntityBehaviour` | 22 | [Health and damage](../items/health-and-damage.md#healthobject), [Impacts and hit detection](../items/impacts.md): A `NetworkEntityBehaviour` on creatures, players, breakable things, ore and trees. `PlayerHealth` and `FakePlayerHealth` derive from it. |
 | [`HealthObject.DeathAnalytics`](/game-api/types/global-e-h/healthobject-deathanalytics) | struct |  | 4 | Analytics record of a death: who died, where, and who killed them. |
 | [`HealthObject.HealthChangedHandler`](/game-api/types/global-e-h/healthobject-healthchangedhandler) | delegate |  | 0 | Handler for `HealthObject.HealthChanged`: gets the health object, the amount changed and the damage data that caused it. |
 | [`HealthObjectEvent`](/game-api/types/global-e-h/healthobjectevent) | class | `AltaEvent<HealthObject, HealthObjectUnityEvent>` | 0 | Serializable `AltaEvent` that passes a `HealthObject`, for inspector-wired listeners. |
-| [`HealthObjectUnityEvent`](/game-api/types/global-e-h/healthobjectunityevent) | class | `UnityEvent<HealthObject>` | 0 |  |
-| [`HeartCall`](/game-api/types/global-e-h/heartcall) | class | `PickupBasedSkill` | 5 |  |
-| [`HeartCall.Create`](/game-api/types/global-e-h/heartcall-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<HeartCall>` | 0 |  |
-| [`HeatPointCollectionSaveData`](/game-api/types/global-e-h/heatpointcollectionsavedata) | class | `ChildSyncableCollectionSaveData<HeatPointCollectionSaveData, HeatPointCollection, HeatPointCollectionSaveData.Element>` | 0 |  |
-| [`HeatPointCollectionSaveData.Element`](/game-api/types/global-e-h/heatpointcollectionsavedata-element) | class |  | 1 |  |
+| [`HealthObjectUnityEvent`](/game-api/types/global-e-h/healthobjectunityevent) | class | `UnityEvent<HealthObject>` | 0 | Serializable `UnityEvent` that passes a `HealthObject`. |
+| [`HeartCall`](/game-api/types/global-e-h/heartcall) | class | `PickupBasedSkill` | 5 | Progression skill: hits on a given path from a held tool on the target channel get a damage multiplier, or are changed by registered modifiers instead. |
+| [`HeartCall.Create`](/game-api/types/global-e-h/heartcall-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<HeartCall>` | 0 | Editor menu entry that creates a `HeartCall` skill asset. |
+| [`HeatPointCollectionSaveData`](/game-api/types/global-e-h/heatpointcollectionsavedata) | class | `ChildSyncableCollectionSaveData<HeatPointCollectionSaveData, HeatPointCollection, HeatPointCollectionSaveData.Element>` | 0 | Save data for `HeatPointCollection`: one element per heat point. |
+| [`HeatPointCollectionSaveData.Element`](/game-api/types/global-e-h/heatpointcollectionsavedata-element) | class |  | 1 | Saved state of one heat point. |
 | [`HeatPointTriggerCollector`](/game-api/types/global-e-h/heatpointtriggercollector) | class | `MonoBehaviour` | 2 | Trigger helper for a temperature check skill input. Counts hot `HeatArea` colliders inside it and toggles the input active after a set time. |
-| [`HebiosEnchant`](/game-api/types/global-e-h/hebiosenchant) | class | `PickupBasedSkill` | 3 |  |
-| [`HebiosEnchant.Create`](/game-api/types/global-e-h/hebiosenchant-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<HebiosEnchant>` | 0 |  |
-| [`HeightFilter`](/game-api/types/global-e-h/heightfilter) | class | `SpawnModifierPointNormal` | 1 |  |
-| [`HeightFilter.Create`](/game-api/types/global-e-h/heightfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<HeightFilter>` | 0 |  |
-| [`HeightProgressFilter`](/game-api/types/global-e-h/heightprogressfilter) | class | `SpawnModifierPointNormal` | 1 |  |
-| [`HeightProgressFilter.Create`](/game-api/types/global-e-h/heightprogressfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<HeightProgressFilter>` | 0 |  |
+| [`HebiosEnchant`](/game-api/types/global-e-h/hebiosenchant) | class | `PickupBasedSkill` | 3 | Progression skill that raises the damage of tools on a target impact channel, by an amount set per skill level. |
+| [`HebiosEnchant.Create`](/game-api/types/global-e-h/hebiosenchant-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<HebiosEnchant>` | 0 | Editor menu entry that creates a `HebiosEnchant` skill asset. |
+| [`HeightFilter`](/game-api/types/global-e-h/heightfilter) | class | `SpawnModifierPointNormal` | 1 | Spawn modifier for generation that scales a point's weight by a curve of its world height. |
+| [`HeightFilter.Create`](/game-api/types/global-e-h/heightfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<HeightFilter>` | 0 | Editor menu entry that creates a `HeightFilter` asset. |
+| [`HeightProgressFilter`](/game-api/types/global-e-h/heightprogressfilter) | class | `SpawnModifierPointNormal` | 1 | Spawn modifier for forest generation that weights a point by its height relative to the lowest and highest nodes in its forest space. |
+| [`HeightProgressFilter.Create`](/game-api/types/global-e-h/heightprogressfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<HeightProgressFilter>` | 0 | Editor menu entry that creates a `HeightProgressFilter` asset. |
 | [`HeldPickupHandler`](/game-api/types/global-e-h/heldpickuphandler) | class |  | 13 | [Items, interaction and damage](../items/overview.md) |
-| [`HierarchyInteractionFilter`](/game-api/types/global-e-h/hierarchyinteractionfilter) | class | `MonoBehaviour` | 0 |  |
+| [`HierarchyInteractionFilter`](/game-api/types/global-e-h/hierarchyinteractionfilter) | class | `MonoBehaviour` | 0 | Stops other players from using a set of interactables while a parent item (or its crafted root) is held by someone else. |
 | [`HistoryAccess`](/game-api/types/global-e-h/historyaccess) | abstract class | `MonoBehaviour`, `IHasHistory`, `IHistoryManager` | 7 | Component front for an undo and redo history, raising bool events when undo or redo becomes possible or not, for buttons. |
-| [`HistoryManager<T>`](/game-api/types/global-e-h/historymanager-t) | class | `IHistoryManager<T>`, `IHistoryManager` | 9 |  |
+| [`HistoryManager<T>`](/game-api/types/global-e-h/historymanager-t) | class | `IHistoryManager<T>`, `IHistoryManager` | 9 | Undo and redo history in a fixed size ring buffer. The oldest action is released and dropped when it fills up. |
 | [`HitboxVisualizer`](/game-api/types/global-e-h/hitboxvisualizer) | class | `MonoBehaviour` | 0 | [Items, interaction and damage](../items/overview.md) |
-| [`HitSpawnData`](/game-api/types/global-e-h/hitspawndata) | class | `SpawnData` | 2 |  |
+| [`HitSpawnData`](/game-api/types/global-e-h/hitspawndata) | class | `SpawnData` | 2 | Spawn data that carries the impact hit which caused the spawn. |
 | [`HoverAnimator`](/game-api/types/global-e-h/hoveranimator) | class | `MonoBehaviour`, `IIgnoreForStaticFlatten`, `IDontSplit` | 2 | Bobs a set of transforms around their start positions using per-axis curves, plus any `DragTrigger` pull. Can stop and ease back to the start. |
 | [`HoverPickup`](/game-api/types/global-e-h/hoverpickup) | class | `MonoBehaviour` | 5 | [Items, interaction and damage](../items/overview.md): Floats a pickup back to a target spot when it's let go. |
-| [`HsvLerp`](/game-api/types/global-e-h/hsvlerp) | class | `MonoBehaviour` | 0 |  |
+| [`HsvLerp`](/game-api/types/global-e-h/hsvlerp) | class | `MonoBehaviour` | 0 | Editor helper that fills an array with colours blended in HSV space between two colours. |

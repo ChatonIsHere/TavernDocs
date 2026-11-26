@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.TimeSpanSerialization"
-description: "class TypeSerializationHelper.TimeSpanSerialization in Root.Township."
+description: "Serializer for TimeSpan."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.TimeSpanSerialization
 
 A **class** in `Root.Township`, no namespace.
+
+Serializer for `TimeSpan`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref TimeSpan value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref TimeSpan value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the time span. |

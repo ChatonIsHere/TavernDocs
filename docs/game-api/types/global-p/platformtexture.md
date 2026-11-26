@@ -1,6 +1,6 @@
 ---
 title: "PlatformTexture"
-description: "class PlatformTexture in Root.Township."
+description: "Asset holding Windows and Android versions of a texture."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformTexture
 
 A **class** in `Root.Township`, no namespace.
+
+Asset holding Windows and Android versions of a texture. Nothing reads its fields in this build.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `ScriptableObject`
@@ -27,9 +29,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> |
-| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidversion" /><code>{"private Texture2D androidVersion"}</code> | Texture for Android. |
+| <Link id="m-windowsversion" /><code>{"private Texture2D windowsVersion"}</code> | Texture for Windows. |
 
 </details>

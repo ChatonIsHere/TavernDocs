@@ -1,6 +1,6 @@
 ---
 title: "ServerCacheManager"
-description: "class ServerCacheManager in Root.Township."
+description: "Server version of CacheManager: loads or generates cache files in the server's cache folder, and asks clients to confirm they have downloaded a cache."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerCacheManager
 
 A **class** in `Root.Township`, no namespace.
+
+Server version of `CacheManager`: loads or generates cache files in the server's cache folder, and asks clients to confirm they have downloaded a cache.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`CacheManager`](/game-api/types/alta-world/cachemanager)
@@ -26,29 +28,29 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-generating" /><code>{"private Dictionary<string, Task> generating"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-requestedfiles" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", Queue<ValueTuple<string, uint>>> requestedFiles"}</code> |
-| <Link id="m-serverchecks" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", Dictionary<string, TaskCompletionSource<bool>>> serverChecks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generating" /><code>{"private Dictionary<string, Task> generating"}</code> | Caches being generated right now, by name. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-requestedfiles" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", Queue<ValueTuple<string, uint>>> requestedFiles"}</code> | Queue of requested files per connection. Not used in this code. |
+| <Link id="m-serverchecks" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", Dictionary<string, TaskCompletionSource<bool>>> serverChecks"}</code> | Pending cache download checks per connection and cache name. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-cleancache" /><code>{"override async Task CleanCache(string name)"}</code> |
-| <Link id="m-ensuredownloadedtoclient" /><code>{"async Task EnsureDownloadedToClient("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, string cache)"}</code> |
-| <Link id="m-getcache" /><code>{"override async Task<T> GetCache<T>(string name, Func<Task<T>> generate, Func<T> createEmpty)"}</code> |
-| <Link id="m-handlecacherequest" /><code>{"override void HandleCacheRequest("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cleancache" /><code>{"override async Task CleanCache(string name)"}</code> | Waits for any generation of the cache to finish, then deletes the file. |
+| <Link id="m-ensuredownloadedtoclient" /><code>{"async Task EnsureDownloadedToClient("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, string cache)"}</code> | Sends a `FileCacheRequest` for a cache file to a client and waits for its answer. Throws if the client fails. |
+| <Link id="m-getcache" /><code>{"override async Task<T> GetCache<T>(string name, Func<Task<T>> generate, Func<T> createEmpty)"}</code> | Reads a cache file if it exists; otherwise generates it, writes it to disk and returns it. Waits if it's already generating. |
+| <Link id="m-handlecacherequest" /><code>{"override void HandleCacheRequest("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads a client's reply to a cache request and completes the matching pending check. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-disconnected" /><code>{"private void Disconnected("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disconnected" /><code>{"private void Disconnected("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | When a client disconnects, fails all its pending cache checks. |
 
 </details>

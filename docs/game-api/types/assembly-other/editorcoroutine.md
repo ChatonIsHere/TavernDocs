@@ -1,6 +1,6 @@
 ---
 title: "EditorCoroutine"
-description: "class EditorCoroutine in Alta.Coroutines."
+description: "AltaCoroutine subclass with a helper that runs a coroutine to the end in one call, for editor code."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EditorCoroutine
 
 A **class** in `Alta.Coroutines`, no namespace.
+
+`AltaCoroutine` subclass with a helper that runs a coroutine to the end in one call, for editor code.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`AltaCoroutine`](/game-api/types/assembly-other/altacoroutine)
@@ -23,6 +25,6 @@ A **class** in `Alta.Coroutines`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-immediate" /><code>{"static void Immediate(IEnumerator enumerator)"}</code> | Steps the enumerator, and any nested enumerators it yields, until finished, all at once. |

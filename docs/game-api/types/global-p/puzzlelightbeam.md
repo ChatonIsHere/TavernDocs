@@ -1,6 +1,6 @@
 ---
 title: "PuzzleLightBeam"
-description: "class PuzzleLightBeam in Root.Township."
+description: "Light puzzle emitter: casts a Beam forward from its transform every frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PuzzleLightBeam
 
 A **class** in `Root.Township`, no namespace.
+
+Light puzzle emitter: casts a `Beam` forward from its transform every frame. Base class for `PuzzleLightMirror`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`, [`ILightEmitter`](/game-api/types/global-i-l/ilightemitter)
@@ -24,30 +26,30 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-distance" /><code>{"protected float distance"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distance" /><code>{"protected float distance"}</code> | Beam reach, 100 by default. |
 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-beam" /><code>{"private "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> |
-| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-beam" /><code>{"private "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam"}</code> | The beam this emitter casts. |
+| <Link id="m-mask" /><code>{"private LayerMask mask"}</code> | Layers the beam raycast hits. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> |
-| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distance-2" /><code>{"float Distance { get; }"}</code> | How far the beam reaches. |
+| <Link id="m-mask-2" /><code>{"LayerMask Mask { get; }"}</code> | Layers the beam can hit. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> |
-| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"protected virtual void Awake()"}</code> | Creates the beam. |
+| <Link id="m-update" /><code>{"protected virtual void Update()"}</code> | Emits the beam from the object's position along its forward direction. |

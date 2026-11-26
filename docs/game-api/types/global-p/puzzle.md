@@ -1,6 +1,6 @@
 ---
 title: "Puzzle"
-description: "class Puzzle in Root.Township."
+description: "A puzzle condition that becomes complete once all its child conditions are complete, checked every frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Puzzle
 
 A **class** in `Root.Township`, no namespace.
+
+A puzzle condition that becomes complete once all its child conditions are complete, checked every frame. Never goes back to incomplete.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PuzzleCondition`](/game-api/types/global-p/puzzlecondition)
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-conditions" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-conditions" /><code>{"private "}<Link to="/game-api/types/global-p/puzzlecondition">{"PuzzleCondition"}</Link>{"[] conditions"}</code> | Conditions that must all be complete. |
 
 </details>
 
@@ -37,8 +39,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Sets the puzzle complete when every condition is complete. |
 
 </details>

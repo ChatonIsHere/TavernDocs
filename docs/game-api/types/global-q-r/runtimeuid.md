@@ -1,6 +1,6 @@
 ---
 title: "RuntimeUid"
-description: "class RuntimeUid in Root.Township."
+description: "A per-launch ID made from the time since 2018-01-01 in 5 second units."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+A per-launch ID made from the time since 2018-01-01 in 5 second units. `GenerationStarter` saves it to tell whether data came from this same run.
+
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 
 ## Constructors
@@ -22,6 +24,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"static uint Id { get; }"}</code> | The ID for this process, fixed when the class first loads. |

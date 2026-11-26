@@ -1,6 +1,6 @@
 ---
 title: "UserListConverter"
-description: "class UserListConverter in Root.Township."
+description: "Type converter that turns a comma-separated console argument into a UserList of UserInfoAccess entries (ids or lowercased names)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UserListConverter
 
 A **class** in `Root.Township`, no namespace.
+
+Type converter that turns a comma-separated console argument into a `UserList` of `UserInfoAccess` entries (ids or lowercased names).
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `TypeConverter`
@@ -23,7 +25,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> |
-| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canconvertfrom" /><code>{"override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)"}</code> | True for strings. |
+| <Link id="m-convertfrom" /><code>{"override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)"}</code> | Splits the lowercased string on commas and makes a `UserInfoAccess` from each trimmed part, by id if numeric. |

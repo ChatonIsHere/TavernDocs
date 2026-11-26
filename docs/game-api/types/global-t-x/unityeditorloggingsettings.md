@@ -1,6 +1,6 @@
 ---
 title: "UnityEditorLoggingSettings"
-description: "class UnityEditorLoggingSettings in Root.Township."
+description: "Global settings asset for logging to the Unity editor console: on or off, and a level range."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UnityEditorLoggingSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings asset for logging to the Unity editor console: on or off, and a level range.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`GlobalSettings<UnityEditorLoggingSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -26,34 +28,34 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-islogging" /><code>{"bool IsLogging"}</code> | Whether logs go to the Unity console in the editor. Copied to `UnityConsoleLogTarget.IsLoggingInEditor`. |
 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> |
-| <Link id="m-minlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" maxLevel"}</code> | Backing field for `MaxLevel`. |
+| <Link id="m-minlevel" /><code>{"private "}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" minLevel"}</code> | Backing field for `MinLevel`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-maxlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> |
-| <Link id="m-minlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MaxLevel { get; }"}</code> | Highest log level shown. |
+| <Link id="m-minlevel-2" /><code><Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" MinLevel { get; }"}</code> | Lowest log level shown. |
 
 ## Methods
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Applies `IsLogging` to the Unity console log target when changed in the inspector. |
 
 </details>

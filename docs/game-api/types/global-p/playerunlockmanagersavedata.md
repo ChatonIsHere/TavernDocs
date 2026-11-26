@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlockManagerSaveData"
-description: "class PlayerUnlockManagerSaveData in Root.Township."
+description: "Save data for a player's PlayerUnlockManager: the unlocks they have, their current one, their orbs and checkpoint."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerUnlockManagerSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a player's `PlayerUnlockManager`: the unlocks they have, their current one, their orbs and checkpoint.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`NewSaveData<PlayerUnlockManager, PlayerUnlockManagerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-checkpoint" /><code>{"Vector3 checkpoint"}</code> |
-| <Link id="m-currentunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> |
-| <Link id="m-orbs" /><code>{"uint[] orbs"}</code> |
-| <Link id="m-unlocks" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"[] unlocks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkpoint" /><code>{"Vector3 checkpoint"}</code> | Saved checkpoint position. |
+| <Link id="m-currentunlock" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> | The unlock currently active. |
+| <Link id="m-orbs" /><code>{"uint[] orbs"}</code> | Ids of the orbs the player has collected, probably their hashes. |
+| <Link id="m-unlocks" /><code><Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"[] unlocks"}</code> | All unlocks the player has. |

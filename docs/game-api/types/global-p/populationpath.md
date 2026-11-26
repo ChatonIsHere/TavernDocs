@@ -29,13 +29,13 @@ Server: a path edge that spawns and keeps a population of creatures along it, us
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-densitymultiplier" /><code>{"private float densityMultiplier"}</code> |
-| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> |
-| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> |
-| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" population"}</code> |
-| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-densitymultiplier" /><code>{"private float densityMultiplier"}</code> | Scales how many creatures the path holds. |
+| <Link id="m-loadpopulation" /><code>{"private int? loadPopulation"}</code> | Population count from the save, used once when the path next joins a chunk. |
+| <Link id="m-loadtime" /><code>{"private TimeSpan? loadTime"}</code> | Timer value from the save, used once when the path next joins a chunk. |
+| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" population"}</code> | Pipeline that picks the `PopulationSetup` at generation. |
+| <Link id="m-widthmultiplier" /><code>{"private float widthMultiplier"}</code> | Scales how far from the path's center line spawn points can be (0 to 1.5). |
 
 </details>
 
@@ -63,9 +63,9 @@ Server: a path edge that spawns and keeps a population of creatures along it, us
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-removedfromchunk" /><code>{"private void RemovedFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addedtochunk" /><code>{"private void AddedToChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | A frame after joining a chunk, adopts existing creatures and either restores the saved timer or starts it and checks for spawns. |
+| <Link id="m-removedfromchunk" /><code>{"private void RemovedFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Stops the population timer while the path is out of a chunk. |
 
 </details>

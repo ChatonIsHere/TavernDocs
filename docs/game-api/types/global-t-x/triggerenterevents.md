@@ -1,6 +1,6 @@
 ---
 title: "TriggerEnterEvents"
-description: "class TriggerEnterEvents in Root.Township."
+description: "Passes Unity trigger enter and exit callbacks on as events carrying the collider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TriggerEnterEvents
 
 A **class** in `Root.Township`, no namespace.
+
+Passes Unity trigger enter and exit callbacks on as events carrying the collider.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,10 +29,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> |
-| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ontriggerenter" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerEnter"}</code> | Event fired for each collider that enters. |
+| <Link id="m-ontriggerexit" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggerenterevents-colliderevent">{"TriggerEnterEvents.ColliderEvent"}</Link>{" onTriggerExit"}</code> | Event fired for each collider that leaves. |
 
 </details>
 
@@ -39,9 +41,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
-| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ontriggerenter-2" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Invokes `onTriggerEnter` with the entering collider. |
+| <Link id="m-ontriggerexit-2" /><code>{"private void OnTriggerExit(Collider other)"}</code> | Invokes `onTriggerExit` with the leaving collider. |
 
 </details>

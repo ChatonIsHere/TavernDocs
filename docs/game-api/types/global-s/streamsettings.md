@@ -1,6 +1,6 @@
 ---
 title: "StreamSettings"
-description: "class StreamSettings in Root.Township."
+description: "Serializable width and height pair for a stream."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StreamSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable width and height pair for a stream. Defaults to 0 by 0.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 
@@ -23,14 +25,14 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-height" /><code>{"int height"}</code> |
-| <Link id="m-width" /><code>{"int width"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-height" /><code>{"int height"}</code> | Backing field for `Height`. |
+| <Link id="m-width" /><code>{"int width"}</code> | Backing field for `Width`. |
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> |
-| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-height-2" /><code>{"int Height { get; }"}</code> | Height value. |
+| <Link id="m-width-2" /><code>{"int Width { get; }"}</code> | Width value. |

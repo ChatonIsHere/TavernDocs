@@ -1,6 +1,6 @@
 ---
 title: "InGameInspector.LODVizualizer"
-description: "class InGameInspector.LODVizualizer in Root.Township."
+description: "Debug inspector tool that recolours every renderer in the scene by its LOD level, using the inspector's lodColors."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InGameInspector.LODVizualizer
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Debug inspector tool that recolours every renderer in the scene by its LOD level, using the inspector's `lodColors`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InGameInspector`](/game-api/types/global-i-l/ingameinspector)
@@ -28,38 +30,38 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-lodmaterials" /><code>{"private Material[] lodMaterials"}</code> |
-| <Link id="m-references" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/ingameinspector-lodvizualizer-renderermaterial">{"InGameInspector.LODVizualizer.RendererMaterial"}</Link>{"> references"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Whether the LOD colouring is on. |
+| <Link id="m-lodmaterials" /><code>{"private Material[] lodMaterials"}</code> | One material per LOD colour, made from the inspector's `lodMaterial`. |
+| <Link id="m-references" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/ingameinspector-lodvizualizer-renderermaterial">{"InGameInspector.LODVizualizer.RendererMaterial"}</Link>{"> references"}</code> | Renderers that were recoloured, with their original materials, so `Disable` can restore them. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"override string Name { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"override string Name { get; }"}</code> | Shown on the inspector as "Lod Vizualizer". |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |
-| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-pressclearasync" /><code>{"override void PressClearAsync()"}</code> |
-| <Link id="m-pressdown" /><code>{"override void PressDown()"}</code> |
-| <Link id="m-pressup" /><code>{"override void PressUp()"}</code> |
-| <Link id="m-receiveangle" /><code>{"override void ReceiveAngle(float angle)"}</code> |
-| <Link id="m-receiveinput" /><code>{"override void ReceiveInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-update" /><code>{"override void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Puts back each renderer's original material and clears the list. |
+| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Resets the tool to inactive. |
+| <Link id="m-pressclearasync" /><code>{"override void PressClearAsync()"}</code> | Toggles the LOD colouring on or off. |
+| <Link id="m-pressdown" /><code>{"override void PressDown()"}</code> | Does nothing for this tool. |
+| <Link id="m-pressup" /><code>{"override void PressUp()"}</code> | Does nothing for this tool. |
+| <Link id="m-receiveangle" /><code>{"override void ReceiveAngle(float angle)"}</code> | Does nothing for this tool. |
+| <Link id="m-receiveinput" /><code>{"override void ReceiveInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Does nothing for this tool. |
+| <Link id="m-update" /><code>{"override void Update()"}</code> | Does nothing for this tool. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-activate" /><code>{"private void Activate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activate" /><code>{"private void Activate()"}</code> | Finds every `LODGroup` in the scene and swaps each LOD level's renderers to that level's colour material. |
 
 </details>

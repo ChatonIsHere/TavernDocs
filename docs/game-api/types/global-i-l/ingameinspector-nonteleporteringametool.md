@@ -1,6 +1,6 @@
 ---
 title: "InGameInspector.NonTeleporterInGameTool"
-description: "abstract class InGameInspector.NonTeleporterInGameTool in Root.Township."
+description: "Base for inspector tools that use the teleport button themselves."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InGameInspector.NonTeleporterInGameTool
 
 An **private abstract class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Base for inspector tools that use the teleport button themselves. While enabled it removes the player's teleport controller mode on that hand.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InGameInspector`](/game-api/types/global-i-l/ingameinspector)
@@ -25,13 +27,13 @@ An **private abstract class** in `Root.Township`, no namespace. Reach it through
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-controller" /><code>{"protected "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controller" /><code>{"protected "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> | Input of the player holding the inspector, set while the tool is enabled. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-disable" /><code>{"override void Disable()"}</code> |
-| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disable" /><code>{"override void Disable()"}</code> | Adds teleport mode back to the player's controller. |
+| <Link id="m-enable" /><code>{"override void Enable("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stores the holder's `PlayerInput` and removes its teleport controller mode. |

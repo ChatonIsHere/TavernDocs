@@ -59,50 +59,50 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CustomMethodApplyAttribute`](/game-api/types/assembly-other/custommethodapplyattribute) | class | `PrefabApplyAttribute` | 3 | Prefab apply attribute that calls a named method on the component when the prefab is applied. The method should return bool (true means it applied); methods are looked up by reflection and cached. |
 | [`DegreeToRadian`](/game-api/types/assembly-other/degreetoradian) | class | `PropertyAttribute` | 0 | Inspector attribute for a float field, probably so it is edited in degrees and stored in radians. It has no members; the drawer isn't in the server build. |
 | [`DotFromAngle`](/game-api/types/assembly-other/dotfromangle) | class | `PropertyAttribute` | 0 | Property attribute with no fields, probably used by an editor drawer to edit a dot product value as an angle. |
-| [`EnumFlagsAttribute`](/game-api/types/assembly-other/enumflagsattribute) | class | `PropertyAttribute` | 0 |  |
-| [`FloatRangeSettings`](/game-api/types/assembly-other/floatrangesettings) | class | `PropertyAttribute` | 4 |  |
-| [`ForcedCapitalizationAttribute`](/game-api/types/assembly-other/forcedcapitalizationattribute) | class | `PropertyAttribute` | 0 |  |
-| [`FormattedBytesFieldAttribute`](/game-api/types/assembly-other/formattedbytesfieldattribute) | class | `PropertyAttribute` | 0 |  |
-| [`GetComponentAttribute`](/game-api/types/assembly-other/getcomponentattribute) | class | `PrefabApplyAttribute` | 6 |  |
-| [`GetComponentIfEmptyAttribute`](/game-api/types/assembly-other/getcomponentifemptyattribute) | class | `GetComponentAttribute` | 1 |  |
-| [`GetComponentInChildrenAttribute`](/game-api/types/assembly-other/getcomponentinchildrenattribute) | class | `GetComponentAttribute` | 2 |  |
-| [`GetComponentInParentAttribute`](/game-api/types/assembly-other/getcomponentinparentattribute) | class | `GetComponentAttribute` | 1 |  |
-| [`GetComponentsAttribute`](/game-api/types/assembly-other/getcomponentsattribute) | class | `PrefabApplyAttribute` | 5 |  |
-| [`GetComponentsInChildrenAttribute`](/game-api/types/assembly-other/getcomponentsinchildrenattribute) | class | `GetComponentsAttribute` | 1 |  |
-| [`GetComponentsInChildrenInterfaceAttribute`](/game-api/types/assembly-other/getcomponentsinchildreninterfaceattribute) | class | `GetComponentsInterfaceAttribute` | 2 |  |
-| [`GetComponentsInParentAttribute`](/game-api/types/assembly-other/getcomponentsinparentattribute) | class | `GetComponentsAttribute` | 1 |  |
-| [`GetComponentsInterfaceAttribute`](/game-api/types/assembly-other/getcomponentsinterfaceattribute) | class | `PrefabApplyAttribute` | 6 |  |
-| [`HasComponentLabel`](/game-api/types/assembly-other/hascomponentlabel) | class | `ConditionalLabeling` | 3 |  |
-| [`HashedObjectAttribute`](/game-api/types/assembly-other/hashedobjectattribute) | class | `PropertyAttribute` | 2 |  |
-| [`HasMethodApplyAttribute`](/game-api/types/assembly-other/hasmethodapplyattribute) | class | `Attribute` | 0 |  |
-| [`HasReferenceValueAttribute`](/game-api/types/assembly-other/hasreferencevalueattribute) | class | `PrefabApplyAttribute` | 2 |  |
-| [`InversedIntAttribute`](/game-api/types/assembly-other/inversedintattribute) | class | `PropertyAttribute` | 2 |  |
-| [`LabelAdd`](/game-api/types/assembly-other/labeladd) | class | `PropertyAttribute` | 2 |  |
-| [`MaxAttribute`](/game-api/types/assembly-other/maxattribute) | class | `PropertyAttribute` | 2 |  |
-| [`MethodApplyAttribute`](/game-api/types/assembly-other/methodapplyattribute) | class | `Attribute` | 0 |  |
-| [`MinAttribute`](/game-api/types/assembly-other/minattribute) | class | `PropertyAttribute` | 2 |  |
-| [`NormalizedVector`](/game-api/types/assembly-other/normalizedvector) | class | `PropertyAttribute` | 0 |  |
-| [`NotConditionAttribute`](/game-api/types/assembly-other/notconditionattribute) | class | `ConditionAttribute` | 1 |  |
-| [`NullConditionAttribute`](/game-api/types/assembly-other/nullconditionattribute) | class | `PropertyAttribute` | 4 |  |
-| [`ObsoleteFieldAttribute`](/game-api/types/assembly-other/obsoletefieldattribute) | class | `PropertyAttribute` | 0 |  |
-| [`PlatformConditionAttribute`](/game-api/types/assembly-other/platformconditionattribute) | class | `PropertyAttribute` | 3 |  |
-| [`PostHeaderAttribute`](/game-api/types/assembly-other/postheaderattribute) | class | `PropertyAttribute` | 2 |  |
-| [`PrefabApplyAttribute`](/game-api/types/assembly-other/prefabapplyattribute) | abstract class | `PropertyAttribute` | 1 |  |
-| [`QuaternionVector3Attribute`](/game-api/types/assembly-other/quaternionvector3attribute) | class | `PropertyAttribute` | 0 |  |
-| [`ReadOnlyAttribute`](/game-api/types/assembly-other/readonlyattribute) | class | `PropertyAttribute` | 4 |  |
-| [`ReadOnlyInDebugAttribute`](/game-api/types/assembly-other/readonlyindebugattribute) | class | `PropertyAttribute` | 0 |  |
+| [`EnumFlagsAttribute`](/game-api/types/assembly-other/enumflagsattribute) | class | `PropertyAttribute` | 0 | Property attribute that marks an enum field to be edited as flags in the inspector. |
+| [`FloatRangeSettings`](/game-api/types/assembly-other/floatrangesettings) | class | `PropertyAttribute` | 4 | Property attribute that stores a min and max for an inspector float range. |
+| [`ForcedCapitalizationAttribute`](/game-api/types/assembly-other/forcedcapitalizationattribute) | class | `PropertyAttribute` | 0 | Marker property attribute, probably for an editor drawer that forces a string field's capitalisation. Not used in this build. |
+| [`FormattedBytesFieldAttribute`](/game-api/types/assembly-other/formattedbytesfieldattribute) | class | `PropertyAttribute` | 0 | Marks a field to be shown as a byte size (KB, MB) in the inspector. Used on network statistics. |
+| [`GetComponentAttribute`](/game-api/types/assembly-other/getcomponentattribute) | class | `PrefabApplyAttribute` | 6 | Field attribute that fills the field with a component from the same object when the prefab is applied, probably in the editor (the caller isn't in this build). Base for the other `GetComponent` attributes. |
+| [`GetComponentIfEmptyAttribute`](/game-api/types/assembly-other/getcomponentifemptyattribute) | class | `GetComponentAttribute` | 1 | Like `GetComponentAttribute`, but only fills the field when it is empty. |
+| [`GetComponentInChildrenAttribute`](/game-api/types/assembly-other/getcomponentinchildrenattribute) | class | `GetComponentAttribute` | 2 | Like `GetComponentAttribute`, but searches this object and its children. |
+| [`GetComponentInParentAttribute`](/game-api/types/assembly-other/getcomponentinparentattribute) | class | `GetComponentAttribute` | 1 | Like `GetComponentAttribute`, but searches this object and its parents. |
+| [`GetComponentsAttribute`](/game-api/types/assembly-other/getcomponentsattribute) | class | `PrefabApplyAttribute` | 5 | Array field attribute that fills the field with all matching components on the same object when the prefab is applied. Base for the plural `GetComponents` attributes. |
+| [`GetComponentsInChildrenAttribute`](/game-api/types/assembly-other/getcomponentsinchildrenattribute) | class | `GetComponentsAttribute` | 1 | Like `GetComponentsAttribute`, but collects components from this object and its children. |
+| [`GetComponentsInChildrenInterfaceAttribute`](/game-api/types/assembly-other/getcomponentsinchildreninterfaceattribute) | class | `GetComponentsInterfaceAttribute` | 2 | Like `GetComponentsInterfaceAttribute`, but collects from this object and its children. |
+| [`GetComponentsInParentAttribute`](/game-api/types/assembly-other/getcomponentsinparentattribute) | class | `GetComponentsAttribute` | 1 | Like `GetComponentsAttribute`, but collects components from this object and its parents. |
+| [`GetComponentsInterfaceAttribute`](/game-api/types/assembly-other/getcomponentsinterfaceattribute) | class | `PrefabApplyAttribute` | 6 | Array field attribute that fills the field with every component implementing an interface. The field must hold `MonoBehaviour` elements. |
+| [`HasComponentLabel`](/game-api/types/assembly-other/hascomponentlabel) | class | `ConditionalLabeling` | 3 | Conditional label attribute that picks one of two labels (and default values) based on whether the object has a given component. |
+| [`HashedObjectAttribute`](/game-api/types/assembly-other/hashedobjectattribute) | class | `PropertyAttribute` | 2 | Inspector attribute that marks a field as a hash pointing to an object of a given type. |
+| [`HasMethodApplyAttribute`](/game-api/types/assembly-other/hasmethodapplyattribute) | class | `Attribute` | 0 | Marker attribute for classes; it holds no data. |
+| [`HasReferenceValueAttribute`](/game-api/types/assembly-other/hasreferencevalueattribute) | class | `PrefabApplyAttribute` | 2 | Prefab apply attribute for a bool field: keeps it set to whether another named field holds a non-null object. |
+| [`InversedIntAttribute`](/game-api/types/assembly-other/inversedintattribute) | class | `PropertyAttribute` | 2 | Property attribute with a label, probably for an editor drawer that shows an int inverted. Nothing in the decompiled code uses it. |
+| [`LabelAdd`](/game-api/types/assembly-other/labeladd) | class | `PropertyAttribute` | 2 | Property attribute that adds text to a field's inspector label, such as a unit like `(°/s)` or a hint like `: -1 to disable`. |
+| [`MaxAttribute`](/game-api/types/assembly-other/maxattribute) | class | `PropertyAttribute` | 2 | Inspector attribute that sets a maximum for a float field. The drawer that enforces it is not in the server build. |
+| [`MethodApplyAttribute`](/game-api/types/assembly-other/methodapplyattribute) | class | `Attribute` | 0 | Empty marker attribute for methods. Nothing in the server build reads it; probably part of the prefab apply tooling with `HasMethodApplyAttribute`. |
+| [`MinAttribute`](/game-api/types/assembly-other/minattribute) | class | `PropertyAttribute` | 2 | Inspector attribute that sets a minimum for a float field. The drawer that enforces it is not in the server build. |
+| [`NormalizedVector`](/game-api/types/assembly-other/normalizedvector) | class | `PropertyAttribute` | 0 | Inspector attribute for a vector field that should be normalized. No behaviour of its own. |
+| [`NotConditionAttribute`](/game-api/types/assembly-other/notconditionattribute) | class | `ConditionAttribute` | 1 | Inspector attribute: hides the field while the named bool is true and shows it while it is false. The reverse of `ConditionAttribute`'s default. |
+| [`NullConditionAttribute`](/game-api/types/assembly-other/nullconditionattribute) | class | `PropertyAttribute` | 4 | Inspector attribute that shows, hides or locks a field depending on whether another object field is null. |
+| [`ObsoleteFieldAttribute`](/game-api/types/assembly-other/obsoletefieldattribute) | class | `PropertyAttribute` | 0 | Inspector attribute that marks a serialized field as obsolete. No behaviour of its own. |
+| [`PlatformConditionAttribute`](/game-api/types/assembly-other/platformconditionattribute) | class | `PropertyAttribute` | 3 | Inspector attribute that marks a field as only relevant on certain platforms, either from `PlatformFlags` or an Android or desktop flag. |
+| [`PostHeaderAttribute`](/game-api/types/assembly-other/postheaderattribute) | class | `PropertyAttribute` | 2 | Inspector attribute carrying header text, probably drawn after the field it is on. |
+| [`PrefabApplyAttribute`](/game-api/types/assembly-other/prefabapplyattribute) | abstract class | `PropertyAttribute` | 1 | Base for field attributes that fill in or check a field when a prefab is applied in the editor, such as `GetComponent` and `CacheTransform`. |
+| [`QuaternionVector3Attribute`](/game-api/types/assembly-other/quaternionvector3attribute) | class | `PropertyAttribute` | 0 | Inspector attribute with no members; probably shows a `Quaternion` field as Euler angles through an editor drawer. |
+| [`ReadOnlyAttribute`](/game-api/types/assembly-other/readonlyattribute) | class | `PropertyAttribute` | 4 | Inspector attribute that shows a field as read only, with separate modes for in and out of play mode. |
+| [`ReadOnlyInDebugAttribute`](/game-api/types/assembly-other/readonlyindebugattribute) | class | `PropertyAttribute` | 0 | Inspector attribute with no members; probably makes a field read only in the inspector's debug view. |
 | [`ReadOnlyMode`](/game-api/types/assembly-other/readonlymode) | enum |  | 3 | How an inspector field shows under a condition (`ReadOnlyAttribute`, `ValueConditionAttribute`): hidden, read-only or editable. Editor only. |
-| [`ReorderableListAttribute`](/game-api/types/assembly-other/reorderablelistattribute) | class | `PropertyAttribute` | 5 |  |
-| [`SceneNameAttribute`](/game-api/types/assembly-other/scenenameattribute) | class | `PropertyAttribute` | 0 |  |
-| [`SerializedInterfaceAttribute`](/game-api/types/assembly-other/serializedinterfaceattribute) | class | `PropertyAttribute` | 2 |  |
-| [`SquaredValue`](/game-api/types/assembly-other/squaredvalue) | class | `PropertyAttribute` | 0 |  |
-| [`StepAnimationCurveAttribute`](/game-api/types/assembly-other/stepanimationcurveattribute) | class | `PropertyAttribute` | 0 |  |
-| [`SubInspectorAttribute`](/game-api/types/assembly-other/subinspectorattribute) | class | `PropertyAttribute` | 0 |  |
-| [`TanFromAngle`](/game-api/types/assembly-other/tanfromangle) | class | `PropertyAttribute` | 0 |  |
-| [`TimeInSecondsAttribute`](/game-api/types/assembly-other/timeinsecondsattribute) | class | `PropertyAttribute` | 0 |  |
-| [`TypeExtensions`](/game-api/types/assembly-other/typeextensions) | static class |  | 4 |  |
-| [`ValidatePrefabApplyAttribute`](/game-api/types/assembly-other/validateprefabapplyattribute) | class | `PrefabApplyAttribute` | 2 |  |
-| [`ValueConditionAttribute`](/game-api/types/assembly-other/valueconditionattribute) | class | `PropertyAttribute` | 5 |  |
+| [`ReorderableListAttribute`](/game-api/types/assembly-other/reorderablelistattribute) | class | `PropertyAttribute` | 5 | Inspector attribute that shows a list as a reorderable list, with options for dragging, header and add and remove buttons. |
+| [`SceneNameAttribute`](/game-api/types/assembly-other/scenenameattribute) | class | `PropertyAttribute` | 0 | Property attribute that marks a string field as a scene name, probably so the inspector shows a scene picker. |
+| [`SerializedInterfaceAttribute`](/game-api/types/assembly-other/serializedinterfaceattribute) | class | `PropertyAttribute` | 2 | Property attribute that marks a serialized field as holding an object that must implement a given interface, probably for an inspector picker. |
+| [`SquaredValue`](/game-api/types/assembly-other/squaredvalue) | class | `PropertyAttribute` | 0 | Marker attribute for a serialized float that is stored as a squared value, such as a squared velocity threshold. Has no members of its own. |
+| [`StepAnimationCurveAttribute`](/game-api/types/assembly-other/stepanimationcurveattribute) | class | `PropertyAttribute` | 0 | Inspector attribute for an `AnimationCurve` field, probably to draw it as a stepped curve. No code of its own. |
+| [`SubInspectorAttribute`](/game-api/types/assembly-other/subinspectorattribute) | class | `PropertyAttribute` | 0 | Inspector attribute, probably to draw a referenced object's fields inline. No code of its own. |
+| [`TanFromAngle`](/game-api/types/assembly-other/tanfromangle) | class | `PropertyAttribute` | 0 | Inspector attribute, probably to edit a tangent value as an angle. No code of its own. |
+| [`TimeInSecondsAttribute`](/game-api/types/assembly-other/timeinsecondsattribute) | class | `PropertyAttribute` | 0 | Inspector attribute, probably to show a float as a time in seconds. No code of its own. |
+| [`TypeExtensions`](/game-api/types/assembly-other/typeextensions) | static class |  | 4 | Reflection helpers that look up fields and methods on a type and all its base types, so private members of base classes are found too. |
+| [`ValidatePrefabApplyAttribute`](/game-api/types/assembly-other/validateprefabapplyattribute) | class | `PrefabApplyAttribute` | 2 | Prefab-apply attribute for a bool field: when a prefab is applied, sets the field to the result of a named method on the component. |
+| [`ValueConditionAttribute`](/game-api/types/assembly-other/valueconditionattribute) | class | `PropertyAttribute` | 5 | Inspector attribute that shows, hides or locks a field based on whether another number field is above a threshold. |
 
 ## Alta.Authentication
 
@@ -111,7 +111,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`PlayerSubscriberStatus`](/game-api/types/assembly-other/playersubscriberstatus) | enum |  | 4 | [Player](../networking/player.md#playersubscriberstatus), [Alta assemblies](../console-and-utilities/alta-assemblies.md): `None`, `Subscriber`, `Developer`, `AltaMod` (0 to 3). |
-| [`UserPermissions`](/game-api/types/assembly-other/userpermissions) | static class |  | 7 |  |
+| [`UserPermissions`](/game-api/types/assembly-other/userpermissions) | static class |  | 7 | Permission name constants and checks against the logged-in user's API policies. Checks the local logged-in account, so it is mainly a client thing. |
 
 ### Alta.Authentication
 
@@ -160,7 +160,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AltaCoroutine`](/game-api/types/assembly-other/altacoroutine) | class |  | 14 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#altacoroutine), [Alta assemblies](../console-and-utilities/alta-assemblies.md): A wrapper around a Unity coroutine that catches exceptions and tells you how it ended. |
 | [`AltaCoroutineState`](/game-api/types/assembly-other/altacoroutinestate) | enum |  | 5 | State of an `AltaCoroutine`: not started, running, stopped, finished or error. |
 | [`CoroutineYields`](/game-api/types/assembly-other/coroutineyields) | static class |  | 3 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#coroutineyields-and-taskyield) |
-| [`EditorCoroutine`](/game-api/types/assembly-other/editorcoroutine) | class | `AltaCoroutine` | 1 |  |
+| [`EditorCoroutine`](/game-api/types/assembly-other/editorcoroutine) | class | `AltaCoroutine` | 1 | `AltaCoroutine` subclass with a helper that runs a coroutine to the end in one call, for editor code. |
 | [`TaskYield<T>`](/game-api/types/assembly-other/taskyield-t) | class | `CustomYieldInstruction` | 4 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#coroutineyields-and-taskyield) |
 
 ### Alta.Utilities
@@ -198,14 +198,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IPlayerPreferenceValue<T>`](/game-api/types/assembly-other/iplayerpreferencevalue-t) | interface |  | 1 |  |
+| [`IPlayerPreferenceValue<T>`](/game-api/types/assembly-other/iplayerpreferencevalue-t) | interface |  | 1 | A single player preference value. |
 | [`PlayerPreferenceBool`](/game-api/types/assembly-other/playerpreferencebool) | class | `PlayerPreferenceValue<bool>` | 1 | A bool player preference stored under a key with `PlayerPreferences.SetBool` and `GetBool`. |
-| [`PlayerPreferenceFloat`](/game-api/types/assembly-other/playerpreferencefloat) | class | `PlayerPreferenceValue<float>` | 1 |  |
-| [`PlayerPreferenceInt`](/game-api/types/assembly-other/playerpreferenceint) | class | `PlayerPreferenceValue<int>` | 1 |  |
+| [`PlayerPreferenceFloat`](/game-api/types/assembly-other/playerpreferencefloat) | class | `PlayerPreferenceValue<float>` | 1 | A float stored in `PlayerPreferences` under a fixed key. Not used in this build. |
+| [`PlayerPreferenceInt`](/game-api/types/assembly-other/playerpreferenceint) | class | `PlayerPreferenceValue<int>` | 1 | An int stored in `PlayerPreferences` under a fixed key. Not used in this build. |
 | [`PlayerPreferences`](/game-api/types/assembly-other/playerpreferences) | static class |  | 12 | [Settings and files](../console-and-utilities/settings-and-files.md#playerpreferences): The game's replacement for Unity's `PlayerPrefs`: a dictionary saved to `player.prefs` in `StorageFolder`. |
 | [`PlayerPreferenceString`](/game-api/types/assembly-other/playerpreferencestring) | class | `PlayerPreferenceValue<string>` | 1 | A string player preference stored under a key through `PlayerPreferences`. |
-| [`PlayerPreferenceValue<T>`](/game-api/types/assembly-other/playerpreferencevalue-t) | abstract class | `IPlayerPreferenceValue<T>` | 2 |  |
-| [`PlayerSettingsNames`](/game-api/types/assembly-other/playersettingsnames) | class |  | 2 |  |
+| [`PlayerPreferenceValue<T>`](/game-api/types/assembly-other/playerpreferencevalue-t) | abstract class | `IPlayerPreferenceValue<T>` | 2 | Base for a typed value stored in `PlayerPreferences` (the local `player.prefs` file) under one key. |
+| [`PlayerSettingsNames`](/game-api/types/assembly-other/playersettingsnames) | class |  | 2 | Preference key names for the login screen. |
 
 ### Alta.Utilities
 
@@ -333,7 +333,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 | Flags for why a platform effect called FFV should be on: movement, hurt, low performance or character baking (probably fixed foveated rendering). Passed to `IPlatformDevice.SetFfvSource`; the server's fake device ignores it. |
 | [`PlatformTarget`](/game-api/types/assembly-other/platformtarget) | enum |  | 2 | [Player](../networking/player.md#platformtarget): `PC = 1`, `Quest = 2` (flags, in `Alta.Platform.dll`). The client sends it in its join request. |
 | [`PlayerMode`](/game-api/types/assembly-other/playermode) | enum |  | 8 | [Player](../networking/player.md#playermode): `PlayerMode` (no namespace, in `Alta.Platform.dll`), a flags enum: |
-| [`PlayerModeExtensions`](/game-api/types/assembly-other/playermodeextensions) | static class |  | 2 |  |
+| [`PlayerModeExtensions`](/game-api/types/assembly-other/playermodeextensions) | static class |  | 2 | Extension methods on the `PlayerMode` flags. |
 
 ### Alta.Platform
 
@@ -461,42 +461,42 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`Factory`](/game-api/types/assembly-other/factory) | abstract class | `IFactory`, `IDisposable` | 1 |  |
-| [`Factory<TInterface>`](/game-api/types/assembly-other/factory-tinterface) | abstract class | `Factory`, `IFactory<TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`Factory<TParam, TInterface>`](/game-api/types/assembly-other/factory-tparam-tinterface) | abstract class | `Factory`, `IFactory<TParam, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`Factory<TParam1, TParam2, TInterface>`](/game-api/types/assembly-other/factory-tparam1-tparam2-tinterface) | abstract class | `Factory`, `IFactory<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`Factory<TParam1, TParam2, TParam3, TInterface>`](/game-api/types/assembly-other/factory-tparam1-tparam2-tparam3-tinterface) | abstract class | `Factory`, `IFactory<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsync`](/game-api/types/assembly-other/factoryasync) | abstract class | `Factory` | 1 |  |
-| [`FactoryAsync<TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsync<TParam, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsync<TParam1, TParam2, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsync<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tparam3-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsyncPooled<TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tconcrete-tinterface) | abstract class | `Factory` | 2 |  |
-| [`FactoryAsyncPooled<TParam, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsyncPooled<TParam1, TParam2, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`FactoryAsyncPooled<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tparam3-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 |  |
-| [`IDespawnable`](/game-api/types/assembly-other/idespawnable) | interface |  | 1 |  |
+| [`Factory`](/game-api/types/assembly-other/factory) | abstract class | `IFactory`, `IDisposable` | 1 | Base for the VContainer factories. Holds the injected container and a disposer, and disposes everything it created when it is disposed. |
+| [`Factory<TInterface>`](/game-api/types/assembly-other/factory-tinterface) | abstract class | `Factory`, `IFactory<TInterface>`, `IFactory`, +1 more | 1 | Synchronous factory with no parameters. Subclasses build the object in `CreateInstance`; `Create` then injects it and tracks it for disposal. |
+| [`Factory<TParam, TInterface>`](/game-api/types/assembly-other/factory-tparam-tinterface) | abstract class | `Factory`, `IFactory<TParam, TInterface>`, `IFactory`, +1 more | 1 | Synchronous factory taking one parameter. Subclasses build the object in `CreateInstance`; `Create` injects it and tracks it for disposal. |
+| [`Factory<TParam1, TParam2, TInterface>`](/game-api/types/assembly-other/factory-tparam1-tparam2-tinterface) | abstract class | `Factory`, `IFactory<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 | Synchronous factory taking two parameters. Subclasses build the object in `CreateInstance`; `Create` injects it and tracks it for disposal. |
+| [`Factory<TParam1, TParam2, TParam3, TInterface>`](/game-api/types/assembly-other/factory-tparam1-tparam2-tparam3-tinterface) | abstract class | `Factory`, `IFactory<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 | Synchronous factory taking three parameters. Subclasses build the object in `CreateInstance`; `Create` injects it and tracks it for disposal. |
+| [`FactoryAsync`](/game-api/types/assembly-other/factoryasync) | abstract class | `Factory` | 1 | Base for factories that spawn a prefab loaded through Addressables. The prefab's `AssetReference` is injected, and loaded handles are released on dispose. |
+| [`FactoryAsync<TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TInterface>`, `IFactory`, +1 more | 1 | Async prefab factory with no parameters. Loads the prefab, instantiates it through the container and calls `FactoryConstruct` on its `TConcrete` component. |
+| [`FactoryAsync<TParam, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam, TInterface>`, `IFactory`, +1 more | 1 | Async prefab factory taking one parameter, passed to the component's `FactoryConstruct`. |
+| [`FactoryAsync<TParam1, TParam2, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 | Async prefab factory taking two parameters, passed to the component's `FactoryConstruct`. |
+| [`FactoryAsync<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tparam3-tconcrete-tinterface) | abstract class | `FactoryAsync`, `IFactoryAsync<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 | Async prefab factory taking three parameters, passed to the component's `FactoryConstruct`. |
+| [`FactoryAsyncPooled<TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tconcrete-tinterface) | abstract class | `Factory` | 2 | Async Addressables prefab factory that pools its instances. `Spawn` reuses a despawned instance when there is one; `Dispose` destroys every instance it made. |
+| [`FactoryAsyncPooled<TParam, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam, TInterface>`, `IFactory`, +1 more | 1 | Pooled async prefab factory whose instances take one parameter on spawn through `IPooledInstance.OnSpawn`. |
+| [`FactoryAsyncPooled<TParam1, TParam2, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TInterface>`, `IFactory`, +1 more | 1 | Pooled async prefab factory whose instances take two parameters on spawn through `IPooledInstance.OnSpawn`. |
+| [`FactoryAsyncPooled<TParam1, TParam2, TParam3, TConcrete, TInterface>`](/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tparam3-tconcrete-tinterface) | abstract class | `FactoryAsyncPooled<TConcrete, TInterface>`, `IFactoryAsyncPooled<TParam1, TParam2, TParam3, TInterface>`, `IFactory`, +1 more | 1 | Pooled async prefab factory whose instances take three parameters on spawn through `IPooledInstance.OnSpawn`. |
+| [`IDespawnable`](/game-api/types/assembly-other/idespawnable) | interface |  | 1 | An object a pooled factory can return to its pool. |
 | [`IFactory`](/game-api/types/assembly-other/ifactory) | interface | `IDisposable` | 0 | Base interface for the VContainer layer's factories. The generic versions add `Create` with zero to three parameters; all are disposable. |
-| [`IFactory<in TParam, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactory<in TParam1, in TParam2, in TParam3, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-intparam3-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactory<in TParam1, in TParam2, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-outtinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactory<out TInstance>`](/game-api/types/assembly-other/ifactory-outtinstance) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactoryAsync<in TParam, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam-tinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactoryAsync<in TParam1, in TParam2, in TParam3, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-intparam3-tinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactoryAsync<in TParam1, in TParam2, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-tinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactoryAsync<TInterface>`](/game-api/types/assembly-other/ifactoryasync-tinterface) | interface | `IFactory`, `IDisposable` | 1 |  |
-| [`IFactoryAsyncPooled<in TParam, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam-tinterface) | interface | `IFactory`, `IDisposable` | 2 |  |
-| [`IFactoryAsyncPooled<in TParam1, in TParam2, in TParam3, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-intparam3-tinterface) | interface | `IFactory`, `IDisposable` | 2 |  |
-| [`IFactoryAsyncPooled<in TParam1, in TParam2, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-tinterface) | interface | `IFactory`, `IDisposable` | 2 |  |
-| [`IFactoryAsyncPooled<TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-tinterface) | interface | `IFactory`, `IDisposable` | 2 |  |
-| [`IFactoryConstructable`](/game-api/types/assembly-other/ifactoryconstructable) | interface |  | 1 |  |
-| [`IFactoryConstructable<in TParam1, in TParam2, in TParam3>`](/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2-intparam3) | interface |  | 1 |  |
-| [`IFactoryConstructable<in TParam1, in TParam2>`](/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2) | interface |  | 1 |  |
-| [`IFactoryConstructable<in TParam>`](/game-api/types/assembly-other/ifactoryconstructable-intparam) | interface |  | 1 |  |
-| [`IPooledInstance`](/game-api/types/assembly-other/ipooledinstance) | interface | `IDespawnable` | 1 |  |
-| [`IPooledInstance<in TParam1, in TParam2, in TParam3>`](/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2-intparam3) | interface | `IDespawnable` | 1 |  |
-| [`IPooledInstance<in TParam1, in TParam2>`](/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2) | interface | `IDespawnable` | 1 |  |
-| [`IPooledInstance<in TParam>`](/game-api/types/assembly-other/ipooledinstance-intparam) | interface | `IDespawnable` | 1 |  |
+| [`IFactory<in TParam, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam-outtinterface) | interface | `IFactory`, `IDisposable` | 1 | Factory that takes one parameter, for the VContainer layer. |
+| [`IFactory<in TParam1, in TParam2, in TParam3, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-intparam3-outtinterface) | interface | `IFactory`, `IDisposable` | 1 | Factory that takes three parameters, for the VContainer layer. |
+| [`IFactory<in TParam1, in TParam2, out TInterface>`](/game-api/types/assembly-other/ifactory-intparam1-intparam2-outtinterface) | interface | `IFactory`, `IDisposable` | 1 | Factory that takes two parameters, for the VContainer layer. |
+| [`IFactory<out TInstance>`](/game-api/types/assembly-other/ifactory-outtinstance) | interface | `IFactory`, `IDisposable` | 1 | Factory with no parameters, for the VContainer layer. |
+| [`IFactoryAsync<in TParam, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam-tinterface) | interface | `IFactory`, `IDisposable` | 1 | Async factory that takes one parameter, for the VContainer layer. |
+| [`IFactoryAsync<in TParam1, in TParam2, in TParam3, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-intparam3-tinterface) | interface | `IFactory`, `IDisposable` | 1 | Async factory that takes three parameters, for the VContainer layer. |
+| [`IFactoryAsync<in TParam1, in TParam2, TInterface>`](/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-tinterface) | interface | `IFactory`, `IDisposable` | 1 | Async factory that takes two parameters, for the VContainer layer. |
+| [`IFactoryAsync<TInterface>`](/game-api/types/assembly-other/ifactoryasync-tinterface) | interface | `IFactory`, `IDisposable` | 1 | Async factory with no parameters, for the VContainer layer. `FactoryAsync` implements it by instantiating a MonoBehaviour. |
+| [`IFactoryAsyncPooled<in TParam, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam-tinterface) | interface | `IFactory`, `IDisposable` | 2 | Async pooled factory that passes one parameter to each spawned instance. |
+| [`IFactoryAsyncPooled<in TParam1, in TParam2, in TParam3, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-intparam3-tinterface) | interface | `IFactory`, `IDisposable` | 2 | Async pooled factory that passes three parameters to each spawned instance. |
+| [`IFactoryAsyncPooled<in TParam1, in TParam2, TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-tinterface) | interface | `IFactory`, `IDisposable` | 2 | Async pooled factory that passes two parameters to each spawned instance. |
+| [`IFactoryAsyncPooled<TInterface>`](/game-api/types/assembly-other/ifactoryasyncpooled-tinterface) | interface | `IFactory`, `IDisposable` | 2 | Async factory that reuses instances from a pool, with no spawn parameters. |
+| [`IFactoryConstructable`](/game-api/types/assembly-other/ifactoryconstructable) | interface |  | 1 | MonoBehaviour that an async factory sets up straight after creating it, in place of a constructor. |
+| [`IFactoryConstructable<in TParam1, in TParam2, in TParam3>`](/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2-intparam3) | interface |  | 1 | MonoBehaviour that an async factory sets up with three parameters straight after creating it. |
+| [`IFactoryConstructable<in TParam1, in TParam2>`](/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2) | interface |  | 1 | MonoBehaviour that an async factory sets up with two parameters straight after creating it. |
+| [`IFactoryConstructable<in TParam>`](/game-api/types/assembly-other/ifactoryconstructable-intparam) | interface |  | 1 | MonoBehaviour that an async factory sets up with one parameter straight after creating it. |
+| [`IPooledInstance`](/game-api/types/assembly-other/ipooledinstance) | interface | `IDespawnable` | 1 | Object from a pooled factory that is told when it is spawned and despawned. |
+| [`IPooledInstance<in TParam1, in TParam2, in TParam3>`](/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2-intparam3) | interface | `IDespawnable` | 1 | Pooled object that gets three parameters each time it is spawned. |
+| [`IPooledInstance<in TParam1, in TParam2>`](/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2) | interface | `IDespawnable` | 1 | Pooled object that gets two parameters each time it is spawned. |
+| [`IPooledInstance<in TParam>`](/game-api/types/assembly-other/ipooledinstance-intparam) | interface | `IDespawnable` | 1 | Pooled object that gets one parameter each time it is spawned. |
 
 ## Alta.Values
 

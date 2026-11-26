@@ -1,6 +1,6 @@
 ---
 title: "RandomOffsetFilter.Create"
-description: "class RandomOffsetFilter.Create in Root.Township."
+description: "Editor menu entry for creating a RandomOffsetFilter asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomOffsetFilter.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `RandomOffsetFilter` asset.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Nested in** [`RandomOffsetFilter`](/game-api/types/global-q-r/randomoffsetfilter)

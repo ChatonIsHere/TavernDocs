@@ -1,6 +1,6 @@
 ---
 title: "ProgressionSettings.PathData"
-description: "abstract class ProgressionSettings.PathData in Root.Township."
+description: "Private base for per-path entries in ProgressionSettings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProgressionSettings.PathData
 
 An **private abstract class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private base for per-path entries in `ProgressionSettings`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`ProgressionSettings`](/game-api/types/global-p/progressionsettings)
@@ -24,21 +26,21 @@ An **private abstract class** in `Root.Township`, no namespace. Reach it through
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string name"}</code> | Label set to the path name, for the inspector. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | Backing field for `Path`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-path-2" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-path-2" /><code><Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" Path { get; }"}</code> | The progression path the entry is for. |

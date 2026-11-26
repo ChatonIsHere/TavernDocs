@@ -1,6 +1,6 @@
 ---
 title: "ForgedPointCollectionSaveData.Element"
-description: "class ForgedPointCollectionSaveData.Element in Root.Township."
+description: "Saved state of one forged point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForgedPointCollectionSaveData.Element
 
 A **class** in `Root.Township`, no namespace.
+
+Saved state of one forged point.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`ForgedPointCollectionSaveData`](/game-api/types/global-e-h/forgedpointcollectionsavedata)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-progress" /><code>{"float progress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-progress" /><code>{"float progress"}</code> | How far the point has been forged. |

@@ -1,6 +1,6 @@
 ---
 title: "StringBuilderReplacer"
-description: "class StringBuilderReplacer in Root.Township."
+description: "BaseReplacer that holds a StringBuilder for building replacement text for its target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StringBuilderReplacer
 
 A **class** in `Root.Township`, no namespace.
+
+`BaseReplacer` that holds a `StringBuilder` for building replacement text for its target.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`BaseReplacer`](/game-api/types/global-a-b/basereplacer)
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-builder" /><code>{"private StringBuilder builder"}</code> |
-| <Link id="m-identation" /><code>{"private string identation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-builder" /><code>{"private StringBuilder builder"}</code> | The string builder. |
+| <Link id="m-identation" /><code>{"private string identation"}</code> | Indentation string; set to empty and never used here. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-append" /><code>{"void Append(string text)"}</code> |
-| <Link id="m-appendline" /><code>{"void AppendLine(string line)"}</code> |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-append" /><code>{"void Append(string text)"}</code> | Adds text to the builder. |
+| <Link id="m-appendline" /><code>{"void AppendLine(string line)"}</code> | Adds a line to the builder. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the built text. |

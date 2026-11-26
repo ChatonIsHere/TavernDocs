@@ -1,6 +1,6 @@
 ---
 title: "RenderingMaps"
-description: "enum RenderingMaps in Root.Township."
+description: "Choice between the standard and custom rendering maps."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RenderingMaps
 
 An **enum** in `Root.Township`, no namespace.
+
+Choice between the standard and custom rendering maps.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 

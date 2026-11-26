@@ -1,6 +1,6 @@
 ---
 title: "StaticBatchedRecombiner"
-description: "static class StaticBatchedRecombiner in Root.Township."
+description: "Merges all mesh renderers under a transform into one mesh per material (split at 65000 vertices), including ones already statically batched."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Merges all mesh renderers under a transform into one mesh per material (split at 65000 vertices), including ones already statically batched. Removes the originals.
+
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested types** [`AnchoredList<T>`](/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t), [`WorkingMesh`](/game-api/types/global-s/staticbatchedrecombiner-workingmesh)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-recombine" /><code>{"static void Recombine(Transform parent)"}</code> | Combines child meshes by material into new `Recombined` objects on the Terrain layer, skipping impostors and deleting the old renderers. |

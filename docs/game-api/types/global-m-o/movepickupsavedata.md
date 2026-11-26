@@ -1,6 +1,6 @@
 ---
 title: "MovePickupSaveData"
-description: "class MovePickupSaveData in Root.Township."
+description: "Save data (version 2) for MovePickup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MovePickupSaveData
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data (version 2) for `MovePickup`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`NewSaveData<MovePickup, MovePickupSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,7 +27,7 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-movement" /><code>{"float movement"}</code> |
-| <Link id="m-velocity" /><code>{"float velocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-movement" /><code>{"float movement"}</code> | Saved distance moved along the axis. |
+| <Link id="m-velocity" /><code>{"float velocity"}</code> | Saved movement speed. |

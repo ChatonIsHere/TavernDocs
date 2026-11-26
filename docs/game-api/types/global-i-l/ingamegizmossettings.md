@@ -1,6 +1,6 @@
 ---
 title: "InGameGizmosSettings"
-description: "class InGameGizmosSettings in Root.Township."
+description: "Global settings asset holding the pooled line and sphere gizmo prefabs, with static helpers to draw debug lines and spheres in the game world."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InGameGizmosSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings asset holding the pooled line and sphere gizmo prefabs, with static helpers to draw debug lines and spheres in the game world. Get it through `GlobalSettings<InGameGizmosSettings>.Instance`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`GlobalSettings<InGameGizmosSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -29,24 +31,24 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-linedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> |
-| <Link id="m-spheredefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sphereDefinition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-linedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> | Pool definition for the line gizmo prefab used by `DrawLine`. |
+| <Link id="m-spheredefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sphereDefinition"}</code> | Pool definition for the sphere gizmo prefab used by `DrawSphere`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-color" /><code>{"static Color Color { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-color" /><code>{"static Color Color { get; set; }"}</code> | Colour applied to each gizmo when it is taken from the pool. Set it before calling `DrawLine` or `DrawSphere`. Defaults to white. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-drawline" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Vector3 from, Vector3 to)"}</code> |
-| <Link id="m-drawline-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Transform from, Transform to, Vector3 offsetFrom, Vector3 offsetTo)"}</code> |
-| <Link id="m-drawsphere" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Vector3 position, float radius)"}</code> |
-| <Link id="m-drawsphere-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Transform position, float radius, Vector3 offset)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-drawline" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Vector3 from, Vector3 to)"}</code> | Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it. |
+| <Link id="m-drawline-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawLine(Transform from, Transform to, Vector3 offsetFrom, Vector3 offsetTo)"}</code> | Takes an `InGameLineGizmo` from the pool and places it between two world points, or between two transforms with local offsets. Returns it so you can release it. |
+| <Link id="m-drawsphere" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Vector3 position, float radius)"}</code> | Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius. |
+| <Link id="m-drawsphere-2" /><code>{"static "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" DrawSphere(Transform position, float radius, Vector3 offset)"}</code> | Takes an `InGameSphereGizmo` from the pool and places it at a world point, or on a transform with an offset, at the given radius. |

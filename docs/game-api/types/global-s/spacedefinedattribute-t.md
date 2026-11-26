@@ -33,11 +33,11 @@ Base for trigger areas whose effect follows a network of connected `SpacePoint`s
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-localplayer" /><code>{"private Transform localPlayer"}</code> |
-| <Link id="m-timestriggered" /><code>{"private int timesTriggered"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-localplayer" /><code>{"private Transform localPlayer"}</code> | Transform of the collider that entered, treated as the local player. |
+| <Link id="m-timestriggered" /><code>{"private int timesTriggered"}</code> | Count of colliders currently inside, so enter and exit run only once. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Handle of the closest point update. |
 
 </details>
 
@@ -58,10 +58,10 @@ Base for trigger areas whose effect follows a network of connected `SpacePoint`s
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
-| <Link id="m-updateclosest" /><code>{"private void UpdateClosest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | On the first overlapping collider, tracks it as the local player, starts updating the closest point and calls `EnterArea`. |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> | When the last collider leaves, stops updating and calls `ExitArea`. |
+| <Link id="m-updateclosest" /><code>{"private void UpdateClosest()"}</code> | Finds the nearest line between connected points to the player and sends the blended weight via `SendNewCloserPoint`. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "Gatherer"
-description: "class Gatherer in Root.Township."
+description: "Skill that, when a pouch is thrown, pulls nearby loose pickups of the pouch's docked type into it after a delay."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Gatherer
 
 A **class** in `Root.Township`, no namespace.
+
+Skill that, when a pouch is thrown, pulls nearby loose pickups of the pouch's docked type into it after a delay. The server docks them; clients show them flying in.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`PickupBasedSkill`](/game-api/types/global-p/pickupbasedskill)
@@ -28,37 +30,37 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activegatherers" /><code>{"private HashSet<Rigidbody> activeGatherers"}</code> |
-| <Link id="m-cangathercraftedpickups" /><code>{"private bool canGatherCraftedPickups"}</code> |
-| <Link id="m-cangatherkinematicpickups" /><code>{"private bool canGatherKinematicPickups"}</code> |
-| <Link id="m-dockdelay" /><code>{"private float dockDelay"}</code> |
-| <Link id="m-dockedpickupsidentifiers" /><code>{"private List<uint> dockedPickupsIdentifiers"}</code> |
-| <Link id="m-dockingrange" /><code>{"private float dockingRange"}</code> |
-| <Link id="m-trainingpouchitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" trainingPouchItem"}</code> |
-| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activegatherers" /><code>{"private HashSet<Rigidbody> activeGatherers"}</code> | Pouches waiting to dock, so they don't gather each other. |
+| <Link id="m-cangathercraftedpickups" /><code>{"private bool canGatherCraftedPickups"}</code> | Allows gathering crafted pickups. |
+| <Link id="m-cangatherkinematicpickups" /><code>{"private bool canGatherKinematicPickups"}</code> | Allows gathering kinematic pickups. |
+| <Link id="m-dockdelay" /><code>{"private float dockDelay"}</code> | Seconds between letting go and gathering. |
+| <Link id="m-dockedpickupsidentifiers" /><code>{"private List<uint> dockedPickupsIdentifiers"}</code> | Entity IDs of the pickups gathered last time, sent to clients. |
+| <Link id="m-dockingrange" /><code>{"private float dockingRange"}</code> | Radius gathered around the pouch. |
+| <Link id="m-trainingpouchitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" trainingPouchItem"}</code> | Training pouch item that also counts as a pouch. |
+| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> | Docked item types this skill works with. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |
-| <Link id="m-movepickuptopouch" /><code>{"void MovePickupToPouch("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
-| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> |
-| <Link id="m-effectsrequested" /><code>{"protected override void EffectsRequested("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" targetEntity, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, bool isLocalPlayer)"}</code> |
-| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deregister" /><code>{"override void Deregister("}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | When an active pouch is let go, starts `DockDelay` on the player. |
+| <Link id="m-movepickuptopouch" /><code>{"void MovePickupToPouch("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Client visual: spawns a ghost of the pickup that moves into the pouch's dock. |
+| <Link id="m-validatepickup" /><code>{"override bool ValidatePickup("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" pickupHandler)"}</code> | True for a pouch or training pouch whose docked type is in `validItems`. |
+| <Link id="m-effectsrequested" /><code>{"protected override void EffectsRequested("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" targetEntity, "}<Link to="/game-api/types/global-t-x/toolbasedskillstatus">{"ToolBasedSkillStatus"}</Link>{" status, bool isLocalPlayer)"}</code> | Client: plays the fly-in effect for each docked pickup once it has spawned. |
+| <Link id="m-requesttooleffect" /><code>{"protected override void RequestToolEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Starts the skill effect on the pouch's renderers. |
+| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | When the skill was consumed, also syncs the IDs of the pickups that were docked (up to 63). |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-dock" /><code>{"private void Dock("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |
-| <Link id="m-dockdelay-2" /><code>{"private IEnumerator DockDelay("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler) (iterator)"}</code> |
-| <Link id="m-getpouchrenderers" /><code>{"private IEnumerable<MeshRenderer> GetPouchRenderers("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" pouchEntity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dock" /><code>{"private void Dock("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | Finds allowed pickups within `dockingRange` of the pouch, runs the skill and docks them into the pouch. |
+| <Link id="m-dockdelay-2" /><code>{"private IEnumerator DockDelay("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler) (iterator)"}</code> | Coroutine: waits `dockDelay`, then docks if the skill is still unlocked; otherwise turns the effect off. |
+| <Link id="m-getpouchrenderers" /><code>{"private IEnumerable<MeshRenderer> GetPouchRenderers("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" pouchEntity)"}</code> | Pouch renderers, without those of the item docked in it, for the skill effect. |
 
 </details>

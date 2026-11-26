@@ -1,6 +1,6 @@
 ---
 title: "RandomSpawnRectangleSaveData"
-description: "class RandomSpawnRectangleSaveData in Root.Township."
+description: "Save data for RandomSpawnRectangle: the distribution, box size, count range and tilt limit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomSpawnRectangleSaveData
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for `RandomSpawnRectangle`: the distribution, box size, count range and tilt limit.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`NewSaveData<RandomSpawnRectangle, RandomSpawnRectangleSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,10 +27,10 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-distribution" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
-| <Link id="m-maximum" /><code>{"int maximum"}</code> |
-| <Link id="m-minimum" /><code>{"int minimum"}</code> |
-| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> |
-| <Link id="m-size" /><code>{"Vector3 size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distribution" /><code><Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | Saved distribution to spawn from. |
+| <Link id="m-maximum" /><code>{"int maximum"}</code> | Saved upper bound on the item count. |
+| <Link id="m-minimum" /><code>{"int minimum"}</code> | Saved lower bound on the item count. |
+| <Link id="m-minimumup" /><code>{"float minimumUp"}</code> | Saved tilt limit. |
+| <Link id="m-size" /><code>{"Vector3 size"}</code> | Saved spawn box size. |

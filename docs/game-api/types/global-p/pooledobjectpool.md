@@ -1,6 +1,6 @@
 ---
 title: "PooledObjectPool"
-description: "class PooledObjectPool in Root.Township."
+description: "The default pool for a PooledObjectDefinition: reuses inactive instances and makes new ones from the prefab when empty."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledObjectPool
 
 A **class** in `Root.Township`, no namespace.
+
+The default pool for a `PooledObjectDefinition`: reuses inactive instances and makes new ones from the prefab when empty.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`BasicPooledObjectPool`](/game-api/types/global-a-b/basicpooledobjectpool)
@@ -26,15 +28,15 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for release errors. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-release" /><code>{"override void Release("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> |
-| <Link id="m-request" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-release" /><code>{"override void Release("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject, Action releaseCallback)"}</code> | Deactivates and stores the object, or destroys it if the pool is over its maximum size. Logs double or destroyed releases. |
+| <Link id="m-request" /><code>{"override "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" Request(Vector3 position, Quaternion rotation)"}</code> | Takes a stored instance or makes one, places it and finishes the request. |

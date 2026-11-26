@@ -1,6 +1,6 @@
 ---
 title: "NotConditionAttribute"
-description: "class NotConditionAttribute in Alta.Attributes."
+description: "Inspector attribute: hides the field while the named bool is true and shows it while it is false."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NotConditionAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Inspector attribute: hides the field while the named bool is true and shows it while it is false. The reverse of `ConditionAttribute`'s default.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`ConditionAttribute`](/game-api/types/assembly-other/conditionattribute)

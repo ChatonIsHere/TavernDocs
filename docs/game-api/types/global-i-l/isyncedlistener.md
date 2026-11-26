@@ -1,6 +1,6 @@
 ---
 title: "ISyncedListener"
-description: "interface ISyncedListener in Root.Township."
+description: "Obsolete."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Obsolete. A synced class that `ClassSerializationHelper` calls after reading it from the network.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Attributes** `Obsolete`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-aftersyncreceived" /><code>{"void AfterSyncReceived()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-aftersyncreceived" /><code>{"void AfterSyncReceived()"}</code> | Called after the synced data has been read. |

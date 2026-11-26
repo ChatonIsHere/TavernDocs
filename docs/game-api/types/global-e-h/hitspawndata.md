@@ -1,6 +1,6 @@
 ---
 title: "HitSpawnData"
-description: "class HitSpawnData in Root.Township."
+description: "Spawn data that carries the impact hit which caused the spawn."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HitSpawnData
 
 A **class** in `Root.Township`, no namespace.
+
+Spawn data that carries the impact hit which caused the spawn.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`SpawnData`](/game-api/types/global-s/spawndata)
@@ -23,6 +25,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hit" /><code><Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" Hit { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hit" /><code><Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" Hit { get; }"}</code> | The hit that caused the spawn. |

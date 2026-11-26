@@ -29,20 +29,20 @@ Component holding one float between a min and max. The server sets it and it rea
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bits" /><code>{"private int bits"}</code> |
-| <Link id="m-changed" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" changed"}</code> |
-| <Link id="m-hasreceived" /><code>{"private bool hasReceived"}</code> |
-| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |
-| <Link id="m-max" /><code>{"private float max"}</code> |
-| <Link id="m-min" /><code>{"private float min"}</code> |
-| <Link id="m-prepareforwritetimer" /><code>{"private static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> |
-| <Link id="m-remotelerppersecond" /><code>{"private float remoteLerpPerSecond"}</code> |
-| <Link id="m-serializetimer" /><code>{"private static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> |
-| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
-| <Link id="m-value" /><code>{"private float value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bits" /><code>{"private int bits"}</code> | Bits used to send the value between `min` and `max`. |
+| <Link id="m-changed" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" changed"}</code> | Unity event fired when the value changes. |
+| <Link id="m-hasreceived" /><code>{"private bool hasReceived"}</code> | Whether a client has had its first value; the first one is applied at once. |
+| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> | True when the value needs sending. |
+| <Link id="m-max" /><code>{"private float max"}</code> | Highest value. |
+| <Link id="m-min" /><code>{"private float min"}</code> | Lowest value. |
+| <Link id="m-prepareforwritetimer" /><code>{"private static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Shared timing stats for `PrepareForWrite`. |
+| <Link id="m-remotelerppersecond" /><code>{"private float remoteLerpPerSecond"}</code> | If above 0, clients ease toward new values at this rate instead of snapping. |
+| <Link id="m-serializetimer" /><code>{"private static "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Shared timing stats for `Serialize`. |
+| <Link id="m-targetvalue" /><code>{"private float targetValue"}</code> | Value a client is easing toward. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Update handle while easing. |
+| <Link id="m-value" /><code>{"private float value"}</code> | Current value; also the starting value on the server. |
 
 </details>
 
@@ -74,10 +74,10 @@ Component holding one float between a min and max. The server sets it and it rea
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-remoteupdate" /><code>{"private void RemoteUpdate()"}</code> |
-| <Link id="m-setvalueinternal" /><code>{"private void SetValueInternal(float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Stops the remote lerp update. |
+| <Link id="m-remoteupdate" /><code>{"private void RemoteUpdate()"}</code> | Client: eases the value toward the last received one each frame, then stops. |
+| <Link id="m-setvalueinternal" /><code>{"private void SetValueInternal(float value)"}</code> | Sets the value, marks it for sending and fires both change events if it changed. |
 
 </details>

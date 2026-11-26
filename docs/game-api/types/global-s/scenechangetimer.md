@@ -1,6 +1,6 @@
 ---
 title: "SceneChangeTimer"
-description: "class SceneChangeTimer in Root.Township."
+description: "Empty component in this build."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SceneChangeTimer
 
 A **class** in `Root.Township`, no namespace.
+
+Empty component in this build.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`

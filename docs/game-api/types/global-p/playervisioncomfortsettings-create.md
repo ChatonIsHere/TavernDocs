@@ -1,6 +1,6 @@
 ---
 title: "PlayerVisionComfortSettings.Create"
-description: "class PlayerVisionComfortSettings.Create in Root.Township."
+description: "Editor menu entry for creating the PlayerVisionComfortSettings global settings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerVisionComfortSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating the `PlayerVisionComfortSettings` global settings asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerVisionComfortSettings`](/game-api/types/global-p/playervisioncomfortsettings)

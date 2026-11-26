@@ -1,6 +1,6 @@
 ---
 title: "SetStepSoundOverrideLocoAction"
-description: "class SetStepSoundOverrideLocoAction in Root.Township."
+description: "Locomotion modifier action asset that swaps the player's footstep sound while it is active, for example to wading in water."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetStepSoundOverrideLocoAction
 
 A **class** in `Root.Township`, no namespace.
+
+Locomotion modifier action asset that swaps the player's footstep sound while it is active, for example to wading in water.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`LocomotionModifierAction`](/game-api/types/global-i-l/locomotionmodifieraction)
@@ -27,15 +29,15 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-stepsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stepSound"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stepsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" stepSound"}</code> | The footstep sound to use while the action runs. Defaults to `WaterWading`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |
-| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-begin" /><code>{"override void Begin("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Sets the player's locomotion `OverrideStepSound` to `stepSound`. |
+| <Link id="m-finish" /><code>{"override void Finish("}<Link to="/game-api/types/global-s/smoothlocomotionplayercontroller">{"SmoothLocomotionPlayerController"}</Link>{" player)"}</code> | Clears the step sound override back to `SoundEffect.None`. |

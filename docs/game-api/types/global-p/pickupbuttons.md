@@ -1,6 +1,6 @@
 ---
 title: "PickupButtons"
-description: "class PickupButtons in Root.Township."
+description: "Component on a pickup with buttons that stops the buttons' colliders counting as the pickup's own colliders."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupButtons
 
 A **class** in `Root.Township`, no namespace.
+
+Component on a pickup with buttons that stops the buttons' colliders counting as the pickup's own colliders.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,8 +28,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Removes every child `PhysicalButton` collider from the pickup's `Colliders` list. |
 
 </details>

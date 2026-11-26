@@ -1,6 +1,6 @@
 ---
 title: "ModBase"
-description: "abstract class ModBase in Root.Township."
+description: "Old in-game base class for a mod component: subclass it, add it to a GameObject, and it calls Initialize on start and Terminate on destroy, logging each."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ModBase
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Old in-game base class for a mod component: subclass it, add it to a GameObject, and it calls `Initialize` on start and `Terminate` on destroy, logging each. Used by the game's own debug mods such as `FixMod`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** `MonoBehaviour`
@@ -24,15 +26,15 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"abstract string Name { get; }"}</code> | Display name used in the load and unload log lines. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> |
-| <Link id="m-ondestroy" /><code>{"protected void OnDestroy()"}</code> |
-| <Link id="m-start" /><code>{"protected void Start()"}</code> |
-| <Link id="m-terminate" /><code>{"protected abstract void Terminate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"protected abstract void Initialize()"}</code> | Your mod's setup. If it throws, the error is logged and the component destroys itself. |
+| <Link id="m-ondestroy" /><code>{"protected void OnDestroy()"}</code> | Calls `Terminate` and logs that the mod unloaded, or logs the error. |
+| <Link id="m-start" /><code>{"protected void Start()"}</code> | Destroys any other component on the GameObject with the same type name (a reload), then calls `Initialize`. |
+| <Link id="m-terminate" /><code>{"protected abstract void Terminate()"}</code> | Your mod's cleanup, called when the component is destroyed. |

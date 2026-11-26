@@ -1,6 +1,6 @@
 ---
 title: "GhostHandSettings.Create"
-description: "class GhostHandSettings.Create in Root.Township."
+description: "Editor menu entry for creating a GhostHandSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GhostHandSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `GhostHandSettings` asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GhostHandSettings`](/game-api/types/global-e-h/ghosthandsettings)

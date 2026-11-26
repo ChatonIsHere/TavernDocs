@@ -1,6 +1,6 @@
 ---
 title: "IPointerPrefabBakable"
-description: "interface IPointerPrefabBakable in Root.Township."
+description: "Component with a bake step that FlattenAndCleanEmptyAtBakeTime runs at build time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,10 +12,12 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Component with a bake step that `FlattenAndCleanEmptyAtBakeTime` runs at build time.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"void Bake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"void Bake()"}</code> | Runs the bake step. |

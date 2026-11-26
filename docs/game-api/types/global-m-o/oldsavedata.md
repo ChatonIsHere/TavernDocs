@@ -29,9 +29,9 @@ Base for retired save data formats. Its `Apply` refuses to load them.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger used when something tries to apply old save data directly. |
 
 </details>
 

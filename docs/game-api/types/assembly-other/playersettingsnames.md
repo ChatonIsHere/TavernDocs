@@ -1,6 +1,6 @@
 ---
 title: "PlayerSettingsNames"
-description: "class PlayerSettingsNames in Alta.IO."
+description: "Preference key names for the login screen."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.IO`, no namespace.
 
+Preference key names for the login screen.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 
 ## Constructors
@@ -22,7 +24,7 @@ A **class** in `Alta.IO`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> |
-| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-rememberlogindetails" /><code>{"const string RememberLoginDetails"}</code> | Key for whether to remember login details (`rememberLogin`). |
+| <Link id="m-savedusername" /><code>{"const string SavedUsername"}</code> | Key for the saved username (`savedUsername`). |

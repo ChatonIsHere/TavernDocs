@@ -1,6 +1,6 @@
 ---
 title: "TeleportationPointSaveData"
-description: "class TeleportationPointSaveData in Root.Township."
+description: "Save data for TeleportationPoint (version 1)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TeleportationPointSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for `TeleportationPoint` (version 1).
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`NewSaveData<TeleportationPoint, TeleportationPointSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,7 +27,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> |
-| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mode" /><code><Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode"}</code> | Saved teleport mode. |
+| <Link id="m-targetposition" /><code>{"Vector3 targetPosition"}</code> | Saved target position, local to the teleportation point. |

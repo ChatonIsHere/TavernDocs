@@ -1,6 +1,6 @@
 ---
 title: "GetInteractionPlayer"
-description: "class GetInteractionPlayer in Root.Township."
+description: "Passes the player who starts or stops using an interactable on to player events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GetInteractionPlayer
 
 A **class** in `Root.Township`, no namespace.
+
+Passes the player who starts or stops using an interactable on to player events.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |
-| <Link id="m-interactionended" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" interactionEnded"}</code> |
-| <Link id="m-interactionstarted" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" interactionStarted"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> | Interactable watched. |
+| <Link id="m-interactionended" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" interactionEnded"}</code> | Event fired with the player when they stop interacting. |
+| <Link id="m-interactionstarted" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" interactionStarted"}</code> | Event fired with the player when they start interacting. |
 
 </details>
 
@@ -39,10 +41,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ended" /><code>{"private void Ended("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-started" /><code>{"private void Started("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the interactable's start and end events. |
+| <Link id="m-ended" /><code>{"private void Ended("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Fires `interactionEnded` with the interactor's player. |
+| <Link id="m-started" /><code>{"private void Started("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Fires `interactionStarted` with the interactor's player. |
 
 </details>

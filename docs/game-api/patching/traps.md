@@ -14,6 +14,13 @@ Things in Alta's code that look like they work one way and don't, found while wr
 - The server applies any player state change a client asks for, checked only by that state's own `ValidateStateActivation`.
 - `PurchasedList.ValidatePlayersOwnedItems` always says yes, so `CustomizationState.Sync` takes whatever cosmetics a client sends.
 - `ImpactDetector.SyncImpact` takes a tool hit only from the tool's last holder, but hits by a tool on anything other than a player are decided on the swinging player's own game.
+- `PlayerControllerMultiLockModel`: while any lock is held, `PlayerHealth` ignores all damage, and the server takes `IsLocked` from the owning player's own message. A modified client can make itself unhurtable.
+- Fall damage: `SmoothLocomotion` sends the fall distance and the server applies whatever it's told.
+- `SparkSecondaryDetector` takes a spark point (anywhere within 10 m) and an effectiveness from the client and starts fires from them. `ClientSideNailHitSync` takes a client-reported effectiveness for nail damage on stations.
+- `SocialTabletActionSyncStruct`: the server raises its report, ban and unban console events on the client's word alone, so those events can be faked.
+- `SpiritModeDoorway` applies spirit mode with whatever `PlayerUnlock` the client's message names. `TwoStepLever`, `LongHoldInteractable`, `ItemShooter.SyncShoot` and bow shots (`BowString`) also act on the client's say-so.
+- `ServerSettingsSync.IsServerSyncPermitted` always says yes in the game. TavernLib limits it to `owner` and `moderator`.
+- `InGameInspector`'s command tool runs any command a client sends it through `CommandService.Handle`, with the only permission check on the client. No prefab in this build carries `InGameInspector`, so nothing can reach it, but a mod that spawns one opens it up.
 
 ## Limits that break quietly
 
@@ -48,6 +55,8 @@ Things in Alta's code that look like they work one way and don't, found while wr
 - A `TimedStatModifier` that was loaded or received over the network doesn't call `OnRemoved` when it runs out.
 - `StatModifier.UpdateValue` always writes the buff fields, even on a modifier that isn't a buff.
 - `SerializedSavedDynamicObject.Load` is obsolete and spawns network entities twice; use `LoadInto`.
+- Save migrations that lose data: `FireSaveData1` (fuel progress), `LootModuleSaveData3` and `4` (`isOneOff`, and the fail chance resets), `EmbeddableSaveData1` (embeds), `GlobalPagesManagerSaveData1` (every page), `MovePickupSaveData1` and `LogicFloatChangeOnBoolSaveData2`. `CaveLayerManagerSaveData3.Migrate` probably throws. `CookingPot`'s load never restores the cooking stage.
+- `SavingSystem.Reinitialize` only registers `[SaveStructure]` classes from the game's own assembly, so a mod's save data classes need a patch there to be saved at all.
 - Never raised: `StaticEnvironmentPieceInstance.Released`, `PlayerScreenFader.ScreenFaded`. Never set: `SteamVRPose.IsConnected`, `Beam.Parent`, `Command.Method`, `Spriggull.IdleStart`, `GenerationCore.IsDynamic`.
 - Not read anywhere: most of `MiningSettings` (only haptics, the strike sound value and drop speed are), `ClimberSettings` (climbing uses `ClimbingSettings`), `PickupTypeSettings.WeightMaxPerHand` and `WeightPenalty`, and these `ServerSettings`: `RespawnTimeSeconds`, `HandoverRequireConfirmation`, `AvoidSpawnCollectedPages`, `EmptyServerShutdownTimeInSeconds`, `WipesWhenEmpty`, `HasRunRepairBoxFix`.
 

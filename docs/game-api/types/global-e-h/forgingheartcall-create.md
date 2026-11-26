@@ -1,6 +1,6 @@
 ---
 title: "ForgingHeartCall.Create"
-description: "class ForgingHeartCall.Create in Root.Township."
+description: "Editor menu entry for creating a ForgingHeartCall asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForgingHeartCall.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `ForgingHeartCall` asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`ForgingHeartCall`](/game-api/types/global-e-h/forgingheartcall)

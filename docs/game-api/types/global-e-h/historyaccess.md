@@ -29,12 +29,12 @@ Component front for an undo and redo history, raising bool events when undo or r
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |
-| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |
-| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> |
-| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> | Last known redo state. |
+| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> | Last known undo state. |
+| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" redoPossibleChanged"}</code> | Event raised with whether redo is now possible. |
+| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" undoPossibleChanged"}</code> | Event raised with whether undo is now possible. |
 
 </details>
 
@@ -64,9 +64,9 @@ Component front for an undo and redo history, raising bool events when undo or r
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |
-| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> | Updates the undo and redo state and raises `ItemPushed` when the history gets a new action. |
+| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> | Raises the undo and redo events when either becomes possible or impossible. |
 
 </details>

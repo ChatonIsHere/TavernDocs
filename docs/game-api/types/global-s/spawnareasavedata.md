@@ -1,6 +1,6 @@
 ---
 title: "SpawnAreaSaveData"
-description: "class SpawnAreaSaveData in Root.Township."
+description: "Save data for a SpawnArea (version 1): its size and placement settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnAreaSaveData
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for a `SpawnArea` (version 1): its size and placement settings.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`NewSaveData<SpawnArea, SpawnAreaSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,10 +27,10 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> |
-| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> |
-| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> |
-| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> |
-| <Link id="m-size" /><code>{"float size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-avoidlayers" /><code>{"int avoidLayers"}</code> | Layer mask of things to avoid spawning on. |
+| <Link id="m-groundlayers" /><code>{"int groundLayers"}</code> | Layer mask of ground to spawn on. |
+| <Link id="m-isaligningnormal" /><code>{"bool isAligningNormal"}</code> | Whether spawned items align to the ground normal. |
+| <Link id="m-maxacceptableangledot" /><code>{"float maxAcceptableAngleDot"}</code> | Steepest ground allowed, as a dot product. |
+| <Link id="m-size" /><code>{"float size"}</code> | Size of the spawn area. |

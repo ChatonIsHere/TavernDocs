@@ -1,6 +1,6 @@
 ---
 title: "RenderTextureGetter"
-description: "class RenderTextureGetter in Root.Township."
+description: "Client: borrows a temporary render texture on request and hands it to a material and/or camera; releases it on clear or destroy."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RenderTextureGetter
 
 A **class** in `Root.Township`, no namespace.
+
+Client: borrows a temporary render texture on request and hands it to a material and/or camera; releases it on clear or destroy.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,42 +28,42 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cameratorender" /><code>{"private Camera cameraToRender"}</code> |
-| <Link id="m-descriptor" /><code>{"private "}<Link to="/game-api/types/global-s/serializedrendertexturedescriptor">{"SerializedRenderTextureDescriptor"}</Link>{" descriptor"}</code> |
-| <Link id="m-materialindex" /><code>{"private int materialIndex"}</code> |
-| <Link id="m-materialkeyword" /><code>{"private string materialKeyword"}</code> |
-| <Link id="m-materialtosettexture" /><code>{"private Material materialToSetTexture"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cameratorender" /><code>{"private Camera cameraToRender"}</code> | Optional camera whose target texture is set. |
+| <Link id="m-descriptor" /><code>{"private "}<Link to="/game-api/types/global-s/serializedrendertexturedescriptor">{"SerializedRenderTextureDescriptor"}</Link>{" descriptor"}</code> | Settings for the texture to create. |
+| <Link id="m-materialindex" /><code>{"private int materialIndex"}</code> | Shader property ID for `materialKeyword`. |
+| <Link id="m-materialkeyword" /><code>{"private string materialKeyword"}</code> | Material texture property to set, `_MainTex` by default. |
+| <Link id="m-materialtosettexture" /><code>{"private Material materialToSetTexture"}</code> | Optional material that gets the texture. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-rendertexture" /><code>{"RenderTexture RenderTexture { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-rendertexture" /><code>{"RenderTexture RenderTexture { get; private set; }"}</code> | The texture currently held, or null. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-onrendertextureupdated" /><code>{"event Action<RenderTexture> onRenderTextureUpdated"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onrendertextureupdated" /><code>{"event Action<RenderTexture> onRenderTextureUpdated"}</code> | Fired with the new texture (or null) when it changes. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-clear" /><code>{"void Clear()"}</code> |
-| <Link id="m-gettexture" /><code>{"void GetTexture()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clear" /><code>{"void Clear()"}</code> | Releases the texture and tells listeners it's gone. Skipped when headless. |
+| <Link id="m-gettexture" /><code>{"void GetTexture()"}</code> | Gets a temporary texture from the descriptor if there isn't one. Skipped when headless. |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-settexture" /><code>{"private void SetTexture(RenderTexture renderTexture)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Wires the material texture and camera target to update when the texture changes. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Releases the texture. |
+| <Link id="m-settexture" /><code>{"private void SetTexture(RenderTexture renderTexture)"}</code> | Stores the texture and fires `onRenderTextureUpdated`. |
 
 </details>

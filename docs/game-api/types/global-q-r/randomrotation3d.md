@@ -1,6 +1,6 @@
 ---
 title: "RandomRotation3d"
-description: "class RandomRotation3d in Root.Township."
+description: "Generation part that gives its object a fully random rotation when the static generation runs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomRotation3d
 
 A **class** in `Root.Township`, no namespace.
+
+Generation part that gives its object a fully random rotation when the static generation runs.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`GeneratablePart`](/game-api/types/global-e-h/generatablepart)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | Sets the transform to a uniformly random rotation. |

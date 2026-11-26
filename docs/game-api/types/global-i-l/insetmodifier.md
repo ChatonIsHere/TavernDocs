@@ -1,6 +1,6 @@
 ---
 title: "InsetModifier"
-description: "class InsetModifier in Root.Township."
+description: "Forest spawn modifier that sinks each spawn point into the ground by a random depth taken from a curve."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InsetModifier
 
 A **class** in `Root.Township`, no namespace.
+
+Forest spawn modifier that sinks each spawn point into the ground by a random depth taken from a curve.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`SpawnModifierPointNormal`](/game-api/types/global-s/spawnmodifierpointnormal)
@@ -28,14 +30,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-inset" /><code>{"private AnimationCurve inset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inset" /><code>{"private AnimationCurve inset"}</code> | Curve mapping a random 0 to 1 value to how far down to move the point. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" pointNormal, ref float weight)"}</code> | Lowers the point by the `inset` curve evaluated at a random value from the setup's random source. |

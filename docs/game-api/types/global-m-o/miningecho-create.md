@@ -1,6 +1,6 @@
 ---
 title: "MiningEcho.Create"
-description: "class MiningEcho.Create in Root.Township."
+description: "Editor menu entry for creating a MiningEcho skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MiningEcho.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `MiningEcho` skill asset. Not used at runtime.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MiningEcho`](/game-api/types/global-m-o/miningecho)

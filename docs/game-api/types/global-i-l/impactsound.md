@@ -1,6 +1,6 @@
 ---
 title: "ImpactSound"
-description: "class ImpactSound in Root.Township."
+description: "Empty component with no behaviour."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactSound
 
 A **class** in `Root.Township`, no namespace.
+
+Empty component with no behaviour.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`

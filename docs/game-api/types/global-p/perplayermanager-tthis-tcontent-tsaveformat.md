@@ -29,11 +29,11 @@ Base for server singletons that load, cache and save one content object per play
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-contents" /><code>{"private Dictionary<int, TContent> contents"}</code> |
-| <Link id="m-getcontenttasks" /><code>{"private Dictionary<int, Task> getContentTasks"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-contents" /><code>{"private Dictionary<int, TContent> contents"}</code> | Loaded content by player user ID. |
+| <Link id="m-getcontenttasks" /><code>{"private Dictionary<int, Task> getContentTasks"}</code> | In-progress loads by player user ID, so repeated requests wait for the same load. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -58,9 +58,9 @@ Base for server singletons that load, cache and save one content object per play
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> | Saves every loaded player's content without unloading it. Called by the streamer's auto save. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `Instance`, destroying itself if another instance exists. |
 
 </details>

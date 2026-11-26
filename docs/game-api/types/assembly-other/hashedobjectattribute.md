@@ -1,6 +1,6 @@
 ---
 title: "HashedObjectAttribute"
-description: "class HashedObjectAttribute in Alta.Attributes."
+description: "Inspector attribute that marks a field as a hash pointing to an object of a given type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HashedObjectAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Inspector attribute that marks a field as a hash pointing to an object of a given type.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -23,6 +25,6 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-targettype" /><code>{"Type TargetType { get; }"}</code> | Type of object the hash refers to. |

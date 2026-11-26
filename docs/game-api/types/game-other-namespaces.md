@@ -265,7 +265,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`GenericVFXController`](/game-api/types/game-other-namespaces/genericvfxcontroller) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`GenericVFXController`](/game-api/types/game-other-namespaces/genericvfxcontroller) | class | `NetworkEntityBehaviour` | 5 | Networked trigger for a list of pooled particle effects. The server says which effect to play or stop (by index, or -1 for all) and clients spawn them at `spawnPoint`. |
 | [`HandTouchVfxController`](/game-api/types/game-other-namespaces/handtouchvfxcontroller) | class | `GenericVFXController` | 2 | A `GenericVFXController` with two named effects for something a hand touches: one while activating and one when completed. |
 | [`PooledParticleSystem`](/game-api/types/game-other-namespaces/pooledparticlesystem) | class | `PooledObject` | 2 | A pooled VFX object that knows how long it plays. Used by `GenericVFXController` and the downed state effects. |
 | [`RepairBoxVfxController`](/game-api/types/game-other-namespaces/repairboxvfxcontroller) | class | `GenericVFXController` | 5 | VFX controller for the repair box. Each method plays or stops one effect from the `GenericVFXController` list by a configured index. |
@@ -277,14 +277,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ClimbingTowerAnalyticEventType`](/game-api/types/game-other-namespaces/climbingtoweranalyticeventtype) | enum |  | 6 | Kinds of analytics event the climbing tower reports: falls, entering and leaving, checkpoints, and logging in or out in spirit mode. |
-| [`TowerAnalyticsReporter`](/game-api/types/game-other-namespaces/toweranalyticsreporter) | class | `MonoBehaviour` | 2 |  |
+| [`TowerAnalyticsReporter`](/game-api/types/game-other-namespaces/toweranalyticsreporter) | class | `MonoBehaviour` | 2 | Obsolete climbing tower analytics reporter. Its bodies are stubbed out in this build: `Awake` is empty, so `Instance` is never set, and `ReportTowerAnalyticEvent` does nothing. |
 
 ## Features.Analytics.Registration
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AccountRequiredPopupAnalytics`](/game-api/types/game-other-namespaces/accountrequiredpopupanalytics) | class | `MonoBehaviour` | 0 |  |
-| [`SignupAnalyticsReporter`](/game-api/types/game-other-namespaces/signupanalyticsreporter) | class | `MonoBehaviour` | 10 |  |
+| [`AccountRequiredPopupAnalytics`](/game-api/types/game-other-namespaces/accountrequiredpopupanalytics) | class | `MonoBehaviour` | 0 | Obsolete client UI helper that reports the "Choose Registration Or Link Account" screen opening and closing to `SignupAnalyticsReporter`. |
+| [`SignupAnalyticsReporter`](/game-api/types/game-other-namespaces/signupanalyticsreporter) | class | `MonoBehaviour` | 10 | Obsolete client singleton that posts sign-up and account-linking analytics (screens, flow start, finish, errors and durations) through the old API client. |
 
 ## Features.Climbing
 
@@ -292,50 +292,50 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`ClimbingHand`](/game-api/types/game-other-namespaces/climbinghand) | class |  | 20 | One hand's climbing state: grabbing a climbable surface, holding the grip and working out how hard the hand pulls the body. Made per hand by `ClimbingHandler`; the grip is synced to other players. |
 | [`ClimbingHandler`](/game-api/types/game-other-namespaces/climbinghandler) | class |  | 13 | Runs climbing for one player's smooth locomotion: tracks both hands' grips and stamina, moves and turns the body as the hands move, and holds the body up against gravity. |
-| [`ClimbingHandlerAnalytics`](/game-api/types/game-other-namespaces/climbinghandleranalytics) | class |  | 2 |  |
-| [`ClimbingMovementEvent`](/game-api/types/game-other-namespaces/climbingmovementevent) | internal class | `AnalyticsEvent` | 1 |  |
+| [`ClimbingHandlerAnalytics`](/game-api/types/game-other-namespaces/climbinghandleranalytics) | class |  | 2 | Editor-only climbing telemetry: records jump-off speeds and stamina used per climb for the local player. Sending to the API is stubbed out; Ctrl+U writes the records to CSV files in the data folder. |
+| [`ClimbingMovementEvent`](/game-api/types/game-other-namespaces/climbingmovementevent) | internal class | `AnalyticsEvent` | 1 | Analytics event carrying numbered jump velocity, stamina usage and distance climbed properties. Its constructor empties the lists it is given. |
 | [`ClimbingPressureCalculator`](/game-api/types/game-other-namespaces/climbingpressurecalculator) | class |  | 4 | Works out how hard one climbing hand pushes against a surface and how much pressure it has left to resist with. One per hand, built with the other hand for reference. |
-| [`FakeStaminaManager`](/game-api/types/game-other-namespaces/fakestaminamanager) | class | `IHandStaminaManager` | 2 |  |
-| [`HandStaminaManager`](/game-api/types/game-other-namespaces/handstaminamanager) | class | `IHandStaminaManager` | 5 |  |
+| [`FakeStaminaManager`](/game-api/types/game-other-namespaces/fakestaminamanager) | class | `IHandStaminaManager` | 2 | `IHandStaminaManager` with unlimited stamina: always has stamina and processes nothing. |
+| [`HandStaminaManager`](/game-api/types/game-other-namespaces/handstaminamanager) | class | `IHandStaminaManager` | 5 | Per-hand climbing stamina: drains the hand's stamina stat while gripping and regenerates it while not, and asks for the hand shake-off detector while stamina is below full. |
 | [`StaminaUsageRecord`](/game-api/types/game-other-namespaces/staminausagerecord) | internal struct |  | 2 | Internal record of one climb for analytics: distance travelled and the larger stamina use of the two hands. |
 
 ## Features.Core.Device.Pico
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`PicoLoginController`](/game-api/types/game-other-namespaces/picologincontroller) | class | `MonoBehaviour` | 2 |  |
+| [`PicoLoginController`](/game-api/types/game-other-namespaces/picologincontroller) | class | `MonoBehaviour` | 2 | Client menu panel for signing in with a Pico account. Gets a Pico token, then logs in to the game account with platform credentials, or moves on to account registration if none exists. |
 
 ## Features.Gameplay
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AddUnlockToPlayer`](/game-api/types/game-other-namespaces/addunlocktoplayer) | class | `NetworkEntityBehaviour`, `ISavable<AddUnlockToPlayerSaveData>`, `ISavableSave<AddUnlockToPlayerSaveData>`, +1 more | 3 | Networked behaviour that gives a player a permanent `PlayerUnlock`, usually wired to an interaction. The unlock is saved with the object. |
-| [`AddUnlockToPlayerSaveData`](/game-api/types/game-other-namespaces/addunlocktoplayersavedata) | class | `NewSaveData<AddUnlockToPlayer, AddUnlockToPlayerSaveData>` | 1 |  |
-| [`OrbBasinVfxController`](/game-api/types/game-other-namespaces/orbbasinvfxcontroller) | class | `NetworkEntityBehaviour`, `ISavable<OrbBasinVfxControllerSaveData>`, `ISavableSave<OrbBasinVfxControllerSaveData>`, +1 more | 5 |  |
+| [`AddUnlockToPlayerSaveData`](/game-api/types/game-other-namespaces/addunlocktoplayersavedata) | class | `NewSaveData<AddUnlockToPlayer, AddUnlockToPlayerSaveData>` | 1 | Save data (version 1) for `AddUnlockToPlayer`. |
+| [`OrbBasinVfxController`](/game-api/types/game-other-namespaces/orbbasinvfxcontroller) | class | `NetworkEntityBehaviour`, `ISavable<OrbBasinVfxControllerSaveData>`, `ISavableSave<OrbBasinVfxControllerSaveData>`, +1 more | 5 | Plays the particle trail from a climbing tower orb basin to a player: orb obtained, permanent unlock or tower completion. The server picks which and tells clients in the chunk, who play it. |
 | [`OrbBasinVfxControllerSaveData`](/game-api/types/game-other-namespaces/orbbasinvfxcontrollersavedata) | class | `NewSaveData<OrbBasinVfxController, OrbBasinVfxControllerSaveData>` | 3 | Save data for `OrbBasinVfxController`: the state of its three effects. |
-| [`OrbBasinVfxControllerSaveData1`](/game-api/types/game-other-namespaces/orbbasinvfxcontrollersavedata1) | class | `OldSaveData` | 5 |  |
+| [`OrbBasinVfxControllerSaveData1`](/game-api/types/game-other-namespaces/orbbasinvfxcontrollersavedata1) | class | `OldSaveData` | 5 | Old save data (version 1) for `OrbBasinVfxController`, when stamina and climbing unlocks had separate effects. |
 
 ## Features.Gameplay.Activities.Carpentry
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BasicChiselable`](/game-api/types/game-other-namespaces/basicchiselable) | class | `NetworkEntityBehaviour`, `IChiselable` | 5 |  |
+| [`BasicChiselable`](/game-api/types/game-other-namespaces/basicchiselable) | class | `NetworkEntityBehaviour`, `IChiselable` | 5 | Simple chisel target with a health value. The server takes off chisel damage and, when health runs out, fires its broken events on the server and on clients in the chunk. |
 
 ## Features.Gameplay.ClimbingTower
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ClimbingTowerProgressionVisualizer`](/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer) | class | `NetworkEntityBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable`, +3 more | 4 |  |
+| [`ClimbingTowerProgressionVisualizer`](/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer) | class | `NetworkEntityBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable`, +3 more | 4 | Climbing tower gauge and rune display. On clients it lights the rune for the highest orb the local player has and sets the gauge marker to that rune's height. The rune settings are saved. |
 | [`ClimbingTowerProgressionVisualizerSaveData`](/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizersavedata) | class | `NewSaveData<ClimbingTowerProgressionVisualizer, ClimbingTowerProgressionVisualizerSaveData>` | 2 | Save data for `ClimbingTowerProgressionVisualizer`. |
-| [`ClimbingTowerTeleporterNode`](/game-api/types/game-other-namespaces/climbingtowerteleporternode) | class | `NetworkEntityBehaviour`, `ISavable<ClimbingTowerTeleporterNodeSaveData>`, `ISavableSave<ClimbingTowerTeleporterNodeSaveData>`, +1 more | 5 |  |
-| [`ClimbingTowerTeleporterNodeSaveData`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedata) | class | `NewSaveData<ClimbingTowerTeleporterNode, ClimbingTowerTeleporterNodeSaveData>` | 3 |  |
-| [`ClimbingTowerTeleporterNodeSaveDataOld1`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold1) | class | `OldSaveData` | 3 |  |
-| [`ClimbingTowerTeleporterNodeSaveDataOld2`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold2) | class | `OldSaveData` | 4 |  |
-| [`ClimbingTowerTeleporterPerPlayerSaveable`](/game-api/types/game-other-namespaces/climbingtowerteleporterperplayersaveable) | class | `PerPlayerManager<ClimbingTowerTeleporterPerPlayerSaveable, ClimbingTowerTeleporterSave, ClimbingTowerTeleporterSaveData>` | 0 |  |
-| [`ClimbingTowerTeleporterSave`](/game-api/types/game-other-namespaces/climbingtowerteleportersave) | class | `PerPlayerContent<ClimbingTowerTeleporterSaveData>` | 0 |  |
-| [`ClimbingTowerTeleporterSaveData`](/game-api/types/game-other-namespaces/climbingtowerteleportersavedata) | class | `IAltaFileFormat` | 5 |  |
-| [`DisableAfterDuration`](/game-api/types/game-other-namespaces/disableafterduration) | class | `MonoBehaviour` | 0 |  |
-| [`SpiritModeDoorway`](/game-api/types/game-other-namespaces/spiritmodedoorway) | class | `NetworkEntityBehaviour`, `ITeleportAwareTrigger`, `IDontSplit`, +4 more | 5 |  |
+| [`ClimbingTowerTeleporterNode`](/game-api/types/game-other-namespaces/climbingtowerteleporternode) | class | `NetworkEntityBehaviour`, `ISavable<ClimbingTowerTeleporterNodeSaveData>`, `ISavableSave<ClimbingTowerTeleporterNodeSaveData>`, +1 more | 5 | Climbing tower teleporter. The root node at the tower base sends a player to the highest child node they hold the orb for; child nodes send them back to the root; the outside node sends them out of the tower. Teleports run on the server. |
+| [`ClimbingTowerTeleporterNodeSaveData`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedata) | class | `NewSaveData<ClimbingTowerTeleporterNode, ClimbingTowerTeleporterNodeSaveData>` | 3 | Save data (version 3) for `ClimbingTowerTeleporterNode`. |
+| [`ClimbingTowerTeleporterNodeSaveDataOld1`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold1) | class | `OldSaveData` | 3 | Old save data (version 1) for `ClimbingTowerTeleporterNode`, migrated to version 2. |
+| [`ClimbingTowerTeleporterNodeSaveDataOld2`](/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold2) | class | `OldSaveData` | 4 | Old save data (version 2) for `ClimbingTowerTeleporterNode`, when nodes needed an unlock rather than an orb. Migrated to version 3. |
+| [`ClimbingTowerTeleporterPerPlayerSaveable`](/game-api/types/game-other-namespaces/climbingtowerteleporterperplayersaveable) | class | `PerPlayerManager<ClimbingTowerTeleporterPerPlayerSaveable, ClimbingTowerTeleporterSave, ClimbingTowerTeleporterSaveData>` | 0 | Per-player manager for `ClimbingTowerTeleporterSaveData`. Nothing else in the decompiled code uses it. |
+| [`ClimbingTowerTeleporterSave`](/game-api/types/game-other-namespaces/climbingtowerteleportersave) | class | `PerPlayerContent<ClimbingTowerTeleporterSaveData>` | 0 | Per-player content wrapper for `ClimbingTowerTeleporterSaveData`. Nothing else in the decompiled code uses it. |
+| [`ClimbingTowerTeleporterSaveData`](/game-api/types/game-other-namespaces/climbingtowerteleportersavedata) | class | `IAltaFileFormat` | 5 | Per-player binary save holding the last climbing tower teleporter destination. Unused elsewhere in this build. |
+| [`DisableAfterDuration`](/game-api/types/game-other-namespaces/disableafterduration) | class | `MonoBehaviour` | 0 | Turns its GameObject off a set time after it is turned on. |
+| [`SpiritModeDoorway`](/game-api/types/game-other-namespaces/spiritmodedoorway) | class | `NetworkEntityBehaviour`, `ITeleportAwareTrigger`, `IDontSplit`, +4 more | 5 | Trigger doorway in the climbing tower that puts players into spirit mode (sets their current unlock) or takes them out of it as they walk or teleport through. The change is sent as a message and applied on the server. |
 | [`SpiritModeDoorwayMode`](/game-api/types/game-other-namespaces/spiritmodedoorwaymode) | enum |  | 2 | Whether a spirit mode doorway removes spirit mode or adds it when a player goes through. |
 
 ## Features.Gameplay.GameConditions
@@ -343,13 +343,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IGameCondition`](/game-api/types/game-other-namespaces/igamecondition) | interface |  | 2 | A condition in the game that can be checked and tells listeners when it changes. |
-| [`ManualCondition`](/game-api/types/game-other-namespaces/manualcondition) | class | `NetworkEntityBehaviour`, `IGameCondition`, `ISavable<ManualConditionSaveData>`, +2 more | 2 |  |
-| [`ManualConditionSaveData`](/game-api/types/game-other-namespaces/manualconditionsavedata) | class | `NewSaveData<ManualCondition, ManualConditionSaveData>` | 1 |  |
-| [`NetworkedGameConditionEvaluator`](/game-api/types/game-other-namespaces/networkedgameconditionevaluator) | class | `NetworkEntityBehaviour`, `IGameCondition` | 4 |  |
-| [`PendingRepairBoxCompletionCondition`](/game-api/types/game-other-namespaces/pendingrepairboxcompletioncondition) | class | `MonoBehaviour`, `IGameCondition` | 2 |  |
+| [`ManualCondition`](/game-api/types/game-other-namespaces/manualcondition) | class | `NetworkEntityBehaviour`, `IGameCondition`, `ISavable<ManualConditionSaveData>`, +2 more | 2 | `IGameCondition` whose met state is a saved flag set in the Inspector or by save data, not computed. |
+| [`ManualConditionSaveData`](/game-api/types/game-other-namespaces/manualconditionsavedata) | class | `NewSaveData<ManualCondition, ManualConditionSaveData>` | 1 | Save data (version 1) for `ManualCondition`. |
+| [`NetworkedGameConditionEvaluator`](/game-api/types/game-other-namespaces/networkedgameconditionevaluator) | class | `NetworkEntityBehaviour`, `IGameCondition` | 4 | Networked AND of several `IGameCondition`s. The server watches them and sends the combined result to clients, so clients can use it as a condition too. |
+| [`PendingRepairBoxCompletionCondition`](/game-api/types/game-other-namespaces/pendingrepairboxcompletioncondition) | class | `MonoBehaviour`, `IGameCondition` | 2 | `IGameCondition` that is met while a `RepairBox` is still not repaired, and fires its change callback when the box is repaired. |
 | [`RepairableObject`](/game-api/types/game-other-namespaces/repairableobject) | struct |  | 3 | A game-condition entry naming a repairable object by prefab hash and the build state it must reach. |
-| [`RepairableObjectComparisonCondition`](/game-api/types/game-other-namespaces/repairableobjectcomparisoncondition) | class | `NetworkEntityBehaviour`, `IGameCondition`, `ISavable<RepairableObjectComparisonConditionSaveData>`, +2 more | 2 |  |
-| [`RepairableObjectComparisonConditionSaveData`](/game-api/types/game-other-namespaces/repairableobjectcomparisonconditionsavedata) | class | `NewSaveData<RepairableObjectComparisonCondition, RepairableObjectComparisonConditionSaveData>` | 2 |  |
+| [`RepairableObjectComparisonCondition`](/game-api/types/game-other-namespaces/repairableobjectcomparisoncondition) | class | `NetworkEntityBehaviour`, `IGameCondition`, `ISavable<RepairableObjectComparisonConditionSaveData>`, +2 more | 2 | `IGameCondition` met when each listed modifiable static object is in its required built or not-built state, read from `ModifiableStaticManager`. Not met until its save data has loaded. |
+| [`RepairableObjectComparisonConditionSaveData`](/game-api/types/game-other-namespaces/repairableobjectcomparisonconditionsavedata) | class | `NewSaveData<RepairableObjectComparisonCondition, RepairableObjectComparisonConditionSaveData>` | 2 | Save data (version 1) for `RepairableObjectComparisonCondition`. |
 
 ## Features.Gameplay.GameConditions.StaticObjectMapped
 
@@ -361,7 +361,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ChiselableSurfaceDock`](/game-api/types/game-other-namespaces/chiselablesurfacedock) | class | `BasicChiselable` | 0 |  |
+| [`ChiselableSurfaceDock`](/game-api/types/game-other-namespaces/chiselablesurfacedock) | class | `BasicChiselable` | 0 | Placed surface dock that players can chisel off. Server: it ignores hits while any of its docks hold an item, and when broken it is replaced with the unplaced dock prefab. |
 
 ## Features.Gameplay.Progression.QuestMarkers
 
@@ -373,13 +373,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AccessibilitySeatedStandingBoard`](/game-api/types/game-other-namespaces/accessibilityseatedstandingboard) | class | `PopupBoard` | 0 |  |
+| [`AccessibilitySeatedStandingBoard`](/game-api/types/game-other-namespaces/accessibilityseatedstandingboard) | class | `PopupBoard` | 0 | Main menu popup board with seated and standing buttons. In this code the buttons only report the choice to `SignupAnalyticsReporter`. |
 
 ## Features.Main_Menu.Scripts.TalemShop
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IAPViewModel`](/game-api/types/game-other-namespaces/iapviewmodel) | class | `LoggedInTool` | 1 |  |
+| [`IAPViewModel`](/game-api/types/game-other-namespaces/iapviewmodel) | class | `LoggedInTool` | 1 | Client talem shop panel for Quest: shows the talem balance and buys talem packs through `InterfaceResolver.IShopController`. Hidden on Windows and Pico, and when logged out. |
 | [`IShopController`](/game-api/types/game-other-namespaces/ishopcontroller) | interface |  | 2 | Store controller for the Talem shop purchases, got from `InterfaceResolver.IShopController`. In this server build the resolver returns null. |
 | [`PurchaseResult`](/game-api/types/game-other-namespaces/purchaseresult) | class |  | 4 | Result of a Talem shop purchase: success, or a `PurchaseError` saying why it failed. |
 
@@ -387,13 +387,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`NoShopForPlatformError`](/game-api/types/game-other-namespaces/noshopforplatformerror) | internal class | `PurchaseError` | 1 |  |
-| [`NotLoggedInOnPlatformError`](/game-api/types/game-other-namespaces/notloggedinonplatformerror) | class | `PurchaseError` | 1 |  |
-| [`PendingPurchasesError`](/game-api/types/game-other-namespaces/pendingpurchaseserror) | class | `PurchaseError` | 1 |  |
+| [`NoShopForPlatformError`](/game-api/types/game-other-namespaces/noshopforplatformerror) | internal class | `PurchaseError` | 1 | `PurchaseError` meaning the current platform has no talem shop; the message is the platform name. Internal, and not created anywhere in this build. |
+| [`NotLoggedInOnPlatformError`](/game-api/types/game-other-namespaces/notloggedinonplatformerror) | class | `PurchaseError` | 1 | `PurchaseError` meaning the player is not signed in on the platform store; the message is the platform name. Not created anywhere in this build. |
+| [`PendingPurchasesError`](/game-api/types/game-other-namespaces/pendingpurchaseserror) | class | `PurchaseError` | 1 | `PurchaseError` for earlier purchases that are still pending. Not created anywhere in this build. |
 | [`PurchaseError`](/game-api/types/game-other-namespaces/purchaseerror) | class |  | 2 | Base for an error from the Talem shop (the in-game store), made from an exception or a message. |
-| [`UnknownPurchaseError`](/game-api/types/game-other-namespaces/unknownpurchaseerror) | class | `PurchaseError` | 1 |  |
-| [`UnknownPurchaseExceptionError`](/game-api/types/game-other-namespaces/unknownpurchaseexceptionerror) | class | `PurchaseError` | 1 |  |
-| [`UserCancelledError`](/game-api/types/game-other-namespaces/usercancellederror) | class | `PurchaseError` | 1 |  |
+| [`UnknownPurchaseError`](/game-api/types/game-other-namespaces/unknownpurchaseerror) | class | `PurchaseError` | 1 | `PurchaseError` for an unrecognised failure, carrying a message. Not created anywhere in this build. |
+| [`UnknownPurchaseExceptionError`](/game-api/types/game-other-namespaces/unknownpurchaseexceptionerror) | class | `PurchaseError` | 1 | `PurchaseError` wrapping an unexpected exception; its `Message` is the exception's message. Not created anywhere in this build. |
+| [`UserCancelledError`](/game-api/types/game-other-namespaces/usercancellederror) | class | `PurchaseError` | 1 | `PurchaseError` meaning the player cancelled the purchase. Not created anywhere in this build. |
 
 ## Features.Meta.Platform.Oculus
 
@@ -405,8 +405,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AddressableResolverSettings`](/game-api/types/game-other-namespaces/addressableresolversettings) | class | `GlobalSettings<AddressableResolverSettings>` | 1 |  |
-| [`InterfaceResolver`](/game-api/types/game-other-namespaces/interfaceresolver) | class |  | 7 |  |
+| [`AddressableResolverSettings`](/game-api/types/game-other-namespaces/addressableresolversettings) | class | `GlobalSettings<AddressableResolverSettings>` | 1 | Obsolete global settings asset holding Addressables references for things not yet wired through dependency injection. |
+| [`InterfaceResolver`](/game-api/types/game-other-namespaces/interfaceresolver) | class |  | 7 | Obsolete static service locator for platform services, used until dependency injection covers them. In this build only `IVoiceChat` gets a real instance; the shop, Oculus, purchase and friend services resolve to null unless overridden. |
 
 ## Features.Shop
 
@@ -418,17 +418,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ITestUnityApplicationWrapper`](/game-api/types/game-other-namespaces/itestunityapplicationwrapper) | interface |  | 1 |  |
+| [`ITestUnityApplicationWrapper`](/game-api/types/game-other-namespaces/itestunityapplicationwrapper) | interface |  | 1 | Test hook for swapping the `UnityApplicationWrapper` singleton for a fake. |
 | [`IUnityApplicationWrapper`](/game-api/types/game-other-namespaces/iunityapplicationwrapper) | interface |  | 1 | Wraps Unity's `Application` so tests can swap it. Get it from `UnityApplicationWrapper.Instance`. |
-| [`UnityApplicationWrapper`](/game-api/types/game-other-namespaces/unityapplicationwrapper) | class | `IUnityApplicationWrapper`, `ITestUnityApplicationWrapper` | 2 |  |
+| [`UnityApplicationWrapper`](/game-api/types/game-other-namespaces/unityapplicationwrapper) | class | `IUnityApplicationWrapper`, `ITestUnityApplicationWrapper` | 2 | Thin wrapper over `UnityEngine.Application` so code can be tested with a fake. Use the static `Instance`. |
 
 ## Features.Visual_Effects.General_Scripts
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ParticlesToPlayer`](/game-api/types/game-other-namespaces/particlestoplayer) | class | `NetworkEntityBehaviour`, `ISavable<ParticlesToPlayerSaveData>`, `ISavableSave<ParticlesToPlayerSaveData>`, +1 more | 5 |  |
+| [`ParticlesToPlayer`](/game-api/types/game-other-namespaces/particlestoplayer) | class | `NetworkEntityBehaviour`, `ISavable<ParticlesToPlayerSaveData>`, `ISavableSave<ParticlesToPlayerSaveData>`, +1 more | 5 | Plays a `VfxData` particle trail that flies from an origin to a given player. The VFX data is saved and sent to joining players; `TriggerForPlayer` plays it locally and does nothing on a headless server. |
 | [`ParticlesToPlayerSaveData`](/game-api/types/game-other-namespaces/particlestoplayersavedata) | class | `NewSaveData<ParticlesToPlayer, ParticlesToPlayerSaveData>` | 1 | Save data for `ParticlesToPlayer`. |
-| [`PooledParticleSystemManipulator`](/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 3 |  |
+| [`PooledParticleSystemManipulator`](/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator) | class | `PooledObject`, `IBuildRendererPostBake`, `IBuildBakeable` | 3 | Pooled particle effect that, after a delay, pulls its live particles towards targets (a player's hands, body or custom transforms), plays an arrival effect, then returns itself to the pool. Client side. |
 
 ## Features.Visual_Effects.VFXData
 
@@ -440,28 +440,28 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`InteriorFogAmbience`](/game-api/types/game-other-namespaces/interiorfogambience) | class | `AtmospherePlugin` | 4 |  |
+| [`InteriorFogAmbience`](/game-api/types/game-other-namespaces/interiorfogambience) | class | `AtmospherePlugin` | 4 | Atmosphere plugin for interiors such as basements: while it has priority, it blends the ambient light, fog colour and fog density to its own values. Client visuals. |
 
 ## GameCommands.Messages
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CommandType`](/game-api/types/game-other-namespaces/commandtype) | enum |  | 1 | Types of game command message. The only value is `PrepareForUpdate`. |
-| [`GameCommandMessage`](/game-api/types/game-other-namespaces/gamecommandmessage) | class |  | 1 |  |
-| [`GameResponseMessage`](/game-api/types/game-other-namespaces/gameresponsemessage) | class |  | 2 |  |
+| [`GameCommandMessage`](/game-api/types/game-other-namespaces/gamecommandmessage) | class |  | 1 | Message carrying a game command type. Nothing else in this build uses it. |
+| [`GameResponseMessage`](/game-api/types/game-other-namespaces/gameresponsemessage) | class |  | 2 | Reply to a game command message. Nothing else in this build uses it. |
 
 ## TableParser
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`TableOrderAttribute`](/game-api/types/game-other-namespaces/tableorderattribute) | class | `Attribute` | 2 |  |
-| [`TableParserExtensions`](/game-api/types/game-other-namespaces/tableparserextensions) | static class |  | 5 |  |
+| [`TableOrderAttribute`](/game-api/types/game-other-namespaces/tableorderattribute) | class | `Attribute` | 2 | Sets a property's column position when `ToStringTable` prints a list of objects as a text table. |
+| [`TableParserExtensions`](/game-api/types/game-other-namespaces/tableparserextensions) | static class |  | 5 | Extension methods that format lists of objects as plain text tables with padded columns, for console and log output. |
 
 ## Township.Climbing
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ClimbingEditorSettings`](/game-api/types/game-other-namespaces/climbingeditorsettings) | class | `ScriptableObject` | 4 |  |
+| [`ClimbingEditorSettings`](/game-api/types/game-other-namespaces/climbingeditorsettings) | class | `ScriptableObject` | 4 | A ScriptableObject holding climbing tuning values (jump distances, stamina per distance, arm span). Nothing in the server code reads it, so it is probably editor tooling. |
 
 ## Township.Downed
 
@@ -476,13 +476,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`TextureFormatUtilities`](/game-api/types/game-other-namespaces/textureformatutilities) | static class |  | 0 |  |
+| [`TextureFormatUtilities`](/game-api/types/game-other-namespaces/textureformatutilities) | static class |  | 0 | An empty static class in this build; its contents were stripped or never filled in. |
 
 ## UnityEngine.UI
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`CustomOutline`](/game-api/types/game-other-namespaces/customoutline) | class | `Shadow` | 6 |  |
+| [`CustomOutline`](/game-api/types/game-other-namespaces/customoutline) | class | `Shadow` | 6 | A UI outline effect that draws eight shadow copies around a graphic, with an optional glint that recolours some vertices. |
 
 ## WindowsConsole
 

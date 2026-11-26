@@ -1,6 +1,6 @@
 ---
 title: "SafePositionSetterData"
-description: "class SafePositionSetterData in Root.Township."
+description: "Save data (version 1) for a SafePositionSetter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SafePositionSetterData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 1) for a `SafePositionSetter`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`NewSaveData<SafePositionSetter, SafePositionSetterData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-targetoffset" /><code>{"Vector3 targetOffset"}</code> | The target's local position. |

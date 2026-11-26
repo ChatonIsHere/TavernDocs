@@ -1,6 +1,6 @@
 ---
 title: "RotationOverrider"
-description: "class RotationOverrider in Root.Township."
+description: "After a LimbIK solve, copies a target's world rotation onto a bone, optionally clamped by its RotationLimitAngle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RotationOverrider
 
 A **class** in `Root.Township`, no namespace.
+
+After a `LimbIK` solve, copies a target's world rotation onto a bone, optionally clamped by its `RotationLimitAngle`. Needs a `LimbIK` on the same object.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,14 +28,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-iksolver" /><code>{"private IKSolver ikSolver"}</code> |
-| <Link id="m-isusingrotationlimit" /><code>{"private bool isUsingRotationLimit"}</code> |
-| <Link id="m-rotationlimit" /><code>{"private RotationLimitAngle rotationLimit"}</code> |
-| <Link id="m-target" /><code>{"private Transform target"}</code> |
-| <Link id="m-test" /><code>{"private GameObject test"}</code> |
-| <Link id="m-transformtooverride" /><code>{"private Transform transformToOverride"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iksolver" /><code>{"private IKSolver ikSolver"}</code> | The IK solver whose post-update triggers the override. Replaced in `Awake` with the `LimbIK` solver. |
+| <Link id="m-isusingrotationlimit" /><code>{"private bool isUsingRotationLimit"}</code> | Whether to clamp with the `RotationLimitAngle`. Default true. |
+| <Link id="m-rotationlimit" /><code>{"private RotationLimitAngle rotationLimit"}</code> | `RotationLimitAngle` on the overridden transform, if any. |
+| <Link id="m-target" /><code>{"private Transform target"}</code> | Transform whose world rotation is copied. |
+| <Link id="m-test" /><code>{"private GameObject test"}</code> | Unused object reference. |
+| <Link id="m-transformtooverride" /><code>{"private Transform transformToOverride"}</code> | The bone to rotate. Null means this object's transform. |
 
 </details>
 
@@ -42,12 +44,12 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-updaterotation" /><code>{"private void UpdateRotation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Defaults the overridden transform to its own, gets the IK solver from `LimbIK` and finds the rotation limit. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks `UpdateRotation` from the solver's post-update. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Empty. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks `UpdateRotation` to the solver's post-update. |
+| <Link id="m-updaterotation" /><code>{"private void UpdateRotation()"}</code> | Sets the transform's rotation to the target's, then applies the rotation limit if enabled. |
 
 </details>

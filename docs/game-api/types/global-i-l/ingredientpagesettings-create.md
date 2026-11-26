@@ -1,6 +1,6 @@
 ---
 title: "IngredientPageSettings.Create"
-description: "class IngredientPageSettings.Create in Root.Township."
+description: "Editor menu entry that creates the IngredientPageSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IngredientPageSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates the `IngredientPageSettings` asset.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`IngredientPageSettings`](/game-api/types/global-i-l/ingredientpagesettings)

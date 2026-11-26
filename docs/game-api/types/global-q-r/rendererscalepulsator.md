@@ -1,6 +1,6 @@
 ---
 title: "RendererScalePulsator"
-description: "class RendererScalePulsator in Root.Township."
+description: "Scale pulsator with a mesh filter whose mesh can be swapped."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RendererScalePulsator
 
 A **class** in `Root.Township`, no namespace.
+
+Scale pulsator with a mesh filter whose mesh can be swapped.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`ScalePulsator`](/game-api/types/global-s/scalepulsator)
@@ -26,14 +28,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> | Mesh filter to update. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-updatemesh" /><code>{"void UpdateMesh(Mesh mesh)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatemesh" /><code>{"void UpdateMesh(Mesh mesh)"}</code> | Sets the mesh shown by the filter. |

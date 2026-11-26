@@ -1,6 +1,6 @@
 ---
 title: "RendererMeshReplacePooledObject"
-description: "class RendererMeshReplacePooledObject in Root.Township."
+description: "Pooled object that swaps the mesh and material on a set of renderers when set up."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RendererMeshReplacePooledObject
 
 A **class** in `Root.Township`, no namespace.
+
+Pooled object that swaps the mesh and material on a set of renderers when set up.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`MeshReplacePooledObject`](/game-api/types/global-m-o/meshreplacepooledobject)
@@ -26,24 +28,24 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |
-| <Link id="m-renderers" /><code>{"private MeshRenderer[] renderers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> | Mesh filters that get the mesh. |
+| <Link id="m-renderers" /><code>{"private MeshRenderer[] renderers"}</code> | Renderers that get the material. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setup" /><code>{"override void Setup(Mesh mesh, Material material)"}</code> | Sets the material on each renderer and the mesh on each matching filter. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: logs an error if the renderer and mesh filter counts differ. |
 
 </details>

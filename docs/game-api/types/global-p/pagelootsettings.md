@@ -1,6 +1,6 @@
 ---
 title: "PageLootSettings"
-description: "class PageLootSettings in Root.Township."
+description: "Global settings asset for page loot (Page Loot Settings), listing loot providers that pages are kept out of."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageLootSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global settings asset for page loot (Page Loot Settings), listing loot providers that pages are kept out of.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`GlobalSettings<PageLootSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -26,6 +28,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-excludedproviderids" /><code>{"int[] excludedProviderIds"}</code> | IDs of loot providers excluded from page loot. Probably used where pages are added to loot tables. |

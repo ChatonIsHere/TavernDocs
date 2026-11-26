@@ -1,6 +1,6 @@
 ---
 title: "RopeGrabSaveData1"
-description: "class RopeGrabSaveData1 in Root.Township."
+description: "Old save data (version 1) for a RopeGrab, migrated to RopeGrabSaveData on load."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RopeGrabSaveData1
 
 A **class** in `Root.Township`, no namespace.
+
+Old save data (version 1) for a `RopeGrab`, migrated to `RopeGrabSaveData` on load.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -24,12 +26,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentprogress" /><code>{"float currentProgress"}</code> | Saved position of the grab along the rope. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Converts to `RopeGrabSaveData`, keeping the progress and setting length to 0.8. |

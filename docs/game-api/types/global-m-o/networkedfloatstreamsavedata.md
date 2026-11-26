@@ -1,6 +1,6 @@
 ---
 title: "NetworkedFloatStreamSaveData"
-description: "class NetworkedFloatStreamSaveData in Root.Township."
+description: "Save data (version 1) for NetworkedFloatStream."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkedFloatStreamSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 1) for `NetworkedFloatStream`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`NewSaveData<NetworkedFloatStream, NetworkedFloatStreamSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-value" /><code>{"float value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-value" /><code>{"float value"}</code> | Saved value. |

@@ -1,6 +1,6 @@
 ---
 title: "RandomCutFilter"
-description: "class RandomCutFilter in Root.Township."
+description: "Forest fill filter asset that randomly drops spawn points, keeping each with a set chance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RandomCutFilter
 
 A **class** in `Root.Township`, no namespace.
+
+Forest fill filter asset that randomly drops spawn points, keeping each with a set chance.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`SpawnModifierPoint`](/game-api/types/global-s/spawnmodifierpoint)
@@ -28,14 +30,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-keepchance" /><code>{"private float keepChance"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-keepchance" /><code>{"private float keepChance"}</code> | Chance from 0 to 1 that a point is kept. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Sets the point's weight to -1 (removed) when a random roll beats `keepChance`. |

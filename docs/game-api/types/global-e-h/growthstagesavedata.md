@@ -1,6 +1,6 @@
 ---
 title: "GrowthStageSaveData"
-description: "class GrowthStageSaveData in Root.Township."
+description: "Save data for a GrowthStageComponent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GrowthStageSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `GrowthStageComponent`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NewSaveData<GrowthStageComponent, GrowthStageSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,7 +27,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-currentstage" /><code>{"int currentStage"}</code> |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentstage" /><code>{"int currentStage"}</code> | Index of the current growth stage. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" definition"}</code> | Growth definition in use. |

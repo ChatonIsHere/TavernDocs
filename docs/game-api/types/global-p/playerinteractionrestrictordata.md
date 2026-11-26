@@ -1,6 +1,6 @@
 ---
 title: "PlayerInteractionRestrictorData"
-description: "class PlayerInteractionRestrictorData in Root.Township."
+description: "Save data for a PlayerInteractionRestrictor: its id and its interaction limit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerInteractionRestrictorData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `PlayerInteractionRestrictor`: its id and its interaction limit.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`NewSaveData<PlayerInteractionRestrictor, PlayerInteractionRestrictorData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,7 +27,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"int id"}</code> |
-| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"int id"}</code> | The restrictor's id in `PlayerInteractionManager`. |
+| <Link id="m-interactionspercharge" /><code>{"int interactionsPerCharge"}</code> | How many interactions a player gets per charge. |

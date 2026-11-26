@@ -1,6 +1,6 @@
 ---
 title: "TangentSolver"
-description: "static class TangentSolver in Root.Township."
+description: "Extension method that works out mesh tangents from vertices, normals and UVs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Extension method that works out mesh tangents from vertices, normals and UVs.
+
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Attributes** `Extension`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-recalculatetangents" /><code>{"static void RecalculateTangents(Mesh mesh)"}</code> | Calculates and sets per-vertex tangents (with handedness in `w`) on the mesh. |

@@ -1,6 +1,6 @@
 ---
 title: "HealthChannel"
-description: "class HealthChannel in Root.Township."
+description: "Impact asset that sets how much damage a channel deals to health, or whether it kills in one hit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HealthChannel
 
 A **class** in `Root.Township`, no namespace.
+
+Impact asset that sets how much damage a channel deals to health, or whether it kills in one hit.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -28,16 +30,16 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isonehit" /><code>{"private bool isOneHit"}</code> | Backing field for `IsOneHit`. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Backing field for `Multiplier`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isonehit-2" /><code>{"bool IsOneHit { get; }"}</code> | True if a hit on this channel destroys the target in one go. |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | Damage multiplier for this channel. |

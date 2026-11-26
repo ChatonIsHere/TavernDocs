@@ -1,6 +1,6 @@
 ---
 title: "KeyboardEventTriggers.KeyBoardTriggerHandler"
-description: "class KeyboardEventTriggers.KeyBoardTriggerHandler in Root.Township."
+description: "Handle returned by KeyboardEventTriggers.RegisterKeyPressed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # KeyboardEventTriggers.KeyBoardTriggerHandler
 
 A **class** in `Root.Township`, no namespace.
+
+Handle returned by `KeyboardEventTriggers.RegisterKeyPressed`. Pass it to `DeRegisterKeyPressed` to remove the handler.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`KeyboardEventTriggers`](/game-api/types/global-i-l/keyboardeventtriggers)
@@ -24,8 +26,8 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-handler" /><code><Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" Handler { get; }"}</code> |
-| <Link id="m-isdown" /><code>{"bool IsDown { get; }"}</code> |
-| <Link id="m-key" /><code>{"Key Key { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handler" /><code><Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" Handler { get; }"}</code> | The registered callback. |
+| <Link id="m-isdown" /><code>{"bool IsDown { get; }"}</code> | True for a key down handler, false for key up. |
+| <Link id="m-key" /><code>{"Key Key { get; }"}</code> | The key the handler is for. |

@@ -1,6 +1,6 @@
 ---
 title: "EnumFlagsAttribute"
-description: "class EnumFlagsAttribute in Alta.Attributes."
+description: "Property attribute that marks an enum field to be edited as flags in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EnumFlagsAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Property attribute that marks an enum field to be edited as flags in the inspector.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`

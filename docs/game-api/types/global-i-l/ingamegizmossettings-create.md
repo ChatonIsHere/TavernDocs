@@ -1,6 +1,6 @@
 ---
 title: "InGameGizmosSettings.Create"
-description: "class InGameGizmosSettings.Create in Root.Township."
+description: "Editor menu entry that creates the InGameGizmosSettings asset under Global Settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InGameGizmosSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates the `InGameGizmosSettings` asset under Global Settings.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`InGameGizmosSettings`](/game-api/types/global-i-l/ingamegizmossettings)

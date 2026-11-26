@@ -33,22 +33,22 @@ Base for a skill orb at a skill shrine that a player holds to buy or sell a skil
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maintex" /><code>{"private readonly int _MainTex"}</code> |
-| <Link id="m-activeoperatingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeOperatingEffect"}</code> |
-| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> |
-| <Link id="m-internalmodelblock" /><code>{"private MaterialPropertyBlock internalModelBlock"}</code> |
-| <Link id="m-internalmodelrenderer" /><code>{"private Renderer internalModelRenderer"}</code> |
-| <Link id="m-isinteractable" /><code>{"private bool isInteractable"}</code> |
-| <Link id="m-maxserialization" /><code>{"private int maxSerialization"}</code> |
-| <Link id="m-operateconcludedeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" operateConcludedEffect"}</code> |
-| <Link id="m-operatingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" operatingEffect"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-shellrenderer" /><code>{"private Renderer shellRenderer"}</code> |
-| <Link id="m-spawnevent" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" spawnEvent"}</code> |
-| <Link id="m-syncsetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetup"}</code> |
-| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maintex" /><code>{"private readonly int _MainTex"}</code> | Shader property id for the icon texture. |
+| <Link id="m-activeoperatingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeOperatingEffect"}</code> | Effect shown while the orb is being held. |
+| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> | Coroutine that waits for the hold to finish. |
+| <Link id="m-internalmodelblock" /><code>{"private MaterialPropertyBlock internalModelBlock"}</code> | Property block for the inner model's icon. |
+| <Link id="m-internalmodelrenderer" /><code>{"private Renderer internalModelRenderer"}</code> | Inner model that shows the slot's icon. |
+| <Link id="m-isinteractable" /><code>{"private bool isInteractable"}</code> | True only on the target player's client. |
+| <Link id="m-maxserialization" /><code>{"private int maxSerialization"}</code> | Highest `SkillStatus` value. |
+| <Link id="m-operateconcludedeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" operateConcludedEffect"}</code> | Event run when the orb is used. |
+| <Link id="m-operatingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" operatingEffect"}</code> | Pooled effect shown while held. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | The orb's pickup. |
+| <Link id="m-shellrenderer" /><code>{"private Renderer shellRenderer"}</code> | The orb's outer shell. |
+| <Link id="m-spawnevent" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" spawnEvent"}</code> | Event run on clients a frame after spawn. |
+| <Link id="m-syncsetup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetup"}</code> | Sync for the slot and target player. |
+| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer"}</code> | The only player who can use this orb. |
 
 </details>
 
@@ -65,9 +65,9 @@ Base for a skill orb at a skill shrine that a player holds to buy or sell a skil
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-iskillorb-shellmaterial" /><code>{"private Material ISkillOrb.ShellMaterial { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iskillorb-shellmaterial" /><code>{"private Material ISkillOrb.ShellMaterial { get; }"}</code> | The shell renderer's shared material. |
 
 </details>
 
@@ -91,10 +91,10 @@ Base for a skill orb at a skill shrine that a player holds to buy or sell a skil
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-setuprenderer" /><code>{"private void SetupRenderer()"}</code> |
-| <Link id="m-syncoperate-2" /><code>{"private void SyncOperate("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the pickup's interaction filter and start and end events. |
+| <Link id="m-setuprenderer" /><code>{"private void SetupRenderer()"}</code> | Client: shows the slot's icon on the inner model, or hides it if there is none. |
+| <Link id="m-syncoperate-2" /><code>{"private void SyncOperate("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Server: plays the done effect, drops or destroys the orb, and runs `Operate`. It does not check who sent it. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "ShowBounds"
-description: "class ShowBounds in Root.Township."
+description: "Editor helper that draws the bounds of this object's mesh as a wire box when selected."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShowBounds
 
 A **class** in `Root.Township`, no namespace.
+
+Editor helper that draws the bounds of this object's mesh as a wire box when selected.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,8 +28,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the `MeshFilter` mesh's bounds in local space. |
 
 </details>

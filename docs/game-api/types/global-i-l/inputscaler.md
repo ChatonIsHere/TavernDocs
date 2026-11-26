@@ -1,6 +1,6 @@
 ---
 title: "InputScaler"
-description: "class InputScaler in Root.Township."
+description: "Scales its transform evenly by one number, set in the inspector or through Scale."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InputScaler
 
 A **class** in `Root.Township`, no namespace.
+
+Scales its transform evenly by one number, set in the inspector or through `Scale`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | Backing field for `Scale`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-scale-2" /><code>{"float Scale { get; set; }"}</code> | Uniform scale. Setting it updates the transform at once. |
 
 ## Methods
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Applies the scale on load. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Reapplies the scale when it is edited during play. |
 
 </details>

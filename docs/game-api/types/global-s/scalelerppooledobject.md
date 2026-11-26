@@ -29,12 +29,12 @@ A pooled object that grows from tiny to its start size when taken from the pool 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fadespeed" /><code>{"private float fadeSpeed"}</code> |
-| <Link id="m-scale" /><code>{"private "}<Link to="/game-api/types/alta-utilities/lerpingfloatvalue">{"LerpingFloatValue"}</Link>{" scale"}</code> |
-| <Link id="m-startsize" /><code>{"private float startSize"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fadespeed" /><code>{"private float fadeSpeed"}</code> | Lerp speed for growing and shrinking. Default 0.05. |
+| <Link id="m-scale" /><code>{"private "}<Link to="/game-api/types/alta-utilities/lerpingfloatvalue">{"LerpingFloatValue"}</Link>{" scale"}</code> | Lerping value that drives the uniform local scale. |
+| <Link id="m-startsize" /><code>{"private float startSize"}</code> | Scale it grows to when requested. Default 1. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Registered update method that steps the scale lerp, or null when idle. |
 
 </details>
 
@@ -59,8 +59,8 @@ A pooled object that grows from tiny to its start size when taken from the pool 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatestart" /><code>{"private void AnimateStart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatestart" /><code>{"private void AnimateStart("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Runs when the object is taken from the pool: clears the releasing flag, starts growing to `startSize` and registers the update. |
 
 </details>

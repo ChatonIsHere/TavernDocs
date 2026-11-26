@@ -34,13 +34,13 @@ Makes an object trail smoothly after a target's position plus an offset, in late
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> |
-| <Link id="m-lerppersecond" /><code>{"private float lerpPerSecond"}</code> |
-| <Link id="m-staticupdatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" staticUpdateModule"}</code> |
-| <Link id="m-updatemodule" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateModule"}</code> |
-| <Link id="m-worldoffset" /><code>{"private Vector3 worldOffset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdisabledonserver" /><code>{"private bool isDisabledOnServer"}</code> | When true, the component turns itself off on a server, except in a local test. |
+| <Link id="m-lerppersecond" /><code>{"private float lerpPerSecond"}</code> | How fast it catches up with the target. |
+| <Link id="m-staticupdatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" staticUpdateModule"}</code> | Shared LateUpdate module for all followers of this target type. |
+| <Link id="m-updatemodule" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateModule"}</code> | This follower's registration in the update module. |
+| <Link id="m-worldoffset" /><code>{"private Vector3 worldOffset"}</code> | World offset from the target position. Defaults to 0.5 up. |
 
 </details>
 
@@ -62,10 +62,10 @@ Makes an object trail smoothly after a target's position plus an offset, in late
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-movementupdate" /><code>{"private void MovementUpdate()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-movementupdate" /><code>{"private void MovementUpdate()"}</code> | Runs in LateUpdate. Moves towards the target plus `worldOffset` by `lerpPerSecond` of the gap each second, or disables itself if the target is gone. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops the movement update. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Registers the movement update with the shared update module. |
 
 </details>

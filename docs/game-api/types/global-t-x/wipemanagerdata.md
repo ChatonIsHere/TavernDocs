@@ -1,6 +1,6 @@
 ---
 title: "WipeManagerData"
-description: "class WipeManagerData in Root.Township."
+description: "Save data for WipeManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WipeManagerData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for `WipeManager`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`NewSaveData<WipeManager, WipeManagerData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunkstowipe" /><code>{"string[] chunksToWipe"}</code> | Identifiers of chunks that need a pre-wipe pass. |

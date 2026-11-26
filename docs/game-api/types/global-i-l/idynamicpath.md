@@ -1,6 +1,6 @@
 ---
 title: "IDynamicPath"
-description: "interface IDynamicPath in Root.Township."
+description: "A path piece spawned along an edge by DynamicPathPart, such as BasicDynamicPath."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+A path piece spawned along an edge by `DynamicPathPart`, such as `BasicDynamicPath`.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`BasicDynamicPath`](/game-api/types/global-a-b/basicdynamicpath)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"void Initialize("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | Sets the path piece up for the given edge. |

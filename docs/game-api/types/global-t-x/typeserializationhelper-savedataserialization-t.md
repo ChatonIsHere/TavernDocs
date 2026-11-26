@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.SaveDataSerialization<T>"
-description: "class TypeSerializationHelper.SaveDataSerialization<T> in Root.Township."
+description: "Serializer for SaveData objects: writes the save structure hash, the data's bit length, then the data, probably so readers can skip structures they do not know."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.SaveDataSerialization&lt;T&gt;
 
 A **class** in `Root.Township`, no namespace.
+
+Serializer for `SaveData` objects: writes the save structure hash, the data's bit length, then the data, probably so readers can skip structures they do not know.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)
@@ -24,13 +26,13 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t">{"TypeSerializationHelper.SaveDataSerialization"}</Link>{"<T> Instance { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t">{"TypeSerializationHelper.SaveDataSerialization"}</Link>{"<T> Instance { get; }"}</code> | Shared instance, used by `LogicManagerSetSerialization`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serializeext" /><code>{"void SerializeExt(ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serializeext" /><code>{"void SerializeExt(ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Public entry point that calls `Serialize` with no type. |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref T data, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Writes hash, length and data (0 for null), or reads them through `SavingSystem.Load`, calling `SavingSystem.ReadMissing` when that fails. |

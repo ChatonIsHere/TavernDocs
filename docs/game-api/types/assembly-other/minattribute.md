@@ -1,6 +1,6 @@
 ---
 title: "MinAttribute"
-description: "class MinAttribute in Alta.Attributes."
+description: "Inspector attribute that sets a minimum for a float field."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MinAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Inspector attribute that sets a minimum for a float field. The drawer that enforces it is not in the server build.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -23,6 +25,6 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-min" /><code>{"readonly float min"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-min" /><code>{"readonly float min"}</code> | The minimum value. |

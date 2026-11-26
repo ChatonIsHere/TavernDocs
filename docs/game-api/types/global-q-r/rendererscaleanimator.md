@@ -1,6 +1,6 @@
 ---
 title: "RendererScaleAnimator"
-description: "class RendererScaleAnimator in Root.Township."
+description: "Scale animator that also tells dock visuals whether the object is scaled up."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RendererScaleAnimator
 
 A **class** in `Root.Township`, no namespace.
+
+Scale animator that also tells dock visuals whether the object is scaled up.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`ScaleAnimator`](/game-api/types/global-s/scaleanimator)
@@ -26,14 +28,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> | Dock visuals told about the scale state. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setscale" /><code>{"protected override void SetScale(float scale)"}</code> | Sets the scale, then marks each dock visual scaled up when the scale is above 0.01. |

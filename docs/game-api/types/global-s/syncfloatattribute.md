@@ -1,6 +1,6 @@
 ---
 title: "SyncFloatAttribute"
-description: "class SyncFloatAttribute in Root.Township."
+description: "Obsolete SyncAttribute that marks a float field for syncing, either full precision or packed into a range by bit count or precision."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SyncFloatAttribute
 
 A **class** in `Root.Township`, no namespace.
+
+Obsolete `SyncAttribute` that marks a float field for syncing, either full precision or packed into a range by bit count or precision.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`SyncAttribute`](/game-api/types/global-s/syncattribute)

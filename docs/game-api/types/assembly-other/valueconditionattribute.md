@@ -1,6 +1,6 @@
 ---
 title: "ValueConditionAttribute"
-description: "class ValueConditionAttribute in Alta.Attributes."
+description: "Inspector attribute that shows, hides or locks a field based on whether another number field is above a threshold."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ValueConditionAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Inspector attribute that shows, hides or locks a field based on whether another number field is above a threshold.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -23,9 +25,9 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-falsemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" FalseMode { get; private set; }"}</code> |
-| <Link id="m-higherthantotrue" /><code>{"float HigherThanToTrue { get; private set; }"}</code> |
-| <Link id="m-truemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" TrueMode { get; private set; }"}</code> |
-| <Link id="m-valuefield" /><code>{"string ValueField { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-falsemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" FalseMode { get; private set; }"}</code> | How the field is drawn when the condition is false (hidden by default). |
+| <Link id="m-higherthantotrue" /><code>{"float HigherThanToTrue { get; private set; }"}</code> | Threshold: the condition is true when the other field is higher than this. |
+| <Link id="m-truemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" TrueMode { get; private set; }"}</code> | How the field is drawn when the condition is true (editable by default). |
+| <Link id="m-valuefield" /><code>{"string ValueField { get; private set; }"}</code> | Name of the field whose value is checked. |

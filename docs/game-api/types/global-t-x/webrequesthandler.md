@@ -1,6 +1,6 @@
 ---
 title: "WebRequestHandler"
-description: "delegate WebRequestHandler in Root.Township."
+description: "Callback that receives a web response as text."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WebRequestHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback that receives a web response as text. Nothing in the decompiled code uses it.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MulticastDelegate`

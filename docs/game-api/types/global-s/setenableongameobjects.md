@@ -1,6 +1,6 @@
 ---
 title: "SetEnableOnGameObjects"
-description: "class SetEnableOnGameObjects in Root.Township."
+description: "Turns a list of GameObjects on when this component is enabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetEnableOnGameObjects
 
 A **class** in `Root.Township`, no namespace.
+
+Turns a list of GameObjects on when this component is enabled. Its `OnDisable` also turns them on, so it never turns them off.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-objectstoactivate" /><code>{"private List<GameObject> objectsToActivate"}</code> | The objects to turn on. |
 
 </details>
 
@@ -37,9 +39,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Sets every object active (not inactive, as the name suggests). |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets every object active. |
 
 </details>

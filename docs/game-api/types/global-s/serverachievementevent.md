@@ -1,6 +1,6 @@
 ---
 title: "ServerAchievementEvent"
-description: "class ServerAchievementEvent in Root.Township."
+description: "Fires a player event on the server when a given achievement is completed by a player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerAchievementEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Fires a player event on the server when a given achievement is completed by a player.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-oncomplete" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" onComplete"}</code> |
-| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-oncomplete" /><code>{"private "}<Link to="/game-api/types/global-p/playerevent">{"PlayerEvent"}</Link>{" onComplete"}</code> | Event invoked with the player who completed it. |
+| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> | The achievement to watch. |
 
 </details>
 
@@ -38,10 +40,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-completedachievement" /><code>{"private void CompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-completedachievement" /><code>{"private void CompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Server: invokes `onComplete` with the player. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from the achievement. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks the achievement's `CompletedByPlayer` event. |
 
 </details>

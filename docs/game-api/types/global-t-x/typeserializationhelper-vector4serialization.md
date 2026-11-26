@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.Vector4Serialization"
-description: "class TypeSerializationHelper.Vector4Serialization in Root.Township."
+description: "Serializer for Vector4."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.Vector4Serialization
 
 A **class** in `Root.Township`, no namespace.
+
+Serializer for `Vector4`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector4 value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref Vector4 value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the vector. |

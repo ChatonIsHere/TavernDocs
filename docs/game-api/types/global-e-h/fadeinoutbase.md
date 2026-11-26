@@ -37,11 +37,11 @@ Base for objects that fade out using a `_Progress` shader value, or by spawning 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> |
-| <Link id="m-filters" /><code>{"private List<MeshFilter> filters"}</code> |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fadeduration" /><code>{"private float fadeDuration"}</code> | Seconds the `_Progress` shader value takes to go from 1 to 0 in `Fade`. Read through `FadeDuration`. |
+| <Link id="m-filters" /><code>{"private List<MeshFilter> filters"}</code> | Mesh filters that get a pooled `ProgressMaterialEffect` copy of their mesh on `FadeOut`. Filled from `renderers` if empty. |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> | Renderers given the copied fade material. Filled from child renderers in `OnValidate` or `ForceInitialize` if empty. |
 
 </details>
 

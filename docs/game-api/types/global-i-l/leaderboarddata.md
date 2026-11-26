@@ -1,6 +1,6 @@
 ---
 title: "LeaderboardData"
-description: "class LeaderboardData in Root.Township."
+description: "Save data for a Leaderboard: the course definition it shows."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LeaderboardData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `Leaderboard`: the course definition it shows.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`NewSaveData<Leaderboard, LeaderboardData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{" definition"}</code> | The board's course definition. |

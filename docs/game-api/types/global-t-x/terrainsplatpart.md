@@ -1,6 +1,6 @@
 ---
 title: "TerrainSplatPart"
-description: "class TerrainSplatPart in Root.Township."
+description: "Generation part that paints a terrain texture in a circle around it, fading by distance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TerrainSplatPart
 
 A **class** in `Root.Township`, no namespace.
+
+Generation part that paints a terrain texture in a circle around it, fading by distance. Skipped on headless servers.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`GeneratablePart`](/game-api/types/global-e-h/generatablepart)
@@ -27,27 +29,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-islayer1" /><code>{"private bool isLayer1"}</code> |
-| <Link id="m-islayer2" /><code>{"private bool isLayer2"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-strength" /><code>{"private AnimationCurve strength"}</code> |
-| <Link id="m-texture" /><code>{"private int texture"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-islayer1" /><code>{"private bool isLayer1"}</code> | Whether to paint splat layer 1. |
+| <Link id="m-islayer2" /><code>{"private bool isLayer2"}</code> | Whether to paint splat layer 2. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the painted area. |
+| <Link id="m-strength" /><code>{"private AnimationCurve strength"}</code> | Paint strength by distance from the centre. |
+| <Link id="m-texture" /><code>{"private int texture"}</code> | Index of the terrain texture to paint. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generatestatic" /><code>{"override void GenerateStatic("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, bool isModifyingTerrain)"}</code> | When allowed to modify terrain (and not headless), sets the texture on the chosen splat layers where it's stronger than what's there. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws the radius as a red circle. |
 
 </details>

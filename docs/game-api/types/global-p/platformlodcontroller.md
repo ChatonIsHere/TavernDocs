@@ -1,6 +1,6 @@
 ---
 title: "PlatformLODController"
-description: "class PlatformLODController in Root.Township."
+description: "Build-time bake step that trims a LODGroup to a range of levels on a given platform and deletes the renderers it no longer uses."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformLODController
 
 A **class** in `Root.Township`, no namespace.
+
+Build-time bake step that trims a `LODGroup` to a range of levels on a given platform and deletes the renderers it no longer uses.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`BuildRendererBakeable`](/game-api/types/assembly-other/buildrendererbakeable)
@@ -27,27 +29,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroyemptyobjects" /><code>{"private bool destroyEmptyObjects"}</code> |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{"[] platformDetails"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroyemptyobjects" /><code>{"private bool destroyEmptyObjects"}</code> | Whether to delete objects left with nothing on them. |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | The LOD group being trimmed. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-platformdetails" /><code>{"private "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{"[] platformDetails"}</code> | Min and max LOD to keep per platform. A max of 100 means not set up. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"override void Bake(bool isSaving)"}</code> | For the first matching platform, points reference renderers at the new first LOD and trims the group. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-baketolevel" /><code>{"private void BakeToLevel(LOD[] lods, "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{" level)"}</code> |
-| <Link id="m-removerenderers" /><code>{"private void RemoveRenderers(IEnumerable<Renderer> renderers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baketolevel" /><code>{"private void BakeToLevel(LOD[] lods, "}<Link to="/game-api/types/global-p/platformlodcontroller-platformdetails">{"PlatformLODController.PlatformDetails"}</Link>{" level)"}</code> | Keeps only LODs from min to max, keeps the last transition height, and removes unused renderers. Warns if max was never set. |
+| <Link id="m-removerenderers" /><code>{"private void RemoveRenderers(IEnumerable<Renderer> renderers)"}</code> | Destroys the renderers with their mesh filters and vertex streams, and empty objects left behind if set to. |
 
 </details>

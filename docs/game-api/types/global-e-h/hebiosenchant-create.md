@@ -1,6 +1,6 @@
 ---
 title: "HebiosEnchant.Create"
-description: "class HebiosEnchant.Create in Root.Township."
+description: "Editor menu entry that creates a HebiosEnchant skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HebiosEnchant.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry that creates a `HebiosEnchant` skill asset.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`HebiosEnchant`](/game-api/types/global-e-h/hebiosenchant)

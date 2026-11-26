@@ -1,6 +1,6 @@
 ---
 title: "RaiseHandStructure"
-description: "class RaiseHandStructure in Root.Township."
+description: "Tutorial input check asset: in position when the hands holding a pickup are raised a set height above the player's head."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RaiseHandStructure
 
 A **class** in `Root.Township`, no namespace.
+
+Tutorial input check asset: in position when the hands holding a pickup are raised a set height above the player's head. Made from the Create menu.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** [`HandPositionStructure`](/game-api/types/global-e-h/handpositionstructure)
@@ -28,14 +30,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-minheighthandtohead" /><code>{"private float minHeightHandToHead"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-minheighthandtohead" /><code>{"private float minHeightHandToHead"}</code> | How far above the head the hands must be. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isinpositioninternal" /><code>{"protected override bool IsInPositionInternal("}<Link to="/game-api/types/global-e-h/heldpickuphandler">{"HeldPickupHandler"}</Link>{" handler)"}</code> | True when the average height of the hands holding the pickup is more than `minHeightHandToHead` above the head. |

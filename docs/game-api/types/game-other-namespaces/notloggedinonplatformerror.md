@@ -1,6 +1,6 @@
 ---
 title: "NotLoggedInOnPlatformError"
-description: "class NotLoggedInOnPlatformError in Root.Township."
+description: "PurchaseError meaning the player is not signed in on the platform store; the message is the platform name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NotLoggedInOnPlatformError
 
 A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
+
+`PurchaseError` meaning the player is not signed in on the platform store; the message is the platform name. Not created anywhere in this build.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`PurchaseError`](/game-api/types/game-other-namespaces/purchaseerror)

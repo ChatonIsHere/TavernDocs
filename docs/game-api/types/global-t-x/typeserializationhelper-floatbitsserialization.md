@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.FloatBitsSerialization"
-description: "class TypeSerializationHelper.FloatBitsSerialization in Root.Township."
+description: "Writes a float packed into a range with a fixed number of bits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.FloatBitsSerialization
 
 A **class** in `Root.Township`, no namespace.
+
+Writes a `float` packed into a range with a fixed number of bits. Used by `SyncFloat` with min, max and bits.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)
@@ -27,16 +29,16 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bits" /><code>{"private int bits"}</code> |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bits" /><code>{"private int bits"}</code> | Bits used for the value. |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Top of the value range. |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Bottom of the value range. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"protected override void Serialize(Type type, ref float value, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Reads or writes the float compressed to `bits` bits between `minimum` and `maximum`. |

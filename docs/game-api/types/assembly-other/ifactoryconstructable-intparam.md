@@ -1,6 +1,6 @@
 ---
 title: "IFactoryConstructable<TParam>"
-description: "interface IFactoryConstructable<TParam> in Alta.VContainerLayer.Runtime."
+description: "MonoBehaviour that an async factory sets up with one parameter straight after creating it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,10 +12,12 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.VContainerLayer.Runtime`, no namespace.
 
+MonoBehaviour that an async factory sets up with one parameter straight after creating it.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-factoryconstruct" /><code>{"void FactoryConstruct(TParam param)"}</code> | Called by `FactoryAsync` with the create parameter once the instance exists. |

@@ -1,6 +1,6 @@
 ---
 title: "ManualConditionSaveData"
-description: "class ManualConditionSaveData in Root.Township."
+description: "Save data (version 1) for ManualCondition."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ManualConditionSaveData
 
 A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
+
+Save data (version 1) for `ManualCondition`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`NewSaveData<ManualCondition, ManualConditionSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, `Features.Gameplay.GameConditions`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isconditionmet" /><code>{"bool IsConditionMet"}</code> | The saved met flag. |

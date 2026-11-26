@@ -1,6 +1,6 @@
 ---
 title: "SetPieceSaveData"
-description: "class SetPieceSaveData in Root.Township."
+description: "Save data (version 1) for a SetPiece."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetPieceSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data (version 1) for a `SetPiece`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`NewSaveData<SetPiece, SetPieceSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/global-s/setpiecedata">{"SetPieceData"}</Link>{" data"}</code> | The `SetPieceData` asset. |

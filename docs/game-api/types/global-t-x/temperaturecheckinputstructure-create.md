@@ -1,6 +1,6 @@
 ---
 title: "TemperatureCheckInputStructure.Create"
-description: "class TemperatureCheckInputStructure.Create in Root.Township."
+description: "Editor menu entry for creating a TemperatureCheckInputStructure asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TemperatureCheckInputStructure.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `TemperatureCheckInputStructure` asset.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TemperatureCheckInputStructure`](/game-api/types/global-t-x/temperaturecheckinputstructure)

@@ -1,6 +1,6 @@
 ---
 title: "MultipleSpawner"
-description: "class MultipleSpawner in Root.Township."
+description: "Network entity holding a list of simple spawners, each spawning a prefab or distribution at spawn points in the entity's chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MultipleSpawner
 
 A **class** in `Root.Township`, no namespace.
+
+Network entity holding a list of simple spawners, each spawning a prefab or distribution at spawn points in the entity's chunk. Server only; something must call `Spawn`.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -27,20 +29,20 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-spawners" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawners" /><code>{"private List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> spawners"}</code> | Backing field for `Spawners`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawners-2" /><code>{"List<"}<Link to="/game-api/types/global-m-o/multiplespawner-simplespawner">{"MultipleSpawner.SimpleSpawner"}</Link>{"> Spawners { get; }"}</code> | The simple spawners to run. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-spawn" /><code>{"void Spawn()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawn" /><code>{"void Spawn()"}</code> | Server: runs every spawner in the list, if the entity is in a chunk. |

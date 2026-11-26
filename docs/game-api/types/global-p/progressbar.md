@@ -33,12 +33,12 @@ Base for a shader-driven gauge on one or more renderers. Setting `Progress` writ
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-gaugerenderer" /><code>{"private Renderer gaugeRenderer"}</code> |
-| <Link id="m-gaugerenderers" /><code>{"private Renderer[] gaugeRenderers"}</code> |
-| <Link id="m-minimumvaluetorender" /><code>{"private float minimumValueToRender"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gaugerenderer" /><code>{"private Renderer gaugeRenderer"}</code> | Single renderer, copied into `gaugeRenderers` if that list is empty. |
+| <Link id="m-gaugerenderers" /><code>{"private Renderer[] gaugeRenderers"}</code> | Renderers that show the gauge. |
+| <Link id="m-minimumvaluetorender" /><code>{"private float minimumValueToRender"}</code> | Progress at or under this hides the renderers (default -1, so always shown). |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | Backing field for `Progress`, 0 to 1. |
 
 </details>
 
@@ -62,10 +62,10 @@ Base for a shader-driven gauge on one or more renderers. Setting `Progress` writ
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: makes the property block. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step that drops null renderers from the list. |
+| <Link id="m-updateprogress" /><code>{"private void UpdateProgress()"}</code> | Client: writes progress to the renderers, or hides them when at or under `minimumValueToRender`. |
 
 </details>

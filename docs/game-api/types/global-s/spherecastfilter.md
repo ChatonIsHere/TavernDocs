@@ -1,6 +1,6 @@
 ---
 title: "SphereCastFilter"
-description: "class SphereCastFilter in Root.Township."
+description: "Forest spawn modifier asset that scales a point's spawn weight by whether there are colliders within a radius of it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SphereCastFilter
 
 A **class** in `Root.Township`, no namespace.
+
+Forest spawn modifier asset that scales a point's spawn weight by whether there are colliders within a radius of it.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`SpawnModifierPointNormal`](/game-api/types/global-s/spawnmodifierpointnormal)
@@ -28,17 +30,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hitmultiplier" /><code>{"private float hitMultiplier"}</code> |
-| <Link id="m-layercheck" /><code>{"private LayerMask layerCheck"}</code> |
-| <Link id="m-missmultiplier" /><code>{"private float missMultiplier"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hitmultiplier" /><code>{"private float hitMultiplier"}</code> | Weight multiplier when something is found. 0 by default, so nearby colliders block spawning. |
+| <Link id="m-layercheck" /><code>{"private LayerMask layerCheck"}</code> | Layers the sphere check looks at. |
+| <Link id="m-missmultiplier" /><code>{"private float missMultiplier"}</code> | Weight multiplier when nothing is found. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the sphere check. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{" point, ref float weight)"}</code> | Checks a sphere at the point and multiplies the weight by `hitMultiplier` or `missMultiplier`. |

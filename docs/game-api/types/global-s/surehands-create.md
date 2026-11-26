@@ -1,6 +1,6 @@
 ---
 title: "SureHands.Create"
-description: "class SureHands.Create in Root.Township."
+description: "Editor menu entry for creating a SureHands skill asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SureHands.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `SureHands` skill asset.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SureHands`](/game-api/types/global-s/surehands)

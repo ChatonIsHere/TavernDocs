@@ -1,6 +1,6 @@
 ---
 title: "PageLootSettings.Create"
-description: "class PageLootSettings.Create in Root.Township."
+description: "Unity editor menu item that creates a PageLootSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageLootSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Unity editor menu item that creates a `PageLootSettings` asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PageLootSettings`](/game-api/types/global-p/pagelootsettings)

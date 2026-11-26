@@ -1,6 +1,6 @@
 ---
 title: "PlayerModeOverride.Create"
-description: "class PlayerModeOverride.Create in Root.Township."
+description: "Editor menu entry for creating a PlayerModeOverride asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerModeOverride.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `PlayerModeOverride` asset.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerModeOverride`](/game-api/types/global-p/playermodeoverride)
