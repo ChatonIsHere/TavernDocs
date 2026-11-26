@@ -31,14 +31,14 @@ An asset that spawns floating chunk visuals in a liquid (such as pieces in a ste
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-amountvariation" /><code>{"private float amountVariation"}</code> |
-| <Link id="m-assetpathformat" /><code>{"private const string AssetPathFormat"}</code> |
-| <Link id="m-numberperserving" /><code>{"private int numberPerServing"}</code> |
-| <Link id="m-pooledobjectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition"}</code> |
-| <Link id="m-size" /><code>{"private float size"}</code> |
-| <Link id="m-sizevariation" /><code>{"private float sizeVariation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-amountvariation" /><code>{"private float amountVariation"}</code> | Random variation in the count, as a share of `numberPerServing`. 0 by default. |
+| <Link id="m-assetpathformat" /><code>{"private const string AssetPathFormat"}</code> | Editor asset path pattern for chunk definitions. `GetOrCreate` does nothing in this build. |
+| <Link id="m-numberperserving" /><code>{"private int numberPerServing"}</code> | How many chunk visuals spawn per serving. 3 by default. |
+| <Link id="m-pooledobjectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" pooledObjectDefinition"}</code> | Pooled object spawned for each chunk visual. |
+| <Link id="m-size" /><code>{"private float size"}</code> | Base scale of each chunk. 1 by default. |
+| <Link id="m-sizevariation" /><code>{"private float sizeVariation"}</code> | Random variation in size, as a share of `size`. 0.1 by default. |
 
 </details>
 
@@ -52,9 +52,9 @@ An asset that spawns floating chunk visuals in a liquid (such as pieces in a ste
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getvaluewithrandomvariation" /><code>{"private float GetValueWithRandomVariation(float value, float variation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getvaluewithrandomvariation" /><code>{"private float GetValueWithRandomVariation(float value, float variation)"}</code> | Returns the value plus or minus a random share of itself, up to `variation`. |
 
 </details>
 

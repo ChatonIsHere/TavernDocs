@@ -30,21 +30,21 @@ A networked thrown or shot object (arrows and the like) that charges its impacto
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-collidedsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> collidedSync"}</code> |
-| <Link id="m-colliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" colliders"}</code> |
-| <Link id="m-collidesonlyonce" /><code>{"private bool collidesOnlyOnce"}</code> |
-| <Link id="m-destroyduration" /><code>{"private float destroyDuration"}</code> |
-| <Link id="m-disabledagainst" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" disabledAgainst"}</code> |
-| <Link id="m-fired" /><code>{"private "}<Link to="/game-api/types/global-p/projectilealtaevent">{"ProjectileAltaEvent"}</Link>{" fired"}</code> |
-| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{"[] impactors"}</code> |
-| <Link id="m-isdestroyedoncollision" /><code>{"private bool isDestroyedOnCollision"}</code> |
-| <Link id="m-isfired" /><code>{"private bool isFired"}</code> |
-| <Link id="m-layermaskfordestruction" /><code>{"private LayerMask layerMaskForDestruction"}</code> |
-| <Link id="m-ondestroyed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDestroyed"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-syncfired" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFired"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-collidedsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> collidedSync"}</code> | Method sync for the collided message. |
+| <Link id="m-colliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" colliders"}</code> | Backing field for `Colliders`. |
+| <Link id="m-collidesonlyonce" /><code>{"private bool collidesOnlyOnce"}</code> | If true, only the first collision counts. |
+| <Link id="m-destroyduration" /><code>{"private float destroyDuration"}</code> | Seconds after firing before the server destroys the projectile. Default 60. |
+| <Link id="m-disabledagainst" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" disabledAgainst"}</code> | Collider group the projectile ignores, usually the shooter's. |
+| <Link id="m-fired" /><code>{"private "}<Link to="/game-api/types/global-p/projectilealtaevent">{"ProjectileAltaEvent"}</Link>{" fired"}</code> | Event behind `Fired`. |
+| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{"[] impactors"}</code> | Impactors charged when fired; `SetupDamageMultiplier` scales them. |
+| <Link id="m-isdestroyedoncollision" /><code>{"private bool isDestroyedOnCollision"}</code> | If true, the projectile is destroyed when it hits something on `layerMaskForDestruction`. |
+| <Link id="m-isfired" /><code>{"private bool isFired"}</code> | True once shot; collisions before that are ignored. |
+| <Link id="m-layermaskfordestruction" /><code>{"private LayerMask layerMaskForDestruction"}</code> | Layers that destroy the projectile on hit. Empty means all layers. |
+| <Link id="m-ondestroyed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDestroyed"}</code> | Event played when a collision destroys the projectile. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Backing field for `Rigidbody`. |
+| <Link id="m-syncfired" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFired"}</code> | Method sync for the fired message. |
 
 </details>
 
@@ -63,9 +63,9 @@ A networked thrown or shot object (arrows and the like) that charges its impacto
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> | The target pointed at is the `Shooter`, so hits can be traced back to who fired. |
 
 </details>
 
@@ -88,15 +88,15 @@ A networked thrown or shot object (arrows and the like) that charges its impacto
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroyafterduration" /><code>{"private IEnumerator DestroyAfterDuration() (iterator)"}</code> |
-| <Link id="m-oncollided" /><code>{"private void Alta.Impact.IToolHitDependant.OnCollided(Collision collision, bool isHitting, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
-| <Link id="m-oncollision" /><code>{"private void OnCollision(Vector3 point, Vector3 normal, Collider collider)"}</code> |
-| <Link id="m-onhit" /><code>{"private void Alta.Impact.IToolHitDependant.OnHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
-| <Link id="m-reseteffect" /><code>{"private void Alta.Impact.IImpactorResetEffect.ResetEffect()"}</code> |
-| <Link id="m-synccollided" /><code>{"private void SyncCollided("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isDestroying)"}</code> |
-| <Link id="m-syncfired-2" /><code>{"private void SyncFired("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroyafterduration" /><code>{"private IEnumerator DestroyAfterDuration() (iterator)"}</code> | Server coroutine that destroys the projectile `destroyDuration` seconds after it is fired. |
+| <Link id="m-oncollided" /><code>{"private void Alta.Impact.IToolHitDependant.OnCollided(Collision collision, bool isHitting, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Tool collision callback: once fired, records the first contact as a collision. |
+| <Link id="m-oncollision" /><code>{"private void OnCollision(Vector3 point, Vector3 normal, Collider collider)"}</code> | Server: records where it hit, tells clients, fires `Collided` and destroys the projectile if the hit layer allows. |
+| <Link id="m-onhit" /><code>{"private void Alta.Impact.IToolHitDependant.OnHit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Tool hit callback: once fired, records the hit as a collision. |
+| <Link id="m-reseteffect" /><code>{"private void Alta.Impact.IImpactorResetEffect.ResetEffect()"}</code> | Impactor reset callback; does nothing. |
+| <Link id="m-synccollided" /><code>{"private void SyncCollided("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isDestroying)"}</code> | Client handler for the collided message: sets the hit point and normal, fires `Collided` and plays the destroyed event. |
+| <Link id="m-syncfired-2" /><code>{"private void SyncFired("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Fired message: sends velocity and the ignored collider group; clients launch the projectile the same way. |
 
 </details>
 

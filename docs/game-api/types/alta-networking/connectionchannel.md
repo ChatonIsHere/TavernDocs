@@ -31,12 +31,12 @@ A ScriptableObject that defines a network message channel: reliable or not, qual
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isreliable" /><code>{"private bool isReliable"}</code> |
-| <Link id="m-maximumsendinterval" /><code>{"private float maximumSendInterval"}</code> |
-| <Link id="m-qualityofservice" /><code>{"private QosType qualityOfService"}</code> |
-| <Link id="m-receivertype" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionreceivertype">{"ConnectionReceiverType"}</Link>{" receiverType"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isreliable" /><code>{"private bool isReliable"}</code> | Whether messages on this channel are sent reliably; picks transport channel 0 (reliable) or 1 (unreliable) in `Initialize`. |
+| <Link id="m-maximumsendinterval" /><code>{"private float maximumSendInterval"}</code> | Longest time in seconds (default 0.03) between sends on this channel. |
+| <Link id="m-qualityofservice" /><code>{"private QosType qualityOfService"}</code> | Unity networking QoS type for the channel, exposed as `QualityOfService`. |
+| <Link id="m-receivertype" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionreceivertype">{"ConnectionReceiverType"}</Link>{" receiverType"}</code> | Client: which receiver (timed queue, counted queue or normal) handles incoming messages. The server always uses a normal receiver. |
 
 </details>
 

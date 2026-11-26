@@ -32,39 +32,39 @@ The item asset behind a pickup: tags, weight, stacking, dock placement, sounds, 
 <details>
 <summary>31 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-components" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> components"}</code> |
-| <Link id="m-custompositions" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositions"}</code> |
-| <Link id="m-custompositionswhencrafted" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositionsWhenCrafted"}</code> |
-| <Link id="m-destroywhendocked" /><code>{"private bool destroyWhenDocked"}</code> |
-| <Link id="m-dockedstacksize" /><code>{"private int dockedStackSize"}</code> |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
-| <Link id="m-isassistgrabblocked" /><code>{"private bool isAssistGrabBlocked"}</code> |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |
-| <Link id="m-isoverridingdefaultshrunkenscale" /><code>{"private bool isOverridingDefaultShrunkenScale"}</code> |
-| <Link id="m-isoverridingdefaultvisualscale" /><code>{"private bool isOverridingDefaultVisualScale"}</code> |
-| <Link id="m-isplayingsound" /><code>{"private bool isPlayingSound"}</code> |
-| <Link id="m-isscalingongrab" /><code>{"private bool isScalingOnGrab"}</code> |
-| <Link id="m-issnappingtohand" /><code>{"private bool isSnappingToHand"}</code> |
-| <Link id="m-isstackable" /><code>{"private bool isStackable"}</code> |
-| <Link id="m-isstackablewhencrafted" /><code>{"private bool isStackableWhenCrafted"}</code> |
-| <Link id="m-isusingshrunkenvisual" /><code>{"private bool isUsingShrunkenVisual"}</code> |
-| <Link id="m-lastcalculatedscale" /><code>{"private float lastCalculatedScale"}</code> |
-| <Link id="m-lootcategory" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" lootCategory"}</code> |
-| <Link id="m-lootvalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" lootValue"}</code> |
-| <Link id="m-normalpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" normalPositioning"}</code> |
-| <Link id="m-overrideletgosoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideLetGoSoundEffectType"}</code> |
-| <Link id="m-overridepickupsoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overridePickUpSoundEffectType"}</code> |
-| <Link id="m-overridescaleinsidevisual" /><code>{"private float overrideScaleInsideVisual"}</code> |
-| <Link id="m-overrideshrunkenscale" /><code>{"private float overrideShrunkenScale"}</code> |
-| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> |
-| <Link id="m-scaledpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" scaledPositioning"}</code> |
-| <Link id="m-shrunkenvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenVisual"}</code> |
-| <Link id="m-size" /><code>{"private int size"}</code> |
-| <Link id="m-storescale" /><code>{"private Vector3 storeScale"}</code> |
-| <Link id="m-tags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> tags"}</code> |
-| <Link id="m-weight" /><code>{"private float weight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-components" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/itemcomponent">{"ItemComponent"}</Link>{"> components"}</code> | Backing list for `Components`. `GetComponent` returns the first entry matching the type and physical material. |
+| <Link id="m-custompositions" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositions"}</code> | Per dock type positions used by `GetPositioning`; an entry with no dock settings is the fallback. |
+| <Link id="m-custompositionswhencrafted" /><code>{"private "}<Link to="/game-api/types/alta-items/item-customdockpositioning">{"Item.CustomDockPositioning"}</Link>{"[] customPositionsWhenCrafted"}</code> | Like `customPositions`, but checked first when the item is a crafted assembly. |
+| <Link id="m-destroywhendocked" /><code>{"private bool destroyWhenDocked"}</code> | Backing field for `IsDestroyWhenDocked`. |
+| <Link id="m-dockedstacksize" /><code>{"private int dockedStackSize"}</code> | Backing field for `DockedStackSize`: how many fit in one stack (30 by default). Docks multiply it by their max stacks. |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> | Backing field for `Glyph`, the item's symbol used on pages. |
+| <Link id="m-isassistgrabblocked" /><code>{"private bool isAssistGrabBlocked"}</code> | Backing field for `IsAssistGrabBlocked`. When true, grab assist never picks this item. |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> | Backing field for `IsDisabledOnSimpleServer`. Progress commands skip such items on simple servers. |
+| <Link id="m-isoverridingdefaultshrunkenscale" /><code>{"private bool isOverridingDefaultShrunkenScale"}</code> | Backing field for `IsOverridingDefaultShrunkenScale`. |
+| <Link id="m-isoverridingdefaultvisualscale" /><code>{"private bool isOverridingDefaultVisualScale"}</code> | Backing field for `IsOverridingDefaultVisualScale`. |
+| <Link id="m-isplayingsound" /><code>{"private bool isPlayingSound"}</code> | Backing field for `IsPlayingSound`. |
+| <Link id="m-isscalingongrab" /><code>{"private bool isScalingOnGrab"}</code> | Backing field for `IsScalingOnGrab`, read by `PickupInteractionScaler` and `Pickup`. |
+| <Link id="m-issnappingtohand" /><code>{"private bool isSnappingToHand"}</code> | Backing field for `IsSnappingToHand`. Read by `Pickup` when deciding how a grab moves the item to the hand. |
+| <Link id="m-isstackable" /><code>{"private bool isStackable"}</code> | Backing field for `IsStackable`. |
+| <Link id="m-isstackablewhencrafted" /><code>{"private bool isStackableWhenCrafted"}</code> | Backing field for `IsStackableWhenCrafted`. Docks check it for crafted items. |
+| <Link id="m-isusingshrunkenvisual" /><code>{"private bool isUsingShrunkenVisual"}</code> | Backing field for `IsUsingShrunkenVisual` (true by default). |
+| <Link id="m-lastcalculatedscale" /><code>{"private float lastCalculatedScale"}</code> | Read-only inspector value written through `CalculatedScale` by `PickupInteractionScaler`. |
+| <Link id="m-lootcategory" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/category">{"Category"}</Link>{" lootCategory"}</code> | Backing field for `LootCategory`, the loot category used for weighted loot picks. |
+| <Link id="m-lootvalue" /><code>{"private "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" lootValue"}</code> | Backing field for `LootValue`. |
+| <Link id="m-normalpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" normalPositioning"}</code> | Dock position and rotation used when no custom entry matches and the dock doesn't scale items. |
+| <Link id="m-overrideletgosoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideLetGoSoundEffectType"}</code> | Backing field for `OverrideLetGoSoundEffectType`; `None` means the default sound. |
+| <Link id="m-overridepickupsoundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overridePickUpSoundEffectType"}</code> | Backing field for `OverridePickUpSoundEffectType`; `None` means the default sound. |
+| <Link id="m-overridescaleinsidevisual" /><code>{"private float overrideScaleInsideVisual"}</code> | Backing field for `OverrideScaleInsideVisual`. |
+| <Link id="m-overrideshrunkenscale" /><code>{"private float overrideShrunkenScale"}</code> | Backing field for `OverrideShrunkenScale`. |
+| <Link id="m-prefabhash" /><code>{"private uint prefabHash"}</code> | Network prefab hash behind `Prefab`. A zero hash logs a warning when read. |
+| <Link id="m-scaledpositioning" /><code>{"private "}<Link to="/game-api/types/alta-items/item-dockpositioning">{"Item.DockPositioning"}</Link>{" scaledPositioning"}</code> | Dock position and rotation used when no custom entry matches and the dock scales items down. |
+| <Link id="m-shrunkenvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" shrunkenVisual"}</code> | Backing field for `ShrunkenVisual`. |
+| <Link id="m-size" /><code>{"private int size"}</code> | Backing field for `Size` and `HasSize`. Negative means no size; docks compare it to their min and max crafting size. |
+| <Link id="m-storescale" /><code>{"private Vector3 storeScale"}</code> | Backing field for `StoreScale`: the item's scale in a scaling dock (half size by default). |
+| <Link id="m-tags" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"> tags"}</code> | Backing field for `Tags`. |
+| <Link id="m-weight" /><code>{"private float weight"}</code> | Backing field for `Weight` (1 by default). |
 
 </details>
 

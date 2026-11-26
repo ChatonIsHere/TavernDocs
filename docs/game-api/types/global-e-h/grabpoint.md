@@ -32,24 +32,24 @@ A spot on a pickup where a hand can hold it, with a rule for how the hand may tu
 <details>
 <summary>16 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-dockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" dockedRestriction"}</code> |
-| <Link id="m-enabledfromdocks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> enabledFromDocks"}</code> |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
-| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> |
-| <Link id="m-isignoringangle" /><code>{"private bool isIgnoringAngle"}</code> |
-| <Link id="m-issetupwithleft" /><code>{"private bool isSetupWithLeft"}</code> |
-| <Link id="m-isusinglocal" /><code>{"private bool isUsingLocal"}</code> |
-| <Link id="m-linear" /><code>{"private Vector3 linear"}</code> |
-| <Link id="m-nondockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" nonDockedRestriction"}</code> |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |
-| <Link id="m-poleforward" /><code>{"private Vector3 poleForward"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-refusemultiplehands" /><code>{"private bool refuseMultipleHands"}</code> |
-| <Link id="m-rotationeuler" /><code>{"private Vector3 rotationEuler"}</code> |
-| <Link id="m-thumbposition" /><code>{"private "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" thumbPosition"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" dockedRestriction"}</code> | Hand and rotation limits used when grabbing the pickup out of a dock: can block the left or right hand, or force fixed rotation. |
+| <Link id="m-enabledfromdocks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{"> enabledFromDocks"}</code> | Backing field for `EnabledFromDocks`. |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | Not used by this class. |
+| <Link id="m-isdisabled" /><code>{"private bool isDisabled"}</code> | Backing field for `IsDisabled`. Shown under Debug in the inspector. |
+| <Link id="m-isignoringangle" /><code>{"private bool isIgnoringAngle"}</code> | When true, `CheckScore` scores only on distance and ignores the hand angle. |
+| <Link id="m-issetupwithleft" /><code>{"private bool isSetupWithLeft"}</code> | For `FixedFlip` mode, which hand the fixed rotation was authored for; the other hand gets it flipped 180 degrees. |
+| <Link id="m-isusinglocal" /><code>{"private bool isUsingLocal"}</code> | With a `transform` set, read its local position and rotation directly instead of converting from world space. |
+| <Link id="m-linear" /><code>{"private Vector3 linear"}</code> | Local axis the grip can slide along; the hand's position is projected onto it. |
+| <Link id="m-nondockedrestriction" /><code>{"private "}<Link to="/game-api/types/global-p/pickupfromdockrestriction">{"PickupFromDockRestriction"}</Link>{" nonDockedRestriction"}</code> | Backing field for `NonDockedRestriction`: the hand and rotation limits used when the pickup isn't docked. |
+| <Link id="m-offset" /><code>{"private float offset"}</code> | Sideways shift of the hand along its right axis, mirrored for the left hand, before scoring. |
+| <Link id="m-poleforward" /><code>{"private Vector3 poleForward"}</code> | Pole direction for the pole modes. In `Surface` mode it holds the surface half extents instead. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Local grip position used when no `transform` is set. |
+| <Link id="m-refusemultiplehands" /><code>{"private bool refuseMultipleHands"}</code> | When true, `ApplyTo` marks the point occupied so a second hand can't use it. |
+| <Link id="m-rotationeuler" /><code>{"private Vector3 rotationEuler"}</code> | Local grip rotation in Euler angles, used when no `transform` is set. |
+| <Link id="m-thumbposition" /><code>{"private "}<Link to="/game-api/types/global-t-x/thumbposition">{"ThumbPosition"}</Link>{" thumbPosition"}</code> | Thumb pose given to the holder's grip animator when the point is applied. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Backing field for `Transform`. When set, the grip position and rotation come from it. |
 
 </details>
 

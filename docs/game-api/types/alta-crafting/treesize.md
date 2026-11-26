@@ -1,6 +1,6 @@
 ---
 title: "TreeSize"
-description: "class TreeSize in Root.Township."
+description: "A named tree size asset, picked from a popup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TreeSize
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+A named tree size asset, picked from a popup. `PresetTree` has one and `TreeSpawner` lists the sizes it can spawn.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`PopupScriptableObject`](/game-api/types/global-p/popupscriptableobject)
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> | Folder the popup assets live in: `Woodcutting/`. |
 
 ## Used in
 

@@ -30,10 +30,10 @@ One micro tutorial asset: a name, a list of steps and a completion message. It i
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-steps" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] steps"}</code> |
-| <Link id="m-tutorialname" /><code>{"private string tutorialName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-steps" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{"[] steps"}</code> | Backing field for `Steps`. |
+| <Link id="m-tutorialname" /><code>{"private string tutorialName"}</code> | Backing field for `TutorialName`. |
 
 </details>
 

@@ -30,15 +30,15 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> |
-| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> |
-| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> |
-| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> |
-| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
-| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-completeareatothicknessmultiplier" /><code>{"private float completeAreaToThicknessMultiplier"}</code> | Heat conductivity multiplier when fully forged. |
+| <Link id="m-heatpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{" heatPoint"}</code> | Backing field for `HeatPoint`. |
+| <Link id="m-incompleteareatothicknessmultiplier" /><code>{"private float incompleteAreaToThicknessMultiplier"}</code> | Heat conductivity multiplier when not forged at all. |
+| <Link id="m-ischangedsynclastsync" /><code>{"private bool isChangedSyncLastSync"}</code> | True when progress changed since the last sync. |
+| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> | True once progress reaches 1, so it syncs as finished. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | Backing field for `Progress`. |
+| <Link id="m-progressmultiplier" /><code>{"private float progressMultiplier"}</code> | How much hammer damage adds to progress, also scaled by the metal's glow. |
 
 </details>
 
@@ -72,9 +72,9 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Marks the point for sync, updates the heat point's thickness conductivity from progress and fires `Changed`. |
 
 </details>
 

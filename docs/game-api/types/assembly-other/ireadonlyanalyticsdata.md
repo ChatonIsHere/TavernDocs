@@ -1,6 +1,6 @@
 ---
 title: "IReadonlyAnalyticsData"
-description: "string EventName, int?"
+description: "Read-only view of an analytics event: its name, the user it's for and its properties."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
-`string EventName`, `int? UserId`, and the properties (`IAnalyticsProperty`) as a collection.
+Read-only view of an analytics event: its name, the user it's for and its properties.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `IReadOnlyCollection<IAnalyticsProperty>`, `IEnumerable<IAnalyticsProperty>`, `IEnumerable`
@@ -21,10 +21,10 @@ An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | Name of the analytics event. |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | The user the event is for, or null if none was set. |
 
 ## Used in
 

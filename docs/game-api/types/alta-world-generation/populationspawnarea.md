@@ -30,21 +30,21 @@ Server: a placed spawner that keeps a population of one definition alive at fixe
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-arepointsstatic" /><code>{"private bool arePointsStatic"}</code> |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
-| <Link id="m-destroyspawnedwiththis" /><code>{"private bool destroySpawnedWithThis"}</code> |
-| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> |
-| <Link id="m-isspawnpointsinitialized" /><code>{"private bool isSpawnPointsInitialized"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-maxpopulation" /><code>{"private int maxPopulation"}</code> |
-| <Link id="m-numberofspawnpoints" /><code>{"private int numberOfSpawnPoints"}</code> |
-| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" population"}</code> |
-| <Link id="m-populationdefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" populationDefinition"}</code> |
-| <Link id="m-spawnpoints" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> spawnPoints"}</code> |
-| <Link id="m-spawnpositions" /><code>{"private MonoBehaviour spawnPositions"}</code> |
-| <Link id="m-startingpopulation" /><code>{"private int startingPopulation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arepointsstatic" /><code>{"private bool arePointsStatic"}</code> | When on, picks `numberOfSpawnPoints` fixed points at start. When off, asks the spawn positions for a point each time. |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> | Unused location chunk field. |
+| <Link id="m-destroyspawnedwiththis" /><code>{"private bool destroySpawnedWithThis"}</code> | Destroys everything the population spawned when this area is destroyed (not on unload). |
+| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> | Spawns once when the chunk loads, then destroys the area. Saved. |
+| <Link id="m-isspawnpointsinitialized" /><code>{"private bool isSpawnPointsInitialized"}</code> | Whether the static spawn points have been picked. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-maxpopulation" /><code>{"private int maxPopulation"}</code> | Most entities alive at once. Halved (rounded up) for creatures on simple servers. Saved. |
+| <Link id="m-numberofspawnpoints" /><code>{"private int numberOfSpawnPoints"}</code> | How many static points to pick. Saved. |
+| <Link id="m-population" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" population"}</code> | The spawn information (points or simple) handed to the population. |
+| <Link id="m-populationdefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" populationDefinition"}</code> | Backing field for `PopulationDefinition`. |
+| <Link id="m-spawnpoints" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{"> spawnPoints"}</code> | The static spawn points in use. |
+| <Link id="m-spawnpositions" /><code>{"private MonoBehaviour spawnPositions"}</code> | The component that gives spawn positions (an `ISpawnPositions`). |
+| <Link id="m-startingpopulation" /><code>{"private int startingPopulation"}</code> | How many to spawn when the population starts. Saved. |
 
 </details>
 
@@ -59,9 +59,9 @@ Server: a placed spawner that keeps a population of one definition alive at fixe
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> | Returns this area's spawn information for any hash. |
 
 </details>
 
@@ -83,12 +83,12 @@ Server: a placed spawner that keeps a population of one definition alive at fixe
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkspawned" /><code>{"private void CheckSpawned("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-destroysample" /><code>{"private void DestroySample("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-initializechunk" /><code>{"private void InitializeChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-removefromchunk" /><code>{"private void RemoveFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkspawned" /><code>{"private void CheckSpawned("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | When the chunk is fully loaded, runs the population check a couple of frames later. One off areas then destroy themselves. |
+| <Link id="m-destroysample" /><code>{"private void DestroySample("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Destroys the population when the entity is destroyed. |
+| <Link id="m-initializechunk" /><code>{"private void InitializeChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> | Initializes the population for its chunk if needed and checks spawns once the chunk is fully loaded. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the static spawn points as small blue spheres. |
+| <Link id="m-removefromchunk" /><code>{"private void RemoveFromChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Stops listening to the old chunk's `FullyLoaded`. |
 
 </details>

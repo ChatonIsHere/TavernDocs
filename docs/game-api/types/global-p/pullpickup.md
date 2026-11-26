@@ -30,18 +30,18 @@ A stand-in pickup that forwards grabs to a target item and hands it over when pu
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
-| <Link id="m-isreleasingtargetonpull" /><code>{"private bool isReleasingTargetOnPull"}</code> |
-| <Link id="m-pullcoroutine" /><code>{"private Coroutine pullCoroutine"}</code> |
-| <Link id="m-pulldirection" /><code>{"private Vector3 pullDirection"}</code> |
-| <Link id="m-pulldistance" /><code>{"private float pullDistance"}</code> |
-| <Link id="m-pulledonclient" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnClient"}</code> |
-| <Link id="m-pulledonserver" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnServer"}</code> |
-| <Link id="m-syncforward" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncForward"}</code> |
-| <Link id="m-syncpulled" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPulled"}</code> |
-| <Link id="m-targetpickup" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetPickup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | This object's transform, cached. |
+| <Link id="m-isreleasingtargetonpull" /><code>{"private bool isReleasingTargetOnPull"}</code> | If true, the target stays released after the pull instead of being forwarded again. |
+| <Link id="m-pullcoroutine" /><code>{"private Coroutine pullCoroutine"}</code> | Running `CheckPull`, or null. |
+| <Link id="m-pulldirection" /><code>{"private Vector3 pullDirection"}</code> | Local direction the hand must pull in. |
+| <Link id="m-pulldistance" /><code>{"private float pullDistance"}</code> | Backing field for `PullDistance`, at least 0.05. |
+| <Link id="m-pulledonclient" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnClient"}</code> | Event run on clients when pulled. |
+| <Link id="m-pulledonserver" /><code>{"private "}<Link to="/game-api/types/global-p/pullevent">{"PullEvent"}</Link>{" pulledOnServer"}</code> | Event run on the server when pulled. |
+| <Link id="m-syncforward" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncForward"}</code> | Method sync for the forward state. |
+| <Link id="m-syncpulled" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPulled"}</code> | Method sync for the pull. |
+| <Link id="m-targetpickup" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetPickup"}</code> | The interactable pulled free (for example a cork or a sword in a stone). While null, this pickup is disabled. |
 
 </details>
 
@@ -63,15 +63,15 @@ A stand-in pickup that forwards grabs to a target item and hands it over when pu
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkpull" /><code>{"private IEnumerator CheckPull("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> |
-| <Link id="m-handleforward" /><code>{"private void HandleForward(bool isSettingForward)"}</code> |
-| <Link id="m-offsethandtargetforgrabassist" /><code>{"private static void OffsetHandTargetForGrabAssist("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-syncforward-2" /><code>{"private void SyncForward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSettingForward)"}</code> |
-| <Link id="m-syncpulled-2" /><code>{"private void SyncPulled("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkpull" /><code>{"private IEnumerator CheckPull("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor) (iterator)"}</code> | Server coroutine: while the hand holds this pickup, pulls once the hand has moved `pullDistance` along `pullDirection`. |
+| <Link id="m-handleforward" /><code>{"private void HandleForward(bool isSettingForward)"}</code> | Starts or stops forwarding grabs of the target to this pickup. With `isReleasingTargetOnPull`, the server also makes the target save on its own. |
+| <Link id="m-offsethandtargetforgrabassist" /><code>{"private static void OffsetHandTargetForGrabAssist("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Offsets the hand target when grab assist picks it up from more than about 0.3 m away. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the pull direction and distance in the editor. |
+| <Link id="m-startcheck" /><code>{"private void StartCheck("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Server: starts `CheckPull` when someone grabs this pickup. |
+| <Link id="m-syncforward-2" /><code>{"private void SyncForward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isSettingForward)"}</code> | Syncs whether grabs are forwarded; the server relays it to the chunk. |
+| <Link id="m-syncpulled-2" /><code>{"private void SyncPulled("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs a pull; the server relays it and runs its event, clients free the target and play the pull event. |
 
 </details>
 

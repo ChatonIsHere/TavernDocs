@@ -39,12 +39,12 @@ A chiselling recipe under `Carpentry/Chisel Definitions`: the order the 12 outer
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> |
-| <Link id="m-chiselorder" /><code>{"private List<int> chiselOrder"}</code> |
-| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-crafting/prefabspawnposition">{"PrefabSpawnPosition"}</Link>{"[] prefabs"}</code> |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnrandomize" /><code>{"private bool btnRandomize"}</code> | Inspector button that shuffles `chiselOrder`. |
+| <Link id="m-chiselorder" /><code>{"private List<int> chiselOrder"}</code> | Backing field for `ChiselOrder`: the order the 12 outer pieces should be chiselled in to get this result. |
+| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-crafting/prefabspawnposition">{"PrefabSpawnPosition"}</Link>{"[] prefabs"}</code> | Backing field for `Prefabs`: what spawns on the block, and where, when this definition is the result. |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> | Backing field for `Size`. Only definitions of the block's size are considered. |
 
 </details>
 
@@ -64,7 +64,7 @@ A chiselling recipe under `Carpentry/Chisel Definitions`: the order the 12 outer
 | <Link id="m-getbest" /><code>{"static "}<Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" GetBest(List<int> chisellingOrder, "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size)"}</code> | Picks a recipe for a chiselled order and size. An exact match wins; else a weighted random pick where worse matches weigh more. |
 | <Link id="m-gethash" /><code>{"uint GetHash()"}</code> | The definition's hash. |
 | <Link id="m-getproviderid" /><code>{"int GetProviderID(int preferredProvider)"}</code> | The chisel recipe page provider's identifier. |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |  |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Resets `chiselOrder` to 0 to 11 when it doesn't have 12 entries, and shuffles it when the Randomize button is pressed. |
 
 ## Used in
 

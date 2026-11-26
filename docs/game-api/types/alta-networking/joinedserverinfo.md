@@ -29,11 +29,11 @@ Client: the server you are joined to, sent by the server in `ConfirmJoinMessage`
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"private int identifier"}</code> |
-| <Link id="m-ispublicserver" /><code>{"private bool isPublicServer"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"private int identifier"}</code> | Backing field for `Identifier`. |
+| <Link id="m-ispublicserver" /><code>{"private bool isPublicServer"}</code> | Whether the joined server is public. Sent in `Serialize` but not exposed. |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
 
 </details>
 

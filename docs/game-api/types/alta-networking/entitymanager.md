@@ -33,20 +33,20 @@ Owns the table of network entity ids for a scene: hands out free ids, maps ids t
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-clientserialized" /><code>{"private readonly SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> clientSerialized"}</code> |
-| <Link id="m-clientserializedenumerable" /><code>{"private "}<Link to="/game-api/types/alta-networking/clientserializedenumerable">{"ClientSerializedEnumerable"}</Link>{" clientSerializedEnumerable"}</code> |
-| <Link id="m-entities" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] entities"}</code> |
-| <Link id="m-fakeentitydivision" /><code>{"private const int FakeEntityDivision"}</code> |
-| <Link id="m-isserver" /><code>{"private readonly bool isServer"}</code> |
-| <Link id="m-linkedlistiterationcount" /><code>{"private int linkedListIterationCount"}</code> |
-| <Link id="m-linkprovider" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ilinkprovider">{"ILinkProvider"}</Link>{" linkProvider"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-networkscene" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene"}</code> |
-| <Link id="m-nextspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" nextSpawn"}</code> |
-| <Link id="m-preparedlinks" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] preparedLinks"}</code> |
-| <Link id="m-serializedenumerables" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/serializedenumerable">{"SerializedEnumerable"}</Link>{"> serializedEnumerables"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clientserialized" /><code>{"private readonly SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> clientSerialized"}</code> | Private: client side list of entities this client serializes to the server, by identifier. |
+| <Link id="m-clientserializedenumerable" /><code>{"private "}<Link to="/game-api/types/alta-networking/clientserializedenumerable">{"ClientSerializedEnumerable"}</Link>{" clientSerializedEnumerable"}</code> | Private: reusable enumerator over `clientSerialized` for `GetClientSerialized`. |
+| <Link id="m-entities" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] entities"}</code> | Private: every link slot, indexed by entity identifier. |
+| <Link id="m-fakeentitydivision" /><code>{"private const int FakeEntityDivision"}</code> | Private constant 50: every 50th pair of link slots is a fake placeholder that never holds a real entity. |
+| <Link id="m-isserver" /><code>{"private readonly bool isServer"}</code> | Private: whether this manager runs on the server. |
+| <Link id="m-linkedlistiterationcount" /><code>{"private int linkedListIterationCount"}</code> | Private: how many times link allocation has wrapped round the free list. |
+| <Link id="m-linkprovider" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/ilinkprovider">{"ILinkProvider"}</Link>{" linkProvider"}</code> | Private: where links come from. Always this manager. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Private: logger for allocation and health messages. |
+| <Link id="m-networkscene" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" networkScene"}</code> | Private: the scene these entities belong to. |
+| <Link id="m-nextspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" nextSpawn"}</code> | Private: the next free link to hand out. |
+| <Link id="m-preparedlinks" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] preparedLinks"}</code> | Private static: a link array kept from a disposed manager so the next one can reuse it. |
+| <Link id="m-serializedenumerables" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/serializedenumerable">{"SerializedEnumerable"}</Link>{"> serializedEnumerables"}</code> | Private: a reusable serialized entity enumerator per connection, for `GetServerSerialized`. |
 
 </details>
 
@@ -75,11 +75,11 @@ Owns the table of network entity ids for a scene: hands out free ids, maps ids t
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetLink(uint identifier)"}</code> |
-| <Link id="m-getnextlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetNextLink()"}</code> |
-| <Link id="m-preparelinkedentitylist" /><code>{"private void PrepareLinkedEntityList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetLink(uint identifier)"}</code> | Returns the link slot for an identifier, straight from the array. |
+| <Link id="m-getnextlink" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" Alta.Networking.Internal.ILinkProvider.GetNextLink()"}</code> | Walks the free list to the next empty, non fake link. A full link found there counts as corruption and quits the server. |
+| <Link id="m-preparelinkedentitylist" /><code>{"private void PrepareLinkedEntityList()"}</code> | Private: builds the 100000 link slots and their free list, or reuses the array kept by the last `Dispose`. |
 
 </details>
 

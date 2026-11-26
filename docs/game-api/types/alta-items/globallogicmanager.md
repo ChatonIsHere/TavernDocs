@@ -31,15 +31,15 @@ Holds the shared data records for logic components (switches, wires and so on), 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-contextstack" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{"> contextStack"}</code> |
-| <Link id="m-datamap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{"> dataMap"}</code> |
-| <Link id="m-defaultsetdata" /><code>{"private "}<Link to="/game-api/types/global-m-o/nonhasheddata">{"NonHashedData"}</Link>{" defaultSetData"}</code> |
-| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" instance"}</code> |
-| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-nextid" /><code>{"private uint nextId"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-contextstack" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{"> contextStack"}</code> | Static stack of managers pushed as saving contexts. Its top is `Current`, or `Global` when empty. |
+| <Link id="m-datamap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-items/ilogicvaluedata">{"ILogicValueData"}</Link>{"> dataMap"}</code> | Logic value data by identifier. Filled by `GetData` and replaced on load, saved in full. |
+| <Link id="m-defaultsetdata" /><code>{"private "}<Link to="/game-api/types/global-m-o/nonhasheddata">{"NonHashedData"}</Link>{" defaultSetData"}</code> | Saved data loaded into the entity on server start when nothing has been loaded yet. |
+| <Link id="m-instance" /><code>{"private static "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" instance"}</code> | Backing field for `Global`. |
+| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> | Whether this manager registers itself as `Global` in `Awake`. Defaults to true. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-nextid" /><code>{"private uint nextId"}</code> | Next identifier `GetData` hands out to data that has none. Saved, and only raised on load. |
 
 </details>
 
@@ -62,11 +62,11 @@ Holds the shared data records for logic components (switches, wires and so on), 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-popcontext" /><code>{"private void ISavingContext.PopContext()"}</code> |
-| <Link id="m-pushcontext" /><code>{"private void ISavingContext.PushContext()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Registers this manager as `Global` when `isGlobal` is set. |
+| <Link id="m-popcontext" /><code>{"private void ISavingContext.PopContext()"}</code> | Explicit `ISavingContext` method: pops this manager off the context stack, logging an error if it wasn't on top. |
+| <Link id="m-pushcontext" /><code>{"private void ISavingContext.PushContext()"}</code> | Explicit `ISavingContext` method: pushes this manager so it becomes `Current` while its children load or save. |
 
 </details>
 

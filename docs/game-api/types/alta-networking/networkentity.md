@@ -36,29 +36,29 @@ A networked object: anything the server spawns, saves and syncs to players, incl
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
-| <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> |
-| <Link id="m-commonimpacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" commonImpactTool"}</code> |
-| <Link id="m-commoninteractable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" commonInteractable"}</code> |
-| <Link id="m-commonpickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" commonPickup"}</code> |
-| <Link id="m-embeddedid" /><code>{"private int embeddedId"}</code> |
-| <Link id="m-getpositionchunk" /><code>{"private Func<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> getPositionChunk"}</code> |
-| <Link id="m-hash" /><code>{"private int hash"}</code> |
-| <Link id="m-hasnetworkbehaviours" /><code>{"private bool hasNetworkBehaviours"}</code> |
-| <Link id="m-isinitializedasserver" /><code>{"private bool isInitializedAsServer"}</code> |
-| <Link id="m-issendingmessages" /><code>{"private bool isSendingMessages"}</code> |
-| <Link id="m-lastframe" /><code>{"private int lastFrame"}</code> |
-| <Link id="m-lastframeposition" /><code>{"private Vector3 lastFramePosition"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-messagehandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagehandler">{"EntityMessageHandler"}</Link>{" messageHandler"}</code> |
-| <Link id="m-moveentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" moveEntity"}</code> |
-| <Link id="m-networkentitybehaviours" /><code>{"private MonoBehaviour[] networkEntityBehaviours"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
-| <Link id="m-serializedbehaviours" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/inetworkserialized">{"INetworkSerialized"}</Link>{"> serializedBehaviours"}</code> |
-| <Link id="m-serializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer"}</code> |
-| <Link id="m-syncpriority" /><code>{"private int syncPriority"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | Cached `transform`, filled on first use by `Transform` and `FramePosition`. |
+| <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> | Backing field for `Chunker`, created in the constructor. |
+| <Link id="m-commonimpacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" commonImpactTool"}</code> | The `ImpactTool` on the same object, found in the editor; backing field for `CommonImpactTool`. |
+| <Link id="m-commoninteractable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" commonInteractable"}</code> | The `Interactable` on the same object, found in the editor; backing field for `CommonInteractable`. |
+| <Link id="m-commonpickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" commonPickup"}</code> | The `Pickup` on the same object, found in the editor; backing field for `CommonPickup`. |
+| <Link id="m-embeddedid" /><code>{"private int embeddedId"}</code> | Backing field for `EmbeddedId`: the entity's index among the embedded child entities of its prefab. |
+| <Link id="m-getpositionchunk" /><code>{"private Func<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{", "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> getPositionChunk"}</code> | Function behind `PositionChunk`. By default it walks up the chunking parents and uses the top one's chunk. |
+| <Link id="m-hash" /><code>{"private int hash"}</code> | Backing field for `Hash`, validated in `OnValidate`. |
+| <Link id="m-hasnetworkbehaviours" /><code>{"private bool hasNetworkBehaviours"}</code> | Set in the editor when the object has any `INetworkEntityBehaviour`; `InitializeAsServer` skips the behaviours when false. |
+| <Link id="m-isinitializedasserver" /><code>{"private bool isInitializedAsServer"}</code> | Stops `InitializeAsServer` from running twice. |
+| <Link id="m-issendingmessages" /><code>{"private bool isSendingMessages"}</code> | Backing field for `IsSendingMessages`. |
+| <Link id="m-lastframe" /><code>{"private int lastFrame"}</code> | Frame number when `lastFramePosition` was last read; lets `FramePosition` read the transform once per frame. |
+| <Link id="m-lastframeposition" /><code>{"private Vector3 lastFramePosition"}</code> | Position cached for the current frame by `FramePosition`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-messagehandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagehandler">{"EntityMessageHandler"}</Link>{" messageHandler"}</code> | Backing field for `MessageHandler`, created on first use. |
+| <Link id="m-moveentity" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" moveEntity"}</code> | Method sync for `MoveEntity` messages, used by `ForcePositionSync` to send the position to the entity's chunks. |
+| <Link id="m-networkentitybehaviours" /><code>{"private MonoBehaviour[] networkEntityBehaviours"}</code> | Every `INetworkEntityBehaviour` on the object, found in the editor; these get the initialize, connect and disconnect calls. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | The `NetworkPrefab` on the same object; backing field for `Prefab`. |
+| <Link id="m-serializedbehaviours" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/inetworkserialized">{"INetworkSerialized"}</Link>{"> serializedBehaviours"}</code> | Static scratch list used by `CreateSerializer` while it collects the serialized behaviours. |
+| <Link id="m-serializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer"}</code> | Backing field for `Serializer`; null when no behaviour is serialized. |
+| <Link id="m-syncpriority" /><code>{"private int syncPriority"}</code> | Base sync priority (default 10). `SyncPriority` lowers it by 5 while any priority modifier, such as docked or interacted, is set. |
 
 </details>
 
@@ -107,9 +107,9 @@ A networked object: anything the server spawns, saves and syncs to players, incl
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-ichunkedentity-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" Alta.Networking.IChunkedEntity.Chunker { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-ichunkedentity-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" Alta.Networking.IChunkedEntity.Chunker { get; }"}</code> | Exposes the entity's `Chunker` (the object that tracks its chunk, parent and children) to the chunk system. |
 
 </details>
 
@@ -160,17 +160,17 @@ A networked object: anything the server spawns, saves and syncs to players, incl
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkfornetworkbehaviour" /><code>{"private bool CheckForNetworkBehaviour()"}</code> |
-| <Link id="m-createserializer" /><code>{"private void CreateSerializer(MonoBehaviour[] behaviours)"}</code> |
-| <Link id="m-onchildadded" /><code>{"private void OnChildAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> |
-| <Link id="m-onchildremoved" /><code>{"private void OnChildRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-oninitialize" /><code>{"private void OnInitialize()"}</code> |
-| <Link id="m-onparentchanged" /><code>{"private void Alta.Networking.IChunkedEntity.OnParentChanged("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |
-| <Link id="m-serializemove" /><code>{"private void SerializeMove("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkfornetworkbehaviour" /><code>{"private bool CheckForNetworkBehaviour()"}</code> | Editor validation check that sets `hasNetworkBehaviours`: true if the object has any `INetworkEntityBehaviour`. |
+| <Link id="m-createserializer" /><code>{"private void CreateSerializer(MonoBehaviour[] behaviours)"}</code> | Called from `Initialize`: builds an `EntitySerializer` from the behaviours that implement `INetworkSerialized` and registers it with the scene. |
+| <Link id="m-onchildadded" /><code>{"private void OnChildAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | Raises `ChildAdded` when another entity starts using this one as its chunking parent. |
+| <Link id="m-onchildremoved" /><code>{"private void OnChildRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" child)"}</code> | Raises `ChildRemoved` when another entity stops using this one as its chunking parent. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Lowers `SpawnedCount`, unlinks the entity from its spawner if it wasn't destroyed through the scene, and releases the serializer arrays. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Logs an error if the entity is disabled while still active in the hierarchy and not marked `IsBeingDestroyed`. |
+| <Link id="m-oninitialize" /><code>{"private void OnInitialize()"}</code> | Runs at the end of the first `Initialize` and sets up the `moveEntity` method sync. |
+| <Link id="m-onparentchanged" /><code>{"private void Alta.Networking.IChunkedEntity.OnParentChanged("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | Called by the chunker when the chunking parent changes: raises `ParentChanged`, then `ChildRemoved` on the old parent and `ChildAdded` on the new one. |
+| <Link id="m-serializemove" /><code>{"private void SerializeMove("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the entity's position (chunk-relative) and compressed rotation for a move message, then calls `Moved` on every `IUpdateOnMove`. |
 
 </details>
 

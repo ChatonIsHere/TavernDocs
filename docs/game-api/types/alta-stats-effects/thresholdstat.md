@@ -28,16 +28,16 @@ A `StatDefinition` split into named levels by threshold. While the stat's value 
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-levels" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel">{"ThresholdStat.ThresholdLevel"}</Link>{"[] levels"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-levels" /><code>{"protected "}<Link to="/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel">{"ThresholdStat.ThresholdLevel"}</Link>{"[] levels"}</code> | Backing field for `Levels`: each level's name, minimum value, modifiers and whether it shows a notch. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-notchescount" /><code>{"private int notchesCount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-notchescount" /><code>{"private int notchesCount"}</code> | Number of levels (past the first) that show a notch. Worked out in `OnValidate`. |
 
 </details>
 

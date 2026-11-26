@@ -30,32 +30,32 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 <details>
 <summary>24 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-backdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" backDocks"}</code> |
-| <Link id="m-beltdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" beltDocks"}</code> |
-| <Link id="m-bodycollidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" bodyColliderGroup"}</code> |
-| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> |
-| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> |
-| <Link id="m-currentscaling" /><code>{"private Coroutine currentScaling"}</code> |
-| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> |
-| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |
-| <Link id="m-dockpositioncontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" dockPositionController"}</code> |
-| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> |
-| <Link id="m-headfollow" /><code>{"private Transform headFollow"}</code> |
-| <Link id="m-ikcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" ikController"}</code> |
-| <Link id="m-isfadingonmove" /><code>{"private bool isFadingOnMove"}</code> |
-| <Link id="m-localitycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" localityController"}</code> |
-| <Link id="m-minimumdistancefortrail" /><code>{"private float minimumDistanceForTrail"}</code> |
-| <Link id="m-moveduration" /><code>{"private float moveDuration"}</code> |
-| <Link id="m-nonbakedcharacterrenderer" /><code>{"private Renderer nonBakedCharacterRenderer"}</code> |
-| <Link id="m-nonbakedcharacterrendererpivot" /><code>{"private Transform nonBakedCharacterRendererPivot"}</code> |
-| <Link id="m-rigidbodies" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" rigidbodies"}</code> |
-| <Link id="m-scalevelocity" /><code>{"private float scaleVelocity"}</code> |
-| <Link id="m-specialeffectscontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" specialEffectsController"}</code> |
-| <Link id="m-teleportertrail" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleporterTrail"}</code> |
-| <Link id="m-teleportstyle" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" teleportStyle"}</code> |
-| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-backdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" backDocks"}</code> | Backing field for `BackDocks`. |
+| <Link id="m-beltdocks" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockgroup">{"PickupDockGroup"}</Link>{" beltDocks"}</code> | Backing field for `BeltDocks`. |
+| <Link id="m-bodycollidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" bodyColliderGroup"}</code> | Backing field for `BodyColliderGroup`. |
+| <Link id="m-bodycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" bodyController"}</code> | Backing field for `BodyController`. |
+| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> | Coroutine field for a rotation. Not used in this class. |
+| <Link id="m-currentscaling" /><code>{"private Coroutine currentScaling"}</code> | Coroutine field for scaling. Not used in this class. |
+| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> | Coroutine field for a move. Not used in this class. |
+| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> | Backing field for `CustomizationHandler`. Destroyed when the character is unlinked or destroyed. |
+| <Link id="m-dockpositioncontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/dockpositioncontroller">{"DockPositionController"}</Link>{" dockPositionController"}</code> | Backing field for `DockPositionController`. |
+| <Link id="m-dummy" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterdummypointer">{"CharacterDummyPointer"}</Link>{" dummy"}</code> | Points to the `CharacterDummy` (rig, animator, cosmetics) behind `Dummy`. |
+| <Link id="m-headfollow" /><code>{"private Transform headFollow"}</code> | Backing field for `HeadFollow`. |
+| <Link id="m-ikcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/characterikcontroller">{"CharacterIKController"}</Link>{" ikController"}</code> | Backing field for `IKController`. |
+| <Link id="m-isfadingonmove" /><code>{"private bool isFadingOnMove"}</code> | Serialized flag. Not read in this class. |
+| <Link id="m-localitycontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/characterlocalitycontroller">{"CharacterLocalityController"}</Link>{" localityController"}</code> | Backing field for `LocalityController`, which also supplies `Head`. |
+| <Link id="m-minimumdistancefortrail" /><code>{"private float minimumDistanceForTrail"}</code> | Serialized distance for the teleport trail (5 by default). Not read in this class. |
+| <Link id="m-moveduration" /><code>{"private float moveDuration"}</code> | Backing field for `MoveDuration`. |
+| <Link id="m-nonbakedcharacterrenderer" /><code>{"private Renderer nonBakedCharacterRenderer"}</code> | Editor-only renderer that `Bake` destroys at build time. |
+| <Link id="m-nonbakedcharacterrendererpivot" /><code>{"private Transform nonBakedCharacterRendererPivot"}</code> | Pivot for the non-baked renderer. Not used in this class. |
+| <Link id="m-rigidbodies" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigidbodycollection">{"RigidbodyCollection"}</Link>{" rigidbodies"}</code> | Backing field for `Rigidbodies`. |
+| <Link id="m-scalevelocity" /><code>{"private float scaleVelocity"}</code> | Smoothing velocity for scaling. Not used in this class. |
+| <Link id="m-specialeffectscontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playerspecialeffectscontroller">{"PlayerSpecialEffectsController"}</Link>{" specialEffectsController"}</code> | Backing field for `SpecialEffectsController`. |
+| <Link id="m-teleportertrail" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" teleporterTrail"}</code> | Pooled teleport trail effect. Not used in this class. |
+| <Link id="m-teleportstyle" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" teleportStyle"}</code> | Backing field for `TeleportStyle`. |
+| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> | Smoothing velocity for moving. Not used in this class. |
 
 </details>
 
@@ -88,9 +88,9 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ihasfingertips-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" IHasFingertips.FingerTips { get; }"}</code> | Fingertip settings, taken from the character dummy. |
 
 </details>
 
@@ -115,14 +115,14 @@ The player's body in the world: the `PlayerController` used for normal play, wit
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onarmedchanged" /><code>{"private void OnArmedChanged(bool isArmed)"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |
-| <Link id="m-setupdocksbasedonbodytype" /><code>{"private void SetupDocksBasedOnBodyType()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-updateik" /><code>{"private IEnumerator UpdateIK() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onarmedchanged" /><code>{"private void OnArmedChanged(bool isArmed)"}</code> | Server: sets the `Armed` sense on the player's AI target when the player arms or disarms, so creatures can react. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Starts the `UpdateIK` coroutine. |
+| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> | Runs when linked to a player: marks it alive, sets up locality and first-person customization, and on the server watches the armed state. |
+| <Link id="m-setupdocksbasedonbodytype" /><code>{"private void SetupDocksBasedOnBodyType()"}</code> | Places the tool belt and pouch belt docks for the dummy's body type once its cosmetics finish packing. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Re-enables the body animator and runs the IK update every frame, recovering the animator reference if it was destroyed. |
+| <Link id="m-updateik" /><code>{"private IEnumerator UpdateIK() (iterator)"}</code> | Coroutine that runs the fixed-step IK each physics step with the body animator turned off. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "JointInsertType"
-description: "class JointInsertType in Root.Township."
+description: "Asset naming a kind of joint insert (the part that goes into a joint slot)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JointInsertType
 
 A **class** in `Root.Township`, `Alta.Crafting`.
+
+Asset naming a kind of joint insert (the part that goes into a joint slot). A `JointSlotType` lists which insert types it allows.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`JointPointType`](/game-api/types/alta-crafting/jointpointtype)

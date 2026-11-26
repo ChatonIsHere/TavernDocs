@@ -31,22 +31,22 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-graphic" /><code>{"private MeshFilter graphic"}</code> |
-| <Link id="m-inputcount" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputCount"}</code> |
-| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> |
-| <Link id="m-isusingrestrictor" /><code>{"private bool isUsingRestrictor"}</code> |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-outputcount" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" outputCount"}</code> |
-| <Link id="m-outputquantityrenderer" /><code>{"private MeshRenderer outputQuantityRenderer"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-syncuse" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncUse"}</code> |
-| <Link id="m-usage" /><code>{"private int usage"}</code> |
-| <Link id="m-usagevisual" /><code>{"private "}<Link to="/game-api/types/global-i-l/integervisual">{"IntegerVisual"}</Link>{" usageVisual"}</code> |
-| <Link id="m-workingrendererslist" /><code>{"private static List<Renderer> workingRenderersList"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. Saved. |
+| <Link id="m-graphic" /><code>{"private MeshFilter graphic"}</code> | Mesh showing the shape the mould makes. |
+| <Link id="m-inputcount" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" inputCount"}</code> | Text showing the definition's cost. |
+| <Link id="m-isgenerating" /><code>{"private bool isGenerating"}</code> | Whether a blank mould picks a random definition when spawned. Off for crafted moulds. |
+| <Link id="m-isusingrestrictor" /><code>{"private bool isUsingRestrictor"}</code> | Backing field for `IsUsingRestrictor`. Defaults to true. |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | LOD group whose first level gets the shape and text renderers. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Private: logger. Not used in this build. |
+| <Link id="m-outputcount" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" outputCount"}</code> | Text showing how many items one use makes, shown when more than one. |
+| <Link id="m-outputquantityrenderer" /><code>{"private MeshRenderer outputQuantityRenderer"}</code> | The 'x' renderer next to `outputCount`. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Private: message for `Sync`, sent when the definition changes and to joining players. |
+| <Link id="m-syncuse" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncUse"}</code> | Private: message for `SyncUse`, sent by `Consume`. |
+| <Link id="m-usage" /><code>{"private int usage"}</code> | Backing field for `Usage`. -1 means unlimited uses. |
+| <Link id="m-usagevisual" /><code>{"private "}<Link to="/game-api/types/global-i-l/integervisual">{"IntegerVisual"}</Link>{" usageVisual"}</code> | Optional visual showing the uses left. |
+| <Link id="m-workingrendererslist" /><code>{"private static List<Renderer> workingRenderersList"}</code> | Private static: scratch list used to rebuild the LOD renderers. |
 
 </details>
 
@@ -62,9 +62,9 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> | True only while the mould has no definition (it is blank). |
 
 </details>
 
@@ -81,11 +81,11 @@ A casting mould item that holds a `MouldDefinition` (what it casts and how many 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncuse-2" /><code>{"private void SyncUse("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty in this build. |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private: syncs the definition hash and, if the mould has limited uses, the uses left. Clients apply them. |
+| <Link id="m-syncuse-2" /><code>{"private void SyncUse("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private: syncs the uses left and updates the visual on clients. |
 
 </details>
 

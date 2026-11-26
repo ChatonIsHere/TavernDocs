@@ -1,6 +1,6 @@
 ---
 title: "PlayerJoinLeaveData"
-description: "class PlayerJoinLeaveData in Root.Township."
+description: "Payload of the PlayerJoined and PlayerLeft console events, built from a player when they join or leave."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerJoinLeaveData
 
 A **class** in `Root.Township`, `Alta.Networking.Servers`.
+
+Payload of the `PlayerJoined` and `PlayerLeft` console events, built from a player when they join or leave.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Documented in** [Console events](/game-api/console-and-utilities/console-events)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Networking.Servers`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mode" /><code><Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" mode"}</code> | The player's `PlayerMode` at the time. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | The player's saved position. |
+| <Link id="m-user" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" user"}</code> | The player's account info. |
 
 ## Used in
 

@@ -29,9 +29,9 @@ One cave generation `Plugin` running for one generator (cave layer). Made by `Pl
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ipartinstance">{"IPartInstance"}</Link>{"[] parts"}</code> | Per-generator instances of the plugin's parts, passed to `Plugin.Modify`. |
 
 </details>
 

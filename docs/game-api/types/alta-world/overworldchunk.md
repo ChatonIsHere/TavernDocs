@@ -1,6 +1,6 @@
 ---
 title: "OverworldChunk"
-description: "A LocationChunk in the square grid that covers the outdoor map."
+description: "A LocationChunk in the overworld grid, with an X and Z grid index."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Chunks`.
 
-A `LocationChunk` in the square grid that covers the outdoor map. Named `"Chunk <x>-<z>"`.
+A `LocationChunk` in the overworld grid, with an X and Z grid index. Loads the chunks around it by radius as well as its normal neighbours.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`LocationChunk`](/game-api/types/alta-world/locationchunk)
@@ -29,28 +29,28 @@ A `LocationChunk` in the square grid that covers the outdoor map. Named `"Chunk 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-gridxindex" /><code>{"private int gridXIndex"}</code> |
-| <Link id="m-gridzindex" /><code>{"private int gridZIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gridxindex" /><code>{"private int gridXIndex"}</code> | Backing field for `GridXIndex`. |
+| <Link id="m-gridzindex" /><code>{"private int gridZIndex"}</code> | Backing field for `GridZIndex`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-gridxindex-2" /><code>{"int GridXIndex { get; }"}</code> |
-| <Link id="m-gridzindex-2" /><code>{"int GridZIndex { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gridxindex-2" /><code>{"int GridXIndex { get; }"}</code> | X index of this chunk in the overworld grid. |
+| <Link id="m-gridzindex-2" /><code>{"int GridZIndex { get; }"}</code> | Z index of this chunk in the overworld grid. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-createchunkidentifier" /><code>{"static string CreateChunkIdentifier(int xIndex, int yIndex)"}</code> |
-| <Link id="m-getneighboursforloading" /><code>{"override void GetNeighboursForLoading(float remainingLoadBudget, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> |
-| <Link id="m-setgridposition" /><code>{"void SetGridPosition(int xIndex, int zIndex)"}</code> |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createchunkidentifier" /><code>{"static string CreateChunkIdentifier(int xIndex, int yIndex)"}</code> | Builds the identifier string for a grid cell, in the form `Chunk x-y`. |
+| <Link id="m-getneighboursforloading" /><code>{"override void GetNeighboursForLoading(float remainingLoadBudget, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> result)"}</code> | Adds the base neighbours, then all overworld chunks within the remaining load budget radius. |
+| <Link id="m-setgridposition" /><code>{"void SetGridPosition(int xIndex, int zIndex)"}</code> | Sets the X and Z grid indexes. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Just calls the base `OnValidate`. |
 
 ## Used in
 

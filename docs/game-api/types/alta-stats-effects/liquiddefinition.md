@@ -31,10 +31,10 @@ A hashed asset for a liquid used in cooking, under `Cooking/Liquids`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" data"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> | Cached `LiquidContent` made by `GetAsLiquidContent`, shared by every caller. |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquiddata">{"LiquidData"}</Link>{" data"}</code> | Backing field for `Data`: the liquid's colour, visuals and effects. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "ArmorManager<TSlot>"
-description: "Set(TSlot slot, ArmorDefinition armor): shows armour on a slot."
+description: "Maps armor slots to the impact detectors they cover, so setting a slot's armor updates every detector for that body part."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Customization`.
 
-`Set(TSlot slot, ArmorDefinition armor)`: shows armour on a slot.
+Maps armor slots to the impact detectors they cover, so setting a slot's armor updates every detector for that body part.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -31,24 +31,24 @@ A **class** in `Root.Township`, `Alta.Customization`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-slotpairings" /><code>{"private "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>[] slotPairings"}</code> |
-| <Link id="m-slots" /><code>{"private Dictionary<TSlot, "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>> slots"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-slotpairings" /><code>{"private "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>[] slotPairings"}</code> | Serialized pairs of slot and the `EquipmentReference` detectors it covers. |
+| <Link id="m-slots" /><code>{"private Dictionary<TSlot, "}<Link to="/game-api/types/alta-customization/armormanager-tslot-slotpairing">{"ArmorManager"}</Link>{"<TSlot>> slots"}</code> | Lookup of pairings by slot. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-set" /><code>{"void Set(TSlot slot, "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-set" /><code>{"void Set(TSlot slot, "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor)"}</code> | Sets the armor on every detector paired with the slot. Unknown slots are ignored. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Builds the slot lookup from `slotPairings`. |
 
 </details>

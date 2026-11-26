@@ -84,9 +84,9 @@ The game's own server settings, loaded from `ServerConfiguration.json`. Server: 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> | Returns a shallow copy of the settings. |
 
 </details>
 

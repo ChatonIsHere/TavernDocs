@@ -31,10 +31,10 @@ One piece of a map that players discover: a sprite and where it sits on the map.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-offset" /><code>{"private Vector2 offset"}</code> | Backing field for `Offset`. |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | Backing field for `Sprite`. |
 
 </details>
 

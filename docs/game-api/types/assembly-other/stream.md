@@ -38,12 +38,12 @@ The bit reader and writer under every network message and save file. Each `Seria
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-epsilon" /><code>{"private const float Epsilon"}</code> |
-| <Link id="m-normalizedmaximum" /><code>{"private const float NormalizedMaximum"}</code> |
-| <Link id="m-normalizedminimum" /><code>{"private const float NormalizedMinimum"}</code> |
-| <Link id="m-normalizedrange" /><code>{"private const float NormalizedRange"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-epsilon" /><code>{"private const float Epsilon"}</code> | Tolerance (1E-31) used by `SerializeDirection` to decide whether a vector needs normalizing before it is written. |
+| <Link id="m-normalizedmaximum" /><code>{"private const float NormalizedMaximum"}</code> | Largest value (about 0.7071) a non-largest component of a unit quaternion or direction can have; the top of the compressed range. |
+| <Link id="m-normalizedminimum" /><code>{"private const float NormalizedMinimum"}</code> | Smallest value (about -0.7071) a compressed quaternion or direction component can have; the bottom of the compressed range. |
+| <Link id="m-normalizedrange" /><code>{"private const float NormalizedRange"}</code> | Width of the compressed component range (about 1.4142), used to scale components in quaternion and direction compression. |
 
 </details>
 
@@ -108,9 +108,9 @@ The bit reader and writer under every network message and save file. Each `Seria
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-internalserializefloat" /><code>{"private void InternalSerializeFloat(ref float value, int bits, uint maximumInteger)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-internalserializefloat" /><code>{"private void InternalSerializeFloat(ref float value, int bits, uint maximumInteger)"}</code> | Shared body of the `SerializeFloat01` overloads: maps a 0 to 1 value onto an integer of the given bit count and back. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "DamageSource"
-description: "enum DamageSource in Root.Township."
+description: "What caused a hit of damage (fall, impact, command, area of effect, poison, hunger, fire or unknown)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DamageSource
 
 An **enum** in `Root.Township`, `Alta.Impact`.
+
+What caused a hit of damage (fall, impact, command, area of effect, poison, hunger, fire or unknown). Carried in `DamageData`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Documented in** [Health and damage](/game-api/items/health-and-damage#damagedata-and-damagesource)

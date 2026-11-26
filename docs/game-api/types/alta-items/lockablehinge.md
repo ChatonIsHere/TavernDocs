@@ -37,16 +37,16 @@ A hinged lid (chest and similar) that can be locked. A child `Lock` limits the h
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-basecolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" baseColliders"}</code> |
-| <Link id="m-islockedevent" /><code>{"private "}<Link to="/game-api/types/alta-items/lockableevent">{"LockableEvent"}</Link>{" isLockedEvent"}</code> |
-| <Link id="m-lockedmaxangle" /><code>{"private float lockedMaxAngle"}</code> |
-| <Link id="m-lockhash" /><code>{"private uint lockHash"}</code> |
-| <Link id="m-lockjoint" /><code>{"private ConfigurableJoint lockJoint"}</code> |
-| <Link id="m-openmaxangle" /><code>{"private float openMaxAngle"}</code> |
-| <Link id="m-synclocked" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLocked"}</code> |
-| <Link id="m-syncsetlock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetLock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basecolliders" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" baseColliders"}</code> | Colliders that ignore collisions with the attached lock's colliders. |
+| <Link id="m-islockedevent" /><code>{"private "}<Link to="/game-api/types/alta-items/lockableevent">{"LockableEvent"}</Link>{" isLockedEvent"}</code> | Backing field for `IsLockedEvent`. |
+| <Link id="m-lockedmaxangle" /><code>{"private float lockedMaxAngle"}</code> | Lid joint lower limit while locked (default -2 degrees). |
+| <Link id="m-lockhash" /><code>{"private uint lockHash"}</code> | Prefab hash of a saved detached lock, set on load and used by `LoadSetup` to respawn it. |
+| <Link id="m-lockjoint" /><code>{"private ConfigurableJoint lockJoint"}</code> | Joint made by `CreateLockJoint` that holds a detached lock on; destroyed when the lock comes off. |
+| <Link id="m-openmaxangle" /><code>{"private float openMaxAngle"}</code> | Lid joint lower limit while unlocked (default -150 degrees). |
+| <Link id="m-synclocked" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLocked"}</code> | Method sync (SyncA) that sends the locked flag. |
+| <Link id="m-syncsetlock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSetLock"}</code> | Method sync (SyncB) that sends the locked flag and the attached lock; sent to each player on connect. |
 
 </details>
 
@@ -69,14 +69,14 @@ A hinged lid (chest and similar) that can be locked. A child `Lock` limits the h
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-createlockjoint" /><code>{"private void CreateLockJoint(Rigidbody lockRigidbody)"}</code> |
-| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> |
-| <Link id="m-locktrigger" /><code>{"private void LockTrigger("}<Link to="/game-api/types/alta-items/lock">{"Lock"}</Link>{" eventLock)"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-resolvesaveloadineditor" /><code>{"private void ResolveSaveLoadInEditor()"}</code> |
-| <Link id="m-synclocked-2" /><code>{"private void SyncLocked("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncsetlock-2" /><code>{"private void SyncSetLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createlockjoint" /><code>{"private void CreateLockJoint(Rigidbody lockRigidbody)"}</code> | Adds a springy configurable joint holding a detached lock's rigidbody to the lid at `lockPosition`. |
+| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> | Server, after loading: re-applies a saved detached lock, using a child lock if present or spawning one from the saved prefab hash. |
+| <Link id="m-locktrigger" /><code>{"private void LockTrigger("}<Link to="/game-api/types/alta-items/lock">{"Lock"}</Link>{" eventLock)"}</code> | Server: listens to the current lock's locked event and copies its state with `SetLocked`. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: picks up a child `Lock` as the current lock if none is set. |
+| <Link id="m-resolvesaveloadineditor" /><code>{"private void ResolveSaveLoadInEditor()"}</code> | Empty; called at the start of save and load. |
+| <Link id="m-synclocked-2" /><code>{"private void SyncLocked("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the locked flag; clients apply it with `SetLocked`. |
+| <Link id="m-syncsetlock-2" /><code>{"private void SyncSetLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the locked flag and which lock entity is attached; clients attach or detach that lock, waiting for it to spawn if needed. |
 
 </details>

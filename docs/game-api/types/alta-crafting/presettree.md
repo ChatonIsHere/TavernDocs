@@ -32,12 +32,12 @@ Asset that records a tree's full shape (each trunk or branch piece, how they con
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" size"}</code> |
-| <Link id="m-species" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] species"}</code> |
-| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{"> steps"}</code> |
-| <Link id="m-workingwithtree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" workingWithTree"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treesize">{"TreeSize"}</Link>{" size"}</code> | Backing field for `Size`. |
+| <Link id="m-species" /><code>{"private "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{"[] species"}</code> | Backing field for `Species`. The editor uses the first one. |
+| <Link id="m-steps" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{"> steps"}</code> | The tree's pieces in breadth-first order; each step lists its piece prefab, rotation, attachments and child steps. |
+| <Link id="m-workingwithtree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" workingWithTree"}</code> | Tree set by `SaveFrom`, captured into `steps` on the next serialize. |
 
 </details>
 
@@ -61,13 +61,13 @@ Asset that records a tree's full shape (each trunk or branch piece, how they con
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleeditorstep" /><code>{"private void HandleEditorStep("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |
-| <Link id="m-handlestep" /><code>{"private void HandleStep("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
-| <Link id="m-spawnandinitwoodcuttree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" SpawnAndInitWoodcutTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleeditorstep" /><code>{"private void HandleEditorStep("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> | Editor: instantiates one step's piece and attachments, then recurses into its child connections. |
+| <Link id="m-handlestep" /><code>{"private void HandleStep("}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" tree, "}<Link to="/game-api/types/alta-crafting/presettree-step">{"PresetTree.Step"}</Link>{" step, "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{" parent)"}</code> | Server: spawns one step's tree piece and attachments onto the tree, then recurses into its child connections by hash. |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | Explicit Unity serialization callback. Empty. |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | Explicit Unity serialization callback: after `SaveFrom`, walks that tree and rewrites `steps` from it. |
+| <Link id="m-spawnandinitwoodcuttree" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttree">{"WoodcutTree"}</Link>{" SpawnAndInitWoodcutTree("}<Link to="/game-api/types/alta-networking/inetworkscene">{"INetworkScene"}</Link>{" scene, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" treePrefab, "}<Link to="/game-api/types/alta-crafting/treespecies">{"TreeSpecies"}</Link>{" species)"}</code> | Spawns the tree prefab, sets its species and this preset, and initializes it as server. |
 
 </details>
 

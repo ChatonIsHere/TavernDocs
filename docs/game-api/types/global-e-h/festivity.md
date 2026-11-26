@@ -32,12 +32,12 @@ A seasonal event asset with a start and end date. `FestivityManager` turns it on
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-end" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" end"}</code> |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-start" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" start"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-end" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" end"}</code> | Backing field for `End`, the month, day and hour the festivity ends. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Backing field for `IsActivated`. Not saved; set at run time. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
+| <Link id="m-start" /><code>{"private "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" start"}</code> | Backing field for `Start`, the month, day and hour the festivity starts. |
 
 </details>
 
@@ -61,9 +61,9 @@ A seasonal event asset with a start and end date. `FestivityManager` turns it on
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool value)"}</code> | Changes the active state and raises `ActivationChanged` if it differs. |
 
 </details>
 

@@ -29,9 +29,9 @@ A component whose children are `ActionComponent`s; it builds the set of actions 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-actionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{"> actionSet"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{"> actionSet"}</code> | Cached action set built from the child `ActionComponent`s on first `GetActionSet` call. |
 
 </details>
 

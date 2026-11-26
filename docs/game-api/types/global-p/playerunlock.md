@@ -32,11 +32,11 @@ Asset for something a player can unlock. It can raise the maximum of a stat on t
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-orbs" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] orbs"}</code> |
-| <Link id="m-prerequisites" /><code>{"private List<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> prerequisites"}</code> |
-| <Link id="m-unlockingpermissions" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" unlockingPermissions"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-orbs" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-orbproperties">{"PlayerUnlock.OrbProperties"}</Link>{"[] orbs"}</code> | Backing field for `Orbs`: orb prefabs, bones, positions and scales for this unlock. |
+| <Link id="m-prerequisites" /><code>{"private List<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> prerequisites"}</code> | Backing field for `Prerequisites`. |
+| <Link id="m-unlockingpermissions" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock-unlockingpermissionssetup">{"PlayerUnlock.UnlockingPermissionsSetup"}</Link>{" unlockingPermissions"}</code> | Backing field for `UnlockingPermissions`: teleport and climb layer overrides and the max stat bonus. |
 
 </details>
 
@@ -58,11 +58,11 @@ Asset for something a player can unlock. It can raise the maximum of a stat on t
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-canupdatemaxstat" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
-| <Link id="m-canupdatemaxstat-2" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
-| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canupdatemaxstat" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | True when the player controller has health with a stat manager. |
+| <Link id="m-canupdatemaxstat-2" /><code>{"private bool CanUpdateMaxStat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | True when the player controller has health with a stat manager. |
+| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Raises the unlock's max stat (range and base) on a new player controller. Runs on `ApplyTo` and each controller change. |
 
 </details>
 

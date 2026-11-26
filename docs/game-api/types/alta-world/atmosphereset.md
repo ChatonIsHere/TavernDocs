@@ -38,10 +38,10 @@ An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on o
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-atmosphereauxbus" /><code>{"private AuxBus atmosphereAuxBus"}</code> |
-| <Link id="m-targetaudiosource" /><code>{"private int targetAudioSource"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-atmosphereauxbus" /><code>{"private AuxBus atmosphereAuxBus"}</code> | Backing field for `AtmosphereAuxBus`, a Wwise aux bus. |
+| <Link id="m-targetaudiosource" /><code>{"private int targetAudioSource"}</code> | Hash of the atmosphere plugin that plays audio. -1 means the first enabled plugin. |
 
 </details>
 

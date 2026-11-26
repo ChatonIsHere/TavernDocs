@@ -1,6 +1,6 @@
 ---
 title: "ForestFill"
-description: "class ForestFill in Root.Township."
+description: "Forest fill step that scatters objects on a grid across the forest, outside path nodes (or in open spaces)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestFill
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Forest fill step that scatters objects on a grid across the forest, outside path nodes (or in open spaces).
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`ForestFillCore`](/game-api/types/alta-world-generation/forestfillcore)
@@ -27,15 +29,15 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-step" /><code>{"private float step"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-step" /><code>{"private float step"}</code> | Grid spacing in metres. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-generateinternal" /><code>{"protected override async Task GenerateInternal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-generateinternal" /><code>{"protected override async Task GenerateInternal("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world/instructionset">{"InstructionSet"}</Link>{" instructions)"}</code> | Tests grid points in the chunk row by row on worker threads, raycasts the ground on the main thread and adds spawn instructions for points that pass. |

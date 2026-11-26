@@ -1,6 +1,6 @@
 ---
 title: "WorldCommandModule.ForestCommandModule"
-description: "The world forest module."
+description: "Console commands under world forest."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, `Alta.Console.Commands`.
 
-The `world forest` module.
+Console commands under `world forest`. Server only.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WorldCommandModule`](/game-api/types/alta-console/worldcommandmodule)
@@ -22,17 +22,17 @@ The `world forest` module.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-reset" /><code>{"static async Task Reset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |
-| <Link id="m-teleport" /><code>{"static async Task Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int nodeIndex = -1)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-reset" /><code>{"static async Task Reset("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> | `world forest reset` (alias `wipe`): wipes a forest. |
+| <Link id="m-teleport" /><code>{"static async Task Teleport("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, "}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest, int nodeIndex = -1)"}</code> | `world forest teleport` (alias `tp`): moves players to a forest's first entrance, or to a node if `nodeIndex` is given. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-info" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo">{"WorldCommandModule.ForestCommandModule.ForestInfo"}</Link>{"> Info("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> |
-| <Link id="m-list" /><code>{"private static IEnumerable<string> List() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-info" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo">{"WorldCommandModule.ForestCommandModule.ForestInfo"}</Link>{"> Info("}<Link to="/game-api/types/alta-world-generation/forestgenerator">{"ForestGenerator"}</Link>{" forest)"}</code> | `world forest info`: returns a forest's seed, bounds, outline, entrances, biomes, encounters and graph, and logs it as JSON. |
+| <Link id="m-list" /><code>{"private static IEnumerable<string> List() (iterator)"}</code> | `world forest list`: lists every forest generator. |
 
 </details>

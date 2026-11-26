@@ -30,22 +30,22 @@ Base for a creature action set up as a component on a creature's AI prefab. Hold
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action"}</code> |
-| <Link id="m-baseweightingmultiplier" /><code>{"private float baseWeightingMultiplier"}</code> |
-| <Link id="m-cancancelselfwithsametarget" /><code>{"private bool canCancelSelfWithSameTarget"}</code> |
-| <Link id="m-cancelpriority" /><code>{"private int cancelPriority"}</code> |
-| <Link id="m-extrarandommultiplier" /><code>{"private float extraRandomMultiplier"}</code> |
-| <Link id="m-isaddingbasepreferred" /><code>{"private bool isAddingBasePreferred"}</code> |
-| <Link id="m-isaddingbaserequired" /><code>{"private bool isAddingBaseRequired"}</code> |
-| <Link id="m-isaddingtargetpreferred" /><code>{"private bool isAddingTargetPreferred"}</code> |
-| <Link id="m-isaddingtargetrequired" /><code>{"private bool isAddingTargetRequired"}</code> |
-| <Link id="m-iscancellable" /><code>{"private bool isCancellable"}</code> |
-| <Link id="m-isused" /><code>{"private bool isUsed"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-minimumcancelpriority" /><code>{"private int minimumCancelPriority"}</code> |
-| <Link id="m-minimumcancelweighting" /><code>{"private float minimumCancelWeighting"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" action"}</code> | The action built by `GetStaticAction`, cached so every agent shares it. |
+| <Link id="m-baseweightingmultiplier" /><code>{"private float baseWeightingMultiplier"}</code> | Base part of `Multiplier`. 1 by default. |
+| <Link id="m-cancancelselfwithsametarget" /><code>{"private bool canCancelSelfWithSameTarget"}</code> | Backing field for `CanCancelSelfWithSameTarget`. If false, picking the same action and target restarts it instead. |
+| <Link id="m-cancelpriority" /><code>{"private int cancelPriority"}</code> | Backing field for `CancelPriority`. |
+| <Link id="m-extrarandommultiplier" /><code>{"private float extraRandomMultiplier"}</code> | When above 0, a random amount up to this is added to `Multiplier` each time it is read. |
+| <Link id="m-isaddingbasepreferred" /><code>{"private bool isAddingBasePreferred"}</code> | Editor button that adds a "Base Preferred" child object. |
+| <Link id="m-isaddingbaserequired" /><code>{"private bool isAddingBaseRequired"}</code> | Editor button that adds a "Base Required" child object. |
+| <Link id="m-isaddingtargetpreferred" /><code>{"private bool isAddingTargetPreferred"}</code> | Editor button that adds a "Target Preferred" child object. |
+| <Link id="m-isaddingtargetrequired" /><code>{"private bool isAddingTargetRequired"}</code> | Editor button that adds a "Target Required" child object. |
+| <Link id="m-iscancellable" /><code>{"private bool isCancellable"}</code> | Backing field for `IsCancellable`. Agents don't re-pick while running an action that can't be cancelled. |
+| <Link id="m-isused" /><code>{"private bool isUsed"}</code> | Set the first time the action is used, when the `IAiHook` components on it are initialized. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-minimumcancelpriority" /><code>{"private int minimumCancelPriority"}</code> | Backing field for `MinimumCancelPriority`: lowest priority a new action needs to replace this one. |
+| <Link id="m-minimumcancelweighting" /><code>{"private float minimumCancelWeighting"}</code> | Backing field for `MinimumCancelWeighting`: lowest weighting a new action needs to replace this one. |
 
 </details>
 
@@ -78,9 +78,9 @@ Base for a creature action set up as a component on a creature's AI prefab. Hold
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-addchildrento" /><code>{"private void AddChildrenTo(string childName, List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> operations)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addchildrento" /><code>{"private void AddChildrenTo(string childName, List<"}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{"> operations)"}</code> | Adds the target operations from a named child object (such as "Base Required") to one of the action's operation lists. |
 
 </details>
 

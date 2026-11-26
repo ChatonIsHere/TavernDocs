@@ -29,9 +29,9 @@ An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing fin
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-activepool" /><code>{"private Stack<TActive> activePool"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activepool" /><code>{"private Stack<TActive> activePool"}</code> | Pool of active action objects reused by `Start`. |
 
 </details>
 
@@ -52,9 +52,9 @@ An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing fin
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-pool" /><code>{"private void Pool("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pool" /><code>{"private void Pool("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Returns a finished or cancelled active action to `activePool`. |
 
 </details>
 

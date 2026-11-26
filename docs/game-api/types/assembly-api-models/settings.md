@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-description: "Where the game keeps its settings and files, and the helpers it uses to read and write them."
+description: "Alta web API response model for a stored settings entry: an id and its content as a string."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
-Where the game keeps its settings and files, and the helpers it uses to read and write them.
+Alta web API response model for a stored settings entry: an id and its content as a string.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Documented in** [Settings and files](/game-api/console-and-utilities/settings-and-files)
@@ -25,10 +25,10 @@ Where the game keeps its settings and files, and the helpers it uses to read and
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> |
-| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-content" /><code>{"string Content { get; set; }"}</code> | The settings content as a string (JSON field `content`). |
+| <Link id="m-identifier" /><code>{"string Identifier { get; set; }"}</code> | The settings entry's id (JSON field `id`). |
 
 ## Used in
 

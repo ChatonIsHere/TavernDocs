@@ -28,9 +28,9 @@ Tracks one pickup a player is holding and the skill inputs registered for it, an
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-inputstoreset" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputstoReset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inputstoreset" /><code>{"private static HashSet<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputstoReset"}</code> | Shared scratch set of skill inputs to reset after `ReceiveHit` has run every skill. |
 
 </details>
 

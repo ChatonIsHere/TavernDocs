@@ -39,22 +39,22 @@ Base for skills that work through a held tool, such as charged strikes. A per-pl
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hitPositionAndBladeAlignedEffect"}</code> |
-| <Link id="m-hitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitPositionEffect"}</code> |
-| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |
-| <Link id="m-localplayercanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerCanceledTransform"}</code> |
-| <Link id="m-localplayerchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerChargedTransform"}</code> |
-| <Link id="m-localplayerexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerExecutedTransform"}</code> |
-| <Link id="m-localplayerhitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" localPlayerHitPositionAndBladeAlignedEffect"}</code> |
-| <Link id="m-localplayerhitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" localPlayerHitPositionEffect"}</code> |
-| <Link id="m-requireshitinformation" /><code>{"private bool requiresHitInformation"}</code> |
-| <Link id="m-requireslocalplayeronlyeffect" /><code>{"private bool requiresLocalPlayerOnlyEffect"}</code> |
-| <Link id="m-skillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillCanceledTransform"}</code> |
-| <Link id="m-skillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargedTransform"}</code> |
-| <Link id="m-skillchargingstartedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargingStartedTransform"}</code> |
-| <Link id="m-skillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillExecutedTransform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" hitPositionAndBladeAlignedEffect"}</code> | Event invoked with the hit point and a rotation facing back along the hit, aligned to the blade, when the skill executes with a hit. |
+| <Link id="m-hitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitPositionEffect"}</code> | Event invoked at the hit point when the skill executes with a hit. |
+| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> | Backing field for `InputStructure`. Also plays the sound for each status change. |
+| <Link id="m-localplayercanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerCanceledTransform"}</code> | Like `SkillCanceledTransform`, but only for the player who used the skill. |
+| <Link id="m-localplayerchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerChargedTransform"}</code> | Like `SkillChargedTransform`, but only for the player who used the skill. |
+| <Link id="m-localplayerexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" localPlayerExecutedTransform"}</code> | Like `SkillExecutedTransform`, but only for the player who used the skill. |
+| <Link id="m-localplayerhitpositionandbladealignedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" localPlayerHitPositionAndBladeAlignedEffect"}</code> | Like `hitPositionAndBladeAlignedEffect`, but only for the player who used the skill. |
+| <Link id="m-localplayerhitpositioneffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" localPlayerHitPositionEffect"}</code> | Like `hitPositionEffect`, but only for the player who used the skill. |
+| <Link id="m-requireshitinformation" /><code>{"private bool requiresHitInformation"}</code> | Whether executing sends the hit point and rotation, so the hit effects can play. Defaults to true. |
+| <Link id="m-requireslocalplayeronlyeffect" /><code>{"private bool requiresLocalPlayerOnlyEffect"}</code> | Whether the local-player-only events are used. |
+| <Link id="m-skillcanceledtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillCanceledTransform"}</code> | Event invoked at the tool's transform on every client when the skill is cancelled. |
+| <Link id="m-skillchargedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargedTransform"}</code> | Event invoked at the tool's transform on every client when the skill becomes charged. |
+| <Link id="m-skillchargingstartedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillChargingStartedTransform"}</code> | Event invoked at the tool's transform on every client when charging starts. |
+| <Link id="m-skillexecutedtransform" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" SkillExecutedTransform"}</code> | Event invoked at the tool's transform on every client when the skill is used up. |
 
 </details>
 
@@ -67,9 +67,9 @@ Base for skills that work through a held tool, such as charged strikes. A per-pl
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> | Explicit `IInputBasedSkill` property: returns this skill. |
 
 </details>
 

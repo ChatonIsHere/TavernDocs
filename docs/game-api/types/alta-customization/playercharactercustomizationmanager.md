@@ -28,10 +28,10 @@ A player's cosmetics and equipment visuals, shared by every handler (body or dum
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-internalmanager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" internalManager"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-internalmanager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" internalManager"}</code> | The `CustomizationVisualManager` that the cosmetic and equipment wrappers and the attached handlers work through. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 

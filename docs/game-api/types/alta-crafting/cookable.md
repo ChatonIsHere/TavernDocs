@@ -36,21 +36,21 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-burnteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" burntEffect"}</code> |
-| <Link id="m-burntprogress" /><code>{"private float burntProgress"}</code> |
-| <Link id="m-burntspawnpoint" /><code>{"private Transform burntSpawnPoint"}</code> |
-| <Link id="m-cookableitem" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookableItem"}</code> |
-| <Link id="m-cookedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" cookedEffect"}</code> |
-| <Link id="m-cookedprogress" /><code>{"private float cookedProgress"}</code> |
-| <Link id="m-cookedspawnpoint" /><code>{"private Transform cookedSpawnPoint"}</code> |
-| <Link id="m-cookingpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" cookingPoint"}</code> |
-| <Link id="m-experienceawardedwhenroasted" /><code>{"private int experienceAwardedWhenRoasted"}</code> |
-| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> |
-| <Link id="m-iscookable" /><code>{"private bool isCookable"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-burnteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" burntEffect"}</code> | Effect played when the item burns. |
+| <Link id="m-burntprogress" /><code>{"private float burntProgress"}</code> | Backing field for `BurntProgress`. Saved. |
+| <Link id="m-burntspawnpoint" /><code>{"private Transform burntSpawnPoint"}</code> | Spawn point passed to `ReplaceWith` for the burnt version. `ReplaceWith` ignores it. |
+| <Link id="m-cookableitem" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{" cookableItem"}</code> | Cache for `CookableItem`. |
+| <Link id="m-cookedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" cookedEffect"}</code> | Effect played when the item finishes cooking. |
+| <Link id="m-cookedprogress" /><code>{"private float cookedProgress"}</code> | Backing field for `CookedProgress`. Saved. |
+| <Link id="m-cookedspawnpoint" /><code>{"private Transform cookedSpawnPoint"}</code> | Spawn point passed to `ReplaceWith` for the cooked version. `ReplaceWith` ignores it. |
+| <Link id="m-cookingpoint" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingpoint">{"CookingPoint"}</Link>{" cookingPoint"}</code> | Backing field for `CookingPoint`. |
+| <Link id="m-experienceawardedwhenroasted" /><code>{"private int experienceAwardedWhenRoasted"}</code> | Not read anywhere in this build. |
+| <Link id="m-isburnable" /><code>{"private bool isBurnable"}</code> | Backing field for `IsBurnable`. |
+| <Link id="m-iscookable" /><code>{"private bool isCookable"}</code> | Backing field for `IsCookable`. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Cache for `Pickup`. |
+| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> | Method sync that plays the cooked or burnt effect on clients. |
 
 </details>
 
@@ -77,12 +77,12 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 <details>
 <summary>4 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-burningduration" /><code>{"private float BurningDuration { get; }"}</code> |
-| <Link id="m-instantburntemperature" /><code>{"private float InstantBurnTemperature { get; }"}</code> |
-| <Link id="m-optimalcookingduration" /><code>{"private float OptimalCookingDuration { get; }"}</code> |
-| <Link id="m-weakcookingduration" /><code>{"private float WeakCookingDuration { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-burningduration" /><code>{"private float BurningDuration { get; }"}</code> | Seconds above the burning temperature before the item burns. |
+| <Link id="m-instantburntemperature" /><code>{"private float InstantBurnTemperature { get; }"}</code> | Temperature at which the item burns at once. |
+| <Link id="m-optimalcookingduration" /><code>{"private float OptimalCookingDuration { get; }"}</code> | Seconds to cook at the optimal temperature. |
+| <Link id="m-weakcookingduration" /><code>{"private float WeakCookingDuration { get; }"}</code> | Seconds to cook at the weak temperature. |
 
 </details>
 
@@ -105,18 +105,18 @@ Makes an item cook and burn from the heat at its `CookingPoint`, then replace it
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-advancecookedprogressfortemperature" /><code>{"private void AdvanceCookedProgressForTemperature(float temperature)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkenable" /><code>{"private void CheckEnable("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
-| <Link id="m-handleburnabletemperatures" /><code>{"private bool HandleBurnableTemperatures(float temperature)"}</code> |
-| <Link id="m-handlenormalcookingtemperature" /><code>{"private bool HandleNormalCookingTemperature(float temperature)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-spawncookedversion" /><code>{"private void SpawnCookedVersion()"}</code> |
-| <Link id="m-swaptoburntversion" /><code>{"private void SwapToBurntVersion()"}</code> |
-| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isCooked)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-advancecookedprogressfortemperature" /><code>{"private void AdvanceCookedProgressForTemperature(float temperature)"}</code> | Adds cooking progress for this frame: faster the closer the heat is to optimal. Also sets `CookingValue`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the cooking point and pickup and starts disabled until heat is high enough. |
+| <Link id="m-checkenable" /><code>{"private void CheckEnable("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Heat change handler: enables cooking once the point is above the weak temperature and the item is not docked. |
+| <Link id="m-handleburnabletemperatures" /><code>{"private bool HandleBurnableTemperatures(float temperature)"}</code> | Adds burn progress while above the burning temperature (resets it below). True when the item should burn now. |
+| <Link id="m-handlenormalcookingtemperature" /><code>{"private bool HandleNormalCookingTemperature(float temperature)"}</code> | Cooks while above the weak temperature, decays progress below it. True when cooked progress passes 1. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks `CheckEnable` from the cooking point. |
+| <Link id="m-spawncookedversion" /><code>{"private void SpawnCookedVersion()"}</code> | Swaps to the cooked prefab, raises `SwappedToCookedVersion` and counts a cooked food stat for the last holder. |
+| <Link id="m-swaptoburntversion" /><code>{"private void SwapToBurntVersion()"}</code> | Swaps to the burnt prefab and raises `SwappedToBurntVersion`. |
+| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isCooked)"}</code> | Method sync handler: plays the cooked or burnt effect at the item on receivers. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Server, while enabled: stops and resets when docked, otherwise advances burning and cooking and swaps the item when done. |
 
 </details>
 

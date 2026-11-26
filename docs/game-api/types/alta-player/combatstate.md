@@ -30,11 +30,11 @@ The player state while fighting, a sub-state of playing. Ends by itself after a 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentoutofcombattimer" /><code>{"private float currentOutOfCombatTimer"}</code> |
-| <Link id="m-getoutofcombatcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" getOutOfCombatCoroutine"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentoutofcombattimer" /><code>{"private float currentOutOfCombatTimer"}</code> | Seconds left until the player leaves combat. Reset by hits and saved to disk. |
+| <Link id="m-getoutofcombatcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" getOutOfCombatCoroutine"}</code> | The running `GetOutOfCombat` coroutine. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
 
 </details>
 
@@ -61,10 +61,10 @@ The player state while fighting, a sub-state of playing. Ends by itself after a 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getoutofcombat" /><code>{"private IEnumerator GetOutOfCombat() (iterator)"}</code> |
-| <Link id="m-playsound" /><code>{"private void PlaySound()"}</code> |
-| <Link id="m-playsoundcoroutine" /><code>{"private IEnumerator PlaySoundCoroutine() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getoutofcombat" /><code>{"private IEnumerator GetOutOfCombat() (iterator)"}</code> | Coroutine that counts the out of combat timer down to zero, then ends the state. |
+| <Link id="m-playsound" /><code>{"private void PlaySound()"}</code> | Starts `PlaySoundCoroutine`. |
+| <Link id="m-playsoundcoroutine" /><code>{"private IEnumerator PlaySoundCoroutine() (iterator)"}</code> | Waits `DelayBetweenHitAndSound`, then plays the enter combat sound at the player's head. |
 
 </details>

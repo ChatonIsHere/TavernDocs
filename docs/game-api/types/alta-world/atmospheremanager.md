@@ -34,17 +34,17 @@ Runs the scene's atmosphere plugins (ambient light, fog, sky, ambient audio) and
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ambiencelerptime" /><code>{"private float ambienceLerpTime"}</code> |
-| <Link id="m-availableplugins" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{"[] availablePlugins"}</code> |
-| <Link id="m-baseset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" baseSet"}</code> |
-| <Link id="m-currentpriorityplugin" /><code>{"private int currentPriorityPlugin"}</code> |
-| <Link id="m-currentset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" currentSet"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-positionlerpspeed" /><code>{"private float positionLerpSpeed"}</code> |
-| <Link id="m-save" /><code>{"private bool save"}</code> |
-| <Link id="m-setname" /><code>{"private string setName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ambiencelerptime" /><code>{"private float ambienceLerpTime"}</code> | Backing field for `AmbienceLerpTime`. |
+| <Link id="m-availableplugins" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{"[] availablePlugins"}</code> | The child atmosphere plugins; sets enable or disable them by index. |
+| <Link id="m-baseset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" baseSet"}</code> | The default atmosphere set used when the chunk has no override. |
+| <Link id="m-currentpriorityplugin" /><code>{"private int currentPriorityPlugin"}</code> | Index of the plugin that currently has priority, or -1 when none. |
+| <Link id="m-currentset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" currentSet"}</code> | Backing field for `CurrentSet`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-positionlerpspeed" /><code>{"private float positionLerpSpeed"}</code> | Backing field for `PositionLerpSpeed`. |
+| <Link id="m-save" /><code>{"private bool save"}</code> | Editor toggle for saving a new set; it only resets itself in this build. |
+| <Link id="m-setname" /><code>{"private string setName"}</code> | Editor name for a new atmosphere set. |
 
 </details>
 
@@ -89,17 +89,17 @@ Runs the scene's atmosphere plugins (ambient light, fog, sky, ambient audio) and
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ensureatmosphere" /><code>{"private void EnsureAtmosphere("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-initializeproperties" /><code>{"private void InitializeProperties()"}</code> |
-| <Link id="m-localplayerset" /><code>{"private void LocalPlayerSet("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-overrideatmosphere" /><code>{"private void OverrideAtmosphere("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
-| <Link id="m-setupnewmainaudio" /><code>{"private void SetupNewMainAudio("}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{" newAudioPlugin, bool isRegularLerping)"}</code> |
-| <Link id="m-toggleglobalambiencemute" /><code>{"private void ToggleGlobalAmbienceMute(bool isMuted)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ensureatmosphere" /><code>{"private void EnsureAtmosphere("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Applies the chunk's override atmosphere set (after `Resolve` handlers can change it) when the local player changes chunk. |
+| <Link id="m-initializeproperties" /><code>{"private void InitializeProperties()"}</code> | Creates the lerping ambient colour, fog colour, fog density and ambience volume values that drive render settings, and hooks audio muting. |
+| <Link id="m-localplayerset" /><code>{"private void LocalPlayerSet("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Hooks the local player's chunk changes so the atmosphere follows them. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the local player events. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Collects the child `AtmospherePlugin` components into `availablePlugins`. |
+| <Link id="m-overrideatmosphere" /><code>{"private void OverrideAtmosphere("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | When the local player controller spawns, finds the chunk containing it and applies that chunk's atmosphere. |
+| <Link id="m-setupnewmainaudio" /><code>{"private void SetupNewMainAudio("}<Link to="/game-api/types/alta-world/atmosphereplugin">{"AtmospherePlugin"}</Link>{" newAudioPlugin, bool isRegularLerping)"}</code> | Makes a plugin the main ambience audio, moves the old one to secondary and crossfades between them. |
+| <Link id="m-toggleglobalambiencemute" /><code>{"private void ToggleGlobalAmbienceMute(bool isMuted)"}</code> | Mutes or unmutes the main ambience audio when the audio manager's mute changes. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Steps the ambient colour, fog and ambience volume lerps each frame. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "PerChunkForestSpawner"
-description: "class PerChunkForestSpawner in Root.Township."
+description: "Spawns one prefab at the position of each forest chunk as it generates."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PerChunkForestSpawner
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+Spawns one prefab at the position of each forest chunk as it generates.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,9 +29,9 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Prefab spawned per chunk. |
 
 </details>
 
@@ -38,9 +40,9 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-create" /><code>{"private void Create("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the parent forest generator's `GeneratedDynamic`. |
+| <Link id="m-create" /><code>{"private void Create("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Spawns the prefab at the chunk's position. |
 
 </details>

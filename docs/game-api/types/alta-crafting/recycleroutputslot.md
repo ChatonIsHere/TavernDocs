@@ -31,24 +31,24 @@ One output slot of the recycler. It fills up with molten metal of one material a
 <details>
 <summary>16 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |
-| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> |
-| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> |
-| <Link id="m-animatingmaterial" /><code>{"private Material animatingMaterial"}</code> |
-| <Link id="m-animationcontent" /><code>{"private float animationContent"}</code> |
-| <Link id="m-contentanimation" /><code>{"private Coroutine contentAnimation"}</code> |
-| <Link id="m-contentanimationspeed" /><code>{"private float contentAnimationSpeed"}</code> |
-| <Link id="m-currentcontent" /><code>{"private float currentContent"}</code> |
-| <Link id="m-displaydock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" displayDock"}</code> |
-| <Link id="m-displayrenderers" /><code>{"private Renderer[] displayRenderers"}</code> |
-| <Link id="m-filledupeffecttarget" /><code>{"private Transform filledUpEffectTarget"}</code> |
-| <Link id="m-index" /><code>{"private int index"}</code> |
-| <Link id="m-isdirectmovement" /><code>{"private bool isDirectMovement"}</code> |
-| <Link id="m-onfilledupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onFilledUpEffect"}</code> |
-| <Link id="m-syncmethod" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMethod"}</code> |
-| <Link id="m-targetdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" targetDock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> | Shader property ID for _FillProgress. |
+| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> | Shader property ID for _NegativeChangeProgress. |
+| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> | Shader property ID for _PositiveChangeProgress. |
+| <Link id="m-animatingmaterial" /><code>{"private Material animatingMaterial"}</code> | Per-slot copy of the display material whose fill values are animated. |
+| <Link id="m-animationcontent" /><code>{"private float animationContent"}</code> | Fill amount currently shown by the animation. |
+| <Link id="m-contentanimation" /><code>{"private Coroutine contentAnimation"}</code> | The running fill animation, if any. |
+| <Link id="m-contentanimationspeed" /><code>{"private float contentAnimationSpeed"}</code> | Fill animation speed per second. |
+| <Link id="m-currentcontent" /><code>{"private float currentContent"}</code> | Partial content toward the next whole item, 0 to 1. |
+| <Link id="m-displaydock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" displayDock"}</code> | Dock holding the display item that shows the material. |
+| <Link id="m-displayrenderers" /><code>{"private Renderer[] displayRenderers"}</code> | Renderers that show the fill bar. |
+| <Link id="m-filledupeffecttarget" /><code>{"private Transform filledUpEffectTarget"}</code> | Where the filled-up effect plays. |
+| <Link id="m-index" /><code>{"private int index"}</code> | This slot's index, sent with sync messages. |
+| <Link id="m-isdirectmovement" /><code>{"private bool isDirectMovement"}</code> | True when the next sync should animate directly (material change or full sync). |
+| <Link id="m-onfilledupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onFilledUpEffect"}</code> | Event played when the slot fills a whole item. |
+| <Link id="m-syncmethod" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMethod"}</code> | Method sync from the recycler, sent with this slot's index when content changes. |
+| <Link id="m-targetdock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" targetDock"}</code> | Dock finished items are put into. |
 
 </details>
 
@@ -78,14 +78,14 @@ One output slot of the recycler. It fills up with molten metal of one material a
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-cleandisplay" /><code>{"private void CleanDisplay()"}</code> |
-| <Link id="m-contentanimation-2" /><code>{"private IEnumerator ContentAnimation() (iterator)"}</code> |
-| <Link id="m-newsource" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" NewSource()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-reappropriationcontentanimation" /><code>{"private IEnumerator ReappropriationContentAnimation() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cleandisplay" /><code>{"private void CleanDisplay()"}</code> | Destroys the display item in the display dock. |
+| <Link id="m-contentanimation-2" /><code>{"private IEnumerator ContentAnimation() (iterator)"}</code> | Client coroutine that animates the fill bar to the new content, playing the filled-up effect each time it wraps past full. |
+| <Link id="m-newsource" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" NewSource()"}</code> | Spawns one item of the current material's source item. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cleans up the per-slot material. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step that removes missing display renderers. |
+| <Link id="m-reappropriationcontentanimation" /><code>{"private IEnumerator ReappropriationContentAnimation() (iterator)"}</code> | Client coroutine that animates the fill bar straight up or down to the new content when the material changes. |
 
 </details>
 

@@ -30,11 +30,11 @@ An effect with a strength multiplier and optional duration, as carried by liquid
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-durationinseconds" /><code>{"private int durationInSeconds"}</code> |
-| <Link id="m-effecttomodify" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify"}</code> |
-| <Link id="m-strengthmultiplier" /><code>{"private float strengthMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-durationinseconds" /><code>{"private int durationInSeconds"}</code> | Seconds to spread the effect over. 0 applies it at once. Not included in `Serialize`, so it is not synced. |
+| <Link id="m-effecttomodify" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify"}</code> | Backing field for `EffectToModify`, the effect this entry applies. |
+| <Link id="m-strengthmultiplier" /><code>{"private float strengthMultiplier"}</code> | Backing field for `StrengthMultiplier`. Multiplies the strength passed to the effect. 1 by default. |
 
 </details>
 

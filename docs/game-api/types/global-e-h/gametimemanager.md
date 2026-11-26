@@ -35,26 +35,26 @@ Keeps the time of day and month and decides when it's night. One timeline second
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-availablekeywords" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"[] availableKeyWords"}</code> |
-| <Link id="m-daydurationminutes" /><code>{"private float dayDurationMinutes"}</code> |
-| <Link id="m-dayprogress" /><code>{"private float dayProgress"}</code> |
-| <Link id="m-daytonightratio" /><code>{"private float dayToNightRatio"}</code> |
-| <Link id="m-deltaoperation" /><code>{"private Func<float, float> deltaOperation"}</code> |
-| <Link id="m-initialtime" /><code>{"private float initialTime"}</code> |
-| <Link id="m-isrushing" /><code>{"private bool isRushing"}</code> |
-| <Link id="m-issettinginstance" /><code>{"private bool isSettingInstance"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-monthdurationdays" /><code>{"private float monthDurationDays"}</code> |
-| <Link id="m-monthprogress" /><code>{"private float monthProgress"}</code> |
-| <Link id="m-nextsync" /><code>{"private float nextSync"}</code> |
-| <Link id="m-offsetfromserver" /><code>{"private float offsetFromServer"}</code> |
-| <Link id="m-rushingtimemultiplier" /><code>{"private float rushingTimeMultiplier"}</code> |
-| <Link id="m-smallhoursnightpercentage" /><code>{"private float smallHoursNightPercentage"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> |
-| <Link id="m-syncrefreshrate" /><code>{"private float syncRefreshRate"}</code> |
-| <Link id="m-targettime" /><code>{"private float targetTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-availablekeywords" /><code>{"private "}<Link to="/game-api/types/global-e-h/gametimemanager-timename">{"GameTimeManager.TimeName"}</Link>{"[] availableKeyWords"}</code> | Named times of day (for example dawn) that `UpdateTimeByKeyWord` rushes to. |
+| <Link id="m-daydurationminutes" /><code>{"private float dayDurationMinutes"}</code> | Real minutes in one game day. Defaults to 20. |
+| <Link id="m-dayprogress" /><code>{"private float dayProgress"}</code> | Progress through the current day, 0 to 1. |
+| <Link id="m-daytonightratio" /><code>{"private float dayToNightRatio"}</code> | Point in the day where day turns to night (before the small-hours adjustment). Defaults to 0.5. |
+| <Link id="m-deltaoperation" /><code>{"private Func<float, float> deltaOperation"}</code> | Per-tick hook: `ServerUpdate` on the server, `ClientUpdate` on clients. |
+| <Link id="m-initialtime" /><code>{"private float initialTime"}</code> | Starting time of a new world, as a fraction of a day. Defaults to 0.1. |
+| <Link id="m-isrushing" /><code>{"private bool isRushing"}</code> | True while time is running faster towards `targetTime`. |
+| <Link id="m-issettinginstance" /><code>{"private bool isSettingInstance"}</code> | If true (default), this manager becomes `Instance` on Awake. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-monthdurationdays" /><code>{"private float monthDurationDays"}</code> | Game days in one month. Defaults to 30. |
+| <Link id="m-monthprogress" /><code>{"private float monthProgress"}</code> | Progress through the current month, 0 to 1. |
+| <Link id="m-nextsync" /><code>{"private float nextSync"}</code> | Real time of the next server sync. Set to 0 to sync at once. |
+| <Link id="m-offsetfromserver" /><code>{"private float offsetFromServer"}</code> | Client: remaining seconds of difference from the server clock to blend in. |
+| <Link id="m-rushingtimemultiplier" /><code>{"private float rushingTimeMultiplier"}</code> | Speed-up while rushing. Defaults to 2. |
+| <Link id="m-smallhoursnightpercentage" /><code>{"private float smallHoursNightPercentage"}</code> | Share of the night counted as day at each end (the small hours). Defaults to 0.25. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> sync"}</code> | Method sync used for time updates. |
+| <Link id="m-syncrefreshrate" /><code>{"private float syncRefreshRate"}</code> | Seconds between server time syncs. Defaults to 10. |
+| <Link id="m-targettime" /><code>{"private float targetTime"}</code> | Day progress that rushing stops at. |
 
 </details>
 
@@ -97,20 +97,20 @@ Keeps the time of day and month and decides when it's night. One timeline second
 <details>
 <summary>12 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-clientupdate" /><code>{"private float ClientUpdate(float dayDelta)"}</code> |
-| <Link id="m-createtimeline" /><code>{"private void CreateTimeline(TimeSpan startTime)"}</code> |
-| <Link id="m-getnormalizedtime" /><code>{"private TimeSpan GetNormalizedTime()"}</code> |
-| <Link id="m-gettimefromtimeline" /><code>{"private float GetTimeFromTimeline("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onnightchanged" /><code>{"private void OnNightChanged(bool wasNight)"}</code> |
-| <Link id="m-serverupdate" /><code>{"private float ServerUpdate(float dayDelta)"}</code> |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isForcingSnapping)"}</code> |
-| <Link id="m-updatenormalizedtime" /><code>{"private void UpdateNormalizedTime()"}</code> |
-| <Link id="m-updateprogressfromtimeline" /><code>{"private void UpdateProgressFromTimeline()"}</code> |
-| <Link id="m-updatetimeline" /><code>{"private void UpdateTimeline(TimeSpan deltaTime)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets the static `Instance` if `isSettingInstance` is on. |
+| <Link id="m-clientupdate" /><code>{"private float ClientUpdate(float dayDelta)"}</code> | Client: adds a share of the remaining offset from the server time to each frame's delta, so the clock eases into sync. |
+| <Link id="m-createtimeline" /><code>{"private void CreateTimeline(TimeSpan startTime)"}</code> | Creates the default and normalized timelines from a start time and updates day and month progress. |
+| <Link id="m-getnormalizedtime" /><code>{"private TimeSpan GetNormalizedTime()"}</code> | Converts default time so day and night each take half of the normalized day, whatever the day to night ratio. |
+| <Link id="m-gettimefromtimeline" /><code>{"private float GetTimeFromTimeline("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> | Fraction of the current day on a timeline (one timeline second is one game day). |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from the global timeline and clears `Instance` if it's this one. |
+| <Link id="m-onnightchanged" /><code>{"private void OnNightChanged(bool wasNight)"}</code> | Raises `NightChanged`, then `DawnReached` or `DuskReached`. |
+| <Link id="m-serverupdate" /><code>{"private float ServerUpdate(float dayDelta)"}</code> | Server: sends a time sync to the chunks every `syncRefreshRate` seconds. |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isForcingSnapping)"}</code> | Syncs the time, day to night ratio and rush state. Clients snap if forced or more than 0.05 off; skipped in local tests. |
+| <Link id="m-updatenormalizedtime" /><code>{"private void UpdateNormalizedTime()"}</code> | Moves the normalized timeline to match the default one. |
+| <Link id="m-updateprogressfromtimeline" /><code>{"private void UpdateProgressFromTimeline()"}</code> | Recomputes day and month progress from the default timeline. |
+| <Link id="m-updatetimeline" /><code>{"private void UpdateTimeline(TimeSpan deltaTime)"}</code> | Advances game time each tick (faster while rushing until the target is reached), updates night state and fires dawn or dusk. |
 
 </details>
 

@@ -38,20 +38,20 @@ The running server's handler: owns the socket and join handler, runs bootup and 
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bootupsteps" /><code>{"private Queue<"}<Link to="/game-api/types/alta-networking/serverhandler-bootupstep">{"ServerHandler.BootupStep"}</Link>{"> bootupSteps"}</code> |
-| <Link id="m-connectionsteps" /><code>{"private Queue<"}<Link to="/game-api/types/alta-networking/serverhandler-connectionstep">{"ServerHandler.ConnectionStep"}</Link>{"> connectionSteps"}</code> |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/alta-networking/serverhandler">{"ServerHandler"}</Link>{" current"}</code> |
-| <Link id="m-heartbeat" /><code>{"private "}<Link to="/game-api/types/global-s/serverheartbeat">{"ServerHeartbeat"}</Link>{" heartbeat"}</code> |
-| <Link id="m-isrunninglocally" /><code>{"private bool isRunningLocally"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-platformtargets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{"> platformTargets"}</code> |
-| <Link id="m-playerjoinhandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serverplayerconnectionhandlerold">{"ServerPlayerConnectionHandlerOld"}</Link>{" playerJoinHandler"}</code> |
-| <Link id="m-playermodes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{"> playerModes"}</code> |
-| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket"}</code> |
-| <Link id="m-status" /><code>{"private string status"}</code> |
-| <Link id="m-webserver" /><code>{"private "}<Link to="/game-api/types/alta-networking/webserverthread">{"WebServerThread"}</Link>{" webServer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bootupsteps" /><code>{"private Queue<"}<Link to="/game-api/types/alta-networking/serverhandler-bootupstep">{"ServerHandler.BootupStep"}</Link>{"> bootupSteps"}</code> | Queue of bootup steps still to run. Null once bootup has finished, so late steps are refused. |
+| <Link id="m-connectionsteps" /><code>{"private Queue<"}<Link to="/game-api/types/alta-networking/serverhandler-connectionstep">{"ServerHandler.ConnectionStep"}</Link>{"> connectionSteps"}</code> | Steps every joining connection runs after bootup, added with `AddConnectionStep`. |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/alta-networking/serverhandler">{"ServerHandler"}</Link>{" current"}</code> | Backing field for `Current`. |
+| <Link id="m-heartbeat" /><code>{"private "}<Link to="/game-api/types/global-s/serverheartbeat">{"ServerHeartbeat"}</Link>{" heartbeat"}</code> | Heartbeat sender, only created with `/heartbeat`. |
+| <Link id="m-isrunninglocally" /><code>{"private bool isRunningLocally"}</code> | True for a locally hosted server; makes `Initialize` use fixed local ports and look up the public IP. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-platformtargets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{"> platformTargets"}</code> | Platform of each connection, stored on join and used when spawning the player. |
+| <Link id="m-playerjoinhandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/serverplayerconnectionhandlerold">{"ServerPlayerConnectionHandlerOld"}</Link>{" playerJoinHandler"}</code> | Handles connection approval and raises the joined and left callbacks. |
+| <Link id="m-playermodes" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{", "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{"> playerModes"}</code> | Player mode of each connection, stored on join and used when spawning the player. |
+| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket"}</code> | The server socket that accepts connections. |
+| <Link id="m-status" /><code>{"private string status"}</code> | Current bootup status text sent to waiting clients. |
+| <Link id="m-webserver" /><code>{"private "}<Link to="/game-api/types/alta-networking/webserverthread">{"WebServerThread"}</Link>{" webServer"}</code> | The server's web server thread, started in `Initialize` and disposed when the server stops. |
 
 </details>
 
@@ -86,9 +86,9 @@ The running server's handler: owns the socket and join handler, runs bootup and 
 <details>
 <summary>1 private and internal event</summary>
 
-| Member |
-| --- |
-| <Link id="m-bootupprogressed" /><code>{"private event Action BootupProgressed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bootupprogressed" /><code>{"private event Action BootupProgressed"}</code> | Private event raised each time the bootup status message changes; waiting connections use it to get status updates. |
 
 </details>
 
@@ -111,22 +111,22 @@ The running server's handler: owns the socket and join handler, runs bootup and 
 <details>
 <summary>14 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkfornoresponsefromconnectionasync" /><code>{"private async void CheckForNoResponseFromConnectionAsync("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-connectioncreated" /><code>{"private void ConnectionCreated("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-handleconnectionschange" /><code>{"private async Task HandleConnectionsChange("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-initialize" /><code>{"private async Task Initialize(Action<string> progress)"}</code> |
-| <Link id="m-pingserver" /><code>{"private async void PingServer()"}</code> |
-| <Link id="m-removeplayer" /><code>{"private void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
-| <Link id="m-sendplayerownership" /><code>{"private void SendPlayerOwnership("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
-| <Link id="m-setbootupmessage" /><code>{"private void SetBootupMessage(string message)"}</code> |
-| <Link id="m-spawnplayertoclient" /><code>{"private async void SpawnPlayerToClient("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncstatus" /><code>{"private void SyncStatus("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-userjoined" /><code>{"private async void UserJoined("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode, "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget)"}</code> |
-| <Link id="m-userleft" /><code>{"private async void UserLeft("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-userprerequisites" /><code>{"private async Task<bool> UserPrerequisites("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-wipeserverasync" /><code>{"private async void WipeServerAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkfornoresponsefromconnectionasync" /><code>{"private async void CheckForNoResponseFromConnectionAsync("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Disconnects a connection that hasn't sent 'ready to spawn' within 2 minutes, unless it disconnects first. |
+| <Link id="m-connectioncreated" /><code>{"private void ConnectionCreated("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Runs for each new socket connection: hands it to the join handler and registers the core message handlers (ping, diagnostics, entity, cache and pause). |
+| <Link id="m-handleconnectionschange" /><code>{"private async Task HandleConnectionsChange("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Sends the list of connected users to the server API as the online players; logs failures. |
+| <Link id="m-initialize" /><code>{"private async Task Initialize(Action<string> progress)"}</code> | First bootup step: starts the server with the API (ports and public IP when local), the web server, optional heartbeat and wipe, then server pings. |
+| <Link id="m-pingserver" /><code>{"private async void PingServer()"}</code> | Pings the server API every 15 seconds while running; after 10 failures in a row (or `MAX_PING_FAIL_COUNT`) it shuts the server down. |
+| <Link id="m-removeplayer" /><code>{"private void RemovePlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Saves a leaving player (when the scene has save files), destroys their objects, raises `PlayerLeft` and forgets their mode and platform. |
+| <Link id="m-sendplayerownership" /><code>{"private void SendPlayerOwnership("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Marks the new player entity as local to its owner. |
+| <Link id="m-setbootupmessage" /><code>{"private void SetBootupMessage(string message)"}</code> | Logs and stores the bootup status, then raises `BootupProgressed`. |
+| <Link id="m-spawnplayertoclient" /><code>{"private async void SpawnPlayerToClient("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Handler for 'ready to spawn': waits for the scene, loads the save, spawns and initializes the player, syncs entities and raises `PlayerJoined`. |
+| <Link id="m-syncstatus" /><code>{"private void SyncStatus("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the current bootup status string into a `ServerStatus` message. |
+| <Link id="m-userjoined" /><code>{"private async void UserJoined("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode, "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget)"}</code> | Called when a connection is approved: stores its player mode and platform, waits for 'ready to spawn' and updates the online list. |
+| <Link id="m-userleft" /><code>{"private async void UserLeft("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Called when a connection drops: removes its player on the next frame and updates the online list. |
+| <Link id="m-userprerequisites" /><code>{"private async Task<bool> UserPrerequisites("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Holds a joining connection until bootup finishes (sending status updates), then runs every connection step. Returns false if a step throws. |
+| <Link id="m-wipeserverasync" /><code>{"private async void WipeServerAsync()"}</code> | Runs a wipe once the scene has started, when the server was launched with `/wipe`. |
 
 </details>
 

@@ -30,9 +30,9 @@ Base for many of the game's ScriptableObject assets: just a description field an
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-description" /><code>{"private string description"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-description" /><code>{"private string description"}</code> | Backing field for `Description`. Defaults to "No description". |
 
 </details>
 

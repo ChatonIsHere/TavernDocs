@@ -32,29 +32,29 @@ An asset describing one kind of population (creatures, plants, ore and so on): w
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] attributes"}</code> |
-| <Link id="m-disconnectradius" /><code>{"private float disconnectRadius"}</code> |
-| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
-| <Link id="m-festivegroups" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition-festiveprefabgroup">{"PopulationDefinition.FestivePrefabGroup"}</Link>{"[] festiveGroups"}</code> |
-| <Link id="m-isallowingdisconnect" /><code>{"private bool isAllowingDisconnect"}</code> |
-| <Link id="m-iscreature" /><code>{"private bool isCreature"}</code> |
-| <Link id="m-iskinematiconspawn" /><code>{"private bool isKinematicOnSpawn"}</code> |
-| <Link id="m-isusingpointrotation" /><code>{"private bool isUsingPointRotation"}</code> |
-| <Link id="m-isusingrandomrotation" /><code>{"private bool isUsingRandomRotation"}</code> |
-| <Link id="m-isusingsafespawning" /><code>{"private bool isUsingSafeSpawning"}</code> |
-| <Link id="m-layerstoavoid" /><code>{"private LayerMask layersToAvoid"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-maxpopulationgrowth" /><code>{"private int maxPopulationGrowth"}</code> |
-| <Link id="m-ondeathoccupypointfor" /><code>{"private float onDeathOccupyPointFor"}</code> |
-| <Link id="m-percentageofpopulationspawned" /><code>{"private float percentageOfPopulationSpawned"}</code> |
-| <Link id="m-populationgrowthcurve" /><code>{"private AnimationCurve populationGrowthCurve"}</code> |
-| <Link id="m-positionforspherecast" /><code>{"private Vector3 positionForSphereCast"}</code> |
-| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> |
-| <Link id="m-randomrotationtype" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition-randomrotationtype">{"PopulationDefinition.RandomRotationType"}</Link>{" randomRotationType"}</code> |
-| <Link id="m-spherecastradius" /><code>{"private float sphereCastRadius"}</code> |
-| <Link id="m-tickfrequency" /><code>{"private float tickFrequency"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] attributes"}</code> | Backing field for `Attributes`. The ecosystem multiplies these impacts by the biome attributes to size the population. |
+| <Link id="m-disconnectradius" /><code>{"private float disconnectRadius"}</code> | Backing field for `DisconnectRadius`. Above 0, spawned entities get a radial population item, else a bounds one. |
+| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | Optional distribution picked from by spawn attributes. When null, `prefabHashes` (or an active festive group) is used. |
+| <Link id="m-festivegroups" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition-festiveprefabgroup">{"PopulationDefinition.FestivePrefabGroup"}</Link>{"[] festiveGroups"}</code> | Prefab lists tied to festivities. The first active one replaces `prefabHashes`. |
+| <Link id="m-isallowingdisconnect" /><code>{"private bool isAllowingDisconnect"}</code> | Backing field for `IsAllowingDisconnect`. If set, spawned entities can leave the population by moving away. |
+| <Link id="m-iscreature" /><code>{"private bool isCreature"}</code> | Backing field for `IsCreature`. Creatures save as creatures and join the chunk directly; others are children of the spawner. |
+| <Link id="m-iskinematiconspawn" /><code>{"private bool isKinematicOnSpawn"}</code> | Backing field for `IsKinematicOnSpawn`. Makes the spawned entity's rigidbody kinematic. |
+| <Link id="m-isusingpointrotation" /><code>{"private bool isUsingPointRotation"}</code> | Backing field for `IsUsingPointRotation`. Spawned entities take the spawn point's rotation. |
+| <Link id="m-isusingrandomrotation" /><code>{"private bool isUsingRandomRotation"}</code> | Backing field for `IsUsingRandomRotation`. Adds a random rotation of `randomRotationType` on spawn. |
+| <Link id="m-isusingsafespawning" /><code>{"private bool isUsingSafeSpawning"}</code> | Backing field for `IsUsingSafeSpawning`. Lifts the spawn by the entity's largest collider bounds size. |
+| <Link id="m-layerstoavoid" /><code>{"private LayerMask layersToAvoid"}</code> | Layers the sphere cast checks in `IsPositionValid`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maxpopulationgrowth" /><code>{"private int maxPopulationGrowth"}</code> | Backing field for `MaxPopulationGrowth`: most members added in one population tick. 5 by default. |
+| <Link id="m-ondeathoccupypointfor" /><code>{"private float onDeathOccupyPointFor"}</code> | Backing field for `OnDeathOccupyPointFor`: seconds a spawn point stays taken after its entity dies. |
+| <Link id="m-percentageofpopulationspawned" /><code>{"private float percentageOfPopulationSpawned"}</code> | Backing field for `PercentageOfPopulationSpawned`: share of the current population that exists as entities. |
+| <Link id="m-populationgrowthcurve" /><code>{"private AnimationCurve populationGrowthCurve"}</code> | Backing field for `PopulationGrowthCurve`: growth chance by fill fraction. Values over 1 can add several per tick. |
+| <Link id="m-positionforspherecast" /><code>{"private Vector3 positionForSphereCast"}</code> | Offset from the spawn point for the `IsPositionValid` sphere check. |
+| <Link id="m-prefabhashes" /><code>{"private uint[] prefabHashes"}</code> | Network prefab hashes picked from at random when there is no distribution. |
+| <Link id="m-randomrotationtype" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationdefinition-randomrotationtype">{"PopulationDefinition.RandomRotationType"}</Link>{" randomRotationType"}</code> | Whether the random rotation is around Y only or any axis. |
+| <Link id="m-spherecastradius" /><code>{"private float sphereCastRadius"}</code> | Radius of the `IsPositionValid` sphere check. 0 or less turns the check off. |
+| <Link id="m-tickfrequency" /><code>{"private float tickFrequency"}</code> | Backing field for `BaseTickFrequency`: seconds between population checks, before overrides and the spawn rate multiplier. |
 
 </details>
 

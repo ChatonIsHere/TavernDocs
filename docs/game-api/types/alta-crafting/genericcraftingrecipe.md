@@ -30,14 +30,14 @@ Recipe asset for a generic crafting station: the ghost pieces to fill and the pr
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-mappedresult" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{"> mappedResult"}</code> |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] pieces"}</code> |
-| <Link id="m-resulthash" /><code>{"private uint resultHash"}</code> |
-| <Link id="m-spawnoffset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" spawnOffset"}</code> |
-| <Link id="m-uniqueglyphs" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] uniqueGlyphs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-mappedresult" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-crafting/genericcraftingrecipe">{"GenericCraftingRecipe"}</Link>{"> mappedResult"}</code> | Static map from result prefab hash to the recipe that makes it. |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{"[] pieces"}</code> | Backing field for `Pieces`: every piece the station shows, with its source item, mesh, nails and level. |
+| <Link id="m-resulthash" /><code>{"private uint resultHash"}</code> | Backing field for `ResultHash`, the prefab spawned when the project is done. |
+| <Link id="m-spawnoffset" /><code>{"private "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" spawnOffset"}</code> | Backing field for `SpawnOffset`, relative to the station's pieces parent. |
+| <Link id="m-uniqueglyphs" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"[] uniqueGlyphs"}</code> | Backing field for `UniqueGlyphs`. |
 
 </details>
 
@@ -65,9 +65,9 @@ Recipe asset for a generic crafting station: the ghost pieces to fill and the pr
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-mapresults" /><code>{"private static void MapResults()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mapresults" /><code>{"private static void MapResults()"}</code> | Builds the static map from result prefab hash to recipe on first use of `GetRecipe`. |
 
 </details>
 

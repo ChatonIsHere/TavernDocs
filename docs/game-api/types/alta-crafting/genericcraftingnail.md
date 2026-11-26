@@ -30,22 +30,22 @@ One nail on a generic crafting piece that players hammer in. Hits from its impac
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-afterdonedisabletimer" /><code>{"private float afterDoneDisableTimer"}</code> |
-| <Link id="m-deviance" /><code>{"private Quaternion deviance"}</code> |
-| <Link id="m-disablecollider" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" disableCollider"}</code> |
-| <Link id="m-donedistance" /><code>{"private float doneDistance"}</code> |
-| <Link id="m-hitreceiver" /><code>{"private "}<Link to="/game-api/types/alta-crafting/inailable">{"INailable"}</Link>{" hitReceiver"}</code> |
-| <Link id="m-impactcollider" /><code>{"private Collider impactCollider"}</code> |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
-| <Link id="m-length" /><code>{"private float length"}</code> |
-| <Link id="m-maxdeviance" /><code>{"private float maxDeviance"}</code> |
-| <Link id="m-meshtransform" /><code>{"private Transform meshTransform"}</code> |
-| <Link id="m-pivottransform" /><code>{"private Transform pivotTransform"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
-| <Link id="m-shell" /><code>{"private Renderer shell"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-afterdonedisabletimer" /><code>{"private float afterDoneDisableTimer"}</code> | Seconds after the nail is done before its collider turns off on clients. 2 by default. |
+| <Link id="m-deviance" /><code>{"private Quaternion deviance"}</code> | Backing field for `Deviance`: how bent the nail is, capped at `maxDeviance` degrees. |
+| <Link id="m-disablecollider" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" disableCollider"}</code> | Timeline entry for the pending `DisableCollider` call. |
+| <Link id="m-donedistance" /><code>{"private float doneDistance"}</code> | Extra distance the mesh sits out while not done. 0.02 by default. |
+| <Link id="m-hitreceiver" /><code>{"private "}<Link to="/game-api/types/alta-crafting/inailable">{"INailable"}</Link>{" hitReceiver"}</code> | The `INailable` that set up this nail and gets its hits and completion. |
+| <Link id="m-impactcollider" /><code>{"private Collider impactCollider"}</code> | Collider that takes hammer hits. Turned off once the nail is done. |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | Backing field for `ImpactDetector`, whose hits drive the nail. |
+| <Link id="m-length" /><code>{"private float length"}</code> | How far the mesh sticks out at 0 progress. 0.04 by default. |
+| <Link id="m-maxdeviance" /><code>{"private float maxDeviance"}</code> | Most the nail can bend, in degrees. Set by `Setup`. |
+| <Link id="m-meshtransform" /><code>{"private Transform meshTransform"}</code> | The nail mesh, moved in as progress rises. |
+| <Link id="m-pivottransform" /><code>{"private Transform pivotTransform"}</code> | Pivot rotated by the deviance. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Position passed to `Setup`. Not read in this class. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | Backing field for `Progress`, from 0 to 1. The nail is done at 0.99 or more. |
+| <Link id="m-shell" /><code>{"private Renderer shell"}</code> | Renderer hidden once the nail is done. |
 
 </details>
 
@@ -80,15 +80,15 @@ One nail on a generic crafting piece that players hammer in. Hits from its impac
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-disablecollider-2" /><code>{"private void DisableCollider()"}</code> |
-| <Link id="m-disabletimer" /><code>{"private void DisableTimer("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
-| <Link id="m-icclientsideimpact" /><code>{"private bool IcClientSideImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact, out "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" resultHit)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-receivehit" /><code>{"private void ReceiveHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks `DisableTimer` to the nail being released back to its pool. |
+| <Link id="m-disablecollider-2" /><code>{"private void DisableCollider()"}</code> | Turns off the impact collider. Runs `afterDoneDisableTimer` seconds after the nail is done. |
+| <Link id="m-disabletimer" /><code>{"private void DisableTimer("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Cancels the pending collider disable when the nail is released to the pool. |
+| <Link id="m-icclientsideimpact" /><code>{"private bool IcClientSideImpact("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact, out "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" resultHit)"}</code> | True when the hit is from a tool held by a real player, so the player's client resolves it. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws a line along the nail's direction. |
+| <Link id="m-receivehit" /><code>{"private void ReceiveHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Hit handler hooked by `Setup` (never unhooked). Server applies non-client hits; the local wielder's client syncs its hit and plays the effect. |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> | Moves the nail mesh in by progress and tilts the pivot by the deviance. |
 
 </details>
 

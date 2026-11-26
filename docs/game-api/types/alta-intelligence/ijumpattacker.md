@@ -1,6 +1,6 @@
 ---
 title: "IJumpAttacker"
-description: "ActiveJumpAt calls it at the start and end of a jump."
+description: "Implemented by agents that attack by jumping, such as the Spriggull."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
-`ActiveJumpAt` calls it at the start and end of a jump. `Spriggull` charges its beak with it.
+Implemented by agents that attack by jumping, such as the `Spriggull`. The `ActiveJumpAt` action calls it at the start and end of a jump.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`Spriggull`](/game-api/types/alta-intelligence/spriggull)
@@ -20,9 +20,9 @@ An **interface** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setjumping" /><code>{"void SetJumping(bool isJumping)"}</code> | Called with true when the jump attack starts and false when it ends. |
 
 ## Used in
 

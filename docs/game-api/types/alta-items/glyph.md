@@ -40,9 +40,9 @@ A hashed sprite asset that can be stamped onto a page (book or paper). Stored un
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | Backing field for `Sprite`, the image drawn for this glyph on a page. |
 
 </details>
 

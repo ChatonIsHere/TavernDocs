@@ -29,12 +29,12 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cancellation" /><code>{"private CancellationToken cancellation"}</code> |
-| <Link id="m-delaycalls" /><code>{"private static List<Action> delayCalls"}</code> |
-| <Link id="m-delaycallsswap" /><code>{"private static List<Action> delayCallsSwap"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cancellation" /><code>{"private CancellationToken cancellation"}</code> | Token checked after each step; when cancelled the coroutine calls `Stop`. |
+| <Link id="m-delaycalls" /><code>{"private static List<Action> delayCalls"}</code> | Calls queued by `DelayCall` for the end of this frame. |
+| <Link id="m-delaycallsswap" /><code>{"private static List<Action> delayCallsSwap"}</code> | Second list swapped with `delayCalls` while queued calls run, so calls added meanwhile wait for the next frame. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -53,10 +53,10 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-altacoroutinehandler" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" { get; }"}</code> |
-| <Link id="m-targetobject" /><code>{"private MonoBehaviour TargetObject { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-altacoroutinehandler" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" "}<Link to="/game-api/types/assembly-other/altacoroutinehandler">{"AltaCoroutineHandler"}</Link>{" { get; }"}</code> | The `AltaCoroutineHandler` singleton that runs coroutines with no target object. |
+| <Link id="m-targetobject" /><code>{"private MonoBehaviour TargetObject { get; set; }"}</code> | The behaviour the Unity coroutine runs on; defaults to the handler singleton. If it is destroyed, the coroutine stops with it. |
 
 </details>
 
@@ -76,12 +76,12 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-coroutinehandler" /><code>{"private IEnumerator CoroutineHandler(IEnumerator enumerator) (iterator)"}</code> |
-| <Link id="m-delay" /><code>{"private static IEnumerator Delay() (iterator)"}</code> |
-| <Link id="m-delay-2" /><code>{"private static IEnumerator Delay(float delaySeconds, Action callback) (iterator)"}</code> |
-| <Link id="m-duodelay" /><code>{"private static IEnumerator DuoDelay(Action callback) (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-coroutinehandler" /><code>{"private IEnumerator CoroutineHandler(IEnumerator enumerator) (iterator)"}</code> | Wraps the enumerator: steps it, catches exceptions (calling `OnError` or logging), stops on cancellation and calls `OnFinished` at the end. |
+| <Link id="m-delay" /><code>{"private static IEnumerator Delay() (iterator)"}</code> | Coroutine bodies for `DelayCall`: one runs all queued calls at the end of the frame, the other waits the given seconds then calls back. |
+| <Link id="m-delay-2" /><code>{"private static IEnumerator Delay(float delaySeconds, Action callback) (iterator)"}</code> | Coroutine bodies for `DelayCall`: one runs all queued calls at the end of the frame, the other waits the given seconds then calls back. |
+| <Link id="m-duodelay" /><code>{"private static IEnumerator DuoDelay(Action callback) (iterator)"}</code> | Coroutine body for `DuoDelayCall`: waits for the end of the frame and the next fixed update, then calls back. |
 
 </details>
 

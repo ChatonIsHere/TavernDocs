@@ -32,18 +32,18 @@ A stat asset (health, hunger, speed and so on), a hashed value looked up by hash
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-changetosync" /><code>{"private float changeToSync"}</code> |
-| <Link id="m-commandminimumandmaximumvalues" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition-minimumandmaximumvalues">{"StatDefinition.MinimumAndMaximumValues"}</Link>{" commandMinimumAndMaximumValues"}</code> |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
-| <Link id="m-indirectmodificationcurve" /><code>{"private AnimationCurve indirectModificationCurve"}</code> |
-| <Link id="m-isindirectusagemultiplier" /><code>{"private bool isIndirectUsageMultiplier"}</code> |
-| <Link id="m-issaveserialized" /><code>{"private bool isSaveSerialized"}</code> |
-| <Link id="m-majornotcheveryxnotches" /><code>{"private int majorNotchEveryXNotches"}</code> |
-| <Link id="m-notchvalue" /><code>{"private float notchValue"}</code> |
-| <Link id="m-particlescolor" /><code>{"private Color particlesColor"}</code> |
-| <Link id="m-statname" /><code>{"private string statName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changetosync" /><code>{"private float changeToSync"}</code> | How much the value must change (default 0.1) before `CheckSerialize` sends the stat to clients. |
+| <Link id="m-commandminimumandmaximumvalues" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition-minimumandmaximumvalues">{"StatDefinition.MinimumAndMaximumValues"}</Link>{" commandMinimumAndMaximumValues"}</code> | Optional range that commands may set the stat to; checked by `IsValueValidForCommands`. |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration`: how long the upgrade effect plays when this stat is upgraded. |
+| <Link id="m-indirectmodificationcurve" /><code>{"private AnimationCurve indirectModificationCurve"}</code> | Curve that turns the total of indirect modifiers into the amount applied to the stat; exposed as `IndirectModificationCurve`. |
+| <Link id="m-isindirectusagemultiplier" /><code>{"private bool isIndirectUsageMultiplier"}</code> | Whether indirect modifiers apply to this stat as a multiplier rather than a flat amount; exposed as `IsIndirectUsageMultiplier`. |
+| <Link id="m-issaveserialized" /><code>{"private bool isSaveSerialized"}</code> | Backing field for `IsSaveSerialized`: whether the stat's base value is saved with the player. |
+| <Link id="m-majornotcheveryxnotches" /><code>{"private int majorNotchEveryXNotches"}</code> | Every this many notches on the wrist band is a major notch. 0 makes every notch major. |
+| <Link id="m-notchvalue" /><code>{"private float notchValue"}</code> | Stat amount (default 0.25) per notch on the wrist band; used by `GetNotchesCount`. |
+| <Link id="m-particlescolor" /><code>{"private Color particlesColor"}</code> | Backing field for `ParticlesColor`: colour of the upgrade effect particles. |
+| <Link id="m-statname" /><code>{"private string statName"}</code> | Backing field for `Name`, the name used to look the stat up with `StatManager.GetStat`. |
 
 </details>
 

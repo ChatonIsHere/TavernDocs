@@ -31,11 +31,11 @@ Server: one player's postbox contents, saved items waiting to be taken out. Get 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isnew" /><code>{"private bool isNew"}</code> |
-| <Link id="m-latest" /><code>{"private "}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{" latest"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isnew" /><code>{"private bool isNew"}</code> | True when the postbox file didn't exist at load, so `InitializeIfNew` adds the starting content once. |
+| <Link id="m-latest" /><code>{"private "}<Link to="/game-api/types/alta-utilities/chunksaveformat-version">{"ChunkSaveFormat.Version"}</Link>{" latest"}</code> | The save version that `Push(NetworkEntity)` adds to: the last stored version if it's current, otherwise a new one. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -60,9 +60,9 @@ Server: one player's postbox contents, saved items waiting to be taken out. Get 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-readasync" /><code>{"private async Task<"}<Link to="/game-api/types/global-p/playerpostboxstoragefileformat">{"PlayerPostboxStorageFileFormat"}</Link>{"> ReadAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-readasync" /><code>{"private async Task<"}<Link to="/game-api/types/global-p/playerpostboxstoragefileformat">{"PlayerPostboxStorageFileFormat"}</Link>{"> ReadAsync()"}</code> | Reads the postbox file. Nothing in this class calls it. |
 
 </details>
 

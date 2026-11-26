@@ -30,20 +30,20 @@ Server: a trigger area that heats or cools heat points inside it, toward a set t
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-affectingpoints" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> affectingPoints"}</code> |
-| <Link id="m-ambientchecker" /><code>{"private "}<Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" ambientChecker"}</code> |
-| <Link id="m-colliderobject" /><code>{"private GameObject colliderObject"}</code> |
-| <Link id="m-externallyregisteredheatpoints" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> externallyRegisteredHeatPoints"}</code> |
-| <Link id="m-heatsource" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iheatsource">{"IHeatSource"}</Link>{" heatSource"}</code> |
-| <Link id="m-heatsourceobject" /><code>{"private Object heatSourceObject"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |
-| <Link id="m-targettemperature" /><code>{"private float targetTemperature"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
-| <Link id="m-updateheatpoint" /><code>{"private Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{", float> UpdateHeatPoint"}</code> |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-affectingpoints" /><code>{"private Dictionary<Collider, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> affectingPoints"}</code> | Heat points inside the trigger, keyed by their collider. |
+| <Link id="m-ambientchecker" /><code>{"private "}<Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" ambientChecker"}</code> | Reads the ambient temperature at this entity. |
+| <Link id="m-colliderobject" /><code>{"private GameObject colliderObject"}</code> | The trigger object; its active state is `IsActive`. |
+| <Link id="m-externallyregisteredheatpoints" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{"> externallyRegisteredHeatPoints"}</code> | Heat points added by code through `RegisterHeatPointExternal` rather than by trigger. |
+| <Link id="m-heatsource" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iheatsource">{"IHeatSource"}</Link>{" heatSource"}</code> | The `IHeatSource` this area spreads, if any. Server only. |
+| <Link id="m-heatsourceobject" /><code>{"private Object heatSourceObject"}</code> | Serialized reference to the heat source object. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-priority" /><code>{"private int priority"}</code> | Area priority (0 base, 1 cooking). A point is only heated by its highest-priority area. |
+| <Link id="m-targettemperature" /><code>{"private float targetTemperature"}</code> | Backing field for `TargetTemperature`. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Registration on the update module while points are present. |
+| <Link id="m-updateheatpoint" /><code>{"private Action<"}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{", float> UpdateHeatPoint"}</code> | Chosen at init: `ConductToHeatPoint` with a heat source, otherwise `BaseHeatPointUpdate`. |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared fixed-update module for all heat areas. |
 
 </details>
 
@@ -77,22 +77,22 @@ Server: a trigger area that heats or cools heat points inside it, toward a set t
 <details>
 <summary>14 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-baseheatpointupdate" /><code>{"private void BaseHeatPointUpdate("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, float multiplier)"}</code> |
-| <Link id="m-checkfordisabled" /><code>{"private void CheckForDisabled()"}</code> |
-| <Link id="m-checkforenabled" /><code>{"private void CheckForEnabled()"}</code> |
-| <Link id="m-conducttoheatpoint" /><code>{"private void ConductToHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point, float weight)"}</code> |
-| <Link id="m-deregisterheatpoint" /><code>{"private void DeregisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, Collider heatPointCollider)"}</code> |
-| <Link id="m-deregisterheatpoint-2" /><code>{"private void DeregisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> |
-| <Link id="m-registerheatpoint" /><code>{"private void RegisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, Collider heatPointCollider)"}</code> |
-| <Link id="m-registerheatpoint-2" /><code>{"private void RegisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |
-| <Link id="m-updateaffected" /><code>{"private void UpdateAffected()"}</code> |
-| <Link id="m-updateheatpointtemperature" /><code>{"private bool UpdateHeatPointTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Server: caches the heat source from `heatSourceObject`. |
+| <Link id="m-baseheatpointupdate" /><code>{"private void BaseHeatPointUpdate("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, float multiplier)"}</code> | Used when there's no heat source: moves a point's temperature toward a blend of ambient and `TargetTemperature`. |
+| <Link id="m-checkfordisabled" /><code>{"private void CheckForDisabled()"}</code> | Stops the update when no heat points are left. |
+| <Link id="m-checkforenabled" /><code>{"private void CheckForEnabled()"}</code> | Starts the update once at least one heat point is registered. |
+| <Link id="m-conducttoheatpoint" /><code>{"private void ConductToHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point, float weight)"}</code> | Used with a heat source: conducts the source's heat into a point, weighted by the multiplier. |
+| <Link id="m-deregisterheatpoint" /><code>{"private void DeregisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, Collider heatPointCollider)"}</code> | Removes a heat point (and its collider if given), drops this area's priority from it and fires `RemovedHeatPoint`. |
+| <Link id="m-deregisterheatpoint-2" /><code>{"private void DeregisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Removes a heat point (and its collider if given), drops this area's priority from it and fires `RemovedHeatPoint`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: removes the update. |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider other)"}</code> | Registers a `HeatPoint` found on the entering collider or its rigidbody, if `PointFilter` allows it. |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider other)"}</code> | Deregisters the heat point of a collider that leaves the trigger. |
+| <Link id="m-registerheatpoint" /><code>{"private void RegisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint, Collider heatPointCollider)"}</code> | Adds a heat point (with its collider if given), gives it this area's priority and fires `AddedHeatPoint`. |
+| <Link id="m-registerheatpoint-2" /><code>{"private void RegisterHeatPoint("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Adds a heat point (with its collider if given), gives it this area's priority and fires `AddedHeatPoint`. |
+| <Link id="m-updateaffected" /><code>{"private void UpdateAffected()"}</code> | Fixed update: heats every point in range, and drops one point per tick that is destroyed, disabled or failed. |
+| <Link id="m-updateheatpointtemperature" /><code>{"private bool UpdateHeatPointTemperature("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" heatPoint)"}</code> | Updates one point if this area is its highest-priority area. Returns false and logs if it throws. |
 
 </details>
 

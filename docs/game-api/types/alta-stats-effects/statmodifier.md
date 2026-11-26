@@ -30,9 +30,9 @@ A modifier that adds to or multiplies one stat while it's applied. Buff and non-
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isbuff" /><code>{"private bool isBuff"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isbuff" /><code>{"private bool isBuff"}</code> | Whether the modifier applies to the stat's buff values or its non-buff values. `UpdateValue` always changes the buff values. |
 
 </details>
 

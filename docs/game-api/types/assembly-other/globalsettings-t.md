@@ -30,10 +30,10 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-instance" /><code>{"private static T instance"}</code> |
-| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instance" /><code>{"private static T instance"}</code> | The settings asset, set by `InitializeInstance`. |
+| <Link id="m-startedcount" /><code>{"private static int startedCount"}</code> | Unused. |
 
 </details>
 
@@ -52,8 +52,8 @@ Base for global settings ScriptableObjects with a static `Instance`. The instanc
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-geteditorinstance" /><code>{"private static T GetEditorInstance()"}</code> | Returns null in this build; `Instance` stays null until the asset is initialized. |
 
 </details>

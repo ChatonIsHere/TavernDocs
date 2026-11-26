@@ -1,6 +1,6 @@
 ---
 title: "ClientJoinResult"
-description: "Enum of join outcomes, 1 to 13 from Alta's API, 30 to 35 from the connection."
+description: "Outcome of a client trying to join a server: the reasons it can fail (not allowed, offline, locked, wrong version, banned, full, connection problems) or..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, no namespace.
 
-Enum of join outcomes, 1 to 13 from Alta's API, 30 to 35 from the connection.
+Outcome of a client trying to join a server: the reasons it can fail (not allowed, offline, locked, wrong version, banned, full, connection problems) or `JoinAccepted`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Documented in** [Joining a server](/game-api/networking/joining)

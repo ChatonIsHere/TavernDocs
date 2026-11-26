@@ -30,9 +30,9 @@ A list of players parsed from a console command argument (names or ids separated
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-players" /><code>{"private readonly IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-players" /><code>{"private readonly IEnumerable<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> players"}</code> | The players in the list. |
 
 </details>
 

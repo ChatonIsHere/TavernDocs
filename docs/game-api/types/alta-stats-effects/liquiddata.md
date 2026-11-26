@@ -33,16 +33,16 @@ Describes a liquid: its colour and visual, the alchemy effects it applies, and a
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunkvisuals" /><code>{"private "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"[] chunkVisuals"}</code> |
-| <Link id="m-colortint" /><code>{"private Color colorTint"}</code> |
-| <Link id="m-cookablesused" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"[] cookablesUsed"}</code> |
-| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effects"}</code> |
-| <Link id="m-isconsumablethroughskin" /><code>{"private bool isConsumableThroughSkin"}</code> |
-| <Link id="m-liquidvisual" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisual"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-splashparticlesstrength" /><code>{"private float splashParticlesStrength"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunkvisuals" /><code>{"private "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{"[] chunkVisuals"}</code> | Backing field for `ChunkVisuals`: floating chunk visuals (such as food bits) shown in the liquid. |
+| <Link id="m-colortint" /><code>{"private Color colorTint"}</code> | Backing field for `ColorTint`. Multiplied by the visual's colour for `TintedLiquidColor`. |
+| <Link id="m-cookablesused" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookableitem">{"CookableItem"}</Link>{"[] cookablesUsed"}</code> | Backing field for `CookablesUsed`, the cooked items that went into this liquid. Not saved or synced here. |
+| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effects"}</code> | Backing field for `Effects`, the effects `Apply` runs on whoever drinks or is splashed. |
+| <Link id="m-isconsumablethroughskin" /><code>{"private bool isConsumableThroughSkin"}</code> | Backing field for `IsConsumableThroughSkin`. Splash liquids (such as the teleport potion) apply on particle contact. |
+| <Link id="m-liquidvisual" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisual"}</code> | Backing field for `LiquidVisual`, the liquid's look and base colour. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-splashparticlesstrength" /><code>{"private float splashParticlesStrength"}</code> | Backing field for `SplashParticlesStrength`: effect strength when applied by splash particles. 1 by default. |
 
 </details>
 
@@ -75,10 +75,10 @@ Describes a liquid: its colour and visual, the alchemy effects it applies, and a
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-serializechunksarray" /><code>{"private void SerializeChunksArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-serializeeffectsarray" /><code>{"private void SerializeEffectsArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serializechunksarray" /><code>{"private void SerializeChunksArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the chunk visuals as a count and their hashes. |
+| <Link id="m-serializeeffectsarray" /><code>{"private void SerializeEffectsArray("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads or writes the effect applications as a count and each entry. |
 
 </details>
 

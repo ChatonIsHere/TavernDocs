@@ -29,10 +29,10 @@ The older, simpler population type: keeps a folder of spawned items up to a cap 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-items" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{"> items"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{"> items"}</code> | The population items currently registered, added by `Register` and `AdoptExisting` and removed when an item is removed. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "RevealEffect"
-description: "Raises the handler's OnReveal."
+description: "Effect that calls Reveal on the target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
 
-Raises the handler's `OnReveal`.
+Effect that calls `Reveal` on the target.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`EffectDefinition`](/game-api/types/alta-stats-effects/effectdefinition)
@@ -27,6 +27,6 @@ Raises the handler's `OnReveal`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | Calls the target's `Reveal`. |

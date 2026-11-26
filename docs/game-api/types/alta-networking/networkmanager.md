@@ -29,17 +29,17 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-receive" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receive"}</code> |
-| <Link id="m-receiveupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receiveUpdateMethod"}</code> |
-| <Link id="m-receivingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" receivingModule"}</code> |
-| <Link id="m-send" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" send"}</code> |
-| <Link id="m-sendingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" sendingModule"}</code> |
-| <Link id="m-sendupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" sendUpdateMethod"}</code> |
-| <Link id="m-sockets" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> sockets"}</code> |
-| <Link id="m-timer" /><code>{"private static readonly Stopwatch timer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
+| <Link id="m-receive" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receive"}</code> | Update handle cleared by `Terminate`; never set, so `Terminate` does not stop `Receive`. |
+| <Link id="m-receiveupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" receiveUpdateMethod"}</code> | Update handle for `Receive`. |
+| <Link id="m-receivingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" receivingModule"}</code> | Update module (Update) that runs `Receive`, included in server profiling. |
+| <Link id="m-send" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" send"}</code> | Update handle cleared by `Terminate`; never set, so `Terminate` does not stop `Send`. |
+| <Link id="m-sendingmodule" /><code>{"private static readonly "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" sendingModule"}</code> | Update module (LateUpdate) that runs `Send`, included in server profiling. |
+| <Link id="m-sendupdatemethod" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" sendUpdateMethod"}</code> | Update handle for `Send`. |
+| <Link id="m-sockets" /><code>{"private static readonly List<"}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{"> sockets"}</code> | All open sockets, updated each frame. |
+| <Link id="m-timer" /><code>{"private static readonly Stopwatch timer"}</code> | Stopwatch used to time send and receive. |
 
 </details>
 
@@ -65,9 +65,9 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkingsettings">{"NetworkingSettings"}</Link>{" Settings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkingsettings">{"NetworkingSettings"}</Link>{" Settings { get; }"}</code> | The global `NetworkingSettings`. |
 
 </details>
 
@@ -82,13 +82,13 @@ Static owner of the network transport (KCP) and all sockets. Pumps receiving in 
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-createtransport" /><code>{"private static void CreateTransport()"}</code> |
-| <Link id="m-ensurenetworkinghasstarted" /><code>{"private static void EnsureNetworkingHasStarted()"}</code> |
-| <Link id="m-receive-2" /><code>{"private static void Receive()"}</code> |
-| <Link id="m-send-2" /><code>{"private static void Send()"}</code> |
-| <Link id="m-setupsendreceive" /><code>{"private static void SetupSendReceive("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" _ = null)"}</code> |
-| <Link id="m-setuptransportchannels" /><code>{"private static void SetupTransportChannels()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createtransport" /><code>{"private static void CreateTransport()"}</code> | Creates the transport from `NetworkingSettings`; only KCP is supported, anything else throws. |
+| <Link id="m-ensurenetworkinghasstarted" /><code>{"private static void EnsureNetworkingHasStarted()"}</code> | On first use, creates the transport, its channels and the send and receive update calls. |
+| <Link id="m-receive-2" /><code>{"private static void Receive()"}</code> | Each `Update`, runs every socket's receive and records the time in `ReceivingMs`. |
+| <Link id="m-send-2" /><code>{"private static void Send()"}</code> | Each `LateUpdate`, runs every socket's send and records the time in `SendingMs`. |
+| <Link id="m-setupsendreceive" /><code>{"private static void SetupSendReceive("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" _ = null)"}</code> | Registers `Receive` and `Send` on their update modules, replacing any earlier registration. |
+| <Link id="m-setuptransportchannels" /><code>{"private static void SetupTransportChannels()"}</code> | Creates a transport channel for each channel in the settings. |
 
 </details>

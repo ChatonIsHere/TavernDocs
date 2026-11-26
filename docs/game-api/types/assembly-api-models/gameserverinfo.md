@@ -35,9 +35,9 @@ A game server as returned by the Alta web API: id, name, status, region, owner, 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-fleetmapping" /><code>{"private static readonly Dictionary<int, string> FleetMapping"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fleetmapping" /><code>{"private static readonly Dictionary<int, string> FleetMapping"}</code> | Maps a server `Target` number to its fleet name (1 is `att-release`, 2 is `att-quest`); read by `GetFleetName`. |
 
 </details>
 

@@ -41,27 +41,27 @@ Something that burns. On the server it lights when its attached heat point passe
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ambientchecker" /><code>{"private "}<Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" ambientChecker"}</code> |
-| <Link id="m-attachedheatarea" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatarea">{"HeatArea"}</Link>{" attachedHeatArea"}</code> |
-| <Link id="m-destroytarget" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" destroyTarget"}</code> |
-| <Link id="m-extinguishcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" extinguishCoroutine"}</code> |
-| <Link id="m-fireprogresstotemperature" /><code>{"private AnimationCurve fireProgressToTemperature"}</code> |
-| <Link id="m-firerigidbody" /><code>{"private Rigidbody fireRigidbody"}</code> |
-| <Link id="m-hasmessage" /><code>{"private bool? hasMessage"}</code> |
-| <Link id="m-heatpointoperation" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" heatPointOperation"}</code> |
-| <Link id="m-ignitiontemperature" /><code>{"private float ignitionTemperature"}</code> |
-| <Link id="m-isaddingrigidbodywhenlit" /><code>{"private bool isAddingRigidbodyWhenLit"}</code> |
-| <Link id="m-isasphixiable" /><code>{"private bool isAsphixiable"}</code> |
-| <Link id="m-isasphyxiated" /><code>{"private bool isAsphyxiated"}</code> |
-| <Link id="m-isignoringambientwhileburning" /><code>{"private bool isIgnoringAmbientWhileBurning"}</code> |
-| <Link id="m-islit" /><code>{"private bool isLit"}</code> |
-| <Link id="m-lightingcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" lightingCoroutine"}</code> |
-| <Link id="m-litduration" /><code>{"private float litDuration"}</code> |
-| <Link id="m-putouttemperature" /><code>{"private float putOutTemperature"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/firesettings">{"FireSettings"}</Link>{" settings"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ambientchecker" /><code>{"private "}<Link to="/game-api/types/global-a-b/ambienttemperaturechecker">{"AmbientTemperatureChecker"}</Link>{" ambientChecker"}</code> | Private: reads the ambient temperature, the minimum the source conducts to its heat point. |
+| <Link id="m-attachedheatarea" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatarea">{"HeatArea"}</Link>{" attachedHeatArea"}</code> | Optional `HeatArea` that the server turns on while lit. |
+| <Link id="m-destroytarget" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" destroyTarget"}</code> | Optional entity broken or destroyed when the fire burns out on its own. |
+| <Link id="m-extinguishcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" extinguishCoroutine"}</code> | Private: the running extinguish coroutine. |
+| <Link id="m-fireprogresstotemperature" /><code>{"private AnimationCurve fireProgressToTemperature"}</code> | Temperature the source pushes into its heat point over burn progress. |
+| <Link id="m-firerigidbody" /><code>{"private Rigidbody fireRigidbody"}</code> | Private: the rigidbody added while lit, removed when put out. |
+| <Link id="m-hasmessage" /><code>{"private bool? hasMessage"}</code> | Private: a lit state received while the object was inactive, applied on the next `Light`. |
+| <Link id="m-heatpointoperation" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" heatPointOperation"}</code> | Private: the registered update that conducts heat while lit. |
+| <Link id="m-ignitiontemperature" /><code>{"private float ignitionTemperature"}</code> | Heat point temperature at which the source lights. Defaults to 100. |
+| <Link id="m-isaddingrigidbodywhenlit" /><code>{"private bool isAddingRigidbodyWhenLit"}</code> | If set, a kinematic rigidbody is added shortly after lighting. |
+| <Link id="m-isasphixiable" /><code>{"private bool isAsphixiable"}</code> | Backing field for `IsAsphixiable`. |
+| <Link id="m-isasphyxiated" /><code>{"private bool isAsphyxiated"}</code> | Private: set by `Asphixiate`. Stops lighting and heat conduction until released. |
+| <Link id="m-isignoringambientwhileburning" /><code>{"private bool isIgnoringAmbientWhileBurning"}</code> | Whether the heat point ignores ambient temperature while burning. Defaults to true. |
+| <Link id="m-islit" /><code>{"private bool isLit"}</code> | Backing field for `IsLit`. |
+| <Link id="m-lightingcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" lightingCoroutine"}</code> | Private: the running burn timer coroutine. |
+| <Link id="m-litduration" /><code>{"private float litDuration"}</code> | Seconds the source burns before going out by itself. |
+| <Link id="m-putouttemperature" /><code>{"private float putOutTemperature"}</code> | Heat point temperature below which a lit source goes out. Defaults to 80. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/firesettings">{"FireSettings"}</Link>{" settings"}</code> | Backing field for `Settings`. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Private: the state sync message. |
 
 </details>
 
@@ -111,18 +111,18 @@ Something that burns. On the server it lights when its attached heat point passe
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-conducttoheatpointoperation" /><code>{"private void ConductToHeatPointOperation()"}</code> |
-| <Link id="m-delayedconclude" /><code>{"private IEnumerator DelayedConclude() (iterator)"}</code> |
-| <Link id="m-extinguishend" /><code>{"private void ExtinguishEnd()"}</code> |
-| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onislitchanged" /><code>{"private void OnIsLitChanged(bool newIsLitValue)"}</code> |
-| <Link id="m-stoplightingandextinguishingcoroutines" /><code>{"private void StopLightingAndExtinguishingCoroutines()"}</code> |
-| <Link id="m-syncserialize" /><code>{"private void SyncSerialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updateheat" /><code>{"private void UpdateHeat("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
-| <Link id="m-waittoreset" /><code>{"private IEnumerator WaitToReset() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-conducttoheatpointoperation" /><code>{"private void ConductToHeatPointOperation()"}</code> | Private: update module callback that runs `ConductToHeatPoint` each fixed update while lit. |
+| <Link id="m-delayedconclude" /><code>{"private IEnumerator DelayedConclude() (iterator)"}</code> | Private: clears `isSerializing` half a second after a lit source loads. |
+| <Link id="m-extinguishend" /><code>{"private void ExtinguishEnd()"}</code> | Private: last step of putting out the fire. Releases the effect, turns off the heat area, syncs and raises the toggle events. |
+| <Link id="m-loadsetup" /><code>{"private void Alta.Chunks.ISavableFull.LoadSetup()"}</code> | After loading, relights a lit source or sets the heat point just under ignition and checks it again. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Private: stops the heat point update. |
+| <Link id="m-onislitchanged" /><code>{"private void OnIsLitChanged(bool newIsLitValue)"}</code> | Private: stops the heat point update when the source goes out. |
+| <Link id="m-stoplightingandextinguishingcoroutines" /><code>{"private void StopLightingAndExtinguishingCoroutines()"}</code> | Private: stops any running burn or extinguish coroutine. |
+| <Link id="m-syncserialize" /><code>{"private void SyncSerialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Private: syncs lit, extinguishing and lit progress. Clients light, extinguish or restart the burn timer from it. |
+| <Link id="m-updateheat" /><code>{"private void UpdateHeat("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Private, server: lights the source above `ignitionTemperature` and puts it out below `putOutTemperature`. |
+| <Link id="m-waittoreset" /><code>{"private IEnumerator WaitToReset() (iterator)"}</code> | Private: half a second after lighting, adds a kinematic rigidbody for `isAddingRigidbodyWhenLit`. |
 
 </details>
 

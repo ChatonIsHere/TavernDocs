@@ -1,6 +1,6 @@
 ---
 title: "Schmeechee.Operation"
-description: "A scoring rule for \"grounded\" or \"upside down\"."
+description: "A scoring rule for schmeechee actions that returns one value when the critter is grounded (or upside down) and another when not."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-A scoring rule for "grounded" or "upside down".
+A scoring rule for schmeechee actions that returns one value when the critter is grounded (or upside down) and another when not.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`Schmeechee`](/game-api/types/alta-intelligence/schmeechee)
@@ -30,16 +30,16 @@ A scoring rule for "grounded" or "upside down".
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> |
-| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> |
-| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-falsevalue" /><code>{"private float falseValue"}</code> | Score when the state doesn't hold. Default 0. |
+| <Link id="m-operation" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation"}</code> | Which state to check: grounded or upside down. |
+| <Link id="m-truevalue" /><code>{"private float trueValue"}</code> | Score when the state holds. Default 1. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-evaluate" /><code>{"override float Evaluate("}<Link to="/game-api/types/alta-intelligence/agent">{"Agent"}</Link>{" agent, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | Returns `trueValue` if the agent is a schmeechee in the chosen state, otherwise `falseValue`. |

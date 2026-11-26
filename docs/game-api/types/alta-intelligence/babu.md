@@ -30,14 +30,14 @@ The babu creature's AI (`Agent<Babu>`). Has a view cone and an interactor. Its p
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
-| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> |
-| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | Transform whose position is the babu's `Position`. |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | Backing field for `Interactor`, the interactor the babu eats food with. |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> | Animator bool set on the local animator when the babu dies. Default "Killed". |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | The starting action set. Only the first babu's set is used, stored in the static `PassiveActions`. |
+| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> | The stunned action. Only the first babu's is used, stored in the static `Stunned`. |
+| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | Backing field for `ViewCone`. |
 
 </details>
 

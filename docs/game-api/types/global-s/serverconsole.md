@@ -29,10 +29,10 @@ Base for the dedicated server's text console (Windows, Linux or a null console).
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-inputqueue" /><code>{"private ConcurrentQueue<string> inputQueue"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inputqueue" /><code>{"private ConcurrentQueue<string> inputQueue"}</code> | Thread-safe queue of commands typed into the console, drained by `ProcessInputQueue`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 

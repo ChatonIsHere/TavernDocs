@@ -30,11 +30,11 @@ A ScriptableObject for one option in the wrist quick access menu. The menu contr
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
-| <Link id="m-isignoredon" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" isIgnoredOn"}</code> |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> | Backing field for `DisplayName`, the label shown for the action. |
+| <Link id="m-isignoredon" /><code>{"private "}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" isIgnoredOn"}</code> | Platforms where the action is hidden (`IsIgnored`), except for developers. |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> | Icon prefab made by `GetPrefab`. A dynamic icon component on it is given this action. |
 
 </details>
 

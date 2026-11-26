@@ -31,14 +31,14 @@ An asset for a non-networked environment piece, with its prefab and surface mate
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnchild" /><code>{"private bool btnChild"}</code> |
-| <Link id="m-material" /><code>{"private "}<Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" material"}</code> |
-| <Link id="m-piecemap" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{"> pieceMap"}</code> |
-| <Link id="m-pooledparent" /><code>{"private static Transform pooledParent"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" prefab"}</code> |
-| <Link id="m-stack" /><code>{"private Stack<"}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"> stack"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnchild" /><code>{"private bool btnChild"}</code> | Inspector button. Holds no data. |
+| <Link id="m-material" /><code>{"private "}<Link to="/game-api/types/alta-utilities/surfacematerial">{"SurfaceMaterial"}</Link>{" material"}</code> | Backing field for `Material`. |
+| <Link id="m-piecemap" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{"> pieceMap"}</code> | Static cache of pieces by index, filled by `Load` and `Spawn`. |
+| <Link id="m-pooledparent" /><code>{"private static Transform pooledParent"}</code> | Shared do-not-destroy transform that new instances are created under. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" prefab"}</code> | Backing field for `Prefab`. |
+| <Link id="m-stack" /><code>{"private Stack<"}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{"> stack"}</code> | Pool of released instances waiting to be reused. |
 
 </details>
 
@@ -60,9 +60,9 @@ An asset for a non-networked environment piece, with its prefab and surface mate
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-release" /><code>{"private void Alta.Static.IStaticEnvironmentPiecePool.Release("}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-release" /><code>{"private void Alta.Static.IStaticEnvironmentPiecePool.Release("}<Link to="/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> | Explicit `IStaticEnvironmentPiecePool` method: returns an instance to this piece's pool for reuse by `Spawn`. |
 
 </details>
 

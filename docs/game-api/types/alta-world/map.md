@@ -31,13 +31,13 @@ A hashed map asset: the map pieces players can uncover and the world area it cov
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-firstnonreservedindex" /><code>{"private uint firstNonReservedIndex"}</code> |
-| <Link id="m-globalmappieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] globalMapPieces"}</code> |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] pieces"}</code> |
-| <Link id="m-worldpositionbottomleft" /><code>{"private Vector2 worldPositionBottomLeft"}</code> |
-| <Link id="m-worldpositiontopright" /><code>{"private Vector2 worldPositionTopRight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-firstnonreservedindex" /><code>{"private uint firstNonReservedIndex"}</code> | Backing field for `FirstNonReservedIndex`. Landmark indexes below it are reserved; new ones start here. 1000 by default. |
+| <Link id="m-globalmappieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] globalMapPieces"}</code> | Backing field for `GlobalMapPieces`. |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"[] pieces"}</code> | Backing field for `Pieces`, the map pieces players can discover. |
+| <Link id="m-worldpositionbottomleft" /><code>{"private Vector2 worldPositionBottomLeft"}</code> | Backing field for `WorldPositionBottomLeft`: the world x/z of the map's bottom-left corner. |
+| <Link id="m-worldpositiontopright" /><code>{"private Vector2 worldPositionTopRight"}</code> | Backing field for `WorldPositionTopRight`: the world x/z of the map's top-right corner. |
 
 </details>
 

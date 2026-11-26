@@ -30,11 +30,11 @@ Base for a creature AI that picks actions from an `ActionDecider`. The AI runs o
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-actioncomponentsets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<TThis>> actionComponentSets"}</code> |
-| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TThis>> actions"}</code> |
-| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> currentAction"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actioncomponentsets" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<TThis>> actionComponentSets"}</code> | Cache of action sets built from each `ActionComponentSet` this creature has used. |
+| <Link id="m-actions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TThis>> actions"}</code> | Cache of actions built from each `ActionComponent` started directly on this creature. |
+| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> currentAction"}</code> | The action and target the creature is running now. `Target` reads from it. |
 
 </details>
 
@@ -65,8 +65,8 @@ Base for a creature AI that picks actions from an `ActionDecider`. The AI runs o
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getbestaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> GetBestAction(int minimumPriority, float minimumWeighting)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getbestaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<TThis> GetBestAction(int minimumPriority, float minimumWeighting)"}</code> | Asks the `ActionDecider` for the best action above the given cancel priority and weighting. |
 
 </details>

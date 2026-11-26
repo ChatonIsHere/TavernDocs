@@ -30,27 +30,27 @@ The VR body's `LocomotionController`: adds teleport styles (instant, lerp, fade)
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> |
-| <Link id="m-dashblockagemask" /><code>{"private LayerMask dashBlockageMask"}</code> |
-| <Link id="m-dashcooldown" /><code>{"private float dashCooldown"}</code> |
-| <Link id="m-dashstandablemask" /><code>{"private LayerMask dashStandableMask"}</code> |
-| <Link id="m-halfsteps" /><code>{"private int halfSteps"}</code> |
-| <Link id="m-isusingtrail" /><code>{"private bool isUsingTrail"}</code> |
-| <Link id="m-lerpduration" /><code>{"private float lerpDuration"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-maximumfall" /><code>{"private float maximumFall"}</code> |
-| <Link id="m-maxstepangle" /><code>{"private float maxStepAngle"}</code> |
-| <Link id="m-origin" /><code>{"private Transform origin"}</code> |
-| <Link id="m-prepareforwritetimer" /><code>{"private static readonly "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> |
-| <Link id="m-remotetrailmovement" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> remoteTrailMovement"}</code> |
-| <Link id="m-serializetimer" /><code>{"private static readonly "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> |
-| <Link id="m-smoothingsettings" /><code>{"private "}<Link to="/game-api/types/global-p/playerlocomotioncontroller-smoothingsetting">{"PlayerLocomotionController.SmoothingSetting"}</Link>{"[] smoothingSettings"}</code> |
-| <Link id="m-smoothtransforms" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{"[] smoothTransforms"}</code> |
-| <Link id="m-stepvelocity" /><code>{"private float stepVelocity"}</code> |
-| <Link id="m-style" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" style"}</code> |
-| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currenttranslate" /><code>{"private Coroutine currentTranslate"}</code> | Running `LerpPosition` coroutine, stopped when a new teleport starts. |
+| <Link id="m-dashblockagemask" /><code>{"private LayerMask dashBlockageMask"}</code> | Layers that block a combat step. |
+| <Link id="m-dashcooldown" /><code>{"private float dashCooldown"}</code> | Seconds between combat steps. Defaults to 0.5. |
+| <Link id="m-dashstandablemask" /><code>{"private LayerMask dashStandableMask"}</code> | Layers a combat step can land on. |
+| <Link id="m-halfsteps" /><code>{"private int halfSteps"}</code> | How many times a blocked step is retried at half the distance. |
+| <Link id="m-isusingtrail" /><code>{"private bool isUsingTrail"}</code> | Whether moves show a teleport trail. Set from the remote trail sync. |
+| <Link id="m-lerpduration" /><code>{"private float lerpDuration"}</code> | Duration of the combat step move. Zero uses the default teleport duration. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maximumfall" /><code>{"private float maximumFall"}</code> | How far down a combat step looks for ground. |
+| <Link id="m-maxstepangle" /><code>{"private float maxStepAngle"}</code> | Steepest surface, in degrees, a combat step can land on. |
+| <Link id="m-origin" /><code>{"private Transform origin"}</code> | Transform whose rotation turns stick input into a step direction (the player camera). |
+| <Link id="m-prepareforwritetimer" /><code>{"private static readonly "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" prepareForWriteTimer"}</code> | Static backing field for the explicit `PrepareForWriteTimer`. |
+| <Link id="m-remotetrailmovement" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> remoteTrailMovement"}</code> | Method sync on `EffectRequest` for the trail flag. |
+| <Link id="m-serializetimer" /><code>{"private static readonly "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" serializeTimer"}</code> | Static backing field for the explicit `SerializeTimer`. |
+| <Link id="m-smoothingsettings" /><code>{"private "}<Link to="/game-api/types/global-p/playerlocomotioncontroller-smoothingsetting">{"PlayerLocomotionController.SmoothingSetting"}</Link>{"[] smoothingSettings"}</code> | Locomotion and transform lerp pairs, one per `PlayerSmoothManager` setting index. |
+| <Link id="m-smoothtransforms" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{"[] smoothTransforms"}</code> | Network transforms whose lerp is set by the smoothing setting. |
+| <Link id="m-stepvelocity" /><code>{"private float stepVelocity"}</code> | Distance of a full combat step. Defaults to 0.6. |
+| <Link id="m-style" /><code>{"private "}<Link to="/game-api/types/alta-player/locomotionstyle">{"LocomotionStyle"}</Link>{" style"}</code> | Teleport style used for combat steps. Defaults to Lerp. |
+| <Link id="m-translatevelocity" /><code>{"private Vector3 translateVelocity"}</code> | Smooth-damp velocity used by `LerpPosition`. |
 
 </details>
 
@@ -65,10 +65,10 @@ The VR body's `LocomotionController`: adds teleport styles (instant, lerp, fade)
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | Shared timing stats for preparing player locomotion writes. |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | Shared timing stats for serializing player locomotion. |
 
 </details>
 
@@ -88,17 +88,17 @@ The VR body's `LocomotionController`: adds teleport styles (instant, lerp, fade)
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-lerpposition" /><code>{"private IEnumerator LerpPosition(Vector3 target, float duration, Action lerpFinishedCallback) (iterator)"}</code> |
-| <Link id="m-lerprotation" /><code>{"private IEnumerator LerpRotation(Quaternion rotation, float duration) (iterator)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-remotetrailmovement-2" /><code>{"private void RemoteTrailMovement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isUsingTrail)"}</code> |
-| <Link id="m-runstepcooldown" /><code>{"private IEnumerator RunStepCoolDown() (iterator)"}</code> |
-| <Link id="m-setuporigin" /><code>{"private bool SetupOrigin()"}</code> |
-| <Link id="m-teleportfinishedsound" /><code>{"private void TeleportFinishedSound("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
-| <Link id="m-updatesmoothing" /><code>{"private void UpdateSmoothing(int smoothingLevel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lerpposition" /><code>{"private IEnumerator LerpPosition(Vector3 target, float duration, Action lerpFinishedCallback) (iterator)"}</code> | Coroutine that smooth-damps the local position to a target, then runs a callback. Used by Lerp-style teleports. |
+| <Link id="m-lerprotation" /><code>{"private IEnumerator LerpRotation(Quaternion rotation, float duration) (iterator)"}</code> | Coroutine that slerps the rotation to a target. Not called in this class. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from `PlayerSmoothManager.SettingChanged`. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Client: unhooks the teleport arrival sound. |
+| <Link id="m-remotetrailmovement-2" /><code>{"private void RemoteTrailMovement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isUsingTrail)"}</code> | Method sync for whether the last move used a teleport trail. The server relays it to everyone else. |
+| <Link id="m-runstepcooldown" /><code>{"private IEnumerator RunStepCoolDown() (iterator)"}</code> | Waits `dashCooldown`, then steps again if a Step action is still held, otherwise clears `IsOnCooldown`. |
+| <Link id="m-setuporigin" /><code>{"private bool SetupOrigin()"}</code> | Editor helper: sets `origin` to the player camera. |
+| <Link id="m-teleportfinishedsound" /><code>{"private void TeleportFinishedSound("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Client: plays the teleport arrive sound after a teleport-locomotion move. |
+| <Link id="m-updatesmoothing" /><code>{"private void UpdateSmoothing(int smoothingLevel)"}</code> | Applies the smoothing setting at the chosen index to the locomotion lerp and the smoothed network transforms. |
 
 </details>
 

@@ -29,25 +29,25 @@ One network link between the server and a client: per channel send queues, recei
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> |
-| <Link id="m-clientpausedisconnectcancel" /><code>{"private CancellationTokenSource clientPauseDisconnectCancel"}</code> |
-| <Link id="m-ipaddress" /><code>{"private readonly string IpAddress"}</code> |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |
-| <Link id="m-isflooded" /><code>{"private bool isFlooded"}</code> |
-| <Link id="m-isqueuelimitwarned" /><code>{"private bool isQueueLimitWarned"}</code> |
-| <Link id="m-isqueuingsends" /><code>{"private bool IsQueuingSends"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-maxconnectionqueuesize" /><code>{"private readonly int MaxConnectionQueueSize"}</code> |
-| <Link id="m-maxserverqueuesize" /><code>{"private readonly int MaxServerQueueSize"}</code> |
-| <Link id="m-messagehandlers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{"> messageHandlers"}</code> |
-| <Link id="m-outgoingpacketmanagers" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-networking/outgoingpacketmanager">{"OutgoingPacketManager"}</Link>{"> outgoingPacketManagers"}</code> |
-| <Link id="m-outgoingqueuesize" /><code>{"private int outgoingQueueSize"}</code> |
-| <Link id="m-packetmanagermap" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-networking/outgoingpacketmanager">{"OutgoingPacketManager"}</Link>{"> packetManagerMap"}</code> |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player"}</code> |
-| <Link id="m-receivers" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/connectionreceiver">{"ConnectionReceiver"}</Link>{"> receivers"}</code> |
-| <Link id="m-sendlock" /><code>{"private static readonly object sendLock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels"}</code> | The channels this connection was created with; each has a packet manager and a receiver. |
+| <Link id="m-clientpausedisconnectcancel" /><code>{"private CancellationTokenSource clientPauseDisconnectCancel"}</code> | Cancels the pending pause timeout when the client resumes or pauses again. |
+| <Link id="m-ipaddress" /><code>{"private readonly string IpAddress"}</code> | Remote IP address, used by `Ping`. |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | Backing field for `IsDisposed`; once set, `Send` does nothing. |
+| <Link id="m-isflooded" /><code>{"private bool isFlooded"}</code> | Not used in this class. |
+| <Link id="m-isqueuelimitwarned" /><code>{"private bool isQueueLimitWarned"}</code> | Set after the queue limit warning is logged, so it is logged once until the queue recovers. |
+| <Link id="m-isqueuingsends" /><code>{"private bool IsQueuingSends"}</code> | While set (between `StartQueuing` and `StopQueuing`), sends are held in each channel's queue instead of going out. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maxconnectionqueuesize" /><code>{"private readonly int MaxConnectionQueueSize"}</code> | Per-connection outgoing queue limit from `NetworkingSettings`; sends are dropped once the transport queue reaches it. |
+| <Link id="m-maxserverqueuesize" /><code>{"private readonly int MaxServerQueueSize"}</code> | Socket-wide outgoing queue limit from `NetworkingSettings`; sends on any connection are dropped once it is reached. |
+| <Link id="m-messagehandlers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{", "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{"> messageHandlers"}</code> | Handlers for incoming messages, keyed by message type; set with `SetHandler`. |
+| <Link id="m-outgoingpacketmanagers" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-networking/outgoingpacketmanager">{"OutgoingPacketManager"}</Link>{"> outgoingPacketManagers"}</code> | One outgoing packet manager per channel, updated and flushed each frame. |
+| <Link id="m-outgoingqueuesize" /><code>{"private int outgoingQueueSize"}</code> | Transport outgoing queue size read in `UpdatePacketManagers`, compared with `MaxConnectionQueueSize`. |
+| <Link id="m-packetmanagermap" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-networking/outgoingpacketmanager">{"OutgoingPacketManager"}</Link>{"> packetManagerMap"}</code> | Outgoing packet manager for each channel, used by `Send`. |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player"}</code> | Backing field for `Player`. |
+| <Link id="m-receivers" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-networking/connectionreceiver">{"ConnectionReceiver"}</Link>{"> receivers"}</code> | Incoming message receiver for each channel identifier. |
+| <Link id="m-sendlock" /><code>{"private static readonly object sendLock"}</code> | Static lock held around each transport send. |
 
 </details>
 
@@ -67,9 +67,9 @@ One network link between the server and a client: per channel send queues, recei
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-transportconnection" /><code>{"private "}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" TransportConnection { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-transportconnection" /><code>{"private "}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" TransportConnection { get; }"}</code> | The underlying transport connection that packets are sent and received through. |
 
 </details>
 
@@ -107,16 +107,16 @@ One network link between the server and a client: per channel send queues, recei
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-disconnectaftertimeout" /><code>{"private async void DisconnectAfterTimeout("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-handleconnectionpause" /><code>{"internal void HandleConnectionPause("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-hashandler" /><code>{"private bool HasHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message)"}</code> |
-| <Link id="m-internalsend" /><code>{"internal bool InternalSend(byte[] data, int byteCount, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, out "}<Link to="/game-api/types/assembly-other/inetworktransportresult">{"INetworkTransportResult"}</Link>{" result, out bool isErrorSilent)"}</code> |
-| <Link id="m-onapproved" /><code>{"private void OnApproved()"}</code> |
-| <Link id="m-ondisconnected" /><code>{"private void OnDisconnected()"}</code> |
-| <Link id="m-queuelimitreached" /><code>{"private bool QueueLimitReached()"}</code> |
-| <Link id="m-trygetmessagehandler" /><code>{"internal bool TryGetMessageHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, out "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disconnectaftertimeout" /><code>{"private async void DisconnectAfterTimeout("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Server: started when a client pauses; disconnects it with "Pause Timeout" after one minute unless the pause ends first. |
+| <Link id="m-handleconnectionpause" /><code>{"internal void HandleConnectionPause("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Server: handler for `ConnectionPauseRequest`. A pausing client has its sends queued and gets a one minute disconnect timer; resuming flushes the queue. |
+| <Link id="m-hashandler" /><code>{"private bool HasHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" message)"}</code> | True if a handler is set for the message type; `SetHandler` uses it to warn about overriding. |
+| <Link id="m-internalsend" /><code>{"internal bool InternalSend(byte[] data, int byteCount, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" channel, out "}<Link to="/game-api/types/assembly-other/inetworktransportresult">{"INetworkTransportResult"}</Link>{" result, out bool isErrorSilent)"}</code> | Sends packet bytes through the transport on a channel, unless the transport isn't started or a queue limit is hit. Updates packet counters and raises `PacketSent`. |
+| <Link id="m-onapproved" /><code>{"private void OnApproved()"}</code> | Raises `Approved`; called once from `Approve`. |
+| <Link id="m-ondisconnected" /><code>{"private void OnDisconnected()"}</code> | Raises `Disconnected`, logging any error a listener throws; called from `Dispose`. |
+| <Link id="m-queuelimitreached" /><code>{"private bool QueueLimitReached()"}</code> | True when the transport reports flooding or the socket or connection queue limit is hit. Logs a warning once until the queue recovers. |
+| <Link id="m-trygetmessagehandler" /><code>{"internal bool TryGetMessageHandler("}<Link to="/game-api/types/alta-networking/messagetype">{"MessageType"}</Link>{" type, out "}<Link to="/game-api/types/alta-networking/serializeconnectionmethod">{"SerializeConnectionMethod"}</Link>{" handler)"}</code> | Looks up the handler set for a message type; used by `MessageProcessor` when a message arrives. |
 
 </details>
 

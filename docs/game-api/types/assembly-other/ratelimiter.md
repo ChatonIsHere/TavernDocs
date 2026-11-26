@@ -1,6 +1,6 @@
 ---
 title: "RateLimiter"
-description: "new RateLimiter(float targetTickRate) then bool IsRateLimited(): false at most targetTickRate times a second (by Time.realtimeSinceStartup), true in between."
+description: "Simple real-time rate limiter: construct it with a ticks-per-second target, then call IsRateLimited each frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Coroutines`, `Alta.Utilities`.
 
-`new RateLimiter(float targetTickRate)` then `bool IsRateLimited()`: false at most `targetTickRate` times a second (by `Time.realtimeSinceStartup`), true in between.
+Simple real-time rate limiter: construct it with a ticks-per-second target, then call `IsRateLimited` each frame. Used by `QuestMarker`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Documented in** [Threads, coroutines and the timeline](/game-api/console-and-utilities/threads-coroutines-and-timeline#ratelimiter), [Alta assemblies](/game-api/console-and-utilities/alta-assemblies)
@@ -28,18 +28,18 @@ A **class** in `Alta.Coroutines`, `Alta.Utilities`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-limit" /><code>{"private float limit"}</code> |
-| <Link id="m-targettickrate" /><code>{"private readonly float targetTickRate"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-limit" /><code>{"private float limit"}</code> | Real time (`Time.realtimeSinceStartup`) before which calls are rate limited. |
+| <Link id="m-targettickrate" /><code>{"private readonly float targetTickRate"}</code> | Seconds between ticks (one over the ticks per second passed to the constructor). |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isratelimited" /><code>{"bool IsRateLimited()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isratelimited" /><code>{"bool IsRateLimited()"}</code> | Returns true until the next tick is due; when it returns false it schedules the next tick. Never limits if the rate is zero or less. |
 
 ## Used in
 

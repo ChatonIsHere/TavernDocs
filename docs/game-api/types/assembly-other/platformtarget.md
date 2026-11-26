@@ -1,6 +1,6 @@
 ---
 title: "PlatformTarget"
-description: "PC = 1, Quest = 2 (flags, in Alta.Platform.dll)."
+description: "Flags for which platforms something targets: PC and Quest."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Alta.Platform`, no namespace.
 
-`PC = 1`, `Quest = 2` (flags, in `Alta.Platform.dll`). The client sends it in its join request.
+Flags for which platforms something targets: `PC` and `Quest`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Attributes** `Flags`

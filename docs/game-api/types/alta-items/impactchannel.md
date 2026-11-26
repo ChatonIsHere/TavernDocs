@@ -31,9 +31,9 @@ Asset naming a damage channel that impactors can deal on.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-popupcolor" /><code>{"private Color popUpColor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-popupcolor" /><code>{"private Color popUpColor"}</code> | Backing field for `PopupColor`. Grey by default. |
 
 </details>
 

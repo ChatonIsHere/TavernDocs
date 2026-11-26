@@ -1,6 +1,6 @@
 ---
 title: "IAutoSave"
-description: "Add yours to StreamerManager.AutoSavingBehaviours to run in every world save."
+description: "Something that saves itself during the world's regular save."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
-Add yours to `StreamerManager.AutoSavingBehaviours` to run in every world save.
+Something that saves itself during the world's regular save. `StreamerManager` calls every entry in `AutoSavingBehaviours` before saving players. Server.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`GameTaskManager`](/game-api/types/global-e-h/gametaskmanager), [`PerPlayerManager<TThis, TContent, TSaveFormat>`](/game-api/types/global-p/perplayermanager-tthis-tcontent-tsaveformat)
@@ -20,9 +20,9 @@ Add yours to `StreamerManager.AutoSavingBehaviours` to run in every world save.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autosave" /><code>{"void AutoSave()"}</code> | Saves this object's data. Called by `StreamerManager` during each world save. |
 
 ## Used in
 

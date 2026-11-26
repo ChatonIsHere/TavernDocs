@@ -36,9 +36,9 @@ A user as returned by the Alta web API: id and username. Equal when the ids matc
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-api-datatransfermodels-models-responses-inamedentity-name" /><code>{"private string Alta.Api.DataTransferModels.Models.Responses.INamedEntity.Name { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-api-datatransfermodels-models-responses-inamedentity-name" /><code>{"private string Alta.Api.DataTransferModels.Models.Responses.INamedEntity.Name { get; }"}</code> | Returns `Username`, so a `UserInfo` can be shown wherever a named entity is expected. |
 
 </details>
 

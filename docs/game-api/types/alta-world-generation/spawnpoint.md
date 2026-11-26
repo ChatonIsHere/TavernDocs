@@ -28,10 +28,10 @@ A position and rotation a population can spawn at, with a free flag and an optio
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isfree" /><code>{"private bool isFree"}</code> |
-| <Link id="m-occupieduntil" /><code>{"private float occupiedUntil"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isfree" /><code>{"private bool isFree"}</code> | Whether nothing is assigned to this point. `IsFree` also needs `occupiedUntil` to have passed. |
+| <Link id="m-occupieduntil" /><code>{"private float occupiedUntil"}</code> | Real time until which the point stays taken after its entity died. 0 when not held. |
 
 </details>
 

@@ -31,13 +31,13 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |
-| <Link id="m-filesystemwatcher" /><code>{"private FileSystemWatcher fileSystemWatcher"}</code> |
-| <Link id="m-isdummysettings" /><code>{"private readonly bool isDummySettings"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-settings" /><code>{"private TSettings settings"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> | The settings file (on disk, or a database settings file). |
+| <Link id="m-filesystemwatcher" /><code>{"private FileSystemWatcher fileSystemWatcher"}</code> | Watcher for changes to the settings file. |
+| <Link id="m-isdummysettings" /><code>{"private readonly bool isDummySettings"}</code> | True for the no-file constructor: settings live in memory only and saving does nothing. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-settings" /><code>{"private TSettings settings"}</code> | The loaded settings; read through `Settings`, which waits for a pending read to finish. |
 
 </details>
 
@@ -50,9 +50,9 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-core-settings-isettingsfileaccess-basesettings" /><code>{"private ISettings Alta.Core.Settings.ISettingsFileAccess.BaseSettings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-core-settings-isettingsfileaccess-basesettings" /><code>{"private ISettings Alta.Core.Settings.ISettingsFileAccess.BaseSettings { get; }"}</code> | The loaded settings as plain `ISettings`. |
 
 </details>
 
@@ -78,12 +78,12 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-createwatcher" /><code>{"private void CreateWatcher("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string fileName)"}</code> |
-| <Link id="m-loaddefaults" /><code>{"private void LoadDefaults(string name)"}</code> |
-| <Link id="m-onfilechanged" /><code>{"private void OnFileChanged(object sender, FileSystemEventArgs e)"}</code> |
-| <Link id="m-startread" /><code>{"private async void StartRead()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createwatcher" /><code>{"private void CreateWatcher("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string fileName)"}</code> | Watches the settings file on disk so edits to it are reloaded. |
+| <Link id="m-loaddefaults" /><code>{"private void LoadDefaults(string name)"}</code> | Loads defaults from a `Resources` text asset named after the file plus `_Defaults`, or a new instance if there is none. |
+| <Link id="m-onfilechanged" /><code>{"private void OnFileChanged(object sender, FileSystemEventArgs e)"}</code> | File watcher handler that reloads the file when it is written. |
+| <Link id="m-startread" /><code>{"private async void StartRead()"}</code> | Reads the file into the settings; if there is no file yet, writes the defaults. Then raises `SettingsChanged`. |
 
 </details>
 

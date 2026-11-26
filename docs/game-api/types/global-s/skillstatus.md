@@ -1,6 +1,6 @@
 ---
 title: "SkillStatus"
-description: "The Testing values mean the player is practising that orb."
+description: "Whether a player can buy, sell or use a skill slot, from IsSlotAvailable on the progression manager and path experience: allowed, can't afford, owned, owned..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Root.Township`, no namespace.
 
-The `Testing` values mean the player is practising that orb.
+Whether a player can buy, sell or use a skill slot, from `IsSlotAvailable` on the progression manager and path experience: allowed, can't afford, owned, owned but locked by skills that depend on it, and testing variants.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Documented in** [Skills and unlocks](/game-api/game-systems/skills-and-unlocks)

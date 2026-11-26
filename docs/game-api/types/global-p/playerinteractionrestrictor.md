@@ -30,12 +30,12 @@ Limits how many times each player can use something per in-game day, such as tak
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-acceptsrefunds" /><code>{"private bool acceptsRefunds"}</code> |
-| <Link id="m-id" /><code>{"private int id"}</code> |
-| <Link id="m-interactionspercharge" /><code>{"private int interactionsPerCharge"}</code> |
-| <Link id="m-syncid" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncID"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-acceptsrefunds" /><code>{"private bool acceptsRefunds"}</code> | If false, `RefundInteractions` does nothing. |
+| <Link id="m-id" /><code>{"private int id"}</code> | Tracker ID in `PlayerInteractionManager`, saved with the entity. -1 until the server assigns one. |
+| <Link id="m-interactionspercharge" /><code>{"private int interactionsPerCharge"}</code> | Base number of interactions per charge, before the server's storage multiplier. Saved. |
+| <Link id="m-syncid" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncID"}</code> | Method sync on `SyncC` for the tracker ID and charge size. |
 
 </details>
 
@@ -66,14 +66,14 @@ Limits how many times each player can use something per in-game day, such as tak
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkupdated" /><code>{"private void CheckUpdated(int id)"}</code> |
-| <Link id="m-destroyclean" /><code>{"private void DestroyClean("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-onallowanceupdated" /><code>{"private void OnAllowanceUpdated()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> |
-| <Link id="m-syncid-2" /><code>{"private void SyncID("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkupdated" /><code>{"private void CheckUpdated(int id)"}</code> | Fires `AllowanceUpdated` when the manager updates the tracker with this restrictor's ID. |
+| <Link id="m-destroyclean" /><code>{"private void DestroyClean("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Server: unhooks from server settings changes when the entity is destroyed. |
+| <Link id="m-onallowanceupdated" /><code>{"private void OnAllowanceUpdated()"}</code> | Fires `AllowanceUpdated`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from `PlayerInteractionManager` events. |
+| <Link id="m-settingschanged" /><code>{"private void SettingsChanged(Settings obj)"}</code> | Server: reapplies the charge size with the new `CommunityStorageMultiplier` and resyncs it. |
+| <Link id="m-syncid-2" /><code>{"private void SyncID("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Method sync sending the tracker ID and the charge size scaled by the server's `CommunityStorageMultiplier`. Remote clients apply them. |
 
 </details>
 

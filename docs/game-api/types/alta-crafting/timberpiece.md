@@ -30,25 +30,25 @@ One piece of a carpentry timber block that tilts away as it is chiselled until i
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baselocalposition" /><code>{"private Vector3 baseLocalPosition"}</code> |
-| <Link id="m-currenthittingdirection" /><code>{"private Vector3 currentHittingDirection"}</code> |
-| <Link id="m-damagemultiplieroverchiseldistance" /><code>{"private AnimationCurve damageMultiplierOverChiselDistance"}</code> |
-| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> |
-| <Link id="m-health" /><code>{"private float health"}</code> |
-| <Link id="m-inversedup" /><code>{"private bool inversedUp"}</code> |
-| <Link id="m-leniencyoverprogress" /><code>{"private AnimationCurve leniencyOverProgress"}</code> |
-| <Link id="m-maxprogressonfirsthit" /><code>{"private float maxProgressOnFirstHit"}</code> |
-| <Link id="m-maxprogressonrotate" /><code>{"private float maxProgressOnRotate"}</code> |
-| <Link id="m-maxrotationfrompivot" /><code>{"private float maxRotationFromPivot"}</code> |
-| <Link id="m-pivottingdirection" /><code>{"private Vector3 pivottingDirection"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
-| <Link id="m-progressiontoangle" /><code>{"private AnimationCurve progressionToAngle"}</code> |
-| <Link id="m-recedingchiselpoint" /><code>{"private AnimationCurve recedingChiselPoint"}</code> |
-| <Link id="m-rotationmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiece-rotationmodel">{"TimberPiece.RotationModel"}</Link>{" rotationModel"}</code> |
-| <Link id="m-size" /><code>{"private Vector3 size"}</code> |
-| <Link id="m-timberblock" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" timberBlock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baselocalposition" /><code>{"private Vector3 baseLocalPosition"}</code> | The piece's local position before any chiseling, used as the base for the tilted pose. |
+| <Link id="m-currenthittingdirection" /><code>{"private Vector3 currentHittingDirection"}</code> | Direction of the first hit, in the parent's space; later hits can only turn the pivot so far from it. |
+| <Link id="m-damagemultiplieroverchiseldistance" /><code>{"private AnimationCurve damageMultiplierOverChiselDistance"}</code> | Curve that scales damage by the squared distance between the hit and the current chisel point. |
+| <Link id="m-filter" /><code>{"private MeshFilter filter"}</code> | The piece's `MeshFilter`, returned by `MeshFilter`. |
+| <Link id="m-health" /><code>{"private float health"}</code> | Toughness of the piece; damage is divided by this (and by the timber's material density when set). |
+| <Link id="m-inversedup" /><code>{"private bool inversedUp"}</code> | Whether the piece sits upside down on the block; flips the rotation axis, and flipping the block the other way knocks progress back. |
+| <Link id="m-leniencyoverprogress" /><code>{"private AnimationCurve leniencyOverProgress"}</code> | Curve that gives a minimum hit-direction leniency as progress grows. |
+| <Link id="m-maxprogressonfirsthit" /><code>{"private float maxProgressOnFirstHit"}</code> | Caps progress from the first hit so one strike can't finish the piece (0 turns it off). |
+| <Link id="m-maxprogressonrotate" /><code>{"private float maxProgressOnRotate"}</code> | Progress the piece drops back to when the block is flipped before the piece is done (default 0.2). |
+| <Link id="m-maxrotationfrompivot" /><code>{"private float maxRotationFromPivot"}</code> | How far, per unit of progress, a later hit can turn the pivot direction away from the first hit (radians). |
+| <Link id="m-pivottingdirection" /><code>{"private Vector3 pivottingDirection"}</code> | The direction the piece is being knocked over in, in the parent's space. Saved and synced. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | How far the piece is chiseled off, from 0 to 1; at 1 it is done. Backing field for `Progress`. |
+| <Link id="m-progressiontoangle" /><code>{"private AnimationCurve progressionToAngle"}</code> | Curve that maps progress to the tilt angle in degrees. |
+| <Link id="m-recedingchiselpoint" /><code>{"private AnimationCurve recedingChiselPoint"}</code> | Curve that moves the chisel point along the pivot direction as progress grows. |
+| <Link id="m-rotationmodel" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiece-rotationmodel">{"TimberPiece.RotationModel"}</Link>{" rotationModel"}</code> | Works out the rotation axis and pivot distance from the pivot direction and `size`. |
+| <Link id="m-size" /><code>{"private Vector3 size"}</code> | Dimensions of the piece, used to find the edge it pivots over. |
+| <Link id="m-timberblock" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock">{"TimberBlock"}</Link>{" timberBlock"}</code> | The block this piece belongs to; its physical material's density changes chisel toughness. |
 
 </details>
 
@@ -79,10 +79,10 @@ One piece of a carpentry timber block that tilts away as it is chiselled until i
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the current chisel point and the hitting direction. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: records the base local position while progress is zero, then reapplies `Progress` to update the pose. |
 
 </details>
 

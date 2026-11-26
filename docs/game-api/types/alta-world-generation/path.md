@@ -54,7 +54,7 @@ One direction of an `Edge` in the forest generator's node graph, with links to t
 | Member | What it is |
 | --- | --- |
 | <Link id="m-insidedot-2" /><code>{"private float InsideDot(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> | For a path sharing a node, dot between the corner's bisector and the direction to a position. Also outputs the corner's dot. |
-| <Link id="m-iswithin" /><code>{"private bool IsWithin(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> |  |
+| <Link id="m-iswithin" /><code>{"private bool IsWithin(Vector2 origin, Vector2 arm1, Vector2 arm2, Vector2 position, out float armsDot)"}</code> | True if a point lies inside the angle between two arms from an origin. Also returns the arms' dot product. |
 
 </details>
 

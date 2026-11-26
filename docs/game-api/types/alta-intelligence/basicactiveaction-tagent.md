@@ -34,10 +34,10 @@ Base for a running creature action: one go of an action on one agent, which ends
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-finishentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" finishEntry"}</code> |
-| <Link id="m-finishtime" /><code>{"private float finishTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-finishentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" finishEntry"}</code> | Timeline entry that calls `Finish` when the duration set by `SetDuration` runs out. Cancelled on finish or cancel. |
+| <Link id="m-finishtime" /><code>{"private float finishTime"}</code> | Reset to -1 on start but never read in this build. |
 
 </details>
 

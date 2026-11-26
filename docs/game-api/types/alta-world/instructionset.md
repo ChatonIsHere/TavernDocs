@@ -29,14 +29,14 @@ A cacheable list of world-generation instructions for one chunk. Forest generati
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-adding" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> adding"}</code> |
-| <Link id="m-instructions" /><code>{"private List<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> instructions"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader"}</code> |
-| <Link id="m-readeroffset" /><code>{"private uint readerOffset"}</code> |
-| <Link id="m-results" /><code>{"private List<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> results"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-adding" /><code>{"private ConcurrentQueue<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> adding"}</code> | Thread-safe queue of instructions added (possibly from generation threads) that are not yet in `instructions`. |
+| <Link id="m-instructions" /><code>{"private List<"}<Link to="/game-api/types/alta-world/instruction">{"Instruction"}</Link>{"> instructions"}</code> | Instructions held in memory. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader"}</code> | Cache stream the set was loaded from. Instructions are read from it lazily on execute or `GetInstructions`. |
+| <Link id="m-readeroffset" /><code>{"private uint readerOffset"}</code> | Bit position in `reader` where this set's data starts. |
+| <Link id="m-results" /><code>{"private List<"}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{"> results"}</code> | Backing field for `Results`: what each executed instruction made, so `Undo` can remove it. |
 
 </details>
 
@@ -61,9 +61,9 @@ A cacheable list of world-generation instructions for one chunk. Forest generati
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-executeinternal" /><code>{"private IEnumerator ExecuteInternal(object context, Task addingFinished, int instructionsPerFrame) (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-executeinternal" /><code>{"private IEnumerator ExecuteInternal(object context, Task addingFinished, int instructionsPerFrame) (iterator)"}</code> | Coroutine that runs the stored instructions in batches per frame, then any added later, then any still in a loaded stream. |
 
 </details>
 

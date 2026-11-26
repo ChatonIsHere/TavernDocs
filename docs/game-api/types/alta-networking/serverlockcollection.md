@@ -1,6 +1,6 @@
 ---
 title: "ServerLockCollection"
-description: "class ServerLockCollection in Root.Township."
+description: "The set of join locks on a server, held as ServerHandler.ServerLocks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerLockCollection
 
 A **class** in `Root.Township`, `Alta.Networking.Servers`.
+
+The set of join locks on a server, held as `ServerHandler.ServerLocks`. While any lock is in it, the server turns away joining players with the highest-level lock's message (used during wipes).
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `IEnumerable<ServerJoinLock>`, `IEnumerable`
@@ -27,33 +29,33 @@ A **class** in `Root.Township`, `Alta.Networking.Servers`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-locks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> locks"}</code> | The active locks. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-count" /><code>{"int Count { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"int Count { get; }"}</code> | Number of active locks; above zero means players can't join. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> |
-| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"bool Add("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | Adds a lock and logs it. Returns false if it was already there. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{"> GetEnumerator()"}</code> | Enumerates the active locks. |
+| <Link id="m-remove" /><code>{"bool Remove("}<Link to="/game-api/types/alta-networking/serverjoinlock">{"ServerJoinLock"}</Link>{" serverLock)"}</code> | Removes a lock and logs it. Returns false if it wasn't there. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the active locks. |
 
 </details>
 

@@ -29,17 +29,17 @@ One slot in a profession skill tree: a skill, its cost in points, and the slots 
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cost" /><code>{"private uint cost"}</code> |
-| <Link id="m-dependencies" /><code>{"private List<uint> dependencies"}</code> |
-| <Link id="m-hash" /><code>{"private uint hash"}</code> |
-| <Link id="m-indentlevel" /><code>{"private int indentLevel"}</code> |
-| <Link id="m-inheritslots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> inheritSlots"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> |
-| <Link id="m-sloticon" /><code>{"private Texture2D slotIcon"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cost" /><code>{"private uint cost"}</code> | Backing field for `Cost`: skill points needed to buy the slot. 1 by default. |
+| <Link id="m-dependencies" /><code>{"private List<uint> dependencies"}</code> | Backing field for `Dependencies`: hashes of slots that must be owned first. |
+| <Link id="m-hash" /><code>{"private uint hash"}</code> | Backing field for `Hash`. Made on validate from the skill's hash plus its dependencies' hashes (or a random number). |
+| <Link id="m-indentlevel" /><code>{"private int indentLevel"}</code> | Cached depth in the tree: one more than the deepest dependency. -1 until worked out. |
+| <Link id="m-inheritslots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> inheritSlots"}</code> | Backing field for `InheritSlots`: slots that depend on this one. Not serialized; filled by `AddInherit`. |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. Defaults to the skill's name. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`, the slot's place in the skill tree layout. |
+| <Link id="m-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill"}</code> | Backing field for `Skill`, the skill this slot grants. |
+| <Link id="m-sloticon" /><code>{"private Texture2D slotIcon"}</code> | Backing field for `SlotIcon`. |
 
 </details>
 

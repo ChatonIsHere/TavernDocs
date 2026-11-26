@@ -37,9 +37,9 @@ A weighted random table of assets, used by world and cave generation. Weights ca
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-globalmultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] globalMultipliers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-globalmultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] globalMultipliers"}</code> | Attribute curves that scale the overall chance of picking anything, based on the given attribute set. |
 
 </details>
 

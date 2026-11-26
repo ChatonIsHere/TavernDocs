@@ -31,10 +31,10 @@ A 3D grid of float values for one cave generator plugin over one map chunk, with
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |
-| <Link id="m-values" /><code>{"private float[,,] values"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> | Copied from the plugin. When false, `CreateAllNonZeroList` returns null. |
+| <Link id="m-values" /><code>{"private float[,,] values"}</code> | The layer's grid of values, padded by `LayerOverflowXZ` on X and Z. The indexer applies the offset. |
 
 </details>
 

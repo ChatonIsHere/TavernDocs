@@ -29,9 +29,9 @@ Options passed along when spawning an entity: whether it should run its procedur
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-empty" /><code>{"private static IEnumerable<string> empty"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-empty" /><code>{"private static IEnumerable<string> empty"}</code> | Shared empty string list used as the default `Arguments`. |
 
 </details>
 

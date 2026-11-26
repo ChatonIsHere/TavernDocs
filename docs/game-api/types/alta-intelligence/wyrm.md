@@ -30,19 +30,19 @@ The wyrm creature's AI agent. It switches between a burrowed and an emerged acti
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |
-| <Link id="m-burrowedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" burrowedActions"}</code> |
-| <Link id="m-emergedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergedActions"}</code> |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |
-| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |
-| <Link id="m-killedanimatortrigger" /><code>{"private string killedAnimatorTrigger"}</code> |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |
-| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> |
-| <Link id="m-syncgameobjects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncGameObjects"}</code> |
-| <Link id="m-wasidle" /><code>{"private bool wasIdle"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | Backing field for `Body`: the part that's shown when emerged and turned toward the target. |
+| <Link id="m-burrowedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" burrowedActions"}</code> | Action set used while burrowed. Built once per set and shared by all wyrms. |
+| <Link id="m-emergedactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergedActions"}</code> | Action set used while emerged. Built once per set and shared by all wyrms. |
+| <Link id="m-head" /><code>{"private Transform head"}</code> | Transform used as the wyrm's `Position`. |
+| <Link id="m-impactors" /><code>{"private "}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"[] impactors"}</code> | Impact generators whose current attacks `Attacks` returns. |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> | Animator bool set true on death. Defaults to `isDead`. |
+| <Link id="m-killedanimatortrigger" /><code>{"private string killedAnimatorTrigger"}</code> | Animator parameter set on death. Defaults to `Killed`; it's set with `SetBool`, not as a trigger. |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> | Degrees per second `RotateToTarget` turns the body, before the speed multiplier. |
+| <Link id="m-sametargetmultiplier" /><code>{"private float sameTargetMultiplier"}</code> | Backing field for `SameTargetMultiplier`. Defaults to 1.2. |
+| <Link id="m-syncgameobjects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncGameObjects"}</code> | Method sync for `SyncGameObjects`, sent on connect and when the body is shown or hidden. |
+| <Link id="m-wasidle" /><code>{"private bool wasIdle"}</code> | Whether the last action was idle, so `IdleStart` only resets when idling starts. |
 
 </details>
 
@@ -80,9 +80,9 @@ The wyrm creature's AI agent. It switches between a burrowed and an emerged acti
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-syncgameobjects-2" /><code>{"private void SyncGameObjects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-syncgameobjects-2" /><code>{"private void SyncGameObjects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool value)"}</code> | Syncs whether the wyrm's body and collision are shown; clients apply it. |
 
 </details>
 

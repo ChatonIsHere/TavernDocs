@@ -29,16 +29,16 @@ On a stew entity in a cooking pot: its tint and effect multipliers, and its own 
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseeffectsmultiplier" /><code>{"private float baseEffectsMultiplier"}</code> |
-| <Link id="m-baseliquideffectsmultiplier" /><code>{"private float baseLiquidEffectsMultiplier"}</code> |
-| <Link id="m-cookable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable"}</code> |
-| <Link id="m-extraeffectsmultiplier" /><code>{"private float extraEffectsMultiplier"}</code> |
-| <Link id="m-isawardingexperiencestage" /><code>{"private bool isAwardingExperienceStage"}</code> |
-| <Link id="m-liquidvisualdata" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> |
-| <Link id="m-stewcreatedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewCreatedEffect"}</code> |
-| <Link id="m-tintcolor" /><code>{"private Color tintColor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseeffectsmultiplier" /><code>{"private float baseEffectsMultiplier"}</code> | Backing field for `BaseEffectsMultiplier`, applied to the effects of the stew's ingredients. |
+| <Link id="m-baseliquideffectsmultiplier" /><code>{"private float baseLiquidEffectsMultiplier"}</code> | Backing field for `BaseLiquidEffectsMultiplier`, applied to the effects of the liquid base. |
+| <Link id="m-cookable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookable">{"Cookable"}</Link>{" cookable"}</code> | Backing field for `Cookable`. Null on the final stage. |
+| <Link id="m-extraeffectsmultiplier" /><code>{"private float extraEffectsMultiplier"}</code> | Backing field for `ExtraEffectsMultiplier`, applied to the recipe's extra effects. |
+| <Link id="m-isawardingexperiencestage" /><code>{"private bool isAwardingExperienceStage"}</code> | Backing field for `IsAwardingExperienceStage`. |
+| <Link id="m-liquidvisualdata" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidvisualdata">{"LiquidVisualData"}</Link>{" liquidVisualData"}</code> | Backing field for `LiquidVisualData`. |
+| <Link id="m-stewcreatedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stewCreatedEffect"}</code> | Backing field for `StewCreatedEffect`. |
+| <Link id="m-tintcolor" /><code>{"private Color tintColor"}</code> | Backing field for `TintColor`. Defaults to white. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "ItemForgedEvent"
-description: "the player and the prefab hash"
+description: "Township event bus event broadcast when a player forges an item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
-the player and the prefab hash
+Township event bus event broadcast when a player forges an item. Server (and local test).
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`IPlayerEvent`](/game-api/types/game-other-namespaces/iplayerevent), [`IEventBusEventData`](/game-api/types/game-other-namespaces/ieventbuseventdata)
@@ -26,7 +26,7 @@ the player and the prefab hash
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-itemhash" /><code>{"uint ItemHash { get; }"}</code> |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-itemhash" /><code>{"uint ItemHash { get; }"}</code> | Prefab hash of the forged item. |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> | The last player to interact with the item, may be null. |

@@ -1,6 +1,6 @@
 ---
 title: "StreamReader"
-description: "class StreamReader in Alta.Serialization.Runtime."
+description: "A Stream that reads bits from a uint buffer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StreamReader
 
 A **class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
+
+A `Stream` that reads bits from a `uint` buffer. Used on both sides to read network messages and saves; the same serialize calls that write with `StreamWriter` read with this.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`Stream`](/game-api/types/assembly-other/stream)
@@ -37,36 +39,36 @@ A **class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/bitreader">{"BitReader"}</Link>{" reader"}</code> |
-| <Link id="m-stringbuffer" /><code>{"private static byte[] stringBuffer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-reader" /><code>{"private "}<Link to="/game-api/types/assembly-other/bitreader">{"BitReader"}</Link>{" reader"}</code> | The underlying bit reader. |
+| <Link id="m-stringbuffer" /><code>{"private static byte[] stringBuffer"}</code> | Static shared buffer for string reads, doubled when a string is bigger. Not thread safe. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> |
-| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> |
-| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bitindex" /><code>{"override uint BitIndex { get; }"}</code> | Number of bits read so far. |
+| <Link id="m-isfinished" /><code>{"bool IsFinished { get; }"}</code> | True once fewer than 8 bits are left to read. |
+| <Link id="m-totalbytecount" /><code>{"override uint TotalByteCount { get; }"}</code> | Size of the data in bytes. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-align" /><code>{"override void Align()"}</code> |
-| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> |
-| <Link id="m-clone" /><code>{"override object Clone()"}</code> |
-| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> |
-| <Link id="m-initialize" /><code>{"void Initialize(uint[] data, int newSize)"}</code> |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |
-| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> |
-| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> |
-| <Link id="m-tobytes" /><code>{"byte[] ToBytes()"}</code> |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
-| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-align" /><code>{"override void Align()"}</code> | Skips to the next byte boundary. |
+| <Link id="m-backtrack" /><code>{"override void BackTrack(uint bitCount)"}</code> | Moves the read position back by the given number of bits. |
+| <Link id="m-clone" /><code>{"override object Clone()"}</code> | Returns a new reader over a copy of this reader's state. |
+| <Link id="m-dispose" /><code>{"override void Dispose()"}</code> | Clears the bit reader and drops it. The reader can't be used afterwards. |
+| <Link id="m-initialize" /><code>{"void Initialize(uint[] data, int newSize)"}</code> | Points the reader at a new buffer and byte count. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Moves the read position back to the start. |
+| <Link id="m-serializebits" /><code>{"override void SerializeBits(ref uint value, int bitCount)"}</code> | Reads the given number of bits into the value. |
+| <Link id="m-serializestring" /><code>{"override void SerializeString(ref string value, "}<Link to="/game-api/types/assembly-other/stream-stringencoding">{"Stream.StringEncoding"}</Link>{" encoding = 0)"}</code> | Reads a 16-bit length then that many aligned bytes, decoded as ASCII or UTF-8. |
+| <Link id="m-tobytes" /><code>{"byte[] ToBytes()"}</code> | Copies the whole buffer out as a byte array. |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | Destructor: calls `Dispose` if it hasn't run. |
+| <Link id="m-serializebytes" /><code>{"protected override void SerializeBytes(byte[] value, int byteCount)"}</code> | Reads raw bytes into the array. |
 
 ## Used in
 

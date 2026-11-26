@@ -29,14 +29,14 @@ A physical lever `Trigger`: reads the handle's X rotation each physics step and 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> |
-| <Link id="m-handle" /><code>{"private Transform handle"}</code> |
-| <Link id="m-handlerigidbody" /><code>{"private Rigidbody handleRigidbody"}</code> |
-| <Link id="m-isforcedon" /><code>{"private bool isForcedOn"}</code> |
-| <Link id="m-rangemax" /><code>{"private float rangeMax"}</code> |
-| <Link id="m-rangemin" /><code>{"private float rangeMin"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> | Backing field for `Value`. |
+| <Link id="m-handle" /><code>{"private Transform handle"}</code> | Transform whose local X rotation is read as the lever angle. |
+| <Link id="m-handlerigidbody" /><code>{"private Rigidbody handleRigidbody"}</code> | Handle rigidbody; nothing is read while it sleeps. |
+| <Link id="m-isforcedon" /><code>{"private bool isForcedOn"}</code> | Not used by this class. |
+| <Link id="m-rangemax" /><code>{"private float rangeMax"}</code> | Angle in degrees where `Value` reaches 1. Defaults to -40. |
+| <Link id="m-rangemin" /><code>{"private float rangeMin"}</code> | Angle in degrees where `Value` is 0. Defaults to -60. |
 
 </details>
 
@@ -57,9 +57,9 @@ A physical lever `Trigger`: reads the handle's X rotation each physics step and 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | While the handle is awake, maps its X angle to `Value` and sets the trigger on when it's between the range limits. |
 
 </details>
 

@@ -30,12 +30,12 @@ The player state while dead. The server logs the killer, drops or destroys held 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" animationCoroutine"}</code> |
-| <Link id="m-handledeathcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" handleDeathCoroutine"}</code> |
-| <Link id="m-hands" /><code>{"private Transform[] hands"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" animationCoroutine"}</code> | Client: the running death animation, stopped when the state ends. |
+| <Link id="m-handledeathcoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" handleDeathCoroutine"}</code> | Server: the running `WaitForRespawnOnServer` coroutine. |
+| <Link id="m-hands" /><code>{"private Transform[] hands"}</code> | The two hand transforms freed from IK when the body falls. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
 
 </details>
 
@@ -50,9 +50,9 @@ The player state while dead. The server logs the killer, drops or destroys held 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/deadstatesettings">{"DeadStateSettings"}</Link>{" Settings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/deadstatesettings">{"DeadStateSettings"}</Link>{" Settings { get; }"}</code> | The state's `DeadStateSettings` (timings, stats to reset, drag). |
 
 </details>
 
@@ -70,12 +70,12 @@ The player state while dead. The server logs the killer, drops or destroys held 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatebodywithkillingblow" /><code>{"private void AnimateBodyWithKillingBlow("}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" body)"}</code> |
-| <Link id="m-destroypickups" /><code>{"private void DestroyPickups()"}</code> |
-| <Link id="m-droppickups" /><code>{"private void DropPickups()"}</code> |
-| <Link id="m-respawn" /><code>{"private void Respawn()"}</code> |
-| <Link id="m-waitforrespawnonserver" /><code>{"private IEnumerator WaitForRespawnOnServer() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatebodywithkillingblow" /><code>{"private void AnimateBodyWithKillingBlow("}<Link to="/game-api/types/alta-player/bodycontroller">{"BodyController"}</Link>{" body)"}</code> | Adds rigidbodies to the body and hands and pushes them along the killing hit's direction (or head forward). |
+| <Link id="m-destroypickups" /><code>{"private void DestroyPickups()"}</code> | Server: when drop on death is off, destroys items in the player's docks and held items that would be saved. |
+| <Link id="m-droppickups" /><code>{"private void DropPickups()"}</code> | Server: when `DropAllOnDeath` is on, forces both hands to let go and undocks everything above the player's head. |
+| <Link id="m-respawn" /><code>{"private void Respawn()"}</code> | Server: destroys the old player controller and entities, then transitions to the playing state. |
+| <Link id="m-waitforrespawnonserver" /><code>{"private IEnumerator WaitForRespawnOnServer() (iterator)"}</code> | Server coroutine: waits the fog and respawn time, tells the client to fade, waits the fade, then respawns. |
 
 </details>

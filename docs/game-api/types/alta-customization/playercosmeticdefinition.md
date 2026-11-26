@@ -30,13 +30,13 @@ A purchasable cosmetic asset: its category, pickup and visual prefab.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" pickup"}</code> |
-| <Link id="m-pickuptype" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" pickupType"}</code> |
-| <Link id="m-uiselectionboardscale" /><code>{"private float uiSelectionBoardScale"}</code> |
-| <Link id="m-visualprefab" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationvisual">{"CustomizationVisual"}</Link>{" visualPrefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> | Backing field for `Category`. Its setter only works in the editor, and as written it throws even after setting a valid category. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationpickup">{"CustomizationPickup"}</Link>{" pickup"}</code> | Pickup prefab used by `SpawnPickup`. |
+| <Link id="m-pickuptype" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpickuptype">{"CosmeticPickupType"}</Link>{" pickupType"}</code> | Backing field for `PickupType`. |
+| <Link id="m-uiselectionboardscale" /><code>{"private float uiSelectionBoardScale"}</code> | Backing field for `UISelectionBoardScale`. Defaults to 1. |
+| <Link id="m-visualprefab" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationvisual">{"CustomizationVisual"}</Link>{" visualPrefab"}</code> | Visual prefab returned by `GetVisual` and used for default arguments. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "ViewConeSense"
-description: "How far inside the creature's ViewCone the target is."
+description: "Sense asset giving where a target sits in the creature's view cone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-How far inside the creature's `ViewCone` the target is. Only for creatures with `IHasViewCone` (turabada, gotera, babu, dragonfly, phantom).
+Sense asset giving where a target sits in the creature's view cone. The creature must implement `IHasViewCone`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Sense`](/game-api/types/alta-intelligence/sense)
@@ -28,6 +28,6 @@ How far inside the creature's `ViewCone` the target is. Only for creatures with 
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | The view cone ratio for the target's position, as `ViewCone.Contains` reports it. |

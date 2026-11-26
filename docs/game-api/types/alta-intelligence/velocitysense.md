@@ -1,6 +1,6 @@
 ---
 title: "VelocitySense"
-description: "target.GetVelocity(), which is always 0."
+description: "Sense asset meant to give a target's speed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
 
-`target.GetVelocity()`, which is always 0. No shipped sense uses it: "Velocity" is a `BasicSense`.
+Sense asset meant to give a target's speed. Every target returns 0 in this build, since nothing overrides `GetVelocity`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Sense`](/game-api/types/alta-intelligence/sense)
@@ -28,6 +28,6 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-get" /><code>{"override float Get("}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" requester, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | The target's `GetVelocity`, which is always 0 in this build. |

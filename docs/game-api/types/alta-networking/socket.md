@@ -29,13 +29,13 @@ The game's network socket over a transport: holds all connections, pumps receivi
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-connectionmap" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connectionMap"}</code> |
-| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> |
-| <Link id="m-connectionstart" /><code>{"private int connectionStart"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-packetreceiver" /><code>{"private "}<Link to="/game-api/types/alta-networking/ipacketreceiver">{"IPacketReceiver"}</Link>{" packetReceiver"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connectionmap" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connectionMap"}</code> | Connections by transport connection ID. |
+| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> | All live connections. |
+| <Link id="m-connectionstart" /><code>{"private int connectionStart"}</code> | Rotating start index so each frame's send begins with a different connection. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
+| <Link id="m-packetreceiver" /><code>{"private "}<Link to="/game-api/types/alta-networking/ipacketreceiver">{"IPacketReceiver"}</Link>{" packetReceiver"}</code> | Server or client packet receiver; null until the socket is serving or connected. |
 
 </details>
 
@@ -80,10 +80,10 @@ The game's network socket over a transport: holds all connections, pumps receivi
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onconnectioncreated" /><code>{"private void OnConnectionCreated("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-onconnectiondestroyed" /><code>{"private void OnConnectionDestroyed("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-ontransportsocketerror" /><code>{"private void OnTransportSocketError("}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" error)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onconnectioncreated" /><code>{"private void OnConnectionCreated("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Raises `ConnectionCreated`. |
+| <Link id="m-onconnectiondestroyed" /><code>{"private void OnConnectionDestroyed("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Raises `ConnectionDestroyed`. |
+| <Link id="m-ontransportsocketerror" /><code>{"private void OnTransportSocketError("}<Link to="/game-api/types/assembly-other/altanetworkerror">{"AltaNetworkError"}</Link>{" error)"}</code> | Server: counts each transport error by type in the `NetworkManager` error counters. |
 
 </details>

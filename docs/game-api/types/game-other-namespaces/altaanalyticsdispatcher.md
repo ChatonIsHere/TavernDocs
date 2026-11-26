@@ -1,6 +1,6 @@
 ---
 title: "AltaAnalyticsDispatcher"
-description: "class AltaAnalyticsDispatcher in Root.Township."
+description: "Analytics dispatcher that posts each analytics event to the Alta API as a generic event with the logged-in user's ID."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaAnalyticsDispatcher
 
 A **class** in `Root.Township`, `ATT.Analytics`.
+
+Analytics dispatcher that posts each analytics event to the Alta API as a generic event with the logged-in user's ID. Runs off the main thread.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`AbstractAnalyticsDispatcher`](/game-api/types/assembly-other/abstractanalyticsdispatcher), `IIsolate`
@@ -28,11 +30,11 @@ A **class** in `Root.Township`, `ATT.Analytics`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-stringbuilder" /><code>{"private static readonly StringBuilder stringBuilder"}</code> |
-| <Link id="m-userid" /><code>{"private static int userId"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-stringbuilder" /><code>{"private static readonly StringBuilder stringBuilder"}</code> | Shared builder used by `LogPretty`. |
+| <Link id="m-userid" /><code>{"private static int userId"}</code> | Cached user ID, -1 until read. |
 
 </details>
 
@@ -41,25 +43,25 @@ A **class** in `Root.Township`, `ATT.Analytics`.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-userid-2" /><code>{"private static int UserId { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-userid-2" /><code>{"private static int UserId { get; }"}</code> | Logged-in user's ID, cached after the first read until logout. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-onanalyticsevent" /><code>{"protected override void OnAnalyticsEvent("}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onanalyticsevent" /><code>{"protected override void OnAnalyticsEvent("}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | Sends the event on a background task. |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-loggedout" /><code>{"private static void LoggedOut()"}</code> |
-| <Link id="m-logpretty" /><code>{"private static void LogPretty(string dataName, Dictionary<string, object> props)"}</code> |
-| <Link id="m-senddata" /><code>{"private static async Task SendData("}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loggedout" /><code>{"private static void LoggedOut()"}</code> | Clears the cached user ID when the user logs out. |
+| <Link id="m-logpretty" /><code>{"private static void LogPretty(string dataName, Dictionary<string, object> props)"}</code> | Logs the sent event name and its properties at debug level. |
+| <Link id="m-senddata" /><code>{"private static async Task SendData("}<Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" data)"}</code> | Turns the event's properties into a dictionary and posts it with `PostGenericEventAsync`. Errors are logged. |
 
 </details>

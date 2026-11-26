@@ -1,6 +1,6 @@
 ---
 title: "PopulationItemSpawnHandler"
-description: "delegate PopulationItemSpawnHandler in Root.Township."
+description: "Handler for PopulationSample.NewEntitySpawned: called with the population and the entity it just spawned."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationItemSpawnHandler
 
 A **delegate** in `Root.Township`, `Alta.Populations`.
+
+Handler for `PopulationSample.NewEntitySpawned`: called with the population and the entity it just spawned.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MulticastDelegate`

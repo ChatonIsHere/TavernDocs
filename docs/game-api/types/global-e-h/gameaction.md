@@ -31,11 +31,11 @@ Asset for a tracked player action (docking an item, destroying something and so 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-stattype" /><code>{"private "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" statType"}</code> |
-| <Link id="m-targetsceneindex" /><code>{"private int targetSceneIndex"}</code> |
-| <Link id="m-targetsceneindexes" /><code>{"private int[] targetSceneIndexes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stattype" /><code>{"private "}<Link to="/game-api/types/global-s/stattype">{"StatType"}</Link>{" statType"}</code> | Backing field for `StatType`. |
+| <Link id="m-targetsceneindex" /><code>{"private int targetSceneIndex"}</code> | Single scene index (-1 for all scenes). Not read anywhere; `ValidateScene` uses `targetSceneIndexes`. |
+| <Link id="m-targetsceneindexes" /><code>{"private int[] targetSceneIndexes"}</code> | Scene indexes the action counts in. Empty means every scene. Read by `ValidateScene`. |
 
 </details>
 

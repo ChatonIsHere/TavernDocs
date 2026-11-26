@@ -29,11 +29,11 @@ One square of a cave generator's map. It holds a `MapChunkLayer` per plugin, run
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-displays" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> displays"}</code> |
-| <Link id="m-generationthread" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" generationThread"}</code> |
-| <Link id="m-layers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{"> layers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displays" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{"> displays"}</code> | Backing field for `Displays`: displays spawned by `Render`. |
+| <Link id="m-generationthread" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/chunkthread">{"ChunkThread"}</Link>{" generationThread"}</code> | Background thread generating this chunk's layers. Null once it finishes. |
+| <Link id="m-layers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{"> layers"}</code> | One layer of values per plugin, added by `AddLayer` and read by `GetLayer`. |
 
 </details>
 
@@ -65,10 +65,10 @@ One square of a cave generator's map. It holds a `MapChunkLayer` per plugin, run
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Aborts a running generation thread and releases its layers and displays. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Waits for the generation thread to finish, then turns itself off and asks the generator to render the chunk. |
 
 </details>
 

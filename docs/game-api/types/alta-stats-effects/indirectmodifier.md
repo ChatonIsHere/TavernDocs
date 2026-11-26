@@ -34,12 +34,12 @@ A stat modifier whose value follows a curve over a number of ticks, scaled by a 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> |
-| <Link id="m-duration" /><code>{"private uint duration"}</code> |
-| <Link id="m-tick" /><code>{"private uint tick"}</code> |
-| <Link id="m-valueoverduration" /><code>{"private "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basevalue" /><code>{"private float baseValue"}</code> | Value the curve is multiplied by. |
+| <Link id="m-duration" /><code>{"private uint duration"}</code> | Length in ticks; `Finished` fires on the tick that reaches it. |
+| <Link id="m-tick" /><code>{"private uint tick"}</code> | Ticks run so far, one per `Update`. Saved, so the modifier can resume. |
+| <Link id="m-valueoverduration" /><code>{"private "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> | Curve from progress (0 to 1) to a factor of `baseValue`. `Changed` only fires when the value moves by more than 0.1. |
 
 </details>
 

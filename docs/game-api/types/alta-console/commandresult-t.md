@@ -1,6 +1,6 @@
 ---
 title: "CommandResult<T>"
-description: "For an object result, Log() serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game."
+description: "A console command result carrying a typed value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Console`.
 
-For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game.
+A console command result carrying a typed value. Logs the value as text, a table or JSON depending on the type and the command's settings.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** [`CommandResult`](/game-api/types/alta-console/commandresult)
@@ -28,14 +28,14 @@ For an object result, `Log()` serializes it to JSON and, in the same line, copie
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> |
-| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-result" /><code>{"T Result { get; set; }"}</code> | The value the command returned. |
+| <Link id="m-resultstring" /><code>{"override string ResultString { get; }"}</code> | The result's `ToString()`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-log" /><code>{"override void Log()"}</code> |
-| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-log" /><code>{"override void Log()"}</code> | Traces the result: strings as is, lists or objects as a table if the command asks for that, otherwise as JSON (also copied to the clipboard). |
+| <Link id="m-logobjectsvaluesastable" /><code>{"void LogObjectsValuesAsTable()"}</code> | Traces the result's public properties as a name and value table. |

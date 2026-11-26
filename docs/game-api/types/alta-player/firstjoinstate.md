@@ -1,6 +1,6 @@
 ---
 title: "FirstJoinState"
-description: "class FirstJoinState in Root.Township."
+description: "The state a player starts in on their first join."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FirstJoinState
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+The state a player starts in on their first join. Its only job is to move them on to customization or straight to playing.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`PlayerStateBase`](/game-api/types/alta-player/playerstatebase)
@@ -25,13 +27,13 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> |
-| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"override string Name { get; set; }"}</code> | "First Join State". |
+| <Link id="m-statetype" /><code>{"override "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" StateType { get; }"}</code> | `PlayerStateType.FirstJoin`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-validatestateactivation" /><code>{"override bool ValidateStateActivation(bool isDuringSaving)"}</code> | Triggers the move to customization for normal players when the server has customization on and not skipped, otherwise to playing. |

@@ -1,6 +1,6 @@
 ---
 title: "ActiveAttackDirectionReact"
-description: "class ActiveAttackDirectionReact in Root.Township."
+description: "Server: running action that drives an AttackDirectionCore (reacting to the direction a player attacks from) for a random duration while there's a target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActiveAttackDirectionReact
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Server: running action that drives an `AttackDirectionCore` (reacting to the direction a player attacks from) for a random duration while there's a target.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`BasicActiveAction<Agent, AgentAttackDirectionReactSettings>`](/game-api/types/alta-intelligence/basicactiveaction-tagent-tsettings)
@@ -27,24 +29,24 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectioncore">{"AttackDirectionCore"}</Link>{" core"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectioncore">{"AttackDirectionCore"}</Link>{" core"}</code> | The attack direction core in use, cleared when the action ends. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Updates the core each tick, or finishes if the target is gone. |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Sets a random duration, gets the core from the settings for this creature and hooks the end events. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-finishedorcanceled" /><code>{"private void FinishedOrCanceled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-finishedorcanceled" /><code>{"private void FinishedOrCanceled("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Disables the core for this creature when the action ends either way. |
 
 </details>

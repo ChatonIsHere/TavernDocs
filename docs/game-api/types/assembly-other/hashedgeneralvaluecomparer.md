@@ -1,6 +1,6 @@
 ---
 title: "HashedGeneralValueComparer"
-description: "Compares by hash."
+description: "Equality comparer that treats HashedGeneralValue assets as equal when their hashes match."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Values`, `Alta`.
 
-Compares by hash.
+Equality comparer that treats `HashedGeneralValue` assets as equal when their hashes match. Used for dictionaries keyed by stats and similar.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `IEqualityComparer<HashedGeneralValue>`
@@ -31,6 +31,6 @@ Compares by hash.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvaluecomparer">{"HashedGeneralValueComparer"}</Link>{" Instance { get; }"}</code> | The shared comparer. |

@@ -31,38 +31,38 @@ A material asset (iron, oak, copper and so on) that holds the heat, crafting, im
 <details>
 <summary>30 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |
-| <Link id="m-density" /><code>{"private float density"}</code> |
-| <Link id="m-durabilitymultiplier" /><code>{"private float durabilityMultiplier"}</code> |
-| <Link id="m-effectonfullyheated" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnFullyHeated"}</code> |
-| <Link id="m-firstisdoneimpacteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneImpactEffect"}</code> |
-| <Link id="m-firstisdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneMeshEffect"}</code> |
-| <Link id="m-followingdoneimpactseffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneImpactsEffect"}</code> |
-| <Link id="m-followingdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneMeshEffect"}</code> |
-| <Link id="m-forgemultiplier" /><code>{"private float forgeMultiplier"}</code> |
-| <Link id="m-glowingend" /><code>{"private float glowingEnd"}</code> |
-| <Link id="m-glowingstart" /><code>{"private float glowingStart"}</code> |
-| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> |
-| <Link id="m-internalthermalconductivity" /><code>{"private float internalThermalConductivity"}</code> |
-| <Link id="m-isshowinginlist" /><code>{"private bool isShowingInList"}</code> |
-| <Link id="m-material" /><code>{"private Material material"}</code> |
-| <Link id="m-materialchannels" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{"[] materialChannels"}</code> |
-| <Link id="m-maxcraftingdamagemultiplier" /><code>{"private float maxCraftingDamageMultiplier"}</code> |
-| <Link id="m-maxinvalidprojectilevelocitymultiplier" /><code>{"private float maxInvalidProjectileVelocityMultiplier"}</code> |
-| <Link id="m-maxtemperatureforparticles" /><code>{"private float maxTemperatureForParticles"}</code> |
-| <Link id="m-meltingpoint" /><code>{"private float meltingPoint"}</code> |
-| <Link id="m-minimumprojectileweight" /><code>{"private float minimumProjectileWeight"}</code> |
-| <Link id="m-nailhealthmultiplier" /><code>{"private float nailHealthMultiplier"}</code> |
-| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> |
-| <Link id="m-nondeformingmaterial" /><code>{"private Material nonDeformingMaterial"}</code> |
-| <Link id="m-receivethermalconductivity" /><code>{"private float receiveThermalConductivity"}</code> |
-| <Link id="m-sourcematerialhash" /><code>{"private uint sourceMaterialHash"}</code> |
-| <Link id="m-sourcethermalconductivity" /><code>{"private float sourceThermalConductivity"}</code> |
-| <Link id="m-tightnessbowimpact" /><code>{"private float tightnessBowImpact"}</code> |
-| <Link id="m-tightnessmultiplier" /><code>{"private float tightnessMultiplier"}</code> |
-| <Link id="m-weightmultiplier" /><code>{"private float weightMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> | Backing field for `DamageMultiplier`: damage multiplier for weapons and tools made of this material. |
+| <Link id="m-density" /><code>{"private float density"}</code> | Backing field for `Density`. The tooltip says it scales damage when chiselling wood on the chisel deck. |
+| <Link id="m-durabilitymultiplier" /><code>{"private float durabilityMultiplier"}</code> | Backing field for `DurabilityMultiplier`, used by durability modules. |
+| <Link id="m-effectonfullyheated" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectOnFullyHeated"}</code> | Backing field for `EffectOnFullyHeated`. |
+| <Link id="m-firstisdoneimpacteffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneImpactEffect"}</code> | Backing field for `FirstIsDoneImpactEffect`. |
+| <Link id="m-firstisdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstIsDoneMeshEffect"}</code> | Backing field for `FirstIsDoneMeshEffect`. |
+| <Link id="m-followingdoneimpactseffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneImpactsEffect"}</code> | Backing field for `FollowingDoneImpactsEffect`. |
+| <Link id="m-followingdonemesheffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" followingDoneMeshEffect"}</code> | Backing field for `FollowingDoneMeshEffect`. |
+| <Link id="m-forgemultiplier" /><code>{"private float forgeMultiplier"}</code> | Backing field for `ForgeMultiplier`: damage resistance when forging on an anvil. |
+| <Link id="m-glowingend" /><code>{"private float glowingEnd"}</code> | Backing field for `GlowingEnd`: temperature where the forged model's glow particles cap out. Default 1000. |
+| <Link id="m-glowingstart" /><code>{"private float glowingStart"}</code> | Backing field for `GlowingStart`: temperature where the forged model starts to glow. Default 100. |
+| <Link id="m-hardnesslevel" /><code>{"private uint hardnessLevel"}</code> | Backing field for `HardnessLevel`: the tier needed to damage other materials of equal or lower level. |
+| <Link id="m-internalthermalconductivity" /><code>{"private float internalThermalConductivity"}</code> | Backing field for `InternalThermalConductivity`, in W/m.k. |
+| <Link id="m-isshowinginlist" /><code>{"private bool isShowingInList"}</code> | Backing field for `IsShowingInList`. Default true. |
+| <Link id="m-material" /><code>{"private Material material"}</code> | Hidden inspector material that this class never reads; the per channel materials are used instead. |
+| <Link id="m-materialchannels" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{"[] materialChannels"}</code> | Per `PhysicalMaterialChannel` materials, so items of the same material can use different textures. |
+| <Link id="m-maxcraftingdamagemultiplier" /><code>{"private float maxCraftingDamageMultiplier"}</code> | Backing field for `MaxCraftingDamageMultiplier`: raises the break threshold of generic crafting nails. |
+| <Link id="m-maxinvalidprojectilevelocitymultiplier" /><code>{"private float maxInvalidProjectileVelocityMultiplier"}</code> | Backing field for `MaxInvalidProjectileVelocityMultiplier`: velocity multiplier for projectiles under the minimum weight. |
+| <Link id="m-maxtemperatureforparticles" /><code>{"private float maxTemperatureForParticles"}</code> | Backing field for `MaxTemperatureForParticles`. Default 1250. |
+| <Link id="m-meltingpoint" /><code>{"private float meltingPoint"}</code> | Backing field for `MeltingPoint`: the temperature at which the recycler consumes the item. |
+| <Link id="m-minimumprojectileweight" /><code>{"private float minimumProjectileWeight"}</code> | Backing field for `MinimumProjectileWeight`. Lighter projectiles can only fire up to max bow speed. Default -1. |
+| <Link id="m-nailhealthmultiplier" /><code>{"private float nailHealthMultiplier"}</code> | Backing field for `NailHealthMultiplier`: impact resistance when nailing a part made of this material. |
+| <Link id="m-noisemultiplier" /><code>{"private float noiseMultiplier"}</code> | Backing field for `NoiseMultiplier`: scales stat impact values on a pickup, like shield bashing. |
+| <Link id="m-nondeformingmaterial" /><code>{"private Material nonDeformingMaterial"}</code> | Hidden inspector material that this class never reads; the per channel materials are used instead. |
+| <Link id="m-receivethermalconductivity" /><code>{"private float receiveThermalConductivity"}</code> | Backing field for `ReceiveThermalConductivity`, in W/m.k. |
+| <Link id="m-sourcematerialhash" /><code>{"private uint sourceMaterialHash"}</code> | Backing field for `SourceMaterialHash`: a network prefab hash, probably the raw material this one comes from. |
+| <Link id="m-sourcethermalconductivity" /><code>{"private float sourceThermalConductivity"}</code> | Backing field for `SourceThermalConductivity`, in W/m.k. |
+| <Link id="m-tightnessbowimpact" /><code>{"private float tightnessBowImpact"}</code> | Backing field for `TightnessBowImpact`: how much tightness affects bow pull back speed. |
+| <Link id="m-tightnessmultiplier" /><code>{"private float tightnessMultiplier"}</code> | Backing field for `TightnessMultiplier`: changes a shooter's firing distance with arrows. |
+| <Link id="m-weightmultiplier" /><code>{"private float weightMultiplier"}</code> | Backing field for `WeightMultiplier`: multiplies a pickup's raw weight into its physical weight. |
 
 </details>
 
@@ -110,9 +110,9 @@ A material asset (iron, oak, copper and so on) that holds the heat, crafting, im
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getchannel" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{" GetChannel(int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getchannel" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial-materialchannel">{"PhysicalMaterial.MaterialChannel"}</Link>{" GetChannel(int index)"}</code> | Returns the material channel at an index, falling back to the first channel when the index is out of range. |
 
 </details>
 

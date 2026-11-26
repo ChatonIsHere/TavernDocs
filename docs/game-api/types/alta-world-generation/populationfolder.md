@@ -1,6 +1,6 @@
 ---
 title: "PopulationFolder"
-description: "class PopulationFolder in Root.Township."
+description: "The plain population folder: an entity that owns a population sample and saves which spawned children belong to which spawn point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationFolder
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+The plain population folder: an entity that owns a population sample and saves which spawned children belong to which spawn point.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`PopulationFolder<PopulationFolder, PopulationFolderSaveData>`](/game-api/types/alta-world-generation/populationfolder-tthis-tdata)

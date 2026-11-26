@@ -35,29 +35,29 @@ A timber block on a chiselling deck, carved in three stages (outer, inner, core)
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chiselledpieces" /><code>{"private "}<Link to="/game-api/types/alta-utilities/listenedlist-t">{"ListenedList"}</Link>{"<int> chiselledPieces"}</code> |
-| <Link id="m-collidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" colliderGroup"}</code> |
-| <Link id="m-corestage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-corestage">{"TimberBlock.CoreStage"}</Link>{" coreStage"}</code> |
-| <Link id="m-currentstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-stage">{"TimberBlock.Stage"}</Link>{" currentStage"}</code> |
-| <Link id="m-destroyingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" destroyingSound"}</code> |
-| <Link id="m-filters" /><code>{"private MeshFilter[] filters"}</code> |
-| <Link id="m-hittingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" hittingSound"}</code> |
-| <Link id="m-hittinpiece" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" hittinPiece"}</code> |
-| <Link id="m-innerstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-innerstage">{"TimberBlock.InnerStage"}</Link>{" innerStage"}</code> |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
-| <Link id="m-outerstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-outerstage">{"TimberBlock.OuterStage"}</Link>{" outerStage"}</code> |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |
-| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> |
-| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> |
-| <Link id="m-spawncraftposition" /><code>{"private Transform spawnCraftPosition"}</code> |
-| <Link id="m-spawneddefinition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawnedDefinition"}</code> |
-| <Link id="m-spawnedpickups" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"[] spawnedPickups"}</code> |
-| <Link id="m-stagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{", "}<Link to="/game-api/types/alta-crafting/timberblock-stage">{"TimberBlock.Stage"}</Link>{"> stageMap"}</code> |
-| <Link id="m-syncpickup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncPickup"}</code> |
-| <Link id="m-syncpieceeffects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncPieceEffects"}</code> |
-| <Link id="m-syncstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncStatus"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chiselledpieces" /><code>{"private "}<Link to="/game-api/types/alta-utilities/listenedlist-t">{"ListenedList"}</Link>{"<int> chiselledPieces"}</code> | Indexes of outer pieces finished, used to choose the chisel result. Cleared when the outer stage ends. |
+| <Link id="m-collidergroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" colliderGroup"}</code> | Backing field for `ColliderGroup`. |
+| <Link id="m-corestage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-corestage">{"TimberBlock.CoreStage"}</Link>{" coreStage"}</code> | The last stage. Finishing it releases the result and destroys the block. |
+| <Link id="m-currentstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-stage">{"TimberBlock.Stage"}</Link>{" currentStage"}</code> | The stage being chiselled now. `SetCurrent` on a stage changes it. |
+| <Link id="m-destroyingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" destroyingSound"}</code> | Sound played where a piece is fully chiselled away. |
+| <Link id="m-filters" /><code>{"private MeshFilter[] filters"}</code> | Mesh filters re-atlased for the block's material. |
+| <Link id="m-hittingsound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" hittingSound"}</code> | Sound set in the inspector. Not used by this class. |
+| <Link id="m-hittinpiece" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" hittinPiece"}</code> | Pooled effect set in the inspector. Not used by this class. |
+| <Link id="m-innerstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-innerstage">{"TimberBlock.InnerStage"}</Link>{" innerStage"}</code> | The middle stage, current after the outer stage ends. |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | Whether `Initialize` has run, so `Serialize`, save and load can run it first. |
+| <Link id="m-outerstage" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberblock-outerstage">{"TimberBlock.OuterStage"}</Link>{" outerStage"}</code> | The first stage. Its chiselled pieces decide the result. |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | Backing field for `PhysicalMaterial`. Applied to result pickups and saved. |
+| <Link id="m-renderers" /><code>{"private Renderer[] renderers"}</code> | Renderers given the block's material. |
+| <Link id="m-size" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselblocksize">{"ChiselBlockSize"}</Link>{" size"}</code> | Backing field for `Size`, used to pick a chisel definition. |
+| <Link id="m-spawncraftposition" /><code>{"private Transform spawnCraftPosition"}</code> | Transform the result pickups are spawned under and stage effects play at. |
+| <Link id="m-spawneddefinition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiseldefinition">{"ChiselDefinition"}</Link>{" spawnedDefinition"}</code> | The chisel definition whose result was spawned. Saved and synced. |
+| <Link id="m-spawnedpickups" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"[] spawnedPickups"}</code> | The result pickups held on the block until the core stage ends. |
+| <Link id="m-stagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/timberblock-stagelevel">{"TimberBlock.StageLevel"}</Link>{", "}<Link to="/game-api/types/alta-crafting/timberblock-stage">{"TimberBlock.Stage"}</Link>{"> stageMap"}</code> | Stages by level, filled when each stage initializes. |
+| <Link id="m-syncpickup" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncPickup"}</code> | Method sync for `SyncPickup`. |
+| <Link id="m-syncpieceeffects" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncPieceEffects"}</code> | Method sync for `SyncPieceEffects`. |
+| <Link id="m-syncstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncStatus"}</code> | Method sync for `SyncStatus`, sent on connect and when the stage changes. |
 
 </details>
 
@@ -92,18 +92,18 @@ A timber block on a chiselling deck, carved in three stages (outer, inner, core)
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-callpieceeffect" /><code>{"private void CallPieceEffect("}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{" piece)"}</code> |
-| <Link id="m-getresult" /><code>{"private void GetResult()"}</code> |
-| <Link id="m-handlesyncedpickup" /><code>{"private async void HandleSyncedPickup(uint identifier, int index, bool isAdding)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-releaseresult" /><code>{"private void ReleaseResult("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
-| <Link id="m-spawnresult" /><code>{"private void SpawnResult()"}</code> |
-| <Link id="m-syncpickup-2" /><code>{"private void SyncPickup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isAdding)"}</code> |
-| <Link id="m-syncpieceeffects-2" /><code>{"private void SyncPieceEffects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int pieceIndex)"}</code> |
-| <Link id="m-syncstatus-2" /><code>{"private void SyncStatus("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> |
-| <Link id="m-updatepickupcollision" /><code>{"private void UpdatePickupCollision("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isEnabling)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-callpieceeffect" /><code>{"private void CallPieceEffect("}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{" piece)"}</code> | Server sends the piece's state to chunks; non-headless sides play the destroy effect and sound when a piece reaches full progress. |
+| <Link id="m-getresult" /><code>{"private void GetResult()"}</code> | Server: picks the best chisel definition for the chiselled outer pieces and spawns its result. |
+| <Link id="m-handlesyncedpickup" /><code>{"private async void HandleSyncedPickup(uint identifier, int index, bool isAdding)"}</code> | Client: waits for a synced result pickup to spawn, then parents and freezes it on the block or releases it. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: destroys any result pickups still held on the block. |
+| <Link id="m-releaseresult" /><code>{"private void ReleaseResult("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Server: frees the held result pickups into the world, makes them saveable and reports the spawn task for the player. |
+| <Link id="m-spawnresult" /><code>{"private void SpawnResult()"}</code> | Spawns the chosen definition's pickups at `spawnCraftPosition`, frozen and non-interactable, in the block's material. |
+| <Link id="m-syncpickup-2" /><code>{"private void SyncPickup("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isAdding)"}</code> | Syncs whether result pickups are held, with the chisel definition and their entity ids. |
+| <Link id="m-syncpieceeffects-2" /><code>{"private void SyncPieceEffects("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int pieceIndex)"}</code> | Syncs one piece's state by index and plays its effect on the receiving side. |
+| <Link id="m-syncstatus-2" /><code>{"private void SyncStatus("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWritingFull)"}</code> | Syncs the block's physical material and stage state, applying the material on remote clients. |
+| <Link id="m-updatepickupcollision" /><code>{"private void UpdatePickupCollision("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isEnabling)"}</code> | Turns all colliders on a result pickup on or off. |
 
 </details>
 

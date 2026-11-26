@@ -34,39 +34,39 @@ The grabbing part of a hand. It finds `Interactable`s in its trigger, picks the 
 <details>
 <summary>31 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseposition" /><code>{"private Vector3 basePosition"}</code> |
-| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |
-| <Link id="m-collisionlayer" /><code>{"private int collisionLayer"}</code> |
-| <Link id="m-collisionmask" /><code>{"private int collisionMask"}</code> |
-| <Link id="m-grabassistcontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabassistcontroller">{"GrabAssistController"}</Link>{" grabAssistController"}</code> |
-| <Link id="m-haptic" /><code>{"private AnimationCurve haptic"}</code> |
-| <Link id="m-interactingwith" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactingWith"}</code> |
-| <Link id="m-interacttimeout" /><code>{"private float interactTimeout"}</code> |
-| <Link id="m-iscontrollerbased" /><code>{"private bool isControllerBased"}</code> |
-| <Link id="m-isduringinteractionstarted" /><code>{"private bool isDuringInteractionStarted"}</code> |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
-| <Link id="m-istimingoutinteractionattempt" /><code>{"private bool isTimingOutInteractionAttempt"}</code> |
-| <Link id="m-jointbreakdetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/jointbreakdetector">{"JointBreakDetector"}</Link>{" jointBreakDetector"}</code> |
-| <Link id="m-lastphysicstriggerposition" /><code>{"private Vector3 lastPhysicsTriggerPosition"}</code> |
-| <Link id="m-length" /><code>{"private float length"}</code> |
-| <Link id="m-localeuler" /><code>{"private Vector3 localEuler"}</code> |
-| <Link id="m-localoffset" /><code>{"private Vector3 localOffset"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-overlap" /><code>{"private readonly Collider[] overlap"}</code> |
-| <Link id="m-overridechannels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{"? overrideChannels"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-requesteehaptic" /><code>{"private AnimationCurve requesteeHaptic"}</code> |
-| <Link id="m-startofinteractattempt" /><code>{"private float startOfInteractAttempt"}</code> |
-| <Link id="m-syncconfirmationrequest" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncConfirmationRequest"}</code> |
-| <Link id="m-syncend" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{"> syncEnd"}</code> |
-| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{"> syncStart"}</code> |
-| <Link id="m-syncstartgrabpoint" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-e-h/grabpointarguments">{"GrabPointArguments"}</Link>{"> syncStartGrabPoint"}</code> |
-| <Link id="m-toggleholddelay" /><code>{"private bool toggleHoldDelay"}</code> |
-| <Link id="m-trigger" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{" trigger"}</code> |
-| <Link id="m-triggerobjecttransform" /><code>{"private Transform triggerObjectTransform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseposition" /><code>{"private Vector3 basePosition"}</code> | Declared but never used. |
+| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> | Declared but never used. |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> | The interaction channels this interactor works on, unless overridden. |
+| <Link id="m-collisionlayer" /><code>{"private int collisionLayer"}</code> | Layer of the trigger object. Used to build `collisionMask`. |
+| <Link id="m-collisionmask" /><code>{"private int collisionMask"}</code> | Layers the overlap check hits. Baked from `collisionLayer`. |
+| <Link id="m-grabassistcontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabassistcontroller">{"GrabAssistController"}</Link>{" grabAssistController"}</code> | The grab assist helper, present only for the local player when grab assist is on. |
+| <Link id="m-haptic" /><code>{"private AnimationCurve haptic"}</code> | Haptic curve played on a successful grab and on the holder's hand when someone asks to take the item. |
+| <Link id="m-interactingwith" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactingWith"}</code> | Backing field for `InteractingWith`. |
+| <Link id="m-interacttimeout" /><code>{"private float interactTimeout"}</code> | Seconds an interaction attempt stays valid when timeouts are on. Default 2. |
+| <Link id="m-iscontrollerbased" /><code>{"private bool isControllerBased"}</code> | Whether the trigger lives on a separate child object (hands) rather than a rigidbody on this object. |
+| <Link id="m-isduringinteractionstarted" /><code>{"private bool isDuringInteractionStarted"}</code> | Set while `StartInteract` runs, so a release during start can cancel it. |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> | Whether starts and ends are sent over the network and received ones applied. Default true. |
+| <Link id="m-istimingoutinteractionattempt" /><code>{"private bool isTimingOutInteractionAttempt"}</code> | Whether interaction attempts expire after `interactTimeout`. |
+| <Link id="m-jointbreakdetector" /><code>{"private "}<Link to="/game-api/types/global-i-l/jointbreakdetector">{"JointBreakDetector"}</Link>{" jointBreakDetector"}</code> | Detector whose joint break event ends the interaction. |
+| <Link id="m-lastphysicstriggerposition" /><code>{"private Vector3 lastPhysicsTriggerPosition"}</code> | Trigger position from the last physics step, the start of the overlap capsule. |
+| <Link id="m-length" /><code>{"private float length"}</code> | Trigger capsule length. Zero or less means a sphere. |
+| <Link id="m-localeuler" /><code>{"private Vector3 localEuler"}</code> | Local rotation of the trigger object. |
+| <Link id="m-localoffset" /><code>{"private Vector3 localOffset"}</code> | Local position of the trigger object. Mirrored for the right hand. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-overlap" /><code>{"private readonly Collider[] overlap"}</code> | Reused buffer of up to 10 colliders for the overlap check. |
+| <Link id="m-overridechannels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{"? overrideChannels"}</code> | Channels set by `SetOverrideInteractionChannels`; null uses `channels`. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Trigger radius, scaled by the object's scale. |
+| <Link id="m-requesteehaptic" /><code>{"private AnimationCurve requesteeHaptic"}</code> | Haptic curve played on the requesting hand while waiting for another player to let go. |
+| <Link id="m-startofinteractattempt" /><code>{"private float startOfInteractAttempt"}</code> | Time the current interaction attempt began, for the timeout. |
+| <Link id="m-syncconfirmationrequest" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncConfirmationRequest"}</code> | Network sync for the confirmation request message. |
+| <Link id="m-syncend" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{"> syncEnd"}</code> | Network sync for the interaction end message. |
+| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{"> syncStart"}</code> | Network sync for the interaction start message. |
+| <Link id="m-syncstartgrabpoint" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-e-h/grabpointarguments">{"GrabPointArguments"}</Link>{"> syncStartGrabPoint"}</code> | Network sync for the pickup grab point start message. |
+| <Link id="m-toggleholddelay" /><code>{"private bool toggleHoldDelay"}</code> | Blocks toggle hold for a moment after it was released. |
+| <Link id="m-trigger" /><code>{"private "}<Link to="/game-api/types/global-t-x/triggershape">{"TriggerShape"}</Link>{" trigger"}</code> | The sphere or capsule trigger whose `Entered` event feeds `AddOverlap`. |
+| <Link id="m-triggerobjecttransform" /><code>{"private Transform triggerObjectTransform"}</code> | Backing field for `TriggerObjectTransform`. |
 
 </details>
 
@@ -90,9 +90,9 @@ The grabbing part of a hand. It finds `Interactable`s in its trigger, picks the 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-hastimedout" /><code>{"private bool HasTimedOut { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hastimedout" /><code>{"private bool HasTimedOut { get; }"}</code> | True when `isTimingOutInteractionAttempt` is set and more than `interactTimeout` seconds have passed since the attempt began. |
 
 </details>
 
@@ -129,34 +129,34 @@ The grabbing part of a hand. It finds `Interactable`s in its trigger, picks the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addoverlap" /><code>{"private void AddOverlap(Collider collider)"}</code> |  |
-| <Link id="m-checkgrabassist" /><code>{"private bool CheckGrabAssist()"}</code> |  |
-| <Link id="m-clearassist" /><code>{"private void ClearAssist()"}</code> |  |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |  |
+| <Link id="m-addoverlap" /><code>{"private void AddOverlap(Collider collider)"}</code> | Handler for the trigger's `Entered` event: while the local player holds Interact, assesses the new interactable and grabs it if it scores. |
+| <Link id="m-checkgrabassist" /><code>{"private bool CheckGrabAssist()"}</code> | Runs the grab assist check when grab assist is on and not blocked; true if it handled the grab. |
+| <Link id="m-clearassist" /><code>{"private void ClearAssist()"}</code> | Disables and drops the `GrabAssistController`. Called when the grab assist setting is turned off and on destroy. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Records the trigger object's position each physics step, so the overlap capsule spans last step to now. |
 | <Link id="m-getcollideroverlap-2" /><code>{"private int GetColliderOverlap()"}</code> | Sweeps the hand's trigger since the last physics step and returns how many colliders it hit, with the shared buffer. |
-| <Link id="m-isgrabassistenabledandnotblocked" /><code>{"private bool IsGrabAssistEnabledAndNotBlocked()"}</code> |  |
-| <Link id="m-jointbroken" /><code>{"private void JointBroken("}<Link to="/game-api/types/global-i-l/jointbreakdetector">{"JointBreakDetector"}</Link>{" detector, float force)"}</code> |  |
-| <Link id="m-networkstartinteraction" /><code>{"private void NetworkStartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
-| <Link id="m-networkstopinteraction" /><code>{"private void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onstartinteractionattempt" /><code>{"private void OnStartInteractionAttempt()"}</code> |  |
-| <Link id="m-readstartarguments" /><code>{"private void ReadStartArguments("}<Link to="/game-api/types/global-i-l/inetworkinteractargument">{"INetworkInteractArgument"}</Link>{" args)"}</code> |  |
-| <Link id="m-releasetogglehold" /><code>{"private void ReleaseToggleHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |  |
-| <Link id="m-selectbest" /><code>{"private bool SelectBest(int overlapCount, out "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" best)"}</code> |  |
-| <Link id="m-sendnetworkinteract" /><code>{"private void SendNetworkInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced, bool isForcingHold)"}</code> |  |
-| <Link id="m-sendnetworkinteractend" /><code>{"private void SendNetworkInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced)"}</code> |  |
-| <Link id="m-setupcollisionmask" /><code>{"private bool SetupCollisionMask()"}</code> |  |
-| <Link id="m-setuptriggerobject" /><code>{"private bool SetupTriggerObject()"}</code> |  |
-| <Link id="m-syncconfirmationrequest-2" /><code>{"private void SyncConfirmationRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncend-2" /><code>{"private void SyncEnd("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" args)"}</code> |  |
-| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" args)"}</code> |  |
-| <Link id="m-syncstartgrabpoint-2" /><code>{"private void SyncStartGrabPoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-e-h/grabpointarguments">{"GrabPointArguments"}</Link>{" args)"}</code> |  |
-| <Link id="m-togglehold" /><code>{"private void ToggleHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |  |
-| <Link id="m-updategrabassist" /><code>{"private void UpdateGrabAssist(Settings obj)"}</code> |  |
-| <Link id="m-waitforconfirmation" /><code>{"private IEnumerator WaitForConfirmation("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" forwardInteractable) (iterator)"}</code> |  |
+| <Link id="m-isgrabassistenabledandnotblocked" /><code>{"private bool IsGrabAssistEnabledAndNotBlocked()"}</code> | True when a grab assist controller exists and no `GetGrabAssistBlock` listener blocks it. |
+| <Link id="m-jointbroken" /><code>{"private void JointBroken("}<Link to="/game-api/types/global-i-l/jointbreakdetector">{"JointBreakDetector"}</Link>{" detector, float force)"}</code> | Handler for the joint break detector: stops the current interaction when the hand joint breaks. |
+| <Link id="m-networkstartinteraction" /><code>{"private void NetworkStartInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Callback for a networked start: stops any current interaction and starts the new one as coming from the network. |
+| <Link id="m-networkstopinteraction" /><code>{"private void NetworkStopInteraction("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Callback for a networked end: stops the interaction if it is still with that interactable. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears toggle hold, stops interacting, removes grab assist and unhooks the settings listener. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks the joint break, trigger and controller action handlers and disables grab assist. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor gizmo: the trigger sphere or capsule, or in play mode the grab assist capsule. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks the joint break detector, the trigger's `Entered` event and the Interact, HardInteract, ToggleGrab and ReleaseToggleGrab actions. |
+| <Link id="m-onstartinteractionattempt" /><code>{"private void OnStartInteractionAttempt()"}</code> | Marks the start time of an interaction attempt, used by the timeout. Also passed to grab assist. |
+| <Link id="m-readstartarguments" /><code>{"private void ReadStartArguments("}<Link to="/game-api/types/global-i-l/inetworkinteractargument">{"INetworkInteractArgument"}</Link>{" args)"}</code> | Applies a received start message: waits for the target entity to spawn, then starts the interaction, or sends an end at once if the local hand already let go. |
+| <Link id="m-releasetogglehold" /><code>{"private void ReleaseToggleHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Handler for ReleaseToggleGrab: ends toggle hold and stops interacting if Interact isn't held. Briefly blocks a new toggle hold. |
+| <Link id="m-selectbest" /><code>{"private bool SelectBest(int overlapCount, out "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" best)"}</code> | Collects the interactables in the overlap buffer that match the channels and picks the one with the lowest `AssessInteraction` score. |
+| <Link id="m-sendnetworkinteract" /><code>{"private void SendNetworkInteract("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced, bool isForcingHold)"}</code> | Sends the interaction start to the chunk, as a grab point message for pickups with a best grab, otherwise an interact message. |
+| <Link id="m-sendnetworkinteractend" /><code>{"private void SendNetworkInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, bool isForced)"}</code> | Sends the interaction end message to the chunk. Only the local owner, or the server when forced, sends it. |
+| <Link id="m-setupcollisionmask" /><code>{"private bool SetupCollisionMask()"}</code> | Editor bake step: builds `collisionMask` from the layers that collide with `collisionLayer`. |
+| <Link id="m-setuptriggerobject" /><code>{"private bool SetupTriggerObject()"}</code> | Editor bake step: for controller based interactors, creates the child trigger object with a sphere or capsule and kinematic rigidbody. |
+| <Link id="m-syncconfirmationrequest-2" /><code>{"private void SyncConfirmationRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Receives a confirmation request: buzzes the local holder's hand, or forwards the request on (server to the player, client to the chunk). |
+| <Link id="m-syncend-2" /><code>{"private void SyncEnd("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" args)"}</code> | Receives an interaction end. The server checks the sender owns this interactor and relays it, then the interaction is stopped. |
+| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/interactarguments">{"InteractArguments"}</Link>{" args)"}</code> | Receives an interaction start. The server ignores dead players, checks the sender owns this interactor and relays it to the chunk. |
+| <Link id="m-syncstartgrabpoint-2" /><code>{"private void SyncStartGrabPoint("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-e-h/grabpointarguments">{"GrabPointArguments"}</Link>{" args)"}</code> | Same as `SyncStart` but for pickup grabs that carry the grab point. |
+| <Link id="m-togglehold" /><code>{"private void ToggleHold("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Handler for ToggleGrab: turns on toggle hold while interacting, so letting go of Interact doesn't drop. |
+| <Link id="m-updategrabassist" /><code>{"private void UpdateGrabAssist(Settings obj)"}</code> | Creates or clears the grab assist controller to match the game's grab assist setting. |
+| <Link id="m-waitforconfirmation" /><code>{"private IEnumerator WaitForConfirmation("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" targetInteractable, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" forwardInteractable) (iterator)"}</code> | Coroutine used when grabbing something another player holds: buzzes both hands, then grabs once they let go, unless the hand moves away or Interact is released. |
 
 </details>
 

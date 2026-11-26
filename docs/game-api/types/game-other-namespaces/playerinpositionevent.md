@@ -1,6 +1,6 @@
 ---
 title: "PlayerInPositionEvent"
-description: "class PlayerInPositionEvent in Root.Township."
+description: "Township event bus event broadcast by PlayerInPositionObserver when the tutorial's target player comes within range of it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerInPositionEvent
 
 A **class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
+
+Township event bus event broadcast by `PlayerInPositionObserver` when the tutorial's target player comes within range of it.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`IPlayerEvent`](/game-api/types/game-other-namespaces/iplayerevent), [`IEventBusEventData`](/game-api/types/game-other-namespaces/ieventbuseventdata)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, `ATT.EventBus.TownshipEvents`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-source" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" Source { get; }"}</code> | The player who reached the position. |

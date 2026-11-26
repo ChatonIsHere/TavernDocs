@@ -43,11 +43,11 @@ A link between two cave teleporter layers and its fuel costs. Watches fuel on bo
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fromlayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayerData"}</code> |
-| <Link id="m-tolayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayerData"}</code> |
-| <Link id="m-wasvalid" /><code>{"private bool wasValid"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fromlayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayerData"}</code> | Teleporter proxy data of the starting layer, checked for fuel. |
+| <Link id="m-tolayerdata" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayerData"}</code> | Teleporter proxy data of the target layer, set once it exists. |
+| <Link id="m-wasvalid" /><code>{"private bool wasValid"}</code> | Last `IsValid` value, so `IsValidChanged` only fires on change. |
 
 </details>
 
@@ -80,9 +80,9 @@ A link between two cave teleporter layers and its fuel costs. Watches fuel on bo
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-updatevalid" /><code>{"private void UpdateValid("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" modifiedLayer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatevalid" /><code>{"private void UpdateValid("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" modifiedLayer)"}</code> | Handler for proxy fuel updates; refreshes `HasTo`, `HasFuelTo` and `IsValid` and fires their change events. |
 
 </details>
 

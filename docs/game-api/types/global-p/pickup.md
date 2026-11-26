@@ -38,56 +38,56 @@ An `Interactable` you can pick up, hold, dock and drop: almost every item in the
 <details>
 <summary>48 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activetightgriplayerindex" /><code>{"private static int ActiveTightGripLayerIndex"}</code> |
-| <Link id="m-blocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" blockLevel"}</code> |
-| <Link id="m-breakevent" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" breakEvent"}</code> |
-| <Link id="m-btn" /><code>{"private bool btn"}</code> |
-| <Link id="m-bypassmed1h" /><code>{"private bool bypassMed1h"}</code> |
-| <Link id="m-childrencolliders" /><code>{"private Collider[] childrenColliders"}</code> |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |
-| <Link id="m-distancethresholdsquared" /><code>{"private float distanceThresholdSquared"}</code> |
-| <Link id="m-docked" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockedevent">{"PickupDockedEvent"}</Link>{" docked"}</code> |
-| <Link id="m-dockedmemoryleft" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" dockedMemoryLeft"}</code> |
-| <Link id="m-dockedmemoryright" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" dockedMemoryRight"}</code> |
-| <Link id="m-docker" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocker">{"PickupDocker"}</Link>{" docker"}</code> |
-| <Link id="m-dockingchecker" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockingchecker">{"PickupDockingChecker"}</Link>{" dockingChecker"}</code> |
-| <Link id="m-double1hsurpluspenalty" /><code>{"private bool double1hSurplusPenalty"}</code> |
-| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> |
-| <Link id="m-grabpoints" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{"[] grabPoints"}</code> |
-| <Link id="m-grabpointsscale" /><code>{"private float grabPointsScale"}</code> |
-| <Link id="m-hasdistancethreshold" /><code>{"private bool hasDistanceThreshold"}</code> |
-| <Link id="m-interactorstorelease" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> interactorsToRelease"}</code> |
-| <Link id="m-interferewithdocking" /><code>{"private "}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{"[] interfereWithDocking"}</code> |
-| <Link id="m-interferewithdockingobjects" /><code>{"private MonoBehaviour[] interfereWithDockingObjects"}</code> |
-| <Link id="m-ischunkingparentstatic" /><code>{"private bool isChunkingParentStatic"}</code> |
-| <Link id="m-iscumbersome" /><code>{"private bool isCumbersome"}</code> |
-| <Link id="m-isenvironmentaljoint" /><code>{"private bool isEnvironmentalJoint"}</code> |
-| <Link id="m-isignoringmasterterrain" /><code>{"private bool isIgnoringMasterTerrain"}</code> |
-| <Link id="m-isloggingownerchanged" /><code>{"private bool isLoggingOwnerChanged"}</code> |
-| <Link id="m-isnetworkinitialized" /><code>{"private bool isNetworkInitialized"}</code> |
-| <Link id="m-isnexttreatedasdocked" /><code>{"private bool isNextTreatedAsDocked"}</code> |
-| <Link id="m-isstackdestroying" /><code>{"private bool isStackDestroying"}</code> |
-| <Link id="m-isswingable" /><code>{"private bool isSwingable"}</code> |
-| <Link id="m-istightgrab" /><code>{"private bool isTightGrab"}</code> |
-| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
-| <Link id="m-jointtype" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" jointType"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> |
-| <Link id="m-overridebreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideBreakEffect"}</code> |
-| <Link id="m-overridebreaksound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" overrideBreakSound"}</code> |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterial"}</code> |
-| <Link id="m-pickupjoints" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjoints">{"PickupJoints"}</Link>{" pickupJoints"}</code> |
-| <Link id="m-pickupscaler" /><code>{"private "}<Link to="/game-api/types/global-p/pickupinteractionscaler">{"PickupInteractionScaler"}</Link>{" pickupScaler"}</code> |
-| <Link id="m-removefrompopulation" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" removeFromPopulation"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-rotationscoreperdegree" /><code>{"private const float RotationScorePerDegree"}</code> |
-| <Link id="m-subdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" subDocks"}</code> |
-| <Link id="m-syncbreak" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreak"}</code> |
-| <Link id="m-syncgrabmemory" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncGrabMemory"}</code> |
-| <Link id="m-tightgriplayerindex" /><code>{"private static int TightGripLayerIndex"}</code> |
-| <Link id="m-undocked" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockedevent">{"PickupDockedEvent"}</Link>{" undocked"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activetightgriplayerindex" /><code>{"private static int ActiveTightGripLayerIndex"}</code> | Index of the "Active Tight Grip" layer. Tight grip colliders move to it briefly while the hand grip is fitted. |
+| <Link id="m-blocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" blockLevel"}</code> | Backing field for `BlockLevel`: how well this blocks in combat. Default cannot block. |
+| <Link id="m-breakevent" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" breakEvent"}</code> | Backing field for `BreakEvent`, invoked by `Break`. |
+| <Link id="m-btn" /><code>{"private bool btn"}</code> | Inspector button that runs `GetInterferees`. |
+| <Link id="m-bypassmed1h" /><code>{"private bool bypassMed1h"}</code> | Backing field for `BypassMed1h`. |
+| <Link id="m-childrencolliders" /><code>{"private Collider[] childrenColliders"}</code> | All child colliders, baked. Copied into `Colliders` on awake. |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> | Backing field for `CraftingPart`. |
+| <Link id="m-distancethresholdsquared" /><code>{"private float distanceThresholdSquared"}</code> | Squared distance a hand may move from the pickup during locomotion before it is force released. |
+| <Link id="m-docked" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockedevent">{"PickupDockedEvent"}</Link>{" docked"}</code> | Event behind `Docked`. |
+| <Link id="m-dockedmemoryleft" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" dockedMemoryLeft"}</code> | Grab point the left hand last used when docking, reused on the next grab from the dock. Saved with the pickup. |
+| <Link id="m-dockedmemoryright" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" dockedMemoryRight"}</code> | Grab point the right hand last used when docking. Saved with the pickup. |
+| <Link id="m-docker" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocker">{"PickupDocker"}</Link>{" docker"}</code> | Helper that handles docking into and out of docks; `Dock` comes from it. |
+| <Link id="m-dockingchecker" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockingchecker">{"PickupDockingChecker"}</Link>{" dockingChecker"}</code> | Helper that finds a dock candidate while the local player holds the pickup. |
+| <Link id="m-double1hsurpluspenalty" /><code>{"private bool double1hSurplusPenalty"}</code> | Inspector flag that no code reads. |
+| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> | Backing field for `DurabilityModule`. |
+| <Link id="m-grabpoints" /><code>{"private "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{"[] grabPoints"}</code> | Backing field for `GrabPoints`: where and how hands can hold this. |
+| <Link id="m-grabpointsscale" /><code>{"private float grabPointsScale"}</code> | Scale applied to grab point positions. |
+| <Link id="m-hasdistancethreshold" /><code>{"private bool hasDistanceThreshold"}</code> | Whether `CheckThreshold` force releases hands that move too far away. |
+| <Link id="m-interactorstorelease" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{"> interactorsToRelease"}</code> | Shared scratch list used by `CheckThreshold`. |
+| <Link id="m-interferewithdocking" /><code>{"private "}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{"[] interfereWithDocking"}</code> | Cached cast of `interfereWithDockingObjects`, behind `InterfereWithDocking`. |
+| <Link id="m-interferewithdockingobjects" /><code>{"private MonoBehaviour[] interfereWithDockingObjects"}</code> | Child components that can interfere with docking. Only filled for stackable items by `GetInterferees`. |
+| <Link id="m-ischunkingparentstatic" /><code>{"private bool isChunkingParentStatic"}</code> | Backing field for `IsChunkingParentStatic`. When set, grabbing doesn't make the player the chunking parent. |
+| <Link id="m-iscumbersome" /><code>{"private bool isCumbersome"}</code> | Inspector flag that no code reads. |
+| <Link id="m-isenvironmentaljoint" /><code>{"private bool isEnvironmentalJoint"}</code> | Backing field for `IsEnvironmental`: an environment joint (lever, door) that stays put and doesn't follow the hand's chunk. |
+| <Link id="m-isignoringmasterterrain" /><code>{"private bool isIgnoringMasterTerrain"}</code> | Whether terrain collision is currently off because of the chunk's environment. |
+| <Link id="m-isloggingownerchanged" /><code>{"private bool isLoggingOwnerChanged"}</code> | Whether ownership changes and sub dock removals by other players are logged. |
+| <Link id="m-isnetworkinitialized" /><code>{"private bool isNetworkInitialized"}</code> | Backing field for `IsNetworkInitialized`. False while the docker initializes for networking. |
+| <Link id="m-isnexttreatedasdocked" /><code>{"private bool isNextTreatedAsDocked"}</code> | Makes the next grab point score as if docked. For items always spawned from a dock, like pouches. |
+| <Link id="m-isstackdestroying" /><code>{"private bool isStackDestroying"}</code> | Set by `PrepareForStackingDestroy`. Stops grabs and the undock on destroy. |
+| <Link id="m-isswingable" /><code>{"private bool isSwingable"}</code> | Backing field for `IsSwingable`. |
+| <Link id="m-istightgrab" /><code>{"private bool isTightGrab"}</code> | Backing field for `IsTightGrab`: the hand grip is fitted to the tight grip colliders. |
+| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | Backing field for `Item`. |
+| <Link id="m-jointtype" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" jointType"}</code> | Backing field for `JointType`: how the pickup is joined to the hand. Default velocity joint. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> | Backing field for `NetworkRigidbody`. |
+| <Link id="m-overridebreakeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideBreakEffect"}</code> | Pooled effect spawned on break instead of the global default. |
+| <Link id="m-overridebreaksound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" overrideBreakSound"}</code> | Sound played on break instead of the global default. |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterial"}</code> | Cached `PhysicalMaterialPart`, behind `PhysicalMaterial`. |
+| <Link id="m-pickupjoints" /><code>{"private "}<Link to="/game-api/types/global-p/pickupjoints">{"PickupJoints"}</Link>{" pickupJoints"}</code> | Backing field for `JointManager`: creates and removes the hand joints. |
+| <Link id="m-pickupscaler" /><code>{"private "}<Link to="/game-api/types/global-p/pickupinteractionscaler">{"PickupInteractionScaler"}</Link>{" pickupScaler"}</code> | Scales the item while held. Only made when the item scales on grab. |
+| <Link id="m-removefrompopulation" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" removeFromPopulation"}</code> | Delegate behind the explicit `RemoveFromPopulation` event. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Backing field for `Rigidbody`. Without one the pickup can't be grabbed. |
+| <Link id="m-rotationscoreperdegree" /><code>{"private const float RotationScorePerDegree"}</code> | Score added per degree of hand rotation difference when scoring grab points (0.005). |
+| <Link id="m-subdocks" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" subDocks"}</code> | Backing field for `SubDocks`: docks inside this pickup, like a pouch or bag. |
+| <Link id="m-syncbreak" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBreak"}</code> | Network sync for the break message. |
+| <Link id="m-syncgrabmemory" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncGrabMemory"}</code> | Network sync that sends the docked grab memory to its last holder when they connect. |
+| <Link id="m-tightgriplayerindex" /><code>{"private static int TightGripLayerIndex"}</code> | Index of the "Tight Grip" layer, looked up once in `Awake`. |
+| <Link id="m-undocked" /><code>{"private "}<Link to="/game-api/types/global-p/pickupdockedevent">{"PickupDockedEvent"}</Link>{" undocked"}</code> | Event behind `Undocked`. |
 
 </details>
 
@@ -154,9 +154,9 @@ An `Interactable` you can pick up, hold, dock and drop: almost every item in the
 <details>
 <summary>1 private and internal event</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-populations-ipopulationremovalmethod-removefrompopulation" /><code>{"private event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" Alta.Populations.IPopulationRemovalMethod.RemoveFromPopulation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-populations-ipopulationremovalmethod-removefrompopulation" /><code>{"private event "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" Alta.Populations.IPopulationRemovalMethod.RemoveFromPopulation"}</code> | Raised when the pickup is grabbed or docked, so its population (spawner) stops counting it. |
 
 </details>
 
@@ -209,31 +209,31 @@ An `Interactable` you can pick up, hold, dock and drop: almost every item in the
 <details>
 <summary>23 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkthreshold" /><code>{"private void CheckThreshold("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
-| <Link id="m-enteredchunk" /><code>{"private void EnteredChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-getquantity" /><code>{"private int GetQuantity()"}</code> |
-| <Link id="m-ignoreterrain" /><code>{"private void IgnoreTerrain(bool isIgnoringMasterTerrain)"}</code> |
-| <Link id="m-interactionendedsound" /><code>{"private void InteractionEndedSound("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-interactionstartedsound" /><code>{"private void InteractionStartedSound("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-leftchunk" /><code>{"private void LeftChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-onpredocked" /><code>{"private void OnPreDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-processgrabbedevent" /><code>{"private void ProcessGrabbedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-savegrabforinteractor" /><code>{"private void SaveGrabForInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-serializegrabmemory" /><code>{"private void SerializeGrabMemory("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" memory)"}</code> |
-| <Link id="m-shouldteleporttohand" /><code>{"private bool ShouldTeleportToHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-syncbreak-2" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncgrabmemory-2" /><code>{"private void SyncGrabMemory("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-teleporttohand" /><code>{"private void TeleportToHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-trydock" /><code>{"private bool TryDock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-undocklog" /><code>{"private void UndockLog("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkthreshold" /><code>{"private void CheckThreshold("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Handler for the holder's `PositionAboutToChange`: force releases hands that end up further than the distance threshold from the pickup. |
+| <Link id="m-enteredchunk" /><code>{"private void EnteredChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: when the pickup enters a location chunk whose environment disables terrain collision, turns off collision with the master terrain. |
+| <Link id="m-getquantity" /><code>{"private int GetQuantity()"}</code> | Count for event logs: 1 for a plain pickup, or the total stored in its sub docks. |
+| <Link id="m-ignoreterrain" /><code>{"private void IgnoreTerrain(bool isIgnoringMasterTerrain)"}</code> | Turns collision between every pickup collider and the master terrain collider off or on. |
+| <Link id="m-interactionendedsound" /><code>{"private void InteractionEndedSound("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Client: plays the let go sound (or the item's override) at the hand when released. |
+| <Link id="m-interactionstartedsound" /><code>{"private void InteractionStartedSound("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Client: plays the grab sound (or the item's override) at the hand when grabbed. |
+| <Link id="m-leftchunk" /><code>{"private void LeftChunk("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: turns master terrain collision back on when leaving a no terrain collision chunk for one that isn't. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Calls `CleanDestroy` unless the game is quitting, reloading or the entity is already being destroyed. |
+| <Link id="m-ondocked" /><code>{"private void OnDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Handler for the docker's docked event: logs it, removes the pickup from its population, raises `Docked` and raises the sync priority. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws the interaction scaler's gizmos in the editor. |
+| <Link id="m-onpredocked" /><code>{"private void OnPreDocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Forwards the docker's pre docked event to `PreDocked`. |
+| <Link id="m-onundocked" /><code>{"private void OnUndocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Handler for the docker's undocked event: logs it, raises `Undocked` and clears the docked sync priority. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build bake step: strips null entries from `childrenColliders`. |
+| <Link id="m-processgrabbedevent" /><code>{"private void ProcessGrabbedEvent("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Server (or local test): broadcasts a `PlayerGrabbedPrefabEvent` on the township event bus when a player grabs this. |
+| <Link id="m-savegrabforinteractor" /><code>{"private void SaveGrabForInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Server: stores the grab point that hand used as the left or right docked grab memory. |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Handler for the entity's `DestroyedByScene` event; calls `CleanDestroy`. |
+| <Link id="m-serializegrabmemory" /><code>{"private void SerializeGrabMemory("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref "}<Link to="/game-api/types/global-e-h/grabpointparameters">{"GrabPointParameters"}</Link>{" memory)"}</code> | Reads or writes one hand's grab memory, with a flag for whether it is set. |
+| <Link id="m-shouldteleporttohand" /><code>{"private bool ShouldTeleportToHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | True when the pickup is far enough from the hand (past the global minimum) to be moved there on grab. Never for empty joints. |
+| <Link id="m-syncbreak-2" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Remote clients: runs `Break` when the server says the pickup broke. |
+| <Link id="m-syncgrabmemory-2" /><code>{"private void SyncGrabMemory("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Client: receives the left and right docked grab memory from the server; the server rejects it as unauthorized. |
+| <Link id="m-teleporttohand" /><code>{"private void TeleportToHand("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Moves the pickup to the hand's interaction point. |
+| <Link id="m-trydock" /><code>{"private bool TryDock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | On release, docks into the best dock candidate. True if it was already docked or got docked. |
+| <Link id="m-undocklog" /><code>{"private void UndockLog("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | When owner logging is on, logs when another player takes something out of this pickup's sub docks. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "PlayerSaveData"
-description: "The starting inventory for new players (InitialPlayerInventory in the settings picks which)."
+description: "Asset holding a starting player save (prefab data, byte count and chunk versioning)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Utilities`.
 
-The starting inventory for new players (`InitialPlayerInventory` in the settings picks which).
+Asset holding a starting player save (prefab data, byte count and chunk versioning). The server's `InitialPlayerInventory` setting picks one by name.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`HashedGeneralValue<PlayerSaveData>`](/game-api/types/assembly-other/hashedgeneralvalue-t)
@@ -31,18 +31,18 @@ The starting inventory for new players (`InitialPlayerInventory` in the settings
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> |
-| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialsetupbytes" /><code>{"private int initialSetupBytes"}</code> | Length in bytes of the stored setup data. |
+| <Link id="m-initialsetupdata" /><code>{"private uint[] initialSetupData"}</code> | The stored prefab data for the starting player. |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | Chunk versioning the data was saved with. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getcurrent" /><code>{"static "}<Link to="/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> |
-| <Link id="m-populate" /><code>{"void Populate("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getcurrent" /><code>{"static "}<Link to="/game-api/types/alta-utilities/playersavedata">{"PlayerSaveData"}</Link>{" GetCurrent()"}</code> | The asset named after the server's `InitialPlayerInventory` setting, or null when the setting is `None` or no server is running. |
+| <Link id="m-populate" /><code>{"void Populate("}<Link to="/game-api/types/alta-utilities/playersave">{"PlayerSave"}</Link>{" save)"}</code> | Copies the stored prefab data, byte count and versioning into a player save. |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Only calls the base. |

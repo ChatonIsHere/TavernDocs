@@ -30,24 +30,24 @@ One ghost piece of a generic crafting station's project. Placing the right item 
 <details>
 <summary>16 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> |
-| <Link id="m-centerposition" /><code>{"private Vector3 centerPosition"}</code> |
-| <Link id="m-cracksmeshrenderer" /><code>{"private MeshRenderer cracksMeshRenderer"}</code> |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-failurehealth" /><code>{"private float failureHealth"}</code> |
-| <Link id="m-hascracks" /><code>{"private bool hasCracks"}</code> |
-| <Link id="m-mainmeshrenderer" /><code>{"private MeshRenderer mainMeshRenderer"}</code> |
-| <Link id="m-meshcollider" /><code>{"private MeshCollider meshCollider"}</code> |
-| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> |
-| <Link id="m-playtimeendingsound" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" playTimeEndingSound"}</code> |
-| <Link id="m-popinteractable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" popInteractable"}</code> |
-| <Link id="m-popoutentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" popoutEntry"}</code> |
-| <Link id="m-progressproperty" /><code>{"private MaterialPropertyBlock progressProperty"}</code> |
-| <Link id="m-project" /><code>{"private "}<Link to="/game-api/types/alta-crafting/iproject">{"IProject"}</Link>{" project"}</code> |
-| <Link id="m-rangelevel" /><code>{"private int rangeLevel"}</code> |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> | Shader property ID for the cracks progress. |
+| <Link id="m-centerposition" /><code>{"private Vector3 centerPosition"}</code> | Local centre of the piece mesh, behind `CenterPosition`. |
+| <Link id="m-cracksmeshrenderer" /><code>{"private MeshRenderer cracksMeshRenderer"}</code> | Renderer for the cracks overlay shown as failure health drops. |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-crafting/genericcraftingpiecedefinition">{"GenericCraftingPieceDefinition"}</Link>{" definition"}</code> | The recipe's definition for this piece: mesh, nails, failure health, level and source item. |
+| <Link id="m-failurehealth" /><code>{"private float failureHealth"}</code> | Health left before bad nail hits break the piece and fail the project. Saved. |
+| <Link id="m-hascracks" /><code>{"private bool hasCracks"}</code> | Whether the cracks overlay should show. |
+| <Link id="m-mainmeshrenderer" /><code>{"private MeshRenderer mainMeshRenderer"}</code> | Renderer for the piece. Shows ghost, highlight or the placed material. |
+| <Link id="m-meshcollider" /><code>{"private MeshCollider meshCollider"}</code> | Collider for the piece, on only while it's filled. |
+| <Link id="m-meshfilters" /><code>{"private MeshFilter[] meshFilters"}</code> | Mesh filters given the definition's mesh. |
+| <Link id="m-playtimeendingsound" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" playTimeEndingSound"}</code> | Timeline entry for `PlayTimeEndingSound`. |
+| <Link id="m-popinteractable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" popInteractable"}</code> | Interactable players grab to pull a filled piece back out. |
+| <Link id="m-popoutentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" popoutEntry"}</code> | Server: timeline entry for `Popout`, started when the piece is filled. |
+| <Link id="m-progressproperty" /><code>{"private MaterialPropertyBlock progressProperty"}</code> | Material property block that sets the cracks progress. |
+| <Link id="m-project" /><code>{"private "}<Link to="/game-api/types/alta-crafting/iproject">{"IProject"}</Link>{" project"}</code> | The project this piece belongs to. |
+| <Link id="m-rangelevel" /><code>{"private int rangeLevel"}</code> | Distance LOD level from `UpdateDistance`: 0 is near. |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> | Transform placed at the definition's position, rotation and scale. |
 
 </details>
 
@@ -96,25 +96,25 @@ One ghost piece of a generic crafting station's project. Placing the right item 
 <details>
 <summary>17 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkiscomplete" /><code>{"private bool CheckIsComplete()"}</code> |
-| <Link id="m-filterpop" /><code>{"private void FilterPop("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
-| <Link id="m-getcompleteeffect" /><code>{"private void GetCompleteEffect()"}</code> |
-| <Link id="m-grab" /><code>{"private void Grab("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-hasoverflow" /><code>{"private bool Alta.Crafting.INailable.HasOverflow("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
-| <Link id="m-loadcompletepiece" /><code>{"private void LoadCompletePiece("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-playtimeendingsound-2" /><code>{"private void PlayTimeEndingSound()"}</code> |
-| <Link id="m-pop" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Pop()"}</code> |
-| <Link id="m-popout" /><code>{"private void Popout()"}</code> |
-| <Link id="m-receivehit" /><code>{"private void Alta.Crafting.INailable.ReceiveHit("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, Vector3 impactDirection, float impactDamage)"}</code> |
-| <Link id="m-resetvalues" /><code>{"private void ResetValues()"}</code> |
-| <Link id="m-spawnchunkedrefusewithmaterial" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnChunkedRefuseWithMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-spawnrefuseforinteractor" /><code>{"private void SpawnRefuseForInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-synchit" /><code>{"private void Alta.Crafting.INailable.SyncHit("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> |
-| <Link id="m-updatecracks" /><code>{"private void UpdateCracks(float cracksProgress)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates the shader property block on clients and hooks the pop interactable's filter and grab events. |
+| <Link id="m-checkiscomplete" /><code>{"private bool CheckIsComplete()"}</code> | True when every nail on the piece is done. |
+| <Link id="m-filterpop" /><code>{"private void FilterPop("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Only lets a player pull the piece out when it's filled, no nail is done, its level can be removed and the project isn't complete. |
+| <Link id="m-getcompleteeffect" /><code>{"private void GetCompleteEffect()"}</code> | Client: plays the piece-completed particle effect and event. |
+| <Link id="m-grab" /><code>{"private void Grab("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Server pops the piece into the grabbing hand as a loose item; a client asks the server to do that. |
+| <Link id="m-hasoverflow" /><code>{"private bool Alta.Crafting.INailable.HasOverflow("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Explicit `INailable` method: whether a hit on a nail would push it past full progress. |
+| <Link id="m-loadcompletepiece" /><code>{"private void LoadCompletePiece("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material)"}</code> | Server: restores a saved complete piece with its material and every nail finished. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor gizmo at the piece's centre. |
+| <Link id="m-playtimeendingsound-2" /><code>{"private void PlayTimeEndingSound()"}</code> | Plays the warning sound shortly before the nailing time runs out. |
+| <Link id="m-pop" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Pop()"}</code> | Spawns the piece's material back as a loose item, empties the piece and re-checks the project level. |
+| <Link id="m-popout" /><code>{"private void Popout()"}</code> | Called when the nailing time runs out: if the piece isn't complete, it pops out as a loose item. |
+| <Link id="m-receivehit" /><code>{"private void Alta.Crafting.INailable.ReceiveHit("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, Vector3 impactDirection, float impactDamage)"}</code> | Explicit `INailable` method: applies a hammer hit to a nail, damaging the piece's failure health and failing the project if it runs out. |
+| <Link id="m-resetvalues" /><code>{"private void ResetValues()"}</code> | Clears completion, restores failure health, resets every nail and turns off the pop interactable. |
+| <Link id="m-spawnchunkedrefusewithmaterial" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnChunkedRefuseWithMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Spawns the piece's source item in the given chunk at the piece, set up as refuse with that material. |
+| <Link id="m-spawnrefuseforinteractor" /><code>{"private void SpawnRefuseForInteractor("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Pops the piece and puts the loose item straight into the interactor's hand. |
+| <Link id="m-synchit" /><code>{"private void Alta.Crafting.INailable.SyncHit("}<Link to="/game-api/types/alta-crafting/genericcraftingnail">{"GenericCraftingNail"}</Link>{" nail, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hitWithTool)"}</code> | Explicit `INailable` method: forwards a client's nail hit to the station to send to the server. |
+| <Link id="m-updatecracks" /><code>{"private void UpdateCracks(float cracksProgress)"}</code> | Client: shows the cracks overlay at the given progress, only at the nearest LOD. |
 
 </details>
 

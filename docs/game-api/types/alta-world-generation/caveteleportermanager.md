@@ -30,13 +30,13 @@ Singleton network entity that tracks the cave teleporter on each cave layer and 
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lastsoundeffect" /><code>{"private DateTime lastSoundEffect"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{"> syncEffect"}</code> |
-| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFull"}</code> |
-| <Link id="m-syncproxy" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncProxy"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastsoundeffect" /><code>{"private DateTime lastSoundEffect"}</code> | When the local teleport sound last played, for the cooldown. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{"> syncEffect"}</code> | Message sync for teleport effects. |
+| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFull"}</code> | Message sync for the full layer list. |
+| <Link id="m-syncproxy" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncProxy"}</code> | Message sync for a single layer's fuel. |
 
 </details>
 
@@ -70,16 +70,16 @@ Singleton network entity that tracks the cave teleporter on each cave layer and 
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkforlocalsoundcooldown" /><code>{"private bool CheckForLocalSoundCooldown()"}</code> |
-| <Link id="m-delayteleport" /><code>{"private static void DelayTeleport("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" argument, Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> finished)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-proxyupdatedfuel" /><code>{"private static void ProxyUpdatedFuel("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> |
-| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" effectArgument)"}</code> |
-| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncproxy-2" /><code>{"private void SyncProxy("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int layer)"}</code> |
-| <Link id="m-wipecaves" /><code>{"private void WipeCaves()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `Instance` to this. |
+| <Link id="m-checkforlocalsoundcooldown" /><code>{"private bool CheckForLocalSoundCooldown()"}</code> | Client: returns false if the local teleport sound played too recently, otherwise records the time and returns true. |
+| <Link id="m-delayteleport" /><code>{"private static void DelayTeleport("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" argument, Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> finished)"}</code> | Server: after the teleport delay, moves the player to the chunk at the target, plays the arrival effect and grants impact invincibility. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from the server cave wipe event. |
+| <Link id="m-proxyupdatedfuel" /><code>{"private static void ProxyUpdatedFuel("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> | Runs when a layer's fuel changes: raises `OnProxyUpdatedfuel` and, on the server, syncs that layer's fuel to clients. |
+| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world-generation/teleporteffectargument">{"TeleportEffectArgument"}</Link>{" effectArgument)"}</code> | Network message for teleport effects: on clients plays the effect and sound, and fades the screen for the teleporting player on departure. |
+| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Network message that sends every layer's fuel; clients rebuild `AvailableLayers` and raise `OnSyncedFull`. |
+| <Link id="m-syncproxy-2" /><code>{"private void SyncProxy("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int layer)"}</code> | Network message that sends one layer's fuel; clients update it and raise `OnProxyUpdatedfuel`. |
+| <Link id="m-wipecaves" /><code>{"private void WipeCaves()"}</code> | Server: on a cave wipe, drops every layer except layer 0 and resyncs clients. |
 
 </details>

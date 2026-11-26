@@ -31,10 +31,10 @@ Armour asset: damage multipliers per attack type and a conductivity multiplier.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attacktypemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] attackTypeMultipliers"}</code> |
-| <Link id="m-conductivitymultiplier" /><code>{"private float conductivityMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attacktypemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attacktypemultiplier">{"AttackTypeMultiplier"}</Link>{"[] attackTypeMultipliers"}</code> | Damage multipliers by impact type, read by `GetMultiplier`; types not listed get 1. |
+| <Link id="m-conductivitymultiplier" /><code>{"private float conductivityMultiplier"}</code> | Backing field for `ConductivityMultiplier`. Defaults to 1. |
 
 </details>
 

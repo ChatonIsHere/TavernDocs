@@ -30,16 +30,16 @@ Server: grows something through the stages of a `GrowthDefinition` (sapling to t
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> |
-| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |
-| <Link id="m-growthdefinition" /><code>{"private "}<Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" growthDefinition"}</code> |
-| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> |
-| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-nextstagetimer" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" nextStageTimer"}</code> |
-| <Link id="m-startedtime" /><code>{"private TimeSpan startedTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autostart" /><code>{"private bool autoStart"}</code> | If true, growing starts one frame after the server spawns the grower. |
+| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> | Shared overlap buffer for the radius check. |
+| <Link id="m-growthdefinition" /><code>{"private "}<Link to="/game-api/types/global-e-h/growthdefinition">{"GrowthDefinition"}</Link>{" growthDefinition"}</code> | The stages to grow through. Saved, so a loaded grower keeps its definition. |
+| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> | Shared set so each rigidbody is checked once per radius check. |
+| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> | Shared raycast buffer for the raycast check. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-nextstagetimer" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" nextStageTimer"}</code> | Timeline entry for the next stage or retry. |
+| <Link id="m-startedtime" /><code>{"private TimeSpan startedTime"}</code> | Timeline time growth started. Used on load to work out which stage it should be in now. |
 
 </details>
 
@@ -65,24 +65,24 @@ Server: grows something through the stages of a `GrowthDefinition` (sapling to t
 <details>
 <summary>16 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
-| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
-| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> |
-| <Link id="m-destroyself" /><code>{"private void DestroySelf()"}</code> |
-| <Link id="m-gotostage" /><code>{"private void GoToStage(int stageIndex, TimeSpan timeLeft = null)"}</code> |
-| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> |
-| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-handleloadedcurrentstageentity" /><code>{"private void HandleLoadedCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> |
-| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> |
-| <Link id="m-loadstage" /><code>{"private void LoadStage(int currentStageIndex, TimeSpan timeLeft)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> |
-| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> |
-| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |
-| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> | Fails if another growing thing whose current stage uses a radius sits within the smaller of the two separation radii. |
+| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> | If the stage uses a raycast check, fails when the ray hits anything other than the current stage's own rigidbody. |
+| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> | Destroys the spawned stage object and clears the spawned stage index. |
+| <Link id="m-destroyself" /><code>{"private void DestroySelf()"}</code> | Cancels the stage timer, destroys the current stage object and the grower entity. |
+| <Link id="m-gotostage" /><code>{"private void GoToStage(int stageIndex, TimeSpan timeLeft = null)"}</code> | Runs the checks for a stage and handles the result. Logs errors instead of throwing. |
+| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> | On pass, spawns the stage and schedules the next one (or ends growth keeping the result). On fail, retries later or destroys everything. |
+| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Stops growth (destroying the grower) when the stage object is destroyed, but not when it's only unloaded. |
+| <Link id="m-handleloadedcurrentstageentity" /><code>{"private void HandleLoadedCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, int childIndex)"}</code> | Load callback that sets the saved stage object as the current one. |
+| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> | Forces the spawned stage's rigidbody kinematic or not, if the stage asks for it. Warns if there's no rigidbody. |
+| <Link id="m-loadstage" /><code>{"private void LoadStage(int currentStageIndex, TimeSpan timeLeft)"}</code> | After load, catches up through stages skipped while unloaded, running each check, then goes to the target stage. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the pending stage timer. |
+| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> | Rolls the previous stage's survival rate, then runs the radius and raycast checks. |
+| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Sets the current stage object and moves the destroyed and parent-changed hooks to it. |
+| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> | Spawns the stage's prefab (or a preset tree) as a saved child, or keeps the previous prefab if the stage reuses it. |
+| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> | If the stage object is moved off the grower (for example picked up), lets it go and destroys the grower next frame. |
+| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> | At the end of growth, detaches the final object so it stays in the world on its own (or under the grower's chunking parent). |
 
 </details>
 

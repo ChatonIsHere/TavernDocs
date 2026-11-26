@@ -30,21 +30,21 @@ One choppable segment of a `WoodcutTree` (a trunk or branch piece). Hits from th
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |
-| <Link id="m-bottompointindex" /><code>{"private int bottomPointIndex"}</code> |
-| <Link id="m-btncheckcomplete" /><code>{"private bool btnCheckComplete"}</code> |
-| <Link id="m-btntakingrandomdamage" /><code>{"private bool btnTakingRandomDamage"}</code> |
-| <Link id="m-colors" /><code>{"private Color[] colors"}</code> |
-| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] connections"}</code> |
-| <Link id="m-droplocations" /><code>{"private PositionRotation[] dropLocations"}</code> |
-| <Link id="m-finisheddirection" /><code>{"private int finishedDirection"}</code> |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |
-| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" type"}</code> |
-| <Link id="m-woodcutpointscollection" /><code>{"private "}<Link to="/game-api/types/global-t-x/woodcutpointcollection">{"WoodcutPointCollection"}</Link>{" woodcutPointsCollection"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> | Bone weights for the colour model that shows the cut marks. Clients only. |
+| <Link id="m-bottompointindex" /><code>{"private int bottomPointIndex"}</code> | Index of the first of the bottom ring of woodcut points that decide a chop. -1 means the piece can't be chopped. |
+| <Link id="m-btncheckcomplete" /><code>{"private bool btnCheckComplete"}</code> | Editor button that runs `CheckComplete`. |
+| <Link id="m-btntakingrandomdamage" /><code>{"private bool btnTakingRandomDamage"}</code> | Editor button that runs `RandomDamage`. |
+| <Link id="m-colors" /><code>{"private Color[] colors"}</code> | Backing field for `Colors`. |
+| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnection">{"WoodcutConnection"}</Link>{"[] connections"}</code> | Backing field for `Connections`: points where child pieces attach. |
+| <Link id="m-droplocations" /><code>{"private PositionRotation[] dropLocations"}</code> | Where sticks or wedges spawn when the piece is chopped up. Set through `DropLocations`. |
+| <Link id="m-finisheddirection" /><code>{"private int finishedDirection"}</code> | Backing field for `FinishedDirection`: the bottom point the piece was chopped through. -1 until chopped. |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | The tree's shared detector, whose hits go to `HandleHit`. Set by `SetImpactDetector`. |
+| <Link id="m-mass" /><code>{"private float mass"}</code> | Backing field for `Mass`. Added up through the tree to set the rigidbody's mass. 5 by default. |
+| <Link id="m-meshes" /><code>{"private Mesh[] meshes"}</code> | Backing field for `Meshes`, one per LOD. The first is used for the cut colour model. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" type"}</code> | Backing field for `Type`: the connection type, which sets bone count, stick or wedge drops and how it breaks. |
+| <Link id="m-woodcutpointscollection" /><code>{"private "}<Link to="/game-api/types/global-t-x/woodcutpointcollection">{"WoodcutPointCollection"}</Link>{" woodcutPointsCollection"}</code> | The synced woodcut points that take damage. Backs `WoodcutPoints` and `BottomPoints`. |
 
 </details>
 
@@ -87,10 +87,10 @@ One choppable segment of a `WoodcutTree` (a trunk or branch piece). Hits from th
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-handlehit" /><code>{"private void HandleHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
-| <Link id="m-randomdamage" /><code>{"private void RandomDamage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handlehit" /><code>{"private void HandleHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Spreads hit damage over the woodcut points by distance and species, plays the hit or done effect on clients, then checks for a chop. |
+| <Link id="m-randomdamage" /><code>{"private void RandomDamage()"}</code> | Editor button: gives every woodcut point a little random damage, then checks for a chop. |
 
 </details>
 

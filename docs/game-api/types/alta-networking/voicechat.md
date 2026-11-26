@@ -1,6 +1,6 @@
 ---
 title: "VoiceChat"
-description: "class VoiceChat in Root.Township."
+description: "Client voice chat mute logic: who you can hear (everyone, friends or no one) plus your own muted players list, applied to Vivox."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VoiceChat
 
 A **class** in `Root.Township`, `Alta.Voice`.
+
+Client voice chat mute logic: who you can hear (everyone, friends or no one) plus your own muted players list, applied to Vivox. Does nothing on Linux.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`IVoiceChat`](/game-api/types/alta-networking/ivoicechat)
@@ -27,37 +29,37 @@ A **class** in `Root.Township`, `Alta.Voice`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-mutedstore" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxmutedplayerstore">{"IVivoxMutedPlayerStore"}</Link>{" mutedStore"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-mutedstore" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxmutedplayerstore">{"IVivoxMutedPlayerStore"}</Link>{" mutedStore"}</code> | Your muted user ids, kept in PlayerPrefs. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-audiblescope" /><code><Link to="/game-api/types/alta-networking/voicechatscope">{"VoiceChatScope"}</Link>{" AudibleScope { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-audiblescope" /><code><Link to="/game-api/types/alta-networking/voicechatscope">{"VoiceChatScope"}</Link>{" AudibleScope { get; private set; }"}</code> | Who you can hear. Starts at `Everyone`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-cycleaudiblescope" /><code>{"void CycleAudibleScope()"}</code> |
-| <Link id="m-getplayermuted" /><code>{"bool GetPlayerMuted(int player)"}</code> |
-| <Link id="m-setplayermuted" /><code>{"void SetPlayerMuted(int player, bool isMuted)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cycleaudiblescope" /><code>{"void CycleAudibleScope()"}</code> | Steps the scope from everyone to friends to no one and back, then reapplies mutes. |
+| <Link id="m-getplayermuted" /><code>{"bool GetPlayerMuted(int player)"}</code> | Whether you have muted that user id. |
+| <Link id="m-setplayermuted" /><code>{"void SetPlayerMuted(int player, bool isMuted)"}</code> | Adds or removes a user id from your muted list and applies it. |
 
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-newplayercreated" /><code>{"private void NewPlayerCreated("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
-| <Link id="m-onfriendstatusupdated" /><code>{"private void OnFriendStatusUpdated(int player, bool isFriend)"}</code> |
-| <Link id="m-onplayerjoinedchannel" /><code>{"private void OnPlayerJoinedChannel(IParticipant player)"}</code> |
-| <Link id="m-onvivoxclientcreated" /><code>{"private void OnVivoxClientCreated("}<Link to="/game-api/types/alta-networking/vivoxclient">{"VivoxClient"}</Link>{" client)"}</code> |
-| <Link id="m-syncmutestateforplayer" /><code>{"private void SyncMuteStateForPlayer(int userID)"}</code> |
-| <Link id="m-updatemuteallplayers" /><code>{"private void UpdateMuteAllPlayers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-newplayercreated" /><code>{"private void NewPlayerCreated("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Applies the mute state for a player as they're added. |
+| <Link id="m-onfriendstatusupdated" /><code>{"private void OnFriendStatusUpdated(int player, bool isFriend)"}</code> | Reapplies the mute state when a friendship changes, which matters in friends scope. |
+| <Link id="m-onplayerjoinedchannel" /><code>{"private void OnPlayerJoinedChannel(IParticipant player)"}</code> | Applies the mute state when someone joins the Vivox channel, reading their user id from the account name. |
+| <Link id="m-onvivoxclientcreated" /><code>{"private void OnVivoxClientCreated("}<Link to="/game-api/types/alta-networking/vivoxclient">{"VivoxClient"}</Link>{" client)"}</code> | Hooks the client's player joined channel event. |
+| <Link id="m-syncmutestateforplayer" /><code>{"private void SyncMuteStateForPlayer(int userID)"}</code> | Mutes the user in Vivox if the scope excludes them or you muted them, else unmutes. Skipped on Linux and in the editor. |
+| <Link id="m-updatemuteallplayers" /><code>{"private void UpdateMuteAllPlayers()"}</code> | Applies the mute state for every other player. |
 
 </details>

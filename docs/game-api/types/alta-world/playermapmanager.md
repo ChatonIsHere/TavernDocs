@@ -30,11 +30,11 @@ Map discovery state for one player (or the shared map): which pieces of each `Ma
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-save" /><code>{"private "}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-file" /><code>{"private "}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file"}</code> | The player's map save file. Server: written after a piece is discovered. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-save" /><code>{"private "}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save"}</code> | Per-map piece states. True means the piece is still undiscovered. |
 
 </details>
 
@@ -50,9 +50,9 @@ Map discovery state for one player (or the shared map): which pieces of each `Ma
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-serializemap" /><code>{"private void SerializeMap("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serializemap" /><code>{"private void SerializeMap("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs one map's piece states as one bool per piece. |
 
 </details>
 

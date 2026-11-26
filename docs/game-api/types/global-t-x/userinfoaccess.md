@@ -32,15 +32,15 @@ A user given by id or username, looked up through Alta's web API on first use an
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hassearched" /><code>{"private bool hasSearched"}</code> |
-| <Link id="m-idcache" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> idCache"}</code> |
-| <Link id="m-isbyusername" /><code>{"private bool isByUsername"}</code> |
-| <Link id="m-namecache" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> nameCache"}</code> |
-| <Link id="m-useridentifier" /><code>{"private int userIdentifier"}</code> |
-| <Link id="m-userinfo" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo"}</code> |
-| <Link id="m-username" /><code>{"private string username"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hassearched" /><code>{"private bool hasSearched"}</code> | True once a lookup has run, so later calls use the result. |
+| <Link id="m-idcache" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> idCache"}</code> | Static cache of looked-up users by ID, shared by all instances. |
+| <Link id="m-isbyusername" /><code>{"private bool isByUsername"}</code> | True when made from a username rather than an ID. |
+| <Link id="m-namecache" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> nameCache"}</code> | Static cache of looked-up users by lower-case username. |
+| <Link id="m-useridentifier" /><code>{"private int userIdentifier"}</code> | The user ID this access was made with, or the found user's ID. |
+| <Link id="m-userinfo" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo"}</code> | Backing field for `UserInfo`. Null until a lookup finds the user. |
+| <Link id="m-username" /><code>{"private string username"}</code> | Lower-cased username this access was made with. |
 
 </details>
 
@@ -53,9 +53,9 @@ A user given by id or username, looked up through Alta's web API on first use an
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-doesuserexist" /><code>{"private bool DoesUserExist { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-doesuserexist" /><code>{"private bool DoesUserExist { get; }"}</code> | True once a lookup found a user. |
 
 </details>
 
@@ -71,10 +71,10 @@ A user given by id or username, looked up through Alta's web API on first use an
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addtocache" /><code>{"private void AddToCache()"}</code> |
-| <Link id="m-searchforuserasync" /><code>{"private async Task SearchForUserAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addtocache" /><code>{"private void AddToCache()"}</code> | Stores the found user in both the name and the ID cache. Probably throws if no user was found. |
+| <Link id="m-searchforuserasync" /><code>{"private async Task SearchForUserAsync()"}</code> | Looks the user up by name or ID, from the static cache or else the Alta web API. |
 
 </details>
 

@@ -30,27 +30,27 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-adddurabilitytoslot" /><code>{"private bool addDurabilityToSlot"}</code> |
-| <Link id="m-attemptcraft" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> attemptCraft"}</code> |
-| <Link id="m-canblockdefault" /><code>{"private bool canBlockDefault"}</code> |
-| <Link id="m-canstoreflipped" /><code>{"private bool canStoreFlipped"}</code> |
-| <Link id="m-currentlength" /><code>{"private float currentLength"}</code> |
-| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> |
-| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |
-| <Link id="m-impactormaps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] impactorMaps"}</code> |
-| <Link id="m-impacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> |
-| <Link id="m-insert" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinsert">{"JointInsert"}</Link>{" insert"}</code> |
-| <Link id="m-isbasedoninteraction" /><code>{"private bool isBasedOnInteraction"}</code> |
-| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> |
-| <Link id="m-length" /><code>{"private float length"}</code> |
-| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |
-| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"[] slots"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-adddurabilitytoslot" /><code>{"private bool addDurabilityToSlot"}</code> | Makes this part's durability attach to the nearest parent part that has its own durability module. |
+| <Link id="m-attemptcraft" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> attemptCraft"}</code> | Network sync that sends a craft attempt (the slot's entity id) to the server. |
+| <Link id="m-canblockdefault" /><code>{"private bool canBlockDefault"}</code> | Whether the pickup could block before crafting. Parts that can't are set to block physical only while crafted. |
+| <Link id="m-canstoreflipped" /><code>{"private bool canStoreFlipped"}</code> | Whether the crafted item may be stored flipped, see `IsStoredFlipped`. |
+| <Link id="m-currentlength" /><code>{"private float currentLength"}</code> | Length of this part plus the lengths of parts added along its axis. Sets the store scale. |
+| <Link id="m-durabilitymodule" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{" durabilityModule"}</code> | This part's durability module, if any. |
+| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> | Child components that react to the tool's hits, handed to the root's `ImpactTool` when crafted. |
+| <Link id="m-impactormaps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] impactorMaps"}</code> | Backing field for `ImpactorMaps`. |
+| <Link id="m-impacttool" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> | Backing field for `ImpactTool`. Disabled while this part is a crafted child. |
+| <Link id="m-insert" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinsert">{"JointInsert"}</Link>{" insert"}</code> | Backing field for `Insert`: the joint that plugs this part into another part's slot. |
+| <Link id="m-isbasedoninteraction" /><code>{"private bool isBasedOnInteraction"}</code> | Whether grabbing the part checks for crafting connections with the other hand's item. Default true. |
+| <Link id="m-isstarted" /><code>{"private bool isStarted"}</code> | Set once the root changed event first fires, so `ListenToRoot` can call new listeners at once. |
+| <Link id="m-length" /><code>{"private float length"}</code> | Base length of the part along its length axis. |
+| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> | Local length axis, behind `LengthAxis`. |
+| <Link id="m-mass" /><code>{"private float mass"}</code> | Rigidbody mass saved on awake, restored when the part is removed and gets a new rigidbody. |
+| <Link id="m-networkrigidbody" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkrigidbody">{"NetworkRigidbody"}</Link>{" networkRigidbody"}</code> | The part's network rigidbody. Its rigidbody is destroyed while crafted and recreated on removal. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | The part's current rigidbody, null while it is a crafted child. |
+| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"[] slots"}</code> | Backing field for `Slots`: the joint slots other parts can connect to. |
 
 </details>
 
@@ -74,9 +74,9 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> | Generic decrafting is only allowed while this part's pickup isn't crafted. |
 
 </details>
 
@@ -120,17 +120,17 @@ Network behaviour on an item that can be joined to other parts (blade into guard
 | Member | What it is |
 | --- | --- |
 | <Link id="m-attemptcraft-3" /><code>{"private void AttemptCraft("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotIdentifier)"}</code> | Asks to connect this part into a slot. The server does it at once; a client sends the request to the server. |
-| <Link id="m-break" /><code>{"private void Break("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |  |
-| <Link id="m-checkpossibleconnections" /><code>{"private void CheckPossibleConnections("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-drawlength" /><code>{"private void DrawLength(Transform insertPosition)"}</code> |  |
-| <Link id="m-getmapsonpart" /><code>{"private static void GetMapsOnPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, HashSet<"}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"> maps)"}</code> |  |
-| <Link id="m-hasallcraftedeventprerequisites" /><code>{"private bool HasAllCraftedEventPrerequisites()"}</code> |  |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |  |
-| <Link id="m-ontoplevelchildrenchanged" /><code>{"private void OnTopLevelChildrenChanged()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-processcraftedevent" /><code>{"private static void ProcessCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint primaryPartHash, uint secondaryPartHash)"}</code> |  |
-| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> |  |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |  |
+| <Link id="m-break" /><code>{"private void Break("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Server: when the pickup breaks while crafted, disconnects every part below it and itself from its parent. |
+| <Link id="m-checkpossibleconnections" /><code>{"private void CheckPossibleConnections("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Handler for the pickup's `InteractionStarted`: if the other hand holds a crafting part, creates `CraftingOptions` for the two. |
+| <Link id="m-drawlength" /><code>{"private void DrawLength(Transform insertPosition)"}</code> | Draws the part's length along its length axis as a magenta gizmo. |
+| <Link id="m-getmapsonpart" /><code>{"private static void GetMapsOnPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, HashSet<"}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"> maps)"}</code> | Collects the impactor maps of a part and of every part connected below it. |
+| <Link id="m-hasallcraftedeventprerequisites" /><code>{"private bool HasAllCraftedEventPrerequisites()"}</code> | Checks the pickup, last holder's player, prefab and parent prefab all exist before the crafted event is broadcast. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the length gizmo from the first slot, or from the part itself if it has no slots. |
+| <Link id="m-ontoplevelchildrenchanged" /><code>{"private void OnTopLevelChildrenChanged()"}</code> | Destroys the current crafting preview and checks for new connections if the pickup is held. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty. |
+| <Link id="m-processcraftedevent" /><code>{"private static void ProcessCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint primaryPartHash, uint secondaryPartHash)"}</code> | Server (or local test): broadcasts an `ItemCraftedEvent` with the two part prefab hashes on the township event bus. |
+| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceAvoidFlags)"}</code> | When the entity is replaced, respawns each connected child part and connects it to the matching slot on the replacement. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Raises the root changed event with the current top level part. |
 
 </details>
 

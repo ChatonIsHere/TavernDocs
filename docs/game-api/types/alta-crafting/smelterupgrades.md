@@ -31,11 +31,11 @@ An unlockable set of smelter abilities: extra recipes, metals it can melt for mo
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> |
-| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> |
-| <Link id="m-recipes" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bonussmelterspeed" /><code>{"private float bonusSmelterSpeed"}</code> | Backing field for `BonusSmelterSpeed`, added to the smelter speed multiplier while unlocked. |
+| <Link id="m-physicalmaterials" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"[] physicalMaterials"}</code> | Backing field for `PhysicalMaterials`: ingot materials the smelter accepts once unlocked. |
+| <Link id="m-recipes" /><code>{"private "}<Link to="/game-api/types/alta-crafting/smeltingrecipe">{"SmeltingRecipe"}</Link>{"[] recipes"}</code> | Backing field for `Recipes`: smelting recipes unlocked. |
 
 </details>
 

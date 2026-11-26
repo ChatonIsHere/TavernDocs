@@ -30,12 +30,12 @@ The player state for the character customization room. The client spawns the roo
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-customizationcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/customizationplayercontroller">{"CustomizationPlayerController"}</Link>{" customizationController"}</code> |
-| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationRoom"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-postprocesscontroller" /><code>{"private readonly IPostProcessController postProcessController"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-customizationcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/customizationplayercontroller">{"CustomizationPlayerController"}</Link>{" customizationController"}</code> | The local customization player controller while the room is open. |
+| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationRoom"}</code> | The spawned `CosmeticCustomizationManager` room. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Class logger. |
+| <Link id="m-postprocesscontroller" /><code>{"private readonly IPostProcessController postProcessController"}</code> | Post processing controller, reset when the room opens. |
 
 </details>
 
@@ -49,9 +49,9 @@ The player state for the character customization room. The client spawns the roo
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/customizationstatesettings">{"CustomizationStateSettings"}</Link>{" Settings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/customizationstatesettings">{"CustomizationStateSettings"}</Link>{" Settings { get; }"}</code> | The state's `CustomizationStateSettings` (room prefab, position, fade time and so on). |
 
 </details>
 
@@ -68,12 +68,12 @@ The player state for the character customization room. The client spawns the roo
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroycustomizationcontrollerandroom" /><code>{"private void DestroyCustomizationControllerAndRoom()"}</code> |
-| <Link id="m-repositionplayer" /><code>{"private void RepositionPlayer()"}</code> |
-| <Link id="m-spawncontroller" /><code>{"private void SpawnController()"}</code> |
-| <Link id="m-spawncustomizationroom" /><code>{"private async Task SpawnCustomizationRoom()"}</code> |
-| <Link id="m-verifycustomization" /><code>{"private async Task VerifyCustomization(bool isValid)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroycustomizationcontrollerandroom" /><code>{"private void DestroyCustomizationControllerAndRoom()"}</code> | Client: destroys the customization controller and room. |
+| <Link id="m-repositionplayer" /><code>{"private void RepositionPlayer()"}</code> | Client: turns and moves the customization controller to the room position, then fades the screen back in. |
+| <Link id="m-spawncontroller" /><code>{"private void SpawnController()"}</code> | Client: spawns the customization player controller at the room, links it to the player and initializes it locally. |
+| <Link id="m-spawncustomizationroom" /><code>{"private async Task SpawnCustomizationRoom()"}</code> | Client: loads owned cosmetics, spawns the room and makes its end button send the chosen cosmetics. |
+| <Link id="m-verifycustomization" /><code>{"private async Task VerifyCustomization(bool isValid)"}</code> | Server: checks the player owns the sent cosmetics, and randomizes from owned items if not. |
 
 </details>

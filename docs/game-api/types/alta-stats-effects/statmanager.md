@@ -30,17 +30,17 @@ Holds an entity's stats (health, hunger, speed and so on), ticks them on the ser
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-appliedmodifiers" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> appliedModifiers"}</code> |
-| <Link id="m-definitionapplications" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{"> definitionApplications"}</code> |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
-| <Link id="m-incrementalticktime" /><code>{"private float incrementalTickTime"}</code> |
-| <Link id="m-incrementalupdateentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" incrementalUpdateEntry"}</code> |
-| <Link id="m-indirectmodifiers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/indirectstatmodifier">{"IndirectStatModifier"}</Link>{"> indirectModifiers"}</code> |
-| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFull"}</code> |
-| <Link id="m-syncstat" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncStat"}</code> |
-| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-appliedmodifiers" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> appliedModifiers"}</code> | Timed modifiers currently on the stats; saved, and cancelled on `DeathReset`. |
+| <Link id="m-definitionapplications" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{"> definitionApplications"}</code> | The stats this manager has, with their defaults and ranges; backing field for `DefinitionApplications`. |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | Timeline entry for the repeating `Tick`. |
+| <Link id="m-incrementalticktime" /><code>{"private float incrementalTickTime"}</code> | Seconds between incremental ticks; 0 turns them off. |
+| <Link id="m-incrementalupdateentry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" incrementalUpdateEntry"}</code> | Timeline entry for the repeating `TickIncremental`. |
+| <Link id="m-indirectmodifiers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/indirectstatmodifier">{"IndirectStatModifier"}</Link>{"> indirectModifiers"}</code> | Indirect modifier stack for each stat that has one; saved and loaded with the manager. |
+| <Link id="m-syncfull" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncFull"}</code> | Method sync for the full stat message. |
+| <Link id="m-syncstat" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncStat"}</code> | Method sync for the single stat message. |
+| <Link id="m-ticktime" /><code>{"private float tickTime"}</code> | Seconds between `Tick` calls (default 1); 0 turns ticking off. Server only. |
 
 </details>
 
@@ -80,17 +80,17 @@ Holds an entity's stats (health, hunger, speed and so on), ticks them on the ser
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"private void Add("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-removetimedmodifier" /><code>{"private void RemoveTimedModifier("}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" modifier)"}</code> |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncsinglestat" /><code>{"private void SyncSingleStat("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int definitionIndex)"}</code> |
-| <Link id="m-syncstat-2" /><code>{"private void SyncStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
-| <Link id="m-tickincremental" /><code>{"private void TickIncremental()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"private void Add("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> | Creates a `Stat` from a stat definition application and stores it in `Stats`; called for each entry in `Awake`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates every stat from `definitionApplications`. On the server it then calls each definition's `Applied`. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: copies each definition's name onto its application entry. |
+| <Link id="m-removetimedmodifier" /><code>{"private void RemoveTimedModifier("}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{" modifier)"}</code> | Removes a timed modifier from `appliedModifiers` when it ends. |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Cancels the tick timers when the entity is destroyed. |
+| <Link id="m-syncfull-2" /><code>{"private void SyncFull("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends every stat with its full range and modifiers; sent to each player when they connect. Rejects the message if a client sends it. |
+| <Link id="m-syncsinglestat" /><code>{"private void SyncSingleStat("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int definitionIndex)"}</code> | Sends one stat, by its index in `definitionApplications`, with its full data. Rejects the message if a client sends it. |
+| <Link id="m-syncstat-2" /><code>{"private void SyncStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Server: listens to each stat's `NetworkChanged` and sends that stat to the chunk. |
+| <Link id="m-tickincremental" /><code>{"private void TickIncremental()"}</code> | Runs every `incrementalTickTime`: raises `UpdatedIncremental` and fires the external change events of changed incrementing stats. |
 
 </details>
 

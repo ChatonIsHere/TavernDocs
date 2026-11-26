@@ -37,10 +37,10 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> |
-| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-intelligence-iactiontarget-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.IActionTarget.Target { get; }"}</code> | Explicit interface property returning the `Target` field. |
+| <Link id="m-alta-intelligence-iactiontarget-weight" /><code>{"private float Alta.Intelligence.IActionTarget.Weight { get; }"}</code> | Explicit interface property returning the `Weight` field. |
 
 </details>
 

@@ -32,20 +32,20 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-callbackorder" /><code>{"private List<int> callBackOrder"}</code> |
-| <Link id="m-canbespawnedthroughcommand" /><code>{"private bool canBeSpawnedThroughCommand"}</code> |
-| <Link id="m-childcount" /><code>{"private int childCount"}</code> |
-| <Link id="m-childprefabaccumulation" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabAccumulation"}</code> |
-| <Link id="m-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabs"}</code> |
-| <Link id="m-childrencallback" /><code>{"private Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{">> childrenCallback"}</code> |
-| <Link id="m-embeddedhashes" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedHashes"}</code> |
-| <Link id="m-emptyindices" /><code>{"private HashSet<int> emptyIndices"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-hash" /><code>{"private int hash"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-positionsynclock" /><code>{"private "}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" positionSyncLock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-callbackorder" /><code>{"private List<int> callBackOrder"}</code> | Order in which save indices were registered through `GetSpawnedChildren`; callbacks run in this order after loading. |
+| <Link id="m-canbespawnedthroughcommand" /><code>{"private bool canBeSpawnedThroughCommand"}</code> | Backing field for `CanBeSpawnedThroughCommand`; cleared by `DisableSpawnThroughCommands`. |
+| <Link id="m-childcount" /><code>{"private int childCount"}</code> | Backing field for the child count reported through `ISerializeChildren`. |
+| <Link id="m-childprefabaccumulation" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabAccumulation"}</code> | Static scratch list used while child prefabs are gathered for saving or loading. |
+| <Link id="m-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> childPrefabs"}</code> | Backing field for the child prefab list reported through `ISerializeChildren`; rebuilt on each save. |
+| <Link id="m-childrencallback" /><code>{"private Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{">> childrenCallback"}</code> | Callbacks registered through `GetSpawnedChildren`, keyed by save index. |
+| <Link id="m-embeddedhashes" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedHashes"}</code> | Embedded entities keyed by their hash; used by `GetEmbedded` and when loading saved embedded entities. |
+| <Link id="m-emptyindices" /><code>{"private HashSet<int> emptyIndices"}</code> | Save indices marked empty with `AddEmptyChildAtIndex`, applied by `ProcessEmptyIndices`. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The `NetworkEntity` on the same object; backing field for `Entity`. |
+| <Link id="m-hash" /><code>{"private int hash"}</code> | Backing field for `Hash`, the prefab hash used to spawn and save it. Validated in `OnValidate`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-positionsynclock" /><code>{"private "}<Link to="/game-api/types/alta-networking/positionsyncblocker">{"PositionSyncBlocker"}</Link>{" positionSyncLock"}</code> | Flags of the blockers currently stopping position sync; `IsSyncingPosition` is true when none are set. |
 
 </details>
 
@@ -64,10 +64,10 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> |
-| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-iserializechildren-childcount" /><code>{"private int Alta.Networking.ISerializeChildren.ChildCount { get; }"}</code> | Number of child prefabs found for the save in progress. |
+| <Link id="m-alta-networking-iserializechildren-childprefabs" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkprefab-childprefab">{"NetworkPrefab.ChildPrefab"}</Link>{"> Alta.Networking.ISerializeChildren.ChildPrefabs { get; }"}</code> | Child prefabs (with their parents) found for the save in progress. |
 
 </details>
 
@@ -105,19 +105,19 @@ Root component of a spawnable networked prefab. It holds the prefab hash used to
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-accumulatechildprefabs" /><code>{"private void AccumulateChildPrefabs("}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent)"}</code> |  |
-| <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
-| <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-getchildindex" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> |  |
-| <Link id="m-getchildindex-2" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> |  |
-| <Link id="m-getspawnedchildren" /><code>{"private void Alta.Networking.ISerializeChildren.GetSpawnedChildren(int index, "}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-processemptyindices" /><code>{"private void ProcessEmptyIndices()"}</code> |  |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |  |
+| <Link id="m-accumulatechildprefabs" /><code>{"private void AccumulateChildPrefabs("}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent)"}</code> | Walks the entity's chunking children and collects every child prefab whose `SaveMode` is `Child`, so they are saved with this prefab. |
+| <Link id="m-addchild" /><code>{"private void Alta.Networking.ISerializeChildren.AddChild("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Adds a child prefab and its parent to the list being saved; `PositionRestrictor` uses it to save items it holds. |
+| <Link id="m-addemptychildatindex" /><code>{"private void Alta.Networking.ISerializeChildren.AddEmptyChildAtIndex(int index)"}</code> | During save loading, marks a child slot as empty so later child indices still line up; used by `PickupDock`. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Raises `SpawnedCount` and links each embedded entity to this prefab's entity as its parent. |
+| <Link id="m-getchildindex" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" child)"}</code> | Returns the save index of a child prefab, or of the first child under a given parent entity, or -1. Lets behaviours save which child is theirs. |
+| <Link id="m-getchildindex-2" /><code>{"private int Alta.Networking.ISerializeChildren.GetChildIndex("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" parent)"}</code> | Returns the save index of a child prefab, or of the first child under a given parent entity, or -1. Lets behaviours save which child is theirs. |
+| <Link id="m-getspawnedchildren" /><code>{"private void Alta.Networking.ISerializeChildren.GetSpawnedChildren(int index, "}<Link to="/game-api/types/alta-networking/networkprefabchildeventhandler">{"NetworkPrefabChildEventHandler"}</Link>{" callback)"}</code> | Registers a callback that runs once the child at a save index has been loaded; used by docks, populations and buildups to find their saved children again. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Lowers `SpawnedCount`. |
+| <Link id="m-processemptyindices" /><code>{"private void ProcessEmptyIndices()"}</code> | Inserts null slots for indices marked with `AddEmptyChildAtIndex` so loaded children match their saved indices. |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> | Editor reset; runs `OnValidate` to give the prefab a hash. |
 | <Link id="m-saveserializeempty-2" /><code>{"private static void SaveSerializeEmpty("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Reads past a saved prefab without loading it, used when the saved prefab no longer exists. |
-| <Link id="m-saveserializeentity" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, uint hash)"}</code> |  |
-| <Link id="m-saveserializeentity-2" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |  |
+| <Link id="m-saveserializeentity" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, uint hash)"}</code> | Saves or loads one embedded entity by hash, writing its size first so a missing entity's data can be skipped on load. |
+| <Link id="m-saveserializeentity-2" /><code>{"private void SaveSerializeEntity("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Saves or loads one embedded entity by hash, writing its size first so a missing entity's data can be skipped on load. |
 
 </details>
 

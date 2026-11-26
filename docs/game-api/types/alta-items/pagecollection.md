@@ -32,14 +32,14 @@ Asset listing the pages a kind of book can hold, in order. Looked up by hash; a 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canremovepagesfrom" /><code>{"private bool canRemovePagesFrom"}</code> |
-| <Link id="m-flairs" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" flairs"}</code> |
-| <Link id="m-initialpages" /><code>{"private int[] initialPages"}</code> |
-| <Link id="m-ishidingmaxcount" /><code>{"private bool isHidingMaxCount"}</code> |
-| <Link id="m-pagebases" /><code>{"private Object[] pageBases"}</code> |
-| <Link id="m-preferredprovider" /><code>{"private int preferredProvider"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canremovepagesfrom" /><code>{"private bool canRemovePagesFrom"}</code> | Backing field for `CanRemovePagesFrom`. |
+| <Link id="m-flairs" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings">{"FlairSettings"}</Link>{" flairs"}</code> | Backing field for `Flairs`. |
+| <Link id="m-initialpages" /><code>{"private int[] initialPages"}</code> | Indexes into `pageBases` for the pages the collection starts with. |
+| <Link id="m-ishidingmaxcount" /><code>{"private bool isHidingMaxCount"}</code> | Backing field for `IsHidingMaxCount`. |
+| <Link id="m-pagebases" /><code>{"private Object[] pageBases"}</code> | Page bases (`IPageBasis` objects) in the collection; a page's index is its position here. |
+| <Link id="m-preferredprovider" /><code>{"private int preferredProvider"}</code> | Provider index passed to `CreatePage` when generating a page. |
 
 </details>
 

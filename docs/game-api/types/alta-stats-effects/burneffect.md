@@ -1,6 +1,6 @@
 ---
 title: "BurnEffect"
-description: "Positive strength starts adding to the \"burn\" stat every tick, negative stops it."
+description: "Effect that keeps raising the target's burn stat while active."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
 
-Positive strength starts adding to the `"burn"` stat every tick, negative stops it.
+Effect that keeps raising the target's `burn` stat while active. A positive strength starts it, zero or less stops it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`EffectDefinition`](/game-api/types/alta-stats-effects/effectdefinition)
@@ -29,24 +29,24 @@ Positive strength starts adding to the `"burn"` stat every tick, negative stops 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-burningmanager" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> burningManager"}</code> |
-| <Link id="m-firetick" /><code>{"private float fireTick"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-burningmanager" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{"> burningManager"}</code> | The burn stat of each stat manager currently burning. |
+| <Link id="m-firetick" /><code>{"private float fireTick"}</code> | Burn added per stat manager update. Defaults to 1. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apply" /><code>{"protected override void Apply("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" target, float strength)"}</code> | With positive strength, hooks the target's stat updates to add burn; otherwise unhooks and forgets the target. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-burn" /><code>{"private void Burn("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-burn" /><code>{"private void Burn("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | Adds `fireTick` to the target's burn stat on each stat manager update. |
 
 </details>

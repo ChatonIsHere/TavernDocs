@@ -30,16 +30,16 @@ Fuel values for an item type, used by fuel-burning fires. An `ItemComponent`, so
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> |
-| <Link id="m-burning" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" burning"}</code> |
-| <Link id="m-burnprioritymultiplier" /><code>{"private float burnPriorityMultiplier"}</code> |
-| <Link id="m-dockedburnduration" /><code>{"private float dockedBurnDuration"}</code> |
-| <Link id="m-efficiencycap" /><code>{"private float efficiencyCap"}</code> |
-| <Link id="m-efficiencyvalue" /><code>{"private float efficiencyValue"}</code> |
-| <Link id="m-parentduration" /><code>{"private float parentDuration"}</code> |
-| <Link id="m-volume" /><code>{"private float volume"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-burnduration" /><code>{"private float burnDuration"}</code> | Seconds this fuel burns before turning into `burning` or being destroyed. Each piece varies by 15 percent. |
+| <Link id="m-burning" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" burning"}</code> | Item this fuel turns into as it burns down (for example a burnt stage), or none. |
+| <Link id="m-burnprioritymultiplier" /><code>{"private float burnPriorityMultiplier"}</code> | How much of the fire's burn this fuel takes, relative to other fuel in the fire. |
+| <Link id="m-dockedburnduration" /><code>{"private float dockedBurnDuration"}</code> | Seconds per item when burnt from a fuel dock. |
+| <Link id="m-efficiencycap" /><code>{"private float efficiencyCap"}</code> | Fire efficiency above which this fuel's burn rate is scaled down. Also used to sort fuels. |
+| <Link id="m-efficiencyvalue" /><code>{"private float efficiencyValue"}</code> | How much each piece adds to the fire's efficiency. |
+| <Link id="m-parentduration" /><code>{"private float parentDuration"}</code> | Backing field for `ParentDuration`. |
+| <Link id="m-volume" /><code>{"private float volume"}</code> | Backing field for `Volume`. |
 
 </details>
 
@@ -53,8 +53,8 @@ Fuel values for an item type, used by fuel-burning fires. An `ItemComponent`, so
 | <Link id="m-dockedburnduration-2" /><code>{"float DockedBurnDuration { get; }"}</code> | How long one item lasts in a fire's fuel dock. |
 | <Link id="m-efficiencycap-2" /><code>{"float EfficiencyCap { get; }"}</code> | Above this fire efficiency, this fuel burns more slowly. Fuel areas sort fuel by it. |
 | <Link id="m-efficiencyvalue-2" /><code>{"float EfficiencyValue { get; }"}</code> | How much heat efficiency each item adds to the fire. |
-| <Link id="m-parentduration-2" /><code>{"float ParentDuration { get; }"}</code> |  |
-| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> |  |
+| <Link id="m-parentduration-2" /><code>{"float ParentDuration { get; }"}</code> | Extra burn life added when the fuel is loaded into a fire from a save. |
+| <Link id="m-volume-2" /><code>{"float Volume { get; }"}</code> | Heat volume this fuel adds to the fire's heat point while it burns. |
 
 ## Used in
 

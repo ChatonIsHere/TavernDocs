@@ -1,6 +1,6 @@
 ---
 title: "PotDefinition"
-description: "class PotDefinition in Root.Township."
+description: "Settings for a cooking pot type: how many ingredients make a stew and how many garnishes it takes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PotDefinition
 
 A **class** in `Root.Township`, `Alta.Cooking`.
+
+Settings for a cooking pot type: how many ingredients make a stew and how many garnishes it takes. Read by `StewManager`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `ScriptableObject`
@@ -29,19 +31,19 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> |
-| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-minnumberofingredients" /><code>{"private int minNumberOfIngredients"}</code> | Backing field for `MinNumberOfIngredients`. |
+| <Link id="m-numberofgarnishes" /><code>{"private int numberOfGarnishes"}</code> | Backing field for `NumberOfGarnishes`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> |
-| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-minnumberofingredients-2" /><code>{"int MinNumberOfIngredients { get; }"}</code> | Ingredients needed before the pot checks for a recipe. Defaults to 4. |
+| <Link id="m-numberofgarnishes-2" /><code>{"int NumberOfGarnishes { get; }"}</code> | Most garnishes the pot accepts; more are rejected. Defaults to 3. |
 
 ## Used in
 

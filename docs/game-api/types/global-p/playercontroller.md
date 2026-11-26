@@ -36,26 +36,26 @@ The body a player controls: head, hands, camera, health and locomotion, as a net
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidculldistances" /><code>{"private float[] androidCullDistances"}</code> |
-| <Link id="m-androidfarclipingplane" /><code>{"private float androidFarClipingPlane"}</code> |
-| <Link id="m-cleargbuffer" /><code>{"private ClearGBuffer clearGBuffer"}</code> |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" current"}</code> |
-| <Link id="m-healthtarget" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthTarget"}</code> |
-| <Link id="m-leftcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" leftController"}</code> |
-| <Link id="m-localplayerbehaviours" /><code>{"private MonoBehaviour[] localPlayerBehaviours"}</code> |
-| <Link id="m-locomotioncontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotionController"}</code> |
-| <Link id="m-messagedisplay" /><code>{"private "}<Link to="/game-api/types/global-p/playermessagedisplay">{"PlayerMessageDisplay"}</Link>{" messageDisplay"}</code> |
-| <Link id="m-playercamera" /><code>{"private Camera playerCamera"}</code> |
-| <Link id="m-playerlight" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/variableintensityplayerlight">{"VariableIntensityPlayerLight"}</Link>{" playerLight"}</code> |
-| <Link id="m-playersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" playerSettings"}</code> |
-| <Link id="m-remoteplayerbehaviours" /><code>{"private MonoBehaviour[] remotePlayerBehaviours"}</code> |
-| <Link id="m-rightcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" rightController"}</code> |
-| <Link id="m-screenfader" /><code>{"private "}<Link to="/game-api/types/global-p/playerscreenfader">{"PlayerScreenFader"}</Link>{" screenFader"}</code> |
-| <Link id="m-setentityownerhandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" setEntityOwnerHandler"}</code> |
-| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/target">{"Target"}</Link>{" target"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidculldistances" /><code>{"private float[] androidCullDistances"}</code> | Per-layer cull distances for Android. Not used in this class. |
+| <Link id="m-androidfarclipingplane" /><code>{"private float androidFarClipingPlane"}</code> | Camera far clip distance for Android (800 by default). Not used in this class. |
+| <Link id="m-cleargbuffer" /><code>{"private ClearGBuffer clearGBuffer"}</code> | Client: G-buffer clear helper made for the local player's camera when it links. |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" current"}</code> | Backing field for `Current`, the local player's controller. |
+| <Link id="m-healthtarget" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthTarget"}</code> | Backing field for `Health`. |
+| <Link id="m-leftcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" leftController"}</code> | Backing field for `LeftController`. |
+| <Link id="m-localplayerbehaviours" /><code>{"private MonoBehaviour[] localPlayerBehaviours"}</code> | Child behaviours implementing `IInitializeAsLocalPlayer`, initialised when this becomes the local player's controller. |
+| <Link id="m-locomotioncontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" locomotionController"}</code> | Backing field for `LocomotionController`. |
+| <Link id="m-messagedisplay" /><code>{"private "}<Link to="/game-api/types/global-p/playermessagedisplay">{"PlayerMessageDisplay"}</Link>{" messageDisplay"}</code> | Backing field for `MessageDisplay`. |
+| <Link id="m-playercamera" /><code>{"private Camera playerCamera"}</code> | Backing field for `Camera`. |
+| <Link id="m-playerlight" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/variableintensityplayerlight">{"VariableIntensityPlayerLight"}</Link>{" playerLight"}</code> | Backing field for `PlayerLight`. |
+| <Link id="m-playersettings" /><code>{"private "}<Link to="/game-api/types/alta-player/playercontrollersettings">{"PlayerControllerSettings"}</Link>{" playerSettings"}</code> | Backing field for `Settings`. |
+| <Link id="m-remoteplayerbehaviours" /><code>{"private MonoBehaviour[] remotePlayerBehaviours"}</code> | Child behaviours implementing `IInitializeAsRemotePlayer`, initialised when this controller belongs to someone else (and on the server). |
+| <Link id="m-rightcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" rightController"}</code> | Backing field for `RightController`. |
+| <Link id="m-screenfader" /><code>{"private "}<Link to="/game-api/types/global-p/playerscreenfader">{"PlayerScreenFader"}</Link>{" screenFader"}</code> | Backing field for `ScreenFader`. |
+| <Link id="m-setentityownerhandler" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentityhandler">{"NetworkEntityHandler"}</Link>{" setEntityOwnerHandler"}</code> | Entity handler field. Not used in this class. |
+| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> | Message sync for `SyncPlayer`, sent to each player that connects to the entity. |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/target">{"Target"}</Link>{" target"}</code> | Backing field for `Target`. |
 
 </details>
 
@@ -101,9 +101,9 @@ The body a player controls: head, hands, camera, health and locomotion, as a net
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> | Build bake order for this controller, always 0. |
 
 </details>
 
@@ -150,14 +150,14 @@ The body a player controls: head, hands, camera, health and locomotion, as a net
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
-| <Link id="m-resetstandardvisuals" /><code>{"private void ResetStandardVisuals()"}</code> |
-| <Link id="m-serializeinteractor" /><code>{"private bool SerializeInteractor("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" otherInteractor)"}</code> |
-| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-triggeredfadein" /><code>{"private void TriggeredFadeIn("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-updatecameraculling" /><code>{"private void UpdateCameraCulling("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Explicit `IBuildRendererBakeable` build step. Does nothing. |
+| <Link id="m-resetstandardvisuals" /><code>{"private void ResetStandardVisuals()"}</code> | Client: resets post processing and returns the atmosphere to its base before waiting on a chunk load. |
+| <Link id="m-serializeinteractor" /><code>{"private bool SerializeInteractor("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" otherInteractor)"}</code> | Saves or loads the item held in one hand. On load it spawns the item and makes the hand grab it, destroying it if that fails. |
+| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Synced message with the owning `Player` entity ID. Remote clients use it to link this controller to that player. |
+| <Link id="m-triggeredfadein" /><code>{"private void TriggeredFadeIn("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Client: when the awaited chunk finishes loading, marks the player loaded and lifts the screen fade. |
+| <Link id="m-updatecameraculling" /><code>{"private void UpdateCameraCulling("}<Link to="/game-api/types/alta-utilities/gamesettings">{"GameSettings"}</Link>{" settings)"}</code> | Client: sets the camera's layer cull distance from the game settings' default culling distance. Rerun when settings change. |
 
 </details>
 

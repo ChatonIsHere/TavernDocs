@@ -1,6 +1,6 @@
 ---
 title: "PlayerKilledData"
-description: "class PlayerKilledData in Root.Township."
+description: "Payload of the ConsoleEvents.PlayerKilled console event, raised when a player enters the dead state."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerKilledData
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Payload of the `ConsoleEvents.PlayerKilled` console event, raised when a player enters the dead state. Holds the killing hit from `KilledData` plus who died.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`KilledData`](/game-api/types/alta-player/killeddata)
@@ -24,9 +26,9 @@ A **class** in `Root.Township`, `Alta.PlayerStates`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-killedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-killedplayer" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" killedPlayer"}</code> | The player who died. |
 
 ## Used in
 

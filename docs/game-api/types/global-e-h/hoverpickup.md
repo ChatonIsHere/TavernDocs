@@ -36,21 +36,21 @@ Makes a pickup float back to a set spot when let go, like the menu and customiza
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
-| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> |
-| <Link id="m-isalwaysreturning" /><code>{"private bool isAlwaysReturning"}</code> |
-| <Link id="m-ismaintainingparent" /><code>{"private bool isMaintainingParent"}</code> |
-| <Link id="m-ispositionset" /><code>{"private bool isPositionSet"}</code> |
-| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-returning" /><code>{"private Coroutine returning"}</code> |
-| <Link id="m-returnpositionthreshold" /><code>{"private float returnPositionThreshold"}</code> |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
-| <Link id="m-selectionorbrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" selectionOrbRigidbody"}</code> |
-| <Link id="m-snapdelayinseconds" /><code>{"private float snapDelayInSeconds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> | How fast the pickup accelerates while flying back. |
+| <Link id="m-cachedparent" /><code>{"private Transform cachedParent"}</code> | The pickup's original parent, restored on snap. |
+| <Link id="m-isalwaysreturning" /><code>{"private bool isAlwaysReturning"}</code> | If true, the pickup's start pose is used as its return target when none was set. |
+| <Link id="m-ismaintainingparent" /><code>{"private bool isMaintainingParent"}</code> | If true, the target is stored in the parent's local space and the pickup is re-parented on snap. |
+| <Link id="m-ispositionset" /><code>{"private bool isPositionSet"}</code> | True once a return target has been set. |
+| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> | Top speed while flying back. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Return target position (local when `isMaintainingParent`). |
+| <Link id="m-returning" /><code>{"private Coroutine returning"}</code> | The running return coroutine, if any. |
+| <Link id="m-returnpositionthreshold" /><code>{"private float returnPositionThreshold"}</code> | Squared distance at which the return counts as arrived and snaps. |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Return target rotation (local when `isMaintainingParent`). |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> | How fast the rotation turns toward the target while returning, faster when close. |
+| <Link id="m-selectionorbrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" selectionOrbRigidbody"}</code> | Faux rigidbody used to move the pickup while it returns. |
+| <Link id="m-snapdelayinseconds" /><code>{"private float snapDelayInSeconds"}</code> | Delay before snapping back when `teleportToTargetOnRelease` is off. |
 
 </details>
 
@@ -80,10 +80,10 @@ Makes a pickup float back to a set spot when let go, like the menu and customiza
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-gettarget" /><code>{"private void GetTarget(out Vector3 position, out Quaternion rotation, out float scale)"}</code> |
-| <Link id="m-returntoposition" /><code>{"private IEnumerator ReturnToPosition() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gettarget" /><code>{"private void GetTarget(out Vector3 position, out Quaternion rotation, out float scale)"}</code> | Works out the world position, rotation and scale to return to, in parent space when `isMaintainingParent` is set. |
+| <Link id="m-returntoposition" /><code>{"private IEnumerator ReturnToPosition() (iterator)"}</code> | Coroutine that flies the released pickup back to its target with faux physics, then snaps it in place. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "GlobalPagesManager"
-description: "Alta.Pages.GlobalPagesManager, a NetworkEntityBehaviour singleton (GlobalPagesManager.Instance)."
+description: "Server: records which pages (by provider and hash) have been added to the world, starting with every collection's initial pages, and saves that list."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Pages`.
 
-`Alta.Pages.GlobalPagesManager`, a `NetworkEntityBehaviour` singleton (`GlobalPagesManager.Instance`). The list is built and kept on the server and saved with the world.
+Server: records which pages (by provider and hash) have been added to the world, starting with every collection's initial pages, and saves that list. Singleton `GlobalPagesManager.Instance`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<GlobalPagesManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<GlobalPagesManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -30,41 +30,41 @@ A **class** in `Root.Township`, `Alta.Pages`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-addedpages" /><code>{"private HashSet<ValueTuple<int, uint>> addedPages"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addedpages" /><code>{"private HashSet<ValueTuple<int, uint>> addedPages"}</code> | Backing set for `AddedPages`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-addedpages-2" /><code>{"IEnumerable<ValueTuple<int, uint>> AddedPages { get; }"}</code> |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-items/globalpagesmanager">{"GlobalPagesManager"}</Link>{" Instance { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addedpages-2" /><code>{"IEnumerable<ValueTuple<int, uint>> AddedPages { get; }"}</code> | All recorded pages as provider and hash pairs. |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/alta-items/globalpagesmanager">{"GlobalPagesManager"}</Link>{" Instance { get; private set; }"}</code> | The active manager. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-pageadded" /><code>{"event Action<ValueTuple<int, uint>> PageAdded"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pageadded" /><code>{"event Action<ValueTuple<int, uint>> PageAdded"}</code> | Raised on the server when a new page is recorded. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-addpage" /><code>{"void AddPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data)"}</code> |
-| <Link id="m-addpage-2" /><code>{"void AddPage(int providerID, uint hash)"}</code> |
-| <Link id="m-dissolvepage" /><code>{"void DissolvePage("}<Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" paper, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-dissolvepage-2" /><code>{"void DissolvePage("}<Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" paper, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
-| <Link id="m-isnew" /><code>{"static bool IsNew(int providerID, uint pageHash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addpage" /><code>{"void AddPage("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data)"}</code> | Server: records a page as added and raises `PageAdded` if it was new. |
+| <Link id="m-addpage-2" /><code>{"void AddPage(int providerID, uint hash)"}</code> | Server: records a page as added and raises `PageAdded` if it was new. |
+| <Link id="m-dissolvepage" /><code>{"void DissolvePage("}<Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" paper, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Plays the dissolving page effect for a paper page, moving toward the front of the player. |
+| <Link id="m-dissolvepage-2" /><code>{"void DissolvePage("}<Link to="/game-api/types/alta-items/paperpageinstance">{"PaperPageInstance"}</Link>{" paper, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller)"}</code> | Plays the dissolving page effect for a paper page, moving toward the front of the player. |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: if nothing was loaded, fills the list with every page collection's initial pages. |
+| <Link id="m-isnew" /><code>{"static bool IsNew(int providerID, uint pageHash)"}</code> | True when the page has not been recorded yet. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `Instance`, or destroys itself if another one exists. |
 
 </details>

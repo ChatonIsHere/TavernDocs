@@ -29,21 +29,21 @@ Runs the cosmetic customization room: attaches a player's cosmetics to the dummy
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> |
-| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> |
-| <Link id="m-categoryscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" categoryScroller"}</code> |
-| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> |
-| <Link id="m-detachableparts" /><code>{"private GameObject[] detachableParts"}</code> |
-| <Link id="m-editableslots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editablecosmeticslot">{"EditableCosmeticSlot"}</Link>{"[] editableSlots"}</code> |
-| <Link id="m-israndomizing" /><code>{"private bool isRandomizing"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-originaldata" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" originalData"}</code> |
-| <Link id="m-owned" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned"}</code> |
-| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
-| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" redoPossibleChanged"}</code> |
-| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" undoPossibleChanged"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cacheredopossible" /><code>{"private bool cacheRedoPossible"}</code> | Last redo state sent to `redoPossibleChanged`. |
+| <Link id="m-cacheundopossible" /><code>{"private bool cacheUndoPossible"}</code> | Last undo state sent to `undoPossibleChanged`. |
+| <Link id="m-categoryscroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/itemscroller">{"ItemScroller"}</Link>{" categoryScroller"}</code> | Scroller of cosmetic categories, shown on initialize. |
+| <Link id="m-customizationhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationhandler">{"PlayerCustomizationHandler"}</Link>{" customizationHandler"}</code> | Backing field for `CustomizationHandler`, attached to the player's customization manager. |
+| <Link id="m-detachableparts" /><code>{"private GameObject[] detachableParts"}</code> | Objects destroyed with this manager. |
+| <Link id="m-editableslots" /><code>{"private "}<Link to="/game-api/types/alta-customization/editablecosmeticslot">{"EditableCosmeticSlot"}</Link>{"[] editableSlots"}</code> | Cosmetic slots activated with the player's cosmetics on initialize. |
+| <Link id="m-israndomizing" /><code>{"private bool isRandomizing"}</code> | Stops `Randomize` running twice at once. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-originaldata" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" originalData"}</code> | Cosmetics as they were when customizing started; `DefaultToOriginal` restores them. |
+| <Link id="m-owned" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticownershipmanager">{"CosmeticOwnershipManager"}</Link>{" owned"}</code> | Backing field for `Owned`. |
+| <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | The player being customized, kept to unhook input on destroy. |
+| <Link id="m-redopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" redoPossibleChanged"}</code> | Unity event raised with whether redo is now possible. |
+| <Link id="m-undopossiblechanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" undoPossibleChanged"}</code> | Unity event raised with whether undo is now possible. |
 
 </details>
 
@@ -83,11 +83,11 @@ Runs the cosmetic customization room: attaches a player's cosmetics to the dummy
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> |  |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Stops the cosmetics session, destroys the handler and detachable parts, and unhooks the debug inputs. |
+| <Link id="m-onitempushed" /><code>{"private void OnItemPushed()"}</code> | Called when the cosmetic history gets a new entry; refreshes the undo and redo state. |
 | <Link id="m-randomize-2" /><code>{"private void Randomize("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> | Randomizes the outfit using only owned items. Ignored while a randomize is already running. |
-| <Link id="m-startsession" /><code>{"private async Task StartSession("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> |  |
-| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> |  |
+| <Link id="m-startsession" /><code>{"private async Task StartSession("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager)"}</code> | Starts an addressable session on the player's cosmetics if one isn't running. |
+| <Link id="m-updatecache" /><code>{"private void UpdateCache()"}</code> | Fires `undoPossibleChanged` and `redoPossibleChanged` when the history's undo or redo state changes. |
 
 </details>
 

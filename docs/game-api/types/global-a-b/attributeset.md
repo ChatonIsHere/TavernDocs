@@ -29,9 +29,9 @@ Biome attribute values (such as for spawning) with an optional parent set to fal
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributes" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float> attributes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributes" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{", float> attributes"}</code> | This set's own attribute values. Missing ones fall back to the parent, or are rolled from the attribute's default range and stored. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "ProgressStatChangeHook"
-description: "class ProgressStatChangeHook in Root.Township."
+description: "A stat change hook that adds to a stat's base value along a curve while an AI action runs, one progress per agent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProgressStatChangeHook
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A stat change hook that adds to a stat's base value along a curve while an AI action runs, one progress per agent. Optionally takes the added amount back when the action ends.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`StatChangeHook`](/game-api/types/alta-intelligence/statchangehook)
@@ -28,22 +30,22 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-addedvalueovertime" /><code>{"private AnimationCurve addedValueOverTime"}</code> |
-| <Link id="m-isnormalizedtime" /><code>{"private bool isNormalizedTime"}</code> |
-| <Link id="m-progresses" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook-topicprogress">{"ProgressStatChangeHook.TopicProgress"}</Link>{"> progresses"}</code> |
-| <Link id="m-removeonend" /><code>{"private bool removeOnEnd"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addedvalueovertime" /><code>{"private AnimationCurve addedValueOverTime"}</code> | Curve of the total amount added to the stat over time. |
+| <Link id="m-isnormalizedtime" /><code>{"private bool isNormalizedTime"}</code> | If true, curve time runs from 0 to 1 over the action's editor duration instead of in seconds. |
+| <Link id="m-progresses" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook-topicprogress">{"ProgressStatChangeHook.TopicProgress"}</Link>{"> progresses"}</code> | Running progress per agent; each one updates the stat every frame. |
+| <Link id="m-removeonend" /><code>{"private bool removeOnEnd"}</code> | If true, the amount added is taken off the stat again when the action ends. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-valueovertime" /><code>{"float ValueOverTime(float time)"}</code> |
-| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
-| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-valueovertime" /><code>{"float ValueOverTime(float time)"}</code> | Evaluates the added-value curve at a time (seconds, or normalized to the action's duration). |
+| <Link id="m-affectonend" /><code>{"protected override void AffectOnEnd("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Stops the agent's running progress, removing what it added if `removeOnEnd` is set. |
+| <Link id="m-affectonstart" /><code>{"protected override void AffectOnStart("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" active)"}</code> | Starts a new progress for the action's agent, replacing any progress already running for it. |
 
 ## Used in
 

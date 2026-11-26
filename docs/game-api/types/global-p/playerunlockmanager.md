@@ -30,15 +30,15 @@ A player's unlock progress for station chains such as the climbing tower: perman
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> |
-| <Link id="m-checkpoint" /><code>{"private Vector3 checkpoint"}</code> |
-| <Link id="m-currentunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-orbs" /><code>{"private HashSet<uint> orbs"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-unlocks" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> unlocks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-analyticsservice" /><code>{"private "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService"}</code> | Injected analytics service used for unlock analytics. |
+| <Link id="m-checkpoint" /><code>{"private Vector3 checkpoint"}</code> | Backing field for `Checkpoint`. Saved, not synced. |
+| <Link id="m-currentunlock" /><code>{"private "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" currentUnlock"}</code> | Backing field for `CurrentUnlock`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-orbs" /><code>{"private HashSet<uint> orbs"}</code> | Backing field for `Orbs`. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for `SyncAll`, sent on connect and whenever unlocks change. |
+| <Link id="m-unlocks" /><code>{"private HashSet<"}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{"> unlocks"}</code> | Backing field for `Unlocks`: the permanent unlocks, applied to the player when loading finishes. |
 
 </details>
 
@@ -76,16 +76,16 @@ A player's unlock progress for station chains such as the climbing tower: perman
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-notifyplayerunlocksmodified" /><code>{"private void NotifyPlayerUnlocksModified()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-setupplayerunlockanalytics" /><code>{"private void SetupPlayerUnlockAnalytics("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> |
-| <Link id="m-syncall" /><code>{"private void SyncAll("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-synccurrentunlock" /><code>{"private void SyncCurrentUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncorbs" /><code>{"private void SyncOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncpermanentunlocks" /><code>{"private void SyncPermanentUnlocks("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncplayerunlockstoclient" /><code>{"private void SyncPlayerUnlocksToClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-notifyplayerunlocksmodified" /><code>{"private void NotifyPlayerUnlocksModified()"}</code> | Fires `Modified`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the local-player-set handler. |
+| <Link id="m-setupplayerunlockanalytics" /><code>{"private void SetupPlayerUnlockAnalytics("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" localPlayer)"}</code> | Attaches unlock analytics when this manager belongs to the local player. |
+| <Link id="m-syncall" /><code>{"private void SyncAll("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Server to client: syncs orbs, the current unlock and the permanent unlocks, then fires `Modified` on clients. |
+| <Link id="m-synccurrentunlock" /><code>{"private void SyncCurrentUnlock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the current (in-progress) unlock, or that there is none. |
+| <Link id="m-syncorbs" /><code>{"private void SyncOrbs("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the set of orb indexes, 4 bits each, so at most 15 orbs. |
+| <Link id="m-syncpermanentunlocks" /><code>{"private void SyncPermanentUnlocks("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the full set of permanent unlocks by hash. |
+| <Link id="m-syncplayerunlockstoclient" /><code>{"private void SyncPlayerUnlocksToClient()"}</code> | Server: sends everything to chunks and fires `Modified`. |
 
 </details>
 

@@ -38,26 +38,26 @@ Base for creature AI on a networked creature. On the server it registers with `A
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-actionstarttime" /><code>{"private float actionStartTime"}</code> |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |
-| <Link id="m-channelevents" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/agent-channelevent">{"Agent.ChannelEvent"}</Link>{"[] channelEvents"}</code> |
-| <Link id="m-collision" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" collision"}</code> |
-| <Link id="m-director" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/director">{"Director"}</Link>{" director"}</code> |
-| <Link id="m-eventmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/agent-channelevent">{"Agent.ChannelEvent"}</Link>{"> eventMap"}</code> |
-| <Link id="m-haswalker" /><code>{"private bool hasWalker"}</code> |
-| <Link id="m-hurtreducepersecond" /><code>{"private float hurtReducePerSecond"}</code> |
-| <Link id="m-ignoretimers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", TimeSpan> ignoreTimers"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> |
-| <Link id="m-providedtargets" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> providedTargets"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-syncevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncEvent"}</code> |
-| <Link id="m-tempremoving" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> tempRemoving"}</code> |
-| <Link id="m-updateinterval" /><code>{"private float updateInterval"}</code> |
-| <Link id="m-walker" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" walker"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionstarttime" /><code>{"private float actionStartTime"}</code> | Time the current action started. Used by `ActionDuration` and `NextUpdateProgress`. |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> | Backing field for `NetworkAnimator`. |
+| <Link id="m-channelevents" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/agent-channelevent">{"Agent.ChannelEvent"}</Link>{"[] channelEvents"}</code> | Backing field for `ChannelEvents`: Unity events fired by actions on each hook channel, optionally networked. |
+| <Link id="m-collision" /><code>{"private "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" collision"}</code> | Backing field for `Collision`. |
+| <Link id="m-director" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/director">{"Director"}</Link>{" director"}</code> | Backing field for `Director`. |
+| <Link id="m-eventmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/hookeventchannel">{"HookEventChannel"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/agent-channelevent">{"Agent.ChannelEvent"}</Link>{"> eventMap"}</code> | Channel to event lookup built in `Initialize`. Clients only get networked channels. |
+| <Link id="m-haswalker" /><code>{"private bool hasWalker"}</code> | Backing field for `HasWalker`, set in `OnValidate` when a walker is assigned. |
+| <Link id="m-hurtreducepersecond" /><code>{"private float hurtReducePerSecond"}</code> | How fast hurt values per attacker fade. 0.1 per second by default. |
+| <Link id="m-ignoretimers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", TimeSpan> ignoreTimers"}</code> | Targets that `RemoveTarget` told the agent to ignore, with the time the ignore ends. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-nextupdate" /><code>{"private float nextUpdate"}</code> | Time of the next action re-pick. Set to max for actions that can't be cancelled, 0 when an action ends. |
+| <Link id="m-providedtargets" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> providedTargets"}</code> | Targets added through `AddTarget`. Hurt targets not in here are dropped when their hurt fades. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Backing field for `Rigidbody`. |
+| <Link id="m-syncevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncEvent"}</code> | Method sync the server uses to send networked channel events to clients. |
+| <Link id="m-tempremoving" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{"> tempRemoving"}</code> | Shared scratch list used by `UpdateHurt`. |
+| <Link id="m-updateinterval" /><code>{"private float updateInterval"}</code> | Backing field for `UpdateInterval`: seconds between action re-picks. 0.1 by default. |
+| <Link id="m-walker" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/walker">{"Walker"}</Link>{" walker"}</code> | Backing field for `Walker`, the pathfinding walker. Its object is off until the AI initializes. |
 
 </details>
 
@@ -89,10 +89,10 @@ Base for creature AI on a networked creature. On the server it registers with `A
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-intelligence-ilinkedagent-node" /><code>{"private LinkedListNode<"}<Link to="/game-api/types/alta-intelligence/ilinkedagent">{"ILinkedAgent"}</Link>{"> Alta.Intelligence.ILinkedAgent.Node { get; set; }"}</code> |
-| <Link id="m-alta-intelligence-ilinkedagent-priority" /><code>{"private int Alta.Intelligence.ILinkedAgent.Priority { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-intelligence-ilinkedagent-node" /><code>{"private LinkedListNode<"}<Link to="/game-api/types/alta-intelligence/ilinkedagent">{"ILinkedAgent"}</Link>{"> Alta.Intelligence.ILinkedAgent.Node { get; set; }"}</code> | This agent's node in the `AgentUpdater` list. |
+| <Link id="m-alta-intelligence-ilinkedagent-priority" /><code>{"private int Alta.Intelligence.ILinkedAgent.Priority { get; set; }"}</code> | Update priority set by `AgentUpdater`. Gizmos colour agents by it. |
 
 </details>
 
@@ -126,16 +126,16 @@ Base for creature AI on a networked creature. On the server it registers with `A
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeactionfinished" /><code>{"private void ActiveActionFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> |
-| <Link id="m-checkchange" /><code>{"private bool Alta.Intelligence.ILinkedAgent.CheckChange()"}</code> |
-| <Link id="m-destroyed" /><code>{"private void Destroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-healthchanged" /><code>{"private void HealthChanged("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject, float changeAmount, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" damage)"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-syncevent-2" /><code>{"private void SyncEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int eventIndex)"}</code> |
-| <Link id="m-updateagent" /><code>{"private void Alta.Intelligence.ILinkedAgent.UpdateAgent()"}</code> |
-| <Link id="m-updatehurt" /><code>{"private void UpdateHurt()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeactionfinished" /><code>{"private void ActiveActionFinished("}<Link to="/game-api/types/alta-intelligence/iactiveaction">{"IActiveAction"}</Link>{" finished)"}</code> | Clears the active action when it finishes or is cancelled, so the agent picks a new one on its next update. |
+| <Link id="m-checkchange" /><code>{"private bool Alta.Intelligence.ILinkedAgent.CheckChange()"}</code> | Called by `AgentUpdater`: picks a new action once the update interval has passed, if enabled. |
+| <Link id="m-destroyed" /><code>{"private void Destroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Server: deregisters from `AgentUpdater` and cancels the active action when the entity is destroyed. |
+| <Link id="m-healthchanged" /><code>{"private void HealthChanged("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject, float changeAmount, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" damage)"}</code> | Server: when the agent takes damage from a wielder, adds that target to `Hurt` and probably to the decider's targets. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor: draws a small cube coloured by update priority. |
+| <Link id="m-syncevent-2" /><code>{"private void SyncEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int eventIndex)"}</code> | Method sync handler: remote clients fire the channel event the server sent. |
+| <Link id="m-updateagent" /><code>{"private void Alta.Intelligence.ILinkedAgent.UpdateAgent()"}</code> | Called by `AgentUpdater` each update: decays hurt, checks the target still exists and updates the active action. |
+| <Link id="m-updatehurt" /><code>{"private void UpdateHurt()"}</code> | Lowers each hurt value by `hurtReducePerSecond` and forgets targets that hit 0 or no longer exist. |
 
 </details>
 

@@ -30,10 +30,10 @@ A pickup that works as a key. While inside a lock it's held at the lock's positi
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-colliderstodisable" /><code>{"private GameObject[] collidersToDisable"}</code> |
-| <Link id="m-tipoffset" /><code>{"private Vector3 tipOffset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colliderstodisable" /><code>{"private GameObject[] collidersToDisable"}</code> | Objects moved to the Hand Triggers layer by `SetColliders(false)` and back to Default with true. |
+| <Link id="m-tipoffset" /><code>{"private Vector3 tipOffset"}</code> | Backing field for `TipOffset`, the key tip's local offset. |
 
 </details>
 
@@ -60,11 +60,11 @@ A pickup that works as a key. While inside a lock it's held at the lock's positi
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-deregisterik" /><code>{"private void DeRegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-registerik" /><code>{"private void RegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-reposition" /><code>{"private void Reposition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deregisterik" /><code>{"private void DeRegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Unhooks `Reposition` from the holding player's IK updates when the interaction ends. |
+| <Link id="m-registerik" /><code>{"private void RegisterIK("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Hooks `Reposition` into the holding player's IK updates when a player starts holding the key. |
+| <Link id="m-reposition" /><code>{"private void Reposition()"}</code> | After IK runs, snaps the key to `LockPosition` facing `LookAtLock` while it's inside a lock. |
 
 </details>
 

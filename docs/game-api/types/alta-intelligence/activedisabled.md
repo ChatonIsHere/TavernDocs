@@ -1,6 +1,6 @@
 ---
 title: "ActiveDisabled"
-description: "class ActiveDisabled in Root.Township."
+description: "Server: running action that does nothing, so the creature sits idle while it runs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActiveDisabled
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Server: running action that does nothing, so the creature sits idle while it runs.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`BasicActiveAction<Agent, AgentDisabledSettings>`](/game-api/types/alta-intelligence/basicactiveaction-tagent-tsettings)
@@ -24,7 +26,7 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> |
-| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"override void Update(bool hasTarget)"}</code> | Does nothing. |
+| <Link id="m-onstart" /><code>{"protected override void OnStart()"}</code> | Does nothing. |

@@ -30,17 +30,17 @@ Base for the two ends of a crafting join: `JointSlot` (receives) and the insert 
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-connected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" connected"}</code> |
-| <Link id="m-connectedobjects" /><code>{"private List<GameObject> connectedObjects"}</code> |
-| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> |
-| <Link id="m-disconnected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" disconnected"}</code> |
-| <Link id="m-disconnectedobjects" /><code>{"private List<GameObject> disconnectedObjects"}</code> |
-| <Link id="m-glow" /><code>{"private Renderer glow"}</code> |
-| <Link id="m-glowcolor" /><code>{"private static readonly int glowColor"}</code> |
-| <Link id="m-glowproperties" /><code>{"private MaterialPropertyBlock glowProperties"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" connected"}</code> | Event behind `Connected`, invoked by `OnJointConnected`. |
+| <Link id="m-connectedobjects" /><code>{"private List<GameObject> connectedObjects"}</code> | Objects shown only while the joint is connected. |
+| <Link id="m-craftingpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" craftingPart"}</code> | Backing field for `CraftingPart`, found in the parents on first use. |
+| <Link id="m-disconnected" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointpointevent">{"JointPointEvent"}</Link>{" disconnected"}</code> | Event behind `Disconnected`, invoked by `OnJointDisconnected`. |
+| <Link id="m-disconnectedobjects" /><code>{"private List<GameObject> disconnectedObjects"}</code> | Objects shown only while the joint is disconnected. |
+| <Link id="m-glow" /><code>{"private Renderer glow"}</code> | Renderer that glows to show the joint. `OnValidate` finds a child named Glow if unset. |
+| <Link id="m-glowcolor" /><code>{"private static readonly int glowColor"}</code> | Shader property ID for the glow colour (`_EmisColor`). |
+| <Link id="m-glowproperties" /><code>{"private MaterialPropertyBlock glowProperties"}</code> | Material property block used to set the glow colour. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -80,9 +80,9 @@ Base for the two ends of a crafting join: `JointSlot` (receives) and the insert 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-setobjectsactive" /><code>{"private void SetObjectsActive(bool isConnected)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setobjectsactive" /><code>{"private void SetObjectsActive(bool isConnected)"}</code> | Shows `connectedObjects` and hides `disconnectedObjects` when connected, and the other way round. |
 
 </details>
 

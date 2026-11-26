@@ -35,29 +35,29 @@ A `Chunk` that is a place in the world, with bounds, neighbours, an environment 
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-alllocationchunks" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> allLocationChunks"}</code> |
-| <Link id="m-androidnormalpointer" /><code>{"private List<string> androidNormalPointer"}</code> |
-| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> |
-| <Link id="m-bufferbounds" /><code>{"private Bounds bufferBounds"}</code> |
-| <Link id="m-bufferboundsmax" /><code>{"private Vector3 bufferBoundsMax"}</code> |
-| <Link id="m-bufferboundsmin" /><code>{"private Vector3 bufferBoundsMin"}</code> |
-| <Link id="m-buffersize" /><code>{"private const float BufferSize"}</code> |
-| <Link id="m-chunkregion" /><code>{"private "}<Link to="/game-api/types/alta-menus/chunkregion">{"ChunkRegion"}</Link>{" chunkRegion"}</code> |
-| <Link id="m-collideronlypointer" /><code>{"private List<string> colliderOnlyPointer"}</code> |
-| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkconnections">{"ChunkConnections"}</Link>{" connections"}</code> |
-| <Link id="m-ecosystem" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/basicecosystem">{"BasicEcosystem"}</Link>{" ecosystem"}</code> |
-| <Link id="m-environment" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkenvironment">{"ChunkEnvironment"}</Link>{" environment"}</code> |
-| <Link id="m-hassetlocationchunks" /><code>{"private static bool hasSetLocationChunks"}</code> |
-| <Link id="m-isoverridingsafeposition" /><code>{"private bool isOverridingSafePosition"}</code> |
-| <Link id="m-isskippingstaticcontent" /><code>{"private bool isSkippingStaticContent"}</code> |
-| <Link id="m-isusingcustomloaddistance" /><code>{"private bool isUsingCustomLoadDistance"}</code> |
-| <Link id="m-loaddistance" /><code>{"private float loadDistance"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-normalpointer" /><code>{"private List<string> normalPointer"}</code> |
-| <Link id="m-positions" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkpositions">{"ChunkPositions"}</Link>{" positions"}</code> |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alllocationchunks" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> allLocationChunks"}</code> | Static set behind `AllLocationChunks`; chunks add themselves on `Initialize` and remove themselves on destroy. |
+| <Link id="m-androidnormalpointer" /><code>{"private List<string> androidNormalPointer"}</code> | Content pointers loaded instead of `normalPointer` on Android. |
+| <Link id="m-bounds" /><code>{"private Bounds bounds"}</code> | Backing field for `Bounds`, the area the chunk covers. |
+| <Link id="m-bufferbounds" /><code>{"private Bounds bufferBounds"}</code> | `Bounds` grown by `BufferSize`; backing field for `BufferBounds`. |
+| <Link id="m-bufferboundsmax" /><code>{"private Vector3 bufferBoundsMax"}</code> | Top corner of `bufferBounds`; the upper limit when positions are serialized for this chunk. |
+| <Link id="m-bufferboundsmin" /><code>{"private Vector3 bufferBoundsMin"}</code> | Bottom corner of `bufferBounds`; the lower limit when positions are serialized for this chunk. |
+| <Link id="m-buffersize" /><code>{"private const float BufferSize"}</code> | How much (10 units) `BufferBounds` is larger than `Bounds` in total size. |
+| <Link id="m-chunkregion" /><code>{"private "}<Link to="/game-api/types/alta-menus/chunkregion">{"ChunkRegion"}</Link>{" chunkRegion"}</code> | Which region the chunk belongs to (overworld by default); can be changed with `SetLocationDestination`. |
+| <Link id="m-collideronlypointer" /><code>{"private List<string> colliderOnlyPointer"}</code> | Content pointers loaded on a headless server instead of the normal ones, probably the collider-only version of the static content. |
+| <Link id="m-connections" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkconnections">{"ChunkConnections"}</Link>{" connections"}</code> | Backing field for `Connections`: the chunk's links to its neighbours. |
+| <Link id="m-ecosystem" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/basicecosystem">{"BasicEcosystem"}</Link>{" ecosystem"}</code> | The `BasicEcosystem` on the same object, passed to the environment in `Initialize`. |
+| <Link id="m-environment" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkenvironment">{"ChunkEnvironment"}</Link>{" environment"}</code> | Backing field for `Environment`; also supplies the chunk's `SpawnData`. |
+| <Link id="m-hassetlocationchunks" /><code>{"private static bool hasSetLocationChunks"}</code> | Set once `GetLocationChunksInPlayMode` has filled its cache. |
+| <Link id="m-isoverridingsafeposition" /><code>{"private bool isOverridingSafePosition"}</code> | When set, the chunk the local player is in changes how the player's safe position is tracked; read through the static `IsOverridingSafePosition`. |
+| <Link id="m-isskippingstaticcontent" /><code>{"private bool isSkippingStaticContent"}</code> | Backing field for `IsSkippingStaticContent`. |
+| <Link id="m-isusingcustomloaddistance" /><code>{"private bool isUsingCustomLoadDistance"}</code> | When set, `loadDistance` replaces the streaming settings' load radius for this chunk. |
+| <Link id="m-loaddistance" /><code>{"private float loadDistance"}</code> | Custom load radius (default 3) used when `isUsingCustomLoadDistance` is set. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-normalpointer" /><code>{"private List<string> normalPointer"}</code> | Content pointers for the chunk's static content on non-Android clients. |
+| <Link id="m-positions" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkpositions">{"ChunkPositions"}</Link>{" positions"}</code> | Backing field for `Positions`; chunks with surfaces are also added to `ContentLocationChunks`. |
+| <Link id="m-priority" /><code>{"private int priority"}</code> | Backing field for `Priority`; when chunks overlap, the chunk lookup picks the one with the highest priority. |
 
 </details>
 
@@ -112,10 +112,10 @@ A `Chunk` that is a place in the world, with bounds, neighbours, an environment 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getlocationchunksineditmode" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetLocationChunksInEditMode()"}</code> |
-| <Link id="m-getlocationchunksinplaymode" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetLocationChunksInPlayMode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getlocationchunksineditmode" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetLocationChunksInEditMode()"}</code> | Editor only: refills `allLocationChunks` with every `LocationChunk` in the scene when `IsRecheckingChunks` is set. |
+| <Link id="m-getlocationchunksinplaymode" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetLocationChunksInPlayMode()"}</code> | Editor play mode: finds every `LocationChunk` once and caches the set. |
 
 </details>
 

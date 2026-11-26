@@ -41,28 +41,28 @@ Moves and turns a player's rig and syncs it. The owning client is in charge of i
 <details>
 <summary>20 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-anchorposition" /><code>{"private Vector3 anchorPosition"}</code> |
-| <Link id="m-anchorrotation" /><code>{"private Quaternion anchorRotation"}</code> |
-| <Link id="m-anglefromanchortocalleventdot" /><code>{"private float angleFromAnchorToCallEventDot"}</code> |
-| <Link id="m-anglethresholddot" /><code>{"private float angleThresholdDot"}</code> |
-| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> |
-| <Link id="m-distancefromanchortocalleventsquared" /><code>{"private float distanceFromAnchorToCallEventSquared"}</code> |
-| <Link id="m-isstreaming" /><code>{"private bool isStreaming"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-movementthresholdsquared" /><code>{"private float movementThresholdSquared"}</code> |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
-| <Link id="m-positionserializer" /><code>{"private "}<Link to="/game-api/types/global-p/positionserializer">{"PositionSerializer"}</Link>{" positionSerializer"}</code> |
-| <Link id="m-snapdistancesquared" /><code>{"private float snapDistanceSquared"}</code> |
-| <Link id="m-statsettings" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotionstatsettings">{"LocomotionStatSettings"}</Link>{" statSettings"}</code> |
-| <Link id="m-syncfacetowardsxz" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncFaceTowardsXZ"}</code> |
-| <Link id="m-syncmovetoandfacetowardsxz" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{"> syncMoveToAndFaceTowardsXZ"}</code> |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
-| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> |
-| <Link id="m-weightspeedmultiplier" /><code>{"private AnimationCurve weightSpeedMultiplier"}</code> |
-| <Link id="m-weightstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" weightStat"}</code> |
-| <Link id="m-weightstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" weightStatDefinition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-anchorposition" /><code>{"private Vector3 anchorPosition"}</code> | Last position that raised the position events in `Update`. |
+| <Link id="m-anchorrotation" /><code>{"private Quaternion anchorRotation"}</code> | Last rotation that raised the rotation events in `Update`. |
+| <Link id="m-anglefromanchortocalleventdot" /><code>{"private float angleFromAnchorToCallEventDot"}</code> | How far the rotation must turn from the anchor before `Update` raises the rotation events, as a dot. About 20 degrees. |
+| <Link id="m-anglethresholddot" /><code>{"private float angleThresholdDot"}</code> | Rotation change below this (as a dot) isn't streamed. |
+| <Link id="m-currentrotate" /><code>{"private Coroutine currentRotate"}</code> | Running `LerpRotation` coroutine, stopped when a new rotation starts. |
+| <Link id="m-distancefromanchortocalleventsquared" /><code>{"private float distanceFromAnchorToCallEventSquared"}</code> | Squared distance the player must move from the anchor before `Update` raises the position events. |
+| <Link id="m-isstreaming" /><code>{"private bool isStreaming"}</code> | Backing field for `IsStreaming`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-movementthresholdsquared" /><code>{"private float movementThresholdSquared"}</code> | Squared movement below this isn't streamed. |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | Backing field for `PlayerController`. |
+| <Link id="m-positionserializer" /><code>{"private "}<Link to="/game-api/types/global-p/positionserializer">{"PositionSerializer"}</Link>{" positionSerializer"}</code> | Holds and serializes the streamed position and rotation, and the movement context. |
+| <Link id="m-snapdistancesquared" /><code>{"private float snapDistanceSquared"}</code> | Squared distance at which a client snaps a remote player to the streamed position and logs a warning instead of lerping. Defaults to 2 m. |
+| <Link id="m-statsettings" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotionstatsettings">{"LocomotionStatSettings"}</Link>{" statSettings"}</code> | Which stats drive the speed and cripple modifiers. |
+| <Link id="m-syncfacetowardsxz" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<Vector3> syncFaceTowardsXZ"}</code> | Method sync for `SyncFaceRequest`. |
+| <Link id="m-syncmovetoandfacetowardsxz" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{"> syncMoveToAndFaceTowardsXZ"}</code> | Method sync for `SyncMoveToAndFaceRequest`. |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> | The transform that's moved and rotated, cached from this object. |
+| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> | Constant 30. Not used by this class. |
+| <Link id="m-weightspeedmultiplier" /><code>{"private AnimationCurve weightSpeedMultiplier"}</code> | Curve from the weight stat's value to a speed multiplier. |
+| <Link id="m-weightstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" weightStat"}</code> | The player's weight stat, looked up on first use. |
+| <Link id="m-weightstatdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" weightStatDefinition"}</code> | Stat definition for carried weight. When unset, weight doesn't slow the player. |
 
 </details>
 
@@ -86,11 +86,11 @@ Moves and turns a player's rig and syncs it. The owning client is in charge of i
 <details>
 <summary>3 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> | Explicit `INetworkSerialized` property: at most 99 bits per write. |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | Explicit `INetworkSerialized` property: returns the static `prepareForWriteTimer`. |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | Explicit `INetworkSerialized` property: returns the static `serializeTimer`. |
 
 </details>
 
@@ -128,24 +128,24 @@ Moves and turns a player's rig and syncs it. The owning client is in charge of i
 <details>
 <summary>16 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-disableonapply" /><code>{"private bool DisableOnApply()"}</code> |
-| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
-| <Link id="m-internalmovetoandfacetowardsxz" /><code>{"private void InternalMoveToAndFaceTowardsXZ(Vector3 position, Vector3 forward)"}</code> |
-| <Link id="m-lerprotation" /><code>{"private IEnumerator LerpRotation(Quaternion rotation, float duration) (iterator)"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-onpositionabouttochange" /><code>{"private void OnPositionAboutToChange(Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
-| <Link id="m-onpositionchanged" /><code>{"private void OnPositionChanged(Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
-| <Link id="m-onrotationchanged" /><code>{"private void OnRotationChanged(Quaternion oldRotation, Quaternion newRotation)"}</code> |
-| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> |
-| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |
-| <Link id="m-shouldsendsync" /><code>{"private bool ShouldSendSync("}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
-| <Link id="m-syncfacerequest" /><code>{"private void SyncFaceRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 forward)"}</code> |
-| <Link id="m-syncmovement-2" /><code>{"private void SyncMovement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/locomotioncontroller-teleportargument">{"LocomotionController.TeleportArgument"}</Link>{" arguments)"}</code> |
-| <Link id="m-syncmovetoandfacerequest" /><code>{"private void SyncMoveToAndFaceRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{" positionAndRotationTarget)"}</code> |
-| <Link id="m-syncrotation-2" /><code>{"private void SyncRotation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Quaternion toRotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disableonapply" /><code>{"private bool DisableOnApply()"}</code> | Inspector helper that disables the component when `teleportStyle` is applied. |
+| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> | Client, for other players: lerps the transform toward the last streamed position and rotation. |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | Explicit `IInitializeAsLocalPlayer` method: follows the speed and cripple stats into `SpeedStatModifier` and `CrippledStatSpeedModifier`. |
+| <Link id="m-internalmovetoandfacetowardsxz" /><code>{"private void InternalMoveToAndFaceTowardsXZ(Vector3 position, Vector3 forward)"}</code> | Repositions the player and then turns them to face a direction. |
+| <Link id="m-lerprotation" /><code>{"private IEnumerator LerpRotation(Quaternion rotation, float duration) (iterator)"}</code> | Coroutine that smooth-damps the rotation to a target over a duration. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws a sphere at the streamed live position while playing. |
+| <Link id="m-onpositionabouttochange" /><code>{"private void OnPositionAboutToChange(Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Fires `PositionAboutToChange`, logging any exception. |
+| <Link id="m-onpositionchanged" /><code>{"private void OnPositionChanged(Vector3 oldPosition, Vector3 newPosition, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Fires `PositionChanged`, and `DistanceTravelled` for teleports, repositions and smooth movement. |
+| <Link id="m-onrotationchanged" /><code>{"private void OnRotationChanged(Quaternion oldRotation, Quaternion newRotation)"}</code> | Fires `RotationChanged` and `RelativeRotation`, logging any exception. |
+| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> | Explicit `INetworkSerialized` method: whether there's movement to stream, skipping changes under the movement and angle thresholds. |
+| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | Explicit `INetworkSerialized` method: streams position and rotation; the server and far-off clients snap to it. |
+| <Link id="m-shouldsendsync" /><code>{"private bool ShouldSendSync("}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Whether a move should go as its own message: always when not streaming, otherwise only for reposition and recovery. |
+| <Link id="m-syncfacerequest" /><code>{"private void SyncFaceRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Vector3 forward)"}</code> | Server to the owning client: turns the local player to face a direction. |
+| <Link id="m-syncmovement-2" /><code>{"private void SyncMovement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-i-l/locomotioncontroller-teleportargument">{"LocomotionController.TeleportArgument"}</Link>{" arguments)"}</code> | Syncs a teleport or move. The server only accepts it from the owning player, applies it, counts distance travelled and relays it. |
+| <Link id="m-syncmovetoandfacerequest" /><code>{"private void SyncMoveToAndFaceRequest("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-p/positionandrotationtarget">{"PositionAndRotationTarget"}</Link>{" positionAndRotationTarget)"}</code> | Server to the owning client: moves the local player and turns them. |
+| <Link id="m-syncrotation-2" /><code>{"private void SyncRotation("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, Quaternion toRotation)"}</code> | Syncs a rotation. The server only accepts it from the owning player, then relays it. |
 
 </details>
 

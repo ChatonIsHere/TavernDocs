@@ -1,6 +1,6 @@
 ---
 title: "BurnStat"
-description: "class BurnStat in Root.Township."
+description: "Stat definition for being on fire."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BurnStat
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+Stat definition for being on fire. Above the ignite threshold it drains the `health` stat every stat update, and the burn value falls by itself over time.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`ControlledStat`](/game-api/types/alta-stats-effects/controlledstat)
@@ -29,22 +31,22 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> |
-| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> |
-| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-damagebyvalue" /><code>{"private AnimationCurve damageByValue"}</code> | Health lost per stat update for a given burn value. |
+| <Link id="m-ignitethreshold" /><code>{"private float igniteThreshold"}</code> | Backing field for `IgniteThreshold`. |
+| <Link id="m-putoutspeed" /><code>{"private float putOutSpeed"}</code> | Burn value removed every stat update while above 0. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ignitethreshold-2" /><code>{"float IgniteThreshold { get; }"}</code> | Burn value above which the target starts taking damage. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Hooks the stat up: starts the health drain above `igniteThreshold`, stops it at 0, and lowers the burn by `putOutSpeed` each update. |

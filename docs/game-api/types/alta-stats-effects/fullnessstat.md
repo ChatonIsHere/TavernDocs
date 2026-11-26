@@ -1,6 +1,6 @@
 ---
 title: "FullnessStat"
-description: "While fullness is above 0, a timer counts down by 1 / tickRatePerHungerThresholdlevel each tick, where level is hunger's current level."
+description: "Threshold stat for food fullness."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-While fullness is above 0, a timer counts down by `1 / tickRatePerHungerThreshold[level]` each tick, where `level` is hunger's current level.
+Threshold stat for food fullness. It ticks down by one at a rate that depends on the current hunger level.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`ThresholdStat`](/game-api/types/alta-stats-effects/thresholdstat)
@@ -29,16 +29,16 @@ While fullness is above 0, a timer counts down by `1 / tickRatePerHungerThreshol
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> |
-| <Link id="m-tickrateperhungerthreshold" /><code>{"private int[] tickRatePerHungerThreshold"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hungerdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/hungerstat">{"HungerStat"}</Link>{" hungerDefinition"}</code> | The hunger stat whose level sets the tick rate. |
+| <Link id="m-tickrateperhungerthreshold" /><code>{"private int[] tickRatePerHungerThreshold"}</code> | Stat updates per point of fullness lost, one entry per hunger level. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> |
-| <Link id="m-checkserialize" /><code>{"override bool CheckSerialize(float oldValue, float newValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applied" /><code>{"override void Applied("}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat)"}</code> | Sets up the threshold levels and a stat update that removes 1 fullness after a number of updates picked by hunger level. |
+| <Link id="m-checkserialize" /><code>{"override bool CheckSerialize(float oldValue, float newValue)"}</code> | Only syncs when the whole number part of the value changes. |

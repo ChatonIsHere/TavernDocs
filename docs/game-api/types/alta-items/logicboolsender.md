@@ -30,9 +30,9 @@ Logic component that sends a bool to linked logic receivers. The value is stored
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentvalue" /><code>{"private bool currentValue"}</code> | Private: the value being sent. Changed with `UpdateValue` and saved in the logic data. |
 
 </details>
 

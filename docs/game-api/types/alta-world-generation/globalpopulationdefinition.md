@@ -32,18 +32,18 @@ Server-only asset for a world-wide population: spawns its prefabs in random loca
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] attributes"}</code> |
-| <Link id="m-isspawningonastar" /><code>{"private bool isSpawningOnAStar"}</code> |
-| <Link id="m-iterations" /><code>{"private int iterations"}</code> |
-| <Link id="m-maxanglefromupdot" /><code>{"private float maxAngleFromUpDot"}</code> |
-| <Link id="m-maxspawned" /><code>{"private int maxSpawned"}</code> |
-| <Link id="m-pertickgrowthcurve" /><code>{"private AnimationCurve perTickGrowthCurve"}</code> |
-| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs"}</code> |
-| <Link id="m-spawned" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/spawnedelement">{"SpawnedElement"}</Link>{"> spawned"}</code> |
-| <Link id="m-startingpopulation" /><code>{"private int startingPopulation"}</code> |
-| <Link id="m-timer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationtimerdefinition">{"PopulationTimerDefinition"}</Link>{" timer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/attributeimpact">{"AttributeImpact"}</Link>{"[] attributes"}</code> | Biome attribute impacts multiplied together to weight which location chunks elements spawn in. |
+| <Link id="m-isspawningonastar" /><code>{"private bool isSpawningOnAStar"}</code> | Backing field for `IsSpawningOnAStar`. |
+| <Link id="m-iterations" /><code>{"private int iterations"}</code> | Backing field for `Iterations`. At least 1. |
+| <Link id="m-maxanglefromupdot" /><code>{"private float maxAngleFromUpDot"}</code> | Backing field for `MaxAngleFromUpDot`, set in the inspector as an angle from up. |
+| <Link id="m-maxspawned" /><code>{"private int maxSpawned"}</code> | Largest number of elements alive at once. `CheckSpawned` tops up to this; `set-size` changes it. |
+| <Link id="m-pertickgrowthcurve" /><code>{"private AnimationCurve perTickGrowthCurve"}</code> | Curve sampled with a random value on each `CheckSpawned` to decide how many elements to add. |
+| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{"[] prefabs"}</code> | Prefabs to spawn; each element picks one at random. |
+| <Link id="m-spawned" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world-generation/spawnedelement">{"SpawnedElement"}</Link>{"> spawned"}</code> | The live spawned elements. Null until `Initialize` runs. |
+| <Link id="m-startingpopulation" /><code>{"private int startingPopulation"}</code> | Number spawned at `StartUp` when the timer spawns on initialize. |
+| <Link id="m-timer" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationtimerdefinition">{"PopulationTimerDefinition"}</Link>{" timer"}</code> | Timer definition that drives respawn checks and how long elements last before decaying. |
 
 </details>
 
@@ -68,14 +68,14 @@ Server-only asset for a world-wide population: spawns its prefabs in random loca
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getspawned" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetSpawned("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> |
-| <Link id="m-listpopulations" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo">{"GlobalPopulationDefinition.PopulationInfo"}</Link>{"> ListPopulations()"}</code> |
-| <Link id="m-setsize" /><code>{"private static void SetSize("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, int maxSpawned)"}</code> |
-| <Link id="m-spawnquantity" /><code>{"private void SpawnQuantity(int toSpawn)"}</code> |
-| <Link id="m-teleporttopopulationitem" /><code>{"private static async Task TeleportToPopulationItem("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, float distanceAway = 3)"}</code> |
-| <Link id="m-teleporttospecificpopulationitem" /><code>{"private static async Task TeleportToSpecificPopulationItem("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, int index, float distanceAway = 3)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getspawned" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> GetSpawned("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population)"}</code> | Console command `globalpop spawned`: lists the location chunks of a population's spawned elements. |
+| <Link id="m-listpopulations" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo">{"GlobalPopulationDefinition.PopulationInfo"}</Link>{"> ListPopulations()"}</code> | Console command `globalpop list`: lists every global population with its hash, name, spawned count and max size. |
+| <Link id="m-setsize" /><code>{"private static void SetSize("}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, int maxSpawned)"}</code> | Console command `globalpop set-size`: sets the population's max size and spawns up to it straight away. |
+| <Link id="m-spawnquantity" /><code>{"private void SpawnQuantity(int toSpawn)"}</code> | Spawns the given number of elements, each in a random location chunk weighted by the biome `attributes`. |
+| <Link id="m-teleporttopopulationitem" /><code>{"private static async Task TeleportToPopulationItem("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, float distanceAway = 3)"}</code> | Console command `globalpop teleport`: teleports the player near a spawned element, force loading its chunk if none are loaded. |
+| <Link id="m-teleporttospecificpopulationitem" /><code>{"private static async Task TeleportToSpecificPopulationItem("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" population, int index, float distanceAway = 3)"}</code> | Console command `globalpop teleport-to`: teleports the player near the spawned element at the given index. |
 
 </details>
 

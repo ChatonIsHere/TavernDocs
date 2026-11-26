@@ -29,15 +29,15 @@ A skill tree asset for one progression path: its slots, icon and model. Loaded f
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> |
-| <Link id="m-pathmodel" /><code>{"private GameObject pathModel"}</code> |
-| <Link id="m-slotmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slotMap"}</code> |
-| <Link id="m-slots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slots"}</code> |
-| <Link id="m-treeicon" /><code>{"private Sprite treeIcon"}</code> |
-| <Link id="m-treemap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{"> treeMap"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
+| <Link id="m-path" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path"}</code> | Backing field for `Path`. |
+| <Link id="m-pathmodel" /><code>{"private GameObject pathModel"}</code> | Backing field for `PathModel`. |
+| <Link id="m-slotmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slotMap"}</code> | Slots by hash, for `GetSlot`. |
+| <Link id="m-slots" /><code>{"private List<"}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{"> slots"}</code> | Backing field for `Slots`. |
+| <Link id="m-treeicon" /><code>{"private Sprite treeIcon"}</code> | Backing field for `TreeIcon`. |
+| <Link id="m-treemap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{"> treeMap"}</code> | All trees by path, loaded once from `Resources/ProgressionTrees`. |
 
 </details>
 
@@ -62,10 +62,10 @@ A skill tree asset for one progression path: its slots, icon and model. Loaded f
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ensurefullmap" /><code>{"private void EnsureFullMap()"}</code> |
-| <Link id="m-forwardload" /><code>{"private void ForwardLoad()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ensurefullmap" /><code>{"private void EnsureFullMap()"}</code> | Fills `slotMap` from `slots` on first use and sets each slot's path. |
+| <Link id="m-forwardload" /><code>{"private void ForwardLoad()"}</code> | On first load, builds the slot map and lets each slot link to the slots it inherits from. |
 
 </details>
 

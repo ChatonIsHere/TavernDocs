@@ -28,17 +28,17 @@ A player's progress on one progression path (forging, mining and so on): XP, lev
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentexperience" /><code>{"private uint currentExperience"}</code> |
-| <Link id="m-currentlevel" /><code>{"private uint currentLevel"}</code> |
-| <Link id="m-freepoints" /><code>{"private uint freePoints"}</code> |
-| <Link id="m-leveledup" /><code>{"private Action<bool> LeveledUp"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-practicedslots" /><code>{"private HashSet<uint> practicedSlots"}</code> |
-| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetPlayer"}</code> |
-| <Link id="m-unlockedslots" /><code>{"private HashSet<uint> unlockedSlots"}</code> |
-| <Link id="m-updatedpoints" /><code>{"private Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedPoints"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentexperience" /><code>{"private uint currentExperience"}</code> | Backing field for `CurrentExperience`, experience towards the next level. |
+| <Link id="m-currentlevel" /><code>{"private uint currentLevel"}</code> | Backing field for `CurrentLevel`. |
+| <Link id="m-freepoints" /><code>{"private uint freePoints"}</code> | Backing field for `FreePoints`, skill points not yet spent. |
+| <Link id="m-leveledup" /><code>{"private Action<bool> LeveledUp"}</code> | Callback run after a level-up; its argument is true when the free points cap has been reached. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class; also traces level and skill events. |
+| <Link id="m-practicedslots" /><code>{"private HashSet<uint> practicedSlots"}</code> | Hashes of slots the player has practised. |
+| <Link id="m-targetplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" targetPlayer"}</code> | The `PlayerProgressionManager` this path belongs to. |
+| <Link id="m-unlockedslots" /><code>{"private HashSet<uint> unlockedSlots"}</code> | Backing field for `UnlockedSlots`, the hashes of unlocked skill slots. |
+| <Link id="m-updatedpoints" /><code>{"private Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> UpdatedPoints"}</code> | Callback run with the path whenever points or slots change. |
 
 </details>
 
@@ -72,13 +72,13 @@ A player's progress on one progression path (forging, mining and so on): XP, lev
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-gainexperienceunmultiplied" /><code>{"private void GainExperienceUnmultiplied(int experience)"}</code> |
-| <Link id="m-hasmultipledependenciesunlocked" /><code>{"private bool HasMultipleDependenciesUnlocked("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> |
-| <Link id="m-recursivelockslot" /><code>{"private void RecursiveLockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, ref float totalExperienceReward)"}</code> |
-| <Link id="m-removeslots" /><code>{"private void RemoveSlots(int remainder)"}</code> |
-| <Link id="m-serializeslots" /><code>{"private void SerializeSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotHash, HashSet<uint> covered, "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gainexperienceunmultiplied" /><code>{"private void GainExperienceUnmultiplied(int experience)"}</code> | Adds experience with no server multipliers, levelling up and granting free points until the max free points cap. |
+| <Link id="m-hasmultipledependenciesunlocked" /><code>{"private bool HasMultipleDependenciesUnlocked("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot)"}</code> | True if a slot has more than one dependency and at least two of them are unlocked. |
+| <Link id="m-recursivelockslot" /><code>{"private void RecursiveLockSlot("}<Link to="/game-api/types/global-p/progressionslot">{"ProgressionSlot"}</Link>{" slot, ref float totalExperienceReward)"}</code> | Locks a child slot once none of its dependencies are unlocked, adding its refund and continuing to its children. |
+| <Link id="m-removeslots" /><code>{"private void RemoveSlots(int remainder)"}</code> | Locks unlocked leaf slots one at a time (no refund) to take away points the player has already spent. |
+| <Link id="m-serializeslots" /><code>{"private void SerializeSlots("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint slotHash, HashSet<uint> covered, "}<Link to="/game-api/types/global-p/professionskilltree">{"ProfessionSkillTree"}</Link>{" tree)"}</code> | Writes a slot after its unlocked dependencies, so loading unlocks them in a valid order. |
 
 </details>
 

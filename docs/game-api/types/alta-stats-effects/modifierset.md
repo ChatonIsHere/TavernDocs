@@ -1,6 +1,6 @@
 ---
 title: "ModifierSet"
-description: "A group applied and removed together (one per threshold level)."
+description: "A group of stat modifiers for one StatManager, applied or removed together."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
-A group applied and removed together (one per threshold level).
+A group of stat modifiers for one `StatManager`, applied or removed together. Threshold stats use one set per level and switch sets as the value crosses levels.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `IEnumerable`, `IEnumerable<Modifier>`
@@ -29,33 +29,33 @@ A group applied and removed together (one per threshold level).
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-modifiers" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> modifiers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modifiers" /><code>{"private List<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> modifiers"}</code> | The modifiers in the set. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-manager" /><code><Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" Manager { get; private set; }"}</code> | The stat manager the modifiers act on. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{" modifier)"}</code> |
-| <Link id="m-apply" /><code>{"void Apply()"}</code> |
-| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> GetEnumerator()"}</code> |
-| <Link id="m-remove" /><code>{"void Remove()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{" modifier)"}</code> | Initializes a modifier against the manager and adds it if that succeeds. |
+| <Link id="m-apply" /><code>{"void Apply()"}</code> | Applies every modifier in the set. |
+| <Link id="m-getenumerator" /><code>{"IEnumerator<"}<Link to="/game-api/types/alta-stats-effects/modifier">{"Modifier"}</Link>{"> GetEnumerator()"}</code> | Enumerates the modifiers in the set. |
+| <Link id="m-remove" /><code>{"void Remove()"}</code> | Removes every modifier in the set from its stat. The modifiers stay in the set. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getenumerator-2" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the modifiers in the set. |
 
 </details>
 

@@ -30,14 +30,14 @@ The spriggull creature. Runs passive actions, charges its beak while jump attack
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-beak" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{" beak"}</code> |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |
-| <Link id="m-flailaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" flailAction"}</code> |
-| <Link id="m-flailingaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{"> flailingAction"}</code> |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-beak" /><code>{"private "}<Link to="/game-api/types/alta-items/fixedimpactor">{"FixedImpactor"}</Link>{" beak"}</code> | The beak impactor that does damage during a jump attack. |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | Backing field for `Body`; also used as the agent's position. |
+| <Link id="m-flailaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" flailAction"}</code> | Action component for flailing, used by `BeginFlail`. |
+| <Link id="m-flailingaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actiontarget-tagent">{"ActionTarget"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/spriggull">{"Spriggull"}</Link>{"> flailingAction"}</code> | Shared action target for flailing, built from `flailAction` once per type. |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | Backing field for `Interactor`. |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | Action set the spriggull chooses from, shared by all spriggulls. |
 
 </details>
 
@@ -63,9 +63,9 @@ The spriggull creature. Runs passive actions, charges its beak while jump attack
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-setjumping" /><code>{"private void Alta.Intelligence.IJumpAttacker.SetJumping(bool isJumping)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setjumping" /><code>{"private void Alta.Intelligence.IJumpAttacker.SetJumping(bool isJumping)"}</code> | Charges the beak impactor when a jump attack starts and resets it when it ends. |
 
 </details>
 

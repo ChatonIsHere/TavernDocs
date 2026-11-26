@@ -37,18 +37,18 @@ One point of temperature on an object. The server conducts heat between neighbou
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-armorconductivity" /><code>{"private float armorConductivity"}</code> |
-| <Link id="m-basevolume" /><code>{"private float baseVolume"}</code> |
-| <Link id="m-effectparent" /><code>{"private Transform effectParent"}</code> |
-| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> |
-| <Link id="m-haschangedsynclastsync" /><code>{"private bool hasChangedSyncLastSync"}</code> |
-| <Link id="m-heatareapriorities" /><code>{"private List<int> heatAreaPriorities"}</code> |
-| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |
-| <Link id="m-neighbours" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint-neighbour">{"HeatPoint.Neighbour"}</Link>{"[] neighbours"}</code> |
-| <Link id="m-positionhelper" /><code>{"private "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" positionHelper"}</code> |
-| <Link id="m-temperature" /><code>{"private float temperature"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-armorconductivity" /><code>{"private float armorConductivity"}</code> | Conductivity factor from equipped armour, multiplied into all three conductivity values (1 with no armour). |
+| <Link id="m-basevolume" /><code>{"private float baseVolume"}</code> | Starting `Volume` set in `Awake`. More volume means more energy to heat or cool. |
+| <Link id="m-effectparent" /><code>{"private Transform effectParent"}</code> | Transform that heat effects (like glowing) are spawned under. |
+| <Link id="m-equipmentslot" /><code>{"private "}<Link to="/game-api/types/alta-items/equipmentreference">{"EquipmentReference"}</Link>{" equipmentSlot"}</code> | Optional equipment slot whose armour changes this point's conductivity. |
+| <Link id="m-haschangedsynclastsync" /><code>{"private bool hasChangedSyncLastSync"}</code> | Server: true while the temperature has changed since the last `Sync`, read by `IsNeedingSync`. |
+| <Link id="m-heatareapriorities" /><code>{"private List<int> heatAreaPriorities"}</code> | Priorities of the heat areas this point is inside, kept so `HighestPriorityHeatArea` can be recalculated on exit. |
+| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> | Server: set when the temperature changes, so the next `FixedUpdate` runs `OnChanged`. |
+| <Link id="m-neighbours" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint-neighbour">{"HeatPoint.Neighbour"}</Link>{"[] neighbours"}</code> | Other heat points this one conducts heat to every physics step, each with a distance multiplier. |
+| <Link id="m-positionhelper" /><code>{"private "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" positionHelper"}</code> | Optional `PositionFromOriginHelper` used to build `PositionHelper`. |
+| <Link id="m-temperature" /><code>{"private float temperature"}</code> | Backing field for `Temperature`. Saved and loaded directly; loaded values beyond 10000 or NaN reset to ambient. |
 
 </details>
 
@@ -78,9 +78,9 @@ One point of temperature on an object. The server conducts heat between neighbou
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> | Build bake order, always 0. |
 
 </details>
 
@@ -119,18 +119,18 @@ One point of temperature on an object. The server conducts heat between neighbou
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
-| <Link id="m-checkambientchange" /><code>{"private void CheckAmbientChange()"}</code> |
-| <Link id="m-checkenable" /><code>{"private void CheckEnable()"}</code> |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
-| <Link id="m-euipmentchanged" /><code>{"private void EuipmentChanged("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" definition)"}</code> |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
-| <Link id="m-neighbourchanged" /><code>{"private void NeighbourChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" neighbour)"}</code> |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-releaseeffect" /><code>{"private void ReleaseEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> | Build step that disables the component, so heat points start off until something enables them. |
+| <Link id="m-checkambientchange" /><code>{"private void CheckAmbientChange()"}</code> | Server: rechecks whether the temperature counts as ambient and, if that changed, reruns `CheckEnable`. |
+| <Link id="m-checkenable" /><code>{"private void CheckEnable()"}</code> | Enables the component while it or any neighbour is away from ambient temperature, otherwise disables it to save work. |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Explicit `IBuildRendererBakeable` build step. Does nothing. |
+| <Link id="m-euipmentchanged" /><code>{"private void EuipmentChanged("}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" definition)"}</code> | Sets the armour conductivity factor from the armour put in the linked equipment slot (1 when it is emptied). |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Server: each physics step, conducts heat to every neighbour and to the ambient temperature, then raises change handling if needed. |
+| <Link id="m-neighbourchanged" /><code>{"private void NeighbourChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" neighbour)"}</code> | Server: wakes this point when a neighbour leaves ambient temperature, and sleeps it when both are ambient. |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Marks the entity's data as changed on the server, then shows heat effects or resets to ambient and raises `Changed`. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws lines to each neighbour heat point. |
+| <Link id="m-releaseeffect" /><code>{"private void ReleaseEffect("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Removes the active heat effect when the entity is destroyed by the scene. |
 
 </details>
 

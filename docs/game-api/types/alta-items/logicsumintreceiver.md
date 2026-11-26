@@ -1,6 +1,6 @@
 ---
 title: "LogicSumIntReceiver"
-description: "class LogicSumIntReceiver in Root.Township."
+description: "Logic receiver that adds up any number of int inputs and outputs the total."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicSumIntReceiver
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Logic receiver that adds up any number of int inputs and outputs the total. Runs on the server and saves its inputs.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`LogicValueReceiverArray<IntSenderInput>`](/game-api/types/alta-items/logicvaluereceiverarray-tsenderinput), [`ISavable<LogicSumIntSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<LogicSumIntSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -28,25 +30,25 @@ A **class** in `Root.Township`, `Alta.Logic`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> |
-| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueUpdated"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> | Last total sent. |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/game-api/types/global-i-l/intunityevent">{"IntUnityEvent"}</Link>{" onValueUpdated"}</code> | Unity event fired with the new total. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
-| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: works out the starting total and fires `onValueUpdated` with it. |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | When an input changes, fires `onValueUpdated` if the total changed. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getvalue" /><code>{"private int GetValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getvalue" /><code>{"private int GetValue()"}</code> | Adds up all input values. |
 
 </details>

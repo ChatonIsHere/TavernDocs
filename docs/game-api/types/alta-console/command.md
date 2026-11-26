@@ -29,11 +29,11 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-method" /><code>{"private MethodInfo method"}</code> |
-| <Link id="m-voidtaskresult" /><code>{"private static readonly Type VoidTaskResult"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-method" /><code>{"private MethodInfo method"}</code> | The static method the command calls. |
+| <Link id="m-voidtaskresult" /><code>{"private static readonly Type VoidTaskResult"}</code> | The runtime's internal `VoidTaskResult` type, used to tell a plain `Task` from one with a result. |
 
 </details>
 
@@ -60,11 +60,11 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-areparametersviable" /><code>{"private "}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{" AreParametersViable(string[] lower, string[] cased, int index)"}</code> |
-| <Link id="m-attemptconvertarguments" /><code>{"private bool AttemptConvertArguments(int matchedCount, string[] argumentParts, int index, object[] convertedArguments)"}</code> |
-| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-areparametersviable" /><code>{"private "}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{" AreParametersViable(string[] lower, string[] cased, int index)"}</code> | Checks the argument count against the parameters and converts them. A last string or array parameter takes the rest. |
+| <Link id="m-attemptconvertarguments" /><code>{"private bool AttemptConvertArguments(int matchedCount, string[] argumentParts, int index, object[] convertedArguments)"}</code> | Converts each argument with its parameter type's converter. Fails on a null result unless `AllowNull` is set. |
+| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> |  |
 
 </details>
 

@@ -31,9 +31,9 @@ Base class for game components that live on a `NetworkEntity`. Override its hook
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`, filled from the same GameObject. |
 
 </details>
 

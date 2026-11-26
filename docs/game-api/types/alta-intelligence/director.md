@@ -29,12 +29,12 @@ The high level movement control for a creature: walk to a point, follow a target
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-follower" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/follower">{"Follower"}</Link>{" follower"}</code> |
-| <Link id="m-navigator" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator"}</code> |
-| <Link id="m-reevaluationinterval" /><code>{"private float reevaluationInterval"}</code> |
-| <Link id="m-topic" /><code>{"private Rigidbody topic"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-follower" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/follower">{"Follower"}</Link>{" follower"}</code> | Private: handles `Follow`, re-pathing to a moving target. |
+| <Link id="m-navigator" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator"}</code> | Backing field for `Navigator`. |
+| <Link id="m-reevaluationinterval" /><code>{"private float reevaluationInterval"}</code> | Seconds between path updates while following a target. Defaults to 0.5. |
+| <Link id="m-topic" /><code>{"private Rigidbody topic"}</code> | The rigidbody moved by `TeleportTo`. |
 
 </details>
 
@@ -66,10 +66,10 @@ The high level movement control for a creature: walk to a point, follow a target
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the `Navigator` in the parents and makes a `Follower` for it. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Private: stops all movement. |
 
 </details>
 

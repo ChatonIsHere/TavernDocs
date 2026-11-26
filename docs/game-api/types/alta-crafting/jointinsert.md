@@ -29,14 +29,14 @@ The plug end of a crafting part that goes into another part's `JointSlot`. Also 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-insertlength" /><code>{"private Vector3 insertLength"}</code> |
-| <Link id="m-isshowinglines" /><code>{"private bool isShowingLines"}</code> |
-| <Link id="m-linesplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" linesPlayer"}</code> |
-| <Link id="m-particlespool" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{", "}<Link to="/game-api/types/global-s/splineparticlespooled">{"SplineParticlesPooled"}</Link>{"> particlesPool"}</code> |
-| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/global-p/pickuptypesettings">{"PickupTypeSettings"}</Link>{" settings"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-insertlength" /><code>{"private Vector3 insertLength"}</code> | Backing field for `InsertLength`. |
+| <Link id="m-isshowinglines" /><code>{"private bool isShowingLines"}</code> | True while guide lines to slots are shown. |
+| <Link id="m-linesplayer" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" linesPlayer"}</code> | Player the guide lines are shown for. |
+| <Link id="m-particlespool" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{", "}<Link to="/game-api/types/global-s/splineparticlespooled">{"SplineParticlesPooled"}</Link>{"> particlesPool"}</code> | Pooled spline particles drawing a line to each slot. |
+| <Link id="m-settings" /><code>{"private static "}<Link to="/game-api/types/global-p/pickuptypesettings">{"PickupTypeSettings"}</Link>{" settings"}</code> | Shared `PickupTypeSettings` (line pool and colours). |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-crafting/jointinserttype">{"JointInsertType"}</Link>{" type"}</code> | Backing field for `Type`. |
 
 </details>
 
@@ -62,10 +62,10 @@ The plug end of a crafting part that goes into another part's `JointSlot`. Also 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-tryadd" /><code>{"private void TryAdd(List<GameObject> list, params string[] names)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Caches the global `PickupTypeSettings` used for line colours. |
+| <Link id="m-tryadd" /><code>{"private void TryAdd(List<GameObject> list, params string[] names)"}</code> | Adds named children of the crafting part to a list if found. Not called in this build. |
 
 </details>
 

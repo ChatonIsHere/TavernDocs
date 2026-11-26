@@ -31,13 +31,13 @@ An achievement asset: a player progress flag that can play an effect and lists c
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isshowingeffect" /><code>{"private bool isShowingEffect"}</code> |
-| <Link id="m-overridecompletedeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideCompletedEffectDefinition"}</code> |
-| <Link id="m-rewardskus" /><code>{"private List<string> rewardSkus"}</code> |
-| <Link id="m-supporteronlyrewardskus" /><code>{"private List<string> supporterOnlyRewardSkus"}</code> |
-| <Link id="m-unlockdelayinseconds" /><code>{"private float unlockDelayInSeconds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isshowingeffect" /><code>{"private bool isShowingEffect"}</code> | Backing field for `IsShowingEffect`. If false, the local player gets no completion effect. |
+| <Link id="m-overridecompletedeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideCompletedEffectDefinition"}</code> | Completion effect to use instead of the global achievement earned effect. |
+| <Link id="m-rewardskus" /><code>{"private List<string> rewardSkus"}</code> | Backing field for `RewardSkus`: cosmetic SKUs given as rewards. |
+| <Link id="m-supporteronlyrewardskus" /><code>{"private List<string> supporterOnlyRewardSkus"}</code> | Backing field for `SupporterOnlyRewardSkus`: cosmetic SKUs only supporters get. |
+| <Link id="m-unlockdelayinseconds" /><code>{"private float unlockDelayInSeconds"}</code> | Backing field for `UnlockDelayInSeconds`: client wait before showing the completion effect. |
 
 </details>
 

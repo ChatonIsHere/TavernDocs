@@ -30,9 +30,9 @@ Something a chisel can carve. Passes chisel hits on to events; subclasses decide
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-tookdamage" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" tookDamage"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tookdamage" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" tookDamage"}</code> | Event raised with the damage whenever a chisel hits this. |
 
 </details>
 

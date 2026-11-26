@@ -29,26 +29,26 @@ Impact detector on a chisel that finds the nearest chiselable piece ahead of its
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chiselingdirection" /><code>{"private Vector3 chiselingDirection"}</code> |
-| <Link id="m-chiselingpoint" /><code>{"private Vector3 chiselingPoint"}</code> |
-| <Link id="m-collisioncount" /><code>{"private int collisionCount"}</code> |
-| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |
-| <Link id="m-dotprecision" /><code>{"private float dotPrecision"}</code> |
-| <Link id="m-haptic" /><code>{"private Coroutine haptic"}</code> |
-| <Link id="m-hapticraycastdistance" /><code>{"private float hapticRayCastDistance"}</code> |
-| <Link id="m-hapticsoverdistancefromghosthand" /><code>{"private AnimationCurve hapticsOverDistanceFromGhostHand"}</code> |
-| <Link id="m-hitcollider" /><code>{"private Collider hitCollider"}</code> |
-| <Link id="m-hitpiece" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ichiselable">{"IChiselable"}</Link>{" hitPiece"}</code> |
-| <Link id="m-hitposition" /><code>{"private Vector3 hitPosition"}</code> |
-| <Link id="m-layermask" /><code>{"private int layerMask"}</code> |
-| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> |
-| <Link id="m-maxchiselingdistance" /><code>{"private float maxChiselingDistance"}</code> |
-| <Link id="m-nonalloccolliders" /><code>{"private static Collider[] nonAllocColliders"}</code> |
-| <Link id="m-nonallocraycasthits" /><code>{"private static RaycastHit[] nonAllocRaycastHits"}</code> |
-| <Link id="m-physicalmaterialmultiplier" /><code>{"private float physicalMaterialMultiplier"}</code> |
-| <Link id="m-spherecastradius" /><code>{"private float sphereCastRadius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chiselingdirection" /><code>{"private Vector3 chiselingDirection"}</code> | Local direction the chisel cuts in. Backs `ChiselingDirection`. |
+| <Link id="m-chiselingpoint" /><code>{"private Vector3 chiselingPoint"}</code> | Local position of the chisel tip. Backs `ChiselingPoint`. |
+| <Link id="m-collisioncount" /><code>{"private int collisionCount"}</code> | Not used in this class. |
+| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> | Multiplies hit damage dealt to the chiseled piece. 3 by default. |
+| <Link id="m-dotprecision" /><code>{"private float dotPrecision"}</code> | Power applied to the piece's direction multiplier, so off-angle hits count less. 1 by default. |
+| <Link id="m-haptic" /><code>{"private Coroutine haptic"}</code> | The running `TouchHaptic` coroutine, or null. |
+| <Link id="m-hapticraycastdistance" /><code>{"private float hapticRayCastDistance"}</code> | How far ahead of the tip haptics check for a chiselable. 0 checks only at the tip. |
+| <Link id="m-hapticsoverdistancefromghosthand" /><code>{"private AnimationCurve hapticsOverDistanceFromGhostHand"}</code> | Haptic strength by squared distance between the hand and its ghost hand. |
+| <Link id="m-hitcollider" /><code>{"private Collider hitCollider"}</code> | Collider of the piece found by the last `CheckForPiece`. |
+| <Link id="m-hitpiece" /><code>{"private "}<Link to="/game-api/types/alta-crafting/ichiselable">{"IChiselable"}</Link>{" hitPiece"}</code> | Chiselable found by the last `CheckForPiece`, used and cleared by the next hit. |
+| <Link id="m-hitposition" /><code>{"private Vector3 hitPosition"}</code> | Point on the piece found by the last `CheckForPiece`. |
+| <Link id="m-layermask" /><code>{"private int layerMask"}</code> | Mask of the Default layer, which the chisel casts check. |
+| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> | Physical material part on the tool, whose damage multiplier scales chisel damage. |
+| <Link id="m-maxchiselingdistance" /><code>{"private float maxChiselingDistance"}</code> | Length of the sphere cast from the tip when looking for a piece. |
+| <Link id="m-nonalloccolliders" /><code>{"private static Collider[] nonAllocColliders"}</code> | Shared buffer for overlap checks. |
+| <Link id="m-nonallocraycasthits" /><code>{"private static RaycastHit[] nonAllocRaycastHits"}</code> | Shared buffer for sphere casts. |
+| <Link id="m-physicalmaterialmultiplier" /><code>{"private float physicalMaterialMultiplier"}</code> | The tool material's damage multiplier. 1 when there is no material. |
+| <Link id="m-spherecastradius" /><code>{"private float sphereCastRadius"}</code> | Radius of the chisel casts. 0.01 by default. |
 
 </details>
 
@@ -73,17 +73,17 @@ Impact detector on a chisel that finds the nearest chiselable piece ahead of its
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-calculatetouchhapitcs" /><code>{"private void CalculateTouchHapitcs()"}</code> |
-| <Link id="m-consumefilter" /><code>{"private void ConsumeFilter(ref bool isHitconsumed)"}</code> |
-| <Link id="m-hitpiece-2" /><code>{"private void HitPiece("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
-| <Link id="m-newmaterial" /><code>{"private void NewMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-startcheckhaptic" /><code>{"private void StartCheckHaptic("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-stopcheckhaptic" /><code>{"private void StopCheckHaptic("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-touchhaptic" /><code>{"private IEnumerator TouchHaptic() (iterator)"}</code> |
-| <Link id="m-triggerhaptic" /><code>{"private void TriggerHaptic("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-calculatetouchhapitcs" /><code>{"private void CalculateTouchHapitcs()"}</code> | Pulses the holding hands when the chisel tip touches a chiselable that triggers haptics. |
+| <Link id="m-consumefilter" /><code>{"private void ConsumeFilter(ref bool isHitconsumed)"}</code> | Tool collision filter: marks the hit as consumed when a chiselable is in front of the tip. |
+| <Link id="m-hitpiece-2" /><code>{"private void HitPiece("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Hit handler: damages the chiselable found by `CheckForPiece`, scaled by damage and material multipliers. Server also wears the tool. |
+| <Link id="m-newmaterial" /><code>{"private void NewMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> | Updates `physicalMaterialMultiplier` when the tool's material changes. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the tip, the chisel cast and the haptic cast. |
+| <Link id="m-startcheckhaptic" /><code>{"private void StartCheckHaptic("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Starts the `TouchHaptic` loop when a local hand grabs the tool. |
+| <Link id="m-stopcheckhaptic" /><code>{"private void StopCheckHaptic("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stops the haptic loop when the tool is no longer held. |
+| <Link id="m-touchhaptic" /><code>{"private IEnumerator TouchHaptic() (iterator)"}</code> | Coroutine that runs `CalculateTouchHapitcs` every frame while the tool is held. |
+| <Link id="m-triggerhaptic" /><code>{"private void TriggerHaptic("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Pulses a local hand, stronger the further the real hand is from its ghost hand. |
 
 </details>
 

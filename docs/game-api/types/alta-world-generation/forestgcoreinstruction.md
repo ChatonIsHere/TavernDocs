@@ -1,6 +1,6 @@
 ---
 title: "ForestGCoreInstruction"
-description: "class ForestGCoreInstruction in Root.Township."
+description: "A forest generation instruction that places one generation core (a static environment piece) at a position, tied to a forest node or edge."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestGCoreInstruction
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A forest generation instruction that places one generation core (a static environment piece) at a position, tied to a forest node or edge. It is serialized with the forest and replayed by `ForestGenerator`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`Instruction`](/game-api/types/alta-world/instruction)
@@ -28,34 +30,34 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content"}</code> |
-| <Link id="m-contentid" /><code>{"private uint contentId"}</code> |
-| <Link id="m-edgea" /><code>{"private int edgeA"}</code> |
-| <Link id="m-edgeb" /><code>{"private int edgeB"}</code> |
-| <Link id="m-node" /><code>{"private int node"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
-| <Link id="m-seed" /><code>{"private uint seed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content"}</code> | The static environment piece being placed; cleared after serializing and loaded again from `contentId`. |
+| <Link id="m-contentid" /><code>{"private uint contentId"}</code> | Index of the static environment piece. |
+| <Link id="m-edgea" /><code>{"private int edgeA"}</code> | Backing field for `EdgeA`. |
+| <Link id="m-edgeb" /><code>{"private int edgeB"}</code> | Backing field for `EdgeB`. |
+| <Link id="m-node" /><code>{"private int node"}</code> | Backing field for `Node`. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | World position to place the core at. |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Rotation to place the core with. |
+| <Link id="m-seed" /><code>{"private uint seed"}</code> | Random seed passed to the core's generation. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-edgea-2" /><code>{"int EdgeA { get; }"}</code> |
-| <Link id="m-edgeb-2" /><code>{"int EdgeB { get; }"}</code> |
-| <Link id="m-node-2" /><code>{"int Node { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-edgea-2" /><code>{"int EdgeA { get; }"}</code> | Index of the first node of the edge the core belongs to, or -1. |
+| <Link id="m-edgeb-2" /><code>{"int EdgeB { get; }"}</code> | Index of the second node of the edge the core belongs to, or -1. |
+| <Link id="m-node-2" /><code>{"int Node { get; }"}</code> | Index of the forest node the core belongs to, or -1. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-execute" /><code>{"override "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> |
-| <Link id="m-getgcore" /><code><Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" GetGcore()"}</code> |
-| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-execute" /><code>{"override "}<Link to="/game-api/types/alta-world/iinstructionresult">{"IInstructionResult"}</Link>{" Execute(object context)"}</code> | Spawns the generation core at its position and generates it for the node or edge, using its saved seed and the node or edge radius. |
+| <Link id="m-getgcore" /><code><Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" GetGcore()"}</code> | Loads the static environment piece by id if needed and returns its `GenerationCore` prefab, logging an error if missing. |
+| <Link id="m-serializeinternal" /><code>{"protected override void SerializeInternal("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the seed, content id, position, rotation, node and edge indexes. |
 
 ## Used in
 

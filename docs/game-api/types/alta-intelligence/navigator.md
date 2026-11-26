@@ -29,19 +29,19 @@ Wraps an A* `Seeker` to plan and follow a path for a creature: it requests paths
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-distancetonextpointsquared" /><code>{"private float distanceToNextPointSquared"}</code> |
-| <Link id="m-funnel" /><code>{"private RichFunnel funnel"}</code> |
-| <Link id="m-islastcorner" /><code>{"private bool isLastCorner"}</code> |
-| <Link id="m-isrequestingpath" /><code>{"private bool isRequestingPath"}</code> |
-| <Link id="m-lastpathrequest" /><code>{"private float lastPathRequest"}</code> |
-| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-nearestconstraint" /><code>{"private static readonly NNConstraint NearestConstraint"}</code> |
-| <Link id="m-path" /><code>{"private RichPath path"}</code> |
-| <Link id="m-preparingpath" /><code>{"private Path preparingPath"}</code> |
-| <Link id="m-targetreacheddistancesquared" /><code>{"private float targetReachedDistanceSquared"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distancetonextpointsquared" /><code>{"private float distanceToNextPointSquared"}</code> | Squared distance to the next corner, checked when a path starts on its final stretch. |
+| <Link id="m-funnel" /><code>{"private RichFunnel funnel"}</code> | The current part of the path being followed, if it is a funnel. |
+| <Link id="m-islastcorner" /><code>{"private bool isLastCorner"}</code> | True when the funnel reports the next corner is the last one. |
+| <Link id="m-isrequestingpath" /><code>{"private bool isRequestingPath"}</code> | Backing field for `IsRequestingPath`. |
+| <Link id="m-lastpathrequest" /><code>{"private float lastPathRequest"}</code> | Backing field for `LastPathRequest`. |
+| <Link id="m-lasttarget" /><code>{"private Vector3 lastTarget"}</code> | Where the navigator is heading; `RemainingDistance` is measured to it. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-nearestconstraint" /><code>{"private static readonly NNConstraint NearestConstraint"}</code> | Nearest-node constraint with no distance limit. Unused in this build. |
+| <Link id="m-path" /><code>{"private RichPath path"}</code> | The A* rich path being followed. |
+| <Link id="m-preparingpath" /><code>{"private Path preparingPath"}</code> | The wander search in progress, if any. |
+| <Link id="m-targetreacheddistancesquared" /><code>{"private float targetReachedDistanceSquared"}</code> | Backing field for `TargetReachedDistanceSquared`. |
 
 </details>
 
@@ -97,14 +97,14 @@ Wraps an A* `Seeker` to plan and follow a path for a creature: it requests paths
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancelrequest" /><code>{"private void CancelRequest()"}</code> |  |
-| <Link id="m-finish" /><code>{"private void Finish()"}</code> |  |
-| <Link id="m-getlasttarget" /><code>{"private Vector3 GetLastTarget()"}</code> |  |
-| <Link id="m-onpathfindfailed" /><code>{"private void OnPathFindFailed(Path path)"}</code> |  |
-| <Link id="m-pathfound" /><code>{"private void PathFound(Path path)"}</code> |  |
-| <Link id="m-startpath" /><code>{"private void StartPath(Path standardPath)"}</code> |  |
+| <Link id="m-cancelrequest" /><code>{"private void CancelRequest()"}</code> | Cancels any pending path or wander search and clears its callback. |
+| <Link id="m-finish" /><code>{"private void Finish()"}</code> | Marks navigation finished and fires `TargetReached`, if it wasn't already finished. |
+| <Link id="m-getlasttarget" /><code>{"private Vector3 GetLastTarget()"}</code> | Default `GetTarget`: returns the last requested target. |
+| <Link id="m-onpathfindfailed" /><code>{"private void OnPathFindFailed(Path path)"}</code> | Fires `PathFindFailed`. |
+| <Link id="m-pathfound" /><code>{"private void PathFound(Path path)"}</code> | Seeker callback: starts following the path, or fires `PathFindFailed` on error. |
+| <Link id="m-startpath" /><code>{"private void StartPath(Path standardPath)"}</code> | Loads a found path into the rich path, sets up the first funnel and fires `PathFindSucceeded`. |
 | <Link id="m-wander-3" /><code>{"private void Wander(Vector3 near, int searchLength, float targetReachedDistance, OnPathDelegate callback)"}</code> | Picks a random reachable point within a search length (optionally the best of several towards a direction) and paths there. |
-| <Link id="m-wanderto" /><code>{"private void WanderTo(Path path)"}</code> |  |
+| <Link id="m-wanderto" /><code>{"private void WanderTo(Path path)"}</code> | Wander callback: picks a reachable point from the search and paths to it. |
 
 </details>
 

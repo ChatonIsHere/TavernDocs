@@ -1,6 +1,6 @@
 ---
 title: "PlayerSubscriberStatus"
-description: "None, Subscriber, Developer, AltaMod (0 to 3)."
+description: "A player's account tier as the Alta API reports it: none, subscriber, developer or Alta mod."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **enum** in `Alta.Authentication`, no namespace.
 
-`None`, `Subscriber`, `Developer`, `AltaMod` (0 to 3).
+A player's account tier as the Alta API reports it: none, subscriber, developer or Alta mod.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Documented in** [Player](/game-api/networking/player#playersubscriberstatus), [Alta assemblies](/game-api/console-and-utilities/alta-assemblies)

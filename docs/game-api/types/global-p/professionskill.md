@@ -35,14 +35,14 @@ Base for a skill in a progression tree: a hashed asset that players unlock and p
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeeffects" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/global-p/professionskill-activeeffect">{"ProfessionSkill.ActiveEffect"}</Link>{"> activeEffects"}</code> |
-| <Link id="m-dynamiccontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{"> dynamicContentPrefabs"}</code> |
-| <Link id="m-practiceglyphsprites" /><code>{"private Sprite[] practiceGlyphSprites"}</code> |
-| <Link id="m-skillpracticetrigger" /><code>{"private uint skillPracticeTrigger"}</code> |
-| <Link id="m-staticcontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionedstaticprefab">{"PositionedStaticPrefab"}</Link>{"> staticContentPrefabs"}</code> |
-| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeeffects" /><code>{"private static Dictionary<uint, "}<Link to="/game-api/types/global-p/professionskill-activeeffect">{"ProfessionSkill.ActiveEffect"}</Link>{"> activeEffects"}</code> | Shared map of entity identifier to its pooled tool effect, so several skills can share one effect on a tool. |
+| <Link id="m-dynamiccontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{"> dynamicContentPrefabs"}</code> | Backing field for `DynamicContentPrefabs`. |
+| <Link id="m-practiceglyphsprites" /><code>{"private Sprite[] practiceGlyphSprites"}</code> | Backing field for `PracticeGlyphSprites`. |
+| <Link id="m-skillpracticetrigger" /><code>{"private uint skillPracticeTrigger"}</code> | Hash of the skill whose practice counts for this one. 0 means this skill's own hash. |
+| <Link id="m-staticcontentprefabs" /><code>{"private List<"}<Link to="/game-api/types/global-p/positionedstaticprefab">{"PositionedStaticPrefab"}</Link>{"> staticContentPrefabs"}</code> | Backing field for `StaticContentPrefabs`. |
+| <Link id="m-targetachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" targetAchievement"}</code> | Achievement completed for the player by `CompleteTargetAchievement` (server only). |
 
 </details>
 

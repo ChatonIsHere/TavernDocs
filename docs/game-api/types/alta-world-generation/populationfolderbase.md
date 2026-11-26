@@ -35,11 +35,11 @@ Base for a networked object that owns a population (a group of spawned creatures
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-onpopulationdiedout" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationDiedOut"}</code> |
-| <Link id="m-onpopulationmaxed" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationMaxed"}</code> |
-| <Link id="m-onpopulationstarted" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationStarted"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onpopulationdiedout" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationDiedOut"}</code> | Unity event raised when the population sample dies out. |
+| <Link id="m-onpopulationmaxed" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationMaxed"}</code> | Unity event raised when the population sample reaches its maximum. |
+| <Link id="m-onpopulationstarted" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationevent">{"PopulationEvent"}</Link>{" OnPopulationStarted"}</code> | Unity event raised when the population starts, and straight away in `SetSample` if it already has members. |
 
 </details>
 
@@ -63,9 +63,9 @@ Base for a networked object that owns a population (a group of spawned creatures
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-tryaddtoecosystem" /><code>{"private void TryAddToEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tryaddtoecosystem" /><code>{"private void TryAddToEcosystem("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Server: when added to a procedural chunk, registers this population with the chunk's `Ecosystem`. |
 
 </details>
 

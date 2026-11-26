@@ -30,11 +30,11 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activename" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeName"}</code> |
-| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activename" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" activeName"}</code> | The pooled name board shown above the dummy. |
+| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> | The spawned remote visuals for this player. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | The registered `UpdateNameBoardPosition` method. |
 
 </details>
 
@@ -49,9 +49,9 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" Settings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-player/equipmentstatesettings">{"EquipmentStateSettings"}</Link>{" Settings { get; }"}</code> | The state's `EquipmentStateSettings`. |
 
 </details>
 
@@ -67,14 +67,14 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroycustomizationdummy" /><code>{"private void DestroyCustomizationDummy()"}</code> |
-| <Link id="m-destroyremoteeffects" /><code>{"private void DestroyRemoteEffects(bool isAnimatingEffects)"}</code> |
-| <Link id="m-getdummyspawnposition" /><code>{"private Vector3 GetDummySpawnPosition()"}</code> |
-| <Link id="m-positioninfrontofplayer" /><code>{"private void PositionInFrontOfPlayer(Transform transformToPosition)"}</code> |
-| <Link id="m-spawncustomizationdummy" /><code>{"private void SpawnCustomizationDummy()"}</code> |
-| <Link id="m-spawnremotedummyeffects" /><code>{"private void SpawnRemoteDummyEffects(bool isAnimatingEffects)"}</code> |
-| <Link id="m-updatenameboardposition" /><code>{"private void UpdateNameBoardPosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroycustomizationdummy" /><code>{"private void DestroyCustomizationDummy()"}</code> | Local player: unlinks the equipment room, stops the name board update and releases the name board. |
+| <Link id="m-destroyremoteeffects" /><code>{"private void DestroyRemoteEffects(bool isAnimatingEffects)"}</code> | Other players: makes the remote dummy effect disappear, or destroys it straight away. |
+| <Link id="m-getdummyspawnposition" /><code>{"private Vector3 GetDummySpawnPosition()"}</code> | A point in front of the player's feet, along the head's flat forward, at `DummySpawnDistanceFromPlayer`. |
+| <Link id="m-positioninfrontofplayer" /><code>{"private void PositionInFrontOfPlayer(Transform transformToPosition)"}</code> | Puts a transform at the dummy spawn position facing the player's feet. |
+| <Link id="m-spawncustomizationdummy" /><code>{"private void SpawnCustomizationDummy()"}</code> | Local player: spawns the equipment room in front of the player and a name board above the dummy. |
+| <Link id="m-spawnremotedummyeffects" /><code>{"private void SpawnRemoteDummyEffects(bool isAnimatingEffects)"}</code> | Spawns the effect other players (and the server) see in front of someone in equipment mode. |
+| <Link id="m-updatenameboardposition" /><code>{"private void UpdateNameBoardPosition()"}</code> | Each frame keeps the name board above the dummy's head, facing the player. |
 
 </details>

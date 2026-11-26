@@ -32,15 +32,15 @@ Component on a location chunk listing the creature populations that live there. 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-averagetimebetweensoundeffects" /><code>{"private float averageTimeBetweenSoundEffects"}</code> |
-| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"[] definitions"}</code> |
-| <Link id="m-definitionsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"> definitionsMap"}</code> |
-| <Link id="m-populationfolderprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" populationFolderPrefab"}</code> |
-| <Link id="m-populations" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{"> populations"}</code> |
-| <Link id="m-spawninformationmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{"> spawnInformationMap"}</code> |
-| <Link id="m-streamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-averagetimebetweensoundeffects" /><code>{"private float averageTimeBetweenSoundEffects"}</code> | Serialized value, defaults to 10. Not read anywhere in the server build. |
+| <Link id="m-definitions" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"[] definitions"}</code> | The populations this ecosystem spawns, with their size limits. |
+| <Link id="m-definitionsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/ecosystem-populationapplication">{"Ecosystem.PopulationApplication"}</Link>{"> definitionsMap"}</code> | Private: `definitions` by population hash, built in `InitializeAsServer`. |
+| <Link id="m-populationfolderprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" populationFolderPrefab"}</code> | Prefab spawned to hold each population's members. |
+| <Link id="m-populations" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{"> populations"}</code> | Private: the population folders currently in this chunk. |
+| <Link id="m-spawninformationmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{"> spawnInformationMap"}</code> | Private: spawn points or areas per population hash, set by `SetPoints` and `SetPopulationValue`. |
+| <Link id="m-streamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer"}</code> | Private: the `CaveLayerStreamer` on this object, if any, used to read the generated biome. |
 
 </details>
 
@@ -54,9 +54,9 @@ Component on a location chunk listing the creature populations that live there. 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-populations-ispawnsystem-item" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" this[uint populationHash] { get; }"}</code> | Indexer: the spawn information stored for a population hash, or null. |
 
 </details>
 
@@ -73,13 +73,13 @@ Component on a location chunk listing the creature populations that live there. 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-chunkinitializepopulations" /><code>{"private void ChunkInitializePopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-cleanspawnpoints" /><code>{"private void CleanSpawnPoints("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-unloadpopulations" /><code>{"private void UnloadPopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches the `LocationChunk` on the same object. |
+| <Link id="m-chunkinitializepopulations" /><code>{"private void ChunkInitializePopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Private: when the chunk fully loads, spawns a population folder per definition if none exist, otherwise re-initializes the existing ones. |
+| <Link id="m-cleanspawnpoints" /><code>{"private void CleanSpawnPoints("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Private: clears all spawn information when the chunk fully unloads. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Empty in this build. |
+| <Link id="m-unloadpopulations" /><code>{"private void UnloadPopulations("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Private: destroys every population when the chunk fully unloads. |
 
 </details>
 

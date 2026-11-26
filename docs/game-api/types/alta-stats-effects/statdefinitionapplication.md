@@ -29,13 +29,13 @@ A stat definition paired with its default value and range, as set up on a `StatM
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> |
-| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> |
-| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-defaultmaximumvalue" /><code>{"private float defaultMaximumValue"}</code> | Backing field for `DefaultMaximum`. |
+| <Link id="m-defaultminimumvalue" /><code>{"private float defaultMinimumValue"}</code> | Backing field for `DefaultMinimum`. |
+| <Link id="m-defaultvalue" /><code>{"private float defaultValue"}</code> | Backing field for `Default`. |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`; defaults to the definition's asset name. |
 
 </details>
 

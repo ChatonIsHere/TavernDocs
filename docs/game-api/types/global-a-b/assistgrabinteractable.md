@@ -1,6 +1,6 @@
 ---
 title: "AssistGrabInteractable"
-description: "class AssistGrabInteractable in Root.Township."
+description: "An Interactable that grab assist can pull toward the hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AssistGrabInteractable
 
 A **class** in `Root.Township`, no namespace.
+
+An `Interactable` that grab assist can pull toward the hand. `GrabAssistController` scores these as assist targets; it saves as a plain `Interactable`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`Interactable`](/game-api/types/global-i-l/interactable), [`ICustomTypeReplace`](/game-api/types/alta-networking/icustomtypereplace), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler)
@@ -27,9 +29,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> | Returns `typeof(Interactable)`, so entity replacement treats this as a plain `Interactable`. |
 
 </details>
 

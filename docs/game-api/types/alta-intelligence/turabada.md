@@ -35,13 +35,13 @@ The turabada creature's AI (`Agent<Turabada>`). Caches action sets per set asset
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |
-| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
-| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> |
-| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | Transform whose position is the turabada's `Position`. |
+| <Link id="m-killedanimatorboolean" /><code>{"private string killedAnimatorBoolean"}</code> | Animator bool set on the local animator on death. Default "Killed". |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | The action set the turabada starts with. |
+| <Link id="m-stunnedaction" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponent">{"ActionComponent"}</Link>{" stunnedAction"}</code> | The action component for the stunned action. |
+| <Link id="m-viewcone" /><code>{"private "}<Link to="/game-api/types/global-t-x/viewcone">{"ViewCone"}</Link>{" viewCone"}</code> | Backing field for `ViewCone`. |
 
 </details>
 

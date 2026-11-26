@@ -31,12 +31,12 @@ A named world generation value, such as prosperity, elevation or slope, that bio
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-defaultmaximum" /><code>{"private float defaultMaximum"}</code> |
-| <Link id="m-defaultminimum" /><code>{"private float defaultMinimum"}</code> |
-| <Link id="m-extraperlayer" /><code>{"private float extraPerLayer"}</code> |
-| <Link id="m-isprocedural" /><code>{"private bool isProcedural"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-defaultmaximum" /><code>{"private float defaultMaximum"}</code> | Backing field for `DefaultMaximum`, the top of the random range when no value is set. |
+| <Link id="m-defaultminimum" /><code>{"private float defaultMinimum"}</code> | Backing field for `DefaultMinimum`, the bottom of the random range when no value is set. |
+| <Link id="m-extraperlayer" /><code>{"private float extraPerLayer"}</code> | Backing field for `ExtraPerLayer`: added per cave layer depth. |
+| <Link id="m-isprocedural" /><code>{"private bool isProcedural"}</code> | Backing field for `IsProcedural`. Procedural attributes are blended along forest edges into spawn data. |
 
 </details>
 

@@ -31,41 +31,41 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 <details>
 <summary>33 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-blockablelayers" /><code>{"private LayerMask blockableLayers"}</code> |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
-| <Link id="m-collided" /><code>{"private UnityEvent collided"}</code> |
-| <Link id="m-collidedrigidbodies" /><code>{"private HashSet<Rigidbody> collidedRigidBodies"}</code> |
-| <Link id="m-currentlytrackingplayer" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" currentlyTrackingPlayer"}</code> |
-| <Link id="m-damage" /><code>{"private float damage"}</code> |
-| <Link id="m-dualhandedmultiplier" /><code>{"private float dualHandedMultiplier"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-forceindeximpactors" /><code>{"private bool forceIndexImpactors"}</code> |
-| <Link id="m-haspickup" /><code>{"private bool hasPickup"}</code> |
-| <Link id="m-hit" /><code>{"private UnityEvent hit"}</code> |
-| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> |
-| <Link id="m-indexedimpactors" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> indexedImpactors"}</code> |
-| <Link id="m-isignoringinteractor" /><code>{"private bool isIgnoringInteractor"}</code> |
-| <Link id="m-isignoringvelocitycheck" /><code>{"private bool isIgnoringVelocityCheck"}</code> |
-| <Link id="m-ismedhandle" /><code>{"private bool isMedHandle"}</code> |
-| <Link id="m-isrecentgrab" /><code>{"private Coroutine isRecentGrab"}</code> |
-| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-maps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] maps"}</code> |
-| <Link id="m-needstobeprocessedinstantly" /><code>{"private bool needsToBeProcessedInstantly"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-providesexperience" /><code>{"private bool providesExperience"}</code> |
-| <Link id="m-recorder" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{" recorder"}</code> |
-| <Link id="m-requiredblocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" requiredBlockLevel"}</code> |
-| <Link id="m-resetconditions" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool-resetconditions">{"ImpactTool.ResetConditions"}</Link>{" resetConditions"}</code> |
-| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> |
-| <Link id="m-singlecontact" /><code>{"private static "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] singleContact"}</code> |
-| <Link id="m-singlehandedmultiplier" /><code>{"private float singleHandedMultiplier"}</code> |
-| <Link id="m-timetoselfhit" /><code>{"private float timeToSelfHit"}</code> |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |
-| <Link id="m-updatepositions" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> |
-| <Link id="m-updatesposition" /><code>{"private bool updatesPosition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blockablelayers" /><code>{"private LayerMask blockableLayers"}</code> | Layers whose collisions are checked for blocking. |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | Cached transform used by the position recorder. |
+| <Link id="m-collided" /><code>{"private UnityEvent collided"}</code> | Unity event invoked on every collision. |
+| <Link id="m-collidedrigidbodies" /><code>{"private HashSet<Rigidbody> collidedRigidBodies"}</code> | Rigidbodies already handled this frame, so one collision isn't processed twice. Cleared next frame. |
+| <Link id="m-currentlytrackingplayer" /><code>{"private "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" currentlyTrackingPlayer"}</code> | Locomotion controller of the holder, whose movement is fed into the recorder. |
+| <Link id="m-damage" /><code>{"private float damage"}</code> | Backing field for `Damage`: the base health damage of a hit. Default 1. |
+| <Link id="m-dualhandedmultiplier" /><code>{"private float dualHandedMultiplier"}</code> | Efficiency multiplier when held with two or more hands. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`. |
+| <Link id="m-forceindeximpactors" /><code>{"private bool forceIndexImpactors"}</code> | Builds the indexed impactor list even when the tool has no network entity. |
+| <Link id="m-haspickup" /><code>{"private bool hasPickup"}</code> | Backing field for `HasPickup`, baked from whether a pickup is in the parents. |
+| <Link id="m-hit" /><code>{"private UnityEvent hit"}</code> | Unity event invoked on every successful hit. |
+| <Link id="m-hitdependants" /><code>{"private Component[] hitDependants"}</code> | Backing field for `HitDependants`: child components that get `OnHit` and `OnCollided`. |
+| <Link id="m-indexedimpactors" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> indexedImpactors"}</code> | Ordered impactors, so a hit can be synced as an impactor index. |
+| <Link id="m-isignoringinteractor" /><code>{"private bool isIgnoringInteractor"}</code> | Set on release so the first contact with the last holder is ignored, until `timeToSelfHit` passes. |
+| <Link id="m-isignoringvelocitycheck" /><code>{"private bool isIgnoringVelocityCheck"}</code> | Backing field for `IsIgnoringVelocityCheck`. |
+| <Link id="m-ismedhandle" /><code>{"private bool isMedHandle"}</code> | With a single hand, impactors whose pickup has `BypassMed1h` get full efficiency instead of the one hand multiplier. |
+| <Link id="m-isrecentgrab" /><code>{"private Coroutine isRecentGrab"}</code> | Coroutine running for 0.1 seconds after a grab; no hits are generated meanwhile. |
+| <Link id="m-lengthaxis" /><code>{"private Vector3 lengthAxis"}</code> | Local axis along the tool's length, behind `LengthAxis`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maps" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap">{"ImpactorMap"}</Link>{"[] maps"}</code> | Impactor maps on this object and its children, collider to impactors. |
+| <Link id="m-needstobeprocessedinstantly" /><code>{"private bool needsToBeProcessedInstantly"}</code> | Backing field for `NeedsToBeProcessedInstantly`. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`, the pickup in this object's parents. |
+| <Link id="m-providesexperience" /><code>{"private bool providesExperience"}</code> | Backing field for `ProvidesExperience`. Default true. |
+| <Link id="m-recorder" /><code>{"private "}<Link to="/game-api/types/global-p/positionrecorder">{"PositionRecorder"}</Link>{" recorder"}</code> | Backing field for `Recorder`, pooled from `PickupTypeSettings`. |
+| <Link id="m-requiredblocklevel" /><code>{"private "}<Link to="/game-api/types/global-a-b/blocklevel">{"BlockLevel"}</Link>{" requiredBlockLevel"}</code> | Block level at or above which a block resets the recorder, when `OnBlocked` reset is set. |
+| <Link id="m-resetconditions" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttool-resetconditions">{"ImpactTool.ResetConditions"}</Link>{" resetConditions"}</code> | When to reset the recorded swing: on a block, on a valid hit, or both. Default valid hit. |
+| <Link id="m-rigidbody" /><code>{"private Rigidbody rigidbody"}</code> | Backing field for `Rigidbody`. |
+| <Link id="m-singlecontact" /><code>{"private static "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] singleContact"}</code> | Shared one element contact array put on the best hit. |
+| <Link id="m-singlehandedmultiplier" /><code>{"private float singleHandedMultiplier"}</code> | Efficiency multiplier when held with one hand. |
+| <Link id="m-timetoselfhit" /><code>{"private float timeToSelfHit"}</code> | Seconds after release before the tool can hit its last holder. Default 1.5. |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared fixed update module that runs `UpdatePositions` for all tools. |
+| <Link id="m-updatepositions" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePositions"}</code> | This tool's registration in `updateModule`, or null when not recording. |
+| <Link id="m-updatesposition" /><code>{"private bool updatesPosition"}</code> | Whether any impactor needs the position recorder. |
 
 </details>
 
@@ -99,9 +99,9 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-callcoroutine" /><code>{"private Coroutine CallCoroutine { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-callcoroutine" /><code>{"private Coroutine CallCoroutine { get; set; }"}</code> | Private coroutine slot that nothing in this class sets. |
 
 </details>
 
@@ -143,25 +143,25 @@ Component on anything that can hit with its impactors (weapons, tools, arrows, c
 <details>
 <summary>17 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-deregisterplayer" /><code>{"private void DeregisterPlayer()"}</code> |
-| <Link id="m-getoverlapchannel" /><code>{"private bool GetOverlapChannel(List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> impactorChannels, "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] detectorChannels, out "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" overlap)"}</code> |
-| <Link id="m-grabbed" /><code>{"private void Grabbed("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-haptic" /><code>{"private void Haptic(AnimationCurve haptic)"}</code> |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-recentgrab" /><code>{"private IEnumerator RecentGrab() (iterator)"}</code> |
-| <Link id="m-registerimpactorchannels" /><code>{"private void RegisterImpactorChannels("}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" impactor)"}</code> |
-| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-reset" /><code>{"private void Reset()"}</code> |
-| <Link id="m-setupimpactors" /><code>{"private void SetupImpactors()"}</code> |
-| <Link id="m-timetohurtself" /><code>{"private IEnumerator TimeToHurtSelf() (iterator)"}</code> |
-| <Link id="m-undockwakeup" /><code>{"private void UndockWakeUp("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-updateindexedimpactors" /><code>{"private void UpdateIndexedImpactors()"}</code> |
-| <Link id="m-updateindexedimpactorsoncraftingpart" /><code>{"private void UpdateIndexedImpactorsOnCraftingPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |
-| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deregisterplayer" /><code>{"private void DeregisterPlayer()"}</code> | Stops feeding the tracked player's movement and turning into the position recorder. |
+| <Link id="m-getoverlapchannel" /><code>{"private bool GetOverlapChannel(List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> impactorChannels, "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] detectorChannels, out "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{" overlap)"}</code> | Finds the first impactor channel that is also in the detector's channels. |
+| <Link id="m-grabbed" /><code>{"private void Grabbed("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Handler for the pickup's `InteractionStarted`: blocks hits for 0.1 seconds, starts position recording and tracks the holder's locomotion. |
+| <Link id="m-haptic" /><code>{"private void Haptic(AnimationCurve haptic)"}</code> | Client: plays a haptic curve on every hand holding the pickup. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Handles physical hits against other held items and tools: works out blocking, applies blocking skills, impact modifiers and durability, and raises `OnCollided`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Returns the position recorder to the pool and stops the position updates. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the length axis in the editor. |
+| <Link id="m-recentgrab" /><code>{"private IEnumerator RecentGrab() (iterator)"}</code> | Coroutine that clears the recent grab flag after 0.1 seconds. |
+| <Link id="m-registerimpactorchannels" /><code>{"private void RegisterImpactorChannels("}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{" impactor)"}</code> | Adds an impactor's channels to `Channels`. |
+| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Handler for the pickup's `InteractionEnded`: lets the tool hit its own wielder again after `timeToSelfHit`, and stops tracking the player once nobody holds it. |
+| <Link id="m-reset" /><code>{"private void Reset()"}</code> | Clears the position recorder and raises `Reseted`. |
+| <Link id="m-setupimpactors" /><code>{"private void SetupImpactors()"}</code> | Called on awake: registers this tool with every impactor in its maps, collects channels and starts position updates if any impactor needs them. |
+| <Link id="m-timetohurtself" /><code>{"private IEnumerator TimeToHurtSelf() (iterator)"}</code> | Coroutine that waits `timeToSelfHit` seconds, then stops ignoring the last holder. |
+| <Link id="m-undockwakeup" /><code>{"private void UndockWakeUp("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Handler for the pickup's `Undocked`: starts position updates again. |
+| <Link id="m-updateindexedimpactors" /><code>{"private void UpdateIndexedImpactors()"}</code> | Rebuilds the ordered impactor list used to sync hits by index, including impactors on crafted child parts. |
+| <Link id="m-updateindexedimpactorsoncraftingpart" /><code>{"private void UpdateIndexedImpactorsOnCraftingPart("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> | Adds the impactors of every part connected to a crafting part, recursing down the tree. |
+| <Link id="m-updatepositions-2" /><code>{"private void UpdatePositions()"}</code> | Fixed update: records the tool's position, or stops and resets once it is asleep and not held, or is a crafted child. |
 
 </details>
 

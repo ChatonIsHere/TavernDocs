@@ -30,19 +30,19 @@ A page or sheet of paper entity showing `PageData` (a recipe or glyphs). It rend
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
-| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
-| <Link id="m-loadisduplicate" /><code>{"private bool loadIsDuplicate"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-predefinedpage" /><code>{"private Object predefinedPage"}</code> |
-| <Link id="m-rendereddata" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" renderedData"}</code> |
-| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-visibilitydetector" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" visibilityDetector"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | Backing field for `Animator`. |
+| <Link id="m-colliders" /><code>{"private Collider[] colliders"}</code> | Colliders turned off while the page is in a book. |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> | Backing field for `Data`: the glyphs and provider of the page. |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> | Whether the page is currently rendered. |
+| <Link id="m-loadisduplicate" /><code>{"private bool loadIsDuplicate"}</code> | Set from the save so `InitializeAsServer` can mark the page a duplicate. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-predefinedpage" /><code>{"private Object predefinedPage"}</code> | A page object shown read-only in the inspector. Not used by this class. |
+| <Link id="m-rendereddata" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" renderedData"}</code> | The page data the current render was made from, released on unload. |
+| <Link id="m-renderer" /><code>{"private Renderer renderer"}</code> | Renderer that shows the rendered page material. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for `Sync`, sent on connect and by `ForceSync`. |
+| <Link id="m-visibilitydetector" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" visibilityDetector"}</code> | Tells the page when it becomes visible or invisible so it loads and unloads its render. |
 
 </details>
 
@@ -78,15 +78,15 @@ A page or sheet of paper entity showing `PageData` (a recipe or glyphs). It rend
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-delayrender" /><code>{"private IEnumerator DelayRender("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data) (iterator)"}</code> |
-| <Link id="m-delayrender-2" /><code>{"private void DelayRender()"}</code> |
-| <Link id="m-load" /><code>{"private void Load()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-unload" /><code>{"private void Unload()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-delayrender" /><code>{"private IEnumerator DelayRender("}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data) (iterator)"}</code> | Client: renders the page data onto the page material a frame after it becomes visible. The overload with no arguments is empty. |
+| <Link id="m-delayrender-2" /><code>{"private void DelayRender()"}</code> | Client: renders the page data onto the page material a frame after it becomes visible. The overload with no arguments is empty. |
+| <Link id="m-load" /><code>{"private void Load()"}</code> | Starts rendering the page when it becomes visible. The explicit `ISavable` overload restores the page data and duplicate flag from a save. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Releases the rendered page. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty. |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the page data; clients re-render it if visible. |
+| <Link id="m-unload" /><code>{"private void Unload()"}</code> | Releases the rendered page material when the page goes out of view. |
 
 </details>
 

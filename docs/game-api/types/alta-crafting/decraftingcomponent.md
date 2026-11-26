@@ -31,16 +31,16 @@ Base for a station that takes crafted items apart by hitting them with a chisel 
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-availableslots" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"> availableSlots"}</code> |
-| <Link id="m-currentchiseleable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselable">{"Chiselable"}</Link>{" currentChiseleable"}</code> |
-| <Link id="m-currentpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" currentPart"}</code> |
-| <Link id="m-decraftinghiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" decraftingHitEffect"}</code> |
-| <Link id="m-innefectivehiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" innefectiveHitEffect"}</code> |
-| <Link id="m-maxdistancefrominsertsquared" /><code>{"private float maxDistanceFromInsertSquared"}</code> |
-| <Link id="m-minimumhittodecraft" /><code>{"private float minimumHitToDecraft"}</code> |
-| <Link id="m-syncdecraftinghit" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-crafting/decraftingcomponent-hittypeposition">{"DecraftingComponent.HitTypePosition"}</Link>{"> syncDecraftingHit"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-availableslots" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{"> availableSlots"}</code> | Slots whose attached part can be knocked off now. |
+| <Link id="m-currentchiseleable" /><code>{"private "}<Link to="/game-api/types/alta-crafting/chiselable">{"Chiselable"}</Link>{" currentChiseleable"}</code> | `Chiselable` added to the current part so it can be hit. |
+| <Link id="m-currentpart" /><code>{"private "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" currentPart"}</code> | The crafting part being decrafted. |
+| <Link id="m-decraftinghiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" decraftingHitEffect"}</code> | Effect for a hit that lands near a removable part. |
+| <Link id="m-innefectivehiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" innefectiveHitEffect"}</code> | Effect for a hit that is too weak or misses every slot. |
+| <Link id="m-maxdistancefrominsertsquared" /><code>{"private float maxDistanceFromInsertSquared"}</code> | Squared distance from a slot a hit must land within. |
+| <Link id="m-minimumhittodecraft" /><code>{"private float minimumHitToDecraft"}</code> | Least damage a hit needs to knock a part off. |
+| <Link id="m-syncdecraftinghit" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-crafting/decraftingcomponent-hittypeposition">{"DecraftingComponent.HitTypePosition"}</Link>{"> syncDecraftingHit"}</code> | Message sync for hit effects. |
 
 </details>
 
@@ -64,12 +64,12 @@ Base for a station that takes crafted items apart by hitting them with a chisel 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addpartslots" /><code>{"private bool AddPartSlots("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |
-| <Link id="m-getclosestslot" /><code>{"private bool GetClosestSlot(ref "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" closestSlot, Vector3 position)"}</code> |
-| <Link id="m-mapslots" /><code>{"private void MapSlots()"}</code> |
-| <Link id="m-remapslots" /><code>{"private void ReMapSlots("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, bool isLoad)"}</code> |
-| <Link id="m-syncdecraftinghit-2" /><code>{"private void SyncDecraftingHit("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-crafting/decraftingcomponent-hittypeposition">{"DecraftingComponent.HitTypePosition"}</Link>{" hitTypePosition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addpartslots" /><code>{"private bool AddPartSlots("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> | Adds the slots holding outermost parts (ones with nothing attached) to `availableSlots`. Returns true if the part has nothing attached. |
+| <Link id="m-getclosestslot" /><code>{"private bool GetClosestSlot(ref "}<Link to="/game-api/types/alta-crafting/jointslot">{"JointSlot"}</Link>{" closestSlot, Vector3 position)"}</code> | Finds the available slot nearest the hit, within `maxDistanceFromInsertSquared`. |
+| <Link id="m-mapslots" /><code>{"private void MapSlots()"}</code> | Rebuilds the list of slots that can be knocked off. |
+| <Link id="m-remapslots" /><code>{"private void ReMapSlots("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part, bool isLoad)"}</code> | Handler for the part being crafted: rebuilds the slot list. |
+| <Link id="m-syncdecraftinghit-2" /><code>{"private void SyncDecraftingHit("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-crafting/decraftingcomponent-hittypeposition">{"DecraftingComponent.HitTypePosition"}</Link>{" hitTypePosition)"}</code> | Network message that plays the effective or ineffective hit effect on clients. |
 
 </details>

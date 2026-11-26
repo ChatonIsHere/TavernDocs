@@ -33,14 +33,14 @@ Which cosmetics a player has bought, owns and may pick from, by category. Get on
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-available" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> available"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager"}</code> |
-| <Link id="m-owned" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> owned"}</code> |
-| <Link id="m-purchased" /><code>{"private readonly List<uint> purchased"}</code> |
-| <Link id="m-randomize" /><code>{"private TaskCompletionSource<bool> randomize"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-available" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> available"}</code> | Backing field for `Available`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager"}</code> | The player's customization manager. |
+| <Link id="m-owned" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{", HashSet<uint>> owned"}</code> | Backing field for `Owned`. |
+| <Link id="m-purchased" /><code>{"private readonly List<uint> purchased"}</code> | Backing field for `Purchased`. |
+| <Link id="m-randomize" /><code>{"private TaskCompletionSource<bool> randomize"}</code> | Task for the randomize in progress, so a second call waits for it instead. |
 
 </details>
 
@@ -67,10 +67,10 @@ Which cosmetics a player has bought, owns and may pick from, by category. Get on
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-additem" /><code>{"private void AddItem(uint purchasable)"}</code> |
-| <Link id="m-wasdestroyed" /><code>{"private bool WasDestroyed()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-additem" /><code>{"private void AddItem(uint purchasable)"}</code> | Adds a cosmetic to purchased and owned if it is a cosmetic definition. |
+| <Link id="m-wasdestroyed" /><code>{"private bool WasDestroyed()"}</code> | True if any customization handler has been destroyed, so randomizing stops. |
 
 </details>
 

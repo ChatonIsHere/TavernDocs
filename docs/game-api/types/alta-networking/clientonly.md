@@ -1,6 +1,6 @@
 ---
 title: "ClientOnly"
-description: "Alta.Networking.ClientOnly is a component that lists behaviours to switch off on a real server (renderers, audio, effects) and on everywhere else."
+description: "Turns a list of behaviours off on a dedicated server and on everywhere else (clients and local test), so client-only scripts never run server side."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Networking`.
 
-`Alta.Networking.ClientOnly` is a component that lists behaviours to switch off on a real server (renderers, audio, effects) and on everywhere else. It runs in `Awake`.
+Turns a list of behaviours off on a dedicated server and on everywhere else (clients and local test), so client-only scripts never run server side.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MonoBehaviour`, [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -29,9 +29,9 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-behaviours" /><code>{"private Behaviour[] behaviours"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-behaviours" /><code>{"private Behaviour[] behaviours"}</code> | The behaviours switched on or off. |
 
 </details>
 
@@ -40,9 +40,9 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Disables the listed behaviours on a non-local-test server and enables them otherwise. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops null entries from `behaviours`. |
 
 </details>

@@ -28,10 +28,10 @@ The rolled result of a biome mix for a cave layer or area: the biomes and their 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-biomes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{"[] biomes"}</code> |
-| <Link id="m-biomethresholds" /><code>{"private float[] biomeThresholds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-biomes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{"[] biomes"}</code> | The weighted biomes, in the same order as `biomeThresholds`. |
+| <Link id="m-biomethresholds" /><code>{"private float[] biomeThresholds"}</code> | Running totals of the biome weightings, used by `GetRandom` to pick a biome. |
 
 </details>
 

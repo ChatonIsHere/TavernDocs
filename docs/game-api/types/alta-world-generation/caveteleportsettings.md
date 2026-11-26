@@ -31,23 +31,23 @@ Global settings for cave teleporters: fuel costs between layers, effects, sounds
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |
-| <Link id="m-arriveatcaveeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" arriveAtCaveEffect"}</code> |
-| <Link id="m-arriveatsurfaceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" arriveAtSurfaceEffect"}</code> |
-| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> |
-| <Link id="m-departfromcaveeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" departFromCaveEffect"}</code> |
-| <Link id="m-departfromsurfaceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" departFromSurfaceEffect"}</code> |
-| <Link id="m-fadeincurve" /><code>{"private AnimationCurve fadeInCurve"}</code> |
-| <Link id="m-fadeoutcurve" /><code>{"private AnimationCurve fadeOutCurve"}</code> |
-| <Link id="m-fromsurface" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" fromSurface"}</code> |
-| <Link id="m-fuelprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" fuelPrefab"}</code> |
-| <Link id="m-localsoundcooldown" /><code>{"private float localSoundCooldown"}</code> |
-| <Link id="m-teleportdelay" /><code>{"private float teleportDelay"}</code> |
-| <Link id="m-teleportsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" teleportSoundEffect"}</code> |
-| <Link id="m-tosurface" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" toSurface"}</code> |
-| <Link id="m-withincaves" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" withinCaves"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | Length of the teleporter repair animation, exposed as `AnimationDuration`. |
+| <Link id="m-arriveatcaveeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" arriveAtCaveEffect"}</code> | Pooled effect played where a player arrives in a cave layer. |
+| <Link id="m-arriveatsurfaceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" arriveAtSurfaceEffect"}</code> | Pooled effect played where a player arrives on the surface. |
+| <Link id="m-basematerial" /><code>{"private Material baseMaterial"}</code> | Material for the repair animation, exposed as `BaseMaterial`. |
+| <Link id="m-departfromcaveeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" departFromCaveEffect"}</code> | Pooled effect played where a player leaves from a cave layer. |
+| <Link id="m-departfromsurfaceeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" departFromSurfaceEffect"}</code> | Pooled effect played where a player leaves from the surface. |
+| <Link id="m-fadeincurve" /><code>{"private AnimationCurve fadeInCurve"}</code> | Fade-in curve for the repair animation. |
+| <Link id="m-fadeoutcurve" /><code>{"private AnimationCurve fadeOutCurve"}</code> | Fade-out curve for the repair animation. |
+| <Link id="m-fromsurface" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" fromSurface"}</code> | Cost structure for teleports that start on the surface (layer 0); adds one to the layer distance. |
+| <Link id="m-fuelprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" fuelPrefab"}</code> | Prefab of the fuel item that `CaveTeleporter.AddAmount` spawns into a teleporter's fuel dock. |
+| <Link id="m-localsoundcooldown" /><code>{"private float localSoundCooldown"}</code> | Seconds between teleport sounds for the local player (default 4). |
+| <Link id="m-teleportdelay" /><code>{"private float teleportDelay"}</code> | Seconds between starting a teleport and moving the player (default 1); the screen fades over half of it. |
+| <Link id="m-teleportsoundeffect" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" teleportSoundEffect"}</code> | Sound played on teleport. |
+| <Link id="m-tosurface" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" toSurface"}</code> | Cost structure for teleports that end on the surface; adds one to the layer distance. |
+| <Link id="m-withincaves" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/teleportcoststructure">{"TeleportCostStructure"}</Link>{" withinCaves"}</code> | Cost structure for teleports between two cave layers. |
 
 </details>
 

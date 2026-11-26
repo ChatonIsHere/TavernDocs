@@ -31,17 +31,17 @@ An asset describing how a fire looks: light intensity, range and shadows, and ho
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-initialparticlesscale" /><code>{"private float initialParticlesScale"}</code> |
-| <Link id="m-intensity" /><code>{"private float intensity"}</code> |
-| <Link id="m-islightbrightnessmodified" /><code>{"private bool isLightBrightnessModified"}</code> |
-| <Link id="m-isparticlesscalemodified" /><code>{"private bool isParticlesScaleModified"}</code> |
-| <Link id="m-particlesscale" /><code>{"private AnimationCurve particlesScale"}</code> |
-| <Link id="m-particlesystemparametersoverlifetime" /><code>{"private AnimationCurve particleSystemParametersOverLifetime"}</code> |
-| <Link id="m-progressbrightnessmultiplier" /><code>{"private AnimationCurve progressBrightnessMultiplier"}</code> |
-| <Link id="m-range" /><code>{"private float range"}</code> |
-| <Link id="m-shadows" /><code>{"private LightShadows shadows"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialparticlesscale" /><code>{"private float initialParticlesScale"}</code> | Scale of the fire particles when the effect starts. |
+| <Link id="m-intensity" /><code>{"private float intensity"}</code> | Fire light intensity. |
+| <Link id="m-islightbrightnessmodified" /><code>{"private bool isLightBrightnessModified"}</code> | Whether `PooledFireEffect` scales light brightness by fire progress. |
+| <Link id="m-isparticlesscalemodified" /><code>{"private bool isParticlesScaleModified"}</code> | Whether `PooledFireEffect` scales the particles by fire progress. |
+| <Link id="m-particlesscale" /><code>{"private AnimationCurve particlesScale"}</code> | Particle scale by fire progress (0 to 1). |
+| <Link id="m-particlesystemparametersoverlifetime" /><code>{"private AnimationCurve particleSystemParametersOverLifetime"}</code> | Particle system multiplier by fire progress (0 to 1), used when particle scaling is on. |
+| <Link id="m-progressbrightnessmultiplier" /><code>{"private AnimationCurve progressBrightnessMultiplier"}</code> | Light brightness multiplier by fire progress (0 to 1). Defaults to fading from 1 to 0. |
+| <Link id="m-range" /><code>{"private float range"}</code> | Fire light range. |
+| <Link id="m-shadows" /><code>{"private LightShadows shadows"}</code> | Shadow mode for the fire light. |
 
 </details>
 

@@ -29,17 +29,17 @@ Asset of numbers for an `Impactor` (the part of a tool that deals hits): impact 
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channels" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> channels"}</code> |
-| <Link id="m-crippledamagemodifier" /><code>{"private float crippleDamageModifier"}</code> |
-| <Link id="m-directionpower" /><code>{"private float directionPower"}</code> |
-| <Link id="m-edgelength" /><code>{"private float edgeLength"}</code> |
-| <Link id="m-healthdamagemodifier" /><code>{"private float healthDamageModifier"}</code> |
-| <Link id="m-lerpvalue" /><code>{"private float lerpValue"}</code> |
-| <Link id="m-maximumfollow" /><code>{"private float maximumFollow"}</code> |
-| <Link id="m-minimumfollow" /><code>{"private float minimumFollow"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channels" /><code>{"private List<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"> channels"}</code> | Backing field for `Channels`, the impact channels this impactor hits on. |
+| <Link id="m-crippledamagemodifier" /><code>{"private float crippleDamageModifier"}</code> | Backing field for `CrippleDamageModifier`. Defaults to 1. |
+| <Link id="m-directionpower" /><code>{"private float directionPower"}</code> | Backing field for `DirectionPower`; effectiveness is the direction dot product raised to this power. |
+| <Link id="m-edgelength" /><code>{"private float edgeLength"}</code> | Backing field for `EdgeLength`. Defaults to -1. |
+| <Link id="m-healthdamagemodifier" /><code>{"private float healthDamageModifier"}</code> | Backing field for `HealthDamageModifier`. Defaults to 1. |
+| <Link id="m-lerpvalue" /><code>{"private float lerpValue"}</code> | Backing field for `LerpValue`. Defaults to 0.05. |
+| <Link id="m-maximumfollow" /><code>{"private float maximumFollow"}</code> | Backing field for `MaximumFollow`. Defaults to 1.35. |
+| <Link id="m-minimumfollow" /><code>{"private float minimumFollow"}</code> | Backing field for `MinimumFollow`. Defaults to 0.35. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" type"}</code> | Backing field for `Type`, the `ImpactType` of this impactor. |
 
 </details>
 

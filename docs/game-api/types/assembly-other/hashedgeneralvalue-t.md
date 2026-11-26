@@ -34,13 +34,13 @@ Base for game data assets (items, stats, recipes, materials and so on) that have
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isfail" /><code>{"private static bool isFail"}</code> |
-| <Link id="m-isinresourceloading" /><code>{"private static bool isInResourceLoading"}</code> |
-| <Link id="m-items" /><code>{"private static Dictionary<uint, T> items"}</code> |
-| <Link id="m-itemsbyname" /><code>{"private static Dictionary<string, T> itemsByName"}</code> |
-| <Link id="m-paths" /><code>{"private static string[] paths"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isfail" /><code>{"private static bool isFail"}</code> | Private: set when a lookup fails with no items loaded. While set, `CheckItems` stops trying to load. |
+| <Link id="m-isinresourceloading" /><code>{"private static bool isInResourceLoading"}</code> | Private: true while `LoadAll` is calling `Resources.LoadAll`, so `ValidateHashes` does not recurse. |
+| <Link id="m-items" /><code>{"private static Dictionary<uint, T> items"}</code> | Private: every loaded asset of the type, by hash. |
+| <Link id="m-itemsbyname" /><code>{"private static Dictionary<string, T> itemsByName"}</code> | Private: name lookup used by `Get(string)`, built on first use. |
+| <Link id="m-paths" /><code>{"private static string[] paths"}</code> | Private: cached result of `GetAssetPaths`. |
 
 </details>
 
@@ -67,11 +67,11 @@ Base for game data assets (items, stats, recipes, materials and so on) that have
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-buildnamedictionary" /><code>{"private static Dictionary<string, T> BuildNameDictionary()"}</code> |
-| <Link id="m-getassetpaths" /><code>{"private static IEnumerable<string> GetAssetPaths()"}</code> |
-| <Link id="m-loadall" /><code>{"private static IEnumerable<T> LoadAll()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-buildnamedictionary" /><code>{"private static Dictionary<string, T> BuildNameDictionary()"}</code> | Private: builds the name lookup from all loaded assets, with names lowercased and spaces removed. Logs duplicate names. |
+| <Link id="m-getassetpaths" /><code>{"private static IEnumerable<string> GetAssetPaths()"}</code> | Private: the Resources folders to load from, from `HashedPathAttribute` or else the type's name. Cached in `paths`. |
+| <Link id="m-loadall" /><code>{"private static IEnumerable<T> LoadAll()"}</code> | Private: loads every asset of the type from its Resources folders, with `isInResourceLoading` set while it runs. |
 
 </details>
 

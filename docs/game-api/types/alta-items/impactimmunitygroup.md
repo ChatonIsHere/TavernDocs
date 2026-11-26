@@ -1,6 +1,6 @@
 ---
 title: "ImpactImmunityGroup"
-description: "A multiplier when an impactor and a detector share a group."
+description: "Asset for an impact immunity group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Impact`.
 
-A multiplier when an impactor and a detector share a group.
+Asset for an impact immunity group. When a tool and a detector share a group, the hit's efficiency is multiplied by the group's `Multiplier` (see `ImpactTool`).
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -31,17 +31,17 @@ A multiplier when an impactor and a detector share a group.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Backing field for `Multiplier`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-multiplier-2" /><code>{"float Multiplier { get; }"}</code> | Efficiency multiplier (0 to 1) for hits between a tool and detector that share this group. |
 
 ## Used in
 

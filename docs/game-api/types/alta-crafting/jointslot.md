@@ -29,11 +29,11 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isflipweighting" /><code>{"private bool isFlipWeighting"}</code> |
-| <Link id="m-syncinsert" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncInsert"}</code> |
-| <Link id="m-types" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslottype">{"JointSlotType"}</Link>{"> types"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isflipweighting" /><code>{"private bool isFlipWeighting"}</code> | Backing field for `IsFlipWeighting`. On double-sided weapons, asks to flip when docked if this side is heavier. |
+| <Link id="m-syncinsert" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncInsert"}</code> | Method sync the server uses to send connects and disconnects, and the current state to joining players. |
+| <Link id="m-types" /><code>{"private List<"}<Link to="/game-api/types/alta-crafting/jointslottype">{"JointSlotType"}</Link>{"> types"}</code> | Backing field for `Types`: slot types that decide which inserts fit. |
 
 </details>
 
@@ -50,9 +50,9 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-crafting-ijointslotcomponent-isdestroyed" /><code>{"private bool Alta.Crafting.IJointSlotComponent.IsDestroyed { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-crafting-ijointslotcomponent-isdestroyed" /><code>{"private bool Alta.Crafting.IJointSlotComponent.IsDestroyed { get; }"}</code> | True once the Unity object has been destroyed. |
 
 </details>
 
@@ -82,10 +82,10 @@ A place on a `CraftingPart` where another part's insert can join (a blade onto a
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-findexisting" /><code>{"private void FindExisting()"}</code> |
-| <Link id="m-syncinsert-2" /><code>{"private async void SyncInsert("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isPlayingEffects)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-findexisting" /><code>{"private void FindExisting()"}</code> | Server: on spawn, connects a crafting part already under the slot and marks its forged points fully done. |
+| <Link id="m-syncinsert-2" /><code>{"private async void SyncInsert("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isPlayingEffects)"}</code> | Method sync handler: sends whether a part is connected and which one; receivers connect or disconnect to match. |
 
 </details>
 

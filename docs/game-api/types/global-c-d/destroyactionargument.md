@@ -1,6 +1,6 @@
 ---
 title: "DestroyActionArgument"
-description: "HealthObject, when a player's tool destroys something"
+description: "Game task action argument sent when a player destroys a health object with a tool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`HealthObject`, when a player's tool destroys something
+Game task action argument sent when a player destroys a health object with a tool. Server.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument)
@@ -27,10 +27,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
-| <Link id="m-destroyed" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Destroyed { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.DestroyObject`. |
+| <Link id="m-destroyed" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Destroyed { get; }"}</code> | Prefab of the object that was destroyed. |
 
 ## Used in
 

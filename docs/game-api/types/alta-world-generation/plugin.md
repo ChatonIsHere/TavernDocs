@@ -31,17 +31,17 @@ A cave generation step asset (blob, tunnels, crystals, structures and so on), ma
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-element" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> |
-| <Link id="m-generationstage" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" generationStage"}</code> |
-| <Link id="m-isdynamic" /><code>{"private bool isDynamic"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> |
-| <Link id="m-layerheight" /><code>{"private int layerHeight"}</code> |
-| <Link id="m-layeroverflowxz" /><code>{"private int layerOverflowXZ"}</code> |
-| <Link id="m-parts" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> parts"}</code> |
-| <Link id="m-pluginidentifier" /><code>{"private int pluginIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-element" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{" element"}</code> | Backing field for `Element`. The base `Render` spawns this element's prefab. |
+| <Link id="m-generationstage" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generationstage">{"GenerationStage"}</Link>{" generationStage"}</code> | Backing field for `Stage`, the generation stage the plugin runs in. |
+| <Link id="m-isdynamic" /><code>{"private bool isDynamic"}</code> | Backing field for `IsDynamic` (formerly `isServerOnly`). Dynamic plugins only run when the generator generates dynamic content. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. Disabled plugins make instances that skip modify and render. |
+| <Link id="m-isnonzerolistcreated" /><code>{"private bool isNonZeroListCreated"}</code> | Backing field for `IsNonZeroListCreated`. If set, each layer builds a list of its non-zero cells after generation. |
+| <Link id="m-layerheight" /><code>{"private int layerHeight"}</code> | Backing field for `LayerHeight`, the Y size of this plugin's chunk layer. |
+| <Link id="m-layeroverflowxz" /><code>{"private int layerOverflowXZ"}</code> | Backing field for `LayerOverflowXZ`: extra cells the layer reaches past each chunk edge. 1 by default. |
+| <Link id="m-parts" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapgeneratorpart">{"MapGeneratorPart"}</Link>{"> parts"}</code> | Backing field for `Parts`, the generator parts that modify each chunk in order. |
+| <Link id="m-pluginidentifier" /><code>{"private int pluginIdentifier"}</code> | Backing field for `PluginIdentifier`. Seeds the per-plugin random hash and is cached in generated loot saves. |
 
 </details>
 
@@ -71,9 +71,9 @@ A cave generation step asset (blob, tunnels, crystals, structures and so on), ma
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: gives the plugin a new identifier if it has none. |
 
 </details>
 

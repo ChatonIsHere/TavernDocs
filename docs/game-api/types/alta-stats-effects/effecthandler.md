@@ -35,17 +35,17 @@ Component next to a `HealthObject` that receives potion and alchemy effects: poi
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-health" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health"}</code> |
-| <Link id="m-immuneto" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler-effecttypes">{"EffectHandler.EffectTypes"}</Link>{" immuneTo"}</code> |
-| <Link id="m-poisoncoroutine" /><code>{"private Coroutine poisonCoroutine"}</code> |
-| <Link id="m-poisonfrequency" /><code>{"private float poisonFrequency"}</code> |
-| <Link id="m-poisonmultiplier" /><code>{"private float poisonMultiplier"}</code> |
-| <Link id="m-poisonstrength" /><code>{"private float poisonStrength"}</code> |
-| <Link id="m-statmanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" statManager"}</code> |
-| <Link id="m-unitstoregen" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", ValueTuple<Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{">, "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{">> unitsToRegen"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Backing field for `Entity`. |
+| <Link id="m-health" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" health"}</code> | Backing field for `Health`. |
+| <Link id="m-immuneto" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effecthandler-effecttypes">{"EffectHandler.EffectTypes"}</Link>{" immuneTo"}</code> | Flags for effects this handler ignores: poison, teleport and reveal. |
+| <Link id="m-poisoncoroutine" /><code>{"private Coroutine poisonCoroutine"}</code> | The running `RunPoison` coroutine, or null when not poisoned. |
+| <Link id="m-poisonfrequency" /><code>{"private float poisonFrequency"}</code> | Seconds between poison damage ticks. 1 by default. |
+| <Link id="m-poisonmultiplier" /><code>{"private float poisonMultiplier"}</code> | Poison damage multiplier, taken from the health object's poison attack type multiplier. |
+| <Link id="m-poisonstrength" /><code>{"private float poisonStrength"}</code> | Damage per poison tick: the highest strength among active stacks. Reset to 0 when the last stack ends. |
+| <Link id="m-statmanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" statManager"}</code> | Backing field for `StatManager`. |
+| <Link id="m-unitstoregen" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", ValueTuple<Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{">, "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{">> unitsToRegen"}</code> | Per effect definition, the queue of pending over-time effects and the coroutine working through it. |
 
 </details>
 
@@ -76,12 +76,12 @@ Component next to a `HealthObject` that receives potion and alchemy effects: poi
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-effectovertime" /><code>{"internal void EffectOverTime("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strength, int duration, Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate)"}</code> |
-| <Link id="m-effectovertimeloop" /><code>{"private IEnumerator EffectOverTimeLoop(Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{"> queue) (iterator)"}</code> |
-| <Link id="m-runpoison" /><code>{"private IEnumerator RunPoison() (iterator)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-effectovertime" /><code>{"internal void EffectOverTime("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strength, int duration, Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate)"}</code> | Queues an effect that applies its strength spread over `duration` seconds, starting the loop for that effect if needed. |
+| <Link id="m-effectovertimeloop" /><code>{"private IEnumerator EffectOverTimeLoop(Queue<"}<Link to="/game-api/types/alta-stats-effects/effecthandler-effectovertimedata">{"EffectHandler.EffectOverTimeData"}</Link>{"> queue) (iterator)"}</code> | Coroutine that works through queued over-time effects one at a time, ticking once a second. |
+| <Link id="m-runpoison" /><code>{"private IEnumerator RunPoison() (iterator)"}</code> | Coroutine that deals poison damage every `poisonFrequency` seconds while health is above 0. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Reads the health object's poison multiplier into `poisonMultiplier`. |
 
 </details>
 

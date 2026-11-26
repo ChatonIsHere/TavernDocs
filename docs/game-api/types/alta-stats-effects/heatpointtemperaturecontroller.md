@@ -1,6 +1,6 @@
 ---
 title: "HeatPointTemperatureController"
-description: "Clamps a point between minTemperature and maxTemperature through its TemperatureModifier, on the server."
+description: "Server: clamps the temperature of the HeatPoint on the same object between a min and max."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-Clamps a point between `minTemperature` and `maxTemperature` through its `TemperatureModifier`, on the server.
+Server: clamps the temperature of the `HeatPoint` on the same object between a min and max.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MonoBehaviour`
@@ -30,10 +30,10 @@ Clamps a point between `minTemperature` and `maxTemperature` through its `Temper
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> |
-| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxtemperature" /><code>{"private float maxTemperature"}</code> | Highest temperature the heat point can reach. Default 100. |
+| <Link id="m-mintemperature" /><code>{"private float minTemperature"}</code> | Lowest temperature the heat point can reach. Default 0. |
 
 </details>
 
@@ -42,9 +42,9 @@ Clamps a point between `minTemperature` and `maxTemperature` through its `Temper
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clamptemperature" /><code>{"private void ClampTemperature(ref float newtemperature)"}</code> | Temperature modifier that clamps new temperatures to the range, and replaces NaN with the midpoint. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Server: hooks `ClampTemperature` into the heat point's `TemperatureModifier`. |
 
 </details>

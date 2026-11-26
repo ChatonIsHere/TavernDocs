@@ -72,9 +72,9 @@ The player's local game options, saved as JSON in the storage folder as `GameCon
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clone" /><code>{"private object System.ICloneable.Clone()"}</code> | Returns a shallow copy of the settings (`MemberwiseClone`). |
 
 </details>
 

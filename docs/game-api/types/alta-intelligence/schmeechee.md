@@ -31,19 +31,19 @@ The schmeechee mushroom critter: a physics creature that steers itself with forc
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-embed" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" embed"}</code> |
-| <Link id="m-groundedbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" groundedBool"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> |
-| <Link id="m-passiveactionsetmap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/schmeechee">{"Schmeechee"}</Link>{">> passiveActionSetMap"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-poptrigger" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{" popTrigger"}</code> |
-| <Link id="m-runspeed" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" runSpeed"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-m-o/mushroomcritter">{"MushroomCritter"}</Link>{" settings"}</code> |
-| <Link id="m-sleepingbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" sleepingBool"}</code> |
-| <Link id="m-turnforce" /><code>{"private float turnForce"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-embed" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" embed"}</code> | Network sync that tells clients to play the embed animation. |
+| <Link id="m-groundedbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" groundedBool"}</code> | Backing field for `GroundedBool`, the networked "Is Grounded" animator bool. Set on the server. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. Not used in this build. |
+| <Link id="m-passiveactions" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" passiveActions"}</code> | The action set the critter starts with and goes back to when dropped. |
+| <Link id="m-passiveactionsetmap" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/schmeechee">{"Schmeechee"}</Link>{">> passiveActionSetMap"}</code> | Static cache of the action set built from each passive set asset. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`. |
+| <Link id="m-poptrigger" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{" popTrigger"}</code> | Backing field for `PopTrigger`, the networked "Pop" trigger. |
+| <Link id="m-runspeed" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{" runSpeed"}</code> | Backing field for `RunSpeed`, the networked "Run Speed" float. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-m-o/mushroomcritter">{"MushroomCritter"}</Link>{" settings"}</code> | Backing field for `Settings`, the critter's `MushroomCritter` tuning. |
+| <Link id="m-sleepingbool" /><code>{"private "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{" sleepingBool"}</code> | Backing field for `SleepingBool`, the networked "Is Sleeping" bool. |
+| <Link id="m-turnforce" /><code>{"private float turnForce"}</code> | Stored turning force built up by `Steer` and `RandomSteer` and applied by `Turn`. |
 
 </details>
 
@@ -78,14 +78,14 @@ The schmeechee mushroom critter: a physics creature that steers itself with forc
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkgrounded" /><code>{"private bool CheckGrounded()"}</code> |
-| <Link id="m-checkupsidedown" /><code>{"private bool CheckUpsideDown()"}</code> |
-| <Link id="m-critterupdate" /><code>{"private void CritterUpdate()"}</code> |
-| <Link id="m-dropped" /><code>{"private void Dropped("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
-| <Link id="m-embed-2" /><code>{"private void Embed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
-| <Link id="m-pickedup" /><code>{"private void PickedUp("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkgrounded" /><code>{"private bool CheckGrounded()"}</code> | Raycasts down from the critter along its own up axis to see if it's on the floor. |
+| <Link id="m-checkupsidedown" /><code>{"private bool CheckUpsideDown()"}</code> | When the critter's up points mostly down, raycasts from its head to see if it's lying on its back. |
+| <Link id="m-critterupdate" /><code>{"private void CritterUpdate()"}</code> | Empty in this build. |
+| <Link id="m-dropped" /><code>{"private void Dropped("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | When dropped, gives the decider back its passive set. |
+| <Link id="m-embed-2" /><code>{"private void Embed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Network handler (`CreatureStateChanged`) that plays the burrow animation on remote clients. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | While free and not held, updates `IsGrounded`, `IsUpsideDown` and the grounded animator bool, and keeps it upright when idle. |
+| <Link id="m-pickedup" /><code>{"private void PickedUp("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | When grabbed, clears the decider's set, cancels the current action and marks it not grounded. |
 
 </details>

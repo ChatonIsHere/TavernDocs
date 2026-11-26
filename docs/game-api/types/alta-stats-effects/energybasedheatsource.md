@@ -1,6 +1,6 @@
 ---
 title: "EnergyBasedHeatSource"
-description: "A HeatSourceBase whose ConductToHeatPoint adds nothing."
+description: "A HeatSourceBase variant that adds energy to its heat point instead of conducting a temperature."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Heat`.
 
-A `HeatSourceBase` whose `ConductToHeatPoint` adds nothing. Looks unfinished.
+A `HeatSourceBase` variant that adds energy to its heat point instead of conducting a temperature. As decompiled it adds zero, so it heats nothing.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`HeatSourceBase`](/game-api/types/alta-stats-effects/heatsourcebase)
@@ -26,6 +26,6 @@ A `HeatSourceBase` whose `ConductToHeatPoint` adds nothing. Looks unfinished.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-conducttoheatpoint" /><code>{"protected override void ConductToHeatPoint()"}</code> | Adds energy to the attached heat point's `InternalEnergy` each heat tick. The amount is always 0 in this build. |

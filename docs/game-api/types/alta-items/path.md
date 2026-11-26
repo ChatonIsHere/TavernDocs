@@ -1,6 +1,6 @@
 ---
 title: "Path"
-description: "abstract class Path in Root.Township."
+description: "Base class for a path a mechanism part moves along, such as StraightPath or BendPath."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Path
 
 An **abstract class** in `Root.Township`, `Alta.Mechanisms`.
+
+Base class for a path a mechanism part moves along, such as `StraightPath` or `BendPath`. Used by `Scrubber`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MonoBehaviour`
@@ -25,10 +27,10 @@ An **abstract class** in `Root.Township`, `Alta.Mechanisms`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getprogress" /><code>{"abstract float GetProgress(Transform transform)"}</code> |
-| <Link id="m-settransform" /><code>{"abstract void SetTransform(Transform transform, float lerp)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getprogress" /><code>{"abstract float GetProgress(Transform transform)"}</code> | Returns how far along the path (0 to 1) the given transform is. |
+| <Link id="m-settransform" /><code>{"abstract void SetTransform(Transform transform, float lerp)"}</code> | Moves the given transform to the point on the path at the given progress (0 to 1). |
 
 ## Used in
 

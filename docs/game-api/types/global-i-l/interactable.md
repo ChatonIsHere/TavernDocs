@@ -34,15 +34,15 @@ Anything a hand can grab or use: the base class for `Pickup`, levers, buttons, c
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
-| <Link id="m-lastplayerinteractor" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPlayerInteractor"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-multipleallowance" /><code>{"private "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" multipleAllowance"}</code> |
-| <Link id="m-multiplenotallowedaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" multipleNotAllowedAction"}</code> |
-| <Link id="m-overrideinteractionprioritymodifier" /><code>{"private float overrideInteractionPriorityModifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channels" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactionchannel">{"InteractionChannel"}</Link>{" channels"}</code> | Backing field for `Channels`. Only interactors sharing a channel can use this. |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> | Backing field for `IsNetworked`. When false, networked start and stop messages are ignored. |
+| <Link id="m-lastplayerinteractor" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" lastPlayerInteractor"}</code> | Backing field for `LastPlayerInteractor`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-multipleallowance" /><code>{"private "}<Link to="/game-api/types/global-m-o/multipleinteractionallowance">{"MultipleInteractionAllowance"}</Link>{" multipleAllowance"}</code> | Backing field for `MultipleAllowance`: whether more than one hand, or more than one player, may hold this at once. |
+| <Link id="m-multiplenotallowedaction" /><code>{"private "}<Link to="/game-api/types/global-m-o/multiplenotallowedaction">{"MultipleNotAllowedAction"}</Link>{" multipleNotAllowedAction"}</code> | What happens when a disallowed extra interactor tries: block the new one, or make the old one let go. |
+| <Link id="m-overrideinteractionprioritymodifier" /><code>{"private float overrideInteractionPriorityModifier"}</code> | Multiplies the distance score when picking what a hand grabs; lower wins. Zero means use the defaults (containers count double). |
 
 </details>
 
@@ -97,13 +97,13 @@ Anything a hand can grab or use: the base class for `Pickup`, levers, buttons, c
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-networkdestroyed" /><code>{"private void NetworkDestroyed("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> |
-| <Link id="m-testlefthand" /><code>{"private void TestLeftHand()"}</code> |
-| <Link id="m-testlefthandend" /><code>{"private void TestLeftHandEnd()"}</code> |
-| <Link id="m-testrighthand" /><code>{"private void TestRightHand()"}</code> |
-| <Link id="m-testrighthandend" /><code>{"private void TestRightHandEnd()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-networkdestroyed" /><code>{"private void NetworkDestroyed("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab)"}</code> | Handler for the prefab's (or parent prefab's) `PreDestroyed` event: force stops every interactor holding this. |
+| <Link id="m-testlefthand" /><code>{"private void TestLeftHand()"}</code> | Editor context menu: makes the local player's left hand start interacting with this. |
+| <Link id="m-testlefthandend" /><code>{"private void TestLeftHandEnd()"}</code> | Editor context menu: makes the local player's left hand stop interacting. |
+| <Link id="m-testrighthand" /><code>{"private void TestRightHand()"}</code> | Editor context menu: makes the local player's right hand start interacting with this. |
+| <Link id="m-testrighthandend" /><code>{"private void TestRightHandEnd()"}</code> | Editor context menu: makes the local player's right hand stop interacting. |
 
 </details>
 

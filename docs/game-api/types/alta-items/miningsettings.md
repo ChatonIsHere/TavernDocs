@@ -32,22 +32,22 @@ Global settings for mining rocks and ore. In this build only the haptics, strike
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isonehitdestroy" /><code>{"private bool isOneHitDestroy"}</code> |
-| <Link id="m-maxrespawntime" /><code>{"private float maxRespawnTime"}</code> |
-| <Link id="m-maxswingdistance" /><code>{"private float maxSwingDistance"}</code> |
-| <Link id="m-minimpactmultiplier" /><code>{"private float minImpactMultiplier"}</code> |
-| <Link id="m-minrespawntime" /><code>{"private float minRespawnTime"}</code> |
-| <Link id="m-minstrikedamage" /><code>{"private int minStrikeDamage"}</code> |
-| <Link id="m-minswingdistance" /><code>{"private float minSwingDistance"}</code> |
-| <Link id="m-resourcedrophapticfeedback" /><code>{"private AnimationCurve resourceDropHapticFeedback"}</code> |
-| <Link id="m-resourcedropspeedmultiplier" /><code>{"private float resourceDropSpeedMultiplier"}</code> |
-| <Link id="m-strikecooldowntime" /><code>{"private float strikeCoolDownTime"}</code> |
-| <Link id="m-strikestrengthrtpc" /><code>{"private RTPC strikeStrengthRTPC"}</code> |
-| <Link id="m-successfulhapticfeedback" /><code>{"private AnimationCurve successfulHapticFeedback"}</code> |
-| <Link id="m-tooldamageperstrike" /><code>{"private float toolDamagePerStrike"}</code> |
-| <Link id="m-unsuccessfulhapticfeedback" /><code>{"private AnimationCurve unsuccessfulHapticFeedback"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isonehitdestroy" /><code>{"private bool isOneHitDestroy"}</code> | Backing field for `IsOneHitDestroy`. Not read anywhere else in this build. |
+| <Link id="m-maxrespawntime" /><code>{"private float maxRespawnTime"}</code> | Backing field for `MaxRespawnTime`. Not read anywhere else in this build. |
+| <Link id="m-maxswingdistance" /><code>{"private float maxSwingDistance"}</code> | Backing field for `MaxSwingDistance`. Not read anywhere else in this build. |
+| <Link id="m-minimpactmultiplier" /><code>{"private float minImpactMultiplier"}</code> | Backing field for `MinImpactMultiplier`, a 0 to 1 value. Not read anywhere else in this build. |
+| <Link id="m-minrespawntime" /><code>{"private float minRespawnTime"}</code> | Backing field for `MinRespawnTime`. Not read anywhere else in this build. |
+| <Link id="m-minstrikedamage" /><code>{"private int minStrikeDamage"}</code> | Backing field for `MinStrikeDamage`. Not read anywhere else in this build. |
+| <Link id="m-minswingdistance" /><code>{"private float minSwingDistance"}</code> | Backing field for `MinSwingDistance`. Not read anywhere else in this build. |
+| <Link id="m-resourcedrophapticfeedback" /><code>{"private AnimationCurve resourceDropHapticFeedback"}</code> | Backing field for `ResourceDropHapticFeedback`, the haptic curve `Rock` plays when it drops a resource. |
+| <Link id="m-resourcedropspeedmultiplier" /><code>{"private float resourceDropSpeedMultiplier"}</code> | Backing field for `ResourceDropSpeedMultiplier`, which `Rock` multiplies a dropped resource's launch direction by. |
+| <Link id="m-strikecooldowntime" /><code>{"private float strikeCoolDownTime"}</code> | Backing field for `StrikeCoolDownTime`. Not read anywhere else in this build. |
+| <Link id="m-strikestrengthrtpc" /><code>{"private RTPC strikeStrengthRTPC"}</code> | Backing field for `StrikeStrengthRTPC`, the audio parameter `ImpactTool` sets from strike strength on hit sounds. |
+| <Link id="m-successfulhapticfeedback" /><code>{"private AnimationCurve successfulHapticFeedback"}</code> | Backing field for `SuccessfulHapticFeedback`, the haptic curve `ImpactTool` plays on a damaging hit. |
+| <Link id="m-tooldamageperstrike" /><code>{"private float toolDamagePerStrike"}</code> | Backing field for `ToolDamagePerStrike`. Not read anywhere else in this build. |
+| <Link id="m-unsuccessfulhapticfeedback" /><code>{"private AnimationCurve unsuccessfulHapticFeedback"}</code> | Backing field for `UnsuccessfulHapticFeedback`, the haptic curve `ImpactTool` plays on a hit that does nothing. |
 
 </details>
 

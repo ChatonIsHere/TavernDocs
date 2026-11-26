@@ -30,11 +30,11 @@ A heat point on a metal item. Heat moves faster or slower based on its physical 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-changed" /><code>{"private Action<"}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> changed"}</code> |
-| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changed" /><code>{"private Action<"}<Link to="/game-api/types/alta-crafting/metalheatpoint">{"MetalHeatPoint"}</Link>{"> changed"}</code> | Listeners of the colour model `Changed` event. |
+| <Link id="m-materialpart" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" materialPart"}</code> | Material part in a parent that gives this point its metal; without one it uses material hash 1. |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | Current physical material, which sets conductivity, glow range and heat effects. |
 
 </details>
 
@@ -60,11 +60,11 @@ A heat point on a metal item. Heat moves faster or slower based on its physical 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-forwardchanged" /><code>{"private void ForwardChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
-| <Link id="m-updateglow" /><code>{"private void UpdateGlow()"}</code> |
-| <Link id="m-updatematerial" /><code>{"private void UpdateMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forwardchanged" /><code>{"private void ForwardChanged("}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Passes the heat point's `Changed` event on to colour model listeners. |
+| <Link id="m-updateglow" /><code>{"private void UpdateGlow()"}</code> | Sets `Glow` from the temperature between the material's glow start and end. |
+| <Link id="m-updatematerial" /><code>{"private void UpdateMaterial("}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial, "}<Link to="/game-api/types/global-p/physicalmaterialchannel">{"PhysicalMaterialChannel"}</Link>{" materialChannel)"}</code> | Picks up a new physical material when the part's material changes. |
 
 </details>
 

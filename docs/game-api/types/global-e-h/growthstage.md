@@ -28,24 +28,24 @@ One stage in a `GrowthDefinition` (plants, trees and other things that grow): wh
 <details>
 <summary>16 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
-| <Link id="m-forcekinematic" /><code>{"private "}<Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" forceKinematic"}</code> |
-| <Link id="m-isusingradius" /><code>{"private bool isUsingRadius"}</code> |
-| <Link id="m-isusingraycastcheck" /><code>{"private bool isUsingRaycastCheck"}</code> |
-| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> |
-| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> |
-| <Link id="m-minseparationradius" /><code>{"private float minSeparationRadius"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
-| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefabs"}</code> |
-| <Link id="m-radiuschecklayers" /><code>{"private LayerMask radiusCheckLayers"}</code> |
-| <Link id="m-raycastdirection" /><code>{"private Vector3 raycastDirection"}</code> |
-| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> |
-| <Link id="m-raycastlayers" /><code>{"private LayerMask raycastLayers"}</code> |
-| <Link id="m-retrystage" /><code>{"private bool retryStage"}</code> |
-| <Link id="m-survivalrate" /><code>{"private float survivalRate"}</code> |
-| <Link id="m-usingpreviousprefab" /><code>{"private bool usingPreviousPrefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration`. 10 seconds by default. |
+| <Link id="m-forcekinematic" /><code>{"private "}<Link to="/game-api/types/global-i-l/kinematicforcemode">{"KinematicForceMode"}</Link>{" forceKinematic"}</code> | Backing field for `ForceKinematic`. |
+| <Link id="m-isusingradius" /><code>{"private bool isUsingRadius"}</code> | Backing field for `IsUsingRadius`. True by default. |
+| <Link id="m-isusingraycastcheck" /><code>{"private bool isUsingRaycastCheck"}</code> | Backing field for `IsUsingRaycastCheck`. |
+| <Link id="m-localposition" /><code>{"private Vector3 localPosition"}</code> | Backing field for `LocalPosition`. |
+| <Link id="m-localrotation" /><code>{"private Vector3 localRotation"}</code> | Backing field for `LocalRotation`. |
+| <Link id="m-minseparationradius" /><code>{"private float minSeparationRadius"}</code> | Backing field for `MinSeparationRadius`. 1 by default. |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
+| <Link id="m-prefabs" /><code>{"private "}<Link to="/game-api/types/global-m-o/objectpipeline">{"ObjectPipeline"}</Link>{" prefabs"}</code> | Backing field for `Prefabs`: pipeline that yields a `NetworkPrefab` or `PresetTree`. |
+| <Link id="m-radiuschecklayers" /><code>{"private LayerMask radiusCheckLayers"}</code> | Backing field for `RadiusCheckLayers`. All layers by default. |
+| <Link id="m-raycastdirection" /><code>{"private Vector3 raycastDirection"}</code> | Backing field for `RaycastDirection`. Up by default. |
+| <Link id="m-raycastdistance" /><code>{"private float raycastDistance"}</code> | Backing field for `RaycastDistance`. 1 by default. |
+| <Link id="m-raycastlayers" /><code>{"private LayerMask raycastLayers"}</code> | Backing field for `RaycastLayers`. All layers by default. |
+| <Link id="m-retrystage" /><code>{"private bool retryStage"}</code> | Backing field for `RetryStage`. |
+| <Link id="m-survivalrate" /><code>{"private float survivalRate"}</code> | Backing field for `SurvivalRate`. 1 (always survives) by default. |
+| <Link id="m-usingpreviousprefab" /><code>{"private bool usingPreviousPrefab"}</code> | Backing field for `IsUsingPreviousPrefab`. |
 
 </details>
 

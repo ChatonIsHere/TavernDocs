@@ -1,6 +1,6 @@
 ---
 title: "CommandAttribute"
-description: "class CommandAttribute in Root.Township."
+description: "Marks a static method as a console command."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommandAttribute
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+Marks a static method as a console command. `CommandCollection` finds these methods inside classes with `ModuleAttribute`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** `Attribute`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-command" /><code>{"string Command { get; private set; }"}</code> |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |
-| <Link id="m-isloggingvaluesastable" /><code>{"bool IsLoggingValuesAsTable { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-command" /><code>{"string Command { get; private set; }"}</code> | The word typed to run the command. |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | Help text for the command. Empty if not given. |
+| <Link id="m-isloggingvaluesastable" /><code>{"bool IsLoggingValuesAsTable { get; set; }"}</code> | If set, the command's result is logged as a table. Used by list style commands. |
 
 ## Used in
 

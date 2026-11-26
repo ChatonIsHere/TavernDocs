@@ -30,10 +30,10 @@ Asset for what an enchantment does (for example `DamageMultiplier`, `DurabilityS
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-onalignedhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" onAlignedHitEffect"}</code> |
-| <Link id="m-onhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onHitEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onalignedhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionrotationevent">{"PositionRotationEvent"}</Link>{" onAlignedHitEffect"}</code> | Event with position and rotation, played by `CallHitEffectEvents`. |
+| <Link id="m-onhiteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onHitEffect"}</code> | Event with position, played by `CallHitEffectEvents`. |
 
 </details>
 

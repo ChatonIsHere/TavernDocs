@@ -36,20 +36,20 @@ A piece of the world that loads, unloads and saves as a unit. Every entity sits 
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-autosyncs" /><code>{"private bool autoSyncs"}</code> |
-| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> |
-| <Link id="m-isforceloaded" /><code>{"private bool isForceLoaded"}</code> |
-| <Link id="m-isforceunloaded" /><code>{"private bool isForceUnloaded"}</code> |
-| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-logicmanager" /><code>{"private "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" logicManager"}</code> |
-| <Link id="m-maxchunksindex" /><code>{"private const int MaxChunksIndex"}</code> |
-| <Link id="m-minimumsaveversion" /><code>{"private "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" minimumSaveVersion"}</code> |
-| <Link id="m-nextindex" /><code>{"private static uint nextIndex"}</code> |
-| <Link id="m-syncindex" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autosyncs" /><code>{"private bool autoSyncs"}</code> | Whether the chunk syncs its entities to players without them being in it. Always true for global chunks; read through `AutoSyncs`. |
+| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> | Backing field for `ChunkIdentifier`; defaults to the object name in the editor. |
+| <Link id="m-isforceloaded" /><code>{"private bool isForceLoaded"}</code> | Backing field for `IsForceLoaded`. |
+| <Link id="m-isforceunloaded" /><code>{"private bool isForceUnloaded"}</code> | When set, the chunk gets an empty content manager, so nothing in it is ever loaded or saved. |
+| <Link id="m-isglobal" /><code>{"private bool isGlobal"}</code> | Marks a global chunk; backing field for `IsGlobal`. |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> | Backing field for `IsLoaded`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-logicmanager" /><code>{"private "}<Link to="/game-api/types/alta-items/globallogicmanager">{"GlobalLogicManager"}</Link>{" logicManager"}</code> | Backing field for `LogicManager`, the global logic manager for this chunk. |
+| <Link id="m-maxchunksindex" /><code>{"private const int MaxChunksIndex"}</code> | Number of chunk indices (8192, the 13 bits sent over the network). |
+| <Link id="m-minimumsaveversion" /><code>{"private "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" minimumSaveVersion"}</code> | Lowest chunk save version the chunk accepts; older saves are logged as out of date when loaded. |
+| <Link id="m-nextindex" /><code>{"private static uint nextIndex"}</code> | Static counter for the next chunk index to try in `FindIndex`. |
+| <Link id="m-syncindex" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncIndex"}</code> | Method sync that sends the chunk's index to each player when they connect. |
 
 </details>
 
@@ -114,15 +114,15 @@ A piece of the world that loads, unloads and saves as a unit. Every entity sits 
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-contentisfullyloaded" /><code>{"private void ContentIsFullyLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-contentisfullyunloaded" /><code>{"private void ContentIsFullyUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-findindex" /><code>{"private uint FindIndex()"}</code> |
-| <Link id="m-setindex" /><code>{"private void SetIndex(uint index)"}</code> |
-| <Link id="m-syncindex-2" /><code>{"private void SyncIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updateloadedasync" /><code>{"private async Task UpdateLoadedAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Registers the chunk in `ChunksByIdentifier` and sets `Seed` from the hash of its identifier. |
+| <Link id="m-contentisfullyloaded" /><code>{"private void ContentIsFullyLoaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Handler on the content manager's `Loaded` event; raises `FullyLoaded`. |
+| <Link id="m-contentisfullyunloaded" /><code>{"private void ContentIsFullyUnloaded("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Handler on the content manager's `Unloaded` event; raises `FullyUnloaded`. |
+| <Link id="m-findindex" /><code>{"private uint FindIndex()"}</code> | Server: finds the next free chunk index below 8192, wrapping once. If none is free it logs a fatal error and shuts the server down. |
+| <Link id="m-setindex" /><code>{"private void SetIndex(uint index)"}</code> | Stores the chunk's network index and registers it in `ChunksByIndex`. |
+| <Link id="m-syncindex-2" /><code>{"private void SyncIndex("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the chunk's index to a player in 13 bits; the client calls `SetIndex` with it. |
+| <Link id="m-updateloadedasync" /><code>{"private async Task UpdateLoadedAsync()"}</code> | Server and client: works out whether the chunk should be loaded (force loaded, players syncing, or unload blocked) and loads or unloads its content. |
 
 </details>
 

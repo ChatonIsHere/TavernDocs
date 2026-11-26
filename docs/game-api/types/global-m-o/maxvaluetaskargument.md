@@ -1,6 +1,6 @@
 ---
 title: "MaxValueTaskArgument"
-description: "CaveLayerChunk, the deepest cave layer reached"
+description: "Game task action argument carrying a value for max-count tasks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`CaveLayerChunk`, the deepest cave layer reached
+Game task action argument carrying a value for max-count tasks. Sent with the cave layer number when a player enters a cave layer chunk. Server.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Inherits or implements** [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument)
@@ -27,9 +27,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.MaxCount`. |
 
 ## Used in
 

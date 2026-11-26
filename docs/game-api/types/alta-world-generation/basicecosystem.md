@@ -1,6 +1,6 @@
 ---
 title: "BasicEcosystem"
-description: "class BasicEcosystem in Root.Township."
+description: "Server: per chunk lookup of the BasicPopulations registered in a location chunk, keyed by their PopulationSetup."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicEcosystem
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Server: per chunk lookup of the `BasicPopulation`s registered in a location chunk, keyed by their `PopulationSetup`. Reached through the chunk's `Environment.Ecosystem`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour)
@@ -28,20 +30,20 @@ A **class** in `Root.Township`, `Alta.Populations`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-populations" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{"> populations"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Private: logs double registrations. |
+| <Link id="m-populations" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{", "}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{"> populations"}</code> | Private: registered populations by `PopulationSetup`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |
-| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Get("}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" setup)"}</code> |
-| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"void Add("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> | Registers a population under its definition. A second one with the same definition is refused with an error. |
+| <Link id="m-get" /><code><Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" Get("}<Link to="/game-api/types/alta-world-generation/populationsetup">{"PopulationSetup"}</Link>{" setup)"}</code> | Returns the population for a setup in this chunk, or null. |
+| <Link id="m-remove" /><code>{"void Remove("}<Link to="/game-api/types/alta-world-generation/basicpopulation">{"BasicPopulation"}</Link>{" population)"}</code> | Removes the population registered under its definition. |
 
 ## Used in
 

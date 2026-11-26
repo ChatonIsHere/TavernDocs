@@ -32,26 +32,26 @@ A hashed asset for one kind of tree: its wood material, how chopping damage spre
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-atlasedmaterials" /><code>{"private Material[] atlasedMaterials"}</code> |
-| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |
-| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> |
-| <Link id="m-distancedistribution" /><code>{"private float distanceDistribution"}</code> |
-| <Link id="m-doneeffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" doneEffect"}</code> |
-| <Link id="m-dropvelocity" /><code>{"private float dropVelocity"}</code> |
-| <Link id="m-hiteffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" hitEffect"}</code> |
-| <Link id="m-imposterlod" /><code>{"private int imposterLod"}</code> |
-| <Link id="m-leafneedsfixing" /><code>{"private bool[] leafNeedsFixing"}</code> |
-| <Link id="m-leafoffsetscale" /><code>{"private Vector4[] leafOffsetScale"}</code> |
-| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |
-| <Link id="m-oppositesthreshold" /><code>{"private float oppositesThreshold"}</code> |
-| <Link id="m-pcleafmaterials" /><code>{"private Material[] pcLeafMaterials"}</code> |
-| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> |
-| <Link id="m-stick" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" stick"}</code> |
-| <Link id="m-totalfallsidethreshold" /><code>{"private float totalFallSideThreshold"}</code> |
-| <Link id="m-totalpercentthreshold" /><code>{"private float totalPercentThreshold"}</code> |
-| <Link id="m-wedge" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" wedge"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-atlasedmaterials" /><code>{"private Material[] atlasedMaterials"}</code> | Atlased leaf materials written by `FixMaterials` at build time. |
+| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> | Backing field for `BreakThresholdMultiplier`, which scales how much force breaks tree connections. |
+| <Link id="m-damagemultiplier" /><code>{"private float damageMultiplier"}</code> | Backing field for `DamageMultiplier`. |
+| <Link id="m-distancedistribution" /><code>{"private float distanceDistribution"}</code> | Backing field for `DistanceDistribution`, the radius chopping damage spreads over. |
+| <Link id="m-doneeffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" doneEffect"}</code> | Backing field for `DoneEffect`. |
+| <Link id="m-dropvelocity" /><code>{"private float dropVelocity"}</code> | Backing field for `DropVelocity`, the random speed given to wedges and sticks dropped by chopping. |
+| <Link id="m-hiteffect" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetectorsettings">{"ImpactDetectorSettings"}</Link>{" hitEffect"}</code> | Backing field for `HitEffect`. |
+| <Link id="m-imposterlod" /><code>{"private int imposterLod"}</code> | Backing field for `ImposterLod`. Defaults to 2. |
+| <Link id="m-leafneedsfixing" /><code>{"private bool[] leafNeedsFixing"}</code> | Per leaf material, whether it was found in an atlas. Written by `FixMaterials`. |
+| <Link id="m-leafoffsetscale" /><code>{"private Vector4[] leafOffsetScale"}</code> | Per leaf material, its atlas rect. Written by `FixMaterials`. |
+| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> | A material set in the inspector. Nothing in the server build reads it. |
+| <Link id="m-oppositesthreshold" /><code>{"private float oppositesThreshold"}</code> | Backing field for `OppositesThreshold`: combined progress of two opposite cut points that fells the section. |
+| <Link id="m-pcleafmaterials" /><code>{"private Material[] pcLeafMaterials"}</code> | Backing field for `LeafMaterials`, the unatlased leaf materials. |
+| <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" physicalMaterial"}</code> | Backing field for `PhysicalMaterial`. |
+| <Link id="m-stick" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" stick"}</code> | Backing field for `Stick`, the drop distribution for stick-type pieces. |
+| <Link id="m-totalfallsidethreshold" /><code>{"private float totalFallSideThreshold"}</code> | Backing field for `TotalFallSideThreshold`: progress one cut point needs to fell the section once the total is past `totalPercentThreshold`. |
+| <Link id="m-totalpercentthreshold" /><code>{"private float totalPercentThreshold"}</code> | Backing field for `TotalPercentThreshold`: average cut progress at which a section can fall to its most cut side. |
+| <Link id="m-wedge" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" wedge"}</code> | Backing field for `Wedge`, the drop distribution for wedge-type pieces. |
 
 </details>
 

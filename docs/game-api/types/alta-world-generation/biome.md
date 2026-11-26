@@ -32,12 +32,12 @@ Cave biome asset (under `Caves/Biomes`): loot tables, attribute ranges and eleme
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"[] attributes"}</code> |
-| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"[] elements"}</code> |
-| <Link id="m-loottables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] lootTables"}</code> |
-| <Link id="m-spawndata" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributes" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributedoublevalue">{"AttributeDoubleValue"}</Link>{"[] attributes"}</code> | Backing field for `Attributes`: min and max values per biome attribute, read by `GetAttribute`. |
+| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/elementsinglevalue">{"ElementSingleValue"}</Link>{"[] elements"}</code> | Backing field for `Elements`: per-element multipliers, read by `GetElementMultiplier` (1 when missing). |
+| <Link id="m-loottables" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/loottable">{"LootTable"}</Link>{"[] lootTables"}</code> | Backing field for `LootTables`, used when filling docks with generated loot. |
+| <Link id="m-spawndata" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData"}</code> | Not used in this class. |
 
 </details>
 

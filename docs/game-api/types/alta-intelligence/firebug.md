@@ -30,32 +30,32 @@ The firebug creature: a catchable bug that glows and trails when shaken and thro
 <details>
 <summary>24 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androideffects" /><code>{"private ParticleSystem androidEffects"}</code> |
-| <Link id="m-dragtrackingobject" /><code>{"private GameObject dragTrackingObject"}</code> |
-| <Link id="m-effects" /><code>{"private ParticleSystem effects"}</code> |
-| <Link id="m-emergeaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> emergeAction"}</code> |
-| <Link id="m-emergeactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergeActionSet"}</code> |
-| <Link id="m-flailingangulardrag" /><code>{"private float flailingAngularDrag"}</code> |
-| <Link id="m-flailingdrag" /><code>{"private float flailingDrag"}</code> |
-| <Link id="m-losecontrolaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> loseControlAction"}</code> |
-| <Link id="m-losecontrolactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" loseControlActionSet"}</code> |
-| <Link id="m-minimumshaketoactivateeffects" /><code>{"private float minimumShakeToActivateEffects"}</code> |
-| <Link id="m-pickupagent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/pickupagent">{"PickupAgent"}</Link>{" pickupAgent"}</code> |
-| <Link id="m-regaincontrolaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> regainControlAction"}</code> |
-| <Link id="m-regaincontrolactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" regainControlActionSet"}</code> |
-| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" shakeDetector"}</code> |
-| <Link id="m-shakedetectorsettings" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorfactory">{"ShakeDetectorFactory"}</Link>{" shakeDetectorSettings"}</code> |
-| <Link id="m-shakelight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" shakeLight"}</code> |
-| <Link id="m-shakestrenghttolightintensity" /><code>{"private AnimationCurve shakeStrenghtToLightIntensity"}</code> |
-| <Link id="m-shakestrenghttolightrange" /><code>{"private AnimationCurve shakeStrenghtToLightRange"}</code> |
-| <Link id="m-shakeupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" shakeUpdate"}</code> |
-| <Link id="m-sparkeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sparkEffect"}</code> |
-| <Link id="m-sparkradius" /><code>{"private float sparkRadius"}</code> |
-| <Link id="m-syncdrag" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDrag"}</code> |
-| <Link id="m-trail" /><code>{"private TrailRenderer trail"}</code> |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androideffects" /><code>{"private ParticleSystem androidEffects"}</code> | Particle system for Android set in the inspector. Not used in this build. |
+| <Link id="m-dragtrackingobject" /><code>{"private GameObject dragTrackingObject"}</code> | Object turned on while drag tracking is enabled. |
+| <Link id="m-effects" /><code>{"private ParticleSystem effects"}</code> | Particles that play while the bug is shaken hard enough. |
+| <Link id="m-emergeaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> emergeAction"}</code> | Static action set the bug starts in, built from the first bug's `emergeActionSet`. |
+| <Link id="m-emergeactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" emergeActionSet"}</code> | Action set asset for emerging, used for every bug via the static `emergeAction`. |
+| <Link id="m-flailingangulardrag" /><code>{"private float flailingAngularDrag"}</code> | Angular drag set by `IncreaseDrag`. Default 1. |
+| <Link id="m-flailingdrag" /><code>{"private float flailingDrag"}</code> | Drag set by `IncreaseDrag`. Default 1. |
+| <Link id="m-losecontrolaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> loseControlAction"}</code> | Static action set used after a collision knocks the bug about. |
+| <Link id="m-losecontrolactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" loseControlActionSet"}</code> | Action set asset for losing control. |
+| <Link id="m-minimumshaketoactivateeffects" /><code>{"private float minimumShakeToActivateEffects"}</code> | Shake strength above which the particles and trail turn on. Default 0.7. |
+| <Link id="m-pickupagent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/pickupagent">{"PickupAgent"}</Link>{" pickupAgent"}</code> | The `PickupAgent` that lets the bug be caught and released. |
+| <Link id="m-regaincontrolaction" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/actionset-tagent">{"ActionSet"}</Link>{"<"}<Link to="/game-api/types/alta-intelligence/firebug">{"FireBug"}</Link>{"> regainControlAction"}</code> | Static action set used after the bug is released. |
+| <Link id="m-regaincontrolactionset" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/actioncomponentset">{"ActionComponentSet"}</Link>{" regainControlActionSet"}</code> | Action set asset for regaining control. |
+| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorhelper">{"ShakeDetectorHelper"}</Link>{" shakeDetector"}</code> | Helper measuring how hard the bug's rigidbody is shaken. Not created on a headless server. |
+| <Link id="m-shakedetectorsettings" /><code>{"private "}<Link to="/game-api/types/global-s/shakedetectorfactory">{"ShakeDetectorFactory"}</Link>{" shakeDetectorSettings"}</code> | Factory settings for the shake detector. |
+| <Link id="m-shakelight" /><code>{"private "}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" shakeLight"}</code> | Light whose intensity and range follow the shake strength. |
+| <Link id="m-shakestrenghttolightintensity" /><code>{"private AnimationCurve shakeStrenghtToLightIntensity"}</code> | Curve from shake strength to light intensity. |
+| <Link id="m-shakestrenghttolightrange" /><code>{"private AnimationCurve shakeStrenghtToLightRange"}</code> | Curve from shake strength to light range. |
+| <Link id="m-shakeupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" shakeUpdate"}</code> | The registered `UpdateShake` or `FadeLight` update. |
+| <Link id="m-sparkeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" sparkEffect"}</code> | Spark effect played where the bug dies. |
+| <Link id="m-sparkradius" /><code>{"private float sparkRadius"}</code> | Radius of the fire-lighting sparks the server makes on death. Default 0.5. |
+| <Link id="m-syncdrag" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDrag"}</code> | Network sync for the drag tracking flag. |
+| <Link id="m-trail" /><code>{"private TrailRenderer trail"}</code> | Trail turned on while the bug is shaken hard enough. |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Shared "Firebug shake" fixed update module. |
 
 </details>
 
@@ -78,13 +78,13 @@ The firebug creature: a catchable bug that glows and trails when shaken and thro
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-caught" /><code>{"private void Caught()"}</code> |
-| <Link id="m-fadelight" /><code>{"private void FadeLight()"}</code> |
-| <Link id="m-receivedimpulse" /><code>{"private void Alta.Intelligence.IReceiveImpulseFromCollision.ReceivedImpulse(float strength)"}</code> |
-| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-syncdrag-2" /><code>{"private void SyncDrag("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasDrag)"}</code> |
-| <Link id="m-updateshake" /><code>{"private void UpdateShake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-caught" /><code>{"private void Caught()"}</code> | When the bug is grabbed, off headless, starts the shake update that drives its light and effects. |
+| <Link id="m-fadelight" /><code>{"private void FadeLight()"}</code> | Update after release: keeps updating the shake effects until the shake strength reaches 0, then stops. |
+| <Link id="m-receivedimpulse" /><code>{"private void Alta.Intelligence.IReceiveImpulseFromCollision.ReceivedImpulse(float strength)"}</code> | When hit by a collision while enabled, the server switches to the lose control set and decides again; a client makes the rigidbody non-kinematic. |
+| <Link id="m-released" /><code>{"private void Released("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | On release, the server switches to the regain control set; the releasing client turns drag tracking on. Off headless, starts `FadeLight`. |
+| <Link id="m-syncdrag-2" /><code>{"private void SyncDrag("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasDrag)"}</code> | Network handler (`SyncA`) that sends the drag tracking flag and applies it on clients. |
+| <Link id="m-updateshake" /><code>{"private void UpdateShake()"}</code> | Measures the shake, sets the light's intensity and range from it, and turns particles and trail on or off around `minimumShakeToActivateEffects`. |
 
 </details>

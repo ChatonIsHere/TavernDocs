@@ -51,9 +51,9 @@ The player state for normally playing in the world. On the server, entering it s
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawnplayercontroller" /><code>{"private void SpawnPlayerController()"}</code> | Spawns the player controller prefab for the player's mode (VR, flat and so on), as a respawn if `IsRespawning`. |
 
 </details>
 

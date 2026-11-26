@@ -1,6 +1,6 @@
 ---
 title: "EquipmentReference"
-description: "class EquipmentReference in Root.Township."
+description: "A component on a body part that holds the armour equipped there."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EquipmentReference
 
 A **class** in `Root.Township`, `Alta.Impact`.
+
+A component on a body part that holds the armour equipped there. `ArmorManager` sets it, and `ImpactDetector` and `HeatPoint` read it.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `MonoBehaviour`
@@ -28,23 +30,23 @@ A **class** in `Root.Township`, `Alta.Impact`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-armor" /><code>{"private "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-armor" /><code>{"private "}<Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" armor"}</code> | Backing field for `Equipment`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-equipment" /><code><Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-equipment" /><code><Link to="/game-api/types/alta-items/armordefinition">{"ArmorDefinition"}</Link>{" Equipment { get; set; }"}</code> | The `ArmorDefinition` worn on this part, or null. Setting it raises `Changed`. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changed" /><code>{"event "}<Link to="/game-api/types/alta-items/equipmentreference-equipmentchangedhandler">{"EquipmentReference.EquipmentChangedHandler"}</Link>{" Changed"}</code> | Raised with the new armour whenever `Equipment` is set. Setting it with no listener throws. |
 
 ## Used in
 

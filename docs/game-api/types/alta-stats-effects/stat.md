@@ -30,17 +30,17 @@ One stat's live value on a `StatManager`. The value is (base plus extras, clampe
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseflat" /><code>{"private float baseFlat"}</code> |
-| <Link id="m-buffmultiplier" /><code>{"private float buffMultiplier"}</code> |
-| <Link id="m-extraflat" /><code>{"private float extraFlat"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-lastnetworkedvalue" /><code>{"private float lastNetworkedValue"}</code> |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
-| <Link id="m-nonbuffextra" /><code>{"private float nonBuffExtra"}</code> |
-| <Link id="m-nonbuffmultiplier" /><code>{"private float nonBuffMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseflat" /><code>{"private float baseFlat"}</code> | Backing field for `Base`: the stat's own value, kept within `minimum` and `maximum` and saved. Synced in the range 0 to 127. |
+| <Link id="m-buffmultiplier" /><code>{"private float buffMultiplier"}</code> | Backing field for `BuffMultiplier` (default 1). |
+| <Link id="m-extraflat" /><code>{"private float extraFlat"}</code> | Flat bonus set through `Extra`; `Extra` returns it plus `nonBuffExtra`. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. It doesn't change `Value`; stats like hunger check it themselves. |
+| <Link id="m-lastnetworkedvalue" /><code>{"private float lastNetworkedValue"}</code> | `Value` when the stat was last serialized; compared with the new value to decide whether a change needs syncing. |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Backing field for `Maximum`. The base is capped to it and the value is clamped to it before the multiplier. |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Backing field for `Minimum`. The base is raised to it and the value is clamped to it before the multiplier. |
+| <Link id="m-nonbuffextra" /><code>{"private float nonBuffExtra"}</code> | Backing field for `NonBuffExtra`, a flat bonus that isn't from a buff. |
+| <Link id="m-nonbuffmultiplier" /><code>{"private float nonBuffMultiplier"}</code> | Backing field for `NonBuffMultiplier` (default 1); multiplied with `buffMultiplier` to give `Multiplier`. |
 
 </details>
 
@@ -91,9 +91,9 @@ One stat's live value on a `StatManager`. The value is (base plus extras, clampe
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onchanged" /><code>{"private void OnChanged(bool forceNetwork = false, bool forceEvent = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged(bool forceNetwork = false, bool forceEvent = false)"}</code> | Recalculates `Value` as (base plus extra, clamped to the range) times the multiplier. Raises `Changed`, and `NetworkChanged` when the change is big enough to sync. |
 
 </details>
 

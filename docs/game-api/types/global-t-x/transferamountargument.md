@@ -1,6 +1,6 @@
 ---
 title: "TransferAmountArgument"
-description: "class TransferAmountArgument in Root.Township."
+description: "Game task action argument sent when a player moves one item into a pickup container."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TransferAmountArgument
 
 A **class** in `Root.Township`, no namespace.
+
+Game task action argument sent when a player moves one item into a pickup container. Server.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument)
@@ -25,10 +27,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
-| <Link id="m-transferring" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Transferring { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.TransferAmount`. |
+| <Link id="m-transferring" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Transferring { get; }"}</code> | Prefab of the item moved. |
 
 ## Used in
 

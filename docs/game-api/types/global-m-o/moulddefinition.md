@@ -32,23 +32,23 @@ A hashed asset describing a smithing mould: the item it casts, the ingots it tak
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allowedmaterials" /><code>{"private "}<Link to="/game-api/types/alta-items/itemset">{"ItemSet"}</Link>{" allowedMaterials"}</code> |
-| <Link id="m-cost" /><code>{"private int cost"}</code> |
-| <Link id="m-countnumbergraphicposition" /><code>{"private Vector3 countNumberGraphicPosition"}</code> |
-| <Link id="m-countxgraphicposition" /><code>{"private Vector3 countXGraphicPosition"}</code> |
-| <Link id="m-definitions" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> definitions"}</code> |
-| <Link id="m-findable" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> findable"}</code> |
-| <Link id="m-gap" /><code>{"private float gap"}</code> |
-| <Link id="m-graphic" /><code>{"private Mesh graphic"}</code> |
-| <Link id="m-graphicposition" /><code>{"private Vector3 graphicPosition"}</code> |
-| <Link id="m-graphicrotation" /><code>{"private Vector3 graphicRotation"}</code> |
-| <Link id="m-graphicscale" /><code>{"private float graphicScale"}</code> |
-| <Link id="m-graphicscalenew" /><code>{"private Vector3 graphicScaleNew"}</code> |
-| <Link id="m-isfindable" /><code>{"private bool isFindable"}</code> |
-| <Link id="m-product" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" product"}</code> |
-| <Link id="m-quantityproduced" /><code>{"private int quantityProduced"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allowedmaterials" /><code>{"private "}<Link to="/game-api/types/alta-items/itemset">{"ItemSet"}</Link>{" allowedMaterials"}</code> | Backing field for `AllowedMaterials`. Must be ingots. |
+| <Link id="m-cost" /><code>{"private int cost"}</code> | Backing field for `Cost`, shown as the input count on the mould. |
+| <Link id="m-countnumbergraphicposition" /><code>{"private Vector3 countNumberGraphicPosition"}</code> | Backing field for `CountNumberGraphicPosition`. |
+| <Link id="m-countxgraphicposition" /><code>{"private Vector3 countXGraphicPosition"}</code> | Backing field for `CountXGraphicPosition`. |
+| <Link id="m-definitions" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{", "}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> definitions"}</code> | Static lookup from product item to its mould definition. |
+| <Link id="m-findable" /><code>{"private static List<"}<Link to="/game-api/types/global-m-o/moulddefinition">{"MouldDefinition"}</Link>{"> findable"}</code> | Static list of findable moulds that `GetRandom` picks from. |
+| <Link id="m-gap" /><code>{"private float gap"}</code> | Backing field for `Gap`. |
+| <Link id="m-graphic" /><code>{"private Mesh graphic"}</code> | Backing field for `Graphic`. |
+| <Link id="m-graphicposition" /><code>{"private Vector3 graphicPosition"}</code> | Backing field for `GraphicPosition`. |
+| <Link id="m-graphicrotation" /><code>{"private Vector3 graphicRotation"}</code> | Backing field for `GraphicRotation`, as Euler angles. |
+| <Link id="m-graphicscale" /><code>{"private float graphicScale"}</code> | Old uniform scale. Unused; `GraphicScale` returns `graphicScaleNew`. |
+| <Link id="m-graphicscalenew" /><code>{"private Vector3 graphicScaleNew"}</code> | Backing field for `GraphicScale`. |
+| <Link id="m-isfindable" /><code>{"private bool isFindable"}</code> | Backing field for `IsFindable`. Defaults to true. |
+| <Link id="m-product" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" product"}</code> | Backing field for `Product`. `OnValidate` names the asset after it. |
+| <Link id="m-quantityproduced" /><code>{"private int quantityProduced"}</code> | Backing field for `QuantityProduced`. Defaults to 1. |
 
 </details>
 
@@ -60,7 +60,7 @@ A hashed asset describing a smithing mould: the item it casts, the ingots it tak
 | <Link id="m-cost-2" /><code>{"int Cost { get; }"}</code> | How many ingots one cast takes. The smelter also scales the fuel needed by it. |
 | <Link id="m-countnumbergraphicposition-2" /><code>{"Vector3 CountNumberGraphicPosition { get; }"}</code> | Where the quantity number is drawn on the mould. |
 | <Link id="m-countxgraphicposition-2" /><code>{"Vector3 CountXGraphicPosition { get; }"}</code> | Where the multiplication sign before the quantity is drawn on the mould. |
-| <Link id="m-gap-2" /><code>{"float Gap { get; }"}</code> |  |
+| <Link id="m-gap-2" /><code>{"float Gap { get; }"}</code> | A float set per mould. Nothing in the server build reads it. |
 | <Link id="m-graphic-2" /><code>{"Mesh Graphic { get; }"}</code> | Mesh of the picture shown on the mould. |
 | <Link id="m-graphicposition-2" /><code>{"Vector3 GraphicPosition { get; }"}</code> | Local position of the mould's picture. |
 | <Link id="m-graphicrotation-2" /><code>{"Vector3 GraphicRotation { get; }"}</code> | Local rotation (Euler angles) of the mould's picture. |
@@ -80,9 +80,9 @@ A hashed asset describing a smithing mould: the item it casts, the ingots it tak
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkinitialize" /><code>{"private static void CheckInitialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkinitialize" /><code>{"private static void CheckInitialize()"}</code> | Builds the product lookup and the findable list from all mould definitions on first use. |
 
 </details>
 

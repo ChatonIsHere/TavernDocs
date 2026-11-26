@@ -33,9 +33,9 @@ A stat modifier that removes itself after a duration, using the `Timeline`. Can 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | Timeline entry that removes the modifier when its time runs out. Saved and synced so the timer carries over. |
 
 </details>
 

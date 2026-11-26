@@ -1,6 +1,6 @@
 ---
 title: "CharacterDockManager"
-description: "A ComponentGroup of PickupDockGroups."
+description: "A ComponentGroup of PickupDockGroups, probably the docks on a player character."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Inventory`.
 
-A `ComponentGroup` of `PickupDockGroup`s.
+A `ComponentGroup` of `PickupDockGroup`s, probably the docks on a player character. It adds nothing of its own.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`ComponentGroup<PickupDockGroup>`](/game-api/types/global-c-d/componentgroup-t)

@@ -1,6 +1,6 @@
 ---
 title: "SpecificCraftTaskArgument"
-description: "JointSlot.TryConnect, when a held item gets a part"
+description: "Game task action argument sent when a player joins one crafting part into another."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`JointSlot.TryConnect`, when a held item gets a part
+Game task action argument sent when a player joins one crafting part into another. Server.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument)
@@ -27,11 +27,11 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
-| <Link id="m-insert" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> |
-| <Link id="m-slot" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.CraftItem`. |
+| <Link id="m-insert" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Insert { get; }"}</code> | The part that was inserted. |
+| <Link id="m-slot" /><code><Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" Slot { get; }"}</code> | The top-level part it was inserted into. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "TrialEventData"
-description: "class TrialEventData in Root.Township."
+description: "Payload of the TrialStarted and TrialFinished console events, raised by TrialLogic."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TrialEventData
 
 A **class** in `Root.Township`, no namespace.
+
+Payload of the `TrialStarted` and `TrialFinished` console events, raised by `TrialLogic`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Documented in** [Console events](/game-api/console-and-utilities/console-events)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-players" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> |
-| <Link id="m-trial" /><code>{"string trial"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-players" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> players"}</code> | Account info of the players in the trial. |
+| <Link id="m-trial" /><code>{"string trial"}</code> | The trial's key: the chunk identifier of the trial. |
 
 ## Used in
 

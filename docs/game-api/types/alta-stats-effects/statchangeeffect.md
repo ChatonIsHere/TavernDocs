@@ -1,6 +1,6 @@
 ---
 title: "StatChangeEffect"
-description: "Adds strength to the stat's Base."
+description: "Stat effect that adds the strength to the stat's base value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
 
-Adds `strength` to the stat's `Base`. This is how food fills hunger and fullness.
+Stat effect that adds the strength to the stat's base value.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`StatEffect`](/game-api/types/alta-stats-effects/stateffect)
@@ -27,6 +27,6 @@ Adds `strength` to the stat's `Base`. This is how food fills hunger and fullness
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modifystat" /><code>{"protected override void ModifyStat("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float strength)"}</code> | Adds the strength to the stat's `Base`. |

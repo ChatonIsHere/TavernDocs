@@ -36,12 +36,12 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
-| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-spawner" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | Timeline entry for the repeating population check. Saved and loaded with the sample. |
+| <Link id="m-isoneoff" /><code>{"private bool isOneOff"}</code> | True for a one-off spawn: no repeating tick and spawned entities are not tracked. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-spawner" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner"}</code> | Spawn system that provides spawn points for this population. |
 
 </details>
 
@@ -87,14 +87,14 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 | Member | What it is |
 | --- | --- |
 | <Link id="m-addentity-2" /><code>{"private void AddEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-world-generation/spawnpoint">{"SpawnPoint"}</Link>{" point)"}</code> | Adds an existing entity as a member at the spawn point with the given index. |
-| <Link id="m-additemto" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" AddItemTo(GameObject gameObject)"}</code> |  |
-| <Link id="m-checkpopulation" /><code>{"private void CheckPopulation()"}</code> |  |
-| <Link id="m-checktimeupdated" /><code>{"private void CheckTimeUpdated("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" changedPopulation)"}</code> |  |
-| <Link id="m-despawnentity" /><code>{"private void DespawnEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDeath)"}</code> |  |
-| <Link id="m-despawnentityinternal" /><code>{"private void DespawnEntityInternal("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDeath)"}</code> |  |
-| <Link id="m-entitydestroyed" /><code>{"private void EntityDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-registerremovemethod" /><code>{"private void RegisterRemoveMethod("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |  |
-| <Link id="m-spawnrandom" /><code>{"private bool SpawnRandom("}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> |  |
+| <Link id="m-additemto" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/populationitem">{"PopulationItem"}</Link>{" AddItemTo(GameObject gameObject)"}</code> | Adds the right `PopulationItem` component to a spawned entity: radial, bounds or plain, by the definition's disconnect settings. |
+| <Link id="m-checkpopulation" /><code>{"private void CheckPopulation()"}</code> | Server tick: shrinks an over-max population or grows it by the growth curve, then spawns entities if the chunk is loaded. |
+| <Link id="m-checktimeupdated" /><code>{"private void CheckTimeUpdated("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" changedPopulation)"}</code> | Reschedules the population tick when the definition's tick frequency is changed. |
+| <Link id="m-despawnentity" /><code>{"private void DespawnEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDeath)"}</code> | Despawns a tracked entity and removes it from `SpawnedEntities`. |
+| <Link id="m-despawnentityinternal" /><code>{"private void DespawnEntityInternal("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isDeath)"}</code> | Unhooks removal events, frees or occupies the spawn point (on death) and destroys the population item. |
+| <Link id="m-entitydestroyed" /><code>{"private void EntityDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Entity destroyed handler: an unload just despawns it, a real destroy counts as losing a member. |
+| <Link id="m-registerremovemethod" /><code>{"private void RegisterRemoveMethod("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> | Hooks the entity's removal methods and its destroyed event so the sample notices when it leaves. |
+| <Link id="m-spawnrandom" /><code>{"private bool SpawnRandom("}<Link to="/game-api/types/alta-world-generation/populationspawninformation">{"PopulationSpawnInformation"}</Link>{" value)"}</code> | Server: spawns one random prefab at a free spawn point, applying the definition's rotation, safe spawn and chunk rules. |
 
 </details>
 

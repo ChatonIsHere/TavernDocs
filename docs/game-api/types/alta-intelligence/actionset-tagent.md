@@ -28,10 +28,10 @@ An agent's available AI actions, split into actions that need a target and actio
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> baseActions"}</code> |
-| <Link id="m-targetactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> targetActions"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> baseActions"}</code> | Backing field for `BaseActions`: actions that don't use a target. |
+| <Link id="m-targetactions" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent>> targetActions"}</code> | Backing field for `TargetActions`: actions that use a target. |
 
 </details>
 

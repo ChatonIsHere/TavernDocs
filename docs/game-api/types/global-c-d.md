@@ -153,7 +153,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CosmeticParticleColorer`](/game-api/types/global-c-d/cosmeticparticlecolorer) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | [`CosmeticSkuAttribute`](/game-api/types/global-c-d/cosmeticskuattribute) | class | `PropertyAttribute` | 0 |  |
 | [`CountTracker<T>`](/game-api/types/global-c-d/counttracker-t) | class | `IEnumerable<T>`, `IEnumerable` | 6 |  |
-| [`Crank`](/game-api/types/global-c-d/crank) | class | `NetworkEntityBehaviour`, `ISavable<CrankSaveData>`, `ISavableSave<CrankSaveData>`, +2 more | 5 |  |
+| [`Crank`](/game-api/types/global-c-d/crank) | class | `NetworkEntityBehaviour`, `ISavable<CrankSaveData>`, `ISavableSave<CrankSaveData>`, +2 more | 5 | A handle you grab and turn, giving a value from 0 to 1 that changes with each turn. Server side by default; set `isRunningOnClients` to work it out on each client instead. |
 | [`CrankControlledRope`](/game-api/types/global-c-d/crankcontrolledrope) | class | `MonoBehaviour` | 0 |  |
 | [`CrankController`](/game-api/types/global-c-d/crankcontroller) | class | `MonoBehaviour` | 0 |  |
 | [`CrankSaveData`](/game-api/types/global-c-d/cranksavedata) | internal class | `NewSaveData<Crank, CrankSaveData>` | 1 |  |

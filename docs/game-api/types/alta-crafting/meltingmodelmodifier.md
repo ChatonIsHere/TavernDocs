@@ -1,6 +1,6 @@
 ---
 title: "MeltingModelModifier"
-description: "abstract class MeltingModelModifier in Root.Township."
+description: "Base class for ScriptableObject rules a MeltingModel runs on the server, for example to change melting yield or whether melting is allowed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeltingModelModifier
 
 An **abstract class** in `Root.Township`, `Alta.Blacksmithing`.
+
+Base class for ScriptableObject rules a `MeltingModel` runs on the server, for example to change melting yield or whether melting is allowed.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `ScriptableObject`
@@ -25,10 +27,10 @@ An **abstract class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
-| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"abstract void Initialize("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | Called by the model in `InitializeAsServer`; subclasses hook the model's filter events here. |
+| <Link id="m-terminate" /><code>{"abstract void Terminate("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model)"}</code> | Called when the model is destroyed by the scene or, on the server, by `OnDestroy`; subclasses unhook here. |
 
 ## Used in
 
