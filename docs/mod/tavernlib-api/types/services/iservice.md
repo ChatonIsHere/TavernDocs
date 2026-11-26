@@ -16,7 +16,7 @@ An empty marker interface for anything registered with `TavernServices`. It has 
 
 - **Listed in** [TavernLib.Services](/mod/tavernlib-api/types/services)
 - **Derived types** [`TavernManager`](/mod/tavernlib-api/types/backend-api/tavernmanager), [`EntranceMessageHandler`](/mod/tavernlib-api/types/backend/entrancemessagehandler), [`DebugHelper`](/mod/tavernlib-api/types/debugging/debughelper)
-- **Documented in** [IService](/mod/tavernlib-api/types/services/iservice), [Services](/mod/tavernlib-api/services#iservice)
+- **Documented in** [Services](/mod/tavernlib-api/services#iservice)
 
 ## Used in
 

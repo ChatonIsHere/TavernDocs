@@ -17,7 +17,6 @@ Postfixes `ForestGenerator`'s explicit `Load` method to delete forest and river 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested in** [`ForestResetPatches`](/mod/tavernlib-api/types/patches/forestresetpatches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ForestResetPatches.DeleteOldCaches](/mod/tavernlib-api/types/patches/forestresetpatches-deleteoldcaches)
 
 ## Methods
 

@@ -16,7 +16,7 @@ TavernLib's static events, which mods subscribe to. Both sides.
 
 - **Listed in** [TavernLib.Utils](/mod/tavernlib-api/types/utils)
 - **Nested types** [`TavernEvent<T>`](/mod/tavernlib-api/types/utils/tavernevents-tavernevent-t)
-- **Documented in** [TavernEvents](/mod/tavernlib-api/types/utils/tavernevents), [TavernLib API](/mod/tavernlib-api/overview)
+- **Documented in** [TavernLib API](/mod/tavernlib-api/overview)
 
 ## Fields
 

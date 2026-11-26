@@ -16,7 +16,6 @@ Private: one address's failure count and when the last one was.
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthLimits`](/mod/tavernlib-api/types/backend-auth/authlimits)
-- **Documented in** [AuthLimits.Strikes](/mod/tavernlib-api/types/backend-auth/authlimits-strikes)
 
 ## Fields
 

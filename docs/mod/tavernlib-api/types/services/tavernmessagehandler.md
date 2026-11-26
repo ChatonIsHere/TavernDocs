@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Services`.
 Probably a leftover from before the service registry: TavernLib never creates or registers one. Creating one makes a second roles handler.
 
 - **Listed in** [TavernLib.Services](/mod/tavernlib-api/types/services)
-- **Documented in** [TavernMessageHandler](/mod/tavernlib-api/types/services/tavernmessagehandler), [Services](/mod/tavernlib-api/services#tavernmessagehandler)
+- **Documented in** [Services](/mod/tavernlib-api/services#tavernmessagehandler)
 
 ## Constructors
 

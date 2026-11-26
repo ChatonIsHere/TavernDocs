@@ -16,7 +16,6 @@ The answer to `player check-stat`: one stat's definition, current value and base
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule)
-- **Documented in** [PlayerCommandModule.StatValue](/mod/tavernlib-api/types/moduleports/playercommandmodule-statvalue)
 
 ## Constructors
 

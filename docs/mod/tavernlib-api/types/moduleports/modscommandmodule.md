@@ -16,7 +16,7 @@ TavernLib's `modmanager` console module, with `list` (every mod in `Mods` and it
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Attributes** `Module`
-- **Documented in** [ModsCommandModule](/mod/tavernlib-api/types/moduleports/modscommandmodule), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Methods
 

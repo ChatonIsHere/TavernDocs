@@ -16,7 +16,6 @@ A named token as `token list` and `token whoami` answer it, with JSON names for 
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`TokenCommandModule`](/mod/tavernlib-api/types/moduleports/tokencommandmodule)
-- **Documented in** [TokenCommandModule.TokenInfo](/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokeninfo)
 
 ## Constructors
 

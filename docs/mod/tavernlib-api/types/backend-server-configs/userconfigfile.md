@@ -16,7 +16,7 @@ The `ServerConfigFile` for `users.json`, with lookups on the last read. Use the 
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<UserConfig>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [UserConfigFile](/mod/tavernlib-api/types/backend-server-configs/userconfigfile), [User config](/mod/tavernlib-api/config/user-config#userconfigfile)
+- **Documented in** [User config](/mod/tavernlib-api/config/user-config#userconfigfile)
 
 ## Constructors
 

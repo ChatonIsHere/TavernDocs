@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 One version of one mod, from a source's `manifests` folder (schema version 2 only).
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModManifest](/mod/tavernlib-api/types/backend-mods/modmanifest), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
 
 ## Constructors
 

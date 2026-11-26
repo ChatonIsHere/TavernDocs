@@ -16,7 +16,6 @@ Postfixes `ServerHostingGameMode.OnStartSucceeded` to load every cosmetic into m
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [CosmeticsPatches](/mod/tavernlib-api/types/patches/cosmeticspatches)
 
 ## Constructors
 

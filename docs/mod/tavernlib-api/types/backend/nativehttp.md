@@ -16,7 +16,7 @@ A blocking HTTP GET client on Windows' WinHTTP, for mod downloads during reconci
 
 - **Listed in** [TavernLib.Backend](/mod/tavernlib-api/types/backend)
 - **Inherits or implements** `IDisposable`
-- **Documented in** [NativeHttp](/mod/tavernlib-api/types/backend/nativehttp), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Constructors
 

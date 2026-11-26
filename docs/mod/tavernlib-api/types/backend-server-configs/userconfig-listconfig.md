@@ -16,7 +16,7 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Nested in** [`UserConfig`](/mod/tavernlib-api/types/backend-server-configs/userconfig)
-- **Documented in** [UserConfig.ListConfig](/mod/tavernlib-api/types/backend-server-configs/userconfig-listconfig), [User config](/mod/tavernlib-api/config/user-config#userconfiglistconfig)
+- **Documented in** [User config](/mod/tavernlib-api/config/user-config#userconfiglistconfig)
 
 ## Constructors
 

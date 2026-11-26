@@ -15,7 +15,7 @@ An **enum** in `TavernLib`, `TavernLib.ModdingApi`.
 Which side a mod says it's for, given to `TavernModAttribute`. `None` means not set. TavernLib itself never reads it.
 
 - **Listed in** [TavernLib.ModdingApi](/mod/tavernlib-api/types/moddingapi)
-- **Documented in** [ModSide](/mod/tavernlib-api/types/moddingapi/modside), [TavernLib API](/mod/tavernlib-api/overview)
+- **Documented in** [TavernLib API](/mod/tavernlib-api/overview)
 
 ## Values
 

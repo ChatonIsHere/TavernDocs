@@ -17,7 +17,6 @@ Postfixes `ForestGenerator`'s explicit `Save` method so the save holds a queued 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested in** [`ForestResetPatches`](/mod/tavernlib-api/types/patches/forestresetpatches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ForestResetPatches.SaveQueuedSeed](/mod/tavernlib-api/types/patches/forestresetpatches-savequeuedseed)
 
 ## Methods
 

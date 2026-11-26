@@ -16,7 +16,6 @@ The `ServerConfigFile` for `mod_repos.json`.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<TrustedRepos>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [TrustedReposConfig](/mod/tavernlib-api/types/backend-server-configs/trustedreposconfig)
 
 ## Constructors
 

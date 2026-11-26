@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 A tracked mod from `ModInstaller.ScanMods`: its record and whether it's enabled.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [InstalledModInfo](/mod/tavernlib-api/types/backend-mods/installedmodinfo)
 
 ## Constructors
 

@@ -16,7 +16,6 @@ An extension method for reading a melon's `TavernModAttribute`.
 
 - **Listed in** [TavernLib.ModdingApi](/mod/tavernlib-api/types/moddingapi)
 - **Attributes** `Extension`
-- **Documented in** [TavernMelonBaseExtension](/mod/tavernlib-api/types/moddingapi/tavernmelonbaseextension)
 
 ## Methods
 

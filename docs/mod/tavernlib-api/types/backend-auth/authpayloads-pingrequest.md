@@ -16,7 +16,6 @@ A `ping` request. Any payload with a `ping` key is answered with a `PingResponse
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
-- **Documented in** [AuthPayloads.PingRequest](/mod/tavernlib-api/types/backend-auth/authpayloads-pingrequest)
 
 ## Properties
 

@@ -17,7 +17,6 @@ The delegate for the original `SelectionCommandModule.FindObjects`, handed to `S
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested in** [`SelectFixPatch`](/mod/tavernlib-api/types/patches/selectfixpatch)
 - **Inherits or implements** `MulticastDelegate`
-- **Documented in** [SelectFixPatch.FindObjects](/mod/tavernlib-api/types/patches/selectfixpatch-findobjects)
 
 ## Constructors
 

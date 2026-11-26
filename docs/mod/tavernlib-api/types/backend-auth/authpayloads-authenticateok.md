@@ -17,7 +17,6 @@ The answer to an accepted join: the player's user id, whether the Quest or tutor
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
 - **Attributes** `IsReadOnly`
-- **Documented in** [AuthPayloads.AuthenticateOk](/mod/tavernlib-api/types/backend-auth/authpayloads-authenticateok)
 
 ## Constructors
 

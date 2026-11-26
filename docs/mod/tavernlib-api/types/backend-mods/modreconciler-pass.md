@@ -16,7 +16,6 @@ Private: one reconcile pass, with its deadline, the fetched index and per-pass v
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Nested in** [`ModReconciler`](/mod/tavernlib-api/types/backend-mods/modreconciler)
-- **Documented in** [ModReconciler.Pass](/mod/tavernlib-api/types/backend-mods/modreconciler-pass)
 
 ## Constructors
 

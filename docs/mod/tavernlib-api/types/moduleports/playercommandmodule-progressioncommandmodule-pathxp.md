@@ -16,7 +16,6 @@ One row of `player progression checkallxp`: a player's level and experience on o
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule.ProgressionCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule)
-- **Documented in** [PlayerCommandModule.ProgressionCommandModule.PathXp](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule-pathxp)
 
 ## Constructors
 

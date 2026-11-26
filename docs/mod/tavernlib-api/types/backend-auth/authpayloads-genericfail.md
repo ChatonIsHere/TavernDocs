@@ -17,7 +17,6 @@ Status `error` with a message, for every other refusal (blacklisted, name taken,
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
 - **Attributes** `IsReadOnly`
-- **Documented in** [AuthPayloads.GenericFail](/mod/tavernlib-api/types/backend-auth/authpayloads-genericfail)
 
 ## Constructors
 

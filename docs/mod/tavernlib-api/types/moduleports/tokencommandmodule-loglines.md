@@ -16,7 +16,6 @@ The answer to `token log`: the newest lines of `console_token_log.jsonl`.
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`TokenCommandModule`](/mod/tavernlib-api/types/moduleports/tokencommandmodule)
-- **Documented in** [TokenCommandModule.LogLines](/mod/tavernlib-api/types/moduleports/tokencommandmodule-loglines)
 
 ## Constructors
 

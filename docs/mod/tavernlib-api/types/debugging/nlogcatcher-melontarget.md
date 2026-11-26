@@ -17,7 +17,6 @@ An NLog target that writes the game's log lines to TavernLib's MelonLoader log, 
 - **Listed in** [TavernLib.Debugging](/mod/tavernlib-api/types/debugging)
 - **Nested in** [`NLogCatcher`](/mod/tavernlib-api/types/debugging/nlogcatcher)
 - **Inherits or implements** `TargetWithLayout`
-- **Documented in** [NLogCatcher.MelonTarget](/mod/tavernlib-api/types/debugging/nlogcatcher-melontarget)
 
 ## Constructors
 

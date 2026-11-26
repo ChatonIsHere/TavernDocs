@@ -16,7 +16,6 @@ One row of `player progression showskills`: a skill the player can buy now, numb
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule.ProgressionCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule)
-- **Documented in** [PlayerCommandModule.ProgressionCommandModule.SkillRow](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule-skillrow)
 
 ## Constructors
 

@@ -16,7 +16,6 @@ The exception the mod manager throws for a problem it can describe, such as a ba
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Inherits or implements** `Exception`
-- **Documented in** [ModManagerException](/mod/tavernlib-api/types/backend-mods/modmanagerexception)
 
 ## Constructors
 

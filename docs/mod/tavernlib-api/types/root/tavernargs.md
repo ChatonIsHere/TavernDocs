@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib`.
 The names of TavernLib's own command-line arguments, as constants, so a mod can check for them with the game's `CommandLineArguments`. Both sides.
 
 - **Listed in** [TavernLib](/mod/tavernlib-api/types/root)
-- **Documented in** [TavernArgs](/mod/tavernlib-api/types/root/tavernargs)
 
 ## Fields
 

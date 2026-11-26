@@ -15,7 +15,7 @@ A **static class** in `TavernLib`, `TavernLib.Debugging`.
 Moves the game's `unity-log.csv` into a numbered file in an `Archives` folder next to it, keeping 20. TavernLib runs it on servers it manages (not with `/launcherauth`).
 
 - **Listed in** [TavernLib.Debugging](/mod/tavernlib-api/types/debugging)
-- **Documented in** [LogArchiver](/mod/tavernlib-api/types/debugging/logarchiver), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 

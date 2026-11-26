@@ -16,7 +16,6 @@ Sends each joining player their roles and limits who may change server settings 
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ServerSettingsRolePatch](/mod/tavernlib-api/types/patches/serversettingsrolepatch)
 
 ## Constructors
 

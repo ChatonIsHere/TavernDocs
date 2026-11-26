@@ -16,7 +16,7 @@ The `ServerConfigFile` for `tavern_server.json`.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<TavernServer>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [TavernServerConfig](/mod/tavernlib-api/types/backend-server-configs/tavernserverconfig), [Ports](/mod/tavernlib-api/config/tavern-server#tavernserverconfig)
+- **Documented in** [Ports](/mod/tavernlib-api/config/tavern-server#tavernserverconfig)
 
 ## Constructors
 

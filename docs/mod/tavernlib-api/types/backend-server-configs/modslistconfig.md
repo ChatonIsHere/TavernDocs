@@ -16,7 +16,6 @@ The `ServerConfigFile` for a modlist file, read by `ModReconciler.ReconcileModLi
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<ModsList>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [ModsListConfig](/mod/tavernlib-api/types/backend-server-configs/modslistconfig)
 
 ## Constructors
 

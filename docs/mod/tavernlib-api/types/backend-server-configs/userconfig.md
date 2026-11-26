@@ -17,7 +17,7 @@ The contents of `users.json`: registered players, and the whitelist and blacklis
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`UserConfigFile`](/mod/tavernlib-api/types/backend-server-configs/userconfigfile)
 - **Nested types** [`ListConfig`](/mod/tavernlib-api/types/backend-server-configs/userconfig-listconfig), [`User`](/mod/tavernlib-api/types/backend-server-configs/userconfig-user)
-- **Documented in** [UserConfig](/mod/tavernlib-api/types/backend-server-configs/userconfig), [User config](/mod/tavernlib-api/config/user-config#userconfig)
+- **Documented in** [User config](/mod/tavernlib-api/config/user-config#userconfig)
 
 ## Constructors
 

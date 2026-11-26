@@ -17,7 +17,6 @@ Harmony patches on the game's websocket console (`ServerConsoleManager`, `WebSoc
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested types** [`RefusedLoginFilter`](/mod/tavernlib-api/types/patches/consoletokenpatches-refusedloginfilter)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ConsoleTokenPatches](/mod/tavernlib-api/types/patches/consoletokenpatches)
 
 ## Fields
 

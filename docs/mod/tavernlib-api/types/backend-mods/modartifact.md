@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 One build of a mod from its manifest: which targets it's for, where to download it and how it's packaged.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModArtifact](/mod/tavernlib-api/types/backend-mods/modartifact), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
 
 ## Constructors
 

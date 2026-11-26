@@ -16,7 +16,6 @@ Harmony patches on the game's console and API checks: they turn off wrist-menu c
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [CommandSecurityPatches](/mod/tavernlib-api/types/patches/commandsecuritypatches)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ A **static class** in `TavernLib`, `TavernLib.Backend`.
 Reads the current user's Windows proxy settings from the registry. Used by `ServerListingController`'s HTTP client.
 
 - **Listed in** [TavernLib.Backend](/mod/tavernlib-api/types/backend)
-- **Documented in** [WindowsProxy](/mod/tavernlib-api/types/backend/windowsproxy), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 

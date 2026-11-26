@@ -16,7 +16,6 @@ The contents of `console_tokens.json`: the named tokens and the owner token's ge
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Derived types** [`ConsoleTokenFile`](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenfile)
-- **Documented in** [ConsoleTokenList](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenlist)
 
 ## Constructors
 

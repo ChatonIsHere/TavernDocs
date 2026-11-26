@@ -17,7 +17,7 @@ TavernLib's `token` console module for named console tokens: `whoami`, `list`, `
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested types** [`LogLines`](/mod/tavernlib-api/types/moduleports/tokencommandmodule-loglines), [`TokenInfo`](/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokeninfo), [`TokenList`](/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokenlist)
 - **Attributes** `ServerOnly`, `Module`
-- **Documented in** [TokenCommandModule](/mod/tavernlib-api/types/moduleports/tokencommandmodule), [Console](/mod/tavernlib-api/console#tokencommandmodule), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Console](/mod/tavernlib-api/console#tokencommandmodule), [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 

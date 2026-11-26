@@ -18,7 +18,7 @@ A mod version, exactly `MAJOR.MINOR.PATCH` in ASCII digits with no pre-release o
 - **Inherits or implements** `IComparable<ModVersion>`
 - **Derived types** [`ModVersion`](/mod/tavernlib-api/types/backend-mods/modversion)
 - **Attributes** `IsReadOnly`
-- **Documented in** [ModVersion](/mod/tavernlib-api/types/backend-mods/modversion), [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modversion)
+- **Documented in** [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modversion)
 
 ## Constructors
 

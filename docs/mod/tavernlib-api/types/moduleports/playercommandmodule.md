@@ -17,7 +17,7 @@ TavernLib's `player` console module, a port of the game's player commands plus i
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested types** [`InventoryModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule-inventorymodule), [`ProgressionCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule), [`StatApplicationType`](/mod/tavernlib-api/types/moduleports/playercommandmodule-statapplicationtype), [`StatDefinitionInfo`](/mod/tavernlib-api/types/moduleports/playercommandmodule-statdefinitioninfo), [`StatValue`](/mod/tavernlib-api/types/moduleports/playercommandmodule-statvalue)
 - **Attributes** `PlayOnly`, `Module`
-- **Documented in** [PlayerCommandModule](/mod/tavernlib-api/types/moduleports/playercommandmodule), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 

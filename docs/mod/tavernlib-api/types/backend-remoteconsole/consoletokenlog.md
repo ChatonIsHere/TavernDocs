@@ -15,7 +15,6 @@ A **internal static class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`. R
 Internal: writes `console_token_log.jsonl`, one JSON line per console connect, disconnect, command and refused login. Never a token's text; rolls to `.1` past 5 MB.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
-- **Documented in** [ConsoleTokenLog](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenlog)
 
 ## Fields
 

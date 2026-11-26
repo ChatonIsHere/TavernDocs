@@ -16,7 +16,7 @@ TavernLib's `document` console module: writes an HTML page of every console comm
 
 - **Listed in** [TavernLib.Debugging](/mod/tavernlib-api/types/debugging)
 - **Attributes** `Module`
-- **Documented in** [DocumentModule](/mod/tavernlib-api/types/debugging/documentmodule), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Constructors
 

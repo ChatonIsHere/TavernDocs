@@ -16,7 +16,6 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested types** [`Strikes`](/mod/tavernlib-api/types/backend-auth/authlimits-strikes)
-- **Documented in** [AuthLimits](/mod/tavernlib-api/types/backend-auth/authlimits)
 
 ## Constructors
 

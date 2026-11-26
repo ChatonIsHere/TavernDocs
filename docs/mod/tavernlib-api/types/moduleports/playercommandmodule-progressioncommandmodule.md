@@ -18,7 +18,6 @@ The `player progression` submodule: list paths, give and check experience, clear
 - **Nested in** [`PlayerCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule)
 - **Nested types** [`PathXp`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule-pathxp), [`SkillRow`](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule-skillrow)
 - **Attributes** `Module`
-- **Documented in** [PlayerCommandModule.ProgressionCommandModule](/mod/tavernlib-api/types/moduleports/playercommandmodule-progressioncommandmodule)
 
 ## Fields
 

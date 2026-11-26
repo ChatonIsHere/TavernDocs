@@ -16,7 +16,7 @@ The contents of `server_settings.json`. Unknown keys are kept. Read it through `
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`ServerSettingsConfig`](/mod/tavernlib-api/types/backend-server-configs/serversettingsconfig)
-- **Documented in** [ServerSettings](/mod/tavernlib-api/types/backend-server-configs/serversettings), [Server settings](/mod/game-api/networking/server-settings#serversettings), [Server settings](/mod/tavernlib-api/config/server-settings#serversettings), [Folders](/mod/tavernlib-api/directories)
+- **Documented in** [Server settings](/mod/game-api/networking/server-settings#serversettings), [Server settings](/mod/tavernlib-api/config/server-settings#serversettings), [Folders](/mod/tavernlib-api/directories)
 
 ## Constructors
 

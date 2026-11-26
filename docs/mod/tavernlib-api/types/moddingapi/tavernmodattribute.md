@@ -17,7 +17,7 @@ Put on a mod's `MelonMod` class to label which side it's for. A label only: wher
 - **Listed in** [TavernLib.ModdingApi](/mod/tavernlib-api/types/moddingapi)
 - **Inherits or implements** `Attribute`
 - **Attributes** `Usage`
-- **Documented in** [TavernModAttribute](/mod/tavernlib-api/types/moddingapi/tavernmodattribute), [TavernLib API](/mod/tavernlib-api/overview)
+- **Documented in** [TavernLib API](/mod/tavernlib-api/overview)
 
 ## Constructors
 

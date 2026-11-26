@@ -16,7 +16,6 @@ One server mod in the handshake: what a client needs to match it.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Nested in** [`ModHandshake`](/mod/tavernlib-api/types/backend-mods/modhandshake)
-- **Documented in** [ModHandshake.Entry](/mod/tavernlib-api/types/backend-mods/modhandshake-entry)
 
 ## Constructors
 

@@ -17,7 +17,6 @@ Patches `ForestGenerator.Wipe` so a forest reset clears the forest and moves pla
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested types** [`DeleteOldCaches`](/mod/tavernlib-api/types/patches/forestresetpatches-deleteoldcaches), [`SaveQueuedSeed`](/mod/tavernlib-api/types/patches/forestresetpatches-savequeuedseed)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ForestResetPatches](/mod/tavernlib-api/types/patches/forestresetpatches)
 
 ## Fields
 

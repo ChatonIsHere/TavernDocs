@@ -16,7 +16,6 @@ Patches `GarbageCollectTimer.Start` to set the timer's interval from `garbage_co
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [GarbageCollectIntervalPatch](/mod/tavernlib-api/types/patches/garbagecollectintervalpatch)
 
 ## Constructors
 

@@ -15,7 +15,6 @@ A **internal static class** in `TavernLib`, `TavernLib.Backend.Auth`. Reach it t
 Internal: who may join, checked on the auth port and again at the game port, which a client can reach without the auth port.
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
-- **Documented in** [JoinRules](/mod/tavernlib-api/types/backend-auth/joinrules)
 
 ## Fields
 

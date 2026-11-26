@@ -16,7 +16,6 @@ Private: one named token in the in-memory copy, with its granted paths worked ou
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Nested in** [`ConsoleTokenStore`](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore)
-- **Documented in** [ConsoleTokenStore.Entry](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry)
 
 ## Constructors
 

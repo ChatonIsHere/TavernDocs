@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.Backend.RemoteConsole`.
 One named console token's row in `console_tokens.json`. Only its id and generation travel in the token, so an edit to its access applies at once.
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
-- **Documented in** [ConsoleToken](/mod/tavernlib-api/types/backend-remoteconsole/consoletoken)
 
 ## Constructors
 

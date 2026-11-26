@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 Where the mod manager keeps things under the game folder, with a check that ids and file names can't escape their folder.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModPaths](/mod/tavernlib-api/types/backend-mods/modpaths)
 
 ## Methods
 

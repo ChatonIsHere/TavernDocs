@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Runs off the main thread.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModRepoClient](/mod/tavernlib-api/types/backend-mods/modrepoclient), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modrepoclient)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modrepoclient)
 
 ## Constructors
 

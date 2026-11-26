@@ -16,7 +16,7 @@ The `/debug_helper` service: copies the game's NLog output into MelonLoader's lo
 
 - **Listed in** [TavernLib.Debugging](/mod/tavernlib-api/types/debugging)
 - **Inherits or implements** [`IService`](/mod/tavernlib-api/types/services/iservice)
-- **Documented in** [DebugHelper](/mod/tavernlib-api/types/debugging/debughelper), [Internals](/mod/tavernlib-api/internals), [Services](/mod/tavernlib-api/services)
+- **Documented in** [Internals](/mod/tavernlib-api/internals), [Services](/mod/tavernlib-api/services)
 
 ## Constructors
 

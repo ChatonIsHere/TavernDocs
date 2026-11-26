@@ -15,7 +15,6 @@ A **internal static class** in `TavernLib`, `TavernLib`. Reach it through att-st
 TavernLib's internal log helper. Writes through `Tavern.Logger` as `[Type.Method]: message`, finding the caller from the stack trace.
 
 - **Listed in** [TavernLib](/mod/tavernlib-api/types/root)
-- **Documented in** [TavernLogger](/mod/tavernlib-api/types/root/tavernlogger)
 
 ## Methods
 

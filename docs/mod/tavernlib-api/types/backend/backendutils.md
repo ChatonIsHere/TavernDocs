@@ -15,7 +15,7 @@ A **static class** in `TavernLib`, `TavernLib.Backend`.
 Small helpers shared by TavernLib's backend: the listing URL, SHA-256 hashing and random URL-safe tokens.
 
 - **Listed in** [TavernLib.Backend](/mod/tavernlib-api/types/backend)
-- **Documented in** [BackendUtils](/mod/tavernlib-api/types/backend/backendutils), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Properties
 

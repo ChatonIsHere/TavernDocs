@@ -16,7 +16,6 @@ The auth port's answer to a ping: status `pong`, the server name, whether a pass
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
-- **Documented in** [AuthPayloads.PingResponse](/mod/tavernlib-api/types/backend-auth/authpayloads-pingresponse)
 
 ## Constructors
 

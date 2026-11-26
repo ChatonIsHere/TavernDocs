@@ -17,7 +17,6 @@ The `player inventory` submodule: view an online player's inventory, and save or
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule)
 - **Attributes** `ServerOnly`, `Module`
-- **Documented in** [PlayerCommandModule.InventoryModule](/mod/tavernlib-api/types/moduleports/playercommandmodule-inventorymodule)
 
 ## Methods
 

@@ -16,7 +16,6 @@ Internal: `console_tokens.json` with an in-memory copy rebuilt after each write,
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Nested types** [`Entry`](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry)
-- **Documented in** [ConsoleTokenStore](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenstore)
 
 ## Fields
 

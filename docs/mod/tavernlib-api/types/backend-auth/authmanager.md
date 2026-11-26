@@ -15,7 +15,6 @@ A **internal class** in `TavernLib`, `TavernLib.Backend.Auth`. Reach it through 
 Internal: TavernLib's login server on the auth port (1762 by default). Answers pings, mod lists, `set_mods`, whitelist applications and joins, registering new players in `users.json`. Server; not run with `/launcherauth`.
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
-- **Documented in** [AuthManager](/mod/tavernlib-api/types/backend-auth/authmanager)
 
 ## Constructors
 

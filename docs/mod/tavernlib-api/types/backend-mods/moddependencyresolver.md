@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 Works out every mod a mod needs, from the merged index and fetched manifests, for one target.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModDependencyResolver](/mod/tavernlib-api/types/backend-mods/moddependencyresolver)
 
 ## Fields
 

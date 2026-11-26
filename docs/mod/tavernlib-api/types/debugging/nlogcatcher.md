@@ -16,7 +16,6 @@ Internal: adds a `MelonTarget` to NLog's configuration once the app has started,
 
 - **Listed in** [TavernLib.Debugging](/mod/tavernlib-api/types/debugging)
 - **Nested types** [`MelonTarget`](/mod/tavernlib-api/types/debugging/nlogcatcher-melontarget)
-- **Documented in** [NLogCatcher](/mod/tavernlib-api/types/debugging/nlogcatcher)
 
 ## Constructors
 

@@ -16,7 +16,7 @@ One registered player in `users.json`, made the first time they join through the
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Nested in** [`UserConfig`](/mod/tavernlib-api/types/backend-server-configs/userconfig)
-- **Documented in** [UserConfig.User](/mod/tavernlib-api/types/backend-server-configs/userconfig-user), [User config](/mod/tavernlib-api/config/user-config#userconfiguser)
+- **Documented in** [User config](/mod/tavernlib-api/config/user-config#userconfiguser)
 
 ## Constructors
 

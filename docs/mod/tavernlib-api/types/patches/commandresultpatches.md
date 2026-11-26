@@ -16,7 +16,6 @@ Harmony patches on `CommandService.HandleMatchedCommand` and `PlayerListConverte
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [CommandResultPatches](/mod/tavernlib-api/types/patches/commandresultpatches)
 
 ## Fields
 

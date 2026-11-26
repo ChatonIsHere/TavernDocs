@@ -16,7 +16,6 @@ A MonoMod hook (applied in `Tavern.OnLateInitializeMelon`) that replaces `Select
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested types** [`FindObjects`](/mod/tavernlib-api/types/patches/selectfixpatch-findobjects)
-- **Documented in** [SelectFixPatch](/mod/tavernlib-api/types/patches/selectfixpatch)
 
 ## Methods
 

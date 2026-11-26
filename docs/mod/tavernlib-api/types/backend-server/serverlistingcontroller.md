@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Server`.
 Sends the server to the Community Servers listing every 3 seconds from a background loop, backing off after failures, and removes it when the game quits. Server; `TavernManager` makes one when `community_listed` is on at start.
 
 - **Listed in** [TavernLib.Backend.Server](/mod/tavernlib-api/types/backend-server)
-- **Documented in** [ServerListingController](/mod/tavernlib-api/types/backend-server/serverlistingcontroller), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Constructors
 

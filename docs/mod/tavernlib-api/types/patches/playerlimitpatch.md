@@ -16,7 +16,6 @@ Postfixes the `ServerHandler.PlayerLimit` getter so the limit comes from `server
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [PlayerLimitPatch](/mod/tavernlib-api/types/patches/playerlimitpatch)
 
 ## Constructors
 

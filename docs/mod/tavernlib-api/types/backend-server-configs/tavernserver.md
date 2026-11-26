@@ -16,7 +16,7 @@ The contents of `tavern_server.json`: the game, auth, web and console ports. Use
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`TavernServerConfig`](/mod/tavernlib-api/types/backend-server-configs/tavernserverconfig)
-- **Documented in** [TavernServer](/mod/tavernlib-api/types/backend-server-configs/tavernserver), [Ports](/mod/tavernlib-api/config/tavern-server#tavernserver), [Folders](/mod/tavernlib-api/directories)
+- **Documented in** [Ports](/mod/tavernlib-api/config/tavern-server#tavernserver), [Folders](/mod/tavernlib-api/directories)
 
 ## Constructors
 

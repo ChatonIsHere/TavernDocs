@@ -16,7 +16,7 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<ServerSettings>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [ServerSettingsConfig](/mod/tavernlib-api/types/backend-server-configs/serversettingsconfig), [Server settings](/mod/tavernlib-api/config/server-settings#serversettingsconfig)
+- **Documented in** [Server settings](/mod/tavernlib-api/config/server-settings#serversettingsconfig)
 
 ## Constructors
 

@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 Fixed names for the mod manager: the default source, target names and record file names.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModManagerConstants](/mod/tavernlib-api/types/backend-mods/modmanagerconstants)
 
 ## Fields
 

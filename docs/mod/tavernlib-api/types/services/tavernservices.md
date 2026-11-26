@@ -15,7 +15,7 @@ A **static class** in `TavernLib`, `TavernLib.Services`.
 A small registry holding one object per type, where TavernLib keeps `TavernManager` and `EntranceMessageHandler` and mods can add their own. A plain dictionary with no lock.
 
 - **Listed in** [TavernLib.Services](/mod/tavernlib-api/types/services)
-- **Documented in** [TavernServices](/mod/tavernlib-api/types/services/tavernservices), [Services](/mod/tavernlib-api/services#tavernservices)
+- **Documented in** [Services](/mod/tavernlib-api/services#tavernservices)
 
 ## Fields
 

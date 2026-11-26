@@ -16,7 +16,6 @@ The `ServerConfigFile` for `whitelist_requests.json`.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Inherits or implements** [`ServerConfigFile<WhitelistRequestList>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [WhitelistRequestsConfigFile](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile)
 
 ## Constructors
 

@@ -16,7 +16,6 @@ Small Harmony patches that let the game run without Alta's services: local cosme
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [TeenyPatches](/mod/tavernlib-api/types/patches/teenypatches)
 
 ## Constructors
 

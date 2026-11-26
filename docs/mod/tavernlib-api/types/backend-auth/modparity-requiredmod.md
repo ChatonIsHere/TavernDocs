@@ -16,7 +16,6 @@ One mod a joining player is missing or has the wrong version of, as sent in the 
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`ModParity`](/mod/tavernlib-api/types/backend-auth/modparity)
-- **Documented in** [ModParity.RequiredMod](/mod/tavernlib-api/types/backend-auth/modparity-requiredmod)
 
 ## Constructors
 

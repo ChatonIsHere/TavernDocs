@@ -16,7 +16,7 @@ The server's mod snapshot for the auth port's ping, `mods_list` and the join's p
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Nested types** [`Entry`](/mod/tavernlib-api/types/backend-mods/modhandshake-entry)
-- **Documented in** [ModHandshake](/mod/tavernlib-api/types/backend-mods/modhandshake), [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modhandshake)
+- **Documented in** [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modhandshake)
 
 ## Fields
 

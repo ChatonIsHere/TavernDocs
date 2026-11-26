@@ -16,7 +16,7 @@ Brings `Mods` in line with a modlist before mods load on a headless server: inst
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Nested types** [`Pass`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass)
-- **Documented in** [ModReconciler](/mod/tavernlib-api/types/backend-mods/modreconciler), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modreconciler)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modreconciler)
 
 ## Fields
 

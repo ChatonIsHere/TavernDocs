@@ -16,7 +16,6 @@ Which console a login came through: the websocket console, or another one. Named
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Nested in** [`ConsoleAuth`](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth)
-- **Documented in** [ConsoleAuth.LoginPath](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth-loginpath)
 
 ## Values
 

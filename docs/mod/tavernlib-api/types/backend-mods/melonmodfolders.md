@@ -15,7 +15,6 @@ A **internal static class** in `TavernLib`, `TavernLib.Backend.Mods`. Reach it t
 Internal: edits MelonLoader's private list of mod folders at start to match the disk: disabled mods are dropped, and each enabled mod of ours gets this side's build folder (`.server` or `.client_windows`).
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [MelonModFolders](/mod/tavernlib-api/types/backend-mods/melonmodfolders)
 
 ## Fields
 

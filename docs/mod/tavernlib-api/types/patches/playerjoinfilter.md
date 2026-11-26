@@ -16,7 +16,6 @@ Replaces the server's join request handler (prefix on `ServerPlayerConnectionHan
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [PlayerJoinFilter](/mod/tavernlib-api/types/patches/playerjoinfilter)
 
 ## Fields
 

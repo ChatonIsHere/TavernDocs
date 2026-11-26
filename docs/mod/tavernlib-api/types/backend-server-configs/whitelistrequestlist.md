@@ -17,7 +17,6 @@ The contents of `whitelist_requests.json`: players who asked to be whitelisted f
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`WhitelistRequestsConfigFile`](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestsconfigfile)
 - **Nested types** [`WhitelistRequest`](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest)
-- **Documented in** [WhitelistRequestList](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist)
 
 ## Constructors
 

@@ -16,7 +16,6 @@ Private: which scene the listing reports, Normal, Quest or Tutorial. The launch 
 
 - **Listed in** [TavernLib.Backend.Server](/mod/tavernlib-api/types/backend-server)
 - **Nested in** [`ServerListingPayload`](/mod/tavernlib-api/types/backend-server/serverlistingpayload)
-- **Documented in** [ServerListingPayload.SceneKind](/mod/tavernlib-api/types/backend-server/serverlistingpayload-scenekind)
 
 ## Values
 

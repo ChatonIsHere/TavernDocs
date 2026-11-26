@@ -15,7 +15,7 @@ A **static class** in `TavernLib`, `TavernLib`.
 The folder and file paths TavernLib uses, worked out each time you read them. None of them creates the folder or file. Both sides.
 
 - **Listed in** [TavernLib](/mod/tavernlib-api/types/root)
-- **Documented in** [TavernDirectories](/mod/tavernlib-api/types/root/taverndirectories), [TavernLib API](/mod/tavernlib-api/overview)
+- **Documented in** [TavernLib API](/mod/tavernlib-api/overview)
 
 ## Properties
 

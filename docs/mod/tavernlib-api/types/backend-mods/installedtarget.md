@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 What a mod record says is installed for one target.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [InstalledTarget](/mod/tavernlib-api/types/backend-mods/installedtarget)
 
 ## Constructors
 

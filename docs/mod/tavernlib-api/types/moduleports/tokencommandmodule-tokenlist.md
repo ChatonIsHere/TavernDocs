@@ -16,7 +16,6 @@ The answer to `token list`: every named token.
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`TokenCommandModule`](/mod/tavernlib-api/types/moduleports/tokencommandmodule)
-- **Documented in** [TokenCommandModule.TokenList](/mod/tavernlib-api/types/moduleports/tokencommandmodule-tokenlist)
 
 ## Constructors
 

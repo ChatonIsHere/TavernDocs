@@ -16,7 +16,6 @@ Client patches on `JoinServerPipeline` and `JoinResult` that record a server's m
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [JoinRejectionRecorder](/mod/tavernlib-api/types/patches/joinrejectionrecorder)
 
 ## Fields
 

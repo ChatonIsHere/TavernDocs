@@ -16,7 +16,6 @@ Prefixes `StatManager.Awake` to rename the stat definition with hash 44538 from 
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [StatNamePatch](/mod/tavernlib-api/types/patches/statnamepatch)
 
 ## Constructors
 

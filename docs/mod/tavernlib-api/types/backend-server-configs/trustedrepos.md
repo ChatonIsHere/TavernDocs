@@ -16,7 +16,6 @@ The contents of `mod_repos.json`: the mod sources reconcile may pull from. Only 
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`TrustedReposConfig`](/mod/tavernlib-api/types/backend-server-configs/trustedreposconfig)
-- **Documented in** [TrustedRepos](/mod/tavernlib-api/types/backend-server-configs/trustedrepos)
 
 ## Constructors
 

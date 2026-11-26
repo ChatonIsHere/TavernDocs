@@ -17,7 +17,6 @@ The answer to `mods_list`: the server's mods and enabled untracked mods, sent wi
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
 - **Attributes** `IsReadOnly`
-- **Documented in** [AuthPayloads.ModsListResponse](/mod/tavernlib-api/types/backend-auth/authpayloads-modslistresponse)
 
 ## Constructors
 

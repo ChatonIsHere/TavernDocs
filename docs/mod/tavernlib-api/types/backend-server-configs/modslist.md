@@ -16,7 +16,6 @@ A modlist file, as `/modlist` reads it: the mod ids, each optionally pinned to a
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Derived types** [`ModsListConfig`](/mod/tavernlib-api/types/backend-server-configs/modslistconfig)
-- **Documented in** [ModsList](/mod/tavernlib-api/types/backend-server-configs/modslist)
 
 ## Constructors
 

@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 One entry of a source's `replaced` list: a retired mod id and the mod that takes its place.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModReplacement](/mod/tavernlib-api/types/backend-mods/modreplacement)
 
 ## Constructors
 

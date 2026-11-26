@@ -16,7 +16,7 @@ The server's config files, registered as a service: get it with `TavernServices.
 
 - **Listed in** [TavernLib.Backend.Api](/mod/tavernlib-api/types/backend-api)
 - **Inherits or implements** [`IService`](/mod/tavernlib-api/types/services/iservice)
-- **Documented in** [TavernManager](/mod/tavernlib-api/config/tavern-manager), [TavernManager](/mod/tavernlib-api/types/backend-api/tavernmanager), [Services](/mod/tavernlib-api/services)
+- **Documented in** [TavernManager](/mod/tavernlib-api/config/tavern-manager), [Services](/mod/tavernlib-api/services)
 
 ## Constructors
 

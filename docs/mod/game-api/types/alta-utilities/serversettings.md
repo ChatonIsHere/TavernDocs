@@ -17,7 +17,7 @@ The game's own server settings, loaded from `ServerConfiguration.json`. Server: 
 - **Listed in** [Utilities and other Alta namespaces](/mod/game-api/types/alta-utilities)
 - **Inherits or implements** `Settings`, `ICloneable`
 - **Attributes** `Obsolete`
-- **Documented in** [ServerSettings](/mod/tavernlib-api/types/backend-server-configs/serversettings), [Server settings](/mod/game-api/networking/server-settings#serversettings), [Server settings](/mod/tavernlib-api/config/server-settings#serversettings), [Folders](/mod/tavernlib-api/directories)
+- **Documented in** [Server settings](/mod/game-api/networking/server-settings#serversettings), [Server settings](/mod/tavernlib-api/config/server-settings#serversettings), [Folders](/mod/tavernlib-api/directories)
 
 ## Constructors
 

@@ -16,7 +16,7 @@ Receives the roles message on a client and keeps the local player's roles. Regis
 
 - **Listed in** [TavernLib.Backend](/mod/tavernlib-api/types/backend)
 - **Inherits or implements** [`IService`](/mod/tavernlib-api/types/services/iservice)
-- **Documented in** [EntranceMessageHandler](/mod/tavernlib-api/types/backend/entrancemessagehandler), [Services](/mod/tavernlib-api/services)
+- **Documented in** [Services](/mod/tavernlib-api/services)
 
 ## Constructors
 

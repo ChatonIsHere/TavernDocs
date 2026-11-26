@@ -16,7 +16,6 @@ One whitelist application.
 
 - **Listed in** [TavernLib.Backend.Server.Configs](/mod/tavernlib-api/types/backend-server-configs)
 - **Nested in** [`WhitelistRequestList`](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist)
-- **Documented in** [WhitelistRequestList.WhitelistRequest](/mod/tavernlib-api/types/backend-server-configs/whitelistrequestlist-whitelistrequest)
 
 ## Constructors
 

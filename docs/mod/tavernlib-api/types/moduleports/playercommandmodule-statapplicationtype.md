@@ -16,7 +16,6 @@ Which part of a stat `player set-stat` changes: its base value, its minimum or i
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule)
-- **Documented in** [PlayerCommandModule.StatApplicationType](/mod/tavernlib-api/types/moduleports/playercommandmodule-statapplicationtype)
 
 ## Values
 

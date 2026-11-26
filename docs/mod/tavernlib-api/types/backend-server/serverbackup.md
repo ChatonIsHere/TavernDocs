@@ -16,7 +16,7 @@ Timed zip backups of the server's world folder (`Servers\-1`) into its `Backups`
 
 - **Listed in** [TavernLib.Backend.Server](/mod/tavernlib-api/types/backend-server)
 - **Nested types** [`BackupResult`](/mod/tavernlib-api/types/backend-server/serverbackup-backupresult)
-- **Documented in** [ServerBackup](/mod/tavernlib-api/types/backend-server/serverbackup), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 

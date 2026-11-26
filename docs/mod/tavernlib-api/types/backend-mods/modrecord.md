@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 A mod folder's record (`manifest.json` or `manifest.disabled.json`): the manifest it was installed from plus what's installed per target. Written in the same bytes as the launcher's Python installer writes it.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModRecord](/mod/tavernlib-api/types/backend-mods/modrecord), [Installed mods](/mod/tavernlib-api/mod-manager/installed-mods#modrecord)
+- **Documented in** [Installed mods](/mod/tavernlib-api/mod-manager/installed-mods#modrecord)
 
 ## Constructors
 

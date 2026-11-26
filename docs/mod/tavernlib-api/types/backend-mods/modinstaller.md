@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib.Backend.Mods`.
 Installs, verifies, enables and scans the mods in `Mods`, keeping a record (`manifest.json`) in each mod folder. Downloads are checked against their SHA-256 and built in a staging folder.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [ModInstaller](/mod/tavernlib-api/types/backend-mods/modinstaller)
 
 ## Fields
 

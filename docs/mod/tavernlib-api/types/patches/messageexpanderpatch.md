@@ -16,7 +16,6 @@ Replaces the game's network message type header with an 8-bit one, for 256 messa
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [MessageExpanderPatch](/mod/tavernlib-api/types/patches/messageexpanderpatch)
 
 ## Constructors
 

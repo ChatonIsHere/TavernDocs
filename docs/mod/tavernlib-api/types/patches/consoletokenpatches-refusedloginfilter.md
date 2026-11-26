@@ -17,7 +17,6 @@ A private NLog filter that drops the game's log lines that print the whole text 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Nested in** [`ConsoleTokenPatches`](/mod/tavernlib-api/types/patches/consoletokenpatches)
 - **Inherits or implements** `Filter`
-- **Documented in** [ConsoleTokenPatches.RefusedLoginFilter](/mod/tavernlib-api/types/patches/consoletokenpatches-refusedloginfilter)
 
 ## Constructors
 

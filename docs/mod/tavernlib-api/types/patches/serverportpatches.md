@@ -16,7 +16,6 @@ Moves the game's hard-coded web server (1761) and websocket console (1760) to `w
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ServerPortPatches](/mod/tavernlib-api/types/patches/serverportpatches)
 
 ## Properties
 

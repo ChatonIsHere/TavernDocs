@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.ModdingApi`.
 What `Roles.RolesChanged` hands its handlers: one user whose roles in `users.json` changed.
 
 - **Listed in** [TavernLib.ModdingApi](/mod/tavernlib-api/types/moddingapi)
-- **Documented in** [RolesChange](/mod/tavernlib-api/types/moddingapi/roleschange)
 
 ## Constructors
 

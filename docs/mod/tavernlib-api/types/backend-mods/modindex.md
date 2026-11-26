@@ -16,7 +16,7 @@ Every trusted source's `repository.json` merged: a list of `ModSummary` plus the
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Inherits or implements** `List<ModSummary>`
-- **Documented in** [ModIndex](/mod/tavernlib-api/types/backend-mods/modindex), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modindex)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modindex)
 
 ## Constructors
 

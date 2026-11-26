@@ -16,7 +16,6 @@ Internal: what one `CreateBackup` made.
 
 - **Listed in** [TavernLib.Backend.Server](/mod/tavernlib-api/types/backend-server)
 - **Nested in** [`ServerBackup`](/mod/tavernlib-api/types/backend-server/serverbackup)
-- **Documented in** [ServerBackup.BackupResult](/mod/tavernlib-api/types/backend-server/serverbackup-backupresult)
 
 ## Constructors
 

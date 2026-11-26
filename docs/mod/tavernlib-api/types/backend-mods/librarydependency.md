@@ -15,7 +15,7 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 A library a mod build needs in `UserLibs`, from the build's `library_dependencies` in its manifest.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [LibraryDependency](/mod/tavernlib-api/types/backend-mods/librarydependency), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
 
 ## Constructors
 

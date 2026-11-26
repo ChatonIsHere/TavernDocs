@@ -16,7 +16,6 @@ Harmony patches that raise the game's `ConsoleEvents.PlayerJoined` and `PlayerLe
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [ConsoleEventsPatch](/mod/tavernlib-api/types/patches/consoleeventspatch)
 
 ## Constructors
 

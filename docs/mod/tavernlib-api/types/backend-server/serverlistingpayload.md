@@ -16,7 +16,7 @@ The JSON body each heartbeat sends to the Community Servers listing, built from 
 
 - **Listed in** [TavernLib.Backend.Server](/mod/tavernlib-api/types/backend-server)
 - **Nested types** [`SceneKind`](/mod/tavernlib-api/types/backend-server/serverlistingpayload-scenekind)
-- **Documented in** [ServerListingPayload](/mod/tavernlib-api/types/backend-server/serverlistingpayload), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Properties
 

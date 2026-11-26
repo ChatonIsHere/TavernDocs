@@ -16,7 +16,6 @@ One row of `player list-stats`: a stat's name, limits and, for a player with a b
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Nested in** [`PlayerCommandModule`](/mod/tavernlib-api/types/moduleports/playercommandmodule)
-- **Documented in** [PlayerCommandModule.StatDefinitionInfo](/mod/tavernlib-api/types/moduleports/playercommandmodule-statdefinitioninfo)
 
 ## Constructors
 

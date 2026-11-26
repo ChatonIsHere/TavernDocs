@@ -15,7 +15,6 @@ A **static class** in `TavernLib`, `TavernLib.Patches`.
 Patches for game console commands that answered Success having done nothing: `time set`, `time ofday`, `settings possible`, `select move/rotate exact`, `wacky destroy` and `world caves teleport`. Applied by hand in `OnLateInitializeMelon`, not by attribute.
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
-- **Documented in** [GameCommandPatches](/mod/tavernlib-api/types/patches/gamecommandpatches)
 
 ## Methods
 

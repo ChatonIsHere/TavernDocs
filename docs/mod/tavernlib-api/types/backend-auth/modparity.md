@@ -16,7 +16,7 @@ Checks a joining player's mods against the server's `parity_required` mods, behi
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested types** [`RequiredMod`](/mod/tavernlib-api/types/backend-auth/modparity-requiredmod)
-- **Documented in** [ModParity](/mod/tavernlib-api/types/backend-auth/modparity), [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modparity)
+- **Documented in** [Versions and parity](/mod/tavernlib-api/mod-manager/versions-and-parity#modparity)
 
 ## Fields
 

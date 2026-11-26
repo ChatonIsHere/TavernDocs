@@ -16,7 +16,6 @@ The Harmony patch behind `TavernEvents.SocketCreated`: a postfix on the `Alta.Ne
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [EventPatches](/mod/tavernlib-api/types/patches/eventpatches)
 
 ## Constructors
 

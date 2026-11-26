@@ -16,7 +16,6 @@ Internal: console logins. Keeps `server_secret.key` and the owner token in `cons
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Nested types** [`LoginPath`](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth-loginpath)
-- **Documented in** [ConsoleAuth](/mod/tavernlib-api/types/backend-remoteconsole/consoleauth)
 
 ## Fields
 

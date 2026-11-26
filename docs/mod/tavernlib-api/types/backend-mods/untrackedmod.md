@@ -15,7 +15,6 @@ A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
 A DLL or folder in `Mods` that TavernLib's mod manager didn't install. Never resolved, updated or checked against a player.
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
-- **Documented in** [UntrackedMod](/mod/tavernlib-api/types/backend-mods/untrackedmod)
 
 ## Constructors
 

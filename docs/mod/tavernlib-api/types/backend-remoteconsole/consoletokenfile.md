@@ -16,7 +16,6 @@ The `ServerConfigFile` for `console_tokens.json`. Only `ConsoleTokenStore` reads
 
 - **Listed in** [TavernLib.Backend.RemoteConsole](/mod/tavernlib-api/types/backend-remoteconsole)
 - **Inherits or implements** [`ServerConfigFile<ConsoleTokenList>`](/mod/tavernlib-api/types/backend-server-configs/serverconfigfile-t)
-- **Documented in** [ConsoleTokenFile](/mod/tavernlib-api/types/backend-remoteconsole/consoletokenfile)
 
 ## Constructors
 

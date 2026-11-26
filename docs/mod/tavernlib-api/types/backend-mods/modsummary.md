@@ -16,7 +16,7 @@ One mod's entry in a source's `repository.json` for one major version: the versi
 
 - **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
 - **Derived types** [`ModIndex`](/mod/tavernlib-api/types/backend-mods/modindex)
-- **Documented in** [ModSummary](/mod/tavernlib-api/types/backend-mods/modsummary), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
+- **Documented in** [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile)
 
 ## Constructors
 

@@ -16,7 +16,6 @@ A join request on the auth port: the player's name, account token and, if needed
 
 - **Listed in** [TavernLib.Backend.Auth](/mod/tavernlib-api/types/backend-auth)
 - **Nested in** [`AuthPayloads`](/mod/tavernlib-api/types/backend-auth/authpayloads)
-- **Documented in** [AuthPayloads.AuthenticateRequest](/mod/tavernlib-api/types/backend-auth/authpayloads-authenticaterequest)
 
 ## Properties
 

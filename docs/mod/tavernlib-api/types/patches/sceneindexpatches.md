@@ -16,7 +16,6 @@ Forces the scene a client joins from `/tutorialScene` or `/questScene`, with a p
 
 - **Listed in** [TavernLib.Patches](/mod/tavernlib-api/types/patches)
 - **Attributes** `HarmonyPatch`
-- **Documented in** [SceneIndexPatches](/mod/tavernlib-api/types/patches/sceneindexpatches)
 
 ## Constructors
 

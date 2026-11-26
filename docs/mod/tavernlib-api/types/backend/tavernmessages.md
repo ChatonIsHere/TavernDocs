@@ -15,7 +15,6 @@ An **enum** in `TavernLib`, `TavernLib.Backend`.
 TavernLib's own network message numbers, above the game's: `ReceiveRoles` (32, server to client) and `ReceiveSceneIndex` (33, reserved, unused). Cast to `MessageType` to use.
 
 - **Listed in** [TavernLib.Backend](/mod/tavernlib-api/types/backend)
-- **Documented in** [TavernMessages](/mod/tavernlib-api/types/backend/tavernmessages)
 
 ## Values
 

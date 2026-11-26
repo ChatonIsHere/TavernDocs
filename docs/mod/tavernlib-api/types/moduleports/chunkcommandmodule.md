@@ -16,7 +16,7 @@ TavernLib's `chunks` console module, a port of the game's chunk commands: receiv
 
 - **Listed in** [TavernLib.ModulePorts](/mod/tavernlib-api/types/moduleports)
 - **Attributes** `PlayOnly`, `Module`
-- **Documented in** [ChunkCommandModule](/mod/tavernlib-api/types/moduleports/chunkcommandmodule), [Internals](/mod/tavernlib-api/internals)
+- **Documented in** [Internals](/mod/tavernlib-api/internals)
 
 ## Fields
 
