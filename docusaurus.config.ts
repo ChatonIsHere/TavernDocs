@@ -1,6 +1,7 @@
 import apiLinks from './src/remark/api-links.mjs';
 import botIndex from './src/plugins/bot-index';
 import searchIndex from './src/plugins/search-index';
+import csp from './src/plugins/csp';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -20,6 +21,8 @@ const config: Config = {
     organizationName: 'ChatonIsHere',
     projectName: 'TavernDocs',
     trailingSlash: false,
+    // The "wrong base URL" warning is an inline script, and the site always lives at its own domain's root.
+    baseUrlIssueBanner: false,
 
     onBrokenLinks: 'throw',
     onBrokenAnchors: 'throw',
@@ -70,7 +73,8 @@ const config: Config = {
     ],
 
     // botIndex writes build/bot/*.json for the Discord bot (bot/); searchIndex builds the site search (build/pagefind).
-    plugins: [botIndex, searchIndex],
+    // csp writes the Content Security Policy into build/_headers.
+    plugins: [botIndex, searchIndex, csp],
 
     themeConfig: {
         colorMode: {

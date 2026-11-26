@@ -1,4 +1,5 @@
 # Security headers for every page and file, applied by Cloudflare (static assets). Not served as a file.
+# The Content-Security-Policy line is replaced at build time with the full policy (src/plugins/csp).
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
