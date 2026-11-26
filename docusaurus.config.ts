@@ -9,7 +9,8 @@ const config: Config = {
     title: 'The Modding Tavern',
     tagline: 'Play, host and mod A Township Tale',
     titleDelimiter: '-',
-    favicon: 'img/favicon.png',
+    favicon: 'img/favicon.ico',
+    headTags: [{tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/TavernDocs/img/apple-touch-icon.png'}}],
 
     // Where the site lives now. Switch these three to ModdingTavern when the repo moves to the org.
     url: 'https://chatonishere.github.io',
@@ -100,6 +101,7 @@ const config: Config = {
         },
         navbar: {
             title: 'The Modding Tavern',
+            logo: {alt: '', src: 'img/logo.png', width: 32, height: 32},
             items: [
                 {type: 'docSidebar', sidebarId: 'play', position: 'left', label: 'Play'},
                 {type: 'docSidebar', sidebarId: 'host', position: 'left', label: 'Host'},
@@ -151,7 +153,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: 'The Modding Tavern. Not affiliated with Alta.',
+            copyright: 'The Modding Tavern. Not affiliated with Alta. Icon: <a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Magnific - Flaticon</a>',
         },
         prism: {
             theme: prismThemes.vsDark,

@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/badge-256.png" width="128" alt=""></p>
+
 # TavernDocs
 
 Guides for playing, hosting and modding A Township Tale with The Modding Tavern. Built with [Docusaurus](https://docusaurus.io/).
@@ -24,3 +26,5 @@ npm run build      # fails on broken links and images
 ## Deploying
 
 `.github/workflows/deploy.yml` builds every push and pull request, and deploys `main` to GitHub Pages. Turn it on in the repository settings under **Pages**, with **Source** set to **GitHub Actions**.
+
+Icon: <a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Magnific - Flaticon</a>
