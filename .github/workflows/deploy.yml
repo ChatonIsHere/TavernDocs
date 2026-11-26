@@ -24,6 +24,9 @@ jobs:
                   cache: npm
             - run: npm ci
             - run: npm run build
+            # The bot's tests, including checks against the index the build just wrote.
+            - run: npm ci && npm test
+              working-directory: bot
             - uses: actions/upload-pages-artifact@v3
               with:
                   path: build

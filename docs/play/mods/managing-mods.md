@@ -1,6 +1,7 @@
 ---
 title: Managing your mods
 description: Update, turn off, remove and fix your mods in the Mod Manager.
+bot_aliases: [mod manager]
 ---
 
 # Managing your mods

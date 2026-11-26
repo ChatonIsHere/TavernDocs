@@ -1,0 +1,77 @@
+# Reference lookups the bot can search, built from tables and headings already in the docs.
+# Adding an entry here makes it searchable in /search and /lookup after the next site deploy. No code needed.
+# To give it its own slash command too, add one line to bot/src/sources/reference/reference.commands.ts.
+#
+# Each entry:
+#   id:          short name, lowercase (used by /lookup and in the index)
+#   label:       what people see, e.g. "Config keys"
+#   description: one line on what's in it
+#   kind:        table     rows from tables on the pages
+#                headings  one entry per heading, with the text under it (FAQ style)
+#   pages:       doc ids, the path under docs/ without .md
+#
+# For kind: table
+#   key:   the column whose cell is what people search for
+#   text:  the column that explains it
+#   extra: other columns to show, optional
+#   Only tables that have both the key and text columns are read.
+#
+# For kind: headings
+#   levels: which heading levels count, e.g. [2, 3]. A heading with no text under it (only subheadings) is skipped.
+#
+# Headings named in skip_headings are never used, in any entry.
+
+skip_headings:
+    - Something went wrong?
+    - See also
+    - Still stuck?
+
+sources:
+    - id: config
+      label: Config keys
+      description: Settings in server_settings.json, ServerConfiguration.json and the other config files.
+      kind: table
+      pages: [host/config-reference]
+      key: Key
+      text: What it does
+      extra: [Default, Type, Restart]
+
+    - id: command
+      label: Console commands
+      description: Commands you can run in the server console.
+      kind: table
+      pages: [host/console-and-tokens, mod/game-api/console-and-utilities/built-in-commands]
+      key: Command
+      text: What it does
+
+    - id: log
+      label: Log lines
+      description: What a line in the game's log means and what writes it.
+      kind: table
+      pages: [mod/game-api/patching/log-messages]
+      key: Message
+      text: Notes
+      extra: [Level, Written by, Seen on]
+
+    - id: port
+      label: Ports
+      description: The ports a server uses and whether to open them.
+      kind: table
+      pages: [host/ports]
+      key: Port
+      text: What it's for
+      extra: [Protocol, Open it?]
+
+    - id: faq
+      label: FAQ
+      description: Common questions about the Modding Tavern.
+      kind: headings
+      pages: [help/faq]
+      levels: [2]
+
+    - id: troubleshoot
+      label: Troubleshooting
+      description: Fixes for common problems when playing, hosting or modding.
+      kind: headings
+      pages: [play/troubleshooting, host/troubleshooting, mod/troubleshooting, help/general-troubleshooting]
+      levels: [2, 3]

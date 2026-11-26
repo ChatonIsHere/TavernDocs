@@ -1,4 +1,5 @@
 import apiLinks from './src/remark/api-links.mjs';
+import botIndex from './src/plugins/bot-index';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -66,6 +67,9 @@ const config: Config = {
             } satisfies Preset.Options,
         ],
     ],
+
+    // Writes build/bot/*.json for the Discord bot (bot/).
+    plugins: [botIndex],
 
     themes: [
         [
@@ -149,6 +153,7 @@ const config: Config = {
                     title: 'Community',
                     items: [
                         {label: 'Discord', href: discord},
+                        {label: 'Discord bot', to: '/help/discord-bot'},
                         {label: 'GitHub', href: 'https://github.com/ModdingTavern'},
                     ],
                 },

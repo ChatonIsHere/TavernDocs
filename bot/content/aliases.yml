@@ -1,0 +1,20 @@
+# Words people use that the docs say differently. Every search tries these too.
+# Left: what someone might type (lowercase). Right: one or more things it also means.
+# Keep it to real shorthand people use; the search already copes with typos and partial words.
+
+aliases:
+    mm: [mod manager, managing mods]
+    ml: [melonloader]
+    melon: [melonloader]
+    tl: [tavernlib]
+    te: [tavernessentials, tavern essentials]
+    att: [a township tale]
+    srv: [srv records, join by name]
+    rcon: [console]
+    port forward: [ports]
+    portforward: [ports]
+    whitelist: [players roles and whitelist]
+    ban: [players]
+    admin: [roles]
+    pcvr: [steamvr]
+    linux: [wine, docker]
