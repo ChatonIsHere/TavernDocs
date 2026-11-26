@@ -1,0 +1,5 @@
+{
+  "label": "Networking and players",
+  "position": 3,
+  "link": { "type": "doc", "id": "mod/game-api/networking/overview" }
+}

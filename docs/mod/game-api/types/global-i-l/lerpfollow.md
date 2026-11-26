@@ -1,0 +1,55 @@
+---
+title: "LerpFollow"
+description: "Smoothly moves this object toward a target Transform's position."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LerpFollow
+
+A **class** in `Root.Township`, the global namespace.
+
+Smoothly moves this object toward a target `Transform`'s position. The movement is in `LerpFollowBase`.
+
+- **Listed in** [Global namespace: I to L](/mod/game-api/types/global-i-l)
+- **Inherits or implements** [`LerpFollowBase<Transform>`](/mod/game-api/types/global-i-l/lerpfollowbase-t)
+- **Derived types** [`PooledLerpFollow`](/mod/game-api/types/global-p/pooledlerpfollow), [`TrailRendererLerpFollow`](/mod/game-api/types/global-t-x/trailrendererlerpfollow)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LerpFollow()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+
+## Fields
+
+<details>
+<summary>1 private and internal field</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target" /><code>{"private Transform target"}</code> | Backing field for `Target`. |
+
+</details>
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target-2" /><code>{"override Transform Target { get; }"}</code> | The transform being followed. |
+| <Link id="m-targetposition" /><code>{"protected override Vector3 TargetPosition { get; }"}</code> | The target's world position. |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settarget" /><code>{"override void SetTarget(Transform target)"}</code> | Sets the transform to follow. |
+
+## Used in
+
+Members of other types that take, return or hold a `LerpFollow`:
+
+[`CharacterLocalityController.voiceChatFollow`](/mod/game-api/types/alta-player/characterlocalitycontroller#m-voicechatfollow), [`TrailLerper.lerpers`](/mod/game-api/types/global-t-x/traillerper#m-lerpers).

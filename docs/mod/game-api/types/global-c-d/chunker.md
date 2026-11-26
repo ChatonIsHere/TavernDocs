@@ -1,0 +1,92 @@
+---
+title: "Chunker"
+description: "Tracks which chunk a network entity is in, its chunking parent and children, and which players it is spawned for."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# Chunker
+
+A **class** in `Root.Township`, the global namespace.
+
+Tracks which chunk a network entity is in, its chunking parent and children, and which players it is spawned for. Every `NetworkEntity` has one; you usually use the entity's own chunk members instead.
+
+- **Listed in** [Global namespace: C to D](/mod/game-api/types/global-c-d)
+- **Inherits or implements** [`IChunker`](/mod/game-api/types/global-i-l/ichunker)
+- **Documented in** [Chunks](/mod/game-api/world/chunks#chunker-how-an-entity-belongs-to-a-chunk)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Chunker("}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" networkEntity)"}</code> | Creates a `Chunker` from `networkEntity`. |
+
+## Fields
+
+<details>
+<summary>6 private and internal fields</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-children" /><code>{"private readonly HashSet<"}<Link to="/mod/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{"> children"}</code> | Chunkers parented to this one. They follow this chunker into whatever chunk it moves to. |
+| <Link id="m-chunkedentity" /><code>{"private readonly "}<Link to="/mod/game-api/types/alta-networking/ichunkedentity">{"IChunkedEntity"}</Link>{" chunkedEntity"}</code> | The entity as `IChunkedEntity`, told when its parent changes. |
+| <Link id="m-despawningfor" /><code>{"private readonly HashSet<"}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{"> despawningFor"}</code> | Players whose despawn is waiting on a chunk move; finished in `SetChunkInternal`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-parent" /><code>{"private "}<Link to="/mod/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" parent"}</code> | Backing field for `Parent`. |
+| <Link id="m-spawningfor" /><code>{"private readonly HashSet<"}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{"> spawningFor"}</code> | Players whose spawn is waiting on a chunk move; finished in `SetChunkInternal`. |
+
+</details>
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-childcount" /><code>{"int ChildCount { get; }"}</code> | Number of chunking children. |
+| <Link id="m-children-2" /><code>{"IEnumerable<"}<Link to="/mod/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{"> Children { get; }"}</code> | Chunkers that follow this one's chunk. |
+| <Link id="m-chunk" /><code><Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; private set; }"}</code> | The chunk the entity is in, or null. |
+| <Link id="m-isserveronly" /><code>{"bool IsServerOnly { get; private set; }"}</code> | Whether the entity is kept off clients. |
+| <Link id="m-networkentity" /><code><Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" "}<Link to="/mod/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" { get; }"}</code> | The entity this chunker belongs to. |
+| <Link id="m-parent-2" /><code><Link to="/mod/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" Parent { get; private set; }"}</code> | The chunking parent; children always take the parent's chunk. |
+| <Link id="m-spawnedforplayers" /><code>{"HashSet<"}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{"> SpawnedForPlayers { get; }"}</code> | Players the entity is currently spawned for. |
+
+## Events
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enteredchunk" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" EnteredChunk"}</code> | Raised when the entity enters a chunk. |
+| <Link id="m-leftchunk" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/chunkeventhandler">{"ChunkEventHandler"}</Link>{" LeftChunk"}</code> | Raised when the entity leaves a chunk. |
+| <Link id="m-parentchanged" /><code>{"event "}<Link to="/mod/game-api/types/global-c-d/chunkerchangedhandler">{"ChunkerChangedHandler"}</Link>{" ParentChanged"}</code> | Raised with the old and new parent when it changes. |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-editorevaluatechunk" /><code>{"void EditorEvaluateChunk("}<Link to="/mod/game-api/types/alta-world/fastchunklookup">{"FastChunkLookup"}</Link>{" chunkLookup)"}</code> | Editor: puts a root prefab entity into the chunk containing its position. |
+| <Link id="m-evaluatechunk" /><code>{"void EvaluateChunk()"}</code> | Server: moves a root entity to the chunk holding its position. Still chunkless on the next check, it is unloaded (player-held pickups go to their postbox). |
+| <Link id="m-evaluatechunk-2" /><code>{"void EvaluateChunk(bool isLoggingOnFailure)"}</code> | Server: moves a root entity to the chunk holding its position. Still chunkless on the next check, it is unloaded (player-held pickups go to their postbox). |
+| <Link id="m-setchunk" /><code>{"void SetChunk("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> | Moves the entity (and its children) to a chunk. On the server this is ignored for entities with a chunking parent. |
+| <Link id="m-setparent" /><code>{"void SetParent("}<Link to="/mod/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" target, bool isDestroying = false)"}</code> | Sets the chunking parent (null to clear) and moves to its chunk. |
+| <Link id="m-setserveronly" /><code>{"void SetServerOnly(bool isServerOnly)"}</code> | Hides the entity from every player, or spawns it for the players in its chunk again. |
+
+<details>
+<summary>6 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enddespawn" /><code>{"private void IChunker.EndDespawn("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isUnloading, bool isChunkSync)"}</code> | Explicit `IChunker` method: sends the entity destroyed message to the player for prefab entities. |
+| <Link id="m-endspawn" /><code>{"private void IChunker.EndSpawn("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" target, bool isChunkSync)"}</code> | Explicit `IChunker` method: sends the initial serialization for serialized entities and runs `OnConnected` for the player. |
+| <Link id="m-posttoplayer" /><code>{"private async void PostToPlayer("}<Link to="/mod/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" oldChunk, Vector3 position, int playerId)"}</code> | Pushes the entity into the postbox of the player who last held it, used when it falls out of every chunk. |
+| <Link id="m-setchunkinternal" /><code>{"private void SetChunkInternal("}<Link to="/mod/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> | Moves the entity and its child chunkers to a chunk, finishes pending spawns and despawns, and fires `EnteredChunk` and `LeftChunk`. |
+| <Link id="m-startdespawn" /><code>{"private bool IChunker.StartDespawn("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> | Explicit `IChunker` method: removes the player from `SpawnedForPlayers` and runs `OnDisconnected` on the entity. |
+| <Link id="m-startspawn" /><code>{"private bool IChunker.StartSpawn("}<Link to="/mod/game-api/types/global-p/player">{"Player"}</Link>{" target, bool hasMovedChunks, bool isChunkSync)"}</code> | Explicit `IChunker` method: adds the player to `SpawnedForPlayers` and sends the spawn message for prefab entities. |
+
+</details>
+
+## Used in
+
+Members of other types that take, return or hold a `Chunker`:
+
+[`EntitySerializer.chunker`](/mod/game-api/types/alta-networking/entityserializer#m-chunker), [`IChunkedEntity.Chunker`](/mod/game-api/types/alta-networking/ichunkedentity#m-chunker), [`NetworkEntity.Alta.Networking.IChunkedEntity.Chunker`](/mod/game-api/types/alta-networking/networkentity#m-alta-networking-ichunkedentity-chunker), [`NetworkEntity.chunker`](/mod/game-api/types/alta-networking/networkentity#m-chunker), [`NetworkEntity.Chunker`](/mod/game-api/types/alta-networking/networkentity#m-chunker-2), [`NetworkPrefab.AccumulateChildPrefabs`](/mod/game-api/types/alta-networking/networkprefab#m-accumulatechildprefabs), [`ChunkDetector.chunker`](/mod/game-api/types/global-c-d/chunkdetector#m-chunker), [`ChunkDetector.StartCheckingForChunkChange`](/mod/game-api/types/global-c-d/chunkdetector#m-startcheckingforchunkchange), [`ChunkerChangedHandler.BeginInvoke`](/mod/game-api/types/global-c-d/chunkerchangedhandler#m-begininvoke), [`ChunkerChangedHandler.Invoke`](/mod/game-api/types/global-c-d/chunkerchangedhandler#m-invoke), [`IChunker.Children`](/mod/game-api/types/global-i-l/ichunker#m-children), [`IChunker.Parent`](/mod/game-api/types/global-i-l/ichunker#m-parent).

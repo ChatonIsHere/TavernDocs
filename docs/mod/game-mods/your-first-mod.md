@@ -136,8 +136,8 @@ public static bool IsServer { get; } =
 
 ## Next
 
-- Patch the game with Harmony. The [Harmony docs](https://harmony.pardeike.net/articles/intro.html) cover it, and MelonLoader applies `[HarmonyPatch]` classes in your mod for you. [Harmony in A Township Tale](../../game-api/patching/harmony.md) covers what's different in this game, and [Known patch points](../../game-api/patching/known-patch-points.md) lists methods other mods already patch.
-- Find your way around the game's code: [Game API](../../game-api/overview.md).
+- Patch the game with Harmony. The [Harmony docs](https://harmony.pardeike.net/articles/intro.html) cover it, and MelonLoader applies `[HarmonyPatch]` classes in your mod for you. [Harmony in A Township Tale](../game-api/patching/harmony.md) covers what's different in this game, and [Known patch points](../game-api/patching/known-patch-points.md) lists methods other mods already patch.
+- Find your way around the game's code: [Game API](../game-api/overview.md).
 - Give it settings players can change: [Mod settings](mod-settings.md).
 - Build it on GitHub and release it: [Building on GitHub](building-on-github.md).
 

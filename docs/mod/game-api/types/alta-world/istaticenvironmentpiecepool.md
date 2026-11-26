@@ -1,0 +1,24 @@
+---
+title: "IStaticEnvironmentPiecePool"
+description: "Pool that static environment piece instances go back to."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# IStaticEnvironmentPiecePool
+
+An **interface** in `Root.Township`, `Alta.Static`.
+
+Pool that static environment piece instances go back to. `StaticEnvironmentPiece` implements it.
+
+- **Listed in** [World, chunks and saving](/mod/game-api/types/alta-world)
+- **Derived types** [`StaticEnvironmentPiece`](/mod/game-api/types/alta-world/staticenvironmentpiece)
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-release" /><code>{"void Release("}<Link to="/mod/game-api/types/alta-world/staticenvironmentpieceinstance">{"StaticEnvironmentPieceInstance"}</Link>{" instance)"}</code> | Returns an instance to the pool. |

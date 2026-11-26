@@ -1,0 +1,25 @@
+---
+title: "ServerCubeMaps.Create"
+description: "Editor menu entry for creating a ServerCubeMaps asset under the Township meta create menu."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ServerCubeMaps.Create
+
+A **class** in `Root.Township`, the global namespace.
+
+Editor menu entry for creating a `ServerCubeMaps` asset under the Township meta create menu.
+
+- **Listed in** [Global namespace: S](/mod/game-api/types/global-s)
+- **Nested in** [`ServerCubeMaps`](/mod/game-api/types/global-s/servercubemaps)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Meta.ScriptableObject<ServerCubeMaps>`](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-meta-scriptableobject-t)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ServerCubeMaps.Create` with default values. |

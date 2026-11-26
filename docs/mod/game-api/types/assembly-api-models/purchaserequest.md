@@ -1,0 +1,30 @@
+---
+title: "PurchaseRequest"
+description: "Base request body for a purchase: which saved payment method to charge."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PurchaseRequest
+
+A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Base request body for a purchase: which saved payment method to charge.
+
+- **Listed in** [Alta.Api.DataTransferModels](/mod/game-api/types/assembly-api-models)
+- **Derived types** [`ItemPurchaseRequest`](/mod/game-api/types/assembly-api-models/itempurchaserequest), [`VirtualCurrencyPurchaseRequest`](/mod/game-api/types/assembly-api-models/virtualcurrencypurchaserequest)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> | Creates a `PurchaseRequest` with default values. |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-paymentmethodidentifier" /><code>{"int PaymentMethodIdentifier { get; set; }"}</code> | Id of the payment method, sent as `payment_method_id`. |

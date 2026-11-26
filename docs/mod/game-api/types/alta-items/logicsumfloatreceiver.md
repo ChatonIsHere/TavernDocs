@@ -1,0 +1,54 @@
+---
+title: "LogicSumFloatReceiver"
+description: "Logic receiver that adds up any number of float inputs and outputs the total."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LogicSumFloatReceiver
+
+A **class** in `Root.Township`, `Alta.Logic`.
+
+Logic receiver that adds up any number of float inputs and outputs the total. Runs on the server and saves its inputs.
+
+- **Listed in** [Items, inventory and logic](/mod/game-api/types/alta-items)
+- **Inherits or implements** [`LogicValueReceiverArray<FloatSenderInput>`](/mod/game-api/types/alta-items/logicvaluereceiverarray-tsenderinput), [`ISavable<LogicSumFloatSaveData>`](/mod/game-api/types/global-i-l/isavable-t), [`ISavableSave<LogicSumFloatSaveData>`](/mod/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/mod/game-api/types/alta-world/isavablesavebase)
+- **Derived types** [`LogicSumFloatSaveData`](/mod/game-api/types/alta-items/logicsumfloatsavedata)
+- **Documented in** [Other systems](/mod/game-api/game-systems/other-systems)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicSumFloatReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+
+## Fields
+
+<details>
+<summary>2 private and internal fields</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentvalue" /><code>{"private float currentValue"}</code> | Last total sent. |
+| <Link id="m-onvalueupdated" /><code>{"private "}<Link to="/mod/game-api/types/global-e-h/floatunityevent">{"FloatUnityEvent"}</Link>{" onValueUpdated"}</code> | Unity event fired with the new total. |
+
+</details>
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializeasserver" /><code>{"override void InitializeAsServer("}<Link to="/mod/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Server: works out the starting total and fires `onValueUpdated` with it. |
+| <Link id="m-valueupdated" /><code>{"protected override void ValueUpdated()"}</code> | When an input changes, fires `onValueUpdated` if the total changed. |
+
+<details>
+<summary>1 private and internal method</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getvalue" /><code>{"private float GetValue()"}</code> | Adds up all input values. |
+
+</details>

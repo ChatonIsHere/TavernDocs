@@ -1,0 +1,30 @@
+---
+title: "LogoutRequest"
+description: "Request body for logging out, which hands back the refresh token."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LogoutRequest
+
+A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Request body for logging out, which hands back the refresh token.
+
+- **Listed in** [Alta.Api.DataTransferModels](/mod/game-api/types/assembly-api-models)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogoutRequest()"}</code> | Creates a `LogoutRequest` from `refreshToken`. |
+| <Link id="m-ctor-2" /><code>{"LogoutRequest(JwtSecurityToken refreshToken)"}</code> | Creates a `LogoutRequest` from `refreshToken`. |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-refreshtoken" /><code>{"string RefreshToken { get; private set; }"}</code> | The refresh token as an encoded string. |

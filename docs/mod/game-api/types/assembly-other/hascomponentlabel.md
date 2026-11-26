@@ -1,0 +1,31 @@
+---
+title: "HasComponentLabel"
+description: "Conditional label attribute that picks one of two labels (and default values) based on whether the object has a given component."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# HasComponentLabel
+
+A **class** in `Alta.Attributes`, the global namespace.
+
+Conditional label attribute that picks one of two labels (and default values) based on whether the object has a given component.
+
+- **Listed in** [Other Alta assemblies](/mod/game-api/types/assembly-other)
+- **Inherits or implements** [`ConditionalLabeling`](/mod/game-api/types/assembly-other/conditionallabeling)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
+| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-componenttype" /><code>{"Type ComponentType { get; private set; }"}</code> | The component type to look for. |

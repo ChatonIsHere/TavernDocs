@@ -1,0 +1,25 @@
+---
+title: "LODChange.Create"
+description: "Editor menu entry that creates a LODChange debug asset."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LODChange.Create
+
+A **class** in `Root.Township`, the global namespace.
+
+Editor menu entry that creates a `LODChange` debug asset.
+
+- **Listed in** [Global namespace: I to L](/mod/game-api/types/global-i-l)
+- **Nested in** [`LODChange`](/mod/game-api/types/global-i-l/lodchange)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject<LODChange>`](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-debug-scriptableobject-t)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `LODChange.Create` with default values. |

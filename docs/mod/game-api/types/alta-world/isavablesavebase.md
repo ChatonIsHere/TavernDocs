@@ -1,0 +1,30 @@
+---
+title: "ISavableSaveBase"
+description: "Marker base for components the saving system can save."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ISavableSaveBase
+
+An **interface** in `Root.Township`, `Alta.Saving`.
+
+Marker base for components the saving system can save. The saving system finds them with `GetComponents` on each entity; implement `ISavable<T>` rather than this.
+
+- **Listed in** [World, chunks and saving](/mod/game-api/types/alta-world)
+- **Derived types** [`AdditionalStaticContent`](/mod/game-api/types/global-a-b/additionalstaticcontent), [`Recycler`](/mod/game-api/types/alta-crafting/recycler), [`Smelter`](/mod/game-api/types/alta-crafting/smelter), [`ChisellingDeck`](/mod/game-api/types/alta-crafting/chisellingdeck), [`CaveLayerManager`](/mod/game-api/types/alta-world-generation/cavelayermanager), [`CaveTeleporter`](/mod/game-api/types/alta-world-generation/caveteleporter), [`CaveTeleporterManager`](/mod/game-api/types/alta-world-generation/caveteleportermanager), [`CaveLayerStreamer`](/mod/game-api/types/alta-world/cavelayerstreamer), [`CylindricalBoundsSurface`](/mod/game-api/types/alta-world/cylindricalboundssurface), [`DirectionalBoundsSurface`](/mod/game-api/types/alta-world/directionalboundssurface), [`ISavableFull<T>`](/mod/game-api/types/alta-world/isavablefull-t), [`SphericalSurface`](/mod/game-api/types/alta-world/sphericalsurface), [`Cookable`](/mod/game-api/types/alta-crafting/cookable), [`CookingPot`](/mod/game-api/types/alta-crafting/cookingpot), [`StewManager`](/mod/game-api/types/alta-crafting/stewmanager), [`GenericAssemblyStation`](/mod/game-api/types/alta-crafting/genericassemblystation), [`GenericCraftingStation`](/mod/game-api/types/alta-crafting/genericcraftingstation), [`Enchantable`](/mod/game-api/types/alta-crafting/enchantable), [`ForestGenerator`](/mod/game-api/types/alta-world-generation/forestgenerator), [`Fire`](/mod/game-api/types/alta-stats-effects/fire), [`HeatSourceBase`](/mod/game-api/types/alta-stats-effects/heatsourcebase), [`CommunalStorage`](/mod/game-api/types/alta-items/communalstorage), [`LockableHinge`](/mod/game-api/types/alta-items/lockablehinge), [`PickupDock`](/mod/game-api/types/alta-items/pickupdock), [`LiquidContainer`](/mod/game-api/types/alta-stats-effects/liquidcontainer), [`GlobalLogicManager`](/mod/game-api/types/alta-items/globallogicmanager), [`LogicBoolReceiver`](/mod/game-api/types/alta-items/logicboolreceiver), [`LogicFloatChangeOnBool`](/mod/game-api/types/alta-items/logicfloatchangeonbool), [`LogicFloatRangeReceiver`](/mod/game-api/types/alta-items/logicfloatrangereceiver), [`LogicFloatReceiver`](/mod/game-api/types/alta-items/logicfloatreceiver), [`LogicFloatReset`](/mod/game-api/types/alta-items/logicfloatreset), [`LogicFloatThresholdReceiver`](/mod/game-api/types/alta-items/logicfloatthresholdreceiver), [`LogicGateReceiver`](/mod/game-api/types/alta-items/logicgatereceiver), [`LogicIntRangeReceiver`](/mod/game-api/types/alta-items/logicintrangereceiver), [`LogicIntReceiver`](/mod/game-api/types/alta-items/logicintreceiver), [`LogicIntThresholdReceiver`](/mod/game-api/types/alta-items/logicintthresholdreceiver), [`LogicIntToBool`](/mod/game-api/types/alta-items/logicinttobool), [`LogicSumFloatReceiver`](/mod/game-api/types/alta-items/logicsumfloatreceiver), [`LogicSumIntReceiver`](/mod/game-api/types/alta-items/logicsumintreceiver), [`LogicValueSender<TData>`](/mod/game-api/types/alta-items/logicvaluesender-tdata), [`LogicVector3Receiver`](/mod/game-api/types/alta-items/logicvector3receiver), [`PositionProvider`](/mod/game-api/types/alta-items/positionprovider), [`GeneratedLoot`](/mod/game-api/types/alta-world-generation/generatedloot), [`LootModule`](/mod/game-api/types/alta-world-generation/lootmodule), [`PresetLootModule`](/mod/game-api/types/alta-world-generation/presetlootmodule), [`InfoBoard`](/mod/game-api/types/alta-world/infoboard), [`Landmark`](/mod/game-api/types/alta-world/landmark), [`LandmarkDiscoverZone`](/mod/game-api/types/alta-world/landmarkdiscoverzone), [`LandmarkManager`](/mod/game-api/types/alta-world/landmarkmanager), [`MapBoard`](/mod/game-api/types/alta-world/mapboard), [`ModifiableStaticManager`](/mod/game-api/types/alta-networking/modifiablestaticmanager), [`NetworkRigidbody`](/mod/game-api/types/alta-networking/networkrigidbody), [`Book`](/mod/game-api/types/alta-items/book), [`BookRestrictor`](/mod/game-api/types/alta-items/bookrestrictor), [`GlobalPagesManager`](/mod/game-api/types/alta-items/globalpagesmanager), [`PageInstance`](/mod/game-api/types/alta-items/pageinstance), [`PositionRestrictor`](/mod/game-api/types/alta-items/positionrestrictor), [`BasicPopulationFolder`](/mod/game-api/types/alta-world-generation/basicpopulationfolder), [`Ecosystem`](/mod/game-api/types/alta-world-generation/ecosystem), [`GlobalPopulationsManager`](/mod/game-api/types/alta-world-generation/globalpopulationsmanager) and 100 more
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string name { get; }"}</code> | The object's name, used in save error logs. A `MonoBehaviour` already provides it. |
+
+## Used in
+
+Members of other types that take, return or hold a `ISavableSaveBase`:
+
+[`SavableCache.DeregisterAdditional`](/mod/game-api/types/alta-world/savablecache#m-deregisteradditional), [`SavableCache.GetFor`](/mod/game-api/types/alta-world/savablecache#m-getfor), [`SavableCache.RegisterAdditional`](/mod/game-api/types/alta-world/savablecache#m-registeradditional), [`SavableCache.savablesPerEntity`](/mod/game-api/types/alta-world/savablecache#m-savablesperentity), [`SavableCache.ToList`](/mod/game-api/types/alta-world/savablecache#m-tolist), [`SavingSystem.Load`](/mod/game-api/types/alta-world/savingsystem#m-load-3), [`SavingSystem.Read`](/mod/game-api/types/alta-world/savingsystem#m-read), [`SavingSystem.Serialize`](/mod/game-api/types/alta-world/savingsystem#m-serialize-2), [`SavingSystem.Write`](/mod/game-api/types/alta-world/savingsystem#m-write).

@@ -1,0 +1,37 @@
+---
+title: "MarchingCubes.Triangle"
+description: "A triangle produced by Polygonise."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# MarchingCubes.Triangle
+
+A **class** in `Root.Township`, the global namespace.
+
+A triangle produced by `Polygonise`.
+
+- **Listed in** [Global namespace: M to O](/mod/game-api/types/global-m-o)
+- **Nested in** [`MarchingCubes`](/mod/game-api/types/global-m-o/marchingcubes)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Triangle()"}</code> | Creates a `MarchingCubes.Triangle` with default values. |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-point4s" /><code><Link to="/mod/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{"[] point4s"}</code> | Edge key for each vertex (cell coordinate plus edge), so cave meshes can share vertices. |
+| <Link id="m-points" /><code>{"Vector3[] points"}</code> | The three vertex positions. |
+
+## Used in
+
+Members of other types that take, return or hold a `Triangle`:
+
+[`MarchingCubes.Polygonise`](/mod/game-api/types/global-m-o/marchingcubes#m-polygonise).

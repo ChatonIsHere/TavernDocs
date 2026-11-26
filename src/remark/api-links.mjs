@@ -6,7 +6,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const SECTIONS = /[\\/]docs[\\/](game-api|tavernlib-api|mod)[\\/]/;
+const SECTIONS = /[\\/]docs[\\/]mod[\\/]/;
 // Game type names that usually mean the .NET or Unity type of the same name in prose.
 const STOP = new Set(['Action', 'Func', 'Path', 'Random', 'Debug', 'Object', 'Time', 'Settings', 'Status', 'Logger', 'File',
     'Directory', 'Color', 'Transform', 'Component', 'Camera', 'Light', 'Animation', 'Collider', 'Rigidbody', 'Event', 'Timer',
@@ -14,7 +14,7 @@ const STOP = new Set(['Action', 'Func', 'Path', 'Random', 'Debug', 'Object', 'Ti
 
 // game.json and tavernlib.json share a few simple names (ServerSettings). TavernLib's pages prefer
 // TavernLib's types, every other page the game's.
-const TAVERNLIB_PAGES = /[\\/]docs[\\/](tavernlib-api|mod[\\/]tavernlib)[\\/]/;
+const TAVERNLIB_PAGES = /[\\/]docs[\\/]mod[\\/](tavernlib-api|tavernlib)[\\/]/;
 const indexes = {};
 let index;
 function readIndex(name) {

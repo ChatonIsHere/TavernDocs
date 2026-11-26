@@ -7,7 +7,7 @@ description: Check a player's roles from your mod, and react when they change.
 
 Hosts give players roles in `users.json`, with the Server launcher's **Edit Roles** or by hand (see [Roles](../../host/config-reference.md#roles)). Your mod can read them, so you can make a command for moderators only, or a feature for supporters.
 
-`Roles` only works on the server. On a client every call gives an empty list. A client can read its own roles, as the server sent them, from TavernLib's `EntranceMessageHandler`: see [On the client](../../tavernlib-api/roles.md#on-the-client).
+`Roles` only works on the server. On a client every call gives an empty list. A client can read its own roles, as the server sent them, from TavernLib's `EntranceMessageHandler`: see [On the client](../tavernlib-api/roles.md#on-the-client).
 
 ## Checking a role
 
@@ -54,4 +54,4 @@ Catch your own exceptions in the handler. TavernLib logs one that escapes, but i
 
 Some things only change when the player rejoins: Fly mode access, and the `dev`, `mod` and `supporter` status in the game.
 
-The full details are in the [Roles reference](../../tavernlib-api/roles.md).
+The full details are in the [Roles reference](../tavernlib-api/roles.md).

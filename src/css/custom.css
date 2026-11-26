@@ -240,3 +240,27 @@ html.docs-wrapper main .container {
     padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
     vertical-align: middle;
 }
+
+/* Type index: every type as one link, in columns, with its namespace after it in muted text. */
+.type-index ul {
+    columns: 18rem auto;
+    column-gap: 2rem;
+    padding-left: 0;
+    list-style: none;
+}
+.type-index li {
+    break-inside: avoid;
+    margin: 0 0 0.2rem;
+    overflow-wrap: anywhere;
+}
+.type-index li span {
+    color: var(--tavern-muted-foreground);
+    font-size: 0.875rem;
+    margin-left: 0.4rem;
+}
+.type-index-letters p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.9rem;
+    font-size: 1.125rem;
+}

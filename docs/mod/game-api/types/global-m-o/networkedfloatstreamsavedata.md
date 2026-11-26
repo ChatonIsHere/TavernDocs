@@ -1,0 +1,32 @@
+---
+title: "NetworkedFloatStreamSaveData"
+description: "Save data (version 1) for NetworkedFloatStream."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# NetworkedFloatStreamSaveData
+
+A **class** in `Root.Township`, the global namespace.
+
+Save data (version 1) for `NetworkedFloatStream`.
+
+- **Listed in** [Global namespace: M to O](/mod/game-api/types/global-m-o)
+- **Inherits or implements** [`NewSaveData<NetworkedFloatStream, NetworkedFloatStreamSaveData>`](/mod/game-api/types/global-m-o/newsavedata-tsavable-tdata)
+- **Derived types** [`NetworkedFloatStream`](/mod/game-api/types/global-m-o/networkedfloatstream), [`NetworkedFloatStreamSaveData`](/mod/game-api/types/global-m-o/networkedfloatstreamsavedata)
+- **Attributes** `SaveStructure`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> | Creates a `NetworkedFloatStreamSaveData` with default values. |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-value" /><code>{"float value"}</code> | Saved value. |

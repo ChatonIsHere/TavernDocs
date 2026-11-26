@@ -1,0 +1,32 @@
+---
+title: "XsollaEvent"
+description: "Obsolete analytics event names (signup, login, logout)."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# XsollaEvent
+
+An **enum** in `Root.Township`, the global namespace.
+
+Obsolete analytics event names (signup, login, logout). Marked to use the new analytics system instead.
+
+- **Listed in** [Global namespace: T to X](/mod/game-api/types/global-t-x)
+- **Attributes** `Obsolete`
+
+## Values
+
+| Member |
+| --- |
+| <Link id="m-login" /><code>{"login = 1"}</code> |
+| <Link id="m-logout" /><code>{"logout = 2"}</code> |
+| <Link id="m-signup" /><code>{"signup = 0"}</code> |
+
+## Used in
+
+Members of other types that take, return or hold a `XsollaEvent`:
+
+[`JsonEvent.JsonEvent`](/mod/game-api/types/global-i-l/jsonevent#m-ctor).

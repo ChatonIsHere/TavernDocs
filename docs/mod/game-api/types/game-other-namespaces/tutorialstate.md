@@ -1,0 +1,31 @@
+---
+title: "TutorialState"
+description: "Where a micro tutorial is: inactive, started or completed."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# TutorialState
+
+An **enum** in `Root.Township`, `ATT.MicroTutorial`.
+
+Where a micro tutorial is: inactive, started or completed. Included in micro tutorial analytics.
+
+- **Listed in** [ATT, Features and other game namespaces](/mod/game-api/types/game-other-namespaces)
+
+## Values
+
+| Member |
+| --- |
+| <Link id="m-completed" /><code>{"Completed = 2"}</code> |
+| <Link id="m-inactive" /><code>{"Inactive = 0"}</code> |
+| <Link id="m-started" /><code>{"Started = 1"}</code> |
+
+## Used in
+
+Members of other types that take, return or hold a `TutorialState`:
+
+[`IMicroTutorial.State`](/mod/game-api/types/game-other-namespaces/imicrotutorial#m-state), [`MicroTutorial.State`](/mod/game-api/types/game-other-namespaces/microtutorial#m-state).

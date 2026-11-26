@@ -1,0 +1,31 @@
+---
+title: "IAnalyticsService"
+description: "The game's analytics event bus."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# IAnalyticsService
+
+An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
+
+The game's analytics event bus. Listeners (dispatchers) receive each event's data.
+
+- **Listed in** [Other Alta assemblies](/mod/game-api/types/assembly-other)
+- **Inherits or implements** [`IEventSource<IReadonlyAnalyticsData>`](/mod/game-api/types/assembly-other/ieventsource-t)
+- **Derived types** [`AnalyticsService`](/mod/game-api/types/assembly-other/analyticsservice)
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-send" /><code>{"void Send("}<Link to="/mod/game-api/types/assembly-other/ianalyticsevent">{"IAnalyticsEvent"}</Link>{" analyticsEvent)"}</code> | Fills in the event's injected data and sends it to every listener. |
+
+## Used in
+
+Members of other types that take, return or hold a `IAnalyticsService`:
+
+[`AbstractAnalyticsDispatcher.AbstractAnalyticsDispatcher`](/mod/game-api/types/assembly-other/abstractanalyticsdispatcher#m-ctor), [`AbstractAnalyticsDispatcher.analyticsService`](/mod/game-api/types/assembly-other/abstractanalyticsdispatcher#m-analyticsservice), [`UserSettingsAnalyticsReporter.analyticsService`](/mod/game-api/types/alta-console/usersettingsanalyticsreporter#m-analyticsservice), [`UserSettingsAnalyticsReporter.UserSettingsAnalyticsReporter`](/mod/game-api/types/alta-console/usersettingsanalyticsreporter#m-ctor), [`UserSettingsReport.PostReport`](/mod/game-api/types/alta-console/usersettingsreport#m-postreport), [`FriendsManager.analyticsService`](/mod/game-api/types/alta-menus/friendsmanager#m-analyticsservice), [`FriendsManager.Inject`](/mod/game-api/types/alta-menus/friendsmanager#m-inject), [`FriendRequestNotification.analyticsService`](/mod/game-api/types/alta-menus/friendrequestnotification#m-analyticsservice), [`FriendRequestNotification.FriendRequestNotification`](/mod/game-api/types/alta-menus/friendrequestnotification#m-ctor), [`FriendsInvitesPanel.analyticsService`](/mod/game-api/types/alta-menus/friendsinvitespanel#m-analyticsservice), [`FriendsInvitesPanel.Inject`](/mod/game-api/types/alta-menus/friendsinvitespanel#m-inject), [`FriendsListPanel.analyticsService`](/mod/game-api/types/alta-menus/friendslistpanel#m-analyticsservice), [`FriendsListPanel.Inject`](/mod/game-api/types/alta-menus/friendslistpanel#m-inject), [`FriendsRequestsPanel.analyticsService`](/mod/game-api/types/alta-menus/friendsrequestspanel#m-analyticsservice), [`FriendsRequestsPanel.Inject`](/mod/game-api/types/alta-menus/friendsrequestspanel#m-inject), [`GroupMembersPage.analyticsService`](/mod/game-api/types/alta-menus/groupmemberspage#m-analyticsservice), [`GroupMembersPage.Inject`](/mod/game-api/types/alta-menus/groupmemberspage#m-inject), [`InboxPanel.analyticsService`](/mod/game-api/types/alta-menus/inboxpanel#m-analyticsservice), [`InboxPanel.Inject`](/mod/game-api/types/alta-menus/inboxpanel#m-inject), [`OculusFriendsListPanel.analyticsService`](/mod/game-api/types/alta-menus/oculusfriendslistpanel#m-analyticsservice), [`OculusFriendsListPanel.Inject`](/mod/game-api/types/alta-menus/oculusfriendslistpanel#m-inject), [`PlayerReportBaseNotification.analyticsService`](/mod/game-api/types/alta-menus/playerreportbasenotification#m-analyticsservice), [`PlayerReportBaseNotification.PlayerReportBaseNotification`](/mod/game-api/types/alta-menus/playerreportbasenotification#m-ctor), [`PlayerReportNotification.PlayerReportNotification`](/mod/game-api/types/alta-menus/playerreportnotification#m-ctor), [`PlayerReportSummaryNotification.PlayerReportSummaryNotification`](/mod/game-api/types/alta-menus/playerreportsummarynotification#m-ctor), [`RecentPlayersListPanel.analyticsService`](/mod/game-api/types/alta-menus/recentplayerslistpanel#m-analyticsservice), [`RecentPlayersListPanel.Inject`](/mod/game-api/types/alta-menus/recentplayerslistpanel#m-inject), [`ReportsPanel.analyticsService`](/mod/game-api/types/alta-menus/reportspanel#m-analyticsservice), [`ReportsPanel.Inject`](/mod/game-api/types/alta-menus/reportspanel#m-inject), [`AltaAnalyticsDispatcher.AltaAnalyticsDispatcher`](/mod/game-api/types/game-other-namespaces/altaanalyticsdispatcher#m-ctor), [`MicroTutorialSystem.Inject`](/mod/game-api/types/game-other-namespaces/microtutorialsystem#m-inject), [`ServerController.analyticsService`](/mod/game-api/types/game-other-namespaces/servercontroller#m-analyticsservice), [`ServerController.ServerController`](/mod/game-api/types/game-other-namespaces/servercontroller#m-ctor), [`PlayerUnlockAnalytics.analyticsService`](/mod/game-api/types/game-other-namespaces/playerunlockanalytics#m-analyticsservice), [`PlayerUnlockAnalytics.PlayerUnlockAnalytics`](/mod/game-api/types/game-other-namespaces/playerunlockanalytics#m-ctor), [`ZoneAnalyticsTriggerEvent.analyticsService`](/mod/game-api/types/game-other-namespaces/zoneanalyticstriggerevent#m-analyticsservice), [`ZoneAnalyticsTriggerEvent.Inject`](/mod/game-api/types/game-other-namespaces/zoneanalyticstriggerevent#m-inject), [`ClimbingHandlerAnalytics.analyticsService`](/mod/game-api/types/game-other-namespaces/climbinghandleranalytics#m-analyticsservice), [`ClimbingHandlerAnalytics.Inject`](/mod/game-api/types/game-other-namespaces/climbinghandleranalytics#m-inject), [`FriendRequestToken.analyticsService`](/mod/game-api/types/global-e-h/friendrequesttoken#m-analyticsservice), [`FriendRequestToken.Inject`](/mod/game-api/types/global-e-h/friendrequesttoken#m-inject), [`PlayerUnlockManager.analyticsService`](/mod/game-api/types/global-p/playerunlockmanager#m-analyticsservice), [`PlayerUnlockManager.Inject`](/mod/game-api/types/global-p/playerunlockmanager#m-inject), [`PlayerUnlockStation.analyticsService`](/mod/game-api/types/global-p/playerunlockstation#m-analyticsservice), [`PlayerUnlockStation.Inject`](/mod/game-api/types/global-p/playerunlockstation#m-inject), [`RecentPlayerActionPage.analyticsService`](/mod/game-api/types/global-q-r/recentplayeractionpage#m-analyticsservice), [`RecentPlayerActionPage.Inject`](/mod/game-api/types/global-q-r/recentplayeractionpage#m-inject).

@@ -1,0 +1,25 @@
+---
+title: "FloatSenderInput"
+description: "A serialized link from a logic receiver to a LogicFloatSender."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# FloatSenderInput
+
+A **class** in `Root.Township`, `Alta.Logic`.
+
+A serialized link from a logic receiver to a `LogicFloatSender`.
+
+- **Listed in** [Items, inventory and logic](/mod/game-api/types/alta-items)
+- **Inherits or implements** [`SenderInput<LogicFloatSender, LogicFloatSaveData>`](/mod/game-api/types/alta-items/senderinput-tsender-tdata)
+- **Derived types** [`LogicFloatRangeReceiver`](/mod/game-api/types/alta-items/logicfloatrangereceiver), [`LogicFloatReceiver`](/mod/game-api/types/alta-items/logicfloatreceiver), [`LogicFloatThresholdReceiver`](/mod/game-api/types/alta-items/logicfloatthresholdreceiver), [`LogicSumFloatReceiver`](/mod/game-api/types/alta-items/logicsumfloatreceiver)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatSenderInput()"}</code> | Creates a `FloatSenderInput` with default values. |

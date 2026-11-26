@@ -1,0 +1,25 @@
+---
+title: "TemperatureCheckInputStructure.Create"
+description: "Editor menu entry for creating a TemperatureCheckInputStructure asset."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# TemperatureCheckInputStructure.Create
+
+A **class** in `Root.Township`, the global namespace.
+
+Editor menu entry for creating a `TemperatureCheckInputStructure` asset.
+
+- **Listed in** [Global namespace: T to X](/mod/game-api/types/global-t-x)
+- **Nested in** [`TemperatureCheckInputStructure`](/mod/game-api/types/global-t-x/temperaturecheckinputstructure)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<TemperatureCheckInputStructure>`](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-input-scriptableobject-t)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `TemperatureCheckInputStructure.Create` with default values. |

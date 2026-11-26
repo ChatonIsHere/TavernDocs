@@ -1,0 +1,87 @@
+---
+title: "BezierSpline"
+description: "A cubic Bezier spline component: control points in groups of three per curve, with free, aligned or mirrored handles and optional looping."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# BezierSpline
+
+A **class** in `Root.Township`, `Alta.Bezier`.
+
+A cubic Bezier spline component: control points in groups of three per curve, with free, aligned or mirrored handles and optional looping. Used by spline displays, terrain splines, forest spline instructions and some effects.
+
+- **Listed in** [Utilities and other Alta namespaces](/mod/game-api/types/alta-utilities)
+- **Inherits or implements** `MonoBehaviour`, [`IInstructionResult`](/mod/game-api/types/alta-world/iinstructionresult)
+- **Attributes** `SelectionBase`
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BezierSpline()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
+
+## Fields
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changed" /><code><Link to="/mod/game-api/types/alta-utilities/splinechangedhandler">{"SplineChangedHandler"}</Link>{" Changed"}</code> | Called whenever the spline changes. |
+
+<details>
+<summary>3 private and internal fields</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> | Backing field for `IsLooping`. |
+| <Link id="m-modes" /><code>{"private "}<Link to="/mod/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{"[] modes"}</code> | Handle mode per curve joint (free, aligned, mirrored), one more entry than there are curves. |
+| <Link id="m-points" /><code>{"private Vector3[] points"}</code> | Local-space control points: each curve uses four, sharing its end point with the next curve. |
+
+</details>
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controlpointcount" /><code>{"int ControlPointCount { get; }"}</code> | Number of control points. |
+| <Link id="m-curvecount" /><code>{"int CurveCount { get; }"}</code> | Number of curves (control points minus one, over three). |
+| <Link id="m-islooping-2" /><code>{"bool IsLooping { get; set; }"}</code> | Whether the spline closes on itself. Turning it on joins the last point to the first. |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addcurve" /><code>{"void AddCurve()"}</code> | Adds one more curve to the end, one unit apart along X, and keeps the loop closed if looping. |
+| <Link id="m-adddisplay" /><code>{"void AddDisplay(GameObject display)"}</code> | Instantiates a display prefab under the spline and generates every `SplineDisplay` in it. |
+| <Link id="m-create" /><code>{"static "}<Link to="/mod/game-api/types/alta-utilities/bezierspline">{"BezierSpline"}</Link>{" Create(params Vector3[] points)"}</code> | Creates a game object with a spline from the given points. Handle modes aren't set, so editing may fail until `Reset` (probably). |
+| <Link id="m-getcontrolpoint" /><code>{"Vector3 GetControlPoint(int index)"}</code> | A control point in local space. |
+| <Link id="m-getcontrolpointmode" /><code><Link to="/mod/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{" GetControlPointMode(int index)"}</code> | Handle mode for the control point's joint; free if unset. |
+| <Link id="m-getdirection" /><code>{"Vector3 GetDirection(float t)"}</code> | Normalized world-space direction at `t` (0 to 1 along the whole spline). |
+| <Link id="m-getpoint" /><code>{"Vector3 GetPoint(float t)"}</code> | World-space point at `t` (0 to 1 along the whole spline). |
+| <Link id="m-getpointlocal" /><code>{"Vector3 GetPointLocal(int curve, float t)"}</code> | Local-space point at `t` along the whole spline, or at `t` on one curve. |
+| <Link id="m-getpointlocal-2" /><code>{"Vector3 GetPointLocal(float t)"}</code> | Local-space point at `t` along the whole spline, or at `t` on one curve. |
+| <Link id="m-getvelocity" /><code>{"Vector3 GetVelocity(float t)"}</code> | World-space derivative at `t` along the whole spline. |
+| <Link id="m-insert" /><code>{"void Insert(int index)"}</code> | Inserts a new curve at a joint index. |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Raises `Changed`. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Resets to one straight curve along X. |
+| <Link id="m-setcontrolpoint" /><code>{"void SetControlPoint(int index, Vector3 point)"}</code> | Moves a control point; moving a joint also moves its handles, and the handle mode is enforced. |
+| <Link id="m-setcontrolpointmode" /><code>{"void SetControlPointMode(int index, "}<Link to="/mod/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{" mode)"}</code> | Sets the handle mode of a joint and enforces it. |
+
+<details>
+<summary>3 private and internal methods</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enforcemode" /><code>{"private void EnforceMode(int index)"}</code> | Moves the opposite handle of a control point so it matches the point's mode (mirrored or aligned). Free points are left alone. |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Raises `Changed`. Called after any edit to points, modes or looping. |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> | Explicit `IInstructionResult` implementation: destroys the spline's GameObject. |
+
+</details>
+
+## Used in
+
+Members of other types that take, return or hold a `BezierSpline`:
+
+[`SplineChangedHandler.BeginInvoke`](/mod/game-api/types/alta-utilities/splinechangedhandler#m-begininvoke), [`SplineChangedHandler.Invoke`](/mod/game-api/types/alta-utilities/splinechangedhandler#m-invoke), [`SplineDisplay.spline`](/mod/game-api/types/alta-utilities/splinedisplay#m-spline), [`SplineDisplay.Spline`](/mod/game-api/types/alta-utilities/splinedisplay#m-spline-2), [`SplineDisplay.SplineChanged`](/mod/game-api/types/alta-utilities/splinedisplay#m-splinechanged), [`RopePoweredElementBoard.spline`](/mod/game-api/types/global-q-r/ropepoweredelementboard#m-spline), [`ServerSelectionDisplay.spline`](/mod/game-api/types/global-s/serverselectiondisplay#m-spline), [`SkillOrbInteractionSpline.spline`](/mod/game-api/types/global-s/skillorbinteractionspline#m-spline), [`SplineParticlesPooled.Spline`](/mod/game-api/types/global-s/splineparticlespooled#m-spline), [`StatUpgradeEffect.spline`](/mod/game-api/types/global-s/statupgradeeffect#m-spline).

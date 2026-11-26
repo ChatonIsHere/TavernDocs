@@ -1,0 +1,25 @@
+---
+title: "KeyUnityEvent"
+description: "Serializable Unity event that passes a KeyItem."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# KeyUnityEvent
+
+A **class** in `Root.Township`, `Alta.Inventory`.
+
+Serializable Unity event that passes a `KeyItem`.
+
+- **Listed in** [Items, inventory and logic](/mod/game-api/types/alta-items)
+- **Inherits or implements** `UnityEvent<KeyItem>`
+- **Derived types** [`KeyItemEvent`](/mod/game-api/types/alta-items/keyitemevent)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

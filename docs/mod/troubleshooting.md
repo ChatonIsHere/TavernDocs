@@ -20,7 +20,7 @@ Check `MelonLoader\Latest.log` in the game folder first. It says what loaded and
 - **"Could not load file or assembly".** Your mod needs a DLL the game doesn't have. Make it a [library](publishing/manifest-reference.md#libraries), or for testing put it in `UserLibs`. Check you set `Private="false"` on game references, so you're not shipping your own copy of a game DLL.
 - **It loads twice.** You have a loose copy in `Mods` and an installed copy from a mod source. Remove the loose one.
 - **It works in the game but not on the server, or the other way round.** Check your [side check](tavernlib/client-server-or-both.md#telling-them-apart-in-code), and that your manifest lists both targets.
-- **Your Harmony patch never runs.** The method might be named differently in the version you're patching, or inlined. Log in `Prepare()` to check the patch is found, and read the method in a decompiler. [Harmony in A Township Tale](../game-api/patching/harmony.md) covers async methods, properties and other traps.
+- **Your Harmony patch never runs.** The method might be named differently in the version you're patching, or inlined. Log in `Prepare()` to check the patch is found, and read the method in a decompiler. [Harmony in A Township Tale](game-api/patching/harmony.md) covers async methods, properties and other traps.
 - **Your console command says "Command not found".** Command, module and alias names must be lower case. A `[ServerOnly]` command is hidden until the server has started. And a module with the same name as another replaces it, so check yours wasn't replaced. See [Console commands](tavernlib/console-commands.md).
 
 ## Launcher addons

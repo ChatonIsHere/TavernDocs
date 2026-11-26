@@ -44,10 +44,10 @@ const config: Config = {
                     routeBasePath: '/',
                     sidebarPath: './sidebars.ts',
                     remarkPlugins: [apiLinks],
-                    // The type reference pages (game-api/types/<group>/<type>) stay out of the sidebar; the
-                    // browser tables and the links in the guides lead to them.
+                    // The type reference pages (mod/game-api/types/<group>/<type>) stay out of the sidebar; the
+                    // browser tables, the type index and the links in the guides lead to them.
                     async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
-                        const isTypePage = (id: string) => /^(game-api|tavernlib-api)\/types\/[^/]+\//.test(id);
+                        const isTypePage = (id: string) => /^mod\/(game-api|tavernlib-api)\/types\/[^/]+\//.test(id);
                         const prune = (items: any[]): any[] =>
                             items
                                 .filter((i) => !(i.type === 'doc' && isTypePage(i.id)))
@@ -74,6 +74,16 @@ const config: Config = {
                 indexBlog: false,
                 highlightSearchTermsOnTargetPage: true,
                 explicitSearchResultPath: true,
+                // Each section searches only itself; the front page and other pages outside them search everything.
+                searchContextByPaths: [
+                    {label: 'Play', path: 'play'},
+                    {label: 'Host', path: 'host'},
+                    {label: 'Mod', path: 'mod'},
+                    {label: 'Help', path: 'help'},
+                ],
+                useAllContextsWithNoSearchContext: true,
+                // The type indexes are one long list of names; search finds each type's own page instead.
+                ignoreFiles: [/type-index$/],
             },
         ],
     ],
@@ -97,8 +107,8 @@ const config: Config = {
                         {type: 'docSidebar', sidebarId: 'mod', label: 'Guides'},
                         {type: 'docSidebar', sidebarId: 'tavernlib', label: 'TavernLib API'},
                         {type: 'docSidebar', sidebarId: 'game', label: 'Game API'},
-                        {type: 'doc', docId: 'tavernlib-api/types/overview', label: 'TavernLib types'},
-                        {type: 'doc', docId: 'game-api/types/overview', label: 'Game types'},
+                        {type: 'doc', docId: 'mod/tavernlib-api/types/overview', label: 'TavernLib types'},
+                        {type: 'doc', docId: 'mod/game-api/types/overview', label: 'Game types'},
                     ],
                 },
                 {type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help'},
@@ -115,8 +125,8 @@ const config: Config = {
                         {label: 'Play', to: '/play/welcome'},
                         {label: 'Host a server', to: '/host/before-you-host'},
                         {label: 'Make mods', to: '/mod/welcome'},
-                        {label: 'TavernLib API', to: '/tavernlib-api/overview'},
-                        {label: 'Game API', to: '/game-api/overview'},
+                        {label: 'TavernLib API', to: '/mod/tavernlib-api/overview'},
+                        {label: 'Game API', to: '/mod/game-api/overview'},
                         {label: 'Help', to: '/help/getting-help'},
                     ],
                 },

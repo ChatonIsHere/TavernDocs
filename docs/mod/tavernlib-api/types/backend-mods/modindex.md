@@ -1,0 +1,44 @@
+---
+title: "ModIndex"
+description: "Every trusted source's repository.json merged: a list of ModSummary plus the replacements they list."
+displayed_sidebar: tavernlib
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ModIndex
+
+A **class** in `TavernLib`, `TavernLib.Backend.Mods`.
+
+Every trusted source's `repository.json` merged: a list of `ModSummary` plus the replacements they list.
+
+- **Listed in** [TavernLib.Backend.Mods](/mod/tavernlib-api/types/backend-mods)
+- **Inherits or implements** `List<ModSummary>`
+- **Documented in** [ModIndex](/mod/tavernlib-api/types/backend-mods/modindex), [Sources and reconcile](/mod/tavernlib-api/mod-manager/sources-and-reconcile#modindex)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModIndex()"}</code> | Creates an empty index, or one holding the given summaries and replacements. |
+| <Link id="m-ctor-2" /><code>{"ModIndex(IEnumerable<"}<Link to="/mod/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> summaries, IEnumerable<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> replaced)"}</code> | Creates an empty index, or one holding the given summaries and replacements. |
+
+## Properties
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-replaced" /><code>{"List<"}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{"> Replaced { get; }"}</code> | Every source's replaced-mod entries. |
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-replacementofunlisted" /><code>{"static "}<Link to="/mod/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{" ReplacementOfUnlisted(IReadOnlyList<"}<Link to="/mod/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{"> index, string modId)"}</code> | The replacement for an id no source lists any more, if a source lists its replacement. The default source's entry wins. |
+
+## Used in
+
+Members of other types that take, return or hold a `ModIndex`:
+
+[`ModReconciler.Pass._index`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-index), [`ModReconciler.Pass.FetchIndex`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-fetchindex), [`ModReconciler.Pass.Index`](/mod/tavernlib-api/types/backend-mods/modreconciler-pass#m-index-2), [`ModRepoClient.FetchIndexes`](/mod/tavernlib-api/types/backend-mods/modrepoclient#m-fetchindexes).

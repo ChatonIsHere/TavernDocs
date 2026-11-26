@@ -35,7 +35,7 @@ You don't need to do anything for this. Publish one build for both targets, or s
 
 ## Using it from your mod
 
-You don't need TavernLib to make a mod. Most mods only use the game and Harmony. Reference it when you want what's on these pages: [roles](roles.md), [events and services](events-and-services.md) and [its folders](folders-and-files.md). Every part a mod can use is in the [TavernLib API](../../tavernlib-api/overview.md) reference.
+You don't need TavernLib to make a mod. Most mods only use the game and Harmony. Reference it when you want what's on these pages: [roles](roles.md), [events and services](events-and-services.md) and [its folders](folders-and-files.md). Every part a mod can use is in the [TavernLib API](../tavernlib-api/overview.md) reference.
 
 Setup installs it at `Plugins\TavernLib.dll` in the game folder. Add to your `.csproj`:
 

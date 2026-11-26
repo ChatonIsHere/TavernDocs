@@ -1,0 +1,6384 @@
+---
+title: "Type index"
+description: "Every type, A to Z, each a link to its page."
+sidebar_position: 1.5
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+# Type index
+
+Every one of the game's 6191 types, A to Z. Each name links to its page in the [type browser](overview.md); the namespace is after it.
+
+<div className="type-index-letters">
+
+[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [J](#j) [K](#k) [L](#l) [M](#m) [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) [S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [X](#x) [Z](#z)
+
+</div>
+
+## A
+
+<div className="type-index">
+
+- [AbstractAltaLifetimeScope](/mod/game-api/types/assembly-other/abstractaltalifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [AbstractAnalyticsDispatcher](/mod/game-api/types/assembly-other/abstractanalyticsdispatcher) <span>Alta.Analytics</span>
+- [AbstractDockEvents](/mod/game-api/types/alta-items/abstractdockevents) <span>Alta.Inventory</span>
+- [AcceptReject](/mod/game-api/types/assembly-api-client/acceptreject) <span>Alta.Api.Client.HighLevel</span>
+- [AccessibilityFeaturesBoard](/mod/game-api/types/global-a-b/accessibilityfeaturesboard)
+- [AccessibilityFeaturesChecker](/mod/game-api/types/global-a-b/accessibilityfeatureschecker)
+- [AccessibilitySeatedStandingBoard](/mod/game-api/types/game-other-namespaces/accessibilityseatedstandingboard) <span>Features.Main_Menu.Scripts</span>
+- [AccessibleDocks](/mod/game-api/types/alta-player/accessibledocks) <span>Alta.Character</span>
+- [AccessibleDocks.DockSetup](/mod/game-api/types/alta-player/accessibledocks-docksetup) <span>Alta.Character</span>
+- [AccessTokenMode](/mod/game-api/types/assembly-other/accesstokenmode) <span>Alta.Platform</span>
+- [AccountClient](/mod/game-api/types/assembly-api-client/accountclient) <span>Alta.Api.Client.HighLevel</span>
+- [AccountLinkData](/mod/game-api/types/assembly-api-models/accountlinkdata) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [AccountNameTextReplacer](/mod/game-api/types/alta-menus/accountnametextreplacer) <span>Alta.OculusLogin</span>
+- [AccountRequestBase](/mod/game-api/types/assembly-api-models/accountrequestbase) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [AccountRequiredPopupAnalytics](/mod/game-api/types/game-other-namespaces/accountrequiredpopupanalytics) <span>Features.Analytics.Registration</span>
+- [AccountSetupSceneLoader](/mod/game-api/types/global-a-b/accountsetupsceneloader)
+- [AccumulativeAverageCount](/mod/game-api/types/alta-networking/accumulativeaveragecount) <span>Alta.Networking</span>
+- [AccumulativeAverageNumber](/mod/game-api/types/alta-networking/accumulativeaveragenumber) <span>Alta.Networking</span>
+- [Achievement](/mod/game-api/types/alta-player/achievement) <span>Alta.Achievements</span>
+- [AchievementApiClient](/mod/game-api/types/assembly-api-client/achievementapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [AchievementBoard](/mod/game-api/types/global-a-b/achievementboard)
+- [AchievementDefinition](/mod/game-api/types/alta-player/achievementdefinition) <span>Alta.Achievements</span>
+- [AchievementDefinition.Create](/mod/game-api/types/alta-player/achievementdefinition-create) <span>Alta.Achievements</span>
+- [AchievementEffectHandler](/mod/game-api/types/global-a-b/achievementeffecthandler)
+- [AchievementGroupAchievement](/mod/game-api/types/global-a-b/achievementgroupachievement)
+- [AchievementItem](/mod/game-api/types/global-a-b/achievementitem)
+- [AchievementManager](/mod/game-api/types/alta-player/achievementmanager) <span>Alta.Achievements</span>
+- [AchievementStatDefinition](/mod/game-api/types/alta-player/achievementstatdefinition) <span>Alta.Achievements</span>
+- [AchievementStatDefinition.Create](/mod/game-api/types/alta-player/achievementstatdefinition-create) <span>Alta.Achievements</span>
+- [Action&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/action-tagent) <span>Alta.Intelligence</span>
+- [ActionComponent](/mod/game-api/types/alta-intelligence/actioncomponent) <span>Alta.Intelligence</span>
+- [ActionComponentSet](/mod/game-api/types/alta-intelligence/actioncomponentset) <span>Alta.Intelligence</span>
+- [ActionDecider&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/actiondecider-tagent) <span>Alta.Intelligence</span>
+- [ActionFinishedHandler](/mod/game-api/types/alta-intelligence/actionfinishedhandler) <span>Alta.Intelligence</span>
+- [ActionGlyphAnimator](/mod/game-api/types/global-a-b/actionglyphanimator)
+- [ActionGlyphsPlacer](/mod/game-api/types/global-a-b/actionglyphsplacer)
+- [ActionItem](/mod/game-api/types/global-a-b/actionitem)
+- [ActionItemData](/mod/game-api/types/alta-player/actionitemdata) <span>Alta.QuickAccessActions</span>
+- [ActionItemHandler](/mod/game-api/types/alta-player/actionitemhandler) <span>Alta.QuickAccessActions</span>
+- [ActionItemHandlerCollection](/mod/game-api/types/alta-player/actionitemhandlercollection) <span>Alta.QuickAccessActions</span>
+- [ActionItemHandlerCollectionMap](/mod/game-api/types/alta-player/actionitemhandlercollectionmap) <span>Alta.QuickAccessActions</span>
+- [ActionItemHandlersBase](/mod/game-api/types/alta-player/actionitemhandlersbase) <span>Alta.QuickAccessActions</span>
+- [ActionItemsManager](/mod/game-api/types/alta-player/actionitemsmanager) <span>Alta.QuickAccessActions</span>
+- [ActionItemsManager.SpawnedItemInfo](/mod/game-api/types/alta-player/actionitemsmanager-spawnediteminfo) <span>Alta.QuickAccessActions</span>
+- [ActionOrb](/mod/game-api/types/global-a-b/actionorb)
+- [ActionSet&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/actionset-tagent) <span>Alta.Intelligence</span>
+- [ActionSettingsUsedHandler](/mod/game-api/types/alta-intelligence/actionsettingsusedhandler) <span>Alta.Intelligence</span>
+- [ActionTarget&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/actiontarget-tagent) <span>Alta.Intelligence</span>
+- [ActiveAgentMoveCloser](/mod/game-api/types/alta-intelligence/activeagentmovecloser) <span>Alta.Intelligence</span>
+- [ActiveAgentRotateClose](/mod/game-api/types/alta-intelligence/activeagentrotateclose) <span>Alta.Intelligence</span>
+- [ActiveAttackDirectionReact](/mod/game-api/types/alta-intelligence/activeattackdirectionreact) <span>Alta.Intelligence</span>
+- [ActiveBlockCanceleableWander](/mod/game-api/types/alta-intelligence/activeblockcanceleablewander) <span>Alta.Intelligence</span>
+- [ActiveCatch](/mod/game-api/types/alta-intelligence/activecatch) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveCircleReposition](/mod/game-api/types/alta-intelligence/activecirclereposition) <span>Alta.Intelligence</span>
+- [ActiveCircleTarget](/mod/game-api/types/alta-intelligence/activecircletarget) <span>Alta.Intelligence</span>
+- [ActiveCrawl](/mod/game-api/types/alta-intelligence/activecrawl) <span>Alta.Intelligence</span>
+- [ActiveDelayEnterSet](/mod/game-api/types/alta-intelligence/activedelayenterset) <span>Alta.Intelligence</span>
+- [ActiveDeleted](/mod/game-api/types/alta-intelligence/activedeleted) <span>Alta.Intelligence</span>
+- [ActiveDig](/mod/game-api/types/alta-intelligence/activedig) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveDisabled](/mod/game-api/types/alta-intelligence/activedisabled) <span>Alta.Intelligence</span>
+- [ActiveDistanceFromTarget](/mod/game-api/types/alta-intelligence/activedistancefromtarget) <span>Alta.Intelligence</span>
+- [ActiveDodge](/mod/game-api/types/alta-intelligence/activedodge) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveEat](/mod/game-api/types/alta-intelligence/activeeat) <span>Alta.Intelligence</span>
+- [ActiveEmerge](/mod/game-api/types/alta-intelligence/activeemerge) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveFaceTarget](/mod/game-api/types/alta-intelligence/activefacetarget) <span>Alta.Intelligence</span>
+- [ActiveFollow](/mod/game-api/types/alta-intelligence/activefollow) <span>Alta.Intelligence</span>
+- [ActiveHandIndex](/mod/game-api/types/global-a-b/activehandindex)
+- [ActiveIdle](/mod/game-api/types/alta-intelligence/activeidle) <span>Alta.Intelligence</span>
+- [ActiveInteractApproach](/mod/game-api/types/alta-intelligence/activeinteractapproach) <span>Alta.Intelligence</span>
+- [ActiveJumpAt](/mod/game-api/types/alta-intelligence/activejumpat) <span>Alta.Intelligence</span>
+- [ActiveMeleeAttack](/mod/game-api/types/alta-intelligence/activemeleeattack) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveNavigation&lt;TThis, TAgent, TSettings&gt;](/mod/game-api/types/alta-intelligence/activenavigation-tthis-tagent-tsettings) <span>Alta.Intelligence</span>
+- [ActiveNest](/mod/game-api/types/alta-intelligence/activenest) <span>Alta.Intelligence</span>
+- [ActiveRegainControl](/mod/game-api/types/alta-intelligence/activeregaincontrol) <span>Alta.Intelligence</span>
+- [ActiveSchmeecheeFlee](/mod/game-api/types/alta-intelligence/activeschmeecheeflee) <span>Alta.Intelligence</span>
+- [ActiveSchmeecheeFlip](/mod/game-api/types/alta-intelligence/activeschmeecheeflip) <span>Alta.Intelligence</span>
+- [ActiveSchmeecheePlant](/mod/game-api/types/alta-intelligence/activeschmeecheeplant) <span>Alta.Intelligence</span>
+- [ActiveSchmeecheePlay](/mod/game-api/types/alta-intelligence/activeschmeecheeplay) <span>Alta.Intelligence</span>
+- [ActiveSpin](/mod/game-api/types/alta-intelligence/activespin) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveSpit](/mod/game-api/types/alta-intelligence/activespit) <span>Alta.Intelligence.Wyrms</span>
+- [ActiveSwapActionSet](/mod/game-api/types/alta-intelligence/activeswapactionset) <span>Alta.Intelligence</span>
+- [ActiveThreaten](/mod/game-api/types/alta-intelligence/activethreaten) <span>Alta.Intelligence</span>
+- [ActiveWander](/mod/game-api/types/alta-intelligence/activewander) <span>Alta.Intelligence</span>
+- [AdditionalOwnedDock](/mod/game-api/types/alta-crafting/additionalowneddock) <span>Alta.Crafting</span>
+- [AdditionalStaticContent](/mod/game-api/types/global-a-b/additionalstaticcontent)
+- [AdditionalStaticContent.StaticContent](/mod/game-api/types/global-a-b/additionalstaticcontent-staticcontent)
+- [AdditionalStaticContentMarker](/mod/game-api/types/global-a-b/additionalstaticcontentmarker)
+- [AdditionalStaticContentSaveData](/mod/game-api/types/global-a-b/additionalstaticcontentsavedata)
+- [AddonCraftingPart](/mod/game-api/types/global-a-b/addoncraftingpart)
+- [AddressableLoader](/mod/game-api/types/global-a-b/addressableloader)
+- [AddressableResolverSettings](/mod/game-api/types/game-other-namespaces/addressableresolversettings) <span>Features.Meta.Resolvers</span>
+- [AddressableSession](/mod/game-api/types/global-a-b/addressablesession)
+- [AddressableSystemWarmer](/mod/game-api/types/global-a-b/addressablesystemwarmer)
+- [AddUnlockToPlayer](/mod/game-api/types/game-other-namespaces/addunlocktoplayer) <span>Features.Gameplay</span>
+- [AddUnlockToPlayerSaveData](/mod/game-api/types/game-other-namespaces/addunlocktoplayersavedata) <span>Features.Gameplay</span>
+- [AdjustHeight](/mod/game-api/types/global-a-b/adjustheight)
+- [AdminTool](/mod/game-api/types/global-a-b/admintool)
+- [Aesthetics](/mod/game-api/types/global-a-b/aesthetics)
+- [AfkTimer](/mod/game-api/types/global-a-b/afktimer)
+- [Agent](/mod/game-api/types/alta-intelligence/agent) <span>Alta.Intelligence</span>
+- [Agent.ChannelEvent](/mod/game-api/types/alta-intelligence/agent-channelevent) <span>Alta.Intelligence</span>
+- [Agent&lt;TThis&gt;](/mod/game-api/types/alta-intelligence/agent-tthis) <span>Alta.Intelligence</span>
+- [AgentAttackDirectionReactSettings](/mod/game-api/types/alta-intelligence/agentattackdirectionreactsettings) <span>Alta.Intelligence</span>
+- [AgentCircleCloserSettings](/mod/game-api/types/alta-intelligence/agentcircleclosersettings) <span>Alta.Intelligence</span>
+- [AgentCircleRepositionSettings](/mod/game-api/types/alta-intelligence/agentcirclerepositionsettings) <span>Alta.Intelligence</span>
+- [AgentCircleRepositionSettings.MovementDirection](/mod/game-api/types/alta-intelligence/agentcirclerepositionsettings-movementdirection) <span>Alta.Intelligence</span>
+- [AgentCircleTargetSettings](/mod/game-api/types/alta-intelligence/agentcircletargetsettings) <span>Alta.Intelligence</span>
+- [AgentCrawlSettings](/mod/game-api/types/alta-intelligence/agentcrawlsettings) <span>Alta.Intelligence</span>
+- [AgentDelayEnterSetSettings](/mod/game-api/types/alta-intelligence/agentdelayentersetsettings) <span>Alta.Intelligence</span>
+- [AgentDeletedSettings](/mod/game-api/types/alta-intelligence/agentdeletedsettings) <span>Alta.Intelligence</span>
+- [AgentDisabledSettings](/mod/game-api/types/alta-intelligence/agentdisabledsettings) <span>Alta.Intelligence</span>
+- [AgentDistanceFromTargetSettings](/mod/game-api/types/alta-intelligence/agentdistancefromtargetsettings) <span>Alta.Intelligence</span>
+- [AgentEatSettings](/mod/game-api/types/alta-intelligence/agenteatsettings) <span>Alta.Intelligence</span>
+- [AgentFaceTargetSettings](/mod/game-api/types/alta-intelligence/agentfacetargetsettings) <span>Alta.Intelligence</span>
+- [AgentFollowSettings](/mod/game-api/types/alta-intelligence/agentfollowsettings) <span>Alta.Intelligence</span>
+- [AgentIdleSettings](/mod/game-api/types/alta-intelligence/agentidlesettings) <span>Alta.Intelligence</span>
+- [AgentInteractApproachSettings](/mod/game-api/types/alta-intelligence/agentinteractapproachsettings) <span>Alta.Intelligence</span>
+- [AgentJumpAtSettings](/mod/game-api/types/alta-intelligence/agentjumpatsettings) <span>Alta.Intelligence</span>
+- [AgentMoveCloserSettings](/mod/game-api/types/alta-intelligence/agentmoveclosersettings) <span>Alta.Intelligence</span>
+- [AgentNavigationSettings](/mod/game-api/types/alta-intelligence/agentnavigationsettings) <span>Alta.Intelligence</span>
+- [AgentNestSettings](/mod/game-api/types/alta-intelligence/agentnestsettings) <span>Alta.Intelligence</span>
+- [AgentRegainControlSettings](/mod/game-api/types/alta-intelligence/agentregaincontrolsettings) <span>Alta.Intelligence</span>
+- [AgentRollUpInPlace](/mod/game-api/types/alta-intelligence/agentrollupinplace) <span>Alta.Intelligence</span>
+- [AgentRollUpInPlace.Point](/mod/game-api/types/alta-intelligence/agentrollupinplace-point) <span>Alta.Intelligence</span>
+- [AgentRollUpInPlaceSettings](/mod/game-api/types/alta-intelligence/agentrollupinplacesettings) <span>Alta.Intelligence</span>
+- [AgentSwapActionSetSettings](/mod/game-api/types/alta-intelligence/agentswapactionsetsettings) <span>Alta.Intelligence</span>
+- [AgentThreatenSettings](/mod/game-api/types/alta-intelligence/agentthreatensettings) <span>Alta.Intelligence</span>
+- [AgentUpdater](/mod/game-api/types/alta-intelligence/agentupdater) <span>Alta.Intelligence</span>
+- [AgentWanderSettings](/mod/game-api/types/alta-intelligence/agentwandersettings) <span>Alta.Intelligence</span>
+- [AgonesAllocationFailureType](/mod/game-api/types/assembly-api-models/agonesallocationfailuretype) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [AgonesGameServer](/mod/game-api/types/assembly-api-models/agonesgameserver) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [AgonesLogger](/mod/game-api/types/global-a-b/agoneslogger)
+- [AgonesObject](/mod/game-api/types/assembly-api-models/agonesobject) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [AgonesServerList](/mod/game-api/types/assembly-api-models/agonesserverlist) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [AiHook](/mod/game-api/types/alta-intelligence/aihook) <span>Alta.Intelligence</span>
+- [AiHook&lt;T&gt;](/mod/game-api/types/alta-intelligence/aihook-t) <span>Alta.Intelligence</span>
+- [AliasAttribute](/mod/game-api/types/alta-console/aliasattribute) <span>Alta.Console</span>
+- [AlignWithNormalModifier](/mod/game-api/types/global-a-b/alignwithnormalmodifier)
+- [AlignWithNormalModifier.Create](/mod/game-api/types/global-a-b/alignwithnormalmodifier-create)
+- [AlignWithPath](/mod/game-api/types/global-a-b/alignwithpath)
+- [AlignWithPath.Hill](/mod/game-api/types/global-a-b/alignwithpath-hill)
+- [AlignWithPathSlope](/mod/game-api/types/global-a-b/alignwithpathslope)
+- [AlignWithPathSlope.Hill](/mod/game-api/types/global-a-b/alignwithpathslope-hill)
+- [AlignWithTerrainSlope](/mod/game-api/types/global-a-b/alignwithterrainslope)
+- [AllocationRequest](/mod/game-api/types/assembly-api-models/allocationrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [AllocationResult](/mod/game-api/types/assembly-api-models/allocationresult) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [AllowNullAttribute](/mod/game-api/types/alta-console/allownullattribute) <span>Alta.Console</span>
+- [AllTransitions](/mod/game-api/types/alta-player/alltransitions) <span>Alta.PlayerStates</span>
+- [AlphanumComparator](/mod/game-api/types/global-a-b/alphanumcomparator)
+- [AlphanumComparator.ChunkType](/mod/game-api/types/global-a-b/alphanumcomparator-chunktype)
+- [AltaAccountRegistererAndLinker](/mod/game-api/types/alta-menus/altaaccountregistererandlinker) <span>Alta.OculusLogin</span>
+- [AltaAccountRegistererAndLinker.AccountRegisteringSteps](/mod/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps) <span>Alta.OculusLogin</span>
+- [AltaAccountRegistererAndLinker.LastCheckedField](/mod/game-api/types/alta-menus/altaaccountregistererandlinker-lastcheckedfield) <span>Alta.OculusLogin</span>
+- [AltaAnalyticsDispatcher](/mod/game-api/types/game-other-namespaces/altaanalyticsdispatcher) <span>ATT.Analytics</span>
+- [AltaApiResponse&lt;T&gt;](/mod/game-api/types/assembly-api-models/altaapiresponse-t) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [AltaConsoleModule](/mod/game-api/types/alta-networking/altaconsolemodule) <span>Alta.WebServer</span>
+- [AltaContractResolver](/mod/game-api/types/alta-utilities/altacontractresolver) <span>Alta.Utilities</span>
+- [AltaCoroutine](/mod/game-api/types/assembly-other/altacoroutine)
+- [AltaCoroutineHandler](/mod/game-api/types/assembly-other/altacoroutinehandler) <span>Alta.Utilities</span>
+- [AltaCoroutineState](/mod/game-api/types/assembly-other/altacoroutinestate)
+- [AltaEvent](/mod/game-api/types/global-a-b/altaevent)
+- [AltaEvent&lt;T, UnityEventT&gt;](/mod/game-api/types/global-a-b/altaevent-t-unityeventt)
+- [AltaEvent&lt;T1, T2, T3, T4, UnityEventT1T2T3T4&gt;](/mod/game-api/types/global-a-b/altaevent-t1-t2-t3-t4-unityeventt1t2t3t4)
+- [AltaEvent&lt;T1, T2, T3, UnityEventT1T2T3&gt;](/mod/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3)
+- [AltaEvent&lt;T1, T2, UnityEventT1T2&gt;](/mod/game-api/types/global-a-b/altaevent-t1-t2-unityeventt1t2)
+- [AltaEventValidationExtensions](/mod/game-api/types/global-a-b/altaeventvalidationextensions)
+- [AltaFile](/mod/game-api/types/assembly-other/altafile) <span>Alta.Utilities</span>
+- [AltaFolder](/mod/game-api/types/assembly-other/altafolder) <span>Alta.Utilities</span>
+- [AltaFolderModule](/mod/game-api/types/alta-networking/altafoldermodule) <span>Alta.WebServer</span>
+- [AltaGizmos](/mod/game-api/types/alta-utilities/altagizmos) <span>Alta.Utilities</span>
+- [AltaHierarchyData](/mod/game-api/types/alta-utilities/altahierarchydata) <span>Alta.Utilities.Hierarchy</span>
+- [AltaHierarchyData.Pocket](/mod/game-api/types/alta-utilities/altahierarchydata-pocket) <span>Alta.Utilities.Hierarchy</span>
+- [AltaIO](/mod/game-api/types/assembly-other/altaio) <span>Alta.Utilities</span>
+- [AltaMenuItem](/mod/game-api/types/assembly-other/altamenuitem)
+- [AltaMenuItemBase](/mod/game-api/types/assembly-other/altamenuitembase)
+- [AltaMenuItemBase._3rd_Party](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party)
+- [AltaMenuItemBase._3rd_Party.Gaia](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-gaia)
+- [AltaMenuItemBase._3rd_Party.Gena](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-gena)
+- [AltaMenuItemBase._3rd_Party.Impostors](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-impostors)
+- [AltaMenuItemBase._3rd_Party.MegaSplat](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-megasplat)
+- [AltaMenuItemBase._3rd_Party.Nature_Manufacture](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-nature_manufacture)
+- [AltaMenuItemBase._3rd_Party.Oculus](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-oculus)
+- [AltaMenuItemBase._3rd_Party.Pathfinding](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-pathfinding)
+- [AltaMenuItemBase._3rd_Party.Quick_LOD](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-quick_lod)
+- [AltaMenuItemBase._3rd_Party.Vertex_Painter_Pro](/mod/game-api/types/assembly-other/altamenuitembase-_3rd_party-vertex_painter_pro)
+- [AltaMenuItemBase.Assets](/mod/game-api/types/assembly-other/altamenuitembase-assets)
+- [AltaMenuItemBase.Assets.Create](/mod/game-api/types/assembly-other/altamenuitembase-assets-create)
+- [AltaMenuItemBase.Assets.Create._3rd_Party](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.MegaSplat](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-megasplat)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.MegaSplat.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-megasplat-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-rope_tools)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-rope_tools-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.Vertex_Painter](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-vertex_painter)
+- [AltaMenuItemBase.Assets.Create._3rd_Party.Vertex_Painter.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party-vertex_painter-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Audio](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-audio)
+- [AltaMenuItemBase.Assets.Create.Audio.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-audio-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Global_Settings](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings)
+- [AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings-field_access)
+- [AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings-field_access-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Platform](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-platform)
+- [AltaMenuItemBase.Assets.Create.Platform.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-platform-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Post_Processing](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-post_processing)
+- [AltaMenuItemBase.Assets.Create.Post_Processing.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-post_processing-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township)
+- [AltaMenuItemBase.Assets.Create.Township.Debug](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-debug)
+- [AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-debug-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Environmental](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-environmental)
+- [AltaMenuItemBase.Assets.Create.Township.Environmental.Atmosphere](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-environmental-atmosphere)
+- [AltaMenuItemBase.Assets.Create.Township.Environmental.Atmosphere.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-environmental-atmosphere-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-environmental-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Blacksmithing](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-blacksmithing)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Blacksmithing.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-blacksmithing-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Carpentry](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-carpentry)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Carpentry.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-carpentry-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Cooking](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-cooking)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Cooking.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-cooking-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Crafting](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-crafting)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Crafting.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-crafting-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Creatures](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-creatures)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Creatures.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-creatures-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Customization](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-customization)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Customization.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-customization-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Decay](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-decay)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-decay-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Durability](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-durability)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Durability.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-durability-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Equipment](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-equipment)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Equipment.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-equipment-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Impact](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-impact)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-impact-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Items](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-items)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-items-docking)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-items-docking-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-items-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Logic](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-logic)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Logic.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-logic-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Mining](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-mining)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Mining.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-mining-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.PAGaC](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pagac)
+- [AltaMenuItemBase.Assets.Create.Township.Features.PAGaC.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pagac-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Pages](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pages)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pages-flairs)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pages-flairs-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-pages-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Player](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-player)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-player-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Populations](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-populations)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Populations.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-populations-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Filters](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-filters)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Filters.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-filters-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-input)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-input-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-shape)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-shape-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-skills)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-progression-skills-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Stats](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-stats)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-stats-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-woodcutting)
+- [AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-woodcutting-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Plugins](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves-plugins)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Plugins.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves-plugins-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Settings](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves-settings)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Settings.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-caves-settings-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Grass](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-grass)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Grass.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-grass-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Loot](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-loot)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-loot-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-generation-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Meta](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-meta)
+- [AltaMenuItemBase.Assets.Create.Township.Meta.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-meta-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Misc](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-misc)
+- [AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-misc-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Networking](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-networking)
+- [AltaMenuItemBase.Assets.Create.Township.Networking.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-networking-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Utility](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-utility)
+- [AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-utility-scrapper)
+- [AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-utility-scrapper-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Township.Utility.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-township-utility-scriptableobject-t)
+- [AltaMenuItemBase.Assets.Create.Utility](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-utility)
+- [AltaMenuItemBase.Assets.Create.Utility.ScriptableObject&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-assets-create-utility-scriptableobject-t)
+- [AltaMenuItemBase.CONTEXT&lt;T&gt;](/mod/game-api/types/assembly-other/altamenuitembase-context-t)
+- [AltaMenuItemBase.Edit](/mod/game-api/types/assembly-other/altamenuitembase-edit)
+- [AltaMenuItemBase.File](/mod/game-api/types/assembly-other/altamenuitembase-file)
+- [AltaMenuItemBase.File.Export](/mod/game-api/types/assembly-other/altamenuitembase-file-export)
+- [AltaMenuItemBase.File.Export.Obj](/mod/game-api/types/assembly-other/altamenuitembase-file-export-obj)
+- [AltaMenuItemBase.GameObject](/mod/game-api/types/assembly-other/altamenuitembase-gameobject)
+- [AltaMenuItemBase.GameObject._3rd_Party](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-_3rd_party)
+- [AltaMenuItemBase.GameObject._3rd_Party.Gena](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-_3rd_party-gena)
+- [AltaMenuItemBase.GameObject._3rd_Party.MegaSplat](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-_3rd_party-megasplat)
+- [AltaMenuItemBase.GameObject._3rd_Party.Nature_Manufacture](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-_3rd_party-nature_manufacture)
+- [AltaMenuItemBase.GameObject._3rd_Party.Quick_LOD](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-_3rd_party-quick_lod)
+- [AltaMenuItemBase.GameObject.Township](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-township)
+- [AltaMenuItemBase.GameObject.Township.Managers](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-township-managers)
+- [AltaMenuItemBase.GameObject.Township.Spline](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-township-spline)
+- [AltaMenuItemBase.GameObject.Utility](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-utility)
+- [AltaMenuItemBase.GameObject.Utility.Find_GameObject_References](/mod/game-api/types/assembly-other/altamenuitembase-gameobject-utility-find_gameobject_references)
+- [AltaMenuItemBase.Play](/mod/game-api/types/assembly-other/altamenuitembase-play)
+- [AltaMenuItemBase.Play.Local](/mod/game-api/types/assembly-other/altamenuitembase-play-local)
+- [AltaMenuItemBase.Select](/mod/game-api/types/assembly-other/altamenuitembase-select)
+- [AltaMenuItemBase.Tools](/mod/game-api/types/assembly-other/altamenuitembase-tools)
+- [AltaMenuItemBase.Tools.Analytics](/mod/game-api/types/assembly-other/altamenuitembase-tools-analytics)
+- [AltaMenuItemBase.Tools.Capture](/mod/game-api/types/assembly-other/altamenuitembase-tools-capture)
+- [AltaMenuItemBase.Tools.Cleaning](/mod/game-api/types/assembly-other/altamenuitembase-tools-cleaning)
+- [AltaMenuItemBase.Tools.Graveyard](/mod/game-api/types/assembly-other/altamenuitembase-tools-graveyard)
+- [AltaMenuItemBase.Tools.Memory](/mod/game-api/types/assembly-other/altamenuitembase-tools-memory)
+- [AltaMenuItemBase.Tools.Misc](/mod/game-api/types/assembly-other/altamenuitembase-tools-misc)
+- [AltaMenuItemBase.Tools.Profiling](/mod/game-api/types/assembly-other/altamenuitembase-tools-profiling)
+- [AltaMenuItemBase.Tools.Reboot](/mod/game-api/types/assembly-other/altamenuitembase-tools-reboot)
+- [AltaMenuItemBase.Tools.Textures](/mod/game-api/types/assembly-other/altamenuitembase-tools-textures)
+- [AltaMenuItemBase.Tools.Utility](/mod/game-api/types/assembly-other/altamenuitembase-tools-utility)
+- [AltaMenuItemBase.Tools.Utility.Rendering](/mod/game-api/types/assembly-other/altamenuitembase-tools-utility-rendering)
+- [AltaMenuItemBase.Tools.Utility.Search_Inspect](/mod/game-api/types/assembly-other/altamenuitembase-tools-utility-search_inspect)
+- [AltaMenuItemBase.Township](/mod/game-api/types/assembly-other/altamenuitembase-township)
+- [AltaMenuItemBase.Township.Build](/mod/game-api/types/assembly-other/altamenuitembase-township-build)
+- [AltaMenuItemBase.Township.Editors](/mod/game-api/types/assembly-other/altamenuitembase-township-editors)
+- [AltaMenuItemBase.Township.Features](/mod/game-api/types/assembly-other/altamenuitembase-township-features)
+- [AltaMenuItemBase.Township.Features.Character](/mod/game-api/types/assembly-other/altamenuitembase-township-features-character)
+- [AltaMenuItemBase.Township.Features.Character.Customization](/mod/game-api/types/assembly-other/altamenuitembase-township-features-character-customization)
+- [AltaMenuItemBase.Township.Features.Character.Renderers](/mod/game-api/types/assembly-other/altamenuitembase-township-features-character-renderers)
+- [AltaMenuItemBase.Township.Features.Chunking](/mod/game-api/types/assembly-other/altamenuitembase-township-features-chunking)
+- [AltaMenuItemBase.Township.Features.Chunking.Operator](/mod/game-api/types/assembly-other/altamenuitembase-township-features-chunking-operator)
+- [AltaMenuItemBase.Township.Features.Cooking](/mod/game-api/types/assembly-other/altamenuitembase-township-features-cooking)
+- [AltaMenuItemBase.Township.Features.Crafting](/mod/game-api/types/assembly-other/altamenuitembase-township-features-crafting)
+- [AltaMenuItemBase.Township.Features.Forging](/mod/game-api/types/assembly-other/altamenuitembase-township-features-forging)
+- [AltaMenuItemBase.Township.Features.Glyphs](/mod/game-api/types/assembly-other/altamenuitembase-township-features-glyphs)
+- [AltaMenuItemBase.Township.Features.Grass](/mod/game-api/types/assembly-other/altamenuitembase-township-features-grass)
+- [AltaMenuItemBase.Township.Features.Items](/mod/game-api/types/assembly-other/altamenuitembase-township-features-items)
+- [AltaMenuItemBase.Township.Features.Meta](/mod/game-api/types/assembly-other/altamenuitembase-township-features-meta)
+- [AltaMenuItemBase.Township.Features.PAGaC](/mod/game-api/types/assembly-other/altamenuitembase-township-features-pagac)
+- [AltaMenuItemBase.Township.Features.Progression](/mod/game-api/types/assembly-other/altamenuitembase-township-features-progression)
+- [AltaMenuItemBase.Township.Features.Time](/mod/game-api/types/assembly-other/altamenuitembase-township-features-time)
+- [AltaMenuItemBase.Township.Logs](/mod/game-api/types/assembly-other/altamenuitembase-township-logs)
+- [AltaMenuItemBase.Township.Networking](/mod/game-api/types/assembly-other/altamenuitembase-township-networking)
+- [AltaMenuItemBase.Township.Utility](/mod/game-api/types/assembly-other/altamenuitembase-township-utility)
+- [AltaMenuItemBase.Window](/mod/game-api/types/assembly-other/altamenuitembase-window)
+- [AltaNetworkError](/mod/game-api/types/assembly-other/altanetworkerror) <span>Alta.NetworkingTransport</span>
+- [AltaPxrManagerCameraController](/mod/game-api/types/global-a-b/altapxrmanagercameracontroller)
+- [AltaSceneManager](/mod/game-api/types/global-a-b/altascenemanager)
+- [AltaSelection](/mod/game-api/types/alta-console/altaselection) <span>Alta.Console.Commands</span>
+- [AltaVisionAttribute](/mod/game-api/types/global-a-b/altavisionattribute)
+- [AlwaysFacePlayer](/mod/game-api/types/global-a-b/alwaysfaceplayer)
+- [AmbienceArea](/mod/game-api/types/alta-world/ambiencearea) <span>Alta.Environmental.Atmosphere</span>
+- [AmbienceAudio](/mod/game-api/types/global-a-b/ambienceaudio)
+- [AmbienceManager](/mod/game-api/types/global-a-b/ambiencemanager)
+- [AmbienceSpacePoint](/mod/game-api/types/alta-world/ambiencespacepoint) <span>Alta.Environmental.Atmosphere</span>
+- [AmbientTemperatureChecker](/mod/game-api/types/global-a-b/ambienttemperaturechecker)
+- [AmplifyImpostorAsset](/mod/game-api/types/global-a-b/amplifyimpostorasset)
+- [AmplifyImpostorBakePreset](/mod/game-api/types/global-a-b/amplifyimpostorbakepreset)
+- [AnalyticalButton](/mod/game-api/types/global-a-b/analyticalbutton)
+- [AnalyticalButtonGroupAutoEnabler](/mod/game-api/types/global-a-b/analyticalbuttongroupautoenabler)
+- [Analytics](/mod/game-api/types/alta-console/analytics) <span>Alta.Analytics</span>
+- [AnalyticsClient](/mod/game-api/types/assembly-api-client/analyticsclient) <span>Alta.Api.Client.HighLevel</span>
+- [AnalyticsData](/mod/game-api/types/assembly-other/analyticsdata) <span>Alta.Analytics</span>
+- [AnalyticsEvent](/mod/game-api/types/assembly-other/analyticsevent) <span>Alta.Analytics</span>
+- [AnalyticsEventData](/mod/game-api/types/assembly-api-models/analyticseventdata) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [AnalyticsInstaller](/mod/game-api/types/assembly-other/analyticsinstaller) <span>Alta.ATT.LifetimeScopes</span>
+- [AnalyticsOptions](/mod/game-api/types/alta-console/analyticsoptions) <span>Alta.Analytics</span>
+- [AnalyticsProperty](/mod/game-api/types/assembly-other/analyticsproperty) <span>Alta.Analytics</span>
+- [AnalyticsRecordAttribute](/mod/game-api/types/alta-console/analyticsrecordattribute) <span>Alta.Analytics</span>
+- [AnalyticsRecordForAllAttribute](/mod/game-api/types/alta-console/analyticsrecordforallattribute) <span>Alta.Analytics</span>
+- [AnalyticsService](/mod/game-api/types/assembly-other/analyticsservice) <span>Alta.Analytics</span>
+- [AnalyticsTest](/mod/game-api/types/global-a-b/analyticstest)
+- [AnalyticsTools](/mod/game-api/types/alta-console/analyticstools) <span>Alta.Analytics</span>
+- [AnalyticsTools.FieldHandler](/mod/game-api/types/alta-console/analyticstools-fieldhandler) <span>Alta.Analytics</span>
+- [AnalyticsTools.SerializeDelegate](/mod/game-api/types/alta-console/analyticstools-serializedelegate) <span>Alta.Analytics</span>
+- [AnalyticsType](/mod/game-api/types/alta-console/analyticstype) <span>Alta.Analytics</span>
+- [And](/mod/game-api/types/alta-intelligence/and) <span>Alta.Intelligence</span>
+- [AndroidExtensions](/mod/game-api/types/alta-utilities/androidextensions) <span>Alta.Utilities</span>
+- [AndroidLightsController](/mod/game-api/types/alta-world/androidlightscontroller) <span>Alta.Lighting</span>
+- [AndroidLightsController.SortedLight](/mod/game-api/types/alta-world/androidlightscontroller-sortedlight) <span>Alta.Lighting</span>
+- [AndroidLightSettings](/mod/game-api/types/global-a-b/androidlightsettings)
+- [AnimatedBool](/mod/game-api/types/alta-networking/animatedbool) <span>Alta.Networking.Animation</span>
+- [AnimatedBoolAccess](/mod/game-api/types/alta-networking/animatedboolaccess) <span>Alta.Networking.Animation</span>
+- [AnimatedBoolAiHook](/mod/game-api/types/alta-intelligence/animatedboolaihook) <span>Alta.Intelligence</span>
+- [AnimatedEmblem](/mod/game-api/types/alta-player/animatedemblem) <span>Alta.QuickAccessActions</span>
+- [AnimatedFloat](/mod/game-api/types/alta-networking/animatedfloat) <span>Alta.Networking.Animation</span>
+- [AnimatedFloatAiHook](/mod/game-api/types/alta-intelligence/animatedfloataihook) <span>Alta.Intelligence</span>
+- [AnimatedFloatLerp](/mod/game-api/types/alta-networking/animatedfloatlerp) <span>Alta.Networking.Animation</span>
+- [AnimatedFloatTransitionAiHook](/mod/game-api/types/alta-intelligence/animatedfloattransitionaihook) <span>Alta.Intelligence</span>
+- [AnimatedInt](/mod/game-api/types/alta-networking/animatedint) <span>Alta.Networking.Animation</span>
+- [AnimatedLayerAiHook](/mod/game-api/types/alta-intelligence/animatedlayeraihook) <span>Alta.Intelligence</span>
+- [AnimatedLayerWeight](/mod/game-api/types/alta-networking/animatedlayerweight) <span>Alta.Networking.Animation</span>
+- [AnimatedLayerWeightLerp](/mod/game-api/types/alta-networking/animatedlayerweightlerp) <span>Alta.Networking.Animation</span>
+- [AnimatedRagdoll](/mod/game-api/types/global-a-b/animatedragdoll)
+- [AnimatedRagdoll.Bone](/mod/game-api/types/global-a-b/animatedragdoll-bone)
+- [AnimatedTrigger](/mod/game-api/types/alta-networking/animatedtrigger) <span>Alta.Networking.Animation</span>
+- [AnimatedTriggerAiHook](/mod/game-api/types/alta-intelligence/animatedtriggeraihook) <span>Alta.Intelligence</span>
+- [AnimatedValue&lt;T&gt;](/mod/game-api/types/alta-networking/animatedvalue-t) <span>Alta.Networking.Animation</span>
+- [AnimateProgress](/mod/game-api/types/global-a-b/animateprogress)
+- [AnimateScaleOverTime](/mod/game-api/types/global-a-b/animatescaleovertime)
+- [AnimateTime](/mod/game-api/types/global-a-b/animatetime)
+- [AnimationBasedEffect](/mod/game-api/types/global-a-b/animationbasedeffect)
+- [AnimationBasedSound](/mod/game-api/types/alta-networking/animationbasedsound) <span>Alta.Networking.Animation</span>
+- [AnimationBasedTrigger](/mod/game-api/types/global-a-b/animationbasedtrigger)
+- [AnimationEnded](/mod/game-api/types/global-a-b/animationended)
+- [AnimationPart](/mod/game-api/types/global-a-b/animationpart)
+- [AnimationRandomStart](/mod/game-api/types/global-a-b/animationrandomstart)
+- [AnimationTrigger](/mod/game-api/types/global-a-b/animationtrigger)
+- [AnimatorBoolAccess](/mod/game-api/types/alta-networking/animatorboolaccess) <span>Alta.Networking.Animation</span>
+- [AnimatorForcerTool](/mod/game-api/types/global-a-b/animatorforcertool)
+- [AnimatorSetup](/mod/game-api/types/global-a-b/animatorsetup)
+- [AnvilArea](/mod/game-api/types/global-a-b/anvilarea)
+- [AnvilFilter](/mod/game-api/types/global-a-b/anvilfilter)
+- [AnvilFilterSettings](/mod/game-api/types/global-a-b/anvilfiltersettings)
+- [AOEDamage](/mod/game-api/types/global-a-b/aoedamage)
+- [ApiAccess](/mod/game-api/types/global-a-b/apiaccess)
+- [ApiBatchRequestService](/mod/game-api/types/assembly-api-client/apibatchrequestservice) <span>Alta.Api.Client.LowLevel</span>
+- [ApiEndpoint](/mod/game-api/types/global-a-b/apiendpoint)
+- [ApiError](/mod/game-api/types/assembly-api-models/apierror) <span>Alta.Api.DataTransferModels.Errors</span>
+- [ApiErrorException](/mod/game-api/types/assembly-api-models/apierrorexception) <span>Alta.Api.DataTransferModels.Exceptions</span>
+- [APIStatusManager](/mod/game-api/types/alta-menus/apistatusmanager) <span>Alta.Meta.UI.ServerManagement</span>
+- [APIStatusNotification](/mod/game-api/types/alta-menus/apistatusnotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [AppDataCacheHandler](/mod/game-api/types/global-a-b/appdatacachehandler)
+- [ApplicationLifetimeScope](/mod/game-api/types/assembly-other/applicationlifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [ApplicationManager](/mod/game-api/types/global-a-b/applicationmanager)
+- [ApplicationShutdownOrderAttribute](/mod/game-api/types/global-a-b/applicationshutdownorderattribute)
+- [ApplicationStartupManager](/mod/game-api/types/global-a-b/applicationstartupmanager)
+- [ApplicationType](/mod/game-api/types/alta-crafting/applicationtype) <span>Alta.Scrapper</span>
+- [ApplyElement](/mod/game-api/types/alta-world-generation/applyelement) <span>Alta.Caves.PluginParts</span>
+- [ApplyElementInstance](/mod/game-api/types/alta-world-generation/applyelementinstance) <span>Alta.Caves.PluginParts</span>
+- [ApplyGenerationRule](/mod/game-api/types/alta-world-generation/applygenerationrule) <span>Alta.PAGaC</span>
+- [AreaAttackSkill](/mod/game-api/types/global-a-b/areaattackskill)
+- [AreaAttackSkill.Create](/mod/game-api/types/global-a-b/areaattackskill-create)
+- [AreaAttackSkill.HitInformation](/mod/game-api/types/global-a-b/areaattackskill-hitinformation)
+- [AreaFilter](/mod/game-api/types/alta-stats-effects/areafilter) <span>Alta.StatSystem</span>
+- [AreaOfInfluenceReceiver](/mod/game-api/types/global-a-b/areaofinfluencereceiver)
+- [AreaOfInfluenceReceiverData](/mod/game-api/types/global-a-b/areaofinfluencereceiverdata)
+- [AreaOfInfluenceSender](/mod/game-api/types/global-a-b/areaofinfluencesender)
+- [AreaTriggerAnalyticsEvent](/mod/game-api/types/game-other-namespaces/areatriggeranalyticsevent) <span>ATT.Analytics</span>
+- [ArmController](/mod/game-api/types/alta-player/armcontroller) <span>Alta.Character</span>
+- [ArmIKController](/mod/game-api/types/alta-player/armikcontroller) <span>Alta.Character</span>
+- [ArmIKControllerHelper](/mod/game-api/types/alta-player/armikcontrollerhelper) <span>Alta.Character</span>
+- [ArmorDefinition](/mod/game-api/types/alta-items/armordefinition) <span>Alta.Impact</span>
+- [ArmorDefinition.Create](/mod/game-api/types/alta-items/armordefinition-create) <span>Alta.Impact</span>
+- [ArmorManager&lt;TSlot&gt;](/mod/game-api/types/alta-customization/armormanager-tslot) <span>Alta.Customization</span>
+- [ArmorManager&lt;TSlot&gt;.SlotPairing](/mod/game-api/types/alta-customization/armormanager-tslot-slotpairing) <span>Alta.Customization</span>
+- [Array2dGenerationHelper](/mod/game-api/types/alta-world-generation/array2dgenerationhelper) <span>Alta.Forests</span>
+- [Array2dGenerationHelper.ThreadRowsAction](/mod/game-api/types/alta-world-generation/array2dgenerationhelper-threadrowsaction) <span>Alta.Forests</span>
+- [Array2dGenerationHelper.ThreadRowsAction&lt;T, TData&gt;](/mod/game-api/types/alta-world-generation/array2dgenerationhelper-threadrowsaction-t-tdata) <span>Alta.Forests</span>
+- [Array2dGenerationHelper.ThreadRowsAction&lt;TContext, T, TData&gt;](/mod/game-api/types/alta-world-generation/array2dgenerationhelper-threadrowsaction-tcontext-t-tdata) <span>Alta.Forests</span>
+- [Array2dGenerationHelper.ThreadRowsAction&lt;TContext&gt;](/mod/game-api/types/alta-world-generation/array2dgenerationhelper-threadrowsaction-tcontext) <span>Alta.Forests</span>
+- [ArrayPoolManager](/mod/game-api/types/assembly-other/arraypoolmanager) <span>Alta.ArrayPools</span>
+- [Arrow](/mod/game-api/types/global-a-b/arrow)
+- [Arrow.ArrowFlightSync](/mod/game-api/types/global-a-b/arrow-arrowflightsync)
+- [ArrowEvent](/mod/game-api/types/global-a-b/arrowevent)
+- [ArrowFlightModifierComponent](/mod/game-api/types/global-a-b/arrowflightmodifiercomponent)
+- [ArrowFlightSettings](/mod/game-api/types/global-a-b/arrowflightsettings)
+- [ArrowFlightSettingsDevianceMultiplierModifier](/mod/game-api/types/global-a-b/arrowflightsettingsdeviancemultipliermodifier)
+- [ArrowFlightSettingsModifier](/mod/game-api/types/global-a-b/arrowflightsettingsmodifier)
+- [ArrowUnityEvent](/mod/game-api/types/global-a-b/arrowunityevent)
+- [AssetBakingSettings](/mod/game-api/types/alta-utilities/assetbakingsettings) <span>Alta.AssetBaking</span>
+- [AssignableRoles](/mod/game-api/types/assembly-api-models/assignableroles) <span>Alta.Api.DataTransferModels.Enums</span>
+- [AssistedSpawnCommandAction](/mod/game-api/types/alta-menus/assistedspawncommandaction) <span>Alta.Menu</span>
+- [AssistedSpawnCommandDefinition](/mod/game-api/types/alta-menus/assistedspawncommanddefinition) <span>Alta.Menu</span>
+- [AssistGrabInteractable](/mod/game-api/types/global-a-b/assistgrabinteractable)
+- [AStar&lt;TNode, TConnection&gt;](/mod/game-api/types/global-a-b/astar-tnode-tconnection)
+- [AStarDestinationCondition&lt;TNode, TConnection&gt;](/mod/game-api/types/global-a-b/astardestinationcondition-tnode-tconnection)
+- [AStarTravelCondition&lt;TNode, TConnection&gt;](/mod/game-api/types/global-a-b/astartravelcondition-tnode-tconnection)
+- [AStarWorkingNode&lt;TNode, TConnection&gt;](/mod/game-api/types/global-a-b/astarworkingnode-tnode-tconnection)
+- [AsyncPump](/mod/game-api/types/alta-utilities/asyncpump) <span>Alta.Utilities</span>
+- [AtlasDefinition](/mod/game-api/types/alta-utilities/atlasdefinition) <span>Alta.Utilities.Atlas</span>
+- [AtlasDefinition.AtlasedMaterial](/mod/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial) <span>Alta.Utilities.Atlas</span>
+- [AtlasDefinition.MaterialReferences](/mod/game-api/types/alta-utilities/atlasdefinition-materialreferences) <span>Alta.Utilities.Atlas</span>
+- [AtlasSettings](/mod/game-api/types/alta-utilities/atlassettings) <span>Alta.Utilities.Atlas</span>
+- [AtlasSettings.ShaderBlits](/mod/game-api/types/alta-utilities/atlassettings-shaderblits) <span>Alta.Utilities.Atlas</span>
+- [AtlasTarget](/mod/game-api/types/alta-utilities/atlastarget) <span>Alta.Utilities.Atlas</span>
+- [AtlasType](/mod/game-api/types/alta-utilities/atlastype) <span>Alta.Utilities.Atlas</span>
+- [AtmBalanceChangeData](/mod/game-api/types/game-other-namespaces/atmbalancechangedata) <span>ATT.PlayerStates</span>
+- [ATMMachine](/mod/game-api/types/global-a-b/atmmachine)
+- [AtmosphereColor](/mod/game-api/types/alta-world/atmospherecolor) <span>Alta.Environmental.Atmosphere</span>
+- [AtmosphereManager](/mod/game-api/types/alta-world/atmospheremanager) <span>Alta.Environmental.Atmosphere</span>
+- [AtmosphereManager.ResolveAtmosphere](/mod/game-api/types/alta-world/atmospheremanager-resolveatmosphere) <span>Alta.Environmental.Atmosphere</span>
+- [AtmospherePlugin](/mod/game-api/types/alta-world/atmosphereplugin) <span>Alta.Environmental.Atmosphere</span>
+- [AtmosphereSet](/mod/game-api/types/alta-world/atmosphereset) <span>Alta.Environmental.Atmosphere</span>
+- [AtmosphereSet.Create](/mod/game-api/types/alta-world/atmosphereset-create) <span>Alta.Environmental.Atmosphere</span>
+- [AtmosphereShaderVariables](/mod/game-api/types/alta-world/atmosphereshadervariables) <span>Alta.Environmental.Atmosphere</span>
+- [Atom](/mod/game-api/types/alta-intelligence/atom) <span>Alta.Intelligence</span>
+- [Atom&lt;T1, T2, T3, T4&gt;](/mod/game-api/types/alta-intelligence/atom-t1-t2-t3-t4) <span>Alta.Intelligence</span>
+- [Atom&lt;T1, T2, T3&gt;](/mod/game-api/types/alta-intelligence/atom-t1-t2-t3) <span>Alta.Intelligence</span>
+- [Atom&lt;T1, T2&gt;](/mod/game-api/types/alta-intelligence/atom-t1-t2) <span>Alta.Intelligence</span>
+- [Atom&lt;T&gt;](/mod/game-api/types/alta-intelligence/atom-t) <span>Alta.Intelligence</span>
+- [AttachmentEvent](/mod/game-api/types/alta-crafting/attachmentevent) <span>Alta.Woodcutting</span>
+- [AttackDirectionAnimationBoolSettings](/mod/game-api/types/alta-intelligence/attackdirectionanimationboolsettings) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationBoolSettings.BoolAnimation](/mod/game-api/types/alta-intelligence/attackdirectionanimationboolsettings-boolanimation) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationFloatSettings](/mod/game-api/types/alta-intelligence/attackdirectionanimationfloatsettings) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationFloatSettings.FloatAnimation](/mod/game-api/types/alta-intelligence/attackdirectionanimationfloatsettings-floatanimation) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationLayerLerpSettings](/mod/game-api/types/alta-intelligence/attackdirectionanimationlayerlerpsettings) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationLayerLerpSettings.LayerAnimation](/mod/game-api/types/alta-intelligence/attackdirectionanimationlayerlerpsettings-layeranimation) <span>Alta.Intelligence</span>
+- [AttackDirectionAnimationSettings](/mod/game-api/types/alta-intelligence/attackdirectionanimationsettings) <span>Alta.Intelligence</span>
+- [AttackDirectionCore](/mod/game-api/types/alta-intelligence/attackdirectioncore) <span>Alta.Intelligence</span>
+- [AttackDirectionCoreSettings](/mod/game-api/types/alta-intelligence/attackdirectioncoresettings) <span>Alta.Intelligence</span>
+- [AttackDirectionReactAIHook](/mod/game-api/types/alta-intelligence/attackdirectionreactaihook) <span>Alta.Intelligence</span>
+- [AttackParameters](/mod/game-api/types/alta-intelligence/attackparameters) <span>Alta.Intelligence</span>
+- [AttackTest](/mod/game-api/types/global-a-b/attacktest)
+- [AttackTypeMultiplier](/mod/game-api/types/global-a-b/attacktypemultiplier)
+- [AttributeCurveRange](/mod/game-api/types/global-a-b/attributecurverange)
+- [AttributeCurveValue](/mod/game-api/types/global-a-b/attributecurvevalue)
+- [AttributeDoubleValue](/mod/game-api/types/global-a-b/attributedoublevalue)
+- [AttributeEvaluation](/mod/game-api/types/global-a-b/attributeevaluation)
+- [AttributeImpact](/mod/game-api/types/alta-world-generation/attributeimpact) <span>Alta.Populations</span>
+- [AttributeSet](/mod/game-api/types/global-a-b/attributeset)
+- [AttributeSingleValue](/mod/game-api/types/global-a-b/attributesinglevalue)
+- [AttributeUsage](/mod/game-api/types/global-a-b/attributeusage)
+- [AudioCommandModule](/mod/game-api/types/alta-console/audiocommandmodule) <span>Alta.Console.Commands</span>
+- [AudioCommandModule.Microphone](/mod/game-api/types/alta-console/audiocommandmodule-microphone) <span>Alta.Console.Commands</span>
+- [AudioControl](/mod/game-api/types/global-a-b/audiocontrol)
+- [AudioEnvironmentBlendSettings](/mod/game-api/types/global-a-b/audioenvironmentblendsettings)
+- [AudioEnvironmentBlendSettings.Create](/mod/game-api/types/global-a-b/audioenvironmentblendsettings-create)
+- [AudioManager](/mod/game-api/types/global-a-b/audiomanager)
+- [AudioMuteEvent](/mod/game-api/types/global-a-b/audiomuteevent)
+- [AuthenticationFeatures](/mod/game-api/types/assembly-other/authenticationfeatures) <span>Alta.Platform.Generic</span>
+- [AuthenticationService](/mod/game-api/types/assembly-other/authenticationservice) <span>Alta.Platform.Generic</span>
+- [AuthenticationUtility](/mod/game-api/types/assembly-other/authenticationutility) <span>Alta.Authentication</span>
+- [AuthorizationException](/mod/game-api/types/assembly-api-models/authorizationexception) <span>Alta.Api.DataTransferModels.Exceptions</span>
+- [AutoCamDeviceController](/mod/game-api/types/global-a-b/autocamdevicecontroller)
+- [AutoCamDeviceLifecycle](/mod/game-api/types/global-a-b/autocamdevicelifecycle)
+- [AutoCamLocomotionController](/mod/game-api/types/global-a-b/autocamlocomotioncontroller)
+- [AutoCamLocomotionController.AutoCamTarget](/mod/game-api/types/global-a-b/autocamlocomotioncontroller-autocamtarget)
+- [AutoCamPlayer](/mod/game-api/types/global-a-b/autocamplayer)
+- [AutoComplete](/mod/game-api/types/alta-menus/autocomplete) <span>Alta.Meta.UI</span>
+- [AutoCompleteAfterDelayStep](/mod/game-api/types/game-other-namespaces/autocompleteafterdelaystep) <span>ATT.MicroTutorial.Steps</span>
+- [AutoCompleteStep](/mod/game-api/types/game-other-namespaces/autocompletestep) <span>ATT.MicroTutorial.Steps</span>
+- [AutoContainerLid](/mod/game-api/types/global-a-b/autocontainerlid)
+- [AutoFestiveAchievement](/mod/game-api/types/game-other-namespaces/autofestiveachievement) <span>ATT.TaskTracking</span>
+- [AutoFindAttribute](/mod/game-api/types/global-a-b/autofindattribute)
+- [AutomaticDockArea](/mod/game-api/types/alta-items/automaticdockarea) <span>Alta.Inventory</span>
+- [AvailablePlayerSaveData](/mod/game-api/types/alta-utilities/availableplayersavedata) <span>Alta.Utilities</span>
+- [AvailablePlayerSaveData.Available](/mod/game-api/types/alta-utilities/availableplayersavedata-available) <span>Alta.Utilities</span>
+- [AvailablePointBar](/mod/game-api/types/global-a-b/availablepointbar)
+- [AvailablePointCrystal](/mod/game-api/types/global-a-b/availablepointcrystal)
+- [AvailablePointVisualizerManager](/mod/game-api/types/global-a-b/availablepointvisualizermanager)
+- [AverageNumber](/mod/game-api/types/assembly-other/averagenumber) <span>Alta.Core.Runtime</span>
+- [AvoidBakingMarker](/mod/game-api/types/global-a-b/avoidbakingmarker)
+
+</div>
+
+## B
+
+<div className="type-index">
+
+- [Babu](/mod/game-api/types/alta-intelligence/babu) <span>Alta.Intelligence</span>
+- [BakeableTextureDecimator](/mod/game-api/types/global-a-b/bakeabletexturedecimator)
+- [BakeableTextureDecimator.PlatformTextures](/mod/game-api/types/global-a-b/bakeabletexturedecimator-platformtextures)
+- [BakeableTextureDecimator.TextureData](/mod/game-api/types/global-a-b/bakeabletexturedecimator-texturedata)
+- [BakeLODGroupGrouper](/mod/game-api/types/alta-utilities/bakelodgroupgrouper) <span>Alta.Utilities</span>
+- [BanInfo](/mod/game-api/types/assembly-api-models/baninfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [BanMethod](/mod/game-api/types/assembly-api-models/banmethod) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [BanPlayerSocialAnalyticsEvent](/mod/game-api/types/game-other-namespaces/banplayersocialanalyticsevent) <span>ATT.Analytics.Social</span>
+- [BanRequest](/mod/game-api/types/assembly-api-models/banrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [BanRole](/mod/game-api/types/global-a-b/banrole)
+- [BanType](/mod/game-api/types/assembly-api-models/bantype) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [BaseAtom](/mod/game-api/types/alta-intelligence/baseatom) <span>Alta.Intelligence</span>
+- [BaseAtom.Definition](/mod/game-api/types/alta-intelligence/baseatom-definition) <span>Alta.Intelligence</span>
+- [BaseCommands](/mod/game-api/types/alta-console/basecommands) <span>Alta.Console.Commands</span>
+- [BaseCommands.SearchResult](/mod/game-api/types/alta-console/basecommands-searchresult) <span>Alta.Console.Commands</span>
+- [BaseImpactChannelProgressionFilter](/mod/game-api/types/global-a-b/baseimpactchannelprogressionfilter)
+- [BaseLightsController](/mod/game-api/types/alta-world/baselightscontroller) <span>Alta.Lighting</span>
+- [BasemapDistanceSet](/mod/game-api/types/global-a-b/basemapdistanceset)
+- [BaseOpenXRInputController](/mod/game-api/types/global-a-b/baseopenxrinputcontroller)
+- [BasePart](/mod/game-api/types/alta-console/basepart) <span>Alta.Console</span>
+- [BaseReplacer](/mod/game-api/types/global-a-b/basereplacer)
+- [BaseStatisticsMeasurer](/mod/game-api/types/global-a-b/basestatisticsmeasurer)
+- [BaseSync](/mod/game-api/types/alta-networking/basesync) <span>Alta.Networking</span>
+- [BasicAction&lt;TAgent, TActive, TSettings&gt;](/mod/game-api/types/alta-intelligence/basicaction-tagent-tactive-tsettings) <span>Alta.Intelligence</span>
+- [BasicActiveAction&lt;TAgent, TSettings&gt;](/mod/game-api/types/alta-intelligence/basicactiveaction-tagent-tsettings) <span>Alta.Intelligence</span>
+- [BasicActiveAction&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/basicactiveaction-tagent) <span>Alta.Intelligence</span>
+- [BasicActiveAgentMoveCloser&lt;T&gt;](/mod/game-api/types/alta-intelligence/basicactiveagentmovecloser-t) <span>Alta.Intelligence</span>
+- [BasicBlit](/mod/game-api/types/alta-utilities/basicblit) <span>Alta.Utilities.Atlas</span>
+- [BasicChiselable](/mod/game-api/types/game-other-namespaces/basicchiselable) <span>Features.Gameplay.Activities.Carpentry</span>
+- [BasicDecay](/mod/game-api/types/global-a-b/basicdecay)
+- [BasicDecayData](/mod/game-api/types/global-a-b/basicdecaydata)
+- [BasicDecayData1](/mod/game-api/types/global-a-b/basicdecaydata1)
+- [BasicDecayData2](/mod/game-api/types/global-a-b/basicdecaydata2)
+- [BasicDigable](/mod/game-api/types/global-a-b/basicdigable)
+- [BasicDummyCharacterController](/mod/game-api/types/alta-player/basicdummycharactercontroller) <span>Alta.Character</span>
+- [BasicDynamicPath](/mod/game-api/types/global-a-b/basicdynamicpath)
+- [BasicDynamicPathSaveData](/mod/game-api/types/global-a-b/basicdynamicpathsavedata)
+- [BasicEcosystem](/mod/game-api/types/alta-world-generation/basicecosystem) <span>Alta.Populations</span>
+- [BasicMeltingModel](/mod/game-api/types/alta-crafting/basicmeltingmodel) <span>Alta.Blacksmithing</span>
+- [BasicObjectDisplay](/mod/game-api/types/alta-world-generation/basicobjectdisplay) <span>Alta.Caves.Displays</span>
+- [BasicPooledObjectPool](/mod/game-api/types/global-a-b/basicpooledobjectpool)
+- [BasicPopulation](/mod/game-api/types/alta-world-generation/basicpopulation) <span>Alta.Populations</span>
+- [BasicPopulation.PopulationEventHandler](/mod/game-api/types/alta-world-generation/basicpopulation-populationeventhandler) <span>Alta.Populations</span>
+- [BasicPopulationFolder](/mod/game-api/types/alta-world-generation/basicpopulationfolder) <span>Alta.Populations</span>
+- [BasicPopulationFolderSaveData](/mod/game-api/types/alta-world-generation/basicpopulationfoldersavedata) <span>Alta.Populations</span>
+- [BasicPopulationItem](/mod/game-api/types/alta-world-generation/basicpopulationitem) <span>Alta.Populations</span>
+- [BasicPopulationItem.PopulationItemEventHandler](/mod/game-api/types/alta-world-generation/basicpopulationitem-populationitemeventhandler) <span>Alta.Populations</span>
+- [BasicPopulationManager](/mod/game-api/types/alta-world-generation/basicpopulationmanager) <span>Alta.Populations</span>
+- [BasicSaveData&lt;TData&gt;](/mod/game-api/types/global-a-b/basicsavedata-tdata)
+- [BasicSaveDataWrapper&lt;TData&gt;](/mod/game-api/types/alta-world/basicsavedatawrapper-tdata) <span>Alta.Saving</span>
+- [BasicSaveFile&lt;T&gt;](/mod/game-api/types/alta-world/basicsavefile-t) <span>Alta.Saving</span>
+- [BasicSense](/mod/game-api/types/alta-intelligence/basicsense) <span>Alta.Intelligence</span>
+- [BasicSense.Create](/mod/game-api/types/alta-intelligence/basicsense-create) <span>Alta.Intelligence</span>
+- [BasicSenseSet](/mod/game-api/types/alta-intelligence/basicsenseset) <span>Alta.Intelligence</span>
+- [BasicTouchScreenButton](/mod/game-api/types/global-a-b/basictouchscreenbutton)
+- [BatchedRequestEntry](/mod/game-api/types/assembly-api-client/batchedrequestentry) <span>Alta.Api.Client.LowLevel</span>
+- [Beam](/mod/game-api/types/global-a-b/beam)
+- [Bellows](/mod/game-api/types/global-a-b/bellows)
+- [Belt](/mod/game-api/types/global-a-b/belt)
+- [BeltVisual](/mod/game-api/types/global-a-b/beltvisual)
+- [BendPath](/mod/game-api/types/alta-items/bendpath) <span>Alta.Mechanisms</span>
+- [Bezier](/mod/game-api/types/alta-utilities/bezier) <span>Alta.Bezier</span>
+- [BezierControlPointMode](/mod/game-api/types/global-a-b/beziercontrolpointmode)
+- [BezierSpline](/mod/game-api/types/alta-utilities/bezierspline) <span>Alta.Bezier</span>
+- [BillboardParticle](/mod/game-api/types/global-a-b/billboardparticle)
+- [BillboardToPlayer](/mod/game-api/types/global-a-b/billboardtoplayer)
+- [Binder](/mod/game-api/types/assembly-other/binder) <span>Alta.ATT.LifetimeScopes</span>
+- [Binder&lt;TContract&gt;](/mod/game-api/types/assembly-other/binder-tcontract) <span>Alta.ATT.LifetimeScopes</span>
+- [Binder&lt;TContract&gt;.AltaRegistrationBuilder](/mod/game-api/types/assembly-other/binder-tcontract-altaregistrationbuilder) <span>Alta.ATT.LifetimeScopes</span>
+- [Binder&lt;TContract&gt;.AltaRegistrationBuilder.InstanceProvider](/mod/game-api/types/assembly-other/binder-tcontract-altaregistrationbuilder-instanceprovider) <span>Alta.ATT.LifetimeScopes</span>
+- [Biome](/mod/game-api/types/alta-world-generation/biome) <span>Alta.Caves</span>
+- [Biome.Create](/mod/game-api/types/alta-world-generation/biome-create) <span>Alta.Caves</span>
+- [BiomeAttribute](/mod/game-api/types/global-a-b/biomeattribute)
+- [BiomeAttribute.Create](/mod/game-api/types/global-a-b/biomeattribute-create)
+- [BiomeDoubleValue](/mod/game-api/types/alta-world-generation/biomedoublevalue) <span>Alta.Caves</span>
+- [BiomePreset](/mod/game-api/types/global-a-b/biomepreset)
+- [BiomePreset.Create](/mod/game-api/types/global-a-b/biomepreset-create)
+- [BiomeResources](/mod/game-api/types/alta-world-generation/biomeresources) <span>Alta.Caves</span>
+- [BiomeSerializer](/mod/game-api/types/alta-world-generation/biomeserializer) <span>Alta.Caves</span>
+- [BiomeSettings](/mod/game-api/types/alta-world-generation/biomesettings) <span>Alta.Caves</span>
+- [BiomeSettings.Create](/mod/game-api/types/alta-world-generation/biomesettings-create) <span>Alta.Caves</span>
+- [BiomeSingleValue](/mod/game-api/types/alta-world-generation/biomesinglevalue) <span>Alta.Caves</span>
+- [BiomeSphere](/mod/game-api/types/global-a-b/biomesphere)
+- [BiomeSphereComponent](/mod/game-api/types/global-a-b/biomespherecomponent)
+- [BiomeSphereGenerator](/mod/game-api/types/global-a-b/biomespheregenerator)
+- [BiomeSphereManager](/mod/game-api/types/global-a-b/biomespheremanager)
+- [BiomeSwitchFilter](/mod/game-api/types/global-a-b/biomeswitchfilter)
+- [BiomeSwitchFilter.Biome](/mod/game-api/types/global-a-b/biomeswitchfilter-biome)
+- [BiomeSwitchFilter.Create](/mod/game-api/types/global-a-b/biomeswitchfilter-create)
+- [BitDisplay](/mod/game-api/types/assembly-other/bitdisplay) <span>Alta.Serialization</span>
+- [BitReader](/mod/game-api/types/assembly-other/bitreader) <span>Alta.Serialization</span>
+- [BitWriter](/mod/game-api/types/assembly-other/bitwriter) <span>Alta.Serialization</span>
+- [BitWriter.GetMoreData](/mod/game-api/types/assembly-other/bitwriter-getmoredata) <span>Alta.Serialization</span>
+- [BlinkingController](/mod/game-api/types/alta-player/blinkingcontroller) <span>Alta.Character</span>
+- [BlinkingController.EyeBlinker](/mod/game-api/types/alta-player/blinkingcontroller-eyeblinker) <span>Alta.Character</span>
+- [BlobEdge](/mod/game-api/types/alta-world-generation/blobedge) <span>Alta.Caves.PluginParts</span>
+- [BlobEdgeInstance](/mod/game-api/types/alta-world-generation/blobedgeinstance) <span>Alta.Caves.PluginParts</span>
+- [BlockableCamera](/mod/game-api/types/alta-customization/blockablecamera) <span>Alta.ScreenshotCamera</span>
+- [BlockedTrigger](/mod/game-api/types/alta-items/blockedtrigger) <span>Alta.Impact</span>
+- [BlockingCharge](/mod/game-api/types/global-a-b/blockingcharge)
+- [BlockingCharge.Create](/mod/game-api/types/global-a-b/blockingcharge-create)
+- [BlockLevel](/mod/game-api/types/global-a-b/blocklevel)
+- [Blur](/mod/game-api/types/alta-world-generation/blur) <span>Alta.Caves.PluginParts</span>
+- [BlurInstance](/mod/game-api/types/alta-world-generation/blurinstance) <span>Alta.Caves.PluginParts</span>
+- [BobbingController](/mod/game-api/types/global-a-b/bobbingcontroller)
+- [BodyController](/mod/game-api/types/alta-player/bodycontroller) <span>Alta.Character</span>
+- [BodyController.BodyControllerSettingsOverride](/mod/game-api/types/alta-player/bodycontroller-bodycontrollersettingsoverride) <span>Alta.Character</span>
+- [BodyControllerSettings](/mod/game-api/types/alta-player/bodycontrollersettings) <span>Alta.Character</span>
+- [BodyControllerSettings.Create](/mod/game-api/types/alta-player/bodycontrollersettings-create) <span>Alta.Character</span>
+- [BodyProjection](/mod/game-api/types/alta-player/bodyprojection) <span>Alta.Character</span>
+- [BodyTypePickup](/mod/game-api/types/alta-customization/bodytypepickup) <span>Alta.Customization</span>
+- [BodyTypeSettings](/mod/game-api/types/alta-player/bodytypesettings) <span>Alta.Character</span>
+- [BoilingParticles](/mod/game-api/types/alta-stats-effects/boilingparticles) <span>Alta.Liquid</span>
+- [BoilingParticlesMaterialCreator](/mod/game-api/types/alta-stats-effects/boilingparticlesmaterialcreator) <span>Alta.Liquid</span>
+- [Bone](/mod/game-api/types/global-a-b/bone)
+- [BoneIdentifier](/mod/game-api/types/global-a-b/boneidentifier)
+- [BonesBaking](/mod/game-api/types/alta-customization/bonesbaking) <span>Alta.Customization</span>
+- [BoneWeightTestsMenuAction](/mod/game-api/types/alta-player/boneweighttestsmenuaction) <span>Alta.QuickAccessActions</span>
+- [BoneWeightTestsMenuAction.Settings](/mod/game-api/types/alta-player/boneweighttestsmenuaction-settings) <span>Alta.QuickAccessActions</span>
+- [BoneWithRotationLimit](/mod/game-api/types/alta-player/bonewithrotationlimit) <span>Alta.Character</span>
+- [BoneWithTwistLimit](/mod/game-api/types/alta-player/bonewithtwistlimit) <span>Alta.Character</span>
+- [Book](/mod/game-api/types/alta-items/book) <span>Alta.Pages</span>
+- [Book.FlairPositions](/mod/game-api/types/alta-items/book-flairpositions) <span>Alta.Pages</span>
+- [Book.LODRenderers](/mod/game-api/types/alta-items/book-lodrenderers) <span>Alta.Pages</span>
+- [BookFlair](/mod/game-api/types/alta-items/bookflair) <span>Alta.Pages</span>
+- [BookPageInstance](/mod/game-api/types/alta-items/bookpageinstance) <span>Alta.Pages</span>
+- [BookRestrictor](/mod/game-api/types/alta-items/bookrestrictor) <span>Alta.Pages</span>
+- [BookRestrictorSaveData](/mod/game-api/types/alta-items/bookrestrictorsavedata) <span>Alta.Pages</span>
+- [BookSaveData](/mod/game-api/types/alta-items/booksavedata) <span>Alta.Pages</span>
+- [BookSpawner](/mod/game-api/types/alta-items/bookspawner) <span>Alta.Pages</span>
+- [BooleanInput](/mod/game-api/types/global-a-b/booleaninput)
+- [BooleanRequest](/mod/game-api/types/assembly-api-models/booleanrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [BooleanResponse](/mod/game-api/types/assembly-api-models/booleanresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [BoolEvent](/mod/game-api/types/global-a-b/boolevent)
+- [BoolSenderInput](/mod/game-api/types/alta-items/boolsenderinput) <span>Alta.Logic</span>
+- [BoolSettingValue](/mod/game-api/types/alta-utilities/boolsettingvalue) <span>Alta.Utilities</span>
+- [BoolUnityEvent](/mod/game-api/types/global-a-b/boolunityevent)
+- [BoolValueLabeling](/mod/game-api/types/assembly-other/boolvaluelabeling)
+- [BorderDefinedAtmosphere](/mod/game-api/types/alta-world/borderdefinedatmosphere) <span>Alta.Environmental.Atmosphere</span>
+- [BottledLiquid](/mod/game-api/types/alta-stats-effects/bottledliquid) <span>Alta.Liquid</span>
+- [BottleLiquidMaterialCreator](/mod/game-api/types/alta-stats-effects/bottleliquidmaterialcreator) <span>Alta.Liquid</span>
+- [BoughtSkillCrystal](/mod/game-api/types/global-a-b/boughtskillcrystal)
+- [BoughtSkillOrbReplacer](/mod/game-api/types/global-a-b/boughtskillorbreplacer)
+- [BoughtSkillVisualizer](/mod/game-api/types/global-a-b/boughtskillvisualizer)
+- [BoughtSkillVisualizer.OrbHolderHandle](/mod/game-api/types/global-a-b/boughtskillvisualizer-orbholderhandle)
+- [BoughtSkillVisualizer.PositionMachine](/mod/game-api/types/global-a-b/boughtskillvisualizer-positionmachine)
+- [BoulderDefinition](/mod/game-api/types/alta-items/boulderdefinition) <span>Alta.Impact</span>
+- [BoulderDefinition.Create](/mod/game-api/types/alta-items/boulderdefinition-create) <span>Alta.Impact</span>
+- [BouncingValue](/mod/game-api/types/global-a-b/bouncingvalue)
+- [BoundExtensions](/mod/game-api/types/global-a-b/boundextensions)
+- [BoundsContainer](/mod/game-api/types/global-a-b/boundscontainer)
+- [BoundsDisplay](/mod/game-api/types/global-a-b/boundsdisplay)
+- [BoundsDockPositioning](/mod/game-api/types/alta-items/boundsdockpositioning) <span>Alta.Inventory</span>
+- [BoundsDockPositioning.SizeOrder](/mod/game-api/types/alta-items/boundsdockpositioning-sizeorder) <span>Alta.Inventory</span>
+- [BoundsPopulationItem](/mod/game-api/types/alta-world-generation/boundspopulationitem) <span>Alta.Populations</span>
+- [Bow](/mod/game-api/types/global-a-b/bow)
+- [BowDrawSkill](/mod/game-api/types/alta-player/bowdrawskill) <span>Alta.Progression.Skills</span>
+- [BowMultiArrowShot](/mod/game-api/types/alta-player/bowmultiarrowshot) <span>Alta.Progression.Skills</span>
+- [BowMultiArrowShot.Create](/mod/game-api/types/alta-player/bowmultiarrowshot-create) <span>Alta.Progression.Skills</span>
+- [BowQuickdraw](/mod/game-api/types/alta-player/bowquickdraw) <span>Alta.Progression.Skills</span>
+- [BowQuickdraw.Create](/mod/game-api/types/alta-player/bowquickdraw-create) <span>Alta.Progression.Skills</span>
+- [BowSlowdraw](/mod/game-api/types/alta-player/bowslowdraw) <span>Alta.Progression.Skills</span>
+- [BowSlowdraw.Create](/mod/game-api/types/alta-player/bowslowdraw-create) <span>Alta.Progression.Skills</span>
+- [BowString](/mod/game-api/types/global-a-b/bowstring)
+- [BowStringPullbackInputMethod](/mod/game-api/types/global-a-b/bowstringpullbackinputmethod)
+- [BowStringPullbackStructure](/mod/game-api/types/global-a-b/bowstringpullbackstructure)
+- [BowStringPullbackStructure.Create](/mod/game-api/types/global-a-b/bowstringpullbackstructure-create)
+- [BreakOnImpact](/mod/game-api/types/global-a-b/breakonimpact)
+- [BreakOnImpact.TransformProxyEvent](/mod/game-api/types/global-a-b/breakonimpact-transformproxyevent)
+- [BreakOnImpact.TransformProxyHandler](/mod/game-api/types/global-a-b/breakonimpact-transformproxyhandler)
+- [BreathableArea](/mod/game-api/types/alta-stats-effects/breathablearea) <span>Alta.Alchemy</span>
+- [BubbleInspector](/mod/game-api/types/global-a-b/bubbleinspector)
+- [BubbleInspectorFieldAttribute](/mod/game-api/types/global-a-b/bubbleinspectorfieldattribute)
+- [BubbleInspectorMethodAttribute](/mod/game-api/types/global-a-b/bubbleinspectormethodattribute)
+- [BudgetedUpdateModule](/mod/game-api/types/global-a-b/budgetedupdatemodule)
+- [BudgetedUpdateModuleProfiler](/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler)
+- [BudgetedUpdateModuleProfiler.BudgetedData](/mod/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata)
+- [BudgetedUpdateModuleProfilerComponent](/mod/game-api/types/global-a-b/budgetedupdatemoduleprofilercomponent)
+- [BufferChangeRequest](/mod/game-api/types/assembly-api-models/bufferchangerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [BuilderDock](/mod/game-api/types/alta-crafting/builderdock) <span>Alta.Carpentry</span>
+- [BuilderDock.BoolDelegate](/mod/game-api/types/alta-crafting/builderdock-booldelegate) <span>Alta.Carpentry</span>
+- [BuildingAnimation](/mod/game-api/types/global-a-b/buildinganimation)
+- [BuildingAnimationEvent](/mod/game-api/types/global-a-b/buildinganimationevent)
+- [BuildingAnimationUnityEvent](/mod/game-api/types/global-a-b/buildinganimationunityevent)
+- [BuildingAnimationWrapper](/mod/game-api/types/global-a-b/buildinganimationwrapper)
+- [BuildingRooms](/mod/game-api/types/alta-world-generation/buildingrooms) <span>Alta.PAGaC</span>
+- [BuildingRooms.NodeRange](/mod/game-api/types/alta-world-generation/buildingrooms-noderange) <span>Alta.PAGaC</span>
+- [BuildingRooms.Room](/mod/game-api/types/alta-world-generation/buildingrooms-room) <span>Alta.PAGaC</span>
+- [BuildingRooms.RoomNode](/mod/game-api/types/alta-world-generation/buildingrooms-roomnode) <span>Alta.PAGaC</span>
+- [BuildingRooms.RoomPath](/mod/game-api/types/alta-world-generation/buildingrooms-roompath) <span>Alta.PAGaC</span>
+- [BuildPipelinePathData](/mod/game-api/types/global-a-b/buildpipelinepathdata)
+- [BuildRendererBakeable](/mod/game-api/types/assembly-other/buildrendererbakeable)
+- [BuildTestAttribute](/mod/game-api/types/assembly-other/buildtestattribute)
+- [BuildupChild](/mod/game-api/types/global-a-b/buildupchild)
+- [BuildUpconcoctionEffect](/mod/game-api/types/alta-stats-effects/buildupconcoctioneffect) <span>Alta.Alchemy</span>
+- [BuildupPickup](/mod/game-api/types/global-a-b/builduppickup)
+- [BuildupPickup.DisposeData](/mod/game-api/types/global-a-b/builduppickup-disposedata)
+- [BuildupPickupEvent](/mod/game-api/types/global-a-b/builduppickupevent)
+- [BuildupPickupHandler](/mod/game-api/types/global-a-b/builduppickuphandler)
+- [BuildupPickupSaveData](/mod/game-api/types/global-a-b/builduppickupsavedata)
+- [BuildupTeleportEffect](/mod/game-api/types/alta-stats-effects/buildupteleporteffect) <span>Alta.Alchemy</span>
+- [BuildVersionException](/mod/game-api/types/alta-utilities/buildversionexception) <span>Alta.Utilities</span>
+- [BuildVersionExtensions](/mod/game-api/types/alta-utilities/buildversionextensions) <span>Alta.Utilities</span>
+- [BuriedItemTag](/mod/game-api/types/global-a-b/burieditemtag)
+- [BurnEffect](/mod/game-api/types/alta-stats-effects/burneffect) <span>Alta.Alchemy</span>
+- [BurnStat](/mod/game-api/types/alta-stats-effects/burnstat) <span>Alta.StatSystem</span>
+- [BurnStat.Create](/mod/game-api/types/alta-stats-effects/burnstat-create) <span>Alta.StatSystem</span>
+- [Button](/mod/game-api/types/alta-menus/button) <span>Alta.Meta.UI</span>
+- [ButtonAttribute](/mod/game-api/types/assembly-other/buttonattribute)
+- [ButtonCollection](/mod/game-api/types/alta-menus/buttoncollection) <span>Alta.Meta.UI</span>
+- [ButtonCounter](/mod/game-api/types/global-a-b/buttoncounter)
+- [ButtonCounter.AmountChangedHandler](/mod/game-api/types/global-a-b/buttoncounter-amountchangedhandler)
+- [ButtonCounter.CounterMode](/mod/game-api/types/global-a-b/buttoncounter-countermode)
+- [ButtonCounter.CountSyncMode](/mod/game-api/types/global-a-b/buttoncounter-countsyncmode)
+- [ButtonCounter.TextRendererSettings](/mod/game-api/types/global-a-b/buttoncounter-textrenderersettings)
+- [ButtonCounterSaveData](/mod/game-api/types/global-a-b/buttoncountersavedata)
+- [ButtonEnumMenuSetting](/mod/game-api/types/alta-menus/buttonenummenusetting) <span>Alta.Menu</span>
+- [ButtonEvents](/mod/game-api/types/alta-menus/buttonevents) <span>Alta.Meta.UI</span>
+- [ButtonGroup](/mod/game-api/types/alta-customization/buttongroup) <span>Alta.ScreenshotCamera</span>
+- [ButtonSettings](/mod/game-api/types/alta-menus/buttonsettings) <span>Alta.Meta.UI</span>
+- [ButtonSoundSettings](/mod/game-api/types/global-a-b/buttonsoundsettings)
+- [ButtonWithEvents](/mod/game-api/types/alta-menus/buttonwithevents) <span>Alta.Meta.UI</span>
+
+</div>
+
+## C
+
+<div className="type-index">
+
+- [CachedDirectory](/mod/game-api/types/alta-utilities/cacheddirectory) <span>Alta.AssetBaking</span>
+- [CachedSyncChannel](/mod/game-api/types/global-c-d/cachedsyncchannel)
+- [CacheFileFormat](/mod/game-api/types/alta-world/cachefileformat) <span>Alta.Static</span>
+- [CacheManager](/mod/game-api/types/alta-world/cachemanager) <span>Alta.Static</span>
+- [CacheTransformAttribute](/mod/game-api/types/assembly-other/cachetransformattribute)
+- [CacheTransformIfEmptyAttribute](/mod/game-api/types/assembly-other/cachetransformifemptyattribute)
+- [CameraButton](/mod/game-api/types/alta-customization/camerabutton) <span>Alta.ScreenshotCamera</span>
+- [CameraClaimer](/mod/game-api/types/global-c-d/cameraclaimer)
+- [CameraEventsListener](/mod/game-api/types/alta-customization/cameraeventslistener) <span>Alta.ScreenshotCamera</span>
+- [CameraFilters](/mod/game-api/types/alta-customization/camerafilters) <span>Alta.ScreenshotCamera</span>
+- [CameraRenderEvents](/mod/game-api/types/alta-customization/camerarenderevents) <span>Alta.ScreenshotCamera</span>
+- [CameraStabelizer](/mod/game-api/types/global-c-d/camerastabelizer)
+- [CameraStabilization](/mod/game-api/types/alta-customization/camerastabilization) <span>Alta.ScreenshotCamera</span>
+- [CapPickup](/mod/game-api/types/global-c-d/cappickup)
+- [CapsuleBlockableCamera](/mod/game-api/types/alta-customization/capsuleblockablecamera) <span>Alta.ScreenshotCamera</span>
+- [CaptainsWheel](/mod/game-api/types/global-c-d/captainswheel)
+- [CastToSurfaceEffect](/mod/game-api/types/global-c-d/casttosurfaceeffect)
+- [Category](/mod/game-api/types/alta-world-generation/category) <span>Alta.Loot</span>
+- [Category.Create](/mod/game-api/types/alta-world-generation/category-create) <span>Alta.Loot</span>
+- [CategoryScrollElement](/mod/game-api/types/alta-customization/categoryscrollelement) <span>Alta.Customization</span>
+- [CategoryScrollManager](/mod/game-api/types/alta-customization/categoryscrollmanager) <span>Alta.Customization</span>
+- [CategoryScrubberController](/mod/game-api/types/alta-customization/categoryscrubbercontroller) <span>Alta.Customization</span>
+- [CaveAmbience](/mod/game-api/types/alta-world/caveambience) <span>Alta.Environmental.Atmosphere</span>
+- [CaveBiomeGenerator](/mod/game-api/types/alta-world-generation/cavebiomegenerator) <span>Alta.Caves</span>
+- [CaveGeneratingBiome](/mod/game-api/types/alta-world-generation/cavegeneratingbiome) <span>Alta.Caves</span>
+- [CaveLayerChunk](/mod/game-api/types/alta-world/cavelayerchunk) <span>Alta.Chunks</span>
+- [CaveLayerManager](/mod/game-api/types/alta-world-generation/cavelayermanager) <span>Alta.Caves</span>
+- [CaveLayerManagerSaveData](/mod/game-api/types/alta-world-generation/cavelayermanagersavedata) <span>Alta.Caves</span>
+- [CaveLayerManagerSaveData3](/mod/game-api/types/alta-world-generation/cavelayermanagersavedata3) <span>Alta.Caves</span>
+- [CaveLayerManagerSaveDataOld](/mod/game-api/types/alta-world-generation/cavelayermanagersavedataold) <span>Alta.Caves</span>
+- [CaveLayerManagerSaveDataOld2](/mod/game-api/types/alta-world-generation/cavelayermanagersavedataold2) <span>Alta.Caves</span>
+- [CaveLayerStaticObject](/mod/game-api/types/alta-world/cavelayerstaticobject) <span>Alta.Chunks</span>
+- [CaveLayerStreamer](/mod/game-api/types/alta-world/cavelayerstreamer) <span>Alta.Chunks</span>
+- [CaveLayerStreamerSaveData](/mod/game-api/types/alta-world/cavelayerstreamersavedata) <span>Alta.Chunks</span>
+- [CavePopulationSpawnInformation](/mod/game-api/types/alta-world-generation/cavepopulationspawninformation) <span>Alta.Populations</span>
+- [CaveSeedArguments](/mod/game-api/types/global-c-d/caveseedarguments)
+- [CaveSettings&lt;T&gt;](/mod/game-api/types/alta-world-generation/cavesettings-t) <span>Alta.Caves</span>
+- [CaveTeleportConnection](/mod/game-api/types/alta-world-generation/caveteleportconnection) <span>Alta.Caves</span>
+- [CaveTeleporter](/mod/game-api/types/alta-world-generation/caveteleporter) <span>Alta.Caves</span>
+- [CaveTeleporterData](/mod/game-api/types/alta-world-generation/caveteleporterdata) <span>Alta.Caves</span>
+- [CaveTeleporterManager](/mod/game-api/types/alta-world-generation/caveteleportermanager) <span>Alta.Caves</span>
+- [CaveTeleporterManagerData](/mod/game-api/types/alta-world-generation/caveteleportermanagerdata) <span>Alta.Caves</span>
+- [CaveTeleporterPip](/mod/game-api/types/alta-world-generation/caveteleporterpip) <span>Alta.Caves</span>
+- [CaveTeleporterProxy](/mod/game-api/types/alta-world-generation/caveteleporterproxy) <span>Alta.Caves</span>
+- [CaveTeleporterProxyData](/mod/game-api/types/alta-world-generation/caveteleporterproxydata) <span>Alta.Caves</span>
+- [CaveTeleporterReplacer](/mod/game-api/types/global-c-d/caveteleporterreplacer)
+- [CaveTeleporterReplacerAnimator](/mod/game-api/types/global-c-d/caveteleporterreplaceranimator)
+- [CaveTeleporterReplacerAnimator.ObjectHandler](/mod/game-api/types/global-c-d/caveteleporterreplaceranimator-objecthandler)
+- [CaveTeleportSettings](/mod/game-api/types/alta-world-generation/caveteleportsettings) <span>Alta.Caves</span>
+- [CellularAutomata](/mod/game-api/types/alta-world-generation/cellularautomata) <span>Alta.Caves.PluginParts</span>
+- [CellularAutomataInstance](/mod/game-api/types/alta-world-generation/cellularautomatainstance) <span>Alta.Caves.PluginParts</span>
+- [CenterOfMassSetter](/mod/game-api/types/global-c-d/centerofmasssetter)
+- [CentralGoldCoinBank](/mod/game-api/types/global-c-d/centralgoldcoinbank)
+- [ChallengeAnalyticsEvent](/mod/game-api/types/game-other-namespaces/challengeanalyticsevent) <span>ATT.Analytics</span>
+- [Chance](/mod/game-api/types/alta-intelligence/chance) <span>Alta.Intelligence</span>
+- [ChanceBasedEffectDefinition](/mod/game-api/types/alta-stats-effects/chancebasedeffectdefinition) <span>Alta.Alchemy</span>
+- [ChanceOperation](/mod/game-api/types/alta-intelligence/chanceoperation) <span>Alta.Intelligence</span>
+- [ChangeBalanceRequest](/mod/game-api/types/assembly-api-models/changebalancerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ChangePasswordRequest](/mod/game-api/types/assembly-api-models/changepasswordrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ChangeUsernameRequest](/mod/game-api/types/assembly-api-models/changeusernamerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [Character](/mod/game-api/types/alta-intelligence/character) <span>Alta.Intelligence</span>
+- [CharacterCollisionController](/mod/game-api/types/alta-player/charactercollisioncontroller) <span>Alta.Character</span>
+- [CharacterCollisionController.CollidersToDisableWhenInteracting](/mod/game-api/types/alta-player/charactercollisioncontroller-colliderstodisablewheninteracting) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper.BoneBoxCollider](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper-boneboxcollider) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper.BoneCapsuleCollider](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper-bonecapsulecollider) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper.BoneCollider](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper-bonecollider) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper.BoneMeshCollider](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper-bonemeshcollider) <span>Alta.Character</span>
+- [CharacterCollisionControllerHelper.HandPalmCollider](/mod/game-api/types/alta-player/charactercollisioncontrollerhelper-handpalmcollider) <span>Alta.Character</span>
+- [CharacterComponentController](/mod/game-api/types/alta-player/charactercomponentcontroller) <span>Alta.Character</span>
+- [CharacterComponentControllerCollection](/mod/game-api/types/alta-player/charactercomponentcontrollercollection) <span>Alta.Character</span>
+- [CharacterComponentHelper&lt;T&gt;](/mod/game-api/types/alta-player/charactercomponenthelper-t) <span>Alta.Character</span>
+- [CharacterControllerEvent](/mod/game-api/types/global-c-d/charactercontrollerevent)
+- [CharacterControllerUnityEvent](/mod/game-api/types/global-c-d/charactercontrollerunityevent)
+- [CharacterDockManager](/mod/game-api/types/alta-items/characterdockmanager) <span>Alta.Inventory</span>
+- [CharacterDummy](/mod/game-api/types/alta-player/characterdummy) <span>Alta.Character</span>
+- [CharacterDummyController](/mod/game-api/types/global-c-d/characterdummycontroller)
+- [CharacterDummyPointer](/mod/game-api/types/global-c-d/characterdummypointer)
+- [CharacterDummySpawner](/mod/game-api/types/global-c-d/characterdummyspawner)
+- [CharacterEye](/mod/game-api/types/alta-player/charactereye) <span>Alta.Character</span>
+- [CharacterEye.RotationLimit](/mod/game-api/types/alta-player/charactereye-rotationlimit) <span>Alta.Character</span>
+- [CharacterIKController](/mod/game-api/types/global-c-d/characterikcontroller)
+- [CharacterInfo](/mod/game-api/types/global-c-d/characterinfo)
+- [CharacterLocalityController](/mod/game-api/types/alta-player/characterlocalitycontroller) <span>Alta.Character</span>
+- [CharacterPoseSaver](/mod/game-api/types/global-c-d/characterposesaver)
+- [CharacterRendererLOD](/mod/game-api/types/alta-player/characterrendererlod) <span>Alta.Character.MeshRenderers</span>
+- [CharacterRigPoser](/mod/game-api/types/global-c-d/characterrigposer)
+- [CharacterShellHelper](/mod/game-api/types/global-c-d/charactershellhelper)
+- [ChargeInfo](/mod/game-api/types/assembly-api-models/chargeinfo) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [CheckPoint](/mod/game-api/types/global-c-d/checkpoint)
+- [CheckPointData](/mod/game-api/types/global-c-d/checkpointdata)
+- [Chest](/mod/game-api/types/alta-items/chest) <span>Alta.Inventory</span>
+- [ChildCheckOnOwned](/mod/game-api/types/global-c-d/childcheckonowned)
+- [ChildSyncableCollection&lt;T, TThis, TSaveData, TElementSaveData&gt;](/mod/game-api/types/global-c-d/childsyncablecollection-t-tthis-tsavedata-telementsavedata)
+- [ChildSyncableCollectionBase&lt;T&gt;](/mod/game-api/types/global-c-d/childsyncablecollectionbase-t)
+- [ChildSyncableCollectionSaveData&lt;TThis, TSavable, TData&gt;](/mod/game-api/types/global-c-d/childsyncablecollectionsavedata-tthis-tsavable-tdata)
+- [Chiselable](/mod/game-api/types/alta-crafting/chiselable) <span>Alta.Carpentry</span>
+- [ChiselableEvent](/mod/game-api/types/alta-crafting/chiselableevent) <span>Alta.Carpentry</span>
+- [ChiselableSurfaceDock](/mod/game-api/types/game-other-namespaces/chiselablesurfacedock) <span>Features.Gameplay.Inventory.SurfaceDock</span>
+- [ChiselableUnityEvent](/mod/game-api/types/alta-crafting/chiselableunityevent) <span>Alta.Carpentry</span>
+- [ChiselBlockSize](/mod/game-api/types/alta-crafting/chiselblocksize) <span>Alta.Carpentry</span>
+- [ChiselDefinition](/mod/game-api/types/alta-crafting/chiseldefinition) <span>Alta.Carpentry</span>
+- [ChiselDefinition.Create](/mod/game-api/types/alta-crafting/chiseldefinition-create) <span>Alta.Carpentry</span>
+- [ChiselDefinition.SpawnSpread](/mod/game-api/types/alta-crafting/chiseldefinition-spawnspread) <span>Alta.Carpentry</span>
+- [ChiselHit](/mod/game-api/types/alta-crafting/chiselhit) <span>Alta.Carpentry</span>
+- [ChiselingFilter](/mod/game-api/types/alta-crafting/chiselingfilter) <span>Alta.Carpentry</span>
+- [ChiselingFilterSettings](/mod/game-api/types/alta-crafting/chiselingfiltersettings) <span>Alta.Carpentry</span>
+- [ChiselingTool](/mod/game-api/types/alta-crafting/chiselingtool) <span>Alta.Carpentry</span>
+- [ChisellingDeck](/mod/game-api/types/alta-crafting/chisellingdeck) <span>Alta.Carpentry</span>
+- [ChisellingDeck.BuilderLevel](/mod/game-api/types/alta-crafting/chisellingdeck-builderlevel) <span>Alta.Carpentry</span>
+- [ChisellingDeckSaveData](/mod/game-api/types/alta-crafting/chisellingdecksavedata) <span>Alta.Carpentry</span>
+- [ChisellingDeckSaveData2](/mod/game-api/types/alta-crafting/chisellingdecksavedata2) <span>Alta.Carpentry</span>
+- [ChiselRecipePageProvider](/mod/game-api/types/global-c-d/chiselrecipepageprovider)
+- [ChiselRecipePageSettings](/mod/game-api/types/global-c-d/chiselrecipepagesettings)
+- [ChiselRecipePageSettings.Create](/mod/game-api/types/global-c-d/chiselrecipepagesettings-create)
+- [ChiselSplineParticlesPooled](/mod/game-api/types/global-c-d/chiselsplineparticlespooled)
+- [ChooseRandomChild](/mod/game-api/types/global-c-d/chooserandomchild)
+- [Chunk](/mod/game-api/types/alta-world/chunk) <span>Alta.Chunks</span>
+- [ChunkAdjacencyConfiguration](/mod/game-api/types/alta-world/chunkadjacencyconfiguration) <span>Alta.Chunks</span>
+- [ChunkBasedEnvironment](/mod/game-api/types/global-c-d/chunkbasedenvironment)
+- [ChunkConnections](/mod/game-api/types/alta-world/chunkconnections) <span>Alta.Chunks</span>
+- [ChunkContentManager](/mod/game-api/types/alta-world/chunkcontentmanager) <span>Alta.Chunks</span>
+- [ChunkConverter](/mod/game-api/types/global-c-d/chunkconverter)
+- [ChunkDetector](/mod/game-api/types/global-c-d/chunkdetector)
+- [ChunkDisplay](/mod/game-api/types/alta-utilities/chunkdisplay) <span>Alta.Utilities.Profiling</span>
+- [ChunkDisplayTool](/mod/game-api/types/game-other-namespaces/chunkdisplaytool) <span>ATT.FeatureTestGymnasium</span>
+- [ChunkEffect](/mod/game-api/types/alta-world/chunkeffect) <span>Alta.Chunks</span>
+- [ChunkEntityManager](/mod/game-api/types/alta-world/chunkentitymanager) <span>Alta.Chunks</span>
+- [ChunkEnvironment](/mod/game-api/types/alta-world/chunkenvironment) <span>Alta.Chunks</span>
+- [Chunker](/mod/game-api/types/global-c-d/chunker)
+- [ChunkerChangedHandler](/mod/game-api/types/global-c-d/chunkerchangedhandler)
+- [ChunkerHelper](/mod/game-api/types/global-c-d/chunkerhelper)
+- [ChunkEventHandler](/mod/game-api/types/global-c-d/chunkeventhandler)
+- [ChunkFileHelper](/mod/game-api/types/alta-world/chunkfilehelper) <span>Alta.Chunks</span>
+- [ChunkInfo](/mod/game-api/types/alta-console/chunkinfo) <span>Alta.Console.Commands</span>
+- [ChunkingParent](/mod/game-api/types/global-c-d/chunkingparent)
+- [ChunkingPrefabFolder](/mod/game-api/types/global-c-d/chunkingprefabfolder)
+- [ChunkingPrefabReplace](/mod/game-api/types/global-c-d/chunkingprefabreplace)
+- [ChunkMatrix](/mod/game-api/types/alta-world/chunkmatrix) <span>Alta.Chunks</span>
+- [ChunkPhysicsResolver](/mod/game-api/types/global-c-d/chunkphysicsresolver)
+- [ChunkPlayerManager](/mod/game-api/types/alta-world/chunkplayermanager) <span>Alta.Chunks</span>
+- [ChunkPositions](/mod/game-api/types/alta-world/chunkpositions) <span>Alta.Chunks</span>
+- [ChunkPositionSurface](/mod/game-api/types/alta-world/chunkpositionsurface) <span>Alta.Chunks</span>
+- [ChunkPrefabPointer](/mod/game-api/types/alta-world/chunkprefabpointer) <span>Alta.Chunks</span>
+- [ChunkPrefabPointer.PointerInstance](/mod/game-api/types/alta-world/chunkprefabpointer-pointerinstance) <span>Alta.Chunks</span>
+- [ChunkReference](/mod/game-api/types/alta-world/chunkreference) <span>Alta.Chunks</span>
+- [ChunkRegion](/mod/game-api/types/alta-menus/chunkregion) <span>Alta.FriendLocation</span>
+- [ChunkSaveFormat](/mod/game-api/types/alta-utilities/chunksaveformat) <span>Alta.Utilities</span>
+- [ChunkSaveFormat.Version](/mod/game-api/types/alta-utilities/chunksaveformat-version) <span>Alta.Utilities</span>
+- [ChunkSaveVersion](/mod/game-api/types/alta-world/chunksaveversion) <span>Alta.Chunks</span>
+- [ChunksChanged](/mod/game-api/types/alta-networking/chunkschanged) <span>Alta.Networking</span>
+- [ChunkSetEventHandler](/mod/game-api/types/global-c-d/chunkseteventhandler)
+- [ChunksToSync](/mod/game-api/types/global-c-d/chunkstosync)
+- [ChunkSync](/mod/game-api/types/alta-world/chunksync) <span>Alta.Chunks</span>
+- [ChunkSync.Set](/mod/game-api/types/alta-world/chunksync-set) <span>Alta.Chunks</span>
+- [ChunkThread](/mod/game-api/types/alta-world-generation/chunkthread) <span>Alta.Caves</span>
+- [ChunkVersioning](/mod/game-api/types/alta-world/chunkversioning) <span>Alta.Saving</span>
+- [Circle](/mod/game-api/types/alta-world-generation/circle) <span>Alta.Caves.PluginParts</span>
+- [CircleInstance](/mod/game-api/types/alta-world-generation/circleinstance) <span>Alta.Caves.PluginParts</span>
+- [CircularSpawnPointGenerator](/mod/game-api/types/alta-world-generation/circularspawnpointgenerator) <span>Alta.Populations</span>
+- [ClaimOculusItemsResponse](/mod/game-api/types/assembly-api-models/claimoculusitemsresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ClassSerializationHelper](/mod/game-api/types/global-c-d/classserializationhelper)
+- [ClassSerializationHelper.Finalize&lt;T&gt;](/mod/game-api/types/global-c-d/classserializationhelper-finalize-t)
+- [ClassSerializationHelper.MemberHandler&lt;T&gt;](/mod/game-api/types/global-c-d/classserializationhelper-memberhandler-t)
+- [ClassSerializer&lt;T&gt;](/mod/game-api/types/global-c-d/classserializer-t)
+- [ClavicleController](/mod/game-api/types/alta-player/claviclecontroller) <span>Alta.Character</span>
+- [ClavicleControllerSettings](/mod/game-api/types/alta-player/claviclecontrollersettings) <span>Alta.Character</span>
+- [ClavicleControllerSettings.Create](/mod/game-api/types/alta-player/claviclecontrollersettings-create) <span>Alta.Character</span>
+- [CleaningHelper](/mod/game-api/types/global-c-d/cleaninghelper)
+- [CleanNullsAttribute](/mod/game-api/types/assembly-other/cleannullsattribute)
+- [CleanRange](/mod/game-api/types/assembly-other/cleanrange)
+- [ClickedEndEventHandler](/mod/game-api/types/global-c-d/clickedendeventhandler)
+- [ClickedEventHandler](/mod/game-api/types/global-c-d/clickedeventhandler)
+- [ClientCacheManager](/mod/game-api/types/alta-world/clientcachemanager) <span>Alta.Static</span>
+- [ClientCacheManager.FileDownloader](/mod/game-api/types/alta-world/clientcachemanager-filedownloader) <span>Alta.Static</span>
+- [ClientChunkContentManager](/mod/game-api/types/alta-world/clientchunkcontentmanager) <span>Alta.Chunks</span>
+- [ClientCommandHandler](/mod/game-api/types/global-c-d/clientcommandhandler)
+- [ClientCommandHandler.ReceivedMessage](/mod/game-api/types/global-c-d/clientcommandhandler-receivedmessage)
+- [ClientController](/mod/game-api/types/game-other-namespaces/clientcontroller) <span>ATT.MicroTutorial</span>
+- [ClientHandler](/mod/game-api/types/global-c-d/clienthandler)
+- [ClientJoinResult](/mod/game-api/types/global-c-d/clientjoinresult)
+- [ClientLandmarkManager](/mod/game-api/types/alta-world/clientlandmarkmanager) <span>Alta.Map</span>
+- [ClientLandmarkManager.MarkerEvent](/mod/game-api/types/alta-world/clientlandmarkmanager-markerevent) <span>Alta.Map</span>
+- [ClientLogSender](/mod/game-api/types/global-c-d/clientlogsender)
+- [ClientOnly](/mod/game-api/types/alta-networking/clientonly) <span>Alta.Networking</span>
+- [ClientOnlyAttribute](/mod/game-api/types/alta-console/clientonlyattribute) <span>Alta.Console</span>
+- [ClientPacketReceiver](/mod/game-api/types/alta-networking/clientpacketreceiver) <span>Alta.Networking</span>
+- [ClientSerializedEnumerable](/mod/game-api/types/alta-networking/clientserializedenumerable) <span>Alta.Networking.Internal</span>
+- [ClientSpawnManager](/mod/game-api/types/alta-networking/clientspawnmanager) <span>Alta.Networking</span>
+- [ClientStepInstanceMap](/mod/game-api/types/game-other-namespaces/clientstepinstancemap) <span>ATT.MicroTutorial</span>
+- [ClientSync](/mod/game-api/types/alta-networking/clientsync) <span>Alta.Networking</span>
+- [ClientTokenConfig](/mod/game-api/types/assembly-api-models/clienttokenconfig) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ClientTokenUtility](/mod/game-api/types/assembly-api-client/clienttokenutility) <span>Alta.Api.Client.Utility</span>
+- [CliffFill](/mod/game-api/types/alta-world-generation/clifffill) <span>Alta.Forests</span>
+- [CliffFill.RaycastRequest](/mod/game-api/types/alta-world-generation/clifffill-raycastrequest) <span>Alta.Forests</span>
+- [Climbable](/mod/game-api/types/global-c-d/climbable)
+- [Climber](/mod/game-api/types/global-c-d/climber)
+- [ClimberActivator](/mod/game-api/types/global-c-d/climberactivator)
+- [ClimberSettings](/mod/game-api/types/global-c-d/climbersettings)
+- [ClimberSettings.Raycast](/mod/game-api/types/global-c-d/climbersettings-raycast)
+- [ClimbingEditorSettings](/mod/game-api/types/game-other-namespaces/climbingeditorsettings) <span>Township.Climbing</span>
+- [ClimbingHand](/mod/game-api/types/game-other-namespaces/climbinghand) <span>Features.Climbing</span>
+- [ClimbingHandler](/mod/game-api/types/game-other-namespaces/climbinghandler) <span>Features.Climbing</span>
+- [ClimbingHandlerAnalytics](/mod/game-api/types/game-other-namespaces/climbinghandleranalytics) <span>Features.Climbing</span>
+- [ClimbingHandlerAnalytics.StaminaTracker](/mod/game-api/types/game-other-namespaces/climbinghandleranalytics-staminatracker) <span>Features.Climbing</span>
+- [ClimbingMovementEvent](/mod/game-api/types/game-other-namespaces/climbingmovementevent) <span>Features.Climbing</span>
+- [ClimbingPressureCalculator](/mod/game-api/types/game-other-namespaces/climbingpressurecalculator) <span>Features.Climbing</span>
+- [ClimbingSettings](/mod/game-api/types/global-c-d/climbingsettings)
+- [ClimbingSettings.LayerStaminaConsumptionMultiplier](/mod/game-api/types/global-c-d/climbingsettings-layerstaminaconsumptionmultiplier)
+- [ClimbingTowerAnalyticEventType](/mod/game-api/types/game-other-namespaces/climbingtoweranalyticeventtype) <span>Features.Analytics.ClimbingTower</span>
+- [ClimbingTowerProgressionVisualizer](/mod/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerProgressionVisualizer.RuneActivationElement](/mod/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizer-runeactivationelement) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerProgressionVisualizerSaveData](/mod/game-api/types/game-other-namespaces/climbingtowerprogressionvisualizersavedata) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterNode](/mod/game-api/types/game-other-namespaces/climbingtowerteleporternode) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterNodeSaveData](/mod/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedata) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterNodeSaveDataOld1](/mod/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold1) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterNodeSaveDataOld2](/mod/game-api/types/game-other-namespaces/climbingtowerteleporternodesavedataold2) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterPerPlayerSaveable](/mod/game-api/types/game-other-namespaces/climbingtowerteleporterperplayersaveable) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterSave](/mod/game-api/types/game-other-namespaces/climbingtowerteleportersave) <span>Features.Gameplay.ClimbingTower</span>
+- [ClimbingTowerTeleporterSaveData](/mod/game-api/types/game-other-namespaces/climbingtowerteleportersavedata) <span>Features.Gameplay.ClimbingTower</span>
+- [ClothesSettings](/mod/game-api/types/alta-player/clothessettings) <span>Alta.Character</span>
+- [ClothManager](/mod/game-api/types/global-c-d/clothmanager)
+- [ClumpSpawner](/mod/game-api/types/alta-world/clumpspawner) <span>Alta.Environmental.Vegetation</span>
+- [ClumpSpawner.ClumpLOD](/mod/game-api/types/alta-world/clumpspawner-clumplod) <span>Alta.Environmental.Vegetation</span>
+- [ClumpSpawner.Shape](/mod/game-api/types/alta-world/clumpspawner-shape) <span>Alta.Environmental.Vegetation</span>
+- [Cluster](/mod/game-api/types/global-c-d/cluster)
+- [ClusterEntitiesRegisterArguments](/mod/game-api/types/global-c-d/clusterentitiesregisterarguments)
+- [ClusterGenerator](/mod/game-api/types/alta-world-generation/clustergenerator) <span>Alta.Caves.Displays</span>
+- [ClusterSettings](/mod/game-api/types/alta-world-generation/clustersettings) <span>Alta.Caves.Displays</span>
+- [ClusterStreamer](/mod/game-api/types/alta-world/clusterstreamer) <span>Alta.Chunks</span>
+- [CoinPress](/mod/game-api/types/global-c-d/coinpress)
+- [CoinPressGear](/mod/game-api/types/global-c-d/coinpressgear)
+- [ColliderAltaEvent](/mod/game-api/types/global-c-d/collideraltaevent)
+- [ColliderDebugger](/mod/game-api/types/global-c-d/colliderdebugger)
+- [ColliderExtension](/mod/game-api/types/global-c-d/colliderextension)
+- [ColliderGroup](/mod/game-api/types/global-c-d/collidergroup)
+- [ColliderMap](/mod/game-api/types/alta-items/collidermap) <span>Alta.Impact</span>
+- [ColliderModifierSettings](/mod/game-api/types/alta-items/collidermodifiersettings) <span>Alta.Impact</span>
+- [ColliderPositionHelper](/mod/game-api/types/global-c-d/colliderpositionhelper)
+- [ColliderUnityEvent](/mod/game-api/types/global-c-d/colliderunityevent)
+- [CollisionFilter](/mod/game-api/types/alta-items/collisionfilter) <span>Alta.Impact</span>
+- [CollisionHaptic](/mod/game-api/types/global-c-d/collisionhaptic)
+- [CollisionImpulseReader](/mod/game-api/types/alta-intelligence/collisionimpulsereader) <span>Alta.Intelligence</span>
+- [CollisionSoundEmitter](/mod/game-api/types/global-c-d/collisionsoundemitter)
+- [ColorApiResponse](/mod/game-api/types/global-c-d/colorapiresponse)
+- [ColorApiResponse.NameObject](/mod/game-api/types/global-c-d/colorapiresponse-nameobject)
+- [ColorBoard](/mod/game-api/types/global-c-d/colorboard)
+- [ColorBoardItem](/mod/game-api/types/global-c-d/colorboarditem)
+- [ColoredExplosive](/mod/game-api/types/global-c-d/coloredexplosive)
+- [ColoredExplosiveData](/mod/game-api/types/global-c-d/coloredexplosivedata)
+- [ColoredMeshes](/mod/game-api/types/alta-customization/coloredmeshes) <span>Alta.Customization</span>
+- [ColoredParticleSystem](/mod/game-api/types/global-c-d/coloredparticlesystem)
+- [ColoredPooledParticleSpawner](/mod/game-api/types/global-c-d/coloredpooledparticlespawner)
+- [ColorEvent](/mod/game-api/types/global-c-d/colorevent)
+- [ColorFadeRelease](/mod/game-api/types/global-c-d/colorfaderelease)
+- [ColorLerp](/mod/game-api/types/global-c-d/colorlerp)
+- [ColorMaterialProperty](/mod/game-api/types/alta-utilities/colormaterialproperty) <span>Alta.Utilities</span>
+- [ColorModel&lt;TR, TG, TB, TA&gt;](/mod/game-api/types/global-c-d/colormodel-tr-tg-tb-ta)
+- [ColorModelCore&lt;TR, TG, TB, TA&gt;](/mod/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta)
+- [ColorUnityEvent](/mod/game-api/types/global-c-d/colorunityevent)
+- [CombatEventHandler](/mod/game-api/types/global-c-d/combateventhandler)
+- [CombatImpactProgressionFilter](/mod/game-api/types/global-c-d/combatimpactprogressionfilter)
+- [CombatImpactProgressionFilter.Create](/mod/game-api/types/global-c-d/combatimpactprogressionfilter-create)
+- [CombatShellAnimator](/mod/game-api/types/alta-player/combatshellanimator) <span>Alta.PlayerEffects</span>
+- [CombatShellSetting](/mod/game-api/types/alta-player/combatshellsetting) <span>Alta.PlayerEffects</span>
+- [CombatState](/mod/game-api/types/alta-player/combatstate) <span>Alta.PlayerStates</span>
+- [CombatStateSettings](/mod/game-api/types/alta-player/combatstatesettings) <span>Alta.PlayerStates</span>
+- [CombatStateSettings.Create](/mod/game-api/types/alta-player/combatstatesettings-create) <span>Alta.PlayerStates</span>
+- [CombatToCombatTransition](/mod/game-api/types/alta-player/combattocombattransition) <span>Alta.PlayerStates.Transitions</span>
+- [CombinedMeshSource](/mod/game-api/types/global-c-d/combinedmeshsource)
+- [Command](/mod/game-api/types/alta-console/command) <span>Alta.Console</span>
+- [CommandAttribute](/mod/game-api/types/alta-console/commandattribute) <span>Alta.Console</span>
+- [CommandCollection](/mod/game-api/types/alta-console/commandcollection) <span>Alta.Console</span>
+- [CommandContext](/mod/game-api/types/alta-console/commandcontext) <span>Alta.Console</span>
+- [CommandContextExtensions](/mod/game-api/types/alta-console/commandcontextextensions) <span>Alta.Console</span>
+- [CommandException](/mod/game-api/types/alta-console/commandexception) <span>Alta.Console</span>
+- [CommandExecutedData](/mod/game-api/types/game-other-namespaces/commandexecuteddata) <span>ATT.PlayerStates</span>
+- [CommandLineArgsLogger](/mod/game-api/types/alta-console/commandlineargslogger) <span>Alta.Logging</span>
+- [CommandLineArguments](/mod/game-api/types/assembly-other/commandlinearguments)
+- [CommandLineArgumentsInEditor](/mod/game-api/types/assembly-other/commandlineargumentsineditor)
+- [CommandPart](/mod/game-api/types/alta-console/commandpart) <span>Alta.Console</span>
+- [CommandResult](/mod/game-api/types/alta-console/commandresult) <span>Alta.Console</span>
+- [CommandResult&lt;T&gt;](/mod/game-api/types/alta-console/commandresult-t) <span>Alta.Console</span>
+- [CommandResultSuccess](/mod/game-api/types/alta-console/commandresultsuccess) <span>Alta.Console</span>
+- [CommandSearchResult](/mod/game-api/types/alta-console/commandsearchresult) <span>Alta.Console</span>
+- [CommandService](/mod/game-api/types/alta-console/commandservice) <span>Alta.Console</span>
+- [CommandSync](/mod/game-api/types/game-other-namespaces/commandsync) <span>ATT.Character.QuickAccessMenu</span>
+- [CommandSync.CommandSyncInfo](/mod/game-api/types/game-other-namespaces/commandsync-commandsyncinfo) <span>ATT.Character.QuickAccessMenu</span>
+- [CommandType](/mod/game-api/types/game-other-namespaces/commandtype) <span>GameCommands.Messages</span>
+- [Comment](/mod/game-api/types/assembly-api-models/comment) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [CommentAttribute](/mod/game-api/types/assembly-other/commentattribute)
+- [CommentAttribute.MessageType](/mod/game-api/types/assembly-other/commentattribute-messagetype)
+- [CommonPrefabs](/mod/game-api/types/global-c-d/commonprefabs)
+- [CommonPrefabs.Create](/mod/game-api/types/global-c-d/commonprefabs-create)
+- [CommunalStorage](/mod/game-api/types/alta-items/communalstorage) <span>Alta.Inventory</span>
+- [CommunalStorageData](/mod/game-api/types/alta-items/communalstoragedata) <span>Alta.Inventory</span>
+- [CommunalStorageUniqueIdentifier](/mod/game-api/types/alta-items/communalstorageuniqueidentifier) <span>Alta.Inventory</span>
+- [ComponentCounter](/mod/game-api/types/global-c-d/componentcounter)
+- [ComponentEventSubscriber](/mod/game-api/types/global-c-d/componenteventsubscriber)
+- [ComponentGroup&lt;T&gt;](/mod/game-api/types/global-c-d/componentgroup-t)
+- [ComponentGroup&lt;T&gt;.GroupModifiedHandler](/mod/game-api/types/global-c-d/componentgroup-t-groupmodifiedhandler)
+- [ComponentHistoryAccess](/mod/game-api/types/global-c-d/componenthistoryaccess)
+- [ComponentInspector](/mod/game-api/types/global-c-d/componentinspector)
+- [CompositeDisposable](/mod/game-api/types/assembly-other/compositedisposable) <span>Alta.LifecycleManagement</span>
+- [Compound](/mod/game-api/types/alta-intelligence/compound) <span>Alta.Intelligence</span>
+- [CompoundPart](/mod/game-api/types/alta-intelligence/compoundpart) <span>Alta.Intelligence</span>
+- [CompressionUtilities](/mod/game-api/types/global-c-d/compressionutilities)
+- [CompressionUtilities.ProgressDelegate](/mod/game-api/types/global-c-d/compressionutilities-progressdelegate)
+- [Compressor](/mod/game-api/types/assembly-other/compressor) <span>Alta.Serialization</span>
+- [ComputeShaderDarknessReader](/mod/game-api/types/global-c-d/computeshaderdarknessreader)
+- [Condition](/mod/game-api/types/assembly-api-models/condition) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ConditionalLabeling](/mod/game-api/types/assembly-other/conditionallabeling)
+- [ConditionAttribute](/mod/game-api/types/assembly-other/conditionattribute)
+- [ConfigurableJointExtensions](/mod/game-api/types/global-c-d/configurablejointextensions)
+- [ConfirmationCraftingPart](/mod/game-api/types/alta-crafting/confirmationcraftingpart) <span>Alta.Crafting</span>
+- [ConfirmationCraftingPart.ClientSideNailHitSync](/mod/game-api/types/alta-crafting/confirmationcraftingpart-clientsidenailhitsync) <span>Alta.Crafting</span>
+- [ConfirmJoinMessage](/mod/game-api/types/alta-networking/confirmjoinmessage) <span>Alta.Networking</span>
+- [ConfirmPopupPanel](/mod/game-api/types/alta-menus/confirmpopuppanel) <span>Alta.Meta.UI</span>
+- [ConglomerateDestroyByTime](/mod/game-api/types/global-c-d/conglomeratedestroybytime)
+- [ConnectEvent](/mod/game-api/types/alta-crafting/connectevent) <span>Alta.Crafting</span>
+- [Connection](/mod/game-api/types/alta-networking/connection) <span>Alta.Networking</span>
+- [ConnectionChannel](/mod/game-api/types/alta-networking/connectionchannel) <span>Alta.Networking</span>
+- [ConnectionChannel.Create](/mod/game-api/types/alta-networking/connectionchannel-create) <span>Alta.Networking</span>
+- [ConnectionChannelStatistic](/mod/game-api/types/alta-utilities/connectionchannelstatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [ConnectionChannelStatistics](/mod/game-api/types/alta-utilities/connectionchannelstatistics) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [ConnectionEventHandler](/mod/game-api/types/alta-networking/connectioneventhandler) <span>Alta.Networking</span>
+- [ConnectionInfo](/mod/game-api/types/assembly-api-models/connectioninfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ConnectionReceiver](/mod/game-api/types/alta-networking/connectionreceiver) <span>Alta.Networking.Internal</span>
+- [ConnectionReceiverType](/mod/game-api/types/alta-networking/connectionreceivertype) <span>Alta.Networking.Internal</span>
+- [ConnectionReceiveSettings](/mod/game-api/types/alta-networking/connectionreceivesettings) <span>Alta.Networking.Internal</span>
+- [ConnectionReceiveSettings.Create](/mod/game-api/types/alta-networking/connectionreceivesettings-create) <span>Alta.Networking.Internal</span>
+- [ConnectionSimulatorConfiguration](/mod/game-api/types/alta-networking/connectionsimulatorconfiguration) <span>Alta.Profiling.Networking</span>
+- [ConnectToServerUtility](/mod/game-api/types/alta-networking/connecttoserverutility) <span>Alta.Networking.Servers</span>
+- [ConsoleCommandRequest](/mod/game-api/types/assembly-api-models/consolecommandrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ConsoleCommandsLogTarget](/mod/game-api/types/alta-console/consolecommandslogtarget) <span>Alta.Logging.Targets</span>
+- [ConsoleDisplay](/mod/game-api/types/global-c-d/consoledisplay)
+- [ConsoleDisplay.Log](/mod/game-api/types/global-c-d/consoledisplay-log)
+- [ConsoleEvent](/mod/game-api/types/alta-console/consoleevent) <span>Alta.Console</span>
+- [ConsoleEvent.Processor](/mod/game-api/types/alta-console/consoleevent-processor) <span>Alta.Console</span>
+- [ConsoleEvent.QueueItem](/mod/game-api/types/alta-console/consoleevent-queueitem) <span>Alta.Console</span>
+- [ConsoleEvent&lt;T&gt;](/mod/game-api/types/alta-console/consoleevent-t) <span>Alta.Console</span>
+- [ConsoleEventProcessor](/mod/game-api/types/alta-console/consoleeventprocessor) <span>Alta.Console</span>
+- [ConsoleEvents](/mod/game-api/types/alta-console/consoleevents) <span>Alta.Console</span>
+- [ConsoleInput](/mod/game-api/types/game-other-namespaces/consoleinput) <span>WindowsConsole</span>
+- [ConsoleLogEvents](/mod/game-api/types/alta-console/consolelogevents) <span>Alta.Console</span>
+- [ConsoleLogEvents.LogEvent](/mod/game-api/types/alta-console/consolelogevents-logevent) <span>Alta.Console</span>
+- [ConsoleOption](/mod/game-api/types/global-c-d/consoleoption)
+- [ConsoleWindow](/mod/game-api/types/game-other-namespaces/consolewindow) <span>WindowsConsole</span>
+- [ConsoleWindow.CtrlType](/mod/game-api/types/game-other-namespaces/consolewindow-ctrltype) <span>WindowsConsole</span>
+- [ConsoleWindow.HandlerRoutine](/mod/game-api/types/game-other-namespaces/consolewindow-handlerroutine) <span>WindowsConsole</span>
+- [Constants](/mod/game-api/types/assembly-other/constants) <span>Alta.Authentication</span>
+- [ConstrainedSpawnerDisplay](/mod/game-api/types/alta-world-generation/constrainedspawnerdisplay) <span>Alta.Caves</span>
+- [Constructor](/mod/game-api/types/alta-world-generation/constructor) <span>Alta.PAGaC</span>
+- [Constructor.PlaceFound&lt;T&gt;](/mod/game-api/types/alta-world-generation/constructor-placefound-t) <span>Alta.PAGaC</span>
+- [Constructor.PlacingData&lt;T&gt;](/mod/game-api/types/alta-world-generation/constructor-placingdata-t) <span>Alta.PAGaC</span>
+- [ConsumableLock](/mod/game-api/types/alta-items/consumablelock) <span>Alta.Inventory</span>
+- [ConsumptionManager](/mod/game-api/types/global-c-d/consumptionmanager)
+- [ContactPointStructure](/mod/game-api/types/alta-items/contactpointstructure) <span>Alta.Impact</span>
+- [ContactProjectile](/mod/game-api/types/alta-items/contactprojectile) <span>Alta.Impact</span>
+- [ContainerBuilderExtensions](/mod/game-api/types/assembly-other/containerbuilderextensions) <span>Alta.ATT.LifetimeScopes</span>
+- [ContainerLiquidReceiver](/mod/game-api/types/alta-stats-effects/containerliquidreceiver) <span>Alta.Liquid</span>
+- [ContentState](/mod/game-api/types/alta-world/contentstate) <span>Alta.Chunks</span>
+- [ControlledAnimation](/mod/game-api/types/global-c-d/controlledanimation)
+- [ControlledRotateAndShake](/mod/game-api/types/global-c-d/controlledrotateandshake)
+- [ControlledStat](/mod/game-api/types/alta-stats-effects/controlledstat) <span>Alta.StatSystem</span>
+- [ControlledWriteSync](/mod/game-api/types/alta-networking/controlledwritesync) <span>Alta.Networking</span>
+- [Controller](/mod/game-api/types/global-c-d/controller)
+- [ControllerAction](/mod/game-api/types/global-c-d/controlleraction)
+- [ControllerActionEventHandler](/mod/game-api/types/global-c-d/controlleractioneventhandler)
+- [ControllerActionMode](/mod/game-api/types/global-c-d/controlleractionmode)
+- [ControllerActionProxy](/mod/game-api/types/global-c-d/controlleractionproxy)
+- [ControllerActions](/mod/game-api/types/global-c-d/controlleractions)
+- [ControllerActionsManager](/mod/game-api/types/global-c-d/controlleractionsmanager)
+- [ControllerActionsManagerProxy](/mod/game-api/types/global-c-d/controlleractionsmanagerproxy)
+- [ControllerActionType](/mod/game-api/types/global-c-d/controlleractiontype)
+- [ControllerDPad](/mod/game-api/types/global-c-d/controllerdpad)
+- [ControllerExtension](/mod/game-api/types/global-c-d/controllerextension)
+- [ControllerExtensionGroup](/mod/game-api/types/global-c-d/controllerextensiongroup)
+- [ControllerInput](/mod/game-api/types/global-c-d/controllerinput)
+- [ControllerInputButtonPressed](/mod/game-api/types/global-c-d/controllerinputbuttonpressed)
+- [ControllerMod](/mod/game-api/types/global-c-d/controllermod)
+- [ControllerModeSettings](/mod/game-api/types/global-c-d/controllermodesettings)
+- [ControllerModeType](/mod/game-api/types/global-c-d/controllermodetype)
+- [ControllerOffsetSettings](/mod/game-api/types/global-c-d/controlleroffsetsettings)
+- [ConvertedPagedResult&lt;TSource, T&gt;](/mod/game-api/types/assembly-api-client/convertedpagedresult-tsource-t) <span>Alta.Api.Client.LowLevel</span>
+- [Cookable](/mod/game-api/types/alta-crafting/cookable) <span>Alta.Cooking</span>
+- [CookableCategoryDefinition](/mod/game-api/types/alta-crafting/cookablecategorydefinition) <span>Alta.Cooking</span>
+- [CookableCategoryDefinition.Create](/mod/game-api/types/alta-crafting/cookablecategorydefinition-create) <span>Alta.Cooking</span>
+- [CookableCollectionDefinition](/mod/game-api/types/alta-crafting/cookablecollectiondefinition) <span>Alta.Cooking</span>
+- [CookableEvent](/mod/game-api/types/alta-crafting/cookableevent) <span>Alta.Cooking</span>
+- [CookableItem](/mod/game-api/types/alta-crafting/cookableitem) <span>Alta.Cooking</span>
+- [CookableSaveData](/mod/game-api/types/alta-crafting/cookablesavedata) <span>Alta.Cooking</span>
+- [CookableUnityEvent](/mod/game-api/types/alta-crafting/cookableunityevent) <span>Alta.Cooking</span>
+- [CookingGarnish](/mod/game-api/types/alta-crafting/cookinggarnish) <span>Alta.Cooking</span>
+- [CookingGarnishComponent](/mod/game-api/types/alta-crafting/cookinggarnishcomponent) <span>Alta.Cooking</span>
+- [CookingLiquid](/mod/game-api/types/alta-crafting/cookingliquid) <span>Alta.Cooking</span>
+- [CookingLiquidVisual](/mod/game-api/types/alta-crafting/cookingliquidvisual) <span>Alta.Cooking</span>
+- [CookingLiquidVisual.BoilingParticlesStageSetting](/mod/game-api/types/alta-crafting/cookingliquidvisual-boilingparticlesstagesetting) <span>Alta.Cooking</span>
+- [CookingLiquidVisualTippingPointController](/mod/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller) <span>Alta.Cooking</span>
+- [CookingLiquidVisualTippingPointController.TippingSettings](/mod/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller-tippingsettings) <span>Alta.Cooking</span>
+- [CookingPoint](/mod/game-api/types/alta-crafting/cookingpoint) <span>Alta.Cooking</span>
+- [CookingPointSettings](/mod/game-api/types/alta-crafting/cookingpointsettings) <span>Alta.Cooking</span>
+- [CookingPot](/mod/game-api/types/alta-crafting/cookingpot) <span>Alta.Cooking</span>
+- [CookingPot.CookingStage](/mod/game-api/types/alta-crafting/cookingpot-cookingstage) <span>Alta.Cooking</span>
+- [CookingPotSaveData](/mod/game-api/types/alta-crafting/cookingpotsavedata) <span>Alta.Cooking</span>
+- [CookingPotVolume](/mod/game-api/types/alta-crafting/cookingpotvolume) <span>Alta.Cooking</span>
+- [CookingSettings](/mod/game-api/types/alta-crafting/cookingsettings) <span>Alta.Cooking</span>
+- [CookingSettings.Create](/mod/game-api/types/alta-crafting/cookingsettings-create) <span>Alta.Cooking</span>
+- [CookingStage](/mod/game-api/types/alta-crafting/cookingstage) <span>Alta.Cooking</span>
+- [CookingStage.Stage](/mod/game-api/types/alta-crafting/cookingstage-stage) <span>Alta.Cooking</span>
+- [CookingTemperatureDuration](/mod/game-api/types/alta-crafting/cookingtemperatureduration) <span>Alta.Cooking</span>
+- [CookingTemperatures](/mod/game-api/types/alta-crafting/cookingtemperatures) <span>Alta.Cooking</span>
+- [CopyBone](/mod/game-api/types/global-c-d/copybone)
+- [CopyBoneGroup](/mod/game-api/types/global-c-d/copybonegroup)
+- [CopyPart](/mod/game-api/types/alta-world-generation/copypart) <span>Alta.Caves.PluginParts</span>
+- [CopyPartInstance](/mod/game-api/types/alta-world-generation/copypartinstance) <span>Alta.Caves.PluginParts</span>
+- [CopyToRenderTexture](/mod/game-api/types/global-c-d/copytorendertexture)
+- [CopyTransform](/mod/game-api/types/global-c-d/copytransform)
+- [CoroutineAwaiter](/mod/game-api/types/global-c-d/coroutineawaiter)
+- [CoroutineYields](/mod/game-api/types/assembly-other/coroutineyields)
+- [CoroutineYields.FloatComparer](/mod/game-api/types/assembly-other/coroutineyields-floatcomparer)
+- [CorrectedRotationSlerp](/mod/game-api/types/global-c-d/correctedrotationslerp)
+- [CorruptPlayerSaveFileException](/mod/game-api/types/alta-utilities/corruptplayersavefileexception) <span>Alta.Utilities</span>
+- [CosmeticBodyType](/mod/game-api/types/alta-customization/cosmeticbodytype) <span>Alta.Customization</span>
+- [CosmeticColor](/mod/game-api/types/alta-customization/cosmeticcolor) <span>Alta.Customization</span>
+- [CosmeticCustomizationManager](/mod/game-api/types/alta-customization/cosmeticcustomizationmanager) <span>Alta.Customization</span>
+- [CosmeticDefinitionSku](/mod/game-api/types/global-c-d/cosmeticdefinitionsku)
+- [CosmeticEyePart](/mod/game-api/types/alta-customization/cosmeticeyepart) <span>Alta.Customization</span>
+- [CosmeticFilterAttribute](/mod/game-api/types/alta-customization/cosmeticfilterattribute) <span>Alta.Customization</span>
+- [CosmeticFilterSkuAttribute](/mod/game-api/types/global-c-d/cosmeticfilterskuattribute)
+- [CosmeticHairPart](/mod/game-api/types/alta-customization/cosmetichairpart) <span>Alta.Customization</span>
+- [CosmeticMeshPart](/mod/game-api/types/alta-customization/cosmeticmeshpart) <span>Alta.Customization</span>
+- [CosmeticMeshPartBase&lt;T&gt;](/mod/game-api/types/alta-customization/cosmeticmeshpartbase-t) <span>Alta.Customization</span>
+- [CosmeticMeshPartBase&lt;T&gt;.TextureCache](/mod/game-api/types/alta-customization/cosmeticmeshpartbase-t-texturecache) <span>Alta.Customization</span>
+- [CosmeticOwnershipManager](/mod/game-api/types/alta-customization/cosmeticownershipmanager) <span>Alta.Customization</span>
+- [CosmeticPacker](/mod/game-api/types/alta-customization/cosmeticpacker) <span>Alta.Customization</span>
+- [CosmeticPacker.Input](/mod/game-api/types/alta-customization/cosmeticpacker-input) <span>Alta.Customization</span>
+- [CosmeticPacker.PartId](/mod/game-api/types/alta-customization/cosmeticpacker-partid) <span>Alta.Customization</span>
+- [CosmeticPackingManager](/mod/game-api/types/global-c-d/cosmeticpackingmanager)
+- [CosmeticPackScheduler](/mod/game-api/types/alta-customization/cosmeticpackscheduler) <span>Alta.Customization</span>
+- [CosmeticPalette](/mod/game-api/types/alta-customization/cosmeticpalette) <span>Alta.Customization</span>
+- [CosmeticParticleColorer](/mod/game-api/types/global-c-d/cosmeticparticlecolorer)
+- [CosmeticPickup](/mod/game-api/types/alta-customization/cosmeticpickup) <span>Alta.Customization</span>
+- [CosmeticPickupType](/mod/game-api/types/alta-customization/cosmeticpickuptype) <span>Alta.Customization</span>
+- [CosmeticPresetApplier](/mod/game-api/types/alta-customization/cosmeticpresetapplier) <span>Alta.Customization</span>
+- [CosmeticPresetData](/mod/game-api/types/alta-customization/cosmeticpresetdata) <span>Alta.Customization</span>
+- [CosmeticPresetDestroyer](/mod/game-api/types/alta-customization/cosmeticpresetdestroyer) <span>Alta.Customization</span>
+- [CosmeticPresetSlot](/mod/game-api/types/alta-customization/cosmeticpresetslot) <span>Alta.Customization</span>
+- [CosmeticPresetsManager](/mod/game-api/types/alta-customization/cosmeticpresetsmanager) <span>Alta.Customization</span>
+- [CosmeticPresetTrophy](/mod/game-api/types/alta-customization/cosmeticpresettrophy) <span>Alta.Customization</span>
+- [CosmeticPresetTrophyTrigger](/mod/game-api/types/alta-customization/cosmeticpresettrophytrigger) <span>Alta.Customization</span>
+- [CosmeticRotatingSlot](/mod/game-api/types/alta-customization/cosmeticrotatingslot) <span>Alta.Customization</span>
+- [CosmeticScrollElement](/mod/game-api/types/alta-customization/cosmeticscrollelement) <span>Alta.Customization</span>
+- [CosmeticScrollManager](/mod/game-api/types/alta-customization/cosmeticscrollmanager) <span>Alta.Customization</span>
+- [CosmeticScrollSource](/mod/game-api/types/alta-customization/cosmeticscrollsource) <span>Alta.Customization</span>
+- [CosmeticSetDefinition](/mod/game-api/types/alta-customization/cosmeticsetdefinition) <span>Alta.Customization</span>
+- [CosmeticSetFilterAttribute](/mod/game-api/types/alta-customization/cosmeticsetfilterattribute) <span>Alta.Customization</span>
+- [CosmeticSkinColor](/mod/game-api/types/alta-customization/cosmeticskincolor) <span>Alta.Customization</span>
+- [CosmeticSkuAttribute](/mod/game-api/types/global-c-d/cosmeticskuattribute)
+- [CountedQueuedConnectionReceiver](/mod/game-api/types/alta-networking/countedqueuedconnectionreceiver) <span>Alta.Networking.Internal</span>
+- [CountTracker&lt;T&gt;](/mod/game-api/types/global-c-d/counttracker-t)
+- [CouponRedeemedResponse](/mod/game-api/types/assembly-api-models/couponredeemedresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [CraftableImpactDetector](/mod/game-api/types/alta-items/craftableimpactdetector) <span>Alta.Impact</span>
+- [CraftableImpactDetectorBase](/mod/game-api/types/alta-items/craftableimpactdetectorbase) <span>Alta.Impact</span>
+- [CraftedDocks](/mod/game-api/types/alta-items/crafteddocks) <span>Alta.Inventory</span>
+- [CraftingChanged](/mod/game-api/types/alta-crafting/craftingchanged) <span>Alta.Crafting</span>
+- [CraftingMeltingAllowedModifier](/mod/game-api/types/alta-crafting/craftingmeltingallowedmodifier) <span>Alta.Blacksmithing</span>
+- [CraftingOptions](/mod/game-api/types/alta-crafting/craftingoptions) <span>Alta.Crafting</span>
+- [CraftingPart](/mod/game-api/types/alta-crafting/craftingpart) <span>Alta.Crafting</span>
+- [CraftingPartTracker](/mod/game-api/types/alta-crafting/craftingparttracker) <span>Alta.Crafting</span>
+- [CraftingPartType](/mod/game-api/types/alta-crafting/craftingparttype) <span>Alta.Crafting</span>
+- [CraftingPartType.Create](/mod/game-api/types/alta-crafting/craftingparttype-create) <span>Alta.Crafting</span>
+- [CraftingPieceChiselable](/mod/game-api/types/alta-crafting/craftingpiecechiselable) <span>Alta.Crafting</span>
+- [CraftingTester](/mod/game-api/types/alta-crafting/craftingtester) <span>Alta.Crafting</span>
+- [Crank](/mod/game-api/types/global-c-d/crank)
+- [Crank](/mod/game-api/types/alta-items/crank) <span>Alta.Mechanisms</span>
+- [Crank.RotationType](/mod/game-api/types/alta-items/crank-rotationtype) <span>Alta.Mechanisms</span>
+- [CrankControlledRope](/mod/game-api/types/global-c-d/crankcontrolledrope)
+- [CrankController](/mod/game-api/types/global-c-d/crankcontroller)
+- [CrankSaveData](/mod/game-api/types/global-c-d/cranksavedata)
+- [CreateCheckResponse](/mod/game-api/types/assembly-api-models/createcheckresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [CreateGroupAndServerRequest](/mod/game-api/types/assembly-api-models/creategroupandserverrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [CreateGroupInfoPanel](/mod/game-api/types/alta-menus/creategroupinfopanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [CreateGroupRequest](/mod/game-api/types/assembly-api-models/creategrouprequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [CreateGroupServerRequest](/mod/game-api/types/assembly-api-models/creategroupserverrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [CreateLOD](/mod/game-api/types/global-c-d/createlod)
+- [CreatePresetRequest](/mod/game-api/types/assembly-api-models/createpresetrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [CreateReportRequest](/mod/game-api/types/assembly-api-models/createreportrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [CreateServerPanel](/mod/game-api/types/alta-menus/createserverpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [CreateTargetOperation](/mod/game-api/types/alta-intelligence/createtargetoperation) <span>Alta.Intelligence</span>
+- [CrippleStatDefinition](/mod/game-api/types/global-c-d/cripplestatdefinition)
+- [CrippleStatDefinition.Create](/mod/game-api/types/global-c-d/cripplestatdefinition-create)
+- [CrystalsAvailablePointManager](/mod/game-api/types/global-c-d/crystalsavailablepointmanager)
+- [CsvWriter](/mod/game-api/types/global-c-d/csvwriter)
+- [CubeMapUpdater](/mod/game-api/types/global-c-d/cubemapupdater)
+- [CullingController](/mod/game-api/types/global-c-d/cullingcontroller)
+- [CullingGroupHandler](/mod/game-api/types/global-c-d/cullinggrouphandler)
+- [CullingPortal](/mod/game-api/types/global-c-d/cullingportal)
+- [CullingPortal.CullingSide](/mod/game-api/types/global-c-d/cullingportal-cullingside)
+- [CurrentTalemBalance](/mod/game-api/types/alta-customization/currenttalembalance) <span>Alta.Customization</span>
+- [CursorUtilities](/mod/game-api/types/alta-utilities/cursorutilities) <span>Alta.Utilities</span>
+- [Curve](/mod/game-api/types/global-c-d/curve)
+- [Curve](/mod/game-api/types/alta-world-generation/curve) <span>Alta.Caves.PluginParts</span>
+- [Curve.Create](/mod/game-api/types/global-c-d/curve-create)
+- [CurveElevation](/mod/game-api/types/global-c-d/curveelevation)
+- [CurveInstance](/mod/game-api/types/alta-world-generation/curveinstance) <span>Alta.Caves.PluginParts</span>
+- [CurveOutput](/mod/game-api/types/global-c-d/curveoutput)
+- [CurveOutputSaveData](/mod/game-api/types/global-c-d/curveoutputsavedata)
+- [CurveRange&lt;T&gt;](/mod/game-api/types/alta-utilities/curverange-t) <span>Alta</span>
+- [CurveScaler](/mod/game-api/types/global-c-d/curvescaler)
+- [CurveValue&lt;T&gt;](/mod/game-api/types/alta-utilities/curvevalue-t) <span>Alta</span>
+- [CurveWall](/mod/game-api/types/global-c-d/curvewall)
+- [CurveWall.CurvePoint](/mod/game-api/types/global-c-d/curvewall-curvepoint)
+- [CustomArgumentGameAction&lt;T&gt;](/mod/game-api/types/global-c-d/customargumentgameaction-t)
+- [CustomClaimTypes](/mod/game-api/types/assembly-api-models/customclaimtypes) <span>Alta.Api.DataTransferModels.Constants</span>
+- [CustomControllerOffset](/mod/game-api/types/alta-player/customcontrolleroffset) <span>Alta.Character</span>
+- [CustomControllerOffsetReader](/mod/game-api/types/alta-player/customcontrolleroffsetreader) <span>Alta.Character</span>
+- [CustomFixedJoint](/mod/game-api/types/global-c-d/customfixedjoint)
+- [CustomizationArguments](/mod/game-api/types/alta-customization/customizationarguments) <span>Alta.Customization</span>
+- [CustomizationCategory](/mod/game-api/types/alta-customization/customizationcategory) <span>Alta.Customization</span>
+- [CustomizationHistoryAccess](/mod/game-api/types/alta-customization/customizationhistoryaccess) <span>Alta.Customization</span>
+- [CustomizationHistoryAction](/mod/game-api/types/alta-customization/customizationhistoryaction) <span>Alta.Customization</span>
+- [CustomizationItemAndArguments](/mod/game-api/types/alta-customization/customizationitemandarguments) <span>Alta.Customization</span>
+- [CustomizationPackingSettings](/mod/game-api/types/alta-customization/customizationpackingsettings) <span>Alta.Customization</span>
+- [CustomizationPickup](/mod/game-api/types/alta-customization/customizationpickup) <span>Alta.Customization</span>
+- [CustomizationPlayerController](/mod/game-api/types/global-c-d/customizationplayercontroller)
+- [CustomizationSettings](/mod/game-api/types/alta-customization/customizationsettings) <span>Alta.Customization</span>
+- [CustomizationSlot](/mod/game-api/types/alta-customization/customizationslot) <span>Alta.Customization</span>
+- [CustomizationSlotEntry](/mod/game-api/types/alta-customization/customizationslotentry) <span>Alta.Customization</span>
+- [CustomizationState](/mod/game-api/types/alta-player/customizationstate) <span>Alta.PlayerStates</span>
+- [CustomizationStateSettings](/mod/game-api/types/game-other-namespaces/customizationstatesettings) <span>ATT.PlayerStates</span>
+- [CustomizationStateSettings.Create](/mod/game-api/types/game-other-namespaces/customizationstatesettings-create) <span>ATT.PlayerStates</span>
+- [CustomizationTester](/mod/game-api/types/alta-customization/customizationtester) <span>Alta.Customization</span>
+- [CustomizationToPlayingTransition](/mod/game-api/types/alta-player/customizationtoplayingtransition) <span>Alta.PlayerStates.Transitions</span>
+- [CustomizationVisual](/mod/game-api/types/alta-customization/customizationvisual) <span>Alta.Customization</span>
+- [CustomizationVisualManager](/mod/game-api/types/alta-customization/customizationvisualmanager) <span>Alta.Customization</span>
+- [CustomizationVisualPart](/mod/game-api/types/alta-customization/customizationvisualpart) <span>Alta.Customization</span>
+- [CustomizationVisualPart&lt;TArguments&gt;](/mod/game-api/types/alta-customization/customizationvisualpart-targuments) <span>Alta.Customization</span>
+- [CustomizationWrapper](/mod/game-api/types/alta-customization/customizationwrapper) <span>Alta.Customization</span>
+- [CustomizationWrapperSerializer](/mod/game-api/types/alta-customization/customizationwrapperserializer) <span>Alta.Customization</span>
+- [CustomMethodApplyAttribute](/mod/game-api/types/assembly-other/custommethodapplyattribute)
+- [CustomOutline](/mod/game-api/types/game-other-namespaces/customoutline) <span>UnityEngine.UI</span>
+- [CustomScroller](/mod/game-api/types/alta-menus/customscroller) <span>Alta.Menu</span>
+- [CustomTeleportation](/mod/game-api/types/global-c-d/customteleportation)
+- [CutableObject](/mod/game-api/types/alta-items/cutableobject) <span>Alta.Impact</span>
+- [CutoutPathEdgeFill](/mod/game-api/types/alta-world-generation/cutoutpathedgefill) <span>Alta.Forests</span>
+- [CutoutPathModifier](/mod/game-api/types/alta-world-generation/cutoutpathmodifier) <span>Alta.Forests</span>
+- [CycleAttribute](/mod/game-api/types/alta-world/cycleattribute) <span>Alta.Environmental.Atmosphere</span>
+- [CylinderHeatArea](/mod/game-api/types/alta-stats-effects/cylinderheatarea) <span>Alta.Heat</span>
+- [CylinderImpactCollector](/mod/game-api/types/global-c-d/cylinderimpactcollector)
+- [CylinderImpactCollector.Create](/mod/game-api/types/global-c-d/cylinderimpactcollector-create)
+- [CylindricalBoundsSurface](/mod/game-api/types/alta-world/cylindricalboundssurface) <span>Alta.Chunks</span>
+- [CylindricalBoundsSurfaceSaveData](/mod/game-api/types/alta-world/cylindricalboundssurfacesavedata) <span>Alta.Chunks</span>
+
+</div>
+
+## D
+
+<div className="type-index">
+
+- [DamageData](/mod/game-api/types/alta-items/damagedata) <span>Alta.Impact</span>
+- [DamageDebugDisplay](/mod/game-api/types/global-c-d/damagedebugdisplay)
+- [DamageDebugDisplay.DamageHolder](/mod/game-api/types/global-c-d/damagedebugdisplay-damageholder)
+- [DamageDisplayer](/mod/game-api/types/global-c-d/damagedisplayer)
+- [DamageMultiplier](/mod/game-api/types/alta-crafting/damagemultiplier) <span>Alta.Enchantments</span>
+- [DamageMultiplier.Create](/mod/game-api/types/alta-crafting/damagemultiplier-create) <span>Alta.Enchantments</span>
+- [DamageMultiplierApplication](/mod/game-api/types/alta-crafting/damagemultiplierapplication) <span>Alta.Enchantments</span>
+- [DamageMultiplierCollider](/mod/game-api/types/alta-items/damagemultipliercollider) <span>Alta.Impact</span>
+- [DamageOverTime](/mod/game-api/types/alta-stats-effects/damageovertime) <span>Alta.Alchemy</span>
+- [DamagePopup](/mod/game-api/types/alta-utilities/damagepopup) <span>Alta.Utilities</span>
+- [DamageSource](/mod/game-api/types/alta-items/damagesource) <span>Alta.Impact</span>
+- [DamageState](/mod/game-api/types/alta-player/damagestate) <span>Alta.PlayerEffects.General.Health</span>
+- [DarknessArea](/mod/game-api/types/global-c-d/darknessarea)
+- [DarknessChunkData](/mod/game-api/types/global-c-d/darknesschunkdata)
+- [DarknessReader](/mod/game-api/types/global-c-d/darknessreader)
+- [DarknessReaderMethod](/mod/game-api/types/global-c-d/darknessreadermethod)
+- [DarknessSpawnerSettings](/mod/game-api/types/global-c-d/darknessspawnersettings)
+- [DarknessSpawnerSettings.SpawnInstructure](/mod/game-api/types/global-c-d/darknessspawnersettings-spawninstructure)
+- [DarknessTrigger](/mod/game-api/types/global-c-d/darknesstrigger)
+- [DataAtom&lt;T&gt;](/mod/game-api/types/alta-intelligence/dataatom-t) <span>Alta.Intelligence</span>
+- [DatabaseSettingsFile](/mod/game-api/types/alta-utilities/databasesettingsfile) <span>Alta.Utilities</span>
+- [DateTimeExtensions](/mod/game-api/types/global-c-d/datetimeextensions)
+- [Day](/mod/game-api/types/alta-intelligence/day) <span>Alta.Intelligence</span>
+- [DayNightOnlyTimerDefinition](/mod/game-api/types/alta-world-generation/daynightonlytimerdefinition) <span>Alta.Populations</span>
+- [DayTimeEffect](/mod/game-api/types/alta-world/daytimeeffect) <span>Alta.Environmental.Atmosphere</span>
+- [DayTimeManager](/mod/game-api/types/alta-world/daytimemanager) <span>Alta.Environmental.Atmosphere</span>
+- [DayTimeManager.ChangedState](/mod/game-api/types/alta-world/daytimemanager-changedstate) <span>Alta.Environmental.Atmosphere</span>
+- [DeadPlugin](/mod/game-api/types/alta-intelligence/deadplugin) <span>Alta.Combat</span>
+- [DeadState](/mod/game-api/types/alta-player/deadstate) <span>Alta.PlayerStates</span>
+- [DeadStateSettings](/mod/game-api/types/alta-player/deadstatesettings) <span>Alta.PlayerStates</span>
+- [DeadStateSettings.Create](/mod/game-api/types/alta-player/deadstatesettings-create) <span>Alta.PlayerStates</span>
+- [DeadToPlayingTransition](/mod/game-api/types/alta-player/deadtoplayingtransition) <span>Alta.PlayerStates.Transitions</span>
+- [DeathAnimationSettings](/mod/game-api/types/alta-intelligence/deathanimationsettings) <span>Alta.Combat</span>
+- [DeathAnimationSettings](/mod/game-api/types/alta-player/deathanimationsettings) <span>Alta.PlayerStates</span>
+- [DeathAnimationSettings.Create](/mod/game-api/types/alta-intelligence/deathanimationsettings-create) <span>Alta.Combat</span>
+- [DeathEffect](/mod/game-api/types/alta-intelligence/deatheffect) <span>Alta.Creatures</span>
+- [DeathEvent](/mod/game-api/types/alta-intelligence/deathevent) <span>Alta.Creatures</span>
+- [DeathFern](/mod/game-api/types/alta-intelligence/deathfern) <span>Alta.Intelligence</span>
+- [DeathUnityEvent](/mod/game-api/types/alta-intelligence/deathunityevent) <span>Alta.Creatures</span>
+- [Debug](/mod/game-api/types/global-c-d/debug)
+- [DebugClimbable](/mod/game-api/types/global-c-d/debugclimbable)
+- [DebugExtension](/mod/game-api/types/global-c-d/debugextension)
+- [DebuggingCollection&lt;T&gt;](/mod/game-api/types/alta-utilities/debuggingcollection-t) <span>Alta.Utilities</span>
+- [DebuggingCollection&lt;T&gt;.DebuggingCollectionEnumerator&lt;TInnerType&gt;](/mod/game-api/types/alta-utilities/debuggingcollection-t-debuggingcollectionenumerator-tinnertype) <span>Alta.Utilities</span>
+- [DebuggingCommandModule](/mod/game-api/types/alta-console/debuggingcommandmodule) <span>Alta.Console.Commands</span>
+- [DebuggingCommandModule.StaticCommandSubModule](/mod/game-api/types/alta-console/debuggingcommandmodule-staticcommandsubmodule) <span>Alta.Console.Commands</span>
+- [DebuggingCommandModule.Tracking](/mod/game-api/types/alta-console/debuggingcommandmodule-tracking) <span>Alta.Console.Commands</span>
+- [DebugLightMenuAction](/mod/game-api/types/alta-player/debuglightmenuaction) <span>Alta.QuickAccessActions</span>
+- [DebugLoader](/mod/game-api/types/global-c-d/debugloader)
+- [DebugLoadMarker](/mod/game-api/types/alta-console/debugloadmarker) <span>Alta.QATools</span>
+- [DebugLoadMarker.IChunkLoader](/mod/game-api/types/alta-console/debugloadmarker-ichunkloader) <span>Alta.QATools</span>
+- [DebugLoadMarker.NormalChunkLoader](/mod/game-api/types/alta-console/debugloadmarker-normalchunkloader) <span>Alta.QATools</span>
+- [DebugLoadMarker.OptimisedChunkLoader](/mod/game-api/types/alta-console/debugloadmarker-optimisedchunkloader) <span>Alta.QATools</span>
+- [DebugLogger](/mod/game-api/types/global-c-d/debuglogger)
+- [DebugPackage](/mod/game-api/types/alta-world-generation/debugpackage) <span>Alta.Loot</span>
+- [DebugPackage.Create](/mod/game-api/types/alta-world-generation/debugpackage-create) <span>Alta.Loot</span>
+- [DebugPackage.PrefabQuantity](/mod/game-api/types/alta-world-generation/debugpackage-prefabquantity) <span>Alta.Loot</span>
+- [DebugPackageManager](/mod/game-api/types/alta-world-generation/debugpackagemanager) <span>Alta.Loot</span>
+- [DebugQASetManager](/mod/game-api/types/global-c-d/debugqasetmanager)
+- [DebugResults](/mod/game-api/types/alta-intelligence/debugresults) <span>Alta.Intelligence</span>
+- [DebugTriggerEvent](/mod/game-api/types/game-other-namespaces/debugtriggerevent) <span>ATT.Triggers</span>
+- [DebugWidget](/mod/game-api/types/global-c-d/debugwidget)
+- [DebugWidget.ActivationType](/mod/game-api/types/global-c-d/debugwidget-activationtype)
+- [Decay](/mod/game-api/types/alta-world-generation/decay) <span>Alta.PAGaC</span>
+- [DecaySettings](/mod/game-api/types/global-c-d/decaysettings)
+- [DecaySettings.Create](/mod/game-api/types/global-c-d/decaysettings-create)
+- [DeckClamp](/mod/game-api/types/alta-crafting/deckclamp) <span>Alta.Carpentry</span>
+- [DecraftingComponent](/mod/game-api/types/alta-crafting/decraftingcomponent) <span>Alta.Crafting</span>
+- [DecraftingComponent.HitTypePosition](/mod/game-api/types/alta-crafting/decraftingcomponent-hittypeposition) <span>Alta.Crafting</span>
+- [DecraftingDeck](/mod/game-api/types/alta-crafting/decraftingdeck) <span>Alta.Crafting</span>
+- [DecreaseHeightMenuAction](/mod/game-api/types/alta-player/decreaseheightmenuaction) <span>Alta.QuickAccessActions</span>
+- [DeepLinkAnalyticsService](/mod/game-api/types/global-c-d/deeplinkanalyticsservice)
+- [DeepLinkAnalyticsService.DeepLinkEventCancelReason](/mod/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason)
+- [DeepLinkAnalyticsService.DeeplinkEventCancelReason](/mod/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason-global)
+- [DeeplinkEventFailReason](/mod/game-api/types/global-c-d/deeplinkeventfailreason)
+- [DeepLinkFailureController](/mod/game-api/types/global-c-d/deeplinkfailurecontroller)
+- [DefaultClimbable](/mod/game-api/types/global-c-d/defaultclimbable)
+- [DefaultCosmeticInfo](/mod/game-api/types/alta-customization/defaultcosmeticinfo) <span>Alta.Customization</span>
+- [DefaultPlayerRespawnPositionProvider](/mod/game-api/types/game-other-namespaces/defaultplayerrespawnpositionprovider) <span>ATT.Respawn</span>
+- [DeferredBuffers](/mod/game-api/types/global-c-d/deferredbuffers)
+- [DeferredSynchronizeInvoke](/mod/game-api/types/global-c-d/deferredsynchronizeinvoke)
+- [DeferredSynchronizeInvoke.UnityAsyncResult](/mod/game-api/types/global-c-d/deferredsynchronizeinvoke-unityasyncresult)
+- [DefineProvider](/mod/game-api/types/global-c-d/defineprovider)
+- [DegreeToRadian](/mod/game-api/types/assembly-other/degreetoradian)
+- [DelayedEnableLerp](/mod/game-api/types/global-c-d/delayedenablelerp)
+- [DelayedEvent](/mod/game-api/types/global-c-d/delayedevent)
+- [DelayedHoverPickup](/mod/game-api/types/global-c-d/delayedhoverpickup)
+- [DelayedImpactResolver](/mod/game-api/types/alta-items/delayedimpactresolver) <span>Alta.Impact</span>
+- [DelayedImpactResolver.ImpactDetectorHit](/mod/game-api/types/alta-items/delayedimpactresolver-impactdetectorhit) <span>Alta.Impact</span>
+- [DelayedPooledObject](/mod/game-api/types/global-c-d/delayedpooledobject)
+- [DelayEnable](/mod/game-api/types/global-c-d/delayenable)
+- [DelayEnable.DelayMode](/mod/game-api/types/global-c-d/delayenable-delaymode)
+- [DeleteItemRequest](/mod/game-api/types/assembly-api-models/deleteitemrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [DeleteMe](/mod/game-api/types/global-c-d/deleteme)
+- [DependencyInjectionEditorInitializer](/mod/game-api/types/assembly-other/dependencyinjectioneditorinitializer) <span>Alta.ATT.LifetimeScopes</span>
+- [DependencyInjectionInitializer](/mod/game-api/types/assembly-other/dependencyinjectioninitializer) <span>Alta.ATT.LifetimeScopes</span>
+- [DepthCheckLocoCheck](/mod/game-api/types/global-c-d/depthchecklococheck)
+- [DepthCheckLocoCheck.Depth](/mod/game-api/types/global-c-d/depthchecklococheck-depth)
+- [DepthCheckLocoCheck.ModifierCheck](/mod/game-api/types/global-c-d/depthchecklococheck-modifiercheck)
+- [DespawnStepContentCommand](/mod/game-api/types/game-other-namespaces/despawnstepcontentcommand) <span>ATT.MicroTutorial</span>
+- [DestroyableStaticObject](/mod/game-api/types/alta-networking/destroyablestaticobject) <span>Alta.Networking</span>
+- [DestroyActionArgument](/mod/game-api/types/global-c-d/destroyactionargument)
+- [DestroyByTime](/mod/game-api/types/global-c-d/destroybytime)
+- [DestroyedEventCaller](/mod/game-api/types/global-c-d/destroyedeventcaller)
+- [DestroyedHandRegenerate](/mod/game-api/types/alta-player/destroyedhandregenerate) <span>Alta.Character</span>
+- [DestroyHealthObjectTask](/mod/game-api/types/global-c-d/destroyhealthobjecttask)
+- [DestroyIfInIncorrectChunk](/mod/game-api/types/global-c-d/destroyifinincorrectchunk)
+- [DestroyMessage](/mod/game-api/types/alta-networking/destroymessage) <span>Alta.Networking</span>
+- [DestroyStepContentStep](/mod/game-api/types/game-other-namespaces/destroystepcontentstep) <span>ATT.MicroTutorial.Steps</span>
+- [DevGameServerInfo](/mod/game-api/types/global-c-d/devgameserverinfo)
+- [Device](/mod/game-api/types/assembly-api-models/device) <span>Alta.Api.DataTransferModels.Utility</span>
+- [DeviceControllerFactory](/mod/game-api/types/global-c-d/devicecontrollerfactory)
+- [DeviceInputController](/mod/game-api/types/global-c-d/deviceinputcontroller)
+- [DeviceLifecycle](/mod/game-api/types/global-c-d/devicelifecycle)
+- [DeviceStatRecord](/mod/game-api/types/alta-console/devicestatrecord) <span>Alta.Analytics</span>
+- [DevOnlyAttribute](/mod/game-api/types/alta-console/devonlyattribute) <span>Alta.Console</span>
+- [DevOnlyAttribute](/mod/game-api/types/alta-utilities/devonlyattribute) <span>Alta.Utilities</span>
+- [DevToolsBoard](/mod/game-api/types/alta-player/devtoolsboard) <span>Alta.QuickAccessActions</span>
+- [DevToolsBoard.SettingTypeScaler](/mod/game-api/types/alta-player/devtoolsboard-settingtypescaler) <span>Alta.QuickAccessActions</span>
+- [DialSetting](/mod/game-api/types/global-c-d/dialsetting)
+- [DictionaryExtension](/mod/game-api/types/assembly-api-models/dictionaryextension) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [DiggingImpactor](/mod/game-api/types/global-c-d/diggingimpactor)
+- [DiggingImpactor.InteractorPositions](/mod/game-api/types/global-c-d/diggingimpactor-interactorpositions)
+- [DiggingImpactorSaveStructure](/mod/game-api/types/global-c-d/diggingimpactorsavestructure)
+- [DiggingImpactorSettings](/mod/game-api/types/global-c-d/diggingimpactorsettings)
+- [DigitalOceanUtility](/mod/game-api/types/assembly-other/digitaloceanutility) <span>Alta.Utilities</span>
+- [DirectionalBoundsSurface](/mod/game-api/types/alta-world/directionalboundssurface) <span>Alta.Chunks</span>
+- [DirectionalBoundsSurfaceSave](/mod/game-api/types/alta-world/directionalboundssurfacesave) <span>Alta.Chunks</span>
+- [DirectionalMultiplierCollider](/mod/game-api/types/alta-items/directionalmultipliercollider) <span>Alta.Impact</span>
+- [DirectionConstrainedRandomMovement](/mod/game-api/types/global-c-d/directionconstrainedrandommovement)
+- [DirectionMode](/mod/game-api/types/global-c-d/directionmode)
+- [Director](/mod/game-api/types/alta-intelligence/director) <span>Alta.Pathfinding</span>
+- [DirectReplacer](/mod/game-api/types/global-c-d/directreplacer)
+- [DisableAfterDuration](/mod/game-api/types/game-other-namespaces/disableafterduration) <span>Features.Gameplay.ClimbingTower</span>
+- [DisableLightOnDock](/mod/game-api/types/alta-crafting/disablelightondock) <span>Alta.Crafting</span>
+- [DiscordController](/mod/game-api/types/global-c-d/discordcontroller)
+- [DiscordLarge](/mod/game-api/types/global-c-d/discordlarge)
+- [DiscordSmall](/mod/game-api/types/global-c-d/discordsmall)
+- [DiscordSupporterRoleVerificationResults](/mod/game-api/types/assembly-api-models/discordsupporterroleverificationresults) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [DiscoveryState](/mod/game-api/types/alta-world/discoverystate) <span>Alta.Map</span>
+- [DiscreteStatBar](/mod/game-api/types/alta-stats-effects/discretestatbar) <span>Alta.StatSystem</span>
+- [DiscreteStatBarVisual](/mod/game-api/types/alta-stats-effects/discretestatbarvisual) <span>Alta.StatSystem</span>
+- [DisplayArguments](/mod/game-api/types/alta-items/displayarguments) <span>Alta.Pages</span>
+- [DisplayMessageType](/mod/game-api/types/global-c-d/displaymessagetype)
+- [Disposable](/mod/game-api/types/assembly-other/disposable) <span>Alta.LifecycleManagement</span>
+- [Disposable.AnonymousDisposable](/mod/game-api/types/assembly-other/disposable-anonymousdisposable) <span>Alta.LifecycleManagement</span>
+- [Disposable.AnonymousDisposable&lt;T&gt;](/mod/game-api/types/assembly-other/disposable-anonymousdisposable-t) <span>Alta.LifecycleManagement</span>
+- [Disposable.EmptyDisposable](/mod/game-api/types/assembly-other/disposable-emptydisposable) <span>Alta.LifecycleManagement</span>
+- [DisposablePickup](/mod/game-api/types/global-c-d/disposablepickup)
+- [DisposablePickupHolder](/mod/game-api/types/global-c-d/disposablepickupholder)
+- [Disposer](/mod/game-api/types/assembly-other/disposer) <span>Alta.LifecycleManagement</span>
+- [DisposerExtensions](/mod/game-api/types/assembly-other/disposerextensions) <span>Alta.LifecycleManagement</span>
+- [DissipateToolBasedEffect](/mod/game-api/types/global-c-d/dissipatetoolbasedeffect)
+- [DissolvingEffect](/mod/game-api/types/global-c-d/dissolvingeffect)
+- [DistanceFilter](/mod/game-api/types/global-c-d/distancefilter)
+- [DistanceLOD](/mod/game-api/types/global-c-d/distancelod)
+- [DistanceLODGroup](/mod/game-api/types/global-c-d/distancelodgroup)
+- [DistanceLODGroupManager](/mod/game-api/types/global-c-d/distancelodgroupmanager)
+- [DistanceOperation](/mod/game-api/types/alta-intelligence/distanceoperation) <span>Alta.Intelligence</span>
+- [DistanceSense](/mod/game-api/types/alta-intelligence/distancesense) <span>Alta.Intelligence</span>
+- [DistanceSense.Create](/mod/game-api/types/alta-intelligence/distancesense-create) <span>Alta.Intelligence</span>
+- [DistanceSquaredSense](/mod/game-api/types/alta-intelligence/distancesquaredsense) <span>Alta.Intelligence</span>
+- [DistanceSquaredSense.Create](/mod/game-api/types/alta-intelligence/distancesquaredsense-create) <span>Alta.Intelligence</span>
+- [DistanceToEdgeFilter](/mod/game-api/types/global-c-d/distancetoedgefilter)
+- [DistanceToEdgeFilter.Create](/mod/game-api/types/global-c-d/distancetoedgefilter-create)
+- [DistanceToLine](/mod/game-api/types/global-c-d/distancetoline)
+- [DistanceToLineTest](/mod/game-api/types/global-c-d/distancetolinetest)
+- [DistanceToPathFilter](/mod/game-api/types/global-c-d/distancetopathfilter)
+- [DistanceToPathFilter.Create](/mod/game-api/types/global-c-d/distancetopathfilter-create)
+- [DistanceToRiverFilter](/mod/game-api/types/global-c-d/distancetoriverfilter)
+- [DistanceToRiverFilter.Create](/mod/game-api/types/global-c-d/distancetoriverfilter-create)
+- [Distribution](/mod/game-api/types/alta-world-generation/distribution) <span>Alta.Caves</span>
+- [Distribution.Create](/mod/game-api/types/alta-world-generation/distribution-create) <span>Alta.Caves</span>
+- [Distribution.FestivityGroup](/mod/game-api/types/alta-world-generation/distribution-festivitygroup) <span>Alta.Caves</span>
+- [Distribution.Item](/mod/game-api/types/alta-world-generation/distribution-item) <span>Alta.Caves</span>
+- [Distribution&lt;TThis, T, TItem, TFestivityGroup&gt;](/mod/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup) <span>Alta.Caves</span>
+- [Distribution&lt;TThis, T, TItem, TFestivityGroup&gt;.BaseFestivityGroup](/mod/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup-basefestivitygroup) <span>Alta.Caves</span>
+- [Distribution&lt;TThis, T, TItem, TFestivityGroup&gt;.BaseItem](/mod/game-api/types/alta-world-generation/distribution-tthis-t-titem-tfestivitygroup-baseitem) <span>Alta.Caves</span>
+- [DmgTDisplay](/mod/game-api/types/global-c-d/dmgtdisplay)
+- [DockableJoints](/mod/game-api/types/global-c-d/dockablejoints)
+- [DockArray](/mod/game-api/types/alta-items/dockarray) <span>Alta.Inventory</span>
+- [DockByDefault](/mod/game-api/types/global-c-d/dockbydefault)
+- [DockCounter](/mod/game-api/types/global-c-d/dockcounter)
+- [DockedDissolver](/mod/game-api/types/alta-world-generation/dockeddissolver) <span>Alta.Caves</span>
+- [DockedFireLogic](/mod/game-api/types/global-c-d/dockedfirelogic)
+- [DockedOffset](/mod/game-api/types/alta-items/dockedoffset) <span>Alta.Inventory</span>
+- [DockEvents](/mod/game-api/types/global-c-d/dockevents)
+- [DockFilter](/mod/game-api/types/alta-items/dockfilter) <span>Alta.Inventory</span>
+- [DockHideOptions](/mod/game-api/types/alta-items/dockhideoptions) <span>Alta.Inventory</span>
+- [DockObjectTask](/mod/game-api/types/global-c-d/dockobjecttask)
+- [DockObjectTask.Filters](/mod/game-api/types/global-c-d/dockobjecttask-filters)
+- [DockObjectTaskArgument](/mod/game-api/types/global-c-d/dockobjecttaskargument)
+- [DockPageTask](/mod/game-api/types/alta-items/dockpagetask) <span>Alta.Pages</span>
+- [DockPositionController](/mod/game-api/types/alta-player/dockpositioncontroller) <span>Alta.Character</span>
+- [DockPositioning](/mod/game-api/types/alta-items/dockpositioning) <span>Alta.Inventory</span>
+- [DockStore](/mod/game-api/types/alta-player/dockstore) <span>Alta.Character</span>
+- [DockVisibilityMode](/mod/game-api/types/alta-items/dockvisibilitymode) <span>Alta.Inventory</span>
+- [DockVisual](/mod/game-api/types/alta-items/dockvisual) <span>Alta.Inventory</span>
+- [Domain](/mod/game-api/types/game-other-namespaces/domain) <span>ATT.Domains</span>
+- [DomainController](/mod/game-api/types/game-other-namespaces/domaincontroller) <span>ATT.Domains</span>
+- [DomainPlayerSpawnSetter](/mod/game-api/types/game-other-namespaces/domainplayerspawnsetter) <span>ATT.Domains</span>
+- [DontDestroyOnLoad](/mod/game-api/types/global-c-d/dontdestroyonload)
+- [DontGoThroughObjects](/mod/game-api/types/global-c-d/dontgothroughobjects)
+- [Door](/mod/game-api/types/global-c-d/door)
+- [DoorSaveData](/mod/game-api/types/global-c-d/doorsavedata)
+- [DotFromAngle](/mod/game-api/types/assembly-other/dotfromangle)
+- [DoubleBufferedQueue&lt;T&gt;](/mod/game-api/types/assembly-api-client/doublebufferedqueue-t) <span>Alta.Api.Client.LowLevel</span>
+- [DoubleBufferedQueue&lt;T&gt;.BatchingQueue](/mod/game-api/types/assembly-api-client/doublebufferedqueue-t-batchingqueue) <span>Alta.Api.Client.LowLevel</span>
+- [DoubleValue&lt;T&gt;](/mod/game-api/types/alta-utilities/doublevalue-t) <span>Alta</span>
+- [DownedState](/mod/game-api/types/alta-player/downedstate) <span>Alta.PlayerStates</span>
+- [DownedStateDebuffManager](/mod/game-api/types/game-other-namespaces/downedstatedebuffmanager) <span>ATT.PlayerStates</span>
+- [DownedStateSettings](/mod/game-api/types/game-other-namespaces/downedstatesettings) <span>ATT.PlayerStates</span>
+- [DownedToDeadTransition](/mod/game-api/types/alta-player/downedtodeadtransition) <span>Alta.PlayerStates.Transitions</span>
+- [DownedToPlayingTransition](/mod/game-api/types/alta-player/downedtoplayingtransition) <span>Alta.PlayerStates.Transitions</span>
+- [DownwardSwingInput](/mod/game-api/types/global-c-d/downwardswinginput)
+- [DownwardSwingInputStructure](/mod/game-api/types/global-c-d/downwardswinginputstructure)
+- [DownwardSwingInputStructure.Create](/mod/game-api/types/global-c-d/downwardswinginputstructure-create)
+- [DPadInputSource](/mod/game-api/types/global-c-d/dpadinputsource)
+- [Dragonfly](/mod/game-api/types/alta-intelligence/dragonfly) <span>Alta.Intelligence</span>
+- [DragTrigger](/mod/game-api/types/global-c-d/dragtrigger)
+- [DrawBridgeLogic](/mod/game-api/types/global-c-d/drawbridgelogic)
+- [DrawBridgeLogicSaveData](/mod/game-api/types/global-c-d/drawbridgelogicsavedata)
+- [DrawBridgeRangeLogic](/mod/game-api/types/global-c-d/drawbridgerangelogic)
+- [DrawBridgeRangeLogicSaveData](/mod/game-api/types/global-c-d/drawbridgerangelogicsavedata)
+- [DrawBridgeRangeLogicSaveData1](/mod/game-api/types/global-c-d/drawbridgerangelogicsavedata1)
+- [DropTarget](/mod/game-api/types/global-c-d/droptarget)
+- [DummyArrow](/mod/game-api/types/global-c-d/dummyarrow)
+- [DummyCharacterController](/mod/game-api/types/alta-player/dummycharactercontroller) <span>Alta.Character</span>
+- [DummyPlayerController](/mod/game-api/types/global-c-d/dummyplayercontroller)
+- [DuplicateKeyComparer&lt;TKey&gt;](/mod/game-api/types/alta-networking/duplicatekeycomparer-tkey) <span>Alta.Profiling.Networking</span>
+- [DurabilityGlobalSettings](/mod/game-api/types/global-c-d/durabilityglobalsettings)
+- [DurabilityGlobalSettings.Create](/mod/game-api/types/global-c-d/durabilityglobalsettings-create)
+- [DurabilityMeltingYieldModifier](/mod/game-api/types/alta-crafting/durabilitymeltingyieldmodifier) <span>Alta.Blacksmithing</span>
+- [DurabilityModule](/mod/game-api/types/global-c-d/durabilitymodule)
+- [DurabilityModule.DurabilityVisual](/mod/game-api/types/global-c-d/durabilitymodule-durabilityvisual)
+- [DurabilityModuleSaveData](/mod/game-api/types/global-c-d/durabilitymodulesavedata)
+- [DurabilitySaveEnchantment](/mod/game-api/types/alta-crafting/durabilitysaveenchantment) <span>Alta.Enchantments</span>
+- [DurabilitySaveEnchantment.Create](/mod/game-api/types/alta-crafting/durabilitysaveenchantment-create) <span>Alta.Enchantments</span>
+- [DurabilitySaveEnchantmentApplication](/mod/game-api/types/alta-crafting/durabilitysaveenchantmentapplication) <span>Alta.Enchantments</span>
+- [DurabilitySettings](/mod/game-api/types/global-c-d/durabilitysettings)
+- [DurabilitySettings.Create](/mod/game-api/types/global-c-d/durabilitysettings-create)
+- [DurabilityStateChangeEffect](/mod/game-api/types/global-c-d/durabilitystatechangeeffect)
+- [Duration](/mod/game-api/types/assembly-api-models/duration) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [DurationCurve](/mod/game-api/types/global-c-d/durationcurve)
+- [DurationEffect&lt;T&gt;](/mod/game-api/types/alta-stats-effects/durationeffect-t) <span>Alta.Alchemy</span>
+- [DurationType](/mod/game-api/types/assembly-api-models/durationtype) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [DynamicChunkContentManager](/mod/game-api/types/alta-world/dynamicchunkcontentmanager) <span>Alta.Chunks</span>
+- [DynamicCommandResult](/mod/game-api/types/alta-console/dynamiccommandresult) <span>Alta.Console</span>
+- [DynamicMask](/mod/game-api/types/alta-menus/dynamicmask) <span>Alta.UI</span>
+- [DynamicObjectCombiner](/mod/game-api/types/global-c-d/dynamicobjectcombiner)
+- [DynamicPathPart](/mod/game-api/types/global-c-d/dynamicpathpart)
+- [DynamicPhysicsTimeSet](/mod/game-api/types/alta-utilities/dynamicphysicstimeset) <span>Alta.Utilities</span>
+- [DynamicQueue&lt;T&gt;](/mod/game-api/types/alta-crafting/dynamicqueue-t) <span>Alta.Blacksmithing</span>
+- [DynamiteStrike](/mod/game-api/types/global-c-d/dynamitestrike)
+- [DynamiteStrike.Create](/mod/game-api/types/global-c-d/dynamitestrike-create)
+
+</div>
+
+## E
+
+<div className="type-index">
+
+- [EatAmountTask](/mod/game-api/types/global-e-h/eatamounttask)
+- [Eater](/mod/game-api/types/global-e-h/eater)
+- [EatingAmountArgument](/mod/game-api/types/global-e-h/eatingamountargument)
+- [EcholocationEffect](/mod/game-api/types/global-e-h/echolocationeffect)
+- [EcholocationEffect.LevelDefinition](/mod/game-api/types/global-e-h/echolocationeffect-leveldefinition)
+- [Ecosystem](/mod/game-api/types/alta-world-generation/ecosystem) <span>Alta.Populations</span>
+- [Ecosystem.PopulationApplication](/mod/game-api/types/alta-world-generation/ecosystem-populationapplication) <span>Alta.Populations</span>
+- [EcosystemSaveData](/mod/game-api/types/alta-world-generation/ecosystemsavedata) <span>Alta.Populations</span>
+- [EcosystemSaveData.Entry](/mod/game-api/types/alta-world-generation/ecosystemsavedata-entry) <span>Alta.Populations</span>
+- [Edge](/mod/game-api/types/alta-world-generation/edge) <span>Alta.Forests</span>
+- [EdgeCutFilter](/mod/game-api/types/global-e-h/edgecutfilter)
+- [EdgeCutFilter.Create](/mod/game-api/types/global-e-h/edgecutfilter-create)
+- [EdgeFaceFlairs](/mod/game-api/types/alta-items/edgefaceflairs) <span>Alta.Pages</span>
+- [EdgeType](/mod/game-api/types/alta-world-generation/edgetype) <span>Alta.Forests</span>
+- [EdibleEvent](/mod/game-api/types/global-e-h/edibleevent)
+- [EdibleObject](/mod/game-api/types/global-e-h/edibleobject)
+- [EdibleObject.EatenStage](/mod/game-api/types/global-e-h/edibleobject-eatenstage)
+- [EdiblePageProvider](/mod/game-api/types/global-e-h/ediblepageprovider)
+- [EdiblePageSettings](/mod/game-api/types/global-e-h/ediblepagesettings)
+- [EdiblePageSettings.Create](/mod/game-api/types/global-e-h/ediblepagesettings-create)
+- [EdibleUnityEvent](/mod/game-api/types/global-e-h/edibleunityevent)
+- [EditableCosmeticSlot](/mod/game-api/types/alta-customization/editablecosmeticslot) <span>Alta.Customization</span>
+- [EditableEquipmentManager](/mod/game-api/types/alta-customization/editableequipmentmanager) <span>Alta.Customization</span>
+- [EditableEquipmentSlot](/mod/game-api/types/alta-customization/editableequipmentslot) <span>Alta.Customization</span>
+- [EditableSlot](/mod/game-api/types/alta-customization/editableslot) <span>Alta.Customization</span>
+- [EditGroupRequest](/mod/game-api/types/assembly-api-models/editgrouprequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [EditGroupRoleRequest](/mod/game-api/types/assembly-api-models/editgrouprolerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [EditorApiSettings](/mod/game-api/types/global-e-h/editorapisettings)
+- [EditorCommandCaller](/mod/game-api/types/global-e-h/editorcommandcaller)
+- [EditorCoroutine](/mod/game-api/types/assembly-other/editorcoroutine)
+- [EditorEventPanel](/mod/game-api/types/global-e-h/editoreventpanel)
+- [EditorFakeFocusEvents](/mod/game-api/types/global-e-h/editorfakefocusevents)
+- [EditorForcedTaskUpdater](/mod/game-api/types/global-e-h/editorforcedtaskupdater)
+- [EditorHotKeys](/mod/game-api/types/global-e-h/editorhotkeys)
+- [EditorHotKeys.Create](/mod/game-api/types/global-e-h/editorhotkeys-create)
+- [EditorHotKeys.Hotkey](/mod/game-api/types/global-e-h/editorhotkeys-hotkey)
+- [EditorHotKeys.Hotkey.Key](/mod/game-api/types/global-e-h/editorhotkeys-hotkey-key)
+- [EditorHotKeys.Hotkey.Modifier](/mod/game-api/types/global-e-h/editorhotkeys-hotkey-modifier)
+- [EditorLink](/mod/game-api/types/global-e-h/editorlink)
+- [EditorOnlyAddressableSession](/mod/game-api/types/global-e-h/editoronlyaddressablesession)
+- [EditorOnlyAttribute](/mod/game-api/types/alta-console/editoronlyattribute) <span>Alta.Console</span>
+- [EditorOverrideCredentials](/mod/game-api/types/global-e-h/editoroverridecredentials)
+- [EditorWindowGizmosDrawer](/mod/game-api/types/global-e-h/editorwindowgizmosdrawer)
+- [EditServerPanel](/mod/game-api/types/alta-menus/editserverpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [Effect](/mod/game-api/types/alta-stats-effects/effect) <span>Alta.Alchemy</span>
+- [EffectArea](/mod/game-api/types/alta-stats-effects/effectarea) <span>Alta.Alchemy</span>
+- [EffectDefinition](/mod/game-api/types/alta-stats-effects/effectdefinition) <span>Alta.Alchemy</span>
+- [EffectDefinitionApplication](/mod/game-api/types/alta-stats-effects/effectdefinitionapplication) <span>Alta.Alchemy</span>
+- [EffectEventHandler](/mod/game-api/types/alta-stats-effects/effecteventhandler) <span>Alta.Alchemy</span>
+- [EffectEventHandler&lt;T&gt;](/mod/game-api/types/alta-stats-effects/effecteventhandler-t) <span>Alta.Alchemy</span>
+- [EffectHandler](/mod/game-api/types/alta-stats-effects/effecthandler) <span>Alta.Alchemy</span>
+- [EffectHandler.EffectOverTimeData](/mod/game-api/types/alta-stats-effects/effecthandler-effectovertimedata) <span>Alta.Alchemy</span>
+- [EffectHandler.EffectTypes](/mod/game-api/types/alta-stats-effects/effecthandler-effecttypes) <span>Alta.Alchemy</span>
+- [EffectHandler.TeleportType](/mod/game-api/types/alta-stats-effects/effecthandler-teleporttype) <span>Alta.Alchemy</span>
+- [EffectPlayStatus](/mod/game-api/types/global-e-h/effectplaystatus)
+- [EffectReleaseOnFade](/mod/game-api/types/global-e-h/effectreleaseonfade)
+- [EffectToggleColor](/mod/game-api/types/global-e-h/effecttogglecolor)
+- [EffectToggleColor.ParticleLifetimeColor](/mod/game-api/types/global-e-h/effecttogglecolor-particlelifetimecolor)
+- [EffectToggleColor.ParticleStartColor](/mod/game-api/types/global-e-h/effecttogglecolor-particlestartcolor)
+- [EffectVolumeTrigger](/mod/game-api/types/alta-stats-effects/effectvolumetrigger) <span>Alta.Alchemy</span>
+- [EffectVolumeTrigger.Effect](/mod/game-api/types/alta-stats-effects/effectvolumetrigger-effect) <span>Alta.Alchemy</span>
+- [ElbowController](/mod/game-api/types/alta-player/elbowcontroller) <span>Alta.Character</span>
+- [ElbowControllerSettings](/mod/game-api/types/alta-player/elbowcontrollersettings) <span>Alta.Character</span>
+- [ElbowControllerSettings.Create](/mod/game-api/types/alta-player/elbowcontrollersettings-create) <span>Alta.Character</span>
+- [ElbowDataPointScore](/mod/game-api/types/alta-player/elbowdatapointscore) <span>Alta.Character</span>
+- [ElbowDataPointSet](/mod/game-api/types/alta-player/elbowdatapointset) <span>Alta.Character</span>
+- [ElbowGuideDataPoint](/mod/game-api/types/alta-player/elbowguidedatapoint) <span>Alta.Character</span>
+- [ElbowGuideDataPointRuntime](/mod/game-api/types/alta-player/elbowguidedatapointruntime) <span>Alta.Character</span>
+- [Element](/mod/game-api/types/alta-world-generation/element) <span>Alta.Caves</span>
+- [Element.Create](/mod/game-api/types/alta-world-generation/element-create) <span>Alta.Caves</span>
+- [Element.SerializedVariable](/mod/game-api/types/alta-world-generation/element-serializedvariable) <span>Alta.Caves</span>
+- [ElementDestroy](/mod/game-api/types/alta-world-generation/elementdestroy) <span>Alta.Populations</span>
+- [ElementDoubleValue](/mod/game-api/types/alta-world-generation/elementdoublevalue) <span>Alta.Caves</span>
+- [ElementSingleValue](/mod/game-api/types/alta-world-generation/elementsinglevalue) <span>Alta.Caves</span>
+- [ElevationFromPath](/mod/game-api/types/global-e-h/elevationfrompath)
+- [ElevationFromPath.Create](/mod/game-api/types/global-e-h/elevationfrompath-create)
+- [EmailAndUsernameRequest](/mod/game-api/types/assembly-api-models/emailandusernamerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [EmailValidationHelper](/mod/game-api/types/global-e-h/emailvalidationhelper)
+- [EmailValidationRequest](/mod/game-api/types/assembly-api-models/emailvalidationrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [EmailVerificationController](/mod/game-api/types/global-e-h/emailverificationcontroller)
+- [EmailVerificationManager](/mod/game-api/types/global-e-h/emailverificationmanager)
+- [EmbedArguments](/mod/game-api/types/global-e-h/embedarguments)
+- [Embeddable](/mod/game-api/types/global-e-h/embeddable)
+- [EmbeddableEvent](/mod/game-api/types/global-e-h/embeddableevent)
+- [EmbeddableGlobalSettings](/mod/game-api/types/global-e-h/embeddableglobalsettings)
+- [EmbeddableManager](/mod/game-api/types/alta-items/embeddablemanager) <span>Alta.Impact</span>
+- [EmbeddableRaycastProjectile](/mod/game-api/types/global-e-h/embeddableraycastprojectile)
+- [EmbeddableSaveData](/mod/game-api/types/global-e-h/embeddablesavedata)
+- [EmbeddableSaveData1](/mod/game-api/types/global-e-h/embeddablesavedata1)
+- [EmbeddableSurface](/mod/game-api/types/alta-items/embeddablesurface) <span>Alta.Impact</span>
+- [EmbeddableUnityEvent](/mod/game-api/types/global-e-h/embeddableunityevent)
+- [EmberComposer](/mod/game-api/types/global-e-h/embercomposer)
+- [EmberComposer.Create](/mod/game-api/types/global-e-h/embercomposer-create)
+- [EmberComposer.HeatPointCollectionHandler](/mod/game-api/types/global-e-h/embercomposer-heatpointcollectionhandler)
+- [EmberComposerFireEffect](/mod/game-api/types/global-e-h/embercomposerfireeffect)
+- [EmergePoint](/mod/game-api/types/alta-world-generation/emergepoint) <span>Alta.Caves.Displays</span>
+- [EmissionControl](/mod/game-api/types/global-e-h/emissioncontrol)
+- [EmissionControl.InitialValues](/mod/game-api/types/global-e-h/emissioncontrol-initialvalues)
+- [EmissionShapeControl](/mod/game-api/types/global-e-h/emissionshapecontrol)
+- [EmptyAttackDirectionAnimation](/mod/game-api/types/alta-intelligence/emptyattackdirectionanimation) <span>Alta.Intelligence</span>
+- [EmptyBehaviour](/mod/game-api/types/global-e-h/emptybehaviour)
+- [EmptyChildrenSerializer](/mod/game-api/types/global-e-h/emptychildrenserializer)
+- [EmptyChunkContentManager](/mod/game-api/types/alta-world/emptychunkcontentmanager) <span>Alta.Chunks</span>
+- [EmptyDockAfterTimePeriod](/mod/game-api/types/global-e-h/emptydockaftertimeperiod)
+- [EmptyFolderContents](/mod/game-api/types/global-e-h/emptyfoldercontents)
+- [EmptyFolderContents.Create](/mod/game-api/types/global-e-h/emptyfoldercontents-create)
+- [EmptyHistory&lt;T&gt;](/mod/game-api/types/global-e-h/emptyhistory-t)
+- [EmptyJoint](/mod/game-api/types/global-e-h/emptyjoint)
+- [EmptyMenu](/mod/game-api/types/alta-player/emptymenu) <span>Alta.QuickAccessActions</span>
+- [EnableAndUnchildIfClose](/mod/game-api/types/global-e-h/enableandunchildifclose)
+- [EnableLerp](/mod/game-api/types/global-e-h/enablelerp)
+- [Enchantable](/mod/game-api/types/alta-crafting/enchantable) <span>Alta.Enchantments</span>
+- [EnchantableData](/mod/game-api/types/alta-crafting/enchantabledata) <span>Alta.Enchantments</span>
+- [Enchantment](/mod/game-api/types/alta-crafting/enchantment) <span>Alta.Enchantments</span>
+- [Enchantment.Binding](/mod/game-api/types/alta-crafting/enchantment-binding) <span>Alta.Enchantments</span>
+- [Enchantment.Create](/mod/game-api/types/alta-crafting/enchantment-create) <span>Alta.Enchantments</span>
+- [EnchantmentApplication](/mod/game-api/types/alta-crafting/enchantmentapplication) <span>Alta.Enchantments</span>
+- [EnchantmentEffect](/mod/game-api/types/alta-crafting/enchantmenteffect) <span>Alta.Enchantments</span>
+- [EnchantmentEffectApplication&lt;T&gt;](/mod/game-api/types/alta-crafting/enchantmenteffectapplication-t) <span>Alta.Enchantments</span>
+- [EnchantmentTrigger](/mod/game-api/types/alta-crafting/enchantmenttrigger) <span>Alta.Enchantments</span>
+- [EnchantmentTrigger.EffectType](/mod/game-api/types/alta-crafting/enchantmenttrigger-effecttype) <span>Alta.Enchantments</span>
+- [EnchantmentTriggerApplication&lt;T&gt;](/mod/game-api/types/alta-crafting/enchantmenttriggerapplication-t) <span>Alta.Enchantments</span>
+- [EnergyBasedHeatSource](/mod/game-api/types/alta-stats-effects/energybasedheatsource) <span>Alta.Heat</span>
+- [EnterLocomotionCheck](/mod/game-api/types/global-e-h/enterlocomotioncheck)
+- [EntityDespawnedHandler](/mod/game-api/types/alta-networking/entitydespawnedhandler) <span>Alta.Networking</span>
+- [EntityInfo](/mod/game-api/types/alta-console/entityinfo) <span>Alta.Console.Commands</span>
+- [EntityManager](/mod/game-api/types/alta-networking/entitymanager) <span>Alta.Networking.Internal</span>
+- [EntityMessageHandler](/mod/game-api/types/alta-networking/entitymessagehandler) <span>Alta.Networking</span>
+- [EntityMessageStatistics](/mod/game-api/types/alta-networking/entitymessagestatistics) <span>Alta.Profiling.Networking</span>
+- [EntityMessageType](/mod/game-api/types/alta-networking/entitymessagetype) <span>Alta.Networking</span>
+- [EntityMessageTypeStatistic](/mod/game-api/types/alta-networking/entitymessagetypestatistic) <span>Alta.Profiling.Networking</span>
+- [EntitySerializationMessage](/mod/game-api/types/alta-networking/entityserializationmessage) <span>Alta.Networking</span>
+- [EntitySerializer](/mod/game-api/types/alta-networking/entityserializer) <span>Alta.Networking</span>
+- [EntitySpawnedHandler](/mod/game-api/types/alta-networking/entityspawnedhandler) <span>Alta.Networking</span>
+- [EntitySpawnTest](/mod/game-api/types/global-e-h/entityspawntest)
+- [EntityStatistic](/mod/game-api/types/alta-networking/entitystatistic) <span>Alta.Profiling.Networking</span>
+- [EntityStatistics](/mod/game-api/types/alta-networking/entitystatistics) <span>Alta.Profiling.Networking</span>
+- [EntityStatistics.StatisticSortingMethod](/mod/game-api/types/alta-networking/entitystatistics-statisticsortingmethod) <span>Alta.Profiling.Networking</span>
+- [EntityStreamerData](/mod/game-api/types/alta-networking/entitystreamerdata) <span>Alta.Networking</span>
+- [EntitySyncMessage](/mod/game-api/types/alta-networking/entitysyncmessage) <span>Alta.Networking</span>
+- [EnumArrayAttribute](/mod/game-api/types/global-e-h/enumarrayattribute)
+- [EnumerableExtensions](/mod/game-api/types/assembly-api-models/enumerableextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [EnumFlagsAttribute](/mod/game-api/types/assembly-other/enumflagsattribute)
+- [EnumFloatGameSettingsAccess](/mod/game-api/types/alta-utilities/enumfloatgamesettingsaccess) <span>Alta.Utilities</span>
+- [EnumFloatGameSettingsAccess.CreateEnum](/mod/game-api/types/alta-utilities/enumfloatgamesettingsaccess-createenum) <span>Alta.Utilities</span>
+- [EnumGameSettingAccess](/mod/game-api/types/alta-utilities/enumgamesettingaccess) <span>Alta.Utilities</span>
+- [EnumGameSettingAccess.Create](/mod/game-api/types/alta-utilities/enumgamesettingaccess-create) <span>Alta.Utilities</span>
+- [EnumMenuSettingBase](/mod/game-api/types/alta-menus/enummenusettingbase) <span>Alta.Menu</span>
+- [EnumSettingAccess](/mod/game-api/types/alta-utilities/enumsettingaccess) <span>Alta.Utilities</span>
+- [EnvironmentalEffect&lt;T&gt;](/mod/game-api/types/alta-stats-effects/environmentaleffect-t) <span>Alta.Alchemy</span>
+- [EnvironmentalPropertyBlock](/mod/game-api/types/global-e-h/environmentalpropertyblock)
+- [EnvironmentHandler](/mod/game-api/types/global-e-h/environmenthandler)
+- [EnvironmentLerp](/mod/game-api/types/global-e-h/environmentlerp)
+- [EnvironmentLerp.Variable](/mod/game-api/types/global-e-h/environmentlerp-variable)
+- [EnvironmentNode](/mod/game-api/types/global-e-h/environmentnode)
+- [EnvironmentNode.Variable](/mod/game-api/types/global-e-h/environmentnode-variable)
+- [EquipmentCustomizationRoom](/mod/game-api/types/alta-customization/equipmentcustomizationroom) <span>Alta.Customization</span>
+- [EquipmentModeQuickAccess](/mod/game-api/types/alta-player/equipmentmodequickaccess) <span>Alta.QuickAccessActions</span>
+- [EquipmentPart](/mod/game-api/types/alta-customization/equipmentpart) <span>Alta.Customization</span>
+- [EquipmentPickup](/mod/game-api/types/alta-customization/equipmentpickup) <span>Alta.Customization</span>
+- [EquipmentReference](/mod/game-api/types/alta-items/equipmentreference) <span>Alta.Impact</span>
+- [EquipmentReference.EquipmentChangedHandler](/mod/game-api/types/alta-items/equipmentreference-equipmentchangedhandler) <span>Alta.Impact</span>
+- [EquipmentRoomAnimator](/mod/game-api/types/global-e-h/equipmentroomanimator)
+- [EquipmentSlot](/mod/game-api/types/alta-customization/equipmentslot) <span>Alta.Customization</span>
+- [EquipmentState](/mod/game-api/types/alta-player/equipmentstate) <span>Alta.PlayerStates</span>
+- [EquipmentStateSettings](/mod/game-api/types/alta-player/equipmentstatesettings) <span>Alta.PlayerStates</span>
+- [EquipmentStateSettings.Create](/mod/game-api/types/alta-player/equipmentstatesettings-create) <span>Alta.PlayerStates</span>
+- [EquipmentToPlayingTransition](/mod/game-api/types/alta-player/equipmenttoplayingtransition) <span>Alta.PlayerStates.Transitions</span>
+- [EquipmentTransition&lt;TFrom, TTo&gt;](/mod/game-api/types/alta-player/equipmenttransition-tfrom-tto) <span>Alta.PlayerStates.Transitions</span>
+- [ErrorCode](/mod/game-api/types/assembly-api-models/errorcode) <span>Alta.Api.DataTransferModels.Errors</span>
+- [ErrorTestType](/mod/game-api/types/alta-menus/errortesttype) <span>Alta.PlatformSpecific.Oculus</span>
+- [ErrorTrackerSettings](/mod/game-api/types/global-e-h/errortrackersettings)
+- [EruptAreaAttack](/mod/game-api/types/global-e-h/eruptareaattack)
+- [EvaluateWielder](/mod/game-api/types/global-e-h/evaluatewielder)
+- [Event](/mod/game-api/types/alta-intelligence/event) <span>Alta.Intelligence</span>
+- [EventAtPosition](/mod/game-api/types/global-e-h/eventatposition)
+- [EventBus&lt;T&gt;](/mod/game-api/types/assembly-other/eventbus-t) <span>Alta.EventBusSystem</span>
+- [EventBusLocator](/mod/game-api/types/game-other-namespaces/eventbuslocator) <span>ATT.EventBus</span>
+- [EventChannelAiHook](/mod/game-api/types/alta-intelligence/eventchannelaihook) <span>Alta.Intelligence</span>
+- [EventChannelTimedAiHook](/mod/game-api/types/alta-intelligence/eventchanneltimedaihook) <span>Alta.Intelligence</span>
+- [EventChannelTimedAiHook.Delay](/mod/game-api/types/alta-intelligence/eventchanneltimedaihook-delay) <span>Alta.Intelligence</span>
+- [EventOrb](/mod/game-api/types/game-other-namespaces/eventorb) <span>ATT.MainMenu.Scripts</span>
+- [EveryXLayersConstrain](/mod/game-api/types/alta-world-generation/everyxlayersconstrain) <span>Alta.Caves</span>
+- [ExampleBehaviour](/mod/game-api/types/alta-networking/examplebehaviour) <span>Alta.Networking</span>
+- [ExampleEventPlayer](/mod/game-api/types/global-e-h/exampleeventplayer)
+- [ExperienceFillVisualizer](/mod/game-api/types/global-e-h/experiencefillvisualizer)
+- [ExplosionRadius](/mod/game-api/types/global-e-h/explosionradius)
+- [Explosive](/mod/game-api/types/global-e-h/explosive)
+- [ExposedScriptableObjectAttribute](/mod/game-api/types/global-e-h/exposedscriptableobjectattribute)
+- [ExposurePlayerScreenFader](/mod/game-api/types/global-e-h/exposureplayerscreenfader)
+- [ExtraArrowUpdater](/mod/game-api/types/global-e-h/extraarrowupdater)
+- [ExtraArrowUpdater.ExtraArrowData](/mod/game-api/types/global-e-h/extraarrowupdater-extraarrowdata)
+- [EyeFocus](/mod/game-api/types/alta-player/eyefocus) <span>Alta.Character</span>
+- [EyeFocusController](/mod/game-api/types/alta-player/eyefocuscontroller) <span>Alta.Character</span>
+- [EyeFocusControllerSettings](/mod/game-api/types/alta-player/eyefocuscontrollersettings) <span>Alta.Character</span>
+- [EyeFocusControllerSettings.Create](/mod/game-api/types/alta-player/eyefocuscontrollersettings-create) <span>Alta.Character</span>
+- [EyePickup](/mod/game-api/types/alta-customization/eyepickup) <span>Alta.Customization</span>
+- [EyeSettings](/mod/game-api/types/alta-player/eyesettings) <span>Alta.Character</span>
+
+</div>
+
+## F
+
+<div className="type-index">
+
+- [FaceEdgeCorner](/mod/game-api/types/alta-items/faceedgecorner) <span>Alta.Pages</span>
+- [FaceEdgeCorner.Create](/mod/game-api/types/alta-items/faceedgecorner-create) <span>Alta.Pages</span>
+- [FaceEdgeMiddle](/mod/game-api/types/alta-items/faceedgemiddle) <span>Alta.Pages</span>
+- [FaceEdgeMiddle.Create](/mod/game-api/types/alta-items/faceedgemiddle-create) <span>Alta.Pages</span>
+- [FaceEmblem](/mod/game-api/types/alta-items/faceemblem) <span>Alta.Pages</span>
+- [FaceEmblem.Create](/mod/game-api/types/alta-items/faceemblem-create) <span>Alta.Pages</span>
+- [FaceEmblemFrame](/mod/game-api/types/alta-items/faceemblemframe) <span>Alta.Pages</span>
+- [FaceEmblemFrame.Create](/mod/game-api/types/alta-items/faceemblemframe-create) <span>Alta.Pages</span>
+- [FaceObject](/mod/game-api/types/global-e-h/faceobject)
+- [FaceSpineCorner](/mod/game-api/types/alta-items/facespinecorner) <span>Alta.Pages</span>
+- [FaceSpineCorner.Create](/mod/game-api/types/alta-items/facespinecorner-create) <span>Alta.Pages</span>
+- [FaceSpineMiddle](/mod/game-api/types/alta-items/facespinemiddle) <span>Alta.Pages</span>
+- [FaceSpineMiddle.Create](/mod/game-api/types/alta-items/facespinemiddle-create) <span>Alta.Pages</span>
+- [FaceTarget](/mod/game-api/types/alta-intelligence/facetarget) <span>Alta.Intelligence</span>
+- [Facing2DSense](/mod/game-api/types/alta-intelligence/facing2dsense) <span>Alta.Intelligence</span>
+- [Facing2DSense.Create](/mod/game-api/types/alta-intelligence/facing2dsense-create) <span>Alta.Intelligence</span>
+- [Facing3DSense](/mod/game-api/types/alta-intelligence/facing3dsense) <span>Alta.Intelligence</span>
+- [Facing3DSense.Create](/mod/game-api/types/alta-intelligence/facing3dsense-create) <span>Alta.Intelligence</span>
+- [FacingOperation](/mod/game-api/types/alta-intelligence/facingoperation) <span>Alta.Intelligence</span>
+- [Factory](/mod/game-api/types/assembly-other/factory)
+- [Factory&lt;TInterface&gt;](/mod/game-api/types/assembly-other/factory-tinterface)
+- [Factory&lt;TParam, TInterface&gt;](/mod/game-api/types/assembly-other/factory-tparam-tinterface)
+- [Factory&lt;TParam1, TParam2, TInterface&gt;](/mod/game-api/types/assembly-other/factory-tparam1-tparam2-tinterface)
+- [Factory&lt;TParam1, TParam2, TParam3, TInterface&gt;](/mod/game-api/types/assembly-other/factory-tparam1-tparam2-tparam3-tinterface)
+- [FactoryAsync](/mod/game-api/types/assembly-other/factoryasync)
+- [FactoryAsync&lt;TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasync-tconcrete-tinterface)
+- [FactoryAsync&lt;TParam, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasync-tparam-tconcrete-tinterface)
+- [FactoryAsync&lt;TParam1, TParam2, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tconcrete-tinterface)
+- [FactoryAsync&lt;TParam1, TParam2, TParam3, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasync-tparam1-tparam2-tparam3-tconcrete-tinterface)
+- [FactoryAsyncPooled&lt;TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasyncpooled-tconcrete-tinterface)
+- [FactoryAsyncPooled&lt;TParam, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasyncpooled-tparam-tconcrete-tinterface)
+- [FactoryAsyncPooled&lt;TParam1, TParam2, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tconcrete-tinterface)
+- [FactoryAsyncPooled&lt;TParam1, TParam2, TParam3, TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/factoryasyncpooled-tparam1-tparam2-tparam3-tconcrete-tinterface)
+- [Facts](/mod/game-api/types/global-e-h/facts)
+- [FadeInOutBase](/mod/game-api/types/global-e-h/fadeinoutbase)
+- [FadeInOutNetworkEntity](/mod/game-api/types/global-e-h/fadeinoutnetworkentity)
+- [FailTargetOperation](/mod/game-api/types/alta-intelligence/failtargetoperation) <span>Alta.Intelligence</span>
+- [FakeHostController](/mod/game-api/types/global-e-h/fakehostcontroller)
+- [FakePickup](/mod/game-api/types/global-e-h/fakepickup)
+- [FakePlatformDevice](/mod/game-api/types/assembly-other/fakeplatformdevice) <span>Alta.Platform.Fakes</span>
+- [FakePlatformService](/mod/game-api/types/assembly-other/fakeplatformservice) <span>Alta.Platform.Fakes</span>
+- [FakePlayerControllerMultiLockModel](/mod/game-api/types/global-e-h/fakeplayercontrollermultilockmodel)
+- [FakePlayerHealth](/mod/game-api/types/global-e-h/fakeplayerhealth)
+- [FakePlayerHelper](/mod/game-api/types/global-e-h/fakeplayerhelper)
+- [FakeSocket](/mod/game-api/types/alta-networking/fakesocket) <span>Alta.Networking</span>
+- [FakeStaminaManager](/mod/game-api/types/game-other-namespaces/fakestaminamanager) <span>Features.Climbing</span>
+- [FakeValidVersionService](/mod/game-api/types/assembly-other/fakevalidversionservice) <span>Alta.Platform.Fakes</span>
+- [FallbackCamera](/mod/game-api/types/global-e-h/fallbackcamera)
+- [FarAwayController](/mod/game-api/types/global-e-h/farawaycontroller)
+- [FarAwayController.PlayerData](/mod/game-api/types/global-e-h/farawaycontroller-playerdata)
+- [FarAwayController.PlayerTuple](/mod/game-api/types/global-e-h/farawaycontroller-playertuple)
+- [FastChunkLookup](/mod/game-api/types/alta-world/fastchunklookup) <span>Alta.Chunks</span>
+- [FastPriorityQueue&lt;T&gt;](/mod/game-api/types/assembly-other/fastpriorityqueue-t) <span>Alta.Timing.PriorityQueue</span>
+- [FastPriorityQueueNode](/mod/game-api/types/assembly-other/fastpriorityqueuenode) <span>Alta.Timing.PriorityQueue</span>
+- [FastPriorityQueueNodeTimeSpan](/mod/game-api/types/assembly-other/fastpriorityqueuenodetimespan) <span>Alta.Timing.PriorityQueue</span>
+- [FastPriorityQueueTimeSpan&lt;T&gt;](/mod/game-api/types/assembly-other/fastpriorityqueuetimespan-t) <span>Alta.Timing.PriorityQueue</span>
+- [FaucetHandle](/mod/game-api/types/global-e-h/faucethandle)
+- [FauxRigidbody](/mod/game-api/types/global-e-h/fauxrigidbody)
+- [Feather](/mod/game-api/types/global-e-h/feather)
+- [FeatureSetFlags](/mod/game-api/types/game-other-namespaces/featuresetflags) <span>ATT.TownshipServer</span>
+- [FeedbackInteractionPoint](/mod/game-api/types/alta-menus/feedbackinteractionpoint) <span>Alta.UserInterface</span>
+- [FestiveFeature](/mod/game-api/types/global-e-h/festivefeature)
+- [Festivity](/mod/game-api/types/global-e-h/festivity)
+- [Festivity.Create](/mod/game-api/types/global-e-h/festivity-create)
+- [FestivityCommandModule](/mod/game-api/types/global-e-h/festivitycommandmodule)
+- [FestivityManager](/mod/game-api/types/global-e-h/festivitymanager)
+- [FfvSource](/mod/game-api/types/assembly-other/ffvsource)
+- [FileDownload](/mod/game-api/types/alta-utilities/filedownload) <span>Alta</span>
+- [FileInfoWrapper](/mod/game-api/types/assembly-other/fileinfowrapper) <span>Alta.Utilities</span>
+- [FileSystemExtensions](/mod/game-api/types/assembly-other/filesystemextensions) <span>Alta.Utilities</span>
+- [FillSet](/mod/game-api/types/alta-world-generation/fillset) <span>Alta.Forests</span>
+- [Filter](/mod/game-api/types/global-e-h/filter)
+- [Filter](/mod/game-api/types/alta-customization/filter) <span>Alta.ScreenshotCamera</span>
+- [FilterAction](/mod/game-api/types/alta-customization/filteraction) <span>Alta.ScreenshotCamera</span>
+- [FiltersButton](/mod/game-api/types/alta-customization/filtersbutton) <span>Alta.ScreenshotCamera</span>
+- [FingerTipSettings](/mod/game-api/types/global-e-h/fingertipsettings)
+- [FinishSpawnProjectTask](/mod/game-api/types/global-e-h/finishspawnprojecttask)
+- [FinishSpawnProjectTaskArgument](/mod/game-api/types/global-e-h/finishspawnprojecttaskargument)
+- [Fire](/mod/game-api/types/alta-stats-effects/fire) <span>Alta.Heat</span>
+- [Fire.FuelConsumptionState](/mod/game-api/types/alta-stats-effects/fire-fuelconsumptionstate) <span>Alta.Heat</span>
+- [FireBug](/mod/game-api/types/alta-intelligence/firebug) <span>Alta.Intelligence</span>
+- [FireDissolve](/mod/game-api/types/alta-stats-effects/firedissolve) <span>Alta.Heat</span>
+- [FireExtinguisher](/mod/game-api/types/alta-stats-effects/fireextinguisher) <span>Alta.Heat</span>
+- [FireExtinguishingFluid](/mod/game-api/types/alta-stats-effects/fireextinguishingfluid) <span>Alta.Alchemy</span>
+- [FireLighter](/mod/game-api/types/alta-stats-effects/firelighter) <span>Alta.Heat</span>
+- [FireLogic](/mod/game-api/types/global-e-h/firelogic)
+- [FireLogicSaveData](/mod/game-api/types/global-e-h/firelogicsavedata)
+- [FireParticleDivergence](/mod/game-api/types/global-e-h/fireparticledivergence)
+- [FireSaveData](/mod/game-api/types/alta-stats-effects/firesavedata) <span>Alta.Heat</span>
+- [FireSaveData1](/mod/game-api/types/alta-stats-effects/firesavedata1) <span>Alta.Heat</span>
+- [FireSettings](/mod/game-api/types/alta-stats-effects/firesettings) <span>Alta.Heat</span>
+- [FireSettings.Create](/mod/game-api/types/alta-stats-effects/firesettings-create) <span>Alta.Heat</span>
+- [FireStatusRaycastCrafter](/mod/game-api/types/alta-stats-effects/firestatusraycastcrafter) <span>Alta.Heat</span>
+- [FirstJoinState](/mod/game-api/types/alta-player/firstjoinstate) <span>Alta.PlayerStates</span>
+- [FirstJoinToCustomizationTransition](/mod/game-api/types/alta-player/firstjointocustomizationtransition) <span>Alta.PlayerStates.Transitions</span>
+- [FirstJoinToPlayingTransition](/mod/game-api/types/alta-player/firstjointoplayingtransition) <span>Alta.PlayerStates.Transitions</span>
+- [FixedImpactor](/mod/game-api/types/alta-items/fixedimpactor) <span>Alta.Impact</span>
+- [FixedImpactorGroup](/mod/game-api/types/alta-items/fixedimpactorgroup) <span>Alta.Impact</span>
+- [FixedPouringStrengthController](/mod/game-api/types/alta-stats-effects/fixedpouringstrengthcontroller) <span>Alta.Liquid</span>
+- [FixedStatChangeHook](/mod/game-api/types/alta-intelligence/fixedstatchangehook) <span>Alta.Intelligence</span>
+- [FixedStatChangeHook.OperationTarget](/mod/game-api/types/alta-intelligence/fixedstatchangehook-operationtarget) <span>Alta.Intelligence</span>
+- [FixedStatChangeHook.OperationTime](/mod/game-api/types/alta-intelligence/fixedstatchangehook-operationtime) <span>Alta.Intelligence</span>
+- [FixedStatChangeHook.OperationType](/mod/game-api/types/alta-intelligence/fixedstatchangehook-operationtype) <span>Alta.Intelligence</span>
+- [FixMod](/mod/game-api/types/global-e-h/fixmod)
+- [FlagAnimationManager](/mod/game-api/types/global-e-h/flaganimationmanager)
+- [FlagAnimationManager.status](/mod/game-api/types/global-e-h/flaganimationmanager-status)
+- [FlairLodSet](/mod/game-api/types/alta-items/flairlodset) <span>Alta.Pages</span>
+- [FlairSet](/mod/game-api/types/alta-items/flairset) <span>Alta.Pages</span>
+- [FlairSet.Create](/mod/game-api/types/alta-items/flairset-create) <span>Alta.Pages</span>
+- [FlairSettings](/mod/game-api/types/alta-items/flairsettings) <span>Alta.Pages</span>
+- [FlairSettings.FrameMaterialMode](/mod/game-api/types/alta-items/flairsettings-framematerialmode) <span>Alta.Pages</span>
+- [FlattenAndCleanEmptyAtBakeTime](/mod/game-api/types/global-e-h/flattenandcleanemptyatbaketime)
+- [FleetInfo](/mod/game-api/types/assembly-api-models/fleetinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FlintSpark](/mod/game-api/types/global-e-h/flintspark)
+- [FloatEvent](/mod/game-api/types/global-e-h/floatevent)
+- [FloatGameSettingsAccess](/mod/game-api/types/alta-utilities/floatgamesettingsaccess) <span>Alta.Utilities</span>
+- [FloatGameSettingsAccess.Create](/mod/game-api/types/alta-utilities/floatgamesettingsaccess-create) <span>Alta.Utilities</span>
+- [FloatMaterialProperty](/mod/game-api/types/alta-utilities/floatmaterialproperty) <span>Alta.Utilities</span>
+- [FloatModifier](/mod/game-api/types/global-e-h/floatmodifier)
+- [FloatRangeSettings](/mod/game-api/types/assembly-other/floatrangesettings)
+- [FloatSenderInput](/mod/game-api/types/alta-items/floatsenderinput) <span>Alta.Logic</span>
+- [FloatUnityEvent](/mod/game-api/types/global-e-h/floatunityevent)
+- [FloatValuesPerLevel](/mod/game-api/types/alta-player/floatvaluesperlevel) <span>Alta.Progression.Skills</span>
+- [FlyCamDeviceController](/mod/game-api/types/global-e-h/flycamdevicecontroller)
+- [FlyCamDeviceLifecycle](/mod/game-api/types/global-e-h/flycamdevicelifecycle)
+- [FlyCamHands](/mod/game-api/types/global-e-h/flycamhands)
+- [FlyCamHands.Controls](/mod/game-api/types/global-e-h/flycamhands-controls)
+- [FlyCamInput](/mod/game-api/types/global-e-h/flycaminput)
+- [FlyCamInput.IPlayingActions](/mod/game-api/types/global-e-h/flycaminput-iplayingactions)
+- [FlyCamInput.PlayingActions](/mod/game-api/types/global-e-h/flycaminput-playingactions)
+- [FlyCamInputController](/mod/game-api/types/global-e-h/flycaminputcontroller)
+- [FlyCamLocomotionController](/mod/game-api/types/global-e-h/flycamlocomotioncontroller)
+- [FlyCamLocomotionController.SenseSetupSet](/mod/game-api/types/global-e-h/flycamlocomotioncontroller-sensesetupset)
+- [FlyCamPlayer](/mod/game-api/types/global-e-h/flycamplayer)
+- [FocusButton](/mod/game-api/types/alta-customization/focusbutton) <span>Alta.ScreenshotCamera</span>
+- [FocusPuller](/mod/game-api/types/alta-customization/focuspuller) <span>Alta.ScreenshotCamera</span>
+- [FocusPuller.FocusMode](/mod/game-api/types/alta-customization/focuspuller-focusmode) <span>Alta.ScreenshotCamera</span>
+- [FocusPuller.FocusPoint](/mod/game-api/types/alta-customization/focuspuller-focuspoint) <span>Alta.ScreenshotCamera</span>
+- [FogAnimator](/mod/game-api/types/global-e-h/foganimator)
+- [FollowCamera](/mod/game-api/types/global-e-h/followcamera)
+- [Follower](/mod/game-api/types/alta-intelligence/follower) <span>Alta.Pathfinding</span>
+- [FoodProcesser](/mod/game-api/types/global-e-h/foodprocesser)
+- [ForbiddenException](/mod/game-api/types/assembly-api-models/forbiddenexception) <span>Alta.Api.DataTransferModels.Exceptions</span>
+- [ForceCompleteTutorialStepEvent](/mod/game-api/types/game-other-namespaces/forcecompletetutorialstepevent) <span>ATT.EventBus.TownshipEvents</span>
+- [ForcedAtlasDefinition](/mod/game-api/types/global-e-h/forcedatlasdefinition)
+- [ForcedCapitalizationAttribute](/mod/game-api/types/assembly-other/forcedcapitalizationattribute)
+- [ForcedChunking](/mod/game-api/types/global-e-h/forcedchunking)
+- [ForceDefaultConverter](/mod/game-api/types/assembly-api-models/forcedefaultconverter) <span>Alta.Api.DataTransferModels.Converters</span>
+- [ForceLoadChunk](/mod/game-api/types/global-e-h/forceloadchunk)
+- [ForestAmbience](/mod/game-api/types/alta-world/forestambience) <span>Alta.Environmental.Atmosphere</span>
+- [ForestAttributeEvaluator](/mod/game-api/types/alta-world-generation/forestattributeevaluator) <span>Alta.Forests</span>
+- [ForestBiome](/mod/game-api/types/global-e-h/forestbiome)
+- [ForestBiome.Create](/mod/game-api/types/global-e-h/forestbiome-create)
+- [ForestBridges](/mod/game-api/types/alta-world-generation/forestbridges) <span>Alta.Forests</span>
+- [ForestBridges.Option](/mod/game-api/types/alta-world-generation/forestbridges-option) <span>Alta.Forests</span>
+- [ForestChunk](/mod/game-api/types/global-e-h/forestchunk)
+- [ForestCliffEvaluator](/mod/game-api/types/alta-world-generation/forestcliffevaluator) <span>Alta.Forests</span>
+- [ForestCliffEvaluator.CliffPoint](/mod/game-api/types/alta-world-generation/forestcliffevaluator-cliffpoint) <span>Alta.Forests</span>
+- [ForestConnectivityIncreaser](/mod/game-api/types/alta-world-generation/forestconnectivityincreaser) <span>Alta.Forests</span>
+- [ForestConverter](/mod/game-api/types/alta-world-generation/forestconverter) <span>Alta.Forests</span>
+- [ForestDefinedAtmosphere](/mod/game-api/types/alta-world/forestdefinedatmosphere) <span>Alta.Environmental.Atmosphere</span>
+- [ForestEncounters](/mod/game-api/types/alta-world-generation/forestencounters) <span>Alta.Forests</span>
+- [ForestFill](/mod/game-api/types/alta-world-generation/forestfill) <span>Alta.Forests</span>
+- [ForestFillCore](/mod/game-api/types/alta-world-generation/forestfillcore) <span>Alta.Forests</span>
+- [ForestFillCore.Setup](/mod/game-api/types/alta-world-generation/forestfillcore-setup) <span>Alta.Forests</span>
+- [ForestFillSet](/mod/game-api/types/alta-world-generation/forestfillset) <span>Alta.Forests</span>
+- [ForestFillSet.Create](/mod/game-api/types/alta-world-generation/forestfillset-create) <span>Alta.Forests</span>
+- [ForestGCoreInstruction](/mod/game-api/types/alta-world-generation/forestgcoreinstruction) <span>Alta.Forests</span>
+- [ForestGeneration](/mod/game-api/types/alta-world-generation/forestgeneration) <span>Alta.Forests</span>
+- [ForestGenerator](/mod/game-api/types/alta-world-generation/forestgenerator) <span>Alta.Forests</span>
+- [ForestGenerator.NearestInfo](/mod/game-api/types/alta-world-generation/forestgenerator-nearestinfo) <span>Alta.Forests</span>
+- [ForestGenerator.TerrainNoise](/mod/game-api/types/alta-world-generation/forestgenerator-terrainnoise) <span>Alta.Forests</span>
+- [ForestGeneratorSaveData](/mod/game-api/types/alta-world-generation/forestgeneratorsavedata) <span>Alta.Forests</span>
+- [ForestNodeMapSpawnData](/mod/game-api/types/global-e-h/forestnodemapspawndata)
+- [ForestPathAttributeLerper](/mod/game-api/types/alta-world-generation/forestpathattributelerper) <span>Alta.Forests</span>
+- [ForestPopulationArea](/mod/game-api/types/alta-world-generation/forestpopulationarea) <span>Alta.Forests</span>
+- [ForestPopulationCreator](/mod/game-api/types/alta-world-generation/forestpopulationcreator) <span>Alta.Forests</span>
+- [ForestSpaceEvaluator](/mod/game-api/types/alta-world-generation/forestspaceevaluator) <span>Alta.Forests</span>
+- [ForgedHitEffectOverride](/mod/game-api/types/global-e-h/forgedhiteffectoverride)
+- [ForgedModel](/mod/game-api/types/alta-crafting/forgedmodel) <span>Alta.Blacksmithing</span>
+- [ForgedModel&lt;TB, TA&gt;](/mod/game-api/types/alta-crafting/forgedmodel-tb-ta) <span>Alta.Blacksmithing</span>
+- [ForgedPoint](/mod/game-api/types/alta-crafting/forgedpoint) <span>Alta.Blacksmithing</span>
+- [ForgedPointCollection](/mod/game-api/types/alta-crafting/forgedpointcollection) <span>Alta.Blacksmithing</span>
+- [ForgedPointCollectionSaveData](/mod/game-api/types/global-e-h/forgedpointcollectionsavedata)
+- [ForgedPointCollectionSaveData.Element](/mod/game-api/types/global-e-h/forgedpointcollectionsavedata-element)
+- [ForgingHeartCall](/mod/game-api/types/global-e-h/forgingheartcall)
+- [ForgingHeartCall.Create](/mod/game-api/types/global-e-h/forgingheartcall-create)
+- [ForgingHeartCallModifier](/mod/game-api/types/global-e-h/forgingheartcallmodifier)
+- [Form](/mod/game-api/types/assembly-api-models/form) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FormattedBytesFieldAttribute](/mod/game-api/types/assembly-other/formattedbytesfieldattribute)
+- [FormQueryType](/mod/game-api/types/assembly-api-models/formquerytype) <span>Alta.Api.DataTransferModels.Enums.Alta.WebApi.Models</span>
+- [FormResponse](/mod/game-api/types/assembly-api-models/formresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FormResponseSummary](/mod/game-api/types/assembly-api-models/formresponsesummary) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [Formula&lt;T&gt;](/mod/game-api/types/alta-intelligence/formula-t) <span>Alta.Intelligence</span>
+- [ForwardedList&lt;T&gt;](/mod/game-api/types/alta-utilities/forwardedlist-t) <span>Alta.Utilities</span>
+- [FPSCounter](/mod/game-api/types/global-e-h/fpscounter)
+- [FpsDisplay](/mod/game-api/types/alta-utilities/fpsdisplay) <span>Alta.Utilities.Profiling</span>
+- [FPSLogger](/mod/game-api/types/global-e-h/fpslogger)
+- [FrequencyLimiter](/mod/game-api/types/global-e-h/frequencylimiter)
+- [FrequencyTimerDefinition](/mod/game-api/types/alta-world-generation/frequencytimerdefinition) <span>Alta.Populations</span>
+- [Friend](/mod/game-api/types/alta-menus/friend) <span>Alta.Meta.Friends</span>
+- [FriendRequestedType](/mod/game-api/types/assembly-api-models/friendrequestedtype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FriendRequestNotification](/mod/game-api/types/alta-menus/friendrequestnotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [FriendRequestResponse](/mod/game-api/types/assembly-api-models/friendrequestresponse) <span>Alta.Api.DataTransferModels.Models.Requests.DTOs.Requests</span>
+- [FriendRequestResult](/mod/game-api/types/assembly-api-models/friendrequestresult) <span>Alta.Api.DataTransferModels.Models.Responses.DTOs.Responses</span>
+- [FriendRequestToken](/mod/game-api/types/global-e-h/friendrequesttoken)
+- [FriendRequestToken.FriendshipSyncResult](/mod/game-api/types/global-e-h/friendrequesttoken-friendshipsyncresult)
+- [FriendSelector](/mod/game-api/types/global-e-h/friendselector)
+- [FriendshipInfo](/mod/game-api/types/assembly-api-models/friendshipinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FriendshipManager](/mod/game-api/types/global-e-h/friendshipmanager)
+- [FriendshipType](/mod/game-api/types/assembly-api-models/friendshiptype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [FriendsInvitesPanel](/mod/game-api/types/alta-menus/friendsinvitespanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [FriendsListPanel](/mod/game-api/types/alta-menus/friendslistpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [FriendsManager](/mod/game-api/types/alta-menus/friendsmanager) <span>Alta.Meta.Friends</span>
+- [FriendsManager.Tab](/mod/game-api/types/alta-menus/friendsmanager-tab) <span>Alta.Meta.Friends</span>
+- [FriendsRequestsPanel](/mod/game-api/types/alta-menus/friendsrequestspanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [FromPlayingToCustomization](/mod/game-api/types/global-e-h/fromplayingtocustomization)
+- [FruitNinja](/mod/game-api/types/alta-crafting/fruitninja) <span>Alta.Cooking</span>
+- [Fuel](/mod/game-api/types/global-e-h/fuel)
+- [FuelComparer](/mod/game-api/types/alta-stats-effects/fuelcomparer) <span>Alta.Heat</span>
+- [FullCycle](/mod/game-api/types/alta-world/fullcycle) <span>Alta.Environmental.Atmosphere</span>
+- [FullEmptyStatTrigger](/mod/game-api/types/alta-stats-effects/fullemptystattrigger) <span>Alta.StatSystem</span>
+- [FullEmptyUpdateModifier](/mod/game-api/types/alta-stats-effects/fullemptyupdatemodifier) <span>Alta.StatSystem</span>
+- [FullnessStat](/mod/game-api/types/alta-stats-effects/fullnessstat) <span>Alta.StatSystem</span>
+- [FullStackTraceRenderer](/mod/game-api/types/alta-console/fullstacktracerenderer) <span>Alta.Logging.Targets</span>
+- [FunctionKeyDefinition](/mod/game-api/types/global-e-h/functionkeydefinition)
+- [Fuse](/mod/game-api/types/global-e-h/fuse)
+- [Fuse.DockSettings](/mod/game-api/types/global-e-h/fuse-docksettings)
+- [FuseSaveData](/mod/game-api/types/global-e-h/fusesavedata)
+- [FutureUserActionCreateRequest](/mod/game-api/types/assembly-api-models/futureuseractioncreaterequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [FutureUserActionsClient](/mod/game-api/types/assembly-api-client/futureuseractionsclient) <span>Alta.Api.Client.HighLevel</span>
+- [FutureUserActionType](/mod/game-api/types/assembly-api-models/futureuseractiontype) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+
+</div>
+
+## G
+
+<div className="type-index">
+
+- [GachaHandle](/mod/game-api/types/global-e-h/gachahandle)
+- [GameAchievement](/mod/game-api/types/global-e-h/gameachievement)
+- [GameAchievementSettings](/mod/game-api/types/global-e-h/gameachievementsettings)
+- [GameAction](/mod/game-api/types/global-e-h/gameaction)
+- [GameActionChannel](/mod/game-api/types/global-e-h/gameactionchannel)
+- [GameActionStat](/mod/game-api/types/global-e-h/gameactionstat)
+- [GameCommandMessage](/mod/game-api/types/game-other-namespaces/gamecommandmessage) <span>GameCommands.Messages</span>
+- [GameCommandModule](/mod/game-api/types/alta-console/gamecommandmodule) <span>Alta.Console.Commands</span>
+- [GameHomeConfiguration](/mod/game-api/types/assembly-api-models/gamehomeconfiguration) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GameLifetimeScope](/mod/game-api/types/assembly-other/gamelifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [GameMode](/mod/game-api/types/global-e-h/gamemode)
+- [GameModeManager](/mod/game-api/types/global-e-h/gamemodemanager)
+- [GameObjectDisplay](/mod/game-api/types/alta-world-generation/gameobjectdisplay) <span>Alta.Caves.Displays</span>
+- [GameObjectDistribution](/mod/game-api/types/alta-world-generation/gameobjectdistribution) <span>Alta.Caves</span>
+- [GameObjectDistribution.Create](/mod/game-api/types/alta-world-generation/gameobjectdistribution-create) <span>Alta.Caves</span>
+- [GameObjectDistribution.FestivityGroup](/mod/game-api/types/alta-world-generation/gameobjectdistribution-festivitygroup) <span>Alta.Caves</span>
+- [GameObjectDistribution.Item](/mod/game-api/types/alta-world-generation/gameobjectdistribution-item) <span>Alta.Caves</span>
+- [GameObjectLifetimeScope](/mod/game-api/types/assembly-other/gameobjectlifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [GameResponseMessage](/mod/game-api/types/game-other-namespaces/gameresponsemessage) <span>GameCommands.Messages</span>
+- [GameSceneVisuals](/mod/game-api/types/global-e-h/gamescenevisuals)
+- [GameServerAllocation](/mod/game-api/types/assembly-api-models/gameserverallocation) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerAllocationSpec](/mod/game-api/types/assembly-api-models/gameserverallocationspec) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerAllocationSpec.RequiredSpec](/mod/game-api/types/assembly-api-models/gameserverallocationspec-requiredspec) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerCreateRequest](/mod/game-api/types/assembly-api-models/gameservercreaterequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GameServerInfo](/mod/game-api/types/assembly-api-models/gameserverinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GameServerInfoExtensions](/mod/game-api/types/global-e-h/gameserverinfoextensions)
+- [GameServerInfoMinimal](/mod/game-api/types/assembly-api-models/gameserverinfominimal) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GameServerSettings](/mod/game-api/types/assembly-api-models/gameserversettings) <span>Alta.Api.DataTransferModels.Settings</span>
+- [GameServerSpec](/mod/game-api/types/assembly-api-models/gameserverspec) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerSpec.GameServerTemplate](/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerSpec.GameServerTemplate.GameServerTemplateSpec](/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig](/mod/game-api/types/assembly-api-models/gameserverspec-gameservertemplate-gameservertemplatespec-containerconfig) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [GameServerStatus](/mod/game-api/types/assembly-api-models/gameserverstatus) <span>Alta.Api.DataTransferModels.Enums</span>
+- [GameServerWebsocketRequest](/mod/game-api/types/assembly-api-models/gameserverwebsocketrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GameServerWebsocketResponse](/mod/game-api/types/assembly-api-models/gameserverwebsocketresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GameServerWebsocketResponseType](/mod/game-api/types/assembly-api-models/gameserverwebsocketresponsetype) <span>Alta.Api.DataTransferModels.Enums</span>
+- [GameSettings](/mod/game-api/types/alta-utilities/gamesettings) <span>Alta.Utilities</span>
+- [GameTaskActionArgument](/mod/game-api/types/global-e-h/gametaskactionargument)
+- [GameTaskManager](/mod/game-api/types/global-e-h/gametaskmanager)
+- [GameTaskManager.ProgressFlagSync](/mod/game-api/types/global-e-h/gametaskmanager-progressflagsync)
+- [GameTimeManager](/mod/game-api/types/global-e-h/gametimemanager)
+- [GameTimeManager.TimeName](/mod/game-api/types/global-e-h/gametimemanager-timename)
+- [GameTimeManagerSaveData](/mod/game-api/types/global-e-h/gametimemanagersavedata)
+- [GameTimeManagerSaveDataOld](/mod/game-api/types/global-e-h/gametimemanagersavedataold)
+- [GameVersion](/mod/game-api/types/assembly-api-models/gameversion) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [GarbageCollectTimer](/mod/game-api/types/global-e-h/garbagecollecttimer)
+- [Garnisher](/mod/game-api/types/global-e-h/garnisher)
+- [Garnisher.Create](/mod/game-api/types/global-e-h/garnisher-create)
+- [Gatherer](/mod/game-api/types/global-e-h/gatherer)
+- [Gatherer.Create](/mod/game-api/types/global-e-h/gatherer-create)
+- [GaugeProgressBar](/mod/game-api/types/global-e-h/gaugeprogressbar)
+- [Gear](/mod/game-api/types/global-e-h/gear)
+- [GeneralDelegates](/mod/game-api/types/alta-utilities/generaldelegates) <span>Alta.Utilities</span>
+- [GeneralDelegates.BoolUpdater](/mod/game-api/types/alta-utilities/generaldelegates-boolupdater) <span>Alta.Utilities</span>
+- [GeneralDelegates.ValueUpdater](/mod/game-api/types/alta-utilities/generaldelegates-valueupdater) <span>Alta.Utilities</span>
+- [GeneralGameEvents](/mod/game-api/types/alta-networking/generalgameevents) <span>Alta.Networking</span>
+- [GeneralInputType](/mod/game-api/types/global-e-h/generalinputtype)
+- [GeneralLoadingObjectManager](/mod/game-api/types/alta-menus/generalloadingobjectmanager) <span>Alta.UserAuthentication</span>
+- [GeneralSettings](/mod/game-api/types/alta-world-generation/generalsettings) <span>Alta.Caves</span>
+- [GeneralSettings.Create](/mod/game-api/types/alta-world-generation/generalsettings-create) <span>Alta.Caves</span>
+- [GeneralValue](/mod/game-api/types/assembly-other/generalvalue) <span>Alta</span>
+- [GeneratablePart](/mod/game-api/types/global-e-h/generatablepart)
+- [GeneratedBiome](/mod/game-api/types/alta-world-generation/generatedbiome) <span>Alta.Caves</span>
+- [GeneratedLoot](/mod/game-api/types/alta-world-generation/generatedloot) <span>Alta.Loot</span>
+- [GeneratedLootSaveData](/mod/game-api/types/alta-world-generation/generatedlootsavedata) <span>Alta.Loot</span>
+- [GeneratedLootSaveData1](/mod/game-api/types/alta-world-generation/generatedlootsavedata1) <span>Alta.Loot</span>
+- [GeneratedNetworkEntityBehaviour](/mod/game-api/types/alta-networking/generatednetworkentitybehaviour) <span>Alta.Networking</span>
+- [GeneratedPageProvider&lt;T&gt;](/mod/game-api/types/global-e-h/generatedpageprovider-t)
+- [GeneratedPageSettings](/mod/game-api/types/global-e-h/generatedpagesettings)
+- [GeneratedPageSettings.Create](/mod/game-api/types/global-e-h/generatedpagesettings-create)
+- [GeneratedPositioning](/mod/game-api/types/global-e-h/generatedpositioning)
+- [GeneratedPositioning.Create](/mod/game-api/types/global-e-h/generatedpositioning-create)
+- [GeneratedPositioning.Module](/mod/game-api/types/global-e-h/generatedpositioning-module)
+- [GeneratedPositioning.PositionModule](/mod/game-api/types/global-e-h/generatedpositioning-positionmodule)
+- [GeneratedPositioning.RotationModule](/mod/game-api/types/global-e-h/generatedpositioning-rotationmodule)
+- [GenerateSignUpCodeRequest](/mod/game-api/types/assembly-api-models/generatesignupcoderequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GenerateUVPoints](/mod/game-api/types/global-e-h/generateuvpoints)
+- [GeneratingBiome](/mod/game-api/types/alta-world-generation/generatingbiome) <span>Alta.Caves</span>
+- [GeneratingBiome.Range](/mod/game-api/types/alta-world-generation/generatingbiome-range) <span>Alta.Caves</span>
+- [GenerationBase](/mod/game-api/types/alta-world-generation/generationbase) <span>Alta.Caves</span>
+- [GenerationBase](/mod/game-api/types/alta-world-generation/generationbase-alta-pagac) <span>Alta.PAGaC</span>
+- [GenerationCore](/mod/game-api/types/global-e-h/generationcore)
+- [GenerationRule](/mod/game-api/types/alta-world-generation/generationrule) <span>Alta.PAGaC</span>
+- [GenerationRule.Create](/mod/game-api/types/alta-world-generation/generationrule-create) <span>Alta.PAGaC</span>
+- [GenerationRule.Step](/mod/game-api/types/alta-world-generation/generationrule-step) <span>Alta.PAGaC</span>
+- [GenerationStage](/mod/game-api/types/alta-world-generation/generationstage) <span>Alta.Caves</span>
+- [GenerationStarter](/mod/game-api/types/global-e-h/generationstarter)
+- [GenerationStartSaveData](/mod/game-api/types/global-e-h/generationstartsavedata)
+- [GenerationStep](/mod/game-api/types/alta-world-generation/generationstep) <span>Alta.PAGaC</span>
+- [Generator](/mod/game-api/types/alta-world-generation/generator) <span>Alta.PAGaC</span>
+- [GenericAssemblyPart](/mod/game-api/types/alta-crafting/genericassemblypart) <span>Alta.Crafting</span>
+- [GenericAssemblyStation](/mod/game-api/types/alta-crafting/genericassemblystation) <span>Alta.Crafting</span>
+- [GenericAssemblyStation.AssemblyPosition](/mod/game-api/types/alta-crafting/genericassemblystation-assemblyposition) <span>Alta.Crafting</span>
+- [GenericAssemblyStationData](/mod/game-api/types/alta-crafting/genericassemblystationdata) <span>Alta.Crafting</span>
+- [GenericCraftingComponent](/mod/game-api/types/alta-crafting/genericcraftingcomponent) <span>Alta.Crafting</span>
+- [GenericCraftingNail](/mod/game-api/types/alta-crafting/genericcraftingnail) <span>Alta.Crafting</span>
+- [GenericCraftingPiece](/mod/game-api/types/alta-crafting/genericcraftingpiece) <span>Alta.Crafting</span>
+- [GenericCraftingPieceDefinition](/mod/game-api/types/alta-crafting/genericcraftingpiecedefinition) <span>Alta.Crafting</span>
+- [GenericCraftingProject](/mod/game-api/types/alta-crafting/genericcraftingproject) <span>Alta.Crafting</span>
+- [GenericCraftingRecipe](/mod/game-api/types/alta-crafting/genericcraftingrecipe) <span>Alta.Crafting</span>
+- [GenericCraftingRecipePageProvider](/mod/game-api/types/global-e-h/genericcraftingrecipepageprovider)
+- [GenericCraftingRecipePageSettings](/mod/game-api/types/global-e-h/genericcraftingrecipepagesettings)
+- [GenericCraftingRecipePageSettings.Create](/mod/game-api/types/global-e-h/genericcraftingrecipepagesettings-create)
+- [GenericCraftingResult](/mod/game-api/types/alta-crafting/genericcraftingresult) <span>Alta.Crafting</span>
+- [GenericCraftingSettings](/mod/game-api/types/alta-crafting/genericcraftingsettings) <span>Alta.Crafting</span>
+- [GenericCraftingStation](/mod/game-api/types/alta-crafting/genericcraftingstation) <span>Alta.Crafting</span>
+- [GenericCraftingStation.ClientSideNailHitSync](/mod/game-api/types/alta-crafting/genericcraftingstation-clientsidenailhitsync) <span>Alta.Crafting</span>
+- [GenericCraftingStation.PickupColliders](/mod/game-api/types/alta-crafting/genericcraftingstation-pickupcolliders) <span>Alta.Crafting</span>
+- [GenericCraftingStationData](/mod/game-api/types/alta-crafting/genericcraftingstationdata) <span>Alta.Crafting</span>
+- [GenericOpenXRInputController](/mod/game-api/types/global-e-h/genericopenxrinputcontroller)
+- [GenericPriorityQueue&lt;TItem, TPriority&gt;](/mod/game-api/types/assembly-other/genericpriorityqueue-titem-tpriority) <span>Alta.Timing.PriorityQueue</span>
+- [GenericPriorityQueueNode&lt;TPriority&gt;](/mod/game-api/types/assembly-other/genericpriorityqueuenode-tpriority) <span>Alta.Timing.PriorityQueue</span>
+- [GenericReplacer](/mod/game-api/types/global-e-h/genericreplacer)
+- [GenericVFXController](/mod/game-api/types/game-other-namespaces/genericvfxcontroller) <span>Features</span>
+- [GeometryHelperMethods](/mod/game-api/types/alta-utilities/geometryhelpermethods) <span>Alta.Utilities</span>
+- [GeometryHelperMethods.Orientation](/mod/game-api/types/alta-utilities/geometryhelpermethods-orientation) <span>Alta.Utilities</span>
+- [GestureMap](/mod/game-api/types/global-e-h/gesturemap)
+- [GestureMap.Create](/mod/game-api/types/global-e-h/gesturemap-create)
+- [GestureMap.GestureMapping](/mod/game-api/types/global-e-h/gesturemap-gesturemapping)
+- [GetComponentAttribute](/mod/game-api/types/assembly-other/getcomponentattribute)
+- [GetComponentIfEmptyAttribute](/mod/game-api/types/assembly-other/getcomponentifemptyattribute)
+- [GetComponentInChildrenAttribute](/mod/game-api/types/assembly-other/getcomponentinchildrenattribute)
+- [GetComponentInParentAttribute](/mod/game-api/types/assembly-other/getcomponentinparentattribute)
+- [GetComponentInPrefabRootAttribute](/mod/game-api/types/global-e-h/getcomponentinprefabrootattribute)
+- [GetComponentsAttribute](/mod/game-api/types/assembly-other/getcomponentsattribute)
+- [GetComponentsInChildrenAttribute](/mod/game-api/types/assembly-other/getcomponentsinchildrenattribute)
+- [GetComponentsInChildrenInterfaceAttribute](/mod/game-api/types/assembly-other/getcomponentsinchildreninterfaceattribute)
+- [GetComponentsInParentAttribute](/mod/game-api/types/assembly-other/getcomponentsinparentattribute)
+- [GetComponentsInterfaceAttribute](/mod/game-api/types/assembly-other/getcomponentsinterfaceattribute)
+- [GetInteractionPlayer](/mod/game-api/types/global-e-h/getinteractionplayer)
+- [GetShardsTokenRequest](/mod/game-api/types/assembly-api-models/getshardstokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GetSizeTest](/mod/game-api/types/global-e-h/getsizetest)
+- [GetSubscriptionTokenRequest](/mod/game-api/types/assembly-api-models/getsubscriptiontokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GhostBook](/mod/game-api/types/global-e-h/ghostbook)
+- [GhostHandController](/mod/game-api/types/alta-player/ghosthandcontroller) <span>Alta.Character</span>
+- [GhostHandSettings](/mod/game-api/types/global-e-h/ghosthandsettings)
+- [GhostHandSettings.Create](/mod/game-api/types/global-e-h/ghosthandsettings-create)
+- [GhostSnapChannel](/mod/game-api/types/global-e-h/ghostsnapchannel)
+- [GhostSnapChannel.Create](/mod/game-api/types/global-e-h/ghostsnapchannel-create)
+- [GhostSnapObject](/mod/game-api/types/global-e-h/ghostsnapobject)
+- [GhostSnapSlot](/mod/game-api/types/global-e-h/ghostsnapslot)
+- [GhostSnapSlotCollection](/mod/game-api/types/global-e-h/ghostsnapslotcollection)
+- [GhostSnapSlotCollectionSaveData](/mod/game-api/types/global-e-h/ghostsnapslotcollectionsavedata)
+- [GhostSnapSlotCollectionSaveData.Element](/mod/game-api/types/global-e-h/ghostsnapslotcollectionsavedata-element)
+- [GiftResult](/mod/game-api/types/assembly-api-models/giftresult) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GiftResultType](/mod/game-api/types/assembly-api-models/giftresulttype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GiftRewardComment](/mod/game-api/types/assembly-api-models/giftrewardcomment) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GiveRoleRequest](/mod/game-api/types/assembly-api-models/giverolerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GizmosExtension](/mod/game-api/types/global-e-h/gizmosextension)
+- [GizmosHelper](/mod/game-api/types/alta-intelligence/gizmoshelper) <span>Alta.Intelligence</span>
+- [GlobalCommunalStorageValues](/mod/game-api/types/alta-items/globalcommunalstoragevalues) <span>Alta.Inventory</span>
+- [GlobalCommunalStorageValuesData](/mod/game-api/types/alta-items/globalcommunalstoragevaluesdata) <span>Alta.Inventory</span>
+- [GlobalLiquidContainer](/mod/game-api/types/alta-stats-effects/globalliquidcontainer) <span>Alta.Liquid</span>
+- [GlobalLogicManager](/mod/game-api/types/alta-items/globallogicmanager) <span>Alta.Logic</span>
+- [GlobalPagesManager](/mod/game-api/types/alta-items/globalpagesmanager) <span>Alta.Pages</span>
+- [GlobalPagesManagerSaveData](/mod/game-api/types/alta-items/globalpagesmanagersavedata) <span>Alta.Pages</span>
+- [GlobalPagesManagerSaveData1](/mod/game-api/types/alta-items/globalpagesmanagersavedata1) <span>Alta.Pages</span>
+- [GlobalPopulationDefinition](/mod/game-api/types/alta-world-generation/globalpopulationdefinition) <span>Alta.Populations</span>
+- [GlobalPopulationDefinition.PopulationInfo](/mod/game-api/types/alta-world-generation/globalpopulationdefinition-populationinfo) <span>Alta.Populations</span>
+- [GlobalPopulationsManager](/mod/game-api/types/alta-world-generation/globalpopulationsmanager) <span>Alta.Populations</span>
+- [GlobalPopulationsManagerSaveData](/mod/game-api/types/alta-world-generation/globalpopulationsmanagersavedata) <span>Alta.Populations</span>
+- [GlobalRespawnShrine](/mod/game-api/types/game-other-namespaces/globalrespawnshrine) <span>ATT.Respawn</span>
+- [GlobalSettings](/mod/game-api/types/assembly-other/globalsettings) <span>Alta.Global</span>
+- [GlobalSettings&lt;T&gt;](/mod/game-api/types/assembly-other/globalsettings-t) <span>Alta.Global</span>
+- [GlobalSettings&lt;TConcrete, TInterface&gt;](/mod/game-api/types/assembly-other/globalsettings-tconcrete-tinterface) <span>Alta.Global</span>
+- [GlobalSettingsAttribute](/mod/game-api/types/assembly-other/globalsettingsattribute) <span>Alta.Global</span>
+- [GlobalSettingsInitializer](/mod/game-api/types/assembly-other/globalsettingsinitializer) <span>Alta.Global</span>
+- [GlobalSettingsInstaller](/mod/game-api/types/assembly-other/globalsettingsinstaller) <span>Alta.ATT.LifetimeScopes</span>
+- [GlobalSettingsInstaller.PlatformConstrainedInstallers](/mod/game-api/types/assembly-other/globalsettingsinstaller-platformconstrainedinstallers) <span>Alta.ATT.LifetimeScopes</span>
+- [Glyph](/mod/game-api/types/alta-items/glyph) <span>Alta.Pages</span>
+- [Glyph.Positioning](/mod/game-api/types/alta-items/glyph-positioning) <span>Alta.Pages</span>
+- [GlyphDisplayer](/mod/game-api/types/global-e-h/glyphdisplayer)
+- [GlyphInstance](/mod/game-api/types/alta-items/glyphinstance) <span>Alta.Pages</span>
+- [GlyphPosition](/mod/game-api/types/global-e-h/glyphposition)
+- [Gotera](/mod/game-api/types/alta-intelligence/gotera) <span>Alta.Intelligence</span>
+- [GrabAssistController](/mod/game-api/types/global-e-h/grabassistcontroller)
+- [GrabAssistEventData](/mod/game-api/types/global-e-h/grabassisteventdata)
+- [GrabAssistSettings](/mod/game-api/types/global-e-h/grabassistsettings)
+- [GrabAssistView](/mod/game-api/types/global-e-h/grabassistview)
+- [GrabPoint](/mod/game-api/types/global-e-h/grabpoint)
+- [GrabPointArguments](/mod/game-api/types/global-e-h/grabpointarguments)
+- [GrabPointParameters](/mod/game-api/types/global-e-h/grabpointparameters)
+- [GraphicsLevelDisplay](/mod/game-api/types/alta-utilities/graphicsleveldisplay) <span>Alta.Utilities.Profiling</span>
+- [GraphicsSettingsController](/mod/game-api/types/alta-utilities/graphicssettingscontroller) <span>Alta.Utility.Graphics</span>
+- [GrassBlade](/mod/game-api/types/alta-world/grassblade) <span>Alta.Environmental.Vegetation</span>
+- [GrassBladeLODMarker](/mod/game-api/types/alta-world/grassbladelodmarker) <span>Alta.Environmental.Vegetation</span>
+- [GrassBladeMesh](/mod/game-api/types/alta-world/grassblademesh) <span>Alta.Environmental.Vegetation</span>
+- [GrassBladeMesh.Create](/mod/game-api/types/alta-world/grassblademesh-create) <span>Alta.Environmental.Vegetation</span>
+- [GrassClump](/mod/game-api/types/alta-world/grassclump) <span>Alta.Environmental.Vegetation</span>
+- [GrassClumpHolder](/mod/game-api/types/alta-world/grassclumpholder) <span>Alta.Environmental.Vegetation</span>
+- [GrassEditorHolder](/mod/game-api/types/alta-world/grasseditorholder) <span>Alta.Environmental.Vegetation</span>
+- [GrassManager](/mod/game-api/types/alta-world/grassmanager) <span>Alta.Environmental.Vegetation</span>
+- [Gravestone](/mod/game-api/types/game-other-namespaces/gravestone) <span>ATT.PlayerStates</span>
+- [GravityChanger](/mod/game-api/types/global-e-h/gravitychanger)
+- [GreaterGotera](/mod/game-api/types/alta-intelligence/greatergotera) <span>Alta.Intelligence</span>
+- [GridSpawner](/mod/game-api/types/global-e-h/gridspawner)
+- [Grounded](/mod/game-api/types/alta-intelligence/grounded) <span>Alta.Intelligence</span>
+- [GroundedOperation](/mod/game-api/types/alta-intelligence/groundedoperation) <span>Alta.Intelligence</span>
+- [GroupBan](/mod/game-api/types/assembly-api-client/groupban) <span>Alta.Api.Client.HighLevel</span>
+- [GroupBans](/mod/game-api/types/assembly-api-client/groupbans) <span>Alta.Api.Client.HighLevel</span>
+- [GroupCreator](/mod/game-api/types/assembly-api-client/groupcreator) <span>Alta.Api.Client.HighLevel</span>
+- [GroupDiscovery](/mod/game-api/types/assembly-api-client/groupdiscovery) <span>Alta.Api.Client.HighLevel</span>
+- [GroupGet](/mod/game-api/types/assembly-api-client/groupget) <span>Alta.Api.Client.HighLevel</span>
+- [GroupInfo](/mod/game-api/types/assembly-api-models/groupinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupInfoDetailed](/mod/game-api/types/assembly-api-models/groupinfodetailed) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupInfoManager](/mod/game-api/types/assembly-api-client/groupinfomanager) <span>Alta.Api.Client.HighLevel</span>
+- [GroupInfoTab](/mod/game-api/types/alta-menus/groupinfotab) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupInfoUpdate](/mod/game-api/types/assembly-api-client/groupinfoupdate) <span>Alta.Api.Client.HighLevel</span>
+- [GroupInviteNotification](/mod/game-api/types/alta-menus/groupinvitenotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupInvites](/mod/game-api/types/assembly-api-client/groupinvites) <span>Alta.Api.Client.HighLevel</span>
+- [GroupJoinRequests](/mod/game-api/types/assembly-api-client/groupjoinrequests) <span>Alta.Api.Client.HighLevel</span>
+- [GroupMember](/mod/game-api/types/assembly-api-client/groupmember) <span>Alta.Api.Client.HighLevel</span>
+- [GroupMemberInfo](/mod/game-api/types/assembly-api-models/groupmemberinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupMemberListElement](/mod/game-api/types/alta-menus/groupmemberlistelement) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupMembers](/mod/game-api/types/assembly-api-client/groupmembers) <span>Alta.Api.Client.HighLevel</span>
+- [GroupMembersPage](/mod/game-api/types/alta-menus/groupmemberspage) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupMemberType](/mod/game-api/types/assembly-api-models/groupmembertype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupPage](/mod/game-api/types/alta-menus/grouppage) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupPermissionAttribute](/mod/game-api/types/alta-console/grouppermissionattribute) <span>Alta.Console</span>
+- [GroupPermissions](/mod/game-api/types/assembly-api-models/grouppermissions) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupPermissionsCheckRequest](/mod/game-api/types/assembly-api-models/grouppermissionscheckrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GroupPermissionsEnabler](/mod/game-api/types/alta-menus/grouppermissionsenabler) <span>Alta.Meta.UI.ServerManagement</span>
+- [GroupRoleIdentifier](/mod/game-api/types/assembly-api-models/grouproleidentifier) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupRoleInfo](/mod/game-api/types/assembly-api-models/grouproleinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupRoleRequest](/mod/game-api/types/assembly-api-models/grouprolerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [GroupRoles](/mod/game-api/types/assembly-api-client/grouproles) <span>Alta.Api.Client.HighLevel</span>
+- [GroupsClient](/mod/game-api/types/assembly-api-client/groupsclient) <span>Alta.Api.Client.HighLevel</span>
+- [GroupServerInfo](/mod/game-api/types/assembly-api-models/groupserverinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupType](/mod/game-api/types/assembly-api-models/grouptype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GroupTypeExtensions](/mod/game-api/types/assembly-api-models/grouptypeextensions) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [GrowerComponent](/mod/game-api/types/global-e-h/growercomponent)
+- [GrowerGroup](/mod/game-api/types/global-e-h/growergroup)
+- [GrowerGroupSaveData](/mod/game-api/types/global-e-h/growergroupsavedata)
+- [GrowerGroupSaveData.Item](/mod/game-api/types/global-e-h/growergroupsavedata-item)
+- [GrowthDefinition](/mod/game-api/types/global-e-h/growthdefinition)
+- [GrowthItem](/mod/game-api/types/global-e-h/growthitem)
+- [GrowthSaveData](/mod/game-api/types/global-e-h/growthsavedata)
+- [GrowthStage](/mod/game-api/types/global-e-h/growthstage)
+- [GrowthStageComponent](/mod/game-api/types/global-e-h/growthstagecomponent)
+- [GrowthStageSaveData](/mod/game-api/types/global-e-h/growthstagesavedata)
+- [GuidedMovement](/mod/game-api/types/global-e-h/guidedmovement)
+- [GuidExtensions](/mod/game-api/types/assembly-api-models/guidextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [GymnasiumChunkResizer](/mod/game-api/types/global-e-h/gymnasiumchunkresizer)
+- [GymnasiumCraftingIngredientSpawner](/mod/game-api/types/global-e-h/gymnasiumcraftingingredientspawner)
+- [GymnasiumOnDemandPrefabSpawner](/mod/game-api/types/game-other-namespaces/gymnasiumondemandprefabspawner) <span>ATT.FeatureTestGymnasium</span>
+- [GymnasiumOnDemandPrefabSpawnerData](/mod/game-api/types/global-e-h/gymnasiumondemandprefabspawnerdata)
+- [GymnasiumStaticContentSpawner](/mod/game-api/types/global-e-h/gymnasiumstaticcontentspawner)
+- [GymnasiumTeleportPointPage](/mod/game-api/types/game-other-namespaces/gymnasiumteleportpointpage) <span>ATT.FeatureTestGymnasium</span>
+- [GymnasiumTeleportTablet](/mod/game-api/types/game-other-namespaces/gymnasiumteleporttablet) <span>ATT.FeatureTestGymnasium</span>
+- [GymnasiumVisualChunkDisplayMode](/mod/game-api/types/game-other-namespaces/gymnasiumvisualchunkdisplaymode) <span>ATT.FeatureTestGymnasium</span>
+- [GymnasiumXpStatusDisplay](/mod/game-api/types/game-other-namespaces/gymnasiumxpstatusdisplay) <span>ATT.FeatureTestGymnasium</span>
+
+</div>
+
+## H
+
+<div className="type-index">
+
+- [HalfCycle](/mod/game-api/types/alta-world/halfcycle) <span>Alta.Environmental.Atmosphere</span>
+- [Hand](/mod/game-api/types/alta-player/hand) <span>Alta.Character</span>
+- [HandCamera](/mod/game-api/types/alta-customization/handcamera) <span>Alta.ScreenshotCamera</span>
+- [HandCameraEvent](/mod/game-api/types/alta-customization/handcameraevent) <span>Alta.ScreenshotCamera</span>
+- [HandCameraRender](/mod/game-api/types/alta-customization/handcamerarender) <span>Alta.ScreenshotCamera</span>
+- [HandCameraSettings](/mod/game-api/types/alta-customization/handcamerasettings) <span>Alta.ScreenshotCamera</span>
+- [HandCameraStreamer](/mod/game-api/types/alta-customization/handcamerastreamer) <span>Alta.ScreenshotCamera</span>
+- [HandCameraViewfinderResizerSettings](/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings) <span>Alta.ScreenshotCamera</span>
+- [HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer](/mod/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer) <span>Alta.ScreenshotCamera</span>
+- [HandCollisionsController](/mod/game-api/types/global-e-h/handcollisionscontroller)
+- [HandFingers](/mod/game-api/types/global-e-h/handfingers)
+- [HandGestureController](/mod/game-api/types/global-e-h/handgesturecontroller)
+- [HandGestureDefinition](/mod/game-api/types/global-e-h/handgesturedefinition)
+- [HandGestureDefinition.Create](/mod/game-api/types/global-e-h/handgesturedefinition-create)
+- [HandGestureTrigger](/mod/game-api/types/global-e-h/handgesturetrigger)
+- [HandGrip](/mod/game-api/types/alta-player/handgrip) <span>Alta.Character</span>
+- [HandGrip.GripFinger](/mod/game-api/types/alta-player/handgrip-gripfinger) <span>Alta.Character</span>
+- [HandGrip.GripJoint](/mod/game-api/types/alta-player/handgrip-gripjoint) <span>Alta.Character</span>
+- [HandGrip.ThumbGripJoint](/mod/game-api/types/alta-player/handgrip-thumbgripjoint) <span>Alta.Character</span>
+- [HandGripConfiguration](/mod/game-api/types/alta-player/handgripconfiguration) <span>Alta.Character</span>
+- [HandGripConfiguration.Finger](/mod/game-api/types/alta-player/handgripconfiguration-finger) <span>Alta.Character</span>
+- [HandGripConfiguration.Finger.Joint](/mod/game-api/types/alta-player/handgripconfiguration-finger-joint) <span>Alta.Character</span>
+- [HandGripConfiguration.RotationSnapshots](/mod/game-api/types/alta-player/handgripconfiguration-rotationsnapshots) <span>Alta.Character</span>
+- [HandHandler](/mod/game-api/types/global-e-h/handhandler)
+- [HandHoverPoint](/mod/game-api/types/global-e-h/handhoverpoint)
+- [HandIndex](/mod/game-api/types/global-e-h/handindex)
+- [HandInteractor](/mod/game-api/types/global-e-h/handinteractor)
+- [HandInteractor.HandInteraction](/mod/game-api/types/global-e-h/handinteractor-handinteraction)
+- [HandInteractor.HandInteraction.Type](/mod/game-api/types/global-e-h/handinteractor-handinteraction-type)
+- [HandleCommand](/mod/game-api/types/global-e-h/handlecommand)
+- [HandleEnchantment](/mod/game-api/types/global-e-h/handleenchantment)
+- [HandleHandler](/mod/game-api/types/global-e-h/handlehandler)
+- [HandleValueEvent](/mod/game-api/types/global-e-h/handlevalueevent)
+- [HandOnSideStructure](/mod/game-api/types/global-e-h/handonsidestructure)
+- [HandPositionInput](/mod/game-api/types/global-e-h/handpositioninput)
+- [HandPositionInputModifier](/mod/game-api/types/global-e-h/handpositioninputmodifier)
+- [HandPositionStructure](/mod/game-api/types/global-e-h/handpositionstructure)
+- [HandSettings](/mod/game-api/types/global-e-h/handsettings)
+- [HandSettings.Create](/mod/game-api/types/global-e-h/handsettings-create)
+- [HandShakeOffDetector](/mod/game-api/types/alta-stats-effects/handshakeoffdetector) <span>Alta.Heat</span>
+- [HandStaminaManager](/mod/game-api/types/game-other-namespaces/handstaminamanager) <span>Features.Climbing</span>
+- [HandStore](/mod/game-api/types/alta-player/handstore) <span>Alta.Character</span>
+- [HandTargetHandler](/mod/game-api/types/alta-player/handtargethandler) <span>Alta.Character</span>
+- [HandToHeartInputStructure](/mod/game-api/types/global-e-h/handtoheartinputstructure)
+- [HandToHeartInputStructure.Create](/mod/game-api/types/global-e-h/handtoheartinputstructure-create)
+- [HandTouchTask](/mod/game-api/types/global-e-h/handtouchtask)
+- [HandTouchTaskArgument](/mod/game-api/types/global-e-h/handtouchtaskargument)
+- [HandTouchVfxController](/mod/game-api/types/game-other-namespaces/handtouchvfxcontroller) <span>Features</span>
+- [HandTriangle](/mod/game-api/types/global-e-h/handtriangle)
+- [HandyCameraManager](/mod/game-api/types/alta-customization/handycameramanager) <span>Alta.ScreenshotCamera</span>
+- [HandyCameraManager.CameraArguments](/mod/game-api/types/alta-customization/handycameramanager-cameraarguments) <span>Alta.ScreenshotCamera</span>
+- [HandyCameraManager.EffectArguments](/mod/game-api/types/alta-customization/handycameramanager-effectarguments) <span>Alta.ScreenshotCamera</span>
+- [HandyCameraManager.PlayerCameraHandler](/mod/game-api/types/alta-customization/handycameramanager-playercamerahandler) <span>Alta.ScreenshotCamera</span>
+- [HapticWhileHeld](/mod/game-api/types/alta-items/hapticwhileheld) <span>Alta.Pages</span>
+- [HasComponentLabel](/mod/game-api/types/assembly-other/hascomponentlabel)
+- [HashComparer](/mod/game-api/types/global-e-h/hashcomparer)
+- [HashedGeneralValue](/mod/game-api/types/assembly-other/hashedgeneralvalue) <span>Alta</span>
+- [HashedGeneralValue&lt;T&gt;](/mod/game-api/types/assembly-other/hashedgeneralvalue-t) <span>Alta</span>
+- [HashedGeneralValueComparer](/mod/game-api/types/assembly-other/hashedgeneralvaluecomparer) <span>Alta</span>
+- [HashedGeneralValueConverter&lt;T&gt;](/mod/game-api/types/assembly-other/hashedgeneralvalueconverter-t) <span>Alta</span>
+- [HashedGeneralValuesWarmer](/mod/game-api/types/global-e-h/hashedgeneralvalueswarmer)
+- [HashedItemInfo](/mod/game-api/types/alta-console/hashediteminfo) <span>Alta.Console</span>
+- [HashedObjectAttribute](/mod/game-api/types/assembly-other/hashedobjectattribute)
+- [HashedPathAttribute](/mod/game-api/types/assembly-other/hashedpathattribute) <span>Alta</span>
+- [HashFunction](/mod/game-api/types/global-e-h/hashfunction)
+- [HashHelper](/mod/game-api/types/assembly-other/hashhelper) <span>Alta.Networking</span>
+- [HashSetAction&lt;T&gt;](/mod/game-api/types/global-e-h/hashsetaction-t)
+- [HasMethodApplyAttribute](/mod/game-api/types/assembly-other/hasmethodapplyattribute)
+- [HasReferenceValueAttribute](/mod/game-api/types/assembly-other/hasreferencevalueattribute)
+- [HealthBar](/mod/game-api/types/alta-player/healthbar) <span>Alta.QuickAccessActions</span>
+- [HealthBasedDigable](/mod/game-api/types/global-e-h/healthbaseddigable)
+- [HealthBasedDigableData](/mod/game-api/types/global-e-h/healthbaseddigabledata)
+- [HealthChannel](/mod/game-api/types/global-e-h/healthchannel)
+- [HealthChannel.Create](/mod/game-api/types/global-e-h/healthchannel-create)
+- [HealthData](/mod/game-api/types/alta-stats-effects/healthdata) <span>Alta.StatSystem</span>
+- [HealthObject](/mod/game-api/types/global-e-h/healthobject)
+- [HealthObject.DeathAnalytics](/mod/game-api/types/global-e-h/healthobject-deathanalytics)
+- [HealthObject.HealthChangedHandler](/mod/game-api/types/global-e-h/healthobject-healthchangedhandler)
+- [HealthObject.RegenUnit](/mod/game-api/types/global-e-h/healthobject-regenunit)
+- [HealthObjectEvent](/mod/game-api/types/global-e-h/healthobjectevent)
+- [HealthObjectUnityEvent](/mod/game-api/types/global-e-h/healthobjectunityevent)
+- [HealthValidation](/mod/game-api/types/alta-stats-effects/healthvalidation) <span>Alta.StatSystem</span>
+- [HeartCall](/mod/game-api/types/global-e-h/heartcall)
+- [HeartCall.Create](/mod/game-api/types/global-e-h/heartcall-create)
+- [HeatArea](/mod/game-api/types/alta-stats-effects/heatarea) <span>Alta.Heat</span>
+- [HeatArea.PointFilterDelegate](/mod/game-api/types/alta-stats-effects/heatarea-pointfilterdelegate) <span>Alta.Heat</span>
+- [HeatAreaModifier](/mod/game-api/types/alta-stats-effects/heatareamodifier) <span>Alta.Heat</span>
+- [HeatManager](/mod/game-api/types/alta-stats-effects/heatmanager) <span>Alta.Heat</span>
+- [HeatManager.HeatPointDamageLevel](/mod/game-api/types/alta-stats-effects/heatmanager-heatpointdamagelevel) <span>Alta.Heat</span>
+- [HeatModel](/mod/game-api/types/alta-crafting/heatmodel) <span>Alta.Blacksmithing</span>
+- [HeatModel&lt;TG, TB, TA&gt;](/mod/game-api/types/alta-crafting/heatmodel-tg-tb-ta) <span>Alta.Blacksmithing</span>
+- [HeatPoint](/mod/game-api/types/alta-stats-effects/heatpoint) <span>Alta.Heat</span>
+- [HeatPoint.Neighbour](/mod/game-api/types/alta-stats-effects/heatpoint-neighbour) <span>Alta.Heat</span>
+- [HeatPointCollection](/mod/game-api/types/alta-stats-effects/heatpointcollection) <span>Alta.Heat</span>
+- [HeatPointCollectionAreaFilter](/mod/game-api/types/alta-stats-effects/heatpointcollectionareafilter) <span>Alta.Heat</span>
+- [HeatPointCollectionSaveData](/mod/game-api/types/global-e-h/heatpointcollectionsavedata)
+- [HeatPointCollectionSaveData.Element](/mod/game-api/types/global-e-h/heatpointcollectionsavedata-element)
+- [HeatPointTemperatureController](/mod/game-api/types/alta-stats-effects/heatpointtemperaturecontroller) <span>Alta.Heat</span>
+- [HeatPointToHeatAreaLink](/mod/game-api/types/alta-stats-effects/heatpointtoheatarealink) <span>Alta.Heat</span>
+- [HeatPointTriggerCollector](/mod/game-api/types/global-e-h/heatpointtriggercollector)
+- [HeatSourceBase](/mod/game-api/types/alta-stats-effects/heatsourcebase) <span>Alta.Heat</span>
+- [HeatSourceBaseEventTriggers](/mod/game-api/types/alta-stats-effects/heatsourcebaseeventtriggers) <span>Alta.Heat</span>
+- [HeatSourceBaseSaveData](/mod/game-api/types/alta-stats-effects/heatsourcebasesavedata) <span>Alta.Heat</span>
+- [HeatSourceBaseSaveData1](/mod/game-api/types/alta-stats-effects/heatsourcebasesavedata1) <span>Alta.Heat</span>
+- [HebiosEnchant](/mod/game-api/types/global-e-h/hebiosenchant)
+- [HebiosEnchant.Create](/mod/game-api/types/global-e-h/hebiosenchant-create)
+- [HeightFilter](/mod/game-api/types/global-e-h/heightfilter)
+- [HeightFilter.Create](/mod/game-api/types/global-e-h/heightfilter-create)
+- [HeightProgressFilter](/mod/game-api/types/global-e-h/heightprogressfilter)
+- [HeightProgressFilter.Create](/mod/game-api/types/global-e-h/heightprogressfilter-create)
+- [HeightProgressFilter.LinearMode](/mod/game-api/types/global-e-h/heightprogressfilter-linearmode)
+- [HeldPickupHandler](/mod/game-api/types/global-e-h/heldpickuphandler)
+- [HierarchyInteractionFilter](/mod/game-api/types/global-e-h/hierarchyinteractionfilter)
+- [HighLevelApiClient](/mod/game-api/types/assembly-api-client/highlevelapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [HighLevelApiClientBase](/mod/game-api/types/assembly-api-client/highlevelapiclientbase) <span>Alta.Api.Client.HighLevel</span>
+- [HighLevelApiClientFactory](/mod/game-api/types/assembly-api-client/highlevelapiclientfactory) <span>Alta.Api.Client.HighLevel</span>
+- [History](/mod/game-api/types/alta-intelligence/history) <span>Alta.Intelligence</span>
+- [HistoryAccess](/mod/game-api/types/global-e-h/historyaccess)
+- [HistoryManager&lt;T&gt;](/mod/game-api/types/global-e-h/historymanager-t)
+- [HitboxVisualizer](/mod/game-api/types/global-e-h/hitboxvisualizer)
+- [HitModifierEffect](/mod/game-api/types/alta-items/hitmodifiereffect) <span>Alta.Impact</span>
+- [HitModifierEffect.EffectPosition](/mod/game-api/types/alta-items/hitmodifiereffect-effectposition) <span>Alta.Impact</span>
+- [HitModifierEffect.SyncHitArguments](/mod/game-api/types/alta-items/hitmodifiereffect-synchitarguments) <span>Alta.Impact</span>
+- [HitSpawnData](/mod/game-api/types/global-e-h/hitspawndata)
+- [HomeElement](/mod/game-api/types/assembly-api-models/homeelement) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [HomeElementPage](/mod/game-api/types/assembly-api-models/homeelementpage) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [HookAction](/mod/game-api/types/alta-intelligence/hookaction) <span>Alta.Intelligence</span>
+- [HookEventChannel](/mod/game-api/types/alta-intelligence/hookeventchannel) <span>Alta.Intelligence</span>
+- [HoverAnimator](/mod/game-api/types/global-e-h/hoveranimator)
+- [HoverAnimator.HoverAnimationState](/mod/game-api/types/global-e-h/hoveranimator-hoveranimationstate)
+- [HoverPickup](/mod/game-api/types/global-e-h/hoverpickup)
+- [HsvLerp](/mod/game-api/types/global-e-h/hsvlerp)
+- [HttpClientExtensions](/mod/game-api/types/assembly-api-models/httpclientextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [HttpClientExtensions.JsonContent](/mod/game-api/types/assembly-api-models/httpclientextensions-jsoncontent) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [HttpContentExtensions](/mod/game-api/types/assembly-api-models/httpcontentextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [HttpException](/mod/game-api/types/assembly-api-models/httpexception) <span>Alta.Api.DataTransferModels.Exceptions</span>
+- [HttpResponseExtensionMethods](/mod/game-api/types/assembly-api-models/httpresponseextensionmethods) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [HungerStat](/mod/game-api/types/alta-stats-effects/hungerstat) <span>Alta.StatSystem</span>
+- [HungerStat.Create](/mod/game-api/types/alta-stats-effects/hungerstat-create) <span>Alta.StatSystem</span>
+- [HurtSense](/mod/game-api/types/alta-intelligence/hurtsense) <span>Alta.Intelligence</span>
+- [HurtSense.Create](/mod/game-api/types/alta-intelligence/hurtsense-create) <span>Alta.Intelligence</span>
+
+</div>
+
+## I
+
+<div className="type-index">
+
+- [IAccountClient](/mod/game-api/types/assembly-api-client/iaccountclient) <span>Alta.Api.Client.HighLevel</span>
+- [IAchievementClient](/mod/game-api/types/assembly-api-client/iachievementclient) <span>Alta.Api.Client.HighLevel</span>
+- [IAchievementItem](/mod/game-api/types/global-i-l/iachievementitem)
+- [IAchievementManager](/mod/game-api/types/alta-player/iachievementmanager) <span>Alta.Achievements</span>
+- [IAction](/mod/game-api/types/alta-intelligence/iaction) <span>Alta.Intelligence</span>
+- [IAction&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/iaction-intagent) <span>Alta.Intelligence</span>
+- [IActionDecider](/mod/game-api/types/alta-intelligence/iactiondecider) <span>Alta.Intelligence</span>
+- [IActionItemHandlerCollection](/mod/game-api/types/alta-player/iactionitemhandlercollection) <span>Alta.QuickAccessActions</span>
+- [IActionSettings](/mod/game-api/types/alta-intelligence/iactionsettings) <span>Alta.Intelligence</span>
+- [IActionTarget](/mod/game-api/types/alta-intelligence/iactiontarget) <span>Alta.Intelligence</span>
+- [IActiveAction](/mod/game-api/types/alta-intelligence/iactiveaction) <span>Alta.Intelligence</span>
+- [IAdditionalStaticContent](/mod/game-api/types/global-i-l/iadditionalstaticcontent)
+- [IAffectCrafting](/mod/game-api/types/alta-crafting/iaffectcrafting) <span>Alta.Crafting</span>
+- [IAgent](/mod/game-api/types/alta-intelligence/iagent) <span>Alta.Intelligence</span>
+- [IAgentDebugger](/mod/game-api/types/alta-intelligence/iagentdebugger) <span>Alta.Intelligence</span>
+- [IAiHook](/mod/game-api/types/alta-intelligence/iaihook) <span>Alta.Intelligence</span>
+- [IAltaEvent&lt;T1, T2, T3, T4&gt;](/mod/game-api/types/global-i-l/ialtaevent-t1-t2-t3-t4)
+- [IAltaEvent&lt;T1, T2, T3&gt;](/mod/game-api/types/global-i-l/ialtaevent-t1-t2-t3)
+- [IAltaEvent&lt;T1, T2&gt;](/mod/game-api/types/global-i-l/ialtaevent-t1-t2)
+- [IAltaEvent&lt;T&gt;](/mod/game-api/types/global-i-l/ialtaevent-t)
+- [IAltaEventValidation](/mod/game-api/types/global-i-l/ialtaeventvalidation)
+- [IAltaFile](/mod/game-api/types/assembly-other/ialtafile) <span>Alta.Utilities</span>
+- [IAltaFileFormat](/mod/game-api/types/assembly-other/ialtafileformat) <span>Alta.Utilities</span>
+- [IAltaFolder](/mod/game-api/types/assembly-other/ialtafolder) <span>Alta.Utilities</span>
+- [IAnalyticsClient](/mod/game-api/types/assembly-api-client/ianalyticsclient) <span>Alta.Api.Client.HighLevel</span>
+- [IAnalyticsData](/mod/game-api/types/assembly-other/ianalyticsdata) <span>Alta.Analytics</span>
+- [IAnalyticsEvent](/mod/game-api/types/assembly-other/ianalyticsevent) <span>Alta.Analytics</span>
+- [IAnalyticsInstrument](/mod/game-api/types/assembly-other/ianalyticsinstrument) <span>Alta.Analytics</span>
+- [IAnalyticsProperty](/mod/game-api/types/assembly-other/ianalyticsproperty) <span>Alta.Analytics</span>
+- [IAnalyticsPropertyWriter](/mod/game-api/types/assembly-other/ianalyticspropertywriter) <span>Alta.Analytics</span>
+- [IAnalyticsService](/mod/game-api/types/assembly-other/ianalyticsservice) <span>Alta.Analytics</span>
+- [IAnimationEndCallbackReceiver](/mod/game-api/types/global-i-l/ianimationendcallbackreceiver)
+- [IAPViewModel](/mod/game-api/types/game-other-namespaces/iapviewmodel) <span>Features.Main_Menu.Scripts.TalemShop</span>
+- [IAStarConnection&lt;TNode, TConnection&gt;](/mod/game-api/types/global-i-l/iastarconnection-tnode-tconnection)
+- [IAStarNode&lt;TNode, TConnection&gt;](/mod/game-api/types/global-i-l/iastarnode-tnode-tconnection)
+- [IAtomDefinition](/mod/game-api/types/alta-intelligence/iatomdefinition) <span>Alta.Intelligence</span>
+- [IAttackDirectionAnimation](/mod/game-api/types/alta-intelligence/iattackdirectionanimation) <span>Alta.Intelligence</span>
+- [IAuthenticationFeatures](/mod/game-api/types/assembly-other/iauthenticationfeatures) <span>Alta.Platform</span>
+- [IAuthenticationService](/mod/game-api/types/assembly-other/iauthenticationservice) <span>Alta.Platform</span>
+- [IAuthenticationUtility](/mod/game-api/types/assembly-other/iauthenticationutility) <span>Alta.Authentication</span>
+- [IAutoCompletionSource](/mod/game-api/types/alta-menus/iautocompletionsource) <span>Alta.Meta.UI</span>
+- [IAutoSave](/mod/game-api/types/global-i-l/iautosave)
+- [IBakeable](/mod/game-api/types/global-i-l/ibakeable)
+- [IBasicActiveAction&lt;TAgent&gt;](/mod/game-api/types/alta-intelligence/ibasicactiveaction-intagent) <span>Alta.Intelligence</span>
+- [IBiomeValues](/mod/game-api/types/alta-world-generation/ibiomevalues) <span>Alta.Caves</span>
+- [IBlockDisassembly](/mod/game-api/types/alta-crafting/iblockdisassembly) <span>Alta.Crafting</span>
+- [IBlockGenericDecrafting](/mod/game-api/types/alta-crafting/iblockgenericdecrafting) <span>Alta.Crafting</span>
+- [IBuildBakeable](/mod/game-api/types/assembly-other/ibuildbakeable)
+- [IBuildRendererBakeable](/mod/game-api/types/assembly-other/ibuildrendererbakeable)
+- [IBuildRendererPostBake](/mod/game-api/types/assembly-other/ibuildrendererpostbake)
+- [ICacheable](/mod/game-api/types/alta-world/icacheable) <span>Alta.Static</span>
+- [ICancelable](/mod/game-api/types/assembly-other/icancelable) <span>Alta.LifecycleManagement</span>
+- [ICaveLayer](/mod/game-api/types/alta-world/icavelayer) <span>Alta.Chunks</span>
+- [IChangeWithChunking](/mod/game-api/types/global-i-l/ichangewithchunking)
+- [ICharacterDummySpecialEffects](/mod/game-api/types/global-i-l/icharacterdummyspecialeffects)
+- [IChargeableProfessionSkill](/mod/game-api/types/global-i-l/ichargeableprofessionskill)
+- [IChildSyncable&lt;T, TElementSaveData&gt;](/mod/game-api/types/global-i-l/ichildsyncable-t-telementsavedata)
+- [IChildSyncable&lt;T&gt;](/mod/game-api/types/global-i-l/ichildsyncable-t)
+- [IChiselable](/mod/game-api/types/alta-crafting/ichiselable) <span>Alta.Carpentry</span>
+- [IChunkedEntity](/mod/game-api/types/alta-networking/ichunkedentity) <span>Alta.Networking</span>
+- [IChunker](/mod/game-api/types/global-i-l/ichunker)
+- [IChunkLoader](/mod/game-api/types/global-i-l/ichunkloader)
+- [ICircle](/mod/game-api/types/global-i-l/icircle)
+- [ICleanOnSerialize](/mod/game-api/types/global-i-l/icleanonserialize)
+- [IClimbable](/mod/game-api/types/global-i-l/iclimbable)
+- [IClusterSerialized](/mod/game-api/types/alta-world/iclusterserialized) <span>Alta.Chunks</span>
+- [ICollisionStandard](/mod/game-api/types/alta-utilities/icollisionstandard) <span>Alta</span>
+- [IColorModelPoint&lt;T&gt;](/mod/game-api/types/global-i-l/icolormodelpoint-outt)
+- [ICompletableActivity](/mod/game-api/types/game-other-namespaces/icompletableactivity) <span>ATT.Utilities</span>
+- [ICompoundPart](/mod/game-api/types/alta-intelligence/icompoundpart) <span>Alta.Intelligence</span>
+- [IConnection](/mod/game-api/types/global-i-l/iconnection)
+- [IConsoleEvent](/mod/game-api/types/alta-console/iconsoleevent) <span>Alta.Console</span>
+- [IControllerAction](/mod/game-api/types/global-i-l/icontrolleraction)
+- [IConvertableModel&lt;TModel&gt;](/mod/game-api/types/assembly-api-models/iconvertablemodel-tmodel) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ICookableSettings](/mod/game-api/types/alta-crafting/icookablesettings) <span>Alta.Cooking</span>
+- [ICookingGarnishMarker](/mod/game-api/types/alta-crafting/icookinggarnishmarker) <span>Alta.Cooking</span>
+- [ICosmeticMeshPartBase](/mod/game-api/types/alta-customization/icosmeticmeshpartbase) <span>Alta.Customization</span>
+- [ICosmeticPresetSlot](/mod/game-api/types/alta-customization/icosmeticpresetslot) <span>Alta.Customization</span>
+- [ICraftingIngredientProvider](/mod/game-api/types/global-i-l/icraftingingredientprovider)
+- [ICustomizationCategory](/mod/game-api/types/alta-customization/icustomizationcategory) <span>Alta.Customization</span>
+- [ICustomizationDefinition](/mod/game-api/types/alta-customization/icustomizationdefinition) <span>Alta.Customization</span>
+- [ICustomizationHandler](/mod/game-api/types/alta-customization/icustomizationhandler) <span>Alta.Customization</span>
+- [ICustomizationPart](/mod/game-api/types/alta-customization/icustomizationpart) <span>Alta.Customization</span>
+- [ICustomizationVisual](/mod/game-api/types/alta-customization/icustomizationvisual) <span>Alta.Customization</span>
+- [ICustomizationVisualManager](/mod/game-api/types/alta-customization/icustomizationvisualmanager) <span>Alta.Customization</span>
+- [ICustomizationWrapper](/mod/game-api/types/alta-customization/icustomizationwrapper) <span>Alta.Customization</span>
+- [ICustomTypeReplace](/mod/game-api/types/alta-networking/icustomtypereplace) <span>Alta.Networking</span>
+- [IData&lt;T&gt;](/mod/game-api/types/alta-intelligence/idata-t) <span>Alta.Intelligence</span>
+- [IDeltaControl](/mod/game-api/types/global-i-l/ideltacontrol)
+- [IdentityTokenRequest](/mod/game-api/types/assembly-api-models/identitytokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [IdentityTokenValidationRequest](/mod/game-api/types/assembly-api-models/identitytokenvalidationrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [IDespawnable](/mod/game-api/types/assembly-other/idespawnable)
+- [IDestroyOnBake](/mod/game-api/types/global-i-l/idestroyonbake)
+- [IDeviceLifecycle](/mod/game-api/types/global-i-l/idevicelifecycle)
+- [IDigable](/mod/game-api/types/global-i-l/idigable)
+- [IDisableOnSimpleServer](/mod/game-api/types/alta-utilities/idisableonsimpleserver) <span>Alta</span>
+- [IDisposablePickup](/mod/game-api/types/global-i-l/idisposablepickup)
+- [IDisposer](/mod/game-api/types/assembly-other/idisposer) <span>System</span>
+- [IDistribution&lt;T&gt;](/mod/game-api/types/alta-world-generation/idistribution-outt) <span>Alta.Caves</span>
+- [IDistributionItem&lt;T&gt;](/mod/game-api/types/alta-world-generation/idistributionitem-outt) <span>Alta.Caves</span>
+- [IDistributionValue](/mod/game-api/types/alta-world-generation/idistributionvalue) <span>Alta.Caves</span>
+- [IDockable](/mod/game-api/types/global-i-l/idockable)
+- [IDomainController](/mod/game-api/types/game-other-namespaces/idomaincontroller) <span>ATT.Domains</span>
+- [IDontGetRigibody](/mod/game-api/types/global-i-l/idontgetrigibody)
+- [IDontSplit](/mod/game-api/types/global-i-l/idontsplit)
+- [IDoubleLinkedListNode&lt;T, TData&gt;](/mod/game-api/types/global-i-l/idoublelinkedlistnode-t-tdata)
+- [IDynamicPath](/mod/game-api/types/global-i-l/idynamicpath)
+- [IDynamicQueueElement&lt;T&gt;](/mod/game-api/types/alta-crafting/idynamicqueueelement-t) <span>Alta.Blacksmithing</span>
+- [IEditorProcessable](/mod/game-api/types/global-i-l/ieditorprocessable)
+- [IEffectDefinition](/mod/game-api/types/alta-stats-effects/ieffectdefinition) <span>Alta.Alchemy</span>
+- [IElbowGuideDataPoint](/mod/game-api/types/alta-player/ielbowguidedatapoint) <span>Alta.Character</span>
+- [IEnchantmentEffectApplication](/mod/game-api/types/alta-crafting/ienchantmenteffectapplication) <span>Alta.Enchantments</span>
+- [IEnchantmentTriggerApplication](/mod/game-api/types/alta-crafting/ienchantmenttriggerapplication) <span>Alta.Enchantments</span>
+- [IEntityManager](/mod/game-api/types/alta-networking/ientitymanager) <span>Alta.Networking.Internal</span>
+- [IEntityReplaceHandler](/mod/game-api/types/alta-networking/ientityreplacehandler) <span>Alta.Networking</span>
+- [IEntitySerialized](/mod/game-api/types/alta-networking/ientityserialized) <span>Alta.Networking</span>
+- [IEventBus&lt;T&gt;](/mod/game-api/types/assembly-other/ieventbus-t) <span>Alta.EventBusSystem</span>
+- [IEventBusEventData](/mod/game-api/types/game-other-namespaces/ieventbuseventdata) <span>ATT.EventBus.TownshipEvents</span>
+- [IEventSource&lt;T&gt;](/mod/game-api/types/assembly-other/ieventsource-t) <span>Alta.EventBusSystem</span>
+- [IFactory](/mod/game-api/types/assembly-other/ifactory)
+- [IFactory&lt;TInstance&gt;](/mod/game-api/types/assembly-other/ifactory-outtinstance)
+- [IFactory&lt;TParam, TInterface&gt;](/mod/game-api/types/assembly-other/ifactory-intparam-outtinterface)
+- [IFactory&lt;TParam1, TParam2, TInterface&gt;](/mod/game-api/types/assembly-other/ifactory-intparam1-intparam2-outtinterface)
+- [IFactory&lt;TParam1, TParam2, TParam3, TInterface&gt;](/mod/game-api/types/assembly-other/ifactory-intparam1-intparam2-intparam3-outtinterface)
+- [IFactoryAsync&lt;TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasync-tinterface)
+- [IFactoryAsync&lt;TParam, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasync-intparam-tinterface)
+- [IFactoryAsync&lt;TParam1, TParam2, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-tinterface)
+- [IFactoryAsync&lt;TParam1, TParam2, TParam3, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasync-intparam1-intparam2-intparam3-tinterface)
+- [IFactoryAsyncPooled&lt;TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasyncpooled-tinterface)
+- [IFactoryAsyncPooled&lt;TParam, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasyncpooled-intparam-tinterface)
+- [IFactoryAsyncPooled&lt;TParam1, TParam2, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-tinterface)
+- [IFactoryAsyncPooled&lt;TParam1, TParam2, TParam3, TInterface&gt;](/mod/game-api/types/assembly-other/ifactoryasyncpooled-intparam1-intparam2-intparam3-tinterface)
+- [IFactoryConstructable](/mod/game-api/types/assembly-other/ifactoryconstructable)
+- [IFactoryConstructable&lt;TParam1, TParam2, TParam3&gt;](/mod/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2-intparam3)
+- [IFactoryConstructable&lt;TParam1, TParam2&gt;](/mod/game-api/types/assembly-other/ifactoryconstructable-intparam1-intparam2)
+- [IFactoryConstructable&lt;TParam&gt;](/mod/game-api/types/assembly-other/ifactoryconstructable-intparam)
+- [IfEvent](/mod/game-api/types/global-i-l/ifevent)
+- [IFileAccess](/mod/game-api/types/assembly-other/ifileaccess) <span>Alta.Utilities</span>
+- [IFillSet](/mod/game-api/types/alta-world-generation/ifillset) <span>Alta.Forests</span>
+- [IFixedSizePriorityQueue&lt;TItem, TPriority&gt;](/mod/game-api/types/assembly-other/ifixedsizepriorityqueue-titem-intpriority) <span>Alta.Timing.PriorityQueue</span>
+- [IFlammable](/mod/game-api/types/alta-stats-effects/iflammable) <span>Alta.Heat</span>
+- [IForcedPresenceOnServer](/mod/game-api/types/alta-networking/iforcedpresenceonserver) <span>Alta.Streaming</span>
+- [IForcePresenceOnAndroidClient](/mod/game-api/types/alta-networking/iforcepresenceonandroidclient) <span>Alta.Streaming</span>
+- [IForestGeneration](/mod/game-api/types/alta-world-generation/iforestgeneration) <span>Alta.Forests</span>
+- [IFutureUserActions](/mod/game-api/types/assembly-api-client/ifutureuseractions) <span>Alta.Api.Client.HighLevel</span>
+- [IGameCondition](/mod/game-api/types/game-other-namespaces/igamecondition) <span>Features.Gameplay.GameConditions</span>
+- [IGenerator](/mod/game-api/types/alta-world-generation/igenerator) <span>Alta.Caves</span>
+- [IGenericCraftingComponent](/mod/game-api/types/alta-crafting/igenericcraftingcomponent) <span>Alta.Crafting</span>
+- [IGetChild](/mod/game-api/types/global-i-l/igetchild)
+- [IGetRigidbody](/mod/game-api/types/alta-crafting/igetrigidbody) <span>Alta.Crafting</span>
+- [IgnoreForBounds](/mod/game-api/types/global-i-l/ignoreforbounds)
+- [IGroupsClient](/mod/game-api/types/assembly-api-client/igroupsclient) <span>Alta.Api.Client.HighLevel</span>
+- [IGrowthManager](/mod/game-api/types/global-i-l/igrowthmanager)
+- [IGrowthStage](/mod/game-api/types/global-i-l/igrowthstage)
+- [IHandStaminaManager](/mod/game-api/types/global-i-l/ihandstaminamanager)
+- [IHasDynamicArguments](/mod/game-api/types/alta-menus/ihasdynamicarguments) <span>Alta.Menu</span>
+- [IHasFingertips](/mod/game-api/types/global-i-l/ihasfingertips)
+- [IHasHead](/mod/game-api/types/global-i-l/ihashead)
+- [IHasHistory](/mod/game-api/types/global-i-l/ihashistory)
+- [IHasMovementContext](/mod/game-api/types/global-i-l/ihasmovementcontext)
+- [IHasViewCone](/mod/game-api/types/alta-intelligence/ihasviewcone) <span>Alta.Intelligence</span>
+- [IHeartCallModifier](/mod/game-api/types/global-i-l/iheartcallmodifier)
+- [IHeatReceiver](/mod/game-api/types/alta-stats-effects/iheatreceiver) <span>Alta.Heat</span>
+- [IHeatSource](/mod/game-api/types/alta-stats-effects/iheatsource) <span>Alta.Heat</span>
+- [IHighLevelApiClient](/mod/game-api/types/assembly-api-client/ihighlevelapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [IHighLevelApiClientManager](/mod/game-api/types/assembly-api-client/ihighlevelapiclientmanager) <span>Alta.Api.Client.HighLevel</span>
+- [IHistoryAction](/mod/game-api/types/global-i-l/ihistoryaction)
+- [IHistoryManager](/mod/game-api/types/global-i-l/ihistorymanager)
+- [IHistoryManager&lt;T&gt;](/mod/game-api/types/global-i-l/ihistorymanager-t)
+- [IIdentifiable](/mod/game-api/types/assembly-api-models/iidentifiable) <span>Alta.Api.DataTransferModels.Interfaces</span>
+- [IIgnoreColliderFlattening](/mod/game-api/types/global-i-l/iignorecolliderflattening)
+- [IIgnoreForStaticFlatten](/mod/game-api/types/alta-utilities/iignoreforstaticflatten) <span>Alta.Utilities</span>
+- [IImpactEffect](/mod/game-api/types/alta-items/iimpacteffect) <span>Alta.Impact</span>
+- [IImpactorResetEffect](/mod/game-api/types/alta-items/iimpactorreseteffect) <span>Alta.Impact</span>
+- [IInitializable](/mod/game-api/types/alta-menus/iinitializable) <span>Alta.Meta.Friends</span>
+- [IInitializeAsLocalPlayer](/mod/game-api/types/global-i-l/iinitializeaslocalplayer)
+- [IInitializeAsRemotePlayer](/mod/game-api/types/global-i-l/iinitializeasremoteplayer)
+- [IInputBasedSkill](/mod/game-api/types/global-i-l/iinputbasedskill)
+- [IInstancesClient](/mod/game-api/types/assembly-api-client/iinstancesclient) <span>Alta.Api.Client.HighLevel</span>
+- [IInstructionResult](/mod/game-api/types/alta-world/iinstructionresult) <span>Alta.Static</span>
+- [IInteractAgent](/mod/game-api/types/alta-intelligence/iinteractagent) <span>Alta.Intelligence</span>
+- [IInterfereWithDocking](/mod/game-api/types/alta-items/iinterferewithdocking) <span>Alta.Inventory</span>
+- [IInventoryStore&lt;T&gt;](/mod/game-api/types/alta-player/iinventorystore-outt) <span>Alta.Character</span>
+- [IIsolate](/mod/game-api/types/assembly-other/iisolate) <span>Alta.LifecycleManagement</span>
+- [IItemComponent](/mod/game-api/types/global-i-l/iitemcomponent)
+- [IJointSlotComponent](/mod/game-api/types/alta-crafting/ijointslotcomponent) <span>Alta.Crafting</span>
+- [IJumpAttacker](/mod/game-api/types/alta-intelligence/ijumpattacker) <span>Alta.Intelligence</span>
+- [IKControllerMessage](/mod/game-api/types/global-i-l/ikcontrollermessage)
+- [IKControllSettings](/mod/game-api/types/global-i-l/ikcontrollsettings)
+- [IKeyBoardTriggerHandler](/mod/game-api/types/global-i-l/ikeyboardtriggerhandler)
+- [IKSolverManagerWrapper](/mod/game-api/types/alta-player/iksolvermanagerwrapper) <span>Alta.Character</span>
+- [IKTwistRelaxerWrapper](/mod/game-api/types/alta-player/iktwistrelaxerwrapper) <span>Alta.Character</span>
+- [ILabeledTouchScreenButton](/mod/game-api/types/global-i-l/ilabeledtouchscreenbutton)
+- [ILauncherApiClient](/mod/game-api/types/assembly-api-client/ilauncherapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [ILightDetector](/mod/game-api/types/global-i-l/ilightdetector)
+- [ILightDetectorTemp](/mod/game-api/types/global-i-l/ilightdetectortemp)
+- [ILightEmitter](/mod/game-api/types/global-i-l/ilightemitter)
+- [ILightEmitterTemp](/mod/game-api/types/global-i-l/ilightemittertemp)
+- [ILinkedAgent](/mod/game-api/types/alta-intelligence/ilinkedagent) <span>Alta.Intelligence</span>
+- [ILinkProvider](/mod/game-api/types/alta-networking/ilinkprovider) <span>Alta.Networking.Internal</span>
+- [ILiquidContainer](/mod/game-api/types/alta-stats-effects/iliquidcontainer) <span>Alta.Liquid</span>
+- [ILiquidContainerInternal](/mod/game-api/types/alta-stats-effects/iliquidcontainerinternal) <span>Alta.Liquid</span>
+- [ILiquidParticlesMarker](/mod/game-api/types/alta-stats-effects/iliquidparticlesmarker) <span>Alta.Liquid</span>
+- [ILiquidTransitionController](/mod/game-api/types/alta-stats-effects/iliquidtransitioncontroller) <span>Alta.Liquid</span>
+- [IListenedList&lt;T&gt;](/mod/game-api/types/alta-utilities/ilistenedlist-t) <span>Alta.Utilities</span>
+- [IListenToMiningEcho](/mod/game-api/types/global-i-l/ilistentominingecho)
+- [IListenToPhysicalMaterial](/mod/game-api/types/global-i-l/ilistentophysicalmaterial)
+- [ILogicComponent](/mod/game-api/types/alta-items/ilogiccomponent) <span>Alta.Logic</span>
+- [ILogicValueData](/mod/game-api/types/alta-items/ilogicvaluedata) <span>Alta.Logic</span>
+- [ILogicValueLinkReceiver](/mod/game-api/types/alta-items/ilogicvaluelinkreceiver) <span>Alta.Logic</span>
+- [ILoginPreferences](/mod/game-api/types/assembly-other/iloginpreferences) <span>Alta.Authentication</span>
+- [ImageFormat](/mod/game-api/types/global-i-l/imageformat)
+- [ImageType](/mod/game-api/types/assembly-api-models/imagetype) <span>Alta.Api.DataTransferModels.Enums</span>
+- [IMainMenuLogger](/mod/game-api/types/global-i-l/imainmenulogger)
+- [IMatchMakingClient](/mod/game-api/types/assembly-api-client/imatchmakingclient) <span>Alta.Api.Client.HighLevel</span>
+- [IMenuPlayerController](/mod/game-api/types/global-i-l/imenuplayercontroller)
+- [IMicroTutorial](/mod/game-api/types/game-other-namespaces/imicrotutorial) <span>ATT.MicroTutorial</span>
+- [IMicroTutorialFactory](/mod/game-api/types/game-other-namespaces/imicrotutorialfactory) <span>ATT.MicroTutorial</span>
+- [IMicroTutorialSettings](/mod/game-api/types/game-other-namespaces/imicrotutorialsettings) <span>ATT.MicroTutorial</span>
+- [IMicroTutorialSystem](/mod/game-api/types/game-other-namespaces/imicrotutorialsystem) <span>ATT.MicroTutorial</span>
+- [ImmediateDecay](/mod/game-api/types/global-i-l/immediatedecay)
+- [IMovementContext](/mod/game-api/types/global-i-l/imovementcontext)
+- [ImpactChannel](/mod/game-api/types/alta-items/impactchannel) <span>Alta.Impact</span>
+- [ImpactChannel.Create](/mod/game-api/types/alta-items/impactchannel-create) <span>Alta.Impact</span>
+- [ImpactChannelProgressionFilter](/mod/game-api/types/global-i-l/impactchannelprogressionfilter)
+- [ImpactChannelProgressionFilter.Create](/mod/game-api/types/global-i-l/impactchannelprogressionfilter-create)
+- [ImpactDetectionLogic](/mod/game-api/types/global-i-l/impactdetectionlogic)
+- [ImpactDetector](/mod/game-api/types/alta-items/impactdetector) <span>Alta.Impact</span>
+- [ImpactDetector.ImpactSyncArguments](/mod/game-api/types/alta-items/impactdetector-impactsyncarguments) <span>Alta.Impact</span>
+- [ImpactDetectorCentral](/mod/game-api/types/alta-items/impactdetectorcentral) <span>Alta.Impact</span>
+- [ImpactDetectorCentral.CentralizedArguments](/mod/game-api/types/alta-items/impactdetectorcentral-centralizedarguments) <span>Alta.Impact</span>
+- [ImpactDetectorColliderModifier](/mod/game-api/types/alta-items/impactdetectorcollidermodifier) <span>Alta.Impact</span>
+- [ImpactDetectorSettings](/mod/game-api/types/alta-items/impactdetectorsettings) <span>Alta.Impact</span>
+- [ImpactDetectorSettings.Create](/mod/game-api/types/alta-items/impactdetectorsettings-create) <span>Alta.Impact</span>
+- [ImpactDetectorSettings.ImpactSettings](/mod/game-api/types/alta-items/impactdetectorsettings-impactsettings) <span>Alta.Impact</span>
+- [ImpactGenerator](/mod/game-api/types/alta-items/impactgenerator) <span>Alta.Impact</span>
+- [ImpactHandler](/mod/game-api/types/global-i-l/impacthandler)
+- [ImpactHit](/mod/game-api/types/alta-items/impacthit) <span>Alta.Impact</span>
+- [ImpactHitEvent](/mod/game-api/types/alta-items/impacthitevent) <span>Alta.Impact</span>
+- [ImpactHitThresholdTrigger](/mod/game-api/types/alta-items/impacthitthresholdtrigger) <span>Alta.Impact</span>
+- [ImpactHitTrigger](/mod/game-api/types/alta-items/impacthittrigger) <span>Alta.Impact</span>
+- [ImpactHitUnityevent](/mod/game-api/types/alta-items/impacthitunityevent) <span>Alta.Impact</span>
+- [ImpactHitWithTool](/mod/game-api/types/alta-items/impacthitwithtool) <span>Alta.Impact</span>
+- [ImpactImmunityGroup](/mod/game-api/types/alta-items/impactimmunitygroup) <span>Alta.Impact</span>
+- [ImpactImmunityGroup.Create](/mod/game-api/types/alta-items/impactimmunitygroup-create) <span>Alta.Impact</span>
+- [ImpactModifier](/mod/game-api/types/alta-items/impactmodifier) <span>Alta.Impact</span>
+- [ImpactModifierComponent](/mod/game-api/types/alta-items/impactmodifiercomponent) <span>Alta.Impact</span>
+- [ImpactModifierMultiplier](/mod/game-api/types/alta-items/impactmodifiermultiplier) <span>Alta.Impact</span>
+- [ImpactModifierStatAffect](/mod/game-api/types/alta-items/impactmodifierstataffect) <span>Alta.Impact</span>
+- [ImpactModifierStatAffect.HitValue](/mod/game-api/types/alta-items/impactmodifierstataffect-hitvalue) <span>Alta.Impact</span>
+- [Impactor](/mod/game-api/types/alta-items/impactor) <span>Alta.Impact</span>
+- [ImpactorAreaFilter&lt;T&gt;](/mod/game-api/types/alta-items/impactorareafilter-t) <span>Alta.Impact</span>
+- [ImpactorFilter](/mod/game-api/types/alta-items/impactorfilter) <span>Alta.Impact</span>
+- [ImpactorMap](/mod/game-api/types/alta-items/impactormap) <span>Alta.Impact</span>
+- [ImpactorMap.MapElement](/mod/game-api/types/alta-items/impactormap-mapelement) <span>Alta.Impact</span>
+- [ImpactorSettings](/mod/game-api/types/alta-items/impactorsettings) <span>Alta.Impact</span>
+- [ImpactorSettings.ResetConditions](/mod/game-api/types/alta-items/impactorsettings-resetconditions) <span>Alta.Impact</span>
+- [ImpactorStatParameters](/mod/game-api/types/global-i-l/impactorstatparameters)
+- [ImpactorValues](/mod/game-api/types/alta-items/impactorvalues) <span>Alta.Impact</span>
+- [ImpactSound](/mod/game-api/types/global-i-l/impactsound)
+- [ImpactSoundManager](/mod/game-api/types/global-i-l/impactsoundmanager)
+- [ImpactSoundMap](/mod/game-api/types/global-i-l/impactsoundmap)
+- [ImpactSoundSet](/mod/game-api/types/global-i-l/impactsoundset)
+- [ImpactSoundSettings](/mod/game-api/types/global-i-l/impactsoundsettings)
+- [ImpactSoundSettings.Create](/mod/game-api/types/global-i-l/impactsoundsettings-create)
+- [ImpactSystemHitManager](/mod/game-api/types/global-i-l/impactsystemhitmanager)
+- [ImpactTool](/mod/game-api/types/alta-items/impacttool) <span>Alta.Impact</span>
+- [ImpactTool.OnCollidedHit](/mod/game-api/types/alta-items/impacttool-oncollidedhit) <span>Alta.Impact</span>
+- [ImpactTool.OnCollisionEnterEvent](/mod/game-api/types/alta-items/impacttool-oncollisionenterevent) <span>Alta.Impact</span>
+- [ImpactTool.OnGeneratedHit](/mod/game-api/types/alta-items/impacttool-ongeneratedhit) <span>Alta.Impact</span>
+- [ImpactTool.ResetConditions](/mod/game-api/types/alta-items/impacttool-resetconditions) <span>Alta.Impact</span>
+- [ImpactType](/mod/game-api/types/alta-items/impacttype) <span>Alta.Impact</span>
+- [ImpactTypeFilter](/mod/game-api/types/alta-items/impacttypefilter) <span>Alta.Impact</span>
+- [ImportSettings](/mod/game-api/types/global-i-l/importsettings)
+- [ImportSettings.CompressionSettings](/mod/game-api/types/global-i-l/importsettings-compressionsettings)
+- [ImportSettings.Create](/mod/game-api/types/global-i-l/importsettings-create)
+- [ImportSettings.Filter](/mod/game-api/types/global-i-l/importsettings-filter)
+- [ImportSettings.PlatformSettings](/mod/game-api/types/global-i-l/importsettings-platformsettings)
+- [ImportSettings.Scale](/mod/game-api/types/global-i-l/importsettings-scale)
+- [ImportSettings.TextureType](/mod/game-api/types/global-i-l/importsettings-texturetype)
+- [ImportSettings.Type](/mod/game-api/types/global-i-l/importsettings-type)
+- [ImpostorType](/mod/game-api/types/global-i-l/impostortype)
+- [INailable](/mod/game-api/types/alta-crafting/inailable) <span>Alta.Crafting</span>
+- [INameable](/mod/game-api/types/alta-networking/inameable) <span>Alta.Networking.Animation</span>
+- [INamedEntity](/mod/game-api/types/assembly-api-models/inamedentity) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [InateEffect](/mod/game-api/types/alta-stats-effects/inateeffect) <span>Alta.Alchemy</span>
+- [InboxPanel](/mod/game-api/types/alta-menus/inboxpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [IncomingGroupInvite](/mod/game-api/types/assembly-api-client/incominggroupinvite) <span>Alta.Api.Client.HighLevel</span>
+- [IncomingGroupJoinRequest](/mod/game-api/types/assembly-api-client/incominggroupjoinrequest) <span>Alta.Api.Client.HighLevel</span>
+- [IncomingGroupRequestPage](/mod/game-api/types/alta-menus/incominggrouprequestpage) <span>Alta.Meta.UI.ServerManagement</span>
+- [IncrementingStat](/mod/game-api/types/alta-stats-effects/incrementingstat) <span>Alta.StatSystem</span>
+- [IncrementingStat.Create](/mod/game-api/types/alta-stats-effects/incrementingstat-create) <span>Alta.StatSystem</span>
+- [IncrementStat](/mod/game-api/types/global-i-l/incrementstat)
+- [IndependentWalker](/mod/game-api/types/alta-intelligence/independentwalker) <span>Alta.Pathfinding</span>
+- [IndexedScriptableObject](/mod/game-api/types/alta-world/indexedscriptableobject) <span>Alta.Static</span>
+- [IndexedStatisticList&lt;TStatistic, TStatType&gt;](/mod/game-api/types/alta-networking/indexedstatisticlist-tstatistic-tstattype) <span>Alta.Profiling.Networking</span>
+- [IndirectModifier](/mod/game-api/types/alta-stats-effects/indirectmodifier) <span>Alta.StatSystem</span>
+- [IndirectModifierSaveData](/mod/game-api/types/alta-stats-effects/indirectmodifiersavedata) <span>Alta.StatSystem</span>
+- [IndirectStatModifier](/mod/game-api/types/alta-stats-effects/indirectstatmodifier) <span>Alta.StatSystem</span>
+- [IndirectStatModifierDefinition](/mod/game-api/types/alta-stats-effects/indirectstatmodifierdefinition) <span>Alta.StatSystem</span>
+- [IndirectStatModifierDefinition.Create](/mod/game-api/types/alta-stats-effects/indirectstatmodifierdefinition-create) <span>Alta.StatSystem</span>
+- [IndirectStatModifierDefinition.StrengthUsage](/mod/game-api/types/alta-stats-effects/indirectstatmodifierdefinition-strengthusage) <span>Alta.StatSystem</span>
+- [IndoorAmbienceBoost](/mod/game-api/types/alta-intelligence/indoorambienceboost) <span>Alta.Combat</span>
+- [INetworkEntity](/mod/game-api/types/alta-networking/inetworkentity) <span>Alta.Networking</span>
+- [INetworkEntityBehaviour](/mod/game-api/types/alta-networking/inetworkentitybehaviour) <span>Alta.Networking</span>
+- [INetworkInteractArgument](/mod/game-api/types/global-i-l/inetworkinteractargument)
+- [INetworkProjectile](/mod/game-api/types/alta-items/inetworkprojectile) <span>Alta.Impact</span>
+- [INetworkScene](/mod/game-api/types/alta-networking/inetworkscene) <span>Alta.Networking</span>
+- [INetworkSceneInternal](/mod/game-api/types/alta-networking/inetworksceneinternal) <span>Alta.Networking</span>
+- [INetworkSerialized](/mod/game-api/types/alta-networking/inetworkserialized) <span>Alta.Networking</span>
+- [INetworkStatistic](/mod/game-api/types/alta-utilities/inetworkstatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [INetworkStatisticCollection](/mod/game-api/types/alta-utilities/inetworkstatisticcollection) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [INetworkTransportResult](/mod/game-api/types/assembly-other/inetworktransportresult) <span>Alta.NetworkingTransport</span>
+- [InfoBoard](/mod/game-api/types/alta-world/infoboard) <span>Alta.Map</span>
+- [InfoBoardSaveData](/mod/game-api/types/alta-world/infoboardsavedata) <span>Alta.Map</span>
+- [InfoCommandModule](/mod/game-api/types/alta-console/infocommandmodule) <span>Alta.Console.Commands</span>
+- [InfoDisplayer](/mod/game-api/types/global-i-l/infodisplayer)
+- [InfoDisplayerAccess](/mod/game-api/types/global-i-l/infodisplayeraccess)
+- [InfoDisplayerAccess.AccessUpdate](/mod/game-api/types/global-i-l/infodisplayeraccess-accessupdate)
+- [InGameGizmosSettings](/mod/game-api/types/global-i-l/ingamegizmossettings)
+- [InGameGizmosSettings.Create](/mod/game-api/types/global-i-l/ingamegizmossettings-create)
+- [InGameInspector](/mod/game-api/types/global-i-l/ingameinspector)
+- [InGameInspector.BubbleInspectorTool](/mod/game-api/types/global-i-l/ingameinspector-bubbleinspectortool)
+- [InGameInspector.ChunkBounds](/mod/game-api/types/global-i-l/ingameinspector-chunkbounds)
+- [InGameInspector.ClonerTool](/mod/game-api/types/global-i-l/ingameinspector-clonertool)
+- [InGameInspector.CommandRunner](/mod/game-api/types/global-i-l/ingameinspector-commandrunner)
+- [InGameInspector.DirectTeleporter](/mod/game-api/types/global-i-l/ingameinspector-directteleporter)
+- [InGameInspector.InGameTool](/mod/game-api/types/global-i-l/ingameinspector-ingametool)
+- [InGameInspector.LODBias](/mod/game-api/types/global-i-l/ingameinspector-lodbias)
+- [InGameInspector.LODForcer](/mod/game-api/types/global-i-l/ingameinspector-lodforcer)
+- [InGameInspector.LODUpdater](/mod/game-api/types/global-i-l/ingameinspector-lodupdater)
+- [InGameInspector.LODVizualizer](/mod/game-api/types/global-i-l/ingameinspector-lodvizualizer)
+- [InGameInspector.LODVizualizer.RendererMaterial](/mod/game-api/types/global-i-l/ingameinspector-lodvizualizer-renderermaterial)
+- [InGameInspector.MineStairsPointer](/mod/game-api/types/global-i-l/ingameinspector-minestairspointer)
+- [InGameInspector.NonTeleporterInGameTool](/mod/game-api/types/global-i-l/ingameinspector-nonteleporteringametool)
+- [InGameInspector.SpawnPointTeleporter](/mod/game-api/types/global-i-l/ingameinspector-spawnpointteleporter)
+- [InGameInspector.StraightJumper](/mod/game-api/types/global-i-l/ingameinspector-straightjumper)
+- [InGameInspector.StraightJumper.Direction](/mod/game-api/types/global-i-l/ingameinspector-straightjumper-direction)
+- [InGameInspectorWheel](/mod/game-api/types/global-i-l/ingameinspectorwheel)
+- [InGameLineGizmo](/mod/game-api/types/global-i-l/ingamelinegizmo)
+- [InGameSphereGizmo](/mod/game-api/types/global-i-l/ingamespheregizmo)
+- [Ingot](/mod/game-api/types/alta-items/ingot) <span>Alta.Inventory</span>
+- [IngredientPageProvider](/mod/game-api/types/global-i-l/ingredientpageprovider)
+- [IngredientPageSettings](/mod/game-api/types/global-i-l/ingredientpagesettings)
+- [IngredientPageSettings.Create](/mod/game-api/types/global-i-l/ingredientpagesettings-create)
+- [InputField](/mod/game-api/types/alta-menus/inputfield) <span>Alta.Meta.UI</span>
+- [InputFieldWithKeyboard](/mod/game-api/types/alta-menus/inputfieldwithkeyboard) <span>Alta.Meta.UI</span>
+- [InputMap](/mod/game-api/types/global-i-l/inputmap)
+- [InputMap.IPlayingActions](/mod/game-api/types/global-i-l/inputmap-iplayingactions)
+- [InputMap.IPlayingBaseActions](/mod/game-api/types/global-i-l/inputmap-iplayingbaseactions)
+- [InputMap.IPlayingGenericActions](/mod/game-api/types/global-i-l/inputmap-iplayinggenericactions)
+- [InputMap.IPlayingPicoActions](/mod/game-api/types/global-i-l/inputmap-iplayingpicoactions)
+- [InputMap.PlayingActions](/mod/game-api/types/global-i-l/inputmap-playingactions)
+- [InputMap.PlayingBaseActions](/mod/game-api/types/global-i-l/inputmap-playingbaseactions)
+- [InputMap.PlayingGenericActions](/mod/game-api/types/global-i-l/inputmap-playinggenericactions)
+- [InputMap.PlayingPicoActions](/mod/game-api/types/global-i-l/inputmap-playingpicoactions)
+- [InputScaler](/mod/game-api/types/global-i-l/inputscaler)
+- [InputSource](/mod/game-api/types/global-i-l/inputsource)
+- [InputSourceHandler](/mod/game-api/types/global-i-l/inputsourcehandler)
+- [InputSourcePair](/mod/game-api/types/global-i-l/inputsourcepair)
+- [InputToActionMapping](/mod/game-api/types/global-i-l/inputtoactionmapping)
+- [InputToActionMapping.HandType](/mod/game-api/types/global-i-l/inputtoactionmapping-handtype)
+- [InsetModifier](/mod/game-api/types/global-i-l/insetmodifier)
+- [InsetModifier.Create](/mod/game-api/types/global-i-l/insetmodifier-create)
+- [InspectorBase](/mod/game-api/types/global-i-l/inspectorbase)
+- [InspectorType](/mod/game-api/types/global-i-l/inspectortype)
+- [InstallationEventInfo](/mod/game-api/types/assembly-api-models/installationeventinfo) <span>Alta.Api.DataTransferModels.Models.Responses.DTOs.Responses</span>
+- [InstallationEventRequest](/mod/game-api/types/assembly-api-models/installationeventrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [Instance](/mod/game-api/types/alta-stats-effects/instance) <span>Alta.StatSystem</span>
+- [InstancedPrefab](/mod/game-api/types/global-i-l/instancedprefab)
+- [InstanceInfo](/mod/game-api/types/assembly-api-models/instanceinfo) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [InstancesClient](/mod/game-api/types/assembly-api-client/instancesclient) <span>Alta.Api.Client.HighLevel</span>
+- [Instantiator](/mod/game-api/types/global-i-l/instantiator)
+- [Instruction](/mod/game-api/types/alta-world/instruction) <span>Alta.Static</span>
+- [Instruction.Type](/mod/game-api/types/alta-world/instruction-type) <span>Alta.Static</span>
+- [InstructionSet](/mod/game-api/types/alta-world/instructionset) <span>Alta.Static</span>
+- [IntegerVisual](/mod/game-api/types/global-i-l/integervisual)
+- [Intelligence](/mod/game-api/types/alta-intelligence/intelligence) <span>Alta.Intelligence</span>
+- [IntelligenceExtensionMethods](/mod/game-api/types/alta-intelligence/intelligenceextensionmethods) <span>Alta.Intelligence</span>
+- [Interactable](/mod/game-api/types/global-i-l/interactable)
+- [InteractableEvent](/mod/game-api/types/global-i-l/interactableevent)
+- [InteractableEvents](/mod/game-api/types/global-i-l/interactableevents)
+- [InteractableInspector](/mod/game-api/types/global-i-l/interactableinspector)
+- [InteractableLastPlayerInteractorHandler](/mod/game-api/types/global-i-l/interactablelastplayerinteractorhandler)
+- [InteractableScoreCalculationSettings](/mod/game-api/types/global-i-l/interactablescorecalculationsettings)
+- [InteractableUnityEvent](/mod/game-api/types/global-i-l/interactableunityevent)
+- [InteractArguments](/mod/game-api/types/global-i-l/interactarguments)
+- [InteractionChannel](/mod/game-api/types/global-i-l/interactionchannel)
+- [InteractionChannelHelper](/mod/game-api/types/global-i-l/interactionchannelhelper)
+- [InteractionCollisionController](/mod/game-api/types/alta-player/interactioncollisioncontroller) <span>Alta.Character</span>
+- [InteractionFilter](/mod/game-api/types/global-i-l/interactionfilter)
+- [InteractionForwarder](/mod/game-api/types/global-i-l/interactionforwarder)
+- [InteractionHandler](/mod/game-api/types/global-i-l/interactionhandler)
+- [InteractionSwapHandler](/mod/game-api/types/global-i-l/interactionswaphandler)
+- [InteractionType](/mod/game-api/types/global-i-l/interactiontype)
+- [Interactor](/mod/game-api/types/global-i-l/interactor)
+- [InteractorInspector](/mod/game-api/types/global-i-l/interactorinspector)
+- [InterfaceResolver](/mod/game-api/types/game-other-namespaces/interfaceresolver) <span>Features.Meta.Resolvers</span>
+- [InteriorFogAmbience](/mod/game-api/types/game-other-namespaces/interiorfogambience) <span>Features.World.Environmental.Atmosphere</span>
+- [InteriorRendererCollector](/mod/game-api/types/global-i-l/interiorrenderercollector)
+- [InternalMessage](/mod/game-api/types/alta-networking/internalmessage) <span>Alta.Networking</span>
+- [IntEvent](/mod/game-api/types/global-i-l/intevent)
+- [IntGameSettingsAccess](/mod/game-api/types/alta-utilities/intgamesettingsaccess) <span>Alta.Utilities</span>
+- [IntGameSettingsAccess.Create](/mod/game-api/types/alta-utilities/intgamesettingsaccess-create) <span>Alta.Utilities</span>
+- [IntSenderInput](/mod/game-api/types/alta-items/intsenderinput) <span>Alta.Logic</span>
+- [IntUnityEvent](/mod/game-api/types/global-i-l/intunityevent)
+- [IntValuesPerLevel](/mod/game-api/types/alta-player/intvaluesperlevel) <span>Alta.Progression.Skills</span>
+- [Inventory](/mod/game-api/types/alta-player/inventory) <span>Alta.Character</span>
+- [Inventory](/mod/game-api/types/alta-console/inventory) <span>Alta.Console.Commands</span>
+- [InventoryChangeData](/mod/game-api/types/game-other-namespaces/inventorychangedata) <span>ATT.PlayerStates</span>
+- [InventoryChangeType](/mod/game-api/types/game-other-namespaces/inventorychangetype) <span>ATT.PlayerStates</span>
+- [InventoryType](/mod/game-api/types/game-other-namespaces/inventorytype) <span>ATT.PlayerStates</span>
+- [InversedIntAttribute](/mod/game-api/types/assembly-other/inversedintattribute)
+- [InverseLerpSenseSelf](/mod/game-api/types/alta-intelligence/inverselerpsenseself) <span>Alta.Intelligence</span>
+- [InverseLerpSenseTarget](/mod/game-api/types/alta-intelligence/inverselerpsensetarget) <span>Alta.Intelligence</span>
+- [InvertedTriangleStackingInstruction](/mod/game-api/types/alta-items/invertedtrianglestackinginstruction) <span>Alta.Inventory</span>
+- [InvertedTriangleStackingInstructionSetup](/mod/game-api/types/alta-items/invertedtrianglestackinginstructionsetup) <span>Alta.Inventory</span>
+- [InvitedGroupInfo](/mod/game-api/types/assembly-api-models/invitedgroupinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [InvitedGroups](/mod/game-api/types/assembly-api-client/invitedgroups) <span>Alta.Api.Client.HighLevel</span>
+- [InviteUserToGroupPanel](/mod/game-api/types/alta-menus/inviteusertogrouppanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [InviteUserToGroupViaFriendsPanel](/mod/game-api/types/alta-menus/inviteusertogroupviafriendspanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [InvokeEvent](/mod/game-api/types/global-i-l/invokeevent)
+- [IOculusClient](/mod/game-api/types/assembly-api-client/ioculusclient) <span>Alta.Api.Client.HighLevel</span>
+- [IOculusShop](/mod/game-api/types/assembly-api-client/ioculusshop) <span>Alta.Api.Client.HighLevel</span>
+- [IOculusWrapper](/mod/game-api/types/game-other-namespaces/ioculuswrapper) <span>Features.Meta.Platform.Oculus</span>
+- [IOperateOnWipe](/mod/game-api/types/global-i-l/ioperateonwipe)
+- [IPacketProcessor](/mod/game-api/types/assembly-other/ipacketprocessor) <span>Alta.NetworkingTransport</span>
+- [IPacketReceiver](/mod/game-api/types/alta-networking/ipacketreceiver) <span>Alta.Networking</span>
+- [IPAddressJsonConverter](/mod/game-api/types/assembly-api-models/ipaddressjsonconverter) <span>Alta.Api.DataTransferModels.Converters</span>
+- [IPageBasis](/mod/game-api/types/alta-items/ipagebasis) <span>Alta.Pages</span>
+- [IPagedResult&lt;T&gt;](/mod/game-api/types/assembly-api-client/ipagedresult-t) <span>Alta.Api.Client.LowLevel</span>
+- [IParallelPacketProcessor](/mod/game-api/types/assembly-other/iparallelpacketprocessor) <span>Alta.NetworkingTransport</span>
+- [IPartInstance](/mod/game-api/types/alta-world-generation/ipartinstance) <span>Alta.Caves.PluginParts</span>
+- [IPerPlayerContent&lt;TSaveFormat&gt;](/mod/game-api/types/global-i-l/iperplayercontent-tsaveformat)
+- [IPhase](/mod/game-api/types/global-i-l/iphase)
+- [IPicoClient](/mod/game-api/types/assembly-api-client/ipicoclient) <span>Alta.Api.Client.HighLevel</span>
+- [IPlatformDevice](/mod/game-api/types/assembly-other/iplatformdevice) <span>Alta.Platform</span>
+- [IPlatformFriendService](/mod/game-api/types/alta-menus/iplatformfriendservice) <span>Alta.Meta.Friends.Platform</span>
+- [IPlatformPlayer](/mod/game-api/types/global-i-l/iplatformplayer)
+- [IPlatformService](/mod/game-api/types/assembly-other/iplatformservice) <span>Alta.Platform</span>
+- [IPlayer](/mod/game-api/types/alta-networking/iplayer) <span>Alta.Networking.Scripts.Player</span>
+- [IPlayerControllerMultiLockModel](/mod/game-api/types/global-i-l/iplayercontrollermultilockmodel)
+- [IPlayerEvent](/mod/game-api/types/game-other-namespaces/iplayerevent) <span>ATT.EventBus.TownshipEvents</span>
+- [IPlayerPreferenceValue&lt;T&gt;](/mod/game-api/types/assembly-other/iplayerpreferencevalue-t)
+- [IPlayerReportsClient](/mod/game-api/types/assembly-api-client/iplayerreportsclient) <span>Alta.Api.Client.HighLevel</span>
+- [IPlayerRespawnPositionProvider](/mod/game-api/types/game-other-namespaces/iplayerrespawnpositionprovider) <span>ATT.Respawn</span>
+- [IPlayerState](/mod/game-api/types/alta-player/iplayerstate) <span>Alta.PlayerStates</span>
+- [IPlayerStateFactory](/mod/game-api/types/alta-player/iplayerstatefactory) <span>Alta.PlayerStates</span>
+- [IPlayerStateSettings](/mod/game-api/types/alta-player/iplayerstatesettings) <span>Alta.PlayerStates</span>
+- [IPlayerStateTransition](/mod/game-api/types/alta-player/iplayerstatetransition) <span>Alta.PlayerStates.Transitions</span>
+- [IPointerPrefabBakable](/mod/game-api/types/global-i-l/ipointerprefabbakable)
+- [IPointNormalEvaluator](/mod/game-api/types/alta-world-generation/ipointnormalevaluator) <span>Alta.Populations</span>
+- [IPointTowards](/mod/game-api/types/global-i-l/ipointtowards)
+- [IPooledInstance](/mod/game-api/types/assembly-other/ipooledinstance)
+- [IPooledInstance&lt;TParam1, TParam2, TParam3&gt;](/mod/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2-intparam3)
+- [IPooledInstance&lt;TParam1, TParam2&gt;](/mod/game-api/types/assembly-other/ipooledinstance-intparam1-intparam2)
+- [IPooledInstance&lt;TParam&gt;](/mod/game-api/types/assembly-other/ipooledinstance-intparam)
+- [IPopulationFolder](/mod/game-api/types/alta-world-generation/ipopulationfolder) <span>Alta.Populations</span>
+- [IPopulationFolderSaveDataBase](/mod/game-api/types/alta-world-generation/ipopulationfoldersavedatabase) <span>Alta.Populations</span>
+- [IPopulationItem](/mod/game-api/types/alta-world-generation/ipopulationitem) <span>Alta.Populations</span>
+- [IPopulationManager](/mod/game-api/types/alta-world-generation/ipopulationmanager) <span>Alta.Populations</span>
+- [IPopulationRemovalMethod](/mod/game-api/types/alta-world-generation/ipopulationremovalmethod) <span>Alta.Populations</span>
+- [IPopupBoard](/mod/game-api/types/global-i-l/ipopupboard)
+- [IPortalApplier](/mod/game-api/types/alta-world/iportalapplier) <span>Alta.Chunks</span>
+- [IPositionRotationPath](/mod/game-api/types/global-i-l/ipositionrotationpath)
+- [IPostboxPopped](/mod/game-api/types/global-i-l/ipostboxpopped)
+- [IPourableContainer](/mod/game-api/types/alta-stats-effects/ipourablecontainer) <span>Alta.Liquid</span>
+- [IPreventAtlasing](/mod/game-api/types/alta-utilities/ipreventatlasing) <span>Alta.Utilities.Atlas</span>
+- [IPreventNoLongerReadable](/mod/game-api/types/alta-utilities/ipreventnolongerreadable) <span>Alta.Utilities.Atlas</span>
+- [IPriorityQueue&lt;TItem, TPriority&gt;](/mod/game-api/types/assembly-other/ipriorityqueue-titem-intpriority) <span>Alta.Timing.PriorityQueue</span>
+- [IProceduralGenerationStreamer](/mod/game-api/types/alta-world/iproceduralgenerationstreamer) <span>Alta.Chunks</span>
+- [IProfessionSkillTester](/mod/game-api/types/global-i-l/iprofessionskilltester)
+- [IProject](/mod/game-api/types/alta-crafting/iproject) <span>Alta.Crafting</span>
+- [IProvideEnumerable&lt;T&gt;](/mod/game-api/types/alta-menus/iprovideenumerable-t) <span>Alta.Menu</span>
+- [IPurchaseConsumer](/mod/game-api/types/game-other-namespaces/ipurchaseconsumer) <span>Features.Shop</span>
+- [IQuickAccessDynamicIcon](/mod/game-api/types/alta-player/iquickaccessdynamicicon) <span>Alta.QuickAccessActions</span>
+- [IQuickAccessSettingsBoard](/mod/game-api/types/alta-player/iquickaccesssettingsboard) <span>Alta.QuickAccessActions</span>
+- [IReadonlyAnalyticsData](/mod/game-api/types/assembly-other/ireadonlyanalyticsdata) <span>Alta.Analytics</span>
+- [IReceiveImpulseFromCollision](/mod/game-api/types/alta-intelligence/ireceiveimpulsefromcollision) <span>Alta.Intelligence</span>
+- [IRecentPlayersClient](/mod/game-api/types/assembly-api-client/irecentplayersclient) <span>Alta.Api.Client.HighLevel</span>
+- [IReferenceRenderer](/mod/game-api/types/global-i-l/ireferencerenderer)
+- [IRemoteAltaFile](/mod/game-api/types/assembly-other/iremotealtafile) <span>Alta.Utilities</span>
+- [IRemoteConsole](/mod/game-api/types/global-i-l/iremoteconsole)
+- [IRemoteConsoleHandler](/mod/game-api/types/global-i-l/iremoteconsolehandler)
+- [IRespawnBeaconController](/mod/game-api/types/game-other-namespaces/irespawnbeaconcontroller) <span>ATT.Respawn</span>
+- [IRespawnBeaconView](/mod/game-api/types/game-other-namespaces/irespawnbeaconview) <span>ATT.Respawn</span>
+- [IRespawnShrine](/mod/game-api/types/game-other-namespaces/irespawnshrine) <span>ATT.Respawn</span>
+- [IRespawnShrineModel](/mod/game-api/types/game-other-namespaces/irespawnshrinemodel) <span>ATT.Respawn</span>
+- [IRespawnShrineSettings](/mod/game-api/types/game-other-namespaces/irespawnshrinesettings) <span>ATT.Respawn</span>
+- [IRespawnSystem](/mod/game-api/types/game-other-namespaces/irespawnsystem) <span>ATT.Respawn</span>
+- [IRespawnSystemModel](/mod/game-api/types/game-other-namespaces/irespawnsystemmodel) <span>ATT.Respawn</span>
+- [IRespawnSystemSettings](/mod/game-api/types/game-other-namespaces/irespawnsystemsettings) <span>ATT.Respawn</span>
+- [IRiverDecorationSegment](/mod/game-api/types/alta-world-generation/iriverdecorationsegment) <span>Alta.Forests</span>
+- [IRiverVisual](/mod/game-api/types/alta-world-generation/irivervisual) <span>Alta.Forests</span>
+- [ISavable&lt;T&gt;](/mod/game-api/types/global-i-l/isavable-t)
+- [ISavableFull](/mod/game-api/types/alta-world/isavablefull) <span>Alta.Chunks</span>
+- [ISavableFull&lt;T&gt;](/mod/game-api/types/alta-world/isavablefull-t) <span>Alta.Chunks</span>
+- [ISavableSave&lt;T&gt;](/mod/game-api/types/alta-world/isavablesave-outt) <span>Alta.Saving</span>
+- [ISavableSaveBase](/mod/game-api/types/alta-world/isavablesavebase) <span>Alta.Saving</span>
+- [ISavingContext](/mod/game-api/types/global-i-l/isavingcontext)
+- [ISearchableTool](/mod/game-api/types/assembly-other/isearchabletool)
+- [ISecurityApiClient](/mod/game-api/types/assembly-api-client/isecurityapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [ISerializeChildren](/mod/game-api/types/alta-networking/iserializechildren) <span>Alta.Networking</span>
+- [IServerAccess](/mod/game-api/types/assembly-api-client/iserveraccess) <span>Alta.Api.Client.HighLevel</span>
+- [IServerApiClient](/mod/game-api/types/assembly-api-client/iserverapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [IServerHostController](/mod/game-api/types/global-i-l/iserverhostcontroller)
+- [IServerStepInstance](/mod/game-api/types/game-other-namespaces/iserverstepinstance) <span>ATT.MicroTutorial</span>
+- [IServicesApiClient](/mod/game-api/types/assembly-api-client/iservicesapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [ISettingsClient](/mod/game-api/types/assembly-api-client/isettingsclient) <span>Alta.Api.Client.HighLevel</span>
+- [ISettingsFieldAccess](/mod/game-api/types/alta-utilities/isettingsfieldaccess) <span>Alta.Utilities</span>
+- [IShootable](/mod/game-api/types/global-i-l/ishootable)
+- [IShopAccount](/mod/game-api/types/assembly-api-client/ishopaccount) <span>Alta.Api.Client.HighLevel</span>
+- [IShopApiClient](/mod/game-api/types/assembly-api-client/ishopapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [IShopController](/mod/game-api/types/game-other-namespaces/ishopcontroller) <span>Features.Main_Menu.Scripts.TalemShop</span>
+- [IShopEditor](/mod/game-api/types/assembly-api-client/ishopeditor) <span>Alta.Api.Client.HighLevel</span>
+- [IShopPurchase](/mod/game-api/types/assembly-api-client/ishoppurchase) <span>Alta.Api.Client.HighLevel</span>
+- [IsJointAvailable](/mod/game-api/types/alta-crafting/isjointavailable) <span>Alta.Crafting</span>
+- [ISkillInputMethod](/mod/game-api/types/global-i-l/iskillinputmethod)
+- [ISkillOrb](/mod/game-api/types/global-i-l/iskillorb)
+- [ISmoothLocomotionModifier](/mod/game-api/types/global-i-l/ismoothlocomotionmodifier)
+- [ISocialClient](/mod/game-api/types/assembly-api-client/isocialclient) <span>Alta.Api.Client.HighLevel</span>
+- [ISocket](/mod/game-api/types/alta-networking/isocket) <span>Alta.Networking</span>
+- [ISortedLight](/mod/game-api/types/alta-world/isortedlight) <span>Alta.Lighting</span>
+- [ISoundProperty](/mod/game-api/types/global-i-l/isoundproperty)
+- [ISpawnArguments](/mod/game-api/types/alta-utilities/ispawnarguments) <span>Alta.Utilities</span>
+- [ISpawner](/mod/game-api/types/global-i-l/ispawner)
+- [ISpawnPositions](/mod/game-api/types/global-i-l/ispawnpositions)
+- [ISpawnSystem](/mod/game-api/types/alta-world-generation/ispawnsystem) <span>Alta.Populations</span>
+- [ISplatPainter](/mod/game-api/types/alta-world-generation/isplatpainter) <span>Alta.Forests</span>
+- [IStateTransitionsManager](/mod/game-api/types/alta-player/istatetransitionsmanager) <span>Alta.PlayerStates</span>
+- [IStaticEnvironmentPiecePool](/mod/game-api/types/alta-world/istaticenvironmentpiecepool) <span>Alta.Static</span>
+- [IStaticGeneration](/mod/game-api/types/global-i-l/istaticgeneration)
+- [IStatManager](/mod/game-api/types/alta-player/istatmanager) <span>Alta.Achievements</span>
+- [IStepInstance](/mod/game-api/types/game-other-namespaces/istepinstance) <span>ATT.MicroTutorial</span>
+- [IStewIngredient](/mod/game-api/types/alta-crafting/istewingredient) <span>Alta.Cooking</span>
+- [IStrikeSuccessionModifier](/mod/game-api/types/global-i-l/istrikesuccessionmodifier)
+- [ISync](/mod/game-api/types/alta-networking/isync) <span>Alta.Networking</span>
+- [ISyncController](/mod/game-api/types/game-other-namespaces/isynccontroller) <span>ATT.MicroTutorial</span>
+- [ISyncedListener](/mod/game-api/types/global-i-l/isyncedlistener)
+- [ITarget](/mod/game-api/types/alta-intelligence/itarget) <span>Alta.Intelligence</span>
+- [ITargetExtensions](/mod/game-api/types/alta-intelligence/itargetextensions) <span>Alta.Intelligence</span>
+- [ITargetPointer](/mod/game-api/types/alta-intelligence/itargetpointer) <span>Alta.Intelligence</span>
+- [ITeleportAwareTrigger](/mod/game-api/types/global-i-l/iteleportawaretrigger)
+- [Item](/mod/game-api/types/alta-items/item) <span>Alta.Inventory</span>
+- [Item.Create](/mod/game-api/types/alta-items/item-create) <span>Alta.Inventory</span>
+- [Item.CustomDockPositioning](/mod/game-api/types/alta-items/item-customdockpositioning) <span>Alta.Inventory</span>
+- [Item.DockPositioning](/mod/game-api/types/alta-items/item-dockpositioning) <span>Alta.Inventory</span>
+- [ItemCategory](/mod/game-api/types/assembly-api-models/itemcategory) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ItemComponent](/mod/game-api/types/global-i-l/itemcomponent)
+- [ItemCount](/mod/game-api/types/alta-items/itemcount) <span>Alta.Inventory</span>
+- [ItemCraftedEvent](/mod/game-api/types/game-other-namespaces/itemcraftedevent) <span>ATT.EventBus.TownshipEvents</span>
+- [ItemCraftedStep](/mod/game-api/types/game-other-namespaces/itemcraftedstep) <span>ATT.MicroTutorial.Steps</span>
+- [ItemDeleteRequest](/mod/game-api/types/assembly-api-models/itemdeleterequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ItemDockedVfxEvent](/mod/game-api/types/alta-items/itemdockedvfxevent) <span>Alta.Inventory</span>
+- [ItemForgedEvent](/mod/game-api/types/game-other-namespaces/itemforgedevent) <span>ATT.EventBus.TownshipEvents</span>
+- [ItemForgedStep](/mod/game-api/types/game-other-namespaces/itemforgedstep) <span>ATT.MicroTutorial.Steps</span>
+- [ItemLevitator](/mod/game-api/types/alta-player/itemlevitator) <span>Alta.Progression.Skills</span>
+- [ItemLevitatorExtension](/mod/game-api/types/alta-player/itemlevitatorextension) <span>Alta.Progression.Skills</span>
+- [ItemModifier](/mod/game-api/types/alta-utilities/itemmodifier) <span>Alta.Bezier</span>
+- [ItemPurchaseRequest](/mod/game-api/types/assembly-api-models/itempurchaserequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ItemScroller](/mod/game-api/types/global-i-l/itemscroller)
+- [ItemSet](/mod/game-api/types/alta-items/itemset) <span>Alta.Inventory</span>
+- [ItemSet.Create](/mod/game-api/types/alta-items/itemset-create) <span>Alta.Inventory</span>
+- [ItemSetRequest](/mod/game-api/types/assembly-api-models/itemsetrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ItemSetType](/mod/game-api/types/assembly-api-models/itemsettype) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ItemShooter](/mod/game-api/types/global-i-l/itemshooter)
+- [ItemSmelterRecipeUnlock](/mod/game-api/types/global-i-l/itemsmelterrecipeunlock)
+- [ITerm](/mod/game-api/types/alta-intelligence/iterm) <span>Alta.Intelligence</span>
+- [ITerrainModifier](/mod/game-api/types/alta-world-generation/iterrainmodifier) <span>Alta.Forests</span>
+- [ITestUnityApplicationWrapper](/mod/game-api/types/game-other-namespaces/itestunityapplicationwrapper) <span>Features.Utility.UnityWrappers</span>
+- [ITimeline](/mod/game-api/types/assembly-other/itimeline) <span>Alta.Timing</span>
+- [IToolHitDependant](/mod/game-api/types/alta-items/itoolhitdependant) <span>Alta.Impact</span>
+- [ITouchScreenButton](/mod/game-api/types/global-i-l/itouchscreenbutton)
+- [ITownshipEventBus](/mod/game-api/types/game-other-namespaces/itownshipeventbus) <span>ATT.EventBus</span>
+- [ITransport](/mod/game-api/types/assembly-other/itransport) <span>Alta.NetworkingTransport</span>
+- [ITransportClient](/mod/game-api/types/assembly-other/itransportclient) <span>Alta.NetworkingTransport</span>
+- [ITransportConnection](/mod/game-api/types/assembly-other/itransportconnection) <span>Alta.NetworkingTransport</span>
+- [ITransportServer](/mod/game-api/types/assembly-other/itransportserver) <span>Alta.NetworkingTransport</span>
+- [ITransportSocket](/mod/game-api/types/assembly-other/itransportsocket) <span>Alta.NetworkingTransport</span>
+- [ITrialReset](/mod/game-api/types/global-i-l/itrialreset)
+- [ITriggerEventData](/mod/game-api/types/game-other-namespaces/itriggereventdata) <span>ATT.Triggers</span>
+- [IUnclearedPower2ArrayPool](/mod/game-api/types/assembly-other/iunclearedpower2arraypool) <span>Alta.ArrayPools</span>
+- [IUnityApplicationWrapper](/mod/game-api/types/game-other-namespaces/iunityapplicationwrapper) <span>Features.Utility.UnityWrappers</span>
+- [IUnityUpdateMethod](/mod/game-api/types/global-i-l/iunityupdatemethod)
+- [IUpdateOnMove](/mod/game-api/types/global-i-l/iupdateonmove)
+- [IUser](/mod/game-api/types/assembly-other/iuser) <span>Alta.Platform.Models</span>
+- [IUserApiClient](/mod/game-api/types/assembly-api-client/iuserapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [IUserService](/mod/game-api/types/assembly-other/iuserservice) <span>Alta.Platform</span>
+- [IUsesMultipleButtons](/mod/game-api/types/alta-menus/iusesmultiplebuttons) <span>Alta.Menu</span>
+- [IUseVirtualKeyboard](/mod/game-api/types/global-i-l/iusevirtualkeyboard)
+- [IValidVersionService](/mod/game-api/types/assembly-other/ivalidversionservice) <span>Alta.Platform</span>
+- [IVivoxMutedPlayerStore](/mod/game-api/types/alta-networking/ivivoxmutedplayerstore) <span>Alta.Voice</span>
+- [IVivoxVoiceUpdatable](/mod/game-api/types/alta-networking/ivivoxvoiceupdatable) <span>Alta.Voice</span>
+- [IVoiceApiClient](/mod/game-api/types/assembly-api-client/ivoiceapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [IVoiceChat](/mod/game-api/types/alta-networking/ivoicechat) <span>Alta.Voice</span>
+- [IWindowsXRLoaderSettings](/mod/game-api/types/assembly-other/iwindowsxrloadersettings) <span>Alta.XRLoaders</span>
+- [IXrDeviceSdkController](/mod/game-api/types/global-i-l/ixrdevicesdkcontroller)
+- [IXRLoaderInitializer](/mod/game-api/types/assembly-other/ixrloaderinitializer) <span>Alta.XRLoaders</span>
+- [IXRManagerSettingsController](/mod/game-api/types/assembly-other/ixrmanagersettingscontroller) <span>Alta.XRLoaders</span>
+- [IXRSupportSystem](/mod/game-api/types/assembly-other/ixrsupportsystem) <span>Alta.XRLoaders</span>
+
+</div>
+
+## J
+
+<div className="type-index">
+
+- [JengaStackingInstruction](/mod/game-api/types/alta-items/jengastackinginstruction) <span>Alta.Inventory</span>
+- [JengaStackingInstructionSetup](/mod/game-api/types/alta-items/jengastackinginstructionsetup) <span>Alta.Inventory</span>
+- [JengaStackingInstructionSetup.Level](/mod/game-api/types/alta-items/jengastackinginstructionsetup-level) <span>Alta.Inventory</span>
+- [JoinableGroupInfo](/mod/game-api/types/assembly-api-client/joinablegroupinfo) <span>Alta.Api.Client.HighLevel</span>
+- [JoinedGroupInfo](/mod/game-api/types/assembly-api-models/joinedgroupinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [JoinedGroupListElement](/mod/game-api/types/alta-menus/joinedgrouplistelement) <span>Alta.Meta.UI.ServerManagement</span>
+- [JoinedGroupManager](/mod/game-api/types/assembly-api-client/joinedgroupmanager) <span>Alta.Api.Client.HighLevel</span>
+- [JoinedGroups](/mod/game-api/types/assembly-api-client/joinedgroups) <span>Alta.Api.Client.HighLevel</span>
+- [JoinedGroupsList](/mod/game-api/types/alta-menus/joinedgroupslist) <span>Alta.Meta.UI.ServerManagement</span>
+- [JoinedServerGameMode](/mod/game-api/types/global-i-l/joinedservergamemode)
+- [JoinedServerInfo](/mod/game-api/types/alta-networking/joinedserverinfo) <span>Alta.Networking</span>
+- [JoinResult](/mod/game-api/types/alta-networking/joinresult) <span>Alta.Networking.Servers</span>
+- [JoinServerGameModeBase](/mod/game-api/types/global-i-l/joinservergamemodebase)
+- [JoinServerPipeline](/mod/game-api/types/global-i-l/joinserverpipeline)
+- [JoinServerRequest](/mod/game-api/types/assembly-api-models/joinserverrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [JointBreakDetector](/mod/game-api/types/global-i-l/jointbreakdetector)
+- [JointBreakHandler](/mod/game-api/types/global-i-l/jointbreakhandler)
+- [JointInsert](/mod/game-api/types/alta-crafting/jointinsert) <span>Alta.Crafting</span>
+- [JointInsertType](/mod/game-api/types/alta-crafting/jointinserttype) <span>Alta.Crafting</span>
+- [JointInsertType.Create](/mod/game-api/types/alta-crafting/jointinserttype-create) <span>Alta.Crafting</span>
+- [JointPoint](/mod/game-api/types/alta-crafting/jointpoint) <span>Alta.Crafting</span>
+- [JointPointEvent](/mod/game-api/types/alta-crafting/jointpointevent) <span>Alta.Crafting</span>
+- [JointPointType](/mod/game-api/types/alta-crafting/jointpointtype) <span>Alta.Crafting</span>
+- [JointPointUnityEvent](/mod/game-api/types/alta-crafting/jointpointunityevent) <span>Alta.Crafting</span>
+- [JointSettings](/mod/game-api/types/global-i-l/jointsettings)
+- [JointSlot](/mod/game-api/types/alta-crafting/jointslot) <span>Alta.Crafting</span>
+- [JointSlotGroup](/mod/game-api/types/alta-crafting/jointslotgroup) <span>Alta.Crafting</span>
+- [JointSlotType](/mod/game-api/types/alta-crafting/jointslottype) <span>Alta.Crafting</span>
+- [JointSlotType.Create](/mod/game-api/types/alta-crafting/jointslottype-create) <span>Alta.Crafting</span>
+- [JsonAltaFormat&lt;T&gt;](/mod/game-api/types/alta-utilities/jsonaltaformat-t) <span>Alta.Utilities</span>
+- [JsonEvent](/mod/game-api/types/global-i-l/jsonevent)
+- [JsonMaxAttribute](/mod/game-api/types/alta-utilities/jsonmaxattribute) <span>Alta.Utilities</span>
+- [JsonMaxValueProvider](/mod/game-api/types/alta-utilities/jsonmaxvalueprovider) <span>Alta.Utilities</span>
+- [JsonMinAttribute](/mod/game-api/types/alta-utilities/jsonminattribute) <span>Alta.Utilities</span>
+- [JsonMinValueProvider](/mod/game-api/types/alta-utilities/jsonminvalueprovider) <span>Alta.Utilities</span>
+- [JsonPropertyFilterAttribute](/mod/game-api/types/alta-utilities/jsonpropertyfilterattribute) <span>Alta.Utilities</span>
+- [JsonRangeAttribute](/mod/game-api/types/alta-utilities/jsonrangeattribute) <span>Alta.Utilities</span>
+- [JsonRangeFloatAttribute](/mod/game-api/types/alta-utilities/jsonrangefloatattribute) <span>Alta.Utilities</span>
+- [JsonRangeFloatValueProvider](/mod/game-api/types/alta-utilities/jsonrangefloatvalueprovider) <span>Alta.Utilities</span>
+- [JsonRangeValueProvider](/mod/game-api/types/alta-utilities/jsonrangevalueprovider) <span>Alta.Utilities</span>
+- [JsonRangeValueProviderFilter&lt;T&gt;](/mod/game-api/types/alta-utilities/jsonrangevalueproviderfilter-t) <span>Alta.Utilities</span>
+- [JsonSerializerSettingsExtensions](/mod/game-api/types/alta-console/jsonserializersettingsextensions) <span>Alta.Console</span>
+- [JsonUtility](/mod/game-api/types/assembly-api-models/jsonutility) <span>Alta.Api.DataTransferModels.Utility</span>
+- [JwtSecurityTokenJsonConverter](/mod/game-api/types/assembly-api-models/jwtsecuritytokenjsonconverter) <span>Alta.Api.DataTransferModels.Converters</span>
+- [JwtTokenHandler](/mod/game-api/types/assembly-api-models/jwttokenhandler) <span>Alta.Api.DataTransferModels.Utility</span>
+- [JWTUtility](/mod/game-api/types/assembly-api-models/jwtutility) <span>Alta.Api.DataTransferModels.Converters</span>
+
+</div>
+
+## K
+
+<div className="type-index">
+
+- [KcpClientConnection](/mod/game-api/types/assembly-other/kcpclientconnection) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpClientWrapper](/mod/game-api/types/assembly-other/kcpclientwrapper) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpErrorConverter](/mod/game-api/types/assembly-other/kcperrorconverter) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpServerConnection](/mod/game-api/types/assembly-other/kcpserverconnection) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpServerWrapper](/mod/game-api/types/assembly-other/kcpserverwrapper) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpSettings](/mod/game-api/types/assembly-other/kcpsettings) <span>Alta.NetworkingTransport.Kcp</span>
+- [KcpTransport](/mod/game-api/types/assembly-other/kcptransport) <span>Alta.NetworkingTransport.Kcp</span>
+- [KeyboardEventTriggers](/mod/game-api/types/global-i-l/keyboardeventtriggers)
+- [KeyboardEventTriggers.KeyBoardTriggerHandler](/mod/game-api/types/global-i-l/keyboardeventtriggers-keyboardtriggerhandler)
+- [KeyboardEventTriggers.KeyTracker](/mod/game-api/types/global-i-l/keyboardeventtriggers-keytracker)
+- [KeyboardInputSource](/mod/game-api/types/global-i-l/keyboardinputsource)
+- [KeyboardSet](/mod/game-api/types/global-i-l/keyboardset)
+- [KeyEventHandler](/mod/game-api/types/global-i-l/keyeventhandler)
+- [KeyItem](/mod/game-api/types/alta-items/keyitem) <span>Alta.Inventory</span>
+- [KeyItemEvent](/mod/game-api/types/alta-items/keyitemevent) <span>Alta.Inventory</span>
+- [KeyUnityEvent](/mod/game-api/types/alta-items/keyunityevent) <span>Alta.Inventory</span>
+- [KilledData](/mod/game-api/types/alta-player/killeddata) <span>Alta.PlayerStates</span>
+- [KinematicForceMode](/mod/game-api/types/global-i-l/kinematicforcemode)
+- [KnobInspector](/mod/game-api/types/global-i-l/knobinspector)
+- [KnowledgeHolder](/mod/game-api/types/alta-intelligence/knowledgeholder) <span>Alta.Intelligence</span>
+
+</div>
+
+## L
+
+<div className="type-index">
+
+- [LabelAdd](/mod/game-api/types/assembly-other/labeladd)
+- [LabelledButtonWrapper](/mod/game-api/types/global-i-l/labelledbuttonwrapper)
+- [LabelledInteractPoint](/mod/game-api/types/alta-menus/labelledinteractpoint) <span>Alta.UserInterface</span>
+- [LakeGenerator](/mod/game-api/types/alta-world-generation/lakegenerator) <span>Alta.Forests</span>
+- [LandBridgeModifier](/mod/game-api/types/alta-world-generation/landbridgemodifier) <span>Alta.Forests</span>
+- [Landmark](/mod/game-api/types/alta-world/landmark) <span>Alta.Map</span>
+- [LandmarkBakingMarker](/mod/game-api/types/alta-world/landmarkbakingmarker) <span>Alta.Chunks</span>
+- [LandmarkCandidateFinder](/mod/game-api/types/alta-utilities/landmarkcandidatefinder) <span>Alta.Utilities</span>
+- [LandmarkDebugger](/mod/game-api/types/alta-world/landmarkdebugger) <span>Alta.Chunks</span>
+- [LandmarkDiscoverZone](/mod/game-api/types/alta-world/landmarkdiscoverzone) <span>Alta.Map</span>
+- [LandmarkDiscoverZoneSaveData](/mod/game-api/types/alta-world/landmarkdiscoverzonesavedata) <span>Alta.Map</span>
+- [LandmarkIcon](/mod/game-api/types/alta-world/landmarkicon) <span>Alta.Map</span>
+- [LandmarkManager](/mod/game-api/types/alta-world/landmarkmanager) <span>Alta.Map</span>
+- [LandmarkManagerSaveData](/mod/game-api/types/alta-world/landmarkmanagersavedata) <span>Alta.Map</span>
+- [LandmarkSaveData](/mod/game-api/types/alta-world/landmarksavedata) <span>Alta.Map</span>
+- [LandmarkSaveFormat](/mod/game-api/types/alta-world/landmarksaveformat) <span>Alta.Map</span>
+- [LastCombatHit](/mod/game-api/types/alta-utilities/lastcombathit) <span>Alta.Utilities.Profiling</span>
+- [LauncherApiClient](/mod/game-api/types/assembly-api-client/launcherapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [LauncherGameInfoFull](/mod/game-api/types/assembly-api-models/launchergameinfofull) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [LauncherGameInfoShort](/mod/game-api/types/assembly-api-models/launchergameinfoshort) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [LauncherSettings](/mod/game-api/types/alta-utilities/launchersettings) <span>Alta.Utilities</span>
+- [LaunchInstanceRequest](/mod/game-api/types/assembly-api-models/launchinstancerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LaunchLocalServerRequest](/mod/game-api/types/assembly-api-models/launchlocalserverrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LayerNameArrayAttribute](/mod/game-api/types/global-i-l/layernamearrayattribute)
+- [LayerValueAttribute](/mod/game-api/types/global-i-l/layervalueattribute)
+- [LayoutHelper2D](/mod/game-api/types/global-i-l/layouthelper2d)
+- [LayoutHelper2D.LayoutInfo](/mod/game-api/types/global-i-l/layouthelper2d-layoutinfo)
+- [Leaderboard](/mod/game-api/types/global-i-l/leaderboard)
+- [Leaderboard.PersonalBest](/mod/game-api/types/global-i-l/leaderboard-personalbest)
+- [LeaderboardCommandModule](/mod/game-api/types/alta-console/leaderboardcommandmodule) <span>Alta.Console.Commands</span>
+- [LeaderboardComparer](/mod/game-api/types/global-i-l/leaderboardcomparer)
+- [LeaderboardData](/mod/game-api/types/global-i-l/leaderboarddata)
+- [LeaderboardDefinition](/mod/game-api/types/global-i-l/leaderboarddefinition)
+- [LeaderboardDefinitionData](/mod/game-api/types/global-i-l/leaderboarddefinitiondata)
+- [LeaderboardDefinitionDataInfo](/mod/game-api/types/global-i-l/leaderboarddefinitiondatainfo)
+- [LeaderboardManager](/mod/game-api/types/global-i-l/leaderboardmanager)
+- [LeaderboardManager.PlayerTracker](/mod/game-api/types/global-i-l/leaderboardmanager-playertracker)
+- [LeaderboardManager.RankedPlayer](/mod/game-api/types/global-i-l/leaderboardmanager-rankedplayer)
+- [LeaderboardManagerData](/mod/game-api/types/global-i-l/leaderboardmanagerdata)
+- [LeaderboardManagerData.LeaderboardEntry](/mod/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry)
+- [LeaderboardManagerData.PlayerBestTimes](/mod/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes)
+- [LeaderboardManagerDataOld](/mod/game-api/types/global-i-l/leaderboardmanagerdataold)
+- [LeaderboardManagerDataOld.LeaderboardEntry](/mod/game-api/types/global-i-l/leaderboardmanagerdataold-leaderboardentry)
+- [LeaderboardManagerDataOld.PlayerBestTimes](/mod/game-api/types/global-i-l/leaderboardmanagerdataold-playerbesttimes)
+- [Legacy](/mod/game-api/types/global-i-l/legacy)
+- [LerpDelegate](/mod/game-api/types/alta-world/lerpdelegate) <span>Alta.Environmental.Atmosphere</span>
+- [LerpFollow](/mod/game-api/types/global-i-l/lerpfollow)
+- [LerpFollowBase&lt;T&gt;](/mod/game-api/types/global-i-l/lerpfollowbase-t)
+- [LerpingControlledFloatValue](/mod/game-api/types/alta-utilities/lerpingcontrolledfloatvalue) <span>Alta.Utilities</span>
+- [LerpingFloatGetValue](/mod/game-api/types/alta-utilities/lerpingfloatgetvalue) <span>Alta.Utilities</span>
+- [LerpingFloatValue](/mod/game-api/types/alta-utilities/lerpingfloatvalue) <span>Alta.Utilities</span>
+- [LerpingValue&lt;T&gt;](/mod/game-api/types/alta-utilities/lerpingvalue-t) <span>Alta.Utilities</span>
+- [LerpModifier](/mod/game-api/types/global-i-l/lerpmodifier)
+- [LetterMesh](/mod/game-api/types/global-i-l/lettermesh)
+- [LevelEffectSize](/mod/game-api/types/alta-stats-effects/leveleffectsize) <span>Alta.StatSystem</span>
+- [LevelSelectCaveTeleporter](/mod/game-api/types/alta-world-generation/levelselectcaveteleporter) <span>Alta.Caves</span>
+- [LevelSelector](/mod/game-api/types/alta-world-generation/levelselector) <span>Alta.Caves</span>
+- [LevelStatModifier](/mod/game-api/types/alta-stats-effects/levelstatmodifier) <span>Alta.StatSystem</span>
+- [LevelStatModifierData](/mod/game-api/types/alta-stats-effects/levelstatmodifierdata) <span>Alta.StatSystem</span>
+- [Lever](/mod/game-api/types/global-i-l/lever)
+- [LeverToEvents](/mod/game-api/types/global-i-l/levertoevents)
+- [Lifetime](/mod/game-api/types/alta-intelligence/lifetime) <span>Alta.Intelligence</span>
+- [LifeTimeEffect](/mod/game-api/types/global-i-l/lifetimeeffect)
+- [LifetimeOperation](/mod/game-api/types/alta-intelligence/lifetimeoperation) <span>Alta.Intelligence</span>
+- [LightBeamSkill](/mod/game-api/types/alta-player/lightbeamskill) <span>Alta.Progression.Skills</span>
+- [LightBeamSkill.Create](/mod/game-api/types/alta-player/lightbeamskill-create) <span>Alta.Progression.Skills</span>
+- [LightCluster](/mod/game-api/types/global-i-l/lightcluster)
+- [LightFader](/mod/game-api/types/global-i-l/lightfader)
+- [LightFlicker](/mod/game-api/types/global-i-l/lightflicker)
+- [LightHands](/mod/game-api/types/global-i-l/lighthands)
+- [LightHands.Modes](/mod/game-api/types/global-i-l/lighthands-modes)
+- [LightModelTester](/mod/game-api/types/global-i-l/lightmodeltester)
+- [LightSettings](/mod/game-api/types/global-i-l/lightsettings)
+- [LightSorter&lt;T&gt;](/mod/game-api/types/alta-world/lightsorter-t) <span>Alta.Lighting</span>
+- [Limit](/mod/game-api/types/global-i-l/limit)
+- [LimitFrameRate](/mod/game-api/types/global-i-l/limitframerate)
+- [Line](/mod/game-api/types/alta-utilities/line) <span>Alta.Utilities</span>
+- [LinearHeatArea](/mod/game-api/types/alta-stats-effects/linearheatarea) <span>Alta.Heat</span>
+- [LinearPartCloner](/mod/game-api/types/global-i-l/linearpartcloner)
+- [LinearPartClonerData](/mod/game-api/types/global-i-l/linearpartclonerdata)
+- [LinearPartClonerPart](/mod/game-api/types/global-i-l/linearpartclonerpart)
+- [LineDraw](/mod/game-api/types/alta-world-generation/linedraw) <span>Alta.Caves.PluginParts</span>
+- [LinkAccountRequest](/mod/game-api/types/assembly-api-models/linkaccountrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LinkedAccountInfo](/mod/game-api/types/assembly-api-models/linkedaccountinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [LinkedMesh](/mod/game-api/types/global-i-l/linkedmesh)
+- [LinkerPart](/mod/game-api/types/global-i-l/linkerpart)
+- [LinuxServerConsole](/mod/game-api/types/global-i-l/linuxserverconsole)
+- [LiquidChunkVisuals](/mod/game-api/types/alta-crafting/liquidchunkvisuals) <span>Alta.Cooking</span>
+- [LiquidChunkVisuals.LiquidChunkData](/mod/game-api/types/alta-crafting/liquidchunkvisuals-liquidchunkdata) <span>Alta.Cooking</span>
+- [LiquidContainer](/mod/game-api/types/alta-stats-effects/liquidcontainer) <span>Alta.Liquid</span>
+- [LiquidContainerAmountChangedHandler](/mod/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler) <span>Alta.Liquid</span>
+- [LiquidContainerHandler](/mod/game-api/types/alta-stats-effects/liquidcontainerhandler) <span>Alta.Liquid</span>
+- [LiquidContainerLid](/mod/game-api/types/alta-stats-effects/liquidcontainerlid) <span>Alta.Liquid</span>
+- [LiquidContainerSaveData](/mod/game-api/types/alta-stats-effects/liquidcontainersavedata) <span>Alta.Liquid</span>
+- [LiquidContainerSaveData.CustomData](/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata) <span>Alta.Liquid</span>
+- [LiquidContainerSaveData.Effect](/mod/game-api/types/alta-stats-effects/liquidcontainersavedata-effect) <span>Alta.Liquid</span>
+- [LiquidContainerTrigger](/mod/game-api/types/alta-stats-effects/liquidcontainertrigger) <span>Alta.Liquid</span>
+- [LiquidContent](/mod/game-api/types/alta-stats-effects/liquidcontent) <span>Alta.Liquid</span>
+- [LiquidData](/mod/game-api/types/alta-stats-effects/liquiddata) <span>Alta.Liquid</span>
+- [LiquidDataEventHandler](/mod/game-api/types/alta-stats-effects/liquiddataeventhandler) <span>Alta.Liquid</span>
+- [LiquidDefinition](/mod/game-api/types/alta-stats-effects/liquiddefinition) <span>Alta.Liquid</span>
+- [LiquidFillFilter](/mod/game-api/types/alta-stats-effects/liquidfillfilter) <span>Alta.Liquid</span>
+- [LiquidFoamMaterialCreator](/mod/game-api/types/alta-stats-effects/liquidfoammaterialcreator) <span>Alta.Liquid</span>
+- [LiquidGradualDrinker](/mod/game-api/types/global-i-l/liquidgradualdrinker)
+- [LiquidGravity](/mod/game-api/types/alta-stats-effects/liquidgravity) <span>Alta.Liquid</span>
+- [LiquidGravityAdjustment](/mod/game-api/types/alta-stats-effects/liquidgravityadjustment) <span>Alta.Liquid</span>
+- [LiquidHeatAreaController](/mod/game-api/types/alta-stats-effects/liquidheatareacontroller) <span>Alta.Liquid</span>
+- [LiquidParticleMarker](/mod/game-api/types/alta-stats-effects/liquidparticlemarker) <span>Alta.Liquid</span>
+- [LiquidParticlesRendererColorer](/mod/game-api/types/global-i-l/liquidparticlesrenderercolorer)
+- [LiquidPouringMaterialCreator](/mod/game-api/types/alta-stats-effects/liquidpouringmaterialcreator) <span>Alta.Liquid</span>
+- [LiquidPouringParticlesMarker](/mod/game-api/types/alta-stats-effects/liquidpouringparticlesmarker) <span>Alta.Liquid</span>
+- [LiquidSettings](/mod/game-api/types/alta-stats-effects/liquidsettings) <span>Alta.Liquid</span>
+- [LiquidSettings.Create](/mod/game-api/types/alta-stats-effects/liquidsettings-create) <span>Alta.Liquid</span>
+- [LiquidStencilShaderController](/mod/game-api/types/alta-stats-effects/liquidstencilshadercontroller) <span>Alta.Liquid</span>
+- [LiquidSurfaceMaterialCreator](/mod/game-api/types/alta-stats-effects/liquidsurfacematerialcreator) <span>Alta.Liquid</span>
+- [LiquidSurfaceVisual](/mod/game-api/types/alta-stats-effects/liquidsurfacevisual) <span>Alta.Liquid</span>
+- [LiquidTest](/mod/game-api/types/global-i-l/liquidtest)
+- [LiquidTransition](/mod/game-api/types/alta-stats-effects/liquidtransition) <span>Alta.Liquid</span>
+- [LiquidTypeChangedHandler](/mod/game-api/types/alta-stats-effects/liquidtypechangedhandler) <span>Alta.Liquid</span>
+- [LiquidVisualChunkDefinition](/mod/game-api/types/alta-crafting/liquidvisualchunkdefinition) <span>Alta.Cooking</span>
+- [LiquidVisualData](/mod/game-api/types/alta-stats-effects/liquidvisualdata) <span>Alta.Liquid</span>
+- [ListElement](/mod/game-api/types/alta-menus/listelement) <span>Alta.Meta.UI</span>
+- [ListElementWith2Buttons](/mod/game-api/types/alta-menus/listelementwith2buttons) <span>Alta.Meta.UI.ServerManagement</span>
+- [ListElementWithButton](/mod/game-api/types/alta-menus/listelementwithbutton) <span>Alta.Meta.UI</span>
+- [ListElementWithButtonAndExtraText](/mod/game-api/types/alta-menus/listelementwithbuttonandextratext) <span>Alta.Meta.UI</span>
+- [ListElementWithData&lt;TData&gt;](/mod/game-api/types/alta-menus/listelementwithdata-tdata) <span>Alta.Meta.UI</span>
+- [ListenedList&lt;T&gt;](/mod/game-api/types/alta-utilities/listenedlist-t) <span>Alta.Utilities</span>
+- [ListenerClaimer](/mod/game-api/types/global-i-l/listenerclaimer)
+- [ListItemChangedHandler&lt;T&gt;](/mod/game-api/types/alta-utilities/listitemchangedhandler-t) <span>Alta.Utilities</span>
+- [LiveDataDisplayBase](/mod/game-api/types/alta-utilities/livedatadisplaybase) <span>Alta.Utilities.Profiling</span>
+- [LiveDataDisplayCollection](/mod/game-api/types/alta-utilities/livedatadisplaycollection) <span>Alta.Utilities.Profiling</span>
+- [LiveDataDisplayView](/mod/game-api/types/alta-utilities/livedatadisplayview) <span>Alta.Utilities.Profiling</span>
+- [LlapiMetric](/mod/game-api/types/assembly-other/llapimetric) <span>Alta.NetworkingTransport.Parallel</span>
+- [LoadingLogger](/mod/game-api/types/global-i-l/loadinglogger)
+- [LoadingObject](/mod/game-api/types/global-i-l/loadingobject)
+- [LoadingOperation](/mod/game-api/types/global-i-l/loadingoperation)
+- [LoadingOperation.status](/mod/game-api/types/global-i-l/loadingoperation-status)
+- [LoadingScreenFactory](/mod/game-api/types/global-i-l/loadingscreenfactory)
+- [LoadingStatus](/mod/game-api/types/game-other-namespaces/loadingstatus) <span>ATT.MicroTutorial</span>
+- [LoadingUI](/mod/game-api/types/alta-menus/loadingui) <span>Alta.Meta.UI</span>
+- [LoadScenes](/mod/game-api/types/global-i-l/loadscenes)
+- [LocalLinkProvider](/mod/game-api/types/global-i-l/locallinkprovider)
+- [LocalMoveTest](/mod/game-api/types/global-i-l/localmovetest)
+- [LocalMoveTest.Type](/mod/game-api/types/global-i-l/localmovetest-type)
+- [LocalNetworkScene](/mod/game-api/types/global-i-l/localnetworkscene)
+- [LocalNetworkScene.InitializeOnAwake](/mod/game-api/types/global-i-l/localnetworkscene-initializeonawake)
+- [LocalPlatformProvider](/mod/game-api/types/assembly-other/localplatformprovider) <span>Alta.PlatformInformation</span>
+- [LocalPlayer](/mod/game-api/types/global-i-l/localplayer)
+- [LocalPlayerAdvertisingTrophy](/mod/game-api/types/global-i-l/localplayeradvertisingtrophy)
+- [LocalPlayerHeadRenderer](/mod/game-api/types/alta-customization/localplayerheadrenderer) <span>Alta.ScreenshotCamera</span>
+- [LocalPlayerInteractionEvents](/mod/game-api/types/global-i-l/localplayerinteractionevents)
+- [LocalServerAccess](/mod/game-api/types/assembly-api-client/localserveraccess) <span>Alta.Api.Client.HighLevel</span>
+- [LocalSpawnManager](/mod/game-api/types/global-i-l/localspawnmanager)
+- [LocalTestGameMode](/mod/game-api/types/global-i-l/localtestgamemode)
+- [LocalTestStarter](/mod/game-api/types/global-i-l/localteststarter)
+- [LocalWindManager](/mod/game-api/types/alta-world/localwindmanager) <span>Alta.Environmental.Vegetation</span>
+- [LocationChunk](/mod/game-api/types/alta-world/locationchunk) <span>Alta.Chunks</span>
+- [LocationChunkHelper](/mod/game-api/types/alta-world/locationchunkhelper) <span>Alta.Chunks</span>
+- [Lock](/mod/game-api/types/alta-items/lock) <span>Alta.Inventory</span>
+- [LockableEvent](/mod/game-api/types/alta-items/lockableevent) <span>Alta.Inventory</span>
+- [LockableHinge](/mod/game-api/types/alta-items/lockablehinge) <span>Alta.Inventory</span>
+- [LockableHingeSaveData](/mod/game-api/types/alta-items/lockablehingesavedata) <span>Alta.Inventory</span>
+- [LockableUnityEvent](/mod/game-api/types/alta-items/lockableunityevent) <span>Alta.Inventory</span>
+- [LockedRotationHandle](/mod/game-api/types/global-i-l/lockedrotationhandle)
+- [LockEffectUnityEvent](/mod/game-api/types/alta-items/lockeffectunityevent) <span>Alta.Inventory</span>
+- [LockEvent](/mod/game-api/types/alta-items/lockevent) <span>Alta.Inventory</span>
+- [LockItemEvent](/mod/game-api/types/alta-items/lockitemevent) <span>Alta.Inventory</span>
+- [LockMode](/mod/game-api/types/alta-world-generation/lockmode) <span>Alta.PAGaC</span>
+- [LockUnityEvent](/mod/game-api/types/alta-items/lockunityevent) <span>Alta.Inventory</span>
+- [LocomotionController](/mod/game-api/types/global-i-l/locomotioncontroller)
+- [LocomotionController.TeleportArgument](/mod/game-api/types/global-i-l/locomotioncontroller-teleportargument)
+- [LocomotionFunction](/mod/game-api/types/global-i-l/locomotionfunction)
+- [LocomotionlessPlayerController](/mod/game-api/types/global-i-l/locomotionlessplayercontroller)
+- [LocomotionModifier](/mod/game-api/types/global-i-l/locomotionmodifier)
+- [LocomotionModifierAction](/mod/game-api/types/global-i-l/locomotionmodifieraction)
+- [LocomotionModifierCheck](/mod/game-api/types/global-i-l/locomotionmodifiercheck)
+- [LocomotionModifierVolumeTrigger](/mod/game-api/types/global-i-l/locomotionmodifiervolumetrigger)
+- [LocomotionStatSettings](/mod/game-api/types/global-i-l/locomotionstatsettings)
+- [LocomotionStyle](/mod/game-api/types/alta-player/locomotionstyle) <span>Alta.Character</span>
+- [LODBaker](/mod/game-api/types/global-i-l/lodbaker)
+- [LODBaker.MeshBase](/mod/game-api/types/global-i-l/lodbaker-meshbase)
+- [LODChange](/mod/game-api/types/global-i-l/lodchange)
+- [LODChange.Create](/mod/game-api/types/global-i-l/lodchange-create)
+- [LODChange.LODLog](/mod/game-api/types/global-i-l/lodchange-lodlog)
+- [LODGroupWrapper](/mod/game-api/types/global-i-l/lodgroupwrapper)
+- [LodMeshJoiner](/mod/game-api/types/global-i-l/lodmeshjoiner)
+- [LoggedInOnlyAttribute](/mod/game-api/types/alta-console/loggedinonlyattribute) <span>Alta.Console</span>
+- [LoggedInTool](/mod/game-api/types/global-i-l/loggedintool)
+- [LoggedInWindow](/mod/game-api/types/alta-menus/loggedinwindow) <span>Alta.Meta.UI.ServerManagement</span>
+- [LoggingCommandModule](/mod/game-api/types/alta-console/loggingcommandmodule) <span>Alta.Console.Commands</span>
+- [LoggingLevel](/mod/game-api/types/global-i-l/logginglevel)
+- [LoggingSetup](/mod/game-api/types/global-i-l/loggingsetup)
+- [LoggingWatch](/mod/game-api/types/alta-utilities/loggingwatch) <span>Alta.Utilities</span>
+- [LogHandler](/mod/game-api/types/alta-console/loghandler) <span>Alta.Logging.Targets</span>
+- [LogicBoolReceiver](/mod/game-api/types/alta-items/logicboolreceiver) <span>Alta.Logic</span>
+- [LogicBoolReceiverData](/mod/game-api/types/alta-items/logicboolreceiverdata) <span>Alta.Logic</span>
+- [LogicBoolSaveData](/mod/game-api/types/alta-items/logicboolsavedata) <span>Alta.Logic</span>
+- [LogicBoolSaveData1](/mod/game-api/types/alta-items/logicboolsavedata1) <span>Alta.Logic</span>
+- [LogicBoolSender](/mod/game-api/types/alta-items/logicboolsender) <span>Alta.Logic</span>
+- [LogicChannel](/mod/game-api/types/alta-items/logicchannel) <span>Alta.Logic</span>
+- [LogicDisplay](/mod/game-api/types/global-i-l/logicdisplay)
+- [LogicFloatChangeOnBool](/mod/game-api/types/alta-items/logicfloatchangeonbool) <span>Alta.Logic</span>
+- [LogicFloatChangeOnBoolSaveData](/mod/game-api/types/alta-items/logicfloatchangeonboolsavedata) <span>Alta.Logic</span>
+- [LogicFloatChangeOnBoolSaveData1](/mod/game-api/types/alta-items/logicfloatchangeonboolsavedata1) <span>Alta.Logic</span>
+- [LogicFloatChangeOnBoolSaveData2](/mod/game-api/types/alta-items/logicfloatchangeonboolsavedata2) <span>Alta.Logic</span>
+- [LogicFloatRangeReceiver](/mod/game-api/types/alta-items/logicfloatrangereceiver) <span>Alta.Logic</span>
+- [LogicFloatRangeSaveData](/mod/game-api/types/alta-items/logicfloatrangesavedata) <span>Alta.Logic</span>
+- [LogicFloatReceiver](/mod/game-api/types/alta-items/logicfloatreceiver) <span>Alta.Logic</span>
+- [LogicFloatReceiverData](/mod/game-api/types/alta-items/logicfloatreceiverdata) <span>Alta.Logic</span>
+- [LogicFloatReset](/mod/game-api/types/alta-items/logicfloatreset) <span>Alta.Logic</span>
+- [LogicFloatResetSaveData](/mod/game-api/types/alta-items/logicfloatresetsavedata) <span>Alta.Logic</span>
+- [LogicFloatSaveData](/mod/game-api/types/alta-items/logicfloatsavedata) <span>Alta.Logic</span>
+- [LogicFloatSender](/mod/game-api/types/alta-items/logicfloatsender) <span>Alta.Logic</span>
+- [LogicFloatThresholdReceiver](/mod/game-api/types/alta-items/logicfloatthresholdreceiver) <span>Alta.Logic</span>
+- [LogicFloatThresholdSaveData](/mod/game-api/types/alta-items/logicfloatthresholdsavedata) <span>Alta.Logic</span>
+- [LogicGateReceiver](/mod/game-api/types/alta-items/logicgatereceiver) <span>Alta.Logic</span>
+- [LogicGateSaveData](/mod/game-api/types/alta-items/logicgatesavedata) <span>Alta.Logic</span>
+- [LogicGateSaveData1](/mod/game-api/types/alta-items/logicgatesavedata1) <span>Alta.Logic</span>
+- [LogicIntRangeReceiver](/mod/game-api/types/alta-items/logicintrangereceiver) <span>Alta.Logic</span>
+- [LogicIntRangeSaveData](/mod/game-api/types/alta-items/logicintrangesavedata) <span>Alta.Logic</span>
+- [LogicIntReceiver](/mod/game-api/types/alta-items/logicintreceiver) <span>Alta.Logic</span>
+- [LogicIntReceiverData](/mod/game-api/types/alta-items/logicintreceiverdata) <span>Alta.Logic</span>
+- [LogicIntSaveData](/mod/game-api/types/alta-items/logicintsavedata) <span>Alta.Logic</span>
+- [LogicIntSender](/mod/game-api/types/alta-items/logicintsender) <span>Alta.Logic</span>
+- [LogicIntSet](/mod/game-api/types/global-i-l/logicintset)
+- [LogicIntSetData](/mod/game-api/types/global-i-l/logicintsetdata)
+- [LogicIntThresholdReceiver](/mod/game-api/types/alta-items/logicintthresholdreceiver) <span>Alta.Logic</span>
+- [LogicIntThresholdSaveData](/mod/game-api/types/alta-items/logicintthresholdsavedata) <span>Alta.Logic</span>
+- [LogicIntToBool](/mod/game-api/types/alta-items/logicinttobool) <span>Alta.Logic</span>
+- [LogicIntToBoolData](/mod/game-api/types/alta-items/logicinttobooldata) <span>Alta.Logic</span>
+- [LogicManagerData](/mod/game-api/types/alta-items/logicmanagerdata) <span>Alta.Logic</span>
+- [LogicManagerSet](/mod/game-api/types/alta-items/logicmanagerset) <span>Alta.Logic</span>
+- [LogicOperationType](/mod/game-api/types/alta-items/logicoperationtype) <span>Alta.Logic</span>
+- [LogicReset](/mod/game-api/types/global-i-l/logicreset)
+- [LogicReset.BoolSenders](/mod/game-api/types/global-i-l/logicreset-boolsenders)
+- [LogicResetSaveData](/mod/game-api/types/global-i-l/logicresetsavedata)
+- [LogicSaveData](/mod/game-api/types/alta-items/logicsavedata) <span>Alta.Logic</span>
+- [LogicSumFloatReceiver](/mod/game-api/types/alta-items/logicsumfloatreceiver) <span>Alta.Logic</span>
+- [LogicSumFloatSaveData](/mod/game-api/types/alta-items/logicsumfloatsavedata) <span>Alta.Logic</span>
+- [LogicSumIntReceiver](/mod/game-api/types/alta-items/logicsumintreceiver) <span>Alta.Logic</span>
+- [LogicSumIntSaveData](/mod/game-api/types/alta-items/logicsumintsavedata) <span>Alta.Logic</span>
+- [LogicValueReceiver&lt;TSenderInput&gt;](/mod/game-api/types/alta-items/logicvaluereceiver-tsenderinput) <span>Alta.Logic</span>
+- [LogicValueReceiverArray&lt;TSenderInput&gt;](/mod/game-api/types/alta-items/logicvaluereceiverarray-tsenderinput) <span>Alta.Logic</span>
+- [LogicValueSender](/mod/game-api/types/alta-items/logicvaluesender) <span>Alta.Logic</span>
+- [LogicValueSender&lt;TData&gt;](/mod/game-api/types/alta-items/logicvaluesender-tdata) <span>Alta.Logic</span>
+- [LogicVector3Receiver](/mod/game-api/types/alta-items/logicvector3receiver) <span>Alta.Logic</span>
+- [LogicVector3ReceiverData](/mod/game-api/types/alta-items/logicvector3receiverdata) <span>Alta.Logic</span>
+- [LogicVector3SaveData](/mod/game-api/types/alta-items/logicvector3savedata) <span>Alta.Logic</span>
+- [LogicVector3Sender](/mod/game-api/types/alta-items/logicvector3sender) <span>Alta.Logic</span>
+- [LoginAndRegisterHelper](/mod/game-api/types/global-i-l/loginandregisterhelper)
+- [LoginCommandModule](/mod/game-api/types/alta-console/logincommandmodule) <span>Alta.Console.Commands</span>
+- [LoginCredentials](/mod/game-api/types/assembly-api-client/logincredentials) <span>Alta.Api.Client</span>
+- [LoginCredentialsChangedHandler](/mod/game-api/types/assembly-api-client/logincredentialschangedhandler) <span>Alta.Api.Client.LowLevel</span>
+- [LoginManager](/mod/game-api/types/global-i-l/loginmanager)
+- [LoginPreferences](/mod/game-api/types/assembly-other/loginpreferences) <span>Alta.Authentication</span>
+- [LoginRequest](/mod/game-api/types/assembly-api-models/loginrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LoginRequestBase](/mod/game-api/types/assembly-api-models/loginrequestbase) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LoginScreen](/mod/game-api/types/global-i-l/loginscreen)
+- [LoginScreenManager](/mod/game-api/types/global-i-l/loginscreenmanager)
+- [LoginUtilities](/mod/game-api/types/assembly-api-client/loginutilities) <span>Alta.Api.Client.Utility</span>
+- [LoginViaLinkedAccountRequest](/mod/game-api/types/assembly-api-models/loginvialinkedaccountrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LoginWithEmailRequest](/mod/game-api/types/assembly-api-models/loginwithemailrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LogoutAction](/mod/game-api/types/global-i-l/logoutaction)
+- [LogoutCommandModule](/mod/game-api/types/alta-console/logoutcommandmodule) <span>Alta.Console.Commands</span>
+- [LogoutRequest](/mod/game-api/types/assembly-api-models/logoutrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [LogRange](/mod/game-api/types/alta-world-generation/logrange) <span>Alta.Caves.PluginParts</span>
+- [LogRangeInstance](/mod/game-api/types/alta-world-generation/lograngeinstance) <span>Alta.Caves.PluginParts</span>
+- [LogsUploader](/mod/game-api/types/global-i-l/logsuploader)
+- [LongHoldInteractable](/mod/game-api/types/global-i-l/longholdinteractable)
+- [LongHoldInteractable.InteractArguments](/mod/game-api/types/global-i-l/longholdinteractable-interactarguments)
+- [LookAtPlayer](/mod/game-api/types/global-i-l/lookatplayer)
+- [LoopingSoundEffect](/mod/game-api/types/global-i-l/loopingsoundeffect)
+- [LootHelper](/mod/game-api/types/alta-world-generation/loothelper) <span>Alta.Loot</span>
+- [LootModule](/mod/game-api/types/alta-world-generation/lootmodule) <span>Alta.Loot</span>
+- [LootModuleSaveData](/mod/game-api/types/alta-world-generation/lootmodulesavedata) <span>Alta.Loot</span>
+- [LootModuleSaveData1](/mod/game-api/types/alta-world-generation/lootmodulesavedata1) <span>Alta.Loot</span>
+- [LootModuleSaveData2](/mod/game-api/types/alta-world-generation/lootmodulesavedata2) <span>Alta.Loot</span>
+- [LootModuleSaveData3](/mod/game-api/types/alta-world-generation/lootmodulesavedata3) <span>Alta.Loot</span>
+- [LootModuleSaveData4](/mod/game-api/types/alta-world-generation/lootmodulesavedata4) <span>Alta.Loot</span>
+- [LootTable](/mod/game-api/types/alta-world-generation/loottable) <span>Alta.Loot</span>
+- [LootTable.Create](/mod/game-api/types/alta-world-generation/loottable-create) <span>Alta.Loot</span>
+- [LootTable.Entry](/mod/game-api/types/alta-world-generation/loottable-entry) <span>Alta.Loot</span>
+- [LootTable.FestivityList](/mod/game-api/types/alta-world-generation/loottable-festivitylist) <span>Alta.Loot</span>
+- [LootTable.RarityList](/mod/game-api/types/alta-world-generation/loottable-raritylist) <span>Alta.Loot</span>
+- [LootValue](/mod/game-api/types/global-i-l/lootvalue)
+- [LowLevelApiClient](/mod/game-api/types/assembly-api-client/lowlevelapiclient) <span>Alta.Api.Client.LowLevel</span>
+
+</div>
+
+## M
+
+<div className="type-index">
+
+- [MainMenuControllerSpawner](/mod/game-api/types/global-m-o/mainmenucontrollerspawner)
+- [MainMenuCraft](/mod/game-api/types/global-m-o/mainmenucraft)
+- [MainMenuCustomizationInterface](/mod/game-api/types/alta-customization/mainmenucustomizationinterface) <span>Alta.Customization</span>
+- [MainMenuDesktopController](/mod/game-api/types/global-m-o/mainmenudesktopcontroller)
+- [MainMenuLogger](/mod/game-api/types/global-m-o/mainmenulogger)
+- [MainMenuPlayerController](/mod/game-api/types/global-m-o/mainmenuplayercontroller)
+- [MainMenuPlayerLogger](/mod/game-api/types/global-m-o/mainmenuplayerlogger)
+- [MainMenuPrefabSpawner](/mod/game-api/types/global-m-o/mainmenuprefabspawner)
+- [MainMenuShopInterface](/mod/game-api/types/alta-customization/mainmenushopinterface) <span>Alta.Customization</span>
+- [MainMenuShopItem](/mod/game-api/types/alta-customization/mainmenushopitem) <span>Alta.Customization</span>
+- [MainMenuTarget](/mod/game-api/types/alta-console/mainmenutarget) <span>Alta.Logging.Targets</span>
+- [MainMenuVrLifetimeScope](/mod/game-api/types/assembly-other/mainmenuvrlifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [MaintenanceCommandModule](/mod/game-api/types/alta-console/maintenancecommandmodule) <span>Alta.Console.Commands</span>
+- [MainThreadJobHandler](/mod/game-api/types/global-m-o/mainthreadjobhandler)
+- [MainThreadJobHandler.Entry](/mod/game-api/types/global-m-o/mainthreadjobhandler-entry)
+- [MainThreadJobHandler.InternalEntry](/mod/game-api/types/global-m-o/mainthreadjobhandler-internalentry)
+- [ManualCondition](/mod/game-api/types/game-other-namespaces/manualcondition) <span>Features.Gameplay.GameConditions</span>
+- [ManualConditionSaveData](/mod/game-api/types/game-other-namespaces/manualconditionsavedata) <span>Features.Gameplay.GameConditions</span>
+- [Map](/mod/game-api/types/alta-world/map) <span>Alta.Map</span>
+- [MapBoard](/mod/game-api/types/alta-world/mapboard) <span>Alta.Map</span>
+- [MapBoardDirectRenderer](/mod/game-api/types/alta-world/mapboarddirectrenderer) <span>Alta.Map</span>
+- [MapBoardDirectRenderer.MapElement](/mod/game-api/types/alta-world/mapboarddirectrenderer-mapelement) <span>Alta.Map</span>
+- [MapBoardRenderer](/mod/game-api/types/alta-world/mapboardrenderer) <span>Alta.Map</span>
+- [MapBoardSaveData1](/mod/game-api/types/alta-world/mapboardsavedata1) <span>Alta.Map</span>
+- [MapChunk](/mod/game-api/types/alta-world-generation/mapchunk) <span>Alta.Caves</span>
+- [MapChunkDisplay](/mod/game-api/types/alta-world-generation/mapchunkdisplay) <span>Alta.Caves</span>
+- [MapChunkLayer](/mod/game-api/types/alta-world-generation/mapchunklayer) <span>Alta.Caves</span>
+- [MapChunkLayer.Value](/mod/game-api/types/alta-world-generation/mapchunklayer-value) <span>Alta.Caves</span>
+- [MapGeneratorPart](/mod/game-api/types/alta-world-generation/mapgeneratorpart) <span>Alta.Caves.PluginParts</span>
+- [MapGeneratorPartInstance&lt;T&gt;](/mod/game-api/types/alta-world-generation/mapgeneratorpartinstance-t) <span>Alta.Caves.PluginParts</span>
+- [MapLandmarkDisplay](/mod/game-api/types/alta-world/maplandmarkdisplay) <span>Alta.Map</span>
+- [MapManager](/mod/game-api/types/alta-world/mapmanager) <span>Alta.Map</span>
+- [MapManager.MapPieceIdentifier](/mod/game-api/types/alta-world/mapmanager-mappieceidentifier) <span>Alta.Map</span>
+- [MapMaskPiece](/mod/game-api/types/global-m-o/mapmaskpiece)
+- [MapPiece](/mod/game-api/types/alta-world/mappiece) <span>Alta.Map</span>
+- [MapSaveFormat](/mod/game-api/types/alta-world/mapsaveformat) <span>Alta.Map</span>
+- [MarchingCubes](/mod/game-api/types/global-m-o/marchingcubes)
+- [MarchingCubes.GridCell](/mod/game-api/types/global-m-o/marchingcubes-gridcell)
+- [MarchingCubes.Point4](/mod/game-api/types/global-m-o/marchingcubes-point4)
+- [MarchingCubes.Triangle](/mod/game-api/types/global-m-o/marchingcubes-triangle)
+- [MarchingCubesChunkDisplay](/mod/game-api/types/alta-world-generation/marchingcubeschunkdisplay) <span>Alta.Caves</span>
+- [MarchingCubesPlugin](/mod/game-api/types/alta-world-generation/marchingcubesplugin) <span>Alta.Caves</span>
+- [MarchingCubesPlugin.Create](/mod/game-api/types/alta-world-generation/marchingcubesplugin-create) <span>Alta.Caves</span>
+- [MarchingCubesPlugin.GeneratedMesh](/mod/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh) <span>Alta.Caves</span>
+- [MarchingCubesTest](/mod/game-api/types/global-m-o/marchingcubestest)
+- [MarkerInfo](/mod/game-api/types/alta-world/markerinfo) <span>Alta.Map</span>
+- [Mask](/mod/game-api/types/alta-world-generation/mask) <span>Alta.Caves.PluginParts</span>
+- [MaskInstance](/mod/game-api/types/alta-world-generation/maskinstance) <span>Alta.Caves.PluginParts</span>
+- [MassLODSetter](/mod/game-api/types/global-m-o/masslodsetter)
+- [MasterHand](/mod/game-api/types/alta-player/masterhand) <span>Alta.Character</span>
+- [MasterTerrain](/mod/game-api/types/global-m-o/masterterrain)
+- [MasterTerrainChunkEffectData](/mod/game-api/types/alta-world/masterterrainchunkeffectdata) <span>Alta.Chunks</span>
+- [MatchMakingClient](/mod/game-api/types/assembly-api-client/matchmakingclient) <span>Alta.Api.Client.HighLevel</span>
+- [MatchMakingRequirements](/mod/game-api/types/assembly-api-models/matchmakingrequirements) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [MaterialCreator&lt;T&gt;](/mod/game-api/types/alta-stats-effects/materialcreator-t) <span>Alta.Liquid</span>
+- [MaterialGroup](/mod/game-api/types/global-m-o/materialgroup)
+- [MaterialInstance](/mod/game-api/types/alta-utilities/materialinstance) <span>Alta.Rendering</span>
+- [MaterialInstanceGroup](/mod/game-api/types/alta-utilities/materialinstancegroup) <span>Alta.Rendering</span>
+- [MaterialInstantiator](/mod/game-api/types/global-m-o/materialinstantiator)
+- [MaterialLOD](/mod/game-api/types/global-m-o/materiallod)
+- [MaterialProperty&lt;T&gt;](/mod/game-api/types/alta-utilities/materialproperty-t) <span>Alta.Utilities</span>
+- [MaterialPropertyBlockSettings&lt;T&gt;](/mod/game-api/types/alta-utilities/materialpropertyblocksettings-t) <span>Alta.Utilities</span>
+- [MaterialRect](/mod/game-api/types/alta-utilities/materialrect) <span>Alta.Utilities.Atlas</span>
+- [MaterialSwapper](/mod/game-api/types/global-m-o/materialswapper)
+- [MaterialToggler](/mod/game-api/types/global-m-o/materialtoggler)
+- [MaterialToggler.RendererToMaterial](/mod/game-api/types/global-m-o/materialtoggler-renderertomaterial)
+- [Math2d](/mod/game-api/types/alta-utilities/math2d) <span>Alta</span>
+- [MathfOperation](/mod/game-api/types/alta-utilities/mathfoperation) <span>Alta</span>
+- [MaxAttribute](/mod/game-api/types/assembly-other/maxattribute)
+- [MaxLimitPooledObjectPool](/mod/game-api/types/global-m-o/maxlimitpooledobjectpool)
+- [MaxStatDefinition](/mod/game-api/types/alta-stats-effects/maxstatdefinition) <span>Alta.StatSystem</span>
+- [MaxStatDefinition.Create](/mod/game-api/types/alta-stats-effects/maxstatdefinition-create) <span>Alta.StatSystem</span>
+- [MaxValueTask](/mod/game-api/types/global-m-o/maxvaluetask)
+- [MaxValueTaskArgument](/mod/game-api/types/global-m-o/maxvaluetaskargument)
+- [MeasureDistance](/mod/game-api/types/global-m-o/measuredistance)
+- [Mechanism](/mod/game-api/types/alta-items/mechanism) <span>Alta.Mechanisms</span>
+- [MediumBird](/mod/game-api/types/global-m-o/mediumbird)
+- [MeltingHeatPoint](/mod/game-api/types/alta-crafting/meltingheatpoint) <span>Alta.Blacksmithing</span>
+- [MeltingModel](/mod/game-api/types/alta-crafting/meltingmodel) <span>Alta.Blacksmithing</span>
+- [MeltingModelAllowed](/mod/game-api/types/alta-crafting/meltingmodelallowed) <span>Alta.Blacksmithing</span>
+- [MeltingModelModifier](/mod/game-api/types/alta-crafting/meltingmodelmodifier) <span>Alta.Blacksmithing</span>
+- [MeltingModelPart](/mod/game-api/types/alta-crafting/meltingmodelpart) <span>Alta.Blacksmithing</span>
+- [MeltingModelYield](/mod/game-api/types/alta-crafting/meltingmodelyield) <span>Alta.Blacksmithing</span>
+- [MembershipCheck](/mod/game-api/types/alta-world/membershipcheck) <span>Alta.Chunks</span>
+- [MembershipStatusResponse](/mod/game-api/types/assembly-api-models/membershipstatusresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [MemoizeComponentOne&lt;T&gt;](/mod/game-api/types/global-m-o/memoizecomponentone-t)
+- [MemoizeHashset&lt;TIn, TOut&gt;](/mod/game-api/types/global-m-o/memoizehashset-tin-tout)
+- [MemoizeHashset&lt;TIn, TOut&gt;.Evaluate](/mod/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate)
+- [MemoizeHashsetCountTracker&lt;TIn, TOut&gt;](/mod/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout)
+- [MemoizeOne&lt;TInput, TOutput&gt;](/mod/game-api/types/global-m-o/memoizeone-tinput-toutput)
+- [MemoryDumpMenuAction](/mod/game-api/types/alta-player/memorydumpmenuaction) <span>Alta.QuickAccessActions</span>
+- [MenuGameSetting](/mod/game-api/types/alta-menus/menugamesetting) <span>Alta.Menu</span>
+- [MenuGameSetting&lt;T&gt;](/mod/game-api/types/alta-menus/menugamesetting-t) <span>Alta.Menu</span>
+- [MenuSettings](/mod/game-api/types/global-m-o/menusettings)
+- [MenuSettings.AfterStartActionType](/mod/game-api/types/global-m-o/menusettings-afterstartactiontype)
+- [MenuSettings.Create](/mod/game-api/types/global-m-o/menusettings-create)
+- [MenuSettings.MenuType](/mod/game-api/types/global-m-o/menusettings-menutype)
+- [MenuToggleSetting](/mod/game-api/types/alta-menus/menutogglesetting) <span>Alta.Menu</span>
+- [MeshColorBaker](/mod/game-api/types/global-m-o/meshcolorbaker)
+- [MeshColoringRam](/mod/game-api/types/global-m-o/meshcoloringram)
+- [MeshEffect](/mod/game-api/types/global-m-o/mesheffect)
+- [MeshFaceViewer](/mod/game-api/types/global-m-o/meshfaceviewer)
+- [MeshFilterExtensions](/mod/game-api/types/alta-utilities/meshfilterextensions) <span>Alta.Utilities</span>
+- [MeshFilterExtensions](/mod/game-api/types/alta-utilities/meshfilterextensions-alta-utilities-atlas) <span>Alta.Utilities.Atlas</span>
+- [MeshPacker](/mod/game-api/types/alta-customization/meshpacker) <span>Alta.Customization</span>
+- [MeshPlacement](/mod/game-api/types/alta-crafting/meshplacement) <span>Alta.Scrapper</span>
+- [MeshPlacementData](/mod/game-api/types/alta-crafting/meshplacementdata) <span>Alta.Scrapper.Data</span>
+- [MeshPlacementData.Create](/mod/game-api/types/alta-crafting/meshplacementdata-create) <span>Alta.Scrapper.Data</span>
+- [MeshPlacementSaveData](/mod/game-api/types/alta-crafting/meshplacementsavedata) <span>Alta.Scrapper</span>
+- [MeshReplacePooledObject](/mod/game-api/types/global-m-o/meshreplacepooledobject)
+- [MeshUtility](/mod/game-api/types/global-m-o/meshutility)
+- [MessageProcessor](/mod/game-api/types/alta-networking/messageprocessor) <span>Alta.Networking.Internal</span>
+- [MessageReceivePool](/mod/game-api/types/assembly-other/messagereceivepool) <span>Alta.NetworkingTransport</span>
+- [MessageResult](/mod/game-api/types/global-m-o/messageresult)
+- [MessageResult&lt;T&gt;](/mod/game-api/types/global-m-o/messageresult-t)
+- [MessageStatistics](/mod/game-api/types/alta-networking/messagestatistics) <span>Alta.Profiling.Networking</span>
+- [MessageType](/mod/game-api/types/alta-networking/messagetype) <span>Alta.Networking</span>
+- [MessageTypeStatistic](/mod/game-api/types/alta-networking/messagetypestatistic) <span>Alta.Profiling.Networking</span>
+- [Metadata](/mod/game-api/types/assembly-api-models/metadata) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [MetalHeatPoint](/mod/game-api/types/alta-crafting/metalheatpoint) <span>Alta.Blacksmithing</span>
+- [MetalNonForgingBlit](/mod/game-api/types/alta-utilities/metalnonforgingblit) <span>Alta.Utilities.Atlas</span>
+- [MethodApplyAttribute](/mod/game-api/types/assembly-other/methodapplyattribute)
+- [MethodMember](/mod/game-api/types/global-m-o/methodmember)
+- [MethodSync](/mod/game-api/types/alta-networking/methodsync) <span>Alta.Networking</span>
+- [MethodSyncClass&lt;T&gt;](/mod/game-api/types/alta-networking/methodsyncclass-t) <span>Alta.Networking</span>
+- [MethodSyncStruct&lt;T&gt;](/mod/game-api/types/alta-networking/methodsyncstruct-t) <span>Alta.Networking</span>
+- [MicMuteQuickAccessAction](/mod/game-api/types/alta-player/micmutequickaccessaction) <span>Alta.QuickAccessActions</span>
+- [MicrophoneEnumSettingAccess](/mod/game-api/types/alta-utilities/microphoneenumsettingaccess) <span>Alta.Utilities</span>
+- [MicroTutorial](/mod/game-api/types/game-other-namespaces/microtutorial) <span>ATT.MicroTutorial</span>
+- [MicroTutorialAnalyticsEvent](/mod/game-api/types/game-other-namespaces/microtutorialanalyticsevent) <span>ATT.MicroTutorial</span>
+- [MicroTutorialFaceOrb](/mod/game-api/types/game-other-namespaces/microtutorialfaceorb) <span>ATT.MicroTutorial</span>
+- [MicroTutorialFaceOrbSaveData](/mod/game-api/types/game-other-namespaces/microtutorialfaceorbsavedata) <span>ATT.MicroTutorial</span>
+- [MicroTutorialFaceOrbSpawnSettings](/mod/game-api/types/game-other-namespaces/microtutorialfaceorbspawnsettings) <span>ATT.MicroTutorial</span>
+- [MicroTutorialFaceOrbType](/mod/game-api/types/game-other-namespaces/microtutorialfaceorbtype) <span>ATT.MicroTutorial</span>
+- [MicroTutorialFactory](/mod/game-api/types/game-other-namespaces/microtutorialfactory) <span>ATT.MicroTutorial</span>
+- [MicroTutorialLogger](/mod/game-api/types/game-other-namespaces/microtutoriallogger) <span>ATT.MicroTutorial</span>
+- [MicroTutorialModule](/mod/game-api/types/game-other-namespaces/microtutorialmodule) <span>ATT.MicroTutorial</span>
+- [MicroTutorialOrbInjector](/mod/game-api/types/game-other-namespaces/microtutorialorbinjector) <span>ATT.MicroTutorial</span>
+- [MicroTutorialOrbSpawner](/mod/game-api/types/game-other-namespaces/microtutorialorbspawner) <span>ATT.MicroTutorial</span>
+- [MicroTutorialSettings](/mod/game-api/types/game-other-namespaces/microtutorialsettings) <span>ATT.MicroTutorial</span>
+- [MicroTutorialStep](/mod/game-api/types/game-other-namespaces/microtutorialstep) <span>ATT.MicroTutorial.Steps</span>
+- [MicroTutorialSystem](/mod/game-api/types/game-other-namespaces/microtutorialsystem) <span>ATT.MicroTutorial</span>
+- [MicroTutorialSystemSettings](/mod/game-api/types/game-other-namespaces/microtutorialsystemsettings) <span>ATT.MicroTutorial</span>
+- [MigrateSoundEffectAttribute](/mod/game-api/types/global-m-o/migratesoundeffectattribute)
+- [MigrateWebsocketRequest](/mod/game-api/types/assembly-api-models/migratewebsocketrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [MigrationDetailsResponse](/mod/game-api/types/assembly-api-models/migrationdetailsresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [MinAttribute](/mod/game-api/types/assembly-other/minattribute)
+- [MiningBaseGenerator](/mod/game-api/types/global-m-o/miningbasegenerator)
+- [MiningBaseGenerator.PartOption](/mod/game-api/types/global-m-o/miningbasegenerator-partoption)
+- [MiningBaseGenerator.Point](/mod/game-api/types/global-m-o/miningbasegenerator-point)
+- [MiningBaseGenerator.Possibility](/mod/game-api/types/global-m-o/miningbasegenerator-possibility)
+- [MiningEcho](/mod/game-api/types/global-m-o/miningecho)
+- [MiningEcho.Create](/mod/game-api/types/global-m-o/miningecho-create)
+- [MiningEcho.LevelDefinition](/mod/game-api/types/global-m-o/miningecho-leveldefinition)
+- [MiningEcho.MiningEchoExecution](/mod/game-api/types/global-m-o/miningecho-miningechoexecution)
+- [MiningEchoIntensity](/mod/game-api/types/global-m-o/miningechointensity)
+- [MiningEchoIntensity.Create](/mod/game-api/types/global-m-o/miningechointensity-create)
+- [MiningSettings](/mod/game-api/types/alta-items/miningsettings) <span>Alta.Impact</span>
+- [MiningSettings.Create](/mod/game-api/types/alta-items/miningsettings-create) <span>Alta.Impact</span>
+- [MinMaxValue](/mod/game-api/types/global-m-o/minmaxvalue)
+- [ModBase](/mod/game-api/types/global-m-o/modbase)
+- [ModCommands](/mod/game-api/types/alta-console/modcommands) <span>Alta.Console.Commands</span>
+- [ModellingCharacter](/mod/game-api/types/global-m-o/modellingcharacter)
+- [ModellingCharacter.Definition](/mod/game-api/types/global-m-o/modellingcharacter-definition)
+- [ModellingCharacter.FreeDefinition](/mod/game-api/types/global-m-o/modellingcharacter-freedefinition)
+- [ModellingCharacter.IDefinition](/mod/game-api/types/global-m-o/modellingcharacter-idefinition)
+- [ModellingCharacter.ItemArguments](/mod/game-api/types/global-m-o/modellingcharacter-itemarguments)
+- [ModellingCharacter.OverrideSet](/mod/game-api/types/global-m-o/modellingcharacter-overrideset)
+- [ModellingScene](/mod/game-api/types/global-m-o/modellingscene)
+- [ModHands](/mod/game-api/types/global-m-o/modhands)
+- [ModHands.ModEvent](/mod/game-api/types/global-m-o/modhands-modevent)
+- [ModifiableAdditionalStaticContent](/mod/game-api/types/global-m-o/modifiableadditionalstaticcontent)
+- [ModifiableAdditionalStaticContentSaveData](/mod/game-api/types/global-m-o/modifiableadditionalstaticcontentsavedata)
+- [ModifiableLandmarkSelector](/mod/game-api/types/alta-world/modifiablelandmarkselector) <span>Alta.Chunks</span>
+- [ModifiableStaticEvent](/mod/game-api/types/alta-networking/modifiablestaticevent) <span>Alta.Networking</span>
+- [ModifiableStaticManager](/mod/game-api/types/alta-networking/modifiablestaticmanager) <span>Alta.Networking</span>
+- [ModifiableStaticManagerSaveData](/mod/game-api/types/alta-networking/modifiablestaticmanagersavedata) <span>Alta.Networking</span>
+- [ModifiableStaticManagerSaveData.Item](/mod/game-api/types/alta-networking/modifiablestaticmanagersavedata-item) <span>Alta.Networking</span>
+- [ModifiableStaticObject](/mod/game-api/types/alta-networking/modifiablestaticobject) <span>Alta.Networking</span>
+- [ModifiableStaticUnityEvent](/mod/game-api/types/alta-networking/modifiablestaticunityevent) <span>Alta.Networking</span>
+- [ModificationArguments](/mod/game-api/types/alta-networking/modificationarguments) <span>Alta.Networking</span>
+- [Modifier](/mod/game-api/types/alta-stats-effects/modifier) <span>Alta.StatSystem</span>
+- [ModifierSet](/mod/game-api/types/alta-stats-effects/modifierset) <span>Alta.StatSystem</span>
+- [ModifyReportRequest](/mod/game-api/types/assembly-api-models/modifyreportrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ModInfo](/mod/game-api/types/alta-console/modinfo) <span>Alta.Console.Commands</span>
+- [ModMuteArgument](/mod/game-api/types/alta-player/modmuteargument) <span>Alta.QuickAccessActions</span>
+- [ModsMicMuteManager](/mod/game-api/types/alta-player/modsmicmutemanager) <span>Alta.QuickAccessActions</span>
+- [MODSMicMuteQuickAccessAction](/mod/game-api/types/alta-player/modsmicmutequickaccessaction) <span>Alta.QuickAccessActions</span>
+- [Module](/mod/game-api/types/alta-console/module) <span>Alta.Console</span>
+- [ModuleAttribute](/mod/game-api/types/alta-console/moduleattribute) <span>Alta.Console</span>
+- [MonoBehaviourExtensions](/mod/game-api/types/global-m-o/monobehaviourextensions)
+- [Month](/mod/game-api/types/global-m-o/month)
+- [MonthDayHour](/mod/game-api/types/global-m-o/monthdayhour)
+- [Motor](/mod/game-api/types/global-m-o/motor)
+- [Mould](/mod/game-api/types/global-m-o/mould)
+- [Mould.IBlockGenericDecrafting](/mod/game-api/types/global-m-o/mould-iblockgenericdecrafting)
+- [MouldCopyTest](/mod/game-api/types/global-m-o/mouldcopytest)
+- [MouldDefinition](/mod/game-api/types/global-m-o/moulddefinition)
+- [MouldDefinition.Create](/mod/game-api/types/global-m-o/moulddefinition-create)
+- [MouldItemComponent](/mod/game-api/types/global-m-o/moulditemcomponent)
+- [MouldPress](/mod/game-api/types/global-m-o/mouldpress)
+- [MouldRack](/mod/game-api/types/alta-crafting/mouldrack) <span>Alta.Blacksmithing</span>
+- [MouldRestrictor](/mod/game-api/types/alta-items/mouldrestrictor) <span>Alta.Pages</span>
+- [MouldSaveData](/mod/game-api/types/global-m-o/mouldsavedata)
+- [MouldSaveData1](/mod/game-api/types/global-m-o/mouldsavedata1)
+- [MovementBendController](/mod/game-api/types/global-m-o/movementbendcontroller)
+- [MovementConfortSpeed](/mod/game-api/types/global-m-o/movementconfortspeed)
+- [MovementConfortStrength](/mod/game-api/types/global-m-o/movementconfortstrength)
+- [MovementHeatPoint](/mod/game-api/types/alta-stats-effects/movementheatpoint) <span>Alta.Heat</span>
+- [MoveMessage](/mod/game-api/types/alta-networking/movemessage) <span>Alta.Networking</span>
+- [MovePickup](/mod/game-api/types/global-m-o/movepickup)
+- [MovePickupSaveData](/mod/game-api/types/global-m-o/movepickupsavedata)
+- [MovePickupSaveData1](/mod/game-api/types/global-m-o/movepickupsavedata1)
+- [MoveQuantityRequestArguments](/mod/game-api/types/global-m-o/movequantityrequestarguments)
+- [MoveToBone](/mod/game-api/types/global-m-o/movetobone)
+- [MoveToLayer](/mod/game-api/types/global-m-o/movetolayer)
+- [MoveTowardsModifier](/mod/game-api/types/global-m-o/movetowardsmodifier)
+- [MovingLandmark](/mod/game-api/types/alta-world/movinglandmark) <span>Alta.Map</span>
+- [MovingObjectsBetweenDocks](/mod/game-api/types/global-m-o/movingobjectsbetweendocks)
+- [MovingPlatform](/mod/game-api/types/global-m-o/movingplatform)
+- [MRK_ActivationLever](/mod/game-api/types/global-m-o/mrk_activationlever)
+- [MRK_ActivationLeverSaveData](/mod/game-api/types/global-m-o/mrk_activationleversavedata)
+- [MultiArrowConfiguration](/mod/game-api/types/alta-player/multiarrowconfiguration) <span>Alta.Progression.Skills</span>
+- [MultiDeltaInputController](/mod/game-api/types/global-m-o/multideltainputcontroller)
+- [MultiHandPickup](/mod/game-api/types/global-m-o/multihandpickup)
+- [MultiLeverPanel](/mod/game-api/types/global-m-o/multileverpanel)
+- [MultipleInteractionAllowance](/mod/game-api/types/global-m-o/multipleinteractionallowance)
+- [MultipleInteractionAllowanceHelper](/mod/game-api/types/global-m-o/multipleinteractionallowancehelper)
+- [MultipleNotAllowedAction](/mod/game-api/types/global-m-o/multiplenotallowedaction)
+- [MultipleSpawner](/mod/game-api/types/global-m-o/multiplespawner)
+- [MultipleSpawner.SimpleSpawner](/mod/game-api/types/global-m-o/multiplespawner-simplespawner)
+- [MultiPositionTypeLabel](/mod/game-api/types/global-m-o/multipositiontypelabel)
+- [MultiSpawner](/mod/game-api/types/global-m-o/multispawner)
+- [MushroomCritter](/mod/game-api/types/global-m-o/mushroomcritter)
+- [MuteNonFriendsActionIcon](/mod/game-api/types/alta-player/mutenonfriendsactionicon) <span>Alta.QuickAccessActions</span>
+- [MuteNonFriendsQuickAccessAction](/mod/game-api/types/alta-player/mutenonfriendsquickaccessaction) <span>Alta.QuickAccessActions</span>
+
+</div>
+
+## N
+
+<div className="type-index">
+
+- [NailHitquality](/mod/game-api/types/alta-crafting/nailhitquality) <span>Alta.Crafting</span>
+- [NailIdentifier](/mod/game-api/types/alta-crafting/nailidentifier) <span>Alta.Crafting</span>
+- [NailSettings](/mod/game-api/types/alta-crafting/nailsettings) <span>Alta.Crafting</span>
+- [NameBoard](/mod/game-api/types/alta-player/nameboard) <span>Alta.QuickAccessActions</span>
+- [NameBoardEmblem](/mod/game-api/types/alta-player/nameboardemblem) <span>Alta.QuickAccessActions</span>
+- [NameBoardShield](/mod/game-api/types/alta-player/nameboardshield) <span>Alta.QuickAccessActions</span>
+- [NameBoardsSettings](/mod/game-api/types/global-m-o/nameboardssettings)
+- [NamedProgressBar](/mod/game-api/types/global-m-o/namedprogressbar)
+- [NamingSettings](/mod/game-api/types/assembly-api-models/namingsettings) <span>Alta.Api.DataTransferModels.Settings</span>
+- [NavigateTo](/mod/game-api/types/alta-menus/navigateto) <span>Alta.Meta.UI</span>
+- [Navigator](/mod/game-api/types/alta-intelligence/navigator) <span>Alta.Pathfinding</span>
+- [NearbyPlayerScaler](/mod/game-api/types/global-m-o/nearbyplayerscaler)
+- [NearbyPlayerTracker](/mod/game-api/types/global-m-o/nearbyplayertracker)
+- [NeckController](/mod/game-api/types/alta-player/neckcontroller) <span>Alta.Character</span>
+- [NeckIKController](/mod/game-api/types/alta-player/neckikcontroller) <span>Alta.Character</span>
+- [NeckIKControllerHelper](/mod/game-api/types/alta-player/neckikcontrollerhelper) <span>Alta.Character</span>
+- [Nest](/mod/game-api/types/alta-intelligence/nest) <span>Alta.Creatures</span>
+- [NestingMenuAction](/mod/game-api/types/alta-player/nestingmenuaction) <span>Alta.QuickAccessActions</span>
+- [NestType](/mod/game-api/types/alta-intelligence/nesttype) <span>Alta.Creatures</span>
+- [NetworkAnimator](/mod/game-api/types/alta-networking/networkanimator) <span>Alta.Networking.Animation</span>
+- [NetworkAnimator.FloatParameterType](/mod/game-api/types/alta-networking/networkanimator-floatparametertype) <span>Alta.Networking.Animation</span>
+- [NetworkAxisPosition](/mod/game-api/types/alta-networking/networkaxisposition) <span>Alta.Networking</span>
+- [NetworkAxisRotation](/mod/game-api/types/alta-networking/networkaxisrotation) <span>Alta.Networking</span>
+- [NetworkAxisValue](/mod/game-api/types/alta-networking/networkaxisvalue) <span>Alta.Networking</span>
+- [NetworkBytesDisplay](/mod/game-api/types/alta-utilities/networkbytesdisplay) <span>Alta.Utilities.Profiling</span>
+- [NetworkColliderGroup](/mod/game-api/types/alta-networking/networkcollidergroup) <span>Alta.Networking</span>
+- [NetworkColliderGroup.CollisionIgnoreArguments](/mod/game-api/types/alta-networking/networkcollidergroup-collisionignorearguments) <span>Alta.Networking</span>
+- [NetworkContactProjectile](/mod/game-api/types/alta-items/networkcontactprojectile) <span>Alta.Impact</span>
+- [NetworkDestroyTimed](/mod/game-api/types/global-m-o/networkdestroytimed)
+- [NetworkedEvent](/mod/game-api/types/global-m-o/networkedevent)
+- [NetworkedFloatStream](/mod/game-api/types/global-m-o/networkedfloatstream)
+- [NetworkedFloatStreamSaveData](/mod/game-api/types/global-m-o/networkedfloatstreamsavedata)
+- [NetworkedGameConditionEvaluator](/mod/game-api/types/game-other-namespaces/networkedgameconditionevaluator) <span>Features.Gameplay.GameConditions</span>
+- [NetworkedIKBody](/mod/game-api/types/global-m-o/networkedikbody)
+- [NetworkedIKBone](/mod/game-api/types/global-m-o/networkedikbone)
+- [NetworkedJointDrivenRig](/mod/game-api/types/global-m-o/networkedjointdrivenrig)
+- [NetworkEntity](/mod/game-api/types/alta-networking/networkentity) <span>Alta.Networking</span>
+- [NetworkEntity.SyncPriorityModifiers](/mod/game-api/types/alta-networking/networkentity-syncprioritymodifiers) <span>Alta.Networking</span>
+- [NetworkEntityBehaviour](/mod/game-api/types/alta-networking/networkentitybehaviour) <span>Alta.Networking</span>
+- [NetworkEntityChunkRenderer](/mod/game-api/types/alta-console/networkentitychunkrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkEntityComponentController](/mod/game-api/types/alta-networking/networkentitycomponentcontroller) <span>Alta.Networking</span>
+- [NetworkEntityHandler](/mod/game-api/types/alta-networking/networkentityhandler) <span>Alta.Networking</span>
+- [NetworkEntityIdentifierRenderer](/mod/game-api/types/alta-console/networkentityidentifierrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkEntityInfo](/mod/game-api/types/alta-console/networkentityinfo) <span>Alta.Console.Commands</span>
+- [NetworkEntityLink](/mod/game-api/types/alta-networking/networkentitylink) <span>Alta.Networking</span>
+- [NetworkEntityModifiers](/mod/game-api/types/global-m-o/networkentitymodifiers)
+- [NetworkEntityObjectIssueLog](/mod/game-api/types/global-m-o/networkentityobjectissuelog)
+- [NetworkEntityOwnedRenderer](/mod/game-api/types/alta-console/networkentityownedrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkEntityParent](/mod/game-api/types/alta-networking/networkentityparent) <span>Alta.Networking</span>
+- [NetworkEntityParentRenderer](/mod/game-api/types/alta-console/networkentityparentrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkEntityPrefabRenderer](/mod/game-api/types/alta-console/networkentityprefabrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkEntityRenderer](/mod/game-api/types/alta-console/networkentityrenderer) <span>Alta.Logging.Targets</span>
+- [NetworkGravity](/mod/game-api/types/alta-networking/networkgravity) <span>Alta.Networking</span>
+- [NetworkHash128](/mod/game-api/types/alta-networking/networkhash128) <span>Alta.Networking</span>
+- [NetworkingProfiler](/mod/game-api/types/alta-utilities/networkingprofiler) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkingSettings](/mod/game-api/types/alta-networking/networkingsettings) <span>Alta.Networking</span>
+- [NetworkingSettings.Create](/mod/game-api/types/alta-networking/networkingsettings-create) <span>Alta.Networking</span>
+- [NetworkingStatistic](/mod/game-api/types/alta-utilities/networkingstatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkingStatisticsList&lt;T&gt;](/mod/game-api/types/alta-utilities/networkingstatisticslist-t) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkingStatisticsList&lt;TStatistic, TInternalObject&gt;](/mod/game-api/types/alta-utilities/networkingstatisticslist-tstatistic-tinternalobject) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkingStatisticsListNonSerialized&lt;T&gt;](/mod/game-api/types/alta-utilities/networkingstatisticslistnonserialized-t) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkingUtilities](/mod/game-api/types/global-m-o/networkingutilities)
+- [NetworkManager](/mod/game-api/types/alta-networking/networkmanager) <span>Alta.Networking</span>
+- [NetworkMessagesDisplay](/mod/game-api/types/alta-utilities/networkmessagesdisplay) <span>Alta.Utilities.Profiling</span>
+- [NetworkPacketsDisplay](/mod/game-api/types/alta-utilities/networkpacketsdisplay) <span>Alta.Utilities.Profiling</span>
+- [NetworkPrefab](/mod/game-api/types/alta-networking/networkprefab) <span>Alta.Networking</span>
+- [NetworkPrefab.ChildPrefab](/mod/game-api/types/alta-networking/networkprefab-childprefab) <span>Alta.Networking</span>
+- [NetworkPrefabChildEventHandler](/mod/game-api/types/alta-networking/networkprefabchildeventhandler) <span>Alta.Networking</span>
+- [NetworkPrefabConverter](/mod/game-api/types/alta-networking/networkprefabconverter) <span>Alta.Networking</span>
+- [NetworkPrefabEventHandler](/mod/game-api/types/alta-networking/networkprefabeventhandler) <span>Alta.Networking</span>
+- [NetworkPrefabHashAttribute](/mod/game-api/types/global-m-o/networkprefabhashattribute)
+- [NetworkRigidbody](/mod/game-api/types/alta-networking/networkrigidbody) <span>Alta.Networking</span>
+- [NetworkRigidbodySaveData](/mod/game-api/types/alta-networking/networkrigidbodysavedata) <span>Alta.Networking</span>
+- [NetworkRotation](/mod/game-api/types/alta-networking/networkrotation) <span>Alta.Networking</span>
+- [NetworkScene](/mod/game-api/types/alta-networking/networkscene) <span>Alta.Networking</span>
+- [NetworkSceneManager](/mod/game-api/types/global-m-o/networkscenemanager)
+- [NetworkSerializedProfiler](/mod/game-api/types/alta-networking/networkserializedprofiler) <span>Alta.Networking</span>
+- [NetworkStarer](/mod/game-api/types/global-m-o/networkstarer)
+- [NetworkStarer.ChangedDirection](/mod/game-api/types/global-m-o/networkstarer-changeddirection)
+- [NetworkStarer.ChangedState](/mod/game-api/types/global-m-o/networkstarer-changedstate)
+- [NetworkStarer.RotatingJoint](/mod/game-api/types/global-m-o/networkstarer-rotatingjoint)
+- [NetworkStarer.RotatingStructure](/mod/game-api/types/global-m-o/networkstarer-rotatingstructure)
+- [NetworkStatisticWithIncomingPackets](/mod/game-api/types/alta-utilities/networkstatisticwithincomingpackets) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransform](/mod/game-api/types/alta-networking/networktransform) <span>Alta.Networking</span>
+- [NetworkTransportConnectionStatistic](/mod/game-api/types/alta-utilities/networktransportconnectionstatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportCountStatisticField](/mod/game-api/types/alta-utilities/networktransportcountstatisticfield) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportHostStatistic](/mod/game-api/types/alta-utilities/networktransporthoststatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportOverallStatistics](/mod/game-api/types/alta-utilities/networktransportoverallstatistics) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportPackageVersion](/mod/game-api/types/global-m-o/networktransportpackageversion)
+- [NetworkTransportResult](/mod/game-api/types/assembly-other/networktransportresult) <span>Alta.NetworkingTransport</span>
+- [NetworkTransportStatistic](/mod/game-api/types/alta-utilities/networktransportstatistic) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportStatisticField](/mod/game-api/types/alta-utilities/networktransportstatisticfield) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NetworkTransportStatisticType](/mod/game-api/types/alta-utilities/networktransportstatistictype) <span>Alta.Utilities.Profiling.NetworkTransportMetrics</span>
+- [NewComment](/mod/game-api/types/assembly-api-models/newcomment) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [NewNetworkingProfiler](/mod/game-api/types/global-m-o/newnetworkingprofiler)
+- [NewNetworkingProfiler.NetworkStat](/mod/game-api/types/global-m-o/newnetworkingprofiler-networkstat)
+- [NewPageArguments](/mod/game-api/types/alta-items/newpagearguments) <span>Alta.Pages</span>
+- [NewSaveData&lt;TSavable, TData&gt;](/mod/game-api/types/global-m-o/newsavedata-tsavable-tdata)
+- [Node](/mod/game-api/types/alta-world-generation/node) <span>Alta.Forests</span>
+- [Node](/mod/game-api/types/alta-world-generation/node-alta-pagac) <span>Alta.PAGaC</span>
+- [Node&lt;TNode, TPath&gt;](/mod/game-api/types/alta-world-generation/node-tnode-tpath) <span>Alta.Forests</span>
+- [NodeCollection](/mod/game-api/types/alta-world-generation/nodecollection) <span>Alta.PAGaC</span>
+- [NodeExtensions](/mod/game-api/types/alta-world-generation/nodeextensions) <span>Alta.PAGaC</span>
+- [NodeMapModifier](/mod/game-api/types/alta-world-generation/nodemapmodifier) <span>Alta.Forests</span>
+- [NoMigrationProvidedException](/mod/game-api/types/global-m-o/nomigrationprovidedexception)
+- [NonClimbable](/mod/game-api/types/global-m-o/nonclimbable)
+- [NonClimbable.ClimbFailBehaviour](/mod/game-api/types/global-m-o/nonclimbable-climbfailbehaviour)
+- [NonDamagingCollider](/mod/game-api/types/alta-items/nondamagingcollider) <span>Alta.Impact</span>
+- [NonHashedData](/mod/game-api/types/global-m-o/nonhasheddata)
+- [NonJointLever](/mod/game-api/types/global-m-o/nonjointlever)
+- [NonPhysicalLever](/mod/game-api/types/alta-items/nonphysicallever) <span>Alta.Mechanisms</span>
+- [NonSimpleServerAttribute](/mod/game-api/types/alta-console/nonsimpleserverattribute) <span>Alta.Console</span>
+- [NonTeleportable](/mod/game-api/types/global-m-o/nonteleportable)
+- [NormalChunkLoader](/mod/game-api/types/global-m-o/normalchunkloader)
+- [NormalConnectionReceiver](/mod/game-api/types/alta-networking/normalconnectionreceiver) <span>Alta.Networking.Internal</span>
+- [NormalFilter](/mod/game-api/types/global-m-o/normalfilter)
+- [NormalFilter.Create](/mod/game-api/types/global-m-o/normalfilter-create)
+- [NormalizedPath](/mod/game-api/types/alta-intelligence/normalizedpath) <span>Alta.Pathfinding</span>
+- [NormalizedVector](/mod/game-api/types/assembly-other/normalizedvector)
+- [NormalPrefabPointer](/mod/game-api/types/alta-world/normalprefabpointer) <span>Alta.Chunks</span>
+- [NoShopForPlatformError](/mod/game-api/types/game-other-namespaces/noshopforplatformerror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [Not](/mod/game-api/types/alta-intelligence/not) <span>Alta.Intelligence</span>
+- [NotAllowedInRemoteAttribute](/mod/game-api/types/alta-console/notallowedinremoteattribute) <span>Alta.Console</span>
+- [NotConditionAttribute](/mod/game-api/types/assembly-other/notconditionattribute)
+- [NotFoundApiError](/mod/game-api/types/assembly-api-models/notfoundapierror) <span>Alta.Api.DataTransferModels.Errors</span>
+- [Notification](/mod/game-api/types/alta-world/notification) <span>Alta.Environmental.Atmosphere</span>
+- [NotLoggedInOnPlatformError](/mod/game-api/types/game-other-namespaces/notloggedinonplatformerror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [NoWindFoliageRampLerp3Blit](/mod/game-api/types/alta-utilities/nowindfoliageramplerp3blit) <span>Alta.Utilities.Atlas</span>
+- [NullableStructSerializer&lt;TStruct&gt;](/mod/game-api/types/alta-console/nullablestructserializer-tstruct) <span>Alta.Console</span>
+- [NullChecker](/mod/game-api/types/global-m-o/nullchecker)
+- [NullColorModelPoint](/mod/game-api/types/global-m-o/nullcolormodelpoint)
+- [NullConditionAttribute](/mod/game-api/types/assembly-other/nullconditionattribute)
+- [NullConsole](/mod/game-api/types/global-m-o/nullconsole)
+- [NumericalWidget](/mod/game-api/types/global-m-o/numericalwidget)
+
+</div>
+
+## O
+
+<div className="type-index">
+
+- [ObjectDestroyedException](/mod/game-api/types/global-m-o/objectdestroyedexception)
+- [ObjectHistory](/mod/game-api/types/alta-world-generation/objecthistory) <span>Alta.Populations</span>
+- [ObjectHistory.ObjectSnapshot](/mod/game-api/types/alta-world-generation/objecthistory-objectsnapshot) <span>Alta.Populations</span>
+- [ObjectHistory.ObjectTrackingSettings](/mod/game-api/types/alta-world-generation/objecthistory-objecttrackingsettings) <span>Alta.Populations</span>
+- [ObjectHistory.SnapshotType](/mod/game-api/types/alta-world-generation/objecthistory-snapshottype) <span>Alta.Populations</span>
+- [ObjectIssueLog](/mod/game-api/types/global-m-o/objectissuelog)
+- [ObjectIssueLog.Issue](/mod/game-api/types/global-m-o/objectissuelog-issue)
+- [ObjectKilledData](/mod/game-api/types/alta-player/objectkilleddata) <span>Alta.PlayerStates</span>
+- [ObjectNamesInFolder](/mod/game-api/types/alta-menus/objectnamesinfolder) <span>Alta.Meta.UI</span>
+- [ObjectPipeline](/mod/game-api/types/global-m-o/objectpipeline)
+- [ObjectVisualDouble](/mod/game-api/types/global-m-o/objectvisualdouble)
+- [ObsoleteFieldAttribute](/mod/game-api/types/assembly-other/obsoletefieldattribute)
+- [OcclusionChunkEffectData](/mod/game-api/types/alta-world/occlusionchunkeffectdata) <span>Alta.Chunks</span>
+- [OcclusionMode](/mod/game-api/types/alta-world/occlusionmode) <span>Alta.Chunks</span>
+- [OculusClient](/mod/game-api/types/assembly-api-client/oculusclient) <span>Alta.Api.Client.HighLevel</span>
+- [OculusCloudStorage](/mod/game-api/types/global-m-o/oculuscloudstorage)
+- [OculusDeepLinkService](/mod/game-api/types/global-m-o/oculusdeeplinkservice)
+- [OculusDestinationController](/mod/game-api/types/alta-menus/oculusdestinationcontroller) <span>Alta.PlatformSpecific.Oculus</span>
+- [OculusFriendInfo](/mod/game-api/types/assembly-api-models/oculusfriendinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [OculusFriendsList](/mod/game-api/types/assembly-api-models/oculusfriendslist) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [OculusFriendsListPanel](/mod/game-api/types/alta-menus/oculusfriendslistpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [OculusShop](/mod/game-api/types/assembly-api-client/oculusshop) <span>Alta.Api.Client.HighLevel</span>
+- [OculusVirtualInputField](/mod/game-api/types/global-m-o/oculusvirtualinputfield)
+- [OfflineAchievementApiClient](/mod/game-api/types/assembly-api-client/offlineachievementapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineException](/mod/game-api/types/assembly-api-models/offlineexception) <span>Alta.Api.DataTransferModels.Exceptions</span>
+- [OfflineGroupsClient](/mod/game-api/types/assembly-api-client/offlinegroupsclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineHighLevelApiClient](/mod/game-api/types/assembly-api-client/offlinehighlevelapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineLauncherApiClient](/mod/game-api/types/assembly-api-client/offlinelauncherapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflinePlayerProgress](/mod/game-api/types/global-m-o/offlineplayerprogress)
+- [OfflinePlayerProgressionHandler](/mod/game-api/types/global-m-o/offlineplayerprogressionhandler)
+- [OfflinePlayerProgressionHandler.PathLevel](/mod/game-api/types/global-m-o/offlineplayerprogressionhandler-pathlevel)
+- [OfflinePlayerProgressionHandlerSaveData](/mod/game-api/types/global-m-o/offlineplayerprogressionhandlersavedata)
+- [OfflineSecurityApiClient](/mod/game-api/types/assembly-api-client/offlinesecurityapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineServerApiClient](/mod/game-api/types/assembly-api-client/offlineserverapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineServicesApiClient](/mod/game-api/types/assembly-api-client/offlineservicesapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineShopAccount](/mod/game-api/types/assembly-api-client/offlineshopaccount) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineShopApiClient](/mod/game-api/types/assembly-api-client/offlineshopapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineShopEditor](/mod/game-api/types/assembly-api-client/offlineshopeditor) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineShopPurchase](/mod/game-api/types/assembly-api-client/offlineshoppurchase) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineSocialClient](/mod/game-api/types/assembly-api-client/offlinesocialclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineUserApiClient](/mod/game-api/types/assembly-api-client/offlineuserapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [OfflineVoiceClient](/mod/game-api/types/assembly-api-client/offlinevoiceclient) <span>Alta.Api.Client.HighLevel</span>
+- [OffsetEvent](/mod/game-api/types/alta-crafting/offsetevent) <span>Alta.Woodcutting</span>
+- [OffsetEventHelper](/mod/game-api/types/alta-crafting/offseteventhelper) <span>Alta.Woodcutting</span>
+- [OldChisellingDeckSaveData1](/mod/game-api/types/alta-crafting/oldchisellingdecksavedata1) <span>Alta.Carpentry</span>
+- [OldLandmarkSaveData1](/mod/game-api/types/alta-world/oldlandmarksavedata1) <span>Alta.Map</span>
+- [OldSaveData](/mod/game-api/types/global-m-o/oldsavedata)
+- [OldSenseOperation](/mod/game-api/types/alta-intelligence/oldsenseoperation) <span>Alta.Intelligence</span>
+- [OldVisibilityTest](/mod/game-api/types/global-m-o/oldvisibilitytest)
+- [OnCollidedEventTrigger](/mod/game-api/types/global-m-o/oncollidedeventtrigger)
+- [OnCollidedEventTrigger.CollisionType](/mod/game-api/types/global-m-o/oncollidedeventtrigger-collisiontype)
+- [OnDestroyEvent](/mod/game-api/types/global-m-o/ondestroyevent)
+- [OnDrawFilter](/mod/game-api/types/alta-customization/ondrawfilter) <span>Alta.ScreenshotCamera</span>
+- [OneTimeEvent&lt;T&gt;](/mod/game-api/types/global-m-o/onetimeevent-t)
+- [OneTimeEventTest](/mod/game-api/types/global-m-o/onetimeeventtest)
+- [OneTimeEventTest.IntTest](/mod/game-api/types/global-m-o/onetimeeventtest-inttest)
+- [OneTimeUnityEvent](/mod/game-api/types/global-m-o/onetimeunityevent)
+- [OneTimeUpgradeInteraction](/mod/game-api/types/global-m-o/onetimeupgradeinteraction)
+- [OneTimeUpgradeSaveData](/mod/game-api/types/global-m-o/onetimeupgradesavedata)
+- [OnFullAffectTargetStatDefinition](/mod/game-api/types/alta-stats-effects/onfullaffecttargetstatdefinition) <span>Alta.StatSystem</span>
+- [OnHeld](/mod/game-api/types/global-m-o/onheld)
+- [OnlyAllowDockingWhenEmpty](/mod/game-api/types/alta-items/onlyallowdockingwhenempty) <span>Alta.Inventory</span>
+- [OnScreenErrorLogger](/mod/game-api/types/global-m-o/onscreenerrorlogger)
+- [OpenClientLogs](/mod/game-api/types/global-m-o/openclientlogs)
+- [OpenServerLogs](/mod/game-api/types/global-m-o/openserverlogs)
+- [OpenXRControllerInput](/mod/game-api/types/global-m-o/openxrcontrollerinput)
+- [OpenXRDeviceController](/mod/game-api/types/global-m-o/openxrdevicecontroller)
+- [OpenXRDeviceLifecycle](/mod/game-api/types/global-m-o/openxrdevicelifecycle)
+- [OpenXRInputController](/mod/game-api/types/global-m-o/openxrinputcontroller)
+- [OpenXRWrapper](/mod/game-api/types/global-m-o/openxrwrapper)
+- [OperatedValue](/mod/game-api/types/global-m-o/operatedvalue)
+- [Operation](/mod/game-api/types/alta-utilities/operation) <span>Alta</span>
+- [OperationPart](/mod/game-api/types/alta-world-generation/operationpart) <span>Alta.Caves.PluginParts</span>
+- [OperationPartInstance](/mod/game-api/types/alta-world-generation/operationpartinstance) <span>Alta.Caves.PluginParts</span>
+- [OperationType](/mod/game-api/types/alta-utilities/operationtype) <span>Alta</span>
+- [Operator](/mod/game-api/types/alta-intelligence/operator) <span>Alta.Intelligence</span>
+- [OpticalZoom](/mod/game-api/types/alta-customization/opticalzoom) <span>Alta.ScreenshotCamera</span>
+- [OptimisedChunkLoader](/mod/game-api/types/global-m-o/optimisedchunkloader)
+- [OptimizationManager](/mod/game-api/types/global-m-o/optimizationmanager)
+- [OptimizationManager.Direction](/mod/game-api/types/global-m-o/optimizationmanager-direction)
+- [OptimizationManager.QualitySetting](/mod/game-api/types/global-m-o/optimizationmanager-qualitysetting)
+- [Option](/mod/game-api/types/assembly-api-models/option) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [OptionsConfig](/mod/game-api/types/alta-menus/optionsconfig) <span>Alta.Meta.UI</span>
+- [OptionSet](/mod/game-api/types/alta-world-generation/optionset) <span>Alta.PAGaC</span>
+- [OptionSetChance](/mod/game-api/types/alta-world-generation/optionsetchance) <span>Alta.PAGaC</span>
+- [OptionsPanel](/mod/game-api/types/alta-menus/optionspanel) <span>Alta.Meta.UI</span>
+- [OptionsPanelButtonConfig](/mod/game-api/types/alta-menus/optionspanelbuttonconfig) <span>Alta.Meta.UI</span>
+- [Or](/mod/game-api/types/alta-intelligence/or) <span>Alta.Intelligence</span>
+- [OrbBasinVfxController](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontroller) <span>Features.Gameplay</span>
+- [OrbBasinVfxController.ParticleType](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontroller-particletype) <span>Features.Gameplay</span>
+- [OrbBasinVfxControllerSaveData](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontrollersavedata) <span>Features.Gameplay</span>
+- [OrbBasinVfxControllerSaveData1](/mod/game-api/types/game-other-namespaces/orbbasinvfxcontrollersavedata1) <span>Features.Gameplay</span>
+- [OrbInjectorData](/mod/game-api/types/game-other-namespaces/orbinjectordata) <span>ATT.MicroTutorial</span>
+- [OrbitalInspector](/mod/game-api/types/global-m-o/orbitalinspector)
+- [OrbSpawnData](/mod/game-api/types/game-other-namespaces/orbspawndata) <span>ATT.MicroTutorial</span>
+- [Origin](/mod/game-api/types/alta-world-generation/origin) <span>Alta.Loot</span>
+- [Origin.Create](/mod/game-api/types/alta-world-generation/origin-create) <span>Alta.Loot</span>
+- [OriginSingleValue](/mod/game-api/types/alta-world-generation/originsinglevalue) <span>Alta.Loot</span>
+- [Outgoing](/mod/game-api/types/assembly-api-client/outgoing) <span>Alta.Api.Client.HighLevel</span>
+- [OutgoingGroupInvite](/mod/game-api/types/assembly-api-client/outgoinggroupinvite) <span>Alta.Api.Client.HighLevel</span>
+- [OutgoingGroupInvitesPage](/mod/game-api/types/alta-menus/outgoinggroupinvitespage) <span>Alta.Meta.UI.ServerManagement</span>
+- [OutgoingGroupJoinRequest](/mod/game-api/types/assembly-api-client/outgoinggroupjoinrequest) <span>Alta.Api.Client.HighLevel</span>
+- [OutgoingPacketManager](/mod/game-api/types/alta-networking/outgoingpacketmanager) <span>Alta.Networking.Internal</span>
+- [OutgoingPrivateGroupJoinRequest](/mod/game-api/types/assembly-api-client/outgoingprivategroupjoinrequest) <span>Alta.Api.Client.HighLevel</span>
+- [OutputFolderModule](/mod/game-api/types/alta-networking/outputfoldermodule) <span>Alta.WebServer</span>
+- [OverridableSettings](/mod/game-api/types/global-m-o/overridablesettings)
+- [OverrideBodySettings](/mod/game-api/types/global-m-o/overridebodysettings)
+- [OverrideMask](/mod/game-api/types/global-m-o/overridemask)
+- [OverridePlatformProvider](/mod/game-api/types/assembly-other/overrideplatformprovider) <span>Alta.PlatformInformation</span>
+- [OverworldChunk](/mod/game-api/types/alta-world/overworldchunk) <span>Alta.Chunks</span>
+- [OwnedShopItem](/mod/game-api/types/assembly-api-models/ownedshopitem) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [OwnedShopItemExtensions](/mod/game-api/types/global-m-o/ownedshopitemextensions)
+
+</div>
+
+## P
+
+<div className="type-index">
+
+- [PackageManager](/mod/game-api/types/alta-world-generation/packagemanager) <span>Alta.Loot</span>
+- [Packet](/mod/game-api/types/alta-networking/packet) <span>Alta.Networking.Internal</span>
+- [PacketSentHandler](/mod/game-api/types/alta-networking/packetsenthandler) <span>Alta.Networking</span>
+- [PackingWatch](/mod/game-api/types/alta-customization/packingwatch) <span>Alta.Customization</span>
+- [Page](/mod/game-api/types/assembly-api-models/page) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [Page](/mod/game-api/types/alta-items/page) <span>Alta.Pages</span>
+- [Page.Create](/mod/game-api/types/alta-items/page-create) <span>Alta.Pages</span>
+- [PageAutoAddEffect](/mod/game-api/types/global-p/pageautoaddeffect)
+- [PageCollection](/mod/game-api/types/alta-items/pagecollection) <span>Alta.Pages</span>
+- [PageCollection.Create](/mod/game-api/types/alta-items/pagecollection-create) <span>Alta.Pages</span>
+- [PageCollectionConverter](/mod/game-api/types/alta-items/pagecollectionconverter) <span>Alta.Pages</span>
+- [PageData](/mod/game-api/types/alta-items/pagedata) <span>Alta.Pages</span>
+- [PagedConfig](/mod/game-api/types/assembly-api-client/pagedconfig) <span>Alta.Api.Client.LowLevel</span>
+- [PagedResult&lt;T&gt;](/mod/game-api/types/assembly-api-client/pagedresult-t) <span>Alta.Api.Client.LowLevel</span>
+- [PageInstance](/mod/game-api/types/alta-items/pageinstance) <span>Alta.Pages</span>
+- [PageInstanceSaveData](/mod/game-api/types/alta-items/pageinstancesavedata) <span>Alta.Pages</span>
+- [PageInstanceSaveData1](/mod/game-api/types/alta-items/pageinstancesavedata1) <span>Alta.Pages</span>
+- [PageInstanceSaveData2](/mod/game-api/types/alta-items/pageinstancesavedata2) <span>Alta.Pages</span>
+- [PageLootSettings](/mod/game-api/types/global-p/pagelootsettings)
+- [PageLootSettings.Create](/mod/game-api/types/global-p/pagelootsettings-create)
+- [PageProvider](/mod/game-api/types/global-p/pageprovider)
+- [PageRenderer](/mod/game-api/types/alta-items/pagerenderer) <span>Alta.Pages</span>
+- [PageResponse](/mod/game-api/types/assembly-api-models/pageresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PaginatedList&lt;T&gt;](/mod/game-api/types/assembly-api-client/paginatedlist-t) <span>Alta.Api.Client.HighLevel</span>
+- [PaginatedListWithAdd&lt;T&gt;](/mod/game-api/types/assembly-api-client/paginatedlistwithadd-t) <span>Alta.Api.Client.HighLevel</span>
+- [PaintBrush](/mod/game-api/types/global-p/paintbrush)
+- [PaintModifiers](/mod/game-api/types/alta-world-generation/paintmodifiers) <span>Alta.Forests</span>
+- [Panel](/mod/game-api/types/alta-menus/panel) <span>Alta.Meta.UI</span>
+- [PanelComponent](/mod/game-api/types/alta-menus/panelcomponent) <span>Alta.Meta.UI</span>
+- [PaperPageInstance](/mod/game-api/types/alta-items/paperpageinstance) <span>Alta.Pages</span>
+- [ParamAttribute](/mod/game-api/types/alta-console/paramattribute) <span>Alta.Console</span>
+- [Parameter](/mod/game-api/types/alta-console/parameter) <span>Alta.Console</span>
+- [ParentChangedHandler](/mod/game-api/types/alta-networking/parentchangedhandler) <span>Alta.Networking</span>
+- [Part](/mod/game-api/types/alta-world-generation/part) <span>Alta.PAGaC</span>
+- [PartChance](/mod/game-api/types/alta-world-generation/partchance) <span>Alta.PAGaC</span>
+- [ParticleDestination](/mod/game-api/types/global-p/particledestination)
+- [ParticleEffectDistanceController](/mod/game-api/types/global-p/particleeffectdistancecontroller)
+- [ParticleEffectDistanceController.ParticleSystemEvaluator](/mod/game-api/types/global-p/particleeffectdistancecontroller-particlesystemevaluator)
+- [ParticleImpactor](/mod/game-api/types/alta-items/particleimpactor) <span>Alta.Impact</span>
+- [ParticleMeshReplacePooledObject](/mod/game-api/types/global-p/particlemeshreplacepooledobject)
+- [ParticlesToPlayer](/mod/game-api/types/game-other-namespaces/particlestoplayer) <span>Features.Visual_Effects.General_Scripts</span>
+- [ParticlesToPlayerSaveData](/mod/game-api/types/game-other-namespaces/particlestoplayersavedata) <span>Features.Visual_Effects.General_Scripts</span>
+- [ParticleSystemGroup](/mod/game-api/types/global-p/particlesystemgroup)
+- [ParticleSystemToHand](/mod/game-api/types/global-p/particlesystemtohand)
+- [PatchNotes](/mod/game-api/types/assembly-api-models/patchnotes) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [Path](/mod/game-api/types/alta-world-generation/path) <span>Alta.Forests</span>
+- [Path](/mod/game-api/types/alta-items/path) <span>Alta.Mechanisms</span>
+- [Path&lt;TNode, TPath&gt;](/mod/game-api/types/alta-world-generation/path-tnode-tpath) <span>Alta.Forests</span>
+- [PathEndsPart](/mod/game-api/types/global-p/pathendspart)
+- [PathEndsPart.Arrangement](/mod/game-api/types/global-p/pathendspart-arrangement)
+- [PathExperience](/mod/game-api/types/global-p/pathexperience)
+- [PathModelDisplay](/mod/game-api/types/global-p/pathmodeldisplay)
+- [PathWalker](/mod/game-api/types/global-p/pathwalker)
+- [PathWalker.OnTargetReached](/mod/game-api/types/global-p/pathwalker-ontargetreached)
+- [PauseEditor](/mod/game-api/types/global-p/pauseeditor)
+- [PCLightsController](/mod/game-api/types/alta-world/pclightscontroller) <span>Alta.Lighting</span>
+- [PCLightsController.PCSortedLight](/mod/game-api/types/alta-world/pclightscontroller-pcsortedlight) <span>Alta.Lighting</span>
+- [PendingPurchasesError](/mod/game-api/types/game-other-namespaces/pendingpurchaseserror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [PendingRepairBoxCompletionCondition](/mod/game-api/types/game-other-namespaces/pendingrepairboxcompletioncondition) <span>Features.Gameplay.GameConditions</span>
+- [PerChunkForestSpawner](/mod/game-api/types/alta-world-generation/perchunkforestspawner) <span>Alta.Forests</span>
+- [PermissionsHelper](/mod/game-api/types/game-other-namespaces/permissionshelper) <span>ATT.Character.QuickAccessMenu</span>
+- [PermissionType](/mod/game-api/types/assembly-api-models/permissiontype) <span>Alta.Api.DataTransferModels.Enums</span>
+- [PerPlayerContent&lt;TSaveFormat&gt;](/mod/game-api/types/global-p/perplayercontent-tsaveformat)
+- [PerPlayerManager&lt;TThis, TContent, TSaveFormat&gt;](/mod/game-api/types/global-p/perplayermanager-tthis-tcontent-tsaveformat)
+- [PersonalChunk](/mod/game-api/types/alta-items/personalchunk) <span>Alta.Inventory</span>
+- [PersonalGroups](/mod/game-api/types/assembly-api-client/personalgroups) <span>Alta.Api.Client.HighLevel</span>
+- [PersonalSpace](/mod/game-api/types/alta-player/personalspace) <span>Alta.Character</span>
+- [PersonalUserInfoResponse](/mod/game-api/types/assembly-api-models/personaluserinforesponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [Phantom](/mod/game-api/types/alta-intelligence/phantom) <span>Alta.Intelligence</span>
+- [Phase](/mod/game-api/types/global-p/phase)
+- [PhysicalButton](/mod/game-api/types/global-p/physicalbutton)
+- [PhysicalMaterial](/mod/game-api/types/global-p/physicalmaterial)
+- [PhysicalMaterial.Create](/mod/game-api/types/global-p/physicalmaterial-create)
+- [PhysicalMaterial.MaterialChannel](/mod/game-api/types/global-p/physicalmaterial-materialchannel)
+- [PhysicalMaterialChannel](/mod/game-api/types/global-p/physicalmaterialchannel)
+- [PhysicalMaterialPart](/mod/game-api/types/global-p/physicalmaterialpart)
+- [PhysicalMaterialPart.ChangedMaterial](/mod/game-api/types/global-p/physicalmaterialpart-changedmaterial)
+- [PhysicalMaterialPartSaveData](/mod/game-api/types/global-p/physicalmaterialpartsavedata)
+- [PhysicsAcceleration](/mod/game-api/types/global-p/physicsacceleration)
+- [PhysicsFPSMenuAction](/mod/game-api/types/alta-player/physicsfpsmenuaction) <span>Alta.QuickAccessActions</span>
+- [PhysicsLock](/mod/game-api/types/global-p/physicslock)
+- [PhysicsSerializationSettings](/mod/game-api/types/alta-networking/physicsserializationsettings) <span>Alta.Networking</span>
+- [Pickup](/mod/game-api/types/global-p/pickup)
+- [Pickup.PickupHandler](/mod/game-api/types/global-p/pickup-pickuphandler)
+- [PickupActionData](/mod/game-api/types/alta-items/pickupactiondata) <span>Alta.Inventory.Pickups.Scripts</span>
+- [PickupAgent](/mod/game-api/types/alta-intelligence/pickupagent) <span>Alta.Intelligence</span>
+- [PickupArea](/mod/game-api/types/global-p/pickuparea)
+- [PickupBasedSkill](/mod/game-api/types/global-p/pickupbasedskill)
+- [PickupBasedSkillModifier](/mod/game-api/types/global-p/pickupbasedskillmodifier)
+- [PickupBreakOnImpact](/mod/game-api/types/alta-items/pickupbreakonimpact) <span>Alta.Impact</span>
+- [PickupButtons](/mod/game-api/types/global-p/pickupbuttons)
+- [PickupClamp](/mod/game-api/types/global-p/pickupclamp)
+- [PickupContainer](/mod/game-api/types/global-p/pickupcontainer)
+- [PickupDecay](/mod/game-api/types/global-p/pickupdecay)
+- [PickupDecaySettings](/mod/game-api/types/global-p/pickupdecaysettings)
+- [PickupDecaySettings.Create](/mod/game-api/types/global-p/pickupdecaysettings-create)
+- [PickupDock](/mod/game-api/types/alta-items/pickupdock) <span>Alta.Inventory</span>
+- [PickupDock.AllowedResult](/mod/game-api/types/alta-items/pickupdock-allowedresult) <span>Alta.Inventory</span>
+- [PickupDockedEvent](/mod/game-api/types/global-p/pickupdockedevent)
+- [PickupDockedFilter](/mod/game-api/types/global-p/pickupdockedfilter)
+- [PickupDockedUnityEvent](/mod/game-api/types/global-p/pickupdockedunityevent)
+- [PickupDocker](/mod/game-api/types/alta-items/pickupdocker) <span>Alta.Inventory</span>
+- [PickupDockFilter](/mod/game-api/types/alta-items/pickupdockfilter) <span>Alta.Inventory</span>
+- [PickupDockGroup](/mod/game-api/types/global-p/pickupdockgroup)
+- [PickupDockHandler](/mod/game-api/types/alta-items/pickupdockhandler) <span>Alta.Inventory</span>
+- [PickupDockHoverHandler](/mod/game-api/types/alta-items/pickupdockhoverhandler) <span>Alta.Inventory</span>
+- [PickupDockingChecker](/mod/game-api/types/global-p/pickupdockingchecker)
+- [PickupDockingSoundPlayer](/mod/game-api/types/global-p/pickupdockingsoundplayer)
+- [PickupDockInteractionHandler](/mod/game-api/types/alta-items/pickupdockinteractionhandler) <span>Alta.Inventory</span>
+- [PickupDockPedestalSpawn](/mod/game-api/types/global-p/pickupdockpedestalspawn)
+- [PickupDockSaveData](/mod/game-api/types/alta-items/pickupdocksavedata) <span>Alta.Inventory</span>
+- [PickupDockSaveDataOld](/mod/game-api/types/alta-items/pickupdocksavedataold) <span>Alta.Inventory</span>
+- [PickupDockScaleCompare](/mod/game-api/types/global-p/pickupdockscalecompare)
+- [PickupDockSettings](/mod/game-api/types/alta-items/pickupdocksettings) <span>Alta.Inventory</span>
+- [PickupDockSettings.Create](/mod/game-api/types/alta-items/pickupdocksettings-create) <span>Alta.Inventory</span>
+- [PickupDockVisualSettings](/mod/game-api/types/alta-items/pickupdockvisualsettings) <span>Alta.Inventory</span>
+- [PickupDockVisualSettings.Create](/mod/game-api/types/alta-items/pickupdockvisualsettings-create) <span>Alta.Inventory</span>
+- [PickupEvent](/mod/game-api/types/global-p/pickupevent)
+- [PickupEventStreamLogger](/mod/game-api/types/alta-items/pickupeventstreamlogger) <span>Alta.Inventory.Pickups.Scripts</span>
+- [PickupExtension](/mod/game-api/types/global-p/pickupextension)
+- [PickupExtension.Allowance](/mod/game-api/types/global-p/pickupextension-allowance)
+- [PickupFromDockRestriction](/mod/game-api/types/global-p/pickupfromdockrestriction)
+- [PickupGrabInputMethod](/mod/game-api/types/global-p/pickupgrabinputmethod)
+- [PickupGrabInputStructure](/mod/game-api/types/global-p/pickupgrabinputstructure)
+- [PickupGrabInputStructure.Create](/mod/game-api/types/global-p/pickupgrabinputstructure-create)
+- [PickupHolder](/mod/game-api/types/global-p/pickupholder)
+- [PickupHolderFilter](/mod/game-api/types/global-p/pickupholderfilter)
+- [PickupInteractionScaler](/mod/game-api/types/global-p/pickupinteractionscaler)
+- [PickupJoints](/mod/game-api/types/global-p/pickupjoints)
+- [PickUpJointType](/mod/game-api/types/global-p/pickupjointtype)
+- [PickupLiquidContainerEnabler](/mod/game-api/types/alta-stats-effects/pickupliquidcontainerenabler) <span>Alta.Liquid</span>
+- [PickupLiquidContainerEnabler.DockingElibility](/mod/game-api/types/alta-stats-effects/pickupliquidcontainerenabler-dockingelibility) <span>Alta.Liquid</span>
+- [PickupOwnershipLogger](/mod/game-api/types/global-p/pickupownershiplogger)
+- [PickupSaveData](/mod/game-api/types/global-p/pickupsavedata)
+- [PickupSaveDataOld1](/mod/game-api/types/global-p/pickupsavedataold1)
+- [PickupTag](/mod/game-api/types/alta-items/pickuptag) <span>Alta.Inventory</span>
+- [PickupTag.Create](/mod/game-api/types/alta-items/pickuptag-create) <span>Alta.Inventory</span>
+- [PickupTypeSetting](/mod/game-api/types/global-p/pickuptypesetting)
+- [PickupTypeSettings](/mod/game-api/types/global-p/pickuptypesettings)
+- [PickupTypeSettings.ChannelInneficientHardnessHitEffect](/mod/game-api/types/global-p/pickuptypesettings-channelinneficienthardnesshiteffect)
+- [PickupTypeSettings.Create](/mod/game-api/types/global-p/pickuptypesettings-create)
+- [PickupWeightScale](/mod/game-api/types/global-p/pickupweightscale)
+- [PicoClient](/mod/game-api/types/assembly-api-client/picoclient) <span>Alta.Api.Client.HighLevel</span>
+- [PicoLoginController](/mod/game-api/types/game-other-namespaces/picologincontroller) <span>Features.Core.Device.Pico</span>
+- [PieceSaveData](/mod/game-api/types/alta-crafting/piecesavedata) <span>Alta.Carpentry</span>
+- [PieceSaveData](/mod/game-api/types/alta-crafting/piecesavedata-alta-crafting) <span>Alta.Crafting</span>
+- [PieceStateArgument](/mod/game-api/types/alta-crafting/piecestateargument) <span>Alta.Crafting</span>
+- [Pinboard](/mod/game-api/types/alta-items/pinboard) <span>Alta.Pages</span>
+- [PingDisplay](/mod/game-api/types/alta-utilities/pingdisplay) <span>Alta.Utilities.Profiling</span>
+- [PingMessage](/mod/game-api/types/alta-networking/pingmessage) <span>Alta.Networking</span>
+- [PipAvailablePointManager](/mod/game-api/types/global-p/pipavailablepointmanager)
+- [PipelineDistribution](/mod/game-api/types/global-p/pipelinedistribution)
+- [PipelineElement](/mod/game-api/types/global-p/pipelineelement)
+- [PipelineFlattenDistribution](/mod/game-api/types/global-p/pipelineflattendistribution)
+- [PipelineResultAttribute](/mod/game-api/types/global-p/pipelineresultattribute)
+- [PixelMapChunkDisplay](/mod/game-api/types/alta-world-generation/pixelmapchunkdisplay) <span>Alta.Caves.Displays</span>
+- [PlaceItemNoDockFirePuzzleLogic](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogic)
+- [PlaceItemNoDockFirePuzzleLogicSaveData](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata)
+- [PlaceItemNoDockFirePuzzleLogicSaveData.Option](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata-option)
+- [PlaceItemNoDockFirePuzzleLogicSaveData1](/mod/game-api/types/global-p/placeitemnodockfirepuzzlelogicsavedata1)
+- [PlaceItemNoDockPuzzleLogic](/mod/game-api/types/global-p/placeitemnodockpuzzlelogic)
+- [PlaceItemNoDockPuzzleLogicSaveData](/mod/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata)
+- [PlaceItemNoDockPuzzleLogicSaveData.Option](/mod/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata-option)
+- [PlaceItemNoDockPuzzleLogicSaveData1](/mod/game-api/types/global-p/placeitemnodockpuzzlelogicsavedata1)
+- [PlaceItemPuzzleLogic](/mod/game-api/types/global-p/placeitempuzzlelogic)
+- [PlaceItemPuzzleLogicSaveData](/mod/game-api/types/global-p/placeitempuzzlelogicsavedata)
+- [PlaceItemPuzzleLogicSaveData.Option](/mod/game-api/types/global-p/placeitempuzzlelogicsavedata-option)
+- [PlaceItemPuzzleLogicSaveData1](/mod/game-api/types/global-p/placeitempuzzlelogicsavedata1)
+- [PlacementObject](/mod/game-api/types/global-p/placementobject)
+- [PlatformActionMapping](/mod/game-api/types/global-p/platformactionmapping)
+- [PlatformComponents](/mod/game-api/types/global-p/platformcomponents)
+- [PlatformComponents.PlatformObjectSetup](/mod/game-api/types/global-p/platformcomponents-platformobjectsetup)
+- [PlatformConditionAttribute](/mod/game-api/types/assembly-other/platformconditionattribute)
+- [PlatformDefines](/mod/game-api/types/global-p/platformdefines)
+- [PlatformDistanceLODModifier](/mod/game-api/types/global-p/platformdistancelodmodifier)
+- [PlatformDistanceLODModifier.PlatformDetails](/mod/game-api/types/global-p/platformdistancelodmodifier-platformdetails)
+- [PlatformDriver](/mod/game-api/types/global-p/platformdriver)
+- [PlatformFlags](/mod/game-api/types/assembly-other/platformflags) <span>Alta.PlatformInformation</span>
+- [PlatformHandAlignment](/mod/game-api/types/alta-player/platformhandalignment) <span>Alta.Character</span>
+- [PlatformHandler](/mod/game-api/types/global-p/platformhandler)
+- [PlatformHeightOffset](/mod/game-api/types/global-p/platformheightoffset)
+- [PlatformHeightOffsetSettings](/mod/game-api/types/global-p/platformheightoffsetsettings)
+- [PlatformHierarchyShuffler](/mod/game-api/types/global-p/platformhierarchyshuffler)
+- [PlatformLaunchDetails](/mod/game-api/types/alta-menus/platformlaunchdetails) <span>Alta.PlatformSpecific.Oculus</span>
+- [PlatformLaunchResult](/mod/game-api/types/alta-menus/platformlaunchresult) <span>Alta.PlatformSpecific.Oculus</span>
+- [PlatformLaunchType](/mod/game-api/types/global-p/platformlaunchtype)
+- [PlatformLight](/mod/game-api/types/alta-world/platformlight) <span>Alta.Lighting</span>
+- [PlatformLightDarknessReader](/mod/game-api/types/global-p/platformlightdarknessreader)
+- [PlatformLightsAndroidUtilities](/mod/game-api/types/alta-world/platformlightsandroidutilities) <span>Alta.Lighting</span>
+- [PlatformLoader](/mod/game-api/types/global-p/platformloader)
+- [PlatformLODController](/mod/game-api/types/global-p/platformlodcontroller)
+- [PlatformLODController.PlatformDetails](/mod/game-api/types/global-p/platformlodcontroller-platformdetails)
+- [PlatformLODModifier](/mod/game-api/types/global-p/platformlodmodifier)
+- [PlatformLODModifier.PlatformDetails](/mod/game-api/types/global-p/platformlodmodifier-platformdetails)
+- [PlatformMaterial](/mod/game-api/types/global-p/platformmaterial)
+- [PlatformMeshController](/mod/game-api/types/global-p/platformmeshcontroller)
+- [PlatformMeshController.PlatformDetails](/mod/game-api/types/global-p/platformmeshcontroller-platformdetails)
+- [PlatformModeHandler](/mod/game-api/types/global-p/platformmodehandler)
+- [PlatformObjects](/mod/game-api/types/global-p/platformobjects)
+- [PlatformObjects.PlatformObjectSetup](/mod/game-api/types/global-p/platformobjects-platformobjectsetup)
+- [PlatformProvider](/mod/game-api/types/assembly-other/platformprovider) <span>Alta.PlatformInformation</span>
+- [PlatformSpecificScriptableObjectInstaller](/mod/game-api/types/assembly-other/platformspecificscriptableobjectinstaller) <span>Alta.ATT.LifetimeScopes</span>
+- [PlatformStats](/mod/game-api/types/alta-player/platformstats) <span>Alta.Achievements</span>
+- [PlatformTarget](/mod/game-api/types/assembly-other/platformtarget)
+- [PlatformTexture](/mod/game-api/types/global-p/platformtexture)
+- [Player](/mod/game-api/types/global-p/player)
+- [PlayerAchievementResponse](/mod/game-api/types/assembly-api-models/playerachievementresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PlayerActionStatResponse](/mod/game-api/types/assembly-api-models/playeractionstatresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PlayerAdjustableHeightFixerSettings](/mod/game-api/types/global-p/playeradjustableheightfixersettings)
+- [PlayerArmorManager](/mod/game-api/types/alta-customization/playerarmormanager) <span>Alta.Customization</span>
+- [PlayerCharacter](/mod/game-api/types/alta-player/playercharacter) <span>Alta.Character</span>
+- [PlayerCharacterCustomizationManager](/mod/game-api/types/alta-customization/playercharactercustomizationmanager) <span>Alta.Customization</span>
+- [PlayerCharacterTarget](/mod/game-api/types/alta-intelligence/playercharactertarget) <span>Alta.Intelligence</span>
+- [PlayerChunkManager](/mod/game-api/types/global-p/playerchunkmanager)
+- [PlayerCommunicationManager](/mod/game-api/types/global-p/playercommunicationmanager)
+- [PlayerCommunityAnalytics](/mod/game-api/types/global-p/playercommunityanalytics)
+- [PlayerComponent](/mod/game-api/types/global-p/playercomponent)
+- [PlayerComponentController](/mod/game-api/types/alta-networking/playercomponentcontroller) <span>Alta.Networking</span>
+- [PlayerController](/mod/game-api/types/global-p/playercontroller)
+- [PlayerControllerHandler](/mod/game-api/types/global-p/playercontrollerhandler)
+- [PlayerControllerHandler](/mod/game-api/types/alta-player/playercontrollerhandler) <span>Alta.Character</span>
+- [PlayerControllerLifetimeScope](/mod/game-api/types/assembly-other/playercontrollerlifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [PlayerControllerLocalityController](/mod/game-api/types/global-p/playercontrollerlocalitycontroller)
+- [PlayerControllerMultiLockModel](/mod/game-api/types/global-p/playercontrollermultilockmodel)
+- [PlayerControllerPrefabs](/mod/game-api/types/game-other-namespaces/playercontrollerprefabs) <span>ATT.PlayerStates</span>
+- [PlayerControllerPrefabs.Create](/mod/game-api/types/game-other-namespaces/playercontrollerprefabs-create) <span>ATT.PlayerStates</span>
+- [PlayerControllerSettings](/mod/game-api/types/alta-player/playercontrollersettings) <span>Alta.Character</span>
+- [PlayerControllerSettings.Create](/mod/game-api/types/alta-player/playercontrollersettings-create) <span>Alta.Character</span>
+- [PlayerConverter](/mod/game-api/types/global-p/playerconverter)
+- [PlayerCosmeticCategory](/mod/game-api/types/alta-customization/playercosmeticcategory) <span>Alta.Customization</span>
+- [PlayerCosmeticDefinition](/mod/game-api/types/alta-customization/playercosmeticdefinition) <span>Alta.Customization</span>
+- [PlayerCosmeticDefinitionSet](/mod/game-api/types/alta-customization/playercosmeticdefinitionset) <span>Alta.Customization</span>
+- [PlayerCosmeticWrapper](/mod/game-api/types/alta-customization/playercosmeticwrapper) <span>Alta.Customization</span>
+- [PlayerCountDisplay](/mod/game-api/types/alta-utilities/playercountdisplay) <span>Alta.Utilities.Profiling</span>
+- [PlayerCrippleController](/mod/game-api/types/global-p/playercripplecontroller)
+- [PlayerCustomizationHandler](/mod/game-api/types/alta-customization/playercustomizationhandler) <span>Alta.Customization</span>
+- [PlayerCustomizationSlot](/mod/game-api/types/alta-customization/playercustomizationslot) <span>Alta.Customization</span>
+- [PlayerCustomizationSlotSet](/mod/game-api/types/alta-customization/playercustomizationslotset) <span>Alta.Customization</span>
+- [PlayerData](/mod/game-api/types/global-p/playerdata)
+- [PlayerDataFileHelper&lt;T&gt;](/mod/game-api/types/alta-world/playerdatafilehelper-t) <span>Alta.Map</span>
+- [PlayerDataInfo](/mod/game-api/types/global-p/playerdatainfo)
+- [PlayerDebugMessager](/mod/game-api/types/global-p/playerdebugmessager)
+- [PlayerDetect](/mod/game-api/types/global-p/playerdetect)
+- [PlayerDetectSaveData](/mod/game-api/types/global-p/playerdetectsavedata)
+- [PlayerDetectSaveDataOld1](/mod/game-api/types/global-p/playerdetectsavedataold1)
+- [PlayerDockDropper](/mod/game-api/types/global-p/playerdockdropper)
+- [PlayerDocks](/mod/game-api/types/alta-items/playerdocks) <span>Alta.Inventory</span>
+- [PlayerDrinkingMouth](/mod/game-api/types/global-p/playerdrinkingmouth)
+- [PlayerEffectController](/mod/game-api/types/alta-stats-effects/playereffectcontroller) <span>Alta.Alchemy</span>
+- [PlayerEffectController.PlayerEffectTeleportInformation](/mod/game-api/types/alta-stats-effects/playereffectcontroller-playereffectteleportinformation) <span>Alta.Alchemy</span>
+- [PlayerEffectManager](/mod/game-api/types/global-p/playereffectmanager)
+- [PlayerEffectManager.EffectApplication](/mod/game-api/types/global-p/playereffectmanager-effectapplication)
+- [PlayerEffectManager.EffectPointStatus](/mod/game-api/types/global-p/playereffectmanager-effectpointstatus)
+- [PlayerEffectManager.EffectPosition](/mod/game-api/types/global-p/playereffectmanager-effectposition)
+- [PlayerEffectManager.LightEffect](/mod/game-api/types/global-p/playereffectmanager-lighteffect)
+- [PlayerEffectManager.OverrideSettings](/mod/game-api/types/global-p/playereffectmanager-overridesettings)
+- [PlayerEffectManager.StatEffectApplication](/mod/game-api/types/global-p/playereffectmanager-stateffectapplication)
+- [PlayerEffectParticle](/mod/game-api/types/global-p/playereffectparticle)
+- [PlayerEntitySync](/mod/game-api/types/alta-world/playerentitysync) <span>Alta.Chunks</span>
+- [PlayerEntitySyncServer](/mod/game-api/types/alta-world/playerentitysyncserver) <span>Alta.Chunks</span>
+- [PlayerEquipmentCategory](/mod/game-api/types/alta-customization/playerequipmentcategory) <span>Alta.Customization</span>
+- [PlayerEquipmentDefinition](/mod/game-api/types/alta-customization/playerequipmentdefinition) <span>Alta.Customization</span>
+- [PlayerEquipmentWrapper](/mod/game-api/types/alta-customization/playerequipmentwrapper) <span>Alta.Customization</span>
+- [PlayerEvent](/mod/game-api/types/global-p/playerevent)
+- [PlayerEventBuffer](/mod/game-api/types/game-other-namespaces/playereventbuffer) <span>ATT.MicroTutorial</span>
+- [PlayerEventsManager](/mod/game-api/types/global-p/playereventsmanager)
+- [PlayerEventsManager.OnPathHitGenerated](/mod/game-api/types/global-p/playereventsmanager-onpathhitgenerated)
+- [PlayerEventStep](/mod/game-api/types/game-other-namespaces/playereventstep) <span>ATT.MicroTutorial.Steps</span>
+- [PlayerGoldBankAccount](/mod/game-api/types/global-p/playergoldbankaccount)
+- [PlayerGoldBankAccountData](/mod/game-api/types/global-p/playergoldbankaccountdata)
+- [PlayerGrabbedPrefab](/mod/game-api/types/game-other-namespaces/playergrabbedprefab) <span>ATT.MicroTutorial.Steps</span>
+- [PlayerGrabbedPrefabEvent](/mod/game-api/types/game-other-namespaces/playergrabbedprefabevent) <span>ATT.EventBus.TownshipEvents</span>
+- [PlayerHandler](/mod/game-api/types/global-p/playerhandler)
+- [PlayerHealth](/mod/game-api/types/global-p/playerhealth)
+- [PlayerHealthVisualEffectsSettings](/mod/game-api/types/global-p/playerhealthvisualeffectssettings)
+- [PlayerHealthVisualEffectsSettings.NightmareEffectController](/mod/game-api/types/global-p/playerhealthvisualeffectssettings-nightmareeffectcontroller)
+- [PlayerHeightFixer](/mod/game-api/types/global-p/playerheightfixer)
+- [PlayerInPositionEvent](/mod/game-api/types/game-other-namespaces/playerinpositionevent) <span>ATT.EventBus.TownshipEvents</span>
+- [PlayerInPositionObserver](/mod/game-api/types/game-other-namespaces/playerinpositionobserver) <span>ATT.MicroTutorial.Steps</span>
+- [PlayerInPositionStep](/mod/game-api/types/game-other-namespaces/playerinpositionstep) <span>ATT.MicroTutorial.Steps</span>
+- [PlayerInput](/mod/game-api/types/global-p/playerinput)
+- [PlayerInteractionManager](/mod/game-api/types/global-p/playerinteractionmanager)
+- [PlayerInteractionManager.Tracker](/mod/game-api/types/global-p/playerinteractionmanager-tracker)
+- [PlayerInteractionManagerData](/mod/game-api/types/global-p/playerinteractionmanagerdata)
+- [PlayerInteractionManagerData.PlayerData](/mod/game-api/types/global-p/playerinteractionmanagerdata-playerdata)
+- [PlayerInteractionManagerData.TrackerData](/mod/game-api/types/global-p/playerinteractionmanagerdata-trackerdata)
+- [PlayerInteractionRestrictor](/mod/game-api/types/global-p/playerinteractionrestrictor)
+- [PlayerInteractionRestrictorData](/mod/game-api/types/global-p/playerinteractionrestrictordata)
+- [PlayerJoinLeaveData](/mod/game-api/types/alta-networking/playerjoinleavedata) <span>Alta.Networking.Servers</span>
+- [PlayerKilledData](/mod/game-api/types/alta-player/playerkilleddata) <span>Alta.PlayerStates</span>
+- [PlayerLandmark](/mod/game-api/types/alta-world/playerlandmark) <span>Alta.Map</span>
+- [PlayerLandmarkMode](/mod/game-api/types/alta-world/playerlandmarkmode) <span>Alta.Map</span>
+- [PlayerLikeSpectralGhost](/mod/game-api/types/alta-intelligence/playerlikespectralghost) <span>Alta.Intelligence</span>
+- [PlayerList](/mod/game-api/types/global-p/playerlist)
+- [PlayerListConverter](/mod/game-api/types/global-p/playerlistconverter)
+- [PlayerLocomotionController](/mod/game-api/types/global-p/playerlocomotioncontroller)
+- [PlayerLocomotionController.SmoothingSetting](/mod/game-api/types/global-p/playerlocomotioncontroller-smoothingsetting)
+- [PlayerMapManager](/mod/game-api/types/alta-world/playermapmanager) <span>Alta.Map</span>
+- [PlayerMessageDisplay](/mod/game-api/types/global-p/playermessagedisplay)
+- [PlayerMode](/mod/game-api/types/assembly-other/playermode)
+- [PlayerModeExtensions](/mod/game-api/types/assembly-other/playermodeextensions)
+- [PlayerModeOverride](/mod/game-api/types/global-p/playermodeoverride)
+- [PlayerModeOverride.Create](/mod/game-api/types/global-p/playermodeoverride-create)
+- [PlayerModeUtilities](/mod/game-api/types/global-p/playermodeutilities)
+- [PlayerMoveChunkData](/mod/game-api/types/global-p/playermovechunkdata)
+- [PlayerOrbLight](/mod/game-api/types/global-p/playerorblight)
+- [PlayerPositionHelper](/mod/game-api/types/global-p/playerpositionhelper)
+- [PlayerPositionRestrictor](/mod/game-api/types/global-p/playerpositionrestrictor)
+- [PlayerPostboxStorage](/mod/game-api/types/global-p/playerpostboxstorage)
+- [PlayerPostboxStorage.InitialContent](/mod/game-api/types/global-p/playerpostboxstorage-initialcontent)
+- [PlayerPostboxStorageEventHandler](/mod/game-api/types/global-p/playerpostboxstorageeventhandler)
+- [PlayerPostboxStorageFileFormat](/mod/game-api/types/global-p/playerpostboxstoragefileformat)
+- [PlayerPreferenceBool](/mod/game-api/types/assembly-other/playerpreferencebool)
+- [PlayerPreferenceFloat](/mod/game-api/types/assembly-other/playerpreferencefloat)
+- [PlayerPreferenceInt](/mod/game-api/types/assembly-other/playerpreferenceint)
+- [PlayerPreferences](/mod/game-api/types/assembly-other/playerpreferences)
+- [PlayerPreferences.PrefType](/mod/game-api/types/assembly-other/playerpreferences-preftype)
+- [PlayerPreferenceString](/mod/game-api/types/assembly-other/playerpreferencestring)
+- [PlayerPreferenceValue&lt;T&gt;](/mod/game-api/types/assembly-other/playerpreferencevalue-t)
+- [PlayerProgressFlag](/mod/game-api/types/global-p/playerprogressflag)
+- [PlayerProgressFlagConverter&lt;T&gt;](/mod/game-api/types/global-p/playerprogressflagconverter-t)
+- [PlayerProgression](/mod/game-api/types/global-p/playerprogression)
+- [PlayerProgression.EventTypeEnum](/mod/game-api/types/global-p/playerprogression-eventtypeenum)
+- [PlayerProgressionManager](/mod/game-api/types/global-p/playerprogressionmanager)
+- [PlayerProgressionManager.PracticeTuple](/mod/game-api/types/global-p/playerprogressionmanager-practicetuple)
+- [PlayerProxy](/mod/game-api/types/alta-player/playerproxy) <span>Alta.QuickAccessActions</span>
+- [PlayerProxyData](/mod/game-api/types/alta-player/playerproxydata) <span>Alta.QuickAccessActions</span>
+- [PlayerReportAdmin](/mod/game-api/types/assembly-api-client/playerreportadmin) <span>Alta.Api.Client.HighLevel</span>
+- [PlayerReportBaseNotification](/mod/game-api/types/alta-menus/playerreportbasenotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [PlayerReportInboxInfoPanel](/mod/game-api/types/alta-menus/playerreportinboxinfopanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [PlayerReportInfo](/mod/game-api/types/assembly-api-models/playerreportinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PlayerReportNotification](/mod/game-api/types/alta-menus/playerreportnotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [PlayerReportsClient](/mod/game-api/types/assembly-api-client/playerreportsclient) <span>Alta.Api.Client.HighLevel</span>
+- [PlayerReportSummary](/mod/game-api/types/assembly-api-client/playerreportsummary) <span>Alta.Api.Client.HighLevel</span>
+- [PlayerReportSummaryNotification](/mod/game-api/types/alta-menus/playerreportsummarynotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [PlayerReportSummaryPanel](/mod/game-api/types/alta-menus/playerreportsummarypanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [PlayerRoleProvider](/mod/game-api/types/global-p/playerroleprovider)
+- [PlayerSave](/mod/game-api/types/alta-utilities/playersave) <span>Alta.Utilities</span>
+- [PlayerSaveData](/mod/game-api/types/alta-utilities/playersavedata) <span>Alta.Utilities</span>
+- [PlayerSaveData.Create](/mod/game-api/types/alta-utilities/playersavedata-create) <span>Alta.Utilities</span>
+- [PlayerSaveException](/mod/game-api/types/alta-utilities/playersaveexception) <span>Alta.Utilities</span>
+- [PlayerSaveFileData](/mod/game-api/types/alta-utilities/playersavefiledata) <span>Alta.Utilities</span>
+- [PlayerSaveFileData1](/mod/game-api/types/alta-utilities/playersavefiledata1) <span>Alta.Utilities</span>
+- [PlayerSaveFileData2](/mod/game-api/types/alta-utilities/playersavefiledata2) <span>Alta.Utilities</span>
+- [PlayerSaveUtility](/mod/game-api/types/alta-utilities/playersaveutility) <span>Alta.Utilities</span>
+- [PlayerScreenFader](/mod/game-api/types/global-p/playerscreenfader)
+- [PlayerSettingsNames](/mod/game-api/types/assembly-other/playersettingsnames)
+- [PlayerSmoothingLevel](/mod/game-api/types/alta-utilities/playersmoothinglevel) <span>Alta.Utilities</span>
+- [PlayerSmoothManager](/mod/game-api/types/global-p/playersmoothmanager)
+- [PlayerSpecialEffectsController](/mod/game-api/types/global-p/playerspecialeffectscontroller)
+- [PlayerStatBasedVisualEffect](/mod/game-api/types/game-other-namespaces/playerstatbasedvisualeffect) <span>ATT.PlayerStates</span>
+- [PlayerStateBase](/mod/game-api/types/alta-player/playerstatebase) <span>Alta.PlayerStates</span>
+- [PlayerStateBase&lt;T&gt;](/mod/game-api/types/alta-player/playerstatebase-t) <span>Alta.PlayerStates</span>
+- [PlayerStateChangeData](/mod/game-api/types/alta-player/playerstatechangedata) <span>Alta.PlayerStates</span>
+- [PlayerStateFactory](/mod/game-api/types/alta-player/playerstatefactory) <span>Alta.PlayerStates</span>
+- [PlayerStateHandler](/mod/game-api/types/alta-player/playerstatehandler) <span>Alta.PlayerStates</span>
+- [PlayerStateManager](/mod/game-api/types/alta-player/playerstatemanager) <span>Alta.PlayerStates</span>
+- [PlayerStateSettings](/mod/game-api/types/alta-player/playerstatesettings) <span>Alta.PlayerStates</span>
+- [PlayerStateSettingsManager](/mod/game-api/types/alta-player/playerstatesettingsmanager) <span>Alta.PlayerStates</span>
+- [PlayerStateType](/mod/game-api/types/alta-player/playerstatetype) <span>Alta.PlayerStates</span>
+- [PlayerStatManager](/mod/game-api/types/alta-stats-effects/playerstatmanager) <span>Alta.StatSystem</span>
+- [PlayerSubscriberStatus](/mod/game-api/types/assembly-other/playersubscriberstatus)
+- [PlayerSwapMaterialFilter](/mod/game-api/types/alta-customization/playerswapmaterialfilter) <span>Alta.ScreenshotCamera</span>
+- [PlayerSwapMaterialFilter.MaterialTuple](/mod/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple) <span>Alta.ScreenshotCamera</span>
+- [PlayerSwapMaterialFilter.PlayerOriginalMaterials](/mod/game-api/types/alta-customization/playerswapmaterialfilter-playeroriginalmaterials) <span>Alta.ScreenshotCamera</span>
+- [PlayerSystemHandler](/mod/game-api/types/global-p/playersystemhandler)
+- [PlayerText](/mod/game-api/types/alta-player/playertext) <span>Alta.Character</span>
+- [PlayerTextMessage](/mod/game-api/types/global-p/playertextmessage)
+- [PlayerTimeUpdate](/mod/game-api/types/global-p/playertimeupdate)
+- [PlayerToolBasedSkillHelper](/mod/game-api/types/global-p/playertoolbasedskillhelper)
+- [PlayerTracker](/mod/game-api/types/global-p/playertracker)
+- [PlayerUnityEvent](/mod/game-api/types/global-p/playerunityevent)
+- [PlayerUnlock](/mod/game-api/types/global-p/playerunlock)
+- [PlayerUnlock.Create](/mod/game-api/types/global-p/playerunlock-create)
+- [PlayerUnlock.OrbProperties](/mod/game-api/types/global-p/playerunlock-orbproperties)
+- [PlayerUnlock.UnlockingPermissionsSetup](/mod/game-api/types/global-p/playerunlock-unlockingpermissionssetup)
+- [PlayerUnlockAnalytics](/mod/game-api/types/game-other-namespaces/playerunlockanalytics) <span>ATT.Progression</span>
+- [PlayerUnlockConverter](/mod/game-api/types/global-p/playerunlockconverter)
+- [PlayerUnlockManager](/mod/game-api/types/global-p/playerunlockmanager)
+- [PlayerUnlockManagerSaveData](/mod/game-api/types/global-p/playerunlockmanagersavedata)
+- [PlayerUnlockStation](/mod/game-api/types/global-p/playerunlockstation)
+- [PlayerUnlockStation.InteractionInfo](/mod/game-api/types/global-p/playerunlockstation-interactioninfo)
+- [PlayerUnlockStation.NetworkEffect](/mod/game-api/types/global-p/playerunlockstation-networkeffect)
+- [PlayerUnlockStation.UnlockStationType](/mod/game-api/types/global-p/playerunlockstation-unlockstationtype)
+- [PlayerUnlockStationSaveData](/mod/game-api/types/global-p/playerunlockstationsavedata)
+- [PlayerUnlockStationSaveDataOld1](/mod/game-api/types/global-p/playerunlockstationsavedataold1)
+- [PlayerUnlockStationSaveDataOld2](/mod/game-api/types/global-p/playerunlockstationsavedataold2)
+- [PlayerVisionComfort](/mod/game-api/types/global-p/playervisioncomfort)
+- [PlayerVisionComfortSettings](/mod/game-api/types/global-p/playervisioncomfortsettings)
+- [PlayerVisionComfortSettings.Create](/mod/game-api/types/global-p/playervisioncomfortsettings-create)
+- [PlayerWeight](/mod/game-api/types/global-p/playerweight)
+- [PlayerWeightStat](/mod/game-api/types/alta-stats-effects/playerweightstat) <span>Alta.StatSystem</span>
+- [PlayingOpenXRInputController](/mod/game-api/types/global-p/playingopenxrinputcontroller)
+- [PlayingState](/mod/game-api/types/alta-player/playingstate) <span>Alta.PlayerStates</span>
+- [PlayingStateSettings](/mod/game-api/types/alta-player/playingstatesettings) <span>Alta.PlayerStates</span>
+- [PlayingStateSettings.Create](/mod/game-api/types/alta-player/playingstatesettings-create) <span>Alta.PlayerStates</span>
+- [PlayingToCombatTransition](/mod/game-api/types/alta-player/playingtocombattransition) <span>Alta.PlayerStates.Transitions</span>
+- [PlayingToCustomizationTransition](/mod/game-api/types/alta-player/playingtocustomizationtransition) <span>Alta.PlayerStates.Transitions</span>
+- [PlayingToDeadTransition](/mod/game-api/types/alta-player/playingtodeadtransition) <span>Alta.PlayerStates.Transitions</span>
+- [PlayingToDownedTransition](/mod/game-api/types/alta-player/playingtodownedtransition) <span>Alta.PlayerStates.Transitions</span>
+- [PlayingToEquipmentTransition](/mod/game-api/types/alta-player/playingtoequipmenttransition) <span>Alta.PlayerStates.Transitions</span>
+- [PlayingToSpiritTransition](/mod/game-api/types/alta-player/playingtospirittransition) <span>Alta.PlayerStates</span>
+- [PlayOnlyAttribute](/mod/game-api/types/alta-console/playonlyattribute) <span>Alta.Console</span>
+- [PlaySound](/mod/game-api/types/global-p/playsound)
+- [PlayTutorialChecker](/mod/game-api/types/global-p/playtutorialchecker)
+- [Plugin](/mod/game-api/types/alta-world-generation/plugin) <span>Alta.Caves</span>
+- [PluginInstance](/mod/game-api/types/alta-world-generation/plugininstance) <span>Alta.Caves</span>
+- [PluginList](/mod/game-api/types/alta-world-generation/pluginlist) <span>Alta.Caves</span>
+- [PluginList.Create](/mod/game-api/types/alta-world-generation/pluginlist-create) <span>Alta.Caves</span>
+- [Plus](/mod/game-api/types/alta-intelligence/plus) <span>Alta.Intelligence</span>
+- [Point](/mod/game-api/types/alta-world-generation/point) <span>Alta.Caves.PluginParts</span>
+- [PointEdge](/mod/game-api/types/alta-world-generation/pointedge) <span>Alta.Forests</span>
+- [Pointer](/mod/game-api/types/global-p/pointer)
+- [Pointer.HungerMaterial](/mod/game-api/types/global-p/pointer-hungermaterial)
+- [PointerChunkReference](/mod/game-api/types/global-p/pointerchunkreference)
+- [PointerEventHandler](/mod/game-api/types/global-p/pointereventhandler)
+- [PointerGameObjectExtensions](/mod/game-api/types/global-p/pointergameobjectextensions)
+- [PointerReference](/mod/game-api/types/alta-world/pointerreference) <span>Alta.Chunks</span>
+- [PointNormal](/mod/game-api/types/alta-world-generation/pointnormal) <span>Alta.Forests</span>
+- [PointsPopulationValue](/mod/game-api/types/alta-world-generation/pointspopulationvalue) <span>Alta.Populations</span>
+- [PointTowardsEachotherPart](/mod/game-api/types/global-p/pointtowardseachotherpart)
+- [PoisonEffect](/mod/game-api/types/alta-stats-effects/poisoneffect) <span>Alta.Alchemy</span>
+- [PoisonStat](/mod/game-api/types/alta-stats-effects/poisonstat) <span>Alta.StatSystem</span>
+- [PoisonStat.Create](/mod/game-api/types/alta-stats-effects/poisonstat-create) <span>Alta.StatSystem</span>
+- [PolygonChunkDisplay](/mod/game-api/types/alta-world-generation/polygonchunkdisplay) <span>Alta.Caves.Displays</span>
+- [PoolChangedHandler](/mod/game-api/types/global-p/poolchangedhandler)
+- [PooledAkGameObj](/mod/game-api/types/global-p/pooledakgameobj)
+- [PooledDataQueueItem](/mod/game-api/types/alta-networking/pooleddataqueueitem) <span>Alta.Networking.Internal</span>
+- [PooledDockVisual](/mod/game-api/types/alta-items/pooleddockvisual) <span>Alta.Inventory</span>
+- [PooledEffectParent](/mod/game-api/types/global-p/pooledeffectparent)
+- [PooledFireEffect](/mod/game-api/types/global-p/pooledfireeffect)
+- [PooledFixedImpactor](/mod/game-api/types/alta-items/pooledfixedimpactor) <span>Alta.Impact</span>
+- [PooledLerpFollow](/mod/game-api/types/global-p/pooledlerpfollow)
+- [PooledMenuSettings](/mod/game-api/types/alta-player/pooledmenusettings) <span>Alta.QuickAccessActions</span>
+- [PooledMeshReplaceObjectDefinition](/mod/game-api/types/global-p/pooledmeshreplaceobjectdefinition)
+- [PooledMeshReplaceObjectDefinition.Create](/mod/game-api/types/global-p/pooledmeshreplaceobjectdefinition-create)
+- [PooledObject](/mod/game-api/types/global-p/pooledobject)
+- [PooledObjectDefinition](/mod/game-api/types/global-p/pooledobjectdefinition)
+- [PooledObjectDefinition.Create](/mod/game-api/types/global-p/pooledobjectdefinition-create)
+- [PooledObjectDefinitionBase](/mod/game-api/types/global-p/pooledobjectdefinitionbase)
+- [PooledObjectDefinitionTrigger](/mod/game-api/types/global-p/pooledobjectdefinitiontrigger)
+- [PooledObjectPool](/mod/game-api/types/global-p/pooledobjectpool)
+- [PooledObjectSoundHook](/mod/game-api/types/global-p/pooledobjectsoundhook)
+- [PooledParticleSystem](/mod/game-api/types/game-other-namespaces/pooledparticlesystem) <span>Features</span>
+- [PooledParticleSystemManipulator](/mod/game-api/types/game-other-namespaces/pooledparticlesystemmanipulator) <span>Features.Visual_Effects.General_Scripts</span>
+- [PooledParticleSystemMeshEmision](/mod/game-api/types/global-p/pooledparticlesystemmeshemision)
+- [PooledTempWwiseAudio](/mod/game-api/types/global-p/pooledtempwwiseaudio)
+- [PooledTextRenderer](/mod/game-api/types/global-p/pooledtextrenderer)
+- [PopulationAction](/mod/game-api/types/alta-world-generation/populationaction) <span>Alta.Populations</span>
+- [PopulationAnalytics](/mod/game-api/types/alta-world-generation/populationanalytics) <span>Alta.Populations</span>
+- [PopulationDefinition](/mod/game-api/types/alta-world-generation/populationdefinition) <span>Alta.Populations</span>
+- [PopulationDefinition.Create](/mod/game-api/types/alta-world-generation/populationdefinition-create) <span>Alta.Populations</span>
+- [PopulationDefinition.FestivePrefabGroup](/mod/game-api/types/alta-world-generation/populationdefinition-festiveprefabgroup) <span>Alta.Populations</span>
+- [PopulationDefinition.PopulationImpact](/mod/game-api/types/alta-world-generation/populationdefinition-populationimpact) <span>Alta.Populations</span>
+- [PopulationDefinition.RandomRotationType](/mod/game-api/types/alta-world-generation/populationdefinition-randomrotationtype) <span>Alta.Populations</span>
+- [PopulationDefinitionManager](/mod/game-api/types/alta-world-generation/populationdefinitionmanager) <span>Alta.Populations</span>
+- [PopulationDefinitionManagerData](/mod/game-api/types/alta-world-generation/populationdefinitionmanagerdata) <span>Alta.Populations</span>
+- [PopulationDelegate](/mod/game-api/types/alta-world-generation/populationdelegate) <span>Alta.Populations</span>
+- [PopulationEvent](/mod/game-api/types/alta-world-generation/populationevent) <span>Alta.Populations</span>
+- [PopulationEventData](/mod/game-api/types/alta-world-generation/populationeventdata) <span>Alta.Populations</span>
+- [PopulationFolder](/mod/game-api/types/alta-world-generation/populationfolder) <span>Alta.Populations</span>
+- [PopulationFolder&lt;TThis, TData&gt;](/mod/game-api/types/alta-world-generation/populationfolder-tthis-tdata) <span>Alta.Populations</span>
+- [PopulationFolderBase](/mod/game-api/types/alta-world-generation/populationfolderbase) <span>Alta.Populations</span>
+- [PopulationFolderBase.SerializedChild](/mod/game-api/types/alta-world-generation/populationfolderbase-serializedchild) <span>Alta.Populations</span>
+- [PopulationFolderSaveData](/mod/game-api/types/alta-world-generation/populationfoldersavedata) <span>Alta.Populations</span>
+- [PopulationFolderSaveData1](/mod/game-api/types/alta-world-generation/populationfoldersavedata1) <span>Alta.Populations</span>
+- [PopulationItem](/mod/game-api/types/alta-world-generation/populationitem) <span>Alta.Populations</span>
+- [PopulationItemSpawnHandler](/mod/game-api/types/alta-world-generation/populationitemspawnhandler) <span>Alta.Populations</span>
+- [PopulationPath](/mod/game-api/types/global-p/populationpath)
+- [PopulationPathSaveData](/mod/game-api/types/global-p/populationpathsavedata)
+- [PopulationRaycast](/mod/game-api/types/alta-world-generation/populationraycast) <span>Alta.Populations</span>
+- [PopulationRaycast.Create](/mod/game-api/types/alta-world-generation/populationraycast-create) <span>Alta.Populations</span>
+- [PopulationSample](/mod/game-api/types/alta-world-generation/populationsample) <span>Alta.Populations</span>
+- [PopulationSaveDataChild](/mod/game-api/types/alta-world-generation/populationsavedatachild) <span>Alta.Populations</span>
+- [PopulationSetup](/mod/game-api/types/alta-world-generation/populationsetup) <span>Alta.Populations</span>
+- [PopulationSetup.Create](/mod/game-api/types/alta-world-generation/populationsetup-create) <span>Alta.Populations</span>
+- [PopulationSpawnArea](/mod/game-api/types/alta-world-generation/populationspawnarea) <span>Alta.Populations</span>
+- [PopulationSpawnAreaSaveData](/mod/game-api/types/alta-world-generation/populationspawnareasavedata) <span>Alta.Populations</span>
+- [PopulationSpawnAreaSaveData1](/mod/game-api/types/alta-world-generation/populationspawnareasavedata1) <span>Alta.Populations</span>
+- [PopulationSpawnInformation](/mod/game-api/types/alta-world-generation/populationspawninformation) <span>Alta.Populations</span>
+- [PopulationTimerDefinition](/mod/game-api/types/alta-world-generation/populationtimerdefinition) <span>Alta.Populations</span>
+- [PopulationUnityEvent](/mod/game-api/types/alta-world-generation/populationunityevent) <span>Alta.Populations</span>
+- [Popup](/mod/game-api/types/alta-menus/popup) <span>Alta.Meta.UI</span>
+- [PopupBoard](/mod/game-api/types/global-p/popupboard)
+- [PopupManager](/mod/game-api/types/global-p/popupmanager)
+- [PopupManager.IPopupConfig](/mod/game-api/types/global-p/popupmanager-ipopupconfig)
+- [PopupManager.PopupConfig](/mod/game-api/types/global-p/popupmanager-popupconfig)
+- [PopupScriptableObject](/mod/game-api/types/global-p/popupscriptableobject)
+- [PortalBasedCullingCamera](/mod/game-api/types/global-p/portalbasedcullingcamera)
+- [PortConfig](/mod/game-api/types/assembly-api-models/portconfig) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [PoseChangedHandler](/mod/game-api/types/global-p/posechangedhandler)
+- [PosedObject](/mod/game-api/types/global-p/posedobject)
+- [PositionAndRotationTarget](/mod/game-api/types/global-p/positionandrotationtarget)
+- [PositionChangedHandler](/mod/game-api/types/alta-player/positionchangedhandler) <span>Alta.Character</span>
+- [PositionedNetworkPrefab](/mod/game-api/types/global-p/positionednetworkprefab)
+- [PositionedPrefab&lt;T&gt;](/mod/game-api/types/global-p/positionedprefab-t)
+- [PositionedStaticPrefab](/mod/game-api/types/global-p/positionedstaticprefab)
+- [PositionEvent](/mod/game-api/types/global-p/positionevent)
+- [PositionFromOriginHandler](/mod/game-api/types/global-p/positionfromoriginhandler)
+- [PositionFromOriginHelper](/mod/game-api/types/global-p/positionfromoriginhelper)
+- [PositionHandler](/mod/game-api/types/global-p/positionhandler)
+- [PositioningMode](/mod/game-api/types/global-p/positioningmode)
+- [PositionLerp](/mod/game-api/types/global-p/positionlerp)
+- [PositionProvider](/mod/game-api/types/alta-items/positionprovider) <span>Alta.Logic</span>
+- [PositionProviderSaveData](/mod/game-api/types/alta-items/positionprovidersavedata) <span>Alta.Logic</span>
+- [PositionRecord](/mod/game-api/types/global-p/positionrecord)
+- [PositionRecorder](/mod/game-api/types/global-p/positionrecorder)
+- [PositionRestrictor](/mod/game-api/types/alta-items/positionrestrictor) <span>Alta.Pages</span>
+- [PositionRestrictor.SyncArgs](/mod/game-api/types/alta-items/positionrestrictor-syncargs) <span>Alta.Pages</span>
+- [PositionRestrictorSaveData](/mod/game-api/types/alta-items/positionrestrictorsavedata) <span>Alta.Pages</span>
+- [PositionRestrictorSaveData2](/mod/game-api/types/alta-items/positionrestrictorsavedata2) <span>Alta.Pages</span>
+- [PositionRestrictorSaveDataOld1](/mod/game-api/types/alta-items/positionrestrictorsavedataold1) <span>Alta.Pages</span>
+- [PositionRotationEvent](/mod/game-api/types/global-p/positionrotationevent)
+- [PositionRotationHandler](/mod/game-api/types/global-p/positionrotationhandler)
+- [PositionSerializer](/mod/game-api/types/global-p/positionserializer)
+- [PositionSerializer&lt;T&gt;](/mod/game-api/types/global-p/positionserializer-t)
+- [PositionSurfaceDefinition](/mod/game-api/types/alta-world/positionsurfacedefinition) <span>Alta.Chunks</span>
+- [PositionSurfaceDefinition.RotationMode](/mod/game-api/types/alta-world/positionsurfacedefinition-rotationmode) <span>Alta.Chunks</span>
+- [PositionSurfaceDefinitionSettings](/mod/game-api/types/global-p/positionsurfacedefinitionsettings)
+- [PositionSwapper](/mod/game-api/types/global-p/positionswapper)
+- [PositionSyncBlocker](/mod/game-api/types/alta-networking/positionsyncblocker) <span>Alta.Networking</span>
+- [Postbox](/mod/game-api/types/global-p/postbox)
+- [PostboxManager](/mod/game-api/types/global-p/postboxmanager)
+- [PostboxManager.TradeVendorData](/mod/game-api/types/global-p/postboxmanager-tradevendordata)
+- [PostboxSender](/mod/game-api/types/global-p/postboxsender)
+- [PostboxSender.EffectType](/mod/game-api/types/global-p/postboxsender-effecttype)
+- [PostBoxSenderManager](/mod/game-api/types/global-p/postboxsendermanager)
+- [PostBoxSenderManager.PerPlayerSendingCount](/mod/game-api/types/global-p/postboxsendermanager-perplayersendingcount)
+- [PostHeaderAttribute](/mod/game-api/types/assembly-other/postheaderattribute)
+- [PostProcessFilter](/mod/game-api/types/alta-customization/postprocessfilter) <span>Alta.ScreenshotCamera</span>
+- [PostRenderNotifier](/mod/game-api/types/global-p/postrendernotifier)
+- [PotatoSapling](/mod/game-api/types/global-p/potatosapling)
+- [PotDefinition](/mod/game-api/types/alta-crafting/potdefinition) <span>Alta.Cooking</span>
+- [PotDefinition.Create](/mod/game-api/types/alta-crafting/potdefinition-create) <span>Alta.Cooking</span>
+- [PotionImpactColorer](/mod/game-api/types/alta-stats-effects/potionimpactcolorer) <span>Alta.Liquid</span>
+- [PotionVisuals](/mod/game-api/types/global-p/potionvisuals)
+- [PouchSpawner](/mod/game-api/types/global-p/pouchspawner)
+- [PourableContainer](/mod/game-api/types/alta-stats-effects/pourablecontainer) <span>Alta.Liquid</span>
+- [PouringParticles](/mod/game-api/types/alta-stats-effects/pouringparticles) <span>Alta.Liquid</span>
+- [PouringStrengthController](/mod/game-api/types/alta-stats-effects/pouringstrengthcontroller) <span>Alta.Liquid</span>
+- [PowerCrossSlash](/mod/game-api/types/global-p/powercrossslash)
+- [PowerCrossSlash.Create](/mod/game-api/types/global-p/powercrossslash-create)
+- [PoweredRespawnShrine](/mod/game-api/types/game-other-namespaces/poweredrespawnshrine) <span>ATT.Respawn</span>
+- [PoweredRespawnShrineSaveData](/mod/game-api/types/game-other-namespaces/poweredrespawnshrinesavedata) <span>ATT.Respawn</span>
+- [PowerHit](/mod/game-api/types/global-p/powerhit)
+- [PowerHit.Create](/mod/game-api/types/global-p/powerhit-create)
+- [PowerStinger](/mod/game-api/types/global-p/powerstinger)
+- [PowerStrike](/mod/game-api/types/global-p/powerstrike)
+- [PowerStrike.Create](/mod/game-api/types/global-p/powerstrike-create)
+- [PowerStrikeTester](/mod/game-api/types/global-p/powerstriketester)
+- [PracticeAreaShrinkFader](/mod/game-api/types/global-p/practiceareashrinkfader)
+- [PracticeObjectFader](/mod/game-api/types/global-p/practiceobjectfader)
+- [Predicate](/mod/game-api/types/alta-intelligence/predicate) <span>Alta.Intelligence</span>
+- [PrefabApplyAttribute](/mod/game-api/types/assembly-other/prefabapplyattribute)
+- [PrefabHashAttribute](/mod/game-api/types/global-p/prefabhashattribute)
+- [PrefabInfoDump](/mod/game-api/types/alta-console/prefabinfodump) <span>Alta.Console.Commands</span>
+- [PrefabInfoDump.NetworkEntityInfoDump](/mod/game-api/types/alta-console/prefabinfodump-networkentityinfodump) <span>Alta.Console.Commands</span>
+- [PrefabInfoDump.SavableInfoDump](/mod/game-api/types/alta-console/prefabinfodump-savableinfodump) <span>Alta.Console.Commands</span>
+- [PrefabInPositionEvent](/mod/game-api/types/game-other-namespaces/prefabinpositionevent) <span>ATT.EventBus.TownshipEvents</span>
+- [PrefabInPositionObserver](/mod/game-api/types/game-other-namespaces/prefabinpositionobserver) <span>ATT.MicroTutorial.Steps</span>
+- [PrefabInPositionStep](/mod/game-api/types/game-other-namespaces/prefabinpositionstep) <span>ATT.MicroTutorial.Steps</span>
+- [PrefabLoadManager](/mod/game-api/types/alta-world/prefabloadmanager) <span>Alta.Chunks</span>
+- [PrefabLODSettings](/mod/game-api/types/global-p/prefablodsettings)
+- [PrefabManager](/mod/game-api/types/alta-networking/prefabmanager) <span>Alta.Networking</span>
+- [PrefabNameMap](/mod/game-api/types/alta-networking/prefabnamemap) <span>Alta.Networking</span>
+- [PrefabReference](/mod/game-api/types/game-other-namespaces/prefabreference) <span>ATT</span>
+- [PrefabSceneDayTimeManager](/mod/game-api/types/alta-world/prefabscenedaytimemanager) <span>Alta.Environmental.Atmosphere</span>
+- [PrefabSceneSettings](/mod/game-api/types/alta-world/prefabscenesettings) <span>Alta.Environmental.Atmosphere</span>
+- [PrefabSceneSettings.Prefab_Scene_Settings](/mod/game-api/types/alta-world/prefabscenesettings-prefab_scene_settings) <span>Alta.Environmental.Atmosphere</span>
+- [PrefabSpawnPosition](/mod/game-api/types/alta-crafting/prefabspawnposition) <span>Alta.Carpentry</span>
+- [PrefabStageDefinition](/mod/game-api/types/global-p/prefabstagedefinition)
+- [PrefabStageDefinition.PrefabSetup](/mod/game-api/types/global-p/prefabstagedefinition-prefabsetup)
+- [PregeneratedCave](/mod/game-api/types/alta-world-generation/pregeneratedcave) <span>Alta.Caves</span>
+- [PregeneratedCave.Layer](/mod/game-api/types/alta-world-generation/pregeneratedcave-layer) <span>Alta.Caves</span>
+- [PresetLootModule](/mod/game-api/types/alta-world-generation/presetlootmodule) <span>Alta.Loot</span>
+- [PresetLootModuleSaveData](/mod/game-api/types/alta-world-generation/presetlootmodulesavedata) <span>Alta.Loot</span>
+- [PresetLootSet](/mod/game-api/types/alta-world-generation/presetlootset) <span>Alta.Loot</span>
+- [PresetLootSet.Create](/mod/game-api/types/alta-world-generation/presetlootset-create) <span>Alta.Loot</span>
+- [PresetLootSet.Entry](/mod/game-api/types/alta-world-generation/presetlootset-entry) <span>Alta.Loot</span>
+- [PresetTree](/mod/game-api/types/alta-crafting/presettree) <span>Alta.Woodcutting</span>
+- [PresetTree.Create](/mod/game-api/types/alta-crafting/presettree-create) <span>Alta.Woodcutting</span>
+- [PresetTree.Step](/mod/game-api/types/alta-crafting/presettree-step) <span>Alta.Woodcutting</span>
+- [PresetTree.Step.Attachment](/mod/game-api/types/alta-crafting/presettree-step-attachment) <span>Alta.Woodcutting</span>
+- [PresetWayPointPath](/mod/game-api/types/global-p/presetwaypointpath)
+- [PreventAtlas](/mod/game-api/types/alta-utilities/preventatlas) <span>Alta.Utilities.Atlas</span>
+- [PreventStaticBatchingCollisionSplitting](/mod/game-api/types/global-p/preventstaticbatchingcollisionsplitting)
+- [PriceType](/mod/game-api/types/assembly-api-models/pricetype) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [PrimesUtility](/mod/game-api/types/alta-crafting/primesutility) <span>Alta.Cooking</span>
+- [PriorityAttribute](/mod/game-api/types/alta-console/priorityattribute) <span>Alta.Console</span>
+- [ProceduralBladeTemplate](/mod/game-api/types/alta-world/proceduralbladetemplate) <span>Alta.Environmental.Vegetation</span>
+- [ProcessDiagnostics](/mod/game-api/types/global-p/processdiagnostics)
+- [ProcessMetrics](/mod/game-api/types/global-p/processmetrics)
+- [ProcessMetrics.MemoryCounters](/mod/game-api/types/global-p/processmetrics-memorycounters)
+- [ProcessRunner](/mod/game-api/types/global-p/processrunner)
+- [ProfessionDiskAvailablePointsVisualizer](/mod/game-api/types/global-p/professiondiskavailablepointsvisualizer)
+- [ProfessionSkill](/mod/game-api/types/global-p/professionskill)
+- [ProfessionSkill.ActiveEffect](/mod/game-api/types/global-p/professionskill-activeeffect)
+- [ProfessionSkill&lt;T&gt;](/mod/game-api/types/global-p/professionskill-t)
+- [ProfessionSkillDelegate](/mod/game-api/types/global-p/professionskilldelegate)
+- [ProfessionSkillTree](/mod/game-api/types/global-p/professionskilltree)
+- [ProfessionsProgressShrine](/mod/game-api/types/global-p/professionsprogressshrine)
+- [ProfileChunkLoading](/mod/game-api/types/global-p/profilechunkloading)
+- [ProfileChunkLoading.GameData](/mod/game-api/types/global-p/profilechunkloading-gamedata)
+- [ProfileChunkLoading.ProfileData](/mod/game-api/types/global-p/profilechunkloading-profiledata)
+- [ProfileChunkLoading.ProfilingPosition](/mod/game-api/types/global-p/profilechunkloading-profilingposition)
+- [ProfileMarker](/mod/game-api/types/assembly-other/profilemarker) <span>Alta.Profiling</span>
+- [ProfileNetworkSerializedAttribute](/mod/game-api/types/alta-networking/profilenetworkserializedattribute) <span>Alta.Networking</span>
+- [ProfilingCommandModule](/mod/game-api/types/alta-console/profilingcommandmodule) <span>Alta.Console.Commands</span>
+- [ProfilingLoader](/mod/game-api/types/global-p/profilingloader)
+- [ProfilingPositionCycler](/mod/game-api/types/global-p/profilingpositioncycler)
+- [ProfilingPositionCycler.Create](/mod/game-api/types/global-p/profilingpositioncycler-create)
+- [ProfilingPositionCycler.ProfilingPosition](/mod/game-api/types/global-p/profilingpositioncycler-profilingposition)
+- [ProfilingSession](/mod/game-api/types/assembly-other/profilingsession) <span>Alta.Profiling</span>
+- [ProfilingTrigger](/mod/game-api/types/global-p/profilingtrigger)
+- [ProgressBar](/mod/game-api/types/global-p/progressbar)
+- [ProgressCommandModule](/mod/game-api/types/alta-console/progresscommandmodule) <span>Alta.Console.Commands</span>
+- [ProgressCommandModule.CaveTeleporterDetails](/mod/game-api/types/alta-console/progresscommandmodule-caveteleporterdetails) <span>Alta.Console.Commands</span>
+- [ProgressCorrection](/mod/game-api/types/global-p/progresscorrection)
+- [ProgressionPath](/mod/game-api/types/global-p/progressionpath)
+- [ProgressionSettings](/mod/game-api/types/global-p/progressionsettings)
+- [ProgressionSettings.Create](/mod/game-api/types/global-p/progressionsettings-create)
+- [ProgressionSettings.InputSystemSound](/mod/game-api/types/global-p/progressionsettings-inputsystemsound)
+- [ProgressionSettings.PathData](/mod/game-api/types/global-p/progressionsettings-pathdata)
+- [ProgressionSettings.PathExperiencePerDamage](/mod/game-api/types/global-p/progressionsettings-pathexperienceperdamage)
+- [ProgressionSettings.PathExperienceShare](/mod/game-api/types/global-p/progressionsettings-pathexperienceshare)
+- [ProgressionSettings.PathImpactChannel](/mod/game-api/types/global-p/progressionsettings-pathimpactchannel)
+- [ProgressionShrine](/mod/game-api/types/global-p/progressionshrine)
+- [ProgressionSlot](/mod/game-api/types/global-p/progressionslot)
+- [ProgressionSlotContainer](/mod/game-api/types/global-p/progressionslotcontainer)
+- [ProgressiveHandler](/mod/game-api/types/alta-console/progressivehandler) <span>Alta.Console</span>
+- [ProgressMaterialEffect](/mod/game-api/types/global-p/progressmaterialeffect)
+- [ProgressStatChangeHook](/mod/game-api/types/alta-intelligence/progressstatchangehook) <span>Alta.Intelligence</span>
+- [ProgressStatChangeHook.TopicProgress](/mod/game-api/types/alta-intelligence/progressstatchangehook-topicprogress) <span>Alta.Intelligence</span>
+- [Projectile](/mod/game-api/types/global-p/projectile)
+- [ProjectileAltaEvent](/mod/game-api/types/global-p/projectilealtaevent)
+- [ProjectileComponent](/mod/game-api/types/global-p/projectilecomponent)
+- [ProjectileEffect](/mod/game-api/types/global-p/projectileeffect)
+- [ProjectileShooter](/mod/game-api/types/alta-intelligence/projectileshooter) <span>Alta.Intelligence</span>
+- [ProjectileShooter.AimMode](/mod/game-api/types/alta-intelligence/projectileshooter-aimmode) <span>Alta.Intelligence</span>
+- [ProjectileUnityEvent](/mod/game-api/types/global-p/projectileunityevent)
+- [ProjectLifetimeScope](/mod/game-api/types/assembly-other/projectlifetimescope) <span>Alta.ATT.LifetimeScopes</span>
+- [PropelledProjectile](/mod/game-api/types/global-p/propelledprojectile)
+- [PropertyBlockColorAccessor](/mod/game-api/types/global-p/propertyblockcoloraccessor)
+- [PublicUserInfoResponse](/mod/game-api/types/assembly-api-models/publicuserinforesponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PullAway](/mod/game-api/types/alta-items/pullaway) <span>Alta.Mechanisms</span>
+- [PullCord](/mod/game-api/types/global-p/pullcord)
+- [PullEvent](/mod/game-api/types/global-p/pullevent)
+- [PullEventHandler](/mod/game-api/types/global-p/pulleventhandler)
+- [PulleyBeltHelper](/mod/game-api/types/global-p/pulleybelthelper)
+- [PulleyBeltHelper.BeltOutput](/mod/game-api/types/global-p/pulleybelthelper-beltoutput)
+- [PulleyBeltHelper.Circle](/mod/game-api/types/global-p/pulleybelthelper-circle)
+- [PullingHandle](/mod/game-api/types/global-p/pullinghandle)
+- [PullPickup](/mod/game-api/types/global-p/pullpickup)
+- [PullPickupGroup](/mod/game-api/types/global-p/pullpickupgroup)
+- [Pump](/mod/game-api/types/global-p/pump)
+- [PumpingMechanism](/mod/game-api/types/global-p/pumpingmechanism)
+- [Purchasable](/mod/game-api/types/alta-customization/purchasable) <span>Alta.Customization</span>
+- [PurchasableMap](/mod/game-api/types/alta-customization/purchasablemap) <span>Alta.Customization</span>
+- [PurchasableMap.CosmeticCategory](/mod/game-api/types/alta-customization/purchasablemap-cosmeticcategory) <span>Alta.Customization</span>
+- [PurchasableMap.CosmeticSet](/mod/game-api/types/alta-customization/purchasablemap-cosmeticset) <span>Alta.Customization</span>
+- [PurchasableMap.HashIdentifierPair](/mod/game-api/types/alta-customization/purchasablemap-hashidentifierpair) <span>Alta.Customization</span>
+- [PurchaseCouponRequest](/mod/game-api/types/assembly-api-models/purchasecouponrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [PurchasedList](/mod/game-api/types/alta-customization/purchasedlist) <span>Alta.Customization</span>
+- [PurchaseError](/mod/game-api/types/game-other-namespaces/purchaseerror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [PurchaseItemTokenRequest](/mod/game-api/types/assembly-api-models/purchaseitemtokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [PurchaseRequest](/mod/game-api/types/assembly-api-models/purchaserequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [PurchaseResult](/mod/game-api/types/assembly-api-models/purchaseresult) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [PurchaseResult](/mod/game-api/types/game-other-namespaces/purchaseresult) <span>Features.Main_Menu.Scripts.TalemShop</span>
+- [PurchaseResultType](/mod/game-api/types/assembly-api-models/purchaseresulttype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [Puzzle](/mod/game-api/types/global-p/puzzle)
+- [PuzzleCondition](/mod/game-api/types/global-p/puzzlecondition)
+- [PuzzleConditionHandler](/mod/game-api/types/global-p/puzzleconditionhandler)
+- [PuzzleConditionHandlerTemp](/mod/game-api/types/global-p/puzzleconditionhandlertemp)
+- [PuzzleConditionsAND](/mod/game-api/types/global-p/puzzleconditionsand)
+- [PuzzleConditionsANDTemp](/mod/game-api/types/global-p/puzzleconditionsandtemp)
+- [PuzzleConditionTemp](/mod/game-api/types/global-p/puzzleconditiontemp)
+- [PuzzleDoor](/mod/game-api/types/global-p/puzzledoor)
+- [PuzzleLightBeam](/mod/game-api/types/global-p/puzzlelightbeam)
+- [PuzzleLightMirror](/mod/game-api/types/global-p/puzzlelightmirror)
+- [PuzzleLightReflectExample2](/mod/game-api/types/global-p/puzzlelightreflectexample2)
+- [PuzzleLightTarget](/mod/game-api/types/global-p/puzzlelighttarget)
+
+</div>
+
+## Q
+
+<div className="type-index">
+
+- [QamOptionAsButtonCommand](/mod/game-api/types/alta-menus/qamoptionasbuttoncommand) <span>Alta.Menu</span>
+- [QuadTriangulationToolLogic](/mod/game-api/types/global-q-r/quadtriangulationtoollogic)
+- [QuadTriangulationToolLogic.Triangle](/mod/game-api/types/global-q-r/quadtriangulationtoollogic-triangle)
+- [QualityCommandModule](/mod/game-api/types/alta-console/qualitycommandmodule) <span>Alta.Console.Commands</span>
+- [QuantityChangeHandler](/mod/game-api/types/alta-items/quantitychangehandler) <span>Alta.Inventory</span>
+- [QuarterCycle](/mod/game-api/types/alta-world/quartercycle) <span>Alta.Environmental.Atmosphere</span>
+- [QuaternionRotationSlerp](/mod/game-api/types/global-q-r/quaternionrotationslerp)
+- [QuaternionVector3Attribute](/mod/game-api/types/assembly-other/quaternionvector3attribute)
+- [Query](/mod/game-api/types/assembly-api-models/query) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [QueryExtensions](/mod/game-api/types/assembly-api-models/queryextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [QueryMeta](/mod/game-api/types/assembly-api-models/querymeta) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [QueryResponse](/mod/game-api/types/assembly-api-models/queryresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [QuestBoard](/mod/game-api/types/global-q-r/questboard)
+- [QuestCompleteEffect](/mod/game-api/types/global-q-r/questcompleteeffect)
+- [QuestMarker](/mod/game-api/types/game-other-namespaces/questmarker) <span>Features.Gameplay.Progression.QuestMarkers</span>
+- [QuestMarkerDataUpdater](/mod/game-api/types/global-q-r/questmarkerdataupdater)
+- [QueuedConnectionHelper](/mod/game-api/types/alta-networking/queuedconnectionhelper) <span>Alta.Networking.Internal</span>
+- [QueuedConnectionReceiver](/mod/game-api/types/alta-networking/queuedconnectionreceiver) <span>Alta.Networking.Internal</span>
+- [QuickAccessDynamicIcon](/mod/game-api/types/alta-player/quickaccessdynamicicon) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuAction](/mod/game-api/types/alta-player/quickaccessmenuaction) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuBubble](/mod/game-api/types/alta-player/quickaccessmenububble) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuController](/mod/game-api/types/alta-player/quickaccessmenucontroller) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuOrientation](/mod/game-api/types/alta-player/quickaccessmenuorientation) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuSettings](/mod/game-api/types/alta-player/quickaccessmenusettings) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent](/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent) <span>Alta.QuickAccessActions</span>
+- [QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit](/mod/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit) <span>Alta.QuickAccessActions</span>
+- [QuickAccessSettingsBoard](/mod/game-api/types/alta-player/quickaccesssettingsboard) <span>Alta.QuickAccessActions</span>
+- [QuickAccessSettingsBoard.SettingsControl](/mod/game-api/types/alta-player/quickaccesssettingsboard-settingscontrol) <span>Alta.QuickAccessActions</span>
+- [QuickCreateRequest](/mod/game-api/types/assembly-api-models/quickcreaterequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [QuickCreateResponse](/mod/game-api/types/assembly-api-models/quickcreateresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [QuickDrawApplication](/mod/game-api/types/alta-crafting/quickdrawapplication) <span>Alta.Enchantments</span>
+- [QuickDrawTrigger](/mod/game-api/types/alta-crafting/quickdrawtrigger) <span>Alta.Enchantments</span>
+- [QuickDrawTrigger.Create](/mod/game-api/types/alta-crafting/quickdrawtrigger-create) <span>Alta.Enchantments</span>
+- [QuitCommandModule](/mod/game-api/types/alta-console/quitcommandmodule) <span>Alta.Console.Commands</span>
+- [Quiver](/mod/game-api/types/global-q-r/quiver)
+
+</div>
+
+## R
+
+<div className="type-index">
+
+- [RadialPopulationArea](/mod/game-api/types/alta-world-generation/radialpopulationarea) <span>Alta.Populations</span>
+- [RadialPopulationItem](/mod/game-api/types/alta-world-generation/radialpopulationitem) <span>Alta.Populations</span>
+- [RadiusHeatArea](/mod/game-api/types/alta-stats-effects/radiusheatarea) <span>Alta.Heat</span>
+- [RaiseHandStructure](/mod/game-api/types/global-q-r/raisehandstructure)
+- [RaiseHandStructure.Create](/mod/game-api/types/global-q-r/raisehandstructure-create)
+- [RampBrush](/mod/game-api/types/global-q-r/rampbrush)
+- [RampLerp3Blit](/mod/game-api/types/alta-utilities/ramplerp3blit) <span>Alta.Utilities.Atlas</span>
+- [RampLerp_CosmeticTestBlit](/mod/game-api/types/alta-utilities/ramplerp_cosmetictestblit) <span>Alta.Utilities.Atlas</span>
+- [RampLerpBlit](/mod/game-api/types/alta-utilities/ramplerpblit) <span>Alta.Utilities.Atlas</span>
+- [RampLerpNoCullCutoutBlit](/mod/game-api/types/alta-utilities/ramplerpnocullcutoutblit) <span>Alta.Utilities.Atlas</span>
+- [RamSpline](/mod/game-api/types/global-q-r/ramspline)
+- [RandomAnimationStart](/mod/game-api/types/global-q-r/randomanimationstart)
+- [RandomAudioPlayer](/mod/game-api/types/global-q-r/randomaudioplayer)
+- [RandomChildWeight](/mod/game-api/types/global-q-r/randomchildweight)
+- [RandomCutFilter](/mod/game-api/types/global-q-r/randomcutfilter)
+- [RandomCutFilter.Create](/mod/game-api/types/global-q-r/randomcutfilter-create)
+- [RandomCutPointNormalFilter](/mod/game-api/types/global-q-r/randomcutpointnormalfilter)
+- [RandomCutPointNormalFilter.Create](/mod/game-api/types/global-q-r/randomcutpointnormalfilter-create)
+- [RandomEntrySelect](/mod/game-api/types/global-q-r/randomentryselect)
+- [RandomFloatEntrySelect](/mod/game-api/types/global-q-r/randomfloatentryselect)
+- [RandomInterval](/mod/game-api/types/global-q-r/randominterval)
+- [RandomNoise](/mod/game-api/types/alta-world-generation/randomnoise) <span>Alta.Caves.PluginParts</span>
+- [RandomNoiseInstance](/mod/game-api/types/alta-world-generation/randomnoiseinstance) <span>Alta.Caves.PluginParts</span>
+- [RandomOffsetFilter](/mod/game-api/types/global-q-r/randomoffsetfilter)
+- [RandomOffsetFilter.Create](/mod/game-api/types/global-q-r/randomoffsetfilter-create)
+- [RandomPooledObjectDefinition](/mod/game-api/types/global-q-r/randompooledobjectdefinition)
+- [RandomPooledObjectDefinition.PooledObjectElement](/mod/game-api/types/global-q-r/randompooledobjectdefinition-pooledobjectelement)
+- [RandomRotation3d](/mod/game-api/types/global-q-r/randomrotation3d)
+- [RandomRotationModifier](/mod/game-api/types/global-q-r/randomrotationmodifier)
+- [RandomRotationModifier.Create](/mod/game-api/types/global-q-r/randomrotationmodifier-create)
+- [RandomRotationPart](/mod/game-api/types/global-q-r/randomrotationpart)
+- [RandomScaleModifier](/mod/game-api/types/global-q-r/randomscalemodifier)
+- [RandomScaleModifier.Create](/mod/game-api/types/global-q-r/randomscalemodifier-create)
+- [RandomScalePooledObject](/mod/game-api/types/global-q-r/randomscalepooledobject)
+- [RandomSpawnRectangle](/mod/game-api/types/global-q-r/randomspawnrectangle)
+- [RandomSpawnRectangleSaveData](/mod/game-api/types/global-q-r/randomspawnrectanglesavedata)
+- [RandomState](/mod/game-api/types/global-q-r/randomstate)
+- [RandomState.Disposer](/mod/game-api/types/global-q-r/randomstate-disposer)
+- [RandomTimedActionComponent](/mod/game-api/types/alta-intelligence/randomtimedactioncomponent) <span>Alta.Intelligence</span>
+- [RandomTreeValue](/mod/game-api/types/global-q-r/randomtreevalue)
+- [RandomYRotation](/mod/game-api/types/global-q-r/randomyrotation)
+- [Rarity](/mod/game-api/types/alta-world-generation/rarity) <span>Alta.Loot</span>
+- [Rarity.Create](/mod/game-api/types/alta-world-generation/rarity-create) <span>Alta.Loot</span>
+- [RateLimiter](/mod/game-api/types/assembly-other/ratelimiter) <span>Alta.Utilities</span>
+- [RawLogHandler](/mod/game-api/types/alta-console/rawloghandler) <span>Alta.Logging.Targets</span>
+- [RaycastCrafter](/mod/game-api/types/global-q-r/raycastcrafter)
+- [RaycastCrafter.PlacedItem](/mod/game-api/types/global-q-r/raycastcrafter-placeditem)
+- [RaycastCrafterSaveData](/mod/game-api/types/global-q-r/raycastcraftersavedata)
+- [RaycastGrounded](/mod/game-api/types/alta-intelligence/raycastgrounded) <span>Alta.Intelligence</span>
+- [RaycastGroundedOperation](/mod/game-api/types/alta-intelligence/raycastgroundedoperation) <span>Alta.Intelligence</span>
+- [RaycastGroundedOperationType](/mod/game-api/types/alta-intelligence/raycastgroundedoperationtype) <span>Alta.Intelligence</span>
+- [RaycastPreview](/mod/game-api/types/global-q-r/raycastpreview)
+- [RaycastProjectile](/mod/game-api/types/global-q-r/raycastprojectile)
+- [RaycastReflection](/mod/game-api/types/global-q-r/raycastreflection)
+- [ReadOnlyAttribute](/mod/game-api/types/assembly-other/readonlyattribute)
+- [ReadOnlyInDebugAttribute](/mod/game-api/types/assembly-other/readonlyindebugattribute)
+- [ReadOnlyMode](/mod/game-api/types/assembly-other/readonlymode)
+- [RebindSkinnedMeshRenderers](/mod/game-api/types/global-q-r/rebindskinnedmeshrenderers)
+- [ReceivingMetrics](/mod/game-api/types/global-q-r/receivingmetrics)
+- [RecentPlayerActionPage](/mod/game-api/types/global-q-r/recentplayeractionpage)
+- [RecentPlayerActionPage.FriendButtonMap](/mod/game-api/types/global-q-r/recentplayeractionpage-friendbuttonmap)
+- [RecentPlayerElement](/mod/game-api/types/global-q-r/recentplayerelement)
+- [RecentPlayerElement.NameplateMeshReference](/mod/game-api/types/global-q-r/recentplayerelement-nameplatemeshreference)
+- [RecentPlayerInteractionInfo](/mod/game-api/types/assembly-api-models/recentplayerinteractioninfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [RecentPlayerInteractionRequest](/mod/game-api/types/assembly-api-models/recentplayerinteractionrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [RecentPlayerInteractionType](/mod/game-api/types/assembly-api-models/recentplayerinteractiontype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [RecentPlayerPanelListElement](/mod/game-api/types/alta-menus/recentplayerpanellistelement) <span>Alta.Meta.UI</span>
+- [RecentPlayers](/mod/game-api/types/global-q-r/recentplayers)
+- [RecentPlayersClient](/mod/game-api/types/assembly-api-client/recentplayersclient) <span>Alta.Api.Client.HighLevel</span>
+- [RecentPlayersListPanel](/mod/game-api/types/alta-menus/recentplayerslistpanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [RecentPlayersPage](/mod/game-api/types/alta-menus/recentplayerspage) <span>Alta.SocialTablet</span>
+- [RecipePlacer](/mod/game-api/types/alta-crafting/recipeplacer) <span>Alta.Carpentry</span>
+- [RecreateArgumentMode](/mod/game-api/types/alta-networking/recreateargumentmode) <span>Alta.Networking</span>
+- [RectExtensions](/mod/game-api/types/alta-world-generation/rectextensions) <span>Alta.Forests</span>
+- [Recycler](/mod/game-api/types/alta-crafting/recycler) <span>Alta.Blacksmithing</span>
+- [Recycler.MeltingModelReference](/mod/game-api/types/alta-crafting/recycler-meltingmodelreference) <span>Alta.Blacksmithing</span>
+- [RecyclerOutputSlot](/mod/game-api/types/alta-crafting/recycleroutputslot) <span>Alta.Blacksmithing</span>
+- [RecyclerOutputSlot.SaveData](/mod/game-api/types/alta-crafting/recycleroutputslot-savedata) <span>Alta.Blacksmithing</span>
+- [RecyclerSaveData](/mod/game-api/types/alta-crafting/recyclersavedata) <span>Alta.Blacksmithing</span>
+- [RedeemCouponRequest](/mod/game-api/types/assembly-api-models/redeemcouponrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [RedesignedAltaAccountLinker](/mod/game-api/types/global-q-r/redesignedaltaaccountlinker)
+- [RefBoolDelegate](/mod/game-api/types/global-q-r/refbooldelegate)
+- [ReferenceEqualsComparer&lt;T&gt;](/mod/game-api/types/global-q-r/referenceequalscomparer-t)
+- [RefreshRequest](/mod/game-api/types/assembly-api-models/refreshrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [Region](/mod/game-api/types/assembly-api-models/region) <span>Alta.Api.DataTransferModels.Enums</span>
+- [Region](/mod/game-api/types/assembly-api-models/region-alta-api-datatransfermodels-models-shared) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [RegionEndpointJsonConverter](/mod/game-api/types/assembly-api-models/regionendpointjsonconverter) <span>Alta.Api.DataTransferModels.Converters</span>
+- [RegionInfo](/mod/game-api/types/assembly-api-models/regioninfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [RegisterRequest](/mod/game-api/types/assembly-api-models/registerrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [RejectDockArea](/mod/game-api/types/alta-items/rejectdockarea) <span>Alta.Inventory</span>
+- [RelativePoint](/mod/game-api/types/global-q-r/relativepoint)
+- [RemoteAltaFile](/mod/game-api/types/assembly-other/remotealtafile) <span>Alta.Utilities</span>
+- [RemoteAltaFolder](/mod/game-api/types/assembly-other/remotealtafolder) <span>Alta.Utilities</span>
+- [RemoteConsoleCommandType](/mod/game-api/types/global-q-r/remoteconsolecommandtype)
+- [RemoteConsoleResponseType](/mod/game-api/types/global-q-r/remoteconsoleresponsetype)
+- [RemoteConsoleUtility](/mod/game-api/types/global-q-r/remoteconsoleutility)
+- [RemoteEquipmentModeVisuals](/mod/game-api/types/global-q-r/remoteequipmentmodevisuals)
+- [RemoteFiles](/mod/game-api/types/assembly-other/remotefiles) <span>Alta.Utilities</span>
+- [RemoteFiles.RemoteAltaFile&lt;TFileType&gt;](/mod/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype) <span>Alta.Utilities</span>
+- [RemoteObiturator](/mod/game-api/types/alta-customization/remoteobiturator) <span>Alta.ScreenshotCamera</span>
+- [RemoteStateTransitionsManager](/mod/game-api/types/alta-player/remotestatetransitionsmanager) <span>Alta.PlayerStates</span>
+- [RemovingTriangle](/mod/game-api/types/global-q-r/removingtriangle)
+- [RendererBoundsSizeAttribute](/mod/game-api/types/global-q-r/rendererboundssizeattribute)
+- [RendererGhost](/mod/game-api/types/global-q-r/rendererghost)
+- [RendererGroup](/mod/game-api/types/global-q-r/renderergroup)
+- [RendererMaterializer](/mod/game-api/types/global-q-r/renderermaterializer)
+- [RendererMaterializerHandler](/mod/game-api/types/global-q-r/renderermaterializerhandler)
+- [RendererMeshReplacePooledObject](/mod/game-api/types/global-q-r/renderermeshreplacepooledobject)
+- [RendererScaleAnimator](/mod/game-api/types/global-q-r/rendererscaleanimator)
+- [RendererScalePulsator](/mod/game-api/types/global-q-r/rendererscalepulsator)
+- [RenderingDisabler](/mod/game-api/types/global-q-r/renderingdisabler)
+- [RenderingDisabler.Type](/mod/game-api/types/global-q-r/renderingdisabler-type)
+- [RenderingMaps](/mod/game-api/types/global-q-r/renderingmaps)
+- [RenderLock](/mod/game-api/types/global-q-r/renderlock)
+- [RenderLock.RenderLockType](/mod/game-api/types/global-q-r/renderlock-renderlocktype)
+- [RenderTextureGetter](/mod/game-api/types/global-q-r/rendertexturegetter)
+- [ReorderableListAttribute](/mod/game-api/types/assembly-other/reorderablelistattribute)
+- [RepairableObject](/mod/game-api/types/game-other-namespaces/repairableobject) <span>Features.Gameplay.GameConditions</span>
+- [RepairableObjectBuildState](/mod/game-api/types/game-other-namespaces/repairableobjectbuildstate) <span>Features.Gameplay.GameConditions.StaticObjectMapped</span>
+- [RepairableObjectComparisonCondition](/mod/game-api/types/game-other-namespaces/repairableobjectcomparisoncondition) <span>Features.Gameplay.GameConditions</span>
+- [RepairableObjectComparisonConditionSaveData](/mod/game-api/types/game-other-namespaces/repairableobjectcomparisonconditionsavedata) <span>Features.Gameplay.GameConditions</span>
+- [RepairBox](/mod/game-api/types/global-q-r/repairbox)
+- [RepairBoxDevCommand](/mod/game-api/types/alta-menus/repairboxdevcommand) <span>Alta.UI</span>
+- [RepairBoxDevControlPanel](/mod/game-api/types/alta-menus/repairboxdevcontrolpanel) <span>Alta.UI</span>
+- [RepairBoxModule](/mod/game-api/types/alta-console/repairboxmodule) <span>Alta.Console.Commands</span>
+- [RepairBoxSaveData](/mod/game-api/types/global-q-r/repairboxsavedata)
+- [RepairBoxSaveData.Item](/mod/game-api/types/global-q-r/repairboxsavedata-item)
+- [RepairBoxSaveDataOld](/mod/game-api/types/global-q-r/repairboxsavedataold)
+- [RepairBoxSaveDataOld2](/mod/game-api/types/global-q-r/repairboxsavedataold2)
+- [RepairBoxSaveDataOld2.ItemOld](/mod/game-api/types/global-q-r/repairboxsavedataold2-itemold)
+- [RepairBoxSaveDataOld3](/mod/game-api/types/global-q-r/repairboxsavedataold3)
+- [RepairBoxSaveDataOld3.Item](/mod/game-api/types/global-q-r/repairboxsavedataold3-item)
+- [RepairBoxSaveDataOld4](/mod/game-api/types/global-q-r/repairboxsavedataold4)
+- [RepairBoxSaveDataOld4.Item](/mod/game-api/types/global-q-r/repairboxsavedataold4-item)
+- [RepairBoxVfxController](/mod/game-api/types/game-other-namespaces/repairboxvfxcontroller) <span>Features</span>
+- [RepeatCommandModule](/mod/game-api/types/alta-console/repeatcommandmodule) <span>Alta.Console.Commands</span>
+- [RepeatIfHasTarget](/mod/game-api/types/alta-intelligence/repeatifhastarget) <span>Alta.Intelligence</span>
+- [ReplaceAvoidFlags](/mod/game-api/types/alta-networking/replaceavoidflags) <span>Alta.Networking</span>
+- [ReportPlayers](/mod/game-api/types/global-q-r/reportplayers)
+- [ReportsPanel](/mod/game-api/types/alta-menus/reportspanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [ReportStatus](/mod/game-api/types/assembly-api-models/reportstatus) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ReportType](/mod/game-api/types/assembly-api-models/reporttype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [RequestDockArguments](/mod/game-api/types/global-q-r/requestdockarguments)
+- [RequestedGroups](/mod/game-api/types/assembly-api-client/requestedgroups) <span>Alta.Api.Client.HighLevel</span>
+- [RequestJoinMessage](/mod/game-api/types/alta-networking/requestjoinmessage) <span>Alta.Networking</span>
+- [RequestPasswordResetRequest](/mod/game-api/types/assembly-api-models/requestpasswordresetrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [RequestPouchArguments](/mod/game-api/types/global-q-r/requestpoucharguments)
+- [RequestServerDiagnosticsMessage](/mod/game-api/types/alta-networking/requestserverdiagnosticsmessage) <span>Alta.Networking</span>
+- [RequestShopTokenRequest](/mod/game-api/types/assembly-api-models/requestshoptokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [RequirementAttribute](/mod/game-api/types/alta-console/requirementattribute) <span>Alta.Console</span>
+- [ResetPasswordRequest](/mod/game-api/types/assembly-api-models/resetpasswordrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ResolveComment](/mod/game-api/types/assembly-api-models/resolvecomment) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ResourceDropChance](/mod/game-api/types/alta-items/resourcedropchance) <span>Alta.Impact</span>
+- [ResourceRequestExtensions](/mod/game-api/types/alta-world/resourcerequestextensions) <span>Alta.Chunks</span>
+- [ResourcesCleanup](/mod/game-api/types/global-q-r/resourcescleanup)
+- [RespawnBeaconController](/mod/game-api/types/game-other-namespaces/respawnbeaconcontroller) <span>ATT.Respawn</span>
+- [RespawnBeaconView](/mod/game-api/types/game-other-namespaces/respawnbeaconview) <span>ATT.Respawn</span>
+- [RespawnOnDestroy](/mod/game-api/types/global-q-r/respawnondestroy)
+- [RespawnOnDestroySaveData](/mod/game-api/types/global-q-r/respawnondestroysavedata)
+- [RespawnOrb](/mod/game-api/types/game-other-namespaces/respawnorb) <span>Township.Downed</span>
+- [RespawnShrine](/mod/game-api/types/game-other-namespaces/respawnshrine) <span>ATT.Respawn</span>
+- [RespawnShrineData](/mod/game-api/types/game-other-namespaces/respawnshrinedata) <span>ATT.Respawn</span>
+- [RespawnShrineFuelDisplay](/mod/game-api/types/game-other-namespaces/respawnshrinefueldisplay) <span>ATT.Respawn</span>
+- [RespawnShrineFuelDockController](/mod/game-api/types/game-other-namespaces/respawnshrinefueldockcontroller) <span>ATT.Respawn</span>
+- [RespawnShrineModel](/mod/game-api/types/game-other-namespaces/respawnshrinemodel) <span>ATT.Respawn</span>
+- [RespawnShrinePowerIndicator](/mod/game-api/types/game-other-namespaces/respawnshrinepowerindicator) <span>ATT.Respawn</span>
+- [RespawnShrineStaticAudioController](/mod/game-api/types/game-other-namespaces/respawnshrinestaticaudiocontroller) <span>ATT.Respawn</span>
+- [RespawnShrineSubscriberMarkController](/mod/game-api/types/game-other-namespaces/respawnshrinesubscribermarkcontroller) <span>ATT.Respawn</span>
+- [RespawnSystem](/mod/game-api/types/game-other-namespaces/respawnsystem) <span>ATT.Respawn</span>
+- [RespawnSystemModel](/mod/game-api/types/game-other-namespaces/respawnsystemmodel) <span>ATT.Respawn</span>
+- [RespawnSystemSaveData](/mod/game-api/types/game-other-namespaces/respawnsystemsavedata) <span>ATT.Respawn</span>
+- [RespawnSystemSettings](/mod/game-api/types/game-other-namespaces/respawnsystemsettings) <span>ATT.Respawn</span>
+- [Result](/mod/game-api/types/alta-intelligence/result) <span>Alta.Intelligence</span>
+- [ResultExtensions](/mod/game-api/types/game-other-namespaces/resultextensions) <span>ATT.MicroTutorial</span>
+- [RetryHandler](/mod/game-api/types/assembly-api-models/retryhandler) <span>Alta.Api.DataTransferModels.Utility</span>
+- [ReturnToMainMenuAction](/mod/game-api/types/alta-player/returntomainmenuaction) <span>Alta.QuickAccessActions</span>
+- [RevealEffect](/mod/game-api/types/alta-stats-effects/revealeffect) <span>Alta.Alchemy</span>
+- [ReviveCompletableActivity](/mod/game-api/types/game-other-namespaces/revivecompletableactivity) <span>Township.Downed</span>
+- [ReviveOrb](/mod/game-api/types/game-other-namespaces/reviveorb) <span>Township.Downed</span>
+- [ReviveOrbMovementModifier](/mod/game-api/types/game-other-namespaces/reviveorbmovementmodifier) <span>Township.Downed</span>
+- [RigBoneList](/mod/game-api/types/global-q-r/rigbonelist)
+- [RigidbodyCollection](/mod/game-api/types/global-q-r/rigidbodycollection)
+- [RigidbodyGroup](/mod/game-api/types/global-q-r/rigidbodygroup)
+- [RigMap](/mod/game-api/types/global-q-r/rigmap)
+- [RiverAudio](/mod/game-api/types/alta-world-generation/riveraudio) <span>Alta.Forests</span>
+- [RiverCenterFill](/mod/game-api/types/alta-world-generation/rivercenterfill) <span>Alta.Forests</span>
+- [RiverCollision](/mod/game-api/types/alta-world-generation/rivercollision) <span>Alta.Forests</span>
+- [RiverDecorationArc](/mod/game-api/types/alta-world-generation/riverdecorationarc) <span>Alta.Forests</span>
+- [RiverDecorationLine](/mod/game-api/types/alta-world-generation/riverdecorationline) <span>Alta.Forests</span>
+- [RiverEdgeFill](/mod/game-api/types/alta-world-generation/riveredgefill) <span>Alta.Forests</span>
+- [RiverEncounters](/mod/game-api/types/alta-world-generation/riverencounters) <span>Alta.Forests</span>
+- [RiverEntrance](/mod/game-api/types/global-q-r/riverentrance)
+- [RiverGCoreInstruction](/mod/game-api/types/alta-world-generation/rivergcoreinstruction) <span>Alta.Forests</span>
+- [RiverGeneration](/mod/game-api/types/alta-world-generation/rivergeneration) <span>Alta.Forests</span>
+- [RiverGenerator](/mod/game-api/types/alta-world-generation/rivergenerator) <span>Alta.Forests</span>
+- [RiverIntersections](/mod/game-api/types/alta-world-generation/riverintersections) <span>Alta.Forests</span>
+- [RiverIntersections.Intersection](/mod/game-api/types/alta-world-generation/riverintersections-intersection) <span>Alta.Forests</span>
+- [RiverMeshTest](/mod/game-api/types/alta-world-generation/rivermeshtest) <span>Alta.Forests</span>
+- [RiverNode](/mod/game-api/types/alta-world-generation/rivernode) <span>Alta.Forests</span>
+- [RiverNodeMapSpawnData](/mod/game-api/types/global-q-r/rivernodemapspawndata)
+- [RiverPath](/mod/game-api/types/alta-world-generation/riverpath) <span>Alta.Forests</span>
+- [RiverPathType](/mod/game-api/types/alta-world-generation/riverpathtype) <span>Alta.Forests</span>
+- [Rock](/mod/game-api/types/global-q-r/rock)
+- [RockCluster](/mod/game-api/types/global-q-r/rockcluster)
+- [RockClusterSaveData](/mod/game-api/types/global-q-r/rockclustersavedata)
+- [RoofHole](/mod/game-api/types/alta-world-generation/roofhole) <span>Alta.Caves.PluginParts</span>
+- [RoofHoleInstance](/mod/game-api/types/alta-world-generation/roofholeinstance) <span>Alta.Caves.PluginParts</span>
+- [RoomFixes](/mod/game-api/types/alta-world-generation/roomfixes) <span>Alta.Caves.PluginParts</span>
+- [RoomFixes.Room](/mod/game-api/types/alta-world-generation/roomfixes-room) <span>Alta.Caves.PluginParts</span>
+- [RoomFixesInstance](/mod/game-api/types/alta-world-generation/roomfixesinstance) <span>Alta.Caves.PluginParts</span>
+- [RoomFixPlugin](/mod/game-api/types/alta-world-generation/roomfixplugin) <span>Alta.Caves</span>
+- [RoomFixPlugin.Create](/mod/game-api/types/alta-world-generation/roomfixplugin-create) <span>Alta.Caves</span>
+- [RoomFixPlugin.Tunnel](/mod/game-api/types/alta-world-generation/roomfixplugin-tunnel) <span>Alta.Caves</span>
+- [RoomFixPluginInstance](/mod/game-api/types/alta-world-generation/roomfixplugininstance) <span>Alta.Caves</span>
+- [RoomRotationMode](/mod/game-api/types/global-q-r/roomrotationmode)
+- [RoomRotator](/mod/game-api/types/global-q-r/roomrotator)
+- [RopeBelt](/mod/game-api/types/global-q-r/ropebelt)
+- [RopeGrab](/mod/game-api/types/global-q-r/ropegrab)
+- [RopeGrabSaveData](/mod/game-api/types/global-q-r/ropegrabsavedata)
+- [RopeGrabSaveData1](/mod/game-api/types/global-q-r/ropegrabsavedata1)
+- [RopePersistAttribute](/mod/game-api/types/global-q-r/ropepersistattribute)
+- [RopePersistManager](/mod/game-api/types/global-q-r/ropepersistmanager)
+- [RopePersistManager.RopeData](/mod/game-api/types/global-q-r/ropepersistmanager-ropedata)
+- [RopePersistManager.RopeData.TransformInfo](/mod/game-api/types/global-q-r/ropepersistmanager-ropedata-transforminfo)
+- [RopePoweredElementBoard](/mod/game-api/types/global-q-r/ropepoweredelementboard)
+- [RopeUIList](/mod/game-api/types/alta-menus/ropeuilist) <span>Alta.Meta.UI</span>
+- [RotatedPositionHelper](/mod/game-api/types/global-q-r/rotatedpositionhelper)
+- [RotateOverTime](/mod/game-api/types/alta-utilities/rotateovertime) <span>Alta.Utilities</span>
+- [RotatePickup](/mod/game-api/types/global-q-r/rotatepickup)
+- [RotatePickupPuzzleOLD](/mod/game-api/types/global-q-r/rotatepickuppuzzleold)
+- [RotatePickupSaveData](/mod/game-api/types/global-q-r/rotatepickupsavedata)
+- [RotateToTargetWorldXZ](/mod/game-api/types/alta-intelligence/rotatetotargetworldxz) <span>Alta.Intelligence</span>
+- [RotateTransform](/mod/game-api/types/global-q-r/rotatetransform)
+- [RotationBucket](/mod/game-api/types/global-q-r/rotationbucket)
+- [RotationBucketOLD](/mod/game-api/types/global-q-r/rotationbucketold)
+- [RotationChangedHandler](/mod/game-api/types/alta-player/rotationchangedhandler) <span>Alta.Character</span>
+- [RotationLimitWrapper](/mod/game-api/types/alta-player/rotationlimitwrapper) <span>Alta.Character</span>
+- [RotationMode](/mod/game-api/types/global-q-r/rotationmode)
+- [RotationOverrider](/mod/game-api/types/global-q-r/rotationoverrider)
+- [RotationSlerp](/mod/game-api/types/global-q-r/rotationslerp)
+- [Rotator](/mod/game-api/types/game-other-namespaces/rotator) <span>ATT.Utilities</span>
+- [Rule](/mod/game-api/types/alta-world-generation/rule) <span>Alta.PAGaC</span>
+- [Rule.RotationOverlap](/mod/game-api/types/alta-world-generation/rule-rotationoverlap) <span>Alta.PAGaC</span>
+- [RuleBase](/mod/game-api/types/alta-world-generation/rulebase) <span>Alta.PAGaC</span>
+- [RuleOptionSet](/mod/game-api/types/alta-world-generation/ruleoptionset) <span>Alta.PAGaC</span>
+- [RuleOptionSetChance](/mod/game-api/types/alta-world-generation/ruleoptionsetchance) <span>Alta.PAGaC</span>
+- [RunMode](/mod/game-api/types/global-q-r/runmode)
+- [RuntimeConsole](/mod/game-api/types/global-q-r/runtimeconsole)
+- [RuntimeConsole.CommandTarget](/mod/game-api/types/global-q-r/runtimeconsole-commandtarget)
+- [RuntimeConsole.LogFilter](/mod/game-api/types/global-q-r/runtimeconsole-logfilter)
+- [RuntimePlatformObject](/mod/game-api/types/global-q-r/runtimeplatformobject)
+- [RuntimeUid](/mod/game-api/types/global-q-r/runtimeuid)
+- [RVOBlockedOperation](/mod/game-api/types/alta-intelligence/rvoblockedoperation) <span>Alta.Intelligence</span>
+- [RVOBlockedValue](/mod/game-api/types/alta-intelligence/rvoblockedvalue) <span>Alta.Intelligence</span>
+
+</div>
+
+## S
+
+<div className="type-index">
+
+- [S3CloudStorageRemoteFile](/mod/game-api/types/assembly-other/s3cloudstorageremotefile) <span>Alta.Utilities</span>
+- [S3RemoteFolder](/mod/game-api/types/assembly-other/s3remotefolder) <span>Alta.Utilities</span>
+- [S3StorageFile](/mod/game-api/types/assembly-other/s3storagefile) <span>Alta.Utilities</span>
+- [S3StorageFolder](/mod/game-api/types/assembly-other/s3storagefolder) <span>Alta.Utilities</span>
+- [S3StorageObject](/mod/game-api/types/assembly-other/s3storageobject) <span>Alta.Utilities</span>
+- [S3Utility](/mod/game-api/types/assembly-other/s3utility) <span>Alta.Utilities</span>
+- [SABoneCollider](/mod/game-api/types/global-s/sabonecollider)
+- [SABoneColliderBuilder](/mod/game-api/types/global-s/sabonecolliderbuilder)
+- [SABoneColliderChild](/mod/game-api/types/global-s/sabonecolliderchild)
+- [SABoneColliderCommon](/mod/game-api/types/global-s/sabonecollidercommon)
+- [SABoneColliderCommon.BoneProperty](/mod/game-api/types/global-s/sabonecollidercommon-boneproperty)
+- [SABoneColliderCommon.BoneTriangleExtent](/mod/game-api/types/global-s/sabonecollidercommon-bonetriangleextent)
+- [SABoneColliderCommon.BoneWeightType](/mod/game-api/types/global-s/sabonecollidercommon-boneweighttype)
+- [SABoneColliderCommon.SABoneColliderBuilderProperty](/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderbuilderproperty)
+- [SABoneColliderCommon.SABoneColliderProperty](/mod/game-api/types/global-s/sabonecollidercommon-sabonecolliderproperty)
+- [SABoneColliderCommon.SplitProperty](/mod/game-api/types/global-s/sabonecollidercommon-splitproperty)
+- [SAColliderBuilderCommon](/mod/game-api/types/global-s/sacolliderbuildercommon)
+- [SAColliderBuilderCommon.Bool3](/mod/game-api/types/global-s/sacolliderbuildercommon-bool3)
+- [SAColliderBuilderCommon.ColliderProperty](/mod/game-api/types/global-s/sacolliderbuildercommon-colliderproperty)
+- [SAColliderBuilderCommon.ColliderToChild](/mod/game-api/types/global-s/sacolliderbuildercommon-collidertochild)
+- [SAColliderBuilderCommon.ElementType](/mod/game-api/types/global-s/sacolliderbuildercommon-elementtype)
+- [SAColliderBuilderCommon.FitType](/mod/game-api/types/global-s/sacolliderbuildercommon-fittype)
+- [SAColliderBuilderCommon.MeshType](/mod/game-api/types/global-s/sacolliderbuildercommon-meshtype)
+- [SAColliderBuilderCommon.ReducerProperty](/mod/game-api/types/global-s/sacolliderbuildercommon-reducerproperty)
+- [SAColliderBuilderCommon.RigidbodyProperty](/mod/game-api/types/global-s/sacolliderbuildercommon-rigidbodyproperty)
+- [SAColliderBuilderCommon.ShapeType](/mod/game-api/types/global-s/sacolliderbuildercommon-shapetype)
+- [SAColliderBuilderCommon.SliceMode](/mod/game-api/types/global-s/sacolliderbuildercommon-slicemode)
+- [SafePositionSetter](/mod/game-api/types/global-s/safepositionsetter)
+- [SafePositionSetterData](/mod/game-api/types/global-s/safepositionsetterdata)
+- [SafetySpline](/mod/game-api/types/global-s/safetyspline)
+- [SAMeshCollider](/mod/game-api/types/global-s/sameshcollider)
+- [SAMeshColliderBuilder](/mod/game-api/types/global-s/sameshcolliderbuilder)
+- [SAMeshColliderCommon](/mod/game-api/types/global-s/sameshcollidercommon)
+- [SAMeshColliderCommon.SAMeshColliderBuilderProperty](/mod/game-api/types/global-s/sameshcollidercommon-sameshcolliderbuilderproperty)
+- [SAMeshColliderCommon.SAMeshColliderProperty](/mod/game-api/types/global-s/sameshcollidercommon-sameshcolliderproperty)
+- [SAMeshColliderCommon.SplitMesh](/mod/game-api/types/global-s/sameshcollidercommon-splitmesh)
+- [SAMeshColliderCommon.SplitMode](/mod/game-api/types/global-s/sameshcollidercommon-splitmode)
+- [SAMeshColliderCommon.SplitProperty](/mod/game-api/types/global-s/sameshcollidercommon-splitproperty)
+- [SameTarget](/mod/game-api/types/alta-intelligence/sametarget) <span>Alta.Intelligence</span>
+- [SameTargetOperation](/mod/game-api/types/alta-intelligence/sametargetoperation) <span>Alta.Intelligence</span>
+- [SavableCache](/mod/game-api/types/alta-world/savablecache) <span>Alta.Saving</span>
+- [SavableSavedDynamicObject](/mod/game-api/types/alta-world/savablesaveddynamicobject) <span>Alta.Chunks</span>
+- [SaveableTransform](/mod/game-api/types/global-s/saveabletransform)
+- [SaveData](/mod/game-api/types/alta-world/savedata) <span>Alta.Saving</span>
+- [SavedDynamicObject](/mod/game-api/types/alta-world/saveddynamicobject) <span>Alta.Chunks</span>
+- [SaveMode](/mod/game-api/types/game-other-namespaces/savemode) <span>ATT.Saving</span>
+- [SavePrefabAtButton](/mod/game-api/types/global-s/saveprefabatbutton)
+- [SaveStructureAttribute](/mod/game-api/types/global-s/savestructureattribute)
+- [SavingCommandModule](/mod/game-api/types/alta-console/savingcommandmodule) <span>Alta.Console.Commands</span>
+- [SavingInfoAttribute](/mod/game-api/types/alta-world/savinginfoattribute) <span>Alta.Chunks</span>
+- [SavingSystem](/mod/game-api/types/alta-world/savingsystem) <span>Alta.Saving</span>
+- [SavingSystem.Reinitialize_Saving](/mod/game-api/types/alta-world/savingsystem-reinitialize_saving) <span>Alta.Saving</span>
+- [SavingSystem.SavingSetup](/mod/game-api/types/alta-world/savingsystem-savingsetup) <span>Alta.Saving</span>
+- [SavingSystem.VersionSetup](/mod/game-api/types/alta-world/savingsystem-versionsetup) <span>Alta.Saving</span>
+- [Scale](/mod/game-api/types/alta-utilities/scale) <span>Alta.Utilities.Atlas</span>
+- [ScaleAnimator](/mod/game-api/types/global-s/scaleanimator)
+- [ScaleChangedHandler](/mod/game-api/types/alta-player/scalechangedhandler) <span>Alta.Character</span>
+- [ScaledLerpFollow](/mod/game-api/types/global-s/scaledlerpfollow)
+- [ScaleLerp](/mod/game-api/types/global-s/scalelerp)
+- [ScaleLerpPooledObject](/mod/game-api/types/global-s/scalelerppooledobject)
+- [ScalePulsator](/mod/game-api/types/global-s/scalepulsator)
+- [ScaleTracker](/mod/game-api/types/global-s/scaletracker)
+- [ScaleWithScoreModifier](/mod/game-api/types/global-s/scalewithscoremodifier)
+- [ScaleWithScoreModifier.Create](/mod/game-api/types/global-s/scalewithscoremodifier-create)
+- [ScalingFadeAnimator](/mod/game-api/types/alta-menus/scalingfadeanimator) <span>Alta.Meta.UI</span>
+- [SceneChangeTimer](/mod/game-api/types/global-s/scenechangetimer)
+- [SceneCubeMaps](/mod/game-api/types/global-s/scenecubemaps)
+- [SceneEntityMessage](/mod/game-api/types/alta-networking/sceneentitymessage) <span>Alta.Networking</span>
+- [SceneLoadingProgress](/mod/game-api/types/global-s/sceneloadingprogress)
+- [SceneNameAttribute](/mod/game-api/types/assembly-other/scenenameattribute)
+- [SceneSerializationMessage](/mod/game-api/types/alta-networking/sceneserializationmessage) <span>Alta.Networking</span>
+- [SceneSerializer](/mod/game-api/types/alta-networking/sceneserializer) <span>Alta.Networking.Internal</span>
+- [SceneStaticObjectCombiner](/mod/game-api/types/global-s/scenestaticobjectcombiner)
+- [SceneViewCamera](/mod/game-api/types/global-s/sceneviewcamera)
+- [SceneViewVisualizer](/mod/game-api/types/global-s/sceneviewvisualizer)
+- [SceneWidgetsAction](/mod/game-api/types/alta-world/scenewidgetsaction) <span>Alta.Chunks</span>
+- [Schmeechee](/mod/game-api/types/alta-intelligence/schmeechee) <span>Alta.Intelligence</span>
+- [Schmeechee.Operation](/mod/game-api/types/alta-intelligence/schmeechee-operation) <span>Alta.Intelligence</span>
+- [Schmeechee.OperationType](/mod/game-api/types/alta-intelligence/schmeechee-operationtype) <span>Alta.Intelligence</span>
+- [SchmeecheeFleeSettings](/mod/game-api/types/alta-intelligence/schmeecheefleesettings) <span>Alta.Intelligence</span>
+- [SchmeecheeFlipSettings](/mod/game-api/types/alta-intelligence/schmeecheeflipsettings) <span>Alta.Intelligence</span>
+- [SchmeecheeOperation](/mod/game-api/types/alta-intelligence/schmeecheeoperation) <span>Alta.Intelligence</span>
+- [SchmeecheePlantSettings](/mod/game-api/types/alta-intelligence/schmeecheeplantsettings) <span>Alta.Intelligence</span>
+- [SchmeecheePlaySettings](/mod/game-api/types/alta-intelligence/schmeecheeplaysettings) <span>Alta.Intelligence</span>
+- [ScrapperArgumentAttribute](/mod/game-api/types/alta-crafting/scrapperargumentattribute) <span>Alta.Scrapper</span>
+- [ScrapperExtension](/mod/game-api/types/global-s/scrapperextension)
+- [Screenshot](/mod/game-api/types/alta-utilities/screenshot) <span>Alta.Utilities</span>
+- [ScreenShotAlpha](/mod/game-api/types/global-s/screenshotalpha)
+- [ScreenShotAlphaRenderer](/mod/game-api/types/global-s/screenshotalpharenderer)
+- [ScreenShotExtension](/mod/game-api/types/global-s/screenshotextension)
+- [ScreenshotTaker](/mod/game-api/types/global-s/screenshottaker)
+- [ScreenshotTaker.ImageFormat](/mod/game-api/types/global-s/screenshottaker-imageformat)
+- [ScriptAssignedStaticBatchingMarker](/mod/game-api/types/alta-networking/scriptassignedstaticbatchingmarker) <span>Alta.Streaming</span>
+- [ScriptedRotation](/mod/game-api/types/global-s/scriptedrotation)
+- [ScriptHelper](/mod/game-api/types/alta-utilities/scripthelper) <span>Alta.Utilities</span>
+- [ScrollElement](/mod/game-api/types/global-s/scrollelement)
+- [ScrollerEnumMenuSetting](/mod/game-api/types/alta-menus/scrollerenummenusetting) <span>Alta.Menu</span>
+- [ScrollerSelector](/mod/game-api/types/alta-menus/scrollerselector) <span>Alta.Menu</span>
+- [ScrollManager](/mod/game-api/types/alta-customization/scrollmanager) <span>Alta.Customization</span>
+- [ScrollWheel](/mod/game-api/types/global-s/scrollwheel)
+- [Scrubber](/mod/game-api/types/alta-items/scrubber) <span>Alta.Mechanisms</span>
+- [SearchByUsernameRequest](/mod/game-api/types/assembly-api-models/searchbyusernamerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [SeasonalLeaves](/mod/game-api/types/global-s/seasonalleaves)
+- [SecondaryCollisionCheck](/mod/game-api/types/global-s/secondarycollisioncheck)
+- [Section](/mod/game-api/types/alta-world-generation/section) <span>Alta.Caves</span>
+- [Section.Create](/mod/game-api/types/alta-world-generation/section-create) <span>Alta.Caves</span>
+- [SectorName](/mod/game-api/types/global-s/sectorname)
+- [SectorNames](/mod/game-api/types/global-s/sectornames)
+- [SecurityApiClient](/mod/game-api/types/assembly-api-client/securityapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [SeedSpray](/mod/game-api/types/alta-intelligence/seedspray) <span>Alta.Intelligence</span>
+- [SeedSpray.BasicImpactSyncArguments](/mod/game-api/types/alta-intelligence/seedspray-basicimpactsyncarguments) <span>Alta.Intelligence</span>
+- [SeedSpray.Seed](/mod/game-api/types/alta-intelligence/seedspray-seed) <span>Alta.Intelligence</span>
+- [SeedSprayManager](/mod/game-api/types/alta-intelligence/seedspraymanager) <span>Alta.Intelligence</span>
+- [SelectedElementChanged](/mod/game-api/types/global-s/selectedelementchanged)
+- [SelectedGroupPanel](/mod/game-api/types/alta-menus/selectedgrouppanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [SelectionBase](/mod/game-api/types/global-s/selectionbase)
+- [SelectionCommandModule](/mod/game-api/types/alta-console/selectioncommandmodule) <span>Alta.Console.Commands</span>
+- [SelectionCommandModule.MovingModule](/mod/game-api/types/alta-console/selectioncommandmodule-movingmodule) <span>Alta.Console.Commands</span>
+- [SelectionCommandModule.RotatingModule](/mod/game-api/types/alta-console/selectioncommandmodule-rotatingmodule) <span>Alta.Console.Commands</span>
+- [SelectionLever](/mod/game-api/types/global-s/selectionlever)
+- [SenderInput](/mod/game-api/types/alta-items/senderinput) <span>Alta.Logic</span>
+- [SenderInput&lt;TSender, TData&gt;](/mod/game-api/types/alta-items/senderinput-tsender-tdata) <span>Alta.Logic</span>
+- [SenderInputArrayConverter](/mod/game-api/types/alta-items/senderinputarrayconverter) <span>Alta.Logic</span>
+- [SendMessageRequest](/mod/game-api/types/assembly-api-models/sendmessagerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [SendToSafetyLocoAction](/mod/game-api/types/global-s/sendtosafetylocoaction)
+- [Sense](/mod/game-api/types/alta-intelligence/sense) <span>Alta.Intelligence</span>
+- [SenseOld](/mod/game-api/types/alta-intelligence/senseold) <span>Alta.Intelligence</span>
+- [SenseOperation](/mod/game-api/types/alta-intelligence/senseoperation) <span>Alta.Intelligence</span>
+- [SenseSetup](/mod/game-api/types/alta-intelligence/sensesetup) <span>Alta.Intelligence</span>
+- [SensitiveStringConverter](/mod/game-api/types/assembly-api-models/sensitivestringconverter) <span>Alta.Api.DataTransferModels.Converters</span>
+- [SentGift](/mod/game-api/types/global-s/sentgift)
+- [SentGiftData](/mod/game-api/types/global-s/sentgiftdata)
+- [SentGiftTag](/mod/game-api/types/global-s/sentgifttag)
+- [SerialDisposable](/mod/game-api/types/assembly-other/serialdisposable) <span>Alta.LifecycleManagement</span>
+- [SerializableServerSettings](/mod/game-api/types/global-s/serializableserversettings)
+- [SerializeConnectionMethod](/mod/game-api/types/alta-networking/serializeconnectionmethod) <span>Alta.Networking</span>
+- [SerializedBehaviourStatistic](/mod/game-api/types/alta-networking/serializedbehaviourstatistic) <span>Alta.Profiling.Networking</span>
+- [SerializedBehaviourStatistics](/mod/game-api/types/alta-networking/serializedbehaviourstatistics) <span>Alta.Profiling.Networking</span>
+- [SerializedEntityHandler](/mod/game-api/types/alta-networking/serializedentityhandler) <span>Alta.Networking</span>
+- [SerializedEnumerable](/mod/game-api/types/alta-networking/serializedenumerable) <span>Alta.Networking.Internal</span>
+- [SerializedFullEmptyStatTrigger](/mod/game-api/types/alta-stats-effects/serializedfullemptystattrigger) <span>Alta.StatSystem</span>
+- [SerializedFullEmptyStatTriggerData](/mod/game-api/types/alta-stats-effects/serializedfullemptystattriggerdata) <span>Alta.StatSystem</span>
+- [SerializedGeneratedBiome](/mod/game-api/types/alta-world-generation/serializedgeneratedbiome) <span>Alta.Caves</span>
+- [SerializedImpactHit](/mod/game-api/types/global-s/serializedimpacthit)
+- [SerializedInterfaceAttribute](/mod/game-api/types/assembly-other/serializedinterfaceattribute)
+- [SerializedRenderTextureDescriptor](/mod/game-api/types/global-s/serializedrendertexturedescriptor)
+- [SerializedSavedDynamicObject](/mod/game-api/types/global-s/serializedsaveddynamicobject)
+- [SerializedTimedEvent](/mod/game-api/types/global-s/serializedtimedevent)
+- [SerializedTimedEvent.TimedEventSetup](/mod/game-api/types/global-s/serializedtimedevent-timedeventsetup)
+- [SerializedTimedEvent.TimerData](/mod/game-api/types/global-s/serializedtimedevent-timerdata)
+- [SerializedTransform](/mod/game-api/types/alta-crafting/serializedtransform) <span>Alta.Crafting</span>
+- [SerializeHashedObject](/mod/game-api/types/alta-utilities/serializehashedobject) <span>Alta</span>
+- [SerializeMethod](/mod/game-api/types/alta-networking/serializemethod) <span>Alta.Networking</span>
+- [SerializeMethod&lt;T&gt;](/mod/game-api/types/alta-networking/serializemethod-t) <span>Alta.Networking</span>
+- [SerializeValue&lt;T&gt;](/mod/game-api/types/global-s/serializevalue-t)
+- [SerializingEntityHandler](/mod/game-api/types/alta-networking/serializingentityhandler) <span>Alta.Networking.Internal</span>
+- [ServerAccess](/mod/game-api/types/assembly-api-client/serveraccess) <span>Alta.Api.Client.HighLevel</span>
+- [ServerAchievementEvent](/mod/game-api/types/global-s/serverachievementevent)
+- [ServerApiClient](/mod/game-api/types/assembly-api-client/serverapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [ServerBoard](/mod/game-api/types/global-s/serverboard)
+- [ServerBoardFilter](/mod/game-api/types/game-other-namespaces/serverboardfilter) <span>Features</span>
+- [ServerBoardType](/mod/game-api/types/global-s/serverboardtype)
+- [ServerCacheManager](/mod/game-api/types/global-s/servercachemanager)
+- [ServerChunkContentManager](/mod/game-api/types/alta-world/serverchunkcontentmanager) <span>Alta.Chunks</span>
+- [ServerClientLandmarkManager](/mod/game-api/types/alta-world/serverclientlandmarkmanager) <span>Alta.Map</span>
+- [ServerComboCommandDefinition](/mod/game-api/types/alta-menus/servercombocommanddefinition) <span>Alta.Menu</span>
+- [ServerCommandAction](/mod/game-api/types/alta-menus/servercommandaction) <span>Alta.Menu</span>
+- [ServerCommandDefinition](/mod/game-api/types/alta-menus/servercommanddefinition) <span>Alta.Menu</span>
+- [ServerCommandDefinitionBase](/mod/game-api/types/alta-menus/servercommanddefinitionbase) <span>Alta.Menu</span>
+- [ServerCommandModule](/mod/game-api/types/alta-console/servercommandmodule) <span>Alta.Console.Commands</span>
+- [ServerConfigFileManager](/mod/game-api/types/global-s/serverconfigfilemanager)
+- [ServerConfiguration](/mod/game-api/types/global-s/serverconfiguration)
+- [ServerConsole](/mod/game-api/types/global-s/serverconsole)
+- [ServerConsoleLogTarget](/mod/game-api/types/alta-console/serverconsolelogtarget) <span>Alta.Logging.Targets</span>
+- [ServerConsoleManager](/mod/game-api/types/global-s/serverconsolemanager)
+- [ServerController](/mod/game-api/types/game-other-namespaces/servercontroller) <span>ATT.MicroTutorial</span>
+- [ServerCreator](/mod/game-api/types/global-s/servercreator)
+- [ServerCubeMaps](/mod/game-api/types/global-s/servercubemaps)
+- [ServerCubeMaps.Create](/mod/game-api/types/global-s/servercubemaps-create)
+- [ServerDetailsPanel](/mod/game-api/types/alta-menus/serverdetailspanel) <span>Alta.Meta.UI.ServerManagement</span>
+- [ServerDetailsPanel.ButtonData](/mod/game-api/types/alta-menus/serverdetailspanel-buttondata) <span>Alta.Meta.UI.ServerManagement</span>
+- [ServerDiagnosticsDisplay](/mod/game-api/types/alta-utilities/serverdiagnosticsdisplay) <span>Alta.Utilities.Profiling</span>
+- [ServerDiagnosticsManager](/mod/game-api/types/global-s/serverdiagnosticsmanager)
+- [ServerDiagnosticsMessage](/mod/game-api/types/alta-networking/serverdiagnosticsmessage) <span>Alta.Networking</span>
+- [ServerDiagnosticsSettings](/mod/game-api/types/global-s/serverdiagnosticssettings)
+- [ServerDowntimeData](/mod/game-api/types/global-s/serverdowntimedata)
+- [ServerElement](/mod/game-api/types/global-s/serverelement)
+- [ServerElementEvent](/mod/game-api/types/global-s/serverelementevent)
+- [ServerElementUnityEvent](/mod/game-api/types/global-s/serverelementunityevent)
+- [ServerFeatureSetProvider](/mod/game-api/types/game-other-namespaces/serverfeaturesetprovider) <span>ATT.TownshipServer</span>
+- [ServerFpsDisplay](/mod/game-api/types/alta-utilities/serverfpsdisplay) <span>Alta.Utilities.Profiling</span>
+- [ServerHandler](/mod/game-api/types/alta-networking/serverhandler) <span>Alta.Networking.Servers</span>
+- [ServerHandler.BootupStep](/mod/game-api/types/alta-networking/serverhandler-bootupstep) <span>Alta.Networking.Servers</span>
+- [ServerHandler.ConnectionStep](/mod/game-api/types/alta-networking/serverhandler-connectionstep) <span>Alta.Networking.Servers</span>
+- [ServerHeartbeat](/mod/game-api/types/global-s/serverheartbeat)
+- [ServerHostingGameMode](/mod/game-api/types/global-s/serverhostinggamemode)
+- [ServerInfoBoard](/mod/game-api/types/global-s/serverinfoboard)
+- [ServerInfoInstrument](/mod/game-api/types/game-other-namespaces/serverinfoinstrument) <span>ATT.Analytics.Instruments</span>
+- [ServerJoinFailResult](/mod/game-api/types/assembly-api-models/serverjoinfailresult) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerJoinLock](/mod/game-api/types/alta-networking/serverjoinlock) <span>Alta.Networking.Servers</span>
+- [ServerJoinResponse](/mod/game-api/types/assembly-api-models/serverjoinresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerJoinResult](/mod/game-api/types/assembly-api-models/serverjoinresult) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerJoinType](/mod/game-api/types/assembly-api-models/serverjointype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerLandmarkManager](/mod/game-api/types/alta-world/serverlandmarkmanager) <span>Alta.Map</span>
+- [ServerLifetimePipeline](/mod/game-api/types/alta-networking/serverlifetimepipeline) <span>Alta.Networking.Servers</span>
+- [ServerListType](/mod/game-api/types/global-s/serverlisttype)
+- [ServerLockCollection](/mod/game-api/types/alta-networking/serverlockcollection) <span>Alta.Networking.Servers</span>
+- [ServerMessageReceiverPerConnection](/mod/game-api/types/alta-networking/servermessagereceiverperconnection) <span>Alta.Networking</span>
+- [ServerMultiCommandAction](/mod/game-api/types/alta-menus/servermulticommandaction) <span>Alta.Menu</span>
+- [ServerMultiOptionCommandDefinition](/mod/game-api/types/alta-menus/servermultioptioncommanddefinition) <span>Alta.Menu</span>
+- [ServerMultiOptionCommandDefinition.CommandOptionInfo](/mod/game-api/types/alta-menus/servermultioptioncommanddefinition-commandoptioninfo) <span>Alta.Menu</span>
+- [ServerOnlyAttribute](/mod/game-api/types/alta-console/serveronlyattribute) <span>Alta.Console</span>
+- [ServerOwnerType](/mod/game-api/types/assembly-api-models/serverownertype) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerPacketReceiver](/mod/game-api/types/alta-networking/serverpacketreceiver) <span>Alta.Networking</span>
+- [ServerPacketReceiver.ReceivedMessageFromConnection](/mod/game-api/types/alta-networking/serverpacketreceiver-receivedmessagefromconnection) <span>Alta.Networking</span>
+- [ServerPingProfiler](/mod/game-api/types/alta-utilities/serverpingprofiler) <span>Alta.Utilities.Profiling.NetworkTransportMetrics.ABTesting</span>
+- [ServerPlayerConnectionHandlerOld](/mod/game-api/types/alta-networking/serverplayerconnectionhandlerold) <span>Alta.Networking.Servers</span>
+- [ServerPlayerConnectionHandlerOld.ApiServerJoinResult](/mod/game-api/types/alta-networking/serverplayerconnectionhandlerold-apiserverjoinresult) <span>Alta.Networking.Servers</span>
+- [ServerPlayerConnectionHandlerOld.PlayerJoinResult](/mod/game-api/types/alta-networking/serverplayerconnectionhandlerold-playerjoinresult) <span>Alta.Networking.Servers</span>
+- [ServerProfilingData](/mod/game-api/types/global-s/serverprofilingdata)
+- [ServerRegions](/mod/game-api/types/alta-menus/serverregions) <span>Alta.Meta.UI.ServerManagement</span>
+- [ServerRemoteConsole](/mod/game-api/types/global-s/serverremoteconsole)
+- [ServerReportCollection](/mod/game-api/types/assembly-api-client/serverreportcollection) <span>Alta.Api.Client.HighLevel</span>
+- [ServerSaveFileRequest](/mod/game-api/types/assembly-api-models/serversavefilerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ServerSaveFileResponse](/mod/game-api/types/assembly-api-models/serversavefileresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ServerSaveUtility](/mod/game-api/types/alta-utilities/serversaveutility) <span>Alta.Utilities</span>
+- [ServerSelectionDisplay](/mod/game-api/types/global-s/serverselectiondisplay)
+- [ServerSelectionMenu](/mod/game-api/types/global-s/serverselectionmenu)
+- [ServerSelectionOrb](/mod/game-api/types/global-s/serverselectionorb)
+- [ServerSelector](/mod/game-api/types/global-s/serverselector)
+- [ServerSettings](/mod/game-api/types/alta-utilities/serversettings) <span>Alta.Utilities</span>
+- [ServerSettingsAge](/mod/game-api/types/game-other-namespaces/serversettingsage) <span>ATT.PlayerStates</span>
+- [ServerSettingsChangeData](/mod/game-api/types/game-other-namespaces/serversettingschangedata) <span>ATT.PlayerStates</span>
+- [ServerSettingsChangeLogger](/mod/game-api/types/game-other-namespaces/serversettingschangelogger) <span>ATT.Character.QuickAccessMenu</span>
+- [ServerSettingsSync](/mod/game-api/types/game-other-namespaces/serversettingssync) <span>ATT.Character.QuickAccessMenu</span>
+- [ServersManager](/mod/game-api/types/alta-networking/serversmanager) <span>Alta.Meta.Servers</span>
+- [ServerSpawnManager](/mod/game-api/types/alta-networking/serverspawnmanager) <span>Alta.Networking</span>
+- [ServerStartArguments](/mod/game-api/types/assembly-api-client/serverstartarguments) <span>Alta.Api.Client.HighLevel</span>
+- [ServerStatusRequest](/mod/game-api/types/assembly-api-models/serverstatusrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ServerStepInstance](/mod/game-api/types/game-other-namespaces/serverstepinstance) <span>ATT.MicroTutorial</span>
+- [ServerSync](/mod/game-api/types/alta-networking/serversync) <span>Alta.Networking</span>
+- [ServerType](/mod/game-api/types/assembly-api-models/servertype) <span>Alta.Api.DataTransferModels.Enums</span>
+- [ServerUtilities](/mod/game-api/types/global-s/serverutilities)
+- [ServerWipeManager](/mod/game-api/types/global-s/serverwipemanager)
+- [ServicesApiClient](/mod/game-api/types/assembly-api-client/servicesapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [SetBoolean](/mod/game-api/types/global-s/setboolean)
+- [SetBoolParameter](/mod/game-api/types/global-s/setboolparameter)
+- [SetChallengeCheckpointTriggerEvent](/mod/game-api/types/game-other-namespaces/setchallengecheckpointtriggerevent) <span>ATT.Triggers</span>
+- [SetEnableOnGameObjects](/mod/game-api/types/global-s/setenableongameobjects)
+- [SetGroupPermissionsRequest](/mod/game-api/types/assembly-api-models/setgrouppermissionsrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [SetGroupPermissionsRequest.OldGroupPermission](/mod/game-api/types/assembly-api-models/setgrouppermissionsrequest-oldgrouppermission) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [SetKinematicModifier](/mod/game-api/types/global-s/setkinematicmodifier)
+- [SetNetworkPrefabModifier](/mod/game-api/types/global-s/setnetworkprefabmodifier)
+- [SetNetworkPrefabModifier.Create](/mod/game-api/types/global-s/setnetworkprefabmodifier-create)
+- [SetPiece](/mod/game-api/types/global-s/setpiece)
+- [SetPieceData](/mod/game-api/types/global-s/setpiecedata)
+- [SetPieceSaveData](/mod/game-api/types/global-s/setpiecesavedata)
+- [SetPrefabModifier](/mod/game-api/types/global-s/setprefabmodifier)
+- [SetPrefabModifier.Create](/mod/game-api/types/global-s/setprefabmodifier-create)
+- [SetRenderQueue](/mod/game-api/types/alta-utilities/setrenderqueue) <span>Alta.Utilities</span>
+- [SetServersOnlinePlayersRequest](/mod/game-api/types/assembly-api-models/setserversonlineplayersrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [SetStepSoundOverrideLocoAction](/mod/game-api/types/global-s/setstepsoundoverridelocoaction)
+- [SetSwitch](/mod/game-api/types/alta-stats-effects/setswitch) <span>Alta.StatSystem</span>
+- [SettingBasedToggler](/mod/game-api/types/alta-utilities/settingbasedtoggler) <span>Alta.Utilities</span>
+- [SettingDescriptionPanel](/mod/game-api/types/global-s/settingdescriptionpanel)
+- [Settings](/mod/game-api/types/assembly-api-models/settings) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SettingsClient](/mod/game-api/types/assembly-api-client/settingsclient) <span>Alta.Api.Client.HighLevel</span>
+- [SettingsCommandModules](/mod/game-api/types/alta-console/settingscommandmodules) <span>Alta.Console.Commands</span>
+- [SettingsCommandModules.PopulationSettings](/mod/game-api/types/alta-console/settingscommandmodules-populationsettings) <span>Alta.Console.Commands</span>
+- [SettingsFieldAccess](/mod/game-api/types/alta-utilities/settingsfieldaccess) <span>Alta.Utilities</span>
+- [SettingsFieldAccess&lt;TFieldType&gt;](/mod/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype) <span>Alta.Utilities</span>
+- [SettingsFileAccess&lt;TSettings&gt;](/mod/game-api/types/alta-utilities/settingsfileaccess-tsettings) <span>Alta.Utilities</span>
+- [SettingsFilesHandler](/mod/game-api/types/alta-utilities/settingsfileshandler) <span>Alta.Utilities</span>
+- [SettingsJsonUtility](/mod/game-api/types/global-s/settingsjsonutility)
+- [SettingsManager](/mod/game-api/types/alta-utilities/settingsmanager) <span>Alta.Utilities</span>
+- [SettingsPanel](/mod/game-api/types/global-s/settingspanel)
+- [SettingsPanel.SettingsPanelConfiguration](/mod/game-api/types/global-s/settingspanel-settingspanelconfiguration)
+- [SettingsQuickAccessMenu](/mod/game-api/types/alta-player/settingsquickaccessmenu) <span>Alta.QuickAccessActions</span>
+- [SettingType](/mod/game-api/types/alta-utilities/settingtype) <span>Alta.Utilities</span>
+- [SetupAchievements](/mod/game-api/types/alta-player/setupachievements) <span>Alta.Achievements</span>
+- [ShaderBlit](/mod/game-api/types/alta-utilities/shaderblit) <span>Alta.Utilities.Atlas</span>
+- [ShaderVariantWarmer](/mod/game-api/types/global-s/shadervariantwarmer)
+- [ShaderVariantWarmer.PlatformCollection](/mod/game-api/types/global-s/shadervariantwarmer-platformcollection)
+- [ShakeablePouringStrengthController](/mod/game-api/types/alta-stats-effects/shakeablepouringstrengthcontroller) <span>Alta.Liquid</span>
+- [ShakeDetector](/mod/game-api/types/global-s/shakedetector)
+- [ShakeDetectorFactory](/mod/game-api/types/global-s/shakedetectorfactory)
+- [ShakeDetectorHelper](/mod/game-api/types/global-s/shakedetectorhelper)
+- [ShakeInput](/mod/game-api/types/global-s/shakeinput)
+- [ShakeInputStructure](/mod/game-api/types/global-s/shakeinputstructure)
+- [ShakeInputStructure.Create](/mod/game-api/types/global-s/shakeinputstructure-create)
+- [ShapeCollectorHelper](/mod/game-api/types/global-s/shapecollectorhelper)
+- [ShapeImpactCollector](/mod/game-api/types/global-s/shapeimpactcollector)
+- [ShellAnimationHandler](/mod/game-api/types/alta-player/shellanimationhandler) <span>Alta.PlayerEffects</span>
+- [ShellAnimator](/mod/game-api/types/alta-player/shellanimator) <span>Alta.PlayerEffects</span>
+- [ShellSetting](/mod/game-api/types/alta-player/shellsetting) <span>Alta.PlayerEffects</span>
+- [ShieldPartDefinition](/mod/game-api/types/alta-player/shieldpartdefinition) <span>Alta.QuickAccessActions</span>
+- [ShootArguments](/mod/game-api/types/global-s/shootarguments)
+- [Shooter](/mod/game-api/types/global-s/shooter)
+- [ShopAccount](/mod/game-api/types/assembly-api-client/shopaccount) <span>Alta.Api.Client.HighLevel</span>
+- [ShopAccountInfo](/mod/game-api/types/assembly-api-models/shopaccountinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopAccountInfo.SubscriptionStatus](/mod/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopApiClient](/mod/game-api/types/assembly-api-client/shopapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [ShopConfigUtility](/mod/game-api/types/alta-customization/shopconfigutility) <span>Alta.Customization</span>
+- [ShopConfigUtility.ShopItemConfigurations](/mod/game-api/types/alta-customization/shopconfigutility-shopitemconfigurations) <span>Alta.Customization</span>
+- [ShopEditor](/mod/game-api/types/assembly-api-client/shopeditor) <span>Alta.Api.Client.HighLevel</span>
+- [ShopHelper](/mod/game-api/types/assembly-api-models/shophelper) <span>Alta.Api.DataTransferModels.Helpers</span>
+- [ShopInterface](/mod/game-api/types/alta-customization/shopinterface) <span>Alta.Customization</span>
+- [ShopInterfaceItem](/mod/game-api/types/alta-customization/shopinterfaceitem) <span>Alta.Customization</span>
+- [ShopItem](/mod/game-api/types/assembly-api-models/shopitem) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemConfiguration](/mod/game-api/types/assembly-api-models/shopitemconfiguration) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopItemDetailed](/mod/game-api/types/assembly-api-models/shopitemdetailed) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemDetailedForUser](/mod/game-api/types/assembly-api-models/shopitemdetailedforuser) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemIdentifier](/mod/game-api/types/assembly-api-models/shopitemidentifier) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemImage](/mod/game-api/types/assembly-api-models/shopitemimage) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemModificationRequest](/mod/game-api/types/assembly-api-models/shopitemmodificationrequest) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemSet](/mod/game-api/types/assembly-api-models/shopitemset) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemSetModificationRequest](/mod/game-api/types/assembly-api-models/shopitemsetmodificationrequest) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopItemsRequest](/mod/game-api/types/assembly-api-models/shopitemsrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ShopPageConfiguration](/mod/game-api/types/assembly-api-models/shoppageconfiguration) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopPageConfigurationWithBanner](/mod/game-api/types/assembly-api-models/shoppageconfigurationwithbanner) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopPrice](/mod/game-api/types/assembly-api-models/shopprice) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [ShopPurchase](/mod/game-api/types/assembly-api-client/shoppurchase) <span>Alta.Api.Client.HighLevel</span>
+- [ShopTokenResponse](/mod/game-api/types/assembly-api-models/shoptokenresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShopTransactionStatus](/mod/game-api/types/assembly-api-models/shoptransactionstatus) <span>Alta.Api.DataTransferModels.Enums</span>
+- [ShopTransactionStatusResponse](/mod/game-api/types/assembly-api-models/shoptransactionstatusresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ShoulderTwistController](/mod/game-api/types/alta-player/shouldertwistcontroller) <span>Alta.Character</span>
+- [ShoulderTwistControllerHelper](/mod/game-api/types/alta-player/shouldertwistcontrollerhelper) <span>Alta.Character</span>
+- [Show_Workspace](/mod/game-api/types/alta-utilities/show_workspace) <span>Alta.Utilities</span>
+- [ShowBounds](/mod/game-api/types/global-s/showbounds)
+- [ShowNames](/mod/game-api/types/alta-player/shownames) <span>Alta.QuickAccessActions</span>
+- [ShowNames.NameBoardHandler](/mod/game-api/types/alta-player/shownames-nameboardhandler) <span>Alta.QuickAccessActions</span>
+- [ShrineStructureAvailablePointsVisualizer](/mod/game-api/types/global-s/shrinestructureavailablepointsvisualizer)
+- [ShutdownOrderComparer](/mod/game-api/types/global-s/shutdownordercomparer)
+- [ShutdownReason](/mod/game-api/types/assembly-api-models/shutdownreason) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SignPointPart](/mod/game-api/types/global-s/signpointpart)
+- [SignPostPanel](/mod/game-api/types/global-s/signpostpanel)
+- [SignupAnalyticsReporter](/mod/game-api/types/game-other-namespaces/signupanalyticsreporter) <span>Features.Analytics.Registration</span>
+- [SilenceAnimationEvents](/mod/game-api/types/global-s/silenceanimationevents)
+- [SimpleAudioControl](/mod/game-api/types/global-s/simpleaudiocontrol)
+- [SimpleDummy](/mod/game-api/types/global-s/simpledummy)
+- [SimpleHashedGeneralValue&lt;T&gt;](/mod/game-api/types/alta-utilities/simplehashedgeneralvalue-t) <span>Alta</span>
+- [SimpleIKController](/mod/game-api/types/alta-player/simpleikcontroller) <span>Alta.Character</span>
+- [SimpleInteractPoint](/mod/game-api/types/alta-menus/simpleinteractpoint) <span>Alta.UserInterface</span>
+- [SimpleNetworkedPivot](/mod/game-api/types/global-s/simplenetworkedpivot)
+- [SimpleNoiseFilter](/mod/game-api/types/global-s/simplenoisefilter)
+- [SimpleNoiseFilter.Create](/mod/game-api/types/global-s/simplenoisefilter-create)
+- [SimplePopulationValue](/mod/game-api/types/alta-world-generation/simplepopulationvalue) <span>Alta.Populations</span>
+- [SimplePriorityQueue&lt;TItem, TPriority&gt;](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority) <span>Alta.Timing.PriorityQueue</span>
+- [SimplePriorityQueue&lt;TItem, TPriority&gt;.SimpleNode](/mod/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority-simplenode) <span>Alta.Timing.PriorityQueue</span>
+- [SimplePriorityQueue&lt;TItem&gt;](/mod/game-api/types/assembly-other/simplepriorityqueue-titem) <span>Alta.Timing.PriorityQueue</span>
+- [SimpleStandardBlit](/mod/game-api/types/alta-utilities/simplestandardblit) <span>Alta.Utilities.Atlas</span>
+- [SimpleTextPanel](/mod/game-api/types/alta-menus/simpletextpanel) <span>Alta.Meta.UI</span>
+- [SimpleTokenResultResponse](/mod/game-api/types/assembly-api-models/simpletokenresultresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SimpleUIList](/mod/game-api/types/alta-menus/simpleuilist) <span>Alta.Meta.UI</span>
+- [SimplexNoise](/mod/game-api/types/global-s/simplexnoise)
+- [SimplexNoise.Grad](/mod/game-api/types/global-s/simplexnoise-grad)
+- [SimplexNoisePart](/mod/game-api/types/alta-world-generation/simplexnoisepart) <span>Alta.Caves.PluginParts</span>
+- [SimplexNoisePartInstance](/mod/game-api/types/alta-world-generation/simplexnoisepartinstance) <span>Alta.Caves.PluginParts</span>
+- [SingleTokenResponse](/mod/game-api/types/assembly-api-models/singletokenresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SingletonBehaviour&lt;T&gt;](/mod/game-api/types/assembly-other/singletonbehaviour-t) <span>Alta.Utilities</span>
+- [SingleValue&lt;T&gt;](/mod/game-api/types/alta-utilities/singlevalue-t) <span>Alta</span>
+- [Size](/mod/game-api/types/alta-crafting/size) <span>Alta.Crafting</span>
+- [SkillHitTarget](/mod/game-api/types/global-s/skillhittarget)
+- [SkillInputStructure](/mod/game-api/types/global-s/skillinputstructure)
+- [SkillOrb](/mod/game-api/types/global-s/skillorb)
+- [SkillOrbConnectionline](/mod/game-api/types/global-s/skillorbconnectionline)
+- [SkillOrbDelegate](/mod/game-api/types/global-s/skillorbdelegate)
+- [SkillOrbDestroyEffect](/mod/game-api/types/global-s/skillorbdestroyeffect)
+- [SkillOrbEffect](/mod/game-api/types/global-s/skillorbeffect)
+- [SkillOrbHolder](/mod/game-api/types/global-s/skillorbholder)
+- [SkillOrbInteractionSpline](/mod/game-api/types/global-s/skillorbinteractionspline)
+- [SkillOrbInteractionSpline.SplineParamaters](/mod/game-api/types/global-s/skillorbinteractionspline-splineparamaters)
+- [SkillOrbMovement](/mod/game-api/types/global-s/skillorbmovement)
+- [SkillOrbOperator](/mod/game-api/types/global-s/skillorboperator)
+- [SkillOrbReplacer](/mod/game-api/types/global-s/skillorbreplacer)
+- [SkillOrbScaler](/mod/game-api/types/global-s/skillorbscaler)
+- [SkillOrbStatusUpdateDelegate](/mod/game-api/types/global-s/skillorbstatusupdatedelegate)
+- [SkillShrine](/mod/game-api/types/global-s/skillshrine)
+- [SkillShrine.ApliedSlotTuple](/mod/game-api/types/global-s/skillshrine-apliedslottuple)
+- [SkillShrine.ConnectionSyncArgument](/mod/game-api/types/global-s/skillshrine-connectionsyncargument)
+- [SkillShrine.NewPathArgument](/mod/game-api/types/global-s/skillshrine-newpathargument)
+- [SkillShrineRotator](/mod/game-api/types/global-s/skillshrinerotator)
+- [SkillShrineSaveData](/mod/game-api/types/global-s/skillshrinesavedata)
+- [SkillShrineTestingArea](/mod/game-api/types/global-s/skillshrinetestingarea)
+- [SkillShrineTestingArea.SpawnedEntity](/mod/game-api/types/global-s/skillshrinetestingarea-spawnedentity)
+- [SkillShrineVisualizer](/mod/game-api/types/global-s/skillshrinevisualizer)
+- [SkillsStructureRotator](/mod/game-api/types/global-s/skillsstructurerotator)
+- [SkillStatus](/mod/game-api/types/global-s/skillstatus)
+- [SkillStatusUtil](/mod/game-api/types/global-s/skillstatusutil)
+- [SkinColorPickup](/mod/game-api/types/alta-customization/skincolorpickup) <span>Alta.Customization</span>
+- [SkinMeshPart](/mod/game-api/types/alta-customization/skinmeshpart) <span>Alta.Customization</span>
+- [SkinnedBatchingHelper](/mod/game-api/types/global-s/skinnedbatchinghelper)
+- [SkinnedMeshPlatformQualityController](/mod/game-api/types/alta-customization/skinnedmeshplatformqualitycontroller) <span>Alta.Customization</span>
+- [SkinnedMeshRendererGroup](/mod/game-api/types/global-s/skinnedmeshrenderergroup)
+- [SkinSettings](/mod/game-api/types/alta-player/skinsettings) <span>Alta.Character</span>
+- [Skip](/mod/game-api/types/alta-utilities/skip) <span>Alta.Bezier</span>
+- [SlidingDoor](/mod/game-api/types/global-s/slidingdoor)
+- [SmallProjectile](/mod/game-api/types/global-s/smallprojectile)
+- [Smelter](/mod/game-api/types/alta-crafting/smelter) <span>Alta.Blacksmithing</span>
+- [Smelter.AnimationEvents](/mod/game-api/types/alta-crafting/smelter-animationevents) <span>Alta.Blacksmithing</span>
+- [SmelterRecipeUnlock](/mod/game-api/types/global-s/smelterrecipeunlock)
+- [SmelterSaveData](/mod/game-api/types/alta-crafting/smeltersavedata) <span>Alta.Blacksmithing</span>
+- [SmelterUnlockManager](/mod/game-api/types/alta-crafting/smelterunlockmanager) <span>Alta.Blacksmithing</span>
+- [SmelterUpgrades](/mod/game-api/types/alta-crafting/smelterupgrades) <span>Alta.Blacksmithing</span>
+- [SmelterUpgrades.Create](/mod/game-api/types/alta-crafting/smelterupgrades-create) <span>Alta.Blacksmithing</span>
+- [SmeltingRecipe](/mod/game-api/types/alta-crafting/smeltingrecipe) <span>Alta.Blacksmithing</span>
+- [SmeltingRecipe.Create](/mod/game-api/types/alta-crafting/smeltingrecipe-create) <span>Alta.Blacksmithing</span>
+- [SmoothLocomotion](/mod/game-api/types/global-s/smoothlocomotion)
+- [SmoothLocomotionModifier](/mod/game-api/types/global-s/smoothlocomotionmodifier)
+- [SmoothLocomotionPlayerController](/mod/game-api/types/global-s/smoothlocomotionplayercontroller)
+- [SmoothLocomotionSettings](/mod/game-api/types/global-s/smoothlocomotionsettings)
+- [SmoothRotationMode](/mod/game-api/types/global-s/smoothrotationmode)
+- [SmoothRotationSpeed](/mod/game-api/types/global-s/smoothrotationspeed)
+- [Snappable](/mod/game-api/types/global-s/snappable)
+- [SnapParent](/mod/game-api/types/global-s/snapparent)
+- [SnapRotationMode](/mod/game-api/types/global-s/snaprotationmode)
+- [SnapToTerrain](/mod/game-api/types/global-s/snaptoterrain)
+- [SocialAnalyticsBanMenuPanelOrigin](/mod/game-api/types/global-s/socialanalyticsbanmenupanelorigin)
+- [SocialAnalyticsEvent](/mod/game-api/types/game-other-namespaces/socialanalyticsevent) <span>ATT.Analytics.Social</span>
+- [SocialAnalyticsEventOrigin](/mod/game-api/types/global-s/socialanalyticseventorigin)
+- [SocialClient](/mod/game-api/types/assembly-api-client/socialclient) <span>Alta.Api.Client.HighLevel</span>
+- [SocialCommandModule](/mod/game-api/types/alta-console/socialcommandmodule) <span>Alta.Console.Commands</span>
+- [SocialMediaInfo](/mod/game-api/types/assembly-api-models/socialmediainfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SocialService](/mod/game-api/types/global-s/socialservice)
+- [SocialTablet](/mod/game-api/types/global-s/socialtablet)
+- [SocialTabletActionSyncStruct](/mod/game-api/types/alta-menus/socialtabletactionsyncstruct) <span>Alta.UserInterface.SocialTablet</span>
+- [SocialTabletActionType](/mod/game-api/types/alta-menus/socialtabletactiontype) <span>Alta.UserInterface.SocialTablet</span>
+- [SocialTabletPlayerBanData](/mod/game-api/types/game-other-namespaces/socialtabletplayerbandata) <span>ATT.PlayerStates</span>
+- [SocialTabletPlayerReportData](/mod/game-api/types/game-other-namespaces/socialtabletplayerreportdata) <span>ATT.PlayerStates</span>
+- [Socket](/mod/game-api/types/alta-networking/socket) <span>Alta.Networking</span>
+- [SocketEventHandler](/mod/game-api/types/alta-networking/socketeventhandler) <span>Alta.Networking</span>
+- [SortedEnumerator&lt;T&gt;](/mod/game-api/types/alta-utilities/sortedenumerator-t) <span>Alta.Utilities</span>
+- [SortedList&lt;T&gt;](/mod/game-api/types/alta-utilities/sortedlist-t) <span>Alta.Utilities</span>
+- [SoundEffect](/mod/game-api/types/global-s/soundeffect)
+- [SoundEffectExtensions](/mod/game-api/types/global-s/soundeffectextensions)
+- [SoundEffectSet](/mod/game-api/types/global-s/soundeffectset)
+- [SoundEffectSet.Create](/mod/game-api/types/global-s/soundeffectset-create)
+- [SoundEffectsMap](/mod/game-api/types/global-s/soundeffectsmap)
+- [SoundEffectsMap.Create](/mod/game-api/types/global-s/soundeffectsmap-create)
+- [SoundSource](/mod/game-api/types/global-s/soundsource)
+- [SoundSourceEvent](/mod/game-api/types/global-s/soundsourceevent)
+- [Space](/mod/game-api/types/alta-world-generation/space) <span>Alta.Forests</span>
+- [SpaceAtmosphereTrigger](/mod/game-api/types/alta-world/spaceatmospheretrigger) <span>Alta.Environmental.Atmosphere</span>
+- [SpaceDefinedAtmosphere](/mod/game-api/types/alta-world/spacedefinedatmosphere) <span>Alta.Environmental.Atmosphere</span>
+- [SpaceDefinedAttribute&lt;T&gt;](/mod/game-api/types/global-s/spacedefinedattribute-t)
+- [SpaceFilter](/mod/game-api/types/global-s/spacefilter)
+- [SpaceFilter.Create](/mod/game-api/types/global-s/spacefilter-create)
+- [SpaceFilter.Redirect](/mod/game-api/types/global-s/spacefilter-redirect)
+- [SpacePoint](/mod/game-api/types/global-s/spacepoint)
+- [SpaceType](/mod/game-api/types/alta-world-generation/spacetype) <span>Alta.Forests</span>
+- [SparkImpactDetector](/mod/game-api/types/alta-items/sparkimpactdetector) <span>Alta.Impact</span>
+- [SparkSecondaryDetector](/mod/game-api/types/alta-items/sparksecondarydetector) <span>Alta.Impact</span>
+- [SparkSecondaryDetector.SparkArgument](/mod/game-api/types/alta-items/sparksecondarydetector-sparkargument) <span>Alta.Impact</span>
+- [SpawnArea](/mod/game-api/types/global-s/spawnarea)
+- [SpawnAreaBase](/mod/game-api/types/alta-world-generation/spawnareabase) <span>Alta.Populations</span>
+- [SpawnAreaDisplay](/mod/game-api/types/alta-world-generation/spawnareadisplay) <span>Alta.Populations</span>
+- [SpawnAreaIdentifier](/mod/game-api/types/global-s/spawnareaidentifier)
+- [SpawnAreaSaveData](/mod/game-api/types/global-s/spawnareasavedata)
+- [SpawnAsSaveIgnore](/mod/game-api/types/global-s/spawnassaveignore)
+- [SpawnBuried](/mod/game-api/types/global-s/spawnburied)
+- [SpawnBuriedSaveData](/mod/game-api/types/global-s/spawnburiedsavedata)
+- [SpawnCommandModule](/mod/game-api/types/alta-console/spawncommandmodule) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.MouldDefinitionInfo](/mod/game-api/types/alta-console/spawncommandmodule-moulddefinitioninfo) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.Moulds](/mod/game-api/types/alta-console/spawncommandmodule-moulds) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.Packages](/mod/game-api/types/alta-console/spawncommandmodule-packages) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.PageCollectionInfo](/mod/game-api/types/alta-console/spawncommandmodule-pagecollectioninfo) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.Pages](/mod/game-api/types/alta-console/spawncommandmodule-pages) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.PopulationType](/mod/game-api/types/alta-console/spawncommandmodule-populationtype) <span>Alta.Console.Commands</span>
+- [SpawnCommandModule.SpawnLists](/mod/game-api/types/alta-console/spawncommandmodule-spawnlists) <span>Alta.Console.Commands</span>
+- [SpawnConstrain](/mod/game-api/types/alta-world-generation/spawnconstrain) <span>Alta.Caves</span>
+- [SpawnData](/mod/game-api/types/global-s/spawndata)
+- [SpawnedElement](/mod/game-api/types/alta-world-generation/spawnedelement) <span>Alta.Populations</span>
+- [Spawner](/mod/game-api/types/global-s/spawner)
+- [SpawnerBase](/mod/game-api/types/global-s/spawnerbase)
+- [SpawnerGrab](/mod/game-api/types/global-s/spawnergrab)
+- [SpawnerPart](/mod/game-api/types/global-s/spawnerpart)
+- [SpawnHelper](/mod/game-api/types/global-s/spawnhelper)
+- [SpawnHelper.SpawningCallback](/mod/game-api/types/global-s/spawnhelper-spawningcallback)
+- [SpawnIfEmpty](/mod/game-api/types/global-s/spawnifempty)
+- [SpawnIn](/mod/game-api/types/global-s/spawnin)
+- [SpawnInCircle](/mod/game-api/types/global-s/spawnincircle)
+- [SpawnInCircleSaveData](/mod/game-api/types/global-s/spawnincirclesavedata)
+- [SpawnInCircleSaveData1](/mod/game-api/types/global-s/spawnincirclesavedata1)
+- [SpawnIndex](/mod/game-api/types/alta-networking/spawnindex) <span>Alta.Networking</span>
+- [SpawningLogger](/mod/game-api/types/global-s/spawninglogger)
+- [SpawningTimer](/mod/game-api/types/global-s/spawningtimer)
+- [SpawningTimer.ResultTimes](/mod/game-api/types/global-s/spawningtimer-resulttimes)
+- [SpawningTimerNew](/mod/game-api/types/global-s/spawningtimernew)
+- [SpawnInstruction](/mod/game-api/types/alta-world/spawninstruction) <span>Alta.Static</span>
+- [SpawnManager](/mod/game-api/types/alta-networking/spawnmanager) <span>Alta.Networking</span>
+- [SpawnMessage](/mod/game-api/types/alta-networking/spawnmessage) <span>Alta.Networking</span>
+- [SpawnMethod](/mod/game-api/types/global-s/spawnmethod)
+- [SpawnModifier&lt;T&gt;](/mod/game-api/types/global-s/spawnmodifier-t)
+- [SpawnModifierPoint](/mod/game-api/types/global-s/spawnmodifierpoint)
+- [SpawnModifierPointNormal](/mod/game-api/types/global-s/spawnmodifierpointnormal)
+- [SpawnModifierPointNormalRedirect](/mod/game-api/types/global-s/spawnmodifierpointnormalredirect)
+- [SpawnModifierPointRedirect](/mod/game-api/types/global-s/spawnmodifierpointredirect)
+- [SpawnModifiers](/mod/game-api/types/alta-world-generation/spawnmodifiers) <span>Alta.Forests</span>
+- [SpawnModifierSpawnParameters](/mod/game-api/types/global-s/spawnmodifierspawnparameters)
+- [SpawnModifierSpawnParametersRedirect](/mod/game-api/types/global-s/spawnmodifierspawnparametersredirect)
+- [SpawnOnDestroyed](/mod/game-api/types/global-s/spawnondestroyed)
+- [SpawnParameters](/mod/game-api/types/alta-world-generation/spawnparameters) <span>Alta.Forests</span>
+- [SpawnPoint](/mod/game-api/types/alta-world-generation/spawnpoint) <span>Alta.Populations</span>
+- [SpawnPoint](/mod/game-api/types/alta-utilities/spawnpoint) <span>Alta.Utilities</span>
+- [SpawnPointsDisplay](/mod/game-api/types/alta-world-generation/spawnpointsdisplay) <span>Alta.Populations</span>
+- [SpawnPositions](/mod/game-api/types/global-s/spawnpositions)
+- [SpawnRate](/mod/game-api/types/alta-world-generation/spawnrate) <span>Alta.Populations</span>
+- [SpawnRate.Create](/mod/game-api/types/alta-world-generation/spawnrate-create) <span>Alta.Populations</span>
+- [SpawnStep](/mod/game-api/types/game-other-namespaces/spawnstep) <span>ATT.MicroTutorial.Steps</span>
+- [SpawnStepContentCommand](/mod/game-api/types/game-other-namespaces/spawnstepcontentcommand) <span>ATT.MicroTutorial</span>
+- [SpecialBiomeAttributes](/mod/game-api/types/global-s/specialbiomeattributes)
+- [SpecialBiomeAttributes.Create](/mod/game-api/types/global-s/specialbiomeattributes-create)
+- [SpecificCraftTask](/mod/game-api/types/global-s/specificcrafttask)
+- [SpecificCraftTaskArgument](/mod/game-api/types/global-s/specificcrafttaskargument)
+- [SpecificPickupBasedSkill](/mod/game-api/types/alta-player/specificpickupbasedskill) <span>Alta.Progression.Skills</span>
+- [SpecificSpawnItemTask](/mod/game-api/types/global-s/specificspawnitemtask)
+- [SpecificSpawnItemTask.RecipeFilter](/mod/game-api/types/global-s/specificspawnitemtask-recipefilter)
+- [SpecificSpawnItemTaskArgument](/mod/game-api/types/global-s/specificspawnitemtaskargument)
+- [SpecPortConfig](/mod/game-api/types/assembly-api-models/specportconfig) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [SpectralFilter](/mod/game-api/types/alta-customization/spectralfilter) <span>Alta.ScreenshotCamera</span>
+- [SpectralMaterialTransition](/mod/game-api/types/global-s/spectralmaterialtransition)
+- [SpectralMaterialTransition.Animator](/mod/game-api/types/global-s/spectralmaterialtransition-animator)
+- [SpeedModifierLocoAction](/mod/game-api/types/global-s/speedmodifierlocoaction)
+- [SphereBlockableCamera](/mod/game-api/types/alta-customization/sphereblockablecamera) <span>Alta.ScreenshotCamera</span>
+- [SphereCastFilter](/mod/game-api/types/global-s/spherecastfilter)
+- [SphereCastFilter.Create](/mod/game-api/types/global-s/spherecastfilter-create)
+- [SphereImpactCollector](/mod/game-api/types/global-s/sphereimpactcollector)
+- [SphereImpactCollector.Create](/mod/game-api/types/global-s/sphereimpactcollector-create)
+- [SphereInBoxStackingInstruction](/mod/game-api/types/alta-items/sphereinboxstackinginstruction) <span>Alta.Inventory</span>
+- [SphereInBoxStackingInstructionSetup](/mod/game-api/types/alta-items/sphereinboxstackinginstructionsetup) <span>Alta.Inventory</span>
+- [SphereVisibilityCheck](/mod/game-api/types/global-s/spherevisibilitycheck)
+- [SphericalSurface](/mod/game-api/types/alta-world/sphericalsurface) <span>Alta.Chunks</span>
+- [SphericalSurfaceSaveData](/mod/game-api/types/alta-world/sphericalsurfacesavedata) <span>Alta.Chunks</span>
+- [SpineController](/mod/game-api/types/alta-player/spinecontroller) <span>Alta.Character</span>
+- [SpineEdge](/mod/game-api/types/alta-items/spineedge) <span>Alta.Pages</span>
+- [SpineEdge.Create](/mod/game-api/types/alta-items/spineedge-create) <span>Alta.Pages</span>
+- [SpineFaceFlairs](/mod/game-api/types/alta-items/spinefaceflairs) <span>Alta.Pages</span>
+- [SpineFlairs](/mod/game-api/types/alta-items/spineflairs) <span>Alta.Pages</span>
+- [SpineIKHelper](/mod/game-api/types/alta-player/spineikhelper) <span>Alta.Character</span>
+- [SpineMiddle](/mod/game-api/types/alta-items/spinemiddle) <span>Alta.Pages</span>
+- [SpineMiddle.Create](/mod/game-api/types/alta-items/spinemiddle-create) <span>Alta.Pages</span>
+- [Spinner](/mod/game-api/types/global-s/spinner)
+- [SpiritModeDoorway](/mod/game-api/types/game-other-namespaces/spiritmodedoorway) <span>Features.Gameplay.ClimbingTower</span>
+- [SpiritModeDoorway.UnlockModificationPair](/mod/game-api/types/game-other-namespaces/spiritmodedoorway-unlockmodificationpair) <span>Features.Gameplay.ClimbingTower</span>
+- [SpiritModeDoorwayMode](/mod/game-api/types/game-other-namespaces/spiritmodedoorwaymode) <span>Features.Gameplay.ClimbingTower</span>
+- [SpiritModeDoorwaySaveData](/mod/game-api/types/game-other-namespaces/spiritmodedoorwaysavedata) <span>ATT.ClimbingTower</span>
+- [SpiritModeDoorwaySaveDataOld1](/mod/game-api/types/game-other-namespaces/spiritmodedoorwaysavedataold1) <span>ATT.ClimbingTower</span>
+- [SpiritModeShellAnimator](/mod/game-api/types/global-s/spiritmodeshellanimator)
+- [SpiritState](/mod/game-api/types/alta-player/spiritstate) <span>Alta.PlayerStates</span>
+- [SpiritStateSettings](/mod/game-api/types/alta-player/spiritstatesettings) <span>Alta.PlayerStates</span>
+- [SpiritStateSettings.Create](/mod/game-api/types/alta-player/spiritstatesettings-create) <span>Alta.PlayerStates</span>
+- [SpiritToPlayingTransition](/mod/game-api/types/alta-player/spirittoplayingtransition) <span>Alta.PlayerStates</span>
+- [SplatData](/mod/game-api/types/alta-world-generation/splatdata) <span>Alta.Forests</span>
+- [SplatPainter](/mod/game-api/types/alta-world-generation/splatpainter) <span>Alta.Forests</span>
+- [SplatPaintSet](/mod/game-api/types/alta-world-generation/splatpaintset) <span>Alta.Forests</span>
+- [SplatPaintSet.Create](/mod/game-api/types/alta-world-generation/splatpaintset-create) <span>Alta.Forests</span>
+- [SplineChangedHandler](/mod/game-api/types/alta-utilities/splinechangedhandler) <span>Alta.Bezier</span>
+- [SplineCylinder](/mod/game-api/types/alta-utilities/splinecylinder) <span>Alta.Bezier</span>
+- [SplineDecorator](/mod/game-api/types/alta-utilities/splinedecorator) <span>Alta.Bezier</span>
+- [SplineDecorator.ForwardMode](/mod/game-api/types/alta-utilities/splinedecorator-forwardmode) <span>Alta.Bezier</span>
+- [SplineDecorator.Part](/mod/game-api/types/alta-utilities/splinedecorator-part) <span>Alta.Bezier</span>
+- [SplineDecorator.RotationMode](/mod/game-api/types/alta-utilities/splinedecorator-rotationmode) <span>Alta.Bezier</span>
+- [SplineDecorator.ScaleMode](/mod/game-api/types/alta-utilities/splinedecorator-scalemode) <span>Alta.Bezier</span>
+- [SplineDecorator.UpMode](/mod/game-api/types/alta-utilities/splinedecorator-upmode) <span>Alta.Bezier</span>
+- [SplineDisplay](/mod/game-api/types/alta-utilities/splinedisplay) <span>Alta.Bezier</span>
+- [SplineDisplayModifier](/mod/game-api/types/alta-utilities/splinedisplaymodifier) <span>Alta.Bezier</span>
+- [SplineInstruction](/mod/game-api/types/alta-world-generation/splineinstruction) <span>Alta.Forests</span>
+- [SplineMesh](/mod/game-api/types/alta-utilities/splinemesh) <span>Alta.Bezier</span>
+- [SplineParticlesPooled](/mod/game-api/types/global-s/splineparticlespooled)
+- [SplineProfile](/mod/game-api/types/global-s/splineprofile)
+- [SplitVector3](/mod/game-api/types/global-s/splitvector3)
+- [Spriggull](/mod/game-api/types/alta-intelligence/spriggull) <span>Alta.Intelligence</span>
+- [SpriggullFlail](/mod/game-api/types/alta-intelligence/spriggullflail) <span>Alta.Intelligence</span>
+- [SquaredValue](/mod/game-api/types/assembly-other/squaredvalue)
+- [StabilizeJointContainer](/mod/game-api/types/alta-items/stabilizejointcontainer) <span>Alta.Inventory</span>
+- [StabilizeLantern](/mod/game-api/types/alta-items/stabilizelantern) <span>Alta.Inventory</span>
+- [StabilizePickupJoint](/mod/game-api/types/alta-items/stabilizepickupjoint) <span>Alta.Inventory</span>
+- [StablePriorityQueue&lt;T&gt;](/mod/game-api/types/assembly-other/stablepriorityqueue-t) <span>Alta.Timing.PriorityQueue</span>
+- [StablePriorityQueueNode](/mod/game-api/types/assembly-other/stablepriorityqueuenode) <span>Alta.Timing.PriorityQueue</span>
+- [StackingComponent](/mod/game-api/types/alta-items/stackingcomponent) <span>Alta.Inventory</span>
+- [StackingInstructions](/mod/game-api/types/alta-items/stackinginstructions) <span>Alta.Inventory</span>
+- [StackingInstructions&lt;T&gt;](/mod/game-api/types/alta-items/stackinginstructions-t) <span>Alta.Inventory</span>
+- [StackingInstructionSetup](/mod/game-api/types/alta-items/stackinginstructionsetup) <span>Alta.Inventory</span>
+- [StackingInstructionSetup&lt;T&gt;](/mod/game-api/types/alta-items/stackinginstructionsetup-t) <span>Alta.Inventory</span>
+- [StageBasedPrefab](/mod/game-api/types/global-s/stagebasedprefab)
+- [StageBasedPrefabSaveData](/mod/game-api/types/global-s/stagebasedprefabsavedata)
+- [StalactiteFall](/mod/game-api/types/global-s/stalactitefall)
+- [StaminaBarVisibility](/mod/game-api/types/alta-stats-effects/staminabarvisibility) <span>Alta.StatSystem</span>
+- [StaminaBarVisibility.HandStaminaView](/mod/game-api/types/alta-stats-effects/staminabarvisibility-handstaminaview) <span>Alta.StatSystem</span>
+- [StaminaUsageRecord](/mod/game-api/types/game-other-namespaces/staminausagerecord) <span>Features.Climbing</span>
+- [StandardFloatAsEnum](/mod/game-api/types/alta-menus/standardfloatasenum) <span>Alta.Menu</span>
+- [StandardHeatBlit](/mod/game-api/types/alta-utilities/standardheatblit) <span>Alta.Utilities.Atlas</span>
+- [StandingStillPositionModifier](/mod/game-api/types/global-s/standingstillpositionmodifier)
+- [StartServerSessionResponse](/mod/game-api/types/assembly-api-models/startserversessionresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [StartupLoader](/mod/game-api/types/global-s/startuploader)
+- [Stat](/mod/game-api/types/alta-player/stat) <span>Alta.Achievements</span>
+- [Stat](/mod/game-api/types/alta-stats-effects/stat) <span>Alta.StatSystem</span>
+- [StatAffectAccessor](/mod/game-api/types/alta-stats-effects/stataffectaccessor) <span>Alta.StatSystem</span>
+- [StatAffectingArea](/mod/game-api/types/alta-stats-effects/stataffectingarea) <span>Alta.StatSystem</span>
+- [StatAppliedHandler](/mod/game-api/types/alta-stats-effects/statappliedhandler) <span>Alta.StatSystem</span>
+- [StatBar](/mod/game-api/types/alta-stats-effects/statbar) <span>Alta.StatSystem</span>
+- [StatBarBase](/mod/game-api/types/alta-stats-effects/statbarbase) <span>Alta.StatSystem</span>
+- [StatBarNotch](/mod/game-api/types/alta-stats-effects/statbarnotch) <span>Alta.StatSystem</span>
+- [StatBarSimple](/mod/game-api/types/alta-stats-effects/statbarsimple) <span>Alta.StatSystem</span>
+- [StatBarSimple.IsLerping](/mod/game-api/types/alta-stats-effects/statbarsimple-islerping) <span>Alta.StatSystem</span>
+- [StatBarSimple.MaterialValue](/mod/game-api/types/alta-stats-effects/statbarsimple-materialvalue) <span>Alta.StatSystem</span>
+- [StatBarVisibilityGroup](/mod/game-api/types/alta-stats-effects/statbarvisibilitygroup) <span>Alta.StatSystem</span>
+- [StatBonusSkill](/mod/game-api/types/global-s/statbonusskill)
+- [StatBonusSkill.OperationTarget](/mod/game-api/types/global-s/statbonusskill-operationtarget)
+- [StatBonusSkill.OperationType](/mod/game-api/types/global-s/statbonusskill-operationtype)
+- [StatChangeEffect](/mod/game-api/types/alta-stats-effects/statchangeeffect) <span>Alta.Alchemy</span>
+- [StatChangeHook](/mod/game-api/types/alta-intelligence/statchangehook) <span>Alta.Intelligence</span>
+- [StatConverter](/mod/game-api/types/alta-stats-effects/statconverter) <span>Alta.StatSystem</span>
+- [StatDefinition](/mod/game-api/types/alta-stats-effects/statdefinition) <span>Alta.StatSystem</span>
+- [StatDefinition.Create](/mod/game-api/types/alta-stats-effects/statdefinition-create) <span>Alta.StatSystem</span>
+- [StatDefinition.MinimumAndMaximumValues](/mod/game-api/types/alta-stats-effects/statdefinition-minimumandmaximumvalues) <span>Alta.StatSystem</span>
+- [StatDefinitionApplication](/mod/game-api/types/alta-stats-effects/statdefinitionapplication) <span>Alta.StatSystem</span>
+- [StatDefinitionConverter](/mod/game-api/types/alta-utilities/statdefinitionconverter) <span>Alta</span>
+- [StatDrivenEffect](/mod/game-api/types/alta-player/statdriveneffect) <span>Alta.PlayerEffects</span>
+- [StatEffect](/mod/game-api/types/alta-stats-effects/stateffect) <span>Alta.Alchemy</span>
+- [StatEffectHolder](/mod/game-api/types/alta-player/stateffectholder) <span>Alta.PlayerEffects</span>
+- [StatEffectsDefinition](/mod/game-api/types/alta-player/stateffectsdefinition) <span>Alta.PlayerEffects</span>
+- [StatEffectsDefinition.Create](/mod/game-api/types/alta-player/stateffectsdefinition-create) <span>Alta.PlayerEffects</span>
+- [StatEffectShellAnimator](/mod/game-api/types/alta-player/stateffectshellanimator) <span>Alta.PlayerEffects</span>
+- [StatEffectShellAnimator.ShellAnimationHandlerNode](/mod/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode) <span>Alta.PlayerEffects</span>
+- [StatEffectShellSetting](/mod/game-api/types/alta-player/stateffectshellsetting) <span>Alta.PlayerEffects</span>
+- [StateTransition&lt;TFrom, TTo&gt;](/mod/game-api/types/alta-player/statetransition-tfrom-tto) <span>Alta.PlayerStates.Transitions</span>
+- [StateTransitionsManager](/mod/game-api/types/alta-player/statetransitionsmanager) <span>Alta.PlayerStates</span>
+- [StatHandler](/mod/game-api/types/alta-stats-effects/stathandler) <span>Alta.StatSystem</span>
+- [StaticAchievementTrigger](/mod/game-api/types/alta-world/staticachievementtrigger) <span>Alta.Map</span>
+- [StaticBatchedRecombiner](/mod/game-api/types/global-s/staticbatchedrecombiner)
+- [StaticBatchedRecombiner.AnchoredList&lt;T&gt;](/mod/game-api/types/global-s/staticbatchedrecombiner-anchoredlist-t)
+- [StaticBatchedRecombiner.WorkingMesh](/mod/game-api/types/global-s/staticbatchedrecombiner-workingmesh)
+- [StaticBatchReport](/mod/game-api/types/global-s/staticbatchreport)
+- [StaticBoundsOverride](/mod/game-api/types/global-s/staticboundsoverride)
+- [StaticCaveChunk](/mod/game-api/types/alta-world/staticcavechunk) <span>Alta.Chunks</span>
+- [StaticChangeEvent](/mod/game-api/types/alta-networking/staticchangeevent) <span>Alta.Networking</span>
+- [StaticChunkContentManager](/mod/game-api/types/alta-world/staticchunkcontentmanager) <span>Alta.Chunks</span>
+- [StaticChunkContentManager.Skip](/mod/game-api/types/alta-world/staticchunkcontentmanager-skip) <span>Alta.Chunks</span>
+- [StaticClusterGenerator](/mod/game-api/types/alta-world-generation/staticclustergenerator) <span>Alta.Caves.Displays</span>
+- [StaticDrop](/mod/game-api/types/global-s/staticdrop)
+- [StaticDynamicSpawner](/mod/game-api/types/global-s/staticdynamicspawner)
+- [StaticEnvironmentPiece](/mod/game-api/types/alta-world/staticenvironmentpiece) <span>Alta.Static</span>
+- [StaticEnvironmentPiece.Create](/mod/game-api/types/alta-world/staticenvironmentpiece-create) <span>Alta.Static</span>
+- [StaticEnvironmentPieceInstance](/mod/game-api/types/alta-world/staticenvironmentpieceinstance) <span>Alta.Static</span>
+- [StaticGeneration](/mod/game-api/types/global-s/staticgeneration)
+- [StaticGenerationHelper](/mod/game-api/types/global-s/staticgenerationhelper)
+- [StaticGenerationParent](/mod/game-api/types/global-s/staticgenerationparent)
+- [StaticGenerationParentSaveData](/mod/game-api/types/global-s/staticgenerationparentsavedata)
+- [StaticImpactDetector](/mod/game-api/types/global-s/staticimpactdetector)
+- [StaticLiquidContainer](/mod/game-api/types/alta-stats-effects/staticliquidcontainer) <span>Alta.Liquid</span>
+- [StaticObjectCombiner](/mod/game-api/types/global-s/staticobjectcombiner)
+- [StaticObjectCombiner.CombineFunctions](/mod/game-api/types/global-s/staticobjectcombiner-combinefunctions)
+- [StaticObjectCombiner.IncrementalMesh](/mod/game-api/types/global-s/staticobjectcombiner-incrementalmesh)
+- [StaticObjectCombiner.Space](/mod/game-api/types/global-s/staticobjectcombiner-space)
+- [StaticPageProvider](/mod/game-api/types/global-s/staticpageprovider)
+- [StaticPlatformSupport](/mod/game-api/types/alta-networking/staticplatformsupport) <span>Alta.Networking</span>
+- [StaticPositionSpawner](/mod/game-api/types/global-s/staticpositionspawner)
+- [StaticRandomCustomization](/mod/game-api/types/alta-customization/staticrandomcustomization) <span>Alta.Customization</span>
+- [StatList](/mod/game-api/types/alta-stats-effects/statlist) <span>Alta.StatSystem</span>
+- [StatListConverter](/mod/game-api/types/alta-stats-effects/statlistconverter) <span>Alta.StatSystem</span>
+- [StatManager](/mod/game-api/types/alta-stats-effects/statmanager) <span>Alta.StatSystem</span>
+- [StatManagerSaveData](/mod/game-api/types/alta-stats-effects/statmanagersavedata) <span>Alta.StatSystem</span>
+- [StatManagerSaveData.IndirectStatModifier](/mod/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier) <span>Alta.StatSystem</span>
+- [StatManagerSaveData.TimedModifier](/mod/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier) <span>Alta.StatSystem</span>
+- [StatManagerSaveData1](/mod/game-api/types/alta-stats-effects/statmanagersavedata1) <span>Alta.StatSystem</span>
+- [StatManagerSaveData1.IndirectStatModifier](/mod/game-api/types/alta-stats-effects/statmanagersavedata1-indirectstatmodifier) <span>Alta.StatSystem</span>
+- [StatManagerSaveData1.TimedModifier](/mod/game-api/types/alta-stats-effects/statmanagersavedata1-timedmodifier) <span>Alta.StatSystem</span>
+- [StatManagerSaveDataStat](/mod/game-api/types/alta-stats-effects/statmanagersavedatastat) <span>Alta.StatSystem</span>
+- [StatModifier](/mod/game-api/types/alta-stats-effects/statmodifier) <span>Alta.StatSystem</span>
+- [StatModifierConstructor](/mod/game-api/types/alta-stats-effects/statmodifierconstructor) <span>Alta.StatSystem</span>
+- [StatMultiplierEffect](/mod/game-api/types/alta-stats-effects/statmultipliereffect) <span>Alta.Alchemy</span>
+- [StatMultiplierEffect.Create](/mod/game-api/types/alta-stats-effects/statmultipliereffect-create) <span>Alta.Alchemy</span>
+- [StatOperation](/mod/game-api/types/alta-intelligence/statoperation) <span>Alta.Intelligence</span>
+- [StatPlayerPair](/mod/game-api/types/alta-stats-effects/statplayerpair) <span>Alta.StatSystem</span>
+- [StatProgress](/mod/game-api/types/assembly-api-models/statprogress) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [StatReachedAchievement](/mod/game-api/types/global-s/statreachedachievement)
+- [StatSetEffect](/mod/game-api/types/alta-stats-effects/statseteffect) <span>Alta.Alchemy</span>
+- [StatThresholdValue](/mod/game-api/types/alta-player/statthresholdvalue) <span>Alta.PlayerStates</span>
+- [StatTrigger](/mod/game-api/types/alta-stats-effects/stattrigger) <span>Alta.StatSystem</span>
+- [StatType](/mod/game-api/types/global-s/stattype)
+- [StatType](/mod/game-api/types/alta-player/stattype) <span>Alta.Achievements</span>
+- [StatUpgradeEffect](/mod/game-api/types/global-s/statupgradeeffect)
+- [StatUpgradeTarget](/mod/game-api/types/alta-stats-effects/statupgradetarget) <span>Alta.StatSystem</span>
+- [StatUpgradeTarget.StatIncreaseType](/mod/game-api/types/alta-stats-effects/statupgradetarget-statincreasetype) <span>Alta.StatSystem</span>
+- [Status](/mod/game-api/types/assembly-api-client/status) <span>Alta.Api.Client.HighLevel</span>
+- [Status](/mod/game-api/types/assembly-api-models/status) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [Status.GameServerState](/mod/game-api/types/assembly-api-models/status-gameserverstate) <span>Alta.Api.DataTransferModels.Models.Agones</span>
+- [Status.StatusPlatform](/mod/game-api/types/assembly-api-client/status-statusplatform) <span>Alta.Api.Client.HighLevel</span>
+- [Status.StatusRegion](/mod/game-api/types/assembly-api-client/status-statusregion) <span>Alta.Api.Client.HighLevel</span>
+- [Status.StatusSeverity](/mod/game-api/types/assembly-api-client/status-statusseverity) <span>Alta.Api.Client.HighLevel</span>
+- [Status.StatusType](/mod/game-api/types/assembly-api-client/status-statustype) <span>Alta.Api.Client.HighLevel</span>
+- [StatusAPI](/mod/game-api/types/assembly-api-client/statusapi) <span>Alta.Api.Client.HighLevel</span>
+- [StatValue](/mod/game-api/types/alta-intelligence/statvalue) <span>Alta.Intelligence</span>
+- [SteamOpenVrInitializer](/mod/game-api/types/assembly-other/steamopenvrinitializer) <span>Alta.XRLoaders</span>
+- [SteamStats](/mod/game-api/types/alta-player/steamstats) <span>Alta.Achievements</span>
+- [SteamVRDeviceController](/mod/game-api/types/global-s/steamvrdevicecontroller)
+- [SteamVRDeviceLifecycle](/mod/game-api/types/global-s/steamvrdevicelifecycle)
+- [SteamVRInputController](/mod/game-api/types/global-s/steamvrinputcontroller)
+- [SteamVRPose](/mod/game-api/types/global-s/steamvrpose)
+- [SteelSong](/mod/game-api/types/global-s/steelsong)
+- [SteelSong.Create](/mod/game-api/types/global-s/steelsong-create)
+- [SteelSong.IdentifiedModel](/mod/game-api/types/global-s/steelsong-identifiedmodel)
+- [SteelSong.MessageType](/mod/game-api/types/global-s/steelsong-messagetype)
+- [SteelSongEffect](/mod/game-api/types/global-s/steelsongeffect)
+- [StencilBufferNumberPool](/mod/game-api/types/global-s/stencilbuffernumberpool)
+- [StepAnimationCurveAttribute](/mod/game-api/types/assembly-other/stepanimationcurveattribute)
+- [StepInstance](/mod/game-api/types/game-other-namespaces/stepinstance) <span>ATT.MicroTutorial</span>
+- [StewComponent](/mod/game-api/types/alta-crafting/stewcomponent) <span>Alta.Cooking</span>
+- [StewContainer](/mod/game-api/types/alta-crafting/stewcontainer) <span>Alta.Cooking</span>
+- [StewContentArguments](/mod/game-api/types/alta-crafting/stewcontentarguments) <span>Alta.Cooking</span>
+- [StewIngredientBase](/mod/game-api/types/alta-crafting/stewingredientbase) <span>Alta.Cooking</span>
+- [StewManager](/mod/game-api/types/alta-crafting/stewmanager) <span>Alta.Cooking</span>
+- [StewManagerSaveData](/mod/game-api/types/alta-crafting/stewmanagersavedata) <span>Alta.Cooking</span>
+- [StewRecipe](/mod/game-api/types/alta-crafting/stewrecipe) <span>Alta.Cooking</span>
+- [StewRecipePageProvider](/mod/game-api/types/global-s/stewrecipepageprovider)
+- [StewRecipePageSettings](/mod/game-api/types/global-s/stewrecipepagesettings)
+- [StewRecipePageSettings.Create](/mod/game-api/types/global-s/stewrecipepagesettings-create)
+- [StopInstanceRequest](/mod/game-api/types/assembly-api-models/stopinstancerequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [StorageData](/mod/game-api/types/alta-items/storagedata) <span>Alta.Inventory</span>
+- [StorageOrganizer](/mod/game-api/types/alta-items/storageorganizer) <span>Alta.Inventory</span>
+- [StorageStatParameters](/mod/game-api/types/global-s/storagestatparameters)
+- [StoreRotationGraphicConfig](/mod/game-api/types/assembly-api-models/storerotationgraphicconfig) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [StoreRotationPopup](/mod/game-api/types/global-s/storerotationpopup)
+- [StoreScrollManager](/mod/game-api/types/alta-customization/storescrollmanager) <span>Alta.Customization</span>
+- [StraightPath](/mod/game-api/types/alta-items/straightpath) <span>Alta.Mechanisms</span>
+- [Stream](/mod/game-api/types/assembly-other/stream) <span>Alta.Serialization</span>
+- [Stream.StringEncoding](/mod/game-api/types/assembly-other/stream-stringencoding) <span>Alta.Serialization</span>
+- [StreamAuthorityHelper](/mod/game-api/types/alta-networking/streamauthorityhelper) <span>Alta.Networking</span>
+- [StreamCounter](/mod/game-api/types/assembly-other/streamcounter) <span>Alta.Serialization</span>
+- [StreamEntityExtensions](/mod/game-api/types/alta-networking/streamentityextensions) <span>Alta.Networking</span>
+- [StreamerHelper](/mod/game-api/types/alta-world/streamerhelper) <span>Alta.Chunks</span>
+- [StreamerManager](/mod/game-api/types/global-s/streamermanager)
+- [StreamingButton](/mod/game-api/types/alta-customization/streamingbutton) <span>Alta.ScreenshotCamera</span>
+- [StreamingSettings](/mod/game-api/types/alta-world-generation/streamingsettings) <span>Alta.Caves</span>
+- [StreamingSettings.Create](/mod/game-api/types/alta-world-generation/streamingsettings-create) <span>Alta.Caves</span>
+- [StreamingSettings.SpecialLayer](/mod/game-api/types/alta-world-generation/streamingsettings-speciallayer) <span>Alta.Caves</span>
+- [StreamMethod](/mod/game-api/types/alta-networking/streammethod) <span>Alta.Networking</span>
+- [StreamReader](/mod/game-api/types/assembly-other/streamreader) <span>Alta.Serialization</span>
+- [StreamSettings](/mod/game-api/types/global-s/streamsettings)
+- [StreamWriter](/mod/game-api/types/assembly-other/streamwriter) <span>Alta.Serialization</span>
+- [Stretch](/mod/game-api/types/alta-world-generation/stretch) <span>Alta.Caves.PluginParts</span>
+- [StretchInstance](/mod/game-api/types/alta-world-generation/stretchinstance) <span>Alta.Caves.PluginParts</span>
+- [StrikeSuccessionInput](/mod/game-api/types/global-s/strikesuccessioninput)
+- [StrikeSuccessionInputStructure](/mod/game-api/types/global-s/strikesuccessioninputstructure)
+- [StrikeSuccessionInputStructure.Create](/mod/game-api/types/global-s/strikesuccessioninputstructure-create)
+- [StringBuilderReplacer](/mod/game-api/types/global-s/stringbuilderreplacer)
+- [StringGameSettingsAccess](/mod/game-api/types/alta-utilities/stringgamesettingsaccess) <span>Alta.Utilities</span>
+- [StringGameSettingsAccess.Create](/mod/game-api/types/alta-utilities/stringgamesettingsaccess-create) <span>Alta.Utilities</span>
+- [StringHandler](/mod/game-api/types/global-s/stringhandler)
+- [StringSettingValue](/mod/game-api/types/alta-utilities/stringsettingvalue) <span>Alta.Utilities</span>
+- [StringTypeConverter](/mod/game-api/types/alta-console/stringtypeconverter) <span>Alta.Console</span>
+- [StructureCube](/mod/game-api/types/global-s/structurecube)
+- [StructurePart](/mod/game-api/types/global-s/structurepart)
+- [StructurePart.Cube](/mod/game-api/types/global-s/structurepart-cube)
+- [StructureSide](/mod/game-api/types/global-s/structureside)
+- [StructureType](/mod/game-api/types/global-s/structuretype)
+- [StructureType.Create](/mod/game-api/types/global-s/structuretype-create)
+- [SubDockHandler](/mod/game-api/types/alta-items/subdockhandler) <span>Alta.Inventory</span>
+- [SubInspectorAttribute](/mod/game-api/types/assembly-other/subinspectorattribute)
+- [SubscriptionManager](/mod/game-api/types/global-s/subscriptionmanager)
+- [SubscriptionPlanInfo](/mod/game-api/types/assembly-api-models/subscriptionplaninfo) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [SubscriptionRefreshResult](/mod/game-api/types/assembly-api-models/subscriptionrefreshresult) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SubscriptionRefreshResult.Reward](/mod/game-api/types/assembly-api-models/subscriptionrefreshresult-reward) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [SuccessionStrikeDelegate](/mod/game-api/types/global-s/successionstrikedelegate)
+- [SummonActionItemQuickAccess](/mod/game-api/types/alta-player/summonactionitemquickaccess) <span>Alta.QuickAccessActions</span>
+- [SummonCameraQuickAccess](/mod/game-api/types/alta-customization/summoncameraquickaccess) <span>Alta.ScreenshotCamera</span>
+- [SureHands](/mod/game-api/types/global-s/surehands)
+- [SureHands.Create](/mod/game-api/types/global-s/surehands-create)
+- [Surface](/mod/game-api/types/global-s/surface)
+- [SurfaceDefinition](/mod/game-api/types/global-s/surfacedefinition)
+- [SurfaceDefinition.Create](/mod/game-api/types/global-s/surfacedefinition-create)
+- [SurfaceMaterial](/mod/game-api/types/alta-utilities/surfacematerial) <span>Alta</span>
+- [SurfaceMaterial.Create](/mod/game-api/types/alta-utilities/surfacematerial-create) <span>Alta</span>
+- [SwipeInputSource](/mod/game-api/types/global-s/swipeinputsource)
+- [SwipeInteractionController](/mod/game-api/types/global-s/swipeinteractioncontroller)
+- [SwipeInteractionController.SwipeTracker](/mod/game-api/types/global-s/swipeinteractioncontroller-swipetracker)
+- [SwipePromptController](/mod/game-api/types/global-s/swipepromptcontroller)
+- [SwipeSensitivityLevel](/mod/game-api/types/global-s/swipesensitivitylevel)
+- [SwordTrail](/mod/game-api/types/global-s/swordtrail)
+- [Sync](/mod/game-api/types/alta-networking/sync) <span>Alta.Networking</span>
+- [Sync&lt;T&gt;](/mod/game-api/types/alta-networking/sync-t) <span>Alta.Networking</span>
+- [SyncAttribute](/mod/game-api/types/global-s/syncattribute)
+- [SyncBoolAttribute](/mod/game-api/types/global-s/syncboolattribute)
+- [SyncController](/mod/game-api/types/game-other-namespaces/synccontroller) <span>ATT.MicroTutorial</span>
+- [SyncedColor](/mod/game-api/types/global-s/syncedcolor)
+- [SyncFactory](/mod/game-api/types/alta-networking/syncfactory) <span>Alta.Networking</span>
+- [SyncFloatAttribute](/mod/game-api/types/global-s/syncfloatattribute)
+- [SyncHashedAttribute](/mod/game-api/types/global-s/synchashedattribute)
+- [SyncUintAttribute](/mod/game-api/types/global-s/syncuintattribute)
+
+</div>
+
+## T
+
+<div className="type-index">
+
+- [Tab](/mod/game-api/types/alta-menus/tab) <span>Alta.Meta.UI</span>
+- [TabbedPanel](/mod/game-api/types/alta-menus/tabbedpanel) <span>Alta.Meta.UI</span>
+- [TableOrderAttribute](/mod/game-api/types/game-other-namespaces/tableorderattribute) <span>TableParser</span>
+- [TableParserExtensions](/mod/game-api/types/game-other-namespaces/tableparserextensions) <span>TableParser</span>
+- [TabletToggle](/mod/game-api/types/alta-menus/tablettoggle) <span>Alta.Meta.UI</span>
+- [Tag](/mod/game-api/types/alta-world-generation/tag) <span>Alta.PAGaC</span>
+- [TanFromAngle](/mod/game-api/types/assembly-other/tanfromangle)
+- [TangentSolver](/mod/game-api/types/global-t-x/tangentsolver)
+- [Target](/mod/game-api/types/alta-intelligence/target) <span>Alta.Intelligence</span>
+- [TargetBasedSkill](/mod/game-api/types/global-t-x/targetbasedskill)
+- [TargetBasedSkill.ClientHitInput](/mod/game-api/types/global-t-x/targetbasedskill-clienthitinput)
+- [TargetChangedHandler&lt;T&gt;](/mod/game-api/types/alta-utilities/targetchangedhandler-t) <span>Alta.Utilities</span>
+- [TargetCollector](/mod/game-api/types/alta-intelligence/targetcollector) <span>Alta.Intelligence</span>
+- [TargetCollectorManager](/mod/game-api/types/alta-intelligence/targetcollectormanager) <span>Alta.Intelligence</span>
+- [TargetOperation](/mod/game-api/types/alta-intelligence/targetoperation) <span>Alta.Intelligence</span>
+- [TargetOperationComponent](/mod/game-api/types/alta-intelligence/targetoperationcomponent) <span>Alta.Intelligence</span>
+- [TargetPointer](/mod/game-api/types/alta-intelligence/targetpointer) <span>Alta.Intelligence</span>
+- [TargetResult](/mod/game-api/types/alta-intelligence/targetresult) <span>Alta.Intelligence</span>
+- [TargetResult.Result](/mod/game-api/types/alta-intelligence/targetresult-result) <span>Alta.Intelligence</span>
+- [TaskCompletedEvent](/mod/game-api/types/global-t-x/taskcompletedevent)
+- [TaskLock](/mod/game-api/types/global-t-x/tasklock)
+- [TaskYield](/mod/game-api/types/global-t-x/taskyield)
+- [TaskYield&lt;T&gt;](/mod/game-api/types/assembly-other/taskyield-t)
+- [TaxManager](/mod/game-api/types/alta-crafting/taxmanager) <span>Alta.Trading</span>
+- [TaxSaveData](/mod/game-api/types/alta-crafting/taxsavedata) <span>Alta.Trading</span>
+- [TaxSaveData1](/mod/game-api/types/alta-crafting/taxsavedata1) <span>Alta.Trading</span>
+- [TeleportationPoint](/mod/game-api/types/global-t-x/teleportationpoint)
+- [TeleportationPointSaveData](/mod/game-api/types/global-t-x/teleportationpointsavedata)
+- [TeleportationRecord](/mod/game-api/types/alta-console/teleportationrecord) <span>Alta.Analytics</span>
+- [TeleportAwareTriggerExample](/mod/game-api/types/global-t-x/teleportawaretriggerexample)
+- [TeleportCostStructure](/mod/game-api/types/alta-world-generation/teleportcoststructure) <span>Alta.Caves</span>
+- [TeleportDefinition](/mod/game-api/types/global-t-x/teleportdefinition)
+- [TeleportDefinitionNetworkMessenger](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger)
+- [TeleportDefinitionNetworkMessenger.TeleportDefinitionPositionPair](/mod/game-api/types/global-t-x/teleportdefinitionnetworkmessenger-teleportdefinitionpositionpair)
+- [TeleportEffect](/mod/game-api/types/alta-stats-effects/teleporteffect) <span>Alta.Alchemy</span>
+- [TeleportEffectArgument](/mod/game-api/types/alta-world-generation/teleporteffectargument) <span>Alta.Caves</span>
+- [Teleporter](/mod/game-api/types/global-t-x/teleporter)
+- [TeleporterBlock](/mod/game-api/types/global-t-x/teleporterblock)
+- [TeleporterPlatform](/mod/game-api/types/global-t-x/teleporterplatform)
+- [TeleporterTrailLerper](/mod/game-api/types/global-t-x/teleportertraillerper)
+- [TeleportMode](/mod/game-api/types/alta-player/teleportmode) <span>Alta.Character</span>
+- [TeleportPointElement](/mod/game-api/types/global-t-x/teleportpointelement)
+- [TelescopicPickup](/mod/game-api/types/global-t-x/telescopicpickup)
+- [TempAbsorber](/mod/game-api/types/global-t-x/tempabsorber)
+- [TempDoor](/mod/game-api/types/global-t-x/tempdoor)
+- [TemperatureAffected](/mod/game-api/types/global-t-x/temperatureaffected)
+- [TemperatureCheckInput](/mod/game-api/types/global-t-x/temperaturecheckinput)
+- [TemperatureCheckInputStructure](/mod/game-api/types/global-t-x/temperaturecheckinputstructure)
+- [TemperatureCheckInputStructure.Create](/mod/game-api/types/global-t-x/temperaturecheckinputstructure-create)
+- [TemperatureModifier](/mod/game-api/types/alta-stats-effects/temperaturemodifier) <span>Alta.Heat</span>
+- [TemperatureToMaterial](/mod/game-api/types/alta-stats-effects/temperaturetomaterial) <span>Alta.Heat</span>
+- [TemperatureVisuals](/mod/game-api/types/global-t-x/temperaturevisuals)
+- [TemperatureVisuals.ParticleSystemHandler](/mod/game-api/types/global-t-x/temperaturevisuals-particlesystemhandler)
+- [TempLaser](/mod/game-api/types/global-t-x/templaser)
+- [TemporaryUint256](/mod/game-api/types/alta-networking/temporaryuint256) <span>Alta.Networking</span>
+- [TempSceneObject](/mod/game-api/types/global-t-x/tempsceneobject)
+- [Term](/mod/game-api/types/alta-intelligence/term) <span>Alta.Intelligence</span>
+- [TerrainAccess](/mod/game-api/types/global-t-x/terrainaccess)
+- [TerrainInfo](/mod/game-api/types/global-t-x/terraininfo)
+- [TerrainModificationRegister](/mod/game-api/types/global-t-x/terrainmodificationregister)
+- [TerrainOffsetPart](/mod/game-api/types/global-t-x/terrainoffsetpart)
+- [TerrainSplatPart](/mod/game-api/types/global-t-x/terrainsplatpart)
+- [TerrainSpline](/mod/game-api/types/global-t-x/terrainspline)
+- [Test](/mod/game-api/types/assembly-api-client/test) <span>Alta.Api.Client.HighLevel.Subscriptions</span>
+- [Test](/mod/game-api/types/alta-world-generation/test) <span>Alta.PAGaC</span>
+- [TestEntity](/mod/game-api/types/global-t-x/testentity)
+- [TestingPlayerStates](/mod/game-api/types/alta-player/testingplayerstates) <span>Alta.PlayerStates</span>
+- [TestSerializable](/mod/game-api/types/global-t-x/testserializable)
+- [TestSpawner](/mod/game-api/types/global-t-x/testspawner)
+- [TestSpawner.Mode](/mod/game-api/types/global-t-x/testspawner-mode)
+- [TestUnitySerializable](/mod/game-api/types/global-t-x/testunityserializable)
+- [TextBoard](/mod/game-api/types/global-t-x/textboard)
+- [TextButton](/mod/game-api/types/alta-menus/textbutton) <span>Alta.Meta.UI</span>
+- [TextFileFormat](/mod/game-api/types/assembly-other/textfileformat) <span>Alta.Utilities</span>
+- [TextFont](/mod/game-api/types/global-t-x/textfont)
+- [TextFont.Create](/mod/game-api/types/global-t-x/textfont-create)
+- [TextFont.TextFontLOD](/mod/game-api/types/global-t-x/textfont-textfontlod)
+- [TextListElement](/mod/game-api/types/alta-menus/textlistelement) <span>Alta.Meta.UI</span>
+- [TextPopup](/mod/game-api/types/alta-utilities/textpopup) <span>Alta.Utilities</span>
+- [TextRenderer](/mod/game-api/types/global-t-x/textrenderer)
+- [TextRenderer.AndroidTextRendererQueue](/mod/game-api/types/global-t-x/textrenderer-androidtextrendererqueue)
+- [TextRenderer.TextRendererDistanceChecker](/mod/game-api/types/global-t-x/textrenderer-textrendererdistancechecker)
+- [TextRenderer.TextVerticalAlignment](/mod/game-api/types/global-t-x/textrenderer-textverticalalignment)
+- [TextRendererBackground](/mod/game-api/types/global-t-x/textrendererbackground)
+- [TextureChannels](/mod/game-api/types/global-t-x/texturechannels)
+- [TextureCompression](/mod/game-api/types/global-t-x/texturecompression)
+- [TextureFormatUtilities](/mod/game-api/types/game-other-namespaces/textureformatutilities) <span>Township.PostProcessing</span>
+- [TextureMode](/mod/game-api/types/alta-menus/texturemode) <span>Alta.UI</span>
+- [TextureOffsetAnimator](/mod/game-api/types/global-t-x/textureoffsetanimator)
+- [TextureOutput](/mod/game-api/types/global-t-x/textureoutput)
+- [TexturePacker](/mod/game-api/types/alta-customization/texturepacker) <span>Alta.Customization</span>
+- [TexturePacker.ExistingBlit](/mod/game-api/types/alta-customization/texturepacker-existingblit) <span>Alta.Customization</span>
+- [TextureScale](/mod/game-api/types/global-t-x/texturescale)
+- [ThingWithAnimationCurve](/mod/game-api/types/global-t-x/thingwithanimationcurve)
+- [ThresholdListener](/mod/game-api/types/alta-intelligence/thresholdlistener) <span>Alta.Intelligence</span>
+- [ThresholdStat](/mod/game-api/types/alta-stats-effects/thresholdstat) <span>Alta.StatSystem</span>
+- [ThresholdStat.ThresholdLevel](/mod/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel) <span>Alta.StatSystem</span>
+- [ThrottleCounter](/mod/game-api/types/global-t-x/throttlecounter)
+- [ThrottledMethodSync](/mod/game-api/types/alta-networking/throttledmethodsync) <span>Alta.Networking</span>
+- [ThrowableArrow](/mod/game-api/types/global-t-x/throwablearrow)
+- [ThrowablePickup](/mod/game-api/types/global-t-x/throwablepickup)
+- [ThrowAlignHelper](/mod/game-api/types/global-t-x/throwalignhelper)
+- [ThumbConfiguration](/mod/game-api/types/global-t-x/thumbconfiguration)
+- [ThumbConfiguration.Create](/mod/game-api/types/global-t-x/thumbconfiguration-create)
+- [ThumbPosition](/mod/game-api/types/global-t-x/thumbposition)
+- [TickTimer](/mod/game-api/types/global-t-x/ticktimer)
+- [TimberBlock](/mod/game-api/types/alta-crafting/timberblock) <span>Alta.Carpentry</span>
+- [TimberBlock.CoreStage](/mod/game-api/types/alta-crafting/timberblock-corestage) <span>Alta.Carpentry</span>
+- [TimberBlock.InnerStage](/mod/game-api/types/alta-crafting/timberblock-innerstage) <span>Alta.Carpentry</span>
+- [TimberBlock.OuterStage](/mod/game-api/types/alta-crafting/timberblock-outerstage) <span>Alta.Carpentry</span>
+- [TimberBlock.Stage](/mod/game-api/types/alta-crafting/timberblock-stage) <span>Alta.Carpentry</span>
+- [TimberBlock.StageLevel](/mod/game-api/types/alta-crafting/timberblock-stagelevel) <span>Alta.Carpentry</span>
+- [TimberBlockEvent](/mod/game-api/types/alta-crafting/timberblockevent) <span>Alta.Carpentry</span>
+- [TimberBlockSpawner](/mod/game-api/types/alta-crafting/timberblockspawner) <span>Alta.Carpentry</span>
+- [TimberBlockSpawner.ChiselingSizePoint](/mod/game-api/types/alta-crafting/timberblockspawner-chiselingsizepoint) <span>Alta.Carpentry</span>
+- [TimberBlockSpawner.SizedSpawnPoints](/mod/game-api/types/alta-crafting/timberblockspawner-sizedspawnpoints) <span>Alta.Carpentry</span>
+- [TimberPiece](/mod/game-api/types/alta-crafting/timberpiece) <span>Alta.Carpentry</span>
+- [TimberPiece.RotationModel](/mod/game-api/types/alta-crafting/timberpiece-rotationmodel) <span>Alta.Carpentry</span>
+- [TimberPieceBase](/mod/game-api/types/alta-crafting/timberpiecebase) <span>Alta.Carpentry</span>
+- [TimberPieceDelegate](/mod/game-api/types/alta-crafting/timberpiecedelegate) <span>Alta.Carpentry</span>
+- [TimberPieceGroup](/mod/game-api/types/alta-crafting/timberpiecegroup) <span>Alta.Carpentry</span>
+- [TimeBasedStagedPrefab](/mod/game-api/types/global-t-x/timebasedstagedprefab)
+- [TimeBasedStagedPrefabSaveData](/mod/game-api/types/global-t-x/timebasedstagedprefabsavedata)
+- [TimeCommandModule](/mod/game-api/types/alta-console/timecommandmodule) <span>Alta.Console.Commands</span>
+- [TimedActionComponent](/mod/game-api/types/alta-intelligence/timedactioncomponent) <span>Alta.Intelligence</span>
+- [TimedEvent](/mod/game-api/types/global-t-x/timedevent)
+- [TimedEventSaveData](/mod/game-api/types/global-t-x/timedeventsavedata)
+- [TimedEventSaveData.TimerData](/mod/game-api/types/global-t-x/timedeventsavedata-timerdata)
+- [TimedPrefabStageDefinition](/mod/game-api/types/global-t-x/timedprefabstagedefinition)
+- [TimedPrefabStageDefinition.TimeSetup](/mod/game-api/types/global-t-x/timedprefabstagedefinition-timesetup)
+- [TimedQueuedConnectionReceiver](/mod/game-api/types/alta-networking/timedqueuedconnectionreceiver) <span>Alta.Networking.Internal</span>
+- [TimedStatModifier](/mod/game-api/types/alta-stats-effects/timedstatmodifier) <span>Alta.StatSystem</span>
+- [TimedToggle](/mod/game-api/types/global-t-x/timedtoggle)
+- [TimeInSecondsAttribute](/mod/game-api/types/assembly-other/timeinsecondsattribute)
+- [Timeline](/mod/game-api/types/assembly-other/timeline) <span>Alta.Timing</span>
+- [Timeline.Entry](/mod/game-api/types/assembly-other/timeline-entry) <span>Alta.Timing</span>
+- [Timeline.IEntry](/mod/game-api/types/assembly-other/timeline-ientry) <span>Alta.Timing</span>
+- [Timeline.RepeatableEntry](/mod/game-api/types/assembly-other/timeline-repeatableentry) <span>Alta.Timing</span>
+- [Timeline.SerializedEntryState](/mod/game-api/types/assembly-other/timeline-serializedentrystate) <span>Alta.Timing</span>
+- [TimelineExtension](/mod/game-api/types/alta-utilities/timelineextension) <span>Alta.Utilities</span>
+- [TimelineUpdater](/mod/game-api/types/assembly-other/timelineupdater) <span>Alta.Timing</span>
+- [TimeManager](/mod/game-api/types/global-t-x/timemanager)
+- [TimeManagerSaveData](/mod/game-api/types/global-t-x/timemanagersavedata)
+- [TimeManagerSaveDataOld1](/mod/game-api/types/global-t-x/timemanagersavedataold1)
+- [TimeManagerSaveDataOld2](/mod/game-api/types/global-t-x/timemanagersavedataold2)
+- [Timer](/mod/game-api/types/global-t-x/timer)
+- [TimerButton](/mod/game-api/types/alta-customization/timerbutton) <span>Alta.ScreenshotCamera</span>
+- [TimerLogic](/mod/game-api/types/global-t-x/timerlogic)
+- [TimerLogic.TimeEvent](/mod/game-api/types/global-t-x/timerlogic-timeevent)
+- [TimerLogicSaveData](/mod/game-api/types/global-t-x/timerlogicsavedata)
+- [TimerLogicSaveData1](/mod/game-api/types/global-t-x/timerlogicsavedata1)
+- [TimeScroller](/mod/game-api/types/global-t-x/timescroller)
+- [TimeTracker](/mod/game-api/types/global-t-x/timetracker)
+- [ToCombatTransition&lt;TFrom&gt;](/mod/game-api/types/alta-player/tocombattransition-tfrom) <span>Alta.PlayerStates.Transitions</span>
+- [ToggleAccessibleDockMenuAction](/mod/game-api/types/alta-player/toggleaccessibledockmenuaction) <span>Alta.QuickAccessActions</span>
+- [ToggleBool](/mod/game-api/types/global-t-x/togglebool)
+- [ToggleCameraDepth](/mod/game-api/types/global-t-x/togglecameradepth)
+- [ToggleChildrenActive](/mod/game-api/types/global-t-x/togglechildrenactive)
+- [ToggleDebugMovementMenuAction](/mod/game-api/types/alta-player/toggledebugmovementmenuaction) <span>Alta.QuickAccessActions</span>
+- [ToggleEnemyHealthBars](/mod/game-api/types/alta-player/toggleenemyhealthbars) <span>Alta.QuickAccessActions</span>
+- [ToggleEvent](/mod/game-api/types/global-t-x/toggleevent)
+- [ToggleGameSettingAccess](/mod/game-api/types/alta-utilities/togglegamesettingaccess) <span>Alta.Utilities</span>
+- [ToggleGameSettingAccess.Create](/mod/game-api/types/alta-utilities/togglegamesettingaccess-create) <span>Alta.Utilities</span>
+- [ToggleKinematicLogic](/mod/game-api/types/global-t-x/togglekinematiclogic)
+- [ToggleLiveDataDisplayMenuAction](/mod/game-api/types/alta-player/togglelivedatadisplaymenuaction) <span>Alta.QuickAccessActions</span>
+- [ToggleLocalSpeedMenuAction](/mod/game-api/types/alta-player/togglelocalspeedmenuaction) <span>Alta.QuickAccessActions</span>
+- [ToggleRuntimeConsole](/mod/game-api/types/alta-player/toggleruntimeconsole) <span>Alta.QuickAccessActions</span>
+- [ToggleUnityEvent](/mod/game-api/types/global-t-x/toggleunityevent)
+- [TokenResultResponse](/mod/game-api/types/assembly-api-models/tokenresultresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ToolBasedEffect](/mod/game-api/types/global-t-x/toolbasedeffect)
+- [ToolBasedEffectBase](/mod/game-api/types/global-t-x/toolbasedeffectbase)
+- [ToolBasedSkillStatus](/mod/game-api/types/global-t-x/toolbasedskillstatus)
+- [TossRandom](/mod/game-api/types/global-t-x/tossrandom)
+- [TossTest](/mod/game-api/types/global-t-x/tosstest)
+- [TotalDamageDisplay](/mod/game-api/types/alta-utilities/totaldamagedisplay) <span>Alta.Utilities.Profiling</span>
+- [TouchScreenButton](/mod/game-api/types/alta-menus/touchscreenbutton) <span>Alta.Meta.UI</span>
+- [TouchScreenButtonGrower](/mod/game-api/types/global-t-x/touchscreenbuttongrower)
+- [TouchScreenButtonOld](/mod/game-api/types/global-t-x/touchscreenbuttonold)
+- [TouchScreenButtonVisual](/mod/game-api/types/alta-menus/touchscreenbuttonvisual) <span>Alta.Meta.UI</span>
+- [TouchScreenButtonVisualSettings](/mod/game-api/types/alta-menus/touchscreenbuttonvisualsettings) <span>Alta.Meta.UI</span>
+- [TouchScreenKeyboard](/mod/game-api/types/global-t-x/touchscreenkeyboard)
+- [TouchScreenKeyboard.KeyBoardEdgesInfo](/mod/game-api/types/global-t-x/touchscreenkeyboard-keyboardedgesinfo)
+- [TouchScreenKeyboard.OutputEvent](/mod/game-api/types/global-t-x/touchscreenkeyboard-outputevent)
+- [TouchScreenKeyboardKey](/mod/game-api/types/global-t-x/touchscreenkeyboardkey)
+- [TouchScreenKeyboardKey.BackspaceActions](/mod/game-api/types/global-t-x/touchscreenkeyboardkey-backspaceactions)
+- [TouchScreenKeyboardKey.KeySizeType](/mod/game-api/types/global-t-x/touchscreenkeyboardkey-keysizetype)
+- [TouchScreenKeyboardKey.SpecialKeySetup](/mod/game-api/types/global-t-x/touchscreenkeyboardkey-specialkeysetup)
+- [TouchScreenMenu](/mod/game-api/types/alta-customization/touchscreenmenu) <span>Alta.ScreenshotCamera</span>
+- [TouchScreenMenuBase](/mod/game-api/types/global-t-x/touchscreenmenubase)
+- [TouchScreenMenuBase.TouchInput](/mod/game-api/types/global-t-x/touchscreenmenubase-touchinput)
+- [TowerAnalyticsReporter](/mod/game-api/types/game-other-namespaces/toweranalyticsreporter) <span>Features.Analytics.ClimbingTower</span>
+- [TownshipAnalyticsEvent](/mod/game-api/types/game-other-namespaces/townshipanalyticsevent) <span>ATT.Analytics</span>
+- [TownshipEventBus](/mod/game-api/types/game-other-namespaces/townshipeventbus) <span>ATT.EventBus</span>
+- [TownshipEventMicroTutorialExtensions](/mod/game-api/types/game-other-namespaces/townshipeventmicrotutorialextensions) <span>ATT.EventBus.TownshipEvents</span>
+- [TownshipItemCategory](/mod/game-api/types/assembly-api-models/townshipitemcategory) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [TownshipItemCategoryModificationRequest](/mod/game-api/types/assembly-api-models/townshipitemcategorymodificationrequest) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [TownshipXRMode](/mod/game-api/types/assembly-other/townshipxrmode) <span>Alta.XRLoaders</span>
+- [TrackedDevice](/mod/game-api/types/alta-menus/trackeddevice) <span>Alta.XR</span>
+- [TrackedEvent&lt;T&gt;](/mod/game-api/types/global-t-x/trackedevent-t)
+- [Tracker](/mod/game-api/types/global-t-x/tracker)
+- [TrackerData](/mod/game-api/types/global-t-x/trackerdata)
+- [TradeCommandModule](/mod/game-api/types/global-t-x/tradecommandmodule)
+- [TradeCommandModule](/mod/game-api/types/alta-console/tradecommandmodule) <span>Alta.Console.Commands</span>
+- [TradeCommandModule.ATMCommandModule](/mod/game-api/types/global-t-x/tradecommandmodule-atmcommandmodule)
+- [TradeCommandModule.ATMCommandModule](/mod/game-api/types/alta-console/tradecommandmodule-atmcommandmodule) <span>Alta.Console.Commands</span>
+- [TradeConfiguration](/mod/game-api/types/alta-crafting/tradeconfiguration) <span>Alta.Trading</span>
+- [TradeStateManager](/mod/game-api/types/alta-crafting/tradestatemanager) <span>Alta.Trading</span>
+- [TradeStatus](/mod/game-api/types/alta-crafting/tradestatus) <span>Alta.Trading</span>
+- [TradeVendor](/mod/game-api/types/alta-crafting/tradevendor) <span>Alta.Trading</span>
+- [TradeVendor.StatusChangedHandler](/mod/game-api/types/alta-crafting/tradevendor-statuschangedhandler) <span>Alta.Trading</span>
+- [TradeVendorSaveData](/mod/game-api/types/alta-crafting/tradevendorsavedata) <span>Alta.Trading</span>
+- [TradeVendorSaveDataOld](/mod/game-api/types/alta-crafting/tradevendorsavedataold) <span>Alta.Trading</span>
+- [TradingLogger](/mod/game-api/types/alta-crafting/tradinglogger) <span>Alta.Trading</span>
+- [TradingLogger.TradeDeckSale](/mod/game-api/types/alta-crafting/tradinglogger-tradedecksale) <span>Alta.Trading</span>
+- [TrailLerper](/mod/game-api/types/global-t-x/traillerper)
+- [TrailRendererLerpFollow](/mod/game-api/types/global-t-x/trailrendererlerpfollow)
+- [TrainingHittingTool](/mod/game-api/types/global-t-x/traininghittingtool)
+- [TransferAmountArgument](/mod/game-api/types/global-t-x/transferamountargument)
+- [TransferAmountTask](/mod/game-api/types/global-t-x/transferamounttask)
+- [TransformBone](/mod/game-api/types/global-t-x/transformbone)
+- [TransformConflict](/mod/game-api/types/global-t-x/transformconflict)
+- [TransformDeltaChangeChecker](/mod/game-api/types/global-t-x/transformdeltachangechecker)
+- [TransformEvent](/mod/game-api/types/global-t-x/transformevent)
+- [TransformHandler](/mod/game-api/types/global-t-x/transformhandler)
+- [TransformMovementContext](/mod/game-api/types/global-t-x/transformmovementcontext)
+- [TransformProxy](/mod/game-api/types/global-t-x/transformproxy)
+- [TransformSaveCollection](/mod/game-api/types/global-t-x/transformsavecollection)
+- [TransformSaveObject](/mod/game-api/types/global-t-x/transformsaveobject)
+- [TransformScaledEvent](/mod/game-api/types/global-t-x/transformscaledevent)
+- [TransformScaledHandler](/mod/game-api/types/global-t-x/transformscaledhandler)
+- [TransformScriptAnimation](/mod/game-api/types/global-t-x/transformscriptanimation)
+- [Transitions](/mod/game-api/types/assembly-api-models/transitions) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [TransportSystem](/mod/game-api/types/alta-networking/transportsystem) <span>Alta.Networking</span>
+- [TreeAttachment](/mod/game-api/types/alta-crafting/treeattachment) <span>Alta.Woodcutting</span>
+- [TreeBuilder](/mod/game-api/types/alta-crafting/treebuilder) <span>Alta.Woodcutting</span>
+- [TreeChopDetector](/mod/game-api/types/global-t-x/treechopdetector)
+- [TreeDecay](/mod/game-api/types/alta-crafting/treedecay) <span>Alta.Woodcutting</span>
+- [TreeEvent](/mod/game-api/types/alta-crafting/treeevent) <span>Alta.Woodcutting</span>
+- [TreeSize](/mod/game-api/types/alta-crafting/treesize) <span>Alta.Woodcutting</span>
+- [TreeSize.Create](/mod/game-api/types/alta-crafting/treesize-create) <span>Alta.Woodcutting</span>
+- [TreeSpawner](/mod/game-api/types/alta-crafting/treespawner) <span>Alta.Woodcutting</span>
+- [TreeSpawnerSaveData](/mod/game-api/types/alta-crafting/treespawnersavedata) <span>Alta.Woodcutting</span>
+- [TreeSpawnerSaveData1](/mod/game-api/types/alta-crafting/treespawnersavedata1) <span>Alta.Woodcutting</span>
+- [TreeSpecies](/mod/game-api/types/alta-crafting/treespecies) <span>Alta.Woodcutting</span>
+- [TreeSpecies.Create](/mod/game-api/types/alta-crafting/treespecies-create) <span>Alta.Woodcutting</span>
+- [TrialCommandModule](/mod/game-api/types/alta-console/trialcommandmodule) <span>Alta.Console.Commands</span>
+- [TrialEventData](/mod/game-api/types/global-t-x/trialeventdata)
+- [TrialLogic](/mod/game-api/types/global-t-x/triallogic)
+- [TrialReset](/mod/game-api/types/global-t-x/trialreset)
+- [Triangles](/mod/game-api/types/global-t-x/triangles)
+- [TriangleVisibilityUtility](/mod/game-api/types/global-t-x/trianglevisibilityutility)
+- [TriangleVisibilityUtility.RenderingHandler](/mod/game-api/types/global-t-x/trianglevisibilityutility-renderinghandler)
+- [TriangularDistributionInt](/mod/game-api/types/global-t-x/triangulardistributionint)
+- [Trigger](/mod/game-api/types/global-t-x/trigger)
+- [TriggerArea](/mod/game-api/types/global-t-x/triggerarea)
+- [TriggerCapsule](/mod/game-api/types/global-t-x/triggercapsule)
+- [TriggerContainEvents](/mod/game-api/types/global-t-x/triggercontainevents)
+- [TriggerDebugSetSpawnMenuAction](/mod/game-api/types/alta-player/triggerdebugsetspawnmenuaction) <span>Alta.QuickAccessActions</span>
+- [TriggerEnterEvents](/mod/game-api/types/global-t-x/triggerenterevents)
+- [TriggerEnterEvents.ColliderEvent](/mod/game-api/types/global-t-x/triggerenterevents-colliderevent)
+- [TriggerEnterEvents.ColliderUnityEvent](/mod/game-api/types/global-t-x/triggerenterevents-colliderunityevent)
+- [TriggerEventData](/mod/game-api/types/game-other-namespaces/triggereventdata) <span>ATT.Triggers</span>
+- [TriggerHandler](/mod/game-api/types/global-t-x/triggerhandler)
+- [TriggerImpactDetector](/mod/game-api/types/alta-items/triggerimpactdetector) <span>Alta.Impact</span>
+- [TriggerImpactDetectorBase](/mod/game-api/types/alta-items/triggerimpactdetectorbase) <span>Alta.Impact</span>
+- [TriggerImpactTool](/mod/game-api/types/alta-items/triggerimpacttool) <span>Alta.Impact</span>
+- [TriggerImpactTool.DelayedHit](/mod/game-api/types/alta-items/triggerimpacttool-delayedhit) <span>Alta.Impact</span>
+- [TriggerSaveData](/mod/game-api/types/global-t-x/triggersavedata)
+- [TriggerSaveDataOLD1](/mod/game-api/types/global-t-x/triggersavedataold1)
+- [TriggerShape](/mod/game-api/types/global-t-x/triggershape)
+- [TriggerShapeEvent](/mod/game-api/types/global-t-x/triggershapeevent)
+- [TriggerSoundEmitter](/mod/game-api/types/global-t-x/triggersoundemitter)
+- [TriggerSphere](/mod/game-api/types/global-t-x/triggersphere)
+- [TriggerZone](/mod/game-api/types/game-other-namespaces/triggerzone) <span>ATT.Triggers</span>
+- [True](/mod/game-api/types/alta-intelligence/true) <span>Alta.Intelligence</span>
+- [Turabada](/mod/game-api/types/alta-intelligence/turabada) <span>Alta.Intelligence</span>
+- [Turnable](/mod/game-api/types/global-t-x/turnable)
+- [TurnPageArguments](/mod/game-api/types/alta-items/turnpagearguments) <span>Alta.Pages</span>
+- [TutorialAndDeeplinkRedirector](/mod/game-api/types/global-t-x/tutorialanddeeplinkredirector)
+- [TutorialCompletedMessage](/mod/game-api/types/game-other-namespaces/tutorialcompletedmessage) <span>ATT.MicroTutorial</span>
+- [TutorialPromptBoard](/mod/game-api/types/global-t-x/tutorialpromptboard)
+- [TutorialState](/mod/game-api/types/game-other-namespaces/tutorialstate) <span>ATT.MicroTutorial</span>
+- [TwistLimit](/mod/game-api/types/global-t-x/twistlimit)
+- [TwistRelaxerController](/mod/game-api/types/alta-player/twistrelaxercontroller) <span>Alta.Character</span>
+- [TwistRelaxerControllerHelper](/mod/game-api/types/alta-player/twistrelaxercontrollerhelper) <span>Alta.Character</span>
+- [TwistRelaxerSetting](/mod/game-api/types/alta-player/twistrelaxersetting) <span>Alta.Character</span>
+- [TwoColors](/mod/game-api/types/alta-customization/twocolors) <span>Alta.Customization</span>
+- [TwoStepLever](/mod/game-api/types/global-t-x/twosteplever)
+- [TypeExtensions](/mod/game-api/types/assembly-other/typeextensions)
+- [TypeSerializationHelper](/mod/game-api/types/global-t-x/typeserializationhelper)
+- [TypeSerializationHelper.BitSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-bitserialization)
+- [TypeSerializationHelper.BoolSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-boolserialization)
+- [TypeSerializationHelper.ColorSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-colorserialization)
+- [TypeSerializationHelper.DateTimeSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-datetimeserialization)
+- [TypeSerializationHelper.EnumSerialization&lt;T&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-enumserialization-t)
+- [TypeSerializationHelper.FailedTypeSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-failedtypeserialization)
+- [TypeSerializationHelper.FloatBitsSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-floatbitsserialization)
+- [TypeSerializationHelper.FloatPrecisionSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-floatprecisionserialization)
+- [TypeSerializationHelper.FloatSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-floatserialization)
+- [TypeSerializationHelper.HashedSerialization&lt;T&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-hashedserialization-t)
+- [TypeSerializationHelper.IntSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-intserialization)
+- [TypeSerializationHelper.ITypeSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-itypeserialization)
+- [TypeSerializationHelper.LogicManagerSetSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-logicmanagersetserialization)
+- [TypeSerializationHelper.LogicValueDataSerialization&lt;T&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-logicvaluedataserialization-t)
+- [TypeSerializationHelper.NetworkPrefabSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-networkprefabserialization)
+- [TypeSerializationHelper.ObjectActivator](/mod/game-api/types/global-t-x/typeserializationhelper-objectactivator)
+- [TypeSerializationHelper.QuaternionSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-quaternionserialization)
+- [TypeSerializationHelper.SaveDataSerialization&lt;T&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t)
+- [TypeSerializationHelper.StringSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-stringserialization)
+- [TypeSerializationHelper.SubClassSerialization&lt;T&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-subclassserialization-t)
+- [TypeSerializationHelper.TimeSpanSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-timespanserialization)
+- [TypeSerializationHelper.TypeSerialization&lt;TType&gt;](/mod/game-api/types/global-t-x/typeserializationhelper-typeserialization-ttype)
+- [TypeSerializationHelper.UintSerialization](/mod/game-api/types/global-t-x/typeserializationhelper-uintserialization)
+- [TypeSerializationHelper.Vector2Serialization](/mod/game-api/types/global-t-x/typeserializationhelper-vector2serialization)
+- [TypeSerializationHelper.Vector3Serialization](/mod/game-api/types/global-t-x/typeserializationhelper-vector3serialization)
+- [TypeSerializationHelper.Vector4Serialization](/mod/game-api/types/global-t-x/typeserializationhelper-vector4serialization)
+
+</div>
+
+## U
+
+<div className="type-index">
+
+- [UFloatBytes](/mod/game-api/types/assembly-other/ufloatbytes) <span>Alta.Serialization</span>
+- [UIActionLock](/mod/game-api/types/alta-menus/uiactionlock) <span>Alta.Meta.UI</span>
+- [UIActionLock.ILockUIAction](/mod/game-api/types/alta-menus/uiactionlock-ilockuiaction) <span>Alta.Meta.UI</span>
+- [UIButtonType](/mod/game-api/types/alta-menus/uibuttontype) <span>Alta.Meta.UI</span>
+- [UIList](/mod/game-api/types/alta-menus/uilist) <span>Alta.Meta.UI</span>
+- [UINotification](/mod/game-api/types/alta-menus/uinotification) <span>Alta.Meta.UI.ServerManagement</span>
+- [ULongBytes](/mod/game-api/types/assembly-other/ulongbytes) <span>Alta.Serialization</span>
+- [UltimateRope](/mod/game-api/types/global-t-x/ultimaterope)
+- [UltimateRope.EAxis](/mod/game-api/types/global-t-x/ultimaterope-eaxis)
+- [UltimateRope.EColliderType](/mod/game-api/types/global-t-x/ultimaterope-ecollidertype)
+- [UltimateRope.ERopeExtensionMode](/mod/game-api/types/global-t-x/ultimaterope-eropeextensionmode)
+- [UltimateRope.ERopeType](/mod/game-api/types/global-t-x/ultimaterope-eropetype)
+- [UltimateRope.RopeBone](/mod/game-api/types/global-t-x/ultimaterope-ropebone)
+- [UltimateRope.RopeBreakEventInfo](/mod/game-api/types/global-t-x/ultimaterope-ropebreakeventinfo)
+- [UltimateRope.RopeNode](/mod/game-api/types/global-t-x/ultimaterope-ropenode)
+- [UltimateRopeLink](/mod/game-api/types/global-t-x/ultimateropelink)
+- [UnchunkedEffectPlayer](/mod/game-api/types/global-t-x/unchunkedeffectplayer)
+- [UnclearedPower2ArrayPool&lt;T&gt;](/mod/game-api/types/assembly-other/unclearedpower2arraypool-t) <span>Alta.ArrayPools</span>
+- [UnityApplicationWrapper](/mod/game-api/types/game-other-namespaces/unityapplicationwrapper) <span>Features.Utility.UnityWrappers</span>
+- [UnityAttachmentEvent](/mod/game-api/types/alta-crafting/unityattachmentevent) <span>Alta.Woodcutting</span>
+- [UnityConsoleLogTarget](/mod/game-api/types/alta-console/unityconsolelogtarget) <span>Alta.Logging.Targets</span>
+- [UnityEditorLoggingSettings](/mod/game-api/types/global-t-x/unityeditorloggingsettings)
+- [UnityEditorLoggingSettings.Create](/mod/game-api/types/global-t-x/unityeditorloggingsettings-create)
+- [UnityLogHandler](/mod/game-api/types/global-t-x/unityloghandler)
+- [UnityLogUtility](/mod/game-api/types/global-t-x/unitylogutility)
+- [UnityPickupEvent](/mod/game-api/types/global-t-x/unitypickupevent)
+- [UnityProfilerSessionQuickAccessAction](/mod/game-api/types/global-t-x/unityprofilersessionquickaccessaction)
+- [UnityQualitySettingsController](/mod/game-api/types/alta-utilities/unityqualitysettingscontroller) <span>Alta.UnityWrappers</span>
+- [UnityUpdateManager](/mod/game-api/types/global-t-x/unityupdatemanager)
+- [UnityUpdateManager.ModuleRegistration](/mod/game-api/types/global-t-x/unityupdatemanager-moduleregistration)
+- [UnityWoodcutTreeModelEvent](/mod/game-api/types/alta-crafting/unitywoodcuttreemodelevent) <span>Alta.Woodcutting</span>
+- [UnknownPurchaseError](/mod/game-api/types/game-other-namespaces/unknownpurchaseerror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [UnknownPurchaseExceptionError](/mod/game-api/types/game-other-namespaces/unknownpurchaseexceptionerror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [UnlinkAccountRequest](/mod/game-api/types/assembly-api-models/unlinkaccountrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UnloadAllLandmarks](/mod/game-api/types/alta-world/unloadalllandmarks) <span>Alta.Chunks</span>
+- [UnlockDockManager](/mod/game-api/types/global-t-x/unlockdockmanager)
+- [UpdateAchievementRequest](/mod/game-api/types/assembly-api-models/updateachievementrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UpdateActionStatRequest](/mod/game-api/types/assembly-api-models/updateactionstatrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UpdateFarClipMenuAction](/mod/game-api/types/alta-player/updatefarclipmenuaction) <span>Alta.QuickAccessActions</span>
+- [UpdateGripEachFrame](/mod/game-api/types/global-t-x/updategripeachframe)
+- [UpdateHandler](/mod/game-api/types/global-t-x/updatehandler)
+- [UpdateHeightMenuAction](/mod/game-api/types/alta-player/updateheightmenuaction) <span>Alta.QuickAccessActions</span>
+- [UpdateModifier](/mod/game-api/types/alta-stats-effects/updatemodifier) <span>Alta.StatSystem</span>
+- [UpdateModule](/mod/game-api/types/global-t-x/updatemodule)
+- [UpdateModule.MethodNode](/mod/game-api/types/global-t-x/updatemodule-methodnode)
+- [UpdateModuleInfo](/mod/game-api/types/global-t-x/updatemoduleinfo)
+- [UpdateSegment](/mod/game-api/types/global-t-x/updatesegment)
+- [UpdateStat](/mod/game-api/types/global-t-x/updatestat)
+- [UpdateUserInfoRequest](/mod/game-api/types/assembly-api-models/updateuserinforequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UserApiClient](/mod/game-api/types/assembly-api-client/userapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [UserCancelledError](/mod/game-api/types/game-other-namespaces/usercancellederror) <span>Features.Main_Menu.Scripts.TalemShop.Errors</span>
+- [UserGreeter](/mod/game-api/types/global-t-x/usergreeter)
+- [UserInfo](/mod/game-api/types/assembly-api-models/userinfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [UserInfoAccess](/mod/game-api/types/global-t-x/userinfoaccess)
+- [UserInfoAccessConverter](/mod/game-api/types/global-t-x/userinfoaccessconverter)
+- [UserInfoAndRole](/mod/game-api/types/global-t-x/userinfoandrole)
+- [UserInfoDetailed](/mod/game-api/types/alta-console/userinfodetailed) <span>Alta.Console.Commands</span>
+- [UserInfoWithPermissions](/mod/game-api/types/assembly-api-models/userinfowithpermissions) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [UserList](/mod/game-api/types/global-t-x/userlist)
+- [UserListConverter](/mod/game-api/types/global-t-x/userlistconverter)
+- [UsernameValidationRequest](/mod/game-api/types/assembly-api-models/usernamevalidationrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UserPermissions](/mod/game-api/types/assembly-other/userpermissions)
+- [UserPresetDataInfo](/mod/game-api/types/assembly-api-models/userpresetdatainfo) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [UserRoles](/mod/game-api/types/assembly-api-models/userroles) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [UserRolesUtility](/mod/game-api/types/assembly-api-models/userrolesutility) <span>Alta.Api.DataTransferModels.Utility</span>
+- [UsersCommandModule](/mod/game-api/types/alta-console/userscommandmodule) <span>Alta.Console.Commands</span>
+- [UserService](/mod/game-api/types/assembly-other/userservice) <span>Alta.Platform.Generic</span>
+- [UserSettingsAnalyticsEvent](/mod/game-api/types/game-other-namespaces/usersettingsanalyticsevent) <span>ATT.Analytics</span>
+- [UserSettingsAnalyticsReporter](/mod/game-api/types/alta-console/usersettingsanalyticsreporter) <span>Alta.Analytics.UserSettingsAnalytics</span>
+- [UserSettingsAnalyticsReporterConfiguration](/mod/game-api/types/alta-console/usersettingsanalyticsreporterconfiguration) <span>Alta.Analytics.UserSettingsAnalytics</span>
+- [UserSettingsReport](/mod/game-api/types/alta-console/usersettingsreport) <span>Alta.Analytics.UserSettingsAnalytics</span>
+- [UserStatistics](/mod/game-api/types/assembly-api-models/userstatistics) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [UserSubscription](/mod/game-api/types/assembly-api-models/usersubscription) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [UserSubscriptionInfoStatus](/mod/game-api/types/assembly-api-models/usersubscriptioninfostatus) <span>Alta.Api.DataTransferModels.Models.Shared</span>
+- [UserToken](/mod/game-api/types/alta-menus/usertoken) <span>Alta.Meta.Friends</span>
+- [UserType](/mod/game-api/types/assembly-api-models/usertype) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [UVFixType](/mod/game-api/types/alta-utilities/uvfixtype) <span>Alta.Utilities.Atlas</span>
+- [UvRaycaster](/mod/game-api/types/global-t-x/uvraycaster)
+
+</div>
+
+## V
+
+<div className="type-index">
+
+- [ValidateItemOwnershipRequest](/mod/game-api/types/assembly-api-models/validateitemownershiprequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ValidateItemOwnershipResponse](/mod/game-api/types/assembly-api-models/validateitemownershipresponse) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ValidatePrefabApplyAttribute](/mod/game-api/types/assembly-other/validateprefabapplyattribute)
+- [ValidateUsersJoinRequest](/mod/game-api/types/assembly-api-models/validateusersjoinrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [ValidationError](/mod/game-api/types/assembly-api-models/validationerror) <span>Alta.Api.DataTransferModels.Errors</span>
+- [ValidationResultModel](/mod/game-api/types/assembly-api-models/validationresultmodel) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [ValueConditionAttribute](/mod/game-api/types/assembly-other/valueconditionattribute)
+- [ValueMember](/mod/game-api/types/global-t-x/valuemember)
+- [ValueOperatedParticleSystem](/mod/game-api/types/global-t-x/valueoperatedparticlesystem)
+- [ValueOperatedParticleSystem.EmissionOperator](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-emissionoperator)
+- [ValueOperatedParticleSystem.EmissionRateOverDistanceOperator](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-emissionrateoverdistanceoperator)
+- [ValueOperatedParticleSystem.EmissionRateOverTimeOperator](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-emissionrateovertimeoperator)
+- [ValueOperatedParticleSystem.ParticleSystemValue](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalue)
+- [ValueOperatedParticleSystem.ParticleSystemValueOperator](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperator)
+- [ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-particlesystemvalueoperatordefinition)
+- [ValueOperatedParticleSystem.PlaybackSpeedOperator](/mod/game-api/types/global-t-x/valueoperatedparticlesystem-playbackspeedoperator)
+- [ValuePerLevel&lt;T&gt;](/mod/game-api/types/alta-player/valueperlevel-t) <span>Alta.Progression.Skills</span>
+- [Variable](/mod/game-api/types/alta-intelligence/variable) <span>Alta.Intelligence</span>
+- [Variable&lt;T&gt;](/mod/game-api/types/alta-intelligence/variable-t) <span>Alta.Intelligence</span>
+- [VariableIntensityPlayerLight](/mod/game-api/types/game-other-namespaces/variableintensityplayerlight) <span>Features</span>
+- [VarianceComponentExtensions](/mod/game-api/types/global-t-x/variancecomponentextensions)
+- [Vector2TypeConverter](/mod/game-api/types/alta-console/vector2typeconverter) <span>Alta.Console</span>
+- [Vector3Converter](/mod/game-api/types/alta-console/vector3converter) <span>Alta.Console</span>
+- [Vector3MaterialProperty](/mod/game-api/types/alta-utilities/vector3materialproperty) <span>Alta.Utilities</span>
+- [Vector3SenderInput](/mod/game-api/types/alta-items/vector3senderinput) <span>Alta.Logic</span>
+- [Vector3TypeConverter](/mod/game-api/types/alta-console/vector3typeconverter) <span>Alta.Console</span>
+- [Vector4TypeConverter](/mod/game-api/types/alta-console/vector4typeconverter) <span>Alta.Console</span>
+- [VelocityJoint](/mod/game-api/types/global-t-x/velocityjoint)
+- [VelocityLimit](/mod/game-api/types/alta-intelligence/velocitylimit) <span>Alta.Intelligence</span>
+- [VelocityLimitOperation](/mod/game-api/types/alta-intelligence/velocitylimitoperation) <span>Alta.Intelligence</span>
+- [VelocityPickupSettings](/mod/game-api/types/global-t-x/velocitypickupsettings)
+- [VelocityPickupSettings.Create](/mod/game-api/types/global-t-x/velocitypickupsettings-create)
+- [VelocitySense](/mod/game-api/types/alta-intelligence/velocitysense) <span>Alta.Intelligence</span>
+- [VelocitySense.Create](/mod/game-api/types/alta-intelligence/velocitysense-create) <span>Alta.Intelligence</span>
+- [VerificationEmailRequest](/mod/game-api/types/assembly-api-models/verificationemailrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [VerifyUserRequest](/mod/game-api/types/assembly-api-models/verifyuserrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [VersionDisplay](/mod/game-api/types/alta-menus/versiondisplay) <span>Alta.UI</span>
+- [VersionMarker](/mod/game-api/types/assembly-api-models/versionmarker) <span>Alta.Api.DataTransferModels.Models.Responses</span>
+- [VertexColorUtility](/mod/game-api/types/alta-utilities/vertexcolorutility) <span>Alta.Utilities</span>
+- [VerticalFlyingController](/mod/game-api/types/global-t-x/verticalflyingcontroller)
+- [VfxData](/mod/game-api/types/game-other-namespaces/vfxdata) <span>Features.Visual_Effects.VFXData</span>
+- [ViewCone](/mod/game-api/types/global-t-x/viewcone)
+- [ViewConeOperation](/mod/game-api/types/alta-intelligence/viewconeoperation) <span>Alta.Intelligence</span>
+- [ViewConeSense](/mod/game-api/types/alta-intelligence/viewconesense) <span>Alta.Intelligence</span>
+- [ViewConeSense.Create](/mod/game-api/types/alta-intelligence/viewconesense-create) <span>Alta.Intelligence</span>
+- [VirtualCurrencyPurchaseRequest](/mod/game-api/types/assembly-api-models/virtualcurrencypurchaserequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [VirtualInputField](/mod/game-api/types/global-t-x/virtualinputfield)
+- [VirtualInputFieldBase](/mod/game-api/types/global-t-x/virtualinputfieldbase)
+- [VirtualKey](/mod/game-api/types/global-t-x/virtualkey)
+- [VirtualKeyboard](/mod/game-api/types/global-t-x/virtualkeyboard)
+- [VirtualKeyboardSetup](/mod/game-api/types/global-t-x/virtualkeyboardsetup)
+- [VirtualKeyboardSetup.Virtual_Keyboard_Setup](/mod/game-api/types/global-t-x/virtualkeyboardsetup-virtual_keyboard_setup)
+- [VirtualKeyInfo](/mod/game-api/types/global-t-x/virtualkeyinfo)
+- [VirtualRealityDeviceLifecycle](/mod/game-api/types/global-t-x/virtualrealitydevicelifecycle)
+- [Visibility](/mod/game-api/types/alta-crafting/visibility) <span>Alta.Scrapper</span>
+- [VisibilityData](/mod/game-api/types/alta-crafting/visibilitydata) <span>Alta.Scrapper.Data</span>
+- [VisibilityData.Create](/mod/game-api/types/alta-crafting/visibilitydata-create) <span>Alta.Scrapper.Data</span>
+- [VisibilityDetector](/mod/game-api/types/global-t-x/visibilitydetector)
+- [VisibilitySaveData](/mod/game-api/types/alta-crafting/visibilitysavedata) <span>Alta.Scrapper</span>
+- [VisibilityTimer](/mod/game-api/types/global-t-x/visibilitytimer)
+- [VisibilityTrigger](/mod/game-api/types/alta-customization/visibilitytrigger) <span>Alta.ScreenshotCamera</span>
+- [VisibleNetworkRigidbody](/mod/game-api/types/global-t-x/visiblenetworkrigidbody)
+- [VisualChunkQuickAccessMenuAction](/mod/game-api/types/global-t-x/visualchunkquickaccessmenuaction)
+- [VisualEffectsUtilities](/mod/game-api/types/global-t-x/visualeffectsutilities)
+- [VisualEffectType](/mod/game-api/types/game-other-namespaces/visualeffecttype) <span>ATT.PlayerStates</span>
+- [VisualRotationMimic](/mod/game-api/types/global-t-x/visualrotationmimic)
+- [VivoxChannel](/mod/game-api/types/alta-networking/vivoxchannel) <span>Alta.Voice</span>
+- [VivoxClient](/mod/game-api/types/alta-networking/vivoxclient) <span>Alta.Voice</span>
+- [VivoxConfiguration](/mod/game-api/types/alta-networking/vivoxconfiguration) <span>Alta.Voice</span>
+- [VivoxConnectionQuickAccessAction](/mod/game-api/types/alta-player/vivoxconnectionquickaccessaction) <span>Alta.QuickAccessActions</span>
+- [VivoxManager](/mod/game-api/types/alta-networking/vivoxmanager) <span>Alta.Voice</span>
+- [VivoxPlayerPrefsMutedPlayerStore](/mod/game-api/types/alta-networking/vivoxplayerprefsmutedplayerstore) <span>Alta.Voice</span>
+- [VivoxSession](/mod/game-api/types/alta-networking/vivoxsession) <span>Alta.Voice</span>
+- [VivoxText](/mod/game-api/types/alta-networking/vivoxtext) <span>Alta.Voice</span>
+- [VivoxUtility](/mod/game-api/types/alta-networking/vivoxutility) <span>Alta.Voice</span>
+- [VivoxVoice](/mod/game-api/types/alta-networking/vivoxvoice) <span>Alta.Voice</span>
+- [VoiceApiClient](/mod/game-api/types/assembly-api-client/voiceapiclient) <span>Alta.Api.Client.HighLevel</span>
+- [VoiceChat](/mod/game-api/types/alta-networking/voicechat) <span>Alta.Voice</span>
+- [VoiceChatMouthController](/mod/game-api/types/alta-networking/voicechatmouthcontroller) <span>Alta.Networking.Voice</span>
+- [VoiceChatScope](/mod/game-api/types/alta-networking/voicechatscope) <span>Alta.Voice</span>
+- [VoiceChatTokenRequest](/mod/game-api/types/assembly-api-models/voicechattokenrequest) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [VoiceChatTokenRequestType](/mod/game-api/types/assembly-api-models/voicechattokenrequesttype) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [VolumeTrigger](/mod/game-api/types/global-t-x/volumetrigger)
+- [VrMainMenu](/mod/game-api/types/global-t-x/vrmainmenu)
+- [VRPlayerController](/mod/game-api/types/global-t-x/vrplayercontroller)
+- [VRSetup](/mod/game-api/types/alta-menus/vrsetup) <span>Alta.XR</span>
+- [VRTrackedDevice](/mod/game-api/types/alta-menus/vrtrackeddevice) <span>Alta.XR</span>
+- [VRTrackedDevice.PositionPostProcessor](/mod/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor) <span>Alta.XR</span>
+
+</div>
+
+## W
+
+<div className="type-index">
+
+- [WackyCommandModule](/mod/game-api/types/alta-console/wackycommandmodule) <span>Alta.Console.Commands</span>
+- [WackyCommandModule.ChunkData](/mod/game-api/types/alta-console/wackycommandmodule-chunkdata) <span>Alta.Console.Commands</span>
+- [WackyCommandModule.ChunkLootData](/mod/game-api/types/alta-console/wackycommandmodule-chunklootdata) <span>Alta.Console.Commands</span>
+- [WackyCommandModule.LootData](/mod/game-api/types/alta-console/wackycommandmodule-lootdata) <span>Alta.Console.Commands</span>
+- [Walker](/mod/game-api/types/alta-intelligence/walker) <span>Alta.Pathfinding</span>
+- [WalkerAnimator](/mod/game-api/types/alta-intelligence/walkeranimator) <span>Alta.Pathfinding</span>
+- [WalkerState](/mod/game-api/types/alta-intelligence/walkerstate) <span>Alta.Pathfinding</span>
+- [WalkerStepping](/mod/game-api/types/global-t-x/walkerstepping)
+- [WallAlignedDisplay](/mod/game-api/types/alta-world-generation/wallaligneddisplay) <span>Alta.Caves.Displays</span>
+- [WallAlignedDisplay.Point](/mod/game-api/types/alta-world-generation/wallaligneddisplay-point) <span>Alta.Caves.Displays</span>
+- [WallCollisionHelper](/mod/game-api/types/global-t-x/wallcollisionhelper)
+- [WallHookFilter](/mod/game-api/types/global-t-x/wallhookfilter)
+- [Waterfall](/mod/game-api/types/alta-world-generation/waterfall) <span>Alta.Forests</span>
+- [WaterfallEffect](/mod/game-api/types/alta-world-generation/waterfalleffect) <span>Alta.Forests</span>
+- [WaterfallEffectGenerator](/mod/game-api/types/alta-world-generation/waterfalleffectgenerator) <span>Alta.Forests</span>
+- [WayPointPath](/mod/game-api/types/global-t-x/waypointpath)
+- [WayPointPathData](/mod/game-api/types/global-t-x/waypointpathdata)
+- [WebhookPayload](/mod/game-api/types/assembly-api-models/webhookpayload) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [WebInterface](/mod/game-api/types/global-t-x/webinterface)
+- [WebRequestExtensions](/mod/game-api/types/assembly-api-models/webrequestextensions) <span>Alta.Api.DataTransferModels.Extensions</span>
+- [WebRequestHandler](/mod/game-api/types/global-t-x/webrequesthandler)
+- [WebServerThread](/mod/game-api/types/alta-networking/webserverthread) <span>Alta.WebServer</span>
+- [WebSocketCommandHandler](/mod/game-api/types/alta-console/websocketcommandhandler) <span>Alta.Console</span>
+- [WebSocketCommandHandler.Request](/mod/game-api/types/alta-console/websocketcommandhandler-request) <span>Alta.Console</span>
+- [WebSocketCommandHandler.ResponseData](/mod/game-api/types/alta-console/websocketcommandhandler-responsedata) <span>Alta.Console</span>
+- [WebSocketCommandHandler.ResponseType](/mod/game-api/types/alta-console/websocketcommandhandler-responsetype) <span>Alta.Console</span>
+- [WebSocketCommandHandler.SubscriptionResult](/mod/game-api/types/alta-console/websocketcommandhandler-subscriptionresult) <span>Alta.Console</span>
+- [WebSocketConsoleCommandModule](/mod/game-api/types/alta-console/websocketconsolecommandmodule) <span>Alta.Console</span>
+- [WebsocketContractResolver](/mod/game-api/types/alta-console/websocketcontractresolver) <span>Alta.Console</span>
+- [WebSocketManager](/mod/game-api/types/assembly-api-client/websocketmanager) <span>Alta.Api.Client.HighLevel.Subscriptions</span>
+- [WebsocketMessageBody](/mod/game-api/types/assembly-api-models/websocketmessagebody) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [WebSocketRemoteConsole](/mod/game-api/types/alta-console/websocketremoteconsole) <span>Alta.Console</span>
+- [WebsocketResponseBody](/mod/game-api/types/assembly-api-models/websocketresponsebody) <span>Alta.Api.DataTransferModels.Models.Requests</span>
+- [WedgeChooser](/mod/game-api/types/alta-utilities/wedgechooser) <span>Alta.Bezier</span>
+- [WedgeChooser.Wedge](/mod/game-api/types/alta-utilities/wedgechooser-wedge) <span>Alta.Bezier</span>
+- [WheelGrab](/mod/game-api/types/global-t-x/wheelgrab)
+- [WheelGrabSaveData](/mod/game-api/types/global-t-x/wheelgrabsavedata)
+- [WindFoliageBlit](/mod/game-api/types/alta-utilities/windfoliageblit) <span>Alta.Utilities.Atlas</span>
+- [WindFoliageRampLerp3Blit](/mod/game-api/types/alta-utilities/windfoliageramplerp3blit) <span>Alta.Utilities.Atlas</span>
+- [WindFoliageTextureSwayBlit](/mod/game-api/types/alta-utilities/windfoliagetextureswayblit) <span>Alta.Utilities.Atlas</span>
+- [WindFoliageVertexColorBlit](/mod/game-api/types/alta-utilities/windfoliagevertexcolorblit) <span>Alta.Utilities.Atlas</span>
+- [WindFoliageVertexColorColorRampBlit](/mod/game-api/types/alta-utilities/windfoliagevertexcolorcolorrampblit) <span>Alta.Utilities.Atlas</span>
+- [Window](/mod/game-api/types/alta-menus/window) <span>Alta.Meta.UI</span>
+- [WindowsGlobalSettingsInstaller](/mod/game-api/types/assembly-other/windowsglobalsettingsinstaller) <span>Alta.ATT.LifetimeScopes</span>
+- [WindowsInstaller](/mod/game-api/types/assembly-other/windowsinstaller) <span>Alta.ATT.LifetimeScopes</span>
+- [WindowsServerConsole](/mod/game-api/types/global-t-x/windowsserverconsole)
+- [WindowsServerConsole.ConsoleLogEntry](/mod/game-api/types/global-t-x/windowsserverconsole-consolelogentry)
+- [WindowsXRLoaderInitializer](/mod/game-api/types/assembly-other/windowsxrloaderinitializer) <span>Alta.XRLoaders</span>
+- [WindowsXRLoaderSettings](/mod/game-api/types/assembly-other/windowsxrloadersettings) <span>Alta.XRLoaders</span>
+- [WindPattern](/mod/game-api/types/global-t-x/windpattern)
+- [WindPattern.CreateInstance](/mod/game-api/types/global-t-x/windpattern-createinstance)
+- [WindShaderVariables](/mod/game-api/types/alta-world/windshadervariables) <span>Alta.Environmental.Vegetation</span>
+- [WipeManager](/mod/game-api/types/global-t-x/wipemanager)
+- [WipeManagerData](/mod/game-api/types/global-t-x/wipemanagerdata)
+- [WithGroupPermissionsOnlyAttribute](/mod/game-api/types/alta-console/withgrouppermissionsonlyattribute) <span>Alta.Console</span>
+- [WithPermissionOnlyAttribute](/mod/game-api/types/alta-console/withpermissiononlyattribute) <span>Alta.Console</span>
+- [WoodcutConnection](/mod/game-api/types/alta-crafting/woodcutconnection) <span>Alta.Woodcutting</span>
+- [WoodcutConnectionType](/mod/game-api/types/alta-crafting/woodcutconnectiontype) <span>Alta.Woodcutting</span>
+- [WoodcutConnectionType.Create](/mod/game-api/types/alta-crafting/woodcutconnectiontype-create) <span>Alta.Woodcutting</span>
+- [WoodcutPointCollection](/mod/game-api/types/global-t-x/woodcutpointcollection)
+- [WoodcutPointCollectionSaveData](/mod/game-api/types/global-t-x/woodcutpointcollectionsavedata)
+- [WoodcutPointCollectionSaveData.Element](/mod/game-api/types/global-t-x/woodcutpointcollectionsavedata-element)
+- [WoodcutPointData](/mod/game-api/types/global-t-x/woodcutpointdata)
+- [WoodcutPooledObject](/mod/game-api/types/global-t-x/woodcutpooledobject)
+- [WoodcutPreparer](/mod/game-api/types/global-t-x/woodcutpreparer)
+- [WoodcutSettings](/mod/game-api/types/alta-crafting/woodcutsettings) <span>Alta.Woodcutting</span>
+- [WoodcutTree](/mod/game-api/types/alta-crafting/woodcuttree) <span>Alta.Woodcutting</span>
+- [WoodcutTree.MapNode](/mod/game-api/types/alta-crafting/woodcuttree-mapnode) <span>Alta.Woodcutting</span>
+- [WoodcutTreeAttachmentBaker](/mod/game-api/types/alta-crafting/woodcuttreeattachmentbaker) <span>Alta.Woodcutting</span>
+- [WoodcutTreeBaker](/mod/game-api/types/alta-crafting/woodcuttreebaker) <span>Alta.Woodcutting</span>
+- [WoodcutTreeBakerAccess&lt;T&gt;](/mod/game-api/types/alta-crafting/woodcuttreebakeraccess-t) <span>Alta.Woodcutting</span>
+- [WoodcutTreeBakingHandler](/mod/game-api/types/alta-crafting/woodcuttreebakinghandler) <span>Alta.Woodcutting</span>
+- [WoodcutTreeDamagedNodeBaker](/mod/game-api/types/alta-crafting/woodcuttreedamagednodebaker) <span>Alta.Woodcutting</span>
+- [WoodcutTreeEvent](/mod/game-api/types/alta-crafting/woodcuttreeevent) <span>Alta.Woodcutting</span>
+- [WoodcutTreeModel](/mod/game-api/types/alta-crafting/woodcuttreemodel) <span>Alta.Woodcutting</span>
+- [WoodcutTreeModelChopped](/mod/game-api/types/alta-crafting/woodcuttreemodelchopped) <span>Alta.Woodcutting</span>
+- [WoodcutTreeModelDamaged](/mod/game-api/types/alta-crafting/woodcuttreemodeldamaged) <span>Alta.Woodcutting</span>
+- [WoodcutTreeModelEvent](/mod/game-api/types/alta-crafting/woodcuttreemodelevent) <span>Alta.Woodcutting</span>
+- [WoodcutTreeNodeBaker](/mod/game-api/types/alta-crafting/woodcuttreenodebaker) <span>Alta.Woodcutting</span>
+- [WoodcutTreeNodeBakerLod0Only](/mod/game-api/types/alta-crafting/woodcuttreenodebakerlod0only) <span>Alta.Woodcutting</span>
+- [WoodcutTreeSaveData](/mod/game-api/types/alta-crafting/woodcuttreesavedata) <span>Alta.Woodcutting</span>
+- [WoodcutTreeSaveData1](/mod/game-api/types/alta-crafting/woodcuttreesavedata1) <span>Alta.Woodcutting</span>
+- [WoodcutTreeSaveData2](/mod/game-api/types/alta-crafting/woodcuttreesavedata2) <span>Alta.Woodcutting</span>
+- [WorldCommandModule](/mod/game-api/types/alta-console/worldcommandmodule) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.CaveCommandModule](/mod/game-api/types/alta-console/worldcommandmodule-cavecommandmodule) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo.Biome](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-biome) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo.Edge](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-edge) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo.Encounter](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-encounter) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo.Node](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-node) <span>Alta.Console.Commands</span>
+- [WorldCommandModule.ForestCommandModule.ForestInfo.Space](/mod/game-api/types/alta-console/worldcommandmodule-forestcommandmodule-forestinfo-space) <span>Alta.Console.Commands</span>
+- [WorldLandmark](/mod/game-api/types/alta-world/worldlandmark) <span>Alta.Chunks</span>
+- [WorldLandmarkConfig](/mod/game-api/types/alta-utilities/worldlandmarkconfig) <span>Alta.Utilities</span>
+- [WorldLandmarkConfigMarker](/mod/game-api/types/alta-utilities/worldlandmarkconfigmarker) <span>Alta.Utilities</span>
+- [WorldLandmarkManager](/mod/game-api/types/alta-world/worldlandmarkmanager) <span>Alta.Chunks</span>
+- [WorldLandmarkMarker](/mod/game-api/types/alta-utilities/worldlandmarkmarker) <span>Alta.Utilities</span>
+- [WorldLerpAngle](/mod/game-api/types/global-t-x/worldlerpangle)
+- [WorldSpaceTriangle](/mod/game-api/types/global-t-x/worldspacetriangle)
+- [WrapBone](/mod/game-api/types/global-t-x/wrapbone)
+- [WwiseExtensions](/mod/game-api/types/global-t-x/wwiseextensions)
+- [Wyrm](/mod/game-api/types/alta-intelligence/wyrm) <span>Alta.Intelligence</span>
+- [WyrmCatchSettings](/mod/game-api/types/alta-intelligence/wyrmcatchsettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmDigSettings](/mod/game-api/types/alta-intelligence/wyrmdigsettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmDodgeSettings](/mod/game-api/types/alta-intelligence/wyrmdodgesettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmEmergeSettings](/mod/game-api/types/alta-intelligence/wyrmemergesettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmMeleeSettings](/mod/game-api/types/alta-intelligence/wyrmmeleesettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmSpinSettings](/mod/game-api/types/alta-intelligence/wyrmspinsettings) <span>Alta.Intelligence.Wyrms</span>
+- [WyrmSpitSettings](/mod/game-api/types/alta-intelligence/wyrmspitsettings) <span>Alta.Intelligence.Wyrms</span>
+
+</div>
+
+## X
+
+<div className="type-index">
+
+- [Xor](/mod/game-api/types/alta-intelligence/xor) <span>Alta.Intelligence</span>
+- [XrDeviceSdkController](/mod/game-api/types/global-t-x/xrdevicesdkcontroller)
+- [XRLoaderStaticData](/mod/game-api/types/assembly-other/xrloaderstaticdata) <span>Alta.XRLoaders</span>
+- [XRManagerSettingsController](/mod/game-api/types/assembly-other/xrmanagersettingscontroller) <span>Alta.XRLoaders</span>
+- [XRUtility](/mod/game-api/types/assembly-other/xrutility)
+- [XsollaEvent](/mod/game-api/types/global-t-x/xsollaevent)
+- [XXHash](/mod/game-api/types/global-t-x/xxhash)
+
+</div>
+
+## Z
+
+<div className="type-index">
+
+- [ZoneAnalyticsTriggerEvent](/mod/game-api/types/game-other-namespaces/zoneanalyticstriggerevent) <span>ATT.Triggers</span>
+- [ZoneEvent](/mod/game-api/types/game-other-namespaces/zoneevent) <span>ATT.Triggers</span>
+
+</div>

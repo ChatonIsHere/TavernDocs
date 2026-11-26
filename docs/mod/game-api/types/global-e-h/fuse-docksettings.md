@@ -1,0 +1,32 @@
+---
+title: "Fuse.DockSettings"
+description: "How a lit fuse limits docking: Default does nothing, Single blocks docks that already hold something and blocks the dock it sits in, Blocked stops all..."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# Fuse.DockSettings
+
+An **enum** in `Root.Township`, the global namespace.
+
+How a lit fuse limits docking: `Default` does nothing, `Single` blocks docks that already hold something and blocks the dock it sits in, `Blocked` stops all docking while lit.
+
+- **Listed in** [Global namespace: E to H](/mod/game-api/types/global-e-h)
+- **Nested in** [`Fuse`](/mod/game-api/types/global-e-h/fuse)
+
+## Values
+
+| Member |
+| --- |
+| <Link id="m-blocked" /><code>{"Blocked = 2"}</code> |
+| <Link id="m-default" /><code>{"Default = 0"}</code> |
+| <Link id="m-single" /><code>{"Single = 1"}</code> |
+
+## Used in
+
+Members of other types that take, return or hold a `DockSettings`:
+
+[`Fuse.dockSettings`](/mod/game-api/types/global-e-h/fuse#m-docksettings).

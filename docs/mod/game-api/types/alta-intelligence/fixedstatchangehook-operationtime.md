@@ -1,0 +1,32 @@
+---
+title: "FixedStatChangeHook.OperationTime"
+description: "Flags for when a FixedStatChangeHook acts: on action start, on end, or reverting on end."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# FixedStatChangeHook.OperationTime
+
+An **private enum** in `Root.Township`, `Alta.Intelligence`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Flags for when a `FixedStatChangeHook` acts: on action start, on end, or reverting on end.
+
+- **Listed in** [Creatures and AI](/mod/game-api/types/alta-intelligence)
+- **Nested in** [`FixedStatChangeHook`](/mod/game-api/types/alta-intelligence/fixedstatchangehook)
+
+## Values
+
+| Member |
+| --- |
+| <Link id="m-affectonend" /><code>{"AffectOnEnd = 2"}</code> |
+| <Link id="m-affectonstart" /><code>{"AffectOnStart = 1"}</code> |
+| <Link id="m-revertonend" /><code>{"RevertOnEnd = 4"}</code> |
+
+## Used in
+
+Members of other types that take, return or hold a `OperationTime`:
+
+[`FixedStatChangeHook.statOperation`](/mod/game-api/types/alta-intelligence/fixedstatchangehook#m-statoperation).

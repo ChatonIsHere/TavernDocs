@@ -1,0 +1,25 @@
+---
+title: "CharacterDockManager"
+description: "A ComponentGroup of PickupDockGroups, probably the docks on a player character."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# CharacterDockManager
+
+A **class** in `Root.Township`, `Alta.Inventory`.
+
+A `ComponentGroup` of `PickupDockGroup`s, probably the docks on a player character. It adds nothing of its own.
+
+- **Listed in** [Items, inventory and logic](/mod/game-api/types/alta-items)
+- **Inherits or implements** [`ComponentGroup<PickupDockGroup>`](/mod/game-api/types/global-c-d/componentgroup-t)
+- **Documented in** [Player inventory](/mod/game-api/items/player-inventory)
+
+## Constructors
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CharacterDockManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
