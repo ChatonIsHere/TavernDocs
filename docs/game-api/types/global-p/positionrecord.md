@@ -1,6 +1,6 @@
 ---
 title: "PositionRecord"
-description: "struct PositionRecord in Root.Township."
+description: "A saved position and rotation, either in world space or relative to another transform depending on which constructor made it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionRecord
 
 A **struct** in `Root.Township`, no namespace.
+
+A saved position and rotation, either in world space or relative to another transform depending on which constructor made it.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 
@@ -24,10 +26,10 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | The position, world or local to the reference transform. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | The rotation, world or local to the reference transform. |
 
 ## Used in
 

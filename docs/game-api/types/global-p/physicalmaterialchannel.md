@@ -1,6 +1,6 @@
 ---
 title: "PhysicalMaterialChannel"
-description: "enum PhysicalMaterialChannel in Root.Township."
+description: "Which of a physical material's material slots (A to F) to use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PhysicalMaterialChannel
 
 An **enum** in `Root.Township`, no namespace.
+
+Which of a physical material's material slots (A to F) to use. Forging, chiselling and the builder dock mostly ask for A.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 

@@ -29,13 +29,13 @@ Inspector entry for one field or property marked with `BubbleInspectorFieldAttri
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentinteractor" /><code>{"private static "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractor"}</code> |
-| <Link id="m-currentinteractorinternal" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractorInternal"}</code> |
-| <Link id="m-valuegetter" /><code>{"private Func<object, object> valueGetter"}</code> |
-| <Link id="m-valuename" /><code>{"private string valueName"}</code> |
-| <Link id="m-valuesetter" /><code>{"private Action<object, object> valueSetter"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentinteractor" /><code>{"private static "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractor"}</code> | The knob or other control currently spawned by any value entry; shared, so opening one releases the last. |
+| <Link id="m-currentinteractorinternal" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactableinspector">{"InteractableInspector"}</Link>{" currentInteractorInternal"}</code> | Control spawned by this entry, cleaned up in `Clean` if it is still the current one. |
+| <Link id="m-valuegetter" /><code>{"private Func<object, object> valueGetter"}</code> | Reads the field or property from a target object. |
+| <Link id="m-valuename" /><code>{"private string valueName"}</code> | The field or property name shown in the bubble. |
+| <Link id="m-valuesetter" /><code>{"private Action<object, object> valueSetter"}</code> | Writes the field or property on a target object. |
 
 </details>
 

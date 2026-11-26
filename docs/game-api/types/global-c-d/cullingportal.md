@@ -29,19 +29,19 @@ A portal between two chunks (mostly cave layers) that can hide or show the stati
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-backbounds" /><code>{"private Bounds backBounds"}</code> |
-| <Link id="m-backchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" backChunk"}</code> |
-| <Link id="m-backculling" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal-cullingside">{"CullingPortal.CullingSide"}</Link>{" backCulling"}</code> |
-| <Link id="m-backstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" backStreamer"}</code> |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
-| <Link id="m-center" /><code>{"private Vector3? center"}</code> |
-| <Link id="m-direction" /><code>{"private Vector3? direction"}</code> |
-| <Link id="m-frontbounds" /><code>{"private Bounds frontBounds"}</code> |
-| <Link id="m-frontchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" frontChunk"}</code> |
-| <Link id="m-frontculling" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal-cullingside">{"CullingPortal.CullingSide"}</Link>{" frontCulling"}</code> |
-| <Link id="m-frontstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" frontStreamer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-backbounds" /><code>{"private Bounds backBounds"}</code> | Local-space box; static renderers of the back streamer inside it are culled with the back side. |
+| <Link id="m-backchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" backChunk"}</code> | The location chunk behind the portal. Backing field for `BackChunk`. |
+| <Link id="m-backculling" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal-cullingside">{"CullingPortal.CullingSide"}</Link>{" backCulling"}</code> | Handles enabling and disabling the back side's renderers. |
+| <Link id="m-backstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" backStreamer"}</code> | Cave layer streamer of the back chunk, the source of its static renderers. |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | The portal's transform, cached. |
+| <Link id="m-center" /><code>{"private Vector3? center"}</code> | Cached world position; refreshed when the transform changes. |
+| <Link id="m-direction" /><code>{"private Vector3? direction"}</code> | Cached world up vector of the portal (the facing direction); refreshed when the transform changes. |
+| <Link id="m-frontbounds" /><code>{"private Bounds frontBounds"}</code> | Local-space box; static renderers of the front streamer inside it are culled with the front side. |
+| <Link id="m-frontchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" frontChunk"}</code> | The location chunk in front of the portal. Backing field for `FrontChunk`. |
+| <Link id="m-frontculling" /><code>{"private "}<Link to="/game-api/types/global-c-d/cullingportal-cullingside">{"CullingPortal.CullingSide"}</Link>{" frontCulling"}</code> | Handles enabling and disabling the front side's renderers. |
+| <Link id="m-frontstreamer" /><code>{"private "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" frontStreamer"}</code> | Cave layer streamer of the front chunk, the source of its static renderers. |
 
 </details>
 
@@ -66,14 +66,14 @@ A portal between two chunks (mostly cave layers) that can hide or show the stati
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-removechunkreference" /><code>{"private void RemoveChunkReference("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-setchunk" /><code>{"private void SetChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" newChunk, ref "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, ref "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer)"}</code> |
-| <Link id="m-setupchunkreference" /><code>{"private void SetupChunkReference("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, out "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Removes the portal from both chunks' portal lists. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws the front and back bounds as wire cubes in the portal's space. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Adds the portal to both chunks' portal lists and creates the front and back culling sides. |
+| <Link id="m-removechunkreference" /><code>{"private void RemoveChunkReference("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Removes this portal from a chunk's portal list. |
+| <Link id="m-setchunk" /><code>{"private void SetChunk("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" newChunk, ref "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, ref "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer)"}</code> | Swaps the front or back chunk, moving the portal registration and picking up the new chunk's cave streamer. |
+| <Link id="m-setupchunkreference" /><code>{"private void SetupChunkReference("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, out "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer)"}</code> | Adds this portal to a chunk's portal list and gets its `CaveLayerStreamer`. |
 
 </details>
 

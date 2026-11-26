@@ -1,6 +1,6 @@
 ---
 title: "Smelter.AnimationEvents"
-description: "enum Smelter.AnimationEvents in Root.Township."
+description: "Effects the smelter plays and syncs to clients: starting and stopping operation, and the ore, fuel and output whistles (\"willies\")."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Smelter.AnimationEvents
 
 An **private enum** in `Root.Township`, `Alta.Blacksmithing`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Effects the smelter plays and syncs to clients: starting and stopping operation, and the ore, fuel and output whistles ("willies"). Private to `Smelter`; the server sends them to chunks.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`Smelter`](/game-api/types/alta-crafting/smelter)

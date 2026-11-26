@@ -27,11 +27,11 @@ A timeline of days and knowledge events for the experimental AI reasoning system
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-days" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{"> days"}</code> |
-| <Link id="m-firstfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" firstFake"}</code> |
-| <Link id="m-lastfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" lastFake"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-days" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{"> days"}</code> | Every day started so far, oldest first. |
+| <Link id="m-firstfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" firstFake"}</code> | Sentinel event at the head of the linked list of active events. |
+| <Link id="m-lastfake" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" lastFake"}</code> | Sentinel event at the tail of the active event list. New events are inserted before it. |
 
 </details>
 
@@ -58,9 +58,9 @@ A timeline of days and knowledge events for the experimental AI reasoning system
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-startday" /><code>{"private void StartDay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-startday" /><code>{"private void StartDay()"}</code> | Starts a new `Day` with the next index and makes it `Current`. Called on creation and when `Time` passes 1. |
 
 </details>
 

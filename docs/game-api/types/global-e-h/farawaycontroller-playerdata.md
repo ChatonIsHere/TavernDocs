@@ -1,6 +1,6 @@
 ---
 title: "FarAwayController.PlayerData"
-description: "class FarAwayController.PlayerData in Root.Township."
+description: "A player's chunk and head position as sent by FarAwayController, so clients can draw markers for players too far away to be loaded."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FarAwayController.PlayerData
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+A player's chunk and head position as sent by `FarAwayController`, so clients can draw markers for players too far away to be loaded.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`FarAwayController`](/game-api/types/global-e-h/farawaycontroller)
@@ -27,29 +29,29 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
-| <Link id="m-id" /><code>{"private int id"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | The chunk the player's controller is in, or the global chunk when empty. |
+| <Link id="m-id" /><code>{"private int id"}</code> | Backing field for `Id`. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Backing field for `Position`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-id-2" /><code>{"int Id { get; }"}</code> |
-| <Link id="m-isempty" /><code>{"bool IsEmpty { get; private set; }"}</code> |
-| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> |
-| <Link id="m-targetplayer" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id-2" /><code>{"int Id { get; }"}</code> | The player's user id. |
+| <Link id="m-isempty" /><code>{"bool IsEmpty { get; private set; }"}</code> | True when the player has no usable position (no head, no chunk, or in the global chunk). |
+| <Link id="m-position-2" /><code>{"Vector3 Position { get; }"}</code> | The player's head position in its chunk. |
+| <Link id="m-targetplayer" /><code><Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" TargetPlayer { get; private set; }"}</code> | The player this data is for. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-update" /><code>{"void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the id, chunk and position, and looks up the `Player` for the id on read. |
+| <Link id="m-update" /><code>{"void Update()"}</code> | Server: refreshes chunk and head position from the player, or marks it empty. |
 
 ## Used in
 

@@ -29,11 +29,11 @@ A text list entry with a button. Pressing the button selects it.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |
-| <Link id="m-deselected" /><code>{"private UnityEvent deselected"}</code> |
-| <Link id="m-selected" /><code>{"private UnityEvent selected"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> | Backing field for `Button`, the button that selects this element. |
+| <Link id="m-deselected" /><code>{"private UnityEvent deselected"}</code> | Inspector event invoked by `Deselect`. |
+| <Link id="m-selected" /><code>{"private UnityEvent selected"}</code> | Inspector event invoked by `Select`. |
 
 </details>
 
@@ -61,9 +61,9 @@ A text list entry with a button. Pressing the button selects it.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onpressed" /><code>{"private void OnPressed("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onpressed" /><code>{"private void OnPressed("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" button)"}</code> | Handler for the button's `Pressed` event. Calls `Select`. |
 
 </details>
 

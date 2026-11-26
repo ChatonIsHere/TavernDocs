@@ -40,12 +40,12 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> |
-| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> |
-| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> | Shared buffer for the radius check overlap. |
+| <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> | Shared set so the radius check looks at each rigidbody once. |
+| <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> | Shared buffer for the raycast check. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
 
 </details>
 
@@ -78,20 +78,20 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 <details>
 <summary>12 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
-| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> |
-| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> |
-| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> |
-| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> |
-| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> |
-| <Link id="m-picked" /><code>{"private void Picked()"}</code> |
-| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> |
-| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> |
-| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> |
-| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkradius" /><code>{"private bool CheckRadius("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> | Stage check: fails if another growing entity's current stage (with a separation radius) is closer than the smaller of the two radii. |
+| <Link id="m-checkraycast" /><code>{"private bool CheckRaycast("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage)"}</code> | Stage check: casts along the stage's ray direction from the growth point and fails if it hits anything but the current entity. |
+| <Link id="m-destroycurrentstage" /><code>{"private void DestroyCurrentStage()"}</code> | Destroys the entity spawned for the current stage and stops tracking it. |
+| <Link id="m-handlechecksresult" /><code>{"private void HandleChecksResult(int stageIndex, "}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, bool checksResult, TimeSpan timeLeft = null)"}</code> | After the stage checks: on success spawns the stage and schedules the next one; on failure retries later or stops and destroys the item. |
+| <Link id="m-handlechilddestroyed" /><code>{"private void HandleChildDestroyed("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Stops growth and destroys the item when the stage entity is destroyed, but not when it is only unloaded. |
+| <Link id="m-handleprefabkinematic" /><code>{"private void HandlePrefabKinematic("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" spawned)"}</code> | Forces the spawned stage's rigidbody kinematic or non-kinematic when the stage's `ForceKinematic` asks for it. |
+| <Link id="m-performstagechecks" /><code>{"private bool PerformStageChecks(int stageIndex)"}</code> | Runs a stage's checks: the previous stage's survival roll, then the radius and raycast checks. |
+| <Link id="m-picked" /><code>{"private void Picked()"}</code> | Raises `Removed`. Called a frame after the stage entity is moved off the growth parent, for example when picked up. |
+| <Link id="m-setcurrentstageentity" /><code>{"private void SetCurrentStageEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newEntity)"}</code> | Swaps the tracked stage entity, moving the destroy and parent-changed listeners and raising `EntityRemoved` and `EntityAdded`. |
+| <Link id="m-spawnprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPrefab("}<Link to="/game-api/types/global-e-h/growthstage">{"GrowthStage"}</Link>{" currentStage, int stageIndex)"}</code> | Spawns the stage's prefab (or a runtime tree for a `PresetTree`) under the parent, or keeps the previous stage's entity when the stage reuses it. |
+| <Link id="m-stageentityunchilded" /><code>{"private void StageEntityUnchilded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" topic, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" oldParent, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" newParent)"}</code> | When the stage entity gets a new parent, stops tracking it, fixes its transform parent if needed and calls `Picked` next frame. |
+| <Link id="m-unchildspawned" /><code>{"private void UnchildSpawned()"}</code> | At the end of growth, frees the final entity: moves it to the parent's chunking parent, or makes it a standalone saved entity in the chunk. |
 
 </details>
 

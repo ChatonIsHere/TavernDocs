@@ -30,29 +30,29 @@ Global settings for grab assist, which searches a short path from the hand to fi
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-assistgrabdirection" /><code>{"private Vector3 assistGrabDirection"}</code> |
-| <Link id="m-assistlength" /><code>{"private float assistLength"}</code> |
-| <Link id="m-assistpathmaterial" /><code>{"private Material assistPathMaterial"}</code> |
-| <Link id="m-assistpathmaterialandroid" /><code>{"private Material assistPathMaterialAndroid"}</code> |
-| <Link id="m-assistpathmesh" /><code>{"private Mesh assistPathMesh"}</code> |
-| <Link id="m-assistpathmeshandroid" /><code>{"private Mesh assistPathMeshAndroid"}</code> |
-| <Link id="m-assisttargetmaterial" /><code>{"private Material assistTargetMaterial"}</code> |
-| <Link id="m-assisttargetmesh" /><code>{"private Mesh assistTargetMesh"}</code> |
-| <Link id="m-assisttargetnotfoundmaterial" /><code>{"private Material assistTargetNotFoundMaterial"}</code> |
-| <Link id="m-detectionradius" /><code>{"private float detectionRadius"}</code> |
-| <Link id="m-foundtargetcolor" /><code>{"private Color foundTargetColor"}</code> |
-| <Link id="m-maximumanglefromdowntobeactivedot" /><code>{"private float maximumAngleFromDownToBeActiveDot"}</code> |
-| <Link id="m-notargetcolor" /><code>{"private Color noTargetColor"}</code> |
-| <Link id="m-obstaclelayermask" /><code>{"private LayerMask obstacleLayerMask"}</code> |
-| <Link id="m-pathindicatorscale" /><code>{"private Vector3 pathIndicatorScale"}</code> |
-| <Link id="m-pathinterval" /><code>{"private float pathInterval"}</code> |
-| <Link id="m-smoothdamptime" /><code>{"private float smoothDampTime"}</code> |
-| <Link id="m-startdelay" /><code>{"private float startDelay"}</code> |
-| <Link id="m-targetindicatorscale" /><code>{"private Vector3 targetIndicatorScale"}</code> |
-| <Link id="m-targetindicatorscalecurve" /><code>{"private AnimationCurve targetIndicatorScaleCurve"}</code> |
-| <Link id="m-verticalpower" /><code>{"private float verticalPower"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-assistgrabdirection" /><code>{"private Vector3 assistGrabDirection"}</code> | Backing field for `AssistGrabDirection`: the hand-relative direction the assist points. |
+| <Link id="m-assistlength" /><code>{"private float assistLength"}</code> | Backing field for `AssistLength`: the assist reach, scaled by how far down the hand points. |
+| <Link id="m-assistpathmaterial" /><code>{"private Material assistPathMaterial"}</code> | Path indicator material on non-Android platforms. |
+| <Link id="m-assistpathmaterialandroid" /><code>{"private Material assistPathMaterialAndroid"}</code> | Path indicator material on Android. |
+| <Link id="m-assistpathmesh" /><code>{"private Mesh assistPathMesh"}</code> | Path indicator mesh on non-Android platforms. |
+| <Link id="m-assistpathmeshandroid" /><code>{"private Mesh assistPathMeshAndroid"}</code> | Path indicator mesh on Android. |
+| <Link id="m-assisttargetmaterial" /><code>{"private Material assistTargetMaterial"}</code> | Backing field for `AssistTargetMaterial`. |
+| <Link id="m-assisttargetmesh" /><code>{"private Mesh assistTargetMesh"}</code> | Backing field for `AssistTargetMesh`. |
+| <Link id="m-assisttargetnotfoundmaterial" /><code>{"private Material assistTargetNotFoundMaterial"}</code> | Backing field for `TargetNotFoundMaterial`. |
+| <Link id="m-detectionradius" /><code>{"private float detectionRadius"}</code> | Backing field for `DetectionRadius`. |
+| <Link id="m-foundtargetcolor" /><code>{"private Color foundTargetColor"}</code> | Backing field for `FoundTargetColor`. |
+| <Link id="m-maximumanglefromdowntobeactivedot" /><code>{"private float maximumAngleFromDownToBeActiveDot"}</code> | Backing field for `MaximumAngleFromDownToBeActiveDot`, stored as a dot product from an angle. |
+| <Link id="m-notargetcolor" /><code>{"private Color noTargetColor"}</code> | Backing field for `NoTargetColor`. |
+| <Link id="m-obstaclelayermask" /><code>{"private LayerMask obstacleLayerMask"}</code> | Backing field for `ObstacleLayerMask`. |
+| <Link id="m-pathindicatorscale" /><code>{"private Vector3 pathIndicatorScale"}</code> | Backing field for `PathIndicatorScale`. |
+| <Link id="m-pathinterval" /><code>{"private float pathInterval"}</code> | Backing field for `PathInterval`: spacing between path indicators and the minimum assist length. |
+| <Link id="m-smoothdamptime" /><code>{"private float smoothDampTime"}</code> | Backing field for `SmoothDampTime`. |
+| <Link id="m-startdelay" /><code>{"private float startDelay"}</code> | Backing field for `StartDelay`: seconds before the assist becomes active. |
+| <Link id="m-targetindicatorscale" /><code>{"private Vector3 targetIndicatorScale"}</code> | Backing field for `TargetIndicatorScale`. |
+| <Link id="m-targetindicatorscalecurve" /><code>{"private AnimationCurve targetIndicatorScaleCurve"}</code> | Backing field for `TargetIndicatorScaleCurve`. |
+| <Link id="m-verticalpower" /><code>{"private float verticalPower"}</code> | Backing field for `VerticalPower`: exponent on the downward direction when working out assist length. |
 
 </details>
 

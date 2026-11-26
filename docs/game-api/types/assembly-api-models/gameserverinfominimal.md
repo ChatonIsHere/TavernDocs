@@ -1,6 +1,6 @@
 ---
 title: "GameServerInfoMinimal"
-description: "class GameServerInfoMinimal in Alta.Api.DataTransferModels."
+description: "A game server's id and name only, as Alta's web API returned in short lists."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameServerInfoMinimal
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A game server's id and name only, as Alta's web API returned in short lists.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`INamedEntity`](/game-api/types/assembly-api-models/inamedentity)
@@ -24,10 +26,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server id. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
 
 ## Used in
 

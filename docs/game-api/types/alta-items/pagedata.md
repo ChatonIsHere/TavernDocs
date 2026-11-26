@@ -27,10 +27,10 @@ The content of a book or paper page: a list of placed glyphs, or data from a `Pa
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-components" /><code>{"private List<object> components"}</code> |
-| <Link id="m-glyphs" /><code>{"private List<"}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"> glyphs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-components" /><code>{"private List<object> components"}</code> | Objects attached to the page (the provider data, or the static page and its components), searched by `GetPageComponent`. |
+| <Link id="m-glyphs" /><code>{"private List<"}<Link to="/game-api/types/alta-items/glyph-positioning">{"Glyph.Positioning"}</Link>{"> glyphs"}</code> | Backing field for `Glyphs`. |
 
 </details>
 

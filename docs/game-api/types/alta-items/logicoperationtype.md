@@ -1,6 +1,6 @@
 ---
 title: "LogicOperationType"
-description: "enum LogicOperationType in Root.Township."
+description: "Logic gate kind: And, Or, Xor, Nand or Toggle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicOperationType
 
 An **enum** in `Root.Township`, `Alta.Logic`.
+
+Logic gate kind: `And`, `Or`, `Xor`, `Nand` or `Toggle`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 

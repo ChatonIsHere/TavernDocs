@@ -28,17 +28,17 @@ Player controller for the auto camera mode: a camera that orbits and frames near
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> |
-| <Link id="m-gameobjecttoenableonlocal" /><code>{"private GameObject gameObjectToEnableOnLocal"}</code> |
-| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> |
-| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
-| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> |
-| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> |
-| <Link id="m-topic" /><code>{"private Camera topic"}</code> |
-| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cameratilt" /><code>{"private float cameraTilt"}</code> | Backing field for `CameraTilt`, in degrees. |
+| <Link id="m-gameobjecttoenableonlocal" /><code>{"private GameObject gameObjectToEnableOnLocal"}</code> | Object turned on only for the local player. |
+| <Link id="m-heightbuffer" /><code>{"private float heightBuffer"}</code> | Backing field for `HeightBuffer`. |
+| <Link id="m-lerprotation" /><code>{"private float lerpRotation"}</code> | Backing field for `LerpRotation`. |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | Backing field for `LerpSpeed`. |
+| <Link id="m-maximumdistance" /><code>{"private float maximumDistance"}</code> | Backing field for `MaximumDistance`. Defaults to 30. |
+| <Link id="m-rotationspeed" /><code>{"private float rotationSpeed"}</code> | Backing field for `RotationSpeed`. |
+| <Link id="m-topic" /><code>{"private Camera topic"}</code> | Backing field for `Topic`, the camera this player drives. |
+| <Link id="m-widthbuffer" /><code>{"private float widthBuffer"}</code> | Backing field for `WidthBuffer`. |
 
 </details>
 
@@ -66,9 +66,9 @@ Player controller for the auto camera mode: a camera that orbits and frames near
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> | When linked to the local player, enables `gameObjectToEnableOnLocal`. |
 
 </details>
 

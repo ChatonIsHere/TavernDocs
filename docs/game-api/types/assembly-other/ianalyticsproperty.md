@@ -1,6 +1,6 @@
 ---
 title: "IAnalyticsProperty"
-description: "interface IAnalyticsProperty in Alta.Analytics.Runtime."
+description: "One named value on an analytics event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
+One named value on an analytics event.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`AnalyticsData`](/game-api/types/assembly-other/analyticsdata), [`AnalyticsProperty`](/game-api/types/assembly-other/analyticsproperty), [`IAnalyticsData`](/game-api/types/assembly-other/ianalyticsdata), [`IReadonlyAnalyticsData`](/game-api/types/assembly-other/ireadonlyanalyticsdata)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
-| <Link id="m-value" /><code>{"object Value { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | Property name. |
+| <Link id="m-value" /><code>{"object Value { get; }"}</code> | Property value. |
 
 ## Used in
 

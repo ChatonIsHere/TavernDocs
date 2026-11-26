@@ -1,6 +1,6 @@
 ---
 title: "PositionFromOriginHelper"
-description: "abstract class PositionFromOriginHelper in Root.Township."
+description: "Base component that works out a position from an origin point; subclasses decide how."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionFromOriginHelper
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base component that works out a position from an origin point; subclasses decide how.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `MonoBehaviour`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getposition" /><code>{"abstract Vector3 GetPosition(Vector3 origin)"}</code> | Returns the position for the given origin. |
 
 ## Used in
 

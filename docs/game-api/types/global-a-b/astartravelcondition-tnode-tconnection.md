@@ -1,6 +1,6 @@
 ---
 title: "AStarTravelCondition<TNode, TConnection>"
-description: "delegate AStarTravelCondition<TNode, TConnection> in Root.Township."
+description: "Filter passed to AStar.Pathfind: returns whether the path may use a given connection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AStarTravelCondition&lt;TNode, TConnection&gt;
 
 A **delegate** in `Root.Township`, no namespace.
+
+Filter passed to `AStar.Pathfind`: returns whether the path may use a given connection.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MulticastDelegate`

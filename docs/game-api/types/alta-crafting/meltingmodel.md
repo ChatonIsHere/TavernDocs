@@ -29,14 +29,14 @@ Base for items that can be melted down in a smelter (ingots, forged parts). The 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidmeshfilter" /><code>{"private MeshFilter androidMeshFilter"}</code> |
-| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> |
-| <Link id="m-ingotvalue" /><code>{"private float ingotValue"}</code> |
-| <Link id="m-istriggeringabilities" /><code>{"private bool istriggeringAbilities"}</code> |
-| <Link id="m-mainmeshfilter" /><code>{"private MeshFilter mainMeshFilter"}</code> |
-| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodelmodifier">{"MeltingModelModifier"}</Link>{"[] modifiers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidmeshfilter" /><code>{"private MeshFilter androidMeshFilter"}</code> | Mesh filter used for the Android version of the model. |
+| <Link id="m-heatpointcollection" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpointcollection">{"HeatPointCollection"}</Link>{" heatPointCollection"}</code> | Heat points checked by `IsAtMeltingPoint`. Found in children if not set. |
+| <Link id="m-ingotvalue" /><code>{"private float ingotValue"}</code> | Backing value for `IngotValue`: how much of an ingot melting this gives (0.3 by default). |
+| <Link id="m-istriggeringabilities" /><code>{"private bool istriggeringAbilities"}</code> | Backing field for `IsTriggeringAbilities`. |
+| <Link id="m-mainmeshfilter" /><code>{"private MeshFilter mainMeshFilter"}</code> | Mesh filter used for `MeshBounds` and `FilterTransform`. Found from a child `ForgedModel` if not set. |
+| <Link id="m-modifiers" /><code>{"private "}<Link to="/game-api/types/alta-crafting/meltingmodelmodifier">{"MeltingModelModifier"}</Link>{"[] modifiers"}</code> | Melting modifiers initialised on the server and terminated when the model goes. |
 
 </details>
 
@@ -72,10 +72,10 @@ Base for items that can be melted down in a smelter (ingots, forged parts). The 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | On the server (unless the entity is being destroyed), terminates the modifiers. Clears the filter events. |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Server: terminates the modifiers when the entity is destroyed by the scene. |
 
 </details>
 

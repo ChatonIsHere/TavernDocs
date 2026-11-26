@@ -1,6 +1,6 @@
 ---
 title: "CosmeticScrollManager"
-description: "class CosmeticScrollManager in Root.Township."
+description: "Client: a scroll list of the cosmetics the local player owns in one category."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CosmeticScrollManager
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+Client: a scroll list of the cosmetics the local player owns in one category. Fills itself from `CustomizationManager.Owned` once customization has loaded.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`ScrollManager`](/game-api/types/alta-customization/scrollmanager)
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, `Alta.Customization`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentcategory" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" currentCategory"}</code> |
-| <Link id="m-initialcategory" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" initialCategory"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentcategory" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" currentCategory"}</code> | The category currently listed. |
+| <Link id="m-initialcategory" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" initialCategory"}</code> | Category shown when the list first starts. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-updatecategory" /><code>{"void UpdateCategory("}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatecategory" /><code>{"void UpdateCategory("}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{" category)"}</code> | Switches the list to another cosmetic category and refills it with the owned options in it. Does nothing if it's already showing that category. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-updatecategories" /><code>{"private void UpdateCategories()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Shows `initialCategory`, or waits for `CustomizationManager.OnInitialized` if owned cosmetics aren't loaded yet. |
+| <Link id="m-updatecategories" /><code>{"private void UpdateCategories()"}</code> | Handler for `CustomizationManager.OnInitialized` that shows `initialCategory`. |
 
 </details>
 

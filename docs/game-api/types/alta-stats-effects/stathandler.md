@@ -1,6 +1,6 @@
 ---
 title: "StatHandler"
-description: "delegate StatHandler in Root.Township."
+description: "Callback that gets a Stat, used for stat change events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatHandler
 
 A **delegate** in `Root.Township`, `Alta.StatSystem`.
+
+Callback that gets a `Stat`, used for stat change events.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

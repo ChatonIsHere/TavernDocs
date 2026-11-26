@@ -1,6 +1,6 @@
 ---
 title: "FriendRequestedType"
-description: "enum FriendRequestedType in Alta.Api.DataTransferModels."
+description: "Outcome of a friend request: befriended, request sent, already friends or already requested."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FriendRequestedType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Outcome of a friend request: befriended, request sent, already friends or already requested.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

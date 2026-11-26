@@ -1,6 +1,6 @@
 ---
 title: "GenerationRule.Step"
-description: "enum GenerationRule.Step in Root.Township."
+description: "What a GenerationRule step does to each cell: set it to a tag, remove listed tags, or clear it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenerationRule.Step
 
 An **enum** in `Root.Township`, `Alta.PAGaC`.
+
+What a `GenerationRule` step does to each cell: set it to a tag, remove listed tags, or clear it.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`GenerationRule`](/game-api/types/alta-world-generation/generationrule)

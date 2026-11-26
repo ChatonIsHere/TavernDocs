@@ -28,21 +28,21 @@ How a book's cover is decorated: flair meshes for the spine, spine face and edge
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseEdgeFace"}</code> |
-| <Link id="m-basespine" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpine"}</code> |
-| <Link id="m-basespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpineFace"}</code> |
-| <Link id="m-bookmaterial" /><code>{"private Material bookMaterial"}</code> |
-| <Link id="m-emblem" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblem">{"FaceEmblem"}</Link>{" emblem"}</code> |
-| <Link id="m-emblemframe" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblemframe">{"FaceEmblemFrame"}</Link>{" emblemFrame"}</code> |
-| <Link id="m-flairmaterial" /><code>{"private Material flairMaterial"}</code> |
-| <Link id="m-framematerialmode" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings-framematerialmode">{"FlairSettings.FrameMaterialMode"}</Link>{" frameMaterialMode"}</code> |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
-| <Link id="m-letter" /><code>{"private char letter"}</code> |
-| <Link id="m-overrideedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" overrideEdgeFace"}</code> |
-| <Link id="m-overridespine" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" overrideSpine"}</code> |
-| <Link id="m-overridespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" overrideSpineFace"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseEdgeFace"}</code> | Flair set whose edge face flairs are used when no override is set. |
+| <Link id="m-basespine" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpine"}</code> | Flair set whose spine flairs are used when no override is set. |
+| <Link id="m-basespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/flairset">{"FlairSet"}</Link>{" baseSpineFace"}</code> | Flair set whose spine face flairs are used when no override is set. |
+| <Link id="m-bookmaterial" /><code>{"private Material bookMaterial"}</code> | Material for the book body. |
+| <Link id="m-emblem" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblem">{"FaceEmblem"}</Link>{" emblem"}</code> | Cover emblem, used when there is no glyph. |
+| <Link id="m-emblemframe" /><code>{"private "}<Link to="/game-api/types/alta-items/faceemblemframe">{"FaceEmblemFrame"}</Link>{" emblemFrame"}</code> | Frame shown around the cover emblem, glyph or letter. |
+| <Link id="m-flairmaterial" /><code>{"private Material flairMaterial"}</code> | Material for the flairs. |
+| <Link id="m-framematerialmode" /><code>{"private "}<Link to="/game-api/types/alta-items/flairsettings-framematerialmode">{"FlairSettings.FrameMaterialMode"}</Link>{" frameMaterialMode"}</code> | Which material the emblem frame gets: its own, the book's or the flair one. |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> | Cover glyph sprite. Takes priority over the emblem and letter. |
+| <Link id="m-letter" /><code>{"private char letter"}</code> | Letter shown on the cover when there is no glyph or emblem. |
+| <Link id="m-overrideedgeface" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" overrideEdgeFace"}</code> | Edge face flairs that replace the base set's, slot by slot. |
+| <Link id="m-overridespine" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" overrideSpine"}</code> | Spine flairs that replace the base set's, slot by slot. |
+| <Link id="m-overridespineface" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" overrideSpineFace"}</code> | Spine face flairs that replace the base set's, slot by slot. |
 
 </details>
 

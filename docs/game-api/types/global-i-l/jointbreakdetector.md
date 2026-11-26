@@ -1,6 +1,6 @@
 ---
 title: "JointBreakDetector"
-description: "class JointBreakDetector in Root.Township."
+description: "Raises an event when a Unity joint on this object breaks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JointBreakDetector
 
 A **class** in `Root.Township`, no namespace.
+
+Raises an event when a Unity joint on this object breaks. Add it next to the joint to listen from elsewhere.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MonoBehaviour`
@@ -23,18 +25,18 @@ A **class** in `Root.Township`, no namespace.
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-jointbreak" /><code>{"event "}<Link to="/game-api/types/global-i-l/jointbreakhandler">{"JointBreakHandler"}</Link>{" JointBreak"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-jointbreak" /><code>{"event "}<Link to="/game-api/types/global-i-l/jointbreakhandler">{"JointBreakHandler"}</Link>{" JointBreak"}</code> | Raised with this component and the break force when a joint breaks. |
 
 ## Methods
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float force)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onjointbreak" /><code>{"private void OnJointBreak(float force)"}</code> | Unity callback that raises `JointBreak`. |
 
 </details>
 

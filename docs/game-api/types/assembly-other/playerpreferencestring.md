@@ -1,6 +1,6 @@
 ---
 title: "PlayerPreferenceString"
-description: "class PlayerPreferenceString in Alta.IO."
+description: "A string player preference stored under a key through PlayerPreferences."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerPreferenceString
 
 A **class** in `Alta.IO`, no namespace.
+
+A string player preference stored under a key through `PlayerPreferences`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`PlayerPreferenceValue<string>`](/game-api/types/assembly-other/playerpreferencevalue-t)

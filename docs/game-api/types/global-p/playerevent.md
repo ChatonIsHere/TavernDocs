@@ -1,6 +1,6 @@
 ---
 title: "PlayerEvent"
-description: "class PlayerEvent in Root.Township."
+description: "Serializable AltaEvent with an IPlayer argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `AltaEvent` with an `IPlayer` argument. Runs inspector-wired listeners and C# `Invoked` handlers.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`AltaEvent<IPlayer, PlayerUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

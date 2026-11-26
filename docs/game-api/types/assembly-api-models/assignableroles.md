@@ -1,6 +1,6 @@
 ---
 title: "AssignableRoles"
-description: "enum AssignableRoles in Alta.Api.DataTransferModels."
+description: "Account roles the Alta API lets you assign."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AssignableRoles
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Account roles the Alta API lets you assign. Only `PreAlphaPlayer`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

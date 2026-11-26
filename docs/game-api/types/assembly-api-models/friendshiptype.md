@@ -1,6 +1,6 @@
 ---
 title: "FriendshipType"
-description: "enum FriendshipType in Alta.Api.DataTransferModels."
+description: "State of a friendship between two accounts in the Alta API: none, waiting for reply, requested or accepted."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FriendshipType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+State of a friendship between two accounts in the Alta API: none, waiting for reply, requested or accepted.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

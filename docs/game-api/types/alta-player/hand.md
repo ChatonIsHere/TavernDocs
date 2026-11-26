@@ -28,27 +28,27 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-armikcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" armIKControllers"}</code> |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> |
-| <Link id="m-controlleroffsetsettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleroffsetsettings">{"ControllerOffsetSettings"}</Link>{" controllerOffsetSettings"}</code> |
-| <Link id="m-gesturecontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturecontroller">{"HandGestureController"}</Link>{" gestureController"}</code> |
-| <Link id="m-ghosthandcontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/ghosthandcontroller">{"GhostHandController"}</Link>{" ghostHandController"}</code> |
-| <Link id="m-gripanimator" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" gripAnimator"}</code> |
-| <Link id="m-grippointsave" /><code>{"private TransformSave gripPointSave"}</code> |
-| <Link id="m-handanimator" /><code>{"private Animator handAnimator"}</code> |
-| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |
-| <Link id="m-handtargetsave" /><code>{"private TransformSave handTargetSave"}</code> |
-| <Link id="m-ikhandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" ikHandTarget"}</code> |
-| <Link id="m-isnotfixingikhandtopickup" /><code>{"private bool isNotFixingIKHandToPickup"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-masterhand" /><code>{"private "}<Link to="/game-api/types/alta-player/masterhand">{"MasterHand"}</Link>{" masterHand"}</code> |
-| <Link id="m-movedpickupinthisframe" /><code>{"private bool movedPickupInThisFrame"}</code> |
-| <Link id="m-pickupstatebeforephysics" /><code>{"private TransformSave pickupStateBeforePhysics"}</code> |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |
-| <Link id="m-savedcenterofmass" /><code>{"private Vector3 savedCenterOfMass"}</code> |
-| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeDetector"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-armikcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" armIKControllers"}</code> | The arm IK controllers for this hand. |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller"}</code> | Backing field for `Controller`, found in the parents on first use. |
+| <Link id="m-controlleroffsetsettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleroffsetsettings">{"ControllerOffsetSettings"}</Link>{" controllerOffsetSettings"}</code> | Per-platform controller offsets for each hand. |
+| <Link id="m-gesturecontroller" /><code>{"private "}<Link to="/game-api/types/global-e-h/handgesturecontroller">{"HandGestureController"}</Link>{" gestureController"}</code> | Backing field for `GestureController`. |
+| <Link id="m-ghosthandcontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/ghosthandcontroller">{"GhostHandController"}</Link>{" ghostHandController"}</code> | The ghost hand shown when the real hand is held back from the controller. |
+| <Link id="m-gripanimator" /><code>{"private "}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" gripAnimator"}</code> | The `HandGrip` that animates the fingers. |
+| <Link id="m-grippointsave" /><code>{"private TransformSave gripPointSave"}</code> | The grip point's original transform, saved on setup and restored by `Detach` and `MoveGripPoint`. |
+| <Link id="m-handanimator" /><code>{"private Animator handAnimator"}</code> | The hand's `Animator`. |
+| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> | Whether this is the left or right hand. |
+| <Link id="m-handtargetsave" /><code>{"private TransformSave handTargetSave"}</code> | The IK hand target's original transform, saved on setup and restored by `Detach`. |
+| <Link id="m-ikhandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" ikHandTarget"}</code> | The IK hand target, used by the controller to measure distance to the ghost hand. |
+| <Link id="m-isnotfixingikhandtopickup" /><code>{"private bool isNotFixingIKHandToPickup"}</code> | When set on the prefab, skips hooking the detach and centre of mass handlers whatever `HandSettings` says. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-masterhand" /><code>{"private "}<Link to="/game-api/types/alta-player/masterhand">{"MasterHand"}</Link>{" masterHand"}</code> | The `MasterHand` with the IK and master hand roots. |
+| <Link id="m-movedpickupinthisframe" /><code>{"private bool movedPickupInThisFrame"}</code> | Unused in this build. |
+| <Link id="m-pickupstatebeforephysics" /><code>{"private TransformSave pickupStateBeforePhysics"}</code> | Unused in this build. |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> | The platform the hand was set up for. In the editor, Meta Quest is treated as OpenXR. |
+| <Link id="m-savedcenterofmass" /><code>{"private Vector3 savedCenterOfMass"}</code> | The pickup's centre of mass before this hand moved it, restored on release. |
+| <Link id="m-shakedetector" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/handshakeoffdetector">{"HandShakeOffDetector"}</Link>{" shakeDetector"}</code> | Detects the hand shaking things off; exposed as `ShakeDetector`. |
 
 </details>
 
@@ -85,9 +85,9 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" Settings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-e-h/handsettings">{"HandSettings"}</Link>{" Settings { get; }"}</code> | The player's `HandSettings`, from `PlayerSettings`. |
 
 </details>
 
@@ -111,9 +111,9 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 | Member | What it is |
 | --- | --- |
 | <Link id="m-detach" /><code>{"private void Detach("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Puts the grip point and IK hand target back where they were saved at setup. |
-| <Link id="m-resetcenterofmass" /><code>{"private void ResetCenterOfMass("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |  |
-| <Link id="m-setupforplatform" /><code>{"private void SetUpForPlatform()"}</code> |  |
-| <Link id="m-updatecontrolleroffsets" /><code>{"private void UpdateControllerOffsets(SerializableTransform additionalOffset = null)"}</code> |  |
+| <Link id="m-resetcenterofmass" /><code>{"private void ResetCenterOfMass("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | When a hand lets go, restores the pickup's centre of mass (or removes a temporary setter), or averages the remaining hands' grab points. |
+| <Link id="m-setupforplatform" /><code>{"private void SetUpForPlatform()"}</code> | Works out the hand's platform (local player mode or the network player's) and applies its controller offsets. |
+| <Link id="m-updatecontrolleroffsets" /><code>{"private void UpdateControllerOffsets(SerializableTransform additionalOffset = null)"}</code> | Moves the grip animator to the platform's controller offset, plus any extra offset. Throws if no offset exists for the platform. |
 
 </details>
 

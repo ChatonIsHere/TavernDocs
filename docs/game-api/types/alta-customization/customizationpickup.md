@@ -29,10 +29,10 @@ Base for the grabbable items in the character customization area (cosmetics, bod
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hoverpickup" /><code>{"private "}<Link to="/game-api/types/global-e-h/hoverpickup">{"HoverPickup"}</Link>{" hoverPickup"}</code> | Backing field for `HoverPickup`, snapped back after a placement result. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`. |
 
 </details>
 
@@ -57,10 +57,10 @@ Base for the grabbable items in the character customization area (cosmetics, bod
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-delaydestroy" /><code>{"private void DelayDestroy()"}</code> |
-| <Link id="m-destroyoninteractend" /><code>{"private void DestroyOnInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-delaydestroy" /><code>{"private void DelayDestroy()"}</code> | Destroys the pickup if nobody picked it up again since release. |
+| <Link id="m-destroyoninteractend" /><code>{"private void DestroyOnInteractEnd("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | On release, waits a frame then calls `DelayDestroy`. |
 
 </details>
 

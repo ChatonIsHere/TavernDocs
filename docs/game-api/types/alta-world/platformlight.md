@@ -33,19 +33,19 @@ A light that registers with a platform lights controller. On PC it wraps a Unity
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidmesh" /><code>{"private Mesh androidMesh"}</code> |
-| <Link id="m-androidmeshcolor" /><code>{"private Color androidMeshColor"}</code> |
-| <Link id="m-color" /><code>{"private Color color"}</code> |
-| <Link id="m-fakelightrenderer" /><code>{"private Renderer fakeLightRenderer"}</code> |
-| <Link id="m-hasfakelight" /><code>{"private bool hasFakeLight"}</code> |
-| <Link id="m-intensity" /><code>{"private float intensity"}</code> |
-| <Link id="m-isnotimportant" /><code>{"private bool isNotImportant"}</code> |
-| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> |
-| <Link id="m-lightscontroller" /><code>{"private static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" lightsController"}</code> |
-| <Link id="m-range" /><code>{"private float range"}</code> |
-| <Link id="m-targetlight" /><code>{"private Light targetLight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidmesh" /><code>{"private Mesh androidMesh"}</code> | Mesh used for the fake light on Android. With none set, no fake light is made. |
+| <Link id="m-androidmeshcolor" /><code>{"private Color androidMeshColor"}</code> | Colour baked into the Android fake light mesh. |
+| <Link id="m-color" /><code>{"private Color color"}</code> | Serialized colour value. The `Color` property reads the `Light` component instead. |
+| <Link id="m-fakelightrenderer" /><code>{"private Renderer fakeLightRenderer"}</code> | Renderer of the Android fake light mesh, made in `Setup`. |
+| <Link id="m-hasfakelight" /><code>{"private bool hasFakeLight"}</code> | True on Android when a fake light mesh was made. |
+| <Link id="m-intensity" /><code>{"private float intensity"}</code> | Intensity used to build the Android fake light mesh. The `Intensity` property reads the `Light` instead. |
+| <Link id="m-isnotimportant" /><code>{"private bool isNotImportant"}</code> | Marks the light as low priority: deprioritised as a pixel light on PC and ignored for darkness on Android. |
+| <Link id="m-issetup" /><code>{"private bool isSetup"}</code> | Set once `Setup` has run, so it only runs once. |
+| <Link id="m-lightscontroller" /><code>{"private static "}<Link to="/game-api/types/alta-world/baselightscontroller">{"BaseLightsController"}</Link>{" lightsController"}</code> | Backing field for `LightsController`, made on first use (Android or PC version). |
+| <Link id="m-range" /><code>{"private float range"}</code> | Range used to scale the Android fake light mesh (twice the range). |
+| <Link id="m-targetlight" /><code>{"private Light targetLight"}</code> | Backing field for `TargetLight`, the `Light` component on this object. |
 
 </details>
 
@@ -74,13 +74,13 @@ A light that registers with a platform lights controller. On PC it wraps a Unity
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-setup" /><code>{"private void Setup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Runs `Setup` if the light hasn't been set up yet. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Removes the light from the lights controller and hides the Android fake light mesh. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Adds the light to the platform's lights controller. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build bake hook. Does nothing in this build apart from reading `AvoidBake`. |
+| <Link id="m-setup" /><code>{"private void Setup()"}</code> | On Android, builds a child "Fake Light" mesh renderer scaled to the range. On PC, caches the `Light` component. |
 
 </details>
 

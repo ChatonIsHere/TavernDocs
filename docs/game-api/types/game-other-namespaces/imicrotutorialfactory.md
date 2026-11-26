@@ -1,6 +1,6 @@
 ---
 title: "IMicroTutorialFactory"
-description: "interface IMicroTutorialFactory in Root.Township."
+description: "Makes micro tutorial instances."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `ATT.MicroTutorial`.
 
+Makes micro tutorial instances. Implemented by `MicroTutorialFactory` and used by the server controller.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Derived types** [`MicroTutorialFactory`](/game-api/types/game-other-namespaces/microtutorialfactory)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-createtutorial" /><code><Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createtutorial" /><code><Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" CreateTutorial("}<Link to="/game-api/types/game-other-namespaces/imicrotutorialsettings">{"IMicroTutorialSettings"}</Link>{" settings, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a tutorial for a player from its settings. |
 
 ## Used in
 

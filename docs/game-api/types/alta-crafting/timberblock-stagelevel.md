@@ -1,6 +1,6 @@
 ---
 title: "TimberBlock.StageLevel"
-description: "enum TimberBlock.StageLevel in Root.Township."
+description: "The three carving stages of a timber block in order: outer, inner and core."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimberBlock.StageLevel
 
 An **enum** in `Root.Township`, `Alta.Carpentry`.
+
+The three carving stages of a timber block in order: outer, inner and core. Finishing one stage starts the next.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`TimberBlock`](/game-api/types/alta-crafting/timberblock)

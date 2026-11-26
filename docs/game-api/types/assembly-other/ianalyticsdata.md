@@ -1,6 +1,6 @@
 ---
 title: "IAnalyticsData"
-description: "interface IAnalyticsData in Alta.Analytics.Runtime."
+description: "A writable set of analytics properties for one event, which can also be tagged with a user."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
+A writable set of analytics properties for one event, which can also be tagged with a user.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IAnalyticsPropertyWriter`](/game-api/types/assembly-other/ianalyticspropertywriter), [`IReadonlyAnalyticsData`](/game-api/types/assembly-other/ireadonlyanalyticsdata), `IReadOnlyCollection<IAnalyticsProperty>`, `IEnumerable<IAnalyticsProperty>`, `IEnumerable`
 - **Derived types** [`AnalyticsData`](/game-api/types/assembly-other/analyticsdata)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setuserid" /><code>{"void SetUserId(int userId)"}</code> | Sets the Alta user id the event belongs to. |
 
 ## Used in
 

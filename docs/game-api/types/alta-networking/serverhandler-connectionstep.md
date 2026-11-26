@@ -1,6 +1,6 @@
 ---
 title: "ServerHandler.ConnectionStep"
-description: "delegate ServerHandler.ConnectionStep in Root.Township."
+description: "An async step run for each connecting player, added with ServerHandler.AddConnectionStep."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerHandler.ConnectionStep
 
 A **delegate** in `Root.Township`, `Alta.Networking.Servers`.
+
+An async step run for each connecting player, added with `ServerHandler.AddConnectionStep`. Gets the connection and a progress text callback.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`ServerHandler`](/game-api/types/alta-networking/serverhandler)

@@ -27,14 +27,14 @@ A serializable chain that turns an input object (usually a `Distribution`) into 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cached" /><code>{"private Object cached"}</code> |
-| <Link id="m-cachedepth" /><code>{"private int cacheDepth"}</code> |
-| <Link id="m-input" /><code>{"private Object input"}</code> |
-| <Link id="m-isrun" /><code>{"private bool isRun"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-pipeline" /><code>{"private int[] pipeline"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cached" /><code>{"private Object cached"}</code> | Result after the first `cacheDepth` steps, kept between calls until `Reset`. |
+| <Link id="m-cachedepth" /><code>{"private int cacheDepth"}</code> | How many pipeline steps to run once and cache; later calls to `Get` start from the cached result. |
+| <Link id="m-input" /><code>{"private Object input"}</code> | The starting object, usually a distribution. |
+| <Link id="m-isrun" /><code>{"private bool isRun"}</code> | True once `Get` has run and the cache is filled. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-pipeline" /><code>{"private int[] pipeline"}</code> | Indexes into `Elements`: the steps run on the input, in order. |
 
 </details>
 

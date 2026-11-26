@@ -1,6 +1,6 @@
 ---
 title: "InteractionType"
-description: "enum InteractionType in Root.Township."
+description: "A kind of physical control interaction: none, knob or slider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractionType
 
 An **enum** in `Root.Township`, no namespace.
+
+A kind of physical control interaction: none, knob or slider.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

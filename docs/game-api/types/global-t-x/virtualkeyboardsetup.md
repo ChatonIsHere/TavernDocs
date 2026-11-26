@@ -30,10 +30,10 @@ Layout asset for the in-game virtual keyboard: its keys and whether each row is 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-keysinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo"}</code> |
-| <Link id="m-rowisordered" /><code>{"private bool[] rowIsOrdered"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-keysinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo"}</code> | Backing field for `KeysInfo`, the keys of this layout. |
+| <Link id="m-rowisordered" /><code>{"private bool[] rowIsOrdered"}</code> | Backing field for `RowIsOrdered`, one flag per keyboard row. `TouchScreenKeyboard` sizes its row data from it. |
 
 </details>
 

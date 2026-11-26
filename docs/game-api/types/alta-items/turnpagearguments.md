@@ -1,6 +1,6 @@
 ---
 title: "TurnPageArguments"
-description: "class TurnPageArguments in Root.Township."
+description: "Message payload a Book sends to chunks when the server turns a page."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TurnPageArguments
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Message payload a `Book` sends to chunks when the server turns a page.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-direction" /><code>{"int direction"}</code> |
-| <Link id="m-isskipping" /><code>{"bool isSkipping"}</code> |
-| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-direction" /><code>{"int direction"}</code> | -1 to turn left, 1 to turn right. |
+| <Link id="m-isskipping" /><code>{"bool isSkipping"}</code> | Whether the turn skips the animation. |
+| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> | Which spawned page turns. |
 
 ## Used in
 

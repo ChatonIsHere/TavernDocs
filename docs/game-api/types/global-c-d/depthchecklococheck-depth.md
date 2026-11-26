@@ -1,6 +1,6 @@
 ---
 title: "DepthCheckLocoCheck.Depth"
-description: "enum DepthCheckLocoCheck.Depth in Root.Township."
+description: "Private flags for how deep the player is in a volume checked by DepthCheckLocoCheck: out, shallow or deep."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DepthCheckLocoCheck.Depth
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private flags for how deep the player is in a volume checked by `DepthCheckLocoCheck`: out, shallow or deep.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`DepthCheckLocoCheck`](/game-api/types/global-c-d/depthchecklococheck)

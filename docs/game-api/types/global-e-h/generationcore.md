@@ -28,13 +28,13 @@ A procedural set piece (an encounter, a camp) placed by forest or cave generatio
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private Logger logger"}</code> |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |
-| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"[] parts"}</code> |
-| <Link id="m-workingparts" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"> workingParts"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private Logger logger"}</code> | NLog logger, used to report generation errors. |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> | Backing field for `MaximumRadius`, the largest allowed generation radius. |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> | Backing field for `MinimumRadius`, the smallest allowed generation radius. |
+| <Link id="m-parts" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"[] parts"}</code> | Generatable parts run by `Generate`, set in the prefab. |
+| <Link id="m-workingparts" /><code>{"private List<"}<Link to="/game-api/types/global-e-h/generatablepart">{"GeneratablePart"}</Link>{"> workingParts"}</code> | Parts for the current generation: a copy of `parts` plus any added with `AddPart`. |
 
 </details>
 
@@ -63,13 +63,13 @@ A procedural set piece (an encounter, a camp) placed by forest or cave generatio
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-evaluate" /><code>{"private float Alta.Caves.IDistributionValue.Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
-| <Link id="m-testgenerate" /><code>{"private void TestGenerate()"}</code> |
-| <Link id="m-testnodegenerate" /><code>{"private void TestNodeGenerate()"}</code> |
-| <Link id="m-testpathgenerate" /><code>{"private void TestPathGenerate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-evaluate" /><code>{"private float Alta.Caves.IDistributionValue.Evaluate("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" set)"}</code> | Distribution weight: 1 when the set's special biome radius is inside the min and max radius, else 0. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor: draws the minimum and maximum radius circles. |
+| <Link id="m-testgenerate" /><code>{"private void TestGenerate()"}</code> | Editor context menu "Test": generates with default spawn data and a random radius. |
+| <Link id="m-testnodegenerate" /><code>{"private void TestNodeGenerate()"}</code> | Editor context menu "Test Node": generates as if on the nearest forest node in this chunk. |
+| <Link id="m-testpathgenerate" /><code>{"private void TestPathGenerate()"}</code> | Editor context menu "Test Path": generates as if on the nearest forest edge in this chunk. |
 
 </details>
 

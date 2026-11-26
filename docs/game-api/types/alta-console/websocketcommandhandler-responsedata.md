@@ -36,9 +36,9 @@ One message sent to a remote console client over the WebSocket: a system message
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-serialized" /><code>{"private string serialized"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialized" /><code>{"private string serialized"}</code> | Cached JSON of this response, built on the first `GetSerialized` call and reused after. |
 
 </details>
 

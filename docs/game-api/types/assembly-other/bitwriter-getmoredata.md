@@ -1,6 +1,6 @@
 ---
 title: "BitWriter.GetMoreData"
-description: "delegate BitWriter.GetMoreData in Alta.Serialization.Runtime."
+description: "Callback a BitWriter calls when its buffer is full to get a bigger one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BitWriter.GetMoreData
 
 A **delegate** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
+
+Callback a `BitWriter` calls when its buffer is full to get a bigger one. Called with null at start to get the first buffer. Without it, a full buffer logs a fatal error and corrupts the write.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`BitWriter`](/game-api/types/assembly-other/bitwriter)

@@ -29,18 +29,18 @@ Liquid surface visual for cooking containers. Moves the surface with fullness, k
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-boilingparticles" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/boilingparticles">{"BoilingParticles"}</Link>{" boilingParticles"}</code> |
-| <Link id="m-boilingparticlesemissionmultiplier" /><code>{"private AnimationCurve boilingParticlesEmissionMultiplier"}</code> |
-| <Link id="m-boilingparticlesparent" /><code>{"private Transform boilingParticlesParent"}</code> |
-| <Link id="m-boilingparticlesstages" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingliquidvisual-boilingparticlesstagesetting">{"CookingLiquidVisual.BoilingParticlesStageSetting"}</Link>{"[] boilingParticlesStages"}</code> |
-| <Link id="m-container" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> |
-| <Link id="m-isusingboilingparticles" /><code>{"private bool isUsingBoilingParticles"}</code> |
-| <Link id="m-maximumplaney" /><code>{"private float maximumPlaneY"}</code> |
-| <Link id="m-minimumplaney" /><code>{"private float minimumPlaneY"}</code> |
-| <Link id="m-surface" /><code>{"private Transform surface"}</code> |
-| <Link id="m-topofliquidnotrotating" /><code>{"private Transform topOfLiquidNotRotating"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boilingparticles" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/boilingparticles">{"BoilingParticles"}</Link>{" boilingParticles"}</code> | Pooled boiling particles in use, or null. |
+| <Link id="m-boilingparticlesemissionmultiplier" /><code>{"private AnimationCurve boilingParticlesEmissionMultiplier"}</code> | Curve from liquid temperature to boiling particle emission. |
+| <Link id="m-boilingparticlesparent" /><code>{"private Transform boilingParticlesParent"}</code> | Transform the boiling particles are spawned under. |
+| <Link id="m-boilingparticlesstages" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookingliquidvisual-boilingparticlesstagesetting">{"CookingLiquidVisual.BoilingParticlesStageSetting"}</Link>{"[] boilingParticlesStages"}</code> | Per-stage lifetime and height offset settings passed to the boiling particles. |
+| <Link id="m-container" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" container"}</code> | The liquid container in the parent, found in `Awake`. |
+| <Link id="m-isusingboilingparticles" /><code>{"private bool isUsingBoilingParticles"}</code> | Whether this visual shows boiling particles at all. |
+| <Link id="m-maximumplaney" /><code>{"private float maximumPlaneY"}</code> | Local Y of the surface when full. |
+| <Link id="m-minimumplaney" /><code>{"private float minimumPlaneY"}</code> | Local Y of the surface when empty. |
+| <Link id="m-surface" /><code>{"private Transform surface"}</code> | Backing field for `Surface`; moved up and down with fullness and turned to face visual up. |
+| <Link id="m-topofliquidnotrotating" /><code>{"private Transform topOfLiquidNotRotating"}</code> | Optional transform kept at the surface height but not rotated. |
 
 </details>
 
@@ -69,10 +69,10 @@ Liquid surface visual for cooking containers. Moves the surface with fullness, k
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-attemptreleaseboilingparticles" /><code>{"private void AttemptReleaseBoilingParticles()"}</code> |
-| <Link id="m-checkcreateordeleteboilingparticles" /><code>{"private void CheckCreateOrDeleteBoilingParticles(float valueToCheck)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attemptreleaseboilingparticles" /><code>{"private void AttemptReleaseBoilingParticles()"}</code> | Returns the boiling particles to the pool, if any are out. |
+| <Link id="m-checkcreateordeleteboilingparticles" /><code>{"private void CheckCreateOrDeleteBoilingParticles(float valueToCheck)"}</code> | Gets boiling particles from the pool when emission is above zero and there's liquid, otherwise releases them. |
 
 </details>
 

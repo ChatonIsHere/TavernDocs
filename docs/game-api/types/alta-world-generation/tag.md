@@ -30,9 +30,9 @@ A tag asset for the PAGaC construction system (under `PAGaC/Construction/Tags`),
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-displaycolor" /><code>{"private Color displayColor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displaycolor" /><code>{"private Color displayColor"}</code> | Colour shown for the tag; set to a random colour in the editor while it's black. |
 
 </details>
 

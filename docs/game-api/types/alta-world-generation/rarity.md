@@ -30,11 +30,11 @@ A loot rarity asset with a weighting. All rarities load from Resources/Items/Rar
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allrarities" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"[] allRarities"}</code> |
-| <Link id="m-originweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] originWeightings"}</code> |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allrarities" /><code>{"private static "}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"[] allRarities"}</code> | Every rarity in `Resources/Items/Rarities`, loaded on the first `GetRandom` call. |
+| <Link id="m-originweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/originsinglevalue">{"OriginSingleValue"}</Link>{"[] originWeightings"}</code> | Weight of each origin for loot of this rarity. Exposed as `OriginWeightings`. |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> | How likely this rarity is picked relative to others. Exposed as `Weighting`. |
 
 </details>
 

@@ -31,16 +31,16 @@ Wrapper around the Vivox voice and text chat client: login, audio devices, chann
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-account" /><code>{"private AccountId account"}</code> |
-| <Link id="m-channels" /><code>{"private readonly Dictionary<string, "}<Link to="/game-api/types/alta-networking/vivoxsession">{"VivoxSession"}</Link>{"> channels"}</code> |
-| <Link id="m-client" /><code>{"private Client client"}</code> |
-| <Link id="m-isintendedmute" /><code>{"private bool isIntendedMute"}</code> |
-| <Link id="m-ismutedbymods" /><code>{"private bool isMutedByMods"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-positionalchat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxvoiceupdatable">{"IVivoxVoiceUpdatable"}</Link>{" positionalChat"}</code> |
-| <Link id="m-stringbuilder" /><code>{"private static StringBuilder stringBuilder"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-account" /><code>{"private AccountId account"}</code> | The Vivox account id for the logged-in user, built from the user id and display name. Null when logged out. |
+| <Link id="m-channels" /><code>{"private readonly Dictionary<string, "}<Link to="/game-api/types/alta-networking/vivoxsession">{"VivoxSession"}</Link>{"> channels"}</code> | Joined channel sessions, keyed by channel name. |
+| <Link id="m-client" /><code>{"private Client client"}</code> | The underlying Vivox SDK client, created in the constructor and cleared by `Terminate`. |
+| <Link id="m-isintendedmute" /><code>{"private bool isIntendedMute"}</code> | Whether the player wants the mic muted, flipped by `ToggleMute`. Restored when a mod mute is lifted. |
+| <Link id="m-ismutedbymods" /><code>{"private bool isMutedByMods"}</code> | Whether moderators have muted this player's mic, set by `SetModsMute`. While true, `ToggleMute` does not unmute. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-positionalchat" /><code>{"private "}<Link to="/game-api/types/alta-networking/ivivoxvoiceupdatable">{"IVivoxVoiceUpdatable"}</Link>{" positionalChat"}</code> | The voice session of the last joined voice-enabled channel; its 3D position is updated each `Update`. |
+| <Link id="m-stringbuilder" /><code>{"private static StringBuilder stringBuilder"}</code> | Shared builder used for login and device log messages. |
 
 </details>
 
@@ -87,12 +87,12 @@ Wrapper around the Vivox voice and text chat client: login, audio devices, chann
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-handlesessionstatechanged" /><code>{"private void HandleSessionStateChanged()"}</code> |
-| <Link id="m-logdeviceinfo" /><code>{"private void LogDeviceInfo()"}</code> |
-| <Link id="m-onplayerpaired" /><code>{"private void OnPlayerPaired(IParticipant player)"}</code> |
-| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handlesessionstatechanged" /><code>{"private void HandleSessionStateChanged()"}</code> | Runs when the Vivox login state changes; on logged out it calls `Logout` and logs back in through `VivoxManager` if the game login is still active. |
+| <Link id="m-logdeviceinfo" /><code>{"private void LogDeviceInfo()"}</code> | Logs the available, active and effective audio input and output devices. Called after login. |
+| <Link id="m-onplayerpaired" /><code>{"private void OnPlayerPaired(IParticipant player)"}</code> | Passes a session's `PlayerPaired` event on as `PlayerJoinedChannel`. |
+| <Link id="m-sessionpropertychanged" /><code>{"private void SessionPropertyChanged(object sender, PropertyChangedEventArgs e)"}</code> | Handler for the login session's `PropertyChanged`; logs the change and calls `HandleSessionStateChanged` when `State` changes. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "IntUnityEvent"
-description: "class IntUnityEvent in Root.Township."
+description: "A serializable UnityEvent with an int argument, for wiring int callbacks in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IntUnityEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable `UnityEvent` with an int argument, for wiring int callbacks in the inspector.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `UnityEvent<int>`

@@ -1,6 +1,6 @@
 ---
 title: "ValidationResultModel"
-description: "class ValidationResultModel in Alta.Api.DataTransferModels."
+description: "List of field validation errors, attached to an ApiError for a bad request."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ValidationResultModel
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+List of field validation errors, attached to an `ApiError` for a bad request.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -23,15 +25,15 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-errors" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/validationerror">{"ValidationError"}</Link>{"> Errors { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-errors" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/validationerror">{"ValidationError"}</Link>{"> Errors { get; set; }"}</code> | The validation errors. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The errors, one per line. |
 
 ## Used in
 

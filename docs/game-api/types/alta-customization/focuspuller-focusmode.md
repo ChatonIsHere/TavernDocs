@@ -1,6 +1,6 @@
 ---
 title: "FocusPuller.FocusMode"
-description: "enum FocusPuller.FocusMode in Root.Township."
+description: "Hand camera focus mode: Perfect, Auto (focuses when a photo is taken or the screen is free) or Manual (set by the player turning the control)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FocusPuller.FocusMode
 
 An **enum** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+Hand camera focus mode: `Perfect`, `Auto` (focuses when a photo is taken or the screen is free) or `Manual` (set by the player turning the control).
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Nested in** [`FocusPuller`](/game-api/types/alta-customization/focuspuller)

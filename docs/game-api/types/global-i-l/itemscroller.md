@@ -28,28 +28,28 @@ Client UI: a row of `ScrollElement`s that slides along to show a window of a lon
 <details>
 <summary>20 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canscrollleftchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollLeftChanged"}</code> |
-| <Link id="m-canscrollrightchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollRightChanged"}</code> |
-| <Link id="m-count" /><code>{"private int count"}</code> |
-| <Link id="m-finaltargetindex" /><code>{"private int finalTargetIndex"}</code> |
-| <Link id="m-index" /><code>{"private int index"}</code> |
-| <Link id="m-instances" /><code>{"private List<"}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{"> instances"}</code> |
-| <Link id="m-interval" /><code>{"private float interval"}</code> |
-| <Link id="m-isscrollingleft" /><code>{"private bool isScrollingLeft"}</code> |
-| <Link id="m-isscrollingright" /><code>{"private bool isScrollingRight"}</code> |
-| <Link id="m-isshowingbydefault" /><code>{"private bool isShowingByDefault"}</code> |
-| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{" prefab"}</code> |
-| <Link id="m-reshow" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" reshow"}</code> |
-| <Link id="m-rotationinterval" /><code>{"private float rotationInterval"}</code> |
-| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> |
-| <Link id="m-scrollexecuted" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" scrollExecuted"}</code> |
-| <Link id="m-scrollprogress" /><code>{"private float scrollProgress"}</code> |
-| <Link id="m-stepinterval" /><code>{"private float stepInterval"}</code> |
-| <Link id="m-stepsize" /><code>{"private int stepSize"}</code> |
-| <Link id="m-targetindex" /><code>{"private int targetIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canscrollleftchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollLeftChanged"}</code> | Event raised with `CanScrollLeft` whenever it may have changed. |
+| <Link id="m-canscrollrightchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" canScrollRightChanged"}</code> | Event raised with `CanScrollRight` whenever it may have changed. |
+| <Link id="m-count" /><code>{"private int count"}</code> | How many elements are visible at once. |
+| <Link id="m-finaltargetindex" /><code>{"private int finalTargetIndex"}</code> | The index the scroller is heading to, possibly several steps away. |
+| <Link id="m-index" /><code>{"private int index"}</code> | First visible index at the start of the current step. |
+| <Link id="m-instances" /><code>{"private List<"}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{"> instances"}</code> | The element instances, reused as a ring. |
+| <Link id="m-interval" /><code>{"private float interval"}</code> | Spacing between elements along the row. |
+| <Link id="m-isscrollingleft" /><code>{"private bool isScrollingLeft"}</code> | Backing field for `IsScrollingLeft` (scroll held down). |
+| <Link id="m-isscrollingright" /><code>{"private bool isScrollingRight"}</code> | Backing field for `IsScrollingRight` (scroll held down). |
+| <Link id="m-isshowingbydefault" /><code>{"private bool isShowingByDefault"}</code> | Whether the elements show on `Awake` without waiting for `ResetAndRefresh`. |
+| <Link id="m-maxindex" /><code>{"private int maxIndex"}</code> | Number of items, or -1 for no limit. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-s/scrollelement">{"ScrollElement"}</Link>{" prefab"}</code> | The `ScrollElement` prefab instantiated for each slot. |
+| <Link id="m-reshow" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" reshow"}</code> | Timer that shows the elements again 0.1 seconds after `ResetAndRefresh`. |
+| <Link id="m-rotationinterval" /><code>{"private float rotationInterval"}</code> | Angle in degrees between neighbouring elements, around the up axis. |
+| <Link id="m-rotationoffset" /><code>{"private float rotationOffset"}</code> | Forward offset applied after the rotation, so elements can sit on an arc. |
+| <Link id="m-scrollexecuted" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" scrollExecuted"}</code> | Event raised when `ScrollDirection` accepts a step. |
+| <Link id="m-scrollprogress" /><code>{"private float scrollProgress"}</code> | Progress through the current step, 0 to 1. |
+| <Link id="m-stepinterval" /><code>{"private float stepInterval"}</code> | Seconds per scroll step. |
+| <Link id="m-stepsize" /><code>{"private int stepSize"}</code> | How many items one `ScrollDirection` call moves. |
+| <Link id="m-targetindex" /><code>{"private int targetIndex"}</code> | First visible index at the end of the current step. |
 
 </details>
 
@@ -75,16 +75,16 @@ Client UI: a row of `ScrollElement`s that slides along to show a window of a lon
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-positioninstances" /><code>{"private void PositionInstances()"}</code> |
-| <Link id="m-safemod" /><code>{"private int SafeMod(int value, int mod)"}</code> |
-| <Link id="m-startscrollleft" /><code>{"private void StartScrollLeft()"}</code> |
-| <Link id="m-startscrollright" /><code>{"private void StartScrollRight()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates `count` + 2 element instances, positions them, shows them if `isShowingByDefault`, and fires the can-scroll events. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Starts the next scroll step when the component is enabled with a scroll pending. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | In play mode, adds or destroys instances to match a changed `count`. |
+| <Link id="m-positioninstances" /><code>{"private void PositionInstances()"}</code> | Places the visible instances along the row, with spacing, rotation and offset, based on scroll progress. |
+| <Link id="m-safemod" /><code>{"private int SafeMod(int value, int mod)"}</code> | Modulo that never returns a negative number, used to map item indices onto the instance ring. |
+| <Link id="m-startscrollleft" /><code>{"private void StartScrollLeft()"}</code> | Begins one step towards higher indices: hides the element leaving and shows the one coming in. |
+| <Link id="m-startscrollright" /><code>{"private void StartScrollRight()"}</code> | Begins one step towards lower indices: hides the element leaving and shows the one coming in. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Advances the step; at its end, starts the next step or disables the component once the target is reached. |
 
 </details>
 

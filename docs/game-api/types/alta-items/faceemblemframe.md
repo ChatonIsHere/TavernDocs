@@ -1,6 +1,6 @@
 ---
 title: "FaceEmblemFrame"
-description: "class FaceEmblemFrame in Root.Township."
+description: "A book flair asset for the frame around a book's cover emblem, glyph or letter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceEmblemFrame
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the frame around a book's cover emblem, glyph or letter.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

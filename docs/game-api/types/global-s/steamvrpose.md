@@ -27,9 +27,9 @@ Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` ke
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-index" /><code>{"private int index"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index" /><code>{"private int index"}</code> | `Index` as an int, used to read this device from the SteamVR pose array. |
 
 </details>
 
@@ -63,9 +63,9 @@ Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` ke
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onconnected" /><code>{"private void OnConnected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onconnected" /><code>{"private void OnConnected()"}</code> | Marks the device connected and raises `Connected` the first time. Private and not called anywhere in the server build. |
 
 </details>
 

@@ -35,15 +35,15 @@ Bake-time tool on static prefabs that merges LOD groups, joins meshes by materia
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-additionalcheckpoints" /><code>{"private Vector3[] additionalCheckPoints"}</code> |
-| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> |
-| <Link id="m-impostorkey" /><code>{"private const string ImpostorKey"}</code> |
-| <Link id="m-isforcingjoinedmeshcollidersconvex" /><code>{"private bool isForcingJoinedMeshCollidersConvex"}</code> |
-| <Link id="m-isignoringautomatedmarking" /><code>{"private bool isIgnoringAutomatedMarking"}</code> |
-| <Link id="m-joinedlodvalues" /><code>{"private float[] joinedLODValues"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-additionalcheckpoints" /><code>{"private Vector3[] additionalCheckPoints"}</code> | Extra local-space points used as view points when finding hidden triangles. |
+| <Link id="m-btnbake" /><code>{"private bool btnBake"}</code> | Inspector button that runs a preview bake. |
+| <Link id="m-impostorkey" /><code>{"private const string ImpostorKey"}</code> | Shader name part (`Impostor`) used to skip impostor renderers. |
+| <Link id="m-isforcingjoinedmeshcollidersconvex" /><code>{"private bool isForcingJoinedMeshCollidersConvex"}</code> | Makes the joined mesh colliders convex. |
+| <Link id="m-isignoringautomatedmarking" /><code>{"private bool isIgnoringAutomatedMarking"}</code> | Runs collider joining and terrain occlusion even during automated static batching, and joins layers with a single collider. |
+| <Link id="m-joinedlodvalues" /><code>{"private float[] joinedLODValues"}</code> | Screen transition heights applied to the joined LOD group's levels. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -80,17 +80,17 @@ Bake-time tool on static prefabs that merges LOD groups, joins meshes by materia
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-additionalcheckpoints-2" /><code>{"private IEnumerable<Vector3> AdditionalCheckPoints() (iterator)"}</code> |
-| <Link id="m-anychecks" /><code>{"private static bool AnyChecks(bool[] checks, List<int> triangles, int i)"}</code> |
-| <Link id="m-getlodlevel" /><code>{"private static int GetLODLevel(Renderer renderer, LOD[] lods)"}</code> |
-| <Link id="m-getmesh" /><code>{"private static void GetMesh(List<Vector3> vertices, List<int> triangles, ref bool needsNormal, List<Vector3> normals, ref bool needsTangents, List<Vector4> tangents, ref bool needsUV, List<Vector2> uv, ref bool needsUV2, List<Vector4> uv2, ref bool needsUV3, List<Vector4> uv3, ref bool needsUV4, List<Vector4> uv4, ref bool needsColor, List<Color> colors, "}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{" materialLOD, List<Mesh> meshes, bool hasLOD, int finalLayer, List<GameObject> result, Transform baseTransform, List<Renderer> joinedRenderers)"}</code> |
-| <Link id="m-getnewparent" /><code>{"private static "}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{" GetNewParent(int layer, List<"}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{"> spaces, Quaternion rotation, Transform parent)"}</code> |
-| <Link id="m-isvalidateterrain" /><code>{"private bool IsValidateTerrain(Object terrain)"}</code> |
-| <Link id="m-joinmeshcolliders" /><code>{"private void JoinMeshColliders()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-trianglevalidation" /><code>{"private static bool TriangleValidation(Vector3 a, Vector3 b, Vector3 c, Matrix4x4 localToWorld, Terrain terrain)"}</code> |
-| <Link id="m-validation" /><code>{"private static bool Validation(Vector3 worldVertex, Matrix4x4 localToWorld, Terrain terrain)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-additionalcheckpoints-2" /><code>{"private IEnumerable<Vector3> AdditionalCheckPoints() (iterator)"}</code> | Yields `additionalCheckPoints` in world space, as extra view points for the triangle occlusion check. |
+| <Link id="m-anychecks" /><code>{"private static bool AnyChecks(bool[] checks, List<int> triangles, int i)"}</code> | True when all three vertices of a triangle passed the check (the name says any, the code needs all). |
+| <Link id="m-getlodlevel" /><code>{"private static int GetLODLevel(Renderer renderer, LOD[] lods)"}</code> | Returns which LOD level of the group a renderer is in, or -1. |
+| <Link id="m-getmesh" /><code>{"private static void GetMesh(List<Vector3> vertices, List<int> triangles, ref bool needsNormal, List<Vector3> normals, ref bool needsTangents, List<Vector4> tangents, ref bool needsUV, List<Vector2> uv, ref bool needsUV2, List<Vector4> uv2, ref bool needsUV3, List<Vector4> uv3, ref bool needsUV4, List<Vector4> uv4, ref bool needsColor, List<Color> colors, "}<Link to="/game-api/types/global-m-o/materiallod">{"MaterialLOD"}</Link>{" materialLOD, List<Mesh> meshes, bool hasLOD, int finalLayer, List<GameObject> result, Transform baseTransform, List<Renderer> joinedRenderers)"}</code> | Builds a mesh from the gathered vertex lists, clears them, and adds a renderer object for it under the base transform. |
+| <Link id="m-getnewparent" /><code>{"private static "}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{" GetNewParent(int layer, List<"}<Link to="/game-api/types/global-s/staticobjectcombiner-space">{"StaticObjectCombiner.Space"}</Link>{"> spaces, Quaternion rotation, Transform parent)"}</code> | Creates a new collider parent `Space` for a layer and rotation and adds it to the list. |
+| <Link id="m-isvalidateterrain" /><code>{"private bool IsValidateTerrain(Object terrain)"}</code> | True when a terrain exists, terrain baking isn't locked and `TerrainOccludesTriangles` is set. |
+| <Link id="m-joinmeshcolliders" /><code>{"private void JoinMeshColliders()"}</code> | Merges child mesh colliders into one collision mesh per layer, strips occluded triangles and destroys the originals. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Empty. |
+| <Link id="m-trianglevalidation" /><code>{"private static bool TriangleValidation(Vector3 a, Vector3 b, Vector3 c, Matrix4x4 localToWorld, Terrain terrain)"}</code> | True when any edge of the triangle crosses the terrain (temporarily moved to layer 3 for the linecast). |
+| <Link id="m-validation" /><code>{"private static bool Validation(Vector3 worldVertex, Matrix4x4 localToWorld, Terrain terrain)"}</code> | True when a vertex is above the terrain height at its position. |
 
 </details>

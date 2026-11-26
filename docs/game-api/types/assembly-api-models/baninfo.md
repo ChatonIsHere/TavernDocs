@@ -1,6 +1,6 @@
 ---
 title: "BanInfo"
-description: "class BanInfo in Alta.Api.DataTransferModels."
+description: "API model for a ban on a user, IP address or device, with its reason, scope and end time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+API model for a ban on a user, IP address or device, with its reason, scope and end time.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,18 +24,18 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
-| <Link id="m-createdby" /><code>{"int CreatedBy { get; set; }"}</code> |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
-| <Link id="m-endtime" /><code>{"DateTime EndTime { get; set; }"}</code> |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
-| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |
-| <Link id="m-servers" /><code>{"List<int> Servers { get; set; }"}</code> |
-| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bantype" /><code><Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" { get; set; }"}</code> | What kind of ban this is (for example server or global). |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the ban was made. |
+| <Link id="m-createdby" /><code>{"int CreatedBy { get; set; }"}</code> | User id of whoever made the ban. |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | Banned device id, if the ban is by device. |
+| <Link id="m-endtime" /><code>{"DateTime EndTime { get; set; }"}</code> | When the ban runs out. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The ban's id. |
+| <Link id="m-ipaddress" /><code>{"IPAddress IpAddress { get; set; }"}</code> | Banned IP address, if the ban is by IP. |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> | Reason given for the ban. |
+| <Link id="m-servers" /><code>{"List<int> Servers { get; set; }"}</code> | Ids of the servers the ban applies to. |
+| <Link id="m-useridentifier" /><code>{"int? UserIdentifier { get; set; }"}</code> | Banned user's id, or null for an IP or device ban. |
 
 ## Used in
 

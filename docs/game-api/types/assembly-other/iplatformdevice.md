@@ -1,6 +1,6 @@
 ---
 title: "IPlatformDevice"
-description: "interface IPlatformDevice in Alta.Platform."
+description: "Platform hook for device-level settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Platform`, `Alta.Platform`.
 
+Platform hook for device-level settings. Only `FakePlatformDevice` (does nothing) is bound in the Windows build.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`FakePlatformDevice`](/game-api/types/assembly-other/fakeplatformdevice)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setffvsource" /><code>{"void SetFfvSource("}<Link to="/game-api/types/assembly-other/ffvsource">{"FfvSource"}</Link>{" source, bool shouldEnable)"}</code> | Turns one reason (movement, hurt, low performance, cosmetic packing) for FFV, probably fixed foveated rendering, on or off. |
 
 ## Used in
 

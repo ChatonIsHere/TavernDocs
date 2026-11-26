@@ -34,11 +34,11 @@ Base for a skill that changes how a held tool's skill works while active, for ex
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> |
-| <Link id="m-isexclusive" /><code>{"private bool isExclusive"}</code> |
-| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" inputStructure"}</code> | Input needed to trigger the modifier. |
+| <Link id="m-isexclusive" /><code>{"private bool isExclusive"}</code> | When true, activating this modifier turns off the other modifiers on the held pickup. |
+| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> | The pickup based skill this modifier changes. |
 
 </details>
 
@@ -51,10 +51,10 @@ Base for a skill that changes how a held tool's skill works while active, for ex
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-iinputbasedskill-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" IInputBasedSkill.InputStructure { get; }"}</code> |
-| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iinputbasedskill-inputstructure" /><code>{"private "}<Link to="/game-api/types/global-s/skillinputstructure">{"SkillInputStructure"}</Link>{" IInputBasedSkill.InputStructure { get; }"}</code> | Returns `inputStructure`. |
+| <Link id="m-iinputbasedskill-skill" /><code>{"private "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" IInputBasedSkill.Skill { get; }"}</code> | Returns this skill. |
 
 </details>
 

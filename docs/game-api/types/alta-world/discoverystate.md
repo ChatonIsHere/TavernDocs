@@ -1,6 +1,6 @@
 ---
 title: "DiscoveryState"
-description: "enum DiscoveryState in Root.Township."
+description: "How much a player knows about a map landmark: nothing, aware of it, or discovered."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DiscoveryState
 
 An **enum** in `Root.Township`, `Alta.Map`.
+
+How much a player knows about a map landmark: nothing, aware of it, or discovered. Landmarks can start in a default state.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 

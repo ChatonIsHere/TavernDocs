@@ -30,25 +30,25 @@ A progression shrine showing one path's skill tree. When a player opens it, the 
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeconnections" /><code>{"private List<"}<Link to="/game-api/types/global-s/skillorbconnectionline">{"SkillOrbConnectionline"}</Link>{"> activeConnections"}</code> |
-| <Link id="m-connectionshrinkspeed" /><code>{"private float connectionShrinkSpeed"}</code> |
-| <Link id="m-currentpath" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" currentPath"}</code> |
-| <Link id="m-delaybetweenfirstpracticeandclose" /><code>{"private float delayBetweenFirstPracticeAndClose"}</code> |
-| <Link id="m-fillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" fillVisualizer"}</code> |
-| <Link id="m-internaloffset" /><code>{"private Vector2 internalOffset"}</code> |
-| <Link id="m-linedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> |
-| <Link id="m-maxpathvalue" /><code>{"private int maxPathValue"}</code> |
-| <Link id="m-skillorboperator" /><code>{"private "}<Link to="/game-api/types/global-s/skillorboperator">{"SkillOrbOperator"}</Link>{" skillOrbOperator"}</code> |
-| <Link id="m-skilltreerayorigin" /><code>{"private Transform skillTreeRayOrigin"}</code> |
-| <Link id="m-skilltreetarget" /><code>{"private Transform skillTreeTarget"}</code> |
-| <Link id="m-skilorbprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" skilOrbPrefab"}</code> |
-| <Link id="m-spawnedorbsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbsMap"}</code> |
-| <Link id="m-syncconnections" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-s/skillshrine-connectionsyncargument">{"SkillShrine.ConnectionSyncArgument"}</Link>{"> syncConnections"}</code> |
-| <Link id="m-syncpath" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPath"}</code> |
-| <Link id="m-testingarea" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> |
-| <Link id="m-visualizers" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrinevisualizer">{"SkillShrineVisualizer"}</Link>{"[] visualizers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeconnections" /><code>{"private List<"}<Link to="/game-api/types/global-s/skillorbconnectionline">{"SkillOrbConnectionline"}</Link>{"> activeConnections"}</code> | Client: the connection lines drawn between orbs, destroyed when the shrine closes. |
+| <Link id="m-connectionshrinkspeed" /><code>{"private float connectionShrinkSpeed"}</code> | Backing field for `ConnectionShrinkSpeed`. Default 0.2. |
+| <Link id="m-currentpath" /><code>{"private "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" currentPath"}</code> | Backing field for `CurrentPath`, the progression path this shrine shows. Saved and synced. |
+| <Link id="m-delaybetweenfirstpracticeandclose" /><code>{"private float delayBetweenFirstPracticeAndClose"}</code> | Seconds to wait after the first practice before ending it. Default 0.5. |
+| <Link id="m-fillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" fillVisualizer"}</code> | Experience fill shown for the current path; returned by `GetVisualizer`. |
+| <Link id="m-internaloffset" /><code>{"private Vector2 internalOffset"}</code> | Serialized offset, default (0.5, 0.5). Not read anywhere in this class. |
+| <Link id="m-linedefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lineDefinition"}</code> | Backing field for `LineDefinition`, the pooled line used between orbs. |
+| <Link id="m-maxpathvalue" /><code>{"private int maxPathValue"}</code> | Number of `ProgressionPath` values, the upper bound when syncing the path. |
+| <Link id="m-skillorboperator" /><code>{"private "}<Link to="/game-api/types/global-s/skillorboperator">{"SkillOrbOperator"}</Link>{" skillOrbOperator"}</code> | Backing field for `SkillOrbOperator`. |
+| <Link id="m-skilltreerayorigin" /><code>{"private Transform skillTreeRayOrigin"}</code> | Backing field for `SkillTreeRayOrigin`; orbs spawn here and fly to their slots. |
+| <Link id="m-skilltreetarget" /><code>{"private Transform skillTreeTarget"}</code> | Backing field for `SkillTreeTarget`; slot positions are laid out around it. |
+| <Link id="m-skilorbprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" skilOrbPrefab"}</code> | Backing field for `SkilOrbPrefab`, the orb spawned for each slot of the skill tree. |
+| <Link id="m-spawnedorbsmap" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbsMap"}</code> | Server: spawned orbs by slot hash, used to build the connection sync. |
+| <Link id="m-syncconnections" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncclass-t">{"MethodSyncClass"}</Link>{"<"}<Link to="/game-api/types/global-s/skillshrine-connectionsyncargument">{"SkillShrine.ConnectionSyncArgument"}</Link>{"> syncConnections"}</code> | Sync channel (SyncC) for orb connections. |
+| <Link id="m-syncpath" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPath"}</code> | Sync channel (SyncB) for the current path. |
+| <Link id="m-testingarea" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea"}</code> | Backing field for `TestingArea`, where players practise a skill. |
+| <Link id="m-visualizers" /><code>{"private "}<Link to="/game-api/types/global-s/skillshrinevisualizer">{"SkillShrineVisualizer"}</Link>{"[] visualizers"}</code> | Backing field for `Visualizers`; each is told the current path. |
 
 </details>
 
@@ -84,15 +84,15 @@ A progression shrine showing one path's skill tree. When a player opens it, the 
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-delayendpractice" /><code>{"private IEnumerator DelayEndPractice() (iterator)"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-skillpracticed" /><code>{"private void SkillPracticed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |
-| <Link id="m-syncconnections-2" /><code>{"private void SyncConnections("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-s/skillshrine-connectionsyncargument">{"SkillShrine.ConnectionSyncArgument"}</Link>{" arguments)"}</code> |
-| <Link id="m-syncpath-2" /><code>{"private void SyncPath("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updatepracticing" /><code>{"private void UpdatePracticing("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb, bool isPracticing, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" playerProgressionManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Counts the `ProgressionPath` values for sync bounds and, on clients, creates the connection line list. |
+| <Link id="m-delayendpractice" /><code>{"private IEnumerator DelayEndPractice() (iterator)"}</code> | Server: waits `delayBetweenFirstPracticeAndClose` seconds, then ends practice if the same orb is still being practised. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws a sphere at the skill tree target. |
+| <Link id="m-skillpracticed" /><code>{"private void SkillPracticed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | Server: hooked to `ProfessionSkill.OnSkillExecuted` while open. Marks the practising orb's slot practised when its skill runs, and may end practice. |
+| <Link id="m-syncconnections-2" /><code>{"private void SyncConnections("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-s/skillshrine-connectionsyncargument">{"SkillShrine.ConnectionSyncArgument"}</Link>{" arguments)"}</code> | Sync handler that sends orb pairs to link; clients create a connection line for each pair. |
+| <Link id="m-syncpath-2" /><code>{"private void SyncPath("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler for `currentPath`; clients update their visualizers to the new path. |
+| <Link id="m-updatepracticing" /><code>{"private void UpdatePracticing("}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" orb, bool isPracticing, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" playerProgressionManager)"}</code> | Opens the testing area for an orb when practice starts and disables it when practice stops. |
 
 </details>
 

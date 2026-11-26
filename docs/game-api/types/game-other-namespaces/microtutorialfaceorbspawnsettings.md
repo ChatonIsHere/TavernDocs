@@ -1,6 +1,6 @@
 ---
 title: "MicroTutorialFaceOrbSpawnSettings"
-description: "class MicroTutorialFaceOrbSpawnSettings in Root.Township."
+description: "Global settings listing where micro tutorial orbs are injected."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MicroTutorialFaceOrbSpawnSettings
 
 A **class** in `Root.Township`, `ATT.MicroTutorial`.
+
+Global settings listing where micro tutorial orbs are injected. Read by `MicroTutorialOrbInjector`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`GlobalSettings<MicroTutorialFaceOrbSpawnSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -27,17 +29,17 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-allorbinjectordata" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> allOrbInjectorData"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allorbinjectordata" /><code>{"private List<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> allOrbInjectorData"}</code> | Orb injector entries, each with a tutorial and spawn point. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getallorbinjectordata" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> GetAllOrbInjectorData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getallorbinjectordata" /><code>{"IEnumerable<"}<Link to="/game-api/types/game-other-namespaces/orbinjectordata">{"OrbInjectorData"}</Link>{"> GetAllOrbInjectorData()"}</code> | All orb injector entries. |
 
 ## Used in
 

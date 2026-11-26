@@ -27,18 +27,18 @@ Runs climbing for one player's smooth locomotion: tracks both hands' grips and s
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-corelocomotion" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" coreLocomotion"}</code> |
-| <Link id="m-head" /><code>{"private readonly Transform head"}</code> |
-| <Link id="m-headcachelateupdate" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" headCacheLateUpdate"}</code> |
-| <Link id="m-lefthandpressurecalculator" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbingpressurecalculator">{"ClimbingPressureCalculator"}</Link>{" leftHandPressureCalculator"}</code> |
-| <Link id="m-minmovedistancecache" /><code>{"private float minMoveDistanceCache"}</code> |
-| <Link id="m-playerweightstatname" /><code>{"private const string PlayerWeightStatName"}</code> |
-| <Link id="m-righthandpressurecalculator" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbingpressurecalculator">{"ClimbingPressureCalculator"}</Link>{" rightHandPressureCalculator"}</code> |
-| <Link id="m-statechangetime" /><code>{"private float stateChangeTime"}</code> |
-| <Link id="m-unlockmanager" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager"}</code> |
-| <Link id="m-weightstat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" weightStat"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-corelocomotion" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/locomotioncontroller">{"LocomotionController"}</Link>{" coreLocomotion"}</code> | The player's locomotion controller. |
+| <Link id="m-head" /><code>{"private readonly Transform head"}</code> | The player's head transform. |
+| <Link id="m-headcachelateupdate" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" headCacheLateUpdate"}</code> | Head position from the last late update, used to pin the head while climbing. |
+| <Link id="m-lefthandpressurecalculator" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbingpressurecalculator">{"ClimbingPressureCalculator"}</Link>{" leftHandPressureCalculator"}</code> | Pressure maths for the left hand. |
+| <Link id="m-minmovedistancecache" /><code>{"private float minMoveDistanceCache"}</code> | Character controller min move distance saved while climbing (set to 0). |
+| <Link id="m-playerweightstatname" /><code>{"private const string PlayerWeightStatName"}</code> | Name of the stat added to the base weight (`playerweight`). |
+| <Link id="m-righthandpressurecalculator" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbingpressurecalculator">{"ClimbingPressureCalculator"}</Link>{" rightHandPressureCalculator"}</code> | Pressure maths for the right hand. |
+| <Link id="m-statechangetime" /><code>{"private float stateChangeTime"}</code> | When climbing last started or stopped, used for `Friction`. |
+| <Link id="m-unlockmanager" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager"}</code> | The player's unlock manager, which can override the climb layer mask. |
+| <Link id="m-weightstat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" weightStat"}</code> | The player's weight stat, added to the base weight. |
 
 </details>
 
@@ -67,15 +67,15 @@ Runs climbing for one player's smooth locomotion: tracks both hands' grips and s
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-adjustheight" /><code>{"private void AdjustHeight(float deltaTime)"}</code> |
-| <Link id="m-handleclimbing" /><code>{"private void HandleClimbing(float deltaTime)"}</code> |
-| <Link id="m-handlehandpressure" /><code>{"private void HandleHandPressure(float deltaTime)"}</code> |
-| <Link id="m-handlesurfacemovement" /><code>{"private void HandleSurfaceMovement()"}</code> |
-| <Link id="m-hang" /><code>{"private void Hang(float deltaTime, float weight, Vector3 velocity)"}</code> |
-| <Link id="m-rotate" /><code>{"private void Rotate(float degrees, Vector3 oldCenter, Vector3 newCenter)"}</code> |
-| <Link id="m-updateheightbasedoncollision" /><code>{"private void UpdateHeightBasedOnCollision()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-adjustheight" /><code>{"private void AdjustHeight(float deltaTime)"}</code> | Moves the body height towards climbing height or standing height. |
+| <Link id="m-handleclimbing" /><code>{"private void HandleClimbing(float deltaTime)"}</code> | Moves the player with the grips, applies hand pressure and keeps the player treated as grounded. |
+| <Link id="m-handlehandpressure" /><code>{"private void HandleHandPressure(float deltaTime)"}</code> | Works out pressure from both hands against gravity and weight, then sets the new velocity through `Hang`. |
+| <Link id="m-handlesurfacemovement" /><code>{"private void HandleSurfaceMovement()"}</code> | Moves and turns the player to follow how the grip points have moved since last frame. |
+| <Link id="m-hang" /><code>{"private void Hang(float deltaTime, float weight, Vector3 velocity)"}</code> | Limits velocity so arms don't stretch past hang distance, using the more stretched hand. |
+| <Link id="m-rotate" /><code>{"private void Rotate(float degrees, Vector3 oldCenter, Vector3 newCenter)"}</code> | Turns the player around the old grip centre and moves them to the new one. |
+| <Link id="m-updateheightbasedoncollision" /><code>{"private void UpdateHeightBasedOnCollision()"}</code> | After climbing, sets the body height from a sphere cast down so the player doesn't clip into the floor. |
 
 </details>
 

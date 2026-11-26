@@ -1,6 +1,6 @@
 ---
 title: "GeneratedPositioning.RotationModule"
-description: "enum GeneratedPositioning.RotationModule in Root.Township."
+description: "Rotation module choices for GeneratedPositioning: Static or RandomY."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneratedPositioning.RotationModule
 
 An **enum** in `Root.Township`, no namespace.
+
+Rotation module choices for `GeneratedPositioning`: `Static` or `RandomY`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GeneratedPositioning`](/game-api/types/global-e-h/generatedpositioning)

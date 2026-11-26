@@ -1,6 +1,6 @@
 ---
 title: "EnvironmentNode.Variable"
-description: "class EnvironmentNode.Variable in Root.Township."
+description: "An optional float setting on an EnvironmentNode (used for reverb)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EnvironmentNode.Variable
 
 A **class** in `Root.Township`, no namespace.
+
+An optional float setting on an `EnvironmentNode` (used for reverb). It either overrides the value or falls back to a default node's value.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`EnvironmentNode`](/game-api/types/global-e-h/environmentnode)
@@ -26,18 +28,18 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> |
-| <Link id="m-value" /><code>{"private float value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isoverriding" /><code>{"private bool isOverriding"}</code> | Whether this node sets its own value instead of using the default. |
+| <Link id="m-value" /><code>{"private float value"}</code> | The override value, used only when `isOverriding` is on. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-get" /><code>{"float Get("}<Link to="/game-api/types/global-e-h/environmentnode-variable">{"EnvironmentNode.Variable"}</Link>{" defaultValue)"}</code> | Returns `value` when overriding, otherwise the given default variable's value, or 0 if there is none. |
 
 ## Used in
 

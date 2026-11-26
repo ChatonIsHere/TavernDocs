@@ -28,21 +28,21 @@ A hovering orb the player grabs and pulls to their face to trigger an action, wi
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cantriggerhaptic" /><code>{"private bool canTriggerHaptic"}</code> |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller"}</code> |
-| <Link id="m-hasscreenfade" /><code>{"private bool hasScreenFade"}</code> |
-| <Link id="m-ismovingkeyword" /><code>{"private const string IsMovingKeyword"}</code> |
-| <Link id="m-minfadetocountdowntime" /><code>{"private float minFadeToCountDownTime"}</code> |
-| <Link id="m-rendererstochange" /><code>{"private Renderer[] renderersToChange"}</code> |
-| <Link id="m-squishablematerialgroup" /><code>{"private "}<Link to="/game-api/types/alta-utilities/materialinstancegroup">{"MaterialInstanceGroup"}</Link>{" squishableMaterialGroup"}</code> |
-| <Link id="m-squishablerenderers" /><code>{"private Renderer[] squishableRenderers"}</code> |
-| <Link id="m-squishdirectionpropertyname" /><code>{"private const string SquishDirectionPropertyName"}</code> |
-| <Link id="m-squishdirectionshaderid" /><code>{"private static readonly int squishDirectionShaderId"}</code> |
-| <Link id="m-startatzeroscale" /><code>{"private bool startAtZeroScale"}</code> |
-| <Link id="m-timetoforcejoin" /><code>{"private float timeToForceJoin"}</code> |
-| <Link id="m-updateselectionorb" /><code>{"private Coroutine updateSelectionOrb"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cantriggerhaptic" /><code>{"private bool canTriggerHaptic"}</code> | Whether haptics play; set with `SetCanReceiveHapticFeedback`. |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller"}</code> | Player controller of whoever last grabbed the orb. |
+| <Link id="m-hasscreenfade" /><code>{"private bool hasScreenFade"}</code> | Whether bringing the orb to the head fades the screen. |
+| <Link id="m-ismovingkeyword" /><code>{"private const string IsMovingKeyword"}</code> | Shader keyword turned on while the orb is moving back. |
+| <Link id="m-minfadetocountdowntime" /><code>{"private float minFadeToCountDownTime"}</code> | Fade amount above which the force-join countdown runs. |
+| <Link id="m-rendererstochange" /><code>{"private Renderer[] renderersToChange"}</code> | Renderers whose material `SetMaterial` replaces. |
+| <Link id="m-squishablematerialgroup" /><code>{"private "}<Link to="/game-api/types/alta-utilities/materialinstancegroup">{"MaterialInstanceGroup"}</Link>{" squishableMaterialGroup"}</code> | Material instances on the squishable renderers, made on awake and disposed on destroy. |
+| <Link id="m-squishablerenderers" /><code>{"private Renderer[] squishableRenderers"}</code> | Renderers that squish in the direction the orb moves. |
+| <Link id="m-squishdirectionpropertyname" /><code>{"private const string SquishDirectionPropertyName"}</code> | Shader property name for the squish direction. |
+| <Link id="m-squishdirectionshaderid" /><code>{"private static readonly int squishDirectionShaderId"}</code> | Shader ID of the squish direction property. |
+| <Link id="m-startatzeroscale" /><code>{"private bool startAtZeroScale"}</code> | Starts the orb at zero scale so it can grow in. |
+| <Link id="m-timetoforcejoin" /><code>{"private float timeToForceJoin"}</code> | Seconds the orb must be held close to the head before it lets go by itself. |
+| <Link id="m-updateselectionorb" /><code>{"private Coroutine updateSelectionOrb"}</code> | The running `UpdateSelectionOrb` coroutine, if any. |
 
 </details>
 
@@ -69,11 +69,11 @@ A hovering orb the player grabs and pulls to their face to trigger an action, wi
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-startscreenfade" /><code>{"private void StartScreenFade(float from, float to, float duration)"}</code> |
-| <Link id="m-triggerhaptic" /><code>{"private void TriggerHaptic(float strength)"}</code> |
-| <Link id="m-updateselectionorb-2" /><code>{"private IEnumerator UpdateSelectionOrb() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-startscreenfade" /><code>{"private void StartScreenFade(float from, float to, float duration)"}</code> | Fades the holder's screen between the given values, if `hasScreenFade` is on. |
+| <Link id="m-triggerhaptic" /><code>{"private void TriggerHaptic(float strength)"}</code> | Pulses the holding controller at the given strength, unless haptics are turned off. |
+| <Link id="m-updateselectionorb-2" /><code>{"private IEnumerator UpdateSelectionOrb() (iterator)"}</code> | Coroutine while held: haptics and screen fade grow as the orb nears the head; held close long enough, it lets go and fires `OnValidLetGo`. |
 
 </details>
 

@@ -33,10 +33,10 @@ One damage point on a woodcut tree: a local position and how far it has been cho
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-haschangedsincelastwrite" /><code>{"private bool hasChangedSinceLastWrite"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-haschangedsincelastwrite" /><code>{"private bool hasChangedSinceLastWrite"}</code> | Set when progress changes; cleared after the point is written to a sync stream. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | How far this cut point has been chopped, 0 to 1; saved and synced. Backing field for `Progress`. |
 
 </details>
 
@@ -69,10 +69,10 @@ One damage point on a woodcut tree: a local position and how far it has been cho
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Marks the point as needing sync and raises `Changed`. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Raises the change event when edited in the inspector. |
 
 </details>
 

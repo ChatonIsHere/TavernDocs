@@ -33,15 +33,15 @@ Part of the static world that can be swapped between an original and a modified 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canreturn" /><code>{"private bool canReturn"}</code> |
-| <Link id="m-hash" /><code>{"private int hash"}</code> |
-| <Link id="m-modifiedevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" modifiedEvent"}</code> |
-| <Link id="m-modifiedobjects" /><code>{"private GameObject[] modifiedObjects"}</code> |
-| <Link id="m-modifyinstant" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" modifyInstant"}</code> |
-| <Link id="m-originalobjects" /><code>{"private GameObject[] originalObjects"}</code> |
-| <Link id="m-unmodifiedevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" unModifiedEvent"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canreturn" /><code>{"private bool canReturn"}</code> | If true the object can go back to its original state, so `Modify` keeps the original objects instead of destroying them. |
+| <Link id="m-hash" /><code>{"private int hash"}</code> | Backing field for `Hash`, set in the editor by `OnValidate`. |
+| <Link id="m-modifiedevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" modifiedEvent"}</code> | Backing field for `ModifiedEvent`, run when the object is modified live. |
+| <Link id="m-modifiedobjects" /><code>{"private GameObject[] modifiedObjects"}</code> | Objects turned on when modified and off when unmodified. |
+| <Link id="m-modifyinstant" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" modifyInstant"}</code> | Event run instead of `modifiedEvent` when the object starts already modified (no live change). |
+| <Link id="m-originalobjects" /><code>{"private GameObject[] originalObjects"}</code> | Objects shown before the change. Destroyed on modify unless `canReturn` is set. |
+| <Link id="m-unmodifiedevent" /><code>{"private "}<Link to="/game-api/types/alta-networking/modifiablestaticevent">{"ModifiableStaticEvent"}</Link>{" unModifiedEvent"}</code> | Backing field for `UnModifiedEvent`. |
 
 </details>
 
@@ -65,13 +65,13 @@ Part of the static world that can be swapped between an original and a modified 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-beforesaving" /><code>{"private void IChangeWithChunking.BeforeSaving()"}</code> |
-| <Link id="m-checkchange" /><code>{"private void CheckChange(uint objectHash, bool isModified)"}</code> |
-| <Link id="m-loaded" /><code>{"private void IChangeWithChunking.Loaded()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-beforesaving" /><code>{"private void IChangeWithChunking.BeforeSaving()"}</code> | Does nothing. |
+| <Link id="m-checkchange" /><code>{"private void CheckChange(uint objectHash, bool isModified)"}</code> | Handler for `ModifiableStaticManager.ObjectChanged`: if the hash is this object's, modifies or unmodifies it with events. |
+| <Link id="m-loaded" /><code>{"private void IChangeWithChunking.Loaded()"}</code> | Does nothing. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops listening for changes and removes the object from `ModifiableStaticManager`. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Listens for changes and registers the object with `ModifiableStaticManager` by hash. |
 
 </details>
 

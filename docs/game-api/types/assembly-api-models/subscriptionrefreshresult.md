@@ -1,6 +1,6 @@
 ---
 title: "SubscriptionRefreshResult"
-description: "class SubscriptionRefreshResult in Alta.Api.DataTransferModels."
+description: "Result of checking for supporter subscription rewards, from CheckForSubscriptionRewardsAsync."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SubscriptionRefreshResult
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Result of checking for supporter subscription rewards, from `CheckForSubscriptionRewardsAsync`. The offline shop returns an empty one.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Nested types** [`Reward`](/game-api/types/assembly-api-models/subscriptionrefreshresult-reward)
@@ -23,11 +25,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> |
-| <Link id="m-rewardperiodspassed" /><code>{"int RewardPeriodsPassed { get; set; }"}</code> |
-| <Link id="m-rewards" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/subscriptionrefreshresult-reward">{"SubscriptionRefreshResult.Reward"}</Link>{"> Rewards { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-comment" /><code>{"string Comment { get; set; }"}</code> | Message about the check. Defaults to "No rewards applied". |
+| <Link id="m-rewardperiodspassed" /><code>{"int RewardPeriodsPassed { get; set; }"}</code> | How many reward periods had passed since the last check. |
+| <Link id="m-rewards" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/subscriptionrefreshresult-reward">{"SubscriptionRefreshResult.Reward"}</Link>{"> Rewards { get; set; }"}</code> | Rewards granted, each a type and an amount. |
 
 ## Used in
 

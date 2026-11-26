@@ -30,26 +30,26 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-availabletools" /><code>{"private "}<Link to="/game-api/types/global-i-l/ingameinspector-ingametool">{"InGameInspector.InGameTool"}</Link>{"[] availableTools"}</code> |
-| <Link id="m-bg" /><code>{"private Image bg"}</code> |
-| <Link id="m-chunkboundsmaterial" /><code>{"private Material chunkBoundsMaterial"}</code> |
-| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |
-| <Link id="m-currenttool" /><code>{"private int currentTool"}</code> |
-| <Link id="m-displayingmessage" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" displayingMessage"}</code> |
-| <Link id="m-isdoubleclicking" /><code>{"private bool isDoubleClicking"}</code> |
-| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> |
-| <Link id="m-isrotating" /><code>{"private bool isRotating"}</code> |
-| <Link id="m-lodcolors" /><code>{"private Color[] lodColors"}</code> |
-| <Link id="m-lodmaterial" /><code>{"private Material lodMaterial"}</code> |
-| <Link id="m-log" /><code>{"private "}<Link to="/game-api/types/global-i-l/lodchange">{"LODChange"}</Link>{" log"}</code> |
-| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> |
-| <Link id="m-minescompass" /><code>{"private Image minesCompass"}</code> |
-| <Link id="m-objectname" /><code>{"private Text objectName"}</code> |
-| <Link id="m-pointertransform" /><code>{"private Transform pointerTransform"}</code> |
-| <Link id="m-previousvalue" /><code>{"private Vector2 previousValue"}</code> |
-| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMessage"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-availabletools" /><code>{"private "}<Link to="/game-api/types/global-i-l/ingameinspector-ingametool">{"InGameInspector.InGameTool"}</Link>{"[] availableTools"}</code> | The debug tools: LOD tools, chunk bounds, teleporters, mine stairs pointer, command runner, cloner and bubble inspector. |
+| <Link id="m-bg" /><code>{"private Image bg"}</code> | Background image behind the label. |
+| <Link id="m-chunkboundsmaterial" /><code>{"private Material chunkBoundsMaterial"}</code> | Material used by the chunk bounds tool. |
+| <Link id="m-controller" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> | Player input of whoever is holding the inspector. |
+| <Link id="m-currenttool" /><code>{"private int currentTool"}</code> | Backing field for `CurrentTool`, the index into `availableTools`. |
+| <Link id="m-displayingmessage" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" displayingMessage"}</code> | The running `DisplayMessage` coroutine, if any. |
+| <Link id="m-isdoubleclicking" /><code>{"private bool isDoubleClicking"}</code> | Not used in this build. |
+| <Link id="m-israycasting" /><code>{"private bool isRaycasting"}</code> | Whether the pointer ray is on. Tools only pick targets while it is. |
+| <Link id="m-isrotating" /><code>{"private bool isRotating"}</code> | True while a swipe rotation is being tracked. |
+| <Link id="m-lodcolors" /><code>{"private Color[] lodColors"}</code> | Colours, one per LOD level, used by the LOD visualiser. |
+| <Link id="m-lodmaterial" /><code>{"private Material lodMaterial"}</code> | Base material the LOD visualiser tints with `lodColors`. |
+| <Link id="m-log" /><code>{"private "}<Link to="/game-api/types/global-i-l/lodchange">{"LODChange"}</Link>{" log"}</code> | Serialized `LODChange` reference. Not read by the inspector's own code. |
+| <Link id="m-messageduration" /><code>{"private float messageDuration"}</code> | How long a timed message stays up, in seconds (2 by default). |
+| <Link id="m-minescompass" /><code>{"private Image minesCompass"}</code> | Arrow image the mine stairs pointer turns toward the nearest stairs. |
+| <Link id="m-objectname" /><code>{"private Text objectName"}</code> | Text label that shows tool names and results. |
+| <Link id="m-pointertransform" /><code>{"private Transform pointerTransform"}</code> | Where the pointer ray starts and which way it points. |
+| <Link id="m-previousvalue" /><code>{"private Vector2 previousValue"}</code> | Swipe position when rotation tracking started. |
+| <Link id="m-syncmessage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<int> syncMessage"}</code> | Method sync made in `Initialize` and sent by `SendMessage` to share the current tool's data. |
 
 </details>
 
@@ -63,12 +63,12 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 <details>
 <summary>4 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-displaytext" /><code>{"private string DisplayText { get; set; }"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-pointing" /><code>{"private Vector3 Pointing { get; set; }"}</code> |
-| <Link id="m-renderer" /><code>{"private LineRenderer Renderer { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displaytext" /><code>{"private string DisplayText { get; set; }"}</code> | Text on the inspector's label. Setting it shows the label, unless a timed message is showing. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; set; }"}</code> | The pickup this inspector is on, found in `Awake`. |
+| <Link id="m-pointing" /><code>{"private Vector3 Pointing { get; set; }"}</code> | Direction the mines compass arrow points. Setting it turns the arrow toward that direction and shows it. |
+| <Link id="m-renderer" /><code>{"private LineRenderer Renderer { get; set; }"}</code> | Line renderer that draws the pointer ray while raycasting is on. |
 
 </details>
 
@@ -88,18 +88,18 @@ A debug tool item with 12 modes (LOD tools, chunk bounds, teleporters, console c
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkinput" /><code>{"private void CheckInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
-| <Link id="m-displaymessage" /><code>{"private IEnumerator DisplayMessage(string message) (iterator)"}</code> |
-| <Link id="m-interact" /><code>{"private void Interact("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> |
-| <Link id="m-syncmessage-2" /><code>{"private void SyncMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int arguments)"}</code> |
-| <Link id="m-toggleenable" /><code>{"private void ToggleEnable(bool isEnabled)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the pickup's interaction events, gets the line renderer and builds the 12 debug tools. |
+| <Link id="m-checkinput" /><code>{"private void CheckInput("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | On the local player's teleport press, starts tracking swipe rotation and passes the input to the current tool. |
+| <Link id="m-displaymessage" /><code>{"private IEnumerator DisplayMessage(string message) (iterator)"}</code> | Coroutine that shows a message (such as the tool name) for `messageDuration` seconds, then hides it. |
+| <Link id="m-interact" /><code>{"private void Interact("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" pickup, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | On grab, drops the item if the local player lacks the `debug_features` permission, else enables the current tool. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Disables the current tool. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Empty. |
+| <Link id="m-stop" /><code>{"private void Stop("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" arg1, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" arg2)"}</code> | On release, unhooks the teleport input, disables the current tool and hides the label and compass. |
+| <Link id="m-syncmessage-2" /><code>{"private void SyncMessage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, int arguments)"}</code> | Method sync that sends the tool index, then lets that tool serialize its own data. |
+| <Link id="m-toggleenable" /><code>{"private void ToggleEnable(bool isEnabled)"}</code> | When disabling, hides the label, background and mines compass. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | While held, turns swipe motion into an angle for the tool, draws the pointer ray and updates the current tool. |
 
 </details>
 

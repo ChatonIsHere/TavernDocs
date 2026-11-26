@@ -44,7 +44,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImpactChannel`](/game-api/types/alta-items/impactchannel) | class | `ScriptableObject` | 1 | [Impacts and hit detection](../items/impacts.md) |
 | [`ImpactChannel.Create`](/game-api/types/alta-items/impactchannel-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Impact.ScriptableObject<ImpactChannel>` | 0 |  |
 | [`ImpactDetector`](/game-api/types/alta-items/impactdetector) | class | `MonoBehaviour`, `IListenToPhysicalMaterial`, `INetworkEntityBehaviour`, +2 more | 16 | [Impacts and hit detection](../items/impacts.md#impactdetector): On anything that can be hit: creature body parts, rocks, trees, players. |
-| [`ImpactDetector.ImpactSyncArguments`](/game-api/types/alta-items/impactdetector-impactsyncarguments) | struct |  | 7 |  |
+| [`ImpactDetector.ImpactSyncArguments`](/game-api/types/alta-items/impactdetector-impactsyncarguments) | struct |  | 7 | A hit on an `ImpactDetector`, sent to the chunk by the client whose player hit something or was hit. Built from an `ImpactHitWithTool`. |
 | [`ImpactDetectorCentral`](/game-api/types/alta-items/impactdetectorcentral) | class | `NetworkEntityBehaviour` | 2 | [Impacts and hit detection](../items/impacts.md): On entities with several detectors. |
 | [`ImpactDetectorColliderModifier`](/game-api/types/alta-items/impactdetectorcollidermodifier) | class | `MonoBehaviour` | 2 | Component on a collider that changes how hits on it are treated, through a list of `ColliderModifierSettings`. |
 | [`ImpactDetectorSettings`](/game-api/types/alta-items/impactdetectorsettings) | class | `ScriptableObject` | 5 | [Impacts and hit detection](../items/impacts.md): Detector data: hit effects, whether it gives XP, whether it wears tools. |
@@ -72,7 +72,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ImpactTool`](/game-api/types/alta-items/impacttool) | class | `MonoBehaviour`, `IGetRigidbody` | 45 | [Impacts and hit detection](../items/impacts.md#impacttool): Get it with `GetComponent<ImpactTool>()` on the item, or `entity.CommonImpactTool`. |
 | [`ImpactTool.OnCollidedHit`](/game-api/types/alta-items/impacttool-oncollidedhit) | delegate |  | 0 |  |
 | [`ImpactTool.OnCollisionEnterEvent`](/game-api/types/alta-items/impacttool-oncollisionenterevent) | delegate |  | 0 |  |
-| [`ImpactTool.OnGeneratedHit`](/game-api/types/alta-items/impacttool-ongeneratedhit) | delegate |  | 0 |  |
+| [`ImpactTool.OnGeneratedHit`](/game-api/types/alta-items/impacttool-ongeneratedhit) | delegate |  | 0 | Callback for an `ImpactTool` hit or block, given the hit and the tool. Used by `OnHit`, `OnBlocked` and the static `OnHitAny`. |
 | [`ImpactType`](/game-api/types/alta-items/impacttype) | enum |  | 7 | Kind of damage an impact does: pierce, slash, blunt, caustic, poison, explosive or spiritual. |
 | [`ImpactTypeFilter`](/game-api/types/alta-items/impacttypefilter) | class |  | 2 |  |
 | [`INetworkProjectile`](/game-api/types/alta-items/inetworkprojectile) | interface |  | 5 |  |
@@ -102,7 +102,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Chest`](/game-api/types/alta-items/chest) | class | `LockableHinge` | 5 | [Items, interaction and damage](../items/overview.md) |
 | [`CommunalStorage`](/game-api/types/alta-items/communalstorage) | class | `NetworkEntityBehaviour`, `ISavable<CommunalStorageData>`, `ISavableSave<CommunalStorageData>`, +2 more | 3 | [Items, interaction and damage](../items/overview.md) |
 | [`CommunalStorageData`](/game-api/types/alta-items/communalstoragedata) | class | `NewSaveData<CommunalStorage, CommunalStorageData>` | 1 |  |
-| [`CommunalStorageUniqueIdentifier`](/game-api/types/alta-items/communalstorageuniqueidentifier) | class | `HashedGeneralValue<CommunalStorageUniqueIdentifier>` | 0 |  |
+| [`CommunalStorageUniqueIdentifier`](/game-api/types/alta-items/communalstorageuniqueidentifier) | class | `HashedGeneralValue<CommunalStorageUniqueIdentifier>` | 0 | A hashed asset that names one global communal storage. The server saves what each one holds in the Global Communal Storage file. |
 | [`ConsumableLock`](/game-api/types/alta-items/consumablelock) | class | `Lock` | 3 |  |
 | [`CraftedDocks`](/game-api/types/alta-items/crafteddocks) | class | `MonoBehaviour`, `IBlockDisassembly` | 0 |  |
 | [`DockArray`](/game-api/types/alta-items/dockarray) | class | `NetworkEntityBehaviour` | 14 | A group of pickup docks (a bag's or belt's slots) with totals for count, stored quantity and weight. Arrays can nest, so a parent includes its children's docks. |
@@ -121,8 +121,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Item`](/game-api/types/alta-items/item) | class | `HashedGeneralValue<Item>`, `IPageBasis` | 35 | [Items and materials](../items/items-and-materials.md#item), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `ScriptableObject` asset (through `Alta.HashedGeneralValue<Item>` in `Alta.Values`). The same on both sides; it's data. |
 | [`Item.Create`](/game-api/types/alta-items/item-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<Item>` | 0 |  |
 | [`Item.CustomDockPositioning`](/game-api/types/alta-items/item-customdockpositioning) | class | `DockPositioning` | 2 |  |
-| [`Item.DockPositioning`](/game-api/types/alta-items/item-dockpositioning) | class |  | 3 |  |
-| [`ItemCount`](/game-api/types/alta-items/itemcount) | class |  | 2 |  |
+| [`Item.DockPositioning`](/game-api/types/alta-items/item-dockpositioning) | class |  | 3 | Where an item sits when stored in a dock: a local position and rotation. `PickupDock` gets one from `Item.GetPositioning` and scales the position to fit. |
+| [`ItemCount`](/game-api/types/alta-items/itemcount) | class |  | 2 | An item and an amount, used for smelting recipe inputs and outputs. |
 | [`ItemDockedVfxEvent`](/game-api/types/alta-items/itemdockedvfxevent) | class | `AbstractDockEvents` | 0 |  |
 | [`ItemSet`](/game-api/types/alta-items/itemset) | class | `ScriptableObject` | 1 |  |
 | [`ItemSet.Create`](/game-api/types/alta-items/itemset-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Items.ScriptableObject<ItemSet>` | 0 |  |
@@ -130,21 +130,21 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`JengaStackingInstructionSetup`](/game-api/types/alta-items/jengastackinginstructionsetup) | class | `StackingInstructionSetup<JengaStackingInstruction>` | 0 |  |
 | [`JengaStackingInstructionSetup.Level`](/game-api/types/alta-items/jengastackinginstructionsetup-level) | struct |  | 3 |  |
 | [`KeyItem`](/game-api/types/alta-items/keyitem) | class | `Pickup` | 7 | [Items, interaction and damage](../items/overview.md) |
-| [`KeyItemEvent`](/game-api/types/alta-items/keyitemevent) | class | `AltaEvent<KeyItem, KeyUnityEvent>` | 0 |  |
+| [`KeyItemEvent`](/game-api/types/alta-items/keyitemevent) | class | `AltaEvent<KeyItem, KeyUnityEvent>` | 0 | A serializable event with a `KeyItem` argument, such as a lock's key turn event. |
 | [`KeyUnityEvent`](/game-api/types/alta-items/keyunityevent) | class | `UnityEvent<KeyItem>` | 0 |  |
 | [`Lock`](/game-api/types/alta-items/lock) | class | `NetworkEntityBehaviour` | 11 | [Items, interaction and damage](../items/overview.md) |
-| [`LockableEvent`](/game-api/types/alta-items/lockableevent) | class | `AltaEvent<LockableHinge, LockableUnityEvent>` | 0 |  |
+| [`LockableEvent`](/game-api/types/alta-items/lockableevent) | class | `AltaEvent<LockableHinge, LockableUnityEvent>` | 0 | A serializable `AltaEvent` that passes a `LockableHinge`, used for lock and chest thump events. |
 | [`LockableHinge`](/game-api/types/alta-items/lockablehinge) | class | `NetworkEntityBehaviour`, `ISavableFull<LockableHingeSaveData>`, `ISavable<LockableHingeSaveData>`, +3 more | 5 | [Items, interaction and damage](../items/overview.md) |
 | [`LockableHingeSaveData`](/game-api/types/alta-items/lockablehingesavedata) | internal class | `NewSaveData<LockableHinge, LockableHingeSaveData>` | 4 |  |
 | [`LockableUnityEvent`](/game-api/types/alta-items/lockableunityevent) | class | `UnityEvent<LockableHinge>` | 0 |  |
 | [`LockEffectUnityEvent`](/game-api/types/alta-items/lockeffectunityevent) | class | `UnityEvent<Lock>` | 0 |  |
-| [`LockEvent`](/game-api/types/alta-items/lockevent) | class | `AltaEvent<Lock, LockUnityEvent>` | 0 |  |
+| [`LockEvent`](/game-api/types/alta-items/lockevent) | class | `AltaEvent<Lock, LockUnityEvent>` | 0 | A serializable event with a `Lock` argument, such as a lock's locked or broken events. |
 | [`LockItemEvent`](/game-api/types/alta-items/lockitemevent) | class | `AltaEvent<Lock, LockEffectUnityEvent>` | 0 |  |
 | [`LockUnityEvent`](/game-api/types/alta-items/lockunityevent) | class | `UnityEvent<Lock>` | 0 |  |
 | [`OnlyAllowDockingWhenEmpty`](/game-api/types/alta-items/onlyallowdockingwhenempty) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`PersonalChunk`](/game-api/types/alta-items/personalchunk) | class | `NetworkEntityBehaviour` | 4 |  |
 | [`PickupDock`](/game-api/types/alta-items/pickupdock) | class | `Interactable`, `ISavableFull<PickupDockSaveData>`, `ISavable<PickupDockSaveData>`, +9 more | 54 | [Other systems](../game-systems/other-systems.md), [Player inventory](../items/player-inventory.md) |
-| [`PickupDock.AllowedResult`](/game-api/types/alta-items/pickupdock-allowedresult) | enum |  | 23 |  |
+| [`PickupDock.AllowedResult`](/game-api/types/alta-items/pickupdock-allowedresult) | enum |  | 23 | Why a dock accepted or refused a pickup: `Ok`, or a reason such as wrong item, tag filter, full or crafting rules. |
 | [`PickupDocker`](/game-api/types/alta-items/pickupdocker) | class |  | 10 |  |
 | [`PickupDockFilter`](/game-api/types/alta-items/pickupdockfilter) | delegate |  | 0 |  |
 | [`PickupDockHandler`](/game-api/types/alta-items/pickupdockhandler) | delegate |  | 0 |  |
@@ -168,7 +168,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StabilizeLantern`](/game-api/types/alta-items/stabilizelantern) | class | `StabilizeJointContainer` | 0 |  |
 | [`StabilizePickupJoint`](/game-api/types/alta-items/stabilizepickupjoint) | class | `MonoBehaviour`, `IPostboxPopped` | 3 |  |
 | [`StackingComponent`](/game-api/types/alta-items/stackingcomponent) | class | `MonoBehaviour`, `IReferenceRenderer`, `IPreventNoLongerReadable`, +2 more | 4 |  |
-| [`StackingInstructions`](/game-api/types/alta-items/stackinginstructions) | abstract class | `ScriptableObject` | 2 |  |
+| [`StackingInstructions`](/game-api/types/alta-items/stackinginstructions) | abstract class | `ScriptableObject` | 2 | Base asset that describes how items stack in a space. It makes a `StackingInstructionSetup` for given bounds; the generic subclass creates the setup type for you. |
 | [`StackingInstructions<T>`](/game-api/types/alta-items/stackinginstructions-t) | abstract class | `StackingInstructions` | 1 |  |
 | [`StackingInstructionSetup`](/game-api/types/alta-items/stackinginstructionsetup) | abstract class |  | 5 | Base for working out where stacked copies of an item go inside some bounds, from `StackingInstructions`. Used by `StorageOrganizer`. |
 | [`StackingInstructionSetup<T>`](/game-api/types/alta-items/stackinginstructionsetup-t) | abstract class | `StackingInstructionSetup` | 1 |  |
@@ -229,7 +229,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LogicIntToBoolData`](/game-api/types/alta-items/logicinttobooldata) | class | `NewSaveData<LogicIntToBool, LogicIntToBoolData>` | 1 |  |
 | [`LogicManagerData`](/game-api/types/alta-items/logicmanagerdata) | class | `NewSaveData<GlobalLogicManager, LogicManagerData>` | 2 |  |
 | [`LogicManagerSet`](/game-api/types/alta-items/logicmanagerset) | class |  | 1 |  |
-| [`LogicOperationType`](/game-api/types/alta-items/logicoperationtype) | enum |  | 5 |  |
+| [`LogicOperationType`](/game-api/types/alta-items/logicoperationtype) | enum |  | 5 | Logic gate kind: `And`, `Or`, `Xor`, `Nand` or `Toggle`. |
 | [`LogicSaveData`](/game-api/types/alta-items/logicsavedata) | class | `BasicSaveData<LogicSaveData>` | 5 | Saved state of a logic value with an identifier and change events. |
 | [`LogicSumFloatReceiver`](/game-api/types/alta-items/logicsumfloatreceiver) | class | `LogicValueReceiverArray<FloatSenderInput>`, `ISavable<LogicSumFloatSaveData>`, `ISavableSave<LogicSumFloatSaveData>`, +1 more | 1 | [Other systems](../game-systems/other-systems.md) |
 | [`LogicSumFloatSaveData`](/game-api/types/alta-items/logicsumfloatsavedata) | class | `NewSaveData<LogicSumFloatReceiver, LogicSumFloatSaveData>`, `ILogicValueData` | 3 |  |
@@ -269,31 +269,31 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`Book`](/game-api/types/alta-items/book) | class | `NetworkEntityBehaviour`, `ISavable<BookSaveData>`, `ISavableSave<BookSaveData>`, +3 more | 19 | [Pages and books](../items/pages-and-books.md): A book pickup. |
 | [`BookFlair`](/game-api/types/alta-items/bookflair) | abstract class | `ScriptableObject` | 1 | Base asset for a decoration (spine, edge, emblem) added to a book's model, with renderers for each LOD. |
-| [`BookPageInstance`](/game-api/types/alta-items/bookpageinstance) | class | `PageInstance` | 3 |  |
+| [`BookPageInstance`](/game-api/types/alta-items/bookpageinstance) | class | `PageInstance` | 3 | A page shown inside a book. Grabbing its tip and dragging sideways turns the page, and dragging up or down on a facing page pulls it out or copies it as a paper page. On the page prefab; both sides. |
 | [`BookRestrictor`](/game-api/types/alta-items/bookrestrictor) | class | `PositionRestrictor`, `ISavable<BookRestrictorSaveData>`, `ISavableSave<BookRestrictorSaveData>`, +1 more | 1 | [Pages and books](../items/pages-and-books.md) |
 | [`BookRestrictorSaveData`](/game-api/types/alta-items/bookrestrictorsavedata) | internal class | `NewSaveData<BookRestrictor, BookRestrictorSaveData>` | 1 |  |
 | [`BookSaveData`](/game-api/types/alta-items/booksavedata) | internal class | `NewSaveData<Book, BookSaveData>` | 2 |  |
 | [`BookSpawner`](/game-api/types/alta-items/bookspawner) | class | `NetworkEntityBehaviour` | 1 | [Pages and books](../items/pages-and-books.md) |
-| [`DisplayArguments`](/game-api/types/alta-items/displayarguments) | class |  | 5 |  |
+| [`DisplayArguments`](/game-api/types/alta-items/displayarguments) | class |  | 5 | Message payload a `Book` sends to chunks to update its page counter: pages found, total pages and the current page. |
 | [`DockPageTask`](/game-api/types/alta-items/dockpagetask) | class | `HashSetAction<DockObjectTaskArgument>` | 1 |  |
-| [`EdgeFaceFlairs`](/game-api/types/alta-items/edgefaceflairs) | class |  | 6 |  |
-| [`FaceEdgeCorner`](/game-api/types/alta-items/faceedgecorner) | class | `BookFlair` | 0 |  |
+| [`EdgeFaceFlairs`](/game-api/types/alta-items/edgefaceflairs) | class |  | 6 | Decorative corner and middle pieces for the front and back faces at a book's outer edge. Used by `FlairSettings`. |
+| [`FaceEdgeCorner`](/game-api/types/alta-items/faceedgecorner) | class | `BookFlair` | 0 | A book flair asset for the corner on a book's outer edge. No extra data beyond `BookFlair`. |
 | [`FaceEdgeCorner.Create`](/game-api/types/alta-items/faceedgecorner-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceEdgeCorner>` | 0 |  |
-| [`FaceEdgeMiddle`](/game-api/types/alta-items/faceedgemiddle) | class | `BookFlair` | 0 |  |
+| [`FaceEdgeMiddle`](/game-api/types/alta-items/faceedgemiddle) | class | `BookFlair` | 0 | A book flair asset for the middle of a cover's edge. A `BookFlair` ScriptableObject that adds its prefab to the book. |
 | [`FaceEdgeMiddle.Create`](/game-api/types/alta-items/faceedgemiddle-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceEdgeMiddle>` | 0 |  |
-| [`FaceEmblem`](/game-api/types/alta-items/faceemblem) | class | `BookFlair` | 0 |  |
+| [`FaceEmblem`](/game-api/types/alta-items/faceemblem) | class | `BookFlair` | 0 | A book flair asset for the emblem on a book's cover. Used by `FlairSettings` when there is no glyph. |
 | [`FaceEmblem.Create`](/game-api/types/alta-items/faceemblem-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceEmblem>` | 0 |  |
-| [`FaceEmblemFrame`](/game-api/types/alta-items/faceemblemframe) | class | `BookFlair` | 0 |  |
+| [`FaceEmblemFrame`](/game-api/types/alta-items/faceemblemframe) | class | `BookFlair` | 0 | A book flair asset for the frame around a book's cover emblem, glyph or letter. |
 | [`FaceEmblemFrame.Create`](/game-api/types/alta-items/faceemblemframe-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceEmblemFrame>` | 0 |  |
-| [`FaceSpineCorner`](/game-api/types/alta-items/facespinecorner) | class | `BookFlair` | 0 |  |
+| [`FaceSpineCorner`](/game-api/types/alta-items/facespinecorner) | class | `BookFlair` | 0 | A book flair asset for the corner by a book's spine. No extra data beyond `BookFlair`. |
 | [`FaceSpineCorner.Create`](/game-api/types/alta-items/facespinecorner-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceSpineCorner>` | 0 |  |
-| [`FaceSpineMiddle`](/game-api/types/alta-items/facespinemiddle) | class | `BookFlair` | 0 |  |
+| [`FaceSpineMiddle`](/game-api/types/alta-items/facespinemiddle) | class | `BookFlair` | 0 | A book flair asset for the middle of a cover next to the spine, used as the front or back middle in `SpineFaceFlairs`. |
 | [`FaceSpineMiddle.Create`](/game-api/types/alta-items/facespinemiddle-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FaceSpineMiddle>` | 0 |  |
-| [`FlairLodSet`](/game-api/types/alta-items/flairlodset) | class | `MonoBehaviour` | 3 |  |
-| [`FlairSet`](/game-api/types/alta-items/flairset) | class | `ScriptableObject` | 3 |  |
+| [`FlairLodSet`](/game-api/types/alta-items/flairlodset) | class | `MonoBehaviour` | 3 | Component on a book flair prefab listing its renderers for each of three LOD levels, so the book can add them to its LOD group. |
+| [`FlairSet`](/game-api/types/alta-items/flairset) | class | `ScriptableObject` | 3 | Asset with one set of decorative flairs for a book's pages: spine, spine face and edge face. `FlairSettings` holds the base sets. |
 | [`FlairSet.Create`](/game-api/types/alta-items/flairset-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<FlairSet>` | 0 |  |
 | [`FlairSettings`](/game-api/types/alta-items/flairsettings) | class |  | 13 | How a book's cover is decorated: flair meshes for the spine, spine face and edge face, materials, and one face mark (a glyph, an emblem or a letter). |
-| [`FlairSettings.FrameMaterialMode`](/game-api/types/alta-items/flairsettings-framematerialmode) | enum |  | 3 |  |
+| [`FlairSettings.FrameMaterialMode`](/game-api/types/alta-items/flairsettings-framematerialmode) | enum |  | 3 | Which material a book's emblem frame uses: unchanged from its prefab, the book material, or the flair material. |
 | [`GlobalPagesManager`](/game-api/types/alta-items/globalpagesmanager) | class | `NetworkEntityBehaviour`, `ISavable<GlobalPagesManagerSaveData>`, `ISavableSave<GlobalPagesManagerSaveData>`, +1 more | 9 | [Pages and books](../items/pages-and-books.md#globalpagesmanager): `Alta.Pages.GlobalPagesManager`, a `NetworkEntityBehaviour` singleton (`GlobalPagesManager.Instance`). The list is built and kept on the server and saved with the world. |
 | [`GlobalPagesManagerSaveData`](/game-api/types/alta-items/globalpagesmanagersavedata) | internal class | `NewSaveData<GlobalPagesManager, GlobalPagesManagerSaveData>` | 2 |  |
 | [`GlobalPagesManagerSaveData1`](/game-api/types/alta-items/globalpagesmanagersavedata1) | internal class | `OldSaveData` | 2 |  |
@@ -303,7 +303,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HapticWhileHeld`](/game-api/types/alta-items/hapticwhileheld) | class | `MonoBehaviour` | 2 |  |
 | [`IPageBasis`](/game-api/types/alta-items/ipagebasis) | interface |  | 4 | Something a page can be generated about, such as an item or recipe, so books and notes can describe it. |
 | [`MouldRestrictor`](/game-api/types/alta-items/mouldrestrictor) | class | `PositionRestrictor` | 2 | [Pages and books](../items/pages-and-books.md) |
-| [`NewPageArguments`](/game-api/types/alta-items/newpagearguments) | class |  | 5 |  |
+| [`NewPageArguments`](/game-api/types/alta-items/newpagearguments) | class |  | 5 | Message payload a `Book` sends to chunks when the server spawns a page into it. |
 | [`Page`](/game-api/types/alta-items/page) | class | `SimpleHashedGeneralValue<Page>`, `IPageBasis` | 6 | Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyph layout. Served by the static page provider. |
 | [`Page.Create`](/game-api/types/alta-items/page-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<Page>` | 0 |  |
 | [`PageCollection`](/game-api/types/alta-items/pagecollection) | class | `HashedGeneralValue<PageCollection>` | 9 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
@@ -321,10 +321,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PositionRestrictorSaveData`](/game-api/types/alta-items/positionrestrictorsavedata) | class | `NewSaveData<PositionRestrictor, PositionRestrictorSaveData>` | 7 | Save data for a `PositionRestrictor` (save version 3): the allowed area and the spawn point players are sent back to. |
 | [`PositionRestrictorSaveData2`](/game-api/types/alta-items/positionrestrictorsavedata2) | class | `OldSaveData` | 8 |  |
 | [`PositionRestrictorSaveDataOld1`](/game-api/types/alta-items/positionrestrictorsavedataold1) | class | `OldSaveData` | 2 |  |
-| [`SpineEdge`](/game-api/types/alta-items/spineedge) | class | `BookFlair` | 0 |  |
+| [`SpineEdge`](/game-api/types/alta-items/spineedge) | class | `BookFlair` | 0 | A book flair asset for the top or bottom end of the spine, used in `SpineFlairs`. |
 | [`SpineEdge.Create`](/game-api/types/alta-items/spineedge-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<SpineEdge>` | 0 |  |
-| [`SpineFaceFlairs`](/game-api/types/alta-items/spinefaceflairs) | class |  | 6 |  |
-| [`SpineFlairs`](/game-api/types/alta-items/spineflairs) | class |  | 3 |  |
-| [`SpineMiddle`](/game-api/types/alta-items/spinemiddle) | class | `BookFlair` | 0 |  |
+| [`SpineFaceFlairs`](/game-api/types/alta-items/spinefaceflairs) | class |  | 6 | Decorative corner and middle pieces for the front and back faces at a book's spine side. Used by `FlairSettings`. |
+| [`SpineFlairs`](/game-api/types/alta-items/spineflairs) | class |  | 3 | Decorative top, middle and bottom pieces for a book's spine. Used by `FlairSettings`. |
+| [`SpineMiddle`](/game-api/types/alta-items/spinemiddle) | class | `BookFlair` | 0 | A book flair asset for the middle of a book's spine. |
 | [`SpineMiddle.Create`](/game-api/types/alta-items/spinemiddle-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs.ScriptableObject<SpineMiddle>` | 0 |  |
-| [`TurnPageArguments`](/game-api/types/alta-items/turnpagearguments) | class |  | 5 |  |
+| [`TurnPageArguments`](/game-api/types/alta-items/turnpagearguments) | class |  | 5 | Message payload a `Book` sends to chunks when the server turns a page. |

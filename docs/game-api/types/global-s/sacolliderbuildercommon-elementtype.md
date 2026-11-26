@@ -1,6 +1,6 @@
 ---
 title: "SAColliderBuilderCommon.ElementType"
-description: "enum SAColliderBuilderCommon.ElementType in Root.Township."
+description: "Whether a collider builder setting (scale, minimum thickness, rotation optimisation) uses one value for all axes or one per axis."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SAColliderBuilderCommon.ElementType
 
 An **enum** in `Root.Township`, no namespace.
+
+Whether a collider builder setting (scale, minimum thickness, rotation optimisation) uses one value for all axes or one per axis.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SAColliderBuilderCommon`](/game-api/types/global-s/sacolliderbuildercommon)

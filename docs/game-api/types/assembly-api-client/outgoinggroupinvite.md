@@ -1,6 +1,6 @@
 ---
 title: "OutgoingGroupInvite"
-description: "class OutgoingGroupInvite in Alta.Api.Client."
+description: "An invite the group has sent to a user, which can be revoked through the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OutgoingGroupInvite
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+An invite the group has sent to a user, which can be revoked through the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`Outgoing`](/game-api/types/assembly-api-client/outgoing)
@@ -29,15 +31,15 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> | The invited user's group member info, including group and user ids. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-revoke" /><code>{"override Task Revoke()"}</code> | Withdraws the invite for that user in that group. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "PagedResult<T>"
-description: "class PagedResult<T> in Alta.Api.Client."
+description: "Pages through a paged Alta API endpoint, following the paginationToken response header."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PagedResult&lt;T&gt;
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
+
+Pages through a paged Alta API endpoint, following the `paginationToken` response header.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`IPagedResult<T>`](/game-api/types/assembly-api-client/ipagedresult-t)
@@ -26,34 +28,34 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-config" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config"}</code> |
-| <Link id="m-getnext" /><code>{"private readonly Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext"}</code> |
-| <Link id="m-hasrun" /><code>{"private bool hasRun"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-config" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config"}</code> | Page size and current pagination token. Defaults to a limit of 20. |
+| <Link id="m-getnext" /><code>{"private readonly Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext"}</code> | Function that sends the request for a page using the config. |
+| <Link id="m-hasrun" /><code>{"private bool hasRun"}</code> | Whether a page has been fetched yet. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |
-| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> | True before the first fetch, and after that while the API returned a pagination token. |
+| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; private set; }"}</code> | Results of the last page fetched, or of all pages after `GetAllAsync`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getallasync" /><code>{"async Task<IEnumerable<T>> GetAllAsync()"}</code> |
-| <Link id="m-getnextasync" /><code>{"async Task<IEnumerable<T>> GetNextAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getallasync" /><code>{"async Task<IEnumerable<T>> GetAllAsync()"}</code> | Fetches every remaining page and returns all results together, then resets to the first page. |
+| <Link id="m-getnextasync" /><code>{"async Task<IEnumerable<T>> GetNextAsync()"}</code> | Fetches the next page and returns its results. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleresponse" /><code>{"private async Task<IEnumerable<T>> HandleResponse(HttpResponseMessage response)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleresponse" /><code>{"private async Task<IEnumerable<T>> HandleResponse(HttpResponseMessage response)"}</code> | Reads the page's results and the next `paginationToken` header, or throws on an error status. |
 
 </details>
 

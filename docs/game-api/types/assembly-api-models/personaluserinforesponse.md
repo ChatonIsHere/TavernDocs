@@ -1,6 +1,6 @@
 ---
 title: "PersonalUserInfoResponse"
-description: "class PersonalUserInfoResponse in Alta.Api.DataTransferModels."
+description: "A user's public info plus their private name and email, from the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PersonalUserInfoResponse
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A user's public info plus their private name and email, from the Alta web API.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`PublicUserInfoResponse`](/game-api/types/assembly-api-models/publicuserinforesponse)
@@ -23,11 +25,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> |
-| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> |
-| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-email" /><code>{"string Email { get; set; }"}</code> | The user's email address. |
+| <Link id="m-firstname" /><code>{"string FirstName { get; set; }"}</code> | The user's first name. |
+| <Link id="m-lastname" /><code>{"string LastName { get; set; }"}</code> | The user's last name. |
 
 ## Used in
 

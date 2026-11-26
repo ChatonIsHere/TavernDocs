@@ -28,13 +28,13 @@ One hand's input component on the platform player. Holds the hand index, raw but
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-actionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager"}</code> |
-| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> |
-| <Link id="m-inputcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController"}</code> |
-| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> |
-| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" actionsManager"}</code> | The actions manager for this hand. |
+| <Link id="m-handindex" /><code>{"private "}<Link to="/game-api/types/global-e-h/handindex">{"HandIndex"}</Link>{" handIndex"}</code> | Which hand this input is for. |
+| <Link id="m-inputcontroller" /><code>{"private "}<Link to="/game-api/types/global-c-d/deviceinputcontroller">{"DeviceInputController"}</Link>{" inputController"}</code> | The platform controller feeding this hand; set by `SetPlatformController`. |
+| <Link id="m-targettransform" /><code>{"private Transform targetTransform"}</code> | Backing field for `TargetTransform`. |
+| <Link id="m-vrtrackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/vrtrackeddevice">{"VRTrackedDevice"}</Link>{" vrTrackedDevice"}</code> | Tracked device for the target transform; disposed when the target changes. |
 
 </details>
 
@@ -55,9 +55,9 @@ One hand's input component on the platform player. Holds the hand index, raw but
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-trackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-trackeddevice" /><code>{"private "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" "}<Link to="/game-api/types/alta-menus/trackeddevice">{"TrackedDevice"}</Link>{" { get; }"}</code> | The left or right controller device, by `handIndex`. |
 
 </details>
 
@@ -79,17 +79,17 @@ One hand's input component on the platform player. Holds the hand index, raw but
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-createtrackeddevice" /><code>{"private void CreateTrackedDevice()"}</code> |
-| <Link id="m-haptic" /><code>{"private IEnumerator Haptic(float strength, float duration, float frequency) (iterator)"}</code> |
-| <Link id="m-haptic-2" /><code>{"private IEnumerator Haptic(AnimationCurve curve, float strength, float frequency) (iterator)"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-positionpostprocessor" /><code>{"private void PositionPostProcessor(ref Vector3 input)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates the D-pad helper. |
+| <Link id="m-createtrackeddevice" /><code>{"private void CreateTrackedDevice()"}</code> | Empty in this build. |
+| <Link id="m-haptic" /><code>{"private IEnumerator Haptic(float strength, float duration, float frequency) (iterator)"}</code> | Coroutine that plays a haptic pulse, either at a fixed strength for a duration or following a curve, scaled by the haptics strength setting. |
+| <Link id="m-haptic-2" /><code>{"private IEnumerator Haptic(AnimationCurve curve, float strength, float frequency) (iterator)"}</code> | Coroutine that plays a haptic pulse, either at a fixed strength for a duration or following a curve, scaled by the haptics strength setting. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Disables the D-pad, disposes the tracked device and stops the pre-render position update. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Enables the D-pad and hooks the pre-render position update. |
+| <Link id="m-positionpostprocessor" /><code>{"private void PositionPostProcessor(ref Vector3 input)"}</code> | Adds the player height fix to a tracked position's height. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Pushes the platform controller's input into this hand and updates the D-pad. |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> | Just before rendering, asks the platform controller to update this hand's position. |
 
 </details>
 

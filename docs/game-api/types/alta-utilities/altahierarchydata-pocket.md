@@ -1,6 +1,6 @@
 ---
 title: "AltaHierarchyData.Pocket"
-description: "class AltaHierarchyData.Pocket in Root.Township."
+description: "A named group of objects kept in the editor hierarchy tool's data."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaHierarchyData.Pocket
 
 A **class** in `Root.Township`, `Alta.Utilities.Hierarchy`.
+
+A named group of objects kept in the editor hierarchy tool's data. Editor only.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`AltaHierarchyData`](/game-api/types/alta-utilities/altahierarchydata)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.Utilities.Hierarchy`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-items" /><code>{"List<Object> items"}</code> |
-| <Link id="m-name" /><code>{"string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code>{"List<Object> items"}</code> | Objects in the pocket. |
+| <Link id="m-name" /><code>{"string name"}</code> | Pocket name. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "IListenToMiningEcho"
-description: "interface IListenToMiningEcho in Root.Township."
+description: "Something that reacts to a mining echo spreading out."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, no namespace.
 
+Something that reacts to a mining echo spreading out. Register with `MiningEcho.StartListening`; `Phantom` uses it to crack.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`Phantom`](/game-api/types/alta-intelligence/phantom)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-update" /><code>{"void Update(Vector3 center, float radius)"}</code> | Called each frame an echo is active with its centre and current radius. |
 
 ## Used in
 

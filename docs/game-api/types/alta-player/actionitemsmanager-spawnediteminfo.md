@@ -1,6 +1,6 @@
 ---
 title: "ActionItemsManager.SpawnedItemInfo"
-description: "struct ActionItemsManager.SpawnedItemInfo in Root.Township."
+description: "Private message data the server sends to chunks when an action item (a summoned quick access item) is spawned or removed for a player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActionItemsManager.SpawnedItemInfo
 
 A **private struct** in `Root.Township`, `Alta.QuickAccessActions`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private message data the server sends to chunks when an action item (a summoned quick access item) is spawned or removed for a player.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`ActionItemsManager`](/game-api/types/alta-player/actionitemsmanager)
@@ -23,13 +25,13 @@ A **private struct** in `Root.Township`, `Alta.QuickAccessActions`. Reach it thr
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-actionitemindex" /><code>{"int actionItemIndex"}</code> |
-| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> |
-| <Link id="m-owner" /><code>{"int owner"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-spawnedidentifier" /><code>{"uint spawnedIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionitemindex" /><code>{"int actionItemIndex"}</code> | Index of the action item in the manager's list. |
+| <Link id="m-isspawn" /><code>{"bool isSpawn"}</code> | True when the item was spawned, false when it was removed. |
+| <Link id="m-owner" /><code>{"int owner"}</code> | User ID of the player the item belongs to. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the item was spawned or removed. |
+| <Link id="m-spawnedidentifier" /><code>{"uint spawnedIdentifier"}</code> | Entity ID of the spawned item; 0 when removing. |
 
 ## Used in
 

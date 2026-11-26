@@ -28,11 +28,11 @@ An item that shows a ghost preview at a matching `GhostSnapSlot` while held, and
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghostsnapchannel">{"GhostSnapChannel"}</Link>{" channel"}</code> |
-| <Link id="m-ghostversion" /><code>{"private GameObject ghostVersion"}</code> |
-| <Link id="m-parentslotindex" /><code>{"private uint parentSlotIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"private "}<Link to="/game-api/types/global-e-h/ghostsnapchannel">{"GhostSnapChannel"}</Link>{" channel"}</code> | Which ghost snap channel this object belongs to; slots only take matching objects. Backing field for `Channel`. |
+| <Link id="m-ghostversion" /><code>{"private GameObject ghostVersion"}</code> | The see-through preview object shown at a slot while the item is held near it. |
+| <Link id="m-parentslotindex" /><code>{"private uint parentSlotIndex"}</code> | Index of the slot this object is snapped to. Backing field for `ParentSlotIndex`. |
 
 </details>
 
@@ -56,13 +56,13 @@ An item that shows a ghost preview at a matching `GhostSnapSlot` while held, and
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ensureghost" /><code>{"private bool EnsureGhost()"}</code> |
-| <Link id="m-interactionended" /><code>{"private void InteractionEnded("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-interactionstarted" /><code>{"private void InteractionStarted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hides the ghost and hooks the pickup's grab and release events. |
+| <Link id="m-ensureghost" /><code>{"private bool EnsureGhost()"}</code> | Creates the ghost from the prefab's `ghostVersion` if this copy has none; logs an error if the prefab has none either. |
+| <Link id="m-interactionended" /><code>{"private void InteractionEnded("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | When the last hand lets go while a ghost is shown, the server tries to snap the object to that slot; the ghost is hidden. |
+| <Link id="m-interactionstarted" /><code>{"private void InteractionStarted("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Shows the ghost again at the current slot when the object is picked up. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Destroys the ghost object. |
 
 </details>
 

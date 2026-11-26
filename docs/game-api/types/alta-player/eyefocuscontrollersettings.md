@@ -30,29 +30,29 @@ Settings asset for `EyeFocusController`, which picks what a character's eyes loo
 <details>
 <summary>21 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseupdateinterval" /><code>{"private float baseUpdateInterval"}</code> |
-| <Link id="m-defaultfocusoffset" /><code>{"private Vector3 defaultFocusOffset"}</code> |
-| <Link id="m-detectionoffset" /><code>{"private Vector3 detectionOffset"}</code> |
-| <Link id="m-detectionrange" /><code>{"private float detectionRange"}</code> |
-| <Link id="m-disconnecthorizontalangletan" /><code>{"private float disconnectHorizontalAngleTan"}</code> |
-| <Link id="m-disconnectverticalangletan" /><code>{"private float disconnectVerticalAngleTan"}</code> |
-| <Link id="m-distancedetriment" /><code>{"private AnimationCurve distanceDetriment"}</code> |
-| <Link id="m-horizontalangledetriment" /><code>{"private AnimationCurve horizontalAngleDetriment"}</code> |
-| <Link id="m-isusingrotationlimits" /><code>{"private bool isUsingRotationLimits"}</code> |
-| <Link id="m-layerdetrimentmask" /><code>{"private float[] layerDetrimentMask"}</code> |
-| <Link id="m-lefteyesplinerotationlimitpoints" /><code>{"private AnimationCurve leftEyeSplineRotationLimitPoints"}</code> |
-| <Link id="m-lookat" /><code>{"private LayerMask lookAt"}</code> |
-| <Link id="m-maximumdetriment" /><code>{"private float maximumDetriment"}</code> |
-| <Link id="m-maximumoverlap" /><code>{"private int maximumOverlap"}</code> |
-| <Link id="m-missingrigidbodydetriment" /><code>{"private float missingRigidbodyDetriment"}</code> |
-| <Link id="m-righteyesplinerotationlimitpoints" /><code>{"private AnimationCurve rightEyeSplineRotationLimitPoints"}</code> |
-| <Link id="m-updatemaximum" /><code>{"private float updateMaximum"}</code> |
-| <Link id="m-updateminimum" /><code>{"private float updateMinimum"}</code> |
-| <Link id="m-updateweaknessmultiplier" /><code>{"private float updateWeaknessMultiplier"}</code> |
-| <Link id="m-velocitydetriment" /><code>{"private AnimationCurve velocityDetriment"}</code> |
-| <Link id="m-verticalangledetriment" /><code>{"private AnimationCurve verticalAngleDetriment"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseupdateinterval" /><code>{"private float baseUpdateInterval"}</code> | Base time before the eyes look for a new target. The interval is this minus `updateWeaknessMultiplier` times the target's score. |
+| <Link id="m-defaultfocusoffset" /><code>{"private Vector3 defaultFocusOffset"}</code> | Where the eyes focus, relative to the head, when there is no target. |
+| <Link id="m-detectionoffset" /><code>{"private Vector3 detectionOffset"}</code> | Centre of the sphere searched for targets, relative to the head. |
+| <Link id="m-detectionrange" /><code>{"private float detectionRange"}</code> | Radius of the target search sphere, scaled by the player's size. |
+| <Link id="m-disconnecthorizontalangletan" /><code>{"private float disconnectHorizontalAngleTan"}</code> | Tangent of the sideways angle past which a target is dropped or ignored. |
+| <Link id="m-disconnectverticalangletan" /><code>{"private float disconnectVerticalAngleTan"}</code> | Tangent of the vertical angle past which a target is dropped or ignored. |
+| <Link id="m-distancedetriment" /><code>{"private AnimationCurve distanceDetriment"}</code> | Score penalty by distance from the head. Lowest score wins. |
+| <Link id="m-horizontalangledetriment" /><code>{"private AnimationCurve horizontalAngleDetriment"}</code> | Score penalty by sideways angle in degrees. |
+| <Link id="m-isusingrotationlimits" /><code>{"private bool isUsingRotationLimits"}</code> | Turns on eye rotation limits. Not read by game code. |
+| <Link id="m-layerdetrimentmask" /><code>{"private float[] layerDetrimentMask"}</code> | Score penalty per physics layer, indexed by layer number. |
+| <Link id="m-lefteyesplinerotationlimitpoints" /><code>{"private AnimationCurve leftEyeSplineRotationLimitPoints"}</code> | Left eye rotation limit curve. Not read by game code. |
+| <Link id="m-lookat" /><code>{"private LayerMask lookAt"}</code> | Physics layers searched for things to look at. |
+| <Link id="m-maximumdetriment" /><code>{"private float maximumDetriment"}</code> | Highest score a candidate can have and still be looked at. |
+| <Link id="m-maximumoverlap" /><code>{"private int maximumOverlap"}</code> | Maximum colliders gathered per search. Default 100. |
+| <Link id="m-missingrigidbodydetriment" /><code>{"private float missingRigidbodyDetriment"}</code> | Score penalty for colliders without a rigidbody. |
+| <Link id="m-righteyesplinerotationlimitpoints" /><code>{"private AnimationCurve rightEyeSplineRotationLimitPoints"}</code> | Right eye rotation limit curve. Not read by game code. |
+| <Link id="m-updatemaximum" /><code>{"private float updateMaximum"}</code> | Longest time before looking for a new target. Default 5. |
+| <Link id="m-updateminimum" /><code>{"private float updateMinimum"}</code> | Shortest time before looking for a new target. |
+| <Link id="m-updateweaknessmultiplier" /><code>{"private float updateWeaknessMultiplier"}</code> | How much a target's score shortens the time before the next search. |
+| <Link id="m-velocitydetriment" /><code>{"private AnimationCurve velocityDetriment"}</code> | Score change by the candidate's speed. Moving things score lower and so draw the eye. |
+| <Link id="m-verticalangledetriment" /><code>{"private AnimationCurve verticalAngleDetriment"}</code> | Score penalty by vertical angle in degrees. |
 
 </details>
 

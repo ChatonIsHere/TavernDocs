@@ -1,6 +1,6 @@
 ---
 title: "PopulationDelegate"
-description: "delegate PopulationDelegate in Root.Township."
+description: "Callback that gets a PopulationSample."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationDelegate
 
 A **delegate** in `Root.Township`, `Alta.Populations`.
+
+Callback that gets a `PopulationSample`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MulticastDelegate`

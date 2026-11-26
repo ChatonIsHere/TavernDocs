@@ -1,6 +1,6 @@
 ---
 title: "OriginSingleValue"
-description: "class OriginSingleValue in Root.Township."
+description: "A serializable pair of a loot Origin and a float value, the SingleValue form used for weighting origins in loot assets."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OriginSingleValue
 
 A **class** in `Root.Township`, `Alta.Loot`.
+
+A serializable pair of a loot `Origin` and a float value, the `SingleValue` form used for weighting origins in loot assets.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`SingleValue<Origin>`](/game-api/types/alta-utilities/singlevalue-t)

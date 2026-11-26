@@ -1,6 +1,6 @@
 ---
 title: "GameActionStat"
-description: "class GameActionStat in Root.Township."
+description: "A general-purpose game action asset on the General channel that accepts any argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameActionStat
 
 A **class** in `Root.Township`, no namespace.
+
+A general-purpose game action asset on the General channel that accepts any argument. Used for plain stat-counting actions.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`GameAction`](/game-api/types/global-e-h/gameaction)
@@ -24,15 +26,15 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.General`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalid" /><code>{"override bool IsValid("}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Always true. |
 
 ## Used in
 

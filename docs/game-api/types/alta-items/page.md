@@ -36,10 +36,10 @@ Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyp
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-components" /><code>{"private "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] components"}</code> |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-components" /><code>{"private "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{"[] components"}</code> | Backing field for `Components`, the hashed assets shown on the page. |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" data"}</code> | Backing field for `Data`, the page content. Reading `Data` first ties it to this page. |
 
 </details>
 
@@ -60,9 +60,9 @@ Asset for a fixed (hand-made) page, such as a recipe or lore page, with its glyp
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-createpage" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Alta.Pages.IPageBasis.CreatePage(int preferredProvider)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createpage" /><code>{"private "}<Link to="/game-api/types/alta-items/pagedata">{"PageData"}</Link>{" Alta.Pages.IPageBasis.CreatePage(int preferredProvider)"}</code> | Explicit `IPageBasis` implementation: returns this page's static `Data`. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "CustomizationItemAndArguments"
-description: "struct CustomizationItemAndArguments in Root.Township."
+description: "A customization definition paired with the arguments (such as colours) to apply it with."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Customization`.
 
+A customization definition paired with the arguments (such as colours) to apply it with.
+
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> | Arguments to apply the definition with. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" definition"}</code> | The cosmetic or customization definition. |
 
 ## Used in
 

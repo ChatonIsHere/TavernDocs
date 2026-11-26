@@ -1,6 +1,6 @@
 ---
 title: "HashedGeneralValue"
-description: "abstract class HashedGeneralValue in Alta.Values."
+description: "Base for game data assets identified by a hash."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HashedGeneralValue
 
 An **abstract class** in `Alta.Values`, `Alta`.
+
+Base for game data assets identified by a hash. `HashedGeneralValue<T>` builds on it to load every asset of a type from Resources and look them up by hash or name.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -24,10 +26,10 @@ An **abstract class** in `Alta.Values`, `Alta`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-allvalues" /><code>{"protected static Dictionary<Type, IEnumerable<"}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{">> allValues"}</code> |
-| <Link id="m-hash" /><code>{"protected int hash"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allvalues" /><code>{"protected static Dictionary<Type, IEnumerable<"}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{">> allValues"}</code> | The loaded values for each type, filled in by each `HashedGeneralValue<T>.CheckItems`. |
+| <Link id="m-hash" /><code>{"protected int hash"}</code> | Backing field for `Hash`, stored as an int and read-only in the inspector. |
 
 <details>
 <summary>1 private and internal field</summary>
@@ -40,15 +42,15 @@ An **abstract class** in `Alta.Values`, `Alta`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hash-2" /><code>{"uint Hash { get; }"}</code> | The asset's hash, its id when written to streams and saves. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-oftype" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" OfType(Type type, uint hash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-oftype" /><code>{"static "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" OfType(Type type, uint hash)"}</code> | Finds the value of the given type with the given hash, running that type's `CheckItems` first if it isn't loaded yet. |
 
 ## Used in
 

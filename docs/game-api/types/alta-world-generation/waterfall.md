@@ -27,9 +27,9 @@ A waterfall in river generation, from a top river node to a bottom one, with the
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> paths"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-paths" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> paths"}</code> | River paths that flow over this waterfall, added with `AddPath`. Backing field for `Paths`. |
 
 </details>
 

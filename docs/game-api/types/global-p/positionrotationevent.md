@@ -1,6 +1,6 @@
 ---
 title: "PositionRotationEvent"
-description: "class PositionRotationEvent in Root.Township."
+description: "Serializable AltaEvent with a position and a rotation argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionRotationEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `AltaEvent` with a position and a rotation argument. Runs inspector-wired listeners and C# handlers.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`AltaEvent<Vector3, Quaternion, PositionRotationHandler>`](/game-api/types/global-a-b/altaevent-t1-t2-unityeventt1t2)

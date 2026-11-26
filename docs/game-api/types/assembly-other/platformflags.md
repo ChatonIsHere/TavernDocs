@@ -1,6 +1,6 @@
 ---
 title: "PlatformFlags"
-description: "enum PlatformFlags in Alta.PlatformInformation.Runtime."
+description: "Flags for the platform the game runs on: Windows, Linux, Android, Android preview, and Quest and Pico (both include the Android bit), or Unknown."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlatformFlags
 
 An **enum** in `Alta.PlatformInformation.Runtime`, `Alta.PlatformInformation`.
+
+Flags for the platform the game runs on: Windows, Linux, Android, Android preview, and Quest and Pico (both include the Android bit), or Unknown.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Attributes** `Flags`

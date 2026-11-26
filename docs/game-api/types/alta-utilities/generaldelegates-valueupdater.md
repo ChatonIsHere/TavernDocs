@@ -1,6 +1,6 @@
 ---
 title: "GeneralDelegates.ValueUpdater"
-description: "delegate GeneralDelegates.ValueUpdater in Root.Township."
+description: "Callback that can change a float passed by ref."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneralDelegates.ValueUpdater
 
 A **delegate** in `Root.Township`, `Alta.Utilities`.
+
+Callback that can change a float passed by `ref`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`GeneralDelegates`](/game-api/types/alta-utilities/generaldelegates)

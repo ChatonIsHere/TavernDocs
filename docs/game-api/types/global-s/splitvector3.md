@@ -1,6 +1,6 @@
 ---
 title: "SplitVector3"
-description: "struct SplitVector3 in Root.Township."
+description: "A vector stored as a unit direction plus a length."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SplitVector3
 
 A **struct** in `Root.Township`, no namespace.
+
+A vector stored as a unit direction plus a length. Used for hand body offsets and grip strength in climbing.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 
@@ -23,19 +25,19 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-direction" /><code>{"Vector3 direction"}</code> |
-| <Link id="m-length" /><code>{"float length"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-direction" /><code>{"Vector3 direction"}</code> | Unit direction. Dividing by zero length gives NaN when built from a zero vector. |
+| <Link id="m-length" /><code>{"float length"}</code> | Magnitude of the original vector. |
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-down" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Down { get; }"}</code> |
-| <Link id="m-right" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Right { get; }"}</code> |
-| <Link id="m-up" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Up { get; }"}</code> |
-| <Link id="m-zero" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Zero { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-down" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Down { get; }"}</code> | Down direction with length 1. |
+| <Link id="m-right" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Right { get; }"}</code> | Right direction with length 1. |
+| <Link id="m-up" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Up { get; }"}</code> | Up direction with length 1. |
+| <Link id="m-zero" /><code>{"static "}<Link to="/game-api/types/global-s/splitvector3">{"SplitVector3"}</Link>{" Zero { get; }"}</code> | Zero direction with length 0. |
 
 ## Used in
 

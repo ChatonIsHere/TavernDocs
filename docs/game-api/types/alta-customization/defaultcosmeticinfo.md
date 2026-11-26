@@ -1,6 +1,6 @@
 ---
 title: "DefaultCosmeticInfo"
-description: "class DefaultCosmeticInfo in Root.Township."
+description: "A cosmetic every player must wear in a category unless they pick another, with its colours."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DefaultCosmeticInfo
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+A cosmetic every player must wear in a category unless they pick another, with its colours. Listed in `CustomizationSettings.RequiredDefaults` and added when loading a look that lacks one.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `ISerializationCallbackReceiver`
@@ -24,36 +26,36 @@ A **class** in `Root.Township`, `Alta.Customization`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string name"}</code> | Inspector label, copied from the category. |
 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> |
-| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] colors"}</code> |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category"}</code> | Backing field for `Category`. |
+| <Link id="m-colors" /><code>{"private "}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"[] colors"}</code> | Backing field for `Colors`. |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" Category { get; }"}</code> |
-| <Link id="m-colors-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> Colors { get; }"}</code> |
-| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-category-2" /><code><Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" Category { get; }"}</code> | The customization category this default fills. |
+| <Link id="m-colors-2" /><code>{"IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> Colors { get; }"}</code> | Colours applied with the default item. |
+| <Link id="m-definition-2" /><code><Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{" Definition { get; }"}</code> | The cosmetic used as the default. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-onafterdeserialize" /><code>{"void OnAfterDeserialize()"}</code> |
-| <Link id="m-onbeforeserialize" /><code>{"void OnBeforeSerialize()"}</code> |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onafterdeserialize" /><code>{"void OnAfterDeserialize()"}</code> | Does nothing. |
+| <Link id="m-onbeforeserialize" /><code>{"void OnBeforeSerialize()"}</code> | Copies the category's name into `name` so the inspector list is labelled. |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Lists the name, category, definition and colours. |
 
 ## Used in
 

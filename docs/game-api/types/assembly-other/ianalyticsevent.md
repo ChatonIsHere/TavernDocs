@@ -1,6 +1,6 @@
 ---
 title: "IAnalyticsEvent"
-description: "interface IAnalyticsEvent in Alta.Analytics.Runtime."
+description: "An analytics event: a name, an optional user id and its properties, plus instruments that add extra data."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,23 +12,25 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Analytics.Runtime`, `Alta.Analytics`.
 
+An analytics event: a name, an optional user id and its properties, plus instruments that add extra data. Sent through `IAnalyticsService.Send`.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IAnalyticsPropertyWriter`](/game-api/types/assembly-other/ianalyticspropertywriter)
 - **Derived types** [`AnalyticsEvent`](/game-api/types/assembly-other/analyticsevent)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> |
-| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> |
-| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/assembly-other/ireadonlyanalyticsdata">{"IReadonlyAnalyticsData"}</Link>{" Data { get; }"}</code> | The event's properties so far, read-only. |
+| <Link id="m-eventname" /><code>{"string EventName { get; }"}</code> | Name of the event, such as "Micro Tutorial Enter". |
+| <Link id="m-userid" /><code>{"int? UserId { get; }"}</code> | Id of the player the event is about, or null. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addinstrument" /><code>{"void AddInstrument("}<Link to="/game-api/types/assembly-other/ianalyticsinstrument">{"IAnalyticsInstrument"}</Link>{" instrument)"}</code> | Adds an instrument that writes extra properties into the event. It runs straight away if a resolver is set, otherwise when the event is sent. |
 
 ## Used in
 

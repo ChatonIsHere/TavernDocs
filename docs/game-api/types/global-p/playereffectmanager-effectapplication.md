@@ -1,6 +1,6 @@
 ---
 title: "PlayerEffectManager.EffectApplication"
-description: "class PlayerEffectManager.EffectApplication in Root.Township."
+description: "Private helper of PlayerEffectManager that shows one pooled effect (smoke, burn or a stat buff or debuff) at one EffectPosition on the player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEffectManager.EffectApplication
 
 A **private class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private helper of `PlayerEffectManager` that shows one pooled effect (smoke, burn or a stat buff or debuff) at one `EffectPosition` on the player.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerEffectManager`](/game-api/types/global-p/playereffectmanager)
@@ -26,27 +28,27 @@ A **private class** in `Root.Township`, no namespace. Reach it through att-stubs
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition"}</code> | The pool definition the effect comes from. |
+| <Link id="m-effectposition" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition"}</code> | Where on the body the effect is placed. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-activeeffect" /><code><Link to="/game-api/types/global-p/playereffectparticle">{"PlayerEffectParticle"}</Link>{" ActiveEffect { get; private set; }"}</code> |
-| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeeffect" /><code><Link to="/game-api/types/global-p/playereffectparticle">{"PlayerEffectParticle"}</Link>{" ActiveEffect { get; private set; }"}</code> | The pooled particle currently shown, or null. |
+| <Link id="m-isvalid" /><code>{"bool IsValid { get; }"}</code> | False when no definition was given, meaning the effect is culled at this position; every method then does nothing. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-activate" /><code>{"void Activate()"}</code> |
-| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> |
-| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activate" /><code>{"void Activate()"}</code> | Takes the effect from the pool and places it, if it is not already showing. |
+| <Link id="m-deactivate" /><code>{"void Deactivate()"}</code> | Releases the active effect back to the pool. |
+| <Link id="m-setsize" /><code>{"void SetSize(float size)"}</code> | Activates the effect and scales it by the position's size times the given value. |
 
 ## Used in
 

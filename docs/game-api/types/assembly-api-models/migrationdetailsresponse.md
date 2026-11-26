@@ -1,6 +1,6 @@
 ---
 title: "MigrationDetailsResponse"
-description: "class MigrationDetailsResponse in Alta.Api.DataTransferModels."
+description: "A server's latest save storage (EFS) migration, from LowLevelApiClient.GetLatestEfsMigrationForServer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+A server's latest save storage (EFS) migration, from `LowLevelApiClient.GetLatestEfsMigrationForServer`.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hasmigrated" /><code>{"bool HasMigrated { get; set; }"}</code> |
-| <Link id="m-migrationdatetime" /><code>{"DateTime MigrationDateTime { get; set; }"}</code> |
-| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasmigrated" /><code>{"bool HasMigrated { get; set; }"}</code> | True if the server's saves have been migrated. |
+| <Link id="m-migrationdatetime" /><code>{"DateTime MigrationDateTime { get; set; }"}</code> | When the migration happened. |
+| <Link id="m-serverid" /><code>{"int ServerId { get; set; }"}</code> | The server the details are for. |
 
 ## Used in
 

@@ -33,11 +33,11 @@ File format for one chunk's save: a list of versions, each with the chunk's own 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentsaveversion" /><code>{"private const "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" CurrentSaveVersion"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-usecount" /><code>{"private int useCount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentsaveversion" /><code>{"private const "}<Link to="/game-api/types/alta-world/chunksaveversion">{"ChunkSaveVersion"}</Link>{" CurrentSaveVersion"}</code> | The chunk save version this build writes (`Release1720`). |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for date read errors. |
+| <Link id="m-usecount" /><code>{"private int useCount"}</code> | Reference count; `Clone` increments it and `Dispose` only frees saved objects when it reaches zero. |
 
 </details>
 
@@ -66,10 +66,10 @@ File format for one chunk's save: a list of versions, each with the chunk's own 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-loaddate" /><code>{"private void LoadDate(BinaryReader reader)"}</code> |
-| <Link id="m-savedate" /><code>{"private void SaveDate(BinaryWriter writer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loaddate" /><code>{"private void LoadDate(BinaryReader reader)"}</code> | Reads the saved date after a version block if at least 12 bytes remain; falls back to now on a bad date. |
+| <Link id="m-savedate" /><code>{"private void SaveDate(BinaryWriter writer)"}</code> | Writes `Date` (or now) as six 16-bit values: year, month, day, hour, minute, second. |
 
 </details>
 

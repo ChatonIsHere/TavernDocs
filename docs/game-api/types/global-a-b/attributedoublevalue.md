@@ -1,6 +1,6 @@
 ---
 title: "AttributeDoubleValue"
-description: "class AttributeDoubleValue in Root.Township."
+description: "Serializable pair of values tied to a BiomeAttribute, used in biome generation settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttributeDoubleValue
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable pair of values tied to a `BiomeAttribute`, used in biome generation settings.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`DoubleValue<BiomeAttribute>`](/game-api/types/alta-utilities/doublevalue-t)

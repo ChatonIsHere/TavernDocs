@@ -1,6 +1,6 @@
 ---
 title: "HandGripConfiguration.Finger"
-description: "class HandGripConfiguration.Finger in Root.Township."
+description: "Setup for one finger of the hand grip: its joints and how skeletal input is corrected."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandGripConfiguration.Finger
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Setup for one finger of the hand grip: its joints and how skeletal input is corrected. Read by `HandGrip` to build its finger joints.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`HandGripConfiguration`](/game-api/types/alta-player/handgripconfiguration)
@@ -27,23 +29,23 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isthumb" /><code>{"private bool isThumb"}</code> |
-| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] joints"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
-| <Link id="m-skeletalinputcorrection" /><code>{"private AnimationCurve skeletalInputCorrection"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isthumb" /><code>{"private bool isThumb"}</code> | Backing field for `IsThumb`. |
+| <Link id="m-joints" /><code>{"private "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] joints"}</code> | Backing field for `Joints`. |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
+| <Link id="m-skeletalinputcorrection" /><code>{"private AnimationCurve skeletalInputCorrection"}</code> | Backing field for `SkeletalInputCorrection`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isthumb-2" /><code>{"bool IsThumb { get; }"}</code> |
-| <Link id="m-joints-2" /><code><Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] Joints { get; }"}</code> |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
-| <Link id="m-skeletalinputcorrection-2" /><code>{"AnimationCurve SkeletalInputCorrection { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isthumb-2" /><code>{"bool IsThumb { get; }"}</code> | True for the thumb, which gets thumb joints instead of normal ones. |
+| <Link id="m-joints-2" /><code><Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{"[] Joints { get; }"}</code> | Joint settings from the base out: radius, length, maximum curl and curl step. |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | Finger name. |
+| <Link id="m-skeletalinputcorrection-2" /><code>{"AnimationCurve SkeletalInputCorrection { get; }"}</code> | Curve applied to the skeletal curl input before the joints use it. Defaults to a line from 0 to 0.9. |
 
 ## Used in
 

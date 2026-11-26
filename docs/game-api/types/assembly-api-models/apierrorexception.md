@@ -1,6 +1,6 @@
 ---
 title: "ApiErrorException"
-description: "class ApiErrorException in Alta.Api.DataTransferModels."
+description: "Exception that carries an ApiError and an HTTP status code (500 unless given)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ApiErrorException
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Exceptions`.
+
+Exception that carries an `ApiError` and an HTTP status code (500 unless given).
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** `Exception`
@@ -24,10 +26,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Excep
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-apierror" /><code><Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> |
-| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apierror" /><code><Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" { get; }"}</code> | The error body. |
+| <Link id="m-httpcode" /><code>{"HttpStatusCode HttpCode { get; }"}</code> | HTTP status code for the error. |
 
 ## Used in
 

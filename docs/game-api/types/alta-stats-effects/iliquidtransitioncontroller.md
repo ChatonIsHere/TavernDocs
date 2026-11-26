@@ -1,6 +1,6 @@
 ---
 title: "ILiquidTransitionController"
-description: "interface ILiquidTransitionController in Root.Township."
+description: "Marker for whatever is driving a liquid transition (pouring or gradual drinking)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ILiquidTransitionController
 
 An **interface** in `Root.Township`, `Alta.Liquid`.
+
+Marker for whatever is driving a liquid transition (pouring or gradual drinking). `LiquidTransition` uses it to track who controls it. `PourableContainer` and `LiquidGradualDrinker` implement it.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Derived types** [`PourableContainer`](/game-api/types/alta-stats-effects/pourablecontainer), [`LiquidGradualDrinker`](/game-api/types/global-i-l/liquidgradualdrinker)

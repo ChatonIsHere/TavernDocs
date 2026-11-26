@@ -1,6 +1,6 @@
 ---
 title: "ControllerActionsManager"
-description: "class ControllerActionsManager in Root.Township."
+description: "Per-hand component that holds the hand's ControllerActions and adds, sets or removes controller modes (input mapping sets) for the active XR platform."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControllerActionsManager
 
 A **class** in `Root.Township`, no namespace.
+
+Per-hand component that holds the hand's `ControllerActions` and adds, sets or removes controller modes (input mapping sets) for the active XR platform. On each `PlayerInput`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,47 +29,47 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodesettings">{"ControllerModeSettings"}</Link>{" controllerSettings"}</code> |
-| <Link id="m-defaultmodes" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] defaultModes"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controllersettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodesettings">{"ControllerModeSettings"}</Link>{" controllerSettings"}</code> | Settings asset that maps mode types to their per-platform mappings. |
+| <Link id="m-defaultmodes" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"[] defaultModes"}</code> | Modes added by `AddDefaultModes`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-playerinput" /><code>{"private "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput"}</code> | This hand's `PlayerInput`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-controlleractions" /><code><Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" "}<Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" { get; private set; }"}</code> |
-| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controlleractions" /><code><Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" "}<Link to="/game-api/types/global-c-d/controlleractions">{"ControllerActions"}</Link>{" { get; private set; }"}</code> | This hand's action set, made in `Awake`. |
+| <Link id="m-item" /><code><Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" this["}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" type] { get; }"}</code> | Gets this hand's controller action of the given type. |
 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-otheractionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" OtherActionsManager { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-otheractionsmanager" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleractionsmanager">{"ControllerActionsManager"}</Link>{" OtherActionsManager { get; }"}</code> | The other hand's actions manager, used for the both-hands options. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-addcontrollermode" /><code>{"void AddControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
-| <Link id="m-adddefaultmodes" /><code>{"void AddDefaultModes()"}</code> |
-| <Link id="m-clearallcontrollermappings" /><code>{"void ClearAllControllerMappings(bool isForBothHands)"}</code> |
-| <Link id="m-removecontrollermode" /><code>{"void RemoveControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
-| <Link id="m-setcontrollermode" /><code>{"void SetControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addcontrollermode" /><code>{"void AddControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> | Adds the mode's mapping for the active platform on top of the current ones, optionally on both hands. |
+| <Link id="m-adddefaultmodes" /><code>{"void AddDefaultModes()"}</code> | Adds every mode in `defaultModes` to this hand. |
+| <Link id="m-clearallcontrollermappings" /><code>{"void ClearAllControllerMappings(bool isForBothHands)"}</code> | Removes every action mapping from this hand, optionally from both hands. |
+| <Link id="m-removecontrollermode" /><code>{"void RemoveControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> | Removes the mode's mapping for the active platform, optionally on both hands. |
+| <Link id="m-setcontrollermode" /><code>{"void SetControllerMode("}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" modeType, bool isForBothHands)"}</code> | Replaces the current mappings with the mode's mapping for the active platform, optionally on both hands. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Creates the `ControllerActions` for this hand's input. |
 
 </details>
 

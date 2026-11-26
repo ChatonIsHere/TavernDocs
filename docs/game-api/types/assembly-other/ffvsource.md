@@ -1,6 +1,6 @@
 ---
 title: "FfvSource"
-description: "enum FfvSource in Alta.Platform."
+description: "Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FfvSource
 
 An **enum** in `Alta.Platform`, no namespace.
+
+Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking). Passed to `SetFfvSource` on the platform device.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Attributes** `Flags`

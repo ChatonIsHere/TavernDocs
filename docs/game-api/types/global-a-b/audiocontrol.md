@@ -28,9 +28,9 @@ Plays one Wwise event on a game object and lets you stop, seek or reapply sound 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isplaying" /><code>{"private bool isPlaying"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isplaying" /><code>{"private bool isPlaying"}</code> | True between `Play` and the sound's end callback. |
 
 </details>
 
@@ -55,9 +55,9 @@ Plays one Wwise event on a game object and lets you stop, seek or reapply sound 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-exhaustsound" /><code>{"private void ExhaustSound()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-exhaustsound" /><code>{"private void ExhaustSound()"}</code> | Called when the sound ends: clears `isPlaying`, `AkGameObj` and `SoundEvent` so `IsExhausted` turns true. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "TownshipXRMode"
-description: "enum TownshipXRMode in Alta.XRManagement."
+description: "Which XR backend the game runs with: OpenXR, Valve (SteamVR) or no VR."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TownshipXRMode
 
 An **enum** in `Alta.XRManagement`, `Alta.XRLoaders`.
+
+Which XR backend the game runs with: OpenXR, Valve (SteamVR) or no VR.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 

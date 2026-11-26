@@ -1,6 +1,6 @@
 ---
 title: "GeneralDelegates.BoolUpdater"
-description: "delegate GeneralDelegates.BoolUpdater in Root.Township."
+description: "Handler that can change a bool passed by reference."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneralDelegates.BoolUpdater
 
 A **delegate** in `Root.Township`, `Alta.Utilities`.
+
+Handler that can change a bool passed by reference. Used for block checks such as `Interactor.GetGrabAssistBlock` and the teleport block in `SmoothLocomotion`, where any handler can set the flag.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`GeneralDelegates`](/game-api/types/alta-utilities/generaldelegates)

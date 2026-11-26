@@ -1,6 +1,6 @@
 ---
 title: "HookEventChannel"
-description: "enum HookEventChannel in Root.Township."
+description: "Named channels (A to T, or None) an AI agent can fire hook events on, mapped to channel events set on the agent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HookEventChannel
 
 An **enum** in `Root.Township`, `Alta.Intelligence`.
+
+Named channels (A to T, or None) an AI agent can fire hook events on, mapped to channel events set on the agent.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 

@@ -29,13 +29,13 @@ Base asset for a PAGaC (procedural generation) rule: a 3D grid of tag lists, wit
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-configurations" /><code>{"protected int configurations"}</code> |  |
+| <Link id="m-configurations" /><code>{"protected int configurations"}</code> | Number of tag configurations the rule has. Each is a full grid of tag lists. |
 | <Link id="m-serializedtagcounts" /><code>{"protected int[] serializedTagCounts"}</code> | How many tags each cell has in `serializedTags`, probably. |
 | <Link id="m-serializedtags" /><code>{"protected "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[] serializedTags"}</code> | Flat list of tags as stored in the asset, probably unpacked into `tags` on load. |
-| <Link id="m-sizex" /><code>{"protected int sizeX"}</code> |  |
-| <Link id="m-sizey" /><code>{"protected int sizeY"}</code> |  |
-| <Link id="m-sizez" /><code>{"protected int sizeZ"}</code> |  |
-| <Link id="m-tags" /><code>{"protected List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags"}</code> |  |
+| <Link id="m-sizex" /><code>{"protected int sizeX"}</code> | Width of the rule's grid in cells. |
+| <Link id="m-sizey" /><code>{"protected int sizeY"}</code> | Height of the rule's grid in cells. |
+| <Link id="m-sizez" /><code>{"protected int sizeZ"}</code> | Depth of the rule's grid in cells. |
+| <Link id="m-tags" /><code>{"protected List<"}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{">[,,,] tags"}</code> | The 4D grid of tag lists, indexed by configuration, x, y, z. Rebuilt from the serialized arrays on load. |
 
 ## Properties
 

@@ -27,14 +27,14 @@ Helper that moves a float towards a target over time and pushes each new value t
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-current" /><code>{"private float current"}</code> |
-| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> |
-| <Link id="m-initial" /><code>{"private float initial"}</code> |
-| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> |
-| <Link id="m-progress" /><code>{"private float progress"}</code> |
-| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-current" /><code>{"private float current"}</code> | Value most recently pushed to the setter. |
+| <Link id="m-gettarget" /><code>{"private Func<float> getTarget"}</code> | Function giving the target, read each update so the target can move. Cleared when the lerp ends. |
+| <Link id="m-initial" /><code>{"private float initial"}</code> | Value the current lerp started from. |
+| <Link id="m-lerpspeed" /><code>{"private float lerpSpeed"}</code> | Seconds a full lerp takes (despite the name). Set by the `Lerp(target, speed)` overload. |
+| <Link id="m-progress" /><code>{"private float progress"}</code> | Lerp progress from 0 to 1. |
+| <Link id="m-setvalue" /><code>{"private Action<float> setValue"}</code> | Callback that receives each new value. |
 
 </details>
 

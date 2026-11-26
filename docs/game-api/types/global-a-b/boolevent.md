@@ -1,6 +1,6 @@
 ---
 title: "BoolEvent"
-description: "class BoolEvent in Root.Township."
+description: "Serializable AltaEvent with a bool argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BoolEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `AltaEvent` with a bool argument. Runs both inspector-wired listeners and C# `Invoked` handlers.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`AltaEvent<bool, BoolUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

@@ -1,6 +1,6 @@
 ---
 title: "INetworkTransportResult"
-description: "interface INetworkTransportResult in Alta.NetworkTransport.Runtime."
+description: "Result of a network transport operation such as a send or processing incoming packets."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
+Result of a network transport operation such as a send or processing incoming packets.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`NetworkTransportResult`](/game-api/types/assembly-other/networktransportresult)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-error" /><code>{"string Error { get; }"}</code> |
-| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-error" /><code>{"string Error { get; }"}</code> | Error message when the operation failed. |
+| <Link id="m-issuccess" /><code>{"bool IsSuccess { get; }"}</code> | True when the operation worked. |
 
 ## Used in
 

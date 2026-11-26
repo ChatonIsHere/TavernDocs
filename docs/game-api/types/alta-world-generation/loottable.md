@@ -30,12 +30,12 @@ A loot table asset: item entries grouped by rarity, with extra entries for festi
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> |
-| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> |
-| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> |
-| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entries" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/loottable-raritylist">{"LootTable.RarityList"}</Link>{"> entries"}</code> | Item entries grouped by rarity, with optional festival-only entries. Exposed as `Entries`. |
+| <Link id="m-triedorigins" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{"> triedOrigins"}</code> | Origins already tried for the current rarity in `GetLoot`. |
+| <Link id="m-triedrarities" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/rarity">{"Rarity"}</Link>{"> triedRarities"}</code> | Rarities already tried in `GetLoot`. |
+| <Link id="m-workinglist" /><code>{"private static List<"}<Link to="/game-api/types/alta-world-generation/loottable-entry">{"LootTable.Entry"}</Link>{"> workingList"}</code> | Shared list of candidate entries filled while picking loot. |
 
 </details>
 

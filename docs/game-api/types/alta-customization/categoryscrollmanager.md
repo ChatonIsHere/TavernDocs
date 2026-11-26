@@ -1,6 +1,6 @@
 ---
 title: "CategoryScrollManager"
-description: "class CategoryScrollManager in Root.Township."
+description: "Customisation menu component holding the cosmetic categories the category scroller shows, filtered to those the player owns options for."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CategoryScrollManager
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+Customisation menu component holding the cosmetic categories the category scroller shows, filtered to those the player owns options for.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,28 +28,28 @@ A **class** in `Root.Township`, `Alta.Customization`.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-available" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] available"}</code> |
-| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] categories"}</code> |
-| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> |
-| <Link id="m-purchased" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> purchased"}</code> |
-| <Link id="m-refresh" /><code>{"private Task refresh"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-available" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] available"}</code> | Cached result of `GetAvailableCategories`. |
+| <Link id="m-categories" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] categories"}</code> | All categories set in the inspector. |
+| <Link id="m-customizationmanager" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" customizationManager"}</code> | Backing field for `CustomizationManager`. |
+| <Link id="m-purchased" /><code>{"private IEnumerable<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> purchased"}</code> | Unused in this build. |
+| <Link id="m-refresh" /><code>{"private Task refresh"}</code> | Unused in this build. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-customizationmanager-2" /><code><Link to="/game-api/types/alta-customization/cosmeticcustomizationmanager">{"CosmeticCustomizationManager"}</Link>{" CustomizationManager { get; }"}</code> | The cosmetic customisation manager whose owned cosmetics decide which categories are available. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getallcategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAllCategories()"}</code> |
-| <Link id="m-getavailablecategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAvailableCategories()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getallcategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAllCategories()"}</code> | Every category set in the inspector. |
+| <Link id="m-getavailablecategories" /><code><Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] GetAvailableCategories()"}</code> | Visible categories with at least one owned option. Worked out once and cached. |
 
 ## Used in
 

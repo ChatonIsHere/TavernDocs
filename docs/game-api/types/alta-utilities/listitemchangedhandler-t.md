@@ -1,6 +1,6 @@
 ---
 title: "ListItemChangedHandler<T>"
-description: "delegate ListItemChangedHandler<T> in Root.Township."
+description: "Callback for an IListenedList<T> ItemAdded and ItemRemoved events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ListItemChangedHandler&lt;T&gt;
 
 A **delegate** in `Root.Township`, `Alta.Utilities`.
+
+Callback for an `IListenedList<T>` `ItemAdded` and `ItemRemoved` events. Gets the list and the item.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `MulticastDelegate`

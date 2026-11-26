@@ -28,10 +28,10 @@ A `Sync` for struct values that hands the read or write to a method you pass in.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isalwaysrecreating" /><code>{"private bool isAlwaysRecreating"}</code> |
-| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isalwaysrecreating" /><code>{"private bool isAlwaysRecreating"}</code> | When true, the value is reset to a new `T` before each read. |
+| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> | The serialize method the message forwards to. |
 
 </details>
 
@@ -46,9 +46,9 @@ A `Sync` for struct values that hands the read or write to a method you pass in.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Calls the stored method with the player, stream and current value; resets the value to default first when reading and `isAlwaysRecreating` is set. |
 
 </details>
 

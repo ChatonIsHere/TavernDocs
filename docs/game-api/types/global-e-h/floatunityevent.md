@@ -1,6 +1,6 @@
 ---
 title: "FloatUnityEvent"
-description: "class FloatUnityEvent in Root.Township."
+description: "Serializable UnityEvent with a float argument, so float events can be wired in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FloatUnityEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `UnityEvent` with a float argument, so float events can be wired in the inspector.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `UnityEvent<float>`

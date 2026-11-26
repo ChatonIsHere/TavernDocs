@@ -1,6 +1,6 @@
 ---
 title: "BlockLevel"
-description: "enum BlockLevel in Root.Township."
+description: "Flags for how much a pickup blocks a hit from an impact tool: can't block, blocks physical only, blocks everything, or unblockable."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BlockLevel
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for how much a pickup blocks a hit from an impact tool: can't block, blocks physical only, blocks everything, or unblockable. Set on `Pickup.BlockLevel`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Attributes** `Flags`

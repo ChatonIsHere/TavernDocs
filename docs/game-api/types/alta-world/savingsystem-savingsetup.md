@@ -28,14 +28,14 @@ How one savable type is saved: its hash, every save data version registered with
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-latestsetup" /><code>{"private "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" latestSetup"}</code> |
-| <Link id="m-latestversion" /><code>{"private uint latestVersion"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-savemethod" /><code>{"private static MethodInfo saveMethod"}</code> |
-| <Link id="m-typetoversion" /><code>{"private Dictionary<Type, uint> typeToVersion"}</code> |
-| <Link id="m-versions" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{"> versions"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-latestsetup" /><code>{"private "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{" latestSetup"}</code> | Setup for the newest save format version. Exposed as `LatestSetup`. |
+| <Link id="m-latestversion" /><code>{"private uint latestVersion"}</code> | The newest save format version number. Exposed as `LatestVersion`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger. |
+| <Link id="m-savemethod" /><code>{"private static MethodInfo saveMethod"}</code> | Reflection handle to `SaveInternal`. |
+| <Link id="m-typetoversion" /><code>{"private Dictionary<Type, uint> typeToVersion"}</code> | Version number for each save data type. |
+| <Link id="m-versions" /><code>{"private Dictionary<uint, "}<Link to="/game-api/types/alta-world/savingsystem-versionsetup">{"SavingSystem.VersionSetup"}</Link>{"> versions"}</code> | Setup for each save format version. |
 
 </details>
 
@@ -64,11 +64,11 @@ How one savable type is saved: its hash, every save data version registered with
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-cast" /><code>{"private static T Cast<T>(object value)"}</code> |
-| <Link id="m-processinfo" /><code>{"private void ProcessInfo()"}</code> |
-| <Link id="m-saveinternal" /><code>{"private static "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" SaveInternal<T>(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" children)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cast" /><code>{"private static T Cast<T>(object value)"}</code> | Casts an object to a type. Not called in this class. |
+| <Link id="m-processinfo" /><code>{"private void ProcessInfo()"}</code> | Reads the hash and tag flag from `SavingInfoAttribute`, or hashes the type name if there is no hash. |
+| <Link id="m-saveinternal" /><code>{"private static "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" SaveInternal<T>(object target, "}<Link to="/game-api/types/alta-networking/iserializechildren">{"ISerializeChildren"}</Link>{" children)"}</code> | Calls the type's `ISavable` `Save` for a given save data type; bound into `Save` by reflection. |
 
 </details>
 

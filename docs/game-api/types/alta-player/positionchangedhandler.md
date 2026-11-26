@@ -1,6 +1,6 @@
 ---
 title: "PositionChangedHandler"
-description: "delegate PositionChangedHandler in Root.Township."
+description: "Event handler for a player moving, with the old and new positions and the locomotion function that moved them."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Character`.
+
+Event handler for a player moving, with the old and new positions and the locomotion function that moved them. Used by `LocomotionController.PositionChanged` and `PositionAboutToChange`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MulticastDelegate`

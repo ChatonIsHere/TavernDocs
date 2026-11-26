@@ -1,6 +1,6 @@
 ---
 title: "ChunkPositions"
-description: "class ChunkPositions in Root.Township."
+description: "A location chunk's set of weighted surfaces for picking random spawn points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkPositions
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+A location chunk's set of weighted surfaces for picking random spawn points. Held by `LocationChunk.Positions`; `ChunkPositionSurface` components add themselves to it.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -25,24 +27,24 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-hassurfaces" /><code>{"private bool hasSurfaces"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hassurfaces" /><code>{"private bool hasSurfaces"}</code> | Backing field for `HasSurfaces`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hassurfaces-2" /><code>{"bool HasSurfaces { get; set; }"}</code> |
-| <Link id="m-positiondefinitions" /><code>{"HashSet<"}<Link to="/game-api/types/alta-world/chunkpositionsurface">{"ChunkPositionSurface"}</Link>{"> PositionDefinitions { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hassurfaces-2" /><code>{"bool HasSurfaces { get; set; }"}</code> | Whether the chunk has any position surfaces set up. |
+| <Link id="m-positiondefinitions" /><code>{"HashSet<"}<Link to="/game-api/types/alta-world/chunkpositionsurface">{"ChunkPositionSurface"}</Link>{"> PositionDefinitions { get; }"}</code> | The surfaces registered for this chunk. Each has a weight used by `GetPosition`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getposition" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPosition(int iterations, float maxAngleFromUpDot)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getposition" /><code><Link to="/game-api/types/alta-world-generation/pointnormal">{"PointNormal"}</Link>{"? GetPosition(int iterations, float maxAngleFromUpDot)"}</code> | Picks a surface at random by weight and tries it up to `iterations` times for a point whose normal is steep enough. Returns null if none fits. |
 
 ## Used in
 

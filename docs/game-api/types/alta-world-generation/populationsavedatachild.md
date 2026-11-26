@@ -1,6 +1,6 @@
 ---
 title: "PopulationSaveDataChild"
-description: "class PopulationSaveDataChild in Root.Township."
+description: "Save record linking one saved child of a population folder to the spawn point it came from."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Populations`.
 
+Save record linking one saved child of a population folder to the spawn point it came from.
+
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-index" /><code>{"int index"}</code> |
-| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index" /><code>{"int index"}</code> | The child's index in the folder's saved children. |
+| <Link id="m-pointindex" /><code>{"int pointIndex"}</code> | Index of the spawn point the child was spawned at, or -1 if it had none. |
 
 ## Used in
 

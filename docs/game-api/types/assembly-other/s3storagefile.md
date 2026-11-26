@@ -1,6 +1,6 @@
 ---
 title: "S3StorageFile"
-description: "class S3StorageFile in Alta.IO."
+description: "A file object in an S3 bucket, used through the IFileAccess storage interface."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # S3StorageFile
 
 A **class** in `Alta.IO`, `Alta.Utilities`.
+
+A file object in an S3 bucket, used through the `IFileAccess` storage interface. Probably server or tooling only, as it needs S3 credentials.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`S3StorageObject`](/game-api/types/assembly-other/s3storageobject), [`IFileAccess`](/game-api/types/assembly-other/ifileaccess)
@@ -27,27 +29,27 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-exists" /><code>{"bool Exists { get; }"}</code> | Whether the object exists, by fetching it. Any error counts as not existing. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> |
-| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> |
-| <Link id="m-refresh" /><code>{"void Refresh()"}</code> |
-| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> |
-| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-downloadasync" /><code>{"async Task DownloadAsync(Stream localStream)"}</code> | Streams the object's contents into the given local stream. |
+| <Link id="m-isexistingasync" /><code>{"async Task<bool> IsExistingAsync()"}</code> | Async version of `Exists`. |
+| <Link id="m-refresh" /><code>{"void Refresh()"}</code> | Does nothing for S3 files. |
+| <Link id="m-upload" /><code>{"void Upload(Stream fileStream)"}</code> | Uploads the stream to this key, blocking. |
+| <Link id="m-uploadasync" /><code>{"async Task UploadAsync(Stream fileStream)"}</code> | Uploads the stream to this key. |
 
 ## Used in
 

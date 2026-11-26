@@ -1,6 +1,6 @@
 ---
 title: "MinMaxValue"
-description: "class MinMaxValue in Root.Township."
+description: "A serializable float range (min and max) for inspector settings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MinMaxValue
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable float range (min and max) for inspector settings.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 
@@ -25,24 +27,24 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-max" /><code>{"private float max"}</code> |
-| <Link id="m-min" /><code>{"private float min"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-max" /><code>{"private float max"}</code> | Top of the range (default 1). |
+| <Link id="m-min" /><code>{"private float min"}</code> | Bottom of the range (default 0). |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-randomvalue" /><code>{"float RandomValue { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-randomvalue" /><code>{"float RandomValue { get; }"}</code> | A random value between min and max. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getprogress" /><code>{"float GetProgress(float progress)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getprogress" /><code>{"float GetProgress(float progress)"}</code> | Lerps from min to max by the given progress. |
 
 ## Used in
 

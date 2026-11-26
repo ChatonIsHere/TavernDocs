@@ -1,6 +1,6 @@
 ---
 title: "FutureUserActionType"
-description: "enum FutureUserActionType in Alta.Api.DataTransferModels."
+description: "Kind of future user action stored for an outside user: add a friend or invite to a group."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FutureUserActionType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Kind of future user action stored for an outside user: add a friend or invite to a group.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

@@ -1,6 +1,6 @@
 ---
 title: "ConnectionEventHandler"
-description: "delegate ConnectionEventHandler in Root.Township."
+description: "Handler for events about a network Connection, such as a player connecting or disconnecting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConnectionEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Handler for events about a network `Connection`, such as a player connecting or disconnecting.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

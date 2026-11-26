@@ -1,6 +1,6 @@
 ---
 title: "ServerOwnerType"
-description: "enum ServerOwnerType in Alta.Api.DataTransferModels."
+description: "Who owns a server: an individual, a group or the world."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerOwnerType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Who owns a server: an individual, a group or the world. `GroupAdmins` is the same value as `Group`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

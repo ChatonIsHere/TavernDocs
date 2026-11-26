@@ -30,11 +30,11 @@ A group of pickup docks (a bag's or belt's slots) with totals for count, stored 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-children" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{"> children"}</code> |
-| <Link id="m-docks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> |
-| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" parent"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-children" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{"> children"}</code> | Dock arrays whose `Parent` is this one, included in `TotalCount` and `TotalDocks`. |
+| <Link id="m-docks" /><code>{"private List<"}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{"> docks"}</code> | The docks in this array. |
+| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/alta-items/dockarray">{"DockArray"}</Link>{" parent"}</code> | Backing field for `Parent`. |
 
 </details>
 
@@ -70,10 +70,10 @@ A group of pickup docks (a bag's or belt's slots) with totals for count, stored 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Listens for weight changes on the docks set on the prefab. |
+| <Link id="m-onweightchanged" /><code>{"private void OnWeightChanged()"}</code> | Raises `WeightChanged`. Called when a dock's weight changes or docks are added or removed. |
 
 </details>
 

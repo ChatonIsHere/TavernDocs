@@ -1,6 +1,6 @@
 ---
 title: "ToggleEvent"
-description: "class ToggleEvent in Root.Township."
+description: "Serializable event with a bool argument, shown in the inspector as a ToggleUnityEvent."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ToggleEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable event with a bool argument, shown in the inspector as a `ToggleUnityEvent`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`AltaEvent<bool, ToggleUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

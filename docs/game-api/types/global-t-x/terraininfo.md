@@ -33,13 +33,13 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-splatcontrol" /><code>{"private static readonly int _SplatControl"}</code> |
-| <Link id="m-instantiatedsplat" /><code>{"private Texture2D instantiatedSplat"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-sourcesplat" /><code>{"private Texture2D sourceSplat"}</code> |
-| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-splatcontrol" /><code>{"private static readonly int _SplatControl"}</code> | Shader property ID of the terrain material's splat control texture. |
+| <Link id="m-instantiatedsplat" /><code>{"private Texture2D instantiatedSplat"}</code> | Runtime copy of `sourceSplat`, made on first use of `Splat`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-sourcesplat" /><code>{"private Texture2D sourceSplat"}</code> | The splat map asset copied for `Splat`. |
+| <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | The Unity `Terrain` on this object. |
 
 </details>
 
@@ -71,9 +71,9 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cleans up the copied splat texture and material, and destroys the copied terrain data (except on Android, which uses the original). |
 
 </details>
 

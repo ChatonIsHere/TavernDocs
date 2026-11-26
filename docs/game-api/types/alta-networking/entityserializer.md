@@ -35,20 +35,20 @@ Writes and reads an entity's streamed state: the combined bits of all its `INetw
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-behaviours" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworkserialized">{"INetworkSerialized"}</Link>{"[] behaviours"}</code> |
-| <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> |
-| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-fulldata" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" fullData"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-resendcount" /><code>{"private int resendCount"}</code> |
-| <Link id="m-sharedwriter" /><code>{"private static "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" sharedWriter"}</code> |
-| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> |
-| <Link id="m-unchangedhalfcheckcount" /><code>{"private const int UnchangedHalfCheckCount"}</code> |
-| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-behaviours" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworkserialized">{"INetworkSerialized"}</Link>{"[] behaviours"}</code> | The entity's `INetworkSerialized` behaviours, serialized in this order. |
+| <Link id="m-chunker" /><code>{"private "}<Link to="/game-api/types/global-c-d/chunker">{"Chunker"}</Link>{" chunker"}</code> | The entity's chunker, taken from it as an `IChunkedEntity`. |
+| <Link id="m-data" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data"}</code> | Buffer for regular (delta) updates, with its bit count and unchanged count. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The network entity this serializer writes. |
+| <Link id="m-fulldata" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" fullData"}</code> | Buffer for full updates sent to players who need the whole state. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Whether the entity was enabled at the last serialize. Disabled entities don't send. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger. Logs when a behaviour's `MaximumBits` is too small for what it wrote. |
+| <Link id="m-resendcount" /><code>{"private int resendCount"}</code> | Sends since the data last changed. Reset by `MarkDataAsChanged`. |
+| <Link id="m-sharedwriter" /><code>{"private static "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" sharedWriter"}</code> | One stream writer shared by every serializer to fill buffers. |
+| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> | Shared stopwatch used to time prepare and serialize for the profiling averages. |
+| <Link id="m-unchangedhalfcheckcount" /><code>{"private const int UnchangedHalfCheckCount"}</code> | After 10 unchanged writes, off-frame serialization is skipped. |
+| <Link id="m-unchangedresend" /><code>{"private const int UnchangedResend"}</code> | After 30 sends with no change, `IsSending` turns false and the entity stops being resent. |
 
 </details>
 
@@ -84,12 +84,12 @@ Writes and reads an entity's streamed state: the combined bits of all its `INetw
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-readfromstreaminternal" /><code>{"private void ReadFromStreamInternal("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, bool isFull, uint messageSize)"}</code> |
-| <Link id="m-serializedatainternal" /><code>{"private void SerializeDataInternal(bool isFull, "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data, bool isOffFrame)"}</code> |
-| <Link id="m-setupdataarrays" /><code>{"private void SetupDataArrays()"}</code> |
-| <Link id="m-writeintostreaminternal" /><code>{"private void WriteIntoStreamInternal("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-readfromstreaminternal" /><code>{"private void ReadFromStreamInternal("}<Link to="/game-api/types/assembly-other/streamreader">{"StreamReader"}</Link>{" reader, bool isFull, uint messageSize)"}</code> | Reads every behaviour's data from the stream, marks data changed if not authoritative, and fires `ReadEntity`. |
+| <Link id="m-serializedatainternal" /><code>{"private void SerializeDataInternal(bool isFull, "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data, bool isOffFrame)"}</code> | Asks behaviours whether they changed, writes them into the buffer if so, and fires `WroteEntity`. Skips off-frame writes once unchanged 10 times. |
+| <Link id="m-setupdataarrays" /><code>{"private void SetupDataArrays()"}</code> | Sizes the regular and full data buffers from the behaviours' `MaximumBits` and takes them from the array pool. |
+| <Link id="m-writeintostreaminternal" /><code>{"private void WriteIntoStreamInternal("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, "}<Link to="/game-api/types/alta-networking/entitystreamerdata">{"EntityStreamerData"}</Link>{" data)"}</code> | Copies the buffered bits into the outgoing stream. |
 
 </details>
 

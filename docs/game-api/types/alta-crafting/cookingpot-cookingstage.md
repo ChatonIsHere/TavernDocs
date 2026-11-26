@@ -1,6 +1,6 @@
 ---
 title: "CookingPot.CookingStage"
-description: "enum CookingPot.CookingStage in Root.Township."
+description: "Where a cooking pot is in making a stew: preparation, warming up, stewing, then locked once the stew is done."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CookingPot.CookingStage
 
 An **enum** in `Root.Township`, `Alta.Cooking`.
+
+Where a cooking pot is in making a stew: preparation, warming up, stewing, then locked once the stew is done.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`CookingPot`](/game-api/types/alta-crafting/cookingpot)

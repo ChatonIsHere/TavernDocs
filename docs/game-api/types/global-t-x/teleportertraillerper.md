@@ -1,6 +1,6 @@
 ---
 title: "TeleporterTrailLerper"
-description: "class TeleporterTrailLerper in Root.Township."
+description: "Client effect: a pooled trail that follows a player when they teleport or stream-move."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TeleporterTrailLerper
 
 A **class** in `Root.Township`, no namespace.
+
+Client effect: a pooled trail that follows a player when they teleport or stream-move. Taken from a pool by `PlayerSpecialEffectsController`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,35 +29,35 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lerper" /><code>{"private "}<Link to="/game-api/types/global-s/scaledlerpfollow">{"ScaledLerpFollow"}</Link>{" lerper"}</code> |
-| <Link id="m-pooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lerper" /><code>{"private "}<Link to="/game-api/types/global-s/scaledlerpfollow">{"ScaledLerpFollow"}</Link>{" lerper"}</code> | The scaled lerp follower that moves the trail. |
+| <Link id="m-pooledobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject"}</code> | Backing field for `PooledObject`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-pooledobject-2" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pooledobject-2" /><code><Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" { get; }"}</code> | The pool entry this trail belongs to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-resettimer" /><code>{"void ResetTimer()"}</code> |
-| <Link id="m-seteffectplaystatus" /><code>{"void SetEffectPlayStatus("}<Link to="/game-api/types/global-e-h/effectplaystatus">{"EffectPlayStatus"}</Link>{" status)"}</code> |
-| <Link id="m-setposition" /><code>{"void SetPosition(Vector3 position)"}</code> |
-| <Link id="m-settarget" /><code>{"void SetTarget("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-resettimer" /><code>{"void ResetTimer()"}</code> | Restarts the pooled object's lifetime timer. |
+| <Link id="m-seteffectplaystatus" /><code>{"void SetEffectPlayStatus("}<Link to="/game-api/types/global-e-h/effectplaystatus">{"EffectPlayStatus"}</Link>{" status)"}</code> | Sets the play status of the follow lerper's effect. |
+| <Link id="m-setposition" /><code>{"void SetPosition(Vector3 position)"}</code> | Moves the trail to a position and restarts the lerper there without a lerp. |
+| <Link id="m-settarget" /><code>{"void SetTarget("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" target)"}</code> | Sets the player the trail follows. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-resetlerper" /><code>{"private void ResetLerper("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooled)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks `ResetLerper` to the pooled object's release. |
+| <Link id="m-resetlerper" /><code>{"private void ResetLerper("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooled)"}</code> | On release to the pool: stops the effect, restarts the lerper and clears its target. |
 
 </details>
 

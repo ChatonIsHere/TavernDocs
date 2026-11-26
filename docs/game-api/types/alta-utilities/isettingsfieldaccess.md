@@ -1,6 +1,6 @@
 ---
 title: "ISettingsFieldAccess"
-description: "interface ISettingsFieldAccess in Root.Township."
+description: "A game or server setting shown in a menu, with a display name and description."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,21 +12,23 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Utilities`.
 
+A game or server setting shown in a menu, with a display name and description. Implemented by `SettingsFieldAccess` and menu command actions.
+
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Derived types** [`SettingsFieldAccess`](/game-api/types/alta-utilities/settingsfieldaccess)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |
-| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | Name shown for the setting in the menu. |
+| <Link id="m-settingdescription" /><code>{"string SettingDescription { get; }"}</code> | Help text shown in the setting description panel. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalid" /><code>{"bool IsValid()"}</code> | Whether the setting should be shown or used right now. |
 
 ## Used in
 

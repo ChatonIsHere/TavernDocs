@@ -33,10 +33,10 @@ One page of a meta UI `Window`. Shows or hides itself, playing an optional scale
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animation" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" animation"}</code> |
-| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animation" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" animation"}</code> | Scaler animation used to show and hide the panel; without one it toggles after 50 ms. |
+| <Link id="m-window" /><code>{"private "}<Link to="/game-api/types/alta-menus/window">{"Window"}</Link>{" window"}</code> | Backing field for `Window`. |
 
 </details>
 

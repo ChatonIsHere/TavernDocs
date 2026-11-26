@@ -1,6 +1,6 @@
 ---
 title: "GiftResult"
-description: "class GiftResult in Alta.Api.DataTransferModels."
+description: "Alta API response to gifting a shop item to someone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Alta API response to gifting a shop item to someone.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-iteminfo" /><code><Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{" ItemInfo { get; set; }"}</code> |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/giftresulttype">{"GiftResultType"}</Link>{" Result { get; set; }"}</code> |
-| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iteminfo" /><code><Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{" ItemInfo { get; set; }"}</code> | The gifted item. Its JSON key is `itemInfo ` with a trailing space. |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/giftresulttype">{"GiftResultType"}</Link>{" Result { get; set; }"}</code> | Outcome of the gift, from the `status` key. |
+| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> | Shop transaction ID, if one was made. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ObjectHistory.SnapshotType"
-description: "enum ObjectHistory.SnapshotType in Root.Township."
+description: "Which update loop recorded an ObjectHistory snapshot: Update, LateUpdate, FixedUpdate or NetworkRigidbody."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ObjectHistory.SnapshotType
 
 An **private enum** in `Root.Township`, `Alta.Populations`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Which update loop recorded an `ObjectHistory` snapshot: `Update`, `LateUpdate`, `FixedUpdate` or `NetworkRigidbody`. Bit flag values.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`ObjectHistory`](/game-api/types/alta-world-generation/objecthistory)

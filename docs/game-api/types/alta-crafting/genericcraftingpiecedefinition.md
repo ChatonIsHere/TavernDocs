@@ -44,9 +44,9 @@ One ghost piece in a generic crafting recipe: where it sits, its mesh, the item 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-chancetopopbasedonfailurehealthratio" /><code>{"private AnimationCurve chanceToPopBasedOnFailureHealthRatio"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chancetopopbasedonfailurehealthratio" /><code>{"private AnimationCurve chanceToPopBasedOnFailureHealthRatio"}</code> | Curve from lost failure health (0 to 1) to the chance the piece pops off; used by `GetChanceToPop`. |
 
 </details>
 

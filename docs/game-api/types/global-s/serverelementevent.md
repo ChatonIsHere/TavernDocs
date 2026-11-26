@@ -1,6 +1,6 @@
 ---
 title: "ServerElementEvent"
-description: "class ServerElementEvent in Root.Township."
+description: "A serializable AltaEvent that passes a ServerElement, for wiring server list callbacks in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerElementEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable `AltaEvent` that passes a `ServerElement`, for wiring server list callbacks in the inspector. Client menu UI.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`AltaEvent<ServerElement, ServerElementUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

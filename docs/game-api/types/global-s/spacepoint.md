@@ -33,10 +33,10 @@ A point in a network of connected points that defines an area attribute, such as
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-connectedto" /><code>{"private "}<Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] connectedTo"}</code> |
-| <Link id="m-setweight" /><code>{"private float setWeight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connectedto" /><code>{"private "}<Link to="/game-api/types/global-s/spacepoint">{"SpacePoint"}</Link>{"[] connectedTo"}</code> | Neighbouring points this one links to. Backing field for `ConnectedTo`. |
+| <Link id="m-setweight" /><code>{"private float setWeight"}</code> | Weight value for this point. Backing field for `SetWeight`. |
 
 </details>
 
@@ -52,9 +52,9 @@ A point in a network of connected points that defines an area attribute, such as
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws a line to each connected point. |
 
 </details>
 

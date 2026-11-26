@@ -28,15 +28,15 @@ A private space for one player, spawned by `DomainController` below the map (y -
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
-| <Link id="m-defaultplayeryspawnoffset" /><code>{"private const float DefaultPlayerYSpawnOffset"}</code> |
-| <Link id="m-domaincontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-networkprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" networkPrefab"}</code> |
-| <Link id="m-playerentrypoints" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/alta-utilities/spawnpoint">{"SpawnPoint"}</Link>{"> playerEntryPoints"}</code> |
-| <Link id="m-spawnpoint" /><code>{"private "}<Link to="/game-api/types/alta-utilities/spawnpoint">{"SpawnPoint"}</Link>{"? spawnPoint"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> | Backing field for `Chunk`, the location chunk the domain's players spawn into. |
+| <Link id="m-defaultplayeryspawnoffset" /><code>{"private const float DefaultPlayerYSpawnOffset"}</code> | Height above the domain's position used for the default spawn point: 1.5 metres. |
+| <Link id="m-domaincontroller" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/idomaincontroller">{"IDomainController"}</Link>{" domainController"}</code> | Domain controller injected by VContainer, used by `DestroyDomain`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-networkprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" networkPrefab"}</code> | Backing field for `NetworkPrefab`. |
+| <Link id="m-playerentrypoints" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/alta-utilities/spawnpoint">{"SpawnPoint"}</Link>{"> playerEntryPoints"}</code> | Where each player was before entering, used by `GetPlayerEntryPoint` to send them back. |
+| <Link id="m-spawnpoint" /><code>{"private "}<Link to="/game-api/types/alta-utilities/spawnpoint">{"SpawnPoint"}</Link>{"? spawnPoint"}</code> | Backing field for `SpawnPoint`. When unset, the getter fills it from the domain's own position plus 1.5 metres up. |
 
 </details>
 
@@ -64,10 +64,10 @@ A private space for one player, spawned by `DomainController` below the map (y -
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-despawnplayercontroller" /><code>{"private void DespawnPlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
-| <Link id="m-moveplayertospawnpoint" /><code>{"private void MovePlayerToSpawnPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-despawnplayercontroller" /><code>{"private void DespawnPlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Records where the player was as their entry point, saves them and destroys their controller. Uses `Add`, so a second entry for the same player throws. |
+| <Link id="m-moveplayertospawnpoint" /><code>{"private void MovePlayerToSpawnPoint()"}</code> | Moves the domain's `Player` (set by `SetPlayer`) to the spawn point and turns them to face its direction. |
 
 </details>
 

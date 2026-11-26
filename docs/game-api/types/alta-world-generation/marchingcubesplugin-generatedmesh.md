@@ -1,6 +1,6 @@
 ---
 title: "MarchingCubesPlugin.GeneratedMesh"
-description: "class MarchingCubesPlugin.GeneratedMesh in Root.Township."
+description: "Mesh made by the marching cubes plugin for one map chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MarchingCubesPlugin.GeneratedMesh
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Mesh made by the marching cubes plugin for one map chunk. Holds either an existing mesh or raw vertices and indices to build one from later.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`MarchingCubesPlugin`](/game-api/types/alta-world-generation/marchingcubesplugin)
@@ -27,19 +29,19 @@ A **class** in `Root.Township`, `Alta.Caves`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-indices" /><code>{"private int[] indices"}</code> |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
-| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-indices" /><code>{"private int[] indices"}</code> | Triangle indices for the mesh to build. |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> | The mesh, once it exists. Built meshes are marked not to save. |
+| <Link id="m-vertices" /><code>{"private List<Vector3> vertices"}</code> | Vertices for the mesh to build. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getorcreatemesh" /><code>{"Mesh GetOrCreateMesh("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer, out bool wasGenerated)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getorcreatemesh" /><code>{"Mesh GetOrCreateMesh("}<Link to="/game-api/types/alta-world-generation/cavelayermanager">{"CaveLayerManager"}</Link>{" manager, int layer, out bool wasGenerated)"}</code> | Returns the mesh, building it from the stored vertices and indices the first time. `wasGenerated` says if it was just built. |
 
 ## Used in
 

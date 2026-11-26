@@ -1,6 +1,6 @@
 ---
 title: "GhostSnapChannel"
-description: "class GhostSnapChannel in Root.Township."
+description: "Empty asset used as a tag: a GhostSnapObject only snaps into a GhostSnapSlot that lists its channel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GhostSnapChannel
 
 A **class** in `Root.Township`, no namespace.
+
+Empty asset used as a tag: a `GhostSnapObject` only snaps into a `GhostSnapSlot` that lists its channel.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`

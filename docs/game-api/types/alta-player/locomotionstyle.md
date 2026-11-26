@@ -1,6 +1,6 @@
 ---
 title: "LocomotionStyle"
-description: "enum LocomotionStyle in Root.Township."
+description: "How a teleport or rotation is shown to the player: instantly, as a lerp, or with a fade."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LocomotionStyle
 
 An **enum** in `Root.Township`, `Alta.Character`.
+
+How a teleport or rotation is shown to the player: instantly, as a lerp, or with a fade.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 

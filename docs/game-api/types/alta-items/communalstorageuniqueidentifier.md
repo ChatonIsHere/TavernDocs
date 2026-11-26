@@ -1,6 +1,6 @@
 ---
 title: "CommunalStorageUniqueIdentifier"
-description: "class CommunalStorageUniqueIdentifier in Root.Township."
+description: "A hashed asset that names one global communal storage."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommunalStorageUniqueIdentifier
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A hashed asset that names one global communal storage. The server saves what each one holds in the Global Communal Storage file.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`HashedGeneralValue<CommunalStorageUniqueIdentifier>`](/game-api/types/assembly-other/hashedgeneralvalue-t)

@@ -1,6 +1,6 @@
 ---
 title: "AttributeImpact"
-description: "class AttributeImpact in Root.Township."
+description: "Weights where a global population spawns by one biome attribute."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttributeImpact
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Weights where a global population spawns by one biome attribute. `GlobalPopulationDefinition` multiplies these together per chunk.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 
@@ -25,18 +27,18 @@ A **class** in `Root.Township`, `Alta.Populations`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute"}</code> |
-| <Link id="m-impact" /><code>{"private AnimationCurve impact"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attribute" /><code>{"private "}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" attribute"}</code> | The biome attribute read. |
+| <Link id="m-impact" /><code>{"private AnimationCurve impact"}</code> | Curve from the attribute value to a spawn weight multiplier. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getimpact" /><code>{"float GetImpact("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getimpact" /><code>{"float GetImpact("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | Reads the attribute from a biome's attribute set and returns the curve's value for it. |
 
 ## Used in
 

@@ -33,14 +33,14 @@ A point of interest that can appear on a map once a player is aware of it or has
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-awareicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" awareIcon"}</code> |
-| <Link id="m-defaultstate" /><code>{"private "}<Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" defaultState"}</code> |
-| <Link id="m-discoveredicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" discoveredIcon"}</code> |
-| <Link id="m-findaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" findAction"}</code> |
-| <Link id="m-ismasked" /><code>{"private bool isMasked"}</code> |
-| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awareicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" awareIcon"}</code> | Backing field for `AwareIcon`, the icon shown once a player knows of the landmark. Saved with the landmark. |
+| <Link id="m-defaultstate" /><code>{"private "}<Link to="/game-api/types/alta-world/discoverystate">{"DiscoveryState"}</Link>{" defaultState"}</code> | Backing field for `DefaultState`. Defaults to `Aware`; `Discovered` makes `DiscoverFor` do nothing. |
+| <Link id="m-discoveredicon" /><code>{"private "}<Link to="/game-api/types/alta-world/landmarkicon">{"LandmarkIcon"}</Link>{" discoveredIcon"}</code> | Backing field for `DiscoveredIcon`, the icon shown once a player has discovered the landmark. Saved. |
+| <Link id="m-findaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" findAction"}</code> | Achievement the server completes for a player when they discover this landmark. |
+| <Link id="m-ismasked" /><code>{"private bool isMasked"}</code> | Backing field for `IsMasked`. Defaults to true. Saved with the landmark. |
+| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> | Backing field for `Map`, the map this landmark belongs to. Saved with the landmark. |
 
 </details>
 
@@ -73,10 +73,10 @@ A point of interest that can appear on a map once a player is aware of it or has
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awareforlocal" /><code>{"private void AwareForLocal()"}</code> |
-| <Link id="m-discoverforlocal" /><code>{"private void DiscoverForLocal()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awareforlocal" /><code>{"private void AwareForLocal()"}</code> | Editor context-menu helper: calls `AwareFor` for the local `Player.Current`. |
+| <Link id="m-discoverforlocal" /><code>{"private void DiscoverForLocal()"}</code> | Editor context-menu helper: calls `DiscoverFor` for the local `Player.Current`. |
 
 </details>
 

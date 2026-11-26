@@ -1,6 +1,6 @@
 ---
 title: "OptionsConfig"
-description: "class OptionsConfig in Root.Township."
+description: "One option button for a menu window's options popup: label, action to run and button style."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
 
+One option button for a menu window's options popup: label, action to run and button style. Used by friend panels for things like Revoke.
+
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-action" /><code>{"Action Action { get; }"}</code> |
-| <Link id="m-text" /><code>{"string Text { get; }"}</code> |
-| <Link id="m-type" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-action" /><code>{"Action Action { get; }"}</code> | What runs when the option is picked. |
+| <Link id="m-text" /><code>{"string Text { get; }"}</code> | The button label. |
+| <Link id="m-type" /><code><Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" Type { get; }"}</code> | The button style, `Normal` by default. |
 
 ## Used in
 

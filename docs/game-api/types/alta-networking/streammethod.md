@@ -1,6 +1,6 @@
 ---
 title: "StreamMethod"
-description: "delegate StreamMethod in Root.Township."
+description: "A method that reads or writes something on a serialization stream."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StreamMethod
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+A method that reads or writes something on a serialization stream. Used as the handler for `Sync` and `MethodSync`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

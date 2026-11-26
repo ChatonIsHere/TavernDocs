@@ -33,9 +33,9 @@ A delegate list you add to with `+` and fire with `Invoke`, which remembers whet
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Shared logger (the `AltaEvent` logger) for parameter mismatches and handler exceptions. |
 
 </details>
 

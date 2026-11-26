@@ -1,6 +1,6 @@
 ---
 title: "UserPresetDataInfo"
-description: "class UserPresetDataInfo in Alta.Api.DataTransferModels."
+description: "A saved cosmetics preset from the web API, packed as an array of uint values."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+A saved cosmetics preset from the web API, packed as an array of `uint` values.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,13 +24,13 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-bytesize" /><code>{"int ByteSize { get; set; }"}</code> |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
-| <Link id="m-data" /><code>{"uint[] Data { get; set; }"}</code> |
-| <Link id="m-presetid" /><code>{"int PresetId { get; set; }"}</code> |
-| <Link id="m-userid" /><code>{"int UserId { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bytesize" /><code>{"int ByteSize { get; set; }"}</code> | Size of the packed preset data in bytes. |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the preset was saved. |
+| <Link id="m-data" /><code>{"uint[] Data { get; set; }"}</code> | The packed preset, as `uint` words. |
+| <Link id="m-presetid" /><code>{"int PresetId { get; set; }"}</code> | Which preset slot this is. |
+| <Link id="m-userid" /><code>{"int UserId { get; set; }"}</code> | The user who owns the preset. |
 
 ## Used in
 

@@ -31,27 +31,27 @@ A burning fuse, as on dynamite. Once lit (a hit lights it) it burns down over `F
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentfuseamount" /><code>{"private float currentFuseAmount"}</code> |
-| <Link id="m-damagethreshold" /><code>{"private float damageThreshold"}</code> |
-| <Link id="m-docksettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/fuse-docksettings">{"Fuse.DockSettings"}</Link>{" dockSettings"}</code> |
-| <Link id="m-finishedonserver" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" finishedOnServer"}</code> |
-| <Link id="m-finishsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" finishSync"}</code> |
-| <Link id="m-fuse" /><code>{"private Transform fuse"}</code> |
-| <Link id="m-fusecoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" fuseCoroutine"}</code> |
-| <Link id="m-fuselength" /><code>{"private float fuseLength"}</code> |
-| <Link id="m-fusetime" /><code>{"private float fuseTime"}</code> |
-| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
-| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> |
-| <Link id="m-islit" /><code>{"private bool isLit"}</code> |
-| <Link id="m-ispreventingdockingwhenlit" /><code>{"private bool isPreventingDockingWhenLit"}</code> |
-| <Link id="m-liteffect" /><code>{"private GameObject litEffect"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
-| <Link id="m-started" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" started"}</code> |
-| <Link id="m-stopped" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" stopped"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-whenlitacceptonlytags" /><code>{"private "}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"[] whenLitAcceptOnlyTags"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentfuseamount" /><code>{"private float currentFuseAmount"}</code> | Fuse left, from 1 (full) to 0 (exploded). Backing field for `CurrentFuseAmount`. |
+| <Link id="m-damagethreshold" /><code>{"private float damageThreshold"}</code> | Damage that should set it off, per the tooltip. Not used in this file. |
+| <Link id="m-docksettings" /><code>{"private "}<Link to="/game-api/types/global-e-h/fuse-docksettings">{"Fuse.DockSettings"}</Link>{" dockSettings"}</code> | How a lit fuse limits docking: Default, Single (only into an empty dock, then blocks it) or Blocked. |
+| <Link id="m-finishedonserver" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" finishedOnServer"}</code> | Event raised on the server when the fuse burns out. Exposed as `Finished`. |
+| <Link id="m-finishsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" finishSync"}</code> | Method sync for the `DynamiteExplosion` message. |
+| <Link id="m-fuse" /><code>{"private Transform fuse"}</code> | Transform scaled along Y to show how much fuse is left. |
+| <Link id="m-fusecoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" fuseCoroutine"}</code> | The running `FuseTimer` coroutine. |
+| <Link id="m-fuselength" /><code>{"private float fuseLength"}</code> | Full length of the fuse visual. Backing field for `FuseLength`. |
+| <Link id="m-fusetime" /><code>{"private float fuseTime"}</code> | Seconds from lighting to finishing. Backing field for `FuseTime`. |
+| <Link id="m-impactdetector" /><code>{"private "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | Optional impact detector. Any hit lights the fuse. |
+| <Link id="m-isfinished" /><code>{"private bool isFinished"}</code> | True once the fuse has burnt out. Backing field for `IsFinished`. |
+| <Link id="m-islit" /><code>{"private bool isLit"}</code> | True while burning. Backing field for `IsLit`. |
+| <Link id="m-ispreventingdockingwhenlit" /><code>{"private bool isPreventingDockingWhenLit"}</code> | If set, a lit fuse can only dock into docks with one of `whenLitAcceptOnlyTags`. |
+| <Link id="m-liteffect" /><code>{"private GameObject litEffect"}</code> | Object shown while lit, hidden when docked small. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | The pickup holding the fuse. Made transient while lit. |
+| <Link id="m-started" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" started"}</code> | Event raised when the fuse is lit. |
+| <Link id="m-stopped" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" stopped"}</code> | Event raised when the fuse is put out. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for the `DynamiteFuseProgress` message. Sent to players as they connect. |
+| <Link id="m-whenlitacceptonlytags" /><code>{"private "}<Link to="/game-api/types/alta-items/pickuptag">{"PickupTag"}</Link>{"[] whenLitAcceptOnlyTags"}</code> | Dock tags a lit fuse may still dock into when `isPreventingDockingWhenLit` is set. |
 
 </details>
 
@@ -68,9 +68,9 @@ A burning fuse, as on dynamite. Once lit (a hit lights it) it burns down over `F
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-heat-iflammable-isignoringsparks" /><code>{"private bool Alta.Heat.IFlammable.IsIgnoringSparks { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-heat-iflammable-isignoringsparks" /><code>{"private bool Alta.Heat.IFlammable.IsIgnoringSparks { get; }"}</code> | Always false, so sparks can light the fuse. |
 
 </details>
 
@@ -95,22 +95,22 @@ A burning fuse, as on dynamite. Once lit (a hit lights it) it burns down over `F
 <details>
 <summary>15 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-block" /><code>{"private void Block("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool isBlocked)"}</code> |
-| <Link id="m-cancelfuse" /><code>{"private void CancelFuse("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-checkblock" /><code>{"private void CheckBlock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-dockfilter" /><code>{"private void DockFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> |
-| <Link id="m-filteralldocking" /><code>{"private void FilterAllDocking("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> |
-| <Link id="m-finishsync-2" /><code>{"private void FinishSync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-fusetimer" /><code>{"private IEnumerator FuseTimer() (iterator)"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-onhit" /><code>{"private void OnHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> |
-| <Link id="m-onserialize" /><code>{"private void ICleanOnSerialize.OnSerialize()"}</code> |
-| <Link id="m-serialize" /><code>{"private void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-starttimer" /><code>{"private void StartTimer()"}</code> |
-| <Link id="m-syncfuse" /><code>{"private void SyncFuse("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-unblock" /><code>{"private void Unblock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-block" /><code>{"private void Block("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, ref bool isBlocked)"}</code> | Dock filter that blocks everything. Added to the dock a lit fuse sits in when `dockSettings` is Single. |
+| <Link id="m-cancelfuse" /><code>{"private void CancelFuse("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Stops the fuse coroutine when the scene destroys the entity. |
+| <Link id="m-checkblock" /><code>{"private void CheckBlock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | On docking while lit, blocks that dock from taking anything else. |
+| <Link id="m-dockfilter" /><code>{"private void DockFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> | While lit, stops the pickup docking at all (Blocked) or into a dock that already holds something (Single). |
+| <Link id="m-filteralldocking" /><code>{"private void FilterAllDocking("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> | While lit with `isPreventingDockingWhenLit`, only allows docks whose tags include one of `whenLitAcceptOnlyTags`. |
+| <Link id="m-finishsync-2" /><code>{"private void FinishSync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Client: marks the fuse finished and undocks the pickup when the server says it exploded. |
+| <Link id="m-fusetimer" /><code>{"private IEnumerator FuseTimer() (iterator)"}</code> | Coroutine that burns the fuse down over `fuseTime` seconds. Server: at zero, syncs, undocks and drops the pickup, and raises `Finished`. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Unhooks the impact detector. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks the impact detector so a hit lights the fuse. |
+| <Link id="m-onhit" /><code>{"private void OnHit("}<Link to="/game-api/types/alta-items/impacthit">{"ImpactHit"}</Link>{" impact)"}</code> | Clears the impact detector's settings and tries to light the fuse. |
+| <Link id="m-onserialize" /><code>{"private void ICleanOnSerialize.OnSerialize()"}</code> | Puts the fuse out before the entity is serialized, so copies aren't saved lit. |
+| <Link id="m-serialize" /><code>{"private void Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the finished flag, and if not finished, the lit flag and fuse amount. Updates the visual on read. |
+| <Link id="m-starttimer" /><code>{"private void StartTimer()"}</code> | Restarts the fuse coroutine and hooks cancelling it if the entity is destroyed. |
+| <Link id="m-syncfuse" /><code>{"private void SyncFuse("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Server to client sync of the fuse state. Client: starts or stops the burn, effects and dock rules to match. |
+| <Link id="m-unblock" /><code>{"private void Unblock("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Removes the `Block` filter from the dock the pickup left. |
 
 </details>

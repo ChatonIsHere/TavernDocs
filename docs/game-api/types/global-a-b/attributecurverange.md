@@ -1,6 +1,6 @@
 ---
 title: "AttributeCurveRange"
-description: "class AttributeCurveRange in Root.Township."
+description: "A curve and value range for one biome attribute, as a serializable CurveRange of BiomeAttribute."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttributeCurveRange
 
 A **class** in `Root.Township`, no namespace.
+
+A curve and value range for one biome attribute, as a serializable `CurveRange` of `BiomeAttribute`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`CurveRange<BiomeAttribute>`](/game-api/types/alta-utilities/curverange-t)

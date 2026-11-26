@@ -29,14 +29,14 @@ Asset for one cosmetic category (hair, hats and so on) in the character customiz
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-icon" /><code>{"private Sprite icon"}</code> |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> |
-| <Link id="m-pickupscale" /><code>{"private float pickupScale"}</code> |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-icon" /><code>{"private Sprite icon"}</code> | Icon for the category on the selection panel. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | When off, the category is left off the selection panel and out of randomizing. |
+| <Link id="m-isvisible" /><code>{"private bool isVisible"}</code> | Whether the category shows in the category scroll list. |
+| <Link id="m-pickupscale" /><code>{"private float pickupScale"}</code> | Scale for cosmetic pickups of this category. |
+| <Link id="m-priority" /><code>{"private int priority"}</code> | Order of the category on the selection panel. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" type"}</code> | The shop item category this maps to. |
 
 </details>
 

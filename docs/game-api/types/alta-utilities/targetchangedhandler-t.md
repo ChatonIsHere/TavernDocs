@@ -1,6 +1,6 @@
 ---
 title: "TargetChangedHandler<T>"
-description: "delegate TargetChangedHandler<T> in Root.Township."
+description: "Callback for when a ForwardedList<T> switches the list it forwards to."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TargetChangedHandler&lt;T&gt;
 
 A **delegate** in `Root.Township`, `Alta.Utilities`.
+
+Callback for when a `ForwardedList<T>` switches the list it forwards to. Gets the forwarded list plus the old and new target lists.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "RemoteEquipmentModeVisuals"
-description: "class RemoteEquipmentModeVisuals in Root.Township."
+description: "Visuals that scale in when shown and destroy themselves after scaling out."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RemoteEquipmentModeVisuals
 
 A **class** in `Root.Township`, no namespace.
+
+Visuals that scale in when shown and destroy themselves after scaling out. Client side.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,25 +28,25 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-appearscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-appearscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" appearScaler"}</code> | Curve scaler that runs the scale animation. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> |
-| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-makeappear" /><code>{"void MakeAppear()"}</code> | Starts the scale-in animation. |
+| <Link id="m-makedissappear" /><code>{"void MakeDissappear()"}</code> | Starts the scale-out animation and destroys the object when it ends. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-waitfordissapearanimation" /><code>{"private IEnumerator WaitForDissapearAnimation() (iterator)"}</code> | Coroutine that waits for the scale animation to finish, then destroys the object. |
 
 </details>
 

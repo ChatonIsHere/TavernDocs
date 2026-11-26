@@ -1,6 +1,6 @@
 ---
 title: "ServerRemoteConsole"
-description: "class ServerRemoteConsole in Root.Township."
+description: "The TCP remote console: listens on port 1758 on a background thread, checks the JWT a client sends first and then hands the connection to a ClientHandler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerRemoteConsole
 
 A **class** in `Root.Township`, no namespace.
+
+The TCP remote console: listens on port 1758 on a background thread, checks the JWT a client sends first and then hands the connection to a `ClientHandler`. Started by `ServerConsoleManager`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`IRemoteConsole`](/game-api/types/global-i-l/iremoteconsole)
@@ -24,52 +26,52 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-serverconsoleport" /><code>{"const int ServerConsolePort"}</code> |
-| <Link id="m-serverloggingport" /><code>{"const int ServerLoggingPort"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serverconsoleport" /><code>{"const int ServerConsolePort"}</code> | TCP port the console listens on (1758). |
+| <Link id="m-serverloggingport" /><code>{"const int ServerLoggingPort"}</code> | Logging port constant (1759); not used in this class. |
 
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allclienthandlers" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/clienthandler">{"ClientHandler"}</Link>{"> allClientHandlers"}</code> |
-| <Link id="m-alldone" /><code>{"private ManualResetEvent allDone"}</code> |
-| <Link id="m-connectionhandlingthread" /><code>{"private Thread connectionHandlingThread"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-socket" /><code>{"private Socket socket"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allclienthandlers" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/clienthandler">{"ClientHandler"}</Link>{"> allClientHandlers"}</code> | Clients currently connected. |
+| <Link id="m-alldone" /><code>{"private ManualResetEvent allDone"}</code> | Signal that lets the listen loop accept the next connection. |
+| <Link id="m-connectionhandlingthread" /><code>{"private Thread connectionHandlingThread"}</code> | The background listening thread. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-socket" /><code>{"private Socket socket"}</code> | The listening socket. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"static bool IsActive { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"static bool IsActive { get; private set; }"}</code> | True while the remote console is started and listening. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> |
-| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-consoleconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleConnected"}</code> | Fired when a client passes the token check. |
+| <Link id="m-consoledisconnected" /><code>{"event Action<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{", "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"> ConsoleDisconnected"}</code> | Fired when a client disconnects. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-close" /><code>{"void Close()"}</code> |
-| <Link id="m-start" /><code>{"void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-close" /><code>{"void Close()"}</code> | Terminates every client, closes the listening socket and clears `IsActive`. |
+| <Link id="m-start" /><code>{"void Start()"}</code> | Sets `IsActive` and starts the listening thread. |
 
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-createclient" /><code>{"private void CreateClient(Socket clientSocket, JwtSecurityToken clientToken)"}</code> |
-| <Link id="m-handleclientterminated" /><code>{"private void HandleClientTerminated("}<Link to="/game-api/types/global-c-d/clienthandler">{"ClientHandler"}</Link>{" client)"}</code> |
-| <Link id="m-handlenewconnectionasync" /><code>{"private async void HandleNewConnectionAsync(IAsyncResult ar)"}</code> |
-| <Link id="m-startsocketlisten" /><code>{"private void StartSocketListen()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createclient" /><code>{"private void CreateClient(Socket clientSocket, JwtSecurityToken clientToken)"}</code> | Wraps an accepted socket in a `ClientHandler`, tracks it and raises `ConsoleConnected`. |
+| <Link id="m-handleclientterminated" /><code>{"private void HandleClientTerminated("}<Link to="/game-api/types/global-c-d/clienthandler">{"ClientHandler"}</Link>{" client)"}</code> | Stops tracking a disconnected client and raises `ConsoleDisconnected`. |
+| <Link id="m-handlenewconnectionasync" /><code>{"private async void HandleNewConnectionAsync(IAsyncResult ar)"}</code> | Accepts a connection, reads the JWT, validates it with `ServerConsoleManager.ValidateConsoleToken` and replies "ok" or "Invalid Token". |
+| <Link id="m-startsocketlisten" /><code>{"private void StartSocketListen()"}</code> | Thread body: binds port 1758 on all addresses and accepts connections one at a time, forever. |
 
 </details>

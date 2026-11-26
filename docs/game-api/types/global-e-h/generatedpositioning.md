@@ -1,6 +1,6 @@
 ---
 title: "GeneratedPositioning"
-description: "class GeneratedPositioning in Root.Township."
+description: "Asset that adjusts a generated object's position and rotation through position and rotation modules."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneratedPositioning
 
 A **class** in `Root.Township`, no namespace.
+
+Asset that adjusts a generated object's position and rotation through position and rotation modules. Used by `StaticGeneration` and `StaticDynamicSpawner`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -29,22 +31,22 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-positionmodule">{"GeneratedPositioning.PositionModule"}</Link>{" position"}</code> |
-| <Link id="m-positionmodule" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-module">{"GeneratedPositioning.Module"}</Link>{" positionModule"}</code> |
-| <Link id="m-positiontypes" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-e-h/generatedpositioning-positionmodule">{"GeneratedPositioning.PositionModule"}</Link>{", Type> positionTypes"}</code> |
-| <Link id="m-rotation" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-rotationmodule">{"GeneratedPositioning.RotationModule"}</Link>{" rotation"}</code> |
-| <Link id="m-rotationmodule" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-module">{"GeneratedPositioning.Module"}</Link>{" rotationModule"}</code> |
-| <Link id="m-rotationtypes" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-e-h/generatedpositioning-rotationmodule">{"GeneratedPositioning.RotationModule"}</Link>{", Type> rotationTypes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-positionmodule">{"GeneratedPositioning.PositionModule"}</Link>{" position"}</code> | Which position module type is picked in the inspector. |
+| <Link id="m-positionmodule" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-module">{"GeneratedPositioning.Module"}</Link>{" positionModule"}</code> | Module that changes the position, or null for none. |
+| <Link id="m-positiontypes" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-e-h/generatedpositioning-positionmodule">{"GeneratedPositioning.PositionModule"}</Link>{", Type> positionTypes"}</code> | Maps each position module choice to its class (Static has none). |
+| <Link id="m-rotation" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-rotationmodule">{"GeneratedPositioning.RotationModule"}</Link>{" rotation"}</code> | Which rotation module type is picked in the inspector. |
+| <Link id="m-rotationmodule" /><code>{"private "}<Link to="/game-api/types/global-e-h/generatedpositioning-module">{"GeneratedPositioning.Module"}</Link>{" rotationModule"}</code> | Module that changes the rotation, or null for none. |
+| <Link id="m-rotationtypes" /><code>{"private static Dictionary<"}<Link to="/game-api/types/global-e-h/generatedpositioning-rotationmodule">{"GeneratedPositioning.RotationModule"}</Link>{", Type> rotationTypes"}</code> | Maps each rotation module choice to its class; `RandomY` uses `RandomYRotation`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-modify" /><code>{"void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modify" /><code>{"void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> | Runs the position module then the rotation module on the given position and rotation. |
 
 ## Used in
 

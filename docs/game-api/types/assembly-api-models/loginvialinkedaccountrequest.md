@@ -1,6 +1,6 @@
 ---
 title: "LoginViaLinkedAccountRequest"
-description: "class LoginViaLinkedAccountRequest in Alta.Api.DataTransferModels."
+description: "Body for logging in with a linked platform account (used for Oculus and Pico)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LoginViaLinkedAccountRequest
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Body for logging in with a linked platform account (used for Oculus and Pico).
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`AccountRequestBase`](/game-api/types/assembly-api-models/accountrequestbase)
@@ -23,9 +25,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deviceidentifier" /><code>{"string DeviceIdentifier { get; set; }"}</code> | Id of the device logging in. |
 
 ## Used in
 

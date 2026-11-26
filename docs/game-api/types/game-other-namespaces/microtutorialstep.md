@@ -29,10 +29,10 @@ Base asset for one step of a micro tutorial. Subclasses say which player events 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"internal static readonly Logger logger"}</code> |
-| <Link id="m-norequiredevents" /><code>{"private static readonly Type[] noRequiredEvents"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"internal static readonly Logger logger"}</code> | NLog logger shared by micro tutorial steps. |
+| <Link id="m-norequiredevents" /><code>{"private static readonly Type[] noRequiredEvents"}</code> | Empty type array returned by the default `RequiredPlayerEventTypes`. |
 
 </details>
 

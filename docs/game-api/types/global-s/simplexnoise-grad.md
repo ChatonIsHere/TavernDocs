@@ -1,6 +1,6 @@
 ---
 title: "SimplexNoise.Grad"
-description: "struct SimplexNoise.Grad in Root.Township."
+description: "A gradient vector for SimplexNoise (3D, with w used only for 4D noise)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimplexNoise.Grad
 
 A **private struct** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+A gradient vector for `SimplexNoise` (3D, with `w` used only for 4D noise). Private to that class.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SimplexNoise`](/game-api/types/global-s/simplexnoise)
@@ -24,12 +26,12 @@ A **private struct** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-w" /><code>{"double w"}</code> |
-| <Link id="m-x" /><code>{"double x"}</code> |
-| <Link id="m-y" /><code>{"double y"}</code> |
-| <Link id="m-z" /><code>{"double z"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-w" /><code>{"double w"}</code> | Fourth component, 0 for 3D gradients. |
+| <Link id="m-x" /><code>{"double x"}</code> |  |
+| <Link id="m-y" /><code>{"double y"}</code> |  |
+| <Link id="m-z" /><code>{"double z"}</code> |  |
 
 ## Used in
 

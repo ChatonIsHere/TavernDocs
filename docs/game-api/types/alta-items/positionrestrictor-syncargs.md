@@ -1,6 +1,6 @@
 ---
 title: "PositionRestrictor.SyncArgs"
-description: "struct PositionRestrictor.SyncArgs in Root.Township."
+description: "Message data for PositionRestrictor syncs (reset location, haptics, item registration): an entity, an on or off flag and a position."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionRestrictor.SyncArgs
 
 A **private struct** in `Root.Township`, `Alta.Pages`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Message data for `PositionRestrictor` syncs (reset location, haptics, item registration): an entity, an on or off flag and a position.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`PositionRestrictor`](/game-api/types/alta-items/positionrestrictor)
@@ -24,11 +26,11 @@ A **private struct** in `Root.Township`, `Alta.Pages`. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The item the message is about. |
+| <Link id="m-isenabled" /><code>{"bool isEnabled"}</code> | On or off for the message, such as whether the item is now restricted. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Position to reset to, zero when unused. |
 
 ## Used in
 

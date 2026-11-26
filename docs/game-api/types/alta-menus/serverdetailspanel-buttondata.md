@@ -1,6 +1,6 @@
 ---
 title: "ServerDetailsPanel.ButtonData"
-description: "class ServerDetailsPanel.ButtonData in Root.Township."
+description: "A join type choice on the create and edit server panels: its button, the group type it stands for and a label."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerDetailsPanel.ButtonData
 
 A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
+
+A join type choice on the create and edit server panels: its button, the group type it stands for and a label.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Nested in** [`ServerDetailsPanel`](/game-api/types/alta-menus/serverdetailspanel)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-button" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> |
-| <Link id="m-data" /><code>{"string data"}</code> |
-| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-button" /><code><Link to="/game-api/types/alta-menus/buttonwithevents">{"ButtonWithEvents"}</Link>{" button"}</code> | The button for this choice. |
+| <Link id="m-data" /><code>{"string data"}</code> | The `GroupType` name this choice sets, parsed when the request is sent. |
+| <Link id="m-friendlyname" /><code>{"string friendlyName"}</code> | Label shown in the confirmation text. |
 
 ## Used in
 

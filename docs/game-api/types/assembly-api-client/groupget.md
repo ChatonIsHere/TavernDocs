@@ -1,6 +1,6 @@
 ---
 title: "GroupGet"
-description: "class GroupGet in Alta.Api.Client."
+description: "Paged list of joinable groups of one group type, fetched from the Alta web API and wrapped as JoinableGroupInfo."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupGet
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Paged list of joinable groups of one group type, fetched from the Alta web API and wrapped as `JoinableGroupInfo`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`PaginatedList<JoinableGroupInfo>`](/game-api/types/assembly-api-client/paginatedlist-t)

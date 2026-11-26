@@ -1,6 +1,6 @@
 ---
 title: "ISecurityApiClient"
-description: "interface ISecurityApiClient in Alta.Api.Client."
+description: "Alta web API calls for bans and identity token checks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,19 +12,21 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API calls for bans and identity token checks. `ApiAccess.ApiClient.SecurityClient`.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`OfflineSecurityApiClient`](/game-api/types/assembly-api-client/offlinesecurityapiclient), [`SecurityApiClient`](/game-api/types/assembly-api-client/securityapiclient)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-banuserasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{"> BanUserAsync(int userId, string reason, float durationInHours, "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" banType, "}<Link to="/game-api/types/assembly-api-models/banmethod">{"BanMethod"}</Link>{" method, List<int> servers = null, int? callingUserIdentifier = null)"}</code> |
-| <Link id="m-deleteban" /><code>{"Task DeleteBan(int banIdentifier)"}</code> |
-| <Link id="m-getallbans" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBans()"}</code> |
-| <Link id="m-getallbansaboutuser" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBansAboutUser(int userIdentifier)"}</code> |
-| <Link id="m-getallbansfrommoderator" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBansFromModerator(int moderatorIdentifier)"}</code> |
-| <Link id="m-isvalididentitytokenasync" /><code>{"Task<bool> IsValidIdentityTokenAsync(string identityToken)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-banuserasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{"> BanUserAsync(int userId, string reason, float durationInHours, "}<Link to="/game-api/types/assembly-api-models/bantype">{"BanType"}</Link>{" banType, "}<Link to="/game-api/types/assembly-api-models/banmethod">{"BanMethod"}</Link>{" method, List<int> servers = null, int? callingUserIdentifier = null)"}</code> | Bans a user for a number of hours, of a type and method, optionally on listed servers. |
+| <Link id="m-deleteban" /><code>{"Task DeleteBan(int banIdentifier)"}</code> | Removes a ban by id. |
+| <Link id="m-getallbans" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBans()"}</code> | Lists every ban. |
+| <Link id="m-getallbansaboutuser" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBansAboutUser(int userIdentifier)"}</code> | Lists the bans on a user. |
+| <Link id="m-getallbansfrommoderator" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/baninfo">{"BanInfo"}</Link>{">> GetAllBansFromModerator(int moderatorIdentifier)"}</code> | Lists the bans a moderator made. |
+| <Link id="m-isvalididentitytokenasync" /><code>{"Task<bool> IsValidIdentityTokenAsync(string identityToken)"}</code> | Asks the API whether an identity token is valid. |
 
 ## Used in
 

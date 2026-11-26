@@ -14,7 +14,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ChunkRegion`](/game-api/types/alta-menus/chunkregion) | enum |  | 23 |  |
+| [`ChunkRegion`](/game-api/types/alta-menus/chunkregion) | enum |  | 23 | Named regions of the world (town buildings, overworld areas, caves, combat trials) used to tell friends where a player is, such as Oculus destinations. |
 
 ## Alta.Menu
 
@@ -23,10 +23,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AssistedSpawnCommandAction`](/game-api/types/alta-menus/assistedspawncommandaction) | class | `ServerMultiCommandAction`, `IUseVirtualKeyboard` | 8 |  |
 | [`AssistedSpawnCommandDefinition`](/game-api/types/alta-menus/assistedspawncommanddefinition) | class | `ServerCommandDefinitionBase`, `IHasDynamicArguments`, `IUsesMultipleButtons` | 10 |  |
 | [`ButtonEnumMenuSetting`](/game-api/types/alta-menus/buttonenummenusetting) | class | `EnumMenuSettingBase` | 0 |  |
-| [`CustomScroller`](/game-api/types/alta-menus/customscroller) | class | `MonoBehaviour` | 5 |  |
+| [`CustomScroller`](/game-api/types/alta-menus/customscroller) | class | `MonoBehaviour` | 5 | A rotating drum menu driven by a `SelectionLever`: holding the lever off-centre spins the drum and steps through a list of string values. Used by the server creator. |
 | [`EnumMenuSettingBase`](/game-api/types/alta-menus/enummenusettingbase) | class | `MenuGameSetting<EnumSettingAccess>` | 3 | A menu setting that steps through a list of string values (next and previous) and writes the chosen one to its setting. |
 | [`IHasDynamicArguments`](/game-api/types/alta-menus/ihasdynamicarguments) | interface | `IUsesMultipleButtons` | 3 |  |
-| [`IProvideEnumerable<T>`](/game-api/types/alta-menus/iprovideenumerable-t) | interface |  | 2 |  |
+| [`IProvideEnumerable<T>`](/game-api/types/alta-menus/iprovideenumerable-t) | interface |  | 2 | Something that supplies a changing list of values to a menu, such as `FriendSelector` feeding a `ScrollerSelector` on the same object. |
 | [`IUsesMultipleButtons`](/game-api/types/alta-menus/iusesmultiplebuttons) | interface |  | 2 |  |
 | [`MenuGameSetting`](/game-api/types/alta-menus/menugamesetting) | abstract class | `MonoBehaviour` | 1 |  |
 | [`MenuGameSetting<T>`](/game-api/types/alta-menus/menugamesetting-t) | abstract class | `MenuGameSetting` | 1 | Base for one setting row in the in-game settings panel, showing a setting of type `T`. Client only. Hides itself if the setting isn't valid on this platform. |
@@ -46,9 +46,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`Friend`](/game-api/types/alta-menus/friend) | struct |  | 2 |  |
+| [`Friend`](/game-api/types/alta-menus/friend) | struct |  | 2 | A friend entry: the user's ID and display name. |
 | [`FriendsManager`](/game-api/types/alta-menus/friendsmanager) | class | `LoggedInTool` | 6 | Main menu friends board: lists friends or friend requests from the Alta API as user tokens on a rope board. Client side. |
-| [`FriendsManager.Tab`](/game-api/types/alta-menus/friendsmanager-tab) | enum |  | 3 |  |
+| [`FriendsManager.Tab`](/game-api/types/alta-menus/friendsmanager-tab) | enum |  | 3 | The tabs of the friends menu: friends, friend requests and Oculus friends. |
 | [`IInitializable`](/game-api/types/alta-menus/iinitializable) | internal interface |  | 1 |  |
 | [`UserToken`](/game-api/types/alta-menus/usertoken) | class | `MonoBehaviour` | 4 | One user entry on the friends board, with optional accept and reject buttons. |
 
@@ -56,7 +56,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IPlatformFriendService`](/game-api/types/alta-menus/iplatformfriendservice) | interface |  | 3 |  |
+| [`IPlatformFriendService`](/game-api/types/alta-menus/iplatformfriendservice) | interface |  | 3 | Platform (Oculus) friend list service, got from `InterfaceResolver.IPlatformFriendService`. In this build the resolver returns null, so there is no implementation. |
 
 ## Alta.Meta.UI
 
@@ -64,14 +64,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`AutoComplete`](/game-api/types/alta-menus/autocomplete) | class |  | 5 |  |
 | [`Button`](/game-api/types/alta-menus/button) | class | `MonoBehaviour` | 13 | A simple button component for the in-game (meta) UI. Holds a label, enabled flag and pressed state, raises events, and plays press and release sounds if set. |
-| [`ButtonCollection`](/game-api/types/alta-menus/buttoncollection) | class | `MonoBehaviour` | 2 |  |
+| [`ButtonCollection`](/game-api/types/alta-menus/buttoncollection) | class | `MonoBehaviour` | 2 | A group of menu buttons where one is selected at a time, like tabs. The selected button is disabled until another is pressed. |
 | [`ButtonEvents`](/game-api/types/alta-menus/buttonevents) | class | `MonoBehaviour` | 0 |  |
-| [`ButtonSettings`](/game-api/types/alta-menus/buttonsettings) | class | `ScriptableObject` | 0 |  |
+| [`ButtonSettings`](/game-api/types/alta-menus/buttonsettings) | class | `ScriptableObject` | 0 | An empty ScriptableObject asset for UI button settings (menu Township/UI/Button Settings). It holds nothing in this build. |
 | [`ButtonWithEvents`](/game-api/types/alta-menus/buttonwithevents) | class | `Button` | 0 | A menu `Button` that also fires Unity events set in the inspector when pressed, released, enabled or disabled. |
-| [`ConfirmPopupPanel`](/game-api/types/alta-menus/confirmpopuppanel) | class | `Panel` | 3 |  |
-| [`IAutoCompletionSource`](/game-api/types/alta-menus/iautocompletionsource) | interface |  | 1 |  |
+| [`ConfirmPopupPanel`](/game-api/types/alta-menus/confirmpopuppanel) | class | `Panel` | 3 | Client: menu popup with a message and confirm and cancel buttons. Call `Setup` with the text and callbacks, then show it; it hides itself after either button. |
+| [`IAutoCompletionSource`](/game-api/types/alta-menus/iautocompletionsource) | interface |  | 1 | Something that supplies a list of strings for an autocomplete text field, such as object names in a folder. |
 | [`InputField`](/game-api/types/alta-menus/inputfield) | class | `MonoBehaviour` | 10 | A text input field in the game's world-space menus, showing its text through a `TextRenderer` with an optional caret and secret (password) mode. |
-| [`InputFieldWithKeyboard`](/game-api/types/alta-menus/inputfieldwithkeyboard) | class | `MonoBehaviour`, `IUseVirtualKeyboard` | 9 |  |
+| [`InputFieldWithKeyboard`](/game-api/types/alta-menus/inputfieldwithkeyboard) | class | `MonoBehaviour`, `IUseVirtualKeyboard` | 9 | Client: connects a UI `InputField` to the in-world VR `TouchScreenKeyboard`, showing it at a marker and passing typed text back. |
 | [`ListElement`](/game-api/types/alta-menus/listelement) | class | `MonoBehaviour` | 0 | Empty component, probably a marker for items in a UI list. |
 | [`ListElementWithButton`](/game-api/types/alta-menus/listelementwithbutton) | class | `TextListElement` | 5 | A text list entry with a button. Pressing the button selects it. |
 | [`ListElementWithButtonAndExtraText`](/game-api/types/alta-menus/listelementwithbuttonandextratext) | class | `ListElementWithButton` | 1 |  |
@@ -79,7 +79,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LoadingUI`](/game-api/types/alta-menus/loadingui) | class | `MonoBehaviour` | 1 |  |
 | [`NavigateTo`](/game-api/types/alta-menus/navigateto) | class | `MonoBehaviour` | 0 |  |
 | [`ObjectNamesInFolder`](/game-api/types/alta-menus/objectnamesinfolder) | class | `ScriptableObject`, `IAutoCompletionSource` | 2 |  |
-| [`OptionsConfig`](/game-api/types/alta-menus/optionsconfig) | class |  | 4 |  |
+| [`OptionsConfig`](/game-api/types/alta-menus/optionsconfig) | class |  | 4 | One option button for a menu window's options popup: label, action to run and button style. Used by friend panels for things like Revoke. |
 | [`OptionsPanel`](/game-api/types/alta-menus/optionspanel) | class | `Panel` | 1 |  |
 | [`OptionsPanelButtonConfig`](/game-api/types/alta-menus/optionspanelbuttonconfig) | class |  | 2 |  |
 | [`Panel`](/game-api/types/alta-menus/panel) | class | `MonoBehaviour` | 6 | One page of a meta UI `Window`. Shows or hides itself, playing an optional scale animation, and raises `StateChanged`. |
@@ -87,20 +87,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Popup`](/game-api/types/alta-menus/popup) | class | `MonoBehaviour` | 0 |  |
 | [`RecentPlayerPanelListElement`](/game-api/types/alta-menus/recentplayerpanellistelement) | class | `ListElementWithButtonAndExtraText` | 0 |  |
 | [`RopeUIList`](/game-api/types/alta-menus/ropeuilist) | class | `UIList` | 5 |  |
-| [`ScalingFadeAnimator`](/game-api/types/alta-menus/scalingfadeanimator) | class | `MonoBehaviour`, `UIActionLock.ILockUIAction` | 2 |  |
+| [`ScalingFadeAnimator`](/game-api/types/alta-menus/scalingfadeanimator) | class | `MonoBehaviour`, `UIActionLock.ILockUIAction` | 2 | Client UI: scales its targets up along a curve when enabled, and can scale them down then switch to another object. Locks UI actions while animating. |
 | [`SimpleTextPanel`](/game-api/types/alta-menus/simpletextpanel) | class | `Panel` | 1 |  |
 | [`SimpleUIList`](/game-api/types/alta-menus/simpleuilist) | class | `UIList` | 1 |  |
-| [`Tab`](/game-api/types/alta-menus/tab) | class | `Panel` | 0 |  |
+| [`Tab`](/game-api/types/alta-menus/tab) | class | `Panel` | 0 | Client: a menu panel that shows and hides by turning its game object on and off, with no animation. |
 | [`TabbedPanel`](/game-api/types/alta-menus/tabbedpanel) | class | `Panel`, `IBuildRendererPostBake`, `IBuildBakeable` | 2 |  |
 | [`TabletToggle`](/game-api/types/alta-menus/tablettoggle) | class | `MonoBehaviour` | 1 |  |
-| [`TextButton`](/game-api/types/alta-menus/textbutton) | class | `ButtonWithEvents` | 1 |  |
+| [`TextButton`](/game-api/types/alta-menus/textbutton) | class | `ButtonWithEvents` | 1 | A menu button whose label is drawn by a `TextRenderer`, kept in step with the button's `Label`. |
 | [`TextListElement`](/game-api/types/alta-menus/textlistelement) | class | `ListElement` | 1 |  |
 | [`TouchScreenButton`](/game-api/types/alta-menus/touchscreenbutton) | class | `Button`, `ITouchScreenButton` | 1 |  |
 | [`TouchScreenButtonVisual`](/game-api/types/alta-menus/touchscreenbuttonvisual) | class | `MonoBehaviour` | 0 |  |
 | [`TouchScreenButtonVisualSettings`](/game-api/types/alta-menus/touchscreenbuttonvisualsettings) | class | `ButtonSettings` | 5 |  |
 | [`UIActionLock`](/game-api/types/alta-menus/uiactionlock) | static class |  | 3 |  |
-| [`UIActionLock.ILockUIAction`](/game-api/types/alta-menus/uiactionlock-ilockuiaction) | interface |  | 0 |  |
-| [`UIButtonType`](/game-api/types/alta-menus/uibuttontype) | enum |  | 2 |  |
+| [`UIActionLock.ILockUIAction`](/game-api/types/alta-menus/uiactionlock-ilockuiaction) | interface |  | 0 | Marker for an object that can take the global UI action lock in `UIActionLock`, so only one menu action runs at a time. Has no members. |
+| [`UIButtonType`](/game-api/types/alta-menus/uibuttontype) | enum |  | 2 | Style of a meta UI button: normal, or bad (probably for destructive or negative actions). |
 | [`UIList`](/game-api/types/alta-menus/uilist) | abstract class | `MonoBehaviour` | 6 | Base for a list of elements in the game's world-space menus. Subclasses decide how elements are laid out. |
 | [`Window`](/game-api/types/alta-menus/window) | class | `MonoBehaviour` | 13 | Client: a menu screen made of panels. Shows one panel at a time plus popups (confirm, options, loading). |
 
@@ -126,7 +126,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`InboxPanel`](/game-api/types/alta-menus/inboxpanel) | class | `PanelComponent` | 2 |  |
 | [`IncomingGroupRequestPage`](/game-api/types/alta-menus/incominggrouprequestpage) | class | `GroupPage` | 1 |  |
 | [`InviteUserToGroupPanel`](/game-api/types/alta-menus/inviteusertogrouppanel) | class | `PanelComponent` | 3 |  |
-| [`InviteUserToGroupViaFriendsPanel`](/game-api/types/alta-menus/inviteusertogroupviafriendspanel) | class | `PanelComponent` | 4 |  |
+| [`InviteUserToGroupViaFriendsPanel`](/game-api/types/alta-menus/inviteusertogroupviafriendspanel) | class | `PanelComponent` | 4 | Client: server management panel listing the player's friends so they can be invited to a group. On Quest it also lists Oculus friends without a linked account. |
 | [`JoinedGroupListElement`](/game-api/types/alta-menus/joinedgrouplistelement) | class | `ListElementWithData<JoinedGroupManager>` | 1 |  |
 | [`JoinedGroupsList`](/game-api/types/alta-menus/joinedgroupslist) | class | `PanelComponent` | 1 |  |
 | [`ListElementWith2Buttons`](/game-api/types/alta-menus/listelementwith2buttons) | class | `ListElementWithButton` | 1 |  |
@@ -134,15 +134,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OculusFriendsListPanel`](/game-api/types/alta-menus/oculusfriendslistpanel) | class | `PanelComponent` | 2 |  |
 | [`OutgoingGroupInvitesPage`](/game-api/types/alta-menus/outgoinggroupinvitespage) | class | `GroupPage` | 1 |  |
 | [`PlayerReportBaseNotification`](/game-api/types/alta-menus/playerreportbasenotification) | abstract class | `UINotification` | 5 | Base for main menu inbox notifications about player reports, where accepting bans the reported user from that server through the Alta API. |
-| [`PlayerReportInboxInfoPanel`](/game-api/types/alta-menus/playerreportinboxinfopanel) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerReportInboxInfoPanel`](/game-api/types/alta-menus/playerreportinboxinfopanel) | class | `MonoBehaviour` | 1 | Client: server management panel that shows one player report from the API: who was reported, why, by whom, when, and any action taken. |
 | [`PlayerReportNotification`](/game-api/types/alta-menus/playerreportnotification) | class | `PlayerReportBaseNotification`, `IEquatable<PlayerReportNotification>` | 10 | Inbox notification for one player report. Accept bans the reported user; decline ignores the report. |
 | [`PlayerReportSummaryNotification`](/game-api/types/alta-menus/playerreportsummarynotification) | class | `PlayerReportBaseNotification`, `IEquatable<PlayerReportSummaryNotification>` | 10 | Notification summarising the reports against one user, shown by the latest report. Accept bans the user; there is no decline. |
-| [`PlayerReportSummaryPanel`](/game-api/types/alta-menus/playerreportsummarypanel) | class | `MonoBehaviour` | 1 |  |
+| [`PlayerReportSummaryPanel`](/game-api/types/alta-menus/playerreportsummarypanel) | class | `MonoBehaviour` | 1 | Client: server management panel that sums up all reports against one player: total count, counts per reason, reporters, latest date and any ban. |
 | [`RecentPlayersListPanel`](/game-api/types/alta-menus/recentplayerslistpanel) | class | `PanelComponent` | 2 |  |
 | [`ReportsPanel`](/game-api/types/alta-menus/reportspanel) | class | `PanelComponent` | 2 |  |
-| [`SelectedGroupPanel`](/game-api/types/alta-menus/selectedgrouppanel) | class | `MonoBehaviour` | 4 |  |
+| [`SelectedGroupPanel`](/game-api/types/alta-menus/selectedgrouppanel) | class | `MonoBehaviour` | 4 | Main menu panel for one group (server) the player has joined, with members, info, request and invite pages. Uses Alta's web API, which is gone. |
 | [`ServerDetailsPanel`](/game-api/types/alta-menus/serverdetailspanel) | abstract class | `PanelComponent` | 0 | Client: base for the create server and edit server menu panels. Holds the name, description and join type inputs and shows a summary that updates as you type. |
-| [`ServerDetailsPanel.ButtonData`](/game-api/types/alta-menus/serverdetailspanel-buttondata) | class |  | 3 |  |
+| [`ServerDetailsPanel.ButtonData`](/game-api/types/alta-menus/serverdetailspanel-buttondata) | class |  | 3 | A join type choice on the create and edit server panels: its button, the group type it stands for and a label. |
 | [`ServerRegions`](/game-api/types/alta-menus/serverregions) | static class |  | 4 |  |
 | [`UINotification`](/game-api/types/alta-menus/uinotification) | abstract class |  | 11 | Base for a notification shown in the menu's server management panel, such as a friend request, group invite or API status. Client only. |
 
@@ -151,7 +151,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AccountNameTextReplacer`](/game-api/types/alta-menus/accountnametextreplacer) | internal class | `MonoBehaviour` | 2 |  |
-| [`AltaAccountRegistererAndLinker`](/game-api/types/alta-menus/altaaccountregistererandlinker) | internal class | `LoginAndRegisterHelper` | 3 |  |
+| [`AltaAccountRegistererAndLinker`](/game-api/types/alta-menus/altaaccountregistererandlinker) | internal class | `LoginAndRegisterHelper` | 3 | Client: the in-VR account registration screen. Checks username, email and password fields live against the API, registers the account, then logs in (with platform credentials if supported). |
 
 ## Alta.PlatformSpecific.Oculus
 
@@ -196,14 +196,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`SocialTabletActionSyncStruct`](/game-api/types/alta-menus/socialtabletactionsyncstruct) | internal struct |  | 4 |  |
+| [`SocialTabletActionSyncStruct`](/game-api/types/alta-menus/socialtabletactionsyncstruct) | internal struct |  | 4 | Message a client sends from the social tablet's recent player page after reporting, banning or unbanning someone. The server looks up the target and raises the matching console event. |
 | [`SocialTabletActionType`](/game-api/types/alta-menus/socialtabletactiontype) | enum |  | 3 |  |
 
 ## Alta.XR
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`TrackedDevice`](/game-api/types/alta-menus/trackeddevice) | enum |  | 3 |  |
+| [`TrackedDevice`](/game-api/types/alta-menus/trackeddevice) | enum |  | 3 | Tracked XR devices: the headset and the left and right controllers. |
 | [`VRSetup`](/game-api/types/alta-menus/vrsetup) | static class |  | 2 |  |
-| [`VRTrackedDevice`](/game-api/types/alta-menus/vrtrackeddevice) | class | `IDisposable` | 3 |  |
-| [`VRTrackedDevice.PositionPostProcessor`](/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor) | delegate |  | 0 |  |
+| [`VRTrackedDevice`](/game-api/types/alta-menus/vrtrackeddevice) | class | `IDisposable` | 3 | Client: drives a transform from a tracked VR pose (head or hand) after each input update and before rendering. Make one with `AddTracking`, dispose it to stop. |
+| [`VRTrackedDevice.PositionPostProcessor`](/game-api/types/alta-menus/vrtrackeddevice-positionpostprocessor) | delegate |  | 0 | Callback that can change a tracked position, passed by ref, before `VRTrackedDevice` applies it. |

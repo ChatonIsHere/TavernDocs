@@ -27,16 +27,16 @@ Per-chunk environment settings on a `LocationChunk`: ambient temperature overrid
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ambienttemperature" /><code>{"private float ambientTemperature"}</code> |
-| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/serializedgeneratedbiome">{"SerializedGeneratedBiome"}</Link>{" biome"}</code> |
-| <Link id="m-generatedbiome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> |
-| <Link id="m-generationcontext" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" generationContext"}</code> |
-| <Link id="m-isdisablingterraincollision" /><code>{"private bool isDisablingTerrainCollision"}</code> |
-| <Link id="m-isonlyusingownedpointers" /><code>{"private bool isOnlyUsingOwnedPointers"}</code> |
-| <Link id="m-overridesambienttemperature" /><code>{"private bool overridesAmbientTemperature"}</code> |
-| <Link id="m-overrideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" overrideSet"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ambienttemperature" /><code>{"private float ambientTemperature"}</code> | Backing field for `AmbientTemperature` (default 23). Only shown in the inspector when the override is on. |
+| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/serializedgeneratedbiome">{"SerializedGeneratedBiome"}</Link>{" biome"}</code> | Serialized biome that `SpawnData` is generated from when no procedural data was set. |
+| <Link id="m-generatedbiome" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/generatedbiome">{"GeneratedBiome"}</Link>{" generatedBiome"}</code> | Biome generated from `biome` the first time `SpawnData` is read. |
+| <Link id="m-generationcontext" /><code>{"private "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" generationContext"}</code> | Cached `SpawnData`, either set by `SetProcedural` or built from the serialized biome. |
+| <Link id="m-isdisablingterraincollision" /><code>{"private bool isDisablingTerrainCollision"}</code> | Backing field for `IsDisablingTerrainCollision`. |
+| <Link id="m-isonlyusingownedpointers" /><code>{"private bool isOnlyUsingOwnedPointers"}</code> | Backing field for `IsOnlyUsingOwnedPointers`. |
+| <Link id="m-overridesambienttemperature" /><code>{"private bool overridesAmbientTemperature"}</code> | Backing field for `OverridesAmbientTemperature`; set to true whenever `AmbientTemperature` is assigned. |
+| <Link id="m-overrideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" overrideSet"}</code> | Backing field for `OverrideSet` (the chunk's atmosphere override). |
 
 </details>
 

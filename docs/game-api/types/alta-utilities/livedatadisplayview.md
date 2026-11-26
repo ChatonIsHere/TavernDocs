@@ -1,6 +1,6 @@
 ---
 title: "LiveDataDisplayView"
-description: "class LiveDataDisplayView in Root.Township."
+description: "Client: the on-screen debug readout (FPS and similar stats) on the player."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiveDataDisplayView
 
 A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
+
+Client: the on-screen debug readout (FPS and similar stats) on the player. Toggled by the DisplayFPS controller action for users with the `debug_features` permission.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,43 +28,43 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidonscreentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" androidOnScreenText"}</code> |
-| <Link id="m-datadisplays" /><code>{"private "}<Link to="/game-api/types/alta-utilities/livedatadisplaycollection">{"LiveDataDisplayCollection"}</Link>{" dataDisplays"}</code> |
-| <Link id="m-lastdisplay" /><code>{"private string lastDisplay"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-pcscreentext" /><code>{"private Text pcScreenText"}</code> |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
-| <Link id="m-stringbuilder" /><code>{"private readonly StringBuilder stringBuilder"}</code> |
-| <Link id="m-textupdateinterval" /><code>{"private float textUpdateInterval"}</code> |
-| <Link id="m-textupdatetime" /><code>{"private float textUpdateTime"}</code> |
-| <Link id="m-updateinterval" /><code>{"private float updateInterval"}</code> |
-| <Link id="m-updatetime" /><code>{"private float updateTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidonscreentext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" androidOnScreenText"}</code> | Text renderer used on Android. |
+| <Link id="m-datadisplays" /><code>{"private "}<Link to="/game-api/types/alta-utilities/livedatadisplaycollection">{"LiveDataDisplayCollection"}</Link>{" dataDisplays"}</code> | The set of data displays to run and show. |
+| <Link id="m-lastdisplay" /><code>{"private string lastDisplay"}</code> | Last text shown, to skip unchanged updates. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger. |
+| <Link id="m-pcscreentext" /><code>{"private Text pcScreenText"}</code> | UI text used on PC. |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | The player this view is on; found in a parent. |
+| <Link id="m-stringbuilder" /><code>{"private readonly StringBuilder stringBuilder"}</code> | Reused builder for the display text. |
+| <Link id="m-textupdateinterval" /><code>{"private float textUpdateInterval"}</code> | Seconds between text refreshes. |
+| <Link id="m-textupdatetime" /><code>{"private float textUpdateTime"}</code> | Time since the last text refresh. |
+| <Link id="m-updateinterval" /><code>{"private float updateInterval"}</code> | Seconds between data display updates. |
+| <Link id="m-updatetime" /><code>{"private float updateTime"}</code> | Time since the last data display update. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-togglefpsdisplay" /><code>{"void ToggleFPSDisplay("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-togglefpsdisplay" /><code>{"void ToggleFPSDisplay("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller = null)"}</code> | Turns the readout on or off, if Shift isn't held and the user has the `debug_features` permission. |
 
 <details>
 <summary>10 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-gettext" /><code>{"private string GetText()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-rundataaction" /><code>{"private void RunDataAction(Action<"}<Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"> action, Predicate<"}<Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"> predicate = null)"}</code> |
-| <Link id="m-setscreentext" /><code>{"private void SetScreenText(string screenText)"}</code> |
-| <Link id="m-setscreentextactive" /><code>{"private void SetScreenTextActive(bool active)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-updatedatadisplay" /><code>{"private void UpdateDataDisplay()"}</code> |
-| <Link id="m-updatedatainternals" /><code>{"private void UpdateDataInternals()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gettext" /><code>{"private string GetText()"}</code> | Joins the output of every valid data display into one string, one per line. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Calls each data display's disable hook. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Calls each data display's enable hook. |
+| <Link id="m-rundataaction" /><code>{"private void RunDataAction(Action<"}<Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"> action, Predicate<"}<Link to="/game-api/types/alta-utilities/livedatadisplaybase">{"LiveDataDisplayBase"}</Link>{"> predicate = null)"}</code> | Runs an action on every data display that passes an optional filter; warns if no displays are set. |
+| <Link id="m-setscreentext" /><code>{"private void SetScreenText(string screenText)"}</code> | Shows text on the Android text renderer or the PC UI text, skipping it if unchanged. |
+| <Link id="m-setscreentextactive" /><code>{"private void SetScreenTextActive(bool active)"}</code> | Shows or hides the Android or PC text object. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Hooks the left controller's DisplayFPS action and starts disabled with the text hidden. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Updates the data displays and the shown text on their intervals. |
+| <Link id="m-updatedatadisplay" /><code>{"private void UpdateDataDisplay()"}</code> | Rebuilds and shows the text every `textUpdateInterval` seconds. |
+| <Link id="m-updatedatainternals" /><code>{"private void UpdateDataInternals()"}</code> | Runs each valid data display's internal update every `updateInterval` seconds. |
 
 </details>
 

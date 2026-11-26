@@ -1,6 +1,6 @@
 ---
 title: "IPacketProcessor"
-description: "interface IPacketProcessor in Alta.NetworkTransport.Runtime."
+description: "Handles packets the network transport receives."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
+Handles packets the network transport receives.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`ClientPacketReceiver`](/game-api/types/alta-networking/clientpacketreceiver), [`ServerPacketReceiver`](/game-api/types/alta-networking/serverpacketreceiver), [`IParallelPacketProcessor`](/game-api/types/assembly-other/iparallelpacketprocessor)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-process" /><code>{"void Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-process" /><code>{"void Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connection, ArraySegment<byte> data, int channel)"}</code> | Handles one packet from a connection on the given socket and channel. |
 
 ## Used in
 

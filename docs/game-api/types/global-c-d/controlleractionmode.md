@@ -27,13 +27,13 @@ One controller input mode (for example a held item's mode) with action mappings 
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allplatformsactionmapping" /><code>{"private "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" allPlatformsActionMapping"}</code> |
-| <Link id="m-modename" /><code>{"private string modeName"}</code> |
-| <Link id="m-platformactionmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappings"}</code> |
-| <Link id="m-platformactionmappingslist" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappingsList"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allplatformsactionmapping" /><code>{"private "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" allPlatformsActionMapping"}</code> | Mapping shared by every platform; each platform mapping links back to it. |
+| <Link id="m-modename" /><code>{"private string modeName"}</code> | Display name of the mode. Exposed as `ModeName`. |
+| <Link id="m-platformactionmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{", "}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappings"}</code> | Lazy lookup of mappings by player mode, behind `PlatformActionMappings`. |
+| <Link id="m-platformactionmappingslist" /><code>{"private List<"}<Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{"> platformActionMappingsList"}</code> | Serialized per-platform mappings for Oculus, OpenVR, Fly and AutoCam. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{" type"}</code> | The controller mode this is. Exposed as `Type`. |
 
 </details>
 
@@ -56,9 +56,9 @@ One controller input mode (for example a held item's mode) with action mappings 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-initializedictionary" /><code>{"private void InitializeDictionary()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializedictionary" /><code>{"private void InitializeDictionary()"}</code> | Builds `platformActionMappings` from the serialized list on first access. |
 
 </details>
 

@@ -21,10 +21,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AnalyticsEvent`](/game-api/types/assembly-other/analyticsevent) | abstract class | `IAnalyticsEvent`, `IAnalyticsPropertyWriter` | 6 |  |
 | [`AnalyticsProperty`](/game-api/types/assembly-other/analyticsproperty) | struct | `IAnalyticsProperty` | 3 |  |
 | [`AnalyticsService`](/game-api/types/assembly-other/analyticsservice) | class | `IAnalyticsService`, `IEventSource<IReadonlyAnalyticsData>` | 5 |  |
-| [`IAnalyticsData`](/game-api/types/assembly-other/ianalyticsdata) | interface | `IAnalyticsPropertyWriter`, `IReadonlyAnalyticsData`, `IReadOnlyCollection<IAnalyticsProperty>`, +2 more | 1 |  |
-| [`IAnalyticsEvent`](/game-api/types/assembly-other/ianalyticsevent) | interface | `IAnalyticsPropertyWriter` | 4 |  |
-| [`IAnalyticsInstrument`](/game-api/types/assembly-other/ianalyticsinstrument) | interface |  | 1 |  |
-| [`IAnalyticsProperty`](/game-api/types/assembly-other/ianalyticsproperty) | interface |  | 2 |  |
+| [`IAnalyticsData`](/game-api/types/assembly-other/ianalyticsdata) | interface | `IAnalyticsPropertyWriter`, `IReadonlyAnalyticsData`, `IReadOnlyCollection<IAnalyticsProperty>`, +2 more | 1 | A writable set of analytics properties for one event, which can also be tagged with a user. |
+| [`IAnalyticsEvent`](/game-api/types/assembly-other/ianalyticsevent) | interface | `IAnalyticsPropertyWriter` | 4 | An analytics event: a name, an optional user id and its properties, plus instruments that add extra data. Sent through `IAnalyticsService.Send`. |
+| [`IAnalyticsInstrument`](/game-api/types/assembly-other/ianalyticsinstrument) | interface |  | 1 | Something that adds data to an analytics event when it is sent. Added to an event with `IAnalyticsEvent.AddInstrument`. |
+| [`IAnalyticsProperty`](/game-api/types/assembly-other/ianalyticsproperty) | interface |  | 2 | One named value on an analytics event. |
 | [`IAnalyticsPropertyWriter`](/game-api/types/assembly-other/ianalyticspropertywriter) | interface |  | 1 |  |
 | [`IAnalyticsService`](/game-api/types/assembly-other/ianalyticsservice) | interface | `IEventSource<IReadonlyAnalyticsData>` | 1 | The game's analytics event bus. Listeners (dispatchers) receive each event's data. |
 | [`IReadonlyAnalyticsData`](/game-api/types/assembly-other/ireadonlyanalyticsdata) | interface | `IReadOnlyCollection<IAnalyticsProperty>`, `IEnumerable<IAnalyticsProperty>`, `IEnumerable` | 2 | [Event buses and services](../console-and-utilities/event-buses-and-services.md): `string EventName`, `int? UserId`, and the properties (`IAnalyticsProperty`) as a collection. |
@@ -37,7 +37,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`ArrayPoolManager`](/game-api/types/assembly-other/arraypoolmanager) | static class |  | 4 |  |
 | [`IUnclearedPower2ArrayPool`](/game-api/types/assembly-other/iunclearedpower2arraypool) | interface |  | 1 |  |
-| [`UnclearedPower2ArrayPool<T>`](/game-api/types/assembly-other/unclearedpower2arraypool-t) | class | `IUnclearedPower2ArrayPool` | 7 |  |
+| [`UnclearedPower2ArrayPool<T>`](/game-api/types/assembly-other/unclearedpower2arraypool-t) | class | `IUnclearedPower2ArrayPool` | 7 | Thread-safe pool of arrays in power-of-two sizes (16 and up). Arrays are not cleared, so a requested array can be larger than asked for and hold old data. Use `Shared` for the common pool. |
 
 ## Alta.Attributes
 
@@ -91,7 +91,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`QuaternionVector3Attribute`](/game-api/types/assembly-other/quaternionvector3attribute) | class | `PropertyAttribute` | 0 |  |
 | [`ReadOnlyAttribute`](/game-api/types/assembly-other/readonlyattribute) | class | `PropertyAttribute` | 4 |  |
 | [`ReadOnlyInDebugAttribute`](/game-api/types/assembly-other/readonlyindebugattribute) | class | `PropertyAttribute` | 0 |  |
-| [`ReadOnlyMode`](/game-api/types/assembly-other/readonlymode) | enum |  | 3 |  |
+| [`ReadOnlyMode`](/game-api/types/assembly-other/readonlymode) | enum |  | 3 | How an inspector field shows under a condition (`ReadOnlyAttribute`, `ValueConditionAttribute`): hidden, read-only or editable. Editor only. |
 | [`ReorderableListAttribute`](/game-api/types/assembly-other/reorderablelistattribute) | class | `PropertyAttribute` | 5 |  |
 | [`SceneNameAttribute`](/game-api/types/assembly-other/scenenameattribute) | class | `PropertyAttribute` | 0 |  |
 | [`SerializedInterfaceAttribute`](/game-api/types/assembly-other/serializedinterfaceattribute) | class | `PropertyAttribute` | 2 |  |
@@ -119,7 +119,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`AuthenticationUtility`](/game-api/types/assembly-other/authenticationutility) | class | `IAuthenticationUtility` | 6 | [Alta assemblies](../console-and-utilities/alta-assemblies.md), [Startup and app state](../console-and-utilities/startup-and-app-state.md): Logs in from the command line (`/login`, `/login_hash`, `/access_token`, `/oauth_login`), with a username and password, or with a stored refresh token. |
 | [`Constants`](/game-api/types/assembly-other/constants) | static class |  | 3 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): The `PlayerPreferences` key names for the three tokens. |
-| [`IAuthenticationUtility`](/game-api/types/assembly-other/iauthenticationutility) | interface |  | 5 |  |
+| [`IAuthenticationUtility`](/game-api/types/assembly-other/iauthenticationutility) | interface |  | 5 | Ways to log in to the Alta web API: saved refresh token, command line, username and password, or OAuth client credentials. `AuthenticationUtility` implements it. |
 | [`ILoginPreferences`](/game-api/types/assembly-other/iloginpreferences) | interface |  | 5 | [Alta assemblies](../console-and-utilities/alta-assemblies.md) |
 | [`LoginPreferences`](/game-api/types/assembly-other/loginpreferences) | class | `ILoginPreferences`, `IInitializable`, `IDisposable` | 8 | [Alta assemblies](../console-and-utilities/alta-assemblies.md) |
 
@@ -149,7 +149,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AverageNumber`](/game-api/types/assembly-other/averagenumber) | class |  | 8 |  |
+| [`AverageNumber`](/game-api/types/assembly-other/averagenumber) | class |  | 8 | Keeps a running total, count, min and max of recorded numbers. Used for simple stats and timing. |
 
 ## Alta.Coroutines
 
@@ -203,7 +203,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerPreferenceFloat`](/game-api/types/assembly-other/playerpreferencefloat) | class | `PlayerPreferenceValue<float>` | 1 |  |
 | [`PlayerPreferenceInt`](/game-api/types/assembly-other/playerpreferenceint) | class | `PlayerPreferenceValue<int>` | 1 |  |
 | [`PlayerPreferences`](/game-api/types/assembly-other/playerpreferences) | static class |  | 12 | [Settings and files](../console-and-utilities/settings-and-files.md#playerpreferences): The game's replacement for Unity's `PlayerPrefs`: a dictionary saved to `player.prefs` in `StorageFolder`. |
-| [`PlayerPreferenceString`](/game-api/types/assembly-other/playerpreferencestring) | class | `PlayerPreferenceValue<string>` | 1 |  |
+| [`PlayerPreferenceString`](/game-api/types/assembly-other/playerpreferencestring) | class | `PlayerPreferenceValue<string>` | 1 | A string player preference stored under a key through `PlayerPreferences`. |
 | [`PlayerPreferenceValue<T>`](/game-api/types/assembly-other/playerpreferencevalue-t) | abstract class | `IPlayerPreferenceValue<T>` | 2 |  |
 | [`PlayerSettingsNames`](/game-api/types/assembly-other/playersettingsnames) | class |  | 2 |  |
 
@@ -221,15 +221,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat) | abstract class | `IDisposable` | 5 | Base for a file format the game can read from and write to a stream, such as a save file's contents. Disposable. |
 | [`IAltaFolder`](/game-api/types/assembly-other/ialtafolder) | interface |  | 15 | [Settings and files](../console-and-utilities/settings-and-files.md#ialtafolder-and-ialtafile) |
 | [`IFileAccess`](/game-api/types/assembly-other/ifileaccess) | interface |  | 7 |  |
-| [`IRemoteAltaFile`](/game-api/types/assembly-other/iremotealtafile) | interface |  | 4 |  |
+| [`IRemoteAltaFile`](/game-api/types/assembly-other/iremotealtafile) | interface |  | 4 | A local file mirrored to a remote copy, as used by `RemoteFiles`. `RemoteFiles.BackupAllChanged` backs up every changed one. |
 | [`RemoteAltaFile`](/game-api/types/assembly-other/remotealtafile) | class | `RemoteFiles.RemoteAltaFile<FileInfoWrapper>` | 1 |  |
 | [`RemoteAltaFolder`](/game-api/types/assembly-other/remotealtafolder) | class | `AltaFolder` | 6 |  |
 | [`RemoteFiles`](/game-api/types/assembly-other/remotefiles) | static class |  | 1 |  |
 | [`RemoteFiles.RemoteAltaFile<TFileType>`](/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype) | abstract class | `IAltaFile`, `IRemoteAltaFile` | 23 |  |
 | [`S3CloudStorageRemoteFile`](/game-api/types/assembly-other/s3cloudstorageremotefile) | class | `RemoteFiles.RemoteAltaFile<S3StorageFile>` | 1 |  |
 | [`S3RemoteFolder`](/game-api/types/assembly-other/s3remotefolder) | class | `AltaFolder` | 9 |  |
-| [`S3StorageFile`](/game-api/types/assembly-other/s3storagefile) | class | `S3StorageObject`, `IFileAccess` | 7 |  |
-| [`S3StorageFolder`](/game-api/types/assembly-other/s3storagefolder) | class | `S3StorageObject` | 5 |  |
+| [`S3StorageFile`](/game-api/types/assembly-other/s3storagefile) | class | `S3StorageObject`, `IFileAccess` | 7 | A file object in an S3 bucket, used through the `IFileAccess` storage interface. Probably server or tooling only, as it needs S3 credentials. |
+| [`S3StorageFolder`](/game-api/types/assembly-other/s3storagefolder) | class | `S3StorageObject` | 5 | A key prefix in an S3 bucket treated as a folder, for listing and deleting the objects under it. |
 | [`S3StorageObject`](/game-api/types/assembly-other/s3storageobject) | class |  | 6 |  |
 | [`S3Utility`](/game-api/types/assembly-other/s3utility) | static class |  | 3 |  |
 | [`TextFileFormat`](/game-api/types/assembly-other/textfileformat) | class | `IAltaFileFormat` | 4 |  |
@@ -252,7 +252,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IDisposer`](/game-api/types/assembly-other/idisposer) | interface | `IDisposable` | 1 |  |
+| [`IDisposer`](/game-api/types/assembly-other/idisposer) | interface | `IDisposable` | 1 | A disposable that collects other disposables and disposes them together. |
 
 ## Alta.LifetimeScopes
 
@@ -264,7 +264,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AnalyticsInstaller`](/game-api/types/assembly-other/analyticsinstaller) | class |  | 1 |  |
 | [`ApplicationLifetimeScope`](/game-api/types/assembly-other/applicationlifetimescope) | class | `AbstractAltaLifetimeScope` | 0 | [Event buses and services](../console-and-utilities/event-buses-and-services.md) |
 | [`Binder`](/game-api/types/assembly-other/binder) | abstract class |  | 0 |  |
-| [`Binder<TContract>`](/game-api/types/assembly-other/binder-tcontract) | class | `Binder` | 7 |  |
+| [`Binder<TContract>`](/game-api/types/assembly-other/binder-tcontract) | class | `Binder` | 7 | Fluent helper for registering a type in a VContainer container, made by `container.Bind<TContract>()`. Registers as a singleton by default and picks up VContainer entry point interfaces (like `ITickable`) by itself. |
 | [`Binder<TContract>.AltaRegistrationBuilder`](/game-api/types/assembly-other/binder-tcontract-altaregistrationbuilder) | class | `RegistrationBuilder` | 2 |  |
 | [`ContainerBuilderExtensions`](/game-api/types/assembly-other/containerbuilderextensions) | static class |  | 2 |  |
 | [`DependencyInjectionEditorInitializer`](/game-api/types/assembly-other/dependencyinjectioneditorinitializer) | class | `ScriptableObject` | 0 |  |
@@ -294,15 +294,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AltaNetworkError`](/game-api/types/assembly-other/altanetworkerror) | enum |  | 9 |  |
-| [`INetworkTransportResult`](/game-api/types/assembly-other/inetworktransportresult) | interface |  | 2 |  |
-| [`IPacketProcessor`](/game-api/types/assembly-other/ipacketprocessor) | interface |  | 1 |  |
+| [`AltaNetworkError`](/game-api/types/assembly-other/altanetworkerror) | enum |  | 9 | Network errors a transport can report, such as DNS failure, timeout, congestion, bad send or receive, and closed connection. |
+| [`INetworkTransportResult`](/game-api/types/assembly-other/inetworktransportresult) | interface |  | 2 | Result of a network transport operation such as a send or processing incoming packets. |
+| [`IPacketProcessor`](/game-api/types/assembly-other/ipacketprocessor) | interface |  | 1 | Handles packets the network transport receives. |
 | [`IParallelPacketProcessor`](/game-api/types/assembly-other/iparallelpacketprocessor) | interface | `IPacketProcessor` | 1 |  |
-| [`ITransport`](/game-api/types/assembly-other/itransport) | interface |  | 6 |  |
-| [`ITransportClient`](/game-api/types/assembly-other/itransportclient) | interface | `ITransportSocket` | 3 |  |
-| [`ITransportConnection`](/game-api/types/assembly-other/itransportconnection) | interface |  | 8 |  |
-| [`ITransportServer`](/game-api/types/assembly-other/itransportserver) | interface | `ITransportSocket` | 2 |  |
-| [`ITransportSocket`](/game-api/types/assembly-other/itransportsocket) | interface |  | 9 |  |
+| [`ITransport`](/game-api/types/assembly-other/itransport) | interface |  | 6 | A low-level network transport that `Socket` sends packets over. `KcpTransport` is the implementation in this build. |
+| [`ITransportClient`](/game-api/types/assembly-other/itransportclient) | interface | `ITransportSocket` | 3 | Client side of a transport: one connection to a server. `ITransport.Connect` returns one. |
+| [`ITransportConnection`](/game-api/types/assembly-other/itransportconnection) | interface |  | 8 | One player's connection on the server-side network transport (KCP in this build): send data, disconnect and read traffic counters. |
+| [`ITransportServer`](/game-api/types/assembly-other/itransportserver) | interface | `ITransportSocket` | 2 | The listening side of a network transport, made by `ITransport.CreateServer`. Raises events as client connections come and go. The KCP transport's `KcpServerWrapper` implements it. |
+| [`ITransportSocket`](/game-api/types/assembly-other/itransportsocket) | interface |  | 9 | A network socket in Alta's transport layer, with traffic counters and process calls. KCP client and server wrappers implement it. |
 | [`MessageReceivePool`](/game-api/types/assembly-other/messagereceivepool) | static class |  | 4 |  |
 | [`NetworkTransportResult`](/game-api/types/assembly-other/networktransportresult) | class | `INetworkTransportResult` | 5 |  |
 
@@ -315,8 +315,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`KcpErrorConverter`](/game-api/types/assembly-other/kcperrorconverter) | static class |  | 1 |  |
 | [`KcpServerConnection`](/game-api/types/assembly-other/kcpserverconnection) | class | `ITransportConnection` | 10 |  |
 | [`KcpServerWrapper`](/game-api/types/assembly-other/kcpserverwrapper) | class | `ITransportServer`, `ITransportSocket` | 13 |  |
-| [`KcpSettings`](/game-api/types/assembly-other/kcpsettings) | class | `GlobalSettings<KcpSettings>` | 11 |  |
-| [`KcpTransport`](/game-api/types/assembly-other/kcptransport) | class | `ITransport` | 9 |  |
+| [`KcpSettings`](/game-api/types/assembly-other/kcpsettings) | class | `GlobalSettings<KcpSettings>` | 11 | Global settings asset for the KCP network transport: latency, timeout, window and buffer options used by the KCP client and server wrappers. |
+| [`KcpTransport`](/game-api/types/assembly-other/kcptransport) | class | `ITransport` | 9 | The KCP (reliable UDP) network transport the game uses by default. `NetworkManager` creates it from `KcpSettings`; both sides use it to open servers and client connections. |
 
 ### Alta.NetworkingTransport.Parallel
 
@@ -330,7 +330,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 |  |
+| [`FfvSource`](/game-api/types/assembly-other/ffvsource) | enum |  | 4 | Flags for reasons to turn on fixed foveated rendering on the device (movement, hurt, low performance, character baking). Passed to `SetFfvSource` on the platform device. |
 | [`PlatformTarget`](/game-api/types/assembly-other/platformtarget) | enum |  | 2 | [Player](../networking/player.md#platformtarget): `PC = 1`, `Quest = 2` (flags, in `Alta.Platform.dll`). The client sends it in its join request. |
 | [`PlayerMode`](/game-api/types/assembly-other/playermode) | enum |  | 8 | [Player](../networking/player.md#playermode): `PlayerMode` (no namespace, in `Alta.Platform.dll`), a flags enum: |
 | [`PlayerModeExtensions`](/game-api/types/assembly-other/playermodeextensions) | static class |  | 2 |  |
@@ -339,13 +339,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AccessTokenMode`](/game-api/types/assembly-other/accesstokenmode) | enum |  | 3 |  |
-| [`IAuthenticationFeatures`](/game-api/types/assembly-other/iauthenticationfeatures) | interface |  | 3 |  |
+| [`AccessTokenMode`](/game-api/types/assembly-other/accesstokenmode) | enum |  | 3 | Whether a platform's authentication can hand out access tokens: not at all, single use or multi use. Reported by `IAuthenticationFeatures`. |
+| [`IAuthenticationFeatures`](/game-api/types/assembly-other/iauthenticationfeatures) | interface |  | 3 | What the current platform's login supports. Read from `IAuthenticationService.Features`; the generic (PC) one supports none of it. |
 | [`IAuthenticationService`](/game-api/types/assembly-other/iauthenticationservice) | interface |  | 9 |  |
-| [`IPlatformDevice`](/game-api/types/assembly-other/iplatformdevice) | interface |  | 1 |  |
+| [`IPlatformDevice`](/game-api/types/assembly-other/iplatformdevice) | interface |  | 1 | Platform hook for device-level settings. Only `FakePlatformDevice` (does nothing) is bound in the Windows build. |
 | [`IPlatformService`](/game-api/types/assembly-other/iplatformservice) | interface |  | 2 |  |
-| [`IUserService`](/game-api/types/assembly-other/iuserservice) | interface | `IAuthenticationService` | 4 |  |
-| [`IValidVersionService`](/game-api/types/assembly-other/ivalidversionservice) | interface |  | 3 |  |
+| [`IUserService`](/game-api/types/assembly-other/iuserservice) | interface | `IAuthenticationService` | 4 | Platform service for the signed-in Alta user: login state, the current user and lookups of other users by ID. |
+| [`IValidVersionService`](/game-api/types/assembly-other/ivalidversionservice) | interface |  | 3 | Checks whether the game version is still allowed to play. `ApplicationStartupManager` runs it on startup; on Windows a fake always says yes. |
 
 ### Alta.Platform.Fakes
 
@@ -359,7 +359,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IUser`](/game-api/types/assembly-other/iuser) | interface |  | 2 |  |
+| [`IUser`](/game-api/types/assembly-other/iuser) | interface |  | 2 | Minimal user shape from the Alta platform layer: an id and a display name. |
 
 ## Alta.Platform.Generic
 
@@ -379,7 +379,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`LocalPlatformProvider`](/game-api/types/assembly-other/localplatformprovider) | internal class |  | 1 |  |
 | [`OverridePlatformProvider`](/game-api/types/assembly-other/overrideplatformprovider) | internal class |  | 4 |  |
-| [`PlatformFlags`](/game-api/types/assembly-other/platformflags) | enum |  | 7 |  |
+| [`PlatformFlags`](/game-api/types/assembly-other/platformflags) | enum |  | 7 | Flags for the platform the game runs on: Windows, Linux, Android, Android preview, and Quest and Pico (both include the Android bit), or Unknown. |
 | [`PlatformProvider`](/game-api/types/assembly-other/platformprovider) | static class |  | 20 |  |
 
 ## Alta.Profiling.Runtime
@@ -408,10 +408,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BitDisplay`](/game-api/types/assembly-other/bitdisplay) | static class |  | 2 |  |
 | [`BitReader`](/game-api/types/assembly-other/bitreader) | class |  | 12 |  |
 | [`BitWriter`](/game-api/types/assembly-other/bitwriter) | class |  | 14 |  |
-| [`BitWriter.GetMoreData`](/game-api/types/assembly-other/bitwriter-getmoredata) | delegate |  | 0 |  |
+| [`BitWriter.GetMoreData`](/game-api/types/assembly-other/bitwriter-getmoredata) | delegate |  | 0 | Callback a `BitWriter` calls when its buffer is full to get a bigger one. Called with null at start to get the first buffer. Without it, a full buffer logs a fatal error and corrupts the write. |
 | [`Compressor`](/game-api/types/assembly-other/compressor) | class | `Stream` | 10 |  |
 | [`Stream`](/game-api/types/assembly-other/stream) | abstract class | `IDisposable`, `ICloneable` | 51 | [Stream](../networking/stream.md): Every network message and every save file in the game is written with this: a bit stream with one abstract base and two concrete types, `StreamWriter` and `StreamReader`. |
-| [`Stream.StringEncoding`](/game-api/types/assembly-other/stream-stringencoding) | enum |  | 2 |  |
+| [`Stream.StringEncoding`](/game-api/types/assembly-other/stream-stringencoding) | enum |  | 2 | Text encoding used when writing strings to a network stream: ASCII or UTF8. |
 | [`StreamCounter`](/game-api/types/assembly-other/streamcounter) | class | `Stream` | 10 |  |
 | [`StreamReader`](/game-api/types/assembly-other/streamreader) | class | `Stream` | 14 | [Stream](../networking/stream.md#streamwriter-and-streamreader) |
 | [`StreamWriter`](/game-api/types/assembly-other/streamwriter) | class | `Stream` | 20 | [Stream](../networking/stream.md#streamwriter-and-streamreader) |
@@ -435,7 +435,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ITimeline`](/game-api/types/assembly-other/itimeline) | interface |  | 1 |  |
 | [`Timeline`](/game-api/types/assembly-other/timeline) | class | `ITimeline` | 21 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline), [Time and environment](../world/time-and-environment.md#timeline): A scheduler for "call this in N seconds" and "every N seconds", used for respawns, decay, loot refills, taxes, timed stat changes and the like. Main thread. |
 | [`Timeline.IEntry`](/game-api/types/assembly-other/timeline-ientry) | interface |  | 2 | Handle to a callback scheduled on the game `Timeline` (from `CallAfterDuration`, `CallRepeatableAfterDuration` and so on). Pass it to `Timeline.Cancel` to stop it. |
-| [`Timeline.SerializedEntryState`](/game-api/types/assembly-other/timeline-serializedentrystate) | enum |  | 3 |  |
+| [`Timeline.SerializedEntryState`](/game-api/types/assembly-other/timeline-serializedentrystate) | enum |  | 3 | Result of `Timeline.LoadEntry` for a saved timer: None (no time saved), Past (already due, callback run if asked) or Future (registered on the timeline). |
 | [`TimelineUpdater`](/game-api/types/assembly-other/timelineupdater) | class | `MonoBehaviour` | 0 |  |
 
 ### Alta.Timing.PriorityQueue
@@ -505,7 +505,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`GeneralValue`](/game-api/types/assembly-other/generalvalue) | abstract class | `ScriptableObject` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `ScriptableObject` with a `Description` and a `Type`. |
-| [`HashedGeneralValue`](/game-api/types/assembly-other/hashedgeneralvalue) | abstract class | `GeneralValue` | 2 |  |
+| [`HashedGeneralValue`](/game-api/types/assembly-other/hashedgeneralvalue) | abstract class | `GeneralValue` | 2 | Base for game data assets identified by a hash. `HashedGeneralValue<T>` builds on it to load every asset of a type from Resources and look them up by hash or name. |
 | [`HashedGeneralValue<T>`](/game-api/types/assembly-other/hashedgeneralvalue-t) | abstract class | `HashedGeneralValue` | 8 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): A `GeneralValue` with a stable `uint Hash`. `Item`, `PageCollection`, `PopulationDefinition`, `MouldDefinition`, `Festivity`, `GameAction` and many more derive from it. |
 | [`HashedGeneralValueComparer`](/game-api/types/assembly-other/hashedgeneralvaluecomparer) | class | `IEqualityComparer<HashedGeneralValue>` | 1 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): Compares by hash. |
 | [`HashedGeneralValueConverter<T>`](/game-api/types/assembly-other/hashedgeneralvalueconverter-t) | class | `TypeConverter` | 2 | [Alta assemblies](../console-and-utilities/alta-assemblies.md): The console converter for those types: a hash, or a name. |
@@ -530,8 +530,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`IXRLoaderInitializer`](/game-api/types/assembly-other/ixrloaderinitializer) | interface |  | 0 |  |
-| [`IXRManagerSettingsController`](/game-api/types/assembly-other/ixrmanagersettingscontroller) | interface |  | 3 |  |
-| [`TownshipXRMode`](/game-api/types/assembly-other/townshipxrmode) | enum |  | 3 |  |
+| [`IXRManagerSettingsController`](/game-api/types/assembly-other/ixrmanagersettingscontroller) | interface |  | 3 | Client: starts and stops Unity's XR manager. Implemented by `XRManagerSettingsController`, injected through VContainer. |
+| [`TownshipXRMode`](/game-api/types/assembly-other/townshipxrmode) | enum |  | 3 | Which XR backend the game runs with: OpenXR, Valve (SteamVR) or no VR. |
 | [`XRLoaderStaticData`](/game-api/types/assembly-other/xrloaderstaticdata) | static class |  | 6 |  |
 | [`XRManagerSettingsController`](/game-api/types/assembly-other/xrmanagersettingscontroller) | class | `IXRManagerSettingsController`, `IInitializable` | 4 |  |
 
@@ -541,8 +541,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IWindowsXRLoaderSettings`](/game-api/types/assembly-other/iwindowsxrloadersettings) | interface |  | 3 |  |
-| [`IXRSupportSystem`](/game-api/types/assembly-other/ixrsupportsystem) | interface |  | 2 |  |
+| [`IWindowsXRLoaderSettings`](/game-api/types/assembly-other/iwindowsxrloadersettings) | interface |  | 3 | Client (Windows): settings the XR loader initializer reads to pick between OpenXR and SteamVR (OpenVR) loaders. |
+| [`IXRSupportSystem`](/game-api/types/assembly-other/ixrsupportsystem) | interface |  | 2 | Client (Windows): extra setup for one XR mode, run before XR starts. `SteamOpenVrInitializer` is one; the Windows loader initializer runs each one that is valid for the mode. |
 | [`SteamOpenVrInitializer`](/game-api/types/assembly-other/steamopenvrinitializer) | class | `IXRSupportSystem` | 2 |  |
 | [`WindowsXRLoaderInitializer`](/game-api/types/assembly-other/windowsxrloaderinitializer) | class | `IInitializable`, `IXRLoaderInitializer` | 3 |  |
 | [`WindowsXRLoaderSettings`](/game-api/types/assembly-other/windowsxrloadersettings) | class | `GlobalSettings<WindowsXRLoaderSettings>`, `IWindowsXRLoaderSettings` | 4 |  |

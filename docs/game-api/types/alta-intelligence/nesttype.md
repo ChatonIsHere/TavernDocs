@@ -1,6 +1,6 @@
 ---
 title: "NestType"
-description: "enum NestType in Root.Township."
+description: "Kinds of creature nest."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NestType
 
 An **enum** in `Root.Township`, `Alta.Creatures`.
+
+Kinds of creature nest. Only `Spriggull`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 

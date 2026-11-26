@@ -29,9 +29,9 @@ Gameplay events about one player gathered in one place: interactions, tool hits,
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-character" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character"}</code> | The player's current `PlayerCharacter`. |
 
 </details>
 
@@ -66,19 +66,19 @@ Gameplay events about one player gathered in one place: interactions, tool hits,
 <details>
 <summary>11 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkarmed" /><code>{"private void CheckArmed()"}</code> |
-| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> |
-| <Link id="m-oncausedcombat" /><code>{"private void OnCausedCombat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" attacker, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" attackee, float distanceRatioBetweenCombatantsSquared, float damage)"}</code> |
-| <Link id="m-ondowned" /><code>{"private void OnDowned("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hit)"}</code> |
-| <Link id="m-onhealthchanged" /><code>{"private void OnHealthChanged("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject, float changeAmount, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> |
-| <Link id="m-oninteractionended" /><code>{"private void OnInteractionEnded("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |
-| <Link id="m-oninteractionstarted" /><code>{"private void OnInteractionStarted("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> |
-| <Link id="m-onkilled" /><code>{"private void OnKilled("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hit)"}</code> |
-| <Link id="m-updateinitializedcontroller" /><code>{"private void UpdateInitializedController()"}</code> |
-| <Link id="m-updateplayercontroller" /><code>{"private void Updateplayercontroller("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Listens for the player's controller being set. |
+| <Link id="m-checkarmed" /><code>{"private void CheckArmed()"}</code> | Sets `IsArmed` to whether any held tool has impactors, and raises `OnArmedChanged` if it changed. |
+| <Link id="m-hit" /><code>{"private void Hit("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" hit, "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" tool)"}</code> | Passes a held tool's hit on as `OnHitWithTool`. |
+| <Link id="m-oncausedcombat" /><code>{"private void OnCausedCombat("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" attacker, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" attackee, float distanceRatioBetweenCombatantsSquared, float damage)"}</code> | Passes the character's `CausedCombat` event on. |
+| <Link id="m-ondowned" /><code>{"private void OnDowned("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hit)"}</code> | Passes the character's downed event on as `Downed`. |
+| <Link id="m-onhealthchanged" /><code>{"private void OnHealthChanged("}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject, float changeAmount, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" impact)"}</code> | Passes the character's health change on as `HealthChanged`. |
+| <Link id="m-oninteractionended" /><code>{"private void OnInteractionEnded("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Stops tracking a tool once no hand of this player holds it, then raises `InteractionEnded`. |
+| <Link id="m-oninteractionstarted" /><code>{"private void OnInteractionStarted("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable)"}</code> | Starts tracking a picked-up `ImpactTool` in `HeldTools`, then raises `InteractionStarted`. |
+| <Link id="m-onkilled" /><code>{"private void OnKilled("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" hit)"}</code> | Passes the character's killed event on as `Killed`. |
+| <Link id="m-updateinitializedcontroller" /><code>{"private void UpdateInitializedController()"}</code> | Once the character is linked, hooks both hands' interaction events and the health and combat events, then raises `OnCharacterAdded`. |
+| <Link id="m-updateplayercontroller" /><code>{"private void Updateplayercontroller("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | When the player's controller is a `PlayerCharacter`, stores it and waits for it to be linked. |
 
 </details>
 

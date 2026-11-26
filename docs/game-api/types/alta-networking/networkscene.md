@@ -34,23 +34,23 @@ The networked scene: holds the entity manager, global and void chunks, the spawn
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-astar" /><code>{"private AstarPath aStar"}</code> |
-| <Link id="m-chunksyncchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" chunkSyncChannel"}</code> |
-| <Link id="m-clientsocket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" clientSocket"}</code> |
-| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> |
-| <Link id="m-globalchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" globalChunk"}</code> |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
-| <Link id="m-respawnpoint" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" respawnPoint"}</code> |
-| <Link id="m-scenelogger" /><code>{"private static Logger sceneLogger"}</code> |
-| <Link id="m-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" sceneSerializer"}</code> |
-| <Link id="m-serializationchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" serializationChannel"}</code> |
-| <Link id="m-serializationinterval" /><code>{"private int serializationInterval"}</code> |
-| <Link id="m-serializestep" /><code>{"private int serializeStep"}</code> |
-| <Link id="m-serversocket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" serverSocket"}</code> |
-| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> |
-| <Link id="m-voidchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" voidChunk"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-astar" /><code>{"private AstarPath aStar"}</code> | A* pathfinding prefab spawned on the server if none is active yet. |
+| <Link id="m-chunksyncchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" chunkSyncChannel"}</code> | Backing field for `ChunkSyncChannel`, the connection channel for chunk and spawn sync. |
+| <Link id="m-clientsocket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" clientSocket"}</code> | The client socket, when this scene runs as a client. |
+| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> | Holds and registers every network entity in the scene. Made in `FirstInitialize`, disposed in `OnDisable`. |
+| <Link id="m-globalchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" globalChunk"}</code> | Backing field for `GlobalChunk`, the chunk for entities that belong everywhere. Force-loaded on server start. |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | Set once `FirstInitialize` has run. |
+| <Link id="m-respawnpoint" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" respawnPoint"}</code> | Backing field for the `RespawnPoint` spawn area. |
+| <Link id="m-scenelogger" /><code>{"private static Logger sceneLogger"}</code> | NLog logger for the scene. |
+| <Link id="m-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" sceneSerializer"}</code> | Batches and sends entity serialization. Made in `FirstInitialize`. |
+| <Link id="m-serializationchannel" /><code>{"private "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" serializationChannel"}</code> | Connection channel entity updates are sent on. |
+| <Link id="m-serializationinterval" /><code>{"private int serializationInterval"}</code> | Used as a bit mask on the frame counter, so it should be a power of two. Default 2. |
+| <Link id="m-serializestep" /><code>{"private int serializeStep"}</code> | Frame counter that `Update` uses to pick when to send. |
+| <Link id="m-serversocket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" serverSocket"}</code> | The server socket, when this scene runs as a server. |
+| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> | Backing field for `SpawnPoint`. |
+| <Link id="m-voidchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" voidChunk"}</code> | Backing field for `VoidChunk`. Force-loaded on server start if set. |
 
 </details>
 
@@ -75,10 +75,10 @@ The networked scene: holds the entity manager, global and void chunks, the spawn
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworkscene-respawnpoint" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" Alta.Networking.INetworkScene.RespawnPoint { get; }"}</code> |
-| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworkscene-respawnpoint" /><code>{"private "}<Link to="/game-api/types/global-s/spawnarea">{"SpawnArea"}</Link>{" Alta.Networking.INetworkScene.RespawnPoint { get; }"}</code> | The spawn area players respawn at. |
+| <Link id="m-alta-networking-inetworksceneinternal-sceneserializer" /><code>{"private "}<Link to="/game-api/types/alta-networking/sceneserializer">{"SceneSerializer"}</Link>{" Alta.Networking.INetworkSceneInternal.SceneSerializer { get; }"}</code> | The scene's serializer, which batches entity updates and sends them. |
 
 </details>
 
@@ -101,22 +101,22 @@ The networked scene: holds the entity manager, global and void chunks, the spawn
 <details>
 <summary>14 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addconnection" /><code>{"private void Alta.Networking.INetworkSceneInternal.AddConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-firstinitialize" /><code>{"private void FirstInitialize(bool isServer)"}</code> |
-| <Link id="m-forceregisterentity" /><code>{"private uint Alta.Networking.INetworkSceneInternal.ForceRegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-forceregisterentity-2" /><code>{"private void Alta.Networking.INetworkSceneInternal.ForceRegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, uint identifier)"}</code> |
-| <Link id="m-handlesync" /><code>{"private void Alta.Networking.INetworkSceneInternal.HandleSync(uint embeddedIndex, uint identifier, uint[] embedded)"}</code> |
-| <Link id="m-initializeasclient" /><code>{"private void InitializeAsClient()"}</code> |
-| <Link id="m-initializeasserver" /><code>{"private async Task InitializeAsServer()"}</code> |
-| <Link id="m-markserialized" /><code>{"private void Alta.Networking.Internal.IEntityManager.MarkSerialized("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer)"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-removeconnection" /><code>{"private void RemoveConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
-| <Link id="m-sendserialized" /><code>{"private void SendSerialized("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
-| <Link id="m-serializeasclient" /><code>{"private void Alta.Networking.Internal.IEntityManager.SerializeAsClient("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addconnection" /><code>{"private void Alta.Networking.INetworkSceneInternal.AddConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Adds a connection to `Connections` and removes it again when it disconnects. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Only logs that the scene woke up. |
+| <Link id="m-firstinitialize" /><code>{"private void FirstInitialize(bool isServer)"}</code> | Runs once: builds the chunk lookup from embedded location chunks, makes the entity manager and serializer, creates the Players folder and turns off embedded prefab components. |
+| <Link id="m-forceregisterentity" /><code>{"private uint Alta.Networking.INetworkSceneInternal.ForceRegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Registers an entity with the entity manager, with a new identifier or a given one. |
+| <Link id="m-forceregisterentity-2" /><code>{"private void Alta.Networking.INetworkSceneInternal.ForceRegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, uint identifier)"}</code> | Registers an entity with the entity manager, with a new identifier or a given one. |
+| <Link id="m-handlesync" /><code>{"private void Alta.Networking.INetworkSceneInternal.HandleSync(uint embeddedIndex, uint identifier, uint[] embedded)"}</code> | Client: syncs one embedded scene entity's identifier. After the last one, tells `NetworkSceneManager` the scene sync is done. |
+| <Link id="m-initializeasclient" /><code>{"private void InitializeAsClient()"}</code> | Client: makes the client spawn manager. |
+| <Link id="m-initializeasserver" /><code>{"private async Task InitializeAsServer()"}</code> | Server: makes the spawn manager and A* graph, force-loads the global and void chunks, registers and chunks embedded entities, then raises `ServerStarted`. |
+| <Link id="m-markserialized" /><code>{"private void Alta.Networking.Internal.IEntityManager.MarkSerialized("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{" serializer)"}</code> | Hands an entity and its serializer to the entity manager to mark it as needing a sync. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Clears `NetworkSceneManager.Current` if it's this scene, resets the scene load wait and disposes the entity manager. |
+| <Link id="m-removeconnection" /><code>{"private void RemoveConnection("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Removes a disconnected connection from `Connections`. |
+| <Link id="m-sendserialized" /><code>{"private void SendSerialized("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Sends the batched entity updates on a socket through the scene serializer. |
+| <Link id="m-serializeasclient" /><code>{"private void Alta.Networking.Internal.IEntityManager.SerializeAsClient("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Asks the entity manager to send a client-side update for an entity. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Alternates frames between sending server and client entity updates, using `serializationInterval` as a bit mask. |
 
 </details>
 

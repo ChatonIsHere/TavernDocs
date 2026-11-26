@@ -1,6 +1,6 @@
 ---
 title: "TextButton"
-description: "class TextButton in Root.Township."
+description: "A menu button whose label is drawn by a TextRenderer, kept in step with the button's Label."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TextButton
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+A menu button whose label is drawn by a `TextRenderer`, kept in step with the button's `Label`.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** [`ButtonWithEvents`](/game-api/types/alta-menus/buttonwithevents)
@@ -26,27 +28,27 @@ A **class** in `Root.Township`, `Alta.Meta.UI`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-buttonobject" /><code>{"private GameObject buttonObject"}</code> | The GameObject that `SetButtonLayer` changes. |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | The text that shows the label. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> |
-| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setbuttonlayer" /><code>{"void SetButtonLayer(int newLayer)"}</code> | Moves the button object to another physics or render layer. |
+| <Link id="m-awake" /><code>{"protected override void Awake()"}</code> | Copies the label onto the text and keeps it updated when the label changes. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> | Copies the new label to the text renderer. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: syncs the label and the text renderer, taking the text when the label is empty. |
 
 </details>
 

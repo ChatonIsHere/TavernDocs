@@ -1,6 +1,6 @@
 ---
 title: "HttpClientExtensions.JsonContent"
-description: "class HttpClientExtensions.JsonContent in Alta.Api.DataTransferModels."
+description: "HTTP string content holding an object serialized to UTF-8 JSON."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HttpClientExtensions.JsonContent
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Extensions`.
+
+HTTP string content holding an object serialized to UTF-8 JSON. Used by the JSON post, put, patch and delete helpers.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Nested in** [`HttpClientExtensions`](/game-api/types/assembly-api-models/httpclientextensions)
@@ -27,9 +29,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Exten
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-convert" /><code>{"private static string Convert(object obj)"}</code> | Serializes the object with Json.NET. A null object gives an empty string and a warning. |
 
 </details>
 

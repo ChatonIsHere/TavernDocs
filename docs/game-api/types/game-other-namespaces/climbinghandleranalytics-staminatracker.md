@@ -1,6 +1,6 @@
 ---
 title: "ClimbingHandlerAnalytics.StaminaTracker"
-description: "struct ClimbingHandlerAnalytics.StaminaTracker in Root.Township."
+description: "Private helper in climbing analytics that adds up how much stamina a hand's stat has lost since tracking started."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimbingHandlerAnalytics.StaminaTracker
 
 A **private struct** in `Root.Township`, `Features.Climbing`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private helper in climbing analytics that adds up how much stamina a hand's stat has lost since tracking started.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Nested in** [`ClimbingHandlerAnalytics`](/game-api/types/game-other-namespaces/climbinghandleranalytics)
@@ -26,24 +28,24 @@ A **private struct** in `Root.Township`, `Features.Climbing`. Reach it through a
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> |
-| <Link id="m-staminastat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastvalue" /><code>{"private float lastValue"}</code> | Stat value at the previous tick. |
+| <Link id="m-staminastat" /><code>{"private readonly "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat"}</code> | The stamina `Stat` being watched. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-consumedstamina" /><code>{"float ConsumedStamina { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-consumedstamina" /><code>{"float ConsumedStamina { get; private set; }"}</code> | Total stamina drop counted so far. Gains are ignored. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tick" /><code>{"void Tick()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tick" /><code>{"void Tick()"}</code> | Reads the stat and adds any drop since the last tick to `ConsumedStamina`. |
 
 ## Used in
 

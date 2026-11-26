@@ -1,6 +1,6 @@
 ---
 title: "StatManagerSaveData.IndirectStatModifier"
-description: "class StatManagerSaveData.IndirectStatModifier in Root.Township."
+description: "Saved indirect modifiers on one stat of a StatManager, with the timeline time they were saved at."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatManagerSaveData.IndirectStatModifier
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+Saved indirect modifiers on one stat of a `StatManager`, with the timeline time they were saved at.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`StatManagerSaveData`](/game-api/types/alta-stats-effects/statmanagersavedata)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/indirectmodifiersavedata">{"IndirectModifierSaveData"}</Link>{"[] modifiers"}</code> |
-| <Link id="m-time" /><code>{"TimeSpan time"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | The stat the modifiers apply to. |
+| <Link id="m-modifiers" /><code><Link to="/game-api/types/alta-stats-effects/indirectmodifiersavedata">{"IndirectModifierSaveData"}</Link>{"[] modifiers"}</code> | Each indirect modifier's saved state. |
+| <Link id="m-time" /><code>{"TimeSpan time"}</code> | Timeline time at saving. On load the gap to now is added to each modifier's tick. |
 
 ## Used in
 

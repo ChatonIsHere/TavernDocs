@@ -1,6 +1,6 @@
 ---
 title: "StatPlayerPair"
-description: "class StatPlayerPair in Root.Township."
+description: "A stat and the player it belongs to."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatPlayerPair
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+A stat and the player it belongs to. `StatList` is a list of these, built by `StatListConverter`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Derived types** [`StatList`](/game-api/types/alta-stats-effects/statlist)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> |
-| <Link id="m-stat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-player" /><code><Link to="/game-api/types/global-p/player">{"Player"}</Link>{" "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" { get; }"}</code> | The player who owns the stat. |
+| <Link id="m-stat" /><code><Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" { get; }"}</code> | The stat. |
 
 ## Used in
 

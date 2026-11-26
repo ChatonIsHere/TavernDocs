@@ -28,8 +28,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`EffectEventHandler`](/game-api/types/alta-stats-effects/effecteventhandler) | delegate |  | 0 |  |
 | [`EffectEventHandler<T>`](/game-api/types/alta-stats-effects/effecteventhandler-t) | delegate |  | 0 |  |
 | [`EffectHandler`](/game-api/types/alta-stats-effects/effecthandler) | class | `MonoBehaviour` | 8 | [Effects](../game-systems/effects.md#effecthandler): On anything effects can reach. |
-| [`EffectHandler.EffectOverTimeData`](/game-api/types/alta-stats-effects/effecthandler-effectovertimedata) | class |  | 3 |  |
-| [`EffectHandler.TeleportType`](/game-api/types/alta-stats-effects/effecthandler-teleporttype) | enum |  | 3 |  |
+| [`EffectHandler.EffectOverTimeData`](/game-api/types/alta-stats-effects/effecthandler-effectovertimedata) | class |  | 3 | One queued effect-over-time entry on an `EffectHandler`: total strength, duration in seconds and the callback that applies each tick. |
+| [`EffectHandler.TeleportType`](/game-api/types/alta-stats-effects/effecthandler-teleporttype) | enum |  | 3 | Why a player is being teleported by `EffectHandler.Teleport`: default, a potion, or being moved back to a challenge checkpoint. |
 | [`EffectVolumeTrigger`](/game-api/types/alta-stats-effects/effectvolumetrigger) | class | `VolumeTrigger` | 2 |  |
 | [`EnvironmentalEffect<T>`](/game-api/types/alta-stats-effects/environmentaleffect-t) | abstract class | `DurationEffect<T>` | 4 |  |
 | [`FireExtinguishingFluid`](/game-api/types/alta-stats-effects/fireextinguishingfluid) | class | `MonoBehaviour` | 0 | [Heat](../game-systems/heat.md) |
@@ -99,21 +99,21 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ILiquidContainer`](/game-api/types/alta-stats-effects/iliquidcontainer) | interface |  | 22 | [Liquids](../game-systems/liquids.md#iliquidcontainer): Implemented by `LiquidContainer` (the usual one, a network entity), `StaticLiquidContainer` (a plain `MonoBehaviour` one, probably for fixed bodies of water) and whatever the drinking mouth carries. |
 | [`ILiquidContainerInternal`](/game-api/types/alta-stats-effects/iliquidcontainerinternal) | interface |  | 6 |  |
 | [`ILiquidParticlesMarker`](/game-api/types/alta-stats-effects/iliquidparticlesmarker) | internal interface |  | 1 |  |
-| [`ILiquidTransitionController`](/game-api/types/alta-stats-effects/iliquidtransitioncontroller) | interface |  | 0 |  |
+| [`ILiquidTransitionController`](/game-api/types/alta-stats-effects/iliquidtransitioncontroller) | interface |  | 0 | Marker for whatever is driving a liquid transition (pouring or gradual drinking). `LiquidTransition` uses it to track who controls it. `PourableContainer` and `LiquidGradualDrinker` implement it. |
 | [`IPourableContainer`](/game-api/types/alta-stats-effects/ipourablecontainer) | interface |  | 4 | [Liquids](../game-systems/liquids.md) |
 | [`LiquidContainer`](/game-api/types/alta-stats-effects/liquidcontainer) | class | `GeneratedNetworkEntityBehaviour`, `ILiquidContainer`, `ILiquidContainerInternal`, +6 more | 24 | Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only the server changes the contents; the level and liquid are synced, saved, and shown through an optional surface visual. Pours in progress show as fractional amounts. |
-| [`LiquidContainerAmountChangedHandler`](/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler) | delegate |  | 0 |  |
-| [`LiquidContainerHandler`](/game-api/types/alta-stats-effects/liquidcontainerhandler) | delegate |  | 0 |  |
+| [`LiquidContainerAmountChangedHandler`](/game-api/types/alta-stats-effects/liquidcontaineramountchangedhandler) | delegate |  | 0 | Handler for `ILiquidContainer.ContentLevelChanged`: gets the container and its old and new content levels. |
+| [`LiquidContainerHandler`](/game-api/types/alta-stats-effects/liquidcontainerhandler) | delegate |  | 0 | Handler for `ILiquidContainer.TotalAmountShownChanged`: gets the container. |
 | [`LiquidContainerLid`](/game-api/types/alta-stats-effects/liquidcontainerlid) | class | `NetworkEntityBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 9 | [Liquids](../game-systems/liquids.md): A lid that opens and closes a container. |
 | [`LiquidContainerSaveData`](/game-api/types/alta-stats-effects/liquidcontainersavedata) | class | `NewSaveData<LiquidContainer, LiquidContainerSaveData>` | 7 | Save data for a `LiquidContainer` (save version 1): its fill level, whether it can be filled or emptied, and either a preset liquid or custom liquid data. |
-| [`LiquidContainerSaveData.CustomData`](/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata) | class |  | 5 |  |
+| [`LiquidContainerSaveData.CustomData`](/game-api/types/alta-stats-effects/liquidcontainersavedata-customdata) | class |  | 5 | Saved description of a custom (non-preset) liquid: its colour, visuals, effects and chunks. Used when the save data's `isCustom` is set. |
 | [`LiquidContainerSaveData.Effect`](/game-api/types/alta-stats-effects/liquidcontainersavedata-effect) | class |  | 2 |  |
 | [`LiquidContainerTrigger`](/game-api/types/alta-stats-effects/liquidcontainertrigger) | class | `MonoBehaviour` | 2 | [Liquids](../game-systems/liquids.md#dipping-liquidcontainertrigger) |
 | [`LiquidContent`](/game-api/types/alta-stats-effects/liquidcontent) | class |  | 8 | [Liquids](../game-systems/liquids.md#liquiddefinition-liquidcontent-and-liquiddata): What's in a container: `LiquidDefinition Liquid`, `LiquidData Data`, `bool IsCustom`. Stews are custom content with their own data. |
 | [`LiquidData`](/game-api/types/alta-stats-effects/liquiddata) | class |  | 19 | [Liquids](../game-systems/liquids.md#liquiddefinition-liquidcontent-and-liquiddata): `[Serializable]` class: `Effects` (`EffectDefinitionApplication`s), `ColorTint`, `LiquidVisual`, `ChunkVisuals`, `CookablesUsed`, `IsConsumableThroughSkin`. |
 | [`LiquidDataEventHandler`](/game-api/types/alta-stats-effects/liquiddataeventhandler) | delegate |  | 0 |  |
 | [`LiquidDefinition`](/game-api/types/alta-stats-effects/liquiddefinition) | class | `HashedGeneralValue<LiquidDefinition>` | 2 | [Liquids](../game-systems/liquids.md#liquiddefinition-liquidcontent-and-liquiddata): `HashedGeneralValue<LiquidDefinition>` asset under `Cooking/Liquids`: a named liquid (water, a potion). `LiquidData Data`, `LiquidContent GetAsLiquidContent()` (cached). |
-| [`LiquidFillFilter`](/game-api/types/alta-stats-effects/liquidfillfilter) | delegate |  | 0 |  |
+| [`LiquidFillFilter`](/game-api/types/alta-stats-effects/liquidfillfilter) | delegate |  | 0 | Handler for `ILiquidContainer.AddFilter`. `CanAddTo` starts with true and any handler can set the `ref bool` to false to refuse the liquid. |
 | [`LiquidFoamMaterialCreator`](/game-api/types/alta-stats-effects/liquidfoammaterialcreator) | class | `MaterialCreator<LiquidVisualData>` | 1 |  |
 | [`LiquidGravity`](/game-api/types/alta-stats-effects/liquidgravity) | class |  | 14 | Simulates which way a liquid surface points as its container moves and tips, with some sloshing. `LiquidSurfaceVisual` uses one. Plain class, client visuals. |
 | [`LiquidGravityAdjustment`](/game-api/types/alta-stats-effects/liquidgravityadjustment) | static class |  | 1 |  |
@@ -127,7 +127,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LiquidSurfaceMaterialCreator`](/game-api/types/alta-stats-effects/liquidsurfacematerialcreator) | class | `MaterialCreator<LiquidVisualData>` | 7 |  |
 | [`LiquidSurfaceVisual`](/game-api/types/alta-stats-effects/liquidsurfacevisual) | abstract class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 19 | Base for the liquid surface inside a container. It tracks how far the container is tipped (through `LiquidGravity`) and how full it is, and on clients draws the surface. It also stays active on the server, where the tip state is still updated. |
 | [`LiquidTransition`](/game-api/types/alta-stats-effects/liquidtransition) | class |  | 11 | One pour in progress from a source liquid container into a receiving one. Progress builds up and each time it reaches 1, one unit of liquid moves over. |
-| [`LiquidTypeChangedHandler`](/game-api/types/alta-stats-effects/liquidtypechangedhandler) | delegate |  | 0 |  |
+| [`LiquidTypeChangedHandler`](/game-api/types/alta-stats-effects/liquidtypechangedhandler) | delegate |  | 0 | Handler for `ILiquidContainer.ContainedLiquidChanged`: gets the old and new liquid content. |
 | [`LiquidVisualData`](/game-api/types/alta-stats-effects/liquidvisualdata) | class | `MaterialPropertyBlockSettings<LiquidVisualData>` | 24 | Asset with the look of a liquid (colours, rim, fresnel, highlight, waves) that liquid surfaces apply as material properties. Client visuals only. |
 | [`MaterialCreator<T>`](/game-api/types/alta-stats-effects/materialcreator-t) | abstract class |  | 1 | Base for classes that build a liquid material from settings of type `T` and a template material. |
 | [`PickupLiquidContainerEnabler`](/game-api/types/alta-stats-effects/pickupliquidcontainerenabler) | class | `MonoBehaviour` | 0 | [Liquids](../game-systems/liquids.md): Links a pickup to its container, pouring and surface, and filters what can be added. |
@@ -143,12 +143,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AreaFilter`](/game-api/types/alta-stats-effects/areafilter) | enum |  | 3 |  |
+| [`AreaFilter`](/game-api/types/alta-stats-effects/areafilter) | enum |  | 3 | Flags for which part of a player a stat area affects: `None`, `Body` or `Mind`. `StatAffectAccessor` matches it against the area's target. |
 | [`BurnStat`](/game-api/types/alta-stats-effects/burnstat) | class | `ControlledStat` | 2 | [Stats](../game-systems/stats.md) |
 | [`BurnStat.Create`](/game-api/types/alta-stats-effects/burnstat-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<BurnStat>` | 0 |  |
 | [`ControlledStat`](/game-api/types/alta-stats-effects/controlledstat) | abstract class | `StatDefinition` | 1 | [Stats](../game-systems/stats.md): Cancels itself out against another stat, so one soaks up the other. |
 | [`DiscreteStatBar`](/game-api/types/alta-stats-effects/discretestatbar) | class | `StatBarBase` | 3 | [Stats](../game-systems/stats.md) |
-| [`DiscreteStatBarVisual`](/game-api/types/alta-stats-effects/discretestatbarvisual) | class | `MonoBehaviour` | 2 |  |
+| [`DiscreteStatBarVisual`](/game-api/types/alta-stats-effects/discretestatbarvisual) | class | `MonoBehaviour` | 2 | Client: one segment of a `DiscreteStatBar`. Has its own material copy so its alpha can change, and can pulse with a scale animation. |
 | [`FullEmptyStatTrigger`](/game-api/types/alta-stats-effects/fullemptystattrigger) | class | `MonoBehaviour` | 0 | [Stats](../game-systems/stats.md) |
 | [`FullEmptyUpdateModifier`](/game-api/types/alta-stats-effects/fullemptyupdatemodifier) | internal class | `Modifier` | 2 |  |
 | [`FullnessStat`](/game-api/types/alta-stats-effects/fullnessstat) | class | `ThresholdStat` | 2 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#fullnessstat), [Stats](../game-systems/stats.md): While fullness is above 0, a timer counts down by `1 / tickRatePerHungerThreshold[level]` each tick, where `level` is hunger's current level. |
@@ -159,11 +159,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IncrementingStat`](/game-api/types/alta-stats-effects/incrementingstat) | class | `StatDefinition` | 2 | [Stats](../game-systems/stats.md): Adds `statChangePerSecond` on every incremental tick while the value is above 0. |
 | [`IncrementingStat.Create`](/game-api/types/alta-stats-effects/incrementingstat-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<IncrementingStat>` | 0 |  |
 | [`IndirectModifier`](/game-api/types/alta-stats-effects/indirectmodifier) | class |  | 8 | [Stats](../game-systems/stats.md) |
-| [`IndirectModifierSaveData`](/game-api/types/alta-stats-effects/indirectmodifiersavedata) | class |  | 4 |  |
+| [`IndirectModifierSaveData`](/game-api/types/alta-stats-effects/indirectmodifiersavedata) | class |  | 4 | Saved state of one `IndirectModifier`, a stat change that plays out over a curve for a number of ticks. On load, ticks for the time passed since saving are added, and modifiers that ran out are dropped. |
 | [`IndirectStatModifier`](/game-api/types/alta-stats-effects/indirectstatmodifier) | class |  | 4 | [Stats](../game-systems/stats.md) |
 | [`IndirectStatModifierDefinition`](/game-api/types/alta-stats-effects/indirectstatmodifierdefinition) | class | `EffectDefinition` | 1 | [Effects](../game-systems/effects.md) |
 | [`IndirectStatModifierDefinition.Create`](/game-api/types/alta-stats-effects/indirectstatmodifierdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<IndirectStatModifierDefinition>` | 0 |  |
-| [`Instance`](/game-api/types/alta-stats-effects/instance) | class |  | 3 |  |
+| [`Instance`](/game-api/types/alta-stats-effects/instance) | class |  | 3 | One entry in a `HealthData` asset: a prefab and the base health it should get. Editor and bake tooling; in this build `GetInstance` always returns null. |
 | [`LevelEffectSize`](/game-api/types/alta-stats-effects/leveleffectsize) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | [`LevelStatModifier`](/game-api/types/alta-stats-effects/levelstatmodifier) | class | `NetworkEntityBehaviour`, `ISavable<LevelStatModifierData>`, `ISavableSave<LevelStatModifierData>`, +1 more | 6 | [Stats](../game-systems/stats.md): Drives a stat from a curve by a level number, and saves that level. |
 | [`LevelStatModifierData`](/game-api/types/alta-stats-effects/levelstatmodifierdata) | class | `NewSaveData<LevelStatModifier, LevelStatModifierData>` | 1 |  |
@@ -186,31 +186,31 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StatAppliedHandler`](/game-api/types/alta-stats-effects/statappliedhandler) | delegate |  | 0 |  |
 | [`StatBar`](/game-api/types/alta-stats-effects/statbar) | class | `StatBarSimple` | 6 | [Stats](../game-systems/stats.md) |
 | [`StatBarBase`](/game-api/types/alta-stats-effects/statbarbase) | class | `MonoBehaviour` | 6 | Base for a bar that shows one stat (such as on the player's wrist). Hides itself while the hand camera takes a photo. Client side. |
-| [`StatBarNotch`](/game-api/types/alta-stats-effects/statbarnotch) | class | `MonoBehaviour` | 4 |  |
+| [`StatBarNotch`](/game-api/types/alta-stats-effects/statbarnotch) | class | `MonoBehaviour` | 4 | One notch mark on a curved stat bar. The bar places it along the curve and sets it to a minor or major size. |
 | [`StatBarSimple`](/game-api/types/alta-stats-effects/statbarsimple) | class | `StatBarBase` | 6 | [Stats](../game-systems/stats.md) |
 | [`StatBarSimple.IsLerping`](/game-api/types/alta-stats-effects/statbarsimple-islerping) | delegate |  | 0 |  |
-| [`StatBarVisibilityGroup`](/game-api/types/alta-stats-effects/statbarvisibilitygroup) | class | `MonoBehaviour` | 3 |  |
+| [`StatBarVisibilityGroup`](/game-api/types/alta-stats-effects/statbarvisibilitygroup) | class | `MonoBehaviour` | 3 | Client: a group of stat bars on the local player's body that turns to face the camera and fades in when looked at. Forced visible in combat and hidden while downed; destroyed on remote players and on death. |
 | [`StatConverter`](/game-api/types/alta-stats-effects/statconverter) | class | `TypeConverter` | 3 |  |
 | [`StatDefinition`](/game-api/types/alta-stats-effects/statdefinition) | class | `HashedGeneralValue<StatDefinition>` | 12 | [Stats](../game-systems/stats.md#statdefinition), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `ScriptableObject` asset. Get one with `StatDefinition.All`, `StatDefinition.Get(hash)`, or from a stat's `Definition`. |
 | [`StatDefinition.Create`](/game-api/types/alta-stats-effects/statdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<StatDefinition>` | 0 |  |
 | [`StatDefinitionApplication`](/game-api/types/alta-stats-effects/statdefinitionapplication) | class |  | 8 | [Stats](../game-systems/stats.md#statdefinitionapplication): `[Serializable]` class in a `StatManager`'s list. Holds a definition plus `Default`, `DefaultMinimum` and `DefaultMaximum`. `Stat.Reset` goes back to these. |
-| [`StatHandler`](/game-api/types/alta-stats-effects/stathandler) | delegate |  | 0 |  |
+| [`StatHandler`](/game-api/types/alta-stats-effects/stathandler) | delegate |  | 0 | Callback that gets a `Stat`, used for stat change events. |
 | [`StatList`](/game-api/types/alta-stats-effects/statlist) | class | `IEnumerable<StatPlayerPair>`, `IEnumerable` | 3 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
 | [`StatListConverter`](/game-api/types/alta-stats-effects/statlistconverter) | class | `TypeConverter` | 3 |  |
 | [`StatManager`](/game-api/types/alta-stats-effects/statmanager) | class | `NetworkEntityBehaviour`, `IEnumerable`, `ISavable<StatManagerSaveData>`, +2 more | 17 | [Stats](../game-systems/stats.md#statmanager): Instance, one per body. `PlayerStatManager` is a subclass that also lists stats to keep on death. |
 | [`StatManagerSaveData`](/game-api/types/alta-stats-effects/statmanagersavedata) | class | `NewSaveData<StatManager, StatManagerSaveData>` | 3 | [Stats](../game-systems/stats.md): What a body saves: each saved stat's `Base`, timed and indirect modifiers. |
-| [`StatManagerSaveData.IndirectStatModifier`](/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier) | class |  | 3 |  |
-| [`StatManagerSaveData.TimedModifier`](/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier) | class |  | 4 |  |
+| [`StatManagerSaveData.IndirectStatModifier`](/game-api/types/alta-stats-effects/statmanagersavedata-indirectstatmodifier) | class |  | 3 | Saved indirect modifiers on one stat of a `StatManager`, with the timeline time they were saved at. |
+| [`StatManagerSaveData.TimedModifier`](/game-api/types/alta-stats-effects/statmanagersavedata-timedmodifier) | class |  | 4 | A saved stat modifier that ends after a time, reapplied to the `StatManager` on load. |
 | [`StatManagerSaveData1`](/game-api/types/alta-stats-effects/statmanagersavedata1) | class | `OldSaveData` | 4 |  |
 | [`StatManagerSaveData1.IndirectStatModifier`](/game-api/types/alta-stats-effects/statmanagersavedata1-indirectstatmodifier) | class |  | 3 |  |
 | [`StatManagerSaveData1.TimedModifier`](/game-api/types/alta-stats-effects/statmanagersavedata1-timedmodifier) | class |  | 4 |  |
-| [`StatManagerSaveDataStat`](/game-api/types/alta-stats-effects/statmanagersavedatastat) | class |  | 2 |  |
+| [`StatManagerSaveDataStat`](/game-api/types/alta-stats-effects/statmanagersavedatastat) | class |  | 2 | One saved stat in a `StatManager`'s save data: which stat and its base flat value. `StatManager` loads each into the matching live stat. |
 | [`StatModifier`](/game-api/types/alta-stats-effects/statmodifier) | class | `Modifier` | 8 | [Stats](../game-systems/stats.md): Adds `Value` to `Extra` (or `NonBuffExtra`), or multiplies `BuffMultiplier` (or `NonBuffMultiplier`). |
-| [`StatModifierConstructor`](/game-api/types/alta-stats-effects/statmodifierconstructor) | internal class |  | 1 |  |
-| [`StatPlayerPair`](/game-api/types/alta-stats-effects/statplayerpair) | class |  | 3 |  |
+| [`StatModifierConstructor`](/game-api/types/alta-stats-effects/statmodifierconstructor) | internal class |  | 1 | Serialized recipe for one stat modifier, set up in the inspector on a `ThresholdStat` level and turned into a `StatModifier` when that level applies. |
+| [`StatPlayerPair`](/game-api/types/alta-stats-effects/statplayerpair) | class |  | 3 | A stat and the player it belongs to. `StatList` is a list of these, built by `StatListConverter`. |
 | [`StatTrigger`](/game-api/types/alta-stats-effects/stattrigger) | class | `MonoBehaviour` | 0 | [Stats](../game-systems/stats.md) |
 | [`StatUpgradeTarget`](/game-api/types/alta-stats-effects/statupgradetarget) | class | `NetworkEntityBehaviour` | 3 | [Stats](../game-systems/stats.md): Adds a fixed `upgrade` to a stat, with an effect. |
 | [`ThresholdStat`](/game-api/types/alta-stats-effects/thresholdstat) | class | `StatDefinition` | 5 | [Stats](../game-systems/stats.md): Has `Levels` (each a name, a `MinThreshold` and stat modifiers). Applies the modifier set of the level the value is in, and swaps sets as it moves. |
-| [`ThresholdStat.ThresholdLevel`](/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel) | class |  | 5 |  |
+| [`ThresholdStat.ThresholdLevel`](/game-api/types/alta-stats-effects/thresholdstat-thresholdlevel) | class |  | 5 | One level of a `ThresholdStat`: a name, the fraction it starts at, and the stat modifiers that apply while the stat is at that level. Defaults are `empty` at 0 and `full` at 0.3. |
 | [`TimedStatModifier`](/game-api/types/alta-stats-effects/timedstatmodifier) | class |  | 9 | [Stats](../game-systems/stats.md): A `StatModifier` removed after a time. Made by `ApplyTimedModifier`. `Cancel()` stops the timer. |
 | [`UpdateModifier`](/game-api/types/alta-stats-effects/updatemodifier) | internal class | `Modifier` | 2 | [Stats](../game-systems/stats.md): Runs an action on every `Updated` while applied. |

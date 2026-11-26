@@ -28,11 +28,11 @@ A physical button with a text label that updates when the label changes.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" button"}</code> |
-| <Link id="m-label" /><code>{"private string label"}</code> |
-| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-button" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" button"}</code> | Backing field for `Button`, the wrapped physical button. |
+| <Link id="m-label" /><code>{"private string label"}</code> | Backing field for `Label`. |
+| <Link id="m-textrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textRenderer"}</code> | The text that shows the label. |
 
 </details>
 
@@ -58,9 +58,9 @@ A physical button with a text label that updates when the label changes.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/global-i-l/labelledbuttonwrapper">{"LabelledButtonWrapper"}</Link>{" buttonWrapper)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onlabelchanged" /><code>{"private void OnLabelChanged("}<Link to="/game-api/types/global-i-l/labelledbuttonwrapper">{"LabelledButtonWrapper"}</Link>{" buttonWrapper)"}</code> | Copies the new label to the text renderer. |
 
 </details>
 

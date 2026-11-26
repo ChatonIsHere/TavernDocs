@@ -29,18 +29,18 @@ One hand of a player: the network behaviour that holds the grip point, the `Hand
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> allExtensions"}</code> |
-| <Link id="m-existingextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> existingExtensions"}</code> |
-| <Link id="m-extensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" extensionsGroup"}</code> |
-| <Link id="m-extensionsonikhand" /><code>{"private Transform extensionsOnIKHand"}</code> |
-| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> |
-| <Link id="m-hand" /><code>{"private "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand"}</code> |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
-| <Link id="m-localextensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" localExtensionsGroup"}</code> |
-| <Link id="m-networktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" networkTransform"}</code> |
-| <Link id="m-ownedextensionsonikhand" /><code>{"private Transform ownedExtensionsOnIKHand"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> allExtensions"}</code> | Unused list; `AllExtensions` has its own backing. |
+| <Link id="m-existingextensions" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllerextension">{"ControllerExtension"}</Link>{"> existingExtensions"}</code> | Extensions already on the prefab, added to `AllExtensions` first. |
+| <Link id="m-extensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" extensionsGroup"}</code> | Extension group added for every player. |
+| <Link id="m-extensionsonikhand" /><code>{"private Transform extensionsOnIKHand"}</code> | The IK hand copy of `extensionsGroup`, moved by `MoveExtensionsObjects`. |
+| <Link id="m-grippoint" /><code>{"private Transform gripPoint"}</code> | Backing field for `GripPoint`. |
+| <Link id="m-hand" /><code>{"private "}<Link to="/game-api/types/alta-player/hand">{"Hand"}</Link>{" hand"}</code> | Backing field for `Hand`. |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | Cached interactor extension, found on first use. |
+| <Link id="m-localextensionsgroup" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" localExtensionsGroup"}</code> | Extension group added only for the local player (formerly `ownedExtensionsGroup`). |
+| <Link id="m-networktransform" /><code>{"private "}<Link to="/game-api/types/alta-networking/networktransform">{"NetworkTransform"}</Link>{" networkTransform"}</code> | Cached network transform, found on first use. |
+| <Link id="m-ownedextensionsonikhand" /><code>{"private Transform ownedExtensionsOnIKHand"}</code> | The IK hand copy of `localExtensionsGroup`, if any. |
 
 </details>
 
@@ -74,12 +74,12 @@ One hand of a player: the network behaviour that holds the grip point, the `Hand
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addextension" /><code>{"private void AddExtension("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group)"}</code> |
-| <Link id="m-createextensionobject" /><code>{"private void CreateExtensionObject("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group, bool isIKHand)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-setupgrippointrigidbody" /><code>{"private bool SetupGripPointRigidbody()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addextension" /><code>{"private void AddExtension("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group)"}</code> | Instantiates an extension group twice, once for the ghost hand and once for the IK hand. |
+| <Link id="m-createextensionobject" /><code>{"private void CreateExtensionObject("}<Link to="/game-api/types/global-c-d/controllerextensiongroup">{"ControllerExtensionGroup"}</Link>{" group, bool isIKHand)"}</code> | Instantiates an extension group under the master or IK hand root, keeping only the components meant for that hand and linking them to this controller. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unlinks the actions manager and clears the input's target transform if it pointed here. |
+| <Link id="m-setupgrippointrigidbody" /><code>{"private bool SetupGripPointRigidbody()"}</code> | Editor apply method: makes sure the grip point has a kinematic rigidbody. |
 
 </details>
 

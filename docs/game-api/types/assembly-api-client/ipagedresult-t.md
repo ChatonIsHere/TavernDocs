@@ -1,6 +1,6 @@
 ---
 title: "IPagedResult<T>"
-description: "interface IPagedResult<T> in Alta.Api.Client."
+description: "A paged list result from the Alta web API, fetched one page at a time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,22 +12,24 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
+A paged list result from the Alta web API, fetched one page at a time.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`ConvertedPagedResult<TSource, T>`](/game-api/types/assembly-api-client/convertedpagedresult-tsource-t), [`PagedResult<T>`](/game-api/types/assembly-api-client/pagedresult-t)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> |
-| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasnext" /><code>{"bool HasNext { get; }"}</code> | Whether there is another page to fetch. |
+| <Link id="m-results" /><code>{"IEnumerable<T> Results { get; }"}</code> | The results fetched so far. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getallasync" /><code>{"Task<IEnumerable<T>> GetAllAsync()"}</code> |
-| <Link id="m-getnextasync" /><code>{"Task<IEnumerable<T>> GetNextAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getallasync" /><code>{"Task<IEnumerable<T>> GetAllAsync()"}</code> | Fetches every remaining page and returns all the results. |
+| <Link id="m-getnextasync" /><code>{"Task<IEnumerable<T>> GetNextAsync()"}</code> | Fetches the next page. |
 
 ## Used in
 

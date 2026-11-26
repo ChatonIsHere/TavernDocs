@@ -1,6 +1,6 @@
 ---
 title: "PlayerSwapMaterialFilter.MaterialTuple"
-description: "class PlayerSwapMaterialFilter.MaterialTuple in Root.Township."
+description: "A renderer's original material and the swapped copy a hand camera filter shows instead (for example the spectral look)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSwapMaterialFilter.MaterialTuple
 
 A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+A renderer's original material and the swapped copy a hand camera filter shows instead (for example the spectral look).
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Nested in** [`PlayerSwapMaterialFilter`](/game-api/types/alta-customization/playerswapmaterialfilter)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-copy" /><code>{"Material copy"}</code> |
-| <Link id="m-needsclearing" /><code>{"bool needsClearing"}</code> |
-| <Link id="m-original" /><code>{"Material original"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-copy" /><code>{"Material copy"}</code> | The replacement material, made by the filter's `SetupTuple`. |
+| <Link id="m-needsclearing" /><code>{"bool needsClearing"}</code> | Whether `copy` is cleaned up when the filter clears. |
+| <Link id="m-original" /><code>{"Material original"}</code> | The renderer's own material, put back when the filter is off. |
 
 ## Used in
 

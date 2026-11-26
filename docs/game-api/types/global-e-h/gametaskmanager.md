@@ -30,13 +30,13 @@ Singleton behind achievements, action stats and micro tutorial completion. The s
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-actionstatmap" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{", List<"}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{">> actionStatMap"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-playertrackers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/global-p/playertracker">{"PlayerTracker"}</Link>{"> playerTrackers"}</code> |
-| <Link id="m-syncinitialize" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncInitialize"}</code> |
-| <Link id="m-syncprogressflagstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> syncProgressFlagStatus"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-actionstatmap" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{", List<"}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{">> actionStatMap"}</code> | Server: `GameAction` lists by channel, for the actions valid in the current scene. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-playertrackers" /><code>{"private readonly Dictionary<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/global-p/playertracker">{"PlayerTracker"}</Link>{"> playerTrackers"}</code> | Server: progress tracker per connected player, loaded from the web API on connect. |
+| <Link id="m-syncinitialize" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncInitialize"}</code> | Method sync that sends a player all their completed flags on connect. |
+| <Link id="m-syncprogressflagstatus" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<uint> syncProgressFlagStatus"}</code> | Method sync that sends a single completed flag. |
 
 </details>
 
@@ -72,19 +72,19 @@ Singleton behind achievements, action stats and micro tutorial completion. The s
 <details>
 <summary>12 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-finishsync" /><code>{"private static void FinishSync()"}</code> |
-| <Link id="m-internalactionexecute" /><code>{"private void InternalActionExecute("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> |
-| <Link id="m-isprogressflaglocallycompleted" /><code>{"private static bool IsProgressFlagLocallyCompleted("}<Link to="/game-api/types/global-p/playerprogressflag">{"PlayerProgressFlag"}</Link>{" flag)"}</code> |
-| <Link id="m-localcompletedachievement" /><code>{"private void LocalCompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onplayercompletedachievement" /><code>{"private void OnPlayerCompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> |
-| <Link id="m-onplayercompletedtutorial" /><code>{"private void OnPlayerCompletedTutorial("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" tutorialSettings)"}</code> |
-| <Link id="m-syncplayercompletedprogressflagitem" /><code>{"private void SyncPlayerCompletedProgressFlagItem("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" hashedValue)"}</code> |
-| <Link id="m-syncprogressflagstatus-2" /><code>{"private void SyncProgressFlagStatus("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint flagHash)"}</code> |
-| <Link id="m-updateforplayer" /><code>{"private void UpdateForPlayer("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-autosave" /><code>{"private void IAutoSave.AutoSave()"}</code> | Server: sends every connected player's task progress to the web API on autosave. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `Instance`, or destroys itself if one already exists. |
+| <Link id="m-finishsync" /><code>{"private static void FinishSync()"}</code> | Raises `ReceivedSync` once a client has read its completed flags. |
+| <Link id="m-internalactionexecute" /><code>{"private void InternalActionExecute("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gametaskactionargument">{"GameTaskActionArgument"}</Link>{" argument)"}</code> | Server: feeds an action to every `GameAction` on its channel that accepts it, updating the player's value. |
+| <Link id="m-isprogressflaglocallycompleted" /><code>{"private static bool IsProgressFlagLocallyCompleted("}<Link to="/game-api/types/global-p/playerprogressflag">{"PlayerProgressFlag"}</Link>{" flag)"}</code> | Client: checks the synced completed set. Server: checks the tracker of `Player.Current`. |
+| <Link id="m-localcompletedachievement" /><code>{"private void LocalCompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Plays the achievement effect if the player is local and the achievement shows one. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears `Instance` if it was this one. |
+| <Link id="m-onplayercompletedachievement" /><code>{"private void OnPlayerCompletedAchievement("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" achievement)"}</code> | Server: records a newly completed achievement, plays its effect for a local player and sends it to the player and web API. |
+| <Link id="m-onplayercompletedtutorial" /><code>{"private void OnPlayerCompletedTutorial("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" tutorialSettings)"}</code> | Server: records a completed micro tutorial and syncs it. Not hooked to anything in this file. |
+| <Link id="m-syncplayercompletedprogressflagitem" /><code>{"private void SyncPlayerCompletedProgressFlagItem("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" hashedValue)"}</code> | Server: sends a completed flag's hash to the player and marks it completed in the web API. |
+| <Link id="m-syncprogressflagstatus-2" /><code>{"private void SyncProgressFlagStatus("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint flagHash)"}</code> | Sends one completed flag hash. Client: marks the achievement or tutorial complete when received. |
+| <Link id="m-updateforplayer" /><code>{"private void UpdateForPlayer("}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" stat, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, float value)"}</code> | Sets a player's tracked value for a `GameAction`. Hooked to each action's `ValueUpdate`. |
 
 </details>

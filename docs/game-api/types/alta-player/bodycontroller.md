@@ -29,32 +29,32 @@ Moves and turns a player's body to follow the head and hands, using `BodyControl
 <details>
 <summary>24 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activesettings" /><code>{"private List<"}<Link to="/game-api/types/alta-player/bodycontroller-bodycontrollersettingsoverride">{"BodyController.BodyControllerSettingsOverride"}</Link>{"> activeSettings"}</code> |
-| <Link id="m-body" /><code>{"private Transform body"}</code> |
-| <Link id="m-bodytarget" /><code>{"private Transform bodyTarget"}</code> |
-| <Link id="m-finalheadheading" /><code>{"private float finalHeadHeading"}</code> |
-| <Link id="m-finalheading" /><code>{"private float finalHeading"}</code> |
-| <Link id="m-finallefthandheading" /><code>{"private float finalLeftHandHeading"}</code> |
-| <Link id="m-finalpitch" /><code>{"private float finalPitch"}</code> |
-| <Link id="m-finalrighthandheading" /><code>{"private float finalRightHandHeading"}</code> |
-| <Link id="m-head" /><code>{"private Transform head"}</code> |
-| <Link id="m-headheading" /><code>{"private float headHeading"}</code> |
-| <Link id="m-headheadinginroom" /><code>{"private float headHeadingInRoom"}</code> |
-| <Link id="m-headrotationmultiplier" /><code>{"private float headRotationMultiplier"}</code> |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
-| <Link id="m-lefthand" /><code>{"private Transform leftHand"}</code> |
-| <Link id="m-lefthandheadingangle" /><code>{"private float leftHandHeadingAngle"}</code> |
-| <Link id="m-lefthandheadinginroom" /><code>{"private float leftHandHeadingInRoom"}</code> |
-| <Link id="m-lefthandheadingmultiplier" /><code>{"private float leftHandHeadingMultiplier"}</code> |
-| <Link id="m-originalhead" /><code>{"private Transform originalHead"}</code> |
-| <Link id="m-righthand" /><code>{"private Transform rightHand"}</code> |
-| <Link id="m-righthandheadingangle" /><code>{"private float rightHandHeadingAngle"}</code> |
-| <Link id="m-righthandheadinginroom" /><code>{"private float rightHandHeadingInRoom"}</code> |
-| <Link id="m-righthandheadingmultiplier" /><code>{"private float rightHandHeadingMultiplier"}</code> |
-| <Link id="m-room" /><code>{"private Transform room"}</code> |
-| <Link id="m-sidemovement" /><code>{"private float sideMovement"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activesettings" /><code>{"private List<"}<Link to="/game-api/types/alta-player/bodycontroller-bodycontrollersettingsoverride">{"BodyController.BodyControllerSettingsOverride"}</Link>{"> activeSettings"}</code> | Stack of override settings; the newest still relevant one is used. |
+| <Link id="m-body" /><code>{"private Transform body"}</code> | The body transform being moved and turned. |
+| <Link id="m-bodytarget" /><code>{"private Transform bodyTarget"}</code> | Target whose pitch follows the body's forward bend. |
+| <Link id="m-finalheadheading" /><code>{"private float finalHeadHeading"}</code> | Head heading after its impact curve is applied. |
+| <Link id="m-finalheading" /><code>{"private float finalHeading"}</code> | The body heading worked out this frame. |
+| <Link id="m-finallefthandheading" /><code>{"private float finalLeftHandHeading"}</code> | Left hand heading after its impact curve is applied. |
+| <Link id="m-finalpitch" /><code>{"private float finalPitch"}</code> | The body pitch worked out this frame. |
+| <Link id="m-finalrighthandheading" /><code>{"private float finalRightHandHeading"}</code> | Right hand heading after its impact curve is applied. |
+| <Link id="m-head" /><code>{"private Transform head"}</code> | Backing field for `Head`. |
+| <Link id="m-headheading" /><code>{"private float headHeading"}</code> | Head yaw relative to the body. |
+| <Link id="m-headheadinginroom" /><code>{"private float headHeadingInRoom"}</code> | Head heading used in the weighted heading sum. |
+| <Link id="m-headrotationmultiplier" /><code>{"private float headRotationMultiplier"}</code> | How much the head's yaw turns the body, from the settings curve. |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> | Head target, moved under the new head when `Head` changes. |
+| <Link id="m-lefthand" /><code>{"private Transform leftHand"}</code> | The left hand transform. |
+| <Link id="m-lefthandheadingangle" /><code>{"private float leftHandHeadingAngle"}</code> | Left hand angle around the body. |
+| <Link id="m-lefthandheadinginroom" /><code>{"private float leftHandHeadingInRoom"}</code> | Left hand heading used in the weighted heading sum. |
+| <Link id="m-lefthandheadingmultiplier" /><code>{"private float leftHandHeadingMultiplier"}</code> | How much the left hand turns the body, from the settings curve. |
+| <Link id="m-originalhead" /><code>{"private Transform originalHead"}</code> | The tracked head, kept while tracking is disabled. |
+| <Link id="m-righthand" /><code>{"private Transform rightHand"}</code> | The right hand transform. |
+| <Link id="m-righthandheadingangle" /><code>{"private float rightHandHeadingAngle"}</code> | Right hand angle around the body. |
+| <Link id="m-righthandheadinginroom" /><code>{"private float rightHandHeadingInRoom"}</code> | Right hand heading used in the weighted heading sum. |
+| <Link id="m-righthandheadingmultiplier" /><code>{"private float rightHandHeadingMultiplier"}</code> | How much the right hand turns the body, from the settings curve. |
+| <Link id="m-room" /><code>{"private Transform room"}</code> | The play space transform, used to get head height. |
+| <Link id="m-sidemovement" /><code>{"private float sideMovement"}</code> | Declared but not used. |
 
 </details>
 
@@ -79,9 +79,9 @@ Moves and turns a player's body to follow the head and hands, using `BodyControl
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-constrainangle" /><code>{"private float ConstrainAngle(float angle)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-constrainangle" /><code>{"private float ConstrainAngle(float angle)"}</code> | Wraps an angle to the -180 to 180 range. |
 
 </details>
 

@@ -27,13 +27,13 @@ One pour in progress from a source liquid container into a receiving one. Progre
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentcontroller" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" currentController"}</code> |
-| <Link id="m-isduringtransitionfinishing" /><code>{"private bool isDuringTransitionFinishing"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-receivingcontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" receivingContainer"}</code> |
-| <Link id="m-sourcecontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentcontroller" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidtransitioncontroller">{"ILiquidTransitionController"}</Link>{" currentController"}</code> | The controller that set the current target. Only it can progress or reset the pour. |
+| <Link id="m-isduringtransitionfinishing" /><code>{"private bool isDuringTransitionFinishing"}</code> | True while `OnTransitionFinished` runs, so the reset inside the fill is ignored. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-receivingcontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" receivingContainer"}</code> | Backing field for `ReceivingContainer`, the container being poured into, or null. |
+| <Link id="m-sourcecontainer" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/iliquidcontainer">{"ILiquidContainer"}</Link>{" sourceContainer"}</code> | Backing field for `SourceContainer`, the container being poured from. |
 
 </details>
 
@@ -65,10 +65,10 @@ One pour in progress from a source liquid container into a receiving one. Progre
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkiftransitionisstillvalid" /><code>{"private void CheckIfTransitionIsStillValid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldType, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newType)"}</code> |
-| <Link id="m-ontransitionfinished" /><code>{"private void OnTransitionFinished()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkiftransitionisstillvalid" /><code>{"private void CheckIfTransitionIsStillValid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldType, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newType)"}</code> | When the receiving container's liquid changes, cancels the pour if the two containers no longer mix. |
+| <Link id="m-ontransitionfinished" /><code>{"private void OnTransitionFinished()"}</code> | Moves one unit of liquid into the receiving container if it isn't full, then clears the target. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "GenericAssemblyStation.AssemblyPosition"
-description: "enum GenericAssemblyStation.AssemblyPosition in Root.Township."
+description: "Which way up a part sits on a generic assembly station: Up or Down."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenericAssemblyStation.AssemblyPosition
 
 An **enum** in `Root.Township`, `Alta.Crafting`.
+
+Which way up a part sits on a generic assembly station: `Up` or `Down`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`GenericAssemblyStation`](/game-api/types/alta-crafting/genericassemblystation)

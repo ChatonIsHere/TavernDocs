@@ -33,13 +33,13 @@ A text input field in the game's world-space menus, showing its text through a `
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-caret" /><code>{"private Transform caret"}</code> |
-| <Link id="m-inputtext" /><code>{"private string inputText"}</code> |
-| <Link id="m-maxlength" /><code>{"private int maxLength"}</code> |
-| <Link id="m-onsubmit" /><code>{"private UnityEvent onSubmit"}</code> |
-| <Link id="m-textvisuals" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textVisuals"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-caret" /><code>{"private Transform caret"}</code> | The caret transform set by `SetupCaret`, or null when the caret is off. |
+| <Link id="m-inputtext" /><code>{"private string inputText"}</code> | Serialized copy of the text, kept in step with `InputText` and used when toggling secret mode. |
+| <Link id="m-maxlength" /><code>{"private int maxLength"}</code> | Display length before the text is cut with "...". -1 means no limit. Doesn't limit what can be typed. |
+| <Link id="m-onsubmit" /><code>{"private UnityEvent onSubmit"}</code> | Inspector event invoked by `OnSubmit`. |
+| <Link id="m-textvisuals" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" textVisuals"}</code> | Text renderer that shows the text, or asterisks in secret mode. |
 
 </details>
 
@@ -70,9 +70,9 @@ A text input field in the game's world-space menus, showing its text through a `
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatecaret" /><code>{"private void UpdateCaret()"}</code> | Moves the caret to the end of the current line of text, or the text start when empty. |
 
 </details>
 

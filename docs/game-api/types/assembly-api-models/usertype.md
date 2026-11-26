@@ -1,6 +1,6 @@
 ---
 title: "UserType"
-description: "enum UserType in Alta.Api.DataTransferModels."
+description: "Which kind of account a user id belongs to: Alta, Oculus or Discord."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UserType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Which kind of account a user id belongs to: Alta, Oculus or Discord.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

@@ -32,38 +32,38 @@ Global settings for XP, levels and skill points. Get it with `GlobalSettings<Pro
 <details>
 <summary>30 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bellowspumptoexperience" /><code>{"private float bellowsPumpToExperience"}</code> |
-| <Link id="m-bodylevelupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffect"}</code> |
-| <Link id="m-bodylevelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffectToPointCap"}</code> |
-| <Link id="m-destroyeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyEffectDefinition"}</code> |
-| <Link id="m-dissipatetoolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissipateToolBasedEffect"}</code> |
-| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" experienceBoostStat"}</code> |
-| <Link id="m-experienceperdamage" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceperdamage">{"ProgressionSettings.PathExperiencePerDamage"}</Link>{"[] experiencePerDamage"}</code> |
-| <Link id="m-experienceperdamagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", float> experiencePerDamageMap"}</code> |
-| <Link id="m-experienceperlevelbasedonlevel" /><code>{"private AnimationCurve experiencePerLevelBasedOnLevel"}</code> |
-| <Link id="m-experienceshare" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"[] experienceShare"}</code> |
-| <Link id="m-experiencesharemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"> experienceShareMap"}</code> |
-| <Link id="m-garnishexperienceboost" /><code>{"private float garnishExperienceBoost"}</code> |
-| <Link id="m-get8skillsachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" get8SkillsAchievement"}</code> |
-| <Link id="m-impactchannel" /><code>{"private "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"[] impactChannel"}</code> |
-| <Link id="m-isclearingpracticeobjectsonfirstpractice" /><code>{"private bool isClearingPracticeObjectsOnFirstPractice"}</code> |
-| <Link id="m-levelupaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" levelUpAction"}</code> |
-| <Link id="m-levelupeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffect"}</code> |
-| <Link id="m-levelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffectToPointCap"}</code> |
-| <Link id="m-maxboughtskills" /><code>{"private uint maxBoughtSkills"}</code> |
-| <Link id="m-maxfreepoints" /><code>{"private uint maxFreePoints"}</code> |
-| <Link id="m-pathimpactchannelmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{", "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"> pathImpactChannelMap"}</code> |
-| <Link id="m-peringredientexperience" /><code>{"private int perIngredientExperience"}</code> |
-| <Link id="m-playercountexperienceshare" /><code>{"private float[] playerCountExperienceShare"}</code> |
-| <Link id="m-popcolors" /><code>{"private Color[] popColors"}</code> |
-| <Link id="m-powerstrikeinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" powerStrikeInput"}</code> |
-| <Link id="m-raisehandinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" raiseHandInput"}</code> |
-| <Link id="m-recipeexperiencebonus" /><code>{"private float recipeExperienceBonus"}</code> |
-| <Link id="m-sellingskillpointsrefundpercentage" /><code>{"private float sellingSkillPointsRefundPercentage"}</code> |
-| <Link id="m-skillorbinteractioneffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" skillOrbInteractionEffectDefinition"}</code> |
-| <Link id="m-toolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" toolBasedEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bellowspumptoexperience" /><code>{"private float bellowsPumpToExperience"}</code> | Forging experience gained per bellows pump. |
+| <Link id="m-bodylevelupeffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffect"}</code> | Event fired on the player's body target on a normal level up. |
+| <Link id="m-bodylevelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" bodyLevelUpEffectToPointCap"}</code> | Event fired on the player's body target on a level up that reaches the point cap. |
+| <Link id="m-destroyeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyEffectDefinition"}</code> | Pooled effect spawned when a skill orb is destroyed (see `OrbDestroyEffect`). |
+| <Link id="m-dissipatetoolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" dissipateToolBasedEffect"}</code> | Pooled effect for a tool-based experience effect fading out. |
+| <Link id="m-experiencebooststat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" experienceBoostStat"}</code> | Stat that boosts experience gain; read by `PlayerProgressionManager`. |
+| <Link id="m-experienceperdamage" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceperdamage">{"ProgressionSettings.PathExperiencePerDamage"}</Link>{"[] experiencePerDamage"}</code> | Per-path experience gained for each point of damage dealt. |
+| <Link id="m-experienceperdamagemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", float> experiencePerDamageMap"}</code> | Lookup built from `experiencePerDamage`, keyed by path. |
+| <Link id="m-experienceperlevelbasedonlevel" /><code>{"private AnimationCurve experiencePerLevelBasedOnLevel"}</code> | Curve giving the experience needed for a level, by current level. |
+| <Link id="m-experienceshare" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"[] experienceShare"}</code> | Per-path multipliers for experience when holding an object yourself or supporting someone else's. |
+| <Link id="m-experiencesharemap" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", "}<Link to="/game-api/types/global-p/progressionsettings-pathexperienceshare">{"ProgressionSettings.PathExperienceShare"}</Link>{"> experienceShareMap"}</code> | Lookup built from `experienceShare`, keyed by path. |
+| <Link id="m-garnishexperienceboost" /><code>{"private float garnishExperienceBoost"}</code> | Cooking experience multiplier when a stew has a garnish. |
+| <Link id="m-get8skillsachievement" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameachievement">{"GameAchievement"}</Link>{" get8SkillsAchievement"}</code> | Achievement for owning eight skills. |
+| <Link id="m-impactchannel" /><code>{"private "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"[] impactChannel"}</code> | Filters that map an impact channel to the progression path it gives experience in. |
+| <Link id="m-isclearingpracticeobjectsonfirstpractice" /><code>{"private bool isClearingPracticeObjectsOnFirstPractice"}</code> | Whether practice objects are cleared the first time a player practises. |
+| <Link id="m-levelupaction" /><code>{"private "}<Link to="/game-api/types/global-e-h/gameaction">{"GameAction"}</Link>{" levelUpAction"}</code> | Game action recorded on level up. |
+| <Link id="m-levelupeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffect"}</code> | Pooled effect spawned at the player's feet on a normal level up. |
+| <Link id="m-levelupeffecttopointcap" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" levelUpEffectToPointCap"}</code> | Pooled effect spawned at the player's feet on a level up that reaches the point cap. |
+| <Link id="m-maxboughtskills" /><code>{"private uint maxBoughtSkills"}</code> | Most skills a player can buy. `UncapSkillPoints` sets it to 0. |
+| <Link id="m-maxfreepoints" /><code>{"private uint maxFreePoints"}</code> | Most unspent skill points a player can hold; 0 disables the cap. |
+| <Link id="m-pathimpactchannelmap" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{", "}<Link to="/game-api/types/global-a-b/baseimpactchannelprogressionfilter">{"BaseImpactChannelProgressionFilter"}</Link>{"> pathImpactChannelMap"}</code> | Lookup built from `impactChannel`, keyed by impact channel. |
+| <Link id="m-peringredientexperience" /><code>{"private int perIngredientExperience"}</code> | Cooking experience per stew ingredient. |
+| <Link id="m-playercountexperienceshare" /><code>{"private float[] playerCountExperienceShare"}</code> | Cooking experience multiplier by how many players cooked together (index 0 is one player); the total is split between them. |
+| <Link id="m-popcolors" /><code>{"private Color[] popColors"}</code> | Colour of the experience popup for each progression path. |
+| <Link id="m-powerstrikeinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" powerStrikeInput"}</code> | Sounds for the power strike input turning on and off. Not read anywhere else in this build. |
+| <Link id="m-raisehandinput" /><code>{"private "}<Link to="/game-api/types/global-p/progressionsettings-inputsystemsound">{"ProgressionSettings.InputSystemSound"}</Link>{" raiseHandInput"}</code> | Sounds for the raise hand input turning on and off. Not read anywhere else in this build. |
+| <Link id="m-recipeexperiencebonus" /><code>{"private float recipeExperienceBonus"}</code> | Cooking experience multiplier when the stew matches a real recipe. |
+| <Link id="m-sellingskillpointsrefundpercentage" /><code>{"private float sellingSkillPointsRefundPercentage"}</code> | Share (0 to 1) of a level's experience refunded when selling a skill. |
+| <Link id="m-skillorbinteractioneffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" skillOrbInteractionEffectDefinition"}</code> | Pooled effect played when interacting with a skill orb (formerly the skill buy effect). |
+| <Link id="m-toolbasedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" toolBasedEffect"}</code> | Pooled effect shown when a tool hit gives experience. |
 
 </details>
 
@@ -100,11 +100,11 @@ Global settings for XP, levels and skill points. Get it with `GlobalSettings<Pro
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-fillandvalidatemaps" /><code>{"private void FillAndValidateMaps()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-populatemap" /><code>{"private void PopulateMap<T>(Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", T> map, T[] array)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fillandvalidatemaps" /><code>{"private void FillAndValidateMaps()"}</code> | Rebuilds the per-path lookup maps (experience per damage, experience share, impact channel filters) from the serialized arrays. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Builds the lookup maps when the asset loads. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: rebuilds the maps and resizes `playerCountExperienceShare` when its length is off. |
+| <Link id="m-populatemap" /><code>{"private void PopulateMap<T>(Dictionary<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{", T> map, T[] array)"}</code> | Fills a path-keyed map from an array of per-path entries and names each entry after its path. |
 
 </details>

@@ -27,9 +27,9 @@ Wrapper around a logger for the micro tutorial code that drops messages below a 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private readonly ILogger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private readonly ILogger logger"}</code> | The wrapped logger. Note that `Warn` messages are written to it as errors. |
 
 </details>
 
@@ -52,9 +52,9 @@ Wrapper around a logger for the micro tutorial code that drops messages below a 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-isabovelogthreshold" /><code>{"private bool IsAboveLogThreshold("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" level)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isabovelogthreshold" /><code>{"private bool IsAboveLogThreshold("}<Link to="/game-api/types/global-i-l/logginglevel">{"LoggingLevel"}</Link>{" level)"}</code> | True when a message of this level should be logged under the static `LogLevel`. |
 
 </details>
 

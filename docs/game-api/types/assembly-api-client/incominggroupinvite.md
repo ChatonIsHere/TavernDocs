@@ -1,6 +1,6 @@
 ---
 title: "IncomingGroupInvite"
-description: "class IncomingGroupInvite in Alta.Api.Client."
+description: "An invite to a group that the current user received, with calls to accept or reject it through the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IncomingGroupInvite
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+An invite to a group that the current user received, with calls to accept or reject it through the Alta web API.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`AcceptReject`](/game-api/types/assembly-api-client/acceptreject)
@@ -29,16 +31,16 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" GroupInfo { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-groupinfo" /><code><Link to="/game-api/types/assembly-api-models/invitedgroupinfo">{"InvitedGroupInfo"}</Link>{" GroupInfo { get; }"}</code> | The group the user was invited to. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-accept" /><code>{"override Task Accept()"}</code> |
-| <Link id="m-reject" /><code>{"override Task Reject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-accept" /><code>{"override Task Accept()"}</code> | Accepts the invite to the group. |
+| <Link id="m-reject" /><code>{"override Task Reject()"}</code> | Rejects the invite to the group. |
 
 ## Used in
 

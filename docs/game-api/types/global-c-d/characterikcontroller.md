@@ -28,22 +28,22 @@ Runs a player character's IK (body following head and hands) and lets it be turn
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-charactercomponentcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" characterComponentControllers"}</code> |
-| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> |
-| <Link id="m-headtargetlocalparent" /><code>{"private Transform headTargetLocalParent"}</code> |
-| <Link id="m-headtargetremoteparent" /><code>{"private Transform headTargetRemoteParent"}</code> |
-| <Link id="m-headtargettransform" /><code>{"private SerializableTransform headTargetTransform"}</code> |
-| <Link id="m-isautomaticallyfillingtargettransform" /><code>{"private bool isAutomaticallyFillingTargetTransform"}</code> |
-| <Link id="m-lefthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" leftHandTarget"}</code> |
-| <Link id="m-lefthandtargetparent" /><code>{"private Transform leftHandTargetParent"}</code> |
-| <Link id="m-lefthandtargettransform" /><code>{"private SerializableTransform leftHandTargetTransform"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> |
-| <Link id="m-righthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" rightHandTarget"}</code> |
-| <Link id="m-righthandtargetparent" /><code>{"private Transform rightHandTargetParent"}</code> |
-| <Link id="m-righthandtargettransform" /><code>{"private SerializableTransform rightHandTargetTransform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-charactercomponentcontrollers" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" characterComponentControllers"}</code> | The IK component controllers updated by `FixedUpdateIK` and `UpdateIK`. |
+| <Link id="m-headtarget" /><code>{"private Transform headTarget"}</code> | Transform the head IK follows. |
+| <Link id="m-headtargetlocalparent" /><code>{"private Transform headTargetLocalParent"}</code> | Parent for the head target when this is the local player. |
+| <Link id="m-headtargetremoteparent" /><code>{"private Transform headTargetRemoteParent"}</code> | Parent for the head target when this is a remote player. |
+| <Link id="m-headtargettransform" /><code>{"private SerializableTransform headTargetTransform"}</code> | Saved local transform restored on the head target when IK is enabled. |
+| <Link id="m-isautomaticallyfillingtargettransform" /><code>{"private bool isAutomaticallyFillingTargetTransform"}</code> | Inspector button flag that triggers `AutomaticallyFillTargetTransforms`. |
+| <Link id="m-lefthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" leftHandTarget"}</code> | Left hand IK target handler. |
+| <Link id="m-lefthandtargetparent" /><code>{"private Transform leftHandTargetParent"}</code> | Parent restored on the left hand target when IK is enabled. |
+| <Link id="m-lefthandtargettransform" /><code>{"private SerializableTransform leftHandTargetTransform"}</code> | Saved local transform restored on the left hand target when IK is enabled. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-playercharacter" /><code>{"private "}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter"}</code> | The player character this controller drives. |
+| <Link id="m-righthandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" rightHandTarget"}</code> | Right hand IK target handler. |
+| <Link id="m-righthandtargetparent" /><code>{"private Transform rightHandTargetParent"}</code> | Parent restored on the right hand target when IK is enabled. |
+| <Link id="m-righthandtargettransform" /><code>{"private SerializableTransform rightHandTargetTransform"}</code> | Saved local transform restored on the right hand target when IK is enabled. |
 
 </details>
 
@@ -56,9 +56,9 @@ Runs a player character's IK (body following head and hands) and lets it be turn
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-shouldupdate" /><code>{"private bool ShouldUpdate { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-shouldupdate" /><code>{"private bool ShouldUpdate { get; }"}</code> | True when IK should run: the player is alive and, in the editor or on Quest for the local player, the app has input focus. |
 
 </details>
 
@@ -87,13 +87,13 @@ Runs a player character's IK (body following head and hands) and lets it be turn
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-automaticallyfilltargettransforms" /><code>{"private void AutomaticallyFillTargetTransforms()"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-syncwithremote" /><code>{"private void SyncWithRemote("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-automaticallyfilltargettransforms" /><code>{"private void AutomaticallyFillTargetTransforms()"}</code> | Editor: saves the current hand and head target parents and transforms so IK can be restored later. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Marks IK control active and hooks the component controllers' pre and post update events. |
+| <Link id="m-initializeaslocalplayer" /><code>{"private void IInitializeAsLocalPlayer.InitializeAsLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | Marks the component controllers as local. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: runs `AutomaticallyFillTargetTransforms` when its inspector button is pressed. |
+| <Link id="m-syncwithremote" /><code>{"private void SyncWithRemote("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Handles an IK controller message: enables or disables IK to match, and the server relays it to the other players in range. |
 
 </details>
 

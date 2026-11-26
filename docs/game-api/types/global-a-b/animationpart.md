@@ -27,16 +27,16 @@ One moving piece in a building animation: it slides in from an offset to its fin
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-distance" /><code>{"private float distance"}</code> |
-| <Link id="m-movedirection" /><code>{"private Vector3 moveDirection"}</code> |
-| <Link id="m-overrideeffectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnAppear"}</code> |
-| <Link id="m-overrideeffectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnPosition"}</code> |
-| <Link id="m-overridesoundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnAppear"}</code> |
-| <Link id="m-overridesoundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnPosition"}</code> |
-| <Link id="m-repairboxscale" /><code>{"private float repairBoxScale"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distance" /><code>{"private float distance"}</code> | How far from its final position the part starts. Exposed as `Distance`. |
+| <Link id="m-movedirection" /><code>{"private Vector3 moveDirection"}</code> | Local direction the part moves in from, scaled by `distance`. Exposed as `MoveDirection`. |
+| <Link id="m-overrideeffectonappear" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnAppear"}</code> | Pooled effect spawned when this part appears, instead of the building animation's default. |
+| <Link id="m-overrideeffectonposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" overrideEffectOnPosition"}</code> | Pooled effect spawned when this part reaches its final position. |
+| <Link id="m-overridesoundonappear" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnAppear"}</code> | Sound played when this part appears, instead of the default. |
+| <Link id="m-overridesoundonposition" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" overrideSoundOnPosition"}</code> | Sound played when this part reaches its final position. |
+| <Link id="m-repairboxscale" /><code>{"private float repairBoxScale"}</code> | Multiplier on the part's final scale used by `RepairBox`. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | The transform being animated. |
 
 </details>
 

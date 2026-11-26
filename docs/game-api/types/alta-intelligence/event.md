@@ -28,10 +28,10 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-nextactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" nextActive"}</code> |
-| <Link id="m-previousactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previousActive"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nextactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" nextActive"}</code> | Next event in the linked list of live events. |
+| <Link id="m-previousactive" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previousActive"}</code> | Previous event in the linked list of live events. |
 
 </details>
 
@@ -47,10 +47,10 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-age" /><code>{"private float Age { get; set; }"}</code> |
-| <Link id="m-lifetime" /><code>{"private float LifeTime { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-age" /><code>{"private float Age { get; set; }"}</code> | How long the event has existed, added to by `Update`. |
+| <Link id="m-lifetime" /><code>{"private float LifeTime { get; set; }"}</code> | How long the event lasts. Its knowledge fades from weight 1 to 0 over this time. |
 
 </details>
 
@@ -63,9 +63,9 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ageweightknowledge" /><code>{"private void AgeWeightKnowledge(float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ageweightknowledge" /><code>{"private void AgeWeightKnowledge(float weight)"}</code> | Sets the age weighting on every knowledge atom of the event. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "RenderLock.RenderLockType"
-description: "enum RenderLock.RenderLockType in Root.Township."
+description: "Reasons rendering is held back, used as bit flags in RenderLock: no player controller spawned yet, or faded to black."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RenderLock.RenderLockType
 
 An **enum** in `Root.Township`, no namespace.
+
+Reasons rendering is held back, used as bit flags in `RenderLock`: no player controller spawned yet, or faded to black.
 
 - **Listed in** [No namespace: Q to R](/game-api/types/global-q-r)
 - **Nested in** [`RenderLock`](/game-api/types/global-q-r/renderlock)

@@ -27,23 +27,23 @@ How a cluster generator scatters child objects (such as crystals or mushrooms) a
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-childcount" /><code>{"private AnimationCurve childCount"}</code> |
-| <Link id="m-iseveningrandomposition" /><code>{"private bool isEveningRandomPosition"}</code> |
-| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> |
-| <Link id="m-isoffsetrestrictedtoupwards" /><code>{"private bool isOffsetRestrictedToUpwards"}</code> |
-| <Link id="m-israycastingfinal" /><code>{"private bool isRaycastingFinal"}</code> |
-| <Link id="m-isrotationunsplit" /><code>{"private bool isRotationUnsplit"}</code> |
-| <Link id="m-isscalerandom" /><code>{"private bool isScaleRandom"}</code> |
-| <Link id="m-maximumuprotation" /><code>{"private float maximumUpRotation"}</code> |
-| <Link id="m-maxraycastdistance" /><code>{"private float maxRaycastDistance"}</code> |
-| <Link id="m-minimumuprotation" /><code>{"private float minimumUpRotation"}</code> |
-| <Link id="m-offset" /><code>{"private float offset"}</code> |
-| <Link id="m-randomscale" /><code>{"private AnimationCurve randomScale"}</code> |
-| <Link id="m-raycastinglayers" /><code>{"private LayerMask raycastingLayers"}</code> |
-| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> |
-| <Link id="m-verticaloffsetmultiplier" /><code>{"private float verticalOffsetMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-childcount" /><code>{"private AnimationCurve childCount"}</code> | Curve sampled at a random 0 to 1 value to pick how many children a cluster gets. |
+| <Link id="m-iseveningrandomposition" /><code>{"private bool isEveningRandomPosition"}</code> | Pushes random offsets outwards (square root of each axis) for a more even spread. |
+| <Link id="m-iskinematic" /><code>{"private bool isKinematic"}</code> | Makes each child's rigidbody kinematic after placing it. |
+| <Link id="m-isoffsetrestrictedtoupwards" /><code>{"private bool isOffsetRestrictedToUpwards"}</code> | Keeps the random vertical offset positive (true by default). |
+| <Link id="m-israycastingfinal" /><code>{"private bool isRaycastingFinal"}</code> | Raycasts down from the placed point and snaps the child to what it hits. |
+| <Link id="m-isrotationunsplit" /><code>{"private bool isRotationUnsplit"}</code> | True for a fully random rotation. False for random spin plus an up tilt between the min and max. |
+| <Link id="m-isscalerandom" /><code>{"private bool isScaleRandom"}</code> | Scales each child by `randomScale` sampled at a random value. |
+| <Link id="m-maximumuprotation" /><code>{"private float maximumUpRotation"}</code> | Largest tilt in degrees when `isRotationUnsplit` is off. |
+| <Link id="m-maxraycastdistance" /><code>{"private float maxRaycastDistance"}</code> | Longest raycast used to snap children (2 by default). |
+| <Link id="m-minimumuprotation" /><code>{"private float minimumUpRotation"}</code> | Smallest tilt in degrees when `isRotationUnsplit` is off. |
+| <Link id="m-offset" /><code>{"private float offset"}</code> | Radius of the random offset around the parent (0.1 by default). |
+| <Link id="m-randomscale" /><code>{"private AnimationCurve randomScale"}</code> | Curve giving child scale when `isScaleRandom` is on. |
+| <Link id="m-raycastinglayers" /><code>{"private LayerMask raycastingLayers"}</code> | Layers the snap raycast hits. |
+| <Link id="m-verticaloffset" /><code>{"private float verticalOffset"}</code> | Fixed height added to every child's position. |
+| <Link id="m-verticaloffsetmultiplier" /><code>{"private float verticalOffsetMultiplier"}</code> | Scales the random vertical offset. A negative value places children on a flat disc instead of in a sphere. |
 
 </details>
 

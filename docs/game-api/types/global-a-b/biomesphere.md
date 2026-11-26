@@ -28,13 +28,13 @@ A sphere of one biome in a procedural forest, with a seed, origin, radius and st
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" biome"}</code> |
-| <Link id="m-origin" /><code>{"private Vector3 origin"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |
-| <Link id="m-strength" /><code>{"private float strength"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-biome" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" biome"}</code> | Backing field for `Biome`, serialized as a hash. |
+| <Link id="m-origin" /><code>{"private Vector3 origin"}</code> | Backing field for `Origin`, the sphere's centre. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Backing field for `Radius`. |
+| <Link id="m-seed" /><code>{"private int seed"}</code> | Backing field for `Seed`; added to the biome hash to seed `Generated`. |
+| <Link id="m-strength" /><code>{"private float strength"}</code> | Backing field for `Strength`. |
 
 </details>
 

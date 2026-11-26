@@ -30,15 +30,15 @@ A ScriptableObject asset describing an object pool: which `PooledObject` prefab 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-initializesize" /><code>{"private int initializeSize"}</code> |
-| <Link id="m-ismaxsizelimitting" /><code>{"private bool isMaxSizeLimitting"}</code> |
-| <Link id="m-ismaxsizelimittingonandroid" /><code>{"private bool isMaxSizeLimittingOnAndroid"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-maximumpoolsize" /><code>{"private int maximumPoolSize"}</code> |
-| <Link id="m-maximumpoolsizeandroid" /><code>{"private int maximumPoolSizeAndroid"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializesize" /><code>{"private int initializeSize"}</code> | How many objects to create up front when the pool is made (capped by `maximumPoolSize`). |
+| <Link id="m-ismaxsizelimitting" /><code>{"private bool isMaxSizeLimitting"}</code> | When true the pool never has more than `maximumPoolSize` objects active; otherwise it only limits how many it keeps spare. |
+| <Link id="m-ismaxsizelimittingonandroid" /><code>{"private bool isMaxSizeLimittingOnAndroid"}</code> | Android version of `isMaxSizeLimitting`. Not read anywhere in this build. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maximumpoolsize" /><code>{"private int maximumPoolSize"}</code> | Most objects the pool keeps (or allows active, with `isMaxSizeLimitting`). |
+| <Link id="m-maximumpoolsizeandroid" /><code>{"private int maximumPoolSizeAndroid"}</code> | Android pool size. Not read anywhere in this build. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" prefab"}</code> | The pooled object prefab this definition spawns. |
 
 </details>
 

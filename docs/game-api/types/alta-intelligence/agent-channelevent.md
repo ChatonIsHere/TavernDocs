@@ -1,6 +1,6 @@
 ---
 title: "Agent.ChannelEvent"
-description: "class Agent.ChannelEvent in Root.Township."
+description: "A Unity event an agent fires on one hook event channel (by array index in Agent.ChannelEvents)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Agent.ChannelEvent
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A Unity event an agent fires on one hook event channel (by array index in `Agent.ChannelEvents`). Server-only unless marked as networked.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`Agent`](/game-api/types/alta-intelligence/agent)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-eventfired" /><code>{"private UnityEvent eventFired"}</code> |
-| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-eventfired" /><code>{"private UnityEvent eventFired"}</code> | Backing field for `EventFired`. |
+| <Link id="m-isnetworked" /><code>{"private bool isNetworked"}</code> | Backing field for `IsNetworked`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-eventfired-2" /><code>{"UnityEvent EventFired { get; }"}</code> |
-| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-eventfired-2" /><code>{"UnityEvent EventFired { get; }"}</code> | Unity event run when the agent fires this channel. |
+| <Link id="m-isnetworked-2" /><code>{"bool IsNetworked { get; }"}</code> | If true, the event also runs on clients: the server sends the channel to the chunk when it fires. If false, only the server registers it. |
 
 ## Used in
 

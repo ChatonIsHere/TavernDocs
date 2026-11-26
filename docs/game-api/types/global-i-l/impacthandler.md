@@ -1,6 +1,6 @@
 ---
 title: "ImpactHandler"
-description: "delegate ImpactHandler in Root.Township."
+description: "Callback that receives an ImpactHit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback that receives an `ImpactHit`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "PlayerControllerHandler"
-description: "delegate PlayerControllerHandler in Root.Township."
+description: "Event handler that receives a PlayerController."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerControllerHandler
 
 A **delegate** in `Root.Township`, `Alta.Character`.
+
+Event handler that receives a `PlayerController`. Used by `PlayerController.LocalPlayerSet`, `OnAboutToLeave` and `Player.PlayerControllerSet`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MulticastDelegate`

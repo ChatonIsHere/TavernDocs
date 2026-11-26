@@ -1,6 +1,6 @@
 ---
 title: "PagedConfig"
-description: "class PagedConfig in Alta.Api.Client."
+description: "Page size and continuation token for paged API calls."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
+Page size and continuation token for paged API calls.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
 ## Constructors
@@ -22,17 +24,17 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" Default { get; }"}</code> |
-| <Link id="m-limit" /><code>{"int Limit { get; set; }"}</code> |
-| <Link id="m-paginationtoken" /><code>{"string PaginationToken { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-default" /><code>{"static "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" Default { get; }"}</code> | A new config with a limit of 20. |
+| <Link id="m-limit" /><code>{"int Limit { get; set; }"}</code> | How many results to ask for per page. |
+| <Link id="m-paginationtoken" /><code>{"string PaginationToken { get; set; }"}</code> | Token from the previous page, or null for the first page. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getpaginationqueryparams" /><code>{"string GetPaginationQueryParams(NameValueCollection extra = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getpaginationqueryparams" /><code>{"string GetPaginationQueryParams(NameValueCollection extra = null)"}</code> | Builds the query string with `limit`, the `paginationToken` if set, and any extra parameters. |
 
 ## Used in
 

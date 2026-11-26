@@ -1,6 +1,6 @@
 ---
 title: "ChunkEventHandler"
-description: "delegate ChunkEventHandler in Root.Township."
+description: "Callback with a chunk, used by NetworkEntity.AddedToChunk, RemovedFromChunk and Chunker.EnteredChunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback with a chunk, used by `NetworkEntity.AddedToChunk`, `RemovedFromChunk` and `Chunker.EnteredChunk`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

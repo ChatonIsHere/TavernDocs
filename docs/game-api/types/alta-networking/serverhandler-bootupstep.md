@@ -1,6 +1,6 @@
 ---
 title: "ServerHandler.BootupStep"
-description: "delegate ServerHandler.BootupStep in Root.Township."
+description: "An async step run while the server boots, added with ServerHandler.AddBootupStep."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerHandler.BootupStep
 
 A **delegate** in `Root.Township`, `Alta.Networking.Servers`.
+
+An async step run while the server boots, added with `ServerHandler.AddBootupStep`. It can report progress text through the callback.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`ServerHandler`](/game-api/types/alta-networking/serverhandler)

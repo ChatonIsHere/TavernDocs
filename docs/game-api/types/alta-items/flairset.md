@@ -1,6 +1,6 @@
 ---
 title: "FlairSet"
-description: "class FlairSet in Root.Township."
+description: "Asset with one set of decorative flairs for a book's pages: spine, spine face and edge face."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FlairSet
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Asset with one set of decorative flairs for a book's pages: spine, spine face and edge face. `FlairSettings` holds the base sets.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `ScriptableObject`
@@ -28,21 +30,21 @@ A **class** in `Root.Township`, `Alta.Pages`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> |
-| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> |
-| <Link id="m-spineflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-edgefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" edgeFaceFlairs"}</code> | Backing field for `EdgeFace`. |
+| <Link id="m-spinefaceflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" spineFaceFlairs"}</code> | Backing field for `SpineFace`. |
+| <Link id="m-spineflairs" /><code>{"private "}<Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" spineFlairs"}</code> | Backing field for `Spine`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-edgeface" /><code><Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> |
-| <Link id="m-spine" /><code><Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> |
-| <Link id="m-spineface" /><code><Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-edgeface" /><code><Link to="/game-api/types/alta-items/edgefaceflairs">{"EdgeFaceFlairs"}</Link>{" EdgeFace { get; }"}</code> | Flairs for the face of the page edge. |
+| <Link id="m-spine" /><code><Link to="/game-api/types/alta-items/spineflairs">{"SpineFlairs"}</Link>{" Spine { get; }"}</code> | Flairs for the spine: top, middle and bottom. |
+| <Link id="m-spineface" /><code><Link to="/game-api/types/alta-items/spinefaceflairs">{"SpineFaceFlairs"}</Link>{" SpineFace { get; }"}</code> | Flairs for the face next to the spine. |
 
 ## Used in
 

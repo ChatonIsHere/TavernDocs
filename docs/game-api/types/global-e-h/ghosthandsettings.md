@@ -1,6 +1,6 @@
 ---
 title: "GhostHandSettings"
-description: "class GhostHandSettings in Root.Township."
+description: "Settings asset for ghost hands: whether they fade and how alpha changes with distance from the real hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GhostHandSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Settings asset for ghost hands: whether they fade and how alpha changes with distance from the real hand.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `ScriptableObject`
@@ -28,19 +30,19 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> |
-| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alphabydistance" /><code>{"private AnimationCurve alphaByDistance"}</code> | Backing field for `AlphaByDistance`. |
+| <Link id="m-isfadingalpha" /><code>{"private bool isFadingAlpha"}</code> | Backing field for `IsFadingAlpha`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> |
-| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alphabydistance-2" /><code>{"AnimationCurve AlphaByDistance { get; }"}</code> | Curve from distance to ghost hand alpha. |
+| <Link id="m-isfadingalpha-2" /><code>{"bool IsFadingAlpha { get; }"}</code> | Whether ghost hand alpha updates with distance. `CharacterIKController` restores this after showing hands fully. |
 
 ## Used in
 

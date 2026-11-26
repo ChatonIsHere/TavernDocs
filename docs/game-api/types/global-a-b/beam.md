@@ -43,9 +43,9 @@ One light beam cast from an `ILightEmitter`, tracking which `ILightDetector` it 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-drawray" /><code>{"private void DrawRay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-drawray" /><code>{"private void DrawRay()"}</code> | Debug-draws the beam: white for no hit, blue for hitting a collider, green for hitting a light detector. |
 
 </details>
 

@@ -29,23 +29,23 @@ Generated Unity Input System wrapper for the fly cam (spectator camera) controls
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-m-playing" /><code>{"private readonly InputActionMap m_Playing"}</code> |
-| <Link id="m-m-playing-changesenses" /><code>{"private readonly InputAction m_Playing_ChangeSenses"}</code> |
-| <Link id="m-m-playing-decreasesensitivity" /><code>{"private readonly InputAction m_Playing_DecreaseSensitivity"}</code> |
-| <Link id="m-m-playing-elevation" /><code>{"private readonly InputAction m_Playing_Elevation"}</code> |
-| <Link id="m-m-playing-explosionmodifier" /><code>{"private readonly InputAction m_Playing_ExplosionModifier"}</code> |
-| <Link id="m-m-playing-increasesensitivity" /><code>{"private readonly InputAction m_Playing_IncreaseSensitivity"}</code> |
-| <Link id="m-m-playing-look" /><code>{"private readonly InputAction m_Playing_Look"}</code> |
-| <Link id="m-m-playing-modsmuteaction" /><code>{"private readonly InputAction m_Playing_ModsMuteAction"}</code> |
-| <Link id="m-m-playing-motion" /><code>{"private readonly InputAction m_Playing_Motion"}</code> |
-| <Link id="m-m-playing-muteselfaction" /><code>{"private readonly InputAction m_Playing_MuteSelfAction"}</code> |
-| <Link id="m-m-playing-shownames" /><code>{"private readonly InputAction m_Playing_ShowNames"}</code> |
-| <Link id="m-m-playing-speeddirection" /><code>{"private readonly InputAction m_Playing_SpeedDirection"}</code> |
-| <Link id="m-m-playing-togglecinematicmovement" /><code>{"private readonly InputAction m_Playing_ToggleCinematicMovement"}</code> |
-| <Link id="m-m-playing-togglecursor" /><code>{"private readonly InputAction m_Playing_ToggleCursor"}</code> |
-| <Link id="m-m-playingactionscallbackinterface" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput-iplayingactions">{"FlyCamInput.IPlayingActions"}</Link>{" m_PlayingActionsCallbackInterface"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-m-playing" /><code>{"private readonly InputActionMap m_Playing"}</code> | The Playing action map. |
+| <Link id="m-m-playing-changesenses" /><code>{"private readonly InputAction m_Playing_ChangeSenses"}</code> | Change senses action (semicolon, gamepad d-pad down). |
+| <Link id="m-m-playing-decreasesensitivity" /><code>{"private readonly InputAction m_Playing_DecreaseSensitivity"}</code> | Lower sensitivity action (gamepad d-pad left). |
+| <Link id="m-m-playing-elevation" /><code>{"private readonly InputAction m_Playing_Elevation"}</code> | Up and down action (Q and E, gamepad shoulders). |
+| <Link id="m-m-playing-explosionmodifier" /><code>{"private readonly InputAction m_Playing_ExplosionModifier"}</code> | Explosion modifier action (Ctrl). |
+| <Link id="m-m-playing-increasesensitivity" /><code>{"private readonly InputAction m_Playing_IncreaseSensitivity"}</code> | Raise sensitivity action (gamepad d-pad right). |
+| <Link id="m-m-playing-look" /><code>{"private readonly InputAction m_Playing_Look"}</code> | Look action (mouse delta, gamepad right stick). |
+| <Link id="m-m-playing-modsmuteaction" /><code>{"private readonly InputAction m_Playing_ModsMuteAction"}</code> | Mods mute action (Shift+M). |
+| <Link id="m-m-playing-motion" /><code>{"private readonly InputAction m_Playing_Motion"}</code> | Move action (WASD, gamepad left stick). |
+| <Link id="m-m-playing-muteselfaction" /><code>{"private readonly InputAction m_Playing_MuteSelfAction"}</code> | Mute self action (M). |
+| <Link id="m-m-playing-shownames" /><code>{"private readonly InputAction m_Playing_ShowNames"}</code> | Show names action (N). |
+| <Link id="m-m-playing-speeddirection" /><code>{"private readonly InputAction m_Playing_SpeedDirection"}</code> | Speed up or down action (Shift and Ctrl, gamepad stick presses). |
+| <Link id="m-m-playing-togglecinematicmovement" /><code>{"private readonly InputAction m_Playing_ToggleCinematicMovement"}</code> | Toggle cinematic movement action (gamepad d-pad up). |
+| <Link id="m-m-playing-togglecursor" /><code>{"private readonly InputAction m_Playing_ToggleCursor"}</code> | Toggle cursor action (Backspace). |
+| <Link id="m-m-playingactionscallbackinterface" /><code>{"private "}<Link to="/game-api/types/global-e-h/flycaminput-iplayingactions">{"FlyCamInput.IPlayingActions"}</Link>{" m_PlayingActionsCallbackInterface"}</code> | Callback object currently hooked to the Playing actions. |
 
 </details>
 

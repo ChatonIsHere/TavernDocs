@@ -1,6 +1,6 @@
 ---
 title: "CookingLiquidVisual.BoilingParticlesStageSetting"
-description: "struct CookingLiquidVisual.BoilingParticlesStageSetting in Root.Township."
+description: "Boiling particle settings for one boil stage of a cooking liquid's surface visual."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Cooking`.
 
+Boiling particle settings for one boil stage of a cooking liquid's surface visual. `CookingLiquidVisual` keeps an array of them, at least one.
+
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`CookingLiquidVisual`](/game-api/types/alta-crafting/cookingliquidvisual)
 
@@ -20,19 +22,19 @@ A **struct** in `Root.Township`, `Alta.Cooking`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> |
-| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heightoffset" /><code>{"private float heightOffset"}</code> | Backing field for `HeightOffset`. |
+| <Link id="m-lifetime" /><code>{"private float lifetime"}</code> | Backing field for `Lifetime`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> |
-| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heightoffset-2" /><code>{"float HeightOffset { get; }"}</code> | How far above the liquid surface the boiling particles start at this stage. |
+| <Link id="m-lifetime-2" /><code>{"float Lifetime { get; }"}</code> | Particle lifetime at this boiling stage. |
 
 ## Used in
 

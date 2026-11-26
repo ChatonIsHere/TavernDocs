@@ -1,6 +1,6 @@
 ---
 title: "DelayedImpactResolver.ImpactDetectorHit"
-description: "struct DelayedImpactResolver.ImpactDetectorHit in Root.Township."
+description: "One collision between an impact tool and an impact detector, stored by DelayedImpactResolver.Hit so all of a tool's hits in a frame can be compared in late..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DelayedImpactResolver.ImpactDetectorHit
 
 A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+One collision between an impact tool and an impact detector, stored by `DelayedImpactResolver.Hit` so all of a tool's hits in a frame can be compared in late update.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`DelayedImpactResolver`](/game-api/types/alta-items/delayedimpactresolver)
@@ -27,20 +29,20 @@ A **private struct** in `Root.Township`, `Alta.Impact`. Reach it through att-stu
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-contactstructures" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] contactStructures"}</code> |
-| <Link id="m-impactdetector" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> |
-| <Link id="m-impacttool" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> |
-| <Link id="m-relativevelocity" /><code>{"private readonly Vector3 relativeVelocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-contactstructures" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/contactpointstructure">{"ContactPointStructure"}</Link>{"[] contactStructures"}</code> | Contact points of the collision, copied when the hit was stored. |
+| <Link id="m-impactdetector" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" impactDetector"}</code> | The detector that was hit. |
+| <Link id="m-impacttool" /><code>{"private readonly "}<Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" impactTool"}</code> | The tool that made the hit. |
+| <Link id="m-relativevelocity" /><code>{"private readonly Vector3 relativeVelocity"}</code> | Relative velocity of the collision. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-process" /><code>{"bool Process(ref "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-process" /><code>{"bool Process(ref "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> | Generates a hit for each contact point (letting collider modifiers block or change it) and keeps the most effective one in `bestHit`. True if this collision gave the new best. |
 
 ## Used in
 

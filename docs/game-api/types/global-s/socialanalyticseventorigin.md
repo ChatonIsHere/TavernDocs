@@ -1,6 +1,6 @@
 ---
 title: "SocialAnalyticsEventOrigin"
-description: "enum SocialAnalyticsEventOrigin in Root.Township."
+description: "Where a social analytics event came from: the main menu, the social tablet or a friend request token."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SocialAnalyticsEventOrigin
 
 An **enum** in `Root.Township`, no namespace.
+
+Where a social analytics event came from: the main menu, the social tablet or a friend request token.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

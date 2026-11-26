@@ -47,9 +47,9 @@ Static shortcuts for spawning network prefabs on the server, placing them in a c
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-spawndockedpickup" /><code>{"private static bool SpawnDockedPickup("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int count, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" fallbackChunk, Action<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> preDockModify)"}</code> |
-| <Link id="m-spawnpouch" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPouch("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, int count, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, Vector3 position, Quaternion rotation = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawndockedpickup" /><code>{"private static bool SpawnDockedPickup("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, int count, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" fallbackChunk, Action<"}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"> preDockModify)"}</code> | Docks a freshly spawned pickup into a dock. If that fails, it drops the pickup at the dock in the fallback (or dock's) chunk, or destroys it. |
+| <Link id="m-spawnpouch" /><code>{"private static "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" SpawnPouch("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item, int count, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, Vector3 position, Quaternion rotation = null)"}</code> | Spawns a pouch at a position (random yaw by default) and fills it with a stack of the item; destroys the pouch if docking fails. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "InventoryType"
-description: "enum InventoryType in Root.Township."
+description: "Whether an inventory change in the pickup event stream log was in a world dock or a dock the player owns."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InventoryType
 
 An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+Whether an inventory change in the pickup event stream log was in a world dock or a dock the player owns.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

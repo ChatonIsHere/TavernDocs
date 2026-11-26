@@ -30,10 +30,10 @@ A ScriptableObject holding one wind speed and strength pair, used by the grass a
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> |
-| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-windspeed" /><code>{"private float windSpeed"}</code> | Backing field for `WindSpeed`. |
+| <Link id="m-windstrength" /><code>{"private float windStrength"}</code> | Backing field for `WindStrength`. |
 
 </details>
 

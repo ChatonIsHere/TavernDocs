@@ -1,6 +1,6 @@
 ---
 title: "ClickedEventHandler"
-description: "delegate ClickedEventHandler in Root.Township."
+description: "Callback for when a controller action starts, given the PlayerInput it came from."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClickedEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for when a controller action starts, given the `PlayerInput` it came from.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

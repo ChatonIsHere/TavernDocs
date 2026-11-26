@@ -1,6 +1,6 @@
 ---
 title: "AccountLinkData"
-description: "class AccountLinkData in Alta.Api.DataTransferModels."
+description: "Platform account details sent when registering an Oculus or Pico user, so the new Alta account is linked to it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Platform account details sent when registering an Oculus or Pico user, so the new Alta account is linked to it.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> |
-| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-userproof" /><code>{"string UserProof { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> | The platform account ID. |
+| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> | Global or China. |
+| <Link id="m-userproof" /><code>{"string UserProof { get; set; }"}</code> | Proof from the platform that the user owns that account. |
 
 ## Used in
 

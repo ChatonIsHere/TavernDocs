@@ -29,11 +29,11 @@ Customization arguments holding a primary and secondary cosmetic colour for a co
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-primary" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" primary"}</code> |
-| <Link id="m-secondary" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" secondary"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger. Logs null colours when writing or reading. |
+| <Link id="m-primary" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" primary"}</code> | Backing field for `Primary`. Falls back to colour hash 2780 if read as null. |
+| <Link id="m-secondary" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" secondary"}</code> | Backing field for `Secondary`. Falls back to colour hash 2724 if read as null. |
 
 </details>
 

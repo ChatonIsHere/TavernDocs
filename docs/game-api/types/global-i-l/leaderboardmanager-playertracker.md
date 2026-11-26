@@ -1,6 +1,6 @@
 ---
 title: "LeaderboardManager.PlayerTracker"
-description: "class LeaderboardManager.PlayerTracker in Root.Township."
+description: "Server side timing state for one player, keyed by user id in LeaderboardManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LeaderboardManager.PlayerTracker
 
 A **class** in `Root.Township`, no namespace.
+
+Server side timing state for one player, keyed by user id in `LeaderboardManager`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`LeaderboardManager`](/game-api/types/global-i-l/leaderboardmanager)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-beginnings" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> Beginnings"}</code> |
-| <Link id="m-besttimes" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> BestTimes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-beginnings" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> Beginnings"}</code> | Start time (seconds since startup) for each leaderboard the player has started but not finished. Cleared on disconnect. |
+| <Link id="m-besttimes" /><code>{"Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", int> BestTimes"}</code> | The player's best time in seconds for each leaderboard this session. |
 
 ## Used in
 

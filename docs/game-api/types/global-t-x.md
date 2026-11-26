@@ -18,17 +18,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TargetBasedSkill`](/game-api/types/global-t-x/targetbasedskill) | abstract class | `PickupBasedSkill` | 5 | Base for charged tool skills that show a target on the struck object and fire when the player hits it, such as `PowerStinger` and `PowerCrossSlash`. The client reports the hit and the server runs the skill. |
 | [`TaskCompletedEvent`](/game-api/types/global-t-x/taskcompletedevent) | class | `MonoBehaviour`, `IAchievementItem` | 1 |  |
 | [`TaskLock`](/game-api/types/global-t-x/tasklock) | class |  | 3 |  |
-| [`TaskYield`](/game-api/types/global-t-x/taskyield) | class | `CustomYieldInstruction` | 3 |  |
+| [`TaskYield`](/game-api/types/global-t-x/taskyield) | class | `CustomYieldInstruction` | 3 | Lets a Unity coroutine wait for a `Task`: yield one and the coroutine resumes when the task finishes. |
 | [`TeleportationPoint`](/game-api/types/global-t-x/teleportationpoint) | class | `CustomTeleportation`, `ISavable<TeleportationPointSaveData>`, `ISavableSave<TeleportationPointSaveData>`, +1 more | 7 |  |
 | [`TeleportationPointSaveData`](/game-api/types/global-t-x/teleportationpointsavedata) | class | `NewSaveData<TeleportationPoint, TeleportationPointSaveData>` | 2 |  |
 | [`TeleportAwareTriggerExample`](/game-api/types/global-t-x/teleportawaretriggerexample) | abstract class | `MonoBehaviour`, `ITeleportAwareTrigger` | 2 |  |
-| [`TeleportDefinition`](/game-api/types/global-t-x/teleportdefinition) | class | `ScriptableObject` | 5 |  |
+| [`TeleportDefinition`](/game-api/types/global-t-x/teleportdefinition) | class | `ScriptableObject` | 5 | Asset that teleports a player with origin and destination effects, used by climbing tower teleporter nodes. Effects are sent to other clients through a `TeleportDefinitionNetworkMessenger`. |
 | [`TeleportDefinitionNetworkMessenger`](/game-api/types/global-t-x/teleportdefinitionnetworkmessenger) | class | `NetworkEntityBehaviour` | 3 |  |
 | [`Teleporter`](/game-api/types/global-t-x/teleporter) | class | `ControllerExtension` | 5 | Hand controller extension for pointer teleporting: shows the pointer while the teleport action is held and moves the player there on release. Local player only, and not in auto cam mode. |
 | [`TeleporterBlock`](/game-api/types/global-t-x/teleporterblock) | static class |  | 3 |  |
 | [`TeleporterPlatform`](/game-api/types/global-t-x/teleporterplatform) | class | `NetworkEntityBehaviour` | 2 |  |
-| [`TeleporterTrailLerper`](/game-api/types/global-t-x/teleportertraillerper) | class | `MonoBehaviour` | 5 |  |
-| [`TeleportPointElement`](/game-api/types/global-t-x/teleportpointelement) | class | `ListElementWithButton` | 3 |  |
+| [`TeleporterTrailLerper`](/game-api/types/global-t-x/teleportertraillerper) | class | `MonoBehaviour` | 5 | Client effect: a pooled trail that follows a player when they teleport or stream-move. Taken from a pool by `PlayerSpecialEffectsController`. |
+| [`TeleportPointElement`](/game-api/types/global-t-x/teleportpointelement) | class | `ListElementWithButton` | 3 | List entry with a button for one spawn area, used by the feature test gymnasium's teleport point page. |
 | [`TelescopicPickup`](/game-api/types/global-t-x/telescopicpickup) | class | `NetworkEntityBehaviour` | 4 | [Items, interaction and damage](../items/overview.md) |
 | [`TempAbsorber`](/game-api/types/global-t-x/tempabsorber) | class | `PuzzleCondition`, `ILightDetectorTemp` | 2 |  |
 | [`TempDoor`](/game-api/types/global-t-x/tempdoor) | class | `MonoBehaviour` | 0 |  |
@@ -51,7 +51,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TestSpawner.Mode`](/game-api/types/global-t-x/testspawner-mode) | enum |  | 4 |  |
 | [`TestUnitySerializable`](/game-api/types/global-t-x/testunityserializable) | class | `NetworkEntityBehaviour`, `INetworkSerialized` | 3 |  |
 | [`TextBoard`](/game-api/types/global-t-x/textboard) | class | `MonoBehaviour` | 0 |  |
-| [`TextFont`](/game-api/types/global-t-x/textfont) | class | `ScriptableObject` | 4 |  |
+| [`TextFont`](/game-api/types/global-t-x/textfont) | class | `ScriptableObject` | 4 | Asset holding the letter meshes for 3D mesh text (used by `TextRenderer`). Letters are looked up by character code. |
 | [`TextFont.Create`](/game-api/types/global-t-x/textfont-create) | class | `AltaMenuItemBase.Assets.Create.Utility.ScriptableObject<TextFont>` | 0 |  |
 | [`TextFont.TextFontLOD`](/game-api/types/global-t-x/textfont-textfontlod) | class |  | 2 |  |
 | [`TextRenderer`](/game-api/types/global-t-x/textrenderer) | class | `MonoBehaviour`, `IBakeable`, `IBuildRendererBakeable`, +1 more | 29 | Draws 3D text in the world (signs, labels, dock counts) by building a mesh per letter from a `TextFont`. Client side visuals only: on a headless server setting `Text` stores the string but builds nothing. |
@@ -66,7 +66,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ThrowableArrow`](/game-api/types/global-t-x/throwablearrow) | class | `MonoBehaviour` | 0 |  |
 | [`ThrowablePickup`](/game-api/types/global-t-x/throwablepickup) | abstract class | `MonoBehaviour` | 0 | [Items, interaction and damage](../items/overview.md): Base for custom throw behaviour (`ThrowAlignHelper`). |
 | [`ThrowAlignHelper`](/game-api/types/global-t-x/throwalignhelper) | class | `ThrowablePickup` | 0 |  |
-| [`ThumbConfiguration`](/game-api/types/global-t-x/thumbconfiguration) | class | `ScriptableObject` | 2 |  |
+| [`ThumbConfiguration`](/game-api/types/global-t-x/thumbconfiguration) | class | `ScriptableObject` | 2 | Asset that sets how the player's thumb rests and which axis it curls around, per hand. |
 | [`ThumbConfiguration.Create`](/game-api/types/global-t-x/thumbconfiguration-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<ThumbConfiguration>` | 0 |  |
 | [`ThumbPosition`](/game-api/types/global-t-x/thumbposition) | enum |  | 2 |  |
 | [`TickTimer`](/game-api/types/global-t-x/ticktimer) | class |  | 6 |  |
@@ -88,15 +88,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TimerLogicSaveData1`](/game-api/types/global-t-x/timerlogicsavedata1) | class | `OldSaveData` | 3 |  |
 | [`TimeScroller`](/game-api/types/global-t-x/timescroller) | class | `MonoBehaviour` | 0 |  |
 | [`TimeTracker`](/game-api/types/global-t-x/timetracker) | class |  | 0 |  |
-| [`ToggleBool`](/game-api/types/global-t-x/togglebool) | class |  | 7 |  |
+| [`ToggleBool`](/game-api/types/global-t-x/togglebool) | class |  | 7 | A named on/off setting that registers itself in a static list so console commands can toggle it by name. Examples: `immortals`, `damagepopup`, `xppopup`. |
 | [`ToggleCameraDepth`](/game-api/types/global-t-x/togglecameradepth) | class | `MonoBehaviour` | 2 |  |
 | [`ToggleChildrenActive`](/game-api/types/global-t-x/togglechildrenactive) | class | `MonoBehaviour` | 1 |  |
-| [`ToggleEvent`](/game-api/types/global-t-x/toggleevent) | class | `AltaEvent<bool, ToggleUnityEvent>` | 0 |  |
+| [`ToggleEvent`](/game-api/types/global-t-x/toggleevent) | class | `AltaEvent<bool, ToggleUnityEvent>` | 0 | Serializable event with a bool argument, shown in the inspector as a `ToggleUnityEvent`. |
 | [`ToggleKinematicLogic`](/game-api/types/global-t-x/togglekinematiclogic) | class | `MonoBehaviour` | 2 |  |
-| [`ToggleUnityEvent`](/game-api/types/global-t-x/toggleunityevent) | class | `UnityEvent<bool>` | 0 |  |
+| [`ToggleUnityEvent`](/game-api/types/global-t-x/toggleunityevent) | class | `UnityEvent<bool>` | 0 | A serializable `UnityEvent` with a bool argument, for wiring toggle callbacks in the inspector. |
 | [`ToolBasedEffect`](/game-api/types/global-t-x/toolbasedeffect) | class | `ToolBasedEffectBase` | 0 |  |
 | [`ToolBasedEffectBase`](/game-api/types/global-t-x/toolbasedeffectbase) | abstract class | `PooledObject` | 3 | Base for pooled skill visuals that copy an object's meshes (skipping docks) and animate a `_Progress` material over them, such as `ToolBasedEffect` and `DissipateToolBasedEffect`. Client side. |
-| [`ToolBasedSkillStatus`](/game-api/types/global-t-x/toolbasedskillstatus) | enum |  | 4 |  |
+| [`ToolBasedSkillStatus`](/game-api/types/global-t-x/toolbasedskillstatus) | enum |  | 4 | Stage of a tool-based skill use: cancelled, charging started, charged or consumed. `SkillInputStructure.PlaySoundAt` picks its default effect from it. |
 | [`TossRandom`](/game-api/types/global-t-x/tossrandom) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`TossTest`](/game-api/types/global-t-x/tosstest) | class | `MonoBehaviour` | 0 |  |
 | [`TouchScreenButtonGrower`](/game-api/types/global-t-x/touchscreenbuttongrower) | class | `MonoBehaviour` | 0 |  |
@@ -119,11 +119,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TransformConflict`](/game-api/types/global-t-x/transformconflict) | class | `MonoBehaviour` | 3 |  |
 | [`TransformDeltaChangeChecker`](/game-api/types/global-t-x/transformdeltachangechecker) | class |  | 4 |  |
 | [`TransformEvent`](/game-api/types/global-t-x/transformevent) | class | `AltaEvent<Transform, TransformHandler>` | 0 | A serialisable `AltaEvent` that passes a `Transform`, for inspector-wired callbacks such as where a skill effect should play. |
-| [`TransformHandler`](/game-api/types/global-t-x/transformhandler) | class | `UnityEvent<Transform>` | 0 |  |
+| [`TransformHandler`](/game-api/types/global-t-x/transformhandler) | class | `UnityEvent<Transform>` | 0 | A serializable `UnityEvent` that passes a `Transform`. |
 | [`TransformMovementContext`](/game-api/types/global-t-x/transformmovementcontext) | class | `IMovementContext`, `IHasMovementContext` | 9 |  |
 | [`TransformProxy`](/game-api/types/global-t-x/transformproxy) | class |  | 6 | A plain position and rotation, for sending a place over the network (for example where to play particles) without a Transform. |
 | [`TransformSaveCollection`](/game-api/types/global-t-x/transformsavecollection) | class | `SaveableTransform` | 6 | Asset that stores saved transforms for a hierarchy by object name and can load them back. Saving is stubbed out in this build: `Save` only empties the list. |
-| [`TransformSaveObject`](/game-api/types/global-t-x/transformsaveobject) | class | `SaveableTransform` | 7 |  |
+| [`TransformSaveObject`](/game-api/types/global-t-x/transformsaveobject) | class | `SaveableTransform` | 7 | Asset that stores one transform's saved position, rotation and name, and can load it back onto a transform. Used in `TransformSaveCollection`. |
 | [`TransformScaledEvent`](/game-api/types/global-t-x/transformscaledevent) | class | `AltaEvent<Transform, float, TransformScaledHandler>` | 0 |  |
 | [`TransformScaledHandler`](/game-api/types/global-t-x/transformscaledhandler) | class | `UnityEvent<Transform, float>` | 0 |  |
 | [`TransformScriptAnimation`](/game-api/types/global-t-x/transformscriptanimation) | abstract class | `MonoBehaviour` | 6 | Base for simple code-driven transform animations that tick through the budgeted update module. By default they don't run on a dedicated server. |
@@ -165,11 +165,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`TypeSerializationHelper.FloatSerialization`](/game-api/types/global-t-x/typeserializationhelper-floatserialization) | class | `TypeSerialization<float>` | 0 |  |
 | [`TypeSerializationHelper.HashedSerialization<T>`](/game-api/types/global-t-x/typeserializationhelper-hashedserialization-t) | class | `TypeSerialization<T>` | 0 |  |
 | [`TypeSerializationHelper.IntSerialization`](/game-api/types/global-t-x/typeserializationhelper-intserialization) | class | `TypeSerialization<int>` | 0 |  |
-| [`TypeSerializationHelper.ITypeSerialization`](/game-api/types/global-t-x/typeserializationhelper-itypeserialization) | interface |  | 3 |  |
+| [`TypeSerializationHelper.ITypeSerialization`](/game-api/types/global-t-x/typeserializationhelper-itypeserialization) | interface |  | 3 | A serializer for one field type, used to build the network sync and save read/write delegates for a class's fields. Got from `TypeSerializationHelper.GetSerialization`. |
 | [`TypeSerializationHelper.LogicManagerSetSerialization`](/game-api/types/global-t-x/typeserializationhelper-logicmanagersetserialization) | class | `TypeSerialization<LogicManagerSet>` | 0 |  |
 | [`TypeSerializationHelper.LogicValueDataSerialization<T>`](/game-api/types/global-t-x/typeserializationhelper-logicvaluedataserialization-t) | class | `TypeSerialization<T>` | 0 |  |
 | [`TypeSerializationHelper.NetworkPrefabSerialization`](/game-api/types/global-t-x/typeserializationhelper-networkprefabserialization) | class | `TypeSerialization<NetworkPrefab>` | 0 |  |
-| [`TypeSerializationHelper.ObjectActivator`](/game-api/types/global-t-x/typeserializationhelper-objectactivator) | delegate |  | 0 |  |
+| [`TypeSerializationHelper.ObjectActivator`](/game-api/types/global-t-x/typeserializationhelper-objectactivator) | delegate |  | 0 | Delegate that creates a new object, compiled per type by `TypeSerializationHelper.GetActivator` as a fast constructor call. |
 | [`TypeSerializationHelper.QuaternionSerialization`](/game-api/types/global-t-x/typeserializationhelper-quaternionserialization) | class | `TypeSerialization<Quaternion>` | 0 |  |
 | [`TypeSerializationHelper.SaveDataSerialization<T>`](/game-api/types/global-t-x/typeserializationhelper-savedataserialization-t) | class | `TypeSerialization<T>` | 2 |  |
 | [`TypeSerializationHelper.StringSerialization`](/game-api/types/global-t-x/typeserializationhelper-stringserialization) | class | `TypeSerialization<string>` | 0 |  |
@@ -186,7 +186,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`UltimateRope`](/game-api/types/global-t-x/ultimaterope) | class | `MonoBehaviour` | 100 | Third-party Ultimate Rope Editor component: builds a physics rope from jointed rigidbody links (procedural mesh, linked objects or imported bones), with optional coil and extension. Runs in edit mode too. |
-| [`UltimateRope.EAxis`](/game-api/types/global-t-x/ultimaterope-eaxis) | enum |  | 6 |  |
+| [`UltimateRope.EAxis`](/game-api/types/global-t-x/ultimaterope-eaxis) | enum |  | 6 | An axis direction (plus or minus X, Y or Z) used by `UltimateRope` for its coil and link axes. |
 | [`UltimateRope.EColliderType`](/game-api/types/global-t-x/ultimaterope-ecollidertype) | enum |  | 3 |  |
 | [`UltimateRope.ERopeExtensionMode`](/game-api/types/global-t-x/ultimaterope-eropeextensionmode) | enum |  | 2 |  |
 | [`UltimateRope.ERopeType`](/game-api/types/global-t-x/ultimaterope-eropetype) | enum |  | 3 |  |
@@ -206,8 +206,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`UpdateGripEachFrame`](/game-api/types/global-t-x/updategripeachframe) | class | `MonoBehaviour` | 0 |  |
 | [`UpdateHandler`](/game-api/types/global-t-x/updatehandler) | delegate |  | 0 | A no-argument callback, used for the IK update events on `CharacterIKController`. |
 | [`UpdateModule`](/game-api/types/global-t-x/updatemodule) | class |  | 9 | [Update modules](../console-and-utilities/update-modules.md#updatemodule): Make one with `new UpdateModule(string name, UpdateSegment segment, bool includeInServerProfiling = false)`; it registers itself. |
-| [`UpdateModuleInfo`](/game-api/types/global-t-x/updatemoduleinfo) | class |  | 4 |  |
-| [`UpdateSegment`](/game-api/types/global-t-x/updatesegment) | enum | `byte` | 3 |  |
+| [`UpdateModuleInfo`](/game-api/types/global-t-x/updatemoduleinfo) | class |  | 4 | Profiling stats for one update module: average update time and number of registered methods. Read from `UnityUpdateManager.AllModuleInfos` by the server profiling data. |
+| [`UpdateSegment`](/game-api/types/global-t-x/updatesegment) | enum | `byte` | 3 | Which Unity loop an `UpdateModule` runs in: `Update`, `LateUpdate` or `FixedUpdate`. |
 | [`UpdateStat`](/game-api/types/global-t-x/updatestat) | delegate |  | 0 |  |
 | [`UserGreeter`](/game-api/types/global-t-x/usergreeter) | class | `LoggedInTool` | 0 |  |
 | [`UserInfoAccess`](/game-api/types/global-t-x/userinfoaccess) | class |  | 8 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
@@ -237,7 +237,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`VirtualKeyboardSetup.Virtual_Keyboard_Setup`](/game-api/types/global-t-x/virtualkeyboardsetup-virtual_keyboard_setup) | class | `AltaMenuItemBase.Assets.Create.ScriptableObject<VirtualKeyboardSetup>` | 0 |  |
 | [`VirtualKeyInfo`](/game-api/types/global-t-x/virtualkeyinfo) | class |  | 7 | Layout data for one key of the in-game touch screen keyboard: where it sits, which row, and which key it types with and without shift. |
 | [`VirtualRealityDeviceLifecycle`](/game-api/types/global-t-x/virtualrealitydevicelifecycle) | abstract class | `DeviceLifecycle` | 3 |  |
-| [`VisibilityDetector`](/game-api/types/global-t-x/visibilitydetector) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 3 |  |
+| [`VisibilityDetector`](/game-api/types/global-t-x/visibilitydetector) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 3 | Raises events when the renderer on the same object becomes visible to or hidden from any camera. Client side; the build bake fails if there is no renderer. |
 | [`VisibilityTimer`](/game-api/types/global-t-x/visibilitytimer) | class | `MonoBehaviour` | 0 |  |
 | [`VisibleNetworkRigidbody`](/game-api/types/global-t-x/visiblenetworkrigidbody) | class | `ComponentGroup<NetworkRigidbody>`, `IUpdateOnMove` | 0 |  |
 | [`VisualChunkQuickAccessMenuAction`](/game-api/types/global-t-x/visualchunkquickaccessmenuaction) | class | `QuickAccessMenuAction` | 4 |  |

@@ -35,26 +35,26 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-boolmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> boolMap"}</code> |
-| <Link id="m-bools" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> bools"}</code> |
-| <Link id="m-floatlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatLerpMap"}</code> |
-| <Link id="m-floatmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floatMap"}</code> |
-| <Link id="m-floats" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floats"}</code> |
-| <Link id="m-floatslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatsLerp"}</code> |
-| <Link id="m-intmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> intMap"}</code> |
-| <Link id="m-ints" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> ints"}</code> |
-| <Link id="m-isawake" /><code>{"private bool isAwake"}</code> |
-| <Link id="m-layerlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layerLerpMap"}</code> |
-| <Link id="m-layermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layerMap"}</code> |
-| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layers"}</code> |
-| <Link id="m-layerslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layersLerp"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> |
-| <Link id="m-triggermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggerMap"}</code> |
-| <Link id="m-triggers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggers"}</code> |
-| <Link id="m-unityanimator" /><code>{"private Animator unityAnimator"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boolmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> boolMap"}</code> | Bool parameters by name, used by `GetBool`. |
+| <Link id="m-bools" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedbool">{"AnimatedBool"}</Link>{"> bools"}</code> | Synced bool parameters, set in the inspector. |
+| <Link id="m-floatlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatLerpMap"}</code> | Lerped float parameters by name, used by `GetFloatLerp`. |
+| <Link id="m-floatmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floatMap"}</code> | Float parameters by name, used by `GetFloat`. |
+| <Link id="m-floats" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloat">{"AnimatedFloat"}</Link>{"> floats"}</code> | Synced float parameters, set in the inspector. |
+| <Link id="m-floatslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedfloatlerp">{"AnimatedFloatLerp"}</Link>{"> floatsLerp"}</code> | Synced float parameters that clients lerp toward, set in the inspector. |
+| <Link id="m-intmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> intMap"}</code> | Int parameters by name, used by `GetInt`. |
+| <Link id="m-ints" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedint">{"AnimatedInt"}</Link>{"> ints"}</code> | Synced int parameters, set in the inspector. |
+| <Link id="m-isawake" /><code>{"private bool isAwake"}</code> | Set once `EnsureAwake` has built the maps. |
+| <Link id="m-layerlerpmap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layerLerpMap"}</code> | Lerped layer weights by name, used by `GetLayerWeightLerp`. |
+| <Link id="m-layermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layerMap"}</code> | Layer weights by name, used by `GetLayerWeight`. |
+| <Link id="m-layers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweight">{"AnimatedLayerWeight"}</Link>{"> layers"}</code> | Synced layer weights, set in the inspector. |
+| <Link id="m-layerslerp" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedlayerweightlerp">{"AnimatedLayerWeightLerp"}</Link>{"> layersLerp"}</code> | Synced layer weights that clients lerp toward, set in the inspector. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger, used for missing parameter errors. |
+| <Link id="m-syncstart" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStart"}</code> | Method sync made in `Initialize` that sends the animator state to a player on connect. |
+| <Link id="m-triggermap" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggerMap"}</code> | Trigger parameters by name, used by `GetTrigger`. |
+| <Link id="m-triggers" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/animatedtrigger">{"AnimatedTrigger"}</Link>{"> triggers"}</code> | Synced trigger parameters, set in the inspector. |
+| <Link id="m-unityanimator" /><code>{"private Animator unityAnimator"}</code> | Backing field for `Animator`, the Unity Animator on this object. |
 
 </details>
 
@@ -68,11 +68,11 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 <details>
 <summary>3 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> | Caps this behaviour's serialized data at 512 bits. |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | Returns the shared `prepareForWriteTimer` profiling counter. |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | Returns the shared `serializeTimer` profiling counter. |
 
 </details>
 
@@ -96,15 +96,15 @@ Syncs chosen Animator parameters (floats, ints, bools, triggers, layer weights) 
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-logmissingparameter" /><code>{"private void LogMissingParameter(string parameterType, string parameterName)"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> |
-| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> |
-| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Calls `EnsureAwake` to build the parameter maps. |
+| <Link id="m-logmissingparameter" /><code>{"private void LogMissingParameter(string parameterType, string parameterName)"}</code> | Logs an error when a configured parameter isn't on the Animator. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build bake hook: initialises every configured parameter against the Animator, logging missing ones. |
+| <Link id="m-prepareforwrite" /><code>{"private bool Alta.Networking.INetworkSerialized.PrepareForWrite(bool isWriteFull)"}</code> | Returns `HasChanged`, so the animator only writes when a parameter changed. |
+| <Link id="m-serialize" /><code>{"private void Alta.Networking.INetworkSerialized.Serialize("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isWriteFull)"}</code> | Writes or reads floats, layers, ints and lerped values, then bools and triggers behind an any-set flag. |
+| <Link id="m-syncstart-2" /><code>{"private void SyncStart("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Method sync: sends each layer's current state hash and normalized time so a joining client plays the same state. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Steps every lerped float and lerped layer weight toward its target. |
 
 </details>
 

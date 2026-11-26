@@ -1,6 +1,6 @@
 ---
 title: "LiquidContainerHandler"
-description: "delegate LiquidContainerHandler in Root.Township."
+description: "Handler for ILiquidContainer.TotalAmountShownChanged: gets the container."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidContainerHandler
 
 A **delegate** in `Root.Township`, `Alta.Liquid`.
+
+Handler for `ILiquidContainer.TotalAmountShownChanged`: gets the container.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

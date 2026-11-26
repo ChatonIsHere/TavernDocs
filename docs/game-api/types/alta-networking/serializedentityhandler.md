@@ -1,6 +1,6 @@
 ---
 title: "SerializedEntityHandler"
-description: "delegate SerializedEntityHandler in Root.Township."
+description: "Handler for the EntitySerializer.WroteEntity and ReadEntity events, given the serializer, the entity and its raw serialized bits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializedEntityHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Handler for the `EntitySerializer.WroteEntity` and `ReadEntity` events, given the serializer, the entity and its raw serialized bits.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

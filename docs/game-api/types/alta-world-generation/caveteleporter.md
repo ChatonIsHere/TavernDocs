@@ -35,16 +35,16 @@ A fuelled teleporter in the caves that sends a player to another layer (the surf
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-costrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" costRenderer"}</code> |
-| <Link id="m-fueldock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fuelDock"}</code> |
-| <Link id="m-handtrigger" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" handTrigger"}</code> |
-| <Link id="m-isvalidteleport" /><code>{"private bool isValidTeleport"}</code> |
-| <Link id="m-isvalidteleportchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" IsValidTeleportChanged"}</code> |
-| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> |
-| <Link id="m-teleporting" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> teleporting"}</code> |
-| <Link id="m-teleporttotarget" /><code>{"private Transform teleportToTarget"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-costrenderer" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" costRenderer"}</code> | Text showing the fuel cost to teleport from here. Not set on a headless server. |
+| <Link id="m-fueldock" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" fuelDock"}</code> | Dock holding the teleporter's fuel. Optional; without it teleporting costs nothing here. |
+| <Link id="m-handtrigger" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" handTrigger"}</code> | The interactable players touch to teleport. |
+| <Link id="m-isvalidteleport" /><code>{"private bool isValidTeleport"}</code> | Whether the current connection is usable. |
+| <Link id="m-isvalidteleportchanged" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolevent">{"BoolEvent"}</Link>{" IsValidTeleportChanged"}</code> | Inspector event raised with true or false when the connection becomes usable or not. |
+| <Link id="m-synclayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLayer"}</code> | Method sync that sends the layer to clients. |
+| <Link id="m-teleporting" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> teleporting"}</code> | Players whose teleport is in progress, so a second touch does nothing. |
+| <Link id="m-teleporttotarget" /><code>{"private Transform teleportToTarget"}</code> | Transform marking where players arrive when teleporting to this teleporter's layer. |
 
 </details>
 
@@ -79,15 +79,15 @@ A fuelled teleporter in the caves that sends a player to another layer (the surf
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-allowinteract" /><code>{"private void AllowInteract("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-connectionvalidchanged" /><code>{"private void ConnectionValidChanged(bool isValid)"}</code> |
-| <Link id="m-handfilter" /><code>{"private void HandFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> |
-| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> |
-| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updatelayer" /><code>{"private void UpdateLayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allowinteract" /><code>{"private void AllowInteract("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Lets the player use the teleporter again once their teleport has finished. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the fuel dock's quantity change to this teleporter's `QuantityChanged` event. |
+| <Link id="m-connectionvalidchanged" /><code>{"private void ConnectionValidChanged(bool isValid)"}</code> | Updates whether the teleport is usable and raises `IsValidTeleportChanged` when that changes. |
+| <Link id="m-handfilter" /><code>{"private void HandFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, ref bool result)"}</code> | Interaction filter on the hand trigger: blocks use while there is no valid connection. |
+| <Link id="m-onquantitychanged" /><code>{"private void OnQuantityChanged()"}</code> | Raises `QuantityChanged` when the fuel dock's amount changes. |
+| <Link id="m-synclayer-2" /><code>{"private void SyncLayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Network sync of the teleporter's layer. Clients set up their connection once they receive it. |
+| <Link id="m-updatelayer" /><code>{"private void UpdateLayer()"}</code> | Server: works out the layer from the chunk's `CaveLayerStreamer` if unset (0 if none), registers with `CaveTeleporterManager` and syncs the layer. |
 
 </details>
 

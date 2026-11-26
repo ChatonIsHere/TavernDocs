@@ -1,6 +1,6 @@
 ---
 title: "UIButtonType"
-description: "enum UIButtonType in Root.Township."
+description: "Style of a meta UI button: normal, or bad (probably for destructive or negative actions)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UIButtonType
 
 An **enum** in `Root.Township`, `Alta.Meta.UI`.
+
+Style of a meta UI button: normal, or bad (probably for destructive or negative actions).
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

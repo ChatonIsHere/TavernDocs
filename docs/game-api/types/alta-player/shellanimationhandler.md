@@ -31,10 +31,10 @@ One request to show a shell effect on a player through `StatEffectShellAnimator`
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-player/stateffectshellanimator">{"StatEffectShellAnimator"}</Link>{" animator"}</code> |
-| <Link id="m-setting" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" setting"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-player/stateffectshellanimator">{"StatEffectShellAnimator"}</Link>{" animator"}</code> | The shell animator whose material this handler sets. |
+| <Link id="m-setting" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" setting"}</code> | The shell setting applied to the animator's material by `SetMaterial`. |
 
 </details>
 

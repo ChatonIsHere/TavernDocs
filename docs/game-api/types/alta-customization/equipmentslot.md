@@ -1,6 +1,6 @@
 ---
 title: "EquipmentSlot"
-description: "enum EquipmentSlot in Root.Township."
+description: "Body slots armour can go in: head, shoulders, arms, chest and tassets."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EquipmentSlot
 
 An **enum** in `Root.Township`, `Alta.Customization`.
+
+Body slots armour can go in: head, shoulders, arms, chest and tassets. Used as the slot key by `PlayerArmorManager`.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Derived types** [`PlayerArmorManager`](/game-api/types/alta-customization/playerarmormanager)

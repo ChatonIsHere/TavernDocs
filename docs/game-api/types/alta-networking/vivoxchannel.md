@@ -1,6 +1,6 @@
 ---
 title: "VivoxChannel"
-description: "class VivoxChannel in Root.Township."
+description: "Settings for one Vivox voice or text channel; VivoxManager makes one for the server and VivoxSession joins it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Voice`.
 
+Settings for one Vivox voice or text channel; `VivoxManager` makes one for the server and `VivoxSession` joins it. Client side.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Root.Township`, `Alta.Voice`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"ChannelId Id { get; }"}</code> |
-| <Link id="m-istextenabled" /><code>{"bool IsTextEnabled { get; }"}</code> |
-| <Link id="m-isvoiceenabled" /><code>{"bool IsVoiceEnabled { get; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"ChannelId Id { get; }"}</code> | The Vivox channel ID built from the configured issuer and domain; positional when voice is on, non-positional otherwise. |
+| <Link id="m-istextenabled" /><code>{"bool IsTextEnabled { get; }"}</code> | Whether the channel carries text chat. |
+| <Link id="m-isvoiceenabled" /><code>{"bool IsVoiceEnabled { get; }"}</code> | Whether the channel carries voice. Voice channels are created as positional (3D) channels. |
+| <Link id="m-name" /><code>{"string Name { get; }"}</code> | The channel name used to build the Vivox ID. |
 
 ## Used in
 

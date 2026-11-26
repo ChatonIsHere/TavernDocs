@@ -1,6 +1,6 @@
 ---
 title: "EffectHandler.EffectOverTimeData"
-description: "class EffectHandler.EffectOverTimeData in Root.Township."
+description: "One queued effect-over-time entry on an EffectHandler: total strength, duration in seconds and the callback that applies each tick."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EffectHandler.EffectOverTimeData
 
 A **class** in `Root.Township`, `Alta.Alchemy`.
+
+One queued effect-over-time entry on an `EffectHandler`: total strength, duration in seconds and the callback that applies each tick.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`EffectHandler`](/game-api/types/alta-stats-effects/effecthandler)
@@ -26,28 +28,28 @@ A **class** in `Root.Township`, `Alta.Alchemy`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectDefinition"}</code> |
-| <Link id="m-handleupdate" /><code>{"private Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectDefinition"}</code> | The effect this entry changes. |
+| <Link id="m-handleupdate" /><code>{"private Action<"}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{", float> handleUpdate"}</code> | Callback that applies one tick. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-duration" /><code>{"int Duration { get; private set; }"}</code> |
-| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-duration" /><code>{"int Duration { get; private set; }"}</code> | Number of one-second ticks. Strength is split evenly across them. |
+| <Link id="m-strength" /><code>{"float Strength { get; private set; }"}</code> | Total amount applied over the whole duration. |
 
 ## Methods
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleupdate-2" /><code>{"internal void HandleUpdate("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" effectHandler, float healthPerTime)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleupdate-2" /><code>{"internal void HandleUpdate("}<Link to="/game-api/types/alta-stats-effects/effecthandler">{"EffectHandler"}</Link>{" effectHandler, float healthPerTime)"}</code> | Runs the callback for one tick with the handler, the effect and that tick's share of strength. |
 
 </details>
 

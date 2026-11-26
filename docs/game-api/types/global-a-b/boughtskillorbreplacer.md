@@ -28,16 +28,16 @@ The orb for a skill a player already owns on the progression board. Pulling it a
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-boughtskillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/boughtskillvisualizer">{"BoughtSkillVisualizer"}</Link>{" boughtSkillVisualizer"}</code> |
-| <Link id="m-fixedjoint" /><code>{"private FixedJoint fixedJoint"}</code> |
-| <Link id="m-hapticoverduration" /><code>{"private AnimationCurve hapticOverDuration"}</code> |
-| <Link id="m-hasvisualizer" /><code>{"private bool hasVisualizer"}</code> |
-| <Link id="m-mindistancetobreak" /><code>{"private float minDistanceToBreak"}</code> |
-| <Link id="m-syncdependencylock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDependencyLock"}</code> |
-| <Link id="m-timetobreak" /><code>{"private float timeToBreak"}</code> |
-| <Link id="m-visualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" visualizer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boughtskillvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/boughtskillvisualizer">{"BoughtSkillVisualizer"}</Link>{" boughtSkillVisualizer"}</code> | The skill visualizer this orb is anchored to. Used for the locked effect and to block grabs while it is in use. |
+| <Link id="m-fixedjoint" /><code>{"private FixedJoint fixedJoint"}</code> | Joint holding the orb to the visualizer's anchor body. Added on first anchor. |
+| <Link id="m-hapticoverduration" /><code>{"private AnimationCurve hapticOverDuration"}</code> | Haptic strength over the pull-out progress. |
+| <Link id="m-hasvisualizer" /><code>{"private bool hasVisualizer"}</code> | Whether an experience fill visualizer was given. |
+| <Link id="m-mindistancetobreak" /><code>{"private float minDistanceToBreak"}</code> | Squared distance the hand must pull from the start point before progress counts. |
+| <Link id="m-syncdependencylock" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDependencyLock"}</code> | Message used to send `IsLockedByDependencies` to clients. |
+| <Link id="m-timetobreak" /><code>{"private float timeToBreak"}</code> | Seconds the orb must be held pulled out before it operates. |
+| <Link id="m-visualizer" /><code>{"private "}<Link to="/game-api/types/global-e-h/experiencefillvisualizer">{"ExperienceFillVisualizer"}</Link>{" visualizer"}</code> | Fill visualizer showing the sell progress. |
 
 </details>
 
@@ -65,10 +65,10 @@ The orb for a skill a player already owns on the progression board. Pulling it a
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-syncdependencylock-2" /><code>{"private void SyncDependencyLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLockedByDependencies)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Client: plays the orb destroy effect when the entity is destroyed other than by unload. |
+| <Link id="m-syncdependencylock-2" /><code>{"private void SyncDependencyLock("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isLockedByDependencies)"}</code> | Receives the dependency lock state from the server and stores it in `IsLockedByDependencies`. |
 
 </details>
 

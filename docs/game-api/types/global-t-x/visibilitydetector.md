@@ -1,6 +1,6 @@
 ---
 title: "VisibilityDetector"
-description: "class VisibilityDetector in Root.Township."
+description: "Raises events when the renderer on the same object becomes visible to or hidden from any camera."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VisibilityDetector
 
 A **class** in `Root.Township`, no namespace.
+
+Raises events when the renderer on the same object becomes visible to or hidden from any camera. Client side; the build bake fails if there is no renderer.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`, [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake), [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable)
@@ -26,36 +28,36 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> |
-| <Link id="m-becamevisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-becameinvisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameInvisible"}</code> | Serialized event behind `BecameInvisible`. |
+| <Link id="m-becamevisible" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" becameVisible"}</code> | Serialized event behind `BecameVisible`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvisible" /><code>{"bool IsVisible { get; private set; }"}</code> | Whether the renderer is currently seen by a camera. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> |
-| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-becameinvisible-2" /><code>{"event Action BecameInvisible"}</code> | Raised when the renderer is no longer seen by any camera. |
+| <Link id="m-becamevisible-2" /><code>{"event Action BecameVisible"}</code> | Raised when the renderer is first seen by a camera. |
 
 ## Methods
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> |
-| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onbecameinvisible" /><code>{"private void OnBecameInvisible()"}</code> | Unity callback; clears `IsVisible` and raises `BecameInvisible`. |
+| <Link id="m-onbecamevisible" /><code>{"private void OnBecameVisible()"}</code> | Unity callback; sets `IsVisible` and raises `BecameVisible`. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: throws if the object has no `Renderer`, naming the root object. |
 
 </details>
 

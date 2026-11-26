@@ -1,6 +1,6 @@
 ---
 title: "ElbowDataPointSet"
-description: "class ElbowDataPointSet in Root.Township."
+description: "A ScriptableObject holding a list of elbow guide data points, used to place the player's elbows for given hand poses (see ElbowController)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ElbowDataPointSet
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+A ScriptableObject holding a list of elbow guide data points, used to place the player's elbows for given hand poses (see `ElbowController`).
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -26,24 +28,24 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-elbowdatapoints" /><code>{"private List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> elbowDataPoints"}</code> | Backing field for `DataPoints`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-datapoints" /><code>{"List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> |
-| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-datapoints" /><code>{"List<"}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{"> DataPoints { get; }"}</code> | The data point assets in the set. |
+| <Link id="m-numberofdatapoints" /><code>{"int NumberOfDataPoints { get; set; }"}</code> | A plain settable count; nothing in this class keeps it in step with the list. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deletedatapoint" /><code>{"void DeleteDataPoint("}<Link to="/game-api/types/alta-player/elbowguidedatapoint">{"ElbowGuideDataPoint"}</Link>{" dataPoint)"}</code> | Removes a data point from the set and destroys its asset. Editor tooling. |
 
 ## Used in
 

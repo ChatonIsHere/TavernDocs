@@ -1,6 +1,6 @@
 ---
 title: "LockableEvent"
-description: "class LockableEvent in Root.Township."
+description: "A serializable AltaEvent that passes a LockableHinge, used for lock and chest thump events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LockableEvent
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A serializable `AltaEvent` that passes a `LockableHinge`, used for lock and chest thump events.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`AltaEvent<LockableHinge, LockableUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

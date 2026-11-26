@@ -30,10 +30,10 @@ A hashed asset for a map landmark icon.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |
-| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | Backing field for `Scale`, the icon's size on the map (1 by default). |
+| <Link id="m-sprite" /><code>{"private Sprite sprite"}</code> | Backing field for `Sprite`, the image shown for the landmark. |
 
 </details>
 

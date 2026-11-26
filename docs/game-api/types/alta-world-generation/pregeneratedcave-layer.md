@@ -1,6 +1,6 @@
 ---
 title: "PregeneratedCave.Layer"
-description: "class PregeneratedCave.Layer in Root.Township."
+description: "One layer of a pregenerated cave asset: its baked mesh."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PregeneratedCave.Layer
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+One layer of a pregenerated cave asset: its baked mesh.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`PregeneratedCave`](/game-api/types/alta-world-generation/pregeneratedcave)
@@ -23,9 +25,9 @@ A **class** in `Root.Township`, `Alta.Caves`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mesh" /><code>{"Mesh mesh"}</code> | The cave mesh for this layer. |
 
 ## Used in
 

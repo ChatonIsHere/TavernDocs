@@ -29,9 +29,9 @@ Base VR player controller for players that move with thumbstick (smooth) locomot
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-smoothlocomotion" /><code>{"private "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" smoothLocomotion"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-smoothlocomotion" /><code>{"private "}<Link to="/game-api/types/global-s/smoothlocomotion">{"SmoothLocomotion"}</Link>{" smoothLocomotion"}</code> | Backing field for `SmoothLocomotion`, the component that moves the player with the stick. |
 
 </details>
 

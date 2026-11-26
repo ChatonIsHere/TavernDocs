@@ -42,10 +42,10 @@ Client: the shell animator for stat effect shields around a player. Several shie
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationqueue" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueue-t">{"FastPriorityQueue"}</Link>{"<"}<Link to="/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode">{"StatEffectShellAnimator.ShellAnimationHandlerNode"}</Link>{"> animationQueue"}</code> |
-| <Link id="m-currenthandler" /><code>{"private "}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" currentHandler"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationqueue" /><code>{"private "}<Link to="/game-api/types/assembly-other/fastpriorityqueue-t">{"FastPriorityQueue"}</Link>{"<"}<Link to="/game-api/types/alta-player/stateffectshellanimator-shellanimationhandlernode">{"StatEffectShellAnimator.ShellAnimationHandlerNode"}</Link>{"> animationQueue"}</code> | Waiting shell effects, ordered by priority (lower value first). |
+| <Link id="m-currenthandler" /><code>{"private "}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" currentHandler"}</code> | The shell effect being shown. Backing field for `CurrentHandler`. |
 
 </details>
 
@@ -65,12 +65,12 @@ Client: the shell animator for stat effect shields around a player. Several shie
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatecurrenthandler" /><code>{"private void AnimateCurrentHandler()"}</code> |
-| <Link id="m-followqueue" /><code>{"private void FollowQueue()"}</code> |
-| <Link id="m-handlerdeactivated" /><code>{"private void HandlerDeactivated("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |
-| <Link id="m-returntocurrent" /><code>{"private void ReturnToCurrent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatecurrenthandler" /><code>{"private void AnimateCurrentHandler()"}</code> | Starts the current handler's expand animation, or queues it by priority if another animation is running. |
+| <Link id="m-followqueue" /><code>{"private void FollowQueue()"}</code> | Takes the next still-active handler off the queue and animates it; clears the current handler if none is left. |
+| <Link id="m-handlerdeactivated" /><code>{"private void HandlerDeactivated("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> | When the current handler ends, animates the shell back out and then moves on to the queue. |
+| <Link id="m-returntocurrent" /><code>{"private void ReturnToCurrent()"}</code> | Re-animates the current handler if still active, otherwise follows the queue. |
 
 </details>
 

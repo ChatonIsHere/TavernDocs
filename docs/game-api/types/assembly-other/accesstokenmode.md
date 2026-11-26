@@ -1,6 +1,6 @@
 ---
 title: "AccessTokenMode"
-description: "enum AccessTokenMode in Alta.Platform."
+description: "Whether a platform's authentication can hand out access tokens: not at all, single use or multi use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AccessTokenMode
 
 An **enum** in `Alta.Platform`, `Alta.Platform`.
+
+Whether a platform's authentication can hand out access tokens: not at all, single use or multi use. Reported by `IAuthenticationFeatures`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 

@@ -1,6 +1,6 @@
 ---
 title: "HashedItemInfo"
-description: "class HashedItemInfo in Root.Township."
+description: "A hash and name pair for console output, such as the list of spawnable prefabs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Console`.
 
+A hash and name pair for console output, such as the list of spawnable prefabs. Converts from prefabs, items and hashed values.
+
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 
 ## Constructors
@@ -22,18 +24,18 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hash" /><code>{"uint Hash { get; set; }"}</code> | The object's hash. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The object's asset name. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" item)"}</code> |
-| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item)"}</code> |
-| <Link id="m-op-implicit-3" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-op-implicit" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/assembly-other/hashedgeneralvalue">{"HashedGeneralValue"}</Link>{" item)"}</code> | Builds one from a `HashedGeneralValue`, `NetworkPrefab` or `Item`. |
+| <Link id="m-op-implicit-2" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" item)"}</code> | Builds one from a `HashedGeneralValue`, `NetworkPrefab` or `Item`. |
+| <Link id="m-op-implicit-3" /><code>{"static "}<Link to="/game-api/types/alta-console/hashediteminfo">{"HashedItemInfo"}</Link>{" op_Implicit("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Builds one from a `HashedGeneralValue`, `NetworkPrefab` or `Item`. |
 
 ## Used in
 

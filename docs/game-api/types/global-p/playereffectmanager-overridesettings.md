@@ -1,6 +1,6 @@
 ---
 title: "PlayerEffectManager.OverrideSettings"
-description: "enum PlayerEffectManager.OverrideSettings in Root.Township."
+description: "Whether a player's effect points are set up for the local player or a remote player; passed to each effect point when the player is linked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerEffectManager.OverrideSettings
 
 An **enum** in `Root.Township`, no namespace.
+
+Whether a player's effect points are set up for the local player or a remote player; passed to each effect point when the player is linked.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerEffectManager`](/game-api/types/global-p/playereffectmanager)

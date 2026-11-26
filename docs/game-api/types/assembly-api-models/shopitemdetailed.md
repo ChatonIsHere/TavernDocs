@@ -1,6 +1,6 @@
 ---
 title: "ShopItemDetailed"
-description: "class ShopItemDetailed in Alta.Api.DataTransferModels."
+description: "API model for a shop item with its full details: description, category, images and Xsolla id."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShopItemDetailed
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+API model for a shop item with its full details: description, category, images and Xsolla id.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`ShopItem`](/game-api/types/assembly-api-models/shopitem)
@@ -24,12 +26,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-category" /><code><Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" Category { get; set; }"}</code> |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
-| <Link id="m-images" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemimage">{"ShopItemImage"}</Link>{"> Images { get; set; }"}</code> |
-| <Link id="m-xsollaitemid" /><code>{"int XsollaItemId { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-category" /><code><Link to="/game-api/types/assembly-api-models/itemcategory">{"ItemCategory"}</Link>{" Category { get; set; }"}</code> | The item's shop category. |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | Shop description text. |
+| <Link id="m-images" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/shopitemimage">{"ShopItemImage"}</Link>{"> Images { get; set; }"}</code> | Images shown for the item in the shop. |
+| <Link id="m-xsollaitemid" /><code>{"int XsollaItemId { get; set; }"}</code> | The item's id in the Xsolla payment store. |
 
 ## Used in
 

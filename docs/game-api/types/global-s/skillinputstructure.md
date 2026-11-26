@@ -29,11 +29,11 @@ Asset describing how a tool-based skill is triggered (the input gesture), with d
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canceleddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" canceledDefaultEffect"}</code> |
-| <Link id="m-chargeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" chargedDefaultEffect"}</code> |
-| <Link id="m-executeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" executedDefaultEffect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canceleddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" canceledDefaultEffect"}</code> | Effect played by `PlaySoundAt` when the skill is cancelled. |
+| <Link id="m-chargeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" chargedDefaultEffect"}</code> | Effect played by `PlaySoundAt` when the skill is charged. |
+| <Link id="m-executeddefaulteffect" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" executedDefaultEffect"}</code> | Effect played by `PlaySoundAt` when the skill is used (consumed). |
 
 </details>
 

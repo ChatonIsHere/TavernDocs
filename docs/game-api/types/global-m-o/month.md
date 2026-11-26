@@ -1,6 +1,6 @@
 ---
 title: "Month"
-description: "enum Month in Root.Township."
+description: "Calendar months, January = 1 to December = 12."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Month
 
 An **enum** in `Root.Township`, no namespace.
+
+Calendar months, January = 1 to December = 12.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 

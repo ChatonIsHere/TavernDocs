@@ -29,10 +29,10 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-overridetarget" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> |
-| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-overridetarget" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" overrideTarget"}</code> | Backing field for `OverrideTarget`, the plugin the part works on instead of its own plugin. Null means its own. |
+| <Link id="m-partidentifier" /><code>{"private int partIdentifier"}</code> | Backing field for `PartIdentifier`, hashed into the instance's seed. Set from the asset's instance id when negative. |
 
 </details>
 
@@ -53,9 +53,9 @@ Base asset for one part of a cave generator plugin. It makes a `MapGeneratorPart
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: gives the part an identifier if it has none. |
 
 </details>
 

@@ -30,12 +30,12 @@ A ScriptableObject holding one grass blade's mesh data and base colour, used by 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-basecolor" /><code>{"private Color baseColor"}</code> |
-| <Link id="m-isavailable" /><code>{"private bool isAvailable"}</code> |
-| <Link id="m-triangles" /><code>{"private int[] triangles"}</code> |
-| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basecolor" /><code>{"private Color baseColor"}</code> | Base colour of the blade. Backing field for `Color`. |
+| <Link id="m-isavailable" /><code>{"private bool isAvailable"}</code> | Backing field for `IsAvailable`. |
+| <Link id="m-triangles" /><code>{"private int[] triangles"}</code> | Triangle indices of the blade mesh. Backing field for `Triangles`. |
+| <Link id="m-vertices" /><code>{"private Vector3[] vertices"}</code> | Vertices of the blade mesh. Backing field for `Vertices`. |
 
 </details>
 

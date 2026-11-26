@@ -1,6 +1,6 @@
 ---
 title: "ShutdownReason"
-description: "class ShutdownReason in Alta.Api.DataTransferModels."
+description: "Why a game server shut down, as a message and whether the shutdown was expected."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShutdownReason
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Why a game server shut down, as a message and whether the shutdown was expected.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -24,16 +26,16 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isexpected" /><code>{"bool IsExpected { get; set; }"}</code> |
-| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isexpected" /><code>{"bool IsExpected { get; set; }"}</code> | True for a planned shutdown, false for a crash or other surprise. |
+| <Link id="m-reason" /><code>{"string Reason { get; set; }"}</code> | Free-text reason for the shutdown. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns the reason and the expected flag as one line. |
 
 ## Used in
 

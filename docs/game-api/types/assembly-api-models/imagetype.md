@@ -1,6 +1,6 @@
 ---
 title: "ImageType"
-description: "enum ImageType in Alta.Api.DataTransferModels."
+description: "Which slot a shop item image fills (primary, hover, carousel, detailed or gallery)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImageType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Which slot a shop item image fills (primary, hover, carousel, detailed or gallery). Used by `LowLevelApiClient.AddImageToItemAsync`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

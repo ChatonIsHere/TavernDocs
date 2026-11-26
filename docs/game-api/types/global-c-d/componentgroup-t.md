@@ -34,11 +34,11 @@ A component that keeps a list of other components of one type, usually filled fr
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-componentstoignorewhenadding" /><code>{"private List<T> componentsToIgnoreWhenAdding"}</code> |
-| <Link id="m-isaddingcomponents" /><code>{"private bool isAddingComponents"}</code> |
-| <Link id="m-parentstoignorewhenadding" /><code>{"private List<Transform> parentsToIgnoreWhenAdding"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-componentstoignorewhenadding" /><code>{"private List<T> componentsToIgnoreWhenAdding"}</code> | Components left out when collecting from children. |
+| <Link id="m-isaddingcomponents" /><code>{"private bool isAddingComponents"}</code> | Inspector button flag for adding components in children. |
+| <Link id="m-parentstoignorewhenadding" /><code>{"private List<Transform> parentsToIgnoreWhenAdding"}</code> | Child transforms whose subtree is skipped when collecting. |
 
 </details>
 
@@ -70,11 +70,11 @@ A component that keeps a list of other components of one type, usually filled fr
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-getenumerator" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-recursivlyaddcomponents" /><code>{"private void RecursivlyAddComponents(Transform transform)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getenumerator" /><code>{"private IEnumerator System.Collections.IEnumerable.GetEnumerator()"}</code> | Enumerates the components in the group. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: removes null entries from the list. |
+| <Link id="m-recursivlyaddcomponents" /><code>{"private void RecursivlyAddComponents(Transform transform)"}</code> | Adds every valid `T` on a transform and its children, skipping the ignore lists. |
 
 </details>
 

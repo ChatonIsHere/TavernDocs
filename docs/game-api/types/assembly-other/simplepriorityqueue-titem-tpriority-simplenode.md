@@ -1,6 +1,6 @@
 ---
 title: "SimplePriorityQueue<TItem, TPriority>.SimpleNode"
-description: "class SimplePriorityQueue<TItem, TPriority>.SimpleNode in Alta.Timing.Runtime."
+description: "Internal node that wraps one item in SimplePriorityQueue so it can sit in the underlying generic queue."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimplePriorityQueue&lt;TItem, TPriority&gt;.SimpleNode
 
 A **private class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Internal node that wraps one item in `SimplePriorityQueue` so it can sit in the underlying generic queue.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`SimplePriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority)
@@ -24,9 +26,9 @@ A **private class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`. Reach
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code>{"TItem Data { get; private set; }"}</code> | The queued item. |
 
 ## Used in
 

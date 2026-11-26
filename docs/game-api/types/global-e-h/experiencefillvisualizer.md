@@ -29,23 +29,23 @@ Skill shrine visual that fills with a player's XP toward the next level on one p
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |
-| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> |
-| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> |
-| <Link id="m-animationcoroutine" /><code>{"private Coroutine animationCoroutine"}</code> |
-| <Link id="m-availablepointvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointvisualizermanager">{"AvailablePointVisualizerManager"}</Link>{" availablePointVisualizer"}</code> |
-| <Link id="m-currentfillvalue" /><code>{"private float currentFillValue"}</code> |
-| <Link id="m-currentfreepoints" /><code>{"private int currentFreePoints"}</code> |
-| <Link id="m-fillingcurve" /><code>{"private AnimationCurve fillingCurve"}</code> |
-| <Link id="m-filltotargettime" /><code>{"private float fillToTargetTime"}</code> |
-| <Link id="m-hassold" /><code>{"private bool hasSold"}</code> |
-| <Link id="m-isopen" /><code>{"private bool isOpen"}</code> |
-| <Link id="m-openinganimationtime" /><code>{"private float openingAnimationTime"}</code> |
-| <Link id="m-renderertoanimate" /><code>{"private Renderer rendererToAnimate"}</code> |
-| <Link id="m-sellingprogress" /><code>{"private AnimationCurve sellingProgress"}</code> |
-| <Link id="m-soldfillprogress" /><code>{"private float soldFillProgress"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> | Shader property ID for the main fill amount. |
+| <Link id="m-negativechangeprogress" /><code>{"private static readonly int _NegativeChangeProgress"}</code> | Shader property ID for the fill shown while selling points. |
+| <Link id="m-positivechangeprogress" /><code>{"private static readonly int _PositiveChangeProgress"}</code> | Shader property ID for the fill gained, shown while buying. |
+| <Link id="m-animationcoroutine" /><code>{"private Coroutine animationCoroutine"}</code> | The running fill animation, stopped before a new one starts. |
+| <Link id="m-availablepointvisualizer" /><code>{"private "}<Link to="/game-api/types/global-a-b/availablepointvisualizermanager">{"AvailablePointVisualizerManager"}</Link>{" availablePointVisualizer"}</code> | Shows the orbs for free skill points. |
+| <Link id="m-currentfillvalue" /><code>{"private float currentFillValue"}</code> | Current fill from 0 to 1, progress to the next level. |
+| <Link id="m-currentfreepoints" /><code>{"private int currentFreePoints"}</code> | Free skill points on this path, synced from the server. |
+| <Link id="m-fillingcurve" /><code>{"private AnimationCurve fillingCurve"}</code> | Easing for that fill. |
+| <Link id="m-filltotargettime" /><code>{"private float fillToTargetTime"}</code> | Seconds to fill to current progress after opening. Default 0.7. |
+| <Link id="m-hassold" /><code>{"private bool hasSold"}</code> | True once selling has gone past a full level and a temporary point orb is showing. |
+| <Link id="m-isopen" /><code>{"private bool isOpen"}</code> | True while the shrine is open for a player. |
+| <Link id="m-openinganimationtime" /><code>{"private float openingAnimationTime"}</code> | Seconds the per-point fill animation takes in total. Default 2. |
+| <Link id="m-renderertoanimate" /><code>{"private Renderer rendererToAnimate"}</code> | Backing field for `RendererToAnimate`, whose material gets the fill values. |
+| <Link id="m-sellingprogress" /><code>{"private AnimationCurve sellingProgress"}</code> | Curve for how the fill moves while selling. |
+| <Link id="m-soldfillprogress" /><code>{"private float soldFillProgress"}</code> | Fill level after refunding experience by selling a point, worked out by the server in `Serialize`. |
 
 </details>
 
@@ -71,14 +71,14 @@ Skill shrine visual that fills with a player's XP toward the next level on one p
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-animate" /><code>{"private void Animate(float percentageToNextLevel)"}</code> |
-| <Link id="m-animatebuyfinish" /><code>{"private IEnumerator AnimateBuyFinish(bool wasConfirmed) (iterator)"}</code> |
-| <Link id="m-animateopenforplayer" /><code>{"private IEnumerator AnimateOpenForPlayer(int levels, float percentageToNextLevel) (iterator)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-fadeto" /><code>{"private IEnumerator FadeTo(float target) (iterator)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animate" /><code>{"private void Animate(float percentageToNextLevel)"}</code> | Fades the fill to a new level if the shrine is open; otherwise opens it with the level-up animation. |
+| <Link id="m-animatebuyfinish" /><code>{"private IEnumerator AnimateBuyFinish(bool wasConfirmed) (iterator)"}</code> | Coroutine that settles the fill after buying a point, confirmed or cancelled. |
+| <Link id="m-animateopenforplayer" /><code>{"private IEnumerator AnimateOpenForPlayer(int levels, float percentageToNextLevel) (iterator)"}</code> | Coroutine run when the shrine opens: fills once per free point, opening each point visual, then fills to current progress. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: resets the fill shader values to 0. |
+| <Link id="m-fadeto" /><code>{"private IEnumerator FadeTo(float target) (iterator)"}</code> | Coroutine that lerps the fill to a target value. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Client: cleans up the material instance it made. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "ServerSettingsAge"
-description: "enum ServerSettingsAge in Root.Township."
+description: "Marks server settings in a settings change event as the old values, the new values, or neither."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerSettingsAge
 
 An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+Marks server settings in a settings change event as the old values, the new values, or neither.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

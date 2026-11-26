@@ -1,6 +1,6 @@
 ---
 title: "StatType"
-description: "enum StatType in Root.Township."
+description: "Whether a platform stat holds an int or a float."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatType
 
 An **enum** in `Root.Township`, `Alta.Achievements`.
+
+Whether a platform stat holds an int or a float.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 

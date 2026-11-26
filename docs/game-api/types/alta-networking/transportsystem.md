@@ -1,6 +1,6 @@
 ---
 title: "TransportSystem"
-description: "enum TransportSystem in Root.Township."
+description: "Which network transport to use."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TransportSystem
 
 An **enum** in `Root.Township`, `Alta.Networking`.
+
+Which network transport to use. KCP is the only option and the default.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 

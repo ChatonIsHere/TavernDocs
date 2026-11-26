@@ -32,19 +32,19 @@ A keyboard-and-mouse fly camera that acts as a player controller (for spectating
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cameratoenableforlocal" /><code>{"private GameObject cameraToEnableForLocal"}</code> |
-| <Link id="m-cinematiclerp" /><code>{"private float cinematicLerp"}</code> |
-| <Link id="m-cinematicstoplerp" /><code>{"private float cinematicStopLerp"}</code> |
-| <Link id="m-climbspeed" /><code>{"private float climbSpeed"}</code> |
-| <Link id="m-currentsensitivity" /><code>{"private int currentSensitivity"}</code> |
-| <Link id="m-eyefocuscontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/eyefocuscontroller">{"EyeFocusController"}</Link>{" eyeFocusController"}</code> |
-| <Link id="m-fastmovefactor" /><code>{"private float fastMoveFactor"}</code> |
-| <Link id="m-normalmovespeed" /><code>{"private float normalMoveSpeed"}</code> |
-| <Link id="m-renderergroup" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" rendererGroup"}</code> |
-| <Link id="m-sensibilitylevels" /><code>{"private float[] sensibilityLevels"}</code> |
-| <Link id="m-slowmovefactor" /><code>{"private float slowMoveFactor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cameratoenableforlocal" /><code>{"private GameObject cameraToEnableForLocal"}</code> | Camera object turned on only for the local player. |
+| <Link id="m-cinematiclerp" /><code>{"private float cinematicLerp"}</code> | Lerp factor for cinematic movement. |
+| <Link id="m-cinematicstoplerp" /><code>{"private float cinematicStopLerp"}</code> | Lerp factor used when cinematic movement stops. |
+| <Link id="m-climbspeed" /><code>{"private float climbSpeed"}</code> | Vertical move speed. |
+| <Link id="m-currentsensitivity" /><code>{"private int currentSensitivity"}</code> | Backing field for `CurrentSensitivity`, an index into `sensibilityLevels`. |
+| <Link id="m-eyefocuscontroller" /><code>{"private "}<Link to="/game-api/types/alta-player/eyefocuscontroller">{"EyeFocusController"}</Link>{" eyeFocusController"}</code> | Eye focus controller on the fly cam. |
+| <Link id="m-fastmovefactor" /><code>{"private float fastMoveFactor"}</code> | Speed multiplier for fast movement. |
+| <Link id="m-normalmovespeed" /><code>{"private float normalMoveSpeed"}</code> | Base move speed. |
+| <Link id="m-renderergroup" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" rendererGroup"}</code> | Renderers turned on or off by `UpdateVisibility`. Not set on a headless server. |
+| <Link id="m-sensibilitylevels" /><code>{"private float[] sensibilityLevels"}</code> | Camera sensitivity options; the middle one is the default. |
+| <Link id="m-slowmovefactor" /><code>{"private float slowMoveFactor"}</code> | Speed multiplier for slow movement. |
 
 </details>
 
@@ -77,9 +77,9 @@ A keyboard-and-mouse fly camera that acts as a player controller (for spectating
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onlinkedtoplayer" /><code>{"private void OnLinkedToPlayer()"}</code> | When this is the local player, turns on its camera and shows the cursor. |
 
 </details>
 

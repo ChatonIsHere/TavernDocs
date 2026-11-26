@@ -30,15 +30,15 @@ Settings asset for a two-part particle effect: particles that spawn, fly to a de
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-particleacceleration" /><code>{"private float particleAcceleration"}</code> |
-| <Link id="m-particledestination" /><code>{"private "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" particleDestination"}</code> |
-| <Link id="m-particlesonarrival" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesOnArrival"}</code> |
-| <Link id="m-particlespeed" /><code>{"private float particleSpeed"}</code> |
-| <Link id="m-particlestotransform" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesToTransform"}</code> |
-| <Link id="m-shouldplayvfx" /><code>{"private bool shouldPlayVFX"}</code> |
-| <Link id="m-timetostartmoving" /><code>{"private float timeToStartMoving"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-particleacceleration" /><code>{"private float particleAcceleration"}</code> | Backing field for `ParticleAcceleration`, extra speed per second (0.1 by default). |
+| <Link id="m-particledestination" /><code>{"private "}<Link to="/game-api/types/global-p/particledestination">{"ParticleDestination"}</Link>{" particleDestination"}</code> | Backing field for `ParticleDestination`, where the particles fly to. Custom is for internal use. |
+| <Link id="m-particlesonarrival" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesOnArrival"}</code> | Backing field for `ParticlesOnArrival`, the pooled effect spawned when the particles reach the player. |
+| <Link id="m-particlespeed" /><code>{"private float particleSpeed"}</code> | Backing field for `ParticleSpeed`, in metres per second (1 by default). |
+| <Link id="m-particlestotransform" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" particlesToTransform"}</code> | Backing field for `ParticlesToTransform`, the pooled effect spawned when the player unlocks something. |
+| <Link id="m-shouldplayvfx" /><code>{"private bool shouldPlayVFX"}</code> | Backing field for `ShouldPlayVFX`. Turn off to disable the effect without changing references. |
+| <Link id="m-timetostartmoving" /><code>{"private float timeToStartMoving"}</code> | Backing field for `TimeToStartMoving`, the delay before the script moves the particles (1.1 seconds by default). |
 
 </details>
 

@@ -29,19 +29,19 @@ Quick access menu action that opens a settings board in front of the local playe
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeboard" /><code>{"private "}<Link to="/game-api/types/alta-player/iquickaccesssettingsboard">{"IQuickAccessSettingsBoard"}</Link>{" activeBoard"}</code> |
-| <Link id="m-boarddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" boardDefinition"}</code> |
-| <Link id="m-boarddistancefromhead" /><code>{"private float boardDistanceFromHead"}</code> |
-| <Link id="m-boardheight" /><code>{"private float boardHeight"}</code> |
-| <Link id="m-haspermission" /><code>{"private bool hasPermission"}</code> |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-isignored" /><code>{"private bool isIgnored"}</code> |
-| <Link id="m-isserversettings" /><code>{"private bool isServerSettings"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-settingsdefinitions" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] settingsDefinitions"}</code> |
-| <Link id="m-settingstodisplay" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{"[] settingsToDisplay"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeboard" /><code>{"private "}<Link to="/game-api/types/alta-player/iquickaccesssettingsboard">{"IQuickAccessSettingsBoard"}</Link>{" activeBoard"}</code> | The board currently shown, if any. |
+| <Link id="m-boarddefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" boardDefinition"}</code> | Pooled board object that shows the settings. |
+| <Link id="m-boarddistancefromhead" /><code>{"private float boardDistanceFromHead"}</code> | How far in front of the player the board appears. |
+| <Link id="m-boardheight" /><code>{"private float boardHeight"}</code> | Height of the board above the player's feet. |
+| <Link id="m-haspermission" /><code>{"private bool hasPermission"}</code> | Whether the local player may use this menu; server settings need server permissions. |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Whether the board is open. Backing field for `IsActive`. |
+| <Link id="m-isignored" /><code>{"private bool isIgnored"}</code> | Set when initialized without a player, which hides the action. |
+| <Link id="m-isserversettings" /><code>{"private bool isServerSettings"}</code> | Edits the server's settings instead of the player's own. Backing field for `IsServerSettings`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-settingsdefinitions" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{"[] settingsDefinitions"}</code> | Pooled UI element to use for each setting type. Backing field for `SettingsDefinitions`. |
+| <Link id="m-settingstodisplay" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingsfieldaccess">{"SettingsFieldAccess"}</Link>{"[] settingsToDisplay"}</code> | The settings listed on the board. Backing field for `SettingsToDisplay`. |
 
 </details>
 
@@ -67,13 +67,13 @@ Quick access menu action that opens a settings board in front of the local playe
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-activate" /><code>{"private void Activate()"}</code> |
-| <Link id="m-deregisterboard" /><code>{"private void DeregisterBoard()"}</code> |
-| <Link id="m-playerdied" /><code>{"private void PlayerDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" obj)"}</code> |
-| <Link id="m-positionboardforplayer" /><code>{"private void PositionBoardForPlayer(Transform boardTransform)"}</code> |
-| <Link id="m-validateaccessandgetserversettings" /><code>{"private async void ValidateAccessAndGetServerSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activate" /><code>{"private void Activate()"}</code> | Spawns the settings board in front of the player, sets it up and closes it if the player dies. |
+| <Link id="m-deregisterboard" /><code>{"private void DeregisterBoard()"}</code> | Closes the board; for server settings, sends the edited settings back to the server. |
+| <Link id="m-playerdied" /><code>{"private void PlayerDied("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" obj)"}</code> | Closes the board when the local player is killed. |
+| <Link id="m-positionboardforplayer" /><code>{"private void PositionBoardForPlayer(Transform boardTransform)"}</code> | Places the board at `boardHeight` above the player's feet, `boardDistanceFromHead` in front, facing them. |
+| <Link id="m-validateaccessandgetserversettings" /><code>{"private async void ValidateAccessAndGetServerSettings()"}</code> | Asks the server for its settings and opens the board if the menu is still open when they arrive. |
 
 </details>
 

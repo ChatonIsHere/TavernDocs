@@ -28,14 +28,14 @@ Base for a VR device or fly cam input source (SteamVR, OpenXR, fly cam). Fills a
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-doubletapspeed" /><code>{"private const float DoubleTapSpeed"}</code> |
-| <Link id="m-doubletaptarget" /><code>{"private float doubleTapTarget"}</code> |
-| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input"}</code> |
-| <Link id="m-phototime" /><code>{"private const float PhotoTime"}</code> |
-| <Link id="m-targetphototime" /><code>{"private float targetPhotoTime"}</code> |
-| <Link id="m-wastapping" /><code>{"private bool wasTapping"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-doubletapspeed" /><code>{"private const float DoubleTapSpeed"}</code> | Window in seconds (1) for a second tap to count as a double tap. |
+| <Link id="m-doubletaptarget" /><code>{"private float doubleTapTarget"}</code> | Real time by which the second tap must land, or -1 when no tap is pending. |
+| <Link id="m-input" /><code>{"private "}<Link to="/game-api/types/global-c-d/controllerinput">{"ControllerInput"}</Link>{" input"}</code> | Backing field for `Input`, created on first use. |
+| <Link id="m-phototime" /><code>{"private const float PhotoTime"}</code> | Seconds (0.5) the photo action must be held to count as a long photo. |
+| <Link id="m-targetphototime" /><code>{"private float targetPhotoTime"}</code> | Real time when the held photo action becomes a long photo, or -1. |
+| <Link id="m-wastapping" /><code>{"private bool wasTapping"}</code> | Tap state from the last `CalculateDoubleTap` call, to detect new presses. |
 
 </details>
 

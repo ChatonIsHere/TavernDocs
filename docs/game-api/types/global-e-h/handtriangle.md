@@ -1,6 +1,6 @@
 ---
 title: "HandTriangle"
-description: "class HandTriangle in Root.Township."
+description: "Three transforms on a hand that form a triangle, used by FingerTipSettings to build a WorldSpaceTriangle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+Three transforms on a hand that form a triangle, used by `FingerTipSettings` to build a `WorldSpaceTriangle`.
+
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-a" /><code>{"Transform a"}</code> |
-| <Link id="m-b" /><code>{"Transform b"}</code> |
-| <Link id="m-c" /><code>{"Transform c"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-a" /><code>{"Transform a"}</code> | First corner. |
+| <Link id="m-b" /><code>{"Transform b"}</code> | Second corner. |
+| <Link id="m-c" /><code>{"Transform c"}</code> | Third corner. |
 
 ## Used in
 

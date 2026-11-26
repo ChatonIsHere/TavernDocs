@@ -1,6 +1,6 @@
 ---
 title: "Region"
-description: "enum Region in Alta.Api.DataTransferModels."
+description: "Which Alta platform region an account belongs to: Global or China."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Region
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Which Alta platform region an account belongs to: Global or China.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

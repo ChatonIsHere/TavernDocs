@@ -1,6 +1,6 @@
 ---
 title: "ChunkAdjacencyConfiguration"
-description: "class ChunkAdjacencyConfiguration in Root.Township."
+description: "One forced link from a location chunk to another chunk, with a travel cost."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkAdjacencyConfiguration
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+One forced link from a location chunk to another chunk, with a travel cost. Held in `ChunkConnections.ForcedAdjacent` and walked by chunk lookup and audio environment code.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> |
-| <Link id="m-connectioncost" /><code>{"private float connectionCost"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk"}</code> | Backing field for `Chunk`. |
+| <Link id="m-connectioncost" /><code>{"private float connectionCost"}</code> | Backing field for `ConnectionCost`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> |
-| <Link id="m-connectioncost-2" /><code>{"float ConnectionCost { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk-2" /><code><Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" Chunk { get; }"}</code> | The location chunk on the other end of the link. |
+| <Link id="m-connectioncost-2" /><code>{"float ConnectionCost { get; }"}</code> | Cost of crossing this link (default 1). |
 
 ## Used in
 

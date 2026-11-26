@@ -1,6 +1,6 @@
 ---
 title: "MultipleInteractionAllowance"
-description: "enum MultipleInteractionAllowance in Root.Township."
+description: "Flags on an interactable for whether it can be held by both hands of one player and by more than one player at once."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MultipleInteractionAllowance
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags on an interactable for whether it can be held by both hands of one player and by more than one player at once.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Attributes** `Flags`

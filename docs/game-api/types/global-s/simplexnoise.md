@@ -28,23 +28,23 @@ Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the in
 <details>
 <summary>15 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-f2" /><code>{"private static double F2"}</code> |
-| <Link id="m-f3" /><code>{"private static double F3"}</code> |
-| <Link id="m-f4" /><code>{"private static double F4"}</code> |
-| <Link id="m-g2" /><code>{"private static double G2"}</code> |
-| <Link id="m-g3" /><code>{"private static double G3"}</code> |
-| <Link id="m-g4" /><code>{"private static double G4"}</code> |
-| <Link id="m-grad3" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad3"}</code> |
-| <Link id="m-grad4" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad4"}</code> |
-| <Link id="m-offsetw" /><code>{"private double offsetW"}</code> |
-| <Link id="m-offsetx" /><code>{"private double offsetX"}</code> |
-| <Link id="m-offsety" /><code>{"private double offsetY"}</code> |
-| <Link id="m-offsetz" /><code>{"private double offsetZ"}</code> |
-| <Link id="m-p" /><code>{"private static short[] p"}</code> |
-| <Link id="m-perm" /><code>{"private short[] perm"}</code> |
-| <Link id="m-permmod12" /><code>{"private short[] permMod12"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-f2" /><code>{"private static double F2"}</code> | 2D skew factor for simplex noise. |
+| <Link id="m-f3" /><code>{"private static double F3"}</code> | 3D skew factor. |
+| <Link id="m-f4" /><code>{"private static double F4"}</code> | 4D skew factor. |
+| <Link id="m-g2" /><code>{"private static double G2"}</code> | 2D unskew factor. |
+| <Link id="m-g3" /><code>{"private static double G3"}</code> | 3D unskew factor. |
+| <Link id="m-g4" /><code>{"private static double G4"}</code> | 4D unskew factor. |
+| <Link id="m-grad3" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad3"}</code> | The 12 gradient directions for 2D and 3D noise. |
+| <Link id="m-grad4" /><code>{"private static "}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{"[] grad4"}</code> | The 32 gradient directions for 4D noise. |
+| <Link id="m-offsetw" /><code>{"private double offsetW"}</code> | Added to the w input, so noise objects with different offsets give different patterns. |
+| <Link id="m-offsetx" /><code>{"private double offsetX"}</code> | Added to the x input. |
+| <Link id="m-offsety" /><code>{"private double offsetY"}</code> | Added to the y input. |
+| <Link id="m-offsetz" /><code>{"private double offsetZ"}</code> | Added to the z input. |
+| <Link id="m-p" /><code>{"private static short[] p"}</code> | The fixed 256-entry permutation table. All instances share it, so the offsets are the only seed. |
+| <Link id="m-perm" /><code>{"private short[] perm"}</code> | `p` doubled to 512 entries to avoid wrapping. |
+| <Link id="m-permmod12" /><code>{"private short[] permMod12"}</code> | `perm` values mod 12, to index `grad3`. |
 
 </details>
 
@@ -62,12 +62,12 @@ Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the in
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-dot" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y)"}</code> |
-| <Link id="m-dot-2" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z)"}</code> |
-| <Link id="m-dot-3" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z, double w)"}</code> |
-| <Link id="m-fastfloor" /><code>{"private static int fastfloor(double x)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dot" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y)"}</code> | Dot product of a gradient with a 2D, 3D or 4D offset. |
+| <Link id="m-dot-2" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z)"}</code> | Dot product of a gradient with a 2D, 3D or 4D offset. |
+| <Link id="m-dot-3" /><code>{"private static double dot("}<Link to="/game-api/types/global-s/simplexnoise-grad">{"SimplexNoise.Grad"}</Link>{" g, double x, double y, double z, double w)"}</code> | Dot product of a gradient with a 2D, 3D or 4D offset. |
+| <Link id="m-fastfloor" /><code>{"private static int fastfloor(double x)"}</code> | Floor of a double as an int, faster than `Math.Floor`. |
 
 </details>
 

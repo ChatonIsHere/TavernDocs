@@ -1,6 +1,6 @@
 ---
 title: "AtlasTarget"
-description: "enum AtlasTarget in Root.Township."
+description: "Flags for which kind of objects an atlas definition targets: static, dynamic or both."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AtlasTarget
 
 An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
+
+Flags for which kind of objects an atlas definition targets: static, dynamic or both. Checked with `AtlasDefinition.IsTargeting`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Attributes** `Flags`

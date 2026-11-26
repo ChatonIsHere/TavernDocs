@@ -1,6 +1,6 @@
 ---
 title: "InteractionForwarder"
-description: "An interactable that passes the grab on to another one."
+description: "An interactable that forwards its interactions to another interactable, for example a separate grab collider."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-An interactable that passes the grab on to another one.
+An interactable that forwards its interactions to another interactable, for example a separate grab collider.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`Interactable`](/game-api/types/global-i-l/interactable)
@@ -29,9 +29,9 @@ An interactable that passes the grab on to another one.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" target"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" target"}</code> | The interactable that receives forwarded interactions. |
 
 </details>
 
@@ -40,8 +40,8 @@ An interactable that passes the grab on to another one.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Adds `target` to `ForwardTo`. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "LootValue"
-description: "class LootValue in Root.Township."
+description: "An item's loot value tier, as an asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LootValue
 
 A **class** in `Root.Township`, no namespace.
+
+An item's loot value tier, as an asset. Items compare by its number, and it sets the tint of docks holding the item.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`PopupScriptableObject`](/game-api/types/global-p/popupscriptableobject), `IComparable<LootValue>`
@@ -27,26 +29,26 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-dockcolortint" /><code>{"private Color dockColorTint"}</code> |
-| <Link id="m-value" /><code>{"private int value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dockcolortint" /><code>{"private Color dockColorTint"}</code> | Backing field for `DockColorTint`. |
+| <Link id="m-value" /><code>{"private int value"}</code> | The number values are compared by. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-dockcolortint-2" /><code>{"Color DockColorTint { get; }"}</code> |
-| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dockcolortint-2" /><code>{"Color DockColorTint { get; }"}</code> | Colour tint a dock shows when holding an item of this value. |
+| <Link id="m-subfolder" /><code>{"override string SubFolder { get; }"}</code> | Asset sub folder for these assets (`Items/`). |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-op-greaterthan" /><code>{"static bool op_GreaterThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |
-| <Link id="m-op-lessthan" /><code>{"static bool op_LessThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-op-greaterthan" /><code>{"static bool op_GreaterThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> | True if the first value's number is higher. |
+| <Link id="m-op-lessthan" /><code>{"static bool op_LessThan("}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" valueA, "}<Link to="/game-api/types/global-i-l/lootvalue">{"LootValue"}</Link>{" ValueB)"}</code> | True if the first value's number is lower. |
 
 ## Used in
 

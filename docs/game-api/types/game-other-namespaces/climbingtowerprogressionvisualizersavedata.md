@@ -1,6 +1,6 @@
 ---
 title: "ClimbingTowerProgressionVisualizerSaveData"
-description: "class ClimbingTowerProgressionVisualizerSaveData in Root.Township."
+description: "Save data for ClimbingTowerProgressionVisualizer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClimbingTowerProgressionVisualizerSaveData
 
 A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
+
+Save data for `ClimbingTowerProgressionVisualizer`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`NewSaveData<ClimbingTowerProgressionVisualizer, ClimbingTowerProgressionVisualizerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,10 +27,10 @@ A **class** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> |
-| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gaugeheights" /><code>{"float[] GaugeHeights"}</code> | Saved height of each progress gauge. |
+| <Link id="m-orbindexes" /><code>{"uint[] OrbIndexes"}</code> | Saved orb indexes shown by the visualizer. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "DownedStateDebuffManager"
-description: "class DownedStateDebuffManager in Root.Township."
+description: "Tracks the timed stat debuffs a player gets on respawning from the downed state, so they can be removed early."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DownedStateDebuffManager
 
 A **class** in `Root.Township`, `ATT.PlayerStates`.
+
+Tracks the timed stat debuffs a player gets on respawning from the downed state, so they can be removed early. One is made by `PlayerStateFactory` and shared by every `DownedState`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
@@ -25,19 +27,19 @@ A **class** in `Root.Township`, `ATT.PlayerStates`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-playerstatmodifiers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> playerStatModifiers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-playerstatmodifiers" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{", "}<Link to="/game-api/types/alta-stats-effects/timedstatmodifier">{"TimedStatModifier"}</Link>{"> playerStatModifiers"}</code> | Applied timed modifiers by player character. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-applydebufftoplayer" /><code>{"void ApplyDebuffToPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{"> debuffs, float duration)"}</code> |
-| <Link id="m-clearalldebuffs" /><code>{"void ClearAllDebuffs()"}</code> |
-| <Link id="m-removedebuffsforplayer" /><code>{"void RemoveDebuffsForPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applydebufftoplayer" /><code>{"void ApplyDebuffToPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{"> debuffs, float duration)"}</code> | Applies each debuff to the player's stats as a timed modifier and records it. A player can only hold one entry, so a second debuff or a second call before removal throws. |
+| <Link id="m-clearalldebuffs" /><code>{"void ClearAllDebuffs()"}</code> | Removes every recorded debuff from every player. |
+| <Link id="m-removedebuffsforplayer" /><code>{"void RemoveDebuffsForPlayer("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter)"}</code> | Removes the recorded debuffs from one player. Called by `DownedState` when the player leaves the state. |
 
 ## Used in
 

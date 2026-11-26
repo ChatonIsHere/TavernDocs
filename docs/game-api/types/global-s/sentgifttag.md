@@ -1,6 +1,6 @@
 ---
 title: "SentGiftTag"
-description: "class SentGiftTag in Root.Township."
+description: "The sender and receiver of a gift sent by post box, saved with the SentGift."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SentGiftTag
 
 A **class** in `Root.Township`, no namespace.
+
+The sender and receiver of a gift sent by post box, saved with the `SentGift`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-from" /><code>{"int from"}</code> |
-| <Link id="m-to" /><code>{"int to"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-from" /><code>{"int from"}</code> | Sender's user id. |
+| <Link id="m-to" /><code>{"int to"}</code> | Receiver's user id. |
 
 ## Used in
 

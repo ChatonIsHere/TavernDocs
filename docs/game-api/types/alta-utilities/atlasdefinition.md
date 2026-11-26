@@ -47,13 +47,13 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bakedmeshes" /><code>{"private Dictionary<int, Mesh> bakedMeshes"}</code> |
-| <Link id="m-colors" /><code>{"private static List<Color> colors"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-materialreferences" /><code>{"private Dictionary<Material, "}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materialReferences"}</code> |
-| <Link id="m-offsetscaleuvs" /><code>{"private static List<Vector4> offsetScaleUVs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bakedmeshes" /><code>{"private Dictionary<int, Mesh> bakedMeshes"}</code> | Cache of atlased meshes keyed by a mesh and material hash, so each pair is only rebuilt once. Cleared by `ClearBakedMeshes`. |
+| <Link id="m-colors" /><code>{"private static List<Color> colors"}</code> | Shared scratch list of colours. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-materialreferences" /><code>{"private Dictionary<Material, "}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{"> materialReferences"}</code> | Lookup from source material to its `AtlasedMaterial` entry, built by `PrepareReferences`. |
+| <Link id="m-offsetscaleuvs" /><code>{"private static List<Vector4> offsetScaleUVs"}</code> | Shared scratch list of UVs reused by `FixMeshUVs`. |
 
 </details>
 
@@ -67,14 +67,14 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 <details>
 <summary>6 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-horizontaltakensize" /><code>{"private int HorizontalTakenSize { get; }"}</code> |
-| <Link id="m-materialspath" /><code>{"private static string MaterialsPath { get; }"}</code> |
-| <Link id="m-meshespath" /><code>{"private static string MeshesPath { get; }"}</code> |
-| <Link id="m-projectpath" /><code>{"private static string ProjectPath { get; }"}</code> |
-| <Link id="m-texturespath" /><code>{"private static string TexturesPath { get; }"}</code> |
-| <Link id="m-verticaltakensize" /><code>{"private int VerticalTakenSize { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-horizontaltakensize" /><code>{"private int HorizontalTakenSize { get; }"}</code> | How many of the smallest textures fit across the atlas width. |
+| <Link id="m-materialspath" /><code>{"private static string MaterialsPath { get; }"}</code> | Project folder for baked atlas materials, under `ProjectPath`. |
+| <Link id="m-meshespath" /><code>{"private static string MeshesPath { get; }"}</code> | Project folder for baked atlas meshes, under `ProjectPath`. |
+| <Link id="m-projectpath" /><code>{"private static string ProjectPath { get; }"}</code> | `Assets/` plus `BasePath`, which differs for Android and standalone. |
+| <Link id="m-texturespath" /><code>{"private static string TexturesPath { get; }"}</code> | Project folder for baked atlas textures, under `ProjectPath`. |
+| <Link id="m-verticaltakensize" /><code>{"private int VerticalTakenSize { get; }"}</code> | How many of the smallest textures fit down the atlas height. |
 
 </details>
 
@@ -97,16 +97,16 @@ Asset describing a texture atlas: which materials it combines into one baked mat
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-blit" /><code>{"private void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material)"}</code> |
-| <Link id="m-clearrt" /><code>{"private void ClearRT(RenderTexture renderTexture)"}</code> |
-| <Link id="m-deletetexture" /><code>{"private void DeleteTexture(string textureName)"}</code> |
-| <Link id="m-deletetexture-2" /><code>{"private void DeleteTexture(string textureBasePath, string textureName)"}</code> |
-| <Link id="m-fixmeshuvs" /><code>{"private Mesh FixMeshUVs(List<int> triangles, Vector4 offsetScale, Mesh workingMesh, bool hasMultipleSubmeshes, int subMeshIndex, bool isOriginal)"}</code> |
-| <Link id="m-getshader" /><code>{"private Shader GetShader()"}</code> |
-| <Link id="m-savetofile" /><code>{"private bool SaveToFile(string basePath, string textureName, RenderTexture renderTexture, bool isLinear, TextureFormat format = 4)"}</code> |
-| <Link id="m-settexture" /><code>{"private void SetTexture(string textureName, bool isNormal)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blit" /><code>{"private void Blit(bool rendersEmission, RenderTexture diffuseRT, RenderTexture normalRT, RenderTexture emissionRT, Texture2D defaultWhiteTexture, Texture2D defaultNormal, Texture2D defaultEmission, Vector4 rect, Vector4 interiorRect, Material material)"}</code> | Picks the shader-specific blit for a material and draws its textures into the atlas render textures. Logs an error for unmapped shaders. |
+| <Link id="m-clearrt" /><code>{"private void ClearRT(RenderTexture renderTexture)"}</code> | Clears a render texture to transparent, restoring the previously active one. |
+| <Link id="m-deletetexture" /><code>{"private void DeleteTexture(string textureName)"}</code> | Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty. |
+| <Link id="m-deletetexture-2" /><code>{"private void DeleteTexture(string textureBasePath, string textureName)"}</code> | Deletes the atlas PNG for a texture name from disk. The one-argument overload is empty. |
+| <Link id="m-fixmeshuvs" /><code>{"private Mesh FixMeshUVs(List<int> triangles, Vector4 offsetScale, Mesh workingMesh, bool hasMultipleSubmeshes, int subMeshIndex, bool isOriginal)"}</code> | Rewrites a mesh's UVs for the atlas rect: writes offset/scale into UV channel 3, or remaps UV0, by `uvFixType`. Clones originals first. |
+| <Link id="m-getshader" /><code>{"private Shader GetShader()"}</code> | Finds the hidden atlased shader for `type`, adding a `Texcoord` suffix for that UV mode. Used by `UpdateShader`. |
+| <Link id="m-savetofile" /><code>{"private bool SaveToFile(string basePath, string textureName, RenderTexture renderTexture, bool isLinear, TextureFormat format = 4)"}</code> | Reads a render texture back to a PNG on disk. Returns false and writes nothing if every pixel is empty. |
+| <Link id="m-settexture" /><code>{"private void SetTexture(string textureName, bool isNormal)"}</code> | Empty in this build. |
 
 </details>
 

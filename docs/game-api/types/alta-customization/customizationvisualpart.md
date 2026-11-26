@@ -29,12 +29,12 @@ Base component for a cosmetic visual part. Handles show, hide and argument chang
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isprimary" /><code>{"private bool isPrimary"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |
-| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationslotset">{"PlayerCustomizationSlotSet"}</Link>{" slots"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isprimary" /><code>{"private bool isPrimary"}</code> | Backing field for `IsPrimary`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; attach, detach and argument errors per handler are logged and swallowed. |
+| <Link id="m-priority" /><code>{"private int priority"}</code> | Backing field for `Priority`. |
+| <Link id="m-slots" /><code>{"private "}<Link to="/game-api/types/alta-customization/playercustomizationslotset">{"PlayerCustomizationSlotSet"}</Link>{" slots"}</code> | Backing slot set for `Slots`. |
 
 </details>
 

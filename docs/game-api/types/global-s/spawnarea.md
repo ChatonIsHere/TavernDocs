@@ -33,17 +33,17 @@ A circle on the ground where things (or players) spawn. Gives repeatable positio
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-avoidcastradius" /><code>{"private float avoidCastRadius"}</code> |
-| <Link id="m-avoidlayers" /><code>{"private LayerMask avoidLayers"}</code> |
-| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> |
-| <Link id="m-identifier" /><code>{"private "}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" identifier"}</code> |
-| <Link id="m-isaligningnormal" /><code>{"private bool isAligningNormal"}</code> |
-| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> |
-| <Link id="m-maxiterations" /><code>{"private int maxIterations"}</code> |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |
-| <Link id="m-size" /><code>{"private float size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-avoidcastradius" /><code>{"private float avoidCastRadius"}</code> | Radius checked around a spot for avoid-layer objects. Below 0 skips the check. |
+| <Link id="m-avoidlayers" /><code>{"private LayerMask avoidLayers"}</code> | Layers that block a spawn spot, both when hit by the ground ray and nearby. |
+| <Link id="m-groundlayers" /><code>{"private LayerMask groundLayers"}</code> | Layers counted as ground for the downward raycast. |
+| <Link id="m-identifier" /><code>{"private "}<Link to="/game-api/types/global-s/spawnareaidentifier">{"SpawnAreaIdentifier"}</Link>{" identifier"}</code> | Backing field for `Identifier`. Non-default areas register in `InstanceMap`, for example the respawn point. |
+| <Link id="m-isaligningnormal" /><code>{"private bool isAligningNormal"}</code> | Whether spawn rotation tilts to match the ground normal. |
+| <Link id="m-maxacceptableangledot" /><code>{"private float maxAcceptableAngleDot"}</code> | Lowest ground normal y (set from an angle) a spot can have. -1 allows any slope. |
+| <Link id="m-maxiterations" /><code>{"private int maxIterations"}</code> | Random tries before falling back to the area's centre (100 by default). |
+| <Link id="m-seed" /><code>{"private int seed"}</code> | Random seed picked in `Awake`, so the same index gives the same spot during a session. |
+| <Link id="m-size" /><code>{"private float size"}</code> | Radius of the circle spawn spots are picked in. |
 
 </details>
 
@@ -64,11 +64,11 @@ A circle on the ground where things (or players) spawn. Gives repeatable positio
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-setsize" /><code>{"private void ISpawnPositions.SetSize(float size)"}</code> |
-| <Link id="m-validposition" /><code>{"private bool ValidPosition(ref Vector3 position, ref Quaternion rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Removes the area from `InstanceMap`. |
+| <Link id="m-setsize" /><code>{"private void ISpawnPositions.SetSize(float size)"}</code> | Sets the spawn circle's radius. |
+| <Link id="m-validposition" /><code>{"private bool ValidPosition(ref Vector3 position, ref Quaternion rotation)"}</code> | Raycasts down to ground near the point and checks the slope and that nothing in the avoid layers is nearby. |
 
 </details>
 

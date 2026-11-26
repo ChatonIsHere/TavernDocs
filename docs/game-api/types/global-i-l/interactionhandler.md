@@ -1,6 +1,6 @@
 ---
 title: "InteractionHandler"
-description: "delegate InteractionHandler in Root.Township."
+description: "Callback for an interaction between an Interactor and an Interactable."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractionHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for an interaction between an `Interactor` and an `Interactable`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MulticastDelegate`

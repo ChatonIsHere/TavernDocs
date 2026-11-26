@@ -28,11 +28,11 @@ Asset that stores saved transforms for a hierarchy by object name and can load t
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
-| <Link id="m-savedtransforms" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransforms"}</code> |
-| <Link id="m-savedtransformslist" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransformsList"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> | Name for this save in the editor. Default "Test". |
+| <Link id="m-savedtransforms" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransforms"}</code> | Backing dictionary for `SavedTransforms`, saves by transform name. Built from the list on first read. |
+| <Link id="m-savedtransformslist" /><code>{"private List<"}<Link to="/game-api/types/global-t-x/transformsaveobject">{"TransformSaveObject"}</Link>{"> savedTransformsList"}</code> | The saved transforms as a serialized list. |
 
 </details>
 
@@ -55,11 +55,11 @@ Asset that stores saved transforms for a hierarchy by object name and can load t
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-recursiveload" /><code>{"private void RecursiveLoad(Transform transform)"}</code> |
-| <Link id="m-recursivesave" /><code>{"private void RecursiveSave(Transform transform, bool isLocalSave)"}</code> |
-| <Link id="m-savetransform" /><code>{"private void SaveTransform(Transform transform, bool isLocalSave)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-recursiveload" /><code>{"private void RecursiveLoad(Transform transform)"}</code> | Applies saved values to a transform and all its children, matched by name. |
+| <Link id="m-recursivesave" /><code>{"private void RecursiveSave(Transform transform, bool isLocalSave)"}</code> | Calls `SaveTransform` on a transform and all its children. |
+| <Link id="m-savetransform" /><code>{"private void SaveTransform(Transform transform, bool isLocalSave)"}</code> | Empty in this build, so `Save` only clears the list. |
 
 </details>
 

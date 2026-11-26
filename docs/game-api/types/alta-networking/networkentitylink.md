@@ -45,9 +45,9 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -64,10 +64,10 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-deregisterentity" /><code>{"private static void DeregisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-registerentity" /><code>{"private static void RegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deregisterentity" /><code>{"private static void DeregisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Decrements `LinksWithEntities` when a link is emptied of a real entity. |
+| <Link id="m-registerentity" /><code>{"private static void RegisterEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Increments `LinksWithEntities` when a link is filled with a real entity. |
 
 </details>
 

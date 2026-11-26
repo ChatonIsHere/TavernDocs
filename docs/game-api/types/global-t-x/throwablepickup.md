@@ -1,6 +1,6 @@
 ---
 title: "ThrowablePickup"
-description: "Base for custom throw behaviour (ThrowAlignHelper)."
+description: "Base for pickups that act on themselves in flight after being thrown, such as turning to face their direction of travel."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 An **abstract class** in `Root.Township`, no namespace.
 
-Base for custom throw behaviour (`ThrowAlignHelper`).
+Base for pickups that act on themselves in flight after being thrown, such as turning to face their direction of travel. Subclasses implement `ThrowBehaviour`, which runs each physics step until the pickup hits something, is grabbed or is docked.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `MonoBehaviour`
@@ -28,40 +28,40 @@ Base for custom throw behaviour (`ThrowAlignHelper`).
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-pickup" /><code>{"protected "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pickup" /><code>{"protected "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | The pickup on this object. |
 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> |
-| <Link id="m-lerpovertime" /><code>{"private AnimationCurve lerpOverTime"}</code> |
-| <Link id="m-minvelocitysquared" /><code>{"private float minVelocitySquared"}</code> |
-| <Link id="m-timetofulllerp" /><code>{"private float timeToFullLerp"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currenttime" /><code>{"private float currentTime"}</code> | Normalised time since the throw, 0 to 1. |
+| <Link id="m-lerpovertime" /><code>{"private AnimationCurve lerpOverTime"}</code> | Curve giving the behaviour's strength over normalised flight time. |
+| <Link id="m-minvelocitysquared" /><code>{"private float minVelocitySquared"}</code> | Squared speed below which the behaviour doesn't run. |
+| <Link id="m-timetofulllerp" /><code>{"private float timeToFullLerp"}</code> | Seconds for `currentTime` to reach 1. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-resetvalues" /><code>{"protected virtual void ResetValues()"}</code> |
-| <Link id="m-throwbehaviour" /><code>{"protected abstract void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-resetvalues" /><code>{"protected virtual void ResetValues()"}</code> | Resets the lerp time to 0; subclasses can reset their own state too. |
+| <Link id="m-throwbehaviour" /><code>{"protected abstract void ThrowBehaviour(Vector3 velocity, float throwMagnitude)"}</code> | What the subclass does each physics step in flight, given the velocity and a 0 to 1 strength from `lerpOverTime`. |
 
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkstart" /><code>{"private void CheckStart("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-dockedendalign" /><code>{"private void DockedEndAlign("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> |
-| <Link id="m-interactendalign" /><code>{"private void InteractEndAlign("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks release, grab and dock events and starts disabled. |
+| <Link id="m-checkstart" /><code>{"private void CheckStart("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Enables the flight behaviour once nobody is holding the pickup. |
+| <Link id="m-dockedendalign" /><code>{"private void DockedEndAlign("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Stops the flight behaviour when the pickup is docked. |
+| <Link id="m-fixedupdate" /><code>{"private void FixedUpdate()"}</code> | Advances the lerp time and calls `ThrowBehaviour` with the velocity and curve weight while moving fast enough. |
+| <Link id="m-interactendalign" /><code>{"private void InteractEndAlign("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Stops the flight behaviour when the pickup is grabbed. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Stops the flight behaviour on any collision. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Resets the values when the flight starts. |
 
 </details>

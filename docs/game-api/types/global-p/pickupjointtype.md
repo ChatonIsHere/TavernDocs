@@ -1,6 +1,6 @@
 ---
 title: "PickUpJointType"
-description: "enum PickUpJointType in Root.Township."
+description: "How a held pickup is attached to the hand: fixed, spring, velocity-driven or custom joints, or no joint."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickUpJointType
 
 An **enum** in `Root.Township`, no namespace.
+
+How a held pickup is attached to the hand: fixed, spring, velocity-driven or custom joints, or no joint. `Pickup` defaults to `VelocityJoint`.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 

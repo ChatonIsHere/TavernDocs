@@ -1,6 +1,6 @@
 ---
 title: "Schmeechee.OperationType"
-description: "enum Schmeechee.OperationType in Root.Township."
+description: "Which Schmeechee state a Schmeechee AI operation checks: Grounded or UpsideDown."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Schmeechee.OperationType
 
 An **enum** in `Root.Township`, `Alta.Intelligence`.
+
+Which Schmeechee state a Schmeechee AI operation checks: `Grounded` or `UpsideDown`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`Schmeechee`](/game-api/types/alta-intelligence/schmeechee)

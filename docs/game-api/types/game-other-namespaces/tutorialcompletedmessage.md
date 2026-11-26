@@ -1,6 +1,6 @@
 ---
 title: "TutorialCompletedMessage"
-description: "class TutorialCompletedMessage in Root.Township."
+description: "Title and description text shown when a micro tutorial is completed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
+Title and description text shown when a micro tutorial is completed. Set in the inspector.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `ATT.MicroTutorial`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> |
-| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-description" /><code>{"string Description { get; private set; }"}</code> | Body text of the completion message. |
+| <Link id="m-title" /><code>{"string Title { get; private set; }"}</code> | Heading of the completion message. |
 
 ## Used in
 

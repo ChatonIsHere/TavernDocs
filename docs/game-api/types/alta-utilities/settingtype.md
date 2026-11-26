@@ -1,6 +1,6 @@
 ---
 title: "SettingType"
-description: "enum SettingType in Root.Township."
+description: "Kind of setting control in a settings menu: toggle, scroll, enum float, command, multi command or assisted multi command."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SettingType
 
 An **enum** in `Root.Township`, `Alta.Utilities`.
+
+Kind of setting control in a settings menu: toggle, scroll, enum float, command, multi command or assisted multi command. Used to pick the menu widget, as in `DevToolsBoard`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

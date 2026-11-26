@@ -34,20 +34,20 @@ Cave generation plugin that lines the cave up so its biggest room sits behind th
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-floorheight" /><code>{"private float floorHeight"}</code> |
-| <Link id="m-layerheightunits" /><code>{"private float layerHeightUnits"}</code> |
-| <Link id="m-progresslerpvalue" /><code>{"private AnimationCurve progressLerpValue"}</code> |
-| <Link id="m-solidfloorend" /><code>{"private AnimationCurve solidFloorEnd"}</code> |
-| <Link id="m-solidfloorstart" /><code>{"private AnimationCurve solidFloorStart"}</code> |
-| <Link id="m-solidroofend" /><code>{"private AnimationCurve solidRoofEnd"}</code> |
-| <Link id="m-solidroofstart" /><code>{"private AnimationCurve solidRoofStart"}</code> |
-| <Link id="m-stepdepth" /><code>{"private float stepDepth"}</code> |
-| <Link id="m-steps" /><code>{"private int steps"}</code> |
-| <Link id="m-tunnels" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/roomfixplugin-tunnel">{"RoomFixPlugin.Tunnel"}</Link>{"[] tunnels"}</code> |
-| <Link id="m-width" /><code>{"private AnimationCurve width"}</code> |
-| <Link id="m-widthlerpvalue" /><code>{"private AnimationCurve widthLerpValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-floorheight" /><code>{"private float floorHeight"}</code> | Height of the floor in the room the passage starts from (7.5 by default). |
+| <Link id="m-layerheightunits" /><code>{"private float layerHeightUnits"}</code> | Height drop between one cave layer and the next (15 by default). |
+| <Link id="m-progresslerpvalue" /><code>{"private AnimationCurve progressLerpValue"}</code> | Curve along the passage scaling how strongly it carves. |
+| <Link id="m-solidfloorend" /><code>{"private AnimationCurve solidFloorEnd"}</code> | Curve along the passage for the top of the solid floor band. |
+| <Link id="m-solidfloorstart" /><code>{"private AnimationCurve solidFloorStart"}</code> | Curve along the passage for the bottom of the solid floor band. |
+| <Link id="m-solidroofend" /><code>{"private AnimationCurve solidRoofEnd"}</code> | Curve along the passage for the top of the roof band. |
+| <Link id="m-solidroofstart" /><code>{"private AnimationCurve solidRoofStart"}</code> | Curve along the passage for the bottom of the roof band. |
+| <Link id="m-stepdepth" /><code>{"private float stepDepth"}</code> | Horizontal length of one step in the passage between layers. |
+| <Link id="m-steps" /><code>{"private int steps"}</code> | Number of steps in the passage. With `stepDepth` it sets how far the next layer is offset. |
+| <Link id="m-tunnels" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/roomfixplugin-tunnel">{"RoomFixPlugin.Tunnel"}</Link>{"[] tunnels"}</code> | Tunnel definitions. Not read anywhere else in this build. |
+| <Link id="m-width" /><code>{"private AnimationCurve width"}</code> | Curve along the passage giving its half width. |
+| <Link id="m-widthlerpvalue" /><code>{"private AnimationCurve widthLerpValue"}</code> | Curve across the passage width scaling how strongly it carves towards the edges. |
 
 </details>
 

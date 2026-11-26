@@ -1,6 +1,6 @@
 ---
 title: "IFutureUserActions"
-description: "interface IFutureUserActions in Alta.Api.Client."
+description: "Alta web API calls that store an action to run for an outside user (an Oculus user, for example) once they have an Alta account."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,16 +12,18 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API calls that store an action to run for an outside user (an Oculus user, for example) once they have an Alta account. `ApiAccess.ApiClient.FutureUserActions`.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`FutureUserActionsClient`](/game-api/types/assembly-api-client/futureuseractionsclient)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-addoculusfriendasaltafriend" /><code>{"Task AddOculusFriendAsAltaFriend(ulong oculusId)"}</code> |
-| <Link id="m-createcustomaction" /><code>{"Task CreateCustomAction("}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" userType, ulong userIdentifier, "}<Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" actionType, object actionData)"}</code> |
-| <Link id="m-inviteoculusfriendtogroup" /><code>{"Task InviteOculusFriendToGroup(ulong oculusId, int groupId)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addoculusfriendasaltafriend" /><code>{"Task AddOculusFriendAsAltaFriend(ulong oculusId)"}</code> | Stores a request to make an Oculus user the logged-in user's friend. |
+| <Link id="m-createcustomaction" /><code>{"Task CreateCustomAction("}<Link to="/game-api/types/assembly-api-models/usertype">{"UserType"}</Link>{" userType, ulong userIdentifier, "}<Link to="/game-api/types/assembly-api-models/futureuseractiontype">{"FutureUserActionType"}</Link>{" actionType, object actionData)"}</code> | Stores any future action for a user of the given type, with free-form action data. |
+| <Link id="m-inviteoculusfriendtogroup" /><code>{"Task InviteOculusFriendToGroup(ulong oculusId, int groupId)"}</code> | Stores an invite to a group for an Oculus user. |
 
 ## Used in
 

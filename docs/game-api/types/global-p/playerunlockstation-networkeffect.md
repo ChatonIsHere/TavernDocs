@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnlockStation.NetworkEffect"
-description: "enum PlayerUnlockStation.NetworkEffect in Root.Township."
+description: "Effect a player unlock station plays on clients: unlock given, challenge complete, or unlock cancelled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerUnlockStation.NetworkEffect
 
 An **enum** in `Root.Township`, no namespace.
+
+Effect a player unlock station plays on clients: unlock given, challenge complete, or unlock cancelled.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerUnlockStation`](/game-api/types/global-p/playerunlockstation)

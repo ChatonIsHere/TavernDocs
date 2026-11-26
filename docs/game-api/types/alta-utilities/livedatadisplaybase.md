@@ -29,10 +29,10 @@ Base asset for one line of the live debug data display (a title and a value). Su
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-editoronly" /><code>{"private bool editorOnly"}</code> |
-| <Link id="m-overridetitle" /><code>{"private string overrideTitle"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-editoronly" /><code>{"private bool editorOnly"}</code> | Backing field for `EditorOnly`. When set, `IsValid` is false outside the editor. |
+| <Link id="m-overridetitle" /><code>{"private string overrideTitle"}</code> | Optional title shown instead of the subclass's `Title`. |
 
 </details>
 
@@ -47,9 +47,9 @@ Base asset for one line of the live debug data display (a title and a value). Su
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-finaltitle" /><code>{"private string FinalTitle { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-finaltitle" /><code>{"private string FinalTitle { get; }"}</code> | `overrideTitle` if it is set, otherwise the subclass's `Title`. Used as the prefix of `Output`. |
 
 </details>
 

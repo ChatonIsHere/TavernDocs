@@ -1,6 +1,6 @@
 ---
 title: "RegionInfo"
-description: "class RegionInfo in Alta.Api.DataTransferModels."
+description: "A server region from the Alta API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+A server region from the Alta API.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-countrycode" /><code>{"string CountryCode { get; set; }"}</code> | Country code of the region. |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; set; }"}</code> | Name shown to players. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Internal region name. |
+| <Link id="m-pingaddress" /><code>{"IPAddress PingAddress { get; set; }"}</code> | IP address to ping to measure latency to the region. |
 
 ## Used in
 

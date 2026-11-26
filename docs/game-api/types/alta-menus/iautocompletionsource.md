@@ -1,6 +1,6 @@
 ---
 title: "IAutoCompletionSource"
-description: "interface IAutoCompletionSource in Root.Township."
+description: "Something that supplies a list of strings for an autocomplete text field, such as object names in a folder."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Meta.UI`.
 
+Something that supplies a list of strings for an autocomplete text field, such as object names in a folder.
+
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Derived types** [`ObjectNamesInFolder`](/game-api/types/alta-menus/objectnamesinfolder)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-completions" /><code>{"string[] Completions { get; }"}</code> | The strings offered as completions. |
 
 ## Used in
 

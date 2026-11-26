@@ -1,6 +1,6 @@
 ---
 title: "ConsoleWindow.CtrlType"
-description: "enum ConsoleWindow.CtrlType in Root.Township."
+description: "Windows console control signals (Ctrl+C, Ctrl+Break, close, logoff, shutdown) passed to the console control handler."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConsoleWindow.CtrlType
 
 An **enum** in `Root.Township`, `WindowsConsole`.
+
+Windows console control signals (Ctrl+C, Ctrl+Break, close, logoff, shutdown) passed to the console control handler.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Nested in** [`ConsoleWindow`](/game-api/types/game-other-namespaces/consolewindow)

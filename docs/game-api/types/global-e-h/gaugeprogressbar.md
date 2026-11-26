@@ -1,6 +1,6 @@
 ---
 title: "GaugeProgressBar"
-description: "class GaugeProgressBar in Root.Township."
+description: "A progress bar drawn with a gauge shader, with an extra alpha limit that hides the renderers at zero."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GaugeProgressBar
 
 A **class** in `Root.Township`, no namespace.
+
+A progress bar drawn with a gauge shader, with an extra alpha limit that hides the renderers at zero. Client side.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`ProgressBar`](/game-api/types/global-p/progressbar)
@@ -26,33 +28,33 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> |
-| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> |
-| <Link id="m-alpha" /><code>{"private float alpha"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alphalimit" /><code>{"private static readonly int _AlphaLimit"}</code> | Shader property id for `_AlphaLimit`. |
+| <Link id="m-fillprogress" /><code>{"private static readonly int _FillProgress"}</code> | Shader property id for `_FillProgress`. |
+| <Link id="m-alpha" /><code>{"private float alpha"}</code> | Backing field for `Alpha`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> |
-| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alpha-2" /><code>{"float Alpha { get; set; }"}</code> | Alpha limit for the gauge. Zero hides the renderers. |
+| <Link id="m-progressvariable" /><code>{"override int ProgressVariable { get; }"}</code> | Uses the `_FillProgress` shader property for progress. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"protected override void OnValidate()"}</code> | Editor: refreshes the bar and alpha on prefab instances. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatealpha" /><code>{"private void UpdateAlpha()"}</code> | Sets `_AlphaLimit` on the renderers, or turns them off when alpha is zero. |
 
 </details>
 

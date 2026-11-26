@@ -1,6 +1,6 @@
 ---
 title: "InventoryChangeType"
-description: "enum InventoryChangeType in Root.Township."
+description: "Kind of inventory change in the pickup event stream log: pickup, drop, dock or undock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InventoryChangeType
 
 An **enum** in `Root.Township`, `ATT.PlayerStates`.
+
+Kind of inventory change in the pickup event stream log: pickup, drop, dock or undock.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

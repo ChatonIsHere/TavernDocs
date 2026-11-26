@@ -1,6 +1,6 @@
 ---
 title: "ReportStatus"
-description: "enum ReportStatus in Alta.Api.DataTransferModels."
+description: "State of a player report: awaiting action, ignored, or acted on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ReportStatus
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+State of a player report: awaiting action, ignored, or acted on.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

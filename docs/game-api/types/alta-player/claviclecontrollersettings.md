@@ -30,20 +30,20 @@ Asset with the curves and limits for turning a player's collarbones toward where
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-anglecrossfade" /><code>{"private AnimationCurve angleCrossfade"}</code> |
-| <Link id="m-claviclexrotationmultiplier" /><code>{"private float clavicleXRotationMultiplier"}</code> |
-| <Link id="m-clavicleyrotationmultiplier" /><code>{"private float clavicleYRotationMultiplier"}</code> |
-| <Link id="m-claviclezrotationmultiplier" /><code>{"private float clavicleZRotationMultiplier"}</code> |
-| <Link id="m-isusingelbowhandaverageforyrotation" /><code>{"private bool isUsingElbowHandAverageForYRotation"}</code> |
-| <Link id="m-targetxtoclaviclerotation" /><code>{"private AnimationCurve targetXToClavicleRotation"}</code> |
-| <Link id="m-targetytoclaviclerotation" /><code>{"private AnimationCurve targetYToClavicleRotation"}</code> |
-| <Link id="m-targetztoclaviclerotation" /><code>{"private AnimationCurve targetZToClavicleRotation"}</code> |
-| <Link id="m-yrotationmax" /><code>{"private float yRotationMax"}</code> |
-| <Link id="m-yrotationmin" /><code>{"private float yRotationMin"}</code> |
-| <Link id="m-zrotationmax" /><code>{"private float zRotationMax"}</code> |
-| <Link id="m-zrotationmin" /><code>{"private float zRotationMin"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-anglecrossfade" /><code>{"private AnimationCurve angleCrossfade"}</code> | Blends the z rotation between the x-position and z-position curves by the hand's angle around the body (0 across, 90 in front, -90 behind). |
+| <Link id="m-claviclexrotationmultiplier" /><code>{"private float clavicleXRotationMultiplier"}</code> | Scales the result of `targetXToClavicleRotation`. |
+| <Link id="m-clavicleyrotationmultiplier" /><code>{"private float clavicleYRotationMultiplier"}</code> | Scales the result of `targetYToClavicleRotation`. |
+| <Link id="m-claviclezrotationmultiplier" /><code>{"private float clavicleZRotationMultiplier"}</code> | Scales the result of `targetZToClavicleRotation`. |
+| <Link id="m-isusingelbowhandaverageforyrotation" /><code>{"private bool isUsingElbowHandAverageForYRotation"}</code> | Uses the average of the elbow and hand targets' height for the y rotation, instead of the hand alone. |
+| <Link id="m-targetxtoclaviclerotation" /><code>{"private AnimationCurve targetXToClavicleRotation"}</code> | Maps the hand's sideways position (relative to the body) to clavicle z rotation. |
+| <Link id="m-targetytoclaviclerotation" /><code>{"private AnimationCurve targetYToClavicleRotation"}</code> | Maps the hand's height (relative to the body) to clavicle y rotation, the shrug. |
+| <Link id="m-targetztoclaviclerotation" /><code>{"private AnimationCurve targetZToClavicleRotation"}</code> | Maps the hand's forward position (relative to the body) to clavicle z rotation. |
+| <Link id="m-yrotationmax" /><code>{"private float yRotationMax"}</code> | Upper clamp for the clavicle's y rotation in degrees. Default 15. |
+| <Link id="m-yrotationmin" /><code>{"private float yRotationMin"}</code> | Lower clamp for the clavicle's y rotation in degrees. Default -15. |
+| <Link id="m-zrotationmax" /><code>{"private float zRotationMax"}</code> | Upper clamp for the clavicle's z rotation in degrees. Default 15. |
+| <Link id="m-zrotationmin" /><code>{"private float zRotationMin"}</code> | Lower clamp for the clavicle's z rotation in degrees. Default -15. |
 
 </details>
 

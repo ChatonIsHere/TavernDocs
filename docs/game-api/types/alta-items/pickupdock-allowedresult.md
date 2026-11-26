@@ -1,6 +1,6 @@
 ---
 title: "PickupDock.AllowedResult"
-description: "enum PickupDock.AllowedResult in Root.Township."
+description: "Why a dock accepted or refused a pickup: Ok, or a reason such as wrong item, tag filter, full or crafting rules."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDock.AllowedResult
 
 An **enum** in `Root.Township`, `Alta.Inventory`.
+
+Why a dock accepted or refused a pickup: `Ok`, or a reason such as wrong item, tag filter, full or crafting rules.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`PickupDock`](/game-api/types/alta-items/pickupdock)

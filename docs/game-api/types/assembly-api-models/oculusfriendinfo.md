@@ -1,6 +1,6 @@
 ---
 title: "OculusFriendInfo"
-description: "class OculusFriendInfo in Alta.Api.DataTransferModels."
+description: "A friendship returned for an Oculus friends list, from LowLevelApiClient.GetOculusFriendships."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # OculusFriendInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+A friendship returned for an Oculus friends list, from `LowLevelApiClient.GetOculusFriendships`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`FriendshipInfo`](/game-api/types/assembly-api-models/friendshipinfo)
@@ -23,9 +25,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-oculusidentifier" /><code>{"ulong OculusIdentifier { get; set; }"}</code> | The friend's Oculus user id. |
 
 ## Used in
 

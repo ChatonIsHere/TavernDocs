@@ -1,6 +1,6 @@
 ---
 title: "ServerBoardType"
-description: "enum ServerBoardType in Root.Township."
+description: "Which list a server board in the menu shows: public servers, my servers, open servers or discover."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ServerBoardType
 
 An **enum** in `Root.Township`, no namespace.
+
+Which list a server board in the menu shows: public servers, my servers, open servers or discover.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

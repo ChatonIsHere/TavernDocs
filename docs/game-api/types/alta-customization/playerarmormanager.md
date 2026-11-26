@@ -1,6 +1,6 @@
 ---
 title: "PlayerArmorManager"
-description: "class PlayerArmorManager in Root.Township."
+description: "The player's armour manager, keyed by EquipmentSlot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerArmorManager
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+The player's armour manager, keyed by `EquipmentSlot`. Found on `PlayerCustomizationHandler.ArmorManager`.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`ArmorManager<EquipmentSlot>`](/game-api/types/alta-customization/armormanager-tslot)

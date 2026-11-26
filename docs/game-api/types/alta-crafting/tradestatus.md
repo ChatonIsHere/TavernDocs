@@ -1,6 +1,6 @@
 ---
 title: "TradeStatus"
-description: "enum TradeStatus in Root.Township."
+description: "State of a trade vendor: unoccupied (no owner), out of stock, or open for sale."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TradeStatus
 
 An **enum** in `Root.Township`, `Alta.Trading`.
+
+State of a trade vendor: unoccupied (no owner), out of stock, or open for sale.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 

@@ -1,6 +1,6 @@
 ---
 title: "TimberBlockEvent"
-description: "delegate TimberBlockEvent in Root.Township."
+description: "Callback with a TimberBlock, used for its Done and Modified events and the chiselling deck's block events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimberBlockEvent
 
 A **delegate** in `Root.Township`, `Alta.Carpentry`.
+
+Callback with a `TimberBlock`, used for its `Done` and `Modified` events and the chiselling deck's block events.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "TargetResult.Result"
-description: "class TargetResult.Result in Root.Township."
+description: "Debug record of how one AI action scored against a target."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TargetResult.Result
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Debug record of how one AI action scored against a target. `ActionDecider` passes null for it in this build, so it is probably unused.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`TargetResult`](/game-api/types/alta-intelligence/targetresult)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; set; }"}</code> |
-| <Link id="m-basemultiplier" /><code>{"float BaseMultiplier { get; set; }"}</code> |
-| <Link id="m-steps" /><code>{"List<float> Steps { get; }"}</code> |
-| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-action" /><code><Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" Action { get; set; }"}</code> | The action being scored. |
+| <Link id="m-basemultiplier" /><code>{"float BaseMultiplier { get; set; }"}</code> | The action's starting multiplier. |
+| <Link id="m-steps" /><code>{"List<float> Steps { get; }"}</code> | Probably the score after each operation. |
+| <Link id="m-weight" /><code>{"float Weight { get; set; }"}</code> | Final score. |
 
 ## Used in
 

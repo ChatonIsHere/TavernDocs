@@ -1,6 +1,6 @@
 ---
 title: "ImpostorType"
-description: "enum ImpostorType in Root.Township."
+description: "Projection used when baking an Amplify impostor: spherical, octahedron or hemi-octahedron."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpostorType
 
 An **enum** in `Root.Township`, no namespace.
+
+Projection used when baking an Amplify impostor: spherical, octahedron or hemi-octahedron.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

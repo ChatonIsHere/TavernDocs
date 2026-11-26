@@ -1,6 +1,6 @@
 ---
 title: "GarbageCollectTimer"
-description: "On the scene."
+description: "Headless server only: runs a non-blocking garbage collection every few seconds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-On the scene. Only runs when the process is headless: every interval it asks for a non-blocking, optimized `GC.Collect` of every generation.
+Headless server only: runs a non-blocking garbage collection every few seconds. Only the first instance starts the loop.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`
@@ -29,13 +29,13 @@ On the scene. Only runs when the process is headless: every interval it asks for
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-interval" /><code>{"private float interval"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-mode" /><code>{"private GCCollectionMode mode"}</code> |
-| <Link id="m-nexttime" /><code>{"private float nextTime"}</code> |
-| <Link id="m-rungccollect" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" runGcCollect"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interval" /><code>{"private float interval"}</code> | Seconds between collections (2 by default). |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-mode" /><code>{"private GCCollectionMode mode"}</code> | GC collection mode (Optimized by default). |
+| <Link id="m-nexttime" /><code>{"private float nextTime"}</code> | Not used. |
+| <Link id="m-rungccollect" /><code>{"private static "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" runGcCollect"}</code> | The shared GC coroutine, so only one runs. |
 
 </details>
 
@@ -44,9 +44,9 @@ On the scene. Only runs when the process is headless: every interval it asks for
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-rungarbagecollect" /><code>{"private IEnumerator RunGarbageCollect() (iterator)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-rungarbagecollect" /><code>{"private IEnumerator RunGarbageCollect() (iterator)"}</code> | Coroutine that collects all generations every `interval` seconds, forever. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Starts the shared GC loop if running headless and it isn't already running. |
 
 </details>

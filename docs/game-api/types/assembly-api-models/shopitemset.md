@@ -1,6 +1,6 @@
 ---
 title: "ShopItemSet"
-description: "class ShopItemSet in Alta.Api.DataTransferModels."
+description: "API model for a set of shop items sold together under one SKU."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShopItemSet
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+API model for a set of shop items sold together under one SKU.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`IIdentifiable`](/game-api/types/assembly-api-models/iidentifiable)
@@ -23,12 +25,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> |
-| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{"> Items { get; set; }"}</code> |
-| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"int Id { get; set; }"}</code> | The set's id. |
+| <Link id="m-items" /><code>{"IEnumerable<"}<Link to="/game-api/types/assembly-api-models/shopitemidentifier">{"ShopItemIdentifier"}</Link>{"> Items { get; set; }"}</code> | Ids of the shop items in the set. |
+| <Link id="m-sku" /><code>{"string Sku { get; set; }"}</code> | The set's store SKU. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> | What kind of item set this is. |
 
 ## Used in
 

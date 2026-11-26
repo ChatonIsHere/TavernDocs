@@ -30,11 +30,11 @@ A hand gesture asset (such as pointing), matched to a transition on the hand ani
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activefingers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" activeFingers"}</code> |
-| <Link id="m-animatortransitionindex" /><code>{"private int animatorTransitionIndex"}</code> |
-| <Link id="m-gestureforanimationindex" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureForAnimationIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activefingers" /><code>{"private "}<Link to="/game-api/types/global-e-h/handfingers">{"HandFingers"}</Link>{" activeFingers"}</code> | Backing field for `ActiveFingers`, the fingers whose collisions turn on while the gesture is active. |
+| <Link id="m-animatortransitionindex" /><code>{"private int animatorTransitionIndex"}</code> | Backing field for `AnimatorTransitionIndex`. Must match the transition number in the hand animator. |
+| <Link id="m-gestureforanimationindex" /><code>{"private static Dictionary<int, "}<Link to="/game-api/types/global-e-h/handgesturedefinition">{"HandGestureDefinition"}</Link>{"> gestureForAnimationIndex"}</code> | Backing field for `GestureForAnimationIndex`, loaded from the "Gesture Definitions" resources on first use. |
 
 </details>
 

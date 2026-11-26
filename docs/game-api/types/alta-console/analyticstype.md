@@ -1,6 +1,6 @@
 ---
 title: "AnalyticsType"
-description: "enum AnalyticsType in Root.Township."
+description: "Old analytics record categories (combat hit, teleportation, device stats and so on), each mapped to an endpoint name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticsType
 
 An **enum** in `Root.Township`, `Alta.Analytics`.
+
+Old analytics record categories (combat hit, teleportation, device stats and so on), each mapped to an endpoint name. `Analytics.SendRecord` is empty in this build.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 

@@ -1,6 +1,6 @@
 ---
 title: "PurchaseResultType"
-description: "enum PurchaseResultType in Alta.Api.DataTransferModels."
+description: "Outcome of a shop purchase, such as success, not enough shards, already owned or premium only."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PurchaseResultType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Outcome of a shop purchase, such as success, not enough shards, already owned or premium only.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

@@ -1,6 +1,6 @@
 ---
 title: "MultipleNotAllowedAction"
-description: "enum MultipleNotAllowedAction in Root.Township."
+description: "What an Interactable does when a new grab isn't allowed alongside current ones: Replace (drop the old one) or Block (refuse the new one)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MultipleNotAllowedAction
 
 An **enum** in `Root.Township`, no namespace.
+
+What an `Interactable` does when a new grab isn't allowed alongside current ones: Replace (drop the old one) or Block (refuse the new one). NotSet uses the type's default: Replace for pickups, Block otherwise.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 

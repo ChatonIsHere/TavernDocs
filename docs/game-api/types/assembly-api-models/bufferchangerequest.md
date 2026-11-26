@@ -1,6 +1,6 @@
 ---
 title: "BufferChangeRequest"
-description: "class BufferChangeRequest in Alta.Api.DataTransferModels."
+description: "Request body for LowLevelApiClient.RequestBufferChange, which asked Alta's API to change the number of spare servers kept for a fleet and region."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Request body for `LowLevelApiClient.RequestBufferChange`, which asked Alta's API to change the number of spare servers kept for a fleet and region.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-fleet" /><code>{"string Fleet { get; set; }"}</code> |
-| <Link id="m-increase" /><code>{"int Increase { get; set; }"}</code> |
-| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fleet" /><code>{"string Fleet { get; set; }"}</code> | The server fleet name. |
+| <Link id="m-increase" /><code>{"int Increase { get; set; }"}</code> | How much to change the buffer by. |
+| <Link id="m-region" /><code>{"string Region { get; set; }"}</code> | The hosting region. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "UpdateAchievementRequest"
-description: "class UpdateAchievementRequest in Alta.Api.DataTransferModels."
+description: "Body for updating one achievement for a user on the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body for updating one achievement for a user on the Alta web API.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> |
-| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-achievementhash" /><code>{"uint AchievementHash { get; set; }"}</code> | Hash of the achievement. |
+| <Link id="m-iscompleted" /><code>{"bool IsCompleted { get; set; }"}</code> | Whether the achievement is completed. |
 
 ## Used in
 

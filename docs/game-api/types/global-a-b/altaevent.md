@@ -28,10 +28,10 @@ A serializable event with no arguments that fires both an inspector UnityEvent a
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-triggered" /><code>{"private UnityEvent triggered"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger shared by all `AltaEvent` types. |
+| <Link id="m-triggered" /><code>{"private UnityEvent triggered"}</code> | The inspector `UnityEvent` run first on `Invoke`. |
 
 </details>
 
@@ -44,9 +44,9 @@ A serializable event with no arguments that fires both an inspector UnityEvent a
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> | The inspector `UnityEvent`, for validation tools. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "MemoizeHashset<TIn, TOut>.Evaluate"
-description: "delegate MemoizeHashset<TIn, TOut>.Evaluate in Root.Township."
+description: "Function that MemoizeHashset calls to work out a value for a new key; returns false to skip storing it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MemoizeHashset&lt;TIn, TOut&gt;.Evaluate
 
 A **delegate** in `Root.Township`, no namespace.
+
+Function that `MemoizeHashset` calls to work out a value for a new key; returns false to skip storing it.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MemoizeHashset<TIn, TOut>`](/game-api/types/global-m-o/memoizehashset-tin-tout)

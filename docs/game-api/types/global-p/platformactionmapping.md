@@ -27,12 +27,12 @@ The input-to-action mappings for one platform within a controller action mode: w
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-inputtoactionmappings" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/inputtoactionmapping">{"InputToActionMapping"}</Link>{"> inputToActionMappings"}</code> |
-| <Link id="m-leftactiontoinputmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> leftActionToInputMappings"}</code> |
-| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> |
-| <Link id="m-rightactiontoinputmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> rightActionToInputMappings"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inputtoactionmappings" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/inputtoactionmapping">{"InputToActionMapping"}</Link>{"> inputToActionMappings"}</code> | Backing list for `AllInputToActionMappings`, set in the inspector. |
+| <Link id="m-leftactiontoinputmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> leftActionToInputMappings"}</code> | Backing field for `LeftActionToInputMappings`. |
+| <Link id="m-platform" /><code>{"private "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" platform"}</code> | Backing field for `Platform`, the player mode these mappings are for. |
+| <Link id="m-rightactiontoinputmappings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> rightActionToInputMappings"}</code> | Backing field for `RightActionToInputMappings`. |
 
 </details>
 
@@ -50,10 +50,10 @@ The input-to-action mappings for one platform within a controller action mode: w
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-leftactiontoinputmappings-2" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> LeftActionToInputMappings { get; }"}</code> |
-| <Link id="m-rightactiontoinputmappings-2" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> RightActionToInputMappings { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-leftactiontoinputmappings-2" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> LeftActionToInputMappings { get; }"}</code> | Left hand lookup from action to button sets, built on first use. |
+| <Link id="m-rightactiontoinputmappings-2" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> RightActionToInputMappings { get; }"}</code> | Right hand lookup from action to button sets, built on first use. |
 
 </details>
 
@@ -69,11 +69,11 @@ The input-to-action mappings for one platform within a controller action mode: w
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addmapping" /><code>{"private void AddMapping("}<Link to="/game-api/types/global-i-l/inputtoactionmapping">{"InputToActionMapping"}</Link>{" mapping, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" overridePlatform = 0)"}</code> |
-| <Link id="m-addtobuttonsarray" /><code>{"private void AddToButtonsArray(Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> dictionary, "}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" actionType, object[] newButtons)"}</code> |
-| <Link id="m-initializedictionaries" /><code>{"private void InitializeDictionaries()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addmapping" /><code>{"private void AddMapping("}<Link to="/game-api/types/global-i-l/inputtoactionmapping">{"InputToActionMapping"}</Link>{" mapping, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" overridePlatform = 0)"}</code> | Adds a mapping to the list and files its buttons for the platform under the left, right or both hand lookups. |
+| <Link id="m-addtobuttonsarray" /><code>{"private void AddToButtonsArray(Dictionary<"}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{", List<object[]>> dictionary, "}<Link to="/game-api/types/global-c-d/controlleractiontype">{"ControllerActionType"}</Link>{" actionType, object[] newButtons)"}</code> | Adds a button set to an action's list in a hand lookup, making the list if needed. |
+| <Link id="m-initializedictionaries" /><code>{"private void InitializeDictionaries()"}</code> | Builds the left and right hand lookups from every input mapping. |
 
 </details>
 

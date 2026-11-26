@@ -1,6 +1,6 @@
 ---
 title: "DeathEvent"
-description: "class DeathEvent in Root.Township."
+description: "Inspector event that passes a DeathEffect."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeathEvent
 
 A **class** in `Root.Township`, `Alta.Creatures`.
+
+Inspector event that passes a `DeathEffect`. Used for a death effect's start and end events.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`AltaEvent<DeathEffect, DeathUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

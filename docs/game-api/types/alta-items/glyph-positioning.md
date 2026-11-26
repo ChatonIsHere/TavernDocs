@@ -29,12 +29,12 @@ Where a glyph sits on a page: position, rotation and scale, snapped to steps so 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> |
-| <Link id="m-position" /><code>{"private Vector2 position"}</code> |
-| <Link id="m-rotation" /><code>{"private float rotation"}</code> |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-glyph" /><code>{"private "}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph"}</code> | Backing field for `Glyph`, the glyph placed. |
+| <Link id="m-position" /><code>{"private Vector2 position"}</code> | Backing field for `Position`, where the glyph sits on the page. Defaults to (0.5, 0.75). |
+| <Link id="m-rotation" /><code>{"private float rotation"}</code> | Backing field for `Rotation`. |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | Backing field for `Scale` (1 by default). |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "RecyclerOutputSlot.SaveData"
-description: "class RecyclerOutputSlot.SaveData in Root.Township."
+description: "Saved state of one recycler output slot: its index, fill amount and material."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RecyclerOutputSlot.SaveData
 
 A **class** in `Root.Township`, `Alta.Blacksmithing`.
+
+Saved state of one recycler output slot: its index, fill amount and material.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`RecyclerOutputSlot`](/game-api/types/alta-crafting/recycleroutputslot)
@@ -24,11 +26,11 @@ A **class** in `Root.Township`, `Alta.Blacksmithing`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-content" /><code>{"float content"}</code> |
-| <Link id="m-index" /><code>{"int index"}</code> |
-| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-content" /><code>{"float content"}</code> | How much is in the slot. |
+| <Link id="m-index" /><code>{"int index"}</code> | Slot index in the recycler. |
+| <Link id="m-material" /><code><Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{" material"}</code> | Physical material held in the slot. |
 
 ## Used in
 

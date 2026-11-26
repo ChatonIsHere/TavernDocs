@@ -1,6 +1,6 @@
 ---
 title: "AmbienceSpacePoint"
-description: "class AmbienceSpacePoint in Root.Township."
+description: "Client: a point in a SpaceDefinedAtmosphere area that blends between two atmosphere sets as the player moves through it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AmbienceSpacePoint
 
 A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
+
+Client: a point in a `SpaceDefinedAtmosphere` area that blends between two atmosphere sets as the player moves through it.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Inherits or implements** [`SpacePoint`](/game-api/types/global-s/spacepoint)
@@ -27,19 +29,19 @@ A **class** in `Root.Township`, `Alta.Environmental.Atmosphere`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" from"}</code> |
-| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" to"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-from" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" from"}</code> | Backing field for `From`. |
+| <Link id="m-to" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" to"}</code> | Backing field for `To`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-from-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" From { get; }"}</code> |
-| <Link id="m-to-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" To { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-from-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" From { get; }"}</code> | Atmosphere set used at the start of the blend (progress below 0.5). |
+| <Link id="m-to-2" /><code><Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" To { get; }"}</code> | Atmosphere set used at the end of the blend (progress above 0.5). |
 
 ## Used in
 

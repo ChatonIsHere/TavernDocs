@@ -61,11 +61,11 @@ Base for a bar that shows one stat (such as on the player's wrist). Hides itself
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-delayinitialize" /><code>{"private void DelayInitialize()"}</code> |
-| <Link id="m-ontakingphoto" /><code>{"private void OnTakingPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
-| <Link id="m-ontookphoto" /><code>{"private void OnTookPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-delayinitialize" /><code>{"private void DelayInitialize()"}</code> | Runs one frame later to show the tracked stat's starting value. |
+| <Link id="m-ontakingphoto" /><code>{"private void OnTakingPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Hides the bar while a hand camera photo is rendered. |
+| <Link id="m-ontookphoto" /><code>{"private void OnTookPhoto("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" handCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Shows the bar again after the photo, if its visibility group is on. |
 
 </details>
 

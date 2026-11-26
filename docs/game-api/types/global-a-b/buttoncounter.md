@@ -30,26 +30,26 @@ A networked number set with up and down buttons (or a throttle) and shown on tex
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activeplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" activePlayer"}</code> |
-| <Link id="m-amount" /><code>{"private int amount"}</code> |
-| <Link id="m-cap" /><code>{"private int cap"}</code> |
-| <Link id="m-changingfinished" /><code>{"private float changingFinished"}</code> |
-| <Link id="m-changingwaitduration" /><code>{"private float changingWaitDuration"}</code> |
-| <Link id="m-down" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" down"}</code> |
-| <Link id="m-downbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" downButtonPressed"}</code> |
-| <Link id="m-labels" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-textrenderersettings">{"ButtonCounter.TextRendererSettings"}</Link>{"[] labels"}</code> |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
-| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" mode"}</code> |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-syncmode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" syncMode"}</code> |
-| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> |
-| <Link id="m-throttlecounter" /><code>{"private "}<Link to="/game-api/types/global-t-x/throttlecounter">{"ThrottleCounter"}</Link>{" throttleCounter"}</code> |
-| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" up"}</code> |
-| <Link id="m-upbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" upButtonPressed"}</code> |
-| <Link id="m-waitingforchangetofinish" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" waitingForChangeToFinish"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activeplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" activePlayer"}</code> | The player allowed to change the counter in single client mode. Backing field for `ActivePlayer`. |
+| <Link id="m-amount" /><code>{"private int amount"}</code> | The current count; saved. Backing field for `Amount`. |
+| <Link id="m-cap" /><code>{"private int cap"}</code> | Extra upper limit below `maximum`, set by code. Backing field for `Cap`. |
+| <Link id="m-changingfinished" /><code>{"private float changingFinished"}</code> | Time after which the delayed sync can go out. |
+| <Link id="m-changingwaitduration" /><code>{"private float changingWaitDuration"}</code> | Seconds without a change before a delayed sync is sent. |
+| <Link id="m-down" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" down"}</code> | Physical button that decrements. |
+| <Link id="m-downbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" downButtonPressed"}</code> | Unused. |
+| <Link id="m-labels" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-textrenderersettings">{"ButtonCounter.TextRendererSettings"}</Link>{"[] labels"}</code> | Text renderers that show the amount, each hidden below its own minimum. |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> | Highest amount. Backing field for `Maximum`. |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> | Lowest amount. Backing field for `Minimum`. |
+| <Link id="m-mode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countermode">{"ButtonCounter.CounterMode"}</Link>{" mode"}</code> | Who owns the count: the server or a single client. Backing field for `Mode`. |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for the amount. |
+| <Link id="m-syncmode" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" syncMode"}</code> | Whether to sync on every change or once changes stop. Backing field for `SyncMode`. |
+| <Link id="m-syncplayer" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPlayer"}</code> | Method sync for the active player. |
+| <Link id="m-throttlecounter" /><code>{"private "}<Link to="/game-api/types/global-t-x/throttlecounter">{"ThrottleCounter"}</Link>{" throttleCounter"}</code> | Optional throttle input that changes the amount by a delta. |
+| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/global-p/physicalbutton">{"PhysicalButton"}</Link>{" up"}</code> | Physical button that increments. |
+| <Link id="m-upbuttonpressed" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" upButtonPressed"}</code> | Unused. |
+| <Link id="m-waitingforchangetofinish" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" waitingForChangeToFinish"}</code> | The running `WaitWhileChanging` coroutine, if any. |
 
 </details>
 
@@ -86,17 +86,17 @@ A networked number set with up and down buttons (or a throttle) and shown on tex
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-changeby" /><code>{"private void ChangeBy(int delta)"}</code> |
-| <Link id="m-checksync" /><code>{"private void CheckSync("}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" mode)"}</code> |
-| <Link id="m-iscorrectmode" /><code>{"private bool IsCorrectMode()"}</code> |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
-| <Link id="m-playerchanged" /><code>{"private void PlayerChanged()"}</code> |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-updatetext" /><code>{"private void UpdateText()"}</code> |
-| <Link id="m-waitwhilechanging" /><code>{"private IEnumerator WaitWhileChanging() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changeby" /><code>{"private void ChangeBy(int delta)"}</code> | Adds a delta from the throttle counter, if this side may change the amount. |
+| <Link id="m-checksync" /><code>{"private void CheckSync("}<Link to="/game-api/types/global-a-b/buttoncounter-countsyncmode">{"ButtonCounter.CountSyncMode"}</Link>{" mode)"}</code> | Sends the amount to chunks when the given mode matches the sync mode. |
+| <Link id="m-iscorrectmode" /><code>{"private bool IsCorrectMode()"}</code> | Whether this side owns the counter: the server in server mode, or the active player in single client mode. |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Clamps the amount, updates labels, raises `AmountChanged` and syncs now or after changes stop. |
+| <Link id="m-playerchanged" /><code>{"private void PlayerChanged()"}</code> | Server: syncs the active player; on clients, enables the throttle only for the active player. |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Network handler for the amount; the server accepts changes only from the active player in single client mode. |
+| <Link id="m-syncplayer-2" /><code>{"private void SyncPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Network handler for the active player's ID. |
+| <Link id="m-updatetext" /><code>{"private void UpdateText()"}</code> | Writes the amount to every label. |
+| <Link id="m-waitwhilechanging" /><code>{"private IEnumerator WaitWhileChanging() (iterator)"}</code> | Coroutine that waits until no change has happened for `changingWaitDuration`, then syncs in delayed mode. |
 
 </details>
 

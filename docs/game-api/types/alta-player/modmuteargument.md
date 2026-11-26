@@ -1,6 +1,6 @@
 ---
 title: "ModMuteArgument"
-description: "struct ModMuteArgument in Root.Township."
+description: "Payload for ModsMicMuteManager's mute request: which moderator is muting and whether it's on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.QuickAccessActions`.
 
+Payload for `ModsMicMuteManager`'s mute request: which moderator is muting and whether it's on. The server only accepts it from players with Developer status or higher.
+
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"bool isActive"}</code> |
-| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"bool isActive"}</code> | True to start muting, false to stop. |
+| <Link id="m-modplayeridentifier" /><code>{"uint modPlayerIdentifier"}</code> | Identifier of the moderator player the request is for. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ItemSetType"
-description: "enum ItemSetType in Alta.Api.DataTransferModels."
+description: "Kind of shop item set: an outfit or a bundle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemSetType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Kind of shop item set: an outfit or a bundle. Used when shop editors create or update sets.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

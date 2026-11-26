@@ -1,6 +1,6 @@
 ---
 title: "SpawnPoint"
-description: "struct SpawnPoint in Root.Township."
+description: "A plain position and rotation pair for spawning something."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Utilities`.
 
+A plain position and rotation pair for spawning something.
+
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"Vector3 Position"}</code> |
-| <Link id="m-rotation" /><code>{"Quaternion Rotation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"Vector3 Position"}</code> | World position to spawn at. |
+| <Link id="m-rotation" /><code>{"Quaternion Rotation"}</code> | Rotation to spawn with. |
 
 ## Used in
 

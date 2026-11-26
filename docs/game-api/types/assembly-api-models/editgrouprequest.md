@@ -1,6 +1,6 @@
 ---
 title: "EditGroupRequest"
-description: "class EditGroupRequest in Alta.Api.DataTransferModels."
+description: "Body for updating a group's details on the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body for updating a group's details on the Alta web API.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,20 +24,20 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
-| <Link id="m-ischangingservers" /><code>{"bool IsChangingServers { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Type { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | New group description. |
+| <Link id="m-ischangingservers" /><code>{"bool IsChangingServers { get; set; }"}</code> | Sent as `changing_servers`, true by default. Probably whether the change also applies to the group's servers. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | New group name. |
+| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> | New list of group tags. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Type { get; set; }"}</code> | New group type. |
 
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-visibility" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Visibility { set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-visibility" /><code>{"private "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? Visibility { set; }"}</code> | Private setter for an older `visibility` JSON field. It sets `Type`. |
 
 </details>
 

@@ -29,11 +29,11 @@ A world space popup with a title and a message. Destroys its own GameObject when
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroygameobjectonclose" /><code>{"private bool destroyGameObjectOnClose"}</code> |
-| <Link id="m-messagetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" messageText"}</code> |
-| <Link id="m-titletext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleText"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroygameobjectonclose" /><code>{"private bool destroyGameObjectOnClose"}</code> | Whether `Close` destroys the board's game object (default true). |
+| <Link id="m-messagetext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" messageText"}</code> | Text renderer behind `Message`. |
+| <Link id="m-titletext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" titleText"}</code> | Text renderer behind `Title`. |
 
 </details>
 

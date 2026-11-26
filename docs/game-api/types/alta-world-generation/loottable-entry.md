@@ -28,11 +28,11 @@ One item in a loot table with a count range.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> |
-| <Link id="m-maximum" /><code>{"private int maximum"}</code> |
-| <Link id="m-minimum" /><code>{"private int minimum"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-item" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item"}</code> | Backing field for `Item`, the item this entry gives. |
+| <Link id="m-maximum" /><code>{"private int maximum"}</code> | Backing field for `Maximum`, the largest count. Default 1. |
+| <Link id="m-minimum" /><code>{"private int minimum"}</code> | Backing field for `Minimum`, the smallest count. Default 1. |
 
 </details>
 

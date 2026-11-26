@@ -1,6 +1,6 @@
 ---
 title: "GymnasiumVisualChunkDisplayMode"
-description: "enum GymnasiumVisualChunkDisplayMode in Root.Township."
+description: "Which chunks the gymnasium ChunkDisplayTool draws: none, all or only loaded ones."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GymnasiumVisualChunkDisplayMode
 
 An **enum** in `Root.Township`, `ATT.FeatureTestGymnasium`.
+
+Which chunks the gymnasium `ChunkDisplayTool` draws: none, all or only loaded ones. A dev test tool.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

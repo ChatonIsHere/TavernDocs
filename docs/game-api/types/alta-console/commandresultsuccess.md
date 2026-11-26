@@ -1,6 +1,6 @@
 ---
 title: "CommandResultSuccess"
-description: "enum CommandResultSuccess in Root.Township."
+description: "Outcome of matching console input to a command: success, or why the parameters didn't fit (too few, too many, wrong types, failed to parse)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommandResultSuccess
 
 An **enum** in `Root.Township`, `Alta.Console`.
+
+Outcome of matching console input to a command: success, or why the parameters didn't fit (too few, too many, wrong types, failed to parse). Carried on `CommandSearchResult`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 

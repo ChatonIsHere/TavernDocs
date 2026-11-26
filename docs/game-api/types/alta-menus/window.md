@@ -28,17 +28,17 @@ Client: a menu screen made of panels. Shows one panel at a time plus popups (con
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-confirmpopup" /><code>{"private "}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" confirmPopup"}</code> |
-| <Link id="m-confirmpopuptask" /><code>{"private TaskCompletionSource<bool> confirmPopupTask"}</code> |
-| <Link id="m-isautostarting" /><code>{"private bool isAutoStarting"}</code> |
-| <Link id="m-loadingui" /><code>{"private "}<Link to="/game-api/types/alta-menus/loadingui">{"LoadingUI"}</Link>{" loadingUI"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-onstarted" /><code>{"private UnityEvent onStarted"}</code> |
-| <Link id="m-optionspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/optionspanel">{"OptionsPanel"}</Link>{" optionsPanel"}</code> |
-| <Link id="m-simpletextpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/simpletextpanel">{"SimpleTextPanel"}</Link>{" simpleTextPanel"}</code> |
-| <Link id="m-startingpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" startingPanel"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-confirmpopup" /><code>{"private "}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" confirmPopup"}</code> | The panel used by `ShowConfirmPopup`. |
+| <Link id="m-confirmpopuptask" /><code>{"private TaskCompletionSource<bool> confirmPopupTask"}</code> | Task for the open confirm popup's answer. |
+| <Link id="m-isautostarting" /><code>{"private bool isAutoStarting"}</code> | Whether the window opens its starting panel on `Start`. |
+| <Link id="m-loadingui" /><code>{"private "}<Link to="/game-api/types/alta-menus/loadingui">{"LoadingUI"}</Link>{" loadingUI"}</code> | Loading indicator toggled by `SetLoadingActive`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for panel switches. |
+| <Link id="m-onstarted" /><code>{"private UnityEvent onStarted"}</code> | Inspector event raised when the window starts. |
+| <Link id="m-optionspanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/optionspanel">{"OptionsPanel"}</Link>{" optionsPanel"}</code> | Panel used by `ShowOptions`. |
+| <Link id="m-simpletextpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/simpletextpanel">{"SimpleTextPanel"}</Link>{" simpleTextPanel"}</code> | Panel used by `ShowTextPanel`. |
+| <Link id="m-startingpanel" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" startingPanel"}</code> | Panel shown when the window starts. |
 
 </details>
 
@@ -73,14 +73,14 @@ Client: a menu screen made of panels. Shows one panel at a time plus popups (con
 <details>
 <summary>6 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-closecurrentpopupcancelled" /><code>{"private void CloseCurrentPopupCancelled("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> |
-| <Link id="m-closecurrentpopupconfirmed" /><code>{"private void CloseCurrentPopupConfirmed("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> |
-| <Link id="m-finishpopupswitch" /><code>{"private void FinishPopupSwitch("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
-| <Link id="m-finishswitch" /><code>{"private void FinishSwitch("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
-| <Link id="m-showaspopup" /><code>{"private void ShowAsPopup("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-closecurrentpopupcancelled" /><code>{"private void CloseCurrentPopupCancelled("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> | Clears the popup and completes the confirm task with false. |
+| <Link id="m-closecurrentpopupconfirmed" /><code>{"private void CloseCurrentPopupConfirmed("}<Link to="/game-api/types/alta-menus/confirmpopuppanel">{"ConfirmPopupPanel"}</Link>{" obj)"}</code> | Clears the popup and completes the confirm task with true. |
+| <Link id="m-finishpopupswitch" /><code>{"private void FinishPopupSwitch("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Shows the new popup after the old one has closed. |
+| <Link id="m-finishswitch" /><code>{"private void FinishSwitch("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Shows the new panel after the old one has closed. |
+| <Link id="m-showaspopup" /><code>{"private void ShowAsPopup("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Closes the current popup if any, then shows the given panel as the popup. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Starts the window if `isAutoStarting` is set. |
 
 </details>
 

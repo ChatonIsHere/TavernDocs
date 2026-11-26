@@ -1,6 +1,6 @@
 ---
 title: "BatchedRequestEntry"
-description: "class BatchedRequestEntry in Alta.Api.Client."
+description: "One queued request in ApiBatchRequestService."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
+One queued request in `ApiBatchRequestService`. Entries for the same address are sent together as one JSON list.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-data" /><code>{"object Data { get; set; }"}</code> |
-| <Link id="m-uri" /><code>{"string Uri { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code>{"object Data { get; set; }"}</code> | The object to send. |
+| <Link id="m-uri" /><code>{"string Uri { get; set; }"}</code> | The address to post it to. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "RaycastGroundedOperationType"
-description: "enum RaycastGroundedOperationType in Root.Township."
+description: "How the RaycastGrounded AI evaluator checks for ground: a ray straight down in world space, a ray down in the agent's local space, or a sphere overlap."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RaycastGroundedOperationType
 
 An **enum** in `Root.Township`, `Alta.Intelligence`.
+
+How the `RaycastGrounded` AI evaluator checks for ground: a ray straight down in world space, a ray down in the agent's local space, or a sphere overlap.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 

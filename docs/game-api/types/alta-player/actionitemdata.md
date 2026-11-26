@@ -29,16 +29,16 @@ Settings for an item summoned from the quick access menu: what to spawn, where, 
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" action"}</code> |
-| <Link id="m-actionitemprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" actionItemPrefab"}</code> |
-| <Link id="m-distancefromplayer" /><code>{"private float distanceFromPlayer"}</code> |
-| <Link id="m-maxdistancefromplayersquared" /><code>{"private float maxDistanceFromPlayerSquared"}</code> |
-| <Link id="m-onactionitemdisappeareffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemDisappearEffects"}</code> |
-| <Link id="m-onactionitemspawneffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemSpawnEffects"}</code> |
-| <Link id="m-outofrangehaptic" /><code>{"private float outOfRangeHaptic"}</code> |
-| <Link id="m-timetodespawn" /><code>{"private float timeToDespawn"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-action" /><code>{"private "}<Link to="/game-api/types/alta-player/summonactionitemquickaccess">{"SummonActionItemQuickAccess"}</Link>{" action"}</code> | Backing field for `Action`, the quick access action that summons this item. |
+| <Link id="m-actionitemprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" actionItemPrefab"}</code> | Backing field for `ActionItemPrefab`, the prefab spawned for the action. |
+| <Link id="m-distancefromplayer" /><code>{"private float distanceFromPlayer"}</code> | Backing field for `DistanceFromPlayer`. Default 1. |
+| <Link id="m-maxdistancefromplayersquared" /><code>{"private float maxDistanceFromPlayerSquared"}</code> | Backing field for `MaxDistanceFromPlayerSquared`, stored squared. Default 9 (3 m). |
+| <Link id="m-onactionitemdisappeareffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemDisappearEffects"}</code> | Backing field for `OnActionItemDisappearEffects`, effects played where the item vanishes. |
+| <Link id="m-onactionitemspawneffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onActionItemSpawnEffects"}</code> | Backing field for `OnActionItemSpawnEffects`, effects played where the item appears. |
+| <Link id="m-outofrangehaptic" /><code>{"private float outOfRangeHaptic"}</code> | Backing field for `OutOfRangeHaptic`. Default 0.2. |
+| <Link id="m-timetodespawn" /><code>{"private float timeToDespawn"}</code> | Backing field for `TimeToDespawn`. Default 4. |
 
 </details>
 

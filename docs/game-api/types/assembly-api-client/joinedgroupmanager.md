@@ -1,6 +1,6 @@
 ---
 title: "JoinedGroupManager"
-description: "class JoinedGroupManager in Alta.Api.Client."
+description: "High-level API handle for a group the current user is a member of, with its join requests, invites, bans and info managers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JoinedGroupManager
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+High-level API handle for a group the current user is a member of, with its join requests, invites, bans and info managers.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`JoinedGroups`](/game-api/types/assembly-api-client/joinedgroups), [`JoinedGroupListElement`](/game-api/types/alta-menus/joinedgrouplistelement)
@@ -31,28 +33,28 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-api" /><code>{"private readonly "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api"}</code> | Low-level API client the managers use. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-bans" /><code><Link to="/game-api/types/assembly-api-client/groupbans">{"GroupBans"}</Link>{" Bans { get; }"}</code> |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" Group { get; }"}</code> |
-| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfomanager">{"GroupInfoManager"}</Link>{" Info { get; }"}</code> |
-| <Link id="m-invites" /><code><Link to="/game-api/types/assembly-api-client/groupinvites">{"GroupInvites"}</Link>{" Invites { get; }"}</code> |
-| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> |
-| <Link id="m-requests" /><code><Link to="/game-api/types/assembly-api-client/groupjoinrequests">{"GroupJoinRequests"}</Link>{" Requests { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bans" /><code><Link to="/game-api/types/assembly-api-client/groupbans">{"GroupBans"}</Link>{" Bans { get; }"}</code> | Manager for the group's bans. |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfodetailed">{"GroupInfoDetailed"}</Link>{" Group { get; }"}</code> | Detailed info for the group. |
+| <Link id="m-info" /><code><Link to="/game-api/types/assembly-api-client/groupinfomanager">{"GroupInfoManager"}</Link>{" Info { get; }"}</code> | Manager for viewing and editing the group's info. |
+| <Link id="m-invites" /><code><Link to="/game-api/types/assembly-api-client/groupinvites">{"GroupInvites"}</Link>{" Invites { get; }"}</code> | Manager for the group's outgoing invites. |
+| <Link id="m-memberinfo" /><code><Link to="/game-api/types/assembly-api-models/groupmemberinfo">{"GroupMemberInfo"}</Link>{" MemberInfo { get; }"}</code> | The current user's membership in the group. |
+| <Link id="m-requests" /><code><Link to="/game-api/types/assembly-api-client/groupjoinrequests">{"GroupJoinRequests"}</Link>{" Requests { get; }"}</code> | Manager for requests to join the group. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-leavegroup" /><code>{"Task LeaveGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-leavegroup" /><code>{"Task LeaveGroup()"}</code> | Asks the API to remove the current user from the group. |
 
 ## Used in
 

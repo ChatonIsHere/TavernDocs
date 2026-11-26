@@ -1,6 +1,6 @@
 ---
 title: "SpineEdge"
-description: "class SpineEdge in Root.Township."
+description: "A book flair asset for the top or bottom end of the spine, used in SpineFlairs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpineEdge
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the top or bottom end of the spine, used in `SpineFlairs`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

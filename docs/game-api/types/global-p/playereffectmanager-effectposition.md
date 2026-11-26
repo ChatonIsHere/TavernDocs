@@ -28,17 +28,17 @@ A spot on a player's body where heat (smoke, burn) and stat effect particles are
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cullburneffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullBurnEffect"}</code> |
-| <Link id="m-cullsmokeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullSmokeEffect"}</code> |
-| <Link id="m-cullstateffects" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullStatEffects"}</code> |
-| <Link id="m-parent" /><code>{"private Transform parent"}</code> |
-| <Link id="m-position" /><code>{"private Vector3 position"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
-| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> |
-| <Link id="m-size" /><code>{"private float size"}</code> |
-| <Link id="m-targetpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" targetPoint"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cullburneffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullBurnEffect"}</code> | Which players (local, remote or both) get no burn effect at this point. |
+| <Link id="m-cullsmokeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullSmokeEffect"}</code> | Which players (local, remote or both) get no smoke effect at this point. |
+| <Link id="m-cullstateffects" /><code>{"private "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" cullStatEffects"}</code> | Which players (local, remote or both) get no stat buff or debuff effects at this point. |
+| <Link id="m-parent" /><code>{"private Transform parent"}</code> | Body transform the effect is parented to. |
+| <Link id="m-position" /><code>{"private Vector3 position"}</code> | Local position of the effect under `parent`. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius passed to the effect particle, also used for the gizmo capsule. |
+| <Link id="m-rotation" /><code>{"private Quaternion rotation"}</code> | Local rotation of the effect under `parent`. |
+| <Link id="m-size" /><code>{"private float size"}</code> | Base scale of the effect; `EffectApplication.SetSize` multiplies it. |
+| <Link id="m-targetpoint" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" targetPoint"}</code> | The `HeatPoint` whose temperature drives the smoke and burn effects here. |
 
 </details>
 

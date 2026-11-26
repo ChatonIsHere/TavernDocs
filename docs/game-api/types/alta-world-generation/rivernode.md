@@ -29,12 +29,12 @@ A point in the forest's river network. Water volume flows down its outgoing path
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isbelowthreshold" /><code>{"private bool isBelowThreshold"}</code> |
-| <Link id="m-isvolumecached" /><code>{"private bool isVolumeCached"}</code> |
-| <Link id="m-volumecache" /><code>{"private float volumeCache"}</code> |
-| <Link id="m-width" /><code>{"private float width"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isbelowthreshold" /><code>{"private bool isBelowThreshold"}</code> | Set by `CacheVolume` when the volume is under the river's overground threshold, which makes the node underground. |
+| <Link id="m-isvolumecached" /><code>{"private bool isVolumeCached"}</code> | Whether `CacheVolume` has run. Note it's never set to true, so every call recomputes. |
+| <Link id="m-volumecache" /><code>{"private float volumeCache"}</code> | Node volume including all upstream flow, capped at the river's max volume. Set by `CacheVolume`. |
+| <Link id="m-width" /><code>{"private float width"}</code> | Backing field for `Width`, worked out from the volume in `CacheVolume`. |
 
 </details>
 

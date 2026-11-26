@@ -1,6 +1,6 @@
 ---
 title: "RecentPlayerInteractionType"
-description: "enum RecentPlayerInteractionType in Alta.Api.DataTransferModels."
+description: "How you recently met another player, in the Alta API: combat, nearby or on the same server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RecentPlayerInteractionType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+How you recently met another player, in the Alta API: combat, nearby or on the same server.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

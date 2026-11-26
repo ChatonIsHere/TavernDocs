@@ -1,6 +1,6 @@
 ---
 title: "CraftingChanged"
-description: "delegate CraftingChanged in Root.Township."
+description: "Event handler for a crafting part being crafted or decrafted; isLoad is true when it happens while loading."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CraftingChanged
 
 A **delegate** in `Root.Township`, `Alta.Crafting`.
+
+Event handler for a crafting part being crafted or decrafted; `isLoad` is true when it happens while loading. Used by `CraftingPart.OnCrafted` and `OnDecrafted`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

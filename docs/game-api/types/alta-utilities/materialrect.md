@@ -1,6 +1,6 @@
 ---
 title: "MaterialRect"
-description: "struct MaterialRect in Root.Township."
+description: "A material with its offset and scale inside a texture atlas, and whether mesh UVs need fixing to use it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MaterialRect
 
 A **struct** in `Root.Township`, `Alta.Utilities.Atlas`.
+
+A material with its offset and scale inside a texture atlas, and whether mesh UVs need fixing to use it.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
@@ -24,11 +26,11 @@ A **struct** in `Root.Township`, `Alta.Utilities.Atlas`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-material" /><code>{"Material Material { get; }"}</code> |
-| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> |
-| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-material" /><code>{"Material Material { get; }"}</code> | The material. |
+| <Link id="m-needsfixing" /><code>{"bool NeedsFixing { get; }"}</code> | True when built from an atlased material, so mesh UVs must be remapped to its area. |
+| <Link id="m-offsetscale" /><code>{"Vector4 OffsetScale { get; }"}</code> | Offset (x, y) and scale (z, w) of the material's area in the atlas; zero when not atlased. |
 
 ## Used in
 

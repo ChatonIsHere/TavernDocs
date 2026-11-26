@@ -1,6 +1,6 @@
 ---
 title: "CentralGoldCoinBank"
-description: "class CentralGoldCoinBank in Root.Township."
+description: "Server-side per-player store of gold bank accounts (PlayerGoldBankAccount)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CentralGoldCoinBank
 
 A **class** in `Root.Township`, no namespace.
+
+Server-side per-player store of gold bank accounts (`PlayerGoldBankAccount`). Reach it through `PerPlayerManager`'s `Instance` and `GetContentAsync`, as the ATM and trade commands do.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`PerPlayerManager<CentralGoldCoinBank, PlayerGoldBankAccount, PlayerGoldBankAccountData>`](/game-api/types/global-p/perplayermanager-tthis-tcontent-tsaveformat)

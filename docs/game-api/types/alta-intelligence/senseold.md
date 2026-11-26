@@ -1,6 +1,6 @@
 ---
 title: "SenseOld"
-description: "enum SenseOld in Root.Township."
+description: "Old list of AI senses (noise, movement, danger, distance, view cone and so on), still used by the older sense operations."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SenseOld
 
 An **enum** in `Root.Township`, `Alta.Intelligence`.
+
+Old list of AI senses (noise, movement, danger, distance, view cone and so on), still used by the older sense operations.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 

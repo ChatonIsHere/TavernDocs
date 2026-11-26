@@ -29,12 +29,12 @@ Network profiling stats for one entity: bytes sent, split by entity message type
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-behaviourstatistics" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistics">{"SerializedBehaviourStatistics"}</Link>{" behaviourStatistics"}</code> |
-| <Link id="m-entityname" /><code>{"private string entityName"}</code> |
-| <Link id="m-isexpanded" /><code>{"private bool isExpanded"}</code> |
-| <Link id="m-messagestatistics" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagestatistics">{"EntityMessageStatistics"}</Link>{" messageStatistics"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-behaviourstatistics" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializedbehaviourstatistics">{"SerializedBehaviourStatistics"}</Link>{" behaviourStatistics"}</code> | Bytes sent per behaviour on this entity. Backing field for `BehaviourStatistics`. |
+| <Link id="m-entityname" /><code>{"private string entityName"}</code> | Name of the entity being measured. Backing field for `EntityName`. |
+| <Link id="m-isexpanded" /><code>{"private bool isExpanded"}</code> | Whether the entry is expanded in the profiler view. |
+| <Link id="m-messagestatistics" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagestatistics">{"EntityMessageStatistics"}</Link>{" messageStatistics"}</code> | Bytes sent per entity message type. Backing field for `MessageStatistics`. |
 
 </details>
 

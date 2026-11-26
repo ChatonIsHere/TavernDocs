@@ -35,25 +35,25 @@ A piece that `MiningBaseGenerator` can place in a generated mine: its size in ti
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] air"}</code> |
-| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToAir"}</code> |
-| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToSolid"}</code> |
-| <Link id="m-depth" /><code>{"private int depth"}</code> |
-| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] gates"}</code> |
-| <Link id="m-height" /><code>{"private int height"}</code> |
-| <Link id="m-isrequiringgate" /><code>{"private bool isRequiringGate"}</code> |
-| <Link id="m-maximumdrop" /><code>{"private int maximumDrop"}</code> |
-| <Link id="m-maximumy" /><code>{"private int maximumY"}</code> |
-| <Link id="m-minimumdrop" /><code>{"private int minimumDrop"}</code> |
-| <Link id="m-minimumy" /><code>{"private int minimumY"}</code> |
-| <Link id="m-obsolete" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{"[] obsolete"}</code> |
-| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] solid"}</code> |
-| <Link id="m-structurecubes" /><code>{"private "}<Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] structureCubes"}</code> |
-| <Link id="m-structurecubesparent" /><code>{"private Transform structureCubesParent"}</code> |
-| <Link id="m-structuretype" /><code>{"private "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" structureType"}</code> |
-| <Link id="m-width" /><code>{"private int width"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-air" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] air"}</code> | Per-cell air side flags. Backing field for `Air`. |
+| <Link id="m-connecttoair" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToAir"}</code> | Per-cell connect-to-air side flags. Backing field for `ConnectToAir`. |
+| <Link id="m-connecttosolid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] connectToSolid"}</code> | Per-cell connect-to-solid side flags. Backing field for `ConnectToSolid`. |
+| <Link id="m-depth" /><code>{"private int depth"}</code> | Size of the part in tiles along z. Default 1. |
+| <Link id="m-gates" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] gates"}</code> | Per-cell gate side flags. Backing field for `Gates`. |
+| <Link id="m-height" /><code>{"private int height"}</code> | Size of the part in tiles along y. Default 1. |
+| <Link id="m-isrequiringgate" /><code>{"private bool isRequiringGate"}</code> | When true, `MiningBaseGenerator` only places the part where a path reaches one of its gates. |
+| <Link id="m-maximumdrop" /><code>{"private int maximumDrop"}</code> | Largest vertical drop `MiningBaseGenerator` tries when placing the part. No limit by default. |
+| <Link id="m-maximumy" /><code>{"private int maximumY"}</code> | Highest tile y the part may be placed at. -1 means no limit. |
+| <Link id="m-minimumdrop" /><code>{"private int minimumDrop"}</code> | Smallest vertical drop `MiningBaseGenerator` tries when placing the part. |
+| <Link id="m-minimumy" /><code>{"private int minimumY"}</code> | Lowest tile y the part may be placed at. Default -1. |
+| <Link id="m-obsolete" /><code>{"private "}<Link to="/game-api/types/global-s/structurepart-cube">{"StructurePart.Cube"}</Link>{"[] obsolete"}</code> | Old cube list (formerly `cubes`), converted to `StructureCube` children in `OnValidate` and then cleared. |
+| <Link id="m-solid" /><code>{"private "}<Link to="/game-api/types/global-s/structureside">{"StructureSide"}</Link>{"[,,] solid"}</code> | Per-cell solid side flags. Backing field for `Solid`. |
+| <Link id="m-structurecubes" /><code>{"private "}<Link to="/game-api/types/global-s/structurecube">{"StructureCube"}</Link>{"[] structureCubes"}</code> | Cached `StructureCube` children. Backing field for `StructureCubes`. |
+| <Link id="m-structurecubesparent" /><code>{"private Transform structureCubesParent"}</code> | Transform whose children are the part's `StructureCube` components. |
+| <Link id="m-structuretype" /><code>{"private "}<Link to="/game-api/types/global-s/structuretype">{"StructureType"}</Link>{" structureType"}</code> | The `StructureType` this part belongs to, which sets the tile size. |
+| <Link id="m-width" /><code>{"private int width"}</code> | Size of the part in tiles along x. Default 1. |
 
 </details>
 
@@ -82,11 +82,11 @@ A piece that `MiningBaseGenerator` can place in a generated mine: its size in ti
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-initializesides" /><code>{"private void InitializeSides()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initializesides" /><code>{"private void InitializeSides()"}</code> | Builds the per-cell side arrays (gates, solid, air and connect masks) from the child `StructureCube` components. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws the part's footprint as a blue box scaled by the structure type's tile size. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: makes the Structure Cubes parent if missing and turns old serialized `Cube` entries into `StructureCube` objects. |
 
 </details>
 

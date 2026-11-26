@@ -29,9 +29,9 @@ An asset holding a saved dynamic object (a set piece) that can be spawned whole.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-dynamicdata" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" dynamicData"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dynamicdata" /><code>{"private "}<Link to="/game-api/types/global-s/serializedsaveddynamicobject">{"SerializedSavedDynamicObject"}</Link>{" dynamicData"}</code> | Backing field for `DynamicData`, the serialized saved objects that make up this set piece. |
 
 </details>
 

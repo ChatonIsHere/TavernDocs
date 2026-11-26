@@ -1,6 +1,6 @@
 ---
 title: "TrackedDevice"
-description: "enum TrackedDevice in Root.Township."
+description: "Tracked XR devices: the headset and the left and right controllers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TrackedDevice
 
 An **enum** in `Root.Township`, `Alta.XR`.
+
+Tracked XR devices: the headset and the left and right controllers.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

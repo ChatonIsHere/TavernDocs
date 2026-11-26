@@ -29,11 +29,11 @@ Added to a spawned population entity (such as an animal) to tie it to its `Basic
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
-| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk"}</code> | The location chunk the item was last seen in, used by `CheckMoved` to spot chunk changes. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Cached transform of the entity. |
+| <Link id="m-update" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" update"}</code> | Handle for the registered `CheckMoved` update, removed when the item is destroyed or unloaded. |
 
 </details>
 
@@ -62,12 +62,12 @@ Added to a spawned population entity (such as an animal) to tie it to its `Basic
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkmoved" /><code>{"private void CheckMoved()"}</code> |
-| <Link id="m-destroyedbyscene" /><code>{"private void DestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
-| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-listenformovement" /><code>{"private void ListenForMovement()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkmoved" /><code>{"private void CheckMoved()"}</code> | Runs on a shared update module for moving items. When the item enters a new chunk it swaps population, or unloads if that chunk isn't loaded. |
+| <Link id="m-destroyedbyscene" /><code>{"private void DestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Handler for the entity's `DestroyedByScene`: stops movement checks and calls `Remove` unless it's just an unload. |
+| <Link id="m-getpositionchunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" GetPositionChunk("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Given to the entity as its chunk lookup: finds the location chunk that best contains the item's position. |
+| <Link id="m-listenformovement" /><code>{"private void ListenForMovement()"}</code> | Registers `CheckMoved` with the distance-check update module. Called from `Create` for populations marked as moving. |
 
 </details>
 

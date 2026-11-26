@@ -27,10 +27,10 @@ A store of known events and rule definitions for the creature knowledge system. 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-definitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{">> definitions"}</code> |
-| <Link id="m-knownevents" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{">> knownEvents"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-definitions" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/baseatom">{"BaseAtom"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{">> definitions"}</code> | Facts this holder knows, grouped by atom (functor). `Definitions` also returns the parent's. |
+| <Link id="m-knownevents" /><code>{"private Dictionary<"}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{", List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{">> knownEvents"}</code> | Events this holder knows about, grouped by day. `KnowsAbout` also checks the parent. |
 
 </details>
 

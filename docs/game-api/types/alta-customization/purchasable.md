@@ -34,19 +34,19 @@ Base asset for a shop item or cosmetic that can be owned, loaded through Address
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidtargeturl" /><code>{"private const string AndroidTargetUrl"}</code> |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
-| <Link id="m-hash" /><code>{"private uint hash"}</code> |
-| <Link id="m-iscatalogloaded" /><code>{"private static bool isCatalogLoaded"}</code> |
-| <Link id="m-isfreefordevs" /><code>{"private bool isFreeForDevs"}</code> |
-| <Link id="m-islocked" /><code>{"private bool isLocked"}</code> |
-| <Link id="m-lastcatalogrefresh" /><code>{"private static DateTime lastCatalogRefresh"}</code> |
-| <Link id="m-linuxtargeturl" /><code>{"private const string LinuxTargetUrl"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
-| <Link id="m-overridehash" /><code>{"private uint overrideHash"}</code> |
-| <Link id="m-windowstargeturl" /><code>{"private const string WindowsTargetUrl"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidtargeturl" /><code>{"private const string AndroidTargetUrl"}</code> | Address of Alta's Android cosmetics bundles. That host is gone. |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> | Backing field for `DisplayName`. |
+| <Link id="m-hash" /><code>{"private uint hash"}</code> | Backing field for `Hash`; `Get` sets it to the hash it was loaded by. |
+| <Link id="m-iscatalogloaded" /><code>{"private static bool isCatalogLoaded"}</code> | True once `CheckCatalogAsync` has run. |
+| <Link id="m-isfreefordevs" /><code>{"private bool isFreeForDevs"}</code> | Backing field for `IsFreeForDevs`. |
+| <Link id="m-islocked" /><code>{"private bool isLocked"}</code> | Backing field for `IsLocked`. |
+| <Link id="m-lastcatalogrefresh" /><code>{"private static DateTime lastCatalogRefresh"}</code> | When the catalog was last loaded or checked. |
+| <Link id="m-linuxtargeturl" /><code>{"private const string LinuxTargetUrl"}</code> | Address of Alta's Linux cosmetics bundles. That host is gone. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
+| <Link id="m-overridehash" /><code>{"private uint overrideHash"}</code> | Backing field for `OverrideHash`. |
+| <Link id="m-windowstargeturl" /><code>{"private const string WindowsTargetUrl"}</code> | Address of Alta's Windows cosmetics bundles. That host is gone. |
 
 </details>
 
@@ -64,9 +64,9 @@ Base asset for a shop item or cosmetic that can be owned, loaded through Address
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-isusingallinram" /><code>{"private static bool IsUsingAllInRAM { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isusingallinram" /><code>{"private static bool IsUsingAllInRAM { get; set; }"}</code> | True once `LoadAllIntoRAM` has loaded every purchasable, so `Get` reads `LoadedPurchasables` instead of loading. |
 
 </details>
 
@@ -85,13 +85,13 @@ Base asset for a shop item or cosmetic that can be owned, loaded through Address
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-formattedsku" /><code>{"internal virtual string FormattedSku()"}</code> |
-| <Link id="m-gettargeturl" /><code>{"private static string GetTargetUrl()"}</code> |
-| <Link id="m-refreshwassuccessful" /><code>{"private static async Task<bool> RefreshWasSuccessful()"}</code> |
-| <Link id="m-tryrefreshcatalog" /><code>{"private static async Task<bool> TryRefreshCatalog()"}</code> |
-| <Link id="m-waslastrefreshedoveraminuteago" /><code>{"private static bool WasLastRefreshedOverAMinuteAgo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-formattedsku" /><code>{"internal virtual string FormattedSku()"}</code> | The display name in lower case with spaces as dashes. |
+| <Link id="m-gettargeturl" /><code>{"private static string GetTargetUrl()"}</code> | Picks the cosmetics bundle address for the current platform (Windows, Android or Linux). |
+| <Link id="m-refreshwassuccessful" /><code>{"private static async Task<bool> RefreshWasSuccessful()"}</code> | Checks for Addressables catalog updates and returns true if there were any. |
+| <Link id="m-tryrefreshcatalog" /><code>{"private static async Task<bool> TryRefreshCatalog()"}</code> | With external cosmetics on, checks for catalog updates at most once a minute. `Get` retries after one. |
+| <Link id="m-waslastrefreshedoveraminuteago" /><code>{"private static bool WasLastRefreshedOverAMinuteAgo()"}</code> | True if the catalog was last checked more than a minute ago. |
 
 </details>
 

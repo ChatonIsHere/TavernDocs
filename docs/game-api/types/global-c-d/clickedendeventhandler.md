@@ -1,6 +1,6 @@
 ---
 title: "ClickedEndEventHandler"
-description: "delegate ClickedEndEventHandler in Root.Township."
+description: "Callback for a controller action ending, with the player input and whether it ended because the action was disabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClickedEndEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for a controller action ending, with the player input and whether it ended because the action was disabled.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

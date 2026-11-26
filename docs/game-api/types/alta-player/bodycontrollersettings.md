@@ -30,36 +30,36 @@ Settings asset for how a player's body follows the head and hands: heading, pitc
 <details>
 <summary>28 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bodyforwardbendmultiplier" /><code>{"private float bodyForwardBendMultiplier"}</code> |
-| <Link id="m-bodypitchmultiplier" /><code>{"private float bodyPitchMultiplier"}</code> |
-| <Link id="m-bodyrollmultiplier" /><code>{"private float bodyRollMultiplier"}</code> |
-| <Link id="m-bodysidebendmultiplier" /><code>{"private float bodySideBendMultiplier"}</code> |
-| <Link id="m-distancetomovedtobendangle" /><code>{"private AnimationCurve distanceToMovedToBendAngle"}</code> |
-| <Link id="m-handpositionheadingimpact" /><code>{"private AnimationCurve handPositionHeadingImpact"}</code> |
-| <Link id="m-handpositionweight" /><code>{"private float handPositionWeight"}</code> |
-| <Link id="m-handweightbydistancefrombody" /><code>{"private AnimationCurve handWeightByDistanceFromBody"}</code> |
-| <Link id="m-headforwardlimit" /><code>{"private float headForwardLimit"}</code> |
-| <Link id="m-headheadingimpactonroll" /><code>{"private AnimationCurve headHeadingImpactOnRoll"}</code> |
-| <Link id="m-headheadingpitchimpact" /><code>{"private AnimationCurve headHeadingPitchImpact"}</code> |
-| <Link id="m-headingheadrotationweight" /><code>{"private float headingHeadRotationWeight"}</code> |
-| <Link id="m-headoffset" /><code>{"private Vector3 headOffset"}</code> |
-| <Link id="m-headpitchimpactonbodypitch" /><code>{"private AnimationCurve headPitchImpactOnBodyPitch"}</code> |
-| <Link id="m-headpositionpitchangle" /><code>{"private AnimationCurve headPositionPitchAngle"}</code> |
-| <Link id="m-headpositionweight" /><code>{"private float headPositionWeight"}</code> |
-| <Link id="m-headrolltobodyrollimpact" /><code>{"private AnimationCurve headRollToBodyRollImpact"}</code> |
-| <Link id="m-headrotationheadingimpact" /><code>{"private AnimationCurve headRotationHeadingImpact"}</code> |
-| <Link id="m-isbendingwithmovement" /><code>{"private bool isBendingWithMovement"}</code> |
-| <Link id="m-ischangingheading" /><code>{"private bool isChangingHeading"}</code> |
-| <Link id="m-ischangingpitch" /><code>{"private bool isChangingPitch"}</code> |
-| <Link id="m-ischangingroll" /><code>{"private bool isChangingRoll"}</code> |
-| <Link id="m-minmovementtobend" /><code>{"private float minMovementToBend"}</code> |
-| <Link id="m-movementbendlerpspeed" /><code>{"private float movementBendLerpSpeed"}</code> |
-| <Link id="m-pitchheadpositionweight" /><code>{"private float pitchHeadPositionWeight"}</code> |
-| <Link id="m-pitchheadrotationweight" /><code>{"private float pitchHeadRotationWeight"}</code> |
-| <Link id="m-positionlerpspeed" /><code>{"private AnimationCurve positionLerpSpeed"}</code> |
-| <Link id="m-rotationlerpspeed" /><code>{"private AnimationCurve rotationLerpSpeed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bodyforwardbendmultiplier" /><code>{"private float bodyForwardBendMultiplier"}</code> | Backing field for `BodyForwardBendMultiplier`: how far the body bends the other way when the head nods. Default 1.5. |
+| <Link id="m-bodypitchmultiplier" /><code>{"private float bodyPitchMultiplier"}</code> | Backing field for `BodyPitchMultiplier`. |
+| <Link id="m-bodyrollmultiplier" /><code>{"private float bodyRollMultiplier"}</code> | Backing field for `BodyRollMultiplier`. Default -1. |
+| <Link id="m-bodysidebendmultiplier" /><code>{"private float bodySideBendMultiplier"}</code> | Backing field for `BodySideBendMultiplier`: how far the body bends the other way when the head tilts. Default 1.5. |
+| <Link id="m-distancetomovedtobendangle" /><code>{"private AnimationCurve distanceToMovedToBendAngle"}</code> | Backing field for `DistanceToMovedToBendAngle`. |
+| <Link id="m-handpositionheadingimpact" /><code>{"private AnimationCurve handPositionHeadingImpact"}</code> | Backing field for `HandPositionHeadingImpact`. |
+| <Link id="m-handpositionweight" /><code>{"private float handPositionWeight"}</code> | Backing field for `HandPositionWeight`. |
+| <Link id="m-handweightbydistancefrombody" /><code>{"private AnimationCurve handWeightByDistanceFromBody"}</code> | Backing field for `HandWeightByDistanceFromBody`. |
+| <Link id="m-headforwardlimit" /><code>{"private float headForwardLimit"}</code> | Backing field for `HeadForwardLimit`. Default 0.2. |
+| <Link id="m-headheadingimpactonroll" /><code>{"private AnimationCurve headHeadingImpactOnRoll"}</code> | Backing field for `HeadHeadingImpactOnRoll`: how much head roll is used, by head heading. |
+| <Link id="m-headheadingpitchimpact" /><code>{"private AnimationCurve headHeadingPitchImpact"}</code> | Backing field for `HeadHeadingPitchImpact`: how much head pitch is used, by head heading. |
+| <Link id="m-headingheadrotationweight" /><code>{"private float headingHeadRotationWeight"}</code> | Backing field for `HeadingHeadRotationWeight`. |
+| <Link id="m-headoffset" /><code>{"private Vector3 headOffset"}</code> | Backing field for `HeadOffset`. |
+| <Link id="m-headpitchimpactonbodypitch" /><code>{"private AnimationCurve headPitchImpactOnBodyPitch"}</code> | Backing field for `HeadPitchImpactOnBodyPitch`. |
+| <Link id="m-headpositionpitchangle" /><code>{"private AnimationCurve headPositionPitchAngle"}</code> | Backing field for `HeadPositionPitchAngle`. |
+| <Link id="m-headpositionweight" /><code>{"private float headPositionWeight"}</code> | Backing field for `HeadPositionWeight`. Marked "NOT used anymore" in the inspector. |
+| <Link id="m-headrolltobodyrollimpact" /><code>{"private AnimationCurve headRollToBodyRollImpact"}</code> | Backing field for `HeadRollToBodyRollImpact`. |
+| <Link id="m-headrotationheadingimpact" /><code>{"private AnimationCurve headRotationHeadingImpact"}</code> | Backing field for `HeadRotationHeadingImpact`. |
+| <Link id="m-isbendingwithmovement" /><code>{"private bool isBendingWithMovement"}</code> | Backing field for `IsBendingWithMovement`. Default true. |
+| <Link id="m-ischangingheading" /><code>{"private bool isChangingHeading"}</code> | Backing field for `IsChangingHeading`. Default true. |
+| <Link id="m-ischangingpitch" /><code>{"private bool isChangingPitch"}</code> | Backing field for `IsChangingPitch`. Default true. |
+| <Link id="m-ischangingroll" /><code>{"private bool isChangingRoll"}</code> | Backing field for `IsChangingRoll`. Default true. |
+| <Link id="m-minmovementtobend" /><code>{"private float minMovementToBend"}</code> | Backing field for `MinMovementToBend`, stored squared. Default 0.0001. |
+| <Link id="m-movementbendlerpspeed" /><code>{"private float movementBendLerpSpeed"}</code> | Backing field for `MovementBendLerpSpeed`. Default 0.2. |
+| <Link id="m-pitchheadpositionweight" /><code>{"private float pitchHeadPositionWeight"}</code> | Backing field for `PitchHeadPositionWeight`. |
+| <Link id="m-pitchheadrotationweight" /><code>{"private float pitchHeadRotationWeight"}</code> | Backing field for `PitchHeadRotationWeight`. |
+| <Link id="m-positionlerpspeed" /><code>{"private AnimationCurve positionLerpSpeed"}</code> | Backing field for `PositionLerpSpeed`. |
+| <Link id="m-rotationlerpspeed" /><code>{"private AnimationCurve rotationLerpSpeed"}</code> | Backing field for `RotationLerpSpeed`. |
 
 </details>
 

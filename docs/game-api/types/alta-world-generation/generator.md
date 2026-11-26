@@ -28,9 +28,9 @@ A 3D grid of tagged nodes for procedural construction, all set to the air tag at
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-nodes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"[,,] nodes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nodes" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{"[,,] nodes"}</code> | The 3D grid of nodes, each starting tagged as air. |
 
 </details>
 

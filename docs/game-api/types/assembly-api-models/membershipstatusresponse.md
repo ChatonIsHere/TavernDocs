@@ -1,6 +1,6 @@
 ---
 title: "MembershipStatusResponse"
-description: "class MembershipStatusResponse in Alta.Api.DataTransferModels."
+description: "Whether a user has a supporter membership, from LowLevelApiClient.GetMembershipStatus."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Whether a user has a supporter membership, from `LowLevelApiClient.GetMembershipStatus`.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-expirytime" /><code>{"DateTime? ExpiryTime { get; set; }"}</code> |
-| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-expirytime" /><code>{"DateTime? ExpiryTime { get; set; }"}</code> | When the membership ends, or null. |
+| <Link id="m-ismember" /><code>{"bool IsMember { get; set; }"}</code> | True if the user currently has a membership. |
 
 ## Used in
 

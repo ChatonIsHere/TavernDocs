@@ -50,15 +50,15 @@ The network message sent when a hand starts holding an entity: the held entity, 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-angularvelocitymax" /><code>{"private static readonly Vector3 AngularVelocityMax"}</code> |
-| <Link id="m-angularvelocitymin" /><code>{"private static readonly Vector3 AngularVelocityMin"}</code> |
-| <Link id="m-angularvelocityprecision" /><code>{"private const float AngularVelocityPrecision"}</code> |
-| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
-| <Link id="m-velocitymax" /><code>{"private static readonly Vector3 VelocityMax"}</code> |
-| <Link id="m-velocitymin" /><code>{"private static readonly Vector3 VelocityMin"}</code> |
-| <Link id="m-velocityprecision" /><code>{"private const float VelocityPrecision"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angularvelocitymax" /><code>{"private static readonly Vector3 AngularVelocityMax"}</code> | Upper bound used when compressing angular velocity for the network. |
+| <Link id="m-angularvelocitymin" /><code>{"private static readonly Vector3 AngularVelocityMin"}</code> | Lower bound used when compressing angular velocity for the network. |
+| <Link id="m-angularvelocityprecision" /><code>{"private const float AngularVelocityPrecision"}</code> | Precision (0.001) used when compressing angular velocity. |
+| <Link id="m-chunk" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | Chunk the positions are sent relative to: the held entity's chunk on the server, the local player's chunk on clients. |
+| <Link id="m-velocitymax" /><code>{"private static readonly Vector3 VelocityMax"}</code> | Upper bound (100 per axis) used when compressing velocity. |
+| <Link id="m-velocitymin" /><code>{"private static readonly Vector3 VelocityMin"}</code> | Lower bound (-100 per axis) used when compressing velocity. |
+| <Link id="m-velocityprecision" /><code>{"private const float VelocityPrecision"}</code> | Precision (0.001) used when compressing velocity. |
 
 </details>
 

@@ -27,10 +27,10 @@ A counter that keeps a running average of how many times something happened per 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |
-| <Link id="m-counts" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" counts"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"private int count"}</code> | Count since the last `RecordAndResetCount`. |
+| <Link id="m-counts" /><code>{"private "}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" counts"}</code> | Running average of the recorded counts, read through `Count`. |
 
 </details>
 

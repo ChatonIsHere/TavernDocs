@@ -1,6 +1,6 @@
 ---
 title: "Rule.RotationOverlap"
-description: "enum Rule.RotationOverlap in Root.Township."
+description: "Whether a rule may be placed again on cells it already used: never, only at a perpendicular rotation, only mirrored, either of those, or always."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Rule.RotationOverlap
 
 An **enum** in `Root.Township`, `Alta.PAGaC`.
+
+Whether a rule may be placed again on cells it already used: never, only at a perpendicular rotation, only mirrored, either of those, or always.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`Rule`](/game-api/types/alta-world-generation/rule)

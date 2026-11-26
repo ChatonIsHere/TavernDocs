@@ -28,12 +28,12 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> |
-| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isinitialized" /><code>{"private bool isInitialized"}</code> | True once the serialized arrays have been unpacked into `data` and `Versioning`. Not serialized. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-serializeddata" /><code>{"private uint[] serializedData"}</code> | The saved entity's bytes packed as `uint` words, so Unity can serialize them. |
+| <Link id="m-versioning" /><code>{"private uint[] versioning"}</code> | The chunk versioning array the data was saved with; `Initialize` rebuilds `Versioning` from it. |
 
 </details>
 
@@ -63,7 +63,7 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 | Member | What it is |
 | --- | --- |
 | <Link id="m-load-2" /><code>{"private void Load("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" existing, Transform parent, Vector3 localPosition, Quaternion localRotation, "}<Link to="/game-api/types/game-other-namespaces/savemode">{"SaveMode"}</Link>{" saveMode)"}</code> | Obsolete: spawns the object and loads into it, but spawns network entities twice. Use `LoadInto`. |
-| <Link id="m-spawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn()"}</code> |  |
+| <Link id="m-spawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Spawn()"}</code> | Spawns a fresh entity of the saved prefab hash through the spawn manager. Used by the obsolete `Load`. |
 
 </details>
 

@@ -28,11 +28,11 @@ Client: one input action (such as interact or jump) for a player's hand, bound t
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allinputsources" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{"> allInputSources"}</code> |
-| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> |
-| <Link id="m-state" /><code>{"private bool state"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allinputsources" /><code>{"private List<"}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{"> allInputSources"}</code> | Every input pair currently bound to this action, across platform mappings. |
+| <Link id="m-ischanged" /><code>{"private bool isChanged"}</code> | Unused flag. |
+| <Link id="m-state" /><code>{"private bool state"}</code> | Whether the action is currently held. Backing field for `State`. |
 
 </details>
 
@@ -63,15 +63,15 @@ Client: one input action (such as interact or jump) for a player's hand, bound t
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onactionended" /><code>{"private void OnActionEnded("}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" inputSource, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-onactionended-2" /><code>{"private void OnActionEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> |
-| <Link id="m-onactionstarted" /><code>{"private void OnActionStarted("}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" inputSource, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-onactionstarted-2" /><code>{"private void OnActionStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-populateinputsourcepair" /><code>{"private void PopulateInputSourcePair(object[] buttons, "}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{" inputSourcePair, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
-| <Link id="m-removeinputsource" /><code>{"private void RemoveInputSource("}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{" inputToRemove)"}</code> |
-| <Link id="m-setuplisteners" /><code>{"private void SetupListeners(List<"}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{"> sourceToListenTo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onactionended" /><code>{"private void OnActionEnded("}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" inputSource, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Sets the state to off and raises `Ended` if it was on; the overload taking an input source is the per-input listener. |
+| <Link id="m-onactionended-2" /><code>{"private void OnActionEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller, bool isDisabling)"}</code> | Sets the state to off and raises `Ended` if it was on; the overload taking an input source is the per-input listener. |
+| <Link id="m-onactionstarted" /><code>{"private void OnActionStarted("}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" inputSource, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Sets the state to on and raises `Started` if it was off; for two-key combos it first checks the primary input is held. |
+| <Link id="m-onactionstarted-2" /><code>{"private void OnActionStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Sets the state to on and raises `Started` if it was off; for two-key combos it first checks the primary input is held. |
+| <Link id="m-populateinputsourcepair" /><code>{"private void PopulateInputSourcePair(object[] buttons, "}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{" inputSourcePair, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Builds the primary and optional secondary input for one binding from a key code or a `GeneralInputType`. |
+| <Link id="m-removeinputsource" /><code>{"private void RemoveInputSource("}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{" inputToRemove)"}</code> | Unhooks one input pair's listeners and removes it from the action. |
+| <Link id="m-setuplisteners" /><code>{"private void SetupListeners(List<"}<Link to="/game-api/types/global-i-l/inputsourcepair">{"InputSourcePair"}</Link>{"> sourceToListenTo)"}</code> | Hooks the press and release events of each input pair to this action. |
 
 </details>
 

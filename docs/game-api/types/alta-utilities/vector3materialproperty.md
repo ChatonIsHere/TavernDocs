@@ -1,6 +1,6 @@
 ---
 title: "Vector3MaterialProperty"
-description: "class Vector3MaterialProperty in Root.Township."
+description: "A named shader property that takes a Vector3, set by cached property id."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Vector3MaterialProperty
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+A named shader property that takes a `Vector3`, set by cached property id.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`MaterialProperty<Vector3>`](/game-api/types/alta-utilities/materialproperty-t)
@@ -23,10 +25,10 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Vector3 value, Material material)"}</code> |
-| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Vector3 value, MaterialPropertyBlock propertyBlock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setonmaterial" /><code>{"override void SetOnMaterial(Vector3 value, Material material)"}</code> | Sets the vector on a material. |
+| <Link id="m-setonpropertyblock" /><code>{"override void SetOnPropertyBlock(Vector3 value, MaterialPropertyBlock propertyBlock)"}</code> | Sets the vector on a material property block. |
 
 ## Used in
 

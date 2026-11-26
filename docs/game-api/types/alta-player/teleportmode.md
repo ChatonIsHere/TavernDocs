@@ -1,6 +1,6 @@
 ---
 title: "TeleportMode"
-description: "enum TeleportMode in Root.Township."
+description: "Which part of the player lands on the teleport target: the room centre, the feet or the head."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TeleportMode
 
 An **enum** in `Root.Township`, `Alta.Character`.
+
+Which part of the player lands on the teleport target: the room centre, the feet or the head.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 

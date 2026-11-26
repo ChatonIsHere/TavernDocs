@@ -28,15 +28,15 @@ Helper that scales a behaviour's transform in or out along "on" and "off" curves
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationroutine" /><code>{"private Coroutine animationRoutine"}</code> |
-| <Link id="m-behaviour" /><code>{"private MonoBehaviour behaviour"}</code> |
-| <Link id="m-isdisallowingzero" /><code>{"private bool isDisallowingZero"}</code> |
-| <Link id="m-ison" /><code>{"private bool isOn"}</code> |
-| <Link id="m-off" /><code>{"private AnimationCurve off"}</code> |
-| <Link id="m-on" /><code>{"private AnimationCurve on"}</code> |
-| <Link id="m-startscale" /><code>{"private Vector3 startScale"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationroutine" /><code>{"private Coroutine animationRoutine"}</code> | The running animation coroutine, null when idle. |
+| <Link id="m-behaviour" /><code>{"private MonoBehaviour behaviour"}</code> | The behaviour whose transform is scaled and that runs the coroutine. |
+| <Link id="m-isdisallowingzero" /><code>{"private bool isDisallowingZero"}</code> | Keeps scale at least 0.001 so the object never reaches zero. |
+| <Link id="m-ison" /><code>{"private bool isOn"}</code> | Backing field for `IsOn`. |
+| <Link id="m-off" /><code>{"private AnimationCurve off"}</code> | Scale curve played when turning off. |
+| <Link id="m-on" /><code>{"private AnimationCurve on"}</code> | Scale curve played when turning on. |
+| <Link id="m-startscale" /><code>{"private Vector3 startScale"}</code> | The full scale that the curves multiply. |
 
 </details>
 
@@ -66,9 +66,9 @@ Helper that scales a behaviour's transform in or out along "on" and "off" curves
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-animate" /><code>{"private IEnumerator Animate() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animate" /><code>{"private IEnumerator Animate() (iterator)"}</code> | Coroutine that plays the on or off curve, and plays again if the state flipped meanwhile, then raises `Finished`. |
 
 </details>
 

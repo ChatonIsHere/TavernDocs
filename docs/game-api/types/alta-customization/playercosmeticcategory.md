@@ -29,12 +29,12 @@ A category of player cosmetics (a slot such as a hat or shirt), loaded from `Res
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allcategories" /><code>{"private static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] allCategories"}</code> |
-| <Link id="m-categoriesfolder" /><code>{"private const string CategoriesFolder"}</code> |
-| <Link id="m-flatnullchance" /><code>{"private float flatNullChance"}</code> |
-| <Link id="m-nullelementweight" /><code>{"private float nullElementWeight"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allcategories" /><code>{"private static "}<Link to="/game-api/types/alta-customization/playercosmeticcategory">{"PlayerCosmeticCategory"}</Link>{"[] allCategories"}</code> | Backing field for `AllCategories`. Reloaded every time in the editor. |
+| <Link id="m-categoriesfolder" /><code>{"private const string CategoriesFolder"}</code> | Resources folder the categories load from: "Cosmetic Categories". |
+| <Link id="m-flatnullchance" /><code>{"private float flatNullChance"}</code> | Chance that a random pick returns nothing for this category. |
+| <Link id="m-nullelementweight" /><code>{"private float nullElementWeight"}</code> | Weight of "nothing" against the item count in random picks. |
 
 </details>
 
@@ -54,9 +54,9 @@ A category of player cosmetics (a slot such as a hat or shirt), loaded from `Res
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-loadallcategories" /><code>{"private static void LoadAllCategories()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loadallcategories" /><code>{"private static void LoadAllCategories()"}</code> | Loads every active category from Resources, sorted by priority, into `allCategories`. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "Feather"
-description: "class Feather in Root.Township."
+description: "Component on a feather model that points at its bottom part."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Feather
 
 A **class** in `Root.Township`, no namespace.
+
+Component on a feather model that points at its bottom part. `DummyArrow` copies that part onto arrows.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bottom" /><code>{"private GameObject bottom"}</code> | Backing field for `Bottom`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bottom-2" /><code>{"GameObject Bottom { get; }"}</code> | The feather's bottom object, instantiated by `DummyArrow` at the arrow's feather position. |
 
 ## Used in
 

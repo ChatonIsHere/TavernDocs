@@ -28,13 +28,13 @@ Client: a simple LOD group that switches renderer sets on and off by the local p
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> |
-| <Link id="m-lastlevel" /><code>{"private int lastLevel"}</code> |
-| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |
-| <Link id="m-lods" /><code>{"private "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] lods"}</code> |
-| <Link id="m-manager" /><code>{"private static "}<Link to="/game-api/types/global-c-d/distancelodgroupmanager">{"DistanceLODGroupManager"}</Link>{" manager"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cachedtransform" /><code>{"private Transform cachedTransform"}</code> | The group's own transform, cached in `Awake`. |
+| <Link id="m-lastlevel" /><code>{"private int lastLevel"}</code> | The LOD level currently shown, or -1 when the viewer is past the last level's distance (nothing shown). |
+| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> | The cached world position that `Position` returns. |
+| <Link id="m-lods" /><code>{"private "}<Link to="/game-api/types/global-c-d/distancelod">{"DistanceLOD"}</Link>{"[] lods"}</code> | The LOD levels, nearest first, each with its renderers and squared switch distance. |
+| <Link id="m-manager" /><code>{"private static "}<Link to="/game-api/types/global-c-d/distancelodgroupmanager">{"DistanceLODGroupManager"}</Link>{" manager"}</code> | One `DistanceLODGroupManager` shared by every group, created by the first group that is enabled. |
 
 </details>
 
@@ -61,13 +61,13 @@ Client: a simple LOD group that switches renderer sets on and off by the local p
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-modifylodlevelrenderers" /><code>{"private void ModifyLODLevelRenderers(int lodIndex, Func<HashSet<Renderer>, bool> modifyFunction)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Caches the transform and its position. On a headless server the component destroys itself instead. |
+| <Link id="m-modifylodlevelrenderers" /><code>{"private void ModifyLODLevelRenderers(int lodIndex, Func<HashSet<Renderer>, bool> modifyFunction)"}</code> | Copies one LOD level's renderers into a set, runs the given edit on it and saves the set back if it changed. Used by the add and remove renderer methods. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Client: removes the group from the shared manager. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Client: resets to level 0 (only level 0 renderers on) and registers the group with the shared manager, creating the manager if needed. |
+| <Link id="m-updateposition" /><code>{"private void UpdatePosition()"}</code> | Caches the transform's world position and clears its `hasChanged` flag. `Position` calls it when the transform has moved. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "Friend"
-description: "struct Friend in Root.Township."
+description: "A friend entry: the user's ID and display name."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Meta.Friends`.
 
+A friend entry: the user's ID and display name.
+
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **struct** in `Root.Township`, `Alta.Meta.Friends`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> |
-| <Link id="m-id" /><code>{"ulong ID { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayname" /><code>{"string DisplayName { get; }"}</code> | The friend's display name. |
+| <Link id="m-id" /><code>{"ulong ID { get; }"}</code> | The friend's user ID. |
 
 ## Used in
 

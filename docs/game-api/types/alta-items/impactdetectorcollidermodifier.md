@@ -28,9 +28,9 @@ Component on a collider that changes how hits on it are treated, through a list 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermodifiersettings">{"ColliderModifierSettings"}</Link>{"[] settings"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-items/collidermodifiersettings">{"ColliderModifierSettings"}</Link>{"[] settings"}</code> | Modifier settings checked in order. A hit only damages if all agree, and each can change the hit. |
 
 </details>
 

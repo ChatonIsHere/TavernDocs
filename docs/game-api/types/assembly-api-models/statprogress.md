@@ -1,6 +1,6 @@
 ---
 title: "StatProgress"
-description: "class StatProgress in Alta.Api.DataTransferModels."
+description: "Progress on one achievement action stat, read from and sent to the web API by the achievement client."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Progress on one achievement action stat, read from and sent to the web API by the achievement client.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-newprogress" /><code>{"float NewProgress { get; set; }"}</code> |
-| <Link id="m-progress" /><code>{"float Progress { get; set; }"}</code> |
-| <Link id="m-stathash" /><code>{"uint StatHash { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-newprogress" /><code>{"float NewProgress { get; set; }"}</code> | Progress added since the last update (`new_progress`). |
+| <Link id="m-progress" /><code>{"float Progress { get; set; }"}</code> | Total progress on the stat. |
+| <Link id="m-stathash" /><code>{"uint StatHash { get; set; }"}</code> | Hash that identifies the stat. |
 
 ## Used in
 

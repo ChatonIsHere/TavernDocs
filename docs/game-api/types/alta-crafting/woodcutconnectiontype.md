@@ -30,14 +30,14 @@ Asset describing how one piece of a choppable tree joins its parent: how it can 
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bones" /><code>{"private int bones"}</code> |
-| <Link id="m-breakthreshold" /><code>{"private float breakThreshold"}</code> |
-| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelevent">{"WoodcutTreeModelEvent"}</Link>{" broken"}</code> |
-| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> |
-| <Link id="m-isstick" /><code>{"private bool isStick"}</code> |
-| <Link id="m-rotations" /><code>{"private int rotations"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bones" /><code>{"private int bones"}</code> | How many woodcut points a connection of this type spans for breaking (default 12). |
+| <Link id="m-breakthreshold" /><code>{"private float breakThreshold"}</code> | Base damage a connection takes before it breaks, scaled by species and node multipliers. |
+| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcuttreemodelevent">{"WoodcutTreeModelEvent"}</Link>{" broken"}</code> | Event raised with the piece when this connection breaks (called for the root when a tree falls). |
+| <Link id="m-isroot" /><code>{"private bool isRoot"}</code> | Marks the root connection type. Not read elsewhere in the code. |
+| <Link id="m-isstick" /><code>{"private bool isStick"}</code> | Whether pieces of this type use the species' stick distribution instead of the wedge one. |
+| <Link id="m-rotations" /><code>{"private int rotations"}</code> | Number of evenly spaced yaw rotations a child piece can be given (default 1). |
 
 </details>
 

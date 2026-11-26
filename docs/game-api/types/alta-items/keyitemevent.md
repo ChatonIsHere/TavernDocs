@@ -1,6 +1,6 @@
 ---
 title: "KeyItemEvent"
-description: "class KeyItemEvent in Root.Township."
+description: "A serializable event with a KeyItem argument, such as a lock's key turn event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # KeyItemEvent
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A serializable event with a `KeyItem` argument, such as a lock's key turn event.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`AltaEvent<KeyItem, KeyUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

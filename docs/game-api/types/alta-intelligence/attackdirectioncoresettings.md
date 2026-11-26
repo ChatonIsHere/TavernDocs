@@ -29,15 +29,15 @@ Settings asset that makes a creature animate in response to where its target is 
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationchangeduration" /><code>{"private float animationChangeDuration"}</code> |
-| <Link id="m-height" /><code>{"private float height"}</code> |
-| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> |
-| <Link id="m-layer" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" layer"}</code> |
-| <Link id="m-mindamage" /><code>{"private float minDamage"}</code> |
-| <Link id="m-side" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" side"}</code> |
-| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" up"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationchangeduration" /><code>{"private float animationChangeDuration"}</code> | Seconds to blend the reaction animations to a new direction. |
+| <Link id="m-height" /><code>{"private float height"}</code> | Height above the target's ground position used to judge where an attack comes from. |
+| <Link id="m-isfacingtarget" /><code>{"private bool isFacingTarget"}</code> | Whether the agent turns to face its target while this runs. |
+| <Link id="m-layer" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" layer"}</code> | Animation that switches the reaction layer on while an attack is incoming. |
+| <Link id="m-mindamage" /><code>{"private float minDamage"}</code> | Attacks at or below this damage are ignored. |
+| <Link id="m-side" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" side"}</code> | Animation for attacks coming from the left or right. |
+| <Link id="m-up" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/attackdirectionanimationsettings">{"AttackDirectionAnimationSettings"}</Link>{" up"}</code> | Animation for attacks coming from above. |
 
 </details>
 

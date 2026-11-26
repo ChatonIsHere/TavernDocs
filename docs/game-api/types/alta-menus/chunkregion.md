@@ -1,6 +1,6 @@
 ---
 title: "ChunkRegion"
-description: "enum ChunkRegion in Root.Township."
+description: "Named regions of the world (town buildings, overworld areas, caves, combat trials) used to tell friends where a player is, such as Oculus destinations."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkRegion
 
 An **enum** in `Root.Township`, `Alta.FriendLocation`.
+
+Named regions of the world (town buildings, overworld areas, caves, combat trials) used to tell friends where a player is, such as Oculus destinations.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 

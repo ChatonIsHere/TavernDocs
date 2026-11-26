@@ -1,6 +1,6 @@
 ---
 title: "BlinkingController.EyeBlinker"
-description: "struct BlinkingController.EyeBlinker in Root.Township."
+description: "Private helper in BlinkingController that triggers the blink animation for one eye."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BlinkingController.EyeBlinker
 
 A **private struct** in `Root.Township`, `Alta.Character`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private helper in `BlinkingController` that triggers the blink animation for one eye. The constructor also sets that eye's blink speed on the animator.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`BlinkingController`](/game-api/types/alta-player/blinkingcontroller)
@@ -26,18 +28,18 @@ A **private struct** in `Root.Township`, `Alta.Character`. Reach it through att-
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
-| <Link id="m-triggerid" /><code>{"private int triggerID"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | Animator that plays the blink. |
+| <Link id="m-triggerid" /><code>{"private int triggerID"}</code> | Hash of the left or right eye blink trigger. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-blink" /><code>{"void Blink()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blink" /><code>{"void Blink()"}</code> | Fires the eye's blink trigger on the animator. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "InteractionChannel"
-description: "enum InteractionChannel in Root.Township."
+description: "Flags for which kinds of interaction an interactor accepts (normal, body customisation, equipment, skill practice, downed character)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractionChannel
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for which kinds of interaction an interactor accepts (normal, body customisation, equipment, skill practice, downed character). Interactors can override their channels, for example while downed.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

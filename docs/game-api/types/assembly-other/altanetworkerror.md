@@ -1,6 +1,6 @@
 ---
 title: "AltaNetworkError"
-description: "enum AltaNetworkError in Alta.NetworkTransport.Runtime."
+description: "Network errors a transport can report, such as DNS failure, timeout, congestion, bad send or receive, and closed connection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaNetworkError
 
 An **enum** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
+
+Network errors a transport can report, such as DNS failure, timeout, congestion, bad send or receive, and closed connection.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 

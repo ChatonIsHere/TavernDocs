@@ -1,6 +1,6 @@
 ---
 title: "GeneralInputType"
-description: "enum GeneralInputType in Root.Township."
+description: "General player input actions not tied to a tool: grab, teleport, snap turn, menus, smooth locomotion, gestures, photo, grab assist and so on."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneralInputType
 
 An **enum** in `Root.Township`, no namespace.
+
+General player input actions not tied to a tool: grab, teleport, snap turn, menus, smooth locomotion, gestures, photo, grab assist and so on.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 

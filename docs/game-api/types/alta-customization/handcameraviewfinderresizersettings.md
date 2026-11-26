@@ -1,6 +1,6 @@
 ---
 title: "HandCameraViewfinderResizerSettings"
-description: "class HandCameraViewfinderResizerSettings in Root.Township."
+description: "Client: keeps the hand camera's viewfinder from going further than a set distance from the player's head, pulling it in along the line of sight."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandCameraViewfinderResizerSettings
 
 A **internal class** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Client: keeps the hand camera's viewfinder from going further than a set distance from the player's head, pulling it in along the line of sight. Internal asset.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `ScriptableObject`
@@ -27,19 +29,19 @@ A **internal class** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throu
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> |
-| <Link id="m-currentresizer" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clampdistance" /><code>{"private float clampDistance"}</code> | Furthest the viewfinder can be from the head. Default 3. |
+| <Link id="m-currentresizer" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings-handcameraviewfinderresizer">{"HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer"}</Link>{" currentResizer"}</code> | The resizer running for the current viewfinder, or null. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> |
-| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disableresizing" /><code>{"void DisableResizing()"}</code> | Stops the current resizer, if any. |
+| <Link id="m-enableresizingfortarget" /><code>{"void EnableResizingForTarget(Transform viewFinder)"}</code> | Starts clamping a viewfinder transform each late update, replacing any resizer already running. |
 
 ## Used in
 

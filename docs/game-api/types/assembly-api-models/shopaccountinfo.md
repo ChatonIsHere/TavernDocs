@@ -1,6 +1,6 @@
 ---
 title: "ShopAccountInfo"
-description: "class ShopAccountInfo in Alta.Api.DataTransferModels."
+description: "Web API reply with a user's shop balance: shards, wallet money and supporter subscription status."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShopAccountInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Web API reply with a user's shop balance: shards, wallet money and supporter subscription status.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Nested types** [`SubscriptionStatus`](/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus)
@@ -23,12 +25,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-memberstatus" /><code><Link to="/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus">{"ShopAccountInfo.SubscriptionStatus"}</Link>{" MemberStatus { get; set; }"}</code> |
-| <Link id="m-shardbalance" /><code>{"int ShardBalance { get; set; }"}</code> |
-| <Link id="m-walletamount" /><code>{"decimal WalletAmount { get; set; }"}</code> |
-| <Link id="m-walletcurrency" /><code>{"string WalletCurrency { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-memberstatus" /><code><Link to="/game-api/types/assembly-api-models/shopaccountinfo-subscriptionstatus">{"ShopAccountInfo.SubscriptionStatus"}</Link>{" MemberStatus { get; set; }"}</code> | Supporter subscription details: whether they are a supporter, end date, renewal and next reward date. |
+| <Link id="m-shardbalance" /><code>{"int ShardBalance { get; set; }"}</code> | How many shop shards the user has. |
+| <Link id="m-walletamount" /><code>{"decimal WalletAmount { get; set; }"}</code> | Money in the user's wallet, in `WalletCurrency`. |
+| <Link id="m-walletcurrency" /><code>{"string WalletCurrency { get; set; }"}</code> | Currency code for `WalletAmount`. |
 
 ## Used in
 

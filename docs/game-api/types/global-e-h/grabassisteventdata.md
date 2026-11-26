@@ -1,6 +1,6 @@
 ---
 title: "GrabAssistEventData"
-description: "struct GrabAssistEventData in Root.Township."
+description: "Data sent with GrabAssistController.GrabAssistUpdated each time the grab assist target is rechecked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, no namespace.
 
+Data sent with `GrabAssistController.GrabAssistUpdated` each time the grab assist target is rechecked.
+
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-length" /><code>{"readonly float length"}</code> |
-| <Link id="m-origin" /><code>{"Vector3 origin"}</code> |
-| <Link id="m-success" /><code>{"readonly bool success"}</code> |
-| <Link id="m-target" /><code>{"Vector3 target"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-length" /><code>{"readonly float length"}</code> | Length of the assist search after checking for obstacles. |
+| <Link id="m-origin" /><code>{"Vector3 origin"}</code> | Where the assist search starts. |
+| <Link id="m-success" /><code>{"readonly bool success"}</code> | Whether a grab target was found. |
+| <Link id="m-target" /><code>{"Vector3 target"}</code> | Target position: the found target, or the end of the search. |
 
 ## Used in
 

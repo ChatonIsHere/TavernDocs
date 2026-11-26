@@ -1,6 +1,6 @@
 ---
 title: "ChunkSaveVersion"
-description: "enum ChunkSaveVersion in Root.Township."
+description: "Chunk save format versions, one per game release, with Latest the current one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkSaveVersion
 
 An **enum** in `Root.Township`, `Alta.Chunks`.
+
+Chunk save format versions, one per game release, with `Latest` the current one. Lets loading code handle saves from older releases.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 

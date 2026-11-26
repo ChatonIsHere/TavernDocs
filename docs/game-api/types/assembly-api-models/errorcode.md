@@ -1,6 +1,6 @@
 ---
 title: "ErrorCode"
-description: "enum ErrorCode in Alta.Api.DataTransferModels."
+description: "Error codes the Alta web API returns, covering shop, accounts, bans, groups, servers and login failures."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ErrorCode
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Errors`.
+
+Error codes the Alta web API returns, covering shop, accounts, bans, groups, servers and login failures.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

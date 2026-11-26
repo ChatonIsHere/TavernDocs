@@ -26,9 +26,9 @@ Component that points at a `CharacterDummy`, so other code can find the dummy fr
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-characterdummy" /><code>{"protected "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" characterDummy"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-characterdummy" /><code>{"protected "}<Link to="/game-api/types/alta-player/characterdummy">{"CharacterDummy"}</Link>{" characterDummy"}</code> | Backing field for `CharacterDummy`, the character dummy this object points at. |
 
 ## Properties
 

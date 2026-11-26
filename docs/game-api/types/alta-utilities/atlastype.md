@@ -1,6 +1,6 @@
 ---
 title: "AtlasType"
-description: "enum AtlasType in Root.Township."
+description: "Which atlased shader a texture atlas uses: common, wind foliage, no-wind foliage, forging metal or non-forging metal."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AtlasType
 
 An **enum** in `Root.Township`, `Alta.Utilities.Atlas`.
+
+Which atlased shader a texture atlas uses: common, wind foliage, no-wind foliage, forging metal or non-forging metal.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

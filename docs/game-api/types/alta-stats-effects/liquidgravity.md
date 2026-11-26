@@ -27,16 +27,16 @@ Simulates which way a liquid surface points as its container moves and tips, wit
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-disableframes" /><code>{"private int disableFrames"}</code> |
-| <Link id="m-disableframeswhilestationary" /><code>{"private const int DisableFramesWhileStationary"}</code> |
-| <Link id="m-localup" /><code>{"private Vector3 localUp"}</code> |
-| <Link id="m-oldposition" /><code>{"private Vector3 oldPosition"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
-| <Link id="m-velocity" /><code>{"private float velocity"}</code> |
-| <Link id="m-velocityaxis" /><code>{"private Vector3 velocityAxis"}</code> |
-| <Link id="m-worldup" /><code>{"private Vector3 worldUp"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disableframes" /><code>{"private int disableFrames"}</code> | Frames left to skip in `Update`. Reset by `ResetDisableFrames` or `Reset`. |
+| <Link id="m-disableframeswhilestationary" /><code>{"private const int DisableFramesWhileStationary"}</code> | Number of frames (30) `Update` skips after the liquid's up direction stops changing. |
+| <Link id="m-localup" /><code>{"private Vector3 localUp"}</code> | The liquid's up direction in the container's local space, kept between frames. |
+| <Link id="m-oldposition" /><code>{"private Vector3 oldPosition"}</code> | Container position last frame, used to push the liquid when the container moves. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | The container transform the liquid is simulated in. |
+| <Link id="m-velocity" /><code>{"private float velocity"}</code> | Current swing speed of the liquid's up direction, in degrees per second. |
+| <Link id="m-velocityaxis" /><code>{"private Vector3 velocityAxis"}</code> | Axis the liquid's up direction is swinging around. |
+| <Link id="m-worldup" /><code>{"private Vector3 worldUp"}</code> | Backing field for `WorldUp`, the simulated up direction in world space. |
 
 </details>
 

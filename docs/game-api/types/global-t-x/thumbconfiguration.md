@@ -1,6 +1,6 @@
 ---
 title: "ThumbConfiguration"
-description: "class ThumbConfiguration in Root.Township."
+description: "Asset that sets how the player's thumb rests and which axis it curls around, per hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ThumbConfiguration
 
 A **class** in `Root.Township`, no namespace.
+
+Asset that sets how the player's thumb rests and which axis it curls around, per hand.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `ScriptableObject`
@@ -28,25 +30,25 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> |
-| <Link id="m-lefthandcurlaxis" /><code>{"private Vector3 leftHandCurlAxis"}</code> |
-| <Link id="m-righthandcurlaxis" /><code>{"private Vector3 rightHandCurlAxis"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baserotation" /><code>{"private Quaternion baseRotation"}</code> | Backing field for `BaseRotation`. |
+| <Link id="m-lefthandcurlaxis" /><code>{"private Vector3 leftHandCurlAxis"}</code> | Curl axis for the left hand. |
+| <Link id="m-righthandcurlaxis" /><code>{"private Vector3 rightHandCurlAxis"}</code> | Curl axis for the right hand. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-baserotation-2" /><code>{"Quaternion BaseRotation { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baserotation-2" /><code>{"Quaternion BaseRotation { get; }"}</code> | Resting rotation of the thumb. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-curlaxis" /><code>{"Vector3 CurlAxis(bool isLeftHand)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curlaxis" /><code>{"Vector3 CurlAxis(bool isLeftHand)"}</code> | Axis the thumb curls around for the left or right hand. |
 
 ## Used in
 

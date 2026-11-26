@@ -29,11 +29,11 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> |
-| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> |
-| <Link id="m-transform" /><code>{"private Transform transform"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gameobject" /><code>{"private GameObject gameObject"}</code> | Cached `GameObject`, set in `Initialize` so later calls skip the Unity property. |
+| <Link id="m-piece" /><code>{"private "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" piece"}</code> | The `StaticEnvironmentPiece` definition this instance came from; `Release` returns the instance to its pool. |
+| <Link id="m-transform" /><code>{"private Transform transform"}</code> | Cached `Transform`, set in `Initialize` and used by `MoveAndEnable` and `SetScale`. |
 
 </details>
 
@@ -63,9 +63,9 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> | Explicit `IInstructionResult` implementation: undoing the placement just calls `Release`. |
 
 </details>
 

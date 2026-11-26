@@ -30,18 +30,18 @@ A forest generation biome asset, with weighting and noise settings used to score
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-biomedefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biomeDefinition"}</code> |
-| <Link id="m-color" /><code>{"private Color color"}</code> |
-| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> |
-| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> |
-| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" parent"}</code> |
-| <Link id="m-parents" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] parents"}</code> |
-| <Link id="m-randomextraweight" /><code>{"private float randomExtraWeight"}</code> |
-| <Link id="m-simplexscale" /><code>{"private float simplexScale"}</code> |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
-| <Link id="m-woffset" /><code>{"private int wOffset"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-biomedefinition" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" biomeDefinition"}</code> | Backing field for `BiomeDefinition`, the biome this forest biome spawns. |
+| <Link id="m-color" /><code>{"private Color color"}</code> | Backing field for `Color`, probably for debug views. Default white. |
+| <Link id="m-maximumradius" /><code>{"private float maximumRadius"}</code> | Backing field for `MaximumRadius`. Default 500. |
+| <Link id="m-minimumradius" /><code>{"private float minimumRadius"}</code> | Backing field for `MinimumRadius`. Default 100. |
+| <Link id="m-parent" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" parent"}</code> | Backing field for `Parent`. |
+| <Link id="m-parents" /><code>{"private "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{"[] parents"}</code> | Backing field for `Parents`. |
+| <Link id="m-randomextraweight" /><code>{"private float randomExtraWeight"}</code> | Backing field for `RandomExtraWeight`: up to this much random weight is added in `GetScore`. Default 0.2. |
+| <Link id="m-simplexscale" /><code>{"private float simplexScale"}</code> | Backing field for `SimplexScale`: noise coordinates are divided by this in `GetScore`. Default 100. |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> | Backing field for `Weighting`, multiplied into the noise score. Default 1. |
+| <Link id="m-woffset" /><code>{"private int wOffset"}</code> | Backing field for `WOffset`, the noise's fourth coordinate. `OnValidate` picks a random one when it's 0 or less. |
 
 </details>
 

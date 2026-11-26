@@ -29,9 +29,9 @@ Turns a trigger collider's enter and exit messages into C# events, so other scri
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-thiscollider" /><code>{"private Collider thisCollider"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-thiscollider" /><code>{"private Collider thisCollider"}</code> | Cached collider on this object. Backing field for `ThisCollider`. |
 
 </details>
 
@@ -57,10 +57,10 @@ Turns a trigger collider's enter and exit messages into C# events, so other scri
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> |
-| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider collider)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ontriggerenter" /><code>{"private void OnTriggerEnter(Collider collider)"}</code> | Raises `Entered` with the collider that entered. |
+| <Link id="m-ontriggerexit" /><code>{"private void OnTriggerExit(Collider collider)"}</code> | Raises `Exited` with the collider that left. |
 
 </details>
 

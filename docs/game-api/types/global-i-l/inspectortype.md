@@ -1,6 +1,6 @@
 ---
 title: "InspectorType"
-description: "enum InspectorType in Root.Township."
+description: "What an in-game bubble inspector entry represents: a component, a method, a value or an interactor."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InspectorType
 
 An **enum** in `Root.Township`, no namespace.
+
+What an in-game bubble inspector entry represents: a component, a method, a value or an interactor. Returned by `InspectorBase.InspectorType`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

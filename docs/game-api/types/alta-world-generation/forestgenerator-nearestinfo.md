@@ -1,6 +1,6 @@
 ---
 title: "ForestGenerator.NearestInfo"
-description: "struct ForestGenerator.NearestInfo in Root.Township."
+description: "Scratch arrays for forest generation: the nearest path edges to a point, with distance and progress along each."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestGenerator.NearestInfo
 
 A **struct** in `Root.Township`, `Alta.Forests`.
+
+Scratch arrays for forest generation: the nearest path edges to a point, with distance and progress along each. Pooled by `ForestGenerator`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`ForestGenerator`](/game-api/types/alta-world-generation/forestgenerator)
@@ -23,11 +25,11 @@ A **struct** in `Root.Township`, `Alta.Forests`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-nearestdistance" /><code>{"float[] nearestDistance"}</code> |
-| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"[] nearestEdge"}</code> |
-| <Link id="m-nearestprogresses" /><code>{"float[] nearestProgresses"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nearestdistance" /><code>{"float[] nearestDistance"}</code> | Distance from the point to each nearest edge. |
+| <Link id="m-nearestedge" /><code><Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{"[] nearestEdge"}</code> | The nearest path edges, closest first probably. |
+| <Link id="m-nearestprogresses" /><code>{"float[] nearestProgresses"}</code> | How far along each edge the closest point lies; used to work out target height. |
 
 ## Used in
 

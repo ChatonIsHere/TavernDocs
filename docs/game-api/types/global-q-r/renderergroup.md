@@ -28,13 +28,13 @@ A group of renderers changed together: layer, shadows, alpha and material floats
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-albedoalpha" /><code>{"private float albedoAlpha"}</code> |
-| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> |
-| <Link id="m-layer" /><code>{"private int layer"}</code> |
-| <Link id="m-receiveshadows" /><code>{"private bool receiveShadows"}</code> |
-| <Link id="m-shadowcastingmode" /><code>{"private ShadowCastingMode shadowCastingMode"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-albedoalpha" /><code>{"private float albedoAlpha"}</code> | Backing field for `AlbedoAlpha`, the alpha last applied to the materials. |
+| <Link id="m-isinstanced" /><code>{"private bool isInstanced"}</code> | True once the renderers have their own material instances. |
+| <Link id="m-layer" /><code>{"private int layer"}</code> | Backing field for `Layer`, the layer last applied to the renderers' objects. |
+| <Link id="m-receiveshadows" /><code>{"private bool receiveShadows"}</code> | Backing field for `ReceiveShadows`. |
+| <Link id="m-shadowcastingmode" /><code>{"private ShadowCastingMode shadowCastingMode"}</code> | Backing field for `ShadowCastingMode`. |
 
 </details>
 
@@ -58,13 +58,13 @@ A group of renderers changed together: layer, shadows, alpha and material floats
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | If the component starts disabled, hides the renderers as `OnDisable` would. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cleans up the per-renderer material instances if `SetAsMaterialInstances` made them. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Hides every renderer in the group. Does nothing on a headless server. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Shows every renderer in the group. Does nothing on a headless server. |
+| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> | Swaps the old first-LOD renderers in the group for the new ones. |
 
 </details>
 

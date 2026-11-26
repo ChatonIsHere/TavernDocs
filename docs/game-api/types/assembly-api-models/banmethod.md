@@ -1,6 +1,6 @@
 ---
 title: "BanMethod"
-description: "enum BanMethod in Alta.Api.DataTransferModels."
+description: "Flags for what a ban applies to: the user id, the IP address, the device id or any mix."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BanMethod
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Flags for what a ban applies to: the user id, the IP address, the device id or any mix. Passed to `SecurityApiClient.BanUserAsync`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Attributes** `Flags`

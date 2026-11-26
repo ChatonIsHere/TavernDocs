@@ -1,6 +1,6 @@
 ---
 title: "AnalyticsTools.SerializeDelegate"
-description: "delegate AnalyticsTools.SerializeDelegate in Root.Township."
+description: "Private delegate in the obsolete AnalyticsTools: a cached per-type method that writes an object's analytics fields to a StringBuilder."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticsTools.SerializeDelegate
 
 A **private delegate** in `Root.Township`, `Alta.Analytics`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private delegate in the obsolete `AnalyticsTools`: a cached per-type method that writes an object's analytics fields to a `StringBuilder`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`AnalyticsTools`](/game-api/types/alta-console/analyticstools)

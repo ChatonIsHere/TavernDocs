@@ -30,13 +30,13 @@ Asset defining a population: how fast it spawns and where its members may be pla
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> |
-| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> |
-| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> |
-| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> |
-| <Link id="m-spawnrate" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" spawnRate"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ismoving" /><code>{"private bool isMoving"}</code> | Backing field for `IsMoving`. Turn on for creatures. |
+| <Link id="m-maximumfailscore" /><code>{"private float maximumFailScore"}</code> | Backing field for `MaximumFailScore`, the top of the range the fill picks a random fail threshold from (0 to 1). |
+| <Link id="m-minimumfailscore" /><code>{"private float minimumFailScore"}</code> | Backing field for `MinimumFailScore`, the bottom of the range the fill picks a random fail threshold from (0 to 1). |
+| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> | Backing field for `SpawnModifiers`. The first (point) modifier isn't used. |
+| <Link id="m-spawnrate" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnrate">{"SpawnRate"}</Link>{" spawnRate"}</code> | Backing field for `SpawnRate`. |
 
 </details>
 

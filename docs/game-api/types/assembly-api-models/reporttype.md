@@ -1,6 +1,6 @@
 ---
 title: "ReportType"
-description: "enum ReportType in Alta.Api.DataTransferModels."
+description: "What a player report is for: griefing, harassment, or cheating and exploits."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ReportType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+What a player report is for: griefing, harassment, or cheating and exploits.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

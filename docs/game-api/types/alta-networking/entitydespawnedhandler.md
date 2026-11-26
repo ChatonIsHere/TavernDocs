@@ -1,6 +1,6 @@
 ---
 title: "EntityDespawnedHandler"
-description: "delegate EntityDespawnedHandler in Root.Township."
+description: "Handler for an entity being removed by the scene, with isUnload telling whether it was unloaded rather than destroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EntityDespawnedHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Handler for an entity being removed by the scene, with `isUnload` telling whether it was unloaded rather than destroyed. Used by `NetworkEntity.DestroyedByScene`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

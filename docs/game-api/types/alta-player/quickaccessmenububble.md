@@ -28,21 +28,21 @@ One bubble in the quick access menu, showing an action and running it when chose
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activebubblematerial" /><code>{"private Material activeBubbleMaterial"}</code> |
-| <Link id="m-activebubblematerialandroid" /><code>{"private Material activeBubbleMaterialAndroid"}</code> |
-| <Link id="m-activeprefab" /><code>{"private GameObject activePrefab"}</code> |
-| <Link id="m-animatingscale" /><code>{"private float animatingScale"}</code> |
-| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content"}</code> |
-| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> |
-| <Link id="m-inactivebubblematerial" /><code>{"private Material inactiveBubbleMaterial"}</code> |
-| <Link id="m-inactivebubblematerialandroid" /><code>{"private Material inactiveBubbleMaterialAndroid"}</code> |
-| <Link id="m-isbubbleselected" /><code>{"private bool isBubbleSelected"}</code> |
-| <Link id="m-scaleanimationspeed" /><code>{"private float scaleAnimationSpeed"}</code> |
-| <Link id="m-selectedscale" /><code>{"private float selectedScale"}</code> |
-| <Link id="m-unselectedscale" /><code>{"private float unselectedScale"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activebubblematerial" /><code>{"private Material activeBubbleMaterial"}</code> | PC material for a bubble whose action can run. |
+| <Link id="m-activebubblematerialandroid" /><code>{"private Material activeBubbleMaterialAndroid"}</code> | Android material for a bubble whose action can run. |
+| <Link id="m-activeprefab" /><code>{"private GameObject activePrefab"}</code> | Visual prefab from the action, placed inside the bubble at 0.4 scale. Destroyed when the fade ends. |
+| <Link id="m-animatingscale" /><code>{"private float animatingScale"}</code> | Not used in this build. |
+| <Link id="m-bubblerenderer" /><code>{"private Renderer bubbleRenderer"}</code> | Renderer whose material shows whether the action is active. |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-player/quickaccessmenuaction">{"QuickAccessMenuAction"}</Link>{" content"}</code> | The quick access action this bubble shows and runs. |
+| <Link id="m-headingtext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" headingText"}</code> | Text renderer for a heading. Not used by this class's own code. |
+| <Link id="m-inactivebubblematerial" /><code>{"private Material inactiveBubbleMaterial"}</code> | PC material for a bubble whose action can't run right now. |
+| <Link id="m-inactivebubblematerialandroid" /><code>{"private Material inactiveBubbleMaterialAndroid"}</code> | Android material for a bubble whose action can't run right now. |
+| <Link id="m-isbubbleselected" /><code>{"private bool isBubbleSelected"}</code> | Whether the bubble is selected, so it can reselect when the action becomes valid again. |
+| <Link id="m-scaleanimationspeed" /><code>{"private float scaleAnimationSpeed"}</code> | Speed of the scale animation between selected and unselected. |
+| <Link id="m-selectedscale" /><code>{"private float selectedScale"}</code> | Scale when selected (2 by default), unless the action overrides it. |
+| <Link id="m-unselectedscale" /><code>{"private float unselectedScale"}</code> | Scale when not selected (1 by default). |
 
 </details>
 
@@ -72,10 +72,10 @@ One bubble in the quick access menu, showing an action and running it when chose
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-updateactive" /><code>{"private void UpdateActive(bool isActive)"}</code> |
-| <Link id="m-updatetitledisplay" /><code>{"private void UpdateTitleDisplay(bool showTitle)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updateactive" /><code>{"private void UpdateActive(bool isActive)"}</code> | Swaps the bubble material for active or inactive (PC or Android set) and unselects it when it goes inactive. |
+| <Link id="m-updatetitledisplay" /><code>{"private void UpdateTitleDisplay(bool showTitle)"}</code> | Shows the action's display name (or asset name) as the menu's centred title, or clears it. |
 
 </details>
 

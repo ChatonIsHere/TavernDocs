@@ -1,6 +1,6 @@
 ---
 title: "FriendsManager.Tab"
-description: "enum FriendsManager.Tab in Root.Township."
+description: "The tabs of the friends menu: friends, friend requests and Oculus friends."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FriendsManager.Tab
 
 An **enum** in `Root.Township`, `Alta.Meta.Friends`.
+
+The tabs of the friends menu: friends, friend requests and Oculus friends.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Nested in** [`FriendsManager`](/game-api/types/alta-menus/friendsmanager)

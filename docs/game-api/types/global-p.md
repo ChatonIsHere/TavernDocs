@@ -14,12 +14,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`PageAutoAddEffect`](/game-api/types/global-p/pageautoaddeffect) | class | `PooledObject` | 3 |  |
+| [`PageAutoAddEffect`](/game-api/types/global-p/pageautoaddeffect) | class | `PooledObject` | 3 | Pooled client effect for a page being added to the player's book automatically: the page dissolves, a ghost book appears in front of the player and takes it. |
 | [`PageLootSettings`](/game-api/types/global-p/pagelootsettings) | class | `GlobalSettings<PageLootSettings>` | 1 |  |
 | [`PageLootSettings.Create`](/game-api/types/global-p/pagelootsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Pages.ScriptableObject<PageLootSettings>` | 0 |  |
 | [`PageProvider`](/game-api/types/global-p/pageprovider) | abstract class | `MonoBehaviour` | 8 | Base for a kind of page content (for books and notes). Each provider registers itself by `Identifier` on Awake and makes, saves and syncs its own page data. |
 | [`PaintBrush`](/game-api/types/global-p/paintbrush) | class | `MonoBehaviour` | 2 |  |
-| [`ParticleDestination`](/game-api/types/global-p/particledestination) | enum |  | 3 |  |
+| [`ParticleDestination`](/game-api/types/global-p/particledestination) | enum |  | 3 | Where `PooledParticleSystemManipulator` sends particles: the player's hands, the player's body or custom targets. |
 | [`ParticleEffectDistanceController`](/game-api/types/global-p/particleeffectdistancecontroller) | class | `MonoBehaviour` | 1 |  |
 | [`ParticleMeshReplacePooledObject`](/game-api/types/global-p/particlemeshreplacepooledobject) | class | `MeshReplacePooledObject` | 1 |  |
 | [`ParticleSystemGroup`](/game-api/types/global-p/particlesystemgroup) | class | `MonoBehaviour` | 2 |  |
@@ -37,7 +37,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PhysicalButton`](/game-api/types/global-p/physicalbutton) | class | `Interactable`, `IPreventAtlasing` | 7 | [Buttons and levers](../items/buttons-and-levers.md#physicalbutton): Runs on every machine that simulates the press; not networked. |
 | [`PhysicalMaterial`](/game-api/types/global-p/physicalmaterial) | class | `HashedGeneralValue<PhysicalMaterial>` | 31 | [Items and materials](../items/items-and-materials.md#physicalmaterial): A `HashedGeneralValue<PhysicalMaterial>` asset. Data, same on both sides. |
 | [`PhysicalMaterial.Create`](/game-api/types/global-p/physicalmaterial-create) | class | `AltaMenuItemBase.Assets.Create.Township.Misc.ScriptableObject<PhysicalMaterial>` | 0 |  |
-| [`PhysicalMaterialChannel`](/game-api/types/global-p/physicalmaterialchannel) | enum |  | 6 |  |
+| [`PhysicalMaterialChannel`](/game-api/types/global-p/physicalmaterialchannel) | enum |  | 6 | Which of a physical material's material slots (A to F) to use. Forging, chiselling and the builder dock mostly ask for A. |
 | [`PhysicalMaterialPart`](/game-api/types/global-p/physicalmaterialpart) | class | `GeneratedNetworkEntityBehaviour`, `ISavable<PhysicalMaterialPartSaveData>`, `ISavableSave<PhysicalMaterialPartSaveData>`, +7 more | 6 | [Items and materials](../items/items-and-materials.md#physicalmaterialpart): A networked behaviour on items that have a material. The server picks and syncs the material; clients follow. |
 | [`PhysicalMaterialPart.ChangedMaterial`](/game-api/types/global-p/physicalmaterialpart-changedmaterial) | delegate |  | 0 |  |
 | [`PhysicalMaterialPartSaveData`](/game-api/types/global-p/physicalmaterialpartsavedata) | internal class | `NewSaveData<PhysicalMaterialPart, PhysicalMaterialPartSaveData>` | 1 |  |
@@ -54,7 +54,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PickupDecay`](/game-api/types/global-p/pickupdecay) | class | `BasicDecay` | 2 | [Items, interaction and damage](../items/overview.md): Server-side decay timer for pickups, paused while held or docked. |
 | [`PickupDecaySettings`](/game-api/types/global-p/pickupdecaysettings) | class | `DecaySettings` | 3 |  |
 | [`PickupDecaySettings.Create`](/game-api/types/global-p/pickupdecaysettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject<PickupDecaySettings>` | 0 |  |
-| [`PickupDockedEvent`](/game-api/types/global-p/pickupdockedevent) | class | `AltaEvent<Interactor, Pickup, PickupDock, PickupDockedUnityEvent>` | 0 |  |
+| [`PickupDockedEvent`](/game-api/types/global-p/pickupdockedevent) | class | `AltaEvent<Interactor, Pickup, PickupDock, PickupDockedUnityEvent>` | 0 | Serializable event with the interactor, the pickup and the dock it went into, editable in the inspector. |
 | [`PickupDockedFilter`](/game-api/types/global-p/pickupdockedfilter) | class | `MonoBehaviour` | 0 |  |
 | [`PickupDockedUnityEvent`](/game-api/types/global-p/pickupdockedunityevent) | class | `UnityEvent<Interactor, Pickup, PickupDock>` | 0 |  |
 | [`PickupDockGroup`](/game-api/types/global-p/pickupdockgroup) | class | `ComponentGroup<PickupDock>` | 1 | A group of pickup docks on one object, so they can be handled together. |
@@ -62,9 +62,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PickupDockingSoundPlayer`](/game-api/types/global-p/pickupdockingsoundplayer) | class | `MonoBehaviour` | 0 |  |
 | [`PickupDockPedestalSpawn`](/game-api/types/global-p/pickupdockpedestalspawn) | class | `PickupDock` | 1 | [Items, interaction and damage](../items/overview.md) |
 | [`PickupDockScaleCompare`](/game-api/types/global-p/pickupdockscalecompare) | class | `MonoBehaviour` | 0 |  |
-| [`PickupEvent`](/game-api/types/global-p/pickupevent) | class | `AltaEvent<Pickup, UnityPickupEvent>` | 0 |  |
+| [`PickupEvent`](/game-api/types/global-p/pickupevent) | class | `AltaEvent<Pickup, UnityPickupEvent>` | 0 | Serializable `AltaEvent` with a `Pickup` argument. Runs inspector-wired listeners and C# `Invoked` handlers. |
 | [`PickupExtension`](/game-api/types/global-p/pickupextension) | class | `Interactable` | 2 |  |
-| [`PickupFromDockRestriction`](/game-api/types/global-p/pickupfromdockrestriction) | enum |  | 3 |  |
+| [`PickupFromDockRestriction`](/game-api/types/global-p/pickupfromdockrestriction) | enum |  | 3 | Flags limiting how a pickup can be taken from a dock: fixed, not with the left hand, or not with the right hand. |
 | [`PickupGrabInputMethod`](/game-api/types/global-p/pickupgrabinputmethod) | class | `ISkillInputMethod` | 1 |  |
 | [`PickupGrabInputStructure`](/game-api/types/global-p/pickupgrabinputstructure) | class | `SkillInputStructure` | 1 |  |
 | [`PickupGrabInputStructure.Create`](/game-api/types/global-p/pickupgrabinputstructure-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input.ScriptableObject<PickupGrabInputStructure>` | 0 |  |
@@ -72,7 +72,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PickupHolderFilter`](/game-api/types/global-p/pickupholderfilter) | delegate |  | 0 |  |
 | [`PickupInteractionScaler`](/game-api/types/global-p/pickupinteractionscaler) | class |  | 2 |  |
 | [`PickupJoints`](/game-api/types/global-p/pickupjoints) | class |  | 6 |  |
-| [`PickUpJointType`](/game-api/types/global-p/pickupjointtype) | enum |  | 6 |  |
+| [`PickUpJointType`](/game-api/types/global-p/pickupjointtype) | enum |  | 6 | How a held pickup is attached to the hand: fixed, spring, velocity-driven or custom joints, or no joint. `Pickup` defaults to `VelocityJoint`. |
 | [`PickupOwnershipLogger`](/game-api/types/global-p/pickupownershiplogger) | static class |  | 2 |  |
 | [`PickupSaveData`](/game-api/types/global-p/pickupsavedata) | class | `NewSaveData<Pickup, PickupSaveData>` | 2 |  |
 | [`PickupSaveDataOld1`](/game-api/types/global-p/pickupsavedataold1) | class | `OldSaveData` | 2 |  |
@@ -119,7 +119,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlatformObjects.PlatformObjectSetup`](/game-api/types/global-p/platformobjects-platformobjectsetup) | class |  | 3 |  |
 | [`PlatformTexture`](/game-api/types/global-p/platformtexture) | class | `ScriptableObject` | 0 |  |
 | [`Player`](/game-api/types/global-p/player) | class | `NetworkEntity`, `IPlatformPlayer`, `IPlayer`, +1 more | 66 | [Player](../networking/player.md), [Arguments and results](../console-and-utilities/arguments-and-results.md): A `NetworkEntity`, and it implements `IPlayer` (`Alta.Networking.Scripts.Player`). |
-| [`PlayerAdjustableHeightFixerSettings`](/game-api/types/global-p/playeradjustableheightfixersettings) | class | `ScriptableObject` | 5 |  |
+| [`PlayerAdjustableHeightFixerSettings`](/game-api/types/global-p/playeradjustableheightfixersettings) | class | `ScriptableObject` | 5 | Settings asset for the height assist accessibility option: a list of height offsets and the one the player has picked, saved in game settings. |
 | [`PlayerChunkManager`](/game-api/types/global-p/playerchunkmanager) | class |  | 5 |  |
 | [`PlayerCommunicationManager`](/game-api/types/global-p/playercommunicationmanager) | class | `NetworkEntityBehaviour` | 4 |  |
 | [`PlayerCommunityAnalytics`](/game-api/types/global-p/playercommunityanalytics) | static class |  | 9 |  |
@@ -130,7 +130,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerControllerMultiLockModel`](/game-api/types/global-p/playercontrollermultilockmodel) | class | `NetworkEntityBehaviour`, `IPlayerControllerMultiLockModel` | 4 |  |
 | [`PlayerConverter`](/game-api/types/global-p/playerconverter) | class | `TypeConverter` | 3 |  |
 | [`PlayerCrippleController`](/game-api/types/global-p/playercripplecontroller) | class | `MonoBehaviour` | 0 |  |
-| [`PlayerData`](/game-api/types/global-p/playerdata) | struct |  | 5 |  |
+| [`PlayerData`](/game-api/types/global-p/playerdata) | struct |  | 5 | A leaderboard entry: player name and time in seconds. Converts to `PlayerDataInfo` for display. |
 | [`PlayerDataInfo`](/game-api/types/global-p/playerdatainfo) | class |  | 3 |  |
 | [`PlayerDebugMessager`](/game-api/types/global-p/playerdebugmessager) | class | `MonoBehaviour` | 1 |  |
 | [`PlayerDetect`](/game-api/types/global-p/playerdetect) | class | `NetworkEntityBehaviour`, `ISavable<PlayerDetectSaveData>`, `ISavableSave<PlayerDetectSaveData>`, +1 more | 3 |  |
@@ -140,9 +140,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerDrinkingMouth`](/game-api/types/global-p/playerdrinkingmouth) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`PlayerEffectManager`](/game-api/types/global-p/playereffectmanager) | class | `MonoBehaviour` | 1 |  |
 | [`PlayerEffectManager.EffectPosition`](/game-api/types/global-p/playereffectmanager-effectposition) | class |  | 8 | A spot on a player's body where heat (smoke, burn) and stat effect particles are placed, tied to a `HeatPoint`. |
-| [`PlayerEffectManager.OverrideSettings`](/game-api/types/global-p/playereffectmanager-overridesettings) | enum |  | 3 |  |
+| [`PlayerEffectManager.OverrideSettings`](/game-api/types/global-p/playereffectmanager-overridesettings) | enum |  | 3 | Whether a player's effect points are set up for the local player or a remote player; passed to each effect point when the player is linked. |
 | [`PlayerEffectParticle`](/game-api/types/global-p/playereffectparticle) | class | `EffectReleaseOnFade` | 2 |  |
-| [`PlayerEvent`](/game-api/types/global-p/playerevent) | class | `AltaEvent<IPlayer, PlayerUnityEvent>` | 0 |  |
+| [`PlayerEvent`](/game-api/types/global-p/playerevent) | class | `AltaEvent<IPlayer, PlayerUnityEvent>` | 0 | Serializable `AltaEvent` with an `IPlayer` argument. Runs inspector-wired listeners and C# `Invoked` handlers. |
 | [`PlayerEventsManager`](/game-api/types/global-p/playereventsmanager) | class | `PlayerComponent` | 13 | Gameplay events about one player gathered in one place: interactions, tool hits, health, downed, killed, combat and whether they are armed. A component on the player template; get it from `Player.PlayerEventsManager`. |
 | [`PlayerEventsManager.OnPathHitGenerated`](/game-api/types/global-p/playereventsmanager-onpathhitgenerated) | delegate |  | 0 |  |
 | [`PlayerGoldBankAccount`](/game-api/types/global-p/playergoldbankaccount) | class | `PerPlayerContent<PlayerGoldBankAccountData>` | 0 |  |
@@ -153,7 +153,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerHeightFixer`](/game-api/types/global-p/playerheightfixer) | class | `MonoBehaviour` | 1 |  |
 | [`PlayerInput`](/game-api/types/global-p/playerinput) | class | `MonoBehaviour` | 14 | One hand's input component on the platform player. Holds the hand index, raw button state, the D-pad helper and haptics. Client side; get it from the player's `LeftInput` or `RightInput`. |
 | [`PlayerInteractionManager`](/game-api/types/global-p/playerinteractionmanager) | class | `NetworkEntityBehaviour`, `ISavable<PlayerInteractionManagerData>`, `ISavableSave<PlayerInteractionManagerData>`, +1 more | 13 | [Items, interaction and damage](../items/overview.md) |
-| [`PlayerInteractionManager.Tracker`](/game-api/types/global-p/playerinteractionmanager-tracker) | class |  | 4 |  |
+| [`PlayerInteractionManager.Tracker`](/game-api/types/global-p/playerinteractionmanager-tracker) | class |  | 4 | How many interactions one player has left on one limited object, keyed by id in `PlayerInteractionManager`. The server sends it to that player when it changes; trackers clear once a game day. |
 | [`PlayerInteractionManagerData`](/game-api/types/global-p/playerinteractionmanagerdata) | class | `NewSaveData<PlayerInteractionManager, PlayerInteractionManagerData>` | 2 |  |
 | [`PlayerInteractionManagerData.PlayerData`](/game-api/types/global-p/playerinteractionmanagerdata-playerdata) | class |  | 4 |  |
 | [`PlayerInteractionManagerData.TrackerData`](/game-api/types/global-p/playerinteractionmanagerdata-trackerdata) | class |  | 2 |  |
@@ -189,7 +189,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerTimeUpdate`](/game-api/types/global-p/playertimeupdate) | delegate |  | 0 |  |
 | [`PlayerToolBasedSkillHelper`](/game-api/types/global-p/playertoolbasedskillhelper) | class | `PlayerComponent` | 9 |  |
 | [`PlayerTracker`](/game-api/types/global-p/playertracker) | class |  | 8 |  |
-| [`PlayerUnityEvent`](/game-api/types/global-p/playerunityevent) | class | `UnityEvent<IPlayer>` | 0 |  |
+| [`PlayerUnityEvent`](/game-api/types/global-p/playerunityevent) | class | `UnityEvent<IPlayer>` | 0 | Inspector event with an `IPlayer` argument. |
 | [`PlayerUnlock`](/game-api/types/global-p/playerunlock) | class | `HashedGeneralValue<PlayerUnlock>` | 5 | [Arguments and results](../console-and-utilities/arguments-and-results.md), [Skills and unlocks](../game-systems/skills-and-unlocks.md): Has `Prerequisites`, `Orbs`, and `UnlockingPermissions` (teleport layer, climb layer, and an optional `MaxStatDefinition` to raise). |
 | [`PlayerUnlock.Create`](/game-api/types/global-p/playerunlock-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<PlayerUnlock>` | 0 |  |
 | [`PlayerUnlock.OrbProperties`](/game-api/types/global-p/playerunlock-orbproperties) | class |  | 5 |  |
@@ -198,7 +198,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayerUnlockManager`](/game-api/types/global-p/playerunlockmanager) | class | `PlayerComponent`, `ISavable<PlayerUnlockManagerSaveData>`, `ISavableSave<PlayerUnlockManagerSaveData>`, +1 more | 15 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): `PlayerComponent`, one per player (`player.UnlockManager`, also on `IPlayer`). |
 | [`PlayerUnlockManagerSaveData`](/game-api/types/global-p/playerunlockmanagersavedata) | class | `NewSaveData<PlayerUnlockManager, PlayerUnlockManagerSaveData>` | 4 |  |
 | [`PlayerUnlockStation`](/game-api/types/global-p/playerunlockstation) | class | `NetworkEntityBehaviour`, `ISavable<PlayerUnlockStationSaveData>`, `ISavableSave<PlayerUnlockStationSaveData>`, +1 more | 8 | [Skills and unlocks](../game-systems/skills-and-unlocks.md): A station in the world. Its `UnlockStationType` is `Start`, `Normal`, `Unlock` or `Completion`. |
-| [`PlayerUnlockStation.NetworkEffect`](/game-api/types/global-p/playerunlockstation-networkeffect) | enum |  | 3 |  |
+| [`PlayerUnlockStation.NetworkEffect`](/game-api/types/global-p/playerunlockstation-networkeffect) | enum |  | 3 | Effect a player unlock station plays on clients: unlock given, challenge complete, or unlock cancelled. |
 | [`PlayerUnlockStation.UnlockStationType`](/game-api/types/global-p/playerunlockstation-unlockstationtype) | enum |  | 4 |  |
 | [`PlayerUnlockStationSaveData`](/game-api/types/global-p/playerunlockstationsavedata) | class | `NewSaveData<PlayerUnlockStation, PlayerUnlockStationSaveData>` | 3 |  |
 | [`PlayerUnlockStationSaveDataOld1`](/game-api/types/global-p/playerunlockstationsavedataold1) | class | `OldSaveData` | 5 |  |
@@ -229,8 +229,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PooledObjectDefinitionTrigger`](/game-api/types/global-p/pooledobjectdefinitiontrigger) | class | `MonoBehaviour` | 0 |  |
 | [`PooledObjectPool`](/game-api/types/global-p/pooledobjectpool) | class | `BasicPooledObjectPool` | 3 |  |
 | [`PooledObjectSoundHook`](/game-api/types/global-p/pooledobjectsoundhook) | class | `MonoBehaviour` | 0 |  |
-| [`PooledParticleSystemMeshEmision`](/game-api/types/global-p/pooledparticlesystemmeshemision) | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
-| [`PooledTempWwiseAudio`](/game-api/types/global-p/pooledtempwwiseaudio) | class | `PooledObject` | 1 |  |
+| [`PooledParticleSystemMeshEmision`](/game-api/types/global-p/pooledparticlesystemmeshemision) | class | `DestroyByTime`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 | A timed pooled effect whose particle system emits from a target mesh renderer's shape. |
+| [`PooledTempWwiseAudio`](/game-api/types/global-p/pooledtempwwiseaudio) | class | `PooledObject` | 1 | A pooled object for a temporary Wwise sound emitter. Deactivates its `AkGameObj` when released back to the pool. |
 | [`PooledTextRenderer`](/game-api/types/global-p/pooledtextrenderer) | class | `PooledObject` | 1 |  |
 | [`PopulationPath`](/game-api/types/global-p/populationpath) | class | `BasicDynamicPath`, `IPopulationFolder`, `IPointNormalEvaluator`, +3 more | 11 | Server: a path edge that spawns and keeps a population of creatures along it, using a `PopulationSetup` picked at generation. Saves its timer and count. |
 | [`PopulationPathSaveData`](/game-api/types/global-p/populationpathsavedata) | class | `NewSaveData<PopulationPath, PopulationPathSaveData>` | 4 |  |
@@ -241,19 +241,19 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PortalBasedCullingCamera`](/game-api/types/global-p/portalbasedcullingcamera) | class | `MonoBehaviour` | 4 |  |
 | [`PoseChangedHandler`](/game-api/types/global-p/posechangedhandler) | delegate |  | 0 |  |
 | [`PosedObject`](/game-api/types/global-p/posedobject) | class | `MonoBehaviour` | 0 |  |
-| [`PositionAndRotationTarget`](/game-api/types/global-p/positionandrotationtarget) | struct |  | 4 |  |
-| [`PositionedNetworkPrefab`](/game-api/types/global-p/positionednetworkprefab) | class | `PositionedPrefab<NetworkEntity>` | 3 |  |
+| [`PositionAndRotationTarget`](/game-api/types/global-p/positionandrotationtarget) | struct |  | 4 | A teleport destination: a position and a facing direction. Used by the climbing tower teleporter nodes. |
+| [`PositionedNetworkPrefab`](/game-api/types/global-p/positionednetworkprefab) | class | `PositionedPrefab<NetworkEntity>` | 3 | A saved network prefab with its local position and rotation, for spawning dynamic content such as a skill's demo items or a shrine testing area. |
 | [`PositionedPrefab<T>`](/game-api/types/global-p/positionedprefab-t) | abstract class |  | 2 |  |
 | [`PositionedStaticPrefab`](/game-api/types/global-p/positionedstaticprefab) | class | `PositionedPrefab<GameObject>` | 2 |  |
 | [`PositionEvent`](/game-api/types/global-p/positionevent) | class | `AltaEvent<Vector3, PositionHandler>` | 0 | A serializable `AltaEvent` that carries a `Vector3` position, for wiring in the inspector. |
 | [`PositionFromOriginHandler`](/game-api/types/global-p/positionfromoriginhandler) | class |  | 2 |  |
-| [`PositionFromOriginHelper`](/game-api/types/global-p/positionfromoriginhelper) | abstract class | `MonoBehaviour` | 1 |  |
-| [`PositionHandler`](/game-api/types/global-p/positionhandler) | class | `UnityEvent<Vector3>` | 0 |  |
+| [`PositionFromOriginHelper`](/game-api/types/global-p/positionfromoriginhelper) | abstract class | `MonoBehaviour` | 1 | Base component that works out a position from an origin point; subclasses decide how. |
+| [`PositionHandler`](/game-api/types/global-p/positionhandler) | class | `UnityEvent<Vector3>` | 0 | Serializable `UnityEvent` with a `Vector3` argument, for position events wired in the inspector. |
 | [`PositioningMode`](/game-api/types/global-p/positioningmode) | enum |  | 3 |  |
 | [`PositionLerp`](/game-api/types/global-p/positionlerp) | class | `MonoBehaviour` | 1 |  |
-| [`PositionRecord`](/game-api/types/global-p/positionrecord) | struct |  | 5 |  |
-| [`PositionRecorder`](/game-api/types/global-p/positionrecorder) | class |  | 6 |  |
-| [`PositionRotationEvent`](/game-api/types/global-p/positionrotationevent) | class | `AltaEvent<Vector3, Quaternion, PositionRotationHandler>` | 0 |  |
+| [`PositionRecord`](/game-api/types/global-p/positionrecord) | struct |  | 5 | A saved position and rotation, either in world space or relative to another transform depending on which constructor made it. |
+| [`PositionRecorder`](/game-api/types/global-p/positionrecorder) | class |  | 6 | Ring buffer of recent position and rotation records for an `ImpactTool`, which `Impactor` reads to sweep hits. Pooled through `PickupTypeSettings.GetPositionRecorder`. |
+| [`PositionRotationEvent`](/game-api/types/global-p/positionrotationevent) | class | `AltaEvent<Vector3, Quaternion, PositionRotationHandler>` | 0 | Serializable `AltaEvent` with a position and a rotation argument. Runs inspector-wired listeners and C# handlers. |
 | [`PositionRotationHandler`](/game-api/types/global-p/positionrotationhandler) | class | `UnityEvent<Vector3, Quaternion>` | 0 |  |
 | [`PositionSerializer`](/game-api/types/global-p/positionserializer) | class |  | 10 | Writes and reads an entity's position and rotation for the network, optionally relative to a moving context such as a cart or boat it stands on. `PositionSerializer<T>` adds a typed `FixParent`. |
 | [`PositionSerializer<T>`](/game-api/types/global-p/positionserializer-t) | class | `PositionSerializer` | 2 |  |
@@ -281,7 +281,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PrefabHashAttribute`](/game-api/types/global-p/prefabhashattribute) | class | `PropertyAttribute` | 0 |  |
 | [`PrefabLODSettings`](/game-api/types/global-p/prefablodsettings) | class | `ScriptableObject` | 2 |  |
 | [`PrefabStageDefinition`](/game-api/types/global-p/prefabstagedefinition) | class | `HashedGeneralValue<PrefabStageDefinition>` | 2 |  |
-| [`PrefabStageDefinition.PrefabSetup`](/game-api/types/global-p/prefabstagedefinition-prefabsetup) | class |  | 3 |  |
+| [`PrefabStageDefinition.PrefabSetup`](/game-api/types/global-p/prefabstagedefinition-prefabsetup) | class |  | 3 | One stage of a `PrefabStageDefinition`: the prefab to use and its local offset. |
 | [`PresetWayPointPath`](/game-api/types/global-p/presetwaypointpath) | class | `NetworkEntityBehaviour`, `IPositionRotationPath` | 1 |  |
 | [`PreventStaticBatchingCollisionSplitting`](/game-api/types/global-p/preventstaticbatchingcollisionsplitting) | class | `MonoBehaviour`, `IDontSplit` | 0 |  |
 | [`ProcessDiagnostics`](/game-api/types/global-p/processdiagnostics) | class |  | 4 |  |
@@ -335,7 +335,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PuzzleConditionHandlerTemp`](/game-api/types/global-p/puzzleconditionhandlertemp) | delegate |  | 0 |  |
 | [`PuzzleConditionsAND`](/game-api/types/global-p/puzzleconditionsand) | class | `PuzzleCondition` | 0 |  |
 | [`PuzzleConditionsANDTemp`](/game-api/types/global-p/puzzleconditionsandtemp) | class | `PuzzleConditionTemp` | 0 |  |
-| [`PuzzleConditionTemp`](/game-api/types/global-p/puzzleconditiontemp) | class | `MonoBehaviour` | 2 |  |
+| [`PuzzleConditionTemp`](/game-api/types/global-p/puzzleconditiontemp) | class | `MonoBehaviour` | 2 | Base for a simple puzzle condition that is either met or not; subclasses like `PuzzleConditionsANDTemp` set the state. |
 | [`PuzzleDoor`](/game-api/types/global-p/puzzledoor) | class | `MonoBehaviour` | 0 |  |
 | [`PuzzleLightBeam`](/game-api/types/global-p/puzzlelightbeam) | class | `MonoBehaviour`, `ILightEmitter` | 2 |  |
 | [`PuzzleLightMirror`](/game-api/types/global-p/puzzlelightmirror) | class | `PuzzleLightBeam`, `ILightDetector`, `ILightEmitter` | 2 |  |

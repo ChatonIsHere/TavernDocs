@@ -1,6 +1,6 @@
 ---
 title: "Timeline.Entry"
-description: "class Timeline.Entry in Alta.Timing.Runtime."
+description: "A one-shot scheduled callback in a Timeline priority queue, ordered by target time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Timeline.Entry
 
 A **private class** in `Alta.Timing.Runtime`, `Alta.Timing`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+A one-shot scheduled callback in a `Timeline` priority queue, ordered by target time. `RepeatableEntry` extends it to reschedule itself.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`Timeline`](/game-api/types/assembly-other/timeline)
@@ -25,30 +27,30 @@ A **private class** in `Alta.Timing.Runtime`, `Alta.Timing`. Reach it through at
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-callback" /><code>{"Action callback"}</code> |
-| <Link id="m-targettime" /><code>{"TimeSpan targetTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-callback" /><code>{"Action callback"}</code> | Action run when the entry fires. Null once released. |
+| <Link id="m-targettime" /><code>{"TimeSpan targetTime"}</code> | Timeline time the entry fires at. |
 
 ## Properties
 
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-timing-timeline-ientry-isactive" /><code>{"private bool Alta.Timing.Timeline.IEntry.IsActive { get; }"}</code> |
-| <Link id="m-alta-timing-timeline-ientry-time" /><code>{"private TimeSpan Alta.Timing.Timeline.IEntry.Time { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-timing-timeline-ientry-isactive" /><code>{"private bool Alta.Timing.Timeline.IEntry.IsActive { get; }"}</code> | True until the entry is released, as long as it still has a callback. |
+| <Link id="m-alta-timing-timeline-ientry-time" /><code>{"private TimeSpan Alta.Timing.Timeline.IEntry.Time { get; }"}</code> | The timeline time the entry fires at. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-checkentryreuse" /><code>{"virtual bool CheckEntryReuse("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> |
-| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" Get(Action callback, TimeSpan time)"}</code> |
-| <Link id="m-release" /><code>{"virtual void Release()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkentryreuse" /><code>{"virtual bool CheckEntryReuse("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline)"}</code> | Called after the entry fires. Returns false so the timeline releases it; repeatable entries requeue instead. |
+| <Link id="m-get" /><code>{"static "}<Link to="/game-api/types/assembly-other/timeline-entry">{"Timeline.Entry"}</Link>{" Get(Action callback, TimeSpan time)"}</code> | Makes a new entry for the callback at the given time. |
+| <Link id="m-release" /><code>{"virtual void Release()"}</code> | Clears the callback, which marks the entry inactive. |
 
 ## Used in
 

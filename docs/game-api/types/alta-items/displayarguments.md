@@ -1,6 +1,6 @@
 ---
 title: "DisplayArguments"
-description: "class DisplayArguments in Root.Township."
+description: "Message payload a Book sends to chunks to update its page counter: pages found, total pages and the current page."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DisplayArguments
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Message payload a `Book` sends to chunks to update its page counter: pages found, total pages and the current page.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-displaypagefound" /><code>{"int displayPageFound"}</code> |
-| <Link id="m-displaypagenumber" /><code>{"int displayPageNumber"}</code> |
-| <Link id="m-displaypagetotal" /><code>{"int displayPageTotal"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displaypagefound" /><code>{"int displayPageFound"}</code> | How many pages are in the book. |
+| <Link id="m-displaypagenumber" /><code>{"int displayPageNumber"}</code> | The current page number, or -1 for none. |
+| <Link id="m-displaypagetotal" /><code>{"int displayPageTotal"}</code> | Total pages in the collection (250 if the book has none). Sent as 0 to 255. |
 
 ## Used in
 

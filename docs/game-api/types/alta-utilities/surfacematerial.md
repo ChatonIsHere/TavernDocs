@@ -1,6 +1,6 @@
 ---
 title: "SurfaceMaterial"
-description: "class SurfaceMaterial in Root.Township."
+description: "Empty marker asset naming a surface type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SurfaceMaterial
 
 A **class** in `Root.Township`, `Alta`.
+
+Empty marker asset naming a surface type. Static environment pieces and `ICollisionStandard` objects expose one as their `Material`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `ScriptableObject`

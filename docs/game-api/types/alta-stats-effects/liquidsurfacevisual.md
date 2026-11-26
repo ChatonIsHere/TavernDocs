@@ -29,28 +29,28 @@ Base for the liquid surface inside a container. It tracks how far the container 
 <details>
 <summary>20 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidcontainerlod0" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" androidContainerLod0"}</code> |
-| <Link id="m-colorid" /><code>{"private static readonly int ColorId"}</code> |
-| <Link id="m-containerlod0" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" containerLod0"}</code> |
-| <Link id="m-dynamicrenderer" /><code>{"private Renderer dynamicRenderer"}</code> |
-| <Link id="m-dynamicrendererpropertyblock" /><code>{"private MaterialPropertyBlock dynamicRendererPropertyBlock"}</code> |
-| <Link id="m-dynamicrenderertemplatematerial" /><code>{"private Material dynamicRendererTemplateMaterial"}</code> |
-| <Link id="m-fullnesschanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" fullnessChanged"}</code> |
-| <Link id="m-fullypouringlimit" /><code>{"private float fullyPouringLimit"}</code> |
-| <Link id="m-liquidgravity" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" liquidGravity"}</code> |
-| <Link id="m-lodpropertyblock" /><code>{"private MaterialPropertyBlock lodPropertyBlock"}</code> |
-| <Link id="m-otherlods" /><code>{"private Renderer[] otherLods"}</code> |
-| <Link id="m-tip" /><code>{"private float tip"}</code> |
-| <Link id="m-tippingthreshold" /><code>{"private float tippingThreshold"}</code> |
-| <Link id="m-tippingvalue" /><code>{"private float tippingValue"}</code> |
-| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> |
-| <Link id="m-visualloop" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" visualLoop"}</code> |
-| <Link id="m-visualtiplimit" /><code>{"private float visualTipLimit"}</code> |
-| <Link id="m-volumeclamp" /><code>{"private float volumeClamp"}</code> |
-| <Link id="m-volumecurve" /><code>{"private AnimationCurve volumeCurve"}</code> |
-| <Link id="m-wasmoving" /><code>{"private bool wasMoving"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidcontainerlod0" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" androidContainerLod0"}</code> | Visibility detector kept from an older field name; not used in code in this build. |
+| <Link id="m-colorid" /><code>{"private static readonly int ColorId"}</code> | Shader ID of `_Color`. |
+| <Link id="m-containerlod0" /><code>{"private "}<Link to="/game-api/types/global-t-x/visibilitydetector">{"VisibilityDetector"}</Link>{" containerLod0"}</code> | Visibility detector on the container's main LOD; the surface only updates while it is visible (always on the server). |
+| <Link id="m-dynamicrenderer" /><code>{"private Renderer dynamicRenderer"}</code> | The renderer of the moving liquid surface. Backing field for `DynamicRenderer`. |
+| <Link id="m-dynamicrendererpropertyblock" /><code>{"private MaterialPropertyBlock dynamicRendererPropertyBlock"}</code> | Property block set on the surface renderer from the current liquid. Backing field for `DynamicRendererPropertyBlock`. |
+| <Link id="m-dynamicrenderertemplatematerial" /><code>{"private Material dynamicRendererTemplateMaterial"}</code> | The surface renderer's original material, used as the template for each liquid's material. |
+| <Link id="m-fullnesschanged" /><code>{"private "}<Link to="/game-api/types/global-e-h/floatevent">{"FloatEvent"}</Link>{" fullnessChanged"}</code> | Event raised with the new fullness value; exposed as `FullnessChanged`. |
+| <Link id="m-fullypouringlimit" /><code>{"private float fullyPouringLimit"}</code> | Tip value above which the container counts as fully pouring. |
+| <Link id="m-liquidgravity" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidgravity">{"LiquidGravity"}</Link>{" liquidGravity"}</code> | Simulates the liquid sloshing and tipping as the container moves. Backing field for `LiquidGravity`. |
+| <Link id="m-lodpropertyblock" /><code>{"private MaterialPropertyBlock lodPropertyBlock"}</code> | Property block set on the lower LOD renderers from the current liquid. |
+| <Link id="m-otherlods" /><code>{"private Renderer[] otherLods"}</code> | Renderers for the lower LODs of the liquid; shown only while there is liquid. |
+| <Link id="m-tip" /><code>{"private float tip"}</code> | Read-only inspector value showing the current tip. |
+| <Link id="m-tippingthreshold" /><code>{"private float tippingThreshold"}</code> | Tip value at which the liquid starts to pour. Backing field for `TippingThreshold`. |
+| <Link id="m-tippingvalue" /><code>{"private float tippingValue"}</code> | Read-only inspector value for tipping; not written in this build. |
+| <Link id="m-updatemodule" /><code>{"private static "}<Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" updateModule"}</code> | Late update module that runs `UpdateVisual` while the liquid is moving. |
+| <Link id="m-visualloop" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" visualLoop"}</code> | Handle of the registered `UpdateVisual` loop. |
+| <Link id="m-visualtiplimit" /><code>{"private float visualTipLimit"}</code> | Limit on how far the surface visually tips. Backing field for `VisualTipLimit`. |
+| <Link id="m-volumeclamp" /><code>{"private float volumeClamp"}</code> | Fullness is multiplied by this before the volume curve, so the surface never looks fuller than this. |
+| <Link id="m-volumecurve" /><code>{"private AnimationCurve volumeCurve"}</code> | Maps the container's fill amount to the visual fullness. |
+| <Link id="m-wasmoving" /><code>{"private bool wasMoving"}</code> | Moving state from the last fixed update, used to start and stop the visual loop. |
 
 </details>
 
@@ -103,10 +103,10 @@ Base for the liquid surface inside a container. It tracks how far the container 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the container visibility events. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops missing renderers from the other LODs list. |
 
 </details>
 

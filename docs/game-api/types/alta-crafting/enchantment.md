@@ -30,9 +30,9 @@ An enchantment asset: a list of bindings, each linking triggers to the effects t
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-bindings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] bindings"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bindings" /><code>{"private "}<Link to="/game-api/types/alta-crafting/enchantment-binding">{"Enchantment.Binding"}</Link>{"[] bindings"}</code> | Backing field for `Bindings`: each binding pairs triggers with the effects they fire. |
 
 </details>
 

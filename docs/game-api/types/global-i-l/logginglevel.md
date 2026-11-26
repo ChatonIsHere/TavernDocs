@@ -1,6 +1,6 @@
 ---
 title: "LoggingLevel"
-description: "enum LoggingLevel in Root.Township."
+description: "Log levels from Trace to Fatal, used by the micro tutorial logger to filter its output."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LoggingLevel
 
 An **enum** in `Root.Township`, no namespace.
+
+Log levels from Trace to Fatal, used by the micro tutorial logger to filter its output.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 

@@ -1,6 +1,6 @@
 ---
 title: "FaceEmblem"
-description: "class FaceEmblem in Root.Township."
+description: "A book flair asset for the emblem on a book's cover."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceEmblem
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the emblem on a book's cover. Used by `FlairSettings` when there is no glyph.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

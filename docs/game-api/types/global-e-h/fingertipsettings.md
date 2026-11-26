@@ -1,6 +1,6 @@
 ---
 title: "FingerTipSettings"
-description: "class FingerTipSettings in Root.Township."
+description: "Per-character setup of each hand's index finger tip transform and hand triangle."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FingerTipSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Per-character setup of each hand's index finger tip transform and hand triangle. Used by `PlayerCharacter` and `CharacterDummy`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 
@@ -25,21 +27,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-leftfingertip" /><code>{"private Transform leftFingerTip"}</code> |
-| <Link id="m-lefthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" leftHandTriangle"}</code> |
-| <Link id="m-rightfingertip" /><code>{"private Transform rightFingerTip"}</code> |
-| <Link id="m-righthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" rightHandTriangle"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-leftfingertip" /><code>{"private Transform leftFingerTip"}</code> | Finger tip transform on the left hand. |
+| <Link id="m-lefthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" leftHandTriangle"}</code> | Triangle of points on the left hand. |
+| <Link id="m-rightfingertip" /><code>{"private Transform rightFingerTip"}</code> | Finger tip transform on the right hand. |
+| <Link id="m-righthandtriangle" /><code>{"private "}<Link to="/game-api/types/global-e-h/handtriangle">{"HandTriangle"}</Link>{" rightHandTriangle"}</code> | Triangle of points on the right hand. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getfingertip" /><code>{"Transform GetFingerTip(bool isLeftHand)"}</code> |
-| <Link id="m-gettriangle" /><code><Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" GetTriangle(bool isLeftHand)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getfingertip" /><code>{"Transform GetFingerTip(bool isLeftHand)"}</code> | Returns the left or right finger tip transform. |
+| <Link id="m-gettriangle" /><code><Link to="/game-api/types/global-t-x/worldspacetriangle">{"WorldSpaceTriangle"}</Link>{" GetTriangle(bool isLeftHand)"}</code> | Returns the left or right hand triangle as a world-space triangle. |
 
 ## Used in
 

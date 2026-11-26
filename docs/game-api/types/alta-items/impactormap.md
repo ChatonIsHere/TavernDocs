@@ -29,10 +29,10 @@ Component on a crafting part that maps each of its colliders to the `ImpactGener
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap-mapelement">{"ImpactorMap.MapElement"}</Link>{"[] elements"}</code> |
-| <Link id="m-map" /><code>{"private Dictionary<Collider, HashSet<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> map"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-elements" /><code>{"private "}<Link to="/game-api/types/alta-items/impactormap-mapelement">{"ImpactorMap.MapElement"}</Link>{"[] elements"}</code> | Serialized pairs of a collider and the impact generators under it. Filled automatically by `OnValidate` when empty. |
+| <Link id="m-map" /><code>{"private Dictionary<Collider, HashSet<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> map"}</code> | Backing field for `Map`, built from `elements` the first time it's read. |
 
 </details>
 

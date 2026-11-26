@@ -28,12 +28,12 @@ Which grab point of a pickup a hand holds and where along it, so a grab can be s
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-grabpointindex" /><code>{"private int grabPointIndex"}</code> |
-| <Link id="m-lastlinearposition" /><code>{"private float lastLinearPosition"}</code> |
-| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> |
-| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-grabpointindex" /><code>{"private int grabPointIndex"}</code> | Index of the grab point in the pickup's grab point list (0 to 15 when synced). |
+| <Link id="m-lastlinearposition" /><code>{"private float lastLinearPosition"}</code> | The grab point's last position along its line, 0 to 1. |
+| <Link id="m-lastposition" /><code>{"private Vector3 lastPosition"}</code> | The grab point's last local position, synced within plus or minus 10 m. |
+| <Link id="m-lastrotation" /><code>{"private Quaternion lastRotation"}</code> | The grab point's last rotation, synced compressed. |
 
 </details>
 

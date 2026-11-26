@@ -1,6 +1,6 @@
 ---
 title: "PurchaseResult"
-description: "class PurchaseResult in Alta.Api.DataTransferModels."
+description: "Alta API response to buying a shop item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PurchaseResult
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Alta API response to buying a shop item.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
@@ -23,10 +25,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" Result { get; set; }"}</code> |
-| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" Result { get; set; }"}</code> | Outcome of the purchase. |
+| <Link id="m-transactionidentifier" /><code>{"int? TransactionIdentifier { get; set; }"}</code> | Shop transaction ID, if one was made. |
 
 ## Used in
 

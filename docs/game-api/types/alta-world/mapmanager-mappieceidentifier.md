@@ -1,6 +1,6 @@
 ---
 title: "MapManager.MapPieceIdentifier"
-description: "struct MapManager.MapPieceIdentifier in Root.Township."
+description: "A map plus a piece index."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MapManager.MapPieceIdentifier
 
 A **private struct** in `Root.Township`, `Alta.Map`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+A map plus a piece index. The message payload `MapManager` sends when a player discovers a map piece, to chunks for a shared map or to that player otherwise.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`MapManager`](/game-api/types/alta-world/mapmanager)
@@ -23,10 +25,10 @@ A **private struct** in `Root.Township`, `Alta.Map`. Reach it through att-stubs'
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-index" /><code>{"int index"}</code> |
-| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-index" /><code>{"int index"}</code> | Index of the piece within the map's pieces. |
+| <Link id="m-map" /><code><Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> | The map the piece belongs to. |
 
 ## Used in
 

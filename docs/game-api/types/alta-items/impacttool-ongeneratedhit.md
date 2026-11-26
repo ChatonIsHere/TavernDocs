@@ -1,6 +1,6 @@
 ---
 title: "ImpactTool.OnGeneratedHit"
-description: "delegate ImpactTool.OnGeneratedHit in Root.Township."
+description: "Callback for an ImpactTool hit or block, given the hit and the tool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ImpactTool.OnGeneratedHit
 
 A **delegate** in `Root.Township`, `Alta.Impact`.
+
+Callback for an `ImpactTool` hit or block, given the hit and the tool. Used by `OnHit`, `OnBlocked` and the static `OnHitAny`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ImpactTool`](/game-api/types/alta-items/impacttool)

@@ -1,6 +1,6 @@
 ---
 title: "RecentPlayerInteractionInfo"
-description: "class RecentPlayerInteractionInfo in Alta.Api.DataTransferModels."
+description: "API response for one recent interaction with another player: who, what kind, when and on which server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+API response for one recent interaction with another player: who, what kind, when and on which server.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-interactiontime" /><code>{"DateTime InteractionTime { get; set; }"}</code> |
-| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> |
-| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-interactiontime" /><code>{"DateTime InteractionTime { get; set; }"}</code> | When the interaction happened. |
+| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfominimal">{"GameServerInfoMinimal"}</Link>{" Server { get; set; }"}</code> | The server it happened on. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/recentplayerinteractiontype">{"RecentPlayerInteractionType"}</Link>{" Type { get; set; }"}</code> | What kind of interaction it was. |
+| <Link id="m-userinfo" /><code><Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" { get; set; }"}</code> | The other player. |
 
 ## Used in
 

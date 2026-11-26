@@ -1,6 +1,6 @@
 ---
 title: "UpdateSegment"
-description: "enum UpdateSegment in Root.Township."
+description: "Which Unity loop an UpdateModule runs in: Update, LateUpdate or FixedUpdate."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UpdateSegment
 
 An **enum** in `Root.Township`, no namespace.
+
+Which Unity loop an `UpdateModule` runs in: `Update`, `LateUpdate` or `FixedUpdate`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

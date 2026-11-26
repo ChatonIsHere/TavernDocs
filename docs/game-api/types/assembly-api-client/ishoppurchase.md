@@ -1,6 +1,6 @@
 ---
 title: "IShopPurchase"
-description: "interface IShopPurchase in Alta.Api.Client."
+description: "Alta web API call for buying a shop item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API call for buying a shop item. `ShopClient.Purchase`.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`OfflineShopPurchase`](/game-api/types/assembly-api-client/offlineshoppurchase), [`ShopPurchase`](/game-api/types/assembly-api-client/shoppurchase)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-purchaseitem" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/purchaseresult">{"PurchaseResult"}</Link>{"> PurchaseItem(int identifier)"}</code> | Buys an item by id. |
 
 ## Used in
 

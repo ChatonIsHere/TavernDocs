@@ -1,6 +1,6 @@
 ---
 title: "MarchingCubes.Point4"
-description: "struct MarchingCubes.Point4 in Root.Township."
+description: "An integer grid point with a fourth value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MarchingCubes.Point4
 
 A **struct** in `Root.Township`, no namespace.
+
+An integer grid point with a fourth value. In the marching cubes edge table `w` picks the edge axis (probably).
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 - **Nested in** [`MarchingCubes`](/game-api/types/global-m-o/marchingcubes)
@@ -23,20 +25,20 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-w" /><code>{"int w"}</code> |
-| <Link id="m-x" /><code>{"int x"}</code> |
-| <Link id="m-y" /><code>{"int y"}</code> |
-| <Link id="m-z" /><code>{"int z"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-w" /><code>{"int w"}</code> | Fourth value; 0 to 2 in the edge offset table. |
+| <Link id="m-x" /><code>{"int x"}</code> | X coordinate. |
+| <Link id="m-y" /><code>{"int y"}</code> | Y coordinate. |
+| <Link id="m-z" /><code>{"int z"}</code> | Z coordinate. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
-| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" op_Addition("}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" first, "}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" second)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True when all four values match. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of all four values. |
+| <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" op_Addition("}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" first, "}<Link to="/game-api/types/global-m-o/marchingcubes-point4">{"MarchingCubes.Point4"}</Link>{" second)"}</code> | Adds each value. |
 
 ## Used in
 

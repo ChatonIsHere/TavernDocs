@@ -1,6 +1,6 @@
 ---
 title: "DecraftingComponent.HitTypePosition"
-description: "struct DecraftingComponent.HitTypePosition in Root.Township."
+description: "Message the server sends to clients when a decrafting component is hit, so they play the effective or ineffective hit effect at that spot."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DecraftingComponent.HitTypePosition
 
 A **private struct** in `Root.Township`, `Alta.Crafting`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Message the server sends to clients when a decrafting component is hit, so they play the effective or ineffective hit effect at that spot.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`DecraftingComponent`](/game-api/types/alta-crafting/decraftingcomponent)
@@ -23,10 +25,10 @@ A **private struct** in `Root.Township`, `Alta.Crafting`. Reach it through att-s
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iseffective" /><code>{"bool isEffective"}</code> | Whether the hit counted towards decrafting. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Where the hit landed. |
 
 ## Used in
 

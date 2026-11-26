@@ -1,6 +1,6 @@
 ---
 title: "ItemCategory"
-description: "enum ItemCategory in Alta.Api.DataTransferModels."
+description: "Category of a cosmetic shop item, from body types and skin colours to clothing, accessories, outfits and bundles."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemCategory
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Category of a cosmetic shop item, from body types and skin colours to clothing, accessories, outfits and bundles. Also set on each customization category.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

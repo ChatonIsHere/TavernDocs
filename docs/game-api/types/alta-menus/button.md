@@ -34,14 +34,14 @@ A simple button component for the in-game (meta) UI. Holds a label, enabled flag
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnpressed" /><code>{"private bool btnPressed"}</code> |
-| <Link id="m-btnreleased" /><code>{"private bool btnReleased"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-label" /><code>{"private string label"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" settings"}</code> |
-| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnpressed" /><code>{"private bool btnPressed"}</code> | Inspector button that calls `OnPressed`. |
+| <Link id="m-btnreleased" /><code>{"private bool btnReleased"}</code> | Inspector button that calls `OnReleased`. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
+| <Link id="m-label" /><code>{"private string label"}</code> | Backing field for `Label`. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-menus/buttonsettings">{"ButtonSettings"}</Link>{" settings"}</code> | Backing field for `Settings`. |
+| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> | Sounds played on press and release. |
 
 </details>
 
@@ -76,9 +76,9 @@ A simple button component for the in-game (meta) UI. Holds a label, enabled flag
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the press and release sounds from `sounds`, if set. |
 
 </details>
 

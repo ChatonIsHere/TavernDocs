@@ -1,6 +1,6 @@
 ---
 title: "ILauncherApiClient"
-description: "interface ILauncherApiClient in Alta.Api.Client."
+description: "Alta web API calls for the games listed in Alta's launcher."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API calls for the games listed in Alta's launcher. `ApiAccess.ApiClient.LauncherClient`.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`LauncherApiClient`](/game-api/types/assembly-api-client/launcherapiclient), [`OfflineLauncherApiClient`](/game-api/types/assembly-api-client/offlinelauncherapiclient)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getalllaunchergamesasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> |
-| <Link id="m-getlaunchergameasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getalllaunchergamesasync" /><code>{"Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/launchergameinfoshort">{"LauncherGameInfoShort"}</Link>{">> GetAllLauncherGamesAsync()"}</code> | Lists every launcher game in short form. |
+| <Link id="m-getlaunchergameasync" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/launchergameinfofull">{"LauncherGameInfoFull"}</Link>{"> GetLauncherGameAsync(int gameIdentifier)"}</code> | Gets the full details of one launcher game. |
 
 ## Used in
 

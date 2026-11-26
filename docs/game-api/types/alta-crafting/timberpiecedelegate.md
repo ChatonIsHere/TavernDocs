@@ -1,6 +1,6 @@
 ---
 title: "TimberPieceDelegate"
-description: "delegate TimberPieceDelegate in Root.Township."
+description: "Callback for a timber piece event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TimberPieceDelegate
 
 A **delegate** in `Root.Township`, `Alta.Carpentry`.
+
+Callback for a timber piece event. Used for `TimberPieceBase.OnChanged` and `OnDone`, which `TimberBlock` stages hook on the server.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

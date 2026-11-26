@@ -27,10 +27,10 @@ A serializable animation curve paired with a duration in seconds.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | Backing field for `Curve`. |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration`, in seconds. |
 
 </details>
 

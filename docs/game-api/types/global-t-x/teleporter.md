@@ -28,15 +28,15 @@ Hand controller extension for pointer teleporting: shows the pointer while the t
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-custom" /><code>{"private "}<Link to="/game-api/types/global-c-d/customteleportation">{"CustomTeleportation"}</Link>{" custom"}</code> |
-| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> |
-| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> |
-| <Link id="m-isoverobject" /><code>{"private bool isOverObject"}</code> |
-| <Link id="m-isshowing" /><code>{"private bool isShowing"}</code> |
-| <Link id="m-otherteleporter" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" otherTeleporter"}</code> |
-| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-p/pointer">{"Pointer"}</Link>{" pointer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-custom" /><code>{"private "}<Link to="/game-api/types/global-c-d/customteleportation">{"CustomTeleportation"}</Link>{" custom"}</code> | Custom teleport behaviour on the current target, if any. |
+| <Link id="m-hasstarted" /><code>{"private bool hasStarted"}</code> | Set once `Start` has run. |
+| <Link id="m-interactor" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor"}</code> | The controller's interactor, fetched on first use. |
+| <Link id="m-isoverobject" /><code>{"private bool isOverObject"}</code> | Whether the pointer is over a valid target. |
+| <Link id="m-isshowing" /><code>{"private bool isShowing"}</code> | Whether the pointer is showing. |
+| <Link id="m-otherteleporter" /><code>{"private "}<Link to="/game-api/types/global-t-x/teleporter">{"Teleporter"}</Link>{" otherTeleporter"}</code> | The other hand's teleporter; its teleport is cancelled when this one fires. |
+| <Link id="m-pointer" /><code>{"private "}<Link to="/game-api/types/global-p/pointer">{"Pointer"}</Link>{" pointer"}</code> | The pointer extension on the same controller. |
 
 </details>
 
@@ -49,9 +49,9 @@ Hand controller extension for pointer teleporting: shows the pointer while the t
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-lastcolliderhit" /><code>{"private Collider LastColliderHit { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastcolliderhit" /><code>{"private Collider LastColliderHit { get; set; }"}</code> | The collider the pointer last hit, to detect target changes. |
 
 </details>
 
@@ -72,19 +72,19 @@ Hand controller extension for pointer teleporting: shows the pointer while the t
 <details>
 <summary>11 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-cancelteleport" /><code>{"private void CancelTeleport("}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" proxy)"}</code> |
-| <Link id="m-checkshowpointer" /><code>{"private IEnumerator CheckShowPointer() (iterator)"}</code> |
-| <Link id="m-checkvalidendinput" /><code>{"private bool CheckValidEndInput()"}</code> |
-| <Link id="m-checkvalidinput" /><code>{"private bool CheckValidInput()"}</code> |
-| <Link id="m-handleteleportend" /><code>{"private void HandleTeleportEnd(bool isAttempting)"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-setupotherteleporter" /><code>{"private void SetupOtherTeleporter()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-targetchanged" /><code>{"private void TargetChanged("}<Link to="/game-api/types/global-p/pointer">{"Pointer"}</Link>{" pointer, Collider collider, bool isValid)"}</code> |
-| <Link id="m-teleportstartedsound" /><code>{"private void TeleportStartedSound(Vector3 position)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cancelteleport" /><code>{"private void CancelTeleport("}<Link to="/game-api/types/global-c-d/controlleractionproxy">{"ControllerActionProxy"}</Link>{" proxy)"}</code> | Ends the teleport without moving when the Teleport action is disabled. |
+| <Link id="m-checkshowpointer" /><code>{"private IEnumerator CheckShowPointer() (iterator)"}</code> | Coroutine that keeps the teleport pointer shown while the input stays valid. |
+| <Link id="m-checkvalidendinput" /><code>{"private bool CheckValidEndInput()"}</code> | True if the pointer is showing, the hand is free and the player is alive. |
+| <Link id="m-checkvalidinput" /><code>{"private bool CheckValidInput()"}</code> | True if teleporting isn't blocked, Teleport is held, the hand is free and locomotion isn't blocked. |
+| <Link id="m-handleteleportend" /><code>{"private void HandleTeleportEnd(bool isAttempting)"}</code> | Hides the pointer and, if attempting and valid, teleports to the hit point or runs the target's custom teleport. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Cancels any teleport and unhooks the Teleport action events. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Hooks the Teleport action events in VR modes, and shows the pointer if the button is already held. |
+| <Link id="m-setupotherteleporter" /><code>{"private void SetupOtherTeleporter()"}</code> | Finds the other hand's teleporter once the player is linked as local. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Marks the teleporter as started. |
+| <Link id="m-targetchanged" /><code>{"private void TargetChanged("}<Link to="/game-api/types/global-p/pointer">{"Pointer"}</Link>{" pointer, Collider collider, bool isValid)"}</code> | Ends and begins `CustomTeleportation` on targets as the pointer moves between colliders. |
+| <Link id="m-teleportstartedsound" /><code>{"private void TeleportStartedSound(Vector3 position)"}</code> | Plays the teleport depart sound at the given position. |
 
 </details>
 

@@ -28,10 +28,10 @@ An entity network method whose handler gets a class instance to read into or wri
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> |
-| <Link id="m-recreateargumentmode" /><code>{"private "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-method" /><code>{"private "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method"}</code> | The serialize method called with the player, stream and value. |
+| <Link id="m-recreateargumentmode" /><code>{"private "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode"}</code> | When reading makes a new `T`: never, always, or only if the value is null (default). |
 
 </details>
 
@@ -46,9 +46,9 @@ An entity network method whose handler gets a class instance to read into or wri
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-forward" /><code>{"private void Forward("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Handler that makes a new `T` when reading (per the recreate mode) and calls the method with it. |
 
 </details>
 

@@ -35,10 +35,10 @@ Base for components that fill a meta UI `Panel` with data. Refreshes when the pa
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> |
-| <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entry" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" entry"}</code> | The scheduled refresh on the `Timeline`. |
+| <Link id="m-refreshtimer" /><code>{"private float refreshTimer"}</code> | Seconds between automatic data refreshes. Default 30; 0 or less turns them off. |
 
 </details>
 
@@ -59,12 +59,12 @@ Base for components that fill a meta UI `Panel` with data. Refreshes when the pa
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks the panel's state changes and, if `refreshTimer` is above 0, schedules `RefreshAgain`. |
+| <Link id="m-handlepanelstatechange" /><code>{"private void HandlePanelStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | On any panel state change: runs `RefreshData` if a refresh is pending, then `HandleStateChange`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the scheduled refresh. |
+| <Link id="m-refreshagain" /><code>{"private void RefreshAgain()"}</code> | Timer callback: refreshes now if the panel is open, otherwise on next open, then schedules itself again. |
 
 </details>
 

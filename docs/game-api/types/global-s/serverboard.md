@@ -28,26 +28,26 @@ A server list board in the main menu (public, my servers, open or discover). Fet
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-createserverboards" /><code>{"private Coroutine createServerBoards"}</code> |
-| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |
-| <Link id="m-elementparent" /><code>{"private Transform elementParent"}</code> |
-| <Link id="m-filter" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/serverboardfilter">{"ServerBoardFilter"}</Link>{" filter"}</code> |
-| <Link id="m-hasfilterchanged" /><code>{"private bool hasFilterChanged"}</code> |
-| <Link id="m-headingtext" /><code>{"private string headingText"}</code> |
-| <Link id="m-interval" /><code>{"private int interval"}</code> |
-| <Link id="m-isfirstserverload" /><code>{"private bool isFirstServerLoad"}</code> |
-| <Link id="m-joiningservertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" joiningServerText"}</code> |
-| <Link id="m-lastfilteredservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastFilteredServers"}</code> |
-| <Link id="m-lastreceivedservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastReceivedServers"}</code> |
-| <Link id="m-loadservers" /><code>{"private Coroutine loadServers"}</code> |
-| <Link id="m-serverdisplays" /><code>{"private List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverDisplays"}</code> |
-| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> |
-| <Link id="m-serverelements" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverElements"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" type"}</code> |
-| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> |
-| <Link id="m-updateinterval" /><code>{"private int updateInterval"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createserverboards" /><code>{"private Coroutine createServerBoards"}</code> | The running `UpdateServersList` coroutine, if any. |
+| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> | The curved `ServerSelectionDisplay` that shows and selects this board's elements. |
+| <Link id="m-elementparent" /><code>{"private Transform elementParent"}</code> | Transform that spawned server elements go under. Shown and hidden with the board. |
+| <Link id="m-filter" /><code>{"private "}<Link to="/game-api/types/game-other-namespaces/serverboardfilter">{"ServerBoardFilter"}</Link>{" filter"}</code> | The `ServerBoardFilter` applied to the received servers. |
+| <Link id="m-hasfilterchanged" /><code>{"private bool hasFilterChanged"}</code> | Set when the filter changes so the next rebuild selects the first server. |
+| <Link id="m-headingtext" /><code>{"private string headingText"}</code> | Heading shown for this board, read through `HeadingText`. |
+| <Link id="m-interval" /><code>{"private int interval"}</code> | Seconds left until the next refresh. Reset to `updateInterval` on each refresh. |
+| <Link id="m-isfirstserverload" /><code>{"private bool isFirstServerLoad"}</code> | True until the first rebuild with servers, which selects the first server. |
+| <Link id="m-joiningservertext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" joiningServerText"}</code> | Text shown by `DisableUpdate` while joining a server. |
+| <Link id="m-lastfilteredservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastFilteredServers"}</code> | The received servers after filtering and validity checks, as last shown. |
+| <Link id="m-lastreceivedservers" /><code>{"private IEnumerable<"}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{"> lastReceivedServers"}</code> | The last unfiltered server list from the API. |
+| <Link id="m-loadservers" /><code>{"private Coroutine loadServers"}</code> | The running `LoadServers` coroutine, if any. |
+| <Link id="m-serverdisplays" /><code>{"private List<"}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverDisplays"}</code> | Spawned `ServerElement` objects in display order, reused across refreshes. |
+| <Link id="m-serverelementprefab" /><code>{"private "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" serverElementPrefab"}</code> | Prefab spawned for each server in the list. |
+| <Link id="m-serverelements" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{"> serverElements"}</code> | Server elements keyed by server identifier, rebuilt on each refresh to restore the selection. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/global-s/serverboardtype">{"ServerBoardType"}</Link>{" type"}</code> | Which API list this board shows: public, my (joined), open or discover servers. |
+| <Link id="m-updatecountdowntext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" updateCountdownText"}</code> | Text that shows "Updating in Ns". |
+| <Link id="m-updateinterval" /><code>{"private int updateInterval"}</code> | Seconds between list refreshes. Default 30. |
 
 </details>
 
@@ -81,17 +81,17 @@ A server list board in the main menu (public, my servers, open or discover). Fet
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-filterservers" /><code>{"private void FilterServers()"}</code> |
-| <Link id="m-loadservers-2" /><code>{"private IEnumerator LoadServers() (iterator)"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-onfilterchanged" /><code>{"private void OnFilterChanged()"}</code> |
-| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> |
-| <Link id="m-sortandupdateserverslist" /><code>{"private void SortAndUpdateServersList()"}</code> |
-| <Link id="m-startupdatingservers" /><code>{"private void StartUpdatingServers()"}</code> |
-| <Link id="m-stopupdatingserver" /><code>{"private void StopUpdatingServer()"}</code> |
-| <Link id="m-updateserverslist" /><code>{"private IEnumerator UpdateServersList() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filterservers" /><code>{"private void FilterServers()"}</code> | Runs the last received server list through `filter` and then sorts and rebuilds the displayed list. |
+| <Link id="m-loadservers-2" /><code>{"private IEnumerator LoadServers() (iterator)"}</code> | Coroutine started by `SetActive(true)`: refreshes the list, then counts down `updateInterval` seconds on `updateCountdownText`, repeating while logged in. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Subscribes `OnFilterChanged` to the filter's change event. |
+| <Link id="m-onfilterchanged" /><code>{"private void OnFilterChanged()"}</code> | Marks the filter as changed (so the first server gets selected again) and refilters the list. |
+| <Link id="m-onselectedchanged" /><code>{"private void OnSelectedChanged("}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" oldElement, "}<Link to="/game-api/types/global-s/serverelement">{"ServerElement"}</Link>{" newElement)"}</code> | Forwards the display's selection change to this board's `SelectedChanged` event. |
+| <Link id="m-sortandupdateserverslist" /><code>{"private void SortAndUpdateServersList()"}</code> | Reverses the filtered list, drops servers `ServerFeatureSetProvider` says are invalid, and restarts the `UpdateServersList` coroutine. |
+| <Link id="m-startupdatingservers" /><code>{"private void StartUpdatingServers()"}</code> | Stops any running refresh loop and starts `LoadServers` again. |
+| <Link id="m-stopupdatingserver" /><code>{"private void StopUpdatingServer()"}</code> | Stops the `LoadServers` refresh loop. |
+| <Link id="m-updateserverslist" /><code>{"private IEnumerator UpdateServersList() (iterator)"}</code> | Coroutine that reuses or spawns one `ServerElement` per server (one per frame), removes extras, and keeps or resets the selection. |
 
 </details>
 

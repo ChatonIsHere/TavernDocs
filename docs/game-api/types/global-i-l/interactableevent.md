@@ -1,6 +1,6 @@
 ---
 title: "InteractableEvent"
-description: "class InteractableEvent in Root.Township."
+description: "Serializable event with an Interactable and the Interactor using it, editable in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InteractableEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable event with an `Interactable` and the `Interactor` using it, editable in the inspector.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`AltaEvent<Interactable, Interactor, InteractableUnityEvent>`](/game-api/types/global-a-b/altaevent-t1-t2-unityeventt1t2)

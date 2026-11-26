@@ -1,6 +1,6 @@
 ---
 title: "ToolBasedSkillStatus"
-description: "enum ToolBasedSkillStatus in Root.Township."
+description: "Stage of a tool-based skill use: cancelled, charging started, charged or consumed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ToolBasedSkillStatus
 
 An **enum** in `Root.Township`, no namespace.
+
+Stage of a tool-based skill use: cancelled, charging started, charged or consumed. `SkillInputStructure.PlaySoundAt` picks its default effect from it.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 

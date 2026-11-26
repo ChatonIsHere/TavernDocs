@@ -1,6 +1,6 @@
 ---
 title: "GameServerWebsocketResponseType"
-description: "enum GameServerWebsocketResponseType in Alta.Api.DataTransferModels."
+description: "Kind of GameServerWebsocketResponse sent over the game server websocket: system message, subscription event or command result."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameServerWebsocketResponseType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Kind of `GameServerWebsocketResponse` sent over the game server websocket: system message, subscription event or command result.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

@@ -1,6 +1,6 @@
 ---
 title: "ShopItemDetailedForUser"
-description: "class ShopItemDetailedForUser in Alta.Api.DataTransferModels."
+description: "A shop item with details for one user: whether they own it and the price they would pay."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ShopItemDetailedForUser
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+A shop item with details for one user: whether they own it and the price they would pay.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`ShopItemDetailed`](/game-api/types/assembly-api-models/shopitemdetailed)
@@ -23,10 +25,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> |
-| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-finalprice" /><code>{"decimal FinalPrice { get; set; }"}</code> | Price for this user after any discounts. |
+| <Link id="m-isowned" /><code>{"bool IsOwned { get; set; }"}</code> | True if the user already owns the item. |
 
 ## Used in
 

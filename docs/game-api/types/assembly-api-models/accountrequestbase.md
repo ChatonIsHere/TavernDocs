@@ -1,6 +1,6 @@
 ---
 title: "AccountRequestBase"
-description: "class AccountRequestBase in Alta.Api.DataTransferModels."
+description: "Web API request body for Oculus account linking: the platform account ID, its proof token and the region."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AccountRequestBase
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Web API request body for Oculus account linking: the platform account ID, its proof token and the region. Built by `OculusClient`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Derived types** [`LinkAccountRequest`](/game-api/types/assembly-api-models/linkaccountrequest), [`LoginViaLinkedAccountRequest`](/game-api/types/assembly-api-models/loginvialinkedaccountrequest)
@@ -23,11 +25,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> |
-| <Link id="m-linktoken" /><code>{"string LinkToken { get; set; }"}</code> |
-| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"ulong Identifier { get; set; }"}</code> | The platform account ID (`account_id`). The unlink call puts the Alta ID here instead. |
+| <Link id="m-linktoken" /><code>{"string LinkToken { get; set; }"}</code> | The platform's proof token for that account (`link_token`). |
+| <Link id="m-region" /><code><Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" { get; set; }"}</code> | Global or China (`region`). |
 
 ## Used in
 

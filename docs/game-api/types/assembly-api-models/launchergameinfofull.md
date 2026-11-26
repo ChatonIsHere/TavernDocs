@@ -1,6 +1,6 @@
 ---
 title: "LauncherGameInfoFull"
-description: "class LauncherGameInfoFull in Alta.Api.DataTransferModels."
+description: "Full details of a game for Alta's launcher, from LowLevelApiClient.GetLauncherGame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LauncherGameInfoFull
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Full details of a game for Alta's launcher, from `LowLevelApiClient.GetLauncherGame`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Inherits or implements** [`LauncherGameInfoShort`](/game-api/types/assembly-api-models/launchergameinfoshort)
@@ -23,17 +25,17 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-blogaddress" /><code>{"string BlogAddress { get; set; }"}</code> |
-| <Link id="m-buildpath" /><code>{"string BuildPath { get; set; }"}</code> |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
-| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> |
-| <Link id="m-logo" /><code>{"string Logo { get; set; }"}</code> |
-| <Link id="m-patchnotes" /><code><Link to="/game-api/types/assembly-api-models/patchnotes">{"PatchNotes"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/patchnotes">{"PatchNotes"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-shopconfigurl" /><code>{"string ShopConfigUrl { get; set; }"}</code> |
-| <Link id="m-socialmedia" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/socialmediainfo">{"SocialMediaInfo"}</Link>{"> SocialMedia { get; set; }"}</code> |
-| <Link id="m-versionmarkers" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/versionmarker">{"VersionMarker"}</Link>{"> VersionMarkers { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blogaddress" /><code>{"string BlogAddress { get; set; }"}</code> | Link to the game's blog. |
+| <Link id="m-buildpath" /><code>{"string BuildPath { get; set; }"}</code> | Path to the game's builds. |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | Game description text. |
+| <Link id="m-image" /><code>{"string Image { get; set; }"}</code> | Address of the game's main image. |
+| <Link id="m-logo" /><code>{"string Logo { get; set; }"}</code> | Address of the game's logo. |
+| <Link id="m-patchnotes" /><code><Link to="/game-api/types/assembly-api-models/patchnotes">{"PatchNotes"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/patchnotes">{"PatchNotes"}</Link>{" { get; set; }"}</code> | Patch notes for the game. |
+| <Link id="m-shopconfigurl" /><code>{"string ShopConfigUrl { get; set; }"}</code> | Address of the shop configuration file. |
+| <Link id="m-socialmedia" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/socialmediainfo">{"SocialMediaInfo"}</Link>{"> SocialMedia { get; set; }"}</code> | Links to the game's social media pages. |
+| <Link id="m-versionmarkers" /><code>{"List<"}<Link to="/game-api/types/assembly-api-models/versionmarker">{"VersionMarker"}</Link>{"> VersionMarkers { get; set; }"}</code> | Version markers for the game's builds. |
 
 ## Used in
 

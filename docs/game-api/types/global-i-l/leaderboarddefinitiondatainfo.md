@@ -1,6 +1,6 @@
 ---
 title: "LeaderboardDefinitionDataInfo"
-description: "class LeaderboardDefinitionDataInfo in Root.Township."
+description: "Leaderboard info returned by the leaderboard console command list."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+Leaderboard info returned by the leaderboard console command list.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The leaderboard's name. |
 
 ## Used in
 

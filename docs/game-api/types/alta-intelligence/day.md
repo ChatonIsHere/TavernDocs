@@ -1,6 +1,6 @@
 ---
 title: "Day"
-description: "class Day in Root.Township."
+description: "One day in an AI History, holding the events registered on it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Day
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+One day in an AI `History`, holding the events registered on it.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 
@@ -25,24 +27,24 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-events" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-events" /><code>{"private List<"}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"> events"}</code> | Events that happened on this day. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-history" /><code><Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> |
-| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-history" /><code><Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" "}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" { get; private set; }"}</code> | The history this day belongs to. |
+| <Link id="m-index" /><code>{"int Index { get; private set; }"}</code> | Day number within the history. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-registerevent" /><code>{"void RegisterEvent("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" newEvent)"}</code> | Adds an event to the day. |
 
 ## Used in
 

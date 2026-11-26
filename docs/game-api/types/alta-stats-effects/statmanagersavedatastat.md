@@ -1,6 +1,6 @@
 ---
 title: "StatManagerSaveDataStat"
-description: "class StatManagerSaveDataStat in Root.Township."
+description: "One saved stat in a StatManager's save data: which stat and its base flat value."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
+One saved stat in a `StatManager`'s save data: which stat and its base flat value. `StatManager` loads each into the matching live stat.
+
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-baseflat" /><code>{"float baseFlat"}</code> |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseflat" /><code>{"float baseFlat"}</code> | Saved base flat value of the stat. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition"}</code> | Stat this entry is for. A null definition is logged and skipped on load. |
 
 ## Used in
 

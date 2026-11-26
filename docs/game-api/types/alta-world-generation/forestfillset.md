@@ -1,6 +1,6 @@
 ---
 title: "ForestFillSet"
-description: "class ForestFillSet in Root.Township."
+description: "A fill set asset for forest generation with its own spawn modifiers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ForestFillSet
 
 A **class** in `Root.Township`, `Alta.Forests`.
+
+A fill set asset for forest generation with its own spawn modifiers.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`FillSet`](/game-api/types/alta-world-generation/fillset)
@@ -28,18 +30,18 @@ A **class** in `Root.Township`, `Alta.Forests`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; unused in this class. |
+| <Link id="m-spawnmodifiers" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" spawnModifiers"}</code> | Backing field for `SpawnModifiers`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-spawnmodifiers-2" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawnmodifiers-2" /><code>{"override "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/spawnmodifiers">{"SpawnModifiers"}</Link>{" { get; }"}</code> | The spawn modifiers applied to this set. |
 
 ## Used in
 

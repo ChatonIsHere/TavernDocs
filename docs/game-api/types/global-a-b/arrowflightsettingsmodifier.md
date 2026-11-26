@@ -1,6 +1,6 @@
 ---
 title: "ArrowFlightSettingsModifier"
-description: "abstract class ArrowFlightSettingsModifier in Root.Township."
+description: "Base asset for something that changes how an arrow flies."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ArrowFlightSettingsModifier
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base asset for something that changes how an arrow flies. Nothing in this build uses it.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `ScriptableObject`
@@ -24,9 +26,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-deviancemultiplier" /><code>{"virtual float DevianceMultiplier { get; }"}</code> | Multiplier on arrow deviance; 1 by default. |
 
 ## Used in
 

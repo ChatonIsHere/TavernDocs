@@ -1,6 +1,6 @@
 ---
 title: "SkinSettings"
-description: "class SkinSettings in Root.Township."
+description: "The character dummy's skin colours and skin blit materials, held on CharacterDummy.Skin and read by SkinMeshPart."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SkinSettings
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+The character dummy's skin colours and skin blit materials, held on `CharacterDummy.Skin` and read by `SkinMeshPart`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -25,26 +27,26 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-skinadditionalblit" /><code>{"private Material skinAdditionalBlit"}</code> |
-| <Link id="m-skinblit" /><code>{"private Material skinBlit"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-skinadditionalblit" /><code>{"private Material skinAdditionalBlit"}</code> | Backing field for `SkinAdditionalBlit`. |
+| <Link id="m-skinblit" /><code>{"private Material skinBlit"}</code> | Backing field for `SkinBlit`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" Arguments { get; }"}</code> |
-| <Link id="m-skinadditionalblit-2" /><code>{"Material SkinAdditionalBlit { get; }"}</code> |
-| <Link id="m-skinblit-2" /><code>{"Material SkinBlit { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{" Arguments { get; }"}</code> | The skin's primary and secondary colours used when blitting skin textures. |
+| <Link id="m-skinadditionalblit-2" /><code>{"Material SkinAdditionalBlit { get; }"}</code> | Material copied to blit the skin normal map. |
+| <Link id="m-skinblit-2" /><code>{"Material SkinBlit { get; }"}</code> | Material copied to blit the skin diffuse texture. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-set" /><code>{"void Set("}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" color)"}</code> | Sets the primary skin colour. Called by `CosmeticSkinColor`. |
 
 ## Used in
 

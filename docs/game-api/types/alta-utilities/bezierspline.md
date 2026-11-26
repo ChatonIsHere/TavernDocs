@@ -33,11 +33,11 @@ A cubic Bezier spline component: control points in groups of three per curve, wi
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> |
-| <Link id="m-modes" /><code>{"private "}<Link to="/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{"[] modes"}</code> |
-| <Link id="m-points" /><code>{"private Vector3[] points"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-islooping" /><code>{"private bool isLooping"}</code> | Backing field for `IsLooping`. |
+| <Link id="m-modes" /><code>{"private "}<Link to="/game-api/types/global-a-b/beziercontrolpointmode">{"BezierControlPointMode"}</Link>{"[] modes"}</code> | Handle mode per curve joint (free, aligned, mirrored), one more entry than there are curves. |
+| <Link id="m-points" /><code>{"private Vector3[] points"}</code> | Local-space control points: each curve uses four, sharing its end point with the next curve. |
 
 </details>
 
@@ -72,11 +72,11 @@ A cubic Bezier spline component: control points in groups of three per curve, wi
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-enforcemode" /><code>{"private void EnforceMode(int index)"}</code> |
-| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> |
-| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-enforcemode" /><code>{"private void EnforceMode(int index)"}</code> | Moves the opposite handle of a control point so it matches the point's mode (mirrored or aligned). Free points are left alone. |
+| <Link id="m-onchanged" /><code>{"private void OnChanged()"}</code> | Raises `Changed`. Called after any edit to points, modes or looping. |
+| <Link id="m-undo" /><code>{"private void Alta.Static.IInstructionResult.Undo()"}</code> | Explicit `IInstructionResult` implementation: destroys the spline's GameObject. |
 
 </details>
 

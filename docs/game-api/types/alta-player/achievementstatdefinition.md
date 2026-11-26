@@ -1,6 +1,6 @@
 ---
 title: "AchievementStatDefinition"
-description: "class AchievementStatDefinition in Root.Township."
+description: "Asset for one stat that achievements track; its asset name is its ID."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AchievementStatDefinition
 
 A **class** in `Root.Township`, `Alta.Achievements`.
+
+Asset for one stat that achievements track; its asset name is its ID.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -28,18 +30,18 @@ A **class** in `Root.Township`, `Alta.Achievements`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" type"}</code> | Backing field for `Type`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |
-| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" Type { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> | The asset name, used as the stat ID. |
+| <Link id="m-type-2" /><code><Link to="/game-api/types/alta-player/stattype">{"StatType"}</Link>{" Type { get; }"}</code> | The kind of value the stat holds. |
 
 ## Used in
 

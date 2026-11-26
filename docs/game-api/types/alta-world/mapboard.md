@@ -29,17 +29,17 @@ A board in the world that shows a map and, when a player touches its hover point
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activemappieces" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> activeMapPieces"}</code> |
-| <Link id="m-handhoverpoint" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHoverPoint"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> |
-| <Link id="m-positionoffset" /><code>{"private Vector2 positionOffset"}</code> |
-| <Link id="m-resolution" /><code>{"private Vector2 resolution"}</code> |
-| <Link id="m-syncboard" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBoard"}</code> |
-| <Link id="m-unlockpieceindex" /><code>{"private int unlockPieceIndex"}</code> |
-| <Link id="m-zoom" /><code>{"private float zoom"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activemappieces" /><code>{"private readonly Dictionary<int, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{"> activeMapPieces"}</code> | Client: map pieces not yet discovered, keyed by piece index. Always empty on headless builds. |
+| <Link id="m-handhoverpoint" /><code>{"private "}<Link to="/game-api/types/global-e-h/handhoverpoint">{"HandHoverPoint"}</Link>{" handHoverPoint"}</code> | Hover point players touch to read the board. The server discovers the unlock piece when it's activated. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-map" /><code>{"private "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map"}</code> | The map this board shows. Saved and synced. |
+| <Link id="m-positionoffset" /><code>{"private Vector2 positionOffset"}</code> | Offset of the map shown on the board, in pixels of `resolution`. Saved and synced. |
+| <Link id="m-resolution" /><code>{"private Vector2 resolution"}</code> | Map image resolution used to turn `positionOffset` into the shader offset. Default 2048 by 2048. |
+| <Link id="m-syncboard" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBoard"}</code> | Method sync that sends the board's settings to a joining player. |
+| <Link id="m-unlockpieceindex" /><code>{"private int unlockPieceIndex"}</code> | Index of the map piece the board discovers for a player who uses it. Saved and synced. |
+| <Link id="m-zoom" /><code>{"private float zoom"}</code> | Zoom of the map on the board, from 1 to 5. Saved and synced. |
 
 </details>
 
@@ -71,19 +71,19 @@ A board in the world that shows a map and, when a player touches its hover point
 <details>
 <summary>11 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-discovermappiece" /><code>{"private void DiscoverMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" mapPiece)"}</code> |
-| <Link id="m-initializeforclient" /><code>{"private void InitializeForClient()"}</code> |
-| <Link id="m-ismapcontentavailable" /><code>{"private bool IsMapContentAvailable()"}</code> |
-| <Link id="m-listentomapdiscoveries" /><code>{"private void ListenToMapDiscoveries()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-setupmap" /><code>{"private void SetupMap()"}</code> |
-| <Link id="m-setupmappiece" /><code>{"private void SetupMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece)"}</code> |
-| <Link id="m-setupmappieces" /><code>{"private void SetupMapPieces("}<Link to="/game-api/types/alta-world/playermapmanager">{"PlayerMapManager"}</Link>{" mapManager)"}</code> |
-| <Link id="m-syncboard-2" /><code>{"private void SyncBoard("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-unclampedinverselerp" /><code>{"private static float UnclampedInverseLerp(float a, float b, float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-discovermappiece" /><code>{"private void DiscoverMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" mapPiece)"}</code> | Client: drops a piece from `activeMapPieces` when the map reports it discovered. |
+| <Link id="m-initializeforclient" /><code>{"private void InitializeForClient()"}</code> | Client: after the board sync arrives, lists the undiscovered pieces, listens for discoveries, sets up the hover attract check and raises `SetupAsClient`. |
+| <Link id="m-ismapcontentavailable" /><code>{"private bool IsMapContentAvailable()"}</code> | True while this board's unlock piece is still undiscovered for the shared map manager. Drives the hand hover attract effect. |
+| <Link id="m-listentomapdiscoveries" /><code>{"private void ListenToMapDiscoveries()"}</code> | Subscribes `DiscoverMapPiece` to the map's `PieceDiscovered` event. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unsubscribes from the map's `PieceDiscovered` event (not on headless builds). |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: logs that the map can't be changed while playing. |
+| <Link id="m-setupmap" /><code>{"private void SetupMap()"}</code> | Logs an error if no map is set. Does nothing else. |
+| <Link id="m-setupmappiece" /><code>{"private void SetupMapPiece(int index, "}<Link to="/game-api/types/alta-world/mappiece">{"MapPiece"}</Link>{" piece)"}</code> | Client: adds one undiscovered piece to `activeMapPieces`. Skipped on headless builds. |
+| <Link id="m-setupmappieces" /><code>{"private void SetupMapPieces("}<Link to="/game-api/types/alta-world/playermapmanager">{"PlayerMapManager"}</Link>{" mapManager)"}</code> | Adds every piece the map manager hasn't discovered yet to `activeMapPieces`. |
+| <Link id="m-syncboard-2" /><code>{"private void SyncBoard("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sends the map, unlock piece index (0 to 127), offset and zoom. On a client with a local player, reading it runs `InitializeForClient`. |
+| <Link id="m-unclampedinverselerp" /><code>{"private static float UnclampedInverseLerp(float a, float b, float value)"}</code> | Inverse lerp that doesn't clamp to 0 to 1, used by `WorldToMapPosition`. |
 
 </details>
 

@@ -29,27 +29,27 @@ Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only th
 <details>
 <summary>19 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-canaddto" /><code>{"private bool canAddTo"}</code> |
-| <Link id="m-canremovefrom" /><code>{"private bool canRemoveFrom"}</code> |
-| <Link id="m-containerpriority" /><code>{"private int containerPriority"}</code> |
-| <Link id="m-containersize" /><code>{"private int containerSize"}</code> |
-| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> |
-| <Link id="m-currentcontentlevel" /><code>{"private int currentContentLevel"}</code> |
-| <Link id="m-intransitions" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> inTransitions"}</code> |
-| <Link id="m-isallowinggradualconsumption" /><code>{"private bool isAllowingGradualConsumption"}</code> |
-| <Link id="m-isinfinitesource" /><code>{"private bool isInfiniteSource"}</code> |
-| <Link id="m-liquiddistribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" liquidDistribution"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-oldlevel" /><code>{"private int oldLevel"}</code> |
-| <Link id="m-oldtotalliquidamountshown" /><code>{"private float oldTotalLiquidAmountShown"}</code> |
-| <Link id="m-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" outTransition"}</code> |
-| <Link id="m-sortedintransitions" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> sortedInTransitions"}</code> |
-| <Link id="m-surfacevisual" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" surfaceVisual"}</code> |
-| <Link id="m-syncliquidamount" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLiquidAmount"}</code> |
-| <Link id="m-syncliquidcontent" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLiquidContent"}</code> |
-| <Link id="m-totaltransitionsamount" /><code>{"private float totalTransitionsAmount"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-canaddto" /><code>{"private bool canAddTo"}</code> | Whether liquid may be poured in. Checked by `CanAddTo` before `AddFilter`. |
+| <Link id="m-canremovefrom" /><code>{"private bool canRemoveFrom"}</code> | Backing field for `CanRemoveFrom`; saved with the container. |
+| <Link id="m-containerpriority" /><code>{"private int containerPriority"}</code> | Containers with a lower priority can't fill into ones with the same or higher priority. |
+| <Link id="m-containersize" /><code>{"private int containerSize"}</code> | How many units the container holds. |
+| <Link id="m-content" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" content"}</code> | Backing field for `ContainedLiquid`. |
+| <Link id="m-currentcontentlevel" /><code>{"private int currentContentLevel"}</code> | Units of liquid in the container; saved and synced. |
+| <Link id="m-intransitions" /><code>{"private readonly HashSet<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> inTransitions"}</code> | Pours currently coming into this container. |
+| <Link id="m-isallowinggradualconsumption" /><code>{"private bool isAllowingGradualConsumption"}</code> | Backing field for `IsAllowingGradualConsumption`, which `LiquidGradualDrinker` checks before drinking from it bit by bit. |
+| <Link id="m-isinfinitesource" /><code>{"private bool isInfiniteSource"}</code> | When true the container never empties or fills: level reads as `int.MaxValue` and adds and removes always succeed. |
+| <Link id="m-liquiddistribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" liquidDistribution"}</code> | Liquids the container may spawn filled with, picked at random on generation with a random amount. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+| <Link id="m-oldlevel" /><code>{"private int oldLevel"}</code> | The level when `ContentLevelChanged` last fired. |
+| <Link id="m-oldtotalliquidamountshown" /><code>{"private float oldTotalLiquidAmountShown"}</code> | The shown amount last reported, to detect changes. |
+| <Link id="m-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" outTransition"}</code> | The transition for liquid leaving this container, made in `Awake`. |
+| <Link id="m-sortedintransitions" /><code>{"private readonly List<"}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{"> sortedInTransitions"}</code> | Reused list for sorting incoming pours by progress. |
+| <Link id="m-surfacevisual" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidsurfacevisual">{"LiquidSurfaceVisual"}</Link>{" surfaceVisual"}</code> | The liquid surface renderer. Without one the update loop is never turned on. |
+| <Link id="m-syncliquidamount" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLiquidAmount"}</code> | Sync message for the level and in-flight amount. |
+| <Link id="m-syncliquidcontent" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncLiquidContent"}</code> | Sync message for the liquid type. |
+| <Link id="m-totaltransitionsamount" /><code>{"private float totalTransitionsAmount"}</code> | Liquid currently in flight: incoming pour progress minus the outgoing pour. |
 
 </details>
 
@@ -73,10 +73,10 @@ Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only th
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> |
-| <Link id="m-alta-liquid-iliquidcontainerinternal-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" Alta.Liquid.ILiquidContainerInternal.OutTransition { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-crafting-iblockgenericdecrafting-candecraft" /><code>{"private bool Alta.Crafting.IBlockGenericDecrafting.CanDecraft { get; }"}</code> | Only empty containers can be decrafted. |
+| <Link id="m-alta-liquid-iliquidcontainerinternal-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" Alta.Liquid.ILiquidContainerInternal.OutTransition { get; }"}</code> | The transition for liquid leaving this container. |
 
 </details>
 
@@ -108,30 +108,30 @@ Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only th
 <details>
 <summary>22 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addliquid" /><code>{"private bool Alta.Liquid.ILiquidContainerInternal.AddLiquid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" containedLiquid, int amountToAdd, bool isForced)"}</code> |
-| <Link id="m-addliquidintransition" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.AddLiquidInTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> |
-| <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> |
-| <Link id="m-checktodisableupdateloop" /><code>{"private void CheckToDisableUpdateLoop()"}</code> |
-| <Link id="m-clearcontainedliquidduetofailedtransition" /><code>{"private void ClearContainedLiquidDueToFailedTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" failedTransition)"}</code> |
-| <Link id="m-enableupdateloop" /><code>{"private void EnableUpdateLoop()"}</code> |
-| <Link id="m-oncontainedliquidchanged" /><code>{"private void OnContainedLiquidChanged("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldContent, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newContent)"}</code> |
-| <Link id="m-oncontentlevelchanged" /><code>{"private void OnContentLevelChanged()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-removeliquid" /><code>{"private bool Alta.Liquid.ILiquidContainerInternal.RemoveLiquid(int amountToRemove, bool isForced)"}</code> |
-| <Link id="m-removeliquidintransition" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.RemoveLiquidInTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> |
-| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceFlags)"}</code> |
-| <Link id="m-serializecontentlevel" /><code>{"private void SerializeContentLevel("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-serializelevelandsettingsintostream" /><code>{"private void SerializeLevelAndSettingsIntoStream("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-serializeliquidcontent" /><code>{"private void SerializeLiquidContent("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-setcontent" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.SetContent("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquidContent)"}</code> |
-| <Link id="m-syncliquidamount-2" /><code>{"private void SyncLiquidAmount("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncliquidcontent-2" /><code>{"private void SyncLiquidContent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-updatetotalliquidamountshown" /><code>{"private bool UpdateTotalLiquidAmountShown()"}</code> |
-| <Link id="m-updatetotaltransitionamount" /><code>{"private bool UpdateTotalTransitionAmount()"}</code> |
-| <Link id="m-updatetransitionamountandrenderers" /><code>{"private void UpdateTransitionAmountAndRenderers(bool isForced)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addliquid" /><code>{"private bool Alta.Liquid.ILiquidContainerInternal.AddLiquid("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" containedLiquid, int amountToAdd, bool isForced)"}</code> | Server: adds an amount of a liquid, capped at the container size. Takes the liquid's type if empty. Infinite sources accept anything. |
+| <Link id="m-addliquidintransition" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.AddLiquidInTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | Starts tracking a pour coming in; if empty, takes the source's liquid type so the visual shows it, and enables the update loop. |
+| <Link id="m-checkallowed" /><code>{"private bool Alta.Inventory.IInterfereWithDocking.CheckAllowed("}<Link to="/game-api/types/alta-items/iinterferewithdocking">{"IInterfereWithDocking"}</Link>{" other)"}</code> | Docking check: two containers may stack only if both are empty, or have the same level and the same liquid. |
+| <Link id="m-checktodisableupdateloop" /><code>{"private void CheckToDisableUpdateLoop()"}</code> | Turns the update loop off and refreshes the visual once no pours are coming in. |
+| <Link id="m-clearcontainedliquidduetofailedtransition" /><code>{"private void ClearContainedLiquidDueToFailedTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" failedTransition)"}</code> | If an incoming pour is cancelled and nothing is shown, clears the liquid type taken from it. |
+| <Link id="m-enableupdateloop" /><code>{"private void EnableUpdateLoop()"}</code> | Server: turns the update loop on when liquid starts pouring out, if there is a surface visual. |
+| <Link id="m-oncontainedliquidchanged" /><code>{"private void OnContainedLiquidChanged("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" oldContent, "}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" newContent)"}</code> | Server sends the new liquid type to the chunk; raises `ContainedLiquidChanged` and updates the surface colour. |
+| <Link id="m-oncontentlevelchanged" /><code>{"private void OnContentLevelChanged()"}</code> | Server sends the level to the chunk; refreshes the visual and raises `ContentLevelChanged` if the level changed. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | In the editor, refreshes the visual and clears the liquid type if the level is 0. |
+| <Link id="m-removeliquid" /><code>{"private bool Alta.Liquid.ILiquidContainerInternal.RemoveLiquid(int amountToRemove, bool isForced)"}</code> | Server: removes an amount; clears the liquid type when it reaches 0. Infinite sources never run out. |
+| <Link id="m-removeliquidintransition" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.RemoveLiquidInTransition("}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" liquidTransition)"}</code> | Stops tracking an incoming pour and refreshes or disables the update loop. |
+| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceFlags)"}</code> | When the entity is replaced, moves the liquid (or emptiness) into the replacement's container. |
+| <Link id="m-serializecontentlevel" /><code>{"private void SerializeContentLevel("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the level as an int from 0 to `containerSize`. |
+| <Link id="m-serializelevelandsettingsintostream" /><code>{"private void SerializeLevelAndSettingsIntoStream("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads `canAddTo`, `canRemoveFrom` and the level. Not called in this build. |
+| <Link id="m-serializeliquidcontent" /><code>{"private void SerializeLiquidContent("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the liquid: none, a custom mix as data, or a preset by hash. Infinite sources with none are given water. |
+| <Link id="m-setcontent" /><code>{"private void Alta.Liquid.ILiquidContainerInternal.SetContent("}<Link to="/game-api/types/alta-stats-effects/liquidcontent">{"LiquidContent"}</Link>{" liquidContent)"}</code> | Sets the liquid type directly without changing the level. |
+| <Link id="m-syncliquidamount-2" /><code>{"private void SyncLiquidAmount("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler for the level and in-flight pour amount; clients update their visual and raise events. Rejected from clients. |
+| <Link id="m-syncliquidcontent-2" /><code>{"private void SyncLiquidContent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler for the liquid type. Rejected from clients. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Server: recomputes the in-flight pour amount and the visual each frame while pours are active. |
+| <Link id="m-updatetotalliquidamountshown" /><code>{"private bool UpdateTotalLiquidAmountShown()"}</code> | If the shown amount changed, raises `TotalAmountShownChanged` and (server) sends the amount to the chunk. |
+| <Link id="m-updatetotaltransitionamount" /><code>{"private bool UpdateTotalTransitionAmount()"}</code> | Adds up incoming pour progress (largest first, as many as there is room for) minus the outgoing pour. |
+| <Link id="m-updatetransitionamountandrenderers" /><code>{"private void UpdateTransitionAmountAndRenderers(bool isForced)"}</code> | Recomputes the in-flight amount on the server and refreshes the visual if it changed or when forced. |
 
 </details>
 

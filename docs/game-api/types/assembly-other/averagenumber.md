@@ -1,6 +1,6 @@
 ---
 title: "AverageNumber"
-description: "class AverageNumber in Alta.Core.Runtime."
+description: "Keeps a running total, count, min and max of recorded numbers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AverageNumber
 
 A **class** in `Alta.Core.Runtime`, `Alta.Core.Runtime`.
+
+Keeps a running total, count, min and max of recorded numbers. Used for simple stats and timing.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 
@@ -25,31 +27,31 @@ A **class** in `Alta.Core.Runtime`, `Alta.Core.Runtime`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-max" /><code>{"private double max"}</code> |
-| <Link id="m-min" /><code>{"private double min"}</code> |
-| <Link id="m-numberofvalues" /><code>{"private int numberOfValues"}</code> |
-| <Link id="m-total" /><code>{"private double total"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-max" /><code>{"private double max"}</code> | Backing field for `Max`. |
+| <Link id="m-min" /><code>{"private double min"}</code> | Backing field for `Min`. |
+| <Link id="m-numberofvalues" /><code>{"private int numberOfValues"}</code> | Backing field for `NumberOfValues`. |
+| <Link id="m-total" /><code>{"private double total"}</code> | Backing field for `Total`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-average" /><code>{"double Average { get; }"}</code> |
-| <Link id="m-max-2" /><code>{"double Max { get; }"}</code> |
-| <Link id="m-min-2" /><code>{"double Min { get; }"}</code> |
-| <Link id="m-numberofvalues-2" /><code>{"int NumberOfValues { get; }"}</code> |
-| <Link id="m-total-2" /><code>{"double Total { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-average" /><code>{"double Average { get; }"}</code> | Total divided by count, or 0 when nothing is recorded. |
+| <Link id="m-max-2" /><code>{"double Max { get; }"}</code> | Largest recorded value, or 0 when nothing is recorded. |
+| <Link id="m-min-2" /><code>{"double Min { get; }"}</code> | Smallest recorded value, or 0 when nothing is recorded. Only updated when a value isn't a new max, so it can stay at `double.MaxValue`. |
+| <Link id="m-numberofvalues-2" /><code>{"int NumberOfValues { get; }"}</code> | How many values have been recorded since the last reset. |
+| <Link id="m-total-2" /><code>{"double Total { get; }"}</code> | Sum of all recorded values. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-recordnumber" /><code>{"void RecordNumber(double value)"}</code> |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-recordnumber" /><code>{"void RecordNumber(double value)"}</code> | Adds a value to the total and count and updates max, or min if it isn't a new max. |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Clears the total and count and resets min and max to their extremes. |
 
 ## Used in
 

@@ -29,11 +29,11 @@ The effect and sound for one impact outcome (critical, good or bad) in `ImpactDe
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> |
-| <Link id="m-sound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> |
-| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-objectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition"}</code> | Backing field for `ObjectDefinition`, the pooled effect spawned on the impact. |
+| <Link id="m-sound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound"}</code> | Backing field for `Sound`, the sound effect played on the impact (none by default). |
+| <Link id="m-soundeffectset" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffectSet"}</code> | Backing field for `SoundEffectSet`, a set of sounds for the impact. |
 
 </details>
 

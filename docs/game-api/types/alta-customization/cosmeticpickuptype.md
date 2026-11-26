@@ -1,6 +1,6 @@
 ---
 title: "CosmeticPickupType"
-description: "enum CosmeticPickupType in Root.Township."
+description: "What a cosmetic pickup changes on the character: a cosmetic item, eyes, skin colour, a skin part or body type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CosmeticPickupType
 
 An **enum** in `Root.Township`, `Alta.Customization`.
+
+What a cosmetic pickup changes on the character: a cosmetic item, eyes, skin colour, a skin part or body type.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 

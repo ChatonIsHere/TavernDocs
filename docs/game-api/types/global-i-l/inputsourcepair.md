@@ -1,6 +1,6 @@
 ---
 title: "InputSourcePair"
-description: "class InputSourcePair in Root.Township."
+description: "An input source made of a primary and optional secondary input (for example a key and a button), built by ControllerAction from a platform mapping."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # InputSourcePair
 
 A **class** in `Root.Township`, no namespace.
+
+An input source made of a primary and optional secondary input (for example a key and a button), built by `ControllerAction` from a platform mapping.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`InputSource`](/game-api/types/global-i-l/inputsource)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-controller" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> |
-| <Link id="m-parentmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" parentMapping"}</code> |
-| <Link id="m-primaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" primaryInput"}</code> |
-| <Link id="m-secondaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" secondaryInput"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controller" /><code><Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller"}</code> | The hand's `PlayerInput` this pair belongs to. |
+| <Link id="m-parentmapping" /><code><Link to="/game-api/types/global-p/platformactionmapping">{"PlatformActionMapping"}</Link>{" parentMapping"}</code> | Platform mapping the pair was built from. |
+| <Link id="m-primaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" primaryInput"}</code> | First input source. |
+| <Link id="m-secondaryinput" /><code><Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{" secondaryInput"}</code> | Second input source, if any. |
 
 ## Used in
 

@@ -28,10 +28,10 @@ A snapshot of one hand controller's input: buttons, sticks, finger curl and hand
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-booleaninputs" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{"[] booleanInputs"}</code> |
-| <Link id="m-inputlength" /><code>{"private readonly int inputLength"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-booleaninputs" /><code>{"private readonly "}<Link to="/game-api/types/global-i-l/inputsource">{"InputSource"}</Link>{"[] booleanInputs"}</code> | All the button inputs in a fixed order, so `SetAndCallEvents` can copy and fire them in loops. |
+| <Link id="m-inputlength" /><code>{"private readonly int inputLength"}</code> | Number of entries in `booleanInputs`. |
 
 </details>
 

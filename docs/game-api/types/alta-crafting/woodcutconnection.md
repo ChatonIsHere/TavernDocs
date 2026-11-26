@@ -33,13 +33,13 @@ Marks a joint between two pieces of a choppable tree model: which connection typ
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> |
-| <Link id="m-connectiontype" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" connectionType"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-pointindex" /><code>{"private int pointIndex"}</code> |
-| <Link id="m-rotations" /><code>{"private int rotations"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-breakthresholdmultiplier" /><code>{"private float breakThresholdMultiplier"}</code> | Backing field for `BreakThresholdMultiplier`. |
+| <Link id="m-connectiontype" /><code>{"private "}<Link to="/game-api/types/alta-crafting/woodcutconnectiontype">{"WoodcutConnectionType"}</Link>{" connectionType"}</code> | Backing field for `ConnectionType`; its bone count sets how many break points the connection has. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | Cached `NetworkEntity` on the same GameObject, filled the first time `Entity` is read. |
+| <Link id="m-pointindex" /><code>{"private int pointIndex"}</code> | Index of the first woodcut point in the model that belongs to this connection; `BreakPoints` starts here. |
+| <Link id="m-rotations" /><code>{"private int rotations"}</code> | Backing field for `Rotations`. |
 
 </details>
 

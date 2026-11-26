@@ -1,6 +1,6 @@
 ---
 title: "IUnityApplicationWrapper"
-description: "interface IUnityApplicationWrapper in Root.Township."
+description: "Wraps Unity's Application so tests can swap it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Features.Utility.UnityWrappers`.
 
+Wraps Unity's `Application` so tests can swap it. Get it from `UnityApplicationWrapper.Instance`.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Derived types** [`UnityApplicationWrapper`](/game-api/types/game-other-namespaces/unityapplicationwrapper)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iseditor" /><code>{"bool IsEditor { get; }"}</code> | Whether the game is running in the Unity editor. |
 
 ## Used in
 

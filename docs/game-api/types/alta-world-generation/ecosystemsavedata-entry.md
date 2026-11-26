@@ -1,6 +1,6 @@
 ---
 title: "EcosystemSaveData.Entry"
-description: "class EcosystemSaveData.Entry in Root.Township."
+description: "Saved spawn points for one population in an ecosystem chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EcosystemSaveData.Entry
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Saved spawn points for one population in an ecosystem chunk.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`EcosystemSaveData`](/game-api/types/alta-world-generation/ecosystemsavedata)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-key" /><code>{"uint key"}</code> |
-| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> |
-| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-key" /><code>{"uint key"}</code> | Key of the population in the ecosystem's spawn map. Saved, but `Ecosystem` doesn't read it on load. |
+| <Link id="m-positions" /><code>{"Vector3[] positions"}</code> | Saved spawn positions. |
+| <Link id="m-rotations" /><code>{"Quaternion[] rotations"}</code> | Saved spawn rotations, matching `positions` by index. |
 
 ## Used in
 

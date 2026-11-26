@@ -1,6 +1,6 @@
 ---
 title: "DeeplinkEventFailReason"
-description: "enum DeeplinkEventFailReason in Root.Township."
+description: "Why joining a server from a deeplink failed: server full, banned, private server, wrong version or another error."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeeplinkEventFailReason
 
 An **enum** in `Root.Township`, no namespace.
+
+Why joining a server from a deeplink failed: server full, banned, private server, wrong version or another error.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

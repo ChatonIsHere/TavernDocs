@@ -1,6 +1,6 @@
 ---
 title: "DisplayMessageType"
-description: "enum DisplayMessageType in Root.Township."
+description: "How a display message is queued: added to the queue, shown next, shown next replacing the current one, or shown only when the queue is empty."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DisplayMessageType
 
 An **enum** in `Root.Township`, no namespace.
+
+How a display message is queued: added to the queue, shown next, shown next replacing the current one, or shown only when the queue is empty.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 

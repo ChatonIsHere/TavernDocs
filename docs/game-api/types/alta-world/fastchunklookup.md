@@ -27,16 +27,16 @@ Fast lookup from positions or bounds to location chunks. Overworld chunks sit in
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunksize" /><code>{"private float chunkSize"}</code> |
-| <Link id="m-chunksperside" /><code>{"private int chunksPerSide"}</code> |
-| <Link id="m-maporigin" /><code>{"private Vector3 mapOrigin"}</code> |
-| <Link id="m-maxy" /><code>{"private float maxY"}</code> |
-| <Link id="m-miny" /><code>{"private float minY"}</code> |
-| <Link id="m-otherchunkbounds" /><code>{"private Bounds otherChunkBounds"}</code> |
-| <Link id="m-otherchunks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> otherChunks"}</code> |
-| <Link id="m-overworldchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{"[,] overworldChunks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunksize" /><code>{"private float chunkSize"}</code> | Width of one overworld chunk, taken from the first grid chunk's bounds. |
+| <Link id="m-chunksperside" /><code>{"private int chunksPerSide"}</code> | Number of overworld chunks along each side of the square grid. |
+| <Link id="m-maporigin" /><code>{"private Vector3 mapOrigin"}</code> | Minimum corner of the overworld grid in world space. |
+| <Link id="m-maxy" /><code>{"private float maxY"}</code> | Top of the overworld chunks' bounds. Positions above it skip the grid lookup. |
+| <Link id="m-miny" /><code>{"private float minY"}</code> | Bottom of the overworld chunks' bounds. Positions below it skip the grid lookup. |
+| <Link id="m-otherchunkbounds" /><code>{"private Bounds otherChunkBounds"}</code> | Bounds that enclose all non-overworld chunks, rebuilt by `ResetOtherChunksBounds`. |
+| <Link id="m-otherchunks" /><code>{"private HashSet<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> otherChunks"}</code> | Location chunks that aren't part of the overworld grid. These are checked one by one by bounds. |
+| <Link id="m-overworldchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/overworldchunk">{"OverworldChunk"}</Link>{"[,] overworldChunks"}</code> | The overworld chunks as a 2D grid by x and z index, for direct lookup by position. |
 
 </details>
 
@@ -67,12 +67,12 @@ Fast lookup from positions or bounds to location chunks. Overworld chunks sit in
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addchunksingrid" /><code>{"private void AddChunksInGrid(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks, int xMin, int xMax, int z, int xCenter, int zCenter, float totalRadius)"}</code> |
-| <Link id="m-getbestchunk" /><code>{"private static "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunk(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |
-| <Link id="m-getxindex" /><code>{"private int GetXIndex(float x)"}</code> |
-| <Link id="m-getzindex" /><code>{"private int GetZIndex(float z)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addchunksingrid" /><code>{"private void AddChunksInGrid(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> chunks, int xMin, int xMax, int z, int xCenter, int zCenter, float totalRadius)"}</code> | Adds one row of overworld chunks to the load set, and follows each chunk's forced-adjacent connections with the remaining radius budget. |
+| <Link id="m-getbestchunk" /><code>{"private static "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" GetBestChunk(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> | Returns the chunk with the highest `Priority` from a list, or null. |
+| <Link id="m-getxindex" /><code>{"private int GetXIndex(float x)"}</code> | Converts a world x position to an overworld grid column. |
+| <Link id="m-getzindex" /><code>{"private int GetZIndex(float z)"}</code> | Converts a world z position to an overworld grid row. |
 
 </details>
 

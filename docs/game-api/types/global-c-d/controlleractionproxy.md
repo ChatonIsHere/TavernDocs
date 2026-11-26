@@ -28,9 +28,9 @@ A stand-in controller action that forwards the state and events of whichever `Co
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Backing field for `IsEnabled`. |
 
 </details>
 
@@ -45,9 +45,9 @@ A stand-in controller action that forwards the state and events of whichever `Co
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-linkedcontrolleraction" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" LinkedControllerAction { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-linkedcontrolleraction" /><code>{"private "}<Link to="/game-api/types/global-c-d/controlleraction">{"ControllerAction"}</Link>{" LinkedControllerAction { get; set; }"}</code> | The real controller action this proxy listens to, set by `LinkToControllerAction`. |
 
 </details>
 
@@ -71,10 +71,10 @@ A stand-in controller action that forwards the state and events of whichever `Co
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-invokeended" /><code>{"private void InvokeEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input, bool isDisabling)"}</code> |
-| <Link id="m-invokestarted" /><code>{"private void InvokeStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invokeended" /><code>{"private void InvokeEnded("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input, bool isDisabling)"}</code> | Forwards the linked action's Ended event if the proxy is enabled. |
+| <Link id="m-invokestarted" /><code>{"private void InvokeStarted("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" input)"}</code> | Forwards the linked action's Started event if the proxy is enabled. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "IVoiceApiClient"
-description: "interface IVoiceApiClient in Alta.Api.Client."
+description: "Alta web API calls for Vivox voice chat tokens."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API calls for Vivox voice chat tokens. `ApiAccess.ApiClient.VoiceClient`. Voice no longer works.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`OfflineVoiceClient`](/game-api/types/assembly-api-client/offlinevoiceclient), [`VoiceApiClient`](/game-api/types/assembly-api-client/voiceapiclient)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> |
-| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getjoinchanneltokenasync" /><code>{"Task<string> GetJoinChannelTokenAsync(int serverIdentifier)"}</code> | Gets a token to join a server's voice channel. |
+| <Link id="m-getlogintokenasync" /><code>{"Task<string> GetLoginTokenAsync()"}</code> | Gets a token to log in to voice chat. |
 
 ## Used in
 

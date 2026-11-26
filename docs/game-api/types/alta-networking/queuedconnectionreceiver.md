@@ -34,9 +34,9 @@ A connection receiver that can hold packets back and process them later, so inco
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-incomingqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> incomingQueue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-incomingqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/pooleddataqueueitem">{"PooledDataQueueItem"}</Link>{"> incomingQueue"}</code> | Packets (or the unprocessed rest of them) waiting to be handled by `ProcessExistingQueues`. |
 
 </details>
 
@@ -66,9 +66,9 @@ A connection receiver that can hold packets back and process them later, so inco
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-queuepacketdata" /><code>{"private void QueuePacketData(ArraySegment<byte> data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-queuepacketdata" /><code>{"private void QueuePacketData(ArraySegment<byte> data)"}</code> | Wraps packet data in a pooled item and adds it to `incomingQueue`. |
 
 </details>
 

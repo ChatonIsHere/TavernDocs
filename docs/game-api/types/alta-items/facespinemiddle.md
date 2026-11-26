@@ -1,6 +1,6 @@
 ---
 title: "FaceSpineMiddle"
-description: "class FaceSpineMiddle in Root.Township."
+description: "A book flair asset for the middle of a cover next to the spine, used as the front or back middle in SpineFaceFlairs."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceSpineMiddle
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the middle of a cover next to the spine, used as the front or back middle in `SpineFaceFlairs`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

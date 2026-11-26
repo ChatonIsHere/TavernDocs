@@ -34,15 +34,15 @@ One network traffic counter for the profiler. Reads a running total from a funct
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> |
-| <Link id="m-getvaluefunction" /><code>{"private Func<int> getValueFunction"}</code> |
-| <Link id="m-oldbytevalue" /><code>{"private int oldByteValue"}</code> |
-| <Link id="m-startvalue" /><code>{"private int startValue"}</code> |
-| <Link id="m-statistictype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType"}</code> |
-| <Link id="m-value" /><code>{"private int value"}</code> |
-| <Link id="m-valueperlastsecond" /><code>{"private float valuePerLastSecond"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentvalue" /><code>{"private int currentValue"}</code> | The raw counter value read from `getValueFunction` on the last `UpdateValue`. |
+| <Link id="m-getvaluefunction" /><code>{"private Func<int> getValueFunction"}</code> | The function that reads the underlying transport counter, passed to the constructor. |
+| <Link id="m-oldbytevalue" /><code>{"private int oldByteValue"}</code> | `Value` at the last `UpdateValuePerLastSecond` call, used to work out the per-second change. |
+| <Link id="m-startvalue" /><code>{"private int startValue"}</code> | The raw counter value when totals were last reset; `Value` counts up from here. |
+| <Link id="m-statistictype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType"}</code> | What the counter measures (bytes by default), shown in the inspector. |
+| <Link id="m-value" /><code>{"private int value"}</code> | Backing field for `Value`: the counter's change since the last reset. |
+| <Link id="m-valueperlastsecond" /><code>{"private float valuePerLastSecond"}</code> | Backing field for `ValuePerLastSecond`: how much `Value` grew between the last two per-second updates. |
 
 </details>
 

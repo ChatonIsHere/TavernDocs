@@ -1,6 +1,6 @@
 ---
 title: "ProgressiveHandler"
-description: "class ProgressiveHandler in Root.Township."
+description: "Empty marker type."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProgressiveHandler
 
 A **class** in `Root.Township`, `Alta.Console`.
+
+Empty marker type. A console command whose first parameter is a `ProgressiveHandler` is flagged as progressive; it must be the first parameter or registration throws.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 

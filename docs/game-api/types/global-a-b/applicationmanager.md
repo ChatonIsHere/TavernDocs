@@ -35,16 +35,16 @@ Singleton that handles app start, pause, reload and shutdown, and tells you whet
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hasquit" /><code>{"private static bool hasQuit"}</code> |
-| <Link id="m-iscleaning" /><code>{"private static bool isCleaning"}</code> |
-| <Link id="m-isheadless" /><code>{"private static bool isHeadless"}</code> |
-| <Link id="m-isquit" /><code>{"private static bool isQuit"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-needstocache" /><code>{"private static bool needsToCache"}</code> |
-| <Link id="m-serverhostcontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/iserverhostcontroller">{"IServerHostController"}</Link>{" serverHostController"}</code> |
-| <Link id="m-shutdownreason" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/shutdownreason">{"ShutdownReason"}</Link>{" shutdownReason"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasquit" /><code>{"private static bool hasQuit"}</code> | True once `OnApplicationQuit` has run, so it only runs once. |
+| <Link id="m-iscleaning" /><code>{"private static bool isCleaning"}</code> | True while `CleanMemory` is running, so calls don't overlap. |
+| <Link id="m-isheadless" /><code>{"private static bool isHeadless"}</code> | Cached result of `IsHeadless`. |
+| <Link id="m-isquit" /><code>{"private static bool isQuit"}</code> | True once `Update` has triggered the quit after an external shutdown request. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-needstocache" /><code>{"private static bool needsToCache"}</code> | True until `IsHeadless` has checked the command line for `-batchmode` or `-nographics`. |
+| <Link id="m-serverhostcontroller" /><code>{"private "}<Link to="/game-api/types/global-i-l/iserverhostcontroller">{"IServerHostController"}</Link>{" serverHostController"}</code> | Injected `IServerHostController`. Set by `Inject` but not used in this file. |
+| <Link id="m-shutdownreason" /><code>{"private static "}<Link to="/game-api/types/assembly-api-models/shutdownreason">{"ShutdownReason"}</Link>{" shutdownReason"}</code> | Reason passed to `ExternalOnApplicationQuit`, given to `GameModeManager.StopCurrentModeAsync` on quit. |
 
 </details>
 
@@ -79,12 +79,12 @@ Singleton that handles app start, pause, reload and shutdown, and tells you whet
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-loggameinfo" /><code>{"private static void LogGameInfo()"}</code> |
-| <Link id="m-onapplicationpause" /><code>{"private void OnApplicationPause(bool isPaused)"}</code> |
-| <Link id="m-setup" /><code>{"private static void Setup()"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loggameinfo" /><code>{"private static void LogGameInfo()"}</code> | Logs the build version, player mode, filtered command line and system stats at startup. |
+| <Link id="m-onapplicationpause" /><code>{"private void OnApplicationPause(bool isPaused)"}</code> | Unity callback: sets `IsApplicationPaused` and raises `ApplicationPaused`. |
+| <Link id="m-setup" /><code>{"private static void Setup()"}</code> | Turns on run-in-background and sets the target frame rate to 90. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Clears `IsReloading`, applies `Setup` and logs game info. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Runs `OnApplicationQuit` once after `ExternalOnApplicationQuit` has set `IsQuitting`. |
 
 </details>

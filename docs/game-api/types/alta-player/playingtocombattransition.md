@@ -1,6 +1,6 @@
 ---
 title: "PlayingToCombatTransition"
-description: "class PlayingToCombatTransition in Root.Township."
+description: "Moves a player from Playing to Combat when they take a tool hit within range or cause combat."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayingToCombatTransition
 
 A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
+
+Moves a player from Playing to Combat when they take a tool hit within range or cause combat. All logic is in `ToCombatTransition`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`ToCombatTransition<PlayingState>`](/game-api/types/alta-player/tocombattransition-tfrom)

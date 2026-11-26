@@ -1,6 +1,6 @@
 ---
 title: "QueryMeta"
-description: "class QueryMeta in Alta.Api.DataTransferModels."
+description: "Paging info for a list response from the API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Paging info for a list response from the API.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-hasmoreresults" /><code>{"bool HasMoreResults { get; }"}</code> |
-| <Link id="m-offset" /><code>{"int Offset { get; }"}</code> |
-| <Link id="m-results" /><code>{"int Results { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasmoreresults" /><code>{"bool HasMoreResults { get; }"}</code> | True if more results are available after this page. |
+| <Link id="m-offset" /><code>{"int Offset { get; }"}</code> | Offset of the first result in this page. |
+| <Link id="m-results" /><code>{"int Results { get; set; }"}</code> | Number of results (`count` in JSON). |
 
 ## Used in
 

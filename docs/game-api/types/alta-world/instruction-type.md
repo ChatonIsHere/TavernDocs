@@ -1,6 +1,6 @@
 ---
 title: "Instruction.Type"
-description: "enum Instruction.Type in Root.Township."
+description: "Kind of static world build instruction (Spawn, Spline, ForestGCore, RiverGCore)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Instruction.Type
 
 An **enum** in `Root.Township`, `Alta.Static`.
+
+Kind of static world build instruction (Spawn, Spline, ForestGCore, RiverGCore). `Instruction` maps each to the class that creates and runs it.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`Instruction`](/game-api/types/alta-world/instruction)

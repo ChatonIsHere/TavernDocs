@@ -27,11 +27,11 @@ An outgoing packet buffer that several messages are written into, each with a 2-
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-data" /><code>{"private readonly byte[] data"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-size" /><code>{"private readonly ushort[] size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code>{"private readonly byte[] data"}</code> | The packet's byte buffer. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for misuse and send errors. |
+| <Link id="m-size" /><code>{"private readonly ushort[] size"}</code> | One-element buffer used to copy each message's 2-byte length into the packet. |
 
 </details>
 
@@ -46,9 +46,9 @@ An outgoing packet buffer that several messages are written into, each with a 2-
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-byteoffset" /><code>{"private static int ByteOffset { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-byteoffset" /><code>{"private static int ByteOffset { get; }"}</code> | The transport's reserved bytes at the start of the buffer; writing starts after them. |
 
 </details>
 

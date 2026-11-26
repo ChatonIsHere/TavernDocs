@@ -27,10 +27,10 @@ One character and its 3D mesh, used by `TextFont` for letters and digits.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-letter" /><code>{"private char letter"}</code> |
-| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-letter" /><code>{"private char letter"}</code> | Backing field for `Letter`, the character this mesh draws. |
+| <Link id="m-mesh" /><code>{"private Mesh mesh"}</code> | Backing field for `Mesh`, the 3D mesh for that character. |
 
 </details>
 

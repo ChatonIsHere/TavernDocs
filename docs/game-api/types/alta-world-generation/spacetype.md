@@ -1,6 +1,6 @@
 ---
 title: "SpaceType"
-description: "enum SpaceType in Root.Township."
+description: "Flags for the kind of space a forest node is in: normal, dense or open."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpaceType
 
 An **enum** in `Root.Township`, `Alta.Forests`.
+
+Flags for the kind of space a forest node is in: normal, dense or open. Forest fill only places objects at open nodes or at points outside every node's radius.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 

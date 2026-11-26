@@ -34,14 +34,14 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> |
-| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-networkscene" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene"}</code> |
-| <Link id="m-serializeframeindex" /><code>{"private int serializeFrameIndex"}</code> |
-| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> | Reused list of the connections to send to this pass. |
+| <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> | Where the serialized entities come from. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-networkscene" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene"}</code> | The scene being serialized. |
+| <Link id="m-serializeframeindex" /><code>{"private int serializeFrameIndex"}</code> | Counter that staggers which entities get an on frame. |
+| <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> | Stopwatch for the serialization timing stats. |
 
 </details>
 
@@ -64,9 +64,9 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-updateentitydata" /><code>{"private void UpdateEntityData(IEnumerable<"}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{"> serializers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updateentitydata" /><code>{"private void UpdateEntityData(IEnumerable<"}<Link to="/game-api/types/alta-networking/entityserializer">{"EntitySerializer"}</Link>{"> serializers)"}</code> | Runs each entity serializer's `SerializeData`, with three passes in four counted as off frames so idle entities update less often. |
 
 </details>
 

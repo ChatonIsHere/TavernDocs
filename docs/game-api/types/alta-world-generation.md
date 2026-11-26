@@ -35,8 +35,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CaveTeleporterData`](/game-api/types/alta-world-generation/caveteleporterdata) | class | `NewSaveData<CaveTeleporter, CaveTeleporterData>` | 1 |  |
 | [`CaveTeleporterManager`](/game-api/types/alta-world-generation/caveteleportermanager) | class | `NetworkEntityBehaviour`, `ISavable<CaveTeleporterManagerData>`, `ISavableSave<CaveTeleporterManagerData>`, +1 more | 12 | [Caves](../world/caves.md) |
 | [`CaveTeleporterManagerData`](/game-api/types/alta-world-generation/caveteleportermanagerdata) | class | `NewSaveData<CaveTeleporterManager, CaveTeleporterManagerData>` | 1 |  |
-| [`CaveTeleporterPip`](/game-api/types/alta-world-generation/caveteleporterpip) | class | `MonoBehaviour` | 2 |  |
-| [`CaveTeleporterProxy`](/game-api/types/alta-world-generation/caveteleporterproxy) | class |  | 8 |  |
+| [`CaveTeleporterPip`](/game-api/types/alta-world-generation/caveteleporterpip) | class | `MonoBehaviour` | 2 | Client visual for one cave layer in the cave teleporter's level selector: shows whether the target layer is known and fuelled, and fades in when selected. Spawned by `LevelSelector`. |
+| [`CaveTeleporterProxy`](/game-api/types/alta-world-generation/caveteleporterproxy) | class |  | 8 | Stands in for one layer's cave teleporter in `CaveTeleporterManager`, holding its fuel and arrival position even while the real teleporter isn't loaded. Fuel changes go to the real teleporter when one is registered. |
 | [`CaveTeleporterProxyData`](/game-api/types/alta-world-generation/caveteleporterproxydata) | class |  | 4 | Light record of one cave teleporter: its cave layer, position and fuel. Used by `CaveTeleportConnection` and `CaveTeleporterManager`. |
 | [`CaveTeleportSettings`](/game-api/types/alta-world-generation/caveteleportsettings) | class | `GlobalSettings<CaveTeleportSettings>` | 10 | [Caves](../world/caves.md) |
 | [`ChunkThread`](/game-api/types/alta-world-generation/chunkthread) | class |  | 5 | [Caves](../world/caves.md) |
@@ -53,7 +53,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Element.Create`](/game-api/types/alta-world-generation/element-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.ScriptableObject<Element>` | 0 |  |
 | [`Element.SerializedVariable`](/game-api/types/alta-world-generation/element-serializedvariable) | class |  | 2 |  |
 | [`ElementDoubleValue`](/game-api/types/alta-world-generation/elementdoublevalue) | class | `DoubleValue<Element>` | 0 |  |
-| [`ElementSingleValue`](/game-api/types/alta-world-generation/elementsinglevalue) | class | `SingleValue<Element>` | 0 |  |
+| [`ElementSingleValue`](/game-api/types/alta-world-generation/elementsinglevalue) | class | `SingleValue<Element>` | 0 | Serializable single value of an `Element`, used for the element list on a `Biome`. |
 | [`EveryXLayersConstrain`](/game-api/types/alta-world-generation/everyxlayersconstrain) | class | `SpawnConstrain` | 1 |  |
 | [`GameObjectDistribution`](/game-api/types/alta-world-generation/gameobjectdistribution) | class | `Distribution<GameObjectDistribution, GameObject, GameObjectDistribution.Item, GameObjectDistribution.FestivityGroup>` | 1 | A weighted distribution of GameObjects used by cave generation, with festivity groups. A `Distribution` asset. |
 | [`GameObjectDistribution.Create`](/game-api/types/alta-world-generation/gameobjectdistribution-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<GameObjectDistribution>` | 0 |  |
@@ -65,10 +65,10 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`GeneratingBiome`](/game-api/types/alta-world-generation/generatingbiome) | class |  | 3 |  |
 | [`GeneratingBiome.Range`](/game-api/types/alta-world-generation/generatingbiome-range) | class |  | 4 |  |
 | [`GenerationBase`](/game-api/types/alta-world-generation/generationbase) | class | `NetworkEntityBehaviour`, `IGenerator` | 26 | Generates one procedural cave layer from a seed: splits it into map chunks and runs each generation plugin on them, spread over frames. The server picks the seed and sends it so clients build the same cave. |
-| [`GenerationStage`](/game-api/types/alta-world-generation/generationstage) | enum |  | 9 |  |
+| [`GenerationStage`](/game-api/types/alta-world-generation/generationstage) | enum |  | 9 | Order of cave generation stages, from floor and roof through voxels and marching cubes to static, dynamic and aesthetic dressing. Each cave `Plugin` has one. |
 | [`IBiomeValues`](/game-api/types/alta-world-generation/ibiomevalues) | interface |  | 3 |  |
 | [`IDistribution<out T>`](/game-api/types/alta-world-generation/idistribution-outt) | interface |  | 2 |  |
-| [`IDistributionItem<out T>`](/game-api/types/alta-world-generation/idistributionitem-outt) | interface |  | 2 |  |
+| [`IDistributionItem<out T>`](/game-api/types/alta-world-generation/idistributionitem-outt) | interface |  | 2 | One weighted entry in a cave `Distribution`. |
 | [`IDistributionValue`](/game-api/types/alta-world-generation/idistributionvalue) | interface |  | 1 |  |
 | [`IGenerator`](/game-api/types/alta-world-generation/igenerator) | interface |  | 15 | What a cave layer's generator exposes to its plugins while building the layer: seed, noise, entrance, chunk size and the plugin list. `GenerationBase` implements it. |
 | [`LevelSelectCaveTeleporter`](/game-api/types/alta-world-generation/levelselectcaveteleporter) | class | `CaveTeleporter` | 3 | [Caves](../world/caves.md) |
@@ -76,30 +76,30 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MapChunk`](/game-api/types/alta-world-generation/mapchunk) | class | `MonoBehaviour` | 15 | [Caves](../world/caves.md) |
 | [`MapChunkDisplay`](/game-api/types/alta-world-generation/mapchunkdisplay) | abstract class | `MonoBehaviour` | 4 | Base for a component that draws one cave generation plugin's output in one map chunk. Subclasses implement `Initialize` and the `Render` coroutine. |
 | [`MapChunkLayer`](/game-api/types/alta-world-generation/mapchunklayer) | class | `IDisposable` | 12 | [Caves](../world/caves.md) |
-| [`MapChunkLayer.Value`](/game-api/types/alta-world-generation/mapchunklayer-value) | struct |  | 4 |  |
+| [`MapChunkLayer.Value`](/game-api/types/alta-world-generation/mapchunklayer-value) | struct |  | 4 | One non-zero cell of a cave map chunk layer, with its coordinates. Made by `MapChunkLayer.CreateAllNonZeroList`. |
 | [`MarchingCubesChunkDisplay`](/game-api/types/alta-world-generation/marchingcubeschunkdisplay) | class | `MapChunkDisplay` | 2 |  |
 | [`MarchingCubesPlugin`](/game-api/types/alta-world-generation/marchingcubesplugin) | class | `Plugin` | 2 |  |
 | [`MarchingCubesPlugin.Create`](/game-api/types/alta-world-generation/marchingcubesplugin-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Plugins.ScriptableObject<MarchingCubesPlugin>` | 0 |  |
-| [`MarchingCubesPlugin.GeneratedMesh`](/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh) | class |  | 3 |  |
+| [`MarchingCubesPlugin.GeneratedMesh`](/game-api/types/alta-world-generation/marchingcubesplugin-generatedmesh) | class |  | 3 | Mesh made by the marching cubes plugin for one map chunk. Holds either an existing mesh or raw vertices and indices to build one from later. |
 | [`Plugin`](/game-api/types/alta-world-generation/plugin) | class | `GeneralValue` | 13 | [Caves](../world/caves.md) |
 | [`PluginInstance`](/game-api/types/alta-world-generation/plugininstance) | class |  | 9 | [Caves](../world/caves.md) |
-| [`PluginList`](/game-api/types/alta-world-generation/pluginlist) | class | `ScriptableObject` | 1 |  |
+| [`PluginList`](/game-api/types/alta-world-generation/pluginlist) | class | `ScriptableObject` | 1 | Asset listing the cave generation plugins to run. `GenerationBase` makes an instance of each in order. |
 | [`PluginList.Create`](/game-api/types/alta-world-generation/pluginlist-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.ScriptableObject<PluginList>` | 0 |  |
 | [`PregeneratedCave`](/game-api/types/alta-world-generation/pregeneratedcave) | class | `ScriptableObject` | 3 | [Caves](../world/caves.md): Fixed layers in an asset. |
-| [`PregeneratedCave.Layer`](/game-api/types/alta-world-generation/pregeneratedcave-layer) | class |  | 1 |  |
+| [`PregeneratedCave.Layer`](/game-api/types/alta-world-generation/pregeneratedcave-layer) | class |  | 1 | One layer of a pregenerated cave asset: its baked mesh. |
 | [`RoomFixPlugin`](/game-api/types/alta-world-generation/roomfixplugin) | class | `Plugin` | 15 | Cave generation plugin that lines the cave up so its biggest room sits behind the entrance, places the exit near the second biggest room, and shapes the hole between cave layers. |
 | [`RoomFixPlugin.Create`](/game-api/types/alta-world-generation/roomfixplugin-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Plugins.ScriptableObject<RoomFixPlugin>` | 0 |  |
-| [`RoomFixPlugin.Tunnel`](/game-api/types/alta-world-generation/roomfixplugin-tunnel) | class |  | 6 |  |
+| [`RoomFixPlugin.Tunnel`](/game-api/types/alta-world-generation/roomfixplugin-tunnel) | class |  | 6 | Settings for a tunnel in a `RoomFixPlugin`: operation, start and end, radius and value curves. Nothing reads them in this build. |
 | [`RoomFixPluginInstance`](/game-api/types/alta-world-generation/roomfixplugininstance) | class | `PluginInstance` | 3 |  |
-| [`Section`](/game-api/types/alta-world-generation/section) | class | `GeneralValue` | 3 |  |
+| [`Section`](/game-api/types/alta-world-generation/section) | class | `GeneralValue` | 3 | Cave generation asset for a run of layers: how many layers, which biomes they can be and how attributes change through them. |
 | [`Section.Create`](/game-api/types/alta-world-generation/section-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.ScriptableObject<Section>` | 0 |  |
-| [`SerializedGeneratedBiome`](/game-api/types/alta-world-generation/serializedgeneratedbiome) | class |  | 1 |  |
+| [`SerializedGeneratedBiome`](/game-api/types/alta-world-generation/serializedgeneratedbiome) | class |  | 1 | Saved description of a blended biome: two biomes, how far between them and a seed. Used by chunk environments and biome presets. |
 | [`SpawnConstrain`](/game-api/types/alta-world-generation/spawnconstrain) | abstract class | `ScriptableObject` | 1 |  |
 | [`StreamingSettings`](/game-api/types/alta-world-generation/streamingsettings) | class | `CaveSettings<StreamingSettings>` | 10 | [Caves](../world/caves.md) |
 | [`StreamingSettings.Create`](/game-api/types/alta-world-generation/streamingsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Settings.ScriptableObject<StreamingSettings>` | 0 |  |
-| [`StreamingSettings.SpecialLayer`](/game-api/types/alta-world-generation/streamingsettings-speciallayer) | class |  | 2 |  |
-| [`TeleportCostStructure`](/game-api/types/alta-world-generation/teleportcoststructure) | class | `ScriptableObject` | 1 |  |
-| [`TeleportEffectArgument`](/game-api/types/alta-world-generation/teleporteffectargument) | struct |  | 4 |  |
+| [`StreamingSettings.SpecialLayer`](/game-api/types/alta-world-generation/streamingsettings-speciallayer) | class |  | 2 | A cave layer that uses its own streamer prefab instead of the default cave streamer. |
+| [`TeleportCostStructure`](/game-api/types/alta-world-generation/teleportcoststructure) | class | `ScriptableObject` | 1 | Asset with the fuel cost formula for one kind of cave teleport (from the surface, to the surface or within caves). Picked by `CaveTeleportSettings.CalculateCost`. |
+| [`TeleportEffectArgument`](/game-api/types/alta-world-generation/teleporteffectargument) | struct |  | 4 | What the server sends to the chunk when a player uses a cave teleporter, so clients play the depart or arrive effect. |
 
 ## Alta.Caves.Displays
 
@@ -170,7 +170,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CutoutPathEdgeFill`](/game-api/types/alta-world-generation/cutoutpathedgefill) | class | `ForestFillCore` | 0 | [Forest](../world/forest.md) |
 | [`CutoutPathModifier`](/game-api/types/alta-world-generation/cutoutpathmodifier) | class | `NodeMapModifier`, `ITerrainModifier` | 4 |  |
 | [`Edge`](/game-api/types/alta-world-generation/edge) | class |  | 14 | [Forest](../world/forest.md) |
-| [`EdgeType`](/game-api/types/alta-world-generation/edgetype) | enum |  | 3 |  |
+| [`EdgeType`](/game-api/types/alta-world-generation/edgetype) | enum |  | 3 | Flags for a forest graph edge: a normal path, a land bridge or a water bridge. Used by forest generation and path cutting. |
 | [`FillSet`](/game-api/types/alta-world-generation/fillset) | abstract class | `ScriptableObject`, `IFillSet` | 3 |  |
 | [`ForestAttributeEvaluator`](/game-api/types/alta-world-generation/forestattributeevaluator) | class | `NodeMapModifier` | 1 |  |
 | [`ForestBridges`](/game-api/types/alta-world-generation/forestbridges) | class | `MonoBehaviour`, `IForestGeneration` | 2 | [Forest](../world/forest.md) |
@@ -182,12 +182,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ForestFill`](/game-api/types/alta-world-generation/forestfill) | class | `ForestFillCore` | 0 | [Forest](../world/forest.md) |
 | [`ForestFillCore`](/game-api/types/alta-world-generation/forestfillcore) | abstract class | `MonoBehaviour`, `IForestGeneration` | 8 | Base for a forest fill step that places static environment pieces (trees, rocks) in a location chunk during world generation. Subclasses do the placing in `GenerateInternal`. |
 | [`ForestFillCore.Setup`](/game-api/types/alta-world-generation/forestfillcore-setup) | class |  | 4 | Per-row state handed to forest fill code: the forest layout, a seeded random and the spawn modifiers in use. |
-| [`ForestFillSet`](/game-api/types/alta-world-generation/forestfillset) | class | `FillSet` | 1 |  |
+| [`ForestFillSet`](/game-api/types/alta-world-generation/forestfillset) | class | `FillSet` | 1 | A fill set asset for forest generation with its own spawn modifiers. |
 | [`ForestFillSet.Create`](/game-api/types/alta-world-generation/forestfillset-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<ForestFillSet>` | 0 |  |
 | [`ForestGCoreInstruction`](/game-api/types/alta-world-generation/forestgcoreinstruction) | class | `Instruction` | 7 | [Forest](../world/forest.md) |
 | [`ForestGeneration`](/game-api/types/alta-world-generation/forestgeneration) | class | `ICacheable` | 42 | [Forest](../world/forest.md#forestgeneration): `Alta.Forests.ForestGeneration`, the layout. It's an `ICacheable`, so it's stored in the cache. |
 | [`ForestGenerator`](/game-api/types/alta-world-generation/forestgenerator) | class | `NetworkEntityBehaviour`, `ISavable<ForestGeneratorSaveData>`, `ISavableSave<ForestGeneratorSaveData>`, +1 more | 23 | [Forest](../world/forest.md#forestgenerator), [Arguments and results](../console-and-utilities/arguments-and-results.md): `Alta.Forests.ForestGenerator`, a `NetworkEntityBehaviour` placed in the scene. One per forest; `ForestGenerator.All` lists them. |
-| [`ForestGenerator.NearestInfo`](/game-api/types/alta-world-generation/forestgenerator-nearestinfo) | struct |  | 3 |  |
+| [`ForestGenerator.NearestInfo`](/game-api/types/alta-world-generation/forestgenerator-nearestinfo) | struct |  | 3 | Scratch arrays for forest generation: the nearest path edges to a point, with distance and progress along each. Pooled by `ForestGenerator`. |
 | [`ForestGeneratorSaveData`](/game-api/types/alta-world-generation/forestgeneratorsavedata) | class | `NewSaveData<ForestGenerator, ForestGeneratorSaveData>` | 1 |  |
 | [`ForestPathAttributeLerper`](/game-api/types/alta-world-generation/forestpathattributelerper) | class | `NodeMapModifier` | 1 |  |
 | [`ForestPopulationArea`](/game-api/types/alta-world-generation/forestpopulationarea) | class | `NetworkEntityBehaviour`, `IPointNormalEvaluator` | 1 | [Forest](../world/forest.md) |
@@ -228,7 +228,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RiverPath`](/game-api/types/alta-world-generation/riverpath) | class | `Path<RiverNode, RiverPath>` | 16 | A river segment between two `RiverNode`s in the forest generator, with its spline mesh, any waterfall and its neighbouring segments at each end. |
 | [`RiverPathType`](/game-api/types/alta-world-generation/riverpathtype) | enum |  | 3 |  |
 | [`Space`](/game-api/types/alta-world-generation/space) | class |  | 11 | [Forest](../world/forest.md) |
-| [`SpaceType`](/game-api/types/alta-world-generation/spacetype) | enum |  | 3 |  |
+| [`SpaceType`](/game-api/types/alta-world-generation/spacetype) | enum |  | 3 | Flags for the kind of space a forest node is in: normal, dense or open. Forest fill only places objects at open nodes or at points outside every node's radius. |
 | [`SpawnModifiers`](/game-api/types/alta-world-generation/spawnmodifiers) | class |  | 5 | Lists of modifiers that forest fill runs on a spawn candidate at each stage (point, point with normal, spawn parameters, spawned entity). Each can adjust the candidate and lower its score. |
 | [`SpawnParameters`](/game-api/types/alta-world-generation/spawnparameters) | struct |  | 7 | Where and what to spawn during forest generation. The constructor fills the spawn data with location attributes: elevation, slope, distance from path and from the forest border. |
 | [`SplatData`](/game-api/types/alta-world-generation/splatdata) | struct |  | 11 | Terrain texture blend for one point: two layer indices and how far to blend from the first to the second. Stored in a colour (red, green, blue). |
@@ -246,7 +246,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`Category`](/game-api/types/alta-world-generation/category) | class | `GeneralValue` | 2 |  |
 | [`Category.Create`](/game-api/types/alta-world-generation/category-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<Category>` | 0 |  |
-| [`DebugPackage`](/game-api/types/alta-world-generation/debugpackage) | class | `ScriptableObject` | 1 |  |
+| [`DebugPackage`](/game-api/types/alta-world-generation/debugpackage) | class | `ScriptableObject` | 1 | A named set of prefabs and quantities that the server spawns with `PackageManager.DropPackage`, in front of a player or at the spawn point. Loaded from `Resources/Items/Packages/`, looked up by lowercase name without spaces. |
 | [`DebugPackage.Create`](/game-api/types/alta-world-generation/debugpackage-create) | class | `AltaMenuItemBase.Assets.Create.Township.Debug.ScriptableObject<DebugPackage>` | 0 |  |
 | [`DebugPackage.PrefabQuantity`](/game-api/types/alta-world-generation/debugpackage-prefabquantity) | class |  | 4 |  |
 | [`DebugPackageManager`](/game-api/types/alta-world-generation/debugpackagemanager) | class | `MonoBehaviour` | 0 |  |
@@ -263,11 +263,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LootTable`](/game-api/types/alta-world-generation/loottable) | class | `GeneralValue` | 3 | A loot table asset: item entries grouped by rarity, with extra entries for festivals. `GetLoot` rolls an item for a dock. |
 | [`LootTable.Create`](/game-api/types/alta-world-generation/loottable-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<LootTable>` | 0 |  |
 | [`LootTable.Entry`](/game-api/types/alta-world-generation/loottable-entry) | class |  | 4 | One item in a loot table with a count range. |
-| [`LootTable.FestivityList`](/game-api/types/alta-world-generation/loottable-festivitylist) | class |  | 2 |  |
-| [`LootTable.RarityList`](/game-api/types/alta-world-generation/loottable-raritylist) | class |  | 3 |  |
-| [`Origin`](/game-api/types/alta-world-generation/origin) | class | `GeneralValue` | 2 |  |
+| [`LootTable.FestivityList`](/game-api/types/alta-world-generation/loottable-festivitylist) | class |  | 2 | Loot entries in a `RarityList` that apply for one festivity (a seasonal event). Set in the loot table asset. |
+| [`LootTable.RarityList`](/game-api/types/alta-world-generation/loottable-raritylist) | class |  | 3 | The loot entries a `LootTable` offers for one rarity, plus extra lists per festivity. Set in the loot table asset. |
+| [`Origin`](/game-api/types/alta-world-generation/origin) | class | `GeneralValue` | 2 | Loot origin asset: which loot tables an item of a given rarity can come from. Rarities pick an origin at random by weight, then the origin lists the possible items. |
 | [`Origin.Create`](/game-api/types/alta-world-generation/origin-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<Origin>` | 0 |  |
-| [`OriginSingleValue`](/game-api/types/alta-world-generation/originsinglevalue) | class | `SingleValue<Origin>` | 2 |  |
+| [`OriginSingleValue`](/game-api/types/alta-world-generation/originsinglevalue) | class | `SingleValue<Origin>` | 2 | A serializable pair of a loot `Origin` and a float value, the `SingleValue` form used for weighting origins in loot assets. |
 | [`PackageManager`](/game-api/types/alta-world-generation/packagemanager) | static class |  | 2 |  |
 | [`PresetLootModule`](/game-api/types/alta-world-generation/presetlootmodule) | class | `NetworkEntityBehaviour`, `ISavable<PresetLootModuleSaveData>`, `ISavableSave<PresetLootModuleSaveData>`, +1 more | 2 |  |
 | [`PresetLootModuleSaveData`](/game-api/types/alta-world-generation/presetlootmodulesavedata) | class | `NewSaveData<PresetLootModule, PresetLootModuleSaveData>` | 2 |  |
@@ -286,25 +286,25 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`BuildingRooms.NodeRange`](/game-api/types/alta-world-generation/buildingrooms-noderange) | class |  | 3 |  |
 | [`Constructor`](/game-api/types/alta-world-generation/constructor) | class |  | 4 |  |
 | [`Decay`](/game-api/types/alta-world-generation/decay) | class | `GenerationStep` | 1 |  |
-| [`GenerationBase`](/game-api/types/alta-world-generation/generationbase-alta-pagac) | class | `MonoBehaviour` | 6 |  |
-| [`GenerationRule`](/game-api/types/alta-world-generation/generationrule) | class | `RuleBase`, `ISerializationCallbackReceiver` | 5 |  |
+| [`GenerationBase`](/game-api/types/alta-world-generation/generationbase-alta-pagac) | class | `MonoBehaviour` | 6 | Editor test component for the PAGaC grid generator: runs the generation steps on its children and builds the result from an option set. |
+| [`GenerationRule`](/game-api/types/alta-world-generation/generationrule) | class | `RuleBase`, `ISerializationCallbackReceiver` | 5 | A PAGaC rule asset that, where its pattern matches, edits the tag grid with a list of steps (set, remove or clear tags per cell). Used by the generation `Constructor`. |
 | [`GenerationRule.Create`](/game-api/types/alta-world-generation/generationrule-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.PAGaC.ScriptableObject<GenerationRule>` | 0 |  |
-| [`GenerationRule.Step`](/game-api/types/alta-world-generation/generationrule-step) | enum |  | 3 |  |
+| [`GenerationRule.Step`](/game-api/types/alta-world-generation/generationrule-step) | enum |  | 3 | What a `GenerationRule` step does to each cell: set it to a tag, remove listed tags, or clear it. |
 | [`GenerationStep`](/game-api/types/alta-world-generation/generationstep) | abstract class | `MonoBehaviour` | 1 |  |
 | [`Generator`](/game-api/types/alta-world-generation/generator) | class |  | 8 | A 3D grid of tagged nodes for procedural construction, all set to the air tag at first. |
-| [`LockMode`](/game-api/types/alta-world-generation/lockmode) | enum |  | 5 |  |
+| [`LockMode`](/game-api/types/alta-world-generation/lockmode) | enum |  | 5 | Setting on `OptionSet` and `RuleOptionSet` for how a random choice is locked (None, Set, Building, Region, Server). Nothing in the code reads it. |
 | [`Node`](/game-api/types/alta-world-generation/node-alta-pagac) | class |  | 6 | One cell in a PAGaC generation grid: its position and the tag it currently holds. |
 | [`NodeCollection`](/game-api/types/alta-world-generation/nodecollection) | class |  | 15 | A set of grid nodes from the PAGaC procedural generator, with a running bounding box. The bounds code has slips (max Y and Z are only updated when X grows, and recalculated maxes use the minimum), so treat the bounds as rough. |
 | [`NodeExtensions`](/game-api/types/alta-world-generation/nodeextensions) | static class |  | 1 |  |
-| [`OptionSet`](/game-api/types/alta-world-generation/optionset) | class | `GeneralValue` | 3 |  |
+| [`OptionSet`](/game-api/types/alta-world-generation/optionset) | class | `GeneralValue` | 3 | A weighted set of parts for procedural generation. Evaluating it rolls each part and nested set by its own chance. |
 | [`OptionSetChance`](/game-api/types/alta-world-generation/optionsetchance) | class |  | 2 |  |
-| [`Part`](/game-api/types/alta-world-generation/part) | class | `GeneralValue` | 5 |  |
-| [`PartChance`](/game-api/types/alta-world-generation/partchance) | class |  | 2 |  |
-| [`Rule`](/game-api/types/alta-world-generation/rule) | class | `RuleBase`, `ISerializationCallbackReceiver` | 6 |  |
-| [`Rule.RotationOverlap`](/game-api/types/alta-world-generation/rule-rotationoverlap) | enum |  | 5 |  |
+| [`Part`](/game-api/types/alta-world-generation/part) | class | `GeneralValue` | 5 | A prefab piece for the PAGaC procedural building generator, with the rule that says where it can go and its offset inside a grid cell. A ScriptableObject asset. |
+| [`PartChance`](/game-api/types/alta-world-generation/partchance) | class |  | 2 | A PAGaC part with a 0 to 1 chance of being picked, used in `RuleOptionSet` and option set lists. |
+| [`Rule`](/game-api/types/alta-world-generation/rule) | class | `RuleBase`, `ISerializationCallbackReceiver` | 6 | A PAGaC placement rule: a grid of tag lists per configuration that must match before a part goes in, plus whether it can overlap itself in other rotations. A ScriptableObject that flattens its 4D tag grid for Unity serialization. |
+| [`Rule.RotationOverlap`](/game-api/types/alta-world-generation/rule-rotationoverlap) | enum |  | 5 | Whether a rule may be placed again on cells it already used: never, only at a perpendicular rotation, only mirrored, either of those, or always. |
 | [`RuleBase`](/game-api/types/alta-world-generation/rulebase) | abstract class | `GeneralValue` | 6 | Base asset for a PAGaC (procedural generation) rule: a 3D grid of tag lists, with one grid per configuration (probably rotations or variants). |
-| [`RuleOptionSet`](/game-api/types/alta-world-generation/ruleoptionset) | class | `GeneralValue` | 4 |  |
-| [`RuleOptionSetChance`](/game-api/types/alta-world-generation/ruleoptionsetchance) | class |  | 2 |  |
+| [`RuleOptionSet`](/game-api/types/alta-world-generation/ruleoptionset) | class | `GeneralValue` | 4 | A PAGaC asset tying a rule to the parts it can place. Each part, and each nested option set, is rolled against its weight. |
+| [`RuleOptionSetChance`](/game-api/types/alta-world-generation/ruleoptionsetchance) | class |  | 2 | A nested `RuleOptionSet` with a 0 to 1 chance of being evaluated. |
 | [`Tag`](/game-api/types/alta-world-generation/tag) | class | `HashedGeneralValue<Tag>` | 1 | A tag asset for the PAGaC construction system (under `PAGaC/Construction/Tags`), with a colour for display. |
 | [`Test`](/game-api/types/alta-world-generation/test) | class | `GeneralValue`, `ISerializationCallbackReceiver` | 6 |  |
 
@@ -312,7 +312,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AttributeImpact`](/game-api/types/alta-world-generation/attributeimpact) | class |  | 1 |  |
+| [`AttributeImpact`](/game-api/types/alta-world-generation/attributeimpact) | class |  | 1 | Weights where a global population spawns by one biome attribute. `GlobalPopulationDefinition` multiplies these together per chunk. |
 | [`BasicEcosystem`](/game-api/types/alta-world-generation/basicecosystem) | class | `NetworkEntityBehaviour` | 3 | [Populations and spawners](../world/populations.md) |
 | [`BasicPopulation`](/game-api/types/alta-world-generation/basicpopulation) | class |  | 15 | [Populations and spawners](../world/populations.md) |
 | [`BasicPopulation.PopulationEventHandler`](/game-api/types/alta-world-generation/basicpopulation-populationeventhandler) | delegate |  | 0 |  |
@@ -328,7 +328,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Ecosystem`](/game-api/types/alta-world-generation/ecosystem) | class | `NetworkEntityBehaviour`, `ISpawnSystem`, `ISavable<EcosystemSaveData>`, +2 more | 7 | [Populations and spawners](../world/populations.md): A chunk's (or cave layer's) set of populations, with spawn points worked out from the ground. |
 | [`Ecosystem.PopulationApplication`](/game-api/types/alta-world-generation/ecosystem-populationapplication) | class |  | 4 |  |
 | [`EcosystemSaveData`](/game-api/types/alta-world-generation/ecosystemsavedata) | class | `NewSaveData<Ecosystem, EcosystemSaveData>` | 1 |  |
-| [`EcosystemSaveData.Entry`](/game-api/types/alta-world-generation/ecosystemsavedata-entry) | class |  | 3 |  |
+| [`EcosystemSaveData.Entry`](/game-api/types/alta-world-generation/ecosystemsavedata-entry) | class |  | 3 | Saved spawn points for one population in an ecosystem chunk. |
 | [`ElementDestroy`](/game-api/types/alta-world-generation/elementdestroy) | delegate |  | 0 |  |
 | [`FrequencyTimerDefinition`](/game-api/types/alta-world-generation/frequencytimerdefinition) | class | `PopulationTimerDefinition` | 4 | [Populations and spawners](../world/populations.md) |
 | [`GlobalPopulationDefinition`](/game-api/types/alta-world-generation/globalpopulationdefinition) | class | `HashedGeneralValue<GlobalPopulationDefinition>` | 8 | [Arguments and results](../console-and-utilities/arguments-and-results.md), [Populations and spawners](../world/populations.md) |
@@ -339,20 +339,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IPopulationFolder`](/game-api/types/alta-world-generation/ipopulationfolder) | interface |  | 8 | A saved area that holds one population: its size, density and spawn point picker. `BasicPopulationFolder` is the main implementation. |
 | [`IPopulationFolderSaveDataBase`](/game-api/types/alta-world-generation/ipopulationfoldersavedatabase) | interface |  | 6 | Saved state of one population in a chunk: its counts, next check time and spawned children. |
 | [`IPopulationItem`](/game-api/types/alta-world-generation/ipopulationitem) | interface |  | 1 |  |
-| [`IPopulationManager`](/game-api/types/alta-world-generation/ipopulationmanager) | interface |  | 1 |  |
+| [`IPopulationManager`](/game-api/types/alta-world-generation/ipopulationmanager) | interface |  | 1 | Spawns population items for a population folder. `BasicPopulationManager` implements it; a folder exposes it as `Manager`. |
 | [`IPopulationRemovalMethod`](/game-api/types/alta-world-generation/ipopulationremovalmethod) | interface |  | 1 | [Populations and spawners](../world/populations.md): A component on a spawned thing that tells its population when the thing should stop counting. |
 | [`ISpawnSystem`](/game-api/types/alta-world-generation/ispawnsystem) | interface |  | 3 | Something populations spawn through, implemented by `PopulationSpawnArea`. |
 | [`ObjectHistory`](/game-api/types/alta-world-generation/objecthistory) | class | `MonoBehaviour` | 1 |  |
 | [`ObjectHistory.ObjectTrackingSettings`](/game-api/types/alta-world-generation/objecthistory-objecttrackingsettings) | class |  | 5 |  |
 | [`PointsPopulationValue`](/game-api/types/alta-world-generation/pointspopulationvalue) | class | `PopulationSpawnInformation` | 7 |  |
-| [`PopulationAction`](/game-api/types/alta-world-generation/populationaction) | enum |  | 4 |  |
+| [`PopulationAction`](/game-api/types/alta-world-generation/populationaction) | enum |  | 4 | What happened in a population event (initialize, update, spawned, lost). Sent with population analytics records and `PopulationEventData`. |
 | [`PopulationAnalytics`](/game-api/types/alta-world-generation/populationanalytics) | static class |  | 2 | [Populations and spawners](../world/populations.md): Sends population records to analytics (Alta's API is gone). |
 | [`PopulationDefinition`](/game-api/types/alta-world-generation/populationdefinition) | class | `HashedGeneralValue<PopulationDefinition>` | 20 | [Populations and spawners](../world/populations.md#populationdefinition), [Arguments and results](../console-and-utilities/arguments-and-results.md): `Alta.Populations.PopulationDefinition`, a `HashedGeneralValue` asset. |
 | [`PopulationDefinition.Create`](/game-api/types/alta-world-generation/populationdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Creatures.ScriptableObject<PopulationDefinition>` | 0 |  |
 | [`PopulationDefinitionManager`](/game-api/types/alta-world-generation/populationdefinitionmanager) | class | `MonoBehaviour`, `ISavable<PopulationDefinitionManagerData>`, `ISavableSave<PopulationDefinitionManagerData>`, +1 more | 4 | [Populations and spawners](../world/populations.md): Saved per-definition overrides of the respawn time. |
 | [`PopulationDefinitionManagerData`](/game-api/types/alta-world-generation/populationdefinitionmanagerdata) | class | `NewSaveData<PopulationDefinitionManager, PopulationDefinitionManagerData>` | 2 |  |
-| [`PopulationDelegate`](/game-api/types/alta-world-generation/populationdelegate) | delegate |  | 0 |  |
-| [`PopulationEvent`](/game-api/types/alta-world-generation/populationevent) | class | `AltaEvent<PopulationSample, PopulationUnityEvent>` | 0 |  |
+| [`PopulationDelegate`](/game-api/types/alta-world-generation/populationdelegate) | delegate |  | 0 | Callback that gets a `PopulationSample`. |
+| [`PopulationEvent`](/game-api/types/alta-world-generation/populationevent) | class | `AltaEvent<PopulationSample, PopulationUnityEvent>` | 0 | Serializable Alta event that passes a `PopulationSample`, settable in the inspector. |
 | [`PopulationEventData`](/game-api/types/alta-world-generation/populationeventdata) | class |  | 6 | [Console events](../console-and-utilities/console-events.md) |
 | [`PopulationFolder`](/game-api/types/alta-world-generation/populationfolder) | class | `PopulationFolder<PopulationFolder, PopulationFolderSaveData>` | 0 | [Populations and spawners](../world/populations.md) |
 | [`PopulationFolder<TThis, TData>`](/game-api/types/alta-world-generation/populationfolder-tthis-tdata) | class | `PopulationFolderBase`, `ISavable<TData>`, `ISavableSave<TData>`, +1 more | 0 | [Populations and spawners](../world/populations.md) |
@@ -364,7 +364,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PopulationRaycast`](/game-api/types/alta-world-generation/populationraycast) | class | `HashedGeneralValue<PopulationRaycast>` | 1 |  |
 | [`PopulationRaycast.Create`](/game-api/types/alta-world-generation/populationraycast-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Populations.ScriptableObject<PopulationRaycast>` | 0 |  |
 | [`PopulationSample`](/game-api/types/alta-world-generation/populationsample) | class |  | 26 | [Spawning and despawning](../creatures/spawning-and-despawning.md#populationsample), [Populations and spawners](../world/populations.md#populationsample): One population of one `PopulationDefinition` in one chunk: a count, a maximum, and the entities it has spawned. |
-| [`PopulationSaveDataChild`](/game-api/types/alta-world-generation/populationsavedatachild) | class |  | 2 |  |
+| [`PopulationSaveDataChild`](/game-api/types/alta-world-generation/populationsavedatachild) | class |  | 2 | Save record linking one saved child of a population folder to the spawn point it came from. |
 | [`PopulationSetup`](/game-api/types/alta-world-generation/populationsetup) | class | `HashedGeneralValue<PopulationSetup>`, `IFillSet` | 6 | Asset defining a population: how fast it spawns and where its members may be placed. Looked up by hash; also used as a fill set when placing members. |
 | [`PopulationSetup.Create`](/game-api/types/alta-world-generation/populationsetup-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Populations.ScriptableObject<PopulationSetup>` | 0 |  |
 | [`PopulationSpawnArea`](/game-api/types/alta-world-generation/populationspawnarea) | class | `PopulationFolder<PopulationSpawnArea, PopulationSpawnAreaSaveData>`, `ISpawnSystem` | 9 | [Populations and spawners](../world/populations.md#populationspawnarea): `Alta.Populations.PopulationSpawnArea`, a `PopulationFolder` entity behaviour. |
@@ -378,7 +378,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`SimplePopulationValue`](/game-api/types/alta-world-generation/simplepopulationvalue) | class | `PopulationSpawnInformation` | 4 |  |
 | [`SpawnAreaBase`](/game-api/types/alta-world-generation/spawnareabase) | abstract class | `MonoBehaviour` | 1 | [Populations and spawners](../world/populations.md) |
 | [`SpawnAreaDisplay`](/game-api/types/alta-world-generation/spawnareadisplay) | class | `MapChunkDisplay` | 3 |  |
-| [`SpawnedElement`](/game-api/types/alta-world-generation/spawnedelement) | class |  | 4 |  |
+| [`SpawnedElement`](/game-api/types/alta-world-generation/spawnedelement) | class |  | 4 | Server: one slot of a global population in a location chunk. It picks a spot, spawns the prefab when the chunk is fully loaded, and can decay after a set time. |
 | [`SpawnPoint`](/game-api/types/alta-world-generation/spawnpoint) | class |  | 6 | [Populations and spawners](../world/populations.md): One place, with `Position`, `Rotation` and `IsFree`. |
 | [`SpawnPointsDisplay`](/game-api/types/alta-world-generation/spawnpointsdisplay) | class | `MapChunkDisplay` | 2 |  |
 | [`SpawnRate`](/game-api/types/alta-world-generation/spawnrate) | class | `GeneralValue` | 5 | [Populations and spawners](../world/populations.md) |

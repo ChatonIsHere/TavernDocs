@@ -29,12 +29,12 @@ A point in the year (month, day, hour) with no year, used for seasonal or dated 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" current"}</code> |
-| <Link id="m-day" /><code>{"private int day"}</code> |
-| <Link id="m-hour" /><code>{"private int hour"}</code> |
-| <Link id="m-month" /><code>{"private "}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-current" /><code>{"private static "}<Link to="/game-api/types/global-m-o/monthdayhour">{"MonthDayHour"}</Link>{" current"}</code> | Unused static field. The `Current` property builds a fresh value from UTC now instead. |
+| <Link id="m-day" /><code>{"private int day"}</code> | Day of the month, 1 to 32 in the inspector. |
+| <Link id="m-hour" /><code>{"private int hour"}</code> | Hour of the day, 0 to 23. |
+| <Link id="m-month" /><code>{"private "}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month"}</code> | The month. |
 
 </details>
 

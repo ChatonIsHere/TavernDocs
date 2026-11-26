@@ -1,6 +1,6 @@
 ---
 title: "ILightEmitterTemp"
-description: "interface ILightEmitterTemp in Root.Township."
+description: "Empty marker for a light emitter in the test light detector setup (TempLaser, ILightDetectorTemp)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ILightEmitterTemp
 
 An **interface** in `Root.Township`, no namespace.
+
+Empty marker for a light emitter in the test light detector setup (`TempLaser`, `ILightDetectorTemp`). Probably test or prototype code.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Derived types** [`TempLaser`](/game-api/types/global-t-x/templaser)

@@ -1,6 +1,6 @@
 ---
 title: "NailHitquality"
-description: "enum NailHitquality in Root.Township."
+description: "How well a hammer hit landed on a generic-crafting nail: Base, Bad, Good or Done."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NailHitquality
 
 An **enum** in `Root.Township`, `Alta.Crafting`.
+
+How well a hammer hit landed on a generic-crafting nail: `Base`, `Bad`, `Good` or `Done`. Picks the nail effect and is sent in `NailIdentifier`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 

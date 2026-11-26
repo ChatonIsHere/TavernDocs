@@ -1,6 +1,6 @@
 ---
 title: "LiquidFillFilter"
-description: "delegate LiquidFillFilter in Root.Township."
+description: "Handler for ILiquidContainer.AddFilter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidFillFilter
 
 A **delegate** in `Root.Township`, `Alta.Liquid`.
+
+Handler for `ILiquidContainer.AddFilter`. `CanAddTo` starts with true and any handler can set the `ref bool` to false to refuse the liquid.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

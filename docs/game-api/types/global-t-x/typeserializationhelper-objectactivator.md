@@ -1,6 +1,6 @@
 ---
 title: "TypeSerializationHelper.ObjectActivator"
-description: "delegate TypeSerializationHelper.ObjectActivator in Root.Township."
+description: "Delegate that creates a new object, compiled per type by TypeSerializationHelper.GetActivator as a fast constructor call."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TypeSerializationHelper.ObjectActivator
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate that creates a new object, compiled per type by `TypeSerializationHelper.GetActivator` as a fast constructor call.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`TypeSerializationHelper`](/game-api/types/global-t-x/typeserializationhelper)

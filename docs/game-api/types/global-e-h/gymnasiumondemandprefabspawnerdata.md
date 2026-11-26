@@ -1,6 +1,6 @@
 ---
 title: "GymnasiumOnDemandPrefabSpawnerData"
-description: "class GymnasiumOnDemandPrefabSpawnerData in Root.Township."
+description: "Save data for the feature test gymnasium's on-demand prefab spawner."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GymnasiumOnDemandPrefabSpawnerData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for the feature test gymnasium's on-demand prefab spawner.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`NewSaveData<GymnasiumOnDemandPrefabSpawner, GymnasiumOnDemandPrefabSpawnerData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,10 +27,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> |
-| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boardposition" /><code>{"Vector3 boardPosition"}</code> | Saved local position of the spawner's board. |
+| <Link id="m-prefabs" /><code>{"uint[] prefabs"}</code> | Saved list of prefab hashes the spawner makes. |
 
 ## Used in
 

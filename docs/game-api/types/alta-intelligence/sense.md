@@ -29,11 +29,11 @@ Asset for something an AI agent can measure about a target (distance, visibility
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-all" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> all"}</code> |
-| <Link id="m-oldequivalent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" oldEquivalent"}</code> |
-| <Link id="m-oldmapping" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> oldMapping"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-all" /><code>{"private static List<"}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> all"}</code> | Every sense registered by `Initialize`. Exposed as `All`. |
+| <Link id="m-oldequivalent" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{" oldEquivalent"}</code> | The legacy `SenseOld` enum value this sense replaces, or `None`. |
+| <Link id="m-oldmapping" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-intelligence/senseold">{"SenseOld"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{"> oldMapping"}</code> | Maps legacy `SenseOld` values to their sense assets, for `GetSense`. |
 
 </details>
 
@@ -56,9 +56,9 @@ Asset for something an AI agent can measure about a target (distance, visibility
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: re-registers the sense and renames the asset to match its old enum value if it has one. |
 
 </details>
 

@@ -27,19 +27,19 @@ Settings for a two-burst death dissolve effect. `DeadStateSettings.AnimationSett
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> |
-| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> |
-| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> |
-| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> |
-| <Link id="m-firstdissolvestrength" /><code>{"private float firstDissolveStrength"}</code> |
-| <Link id="m-firstramp1" /><code>{"private Texture2D firstRamp1"}</code> |
-| <Link id="m-firstramp2" /><code>{"private Texture2D firstRamp2"}</code> |
-| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> |
-| <Link id="m-seconddissolvestrength" /><code>{"private float secondDissolveStrength"}</code> |
-| <Link id="m-secondramp1" /><code>{"private Texture2D secondRamp1"}</code> |
-| <Link id="m-secondramp2" /><code>{"private Texture2D secondRamp2"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ashesmaterial" /><code>{"private Material ashesMaterial"}</code> | Material for the ashes left by the death effect. |
+| <Link id="m-deathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisual"}</code> | Pooled effect spawned for the death. |
+| <Link id="m-deathvisualgroundposition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" deathVisualGroundPosition"}</code> | Pooled effect spawned at ground level for the death. |
+| <Link id="m-defaultduration" /><code>{"private float defaultDuration"}</code> | Length of the death animation in seconds (default 3). |
+| <Link id="m-firstdissolvestrength" /><code>{"private float firstDissolveStrength"}</code> | Dissolve strength for the first burst. |
+| <Link id="m-firstramp1" /><code>{"private Texture2D firstRamp1"}</code> | First colour ramp texture of the first burst. |
+| <Link id="m-firstramp2" /><code>{"private Texture2D firstRamp2"}</code> | Second colour ramp texture of the first burst. |
+| <Link id="m-predeathvisual" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" preDeathVisual"}</code> | Pooled effect spawned before the death burst. |
+| <Link id="m-seconddissolvestrength" /><code>{"private float secondDissolveStrength"}</code> | Dissolve strength for the second burst. |
+| <Link id="m-secondramp1" /><code>{"private Texture2D secondRamp1"}</code> | First colour ramp texture of the second burst. |
+| <Link id="m-secondramp2" /><code>{"private Texture2D secondRamp2"}</code> | Second colour ramp texture of the second burst. |
 
 </details>
 

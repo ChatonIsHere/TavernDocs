@@ -1,6 +1,6 @@
 ---
 title: "BanType"
-description: "enum BanType in Alta.Api.DataTransferModels."
+description: "Scope of a ban in the web API: one server, global, or public servers (probably)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BanType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Shared`.
+
+Scope of a ban in the web API: one server, global, or public servers (probably).
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

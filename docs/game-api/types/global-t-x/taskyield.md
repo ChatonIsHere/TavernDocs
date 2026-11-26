@@ -1,6 +1,6 @@
 ---
 title: "TaskYield"
-description: "class TaskYield in Root.Township."
+description: "Lets a Unity coroutine wait for a Task: yield one and the coroutine resumes when the task finishes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TaskYield
 
 A **class** in `Root.Township`, no namespace.
+
+Lets a Unity coroutine wait for a `Task`: yield one and the coroutine resumes when the task finishes.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** `CustomYieldInstruction`
@@ -23,7 +25,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> |
-| <Link id="m-task" /><code>{"Task Task { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-keepwaiting" /><code>{"override bool keepWaiting { get; }"}</code> | True until the task completes. Rethrows the task's exception if it failed. |
+| <Link id="m-task" /><code>{"Task Task { get; set; }"}</code> | The task being waited on. |

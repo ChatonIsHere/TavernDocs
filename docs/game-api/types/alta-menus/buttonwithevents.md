@@ -30,12 +30,12 @@ A menu `Button` that also fires Unity events set in the inspector when pressed, 
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> |
-| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> |
-| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> |
-| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable" /><code>{"private UnityEvent onDisable"}</code> | Inspector event invoked when the button becomes disabled. |
+| <Link id="m-onenable" /><code>{"private UnityEvent onEnable"}</code> | Inspector event invoked when the button becomes enabled. |
+| <Link id="m-onpress" /><code>{"private UnityEvent onPress"}</code> | Inspector event invoked when the button is pressed. |
+| <Link id="m-onrelease" /><code>{"private UnityEvent onRelease"}</code> | Inspector event invoked when the button is released. |
 
 </details>
 
@@ -48,9 +48,9 @@ A menu `Button` that also fires Unity events set in the inspector when pressed, 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleenabledchanged" /><code>{"private void HandleEnabledChanged("}<Link to="/game-api/types/alta-menus/button">{"Button"}</Link>{" obj)"}</code> | Invokes `onEnable` or `onDisable` when the button's enabled state changes. |
 
 </details>
 

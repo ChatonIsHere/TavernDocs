@@ -29,21 +29,21 @@ A player's save file: position data plus binary blobs for their body, state stac
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-customization" /><code>{"private uint[] customization"}</code> |
-| <Link id="m-customizationbytes" /><code>{"private int customizationBytes"}</code> |
-| <Link id="m-lastsafeposition" /><code>{"private Vector3 lastSafePosition"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-player" /><code>{"private uint[] player"}</code> |
-| <Link id="m-playerbytes" /><code>{"private int playerBytes"}</code> |
-| <Link id="m-prefab" /><code>{"private uint[] prefab"}</code> |
-| <Link id="m-prefabbytes" /><code>{"private int prefabBytes"}</code> |
-| <Link id="m-progression" /><code>{"private uint[] progression"}</code> |
-| <Link id="m-progressionbytes" /><code>{"private int progressionBytes"}</code> |
-| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<"}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{"> saveData"}</code> |
-| <Link id="m-state" /><code>{"private uint[] state"}</code> |
-| <Link id="m-statebytes" /><code>{"private int stateBytes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-customization" /><code>{"private uint[] customization"}</code> | Backing field for `CosmeticData`, the player's serialized cosmetics. |
+| <Link id="m-customizationbytes" /><code>{"private int customizationBytes"}</code> | Backing field for `CosmeticBytes`. Reading a save with 4 bytes or fewer drops the cosmetics. |
+| <Link id="m-lastsafeposition" /><code>{"private Vector3 lastSafePosition"}</code> | Backing field for `LastSafePosition`, saved after the other data in the newest format. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for save and load errors. |
+| <Link id="m-player" /><code>{"private uint[] player"}</code> | Backing field for `PlayerData`, the serialized player entity data. |
+| <Link id="m-playerbytes" /><code>{"private int playerBytes"}</code> | Backing field for `PlayerBytes`. |
+| <Link id="m-prefab" /><code>{"private uint[] prefab"}</code> | Backing field for `PrefabData`, the serialized player prefab and what it carries. |
+| <Link id="m-prefabbytes" /><code>{"private int prefabBytes"}</code> | Backing field for `PrefabBytes`. |
+| <Link id="m-progression" /><code>{"private uint[] progression"}</code> | Backing field for `ProgressionData`, the serialized skill and progression data. |
+| <Link id="m-progressionbytes" /><code>{"private int progressionBytes"}</code> | Backing field for `ProgressionBytes`. |
+| <Link id="m-savedata" /><code>{"private "}<Link to="/game-api/types/alta-world/basicsavedatawrapper-tdata">{"BasicSaveDataWrapper"}</Link>{"<"}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{"> saveData"}</code> | Wrapper holding `Data`, the player save file data such as position. |
+| <Link id="m-state" /><code>{"private uint[] state"}</code> | Backing field for `StateData`, the serialized player state. |
+| <Link id="m-statebytes" /><code>{"private int stateBytes"}</code> | Backing field for `StateBytes`. |
 
 </details>
 
@@ -78,9 +78,9 @@ A player's save file: position data plus binary blobs for their body, state stac
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-releasearray" /><code>{"private bool ReleaseArray(ref uint[] array)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-releasearray" /><code>{"private bool ReleaseArray(ref uint[] array)"}</code> | Returns a data array to the pool and nulls it. Returns true if it was already null, which `Dispose` logs as a warning. |
 
 </details>
 

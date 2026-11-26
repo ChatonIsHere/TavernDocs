@@ -1,6 +1,6 @@
 ---
 title: "Constructor.PlaceFound<T>"
-description: "delegate Constructor.PlaceFound<T> in Root.Township."
+description: "Callback the PAGaC Constructor runs for each spot where a rule or part fits: the grid position, rotation, start offset and the axis multipliers for that..."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Constructor.PlaceFound&lt;T&gt;
 
 A **private delegate** in `Root.Township`, `Alta.PAGaC`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Callback the PAGaC `Constructor` runs for each spot where a rule or part fits: the grid position, rotation, start offset and the axis multipliers for that rotation.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`Constructor`](/game-api/types/alta-world-generation/constructor)

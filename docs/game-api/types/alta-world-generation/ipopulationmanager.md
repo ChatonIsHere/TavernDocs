@@ -1,6 +1,6 @@
 ---
 title: "IPopulationManager"
-description: "interface IPopulationManager in Root.Township."
+description: "Spawns population items for a population folder."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Populations`.
 
+Spawns population items for a population folder. `BasicPopulationManager` implements it; a folder exposes it as `Manager`.
+
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Derived types** [`BasicPopulationManager`](/game-api/types/alta-world-generation/basicpopulationmanager)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawn" /><code><Link to="/game-api/types/alta-world-generation/basicpopulationitem">{"BasicPopulationItem"}</Link>{" Spawn("}<Link to="/game-api/types/alta-world-generation/ipopulationfolder">{"IPopulationFolder"}</Link>{" folder)"}</code> | Spawns one population item for the given folder and returns it. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ItemSetRequest"
-description: "class ItemSetRequest in Alta.Api.DataTransferModels."
+description: "Request body for creating or updating a shop item set (a bundle) through Alta's web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Request body for creating or updating a shop item set (a bundle) through Alta's web API.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-items" /><code>{"IEnumerable<int> Items { get; set; }"}</code> |
-| <Link id="m-setitem" /><code><Link to="/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{" SetItem { get; set; }"}</code> |
-| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code>{"IEnumerable<int> Items { get; set; }"}</code> | Ids of the shop items in the set. |
+| <Link id="m-setitem" /><code><Link to="/game-api/types/assembly-api-models/shopitemdetailed">{"ShopItemDetailed"}</Link>{" SetItem { get; set; }"}</code> | The shop item that represents the set itself. |
+| <Link id="m-type" /><code><Link to="/game-api/types/assembly-api-models/itemsettype">{"ItemSetType"}</Link>{" Type { get; set; }"}</code> | The kind of set. |
 
 ## Used in
 

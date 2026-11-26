@@ -27,9 +27,9 @@ One part of a cosmetic or equipment visual placed in a customization slot. Track
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-haspart" /><code>{"private bool hasPart"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-haspart" /><code>{"private bool hasPart"}</code> | Whether the entry has a part to show; entries without one count as primary and skip show and hide. |
 
 </details>
 

@@ -28,13 +28,13 @@ One user entry on the friends board, with optional accept and reject buttons.
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-accept" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> |
-| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> |
-| <Link id="m-reject" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> |
-| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> |
-| <Link id="m-username" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-accept" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> accept"}</code> | Callback run when the player presses accept; the accept button only shows when it's set. |
+| <Link id="m-acceptbutton" /><code>{"private GameObject acceptButton"}</code> | Accept button object, shown when an accept callback is given. |
+| <Link id="m-reject" /><code>{"private Action<"}<Link to="/game-api/types/alta-menus/usertoken">{"UserToken"}</Link>{"> reject"}</code> | Callback run when the player presses reject; the reject button only shows when it's set. |
+| <Link id="m-rejectbutton" /><code>{"private GameObject rejectButton"}</code> | Reject button object, shown when a reject callback is given. |
+| <Link id="m-username" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" username"}</code> | Text showing the user's name. |
 
 </details>
 

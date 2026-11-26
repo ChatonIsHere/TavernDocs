@@ -31,22 +31,22 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-apibaseuri" /><code>{"private const string ApiBaseUri"}</code> |
-| <Link id="m-authenticationclient" /><code>{"private HttpClient authenticationClient"}</code> |
-| <Link id="m-authorizedclient" /><code>{"private HttpClient authorizedClient"}</code> |
-| <Link id="m-baseurl" /><code>{"private readonly string baseUrl"}</code> |
-| <Link id="m-defaultclient" /><code>{"private HttpClient defaultClient"}</code> |
-| <Link id="m-isanalyticsbatchprocessing" /><code>{"private bool isAnalyticsBatchProcessing"}</code> |
-| <Link id="m-lasttimeout" /><code>{"private DateTime? lastTimeout"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |
-| <Link id="m-refreshcancel" /><code>{"private CancellationTokenSource refreshCancel"}</code> |
-| <Link id="m-refreshinglogintask" /><code>{"private Task refreshingLoginTask"}</code> |
-| <Link id="m-timeoutinseconds" /><code>{"private readonly float timeOutInSeconds"}</code> |
-| <Link id="m-tokenexpirationleeway" /><code>{"private const int TokenExpirationLeeway"}</code> |
-| <Link id="m-useragent" /><code>{"private readonly string userAgent"}</code> |
-| <Link id="m-xrequestid" /><code>{"private const string XRequestId"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apibaseuri" /><code>{"private const string ApiBaseUri"}</code> | Path prefix `api`. |
+| <Link id="m-authenticationclient" /><code>{"private HttpClient authenticationClient"}</code> | HTTP client that carries the refresh token, used to refresh the session. |
+| <Link id="m-authorizedclient" /><code>{"private HttpClient authorizedClient"}</code> | HTTP client that carries the access token, used for most calls. |
+| <Link id="m-baseurl" /><code>{"private readonly string baseUrl"}</code> | API base URL the clients are made with. |
+| <Link id="m-defaultclient" /><code>{"private HttpClient defaultClient"}</code> | Plain HTTP client used for file downloads. |
+| <Link id="m-isanalyticsbatchprocessing" /><code>{"private bool isAnalyticsBatchProcessing"}</code> | Unused flag. |
+| <Link id="m-lasttimeout" /><code>{"private DateTime? lastTimeout"}</code> | When the clients were last reset for a timeout. |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | NLog logger for this class. |
+| <Link id="m-refreshcancel" /><code>{"private CancellationTokenSource refreshCancel"}</code> | Cancels the scheduled token refresh. |
+| <Link id="m-refreshinglogintask" /><code>{"private Task refreshingLoginTask"}</code> | The refresh in progress, which other calls wait for. |
+| <Link id="m-timeoutinseconds" /><code>{"private readonly float timeOutInSeconds"}</code> | Per-try request timeout (default 40). |
+| <Link id="m-tokenexpirationleeway" /><code>{"private const int TokenExpirationLeeway"}</code> | Seconds before expiry at which a token counts as expired (15). |
+| <Link id="m-useragent" /><code>{"private readonly string userAgent"}</code> | User agent sent with each request, as `name/version`. |
+| <Link id="m-xrequestid" /><code>{"private const string XRequestId"}</code> | Name of the `X-Request-Id` header. Not used in this class. |
 
 </details>
 
@@ -60,34 +60,34 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 <details>
 <summary>26 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-accountcontrolleruri" /><code>{"private static string AccountControllerUri { get; }"}</code> |
-| <Link id="m-banscontrolleruri" /><code>{"private static string BansControllerUri { get; }"}</code> |
-| <Link id="m-batchanalyticscontrolleruri" /><code>{"private static string BatchAnalyticsControllerUri { get; }"}</code> |
-| <Link id="m-friendscontrolleruri" /><code>{"private static string FriendsControllerUri { get; }"}</code> |
-| <Link id="m-futureuseractionscontrolleruri" /><code>{"private static string FutureUserActionsControllerUri { get; }"}</code> |
-| <Link id="m-groupscontrolleruri" /><code>{"private static string GroupsControllerUri { get; }"}</code> |
-| <Link id="m-instancescontrolleruri" /><code>{"private static string InstancesControllerUri { get; }"}</code> |
-| <Link id="m-launchercontrolleruri" /><code>{"private static string LauncherControllerUri { get; }"}</code> |
-| <Link id="m-loginsessionscontrolleruri" /><code>{"private static string LoginSessionsControllerUri { get; }"}</code> |
-| <Link id="m-matchmakingcontrolleruri" /><code>{"private static string MatchMakingControllerUri { get; }"}</code> |
-| <Link id="m-playerreportscontrolleruri" /><code>{"private static string PlayerReportsControllerUri { get; }"}</code> |
-| <Link id="m-recentplayersbatchcontrolleruri" /><code>{"private string RecentPlayersBatchControllerUri { get; }"}</code> |
-| <Link id="m-recentplayerscontrolleruri" /><code>{"private static string RecentPlayersControllerUri { get; }"}</code> |
-| <Link id="m-regionscontrolleruri" /><code>{"private static string RegionsControllerUri { get; }"}</code> |
-| <Link id="m-securitycontrolleruri" /><code>{"private static string SecurityControllerUri { get; }"}</code> |
-| <Link id="m-serverscontrolleruri" /><code>{"private static string ServersControllerUri { get; }"}</code> |
-| <Link id="m-servicescontrolleruri" /><code>{"private static string ServicesControllerUri { get; }"}</code> |
-| <Link id="m-settingscontrolleruri" /><code>{"private static string SettingsControllerUri { get; }"}</code> |
-| <Link id="m-shopaccountcontrolleruri" /><code>{"private static string ShopAccountControllerUri { get; }"}</code> |
-| <Link id="m-shopcontrolleruri" /><code>{"private static string ShopControllerUri { get; }"}</code> |
-| <Link id="m-shopdebugcontrolleruri" /><code>{"private static string ShopDebugControllerUri { get; }"}</code> |
-| <Link id="m-shopoculuscontrolleruri" /><code>{"private static string ShopOculusControllerUri { get; }"}</code> |
-| <Link id="m-shoppurchasecontrolleruri" /><code>{"private static string ShopPurchaseControllerUri { get; }"}</code> |
-| <Link id="m-signupcodescontrolleruri" /><code>{"private static string SignUpCodesControllerUri { get; }"}</code> |
-| <Link id="m-userscontrolleruri" /><code>{"private static string UsersControllerUri { get; }"}</code> |
-| <Link id="m-voicecontrolleruri" /><code>{"private static string VoiceControllerUri { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-accountcontrolleruri" /><code>{"private static string AccountControllerUri { get; }"}</code> | Path `api/Account` (linked Discord, Oculus and Pico accounts). |
+| <Link id="m-banscontrolleruri" /><code>{"private static string BansControllerUri { get; }"}</code> | Path `api/Bans`. |
+| <Link id="m-batchanalyticscontrolleruri" /><code>{"private static string BatchAnalyticsControllerUri { get; }"}</code> | Path `api/analytics/batch`, where queued analytics events are sent. |
+| <Link id="m-friendscontrolleruri" /><code>{"private static string FriendsControllerUri { get; }"}</code> | Path `api/Friends`. |
+| <Link id="m-futureuseractionscontrolleruri" /><code>{"private static string FutureUserActionsControllerUri { get; }"}</code> | Path `api/future-users`. |
+| <Link id="m-groupscontrolleruri" /><code>{"private static string GroupsControllerUri { get; }"}</code> | Path `api/groups`. |
+| <Link id="m-instancescontrolleruri" /><code>{"private static string InstancesControllerUri { get; }"}</code> | Path `api/Instances`. |
+| <Link id="m-launchercontrolleruri" /><code>{"private static string LauncherControllerUri { get; }"}</code> | Path `api/Launcher`. |
+| <Link id="m-loginsessionscontrolleruri" /><code>{"private static string LoginSessionsControllerUri { get; }"}</code> | Path `api/Sessions`, used to log in and refresh. |
+| <Link id="m-matchmakingcontrolleruri" /><code>{"private static string MatchMakingControllerUri { get; }"}</code> | Path `api/matchmaking`. |
+| <Link id="m-playerreportscontrolleruri" /><code>{"private static string PlayerReportsControllerUri { get; }"}</code> | Path `api/reports`. |
+| <Link id="m-recentplayersbatchcontrolleruri" /><code>{"private string RecentPlayersBatchControllerUri { get; }"}</code> | Path `api/recent-players/batch`. |
+| <Link id="m-recentplayerscontrolleruri" /><code>{"private static string RecentPlayersControllerUri { get; }"}</code> | Path `api/recent-players`. |
+| <Link id="m-regionscontrolleruri" /><code>{"private static string RegionsControllerUri { get; }"}</code> | Path `api/regions`. |
+| <Link id="m-securitycontrolleruri" /><code>{"private static string SecurityControllerUri { get; }"}</code> | Path `api/Security`. |
+| <Link id="m-serverscontrolleruri" /><code>{"private static string ServersControllerUri { get; }"}</code> | Path `api/servers`. |
+| <Link id="m-servicescontrolleruri" /><code>{"private static string ServicesControllerUri { get; }"}</code> | Path `api/Services`. |
+| <Link id="m-settingscontrolleruri" /><code>{"private static string SettingsControllerUri { get; }"}</code> | Path `api/settings`. |
+| <Link id="m-shopaccountcontrolleruri" /><code>{"private static string ShopAccountControllerUri { get; }"}</code> | Path `api/Shop/Account`. |
+| <Link id="m-shopcontrolleruri" /><code>{"private static string ShopControllerUri { get; }"}</code> | Path `api/Shop`. |
+| <Link id="m-shopdebugcontrolleruri" /><code>{"private static string ShopDebugControllerUri { get; }"}</code> | Path `api/Shop/Debug`. |
+| <Link id="m-shopoculuscontrolleruri" /><code>{"private static string ShopOculusControllerUri { get; }"}</code> | Path `api/Shop/Oculus`. |
+| <Link id="m-shoppurchasecontrolleruri" /><code>{"private static string ShopPurchaseControllerUri { get; }"}</code> | Path `api/Shop/Purchase`. |
+| <Link id="m-signupcodescontrolleruri" /><code>{"private static string SignUpCodesControllerUri { get; }"}</code> | Path `api/SignupCodes`. |
+| <Link id="m-userscontrolleruri" /><code>{"private static string UsersControllerUri { get; }"}</code> | Path `api/Users`. |
+| <Link id="m-voicecontrolleruri" /><code>{"private static string VoiceControllerUri { get; }"}</code> | Path `api/Voice`. |
 
 </details>
 
@@ -266,34 +266,34 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-cancelrefreshroutine" /><code>{"private void CancelRefreshRoutine()"}</code> |  |
-| <Link id="m-createapierrorexceptionasync" /><code>{"private static async Task<"}<Link to="/game-api/types/assembly-api-models/apierrorexception">{"ApiErrorException"}</Link>{"> CreateApiErrorExceptionAsync(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-createhttpclient" /><code>{"private HttpClient CreateHttpClient(string baseUrl, float timeOutInSeconds)"}</code> |  |
-| <Link id="m-enqueuerecentplayerinteraction" /><code>{"internal async Task EnqueueRecentPlayerInteraction("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractionrequest">{"RecentPlayerInteractionRequest"}</Link>{" request)"}</code> |  |
-| <Link id="m-ensureloggedinasync" /><code>{"private async Task EnsureLoggedInAsync()"}</code> |  |
-| <Link id="m-generatehttpclients" /><code>{"private void GenerateHttpClients()"}</code> |  |
-| <Link id="m-getallrecentplayerinteractions" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllRecentPlayerInteractions(int limit = 25)"}</code> |  |
-| <Link id="m-getallrecentplayerinteractionsonserver" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllRecentPlayerInteractionsOnServer(int serverId, int limit = 25)"}</code> |  |
-| <Link id="m-getfriendrequestsinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendRequestsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config)"}</code> |  |
-| <Link id="m-getfriendsforuserinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendsForUserInternal(int userIdentifier, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> |  |
-| <Link id="m-getfriendsinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> |  |
-| <Link id="m-getplayerreports" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetPlayerReports("}<Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> |  |
-| <Link id="m-getsentfriendrequestsinternal" /><code>{"private async Task<HttpResponseMessage> GetSentFriendRequestsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config)"}</code> |  |
-| <Link id="m-handleemptyresponse" /><code>{"private static async Task HandleEmptyResponse(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-handleemptyresponsewithbadrequest" /><code>{"private static async Task HandleEmptyResponseWithBadRequest(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-handleemptyresponsewithbadrequestornotfound" /><code>{"private static async Task HandleEmptyResponseWithBadRequestOrNotFound(HttpResponseMessage response)"}</code> |  |
+| <Link id="m-cancelrefreshroutine" /><code>{"private void CancelRefreshRoutine()"}</code> | Cancels the scheduled refresh token renewal, if one is pending. |
+| <Link id="m-createapierrorexceptionasync" /><code>{"private static async Task<"}<Link to="/game-api/types/assembly-api-models/apierrorexception">{"ApiErrorException"}</Link>{"> CreateApiErrorExceptionAsync(HttpResponseMessage response)"}</code> | Reads an error response body as an `ApiError` and wraps it in an `ApiErrorException`; falls back to the raw text if it can't be parsed. |
+| <Link id="m-createhttpclient" /><code>{"private HttpClient CreateHttpClient(string baseUrl, float timeOutInSeconds)"}</code> | Makes an `HttpClient` with the retry handler, base URL, a timeout four times the per-try timeout, the JSON accept header, the `x-api-key` header and the user agent. |
+| <Link id="m-enqueuerecentplayerinteraction" /><code>{"internal async Task EnqueueRecentPlayerInteraction("}<Link to="/game-api/types/assembly-api-models/recentplayerinteractionrequest">{"RecentPlayerInteractionRequest"}</Link>{" request)"}</code> | Queues a recent player interaction for the batched `api/recent-players/batch` call. |
+| <Link id="m-ensureloggedinasync" /><code>{"private async Task EnsureLoggedInAsync()"}</code> | Run before every authorized call: waits for any refresh in progress, throws if not logged in, and refreshes the session when the access token has 15 seconds or less left. |
+| <Link id="m-generatehttpclients" /><code>{"private void GenerateHttpClients()"}</code> | Disposes and recreates the default, authorized and authentication HTTP clients. |
+| <Link id="m-getallrecentplayerinteractions" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllRecentPlayerInteractions(int limit = 25)"}</code> | Gets the logged-in user's recent player interactions, up to `limit` (default 25). |
+| <Link id="m-getallrecentplayerinteractionsonserver" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/recentplayerinteractioninfo">{"RecentPlayerInteractionInfo"}</Link>{">> GetAllRecentPlayerInteractionsOnServer(int serverId, int limit = 25)"}</code> | Gets recent player interactions on one server, up to `limit` (default 25). |
+| <Link id="m-getfriendrequestsinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendRequestsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config)"}</code> | Fetches one page of friend requests received, for `GetFriendRequests`. |
+| <Link id="m-getfriendsforuserinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendsForUserInternal(int userIdentifier, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> | Fetches one page of another user's friends, for `GetFriendsForUser`. |
+| <Link id="m-getfriendsinternal" /><code>{"private async Task<HttpResponseMessage> GetFriendsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> | Fetches one page of the logged-in user's friends, for `GetFriends`. |
+| <Link id="m-getplayerreports" /><code>{"internal async Task<IEnumerable<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{">> GetPlayerReports("}<Link to="/game-api/types/assembly-api-models/reportstatus">{"ReportStatus"}</Link>{"? statusFilter = null, int? serverFilter = null)"}</code> | Gets player reports, optionally filtered by status and server. |
+| <Link id="m-getsentfriendrequestsinternal" /><code>{"private async Task<HttpResponseMessage> GetSentFriendRequestsInternal("}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config)"}</code> | Fetches one page of friend requests sent, for `GetSentFriendRequests`. |
+| <Link id="m-handleemptyresponse" /><code>{"private static async Task HandleEmptyResponse(HttpResponseMessage response)"}</code> | Returns on success; otherwise throws a forbidden or HTTP status exception. |
+| <Link id="m-handleemptyresponsewithbadrequest" /><code>{"private static async Task HandleEmptyResponseWithBadRequest(HttpResponseMessage response)"}</code> | Returns on success; throws an `ApiErrorException` on 400, otherwise a forbidden or HTTP status exception. |
+| <Link id="m-handleemptyresponsewithbadrequestornotfound" /><code>{"private static async Task HandleEmptyResponseWithBadRequestOrNotFound(HttpResponseMessage response)"}</code> | Returns on success; throws an `ApiErrorException` on 400 or 404, otherwise a forbidden or HTTP status exception. |
 | <Link id="m-handleforbiddenorotherhttpstatus-2" /><code>{"private static Exception HandleForbiddenOrOtherHttpStatus(HttpWebResponse response)"}</code> | Logs a failed response and builds a `ForbiddenException` for 403 or an `HttpException` otherwise. |
-| <Link id="m-handlerefreshtokenresponseasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> HandleRefreshTokenResponseAsync(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-handleresponsewithbadrequestornotfound" /><code>{"private static async Task<T> HandleResponseWithBadRequestOrNotFound<T>(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-handletimeout" /><code>{"private void HandleTimeout(HttpRequestMessage request)"}</code> |  |
-| <Link id="m-handletokenresponseasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> HandleTokenResponseAsync(HttpResponseMessage response)"}</code> |  |
-| <Link id="m-modifyplayerreport" /><code>{"internal async Task<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ModifyPlayerReport(Guid reportIdentifer, "}<Link to="/game-api/types/assembly-api-models/modifyreportrequest">{"ModifyReportRequest"}</Link>{" request)"}</code> |  |
-| <Link id="m-onnewcredentials" /><code>{"private void OnNewCredentials("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" newCredentials, bool isCallingEvents = true)"}</code> |  |
-| <Link id="m-refreshloginsessionusingtokenasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> RefreshLoginSessionUsingTokenAsync(JwtSecurityToken refreshToken)"}</code> |  |
-| <Link id="m-reportplayer" /><code>{"internal async Task<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ReportPlayer("}<Link to="/game-api/types/assembly-api-models/createreportrequest">{"CreateReportRequest"}</Link>{" request)"}</code> |  |
-| <Link id="m-scheduleaction" /><code>{"private async void ScheduleAction(Action action, DateTime executionTime, CancellationToken cancelToken)"}</code> |  |
-| <Link id="m-setauthenticationheaderonauthenticationclient" /><code>{"private void SetAuthenticationHeaderOnAuthenticationClient(string refreshTokenString)"}</code> |  |
-| <Link id="m-updaterefreshtokenasync" /><code>{"private async void UpdateRefreshTokenAsync()"}</code> |  |
+| <Link id="m-handlerefreshtokenresponseasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> HandleRefreshTokenResponseAsync(HttpResponseMessage response)"}</code> | Stores the new tokens from a successful refresh response, or throws. |
+| <Link id="m-handleresponsewithbadrequestornotfound" /><code>{"private static async Task<T> HandleResponseWithBadRequestOrNotFound<T>(HttpResponseMessage response)"}</code> | Reads the JSON body on success; throws an `ApiErrorException` on 400 or 404, otherwise a forbidden or HTTP status exception. |
+| <Link id="m-handletimeout" /><code>{"private void HandleTimeout(HttpRequestMessage request)"}</code> | On a request timeout, recreates the HTTP clients and keeps their auth headers, unless it already did so within five timeouts' time. |
+| <Link id="m-handletokenresponseasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> HandleTokenResponseAsync(HttpResponseMessage response)"}</code> | Stores the tokens from a successful login response; throws an `ApiErrorException` on 400 or another exception otherwise. |
+| <Link id="m-modifyplayerreport" /><code>{"internal async Task<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ModifyPlayerReport(Guid reportIdentifer, "}<Link to="/game-api/types/assembly-api-models/modifyreportrequest">{"ModifyReportRequest"}</Link>{" request)"}</code> | Patches a player report by its identifier. |
+| <Link id="m-onnewcredentials" /><code>{"private void OnNewCredentials("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" newCredentials, bool isCallingEvents = true)"}</code> | Stores new credentials, optionally raises `CredentialsChanged`, and schedules a refresh one hour before the refresh token expires. |
+| <Link id="m-refreshloginsessionusingtokenasync" /><code>{"private async Task<"}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{"> RefreshLoginSessionUsingTokenAsync(JwtSecurityToken refreshToken)"}</code> | Refreshes the session, throwing if the refresh token has 15 seconds or less left. |
+| <Link id="m-reportplayer" /><code>{"internal async Task<"}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{"> ReportPlayer("}<Link to="/game-api/types/assembly-api-models/createreportrequest">{"CreateReportRequest"}</Link>{" request)"}</code> | Files a player report. |
+| <Link id="m-scheduleaction" /><code>{"private async void ScheduleAction(Action action, DateTime executionTime, CancellationToken cancelToken)"}</code> | Runs an action at a UTC time unless cancelled first, waiting in chunks for long delays; logs a warning if the time has passed. |
+| <Link id="m-setauthenticationheaderonauthenticationclient" /><code>{"private void SetAuthenticationHeaderOnAuthenticationClient(string refreshTokenString)"}</code> | Sets the refresh token as the bearer token on the authentication client. |
+| <Link id="m-updaterefreshtokenasync" /><code>{"private async void UpdateRefreshTokenAsync()"}</code> | Scheduled callback that refreshes the login. |
 
 </details>
 

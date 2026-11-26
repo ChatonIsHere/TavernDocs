@@ -1,6 +1,6 @@
 ---
 title: "ControlledWriteSync"
-description: "class ControlledWriteSync in Root.Township."
+description: "An entity message channel where each send passes its own write method, unlike MethodSync which uses a fixed one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ControlledWriteSync
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+An entity message channel where each send passes its own write method, unlike `MethodSync` which uses a fixed one. Registers the read handler when created.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -25,19 +27,19 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The entity whose message handler carries the messages. |
+| <Link id="m-type" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> | The entity message type this sync uses. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-sendtochunks" /><code>{"void SendToChunks("}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod, params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> |
-| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sendtochunks" /><code>{"void SendToChunks("}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod, params "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{"[] except)"}</code> | Sends the message, written by the given method, to every player in range of the entity's chunks, minus any listed. |
+| <Link id="m-sendtoplayer" /><code>{"void SendToPlayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" sendMethod)"}</code> | Sends the message, written by the given method, to one player. |
 
 ## Used in
 

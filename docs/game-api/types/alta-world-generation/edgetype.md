@@ -1,6 +1,6 @@
 ---
 title: "EdgeType"
-description: "enum EdgeType in Root.Township."
+description: "Flags for a forest graph edge: a normal path, a land bridge or a water bridge."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EdgeType
 
 An **enum** in `Root.Township`, `Alta.Forests`.
+
+Flags for a forest graph edge: a normal path, a land bridge or a water bridge. Used by forest generation and path cutting.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 

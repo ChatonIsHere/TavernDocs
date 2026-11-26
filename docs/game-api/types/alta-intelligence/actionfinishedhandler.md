@@ -1,6 +1,6 @@
 ---
 title: "ActionFinishedHandler"
-description: "delegate ActionFinishedHandler in Root.Township."
+description: "Callback for an AI action that finished or was cancelled, used by BasicActiveAction.Finished and Cancelled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ActionFinishedHandler
 
 A **delegate** in `Root.Township`, `Alta.Intelligence`.
+
+Callback for an AI action that finished or was cancelled, used by `BasicActiveAction.Finished` and `Cancelled`.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "WebSocketCommandHandler.SubscriptionResult"
-description: "enum WebSocketCommandHandler.SubscriptionResult in Root.Township."
+description: "Result of a websocket console subscribe or unsubscribe: done, no change (already in that state) or the event type wasn't found."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # WebSocketCommandHandler.SubscriptionResult
 
 An **enum** in `Root.Township`, `Alta.Console`.
+
+Result of a websocket console subscribe or unsubscribe: done, no change (already in that state) or the event type wasn't found.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler)

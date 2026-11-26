@@ -1,6 +1,6 @@
 ---
 title: "IPicoClient"
-description: "interface IPicoClient in Alta.Api.Client."
+description: "Alta web API calls for linking a Pico account to an Alta account, per Pico region."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,17 +12,19 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
+Alta web API calls for linking a Pico account to an Alta account, per Pico region. `ApiAccess.ApiClient.Pico`.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`PicoClient`](/game-api/types/assembly-api-client/picoclient)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
-| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
-| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> |
-| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getlinkedaccount" /><code>{"Task<"}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{"> GetLinkedAccount(ulong picoId, string picoToken, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Gets the Alta user linked to a Pico id. |
+| <Link id="m-haslinkedaccount" /><code>{"Task<bool> HasLinkedAccount(ulong picoId, string picoToken, ulong altaId, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Asks whether a Pico id is linked to a given Alta user. |
+| <Link id="m-linkloggedinaccount" /><code>{"Task LinkLoggedInAccount(ulong picoId, string userProof, "}<Link to="/game-api/types/assembly-api-models/region">{"Region"}</Link>{" region)"}</code> | Links a Pico account to the logged-in Alta account using a user proof. |
+| <Link id="m-unlinkloggedinaccount" /><code>{"Task UnlinkLoggedInAccount(ulong altaId)"}</code> | Removes the Pico link from an Alta account. |
 
 ## Used in
 

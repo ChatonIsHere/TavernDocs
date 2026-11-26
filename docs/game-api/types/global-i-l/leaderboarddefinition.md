@@ -30,11 +30,11 @@ Asset for a leaderboard (a course), with its size and whether lower scores are b
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-coursename" /><code>{"private string courseName"}</code> |
-| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> |
-| <Link id="m-size" /><code>{"private int size"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-coursename" /><code>{"private string courseName"}</code> | Backing field for `CourseName`, the name of the course or challenge ranked. |
+| <Link id="m-islowest" /><code>{"private bool isLowest"}</code> | True when the lowest score ranks first (probably for times). Default true. |
+| <Link id="m-size" /><code>{"private int size"}</code> | How many entries the leaderboard keeps. Default 5. |
 
 </details>
 

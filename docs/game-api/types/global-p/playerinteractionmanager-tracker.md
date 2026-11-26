@@ -1,6 +1,6 @@
 ---
 title: "PlayerInteractionManager.Tracker"
-description: "class PlayerInteractionManager.Tracker in Root.Township."
+description: "How many interactions one player has left on one limited object, keyed by id in PlayerInteractionManager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerInteractionManager.Tracker
 
 A **class** in `Root.Township`, no namespace.
+
+How many interactions one player has left on one limited object, keyed by id in `PlayerInteractionManager`. The server sends it to that player when it changes; trackers clear once a game day.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Nested in** [`PlayerInteractionManager`](/game-api/types/global-p/playerinteractionmanager)
@@ -24,10 +26,10 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"int id"}</code> |
-| <Link id="m-interactionsleft" /><code>{"int interactionsLeft"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"int id"}</code> | The limited object's id, handed out by `PlayerInteractionManager.GetId`. |
+| <Link id="m-interactionsleft" /><code>{"int interactionsLeft"}</code> | Interactions this player still has on that object until the next refresh. |
 
 ## Used in
 

@@ -36,10 +36,10 @@ Base for an atmosphere source (such as a zone or weather) that supplies ambient 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-pluginhash" /><code>{"private int pluginHash"}</code> |
-| <Link id="m-priority" /><code>{"private int priority"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-pluginhash" /><code>{"private int pluginHash"}</code> | Backing field for `Hash`, set by `StartValues`. The manager and atmosphere sets use it to find the plugin. |
+| <Link id="m-priority" /><code>{"private int priority"}</code> | Backing field for `Priority`; higher wins when several plugins are enabled. Default 5. |
 
 </details>
 

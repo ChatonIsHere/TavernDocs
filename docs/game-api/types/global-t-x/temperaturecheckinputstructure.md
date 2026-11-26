@@ -30,13 +30,13 @@ Skill input settings that activate a skill when the held item (or its matching t
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activetime" /><code>{"private float activeTime"}</code> |
-| <Link id="m-haschannels" /><code>{"private bool hasChannels"}</code> |
-| <Link id="m-mintemperaturetoactivate" /><code>{"private float minTemperatureToActivate"}</code> |
-| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |
-| <Link id="m-timetoactivate" /><code>{"private float timeToActivate"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activetime" /><code>{"private float activeTime"}</code> | Seconds the skill stays active once triggered (15 by default). |
+| <Link id="m-haschannels" /><code>{"private bool hasChannels"}</code> | True when `targetChannels` has at least one entry. Without channels any pickup or impactor passes. |
+| <Link id="m-mintemperaturetoactivate" /><code>{"private float minTemperatureToActivate"}</code> | Temperature that has to be reached to start activating (200 by default). |
+| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> | Impact channels the held tool or impactor must have for the input to count. |
+| <Link id="m-timetoactivate" /><code>{"private float timeToActivate"}</code> | Seconds the temperature must hold before the skill activates (1 by default). |
 
 </details>
 
@@ -59,9 +59,9 @@ Skill input settings that activate a skill when the held item (or its matching t
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: sets `hasChannels` when any entry in `targetChannels` is set. |
 
 </details>
 

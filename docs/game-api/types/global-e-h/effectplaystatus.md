@@ -1,6 +1,6 @@
 ---
 title: "EffectPlayStatus"
-description: "enum EffectPlayStatus in Root.Township."
+description: "Flags for an effect that is playing with its visuals or its sound turned off."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EffectPlayStatus
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for an effect that is playing with its visuals or its sound turned off.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Attributes** `Flags`

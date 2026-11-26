@@ -1,6 +1,6 @@
 ---
 title: "NewPageArguments"
-description: "class NewPageArguments in Root.Township."
+description: "Message payload a Book sends to chunks when the server spawns a page into it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NewPageArguments
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Message payload a `Book` sends to chunks when the server spawns a page into it.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-instance" /><code>{"uint instance"}</code> |
-| <Link id="m-isinserting" /><code>{"bool isInserting"}</code> |
-| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instance" /><code>{"uint instance"}</code> | Network identifier of the new page entity. |
+| <Link id="m-isinserting" /><code>{"bool isInserting"}</code> | Whether the page is inserted from the middle of the book. |
+| <Link id="m-spawnedindex" /><code>{"int spawnedIndex"}</code> | Where the page goes in the book's list of spawned pages. |
 
 ## Used in
 

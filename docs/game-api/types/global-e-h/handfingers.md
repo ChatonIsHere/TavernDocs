@@ -1,6 +1,6 @@
 ---
 title: "HandFingers"
-description: "enum HandFingers in Root.Township."
+description: "Flags for the five fingers of a hand, one bit each."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandFingers
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for the five fingers of a hand, one bit each.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 

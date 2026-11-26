@@ -29,11 +29,11 @@ Item component for a cooking ingredient: its cooking category, how it looks floa
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{" category"}</code> |
-| <Link id="m-chunkvisual" /><code>{"private "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" chunkVisual"}</code> |
-| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effects"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-category" /><code>{"private "}<Link to="/game-api/types/alta-crafting/cookablecategorydefinition">{"CookableCategoryDefinition"}</Link>{" category"}</code> | Backing field for `Category`, the cookable category this item belongs to. |
+| <Link id="m-chunkvisual" /><code>{"private "}<Link to="/game-api/types/alta-crafting/liquidvisualchunkdefinition">{"LiquidVisualChunkDefinition"}</Link>{" chunkVisual"}</code> | Backing field for `ChunkVisual`, how the item looks as a chunk in liquid (for example in a stew). |
+| <Link id="m-effects" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/effectdefinitionapplication">{"EffectDefinitionApplication"}</Link>{"[] effects"}</code> | Backing field for `Effects`, the effects the item applies when eaten as part of a dish. |
 
 </details>
 

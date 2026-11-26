@@ -1,6 +1,6 @@
 ---
 title: "UltimateRope.EAxis"
-description: "enum UltimateRope.EAxis in Root.Township."
+description: "An axis direction (plus or minus X, Y or Z) used by UltimateRope for its coil and link axes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UltimateRope.EAxis
 
 An **enum** in `Root.Township`, no namespace.
+
+An axis direction (plus or minus X, Y or Z) used by `UltimateRope` for its coil and link axes.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`UltimateRope`](/game-api/types/global-t-x/ultimaterope)

@@ -1,6 +1,6 @@
 ---
 title: "RecreateArgumentMode"
-description: "enum RecreateArgumentMode in Root.Township."
+description: "When a MethodSyncClass makes a new argument object while reading a message: only if its value is null, always, or never (reuse the existing one)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # RecreateArgumentMode
 
 An **enum** in `Root.Township`, `Alta.Networking`.
+
+When a `MethodSyncClass` makes a new argument object while reading a message: only if its value is null, always, or never (reuse the existing one).
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 

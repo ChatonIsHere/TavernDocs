@@ -33,13 +33,13 @@ One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterSt
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-concludedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" concludedEffect"}</code> |
-| <Link id="m-destroyingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyingEffect"}</code> |
-| <Link id="m-maximumreturnpercentage" /><code>{"private float maximumReturnPercentage"}</code> |
-| <Link id="m-minimumreturnpercentage" /><code>{"private float minimumReturnPercentage"}</code> |
-| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"[] pieces"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-concludedeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" concludedEffect"}</code> | Client: effect played at the craft position when the stage is finished. |
+| <Link id="m-destroyingeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" destroyingEffect"}</code> | Backing field for `DestroyingEffect`, played where a piece is carved away. |
+| <Link id="m-maximumreturnpercentage" /><code>{"private float maximumReturnPercentage"}</code> | Refuse share returned when no pieces are done. Zero means the stage returns no refuse. |
+| <Link id="m-minimumreturnpercentage" /><code>{"private float minimumReturnPercentage"}</code> | Refuse share returned when every piece is done. `RefusePercentage` steps down evenly between the two. |
+| <Link id="m-pieces" /><code>{"private "}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"[] pieces"}</code> | Backing field for `Pieces`, the timber pieces to carve in this stage. |
 
 </details>
 
@@ -72,11 +72,11 @@ One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterSt
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-runoperationonpieces" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{", int> operation)"}</code> |
-| <Link id="m-runoperationonpieces-2" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"> operation)"}</code> |
-| <Link id="m-setenabled" /><code>{"private void SetEnabled(bool isEnabled)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-runoperationonpieces" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{", int> operation)"}</code> | Runs an action on every piece of the stage, with or without its index. |
+| <Link id="m-runoperationonpieces-2" /><code>{"private void RunOperationOnPieces(Action<"}<Link to="/game-api/types/alta-crafting/timberpiecebase">{"TimberPieceBase"}</Link>{"> operation)"}</code> | Runs an action on every piece of the stage, with or without its index. |
+| <Link id="m-setenabled" /><code>{"private void SetEnabled(bool isEnabled)"}</code> | Turns chiselling on or off for every piece in the stage. |
 
 </details>
 

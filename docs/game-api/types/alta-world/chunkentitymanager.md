@@ -27,13 +27,13 @@ Server: the list of network entities currently in one chunk, used when syncing t
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-entities" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> entities"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-temppriorities" /><code>{"private static List<int> tempPriorities"}</code> |
-| <Link id="m-tempsort" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> tempSort"}</code> |
-| <Link id="m-tempsortmap" /><code>{"private static Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{">> tempSortMap"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entities" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> entities"}</code> | The entities currently in this chunk. `Add` refuses duplicates by `Identifier`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-temppriorities" /><code>{"private static List<int> tempPriorities"}</code> | Shared scratch list of sync priorities used by `Sort`. |
+| <Link id="m-tempsort" /><code>{"private static List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> tempSort"}</code> | Shared scratch list used by `Cache` to sort entities when they all have the same priority. |
+| <Link id="m-tempsortmap" /><code>{"private static Dictionary<int, List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{">> tempSortMap"}</code> | Shared scratch map from sync priority to entities, used by `Sort`. |
 
 </details>
 
@@ -67,13 +67,13 @@ Server: the list of network entities currently in one chunk, used when syncing t
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-compareentitiesposition" /><code>{"private static int CompareEntitiesPosition("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" a, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" b, Vector3 position)"}</code> |
-| <Link id="m-handlechunknotloaded" /><code>{"private void HandleChunkNotLoaded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-onadded" /><code>{"private void OnAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-onremoved" /><code>{"private void OnRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-sort" /><code>{"private void Sort("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] cache, int firstFail, bool isSpawning, Comparison<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finalSort, out int count)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-compareentitiesposition" /><code>{"private static int CompareEntitiesPosition("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" a, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" b, Vector3 position)"}</code> | Compares two entities by flat distance from a position, for `CompareFeet`. Bug: it adds `z` twice instead of squaring it, so the order is only roughly by distance. |
+| <Link id="m-handlechunknotloaded" /><code>{"private void HandleChunkNotLoaded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Called by `Add` when the chunk isn't loaded: logs, and for non-embedded entities raises `EnteredWhileUnloaded`. |
+| <Link id="m-onadded" /><code>{"private void OnAdded("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Raises `Added` after `Add` puts an entity in the list. |
+| <Link id="m-onremoved" /><code>{"private void OnRemoved("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Raises `Removed` after `Remove` takes an entity out of the list. |
+| <Link id="m-sort" /><code>{"private void Sort("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"[] cache, int firstFail, bool isSpawning, Comparison<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finalSort, out int count)"}</code> | Used by `Cache` when the entities have mixed `SyncPriority`: groups them by priority, orders the groups and applies the final sort in each. |
 
 </details>
 

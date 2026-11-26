@@ -1,6 +1,6 @@
 ---
 title: "VivoxText"
-description: "class VivoxText in Root.Township."
+description: "Client: wraps text messaging on a Vivox channel session, raising an event for each received message."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VivoxText
 
 A **class** in `Root.Township`, `Alta.Voice`.
+
+Client: wraps text messaging on a Vivox channel session, raising an event for each received message.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
@@ -25,31 +27,31 @@ A **class** in `Root.Township`, `Alta.Voice`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-session" /><code>{"private IChannelSession session"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-session" /><code>{"private IChannelSession session"}</code> | The Vivox channel session. |
 
 </details>
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-messagereceived" /><code>{"event Action<IChannelTextMessage> MessageReceived"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-messagereceived" /><code>{"event Action<IChannelTextMessage> MessageReceived"}</code> | Raised for each text message received on the channel. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-queue" /><code>{"IEnumerable<IChannelTextMessage> Queue() (iterator)"}</code> |
-| <Link id="m-send" /><code>{"async Task<bool> Send(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-queue" /><code>{"IEnumerable<IChannelTextMessage> Queue() (iterator)"}</code> | Yields and removes every message waiting in the session's log. |
+| <Link id="m-send" /><code>{"async Task<bool> Send(string message)"}</code> | Sends a text message to the channel and returns whether it succeeded. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-messagelogadded" /><code>{"private void MessageLogAdded(object sender, QueueItemAddedEventArgs<IChannelTextMessage> e)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-messagelogadded" /><code>{"private void MessageLogAdded(object sender, QueueItemAddedEventArgs<IChannelTextMessage> e)"}</code> | Session handler: raises `MessageReceived` and dequeues the message, but only when something is listening. |
 
 </details>
 

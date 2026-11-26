@@ -30,10 +30,10 @@ A debug text asset that code writes a line of text to and an `InfoDisplayer` sho
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-prefix" /><code>{"private string prefix"}</code> |
-| <Link id="m-sufix" /><code>{"private string sufix"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-prefix" /><code>{"private string prefix"}</code> | Text put before every value passed to `UpdateText`. |
+| <Link id="m-sufix" /><code>{"private string sufix"}</code> | Text put after every value passed to `UpdateText`. |
 
 </details>
 

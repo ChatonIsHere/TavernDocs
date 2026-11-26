@@ -36,9 +36,9 @@ A leaderboard's settings: course name, size and whether lower scores win. A stat
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-mapped" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"> mapped"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mapped" /><code>{"private static List<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{"> mapped"}</code> | All known leaderboards, from the assets plus any added with `SetData` or `AddData`. |
 
 </details>
 
@@ -62,9 +62,9 @@ A leaderboard's settings: course name, size and whether lower scores win. A stat
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-prepare" /><code>{"private static void Prepare()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-prepare" /><code>{"private static void Prepare()"}</code> | On first use, fills `mapped` with the data of every `LeaderboardDefinition` asset. |
 
 </details>
 

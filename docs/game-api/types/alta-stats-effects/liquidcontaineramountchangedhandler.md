@@ -1,6 +1,6 @@
 ---
 title: "LiquidContainerAmountChangedHandler"
-description: "delegate LiquidContainerAmountChangedHandler in Root.Township."
+description: "Handler for ILiquidContainer.ContentLevelChanged: gets the container and its old and new content levels."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidContainerAmountChangedHandler
 
 A **delegate** in `Root.Township`, `Alta.Liquid`.
+
+Handler for `ILiquidContainer.ContentLevelChanged`: gets the container and its old and new content levels.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

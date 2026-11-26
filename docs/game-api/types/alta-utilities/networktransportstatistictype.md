@@ -1,6 +1,6 @@
 ---
 title: "NetworkTransportStatisticType"
-description: "enum NetworkTransportStatisticType in Root.Township."
+description: "Whether a network transport statistic counts bytes or message count."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkTransportStatisticType
 
 An **enum** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetrics`.
+
+Whether a network transport statistic counts bytes or message count.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 

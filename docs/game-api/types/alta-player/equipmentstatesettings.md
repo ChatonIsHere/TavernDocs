@@ -30,26 +30,26 @@ Settings for the equipment player state, where a dummy copy of the player appear
 <details>
 <summary>18 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationstageoverlap" /><code>{"private float animationStageOverlap"}</code> |
-| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" customizationRoom"}</code> |
-| <Link id="m-dummymaterializationduration" /><code>{"private float dummyMaterializationDuration"}</code> |
-| <Link id="m-dummyposeanimationduration" /><code>{"private float dummyPoseAnimationDuration"}</code> |
-| <Link id="m-flashduration" /><code>{"private float flashDuration"}</code> |
-| <Link id="m-flashexposure" /><code>{"private float flashExposure"}</code> |
-| <Link id="m-flashfadeoutduration" /><code>{"private float flashFadeoutDuration"}</code> |
-| <Link id="m-isusingcameraflashonposecopy" /><code>{"private bool isUsingCameraFlashOnPoseCopy"}</code> |
-| <Link id="m-isusingdummyposes" /><code>{"private bool isUsingDummyPoses"}</code> |
-| <Link id="m-maxpositiondeltatotriggerpose" /><code>{"private float maxPositionDeltaToTriggerPose"}</code> |
-| <Link id="m-maxrotationdeltatotriggerpose" /><code>{"private float maxRotationDeltaToTriggerPose"}</code> |
-| <Link id="m-minfreezetimetotriggerpose" /><code>{"private float minFreezeTimeToTriggerPose"}</code> |
-| <Link id="m-mintimebetweenposes" /><code>{"private float minTimeBetweenPoses"}</code> |
-| <Link id="m-posecheckingstartdelay" /><code>{"private float poseCheckingStartDelay"}</code> |
-| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> |
-| <Link id="m-spawndistancefromplayer" /><code>{"private float spawnDistanceFromPlayer"}</code> |
-| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary" /><code>{"private float timeToBeForcedOutOfModeWhenOutsideBoundary"}</code> |
-| <Link id="m-timetotoggleequipmentstate" /><code>{"private float timeToToggleEquipmentState"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationstageoverlap" /><code>{"private float animationStageOverlap"}</code> | How much the dummy's pose animation stages overlap. Default 0.25. |
+| <Link id="m-customizationroom" /><code>{"private "}<Link to="/game-api/types/alta-customization/equipmentcustomizationroom">{"EquipmentCustomizationRoom"}</Link>{" customizationRoom"}</code> | Prefab of the `EquipmentCustomizationRoom` spawned in equipment mode. |
+| <Link id="m-dummymaterializationduration" /><code>{"private float dummyMaterializationDuration"}</code> | Seconds the room takes to appear or disappear. Default 2. |
+| <Link id="m-dummyposeanimationduration" /><code>{"private float dummyPoseAnimationDuration"}</code> | Seconds the dummy takes to move into a copied pose. Default 10. |
+| <Link id="m-flashduration" /><code>{"private float flashDuration"}</code> | Seconds the camera flash lasts on a pose copy. Default 0.1. |
+| <Link id="m-flashexposure" /><code>{"private float flashExposure"}</code> | Brightness of the camera flash, scaled by how directly the player looks at the dummy. Default 12. |
+| <Link id="m-flashfadeoutduration" /><code>{"private float flashFadeoutDuration"}</code> | Seconds the camera flash takes to fade. Default 0.8. |
+| <Link id="m-isusingcameraflashonposecopy" /><code>{"private bool isUsingCameraFlashOnPoseCopy"}</code> | Whether copying a pose flashes the screen and plays the pose sound. Off by default. |
+| <Link id="m-isusingdummyposes" /><code>{"private bool isUsingDummyPoses"}</code> | Whether the dummy copies the player's pose when they hold still. On by default. |
+| <Link id="m-maxpositiondeltatotriggerpose" /><code>{"private float maxPositionDeltaToTriggerPose"}</code> | Most the head and hands can move and still count as holding still. Default 0.01. |
+| <Link id="m-maxrotationdeltatotriggerpose" /><code>{"private float maxRotationDeltaToTriggerPose"}</code> | Most the head and hands can rotate and still count as holding still. Default 1. |
+| <Link id="m-minfreezetimetotriggerpose" /><code>{"private float minFreezeTimeToTriggerPose"}</code> | Seconds the player must hold still before the pose is copied. Default 0.5. |
+| <Link id="m-mintimebetweenposes" /><code>{"private float minTimeBetweenPoses"}</code> | Least time between two pose copies. Default 1 second. |
+| <Link id="m-posecheckingstartdelay" /><code>{"private float poseCheckingStartDelay"}</code> | Seconds after entering the mode before pose copying starts. Default 10. |
+| <Link id="m-remotedummyeffects" /><code>{"private "}<Link to="/game-api/types/global-q-r/remoteequipmentmodevisuals">{"RemoteEquipmentModeVisuals"}</Link>{" remoteDummyEffects"}</code> | Visuals spawned in front of a remote player who is in equipment mode. |
+| <Link id="m-spawndistancefromplayer" /><code>{"private float spawnDistanceFromPlayer"}</code> | How far in front of the player's feet the room or remote visuals are placed. Default 1.5. |
+| <Link id="m-timetobeforcedoutofmodewhenoutsideboundary" /><code>{"private float timeToBeForcedOutOfModeWhenOutsideBoundary"}</code> | Seconds outside the room boundary before the player is pushed out of the mode. Default 3. |
+| <Link id="m-timetotoggleequipmentstate" /><code>{"private float timeToToggleEquipmentState"}</code> | Backing field for `TimeToToggleEquipmentState`, default 1.5. Nothing in the decompiled code reads it. |
 
 </details>
 

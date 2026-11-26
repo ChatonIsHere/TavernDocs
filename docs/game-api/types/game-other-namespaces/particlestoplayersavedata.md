@@ -1,6 +1,6 @@
 ---
 title: "ParticlesToPlayerSaveData"
-description: "class ParticlesToPlayerSaveData in Root.Township."
+description: "Save data for ParticlesToPlayer."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ParticlesToPlayerSaveData
 
 A **class** in `Root.Township`, `Features.Visual_Effects.General_Scripts`.
+
+Save data for `ParticlesToPlayer`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`NewSaveData<ParticlesToPlayer, ParticlesToPlayerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, `Features.Visual_Effects.General_Scripts`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-vfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link></code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-vfxdata" /><code><Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/vfxdata">{"VfxData"}</Link></code> | Saved state of the effect. |
 
 ## Used in
 

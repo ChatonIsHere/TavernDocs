@@ -14,7 +14,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`LoginCredentials`](/game-api/types/assembly-api-client/logincredentials) | class |  | 4 |  |
+| [`LoginCredentials`](/game-api/types/assembly-api-client/logincredentials) | class |  | 4 | The JWT tokens returned when a user or server logs in to the Alta API. |
 
 ## Alta.Api.Client.HighLevel
 
@@ -27,54 +27,54 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`FutureUserActionsClient`](/game-api/types/assembly-api-client/futureuseractionsclient) | class | `HighLevelApiClientBase`, `IFutureUserActions` | 3 |  |
 | [`GroupBan`](/game-api/types/assembly-api-client/groupban) | class | `Outgoing` | 2 |  |
 | [`GroupBans`](/game-api/types/assembly-api-client/groupbans) | class | `PaginatedListWithAdd<GroupBan>` | 2 |  |
-| [`GroupCreator`](/game-api/types/assembly-api-client/groupcreator) | class |  | 3 |  |
-| [`GroupDiscovery`](/game-api/types/assembly-api-client/groupdiscovery) | class |  | 3 |  |
-| [`GroupGet`](/game-api/types/assembly-api-client/groupget) | class | `PaginatedList<JoinableGroupInfo>` | 0 |  |
+| [`GroupCreator`](/game-api/types/assembly-api-client/groupcreator) | class |  | 3 | Alta web API calls for creating a group and its server. Reached through `ApiAccess.ApiClient.Groups.CreateGroup`. The API is gone, so calls fail after timing out. |
+| [`GroupDiscovery`](/game-api/types/assembly-api-client/groupdiscovery) | class |  | 3 | Alta web API lists of groups a player can find and join. Reached through `ApiAccess.ApiClient.Groups.Discovery`. The API is gone, so calls fail after timing out. |
+| [`GroupGet`](/game-api/types/assembly-api-client/groupget) | class | `PaginatedList<JoinableGroupInfo>` | 0 | Paged list of joinable groups of one group type, fetched from the Alta web API and wrapped as `JoinableGroupInfo`. |
 | [`GroupInfoManager`](/game-api/types/assembly-api-client/groupinfomanager) | class |  | 3 |  |
 | [`GroupInfoUpdate`](/game-api/types/assembly-api-client/groupinfoupdate) | class |  | 2 |  |
 | [`GroupInvites`](/game-api/types/assembly-api-client/groupinvites) | class | `PaginatedListWithAdd<OutgoingGroupInvite>` | 2 |  |
 | [`GroupJoinRequests`](/game-api/types/assembly-api-client/groupjoinrequests) | class | `PaginatedList<IncomingGroupJoinRequest>` | 0 |  |
-| [`GroupMember`](/game-api/types/assembly-api-client/groupmember) | class |  | 4 |  |
+| [`GroupMember`](/game-api/types/assembly-api-client/groupmember) | class |  | 4 | One member of a joined group in Alta's web API, with calls to kick, ban or change their role. Those services are gone, so the calls fail. |
 | [`GroupMembers`](/game-api/types/assembly-api-client/groupmembers) | class | `PaginatedList<GroupMember>` | 0 |  |
 | [`GroupRoles`](/game-api/types/assembly-api-client/grouproles) | class |  | 2 |  |
 | [`GroupsClient`](/game-api/types/assembly-api-client/groupsclient) | internal class | `HighLevelApiClientBase`, `IGroupsClient` | 7 |  |
-| [`HighLevelApiClient`](/game-api/types/assembly-api-client/highlevelapiclient) | class | `IHighLevelApiClientManager`, `IHighLevelApiClient` | 35 |  |
+| [`HighLevelApiClient`](/game-api/types/assembly-api-client/highlevelapiclient) | class | `IHighLevelApiClientManager`, `IHighLevelApiClient` | 35 | The online client for Alta's web API, one sub-client per area. Made by `HighLevelApiClientFactory` and reached through `ApiAccess.ApiClient`. Both sides; most calls now time out because the services are gone. |
 | [`HighLevelApiClientBase`](/game-api/types/assembly-api-client/highlevelapiclientbase) | abstract class |  | 0 | Internal base for the high level web API client parts; each holds a reference to the low level client manager. Not constructible outside the API client assembly. |
 | [`HighLevelApiClientFactory`](/game-api/types/assembly-api-client/highlevelapiclientfactory) | static class |  | 16 |  |
-| [`IAccountClient`](/game-api/types/assembly-api-client/iaccountclient) | interface |  | 5 |  |
-| [`IAchievementClient`](/game-api/types/assembly-api-client/iachievementclient) | interface |  | 4 |  |
-| [`IAnalyticsClient`](/game-api/types/assembly-api-client/ianalyticsclient) | interface |  | 4 |  |
-| [`IFutureUserActions`](/game-api/types/assembly-api-client/ifutureuseractions) | interface |  | 3 |  |
-| [`IGroupsClient`](/game-api/types/assembly-api-client/igroupsclient) | interface |  | 6 |  |
+| [`IAccountClient`](/game-api/types/assembly-api-client/iaccountclient) | interface |  | 5 | Alta web API calls for linking a Discord account to an Alta account. `ApiAccess.ApiClient.Account`. The API is gone, so calls fail. |
+| [`IAchievementClient`](/game-api/types/assembly-api-client/iachievementclient) | interface |  | 4 | Alta web API calls for a user's achievements and action stats. `ApiAccess.ApiClient.AchievementClient`. The API is gone, so calls fail. |
+| [`IAnalyticsClient`](/game-api/types/assembly-api-client/ianalyticsclient) | interface |  | 4 | Alta web API calls for sending analytics events. `ApiAccess.ApiClient.Analytics`. The API is gone, so each event fails and is logged. |
+| [`IFutureUserActions`](/game-api/types/assembly-api-client/ifutureuseractions) | interface |  | 3 | Alta web API calls that store an action to run for an outside user (an Oculus user, for example) once they have an Alta account. `ApiAccess.ApiClient.FutureUserActions`. |
+| [`IGroupsClient`](/game-api/types/assembly-api-client/igroupsclient) | interface |  | 6 | Alta web API calls for groups (the communities that own servers). `ApiAccess.ApiClient.Groups`. The API is gone, so calls fail. |
 | [`IHighLevelApiClient`](/game-api/types/assembly-api-client/ihighlevelapiclient) | interface |  | 35 | [Alta's web API](../console-and-utilities/alta-web-api.md#ihighlevelapiclient): One property per area, each its own client class: |
-| [`IHighLevelApiClientManager`](/game-api/types/assembly-api-client/ihighlevelapiclientmanager) | internal interface |  | 2 |  |
-| [`IInstancesClient`](/game-api/types/assembly-api-client/iinstancesclient) | interface |  | 1 |  |
-| [`ILauncherApiClient`](/game-api/types/assembly-api-client/ilauncherapiclient) | interface |  | 2 |  |
-| [`IMatchMakingClient`](/game-api/types/assembly-api-client/imatchmakingclient) | interface |  | 1 |  |
-| [`IncomingGroupInvite`](/game-api/types/assembly-api-client/incominggroupinvite) | class | `AcceptReject` | 3 |  |
+| [`IHighLevelApiClientManager`](/game-api/types/assembly-api-client/ihighlevelapiclientmanager) | internal interface |  | 2 | Internal interface for the object that owns the low-level Alta API client and can log it out. |
+| [`IInstancesClient`](/game-api/types/assembly-api-client/iinstancesclient) | interface |  | 1 | Alta web API call that lists running server instances in Alta's hosting. `ApiAccess.ApiClient.Instances`. |
+| [`ILauncherApiClient`](/game-api/types/assembly-api-client/ilauncherapiclient) | interface |  | 2 | Alta web API calls for the games listed in Alta's launcher. `ApiAccess.ApiClient.LauncherClient`. |
+| [`IMatchMakingClient`](/game-api/types/assembly-api-client/imatchmakingclient) | interface |  | 1 | Alta web API matchmaking. `ApiAccess.ApiClient.MatchMaking`. |
+| [`IncomingGroupInvite`](/game-api/types/assembly-api-client/incominggroupinvite) | class | `AcceptReject` | 3 | An invite to a group that the current user received, with calls to accept or reject it through the Alta web API. |
 | [`IncomingGroupJoinRequest`](/game-api/types/assembly-api-client/incominggroupjoinrequest) | class | `AcceptReject` | 3 |  |
 | [`InstancesClient`](/game-api/types/assembly-api-client/instancesclient) | internal class | `HighLevelApiClientBase`, `IInstancesClient` | 2 |  |
 | [`InvitedGroups`](/game-api/types/assembly-api-client/invitedgroups) | class | `PaginatedList<IncomingGroupInvite>` | 0 |  |
-| [`IOculusClient`](/game-api/types/assembly-api-client/ioculusclient) | interface |  | 4 |  |
-| [`IOculusShop`](/game-api/types/assembly-api-client/ioculusshop) | interface |  | 1 |  |
-| [`IPicoClient`](/game-api/types/assembly-api-client/ipicoclient) | interface |  | 4 |  |
-| [`IPlayerReportsClient`](/game-api/types/assembly-api-client/iplayerreportsclient) | interface |  | 3 |  |
-| [`IRecentPlayersClient`](/game-api/types/assembly-api-client/irecentplayersclient) | interface |  | 2 |  |
-| [`ISecurityApiClient`](/game-api/types/assembly-api-client/isecurityapiclient) | interface |  | 6 |  |
-| [`IServerAccess`](/game-api/types/assembly-api-client/iserveraccess) | interface |  | 8 |  |
-| [`IServerApiClient`](/game-api/types/assembly-api-client/iserverapiclient) | interface |  | 22 |  |
-| [`IServicesApiClient`](/game-api/types/assembly-api-client/iservicesapiclient) | interface |  | 7 |  |
-| [`ISettingsClient`](/game-api/types/assembly-api-client/isettingsclient) | interface |  | 2 |  |
-| [`IShopAccount`](/game-api/types/assembly-api-client/ishopaccount) | interface |  | 6 |  |
-| [`IShopApiClient`](/game-api/types/assembly-api-client/ishopapiclient) | interface |  | 11 |  |
-| [`IShopEditor`](/game-api/types/assembly-api-client/ishopeditor) | interface |  | 9 |  |
-| [`IShopPurchase`](/game-api/types/assembly-api-client/ishoppurchase) | interface |  | 1 |  |
-| [`ISocialClient`](/game-api/types/assembly-api-client/isocialclient) | interface |  | 9 |  |
+| [`IOculusClient`](/game-api/types/assembly-api-client/ioculusclient) | interface |  | 4 | Alta web API calls for linking an Oculus account to an Alta account. `ApiAccess.ApiClient.Oculus`. |
+| [`IOculusShop`](/game-api/types/assembly-api-client/ioculusshop) | interface |  | 1 | Alta web API call for turning Oculus store purchases into Alta shop items. `ShopClient.Oculus`. |
+| [`IPicoClient`](/game-api/types/assembly-api-client/ipicoclient) | interface |  | 4 | Alta web API calls for linking a Pico account to an Alta account, per Pico region. `ApiAccess.ApiClient.Pico`. |
+| [`IPlayerReportsClient`](/game-api/types/assembly-api-client/iplayerreportsclient) | interface |  | 3 | Alta web API calls for reporting players and reading reports. `ApiAccess.ApiClient.PlayerReports`. |
+| [`IRecentPlayersClient`](/game-api/types/assembly-api-client/irecentplayersclient) | interface |  | 2 | Alta web API calls for the recent players list. `ApiAccess.ApiClient.RecentPlayers`. |
+| [`ISecurityApiClient`](/game-api/types/assembly-api-client/isecurityapiclient) | interface |  | 6 | Alta web API calls for bans and identity token checks. `ApiAccess.ApiClient.SecurityClient`. |
+| [`IServerAccess`](/game-api/types/assembly-api-client/iserveraccess) | interface |  | 8 | Server-side handle for reporting one game server's session to the Alta API: start, stop, ping and online players. `ServerAccess` calls the API; `LocalServerAccess` does nothing. |
+| [`IServerApiClient`](/game-api/types/assembly-api-client/iserverapiclient) | interface |  | 22 | Alta web API calls for servers: lists, joining, permissions and online status. `ApiAccess.ApiClient.ServerClient`. The API is gone, so calls fail after timing out; see the Alta web API guide for which are stubbed. |
+| [`IServicesApiClient`](/game-api/types/assembly-api-client/iservicesapiclient) | interface |  | 7 | Alta web API helper calls: public IP lookup, passwords, verification and identity tokens. `ApiAccess.ApiClient.ServicesClient`. |
+| [`ISettingsClient`](/game-api/types/assembly-api-client/isettingsclient) | interface |  | 2 | Alta web API calls for named settings stored as text. `ApiAccess.ApiClient.SettingsClient`. |
+| [`IShopAccount`](/game-api/types/assembly-api-client/ishopaccount) | interface |  | 6 | Alta web API calls for a user's shop account and owned items. `ShopClient.Account`. |
+| [`IShopApiClient`](/game-api/types/assembly-api-client/ishopapiclient) | interface |  | 11 | Alta web API calls for the cosmetics shop. `ApiAccess.ApiClient.ShopClient`. The API is gone; mods stub the rotation and purchase checks. |
+| [`IShopEditor`](/game-api/types/assembly-api-client/ishopeditor) | interface |  | 9 | Alta web API calls for creating and editing shop items and item sets. `ShopClient.Editor`. Probably staff only. |
+| [`IShopPurchase`](/game-api/types/assembly-api-client/ishoppurchase) | interface |  | 1 | Alta web API call for buying a shop item. `ShopClient.Purchase`. |
+| [`ISocialClient`](/game-api/types/assembly-api-client/isocialclient) | interface |  | 9 | Alta web API calls for friends. `ApiAccess.ApiClient.SocialClient`. TavernEssentials swaps in its own social client. |
 | [`IUserApiClient`](/game-api/types/assembly-api-client/iuserapiclient) | interface |  | 21 | The user account part of Alta's web API: user lookups, verification, roles and cosmetic presets. Reached through `ApiAccess.ApiClient.UserClient`. Every method except `Logout` makes a web request. |
-| [`IVoiceApiClient`](/game-api/types/assembly-api-client/ivoiceapiclient) | interface |  | 2 |  |
+| [`IVoiceApiClient`](/game-api/types/assembly-api-client/ivoiceapiclient) | interface |  | 2 | Alta web API calls for Vivox voice chat tokens. `ApiAccess.ApiClient.VoiceClient`. Voice no longer works. |
 | [`JoinableGroupInfo`](/game-api/types/assembly-api-client/joinablegroupinfo) | class |  | 2 |  |
-| [`JoinedGroupManager`](/game-api/types/assembly-api-client/joinedgroupmanager) | class |  | 7 |  |
-| [`JoinedGroups`](/game-api/types/assembly-api-client/joinedgroups) | class | `PaginatedList<JoinedGroupManager>` | 1 |  |
+| [`JoinedGroupManager`](/game-api/types/assembly-api-client/joinedgroupmanager) | class |  | 7 | High-level API handle for a group the current user is a member of, with its join requests, invites, bans and info managers. |
+| [`JoinedGroups`](/game-api/types/assembly-api-client/joinedgroups) | class | `PaginatedList<JoinedGroupManager>` | 1 | Paged list of the groups the logged-in user is a member of, from the Alta web API. `Groups.Joined`. |
 | [`LauncherApiClient`](/game-api/types/assembly-api-client/launcherapiclient) | class | `HighLevelApiClientBase`, `ILauncherApiClient` | 2 |  |
 | [`LocalServerAccess`](/game-api/types/assembly-api-client/localserveraccess) | class | `IServerAccess` | 9 |  |
 | [`MatchMakingClient`](/game-api/types/assembly-api-client/matchmakingclient) | internal class | `HighLevelApiClientBase`, `IMatchMakingClient` | 2 |  |
@@ -95,23 +95,23 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OfflineUserApiClient`](/game-api/types/assembly-api-client/offlineuserapiclient) | class | `IUserApiClient` | 21 |  |
 | [`OfflineVoiceClient`](/game-api/types/assembly-api-client/offlinevoiceclient) | class | `IVoiceApiClient` | 2 |  |
 | [`Outgoing`](/game-api/types/assembly-api-client/outgoing) | abstract class |  | 1 |  |
-| [`OutgoingGroupInvite`](/game-api/types/assembly-api-client/outgoinggroupinvite) | class | `Outgoing` | 2 |  |
+| [`OutgoingGroupInvite`](/game-api/types/assembly-api-client/outgoinggroupinvite) | class | `Outgoing` | 2 | An invite the group has sent to a user, which can be revoked through the Alta web API. |
 | [`OutgoingGroupJoinRequest`](/game-api/types/assembly-api-client/outgoinggroupjoinrequest) | class | `Outgoing` | 2 |  |
 | [`OutgoingPrivateGroupJoinRequest`](/game-api/types/assembly-api-client/outgoingprivategroupjoinrequest) | class | `Outgoing` | 2 |  |
 | [`PaginatedList<T>`](/game-api/types/assembly-api-client/paginatedlist-t) | abstract class |  | 2 |  |
 | [`PaginatedListWithAdd<T>`](/game-api/types/assembly-api-client/paginatedlistwithadd-t) | abstract class | `PaginatedList<T>` | 1 |  |
-| [`PersonalGroups`](/game-api/types/assembly-api-client/personalgroups) | class |  | 3 |  |
+| [`PersonalGroups`](/game-api/types/assembly-api-client/personalgroups) | class |  | 3 | The logged-in user's group join requests and invites, from the Alta web API. `Groups.Personal`. |
 | [`PicoClient`](/game-api/types/assembly-api-client/picoclient) | internal class | `HighLevelApiClientBase`, `IPicoClient` | 5 |  |
-| [`PlayerReportAdmin`](/game-api/types/assembly-api-client/playerreportadmin) | class |  | 3 |  |
+| [`PlayerReportAdmin`](/game-api/types/assembly-api-client/playerreportadmin) | class |  | 3 | High-level API handle for moderating one player report: mark it ignored or acted on. |
 | [`PlayerReportsClient`](/game-api/types/assembly-api-client/playerreportsclient) | class | `HighLevelApiClientBase`, `IPlayerReportsClient` | 3 |  |
-| [`PlayerReportSummary`](/game-api/types/assembly-api-client/playerreportsummary) | class |  | 10 |  |
+| [`PlayerReportSummary`](/game-api/types/assembly-api-client/playerreportsummary) | class |  | 10 | All admin reports against one player on one server, grouped by `ServerReportCollection`. Built by the player reports client from report data fetched from the web API. |
 | [`RecentPlayersClient`](/game-api/types/assembly-api-client/recentplayersclient) | class | `HighLevelApiClientBase`, `IRecentPlayersClient` | 2 |  |
 | [`RequestedGroups`](/game-api/types/assembly-api-client/requestedgroups) | class | `PaginatedList<OutgoingGroupJoinRequest>` | 0 |  |
 | [`SecurityApiClient`](/game-api/types/assembly-api-client/securityapiclient) | class | `HighLevelApiClientBase`, `ISecurityApiClient` | 6 |  |
 | [`ServerAccess`](/game-api/types/assembly-api-client/serveraccess) | class | `IServerAccess` | 8 |  |
 | [`ServerApiClient`](/game-api/types/assembly-api-client/serverapiclient) | class | `HighLevelApiClientBase`, `IServerApiClient` | 22 |  |
 | [`ServerReportCollection`](/game-api/types/assembly-api-client/serverreportcollection) | class |  | 1 |  |
-| [`ServerStartArguments`](/game-api/types/assembly-api-client/serverstartarguments) | class |  | 9 |  |
+| [`ServerStartArguments`](/game-api/types/assembly-api-client/serverstartarguments) | class |  | 9 | What a server tells the Alta web API when it starts its session. Built by `ServerHandler` and passed to `IServerAccess.StartAsync`. |
 | [`ServicesApiClient`](/game-api/types/assembly-api-client/servicesapiclient) | class | `HighLevelApiClientBase`, `IServicesApiClient` | 7 |  |
 | [`SettingsClient`](/game-api/types/assembly-api-client/settingsclient) | class | `HighLevelApiClientBase`, `ISettingsClient` | 2 | [Alta's web API](../console-and-utilities/alta-web-api.md) |
 | [`ShopAccount`](/game-api/types/assembly-api-client/shopaccount) | class | `IShopAccount` | 6 |  |
@@ -119,7 +119,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ShopEditor`](/game-api/types/assembly-api-client/shopeditor) | class | `IShopEditor` | 9 |  |
 | [`ShopPurchase`](/game-api/types/assembly-api-client/shoppurchase) | class | `IShopPurchase` | 1 |  |
 | [`SocialClient`](/game-api/types/assembly-api-client/socialclient) | class | `HighLevelApiClientBase`, `ISocialClient` | 9 |  |
-| [`Status`](/game-api/types/assembly-api-client/status) | class |  | 11 |  |
+| [`Status`](/game-api/types/assembly-api-client/status) | class |  | 11 | A service status notice (an outage or incident message) as JSON from the web API, with its region, platform and severity. |
 | [`Status.StatusPlatform`](/game-api/types/assembly-api-client/status-statusplatform) | enum |  | 4 |  |
 | [`Status.StatusRegion`](/game-api/types/assembly-api-client/status-statusregion) | enum |  | 4 |  |
 | [`Status.StatusSeverity`](/game-api/types/assembly-api-client/status-statusseverity) | enum |  | 4 |  |
@@ -140,14 +140,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ApiBatchRequestService`](/game-api/types/assembly-api-client/apibatchrequestservice) | static class |  | 1 |  |
-| [`BatchedRequestEntry`](/game-api/types/assembly-api-client/batchedrequestentry) | class |  | 2 |  |
+| [`BatchedRequestEntry`](/game-api/types/assembly-api-client/batchedrequestentry) | class |  | 2 | One queued request in `ApiBatchRequestService`. Entries for the same address are sent together as one JSON list. |
 | [`ConvertedPagedResult<TSource, T>`](/game-api/types/assembly-api-client/convertedpagedresult-tsource-t) | class | `IPagedResult<T>` | 5 |  |
 | [`DoubleBufferedQueue<T>`](/game-api/types/assembly-api-client/doublebufferedqueue-t) | class |  | 3 |  |
-| [`IPagedResult<T>`](/game-api/types/assembly-api-client/ipagedresult-t) | interface |  | 4 |  |
-| [`LoginCredentialsChangedHandler`](/game-api/types/assembly-api-client/logincredentialschangedhandler) | delegate |  | 0 |  |
+| [`IPagedResult<T>`](/game-api/types/assembly-api-client/ipagedresult-t) | interface |  | 4 | A paged list result from the Alta web API, fetched one page at a time. |
+| [`LoginCredentialsChangedHandler`](/game-api/types/assembly-api-client/logincredentialschangedhandler) | delegate |  | 0 | Callback for `CredentialsChanged`, given the old and the new login credentials. |
 | [`LowLevelApiClient`](/game-api/types/assembly-api-client/lowlevelapiclient) | class |  | 164 | The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's web API, which no longer answers. Most methods first refresh the login if needed (throwing `AuthorizationException` with none), and failed responses throw `ApiErrorException`, `ForbiddenException` or `HttpException`. |
-| [`PagedConfig`](/game-api/types/assembly-api-client/pagedconfig) | class |  | 4 |  |
-| [`PagedResult<T>`](/game-api/types/assembly-api-client/pagedresult-t) | class | `IPagedResult<T>` | 5 |  |
+| [`PagedConfig`](/game-api/types/assembly-api-client/pagedconfig) | class |  | 4 | Page size and continuation token for paged API calls. |
+| [`PagedResult<T>`](/game-api/types/assembly-api-client/pagedresult-t) | class | `IPagedResult<T>` | 5 | Pages through a paged Alta API endpoint, following the `paginationToken` response header. |
 
 ## Alta.Api.Client.Utility
 

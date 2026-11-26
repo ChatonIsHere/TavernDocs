@@ -1,6 +1,6 @@
 ---
 title: "GeneratedPositioning.Module"
-description: "abstract class GeneratedPositioning.Module in Root.Township."
+description: "Base asset for a step that changes a generated position or rotation, such as RandomYRotation."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GeneratedPositioning.Module
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base asset for a step that changes a generated position or rotation, such as `RandomYRotation`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GeneratedPositioning`](/game-api/types/global-e-h/generatedpositioning)
@@ -25,9 +27,9 @@ An **abstract class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-modify" /><code>{"abstract void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modify" /><code>{"abstract void Modify(ref Vector3 position, ref Quaternion rotation)"}</code> | Changes the position and rotation in place. |
 
 ## Used in
 

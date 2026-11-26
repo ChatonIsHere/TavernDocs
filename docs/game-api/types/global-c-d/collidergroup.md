@@ -29,12 +29,12 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> |
-| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> |
-| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isacceptingtriggers" /><code>{"private bool isAcceptingTriggers"}</code> | When false, trigger colliders are left out of the group. |
+| <Link id="m-isdeletingall" /><code>{"private bool isDeletingAll"}</code> | Inspector button labelled Delete All Colliders; does nothing in this build. |
+| <Link id="m-isdisablinginternalcollisiononstart" /><code>{"private bool isDisablingInternalCollisionOnStart"}</code> | Ignores collisions between the group's own colliders on `Start`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -57,9 +57,9 @@ A `ComponentGroup` of colliders with helpers to switch them on and off, set thei
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Turns off collisions between the group's own colliders when `isDisablingInternalCollisionOnStart` is set. |
 
 </details>
 

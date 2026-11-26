@@ -52,9 +52,9 @@ A river segment between two `RiverNode`s in the forest generator, with its splin
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-foreach" /><code>{"internal void ForEach(Func<object, object> p)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-foreach" /><code>{"internal void ForEach(Func<object, object> p)"}</code> | Unfinished stub. Throws `NotImplementedException`. |
 
 </details>
 

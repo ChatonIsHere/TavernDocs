@@ -1,6 +1,6 @@
 ---
 title: "Spawner"
-description: "class Spawner in Root.Township."
+description: "Server: spawns count copies of one prefab, or random picks from a distribution, at its spawn points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Spawner
 
 A **class** in `Root.Township`, no namespace.
+
+Server: spawns `count` copies of one prefab, or random picks from a distribution, at its spawn points. A component on a networked prefab.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** [`SpawnerBase`](/game-api/types/global-s/spawnerbase)
@@ -26,21 +28,21 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-count" /><code>{"private int count"}</code> |
-| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> |
-| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-count" /><code>{"private int count"}</code> | How many to spawn (5 by default). |
+| <Link id="m-distribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" distribution"}</code> | Distribution to pick prefabs from when `prefab` is not set, using the chunk's spawn attributes. |
+| <Link id="m-isallsame" /><code>{"private bool isAllSame"}</code> | When true, picks one prefab and spawns it once with a count of `count` instead of picking each time. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab"}</code> | Fixed prefab to spawn. Use this or `distribution`, not both. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> |
-| <Link id="m-spawnandreplace" /><code>{"void SpawnAndReplace()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawn" /><code>{"override void Spawn()"}</code> | Server: spawns the items, unless the entity has no chunk or is being destroyed. With `isAllSame` it spawns one stack of `count`. |
+| <Link id="m-spawnandreplace" /><code>{"void SpawnAndReplace()"}</code> | Server: spawns, then replaces this entity with the last thing spawned, keeping the spawned item's position. |
 
 ## Used in
 

@@ -29,9 +29,9 @@ On a prefab spawned as a growth stage: remembers which grower, definition and st
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; logs an error when a stage is set twice. |
 
 </details>
 
@@ -62,9 +62,9 @@ On a prefab spawned as a growth stage: remembers which grower, definition and st
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> | Drops the growth definition, grower and stage index, then raises `OnSetupChanged`. Called by `FailStage`. |
 
 </details>
 

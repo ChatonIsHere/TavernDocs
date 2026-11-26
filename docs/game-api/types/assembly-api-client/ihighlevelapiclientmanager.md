@@ -1,6 +1,6 @@
 ---
 title: "IHighLevelApiClientManager"
-description: "interface IHighLevelApiClientManager in Alta.Api.Client."
+description: "Internal interface for the object that owns the low-level Alta API client and can log it out."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,20 +12,22 @@ import Link from '@docusaurus/Link';
 
 An **internal interface** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Internal interface for the object that owns the low-level Alta API client and can log it out.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Derived types** [`HighLevelApiClient`](/game-api/types/assembly-api-client/highlevelapiclient)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-apiclient" /><code><Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" ApiClient { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apiclient" /><code><Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" ApiClient { get; }"}</code> | The low-level API client that makes the HTTP calls. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-logout" /><code>{"void Logout()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logout" /><code>{"void Logout()"}</code> | Logs the client out. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "Leaderboard.PersonalBest"
-description: "struct Leaderboard.PersonalBest in Root.Township."
+description: "Message payload a Leaderboard sends to clients with a player's time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,15 +12,17 @@ import Link from '@docusaurus/Link';
 
 A **private struct** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
 
+Message payload a `Leaderboard` sends to clients with a player's time.
+
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Nested in** [`Leaderboard`](/game-api/types/global-i-l/leaderboard)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data"}</code> |
-| <Link id="m-isbesttime" /><code>{"bool isBestTime"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/global-p/playerdata">{"PlayerData"}</Link>{" data"}</code> | The player's name and time. |
+| <Link id="m-isbesttime" /><code>{"bool isBestTime"}</code> | Whether this time is the player's new best. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "CookingLiquidVisualTippingPointController.TippingSettings"
-description: "class CookingLiquidVisualTippingPointController.TippingSettings in Root.Township."
+description: "Tipping limits for one liquid level of a cooking container."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CookingLiquidVisualTippingPointController.TippingSettings
 
 A **class** in `Root.Township`, `Alta.Cooking`.
+
+Tipping limits for one liquid level of a cooking container. The controller picks the entries either side of the current level and blends them.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`CookingLiquidVisualTippingPointController`](/game-api/types/alta-crafting/cookingliquidvisualtippingpointcontroller)
@@ -23,16 +25,16 @@ A **class** in `Root.Township`, `Alta.Cooking`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> |
-| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tipthreshold" /><code>{"float TipThreshold"}</code> | Tipping threshold given to the liquid visual at this level. |
+| <Link id="m-visualtiplimit" /><code>{"float VisualTipLimit"}</code> | Visual tip limit given to the liquid visual at this level. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows both values, for debugging. |
 
 ## Used in
 

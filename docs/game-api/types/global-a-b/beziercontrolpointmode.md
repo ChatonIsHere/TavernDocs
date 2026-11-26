@@ -1,6 +1,6 @@
 ---
 title: "BezierControlPointMode"
-description: "enum BezierControlPointMode in Root.Township."
+description: "How a bezier spline keeps neighbouring control points in line: free, aligned or mirrored."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BezierControlPointMode
 
 An **enum** in `Root.Township`, no namespace.
+
+How a bezier spline keeps neighbouring control points in line: free, aligned or mirrored.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 

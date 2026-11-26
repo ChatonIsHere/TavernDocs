@@ -1,6 +1,6 @@
 ---
 title: "FaceEdgeCorner"
-description: "class FaceEdgeCorner in Root.Township."
+description: "A book flair asset for the corner on a book's outer edge."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceEdgeCorner
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the corner on a book's outer edge. No extra data beyond `BookFlair`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

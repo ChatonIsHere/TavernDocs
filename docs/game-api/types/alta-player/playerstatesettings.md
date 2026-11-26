@@ -29,10 +29,10 @@ Base settings asset for a player state (downed, dead and so on). Each subclass n
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-controlstoadd" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> controlsToAdd"}</code> |
-| <Link id="m-controlstoremove" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> controlsToRemove"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-controlstoadd" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> controlsToAdd"}</code> | Backing field for `ControlsToAdd`. |
+| <Link id="m-controlstoremove" /><code>{"private List<"}<Link to="/game-api/types/global-c-d/controllermodetype">{"ControllerModeType"}</Link>{"> controlsToRemove"}</code> | Backing field for `ControlsToRemove`. |
 
 </details>
 

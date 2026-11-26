@@ -29,14 +29,14 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> |
-| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> nodes"}</code> |
-| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> |
-| <Link id="m-overground" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> overground"}</code> |
-| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> |
-| <Link id="m-waterfalls" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> waterfalls"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxvolume" /><code>{"private float maxVolume"}</code> | Backing field for `MaxVolume`. |
+| <Link id="m-nodes" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{"> nodes"}</code> | Backing list for `Nodes` and `WorkingNodes`. |
+| <Link id="m-nodewidthmultiplier" /><code>{"private float nodeWidthMultiplier"}</code> | Backing field for `NodeWidthMultiplier`. |
+| <Link id="m-overground" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{"> overground"}</code> | Backing list for `Overground`: outgoing paths of nodes that aren't underground. |
+| <Link id="m-overgroundvolumethreshold" /><code>{"private float overgroundVolumeThreshold"}</code> | Backing field for `OvergroundVolumeThreshold`. |
+| <Link id="m-waterfalls" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/waterfall">{"Waterfall"}</Link>{"> waterfalls"}</code> | Backing list for `Waterfalls`. |
 
 </details>
 
@@ -58,9 +58,9 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-static-icacheable-version" /><code>{"private uint Alta.Static.ICacheable.Version { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-static-icacheable-version" /><code>{"private uint Alta.Static.ICacheable.Version { get; }"}</code> | Cache format version, 1. |
 
 </details>
 
@@ -69,9 +69,9 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serializeasync" /><code>{"private Task Alta.Static.ICacheable.SerializeAsync(uint version, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Explicit `ICacheable` implementation: writes or reads river nodes, their outgoing paths and waterfalls, then rebuilds volumes and the overground list. |
 
 </details>
 

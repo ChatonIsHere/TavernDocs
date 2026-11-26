@@ -1,6 +1,6 @@
 ---
 title: "EatingAmountArgument"
-description: "Eater, when a player finishes eating (on whichever side ran the bite)"
+description: "Game task argument sent on the EatAmount channel when a player eats something, holding the eaten prefab."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-`Eater`, when a player finishes eating (on whichever side ran the bite)
+Game task argument sent on the `EatAmount` channel when a player eats something, holding the eaten prefab.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`GameTaskActionArgument`](/game-api/types/global-e-h/gametaskactionargument)
@@ -26,7 +26,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> |
-| <Link id="m-eating" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Eating { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"override "}<Link to="/game-api/types/global-e-h/gameactionchannel">{"GameActionChannel"}</Link>{" Channel { get; }"}</code> | Always `GameActionChannel.EatAmount`. |
+| <Link id="m-eating" /><code><Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" Eating { get; }"}</code> | The prefab that was eaten. |

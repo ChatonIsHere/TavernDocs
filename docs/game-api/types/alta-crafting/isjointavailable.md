@@ -1,6 +1,6 @@
 ---
 title: "IsJointAvailable"
-description: "delegate IsJointAvailable in Root.Township."
+description: "Event handler on joint points and slot groups."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IsJointAvailable
 
 A **delegate** in `Root.Township`, `Alta.Crafting`.
+
+Event handler on joint points and slot groups. Handlers can set the `ref bool` to false to mark the joint as unavailable.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `MulticastDelegate`

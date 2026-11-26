@@ -1,6 +1,6 @@
 ---
 title: "EffectHandler.TeleportType"
-description: "enum EffectHandler.TeleportType in Root.Township."
+description: "Why a player is being teleported by EffectHandler.Teleport: default, a potion, or being moved back to a challenge checkpoint."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EffectHandler.TeleportType
 
 An **enum** in `Root.Township`, `Alta.Alchemy`.
+
+Why a player is being teleported by `EffectHandler.Teleport`: default, a potion, or being moved back to a challenge checkpoint.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`EffectHandler`](/game-api/types/alta-stats-effects/effecthandler)

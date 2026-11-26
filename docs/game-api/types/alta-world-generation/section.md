@@ -1,6 +1,6 @@
 ---
 title: "Section"
-description: "class Section in Root.Township."
+description: "Cave generation asset for a run of layers: how many layers, which biomes they can be and how attributes change through them."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Section
 
 A **class** in `Root.Township`, `Alta.Caves`.
+
+Cave generation asset for a run of layers: how many layers, which biomes they can be and how attributes change through them.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)
@@ -28,26 +30,26 @@ A **class** in `Root.Township`, `Alta.Caves`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurvevalue">{"AttributeCurveValue"}</Link>{"[] attributeMultipliers"}</code> |
-| <Link id="m-biomeweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biomesinglevalue">{"BiomeSingleValue"}</Link>{"[] biomeWeightings"}</code> |
-| <Link id="m-length" /><code>{"private int length"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributemultipliers" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurvevalue">{"AttributeCurveValue"}</Link>{"[] attributeMultipliers"}</code> | Attribute curves applied over the section's length. |
+| <Link id="m-biomeweightings" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/biomesinglevalue">{"BiomeSingleValue"}</Link>{"[] biomeWeightings"}</code> | Biomes this section can pick, with their weights. |
+| <Link id="m-length" /><code>{"private int length"}</code> | Backing field for `Length`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-length-2" /><code>{"int Length { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-length-2" /><code>{"int Length { get; }"}</code> | Number of layers in the section. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-applymultipliers" /><code>{"void ApplyMultipliers(int layer, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> |
-| <Link id="m-getrandombiome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" GetRandomBiome("}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" excluding = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applymultipliers" /><code>{"void ApplyMultipliers(int layer, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes)"}</code> | Multiplies each listed attribute by its curve, evaluated at how far the layer is through the section. |
+| <Link id="m-getrandombiome" /><code><Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" GetRandomBiome("}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" excluding = null)"}</code> | Picks a biome by weight, optionally excluding one (for example the previous layer's). |
 
 ## Used in
 

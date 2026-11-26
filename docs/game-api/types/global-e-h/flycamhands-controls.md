@@ -1,6 +1,6 @@
 ---
 title: "FlyCamHands.Controls"
-description: "enum FlyCamHands.Controls in Root.Township."
+description: "Private list of the actions the fly cam hands can do: spark, invisibility and hit."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FlyCamHands.Controls
 
 An **private enum** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private list of the actions the fly cam hands can do: spark, invisibility and hit.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`FlyCamHands`](/game-api/types/global-e-h/flycamhands)

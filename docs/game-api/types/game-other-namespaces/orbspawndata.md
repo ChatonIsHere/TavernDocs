@@ -1,6 +1,6 @@
 ---
 title: "OrbSpawnData"
-description: "struct OrbSpawnData in Root.Township."
+description: "Where to spawn a micro tutorial orb and which tutorial it starts."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `ATT.MicroTutorial`.
 
+Where to spawn a micro tutorial orb and which tutorial it starts. Part of an orb injector entry.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-spawnpoint" /><code>{"Vector3 SpawnPoint"}</code> |
-| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" Tutorial"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-spawnpoint" /><code>{"Vector3 SpawnPoint"}</code> | World position of the orb. |
+| <Link id="m-tutorial" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialsettings">{"MicroTutorialSettings"}</Link>{" Tutorial"}</code> | Tutorial settings the orb starts. |
 
 ## Used in
 

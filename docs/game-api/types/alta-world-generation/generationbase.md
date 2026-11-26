@@ -28,25 +28,25 @@ Generates one procedural cave layer from a seed: splits it into map chunks and r
 <details>
 <summary>17 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunks" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] chunks"}</code> |
-| <Link id="m-chunksgenerating" /><code>{"private int chunksGenerating"}</code> |
-| <Link id="m-chunkshigh" /><code>{"private int chunksHigh"}</code> |
-| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> |
-| <Link id="m-chunksparent" /><code>{"private Transform chunksParent"}</code> |
-| <Link id="m-chunkswide" /><code>{"private int chunksWide"}</code> |
-| <Link id="m-clientspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{"> clientSpawn"}</code> |
-| <Link id="m-currentrendering" /><code>{"private IEnumerator<bool> currentRendering"}</code> |
-| <Link id="m-deletingentities" /><code>{"private Transform deletingEntities"}</code> |
-| <Link id="m-floorplugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" floorPlugin"}</code> |
-| <Link id="m-isgenerationstarted" /><code>{"private bool isGenerationStarted"}</code> |
-| <Link id="m-isseedrandomonregenerate" /><code>{"private bool isSeedRandomOnRegenerate"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-pluginlist" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" pluginList"}</code> |
-| <Link id="m-rendering" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"> rendering"}</code> |
-| <Link id="m-seed" /><code>{"private int seed"}</code> |
-| <Link id="m-stepindex" /><code>{"private int stepIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunks" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"[,] chunks"}</code> | Grid of generated map chunks. |
+| <Link id="m-chunksgenerating" /><code>{"private int chunksGenerating"}</code> | Number of map chunks still generating. |
+| <Link id="m-chunkshigh" /><code>{"private int chunksHigh"}</code> | Map chunks along Z. |
+| <Link id="m-chunksize" /><code>{"private int chunkSize"}</code> | Size of one map chunk in local units. |
+| <Link id="m-chunksparent" /><code>{"private Transform chunksParent"}</code> | Parent object for the map chunks. |
+| <Link id="m-chunkswide" /><code>{"private int chunksWide"}</code> | Map chunks along X. |
+| <Link id="m-clientspawn" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{"> clientSpawn"}</code> | Method sync that sends the seed to clients. |
+| <Link id="m-currentrendering" /><code>{"private IEnumerator<bool> currentRendering"}</code> | The chunk render step in progress. |
+| <Link id="m-deletingentities" /><code>{"private Transform deletingEntities"}</code> | Declared but not used. |
+| <Link id="m-floorplugin" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/plugin">{"Plugin"}</Link>{" floorPlugin"}</code> | The plugin for the cave floor. |
+| <Link id="m-isgenerationstarted" /><code>{"private bool isGenerationStarted"}</code> | Set once generation starts; late joiners then get the seed on connect. |
+| <Link id="m-isseedrandomonregenerate" /><code>{"private bool isSeedRandomOnRegenerate"}</code> | Declared but not used. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for generation progress and errors. |
+| <Link id="m-pluginlist" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" pluginList"}</code> | Plugins that generate and render each chunk, in order. |
+| <Link id="m-rendering" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{"> rendering"}</code> | Chunks waiting to be rendered, sorted by request count. |
+| <Link id="m-seed" /><code>{"private int seed"}</code> | Generation seed; a negative value picks a random one at start. |
+| <Link id="m-stepindex" /><code>{"private int stepIndex"}</code> | Declared but not used. |
 
 </details>
 
@@ -68,7 +68,7 @@ Generates one procedural cave layer from a seed: splits it into map chunks and r
 | <Link id="m-pluginlist-2" /><code><Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" "}<Link to="/game-api/types/alta-world-generation/pluginlist">{"PluginList"}</Link>{" { get; }"}</code> | The plugins that make up this cave. |
 | <Link id="m-seed-2" /><code>{"int Seed { get; set; }"}</code> | The generation seed. A negative value is replaced with a random one at start. |
 | <Link id="m-simplexnoise" /><code><Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" "}<Link to="/game-api/types/global-s/simplexnoise">{"SimplexNoise"}</Link>{" { get; private set; }"}</code> | Seeded noise for the plugins, made at generation start. |
-| <Link id="m-snap" /><code>{"Vector2 Snap { get; set; }"}</code> |  |
+| <Link id="m-snap" /><code>{"Vector2 Snap { get; set; }"}</code> | A settable offset; not used inside this class. |
 | <Link id="m-spawndata" /><code><Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" { get; private set; }"}</code> | Spawn data built from the layer's biome. |
 
 ## Events
@@ -94,16 +94,16 @@ Generates one procedural cave layer from a seed: splits it into map chunks and r
 <details>
 <summary>8 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clear" /><code>{"private void Clear()"}</code> |
-| <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> |
-| <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-prepareandstart" /><code>{"private async Task PrepareAndStart()"}</code> |
-| <Link id="m-render" /><code>{"private IEnumerator<bool> Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-updaterendering" /><code>{"private void UpdateRendering()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clear" /><code>{"private void Clear()"}</code> | Destroys every generated map chunk. |
+| <Link id="m-clientspawn-2" /><code>{"private async void ClientSpawn("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/global-c-d/caveseedarguments">{"CaveSeedArguments"}</Link>{" args)"}</code> | Syncs the cave seed, layer and entrance; clients then generate the same layer locally. |
+| <Link id="m-decrementsceneloading" /><code>{"private void DecrementSceneLoading()"}</code> | Lowers the scene loading count when rendering completes. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Drops the chunks and plugin instances and clears the layer streamer's static renderers. |
+| <Link id="m-prepareandstart" /><code>{"private async Task PrepareAndStart()"}</code> | Loads the layer's biome, sets up the environment and chunk parent, then starts generating. |
+| <Link id="m-render" /><code>{"private IEnumerator<bool> Render("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk) (iterator)"}</code> | Runs every plugin's chunk render step by step, then on the server builds pathfinding if needed. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Lets one generator at a time run its rendering queue. |
+| <Link id="m-updaterendering" /><code>{"private void UpdateRendering()"}</code> | Renders queued chunks within a per-frame time budget and raises `RenderingComplete` when all are done. |
 
 </details>
 

@@ -30,10 +30,10 @@ A ScriptableObject pairing a `SoundEffect` type with a Wwise event. Plays throug
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-soundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffectType"}</code> |
-| <Link id="m-soundevent" /><code>{"private Event soundEvent"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-soundeffecttype" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" soundEffectType"}</code> | Which kind of sound effect this is. |
+| <Link id="m-soundevent" /><code>{"private Event soundEvent"}</code> | The Wwise event played. |
 
 </details>
 

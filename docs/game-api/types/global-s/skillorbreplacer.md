@@ -28,20 +28,20 @@ The orb a player pulls from a skill shrine to buy a skill. Holding it at the shr
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
-| <Link id="m-distancetosnapsquared" /><code>{"private float distanceToSnapSquared"}</code> |
-| <Link id="m-distancetounsnapsquared" /><code>{"private float distanceToUnSnapSquared"}</code> |
-| <Link id="m-fauxrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" fauxRigidBody"}</code> |
-| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> |
-| <Link id="m-holdduration" /><code>{"private float holdDuration"}</code> |
-| <Link id="m-isoperating" /><code>{"private bool isOperating"}</code> |
-| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> |
-| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> |
-| <Link id="m-returningtotargetcoroutine" /><code>{"private Coroutine returningToTargetCoroutine"}</code> |
-| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> |
-| <Link id="m-targetorb" /><code>{"private "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" targetOrb"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> | Acceleration used while the orb flies back to its target. |
+| <Link id="m-distancetosnapsquared" /><code>{"private float distanceToSnapSquared"}</code> | Squared distance to the shrine's operator at which the held orb snaps on and starts the purchase hold. |
+| <Link id="m-distancetounsnapsquared" /><code>{"private float distanceToUnSnapSquared"}</code> | Squared distance from the hand grip point that breaks the snap and cancels the hold. |
+| <Link id="m-fauxrigidbody" /><code>{"private "}<Link to="/game-api/types/global-e-h/fauxrigidbody">{"FauxRigidbody"}</Link>{" fauxRigidBody"}</code> | Simulated rigidbody used for the fly-back, created on first use. |
+| <Link id="m-helddurationcheck" /><code>{"private Coroutine heldDurationCheck"}</code> | The running hold-check coroutine. |
+| <Link id="m-holdduration" /><code>{"private float holdDuration"}</code> | Seconds the orb must stay snapped to the operator before the purchase is confirmed (3 by default). |
+| <Link id="m-isoperating" /><code>{"private bool isOperating"}</code> | True while the orb is snapped to the shrine's operator and the hold timer runs. |
+| <Link id="m-maxdistancefromtargetsquared" /><code>{"private float maxDistanceFromTargetSquared"}</code> | Squared distance from its home position before it snaps; pulling it further away forces the player to drop it. |
+| <Link id="m-movespeed" /><code>{"private float moveSpeed"}</code> | Top speed while the orb flies back to its target. |
+| <Link id="m-returningtotargetcoroutine" /><code>{"private Coroutine returningToTargetCoroutine"}</code> | The running fly-back coroutine, or null. |
+| <Link id="m-rotationlerpspeed" /><code>{"private float rotationLerpSpeed"}</code> | How fast the orb turns back to identity rotation while flying back. |
+| <Link id="m-targetorb" /><code>{"private "}<Link to="/game-api/types/global-s/skillorb">{"SkillOrb"}</Link>{" targetOrb"}</code> | The skill orb on the shrine this replacer stands in for. Set by `InitializeOrb` (clients get it from the setup sync). |
 
 </details>
 
@@ -67,10 +67,10 @@ The orb a player pulls from a skill shrine to buy a skill. Holding it at the shr
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-returnselectionorb" /><code>{"private IEnumerator ReturnSelectionOrb() (iterator)"}</code> |
-| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-returnselectionorb" /><code>{"private IEnumerator ReturnSelectionOrb() (iterator)"}</code> | Coroutine run when the player lets go: flies the orb back to its target position with a faux rigidbody, then scene-destroys it. |
+| <Link id="m-scenedestroy" /><code>{"private void SceneDestroy("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Client: plays the orb destroy effect when the entity is destroyed, unless it is unloading or flying back. |
 
 </details>
 

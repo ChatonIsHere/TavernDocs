@@ -1,6 +1,6 @@
 ---
 title: "LockEvent"
-description: "class LockEvent in Root.Township."
+description: "A serializable event with a Lock argument, such as a lock's locked or broken events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LockEvent
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+A serializable event with a `Lock` argument, such as a lock's locked or broken events.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`AltaEvent<Lock, LockUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

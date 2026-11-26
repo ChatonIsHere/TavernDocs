@@ -1,6 +1,6 @@
 ---
 title: "PooledParticleSystem"
-description: "class PooledParticleSystem in Root.Township."
+description: "A pooled VFX object that knows how long it plays."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledParticleSystem
 
 A **class** in `Root.Township`, `Features`.
+
+A pooled VFX object that knows how long it plays. Used by `GenericVFXController` and the downed state effects.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, `Features`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
-| <Link id="m-shouldautodisable" /><code>{"private bool shouldAutoDisable"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration`. |
+| <Link id="m-shouldautodisable" /><code>{"private bool shouldAutoDisable"}</code> | Backing field for `ShouldAutoDisable`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> |
-| <Link id="m-shouldautodisable-2" /><code>{"bool ShouldAutoDisable { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-duration-2" /><code>{"float Duration { get; }"}</code> | How long the effect plays, in seconds (default 2). Callers wait this long before stopping it. |
+| <Link id="m-shouldautodisable-2" /><code>{"bool ShouldAutoDisable { get; }"}</code> | When true, `GenericVFXController` stops the effect by itself after `Duration` seconds. |
 
 ## Used in
 

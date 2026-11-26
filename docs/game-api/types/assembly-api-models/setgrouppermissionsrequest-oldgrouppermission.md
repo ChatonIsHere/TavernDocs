@@ -1,6 +1,6 @@
 ---
 title: "SetGroupPermissionsRequest.OldGroupPermission"
-description: "enum SetGroupPermissionsRequest.OldGroupPermission in Alta.Api.DataTransferModels."
+description: "Old flag-style group permission levels (member, moderator, admin), still used by GroupMemberInfo.Permissions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SetGroupPermissionsRequest.OldGroupPermission
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
+
+Old flag-style group permission levels (member, moderator, admin), still used by `GroupMemberInfo.Permissions`.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Nested in** [`SetGroupPermissionsRequest`](/game-api/types/assembly-api-models/setgrouppermissionsrequest)

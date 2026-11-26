@@ -1,6 +1,6 @@
 ---
 title: "PlayingToEquipmentTransition"
-description: "class PlayingToEquipmentTransition in Root.Township."
+description: "Moves a player from Playing to equipment mode."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayingToEquipmentTransition
 
 A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
+
+Moves a player from Playing to equipment mode. Fired through the static `Trigger` by the equipment quick access action.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`EquipmentTransition<PlayingState, EquipmentState>`](/game-api/types/alta-player/equipmenttransition-tfrom-tto)
@@ -23,9 +25,9 @@ A **class** in `Root.Township`, `Alta.PlayerStates.Transitions`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-trigger" /><code>{"static void Trigger()"}</code> | Static: runs the transition for whichever equipment transition is currently active. |
 
 ## Used in
 

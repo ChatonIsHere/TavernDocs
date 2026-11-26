@@ -1,6 +1,6 @@
 ---
 title: "GroupPermissions"
-description: "enum GroupPermissions in Alta.Api.DataTransferModels."
+description: "Permissions a role can grant in an Alta group (server community): inviting, banning, kicking, managing servers, console access, roles, reports and saves."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupPermissions
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Permissions a role can grant in an Alta group (server community): inviting, banning, kicking, managing servers, console access, roles, reports and saves.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

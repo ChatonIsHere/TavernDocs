@@ -35,10 +35,10 @@ Base for a logic term in the AI knowledge system: a functor with argument terms 
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-intelligence-icompoundpart-first" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" Alta.Intelligence.ICompoundPart.First { get; }"}</code> |
-| <Link id="m-alta-intelligence-icompoundpart-remaining" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Alta.Intelligence.ICompoundPart.Remaining { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-intelligence-icompoundpart-first" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" Alta.Intelligence.ICompoundPart.First { get; }"}</code> | The functor, as the compound's first part. |
+| <Link id="m-alta-intelligence-icompoundpart-remaining" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] Alta.Intelligence.ICompoundPart.Remaining { get; }"}</code> | The terms, as the compound's remaining parts. |
 
 </details>
 

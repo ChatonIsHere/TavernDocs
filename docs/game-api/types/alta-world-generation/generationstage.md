@@ -1,6 +1,6 @@
 ---
 title: "GenerationStage"
-description: "enum GenerationStage in Root.Township."
+description: "Order of cave generation stages, from floor and roof through voxels and marching cubes to static, dynamic and aesthetic dressing."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GenerationStage
 
 An **enum** in `Root.Township`, `Alta.Caves`.
+
+Order of cave generation stages, from floor and roof through voxels and marching cubes to static, dynamic and aesthetic dressing. Each cave `Plugin` has one.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 

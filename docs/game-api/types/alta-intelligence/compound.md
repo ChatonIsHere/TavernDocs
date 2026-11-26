@@ -1,6 +1,6 @@
 ---
 title: "Compound"
-description: "class Compound in Root.Township."
+description: "A Prolog-style term with a functor and arguments in the AI knowledge system, such as likes(x, y)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Compound
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+A Prolog-style term with a functor and arguments in the AI knowledge system, such as `likes(x, y)`. Evaluates by unifying with known definitions.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Predicate`](/game-api/types/alta-intelligence/predicate), [`ITerm`](/game-api/types/alta-intelligence/iterm)
@@ -24,11 +26,11 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
-| <Link id="m-evaluateinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> |
-| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Writes the term as `functor(arg, arg)`. |
+| <Link id="m-evaluateinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> | Unifies with each matching definition, evaluates its goal and yields the bindings weighted by the definition. |
+| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> | Builds a compound from a parsed compound part. |
 
 ## Used in
 

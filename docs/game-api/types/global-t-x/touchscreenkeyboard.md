@@ -33,35 +33,35 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 <details>
 <summary>27 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-androidmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" androidMultiKeyboardSetup"}</code> |
-| <Link id="m-androidsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" androidSetup"}</code> |
-| <Link id="m-autocomplete" /><code>{"private "}<Link to="/game-api/types/alta-menus/autocomplete">{"AutoComplete"}</Link>{" autoComplete"}</code> |
-| <Link id="m-backspacedelaystart" /><code>{"private float backspaceDelayStart"}</code> |
-| <Link id="m-backspacesingleletterduration" /><code>{"private float backspaceSingleLetterDuration"}</code> |
-| <Link id="m-continuousbackspacespeed" /><code>{"private float continuousBackspaceSpeed"}</code> |
-| <Link id="m-currentkeyboardindex" /><code>{"private int currentKeyboardIndex"}</code> |
-| <Link id="m-dimensionsoffset" /><code>{"private Vector2 dimensionsOffset"}</code> |
-| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> |
-| <Link id="m-empty" /><code>{"private const string empty"}</code> |
-| <Link id="m-functionkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/functionkeydefinition">{"FunctionKeyDefinition"}</Link>{"[] functionKeys"}</code> |
-| <Link id="m-hasdoneautocompletesetup" /><code>{"private bool hasDoneAutoCompleteSetup"}</code> |
-| <Link id="m-indextokeycode" /><code>{"private readonly Dictionary<int, KeyCode> indexToKeyCode"}</code> |
-| <Link id="m-input" /><code>{"private string input"}</code> |
-| <Link id="m-instantiatedbuttons" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> instantiatedButtons"}</code> |
-| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> |
-| <Link id="m-keyboardedgesinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-keyboardedgesinfo">{"TouchScreenKeyboard.KeyBoardEdgesInfo"}</Link>{" keyboardEdgesInfo"}</code> |
-| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" keyPrefab"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> |
-| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-outputevent">{"TouchScreenKeyboard.OutputEvent"}</Link>{" output"}</code> |
-| <Link id="m-pcmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" pcMultiKeyboardSetup"}</code> |
-| <Link id="m-scale" /><code>{"private float scale"}</code> |
-| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> |
-| <Link id="m-shiftlockmarker" /><code>{"private Renderer shiftLockMarker"}</code> |
-| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> |
-| <Link id="m-usemultikeyboardsetup" /><code>{"private bool useMultiKeyboardSetup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-androidmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" androidMultiKeyboardSetup"}</code> | Android keyboard set. Not used in this build, see `MultiKeyboardSetup`. |
+| <Link id="m-androidsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" androidSetup"}</code> | Android single layout. Not read in this build. |
+| <Link id="m-autocomplete" /><code>{"private "}<Link to="/game-api/types/alta-menus/autocomplete">{"AutoComplete"}</Link>{" autoComplete"}</code> | The autocomplete helper, made by `ApplyNewAutoCompletionSource`. |
+| <Link id="m-backspacedelaystart" /><code>{"private float backspaceDelayStart"}</code> | Backing field for `BackspaceDelayStart`. Default 1. |
+| <Link id="m-backspacesingleletterduration" /><code>{"private float backspaceSingleLetterDuration"}</code> | Backing field for `BackspaceSingleLetterDuration`. Default 3. |
+| <Link id="m-continuousbackspacespeed" /><code>{"private float continuousBackspaceSpeed"}</code> | Backing field for `ContinuousBackspaceSpeed`. Default 0.2. |
+| <Link id="m-currentkeyboardindex" /><code>{"private int currentKeyboardIndex"}</code> | Index of the layout in use within the keyboard set. |
+| <Link id="m-dimensionsoffset" /><code>{"private Vector2 dimensionsOffset"}</code> | Centre offset of the touch area, recomputed by `ResetDimensions`. |
+| <Link id="m-doubleshifttimer" /><code>{"private float doubleShiftTimer"}</code> | Seconds within which a second shift press locks shift. Default 0.5. |
+| <Link id="m-empty" /><code>{"private const string empty"}</code> | Empty string constant. |
+| <Link id="m-functionkeys" /><code>{"private "}<Link to="/game-api/types/global-e-h/functionkeydefinition">{"FunctionKeyDefinition"}</Link>{"[] functionKeys"}</code> | Keys with their own actions; mapped into `MappedFunctionKeys` in `Awake`. |
+| <Link id="m-hasdoneautocompletesetup" /><code>{"private bool hasDoneAutoCompleteSetup"}</code> | True once `AutoCompleteSetup` has run. |
+| <Link id="m-indextokeycode" /><code>{"private readonly Dictionary<int, KeyCode> indexToKeyCode"}</code> | Maps suggestion slot 0 to 3 to key codes F5 to F8. |
+| <Link id="m-input" /><code>{"private string input"}</code> | Backing field for `Input`. |
+| <Link id="m-instantiatedbuttons" /><code>{"private readonly List<"}<Link to="/game-api/types/global-i-l/itouchscreenbutton">{"ITouchScreenButton"}</Link>{"> instantiatedButtons"}</code> | Backing list for `InstantiatedButtons`, the spawned keys. |
+| <Link id="m-isshiftlocked" /><code>{"private bool isShiftLocked"}</code> | True while shift is locked by a double press. |
+| <Link id="m-keyboardedgesinfo" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-keyboardedgesinfo">{"TouchScreenKeyboard.KeyBoardEdgesInfo"}</Link>{" keyboardEdgesInfo"}</code> | Row edge keys and spacing for the current layout, used to place extra keys. |
+| <Link id="m-keyprefab" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" keyPrefab"}</code> | Prefab for every key. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-originoffset" /><code>{"private Vector2 originOffset"}</code> | Offset added to every key position. |
+| <Link id="m-output" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard-outputevent">{"TouchScreenKeyboard.OutputEvent"}</Link>{" output"}</code> | Inspector event raised with the input whenever it changes. |
+| <Link id="m-pcmultikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" pcMultiKeyboardSetup"}</code> | The keyboard set `MultiKeyboardSetup` returns. |
+| <Link id="m-scale" /><code>{"private float scale"}</code> | Scale from layout positions to local positions. |
+| <Link id="m-setup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" setup"}</code> | Single layout used when multi-layout mode is off. |
+| <Link id="m-shiftlockmarker" /><code>{"private Renderer shiftLockMarker"}</code> | Renderer shown while shift is locked. |
+| <Link id="m-timetodoubleshift" /><code>{"private float timeToDoubleShift"}</code> | Real time until which a second shift press locks shift. |
+| <Link id="m-usemultikeyboardsetup" /><code>{"private bool useMultiKeyboardSetup"}</code> | When true the keyboard uses a keyboard set with switchable layouts instead of one layout. |
 
 </details>
 
@@ -84,10 +84,10 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-keyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" KeyboardSetup { get; }"}</code> |
-| <Link id="m-multikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" MultiKeyboardSetup { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-keyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" KeyboardSetup { get; }"}</code> | The single layout used when `useMultiKeyboardSetup` is off (the `setup` field). |
+| <Link id="m-multikeyboardsetup" /><code>{"private "}<Link to="/game-api/types/global-i-l/keyboardset">{"KeyboardSet"}</Link>{" MultiKeyboardSetup { get; }"}</code> | The keyboard set used for switching layouts. Always the PC set in this build; the Android set is never read. |
 
 </details>
 
@@ -128,28 +128,28 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addautocompletekeys" /><code>{"private void AddAutoCompleteKeys()"}</code> |  |
-| <Link id="m-applycompletion" /><code>{"private void ApplyCompletion(string completion)"}</code> |  |
-| <Link id="m-autocompletesetup" /><code>{"private void AutoCompleteSetup()"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-basekeyboardsetup" /><code>{"private void BaseKeyboardSetup("}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" baseSetup, int lastEqualIndex)"}</code> |  |
-| <Link id="m-calculatetransitionkeyposition-l-r" /><code>{"private Vector3 CalculateTransitionKeyPosition_L_R(Vector2 edgeKeyPos, float spacing, int stackMultiplier, float spaceOffset)"}</code> |  |
+| <Link id="m-addautocompletekeys" /><code>{"private void AddAutoCompleteKeys()"}</code> | Spawns the suggestion keys from the keyboard set's completion layout. |
+| <Link id="m-applycompletion" /><code>{"private void ApplyCompletion(string completion)"}</code> | Replaces the whole input with a chosen suggestion. |
+| <Link id="m-autocompletesetup" /><code>{"private void AutoCompleteSetup()"}</code> | Once only, when there's an autocomplete source: adds suggestion keys and refreshes them whenever the input changes. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Claims `Instance` (logs an error for a second keyboard), maps function keys, sets up for the local player and hides itself if unused. |
+| <Link id="m-basekeyboardsetup" /><code>{"private void BaseKeyboardSetup("}<Link to="/game-api/types/global-t-x/virtualkeyboardsetup">{"VirtualKeyboardSetup"}</Link>{" baseSetup, int lastEqualIndex)"}</code> | Spawns the keys of a layout after the ones kept from the previous layout, and records row edges and the space key. |
+| <Link id="m-calculatetransitionkeyposition-l-r" /><code>{"private Vector3 CalculateTransitionKeyPosition_L_R(Vector2 edgeKeyPos, float spacing, int stackMultiplier, float spaceOffset)"}</code> | Works out where an extra key goes at the left or right end of a row. |
 | <Link id="m-get" /><code>{"private static "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" Get(Vector3 position, Quaternion rotation)"}</code> | Moves the keyboard to a position and rotation, shows it, clears the input and gives it to a new user. |
-| <Link id="m-getminmax" /><code>{"private void GetMinMax(out Vector2 min, out Vector2 max)"}</code> |  |
-| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> |  |
-| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> |  |
-| <Link id="m-localkeyboardsetup" /><code>{"private void LocalKeyboardSetup()"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |  |
-| <Link id="m-populateautocompleteswithcurrentinput" /><code>{"private void PopulateAutoCompletesWithCurrentInput(string currentInput)"}</code> |  |
-| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> |  |
-| <Link id="m-removeonlynecessarykeys" /><code>{"private int RemoveOnlyNecessaryKeys(int incomingIndex)"}</code> |  |
-| <Link id="m-resetdimensions" /><code>{"private void ResetDimensions()"}</code> |  |
-| <Link id="m-scaleposition" /><code>{"private Vector3 ScalePosition(Vector2 original)"}</code> |  |
-| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> |  |
-| <Link id="m-setupnewkeyboard" /><code>{"private void SetUpNewKeyboard(int keyboardIndex, int lastEqualIndex)"}</code> |  |
-| <Link id="m-setupplayer" /><code>{"private void SetupPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> |  |
-| <Link id="m-spawnkey" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" SpawnKey("}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" keyInfo)"}</code> |  |
+| <Link id="m-getminmax" /><code>{"private void GetMinMax(out Vector2 min, out Vector2 max)"}</code> | Finds the bounds of the current layout's key positions. |
+| <Link id="m-includeletter" /><code>{"private void IncludeLetter(string letter)"}</code> | Adds a letter to the input, upper case while shift is on. |
+| <Link id="m-includenumber" /><code>{"private void IncludeNumber(int number)"}</code> | Adds a digit to the input. |
+| <Link id="m-localkeyboardsetup" /><code>{"private void LocalKeyboardSetup()"}</code> | Sets up the keyboard for the local player and its autocomplete. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from `PlayerController.LocalPlayerSet`. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Editor: recomputes the keyboard's dimensions when settings change. |
+| <Link id="m-populateautocompleteswithcurrentinput" /><code>{"private void PopulateAutoCompletesWithCurrentInput(string currentInput)"}</code> | Fills up to four suggestion keys with completions for the current input and hides the rest. |
+| <Link id="m-pressshift" /><code>{"private void PressShift()"}</code> | Toggles shift. A second press within `doubleShiftTimer` locks it; another press unlocks. |
+| <Link id="m-removeonlynecessarykeys" /><code>{"private int RemoveOnlyNecessaryKeys(int incomingIndex)"}</code> | When switching layout, keeps leading keys both layouts share and destroys the rest. Returns the last shared index. |
+| <Link id="m-resetdimensions" /><code>{"private void ResetDimensions()"}</code> | Recomputes the touch area size and offset from the layout's key bounds. |
+| <Link id="m-scaleposition" /><code>{"private Vector3 ScalePosition(Vector2 original)"}</code> | Turns a layout key position into a local position, using `scale` and `originOffset`. |
+| <Link id="m-setactive" /><code>{"private void SetActive(bool isActive)"}</code> | Shows or hides the keyboard GameObject. |
+| <Link id="m-setupnewkeyboard" /><code>{"private void SetUpNewKeyboard(int keyboardIndex, int lastEqualIndex)"}</code> | Builds a layout from the keyboard set, adding the secret-toggle key when `setupSecretKey` is on. |
+| <Link id="m-setupplayer" /><code>{"private void SetupPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player)"}</code> | Handler for the local player being set: runs `LocalKeyboardSetup` once. |
+| <Link id="m-spawnkey" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey">{"TouchScreenKeyboardKey"}</Link>{" SpawnKey("}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" keyInfo)"}</code> | Instantiates a key from `keyPrefab` under the buttons parent. |
 | <Link id="m-wordbackspace-2" /><code>{"private string WordBackspace(string input)"}</code> | Deletes the last word. |
 
 </details>

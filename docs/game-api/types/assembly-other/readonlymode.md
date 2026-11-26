@@ -1,6 +1,6 @@
 ---
 title: "ReadOnlyMode"
-description: "enum ReadOnlyMode in Alta.Attributes."
+description: "How an inspector field shows under a condition (ReadOnlyAttribute, ValueConditionAttribute): hidden, read-only or editable."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ReadOnlyMode
 
 An **enum** in `Alta.Attributes`, no namespace.
+
+How an inspector field shows under a condition (`ReadOnlyAttribute`, `ValueConditionAttribute`): hidden, read-only or editable. Editor only.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 

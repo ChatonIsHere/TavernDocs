@@ -29,11 +29,11 @@ Character controller that runs a list of child controllers: owned ones only when
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-invertownedunownedorder" /><code>{"private bool invertOwnedUnownedOrder"}</code> |
-| <Link id="m-ownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> ownedControllers"}</code> |
-| <Link id="m-unownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> unownedControllers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invertownedunownedorder" /><code>{"private bool invertOwnedUnownedOrder"}</code> | Updates the unowned controllers before the owned ones instead of after. |
+| <Link id="m-ownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> ownedControllers"}</code> | Controllers that only update on the local player's character. Backing field for `Controllers`. |
+| <Link id="m-unownedcontrollers" /><code>{"private List<"}<Link to="/game-api/types/alta-player/charactercomponentcontroller">{"CharacterComponentController"}</Link>{"> unownedControllers"}</code> | Controllers that update on every copy of the character, local or remote. |
 
 </details>
 

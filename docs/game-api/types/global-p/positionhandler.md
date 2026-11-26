@@ -1,6 +1,6 @@
 ---
 title: "PositionHandler"
-description: "class PositionHandler in Root.Township."
+description: "Serializable UnityEvent with a Vector3 argument, for position events wired in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionHandler
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `UnityEvent` with a `Vector3` argument, for position events wired in the inspector.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `UnityEvent<Vector3>`

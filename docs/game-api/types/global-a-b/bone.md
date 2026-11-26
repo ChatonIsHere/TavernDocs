@@ -1,6 +1,6 @@
 ---
 title: "Bone"
-description: "class Bone in Root.Township."
+description: "Editor helper that draws gizmo lines from this transform to each child, to show a bone chain."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Bone
 
 A **class** in `Root.Township`, no namespace.
+
+Editor helper that draws gizmo lines from this transform to each child, to show a bone chain.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-color" /><code>{"private Color color"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-color" /><code>{"private Color color"}</code> | Gizmo line colour. |
 
 </details>
 
@@ -37,9 +39,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws a line to each child in `color`. |
 
 </details>
 

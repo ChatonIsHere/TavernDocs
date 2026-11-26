@@ -30,17 +30,17 @@ Settings asset for `CombatState`: how long a player stays in combat, and the she
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-combatshell" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" combatShell"}</code> |
-| <Link id="m-cripplestatdefinition" /><code>{"private "}<Link to="/game-api/types/global-c-d/cripplestatdefinition">{"CrippleStatDefinition"}</Link>{" crippleStatDefinition"}</code> |
-| <Link id="m-delaybetweenhitandsound" /><code>{"private float delayBetweenHitAndSound"}</code> |
-| <Link id="m-distancetimemultiplieroutofcombat" /><code>{"private AnimationCurve distanceTimeMultiplierOutOfCombat"}</code> |
-| <Link id="m-maxdistanceincombat" /><code>{"private float maxDistanceInCombat"}</code> |
-| <Link id="m-maxdistanceincombatsquared" /><code>{"private float maxDistanceInCombatSquared"}</code> |
-| <Link id="m-shellanimationcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" shellAnimationCurve"}</code> |
-| <Link id="m-teleportervelocityovertime" /><code>{"private AnimationCurve teleporterVelocityOverTime"}</code> |
-| <Link id="m-timeforoutofcombat" /><code>{"private float timeForOutOfCombat"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-combatshell" /><code>{"private "}<Link to="/game-api/types/alta-player/shellsetting">{"ShellSetting"}</Link>{" combatShell"}</code> | Shell effect shown around a player entering or leaving combat. |
+| <Link id="m-cripplestatdefinition" /><code>{"private "}<Link to="/game-api/types/global-c-d/cripplestatdefinition">{"CrippleStatDefinition"}</Link>{" crippleStatDefinition"}</code> | Cripple stat that is reset to its maximum when combat ends. |
+| <Link id="m-delaybetweenhitandsound" /><code>{"private float delayBetweenHitAndSound"}</code> | Seconds after entering combat before the local player hears the enter combat sound (default 0.5). |
+| <Link id="m-distancetimemultiplieroutofcombat" /><code>{"private AnimationCurve distanceTimeMultiplierOutOfCombat"}</code> | Scales the out of combat timer by squared distance between fighters divided by `maxDistanceInCombatSquared`. |
+| <Link id="m-maxdistanceincombat" /><code>{"private float maxDistanceInCombat"}</code> | Plain distance version of the combat range (default 50). The code reads the squared field instead. |
+| <Link id="m-maxdistanceincombatsquared" /><code>{"private float maxDistanceInCombatSquared"}</code> | Squared distance beyond which a tool hit does not put the target in combat. |
+| <Link id="m-shellanimationcurve" /><code>{"private "}<Link to="/game-api/types/global-c-d/durationcurve">{"DurationCurve"}</Link>{" shellAnimationCurve"}</code> | Timing curve for the combat shell fade in and out. |
+| <Link id="m-teleportervelocityovertime" /><code>{"private AnimationCurve teleporterVelocityOverTime"}</code> | Velocity curve for teleporting while in combat; not read elsewhere in this build. |
+| <Link id="m-timeforoutofcombat" /><code>{"private float timeForOutOfCombat"}</code> | Seconds without new combat before a player leaves combat (default 15). |
 
 </details>
 

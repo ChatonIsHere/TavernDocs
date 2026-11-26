@@ -1,6 +1,6 @@
 ---
 title: "LoginCredentials"
-description: "class LoginCredentials in Alta.Api.Client."
+description: "The JWT tokens returned when a user or server logs in to the Alta API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client`.
 
+The JWT tokens returned when a user or server logs in to the Alta API.
+
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-accesstoken" /><code>{"JwtSecurityToken AccessToken { get; set; }"}</code> |
-| <Link id="m-identitytoken" /><code>{"JwtSecurityToken IdentityToken { get; set; }"}</code> |
-| <Link id="m-refreshtoken" /><code>{"JwtSecurityToken RefreshToken { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-accesstoken" /><code>{"JwtSecurityToken AccessToken { get; set; }"}</code> | Token sent with API requests. |
+| <Link id="m-identitytoken" /><code>{"JwtSecurityToken IdentityToken { get; set; }"}</code> | Token with the user's identity claims. |
+| <Link id="m-refreshtoken" /><code>{"JwtSecurityToken RefreshToken { get; set; }"}</code> | Token used to get new access tokens. |
 
 ## Used in
 

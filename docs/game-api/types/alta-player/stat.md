@@ -27,11 +27,11 @@ One platform achievement stat (such as a Steam stat), as an int or a float. Sett
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-floatvalue" /><code>{"private float floatValue"}</code> |
-| <Link id="m-intvalue" /><code>{"private int intValue"}</code> |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-floatvalue" /><code>{"private float floatValue"}</code> | Backing field for `FloatValue`. Setting the property tells the manager the stat changed. |
+| <Link id="m-intvalue" /><code>{"private int intValue"}</code> | Backing field for `IntValue`. Setting the property tells the manager the stat changed. |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager"}</code> | Stat manager told about every value change. |
 
 </details>
 

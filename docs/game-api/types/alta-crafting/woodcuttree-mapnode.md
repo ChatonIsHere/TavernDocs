@@ -29,10 +29,10 @@ One segment in a `WoodcutTree`'s layout: its model, the connection it hangs from
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-mass" /><code>{"private float mass"}</code> |
-| <Link id="m-totalsize" /><code>{"private int totalSize"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mass" /><code>{"private float mass"}</code> | Backing field for `Mass`. Changes are added to the parent node's mass too. |
+| <Link id="m-totalsize" /><code>{"private int totalSize"}</code> | Backing field for `TotalSize`. Changes are added to the parent node's total size too. |
 
 </details>
 

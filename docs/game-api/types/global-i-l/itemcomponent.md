@@ -29,9 +29,9 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-physicalmaterials" /><code>{"private List<"}<Link to="/game-api/types/global-p/physicalmaterial">{"PhysicalMaterial"}</Link>{"> physicalMaterials"}</code> | Materials this component applies to; empty means all. Checked by `CheckMatch`. |
 
 </details>
 
@@ -50,9 +50,9 @@ Base for an asset that adds data to an `Item`, such as `CookableItem`. Can be li
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"private void IItemComponent.Initialize("}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" item)"}</code> | Stores the item this component belongs to in `Item`. |
 
 </details>
 

@@ -52,9 +52,9 @@ Component on a prefab that can be reused through a `PooledObjectDefinition` pool
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onreleased" /><code>{"private void OnReleased()"}</code> | Called by the pool once the object is back in it; marks it released and raises `Released`. |
 
 </details>
 

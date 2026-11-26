@@ -1,6 +1,6 @@
 ---
 title: "TutorialState"
-description: "enum TutorialState in Root.Township."
+description: "Where a micro tutorial is: inactive, started or completed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TutorialState
 
 An **enum** in `Root.Township`, `ATT.MicroTutorial`.
+
+Where a micro tutorial is: inactive, started or completed. Included in micro tutorial analytics.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

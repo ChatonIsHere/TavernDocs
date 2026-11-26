@@ -1,6 +1,6 @@
 ---
 title: "StatModifierConstructor"
-description: "class StatModifierConstructor in Root.Township."
+description: "Serialized recipe for one stat modifier, set up in the inspector on a ThresholdStat level and turned into a StatModifier when that level applies."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatModifierConstructor
 
 A **internal class** in `Root.Township`, `Alta.StatSystem`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Serialized recipe for one stat modifier, set up in the inspector on a `ThresholdStat` level and turned into a `StatModifier` when that level applies.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 
@@ -25,20 +27,20 @@ A **internal class** in `Root.Township`, `Alta.StatSystem`. Reach it through att
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hasbuffeffects" /><code>{"private bool hasBuffEffects"}</code> |
-| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> |
-| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> |
-| <Link id="m-value" /><code>{"private float value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasbuffeffects" /><code>{"private bool hasBuffEffects"}</code> | Whether the modifier shows buff effects. |
+| <Link id="m-ismultiplier" /><code>{"private bool isMultiplier"}</code> | Whether `value` multiplies the stat rather than adding to it. |
+| <Link id="m-targetstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" targetStat"}</code> | The stat the modifier changes. |
+| <Link id="m-value" /><code>{"private float value"}</code> | Amount added to, or multiplied into, the target stat. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getmodifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" GetModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getmodifier" /><code><Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" GetModifier()"}</code> | Builds a new `StatModifier` from the serialized settings. |
 
 ## Used in
 

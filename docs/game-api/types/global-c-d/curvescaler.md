@@ -36,11 +36,11 @@ Animates an object's scale between off and on using curves, for example a dock h
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" animator"}</code> |
-| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> |
-| <Link id="m-isinitiallyon" /><code>{"private bool isInitiallyOn"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/global-s/scaleanimator">{"ScaleAnimator"}</Link>{" animator"}</code> | Cached scale animator; rebuilt if it belongs to another behaviour. |
+| <Link id="m-dockvisuals" /><code>{"private "}<Link to="/game-api/types/alta-items/dockvisual">{"DockVisual"}</Link>{"[] dockVisuals"}</code> | Dock visuals in children; when present a renderer scale animator is used. |
+| <Link id="m-isinitiallyon" /><code>{"private bool isInitiallyOn"}</code> | Whether the animator starts in the on (scaled up) state. |
 
 </details>
 

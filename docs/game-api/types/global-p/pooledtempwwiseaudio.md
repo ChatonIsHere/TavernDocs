@@ -1,6 +1,6 @@
 ---
 title: "PooledTempWwiseAudio"
-description: "class PooledTempWwiseAudio in Root.Township."
+description: "A pooled object for a temporary Wwise sound emitter."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PooledTempWwiseAudio
 
 A **class** in `Root.Township`, no namespace.
+
+A pooled object for a temporary Wwise sound emitter. Deactivates its `AkGameObj` when released back to the pool.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -26,26 +28,26 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-akgameobj" /><code>{"private "}<Link to="/game-api/types/global-p/pooledakgameobj">{"PooledAkGameObj"}</Link>{" akGameObj"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-akgameobj" /><code>{"private "}<Link to="/game-api/types/global-p/pooledakgameobj">{"PooledAkGameObj"}</Link>{" akGameObj"}</code> | Backing field for `AkGameObj`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-akgameobj-2" /><code>{"AkGameObj AkGameObj { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-akgameobj-2" /><code>{"AkGameObj AkGameObj { get; }"}</code> | The Wwise game object sounds are posted on. |
 
 ## Methods
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Hooks release so the Wwise object is deactivated. |
 
 </details>
 

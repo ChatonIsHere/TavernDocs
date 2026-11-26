@@ -34,15 +34,15 @@ An impact source that only hurts while charged, such as a creature's beak or a s
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-damagemanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" damageManager"}</code> |
-| <Link id="m-damagestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" damageStat"}</code> |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
-| <Link id="m-hasdamagestat" /><code>{"private bool hasDamageStat"}</code> |
-| <Link id="m-hasinitialized" /><code>{"private bool hasInitialized"}</code> |
-| <Link id="m-onchargedupdate" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onChargedUpdate"}</code> |
-| <Link id="m-synccharged" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCharged"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-damagemanager" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" damageManager"}</code> | Optional stat manager. If it has the damage stat, that stat's base value sets the hit multipliers. |
+| <Link id="m-damagestat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" damageStat"}</code> | The damage stat found on `damageManager` in `Initialize`. |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The network entity this impactor syncs through. |
+| <Link id="m-hasdamagestat" /><code>{"private bool hasDamageStat"}</code> | Whether `damageStat` was found. |
+| <Link id="m-hasinitialized" /><code>{"private bool hasInitialized"}</code> | True after `Initialize`. Charge changes are only sent to clients after this. |
+| <Link id="m-onchargedupdate" /><code>{"private "}<Link to="/game-api/types/global-a-b/boolunityevent">{"BoolUnityEvent"}</Link>{" onChargedUpdate"}</code> | Unity event run with the new charged state whenever it changes. |
+| <Link id="m-synccharged" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncCharged"}</code> | Method sync the server uses to send the charged state to chunks or a joining player. |
 
 </details>
 
@@ -71,10 +71,10 @@ An impact source that only hurts while charged, such as a creature's beak or a s
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-sync" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Charges the impactor if `chargeOnEnable` is set. |
+| <Link id="m-sync" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the charged state, and on remote clients applies it and runs `onChargedUpdate`. |
 
 </details>
 

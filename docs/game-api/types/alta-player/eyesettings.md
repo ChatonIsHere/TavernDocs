@@ -1,6 +1,6 @@
 ---
 title: "EyeSettings"
-description: "class EyeSettings in Root.Township."
+description: "The character dummy's eye blit materials, held on CharacterDummy.Eyes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EyeSettings
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+The character dummy's eye blit materials, held on `CharacterDummy.Eyes`.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -25,26 +27,26 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> |
-| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> |
-| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-eyeadditionalblit" /><code>{"private Material eyeAdditionalBlit"}</code> | Backing field for `EyeAdditionalBlit`. |
+| <Link id="m-eyeblit" /><code>{"private Material eyeBlit"}</code> | Backing field for `EyeBlit`. |
+| <Link id="m-isinstantiated" /><code>{"private bool isInstantiated"}</code> | Unused flag (not serialised). |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> |
-| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-eyeadditionalblit-2" /><code>{"Material EyeAdditionalBlit { get; }"}</code> | Second eye blit material. |
+| <Link id="m-eyeblit-2" /><code>{"Material EyeBlit { get; }"}</code> | Main eye blit material. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cleanup" /><code>{"void CleanUp()"}</code> | Does nothing in this build. |
 
 ## Used in
 

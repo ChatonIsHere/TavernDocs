@@ -27,39 +27,39 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 <details>
 <summary>31 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkframecount" /><code>{"private const int CheckFrameCount"}</code> |
-| <Link id="m-checkframes" /><code>{"private int checkFrames"}</code> |
-| <Link id="m-climbable" /><code>{"private "}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{" climbable"}</code> |
-| <Link id="m-collider" /><code>{"private Collider collider"}</code> |
-| <Link id="m-currentlygrabbingobjectlayer" /><code>{"private int currentlyGrabbingObjectLayer"}</code> |
-| <Link id="m-currentpressure" /><code>{"private Vector3 currentPressure"}</code> |
-| <Link id="m-currentpressuremagnitude" /><code>{"private float currentPressureMagnitude"}</code> |
-| <Link id="m-frameindex" /><code>{"private int frameIndex"}</code> |
-| <Link id="m-getcolliderclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getColliderClimbable"}</code> |
-| <Link id="m-getrigidbodyclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getRigidbodyClimbable"}</code> |
-| <Link id="m-grabpositionoffset" /><code>{"private readonly Vector3 grabPositionOffset"}</code> |
-| <Link id="m-grabresults" /><code>{"private static readonly Collider[] grabResults"}</code> |
-| <Link id="m-gravityboost" /><code>{"private float gravityBoost"}</code> |
-| <Link id="m-grip" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{"? grip"}</code> |
-| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler"}</code> |
-| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private float incorrectHandStrengthModifier"}</code> |
-| <Link id="m-ishandclosed" /><code>{"private bool isHandClosed"}</code> |
-| <Link id="m-ishanging" /><code>{"private bool isHanging"}</code> |
-| <Link id="m-lastarmdirection" /><code>{"private Vector3 lastArmDirection"}</code> |
-| <Link id="m-lastarmlength" /><code>{"private float lastArmLength"}</code> |
-| <Link id="m-lastframeprocessran" /><code>{"private int lastFrameProcessRan"}</code> |
-| <Link id="m-lastframes" /><code>{"private readonly Vector3[] lastFrames"}</code> |
-| <Link id="m-masterhand" /><code>{"private readonly Transform masterHand"}</code> |
-| <Link id="m-player" /><code>{"private readonly "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> |
-| <Link id="m-shoulder" /><code>{"private readonly Transform shoulder"}</code> |
-| <Link id="m-shouldercache" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" shoulderCache"}</code> |
-| <Link id="m-sphere" /><code>{"private static SphereCollider sphere"}</code> |
-| <Link id="m-sync" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-syncimmediategrabfail" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/throttledmethodsync">{"ThrottledMethodSync"}</Link>{" syncImmediateGrabFail"}</code> |
-| <Link id="m-syncvoluntarybreak" /><code>{"private bool syncVoluntaryBreak"}</code> |
-| <Link id="m-unlock" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkframecount" /><code>{"private const int CheckFrameCount"}</code> | Frames a closed hand keeps trying to grab after a failed first try (5). |
+| <Link id="m-checkframes" /><code>{"private int checkFrames"}</code> | Frames left to keep retrying a grab. |
+| <Link id="m-climbable" /><code>{"private "}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{" climbable"}</code> | The climbable currently gripped. |
+| <Link id="m-collider" /><code>{"private Collider collider"}</code> | The collider currently gripped. |
+| <Link id="m-currentlygrabbingobjectlayer" /><code>{"private int currentlyGrabbingObjectLayer"}</code> | Original layer of the gripped object, synced to others. |
+| <Link id="m-currentpressure" /><code>{"private Vector3 currentPressure"}</code> | Smoothed pressure the hand is applying this frame. |
+| <Link id="m-currentpressuremagnitude" /><code>{"private float currentPressureMagnitude"}</code> | Size of `currentPressure`, exposed as `CurrentForce` while climbing. |
+| <Link id="m-frameindex" /><code>{"private int frameIndex"}</code> | Index into `lastFrames`. |
+| <Link id="m-getcolliderclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getColliderClimbable"}</code> | Cached lookup of `IClimbable` on a collider. |
+| <Link id="m-getrigidbodyclimbable" /><code>{"private readonly "}<Link to="/game-api/types/global-m-o/memoizecomponentone-t">{"MemoizeComponentOne"}</Link>{"<"}<Link to="/game-api/types/global-i-l/iclimbable">{"IClimbable"}</Link>{"> getRigidbodyClimbable"}</code> | Cached lookup of `IClimbable` on a collider's rigidbody. |
+| <Link id="m-grabpositionoffset" /><code>{"private readonly Vector3 grabPositionOffset"}</code> | The controller's grip point offset from the hand. |
+| <Link id="m-grabresults" /><code>{"private static readonly Collider[] grabResults"}</code> | Shared buffer for overlap results. |
+| <Link id="m-gravityboost" /><code>{"private float gravityBoost"}</code> | How much of gravity skips the pressure cap, set from the climbable and surface normal. |
+| <Link id="m-grip" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{"? grip"}</code> | Where the hand holds, relative to the gripped collider; null when not climbing. |
+| <Link id="m-handler" /><code>{"private readonly "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler"}</code> | The climbing handler that owns this hand. |
+| <Link id="m-incorrecthandstrengthmodifier" /><code>{"private float incorrectHandStrengthModifier"}</code> | Grip strength from 0 to 1 that drops when the hand pulls wrongly; the grip breaks at 0. |
+| <Link id="m-ishandclosed" /><code>{"private bool isHandClosed"}</code> | Whether the interact input is held. |
+| <Link id="m-ishanging" /><code>{"private bool isHanging"}</code> | Whether the arm is at full stretch this frame. |
+| <Link id="m-lastarmdirection" /><code>{"private Vector3 lastArmDirection"}</code> | Direction from shoulder to grip, from the last check. |
+| <Link id="m-lastarmlength" /><code>{"private float lastArmLength"}</code> | Distance from shoulder to grip, capped at the hang distance. |
+| <Link id="m-lastframeprocessran" /><code>{"private int lastFrameProcessRan"}</code> | Declared but not used. |
+| <Link id="m-lastframes" /><code>{"private readonly Vector3[] lastFrames"}</code> | Recent hand positions used for pressure; holds one frame. |
+| <Link id="m-masterhand" /><code>{"private readonly Transform masterHand"}</code> | Root of the tracked hand. |
+| <Link id="m-player" /><code>{"private readonly "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | The network player who owns the hand, used to check sync permission. |
+| <Link id="m-shoulder" /><code>{"private readonly Transform shoulder"}</code> | The arm's shoulder (or the head if there is no arm IK). |
+| <Link id="m-shouldercache" /><code>{"private "}<Link to="/game-api/types/global-q-r/relativepoint">{"RelativePoint"}</Link>{" shoulderCache"}</code> | Shoulder position relative to the gripped collider from the last frame. |
+| <Link id="m-sphere" /><code>{"private static SphereCollider sphere"}</code> | Shared sphere collider used for penetration tests. |
+| <Link id="m-sync" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for grip and release messages. |
+| <Link id="m-syncimmediategrabfail" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/throttledmethodsync">{"ThrottledMethodSync"}</Link>{" syncImmediateGrabFail"}</code> | Throttled sync for failed grabs. |
+| <Link id="m-syncvoluntarybreak" /><code>{"private bool syncVoluntaryBreak"}</code> | Whether the last release was voluntary, sent with the release so others skip the break effect. |
+| <Link id="m-unlock" /><code>{"private readonly "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock"}</code> | Unlock required to climb, or null. |
 
 </details>
 
@@ -103,19 +103,19 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 | Member | What it is |
 | --- | --- |
 | <Link id="m-breakgrip" /><code>{"private void BreakGrip()"}</code> | Lets go: detaches the hand, plays the grab broken effect if not voluntary, syncs it and raises `stoppedClimbing`. |
-| <Link id="m-checkgrab" /><code>{"private bool CheckGrab(float armReduce = 0)"}</code> |  |
-| <Link id="m-checkstreamreadpermission" /><code>{"private bool CheckStreamReadPermission("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-evaluatearmstrength" /><code>{"private Vector3 EvaluateArmStrength(Vector3 pressure, float pressureDirectionPower)"}</code> |  |
-| <Link id="m-evaluatebestgrip" /><code>{"private float EvaluateBestGrip(int overlap)"}</code> |  |
-| <Link id="m-getclosestpointtogrip" /><code>{"private Vector3 GetClosestPointToGrip(bool isRight, Quaternion handRotation, ref Vector3 handPosition)"}</code> |  |
-| <Link id="m-getgrabassistblock" /><code>{"private void GetGrabAssistBlock(ref bool isBlocked)"}</code> |  |
-| <Link id="m-isreleasingcurrentclimbableimmediately" /><code>{"private bool IsReleasingCurrentClimbableImmediately()"}</code> |  |
-| <Link id="m-playreleaseimmediatelyeffects" /><code>{"private void PlayReleaseImmediatelyEffects()"}</code> |  |
-| <Link id="m-processtightgrip" /><code>{"private void ProcessTightGrip(RaycastHit hit, bool isRight, Quaternion handRotation)"}</code> |  |
-| <Link id="m-serialize" /><code>{"private void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-serializeposition" /><code>{"private void SerializePosition("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 position)"}</code> |  |
-| <Link id="m-shouldbreakcurrentgrip" /><code>{"private bool ShouldBreakCurrentGrip(bool hasStamina)"}</code> |  |
-| <Link id="m-syncimmediategrabfail-2" /><code>{"private void SyncImmediateGrabFail("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
+| <Link id="m-checkgrab" /><code>{"private bool CheckGrab(float armReduce = 0)"}</code> | Looks for a climbable surface near the hand within arm reach and grips it if found. Retries once with a shorter reach. |
+| <Link id="m-checkstreamreadpermission" /><code>{"private bool CheckStreamReadPermission("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | True when reading: on the server only from the owning player, always on clients. |
+| <Link id="m-evaluatearmstrength" /><code>{"private Vector3 EvaluateArmStrength(Vector3 pressure, float pressureDirectionPower)"}</code> | Scales a pressure by how closely it lines up with the arm direction. |
+| <Link id="m-evaluatebestgrip" /><code>{"private float EvaluateBestGrip(int overlap)"}</code> | Picks the overlapping climbable with the highest grip priority, falling back to the default climbable; returns that priority. |
+| <Link id="m-getclosestpointtogrip" /><code>{"private Vector3 GetClosestPointToGrip(bool isRight, Quaternion handRotation, ref Vector3 handPosition)"}</code> | Finds the closest surface point to the palm, using penetration tests for terrain and concave meshes. |
+| <Link id="m-getgrabassistblock" /><code>{"private void GetGrabAssistBlock(ref bool isBlocked)"}</code> | Blocks the interactor's grab assist while the player is climbing. |
+| <Link id="m-isreleasingcurrentclimbableimmediately" /><code>{"private bool IsReleasingCurrentClimbableImmediately()"}</code> | True when the current climbable can't be held and releases at once. |
+| <Link id="m-playreleaseimmediatelyeffects" /><code>{"private void PlayReleaseImmediatelyEffects()"}</code> | Plays the grab-broken effect and syncs the failed grab to others. |
+| <Link id="m-processtightgrip" /><code>{"private void ProcessTightGrip(RaycastHit hit, bool isRight, Quaternion handRotation)"}</code> | Attaches the hand to the hit point facing the surface, plays grab effects and syncs the new grip. |
+| <Link id="m-serialize" /><code>{"private void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs grip or release: climbable entity, position, rotation, layer and grip pose. The server only accepts it from the owner and relays it. |
+| <Link id="m-serializeposition" /><code>{"private void SerializePosition("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, ref Vector3 position)"}</code> | Syncs the grip position with the controller's chunk. |
+| <Link id="m-shouldbreakcurrentgrip" /><code>{"private bool ShouldBreakCurrentGrip(bool hasStamina)"}</code> | True when out of stamina or the climbable releases immediately. |
+| <Link id="m-syncimmediategrabfail-2" /><code>{"private void SyncImmediateGrabFail("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Plays the grab-broken effect for others; the server relays it. |
 
 </details>
 

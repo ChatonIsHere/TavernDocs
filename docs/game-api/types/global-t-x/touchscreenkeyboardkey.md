@@ -34,33 +34,33 @@ One key on the in-game VR touch screen keyboard. Shows its label (changing with 
 <details>
 <summary>25 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-backspacedelay" /><code>{"private float backspaceDelay"}</code> |
-| <Link id="m-buttontype" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-keysizetype">{"TouchScreenKeyboardKey.KeySizeType"}</Link>{" buttonType"}</code> |
-| <Link id="m-changes" /><code>{"private List<UnityEvent> changes"}</code> |
-| <Link id="m-closestdistance" /><code>{"private float closestDistance"}</code> |
-| <Link id="m-closestdistancetopresssquared" /><code>{"private float closestDistanceToPressSquared"}</code> |
-| <Link id="m-completiontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" completionText"}</code> |
-| <Link id="m-continuousbackspacedelay" /><code>{"private float continuousBackspaceDelay"}</code> |
-| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-backspaceactions">{"TouchScreenKeyboardKey.BackspaceActions"}</Link>{" currentAction"}</code> |
-| <Link id="m-depressedposition" /><code>{"private Vector3 depressedPosition"}</code> |
-| <Link id="m-distanceposition" /><code>{"private Transform distancePosition"}</code> |
-| <Link id="m-distancescaling" /><code>{"private Transform distanceScaling"}</code> |
-| <Link id="m-isusingspecialsetup" /><code>{"private bool isUsingSpecialSetup"}</code> |
-| <Link id="m-onpresschange" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-specialkeysetup">{"TouchScreenKeyboardKey.SpecialKeySetup"}</Link>{"[] onPressChange"}</code> |
-| <Link id="m-pressmaterial" /><code>{"private Material pressMaterial"}</code> |
-| <Link id="m-pressrenderer" /><code>{"private Renderer pressRenderer"}</code> |
-| <Link id="m-releasedmaterial" /><code>{"private Material releasedMaterial"}</code> |
-| <Link id="m-scalewithdistanceon" /><code>{"private bool scaleWithDistanceOn"}</code> |
-| <Link id="m-scalewithdistancesquared" /><code>{"private AnimationCurve scaleWithDistanceSquared"}</code> |
-| <Link id="m-specialsetups" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-specialkeysetup">{"TouchScreenKeyboardKey.SpecialKeySetup"}</Link>{"[] specialSetups"}</code> |
-| <Link id="m-suggestionbuttonsize" /><code>{"private Vector2 suggestionButtonSize"}</code> |
-| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> |
-| <Link id="m-touchdistance" /><code>{"private float touchDistance"}</code> |
-| <Link id="m-touchdistancetopress" /><code>{"private AnimationCurve touchDistanceToPress"}</code> |
-| <Link id="m-updatebackspace" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateBackspace"}</code> |
-| <Link id="m-virtualkeyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" virtualKeyboard"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-backspacedelay" /><code>{"private float backspaceDelay"}</code> | Time left before the held backspace moves to its next stage. |
+| <Link id="m-buttontype" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-keysizetype">{"TouchScreenKeyboardKey.KeySizeType"}</Link>{" buttonType"}</code> | Size class of the key (normal, suggestion or space bar), set from the key code. |
+| <Link id="m-changes" /><code>{"private List<UnityEvent> changes"}</code> | Events to run when this key is pressed, from `onPressChange`. |
+| <Link id="m-closestdistance" /><code>{"private float closestDistance"}</code> | Squared distance of the nearest finger this frame. |
+| <Link id="m-closestdistancetopresssquared" /><code>{"private float closestDistanceToPressSquared"}</code> | Squared distance under which the key starts moving towards the finger. |
+| <Link id="m-completiontext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" completionText"}</code> | Label used for word suggestion keys. |
+| <Link id="m-continuousbackspacedelay" /><code>{"private float continuousBackspaceDelay"}</code> | Time until the next repeated backspace. |
+| <Link id="m-currentaction" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-backspaceactions">{"TouchScreenKeyboardKey.BackspaceActions"}</Link>{" currentAction"}</code> | Stage of a held backspace: single, continuous or word. |
+| <Link id="m-depressedposition" /><code>{"private Vector3 depressedPosition"}</code> | Local position of the key cap when no finger is close. |
+| <Link id="m-distanceposition" /><code>{"private Transform distancePosition"}</code> | Transform moved in and out as a finger gets near. |
+| <Link id="m-distancescaling" /><code>{"private Transform distanceScaling"}</code> | Transform scaled by finger distance when `scaleWithDistanceOn` is set. Key images are also spawned under it. |
+| <Link id="m-isusingspecialsetup" /><code>{"private bool isUsingSpecialSetup"}</code> | Not used in this build. |
+| <Link id="m-onpresschange" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-specialkeysetup">{"TouchScreenKeyboardKey.SpecialKeySetup"}</Link>{"[] onPressChange"}</code> | Per key code, events to invoke each time that key is pressed. |
+| <Link id="m-pressmaterial" /><code>{"private Material pressMaterial"}</code> | Material shown while pressed. |
+| <Link id="m-pressrenderer" /><code>{"private Renderer pressRenderer"}</code> | Renderer whose material swaps on press and release. |
+| <Link id="m-releasedmaterial" /><code>{"private Material releasedMaterial"}</code> | Material shown when released. |
+| <Link id="m-scalewithdistanceon" /><code>{"private bool scaleWithDistanceOn"}</code> | Scales the key by finger distance when true. |
+| <Link id="m-scalewithdistancesquared" /><code>{"private AnimationCurve scaleWithDistanceSquared"}</code> | Curve from squared finger distance to key scale. |
+| <Link id="m-specialsetups" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboardkey-specialkeysetup">{"TouchScreenKeyboardKey.SpecialKeySetup"}</Link>{"[] specialSetups"}</code> | Per key code, events run once at setup to change that key's look. |
+| <Link id="m-suggestionbuttonsize" /><code>{"private Vector2 suggestionButtonSize"}</code> | Button size for suggestion keys (F5 to F8). |
+| <Link id="m-text" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" text"}</code> | Main key label. |
+| <Link id="m-touchdistance" /><code>{"private float touchDistance"}</code> | Touch depth of the nearest finger, used with `touchDistanceToPress`. |
+| <Link id="m-touchdistancetopress" /><code>{"private AnimationCurve touchDistanceToPress"}</code> | Curve from touch depth to how far the key cap moves. |
+| <Link id="m-updatebackspace" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updateBackspace"}</code> | Registered update method for held backspace. |
+| <Link id="m-virtualkeyboard" /><code>{"private "}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" virtualKeyboard"}</code> | The keyboard this key belongs to. |
 
 </details>
 
@@ -73,10 +73,10 @@ One key on the in-game VR touch screen keyboard. Shows its label (changing with 
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-info" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" Info { get; set; }"}</code> |
-| <Link id="m-text-2" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" Text { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-info" /><code>{"private "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" Info { get; set; }"}</code> | Key codes (normal and shifted) this key sends. |
+| <Link id="m-text-2" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" Text { get; }"}</code> | The label in use: the main text, or the completion text when the main one is hidden. |
 
 </details>
 
@@ -104,13 +104,13 @@ One key on the in-game VR touch screen keyboard. Shows its label (changing with 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkforspecialsetup" /><code>{"private bool CheckForSpecialSetup("}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" info)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-setupcorereferences" /><code>{"private void SetupCoreReferences("}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" virtualKeyboard, bool? scaleWithDistance)"}</code> |
-| <Link id="m-updatebackspace-2" /><code>{"private void UpdateBackspace()"}</code> |
-| <Link id="m-updateimage" /><code>{"private void UpdateImage(bool isShiftPressed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkforspecialsetup" /><code>{"private bool CheckForSpecialSetup("}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{" info)"}</code> | Applies mapped function-key visuals and special setups for this key, and collects its on-press events. True if any applied. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks from the keyboard's shift change and stops the backspace update. |
+| <Link id="m-setupcorereferences" /><code>{"private void SetupCoreReferences("}<Link to="/game-api/types/global-t-x/touchscreenkeyboard">{"TouchScreenKeyboard"}</Link>{" virtualKeyboard, bool? scaleWithDistance)"}</code> | Stores the keyboard, picks the key size from the key code and optionally overrides distance scaling. |
+| <Link id="m-updatebackspace-2" /><code>{"private void UpdateBackspace()"}</code> | Per-frame while backspace is held: one delete, then repeated deletes, then whole-word deletes. |
+| <Link id="m-updateimage" /><code>{"private void UpdateImage(bool isShiftPressed)"}</code> | Sets the label to the character for the current key, upper or lower case by shift. |
 
 </details>
 

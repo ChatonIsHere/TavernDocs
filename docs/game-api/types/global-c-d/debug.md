@@ -27,15 +27,15 @@ The game's own global `Debug` class, which hides `UnityEngine.Debug` in the game
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-commandlinepath" /><code>{"private static string commandLinePath"}</code> |
-| <Link id="m-defaultunitylogger" /><code>{"private static ILogHandler defaultUnityLogger"}</code> |
-| <Link id="m-issetup" /><code>{"private static bool isSetup"}</code> |
-| <Link id="m-logbasepath" /><code>{"private static string logBasePath"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-unhandledexceptionslogger" /><code>{"private static readonly Logger unhandledExceptionsLogger"}</code> |
-| <Link id="m-unhandledlogger" /><code>{"private static readonly Logger unhandledLogger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-commandlinepath" /><code>{"private static string commandLinePath"}</code> | Cached `/logging_config_path` value, empty if not given. |
+| <Link id="m-defaultunitylogger" /><code>{"private static ILogHandler defaultUnityLogger"}</code> | Unity's original log handler, saved before the game replaces it. |
+| <Link id="m-issetup" /><code>{"private static bool isSetup"}</code> | True once `SetupLogging` has run. |
+| <Link id="m-logbasepath" /><code>{"private static string logBasePath"}</code> | Base log folder used by the `logpath` layout renderer. Changed by `UpdateLogFolderPath`. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger that the `Log` methods write to. |
+| <Link id="m-unhandledexceptionslogger" /><code>{"private static readonly Logger unhandledExceptionsLogger"}</code> | NLog logger named UnhandledExceptions, for exceptions Unity logs. |
+| <Link id="m-unhandledlogger" /><code>{"private static readonly Logger unhandledLogger"}</code> | NLog logger named Unhandled, for other Unity log messages. |
 
 </details>
 
@@ -66,23 +66,23 @@ The game's own global `Debug` class, which hides `UnityEngine.Debug` in the game
 <details>
 <summary>16 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-addcsvtargetwithname" /><code>{"private static void AddCsvTargetWithName(LoggingConfiguration config, CsvLayout csvLayout, string name)"}</code> |
-| <Link id="m-addcustomtarget" /><code>{"private static void AddCustomTarget(LoggingConfiguration config, string fileName, params string[] fields)"}</code> |
-| <Link id="m-addcustomtargetsandrenderers" /><code>{"private static void AddCustomTargetsAndRenderers()"}</code> |
-| <Link id="m-adderrortarget" /><code>{"private static void AddErrorTarget(LoggingConfiguration config)"}</code> |
-| <Link id="m-addsimpletarget" /><code>{"private static void AddSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |
-| <Link id="m-addsupersimpletarget" /><code>{"private static void AddSuperSimpleTarget(LoggingConfiguration config, string fileName)"}</code> |
-| <Link id="m-getlogfolderpath" /><code>{"private static string GetLogFolderPath()"}</code> |
-| <Link id="m-getlogsettingspath" /><code>{"private static string GetLogSettingsPath()"}</code> |
-| <Link id="m-loadconfiguration" /><code>{"private static void LoadConfiguration()"}</code> |
-| <Link id="m-logmanagerconfigurationreloaded" /><code>{"private static void LogManagerConfigurationReloaded(object sender, LoggingConfigurationReloadedEventArgs e)"}</code> |
-| <Link id="m-setfulllogfolderpath" /><code>{"private static void SetFullLogFolderPath()"}</code> |
-| <Link id="m-setupforandroid" /><code>{"private static void SetupForAndroid()"}</code> |
-| <Link id="m-setupforstandalone" /><code>{"private static void SetupForStandalone()"}</code> |
-| <Link id="m-setuphostname" /><code>{"private static void SetupHostname()"}</code> |
-| <Link id="m-shutdownnlog" /><code>{"private static void ShutdownNLog()"}</code> |
-| <Link id="m-unhandledunitylog" /><code>{"private static void UnhandledUnityLog(string condition, string stackTrace, LogType type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-addcsvtargetwithname" /><code>{"private static void AddCsvTargetWithName(LoggingConfiguration config, CsvLayout csvLayout, string name)"}</code> | Adds an async CSV file target under Logs in the persistent data folder, archiving at 10 MB and keeping 20 archives. |
+| <Link id="m-addcustomtarget" /><code>{"private static void AddCustomTarget(LoggingConfiguration config, string fileName, params string[] fields)"}</code> | Adds a CSV target with time, level, logger and the given event property columns. |
+| <Link id="m-addcustomtargetsandrenderers" /><code>{"private static void AddCustomTargetsAndRenderers()"}</code> | Registers the game's NLog targets (Unity console, server console, console commands, main menu) and layout renderers such as `logpath` and `entity-id`. |
+| <Link id="m-adderrortarget" /><code>{"private static void AddErrorTarget(LoggingConfiguration config)"}</code> | Adds the ErrorLogFile CSV target with message, stack trace and exception columns. |
+| <Link id="m-addsimpletarget" /><code>{"private static void AddSimpleTarget(LoggingConfiguration config, string fileName)"}</code> | Adds a CSV target with time, level, logger and message columns. |
+| <Link id="m-addsupersimpletarget" /><code>{"private static void AddSuperSimpleTarget(LoggingConfiguration config, string fileName)"}</code> | Adds a CSV target with only time and message columns. |
+| <Link id="m-getlogfolderpath" /><code>{"private static string GetLogFolderPath()"}</code> | Base log folder: the data folder on a server, the client folder otherwise, or the folder of `-logFile` if given. |
+| <Link id="m-getlogsettingspath" /><code>{"private static string GetLogSettingsPath()"}</code> | Returns the `/logging_config_path` value, or an empty string. The cached empty string means the `GameConfig` fallback is never reached. |
+| <Link id="m-loadconfiguration" /><code>{"private static void LoadConfiguration()"}</code> | Loads the NLog config and reconfigures existing loggers, logging to Unity if it fails. |
+| <Link id="m-logmanagerconfigurationreloaded" /><code>{"private static void LogManagerConfigurationReloaded(object sender, LoggingConfigurationReloadedEventArgs e)"}</code> | Logs a line when NLog reloads its configuration. |
+| <Link id="m-setfulllogfolderpath" /><code>{"private static void SetFullLogFolderPath()"}</code> | Sets `LogFolderPath` from the `logFolderPath` variable in the loaded NLog config. |
+| <Link id="m-setupforandroid" /><code>{"private static void SetupForAndroid()"}</code> | Builds an NLog config in code for Android with Unity console and CSV file targets. Not called in this file. |
+| <Link id="m-setupforstandalone" /><code>{"private static void SetupForStandalone()"}</code> | Loads NLog config from the settings path or StreamingAssets/NLog.config, and hooks Unity's threaded log messages. |
+| <Link id="m-setuphostname" /><code>{"private static void SetupHostname()"}</code> | Sets the `server_name` and `hostname` NLog context values from the HOSTNAME variable, or agones-server. |
+| <Link id="m-shutdownnlog" /><code>{"private static void ShutdownNLog()"}</code> | Flushes and shuts down NLog. Runs last on application quit. |
+| <Link id="m-unhandledunitylog" /><code>{"private static void UnhandledUnityLog(string condition, string stackTrace, LogType type)"}</code> | Forwards Unity log messages to NLog: exceptions to the UnhandledExceptions logger, everything else as warnings to Unhandled. |
 
 </details>

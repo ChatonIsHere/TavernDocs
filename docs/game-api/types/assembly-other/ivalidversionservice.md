@@ -1,6 +1,6 @@
 ---
 title: "IValidVersionService"
-description: "interface IValidVersionService in Alta.Platform."
+description: "Checks whether the game version is still allowed to play."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,21 +12,23 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.Platform`, `Alta.Platform`.
 
+Checks whether the game version is still allowed to play. `ApplicationStartupManager` runs it on startup; on Windows a fake always says yes.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Derived types** [`FakeValidVersionService`](/game-api/types/assembly-other/fakevalidversionservice)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> |
-| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentcode" /><code>{"int CurrentCode { get; }"}</code> | This build's version code. -1 in the Windows fake. |
+| <Link id="m-latestcode" /><code>{"int LatestCode { get; }"}</code> | The newest version code known. -1 in the Windows fake. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isversionvalid" /><code>{"Task<IResult> IsVersionValid()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isversionvalid" /><code>{"Task<IResult> IsVersionValid()"}</code> | Checks the version. The Windows fake always returns success. |
 
 ## Used in
 

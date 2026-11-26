@@ -1,6 +1,6 @@
 ---
 title: "SpawnStepContentCommand"
-description: "struct SpawnStepContentCommand in Root.Township."
+description: "Server-to-client order to spawn a micro tutorial step's content, sent through the tutorial sync controller."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,14 +12,16 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `ATT.MicroTutorial`.
 
+Server-to-client order to spawn a micro tutorial step's content, sent through the tutorial sync controller.
+
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-inparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" InParent"}</code> |
-| <Link id="m-microtutorialstep" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inparent" /><code><Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" InParent"}</code> | The entity to spawn the step content under. |
+| <Link id="m-microtutorialstep" /><code><Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" "}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link></code> | The step whose content to spawn. |
 
 ## Used in
 

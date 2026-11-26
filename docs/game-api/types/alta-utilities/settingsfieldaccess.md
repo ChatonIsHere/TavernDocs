@@ -29,10 +29,10 @@ Asset that ties a settings menu entry to one game or server setting, read and wr
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-displayname" /><code>{"private string displayName"}</code> |
-| <Link id="m-settingtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-displayname" /><code>{"private string displayName"}</code> | Name shown for the setting. Backing field for `DisplayName`. |
+| <Link id="m-settingtype" /><code>{"private "}<Link to="/game-api/types/alta-utilities/settingtype">{"SettingType"}</Link>{" settingType"}</code> | Kind of setting, which picks the UI control. Backing field for `SettingType`. |
 
 </details>
 

@@ -28,21 +28,21 @@ The visual character model: rig, animator, skin, clothes, eyes and LODs, used fo
 <details>
 <summary>13 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
-| <Link id="m-bodytype" /><code>{"private "}<Link to="/game-api/types/alta-player/bodytypesettings">{"BodyTypeSettings"}</Link>{" bodyType"}</code> |
-| <Link id="m-clothes" /><code>{"private "}<Link to="/game-api/types/alta-player/clothessettings">{"ClothesSettings"}</Link>{" clothes"}</code> |
-| <Link id="m-controllercollection" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" controllerCollection"}</code> |
-| <Link id="m-cosmeticpacker" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpacker">{"CosmeticPacker"}</Link>{" cosmeticPacker"}</code> |
-| <Link id="m-effectrenderers" /><code>{"private HashSet<Renderer> effectRenderers"}</code> |
-| <Link id="m-eyes" /><code>{"private "}<Link to="/game-api/types/alta-player/eyesettings">{"EyeSettings"}</Link>{" eyes"}</code> |
-| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> |
-| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> |
-| <Link id="m-mainrenderers" /><code>{"private HashSet<Renderer> mainRenderers"}</code> |
-| <Link id="m-rigmap" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigmap">{"RigMap"}</Link>{" rigMap"}</code> |
-| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> |
-| <Link id="m-skin" /><code>{"private "}<Link to="/game-api/types/alta-player/skinsettings">{"SkinSettings"}</Link>{" skin"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | Backing field for `Animator`, the character's animator. |
+| <Link id="m-bodytype" /><code>{"private "}<Link to="/game-api/types/alta-player/bodytypesettings">{"BodyTypeSettings"}</Link>{" bodyType"}</code> | Backing field for `BodyType`. |
+| <Link id="m-clothes" /><code>{"private "}<Link to="/game-api/types/alta-player/clothessettings">{"ClothesSettings"}</Link>{" clothes"}</code> | Backing field for `Clothes`, which also shows and hides the head and body renderers. |
+| <Link id="m-controllercollection" /><code>{"private "}<Link to="/game-api/types/alta-player/charactercomponentcontrollercollection">{"CharacterComponentControllerCollection"}</Link>{" controllerCollection"}</code> | Backing field for `ControllerCollection`. |
+| <Link id="m-cosmeticpacker" /><code>{"private "}<Link to="/game-api/types/alta-customization/cosmeticpacker">{"CosmeticPacker"}</Link>{" cosmeticPacker"}</code> | Backing field for `CosmeticPacker`. |
+| <Link id="m-effectrenderers" /><code>{"private HashSet<Renderer> effectRenderers"}</code> | Renderers added with `AddEffectRenderer`, exposed as `EffectRenderers`. |
+| <Link id="m-eyes" /><code>{"private "}<Link to="/game-api/types/alta-player/eyesettings">{"EyeSettings"}</Link>{" eyes"}</code> | Backing field for `Eyes`. |
+| <Link id="m-fingertips" /><code>{"private "}<Link to="/game-api/types/global-e-h/fingertipsettings">{"FingerTipSettings"}</Link>{" fingerTips"}</code> | Backing field for `FingerTips`. |
+| <Link id="m-lodgroup" /><code>{"private LODGroup lodGroup"}</code> | Backing field for `LodGroup`, the character's LOD group. |
+| <Link id="m-mainrenderers" /><code>{"private HashSet<Renderer> mainRenderers"}</code> | The clothes renderers, exposed as `MainRenderers`. |
+| <Link id="m-rigmap" /><code>{"private "}<Link to="/game-api/types/global-q-r/rigmap">{"RigMap"}</Link>{" rigMap"}</code> | Backing field for `RigMap`, which maps bone ids to transforms. |
+| <Link id="m-root" /><code>{"private "}<Link to="/game-api/types/global-a-b/boneidentifier">{"BoneIdentifier"}</Link>{" root"}</code> | Bone id of the root bone, looked up in the rig map by `Root`. |
+| <Link id="m-skin" /><code>{"private "}<Link to="/game-api/types/alta-player/skinsettings">{"SkinSettings"}</Link>{" skin"}</code> | Backing field for `Skin`. |
 
 </details>
 
@@ -79,11 +79,11 @@ The visual character model: rig, animator, skin, clothes, eyes and LODs, used fo
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-reducelod" /><code>{"private void ReduceLOD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Collects the clothes renderers as main renderers and the first LOD's renderers into `Renderers`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cleans up the eye settings. |
+| <Link id="m-reducelod" /><code>{"private void ReduceLOD()"}</code> | Drops the top LOD level and hides its renderers, unless first person. Not called anywhere in this build. |
 
 </details>
 

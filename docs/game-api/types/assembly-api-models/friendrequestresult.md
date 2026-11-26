@@ -1,6 +1,6 @@
 ---
 title: "FriendRequestResult"
-description: "class FriendRequestResult in Alta.Api.DataTransferModels."
+description: "The web API's reply to a friend request: what happened, plus the friendship records each way."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses.DTOs.Responses`.
 
+The web API's reply to a friend request: what happened, plus the friendship records each way.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,11 +24,11 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-friendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" Friendship { get; set; }"}</code> |
-| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/friendrequestedtype">{"FriendRequestedType"}</Link>{" Result { get; set; }"}</code> |
-| <Link id="m-reversefriendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" ReverseFriendship { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-friendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" Friendship { get; set; }"}</code> | The friendship record from the sender to the target. |
+| <Link id="m-result" /><code><Link to="/game-api/types/assembly-api-models/friendrequestedtype">{"FriendRequestedType"}</Link>{" Result { get; set; }"}</code> | Whether the players became friends, a request was sent, or they were already friends or already requested. |
+| <Link id="m-reversefriendship" /><code><Link to="/game-api/types/assembly-api-models/friendshipinfo">{"FriendshipInfo"}</Link>{" ReverseFriendship { get; set; }"}</code> | The friendship record from the target back to the sender. |
 
 ## Used in
 

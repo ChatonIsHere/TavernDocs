@@ -1,6 +1,6 @@
 ---
 title: "ExtraArrowUpdater.ExtraArrowData"
-description: "class ExtraArrowUpdater.ExtraArrowData in Root.Township."
+description: "One extra arrow nocked on a bow alongside the main arrow (multi-shot), with its offset and colliders."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ExtraArrowUpdater.ExtraArrowData
 
 A **class** in `Root.Township`, no namespace.
+
+One extra arrow nocked on a bow alongside the main arrow (multi-shot), with its offset and colliders. Synced from the server by `ExtraArrowUpdater`.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`ExtraArrowUpdater`](/game-api/types/global-e-h/extraarrowupdater)
@@ -23,11 +25,11 @@ A **class** in `Root.Township`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-arrow" /><code><Link to="/game-api/types/global-i-l/ishootable">{"IShootable"}</Link>{" Arrow { get; set; }"}</code> |
-| <Link id="m-collidergroup" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-localoffset" /><code>{"Vector3 LocalOffset { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arrow" /><code><Link to="/game-api/types/global-i-l/ishootable">{"IShootable"}</Link>{" Arrow { get; set; }"}</code> | The extra arrow. |
+| <Link id="m-collidergroup" /><code><Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" "}<Link to="/game-api/types/global-c-d/collidergroup">{"ColliderGroup"}</Link>{" { get; set; }"}</code> | The arrow's colliders, kept off while nocked and turned back on shortly after it is shot. |
+| <Link id="m-localoffset" /><code>{"Vector3 LocalOffset { get; set; }"}</code> | The arrow's position relative to the main arrow. |
 
 ## Used in
 

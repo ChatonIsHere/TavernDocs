@@ -1,6 +1,6 @@
 ---
 title: "ChunkReference"
-description: "class ChunkReference in Root.Township."
+description: "A serializable reference to a chunk by its identifier string, resolved through Chunk.ChunksByIdentifier when read."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkReference
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+A serializable reference to a chunk by its identifier string, resolved through `Chunk.ChunksByIdentifier` when read.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -26,24 +28,24 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunkidentifier" /><code>{"private string chunkIdentifier"}</code> | Backing field for `ChunkIdentifier`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; }"}</code> |
-| <Link id="m-chunkidentifier-2" /><code>{"string ChunkIdentifier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" { get; }"}</code> | Looks up the chunk with this identifier; null if it isn't loaded or doesn't exist. |
+| <Link id="m-chunkidentifier-2" /><code>{"string ChunkIdentifier { get; }"}</code> | The stored chunk identifier. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | The chunk's own string if found, otherwise the raw identifier. |
 
 ## Used in
 

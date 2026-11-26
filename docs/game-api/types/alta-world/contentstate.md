@@ -1,6 +1,6 @@
 ---
 title: "ContentState"
-description: "enum ContentState in Root.Township."
+description: "Whether a chunk's content is loaded or unloaded."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ContentState
 
 An **enum** in `Root.Township`, `Alta.Chunks`.
+
+Whether a chunk's content is loaded or unloaded. Used for `ChunkContentManager.DesiredState` and `CurrentProcess`.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 

@@ -15,11 +15,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`Analytics`](/game-api/types/alta-console/analytics) | static class |  | 2 |  |
-| [`AnalyticsOptions`](/game-api/types/alta-console/analyticsoptions) | enum |  | 5 |  |
+| [`AnalyticsOptions`](/game-api/types/alta-console/analyticsoptions) | enum |  | 5 | Obsolete flags for which extra fields (timestamp, user ID, server ID, game time) the old analytics system adds to events. |
 | [`AnalyticsRecordAttribute`](/game-api/types/alta-console/analyticsrecordattribute) | class | `Attribute` | 0 |  |
 | [`AnalyticsRecordForAllAttribute`](/game-api/types/alta-console/analyticsrecordforallattribute) | class | `Attribute` | 2 |  |
 | [`AnalyticsTools`](/game-api/types/alta-console/analyticstools) | static class |  | 1 |  |
-| [`AnalyticsType`](/game-api/types/alta-console/analyticstype) | enum |  | 6 |  |
+| [`AnalyticsType`](/game-api/types/alta-console/analyticstype) | enum |  | 6 | Old analytics record categories (combat hit, teleportation, device stats and so on), each mapped to an endpoint name. `Analytics.SendRecord` is empty in this build. |
 | [`DeviceStatRecord`](/game-api/types/alta-console/devicestatrecord) | class |  | 19 | Obsolete analytics record of the player's hardware, filled from Unity's `SystemInfo`. |
 | [`TeleportationRecord`](/game-api/types/alta-console/teleportationrecord) | struct |  | 3 |  |
 
@@ -28,7 +28,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`UserSettingsAnalyticsReporter`](/game-api/types/alta-console/usersettingsanalyticsreporter) | class | `IInitializable`, `IIsolate` | 3 |  |
-| [`UserSettingsAnalyticsReporterConfiguration`](/game-api/types/alta-console/usersettingsanalyticsreporterconfiguration) | class | `ScriptableObject` | 2 |  |
+| [`UserSettingsAnalyticsReporterConfiguration`](/game-api/types/alta-console/usersettingsanalyticsreporterconfiguration) | class | `ScriptableObject` | 2 | Asset that sets the title and cut-off date of a user settings analytics report. Read by `UserSettingsAnalyticsReporter`. |
 | [`UserSettingsReport`](/game-api/types/alta-console/usersettingsreport) | class |  | 3 |  |
 
 ## Alta.Console
@@ -48,7 +48,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CommandPart`](/game-api/types/alta-console/commandpart) | abstract class | `BasePart` | 10 | Base for an entry in the console command tree: a module or a command. Holds its name, aliases, parent module and requirements. |
 | [`CommandResult`](/game-api/types/alta-console/commandresult) | class |  | 8 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
 | [`CommandResult<T>`](/game-api/types/alta-console/commandresult-t) | class | `CommandResult` | 4 | [Arguments and results](../console-and-utilities/arguments-and-results.md#commandresult): For an object result, `Log()` serializes it to JSON and, in the same line, copies that JSON to the system clipboard of the machine running the game. |
-| [`CommandResultSuccess`](/game-api/types/alta-console/commandresultsuccess) | enum |  | 5 |  |
+| [`CommandResultSuccess`](/game-api/types/alta-console/commandresultsuccess) | enum |  | 5 | Outcome of matching console input to a command: success, or why the parameters didn't fit (too few, too many, wrong types, failed to parse). Carried on `CommandSearchResult`. |
 | [`CommandSearchResult`](/game-api/types/alta-console/commandsearchresult) | struct |  | 8 | The outcome of matching console input to a command: which command was found, whether its arguments fit, and the parsed arguments. |
 | [`CommandService`](/game-api/types/alta-console/commandservice) | static class |  | 8 | [Writing commands](../console-and-utilities/commands.md#commandservice), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Main thread: every console the game has calls it from Unity's main thread, and you should too. |
 | [`ConsoleEvent`](/game-api/types/alta-console/consoleevent) | abstract class |  | 5 |  |
@@ -61,8 +61,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DynamicCommandResult`](/game-api/types/alta-console/dynamiccommandresult) | class | `CommandResult<object>` | 2 | [Arguments and results](../console-and-utilities/arguments-and-results.md) |
 | [`EditorOnlyAttribute`](/game-api/types/alta-console/editoronlyattribute) | class | `RequirementAttribute` | 2 |  |
 | [`GroupPermissionAttribute`](/game-api/types/alta-console/grouppermissionattribute) | class | `RequirementAttribute` | 2 |  |
-| [`HashedItemInfo`](/game-api/types/alta-console/hashediteminfo) | class |  | 5 |  |
-| [`IConsoleEvent`](/game-api/types/alta-console/iconsoleevent) | interface |  | 3 |  |
+| [`HashedItemInfo`](/game-api/types/alta-console/hashediteminfo) | class |  | 5 | A hash and name pair for console output, such as the list of spawnable prefabs. Converts from prefabs, items and hashed values. |
+| [`IConsoleEvent`](/game-api/types/alta-console/iconsoleevent) | interface |  | 3 | An event that server console (websocket) connections can subscribe to; registered with `ConsoleEventProcessor`. |
 | [`JsonSerializerSettingsExtensions`](/game-api/types/alta-console/jsonserializersettingsextensions) | static class |  | 1 |  |
 | [`LoggedInOnlyAttribute`](/game-api/types/alta-console/loggedinonlyattribute) | class | `RequirementAttribute` | 2 |  |
 | [`Module`](/game-api/types/alta-console/module) | class | `CommandPart` | 5 | [Writing commands](../console-and-utilities/commands.md#module-and-command) |
@@ -74,7 +74,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Parameter`](/game-api/types/alta-console/parameter) | class | `BasePart` | 9 |  |
 | [`PlayOnlyAttribute`](/game-api/types/alta-console/playonlyattribute) | class | `RequirementAttribute` | 2 |  |
 | [`PriorityAttribute`](/game-api/types/alta-console/priorityattribute) | class | `Attribute` | 2 |  |
-| [`ProgressiveHandler`](/game-api/types/alta-console/progressivehandler) | class |  | 0 |  |
+| [`ProgressiveHandler`](/game-api/types/alta-console/progressivehandler) | class |  | 0 | Empty marker type. A console command whose first parameter is a `ProgressiveHandler` is flagged as progressive; it must be the first parameter or registration throws. |
 | [`RequirementAttribute`](/game-api/types/alta-console/requirementattribute) | abstract class | `Attribute` | 2 | Base attribute for a condition a console command (method or whole module class) needs before it can run. Subclasses override `Check`. |
 | [`ServerOnlyAttribute`](/game-api/types/alta-console/serveronlyattribute) | class | `RequirementAttribute` | 2 |  |
 | [`StringTypeConverter`](/game-api/types/alta-console/stringtypeconverter) | class | `JsonConverter<Type>` | 3 |  |
@@ -85,8 +85,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`WebSocketCommandHandler`](/game-api/types/alta-console/websocketcommandhandler) | class | `IRemoteConsoleHandler` | 8 | [Remote console](../console-and-utilities/remote-console.md#websocketcommandhandler): One per websocket connection. `WebSocketRemoteConsole.Handlers` (a static list) holds every one, logged in or not. |
 | [`WebSocketCommandHandler.Request`](/game-api/types/alta-console/websocketcommandhandler-request) | struct |  | 2 |  |
 | [`WebSocketCommandHandler.ResponseData`](/game-api/types/alta-console/websocketcommandhandler-responsedata) | class |  | 7 | One message sent to a remote console client over the WebSocket: a system message, subscription event or command result, serialized to JSON. |
-| [`WebSocketCommandHandler.ResponseType`](/game-api/types/alta-console/websocketcommandhandler-responsetype) | enum |  | 3 |  |
-| [`WebSocketCommandHandler.SubscriptionResult`](/game-api/types/alta-console/websocketcommandhandler-subscriptionresult) | enum |  | 3 |  |
+| [`WebSocketCommandHandler.ResponseType`](/game-api/types/alta-console/websocketcommandhandler-responsetype) | enum |  | 3 | Kind of message the remote console websocket sends back: a system message (such as the auth result), a subscription event, or the result of a command. |
+| [`WebSocketCommandHandler.SubscriptionResult`](/game-api/types/alta-console/websocketcommandhandler-subscriptionresult) | enum |  | 3 | Result of a websocket console subscribe or unsubscribe: done, no change (already in that state) or the event type wasn't found. |
 | [`WebSocketConsoleCommandModule`](/game-api/types/alta-console/websocketconsolecommandmodule) | class |  | 3 |  |
 | [`WebsocketContractResolver`](/game-api/types/alta-console/websocketcontractresolver) | class | `DefaultContractResolver` | 1 |  |
 | [`WebSocketRemoteConsole`](/game-api/types/alta-console/websocketremoteconsole) | class | `IRemoteConsole` | 7 |  |

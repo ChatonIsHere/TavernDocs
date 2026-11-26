@@ -1,6 +1,6 @@
 ---
 title: "AchievementDefinition"
-description: "class AchievementDefinition in Root.Township."
+description: "Asset for one achievement; its asset name is its ID."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AchievementDefinition
 
 A **class** in `Root.Township`, `Alta.Achievements`.
+
+Asset for one achievement; its asset name is its ID.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `ScriptableObject`
@@ -25,9 +27,9 @@ A **class** in `Root.Township`, `Alta.Achievements`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-identifier" /><code>{"string Identifier { get; }"}</code> | The asset name, used as the achievement ID. |
 
 ## Used in
 

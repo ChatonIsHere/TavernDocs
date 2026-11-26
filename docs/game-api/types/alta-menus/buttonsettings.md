@@ -1,6 +1,6 @@
 ---
 title: "ButtonSettings"
-description: "class ButtonSettings in Root.Township."
+description: "An empty ScriptableObject asset for UI button settings (menu Township/UI/Button Settings)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ButtonSettings
 
 A **class** in `Root.Township`, `Alta.Meta.UI`.
+
+An empty ScriptableObject asset for UI button settings (menu Township/UI/Button Settings). It holds nothing in this build.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `ScriptableObject`

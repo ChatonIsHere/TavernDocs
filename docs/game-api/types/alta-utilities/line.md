@@ -1,6 +1,6 @@
 ---
 title: "Line"
-description: "struct Line in Root.Township."
+description: "A line segment between two world points."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, `Alta.Utilities`.
 
+A line segment between two world points.
+
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **struct** in `Root.Township`, `Alta.Utilities`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-from" /><code>{"Vector3 From { get; }"}</code> |
-| <Link id="m-to" /><code>{"Vector3 To { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-from" /><code>{"Vector3 From { get; }"}</code> | Start point. |
+| <Link id="m-to" /><code>{"Vector3 To { get; }"}</code> | End point. |
 
 ## Used in
 

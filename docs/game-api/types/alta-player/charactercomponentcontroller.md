@@ -29,9 +29,9 @@ Base for player character rig components (arm IK, elbows and so on) that an owni
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-playercontroller" /><code>{"private "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController"}</code> | The `PlayerController` above this component, filled in from the parent. |
 
 </details>
 

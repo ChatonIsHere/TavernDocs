@@ -1,6 +1,6 @@
 ---
 title: "SerializeMethod<T>"
-description: "delegate SerializeMethod<T> in Root.Township."
+description: "Callback that reads or writes data for one player on a stream, with an extra argument of type T."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializeMethod&lt;T&gt;
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback that reads or writes data for one player on a stream, with an extra argument of type `T`. A non-generic version without the argument sits in the same file.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

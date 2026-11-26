@@ -30,16 +30,16 @@ Settings asset for `ElbowController`, which places the elbow IK hint by matching
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-elbowtargetspeedcurve" /><code>{"private AnimationCurve elbowTargetSpeedCurve"}</code> |
-| <Link id="m-isloggingbesttargets" /><code>{"private bool isLoggingBestTargets"}</code> |
-| <Link id="m-isshowingbesttargets" /><code>{"private bool isShowingBestTargets"}</code> |
-| <Link id="m-isusingweightedaverage" /><code>{"private bool isUsingWeightedAverage"}</code> |
-| <Link id="m-minimumassessedpoints" /><code>{"private int minimumAssessedPoints"}</code> |
-| <Link id="m-numberofbestmatchedtoaverage" /><code>{"private int numberOfBestMatchedToAverage"}</code> |
-| <Link id="m-positionmultiplier" /><code>{"private float positionMultiplier"}</code> |
-| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-elbowtargetspeedcurve" /><code>{"private AnimationCurve elbowTargetSpeedCurve"}</code> | Maps the distance between the current and best elbow target to how fast the elbow moves there. |
+| <Link id="m-isloggingbesttargets" /><code>{"private bool isLoggingBestTargets"}</code> | Debug: logs the best matching data points every physics step. |
+| <Link id="m-isshowingbesttargets" /><code>{"private bool isShowingBestTargets"}</code> | Debug: makes visual markers for the best matching data points. |
+| <Link id="m-isusingweightedaverage" /><code>{"private bool isUsingWeightedAverage"}</code> | Averages the best matches weighted by how well they score. Default true. |
+| <Link id="m-minimumassessedpoints" /><code>{"private int minimumAssessedPoints"}</code> | How many data points must be scored before the search stops widening. Default 15. |
+| <Link id="m-numberofbestmatchedtoaverage" /><code>{"private int numberOfBestMatchedToAverage"}</code> | How many of the best matching data points are averaged for the elbow position. Default 1. |
+| <Link id="m-positionmultiplier" /><code>{"private float positionMultiplier"}</code> | Weight of hand position difference when scoring a data point. |
+| <Link id="m-rotationmultiplier" /><code>{"private float rotationMultiplier"}</code> | Weight of hand rotation difference when scoring a data point. |
 
 </details>
 

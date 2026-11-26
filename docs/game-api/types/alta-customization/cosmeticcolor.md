@@ -30,17 +30,17 @@ A hashed asset holding a three-colour set for cosmetics, written into material c
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-color0" /><code>{"private Color color0"}</code> |
-| <Link id="m-color1" /><code>{"private Color color1"}</code> |
-| <Link id="m-color2" /><code>{"private Color color2"}</code> |
-| <Link id="m-colora1" /><code>{"private static readonly int ColorA1"}</code> |
-| <Link id="m-colora2" /><code>{"private static readonly int ColorA2"}</code> |
-| <Link id="m-colora3" /><code>{"private static readonly int ColorA3"}</code> |
-| <Link id="m-colorb1" /><code>{"private static readonly int ColorB1"}</code> |
-| <Link id="m-colorb2" /><code>{"private static readonly int ColorB2"}</code> |
-| <Link id="m-colorb3" /><code>{"private static readonly int ColorB3"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-color0" /><code>{"private Color color0"}</code> | Backing field for `Color0`. |
+| <Link id="m-color1" /><code>{"private Color color1"}</code> | Backing field for `Color1`. |
+| <Link id="m-color2" /><code>{"private Color color2"}</code> | Backing field for `Color2`. |
+| <Link id="m-colora1" /><code>{"private static readonly int ColorA1"}</code> | Shader property ID for `_ColorA1`. |
+| <Link id="m-colora2" /><code>{"private static readonly int ColorA2"}</code> | Shader property ID for `_ColorA2`. |
+| <Link id="m-colora3" /><code>{"private static readonly int ColorA3"}</code> | Shader property ID for `_ColorA3`. |
+| <Link id="m-colorb1" /><code>{"private static readonly int ColorB1"}</code> | Shader property ID for `_ColorB1`. |
+| <Link id="m-colorb2" /><code>{"private static readonly int ColorB2"}</code> | Shader property ID for `_ColorB2`. |
+| <Link id="m-colorb3" /><code>{"private static readonly int ColorB3"}</code> | Shader property ID for `_ColorB3`. |
 
 </details>
 
@@ -63,10 +63,10 @@ A hashed asset holding a three-colour set for cosmetics, written into material c
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-copycolors" /><code>{"private void CopyColors()"}</code> |
-| <Link id="m-resetalphas" /><code>{"private void ResetAlphas()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-copycolors" /><code>{"private void CopyColors()"}</code> | Editor context menu: copies the first colour's RGB to the other two, keeping their alphas. |
+| <Link id="m-resetalphas" /><code>{"private void ResetAlphas()"}</code> | Editor context menu: sets the alphas to 0, 0.5 and 1. The alphas are the gradient key positions in `ToGradient`. |
 
 </details>
 

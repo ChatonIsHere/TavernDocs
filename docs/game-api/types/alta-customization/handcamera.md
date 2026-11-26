@@ -28,54 +28,54 @@ The handheld photo camera a player spawns from the quick access menu. Only its o
 <details>
 <summary>46 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-emission" /><code>{"private static readonly int _Emission"}</code> |
-| <Link id="m-maintex" /><code>{"private static readonly int _MainTex"}</code> |
-| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> |
-| <Link id="m-androidfarclipplane" /><code>{"private int androidFarClipPlane"}</code> |
-| <Link id="m-capturealert" /><code>{"private Renderer captureAlert"}</code> |
-| <Link id="m-currentevent" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" currentEvent"}</code> |
-| <Link id="m-currenttimer" /><code>{"private int currentTimer"}</code> |
-| <Link id="m-darkfadematerial" /><code>{"private static Material darkFadeMaterial"}</code> |
-| <Link id="m-frontcamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" frontCamera"}</code> |
-| <Link id="m-handles" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"[] handles"}</code> |
-| <Link id="m-iscameralocked" /><code>{"private bool isCameraLocked"}</code> |
-| <Link id="m-isforcinghighres" /><code>{"private bool isForcingHighRes"}</code> |
-| <Link id="m-istakingpicture" /><code>{"private bool isTakingPicture"}</code> |
-| <Link id="m-localplayerhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/localplayerheadrenderer">{"LocalPlayerHeadRenderer"}</Link>{" localPlayerHandler"}</code> |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
-| <Link id="m-longhaptics" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{", Coroutine> longHaptics"}</code> |
-| <Link id="m-marker" /><code>{"private Renderer marker"}</code> |
-| <Link id="m-markermaterial" /><code>{"private Material markerMaterial"}</code> |
-| <Link id="m-materializer" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderermaterializer">{"RendererMaterializer"}</Link>{" materializer"}</code> |
-| <Link id="m-nonownedrenderingcamera" /><code>{"private static "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" nonOwnedRenderingCamera"}</code> |
-| <Link id="m-onphototakeneffects" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onPhotoTakenEffects"}</code> |
-| <Link id="m-ontimermarkeffects" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onTimerMarkEffects"}</code> |
-| <Link id="m-owner" /><code>{"private int owner"}</code> |
-| <Link id="m-remoteobiturator" /><code>{"private "}<Link to="/game-api/types/alta-customization/remoteobiturator">{"RemoteObiturator"}</Link>{" remoteObiturator"}</code> |
-| <Link id="m-rendererstomaterialize" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" renderersToMaterialize"}</code> |
-| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> |
-| <Link id="m-screenshot" /><code>{"private "}<Link to="/game-api/types/alta-utilities/screenshot">{"Screenshot"}</Link>{" screenshot"}</code> |
-| <Link id="m-screenshotheight" /><code>{"private const int ScreenShotHeight"}</code> |
-| <Link id="m-screenshotwidth" /><code>{"private const int ScreenShotWidth"}</code> |
-| <Link id="m-selfiecamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" selfieCamera"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> |
-| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> |
-| <Link id="m-syncowner" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncOwner"}</code> |
-| <Link id="m-syncphoto" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPhoto"}</code> |
-| <Link id="m-syncselfie" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSelfie"}</code> |
-| <Link id="m-syncstreaming" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStreaming"}</code> |
-| <Link id="m-timercanvas" /><code>{"private Canvas timerCanvas"}</code> |
-| <Link id="m-timertext" /><code>{"private Text timerText"}</code> |
-| <Link id="m-viewfinder" /><code>{"private Renderer viewFinder"}</code> |
-| <Link id="m-viewfinderheight" /><code>{"private const int ViewFinderHeight"}</code> |
-| <Link id="m-viewfinderobject" /><code>{"private GameObject viewfinderObject"}</code> |
-| <Link id="m-viewfinderresizersettings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" viewfinderResizerSettings"}</code> |
-| <Link id="m-viewfinderwidth" /><code>{"private const int ViewFinderWidth"}</code> |
-| <Link id="m-visibilitytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/visibilitytrigger">{"VisibilityTrigger"}</Link>{" visibilityTrigger"}</code> |
-| <Link id="m-volume" /><code>{"private PostProcessVolume volume"}</code> |
-| <Link id="m-waitforevent" /><code>{"private TaskCompletionSource<bool> waitForEvent"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-emission" /><code>{"private static readonly int _Emission"}</code> | Shader property ID for `_Emission`, used on the marker. |
+| <Link id="m-maintex" /><code>{"private static readonly int _MainTex"}</code> | Shader property ID for `_MainTex`, used on the viewfinder. |
+| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> | Shader property ID for `_Progress`. |
+| <Link id="m-androidfarclipplane" /><code>{"private int androidFarClipPlane"}</code> | Far clip distance for the cameras on Android builds. |
+| <Link id="m-capturealert" /><code>{"private Renderer captureAlert"}</code> | Renderer flashed when a photo is taken; turns red if saving failed. |
+| <Link id="m-currentevent" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" currentEvent"}</code> | What the camera is rendering for (idle or photo), passed to the render events. |
+| <Link id="m-currenttimer" /><code>{"private int currentTimer"}</code> | Index of the selected self-timer option. |
+| <Link id="m-darkfadematerial" /><code>{"private static Material darkFadeMaterial"}</code> | Shared material that darkens the viewfinder when the lens is blocked. |
+| <Link id="m-frontcamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" frontCamera"}</code> | The forward-facing camera. |
+| <Link id="m-handles" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{"[] handles"}</code> | Backing field for `Handles`; only the owner can grab them. |
+| <Link id="m-iscameralocked" /><code>{"private bool isCameraLocked"}</code> | True while a photo is being taken, so visibility changes don't turn rendering on. |
+| <Link id="m-isforcinghighres" /><code>{"private bool isForcingHighRes"}</code> | When set, the viewfinder renders at the streaming resolution. |
+| <Link id="m-istakingpicture" /><code>{"private bool isTakingPicture"}</code> | True during a photo, its timer and review. |
+| <Link id="m-localplayerhandler" /><code>{"private "}<Link to="/game-api/types/alta-customization/localplayerheadrenderer">{"LocalPlayerHeadRenderer"}</Link>{" localPlayerHandler"}</code> | Handles showing the local player's head in the camera's view. |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-longhaptics" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{", Coroutine> longHaptics"}</code> | Running long-press haptic coroutine per hand. |
+| <Link id="m-marker" /><code>{"private Renderer marker"}</code> | The light that blinks for the timer and photo. |
+| <Link id="m-markermaterial" /><code>{"private Material markerMaterial"}</code> | Instance of the marker's material whose emission is animated. |
+| <Link id="m-materializer" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderermaterializer">{"RendererMaterializer"}</Link>{" materializer"}</code> | Fades the camera's renderers in and out. |
+| <Link id="m-nonownedrenderingcamera" /><code>{"private static "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" nonOwnedRenderingCamera"}</code> | The one other player's camera this client renders, if any. |
+| <Link id="m-onphototakeneffects" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onPhotoTakenEffects"}</code> | Effects played when a photo is taken. |
+| <Link id="m-ontimermarkeffects" /><code>{"private "}<Link to="/game-api/types/global-t-x/transformevent">{"TransformEvent"}</Link>{" onTimerMarkEffects"}</code> | Effects played on each timer tick. |
+| <Link id="m-owner" /><code>{"private int owner"}</code> | Player identifier of the camera's owner. |
+| <Link id="m-remoteobiturator" /><code>{"private "}<Link to="/game-api/types/alta-customization/remoteobiturator">{"RemoteObiturator"}</Link>{" remoteObiturator"}</code> | Serialized reference not used in this class. |
+| <Link id="m-rendererstomaterialize" /><code>{"private "}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" renderersToMaterialize"}</code> | Renderers faded by `materializer`. |
+| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> | Render texture the cameras draw the viewfinder image into. |
+| <Link id="m-screenshot" /><code>{"private "}<Link to="/game-api/types/alta-utilities/screenshot">{"Screenshot"}</Link>{" screenshot"}</code> | Helper that captures and saves photos. |
+| <Link id="m-screenshotheight" /><code>{"private const int ScreenShotHeight"}</code> | Base photo height (1080) before the resolution scale setting. |
+| <Link id="m-screenshotwidth" /><code>{"private const int ScreenShotWidth"}</code> | Base photo width (1920) before the resolution scale setting. |
+| <Link id="m-selfiecamera" /><code>{"private "}<Link to="/game-api/types/alta-customization/blockablecamera">{"BlockableCamera"}</Link>{" selfieCamera"}</code> | The backward-facing camera. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> | Timer options, colours and durations for this camera. |
+| <Link id="m-synceffect" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncEffect"}</code> | Message carrying fade in or out. |
+| <Link id="m-syncowner" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncOwner"}</code> | Message carrying the owner. |
+| <Link id="m-syncphoto" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncPhoto"}</code> | Message sent when a photo is taken. |
+| <Link id="m-syncselfie" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncSelfie"}</code> | Message carrying the selfie state. |
+| <Link id="m-syncstreaming" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncStreaming"}</code> | Message carrying the streaming state. |
+| <Link id="m-timercanvas" /><code>{"private Canvas timerCanvas"}</code> | Canvas showing the self-timer count. |
+| <Link id="m-timertext" /><code>{"private Text timerText"}</code> | Text showing the seconds left. |
+| <Link id="m-viewfinder" /><code>{"private Renderer viewFinder"}</code> | Renderer showing the camera image. |
+| <Link id="m-viewfinderheight" /><code>{"private const int ViewFinderHeight"}</code> | Base viewfinder height (1080). |
+| <Link id="m-viewfinderobject" /><code>{"private GameObject viewfinderObject"}</code> | Viewfinder object hidden while fading. |
+| <Link id="m-viewfinderresizersettings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" viewfinderResizerSettings"}</code> | Lets the owner resize the viewfinder. |
+| <Link id="m-viewfinderwidth" /><code>{"private const int ViewFinderWidth"}</code> | Base viewfinder width (1920). |
+| <Link id="m-visibilitytrigger" /><code>{"private "}<Link to="/game-api/types/alta-customization/visibilitytrigger">{"VisibilityTrigger"}</Link>{" visibilityTrigger"}</code> | Reports when the viewfinder is visible, to save rendering. |
+| <Link id="m-volume" /><code>{"private PostProcessVolume volume"}</code> | Post-process volume; ambient occlusion is turned off for the photo on Windows. |
+| <Link id="m-waitforevent" /><code>{"private TaskCompletionSource<bool> waitForEvent"}</code> | Completes when the next pre-render happens during a photo. |
 
 </details>
 
@@ -95,9 +95,9 @@ The handheld photo camera a player spawns from the quick access menu. Only its o
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> | Bake order (10). |
 
 </details>
 
@@ -137,39 +137,39 @@ The handheld photo camera a player spawns from the quick access menu. Only its o
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addlocalplayer" /><code>{"private void AddLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |  |
-| <Link id="m-animatemarker" /><code>{"private IEnumerator AnimateMarker(Color color, bool hasEffectss = false, int blips = 1) (iterator)"}</code> |  |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |  |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |  |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |  |
-| <Link id="m-clearrendertexture" /><code>{"private void ClearRenderTexture()"}</code> |  |
-| <Link id="m-finishfadein" /><code>{"private void FinishFadeIn()"}</code> |  |
-| <Link id="m-internalflipcamera" /><code>{"private void InternalFlipCamera(bool value)"}</code> |  |
-| <Link id="m-longhaptic" /><code>{"private IEnumerator LongHaptic("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput) (iterator)"}</code> |  |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |  |
-| <Link id="m-ondestroyedbyscene" /><code>{"private void OnDestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> |  |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |  |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |  |
-| <Link id="m-onpostrender-2" /><code>{"private void OnPostRender()"}</code> |  |
-| <Link id="m-onprerender-2" /><code>{"private void OnPreRender()"}</code> |  |
-| <Link id="m-remotescreenshot" /><code>{"private async void RemoteScreenshot()"}</code> |  |
-| <Link id="m-runtimer" /><code>{"private async Task RunTimer(int timer)"}</code> |  |
+| <Link id="m-addlocalplayer" /><code>{"private void AddLocalPlayer("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Client: registers the local player's head renderer handling when the local player is set, or releases it when cleared. |
+| <Link id="m-animatemarker" /><code>{"private IEnumerator AnimateMarker(Color color, bool hasEffectss = false, int blips = 1) (iterator)"}</code> | Coroutine: lights the marker in a colour, blinking for timer ticks, then turns it off. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Client: sets up the marker, viewfinder visibility trigger, handle hooks, settings and render events. Also marks the camera as never saved. |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> | Build bake: on Android, sets the far clip plane and strips post processing layers. |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Empty build-bake step. |
+| <Link id="m-clearrendertexture" /><code>{"private void ClearRenderTexture()"}</code> | Releases the viewfinder render texture and detaches it from both cameras. |
+| <Link id="m-finishfadein" /><code>{"private void FinishFadeIn()"}</code> | After fading in: shows the viewfinder, makes the handles grabbable and, for the owner, enables viewfinder resizing. |
+| <Link id="m-internalflipcamera" /><code>{"private void InternalFlipCamera(bool value)"}</code> | Switches between the front and selfie camera, mirrors the viewfinder for selfies and raises `SelfieModeChanged`. |
+| <Link id="m-longhaptic" /><code>{"private IEnumerator LongHaptic("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput) (iterator)"}</code> | Coroutine: buzzes the hand lightly every frame while the long photo button is held. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks events, cleans materials, stops streaming if on and releases the head renderer handling. |
+| <Link id="m-ondestroyedbyscene" /><code>{"private void OnDestroyedByScene("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isUnload)"}</code> | Clears `Current` if it was this camera. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Releases the render texture and turns off the active camera. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Turns on the active camera and makes a render texture at the viewfinder (or forced high) resolution. |
+| <Link id="m-onpostrender-2" /><code>{"private void OnPostRender()"}</code> | Raises the static `onPostRender` event for this camera's render. |
+| <Link id="m-onprerender-2" /><code>{"private void OnPreRender()"}</code> | Raises the static `onPreRender` event for this camera's render. |
+| <Link id="m-remotescreenshot" /><code>{"private async void RemoteScreenshot()"}</code> | Client: plays the timer, marker and capture effects for a photo another player took, without saving one. |
+| <Link id="m-runtimer" /><code>{"private async Task RunTimer(int timer)"}</code> | Counts the self-timer down once a second on the timer canvas, blinking the marker. |
 | <Link id="m-screenshot-3" /><code>{"private async void Screenshot()"}</code> | Input handler for the photo button: stops the haptics and takes a photo. |
-| <Link id="m-setantialiasing" /><code>{"private void SetAntialiasing(bool isEnabled)"}</code> |  |
-| <Link id="m-setupforlocalplayerowner" /><code>{"private void SetupForLocalPlayerOwner()"}</code> |  |
-| <Link id="m-setviewfindertexture" /><code>{"private void SetViewFinderTexture(Texture texture)"}</code> |  |
-| <Link id="m-startscreenshots" /><code>{"private void StartScreenshots("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-stopscreenshots" /><code>{"private void StopScreenshots("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |  |
-| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isFadingIn)"}</code> |  |
-| <Link id="m-syncowner-2" /><code>{"private void SyncOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncphoto-2" /><code>{"private void SyncPhoto("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncselfie-2" /><code>{"private void SyncSelfie("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-syncstreaming-2" /><code>{"private void SyncStreaming("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |  |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |  |
-| <Link id="m-updatedsettings" /><code>{"private void UpdatedSettings(Settings settings)"}</code> |  |
-| <Link id="m-updaterendertexture" /><code>{"private void UpdateRenderTexture(float scale)"}</code> |  |
-| <Link id="m-visibilityupdated" /><code>{"private void VisibilityUpdated(bool isVisible)"}</code> |  |
-| <Link id="m-waitforevent-2" /><code>{"private void WaitForEvent("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |  |
+| <Link id="m-setantialiasing" /><code>{"private void SetAntialiasing(bool isEnabled)"}</code> | Not on Android: sets both cameras' post-process antialiasing to the settings' mode or none. |
+| <Link id="m-setupforlocalplayerowner" /><code>{"private void SetupForLocalPlayerOwner()"}</code> | Client: marks the local player as owner and makes this the `Current` camera. |
+| <Link id="m-setviewfindertexture" /><code>{"private void SetViewFinderTexture(Texture texture)"}</code> | Shows a texture on the viewfinder. |
+| <Link id="m-startscreenshots" /><code>{"private void StartScreenshots("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | When the local player grabs a handle, hooks the take-photo action and the long photo button. |
+| <Link id="m-stopscreenshots" /><code>{"private void StopScreenshots("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | When the local player lets go, unhooks the photo inputs and stops the haptics. |
+| <Link id="m-synceffect-2" /><code>{"private void SyncEffect("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isFadingIn)"}</code> | Serializes a fade in or out; clients run `Fade`. |
+| <Link id="m-syncowner-2" /><code>{"private void SyncOwner("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Serializes the owner's player identifier plus the selfie state; a client that owns it sets itself up as owner. |
+| <Link id="m-syncphoto-2" /><code>{"private void SyncPhoto("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Serializes the timer index when a photo is taken; other clients play the remote effects and the server logs and relays it. |
+| <Link id="m-syncselfie-2" /><code>{"private void SyncSelfie("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Serializes whether the selfie camera is in use; the server relays it to the chunk. |
+| <Link id="m-syncstreaming-2" /><code>{"private void SyncStreaming("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Serializes whether the camera is streaming; the server relays it to the chunk. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Updates the active camera's blocked check and darkens the viewfinder image while blocked. |
+| <Link id="m-updatedsettings" /><code>{"private void UpdatedSettings(Settings settings)"}</code> | Remakes the `Screenshot` helper at the photo resolution scale setting. |
+| <Link id="m-updaterendertexture" /><code>{"private void UpdateRenderTexture(float scale)"}</code> | Remakes the render texture at 1920 by 1080 times the scale and points both cameras and the viewfinder at it. |
+| <Link id="m-visibilityupdated" /><code>{"private void VisibilityUpdated(bool isVisible)"}</code> | Turns rendering on or off as the viewfinder becomes visible. For other players' cameras, only one renders at a time, and only if the setting allows it. |
+| <Link id="m-waitforevent-2" /><code>{"private void WaitForEvent("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | One-shot pre-render hook that lets a pending photo continue on the next render. |
 
 </details>
 

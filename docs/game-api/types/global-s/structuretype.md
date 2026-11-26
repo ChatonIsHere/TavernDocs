@@ -1,6 +1,6 @@
 ---
 title: "StructureType"
-description: "class StructureType in Root.Township."
+description: "Asset for a kind of mining or cave structure, giving the size of one tile."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StructureType
 
 A **class** in `Root.Township`, no namespace.
+
+Asset for a kind of mining or cave structure, giving the size of one tile. Used by `StructureCube`, `StructurePart` and `MiningBaseGenerator`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `ScriptableObject`
@@ -28,17 +30,17 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tilesize" /><code>{"private Vector3 tileSize"}</code> | Backing field for `TileSize`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tilesize-2" /><code>{"Vector3 TileSize { get; }"}</code> | Size of one structure tile in world units. |
 
 ## Used in
 

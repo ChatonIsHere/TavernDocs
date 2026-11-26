@@ -29,11 +29,11 @@ Base for a hand camera view that switches its camera off while something is in t
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-postprocesslayer" /><code>{"private PostProcessLayer postProcessLayer"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> |
-| <Link id="m-targetcamera" /><code>{"private Camera targetCamera"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-postprocesslayer" /><code>{"private PostProcessLayer postProcessLayer"}</code> | Backing field for `PostProcessLayer`. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcamerasettings">{"HandCameraSettings"}</Link>{" settings"}</code> | Hand camera settings. Supplies the layer mask used to test for blocking. |
+| <Link id="m-targetcamera" /><code>{"private Camera targetCamera"}</code> | Backing field for `TargetCamera`, the camera turned off while blocked. |
 
 </details>
 

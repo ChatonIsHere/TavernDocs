@@ -1,6 +1,6 @@
 ---
 title: "CombatShellSetting"
-description: "class CombatShellSetting in Root.Township."
+description: "Shell effect settings for combat: two ramp textures and a dissolve strength pushed onto the shell material."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CombatShellSetting
 
 A **class** in `Root.Township`, `Alta.PlayerEffects`.
+
+Shell effect settings for combat: two ramp textures and a dissolve strength pushed onto the shell material. Client visual.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`ShellSetting`](/game-api/types/alta-player/shellsetting)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-dissolvestrength" /><code>{"private float dissolveStrength"}</code> |
-| <Link id="m-ramp1" /><code>{"private Texture2D ramp1"}</code> |
-| <Link id="m-ramp2" /><code>{"private Texture2D ramp2"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dissolvestrength" /><code>{"private float dissolveStrength"}</code> | Dissolve amount set on the shell material. |
+| <Link id="m-ramp1" /><code>{"private Texture2D ramp1"}</code> | First colour ramp texture for the shell. |
+| <Link id="m-ramp2" /><code>{"private Texture2D ramp2"}</code> | Second colour ramp texture for the shell. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setmaterial" /><code>{"override void SetMaterial(Material material)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setmaterial" /><code>{"override void SetMaterial(Material material)"}</code> | Writes the two ramp textures and dissolve strength onto the material, using `CombatShellAnimator`'s property ids. |
 
 ## Used in
 

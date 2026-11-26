@@ -1,6 +1,6 @@
 ---
 title: "HandCameraRender"
-description: "delegate HandCameraRender in Root.Township."
+description: "Handler for the static HandCamera.onPreRender and HandCamera.onPostRender events, given the camera that is rendering and the camera event."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandCameraRender
 
 A **delegate** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+Handler for the static `HandCamera.onPreRender` and `HandCamera.onPostRender` events, given the camera that is rendering and the camera event.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MulticastDelegate`

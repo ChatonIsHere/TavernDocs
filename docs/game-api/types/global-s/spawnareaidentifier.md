@@ -1,6 +1,6 @@
 ---
 title: "SpawnAreaIdentifier"
-description: "enum SpawnAreaIdentifier in Root.Township."
+description: "Names the fixed spawn and teleport points in the world, such as the respawn point, tower checkpoints, shrines and Home."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnAreaIdentifier
 
 An **enum** in `Root.Township`, no namespace.
+
+Names the fixed spawn and teleport points in the world, such as the respawn point, tower checkpoints, shrines and `Home`. Looked up in `SpawnArea.InstanceMap`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

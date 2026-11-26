@@ -1,6 +1,6 @@
 ---
 title: "NetworkPrefabChildEventHandler"
-description: "delegate NetworkPrefabChildEventHandler in Root.Township."
+description: "Callback for when a saved child of a prefab has spawned, given the child prefab, its parent entity and the child index."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkPrefabChildEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback for when a saved child of a prefab has spawned, given the child prefab, its parent entity and the child index. Used with `ISerializeChildren.GetSpawnedChildren`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

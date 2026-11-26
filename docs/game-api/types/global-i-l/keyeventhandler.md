@@ -1,6 +1,6 @@
 ---
 title: "KeyEventHandler"
-description: "delegate KeyEventHandler in Root.Township."
+description: "Callback for a keyboard key going down or up, used by KeyboardEventTriggers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # KeyEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for a keyboard key going down or up, used by `KeyboardEventTriggers`.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** `MulticastDelegate`

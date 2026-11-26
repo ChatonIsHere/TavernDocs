@@ -30,13 +30,13 @@ A cave generation element asset: a map chunk display prefab chosen by how well i
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attributeweightings" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] attributeWeightings"}</code> |
-| <Link id="m-curvelessefficiency" /><code>{"private float curvelessEfficiency"}</code> |
-| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" prefab"}</code> |
-| <Link id="m-serializedvariables" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/element-serializedvariable">{"Element.SerializedVariable"}</Link>{"> serializedVariables"}</code> |
-| <Link id="m-variables" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> variables"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attributeweightings" /><code>{"private "}<Link to="/game-api/types/global-a-b/attributecurverange">{"AttributeCurveRange"}</Link>{"[] attributeWeightings"}</code> | Attribute curves used by `GetEfficiency` to weight this element against an attribute set. |
+| <Link id="m-curvelessefficiency" /><code>{"private float curvelessEfficiency"}</code> | Efficiency meant for when no curves are set. Not read by this class in this build. |
+| <Link id="m-prefab" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/mapchunkdisplay">{"MapChunkDisplay"}</Link>{" prefab"}</code> | Backing field for `Prefab`, the map chunk display spawned for this element. |
+| <Link id="m-serializedvariables" /><code>{"private List<"}<Link to="/game-api/types/alta-world-generation/element-serializedvariable">{"Element.SerializedVariable"}</Link>{"> serializedVariables"}</code> | Name and value pairs Unity saves in place of the `variables` dictionary. |
+| <Link id="m-variables" /><code>{"private Dictionary<string, "}<Link to="/game-api/types/assembly-other/generalvalue">{"GeneralValue"}</Link>{"> variables"}</code> | Backing field for `Variables`, named general values for this element. |
 
 </details>
 
@@ -56,10 +56,10 @@ A cave generation element asset: a map chunk display prefab chosen by how well i
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | Rebuilds the `variables` dictionary from the serialized list. |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | Copies the `variables` dictionary into the serialized list so Unity can save it. |
 
 </details>
 

@@ -27,10 +27,10 @@ One Steam achievement tracked by `AchievementManager`: its definition, text and 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger. Logs when an achievement unlocks. |
+| <Link id="m-manager" /><code>{"private "}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager"}</code> | Achievement manager used by `Complete` and `RequestUpdate`. |
 
 </details>
 

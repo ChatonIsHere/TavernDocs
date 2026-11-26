@@ -33,12 +33,12 @@ Base component for the part of an item or creature that deals hits (a blade edge
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-impactorsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" impactorSettings"}</code> |
-| <Link id="m-impactorvalues" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorvalues">{"ImpactorValues"}</Link>{" impactorValues"}</code> |
-| <Link id="m-overridehardnesslevel" /><code>{"private uint overrideHardnessLevel"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-impactorsettings" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorsettings">{"ImpactorSettings"}</Link>{" impactorSettings"}</code> | Backing field for `ImpactorSettings`: hardness, immunity groups and damage or block effects. |
+| <Link id="m-impactorvalues" /><code>{"private "}<Link to="/game-api/types/alta-items/impactorvalues">{"ImpactorValues"}</Link>{" impactorValues"}</code> | Backing field for `ImpactorValues`: impact type, channels, damage modifiers and edge length. |
+| <Link id="m-overridehardnesslevel" /><code>{"private uint overrideHardnessLevel"}</code> | Hardness set through `HardnessLevel`. When 0, the settings' hardness is used. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | Backing field for `Pickup`, the pickup this impactor is on (found in parents). |
 
 </details>
 
@@ -63,7 +63,7 @@ Base component for the part of an item or creature that deals hits (a blade edge
 | <Link id="m-normal" /><code>{"Vector3 Normal { get; }"}</code> | The transform's forward direction. |
 | <Link id="m-pickup-2" /><code><Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" { get; }"}</code> | The pickup this impactor belongs to, found in its parents. |
 | <Link id="m-registeredtool" /><code><Link to="/game-api/types/alta-items/impacttool">{"ImpactTool"}</Link>{" RegisteredTool { get; private set; }"}</code> | The tool currently linked to this impactor, or null. |
-| <Link id="m-updatesposition" /><code>{"virtual bool UpdatesPosition { get; }"}</code> |  |
+| <Link id="m-updatesposition" /><code>{"virtual bool UpdatesPosition { get; }"}</code> | Whether this impactor moves and needs position tracking. True by default; `FixedImpactor` returns false. |
 | <Link id="m-fromtool" /><code>{"protected "}<Link to="/game-api/types/global-p/positionrecord">{"PositionRecord"}</Link>{" FromTool { get; private set; }"}</code> | Position record of this impactor relative to the registered tool's transform. |
 
 ## Events

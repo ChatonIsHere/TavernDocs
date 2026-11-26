@@ -1,6 +1,6 @@
 ---
 title: "LockMode"
-description: "enum LockMode in Root.Township."
+description: "Setting on OptionSet and RuleOptionSet for how a random choice is locked (None, Set, Building, Region, Server)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LockMode
 
 An **enum** in `Root.Township`, `Alta.PAGaC`.
+
+Setting on `OptionSet` and `RuleOptionSet` for how a random choice is locked (None, Set, Building, Region, Server). Nothing in the code reads it.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 

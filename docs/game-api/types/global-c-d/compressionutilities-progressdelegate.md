@@ -1,6 +1,6 @@
 ---
 title: "CompressionUtilities.ProgressDelegate"
-description: "delegate CompressionUtilities.ProgressDelegate in Root.Township."
+description: "Private callback that receives progress messages while CompressionUtilities compresses or decompresses a directory."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CompressionUtilities.ProgressDelegate
 
 A **private delegate** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private callback that receives progress messages while `CompressionUtilities` compresses or decompresses a directory.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`CompressionUtilities`](/game-api/types/global-c-d/compressionutilities)

@@ -1,6 +1,6 @@
 ---
 title: "IndirectModifierSaveData"
-description: "class IndirectModifierSaveData in Root.Township."
+description: "Saved state of one IndirectModifier, a stat change that plays out over a curve for a number of ticks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
 
+Saved state of one `IndirectModifier`, a stat change that plays out over a curve for a number of ticks. On load, ticks for the time passed since saving are added, and modifiers that ran out are dropped.
+
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 
 ## Constructors
@@ -22,12 +24,12 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-basevalue" /><code>{"float baseValue"}</code> |
-| <Link id="m-duration" /><code>{"uint duration"}</code> |
-| <Link id="m-tick" /><code>{"uint tick"}</code> |
-| <Link id="m-valueoverduration" /><code><Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-basevalue" /><code>{"float baseValue"}</code> | Value the curve is multiplied by. |
+| <Link id="m-duration" /><code>{"uint duration"}</code> | Total length of the modifier in ticks. |
+| <Link id="m-tick" /><code>{"uint tick"}</code> | Ticks already run when it was saved. |
+| <Link id="m-valueoverduration" /><code><Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration"}</code> | Curve of the value over the modifier's life, from 0 to 1. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "ShootArguments"
-description: "struct ShootArguments in Root.Township."
+description: "Network payload for a shot from a bow or Shooter: the projectile entity, where it was released and how hard."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **struct** in `Root.Township`, no namespace.
 
+Network payload for a shot from a bow or `Shooter`: the projectile entity, where it was released and how hard. Sent with a `MethodSyncStruct` in both directions.
+
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 
 ## Constructors
@@ -22,19 +24,19 @@ A **struct** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
-| <Link id="m-strength" /><code>{"float strength"}</code> |
-| <Link id="m-target" /><code>{"uint target"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-chunk" /><code><Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk"}</code> | Chunk the position is relative to. The server uses the projectile's chunk, a client the chunk the local player is in. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | World position of the projectile when it was shot. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Rotation of the projectile, compressed. The constructor also applies the compressed value to the projectile so both sides match. |
+| <Link id="m-strength" /><code>{"float strength"}</code> | Shot strength from 0 to 1, sent with 0.001 precision. |
+| <Link id="m-target" /><code>{"uint target"}</code> | Entity id of the projectile being shot. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serialize" /><code>{"void Serialize("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the target id, chunk and position, compressed rotation and strength (0 to 1). |
 
 ## Used in
 

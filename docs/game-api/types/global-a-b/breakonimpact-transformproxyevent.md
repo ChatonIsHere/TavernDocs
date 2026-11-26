@@ -1,6 +1,6 @@
 ---
 title: "BreakOnImpact.TransformProxyEvent"
-description: "class BreakOnImpact.TransformProxyEvent in Root.Township."
+description: "Inspector event with a TransformProxy argument, used for BreakOnImpact's server and client break events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BreakOnImpact.TransformProxyEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Inspector event with a `TransformProxy` argument, used for `BreakOnImpact`'s server and client break events.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`BreakOnImpact`](/game-api/types/global-a-b/breakonimpact)

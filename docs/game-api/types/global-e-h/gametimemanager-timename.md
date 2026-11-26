@@ -1,6 +1,6 @@
 ---
 title: "GameTimeManager.TimeName"
-description: "class GameTimeManager.TimeName in Root.Township."
+description: "A named time of day, such as a keyword for the time command."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameTimeManager.TimeName
 
 A **class** in `Root.Township`, no namespace.
+
+A named time of day, such as a keyword for the time command. `GameTimeManager.UpdateTimeByKeyWord` rushes to its time.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Nested in** [`GameTimeManager`](/game-api/types/global-e-h/gametimemanager)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-name" /><code>{"private string name"}</code> |
-| <Link id="m-time" /><code>{"private float time"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name" /><code>{"private string name"}</code> | Backing field for `Name`. |
+| <Link id="m-time" /><code>{"private float time"}</code> | Backing field for `Time`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> |
-| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-name-2" /><code>{"string Name { get; }"}</code> | The keyword, matched without case. |
+| <Link id="m-time-2" /><code>{"float Time { get; }"}</code> | Time of day the keyword rushes to. |
 
 ## Used in
 

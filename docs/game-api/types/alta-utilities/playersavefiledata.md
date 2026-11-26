@@ -1,6 +1,6 @@
 ---
 title: "PlayerSaveFileData"
-description: "class PlayerSaveFileData in Root.Township."
+description: "Basic save data inside a PlayerSave: the player's last position and home point."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSaveFileData
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Basic save data inside a `PlayerSave`: the player's last position and home point.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`BasicSaveData<PlayerSaveFileData>`](/game-api/types/global-a-b/basicsavedata-tdata)
@@ -25,16 +27,16 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-home" /><code>{"Vector3 home"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-home" /><code>{"Vector3 home"}</code> | The player's saved home (respawn) position. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | The player's last saved world position. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-copyto" /><code>{"protected override void CopyTo("}<Link to="/game-api/types/alta-utilities/playersavefiledata">{"PlayerSaveFileData"}</Link>{" target)"}</code> | Copies position and home into another instance. |
 
 ## Used in
 

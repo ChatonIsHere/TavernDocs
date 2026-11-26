@@ -29,16 +29,16 @@ One entry on the main menu's server list: shows a server's name, player count an
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> |
-| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" elementSelected"}</code> |
-| <Link id="m-isconnectingtoserver" /><code>{"private bool isConnectingToServer"}</code> |
-| <Link id="m-isinstancedmaterials" /><code>{"private bool isInstancedMaterials"}</code> |
-| <Link id="m-numberofplayerstext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" numberOfPlayersText"}</code> |
-| <Link id="m-playabilityrenderers" /><code>{"private Renderer[] playabilityRenderers"}</code> |
-| <Link id="m-renderertoselect" /><code>{"private Renderer rendererToSelect"}</code> |
-| <Link id="m-servernametext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverNameText"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-display" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectiondisplay">{"ServerSelectionDisplay"}</Link>{" display"}</code> | The server selection display this element belongs to, set by `SetDisplay`. |
+| <Link id="m-elementselected" /><code>{"private "}<Link to="/game-api/types/global-t-x/toggleevent">{"ToggleEvent"}</Link>{" elementSelected"}</code> | Toggle event invoked with the selected state in `SetSelected`. |
+| <Link id="m-isconnectingtoserver" /><code>{"private bool isConnectingToServer"}</code> | Inspector button: when ticked, joins the shown server through `VrMainMenu`. |
+| <Link id="m-isinstancedmaterials" /><code>{"private bool isInstancedMaterials"}</code> | True once `SetupForServer` has made instanced materials for the playability renderers. |
+| <Link id="m-numberofplayerstext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" numberOfPlayersText"}</code> | Text showing the server's online player count. |
+| <Link id="m-playabilityrenderers" /><code>{"private Renderer[] playabilityRenderers"}</code> | Renderers tinted by the server's playability using the menu settings gradient. |
+| <Link id="m-renderertoselect" /><code>{"private Renderer rendererToSelect"}</code> | Renderer whose material swaps between selected and normal. |
+| <Link id="m-servernametext" /><code>{"private "}<Link to="/game-api/types/global-t-x/textrenderer">{"TextRenderer"}</Link>{" serverNameText"}</code> | Text showing the server name. |
 
 </details>
 
@@ -61,10 +61,10 @@ One entry on the main menu's server list: shows a server's name, player count an
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Destroys the instanced playability materials if any were made. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build bake hook: strips null entries from `playabilityRenderers`. |
 
 </details>
 

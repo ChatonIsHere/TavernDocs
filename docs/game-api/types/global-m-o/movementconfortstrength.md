@@ -1,6 +1,6 @@
 ---
 title: "MovementConfortStrength"
-description: "enum MovementConfortStrength in Root.Township."
+description: "Strength of a movement comfort setting: disabled, low, medium or high."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MovementConfortStrength
 
 An **enum** in `Root.Township`, no namespace.
+
+Strength of a movement comfort setting: disabled, low, medium or high.
 
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 

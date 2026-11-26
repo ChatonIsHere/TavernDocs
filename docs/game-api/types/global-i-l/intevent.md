@@ -1,6 +1,6 @@
 ---
 title: "IntEvent"
-description: "class IntEvent in Root.Township."
+description: "A serializable AltaEvent that passes an int, so it can be wired up in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IntEvent
 
 A **class** in `Root.Township`, no namespace.
+
+A serializable `AltaEvent` that passes an `int`, so it can be wired up in the inspector.
 
 - **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
 - **Inherits or implements** [`AltaEvent<int, IntUnityEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

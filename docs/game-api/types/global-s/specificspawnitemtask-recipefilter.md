@@ -1,6 +1,6 @@
 ---
 title: "SpecificSpawnItemTask.RecipeFilter"
-description: "enum SpecificSpawnItemTask.RecipeFilter in Root.Township."
+description: "Flags for which kinds of item creation count towards a spawn-item task: followed or unfollowed recipe, smelting or generic."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpecificSpawnItemTask.RecipeFilter
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags for which kinds of item creation count towards a spawn-item task: followed or unfollowed recipe, smelting or generic. All flags are on by default.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Nested in** [`SpecificSpawnItemTask`](/game-api/types/global-s/specificspawnitemtask)

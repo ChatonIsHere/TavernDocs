@@ -1,6 +1,6 @@
 ---
 title: "PlayerCosmeticWrapper"
-description: "class PlayerCosmeticWrapper in Root.Township."
+description: "The customization wrapper for player cosmetics: loads PlayerCosmeticDefinition items through the wrapper's addressable session."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerCosmeticWrapper
 
 A **class** in `Root.Township`, `Alta.Customization`.
+
+The customization wrapper for player cosmetics: loads `PlayerCosmeticDefinition` items through the wrapper's addressable session.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`CustomizationWrapper`](/game-api/types/alta-customization/customizationwrapper)
@@ -26,19 +28,19 @@ A **class** in `Root.Township`, `Alta.Customization`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-randomizecache" /><code>{"private readonly List<uint> randomizeCache"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-randomizecache" /><code>{"private readonly List<uint> randomizeCache"}</code> | Copy of the item list used during `PostRandomize`, so the list can change while it runs. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> |
-| <Link id="m-getitem-2" /><code>{"Task<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> GetItem(string sku)"}</code> |
-| <Link id="m-postrandomize" /><code>{"async Task PostRandomize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getitem" /><code>{"override async Task<"}<Link to="/game-api/types/alta-customization/icustomizationdefinition">{"ICustomizationDefinition"}</Link>{"> GetItem(uint hash)"}</code> | Loads a player cosmetic definition by hash or by SKU. |
+| <Link id="m-getitem-2" /><code>{"Task<"}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{"> GetItem(string sku)"}</code> | Loads a player cosmetic definition by hash or by SKU. |
+| <Link id="m-postrandomize" /><code>{"async Task PostRandomize()"}</code> | After a randomize, runs each part's `PostRandomize` step for every equipped item. Used for new characters and spectral ghosts. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "FaceEdgeMiddle"
-description: "class FaceEdgeMiddle in Root.Township."
+description: "A book flair asset for the middle of a cover's edge."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceEdgeMiddle
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+A book flair asset for the middle of a cover's edge. A `BookFlair` ScriptableObject that adds its prefab to the book.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`BookFlair`](/game-api/types/alta-items/bookflair)

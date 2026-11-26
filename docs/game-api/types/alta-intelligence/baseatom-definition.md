@@ -30,9 +30,9 @@ A rule in the creature knowledge system: when the compound holds, the goal predi
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-weighting" /><code>{"private float weighting"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-weighting" /><code>{"private float weighting"}</code> | Base weighting. The `Weighting` property multiplies it by `AgeWeighting`. |
 
 </details>
 

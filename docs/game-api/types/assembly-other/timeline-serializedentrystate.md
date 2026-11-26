@@ -1,6 +1,6 @@
 ---
 title: "Timeline.SerializedEntryState"
-description: "enum Timeline.SerializedEntryState in Alta.Timing.Runtime."
+description: "Result of Timeline.LoadEntry for a saved timer: None (no time saved), Past (already due, callback run if asked) or Future (registered on the timeline)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Timeline.SerializedEntryState
 
 An **enum** in `Alta.Timing.Runtime`, `Alta.Timing`.
+
+Result of `Timeline.LoadEntry` for a saved timer: None (no time saved), Past (already due, callback run if asked) or Future (registered on the timeline).
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`Timeline`](/game-api/types/assembly-other/timeline)

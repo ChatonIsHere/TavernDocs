@@ -1,6 +1,6 @@
 ---
 title: "StatDrivenEffect"
-description: "class StatDrivenEffect in Root.Township."
+description: "Visuals for one side (buff or debuff) of a stat effect: a pooled effect, a curve from stat value to size, and a shell setting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatDrivenEffect
 
 A **class** in `Root.Township`, `Alta.PlayerEffects`.
+
+Visuals for one side (buff or debuff) of a stat effect: a pooled effect, a curve from stat value to size, and a shell setting.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 
@@ -26,21 +28,21 @@ A **class** in `Root.Township`, `Alta.PlayerEffects`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> |
-| <Link id="m-shieldeffect" /><code>{"private "}<Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" shieldEffect"}</code> |
-| <Link id="m-valuetosizecurve" /><code>{"private AnimationCurve valueToSizeCurve"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-effectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" effectDefinition"}</code> | Backing field for `EffectDefinition`. |
+| <Link id="m-shieldeffect" /><code>{"private "}<Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" shieldEffect"}</code> | Backing field for `ShieldEffect`. |
+| <Link id="m-valuetosizecurve" /><code>{"private AnimationCurve valueToSizeCurve"}</code> | Backing field for `ValueToSizeCurve`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-effectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectDefinition { get; }"}</code> |
-| <Link id="m-shieldeffect-2" /><code><Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" ShieldEffect { get; }"}</code> |
-| <Link id="m-valuetosizecurve-2" /><code>{"AnimationCurve ValueToSizeCurve { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-effectdefinition-2" /><code><Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" EffectDefinition { get; }"}</code> | Pooled effect spawned for the stat effect. |
+| <Link id="m-shieldeffect-2" /><code><Link to="/game-api/types/alta-player/stateffectshellsetting">{"StatEffectShellSetting"}</Link>{" ShieldEffect { get; }"}</code> | Shell setting applied over the player. |
+| <Link id="m-valuetosizecurve-2" /><code>{"AnimationCurve ValueToSizeCurve { get; }"}</code> | Maps the stat's value to the effect's size. |
 
 ## Used in
 

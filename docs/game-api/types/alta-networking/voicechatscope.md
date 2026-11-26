@@ -1,6 +1,6 @@
 ---
 title: "VoiceChatScope"
-description: "enum VoiceChatScope in Root.Township."
+description: "Who a player hears or talks to in voice chat: no one, friends only, or everyone."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VoiceChatScope
 
 An **enum** in `Root.Township`, `Alta.Voice`.
+
+Who a player hears or talks to in voice chat: no one, friends only, or everyone.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 

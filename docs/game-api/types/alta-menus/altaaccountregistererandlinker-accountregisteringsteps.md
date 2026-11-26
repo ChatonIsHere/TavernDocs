@@ -1,6 +1,6 @@
 ---
 title: "AltaAccountRegistererAndLinker.AccountRegisteringSteps"
-description: "enum AltaAccountRegistererAndLinker.AccountRegisteringSteps in Root.Township."
+description: "The fields of the in-game Alta account sign-up form (username, email, password, confirm password)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaAccountRegistererAndLinker.AccountRegisteringSteps
 
 An **private enum** in `Root.Township`, `Alta.OculusLogin`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+The fields of the in-game Alta account sign-up form (username, email, password, confirm password). Indexes the per-field error and cross markers in `AltaAccountRegistererAndLinker`.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Nested in** [`AltaAccountRegistererAndLinker`](/game-api/types/alta-menus/altaaccountregistererandlinker)

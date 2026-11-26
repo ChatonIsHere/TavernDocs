@@ -1,6 +1,6 @@
 ---
 title: "PopulationAction"
-description: "enum PopulationAction in Root.Township."
+description: "What happened in a population event (initialize, update, spawned, lost)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationAction
 
 An **enum** in `Root.Township`, `Alta.Populations`.
+
+What happened in a population event (initialize, update, spawned, lost). Sent with population analytics records and `PopulationEventData`.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 

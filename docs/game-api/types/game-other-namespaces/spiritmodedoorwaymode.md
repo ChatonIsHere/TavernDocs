@@ -1,6 +1,6 @@
 ---
 title: "SpiritModeDoorwayMode"
-description: "enum SpiritModeDoorwayMode in Root.Township."
+description: "Whether a spirit mode doorway removes spirit mode or adds it when a player goes through."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpiritModeDoorwayMode
 
 An **enum** in `Root.Township`, `Features.Gameplay.ClimbingTower`.
+
+Whether a spirit mode doorway removes spirit mode or adds it when a player goes through.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 

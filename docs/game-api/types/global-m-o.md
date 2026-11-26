@@ -26,14 +26,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MapMaskPiece`](/game-api/types/global-m-o/mapmaskpiece) | class | `PooledObject` | 2 |  |
 | [`MarchingCubes`](/game-api/types/global-m-o/marchingcubes) | static class |  | 2 |  |
 | [`MarchingCubes.GridCell`](/game-api/types/global-m-o/marchingcubes-gridcell) | class |  | 3 |  |
-| [`MarchingCubes.Point4`](/game-api/types/global-m-o/marchingcubes-point4) | struct |  | 7 |  |
+| [`MarchingCubes.Point4`](/game-api/types/global-m-o/marchingcubes-point4) | struct |  | 7 | An integer grid point with a fourth value. In the marching cubes edge table `w` picks the edge axis (probably). |
 | [`MarchingCubes.Triangle`](/game-api/types/global-m-o/marchingcubes-triangle) | class |  | 2 |  |
 | [`MarchingCubesTest`](/game-api/types/global-m-o/marchingcubestest) | class | `MonoBehaviour` | 0 |  |
 | [`MassLODSetter`](/game-api/types/global-m-o/masslodsetter) | class | `MonoBehaviour` | 2 |  |
 | [`MasterTerrain`](/game-api/types/global-m-o/masterterrain) | class | `MonoBehaviour` | 4 |  |
-| [`MaterialGroup`](/game-api/types/global-m-o/materialgroup) | class | `ComponentGroup<Renderer>` | 2 |  |
+| [`MaterialGroup`](/game-api/types/global-m-o/materialgroup) | class | `ComponentGroup<Renderer>` | 2 | A `ComponentGroup` of renderers that all share one material. Setting `Material` swaps it on every renderer in the group. |
 | [`MaterialInstantiator`](/game-api/types/global-m-o/materialinstantiator) | class | `MonoBehaviour` | 0 |  |
-| [`MaterialLOD`](/game-api/types/global-m-o/materiallod) | class |  | 5 |  |
+| [`MaterialLOD`](/game-api/types/global-m-o/materiallod) | class |  | 5 | A material and LOD level pair, used as a key by `StaticObjectCombiner` to group renderers when combining meshes. |
 | [`MaterialSwapper`](/game-api/types/global-m-o/materialswapper) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
 | [`MaterialToggler`](/game-api/types/global-m-o/materialtoggler) | class | `MonoBehaviour` | 6 |  |
 | [`MaxLimitPooledObjectPool`](/game-api/types/global-m-o/maxlimitpooledobjectpool) | class | `BasicPooledObjectPool` | 2 |  |
@@ -43,8 +43,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MediumBird`](/game-api/types/global-m-o/mediumbird) | class | `MonoBehaviour` | 1 |  |
 | [`MemoizeComponentOne<T>`](/game-api/types/global-m-o/memoizecomponentone-t) | class | `MemoizeOne<Component, T>` | 1 |  |
 | [`MemoizeHashset<TIn, TOut>`](/game-api/types/global-m-o/memoizehashset-tin-tout) | class |  | 5 |  |
-| [`MemoizeHashset<TIn, TOut>.Evaluate`](/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate) | delegate |  | 0 |  |
-| [`MemoizeHashsetCountTracker<TIn, TOut>`](/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout) | class | `IEnumerable<TOut>`, `IEnumerable` | 8 |  |
+| [`MemoizeHashset<TIn, TOut>.Evaluate`](/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate) | delegate |  | 0 | Function that `MemoizeHashset` calls to work out a value for a new key; returns false to skip storing it. |
+| [`MemoizeHashsetCountTracker<TIn, TOut>`](/game-api/types/global-m-o/memoizehashsetcounttracker-tin-tout) | class | `IEnumerable<TOut>`, `IEnumerable` | 8 | A set of inputs mapped to outputs through a cached function, with a reference count per output. Raises events when an output first appears and when its last input goes. |
 | [`MemoizeOne<TInput, TOutput>`](/game-api/types/global-m-o/memoizeone-tinput-toutput) | class |  | 3 |  |
 | [`MenuSettings`](/game-api/types/global-m-o/menusettings) | class | `GlobalSettings<MenuSettings>` | 37 | Global settings asset for the menu and startup: scene names, server list colours and materials, selection orb tuning and editor-only startup flags. Get it with `GlobalSettings<MenuSettings>.Instance`. |
 | [`MenuSettings.AfterStartActionType`](/game-api/types/global-m-o/menusettings-afterstartactiontype) | enum |  | 4 |  |
@@ -60,14 +60,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MethodMember`](/game-api/types/global-m-o/methodmember) | class | `InspectorBase` | 4 |  |
 | [`MigrateSoundEffectAttribute`](/game-api/types/global-m-o/migratesoundeffectattribute) | class | `PrefabApplyAttribute` | 2 |  |
 | [`MiningBaseGenerator`](/game-api/types/global-m-o/miningbasegenerator) | class | `GeneratedNetworkEntityBehaviour` | 4 |  |
-| [`MiningBaseGenerator.PartOption`](/game-api/types/global-m-o/miningbasegenerator-partoption) | class |  | 4 |  |
-| [`MiningBaseGenerator.Point`](/game-api/types/global-m-o/miningbasegenerator-point) | struct |  | 6 |  |
-| [`MiningBaseGenerator.Possibility`](/game-api/types/global-m-o/miningbasegenerator-possibility) | struct |  | 6 |  |
+| [`MiningBaseGenerator.PartOption`](/game-api/types/global-m-o/miningbasegenerator-partoption) | class |  | 4 | A structure part the mining base generator can pick, with a weight that can grow with a biome attribute. |
+| [`MiningBaseGenerator.Point`](/game-api/types/global-m-o/miningbasegenerator-point) | struct |  | 6 | Integer 3D grid point used by `MiningBaseGenerator` to lay out parts. |
+| [`MiningBaseGenerator.Possibility`](/game-api/types/global-m-o/miningbasegenerator-possibility) | struct |  | 6 | One candidate placement of a structure part in the mining base grid: part, offset, rotation and weight. |
 | [`MiningEcho`](/game-api/types/global-m-o/miningecho) | class | `PickupBasedSkill` | 8 | Progression skill: a strong pickaxe hit sends out an echo pulse whose radius grows over time, shown to the player and passed to `IListenToMiningEcho` listeners (probably to reveal ore). |
 | [`MiningEcho.Create`](/game-api/types/global-m-o/miningecho-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<MiningEcho>` | 0 |  |
 | [`MiningEchoIntensity`](/game-api/types/global-m-o/miningechointensity) | class | `ProfessionSkill` | 0 |  |
 | [`MiningEchoIntensity.Create`](/game-api/types/global-m-o/miningechointensity-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<MiningEchoIntensity>` | 0 |  |
-| [`MinMaxValue`](/game-api/types/global-m-o/minmaxvalue) | class |  | 2 |  |
+| [`MinMaxValue`](/game-api/types/global-m-o/minmaxvalue) | class |  | 2 | A serializable float range (min and max) for inspector settings. |
 | [`ModBase`](/game-api/types/global-m-o/modbase) | abstract class | `MonoBehaviour` | 1 |  |
 | [`ModellingCharacter`](/game-api/types/global-m-o/modellingcharacter) | class | `MonoBehaviour` | 1 |  |
 | [`ModellingScene`](/game-api/types/global-m-o/modellingscene) | class | `MonoBehaviour` | 1 |  |
@@ -76,7 +76,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ModifiableAdditionalStaticContent`](/game-api/types/global-m-o/modifiableadditionalstaticcontent) | class | `NetworkEntityBehaviour`, `ISavable<ModifiableAdditionalStaticContentSaveData>`, `ISavableSave<ModifiableAdditionalStaticContentSaveData>`, +2 more | 7 |  |
 | [`ModifiableAdditionalStaticContentSaveData`](/game-api/types/global-m-o/modifiableadditionalstaticcontentsavedata) | class | `NewSaveData<ModifiableAdditionalStaticContent, ModifiableAdditionalStaticContentSaveData>` | 2 |  |
 | [`MonoBehaviourExtensions`](/game-api/types/global-m-o/monobehaviourextensions) | static class |  | 1 |  |
-| [`Month`](/game-api/types/global-m-o/month) | enum |  | 12 |  |
+| [`Month`](/game-api/types/global-m-o/month) | enum |  | 12 | Calendar months, January = 1 to December = 12. |
 | [`MonthDayHour`](/game-api/types/global-m-o/monthdayhour) | struct | `IComparable<MonthDayHour>`, `IEquatable<MonthDayHour>` | 14 | A point in the year (month, day, hour) with no year, used for seasonal or dated events. Compares in month, day, hour order. |
 | [`Motor`](/game-api/types/global-m-o/motor) | class | `MonoBehaviour` | 3 |  |
 | [`Mould`](/game-api/types/global-m-o/mould) | class | `GeneratedNetworkEntityBehaviour`, `IBlockGenericDecrafting`, `ISavable<MouldSaveData>`, +2 more | 7 | [Smelting and forging](../game-systems/smelting-and-forging.md): The mould item. `Definition`, `Usage` (uses left; -1 never runs out), `bool Consume()` (uses one, true when used up). |
@@ -89,8 +89,8 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MouldSaveData`](/game-api/types/global-m-o/mouldsavedata) | internal class | `NewSaveData<Mould, MouldSaveData>` | 2 |  |
 | [`MouldSaveData1`](/game-api/types/global-m-o/mouldsavedata1) | internal class | `OldSaveData` | 2 |  |
 | [`MovementBendController`](/game-api/types/global-m-o/movementbendcontroller) | class | `MonoBehaviour` | 0 |  |
-| [`MovementConfortSpeed`](/game-api/types/global-m-o/movementconfortspeed) | enum |  | 2 |  |
-| [`MovementConfortStrength`](/game-api/types/global-m-o/movementconfortstrength) | enum |  | 4 |  |
+| [`MovementConfortSpeed`](/game-api/types/global-m-o/movementconfortspeed) | enum |  | 2 | Comfort setting for movement: delayed or immediate. |
+| [`MovementConfortStrength`](/game-api/types/global-m-o/movementconfortstrength) | enum |  | 4 | Strength of a movement comfort setting: disabled, low, medium or high. |
 | [`MovePickup`](/game-api/types/global-m-o/movepickup) | class | `NetworkEntityBehaviour`, `ISavable<MovePickupSaveData>`, `ISavableSave<MovePickupSaveData>`, +2 more | 2 | [Items, interaction and damage](../items/overview.md) |
 | [`MovePickupSaveData`](/game-api/types/global-m-o/movepickupsavedata) | internal class | `NewSaveData<MovePickup, MovePickupSaveData>` | 2 |  |
 | [`MovePickupSaveData1`](/game-api/types/global-m-o/movepickupsavedata1) | internal class | `OldSaveData` | 11 |  |
@@ -105,9 +105,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`MultiDeltaInputController`](/game-api/types/global-m-o/multideltainputcontroller) | class | `NetworkEntityBehaviour`, `IDeltaControl` | 2 |  |
 | [`MultiHandPickup`](/game-api/types/global-m-o/multihandpickup) | class | `Pickup` | 5 | [Items, interaction and damage](../items/overview.md) |
 | [`MultiLeverPanel`](/game-api/types/global-m-o/multileverpanel) | class | `MonoBehaviour` | 0 | [Buttons and levers](../items/buttons-and-levers.md) |
-| [`MultipleInteractionAllowance`](/game-api/types/global-m-o/multipleinteractionallowance) | enum |  | 2 |  |
+| [`MultipleInteractionAllowance`](/game-api/types/global-m-o/multipleinteractionallowance) | enum |  | 2 | Flags on an interactable for whether it can be held by both hands of one player and by more than one player at once. |
 | [`MultipleInteractionAllowanceHelper`](/game-api/types/global-m-o/multipleinteractionallowancehelper) | static class |  | 2 |  |
-| [`MultipleNotAllowedAction`](/game-api/types/global-m-o/multiplenotallowedaction) | enum |  | 3 |  |
+| [`MultipleNotAllowedAction`](/game-api/types/global-m-o/multiplenotallowedaction) | enum |  | 3 | What an `Interactable` does when a new grab isn't allowed alongside current ones: Replace (drop the old one) or Block (refuse the new one). NotSet uses the type's default: Replace for pickups, Block otherwise. |
 | [`MultipleSpawner`](/game-api/types/global-m-o/multiplespawner) | class | `NetworkEntityBehaviour` | 2 |  |
 | [`MultipleSpawner.SimpleSpawner`](/game-api/types/global-m-o/multiplespawner-simplespawner) | class |  | 9 |  |
 | [`MultiPositionTypeLabel`](/game-api/types/global-m-o/multipositiontypelabel) | enum |  | 3 |  |
@@ -120,7 +120,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`NameBoardsSettings`](/game-api/types/global-m-o/nameboardssettings) | class | `GlobalSettings<NameBoardsSettings>` | 3 |  |
 | [`NamedProgressBar`](/game-api/types/global-m-o/namedprogressbar) | class | `ProgressBar` | 1 |  |
-| [`NearbyPlayerScaler`](/game-api/types/global-m-o/nearbyplayerscaler) | class | `CurveScaler` | 4 |  |
+| [`NearbyPlayerScaler`](/game-api/types/global-m-o/nearbyplayerscaler) | class | `CurveScaler` | 4 | Scales an object up when the local player comes close and down when they move away, and turns on extra behaviours while shown. Client side. |
 | [`NearbyPlayerTracker`](/game-api/types/global-m-o/nearbyplayertracker) | class | `MonoBehaviour` | 2 |  |
 | [`NetworkDestroyTimed`](/game-api/types/global-m-o/networkdestroytimed) | class | `NetworkEntityBehaviour` | 1 |  |
 | [`NetworkedEvent`](/game-api/types/global-m-o/networkedevent) | class | `NetworkEntityBehaviour` | 2 |  |
@@ -181,7 +181,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`OnScreenErrorLogger`](/game-api/types/global-m-o/onscreenerrorlogger) | class | `MonoBehaviour` | 0 |  |
 | [`OpenClientLogs`](/game-api/types/global-m-o/openclientlogs) | class | `AltaMenuItemBase.Township.Logs` | 1 |  |
 | [`OpenServerLogs`](/game-api/types/global-m-o/openserverlogs) | class | `AltaMenuItemBase.Township.Logs` | 1 |  |
-| [`OpenXRControllerInput`](/game-api/types/global-m-o/openxrcontrollerinput) | class | `ControllerInput` | 5 |  |
+| [`OpenXRControllerInput`](/game-api/types/global-m-o/openxrcontrollerinput) | class | `ControllerInput` | 5 | Raw input state for one OpenXR controller, filled by `OpenXRWrapper` from Input System callbacks and read by `OpenXRInputController`. |
 | [`OpenXRDeviceController`](/game-api/types/global-m-o/openxrdevicecontroller) | class | `XrDeviceSdkController` | 4 |  |
 | [`OpenXRDeviceLifecycle`](/game-api/types/global-m-o/openxrdevicelifecycle) | class | `VirtualRealityDeviceLifecycle` | 1 |  |
 | [`OpenXRInputController`](/game-api/types/global-m-o/openxrinputcontroller) | abstract class | `DeviceInputController` | 3 | Client: reads one hand's controller through OpenXR and fills the game's controller input, including velocity, finger curl and pose. |

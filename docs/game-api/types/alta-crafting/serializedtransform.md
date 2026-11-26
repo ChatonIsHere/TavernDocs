@@ -1,6 +1,6 @@
 ---
 title: "SerializedTransform"
-description: "class SerializedTransform in Root.Township."
+description: "A saved position, rotation and scale, used for crafting spawn offsets and piece positions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, `Alta.Crafting`.
 
+A saved position, rotation and scale, used for crafting spawn offsets and piece positions.
+
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 
 ## Constructors
@@ -22,18 +24,18 @@ A **class** in `Root.Township`, `Alta.Crafting`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
-| <Link id="m-scale" /><code>{"Vector3 scale"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Saved position. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Saved rotation. |
+| <Link id="m-scale" /><code>{"Vector3 scale"}</code> | Saved local scale. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-save" /><code>{"static "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" Save(Transform transform)"}</code> |
-| <Link id="m-save-2" /><code>{"static "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" Save(Transform transform, Matrix4x4 worldToLocal)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-save" /><code>{"static "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" Save(Transform transform)"}</code> | Captures a transform's local values, or its position and rotation relative to a given matrix. |
+| <Link id="m-save-2" /><code>{"static "}<Link to="/game-api/types/alta-crafting/serializedtransform">{"SerializedTransform"}</Link>{" Save(Transform transform, Matrix4x4 worldToLocal)"}</code> | Captures a transform's local values, or its position and rotation relative to a given matrix. |
 
 ## Used in
 

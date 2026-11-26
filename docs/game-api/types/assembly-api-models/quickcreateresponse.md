@@ -1,6 +1,6 @@
 ---
 title: "QuickCreateResponse"
-description: "class QuickCreateResponse in Alta.Api.DataTransferModels."
+description: "Response from the groups quick-create call: the new group and its server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+Response from the groups quick-create call: the new group and its server.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; set; }"}</code> |
-| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" Server { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-group" /><code><Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" Group { get; set; }"}</code> | The created group. |
+| <Link id="m-server" /><code><Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" Server { get; set; }"}</code> | The created server. |
 
 ## Used in
 

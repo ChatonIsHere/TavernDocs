@@ -1,6 +1,6 @@
 ---
 title: "ChunkMatrix"
-description: "class ChunkMatrix in Root.Township."
+description: "Wraps a transform matrix and applies it in place to positions, rotations and directions."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkMatrix
 
 A **class** in `Root.Township`, `Alta.Chunks`.
+
+Wraps a transform matrix and applies it in place to positions, rotations and directions.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 
@@ -25,19 +27,19 @@ A **class** in `Root.Township`, `Alta.Chunks`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-matrix" /><code>{"private Matrix4x4 matrix"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-matrix" /><code>{"private Matrix4x4 matrix"}</code> | The wrapped matrix. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-direction" /><code>{"void Direction(ref Vector3 direction)"}</code> |
-| <Link id="m-position" /><code>{"void Position(ref Vector3 position)"}</code> |
-| <Link id="m-rotation" /><code>{"void Rotation(ref Quaternion rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-direction" /><code>{"void Direction(ref Vector3 direction)"}</code> | Transforms a direction by the matrix, in place. |
+| <Link id="m-position" /><code>{"void Position(ref Vector3 position)"}</code> | Transforms a point by the matrix, in place. |
+| <Link id="m-rotation" /><code>{"void Rotation(ref Quaternion rotation)"}</code> | Applies the matrix's rotation to a rotation, in place. |
 
 ## Used in
 

@@ -28,22 +28,22 @@ Batches outgoing messages for one connection channel into packets and sends them
 <details>
 <summary>14 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-channel" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" Channel"}</code> |
-| <Link id="m-connection" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link></code> |
-| <Link id="m-currentpacket" /><code>{"private "}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{" CurrentPacket"}</code> |
-| <Link id="m-failedpacketsqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{"> FailedPacketsQueue"}</code> |
-| <Link id="m-isreliable" /><code>{"private readonly bool isReliable"}</code> |
-| <Link id="m-iswarningonnextpacketloss" /><code>{"private bool IsWarningOnNextPacketLoss"}</code> |
-| <Link id="m-lastsceneserialize" /><code>{"private LinkedListNode<"}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> lastSceneSerialize"}</code> |
-| <Link id="m-lastsendtime" /><code>{"private float LastSendTime"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-maximumfreepackets" /><code>{"private const int MaximumFreePackets"}</code> |
-| <Link id="m-maximumpacketsize" /><code>{"private static int maximumPacketSize"}</code> |
-| <Link id="m-maximumpendingpacketspermanager" /><code>{"private const int MaximumPendingPacketsPerManager"}</code> |
-| <Link id="m-queue" /><code>{"private readonly LinkedList<"}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> queue"}</code> |
-| <Link id="m-writermap" /><code>{"private static readonly Dictionary<int, "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> writerMap"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-channel" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" Channel"}</code> | The connection channel this manager sends on. |
+| <Link id="m-connection" /><code>{"private readonly "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" "}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link></code> | The connection this manager sends to. |
+| <Link id="m-currentpacket" /><code>{"private "}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{" CurrentPacket"}</code> | The packet messages are currently being written into. |
+| <Link id="m-failedpacketsqueue" /><code>{"private readonly Queue<"}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{"> FailedPacketsQueue"}</code> | Reliable channels only: packets that could not be sent yet and wait for a retry. |
+| <Link id="m-isreliable" /><code>{"private readonly bool isReliable"}</code> | Whether the channel is reliable. |
+| <Link id="m-iswarningonnextpacketloss" /><code>{"private bool IsWarningOnNextPacketLoss"}</code> | Whether the next queue overflow should log an error and force a disconnect. Re-armed once the failed queue drops below 32. |
+| <Link id="m-lastsceneserialize" /><code>{"private LinkedListNode<"}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> lastSceneSerialize"}</code> | On unreliable channels, the queued scene serialize message (type 28), replaced when a newer one is queued. |
+| <Link id="m-lastsendtime" /><code>{"private float LastSendTime"}</code> | Real time of the last full send, checked against the channel's maximum send interval in `Update`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-maximumfreepackets" /><code>{"private const int MaximumFreePackets"}</code> | Largest number of spare packets kept in the pool (512). |
+| <Link id="m-maximumpacketsize" /><code>{"private static int maximumPacketSize"}</code> | Largest `PacketSize` seen so far; the shared writers are rebuilt when it grows. |
+| <Link id="m-maximumpendingpacketspermanager" /><code>{"private const int MaximumPendingPacketsPerManager"}</code> | Failed packets a reliable manager can hold (64) before it disconnects the connection. |
+| <Link id="m-queue" /><code>{"private readonly LinkedList<"}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> queue"}</code> | Messages held by `SendWithQueued` until `SendAllQueued` is called. |
+| <Link id="m-writermap" /><code>{"private static readonly Dictionary<int, "}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{"> writerMap"}</code> | Shared stream writers, one per connection identifier, reused for serializing messages. |
 
 </details>
 
@@ -56,9 +56,9 @@ Batches outgoing messages for one connection channel into packets and sends them
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-freepackets" /><code>{"private static ConcurrentBag<"}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{"> FreePackets { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-freepackets" /><code>{"private static ConcurrentBag<"}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{"> FreePackets { get; }"}</code> | Shared pool of spare packets, reused by `PrepareCurrentPacket` and filled by `ReleasePacket`. |
 
 </details>
 
@@ -83,15 +83,15 @@ Batches outgoing messages for one connection channel into packets and sends them
 <details>
 <summary>7 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-attemptsendanyremainingfailedpackets" /><code>{"private bool AttemptSendAnyRemainingFailedPackets()"}</code> |
-| <Link id="m-createpacket" /><code>{"private static "}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{" CreatePacket()"}</code> |
-| <Link id="m-preparecurrentpacket" /><code>{"private void PrepareCurrentPacket()"}</code> |
-| <Link id="m-reliableoverflow" /><code>{"private void ReliableOverflow()"}</code> |
-| <Link id="m-writetocurrent" /><code>{"private bool WriteToCurrent("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> |
-| <Link id="m-writetoreliable" /><code>{"private bool WriteToReliable("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> |
-| <Link id="m-writetounreliable" /><code>{"private bool WriteToUnreliable("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attemptsendanyremainingfailedpackets" /><code>{"private bool AttemptSendAnyRemainingFailedPackets()"}</code> | Reliable channels: resends queued packets that failed earlier, in order, stopping at the first that fails again. |
+| <Link id="m-createpacket" /><code>{"private static "}<Link to="/game-api/types/alta-networking/packet">{"Packet"}</Link>{" CreatePacket()"}</code> | Makes a new empty packet of `PacketSize`. |
+| <Link id="m-preparecurrentpacket" /><code>{"private void PrepareCurrentPacket()"}</code> | Takes a packet from the pool (or makes one) and sets it as the current packet. |
+| <Link id="m-reliableoverflow" /><code>{"private void ReliableOverflow()"}</code> | Disconnects the connection with the reason "Reliable overflow". Called a moment after the failed queue fills up. |
+| <Link id="m-writetocurrent" /><code>{"private bool WriteToCurrent("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> | Writes a message into the current packet, and sends straight away if the channel has no send interval. |
+| <Link id="m-writetoreliable" /><code>{"private bool WriteToReliable("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> | Called when the current packet is full on a reliable channel: sends it or queues it as failed, then starts a new one. Disconnects the client when 64 packets are queued. |
+| <Link id="m-writetounreliable" /><code>{"private bool WriteToUnreliable("}<Link to="/game-api/types/assembly-other/streamwriter">{"StreamWriter"}</Link>{" writer, int byteCount)"}</code> | Called when the current packet is full on an unreliable channel: sends it and writes the message to the next packet. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "AltaAccountRegistererAndLinker.LastCheckedField"
-description: "class AltaAccountRegistererAndLinker.LastCheckedField in Root.Township."
+description: "Remembers the last username or email checked against the API on the registration screen, so the same value isn't sent again."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaAccountRegistererAndLinker.LastCheckedField
 
 A **private class** in `Root.Township`, `Alta.OculusLogin`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Remembers the last username or email checked against the API on the registration screen, so the same value isn't sent again.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Nested in** [`AltaAccountRegistererAndLinker`](/game-api/types/alta-menus/altaaccountregistererandlinker)
@@ -23,27 +25,27 @@ A **private class** in `Root.Township`, `Alta.OculusLogin`. Reach it through att
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-lastcheckedvalue" /><code>{"string lastCheckedValue"}</code> |
-| <Link id="m-lastgenericerror" /><code>{"string lastGenericError"}</code> |
-| <Link id="m-lastresult" /><code>{"bool lastResult"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastcheckedvalue" /><code>{"string lastCheckedValue"}</code> | The value last sent for checking. |
+| <Link id="m-lastgenericerror" /><code>{"string lastGenericError"}</code> | Error message shown for the last check, if any. |
+| <Link id="m-lastresult" /><code>{"bool lastResult"}</code> | Whether the last checked value was valid. |
 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager"}</code> |
-| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-manager" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager"}</code> | The registration screen that owns this field. |
+| <Link id="m-step" /><code>{"private readonly "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step"}</code> | Which registration field this is (username or email). |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-checkactive" /><code>{"bool CheckActive(string newValue, out bool result)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkactive" /><code>{"bool CheckActive(string newValue, out bool result)"}</code> | If the value is the same as last time, re-shows the last status or error and returns true with the cached result. Otherwise stores the new value and returns false. |
 
 ## Used in
 

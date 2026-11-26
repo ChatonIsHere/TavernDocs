@@ -1,6 +1,6 @@
 ---
 title: "SocialAnalyticsBanMenuPanelOrigin"
-description: "enum SocialAnalyticsBanMenuPanelOrigin in Root.Township."
+description: "Which menu panel a ban was made from (inbox, reports or group page)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SocialAnalyticsBanMenuPanelOrigin
 
 An **enum** in `Root.Township`, no namespace.
+
+Which menu panel a ban was made from (inbox, reports or group page). Sent with the ban player social analytics event.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

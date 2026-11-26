@@ -31,9 +31,9 @@ A hashed asset wrapping an `AnimationCurve`, stored under `StatDefinition/Curves
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curve" /><code>{"private AnimationCurve curve"}</code> | The animation curve that `Evaluate` reads. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "AnalyticsOptions"
-description: "enum AnalyticsOptions in Root.Township."
+description: "Obsolete flags for which extra fields (timestamp, user ID, server ID, game time) the old analytics system adds to events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticsOptions
 
 An **enum** in `Root.Township`, `Alta.Analytics`.
+
+Obsolete flags for which extra fields (timestamp, user ID, server ID, game time) the old analytics system adds to events.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Attributes** `Flags`, `Obsolete`

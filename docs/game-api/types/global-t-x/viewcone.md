@@ -29,10 +29,10 @@ A cone along the object's forward axis, used by AI to check whether a point is i
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-angle" /><code>{"private float angle"}</code> |
-| <Link id="m-angledot" /><code>{"private float angleDot"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angle" /><code>{"private float angle"}</code> | Half-angle of the cone in degrees, from its forward axis (90 by default). |
+| <Link id="m-angledot" /><code>{"private float angleDot"}</code> | Cosine of `angle`, set in `OnValidate`, used as a quick reject in `Contains`. |
 
 </details>
 
@@ -51,10 +51,10 @@ A cone along the object's forward axis, used by AI to check whether a point is i
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor: draws lines around the cone's edge. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Updates `angleDot` to the cosine of `angle`. |
 
 </details>
 

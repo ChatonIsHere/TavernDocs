@@ -34,20 +34,20 @@ Wears a tool or weapon down with each hit, swaps its damage stage visuals and br
 <details>
 <summary>12 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-attachedmodules" /><code>{"private HashSet<"}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{"> attachedModules"}</code> |
-| <Link id="m-basedurability" /><code>{"private float baseDurability"}</code> |
-| <Link id="m-candockwhendamaged" /><code>{"private bool canDockWhenDamaged"}</code> |
-| <Link id="m-currentdurability" /><code>{"private float currentDurability"}</code> |
-| <Link id="m-durabilitysettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitysettings">{"DurabilitySettings"}</Link>{" durabilitySettings"}</code> |
-| <Link id="m-integrity" /><code>{"private float integrity"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-overridestatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" overrideStateChangeSound"}</code> |
-| <Link id="m-stagescount" /><code>{"private int stagesCount"}</code> |
-| <Link id="m-stagevisuals" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule-durabilityvisual">{"DurabilityModule.DurabilityVisual"}</Link>{"[] stageVisuals"}</code> |
-| <Link id="m-statechangeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" stateChangeEffect"}</code> |
-| <Link id="m-syncstage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncStage"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attachedmodules" /><code>{"private HashSet<"}<Link to="/game-api/types/global-c-d/durabilitymodule">{"DurabilityModule"}</Link>{"> attachedModules"}</code> | Modules attached to this one; their durability adds to this one's and damage is shared with them. |
+| <Link id="m-basedurability" /><code>{"private float baseDurability"}</code> | Starting durability from the settings, scaled by the physical material. |
+| <Link id="m-candockwhendamaged" /><code>{"private bool canDockWhenDamaged"}</code> | Lets damaged stackables dock, but only with items at the same stage. |
+| <Link id="m-currentdurability" /><code>{"private float currentDurability"}</code> | Remaining durability; damage is divided by this to get the integrity loss. |
+| <Link id="m-durabilitysettings" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitysettings">{"DurabilitySettings"}</Link>{" durabilitySettings"}</code> | The durability settings asset: durability, damage conversion and chance-based mode. |
+| <Link id="m-integrity" /><code>{"private float integrity"}</code> | Health of the item from 0 to 1; saved, and the pickup breaks at 0. Backing field for `Integrity`. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-overridestatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" overrideStateChangeSound"}</code> | Sound to play on a stage change instead of the global default. |
+| <Link id="m-stagescount" /><code>{"private int stagesCount"}</code> | Number of stage visuals. |
+| <Link id="m-stagevisuals" /><code>{"private "}<Link to="/game-api/types/global-c-d/durabilitymodule-durabilityvisual">{"DurabilityModule.DurabilityVisual"}</Link>{"[] stageVisuals"}</code> | Renderer sets for each damage stage with the integrity threshold for each. |
+| <Link id="m-statechangeeffect" /><code>{"private "}<Link to="/game-api/types/global-p/pickupevent">{"PickupEvent"}</Link>{" stateChangeEffect"}</code> | Pickup event invoked on a stage change, client side. |
+| <Link id="m-syncstage" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncStage"}</code> | Method sync that sends the current stage to players. |
 
 </details>
 
@@ -63,9 +63,9 @@ Wears a tool or weapon down with each hit, swaps its damage stage visuals and br
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-ientityreplacehandler-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Alta.Networking.IEntityReplaceHandler.Entity { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-ientityreplacehandler-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" Alta.Networking.IEntityReplaceHandler.Entity { get; }"}</code> | The entity this module is on. |
 
 </details>
 
@@ -91,22 +91,22 @@ Wears a tool or weapon down with each hit, swaps its damage stage visuals and br
 <details>
 <summary>14 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-animatestatechange" /><code>{"private void AnimateStateChange(int stage)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondurabilitychanged" /><code>{"private void OnDurabilityChanged(bool hasEffects = true)"}</code> |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> |
-| <Link id="m-reevaluateremainingdurabilityfromintegrity" /><code>{"private void ReevaluateRemainingDurabilityFromIntegrity()"}</code> |
-| <Link id="m-removeintegrity" /><code>{"private void RemoveIntegrity(float amount)"}</code> |
-| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceFlags)"}</code> |
-| <Link id="m-resetvisuals" /><code>{"private void ResetVisuals()"}</code> |
-| <Link id="m-setstage" /><code>{"private void SetStage(int stage, bool hasEffects = true)"}</code> |
-| <Link id="m-setupeffect" /><code>{"private void SetupEffect("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" effect)"}</code> |
-| <Link id="m-stagestackfilter" /><code>{"private void StageStackFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> |
-| <Link id="m-syncstage-2" /><code>{"private void SyncStage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasEffects)"}</code> |
-| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animatestatechange" /><code>{"private void AnimateStateChange(int stage)"}</code> | Client: plays the stage change sound (override or global default) and the stage change effect. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Loads durability from the settings, resets visuals and hooks the dock filter and break effect where needed. |
+| <Link id="m-ondurabilitychanged" /><code>{"private void OnDurabilityChanged(bool hasEffects = true)"}</code> | Breaks the pickup if integrity is gone, otherwise moves to the stage that matches the new integrity. |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Empty. |
+| <Link id="m-postbake" /><code>{"private void IBuildRendererPostBake.PostBake()"}</code> | Build step: drops missing renderers from every stage visual. |
+| <Link id="m-reevaluateremainingdurabilityfromintegrity" /><code>{"private void ReevaluateRemainingDurabilityFromIntegrity()"}</code> | Recomputes remaining durability from integrity plus attached modules. Not called anywhere in this build. |
+| <Link id="m-removeintegrity" /><code>{"private void RemoveIntegrity(float amount)"}</code> | Scales integrity and remaining durability down by the given fraction. |
+| <Link id="m-replacedwith" /><code>{"private void Alta.Networking.IEntityReplaceHandler.ReplacedWith("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/replaceavoidflags">{"ReplaceAvoidFlags"}</Link>{" replaceFlags)"}</code> | Copies a damaged module's integrity onto the replacement entity and updates its stage without effects. |
+| <Link id="m-resetvisuals" /><code>{"private void ResetVisuals()"}</code> | Shows stage 0's renderers and hides every other stage. |
+| <Link id="m-setstage" /><code>{"private void SetStage(int stage, bool hasEffects = true)"}</code> | Switches the visible stage, syncs it to chunks on the server, raises `OnChangedStage` and plays effects on clients. |
+| <Link id="m-setupeffect" /><code>{"private void SetupEffect("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" effect)"}</code> | Gives the break effect the mesh of the current stage. |
+| <Link id="m-stagestackfilter" /><code>{"private void StageStackFilter("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, ref bool result)"}</code> | Dock filter for stackable items: stops damaged items stacking, or stacking with a different stage when `canDockWhenDamaged` is set. |
+| <Link id="m-syncstage-2" /><code>{"private void SyncStage("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool hasEffects)"}</code> | Network handler for the stage message; clients apply the received stage. |
+| <Link id="m-updaterenderers" /><code>{"private void IReferenceRenderer.UpdateRenderers(Renderer[] oldFirstRenderers, Renderer[] newFirstRenderers)"}</code> | Swaps renderer references in every stage visual when renderers are replaced, for example by atlasing. |
 
 </details>
 

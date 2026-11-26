@@ -1,6 +1,6 @@
 ---
 title: "PickupEvent"
-description: "class PickupEvent in Root.Township."
+description: "Serializable AltaEvent with a Pickup argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `AltaEvent` with a `Pickup` argument. Runs inspector-wired listeners and C# `Invoked` handlers.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** [`AltaEvent<Pickup, UnityPickupEvent>`](/game-api/types/global-a-b/altaevent-t-unityeventt)

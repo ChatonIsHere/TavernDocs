@@ -29,14 +29,14 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/attachmentevent">{"AttachmentEvent"}</Link>{" broken"}</code> |
-| <Link id="m-forcebreak" /><code>{"private float forceBreak"}</code> |
-| <Link id="m-imposter" /><code>{"private MeshRenderer imposter"}</code> |
-| <Link id="m-isbreakingonunroot" /><code>{"private bool isBreakingOnUnroot"}</code> |
-| <Link id="m-pcmeshes" /><code>{"private Mesh[] pcMeshes"}</code> |
-| <Link id="m-syncbroken" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBroken"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-broken" /><code>{"private "}<Link to="/game-api/types/alta-crafting/attachmentevent">{"AttachmentEvent"}</Link>{" broken"}</code> | Event invoked on `Break`. The `Broken` event adds to it. |
+| <Link id="m-forcebreak" /><code>{"private float forceBreak"}</code> | Force that breaks the attachment off. -1 or less means force never breaks it. |
+| <Link id="m-imposter" /><code>{"private MeshRenderer imposter"}</code> | Backing field for `Imposter`, the far imposter renderer, added last to `Renderers` if set. |
+| <Link id="m-isbreakingonunroot" /><code>{"private bool isBreakingOnUnroot"}</code> | Whether `Unroot` breaks the attachment off. |
+| <Link id="m-pcmeshes" /><code>{"private Mesh[] pcMeshes"}</code> | Backing field for `Lods`, the LOD meshes used to build `Renderers`. |
+| <Link id="m-syncbroken" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" syncBroken"}</code> | Method sync made in `Initialize` for `SyncBreak`. |
 
 </details>
 
@@ -52,9 +52,9 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ibuildrendererbakeable-sortingorder" /><code>{"private int IBuildRendererBakeable.SortingOrder { get; }"}</code> | Bake order for this bakeable: 1. |
 
 </details>
 
@@ -79,12 +79,12 @@ Something attached to a tree's node, such as leaves, that can break off. Attache
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> |
-| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> |
-| <Link id="m-getrendereratlod" /><code>{"private MeshRenderer GetRendererAtLOD(int lod)"}</code> |
-| <Link id="m-syncbreak" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bake" /><code>{"private void IBuildRendererBakeable.Bake(bool isSaving)"}</code> | Build bake hook. Empty. |
+| <Link id="m-clean" /><code>{"private void IBuildRendererBakeable.Clean()"}</code> | Build clean hook. Empty. |
+| <Link id="m-getrendereratlod" /><code>{"private MeshRenderer GetRendererAtLOD(int lod)"}</code> | Makes a "Leaves LOD" child with the LOD mesh, atlased with the material from `WoodcutTreeAttachmentBaker`. |
+| <Link id="m-syncbreak" /><code>{"private void SyncBreak("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Method sync sent by the server on `Break`. Clients run `Break` when they get it. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "SelectedElementChanged"
-description: "delegate SelectedElementChanged in Root.Township."
+description: "Callback for the selected server changing in the server list, with the old and new ServerElement."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SelectedElementChanged
 
 A **delegate** in `Root.Township`, no namespace.
+
+Callback for the selected server changing in the server list, with the old and new `ServerElement`.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 - **Inherits or implements** `MulticastDelegate`

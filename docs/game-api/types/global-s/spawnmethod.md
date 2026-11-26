@@ -1,6 +1,6 @@
 ---
 title: "SpawnMethod"
-description: "enum SpawnMethod in Root.Township."
+description: "How a spawner picks its next spawn point: in order or at random."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnMethod
 
 An **enum** in `Root.Township`, no namespace.
+
+How a spawner picks its next spawn point: in order or at random.
 
 - **Listed in** [No namespace: S](/game-api/types/global-s)
 

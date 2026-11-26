@@ -1,6 +1,6 @@
 ---
 title: "PlayerUnityEvent"
-description: "class PlayerUnityEvent in Root.Township."
+description: "Inspector event with an IPlayer argument."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerUnityEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Inspector event with an `IPlayer` argument.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Inherits or implements** `UnityEvent<IPlayer>`

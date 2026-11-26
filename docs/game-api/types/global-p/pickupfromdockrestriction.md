@@ -1,6 +1,6 @@
 ---
 title: "PickupFromDockRestriction"
-description: "enum PickupFromDockRestriction in Root.Township."
+description: "Flags limiting how a pickup can be taken from a dock: fixed, not with the left hand, or not with the right hand."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupFromDockRestriction
 
 An **enum** in `Root.Township`, no namespace.
+
+Flags limiting how a pickup can be taken from a dock: fixed, not with the left hand, or not with the right hand.
 
 - **Listed in** [No namespace: P](/game-api/types/global-p)
 - **Attributes** `Flags`

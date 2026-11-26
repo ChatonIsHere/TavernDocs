@@ -63,22 +63,22 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ReceivingMetrics`](/game-api/types/global-q-r/receivingmetrics) | class |  | 6 |  |
 | [`RecentPlayerActionPage`](/game-api/types/global-q-r/recentplayeractionpage) | class | `PanelComponent` | 11 | Social tablet page for one recent player: friend, unfriend, mute, report, ban and unban buttons. Actions run on the client through the Alta API; reports and bans are also sent to the server, which raises console events. |
 | [`RecentPlayerActionPage.FriendButtonMap`](/game-api/types/global-q-r/recentplayeractionpage-friendbuttonmap) | struct |  | 2 |  |
-| [`RecentPlayerElement`](/game-api/types/global-q-r/recentplayerelement) | class | `ListElementWithButtonAndExtraText` | 3 |  |
+| [`RecentPlayerElement`](/game-api/types/global-q-r/recentplayerelement) | class | `ListElementWithButtonAndExtraText` | 3 | Client UI: one row in the recent players list. Shows the name, a rough status text and a nameplate coloured by online and friend status, and a marker for incoming friend requests. |
 | [`RecentPlayerElement.NameplateMeshReference`](/game-api/types/global-q-r/recentplayerelement-nameplatemeshreference) | class |  | 2 |  |
 | [`RecentPlayers`](/game-api/types/global-q-r/recentplayers) | static class |  | 13 | Client-only helpers and the `recent-players` console module (alias `recent`) for the recent players list, which is stored through the Alta API. |
 | [`RedesignedAltaAccountLinker`](/game-api/types/global-q-r/redesignedaltaaccountlinker) | internal class | `LoginAndRegisterHelper` | 3 |  |
 | [`RefBoolDelegate`](/game-api/types/global-q-r/refbooldelegate) | delegate |  | 0 |  |
 | [`ReferenceEqualsComparer<T>`](/game-api/types/global-q-r/referenceequalscomparer-t) | internal class | `IEqualityComparer<T>` | 0 |  |
-| [`RelativePoint`](/game-api/types/global-q-r/relativepoint) | struct |  | 8 |  |
+| [`RelativePoint`](/game-api/types/global-q-r/relativepoint) | struct |  | 8 | A position and rotation stored relative to a transform, so it follows that transform when it moves. With no transform it holds world values. |
 | [`RemoteConsoleCommandType`](/game-api/types/global-q-r/remoteconsolecommandtype) | enum | `byte` | 2 |  |
 | [`RemoteConsoleResponseType`](/game-api/types/global-q-r/remoteconsoleresponsetype) | enum | `byte` | 1 |  |
 | [`RemoteConsoleUtility`](/game-api/types/global-q-r/remoteconsoleutility) | static class |  | 1 |  |
-| [`RemoteEquipmentModeVisuals`](/game-api/types/global-q-r/remoteequipmentmodevisuals) | class | `MonoBehaviour` | 2 |  |
+| [`RemoteEquipmentModeVisuals`](/game-api/types/global-q-r/remoteequipmentmodevisuals) | class | `MonoBehaviour` | 2 | Visuals that scale in when shown and destroy themselves after scaling out. Client side. |
 | [`RemovingTriangle`](/game-api/types/global-q-r/removingtriangle) | class |  | 10 | One mesh triangle with its corners, centre, edges and normal, used when deciding which triangles to strip from combined static meshes. |
 | [`RendererBoundsSizeAttribute`](/game-api/types/global-q-r/rendererboundssizeattribute) | class | `PropertyAttribute` | 0 |  |
 | [`RendererGhost`](/game-api/types/global-q-r/rendererghost) | class | `PooledObject` | 1 |  |
 | [`RendererGroup`](/game-api/types/global-q-r/renderergroup) | class | `ComponentGroup<Renderer>`, `IReferenceRenderer` | 7 | A group of renderers changed together: layer, shadows, alpha and material floats. Enabling or disabling the component shows or hides them all (not on a headless server). |
-| [`RendererMaterializer`](/game-api/types/global-q-r/renderermaterializer) | class | `MonoBehaviour` | 5 |  |
+| [`RendererMaterializer`](/game-api/types/global-q-r/renderermaterializer) | class | `MonoBehaviour` | 5 | Plays a dissolve in or out on a set of renderers. On the server it only calls the finish callback after the duration. |
 | [`RendererMaterializerHandler`](/game-api/types/global-q-r/renderermaterializerhandler) | class |  | 7 |  |
 | [`RendererMeshReplacePooledObject`](/game-api/types/global-q-r/renderermeshreplacepooledobject) | class | `MeshReplacePooledObject` | 1 |  |
 | [`RendererScaleAnimator`](/game-api/types/global-q-r/rendererscaleanimator) | class | `ScaleAnimator` | 1 |  |
@@ -87,7 +87,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RenderingDisabler.Type`](/game-api/types/global-q-r/renderingdisabler-type) | enum |  | 8 |  |
 | [`RenderingMaps`](/game-api/types/global-q-r/renderingmaps) | enum |  | 2 |  |
 | [`RenderLock`](/game-api/types/global-q-r/renderlock) | static class |  | 4 |  |
-| [`RenderLock.RenderLockType`](/game-api/types/global-q-r/renderlock-renderlocktype) | enum |  | 2 |  |
+| [`RenderLock.RenderLockType`](/game-api/types/global-q-r/renderlock-renderlocktype) | enum |  | 2 | Reasons rendering is held back, used as bit flags in `RenderLock`: no player controller spawned yet, or faded to black. |
 | [`RenderTextureGetter`](/game-api/types/global-q-r/rendertexturegetter) | class | `MonoBehaviour` | 4 |  |
 | [`RepairBox`](/game-api/types/global-q-r/repairbox) | class | `NetworkEntityBehaviour`, `ISavableFull<RepairBoxSaveData>`, `ISavable<RepairBoxSaveData>`, +3 more | 10 | [Other systems](../game-systems/other-systems.md) |
 | [`RepairBoxSaveData`](/game-api/types/global-q-r/repairboxsavedata) | internal class | `NewSaveData<RepairBox, RepairBoxSaveData>` | 10 |  |
@@ -124,12 +124,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`RotatePickupPuzzleOLD`](/game-api/types/global-q-r/rotatepickuppuzzleold) | class | `MonoBehaviour` | 0 |  |
 | [`RotatePickupSaveData`](/game-api/types/global-q-r/rotatepickupsavedata) | internal class | `NewSaveData<RotatePickup, RotatePickupSaveData>` | 2 |  |
 | [`RotateTransform`](/game-api/types/global-q-r/rotatetransform) | class | `MonoBehaviour` | 2 |  |
-| [`RotationBucket`](/game-api/types/global-q-r/rotationbucket) | internal class |  | 9 |  |
+| [`RotationBucket`](/game-api/types/global-q-r/rotationbucket) | internal class |  | 9 | One part that `FaceObject` turns to face the hands holding its handle pickups. |
 | [`RotationBucketOLD`](/game-api/types/global-q-r/rotationbucketold) | internal class |  | 9 |  |
 | [`RotationMode`](/game-api/types/global-q-r/rotationmode) | enum |  | 6 |  |
 | [`RotationOverrider`](/game-api/types/global-q-r/rotationoverrider) | class | `MonoBehaviour` | 0 |  |
 | [`RotationSlerp`](/game-api/types/global-q-r/rotationslerp) | class | `MonoBehaviour` | 1 |  |
 | [`RunMode`](/game-api/types/global-q-r/runmode) | enum |  | 2 |  |
-| [`RuntimeConsole`](/game-api/types/global-q-r/runtimeconsole) | class | `MonoBehaviour` | 1 |  |
+| [`RuntimeConsole`](/game-api/types/global-q-r/runtimeconsole) | class | `MonoBehaviour` | 1 | In-game VR console panel: shows log output and runs typed commands on the client or, with its lever, on the server. Client side. |
 | [`RuntimePlatformObject`](/game-api/types/global-q-r/runtimeplatformobject) | class | `MonoBehaviour` | 0 |  |
 | [`RuntimeUid`](/game-api/types/global-q-r/runtimeuid) | class |  | 1 |  |

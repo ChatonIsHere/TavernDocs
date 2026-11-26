@@ -1,6 +1,6 @@
 ---
 title: "MaterialLOD"
-description: "class MaterialLOD in Root.Township."
+description: "A material and LOD level pair, used as a key by StaticObjectCombiner to group renderers when combining meshes."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+A material and LOD level pair, used as a key by `StaticObjectCombiner` to group renderers when combining meshes.
+
 - **Listed in** [No namespace: M to O](/game-api/types/global-m-o)
 
 ## Constructors
@@ -22,17 +24,17 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-level" /><code>{"int level"}</code> |
-| <Link id="m-material" /><code>{"Material material"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-level" /><code>{"int level"}</code> | The LOD level. |
+| <Link id="m-material" /><code>{"Material material"}</code> | The shared material. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> |
-| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-equals" /><code>{"override bool Equals(object obj)"}</code> | True when material and level match. |
+| <Link id="m-gethashcode" /><code>{"override int GetHashCode()"}</code> | Hash of material and level. |
 
 ## Used in
 

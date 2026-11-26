@@ -1,6 +1,6 @@
 ---
 title: "StartServerSessionResponse"
-description: "class StartServerSessionResponse in Alta.Api.DataTransferModels."
+description: "API response when a server session is started."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
 
+API response when a server session is started.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serversession" /><code>{"int ServerSession { get; set; }"}</code> | Id of the new server session. |
 
 ## Used in
 

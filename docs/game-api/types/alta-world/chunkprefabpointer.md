@@ -30,18 +30,18 @@ Points at static chunk content loaded through Addressables. The static methods r
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-id" /><code>{"private uint id"}</code> |
-| <Link id="m-inram" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> inRam"}</code> |
-| <Link id="m-lastspawned" /><code>{"private static "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" lastSpawned"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-pointerfolder" /><code>{"private static Transform pointerFolder"}</code> |
-| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> |
-| <Link id="m-spawnedpointer" /><code>{"private static List<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> spawnedPointer"}</code> |
-| <Link id="m-stopwatch" /><code>{"private static Stopwatch stopwatch"}</code> |
-| <Link id="m-waitingforload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForLoad"}</code> |
-| <Link id="m-waitingforunload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForUnload"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-id" /><code>{"private uint id"}</code> | Backing field for `Identifier`. |
+| <Link id="m-inram" /><code>{"private static Dictionary<string, "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> inRam"}</code> | Addressable pointer instances currently loaded, keyed by asset reference. |
+| <Link id="m-lastspawned" /><code>{"private static "}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{" lastSpawned"}</code> | The pointer instance `LoadNext` last tried to spawn. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-pointerfolder" /><code>{"private static Transform pointerFolder"}</code> | Parent transform named "Static Objects" for spawned pointer prefabs. |
+| <Link id="m-prefab" /><code>{"private GameObject prefab"}</code> | Backing field for `Prefab`. |
+| <Link id="m-spawnedpointer" /><code>{"private static List<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> spawnedPointer"}</code> | Pointers spawned in the current `LoadNext` pass, whose load tasks get completed at the end of it. |
+| <Link id="m-stopwatch" /><code>{"private static Stopwatch stopwatch"}</code> | Times each `LoadAndUnload` pass against its millisecond allowance. |
+| <Link id="m-waitingforload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForLoad"}</code> | Pointer instances that a chunk started using and that still need spawning. |
+| <Link id="m-waitingforunload" /><code>{"private static Queue<"}<Link to="/game-api/types/alta-world/chunkprefabpointer-pointerinstance">{"ChunkPrefabPointer.PointerInstance"}</Link>{"> waitingForUnload"}</code> | Spawned pointer instances that no chunk uses any more and that wait to be destroyed. |
 
 </details>
 
@@ -69,12 +69,12 @@ Points at static chunk content loaded through Addressables. The static methods r
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clearstaticpointerinstances" /><code>{"private static void ClearStaticPointerInstances()"}</code> |
-| <Link id="m-ensurepointerfolderexists" /><code>{"private static void EnsurePointerFolderExists()"}</code> |
-| <Link id="m-loadnext" /><code>{"private static void LoadNext(float allowance)"}</code> |
-| <Link id="m-unloadnext" /><code>{"private static void UnloadNext(float allowance)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clearstaticpointerinstances" /><code>{"private static void ClearStaticPointerInstances()"}</code> | Clears the loaded-pointer caches and queues. Hooked to `ApplicationManager.GameReload` in the static constructor. |
+| <Link id="m-ensurepointerfolderexists" /><code>{"private static void EnsurePointerFolderExists()"}</code> | Creates the "Static Objects" parent object if it doesn't exist yet. |
+| <Link id="m-loadnext" /><code>{"private static void LoadNext(float allowance)"}</code> | Spawns queued pointer prefabs until the time allowance runs out, then completes their load tasks. Called by `LoadAndUnload`. |
+| <Link id="m-unloadnext" /><code>{"private static void UnloadNext(float allowance)"}</code> | Destroys spawned pointer prefabs that no chunk uses any more, until the time allowance runs out. Called by `LoadAndUnload`. |
 
 </details>
 

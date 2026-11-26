@@ -27,19 +27,19 @@ Works out vertex colours for a mesh from values on its bones, one channel per po
 <details>
 <summary>11 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isalphachanged" /><code>{"private bool isAlphaChanged"}</code> |
-| <Link id="m-isalphaoff" /><code>{"private bool isAlphaOff"}</code> |
-| <Link id="m-isbluechanged" /><code>{"private bool isBlueChanged"}</code> |
-| <Link id="m-isblueoff" /><code>{"private bool isBlueOff"}</code> |
-| <Link id="m-isgreenchanged" /><code>{"private bool isGreenChanged"}</code> |
-| <Link id="m-isgreenoff" /><code>{"private bool isGreenOff"}</code> |
-| <Link id="m-isneedingcheck" /><code>{"private bool isNeedingCheck"}</code> |
-| <Link id="m-isredchanged" /><code>{"private bool isRedChanged"}</code> |
-| <Link id="m-isredoff" /><code>{"private bool isRedOff"}</code> |
-| <Link id="m-iswaitingforcheck" /><code>{"private bool isWaitingForCheck"}</code> |
-| <Link id="m-subject" /><code>{"private MonoBehaviour subject"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isalphachanged" /><code>{"private bool isAlphaChanged"}</code> | Set when an alpha point changed since the last check. |
+| <Link id="m-isalphaoff" /><code>{"private bool isAlphaOff"}</code> | True when some alpha point differs from `DefaultAlpha`, so the alpha channel is written. |
+| <Link id="m-isbluechanged" /><code>{"private bool isBlueChanged"}</code> | Set when a blue point changed since the last check. |
+| <Link id="m-isblueoff" /><code>{"private bool isBlueOff"}</code> | True when some blue point differs from `DefaultBlue`, so the blue channel is written. |
+| <Link id="m-isgreenchanged" /><code>{"private bool isGreenChanged"}</code> | Set when a green point changed since the last check. |
+| <Link id="m-isgreenoff" /><code>{"private bool isGreenOff"}</code> | True when some green point differs from `DefaultGreen`, so the green channel is written. |
+| <Link id="m-isneedingcheck" /><code>{"private bool isNeedingCheck"}</code> | Set by `CheckAtEndOfFrame`; cleared once `CheckForColor` runs. |
+| <Link id="m-isredchanged" /><code>{"private bool isRedChanged"}</code> | Set when a red point changed since the last check. |
+| <Link id="m-isredoff" /><code>{"private bool isRedOff"}</code> | True when some red point differs from `DefaultRed`, so the red channel is written. |
+| <Link id="m-iswaitingforcheck" /><code>{"private bool isWaitingForCheck"}</code> | True while the `WaitForCheck` coroutine is running, so only one is started. |
+| <Link id="m-subject" /><code>{"private MonoBehaviour subject"}</code> | The behaviour that owns this colour model and runs its coroutine. Backing field for `Subject`. |
 
 </details>
 
@@ -78,17 +78,17 @@ Works out vertex colours for a mesh from values on its bones, one channel per po
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-alphavaluechanged" /><code>{"private void AlphaValueChanged(TA point)"}</code> |
-| <Link id="m-bluevaluechanged" /><code>{"private void BlueValueChanged(TB point)"}</code> |
-| <Link id="m-checkchanged" /><code>{"private bool CheckChanged<T>(List<T> points, float defaultValue)"}</code> |
-| <Link id="m-greenvaluechanged" /><code>{"private void GreenValueChanged(TG point)"}</code> |
-| <Link id="m-redvaluechanged" /><code>{"private void RedValueChanged(TR point)"}</code> |
-| <Link id="m-setlisteningto" /><code>{"private void SetListeningTo(bool isListening)"}</code> |
-| <Link id="m-setlisteningto-2" /><code>{"private void SetListeningTo<T>(List<T> points, Action<T> callback, bool isListening)"}</code> |
-| <Link id="m-updatecolors" /><code>{"private void UpdateColors<T>(List<T> points, List<Color> colors, int offset, int channel)"}</code> |
-| <Link id="m-waitforcheck" /><code>{"private IEnumerator WaitForCheck() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alphavaluechanged" /><code>{"private void AlphaValueChanged(TA point)"}</code> | Listener on each alpha point's `Changed` event; marks the alpha channel for rechecking. |
+| <Link id="m-bluevaluechanged" /><code>{"private void BlueValueChanged(TB point)"}</code> | Listener on each blue point's `Changed` event; marks the blue channel for rechecking. |
+| <Link id="m-checkchanged" /><code>{"private bool CheckChanged<T>(List<T> points, float defaultValue)"}</code> | Returns true if any point in the list has a value other than the channel default. |
+| <Link id="m-greenvaluechanged" /><code>{"private void GreenValueChanged(TG point)"}</code> | Listener on each green point's `Changed` event; marks the green channel for rechecking. |
+| <Link id="m-redvaluechanged" /><code>{"private void RedValueChanged(TR point)"}</code> | Listener on each red point's `Changed` event; marks the red channel for rechecking. |
+| <Link id="m-setlisteningto" /><code>{"private void SetListeningTo(bool isListening)"}</code> | Subscribes or unsubscribes the channel change listeners on every red, green, blue and alpha point. |
+| <Link id="m-setlisteningto-2" /><code>{"private void SetListeningTo<T>(List<T> points, Action<T> callback, bool isListening)"}</code> | Subscribes or unsubscribes the channel change listeners on every red, green, blue and alpha point. |
+| <Link id="m-updatecolors" /><code>{"private void UpdateColors<T>(List<T> points, List<Color> colors, int offset, int channel)"}</code> | Writes one colour channel into the vertex colour list, blending point values by each vertex's bone weights. |
+| <Link id="m-waitforcheck" /><code>{"private IEnumerator WaitForCheck() (iterator)"}</code> | Coroutine that runs `CheckForColor` at the end of each frame while a check is still pending. |
 
 </details>
 

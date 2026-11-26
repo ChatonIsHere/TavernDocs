@@ -1,6 +1,6 @@
 ---
 title: "GroupInfo"
-description: "class GroupInfo in Alta.Api.DataTransferModels."
+description: "API model with the basic public info for a group (server group): name, description, type, member count and tags."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupInfo
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+API model with the basic public info for a group (server group): name, description, type, member count and tags.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 - **Derived types** [`GroupInfoDetailed`](/game-api/types/assembly-api-models/groupinfodetailed)
@@ -23,21 +25,21 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> |
-| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> |
-| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> |
-| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> |
-| <Link id="m-membercount" /><code>{"int MemberCount { get; set; }"}</code> |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |
-| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createdat" /><code>{"DateTime CreatedAt { get; set; }"}</code> | When the group was made. |
+| <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | Group description text. |
+| <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> | Group type (such as open or private), sent as a string. |
+| <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The group's id. |
+| <Link id="m-membercount" /><code>{"int MemberCount { get; set; }"}</code> | How many members the group has. |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Group name. |
+| <Link id="m-tags" /><code>{"List<string> Tags { get; set; }"}</code> | Tags set on the group. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Returns "id - name". |
 
 ## Used in
 

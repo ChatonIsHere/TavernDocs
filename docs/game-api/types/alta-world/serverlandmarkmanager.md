@@ -27,13 +27,13 @@ Server: holds every registered map marker and one tracker per connected player f
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-changesync" /><code>{"private "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync"}</code> |
-| <Link id="m-clientmanagers" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/alta-world/serverclientlandmarkmanager">{"ServerClientLandmarkManager"}</Link>{"> clientManagers"}</code> |
-| <Link id="m-initialsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync"}</code> |
-| <Link id="m-lastindex" /><code>{"private uint lastIndex"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-changesync" /><code>{"private "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync"}</code> | Write sync used to send landmark changes to clients. Passed to each player's client manager. |
+| <Link id="m-clientmanagers" /><code>{"private Dictionary<int, "}<Link to="/game-api/types/alta-world/serverclientlandmarkmanager">{"ServerClientLandmarkManager"}</Link>{"> clientManagers"}</code> | Per-player landmark managers, keyed by the player's user id. Added in `Load`, removed in `Unload`. |
+| <Link id="m-initialsync" /><code>{"private "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync"}</code> | Write sync used to send a player all landmarks when they load. Passed to each client manager. |
+| <Link id="m-lastindex" /><code>{"private uint lastIndex"}</code> | Highest landmark index handed out so far. Starts at the map's first non-reserved index. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 

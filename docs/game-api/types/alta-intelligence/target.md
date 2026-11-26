@@ -29,13 +29,13 @@ A networked thing that AI creatures can sense and attack, with optional health a
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-healthobject" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject"}</code> |
-| <Link id="m-initialsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] initialSenses"}</code> |
-| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> |
-| <Link id="m-isobjectdisabledonclient" /><code>{"private bool isObjectDisabledOnClient"}</code> |
-| <Link id="m-senses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" senses"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-healthobject" /><code>{"private "}<Link to="/game-api/types/global-e-h/healthobject">{"HealthObject"}</Link>{" healthObject"}</code> | The target's health; when it is destroyed the target is marked dead. |
+| <Link id="m-initialsenses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/sensesetup">{"SenseSetup"}</Link>{"[] initialSenses"}</code> | Senses applied when the target initializes on the server. |
+| <Link id="m-interactable" /><code>{"private "}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable"}</code> | The target's `Interactable`, if any. |
+| <Link id="m-isobjectdisabledonclient" /><code>{"private bool isObjectDisabledOnClient"}</code> | When true (the default), clients turn the whole object off. Targets only run on the server. |
+| <Link id="m-senses" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/basicsenseset">{"BasicSenseSet"}</Link>{" senses"}</code> | Server: the sense set built from `initialSenses`, exposed as `Senses`. |
 
 </details>
 
@@ -57,9 +57,9 @@ A networked thing that AI creatures can sense and attack, with optional health a
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-intelligence-itargetpointer-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" Alta.Intelligence.ITargetPointer.Target { get; }"}</code> | Returns this target itself. |
 
 </details>
 
@@ -78,9 +78,9 @@ A networked thing that AI creatures can sense and attack, with optional health a
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: removes the target from `TargetCollectorManager`. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "JointPointType"
-description: "class JointPointType in Root.Township."
+description: "Base asset type for joint kinds used in crafting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JointPointType
 
 A **class** in `Root.Township`, `Alta.Crafting`.
+
+Base asset type for joint kinds used in crafting. `JointInsertType` and `JointSlotType` derive from it, and `JointPoint.GeneralTypes` lists them.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`GeneralValue`](/game-api/types/assembly-other/generalvalue)

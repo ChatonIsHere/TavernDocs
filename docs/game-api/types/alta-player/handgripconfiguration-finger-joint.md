@@ -1,6 +1,6 @@
 ---
 title: "HandGripConfiguration.Finger.Joint"
-description: "class HandGripConfiguration.Finger.Joint in Root.Township."
+description: "Size and curl limits of one finger joint, used by HandGrip to curl fingers around what the hand holds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandGripConfiguration.Finger.Joint
 
 A **class** in `Root.Township`, `Alta.Character`.
+
+Size and curl limits of one finger joint, used by `HandGrip` to curl fingers around what the hand holds.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`HandGripConfiguration.Finger`](/game-api/types/alta-player/handgripconfiguration-finger)
@@ -26,23 +28,23 @@ A **class** in `Root.Township`, `Alta.Character`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-curlinterval" /><code>{"private float curlInterval"}</code> |
-| <Link id="m-length" /><code>{"private float length"}</code> |
-| <Link id="m-maximumcurl" /><code>{"private float maximumCurl"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curlinterval" /><code>{"private float curlInterval"}</code> | Backing field for `CurlInterval`. |
+| <Link id="m-length" /><code>{"private float length"}</code> | Backing field for `Length`. |
+| <Link id="m-maximumcurl" /><code>{"private float maximumCurl"}</code> | Backing field for `MaximumCurl`. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Backing field for `Radius`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-curlinterval-2" /><code>{"float CurlInterval { get; }"}</code> |
-| <Link id="m-length-2" /><code>{"float Length { get; }"}</code> |
-| <Link id="m-maximumcurl-2" /><code>{"float MaximumCurl { get; }"}</code> |
-| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-curlinterval-2" /><code>{"float CurlInterval { get; }"}</code> | Degrees the joint curls per step while closing around an object. |
+| <Link id="m-length-2" /><code>{"float Length { get; }"}</code> | Length of the joint's bone. |
+| <Link id="m-maximumcurl-2" /><code>{"float MaximumCurl { get; }"}</code> | Furthest the joint can curl, in degrees; negative values curl the other way. |
+| <Link id="m-radius-2" /><code>{"float Radius { get; }"}</code> | Thickness of the joint, used for its collision check. |
 
 ## Used in
 

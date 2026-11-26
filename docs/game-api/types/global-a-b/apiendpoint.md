@@ -1,6 +1,6 @@
 ---
 title: "ApiEndpoint"
-description: "enum ApiEndpoint in Root.Township."
+description: "Which Alta web API environment to connect to: production, development, latest, test, local or a custom URL."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ApiEndpoint
 
 An **enum** in `Root.Township`, no namespace.
+
+Which Alta web API environment to connect to: production, development, latest, test, local or a custom URL.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 

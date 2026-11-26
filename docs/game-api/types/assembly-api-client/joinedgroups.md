@@ -1,6 +1,6 @@
 ---
 title: "JoinedGroups"
-description: "class JoinedGroups in Alta.Api.Client."
+description: "Paged list of the groups the logged-in user is a member of, from the Alta web API."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # JoinedGroups
 
 A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
+
+Paged list of the groups the logged-in user is a member of, from the Alta web API. `Groups.Joined`.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** [`PaginatedList<JoinedGroupManager>`](/game-api/types/assembly-api-client/paginatedlist-t)
@@ -28,9 +30,9 @@ A **class** in `Alta.Api.Client`, `Alta.Api.Client.HighLevel`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getbyidentifier" /><code>{"async Task<"}<Link to="/game-api/types/assembly-api-client/joinedgroupmanager">{"JoinedGroupManager"}</Link>{"> GetByIdentifier(int groupIdentifier)"}</code> | Fetches a group and the user's membership in it, as a `JoinedGroupManager`. |
 
 ## Used in
 

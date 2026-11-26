@@ -29,33 +29,33 @@ Asset with the tuning for the downed state: gravestone, revive orbs other player
 <details>
 <summary>25 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> |
-| <Link id="m-distancebeforeorbisforcereleased" /><code>{"private float distanceBeforeOrbIsForceReleased"}</code> |
-| <Link id="m-enterdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterDownedStateSfx"}</code> |
-| <Link id="m-enterdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" enterDownedStateVfx"}</code> |
-| <Link id="m-exitdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitDownedStateSfx"}</code> |
-| <Link id="m-exitdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" exitDownedStateVfx"}</code> |
-| <Link id="m-gravestone" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" gravestone"}</code> |
-| <Link id="m-healthpercentageforrevivedplayers" /><code>{"private float healthPercentageForRevivedPlayers"}</code> |
-| <Link id="m-healthstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat"}</code> |
-| <Link id="m-heightofrespawnorb" /><code>{"private float heightOfRespawnOrb"}</code> |
-| <Link id="m-heightofreviveorbs" /><code>{"private float heightOfReviveOrbs"}</code> |
-| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> |
-| <Link id="m-numberofrevivalorbstospawn" /><code>{"private int numberOfRevivalOrbsToSpawn"}</code> |
-| <Link id="m-orbmovementrange" /><code>{"private Vector3 orbMovementRange"}</code> |
-| <Link id="m-orbmovementspeed" /><code>{"private float orbMovementSpeed"}</code> |
-| <Link id="m-respawndebuffdurationinseconds" /><code>{"private float respawnDebuffDurationInSeconds"}</code> |
-| <Link id="m-respawndebuffs" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] respawnDebuffs"}</code> |
-| <Link id="m-respawnorbdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" respawnOrbDefinition"}</code> |
-| <Link id="m-respawnorbdistancefromplayer" /><code>{"private float respawnOrbDistanceFromPlayer"}</code> |
-| <Link id="m-revivalorbdistancefromdownedplayer" /><code>{"private float revivalOrbDistanceFromDownedPlayer"}</code> |
-| <Link id="m-revivalorbdistancefromgrave" /><code>{"private float revivalOrbDistanceFromGrave"}</code> |
-| <Link id="m-reviveorb" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" reviveOrb"}</code> |
-| <Link id="m-rotatingobject" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" rotatingObject"}</code> |
-| <Link id="m-secondsaddedtorevivaltimerperorb" /><code>{"private float secondsAddedToRevivalTimerPerOrb"}</code> |
-| <Link id="m-spawnablelayers" /><code>{"private LayerMask spawnableLayers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angletorotatepersecond" /><code>{"private float angleToRotatePerSecond"}</code> | Spin speed of the ring of revive orbs. |
+| <Link id="m-distancebeforeorbisforcereleased" /><code>{"private float distanceBeforeOrbIsForceReleased"}</code> | How far a revive orb can be pulled from its spot before it is forced out of the hand. |
+| <Link id="m-enterdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" enterDownedStateSfx"}</code> | Sound played when a player goes down. |
+| <Link id="m-enterdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" enterDownedStateVfx"}</code> | Effect spawned when a player goes down. |
+| <Link id="m-exitdownedstatesfx" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" exitDownedStateSfx"}</code> | Sound played when a player leaves the downed state. |
+| <Link id="m-exitdownedstatevfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" exitDownedStateVfx"}</code> | Effect spawned when a player leaves the downed state. |
+| <Link id="m-gravestone" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" gravestone"}</code> | Prefab spawned at the spot where the player went down. |
+| <Link id="m-healthpercentageforrevivedplayers" /><code>{"private float healthPercentageForRevivedPlayers"}</code> | Share of maximum health (0 to 1) a revived player gets back. |
+| <Link id="m-healthstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" healthStat"}</code> | The player's health stat. |
+| <Link id="m-heightofrespawnorb" /><code>{"private float heightOfRespawnOrb"}</code> | Height of the respawn orb above its spawn point. |
+| <Link id="m-heightofreviveorbs" /><code>{"private float heightOfReviveOrbs"}</code> | Height of the revive orb ring above the downed spot. |
+| <Link id="m-hungerstat" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" hungerStat"}</code> | Stat that is disabled while downed to stop natural health regeneration. |
+| <Link id="m-numberofrevivalorbstospawn" /><code>{"private int numberOfRevivalOrbsToSpawn"}</code> | How many revive orbs spawn around a downed player; each adds an equal share of revive progress. |
+| <Link id="m-orbmovementrange" /><code>{"private Vector3 orbMovementRange"}</code> | Range of the idle bobbing movement of each revive orb. |
+| <Link id="m-orbmovementspeed" /><code>{"private float orbMovementSpeed"}</code> | Speed of the idle bobbing movement of each revive orb. |
+| <Link id="m-respawndebuffdurationinseconds" /><code>{"private float respawnDebuffDurationInSeconds"}</code> | How long the respawn debuffs last. |
+| <Link id="m-respawndebuffs" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/statmodifierconstructor">{"StatModifierConstructor"}</Link>{"[] respawnDebuffs"}</code> | Stat modifiers applied to the player after respawning. |
+| <Link id="m-respawnorbdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" respawnOrbDefinition"}</code> | Pooled object used for the respawn orb the downed player can grab. |
+| <Link id="m-respawnorbdistancefromplayer" /><code>{"private float respawnOrbDistanceFromPlayer"}</code> | How far from the player the respawn orb appears. |
+| <Link id="m-revivalorbdistancefromdownedplayer" /><code>{"private float revivalOrbDistanceFromDownedPlayer"}</code> | Ring radius an orb moves to when it is made reachable for the downed player. |
+| <Link id="m-revivalorbdistancefromgrave" /><code>{"private float revivalOrbDistanceFromGrave"}</code> | Radius of the revive orb ring around the grave. |
+| <Link id="m-reviveorb" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" reviveOrb"}</code> | Prefab of the orbs other players use to revive. |
+| <Link id="m-rotatingobject" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" rotatingObject"}</code> | Prefab spawned as the spinning parent of the revive orbs. |
+| <Link id="m-secondsaddedtorevivaltimerperorb" /><code>{"private float secondsAddedToRevivalTimerPerOrb"}</code> | Seconds added to the revive timer for each orb used. |
+| <Link id="m-spawnablelayers" /><code>{"private LayerMask spawnableLayers"}</code> | Layers the gravestone placement raycast can land on. |
 
 </details>
 

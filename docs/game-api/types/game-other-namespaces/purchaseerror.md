@@ -29,9 +29,9 @@ Base for an error from the Talem shop (the in-game store), made from an exceptio
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-message" /><code>{"private readonly string message"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-message" /><code>{"private readonly string message"}</code> | Error text given to the constructor; `Message` returns the exception's message instead when there is one. |
 
 </details>
 

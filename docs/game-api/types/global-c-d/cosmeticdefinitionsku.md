@@ -1,6 +1,6 @@
 ---
 title: "CosmeticDefinitionSku"
-description: "class CosmeticDefinitionSku in Root.Township."
+description: "A cosmetic store SKU plus the customization arguments that go with it, set in the inspector."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
+A cosmetic store SKU plus the customization arguments that go with it, set in the inspector.
+
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 
 ## Constructors
@@ -22,25 +24,25 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> |
-| <Link id="m-name" /><code>{"string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-arguments" /><code><Link to="/game-api/types/alta-customization/customizationarguments">{"CustomizationArguments"}</Link>{"[] arguments"}</code> | Customization arguments applied with this SKU. |
+| <Link id="m-name" /><code>{"string name"}</code> | Hidden display name for the entry in inspector lists. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-cosmeticsku" /><code>{"private string cosmeticSKU"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cosmeticsku" /><code>{"private string cosmeticSKU"}</code> | Backing field for `CosmeticSKU`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-cosmeticsku-2" /><code>{"string CosmeticSKU { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cosmeticsku-2" /><code>{"string CosmeticSKU { get; }"}</code> | The store SKU string for the cosmetic. |
 
 ## Used in
 

@@ -1,6 +1,6 @@
 ---
 title: "GroupPermissionsCheckRequest"
-description: "class GroupPermissionsCheckRequest in Alta.Api.DataTransferModels."
+description: "Body for asking the API whether a user has permissions in a group or on a server."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Body for asking the API whether a user has permissions in a group or on a server.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,9 +24,9 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-permissions" /><code><Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] Permissions { get; set; }"}</code> | Permissions to check for. |
 
 ## Used in
 

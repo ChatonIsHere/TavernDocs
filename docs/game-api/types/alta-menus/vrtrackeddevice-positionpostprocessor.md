@@ -1,6 +1,6 @@
 ---
 title: "VRTrackedDevice.PositionPostProcessor"
-description: "delegate VRTrackedDevice.PositionPostProcessor in Root.Township."
+description: "Callback that can change a tracked position, passed by ref, before VRTrackedDevice applies it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VRTrackedDevice.PositionPostProcessor
 
 A **delegate** in `Root.Township`, `Alta.XR`.
+
+Callback that can change a tracked position, passed by ref, before `VRTrackedDevice` applies it.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Nested in** [`VRTrackedDevice`](/game-api/types/alta-menus/vrtrackeddevice)

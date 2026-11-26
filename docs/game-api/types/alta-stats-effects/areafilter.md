@@ -1,6 +1,6 @@
 ---
 title: "AreaFilter"
-description: "enum AreaFilter in Root.Township."
+description: "Flags for which part of a player a stat area affects: None, Body or Mind."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AreaFilter
 
 An **enum** in `Root.Township`, `Alta.StatSystem`.
+
+Flags for which part of a player a stat area affects: `None`, `Body` or `Mind`. `StatAffectAccessor` matches it against the area's target.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 

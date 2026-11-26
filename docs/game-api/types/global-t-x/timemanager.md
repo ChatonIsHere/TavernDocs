@@ -1,6 +1,6 @@
 ---
 title: "TimeManager"
-description: "A scene NetworkEntityBehaviour; static TimeManager instance."
+description: "Saves and loads the world's time of day and applies the server's time speed setting to Timeline."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Root.Township`, no namespace.
 
-A scene `NetworkEntityBehaviour`; `static TimeManager instance`.
+Saves and loads the world's time of day and applies the server's time speed setting to `Timeline`. One per scene, reached through the static `instance`.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`ISavable<TimeManagerSaveData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<TimeManagerSaveData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)
@@ -27,23 +27,23 @@ A scene `NetworkEntityBehaviour`; `static TimeManager instance`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-instance" /><code>{"static "}<Link to="/game-api/types/global-t-x/timemanager">{"TimeManager"}</Link>{" instance"}</code> | The active time manager. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Server: applies the time speed setting now and whenever the server config changes (skipped for entity identifier 1 or lower). |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Sets `instance`, or destroys itself if another exists. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Server: stops listening to server config changes. |
+| <Link id="m-updatesettings" /><code>{"private void UpdateSettings(Settings settings)"}</code> | Server: sets `Timeline.Instance.TimeSpeed` from the server's `TimeSpeedMultiplier`. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "GameServerStatus"
-description: "enum GameServerStatus in Alta.Api.DataTransferModels."
+description: "Online state of a game server in the Alta API: forced offline, offline or online."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GameServerStatus
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Enums`.
+
+Online state of a game server in the Alta API: forced offline, offline or online.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

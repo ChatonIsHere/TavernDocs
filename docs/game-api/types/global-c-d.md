@@ -52,7 +52,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Chunker`](/game-api/types/global-c-d/chunker) | class | `IChunker` | 17 | [Chunks](../world/chunks.md#chunker-how-an-entity-belongs-to-a-chunk): Every `NetworkEntity` makes one in its constructor. It's `protected` on `NetworkEntity` (reach it as `((IChunkedEntity)entity).Chunker`). |
 | [`ChunkerChangedHandler`](/game-api/types/global-c-d/chunkerchangedhandler) | delegate |  | 0 |  |
 | [`ChunkerHelper`](/game-api/types/global-c-d/chunkerhelper) | static class |  | 2 |  |
-| [`ChunkEventHandler`](/game-api/types/global-c-d/chunkeventhandler) | delegate |  | 0 |  |
+| [`ChunkEventHandler`](/game-api/types/global-c-d/chunkeventhandler) | delegate |  | 0 | Callback with a chunk, used by `NetworkEntity.AddedToChunk`, `RemovedFromChunk` and `Chunker.EnteredChunk`. |
 | [`ChunkingParent`](/game-api/types/global-c-d/chunkingparent) | class | `MonoBehaviour` | 0 |  |
 | [`ChunkingPrefabFolder`](/game-api/types/global-c-d/chunkingprefabfolder) | class | `MonoBehaviour`, `IDestroyOnBake` | 0 |  |
 | [`ChunkingPrefabReplace`](/game-api/types/global-c-d/chunkingprefabreplace) | class | `MonoBehaviour`, `IBakeable` | 5 |  |
@@ -64,9 +64,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ClassSerializationHelper.MemberHandler<T>`](/game-api/types/global-c-d/classserializationhelper-memberhandler-t) | delegate |  | 0 |  |
 | [`ClassSerializer<T>`](/game-api/types/global-c-d/classserializer-t) | class | `Sync` | 3 |  |
 | [`CleaningHelper`](/game-api/types/global-c-d/cleaninghelper) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 0 |  |
-| [`ClickedEndEventHandler`](/game-api/types/global-c-d/clickedendeventhandler) | delegate |  | 0 |  |
-| [`ClickedEventHandler`](/game-api/types/global-c-d/clickedeventhandler) | delegate |  | 0 |  |
-| [`ClientCommandHandler`](/game-api/types/global-c-d/clientcommandhandler) | class |  | 4 |  |
+| [`ClickedEndEventHandler`](/game-api/types/global-c-d/clickedendeventhandler) | delegate |  | 0 | Callback for a controller action ending, with the player input and whether it ended because the action was disabled. |
+| [`ClickedEventHandler`](/game-api/types/global-c-d/clickedeventhandler) | delegate |  | 0 | Callback for when a controller action starts, given the `PlayerInput` it came from. |
+| [`ClientCommandHandler`](/game-api/types/global-c-d/clientcommandhandler) | class |  | 4 | Server side handler for one remote console connection: reads framed commands from the socket on its own thread, runs console commands and streams log output back. Created by `ClientHandler`. |
 | [`ClientHandler`](/game-api/types/global-c-d/clienthandler) | class | `IRemoteConsoleHandler` | 7 |  |
 | [`ClientJoinResult`](/game-api/types/global-c-d/clientjoinresult) | enum |  | 19 | [Joining a server](../networking/joining.md): Enum of join outcomes, 1 to 13 from Alta's API, 30 to 35 from the connection. |
 | [`ClientLogSender`](/game-api/types/global-c-d/clientlogsender) | class |  | 2 | [Remote console](../console-and-utilities/remote-console.md) |
@@ -94,9 +94,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ColorBoardItem`](/game-api/types/global-c-d/colorboarditem) | class | `MonoBehaviour` | 2 |  |
 | [`ColoredExplosive`](/game-api/types/global-c-d/coloredexplosive) | class | `Explosive`, `ISavable<ColoredExplosiveData>`, `ISavableSave<ColoredExplosiveData>`, +2 more | 3 |  |
 | [`ColoredExplosiveData`](/game-api/types/global-c-d/coloredexplosivedata) | class | `NewSaveData<ColoredExplosive, ColoredExplosiveData>` | 1 |  |
-| [`ColoredParticleSystem`](/game-api/types/global-c-d/coloredparticlesystem) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 4 |  |
+| [`ColoredParticleSystem`](/game-api/types/global-c-d/coloredparticlesystem) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 4 | Client: recolours a set of particle systems, their renderer materials (and trails) and an optional light together. Put on a particle effect prefab; does nothing on the headless server. |
 | [`ColoredPooledParticleSpawner`](/game-api/types/global-c-d/coloredpooledparticlespawner) | class | `MonoBehaviour` | 5 |  |
-| [`ColorEvent`](/game-api/types/global-c-d/colorevent) | class | `AltaEvent<Color, ColorUnityEvent>` | 0 |  |
+| [`ColorEvent`](/game-api/types/global-c-d/colorevent) | class | `AltaEvent<Color, ColorUnityEvent>` | 0 | Inspector event with a `Color` argument. |
 | [`ColorFadeRelease`](/game-api/types/global-c-d/colorfaderelease) | class | `DelayedPooledObject` | 0 |  |
 | [`ColorLerp`](/game-api/types/global-c-d/colorlerp) | class | `MonoBehaviour` | 2 |  |
 | [`ColorModel<TR, TG, TB, TA>`](/game-api/types/global-c-d/colormodel-tr-tg-tb-ta) | class | `NetworkEntityBehaviour` | 7 | Base for a networked object whose mesh vertex colours are driven by values on its bones, one channel per point type. Forging's `HeatModel` uses it for metal heat glow. Visual only: does nothing on a headless server. |
@@ -129,12 +129,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ControllerActionMode`](/game-api/types/global-c-d/controlleractionmode) | class |  | 7 | One controller input mode (for example a held item's mode) with action mappings per player mode (Oculus, OpenVR, fly cam, auto cam) plus a shared all-platform mapping. |
 | [`ControllerActionProxy`](/game-api/types/global-c-d/controlleractionproxy) | class | `IControllerAction` | 10 | A stand-in controller action that forwards the state and events of whichever `ControllerAction` it is linked to, and can be switched off on its own. Client input. |
 | [`ControllerActions`](/game-api/types/global-c-d/controlleractions) | class |  | 8 |  |
-| [`ControllerActionsManager`](/game-api/types/global-c-d/controlleractionsmanager) | class | `MonoBehaviour` | 7 |  |
+| [`ControllerActionsManager`](/game-api/types/global-c-d/controlleractionsmanager) | class | `MonoBehaviour` | 7 | Per-hand component that holds the hand's `ControllerActions` and adds, sets or removes controller modes (input mapping sets) for the active XR platform. On each `PlayerInput`. |
 | [`ControllerActionsManagerProxy`](/game-api/types/global-c-d/controlleractionsmanagerproxy) | class |  | 5 |  |
 | [`ControllerActionType`](/game-api/types/global-c-d/controlleractiontype) | enum |  | 35 | Every action a hand controller can trigger: interact, grab, teleport, rotate, quick access menu, mute, screenshot, and a set of debug actions. The numbers are fixed IDs. |
 | [`ControllerDPad`](/game-api/types/global-c-d/controllerdpad) | class |  | 11 | Turns a hand's touchpad and thumbstick input into numbered directions and four-way swipes. Made by `PlayerInput`; call `OnEnable` and `Update` to drive it. Client side. |
 | [`ControllerExtension`](/game-api/types/global-c-d/controllerextension) | abstract class | `MonoBehaviour` | 9 | Base for a component that adds behaviour to a player's hand controller, placed under the ghost hand or the IK hand. Runs on every copy of the player; `IsLocal` tells you if it's yours. |
-| [`ControllerExtensionGroup`](/game-api/types/global-c-d/controllerextensiongroup) | class | `ComponentGroup<ControllerExtension>` | 0 |  |
+| [`ControllerExtensionGroup`](/game-api/types/global-c-d/controllerextensiongroup) | class | `ComponentGroup<ControllerExtension>` | 0 | A `ComponentGroup` of `ControllerExtension`s. `Controller` instantiates these groups to add extensions to a hand. |
 | [`ControllerInput`](/game-api/types/global-c-d/controllerinput) | class |  | 33 | A snapshot of one hand controller's input: buttons, sticks, finger curl and hand velocity. `SetAndCallEvents` copies a new snapshot in and fires the button events that changed. |
 | [`ControllerInputButtonPressed`](/game-api/types/global-c-d/controllerinputbuttonpressed) | abstract class | `MonoBehaviour` | 0 |  |
 | [`ControllerMod`](/game-api/types/global-c-d/controllermod) | abstract class | `ModBase` | 0 |  |
@@ -147,7 +147,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CopyTransform`](/game-api/types/global-c-d/copytransform) | class | `MonoBehaviour` | 0 |  |
 | [`CoroutineAwaiter`](/game-api/types/global-c-d/coroutineawaiter) | static class |  | 2 |  |
 | [`CorrectedRotationSlerp`](/game-api/types/global-c-d/correctedrotationslerp) | class | `MonoBehaviour` | 1 |  |
-| [`CosmeticDefinitionSku`](/game-api/types/global-c-d/cosmeticdefinitionsku) | class |  | 4 |  |
+| [`CosmeticDefinitionSku`](/game-api/types/global-c-d/cosmeticdefinitionsku) | class |  | 4 | A cosmetic store SKU plus the customization arguments that go with it, set in the inspector. |
 | [`CosmeticFilterSkuAttribute`](/game-api/types/global-c-d/cosmeticfilterskuattribute) | class | `CosmeticFilterAttribute` | 1 |  |
 | [`CosmeticPackingManager`](/game-api/types/global-c-d/cosmeticpackingmanager) | class | `MonoBehaviour` | 0 |  |
 | [`CosmeticParticleColorer`](/game-api/types/global-c-d/cosmeticparticlecolorer) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 1 |  |
@@ -176,7 +176,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`CurveWall.CurvePoint`](/game-api/types/global-c-d/curvewall-curvepoint) | class |  | 4 |  |
 | [`CustomArgumentGameAction<T>`](/game-api/types/global-c-d/customargumentgameaction-t) | abstract class | `GameAction` | 1 | Base for a game task action that only checks one kind of task argument. |
 | [`CustomFixedJoint`](/game-api/types/global-c-d/customfixedjoint) | class | `MonoBehaviour` | 4 |  |
-| [`CustomizationPlayerController`](/game-api/types/global-c-d/customizationplayercontroller) | class | `SmoothLocomotionPlayerController` | 3 |  |
+| [`CustomizationPlayerController`](/game-api/types/global-c-d/customizationplayercontroller) | class | `SmoothLocomotionPlayerController` | 3 | The player controller used in the character customization room: always local and alive, with smooth locomotion, and it hides ghost hands while holding customization pickups. Client side. |
 | [`CustomTeleportation`](/game-api/types/global-c-d/customteleportation) | abstract class | `NetworkEntityBehaviour` | 3 |  |
 | [`CylinderImpactCollector`](/game-api/types/global-c-d/cylinderimpactcollector) | class | `ShapeImpactCollector` | 3 |  |
 | [`CylinderImpactCollector.Create`](/game-api/types/global-c-d/cylinderimpactcollector-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Shape.ScriptableObject<CylinderImpactCollector>` | 0 |  |
@@ -189,7 +189,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DamageDisplayer`](/game-api/types/global-c-d/damagedisplayer) | class |  | 3 | [Items, interaction and damage](../items/overview.md) |
 | [`DarknessArea`](/game-api/types/global-c-d/darknessarea) | class | `SpaceDefinedAttribute<SpacePoint>` | 1 |  |
 | [`DarknessChunkData`](/game-api/types/global-c-d/darknesschunkdata) | class | `ChunkEffect` | 1 |  |
-| [`DarknessReader`](/game-api/types/global-c-d/darknessreader) | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 1 |  |
+| [`DarknessReader`](/game-api/types/global-c-d/darknessreader) | class | `NetworkEntityBehaviour`, `IInitializeAsLocalPlayer` | 1 | On the player: the local client checks how dark it is around the player and asks the server to spawn darkness for them. The server spawns them through `DarknessSpawnerSettings`. |
 | [`DarknessReaderMethod`](/game-api/types/global-c-d/darknessreadermethod) | abstract class |  | 4 | Base for a way of measuring how dark it is around the local player, which can ask for darkness creatures to spawn. Only runs for the local player on a client. |
 | [`DarknessSpawnerSettings`](/game-api/types/global-c-d/darknessspawnersettings) | class | `GlobalSettings<DarknessSpawnerSettings>` | 8 | Global settings for spawning creatures in the dark around players. The local client measures screen darkness and asks the server, which spawns near the player. |
 | [`DarknessTrigger`](/game-api/types/global-c-d/darknesstrigger) | static class |  | 3 |  |
@@ -206,7 +206,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DeepLinkAnalyticsService`](/game-api/types/global-c-d/deeplinkanalyticsservice) | class | `MonoBehaviour` | 6 |  |
 | [`DeepLinkAnalyticsService.DeepLinkEventCancelReason`](/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason) | enum |  | 2 |  |
 | [`DeepLinkAnalyticsService.DeeplinkEventCancelReason`](/game-api/types/global-c-d/deeplinkanalyticsservice-deeplinkeventcancelreason-global) | enum |  | 1 |  |
-| [`DeeplinkEventFailReason`](/game-api/types/global-c-d/deeplinkeventfailreason) | enum |  | 5 |  |
+| [`DeeplinkEventFailReason`](/game-api/types/global-c-d/deeplinkeventfailreason) | enum |  | 5 | Why joining a server from a deeplink failed: server full, banned, private server, wrong version or another error. |
 | [`DeepLinkFailureController`](/game-api/types/global-c-d/deeplinkfailurecontroller) | static class |  | 1 |  |
 | [`DefaultClimbable`](/game-api/types/global-c-d/defaultclimbable) | class | `IClimbable` | 12 | The climbable used when a grabbed collider has no climbable of its own, so plain surfaces can be climbed. Held by `ClimbingSettings.DefaultClimbable`. |
 | [`DeferredBuffers`](/game-api/types/global-c-d/deferredbuffers) | enum |  | 4 |  |
@@ -239,7 +239,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DiscordController`](/game-api/types/global-c-d/discordcontroller) | class | `MonoBehaviour` | 9 |  |
 | [`DiscordLarge`](/game-api/types/global-c-d/discordlarge) | enum |  | 5 |  |
 | [`DiscordSmall`](/game-api/types/global-c-d/discordsmall) | enum |  | 1 |  |
-| [`DisplayMessageType`](/game-api/types/global-c-d/displaymessagetype) | enum |  | 4 |  |
+| [`DisplayMessageType`](/game-api/types/global-c-d/displaymessagetype) | enum |  | 4 | How a display message is queued: added to the queue, shown next, shown next replacing the current one, or shown only when the queue is empty. |
 | [`DisposablePickup`](/game-api/types/global-c-d/disposablepickup) | class | `NetworkEntityBehaviour`, `IDisposablePickup` | 3 |  |
 | [`DisposablePickupHolder`](/game-api/types/global-c-d/disposablepickupholder) | class | `MonoBehaviour`, `IDisposablePickup`, `IGetChild` | 1 |  |
 | [`DissipateToolBasedEffect`](/game-api/types/global-c-d/dissipatetoolbasedeffect) | class | `ToolBasedEffectBase` | 0 |  |
@@ -284,7 +284,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DurabilityGlobalSettings`](/game-api/types/global-c-d/durabilityglobalsettings) | class | `GlobalSettings<DurabilityGlobalSettings>` | 6 | Global settings for item durability feedback: break effects, damage popups and how hit effectiveness turns into durability loss. |
 | [`DurabilityGlobalSettings.Create`](/game-api/types/global-c-d/durabilityglobalsettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.Loot.ScriptableObject<DurabilityGlobalSettings>` | 0 |  |
 | [`DurabilityModule`](/game-api/types/global-c-d/durabilitymodule) | class | `NetworkEntityBehaviour`, `ISavable<DurabilityModuleSaveData>`, `ISavableSave<DurabilityModuleSaveData>`, +5 more | 14 | Wears a tool or weapon down with each hit, swaps its damage stage visuals and breaks it at zero. Wear is worked out on the server; clients get the stage. Get it with `pickup.DurabilityModule`. |
-| [`DurabilityModule.DurabilityVisual`](/game-api/types/global-c-d/durabilitymodule-durabilityvisual) | class | `IReferenceRenderer` | 5 |  |
+| [`DurabilityModule.DurabilityVisual`](/game-api/types/global-c-d/durabilitymodule-durabilityvisual) | class | `IReferenceRenderer` | 5 | One damage stage of a `DurabilityModule`: the renderers to show and the integrity threshold the stage starts below. |
 | [`DurabilityModuleSaveData`](/game-api/types/global-c-d/durabilitymodulesavedata) | internal class | `NewSaveData<DurabilityModule, DurabilityModuleSaveData>` | 1 |  |
 | [`DurabilitySettings`](/game-api/types/global-c-d/durabilitysettings) | class | `PopupScriptableObject` | 4 |  |
 | [`DurabilitySettings.Create`](/game-api/types/global-c-d/durabilitysettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Durability.ScriptableObject<DurabilitySettings>` | 0 |  |

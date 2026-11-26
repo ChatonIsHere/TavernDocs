@@ -27,10 +27,10 @@ Each `Player` has one. Holds that player's friend list, and on the client, wheth
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-player" /><code>{"private int player"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-player" /><code>{"private int player"}</code> | User ID of the player this manager belongs to, set in `Setup`. |
 
 </details>
 
@@ -45,11 +45,11 @@ Each `Player` has one. Holds that player's friend list, and on the client, wheth
 <details>
 <summary>3 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-friendsids" /><code>{"private HashSet<int> friendsIDs { get; }"}</code> |
-| <Link id="m-incomingrequestsids" /><code>{"private HashSet<int> incomingRequestsIDs { get; }"}</code> |
-| <Link id="m-outgoingrequestsids" /><code>{"private HashSet<int> outgoingRequestsIDs { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-friendsids" /><code>{"private HashSet<int> friendsIDs { get; }"}</code> | User IDs of this player's accepted friends, filled by `GetFriends` and status updates. |
+| <Link id="m-incomingrequestsids" /><code>{"private HashSet<int> incomingRequestsIDs { get; }"}</code> | User IDs that sent this player a friend request. |
+| <Link id="m-outgoingrequestsids" /><code>{"private HashSet<int> outgoingRequestsIDs { get; }"}</code> | User IDs this player has sent friend requests to. |
 
 </details>
 

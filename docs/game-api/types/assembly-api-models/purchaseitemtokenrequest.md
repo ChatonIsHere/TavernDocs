@@ -1,6 +1,6 @@
 ---
 title: "PurchaseItemTokenRequest"
-description: "class PurchaseItemTokenRequest in Alta.Api.DataTransferModels."
+description: "Alta web API request body for buying a shop item."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Requests`.
 
+Alta web API request body for buying a shop item.
+
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 
 ## Constructors
@@ -22,10 +24,10 @@ A **class** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Model
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> |
-| <Link id="m-oculuscredentials" /><code><Link to="/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-itemidentifier" /><code>{"int ItemIdentifier { get; set; }"}</code> | Id of the item to buy (`item_id`). |
+| <Link id="m-oculuscredentials" /><code><Link to="/game-api/types/assembly-api-models/accountrequestbase">{"AccountRequestBase"}</Link>{" OculusCredentials { get; set; }"}</code> | Oculus credentials for buying through the Oculus store (`oculus_credentials`). |
 
 ## Used in
 

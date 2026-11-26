@@ -1,6 +1,6 @@
 ---
 title: "LoginCredentialsChangedHandler"
-description: "delegate LoginCredentialsChangedHandler in Alta.Api.Client."
+description: "Callback for CredentialsChanged, given the old and the new login credentials."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LoginCredentialsChangedHandler
 
 A **delegate** in `Alta.Api.Client`, `Alta.Api.Client.LowLevel`.
+
+Callback for `CredentialsChanged`, given the old and the new login credentials.
 
 - **Listed in** [Alta.Api.Client](/game-api/types/assembly-api-client)
 - **Inherits or implements** `MulticastDelegate`

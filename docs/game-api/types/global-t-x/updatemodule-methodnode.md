@@ -1,6 +1,6 @@
 ---
 title: "UpdateModule.MethodNode"
-description: "class UpdateModule.MethodNode in Root.Township."
+description: "One registered update method in an UpdateModule's linked list."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # UpdateModule.MethodNode
 
 A **protected class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+One registered update method in an `UpdateModule`'s linked list. `RegisterMethod` hands it back as an `IUnityUpdateMethod` handle.
 
 - **Listed in** [No namespace: T to X](/game-api/types/global-t-x)
 - **Nested in** [`UpdateModule`](/game-api/types/global-t-x/updatemodule)
@@ -24,24 +26,24 @@ A **protected class** in `Root.Township`, no namespace. Reach it through att-stu
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-method" /><code>{"Action Method"}</code> |
-| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module"}</code> |
-| <Link id="m-next" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Next"}</code> |
-| <Link id="m-previous" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Previous"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-method" /><code>{"Action Method"}</code> | The method called each update. |
+| <Link id="m-module" /><code><Link to="/game-api/types/global-t-x/updatemodule">{"UpdateModule"}</Link>{" Module"}</code> | The update module this node is registered with. |
+| <Link id="m-next" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Next"}</code> | Next node in the module's list. |
+| <Link id="m-previous" /><code><Link to="/game-api/types/global-t-x/updatemodule-methodnode">{"UpdateModule.MethodNode"}</Link>{" Previous"}</code> | Previous node in the module's list. |
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isrunning" /><code>{"bool IsRunning { get; private set; }"}</code> | True until the node is deregistered. `DeregisterMethod` only unlinks running nodes. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-reset" /><code>{"void Reset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-reset" /><code>{"void Reset()"}</code> | Clears the links and method and marks the node as not running. Called on deregister. |
 
 ## Used in
 

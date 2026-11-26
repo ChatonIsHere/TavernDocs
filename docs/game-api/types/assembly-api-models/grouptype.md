@@ -1,6 +1,6 @@
 ---
 title: "GroupType"
-description: "enum GroupType in Alta.Api.DataTransferModels."
+description: "Group join type: Open, Public or Private."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GroupType
 
 An **enum** in `Alta.Api.DataTransferModels`, `Alta.Api.DataTransferModels.Models.Responses`.
+
+Group join type: Open, Public or Private. Group discovery lists the public and open ones.
 
 - **Listed in** [Alta.Api.DataTransferModels](/game-api/types/assembly-api-models)
 

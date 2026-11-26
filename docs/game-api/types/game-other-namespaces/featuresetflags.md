@@ -1,6 +1,6 @@
 ---
 title: "FeatureSetFlags"
-description: "enum FeatureSetFlags in Root.Township."
+description: "Flags for which platform feature set a server runs: PC, mobile or both."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FeatureSetFlags
 
 An **enum** in `Root.Township`, `ATT.TownshipServer`.
+
+Flags for which platform feature set a server runs: PC, mobile or both. Chosen by `ServerFeatureSetProvider`.
 
 - **Listed in** [ATT, Features and other game namespaces](/game-api/types/game-other-namespaces)
 - **Attributes** `Flags`

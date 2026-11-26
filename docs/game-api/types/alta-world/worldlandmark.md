@@ -29,16 +29,16 @@ An asset for a large landmark prefab that's loaded through Addressables while ce
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> |
-| <Link id="m-load" /><code>{"private AsyncOperationHandle<GameObject> load"}</code> |
-| <Link id="m-loadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] loadedChunks"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-prefab" /><code>{"private AssetReference prefab"}</code> |
-| <Link id="m-sceneloadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneLoadedChunks"}</code> |
-| <Link id="m-scenestaticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneStaticChunks"}</code> |
-| <Link id="m-staticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] staticChunks"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isloaded" /><code>{"private bool isLoaded"}</code> | Whether the landmark is meant to be loaded; set as soon as `Load` starts. Backing field for `IsLoaded`. |
+| <Link id="m-load" /><code>{"private AsyncOperationHandle<GameObject> load"}</code> | The addressables load operation for the prefab. |
+| <Link id="m-loadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] loadedChunks"}</code> | References to chunks that keep the landmark loaded while any of them is loaded. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Class logger. |
+| <Link id="m-prefab" /><code>{"private AssetReference prefab"}</code> | Addressable prefab spawned when the landmark loads. Backing field for `Prefab`. |
+| <Link id="m-sceneloadedchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneLoadedChunks"}</code> | Resolved chunks from `loadedChunks`. Backing field for `LoadedChunks`. |
+| <Link id="m-scenestaticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"[] sceneStaticChunks"}</code> | Resolved chunks from `staticChunks`. Backing field for `StaticChunks`. |
+| <Link id="m-staticchunks" /><code>{"private "}<Link to="/game-api/types/alta-world/chunkreference">{"ChunkReference"}</Link>{"[] staticChunks"}</code> | References to static chunks linked to the landmark. |
 
 </details>
 
@@ -69,9 +69,9 @@ An asset for a large landmark prefab that's loaded through Addressables while ce
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-loadcomplete" /><code>{"private void LoadComplete(AsyncOperationHandle<GameObject> spawned)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loadcomplete" /><code>{"private void LoadComplete(AsyncOperationHandle<GameObject> spawned)"}</code> | Addressables callback: finishes `LoadingTask` and spawns the prefab, or releases it if the landmark was unloaded meanwhile. |
 
 </details>
 
