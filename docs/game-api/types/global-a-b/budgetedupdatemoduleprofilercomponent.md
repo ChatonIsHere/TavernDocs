@@ -1,6 +1,6 @@
 ---
 title: "BudgetedUpdateModuleProfilerComponent"
-description: "class BudgetedUpdateModuleProfilerComponent in Root.Township."
+description: "Debug component that turns budgeted update module timing on or off from the inspector and lists each module's average time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BudgetedUpdateModuleProfilerComponent
 
 A **class** in `Root.Township`, no namespace.
+
+Debug component that turns budgeted update module timing on or off from the inspector and lists each module's average time.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-allbudgetedmodules" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> allBudgetedModules"}</code> |
-| <Link id="m-istrackingallowance" /><code>{"private bool isTrackingAllowance"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-allbudgetedmodules" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/budgetedupdatemoduleprofiler-budgeteddata">{"BudgetedUpdateModuleProfiler.BudgetedData"}</Link>{"> allBudgetedModules"}</code> | Module data shown in the inspector. |
+| <Link id="m-istrackingallowance" /><code>{"private bool isTrackingAllowance"}</code> | Inspector toggle for tracking. |
 
 </details>
 
@@ -38,11 +40,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> |
-| <Link id="m-starttrackingallowance" /><code>{"private void StartTrackingAllowance()"}</code> |
-| <Link id="m-stoptrackingallowance" /><code>{"private void StopTrackingAllowance()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onvalidate" /><code>{"private void OnValidate()"}</code> | Starts or stops tracking when the inspector toggle changes. |
+| <Link id="m-starttrackingallowance" /><code>{"private void StartTrackingAllowance()"}</code> | Turns on `BudgetedUpdateModule.IsDebuggingAllowance` and clears old data. |
+| <Link id="m-stoptrackingallowance" /><code>{"private void StopTrackingAllowance()"}</code> | Turns off allowance debugging and clears the data. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Refreshes the shown list when modules are added and updates each average. |
 
 </details>

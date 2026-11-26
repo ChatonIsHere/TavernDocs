@@ -14,12 +14,12 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`EatAmountTask`](/game-api/types/global-e-h/eatamounttask) | class | `TransferAmountTask` | 1 |  |
+| [`EatAmountTask`](/game-api/types/global-e-h/eatamounttask) | class | `TransferAmountTask` | 1 | Transfer amount game task on the Eat Amount channel, probably counting how much a player eats. |
 | [`Eater`](/game-api/types/global-e-h/eater) | class | `MonoBehaviour` | 0 | Mouth trigger on a player: starts eating an `EdibleObject` that enters it and stops shortly after it leaves. |
 | [`EatingAmountArgument`](/game-api/types/global-e-h/eatingamountargument) | class | `GameTaskActionArgument` | 3 | [Other systems](../game-systems/other-systems.md): `Eater`, when a player finishes eating (on whichever side ran the bite) |
-| [`EcholocationEffect`](/game-api/types/global-e-h/echolocationeffect) | class | `PooledObject` | 1 |  |
-| [`EdgeCutFilter`](/game-api/types/global-e-h/edgecutfilter) | class | `SpawnModifierPoint` | 1 |  |
-| [`EdgeCutFilter.Create`](/game-api/types/global-e-h/edgecutfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<EdgeCutFilter>` | 0 |  |
+| [`EcholocationEffect`](/game-api/types/global-e-h/echolocationeffect) | class | `PooledObject` | 1 | Pooled visual effect that plays an expanding shader pulse once and returns itself to the pool. |
+| [`EdgeCutFilter`](/game-api/types/global-e-h/edgecutfilter) | class | `SpawnModifierPoint` | 1 | Forest spawn filter that removes points near the forest border using noise, giving a ragged edge. |
+| [`EdgeCutFilter.Create`](/game-api/types/global-e-h/edgecutfilter-create) | class | `AltaMenuItemBase.Assets.Create.Township.Generation.ScriptableObject<EdgeCutFilter>` | 0 | Editor menu entry for creating an `EdgeCutFilter` asset. |
 | [`EdibleEvent`](/game-api/types/global-e-h/edibleevent) | class | `AltaEvent<EdibleObject, EdibleUnityEvent>` | 0 | Serializable `AltaEvent` raised with an `EdibleObject`. |
 | [`EdibleObject`](/game-api/types/global-e-h/edibleobject) | class | `NetworkEntityBehaviour` | 4 | [Hunger, eating and drinking](../game-systems/hunger-and-eating.md#edibleobject): On every food prefab. |
 | [`EdibleObject.EatenStage`](/game-api/types/global-e-h/edibleobject-eatenstage) | class |  | 3 | Bite settings for an `EdibleObject`: how many bites, how long each takes and the effect each bite plays. |

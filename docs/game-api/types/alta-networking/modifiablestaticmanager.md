@@ -36,10 +36,10 @@ Tracks which static (baked) scene objects have been modified, such as buildings 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> |
-| <Link id="m-syncmodification" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{"> syncModification"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sync" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsync">{"MethodSync"}</Link>{" sync"}</code> | Method sync for the full map, sent to each player on connect. |
+| <Link id="m-syncmodification" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<"}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{"> syncModification"}</code> | Method sync for single changes, sent by the server to chunks. |
 
 </details>
 
@@ -64,12 +64,12 @@ Tracks which static (baked) scene objects have been modified, such as buildings 
 <details>
 <summary>5 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-reloadclean" /><code>{"private void ReloadClean()"}</code> |
-| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncmodification-2" /><code>{"private void SyncModification("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{" args)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Makes this the single `instance` and clears state on game reload; destroys duplicates. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears the modified objects map. |
+| <Link id="m-reloadclean" /><code>{"private void ReloadClean()"}</code> | Clears the modified objects map on game reload. |
+| <Link id="m-sync-2" /><code>{"private void Sync("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes the whole modified objects map, or on clients reads it and raises `ObjectChanged` for each entry. |
+| <Link id="m-syncmodification-2" /><code>{"private void SyncModification("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, "}<Link to="/game-api/types/alta-networking/modificationarguments">{"ModificationArguments"}</Link>{" args)"}</code> | Sends or receives one object's modified flag; clients apply it through `ChangeModifications`. |
 
 </details>

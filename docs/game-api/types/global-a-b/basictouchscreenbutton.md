@@ -39,12 +39,12 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-material" /><code>{"private Material material"}</code> |
-| <Link id="m-onpressed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> |
-| <Link id="m-onreleased" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> |
-| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-material" /><code>{"private Material material"}</code> | Instance of the main renderer's material, shared by all its renderers, whose `_Alpha` shows pressed or idle. |
+| <Link id="m-onpressed" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPressed"}</code> | Event behind `Pressed`, invoked by `Press`. |
+| <Link id="m-onreleased" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onReleased"}</code> | Event behind `Released`, invoked by `Release`. |
+| <Link id="m-sounds" /><code>{"private "}<Link to="/game-api/types/global-a-b/buttonsoundsettings">{"ButtonSoundSettings"}</Link>{" sounds"}</code> | Optional press and release sounds, hooked up in `Awake`. |
 
 </details>
 
@@ -78,8 +78,8 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Editor: draws the button's touch area as a wire rectangle. |
 
 </details>

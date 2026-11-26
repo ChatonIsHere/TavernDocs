@@ -1,6 +1,6 @@
 ---
 title: "CreateGroupInfoPanel"
-description: "class CreateGroupInfoPanel in Root.Township."
+description: "Keeps an info object visible only while at least one of a set of panels is active."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CreateGroupInfoPanel
 
 A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
+
+Keeps an info object visible only while at least one of a set of panels is active.
 
 - **Listed in** [Menus, UI and platforms](/game-api/types/alta-menus)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-showwhenactive" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{"[] showWhenActive"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-showwhenactive" /><code>{"private "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{"[] showWhenActive"}</code> | The panels that make this object visible. |
 
 </details>
 
@@ -37,9 +39,9 @@ A **class** in `Root.Township`, `Alta.Meta.UI.ServerManagement`.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-handlestatechange" /><code>{"private void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" obj)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Listens to each panel's state changes and sets visibility once. |
+| <Link id="m-handlestatechange" /><code>{"private void HandleStateChange("}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" obj)"}</code> | Shows this object if any panel in `showWhenActive` is active, hides it otherwise. |
 
 </details>

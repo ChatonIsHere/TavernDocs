@@ -35,16 +35,16 @@ Progression skill where a tool hit also damages everything around the hit point,
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-collectionlayers" /><code>{"private LayerMask collectionLayers"}</code> |
-| <Link id="m-collectionoverlevels" /><code>{"private "}<Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{"[] collectionOverLevels"}</code> |
-| <Link id="m-damageoverradius" /><code>{"private AnimationCurve damageOverRadius"}</code> |
-| <Link id="m-dealsdamagetokinematicobjects" /><code>{"private bool dealsDamageToKinematicObjects"}</code> |
-| <Link id="m-hitdamagemultiplier" /><code>{"private float hitDamageMultiplier"}</code> |
-| <Link id="m-hitobjecteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitObjectEffect"}</code> |
-| <Link id="m-hitobjectpositions" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/areaattackskill-hitinformation">{"AreaAttackSkill.HitInformation"}</Link>{"> hitObjectPositions"}</code> |
-| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-collectionlayers" /><code>{"private LayerMask collectionLayers"}</code> | Physics layers searched for colliders around the hit. |
+| <Link id="m-collectionoverlevels" /><code>{"private "}<Link to="/game-api/types/global-s/shapeimpactcollector">{"ShapeImpactCollector"}</Link>{"[] collectionOverLevels"}</code> | Collection shape per skill level; the player's level picks the entry (capped at the last one). |
+| <Link id="m-damageoverradius" /><code>{"private AnimationCurve damageOverRadius"}</code> | Maps squared distance over squared shape size (0 to 1) to the hit effectiveness used for each target. |
+| <Link id="m-dealsdamagetokinematicobjects" /><code>{"private bool dealsDamageToKinematicObjects"}</code> | If false, colliders on kinematic rigidbodies are skipped. |
+| <Link id="m-hitdamagemultiplier" /><code>{"private float hitDamageMultiplier"}</code> | Serialized multiplier that nothing in this class reads. |
+| <Link id="m-hitobjecteffect" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" hitObjectEffect"}</code> | Effect invoked on clients at each hit position when the skill's consumed state is read from the network. |
+| <Link id="m-hitobjectpositions" /><code>{"private List<"}<Link to="/game-api/types/global-a-b/areaattackskill-hitinformation">{"AreaAttackSkill.HitInformation"}</Link>{"> hitObjectPositions"}</code> | Positions and chunks of the objects hit by the last `DealDamage`, sent to clients in `SerializeInternal` (up to 31). |
+| <Link id="m-targetchannels" /><code>{"private "}<Link to="/game-api/types/alta-items/impactchannel">{"ImpactChannel"}</Link>{"[] targetChannels"}</code> | Impact channels a target must have to be damaged, also checked on the main hit. |
 
 </details>
 

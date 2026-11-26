@@ -1,6 +1,6 @@
 ---
 title: "LogicBoolReceiverData"
-description: "class LogicBoolReceiverData in Root.Township."
+description: "Save data for a LogicBoolReceiver."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LogicBoolReceiverData
 
 A **class** in `Root.Township`, `Alta.Logic`.
+
+Save data for a `LogicBoolReceiver`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NewSaveData<LogicBoolReceiver, LogicBoolReceiverData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, `Alta.Logic`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{" Data { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-items/logicboolsavedata">{"LogicBoolSaveData"}</Link>{" Data { get; set; }"}</code> | The saved logic bool (identifier and value). |

@@ -1,6 +1,6 @@
 ---
 title: "DarknessTrigger"
-description: "static class DarknessTrigger in Root.Township."
+description: "Global darkness flag for the local client."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Global darkness flag for the local client. Requests are batched to the next delayed call so only the final state per frame raises `OnChanged`; `DarknessReader` listens to it.
+
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 
 ## Fields
@@ -19,36 +21,36 @@ A **static class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> |
-| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdarktarget" /><code>{"private static bool isDarkTarget"}</code> | Last requested state. |
+| <Link id="m-isupdating" /><code>{"private static bool isUpdating"}</code> | True while an update is queued. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdark" /><code>{"static bool IsDark { get; private set; }"}</code> | Whether the player is currently in a dark area. |
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onchanged" /><code>{"static event Action<bool> OnChanged"}</code> | Raised with the new value when `IsDark` changes. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setisdark" /><code>{"static void SetIsDark(bool isDark)"}</code> | Requests a new darkness state, applied on a delayed call. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updatedark" /><code>{"private static void UpdateDark()"}</code> | Applies the requested state and raises `OnChanged` if it changed. |
 
 </details>

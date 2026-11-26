@@ -26,17 +26,17 @@ Base of `NetworkPrefab` and `NetworkScene`. Holds the list of child network enti
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-embeddedentities" /><code>{"protected List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedEntities"}</code> |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-embeddedentities" /><code>{"protected List<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> embeddedEntities"}</code> | The child network entities embedded in this one, indexed by their embedded id. Backs `Embedded`. |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | NLog logger for this class. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-nextsceneentityid" /><code>{"private int nextSceneEntityId"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nextsceneentityid" /><code>{"private int nextSceneEntityId"}</code> | Counter behind `NextEmbeddedEntityId`. |
 
 </details>
 
@@ -50,9 +50,9 @@ Base of `NetworkPrefab` and `NetworkScene`. Holds the list of child network enti
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-nextembeddedentityid" /><code>{"private int NextEmbeddedEntityId { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-nextembeddedentityid" /><code>{"private int NextEmbeddedEntityId { get; }"}</code> | Returns the next embedded id and increments it. Not called anywhere. |
 
 </details>
 

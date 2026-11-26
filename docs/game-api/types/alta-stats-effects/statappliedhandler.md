@@ -1,6 +1,6 @@
 ---
 title: "StatAppliedHandler"
-description: "delegate StatAppliedHandler in Root.Township."
+description: "Callback for a stat being applied to a stat manager."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatAppliedHandler
 
 A **delegate** in `Root.Township`, `Alta.StatSystem`.
+
+Callback for a stat being applied to a stat manager.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** `MulticastDelegate`

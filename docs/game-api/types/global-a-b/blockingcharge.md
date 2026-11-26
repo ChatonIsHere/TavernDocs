@@ -1,6 +1,6 @@
 ---
 title: "BlockingCharge"
-description: "class BlockingCharge in Root.Township."
+description: "Profession skill: blocking a hit with a valid item at good enough effectiveness adds a charge to the strike succession input of a linked skill."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BlockingCharge
 
 A **class** in `Root.Township`, no namespace.
+
+Profession skill: blocking a hit with a valid item at good enough effectiveness adds a charge to the strike succession input of a linked skill. Called by `ImpactTool` on the server for players who unlocked it.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`ProfessionSkill<BlockingCharge>`](/game-api/types/global-p/professionskill-t), [`IStrikeSuccessionModifier`](/game-api/types/global-i-l/istrikesuccessionmodifier)
@@ -28,11 +30,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> |
-| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> |
-| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-minimumeffectiveness" /><code>{"private float minimumEffectiveness"}</code> | Lowest hit effectiveness that counts (0.2 by default). |
+| <Link id="m-modifiedskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" modifiedSkill"}</code> | The pickup skill whose `StrikeSuccessionInput` gets the charge. |
+| <Link id="m-validitems" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{"[] validItems"}</code> | Items that count as blocking with. |
 
 </details>
 
@@ -41,14 +43,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-istrikesuccessionmodifier-targetskill" /><code>{"private "}<Link to="/game-api/types/global-p/pickupbasedskill">{"PickupBasedSkill"}</Link>{" IStrikeSuccessionModifier.TargetSkill { get; }"}</code> | The skill whose strike succession this charges (`modifiedSkill`). |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-applycharge" /><code>{"void ApplyCharge("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" hitPickup, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" bestHit)"}</code> | If the hit is effective enough and the hit pickup is a valid item, adds a strike to the linked skill's input on each held item, and runs this skill if any counted. |

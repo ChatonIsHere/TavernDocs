@@ -29,12 +29,12 @@ An asset that reads and writes one named property of `GameSettings` or `ServerSe
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fieldname" /><code>{"private string fieldName"}</code> |
-| <Link id="m-isserversetting" /><code>{"private bool isServerSetting"}</code> |
-| <Link id="m-property" /><code>{"private PropertyInfo property"}</code> |
-| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fieldname" /><code>{"private string fieldName"}</code> | Name of the public property on `GameSettings` or `ServerSettings` to read and write. |
+| <Link id="m-isserversetting" /><code>{"private bool isServerSetting"}</code> | If true the property is looked up on `ServerSettings`, otherwise on `GameSettings`. |
+| <Link id="m-property" /><code>{"private PropertyInfo property"}</code> | Cached reflected property. Backing field for `Property`. |
+| <Link id="m-settingdescription" /><code>{"private string settingDescription"}</code> | Description text for the setting. Backing field for `SettingDescription`. |
 
 </details>
 

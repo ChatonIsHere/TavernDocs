@@ -26,17 +26,17 @@ A named list of network traffic statistics with per-frame and per-second byte to
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-statistics" /><code>{"protected List<T> statistics"}</code> | The serialized list of statistics. May hold null gaps added by `EnsureStatisticsListCapacity`. |
 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> |
-| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-averagebytesperframealltime" /><code>{"private float averageBytesPerFrameAllTime"}</code> | Total bytes over total message count across the list, set by `UpdateTotalBytesPerFrame`. |
+| <Link id="m-totalbytesperlastsecond" /><code>{"private float totalBytesPerLastSecond"}</code> | Sum of every statistic's last-second bytes, set by `UpdateTotalBytesPerLastSecond`. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "NetworkMessagesDisplay"
-description: "class NetworkMessagesDisplay in Root.Township."
+description: "Placeholder debug readout for network messages per second."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkMessagesDisplay
 
 A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
+
+Placeholder debug readout for network messages per second. `IsValid` always returns false and the update is empty, so it never shows.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase)
@@ -26,23 +28,23 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-lastmessages" /><code>{"private int lastMessages"}</code> |
-| <Link id="m-messagesperinterval" /><code>{"private float messagesPerInterval"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-lastmessages" /><code>{"private int lastMessages"}</code> | Previous total count. Never set in this build. |
+| <Link id="m-messagesperinterval" /><code>{"private float messagesPerInterval"}</code> | Count per interval. Never set in this build. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `Messages (p/s)`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-internalupdate" /><code>{"override void InternalUpdate("}<Link to="/game-api/types/alta-utilities/livedatadisplayview">{"LiveDataDisplayView"}</Link>{" view)"}</code> | Empty in this build. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Always false. |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | The stored per-interval count as text. |

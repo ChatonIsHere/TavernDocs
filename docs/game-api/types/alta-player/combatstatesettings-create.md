@@ -1,6 +1,6 @@
 ---
 title: "CombatStateSettings.Create"
-description: "class CombatStateSettings.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Player that makes a new CombatStateSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CombatStateSettings.Create
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Editor menu item under Assets/Create/Township/Features/Player that makes a new `CombatStateSettings` asset.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`CombatStateSettings`](/game-api/types/alta-player/combatstatesettings)

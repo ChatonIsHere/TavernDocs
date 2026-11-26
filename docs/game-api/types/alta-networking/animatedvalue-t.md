@@ -33,11 +33,11 @@ Base for one synced animator parameter (bool, float, trigger) on a `NetworkAnima
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> |
-| <Link id="m-index" /><code>{"private int index"}</code> |
-| <Link id="m-name" /><code>{"private string name"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkanimator">{"NetworkAnimator"}</Link>{" animator"}</code> | The `NetworkAnimator` that owns this value. |
+| <Link id="m-index" /><code>{"private int index"}</code> | This value's position in the animator's list of values. |
+| <Link id="m-name" /><code>{"private string name"}</code> | The animator parameter name. |
 
 </details>
 

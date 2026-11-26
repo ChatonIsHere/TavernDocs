@@ -33,10 +33,10 @@ Bow skill that boosts the damage of the next arrow shot from a bow while the ski
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bowstrings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{", "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{"> bowStrings"}</code> |
-| <Link id="m-inputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputs"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bowstrings" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{", "}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{"> bowStrings"}</code> | Bow string for each registered skill input. |
+| <Link id="m-inputs" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{", "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{"> inputs"}</code> | Skill input for each bow string, the reverse of `bowStrings`. |
 
 </details>
 
@@ -54,8 +54,8 @@ Bow skill that boosts the damage of the next arrow shot from a bow while the ski
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-onarrowshot" /><code>{"private void OnArrowShot("}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shotEntity, Vector3 shotVelocity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onarrowshot" /><code>{"private void OnArrowShot("}<Link to="/game-api/types/global-a-b/bowstring">{"BowString"}</Link>{" bowString, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shotEntity, Vector3 shotVelocity)"}</code> | Called when a registered bow string shoots: sets the shot's one-off damage multiplier for the player's level, sends consumed and resets the input. |
 
 </details>

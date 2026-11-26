@@ -1,6 +1,6 @@
 ---
 title: "Facing3DSense.Create"
-description: "class Facing3DSense.Create in Root.Township."
+description: "Editor menu item for making a Facing3DSense asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Facing3DSense.Create
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Editor menu item for making a `Facing3DSense` asset. Does nothing at runtime.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`Facing3DSense`](/game-api/types/alta-intelligence/facing3dsense)

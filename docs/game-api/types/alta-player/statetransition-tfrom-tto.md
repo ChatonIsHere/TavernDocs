@@ -33,10 +33,10 @@ Base for a rule that moves a player from one player state to another. Subclasses
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"private bool isActive"}</code> |
-| <Link id="m-sourcestate" /><code>{"private "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" sourceState"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"private bool isActive"}</code> | Backing field for `IsActive`. |
+| <Link id="m-sourcestate" /><code>{"private "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" sourceState"}</code> | Backing field for `SourceState`. |
 
 </details>
 
@@ -54,10 +54,10 @@ Base for a rule that moves a player from one player state to another. Subclasses
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-isactive" /><code>{"private bool Alta.PlayerStates.Transitions.IPlayerStateTransition.IsActive { get; set; }"}</code> |
-| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-sourcestate" /><code>{"private "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Alta.PlayerStates.Transitions.IPlayerStateTransition.SourceState { set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-isactive" /><code>{"private bool Alta.PlayerStates.Transitions.IPlayerStateTransition.IsActive { get; set; }"}</code> | Turning it on calls `AddListeners`, off calls `RemoveListeners`. Setting the same value again only logs a warning. |
+| <Link id="m-alta-playerstates-transitions-iplayerstatetransition-sourcestate" /><code>{"private "}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" Alta.PlayerStates.Transitions.IPlayerStateTransition.SourceState { set; }"}</code> | Sets the source state and picks up its state manager, player and player controller (waiting for the controller if it isn't set yet). |
 
 </details>
 
@@ -74,10 +74,10 @@ Base for a rule that moves a player from one player state to another. Subclasses
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-clear" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.Clear()"}</code> |
-| <Link id="m-transitiontodestinationstateexternal" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.TransitionToDestinationStateExternal()"}</code> |
-| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-clear" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.Clear()"}</code> | Clears the source state. |
+| <Link id="m-transitiontodestinationstateexternal" /><code>{"private void Alta.PlayerStates.Transitions.IPlayerStateTransition.TransitionToDestinationStateExternal()"}</code> | Runs the transition from outside; used by the transitions manager's `TriggerTransition`. |
+| <Link id="m-updateplayercontroller" /><code>{"private void UpdatePlayerController("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerController)"}</code> | Picks up the player controller once the player gets one, then unhooks. |
 
 </details>

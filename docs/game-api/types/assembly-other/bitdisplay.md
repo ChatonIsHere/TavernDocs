@@ -1,6 +1,6 @@
 ---
 title: "BitDisplay"
-description: "static class BitDisplay in Alta.Serialization.Runtime."
+description: "Debug helper that turns integers into binary strings."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Alta.Serialization.Runtime`, `Alta.Serialization`.
 
+Debug helper that turns integers into binary strings.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> |
-| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tobits" /><code>{"static string ToBits(ulong value)"}</code> | Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8. |
+| <Link id="m-tobits-2" /><code>{"static string ToBits(uint value)"}</code> | Returns the value's bits as 0s and 1s, most significant first, with a space before each group of 8. |

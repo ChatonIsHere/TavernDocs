@@ -1,6 +1,6 @@
 ---
 title: "CopyToRenderTexture"
-description: "class CopyToRenderTexture in Root.Township."
+description: "On a camera, also copies its image into a render texture when it isn't already rendering to one."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CopyToRenderTexture
 
 A **class** in `Root.Township`, no namespace.
+
+On a camera, also copies its image into a render texture when it isn't already rendering to one.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,10 +29,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-camera" /><code>{"private Camera camera"}</code> |
-| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-camera" /><code>{"private Camera camera"}</code> | The camera on this object. |
+| <Link id="m-rendertexture" /><code>{"private RenderTexture renderTexture"}</code> | Texture the image is copied into. |
 
 </details>
 
@@ -39,9 +41,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Gets the camera. |
+| <Link id="m-onrenderimage" /><code>{"private void OnRenderImage(RenderTexture src, RenderTexture dest)"}</code> | Copies the frame to `renderTexture` if the camera has no target texture, then passes it on. |
 
 </details>

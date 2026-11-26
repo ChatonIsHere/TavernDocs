@@ -1,6 +1,6 @@
 ---
 title: "EcholocationEffect"
-description: "class EcholocationEffect in Root.Township."
+description: "Pooled visual effect that plays an expanding shader pulse once and returns itself to the pool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EcholocationEffect
 
 A **class** in `Root.Township`, no namespace.
+
+Pooled visual effect that plays an expanding shader pulse once and returns itself to the pool.
 
 - **Listed in** [No namespace: E to H](/game-api/types/global-e-h)
 - **Inherits or implements** [`PooledObject`](/game-api/types/global-p/pooledobject)
@@ -27,28 +29,28 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hasunderside" /><code>{"private static readonly int _HasUnderside"}</code> |
-| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> |
-| <Link id="m-effectrenderer" /><code>{"private Renderer effectRenderer"}</code> |
-| <Link id="m-material" /><code>{"private Material material"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasunderside" /><code>{"private static readonly int _HasUnderside"}</code> | Shader property ID for `_HasUnderside`. |
+| <Link id="m-progress" /><code>{"private static readonly int _Progress"}</code> | Shader property ID for `_Progress`. |
+| <Link id="m-effectrenderer" /><code>{"private Renderer effectRenderer"}</code> | Renderer that shows the pulse. |
+| <Link id="m-material" /><code>{"private Material material"}</code> | Material copy being animated. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-setup" /><code>{"void Setup(Vector3 scale, float duration, AnimationCurve curve, bool hasUnderside)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setup" /><code>{"void Setup(Vector3 scale, float duration, AnimationCurve curve, bool hasUnderside)"}</code> | Sets the scale and underside flag and starts the animation. |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-animate" /><code>{"private IEnumerator Animate(float duration, AnimationCurve curve) (iterator)"}</code> |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animate" /><code>{"private IEnumerator Animate(float duration, AnimationCurve curve) (iterator)"}</code> | Coroutine that drives `_Progress` along the curve over the duration, then releases. |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Takes a tracked copy of the renderer's material. |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Draws the renderer bounds in the editor. |
 
 </details>

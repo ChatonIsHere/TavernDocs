@@ -1,6 +1,6 @@
 ---
 title: "ChunkSetEventHandler"
-description: "delegate ChunkSetEventHandler in Root.Township."
+description: "Delegate for an event that passes a Chunk."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkSetEventHandler
 
 A **delegate** in `Root.Township`, no namespace.
+
+Delegate for an event that passes a `Chunk`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MulticastDelegate`

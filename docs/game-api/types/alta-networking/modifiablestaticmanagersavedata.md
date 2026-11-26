@@ -1,6 +1,6 @@
 ---
 title: "ModifiableStaticManagerSaveData"
-description: "class ModifiableStaticManagerSaveData in Root.Township."
+description: "Save data for ModifiableStaticManager: which static objects (by hash) are modified."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ModifiableStaticManagerSaveData
 
 A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for `ModifiableStaticManager`: which static objects (by hash) are modified.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NewSaveData<ModifiableStaticManager, ModifiableStaticManagerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -26,6 +28,6 @@ A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-items" /><code><Link to="/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-items" /><code><Link to="/game-api/types/alta-networking/modifiablestaticmanagersavedata-item">{"ModifiableStaticManagerSaveData.Item"}</Link>{"[] items"}</code> | Each object's hash and modified state. |

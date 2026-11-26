@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Features.Decay"
-description: "abstract class AltaMenuItemBase.Assets.Create.Township.Features.Decay in Alta.MenuItem."
+description: "Menu path node for Assets/Create/Township/Features/Decay."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Township.Features.Decay
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Menu path node for Assets/Create/Township/Features/Decay.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Township.Features`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features)

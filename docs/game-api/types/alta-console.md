@@ -157,29 +157,29 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`CommandLineArgsLogger`](/game-api/types/alta-console/commandlineargslogger) | class | `MonoBehaviour` | 0 |  |
+| [`CommandLineArgsLogger`](/game-api/types/alta-console/commandlineargslogger) | class | `MonoBehaviour` | 0 | Logs the command line arguments at startup, to both the Unity log and NLog. |
 
 ## Alta.Logging.Targets
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ConsoleCommandsLogTarget`](/game-api/types/alta-console/consolecommandslogtarget) | class | `TargetWithLayout` | 2 |  |
-| [`FullStackTraceRenderer`](/game-api/types/alta-console/fullstacktracerenderer) | class | `LayoutRenderer`, `IUsesStackTrace` | 1 |  |
+| [`ConsoleCommandsLogTarget`](/game-api/types/alta-console/consolecommandslogtarget) | class | `TargetWithLayout` | 2 | NLog target `ConsoleCommandsTarget` that raises static events for each log line. Remote console connections listen to it to send logs to their client. |
+| [`FullStackTraceRenderer`](/game-api/types/alta-console/fullstacktracerenderer) | class | `LayoutRenderer`, `IUsesStackTrace` | 1 | NLog layout renderer `${fullstacktrace}`: the full stack trace with file and line for each frame. |
 | [`LogHandler`](/game-api/types/alta-console/loghandler) | delegate |  | 0 | Event handler for a formatted log line and its level. Used by `ServerConsoleLogTarget.LogSent` and `ConsoleCommandsLogTarget.LogSent`. |
 | [`MainMenuTarget`](/game-api/types/alta-console/mainmenutarget) | class | `TargetWithLayout` | 0 | [Logging](../console-and-utilities/logging.md) |
-| [`NetworkEntityChunkRenderer`](/game-api/types/alta-console/networkentitychunkrenderer) | class | `NetworkEntityRenderer` | 0 |  |
-| [`NetworkEntityIdentifierRenderer`](/game-api/types/alta-console/networkentityidentifierrenderer) | class | `NetworkEntityRenderer` | 0 |  |
-| [`NetworkEntityOwnedRenderer`](/game-api/types/alta-console/networkentityownedrenderer) | class | `NetworkEntityRenderer` | 0 |  |
-| [`NetworkEntityParentRenderer`](/game-api/types/alta-console/networkentityparentrenderer) | class | `NetworkEntityRenderer` | 0 |  |
-| [`NetworkEntityPrefabRenderer`](/game-api/types/alta-console/networkentityprefabrenderer) | class | `NetworkEntityRenderer` | 0 |  |
+| [`NetworkEntityChunkRenderer`](/game-api/types/alta-console/networkentitychunkrenderer) | class | `NetworkEntityRenderer` | 0 | NLog layout renderer `${entity-chunk}`: the chunk of a `NetworkEntity` passed as the first log parameter, or `n/a`. |
+| [`NetworkEntityIdentifierRenderer`](/game-api/types/alta-console/networkentityidentifierrenderer) | class | `NetworkEntityRenderer` | 0 | NLog layout renderer `${entity-id}`: the identifier of a `NetworkEntity` passed as the first log parameter, or `n/a`. |
+| [`NetworkEntityOwnedRenderer`](/game-api/types/alta-console/networkentityownedrenderer) | class | `NetworkEntityRenderer` | 0 | NLog layout renderer `${entity-owned}` for a `NetworkEntity` passed as the first log parameter, or `n/a`. |
+| [`NetworkEntityParentRenderer`](/game-api/types/alta-console/networkentityparentrenderer) | class | `NetworkEntityRenderer` | 0 | NLog layout renderer `${entity-parent}`: the parent of a `NetworkEntity` passed as the first log parameter, or `n/a`. |
+| [`NetworkEntityPrefabRenderer`](/game-api/types/alta-console/networkentityprefabrenderer) | class | `NetworkEntityRenderer` | 0 | NLog layout renderer `${entity-prefab}`: the prefab of a `NetworkEntity` passed as the first log parameter, or `n/a`. |
 | [`NetworkEntityRenderer`](/game-api/types/alta-console/networkentityrenderer) | abstract class | `LayoutRenderer` | 0 | Base for NLog layout renderers that print something about a `NetworkEntity` passed as the log message's first parameter (its prefab, parent, owner, identifier or chunk). |
 | [`RawLogHandler`](/game-api/types/alta-console/rawloghandler) | delegate |  | 0 | Event handler for a raw NLog event. Used by the `LogSentRaw` events on `ServerConsoleLogTarget` and `ConsoleCommandsLogTarget`. |
-| [`ServerConsoleLogTarget`](/game-api/types/alta-console/serverconsolelogtarget) | class | `TargetWithLayout` | 2 |  |
+| [`ServerConsoleLogTarget`](/game-api/types/alta-console/serverconsolelogtarget) | class | `TargetWithLayout` | 2 | NLog target `ServerConsoleTarget` that raises static events for each log line. The console display, runtime console, console log events and client log sender listen to it. |
 | [`UnityConsoleLogTarget`](/game-api/types/alta-console/unityconsolelogtarget) | class | `TargetWithLayout` | 2 | [Logging](../console-and-utilities/logging.md) |
 
 ## Alta.QATools
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker) | class |  | 1 |  |
+| [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker) | class |  | 1 | QA helper that keeps the chunks around an entity force loaded as it moves, as if a player stood there. Made by a debugging console command through `Setup`. |
 | [`DebugLoadMarker.IChunkLoader`](/game-api/types/alta-console/debugloadmarker-ichunkloader) | interface |  | 1 | Picks which chunks a `DebugLoadMarker` keeps loaded around its entity. There is an optimised version for simple servers and a normal one. |

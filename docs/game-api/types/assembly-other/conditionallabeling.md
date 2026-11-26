@@ -1,6 +1,6 @@
 ---
 title: "ConditionalLabeling"
-description: "abstract class ConditionalLabeling in Alta.Attributes."
+description: "Base inspector attribute that labels a field one of two ways depending on a condition, with optional default values for each case."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConditionalLabeling
 
 An **abstract class** in `Alta.Attributes`, no namespace.
+
+Base inspector attribute that labels a field one of two ways depending on a condition, with optional default values for each case. Used by `BoolValueLabeling` and `HasComponentLabel`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -25,10 +27,10 @@ An **abstract class** in `Alta.Attributes`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-donthasdefault" /><code>{"float DontHasDefault { get; private set; }"}</code> |
-| <Link id="m-donthasname" /><code>{"string DontHasName { get; private set; }"}</code> |
-| <Link id="m-hasdefault" /><code>{"float HasDefault { get; private set; }"}</code> |
-| <Link id="m-hasdefaultvalues" /><code>{"bool HasDefaultValues { get; private set; }"}</code> |
-| <Link id="m-hasname" /><code>{"string HasName { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-donthasdefault" /><code>{"float DontHasDefault { get; private set; }"}</code> | Default value when the condition is false. |
+| <Link id="m-donthasname" /><code>{"string DontHasName { get; private set; }"}</code> | Label when the condition is false. |
+| <Link id="m-hasdefault" /><code>{"float HasDefault { get; private set; }"}</code> | Default value when the condition is true. |
+| <Link id="m-hasdefaultvalues" /><code>{"bool HasDefaultValues { get; private set; }"}</code> | True when the defaults were given in the constructor. |
+| <Link id="m-hasname" /><code>{"string HasName { get; private set; }"}</code> | Label when the condition is true. |

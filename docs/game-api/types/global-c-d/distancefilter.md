@@ -1,6 +1,6 @@
 ---
 title: "DistanceFilter"
-description: "abstract class DistanceFilter in Root.Township."
+description: "Base for forest spawn modifiers that scale a spawn point's weight by a curve of some distance."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DistanceFilter
 
 An **abstract class** in `Root.Township`, no namespace.
+
+Base for forest spawn modifiers that scale a spawn point's weight by a curve of some distance. Subclasses supply the distance.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`SpawnModifierPoint`](/game-api/types/global-s/spawnmodifierpoint)
@@ -27,16 +29,16 @@ An **abstract class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-distancemultiplier" /><code>{"private AnimationCurve distanceMultiplier"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-distancemultiplier" /><code>{"private AnimationCurve distanceMultiplier"}</code> | Curve from distance to weight multiplier; eases from 1 at 0 to 0 at 1 by default. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger; unused here. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |
-| <Link id="m-evaluatedistance" /><code>{"protected abstract float EvaluateDistance("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filter" /><code>{"override void Filter("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Multiplies the point's weight by `distanceMultiplier` at the distance. |
+| <Link id="m-evaluatedistance" /><code>{"protected abstract float EvaluateDistance("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Returns the distance to feed into the curve. |

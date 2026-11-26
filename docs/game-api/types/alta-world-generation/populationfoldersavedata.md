@@ -27,14 +27,14 @@ Save data (version 2) for a `PopulationFolder`: its population definition, count
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> |
-| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> |
-| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> |
-| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> |
-| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> |
-| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkpopulationtime" /><code>{"TimeSpan checkPopulationTime"}</code> | Backing field for `CheckPopulationTime`: when the population is next checked. |
+| <Link id="m-children" /><code><Link to="/game-api/types/alta-world-generation/populationsavedatachild">{"PopulationSaveDataChild"}</Link>{"[] children"}</code> | Backing field for `Children`: saved data for each spawned member. |
+| <Link id="m-currentpopulation" /><code>{"int currentPopulation"}</code> | Backing field for `CurrentPopulation`. |
+| <Link id="m-definition" /><code><Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition"}</code> | Backing field for `Definition`. |
+| <Link id="m-ispopulationstarted" /><code>{"bool isPopulationStarted"}</code> | Backing field for `IsPopulationStarted`. |
+| <Link id="m-maxpopulation" /><code>{"int maxPopulation"}</code> | Backing field for `MaximumPopulation`. |
 
 ## Properties
 

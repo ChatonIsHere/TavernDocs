@@ -1,6 +1,6 @@
 ---
 title: "BookRestrictorSaveData"
-description: "class BookRestrictorSaveData in Root.Township."
+description: "Save data (version 1) for a BookRestrictor."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BookRestrictorSaveData
 
 A **internal class** in `Root.Township`, `Alta.Pages`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data (version 1) for a `BookRestrictor`.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NewSaveData<BookRestrictor, BookRestrictorSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **internal class** in `Root.Township`, `Alta.Pages`. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-collection" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-collection" /><code><Link to="/game-api/types/alta-items/pagecollection">{"PageCollection"}</Link>{" collection"}</code> | The page collection the restrictor is set to. |

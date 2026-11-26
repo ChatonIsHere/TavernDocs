@@ -1,6 +1,6 @@
 ---
 title: "Not"
-description: "class Not in Root.Township."
+description: "Logical NOT in the unused Prolog-like logic engine, with weightings: a half-true goal gives a half-true result."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Not
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Logical NOT in the unused Prolog-like logic engine, with weightings: a half-true goal gives a half-true result.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`Predicate`](/game-api/types/alta-intelligence/predicate)
@@ -27,16 +29,16 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-right" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Right { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-right" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" Right { get; set; }"}</code> | The goal being negated. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-tostring" /><code>{"override string ToString()"}</code> |
-| <Link id="m-evaluateinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> |
-| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tostring" /><code>{"override string ToString()"}</code> | Shows the goal prefixed with `!`. |
+| <Link id="m-evaluateinternal" /><code>{"protected override IEnumerable<"}<Link to="/game-api/types/alta-intelligence/result">{"Result"}</Link>{"> EvaluateInternal("}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{" knowledgeHolder) (iterator)"}</code> | Yields each inner result with its weighting flipped to 1 minus it. Stops at a fully true result; otherwise ends with a plain true result. |
+| <Link id="m-fromcompoundpart" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" FromCompoundPart("}<Link to="/game-api/types/alta-intelligence/compoundpart">{"CompoundPart"}</Link>{" compoundPart)"}</code> | Rebuilds a `Not` from bound parts when variables are substituted. |

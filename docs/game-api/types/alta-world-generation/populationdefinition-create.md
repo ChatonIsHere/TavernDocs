@@ -1,6 +1,6 @@
 ---
 title: "PopulationDefinition.Create"
-description: "class PopulationDefinition.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Creatures that makes a new PopulationDefinition asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationDefinition.Create
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Editor menu item under Assets/Create/Township/Features/Creatures that makes a new `PopulationDefinition` asset.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`PopulationDefinition`](/game-api/types/alta-world-generation/populationdefinition)

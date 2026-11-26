@@ -1,6 +1,6 @@
 ---
 title: "TaxSaveData1"
-description: "class TaxSaveData1 in Root.Township."
+description: "Old version 1 save data for a TaxManager, with the time in float seconds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TaxSaveData1
 
 A **class** in `Root.Township`, `Alta.Trading`.
+
+Old version 1 save data for a `TaxManager`, with the time in float seconds. Migrates to `TaxSaveData`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -24,13 +26,13 @@ A **class** in `Root.Township`, `Alta.Trading`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-currenttime" /><code>{"float currentTime"}</code> |
-| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currenttime" /><code>{"float currentTime"}</code> | Saved tax timer, in seconds. |
+| <Link id="m-istaxing" /><code>{"bool isTaxing"}</code> | Whether tax was being taken. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Returns a `TaxSaveData` with the time turned into a `TimeSpan`. |

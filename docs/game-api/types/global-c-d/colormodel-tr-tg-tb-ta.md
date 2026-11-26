@@ -36,14 +36,14 @@ Base for a networked object whose mesh vertex colours are driven by values on it
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> |
-| <Link id="m-clonemesh" /><code>{"private Mesh cloneMesh"}</code> |
-| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core"}</code> |
-| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> |
-| <Link id="m-unmodifiedmaterial" /><code>{"private Material unmodifiedMaterial"}</code> |
-| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boneweights" /><code>{"private BoneWeight[] boneWeights"}</code> | Bone weights passed to the colour core. |
+| <Link id="m-clonemesh" /><code>{"private Mesh cloneMesh"}</code> | Per-instance mesh copy used while any colour is applied. Null otherwise. |
+| <Link id="m-core" /><code>{"private "}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core"}</code> | The `ColorModelCore` that works out vertex colours. Null on headless servers. |
+| <Link id="m-modifiedmaterial" /><code>{"private Material modifiedMaterial"}</code> | Material used while colours are applied. Defaults to the renderer's material. |
+| <Link id="m-unmodifiedmaterial" /><code>{"private Material unmodifiedMaterial"}</code> | Material used with no colours applied. Defaults to the renderer's material. |
+| <Link id="m-workingcolors" /><code>{"private static List<Color> workingColors"}</code> | Shared scratch list for vertex colours. |
 
 </details>
 
@@ -78,8 +78,8 @@ Base for a networked object whose mesh vertex colours are driven by values on it
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-modified" /><code>{"private void Modified("}<Link to="/game-api/types/global-c-d/colormodelcore-tr-tg-tb-ta">{"ColorModelCore"}</Link>{"<TR, TG, TB, TA> core)"}</code> | When colour points change, switches between the shared mesh and a cloned mesh with vertex colours, and swaps materials to match. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "FpsDisplay"
-description: "class FpsDisplay in Root.Township."
+description: "Live debug readout of the current frame rate."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FpsDisplay
 
 A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
+
+Live debug readout of the current frame rate.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase)
@@ -23,12 +25,12 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `FPS`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | Current `FPSCounter.FPS`. |

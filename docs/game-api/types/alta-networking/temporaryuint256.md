@@ -1,6 +1,6 @@
 ---
 title: "TemporaryUint256"
-description: "static class TemporaryUint256 in Root.Township."
+description: "A shared scratch array of 256 uints, used by spawn and sync messages to hold embedded entity ids."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,10 +12,12 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, `Alta.Networking`.
 
+A shared scratch array of 256 uints, used by spawn and sync messages to hold embedded entity ids.
+
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-array" /><code>{"static uint[] array"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-array" /><code>{"static uint[] array"}</code> | The scratch array. Its contents only last until the next message uses it. |

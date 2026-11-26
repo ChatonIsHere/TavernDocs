@@ -29,10 +29,10 @@ Base for AI action components that run for a random length of time, set in the i
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> |
-| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maximumduration" /><code>{"private float maximumDuration"}</code> | Backing field for `MaximumDuration` (default 7 seconds). |
+| <Link id="m-minimumduration" /><code>{"private float minimumDuration"}</code> | Backing field for `MinimumDuration` (default 5 seconds). |
 
 </details>
 

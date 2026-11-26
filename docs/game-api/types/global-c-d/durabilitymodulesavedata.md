@@ -1,6 +1,6 @@
 ---
 title: "DurabilityModuleSaveData"
-description: "class DurabilityModuleSaveData in Root.Township."
+description: "Save data for a DurabilityModule: its remaining integrity."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DurabilityModuleSaveData
 
 A **internal class** in `Root.Township`, no namespace. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for a `DurabilityModule`: its remaining integrity.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NewSaveData<DurabilityModule, DurabilityModuleSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **internal class** in `Root.Township`, no namespace. Reach it through att-stub
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-integrity" /><code>{"float integrity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-integrity" /><code>{"float integrity"}</code> | Integrity of the item when saved. |

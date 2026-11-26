@@ -1,6 +1,6 @@
 ---
 title: "ScriptAssignedStaticBatchingMarker"
-description: "class ScriptAssignedStaticBatchingMarker in Root.Township."
+description: "Hidden marker component that AdditionalStaticContent adds to objects it assigns for static batching."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ScriptAssignedStaticBatchingMarker
 
 A **class** in `Root.Township`, `Alta.Streaming`.
+
+Hidden marker component that `AdditionalStaticContent` adds to objects it assigns for static batching. Kept on Android clients.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MonoBehaviour`, [`IForcePresenceOnAndroidClient`](/game-api/types/alta-networking/iforcepresenceonandroidclient)

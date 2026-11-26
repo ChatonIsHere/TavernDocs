@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<T>"
-description: "abstract class AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject<T> in Alta.MenuItem."
+description: "Base for an Assets/Create/Global Settings/Field Access menu entry that creates a T asset, such as ToggleGameSettingAccess."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access.ScriptableObject&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Base for an Assets/Create/Global Settings/Field Access menu entry that creates a `T` asset, such as `ToggleGameSettingAccess`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Global_Settings.Field_Access`](/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings-field_access)

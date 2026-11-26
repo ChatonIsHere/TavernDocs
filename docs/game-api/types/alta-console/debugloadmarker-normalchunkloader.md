@@ -1,6 +1,6 @@
 ---
 title: "DebugLoadMarker.NormalChunkLoader"
-description: "class DebugLoadMarker.NormalChunkLoader in Root.Township."
+description: "Chunk loader for DebugLoadMarker that uses the current chunk's normal dynamic load strength."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DebugLoadMarker.NormalChunkLoader
 
 A **private class** in `Root.Township`, `Alta.QATools`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Chunk loader for `DebugLoadMarker` that uses the current chunk's normal dynamic load strength.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Nested in** [`DebugLoadMarker`](/game-api/types/alta-console/debugloadmarker)
@@ -27,8 +29,8 @@ A **private class** in `Root.Township`, `Alta.QATools`. Reach it through att-stu
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getchunkstoload" /><code>{"private void Alta.QATools.DebugLoadMarker.IChunkLoader.GetChunksToLoad("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" currentChunk, Vector3 position, HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> dynamicList)"}</code> | Adds the chunks reachable from the current chunk within its `DynamicLoadStrength`. |
 
 </details>

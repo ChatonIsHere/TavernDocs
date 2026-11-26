@@ -1,6 +1,6 @@
 ---
 title: "SpawnRate.Create"
-description: "class SpawnRate.Create in Root.Township."
+description: "Editor menu entry for creating a SpawnRate asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpawnRate.Create
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Editor menu entry for creating a `SpawnRate` asset.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`SpawnRate`](/game-api/types/alta-world-generation/spawnrate)

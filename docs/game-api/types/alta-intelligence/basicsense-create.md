@@ -1,6 +1,6 @@
 ---
 title: "BasicSense.Create"
-description: "class BasicSense.Create in Root.Township."
+description: "Editor menu item for making a BasicSense asset (under the Township creatures create menu)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicSense.Create
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Editor menu item for making a `BasicSense` asset (under the Township creatures create menu). Does nothing at runtime.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`BasicSense`](/game-api/types/alta-intelligence/basicsense)

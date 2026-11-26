@@ -1,6 +1,6 @@
 ---
 title: "DurabilitySettings.Create"
-description: "class DurabilitySettings.Create in Root.Township."
+description: "Editor menu entry for creating a DurabilitySettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DurabilitySettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `DurabilitySettings` asset.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`DurabilitySettings`](/game-api/types/global-c-d/durabilitysettings)

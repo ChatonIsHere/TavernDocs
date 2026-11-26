@@ -1,6 +1,6 @@
 ---
 title: "BoundExtensions"
-description: "static class BoundExtensions in Root.Township."
+description: "Extension methods for Bounds."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Extension methods for `Bounds`.
+
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Attributes** `Extension`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-volume" /><code>{"static float Volume(Bounds bounds)"}</code> | Product of the extents (half sizes), so one eighth of the real volume. Fine for comparing sizes. |

@@ -28,10 +28,10 @@ A settings "file" stored through the Alta web API's settings endpoint instead of
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-readingtask" /><code>{"private Task readingTask"}</code> |
-| <Link id="m-writingtask" /><code>{"private Task writingTask"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-readingtask" /><code>{"private Task readingTask"}</code> | The API read in progress, or null. |
+| <Link id="m-writingtask" /><code>{"private Task writingTask"}</code> | The API write in progress, or null. |
 
 </details>
 
@@ -67,9 +67,9 @@ A settings "file" stored through the Alta web API's settings endpoint instead of
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-readinternal" /><code>{"private async Task<T> ReadInternal<T>(Func<T> create)"}</code> |
-| <Link id="m-writeinternal" /><code>{"private async Task WriteInternal()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-readinternal" /><code>{"private async Task<T> ReadInternal<T>(Func<T> create)"}</code> | Fetches the settings text by name from the web API settings client and parses it into a new content object. |
+| <Link id="m-writeinternal" /><code>{"private async Task WriteInternal()"}</code> | Serialises the content to text and sends it to the web API settings client under this name. |
 
 </details>

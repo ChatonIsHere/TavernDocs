@@ -1,6 +1,6 @@
 ---
 title: "S3CloudStorageRemoteFile"
-description: "class S3CloudStorageRemoteFile in Alta.IO."
+description: "Remote-backed save file stored as an S3 object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # S3CloudStorageRemoteFile
 
 A **class** in `Alta.IO`, `Alta.Utilities`.
+
+Remote-backed save file stored as an S3 object. Used when the server starts with `/remote_saves s3 bucket:path`.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`RemoteFiles.RemoteAltaFile<S3StorageFile>`](/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype)
@@ -23,7 +25,7 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> |
-| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-backuptoremoteinternal" /><code>{"protected override Task BackupToRemoteInternal()"}</code> | Uploads the local file to the S3 object on a background task. |
+| <Link id="m-copyfromremoteinternal" /><code>{"protected override Task CopyFromRemoteInternal()"}</code> | Downloads the S3 object over the local file on a background task. |

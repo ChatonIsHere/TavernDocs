@@ -1,6 +1,6 @@
 ---
 title: "ChunkingParent"
-description: "class ChunkingParent in Root.Township."
+description: "Empty marker component."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkingParent
 
 A **class** in `Root.Township`, no namespace.
+
+Empty marker component. Nothing in the code looks for it.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`

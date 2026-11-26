@@ -1,6 +1,6 @@
 ---
 title: "CollisionImpulseReader"
-description: "class CollisionImpulseReader in Root.Township."
+description: "Component that turns strong collisions with rigidbodies into a 0 to 1 strength and passes it to an IReceiveImpulseFromCollision on the next frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CollisionImpulseReader
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Component that turns strong collisions with rigidbodies into a 0 to 1 strength and passes it to an `IReceiveImpulseFromCollision` on the next frame.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,12 +28,12 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> |
-| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/ireceiveimpulsefromcollision">{"IReceiveImpulseFromCollision"}</Link>{" target"}</code> |
-| <Link id="m-targetobject" /><code>{"private Object targetObject"}</code> |
-| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-strongflailvelocity" /><code>{"private float strongFlailVelocity"}</code> | Impulse at or above which strength is 1 (default 2). |
+| <Link id="m-target" /><code>{"private "}<Link to="/game-api/types/alta-intelligence/ireceiveimpulsefromcollision">{"IReceiveImpulseFromCollision"}</Link>{" target"}</code> | The receiver, cast from `targetObject` in `Awake`. |
+| <Link id="m-targetobject" /><code>{"private Object targetObject"}</code> | Serialized reference to the object that receives the impulse. |
+| <Link id="m-weakflailvelocity" /><code>{"private float weakFlailVelocity"}</code> | Impulse at or below which the collision is ignored (default 1). |
 
 </details>
 
@@ -40,9 +42,9 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Casts `targetObject` to `IReceiveImpulseFromCollision`. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | Ignores hits without a rigidbody or with impulse at most `weakFlailVelocity`; otherwise maps impulse between weak and strong to 0 to 1 and calls `ReceivedImpulse` later. |
 
 </details>

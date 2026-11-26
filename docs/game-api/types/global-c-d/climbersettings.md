@@ -38,32 +38,32 @@ Global settings for an older climbing setup. Nothing else in this build reads it
 <details>
 <summary>24 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> |
-| <Link id="m-breakdistancesquared" /><code>{"private float breakDistanceSquared"}</code> |
-| <Link id="m-climbingfriction" /><code>{"private float climbingFriction"}</code> |
-| <Link id="m-climbingheight" /><code>{"private float climbingHeight"}</code> |
-| <Link id="m-climbingmask" /><code>{"private LayerMask climbingMask"}</code> |
-| <Link id="m-climbingstepheight" /><code>{"private float climbingStepHeight"}</code> |
-| <Link id="m-climbvelocitymultiplier" /><code>{"private float climbVelocityMultiplier"}</code> |
-| <Link id="m-cornerangledotgrip" /><code>{"private AnimationCurve cornerAngleDotGrip"}</code> |
-| <Link id="m-cornerdotgrip" /><code>{"private AnimationCurve cornerDotGrip"}</code> |
-| <Link id="m-defaultclimbable" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" defaultClimbable"}</code> |
-| <Link id="m-downgripoffsety" /><code>{"private float downGripOffsetY"}</code> |
-| <Link id="m-downgripoffsetz" /><code>{"private float downGripOffsetZ"}</code> |
-| <Link id="m-griphapticduration" /><code>{"private float gripHapticDuration"}</code> |
-| <Link id="m-gripmultiplier" /><code>{"private float gripMultiplier"}</code> |
-| <Link id="m-gripoverdistance" /><code>{"private AnimationCurve gripOverDistance"}</code> |
-| <Link id="m-gripoververticality" /><code>{"private AnimationCurve gripOverVerticality"}</code> |
-| <Link id="m-hapticstrengthoverdistance" /><code>{"private AnimationCurve hapticStrengthOverDistance"}</code> |
-| <Link id="m-hapticstrengthoverupwardalignment" /><code>{"private AnimationCurve hapticStrengthOverUpwardAlignment"}</code> |
-| <Link id="m-isrequiringclimbable" /><code>{"private bool isRequiringClimbable"}</code> |
-| <Link id="m-lowermultiplier" /><code>{"private float lowerMultiplier"}</code> |
-| <Link id="m-mindistancetoapplyforcesquared" /><code>{"private float minDistanceToApplyForceSquared"}</code> |
-| <Link id="m-strengthoverdistance" /><code>{"private AnimationCurve strengthOverDistance"}</code> |
-| <Link id="m-upgripoffsety" /><code>{"private float upGripOffsetY"}</code> |
-| <Link id="m-upgripoffsetz" /><code>{"private float upGripOffsetZ"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-activetightgriplayer" /><code>{"private int activeTightGripLayer"}</code> | Layer index for a tight grip, probably. No other code reads this settings asset. |
+| <Link id="m-breakdistancesquared" /><code>{"private float breakDistanceSquared"}</code> | Squared hand distance at which a grip breaks, probably. |
+| <Link id="m-climbingfriction" /><code>{"private float climbingFriction"}</code> | Friction while climbing. |
+| <Link id="m-climbingheight" /><code>{"private float climbingHeight"}</code> | Body height while climbing. |
+| <Link id="m-climbingmask" /><code>{"private LayerMask climbingMask"}</code> | Layers that can be climbed. |
+| <Link id="m-climbingstepheight" /><code>{"private float climbingStepHeight"}</code> | Character step height while climbing. |
+| <Link id="m-climbvelocitymultiplier" /><code>{"private float climbVelocityMultiplier"}</code> | Scale for climbing velocity. |
+| <Link id="m-cornerangledotgrip" /><code>{"private AnimationCurve cornerAngleDotGrip"}</code> | Curve for grip at corners by angle dot product. |
+| <Link id="m-cornerdotgrip" /><code>{"private AnimationCurve cornerDotGrip"}</code> | Curve for grip at corners by dot product. |
+| <Link id="m-defaultclimbable" /><code>{"private "}<Link to="/game-api/types/global-c-d/climbable">{"Climbable"}</Link>{" defaultClimbable"}</code> | Climbable used when a surface has none. |
+| <Link id="m-downgripoffsety" /><code>{"private float downGripOffsetY"}</code> | Vertical grip offset when pulling down. |
+| <Link id="m-downgripoffsetz" /><code>{"private float downGripOffsetZ"}</code> | Forward grip offset when pulling down. |
+| <Link id="m-griphapticduration" /><code>{"private float gripHapticDuration"}</code> | Haptic length used by `GetHapticOverUpwardAlignment`. |
+| <Link id="m-gripmultiplier" /><code>{"private float gripMultiplier"}</code> | Scales the result of `GetGripStrengthMultiplier`. |
+| <Link id="m-gripoverdistance" /><code>{"private AnimationCurve gripOverDistance"}</code> | Curve from hand offset length to upward grip, blended by verticality. |
+| <Link id="m-gripoververticality" /><code>{"private AnimationCurve gripOverVerticality"}</code> | Curve from hand offset direction (y) to how much grip is kept regardless of distance. |
+| <Link id="m-hapticstrengthoverdistance" /><code>{"private AnimationCurve hapticStrengthOverDistance"}</code> | Curve from distance to haptic strength. |
+| <Link id="m-hapticstrengthoverupwardalignment" /><code>{"private AnimationCurve hapticStrengthOverUpwardAlignment"}</code> | Curve from upward alignment to haptic strength. |
+| <Link id="m-isrequiringclimbable" /><code>{"private bool isRequiringClimbable"}</code> | Whether a surface needs a `Climbable` to be climbed, probably. |
+| <Link id="m-lowermultiplier" /><code>{"private float lowerMultiplier"}</code> | Multiplier for enabling gravity while lowering yourself. |
+| <Link id="m-mindistancetoapplyforcesquared" /><code>{"private float minDistanceToApplyForceSquared"}</code> | Squared hand movement below which no climbing force is applied, probably. |
+| <Link id="m-strengthoverdistance" /><code>{"private AnimationCurve strengthOverDistance"}</code> | Curve from hand offset length to grip strength, blended by verticality. |
+| <Link id="m-upgripoffsety" /><code>{"private float upGripOffsetY"}</code> | Vertical grip offset when pulling up. |
+| <Link id="m-upgripoffsetz" /><code>{"private float upGripOffsetZ"}</code> | Forward grip offset when pulling up. |
 
 </details>
 

@@ -45,20 +45,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BoolValueLabeling`](/game-api/types/assembly-other/boolvaluelabeling) | class | `ConditionalLabeling` | 3 |  |
-| [`BuildTestAttribute`](/game-api/types/assembly-other/buildtestattribute) | class | `Attribute` | 0 |  |
-| [`ButtonAttribute`](/game-api/types/assembly-other/buttonattribute) | class | `PropertyAttribute` | 5 |  |
-| [`CacheTransformAttribute`](/game-api/types/assembly-other/cachetransformattribute) | class | `PrefabApplyAttribute` | 1 |  |
-| [`CacheTransformIfEmptyAttribute`](/game-api/types/assembly-other/cachetransformifemptyattribute) | class | `PrefabApplyAttribute` | 1 |  |
-| [`CleanNullsAttribute`](/game-api/types/assembly-other/cleannullsattribute) | class | `PrefabApplyAttribute` | 1 |  |
-| [`CleanRange`](/game-api/types/assembly-other/cleanrange) | class | `PropertyAttribute` | 5 |  |
-| [`CommentAttribute`](/game-api/types/assembly-other/commentattribute) | class | `PropertyAttribute` | 4 |  |
+| [`BoolValueLabeling`](/game-api/types/assembly-other/boolvaluelabeling) | class | `ConditionalLabeling` | 3 | Inspector attribute that labels a field one of two ways depending on a named bool, with optional default values for each case. Extends `ConditionalLabeling`. |
+| [`BuildTestAttribute`](/game-api/types/assembly-other/buildtestattribute) | class | `Attribute` | 0 | Marks a method as a build test. Nothing in the server build looks for it, so it's probably read by an editor build check. |
+| [`ButtonAttribute`](/game-api/types/assembly-other/buttonattribute) | class | `PropertyAttribute` | 5 | Inspector attribute that draws a button for a bool field and calls a method on the component when it's clicked. Editor only in effect. |
+| [`CacheTransformAttribute`](/game-api/types/assembly-other/cachetransformattribute) | class | `PrefabApplyAttribute` | 1 | Prefab-apply attribute for a `Transform` field: when the prefab is applied, sets the field to the component's own transform. |
+| [`CacheTransformIfEmptyAttribute`](/game-api/types/assembly-other/cachetransformifemptyattribute) | class | `PrefabApplyAttribute` | 1 | Prefab-apply attribute for a `Transform` field: fills it with the component's own transform only when the field is empty. |
+| [`CleanNullsAttribute`](/game-api/types/assembly-other/cleannullsattribute) | class | `PrefabApplyAttribute` | 1 | Prefab-apply attribute meant for removing null entries from a list field. In this build `HandleApply` does nothing. |
+| [`CleanRange`](/game-api/types/assembly-other/cleanrange) | class | `PropertyAttribute` | 5 | Inspector attribute for a range slider on a number field, with an optional line under it. |
+| [`CommentAttribute`](/game-api/types/assembly-other/commentattribute) | class | `PropertyAttribute` | 4 | Inspector attribute that shows a comment box above a field. |
 | [`CommentAttribute.MessageType`](/game-api/types/assembly-other/commentattribute-messagetype) | enum |  | 4 | Icon style for a `CommentAttribute` note in the inspector: none, info, warning or error. |
-| [`ConditionalLabeling`](/game-api/types/assembly-other/conditionallabeling) | abstract class | `PropertyAttribute` | 7 |  |
-| [`ConditionAttribute`](/game-api/types/assembly-other/conditionattribute) | class | `PropertyAttribute` | 4 |  |
-| [`CustomMethodApplyAttribute`](/game-api/types/assembly-other/custommethodapplyattribute) | class | `PrefabApplyAttribute` | 3 |  |
-| [`DegreeToRadian`](/game-api/types/assembly-other/degreetoradian) | class | `PropertyAttribute` | 0 |  |
-| [`DotFromAngle`](/game-api/types/assembly-other/dotfromangle) | class | `PropertyAttribute` | 0 |  |
+| [`ConditionalLabeling`](/game-api/types/assembly-other/conditionallabeling) | abstract class | `PropertyAttribute` | 7 | Base inspector attribute that labels a field one of two ways depending on a condition, with optional default values for each case. Used by `BoolValueLabeling` and `HasComponentLabel`. |
+| [`ConditionAttribute`](/game-api/types/assembly-other/conditionattribute) | class | `PropertyAttribute` | 4 | Inspector attribute that shows, hides or locks a field depending on a bool member of the same object. |
+| [`CustomMethodApplyAttribute`](/game-api/types/assembly-other/custommethodapplyattribute) | class | `PrefabApplyAttribute` | 3 | Prefab apply attribute that calls a named method on the component when the prefab is applied. The method should return bool (true means it applied); methods are looked up by reflection and cached. |
+| [`DegreeToRadian`](/game-api/types/assembly-other/degreetoradian) | class | `PropertyAttribute` | 0 | Inspector attribute for a float field, probably so it is edited in degrees and stored in radians. It has no members; the drawer isn't in the server build. |
+| [`DotFromAngle`](/game-api/types/assembly-other/dotfromangle) | class | `PropertyAttribute` | 0 | Property attribute with no fields, probably used by an editor drawer to edit a dot product value as an angle. |
 | [`EnumFlagsAttribute`](/game-api/types/assembly-other/enumflagsattribute) | class | `PropertyAttribute` | 0 |  |
 | [`FloatRangeSettings`](/game-api/types/assembly-other/floatrangesettings) | class | `PropertyAttribute` | 4 |  |
 | [`ForcedCapitalizationAttribute`](/game-api/types/assembly-other/forcedcapitalizationattribute) | class | `PropertyAttribute` | 0 |  |
@@ -129,7 +129,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BuildRendererBakeable`](/game-api/types/assembly-other/buildrendererbakeable) | abstract class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 |  |
+| [`BuildRendererBakeable`](/game-api/types/assembly-other/buildrendererbakeable) | abstract class | `MonoBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 3 | Base for components that bake renderer setup at build time and then remove themselves. `BakeBuildBakeables` runs them; `StaticObjectCombiner` calls it. |
 | [`IBuildBakeable`](/game-api/types/assembly-other/ibuildbakeable) | interface |  | 0 | Empty marker interface for components that the build process bakes. `IBuildRendererBakeable` and `IBuildRendererPostBake` extend it. |
 | [`IBuildRendererBakeable`](/game-api/types/assembly-other/ibuildrendererbakeable) | interface | `IBuildBakeable` | 3 | Build-time hook for components that bake renderer data into a prefab. Bakers run in `SortingOrder` order. |
 | [`IBuildRendererPostBake`](/game-api/types/assembly-other/ibuildrendererpostbake) | interface | `IBuildBakeable` | 1 | For components that need a step after a build renderer bake. `BuildRendererBakeable` calls `PostBake` on every one under the target once baking finishes. Build-time only. |
@@ -141,7 +141,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`CommandLineArguments`](/game-api/types/assembly-other/commandlinearguments) | static class |  | 45 | [Startup and app state](../console-and-utilities/startup-and-app-state.md#commandlinearguments): Reads `Environment.GetCommandLineArgs()` once, on first use. |
-| [`CommandLineArgumentsInEditor`](/game-api/types/assembly-other/commandlineargumentsineditor) | class | `GlobalSettings<CommandLineArgumentsInEditor>` | 1 |  |
+| [`CommandLineArgumentsInEditor`](/game-api/types/assembly-other/commandlineargumentsineditor) | class | `GlobalSettings<CommandLineArgumentsInEditor>` | 1 | Global settings asset with extra command line arguments to use when running in the Unity editor. |
 
 ## Alta.Core.Runtime
 
@@ -211,28 +211,28 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AltaFile`](/game-api/types/assembly-other/altafile) | class | `IAltaFile` | 24 |  |
-| [`AltaFolder`](/game-api/types/assembly-other/altafolder) | class | `IAltaFolder` | 16 |  |
+| [`AltaFile`](/game-api/types/assembly-other/altafile) | class | `IAltaFile` | 24 | A file on disk with cached typed content (`IAltaFileFormat`), background reads, and saves that go through a `_temp` file and keep a `_backup` copy. Get one from `AltaFolder.GetFile`. |
+| [`AltaFolder`](/game-api/types/assembly-other/altafolder) | class | `IAltaFolder` | 16 | A folder on disk that caches its `AltaFile` and `AltaFolder` children by name. Creates the directory if it is missing. |
 | [`AltaIO`](/game-api/types/assembly-other/altaio) | class |  | 7 | [Settings and files](../console-and-utilities/settings-and-files.md#altaio), [Console, utilities and Alta assemblies](../console-and-utilities/overview.md): Static folders, set up the first time anything touches the class. |
-| [`DigitalOceanUtility`](/game-api/types/assembly-other/digitaloceanutility) | static class |  | 3 |  |
-| [`FileInfoWrapper`](/game-api/types/assembly-other/fileinfowrapper) | class | `IFileAccess` | 8 |  |
-| [`FileSystemExtensions`](/game-api/types/assembly-other/filesystemextensions) | static class |  | 2 |  |
+| [`DigitalOceanUtility`](/game-api/types/assembly-other/digitaloceanutility) | static class |  | 3 | Static access to a DigitalOcean Spaces (S3-compatible, sfo2 region) client. Keys must be set with `SetupKeys` before first use. |
+| [`FileInfoWrapper`](/game-api/types/assembly-other/fileinfowrapper) | class | `IFileAccess` | 8 | `IFileAccess` over a plain `FileInfo` on disk. |
+| [`FileSystemExtensions`](/game-api/types/assembly-other/filesystemextensions) | static class |  | 2 | File system helpers. |
 | [`IAltaFile`](/game-api/types/assembly-other/ialtafile) | interface |  | 19 | [Settings and files](../console-and-utilities/settings-and-files.md#ialtafolder-and-ialtafile) |
 | [`IAltaFileFormat`](/game-api/types/assembly-other/ialtafileformat) | abstract class | `IDisposable` | 5 | Base for a file format the game can read from and write to a stream, such as a save file's contents. Disposable. |
 | [`IAltaFolder`](/game-api/types/assembly-other/ialtafolder) | interface |  | 15 | [Settings and files](../console-and-utilities/settings-and-files.md#ialtafolder-and-ialtafile) |
-| [`IFileAccess`](/game-api/types/assembly-other/ifileaccess) | interface |  | 7 |  |
+| [`IFileAccess`](/game-api/types/assembly-other/ifileaccess) | interface |  | 7 | Minimal file handle: existence, names, delete and refresh. `FileInfoWrapper` is the plain disk version. |
 | [`IRemoteAltaFile`](/game-api/types/assembly-other/iremotealtafile) | interface |  | 4 | A local file mirrored to a remote copy, as used by `RemoteFiles`. `RemoteFiles.BackupAllChanged` backs up every changed one. |
-| [`RemoteAltaFile`](/game-api/types/assembly-other/remotealtafile) | class | `RemoteFiles.RemoteAltaFile<FileInfoWrapper>` | 1 |  |
-| [`RemoteAltaFolder`](/game-api/types/assembly-other/remotealtafolder) | class | `AltaFolder` | 6 |  |
-| [`RemoteFiles`](/game-api/types/assembly-other/remotefiles) | static class |  | 1 |  |
-| [`RemoteFiles.RemoteAltaFile<TFileType>`](/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype) | abstract class | `IAltaFile`, `IRemoteAltaFile` | 23 |  |
-| [`S3CloudStorageRemoteFile`](/game-api/types/assembly-other/s3cloudstorageremotefile) | class | `RemoteFiles.RemoteAltaFile<S3StorageFile>` | 1 |  |
-| [`S3RemoteFolder`](/game-api/types/assembly-other/s3remotefolder) | class | `AltaFolder` | 9 |  |
+| [`RemoteAltaFile`](/game-api/types/assembly-other/remotealtafile) | class | `RemoteFiles.RemoteAltaFile<FileInfoWrapper>` | 1 | Remote-backed save file where the remote copy is another path on disk (a mounted or network folder). Used when the server starts with `/remote_saves` and a type other than `s3`. |
+| [`RemoteAltaFolder`](/game-api/types/assembly-other/remotealtafolder) | class | `AltaFolder` | 6 | Save folder that mirrors a local folder to a second directory on disk. Files and subfolders it hands out are `RemoteAltaFile` and `RemoteAltaFolder`. Set up by `AltaIO` from `/remote_saves`. |
+| [`RemoteFiles`](/game-api/types/assembly-other/remotefiles) | static class |  | 1 | Static registry of every remote-backed save file, so changed files can be backed up together. The `backup` console command calls `BackupAllChanged`. |
+| [`RemoteFiles.RemoteAltaFile<TFileType>`](/game-api/types/assembly-other/remotefiles-remotealtafile-tfiletype) | abstract class | `IAltaFile`, `IRemoteAltaFile` | 23 | Base for a save file that works on a local copy and syncs it with a remote store (disk path or S3). The local copy is pulled from remote on first read and pushed back on backup. |
+| [`S3CloudStorageRemoteFile`](/game-api/types/assembly-other/s3cloudstorageremotefile) | class | `RemoteFiles.RemoteAltaFile<S3StorageFile>` | 1 | Remote-backed save file stored as an S3 object. Used when the server starts with `/remote_saves s3 bucket:path`. |
+| [`S3RemoteFolder`](/game-api/types/assembly-other/s3remotefolder) | class | `AltaFolder` | 9 | Save folder that mirrors a local folder to an S3 prefix. Hands out `S3CloudStorageRemoteFile` files and `S3RemoteFolder` subfolders. `AltaIO` makes the root one for `/remote_saves s3`. |
 | [`S3StorageFile`](/game-api/types/assembly-other/s3storagefile) | class | `S3StorageObject`, `IFileAccess` | 7 | A file object in an S3 bucket, used through the `IFileAccess` storage interface. Probably server or tooling only, as it needs S3 credentials. |
 | [`S3StorageFolder`](/game-api/types/assembly-other/s3storagefolder) | class | `S3StorageObject` | 5 | A key prefix in an S3 bucket treated as a folder, for listing and deleting the objects under it. |
-| [`S3StorageObject`](/game-api/types/assembly-other/s3storageobject) | class |  | 6 |  |
-| [`S3Utility`](/game-api/types/assembly-other/s3utility) | static class |  | 3 |  |
-| [`TextFileFormat`](/game-api/types/assembly-other/textfileformat) | class | `IAltaFileFormat` | 4 |  |
+| [`S3StorageObject`](/game-api/types/assembly-other/s3storageobject) | class |  | 6 | Base for an S3 file or folder: a bucket name and object key, with delete calls through `S3Utility.S3Client`. |
+| [`S3Utility`](/game-api/types/assembly-other/s3utility) | static class |  | 3 | Static holder for the AWS S3 clients used for remote saves. Keys come from the `/s3_credentials` command line argument; the region is fixed to US West 1. |
+| [`TextFileFormat`](/game-api/types/assembly-other/textfileformat) | class | `IAltaFileFormat` | 4 | File format that stores a file's whole content as one string. |
 
 ## Alta.LifecycleManagement.Runtime
 
@@ -240,13 +240,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`CompositeDisposable`](/game-api/types/assembly-other/compositedisposable) | class | `ICollection<IDisposable>`, `IEnumerable<IDisposable>`, `IEnumerable`, +2 more | 14 |  |
-| [`Disposable`](/game-api/types/assembly-other/disposable) | static class |  | 3 |  |
-| [`Disposer`](/game-api/types/assembly-other/disposer) | class | `IDisposer`, `IDisposable` | 3 |  |
-| [`DisposerExtensions`](/game-api/types/assembly-other/disposerextensions) | static class |  | 2 |  |
-| [`ICancelable`](/game-api/types/assembly-other/icancelable) | interface | `IDisposable` | 1 |  |
-| [`IIsolate`](/game-api/types/assembly-other/iisolate) | interface |  | 0 |  |
-| [`SerialDisposable`](/game-api/types/assembly-other/serialdisposable) | class | `ICancelable`, `IDisposable` | 3 |  |
+| [`CompositeDisposable`](/game-api/types/assembly-other/compositedisposable) | class | `ICollection<IDisposable>`, `IEnumerable<IDisposable>`, `IEnumerable`, +2 more | 14 | Thread-safe group of disposables that are disposed together. Anything added after it's disposed is disposed at once. |
+| [`Disposable`](/game-api/types/assembly-other/disposable) | static class |  | 3 | Helpers for making `IDisposable` objects from actions. |
+| [`Disposer`](/game-api/types/assembly-other/disposer) | class | `IDisposer`, `IDisposable` | 3 | `IDisposer` that tracks disposables and disposes them all when it is disposed. Not thread-safe. |
+| [`DisposerExtensions`](/game-api/types/assembly-other/disposerextensions) | static class |  | 2 | Extension methods for adding things to an `IDisposer`. |
+| [`ICancelable`](/game-api/types/assembly-other/icancelable) | interface | `IDisposable` | 1 | A disposable that can report whether it has been disposed. |
+| [`IIsolate`](/game-api/types/assembly-other/iisolate) | interface |  | 0 | Marker for classes registered as standalone entry points in a dependency injection container with `InjectAndIsolate`. |
+| [`SerialDisposable`](/game-api/types/assembly-other/serialdisposable) | class | `ICancelable`, `IDisposable` | 3 | Holds one disposable at a time: setting a new one disposes the old one. Thread-safe. |
 
 ### System
 
@@ -286,7 +286,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`AltaMenuItem`](/game-api/types/assembly-other/altamenuitem) | abstract class | `ISearchableTool` | 12 | Base for Alta's editor menu commands. Subclasses nest inside an `AltaMenuItemBase` path class, and editor tooling generates a Unity menu entry for each one. Editor only, does nothing in a running server. |
-| [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase) (and 172 nested types) | class |  | 1 |  |
+| [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase) (and 172 nested types) | class |  | 1 | Root of a nested class tree that mirrors Unity editor menu paths. Menu items inherit from a nested class, and the class path (underscores as spaces) becomes the menu path. Editor tooling. |
 
 ## Alta.NetworkTransport.Runtime
 
@@ -297,7 +297,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AltaNetworkError`](/game-api/types/assembly-other/altanetworkerror) | enum |  | 9 | Network errors a transport can report, such as DNS failure, timeout, congestion, bad send or receive, and closed connection. |
 | [`INetworkTransportResult`](/game-api/types/assembly-other/inetworktransportresult) | interface |  | 2 | Result of a network transport operation such as a send or processing incoming packets. |
 | [`IPacketProcessor`](/game-api/types/assembly-other/ipacketprocessor) | interface |  | 1 | Handles packets the network transport receives. |
-| [`IParallelPacketProcessor`](/game-api/types/assembly-other/iparallelpacketprocessor) | interface | `IPacketProcessor` | 1 |  |
+| [`IParallelPacketProcessor`](/game-api/types/assembly-other/iparallelpacketprocessor) | interface | `IPacketProcessor` | 1 | An `IPacketProcessor` that may handle packets in parallel and can say how many it has not finished yet. Nothing implements it in this build. |
 | [`ITransport`](/game-api/types/assembly-other/itransport) | interface |  | 6 | A low-level network transport that `Socket` sends packets over. `KcpTransport` is the implementation in this build. |
 | [`ITransportClient`](/game-api/types/assembly-other/itransportclient) | interface | `ITransportSocket` | 3 | Client side of a transport: one connection to a server. `ITransport.Connect` returns one. |
 | [`ITransportConnection`](/game-api/types/assembly-other/itransportconnection) | interface |  | 8 | One player's connection on the server-side network transport (KCP in this build): send data, disconnect and read traffic counters. |
@@ -343,7 +343,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`IAuthenticationFeatures`](/game-api/types/assembly-other/iauthenticationfeatures) | interface |  | 3 | What the current platform's login supports. Read from `IAuthenticationService.Features`; the generic (PC) one supports none of it. |
 | [`IAuthenticationService`](/game-api/types/assembly-other/iauthenticationservice) | interface |  | 9 | Signs the player in to the Alta account service and supplies access tokens. Client side; `AuthenticationService` in Alta.Platform.Generic implements it. |
 | [`IPlatformDevice`](/game-api/types/assembly-other/iplatformdevice) | interface |  | 1 | Platform hook for device-level settings. Only `FakePlatformDevice` (does nothing) is bound in the Windows build. |
-| [`IPlatformService`](/game-api/types/assembly-other/iplatformservice) | interface |  | 2 |  |
+| [`IPlatformService`](/game-api/types/assembly-other/iplatformservice) | interface |  | 2 | Starts up the platform SDK (such as Oculus) at launch. `FakePlatformService` is the stand-in where there is none. |
 | [`IUserService`](/game-api/types/assembly-other/iuserservice) | interface | `IAuthenticationService` | 4 | Platform service for the signed-in Alta user: login state, the current user and lookups of other users by ID. |
 | [`IValidVersionService`](/game-api/types/assembly-other/ivalidversionservice) | interface |  | 3 | Checks whether the game version is still allowed to play. `ApplicationStartupManager` runs it on startup; on Windows a fake always says yes. |
 
@@ -351,9 +351,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`FakePlatformDevice`](/game-api/types/assembly-other/fakeplatformdevice) | class | `IPlatformDevice` | 1 |  |
-| [`FakePlatformService`](/game-api/types/assembly-other/fakeplatformservice) | class | `IPlatformService` | 2 |  |
-| [`FakeValidVersionService`](/game-api/types/assembly-other/fakevalidversionservice) | class | `IValidVersionService` | 3 |  |
+| [`FakePlatformDevice`](/game-api/types/assembly-other/fakeplatformdevice) | class | `IPlatformDevice` | 1 | Do-nothing `IPlatformDevice` for platforms without device features. |
+| [`FakePlatformService`](/game-api/types/assembly-other/fakeplatformservice) | class | `IPlatformService` | 2 | Stand-in `IPlatformService` for platforms with no platform SDK to start. Always reports initialized. |
+| [`FakeValidVersionService`](/game-api/types/assembly-other/fakevalidversionservice) | class | `IValidVersionService` | 3 | Stand-in `IValidVersionService` that always says the game version is valid, used where there's no store version check (such as Windows). |
 
 ### Alta.Platform.Models
 
@@ -367,9 +367,9 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AuthenticationFeatures`](/game-api/types/assembly-other/authenticationfeatures) | class | `IAuthenticationFeatures` | 3 |  |
-| [`AuthenticationService`](/game-api/types/assembly-other/authenticationservice) | class | `IAuthenticationService` | 10 |  |
-| [`UserService`](/game-api/types/assembly-other/userservice) | class | `IUserService`, `IAuthenticationService` | 15 |  |
+| [`AuthenticationFeatures`](/game-api/types/assembly-other/authenticationfeatures) | class | `IAuthenticationFeatures` | 3 | Authentication features for the generic (non-store) platform: no access tokens, no account linking, no platform login. |
+| [`AuthenticationService`](/game-api/types/assembly-other/authenticationservice) | class | `IAuthenticationService` | 10 | Authentication for the generic platform (Windows and the server build): logs in to the Alta API with command line arguments, a refresh token or editor credentials. Platform login and linking aren't supported. |
+| [`UserService`](/game-api/types/assembly-other/userservice) | class | `IUserService`, `IAuthenticationService` | 15 | `IUserService` for the generic platform. There is no platform user, so the user parts are empty or throw; authentication calls go to an inner `AuthenticationService`. |
 
 ## Alta.PlatformInformation.Runtime
 
@@ -380,7 +380,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`LocalPlatformProvider`](/game-api/types/assembly-other/localplatformprovider) | internal class |  | 1 | Internal: works out which platform the game is running on. In this build the Quest, Pico and Android preview checks always return false. |
 | [`OverridePlatformProvider`](/game-api/types/assembly-other/overrideplatformprovider) | internal class |  | 4 | Internal: holds a platform override for testing. The override only counts in the Unity editor. |
 | [`PlatformFlags`](/game-api/types/assembly-other/platformflags) | enum |  | 7 | Flags for the platform the game runs on: Windows, Linux, Android, Android preview, and Quest and Pico (both include the Android bit), or Unknown. |
-| [`PlatformProvider`](/game-api/types/assembly-other/platformprovider) | static class |  | 20 |  |
+| [`PlatformProvider`](/game-api/types/assembly-other/platformprovider) | static class |  | 20 | Static helper that tells which platform the game is running on (Windows, Linux, Android, Quest, Pico), with an optional client override for testing. |
 
 ## Alta.Profiling.Runtime
 
@@ -388,7 +388,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`ProfileMarker`](/game-api/types/assembly-other/profilemarker) | static class |  | 2 |  |
+| [`ProfileMarker`](/game-api/types/assembly-other/profilemarker) | static class |  | 2 | Static helper that keeps named Unity profiler markers, only in debug builds. As decompiled it never begins or ends a marker sample. |
 | [`ProfilingSession`](/game-api/types/assembly-other/profilingsession) | class | `IDisposable` | 6 | A timed, nestable profiling scope. Making one starts it and makes it the current session; sessions made inside become its children. Dispose it to stop. |
 
 ## Alta.SearchableTools
@@ -405,18 +405,18 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`BitDisplay`](/game-api/types/assembly-other/bitdisplay) | static class |  | 2 |  |
+| [`BitDisplay`](/game-api/types/assembly-other/bitdisplay) | static class |  | 2 | Debug helper that turns integers into binary strings. |
 | [`BitReader`](/game-api/types/assembly-other/bitreader) | class |  | 12 | Reads values bit by bit from a buffer of 32 bit words, the reading half of the game's network and save serialization. Used by `Stream` on both sides. |
 | [`BitWriter`](/game-api/types/assembly-other/bitwriter) | class |  | 14 | Writes values bit by bit into a buffer of 32 bit words, the writing half of the game's network and save serialization. Used by `Stream` on both sides. |
 | [`BitWriter.GetMoreData`](/game-api/types/assembly-other/bitwriter-getmoredata) | delegate |  | 0 | Callback a `BitWriter` calls when its buffer is full to get a bigger one. Called with null at start to get the first buffer. Without it, a full buffer logs a fatal error and corrupts the write. |
-| [`Compressor`](/game-api/types/assembly-other/compressor) | class | `Stream` | 10 |  |
+| [`Compressor`](/game-api/types/assembly-other/compressor) | class | `Stream` | 10 | A dummy `Stream` that reads and writes at once but stores nothing. Code passes `Compressor.Instance` to the quantizing serialize helpers to round a value to what the network would send. |
 | [`Stream`](/game-api/types/assembly-other/stream) | abstract class | `IDisposable`, `ICloneable` | 51 | [Stream](../networking/stream.md): Every network message and every save file in the game is written with this: a bit stream with one abstract base and two concrete types, `StreamWriter` and `StreamReader`. |
 | [`Stream.StringEncoding`](/game-api/types/assembly-other/stream-stringencoding) | enum |  | 2 | Text encoding used when writing strings to a network stream: ASCII or UTF8. |
-| [`StreamCounter`](/game-api/types/assembly-other/streamcounter) | class | `Stream` | 10 |  |
+| [`StreamCounter`](/game-api/types/assembly-other/streamcounter) | class | `Stream` | 10 | A write-only `Stream` that only counts bits, used to measure how big a serialized block will be (for example by `SavingSystem` and `NetworkPrefab`). |
 | [`StreamReader`](/game-api/types/assembly-other/streamreader) | class | `Stream` | 14 | [Stream](../networking/stream.md#streamwriter-and-streamreader) |
 | [`StreamWriter`](/game-api/types/assembly-other/streamwriter) | class | `Stream` | 20 | [Stream](../networking/stream.md#streamwriter-and-streamreader) |
-| [`UFloatBytes`](/game-api/types/assembly-other/ufloatbytes) | internal struct |  | 1 |  |
-| [`ULongBytes`](/game-api/types/assembly-other/ulongbytes) | internal struct |  | 1 |  |
+| [`UFloatBytes`](/game-api/types/assembly-other/ufloatbytes) | internal struct |  | 1 | Internal helper that sends a float as its raw 32 bits. |
+| [`ULongBytes`](/game-api/types/assembly-other/ulongbytes) | internal struct |  | 1 | Internal helper that sends a `long` as two raw 32-bit uints. |
 
 ## Alta.Singletons
 
@@ -436,24 +436,24 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`Timeline`](/game-api/types/assembly-other/timeline) | class | `ITimeline` | 21 | [Threads, coroutines and the timeline](../console-and-utilities/threads-coroutines-and-timeline.md#timeline), [Time and environment](../world/time-and-environment.md#timeline): A scheduler for "call this in N seconds" and "every N seconds", used for respawns, decay, loot refills, taxes, timed stat changes and the like. Main thread. |
 | [`Timeline.IEntry`](/game-api/types/assembly-other/timeline-ientry) | interface |  | 2 | Handle to a callback scheduled on the game `Timeline` (from `CallAfterDuration`, `CallRepeatableAfterDuration` and so on). Pass it to `Timeline.Cancel` to stop it. |
 | [`Timeline.SerializedEntryState`](/game-api/types/assembly-other/timeline-serializedentrystate) | enum |  | 3 | Result of `Timeline.LoadEntry` for a saved timer: None (no time saved), Past (already due, callback run if asked) or Future (registered on the timeline). |
-| [`TimelineUpdater`](/game-api/types/assembly-other/timelineupdater) | class | `MonoBehaviour` | 0 |  |
+| [`TimelineUpdater`](/game-api/types/assembly-other/timelineupdater) | class | `MonoBehaviour` | 0 | Hidden object that `Timeline.Instance` creates to drive the timeline with real time each frame. Kept across scene loads. |
 
 ### Alta.Timing.PriorityQueue
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`FastPriorityQueue<T>`](/game-api/types/assembly-other/fastpriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 14 | Fixed size binary heap of nodes with a float priority, lowest value first. Nodes store their own index, and there are no safety checks. |
-| [`FastPriorityQueueNode`](/game-api/types/assembly-other/fastpriorityqueuenode) | class |  | 2 |  |
-| [`FastPriorityQueueNodeTimeSpan`](/game-api/types/assembly-other/fastpriorityqueuenodetimespan) | class |  | 2 |  |
+| [`FastPriorityQueueNode`](/game-api/types/assembly-other/fastpriorityqueuenode) | class |  | 2 | Base class for items in a `FastPriorityQueue` with a float priority. The queue sets both properties. |
+| [`FastPriorityQueueNodeTimeSpan`](/game-api/types/assembly-other/fastpriorityqueuenodetimespan) | class |  | 2 | Base class for items in a `FastPriorityQueueTimeSpan`, with a `TimeSpan` priority. `Timeline` entries use it. |
 | [`FastPriorityQueueTimeSpan<T>`](/game-api/types/assembly-other/fastpriorityqueuetimespan-t) | class | `IFixedSizePriorityQueue<T, TimeSpan>`, `IPriorityQueue<T, TimeSpan>`, `IEnumerable<T>`, +1 more | 13 | Copy of `FastPriorityQueue` that uses a `TimeSpan` priority, earliest first. `Timeline` uses it to order its scheduled calls. |
 | [`GenericPriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/genericpriorityqueue-titem-tpriority) | class | `IFixedSizePriorityQueue<TItem, TPriority>`, `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, +1 more | 15 | Fixed size binary heap with any comparable priority. Ties go to whichever node was enqueued first, so equal priorities come out in order. |
-| [`GenericPriorityQueueNode<TPriority>`](/game-api/types/assembly-other/genericpriorityqueuenode-tpriority) | class |  | 3 |  |
-| [`IFixedSizePriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ifixedsizepriorityqueue-titem-intpriority) | internal interface | `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, `IEnumerable` | 2 |  |
-| [`IPriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ipriorityqueue-titem-intpriority) | interface | `IEnumerable<TItem>`, `IEnumerable` | 8 |  |
-| [`SimplePriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority) | class | `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, `IEnumerable` | 20 |  |
-| [`SimplePriorityQueue<TItem>`](/game-api/types/assembly-other/simplepriorityqueue-titem) | class | `SimplePriorityQueue<TItem, float>` | 3 |  |
-| [`StablePriorityQueue<T>`](/game-api/types/assembly-other/stablepriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 13 |  |
-| [`StablePriorityQueueNode`](/game-api/types/assembly-other/stablepriorityqueuenode) | class | `FastPriorityQueueNode` | 1 |  |
+| [`GenericPriorityQueueNode<TPriority>`](/game-api/types/assembly-other/genericpriorityqueuenode-tpriority) | class |  | 3 | Base class for items in a `GenericPriorityQueue`, with any comparable priority type. |
+| [`IFixedSizePriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ifixedsizepriorityqueue-titem-intpriority) | internal interface | `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, `IEnumerable` | 2 | Internal interface for priority queues with a fixed capacity that has to be resized by hand. |
+| [`IPriorityQueue<TItem, in TPriority>`](/game-api/types/assembly-other/ipriorityqueue-titem-intpriority) | interface | `IEnumerable<TItem>`, `IEnumerable` | 8 | Common interface of the priority queues in this namespace (a copy of the BlueRaja priority queue library). The lowest priority value comes out first. |
+| [`SimplePriorityQueue<TItem, TPriority>`](/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority) | class | `IPriorityQueue<TItem, TPriority>`, `IEnumerable<TItem>`, `IEnumerable` | 20 | Thread-safe priority queue for any item type: it wraps items in nodes for you, grows as needed and locks on every call. The lowest priority value comes out first; equal priorities keep their order. |
+| [`SimplePriorityQueue<TItem>`](/game-api/types/assembly-other/simplepriorityqueue-titem) | class | `SimplePriorityQueue<TItem, float>` | 3 | `SimplePriorityQueue` with a float priority. |
+| [`StablePriorityQueue<T>`](/game-api/types/assembly-other/stablepriorityqueue-t) | class | `IFixedSizePriorityQueue<T, float>`, `IPriorityQueue<T, float>`, `IEnumerable<T>`, +1 more | 13 | Fast fixed-size priority queue of `StablePriorityQueueNode` items with float priorities. Equal priorities come out in the order they went in. No safety checks: queuing past `MaxSize`, or passing a node that is not in this queue, breaks it. |
+| [`StablePriorityQueueNode`](/game-api/types/assembly-other/stablepriorityqueuenode) | class | `FastPriorityQueueNode` | 1 | Base class for items in a `StablePriorityQueue`. |
 
 ## Alta.VContainerLayer.Runtime
 
@@ -529,11 +529,11 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`IXRLoaderInitializer`](/game-api/types/assembly-other/ixrloaderinitializer) | interface |  | 0 |  |
+| [`IXRLoaderInitializer`](/game-api/types/assembly-other/ixrloaderinitializer) | interface |  | 0 | Empty marker interface for the platform class that picks and starts the XR loader, such as `WindowsXRLoaderInitializer`. |
 | [`IXRManagerSettingsController`](/game-api/types/assembly-other/ixrmanagersettingscontroller) | interface |  | 3 | Client: starts and stops Unity's XR manager. Implemented by `XRManagerSettingsController`, injected through VContainer. |
 | [`TownshipXRMode`](/game-api/types/assembly-other/townshipxrmode) | enum |  | 3 | Which XR backend the game runs with: OpenXR, Valve (SteamVR) or no VR. |
-| [`XRLoaderStaticData`](/game-api/types/assembly-other/xrloaderstaticdata) | static class |  | 6 |  |
-| [`XRManagerSettingsController`](/game-api/types/assembly-other/xrmanagersettingscontroller) | class | `IXRManagerSettingsController`, `IInitializable` | 4 |  |
+| [`XRLoaderStaticData`](/game-api/types/assembly-other/xrloaderstaticdata) | static class |  | 6 | Type names of the Unity XR loaders the game knows about, grouped by platform. |
+| [`XRManagerSettingsController`](/game-api/types/assembly-other/xrmanagersettingscontroller) | class | `IXRManagerSettingsController`, `IInitializable` | 4 | Startup service (VContainer) that finds Unity's XR manager and starts or shuts down its active loader and subsystems. |
 
 ## Alta.XRManagement.Windows
 
@@ -543,6 +543,6 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`IWindowsXRLoaderSettings`](/game-api/types/assembly-other/iwindowsxrloadersettings) | interface |  | 3 | Client (Windows): settings the XR loader initializer reads to pick between OpenXR and SteamVR (OpenVR) loaders. |
 | [`IXRSupportSystem`](/game-api/types/assembly-other/ixrsupportsystem) | interface |  | 2 | Client (Windows): extra setup for one XR mode, run before XR starts. `SteamOpenVrInitializer` is one; the Windows loader initializer runs each one that is valid for the mode. |
-| [`SteamOpenVrInitializer`](/game-api/types/assembly-other/steamopenvrinitializer) | class | `IXRSupportSystem` | 2 |  |
-| [`WindowsXRLoaderInitializer`](/game-api/types/assembly-other/windowsxrloaderinitializer) | class | `IInitializable`, `IXRLoaderInitializer` | 3 |  |
+| [`SteamOpenVrInitializer`](/game-api/types/assembly-other/steamopenvrinitializer) | class | `IXRSupportSystem` | 2 | XR support system for Valve OpenVR mode. Touches the SteamVR settings and instance before the XR manager starts. |
+| [`WindowsXRLoaderInitializer`](/game-api/types/assembly-other/windowsxrloaderinitializer) | class | `IInitializable`, `IXRLoaderInitializer` | 3 | PC startup service (VContainer) that picks OpenXR, Valve OpenVR or no VR, swaps the XR loaders to match, runs support systems and starts the XR manager. |
 | [`WindowsXRLoaderSettings`](/game-api/types/assembly-other/windowsxrloadersettings) | class | `GlobalSettings<WindowsXRLoaderSettings>`, `IWindowsXRLoaderSettings` | 4 | Global settings for the Windows build's XR loaders: which XR mode to use and the OpenXR and OpenVR loaders. Read by `WindowsXRLoaderInitializer`. Client only. |

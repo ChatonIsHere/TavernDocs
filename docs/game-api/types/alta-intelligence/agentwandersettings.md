@@ -1,6 +1,6 @@
 ---
 title: "AgentWanderSettings"
-description: "class AgentWanderSettings in Root.Township."
+description: "Settings for ActiveWander and ActiveBlockCanceleableWander: walk to a random reachable point near the creature."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AgentWanderSettings
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Settings for `ActiveWander` and `ActiveBlockCanceleableWander`: walk to a random reachable point near the creature. Server only.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`AgentNavigationSettings`](/game-api/types/alta-intelligence/agentnavigationsettings)
@@ -27,23 +29,23 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> |
-| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> |
-| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heuristicmaximum" /><code>{"private int heuristicMaximum"}</code> | Backing field for `HeuristicMaximum` (default 20000). |
+| <Link id="m-iscancelingonblocked" /><code>{"private bool isCancelingOnBlocked"}</code> | If true, the wander cancels as soon as the walker is blocked. |
+| <Link id="m-isusingtarget" /><code>{"private bool isUsingTarget"}</code> | Backing field for `IsUsingTarget`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> |
-| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heuristicmaximum-2" /><code>{"int HeuristicMaximum { get; }"}</code> | Search length for the pathfinder's constant path, which limits how far away the random point can be. |
+| <Link id="m-isusingtarget-2" /><code>{"bool IsUsingTarget { get; }"}</code> | Whether the action is scored and run against a target. With the blockable wander, losing the target cancels it. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds `ActiveBlockCanceleableWander` if `isCancelingOnBlocked` is on, otherwise `ActiveWander`, using a target only if `IsUsingTarget`. |

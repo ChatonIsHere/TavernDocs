@@ -36,11 +36,11 @@ Base for a component that holds a list of small child elements (heat points, for
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-syncallchildren" /><code>{"private void SyncAllChildren("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncdifferent" /><code>{"private void SyncDifferent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
-| <Link id="m-syncindividual" /><code>{"private void SyncIndividual("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint index)"}</code> |
-| <Link id="m-syncsame" /><code>{"private void SyncSame("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-syncallchildren" /><code>{"private void SyncAllChildren("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Sync handler for all children. In a full sync, sends one copy if every child is equal; otherwise sends each child that needs it. |
+| <Link id="m-syncdifferent" /><code>{"private void SyncDifferent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads each child, with a flag per child for whether it changed unless it's a full sync. |
+| <Link id="m-syncindividual" /><code>{"private void SyncIndividual("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, uint index)"}</code> | Sync handler for one child by index, sent by `SyncChild`. |
+| <Link id="m-syncsame" /><code>{"private void SyncSame("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Syncs the first child only; on read, copies it to every other child. |
 
 </details>

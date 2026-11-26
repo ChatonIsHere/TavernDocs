@@ -1,6 +1,6 @@
 ---
 title: "LifetimeOperation"
-description: "class LifetimeOperation in Root.Township."
+description: "Prefab scoring component that adds a Lifetime rule."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LifetimeOperation
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Prefab scoring component that adds a `Lifetime` rule.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`TargetOperationComponent`](/game-api/types/alta-intelligence/targetoperationcomponent)
@@ -26,17 +28,17 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maximum" /><code>{"private float maximum"}</code> |
-| <Link id="m-minimum" /><code>{"private float minimum"}</code> |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maximum" /><code>{"private float maximum"}</code> | Age in seconds that maps to 1. |
+| <Link id="m-minimum" /><code>{"private float minimum"}</code> | Age in seconds that maps to 0. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes the `Lifetime` rule, weighted by `multiplier`. |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Lifetime 0 -> 10 (x1)`. |

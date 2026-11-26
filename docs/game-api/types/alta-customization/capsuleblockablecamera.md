@@ -1,6 +1,6 @@
 ---
 title: "CapsuleBlockableCamera"
-description: "class CapsuleBlockableCamera in Root.Township."
+description: "A BlockableCamera that counts as blocked when a capsule in front of the lens overlaps the block layers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CapsuleBlockableCamera
 
 A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+A `BlockableCamera` that counts as blocked when a capsule in front of the lens overlaps the block layers.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** [`BlockableCamera`](/game-api/types/alta-customization/blockablecamera)
@@ -26,24 +28,24 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-height" /><code>{"private float height"}</code> |
-| <Link id="m-radius" /><code>{"private float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-height" /><code>{"private float height"}</code> | Length of the check capsule along the camera's forward axis. |
+| <Link id="m-radius" /><code>{"private float radius"}</code> | Radius of the check capsule. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-updateblockinternal" /><code>{"protected override bool UpdateBlockInternal()"}</code> | Checks a capsule from the camera forward by `height` with `radius` against the settings' block layer mask. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondrawgizmosselected" /><code>{"private void OnDrawGizmosSelected()"}</code> | Editor only: draws the check capsule. |
 
 </details>

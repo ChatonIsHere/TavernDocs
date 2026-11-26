@@ -1,6 +1,6 @@
 ---
 title: "PopulationRaycast.Create"
-description: "class PopulationRaycast.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Populations that makes a new PopulationRaycast asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationRaycast.Create
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Editor menu item under Assets/Create/Township/Features/Populations that makes a new `PopulationRaycast` asset.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`PopulationRaycast`](/game-api/types/alta-world-generation/populationraycast)

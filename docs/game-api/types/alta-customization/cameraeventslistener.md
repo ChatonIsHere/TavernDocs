@@ -1,6 +1,6 @@
 ---
 title: "CameraEventsListener"
-description: "class CameraEventsListener in Root.Township."
+description: "Fires inspector events before and after any hand camera renders for the chosen event types (idle and photo by default)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CameraEventsListener
 
 A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
+
+Fires inspector events before and after any hand camera renders for the chosen event types (idle and photo by default). Not used when headless.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-onpostrender" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPostRender"}</code> |
-| <Link id="m-onprerender" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPreRender"}</code> |
-| <Link id="m-targetevents" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" targetEvents"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onpostrender" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPostRender"}</code> | Event fired after a matching render. |
+| <Link id="m-onprerender" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onPreRender"}</code> | Event fired before a matching render. |
+| <Link id="m-targetevents" /><code>{"private "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" targetEvents"}</code> | Which hand camera events trigger it. |
 
 </details>
 
@@ -39,11 +41,11 @@ A **class** in `Root.Township`, `Alta.ScreenshotCamera`.
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-post" /><code>{"private void Post("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
-| <Link id="m-pre" /><code>{"private void Pre("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Not headless: hooks the static `HandCamera` render events. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Unhooks the render events. |
+| <Link id="m-post" /><code>{"private void Post("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Fires `onPostRender` if the camera event is one of the targets. |
+| <Link id="m-pre" /><code>{"private void Pre("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" renderingCamera, "}<Link to="/game-api/types/alta-customization/handcameraevent">{"HandCameraEvent"}</Link>{" cameraEvent)"}</code> | Fires `onPreRender` if the camera event is one of the targets. |
 
 </details>

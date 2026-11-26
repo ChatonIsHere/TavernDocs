@@ -31,15 +31,15 @@ Global settings asset with shortcuts to prefabs and items used everywhere: pouch
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-blurshader" /><code>{"private Shader blurShader"}</code> |
-| <Link id="m-coinprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" coinPrefab"}</code> |
-| <Link id="m-duplicatepageitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" duplicatePageItem"}</code> |
-| <Link id="m-pageitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" pageItem"}</code> |
-| <Link id="m-playertemplate" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" playerTemplate"}</code> |
-| <Link id="m-pouchdocksettings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" pouchDockSettings"}</code> |
-| <Link id="m-pouchitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" pouchItem"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blurshader" /><code>{"private Shader blurShader"}</code> | Backing field for `BlurShader`. |
+| <Link id="m-coinprefab" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" coinPrefab"}</code> | Backing field for `CoinPrefab`. |
+| <Link id="m-duplicatepageitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" duplicatePageItem"}</code> | Backing field for `DuplicatePageItem`. |
+| <Link id="m-pageitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" pageItem"}</code> | Backing field for `PageItem`. |
+| <Link id="m-playertemplate" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" playerTemplate"}</code> | Backing field for `PlayerTemplate`. |
+| <Link id="m-pouchdocksettings" /><code>{"private "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" pouchDockSettings"}</code> | Backing field for `PouchDockSettings`. |
+| <Link id="m-pouchitem" /><code>{"private "}<Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" pouchItem"}</code> | Backing field for `PouchItem`; `PouchPrefab` also reads its prefab. |
 
 </details>
 

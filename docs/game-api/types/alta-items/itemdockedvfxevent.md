@@ -1,6 +1,6 @@
 ---
 title: "ItemDockedVfxEvent"
-description: "class ItemDockedVfxEvent in Root.Township."
+description: "Plays a pooled effect at a spawn point when items are docked into or undocked from a dock."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemDockedVfxEvent
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Plays a pooled effect at a spawn point when items are docked into or undocked from a dock.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`AbstractDockEvents`](/game-api/types/alta-items/abstractdockevents)
@@ -26,23 +28,23 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> |
-| <Link id="m-firstitemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstItemDockedVfx"}</code> |
-| <Link id="m-itemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemDockedVfx"}</code> |
-| <Link id="m-itemundockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemUndockedVfx"}</code> |
-| <Link id="m-lastitemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lastItemDockedVfx"}</code> |
-| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-btnplay" /><code>{"private bool btnPlay"}</code> | Inspector button that plays the first-docked effect. |
+| <Link id="m-firstitemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" firstItemDockedVfx"}</code> | Effect for the first item docked. |
+| <Link id="m-itemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemDockedVfx"}</code> | Effect for each item docked. |
+| <Link id="m-itemundockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" itemUndockedVfx"}</code> | Effect for each item undocked. |
+| <Link id="m-lastitemdockedvfx" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" lastItemDockedVfx"}</code> | Effect for the last item undocked. |
+| <Link id="m-spawnpoint" /><code>{"private Transform spawnPoint"}</code> | Where effects are spawned. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-firstdocked" /><code>{"protected override void FirstDocked()"}</code> |
-| <Link id="m-itemdocked" /><code>{"protected override void ItemDocked()"}</code> |
-| <Link id="m-itemundocked" /><code>{"protected override void ItemUndocked()"}</code> |
-| <Link id="m-lastundocked" /><code>{"protected override void LastUndocked()"}</code> |
-| <Link id="m-playeffect" /><code>{"protected virtual void PlayEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" vfx)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-firstdocked" /><code>{"protected override void FirstDocked()"}</code> | Plays `firstItemDockedVfx`. |
+| <Link id="m-itemdocked" /><code>{"protected override void ItemDocked()"}</code> | Plays `itemDockedVfx`. |
+| <Link id="m-itemundocked" /><code>{"protected override void ItemUndocked()"}</code> | Plays `itemUndockedVfx`. |
+| <Link id="m-lastundocked" /><code>{"protected override void LastUndocked()"}</code> | Plays `lastItemDockedVfx` (despite the name, on the last undock). |
+| <Link id="m-playeffect" /><code>{"protected virtual void PlayEffect("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" vfx)"}</code> | Spawns the given pooled effect at `spawnPoint`, if set. |

@@ -1,6 +1,6 @@
 ---
 title: "SpiritStateSettings.Create"
-description: "class SpiritStateSettings.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Player that makes a new SpiritStateSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SpiritStateSettings.Create
 
 A **class** in `Root.Township`, `Alta.PlayerStates`.
+
+Editor menu item under Assets/Create/Township/Features/Player that makes a new `SpiritStateSettings` asset.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`SpiritStateSettings`](/game-api/types/alta-player/spiritstatesettings)

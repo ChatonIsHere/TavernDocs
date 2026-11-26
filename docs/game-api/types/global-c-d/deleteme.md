@@ -1,6 +1,6 @@
 ---
 title: "DeleteMe"
-description: "class DeleteMe in Root.Township."
+description: "Leftover test component that logs the vertex count of some meshes from a context menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DeleteMe
 
 A **class** in `Root.Township`, no namespace.
+
+Leftover test component that logs the vertex count of some meshes from a context menu.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-blah" /><code>{"private Mesh[] blah"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blah" /><code>{"private Mesh[] blah"}</code> | Meshes to check. |
 
 </details>
 
@@ -37,8 +39,8 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-test" /><code>{"private void Test()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-test" /><code>{"private void Test()"}</code> | Context menu action that logs each mesh's vertex count. |
 
 </details>

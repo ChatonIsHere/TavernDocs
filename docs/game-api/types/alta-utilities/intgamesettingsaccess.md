@@ -1,6 +1,6 @@
 ---
 title: "IntGameSettingsAccess"
-description: "class IntGameSettingsAccess in Root.Township."
+description: "Settings field access for an int setting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # IntGameSettingsAccess
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Settings field access for an int setting.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`SettingsFieldAccess<int>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype)

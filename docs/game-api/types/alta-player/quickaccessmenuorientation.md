@@ -1,6 +1,6 @@
 ---
 title: "QuickAccessMenuOrientation"
-description: "enum QuickAccessMenuOrientation in Root.Township."
+description: "How the quick access menu is oriented: to the head in world space, to the controller fully, or to the controller without roll."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # QuickAccessMenuOrientation
 
 An **enum** in `Root.Township`, `Alta.QuickAccessActions`.
+
+How the quick access menu is oriented: to the head in world space, to the controller fully, or to the controller without roll.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 

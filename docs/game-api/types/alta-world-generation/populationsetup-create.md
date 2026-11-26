@@ -1,6 +1,6 @@
 ---
 title: "PopulationSetup.Create"
-description: "class PopulationSetup.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Populations that makes a new PopulationSetup asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PopulationSetup.Create
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Editor menu item under Assets/Create/Township/Features/Populations that makes a new `PopulationSetup` asset.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Nested in** [`PopulationSetup`](/game-api/types/alta-world-generation/populationsetup)

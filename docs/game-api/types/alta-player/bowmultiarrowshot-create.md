@@ -1,6 +1,6 @@
 ---
 title: "BowMultiArrowShot.Create"
-description: "class BowMultiArrowShot.Create in Root.Township."
+description: "Editor menu entry for creating a BowMultiArrowShot asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowMultiArrowShot.Create
 
 A **class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Editor menu entry for creating a `BowMultiArrowShot` asset.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`BowMultiArrowShot`](/game-api/types/alta-player/bowmultiarrowshot)

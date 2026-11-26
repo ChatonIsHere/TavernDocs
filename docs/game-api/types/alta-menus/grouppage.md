@@ -40,8 +40,8 @@ Base for a page in the server management UI that shows one joined group. Client 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-resetpage" /><code>{"private void ResetPage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-resetpage" /><code>{"private void ResetPage()"}</code> | Clears the current group and calls `OnGroupDataChange`. Called by `SetupForGroup` before it sets the new group. |
 
 </details>

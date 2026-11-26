@@ -1,6 +1,6 @@
 ---
 title: "SerializedFullEmptyStatTrigger"
-description: "class SerializedFullEmptyStatTrigger in Root.Township."
+description: "A FullEmptyStatTrigger that saves whether its stat was full, so it does not fire again after a reload."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SerializedFullEmptyStatTrigger
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+A `FullEmptyStatTrigger` that saves whether its stat was full, so it does not fire again after a reload.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`FullEmptyStatTrigger`](/game-api/types/alta-stats-effects/fullemptystattrigger), [`ISavable<SerializedFullEmptyStatTriggerData>`](/game-api/types/global-i-l/isavable-t), [`ISavableSave<SerializedFullEmptyStatTriggerData>`](/game-api/types/alta-world/isavablesave-outt), [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase)

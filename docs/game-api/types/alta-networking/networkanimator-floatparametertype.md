@@ -1,6 +1,6 @@
 ---
 title: "NetworkAnimator.FloatParameterType"
-description: "enum NetworkAnimator.FloatParameterType in Root.Township."
+description: "Kinds of float parameter a NetworkAnimator could sync: a plain float, a layer weight, or either with lerping."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkAnimator.FloatParameterType
 
 An **enum** in `Root.Township`, `Alta.Networking.Animation`.
+
+Kinds of float parameter a `NetworkAnimator` could sync: a plain float, a layer weight, or either with lerping. Probably unused, as nothing else in the code refers to it.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`NetworkAnimator`](/game-api/types/alta-networking/networkanimator)

@@ -1,6 +1,6 @@
 ---
 title: "NetworkRigidbodySaveData"
-description: "class NetworkRigidbodySaveData in Root.Township."
+description: "Save data for a NetworkRigidbody: its transform, motion and sleep state."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkRigidbodySaveData
 
 A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for a `NetworkRigidbody`: its transform, motion and sleep state.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NewSaveData<NetworkRigidbody, NetworkRigidbodySaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,11 +27,11 @@ A **internal class** in `Root.Township`, `Alta.Networking`. Reach it through att
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> |
-| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> |
-| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> |
-| <Link id="m-position" /><code>{"Vector3 position"}</code> |
-| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> |
-| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angularvelocity" /><code>{"Vector3 angularVelocity"}</code> | Saved angular velocity. |
+| <Link id="m-iskinematic" /><code>{"bool isKinematic"}</code> | Whether the body was kinematic. |
+| <Link id="m-isserversleeping" /><code>{"bool isServerSleeping"}</code> | Whether the body was asleep on the server. |
+| <Link id="m-position" /><code>{"Vector3 position"}</code> | Saved position. |
+| <Link id="m-rotation" /><code>{"Quaternion rotation"}</code> | Saved rotation. |
+| <Link id="m-velocity" /><code>{"Vector3 velocity"}</code> | Saved velocity. |

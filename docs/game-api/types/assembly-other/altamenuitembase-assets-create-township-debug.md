@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create.Township.Debug"
-description: "abstract class AltaMenuItemBase.Assets.Create.Township.Debug in Alta.MenuItem."
+description: "Menu path node for Assets/Create/Township/Debug."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create.Township.Debug
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Menu path node for Assets/Create/Township/Debug.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create.Township`](/game-api/types/assembly-other/altamenuitembase-assets-create-township)

@@ -1,6 +1,6 @@
 ---
 title: "MaterialPropertyBlockSettings<T>"
-description: "class MaterialPropertyBlockSettings<T> in Root.Township."
+description: "Generic base for hashed settings assets used with material property blocks."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MaterialPropertyBlockSettings&lt;T&gt;
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Generic base for hashed settings assets used with material property blocks. Adds nothing to `HashedGeneralValue`.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`HashedGeneralValue<T>`](/game-api/types/assembly-other/hashedgeneralvalue-t)

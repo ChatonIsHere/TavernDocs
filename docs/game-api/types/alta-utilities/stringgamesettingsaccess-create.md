@@ -1,6 +1,6 @@
 ---
 title: "StringGameSettingsAccess.Create"
-description: "class StringGameSettingsAccess.Create in Root.Township."
+description: "Editor menu entry that creates a StringGameSettingsAccess asset under Assets/Create/Global Settings/Field Access."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StringGameSettingsAccess.Create
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Editor menu entry that creates a `StringGameSettingsAccess` asset under Assets/Create/Global Settings/Field Access.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`StringGameSettingsAccess`](/game-api/types/alta-utilities/stringgamesettingsaccess)

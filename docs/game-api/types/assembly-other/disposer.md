@@ -1,6 +1,6 @@
 ---
 title: "Disposer"
-description: "class Disposer in Alta.LifecycleManagement.Runtime."
+description: "IDisposer that tracks disposables and disposes them all when it is disposed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Disposer
 
 A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
+
+`IDisposer` that tracks disposables and disposes them all when it is disposed. Not thread-safe.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IDisposer`](/game-api/types/assembly-other/idisposer), `IDisposable`
@@ -27,28 +29,28 @@ A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> |
-| <Link id="m-trackeddisposables" /><code>{"private readonly HashSet<IDisposable> trackedDisposables"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdisposed" /><code>{"private bool isDisposed"}</code> | Whether it has been disposed. |
+| <Link id="m-trackeddisposables" /><code>{"private readonly HashSet<IDisposable> trackedDisposables"}</code> | The tracked disposables. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> |
-| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> |
-| <Link id="m-dispose" /><code>{"void Dispose()"}</code> |
-| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-preventstripping" /><code>{"static void __PreventStripping()"}</code> | Creates an instance so the build doesn't strip the class. |
+| <Link id="m-add" /><code>{"void Add(IDisposable disposable)"}</code> | Tracks a disposable, or disposes it at once if this is already disposed. |
+| <Link id="m-dispose" /><code>{"void Dispose()"}</code> | Disposes every tracked disposable, once. |
+| <Link id="m-finalize" /><code>{"protected override void Finalize()"}</code> | If never disposed, the finalizer still disposes the tracked items, on the garbage collector's thread. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-dispose-2" /><code>{"private void Dispose(bool dispose)"}</code> |
-| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dispose-2" /><code>{"private void Dispose(bool dispose)"}</code> | Disposes every tracked disposable, once. |
+| <Link id="m-releaseunmanagedresources" /><code>{"private void ReleaseUnmanagedResources()"}</code> | Disposes and forgets every tracked disposable. |
 
 </details>

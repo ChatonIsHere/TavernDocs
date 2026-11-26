@@ -1,6 +1,6 @@
 ---
 title: "PickupTag.Create"
-description: "class PickupTag.Create in Root.Township."
+description: "Editor menu entry for creating a PickupTag asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupTag.Create
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Editor menu entry for creating a `PickupTag` asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`PickupTag`](/game-api/types/alta-items/pickuptag)

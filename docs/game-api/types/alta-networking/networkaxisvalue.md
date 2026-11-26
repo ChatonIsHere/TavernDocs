@@ -35,18 +35,18 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 <details>
 <summary>10 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-fixedupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" fixedUpdate"}</code> |
-| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> |
-| <Link id="m-hassynced" /><code>{"private bool hasSynced"}</code> |
-| <Link id="m-isalwayssnapping" /><code>{"private bool isAlwaysSnapping"}</code> |
-| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> |
-| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> |
-| <Link id="m-precision" /><code>{"private float precision"}</code> |
-| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> |
-| <Link id="m-value" /><code>{"private float value"}</code> |
-| <Link id="m-valuethreshold" /><code>{"private float valueThreshold"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fixedupdate" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" fixedUpdate"}</code> | The registered fixed update lerp, or null when not lerping. |
+| <Link id="m-fixedupdatelerptime" /><code>{"private float fixedUpdateLerpTime"}</code> | Lerp factor per fixed update on clients; 1 or more means always snap. |
+| <Link id="m-hassynced" /><code>{"private bool hasSynced"}</code> | True once a value has been sent or received. |
+| <Link id="m-isalwayssnapping" /><code>{"private bool isAlwaysSnapping"}</code> | True on the server or when lerping is off, so values are applied at once. |
+| <Link id="m-issnapping" /><code>{"private bool isSnapping"}</code> | True while a snap is waiting for the end of receiving. |
+| <Link id="m-localaxis" /><code>{"private Vector3 localAxis"}</code> | The normalized axis the value is measured along. |
+| <Link id="m-precision" /><code>{"private float precision"}</code> | Step size used to pack the value. |
+| <Link id="m-snapthreshold" /><code>{"private float snapThreshold"}</code> | Difference above which clients snap instead of lerping (-1 turns snapping off). |
+| <Link id="m-value" /><code>{"private float value"}</code> | The last synced value. |
+| <Link id="m-valuethreshold" /><code>{"private float valueThreshold"}</code> | Smallest change that counts as worth sending or lerping. |
 
 </details>
 
@@ -62,11 +62,11 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 <details>
 <summary>3 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> |
-| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-inetworkserialized-maximumbits" /><code>{"private int Alta.Networking.INetworkSerialized.MaximumBits { get; }"}</code> | Bits needed for the value at the set precision over the range. |
+| <Link id="m-alta-networking-inetworkserialized-prepareforwritetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.PrepareForWriteTimer { get; }"}</code> | Returns the shared `prepareForWriteTimer`. |
+| <Link id="m-alta-networking-inetworkserialized-serializetimer" /><code>{"private "}<Link to="/game-api/types/alta-networking/accumulativeaveragecount">{"AccumulativeAverageCount"}</Link>{" Alta.Networking.INetworkSerialized.SerializeTimer { get; }"}</code> | Returns the shared `serializeTimer`. |
 
 </details>
 
@@ -86,11 +86,11 @@ Base for a networked value along one axis (a slider, lever or hinge position). T
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
-| <Link id="m-snap" /><code>{"private void Snap()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handleremote" /><code>{"private void HandleRemote()"}</code> | Client fixed update: lerps toward the synced value, then sets it exactly and stops once close enough. |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Stops the fixed update lerp. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Restarts the fixed update lerp if the entity is set up and not always snapping. |
+| <Link id="m-snap" /><code>{"private void Snap()"}</code> | Applies the synced value straight away; runs at the end of receiving. |
 
 </details>

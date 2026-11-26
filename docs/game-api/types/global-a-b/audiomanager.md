@@ -29,17 +29,17 @@ Plays Wwise sound effects, one shot at a point, on an object, or on a given Wwis
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-currentsoundeffectsmapping" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectsmap">{"SoundEffectsMap"}</Link>{" currentSoundEffectsMapping"}</code> |
-| <Link id="m-isignoringmultiplecallsinsameframe" /><code>{"private bool isIgnoringMultipleCallsInSameFrame"}</code> |
-| <Link id="m-ismuted" /><code>{"private bool isMuted"}</code> |
-| <Link id="m-issounddisabledonserver" /><code>{"private bool isSoundDisabledOnServer"}</code> |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-soundeffectcallerids" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{", HashSet<int>> soundEffectCallerIds"}</code> |
-| <Link id="m-staticaudiocontrol" /><code>{"private static "}<Link to="/game-api/types/global-s/simpleaudiocontrol">{"SimpleAudioControl"}</Link>{" staticAudioControl"}</code> |
-| <Link id="m-tempwwiseaudiodefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" tempWwiseAudioDefinition"}</code> |
-| <Link id="m-waitforload" /><code>{"private Task waitForLoad"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentsoundeffectsmapping" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectsmap">{"SoundEffectsMap"}</Link>{" currentSoundEffectsMapping"}</code> | Map from old `SoundEffect` enum values to sound sets, used by `Resolve` as a fallback. |
+| <Link id="m-isignoringmultiplecallsinsameframe" /><code>{"private bool isIgnoringMultipleCallsInSameFrame"}</code> | If true, the same caller can play a given sound set only once per frame. |
+| <Link id="m-ismuted" /><code>{"private bool isMuted"}</code> | Backing field for `IsMuted`. |
+| <Link id="m-issounddisabledonserver" /><code>{"private bool isSoundDisabledOnServer"}</code> | If true, starting a server suspends Wwise and mutes. |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger for this class. |
+| <Link id="m-soundeffectcallerids" /><code>{"private Dictionary<"}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{", HashSet<int>> soundEffectCallerIds"}</code> | Per sound set, the caller instance ids that played it this frame. |
+| <Link id="m-staticaudiocontrol" /><code>{"private static "}<Link to="/game-api/types/global-s/simpleaudiocontrol">{"SimpleAudioControl"}</Link>{" staticAudioControl"}</code> | Shared control object reused for uncontrolled plays. |
+| <Link id="m-tempwwiseaudiodefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" tempWwiseAudioDefinition"}</code> | Pooled object definition for temporary Wwise emitters used by one-shot sounds. |
+| <Link id="m-waitforload" /><code>{"private Task waitForLoad"}</code> | Task that completes once Wwise is ready. |
 
 </details>
 
@@ -74,21 +74,21 @@ Plays Wwise sound effects, one shot at a point, on an object, or on a given Wwis
 <details>
 <summary>14 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-disablesound" /><code>{"private void DisableSound()"}</code> |
-| <Link id="m-enablesound" /><code>{"private void EnableSound()"}</code> |
-| <Link id="m-getsoundeventobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set, Vector3 position)"}</code> |
-| <Link id="m-getsoundeventobject-2" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set, Transform transformAttachedTo)"}</code> |
-| <Link id="m-getsoundeventobject-3" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set)"}</code> |
-| <Link id="m-inputdebugstopaudio" /><code>{"private static bool InputDebugStopAudio()"}</code> |
-| <Link id="m-isaudiovalid" /><code>{"private bool IsAudioValid("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, out Event soundEvent)"}</code> |
-| <Link id="m-isvalidsoundcallthisframe" /><code>{"private bool IsValidSoundCallThisFrame("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller)"}</code> |
-| <Link id="m-playinternal" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" PlayInternal("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties, bool isControlled, Action endAction = null)"}</code> |
-| <Link id="m-playinternaloneshot" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" PlayInternalOneShot("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" pooledAudio, GameObject caller, "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties, bool isControlled)"}</code> |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-stopallwwiseaudio" /><code>{"private static void StopAllWwiseAudio()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
-| <Link id="m-waitforload-2" /><code>{"private async Task WaitForLoad()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disablesound" /><code>{"private void DisableSound()"}</code> | Suspends Wwise and mutes if `isSoundDisabledOnServer`; when headless also drops the sound map and unloads assets. Runs on server start. |
+| <Link id="m-enablesound" /><code>{"private void EnableSound()"}</code> | Wakes Wwise from suspend and unmutes. Runs on client start. |
+| <Link id="m-getsoundeventobject" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set, Vector3 position)"}</code> | Gets a pooled temporary Wwise object for a sound, optionally placed at a position or attached to a transform. Null if the set has no event. |
+| <Link id="m-getsoundeventobject-2" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set, Transform transformAttachedTo)"}</code> | Gets a pooled temporary Wwise object for a sound, optionally placed at a position or attached to a transform. Null if the set has no event. |
+| <Link id="m-getsoundeventobject-3" /><code>{"private "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" GetSoundEventObject("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" set)"}</code> | Gets a pooled temporary Wwise object for a sound, optionally placed at a position or attached to a transform. Null if the set has no event. |
+| <Link id="m-inputdebugstopaudio" /><code>{"private static bool InputDebugStopAudio()"}</code> | True on the frame S is pressed while Shift and W are held. |
+| <Link id="m-isaudiovalid" /><code>{"private bool IsAudioValid("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller, out Event soundEvent)"}</code> | Checks a sound can play: not headless or muted, has a valid event, and not a repeat call this frame. |
+| <Link id="m-isvalidsoundcallthisframe" /><code>{"private bool IsValidSoundCallThisFrame("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, GameObject caller)"}</code> | Blocks the same caller from playing the same sound set twice in one frame, when that option is on. |
+| <Link id="m-playinternal" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" PlayInternal("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, AkGameObj akGameObj, GameObject caller, "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties, bool isControlled, Action endAction = null)"}</code> | Plays the sound's event on a Wwise object and returns an `AudioControl` only when a controlled play was asked for. |
+| <Link id="m-playinternaloneshot" /><code>{"private "}<Link to="/game-api/types/global-a-b/audiocontrol">{"AudioControl"}</Link>{" PlayInternalOneShot("}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" soundEffect, "}<Link to="/game-api/types/global-p/pooledtempwwiseaudio">{"PooledTempWwiseAudio"}</Link>{" pooledAudio, GameObject caller, "}<Link to="/game-api/types/global-i-l/isoundproperty">{"ISoundProperty"}</Link>{"[] soundProperties, bool isControlled)"}</code> | Registers a pooled temporary Wwise object and plays on it, releasing it back to the pool when the sound ends. |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Subscribes to server and client start to disable or enable sound. |
+| <Link id="m-stopallwwiseaudio" /><code>{"private static void StopAllWwiseAudio()"}</code> | Stops all Wwise audio, only in a debug editor build. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Clears the per-frame caller list and checks the debug stop-audio keys. |
+| <Link id="m-waitforload-2" /><code>{"private async Task WaitForLoad()"}</code> | Waits until Wwise is initialised, then sets the game name. Awaited by `WhenReady`. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "AnimationTrigger"
-description: "class AnimationTrigger in Root.Township."
+description: "Fires inspector events when the object is enabled or disabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimationTrigger
 
 A **class** in `Root.Township`, no namespace.
+
+Fires inspector events when the object is enabled or disabled. The disable event is skipped while the game is quitting.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,28 +28,28 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> |
-| <Link id="m-onenable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onDisable"}</code> | Backing field for `Disabled`. |
+| <Link id="m-onenable" /><code>{"private "}<Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" onEnable"}</code> | Backing field for `Enabled`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-disabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> |
-| <Link id="m-enabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-disabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Disabled { get; }"}</code> | Event fired on disable (not while quitting). |
+| <Link id="m-enabled" /><code><Link to="/game-api/types/global-a-b/altaevent">{"AltaEvent"}</Link>{" Enabled { get; }"}</code> | Event fired on enable. |
 
 ## Methods
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable-2" /><code>{"private void OnDisable()"}</code> | Invokes `onDisable` unless the application is quitting. |
+| <Link id="m-onenable-2" /><code>{"private void OnEnable()"}</code> | Invokes `onEnable`. |
 
 </details>

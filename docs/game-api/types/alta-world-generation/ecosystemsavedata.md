@@ -1,6 +1,6 @@
 ---
 title: "EcosystemSaveData"
-description: "class EcosystemSaveData in Root.Township."
+description: "Save data (version 1) for an Ecosystem: the spawn point positions of each population in it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EcosystemSaveData
 
 A **class** in `Root.Township`, `Alta.Populations`.
+
+Save data (version 1) for an `Ecosystem`: the spawn point positions of each population in it.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** [`NewSaveData<Ecosystem, EcosystemSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -26,6 +28,6 @@ A **class** in `Root.Township`, `Alta.Populations`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-entries" /><code><Link to="/game-api/types/alta-world-generation/ecosystemsavedata-entry">{"EcosystemSaveData.Entry"}</Link>{"[] entries"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entries" /><code><Link to="/game-api/types/alta-world-generation/ecosystemsavedata-entry">{"EcosystemSaveData.Entry"}</Link>{"[] entries"}</code> | One entry per population, with its key and spawn point positions and rotations. |

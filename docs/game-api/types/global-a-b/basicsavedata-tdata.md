@@ -29,9 +29,9 @@ Base for save data types that are also their own savable: applying the data copi
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | NLog logger, used when a migration is asked for that this type doesn't provide. |
 
 </details>
 

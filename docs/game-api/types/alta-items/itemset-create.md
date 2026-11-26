@@ -1,6 +1,6 @@
 ---
 title: "ItemSet.Create"
-description: "class ItemSet.Create in Root.Township."
+description: "Editor menu entry for creating an ItemSet asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemSet.Create
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Editor menu entry for creating an `ItemSet` asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`ItemSet`](/game-api/types/alta-items/itemset)

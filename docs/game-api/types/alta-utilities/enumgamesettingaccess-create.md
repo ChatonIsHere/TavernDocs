@@ -1,6 +1,6 @@
 ---
 title: "EnumGameSettingAccess.Create"
-description: "class EnumGameSettingAccess.Create in Root.Township."
+description: "Editor menu entry that creates an EnumGameSettingAccess asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # EnumGameSettingAccess.Create
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Editor menu entry that creates an `EnumGameSettingAccess` asset.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`EnumGameSettingAccess`](/game-api/types/alta-utilities/enumgamesettingaccess)

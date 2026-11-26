@@ -29,10 +29,10 @@ A serializable pair of an object and a float, for inspector lists of weighted or
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-topic" /><code>{"private T topic"}</code> |
-| <Link id="m-value" /><code>{"private float value"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-topic" /><code>{"private T topic"}</code> | Backing field for `Topic`. |
+| <Link id="m-value" /><code>{"private float value"}</code> | Backing field for `Value`. |
 
 </details>
 

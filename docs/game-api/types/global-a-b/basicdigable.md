@@ -1,6 +1,6 @@
 ---
 title: "BasicDigable"
-description: "class BasicDigable in Root.Township."
+description: "Something a digging tool can dig up (IDigable)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BasicDigable
 
 A **class** in `Root.Township`, no namespace.
+
+Something a digging tool can dig up (`IDigable`). The server runs the dug event and sends dig or hit effects to clients in nearby chunks.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`NetworkEntityBehaviour`](/game-api/types/alta-networking/networkentitybehaviour), [`IDigable`](/game-api/types/global-i-l/idigable)
@@ -27,28 +29,28 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondighiteffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDigHitEffects"}</code> |
-| <Link id="m-ondugeffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDugEffects"}</code> |
-| <Link id="m-ondugserver" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDugServer"}</code> |
-| <Link id="m-syncdig" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDig"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondighiteffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDigHitEffects"}</code> | Effect for a digging hit, played at this position. |
+| <Link id="m-ondugeffects" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDugEffects"}</code> | Effect for being dug up, played at this position. |
+| <Link id="m-ondugserver" /><code>{"private "}<Link to="/game-api/types/global-p/positionevent">{"PositionEvent"}</Link>{" onDugServer"}</code> | Server-only event when dug, for the gameplay result. |
+| <Link id="m-syncdig" /><code>{"private "}<Link to="/game-api/types/alta-networking/methodsyncstruct-t">{"MethodSyncStruct"}</Link>{"<bool> syncDig"}</code> | Network sync for dig effects, sent as an effect request. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-dig" /><code>{"virtual void Dig(float diggingDamage)"}</code> |
-| <Link id="m-diggingtoolhit" /><code>{"void DiggingToolHit()"}</code> |
-| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dig" /><code>{"virtual void Dig(float diggingDamage)"}</code> | Server: plays dug effects (unless headless), syncs them to clients and invokes `onDugServer`. Virtual. |
+| <Link id="m-diggingtoolhit" /><code>{"void DiggingToolHit()"}</code> | Server: plays the hit effect for a dig that didn't finish and syncs it to clients. |
+| <Link id="m-initialize" /><code>{"override void Initialize()"}</code> | Creates the sync message used to send dig effects. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-syncdig-2" /><code>{"private void SyncDig("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isDig)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-syncdig-2" /><code>{"private void SyncDig("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream, bool isDig)"}</code> | Message handler: clients play the dug effect when the flag is true and the hit effect when false. |
 
 </details>

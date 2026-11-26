@@ -1,6 +1,6 @@
 ---
 title: "VelocityLimitOperation"
-description: "class VelocityLimitOperation in Root.Township."
+description: "Prefab scoring component that adds a VelocityLimit rule on the creature's speed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VelocityLimitOperation
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Prefab scoring component that adds a `VelocityLimit` rule on the creature's speed.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`TargetOperationComponent`](/game-api/types/alta-intelligence/targetoperationcomponent)
@@ -26,18 +28,18 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maximimumvelocitysquared" /><code>{"private float maximimumVelocitySquared"}</code> |
-| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> |
-| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> |
-| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maximimumvelocitysquared" /><code>{"private float maximimumVelocitySquared"}</code> | The speed limit, squared (default 1). The inspector shows it unsquared. |
+| <Link id="m-multiplier" /><code>{"private float multiplier"}</code> | Weight of the rule. Only matters for preferred rules. |
+| <Link id="m-outsidelimitvalue" /><code>{"private float outsideLimitValue"}</code> | Value at or above the limit (default 0). |
+| <Link id="m-withinlimitvalue" /><code>{"private float withinLimitValue"}</code> | Value below the limit (default 1). |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> |
-| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getoperation" /><code>{"override "}<Link to="/game-api/types/alta-intelligence/targetoperation">{"TargetOperation"}</Link>{" GetOperation()"}</code> | Makes the `VelocityLimit` rule, weighted by `multiplier`. |
+| <Link id="m-getname" /><code>{"protected override string GetName()"}</code> | Builds the GameObject name, like `Velocity < 1 ? 1 : 0 (x1)`. |

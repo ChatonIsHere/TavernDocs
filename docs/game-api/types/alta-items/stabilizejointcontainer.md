@@ -1,6 +1,6 @@
 ---
 title: "StabilizeJointContainer"
-description: "class StabilizeJointContainer in Root.Township."
+description: "StabilizePickupJoint for jointed containers (bags): also scales a held visual and hides the storage visual while docked."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StabilizeJointContainer
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+`StabilizePickupJoint` for jointed containers (bags): also scales a held visual and hides the storage visual while docked.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`StabilizePickupJoint`](/game-api/types/alta-items/stabilizepickupjoint)
@@ -27,18 +29,18 @@ A **class** in `Root.Township`, `Alta.Inventory`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-heldscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" heldScaler"}</code> |
-| <Link id="m-storage" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" storage"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heldscaler" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" heldScaler"}</code> | Visual scaled on while the container is held. |
+| <Link id="m-storage" /><code>{"private "}<Link to="/game-api/types/global-c-d/curvescaler">{"CurveScaler"}</Link>{" storage"}</code> | Storage visual hidden while docked. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-docked" /><code>{"protected override void Docked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
-| <Link id="m-starthandlingtopositionchanges" /><code>{"protected override void StartHandlingToPositionChanges("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-stophandlingtopositionchanges" /><code>{"protected override void StopHandlingToPositionChanges("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> |
-| <Link id="m-undocked" /><code>{"protected override void Undocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-docked" /><code>{"protected override void Docked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Shrinks and hides the storage visual, then runs the base dock handling. |
+| <Link id="m-starthandlingtopositionchanges" /><code>{"protected override void StartHandlingToPositionChanges("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Scales up the held visual, then starts the base handling. |
+| <Link id="m-stophandlingtopositionchanges" /><code>{"protected override void StopHandlingToPositionChanges("}<Link to="/game-api/types/global-i-l/interactable">{"Interactable"}</Link>{" interactable, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor)"}</code> | Scales down the held visual unless docked, then stops the base handling. |
+| <Link id="m-undocked" /><code>{"protected override void Undocked("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock)"}</code> | Shows the storage visual again, then runs the base undock handling. |

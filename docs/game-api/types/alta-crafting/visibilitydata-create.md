@@ -1,6 +1,6 @@
 ---
 title: "VisibilityData.Create"
-description: "class VisibilityData.Create in Root.Township."
+description: "Editor menu entry for creating a VisibilityData asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # VisibilityData.Create
 
 A **class** in `Root.Township`, `Alta.Scrapper.Data`.
+
+Editor menu entry for creating a `VisibilityData` asset.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`VisibilityData`](/game-api/types/alta-crafting/visibilitydata)

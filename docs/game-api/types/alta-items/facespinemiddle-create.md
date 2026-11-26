@@ -1,6 +1,6 @@
 ---
 title: "FaceSpineMiddle.Create"
-description: "class FaceSpineMiddle.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Pages/Flairs that makes a new FaceSpineMiddle book flair asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FaceSpineMiddle.Create
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Editor menu item under Assets/Create/Township/Features/Pages/Flairs that makes a new `FaceSpineMiddle` book flair asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`FaceSpineMiddle`](/game-api/types/alta-items/facespinemiddle)

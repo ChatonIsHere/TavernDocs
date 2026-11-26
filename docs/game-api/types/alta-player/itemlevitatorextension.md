@@ -1,6 +1,6 @@
 ---
 title: "ItemLevitatorExtension"
-description: "abstract class ItemLevitatorExtension in Root.Township."
+description: "Base component that adds a condition to the ItemLevitator on the same object: hovering is only allowed while IsValid returns true."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ItemLevitatorExtension
 
 An **abstract class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Base component that adds a condition to the `ItemLevitator` on the same object: hovering is only allowed while `IsValid` returns true.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** `MonoBehaviour`
@@ -23,22 +25,22 @@ An **abstract class** in `Root.Township`, `Alta.Progression.Skills`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-levitator" /><code>{"protected "}<Link to="/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-levitator" /><code>{"protected "}<Link to="/game-api/types/alta-player/itemlevitator">{"ItemLevitator"}</Link>{" levitator"}</code> | The `ItemLevitator` on the same object. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalid" /><code>{"protected abstract bool IsValid()"}</code> | Subclasses return whether the item may hover now. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Finds the `ItemLevitator` and hooks its `CheckHover` event. |
+| <Link id="m-checkhover" /><code>{"private void CheckHover(ref bool isValid)"}</code> | Handler for the levitator's check: clears the valid flag if `IsValid` is false. |
 
 </details>

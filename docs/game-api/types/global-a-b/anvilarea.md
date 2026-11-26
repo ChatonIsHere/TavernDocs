@@ -1,6 +1,6 @@
 ---
 title: "AnvilArea"
-description: "class AnvilArea in Root.Township."
+description: "Empty marker component for an anvil's striking area."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnvilArea
 
 A **class** in `Root.Township`, no namespace.
+
+Empty marker component for an anvil's striking area. `AnvilFilterSettings` filters impacts by it.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`

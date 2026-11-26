@@ -1,6 +1,6 @@
 ---
 title: "QuickAccessSettingsBoard.SettingsControl"
-description: "delegate QuickAccessSettingsBoard.SettingsControl in Root.Township."
+description: "Private delegate for the per frame show or hide step during the board's slide animation; it gets the board's position and a running distance it updates."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # QuickAccessSettingsBoard.SettingsControl
 
 A **private delegate** in `Root.Township`, `Alta.QuickAccessActions`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private delegate for the per frame show or hide step during the board's slide animation; it gets the board's position and a running distance it updates.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`QuickAccessSettingsBoard`](/game-api/types/alta-player/quickaccesssettingsboard)

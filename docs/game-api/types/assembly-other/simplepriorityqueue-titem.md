@@ -1,6 +1,6 @@
 ---
 title: "SimplePriorityQueue<TItem>"
-description: "class SimplePriorityQueue<TItem> in Alta.Timing.Runtime."
+description: "SimplePriorityQueue with a float priority."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimplePriorityQueue&lt;TItem&gt;
 
 A **class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
+
+`SimplePriorityQueue` with a float priority.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`SimplePriorityQueue<TItem, float>`](/game-api/types/assembly-other/simplepriorityqueue-titem-tpriority)

@@ -1,6 +1,6 @@
 ---
 title: "TreeEvent"
-description: "class TreeEvent in Root.Township."
+description: "Serializable Unity event that passes a WoodcutTree."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TreeEvent
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+Serializable Unity event that passes a `WoodcutTree`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** `UnityEvent<WoodcutTree>`

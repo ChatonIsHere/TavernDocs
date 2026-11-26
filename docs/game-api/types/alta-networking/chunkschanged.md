@@ -1,6 +1,6 @@
 ---
 title: "ChunksChanged"
-description: "delegate ChunksChanged in Root.Township."
+description: "Callback for a change of chunks: the chunks that were left and the chunk that was joined."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunksChanged
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback for a change of chunks: the chunks that were left and the chunk that was joined.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

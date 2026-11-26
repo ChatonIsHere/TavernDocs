@@ -1,6 +1,6 @@
 ---
 title: "DissipateToolBasedEffect"
-description: "class DissipateToolBasedEffect in Root.Township."
+description: "Tool-based effect that fades its material's _Progress from 1 to 0 over a set time, then cleans up and returns to the pool."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DissipateToolBasedEffect
 
 A **class** in `Root.Township`, no namespace.
+
+Tool-based effect that fades its material's `_Progress` from 1 to 0 over a set time, then cleans up and returns to the pool.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`ToolBasedEffectBase`](/game-api/types/global-t-x/toolbasedeffectbase)
@@ -26,14 +28,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animationduration" /><code>{"private float animationDuration"}</code> | Seconds the fade takes. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animate" /><code>{"protected override IEnumerator Animate(bool isIn) (iterator)"}</code> | Fades the progress down over `animationDuration`, then releases. The direction argument is ignored. |

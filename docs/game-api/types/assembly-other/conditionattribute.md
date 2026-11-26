@@ -1,6 +1,6 @@
 ---
 title: "ConditionAttribute"
-description: "class ConditionAttribute in Alta.Attributes."
+description: "Inspector attribute that shows, hides or locks a field depending on a bool member of the same object."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConditionAttribute
 
 A **class** in `Alta.Attributes`, no namespace.
+
+Inspector attribute that shows, hides or locks a field depending on a bool member of the same object.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** `PropertyAttribute`
@@ -24,8 +26,8 @@ A **class** in `Alta.Attributes`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-boolean" /><code>{"string Boolean { get; private set; }"}</code> |
-| <Link id="m-falsemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" FalseMode { get; private set; }"}</code> |
-| <Link id="m-truemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" TrueMode { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-boolean" /><code>{"string Boolean { get; private set; }"}</code> | Name of the bool member to check. |
+| <Link id="m-falsemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" FalseMode { get; private set; }"}</code> | How the field is drawn when the bool is false. Default hidden. |
+| <Link id="m-truemode" /><code><Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" TrueMode { get; private set; }"}</code> | How the field is drawn when the bool is true. Default editable. |

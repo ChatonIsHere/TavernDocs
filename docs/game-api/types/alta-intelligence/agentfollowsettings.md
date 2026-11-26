@@ -1,6 +1,6 @@
 ---
 title: "AgentFollowSettings"
-description: "class AgentFollowSettings in Root.Township."
+description: "Settings for ActiveFollow: chase the target with the pathfinder until close, giving up past a distance unless the target has hurt the creature enough."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AgentFollowSettings
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Settings for `ActiveFollow`: chase the target with the pathfinder until close, giving up past a distance unless the target has hurt the creature enough. Server only.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`AgentNavigationSettings`](/game-api/types/alta-intelligence/agentnavigationsettings)
@@ -27,26 +29,26 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-giveupdistance" /><code>{"private float giveUpDistance"}</code> |
-| <Link id="m-giveuphurtmaximum" /><code>{"private float giveUpHurtMaximum"}</code> |
-| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> |
-| <Link id="m-targetreachedrandomextra" /><code>{"private float targetReachedRandomExtra"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-giveupdistance" /><code>{"private float giveUpDistance"}</code> | Backing field for `GiveUpDistance` (default -1, so any path length counts as too far). |
+| <Link id="m-giveuphurtmaximum" /><code>{"private float giveUpHurtMaximum"}</code> | Backing field for `GiveUpHurtMaximum` (default 0). |
+| <Link id="m-targetreacheddistance" /><code>{"private float targetReachedDistance"}</code> | Backing field for `TargetReachedDistance` (default 0.1). |
+| <Link id="m-targetreachedrandomextra" /><code>{"private float targetReachedRandomExtra"}</code> | Backing field for `TargetReachedRandomExtra`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-giveupdistance-2" /><code>{"float GiveUpDistance { get; }"}</code> |
-| <Link id="m-giveuphurtmaximum-2" /><code>{"float GiveUpHurtMaximum { get; }"}</code> |
-| <Link id="m-targetreacheddistance-2" /><code>{"float TargetReachedDistance { get; }"}</code> |
-| <Link id="m-targetreachedrandomextra-2" /><code>{"float TargetReachedRandomExtra { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-giveupdistance-2" /><code>{"float GiveUpDistance { get; }"}</code> | The action cancels when the remaining path is longer than this and the target's hurt is at most `GiveUpHurtMaximum`. |
+| <Link id="m-giveuphurtmaximum-2" /><code>{"float GiveUpHurtMaximum { get; }"}</code> | A target whose `Hurt` value is above this is never given up on for distance. |
+| <Link id="m-targetreacheddistance-2" /><code>{"float TargetReachedDistance { get; }"}</code> | Distance from the target that counts as reached and finishes the action (unless overshooting). |
+| <Link id="m-targetreachedrandomextra-2" /><code>{"float TargetReachedRandomExtra { get; }"}</code> | Up to this much random extra is added to `TargetReachedDistance` each time the action starts. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the shared `ActiveFollow` action, which uses a target. |

@@ -1,6 +1,6 @@
 ---
 title: "ModifiableStaticUnityEvent"
-description: "class ModifiableStaticUnityEvent in Root.Township."
+description: "A serializable UnityEvent that passes a ModifiableStaticObject."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ModifiableStaticUnityEvent
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+A serializable UnityEvent that passes a `ModifiableStaticObject`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `UnityEvent<ModifiableStaticObject>`

@@ -1,6 +1,6 @@
 ---
 title: "ConnectionChannel.Create"
-description: "class ConnectionChannel.Create in Root.Township."
+description: "Editor menu item for creating a ConnectionChannel asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConnectionChannel.Create
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+Editor menu item for creating a `ConnectionChannel` asset.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`ConnectionChannel`](/game-api/types/alta-networking/connectionchannel)

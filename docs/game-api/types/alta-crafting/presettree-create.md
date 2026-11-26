@@ -1,6 +1,6 @@
 ---
 title: "PresetTree.Create"
-description: "class PresetTree.Create in Root.Township."
+description: "Editor menu entry that creates a PresetTree asset under Assets/Create/Township/Features/Woodcutting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PresetTree.Create
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+Editor menu entry that creates a `PresetTree` asset under Assets/Create/Township/Features/Woodcutting.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`PresetTree`](/game-api/types/alta-crafting/presettree)

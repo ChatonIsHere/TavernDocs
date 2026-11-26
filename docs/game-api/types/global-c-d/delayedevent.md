@@ -1,6 +1,6 @@
 ---
 title: "DelayedEvent"
-description: "class DelayedEvent in Root.Township."
+description: "Fires a UnityEvent after a delay, either on start or when Invoke is called (for example from another UnityEvent)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DelayedEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Fires a UnityEvent after a delay, either on start or when `Invoke` is called (for example from another UnityEvent).
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,11 +28,11 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-delayedevent" /><code>{"private UnityEvent delayedEvent"}</code> |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
-| <Link id="m-isinvokedonstart" /><code>{"private bool isInvokedOnStart"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-delayedevent" /><code>{"private UnityEvent delayedEvent"}</code> | The event to fire. |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Delay in seconds; 0 or less fires straight away. |
+| <Link id="m-isinvokedonstart" /><code>{"private bool isInvokedOnStart"}</code> | Whether to start the delay as soon as the object starts. |
 
 </details>
 
@@ -43,9 +45,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-start" /><code>{"private void Start()"}</code> |
-| <Link id="m-triggerevent" /><code>{"private IEnumerator TriggerEvent() (iterator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-start" /><code>{"private void Start()"}</code> | Calls `Invoke` if `isInvokedOnStart` is set. |
+| <Link id="m-triggerevent" /><code>{"private IEnumerator TriggerEvent() (iterator)"}</code> | Waits `duration` seconds and fires the event. |
 
 </details>

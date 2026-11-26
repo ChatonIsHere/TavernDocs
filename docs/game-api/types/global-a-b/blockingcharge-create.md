@@ -1,6 +1,6 @@
 ---
 title: "BlockingCharge.Create"
-description: "class BlockingCharge.Create in Root.Township."
+description: "Editor menu entry for creating a BlockingCharge asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BlockingCharge.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `BlockingCharge` asset.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`BlockingCharge`](/game-api/types/global-a-b/blockingcharge)

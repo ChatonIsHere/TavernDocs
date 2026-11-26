@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Window"
-description: "abstract class AltaMenuItemBase.Window in Alta.MenuItem."
+description: "Editor menu folder Window: menu item classes inherit it to appear under Unity's Window menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Window
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu folder `Window`: menu item classes inherit it to appear under Unity's Window menu. Does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase)

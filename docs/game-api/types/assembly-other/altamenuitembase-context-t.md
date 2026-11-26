@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.CONTEXT<T>"
-description: "abstract class AltaMenuItemBase.CONTEXT<T> in Alta.MenuItem."
+description: "Editor menu item base for a Unity inspector context menu entry on component type T (path CONTEXT/ plus the type name)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.CONTEXT&lt;T&gt;
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu item base for a Unity inspector context menu entry on component type `T` (path `CONTEXT/` plus the type name). Nothing in this build derives from it; does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase)
@@ -24,12 +26,12 @@ An **abstract class** in `Alta.MenuItem`, no namespace.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-target" /><code>{"T Target { get; private set; }"}</code> | The component the context menu was opened on. Its setter is private and nothing in this build sets it. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getpath" /><code>{"override string GetPath()"}</code> | Returns `CONTEXT/` followed by the name of `T`, the path Unity uses for component context menus. |

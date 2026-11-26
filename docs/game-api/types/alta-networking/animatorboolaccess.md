@@ -1,6 +1,6 @@
 ---
 title: "AnimatorBoolAccess"
-description: "class AnimatorBoolAccess in Root.Township."
+description: "Small helper that sets one bool on a plain Unity Animator, so a UnityEvent can drive it."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimatorBoolAccess
 
 A **class** in `Root.Township`, `Alta.Networking.Animation`.
+
+Small helper that sets one bool on a plain Unity `Animator`, so a UnityEvent can drive it. Local only, not networked.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,15 +28,15 @@ A **class** in `Root.Township`, `Alta.Networking.Animation`.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
-| <Link id="m-boolname" /><code>{"private string boolName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | The Unity animator. |
+| <Link id="m-boolname" /><code>{"private string boolName"}</code> | Name of the animator bool. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-set" /><code>{"void Set(bool value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-set" /><code>{"void Set(bool value)"}</code> | Sets the animator bool to the given value. |

@@ -1,6 +1,6 @@
 ---
 title: "MeshPlacementSaveData"
-description: "class MeshPlacementSaveData in Root.Township."
+description: "Save data (version 1) for MeshPlacement: which placement asset it uses."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeshPlacementSaveData
 
 A **internal class** in `Root.Township`, `Alta.Scrapper`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data (version 1) for `MeshPlacement`: which placement asset it uses.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NewSaveData<MeshPlacement, MeshPlacementSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **internal class** in `Root.Township`, `Alta.Scrapper`. Reach it through att-s
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-data" /><code><Link to="/game-api/types/alta-crafting/meshplacementdata">{"MeshPlacementData"}</Link>{" data"}</code> | The placement asset. |

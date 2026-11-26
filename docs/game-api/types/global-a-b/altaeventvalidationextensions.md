@@ -1,6 +1,6 @@
 ---
 title: "AltaEventValidationExtensions"
-description: "static class AltaEventValidationExtensions in Root.Township."
+description: "Extension that cleans broken persistent listeners out of an AltaEvent's inspector UnityEvent, using reflection on Unity internals."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, no namespace.
 
+Extension that cleans broken persistent listeners out of an `AltaEvent`'s inspector `UnityEvent`, using reflection on Unity internals.
+
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Attributes** `Extension`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-validate" /><code>{"static void Validate("}<Link to="/game-api/types/global-i-l/ialtaeventvalidation">{"IAltaEventValidation"}</Link>{" altaEvent)"}</code> | Removes inspector listeners whose target is missing but still name a method, by rebuilding Unity's persistent call list. |

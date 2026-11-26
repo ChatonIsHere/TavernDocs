@@ -1,6 +1,6 @@
 ---
 title: "ColoredExplosiveData"
-description: "class ColoredExplosiveData in Root.Township."
+description: "Save data for a ColoredExplosive."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ColoredExplosiveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `ColoredExplosive`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NewSaveData<ColoredExplosive, ColoredExplosiveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-colorindex" /><code>{"int colorIndex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-colorindex" /><code>{"int colorIndex"}</code> | Saved index into the explosive's colour list. |

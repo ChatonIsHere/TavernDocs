@@ -29,9 +29,9 @@ Wraps a Json.NET `IValueProvider` so values are clamped to a range both when rea
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-baseprovider" /><code>{"private IValueProvider baseProvider"}</code> | The wrapped value provider that does the real get and set. |
 
 </details>
 

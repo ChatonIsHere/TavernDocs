@@ -29,10 +29,10 @@ A pooled object that releases itself back to its pool a set time after it is req
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-destroycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" destroyCoroutine"}</code> |
-| <Link id="m-time" /><code>{"private float time"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-destroycoroutine" /><code>{"private "}<Link to="/game-api/types/assembly-other/altacoroutine">{"AltaCoroutine"}</Link>{" destroyCoroutine"}</code> | The running countdown, restarted each time the object is taken from the pool. |
+| <Link id="m-time" /><code>{"private float time"}</code> | Backing field for `Time`: seconds until release. |
 
 </details>
 

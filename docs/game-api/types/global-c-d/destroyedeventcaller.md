@@ -1,6 +1,6 @@
 ---
 title: "DestroyedEventCaller"
-description: "class DestroyedEventCaller in Root.Township."
+description: "Helper that lets code get a callback when a NetworkEntity's GameObject is destroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DestroyedEventCaller
 
 A **class** in `Root.Township`, no namespace.
+
+Helper that lets code get a callback when a `NetworkEntity`'s GameObject is destroyed. Added to the entity by `AttachTo`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,30 +28,30 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The entity passed to the callback. |
 
 </details>
 
 ## Events
 
-| Member |
-| --- |
-| <Link id="m-callback" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Callback"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-callback" /><code>{"event Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> Callback"}</code> | Raised with the entity when it is destroyed, except while the app is quitting. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-attachto" /><code>{"static void AttachTo("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |
-| <Link id="m-detach" /><code>{"static void Detach("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-attachto" /><code>{"static void AttachTo("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> | Adds the component to the entity if needed and subscribes the callback. |
+| <Link id="m-detach" /><code>{"static void Detach("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" target, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> callback)"}</code> | Unsubscribes the callback. |
 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Raises `Callback` unless the app is quitting. |
 
 </details>

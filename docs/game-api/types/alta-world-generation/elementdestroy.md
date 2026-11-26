@@ -1,6 +1,6 @@
 ---
 title: "ElementDestroy"
-description: "delegate ElementDestroy in Root.Township."
+description: "Callback for when a population's SpawnedElement is destroyed."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ElementDestroy
 
 A **delegate** in `Root.Township`, `Alta.Populations`.
+
+Callback for when a population's `SpawnedElement` is destroyed. Nothing in this build uses it.
 
 - **Listed in** [World generation](/game-api/types/alta-world-generation)
 - **Inherits or implements** `MulticastDelegate`

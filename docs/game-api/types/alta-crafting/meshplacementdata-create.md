@@ -1,6 +1,6 @@
 ---
 title: "MeshPlacementData.Create"
-description: "class MeshPlacementData.Create in Root.Township."
+description: "Editor menu entry for creating a MeshPlacementData asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MeshPlacementData.Create
 
 A **class** in `Root.Township`, `Alta.Scrapper.Data`.
+
+Editor menu entry for creating a `MeshPlacementData` asset.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Nested in** [`MeshPlacementData`](/game-api/types/alta-crafting/meshplacementdata)

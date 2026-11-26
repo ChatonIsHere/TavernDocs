@@ -1,6 +1,6 @@
 ---
 title: "PickupDockSaveData"
-description: "class PickupDockSaveData in Root.Township."
+description: "Save data for a PickupDock (version 2): what is docked and how many."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockSaveData
 
 A **internal class** in `Root.Township`, `Alta.Inventory`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Save data for a `PickupDock` (version 2): what is docked and how many.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`NewSaveData<PickupDock, PickupDockSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,8 +27,8 @@ A **internal class** in `Root.Township`, `Alta.Inventory`. Reach it through att-
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-childindex" /><code>{"int childIndex"}</code> |
-| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> |
-| <Link id="m-quantity" /><code>{"int quantity"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-childindex" /><code>{"int childIndex"}</code> | Index of the saved child entity that is the docked pickup. |
+| <Link id="m-dockedtype" /><code><Link to="/game-api/types/alta-items/item">{"Item"}</Link>{" dockedType"}</code> | Item type in the dock. |
+| <Link id="m-quantity" /><code>{"int quantity"}</code> | How many are stored. |

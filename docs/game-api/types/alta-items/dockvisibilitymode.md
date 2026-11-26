@@ -1,6 +1,6 @@
 ---
 title: "DockVisibilityMode"
-description: "enum DockVisibilityMode in Root.Township."
+description: "How a dock shows itself to the player: not at all, fading alpha, fading size, or a highlight material when close."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DockVisibilityMode
 
 An **enum** in `Root.Township`, `Alta.Inventory`.
+
+How a dock shows itself to the player: not at all, fading alpha, fading size, or a highlight material when close.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 

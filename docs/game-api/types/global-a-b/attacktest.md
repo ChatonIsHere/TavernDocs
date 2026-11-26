@@ -1,6 +1,6 @@
 ---
 title: "AttackTest"
-description: "class AttackTest in Root.Township."
+description: "Debug component that sets the animator's Attack bool while a key is held."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AttackTest
 
 A **class** in `Root.Township`, no namespace.
+
+Debug component that sets the animator's `Attack` bool while a key is held.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,10 +28,10 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-animator" /><code>{"private Animator animator"}</code> |
-| <Link id="m-key" /><code>{"private KeyCode key"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-animator" /><code>{"private Animator animator"}</code> | The animator on this object. |
+| <Link id="m-key" /><code>{"private KeyCode key"}</code> | Key that drives the attack (Space by default). |
 
 </details>
 
@@ -38,9 +40,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-update" /><code>{"private void Update()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Gets the animator on the same object. |
+| <Link id="m-update" /><code>{"private void Update()"}</code> | Sets `Attack` to whether the key is held. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "DistanceSquaredSense.Create"
-description: "class DistanceSquaredSense.Create in Root.Township."
+description: "Editor menu item for making a DistanceSquaredSense asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DistanceSquaredSense.Create
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Editor menu item for making a `DistanceSquaredSense` asset. Does nothing at runtime.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`DistanceSquaredSense`](/game-api/types/alta-intelligence/distancesquaredsense)

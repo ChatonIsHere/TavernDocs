@@ -29,13 +29,13 @@ Base for a creature action component with movement settings for getting to its t
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> |
-| <Link id="m-isovershooting" /><code>{"private bool isOvershooting"}</code> |
-| <Link id="m-istargetremovedonfail" /><code>{"private bool isTargetRemovedOnFail"}</code> |
-| <Link id="m-removalseconds" /><code>{"private float removalSeconds"}</code> |
-| <Link id="m-speed" /><code>{"private float speed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-acceleration" /><code>{"private float acceleration"}</code> | Backing field for `Acceleration` (default 1), copied to the walker when the action starts. |
+| <Link id="m-isovershooting" /><code>{"private bool isOvershooting"}</code> | Backing field for `IsOvershooting`. When on, the walker keeps going past the path end and the action finishes when it stops. |
+| <Link id="m-istargetremovedonfail" /><code>{"private bool isTargetRemovedOnFail"}</code> | Backing field for `IsTargetRemovedOnFail`. When on, a failed path drops the target for `RemovalSeconds`. |
+| <Link id="m-removalseconds" /><code>{"private float removalSeconds"}</code> | Backing field for `RemovalSeconds` (default 5): how long a target is ignored after a failed path. |
+| <Link id="m-speed" /><code>{"private float speed"}</code> | Backing field for `Speed` (default 3), set as the walker's maximum speed when the action starts. |
 
 </details>
 

@@ -1,6 +1,6 @@
 ---
 title: "BowSlowdraw.Create"
-description: "class BowSlowdraw.Create in Root.Township."
+description: "Editor menu entry for creating a BowSlowdraw asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowSlowdraw.Create
 
 A **class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Editor menu entry for creating a `BowSlowdraw` asset.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Nested in** [`BowSlowdraw`](/game-api/types/alta-player/bowslowdraw)

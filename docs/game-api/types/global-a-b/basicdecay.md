@@ -34,11 +34,11 @@ Server component that destroys its entity after a decay time, using a saved time
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-decaytimer" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" decayTimer"}</code> |
-| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-c-d/decaysettings">{"DecaySettings"}</Link>{" settings"}</code> |
-| <Link id="m-willdestroy" /><code>{"private bool willDestroy"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-decaytimer" /><code>{"private "}<Link to="/game-api/types/assembly-other/timeline-ientry">{"Timeline.IEntry"}</Link>{" decayTimer"}</code> | The timeline entry that triggers the decay check. Saved and loaded so decay carries across restarts. |
+| <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/global-c-d/decaysettings">{"DecaySettings"}</Link>{" settings"}</code> | Backing field for `Settings`. |
+| <Link id="m-willdestroy" /><code>{"private bool willDestroy"}</code> | Set on load when the saved timer is already in the past, so the entity decays straight away. |
 
 </details>
 
@@ -66,11 +66,11 @@ Server component that destroys its entity after a decay time, using a saved time
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checkdecay" /><code>{"private void CheckDecay()"}</code> |
-| <Link id="m-checkdecay-2" /><code>{"private bool CheckDecay(bool isOnLoad)"}</code> |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-onserialize" /><code>{"private void ICleanOnSerialize.OnSerialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checkdecay" /><code>{"private void CheckDecay()"}</code> | Runs when the timer fires (or on load): if decay is still valid, destroys the entity next frame, otherwise calls `DecayFailed`. |
+| <Link id="m-checkdecay-2" /><code>{"private bool CheckDecay(bool isOnLoad)"}</code> | Runs when the timer fires (or on load): if decay is still valid, destroys the entity next frame, otherwise calls `DecayFailed`. |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Cancels the decay timer. |
+| <Link id="m-onserialize" /><code>{"private void ICleanOnSerialize.OnSerialize()"}</code> | Cancels the timer when the entity is serialized away (`ICleanOnSerialize`). |
 
 </details>

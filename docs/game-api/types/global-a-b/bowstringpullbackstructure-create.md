@@ -1,6 +1,6 @@
 ---
 title: "BowStringPullbackStructure.Create"
-description: "class BowStringPullbackStructure.Create in Root.Township."
+description: "Editor menu entry for creating a BowStringPullbackStructure asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowStringPullbackStructure.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `BowStringPullbackStructure` asset.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`BowStringPullbackStructure`](/game-api/types/global-a-b/bowstringpullbackstructure)

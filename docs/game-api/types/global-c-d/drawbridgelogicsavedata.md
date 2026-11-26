@@ -1,6 +1,6 @@
 ---
 title: "DrawBridgeLogicSaveData"
-description: "class DrawBridgeLogicSaveData in Root.Township."
+description: "Save data for a DrawBridgeLogic: its angle, up state and rotation time."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DrawBridgeLogicSaveData
 
 A **class** in `Root.Township`, no namespace.
+
+Save data for a `DrawBridgeLogic`: its angle, up state and rotation time.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`NewSaveData<DrawBridgeLogic, DrawBridgeLogicSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,8 +27,8 @@ A **class** in `Root.Township`, no namespace.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> |
-| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> |
-| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-angletorotatesaved" /><code>{"float angleToRotateSaved"}</code> | Saved `angleToRotate`, including its current sign. |
+| <Link id="m-isupsaved" /><code>{"bool isUpSaved"}</code> | Saved `isUp`. |
+| <Link id="m-rotationtimesaved" /><code>{"float rotationTimeSaved"}</code> | Saved `rotationTime`. |

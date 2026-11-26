@@ -144,7 +144,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`StatDrivenEffect`](/game-api/types/alta-player/statdriveneffect) | class |  | 5 | Visuals for one side (buff or debuff) of a stat effect: a pooled effect, a curve from stat value to size, and a shell setting. |
 | [`StatEffectHolder`](/game-api/types/alta-player/stateffectholder) | class |  | 5 | Pairs a stat with the visual effects shown when it goes up (buff) or down (debuff). Listed in `StatEffectsDefinition.StatEffects` and read by `PlayerEffectManager`. |
 | [`StatEffectsDefinition`](/game-api/types/alta-player/stateffectsdefinition) | class | `ScriptableObject` | 1 | Asset listing the stat effects (`StatEffectHolder`) the game knows about. `PlayerEffectManager` holds one. |
-| [`StatEffectsDefinition.Create`](/game-api/types/alta-player/stateffectsdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<StatEffectsDefinition>` | 0 |  |
+| [`StatEffectsDefinition.Create`](/game-api/types/alta-player/stateffectsdefinition-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Stats.ScriptableObject<StatEffectsDefinition>` | 0 | Editor menu item under Assets/Create/Township/Features/Stats that makes a new `StatEffectsDefinition` asset. |
 | [`StatEffectShellAnimator`](/game-api/types/alta-player/stateffectshellanimator) | class | `ShellAnimator` | 13 | Client: the shell animator for stat effect shields around a player. Several shields can be asked for at once; the highest priority shows and the rest wait in a queue. |
 | [`StatEffectShellSetting`](/game-api/types/alta-player/stateffectshellsetting) | class | `ShellSetting` | 4 | Look of the shell drawn around a player for a stat buff or debuff: colours, wave texture and how it animates in. Used by `StatEffectShellAnimator`; buffs default to orange and red, debuffs to grey and blue. |
 
@@ -161,45 +161,45 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`AllTransitions`](/game-api/types/alta-player/alltransitions) | class |  | 15 | Holds one lazily created instance of every player state transition (playing, combat, dead, downed, spirit, equipment, customization, first join). Each player state has one as `AllTransitions`; each property is named after the transition it returns. |
 | [`CombatState`](/game-api/types/alta-player/combatstate) | class | `PlayerStateBase<PlayingState>` | 7 | [Player states](../networking/player-states.md) |
 | [`CombatStateSettings`](/game-api/types/alta-player/combatstatesettings) | class | `PlayerStateSettings` | 9 | Settings asset for `CombatState`: how long a player stays in combat, and the shell effect and sound shown when entering it. |
-| [`CombatStateSettings.Create`](/game-api/types/alta-player/combatstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<CombatStateSettings>` | 0 |  |
+| [`CombatStateSettings.Create`](/game-api/types/alta-player/combatstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<CombatStateSettings>` | 0 | Editor menu item under Assets/Create/Township/Features/Player that makes a new `CombatStateSettings` asset. |
 | [`CustomizationState`](/game-api/types/alta-player/customizationstate) | class | `PlayerStateBase` | 3 | [Player states](../networking/player-states.md) |
 | [`DeadState`](/game-api/types/alta-player/deadstate) | class | `PlayerStateBase` | 4 | [Player states](../networking/player-states.md) |
 | [`DeadStateSettings`](/game-api/types/alta-player/deadstatesettings) | class | `PlayerStateSettings` | 11 | Settings asset for the player's dead state (`DeadState`): ragdoll feel, the fade and respawn timing, and which stats are reset on death. |
-| [`DeadStateSettings.Create`](/game-api/types/alta-player/deadstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<DeadStateSettings>` | 0 |  |
+| [`DeadStateSettings.Create`](/game-api/types/alta-player/deadstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<DeadStateSettings>` | 0 | Editor menu item under Assets/Create/Township/Features/Player that makes a new `DeadStateSettings` asset. |
 | [`DeathAnimationSettings`](/game-api/types/alta-player/deathanimationsettings) | class |  | 11 | Settings for a two-burst death dissolve effect. `DeadStateSettings.AnimationSettings` holds one, but nothing reads it; the effect in use takes `Alta.Combat.DeathAnimationSettings`. |
 | [`DownedState`](/game-api/types/alta-player/downedstate) | class | `PlayerStateBase<PlayingState>` | 6 | [Player states](../networking/player-states.md) |
 | [`EquipmentState`](/game-api/types/alta-player/equipmentstate) | class | `PlayerStateBase<PlayingState>` | 5 | [Player states](../networking/player-states.md) |
 | [`EquipmentStateSettings`](/game-api/types/alta-player/equipmentstatesettings) | class | `PlayerStateSettings` | 19 | Settings for the equipment player state, where a dummy copy of the player appears in front of them to change gear, and copies their pose when they hold still. |
-| [`EquipmentStateSettings.Create`](/game-api/types/alta-player/equipmentstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<EquipmentStateSettings>` | 0 |  |
+| [`EquipmentStateSettings.Create`](/game-api/types/alta-player/equipmentstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<EquipmentStateSettings>` | 0 | Editor menu item under Assets/Create/Township/Features/Player that makes a new `EquipmentStateSettings` asset. |
 | [`FirstJoinState`](/game-api/types/alta-player/firstjoinstate) | class | `PlayerStateBase` | 3 | [Player states](../networking/player-states.md) |
 | [`IPlayerState`](/game-api/types/alta-player/iplayerstate) | interface |  | 21 | One player state (first join, playing, combat, downed, dead, spirit and so on) held by a player's `PlayerStateManager`. States can decorate a base state. Implemented by `PlayerStateBase`; the server decides, clients follow. |
 | [`IPlayerStateFactory`](/game-api/types/alta-player/iplayerstatefactory) | interface |  | 1 | Makes player state objects for a `PlayerStateManager`. `PlayerStateFactory` is the implementation. |
 | [`IPlayerStateSettings`](/game-api/types/alta-player/iplayerstatesettings) | interface |  | 3 | Settings for one player state: which state class it is for and which controller modes it adds and removes while active. |
 | [`IStateTransitionsManager`](/game-api/types/alta-player/istatetransitionsmanager) | interface |  | 7 | Manages a player state's transitions to other states. Implemented by `StateTransitionsManager`. |
-| [`KilledData`](/game-api/types/alta-player/killeddata) | class |  | 5 |  |
+| [`KilledData`](/game-api/types/alta-player/killeddata) | class |  | 5 | What killed a player, built from the killing hit: the tool, who held it and the killing player if there was one. |
 | [`ObjectKilledData`](/game-api/types/alta-player/objectkilleddata) | class | `KilledData` | 4 | [Console events](../console-and-utilities/console-events.md) |
 | [`PlayerKilledData`](/game-api/types/alta-player/playerkilleddata) | class | `KilledData` | 2 | [Console events](../console-and-utilities/console-events.md) |
 | [`PlayerStateBase`](/game-api/types/alta-player/playerstatebase) | abstract class | `IPlayerState` | 19 | [Player states](../networking/player-states.md#playerstatebase): `Alta.PlayerStates.PlayerStateBase` (and `PlayerStateBase<T>` for a decorating state with base `T`). What a state can override: |
 | [`PlayerStateBase<T>`](/game-api/types/alta-player/playerstatebase-t) | abstract class | `PlayerStateBase` | 2 | [Player states](../networking/player-states.md#playerstatebase): `Alta.PlayerStates.PlayerStateBase` (and `PlayerStateBase<T>` for a decorating state with base `T`). What a state can override: |
 | [`PlayerStateChangeData`](/game-api/types/alta-player/playerstatechangedata) | class |  | 4 | [Console events](../console-and-utilities/console-events.md) |
-| [`PlayerStateFactory`](/game-api/types/alta-player/playerstatefactory) | class | `IPlayerStateFactory` | 2 |  |
+| [`PlayerStateFactory`](/game-api/types/alta-player/playerstatefactory) | class | `IPlayerStateFactory` | 2 | Creates player state objects by `PlayerStateType`. Injected through VContainer as `IPlayerStateFactory`. |
 | [`PlayerStateHandler`](/game-api/types/alta-player/playerstatehandler) | delegate |  | 0 | Callback that receives a player state, such as the pre-activation callback of `SetToState`. |
 | [`PlayerStateManager`](/game-api/types/alta-player/playerstatemanager) | class | `MonoBehaviour` | 13 | [Player states](../networking/player-states.md#playerstatemanager): `Alta.PlayerStates.PlayerStateManager`, a `MonoBehaviour` on the `Player`. |
 | [`PlayerStateSettings`](/game-api/types/alta-player/playerstatesettings) | abstract class | `ScriptableObject`, `IPlayerStateSettings` | 3 | Base settings asset for a player state (downed, dead and so on). Each subclass names the state class it configures. |
-| [`PlayerStateSettingsManager`](/game-api/types/alta-player/playerstatesettingsmanager) | static class |  | 1 |  |
+| [`PlayerStateSettingsManager`](/game-api/types/alta-player/playerstatesettingsmanager) | static class |  | 1 | Looks up the settings asset for each player state type. Loads every `PlayerStateSettings` from Resources/PlayerStates/Settings on first use. |
 | [`PlayerStateType`](/game-api/types/alta-player/playerstatetype) | enum |  | 9 | The player states: none, first join, playing, combat, customization, equipment, dead, spirit and downed. |
 | [`PlayingState`](/game-api/types/alta-player/playingstate) | class | `PlayerStateBase` | 6 | [Player states](../networking/player-states.md) |
 | [`PlayingStateSettings`](/game-api/types/alta-player/playingstatesettings) | class | `PlayerStateSettings` | 1 | Settings asset for the normal playing state. It adds nothing beyond `PlayerStateSettings`. |
-| [`PlayingStateSettings.Create`](/game-api/types/alta-player/playingstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<PlayingStateSettings>` | 0 |  |
+| [`PlayingStateSettings.Create`](/game-api/types/alta-player/playingstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<PlayingStateSettings>` | 0 | Editor menu item under Assets/Create/Township/Features/Player that makes a new `PlayingStateSettings` asset. |
 | [`PlayingToSpiritTransition`](/game-api/types/alta-player/playingtospirittransition) | class | `StateTransition<PlayingState, SpiritState>` | 1 | Moves a player from Playing to Spirit when their unlock manager gains a current unlock. |
-| [`RemoteStateTransitionsManager`](/game-api/types/alta-player/remotestatetransitionsmanager) | class | `StateTransitionsManager` | 3 |  |
+| [`RemoteStateTransitionsManager`](/game-api/types/alta-player/remotestatetransitionsmanager) | class | `StateTransitionsManager` | 3 | Client-side transitions manager. Player states on a client get this one, so a transition sends a state change request to the server instead of switching locally. |
 | [`SpiritState`](/game-api/types/alta-player/spiritstate) | class | `PlayerStateBase<PlayingState>` | 4 | [Player states](../networking/player-states.md) |
 | [`SpiritStateSettings`](/game-api/types/alta-player/spiritstatesettings) | class | `PlayerStateSettings` | 6 | Settings asset for spirit mode (`SpiritState`), the state used during unlock challenges. |
-| [`SpiritStateSettings.Create`](/game-api/types/alta-player/spiritstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<SpiritStateSettings>` | 0 |  |
+| [`SpiritStateSettings.Create`](/game-api/types/alta-player/spiritstatesettings-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Player.ScriptableObject<SpiritStateSettings>` | 0 | Editor menu item under Assets/Create/Township/Features/Player that makes a new `SpiritStateSettings` asset. |
 | [`SpiritToPlayingTransition`](/game-api/types/alta-player/spirittoplayingtransition) | class | `StateTransition<SpiritState, PlayingState>` | 1 | Moves a player from Spirit back to Playing once their unlock manager has no current unlock. |
-| [`StateTransitionsManager`](/game-api/types/alta-player/statetransitionsmanager) | class | `IStateTransitionsManager` | 8 |  |
+| [`StateTransitionsManager`](/game-api/types/alta-player/statetransitionsmanager) | class | `IStateTransitionsManager` | 8 | Holds the active transitions out of one player state and runs them. The server-side version; clients get `RemoteStateTransitionsManager`. |
 | [`StatThresholdValue`](/game-api/types/alta-player/statthresholdvalue) | struct |  | 7 | A stat change applied when a player dies, listed in `DeadStateSettings.StatsToModifyOnDeath` and run by `StatManager.DeathReset`. It can set the stat always, or only when it's past a threshold. |
-| [`TestingPlayerStates`](/game-api/types/alta-player/testingplayerstates) | class | `MonoBehaviour` | 4 |  |
+| [`TestingPlayerStates`](/game-api/types/alta-player/testingplayerstates) | class | `MonoBehaviour` | 4 | Test component for player states: inspector buttons fire hurt, die and equipment events, and it puts its state manager into Playing at start. |
 
 ## Alta.PlayerStates.Transitions
 
@@ -211,7 +211,7 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`DownedToDeadTransition`](/game-api/types/alta-player/downedtodeadtransition) | class | `StateTransition<DownedState, DeadState>` | 1 | Moves a downed player to Dead when they are killed. |
 | [`DownedToPlayingTransition`](/game-api/types/alta-player/downedtoplayingtransition) | class | `StateTransition<DownedState, PlayingState>` | 2 | Moves a downed player back to Playing when revived. `DownedState` calls `HandleRevive`. |
 | [`EquipmentToPlayingTransition`](/game-api/types/alta-player/equipmenttoplayingtransition) | class | `EquipmentTransition<EquipmentState, PlayingState>` | 2 | Leaves equipment mode back to Playing, either through the quick access menu or when the local player walks out of the customization room. |
-| [`EquipmentTransition<TFrom, TTo>`](/game-api/types/alta-player/equipmenttransition-tfrom-tto) | abstract class | `StateTransition<TFrom, TTo>` | 1 |  |
+| [`EquipmentTransition<TFrom, TTo>`](/game-api/types/alta-player/equipmenttransition-tfrom-tto) | abstract class | `StateTransition<TFrom, TTo>` | 1 | Base for transitions into and out of the equipment state. They fire when something calls the subclass's static `Trigger`, not from a player event. |
 | [`FirstJoinToCustomizationTransition`](/game-api/types/alta-player/firstjointocustomizationtransition) | class | `StateTransition<FirstJoinState, CustomizationState>` | 1 | Moves a new player from FirstJoin to Customization. `FirstJoinState` triggers it when customization is enabled and not skipped for a normal player. |
 | [`FirstJoinToPlayingTransition`](/game-api/types/alta-player/firstjointoplayingtransition) | class | `StateTransition<FirstJoinState, PlayingState>` | 1 | Moves a player from FirstJoin straight to Playing. `FirstJoinState` triggers it when customization is skipped. |
 | [`IPlayerStateTransition`](/game-api/types/alta-player/iplayerstatetransition) | interface |  | 6 | A possible move from one player state to another. While active it listens for its trigger, then asks the transitions manager to switch states. |
@@ -221,28 +221,28 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`PlayingToDownedTransition`](/game-api/types/alta-player/playingtodownedtransition) | class | `StateTransition<PlayingState, DownedState>` | 1 | Moves a playing player to Downed when their `Downed` event fires. |
 | [`PlayingToEquipmentTransition`](/game-api/types/alta-player/playingtoequipmenttransition) | class | `EquipmentTransition<PlayingState, EquipmentState>` | 2 | Moves a player from Playing to equipment mode. Fired through the static `Trigger` by the equipment quick access action. |
 | [`StateTransition<TFrom, TTo>`](/game-api/types/alta-player/statetransition-tfrom-tto) | abstract class | `IPlayerStateTransition` | 3 | Base for a rule that moves a player from one player state to another. Subclasses hook up listeners while the transition is active and call `TransitionToDestinationState` when their condition is met. |
-| [`ToCombatTransition<TFrom>`](/game-api/types/alta-player/tocombattransition-tfrom) | class | `StateTransition<TFrom, CombatState>` | 1 |  |
+| [`ToCombatTransition<TFrom>`](/game-api/types/alta-player/tocombattransition-tfrom) | class | `StateTransition<TFrom, CombatState>` | 1 | Transition into the combat state. Fires when the player is hurt by a tool within combat range, or when the player causes combat. |
 
 ## Alta.Progression.Skills
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BowDrawSkill`](/game-api/types/alta-player/bowdrawskill) | class | `SpecificPickupBasedSkill` | 3 | Bow skill that boosts the damage of the next arrow shot from a bow while the skill is active, scaled by the player's skill level. |
-| [`BowMultiArrowShot`](/game-api/types/alta-player/bowmultiarrowshot) | class | `PickupBasedSkillModifier` | 3 |  |
-| [`BowMultiArrowShot.Create`](/game-api/types/alta-player/bowmultiarrowshot-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowMultiArrowShot>` | 0 |  |
-| [`BowQuickdraw`](/game-api/types/alta-player/bowquickdraw) | class | `BowDrawSkill` | 0 |  |
-| [`BowQuickdraw.Create`](/game-api/types/alta-player/bowquickdraw-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowQuickdraw>` | 0 |  |
-| [`BowSlowdraw`](/game-api/types/alta-player/bowslowdraw) | class | `BowDrawSkill` | 0 |  |
-| [`BowSlowdraw.Create`](/game-api/types/alta-player/bowslowdraw-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowSlowdraw>` | 0 |  |
+| [`BowMultiArrowShot`](/game-api/types/alta-player/bowmultiarrowshot) | class | `PickupBasedSkillModifier` | 3 | Skill modifier that adds extra arrows to a bow while the skill is active, set by a `MultiArrowConfiguration`. A `ScriptableObject` asset. |
+| [`BowMultiArrowShot.Create`](/game-api/types/alta-player/bowmultiarrowshot-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowMultiArrowShot>` | 0 | Editor menu entry for creating a `BowMultiArrowShot` asset. |
+| [`BowQuickdraw`](/game-api/types/alta-player/bowquickdraw) | class | `BowDrawSkill` | 0 | Bow draw skill asset for quickdraw. Same as `BowDrawSkill` but requests no tool effect. |
+| [`BowQuickdraw.Create`](/game-api/types/alta-player/bowquickdraw-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowQuickdraw>` | 0 | Editor menu entry for creating a `BowQuickdraw` asset. |
+| [`BowSlowdraw`](/game-api/types/alta-player/bowslowdraw) | class | `BowDrawSkill` | 0 | Bow draw skill asset for slowdraw. Adds nothing to `BowDrawSkill`; the difference is in the asset's settings. |
+| [`BowSlowdraw.Create`](/game-api/types/alta-player/bowslowdraw-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<BowSlowdraw>` | 0 | Editor menu entry for creating a `BowSlowdraw` asset. |
 | [`FloatValuesPerLevel`](/game-api/types/alta-player/floatvaluesperlevel) | class | `ValuePerLevel<float>` | 0 | A `ValuePerLevel` of floats, for skill values that change by level, such as `BowDrawSkill`'s damage multiplier. |
-| [`IntValuesPerLevel`](/game-api/types/alta-player/intvaluesperlevel) | class | `ValuePerLevel<int>` | 0 |  |
+| [`IntValuesPerLevel`](/game-api/types/alta-player/intvaluesperlevel) | class | `ValuePerLevel<int>` | 0 | Serializable list of whole number values, one per skill level (a `ValuePerLevel<int>`). |
 | [`ItemLevitator`](/game-api/types/alta-player/itemlevitator) | class | `MonoBehaviour` | 2 | Makes a pickup float in place when it is let go: it drifts to a stop and then bobs up and down. Stops when picked up, docked or destroyed. |
-| [`ItemLevitatorExtension`](/game-api/types/alta-player/itemlevitatorextension) | abstract class | `MonoBehaviour` | 0 |  |
-| [`LightBeamSkill`](/game-api/types/alta-player/lightbeamskill) | class | `BowDrawSkill` | 1 |  |
-| [`LightBeamSkill.Create`](/game-api/types/alta-player/lightbeamskill-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<LightBeamSkill>` | 0 |  |
+| [`ItemLevitatorExtension`](/game-api/types/alta-player/itemlevitatorextension) | abstract class | `MonoBehaviour` | 0 | Base component that adds a condition to the `ItemLevitator` on the same object: hovering is only allowed while `IsValid` returns true. |
+| [`LightBeamSkill`](/game-api/types/alta-player/lightbeamskill) | class | `BowDrawSkill` | 1 | Bow draw skill that replaces the arrow with a light beam: while active the string carries a beam projectile and the real arrow is destroyed on release. A `ScriptableObject` asset. |
+| [`LightBeamSkill.Create`](/game-api/types/alta-player/lightbeamskill-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject<LightBeamSkill>` | 0 | Editor menu entry for creating a `LightBeamSkill` asset. |
 | [`MultiArrowConfiguration`](/game-api/types/alta-player/multiarrowconfiguration) | class |  | 2 | Settings for the multi-arrow bow skill (`BowMultiArrowShot`): where the extra arrows sit and how hard they hit. |
-| [`SpecificPickupBasedSkill`](/game-api/types/alta-player/specificpickupbasedskill) | abstract class | `PickupBasedSkill` | 1 |  |
-| [`ValuePerLevel<T>`](/game-api/types/alta-player/valueperlevel-t) | class |  | 1 |  |
+| [`SpecificPickupBasedSkill`](/game-api/types/alta-player/specificpickupbasedskill) | abstract class | `PickupBasedSkill` | 1 | Base for pickup skills that only work with items carrying one of a set of pickup tags. |
+| [`ValuePerLevel<T>`](/game-api/types/alta-player/valueperlevel-t) | class |  | 1 | Serializable array of values, one per skill level, used by skills for level scaled numbers. |
 
 ## Alta.QuickAccessActions
 
@@ -251,56 +251,56 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`ActionItemData`](/game-api/types/alta-player/actionitemdata) | class | `ScriptableObject` | 8 | Settings for an item summoned from the quick access menu: what to spawn, where, and when it despawns if the player walks away. |
 | [`ActionItemHandler`](/game-api/types/alta-player/actionitemhandler) | class |  | 5 | Tracks one quick-access action item spawned for a player: fades it in and out, and despawns it when the player walks away, leaves or the item lands in the global chunk. |
 | [`ActionItemHandlerCollection`](/game-api/types/alta-player/actionitemhandlercollection) | internal class | `ActionItemHandlersBase`, `IActionItemHandlerCollection` | 4 | Internal: one player's quick access action item handlers, one per action index, made on first use. The client uses one; the server keeps one per player in `ActionItemHandlerCollectionMap`. |
-| [`ActionItemHandlerCollectionMap`](/game-api/types/alta-player/actionitemhandlercollectionmap) | internal class | `ActionItemHandlersBase`, `IActionItemHandlerCollection` | 4 |  |
-| [`ActionItemHandlersBase`](/game-api/types/alta-player/actionitemhandlersbase) | internal abstract class |  | 0 |  |
-| [`ActionItemsManager`](/game-api/types/alta-player/actionitemsmanager) | class | `NetworkEntityBehaviour` | 5 |  |
-| [`AnimatedEmblem`](/game-api/types/alta-player/animatedemblem) | class | `NameBoardEmblem`, `IAnimationEndCallbackReceiver` | 1 |  |
-| [`BoneWeightTestsMenuAction`](/game-api/types/alta-player/boneweighttestsmenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`DebugLightMenuAction`](/game-api/types/alta-player/debuglightmenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`DecreaseHeightMenuAction`](/game-api/types/alta-player/decreaseheightmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
-| [`DevToolsBoard`](/game-api/types/alta-player/devtoolsboard) | class | `PooledObject`, `IQuickAccessSettingsBoard` | 8 |  |
-| [`EmptyMenu`](/game-api/types/alta-player/emptymenu) | class | `QuickAccessMenuAction` | 3 |  |
-| [`EquipmentModeQuickAccess`](/game-api/types/alta-player/equipmentmodequickaccess) | class | `QuickAccessMenuAction` | 5 |  |
+| [`ActionItemHandlerCollectionMap`](/game-api/types/alta-player/actionitemhandlercollectionmap) | internal class | `ActionItemHandlersBase`, `IActionItemHandlerCollection` | 4 | Server side store of summoned action item handlers: one `ActionItemHandlerCollection` per player. `ActionItemsManager` uses it on the server. |
+| [`ActionItemHandlersBase`](/game-api/types/alta-player/actionitemhandlersbase) | internal abstract class |  | 0 | Internal base for action item handler collections: holds the `ActionItemData` list and the destroy callback. |
+| [`ActionItemsManager`](/game-api/types/alta-player/actionitemsmanager) | class | `NetworkEntityBehaviour` | 5 | Network singleton (`Instance`) that spawns and removes summoned quick access items, one per player per action. Clients ask, the server spawns. |
+| [`AnimatedEmblem`](/game-api/types/alta-player/animatedemblem) | class | `NameBoardEmblem`, `IAnimationEndCallbackReceiver` | 1 | Name board emblem that plays a closing animation before it is removed. |
+| [`BoneWeightTestsMenuAction`](/game-api/types/alta-player/boneweighttestsmenuaction) | class | `QuickAccessMenuAction` | 3 | Developer quick access action that cycles through skin weight and skinned mesh quality presets for testing. Client only. |
+| [`DebugLightMenuAction`](/game-api/types/alta-player/debuglightmenuaction) | class | `QuickAccessMenuAction` | 3 | Developer quick access action that toggles the light on a hand (`LightHands`). Client only. |
+| [`DecreaseHeightMenuAction`](/game-api/types/alta-player/decreaseheightmenuaction) | class | `QuickAccessMenuAction` | 4 | Accessibility quick access action that lowers the player's adjusted height. Client only. |
+| [`DevToolsBoard`](/game-api/types/alta-player/devtoolsboard) | class | `PooledObject`, `IQuickAccessSettingsBoard` | 8 | Pooled developer board showing pages of settings controls plus a runtime console toggle. `Instance` is set while one is enabled. |
+| [`EmptyMenu`](/game-api/types/alta-player/emptymenu) | class | `QuickAccessMenuAction` | 3 | Placeholder quick access action that just shows its own name in the player's message display. |
+| [`EquipmentModeQuickAccess`](/game-api/types/alta-player/equipmentmodequickaccess) | class | `QuickAccessMenuAction` | 5 | Quick access action that switches the local player between playing and equipment mode. Client only. |
 | [`HealthBar`](/game-api/types/alta-player/healthbar) | class | `IDisposable` | 5 | Client debug health bar: a quad above a creature that shows its health stat. Made by `ToggleEnemyHealthBars`. |
 | [`IActionItemHandlerCollection`](/game-api/types/alta-player/iactionitemhandlercollection) | internal interface |  | 3 | Internal: per-player store of quick access action item handlers. `ActionItemsManager` uses `ActionItemHandlerCollectionMap` on the server and `ActionItemHandlerCollection` on the client. |
-| [`IQuickAccessDynamicIcon`](/game-api/types/alta-player/iquickaccessdynamicicon) | interface |  | 1 |  |
+| [`IQuickAccessDynamicIcon`](/game-api/types/alta-player/iquickaccessdynamicicon) | interface |  | 1 | Implemented by a quick access bubble icon that changes with its action's state. |
 | [`IQuickAccessSettingsBoard`](/game-api/types/alta-player/iquickaccesssettingsboard) | interface |  | 4 | A board that the settings quick access menu spawns in front of the player, such as `QuickAccessSettingsBoard` and `DevToolsBoard`. Client only. |
-| [`MemoryDumpMenuAction`](/game-api/types/alta-player/memorydumpmenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`MicMuteQuickAccessAction`](/game-api/types/alta-player/micmutequickaccessaction) | class | `QuickAccessMenuAction` | 3 |  |
+| [`MemoryDumpMenuAction`](/game-api/types/alta-player/memorydumpmenuaction) | class | `QuickAccessMenuAction` | 3 | Developer quick access action that takes a memory snapshot. |
+| [`MicMuteQuickAccessAction`](/game-api/types/alta-player/micmutequickaccessaction) | class | `QuickAccessMenuAction` | 3 | Quick access action that mutes or unmutes the local player's Vivox mic. Client only. |
 | [`ModMuteArgument`](/game-api/types/alta-player/modmuteargument) | struct |  | 2 | Payload for `ModsMicMuteManager`'s mute request: which moderator is muting and whether it's on. The server only accepts it from players with Developer status or higher. |
-| [`ModsMicMuteManager`](/game-api/types/alta-player/modsmicmutemanager) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`ModsMicMuteManager`](/game-api/types/alta-player/modsmicmutemanager) | class | `NetworkEntityBehaviour` | 5 | Network behaviour that lets moderators (developer status or above) mute the mics of normal players near them. The server relays requests; clients mute themselves. Reached through the static `instance`. |
 | [`MODSMicMuteQuickAccessAction`](/game-api/types/alta-player/modsmicmutequickaccessaction) | class | `QuickAccessMenuAction` | 3 | Quick access menu action for moderators that toggles a mod mic mute through `ModsMicMuteManager`. The mute turns itself off after `maxMuteDuration`. Client only. |
-| [`MuteNonFriendsActionIcon`](/game-api/types/alta-player/mutenonfriendsactionicon) | class | `MonoBehaviour`, `IQuickAccessDynamicIcon` | 2 |  |
+| [`MuteNonFriendsActionIcon`](/game-api/types/alta-player/mutenonfriendsactionicon) | class | `MonoBehaviour`, `IQuickAccessDynamicIcon` | 2 | Bubble icon for the mute non-friends action: shows the icon for the current voice chat scope, with a slash when nobody is audible. |
 | [`MuteNonFriendsQuickAccessAction`](/game-api/types/alta-player/mutenonfriendsquickaccessaction) | class | `QuickAccessMenuAction` | 3 | Quick access menu action that cycles the voice chat audible scope (everyone, friends and so on). Client only. |
 | [`NameBoard`](/game-api/types/alta-player/nameboard) | class | `ScaleLerpPooledObject` | 4 | Pooled floating board that shows a player's name, optional title and member status shield above their head. Spawned by the Show Names quick access action. Client only. |
 | [`NameBoardEmblem`](/game-api/types/alta-player/nameboardemblem) | class | `PooledObject` | 1 | Pooled emblem (the member status shield) shown on a `NameBoard`. Subclasses can animate their close. |
-| [`NameBoardShield`](/game-api/types/alta-player/nameboardshield) | class | `ScriptableObject` | 1 |  |
-| [`NestingMenuAction`](/game-api/types/alta-player/nestingmenuaction) | class | `QuickAccessMenuAction` | 9 |  |
-| [`PhysicsFPSMenuAction`](/game-api/types/alta-player/physicsfpsmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
+| [`NameBoardShield`](/game-api/types/alta-player/nameboardshield) | class | `ScriptableObject` | 1 | Asset listing the parts of a name board shield. |
+| [`NestingMenuAction`](/game-api/types/alta-player/nestingmenuaction) | class | `QuickAccessMenuAction` | 9 | Quick access action that opens a fan of sub-bubbles for its nested actions when selected. Client only. |
+| [`PhysicsFPSMenuAction`](/game-api/types/alta-player/physicsfpsmenuaction) | class | `QuickAccessMenuAction` | 4 | Disabled developer quick access action: always hidden and does nothing. |
 | [`PlayerProxy`](/game-api/types/alta-player/playerproxy) | class | `NetworkEntityBehaviour`, `ISavable<PlayerProxyData>`, `ISavableSave<PlayerProxyData>`, +1 more | 7 | A networked, saved stand-in for a player (a dummy with a name, title and member status) that the Show Names action labels like a real player. The server syncs its fields to clients. |
-| [`PlayerProxyData`](/game-api/types/alta-player/playerproxydata) | class | `NewSaveData<PlayerProxy, PlayerProxyData>` | 4 |  |
-| [`PooledMenuSettings`](/game-api/types/alta-player/pooledmenusettings) | class | `PooledObject` | 2 |  |
-| [`QuickAccessDynamicIcon`](/game-api/types/alta-player/quickaccessdynamicicon) | class | `MonoBehaviour`, `IQuickAccessDynamicIcon` | 1 |  |
+| [`PlayerProxyData`](/game-api/types/alta-player/playerproxydata) | class | `NewSaveData<PlayerProxy, PlayerProxyData>` | 4 | Save data (version 1) for a `PlayerProxy`, a stand-in player with a name, title and member status. |
+| [`PooledMenuSettings`](/game-api/types/alta-player/pooledmenusettings) | class | `PooledObject` | 2 | Pooled settings control on a quick access settings board, wrapping a `MenuGameSetting` and an optional pickup. |
+| [`QuickAccessDynamicIcon`](/game-api/types/alta-player/quickaccessdynamicicon) | class | `MonoBehaviour`, `IQuickAccessDynamicIcon` | 1 | Bubble icon that fires toggle events when its action turns on or off. |
 | [`QuickAccessMenuAction`](/game-api/types/alta-player/quickaccessmenuaction) | abstract class | `ScriptableObject` | 15 | [Quick access menu](../items/quick-access-menu.md#quickaccessmenuaction): `Alta.QuickAccessActions.QuickAccessMenuAction`, an abstract `ScriptableObject`. Each bubble is one of these assets. |
 | [`QuickAccessMenuBubble`](/game-api/types/alta-player/quickaccessmenububble) | class | `ScaleLerpPooledObject` | 10 | One bubble in the quick access menu, showing an action and running it when chosen. A pooled object that faces the local player's head; client only. |
 | [`QuickAccessMenuController`](/game-api/types/alta-player/quickaccessmenucontroller) | class | `ControllerExtension` | 8 | [Quick access menu](../items/quick-access-menu.md#quickaccessmenucontroller): `Alta.QuickAccessActions.QuickAccessMenuController`, a `ControllerExtension` on each hand. |
-| [`QuickAccessMenuOrientation`](/game-api/types/alta-player/quickaccessmenuorientation) | enum |  | 3 |  |
+| [`QuickAccessMenuOrientation`](/game-api/types/alta-player/quickaccessmenuorientation) | enum |  | 3 | How the quick access menu is oriented: to the head in world space, to the controller fully, or to the controller without roll. |
 | [`QuickAccessMenuSettings`](/game-api/types/alta-player/quickaccessmenusettings) | class | `GlobalSettings<QuickAccessMenuSettings>` | 16 | Global settings for the quick access (wrist) menu: where its bubbles spawn, how it follows the hand and how titles show. |
 | [`QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent`](/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent) | struct |  | 3 | Pair of sound and visual effects played when a quick access bubble is selected, one for active bubbles and one for inactive ones. Held in `QuickAccessMenuSettings`. |
 | [`QuickAccessMenuSettings.QuickAccessMenuBubbleSelectEvent.VfxAndSfxEventSplit`](/game-api/types/alta-player/quickaccessmenusettings-quickaccessmenububbleselectevent-vfxandsfxeventsplit) | struct |  | 2 | The visual and sound effect events for one state (active or inactive) of a quick access menu bubble being selected. |
-| [`QuickAccessSettingsBoard`](/game-api/types/alta-player/quickaccesssettingsboard) | class | `ScaleLerpPooledObject`, `IQuickAccessSettingsBoard` | 6 |  |
-| [`ReturnToMainMenuAction`](/game-api/types/alta-player/returntomainmenuaction) | class | `QuickAccessMenuAction` | 5 |  |
+| [`QuickAccessSettingsBoard`](/game-api/types/alta-player/quickaccesssettingsboard) | class | `ScaleLerpPooledObject`, `IQuickAccessSettingsBoard` | 6 | Pooled settings board opened by a settings quick access action: slides down and shows pages of setting controls, one by one as it animates. Client only. |
+| [`ReturnToMainMenuAction`](/game-api/types/alta-player/returntomainmenuaction) | class | `QuickAccessMenuAction` | 5 | Quick access action that spawns an orb in front of the player; letting go of it in the right way leaves the game for the main menu. Client only. |
 | [`SettingsQuickAccessMenu`](/game-api/types/alta-player/settingsquickaccessmenu) | class | `QuickAccessMenuAction` | 9 | Quick access menu action that opens a settings board in front of the local player: either client settings, or the server's settings for players with permission. Client side. |
 | [`ShieldPartDefinition`](/game-api/types/alta-player/shieldpartdefinition) | class |  | 6 | One saved mesh part of a `NameBoardShield`: mesh, material and local transform. |
 | [`ShowNames`](/game-api/types/alta-player/shownames) | class | `QuickAccessMenuAction` | 4 | Client: the quick access action that shows name boards above nearby players and player proxies. Names hide after a few seconds unless the player names toggle setting is on. |
 | [`SummonActionItemQuickAccess`](/game-api/types/alta-player/summonactionitemquickaccess) | class | `QuickAccessMenuAction` | 4 | Quick access menu action that summons or dismisses an action item for the player through `ActionItemsManager`. |
-| [`ToggleAccessibleDockMenuAction`](/game-api/types/alta-player/toggleaccessibledockmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
-| [`ToggleDebugMovementMenuAction`](/game-api/types/alta-player/toggledebugmovementmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
-| [`ToggleEnemyHealthBars`](/game-api/types/alta-player/toggleenemyhealthbars) | class | `QuickAccessMenuAction` | 3 |  |
-| [`ToggleLiveDataDisplayMenuAction`](/game-api/types/alta-player/togglelivedatadisplaymenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`ToggleLocalSpeedMenuAction`](/game-api/types/alta-player/togglelocalspeedmenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`ToggleRuntimeConsole`](/game-api/types/alta-player/toggleruntimeconsole) | class | `QuickAccessMenuAction` | 5 |  |
-| [`TriggerDebugSetSpawnMenuAction`](/game-api/types/alta-player/triggerdebugsetspawnmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
-| [`UpdateFarClipMenuAction`](/game-api/types/alta-player/updatefarclipmenuaction) | class | `QuickAccessMenuAction` | 3 |  |
-| [`UpdateHeightMenuAction`](/game-api/types/alta-player/updateheightmenuaction) | class | `QuickAccessMenuAction` | 4 |  |
-| [`VivoxConnectionQuickAccessAction`](/game-api/types/alta-player/vivoxconnectionquickaccessaction) | class | `QuickAccessMenuAction` | 5 |  |
+| [`ToggleAccessibleDockMenuAction`](/game-api/types/alta-player/toggleaccessibledockmenuaction) | class | `QuickAccessMenuAction` | 4 | Accessibility quick access action that toggles accessible dock positions (`AccessibleDocks`). Client only. |
+| [`ToggleDebugMovementMenuAction`](/game-api/types/alta-player/toggledebugmovementmenuaction) | class | `QuickAccessMenuAction` | 4 | Developer quick access action that toggles debug movement on the local smooth locomotion controller. |
+| [`ToggleEnemyHealthBars`](/game-api/types/alta-player/toggleenemyhealthbars) | class | `QuickAccessMenuAction` | 3 | Debug quick access action that shows health bars over every AI agent in the scene. Client only. |
+| [`ToggleLiveDataDisplayMenuAction`](/game-api/types/alta-player/togglelivedatadisplaymenuaction) | class | `QuickAccessMenuAction` | 3 | Quick access action that toggles the FPS readout on the player camera's `LiveDataDisplayView`. Client only. |
+| [`ToggleLocalSpeedMenuAction`](/game-api/types/alta-player/togglelocalspeedmenuaction) | class | `QuickAccessMenuAction` | 3 | Debug quick access action that switches the local player's base speed stat between 1 and 2. |
+| [`ToggleRuntimeConsole`](/game-api/types/alta-player/toggleruntimeconsole) | class | `QuickAccessMenuAction` | 5 | Developer quick access action that shows or hides a runtime console in front of the player. Client only. |
+| [`TriggerDebugSetSpawnMenuAction`](/game-api/types/alta-player/triggerdebugsetspawnmenuaction) | class | `QuickAccessMenuAction` | 4 | Developer quick access action that runs the console command `debug set {localplayer}`. |
+| [`UpdateFarClipMenuAction`](/game-api/types/alta-player/updatefarclipmenuaction) | class | `QuickAccessMenuAction` | 3 | Debug quick access action that raises or lowers the player camera's far clip plane by 10 (20 if pressed again within a second). Client only. |
+| [`UpdateHeightMenuAction`](/game-api/types/alta-player/updateheightmenuaction) | class | `QuickAccessMenuAction` | 4 | Accessibility quick access action that raises or lowers the player's adjusted height. Client only. |
+| [`VivoxConnectionQuickAccessAction`](/game-api/types/alta-player/vivoxconnectionquickaccessaction) | class | `QuickAccessMenuAction` | 5 | Unused quick access action for the Vivox connection: always hidden and does nothing. |

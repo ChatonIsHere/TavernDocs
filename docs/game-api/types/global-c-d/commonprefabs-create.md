@@ -1,6 +1,6 @@
 ---
 title: "CommonPrefabs.Create"
-description: "class CommonPrefabs.Create in Root.Township."
+description: "Editor menu item that creates a CommonPrefabs asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CommonPrefabs.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu item that creates a `CommonPrefabs` asset.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`CommonPrefabs`](/game-api/types/global-c-d/commonprefabs)

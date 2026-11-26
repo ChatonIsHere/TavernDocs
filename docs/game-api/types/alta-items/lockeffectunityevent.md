@@ -1,6 +1,6 @@
 ---
 title: "LockEffectUnityEvent"
-description: "class LockEffectUnityEvent in Root.Township."
+description: "Serializable Unity event that passes a Lock, for lock effects."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LockEffectUnityEvent
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Serializable Unity event that passes a `Lock`, for lock effects.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** `UnityEvent<Lock>`

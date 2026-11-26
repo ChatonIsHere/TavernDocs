@@ -1,6 +1,6 @@
 ---
 title: "SocketEventHandler"
-description: "delegate SocketEventHandler in Root.Township."
+description: "Callback that receives an ISocket, for socket events."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SocketEventHandler
 
 A **delegate** in `Root.Township`, `Alta.Networking`.
+
+Callback that receives an `ISocket`, for socket events.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `MulticastDelegate`

@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools"
-description: "abstract class AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools in Alta.MenuItem."
+description: "Editor menu folder Assets/Create/3rd Party/Rope Tools: menu item classes inherit it to appear under that path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets.Create._3rd_Party.Rope_Tools
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu folder `Assets/Create/3rd Party/Rope Tools`: menu item classes inherit it to appear under that path. Does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase.Assets.Create._3rd_Party`](/game-api/types/assembly-other/altamenuitembase-assets-create-_3rd_party)

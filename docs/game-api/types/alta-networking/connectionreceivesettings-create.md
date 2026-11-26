@@ -1,6 +1,6 @@
 ---
 title: "ConnectionReceiveSettings.Create"
-description: "class ConnectionReceiveSettings.Create in Root.Township."
+description: "Editor menu item for creating a ConnectionReceiveSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ConnectionReceiveSettings.Create
 
 A **class** in `Root.Township`, `Alta.Networking.Internal`.
+
+Editor menu item for creating a `ConnectionReceiveSettings` asset.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Nested in** [`ConnectionReceiveSettings`](/game-api/types/alta-networking/connectionreceivesettings)

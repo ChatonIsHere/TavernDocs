@@ -1,6 +1,6 @@
 ---
 title: "LevelStatModifierData"
-description: "class LevelStatModifierData in Root.Township."
+description: "Save data for a LevelStatModifier."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LevelStatModifierData
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+Save data for a `LevelStatModifier`.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Inherits or implements** [`NewSaveData<LevelStatModifier, LevelStatModifierData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, `Alta.StatSystem`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-currentlevel" /><code>{"int currentLevel"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-currentlevel" /><code>{"int currentLevel"}</code> | The saved level. |

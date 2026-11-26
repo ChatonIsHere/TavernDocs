@@ -1,6 +1,6 @@
 ---
 title: "SimpleHashedGeneralValue<T>"
-description: "abstract class SimpleHashedGeneralValue<T> in Root.Township."
+description: "A HashedGeneralValue asset that can be marked as turned off on simple servers."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SimpleHashedGeneralValue&lt;T&gt;
 
 An **abstract class** in `Root.Township`, `Alta`.
+
+A `HashedGeneralValue` asset that can be marked as turned off on simple servers.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`HashedGeneralValue<T>`](/game-api/types/assembly-other/hashedgeneralvalue-t), [`IDisableOnSimpleServer`](/game-api/types/alta-utilities/idisableonsimpleserver)
@@ -27,15 +29,15 @@ An **abstract class** in `Root.Township`, `Alta`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdisabledonsimpleserver" /><code>{"private bool isDisabledOnSimpleServer"}</code> | Backing field for `IsDisabledOnSimpleServer`, set in the asset. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> |
-| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isdisabledonsimpleserver-2" /><code>{"bool IsDisabledOnSimpleServer { get; }"}</code> | True if this value is turned off on simple servers. |
+| <Link id="m-simpleall" /><code>{"static IEnumerable<T> SimpleAll { get; }"}</code> | Every value of this type except the ones turned off on simple servers. |

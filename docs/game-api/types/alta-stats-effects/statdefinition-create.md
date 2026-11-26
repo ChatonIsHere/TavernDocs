@@ -1,6 +1,6 @@
 ---
 title: "StatDefinition.Create"
-description: "class StatDefinition.Create in Root.Township."
+description: "Editor menu entry that creates a new StatDefinition asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StatDefinition.Create
 
 A **class** in `Root.Township`, `Alta.StatSystem`.
+
+Editor menu entry that creates a new `StatDefinition` asset. Not used at runtime.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`StatDefinition`](/game-api/types/alta-stats-effects/statdefinition)

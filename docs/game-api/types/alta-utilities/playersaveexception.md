@@ -1,6 +1,6 @@
 ---
 title: "PlayerSaveException"
-description: "abstract class PlayerSaveException in Root.Township."
+description: "Internal base class for player save errors."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSaveException
 
 An **internal abstract class** in `Root.Township`, `Alta.Utilities`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Internal base class for player save errors. `CorruptPlayerSaveFileException` derives from it.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** `Exception`

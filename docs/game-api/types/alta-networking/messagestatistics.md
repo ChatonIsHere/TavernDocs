@@ -1,6 +1,6 @@
 ---
 title: "MessageStatistics"
-description: "class MessageStatistics in Root.Township."
+description: "Network profiling list named \"Messages\" that shows the per message type statistics from a dictionary."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # MessageStatistics
 
 A **class** in `Root.Township`, `Alta.Profiling.Networking`.
+
+Network profiling list named "Messages" that shows the per message type statistics from a dictionary.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`NetworkingStatisticsList<MessageTypeStatistic, KeyValuePair<MessageType, MessageTypeStatistic>>`](/game-api/types/alta-utilities/networkingstatisticslist-tstatistic-tinternalobject)

@@ -1,6 +1,6 @@
 ---
 title: "PickupDockVisualSettings.Create"
-description: "class PickupDockVisualSettings.Create in Root.Township."
+description: "Editor menu entry for creating a PickupDockVisualSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PickupDockVisualSettings.Create
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Editor menu entry for creating a `PickupDockVisualSettings` asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`PickupDockVisualSettings`](/game-api/types/alta-items/pickupdockvisualsettings)

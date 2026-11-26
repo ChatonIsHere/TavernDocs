@@ -1,6 +1,6 @@
 ---
 title: "SurfaceMaterial.Create"
-description: "class SurfaceMaterial.Create in Root.Township."
+description: "Editor menu entry that creates a new SurfaceMaterial asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SurfaceMaterial.Create
 
 A **class** in `Root.Township`, `Alta`.
+
+Editor menu entry that creates a new `SurfaceMaterial` asset. Not used at runtime.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`SurfaceMaterial`](/game-api/types/alta-utilities/surfacematerial)

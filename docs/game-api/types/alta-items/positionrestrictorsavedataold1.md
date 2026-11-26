@@ -1,6 +1,6 @@
 ---
 title: "PositionRestrictorSaveDataOld1"
-description: "class PositionRestrictorSaveDataOld1 in Root.Township."
+description: "Old version 1 save data for a PositionRestrictor, holding only a radius."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PositionRestrictorSaveDataOld1
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Old version 1 save data for a `PositionRestrictor`, holding only a radius.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Inherits or implements** [`OldSaveData`](/game-api/types/global-m-o/oldsavedata)
@@ -24,12 +26,12 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-radius" /><code>{"float radius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-radius" /><code>{"float radius"}</code> | Allowed radius. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-migrate" /><code>{"override "}<Link to="/game-api/types/alta-world/savedata">{"SaveData"}</Link>{" Migrate()"}</code> | Upgrades to `PositionRestrictorSaveData2` with just the radius set. |

@@ -1,6 +1,6 @@
 ---
 title: "AnalyticalButtonGroupAutoEnabler"
-description: "class AnalyticalButtonGroupAutoEnabler in Root.Township."
+description: "Enables every AnalyticalButton among its children (inactive ones too) when it's enabled, and disables them when it's disabled."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnalyticalButtonGroupAutoEnabler
 
 A **class** in `Root.Township`, no namespace.
+
+Enables every `AnalyticalButton` among its children (inactive ones too) when it's enabled, and disables them when it's disabled.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-buttons" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{"[] buttons"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-buttons" /><code>{"private "}<Link to="/game-api/types/global-a-b/analyticalbutton">{"AnalyticalButton"}</Link>{"[] buttons"}</code> | Child `AnalyticalButton` components, filled automatically including inactive children. |
 
 </details>
 
@@ -37,9 +39,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> |
-| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondisable" /><code>{"private void OnDisable()"}</code> | Sets `IsEnabled` false on all child buttons. |
+| <Link id="m-onenable" /><code>{"private void OnEnable()"}</code> | Sets `IsEnabled` true on all child buttons. |
 
 </details>

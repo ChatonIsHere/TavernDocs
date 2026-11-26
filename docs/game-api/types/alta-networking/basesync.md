@@ -28,7 +28,7 @@ Base of the `MethodSync` family. Registers a handler for one entity message type
 | Member | What it is |
 | --- | --- |
 | <Link id="m-entity" /><code>{"protected readonly "}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity"}</code> | The entity the message belongs to. |
-| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"protected static Logger logger"}</code> | Shared logger, set by the static constructors of `ClientSync` and `ServerSync`. |
 | <Link id="m-reader" /><code>{"protected "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" reader"}</code> | Method that reads the message. |
 | <Link id="m-type" /><code>{"protected readonly "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type"}</code> | The entity message type. |
 | <Link id="m-writer" /><code>{"protected "}<Link to="/game-api/types/alta-networking/serializemethod">{"SerializeMethod"}</Link>{" writer"}</code> | Method that writes the message. |

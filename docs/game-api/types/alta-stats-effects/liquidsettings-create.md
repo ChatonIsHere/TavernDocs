@@ -1,6 +1,6 @@
 ---
 title: "LiquidSettings.Create"
-description: "class LiquidSettings.Create in Root.Township."
+description: "Editor menu entry for creating the LiquidSettings global settings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # LiquidSettings.Create
 
 A **class** in `Root.Township`, `Alta.Liquid`.
+
+Editor menu entry for creating the `LiquidSettings` global settings asset.
 
 - **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
 - **Nested in** [`LiquidSettings`](/game-api/types/alta-stats-effects/liquidsettings)

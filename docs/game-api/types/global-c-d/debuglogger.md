@@ -1,6 +1,6 @@
 ---
 title: "DebugLogger"
-description: "class DebugLogger in Root.Township."
+description: "Lets UnityEvents write to the Unity log."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DebugLogger
 
 A **class** in `Root.Township`, no namespace.
+
+Lets UnityEvents write to the Unity log.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -23,7 +25,7 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-log" /><code>{"void Log(string message)"}</code> |
-| <Link id="m-logerror" /><code>{"void LogError(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-log" /><code>{"void Log(string message)"}</code> | Writes the message with `Debug.Log`. |
+| <Link id="m-logerror" /><code>{"void LogError(string message)"}</code> | Writes the message with `Debug.LogError`. |

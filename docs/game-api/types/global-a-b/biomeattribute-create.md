@@ -1,6 +1,6 @@
 ---
 title: "BiomeAttribute.Create"
-description: "class BiomeAttribute.Create in Root.Township."
+description: "Editor menu entry for creating a BiomeAttribute asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BiomeAttribute.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `BiomeAttribute` asset.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`BiomeAttribute`](/game-api/types/global-a-b/biomeattribute)

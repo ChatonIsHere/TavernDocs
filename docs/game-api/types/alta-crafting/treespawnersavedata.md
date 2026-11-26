@@ -1,6 +1,6 @@
 ---
 title: "TreeSpawnerSaveData"
-description: "class TreeSpawnerSaveData in Root.Township."
+description: "Current save data (version 2) for a TreeSpawner."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # TreeSpawnerSaveData
 
 A **class** in `Root.Township`, `Alta.Woodcutting`.
+
+Current save data (version 2) for a `TreeSpawner`.
 
 - **Listed in** [Crafting and making](/game-api/types/alta-crafting)
 - **Inherits or implements** [`NewSaveData<TreeSpawner, TreeSpawnerSaveData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
@@ -25,6 +27,6 @@ A **class** in `Root.Township`, `Alta.Woodcutting`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-waittorespawn" /><code>{"TimeSpan waitToRespawn"}</code> | Time left before the spawner grows a new tree. |

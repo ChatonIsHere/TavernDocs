@@ -1,6 +1,6 @@
 ---
 title: "PlayerSaveData.Create"
-description: "class PlayerSaveData.Create in Root.Township."
+description: "Editor menu entry that creates a PlayerSaveData asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PlayerSaveData.Create
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Editor menu entry that creates a `PlayerSaveData` asset.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Nested in** [`PlayerSaveData`](/game-api/types/alta-utilities/playersavedata)

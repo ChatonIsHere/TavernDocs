@@ -31,14 +31,14 @@ Global settings for item durability feedback: break effects, damage popups and h
 <details>
 <summary>6 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-breakitemhapticcurve" /><code>{"private AnimationCurve breakItemHapticCurve"}</code> |
-| <Link id="m-defaultstatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultStateChangeSound"}</code> |
-| <Link id="m-effectivenesstodurabilitydamage" /><code>{"private AnimationCurve effectivenessToDurabilityDamage"}</code> |
-| <Link id="m-popupcolorbydurability" /><code>{"private Gradient popupColorByDurability"}</code> |
-| <Link id="m-popupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" popUpDefinition"}</code> |
-| <Link id="m-statechangeeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stateChangeEffectDefinition"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-breakitemhapticcurve" /><code>{"private AnimationCurve breakItemHapticCurve"}</code> | Haptic curve played when an item breaks. |
+| <Link id="m-defaultstatechangesound" /><code>{"private "}<Link to="/game-api/types/global-s/soundeffectset">{"SoundEffectSet"}</Link>{" defaultStateChangeSound"}</code> | Sound played on a durability state change when none is set elsewhere. |
+| <Link id="m-effectivenesstodurabilitydamage" /><code>{"private AnimationCurve effectivenessToDurabilityDamage"}</code> | Curve from hit effectiveness to durability damage, used by `EvaluateEfectivenessDamage`. |
+| <Link id="m-popupcolorbydurability" /><code>{"private Gradient popupColorByDurability"}</code> | Gradient that colours the popup by durability, used by `GetPopupColor`. |
+| <Link id="m-popupdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" popUpDefinition"}</code> | Pooled text popup shown for durability, used by `GetPopup`. |
+| <Link id="m-statechangeeffectdefinition" /><code>{"private "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" stateChangeEffectDefinition"}</code> | Pooled `DurabilityStateChangeEffect` spawned by `GetEffect`. |
 
 </details>
 

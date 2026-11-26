@@ -32,13 +32,13 @@ Client: draws an extra copy of a player's clothes with a shell material and anim
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-progress" /><code>{"private readonly int _Progress"}</code> |
-| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> |
-| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> |
-| <Link id="m-shellmaterial" /><code>{"private Material shellMaterial"}</code> |
-| <Link id="m-shellmaterialsample" /><code>{"private Material shellMaterialSample"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-progress" /><code>{"private readonly int _Progress"}</code> | Shader property id for `_Progress`, the value the shell animation drives. |
+| <Link id="m-isenabled" /><code>{"private bool isEnabled"}</code> | Whether the shell renderers are on; new renderers made in `Initialize` start with this. |
+| <Link id="m-renderers" /><code>{"private List<Renderer> renderers"}</code> | Shell copies of the clothing renderers made in `Initialize`. Destroyed ones are dropped on the next toggle. |
+| <Link id="m-shellmaterial" /><code>{"private Material shellMaterial"}</code> | Backing field for `ShellMaterial`, made on first use from `shellMaterialSample`. |
+| <Link id="m-shellmaterialsample" /><code>{"private Material shellMaterialSample"}</code> | Template material that `ShellMaterial` copies. |
 
 </details>
 

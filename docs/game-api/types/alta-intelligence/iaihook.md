@@ -1,6 +1,6 @@
 ---
 title: "IAiHook"
-description: "interface IAiHook in Root.Township."
+description: "A component that adds effects to the ActionComponent on the same GameObject."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Root.Township`, `Alta.Intelligence`.
 
+A component that adds effects to the `ActionComponent` on the same GameObject. `ActionComponent` finds these and initializes them the first time the action is used.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Derived types** [`AiHook<T>`](/game-api/types/alta-intelligence/aihook-t)
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-initialize" /><code>{"void Initialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-initialize" /><code>{"void Initialize()"}</code> | Called once, on first use of the action. Hooks subscribe to the action's `Used` event here. |

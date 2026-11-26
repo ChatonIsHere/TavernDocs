@@ -1,6 +1,6 @@
 ---
 title: "AnimationBasedTrigger"
-description: "class AnimationBasedTrigger in Root.Township."
+description: "Base component with a virtual Run for animation events to call."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AnimationBasedTrigger
 
 A **class** in `Root.Township`, no namespace.
+
+Base component with a virtual `Run` for animation events to call. `AnimationBasedEffect` is the only subclass.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** `MonoBehaviour`
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, no namespace.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-run" /><code>{"virtual void Run()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-run" /><code>{"virtual void Run()"}</code> | Does nothing here; subclasses override it. |

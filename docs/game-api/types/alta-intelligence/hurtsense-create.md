@@ -1,6 +1,6 @@
 ---
 title: "HurtSense.Create"
-description: "class HurtSense.Create in Root.Township."
+description: "Editor menu item for making a HurtSense asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HurtSense.Create
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Editor menu item for making a `HurtSense` asset. Does nothing at runtime.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Nested in** [`HurtSense`](/game-api/types/alta-intelligence/hurtsense)

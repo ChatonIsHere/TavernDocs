@@ -1,6 +1,6 @@
 ---
 title: "ITargetExtensions"
-description: "static class ITargetExtensions in Root.Township."
+description: "Extension methods on ITarget."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 A **static class** in `Root.Township`, `Alta.Intelligence`.
 
+Extension methods on `ITarget`.
+
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Attributes** `Extension`
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-exists" /><code>{"static bool Exists("}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target)"}</code> | True if the target isn't null or a destroyed Unity object, and `IsAlive` is true. |

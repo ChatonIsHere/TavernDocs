@@ -1,6 +1,6 @@
 ---
 title: "StaticEnvironmentPiece.Create"
-description: "class StaticEnvironmentPiece.Create in Root.Township."
+description: "Editor menu entry that creates a new StaticEnvironmentPiece asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # StaticEnvironmentPiece.Create
 
 A **class** in `Root.Township`, `Alta.Static`.
+
+Editor menu entry that creates a new `StaticEnvironmentPiece` asset. Not used at runtime.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`StaticEnvironmentPiece`](/game-api/types/alta-world/staticenvironmentpiece)

@@ -1,6 +1,6 @@
 ---
 title: "GizmosHelper"
-description: "class GizmosHelper in Root.Township."
+description: "Editor debugging helper that draws a small sphere at a static position in the Scene view."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # GizmosHelper
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Editor debugging helper that draws a small sphere at a static position in the Scene view. Nothing in the code creates it.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** `MonoBehaviour`
@@ -23,31 +25,31 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-position" /><code>{"static Vector3 position"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-position" /><code>{"static Vector3 position"}</code> | Where the sphere is drawn. Set it from anywhere. |
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-helper" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/gizmoshelper">{"GizmosHelper"}</Link>{" helper"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-helper" /><code>{"private static "}<Link to="/game-api/types/alta-intelligence/gizmoshelper">{"GizmosHelper"}</Link>{" helper"}</code> | The single instance, made by `EnsureExist`. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-ensureexist" /><code>{"static void EnsureExist()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ensureexist" /><code>{"static void EnsureExist()"}</code> | Creates a "Gizmos Helper" GameObject with this component if there isn't one. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> |
-| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ondestroy" /><code>{"private void OnDestroy()"}</code> | Clears the static instance if it's this one. |
+| <Link id="m-ondrawgizmos" /><code>{"private void OnDrawGizmos()"}</code> | Draws a 0.1 radius sphere at `position`. |
 
 </details>

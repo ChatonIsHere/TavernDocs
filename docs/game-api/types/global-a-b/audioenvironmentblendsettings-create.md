@@ -1,6 +1,6 @@
 ---
 title: "AudioEnvironmentBlendSettings.Create"
-description: "class AudioEnvironmentBlendSettings.Create in Root.Township."
+description: "Editor menu entry for creating an AudioEnvironmentBlendSettings asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AudioEnvironmentBlendSettings.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating an `AudioEnvironmentBlendSettings` asset.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Nested in** [`AudioEnvironmentBlendSettings`](/game-api/types/global-a-b/audioenvironmentblendsettings)

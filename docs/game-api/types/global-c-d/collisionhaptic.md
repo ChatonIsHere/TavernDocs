@@ -1,6 +1,6 @@
 ---
 title: "CollisionHaptic"
-description: "class CollisionHaptic in Root.Township."
+description: "Client: on a pickup, buzzes the holding controllers when it hits another pickup fast enough."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CollisionHaptic
 
 A **class** in `Root.Township`, no namespace.
+
+Client: on a pickup, buzzes the holding controllers when it hits another pickup fast enough. Removed on headless servers.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `MonoBehaviour`
@@ -27,27 +29,27 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hapticamount" /><code>{"private float hapticAmount"}</code> |
-| <Link id="m-hapticduration" /><code>{"private float hapticDuration"}</code> |
-| <Link id="m-minimumspeedforhapticssquared" /><code>{"private float minimumSpeedForHapticsSquared"}</code> |
-| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hapticamount" /><code>{"private float hapticAmount"}</code> | Haptic strength. |
+| <Link id="m-hapticduration" /><code>{"private float hapticDuration"}</code> | Haptic length in seconds. |
+| <Link id="m-minimumspeedforhapticssquared" /><code>{"private float minimumSpeedForHapticsSquared"}</code> | Squared speed both pickups together must pass. |
+| <Link id="m-pickup" /><code>{"private "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup"}</code> | The pickup on this object. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-haptics" /><code>{"void Haptics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-haptics" /><code>{"void Haptics()"}</code> | Plays a flat haptic pulse on every controller holding this pickup. |
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-awake" /><code>{"private void Awake()"}</code> |
-| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-awake" /><code>{"private void Awake()"}</code> | Destroys itself on a headless build. |
+| <Link id="m-oncollisionenter" /><code>{"private void OnCollisionEnter(Collision collision)"}</code> | If it hit a pickup (or the root of a crafted one) and their summed squared speeds pass the minimum, runs `Haptics`. |
 
 </details>

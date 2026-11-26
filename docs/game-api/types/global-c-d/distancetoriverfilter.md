@@ -1,6 +1,6 @@
 ---
 title: "DistanceToRiverFilter"
-description: "class DistanceToRiverFilter in Root.Township."
+description: "Forest spawn filter that scales weight by distance to the nearest river."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DistanceToRiverFilter
 
 A **class** in `Root.Township`, no namespace.
+
+Forest spawn filter that scales weight by distance to the nearest river.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** [`DistanceFilter`](/game-api/types/global-c-d/distancefilter)
@@ -28,14 +30,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-isincludingradius" /><code>{"private bool isIncludingRadius"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isincludingradius" /><code>{"private bool isIncludingRadius"}</code> | Whether the river's width counts. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-evaluatedistance" /><code>{"protected override float EvaluateDistance("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-evaluatedistance" /><code>{"protected override float EvaluateDistance("}<Link to="/game-api/types/alta-world-generation/forestfillcore-setup">{"ForestFillCore.Setup"}</Link>{" setup, ref "}<Link to="/game-api/types/alta-world-generation/pointedge">{"PointEdge"}</Link>{" point, ref float weight)"}</code> | Returns the point's distance to the river from the river generator. |

@@ -1,6 +1,6 @@
 ---
 title: "PrefabNameMap"
-description: "class PrefabNameMap in Root.Township."
+description: "Global settings asset that maps prefab hashes to their asset paths."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PrefabNameMap
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+Global settings asset that maps prefab hashes to their asset paths. Get it with `PrefabNameMap.Instance`.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`GlobalSettings<PrefabNameMap>`](/game-api/types/assembly-other/globalsettings-t), `ISerializationCallbackReceiver`
@@ -28,29 +30,29 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> |
-| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> |
-| <Link id="m-paths" /><code>{"private string[] paths"}</code> |
-| <Link id="m-setup" /><code>{"private bool setup"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hashes" /><code>{"private uint[] hashes"}</code> | Prefab hashes, matched by index with `paths`. |
+| <Link id="m-map" /><code>{"private Dictionary<uint, string> map"}</code> | Backing field for `Map`. |
+| <Link id="m-paths" /><code>{"private string[] paths"}</code> | Prefab asset paths, matched by index with `hashes`. |
+| <Link id="m-setup" /><code>{"private bool setup"}</code> | Editor button that refreshes the map for a build. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-map-2" /><code>{"Dictionary<uint, string> Map { get; }"}</code> | Prefab hash to asset path, built when the asset loads. |
 
 ## Methods
 
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> |
-| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-onafterdeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()"}</code> | Builds `Map` from the `hashes` and `paths` arrays. |
+| <Link id="m-onbeforeserialize" /><code>{"private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()"}</code> | Does nothing. |
 
 </details>

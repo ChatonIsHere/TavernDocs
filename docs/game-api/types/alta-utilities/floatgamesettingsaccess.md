@@ -1,6 +1,6 @@
 ---
 title: "FloatGameSettingsAccess"
-description: "class FloatGameSettingsAccess in Root.Township."
+description: "Settings field access for a float setting."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FloatGameSettingsAccess
 
 A **class** in `Root.Township`, `Alta.Utilities`.
+
+Settings field access for a float setting.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`SettingsFieldAccess<float>`](/game-api/types/alta-utilities/settingsfieldaccess-tfieldtype)

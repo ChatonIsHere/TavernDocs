@@ -1,6 +1,6 @@
 ---
 title: "AudioEnvironmentBlendSettings"
-description: "class AudioEnvironmentBlendSettings in Root.Township."
+description: "Global audio settings asset with the curve for blending between audio environments."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AudioEnvironmentBlendSettings
 
 A **class** in `Root.Township`, no namespace.
+
+Global audio settings asset with the curve for blending between audio environments. Get it with `GlobalSettings<AudioEnvironmentBlendSettings>.Instance`.
 
 - **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
 - **Inherits or implements** [`GlobalSettings<AudioEnvironmentBlendSettings>`](/game-api/types/assembly-other/globalsettings-t)
@@ -29,14 +31,14 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blendcurve" /><code>{"private AnimationCurve blendCurve"}</code> | Backing field for `BlendCurve`. |
 
 </details>
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-blendcurve-2" /><code>{"AnimationCurve BlendCurve { get; }"}</code> | Blend amount over distance, where 0 is an environment's centre and 1 the edge of its bounds. |

@@ -137,13 +137,13 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`AndroidLightsController`](/game-api/types/alta-world/androidlightscontroller) | class | `BaseLightsController` | 0 |  |
+| [`AndroidLightsController`](/game-api/types/alta-world/androidlightscontroller) | class | `BaseLightsController` | 0 | Client lights controller on Android: packs up to 8 lights into a global shader array, and uses baked fake light meshes for lights beyond the nearest 8. |
 | [`BaseLightsController`](/game-api/types/alta-world/baselightscontroller) | abstract class |  | 3 | Base for the platform light controllers (PC and Android) that manage the active `PlatformLight`s and tick while any are active. |
-| [`ISortedLight`](/game-api/types/alta-world/isortedlight) | internal interface |  | 3 |  |
+| [`ISortedLight`](/game-api/types/alta-world/isortedlight) | internal interface |  | 3 | A `PlatformLight` with a position and distance, used by the lights controllers to pick the nearest lights. |
 | [`LightSorter<T>`](/game-api/types/alta-world/lightsorter-t) | internal class |  | 5 | Fixed-size list that keeps the nearest lights sorted by distance, capped at `PlatformLight.MaxLightCount`. Internal; used by the PC and Android light controllers. |
-| [`PCLightsController`](/game-api/types/alta-world/pclightscontroller) | class | `BaseLightsController` | 2 |  |
+| [`PCLightsController`](/game-api/types/alta-world/pclightscontroller) | class | `BaseLightsController` | 2 | Client lights controller on PC: every 0.5 seconds makes the nearest lights per-pixel and the rest per-vertex when there are more than the quality setting allows. |
 | [`PlatformLight`](/game-api/types/alta-world/platformlight) | class | `MonoBehaviour`, `IBuildRendererPostBake`, `IBuildBakeable` | 13 | A light that registers with a platform lights controller. On PC it wraps a Unity `Light`; on Android it uses a fake light mesh instead. Enabling and disabling it adds and removes it from the controller. |
-| [`PlatformLightsAndroidUtilities`](/game-api/types/alta-world/platformlightsandroidutilities) | static class |  | 3 |  |
+| [`PlatformLightsAndroidUtilities`](/game-api/types/alta-world/platformlightsandroidutilities) | static class |  | 3 | Android helpers for `PlatformLight` fake lights: the fake light material and vertex coloured copies of light meshes, cached by colour. |
 
 ## Alta.Map
 
@@ -187,14 +187,14 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BasicSaveDataWrapper<TData>`](/game-api/types/alta-world/basicsavedatawrapper-tdata) | class |  | 6 | Holds a basic save data object along with its serialized bits, so it is only serialized again after it changes. |
-| [`BasicSaveFile<T>`](/game-api/types/alta-world/basicsavefile-t) | class | `IAltaFileFormat` | 8 |  |
+| [`BasicSaveFile<T>`](/game-api/types/alta-world/basicsavefile-t) | class | `IAltaFileFormat` | 8 | File format that stores one `BasicSaveData` object in an Alta file, through a `BasicSaveDataWrapper`. |
 | [`ChunkVersioning`](/game-api/types/alta-world/chunkversioning) | class |  | 15 | The set of save format versions a chunk was written with: a map from save type hash to version number. `SavingSystem.LatestChunkVersioning` holds the current one; each chunk save stores the versioning it used. |
 | [`ISavableSave<out T>`](/game-api/types/alta-world/isavablesave-outt) | interface | `ISavableSaveBase` | 1 | The saving half of `ISavable<T>`: a component that can produce its save data. |
 | [`ISavableSaveBase`](/game-api/types/alta-world/isavablesavebase) | interface |  | 1 | Marker base for components the saving system can save. The saving system finds them with `GetComponents` on each entity; implement `ISavable<T>` rather than this. |
-| [`SavableCache`](/game-api/types/alta-world/savablecache) | static class |  | 3 |  |
+| [`SavableCache`](/game-api/types/alta-world/savablecache) | static class |  | 3 | Static cache of the savable components (`ISavableSaveBase`) on each network entity, so saving doesn't call `GetComponents` every time. Extra savables can be added by hand. |
 | [`SaveData`](/game-api/types/alta-world/savedata) | abstract class |  | 2 | Base class for all save data versions. The saving system reads an old version, calls `Migrate` until it reaches the latest one, then calls `Apply`. |
-| [`SavingSystem`](/game-api/types/alta-world/savingsystem) | static class |  | 11 |  |
-| [`SavingSystem.Reinitialize_Saving`](/game-api/types/alta-world/savingsystem-reinitialize_saving) | class | `AltaMenuItemBase.Tools.Reboot` | 0 |  |
+| [`SavingSystem`](/game-api/types/alta-world/savingsystem) | static class |  | 11 | Static core of entity saving: maps each savable type to its versioned save data classes (from `[SaveStructure]`), writes and reads them with sizes and migrates old versions to the latest. |
+| [`SavingSystem.Reinitialize_Saving`](/game-api/types/alta-world/savingsystem-reinitialize_saving) | class | `AltaMenuItemBase.Tools.Reboot` | 0 | Editor tools menu entry that rebuilds the saving system's type setups. |
 | [`SavingSystem.SavingSetup`](/game-api/types/alta-world/savingsystem-savingsetup) | class |  | 13 | How one savable type is saved: its hash, every save data version registered with `SaveStructure`, and its parent type's setup. Built by `SavingSystem` at startup. |
 | [`SavingSystem.VersionSetup`](/game-api/types/alta-world/savingsystem-versionsetup) | class |  | 4 | One save data version of a saved type: the data class and its lazily built serializer and activator. Kept per version number by `SavingSystem.SavingSetup`. |
 
@@ -202,17 +202,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
-| [`CacheFileFormat`](/game-api/types/alta-world/cachefileformat) | class | `IAltaFileFormat` | 11 |  |
+| [`CacheFileFormat`](/game-api/types/alta-world/cachefileformat) | class | `IAltaFileFormat` | 11 | File format for cached data such as instruction sets: a byte count followed by the stream's words. |
 | [`CacheManager`](/game-api/types/alta-world/cachemanager) | abstract class |  | 6 | [Static objects](../world/static-objects.md): Generates or loads cached data by name (`GetCache`). |
-| [`ClientCacheManager`](/game-api/types/alta-world/clientcachemanager) | class | `CacheManager` | 5 |  |
+| [`ClientCacheManager`](/game-api/types/alta-world/clientcachemanager) | class | `CacheManager` | 5 | Client side `CacheManager`: reads cache files from the local cache folder and downloads missing ones over HTTP from the joined server's web server (port 1761 by default). |
 | [`ICacheable`](/game-api/types/alta-world/icacheable) | interface |  | 2 | Data that can be saved to and loaded from a versioned cache file, such as forest and river generation. Used by `CacheManager`. |
 | [`IInstructionResult`](/game-api/types/alta-world/iinstructionresult) | interface |  | 1 | The result of one world generation instruction (such as a spline or river), which the forest generator can undo. |
-| [`IndexedScriptableObject`](/game-api/types/alta-world/indexedscriptableobject) | abstract class | `ScriptableObject` | 2 |  |
+| [`IndexedScriptableObject`](/game-api/types/alta-world/indexedscriptableobject) | abstract class | `ScriptableObject` | 2 | Base for asset types that have a fixed numeric index, such as `StaticEnvironmentPiece`, so they can be sent and loaded by number. |
 | [`Instruction`](/game-api/types/alta-world/instruction) | abstract class |  | 5 | [Static objects](../world/static-objects.md): Subclasses include `SpawnInstruction` (place a `StaticEnvironmentPiece` at a position, rotation and scale) and the forest's own instructions. |
 | [`Instruction.Type`](/game-api/types/alta-world/instruction-type) | enum |  | 4 | Kind of static world build instruction (Spawn, Spline, ForestGCore, RiverGCore). `Instruction` maps each to the class that creates and runs it. |
 | [`InstructionSet`](/game-api/types/alta-world/instructionset) | class | `ICacheable` | 8 | [Static objects](../world/static-objects.md): A list of `Instruction`s and the results of running them. Cached on disk. |
-| [`IStaticEnvironmentPiecePool`](/game-api/types/alta-world/istaticenvironmentpiecepool) | interface |  | 1 |  |
-| [`SpawnInstruction`](/game-api/types/alta-world/spawninstruction) | class | `Instruction` | 3 |  |
+| [`IStaticEnvironmentPiecePool`](/game-api/types/alta-world/istaticenvironmentpiecepool) | interface |  | 1 | Pool that static environment piece instances go back to. `StaticEnvironmentPiece` implements it. |
+| [`SpawnInstruction`](/game-api/types/alta-world/spawninstruction) | class | `Instruction` | 3 | Static environment instruction that places one `StaticEnvironmentPiece` at a position, rotation and scale. |
 | [`StaticEnvironmentPiece`](/game-api/types/alta-world/staticenvironmentpiece) | class | `IndexedScriptableObject`, `ICollisionStandard`, `IStaticEnvironmentPiecePool` | 5 | [Static objects](../world/static-objects.md): A `ScriptableObject` with an index, a surface material and a `StaticEnvironmentPieceInstance` prefab. `Spawn(position, rotation, scale)` makes one. |
-| [`StaticEnvironmentPiece.Create`](/game-api/types/alta-world/staticenvironmentpiece-create) | class | `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject<StaticEnvironmentPiece>` | 0 |  |
+| [`StaticEnvironmentPiece.Create`](/game-api/types/alta-world/staticenvironmentpiece-create) | class | `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject<StaticEnvironmentPiece>` | 0 | Editor menu entry that creates a new `StaticEnvironmentPiece` asset. Not used at runtime. |
 | [`StaticEnvironmentPieceInstance`](/game-api/types/alta-world/staticenvironmentpieceinstance) | class | `MonoBehaviour`, `ICollisionStandard`, `IInstructionResult`, +1 more | 7 | A pooled copy of a static environment piece (rock, plant and so on) placed by world generation. It's the result of a spawn instruction, so undoing the instruction sends it back to the pool. |

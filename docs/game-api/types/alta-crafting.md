@@ -229,20 +229,20 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`ApplicationType`](/game-api/types/alta-crafting/applicationtype) | enum |  | 3 | How a scrapper argument applies saved values: one target and value, many targets sharing one value, or many targets with their own values. |
-| [`MeshPlacement`](/game-api/types/alta-crafting/meshplacement) | class | `NetworkEntityBehaviour`, `ISavable<MeshPlacementSaveData>`, `ISavableSave<MeshPlacementSaveData>`, +1 more | 3 |  |
-| [`MeshPlacementSaveData`](/game-api/types/alta-crafting/meshplacementsavedata) | internal class | `NewSaveData<MeshPlacement, MeshPlacementSaveData>` | 1 |  |
-| [`ScrapperArgumentAttribute`](/game-api/types/alta-crafting/scrapperargumentattribute) | class | `Attribute` | 7 |  |
-| [`Visibility`](/game-api/types/alta-crafting/visibility) | class | `NetworkEntityBehaviour`, `ISavable<VisibilitySaveData>`, `ISavableSave<VisibilitySaveData>`, +1 more | 3 |  |
-| [`VisibilitySaveData`](/game-api/types/alta-crafting/visibilitysavedata) | class | `NewSaveData<Visibility, VisibilitySaveData>` | 1 |  |
+| [`MeshPlacement`](/game-api/types/alta-crafting/meshplacement) | class | `NetworkEntityBehaviour`, `ISavable<MeshPlacementSaveData>`, `ISavableSave<MeshPlacementSaveData>`, +1 more | 3 | Network behaviour that sets a part's mesh, material and local transform from a hashed `MeshPlacementData` asset, saved with the entity and synced to players when they join. |
+| [`MeshPlacementSaveData`](/game-api/types/alta-crafting/meshplacementsavedata) | internal class | `NewSaveData<MeshPlacement, MeshPlacementSaveData>` | 1 | Save data (version 1) for `MeshPlacement`: which placement asset it uses. |
+| [`ScrapperArgumentAttribute`](/game-api/types/alta-crafting/scrapperargumentattribute) | class | `Attribute` | 7 | Marks a scrapper behaviour with the component type and fields it sets, so the scrapper tool can find the behaviour for a given set of changes. Can be used more than once per class. |
+| [`Visibility`](/game-api/types/alta-crafting/visibility) | class | `NetworkEntityBehaviour`, `ISavable<VisibilitySaveData>`, `ISavableSave<VisibilitySaveData>`, +1 more | 3 | Network behaviour that turns a set of mesh renderers on or off from a hashed `VisibilityData` asset, saved with the entity and synced to players when they join. |
+| [`VisibilitySaveData`](/game-api/types/alta-crafting/visibilitysavedata) | class | `NewSaveData<Visibility, VisibilitySaveData>` | 1 | Save data (version 1) for `Visibility`: which visibility asset it uses. |
 
 ## Alta.Scrapper.Data
 
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`MeshPlacementData`](/game-api/types/alta-crafting/meshplacementdata) | class | `HashedGeneralValue<MeshPlacementData>` | 7 | A saved mesh placement for the Scrapper tool: local transform, mesh and material, with optional texture atlas baking. Build-time data. |
-| [`MeshPlacementData.Create`](/game-api/types/alta-crafting/meshplacementdata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<MeshPlacementData>` | 0 |  |
+| [`MeshPlacementData.Create`](/game-api/types/alta-crafting/meshplacementdata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<MeshPlacementData>` | 0 | Editor menu entry for creating a `MeshPlacementData` asset. |
 | [`VisibilityData`](/game-api/types/alta-crafting/visibilitydata) | class | `HashedGeneralValue<VisibilityData>` | 2 | A hashed scrapper asset holding one on or off value for mesh renderers. A `Visibility` component applies it and syncs it by hash. |
-| [`VisibilityData.Create`](/game-api/types/alta-crafting/visibilitydata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<VisibilityData>` | 0 |  |
+| [`VisibilityData.Create`](/game-api/types/alta-crafting/visibilitydata-create) | class | `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper.ScriptableObject<VisibilityData>` | 0 | Editor menu entry for creating a `VisibilityData` asset. |
 
 ## Alta.Trading
 
@@ -250,15 +250,15 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`TaxManager`](/game-api/types/alta-crafting/taxmanager) | class | `NetworkEntityBehaviour`, `ISavable<TaxSaveData>`, `ISavableSave<TaxSaveData>`, +1 more | 9 | [Trading](../game-systems/trading.md#tradevendor-and-taxmanager) |
 | [`TaxSaveData`](/game-api/types/alta-crafting/taxsavedata) | class | `NewSaveData<TaxManager, TaxSaveData>` | 2 | Save data for a `TaxManager`: whether taxing is running and the time saved for its repeating tax entry. |
-| [`TaxSaveData1`](/game-api/types/alta-crafting/taxsavedata1) | class | `OldSaveData` | 3 |  |
-| [`TradeConfiguration`](/game-api/types/alta-crafting/tradeconfiguration) | class | `NetworkEntityBehaviour` | 2 |  |
-| [`TradeStateManager`](/game-api/types/alta-crafting/tradestatemanager) | class | `NetworkEntityBehaviour` | 3 |  |
+| [`TaxSaveData1`](/game-api/types/alta-crafting/taxsavedata1) | class | `OldSaveData` | 3 | Old version 1 save data for a `TaxManager`, with the time in float seconds. Migrates to `TaxSaveData`. |
+| [`TradeConfiguration`](/game-api/types/alta-crafting/tradeconfiguration) | class | `NetworkEntityBehaviour` | 2 | Holds references to a trade vendor's price buttons. In this build it does nothing with them. |
+| [`TradeStateManager`](/game-api/types/alta-crafting/tradestatemanager) | class | `NetworkEntityBehaviour` | 3 | Syncs a trade vendor's status (unoccupied, out of stock, open for sale) to clients and fires an event per status for visuals. The server reads the status from the `TradeVendor`. |
 | [`TradeStatus`](/game-api/types/alta-crafting/tradestatus) | enum |  | 3 | State of a trade vendor: unoccupied (no owner), out of stock, or open for sale. |
 | [`TradeVendor`](/game-api/types/alta-crafting/tradevendor) | class | `NetworkEntityBehaviour`, `ISavableFull<TradeVendorSaveData>`, `ISavable<TradeVendorSaveData>`, +4 more | 12 | [Trading](../game-systems/trading.md#tradevendor-and-taxmanager), [Performance](../performance.md): Subscribes to `ServerHandler.PlayerJoined` and never unsubscribes. A destroyed vendor throws when its owner joins, which stops the handlers after it. |
 | [`TradeVendor.StatusChangedHandler`](/game-api/types/alta-crafting/tradevendor-statuschangedhandler) | delegate |  | 0 | Handler for `TradeVendor.StatusChanged`, called with the vendor's new trade status. |
 | [`TradeVendorSaveData`](/game-api/types/alta-crafting/tradevendorsavedata) | class | `NewSaveData<TradeVendor, TradeVendorSaveData>` | 1 | Save data for a `TradeVendor` (version 2): just the vendor's owner. |
-| [`TradeVendorSaveDataOld`](/game-api/types/alta-crafting/tradevendorsavedataold) | class | `OldSaveData` | 3 |  |
-| [`TradingLogger`](/game-api/types/alta-crafting/tradinglogger) | static class |  | 3 |  |
+| [`TradeVendorSaveDataOld`](/game-api/types/alta-crafting/tradevendorsavedataold) | class | `OldSaveData` | 3 | Old version 1 save data for a `TradeVendor`. Migrates to `TradeVendorSaveData`, keeping only the owner. |
+| [`TradingLogger`](/game-api/types/alta-crafting/tradinglogger) | static class |  | 3 | Logging for the trade deck. Sales are raised as the `TradeDeckUsed` console event. |
 | [`TradingLogger.TradeDeckSale`](/game-api/types/alta-crafting/tradinglogger-tradedecksale) | class |  | 6 | [Console events](../console-and-utilities/console-events.md) |
 
 ## Alta.Woodcutting
@@ -267,42 +267,42 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | --- | --- | --- | --- | --- |
 | [`AttachmentEvent`](/game-api/types/alta-crafting/attachmentevent) | class | `AltaEvent<TreeAttachment, UnityAttachmentEvent>` | 0 | Serializable event with a `TreeAttachment` argument, used for a tree attachment's broken event. |
 | [`OffsetEvent`](/game-api/types/alta-crafting/offsetevent) | class |  | 2 | Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called for a minimum delay. Made with `Timeline.CreateOffset`. |
-| [`OffsetEventHelper`](/game-api/types/alta-crafting/offseteventhelper) | static class |  | 1 |  |
+| [`OffsetEventHelper`](/game-api/types/alta-crafting/offseteventhelper) | static class |  | 1 | Extension method for making an `OffsetEvent` on a `Timeline`. |
 | [`PresetTree`](/game-api/types/alta-crafting/presettree) | class | `HashedGeneralValue<PresetTree>`, `ISerializationCallbackReceiver` | 7 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
-| [`PresetTree.Create`](/game-api/types/alta-crafting/presettree-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<PresetTree>` | 0 |  |
+| [`PresetTree.Create`](/game-api/types/alta-crafting/presettree-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<PresetTree>` | 0 | Editor menu entry that creates a `PresetTree` asset under Assets/Create/Township/Features/Woodcutting. |
 | [`PresetTree.Step`](/game-api/types/alta-crafting/presettree-step) | class |  | 6 | One piece of a saved preset tree: which tree model to spawn, its rotation, its attachments and which steps hang off its connections. Steps are stored flat in `PresetTree` with index links. |
 | [`PresetTree.Step.Attachment`](/game-api/types/alta-crafting/presettree-step-attachment) | class |  | 4 | A tree attachment saved in a preset step: its prefab hash and its local position, rotation and uniform scale on the piece. |
 | [`TreeAttachment`](/game-api/types/alta-crafting/treeattachment) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 12 | Something attached to a tree's node, such as leaves, that can break off. Attached by `WoodcutTree`; breaking is synced from the server. |
 | [`TreeBuilder`](/game-api/types/alta-crafting/treebuilder) | class | `MonoBehaviour` | 2 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
 | [`TreeDecay`](/game-api/types/alta-crafting/treedecay) | class | `BasicDecay` | 1 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): A `BasicDecay` on a tree: once a felled tree has come loose from its spawner (no chunking parent), it decays, but not while it's kinematic or within 120 seconds of its last hit. |
-| [`TreeEvent`](/game-api/types/alta-crafting/treeevent) | class | `UnityEvent<WoodcutTree>` | 0 |  |
+| [`TreeEvent`](/game-api/types/alta-crafting/treeevent) | class | `UnityEvent<WoodcutTree>` | 0 | Serializable Unity event that passes a `WoodcutTree`. |
 | [`TreeSize`](/game-api/types/alta-crafting/treesize) | class | `PopupScriptableObject` | 1 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md) |
-| [`TreeSize.Create`](/game-api/types/alta-crafting/treesize-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<TreeSize>` | 0 |  |
+| [`TreeSize.Create`](/game-api/types/alta-crafting/treesize-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<TreeSize>` | 0 | Editor menu entry that creates a `TreeSize` asset under Assets/Create/Township/Features/Woodcutting. |
 | [`TreeSpawner`](/game-api/types/alta-crafting/treespawner) | class | `NetworkEntityBehaviour`, `ISavable<TreeSpawnerSaveData>`, `ISavableSave<TreeSpawnerSaveData>`, +1 more | 3 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): A spot in the world that grows a tree. |
-| [`TreeSpawnerSaveData`](/game-api/types/alta-crafting/treespawnersavedata) | class | `NewSaveData<TreeSpawner, TreeSpawnerSaveData>` | 1 |  |
-| [`TreeSpawnerSaveData1`](/game-api/types/alta-crafting/treespawnersavedata1) | class | `OldSaveData` | 2 |  |
+| [`TreeSpawnerSaveData`](/game-api/types/alta-crafting/treespawnersavedata) | class | `NewSaveData<TreeSpawner, TreeSpawnerSaveData>` | 1 | Current save data (version 2) for a `TreeSpawner`. |
+| [`TreeSpawnerSaveData1`](/game-api/types/alta-crafting/treespawnersavedata1) | class | `OldSaveData` | 2 | Old version 1 save data for a `TreeSpawner`, migrated to `TreeSpawnerSaveData` on load. |
 | [`TreeSpecies`](/game-api/types/alta-crafting/treespecies) | class | `HashedGeneralValue<TreeSpecies>` | 16 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): Species asset: physical material, hit effects, `Wedge` and `Stick` drop distributions, damage and break multipliers, `DropVelocity`, leaf materials. |
-| [`TreeSpecies.Create`](/game-api/types/alta-crafting/treespecies-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<TreeSpecies>` | 0 |  |
-| [`UnityAttachmentEvent`](/game-api/types/alta-crafting/unityattachmentevent) | class | `UnityEvent<TreeAttachment>` | 0 |  |
-| [`UnityWoodcutTreeModelEvent`](/game-api/types/alta-crafting/unitywoodcuttreemodelevent) | class | `UnityEvent<WoodcutTreeModel>` | 0 |  |
+| [`TreeSpecies.Create`](/game-api/types/alta-crafting/treespecies-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<TreeSpecies>` | 0 | Editor menu entry that creates a `TreeSpecies` asset under Assets/Create/Township/Features/Woodcutting. |
+| [`UnityAttachmentEvent`](/game-api/types/alta-crafting/unityattachmentevent) | class | `UnityEvent<TreeAttachment>` | 0 | Serializable Unity event that passes a `TreeAttachment`. |
+| [`UnityWoodcutTreeModelEvent`](/game-api/types/alta-crafting/unitywoodcuttreemodelevent) | class | `UnityEvent<WoodcutTreeModel>` | 0 | Serializable Unity event that passes a `WoodcutTreeModel`. |
 | [`WoodcutConnection`](/game-api/types/alta-crafting/woodcutconnection) | class | `MonoBehaviour` | 7 | Marks a joint between two pieces of a choppable tree model: which connection type it is and which woodcut points break it. Sits on a networked tree piece. |
 | [`WoodcutConnectionType`](/game-api/types/alta-crafting/woodcutconnectiontype) | class | `ScriptableObject` | 7 | Asset describing how one piece of a choppable tree joins its parent: how it can be rotated, how many cut points it has and how much damage breaks it. |
-| [`WoodcutConnectionType.Create`](/game-api/types/alta-crafting/woodcutconnectiontype-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<WoodcutConnectionType>` | 0 |  |
-| [`WoodcutSettings`](/game-api/types/alta-crafting/woodcutsettings) | class | `GlobalSettings<WoodcutSettings>` | 1 |  |
+| [`WoodcutConnectionType.Create`](/game-api/types/alta-crafting/woodcutconnectiontype-create) | class | `AltaMenuItemBase.Assets.Create.Township.Features.Woodcutting.ScriptableObject<WoodcutConnectionType>` | 0 | Editor menu entry that creates a `WoodcutConnectionType` asset under Assets/Create/Township/Features/Woodcutting. |
+| [`WoodcutSettings`](/game-api/types/alta-crafting/woodcutsettings) | class | `GlobalSettings<WoodcutSettings>` | 1 | Global settings asset for woodcutting, read through `WoodcutSettings.Instance`. Holds the tree network prefab. |
 | [`WoodcutTree`](/game-api/types/alta-crafting/woodcuttree) | class | `NetworkEntityBehaviour`, `ISavable<WoodcutTreeSaveData>`, `ISavableSave<WoodcutTreeSaveData>`, +1 more | 19 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): The tree: a tree of `MapNode`s (`Root`), each with a `WoodcutTreeModel` segment. `HealthObject`, `Rigidbody`, `TotalSize`, `Species`. Raises `Cut`. |
 | [`WoodcutTree.MapNode`](/game-api/types/alta-crafting/woodcuttree-mapnode) | class |  | 14 | One segment in a `WoodcutTree`'s layout: its model, the connection it hangs from, its children and attachments. Mass and size changes add up into the parent nodes. |
-| [`WoodcutTreeAttachmentBaker`](/game-api/types/alta-crafting/woodcuttreeattachmentbaker) | class | `WoodcutTreeBakerAccess<TreeAttachment>` | 9 |  |
-| [`WoodcutTreeBaker`](/game-api/types/alta-crafting/woodcuttreebaker) | class | `NetworkEntityBehaviour` | 4 |  |
+| [`WoodcutTreeAttachmentBaker`](/game-api/types/alta-crafting/woodcuttreeattachmentbaker) | class | `WoodcutTreeBakerAccess<TreeAttachment>` | 9 | Baker access for tree attachments (leaves and similar): gives the baking code each attachment's meshes, transform and leaf materials. Use the shared `Instance`. |
+| [`WoodcutTreeBaker`](/game-api/types/alta-crafting/woodcuttreebaker) | class | `NetworkEntityBehaviour` | 4 | Client component on a woodcut tree that combines its damaged trunk pieces and attachments into baked meshes in the distance LOD group, and updates the baked vertex colours as pieces are chopped. Does nothing on headless servers. |
 | [`WoodcutTreeBakerAccess<T>`](/game-api/types/alta-crafting/woodcuttreebakeraccess-t) | abstract class |  | 8 | Adapter the woodcutting tree baker uses to read meshes, materials and LODs from some source type `T`. Build-time tooling. |
-| [`WoodcutTreeBakingHandler`](/game-api/types/alta-crafting/woodcuttreebakinghandler) | class |  | 5 |  |
-| [`WoodcutTreeDamagedNodeBaker`](/game-api/types/alta-crafting/woodcuttreedamagednodebaker) | class | `WoodcutTreeNodeBaker` | 6 |  |
+| [`WoodcutTreeBakingHandler`](/game-api/types/alta-crafting/woodcuttreebakinghandler) | class |  | 5 | Static helpers that merge tree node meshes into combined LOD meshes and patch vertex colours in a baked mesh. Used by `WoodcutTreeBaker`. |
+| [`WoodcutTreeDamagedNodeBaker`](/game-api/types/alta-crafting/woodcuttreedamagednodebaker) | class | `WoodcutTreeNodeBaker` | 6 | Node baker for chopped trunk pieces: one LOD, copies vertex colours, and uses the species' physical material channel A. Use the shared `Instance`. |
 | [`WoodcutTreeEvent`](/game-api/types/alta-crafting/woodcuttreeevent) | class | `AltaEvent<WoodcutTree, TreeEvent>` | 0 | Serializable `AltaEvent` raised with a `WoodcutTree`, used for a tree's `cut` and `onThump` events. |
 | [`WoodcutTreeModel`](/game-api/types/alta-crafting/woodcuttreemodel) | class | `NetworkEntityBehaviour` | 21 | [Farming, woodcutting and carpentry](../game-systems/farming-and-woodcutting.md): Takes hits on its `WoodcutPoints`; when chopped through (`PieceChopped`, server) it spawns the species' wedge or stick drops at its drop locations and destroys itself. |
 | [`WoodcutTreeModelChopped`](/game-api/types/alta-crafting/woodcuttreemodelchopped) | delegate |  | 0 | Handler for `WoodcutTreeModel.Chopped`, called with the tree model that was chopped down. |
 | [`WoodcutTreeModelDamaged`](/game-api/types/alta-crafting/woodcuttreemodeldamaged) | delegate |  | 0 | Handler for `WoodcutTreeModel.TookDamage`, called with the tree model and the damage it took. |
 | [`WoodcutTreeModelEvent`](/game-api/types/alta-crafting/woodcuttreemodelevent) | class | `AltaEvent<WoodcutTreeModel, UnityWoodcutTreeModelEvent>` | 0 | Serializable `AltaEvent` raised with a `WoodcutTreeModel`, used for `WoodcutConnectionType.Broken`. |
 | [`WoodcutTreeNodeBaker`](/game-api/types/alta-crafting/woodcuttreenodebaker) | class | `WoodcutTreeBakerAccess<WoodcutTree.MapNode>` | 8 | Reads meshes and materials from woodcut tree nodes for the tree baker. Use the shared `Instance`. Build-time tooling. |
-| [`WoodcutTreeNodeBakerLod0Only`](/game-api/types/alta-crafting/woodcuttreenodebakerlod0only) | class | `WoodcutTreeNodeBaker` | 3 |  |
-| [`WoodcutTreeSaveData`](/game-api/types/alta-crafting/woodcuttreesavedata) | internal class | `NewSaveData<WoodcutTree, WoodcutTreeSaveData>` | 2 |  |
-| [`WoodcutTreeSaveData1`](/game-api/types/alta-crafting/woodcuttreesavedata1) | internal class | `OldSaveData` | 3 |  |
-| [`WoodcutTreeSaveData2`](/game-api/types/alta-crafting/woodcuttreesavedata2) | internal class | `OldSaveData` | 4 |  |
+| [`WoodcutTreeNodeBakerLod0Only`](/game-api/types/alta-crafting/woodcuttreenodebakerlod0only) | class | `WoodcutTreeNodeBaker` | 3 | Node baker that only bakes LOD 0. Use the shared `Instance`. |
+| [`WoodcutTreeSaveData`](/game-api/types/alta-crafting/woodcuttreesavedata) | internal class | `NewSaveData<WoodcutTree, WoodcutTreeSaveData>` | 2 | Current save data (version 3) for a `WoodcutTree`: which preset and species it uses. |
+| [`WoodcutTreeSaveData1`](/game-api/types/alta-crafting/woodcuttreesavedata1) | internal class | `OldSaveData` | 3 | Old version 1 save data for a `WoodcutTree`, migrated to `WoodcutTreeSaveData` on load. |
+| [`WoodcutTreeSaveData2`](/game-api/types/alta-crafting/woodcuttreesavedata2) | internal class | `OldSaveData` | 4 | Old version 2 save data for a `WoodcutTree`, migrated to `WoodcutTreeSaveData` on load. |

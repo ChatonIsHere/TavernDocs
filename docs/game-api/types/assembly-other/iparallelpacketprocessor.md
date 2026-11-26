@@ -1,6 +1,6 @@
 ---
 title: "IParallelPacketProcessor"
-description: "interface IParallelPacketProcessor in Alta.NetworkTransport.Runtime."
+description: "An IPacketProcessor that may handle packets in parallel and can say how many it has not finished yet."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -12,11 +12,13 @@ import Link from '@docusaurus/Link';
 
 An **interface** in `Alta.NetworkTransport.Runtime`, `Alta.NetworkingTransport`.
 
+An `IPacketProcessor` that may handle packets in parallel and can say how many it has not finished yet. Nothing implements it in this build.
+
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Inherits or implements** [`IPacketProcessor`](/game-api/types/assembly-other/ipacketprocessor)
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-unresolvedpackets" /><code>{"int UnResolvedPackets { get; }"}</code> | Number of packets still being handled. |

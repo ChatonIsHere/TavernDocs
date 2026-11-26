@@ -1,6 +1,6 @@
 ---
 title: "SavingSystem.Reinitialize_Saving"
-description: "class SavingSystem.Reinitialize_Saving in Root.Township."
+description: "Editor tools menu entry that rebuilds the saving system's type setups."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SavingSystem.Reinitialize_Saving
 
 A **class** in `Root.Township`, `Alta.Saving`.
+
+Editor tools menu entry that rebuilds the saving system's type setups.
 
 - **Listed in** [World, chunks and saving](/game-api/types/alta-world)
 - **Nested in** [`SavingSystem`](/game-api/types/alta-world/savingsystem)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, `Alta.Saving`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-run" /><code>{"protected override void Run()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-run" /><code>{"protected override void Run()"}</code> | Calls `SavingSystem.Reinitialize`. |

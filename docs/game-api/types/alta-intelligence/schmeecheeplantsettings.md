@@ -1,6 +1,6 @@
 ---
 title: "SchmeecheePlantSettings"
-description: "class SchmeecheePlantSettings in Root.Township."
+description: "Settings for ActiveSchmeecheePlant: a schmeechee buries itself in the ground and sleeps for a random time, then pops out."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # SchmeecheePlantSettings
 
 A **class** in `Root.Township`, `Alta.Intelligence`.
+
+Settings for `ActiveSchmeecheePlant`: a schmeechee buries itself in the ground and sleeps for a random time, then pops out. Server only.
 
 - **Listed in** [Creatures and AI](/game-api/types/alta-intelligence)
 - **Inherits or implements** [`RandomTimedActionComponent`](/game-api/types/alta-intelligence/randomtimedactioncomponent)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, `Alta.Intelligence`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-getaction" /><code>{"protected override "}<Link to="/game-api/types/alta-intelligence/iaction">{"IAction"}</Link>{" GetAction()"}</code> | Builds the shared `ActiveSchmeecheePlant` action for schmeechees, without a target. |

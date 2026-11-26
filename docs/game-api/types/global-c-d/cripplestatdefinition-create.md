@@ -1,6 +1,6 @@
 ---
 title: "CrippleStatDefinition.Create"
-description: "class CrippleStatDefinition.Create in Root.Township."
+description: "Editor menu entry for creating a CrippleStatDefinition asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CrippleStatDefinition.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu entry for creating a `CrippleStatDefinition` asset.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`CrippleStatDefinition`](/game-api/types/global-c-d/cripplestatdefinition)

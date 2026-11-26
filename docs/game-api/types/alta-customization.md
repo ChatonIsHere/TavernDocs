@@ -129,17 +129,17 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | Type | Kind | Base | Public members | Documented in, or what it is |
 | --- | --- | --- | --- | --- |
 | [`BlockableCamera`](/game-api/types/alta-customization/blockablecamera) | abstract class | `MonoBehaviour` | 5 | Base for a hand camera view that switches its camera off while something is in the way (a sphere or capsule check, in the subclasses). Client side. |
-| [`ButtonGroup`](/game-api/types/alta-customization/buttongroup) | class | `MonoBehaviour` | 1 |  |
-| [`CameraButton`](/game-api/types/alta-customization/camerabutton) | abstract class | `MonoBehaviour` | 0 |  |
-| [`CameraEventsListener`](/game-api/types/alta-customization/cameraeventslistener) | class | `MonoBehaviour` | 0 |  |
-| [`CameraFilters`](/game-api/types/alta-customization/camerafilters) | class | `NetworkEntityBehaviour` | 3 |  |
-| [`CameraRenderEvents`](/game-api/types/alta-customization/camerarenderevents) | class | `MonoBehaviour` | 1 |  |
-| [`CameraStabilization`](/game-api/types/alta-customization/camerastabilization) | class | `MonoBehaviour` | 0 |  |
-| [`CapsuleBlockableCamera`](/game-api/types/alta-customization/capsuleblockablecamera) | class | `BlockableCamera` | 0 |  |
+| [`ButtonGroup`](/game-api/types/alta-customization/buttongroup) | class | `MonoBehaviour` | 1 | Group of hand camera touch buttons that expand out and fold back in when toggled. |
+| [`CameraButton`](/game-api/types/alta-customization/camerabutton) | abstract class | `MonoBehaviour` | 0 | Base for hand camera buttons that refresh when the camera's settings change. Does nothing on a headless server. |
+| [`CameraEventsListener`](/game-api/types/alta-customization/cameraeventslistener) | class | `MonoBehaviour` | 0 | Fires inspector events before and after any hand camera renders for the chosen event types (idle and photo by default). Not used when headless. |
+| [`CameraFilters`](/game-api/types/alta-customization/camerafilters) | class | `NetworkEntityBehaviour` | 3 | Network behaviour that syncs the hand camera's chosen filter. The owner sends it when they swipe, the server relays it, and joining players get the current one. |
+| [`CameraRenderEvents`](/game-api/types/alta-customization/camerarenderevents) | class | `MonoBehaviour` | 1 | Component added to a Unity camera to forward its pre-cull and post-render callbacks to actions. |
+| [`CameraStabilization`](/game-api/types/alta-customization/camerastabilization) | class | `MonoBehaviour` | 0 | Smooths the hand camera's movement while it is held, by lerping it towards its handles and following the player's locomotion. A component next to the `HandCamera`. |
+| [`CapsuleBlockableCamera`](/game-api/types/alta-customization/capsuleblockablecamera) | class | `BlockableCamera` | 0 | A `BlockableCamera` that counts as blocked when a capsule in front of the lens overlaps the block layers. |
 | [`Filter`](/game-api/types/alta-customization/filter) | class |  | 3 | A hand camera filter: a list of actions run on the camera and its post process volume, optionally only during a festivity. |
 | [`FilterAction`](/game-api/types/alta-customization/filteraction) | abstract class | `ScriptableObject` | 2 | Base scriptable object for an effect a hand camera filter turns on and off on the camera's post process volume. |
 | [`FiltersButton`](/game-api/types/alta-customization/filtersbutton) | class | `BasicTouchScreenButton` | 3 | Touch screen button on the hand camera that turns filter mode on, then lets the owner swipe through the filters. `CameraFilters` syncs the choice to other players. Client only. |
-| [`FocusButton`](/game-api/types/alta-customization/focusbutton) | class | `CameraButton` | 0 |  |
+| [`FocusButton`](/game-api/types/alta-customization/focusbutton) | class | `CameraButton` | 0 | Hand camera button that shows the current focus mode of its `FocusPuller` as text. Client only (does nothing on a headless server). |
 | [`FocusPuller`](/game-api/types/alta-customization/focuspuller) | class | `MonoBehaviour` | 3 | Depth of field control on the hand camera with three modes (perfect, auto and manual). Auto focus reads depth at weighted focus points with a compute shader; manual focus turns a dial as you twist your hand. Runs for the camera's owner only. |
 | [`FocusPuller.FocusMode`](/game-api/types/alta-customization/focuspuller-focusmode) | enum |  | 3 | Hand camera focus mode: `Perfect`, `Auto` (focuses when a photo is taken or the screen is free) or `Manual` (set by the player turning the control). |
 | [`HandCamera`](/game-api/types/alta-customization/handcamera) | class | `NetworkEntityBehaviour`, `IBuildRendererBakeable`, `IBuildBakeable` | 29 | The handheld photo camera a player spawns from the quick access menu. Only its owner can pick it up; photos, selfie mode and streaming sync to others. Never saved. `HandCamera.Current` is the local player's. |
@@ -148,18 +148,18 @@ See [the overview](overview.md) for what the columns mean and how this list is m
 | [`HandCameraSettings`](/game-api/types/alta-customization/handcamerasettings) | class | `ScriptableObject` | 9 | ScriptableObject with the hand camera's tuning: timer options, flash and fade timings, photo colours, antialiasing and the layers that block a shot. |
 | [`HandCameraStreamer`](/game-api/types/alta-customization/handcamerastreamer) | class | `MonoBehaviour` | 2 | Client: shows the hand camera's live view on a plane through its own camera. `HandyCameraManager.StartStreaming` spawns one from a prefab on first use. |
 | [`HandCameraViewfinderResizerSettings`](/game-api/types/alta-customization/handcameraviewfinderresizersettings) | internal class | `ScriptableObject` | 2 | Client: keeps the hand camera's viewfinder from going further than a set distance from the player's head, pulling it in along the line of sight. Internal asset. |
-| [`HandyCameraManager`](/game-api/types/alta-customization/handycameramanager) | class | `NetworkEntityBehaviour` | 5 |  |
+| [`HandyCameraManager`](/game-api/types/alta-customization/handycameramanager) | class | `NetworkEntityBehaviour` | 5 | Spawns and despawns each player's hand camera (the summoned screenshot camera), despawns it when the player walks too far away, and runs the streaming output. One scene instance, used through static methods; the server owns the cameras. |
 | [`LocalPlayerHeadRenderer`](/game-api/types/alta-customization/localplayerheadrenderer) | class |  | 2 | Turns the local player's head renderers on while a hand camera renders, so selfies show your head, then restores them. Client only. |
-| [`OnDrawFilter`](/game-api/types/alta-customization/ondrawfilter) | abstract class | `FilterAction` | 2 |  |
-| [`OpticalZoom`](/game-api/types/alta-customization/opticalzoom) | class | `NetworkEntityBehaviour` | 2 |  |
+| [`OnDrawFilter`](/game-api/types/alta-customization/ondrawfilter) | abstract class | `FilterAction` | 2 | Base for hand camera filters that change things just before the camera renders and undo them after. Subclasses implement `PreRender` and `PostRender`. |
+| [`OpticalZoom`](/game-api/types/alta-customization/opticalzoom) | class | `NetworkEntityBehaviour` | 2 | Zoom lens dock on the hand camera: docking a zoom attachment narrows the camera's field of view and hides the attachment from the camera's render. When the camera is destroyed the server pops the attachment off. |
 | [`PlayerSwapMaterialFilter`](/game-api/types/alta-customization/playerswapmaterialfilter) | abstract class | `OnDrawFilter` | 1 | Base for hand camera filters that swap every living player's clothing materials for a copy while the camera renders, then put the originals back. Subclasses build the copy in `SetupTuple`. |
 | [`PlayerSwapMaterialFilter.MaterialTuple`](/game-api/types/alta-customization/playerswapmaterialfilter-materialtuple) | class |  | 3 | A renderer's original material and the swapped copy a hand camera filter shows instead (for example the spectral look). |
-| [`PostProcessFilter`](/game-api/types/alta-customization/postprocessfilter) | class | `FilterAction` | 2 |  |
+| [`PostProcessFilter`](/game-api/types/alta-customization/postprocessfilter) | class | `FilterAction` | 2 | Hand camera filter asset that swaps in a post-processing profile. |
 | [`RemoteObiturator`](/game-api/types/alta-customization/remoteobiturator) | class | `MonoBehaviour` | 0 | The hand camera's detachable remote. It sits in a slot on the camera; the owner pulls it out to use as a remote shutter and puts it back by bringing it close. Slot state is synced. |
-| [`SpectralFilter`](/game-api/types/alta-customization/spectralfilter) | class | `PlayerSwapMaterialFilter` | 0 |  |
-| [`SphereBlockableCamera`](/game-api/types/alta-customization/sphereblockablecamera) | class | `BlockableCamera` | 0 |  |
-| [`StreamingButton`](/game-api/types/alta-customization/streamingbutton) | class | `CameraButton` | 0 |  |
-| [`SummonCameraQuickAccess`](/game-api/types/alta-customization/summoncameraquickaccess) | class | `QuickAccessMenuAction` | 3 |  |
-| [`TimerButton`](/game-api/types/alta-customization/timerbutton) | class | `CameraButton` | 0 |  |
+| [`SpectralFilter`](/game-api/types/alta-customization/spectralfilter) | class | `PlayerSwapMaterialFilter` | 0 | Hand camera filter asset that renders players with a spectral material, keeping each original material's main texture as a cutout. |
+| [`SphereBlockableCamera`](/game-api/types/alta-customization/sphereblockablecamera) | class | `BlockableCamera` | 0 | A `BlockableCamera` that counts as blocked when a sphere around the lens overlaps the block layers. |
+| [`StreamingButton`](/game-api/types/alta-customization/streamingbutton) | class | `CameraButton` | 0 | Hand camera button whose light blinks while the camera is streaming. Client only. |
+| [`SummonCameraQuickAccess`](/game-api/types/alta-customization/summoncameraquickaccess) | class | `QuickAccessMenuAction` | 3 | Quick access menu action that summons or dismisses the local player's hand camera. |
+| [`TimerButton`](/game-api/types/alta-customization/timerbutton) | class | `CameraButton` | 0 | Hand camera button that shows the self-timer value. |
 | [`TouchScreenMenu`](/game-api/types/alta-customization/touchscreenmenu) | class | `TouchScreenMenuBase` | 0 | The hand camera's touch screen menu. Sets up for the owner and hides its buttons while the camera renders. |
 | [`VisibilityTrigger`](/game-api/types/alta-customization/visibilitytrigger) | class | `MonoBehaviour` | 2 | Reports when a renderer on this object becomes visible or invisible to any camera. |

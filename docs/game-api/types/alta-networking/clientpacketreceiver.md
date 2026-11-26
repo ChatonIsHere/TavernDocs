@@ -1,6 +1,6 @@
 ---
 title: "ClientPacketReceiver"
-description: "class ClientPacketReceiver in Root.Township."
+description: "The client's packet receiver: creates or approves the server connection when the transport approves it, and passes incoming packets to that connection."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ClientPacketReceiver
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+The client's packet receiver: creates or approves the server connection when the transport approves it, and passes incoming packets to that connection. Created by `Socket` on the client.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** [`IPacketReceiver`](/game-api/types/alta-networking/ipacketreceiver), [`IPacketProcessor`](/game-api/types/assembly-other/ipacketprocessor)
@@ -26,9 +28,9 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | NLog logger for this class. |
 
 </details>
 
@@ -37,25 +39,25 @@ A **class** in `Root.Township`, `Alta.Networking`.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-socket" /><code>{"private "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" Socket { get; }"}</code> | The socket this receiver works for. |
 
 </details>
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-receivepackets" /><code>{"void ReceivePackets()"}</code> | Asks the transport to process incoming data, which calls `Process` for each packet. |
 
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |
-| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> |
-| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-createconnection" /><code>{"private void CreateConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | On transport approval, approves the existing connection or creates and approves a new one. |
+| <Link id="m-destroyconnection" /><code>{"private void DestroyConnection("}<Link to="/game-api/types/assembly-other/itransportclient">{"ITransportClient"}</Link>{" client)"}</code> | On transport disconnect, disconnects the matching connection, or logs an error if there is none. |
+| <Link id="m-process" /><code>{"private void Alta.NetworkingTransport.IPacketProcessor.Process("}<Link to="/game-api/types/assembly-other/itransportsocket">{"ITransportSocket"}</Link>{" socket, int connectionId, ArraySegment<byte> data, int channel)"}</code> | Hands a received packet to the connection with that id, skipping empty packets. |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase._3rd_Party.Pathfinding"
-description: "abstract class AltaMenuItemBase._3rd_Party.Pathfinding in Alta.MenuItem."
+description: "Editor menu folder 3rd Party/Pathfinding: menu item classes inherit it to appear under that path."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase._3rd_Party.Pathfinding
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Editor menu folder `3rd Party/Pathfinding`: menu item classes inherit it to appear under that path. Does nothing at runtime.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase._3rd_Party`](/game-api/types/assembly-other/altamenuitembase-_3rd_party)

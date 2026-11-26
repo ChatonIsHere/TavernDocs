@@ -1,6 +1,6 @@
 ---
 title: "CharacterControllerUnityEvent"
-description: "class CharacterControllerUnityEvent in Root.Township."
+description: "Serializable UnityEvent that passes a PlayerController."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CharacterControllerUnityEvent
 
 A **class** in `Root.Township`, no namespace.
+
+Serializable `UnityEvent` that passes a `PlayerController`.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Inherits or implements** `UnityEvent<PlayerController>`

@@ -1,6 +1,6 @@
 ---
 title: "DebugLightMenuAction"
-description: "class DebugLightMenuAction in Root.Township."
+description: "Developer quick access action that toggles the light on a hand (LightHands)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # DebugLightMenuAction
 
 A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+Developer quick access action that toggles the light on a hand (`LightHands`). Client only.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`QuickAccessMenuAction`](/game-api/types/alta-player/quickaccessmenuaction)
@@ -24,13 +26,13 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | True if either hand's light is on. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Always true. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Toggles the light on the hand that chose it. |

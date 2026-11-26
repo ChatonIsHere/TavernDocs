@@ -1,6 +1,6 @@
 ---
 title: "AltaMenuItemBase.Assets"
-description: "abstract class AltaMenuItemBase.Assets in Alta.MenuItem."
+description: "Menu path node for the editor's Assets menu."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # AltaMenuItemBase.Assets
 
 An **abstract class** in `Alta.MenuItem`, no namespace.
+
+Menu path node for the editor's Assets menu.
 
 - **Listed in** [Other Alta assemblies](/game-api/types/assembly-other)
 - **Nested in** [`AltaMenuItemBase`](/game-api/types/assembly-other/altamenuitembase)

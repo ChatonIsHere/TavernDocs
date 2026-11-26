@@ -1,6 +1,6 @@
 ---
 title: "PageCollection.Create"
-description: "class PageCollection.Create in Root.Township."
+description: "Editor menu item under Assets/Create/Township/Features/Pages that makes a new PageCollection asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # PageCollection.Create
 
 A **class** in `Root.Township`, `Alta.Pages`.
+
+Editor menu item under Assets/Create/Township/Features/Pages that makes a new `PageCollection` asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`PageCollection`](/game-api/types/alta-items/pagecollection)

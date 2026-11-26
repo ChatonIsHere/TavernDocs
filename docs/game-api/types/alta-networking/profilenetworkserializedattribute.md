@@ -1,6 +1,6 @@
 ---
 title: "ProfileNetworkSerializedAttribute"
-description: "class ProfileNetworkSerializedAttribute in Root.Township."
+description: "Marks an INetworkSerialized type so NetworkSerializedProfiler picks up its static serializeTimer and prepareForWriteTimer fields."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ProfileNetworkSerializedAttribute
 
 A **class** in `Root.Township`, `Alta.Networking`.
+
+Marks an `INetworkSerialized` type so `NetworkSerializedProfiler` picks up its static `serializeTimer` and `prepareForWriteTimer` fields.
 
 - **Listed in** [Networking and servers](/game-api/types/alta-networking)
 - **Inherits or implements** `Attribute`

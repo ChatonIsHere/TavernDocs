@@ -1,6 +1,6 @@
 ---
 title: "FullStackTraceRenderer"
-description: "class FullStackTraceRenderer in Root.Township."
+description: "NLog layout renderer ${fullstacktrace}: the full stack trace with file and line for each frame."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # FullStackTraceRenderer
 
 A **class** in `Root.Township`, `Alta.Logging.Targets`.
+
+NLog layout renderer `${fullstacktrace}`: the full stack trace with file and line for each frame.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** `LayoutRenderer`, `IUsesStackTrace`
@@ -24,12 +26,12 @@ A **class** in `Root.Township`, `Alta.Logging.Targets`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-stacktraceusage" /><code>{"StackTraceUsage StackTraceUsage { get; }"}</code> | Asks NLog to capture the stack trace with source info. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-append" /><code>{"protected override void Append(StringBuilder builder, LogEventInfo logEvent)"}</code> | Writes a `stacktrace` event property if there is one, otherwise each frame from the caller down. |

@@ -1,6 +1,6 @@
 ---
 title: "NetworkEntityParentRenderer"
-description: "class NetworkEntityParentRenderer in Root.Township."
+description: "NLog layout renderer ${entity-parent}: the parent of a NetworkEntity passed as the first log parameter, or n/a."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # NetworkEntityParentRenderer
 
 A **class** in `Root.Township`, `Alta.Logging.Targets`.
+
+NLog layout renderer `${entity-parent}`: the parent of a `NetworkEntity` passed as the first log parameter, or `n/a`.
 
 - **Listed in** [Console, logging and analytics](/game-api/types/alta-console)
 - **Inherits or implements** [`NetworkEntityRenderer`](/game-api/types/alta-console/networkentityrenderer)
@@ -24,6 +26,6 @@ A **class** in `Root.Township`, `Alta.Logging.Targets`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-processentity" /><code>{"protected override object ProcessEntity("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Returns the entity's parent. |

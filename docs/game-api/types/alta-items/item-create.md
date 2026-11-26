@@ -1,6 +1,6 @@
 ---
 title: "Item.Create"
-description: "class Item.Create in Root.Township."
+description: "Editor menu entry for creating an Item asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # Item.Create
 
 A **class** in `Root.Township`, `Alta.Inventory`.
+
+Editor menu entry for creating an `Item` asset.
 
 - **Listed in** [Items, inventory and logic](/game-api/types/alta-items)
 - **Nested in** [`Item`](/game-api/types/alta-items/item)

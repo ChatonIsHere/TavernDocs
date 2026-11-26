@@ -1,6 +1,6 @@
 ---
 title: "ChunkDisplay"
-description: "class ChunkDisplay in Root.Township."
+description: "Live debug readout of the chunk the local player is in."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ChunkDisplay
 
 A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
+
+Live debug readout of the chunk the local player is in.
 
 - **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
 - **Inherits or implements** [`LiveDataDisplayBase`](/game-api/types/alta-utilities/livedatadisplaybase)
@@ -23,13 +25,13 @@ A **class** in `Root.Township`, `Alta.Utilities.Profiling`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-title" /><code>{"protected override string Title { get; }"}</code> | Label `Chunk`. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> |
-| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isvalid" /><code>{"override bool IsValid()"}</code> | Only shown while the local player is in a chunk. |
+| <Link id="m-getdata" /><code>{"protected override string GetData()"}</code> | The identifier of `LocationChunk.ChunkWithLocalPlayer`. |

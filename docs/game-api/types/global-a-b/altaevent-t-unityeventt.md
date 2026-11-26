@@ -29,10 +29,10 @@ A serializable event with one argument that fires both an inspector UnityEvent a
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
-| <Link id="m-triggered" /><code>{"private UnityEventT triggered"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Shared `AltaEvent` logger, used when a handler throws. |
+| <Link id="m-triggered" /><code>{"private UnityEventT triggered"}</code> | The serialized inspector `UnityEvent`, invoked before the C# `Invoked` event. |
 
 </details>
 
@@ -45,9 +45,9 @@ A serializable event with one argument that fires both an inspector UnityEvent a
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ialtaeventvalidation-eventbase" /><code>{"private UnityEventBase IAltaEventValidation.EventBase { get; }"}</code> | Exposes the inspector `UnityEvent` so `Validate` can clean it. |
 
 </details>
 

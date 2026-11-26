@@ -1,6 +1,6 @@
 ---
 title: "HandyCameraManager.CameraArguments"
-description: "struct HandyCameraManager.CameraArguments in Root.Township."
+description: "Private message struct holding a camera and player identifier."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # HandyCameraManager.CameraArguments
 
 A **private struct** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it through att-stubs' publicized assemblies or Harmony's `AccessTools`.
+
+Private message struct holding a camera and player identifier. Not used anywhere in this build.
 
 - **Listed in** [Customization and screenshots](/game-api/types/alta-customization)
 - **Nested in** [`HandyCameraManager`](/game-api/types/alta-customization/handycameramanager)
@@ -23,7 +25,7 @@ A **private struct** in `Root.Township`, `Alta.ScreenshotCamera`. Reach it throu
 
 ## Fields
 
-| Member |
-| --- |
-| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> |
-| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cameraidentifier" /><code>{"uint cameraIdentifier"}</code> | Entity identifier of the camera. |
+| <Link id="m-playeridentifier" /><code>{"int playerIdentifier"}</code> | Identifier of the player. |

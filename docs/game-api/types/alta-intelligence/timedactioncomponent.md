@@ -29,9 +29,9 @@ Base for a creature action component that runs for a set duration.
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-duration" /><code>{"private float duration"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-duration" /><code>{"private float duration"}</code> | Backing field for `Duration` (default 5 seconds). |
 
 </details>
 

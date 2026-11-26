@@ -30,10 +30,10 @@ Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-path" /><code>{"private string path"}</code> |
-| <Link id="m-type" /><code>{"private string type"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-path" /><code>{"private string path"}</code> | Type name of `T` with dots and plus signs turned into underscores, used to name the generated create action class. |
+| <Link id="m-type" /><code>{"private string type"}</code> | Full C# name of this generic menu item type, written into the generated editor code. |
 
 </details>
 

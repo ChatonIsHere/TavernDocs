@@ -1,6 +1,6 @@
 ---
 title: "ToggleAccessibleDockMenuAction"
-description: "class ToggleAccessibleDockMenuAction in Root.Township."
+description: "Accessibility quick access action that toggles accessible dock positions (AccessibleDocks)."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # ToggleAccessibleDockMenuAction
 
 A **class** in `Root.Township`, `Alta.QuickAccessActions`.
+
+Accessibility quick access action that toggles accessible dock positions (`AccessibleDocks`). Client only.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`QuickAccessMenuAction`](/game-api/types/alta-player/quickaccessmenuaction)
@@ -24,14 +26,14 @@ A **class** in `Root.Township`, `Alta.QuickAccessActions`.
 
 ## Properties
 
-| Member |
-| --- |
-| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> |
-| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> |
-| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-isactive" /><code>{"override bool IsActive { get; }"}</code> | True while accessible docks are on. |
+| <Link id="m-isignored" /><code>{"override bool IsIgnored { get; }"}</code> | Hidden unless accessibility features are on. |
+| <Link id="m-isvalid" /><code>{"override bool IsValid { get; }"}</code> | Always true. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-run" /><code>{"override void Run("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Toggles accessible docks. |

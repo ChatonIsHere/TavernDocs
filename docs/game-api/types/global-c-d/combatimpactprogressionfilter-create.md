@@ -1,6 +1,6 @@
 ---
 title: "CombatImpactProgressionFilter.Create"
-description: "class CombatImpactProgressionFilter.Create in Root.Township."
+description: "Editor menu item that creates a CombatImpactProgressionFilter asset."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # CombatImpactProgressionFilter.Create
 
 A **class** in `Root.Township`, no namespace.
+
+Editor menu item that creates a `CombatImpactProgressionFilter` asset.
 
 - **Listed in** [No namespace: C to D](/game-api/types/global-c-d)
 - **Nested in** [`CombatImpactProgressionFilter`](/game-api/types/global-c-d/combatimpactprogressionfilter)

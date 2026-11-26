@@ -1,6 +1,6 @@
 ---
 title: "BowSlowdraw"
-description: "class BowSlowdraw in Root.Township."
+description: "Bow draw skill asset for slowdraw."
 displayed_sidebar: game
 pagination_prev: null
 pagination_next: null
@@ -11,6 +11,8 @@ import Link from '@docusaurus/Link';
 # BowSlowdraw
 
 A **class** in `Root.Township`, `Alta.Progression.Skills`.
+
+Bow draw skill asset for slowdraw. Adds nothing to `BowDrawSkill`; the difference is in the asset's settings.
 
 - **Listed in** [Players and characters](/game-api/types/alta-player)
 - **Inherits or implements** [`BowDrawSkill`](/game-api/types/alta-player/bowdrawskill)

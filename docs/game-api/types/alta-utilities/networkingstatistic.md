@@ -34,13 +34,13 @@ Counter for one kind of network message in the transport metrics: how many were 
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-bytesperframe" /><code>{"private float bytesPerFrame"}</code> |
-| <Link id="m-bytesperlastsecond" /><code>{"private float bytesPerLastSecond"}</code> |
-| <Link id="m-count" /><code>{"private int count"}</code> |
-| <Link id="m-oldbytes" /><code>{"private int oldBytes"}</code> |
-| <Link id="m-totalbytes" /><code>{"private int totalBytes"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-bytesperframe" /><code>{"private float bytesPerFrame"}</code> | Average bytes per message (total bytes over message count), despite the name. Backing field for `BytesPerFrame`. |
+| <Link id="m-bytesperlastsecond" /><code>{"private float bytesPerLastSecond"}</code> | Bytes added since the previous per-second update. Backing field for `BytesPerLastSecond`. |
+| <Link id="m-count" /><code>{"private int count"}</code> | Number of messages registered. Backing field for `Count`. |
+| <Link id="m-oldbytes" /><code>{"private int oldBytes"}</code> | Total bytes at the previous per-second update, used to work out `bytesPerLastSecond`. |
+| <Link id="m-totalbytes" /><code>{"private int totalBytes"}</code> | Bytes registered since the last reset. Backing field for `TotalBytes`. |
 
 </details>
 
