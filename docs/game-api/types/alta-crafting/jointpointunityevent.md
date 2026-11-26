@@ -1,0 +1,25 @@
+---
+title: "JointPointUnityEvent"
+description: "Serializable UnityEvent that passes a JointPoint."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# JointPointUnityEvent
+
+A **class** in `Root.Township`, `Alta.Crafting`.
+
+Serializable `UnityEvent` that passes a `JointPoint`.
+
+- **Listed in** [Crafting and making](/game-api/types/alta-crafting)
+- **Inherits or implements** `UnityEvent<JointPoint>`
+- **Derived types** [`JointPointEvent`](/game-api/types/alta-crafting/jointpointevent)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"JointPointUnityEvent()"}</code> |

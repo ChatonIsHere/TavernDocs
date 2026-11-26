@@ -1,0 +1,23 @@
+---
+title: "ProjectileUnityEvent"
+description: "class ProjectileUnityEvent in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ProjectileUnityEvent
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Inherits or implements** `UnityEvent<Projectile>`
+- **Derived types** [`ProjectileAltaEvent`](/game-api/types/global-p/projectilealtaevent)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ProjectileUnityEvent()"}</code> |

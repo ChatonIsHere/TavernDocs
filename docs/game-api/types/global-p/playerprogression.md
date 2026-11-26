@@ -1,0 +1,32 @@
+---
+title: "PlayerProgression"
+description: "class PlayerProgression in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# PlayerProgression
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: P](/game-api/types/global-p)
+- **Nested types** [`EventTypeEnum`](/game-api/types/global-p/playerprogression-eventtypeenum)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> |
+
+## Properties
+
+| Member |
+| --- |
+| <Link id="m-currentlevel" /><code>{"uint CurrentLevel { get; }"}</code> |
+| <Link id="m-eventtype" /><code>{"string EventType { get; }"}</code> |
+| <Link id="m-hash" /><code>{"uint Hash { get; }"}</code> |
+| <Link id="m-path" /><code>{"string Path { get; }"}</code> |
+| <Link id="m-playerid" /><code>{"int PlayerID { get; }"}</code> |

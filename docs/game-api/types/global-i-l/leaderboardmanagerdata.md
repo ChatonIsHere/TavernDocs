@@ -1,0 +1,38 @@
+---
+title: "LeaderboardManagerData"
+description: "class LeaderboardManagerData in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LeaderboardManagerData
+
+A **class** in `Root.Township`, no namespace.
+
+- **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
+- **Inherits or implements** [`NewSaveData<LeaderboardManager, LeaderboardManagerData>`](/game-api/types/global-m-o/newsavedata-tsavable-tdata)
+- **Derived types** [`LeaderboardManager`](/game-api/types/global-i-l/leaderboardmanager), [`LeaderboardManagerData`](/game-api/types/global-i-l/leaderboardmanagerdata)
+- **Nested types** [`LeaderboardEntry`](/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry), [`PlayerBestTimes`](/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes)
+- **Attributes** `SaveStructure`
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerData()"}</code> |
+
+## Fields
+
+| Member |
+| --- |
+| <Link id="m-entries" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdata-leaderboardentry">{"LeaderboardManagerData.LeaderboardEntry"}</Link>{"[] entries"}</code> |
+| <Link id="m-players" /><code><Link to="/game-api/types/global-i-l/leaderboardmanagerdata-playerbesttimes">{"LeaderboardManagerData.PlayerBestTimes"}</Link>{"[] players"}</code> |
+
+## Methods
+
+| Member |
+| --- |
+| <Link id="m-setup" /><code>{"void Setup(Dictionary<"}<Link to="/game-api/types/global-i-l/leaderboarddefinitiondata">{"LeaderboardDefinitionData"}</Link>{", List<"}<Link to="/game-api/types/global-i-l/leaderboardmanager-rankedplayer">{"LeaderboardManager.RankedPlayer"}</Link>{">> availableLeaderboards, Dictionary<int, "}<Link to="/game-api/types/global-i-l/leaderboardmanager-playertracker">{"LeaderboardManager.PlayerTracker"}</Link>{"> trackers)"}</code> |

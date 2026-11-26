@@ -1,0 +1,31 @@
+---
+title: "IDigable"
+description: "Something a digging tool can dig, like BasicDigable."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# IDigable
+
+An **interface** in `Root.Township`, no namespace.
+
+Something a digging tool can dig, like `BasicDigable`. `DiggingImpactor` finds it on rigidbodies in range.
+
+- **Listed in** [No namespace: I to L](/game-api/types/global-i-l)
+- **Derived types** [`BasicDigable`](/game-api/types/global-a-b/basicdigable), [`SpawnBuried`](/game-api/types/global-s/spawnburied)
+
+## Methods
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-dig" /><code>{"void Dig(float diggingDamage)"}</code> | Applies a dig with the given damage, from the tool's settings and efficiency. |
+| <Link id="m-diggingtoolhit" /><code>{"void DiggingToolHit()"}</code> | Called when a digging tool hits it, before or without a full dig. |
+
+## Used in
+
+Members of other types that take, return or hold a `IDigable`:
+
+[`DiggingImpactor.FoundDigables`](/game-api/types/global-c-d/diggingimpactor#m-founddigables).

@@ -1,0 +1,23 @@
+---
+title: "ConnectionReceiveSettings.Create"
+description: "class ConnectionReceiveSettings.Create in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ConnectionReceiveSettings.Create
+
+A **class** in `Root.Township`, `Alta.Networking.Internal`.
+
+- **Listed in** [Networking and servers](/game-api/types/alta-networking)
+- **Nested in** [`ConnectionReceiveSettings`](/game-api/types/alta-networking/connectionreceivesettings)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Networking.ScriptableObject<ConnectionReceiveSettings>`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-networking-scriptableobject-t)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |

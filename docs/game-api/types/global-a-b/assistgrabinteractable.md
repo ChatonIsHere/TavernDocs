@@ -1,0 +1,42 @@
+---
+title: "AssistGrabInteractable"
+description: "An Interactable that grab assist can pull toward the hand."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# AssistGrabInteractable
+
+A **class** in `Root.Township`, no namespace.
+
+An `Interactable` that grab assist can pull toward the hand. `GrabAssistController` scores these as assist targets; it saves as a plain `Interactable`.
+
+- **Listed in** [No namespace: A to B](/game-api/types/global-a-b)
+- **Inherits or implements** [`Interactable`](/game-api/types/global-i-l/interactable), [`ICustomTypeReplace`](/game-api/types/alta-networking/icustomtypereplace), [`IEntityReplaceHandler`](/game-api/types/alta-networking/ientityreplacehandler)
+- **Documented in** [Items, interaction and damage](/game-api/items/overview)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"AssistGrabInteractable()"}</code> |
+
+## Properties
+
+<details>
+<summary>1 private and internal property</summary>
+
+| Member | What it is |
+| --- | --- |
+| <Link id="m-alta-networking-icustomtypereplace-replacetype" /><code>{"private Type Alta.Networking.ICustomTypeReplace.ReplaceType { get; }"}</code> | Returns `typeof(Interactable)`, so entity replacement treats this as a plain `Interactable`. |
+
+</details>
+
+## Used in
+
+Members of other types that take, return or hold a `AssistGrabInteractable`:
+
+[`GrabAssistController.GetAssistGrabTargetScore`](/game-api/types/global-e-h/grabassistcontroller#m-getassistgrabtargetscore).

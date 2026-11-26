@@ -1,0 +1,25 @@
+---
+title: "SmeltingRecipe.Create"
+description: "Editor menu entry for creating a SmeltingRecipe asset."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# SmeltingRecipe.Create
+
+A **class** in `Root.Township`, `Alta.Blacksmithing`.
+
+Editor menu entry for creating a `SmeltingRecipe` asset.
+
+- **Listed in** [Crafting and making](/game-api/types/alta-crafting)
+- **Nested in** [`SmeltingRecipe`](/game-api/types/alta-crafting/smeltingrecipe)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Features.Blacksmithing.ScriptableObject<SmeltingRecipe>`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-blacksmithing-scriptableobject-t)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |

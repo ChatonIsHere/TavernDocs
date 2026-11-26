@@ -1,0 +1,23 @@
+---
+title: "LiquidSettings.Create"
+description: "class LiquidSettings.Create in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# LiquidSettings.Create
+
+A **class** in `Root.Township`, `Alta.Liquid`.
+
+- **Listed in** [Stats, effects, heat and liquid](/game-api/types/alta-stats-effects)
+- **Nested in** [`LiquidSettings`](/game-api/types/alta-stats-effects/liquidsettings)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject<LiquidSettings>`](/game-api/types/assembly-other/altamenuitembase-assets-create-global_settings-scriptableobject-t)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |

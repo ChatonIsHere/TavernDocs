@@ -1,0 +1,284 @@
+---
+title: "SoundEffect"
+description: "A numbered list of game sound effects (teleport, docking, mining, combat, footsteps and more)."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# SoundEffect
+
+An **enum** in `Root.Township`, no namespace.
+
+A numbered list of game sound effects (teleport, docking, mining, combat, footsteps and more).
+
+- **Listed in** [No namespace: S](/game-api/types/global-s)
+
+## Values
+
+| Member |
+| --- |
+| <Link id="m-arrowimpact" /><code>{"ArrowImpact = 13"}</code> |
+| <Link id="m-arrowknock" /><code>{"ArrowKnock = 16"}</code> |
+| <Link id="m-arrowwoosh" /><code>{"ArrowWoosh = 17"}</code> |
+| <Link id="m-axechargeshatter" /><code>{"AxeChargeShatter = 625"}</code> |
+| <Link id="m-babuaggro" /><code>{"BabuAggro = 871"}</code> |
+| <Link id="m-babuaggrothreaten" /><code>{"BabuAggroThreaten = 875"}</code> |
+| <Link id="m-babuchargeleap" /><code>{"BabuChargeLeap = 874"}</code> |
+| <Link id="m-babudeath" /><code>{"BabuDeath = 877"}</code> |
+| <Link id="m-babudig" /><code>{"BabuDig = 879"}</code> |
+| <Link id="m-babueat" /><code>{"BabuEat = 878"}</code> |
+| <Link id="m-babuidle" /><code>{"BabuIdle = 870"}</code> |
+| <Link id="m-baburungrunt" /><code>{"BabuRunGrunt = 880"}</code> |
+| <Link id="m-babusleepsnore" /><code>{"BabuSleepSnore = 883"}</code> |
+| <Link id="m-babusleepstart" /><code>{"BabuSleepStart = 882"}</code> |
+| <Link id="m-babusniff" /><code>{"BabuSniff = 881"}</code> |
+| <Link id="m-babustep" /><code>{"BabuStep = 872"}</code> |
+| <Link id="m-babustepstrong" /><code>{"BabuStepStrong = 873"}</code> |
+| <Link id="m-babustunned" /><code>{"BabuStunned = 876"}</code> |
+| <Link id="m-backpackdocked" /><code>{"BackpackDocked = 2"}</code> |
+| <Link id="m-backpackundocked" /><code>{"BackpackUndocked = 3"}</code> |
+| <Link id="m-bite" /><code>{"Bite = 19"}</code> |
+| <Link id="m-boilingstew" /><code>{"BoilingStew = 251"}</code> |
+| <Link id="m-boilingwater" /><code>{"BoilingWater = 250"}</code> |
+| <Link id="m-bottlebreak" /><code>{"BottleBreak = 141"}</code> |
+| <Link id="m-bowdraw" /><code>{"BowDraw = 18"}</code> |
+| <Link id="m-bowshoot" /><code>{"BowShoot = 15"}</code> |
+| <Link id="m-bowstringrelease" /><code>{"BowStringRelease = 14"}</code> |
+| <Link id="m-branchesbreak" /><code>{"BranchesBreak = 72"}</code> |
+| <Link id="m-burningstew" /><code>{"BurningStew = 252"}</code> |
+| <Link id="m-buttonpressed" /><code>{"ButtonPressed = 30"}</code> |
+| <Link id="m-buttonreleased" /><code>{"ButtonReleased = 31"}</code> |
+| <Link id="m-caveambience" /><code>{"CaveAmbience = 952"}</code> |
+| <Link id="m-caveteleporterfix" /><code>{"CaveTeleporterFix = 711"}</code> |
+| <Link id="m-caveteleporteruse" /><code>{"CaveTeleporterUSe = 710"}</code> |
+| <Link id="m-cavewater" /><code>{"CaveWater = 156"}</code> |
+| <Link id="m-chestcloses" /><code>{"ChestCloses = 65"}</code> |
+| <Link id="m-chestcreak" /><code>{"ChestCreak = 64"}</code> |
+| <Link id="m-christmasambience" /><code>{"ChristmasAmbience = 36"}</code> |
+| <Link id="m-climbbreak" /><code>{"ClimbBreak = 911"}</code> |
+| <Link id="m-climbgrab" /><code>{"ClimbGrab = 910"}</code> |
+| <Link id="m-climbunlockuse" /><code>{"ClimbUnlockUse = 912"}</code> |
+| <Link id="m-clunkingsounds" /><code>{"ClunkingSounds = 94"}</code> |
+| <Link id="m-coinadded" /><code>{"CoinAdded = 830"}</code> |
+| <Link id="m-coinpressuse" /><code>{"CoinPressUse = 660"}</code> |
+| <Link id="m-combatstep" /><code>{"CombatStep = 23"}</code> |
+| <Link id="m-corkpop" /><code>{"CorkPop = 140"}</code> |
+| <Link id="m-craftingdeckitemattached" /><code>{"CraftingDeckItemAttached = 814"}</code> |
+| <Link id="m-craftingdeckitembreak" /><code>{"CraftingDeckItemBreak = 813"}</code> |
+| <Link id="m-craftingdeckitemdone" /><code>{"CraftingDeckItemDone = 810"}</code> |
+| <Link id="m-craftingdeckitempopout" /><code>{"CraftingDeckItemPopOut = 815"}</code> |
+| <Link id="m-craftingdeckleatheritemplaced" /><code>{"CraftingDeckLeatherItemPlaced = 811"}</code> |
+| <Link id="m-craftingdeckmetalitemplaced" /><code>{"CraftingDeckMetalItemPlaced = 812"}</code> |
+| <Link id="m-cratebreak" /><code>{"CrateBreak = 99"}</code> |
+| <Link id="m-cratehit" /><code>{"CrateHit = 97"}</code> |
+| <Link id="m-crateopen" /><code>{"CrateOpen = 95"}</code> |
+| <Link id="m-crossslashhit" /><code>{"CrossSlashHit = 596"}</code> |
+| <Link id="m-crossslashstart" /><code>{"CrossSlashStart = 595"}</code> |
+| <Link id="m-customizationcategorywheel" /><code>{"CustomizationCategoryWheel = 32"}</code> |
+| <Link id="m-customizationpaintapply" /><code>{"CustomizationPaintApply = 34"}</code> |
+| <Link id="m-customizationpaintselect" /><code>{"CustomizationPaintSelect = 33"}</code> |
+| <Link id="m-customizationswipe" /><code>{"CustomizationSwipe = 35"}</code> |
+| <Link id="m-daisdeath" /><code>{"DaisDeath = 885"}</code> |
+| <Link id="m-daisflee" /><code>{"DaisFlee = 886"}</code> |
+| <Link id="m-dayambience" /><code>{"DayAmbience = 950"}</code> |
+| <Link id="m-deadboy" /><code>{"DeadBoy = 21"}</code> |
+| <Link id="m-deathfernemit" /><code>{"DeathFernEmit = 892"}</code> |
+| <Link id="m-deathferngrow" /><code>{"DeathFernGrow = 891"}</code> |
+| <Link id="m-deathfernhit" /><code>{"DeathFernHit = 893"}</code> |
+| <Link id="m-deathfernshoot" /><code>{"DeathFernShoot = 890"}</code> |
+| <Link id="m-decraftingdock" /><code>{"DecraftingDock = 701"}</code> |
+| <Link id="m-decraftingpop" /><code>{"DecraftingPop = 700"}</code> |
+| <Link id="m-diggingdirtfall" /><code>{"DiggingDirtFall = 421"}</code> |
+| <Link id="m-diggingembbed" /><code>{"DiggingEmbbed = 420"}</code> |
+| <Link id="m-dockaddedto" /><code>{"DockAddedTo = 7"}</code> |
+| <Link id="m-dockhoveredover" /><code>{"DockHoveredOver = 9"}</code> |
+| <Link id="m-dockremovedfrom" /><code>{"DockRemovedFrom = 8"}</code> |
+| <Link id="m-drinking" /><code>{"Drinking = 201"}</code> |
+| <Link id="m-dynamitestrikehit" /><code>{"DynamiteStrikeHit = 590"}</code> |
+| <Link id="m-eastereggbreak" /><code>{"EasterEggBreak = 690"}</code> |
+| <Link id="m-echolocationactivate" /><code>{"EcholocationActivate = 570"}</code> |
+| <Link id="m-elevatorloop" /><code>{"ElevatorLoop = 158"}</code> |
+| <Link id="m-embercomposertrigger" /><code>{"EmberComposerTrigger = 635"}</code> |
+| <Link id="m-enemystunned" /><code>{"EnemyStunned = 780"}</code> |
+| <Link id="m-entercombat" /><code>{"EnterCombat = 24"}</code> |
+| <Link id="m-equipmentapplied" /><code>{"EquipmentApplied = 90"}</code> |
+| <Link id="m-equipmentmodeended" /><code>{"EquipmentModeEnded = 93"}</code> |
+| <Link id="m-equipmentmodepose" /><code>{"EquipmentModePose = 88"}</code> |
+| <Link id="m-equipmentmodestarted" /><code>{"EquipmentModeStarted = 92"}</code> |
+| <Link id="m-equipmenttakenoff" /><code>{"EquipmentTakenOff = 91"}</code> |
+| <Link id="m-existingfriendadded" /><code>{"ExistingFriendAdded = 741"}</code> |
+| <Link id="m-firebugidle" /><code>{"FirebugIdle = 153"}</code> |
+| <Link id="m-fireplace" /><code>{"Fireplace = 148"}</code> |
+| <Link id="m-fireplacestop" /><code>{"FireplaceStop = 144"}</code> |
+| <Link id="m-firetool" /><code>{"FireTool = 800"}</code> |
+| <Link id="m-fireworkexplosion" /><code>{"FireworkExplosion = 105"}</code> |
+| <Link id="m-fistbump" /><code>{"FistBump = 51"}</code> |
+| <Link id="m-forestambience" /><code>{"ForestAmbience = 953"}</code> |
+| <Link id="m-forgefire" /><code>{"ForgeFire = 801"}</code> |
+| <Link id="m-forgingheartcallerheathit" /><code>{"ForgingHeartcallerHeatHit = 621"}</code> |
+| <Link id="m-forgingheartcallerstronghit" /><code>{"ForgingHeartcallerStrongHit = 622"}</code> |
+| <Link id="m-forgingheartcallhit" /><code>{"ForgingHeartcallHit = 623"}</code> |
+| <Link id="m-forgingsuccessfulstrike" /><code>{"ForgingSuccessfulStrike = 620"}</code> |
+| <Link id="m-forgingunsuccessfulstrike" /><code>{"ForgingUnsuccessfulStrike = 619"}</code> |
+| <Link id="m-friendadded" /><code>{"FriendAdded = 740"}</code> |
+| <Link id="m-fruitsmash" /><code>{"FruitSmash = 500"}</code> |
+| <Link id="m-fullnessfilled" /><code>{"FullnessFilled = 27"}</code> |
+| <Link id="m-fuse" /><code>{"Fuse = 155"}</code> |
+| <Link id="m-gathererinhale" /><code>{"GathererInhale = 580"}</code> |
+| <Link id="m-gathereroff" /><code>{"GathererOff = 582"}</code> |
+| <Link id="m-gathereron" /><code>{"GathererOn = 581"}</code> |
+| <Link id="m-gears" /><code>{"Gears = 146"}</code> |
+| <Link id="m-geodebreak" /><code>{"GeodeBreak = 670"}</code> |
+| <Link id="m-geysererupt" /><code>{"GeyserErupt = 900"}</code> |
+| <Link id="m-geyserhiss" /><code>{"GeyserHiss = 901"}</code> |
+| <Link id="m-goteraartillery" /><code>{"GoteraArtillery = 302"}</code> |
+| <Link id="m-goteradeath" /><code>{"GoteraDeath = 299"}</code> |
+| <Link id="m-goteraidle" /><code>{"GoteraIdle = 304"}</code> |
+| <Link id="m-goteraseedexplosion" /><code>{"GoteraSeedExplosion = 147"}</code> |
+| <Link id="m-goterashoot" /><code>{"GoteraShoot = 303"}</code> |
+| <Link id="m-goterastep" /><code>{"GoteraStep = 300"}</code> |
+| <Link id="m-goterastomp" /><code>{"GoteraStomp = 301"}</code> |
+| <Link id="m-goterawhip" /><code>{"GoteraWhip = 305"}</code> |
+| <Link id="m-grasswalkthrough" /><code>{"GrassWalkThrough = 905"}</code> |
+| <Link id="m-groundfell" /><code>{"GroundFell = 400"}</code> |
+| <Link id="m-gurgling" /><code>{"Gurgling = 257"}</code> |
+| <Link id="m-healthupgraded" /><code>{"HealthUpgraded = 720"}</code> |
+| <Link id="m-healthupgradepip" /><code>{"HealthUpgradePip = 721"}</code> |
+| <Link id="m-highfive" /><code>{"HighFive = 50"}</code> |
+| <Link id="m-holdupchargeoff" /><code>{"HoldUpChargeOff = 572"}</code> |
+| <Link id="m-holdupchargeon" /><code>{"HoldUpChargeOn = 571"}</code> |
+| <Link id="m-hugeexplosion" /><code>{"HugeExplosion = 199"}</code> |
+| <Link id="m-impactsoundreceive" /><code>{"ImpactSoundReceive = 998"}</code> |
+| <Link id="m-impactsoundsend" /><code>{"ImpactSoundSend = 997"}</code> |
+| <Link id="m-itembreak" /><code>{"ItemBreak = 306"}</code> |
+| <Link id="m-keyinlock" /><code>{"KeyInLock = 60"}</code> |
+| <Link id="m-lavaloop" /><code>{"LavaLoop = 145"}</code> |
+| <Link id="m-leavesbreak" /><code>{"LeavesBreak = 73"}</code> |
+| <Link id="m-levelup" /><code>{"LevelUp = 307"}</code> |
+| <Link id="m-lightbeamshoteffect" /><code>{"LightbeamShotEffect = 630"}</code> |
+| <Link id="m-lightbeamshotimpact" /><code>{"LightbeamShotImpact = 631"}</code> |
+| <Link id="m-liquidslurp" /><code>{"LiquidSlurp = 256"}</code> |
+| <Link id="m-lockbreak" /><code>{"LockBreak = 63"}</code> |
+| <Link id="m-lockrattle" /><code>{"LockRattle = 61"}</code> |
+| <Link id="m-mailboxdispense" /><code>{"MailBoxDispense = 832"}</code> |
+| <Link id="m-mailboxsend" /><code>{"MailBoxSend = 831"}</code> |
+| <Link id="m-mapscribble" /><code>{"MapScribble = 640"}</code> |
+| <Link id="m-miningsuccessfulstrike" /><code>{"MiningSuccessfulStrike = 4"}</code> |
+| <Link id="m-miningunsuccessfulstrike" /><code>{"MiningUnsuccessfulStrike = 5"}</code> |
+| <Link id="m-nailingcomplete" /><code>{"NailingComplete = 821"}</code> |
+| <Link id="m-nailinghit" /><code>{"NailingHit = 820"}</code> |
+| <Link id="m-nightambience" /><code>{"NightAmbience = 951"}</code> |
+| <Link id="m-nightmarereceive" /><code>{"NightmareReceive = 797"}</code> |
+| <Link id="m-none" /><code>{"None = 999"}</code> |
+| <Link id="m-objectcollision" /><code>{"ObjectCollision = 12"}</code> |
+| <Link id="m-orbskillplaced" /><code>{"OrbskillPlaced = 149"}</code> |
+| <Link id="m-pagecopy" /><code>{"PageCopy = 121"}</code> |
+| <Link id="m-pagerip" /><code>{"PageRip = 120"}</code> |
+| <Link id="m-phantomalert" /><code>{"PhantomAlert = 790"}</code> |
+| <Link id="m-phantomdeath" /><code>{"PhantomDeath = 795"}</code> |
+| <Link id="m-phantomdematerialize" /><code>{"PhantomDematerialize = 792"}</code> |
+| <Link id="m-phantomhit" /><code>{"PhantomHit = 796"}</code> |
+| <Link id="m-phantomidle" /><code>{"PhantomIdle = 788"}</code> |
+| <Link id="m-phantomidleaggro" /><code>{"PhantomIdleAggro = 789"}</code> |
+| <Link id="m-phantommaterialize" /><code>{"PhantomMaterialize = 791"}</code> |
+| <Link id="m-phantomvisionattack" /><code>{"PhantomVisionAttack = 793"}</code> |
+| <Link id="m-phantomvisionattackeffect" /><code>{"PhantomVisionAttackEffect = 794"}</code> |
+| <Link id="m-phantomvisionattackeffectstop" /><code>{"PhantomVisionAttackEffectStop = 787"}</code> |
+| <Link id="m-pickupgrabbed" /><code>{"PickUpGrabbed = 10"}</code> |
+| <Link id="m-pickupletgo" /><code>{"PickUpLetGo = 11"}</code> |
+| <Link id="m-poisoncloud" /><code>{"PoisonCloud = 154"}</code> |
+| <Link id="m-popui" /><code>{"PopUI = 650"}</code> |
+| <Link id="m-pothit" /><code>{"PotHit = 98"}</code> |
+| <Link id="m-potopen" /><code>{"PotOpen = 96"}</code> |
+| <Link id="m-powerhitstrike" /><code>{"PowerHitStrike = 615"}</code> |
+| <Link id="m-powerstrikeend" /><code>{"PowerStrikeEnd = 552"}</code> |
+| <Link id="m-powerstrikestart" /><code>{"PowerStrikeStart = 550"}</code> |
+| <Link id="m-powerstrikeuse" /><code>{"PowerStrikeUse = 551"}</code> |
+| <Link id="m-presetdestroy" /><code>{"PresetDestroy = 861"}</code> |
+| <Link id="m-presetmakeruse" /><code>{"PresetMakerUse = 860"}</code> |
+| <Link id="m-presetsaved" /><code>{"PresetSaved = 862"}</code> |
+| <Link id="m-questcompleted" /><code>{"QuestCompleted = 680"}</code> |
+| <Link id="m-quickdrawactive" /><code>{"QuickDrawActive = 605"}</code> |
+| <Link id="m-quickdrawshot" /><code>{"QuickDrawShot = 606"}</code> |
+| <Link id="m-recipeplaceroff" /><code>{"RecipePlacerOff = 111"}</code> |
+| <Link id="m-recipeplaceron" /><code>{"RecipePlacerOn = 110"}</code> |
+| <Link id="m-recyclerglug" /><code>{"RecyclerGlug = 705"}</code> |
+| <Link id="m-riverambience" /><code>{"RiverAmbience = 151"}</code> |
+| <Link id="m-rockdestroyed" /><code>{"RockDestroyed = 6"}</code> |
+| <Link id="m-schmeecheedeath" /><code>{"SchmeecheeDeath = 851"}</code> |
+| <Link id="m-schmeecheeinteract" /><code>{"SchmeecheeInteract = 850"}</code> |
+| <Link id="m-screenshotcamappear" /><code>{"ScreenshotCamAppear = 731"}</code> |
+| <Link id="m-screenshottaken" /><code>{"ScreenshotTaken = 730"}</code> |
+| <Link id="m-shieldbashmetal" /><code>{"ShieldBashMetal = 28"}</code> |
+| <Link id="m-shieldbashwood" /><code>{"ShieldBashWood = 29"}</code> |
+| <Link id="m-shockwavehit" /><code>{"ShockwaveHit = 600"}</code> |
+| <Link id="m-shrineactivate" /><code>{"ShrineActivate = 560"}</code> |
+| <Link id="m-shrinetrainingcomplete" /><code>{"ShrineTrainingComplete = 564"}</code> |
+| <Link id="m-skillorbacquire" /><code>{"SkillOrbAcquire = 562"}</code> |
+| <Link id="m-skillorbinteract" /><code>{"SkillOrbInteract = 561"}</code> |
+| <Link id="m-skillorbreturn" /><code>{"SkillOrbReturn = 563"}</code> |
+| <Link id="m-slash" /><code>{"Slash = 20"}</code> |
+| <Link id="m-slowdrawcharge" /><code>{"SlowDrawCharge = 607"}</code> |
+| <Link id="m-slowdrawchargeend" /><code>{"SlowDrawChargeEnd = 609"}</code> |
+| <Link id="m-slowdrawshot" /><code>{"SlowDrawShot = 608"}</code> |
+| <Link id="m-smallexplosion" /><code>{"SmallExplosion = 198"}</code> |
+| <Link id="m-smoothlocostep" /><code>{"SmoothLocoStep = 26"}</code> |
+| <Link id="m-soilcrack" /><code>{"SoilCrack = 25"}</code> |
+| <Link id="m-spriggullalert" /><code>{"SpriggullAlert = 844"}</code> |
+| <Link id="m-spriggullattack" /><code>{"SpriggullAttack = 840"}</code> |
+| <Link id="m-spriggulldeath" /><code>{"SpriggullDeath = 841"}</code> |
+| <Link id="m-spriggullflail" /><code>{"SpriggullFlail = 843"}</code> |
+| <Link id="m-spriggullidle" /><code>{"SpriggullIdle = 842"}</code> |
+| <Link id="m-steamhiss" /><code>{"SteamHiss = 150"}</code> |
+| <Link id="m-stingercast" /><code>{"StingerCast = 637"}</code> |
+| <Link id="m-stomachrumble" /><code>{"StomachRumble = 200"}</code> |
+| <Link id="m-swordclash" /><code>{"SwordClash = 22"}</code> |
+| <Link id="m-teleportarrive" /><code>{"TeleportArrive = 0"}</code> |
+| <Link id="m-teleportdepart" /><code>{"TeleportDepart = 1"}</code> |
+| <Link id="m-tradedecktaxinput" /><code>{"TradeDeckTaxInput = 665"}</code> |
+| <Link id="m-trialambience" /><code>{"TrialAmbience = 157"}</code> |
+| <Link id="m-turabadaaggressiveidle" /><code>{"TurabadaAggressiveIdle = 760"}</code> |
+| <Link id="m-turabadaaggro" /><code>{"TurabadaAggro = 759"}</code> |
+| <Link id="m-turabadablockedbuff" /><code>{"TurabadaBlockedBuff = 771"}</code> |
+| <Link id="m-turabadadeath" /><code>{"TurabadaDeath = 754"}</code> |
+| <Link id="m-turabadagroundhit" /><code>{"TurabadaGroundHit = 758"}</code> |
+| <Link id="m-turabadagroundslam" /><code>{"TurabadaGroundSlam = 757"}</code> |
+| <Link id="m-turabadagroundslamlarge" /><code>{"TurabadaGroundSlamLarge = 772"}</code> |
+| <Link id="m-turabadaheal" /><code>{"TurabadaHeal = 764"}</code> |
+| <Link id="m-turabadaheavysteps" /><code>{"TurabadaHeavySteps = 770"}</code> |
+| <Link id="m-turabadahooks" /><code>{"TurabadaHooks = 752"}</code> |
+| <Link id="m-turabadahop" /><code>{"TurabadaHop = 756"}</code> |
+| <Link id="m-turabadahurt" /><code>{"TurabadaHurt = 762"}</code> |
+| <Link id="m-turabadajabs" /><code>{"TurabadaJabs = 751"}</code> |
+| <Link id="m-turabadapassiveidle" /><code>{"TurabadaPassiveIdle = 766"}</code> |
+| <Link id="m-turabadarockhit" /><code>{"TurabadaRockHit = 761"}</code> |
+| <Link id="m-turabadasphererelease" /><code>{"TurabadaSphereRelease = 755"}</code> |
+| <Link id="m-turabadasteps" /><code>{"TurabadaSteps = 750"}</code> |
+| <Link id="m-turabadastunned" /><code>{"TurabadaStunned = 763"}</code> |
+| <Link id="m-turabadastunnedexit" /><code>{"TurabadaStunnedExit = 765"}</code> |
+| <Link id="m-turabadauppercut" /><code>{"TurabadaUppercut = 753"}</code> |
+| <Link id="m-uiclick" /><code>{"UIClick = 100"}</code> |
+| <Link id="m-unlock" /><code>{"Unlock = 62"}</code> |
+| <Link id="m-waterfallambience" /><code>{"WaterfallAmbience = 152"}</code> |
+| <Link id="m-waterfell" /><code>{"WaterFell = 401"}</code> |
+| <Link id="m-watersplash" /><code>{"WaterSplash = 255"}</code> |
+| <Link id="m-waterwading" /><code>{"WaterWading = 450"}</code> |
+| <Link id="m-woodchop" /><code>{"WoodChop = 70"}</code> |
+| <Link id="m-woodthump" /><code>{"WoodThump = 71"}</code> |
+| <Link id="m-wyrmcrystalspitimpact" /><code>{"WyrmCrystalSpitImpact = 46"}</code> |
+| <Link id="m-wyrmdeath" /><code>{"WyrmDeath = 45"}</code> |
+| <Link id="m-wyrmflurry" /><code>{"WyrmFlurry = 41"}</code> |
+| <Link id="m-wyrmidle" /><code>{"WyrmIdle = 42"}</code> |
+| <Link id="m-wyrmspit" /><code>{"WyrmSpit = 43"}</code> |
+| <Link id="m-wyrmspitimpact" /><code>{"WyrmSpitImpact = 44"}</code> |
+| <Link id="m-wyrmspittravel" /><code>{"WyrmSpitTravel = 47"}</code> |
+| <Link id="m-wyrmstrike" /><code>{"WyrmStrike = 40"}</code> |
+
+## Used in
+
+Members of other types that take, return or hold a `SoundEffect`:
+
+[`ImpactDetectorSettings.ImpactSettings.ImpactSettings`](/game-api/types/alta-items/impactdetectorsettings-impactsettings#m-ctor-2), [`ImpactDetectorSettings.ImpactSettings.sound`](/game-api/types/alta-items/impactdetectorsettings-impactsettings#m-sound), [`ImpactDetectorSettings.ImpactSettings.Sound`](/game-api/types/alta-items/impactdetectorsettings-impactsettings#m-sound-2), [`Item.overrideLetGoSoundEffectType`](/game-api/types/alta-items/item#m-overrideletgosoundeffecttype), [`Item.OverrideLetGoSoundEffectType`](/game-api/types/alta-items/item#m-overrideletgosoundeffecttype-2), [`Item.overridePickUpSoundEffectType`](/game-api/types/alta-items/item#m-overridepickupsoundeffecttype), [`Item.OverridePickUpSoundEffectType`](/game-api/types/alta-items/item#m-overridepickupsoundeffecttype-2), [`AnimationBasedSound.clipsToPlay`](/game-api/types/alta-networking/animationbasedsound#m-clipstoplay), [`Book.pageTurningSound`](/game-api/types/alta-items/book#m-pageturningsound), [`AnimationPart.overrideSoundOnAppear`](/game-api/types/global-a-b/animationpart#m-overridesoundonappear), [`AnimationPart.OverrideSoundOnAppear`](/game-api/types/global-a-b/animationpart#m-overridesoundonappear-2), [`AnimationPart.overrideSoundOnPosition`](/game-api/types/global-a-b/animationpart#m-overridesoundonposition), [`AnimationPart.OverrideSoundOnPosition`](/game-api/types/global-a-b/animationpart#m-overridesoundonposition-2), [`AudioManager.Resolve`](/game-api/types/global-a-b/audiomanager#m-resolve), [`BuildingAnimation.soundOnAppear`](/game-api/types/global-a-b/buildinganimation#m-soundonappear), [`BuildingAnimation.soundOnPosition`](/game-api/types/global-a-b/buildinganimation#m-soundonposition), [`HandInteractor.HandInteraction.soundEffect`](/game-api/types/global-e-h/handinteractor-handinteraction#m-soundeffect), [`LocomotionController.OverrideStepSound`](/game-api/types/global-i-l/locomotioncontroller#m-overridestepsound), [`PickupDockingSoundPlayer.dockingSound`](/game-api/types/global-p/pickupdockingsoundplayer#m-dockingsound), [`PickupDockingSoundPlayer.undockingSound`](/game-api/types/global-p/pickupdockingsoundplayer#m-undockingsound), [`PlaySound.sound`](/game-api/types/global-p/playsound#m-sound), [`SendToSafetyLocoAction.safetySound`](/game-api/types/global-s/sendtosafetylocoaction#m-safetysound), [`SetStepSoundOverrideLocoAction.stepSound`](/game-api/types/global-s/setstepsoundoverridelocoaction#m-stepsound), [`SoundEffectExtensions.Resolve`](/game-api/types/global-s/soundeffectextensions#m-resolve), [`SoundEffectSet.soundEffectType`](/game-api/types/global-s/soundeffectset#m-soundeffecttype), [`SoundEffectSet.SoundEffectType`](/game-api/types/global-s/soundeffectset#m-soundeffecttype-2), [`SoundEffectsMap.soundEventMap`](/game-api/types/global-s/soundeffectsmap#m-soundeventmap), [`SoundEffectsMap.SoundEventMap`](/game-api/types/global-s/soundeffectsmap#m-soundeventmap-2), [`SoundSource.soundEffect`](/game-api/types/global-s/soundsource#m-soundeffect), [`SoundSource.stopEffect`](/game-api/types/global-s/soundsource#m-stopeffect), [`TriggerSoundEmitter.sound`](/game-api/types/global-t-x/triggersoundemitter#m-sound).

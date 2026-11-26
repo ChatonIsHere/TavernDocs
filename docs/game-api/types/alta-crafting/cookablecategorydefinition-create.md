@@ -1,0 +1,25 @@
+---
+title: "CookableCategoryDefinition.Create"
+description: "Unity editor menu entry (Create, Township, Features, Cooking) for making a new CookableCategoryDefinition asset."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# CookableCategoryDefinition.Create
+
+A **class** in `Root.Township`, `Alta.Cooking`.
+
+Unity editor menu entry (Create, Township, Features, Cooking) for making a new `CookableCategoryDefinition` asset.
+
+- **Listed in** [Crafting and making](/game-api/types/alta-crafting)
+- **Nested in** [`CookableCategoryDefinition`](/game-api/types/alta-crafting/cookablecategorydefinition)
+- **Inherits or implements** [`AltaMenuItemBase.Assets.Create.Township.Features.Cooking.ScriptableObject<CookableCategoryDefinition>`](/game-api/types/assembly-other/altamenuitembase-assets-create-township-features-cooking-scriptableobject-t)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> |

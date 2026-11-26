@@ -1,0 +1,22 @@
+---
+title: "ConnectionChannelStatistics"
+description: "class ConnectionChannelStatistics in Root.Township."
+displayed_sidebar: game
+pagination_prev: null
+pagination_next: null
+---
+
+import Link from '@docusaurus/Link';
+
+# ConnectionChannelStatistics
+
+A **class** in `Root.Township`, `Alta.Utilities.Profiling.NetworkTransportMetrics`.
+
+- **Listed in** [Utilities and other Alta namespaces](/game-api/types/alta-utilities)
+- **Inherits or implements** [`NetworkingStatisticsList<ConnectionChannelStatistic, KeyValuePair<ConnectionChannel, ConnectionChannelStatistic>>`](/game-api/types/alta-utilities/networkingstatisticslist-tstatistic-tinternalobject)
+
+## Constructors
+
+| Member |
+| --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> |
