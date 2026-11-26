@@ -58,9 +58,10 @@ export class AdminCommands {
         await interaction.editReply({ content, allowedMentions: { parse: [] } });
     }
 
-    @Subcommand({ name: 'stats', description: 'What people searched for and found nothing' })
+    @Subcommand({ name: 'stats', description: 'What people searched for and found nothing (bot owner only)' })
     async onStats(@Context() [interaction]: SlashCommandContext) {
-        if (!(await this.allowed(interaction))) return this.replies.fail(interaction, 'OWNER_ONLY');
+        // Owner only, not Manage Server: the counts hold search text from every server the bot is in.
+        if (!(await this.ownerIds()).has(interaction.user.id)) return this.replies.fail(interaction, 'BOT_OWNER_ONLY');
         const index = this.loader.index;
         const lines = this.gaps.top(25).map((g) => `\`${g.count}\` /${g.command} ${g.query}`);
         const e = embed({

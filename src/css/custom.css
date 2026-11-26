@@ -437,3 +437,16 @@ html.docs-wrapper main .container {
     font-size: 0.8125rem;
     color: var(--tavern-muted-foreground);
 }
+
+/* Secondary buttons: Infima draws them dark on dark here, so give them light text and a visible border. */
+.button--secondary {
+    --ifm-button-background-color: var(--tavern-card);
+    --ifm-button-border-color: var(--tavern-input);
+    --ifm-button-color: var(--tavern-foreground);
+    color: var(--tavern-foreground);
+}
+.button--secondary:hover {
+    --ifm-button-background-color: var(--tavern-muted);
+    --ifm-button-border-color: var(--tavern-primary);
+    color: var(--tavern-foreground);
+}

@@ -19,13 +19,15 @@ interface Env {
 const MODEL = '@cf/baai/bge-small-en-v1.5';
 /** Searches a day. Vectorize's free allowance is about 70,000 a month at our index size; this stays well under. */
 const DAILY_CAP = 1500;
+/** Searches a day from one address, so one visitor (or a script) can't use up everyone's allowance. */
+const PER_VISITOR_CAP = 100;
 const MIN_SCORE = 0.66;
 const AREAS = new Set(['play', 'host', 'mod', 'help']);
 const DAY = 86400;
 
 function json(body: unknown, maxAge = 0): Response {
     return new Response(JSON.stringify(body), {
-        headers: { 'Content-Type': 'application/json', 'Cache-Control': maxAge ? `public, max-age=${maxAge}` : 'no-store' },
+        headers: { 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'Cache-Control': maxAge ? `public, max-age=${maxAge}` : 'no-store' },
     });
 }
 
@@ -45,8 +47,11 @@ export default {
         const cached = await cache.match(key);
         if (cached) return cached;
 
+        // The visitor is counted by a hash of their address, kept in memory for the day only.
+        const ip = request.headers.get('CF-Connecting-IP') ?? '';
+        const visitor = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode('taverndocs:' + ip)))).slice(0, 8).map((b) => b.toString(16).padStart(2, '0')).join('');
         const quota = env.QUOTA.get(env.QUOTA.idFromName('daily'));
-        const { allowed } = (await (await quota.fetch('https://quota/take')).json()) as { allowed: boolean };
+        const { allowed } = (await (await quota.fetch(`https://quota/take?v=${visitor}`)).json()) as { allowed: boolean };
         if (!allowed) return json({ results: [], capped: true }, 300);
 
         try {
@@ -62,22 +67,35 @@ export default {
                 .filter((m) => m.score >= MIN_SCORE && m.metadata?.url && !seen.has(m.metadata.url) && !!seen.add(m.metadata.url))
                 .map((m) => ({ title: m.metadata!.title, url: m.metadata!.url, kind: m.metadata!.kind, area: m.metadata!.area, score: Math.round(m.score * 1000) / 1000 }));
             // Only answers with something in them are kept: an empty one may just mean the index is still updating.
-            // matched and best say how the lookup went (how many came back, the closest score), not what was searched.
-            const response = json({ results, matched: found.matches.length, best: Math.round((found.matches[0]?.score ?? 0) * 1000) / 1000 }, results.length ? DAY : 0);
+            const response = json({ results }, results.length ? DAY : 0);
             if (results.length) ctx.waitUntil(cache.put(key, response.clone()));
             return response;
-        } catch (err) {
-            return json({ results: [], unavailable: true, error: (err as Error).message.slice(0, 200) });
+        } catch {
+            return json({ results: [], unavailable: true });
         }
     },
 };
 
-/** Counts today's searches across every Cloudflare location. Keeps one number per day and drops older ones. */
+/**
+ * Counts today's searches across every Cloudflare location: one total kept in storage (older days dropped), and a
+ * count per visitor hash held in memory only, cleared each day.
+ */
 export class Quota {
+    private visitors = new Map<string, number>();
+    private visitorsDay = '';
+
     constructor(private readonly state: { storage: { get: (k: string) => Promise<unknown>; put: (k: string, v: unknown) => Promise<void>; list: () => Promise<Map<string, unknown>>; delete: (k: string) => Promise<boolean> } }) {}
 
-    async fetch(): Promise<Response> {
+    async fetch(request: Request): Promise<Response> {
         const today = new Date().toISOString().slice(0, 10);
+        if (this.visitorsDay !== today) {
+            this.visitors.clear();
+            this.visitorsDay = today;
+        }
+        const visitor = new URL(request.url).searchParams.get('v') ?? '';
+        const mine = this.visitors.get(visitor) ?? 0;
+        if (mine >= PER_VISITOR_CAP) return Response.json({ allowed: false });
+        this.visitors.set(visitor, mine + 1);
         const used = ((await this.state.storage.get(today)) as number | undefined) ?? 0;
         if (used >= DAILY_CAP) return Response.json({ allowed: false });
         await this.state.storage.put(today, used + 1);

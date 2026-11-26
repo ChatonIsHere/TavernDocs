@@ -57,7 +57,7 @@ export function stepsOf(guide: Guide) {
 
 export function renderStep(index: LoadedIndex, guide: Guide, step: number, owner: string): Reply {
     const steps = stepsOf(guide);
-    const n = Math.max(0, Math.min(step, steps.length - 1));
+    const n = Number.isFinite(step) ? Math.max(0, Math.min(Math.trunc(step), steps.length - 1)) : 0;
     const s = steps[n];
     const url = siteUrl(index, guide.url + (s?.id ? '#' + s.id : ''));
     const title = s && s.title !== guide.title ? `${guide.title} › ${s.title}` : guide.title;

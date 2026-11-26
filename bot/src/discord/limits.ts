@@ -34,6 +34,15 @@ export function choiceName(text: string): string {
     return truncate(text.replace(/\s+/g, ' ').trim(), LIMITS.choiceName);
 }
 
+/**
+ * Text from outside the docs (TavernMods descriptions, changelogs) as safe embed text: a named link [text](url) shows
+ * its real address, so it can't pass a phishing link off as something else. Mentions need nothing here: every reply
+ * turns pings off (ReplyService).
+ */
+export function untrusted(text: string | undefined | null): string {
+    return (text ?? '').replace(/\[([^\]]*)\]\(\s*<?([^)>\s]+)>?[^)]*\)/g, (_, label, url) => `${label} (${url})`);
+}
+
 /** Remove markdown that doesn't belong in a one-line label. */
 export function plain(text: string): string {
     return text.replace(/\*\*|__|`/g, '');

@@ -99,7 +99,8 @@ export default function SearchBar(): React.ReactElement {
             const area = everywhere || !here ? '' : here.toLowerCase();
             fetch(`${base}api/search?q=${encodeURIComponent(q)}${area ? `&area=${area}` : ''}`, {signal: controller.signal})
                 .then((r) => (r.ok ? r.json() : {results: []}))
-                .then((d: {results?: Related[]}) => setRelated(d.results ?? []))
+                // Only links within this site (a path starting with one slash).
+                .then((d: {results?: Related[]}) => setRelated((d.results ?? []).filter((r) => typeof r.url === 'string' && /^\/(?!\/)/.test(r.url))))
                 .catch(() => undefined);
         }, 450);
         return () => {

@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import type { LoadedIndex, ModMajor } from '../../index/loaded-index';
 import { SearchIndex } from '../../search/rank';
 import { addFields, embed } from '../../discord/style';
+import { untrusted } from '../../discord/limits';
 import type { Hit, RenderOptions, Reply, SearchOptions, Source } from '../source';
 
 export interface ModEntry {
@@ -63,13 +64,14 @@ export class ModsSource implements Source<ModEntry> {
     render(e: ModEntry, _opts: RenderOptions): Reply {
         const latest = e.mod.versions[e.mod.versions.length - 1];
         const icon = [...(e.mod.icons ?? [])].sort((a, b) => b.size - a.size)[0]?.url ?? null;
-        const em = embed({ title: e.mod.name, url: this.url(e), description: e.mod.description, footer: `TavernMods · ${e.id}`, thumbnail: icon });
+        // Mod text comes from TavernMods submissions, not the docs: neutralise links and mentions.
+        const em = embed({ title: untrusted(e.mod.name), url: this.url(e), description: untrusted(e.mod.description), footer: `TavernMods · ${e.id}`, thumbnail: icon?.startsWith('https://') ? icon : null });
         addFields(em, [
-            { name: 'Author', value: e.mod.author, inline: true },
+            { name: 'Author', value: untrusted(e.mod.author), inline: true },
             { name: 'Latest', value: latest, inline: true },
             { name: 'Runs on', value: (e.mod.targets ?? []).map((t) => TARGET_LABELS[t] ?? t).join(', '), inline: true },
             { name: 'Needed on both sides', value: e.mod.parity_required === undefined ? null : e.mod.parity_required ? 'Yes: players need it to join' : 'No', inline: true },
-            { name: "What's new", value: e.mod.changelog },
+            { name: "What's new", value: untrusted(e.mod.changelog) },
         ]);
         return { embeds: [em], url: this.url(e), urlLabel: 'Browse mods' };
     }

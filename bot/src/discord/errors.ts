@@ -9,6 +9,7 @@ export const ERRORS = {
     MODS_UNAVAILABLE: { code: 'TD-007', message: "The TavernMods list couldn't be loaded. Try again later." },
     UNKNOWN_TABLE: { code: 'TD-008', message: 'No table with that name. Pick one from the list.' },
     FAILED: { code: 'TD-009', message: 'Something went wrong on our side.' },
+    BOT_OWNER_ONLY: { code: 'TD-010', message: "Only the bot's owner can see this: it covers every server the bot is in." },
 } as const;
 
 export type ErrorKey = keyof typeof ERRORS;
