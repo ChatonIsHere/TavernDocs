@@ -415,3 +415,25 @@ html.docs-wrapper main .container {
 .tavern-search-status:empty {
     display: none;
 }
+.tavern-search-related {
+    padding: 0.25rem 1rem 0.5rem;
+    border-top: 1px solid var(--tavern-border);
+}
+.tavern-search-related p {
+    margin: 0.4rem 0;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--tavern-muted-foreground);
+}
+.tavern-search-related a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--tavern-foreground);
+}
+.tavern-search-related a span {
+    display: inline-block;
+    min-width: 4.5rem;
+    font-size: 0.8125rem;
+    color: var(--tavern-muted-foreground);
+}

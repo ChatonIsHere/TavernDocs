@@ -27,6 +27,21 @@ jobs:
             # The bot's tests, including checks against the index the build just wrote.
             - run: npm ci && npm test
               working-directory: bot
+            # Semantic search: embed what changed (semantic/embed.mjs), then update the Vectorize index (sync.mjs).
+            - uses: actions/cache@v4
+              if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+              with:
+                  path: node_modules/@huggingface/transformers/.cache
+                  key: hf-bge-small-en-v1.5
+            - name: Embed for semantic search
+              if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+              run: node semantic/embed.mjs build
+            - name: Update the semantic search index
+              if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+              run: node semantic/sync.mjs build
+              env:
+                  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
             # The site, to townshiptale.dev on Cloudflare (see wrangler.jsonc).
             - name: Deploy to Cloudflare
               if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

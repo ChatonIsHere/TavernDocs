@@ -1,16 +1,25 @@
 // Cloudflare: serves the built site (build/) at townshiptale.dev. Deployed by .github/workflows/deploy.yml with the
 // CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets; nothing here names an account, so moving the domain to
-// another Cloudflare account only needs those two secrets changed.
-// Static files only: requests for them are free and don't count against the Workers request limit.
+// another Cloudflare account only needs those two secrets changed (semantic/sync.mjs recreates the Vectorize index).
+// Pages are static files: requests for them are free and don't count against the Workers request limit. Only /api/*
+// runs the Worker (worker/index.ts), for semantic search.
 {
     "name": "taverndocs",
+    "main": "worker/index.ts",
     "compatibility_date": "2026-11-20",
     "assets": {
         "directory": "./build",
+        "binding": "ASSETS",
         // /play/welcome serves play/welcome.html, the way Docusaurus links with trailingSlash: false.
         "html_handling": "auto-trailing-slash",
-        "not_found_handling": "404-page"
+        "not_found_handling": "404-page",
+        "run_worker_first": ["/api/*"]
     },
+    "ai": { "binding": "AI" },
+    "vectorize": [{ "binding": "VECTORIZE", "index_name": "taverndocs-semantic" }],
+    "durable_objects": { "bindings": [{ "name": "QUOTA", "class_name": "Quota" }] },
+    "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Quota"] }],
     "routes": [{ "pattern": "townshiptale.dev", "custom_domain": true }],
-    "workers_dev": false
+    "workers_dev": false,
+    "observability": { "enabled": false }
 }

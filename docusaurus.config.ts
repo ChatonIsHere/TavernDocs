@@ -130,6 +130,7 @@ const config: Config = {
                     items: [
                         {label: 'Discord', href: discord},
                         {label: 'Discord bot', to: '/help/discord-bot'},
+                        {label: 'Privacy', to: '/help/privacy'},
                         {label: 'GitHub', href: 'https://github.com/ModdingTavern'},
                     ],
                 },

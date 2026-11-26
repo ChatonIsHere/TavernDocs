@@ -6,6 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 type SubResult = {title: string; url: string; excerpt: string};
+type Related = {title: string; url: string; kind: string; area: string};
 type Result = {url: string; meta: {title?: string}; excerpt: string; sub_results?: SubResult[]};
 type Pagefind = {
     options: (o: Record<string, unknown>) => Promise<void>;
@@ -15,6 +16,7 @@ type Pagefind = {
 
 const SECTIONS: Record<string, string> = {play: 'Play', host: 'Host', mod: 'Mod', help: 'Help'};
 const LIMIT = 10;
+const KIND_LABELS: Record<string, string> = {guide: 'Guide', snippet: 'Answer', type: 'Type', config: 'Setting', command: 'Command', faq: 'FAQ', troubleshoot: 'Fix', port: 'Port'};
 
 let loading: Promise<Pagefind> | null = null;
 function loadPagefind(base: string): Promise<Pagefind> {
@@ -35,6 +37,7 @@ export default function SearchBar(): React.ReactElement {
     const [query, setQuery] = useState('');
     const [everywhere, setEverywhere] = useState(!here);
     const [results, setResults] = useState<Result[]>([]);
+    const [related, setRelated] = useState<Related[]>([]);
     const [state, setState] = useState<'idle' | 'loading' | 'ready' | 'unavailable'>('idle');
     const [active, setActive] = useState(0);
     const input = useRef<HTMLInputElement>(null);
@@ -83,6 +86,26 @@ export default function SearchBar(): React.ReactElement {
             })
             .catch(() => !cancelled && setState('unavailable'));
         return () => void (cancelled = true);
+    }, [query, everywhere, here, open, base]);
+
+    // Related pages by meaning, from the site's Worker (/api/search), for searches of a few words. Anything that goes
+    // wrong (offline, the daily cap, a local build without the Worker) just leaves this list empty.
+    useEffect(() => {
+        const q = query.trim();
+        setRelated([]);
+        if (!open || q.split(/\s+/).length < 2 || q.length < 8) return;
+        const controller = new AbortController();
+        const timer = setTimeout(() => {
+            const area = everywhere || !here ? '' : here.toLowerCase();
+            fetch(`${base}api/search?q=${encodeURIComponent(q)}${area ? `&area=${area}` : ''}`, {signal: controller.signal})
+                .then((r) => (r.ok ? r.json() : {results: []}))
+                .then((d: {results?: Related[]}) => setRelated(d.results ?? []))
+                .catch(() => undefined);
+        }, 450);
+        return () => {
+            clearTimeout(timer);
+            controller.abort();
+        };
     }, [query, everywhere, here, open, base]);
 
     const close = useCallback(() => {
@@ -148,6 +171,21 @@ export default function SearchBar(): React.ReactElement {
                                 </li>
                             ))}
                         </ul>
+                        {(() => {
+                            const shown = new Set(results.flatMap((r) => [r.url, ...(r.sub_results ?? []).map((x) => x.url)]));
+                            const extra = related.filter((r) => !shown.has(r.url) && !shown.has(r.url.split('#')[0])).slice(0, 5);
+                            return extra.length ? (
+                                <div className="tavern-search-related">
+                                    <p>Related</p>
+                                    {extra.map((r) => (
+                                        <Link key={r.url} to={r.url} onClick={close}>
+                                            <span>{KIND_LABELS[r.kind] ?? r.kind}</span>
+                                            {r.title}
+                                        </Link>
+                                    ))}
+                                </div>
+                            ) : null;
+                        })()}
                         <p className="tavern-search-status" aria-live="polite">
                             {state === 'unavailable'
                                 ? "Search isn't available here. It works on the published site, after a build."
