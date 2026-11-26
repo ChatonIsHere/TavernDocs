@@ -41,7 +41,7 @@ export default {
 
         // The same search within a day gets the same answer, without using the quota again.
         const cache = (caches as unknown as { default: Cache }).default;
-        const key = new Request(`https://cache.invalid/search?q=${encodeURIComponent(q.toLowerCase())}&area=${AREAS.has(area) ? area : ''}`);
+        const key = new Request(`https://cache.invalid/search/v2?q=${encodeURIComponent(q.toLowerCase())}&area=${AREAS.has(area) ? area : ''}`);
         const cached = await cache.match(key);
         if (cached) return cached;
 
@@ -59,11 +59,13 @@ export default {
             const results = found.matches
                 .filter((m) => m.score >= MIN_SCORE && m.metadata?.url)
                 .map((m) => ({ title: m.metadata!.title, url: m.metadata!.url, kind: m.metadata!.kind, area: m.metadata!.area, score: Math.round(m.score * 1000) / 1000 }));
-            const response = json({ results }, DAY);
-            ctx.waitUntil(cache.put(key, response.clone()));
+            // Only answers with something in them are kept: an empty one may just mean the index is still updating.
+            // matched and best say how the lookup went (how many came back, the closest score), not what was searched.
+            const response = json({ results, matched: found.matches.length, best: Math.round((found.matches[0]?.score ?? 0) * 1000) / 1000 }, results.length ? DAY : 0);
+            if (results.length) ctx.waitUntil(cache.put(key, response.clone()));
             return response;
-        } catch {
-            return json({ results: [], unavailable: true });
+        } catch (err) {
+            return json({ results: [], unavailable: true, error: (err as Error).message.slice(0, 200) });
         }
     },
 };
