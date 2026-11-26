@@ -9,7 +9,9 @@
 // VECTOR FORMAT: for each chunk in order, a float32 scale then 384 int8 values; value = int8 * scale / 127.
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import crypto from 'node:crypto';
+import yaml from 'js-yaml';
 
 export const MODEL = 'Xenova/bge-small-en-v1.5';
 export const DIMENSIONS = 384;
@@ -21,6 +23,8 @@ const areaOf = (url) => (url.split('/')[1] || 'other');
 /** Everything worth finding by meaning. Log lines are left out: there are thousands and /log finds them by text. */
 export function chunksFrom(dir) {
     const r = (name) => JSON.parse(fs.readFileSync(path.join(dir, 'bot', name + '.json'), 'utf8'));
+    // Headings like "Something went wrong?" (skip_headings in bot/content/sources.yml) aren't worth finding.
+    const skip = new Set((yaml.load(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'bot', 'content', 'sources.yml'), 'utf8')).skip_headings ?? []).map((h) => h.toLowerCase()));
     const out = [];
     const add = (id, title, url, kind, text) => {
         const t = text.replace(/\s+/g, ' ').trim().slice(0, MAX_CHARS);
@@ -29,6 +33,7 @@ export function chunksFrom(dir) {
     for (const g of r('guides').guides) {
         if (g.searchText === false) continue;
         for (const s of g.sections) {
+            if (skip.has(s.title.toLowerCase())) continue;
             const title = s.id ? `${g.title} › ${s.title}` : g.title;
             add(`g:${g.id}#${s.id}`, title, g.url + (s.id ? '#' + s.id : ''), 'guide', `${title}. ${g.description} ${s.text}`);
         }

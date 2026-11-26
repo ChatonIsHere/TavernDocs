@@ -189,7 +189,7 @@ export default function SearchBar(): React.ReactElement {
                         <p className="tavern-search-status" aria-live="polite">
                             {state === 'unavailable'
                                 ? "Search isn't available here. It works on the published site, after a build."
-                                : query.trim() && state === 'ready' && !results.length
+                                : query.trim() && state === 'ready' && !results.length && !related.length
                                   ? `Nothing found${!everywhere && here ? ` in ${here}. Try Everywhere.` : '.'}`
                                   : !query.trim()
                                     ? 'Type to search. Esc closes.'
